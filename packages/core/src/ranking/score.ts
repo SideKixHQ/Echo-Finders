@@ -15,7 +15,7 @@ import type {
   Provenance,
   TravelMode,
 } from "../types.js";
-import { isOnFoot, OPT_IN_CATEGORIES } from "../types.js";
+import { hasAudio, isOnFoot, OPT_IN_CATEGORIES } from "../types.js";
 import { presetFor } from "../modes.js";
 import { isDaylight, localSolarHour } from "../geo/solar.js";
 import type { CorridorHit } from "../geo/corridor.js";
@@ -87,7 +87,7 @@ export function checkEligibility(echo: Echo, context: EligibilityContext): Eligi
 
   if (profile.heardEchoIds?.includes(echo.id)) reasons.push("already-heard");
 
-  if (context.requireAudio && !echo.audioKey) reasons.push("no-audio");
+  if (context.requireAudio && !hasAudio(echo)) reasons.push("no-audio");
 
   if (echo.hours && !withinHours(echo, playAtMs)) reasons.push("outside-hours");
 

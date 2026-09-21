@@ -113,7 +113,7 @@ describe("transcripts", () => {
     // Line seeking and read-along both assume monotonic timings; an overlap silently
     // highlights the wrong line for the rest of the echo.
     const overlapping = withTranscript(transcript([["One.", 0, 5], ["Two.", 2, 4]]));
-    expect(errorsOn(overlapping, "transcript.lines[1].atS")).toHaveLength(1);
+    expect(errorsOn(overlapping, "renders[0].transcript.lines[1].atS")).toHaveLength(1);
   });
 
   it("catches lines running past the end of the audio", () => {
@@ -121,16 +121,16 @@ describe("transcripts", () => {
       lines: [{ text: "One.", atS: 0, durationS: 30 }],
       totalS: 10,
     });
-    expect(errorsOn(over, "transcript.totalS")).toHaveLength(1);
+    expect(errorsOn(over, "renders[0].transcript.totalS")).toHaveLength(1);
   });
 
   it("rejects an empty transcript", () => {
-    expect(errorsOn(withTranscript({ lines: [], totalS: 0 }), "transcript")).toHaveLength(1);
+    expect(errorsOn(withTranscript({ lines: [], totalS: 0 }), "renders[0].transcript")).toHaveLength(1);
   });
 
   it("rejects a blank line", () => {
     const blank = withTranscript(transcript([["One.", 0, 3], ["   ", 3, 2]]));
-    expect(errorsOn(blank, "transcript.lines[1].text")).toHaveLength(1);
+    expect(errorsOn(blank, "renders[0].transcript.lines[1].text")).toHaveLength(1);
   });
 });
 

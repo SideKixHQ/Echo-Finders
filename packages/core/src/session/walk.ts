@@ -12,6 +12,7 @@
  * platform because there is only one copy of them.
  */
 
+import { renderFor } from "../types.js";
 import type { Echo, ListenerProfile, Position, TravelMode } from "../types.js";
 import { CaptureTracker, type CaptureEvent, type CaptureOptions } from "../capture/index.js";
 import { rarityOf } from "../capture/rarity.js";
@@ -55,6 +56,8 @@ export interface WalkSessionOptions {
    * starting audio unbidden is the right behaviour only when someone has asked for it.
    */
   readonly autoPlay?: boolean;
+  /** Which narrator to play. Falls back to whatever render exists. */
+  readonly voiceId?: string;
   /** Restore a previous collection, so echoes already found stay found. */
   readonly captured?: readonly CaptureRecord[];
   /**
@@ -181,8 +184,9 @@ export class WalkSession {
 
   private announce(capture: CaptureEvent): void {
     this.deps.audio?.chime();
-    if (this.options.autoPlay && capture.echo.audioKey) {
-      this.deps.audio?.play(capture.echo.audioKey);
+    if (this.options.autoPlay) {
+      const render = renderFor(capture.echo.renders, this.options.voiceId);
+      if (render) this.deps.audio?.play(render.audioKey);
     }
     // A captured echo is no longer a destination; drop any approach in progress so the
     // next fix starts guiding towards something else.

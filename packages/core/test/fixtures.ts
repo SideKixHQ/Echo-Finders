@@ -1,4 +1,5 @@
 import type {
+  AudioRender,
   Echo,
   EchoCategory,
   EchoFormat,
@@ -7,8 +8,12 @@ import type {
   ListenerProfile,
   Route,
   Source,
+  Transcript,
 } from "../src/types.js";
 import { NOMINAL_DURATION_S } from "../src/types.js";
+
+/** The default narrator, as recorded in content/voices.yml. */
+export const DEFAULT_VOICE_ID = "plP9aw1rizYgjFfuvLQ7";
 import { buildRouteGeometry, pointAtDistance } from "../src/geo/corridor.js";
 import { presetFor } from "../src/modes.js";
 
@@ -56,12 +61,20 @@ const SOURCE: Source = {
  * should say `at`, not spell out a whole `EchoPoint`. Spreading an existing echo works
  * too, so `makeEcho({ ...other, id: "x" })` keeps its point.
  */
-export type EchoDraft = Partial<Omit<Echo, "point">> & {
+export type EchoDraft = Partial<Omit<Echo, "point" | "renders">> & {
   id: string;
   at?: LatLng;
   point?: EchoPoint;
   triggerRadiusKm?: number;
   place?: string;
+  /**
+   * Audio, flat. Most tests care only whether an echo has any, so they say `audioKey` and
+   * the fixture builds the render. Pass `audioKey: undefined` to mean "not yet rendered".
+   */
+  audioKey?: string | undefined;
+  audioBytes?: number;
+  transcript?: Transcript;
+  renders?: readonly AudioRender[];
 };
 
 export function makeEcho(draft: EchoDraft): Echo {
@@ -77,7 +90,38 @@ export function makeEcho(draft: EchoDraft): Echo {
     place: draft.place ?? draft.point?.place ?? "Somewhere",
   };
 
-  const { at: _at, triggerRadiusKm: _r, place: _p, point: _point, ...rest } = draft;
+  const {
+    at: _at,
+    triggerRadiusKm: _r,
+    place: _p,
+    point: _point,
+    audioKey: _k,
+    audioBytes: _b,
+    transcript: _t,
+    renders: _rs,
+    ...rest
+  } = draft;
+
+  const durationS = draft.durationS ?? NOMINAL_DURATION_S[format];
+  // Precedence matters: a test spreading an existing echo and then setting
+  // `audioKey: undefined` means "this one has no audio", and that has to beat the renders
+  // it inherited from the spread.
+  const explicitAudio = "audioKey" in draft || "audioBytes" in draft || "transcript" in draft;
+  const renders: AudioRender[] = explicitAudio
+    ? draft.audioKey === undefined && "audioKey" in draft
+      ? []
+      : [
+          {
+            voiceId: DEFAULT_VOICE_ID,
+            audioKey: draft.audioKey ?? `audio/${draft.id}.opus`,
+            durationS,
+            ...(draft.audioBytes !== undefined ? { audioBytes: draft.audioBytes } : {}),
+            ...(draft.transcript ? { transcript: draft.transcript } : {}),
+          },
+        ]
+    : (draft.renders?.slice() ?? [
+        { voiceId: DEFAULT_VOICE_ID, audioKey: `audio/${draft.id}.opus`, durationS },
+      ]);
 
   return {
     title: `Echo ${draft.id}`,
@@ -92,9 +136,9 @@ export function makeEcho(draft: EchoDraft): Echo {
     editorial: "approved",
     factCheck: "corroborated",
     certainty: "documented",
-    audioKey: `audio/${draft.id}.opus`,
     ...rest,
     point,
+    ...(renders.length > 0 ? { renders } : {}),
   };
 }
 

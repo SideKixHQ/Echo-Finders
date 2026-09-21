@@ -20,7 +20,7 @@ import type {
   Echo,
   EchoCategory,
 } from "../types.js";
-import { ECHO_CATEGORIES } from "../types.js";
+import { ECHO_CATEGORIES, hasAudio, renderFor } from "../types.js";
 import { presetFor } from "../modes.js";
 import {
   buildRouteGeometry,
@@ -51,6 +51,15 @@ export interface EchoJourneyOptions {
   readonly categories?: readonly EchoCategory[];
   /** Cap on points in the map polyline. */
   readonly maxPathPoints?: number;
+  /**
+   * Which narrators this package carries. Defaults to one — whichever render comes first.
+   *
+   * The honest cost of a narrator picker lives here. Every voice offered is a complete
+   * second copy of every audio file, so a package carrying two voices is twice the size and
+   * fits half as many echoes into the same budget. Worth offering; worth deciding rather
+   * than discovering when a package will not fit on an aircraft.
+   */
+  readonly voiceIds?: readonly string[];
 }
 
 const DEFAULTS = {
@@ -129,7 +138,7 @@ export function buildEchoJourney(
   const essential = new Set(essentialOrder);
 
   // --- Pass 2: spend what is left on depth -------------------------------------------
-  const sizeOf = (echo: Echo) => estimateBytes(echo, bitrateKbps);
+  const sizeOf = (echo: Echo) => estimateBytes(echo, bitrateKbps, options.voiceIds);
 
   const packaged: PackagedEcho[] = [];
   let totalBytes = 0;
@@ -156,7 +165,7 @@ export function buildEchoJourney(
 
   // Extras in quality order, so a squeezed budget loses the weakest material first.
   const extras = hits
-    .filter((hit) => !essential.has(hit.echo.id) && hit.echo.audioKey)
+    .filter((hit) => !essential.has(hit.echo.id) && hasAudio(hit.echo))
     .sort((a, b) => b.echo.quality - a.echo.quality);
 
   for (const hit of extras) {
@@ -230,10 +239,36 @@ function interleave(lists: readonly (readonly string[])[]): string[] {
   return merged;
 }
 
-/** Measured size when we have it, otherwise the bitrate assumption. */
-export function estimateBytes(echo: Echo, bitrateKbps: number): number {
-  if (echo.audioBytes !== undefined) return echo.audioBytes;
-  return Math.round((bitrateKbps * 1000) / 8) * echo.durationS;
+/**
+ * How much room this echo takes, for the narrators the package carries.
+ *
+ * Sums every requested voice rather than measuring one, because that is what actually lands
+ * on the device. Measured sizes are used where a render has them; the bitrate assumption
+ * covers anything not yet rendered.
+ */
+export function estimateBytes(
+  echo: Echo,
+  bitrateKbps: number,
+  voiceIds?: readonly string[],
+): number {
+  const bytesPerSecond = Math.round((bitrateKbps * 1000) / 8);
+  const renders = echo.renders ?? [];
+
+  if (renders.length === 0) return bytesPerSecond * echo.durationS;
+
+  const wanted = voiceIds?.length
+    ? voiceIds.map((id) => renderFor(renders, id)).filter((r) => r !== undefined)
+    : [renders[0]!];
+
+  // Distinct renders only: asking for two voices where only one exists must not bill twice
+  // for the same file.
+  const distinct = new Map(wanted.map((r) => [r!.audioKey, r!]));
+
+  let total = 0;
+  for (const render of distinct.values()) {
+    total += render.audioBytes ?? bytesPerSecond * render.durationS;
+  }
+  return total;
 }
 
 /**

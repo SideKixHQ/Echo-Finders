@@ -123,6 +123,27 @@ export function anchorOffsetS(durationS: number): number {
   return durationS <= CENTRE_ANCHOR_MAX_S ? durationS / 2 : LEAD_ANCHOR_S;
 }
 
+/**
+ * The reading to play, for a given narrator.
+ *
+ * Falls back to whatever exists when the requested voice has not been rendered, so a
+ * listener who picks a narrator we have not finished recording hears the echo rather than
+ * silence.
+ */
+export function renderFor(
+  renders: readonly AudioRender[] | undefined,
+  voiceId?: string,
+): AudioRender | undefined {
+  if (!renders || renders.length === 0) return undefined;
+  if (!voiceId) return renders[0];
+  return renders.find((r) => r.voiceId === voiceId) ?? renders[0];
+}
+
+/** Whether an echo can be played at all. */
+export function hasAudio(echo: { renders?: readonly AudioRender[] }): boolean {
+  return (echo.renders?.length ?? 0) > 0;
+}
+
 /** Editorial state. Only `approved` may ever reach a passenger. */
 export type EditorialStatus = "draft" | "in-review" | "approved" | "retired";
 
@@ -355,21 +376,15 @@ export interface Echo {
   /** A second paragraph revealed once the echo has played, for the reader who wants more. */
   readonly detail?: string;
 
-  /** Audio asset key in object storage. Absent while the echo is still text. */
-  readonly audioKey?: string;
   /**
-   * Which voice rendered `audioKey`.
+   * The rendered audio, one entry per narrator. Empty while the echo is still text.
    *
-   * Recorded because a transcript's timings belong to a *render*, not to a script: two
-   * narrators reading the same words produce different durations, so offering a second
-   * voice means a second set of line timings, not merely a second audio file. Anything
-   * assuming one transcript per echo desynchronises the moment a listener switches narrator.
+   * `durationS` above stays the canonical figure the scheduler packs against; a render's
+   * own duration is the truth for playback. They differ by a few per cent between voices,
+   * which is small enough not to disturb a flight's pacing and large enough to matter to a
+   * progress bar.
    */
-  readonly renderedBy?: string;
-  /** Size of the rendered audio in bytes. Drives the route package budget. */
-  readonly audioBytes?: number;
-  /** Sentence-level transcript with timings, for read-along and line seeking. */
-  readonly transcript?: Transcript;
+  readonly renders?: readonly AudioRender[];
   readonly imageKey?: string;
 
   /**
@@ -470,13 +485,34 @@ export interface TranscriptLine {
   readonly durationS: number;
 }
 
+/**
+ * One narrator's reading of an echo.
+ *
+ * A list rather than a single file because a second voice is not a second audio asset — it
+ * is a second *timing*. Two narrators reading identical words finish at different moments,
+ * so each render carries its own duration and its own transcript line timings. Sharing one
+ * transcript across voices desynchronises read-along and line seeking the instant somebody
+ * switches narrator, and does it silently.
+ *
+ * It is also the honest place to see what a narrator picker costs: every voice offered
+ * multiplies both the TTS bill and the size of every offline package.
+ */
+export interface AudioRender {
+  readonly voiceId: string;
+  readonly audioKey: string;
+  readonly audioBytes?: number;
+  /** Actual runtime of *this* reading, which is not the same across voices. */
+  readonly durationS: number;
+  /** Line timings for this reading. Never reuse another voice's. */
+  readonly transcript?: Transcript;
+}
+
 export interface SimpleVariant {
   readonly title: string;
   readonly durationS: number;
   readonly script: string;
-  readonly audioKey?: string;
-  readonly audioBytes?: number;
-  readonly transcript?: Transcript;
+  /** Renderings of the simple telling, one per voice. */
+  readonly renders?: readonly AudioRender[];
 }
 
 export interface Attraction {

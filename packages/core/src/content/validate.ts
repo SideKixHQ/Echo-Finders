@@ -8,6 +8,7 @@
  */
 
 import type { Source, Echo } from "../types.js";
+import { hasAudio } from "../types.js";
 import { MODE_PRESETS } from "../modes.js";
 import { checkContribution } from "./contributions.js";
 import { NOMINAL_DURATION_S, ECHO_CATEGORIES } from "../types.js";
@@ -190,8 +191,8 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
         `cannot approve an echo whose facts are "${echo.factCheck}"`,
       );
     }
-    if (!echo.audioKey) {
-      warn("audioKey", "is approved but has no rendered audio, so it cannot be packaged");
+    if (!hasAudio(echo)) {
+      warn("renders", "is approved but has no rendered audio, so it cannot be packaged");
     }
   }
 
@@ -265,10 +266,22 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
         `is ${simple.durationS}s against the full version's ${echo.durationS}s — the simple telling must be shorter`,
       );
     }
-    if (simple.transcript) issues.push(...validateTranscript(echo.id, simple.transcript, "simple.transcript"));
+    for (const [i, render] of (simple.renders ?? []).entries()) {
+      if (render.transcript) {
+        issues.push(
+          ...validateTranscript(echo.id, render.transcript, `simple.renders[${i}].transcript`),
+        );
+      }
+    }
   }
 
-  if (echo.transcript) issues.push(...validateTranscript(echo.id, echo.transcript, "transcript"));
+  // Every render carries its own timings, and every one of them has to line up with its
+  // own audio — a transcript checked against the wrong voice passes and still desynchronises.
+  for (const [i, render] of (echo.renders ?? []).entries()) {
+    if (render.transcript) {
+      issues.push(...validateTranscript(echo.id, render.transcript, `renders[${i}].transcript`));
+    }
+  }
 
   // --- True crime: the strictest gate in the system -----------------------------------
   if (echo.category === "true-crime") {

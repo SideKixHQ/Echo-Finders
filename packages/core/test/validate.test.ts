@@ -111,7 +111,7 @@ describe("validateEcho — basics", () => {
     const echo = makeEcho({ id: "s", at: { lat: 33, lng: -79 }, audioKey: undefined });
     const issues = validateEcho(echo);
     expect(issues.filter((i) => i.severity === "error")).toEqual([]);
-    expect(issues.some((i) => i.field === "audioKey" && i.severity === "warning")).toBe(true);
+    expect(issues.some((i) => i.field === "renders" && i.severity === "warning")).toBe(true);
   });
 
   it("catches a kids echo a child could never hear", () => {

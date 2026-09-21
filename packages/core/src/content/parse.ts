@@ -10,7 +10,14 @@
  * and parses the YAML hands the result here.
  */
 
-import type { Echo, EchoCategory, EchoFormat, Pronunciation, Source } from "../types.js";
+import type {
+  AudioRender,
+  Echo,
+  EchoCategory,
+  EchoFormat,
+  Pronunciation,
+  Source,
+} from "../types.js";
 import { ECHO_CATEGORIES, NOMINAL_DURATION_S } from "../types.js";
 import type { ValidationIssue } from "./validate.js";
 
@@ -149,8 +156,7 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
     ...optional("teaser", str("teaser", false)),
     ...optional("detail", str("detail", false)),
     ...optional("certaintyNote", str("certaintyNote", false)),
-    ...optional("audioKey", str("audioKey", false)),
-    ...optional("renderedBy", str("renderedBy", false)),
+    ...optional("renders", renderList(input["renders"], durationS)),
     ...optional("pronunciations", pronunciationList(input["pronunciations"])),
     ...optional("remoteness", num("remoteness", false)),
     ...optional("tags", stringList(input["tags"])),
@@ -172,6 +178,30 @@ function optional<K extends string, V>(key: K, value: V | undefined): Record<K, 
  * narrator says a place name the ordinary way, which is a quality problem for an editor to
  * notice — not a reason to refuse to publish an otherwise sound echo.
  */
+/**
+ * Audio renders, one per narrator.
+ *
+ * A render with no explicit duration inherits the echo's, which is right for the first
+ * voice and approximate for later ones — the real figure lands when the audio is rendered.
+ */
+function renderList(value: unknown, fallbackDurationS: number): AudioRender[] | undefined {
+  if (!Array.isArray(value)) return undefined;
+  const list: AudioRender[] = [];
+  for (const raw of value) {
+    if (!isRecord(raw)) continue;
+    const voiceId = raw["voiceId"];
+    const audioKey = raw["audioKey"];
+    if (typeof voiceId !== "string" || typeof audioKey !== "string") continue;
+    list.push({
+      voiceId,
+      audioKey,
+      durationS: typeof raw["durationS"] === "number" ? raw["durationS"] : fallbackDurationS,
+      ...(typeof raw["audioBytes"] === "number" ? { audioBytes: raw["audioBytes"] } : {}),
+    });
+  }
+  return list.length > 0 ? list : undefined;
+}
+
 function pronunciationList(value: unknown): Pronunciation[] | undefined {
   if (!Array.isArray(value)) return undefined;
   const list: Pronunciation[] = [];

@@ -1,5 +1,8 @@
 import { describe, expect, it } from "vitest";
 import { parseEcho } from "../src/content/parse.js";
+import { estimateBytes } from "../src/pkg/build.js";
+import { renderFor } from "../src/types.js";
+import type { Echo } from "../src/types.js";
 import { validateEcho } from "../src/content/validate.js";
 
 const minimal = () => ({
@@ -153,10 +156,70 @@ describe("pronunciation notes", () => {
     expect("pronunciations" in parseEcho(minimal()).echo!).toBe(false);
   });
 
-  it("records which voice rendered the audio", () => {
+  it("reads one render per narrator", () => {
     // Transcript timings belong to a render, not a script: two narrators produce different
-    // durations, so a second voice means a second set of line timings.
-    const { echo } = parseEcho({ ...minimal(), renderedBy: "plP9aw1rizYgjFfuvLQ7" });
-    expect(echo!.renderedBy).toBe("plP9aw1rizYgjFfuvLQ7");
+    // durations, so a second voice is a second set of line timings, not just another file.
+    const { echo } = parseEcho({
+      ...minimal(),
+      durationS: 95,
+      renders: [
+        { voiceId: "plP9aw1rizYgjFfuvLQ7", audioKey: "audio/a.opus", durationS: 95 },
+        { voiceId: "hP72SDESIJq2YuAblBqz", audioKey: "audio/a-male.opus", durationS: 101 },
+      ],
+    });
+    expect(echo!.renders).toHaveLength(2);
+    expect(echo!.renders![1]!.durationS).toBe(101);
+  });
+
+  it("falls back to the echo's duration for a render that has not stated one", () => {
+    const { echo } = parseEcho({
+      ...minimal(),
+      durationS: 95,
+      renders: [{ voiceId: "v1", audioKey: "audio/a.opus" }],
+    });
+    expect(echo!.renders![0]!.durationS).toBe(95);
+  });
+});
+
+/** One echo, two narrators, measured sizes that differ as real renders would. */
+function makeEchoWithRenders(): Echo {
+  return parseEcho({
+    ...minimal(),
+    durationS: 95,
+    renders: [
+      { voiceId: "voice-a", audioKey: "audio/a.opus", durationS: 95, audioBytes: 760_000 },
+      { voiceId: "voice-b", audioKey: "audio/b.opus", durationS: 101, audioBytes: 808_000 },
+    ],
+  }).echo!;
+}
+
+describe("what two voices cost", () => {
+  it("bills only the narrator the package carries", () => {
+    // The honest cost of a narrator picker: every voice offered is a second complete copy
+    // of every audio file.
+    const echo = makeEchoWithRenders();
+    const one = estimateBytes(echo, 64, ["voice-a"]);
+    const both = estimateBytes(echo, 64, ["voice-a", "voice-b"]);
+    expect(both).toBeGreaterThan(one * 1.8);
+  });
+
+  it("defaults to a single narrator", () => {
+    const echo = makeEchoWithRenders();
+    expect(estimateBytes(echo, 64)).toBe(estimateBytes(echo, 64, ["voice-a"]));
+  });
+
+  it("does not bill twice when the second voice was never rendered", () => {
+    const echo = makeEchoWithRenders();
+    expect(estimateBytes(echo, 64, ["voice-a", "voice-never-recorded"])).toBe(
+      estimateBytes(echo, 64, ["voice-a"]),
+    );
+  });
+
+  it("picks the requested narrator, and falls back rather than going silent", () => {
+    const echo = makeEchoWithRenders();
+    expect(renderFor(echo.renders, "voice-b")!.audioKey).toBe("audio/b.opus");
+    // A listener who picks a narrator we have not finished recording hears the echo.
+    expect(renderFor(echo.renders, "voice-missing")!.audioKey).toBe("audio/a.opus");
+    expect(renderFor(undefined, "voice-a")).toBeUndefined();
   });
 });
