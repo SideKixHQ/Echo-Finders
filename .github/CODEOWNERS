@@ -1,0 +1,15 @@
+# The editorial gate described in docs/adr/0005-content-in-git.md.
+#
+# True crime is the highest-risk category we publish: a misstated conviction is
+# defamation, and an unreviewed draft is an unattributable publication. A model may open
+# the pull request; only a named human may merge it.
+#
+# TODO: create the @SideKixHQ/editorial team and enable branch protection with
+# "Require review from Code Owners" on main, or these lines are decoration.
+
+/content/stories/true-crime/    @SideKixHQ/editorial
+/content/                       @SideKixHQ/editorial
+
+# Changes to the gate itself need the same scrutiny as the content it guards.
+/packages/core/src/content/     @SideKixHQ/editorial
+/docs/adr/                      @SideKixHQ/editorial
