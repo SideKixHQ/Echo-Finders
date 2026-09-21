@@ -1,4 +1,4 @@
-# Echo Finder
+# Echo Finders
 
 **A [Whatishere.com](https://whatishere.com) product.**
 

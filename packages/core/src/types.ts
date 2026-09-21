@@ -1,5 +1,5 @@
 /**
- * The Echo Finder domain model.
+ * The Echo Finders domain model.
  *
  * The product is location-aware audio storytelling. A flight is one way to move across a
  * landscape; a car, a bicycle and a pair of shoes are others. The engine is written against
