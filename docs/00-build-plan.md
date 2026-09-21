@@ -1,4 +1,6 @@
-# SkyStories — Build Plan & Order of Operations
+# Echo Finders — Build Plan & Order of Operations
+
+*Echo Finders is a Whatishere.com product.*
 
 ## The thing we are actually building
 
@@ -15,7 +17,7 @@ first, and the pretty map last, because the map is the easy part.
 
 ### Phase 0 — Foundation (week 1) ← **we are here**
 - Monorepo, TypeScript strict, test runner.
-- `@skystories/core`: the domain model and the engine. Pure TypeScript, zero I/O, zero
+- `@echofinders/core`: the domain model and the engine. Pure TypeScript, zero I/O, zero
   external services. Everything below depends on it; it depends on nothing.
 - Content schema + validator, so bad content cannot enter the library.
 - Decision records for the calls that are expensive to reverse.

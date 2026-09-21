@@ -1,7 +1,9 @@
 # Design reference
 
 `skystories-phone.prototype.html` is the phone prototype, extracted from the Claude Design
-bundle. **It does not run standalone** — the bundle referenced Leaflet and its fonts by
+bundle. It predates the rename and still carries the old product name throughout, including
+in its mock copy — left as-is deliberately, because it is an archived artefact rather than
+living source. **It does not run standalone** — the bundle referenced Leaflet and its fonts by
 asset id, and those are not included here. It is checked in as a specification to read, not
 a page to serve.
 

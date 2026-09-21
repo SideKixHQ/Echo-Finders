@@ -14,7 +14,7 @@ respect to a user's personal saved places. No amount of OAuth scope changes this
 ## Decision
 "Save for later" is ours, and the Google hand-off is by deep link and import file:
 
-1. **Saving is a first-class SkyStories feature.** A saved place lives in the passenger's
+1. **Saving is a first-class Echo Finders feature.** A saved place lives in the passenger's
    local list and in the post-flight email. That list is ours and is the reason they come
    back.
 2. **Per-place Google hand-off** via a Maps URL

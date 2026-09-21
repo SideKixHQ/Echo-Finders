@@ -1,8 +1,14 @@
-# SkyStories
+# Echo Finders
 
-Location-aware audio storytelling for inflight entertainment. As the aircraft crosses a
-place, the passenger hears what happened there — history, the people who came from it, the
-strange and the unsolved, and things worth coming back for.
+**A [Whatishere.com](https://whatishere.com) product.**
+
+Location-aware audio storytelling. As you cross a place — at 35,000 feet, at 70mph, or on
+foot — you hear what happened there: its history, the people who came from it, the strange
+and the unsolved, and the things worth coming back for.
+
+The same engine and the same library serve an airline seatback, a road trip and a walking
+tour. What changes between them is a table of numbers, not a second codebase
+(`docs/adr/0007-multi-modal.md`).
 
 ## Repository layout
 
@@ -13,7 +19,8 @@ packages/
   core/          The engine. Pure TypeScript, no I/O: geometry, ranking, playlists, packages.
 content/
   stories/       The library. Reviewed files, schema-validated, true-crime CODEOWNERS-gated.
-  routes/        Flight corridors we build packages for.
+  routes/        Journey corridors we build packages for.
+design/          The phone prototype, as a specification to read.
 ```
 
 ## Getting started
@@ -26,5 +33,6 @@ npm test
 ## Where to start reading
 
 1. `docs/00-build-plan.md` — what we build, in what order, and what we are deliberately not building.
-2. `docs/adr/0002-position-source.md` — the constraint that shapes everything else.
-3. `packages/core/src/` — the engine those decisions produce.
+2. `docs/adr/0007-multi-modal.md` — journeys, not flights, and why that is the stronger business.
+3. `docs/adr/0002-position-source.md` — the constraint that shapes the rest.
+4. `packages/core/src/` — the engine those decisions produce.

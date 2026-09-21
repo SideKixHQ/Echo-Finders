@@ -25,6 +25,6 @@ installable to a home screen for frequent flyers.
 - One codebase demos to an airline as a URL. That matters enormously in a sales cycle.
 - Offline is a service worker plus a cached route package, not an app bundle.
 - If a consumer-brand native app later earns its place, it wraps the same engine:
-  `@skystories/core` is pure TypeScript and runs unchanged inside React Native.
+  `@echofinders/core` is pure TypeScript and runs unchanged inside React Native.
 - We give up native background audio. Mitigation: the Media Session API plus a wake lock
   covers a seated passenger with headphones in, which is the entire use case.
