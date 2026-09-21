@@ -8,6 +8,7 @@
  */
 
 import type { Source, Echo } from "../types.js";
+import { MODE_PRESETS } from "../modes.js";
 import { NOMINAL_DURATION_S, ECHO_CATEGORIES } from "../types.js";
 
 export type Severity = "error" | "warning";
@@ -117,6 +118,17 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
       "must be 0.02–250km; tighter than 20m cannot survive GNSS error, wider than 250km is not somewhere you are passing",
     );
   }
+  // An echo nobody can be confirmed standing in is an echo nobody can capture. A phone on
+  // a city street is typically sure to within thirty metres, so a radius tighter than that
+  // is smaller than the uncertainty around it — the capture would be a coin toss.
+  const walkingFixM = MODE_PRESETS.walking.typicalFixAccuracyM;
+  if (echo.point.triggerRadiusKm * 1000 < walkingFixM) {
+    warn(
+      "point.triggerRadiusKm",
+      `is ${Math.round(echo.point.triggerRadiusKm * 1000)}m, tighter than a typical ${walkingFixM}m position fix on foot — capture will be unreliable`,
+    );
+  }
+
   if (echo.point.place.trim().length === 0) {
     error("place", "is required — the script and the pin both name the place out loud");
   }

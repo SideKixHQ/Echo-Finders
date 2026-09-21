@@ -67,6 +67,16 @@ export interface ModePreset {
   readonly typicalTriggerRadiusKm: number;
 
   /**
+   * What a device's position fix is typically worth in this mode, metres.
+   *
+   * Authoring guidance, not a runtime knob: capture uses the accuracy the device actually
+   * reports, which already accounts for conditions far better than any table could. This
+   * exists so nobody writes a twenty-metre echo for a city street, where no phone could
+   * ever confirm standing in it — the radius would be smaller than the uncertainty.
+   */
+  readonly typicalFixAccuracyM: number;
+
+  /**
    * Size ceiling for an offline package, bytes.
    *
    * A walking tour is tiny and should download over mobile data without a thought. A
@@ -91,6 +101,8 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     arrivingS: 1200,
     positionPriority: ["aircraft-feed", "dead-reckoned", "device-gnss"],
     typicalTriggerRadiusKm: 60,
+    // Irrelevant in practice: the aircraft feed is authoritative (ADR-0002).
+    typicalFixAccuracyM: 50,
     packageBudgetBytes: 250 * MB,
   },
 
@@ -105,6 +117,8 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     arrivingS: 120,
     positionPriority: ["device-gnss", "dead-reckoned"],
     typicalTriggerRadiusKm: 8,
+    // Good sightlines, but tunnels and cuttings lose the fix entirely.
+    typicalFixAccuracyM: 20,
     packageBudgetBytes: 150 * MB,
   },
 
@@ -119,6 +133,8 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     arrivingS: 45,
     positionPriority: ["device-gnss", "dead-reckoned"],
     typicalTriggerRadiusKm: 3,
+    // The easiest case: open sky, steady motion, and Doppler to help.
+    typicalFixAccuracyM: 15,
     packageBudgetBytes: 120 * MB,
   },
 
@@ -133,6 +149,8 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     arrivingS: 40,
     positionPriority: ["device-gnss"],
     typicalTriggerRadiusKm: 0.5,
+    // Like driving, but more time spent among buildings.
+    typicalFixAccuracyM: 20,
     packageBudgetBytes: 80 * MB,
   },
 
@@ -149,6 +167,9 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     arrivingS: 17,
     positionPriority: ["device-gnss"],
     typicalTriggerRadiusKm: 0.12,
+    // The hardest case. A street between tall buildings is the worst place
+    // a phone can be asked where it is, and it is exactly where echoes are densest.
+    typicalFixAccuracyM: 30,
     packageBudgetBytes: 60 * MB,
   },
 };

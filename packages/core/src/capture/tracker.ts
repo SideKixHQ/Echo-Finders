@@ -32,10 +32,24 @@ export interface CaptureOptions {
    */
   readonly dwellS?: number;
   /**
-   * Most GPS slack to grant, km. A device reporting a 500m accuracy circle should not
-   * thereby open every echo within 500m.
+   * Largest share of an echo's own radius that GPS slack may add, 0–1.
+   *
+   * Proportional rather than a fixed distance, and deliberately **not** a per-mode
+   * setting, because both inputs already carry the mode's scale: a walking echo has a
+   * fifty-metre radius and a driving one has three kilometres, while the device reports
+   * accuracy that already reflects whether it is under open sky or between tower blocks.
+   * A mode table on top of that would be duplicating what we are told, and would go stale
+   * the moment someone walks a route authored for a car.
    */
-  readonly maxAccuracyAllowanceKm?: number;
+  readonly maxSlackFraction?: number;
+  /**
+   * Reject a fix whose accuracy exceeds this multiple of the echo's radius.
+   *
+   * Two, not three, because the two failure modes cost very differently. Refusing to open
+   * an echo the listener is standing next to costs them a few more steps. Opening one they
+   * are nowhere near makes the app a liar, and they will not trust the next capture.
+   */
+  readonly maxAccuracyRatio?: number;
   /** Multiple of the mode's speed beyond which movement is treated as impossible. */
   readonly maxSpeedFactor?: number;
   readonly requireAudio?: boolean;
@@ -43,7 +57,8 @@ export interface CaptureOptions {
 
 const DEFAULTS = {
   dwellS: 12,
-  maxAccuracyAllowanceKm: 0.06,
+  maxSlackFraction: 0.5,
+  maxAccuracyRatio: 2,
   // Generous: GPS jitter, a sprint for a bus, a tailwind on a bike. This is meant to catch
   // teleportation, not athleticism.
   maxSpeedFactor: 4,
@@ -69,7 +84,8 @@ export class CaptureTracker {
     this.options = {
       mode: options.mode ?? "walking",
       dwellS: options.dwellS ?? DEFAULTS.dwellS,
-      maxAccuracyAllowanceKm: options.maxAccuracyAllowanceKm ?? DEFAULTS.maxAccuracyAllowanceKm,
+      maxSlackFraction: options.maxSlackFraction ?? DEFAULTS.maxSlackFraction,
+      maxAccuracyRatio: options.maxAccuracyRatio ?? DEFAULTS.maxAccuracyRatio,
       maxSpeedFactor: options.maxSpeedFactor ?? DEFAULTS.maxSpeedFactor,
       requireAudio: options.requireAudio ?? false,
     };
@@ -209,13 +225,22 @@ export class CaptureTracker {
 
   // --- internals ---------------------------------------------------------------------
 
-  /** Trigger radius plus a bounded allowance for how vague the fix is. */
+  /**
+   * Trigger radius plus a bounded allowance for how vague the fix is.
+   *
+   * Two ceilings, and both are needed. The reported accuracy caps the slack, so a precise
+   * fix grants almost none — there is no reason to be generous when the device is sure.
+   * The radius fraction caps it again, so a vague fix cannot inflate a doorway into a
+   * neighbourhood. In practice on the ground the reported accuracy binds, and the fraction
+   * only catches the pathological cases.
+   */
   private reachFor(echo: Echo, position: Position): number {
+    const radiusKm = echo.point.triggerRadiusKm;
     const accuracyKm = Math.min(
       (position.accuracyM ?? 0) / 1000,
-      this.options.maxAccuracyAllowanceKm,
+      radiusKm * this.options.maxSlackFraction,
     );
-    return echo.point.triggerRadiusKm + accuracyKm;
+    return radiusKm + accuracyKm;
   }
 
   /**
@@ -227,7 +252,7 @@ export class CaptureTracker {
    */
   private fixTooVague(echo: Echo, position: Position): boolean {
     const accuracyKm = (position.accuracyM ?? 0) / 1000;
-    return accuracyKm > echo.point.triggerRadiusKm * 3;
+    return accuracyKm > echo.point.triggerRadiusKm * this.options.maxAccuracyRatio;
   }
 
   private isEligible(echo: Echo, atMs: number): boolean {
