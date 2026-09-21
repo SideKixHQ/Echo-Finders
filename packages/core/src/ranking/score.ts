@@ -12,9 +12,11 @@ import type {
   ListenerProfile,
   Echo,
   EchoCategory,
+  Provenance,
   TravelMode,
 } from "../types.js";
 import { isOnFoot, OPT_IN_CATEGORIES } from "../types.js";
+import { presetFor } from "../modes.js";
 import { isDaylight, localSolarHour } from "../geo/solar.js";
 import type { CorridorHit } from "../geo/corridor.js";
 
@@ -27,7 +29,11 @@ export type IneligibleReason =
   | "missing-true-crime-review"
   | "already-heard"
   | "no-audio"
-  | "outside-hours";
+  | "outside-hours"
+  /** A contributed echo where only the editorial library is carried. */
+  | "provenance-not-carried"
+  /** Reported by a listener and hidden pending review. */
+  | "under-review";
 
 export interface EligibilityResult {
   readonly eligible: boolean;
@@ -36,6 +42,11 @@ export interface EligibilityResult {
 
 export interface EligibilityContext {
   readonly profile: ListenerProfile;
+  /**
+   * How the listener is travelling. Decides which kinds of echo are carried when the
+   * listener has not said otherwise.
+   */
+  readonly mode?: TravelMode;
   /** Epoch ms at which the echo would play, for the day/night and hour rules. */
   readonly playAtMs: number;
   /** Require rendered audio. Off while authoring, on when building a route package. */
@@ -79,6 +90,18 @@ export function checkEligibility(echo: Echo, context: EligibilityContext): Eligi
   if (context.requireAudio && !echo.audioKey) reasons.push("no-audio");
 
   if (echo.hours && !withinHours(echo, playAtMs)) reasons.push("outside-hours");
+
+  // Contributed content is carried by mode and by choice, never by default everywhere.
+  const carried: readonly Provenance[] =
+    profile.provenances ?? presetFor(context.mode ?? "walking").defaultProvenances;
+  if (!carried.includes(echo.provenance ?? "editorial")) {
+    reasons.push("provenance-not-carried");
+  }
+
+  // A reported echo is hidden the moment it is flagged, not once someone gets to it.
+  // Being briefly wrong about a good contribution costs far less than being briefly right
+  // about a bad one.
+  if (echo.contribution?.reportedAt) reasons.push("under-review");
 
   return { eligible: reasons.length === 0, reasons };
 }

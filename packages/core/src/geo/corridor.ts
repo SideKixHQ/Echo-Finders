@@ -7,6 +7,7 @@
 
 import type { Route, LatLng, Echo } from "../types.js";
 import { presetFor } from "../modes.js";
+import { effectiveRadiusKm } from "../content/contributions.js";
 import {
   boundingBox,
   distanceKm,
@@ -151,7 +152,8 @@ export function findEchoesAlongRoute(
     if (!inBoundingBox(box, echo.point.at)) continue;
 
     const projection = projectOntoRoute(geometry, echo.point.at);
-    const limit = Math.min(maxCrossTrackKm, echo.point.triggerRadiusKm);
+    // Contributed echoes carry only as far as their contributor has earned.
+    const limit = Math.min(maxCrossTrackKm, effectiveRadiusKm(echo));
     if (projection.crossTrackKm > limit) continue;
 
     hits.push({ echo, ...projection });

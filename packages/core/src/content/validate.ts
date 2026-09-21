@@ -9,6 +9,7 @@
 
 import type { Source, Echo } from "../types.js";
 import { MODE_PRESETS } from "../modes.js";
+import { checkContribution } from "./contributions.js";
 import { NOMINAL_DURATION_S, ECHO_CATEGORIES } from "../types.js";
 
 export type Severity = "error" | "warning";
@@ -152,7 +153,8 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
   // Sponsored placements are exempt: an advertisement makes no factual claim we are
   // vouching for, and requiring a National Park Service citation for a restaurant would
   // only teach editors to paste in a meaningless one.
-  if (echo.sources.length === 0 && !echo.sponsorship) {
+  const isTestimony = (echo.provenance ?? "editorial") === "personal";
+  if (echo.sources.length === 0 && !echo.sponsorship && !isTestimony) {
     error("sources", "every claim must be traceable; at least one source is required");
   }
   for (const [i, source] of echo.sources.entries()) {
@@ -204,7 +206,7 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
   // "We distinguish fact from legend and clearly identify uncertainty" only means
   // something if a build can fail over it. A confident narrator makes a ghost story and a
   // census record sound identical, and a confident voice is what stops a listener checking.
-  if (echo.certainty !== "documented" && !echo.certaintyNote?.trim()) {
+  if (echo.certainty !== "documented" && echo.certainty !== "testimony" && !echo.certaintyNote?.trim()) {
     error(
       "certaintyNote",
       `is required when certainty is "${echo.certainty}" — say what is disputed and who disputes it, because "sources differ" is not a disclosure`,
@@ -241,6 +243,9 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
       );
     }
   }
+
+  // --- Contributions ------------------------------------------------------------------
+  for (const issue of checkContribution(echo)) error(issue.field, issue.message);
 
   // --- Sponsorship --------------------------------------------------------------------
   if (echo.sponsorship) issues.push(...validateSponsorship(echo));

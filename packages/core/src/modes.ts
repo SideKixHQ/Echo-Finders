@@ -14,7 +14,7 @@
  * tour feel broken.
  */
 
-import type { ListeningDensity, PositionSourceKind, TravelMode } from "./types.js";
+import type { ListeningDensity, PositionSourceKind, Provenance, TravelMode } from "./types.js";
 
 export interface ModePreset {
   /** Typical moving speed, km/h. Used for dead reckoning and duration estimates. */
@@ -63,6 +63,17 @@ export interface ModePreset {
    */
   readonly positionPriority: readonly PositionSourceKind[];
 
+  /**
+   * Which kinds of echo play by default in this mode.
+   *
+   * The one genuinely commercial setting in this table. A licensed airline service carries
+   * the editorial library and vetted partners and nothing else — an airline will not put
+   * unvetted passenger contributions in front of a cabin, and the contract will say so.
+   * Someone walking their own city is the opposite case: the contributions are the point,
+   * because no editorial team knows which corner shop someone's grandparents met outside.
+   */
+  readonly defaultProvenances: readonly Provenance[];
+
   /** Suggested trigger radius for new content in this mode, km. Editorial guidance. */
   readonly typicalTriggerRadiusKm: number;
 
@@ -100,6 +111,7 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     settlingS: 900,
     arrivingS: 1200,
     positionPriority: ["aircraft-feed", "dead-reckoned", "device-gnss"],
+    defaultProvenances: ["editorial", "partner"],
     typicalTriggerRadiusKm: 60,
     // Irrelevant in practice: the aircraft feed is authoritative (ADR-0002).
     typicalFixAccuracyM: 50,
@@ -116,6 +128,7 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     settlingS: 120,
     arrivingS: 120,
     positionPriority: ["device-gnss", "dead-reckoned"],
+    defaultProvenances: ["editorial", "partner"],
     typicalTriggerRadiusKm: 8,
     // Good sightlines, but tunnels and cuttings lose the fix entirely.
     typicalFixAccuracyM: 20,
@@ -132,6 +145,7 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     settlingS: 45,
     arrivingS: 45,
     positionPriority: ["device-gnss", "dead-reckoned"],
+    defaultProvenances: ["editorial", "partner", "personal"],
     typicalTriggerRadiusKm: 3,
     // The easiest case: open sky, steady motion, and Doppler to help.
     typicalFixAccuracyM: 15,
@@ -148,6 +162,7 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     settlingS: 40,
     arrivingS: 40,
     positionPriority: ["device-gnss"],
+    defaultProvenances: ["editorial", "partner", "personal"],
     typicalTriggerRadiusKm: 0.5,
     // Like driving, but more time spent among buildings.
     typicalFixAccuracyM: 20,
@@ -166,6 +181,7 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     settlingS: 17,
     arrivingS: 17,
     positionPriority: ["device-gnss"],
+    defaultProvenances: ["editorial", "partner", "personal"],
     typicalTriggerRadiusKm: 0.12,
     // The hardest case. A street between tall buildings is the worst place
     // a phone can be asked where it is, and it is exactly where echoes are densest.

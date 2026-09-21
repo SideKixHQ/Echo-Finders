@@ -217,13 +217,86 @@ export interface EchoPoint {
  * a ghost story and a census record end up sounding equally authoritative in a narrator's
  * voice — and a confident voice is exactly what makes a listener stop checking.
  */
+/**
+ * Who made this, and what kind of claim it is making.
+ *
+ * The distinction that makes user contributions safe, and it turns on something easy to
+ * miss: **a memory and a fact are not the same kind of statement.**
+ *
+ * "The Emigrant Landing Depot opened on 1 August 1855" is a claim about the world. It can
+ * be wrong, so it has to be checked, and if we publish it wrong we have misinformed
+ * someone.
+ *
+ * "My grandmother told me she met my grandfather at this corner" is a claim about the
+ * speaker. It is not checkable and does not need to be — it is testimony, and treating it
+ * as unverified history would be a category error. What it needs instead is attribution,
+ * so a listener knows whose account they are hearing, and framing, so nobody mistakes it
+ * for the record.
+ *
+ * Keeping these apart is also what protects the licensing business. An airline will not
+ * carry unvetted passenger content; it will happily carry an editorial library that has
+ * never mixed with any.
+ */
+export type Provenance =
+  /** Researched, sourced, fact-checked, human-approved. The library we license. */
+  | "editorial"
+  /** A museum, archive, tourism board or historical society. A vetted institution. */
+  | "partner"
+  /** Someone who was there. Testimony, attributed, never presented as the record. */
+  | "personal";
+
+/** How far a contributor's echoes reach, by how much the library has learned to trust them. */
+export type TrustLevel = "new" | "established" | "trusted" | "institution";
+
+/**
+ * The blast radius of a contribution, in km.
+ *
+ * A first contribution is audible only to someone standing almost on top of it. That single
+ * number does most of the moderation work: spam has no payoff when nobody hears it, a
+ * mistake reaches almost no one, and reach becomes something earned by contributions that
+ * people actually listened to and did not report — rather than something granted by an
+ * approval queue that cannot scale.
+ */
+export const TRUST_REACH_KM: Record<TrustLevel, number> = {
+  new: 0.05,
+  established: 0.2,
+  trusted: 0.6,
+  institution: 5,
+};
+
+export interface Contribution {
+  /** Stable, internal. Contributions are attributable to us even when shown by first name. */
+  readonly contributorId: string;
+  /** What a listener hears: "Marcus, who grew up on this street". Never a full legal name. */
+  readonly attribution: string;
+  readonly submittedAt: string;
+  readonly trust: TrustLevel;
+  /**
+   * Recorded in the contributor's own voice rather than narrated by ours.
+   *
+   * Far more affecting for a memory, and worth the extra moderation cost — a grandmother's
+   * actual voice is the whole point of letting someone leave one.
+   */
+  readonly ownVoice: boolean;
+  /** Set when a listener has flagged it. Hidden pending review. */
+  readonly reportedAt?: string;
+}
+
 export type Certainty =
   /** The record supports it. Most echoes, and the only kind that may state things plainly. */
   | "documented"
   /** Historians disagree, or the evidence is thin. The script has to say so, out loud. */
   | "contested"
   /** A ghost story, a tall tale, a local legend. True as folklore, not as history. */
-  | "legend";
+  | "legend"
+  /**
+   * Someone's account of their own experience.
+   *
+   * Deliberately outside the scale above, which measures how well the historical record
+   * supports a claim. Testimony is not on that scale — it is not making a claim about the
+   * record, and grading it against one would be a category error.
+   */
+  | "testimony";
 
 export interface Echo {
   readonly id: string;
@@ -251,6 +324,11 @@ export interface Echo {
   readonly sources: readonly Source[];
   readonly editorial: EditorialStatus;
   readonly factCheck: FactCheckStatus;
+  /** Who made this, and what kind of claim it makes. Defaults to editorial where absent. */
+  readonly provenance?: Provenance;
+  /** Present on contributed echoes, absent on the editorial library. */
+  readonly contribution?: Contribution;
+
   /** How firmly the record supports this. Never inferred — an editor states it. */
   readonly certainty: Certainty;
   /**
@@ -441,6 +519,14 @@ export interface ListenerProfile {
   readonly density?: ListeningDensity;
   /** Echo IDs already heard, on this or an earlier route. Never repeated. */
   readonly heardEchoIds?: readonly string[];
+  /**
+   * Which kinds of echo to hear. Defaults to what the travel mode carries.
+   *
+   * A passenger on a licensed airline service and someone wandering their own city want
+   * genuinely different answers, which is why the default belongs to the mode rather than
+   * to the person.
+   */
+  readonly provenances?: readonly Provenance[];
 }
 
 /**

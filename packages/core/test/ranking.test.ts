@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { checkEligibility, scoreEcho } from "../src/ranking/score.js";
-import type { ScoreContext } from "../src/ranking/score.js";
+import type { EligibilityContext, ScoreContext } from "../src/ranking/score.js";
 import { buildPlaylist } from "../src/ranking/playlist.js";
 import type { CorridorHit } from "../src/geo/corridor.js";
 import type { ListenerProfile, Echo, TrueCrimeReview } from "../src/types.js";
@@ -24,7 +24,7 @@ const hitFor = (echo: Echo, crossTrackKm = 5): CorridorHit => ({
 });
 
 describe("checkEligibility", () => {
-  const base = { profile: ADULT, playAtMs: NOON_UTC, mode: "flight" };
+  const base: EligibilityContext = { profile: ADULT, playAtMs: NOON_UTC, mode: "flight" };
 
   it("passes an approved, corroborated, in-category echo", () => {
     const echo = makeEcho({ id: "ok", at: { lat: 33, lng: -79 } });
