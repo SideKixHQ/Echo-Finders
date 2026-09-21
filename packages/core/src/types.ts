@@ -1,6 +1,13 @@
 /**
  * The SkyStories domain model.
  *
+ * The product is location-aware audio storytelling. A flight is one way to move across a
+ * landscape; a car, a bicycle and a pair of shoes are others. The engine is written against
+ * a *journey* rather than a flight, because the underlying question is identical in every
+ * case — what is worth saying about the place you are passing, and when — and because the
+ * differences that do exist are quantitative (speed, corridor width, how long a story stays
+ * relevant) rather than structural. Those live in `MODE_PRESETS`.
+ *
  * A story is deliberately split into three independent records: the sourced facts, the
  * script written from them, and the audio rendered from that script. Keeping them apart
  * is what lets us correct a fact without re-recording, or re-voice the whole library
@@ -10,6 +17,20 @@
 export interface LatLng {
   readonly lat: number;
   readonly lng: number;
+}
+
+/**
+ * How the listener is moving. This is the single most important input to the engine after
+ * position itself: it changes speed by two orders of magnitude, corridor width by three,
+ * and how long a story remains relevant by roughly ten.
+ */
+export const TRAVEL_MODES = ["flight", "rail", "driving", "cycling", "walking"] as const;
+
+export type TravelMode = (typeof TRAVEL_MODES)[number];
+
+/** True when the listener could plausibly reach out and touch the subject. */
+export function isOnFoot(mode: TravelMode): boolean {
+  return mode === "walking" || mode === "cycling";
 }
 
 // ---------------------------------------------------------------------------
@@ -60,9 +81,18 @@ export type FactCheckStatus = "unchecked" | "single-source" | "corroborated" | "
  * subject is a battlefield that looks like a field.
  */
 export type Visibility =
-  /** Recognisable from altitude: coastline, canyon, lake, major city grid. */
+  /**
+   * Recognisable at a distance: a coastline, a canyon, a mountain, a city grid. Works
+   * from the air, from a train window and from a car.
+   */
   | "landmark-visible"
-  /** You are over it, but there is nothing to see. Most history lives here. */
+  /**
+   * Immediately present — a building, a plaque, a doorway, a specific tree. Perfect on
+   * foot, glimpsed at best from a car, and meaningless from 35,000 feet. A story marked
+   * this way is scored almost entirely by whether the listener can actually stop and look.
+   */
+  | "at-hand"
+  /** You are there, but there is nothing to see. Most history lives here. */
   | "position-only"
   /** Needs daylight and clear skies to be worth mentioning. */
   | "daylight-dependent";
@@ -109,8 +139,12 @@ export interface Story {
 
   readonly at: LatLng;
   /**
-   * How far off the flight path this story is still worth playing, in km. Generous by
-   * design: position is approximate (ADR-0002) and a city is interesting from 60km away.
+   * How far off the route this story is still worth playing, in km.
+   *
+   * Kilometres throughout, including the fractional values a walking tour needs — a blue
+   * plaque is 0.05, a neighbourhood 0.5, a city 60. One unit everywhere is worth the
+   * slightly awkward decimals: every distance in the geometry code is in kilometres, and
+   * a second unit in the content files is exactly how a 1,000× error gets shipped.
    */
   readonly triggerRadiusKm: number;
   /** Human-readable anchor: "Savannah, Georgia". Used in the script and on the pin. */
@@ -161,7 +195,7 @@ export interface Attraction {
 }
 
 // ---------------------------------------------------------------------------
-// Flights
+// Journeys
 // ---------------------------------------------------------------------------
 
 export interface Waypoint {
@@ -169,32 +203,42 @@ export interface Waypoint {
   readonly name?: string;
 }
 
-export interface FlightPlan {
+export interface Journey {
   readonly id: string;
-  readonly origin: Airport;
-  readonly destination: Airport;
-  /** Ordered waypoints from origin to destination, inclusive of both. */
+  readonly mode: TravelMode;
+  readonly origin: Place;
+  readonly destination: Place;
+  /**
+   * Ordered waypoints from origin to destination, inclusive of both.
+   *
+   * For a flight these are few and far apart, and the engine joins them along great
+   * circles. For a drive or a walk they are dense, because the route follows roads and
+   * paths rather than the shortest line — the geometry code makes no distinction, it just
+   * gets more points.
+   */
   readonly waypoints: readonly Waypoint[];
   /** Scheduled departure, ISO 8601 with offset. */
   readonly departureAt: string;
-  /** Scheduled block time in seconds, gate to gate. */
+  /** Expected total duration in seconds, door to door. */
   readonly durationS: number;
+  /** Flight only. */
   readonly cruiseAltitudeFt?: number;
 }
 
-export interface Airport {
-  readonly iata: string;
+export interface Place {
   readonly name: string;
   readonly at: LatLng;
   /** IANA zone, for the day/night and local-hour rules. */
   readonly timeZone: string;
+  /** Airport IATA code, station code, or similar. Absent for a street corner. */
+  readonly code?: string;
 }
 
 /** Where the aircraft is, however we came to know it. */
 export interface Position {
   readonly at: LatLng;
   readonly altitudeFt?: number;
-  readonly groundSpeedKts?: number;
+  readonly speedKph?: number;
   readonly headingDeg?: number;
   /** Epoch milliseconds. */
   readonly timestamp: number;
@@ -203,8 +247,15 @@ export interface Position {
 
 export type PositionSourceKind = "aircraft-feed" | "device-gnss" | "dead-reckoned";
 
-/** Coarse phase of flight. Stories are held back until the cabin has settled. */
-export type FlightPhase = "pre-departure" | "climb" | "cruise" | "descent" | "arrived";
+/**
+ * Coarse phase of a journey, named generically because the same five shapes appear in
+ * every mode — they just differ in length.
+ *
+ * On a flight, `settling` is taxi and climb (nobody wants a narrator during the safety
+ * briefing) and `arriving` is the descent. On a walking tour both collapse to under a
+ * minute: the listener puts their headphones in and wants to start.
+ */
+export type JourneyPhase = "not-started" | "settling" | "underway" | "arriving" | "arrived";
 
 // ---------------------------------------------------------------------------
 // Passenger preferences
@@ -217,43 +268,44 @@ export interface ListenerProfile {
   readonly age: number;
   /** Tag affinities, 0–1, from onboarding taps. Absent tags score neutral. */
   readonly interests?: Readonly<Record<string, number>>;
-  /** Roughly how much of the flight should be audio rather than silence. */
+  /** Roughly how much of the journey should be audio rather than silence. */
   readonly density?: ListeningDensity;
-  /** Story IDs already heard, on this or an earlier flight. Never repeated. */
+  /** Story IDs already heard, on this or an earlier journey. Never repeated. */
   readonly heardStoryIds?: readonly string[];
 }
 
-/** How chatty the flight should be. Silence is a feature; most people want less than we think. */
+/**
+ * How chatty the journey should be.
+ *
+ * What these mean in practice is mode-dependent, and the difference is large: silence on a
+ * three-hour flight is restful, whereas silence on a forty-minute walking tour just feels
+ * like the app is broken. The actual duty cycles live in `MODE_PRESETS`.
+ */
 export type ListeningDensity = "light" | "balanced" | "immersive";
-
-export const DENSITY_DUTY_CYCLE: Record<ListeningDensity, number> = {
-  light: 0.2,
-  balanced: 0.4,
-  immersive: 0.65,
-};
 
 // ---------------------------------------------------------------------------
 // Scheduling output
 // ---------------------------------------------------------------------------
 
-/** A story placed on the flight's timeline. */
+/** A story placed on the journey's timeline. */
 export interface ScheduledStory {
   readonly story: Story;
   /** Seconds after departure when playback begins. */
   readonly startS: number;
   readonly endS: number;
-  /** Seconds after departure when the aircraft is nearest this story. */
+  /** Seconds after departure when the listener is nearest this story. */
   readonly nearestS: number;
-  /** Perpendicular distance from the flight path, km. */
+  /** Perpendicular distance from the route, km. */
   readonly crossTrackKm: number;
   readonly score: number;
 }
 
 export interface Playlist {
-  readonly flightId: string;
+  readonly journeyId: string;
   readonly items: readonly ScheduledStory[];
   /** Ranked but unscheduled — the reserve the client draws on when a filter changes. */
   readonly reserve: readonly Story[];
   readonly totalAudioS: number;
-  readonly flightDurationS: number;
+  readonly journeyDurationS: number;
+  readonly mode: TravelMode;
 }

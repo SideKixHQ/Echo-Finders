@@ -5,7 +5,8 @@
  * the track it sits, and how far along the track you meet it. This module computes both.
  */
 
-import type { FlightPlan, LatLng, Story } from "../types.js";
+import type { Journey, LatLng, Story } from "../types.js";
+import { presetFor } from "../modes.js";
 import {
   boundingBox,
   distanceKm,
@@ -30,7 +31,24 @@ export interface RouteGeometry {
  * bows hundreds of kilometres away from the straight line between them, and a story sitting
  * under that bow would otherwise be missed entirely.
  */
-export function buildRouteGeometry(plan: FlightPlan, segmentKm = 25): RouteGeometry {
+/**
+ * Polyline resolution for a mode.
+ *
+ * Densification exists to stop the polyline cutting across a great-circle bow, and the
+ * error it corrects is quadratic in step length: a 25km step deviates from the true arc by
+ * about twelve metres, which is negligible against an 80km flight corridor. So the step is
+ * capped at 25km however wide the corridor is — going finer buys nothing and made the flight
+ * geometry six times larger for no gain.
+ *
+ * Ground modes get a proportionally finer step, mostly so the drawn route on the map follows
+ * the street rather than chording across a bend.
+ */
+export function defaultSegmentKm(journey: Journey): number {
+  return Math.min(25, Math.max(0.05, presetFor(journey.mode).corridorKm / 2));
+}
+
+export function buildRouteGeometry(plan: Journey, segmentKm?: number): RouteGeometry {
+  const step = segmentKm ?? defaultSegmentKm(plan);
   const waypoints = plan.waypoints;
   if (waypoints.length < 2) {
     throw new Error(`Flight plan ${plan.id} needs at least two waypoints`);
@@ -44,7 +62,7 @@ export function buildRouteGeometry(plan: FlightPlan, segmentKm = 25): RouteGeome
     const from = waypoints[i]!.at;
     const to = waypoints[i + 1]!.at;
     const legKm = distanceKm(from, to);
-    const steps = Math.max(1, Math.ceil(legKm / segmentKm));
+    const steps = Math.max(1, Math.ceil(legKm / step));
 
     for (let s = 1; s <= steps; s++) {
       const point = s === steps ? to : interpolate(from, to, s / steps);
@@ -103,11 +121,11 @@ export interface CorridorOptions {
    * inside its own trigger radius, so a route can be narrowed without editing content.
    */
   readonly maxCrossTrackKm?: number;
-  /** Densification step for the route polyline. */
+  /** Densification step for the route polyline. Defaults per mode; see `defaultSegmentKm`. */
   readonly segmentKm?: number;
 }
 
-const DEFAULT_MAX_CROSS_TRACK_KM = 80;
+
 
 /**
  * Find every story the flight passes near, with its position along the route.
@@ -116,11 +134,12 @@ const DEFAULT_MAX_CROSS_TRACK_KM = 80;
  * and therefore the natural order for everything downstream.
  */
 export function findStoriesAlongRoute(
-  plan: FlightPlan,
+  plan: Journey,
   stories: readonly Story[],
   options: CorridorOptions = {},
 ): CorridorHit[] {
-  const maxCrossTrackKm = options.maxCrossTrackKm ?? DEFAULT_MAX_CROSS_TRACK_KM;
+  const preset = presetFor(plan.mode);
+  const maxCrossTrackKm = options.maxCrossTrackKm ?? preset.corridorKm;
   const geometry = buildRouteGeometry(plan, options.segmentKm);
 
   // Cheap rejection first. A continental route against a global library would otherwise

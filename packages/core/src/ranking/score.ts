@@ -12,8 +12,9 @@ import type {
   ListenerProfile,
   Story,
   StoryCategory,
+  TravelMode,
 } from "../types.js";
-import { OPT_IN_CATEGORIES } from "../types.js";
+import { isOnFoot, OPT_IN_CATEGORIES } from "../types.js";
 import { isDaylight, localSolarHour } from "../geo/solar.js";
 import type { CorridorHit } from "../geo/corridor.js";
 
@@ -119,6 +120,12 @@ export const SCORE_WEIGHTS = {
 export interface ScoreContext {
   readonly profile: ListenerProfile;
   readonly playAtMs: number;
+  /**
+   * How the listener is moving. This changes the *meaning* of a story's visibility class,
+   * not merely its weight: a blue plaque is the best possible story on foot and a
+   * pointless one from 35,000 feet.
+   */
+  readonly mode: TravelMode;
 }
 
 /** Score a corridor hit in 0–1. Assumes eligibility has already been established. */
@@ -128,7 +135,7 @@ export function scoreStory(hit: CorridorHit, context: ScoreContext): ScoreBreakd
   const quality = clamp01(story.quality);
   const proximity = proximityScore(hit);
   const interest = interestScore(story, context.profile);
-  const visibility = visibilityScore(story, context.playAtMs);
+  const visibility = visibilityScore(story, context.playAtMs, context.mode);
 
   const total =
     quality * SCORE_WEIGHTS.quality +
@@ -172,13 +179,28 @@ function interestScore(story: Story, profile: ListenerProfile): number {
   return count === 0 ? 0.5 : clamp01(matched / count);
 }
 
-function visibilityScore(story: Story, playAtMs: number): number {
+function visibilityScore(story: Story, playAtMs: number, mode: TravelMode): number {
+  const daylight = isDaylight(story.at, playAtMs);
+
   switch (story.visibility) {
     case "landmark-visible":
       // Seeing the subject is the whole magic trick, but only in daylight.
-      return isDaylight(story.at, playAtMs) ? 1 : 0.55;
+      return daylight ? 1 : 0.55;
+
+    case "at-hand":
+      // The sharpest mode interaction in the system. Standing in front of the house where
+      // something happened is the most powerful thing this product does; being seven miles
+      // above it is the least. Suppressing rather than merely demoting it matters, because
+      // a dense city centre holds hundreds of at-hand stories and a flight crossing it
+      // would otherwise fill with plaques nobody can see.
+      if (isOnFoot(mode)) return daylight ? 1 : 0.85;
+      if (mode === "driving") return daylight ? 0.45 : 0.3;
+      if (mode === "rail") return daylight ? 0.3 : 0.2;
+      return 0.05;
+
     case "daylight-dependent":
-      return isDaylight(story.at, playAtMs) ? 0.9 : 0.1;
+      return daylight ? 0.9 : 0.1;
+
     case "position-only":
       return 0.6;
   }

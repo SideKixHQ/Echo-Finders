@@ -14,13 +14,14 @@
  */
 
 import type {
-  FlightPlan,
+  Journey,
   LatLng,
   ListenerProfile,
   Story,
   StoryCategory,
 } from "../types.js";
 import { STORY_CATEGORIES } from "../types.js";
+import { presetFor } from "../modes.js";
 import {
   buildRouteGeometry,
   corridorBoundingBox,
@@ -32,8 +33,9 @@ import { buildPlaylist } from "../ranking/playlist.js";
 
 export interface RoutePackageOptions {
   /**
-   * Size ceiling in bytes. The default is sized for a three-hour domestic flight over a
-   * shared cabin connection, or a slot on an onboard server holding dozens of routes.
+   * Size ceiling in bytes. Defaults to the mode preset: a quarter of a gigabyte for a
+   * long flight, a fraction of that for a walking tour that should download over mobile
+   * data without the listener thinking about it.
    */
   readonly maxBytes?: number;
   /** Bitrate assumed when a story has no measured `audioBytes`. Mono Opus speech. */
@@ -52,7 +54,6 @@ export interface RoutePackageOptions {
 }
 
 const DEFAULTS = {
-  maxBytes: 250 * 1024 * 1024,
   bitrateKbps: 64,
   // A young child, an older child, the true-crime threshold, and an adult.
   audienceAges: [6, 12, 16, 35] as readonly number[],
@@ -70,8 +71,8 @@ export interface PackagedStory {
 
 export interface RoutePackage {
   readonly formatVersion: 1;
-  readonly flightId: string;
-  readonly plan: FlightPlan;
+  readonly journeyId: string;
+  readonly plan: Journey;
   /** Decimated great-circle polyline for the map. */
   readonly path: readonly LatLng[];
   readonly bounds: BoundingBox;
@@ -96,11 +97,12 @@ export interface RoutePackage {
  * entire budget on adult history and leave a seven-year-old with nothing.
  */
 export function buildRoutePackage(
-  plan: FlightPlan,
+  plan: Journey,
   library: readonly Story[],
   options: RoutePackageOptions = {},
 ): RoutePackage {
-  const maxBytes = options.maxBytes ?? DEFAULTS.maxBytes;
+  const preset = presetFor(plan.mode);
+  const maxBytes = options.maxBytes ?? preset.packageBudgetBytes;
   const bitrateKbps = options.bitrateKbps ?? DEFAULTS.bitrateKbps;
   const audienceAges = options.audienceAges ?? DEFAULTS.audienceAges;
   const categories = options.categories ?? STORY_CATEGORIES;
@@ -167,10 +169,10 @@ export function buildRoutePackage(
 
   return {
     formatVersion: 1,
-    flightId: plan.id,
+    journeyId: plan.id,
     plan,
     path: decimate(geometry.points, options.maxPathPoints ?? DEFAULTS.maxPathPoints),
-    bounds: corridorBoundingBox(geometry, options.maxCrossTrackKm ?? 80),
+    bounds: corridorBoundingBox(geometry, options.maxCrossTrackKm ?? preset.corridorKm),
     stories: packaged,
     totalBytes,
     budgetBytes: maxBytes,

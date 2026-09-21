@@ -1,17 +1,19 @@
-import type { FlightPlan, ListenerProfile, Source, Story, StoryCategory, StoryFormat } from "../src/types.js";
+import type { Journey, ListenerProfile, Source, Story, StoryCategory, StoryFormat } from "../src/types.js";
 import { NOMINAL_DURATION_S } from "../src/types.js";
 import { buildRouteGeometry, pointAtDistance } from "../src/geo/corridor.js";
+import { presetFor } from "../src/modes.js";
 
-export const JFK_MIA: FlightPlan = {
+export const JFK_MIA: Journey = {
   id: "test-jfk-mia",
+  mode: "flight",
   origin: {
-    iata: "JFK",
+    code: "JFK",
     name: "John F. Kennedy International",
     at: { lat: 40.6413, lng: -73.7781 },
     timeZone: "America/New_York",
   },
   destination: {
-    iata: "MIA",
+    code: "MIA",
     name: "Miami International",
     at: { lat: 25.7959, lng: -80.287 },
     timeZone: "America/New_York",
@@ -104,3 +106,82 @@ export const TRUE_CRIME_FAN: ListenerProfile = {
   categories: ["true-crime", "history"],
   age: 35,
 };
+
+/**
+ * A walking tour of lower Manhattan: about two kilometres, forty minutes, following
+ * streets rather than a straight line.
+ *
+ * Deliberately the hardest case for the engine. Everything is close together, the trigger
+ * radii are metres rather than kilometres, and a story that plays ninety seconds late is
+ * about a building the listener can no longer see.
+ */
+export const MANHATTAN_WALK: Journey = {
+  id: "test-manhattan-walk",
+  mode: "walking",
+  origin: {
+    name: "Battery Park",
+    at: { lat: 40.7033, lng: -74.017 },
+    timeZone: "America/New_York",
+  },
+  destination: {
+    name: "City Hall Park",
+    at: { lat: 40.7127, lng: -74.006 },
+    timeZone: "America/New_York",
+  },
+  waypoints: [
+    { at: { lat: 40.7033, lng: -74.017 }, name: "Battery Park" },
+    { at: { lat: 40.7046, lng: -74.0132 }, name: "Bowling Green" },
+    { at: { lat: 40.7069, lng: -74.0113 }, name: "Wall Street" },
+    { at: { lat: 40.7089, lng: -74.0101 }, name: "Federal Hall" },
+    { at: { lat: 40.7115, lng: -74.0077 }, name: "St Paul's Chapel" },
+    { at: { lat: 40.7127, lng: -74.006 }, name: "City Hall Park" },
+  ],
+  departureAt: "2026-06-15T14:00:00Z",
+  durationS: 2400,
+};
+
+/** A drive down the Blue Ridge Parkway: slower than a flight, wider than a walk. */
+export const PARKWAY_DRIVE: Journey = {
+  id: "test-parkway-drive",
+  mode: "driving",
+  origin: {
+    name: "Asheville, North Carolina",
+    at: { lat: 35.5951, lng: -82.5515 },
+    timeZone: "America/New_York",
+  },
+  destination: {
+    name: "Boone, North Carolina",
+    at: { lat: 36.2168, lng: -81.6746 },
+    timeZone: "America/New_York",
+  },
+  waypoints: [
+    { at: { lat: 35.5951, lng: -82.5515 }, name: "Asheville" },
+    { at: { lat: 35.7654, lng: -82.2651 }, name: "Mount Mitchell" },
+    { at: { lat: 35.9606, lng: -82.0713 }, name: "Linville Falls" },
+    { at: { lat: 36.1015, lng: -81.8164 }, name: "Grandfather Mountain" },
+    { at: { lat: 36.2168, lng: -81.6746 }, name: "Boone" },
+  ],
+  departureAt: "2026-06-15T14:00:00Z",
+  durationS: 9000,
+};
+
+/** Stories placed along an arbitrary journey's real geometry, at a mode-appropriate scale. */
+export function storiesAlong(
+  journey: Journey,
+  count: number,
+  overrides: Partial<Story> = {},
+): Story[] {
+  const geometry = buildRouteGeometry(journey);
+  const radius = overrides.triggerRadiusKm ?? presetFor(journey.mode).typicalTriggerRadiusKm;
+
+  return Array.from({ length: count }, (_, i) => {
+    const at = pointAtDistance(geometry, ((i + 0.5) / count) * geometry.totalKm);
+    return makeStory({
+      id: `${journey.mode}-story-${String(i).padStart(3, "0")}`,
+      at,
+      triggerRadiusKm: radius,
+      category: (["history", "famous-people", "culture-food", "landmarks"] as const)[i % 4]!,
+      ...overrides,
+    });
+  });
+}

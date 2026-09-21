@@ -49,7 +49,7 @@ describe("buildRoutePackage", () => {
 
   it("carries the route geometry the map needs", () => {
     const pkg = buildRoutePackage(JFK_MIA, library);
-    expect(pkg.flightId).toBe(JFK_MIA.id);
+    expect(pkg.journeyId).toBe(JFK_MIA.id);
     expect(pkg.path.length).toBeGreaterThan(50);
     expect(pkg.bounds.minLat).toBeLessThan(26);
     expect(pkg.bounds.maxLat).toBeGreaterThan(40);

@@ -104,10 +104,14 @@ export function validateStory(story: Story, policy: ContentPolicy = MVP_POLICY):
   if (story.at.lat === 0 && story.at.lng === 0) {
     error("at", "is null island (0,0) — coordinates were almost certainly never filled in");
   }
-  if (story.triggerRadiusKm < 5 || story.triggerRadiusKm > 250) {
+  // The usable range spans four orders of magnitude, because the same library serves a
+  // flight and a walking tour. The floor is set by GNSS accuracy on a phone in a street
+  // (a 10m radius would never reliably trigger); the ceiling by the point at which a place
+  // stops being somewhere you are passing.
+  if (story.triggerRadiusKm < 0.02 || story.triggerRadiusKm > 250) {
     error(
       "triggerRadiusKm",
-      "must be 5–250km; tighter than 5km cannot survive position error, wider than 250km is not really 'below you'",
+      "must be 0.02–250km; tighter than 20m cannot survive GNSS error, wider than 250km is not somewhere you are passing",
     );
   }
   if (story.place.trim().length === 0) {

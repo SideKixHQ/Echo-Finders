@@ -62,10 +62,17 @@ describe("validateStory — basics", () => {
   });
 
   it("keeps trigger radii inside a usable range", () => {
-    const tooTight = makeStory({ id: "s", at: { lat: 33, lng: -79 }, triggerRadiusKm: 2 });
+    const tooTight = makeStory({ id: "s", at: { lat: 33, lng: -79 }, triggerRadiusKm: 0.005 });
     const tooWide = makeStory({ id: "s", at: { lat: 33, lng: -79 }, triggerRadiusKm: 500 });
     expect(errorsOn(tooTight, "triggerRadiusKm")).toHaveLength(1);
     expect(errorsOn(tooWide, "triggerRadiusKm")).toHaveLength(1);
+  });
+
+  it("accepts the metre-scale radii a walking tour needs", () => {
+    // The same library serves a flight and a walking tour, so the usable range spans four
+    // orders of magnitude: a blue plaque is 0.05km, a city is 60.
+    const plaque = makeStory({ id: "plaque", at: { lat: 40.7, lng: -74 }, triggerRadiusKm: 0.05 });
+    expect(errorsOn(plaque, "triggerRadiusKm")).toEqual([]);
   });
 
   it("requires a place name, because the script says it out loud", () => {

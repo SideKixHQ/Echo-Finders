@@ -184,7 +184,7 @@ describe("buildPlaylist", () => {
   it("produces a flight's worth of listening", () => {
     const playlist = buildPlaylist(JFK_MIA, library, ADULT);
     expect(playlist.items.length).toBeGreaterThan(10);
-    expect(playlist.flightId).toBe(JFK_MIA.id);
+    expect(playlist.journeyId).toBe(JFK_MIA.id);
   });
 
   it("never overlaps two stories", () => {

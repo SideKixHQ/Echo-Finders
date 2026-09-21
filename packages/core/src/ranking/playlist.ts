@@ -21,7 +21,7 @@
  */
 
 import type {
-  FlightPlan,
+  Journey,
   ListenerProfile,
   Playlist,
   ScheduledStory,
@@ -29,21 +29,22 @@ import type {
   StoryCategory,
   StoryFormat,
 } from "../types.js";
-import { DENSITY_DUTY_CYCLE } from "../types.js";
+import { dutyCycleFor, presetFor } from "../modes.js";
 import { buildRouteGeometry, findStoriesAlongRoute, type CorridorHit } from "../geo/corridor.js";
-import { FlightProfile } from "../route/profile.js";
+import { JourneyProfile } from "../route/profile.js";
 import { checkEligibility, scoreStory } from "./score.js";
 
 export interface PlaylistOptions {
-  /** Corridor half-width in km. */
+  /** Corridor half-width in km. Defaults to the mode preset. */
   readonly maxCrossTrackKm?: number;
   /**
-   * How far, in seconds, a story may play from the moment the aircraft is actually
-   * nearest it. Ten minutes is roughly 130km at cruise — comfortably inside the trigger
-   * radii, so nothing plays about a place that is already well behind the wing.
+   * How far, in seconds, a story may play from the moment the listener is actually nearest
+   * it. Defaults to the mode preset, where the spread is enormous: ten minutes on a flight
+   * is comfortably inside the trigger radii, while ninety seconds is already generous on
+   * foot.
    */
   readonly maxTimingDriftS?: number;
-  /** Shortest silence between two stories, whatever the duty cycle implies. */
+  /** Shortest silence between two stories, whatever the duty cycle implies. Mode default. */
   readonly minGapS?: number;
   /** Cap on the reserve set, which the client draws on when filters change in flight. */
   readonly reserveLimit?: number;
@@ -52,8 +53,6 @@ export interface PlaylistOptions {
 }
 
 const DEFAULTS = {
-  maxTimingDriftS: 600,
-  minGapS: 45,
   reserveLimit: 120,
 } as const;
 
@@ -79,8 +78,12 @@ const PENALTY = {
   deadAir: 0.35,
 } as const;
 
-/** Wait beyond this, in seconds, and the dead-air penalty is applied in full. */
-const DEAD_AIR_HORIZON_S = 600;
+/**
+ * Wait beyond this fraction of the mode's timing tolerance and the dead-air penalty
+ * applies in full. Tied to the mode rather than fixed, so a walking tour does not treat a
+ * ten-minute silence as a minor inconvenience.
+ */
+const DEAD_AIR_HORIZON_RATIO = 1;
 
 interface Candidate {
   readonly hit: CorridorHit;
@@ -89,23 +92,25 @@ interface Candidate {
 }
 
 export function buildPlaylist(
-  plan: FlightPlan,
+  plan: Journey,
   stories: readonly Story[],
   listener: ListenerProfile,
   options: PlaylistOptions = {},
 ): Playlist {
-  const maxTimingDriftS = options.maxTimingDriftS ?? DEFAULTS.maxTimingDriftS;
-  const minGapS = options.minGapS ?? DEFAULTS.minGapS;
+  const preset = presetFor(plan.mode);
+  const maxTimingDriftS = options.maxTimingDriftS ?? preset.maxTimingDriftS;
+  const minGapS = options.minGapS ?? preset.minGapS;
 
   const geometry = buildRouteGeometry(plan);
-  const profile = FlightProfile.forPlan(plan, geometry);
+  const profile = JourneyProfile.forJourney(plan, geometry);
   const departureMs = Date.parse(plan.departureAt);
   if (Number.isNaN(departureMs)) {
     throw new Error(`Flight plan ${plan.id} has an unparseable departureAt`);
   }
 
   const window = profile.listeningWindow();
-  const dutyCycle = DENSITY_DUTY_CYCLE[listener.density ?? "balanced"];
+  const deadAirHorizonS = maxTimingDriftS * DEAD_AIR_HORIZON_RATIO;
+  const dutyCycle = dutyCycleFor(plan.mode, listener.density);
 
   // --- Stage 1: which stories does this flight pass, and may they play? ---------------
   const candidates: Candidate[] = [];
@@ -122,7 +127,7 @@ export function buildPlaylist(
     });
     if (!eligibility.eligible) continue;
 
-    const score = scoreStory(hit, { profile: listener, playAtMs }).total;
+    const score = scoreStory(hit, { profile: listener, playAtMs, mode: plan.mode }).total;
     candidates.push({ hit, nearestS, score });
   }
 
@@ -164,7 +169,7 @@ export function buildPlaylist(
       const adjusted: number =
         candidate.score -
         PENALTY.drift * (drift / maxTimingDriftS) -
-        PENALTY.deadAir * Math.min(1, silence / DEAD_AIR_HORIZON_S) -
+        PENALTY.deadAir * Math.min(1, silence / deadAirHorizonS) -
         categoryPenalty(story.category, recentCategories) -
         formatPenalty(story.format, lastFormat, recentFormatRun);
 
@@ -232,11 +237,12 @@ export function buildPlaylist(
     .map((c) => c.hit.story);
 
   return {
-    flightId: plan.id,
+    journeyId: plan.id,
     items,
     reserve,
     totalAudioS: items.reduce((sum, item) => sum + item.story.durationS, 0),
-    flightDurationS: plan.durationS,
+    journeyDurationS: plan.durationS,
+    mode: plan.mode,
   };
 }
 
