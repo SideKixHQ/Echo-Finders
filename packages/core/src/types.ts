@@ -303,6 +303,16 @@ export interface Echo {
   readonly perspectiveIds?: readonly string[];
   /** Free-form tags for interest matching. */
   readonly tags?: readonly string[];
+
+  /**
+   * How far this sits from anywhere many people go, 0–1.
+   *
+   * Computed at content build time from distance to the nearest populated place, not set
+   * by hand. It exists to make capture rarity honest: an echo is rare because standing
+   * there is genuinely difficult, never because a designer decided the collection needed
+   * pacing.
+   */
+  readonly remoteness?: number;
 }
 
 /** A echo split into seekable, highlightable lines. */
@@ -379,6 +389,14 @@ export interface Place {
 /** Where the aircraft is, however we came to know it. */
 export interface Position {
   readonly at: LatLng;
+  /**
+   * Radius of uncertainty around `at`, in metres, as the device reports it.
+   *
+   * Matters enormously on foot and not at all in the air: a fifty-metre trigger radius and
+   * a thirty-metre accuracy circle are the same order of magnitude, so ignoring this would
+   * mean opening echoes for people standing on the wrong street.
+   */
+  readonly accuracyM?: number;
   readonly altitudeFt?: number;
   readonly speedKph?: number;
   readonly headingDeg?: number;

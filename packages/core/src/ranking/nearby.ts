@@ -12,7 +12,7 @@
  */
 
 import type { Echo, LatLng, ListenerProfile, TravelMode } from "../types.js";
-import { distanceKm } from "../geo/great-circle.js";
+import { bearingDeg, distanceKm } from "../geo/great-circle.js";
 import { checkEligibility, scoreEcho } from "./score.js";
 import { presetFor } from "../modes.js";
 
@@ -20,7 +20,9 @@ export interface NearbyEcho {
   readonly echo: Echo;
   /** Straight-line distance from the listener, km. */
   readonly distanceKm: number;
-  /** Bearing from the listener to the echo, degrees from north. */
+  /** Bearing from the listener to the echo, degrees clockwise from north. Which way to walk. */
+  readonly bearingDeg: number;
+  /** Blended proximity and quality, 0–1. What to walk towards. */
   readonly score: number;
   /**
    * True when the listener is inside the echo's own trigger radius — close enough that
@@ -90,6 +92,7 @@ export function findEchoesNearby(
     found.push({
       echo,
       distanceKm: km,
+      bearingDeg: bearingDeg(at, echo.point.at),
       score,
       inRange: km <= echo.point.triggerRadiusKm,
     });
