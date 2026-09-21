@@ -22,6 +22,9 @@ export interface ValidationIssue {
 /** The lowest age at which true crime may be offered at all, irrespective of settings. */
 export const TRUE_CRIME_MIN_AGE = 16;
 
+/** The lowest age at which a sponsored placement may be served. */
+export const ADVERTISING_MIN_AGE = 13;
+
 /** How far a rendered audio file may stray from its format's nominal length. */
 const DURATION_TOLERANCE = 0.6;
 
@@ -134,7 +137,10 @@ export function validateStory(story: Story, policy: ContentPolicy = MVP_POLICY):
   if (story.minAge < 0 || story.minAge > 21) error("minAge", "must be between 0 and 21");
 
   // --- Sourcing ----------------------------------------------------------------------
-  if (story.sources.length === 0) {
+  // Sponsored placements are exempt: an advertisement makes no factual claim we are
+  // vouching for, and requiring a National Park Service citation for a restaurant would
+  // only teach editors to paste in a meaningless one.
+  if (story.sources.length === 0 && !story.sponsorship) {
     error("sources", "every claim must be traceable; at least one source is required");
   }
   for (const [i, source] of story.sources.entries()) {
@@ -181,6 +187,29 @@ export function validateStory(story: Story, policy: ContentPolicy = MVP_POLICY):
       error("minAge", "a kids story with minAge above 12 will never reach a child");
     }
   }
+
+  // --- Sponsorship --------------------------------------------------------------------
+  if (story.sponsorship) issues.push(...validateSponsorship(story));
+
+  // --- The simple retelling -----------------------------------------------------------
+  if (story.simple) {
+    const simple = story.simple;
+    if (simple.title.trim().length === 0) error("simple.title", "is required");
+    if (simple.script.trim().length === 0) error("simple.script", "is required");
+    if (simple.durationS <= 0) {
+      error("simple.durationS", "must be positive");
+    } else if (simple.durationS >= story.durationS) {
+      // The point of the simple telling is that it is shorter as well as plainer. One
+      // that runs as long as the original is almost always a copy-paste mistake.
+      error(
+        "simple.durationS",
+        `is ${simple.durationS}s against the full version's ${story.durationS}s — the simple telling must be shorter`,
+      );
+    }
+    if (simple.transcript) issues.push(...validateTranscript(story.id, simple.transcript, "simple.transcript"));
+  }
+
+  if (story.transcript) issues.push(...validateTranscript(story.id, story.transcript, "transcript"));
 
   // --- True crime: the strictest gate in the system -----------------------------------
   if (story.category === "true-crime") {
@@ -262,6 +291,95 @@ export interface LibraryReport {
   readonly errorCount: number;
   readonly warningCount: number;
   readonly ok: boolean;
+}
+
+/**
+ * Rules for paid placements.
+ *
+ * Two of these are not negotiable regardless of what an advertiser is willing to pay:
+ * every placement discloses that it is one, and none of them reach children.
+ */
+function validateSponsorship(story: Story): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const error = (field: string, message: string) =>
+    issues.push({ storyId: story.id, severity: "error", field, message });
+
+  const sponsorship = story.sponsorship;
+  if (!sponsorship) return issues;
+
+  if (sponsorship.disclosure.trim().length === 0) {
+    error("sponsorship.disclosure", "is required — undisclosed advertising is not an option");
+  }
+  if (sponsorship.advertiser.trim().length === 0) {
+    error("sponsorship.advertiser", "is required");
+  }
+  if (sponsorship.advertiserId.trim().length === 0) {
+    error(
+      "sponsorship.advertiserId",
+      "is required so an airline can block an advertiser without editing content",
+    );
+  }
+
+  for (const field of ["runsFrom", "runsUntil"] as const) {
+    const value = sponsorship[field];
+    if (value !== undefined && Number.isNaN(Date.parse(value))) {
+      error(`sponsorship.${field}`, "must be an ISO date");
+    }
+  }
+  if (
+    sponsorship.runsFrom &&
+    sponsorship.runsUntil &&
+    Date.parse(sponsorship.runsFrom) > Date.parse(sponsorship.runsUntil)
+  ) {
+    error("sponsorship.runsUntil", "is before runsFrom");
+  }
+
+  // Advertising to children is a line we do not cross, and it is the one an airline's
+  // legal team will ask about first.
+  if (story.category === "kids") {
+    error("category", "a sponsored placement cannot be filed as kids content");
+  }
+  if (story.minAge < ADVERTISING_MIN_AGE) {
+    error(
+      "minAge",
+      `sponsored placements are gated at ${ADVERTISING_MIN_AGE}+; children must never be advertised to`,
+    );
+  }
+
+  return issues;
+}
+
+/** Transcript lines must run forwards and stay inside the audio. */
+function validateTranscript(
+  storyId: string,
+  transcript: { lines: readonly { text: string; atS: number; durationS: number }[]; totalS: number },
+  field: string,
+): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const error = (f: string, message: string) =>
+    issues.push({ storyId, severity: "error", field: f, message });
+
+  if (transcript.lines.length === 0) {
+    error(field, "has no lines");
+    return issues;
+  }
+
+  let previousEnd = -1;
+  for (const [i, line] of transcript.lines.entries()) {
+    if (line.text.trim().length === 0) error(`${field}.lines[${i}].text`, "is empty");
+    if (line.atS < previousEnd - 0.05) {
+      // Line seeking and read-along highlighting both assume monotonic timings; an
+      // overlap silently sends the wrong line highlighted for the rest of the story.
+      error(`${field}.lines[${i}].atS`, "overlaps the previous line");
+    }
+    previousEnd = line.atS + line.durationS;
+  }
+
+  if (previousEnd > transcript.totalS + 0.5) {
+    error(`${field}.totalS`, `is ${transcript.totalS}s but the lines run to ${previousEnd.toFixed(1)}s`);
+  }
+
+  return issues;
 }
 
 /** Advice attached to a rejected licence, so an editor knows what to do next. */

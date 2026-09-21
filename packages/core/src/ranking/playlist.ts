@@ -29,6 +29,7 @@ import type {
   StoryCategory,
   StoryFormat,
 } from "../types.js";
+import { anchorOffsetS } from "../types.js";
 import { dutyCycleFor, presetFor } from "../modes.js";
 import { buildRouteGeometry, findStoriesAlongRoute, type CorridorHit } from "../geo/corridor.js";
 import { JourneyProfile } from "../route/profile.js";
@@ -151,14 +152,22 @@ export function buildPlaylist(
 
       const duration = story.durationS;
 
-      // Aim to have the story's midpoint land when the aircraft is nearest it, so the
-      // narration is still running as the passenger looks down at the thing described.
-      const ideal = candidate.nearestS - duration / 2;
+      // Land the story's anchor — its "you are here" moment — when the listener is
+      // actually nearest it.
+      //
+      // For a short story the anchor is its midpoint, so the narration is still running as
+      // they look at the thing described. For a long one it cannot be: a ten-minute
+      // feature at cruise spans 1,400km, and centring it would mean beginning five minutes
+      // before the place comes into view and ending five minutes after it is gone. Long
+      // stories are anchored just after their opening instead, and are allowed to run on
+      // into whatever comes next — which is how a documentary works anyway.
+      const anchor = anchorOffsetS(duration);
+      const ideal = candidate.nearestS - anchor;
       const startS = Math.max(cursor, ideal);
 
       if (startS + duration > window.endS) continue;
 
-      const drift = Math.abs(startS + duration / 2 - candidate.nearestS);
+      const drift = Math.abs(startS + anchor - candidate.nearestS);
       if (drift > maxTimingDriftS) continue;
 
       const silence = Math.max(0, startS - cursor);
@@ -280,10 +289,11 @@ function nextViableTime(
     const { story } = candidate.hit;
     if (used.has(story.id) || covered.has(story.id)) continue;
 
-    const ideal = candidate.nearestS - story.durationS / 2;
+    const anchor = anchorOffsetS(story.durationS);
+    const ideal = candidate.nearestS - anchor;
     // The latest start that still lands within the drift budget; if that is already past,
     // this candidate is behind us for good.
-    const latestStart = candidate.nearestS + maxTimingDriftS - story.durationS / 2;
+    const latestStart = candidate.nearestS + maxTimingDriftS - anchor;
     if (latestStart < cursor) continue;
 
     const start = Math.max(cursor, ideal);

@@ -46,6 +46,8 @@ export const STORY_CATEGORIES = [
   "local-legends",
   "landmarks",
   "attractions",
+  /** Somewhere to stay. Commercially useful and genuinely interesting when it has a past. */
+  "stay",
   "music",
   "industry",
   "kids",
@@ -57,17 +59,69 @@ export type StoryCategory = (typeof STORY_CATEGORIES)[number];
 export const OPT_IN_CATEGORIES: readonly StoryCategory[] = ["true-crime"];
 
 /**
+ * A paid placement.
+ *
+ * Deliberately *not* a story category. The design prototype models ads as one more entry
+ * in the category list, which is convenient for rendering and wrong for everything else:
+ * it means every age gate, interest filter, variety rule and "already heard" check treats
+ * a restaurant promotion as editorial content. Ads need their own frequency caps, their
+ * own kill switch, and a guarantee they never appear in kids mode — none of which a
+ * category can express.
+ *
+ * So sponsorship is a property a placement has, and placements are scheduled separately
+ * from stories.
+ */
+export interface Sponsorship {
+  /** Shown and read aloud. Never optional: undisclosed advertising is not an option. */
+  readonly disclosure: string;
+  readonly advertiser: string;
+  /** Airlines and operators can block individual advertisers by id. */
+  readonly advertiserId: string;
+  /** Campaign window, ISO dates. Outside it the placement is not eligible. */
+  readonly runsFrom?: string;
+  readonly runsUntil?: string;
+}
+
+/**
  * How long the piece runs. Three fixed shapes rather than free-form duration, because a
  * scheduler that can assume "roughly 30s, 90s or 3min" produces far better-paced flights
  * than one juggling arbitrary lengths.
  */
-export type StoryFormat = "look-below" | "short" | "feature";
+export type StoryFormat = "look-below" | "short" | "feature" | "deep";
 
 export const NOMINAL_DURATION_S: Record<StoryFormat, number> = {
   "look-below": 30,
   short: 90,
   feature: 210,
+  /**
+   * Long-form. The kind of story someone settles into on a five-hour flight — the whole
+   * Donner Pass account, not the headline.
+   *
+   * These behave differently enough to be worth calling out: a ten-minute story at cruise
+   * covers 1,400km, so it cannot be *centred* on the place it is about. The scheduler
+   * anchors long stories to their opening instead. See `anchorOffsetS`.
+   */
+  deep: 600,
 };
+
+/**
+ * Stories up to this length are centred on the place they describe, so the narration is
+ * still running as the listener looks at it. Longer ones are anchored to their opening,
+ * because by the end of a ten-minute feature the landscape has changed entirely.
+ */
+export const CENTRE_ANCHOR_MAX_S = 240;
+
+/** How long before reaching a place a long story should begin. */
+export const LEAD_ANCHOR_S = 60;
+
+/**
+ * Where within a story its "you are here" moment falls, in seconds from the start.
+ *
+ * Short story: the middle. Long story: a minute in, just after the scene is set.
+ */
+export function anchorOffsetS(durationS: number): number {
+  return durationS <= CENTRE_ANCHOR_MAX_S ? durationS / 2 : LEAD_ANCHOR_S;
+}
 
 /** Editorial state. Only `approved` may ever reach a passenger. */
 export type EditorialStatus = "draft" | "in-review" | "approved" | "retired";
@@ -169,12 +223,31 @@ export interface Story {
   readonly factCheck: FactCheckStatus;
   readonly trueCrimeReview?: TrueCrimeReview;
 
+  /** One line of teaser copy, shown under the title before playback. */
+  readonly teaser?: string;
+  /** A second paragraph revealed once the story has played, for the reader who wants more. */
+  readonly detail?: string;
+
   /** Audio asset key in object storage. Absent while the story is still text. */
   readonly audioKey?: string;
   /** Size of the rendered audio in bytes. Drives the route package budget. */
   readonly audioBytes?: number;
-  readonly transcript?: string;
+  /** Sentence-level transcript with timings, for read-along and line seeking. */
+  readonly transcript?: Transcript;
   readonly imageKey?: string;
+
+  /**
+   * A plainer, shorter telling of the same story.
+   *
+   * Serves more people than it first appears: younger listeners, anyone listening in a
+   * second language, anyone tired at the end of a long flight, and anyone who simply wants
+   * the short version. It is a genuine second asset — its own script, its own audio, its
+   * own duration — not the same audio played faster.
+   */
+  readonly simple?: SimpleVariant;
+
+  /** Paid placement. Absent on editorial content, which is almost all of it. */
+  readonly sponsorship?: Sponsorship;
 
   /** A place a passenger can actually go, for save-for-later (ADR-0004). */
   readonly attraction?: Attraction;
@@ -183,6 +256,28 @@ export interface Story {
   readonly relatedIds?: readonly string[];
   /** Free-form tags for interest matching. */
   readonly tags?: readonly string[];
+}
+
+/** A story split into seekable, highlightable lines. */
+export interface Transcript {
+  readonly lines: readonly TranscriptLine[];
+  readonly totalS: number;
+}
+
+export interface TranscriptLine {
+  readonly text: string;
+  /** Seconds from the start of the audio at which this line begins. */
+  readonly atS: number;
+  readonly durationS: number;
+}
+
+export interface SimpleVariant {
+  readonly title: string;
+  readonly durationS: number;
+  readonly script: string;
+  readonly audioKey?: string;
+  readonly audioBytes?: number;
+  readonly transcript?: Transcript;
 }
 
 export interface Attraction {
