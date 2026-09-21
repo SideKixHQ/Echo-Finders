@@ -37,6 +37,13 @@ script: |
   That building was demolished in 1812. What you are looking at went up in 1842, as a
   customs house. The statue of Washington faces the street, roughly where the balcony was.
 
+pronunciations:
+  - written: John Peter Zenger
+    say: ZENG-er
+  - written: Houston Street
+    say: HOW-ston Street
+    ipa: ˈhaʊstən
+
 editorial: draft
 factCheck: unchecked
 

@@ -10,7 +10,7 @@
  * and parses the YAML hands the result here.
  */
 
-import type { Echo, EchoCategory, EchoFormat, Source } from "../types.js";
+import type { Echo, EchoCategory, EchoFormat, Pronunciation, Source } from "../types.js";
 import { ECHO_CATEGORIES, NOMINAL_DURATION_S } from "../types.js";
 import type { ValidationIssue } from "./validate.js";
 
@@ -150,6 +150,8 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
     ...optional("detail", str("detail", false)),
     ...optional("certaintyNote", str("certaintyNote", false)),
     ...optional("audioKey", str("audioKey", false)),
+    ...optional("renderedBy", str("renderedBy", false)),
+    ...optional("pronunciations", pronunciationList(input["pronunciations"])),
     ...optional("remoteness", num("remoteness", false)),
     ...optional("tags", stringList(input["tags"])),
     ...optional("relatedIds", stringList(input["relatedIds"])),
@@ -161,6 +163,30 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
 
 function optional<K extends string, V>(key: K, value: V | undefined): Record<K, V> | object {
   return value === undefined ? {} : ({ [key]: value } as Record<K, V>);
+}
+
+/**
+ * Pronunciation notes.
+ *
+ * Silently skips malformed entries rather than failing the file. A missing note means a
+ * narrator says a place name the ordinary way, which is a quality problem for an editor to
+ * notice — not a reason to refuse to publish an otherwise sound echo.
+ */
+function pronunciationList(value: unknown): Pronunciation[] | undefined {
+  if (!Array.isArray(value)) return undefined;
+  const list: Pronunciation[] = [];
+  for (const raw of value) {
+    if (!isRecord(raw)) continue;
+    const written = raw["written"];
+    const say = raw["say"];
+    if (typeof written !== "string" || typeof say !== "string") continue;
+    list.push({
+      written,
+      say,
+      ...(typeof raw["ipa"] === "string" ? { ipa: raw["ipa"] } : {}),
+    });
+  }
+  return list.length > 0 ? list : undefined;
 }
 
 function stringList(value: unknown): string[] | undefined {

@@ -122,3 +122,41 @@ describe("reporting what is wrong", () => {
     expect(issues[0]!.echoId).toBe("content/echoes/history/mystery.yml");
   });
 });
+
+describe("pronunciation notes", () => {
+  it("carries them through", () => {
+    // Place names are what a narrator says most and gets wrong most.
+    const { echo } = parseEcho({
+      ...minimal(),
+      pronunciations: [
+        { written: "Houston Street", say: "HOW-ston Street", ipa: "\u02c8ha\u028ast\u0259n" },
+        { written: "Duane Street", say: "doo-AYN Street" },
+      ],
+    });
+    expect(echo!.pronunciations).toHaveLength(2);
+    expect(echo!.pronunciations![0]!.say).toBe("HOW-ston Street");
+    expect(echo!.pronunciations![1]!.ipa).toBeUndefined();
+  });
+
+  it("skips a malformed note rather than failing the file", () => {
+    // A missing note means a narrator says a name the ordinary way — a quality problem for
+    // an editor, not a reason to refuse an otherwise sound echo.
+    const { echo, issues } = parseEcho({
+      ...minimal(),
+      pronunciations: [{ written: "Duane Street" }, { written: "Houston", say: "HOW-ston" }],
+    });
+    expect(issues).toEqual([]);
+    expect(echo!.pronunciations).toHaveLength(1);
+  });
+
+  it("omits the field when there are none", () => {
+    expect("pronunciations" in parseEcho(minimal()).echo!).toBe(false);
+  });
+
+  it("records which voice rendered the audio", () => {
+    // Transcript timings belong to a render, not a script: two narrators produce different
+    // durations, so a second voice means a second set of line timings.
+    const { echo } = parseEcho({ ...minimal(), renderedBy: "plP9aw1rizYgjFfuvLQ7" });
+    expect(echo!.renderedBy).toBe("plP9aw1rizYgjFfuvLQ7");
+  });
+});

@@ -347,6 +347,9 @@ export interface Echo {
    */
   readonly script?: string;
 
+  /** How to say the hard words. Place names especially. */
+  readonly pronunciations?: readonly Pronunciation[];
+
   /** One line of teaser copy, shown under the title before playback. */
   readonly teaser?: string;
   /** A second paragraph revealed once the echo has played, for the reader who wants more. */
@@ -354,6 +357,15 @@ export interface Echo {
 
   /** Audio asset key in object storage. Absent while the echo is still text. */
   readonly audioKey?: string;
+  /**
+   * Which voice rendered `audioKey`.
+   *
+   * Recorded because a transcript's timings belong to a *render*, not to a script: two
+   * narrators reading the same words produce different durations, so offering a second
+   * voice means a second set of line timings, not merely a second audio file. Anything
+   * assuming one transcript per echo desynchronises the moment a listener switches narrator.
+   */
+  readonly renderedBy?: string;
   /** Size of the rendered audio in bytes. Drives the route package budget. */
   readonly audioBytes?: number;
   /** Sentence-level transcript with timings, for read-along and line seeking. */
@@ -400,6 +412,49 @@ export interface Echo {
    * pacing.
    */
   readonly remoteness?: number;
+}
+
+/**
+ * A narrator.
+ *
+ * A record rather than a bare id because the questions that matter about a voice are
+ * licensing questions, and they need somewhere to live: what it is, where it came from,
+ * and whether we may put it inside a product we license to somebody else.
+ */
+export interface Voice {
+  readonly id: string;
+  readonly name: string;
+  readonly provider: "elevenlabs" | "azure" | "human";
+  /** BCP-47, e.g. "en-GB". Accent is part of the product, not a detail. */
+  readonly locale: string;
+  /**
+   * How this voice came to exist.
+   *
+   * `cloned` is called out deliberately: replicating a real person's voice engages right of
+   * publicity, which survives death in many states, and several have legislated on voice
+   * replication specifically. See docs/protection-policy.md, Risk 4.
+   */
+  readonly origin: "stock" | "designed" | "cloned" | "recorded";
+  /** Whether redistribution inside a licensed third-party product is confirmed permitted. */
+  readonly redistributionCleared: boolean;
+  readonly notes?: string;
+}
+
+/**
+ * How a word should be said.
+ *
+ * Unusually load-bearing here. Place names are what we say out loud more than anything
+ * else, and they are where a narrator loses a listener's trust fastest: Houston Street in
+ * Manhattan is HOW-ston, not HYOO-ston, and a New Yorker who hears it wrong stops believing
+ * the rest of the sentence.
+ */
+export interface Pronunciation {
+  /** As written in the script. */
+  readonly written: string;
+  /** Plain respelling an editor can read and check: "HOW-ston". */
+  readonly say: string;
+  /** IPA, where the engine accepts it and precision matters. */
+  readonly ipa?: string;
 }
 
 /** An echo split into seekable, highlightable lines. */

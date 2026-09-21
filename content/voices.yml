@@ -1,0 +1,28 @@
+# Narrators.
+#
+# Kept here rather than in code because the questions that matter about a voice are
+# licensing questions, and they belong beside the content they read.
+#
+# Note on adding a second voice: transcript timings belong to a *render*, not to a script.
+# Two narrators reading the same words produce different durations, so a second voice means
+# re-rendering every echo AND re-timing every transcript — it roughly doubles both TTS cost
+# and offline package size. Worth doing; not worth doing by accident.
+
+defaultVoiceId: plP9aw1rizYgjFfuvLQ7
+
+voices:
+  - id: plP9aw1rizYgjFfuvLQ7
+    name: TODO — the voice's name in ElevenLabs
+    provider: elevenlabs
+    locale: TODO — e.g. en-GB or en-US
+    # stock    : an ElevenLabs library voice
+    # designed : generated from a description, resembling no particular person
+    # cloned   : replicated from a real person's recordings
+    # recorded : a human read it
+    origin: TODO
+    # Does the ElevenLabs plan permit redistribution inside a product licensed to a third
+    # party — an airline — rather than only published by us? See docs/01-services.md.
+    redistributionCleared: false
+    notes: >-
+      Default narrator. Origin and redistribution rights both need confirming before the
+      library is voiced at scale; see docs/protection-policy.md, Risk 4.
