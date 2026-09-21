@@ -18,6 +18,7 @@ import { rarityOf } from "../capture/rarity.js";
 import type { Arriving, CaptureRecord } from "../capture/types.js";
 import { ProximityGuide, type Guidance, type ProximityOptions } from "../proximity/haptics.js";
 import { findEchoesNearby, type NearbyEcho } from "../ranking/nearby.js";
+import { PRIVACY_DEFAULTS, redactRecord, type PrivacySettings } from "../privacy/settings.js";
 import type { AudioSink, HapticsSink, LocationSource, Unsubscribe } from "./adapters.js";
 
 export type WalkEvent =
@@ -56,6 +57,13 @@ export interface WalkSessionOptions {
   readonly autoPlay?: boolean;
   /** Restore a previous collection, so echoes already found stay found. */
   readonly captured?: readonly CaptureRecord[];
+  /**
+   * What the listener has agreed to have remembered. Defaults to the cautious settings.
+   *
+   * Applied when a record is written, not when it is read: data never stored cannot leak,
+   * cannot be subpoenaed and cannot be overlooked in a backup.
+   */
+  readonly privacy?: PrivacySettings;
 }
 
 export class WalkSession {
@@ -68,6 +76,7 @@ export class WalkSession {
   private readonly guide: ProximityGuide;
   private readonly handlers = new Set<(event: WalkEvent) => void>();
 
+  private readonly privacy: PrivacySettings;
   private unwatch: Unsubscribe | null = null;
   /** The cue currently being rendered, so we do not restate it on every fix. */
   private activeCue: string | null = null;
@@ -82,6 +91,7 @@ export class WalkSession {
     this.listener = listener;
     this.deps = deps;
     this.options = options;
+    this.privacy = options.privacy ?? PRIVACY_DEFAULTS;
     this.guide = new ProximityGuide(options.proximity);
 
     const captureOptions: CaptureOptions = {
@@ -154,6 +164,19 @@ export class WalkSession {
     );
     this.emit({ type: "guidance", guidance });
     this.renderHaptics(guidance);
+  }
+
+  /**
+   * The collection as it should be persisted.
+   *
+   * The tracker keeps full records in memory because it needs the standing position to
+   * work — plausibility checks compare one against the next. What reaches storage is
+   * whatever the listener agreed to, which is often less.
+   */
+  get collection(): readonly CaptureRecord[] {
+    return this.tracker.records
+      .map((record) => redactRecord(record, this.privacy))
+      .filter((record): record is CaptureRecord => record !== null);
   }
 
   private announce(capture: CaptureEvent): void {
