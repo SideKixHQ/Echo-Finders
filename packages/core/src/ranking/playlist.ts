@@ -8,7 +8,7 @@
  *
  * So the scheduler is doing four jobs at once:
  *
- *   1. Play a story near where it belongs geographically.
+ *   1. Play a echo near where it belongs geographically.
  *   2. Hold the overall talk-to-silence ratio the passenger asked for.
  *   3. Vary the categories, so it feels edited rather than generated.
  *   4. Never cover the same subject twice.
@@ -16,36 +16,36 @@
  * These conflict, and the resolution is a greedy walk along the timeline with a scoring
  * function that prices each compromise. Greedy is the right call here: the timeline is
  * traversed once, the passenger cannot perceive a globally optimal arrangement, and being
- * able to explain why a given story played matters more than squeezing out the last few
+ * able to explain why a given echo played matters more than squeezing out the last few
  * points of theoretical quality.
  */
 
 import type {
-  Journey,
+  Route,
   ListenerProfile,
   Playlist,
-  ScheduledStory,
-  Story,
-  StoryCategory,
-  StoryFormat,
+  ScheduledEcho,
+  Echo,
+  EchoCategory,
+  EchoFormat,
 } from "../types.js";
 import { anchorOffsetS } from "../types.js";
 import { dutyCycleFor, presetFor } from "../modes.js";
-import { buildRouteGeometry, findStoriesAlongRoute, type CorridorHit } from "../geo/corridor.js";
-import { JourneyProfile } from "../route/profile.js";
-import { checkEligibility, scoreStory } from "./score.js";
+import { buildRouteGeometry, findEchoesAlongRoute, type CorridorHit } from "../geo/corridor.js";
+import { RouteProfile } from "../route/profile.js";
+import { checkEligibility, scoreEcho } from "./score.js";
 
 export interface PlaylistOptions {
   /** Corridor half-width in km. Defaults to the mode preset. */
   readonly maxCrossTrackKm?: number;
   /**
-   * How far, in seconds, a story may play from the moment the listener is actually nearest
+   * How far, in seconds, a echo may play from the moment the listener is actually nearest
    * it. Defaults to the mode preset, where the spread is enormous: ten minutes on a flight
    * is comfortably inside the trigger radii, while ninety seconds is already generous on
    * foot.
    */
   readonly maxTimingDriftS?: number;
-  /** Shortest silence between two stories, whatever the duty cycle implies. Mode default. */
+  /** Shortest silence between two echoes, whatever the duty cycle implies. Mode default. */
   readonly minGapS?: number;
   /** Cap on the reserve set, which the client draws on when filters change in flight. */
   readonly reserveLimit?: number;
@@ -61,23 +61,35 @@ const DEFAULTS = {
 const PENALTY = {
   /** Applied in full at maximum timing drift, tapering to zero at perfect placement. */
   drift: 0.3,
-  /** Same category as the story just played. */
+  /** Same category as the echo just played. */
   sameCategoryImmediate: 0.28,
-  /** Same category as two stories ago. */
+  /** Same category as two echoes ago. */
   sameCategoryRecent: 0.12,
   /** Same format three times running — all short, or all features. */
   sameFormatRun: 0.08,
   /**
-   * Leaving the passenger in silence while waiting for a better story later.
+   * Leaving the passenger in silence while waiting for a better echo later.
    *
    * Without this the scheduler degenerates: a candidate placed at its ideal time in the
-   * future has *zero* timing drift, so the highest-scoring story in the whole remaining
+   * future has *zero* timing drift, so the highest-scoring echo in the whole remaining
    * flight always wins and everything before it is skipped. Pricing dead air makes the
-   * choice what it should be — a good story now, or a better one worth waiting for —
+   * choice what it should be — a good echo now, or a better one worth waiting for —
    * and it still lets the scheduler wait when there is genuinely nothing to play.
    */
   deadAir: 0.35,
 } as const;
+
+/**
+ * Bonus for an echo that gives a second vantage point on something already played.
+ *
+ * The mirror image of the duplicate-suppression below it, and the more interesting half:
+ * hearing the company's account of a strike and then the strikers' is more truthful than
+ * hearing whichever happens to be better documented. Sized to outweigh the
+ * same-category penalty, since a counterpoint is usually filed under the same category as
+ * the account it answers — otherwise variety rules would quietly veto exactly the pairing
+ * we want.
+ */
+const PERSPECTIVE_BONUS = 0.34;
 
 /**
  * Wait beyond this fraction of the mode's timing tolerance and the dead-air penalty
@@ -93,8 +105,8 @@ interface Candidate {
 }
 
 export function buildPlaylist(
-  plan: Journey,
-  stories: readonly Story[],
+  plan: Route,
+  echoes: readonly Echo[],
   listener: ListenerProfile,
   options: PlaylistOptions = {},
 ): Playlist {
@@ -103,7 +115,7 @@ export function buildPlaylist(
   const minGapS = options.minGapS ?? preset.minGapS;
 
   const geometry = buildRouteGeometry(plan);
-  const profile = JourneyProfile.forJourney(plan, geometry);
+  const profile = RouteProfile.forRoute(plan, geometry);
   const departureMs = Date.parse(plan.departureAt);
   if (Number.isNaN(departureMs)) {
     throw new Error(`Flight plan ${plan.id} has an unparseable departureAt`);
@@ -113,33 +125,33 @@ export function buildPlaylist(
   const deadAirHorizonS = maxTimingDriftS * DEAD_AIR_HORIZON_RATIO;
   const dutyCycle = dutyCycleFor(plan.mode, listener.density);
 
-  // --- Stage 1: which stories does this flight pass, and may they play? ---------------
+  // --- Stage 1: which echoes does this flight pass, and may they play? ---------------
   const candidates: Candidate[] = [];
-  for (const hit of findStoriesAlongRoute(plan, stories, {
+  for (const hit of findEchoesAlongRoute(plan, echoes, {
     maxCrossTrackKm: options.maxCrossTrackKm,
   })) {
     const nearestS = profile.timeAtDistance(hit.alongTrackKm);
     const playAtMs = departureMs + nearestS * 1000;
 
-    const eligibility = checkEligibility(hit.story, {
+    const eligibility = checkEligibility(hit.echo, {
       profile: listener,
       playAtMs,
       requireAudio: options.requireAudio,
     });
     if (!eligibility.eligible) continue;
 
-    const score = scoreStory(hit, { profile: listener, playAtMs, mode: plan.mode }).total;
+    const score = scoreEcho(hit, { profile: listener, playAtMs, mode: plan.mode }).total;
     candidates.push({ hit, nearestS, score });
   }
 
   // --- Stage 2: walk the timeline ----------------------------------------------------
-  const items: ScheduledStory[] = [];
+  const items: ScheduledEcho[] = [];
   const used = new Set<string>();
-  /** Subjects already covered, so a related story never follows its sibling. */
+  /** Subjects already covered, so a related echo never follows its sibling. */
   const coveredSubjects = new Set<string>();
-  const recentCategories: StoryCategory[] = [];
+  const recentCategories: EchoCategory[] = [];
   let recentFormatRun = 0;
-  let lastFormat: StoryFormat | null = null;
+  let lastFormat: EchoFormat | null = null;
 
   let cursor = window.startS;
 
@@ -147,19 +159,19 @@ export function buildPlaylist(
     let best: { candidate: Candidate; startS: number; adjusted: number } | null = null;
 
     for (const candidate of candidates) {
-      const { story } = candidate.hit;
-      if (used.has(story.id) || coveredSubjects.has(story.id)) continue;
+      const { echo } = candidate.hit;
+      if (used.has(echo.id) || coveredSubjects.has(echo.id)) continue;
 
-      const duration = story.durationS;
+      const duration = echo.durationS;
 
-      // Land the story's anchor — its "you are here" moment — when the listener is
+      // Land the echo's anchor — its "you are here" moment — when the listener is
       // actually nearest it.
       //
-      // For a short story the anchor is its midpoint, so the narration is still running as
+      // For a short echo the anchor is its midpoint, so the narration is still running as
       // they look at the thing described. For a long one it cannot be: a ten-minute
       // feature at cruise spans 1,400km, and centring it would mean beginning five minutes
       // before the place comes into view and ending five minutes after it is gone. Long
-      // stories are anchored just after their opening instead, and are allowed to run on
+      // echoes are anchored just after their opening instead, and are allowed to run on
       // into whatever comes next — which is how a documentary works anyway.
       const anchor = anchorOffsetS(duration);
       const ideal = candidate.nearestS - anchor;
@@ -175,12 +187,16 @@ export function buildPlaylist(
       // Annotated, not inferred: this value decides `best`, from which `cursor` and the
       // variety counters are reassigned — and those feed back into this very expression.
       // Without an explicit type TypeScript cannot break the cycle.
+      // Has something already played that this echo answers?
+      const offersPerspective = (echo.perspectiveIds ?? []).some((id) => used.has(id));
+
       const adjusted: number =
-        candidate.score -
+        candidate.score +
+        (offersPerspective ? PERSPECTIVE_BONUS : 0) -
         PENALTY.drift * (drift / maxTimingDriftS) -
         PENALTY.deadAir * Math.min(1, silence / deadAirHorizonS) -
-        categoryPenalty(story.category, recentCategories) -
-        formatPenalty(story.format, lastFormat, recentFormatRun);
+        categoryPenalty(echo.category, recentCategories) -
+        formatPenalty(echo.format, lastFormat, recentFormatRun);
 
       if (!best || adjusted > best.adjusted) {
         best = { candidate, startS, adjusted };
@@ -208,11 +224,11 @@ export function buildPlaylist(
     }
 
     const { candidate, startS } = best;
-    const { story } = candidate.hit;
-    const endS = startS + story.durationS;
+    const { echo } = candidate.hit;
+    const endS = startS + echo.durationS;
 
     items.push({
-      story,
+      echo,
       startS,
       endS,
       nearestS: candidate.nearestS,
@@ -220,18 +236,18 @@ export function buildPlaylist(
       score: candidate.score,
     });
 
-    used.add(story.id);
-    for (const relatedId of story.relatedIds ?? []) coveredSubjects.add(relatedId);
+    used.add(echo.id);
+    for (const relatedId of echo.relatedIds ?? []) coveredSubjects.add(relatedId);
 
-    recentCategories.unshift(story.category);
+    recentCategories.unshift(echo.category);
     if (recentCategories.length > 2) recentCategories.pop();
 
-    recentFormatRun = story.format === lastFormat ? recentFormatRun + 1 : 0;
-    lastFormat = story.format;
+    recentFormatRun = echo.format === lastFormat ? recentFormatRun + 1 : 0;
+    lastFormat = echo.format;
 
     // Silence sized to hold the requested talk-to-silence ratio. A passenger on "light"
     // gets long stretches of window-staring; "immersive" barely pauses for breath.
-    const gap = Math.max(minGapS, story.durationS * (1 / dutyCycle - 1));
+    const gap = Math.max(minGapS, echo.durationS * (1 / dutyCycle - 1));
     cursor = endS + gap;
   }
 
@@ -240,31 +256,31 @@ export function buildPlaylist(
   // with far more than one flight can play, so a passenger who skips, or switches on true
   // crime at the halfway point, has material waiting without a network call.
   const reserve = candidates
-    .filter((c) => !used.has(c.hit.story.id))
+    .filter((c) => !used.has(c.hit.echo.id))
     .sort((a, b) => b.score - a.score)
     .slice(0, options.reserveLimit ?? DEFAULTS.reserveLimit)
-    .map((c) => c.hit.story);
+    .map((c) => c.hit.echo);
 
   return {
-    journeyId: plan.id,
+    routeId: plan.id,
     items,
     reserve,
-    totalAudioS: items.reduce((sum, item) => sum + item.story.durationS, 0),
-    journeyDurationS: plan.durationS,
+    totalAudioS: items.reduce((sum, item) => sum + item.echo.durationS, 0),
+    routeDurationS: plan.durationS,
     mode: plan.mode,
   };
 }
 
 function categoryPenalty(
-  category: StoryCategory,
-  recent: readonly StoryCategory[],
+  category: EchoCategory,
+  recent: readonly EchoCategory[],
 ): number {
   if (recent[0] === category) return PENALTY.sameCategoryImmediate;
   if (recent[1] === category) return PENALTY.sameCategoryRecent;
   return 0;
 }
 
-function formatPenalty(format: StoryFormat, lastFormat: StoryFormat | null, run: number): number {
+function formatPenalty(format: EchoFormat, lastFormat: EchoFormat | null, run: number): number {
   return format === lastFormat && run >= 1 ? PENALTY.sameFormatRun : 0;
 }
 
@@ -286,10 +302,10 @@ function nextViableTime(
   let earliest: number | null = null;
 
   for (const candidate of candidates) {
-    const { story } = candidate.hit;
-    if (used.has(story.id) || covered.has(story.id)) continue;
+    const { echo } = candidate.hit;
+    if (used.has(echo.id) || covered.has(echo.id)) continue;
 
-    const anchor = anchorOffsetS(story.durationS);
+    const anchor = anchorOffsetS(echo.durationS);
     const ideal = candidate.nearestS - anchor;
     // The latest start that still lands within the drift budget; if that is already past,
     // this candidate is behind us for good.
@@ -297,9 +313,9 @@ function nextViableTime(
     if (latestStart < cursor) continue;
 
     const start = Math.max(cursor, ideal);
-    // Same window check as the scheduling loop: a story that cannot finish before the
+    // Same window check as the scheduling loop: a echo that cannot finish before the
     // descent is not a reason to move the cursor.
-    if (start + story.durationS > windowEndS) continue;
+    if (start + echo.durationS > windowEndS) continue;
 
     if (earliest === null || start < earliest) earliest = start;
   }

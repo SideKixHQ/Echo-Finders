@@ -1,13 +1,13 @@
-# Echo Finders — Build Plan & Order of Operations
+# Echo Finder — Build Plan & Order of Operations
 
-*Echo Finders is a Whatishere.com product.*
+*Echo Finder is a Whatishere.com product.*
 
 ## The thing we are actually building
 
-The app is not the asset. The asset is **a verified, geo-tagged story library plus the
-engine that assembles a personalised audio journey for any given flight**. An airline can
+The app is not the asset. The asset is **a verified, geo-tagged echo library plus the
+engine that assembles a personalised audio route for any given flight**. An airline can
 replace a UI in a quarter. They cannot replace 5,000 fact-checked, rights-cleared,
-narrated, coordinate-anchored stories and the ranking logic that turns them into a
+narrated, coordinate-anchored echoes and the ranking logic that turns them into a
 three-hour listen that never repeats itself and never plays a murder to a seven-year-old.
 
 Every sequencing decision below follows from that. We build the engine and the library
@@ -17,18 +17,18 @@ first, and the pretty map last, because the map is the easy part.
 
 ### Phase 0 — Foundation (week 1) ← **we are here**
 - Monorepo, TypeScript strict, test runner.
-- `@echofinders/core`: the domain model and the engine. Pure TypeScript, zero I/O, zero
+- `@echofinder/core`: the domain model and the engine. Pure TypeScript, zero I/O, zero
   external services. Everything below depends on it; it depends on nothing.
 - Content schema + validator, so bad content cannot enter the library.
 - Decision records for the calls that are expensive to reverse.
 
-**Exit test:** `npm test` green, and we can compute a flight corridor, rank stories along
+**Exit test:** `npm test` green, and we can compute a flight corridor, rank echoes along
 it and emit a playlist entirely offline, from fixture data.
 
 ### Phase 1 — Content library v0 (weeks 2–4)
 - Five corridors: JFK↔MIA, JFK↔LAX, ATL↔MCO, ORD↔DEN, CLT↔JFK.
-- 60–100 approved stories on the first corridor before writing a line of UI.
-- Story discovery from NPS / Library of Congress / Smithsonian / Wikidata, drafted by
+- 60–100 approved echoes on the first corridor before writing a line of UI.
+- Echo discovery from NPS / Library of Congress / Smithsonian / Wikidata, drafted by
   AI, **published only by a human**.
 - Content lives as reviewed files in git (see ADR-0005) — not a CMS, not yet.
 - One narrator, TTS, three lengths (30s / 90s / 3min), kids variant.
@@ -38,7 +38,7 @@ every claim traceable to a cited source.
 
 ### Phase 2 — Delivery (weeks 4–6)
 - Postgres + PostGIS as the system of record; content files compile into it.
-- Route package builder: corridor → ranked stories → signed offline bundle.
+- Route package builder: corridor → ranked echoes → signed offline bundle.
 - API: `GET /routes/:id/package` returns everything a flight needs, once, before pushback.
 
 **Exit test:** an aircraft with no internet after pushback still plays a full flight.
@@ -67,4 +67,4 @@ every claim traceable to a cited source.
 | Accounts / login | Anonymous listening is the MVP. Save-for-later works via an emailed link. |
 | Live ADS-B integration | ADR-0002. The aircraft already knows where it is; and when it won't tell us, the flight plan does. |
 | Community submissions | Editorial control is the moat. Opening it early destroys the moat. |
-| Real-time story generation in flight | There is no bandwidth. Everything ships precomputed. |
+| Real-time echo generation in flight | There is no bandwidth. Everything ships precomputed. |

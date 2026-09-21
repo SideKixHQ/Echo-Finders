@@ -14,31 +14,31 @@
  */
 
 import type {
-  Journey,
+  Route,
   LatLng,
   ListenerProfile,
-  Story,
-  StoryCategory,
+  Echo,
+  EchoCategory,
 } from "../types.js";
-import { STORY_CATEGORIES } from "../types.js";
+import { ECHO_CATEGORIES } from "../types.js";
 import { presetFor } from "../modes.js";
 import {
   buildRouteGeometry,
   corridorBoundingBox,
-  findStoriesAlongRoute,
+  findEchoesAlongRoute,
   type CorridorHit,
 } from "../geo/corridor.js";
 import type { BoundingBox } from "../geo/great-circle.js";
 import { buildPlaylist } from "../ranking/playlist.js";
 
-export interface RoutePackageOptions {
+export interface EchoJourneyOptions {
   /**
    * Size ceiling in bytes. Defaults to the mode preset: a quarter of a gigabyte for a
    * long flight, a fraction of that for a walking tour that should download over mobile
    * data without the listener thinking about it.
    */
   readonly maxBytes?: number;
-  /** Bitrate assumed when a story has no measured `audioBytes`. Mono Opus speech. */
+  /** Bitrate assumed when a echo has no measured `audioBytes`. Mono Opus speech. */
   readonly bitrateKbps?: number;
   /** Corridor half-width in km. */
   readonly maxCrossTrackKm?: number;
@@ -48,7 +48,7 @@ export interface RoutePackageOptions {
    */
   readonly audienceAges?: readonly number[];
   /** Categories to carry. Defaults to everything the library has. */
-  readonly categories?: readonly StoryCategory[];
+  readonly categories?: readonly EchoCategory[];
   /** Cap on points in the map polyline. */
   readonly maxPathPoints?: number;
 }
@@ -60,8 +60,8 @@ const DEFAULTS = {
   maxPathPoints: 300,
 } as const;
 
-export interface PackagedStory {
-  readonly story: Story;
+export interface PackagedEcho {
+  readonly echo: Echo;
   readonly alongTrackKm: number;
   readonly crossTrackKm: number;
   readonly estimatedBytes: number;
@@ -69,17 +69,17 @@ export interface PackagedStory {
   readonly essential: boolean;
 }
 
-export interface RoutePackage {
+export interface EchoJourney {
   readonly formatVersion: 1;
-  readonly journeyId: string;
-  readonly plan: Journey;
+  readonly routeId: string;
+  readonly plan: Route;
   /** Decimated great-circle polyline for the map. */
   readonly path: readonly LatLng[];
   readonly bounds: BoundingBox;
-  readonly stories: readonly PackagedStory[];
+  readonly echoes: readonly PackagedEcho[];
   readonly totalBytes: number;
   readonly budgetBytes: number;
-  /** Stories inside the corridor that the budget could not fit. */
+  /** Echoes inside the corridor that the budget could not fit. */
   readonly droppedCount: number;
   readonly builtAt: string;
 }
@@ -87,59 +87,59 @@ export interface RoutePackage {
 /**
  * Assemble the package for one flight.
  *
- * Selection runs in two passes. First the essentials: every story that some plausible
+ * Selection runs in two passes. First the essentials: every echo that some plausible
  * passenger would actually be scheduled, which is what guarantees a coherent flight for a
  * child, for a true-crime listener, and for everyone in between. Only then is the
  * remaining budget spent on depth — extra material for skipping, for filter changes, and
  * for the long stretches where the corridor is thin.
  *
- * Doing it in that order matters: a naive "best stories until full" pass can spend the
+ * Doing it in that order matters: a naive "best echoes until full" pass can spend the
  * entire budget on adult history and leave a seven-year-old with nothing.
  */
-export function buildRoutePackage(
-  plan: Journey,
-  library: readonly Story[],
-  options: RoutePackageOptions = {},
-): RoutePackage {
+export function buildEchoJourney(
+  plan: Route,
+  library: readonly Echo[],
+  options: EchoJourneyOptions = {},
+): EchoJourney {
   const preset = presetFor(plan.mode);
   const maxBytes = options.maxBytes ?? preset.packageBudgetBytes;
   const bitrateKbps = options.bitrateKbps ?? DEFAULTS.bitrateKbps;
   const audienceAges = options.audienceAges ?? DEFAULTS.audienceAges;
-  const categories = options.categories ?? STORY_CATEGORIES;
+  const categories = options.categories ?? ECHO_CATEGORIES;
 
   const geometry = buildRouteGeometry(plan);
 
   // Narrow to the corridor once. Every coverage playlist below then works over this small
   // set rather than rescanning a library that may hold the whole country.
-  const hits = findStoriesAlongRoute(plan, library, {
+  const hits = findEchoesAlongRoute(plan, library, {
     maxCrossTrackKm: options.maxCrossTrackKm,
   });
-  const corridor = hits.map((hit) => hit.story);
-  const hitById = new Map<string, CorridorHit>(hits.map((hit) => [hit.story.id, hit]));
+  const corridor = hits.map((hit) => hit.echo);
+  const hitById = new Map<string, CorridorHit>(hits.map((hit) => [hit.echo.id, hit]));
 
   // --- Pass 1: what every plausible passenger actually hears --------------------------
   const coverage = coverageProfiles(categories, audienceAges).map((profile) =>
     buildPlaylist(plan, corridor, profile, {
       maxCrossTrackKm: options.maxCrossTrackKm,
       requireAudio: true,
-    }).items.map((item) => item.story.id),
+    }).items.map((item) => item.echo.id),
   );
 
   const essentialOrder = interleave(coverage);
   const essential = new Set(essentialOrder);
 
   // --- Pass 2: spend what is left on depth -------------------------------------------
-  const sizeOf = (story: Story) => estimateBytes(story, bitrateKbps);
+  const sizeOf = (echo: Echo) => estimateBytes(echo, bitrateKbps);
 
-  const packaged: PackagedStory[] = [];
+  const packaged: PackagedEcho[] = [];
   let totalBytes = 0;
 
   const take = (hit: CorridorHit, isEssential: boolean): boolean => {
-    const bytes = sizeOf(hit.story);
+    const bytes = sizeOf(hit.echo);
     if (totalBytes + bytes > maxBytes) return false;
     totalBytes += bytes;
     packaged.push({
-      story: hit.story,
+      echo: hit.echo,
       alongTrackKm: hit.alongTrackKm,
       crossTrackKm: hit.crossTrackKm,
       estimatedBytes: bytes,
@@ -156,24 +156,24 @@ export function buildRoutePackage(
 
   // Extras in quality order, so a squeezed budget loses the weakest material first.
   const extras = hits
-    .filter((hit) => !essential.has(hit.story.id) && hit.story.audioKey)
-    .sort((a, b) => b.story.quality - a.story.quality);
+    .filter((hit) => !essential.has(hit.echo.id) && hit.echo.audioKey)
+    .sort((a, b) => b.echo.quality - a.echo.quality);
 
   for (const hit of extras) {
     if (!take(hit, false)) dropped++;
   }
 
-  // Keep the manifest in the order the aircraft meets the stories: it is the order the
+  // Keep the manifest in the order the aircraft meets the echoes: it is the order the
   // client wants for the map, and it makes a package diff legible to a human.
   packaged.sort((a, b) => a.alongTrackKm - b.alongTrackKm);
 
   return {
     formatVersion: 1,
-    journeyId: plan.id,
+    routeId: plan.id,
     plan,
     path: decimate(geometry.points, options.maxPathPoints ?? DEFAULTS.maxPathPoints),
     bounds: corridorBoundingBox(geometry, options.maxCrossTrackKm ?? preset.corridorKm),
-    stories: packaged,
+    echoes: packaged,
     totalBytes,
     budgetBytes: maxBytes,
     droppedCount: dropped,
@@ -189,7 +189,7 @@ export function buildRoutePackage(
  * the material out. If the package satisfies that, it satisfies any mixture of categories.
  */
 function coverageProfiles(
-  categories: readonly StoryCategory[],
+  categories: readonly EchoCategory[],
   ages: readonly number[],
 ): ListenerProfile[] {
   const profiles: ListenerProfile[] = [];
@@ -204,14 +204,14 @@ function coverageProfiles(
 }
 
 /**
- * Merge the coverage playlists round-robin: every audience's first story, then every
+ * Merge the coverage playlists round-robin: every audience's first echo, then every
  * audience's second, and so on.
  *
  * Taking them list by list instead would order the essentials by whatever order the
  * categories happen to be declared in — and a budget that runs out partway through would
  * silently starve whichever audience sits at the end of that list. (It did exactly that:
- * `kids` is last in `STORY_CATEGORIES`, and a tight package contained no children's
- * stories at all.) Round-robin makes a squeeze degrade every audience together.
+ * `kids` is last in `ECHO_CATEGORIES`, and a tight package contained no children's
+ * echoes at all.) Round-robin makes a squeeze degrade every audience together.
  */
 function interleave(lists: readonly (readonly string[])[]): string[] {
   const longest = lists.reduce((max, list) => Math.max(max, list.length), 0);
@@ -231,9 +231,9 @@ function interleave(lists: readonly (readonly string[])[]): string[] {
 }
 
 /** Measured size when we have it, otherwise the bitrate assumption. */
-export function estimateBytes(story: Story, bitrateKbps: number): number {
-  if (story.audioBytes !== undefined) return story.audioBytes;
-  return Math.round((bitrateKbps * 1000) / 8) * story.durationS;
+export function estimateBytes(echo: Echo, bitrateKbps: number): number {
+  if (echo.audioBytes !== undefined) return echo.audioBytes;
+  return Math.round((bitrateKbps * 1000) / 8) * echo.durationS;
 }
 
 /**

@@ -57,7 +57,7 @@ export function isDaylight(at: LatLng, epochMs: number): boolean {
   return solarElevationDeg(at, epochMs) > -6;
 }
 
-/** Local solar hour, 0–24. Used for the `hours` window on a story. */
+/** Local solar hour, 0–24. Used for the `hours` window on a echo. */
 export function localSolarHour(at: LatLng, epochMs: number): number {
   const utcHours = (epochMs / 3_600_000) % 24;
   return ((utcHours + at.lng / 15) % 24 + 24) % 24;

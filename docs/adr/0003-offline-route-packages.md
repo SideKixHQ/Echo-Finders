@@ -13,13 +13,13 @@ delivery path, not a fallback: a passenger who lands on the app mid-flight with 
 cached should be the exception we design around, not the case we design for. A route package is a single signed bundle:
 
 - the flight plan and corridor geometry,
-- the ranked candidate story set (roughly 3× what a flight can play, so filter changes
+- the ranked candidate echo set (roughly 3× what a flight can play, so filter changes
   and skips still have material),
 - audio, transcripts and images, content-addressed,
 - map tiles for the corridor at the zoom levels we allow.
 
 In flight the client does zero network I/O. Position advances, the client picks the next
-story from a set it already holds.
+echo from a set it already holds.
 
 ## Consequences
 - Package size is the constraint that governs content length and audio bitrate.

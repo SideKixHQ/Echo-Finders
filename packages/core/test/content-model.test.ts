@@ -1,13 +1,13 @@
 import { describe, expect, it } from "vitest";
-import { ADVERTISING_MIN_AGE, validateStory } from "../src/content/validate.js";
+import { ADVERTISING_MIN_AGE, validateEcho } from "../src/content/validate.js";
 import { anchorOffsetS, CENTRE_ANCHOR_MAX_S, NOMINAL_DURATION_S } from "../src/types.js";
 import { buildPlaylist } from "../src/ranking/playlist.js";
-import type { Sponsorship, Story, Transcript } from "../src/types.js";
-import { ADULT, CHILD, JFK_MIA, makeStory, storiesAlong } from "./fixtures.js";
+import type { Sponsorship, Echo, Transcript } from "../src/types.js";
+import { ADULT, CHILD, JFK_MIA, makeEcho, echoesAlong } from "./fixtures.js";
 
-const errorsOn = (story: Story, field: string) =>
-  validateStory(story).filter((i) => i.severity === "error" && i.field === field);
-const allErrors = (story: Story) => validateStory(story).filter((i) => i.severity === "error");
+const errorsOn = (echo: Echo, field: string) =>
+  validateEcho(echo).filter((i) => i.severity === "error" && i.field === field);
+const allErrors = (echo: Echo) => validateEcho(echo).filter((i) => i.severity === "error");
 
 const SPONSORSHIP: Sponsorship = {
   disclosure: "Sponsored · Utah Restaurant Group",
@@ -21,11 +21,11 @@ const transcript = (lines: [string, number, number][]): Transcript => ({
 });
 
 describe("anchorOffsetS", () => {
-  it("centres a short story on the place it describes", () => {
+  it("centres a short echo on the place it describes", () => {
     expect(anchorOffsetS(NOMINAL_DURATION_S.short)).toBe(NOMINAL_DURATION_S.short / 2);
   });
 
-  it("anchors a long story near its opening instead", () => {
+  it("anchors a long echo near its opening instead", () => {
     // A ten-minute feature at cruise spans 1,400km. Centring it would mean starting five
     // minutes before the place appears and ending five minutes after it is gone.
     const offset = anchorOffsetS(NOMINAL_DURATION_S.deep);
@@ -39,13 +39,13 @@ describe("anchorOffsetS", () => {
   });
 });
 
-describe("scheduling long-form stories", () => {
-  const deepLibrary = storiesAlong(JFK_MIA, 30).map((s) =>
-    makeStory({ ...s, format: "deep", durationS: NOMINAL_DURATION_S.deep }),
+describe("scheduling long-form echoes", () => {
+  const deepLibrary = echoesAlong(JFK_MIA, 30).map((s) =>
+    makeEcho({ ...s, format: "deep", durationS: NOMINAL_DURATION_S.deep }),
   );
 
   it("schedules them at all", () => {
-    // Before anchoring was introduced a ten-minute story could not satisfy the drift
+    // Before anchoring was introduced a ten-minute echo could not satisfy the drift
     // budget from its midpoint, so long-form content simply never played.
     const playlist = buildPlaylist(JFK_MIA, deepLibrary, ADULT);
     expect(playlist.items.length).toBeGreaterThan(2);
@@ -54,9 +54,9 @@ describe("scheduling long-form stories", () => {
   it("starts them shortly before the place, not centred on it", () => {
     const playlist = buildPlaylist(JFK_MIA, deepLibrary, ADULT);
     for (const item of playlist.items) {
-      const anchor = item.startS + anchorOffsetS(item.story.durationS);
+      const anchor = item.startS + anchorOffsetS(item.echo.durationS);
       expect(Math.abs(anchor - item.nearestS)).toBeLessThanOrEqual(600);
-      // The story should still be running when the place arrives.
+      // The echo should still be running when the place arrives.
       expect(item.endS).toBeGreaterThan(item.nearestS);
     }
   });
@@ -71,7 +71,7 @@ describe("scheduling long-form stories", () => {
 
 describe("the simple retelling", () => {
   const withSimple = (durationS: number) =>
-    makeStory({
+    makeEcho({
       id: "s",
       at: { lat: 33, lng: -79 },
       durationS: 90,
@@ -89,7 +89,7 @@ describe("the simple retelling", () => {
   });
 
   it("requires its own title and script", () => {
-    const blank = makeStory({
+    const blank = makeEcho({
       id: "s",
       at: { lat: 33, lng: -79 },
       simple: { title: "  ", durationS: 30, script: "" },
@@ -101,7 +101,7 @@ describe("the simple retelling", () => {
 
 describe("transcripts", () => {
   const withTranscript = (t: Transcript) =>
-    makeStory({ id: "s", at: { lat: 33, lng: -79 }, transcript: t });
+    makeEcho({ id: "s", at: { lat: 33, lng: -79 }, transcript: t });
 
   it("accepts lines that run forwards", () => {
     const ok = withTranscript(transcript([["One.", 0, 3], ["Two.", 3, 4], ["Three.", 7, 2]]));
@@ -110,7 +110,7 @@ describe("transcripts", () => {
 
   it("catches overlapping lines", () => {
     // Line seeking and read-along both assume monotonic timings; an overlap silently
-    // highlights the wrong line for the rest of the story.
+    // highlights the wrong line for the rest of the echo.
     const overlapping = withTranscript(transcript([["One.", 0, 5], ["Two.", 2, 4]]));
     expect(errorsOn(overlapping, "transcript.lines[1].atS")).toHaveLength(1);
   });
@@ -134,8 +134,8 @@ describe("transcripts", () => {
 });
 
 describe("sponsored placements", () => {
-  const ad = (overrides: Partial<Story> = {}) =>
-    makeStory({
+  const ad = (overrides: Partial<Echo> = {}) =>
+    makeEcho({
       id: "ad-copper-onion",
       at: { lat: 40.762, lng: -111.891 },
       category: "attractions",
@@ -171,9 +171,9 @@ describe("sponsored placements", () => {
   });
 
   it("keeps a sponsored placement out of a child's playlist", () => {
-    const library = [...storiesAlong(JFK_MIA, 10), ad({ at: { lat: 33.69, lng: -78.89 } })];
+    const library = [...echoesAlong(JFK_MIA, 10), ad({ at: { lat: 33.69, lng: -78.89 } })];
     const playlist = buildPlaylist(JFK_MIA, library, CHILD);
-    for (const item of playlist.items) expect(item.story.sponsorship).toBeUndefined();
+    for (const item of playlist.items) expect(item.echo.sponsorship).toBeUndefined();
   });
 
   it("validates the campaign window", () => {

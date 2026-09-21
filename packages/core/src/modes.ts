@@ -7,7 +7,7 @@
  * numbers to argue about rather than a second codebase to maintain.
  *
  * The numbers matter more than they look. Timing tolerance is the clearest case: on a
- * flight a story may play ten minutes from its ideal moment and still feel like it is
+ * flight a echo may play ten minutes from its ideal moment and still feel like it is
  * about the place below, because ten minutes is a fifth of the way across a state. On foot,
  * ninety seconds late means the listener has walked past the building and is looking at a
  * different one — so the same tolerance that makes a flight feel relaxed makes a walking
@@ -20,22 +20,22 @@ export interface ModePreset {
   /** Typical moving speed, km/h. Used for dead reckoning and duration estimates. */
   readonly speedKph: number;
 
-  /** Default corridor half-width, km. How far off-route a story can be and still count. */
+  /** Default corridor half-width, km. How far off-route a echo can be and still count. */
   readonly corridorKm: number;
 
   /**
-   * How far, in seconds, a story may play from the moment the listener is nearest it.
+   * How far, in seconds, a echo may play from the moment the listener is nearest it.
    * Roughly "how long the place stays the place you are at".
    */
   readonly maxTimingDriftS: number;
 
-  /** Shortest silence between two stories. */
+  /** Shortest silence between two echoes. */
   readonly minGapS: number;
 
   /**
    * Talk-to-silence ratio per density setting.
    *
-   * Flights are sparse: the appeal is a long, calm journey with things surfacing
+   * Flights are sparse: the appeal is a long, calm route with things surfacing
    * occasionally, and a passenger wants to read, sleep and look out of the window. Walking
    * tours are the opposite — the listener has chosen to be told things, is walking *because*
    * of the audio, and will stop moving if it stops talking.
@@ -140,7 +140,7 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     speedKph: 4.5,
     corridorKm: 0.3,
     // Ninety seconds on foot is roughly a hundred metres — about as far as you can be from
-    // a building and still accept that the story is about it.
+    // a building and still accept that the echo is about it.
     maxTimingDriftS: 90,
     minGapS: 10,
     dutyCycle: { light: 0.4, balanced: 0.65, immersive: 0.85 },

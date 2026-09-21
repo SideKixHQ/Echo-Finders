@@ -86,8 +86,8 @@ export interface SegmentProjection {
 /**
  * Project `point` onto the great-circle segment `start`→`end`.
  *
- * Clamped to the segment: a story beyond either end measures to that endpoint rather than
- * to an imaginary extension of the track, which is what stops a story in Maine matching a
+ * Clamped to the segment: a echo beyond either end measures to that endpoint rather than
+ * to an imaginary extension of the track, which is what stops a echo in Maine matching a
  * flight down the Florida coast.
  */
 export function projectOntoSegment(

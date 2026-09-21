@@ -1,14 +1,14 @@
 import { describe, expect, it } from "vitest";
 import { dutyCycleFor, presetFor } from "../src/modes.js";
 import { buildPlaylist } from "../src/ranking/playlist.js";
-import { scoreStory } from "../src/ranking/score.js";
-import { buildRoutePackage } from "../src/pkg/build.js";
-import { JourneyProfile } from "../src/route/profile.js";
-import { buildRouteGeometry, findStoriesAlongRoute } from "../src/geo/corridor.js";
+import { scoreEcho } from "../src/ranking/score.js";
+import { buildEchoJourney } from "../src/pkg/build.js";
+import { RouteProfile } from "../src/route/profile.js";
+import { buildRouteGeometry, findEchoesAlongRoute } from "../src/geo/corridor.js";
 import { TRAVEL_MODES, isOnFoot } from "../src/types.js";
 import type { CorridorHit } from "../src/geo/corridor.js";
-import type { Story, TravelMode } from "../src/types.js";
-import { ADULT, JFK_MIA, MANHATTAN_WALK, PARKWAY_DRIVE, makeStory, storiesAlong } from "./fixtures.js";
+import type { Echo, TravelMode } from "../src/types.js";
+import { ADULT, JFK_MIA, MANHATTAN_WALK, PARKWAY_DRIVE, makeEcho, echoesAlong } from "./fixtures.js";
 
 const NOON = Date.parse("2026-06-15T17:00:00Z");
 
@@ -30,7 +30,7 @@ describe("MODE_PRESETS", () => {
     }
   });
 
-  it("gets chattier as the journey gets more deliberate", () => {
+  it("gets chattier as the route gets more deliberate", () => {
     // Silence on a three-hour flight is restful; silence on a walking tour feels broken.
     expect(dutyCycleFor("walking", "balanced")).toBeGreaterThan(dutyCycleFor("flight", "balanced"));
     for (const mode of TRAVEL_MODES) {
@@ -75,27 +75,27 @@ describe("isOnFoot", () => {
 });
 
 describe("visibility interacts with travel mode", () => {
-  const plaque = makeStory({
+  const plaque = makeEcho({
     id: "plaque",
     at: { lat: 40.7069, lng: -74.0113 },
     visibility: "at-hand",
   });
   const hit: CorridorHit = {
-    story: plaque,
+    echo: plaque,
     crossTrackKm: 0.02,
     alongTrackKm: 0.5,
     nearestPoint: plaque.at,
   };
 
   const scoreIn = (mode: TravelMode) =>
-    scoreStory(hit, { profile: ADULT, playAtMs: NOON, mode });
+    scoreEcho(hit, { profile: ADULT, playAtMs: NOON, mode });
 
-  it("makes a plaque the best kind of story on foot", () => {
+  it("makes a plaque the best kind of echo on foot", () => {
     expect(scoreIn("walking").visibility).toBe(1);
   });
 
   it("all but suppresses it from the air", () => {
-    // A dense city holds hundreds of at-hand stories. Without this a flight crossing
+    // A dense city holds hundreds of at-hand echoes. Without this a flight crossing
     // Manhattan would fill with plaques nobody can see.
     expect(scoreIn("flight").visibility).toBeLessThan(0.1);
   });
@@ -107,84 +107,84 @@ describe("visibility interacts with travel mode", () => {
   });
 
   it("leaves a distant landmark unaffected by mode", () => {
-    const mountain = makeStory({
+    const mountain = makeEcho({
       id: "mountain",
       at: { lat: 35.7654, lng: -82.2651 },
       visibility: "landmark-visible",
     });
     const mountainHit: CorridorHit = {
-      story: mountain,
+      echo: mountain,
       crossTrackKm: 1,
       alongTrackKm: 10,
       nearestPoint: mountain.at,
     };
-    const fromAir = scoreStory(mountainHit, { profile: ADULT, playAtMs: NOON, mode: "flight" });
-    const onFoot = scoreStory(mountainHit, { profile: ADULT, playAtMs: NOON, mode: "walking" });
+    const fromAir = scoreEcho(mountainHit, { profile: ADULT, playAtMs: NOON, mode: "flight" });
+    const onFoot = scoreEcho(mountainHit, { profile: ADULT, playAtMs: NOON, mode: "walking" });
     expect(fromAir.visibility).toBe(onFoot.visibility);
   });
 });
 
 describe("a walking tour", () => {
-  const library = storiesAlong(MANHATTAN_WALK, 24, { visibility: "at-hand" });
+  const library = echoesAlong(MANHATTAN_WALK, 24, { visibility: "at-hand" });
 
-  it("finds stories at street scale", () => {
-    const hits = findStoriesAlongRoute(MANHATTAN_WALK, library);
+  it("finds echoes at street scale", () => {
+    const hits = findEchoesAlongRoute(MANHATTAN_WALK, library);
     expect(hits.length).toBe(library.length);
     for (const hit of hits) expect(hit.crossTrackKm).toBeLessThan(0.3);
   });
 
-  it("does not pick up a story a block away", () => {
+  it("does not pick up a echo a block away", () => {
     // Roughly 400m east of the route — nothing on a flight, a different street on foot.
-    const offRoute = makeStory({
+    const offRoute = makeEcho({
       id: "off-route",
       at: { lat: 40.7069, lng: -74.0066 },
       triggerRadiusKm: 0.12,
     });
-    expect(findStoriesAlongRoute(MANHATTAN_WALK, [offRoute])).toEqual([]);
+    expect(findEchoesAlongRoute(MANHATTAN_WALK, [offRoute])).toEqual([]);
   });
 
-  it("schedules a tour's worth of stories in forty minutes", () => {
+  it("schedules a tour's worth of echoes in forty minutes", () => {
     const playlist = buildPlaylist(MANHATTAN_WALK, library, ADULT);
     expect(playlist.mode).toBe("walking");
     expect(playlist.items.length).toBeGreaterThan(5);
   });
 
-  it("keeps every story within a hundred metres of its subject", () => {
-    // The whole point of the tight walking tolerance: play a story late and the listener
+  it("keeps every echo within a hundred metres of its subject", () => {
+    // The whole point of the tight walking tolerance: play a echo late and the listener
     // is looking at a different building.
     const playlist = buildPlaylist(MANHATTAN_WALK, library, ADULT);
     const drift = presetFor("walking").maxTimingDriftS;
     for (const item of playlist.items) {
-      const midpoint = item.startS + item.story.durationS / 2;
+      const midpoint = item.startS + item.echo.durationS / 2;
       expect(Math.abs(midpoint - item.nearestS)).toBeLessThanOrEqual(drift);
     }
   });
 
   it("starts talking almost immediately", () => {
     const geometry = buildRouteGeometry(MANHATTAN_WALK);
-    const window = JourneyProfile.forJourney(MANHATTAN_WALK, geometry).listeningWindow();
+    const window = RouteProfile.forRoute(MANHATTAN_WALK, geometry).listeningWindow();
     // No safety briefing to wait out.
     expect(window.startS).toBeLessThan(30);
   });
 
-  it("talks for more of the journey than a flight does", () => {
+  it("talks for more of the route than a flight does", () => {
     const walk = buildPlaylist(MANHATTAN_WALK, library, ADULT);
-    const flightLibrary = storiesAlong(JFK_MIA, 120);
+    const flightLibrary = echoesAlong(JFK_MIA, 120);
     const flight = buildPlaylist(JFK_MIA, flightLibrary, ADULT);
 
-    const walkShare = walk.totalAudioS / walk.journeyDurationS;
-    const flightShare = flight.totalAudioS / flight.journeyDurationS;
+    const walkShare = walk.totalAudioS / walk.routeDurationS;
+    const flightShare = flight.totalAudioS / flight.routeDurationS;
     expect(walkShare).toBeGreaterThan(flightShare);
   });
 
   it("packages small enough for mobile data", () => {
-    const pkg = buildRoutePackage(MANHATTAN_WALK, library);
+    const pkg = buildEchoJourney(MANHATTAN_WALK, library);
     expect(pkg.totalBytes).toBeLessThanOrEqual(presetFor("walking").packageBudgetBytes);
   });
 });
 
 describe("a scenic drive", () => {
-  const library = storiesAlong(PARKWAY_DRIVE, 40, { visibility: "landmark-visible" });
+  const library = echoesAlong(PARKWAY_DRIVE, 40, { visibility: "landmark-visible" });
 
   it("schedules along the road", () => {
     const playlist = buildPlaylist(PARKWAY_DRIVE, library, ADULT);
@@ -198,22 +198,22 @@ describe("a scenic drive", () => {
     expect(corridor).toBeLessThan(presetFor("flight").corridorKm);
   });
 
-  it("keeps stories near the road, not across the valley", () => {
-    const hits = findStoriesAlongRoute(PARKWAY_DRIVE, library);
+  it("keeps echoes near the road, not across the valley", () => {
+    const hits = findEchoesAlongRoute(PARKWAY_DRIVE, library);
     for (const hit of hits) expect(hit.crossTrackKm).toBeLessThan(5);
   });
 });
 
 describe("the same library, different modes", () => {
-  /** One story per mode scale, all on the Manhattan route. */
-  const mixed: Story[] = [
-    makeStory({
+  /** One echo per mode scale, all on the Manhattan route. */
+  const mixed: Echo[] = [
+    makeEcho({
       id: "city-scale",
       at: { lat: 40.708, lng: -74.011 },
       triggerRadiusKm: 60,
       visibility: "landmark-visible",
     }),
-    makeStory({
+    makeEcho({
       id: "street-scale",
       at: { lat: 40.7069, lng: -74.0113 },
       triggerRadiusKm: 0.1,
@@ -221,40 +221,40 @@ describe("the same library, different modes", () => {
     }),
   ];
 
-  it("gives a walker the street story and a pilot the city story", () => {
-    const onFoot = findStoriesAlongRoute(MANHATTAN_WALK, mixed).map((h) => h.story.id);
+  it("gives a walker the street echo and a pilot the city echo", () => {
+    const onFoot = findEchoesAlongRoute(MANHATTAN_WALK, mixed).map((h) => h.echo.id);
     expect(onFoot).toContain("street-scale");
 
-    // The same walk flown over: the street-scale story is inside the flight corridor by
+    // The same walk flown over: the street-scale echo is inside the flight corridor by
     // distance, but its own trigger radius keeps it out.
-    const flownOver = findStoriesAlongRoute({ ...MANHATTAN_WALK, mode: "flight" }, mixed);
-    expect(flownOver.map((h) => h.story.id)).toContain("city-scale");
+    const flownOver = findEchoesAlongRoute({ ...MANHATTAN_WALK, mode: "flight" }, mixed);
+    expect(flownOver.map((h) => h.echo.id)).toContain("city-scale");
   });
 
-  it("scores the same story differently depending on how you are moving", () => {
+  it("scores the same echo differently depending on how you are moving", () => {
     const walk = buildPlaylist(MANHATTAN_WALK, mixed, ADULT);
-    const streetItem = walk.items.find((i) => i.story.id === "street-scale");
+    const streetItem = walk.items.find((i) => i.echo.id === "street-scale");
     expect(streetItem).toBeDefined();
     expect(streetItem!.score).toBeGreaterThan(0.6);
   });
 });
 
-describe("JourneyProfile across modes", () => {
-  it("scales its stages to the journey", () => {
-    for (const journey of [JFK_MIA, PARKWAY_DRIVE, MANHATTAN_WALK]) {
-      const geometry = buildRouteGeometry(journey);
-      const profile = JourneyProfile.forJourney(journey, geometry);
+describe("RouteProfile across modes", () => {
+  it("scales its stages to the route", () => {
+    for (const route of [JFK_MIA, PARKWAY_DRIVE, MANHATTAN_WALK]) {
+      const geometry = buildRouteGeometry(route);
+      const profile = RouteProfile.forRoute(route, geometry);
       const window = profile.listeningWindow();
 
-      expect(profile.mode).toBe(journey.mode);
+      expect(profile.mode).toBe(route.mode);
       expect(window.endS).toBeGreaterThan(window.startS);
-      expect(profile.distanceAtTime(journey.durationS)).toBeCloseTo(geometry.totalKm, 6);
-      // Most of every journey should be available for listening.
-      expect(window.endS - window.startS).toBeGreaterThan(journey.durationS * 0.5);
+      expect(profile.distanceAtTime(route.durationS)).toBeCloseTo(geometry.totalKm, 6);
+      // Most of every route should be available for listening.
+      expect(window.endS - window.startS).toBeGreaterThan(route.durationS * 0.5);
     }
   });
 
   it("defaults to flight when no mode is given", () => {
-    expect(new JourneyProfile(10_800, 1800).mode).toBe("flight");
+    expect(new RouteProfile(10_800, 1800).mode).toBe("flight");
   });
 });

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { JourneyProfile, positionAtTime } from "../src/route/profile.js";
+import { RouteProfile, positionAtTime } from "../src/route/profile.js";
 import { buildRouteGeometry } from "../src/geo/corridor.js";
 import { distanceKm } from "../src/geo/great-circle.js";
 import { isDaylight, localSolarHour, solarElevationDeg } from "../src/geo/solar.js";
@@ -8,8 +8,8 @@ import { JFK_MIA } from "./fixtures.js";
 const THREE_HOURS = 10_800;
 const TOTAL_KM = 1800;
 
-describe("JourneyProfile", () => {
-  const profile = new JourneyProfile(THREE_HOURS, TOTAL_KM);
+describe("RouteProfile", () => {
+  const profile = new RouteProfile(THREE_HOURS, TOTAL_KM);
 
   it("starts at the origin and ends at the destination", () => {
     expect(profile.distanceAtTime(0)).toBe(0);
@@ -39,7 +39,7 @@ describe("JourneyProfile", () => {
 
   it("barely moves during taxi", () => {
     // The whole point of modelling phases: ten minutes in, a constant-speed model would
-    // have us 100km down the track and cueing a story about the wrong city.
+    // have us 100km down the track and cueing a echo about the wrong city.
     expect(profile.distanceAtTime(600)).toBeLessThan(25);
   });
 
@@ -65,21 +65,21 @@ describe("JourneyProfile", () => {
   });
 
   it("squeezes the fixed phases so a short hop still has cruise", () => {
-    const hop = new JourneyProfile(2400, 400); // 40 minutes
+    const hop = new RouteProfile(2400, 400); // 40 minutes
     const window = hop.listeningWindow();
     expect(window.endS).toBeGreaterThan(window.startS);
     expect(hop.distanceAtTime(2400)).toBeCloseTo(400, 6);
   });
 
   it("rejects impossible flights", () => {
-    expect(() => new JourneyProfile(0, 100)).toThrow(/duration/);
-    expect(() => new JourneyProfile(100, 0)).toThrow(/distance/);
+    expect(() => new RouteProfile(0, 100)).toThrow(/duration/);
+    expect(() => new RouteProfile(100, 0)).toThrow(/distance/);
   });
 });
 
 describe("positionAtTime", () => {
   const geometry = buildRouteGeometry(JFK_MIA);
-  const profile = JourneyProfile.forJourney(JFK_MIA, geometry);
+  const profile = RouteProfile.forRoute(JFK_MIA, geometry);
   const departure = Date.parse(JFK_MIA.departureAt);
 
   it("starts at JFK and ends at MIA", () => {

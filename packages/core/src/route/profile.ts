@@ -3,7 +3,7 @@
  *
  * A constant-speed model is badly wrong at exactly the moments that matter. Ten minutes
  * after a JFK departure the aircraft has barely cleared Jamaica Bay, but constant speed
- * would place it over Philadelphia and cue a story about the wrong city. The same mistake
+ * would place it over Philadelphia and cue a echo about the wrong city. The same mistake
  * appears in every mode, just scaled: a walking tour that assumes you were already at
  * strolling pace during the first twenty seconds has you a block further along than you
  * are, which on foot is an entirely different building.
@@ -12,14 +12,14 @@
  * with lengths taken from the mode preset rather than hardcoded.
  */
 
-import type { JourneyPhase, Journey, Position, TravelMode } from "../types.js";
+import type { RoutePhase, Route, Position, TravelMode } from "../types.js";
 import { presetFor } from "../modes.js";
 import { pointAtDistance, type RouteGeometry } from "../geo/corridor.js";
 import { bearingDeg } from "../geo/great-circle.js";
 
 /** Relative ground speed through each phase. Absolute values are derived, not assumed. */
 interface PhaseSpec {
-  readonly phase: JourneyPhase;
+  readonly phase: RoutePhase;
   readonly seconds: number;
   /** Ground speed at the start and end of the phase, as a fraction of cruise speed. */
   readonly from: number;
@@ -48,7 +48,7 @@ const INITIAL_FACTOR = 0.35;
  * Built once per flight and then queried thousands of times by the scheduler, so it is
  * precomputed into a lookup table rather than integrated on every call.
  */
-export class JourneyProfile {
+export class RouteProfile {
   private readonly times: Float64Array;
   private readonly distances: Float64Array;
   private readonly phases: readonly PhaseSpec[];
@@ -63,7 +63,7 @@ export class JourneyProfile {
     mode: TravelMode = "flight",
     options: ProfileOptions = {},
   ) {
-    if (durationS <= 0) throw new Error("Journey duration must be positive");
+    if (durationS <= 0) throw new Error("Route duration must be positive");
     if (totalKm <= 0) throw new Error("Route distance must be positive");
 
     this.durationS = durationS;
@@ -93,8 +93,8 @@ export class JourneyProfile {
     }
   }
 
-  static forJourney(journey: Journey, geometry: RouteGeometry, options?: ProfileOptions) {
-    return new JourneyProfile(journey.durationS, geometry.totalKm, journey.mode, options);
+  static forRoute(route: Route, geometry: RouteGeometry, options?: ProfileOptions) {
+    return new RouteProfile(route.durationS, geometry.totalKm, route.mode, options);
   }
 
   /** Speed at time `t`, as a fraction of full travelling speed. */
@@ -139,7 +139,7 @@ export class JourneyProfile {
     return this.times[lo]! + (this.times[hi]! - this.times[lo]!) * fraction;
   }
 
-  phaseAtTime(t: number): JourneyPhase {
+  phaseAtTime(t: number): RoutePhase {
     if (t >= this.durationS) return "arrived";
     let elapsed = 0;
     for (const phase of this.phases) {
@@ -150,7 +150,7 @@ export class JourneyProfile {
   }
 
   /**
-   * The window during which stories may play: once the journey has actually begun, and
+   * The window during which echoes may play: once the route has actually begun, and
    * before it is winding down. On a flight that means after the climb and before the
    * descent announcement. On a walking tour it is a handful of seconds at each end.
    */
@@ -182,7 +182,7 @@ function buildPhases(
     finishingS: options.finishingS ?? preset.idleS * 0.5,
   };
 
-  // A short journey cannot afford the full stage lengths, so scale them down together
+  // A short route cannot afford the full stage lengths, so scale them down together
   // until at least a fifth of it is spent actually travelling. Without this a
   // twenty-minute hop would be entirely climb and descent, and the listening window
   // would collapse to nothing.
@@ -207,7 +207,7 @@ function buildPhases(
 /** Dead-reckoned position `t` seconds after departure. The floor of ADR-0002. */
 export function positionAtTime(
   geometry: RouteGeometry,
-  profile: JourneyProfile,
+  profile: RouteProfile,
   t: number,
   departureEpochMs: number,
 ): Position {

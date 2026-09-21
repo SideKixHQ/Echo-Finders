@@ -1,4 +1,4 @@
-# ADR-0005 — Stories live in git until non-technical editors exist
+# ADR-0005 — Echoes live in git until non-technical editors exist
 
 **Status:** accepted · **Date:** 2026-09-21
 
@@ -16,16 +16,16 @@ commits and an immutable history are a stricter editorial gate than any CMS work
 and they cost nothing.
 
 ## Decision
-- A story is a YAML/Markdown file under `content/stories/`, validated by schema in CI.
-- `content/stories/true-crime/**` is CODEOWNERS-gated to the editorial lead. AI may open
+- A echo is a YAML/Markdown file under `content/echoes/`, validated by schema in CI.
+- `content/echoes/true-crime/**` is CODEOWNERS-gated to the editorial lead. AI may open
   the PR; only a human may merge it.
 - The build compiles content files into Postgres. **Postgres is the system of record for
   serving; git is the system of record for truth.**
 - We adopt a CMS at the point where non-technical editors are writing daily — most likely
-  once the library passes ~1,000 stories — and the schema is designed now so that move is
+  once the library passes ~1,000 echoes — and the schema is designed now so that move is
   an import, not a rewrite.
 
 ## Consequences
 - Editorial velocity is capped by git literacy in the early team. Acceptable at this size.
 - Every published fact has a diff, an author, a reviewer and a timestamp, which is exactly
-  what we need the first time a true-crime story draws a complaint.
+  what we need the first time a true-crime echo draws a complaint.

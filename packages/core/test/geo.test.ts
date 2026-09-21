@@ -7,8 +7,8 @@ import {
   interpolate,
   projectOntoSegment,
 } from "../src/geo/great-circle.js";
-import { buildRouteGeometry, findStoriesAlongRoute, pointAtDistance } from "../src/geo/corridor.js";
-import { JFK_MIA, makeStory } from "./fixtures.js";
+import { buildRouteGeometry, findEchoesAlongRoute, pointAtDistance } from "../src/geo/corridor.js";
+import { JFK_MIA, makeEcho } from "./fixtures.js";
 
 /** One degree of arc at the Earth's mean radius. */
 const DEGREE_KM = (EARTH_RADIUS_KM * Math.PI) / 180;
@@ -156,43 +156,43 @@ describe("pointAtDistance", () => {
   });
 });
 
-describe("findStoriesAlongRoute", () => {
-  it("includes a story under the path and excludes one far inland", () => {
-    const onPath = makeStory({ id: "on-path", at: { lat: 33.69, lng: -78.89 } });
-    const farAway = makeStory({ id: "far-away", at: { lat: 39.74, lng: -104.99 } }); // Denver
+describe("findEchoesAlongRoute", () => {
+  it("includes a echo under the path and excludes one far inland", () => {
+    const onPath = makeEcho({ id: "on-path", at: { lat: 33.69, lng: -78.89 } });
+    const farAway = makeEcho({ id: "far-away", at: { lat: 39.74, lng: -104.99 } }); // Denver
 
-    const hits = findStoriesAlongRoute(JFK_MIA, [onPath, farAway]);
+    const hits = findEchoesAlongRoute(JFK_MIA, [onPath, farAway]);
 
-    expect(hits.map((h) => h.story.id)).toEqual(["on-path"]);
+    expect(hits.map((h) => h.echo.id)).toEqual(["on-path"]);
     expect(hits[0]!.crossTrackKm).toBeLessThan(5);
   });
 
-  it("respects a story's own trigger radius, not just the corridor width", () => {
-    // ~55km off the track: inside the default corridor, outside this story's radius.
-    const tight = makeStory({
+  it("respects a echo's own trigger radius, not just the corridor width", () => {
+    // ~55km off the track: inside the default corridor, outside this echo's radius.
+    const tight = makeEcho({
       id: "tight",
       at: { lat: 33.69, lng: -78.3 },
       triggerRadiusKm: 10,
     });
-    const loose = makeStory({ id: "loose", at: { lat: 33.69, lng: -78.3 }, triggerRadiusKm: 80 });
+    const loose = makeEcho({ id: "loose", at: { lat: 33.69, lng: -78.3 }, triggerRadiusKm: 80 });
 
-    expect(findStoriesAlongRoute(JFK_MIA, [tight]).length).toBe(0);
-    expect(findStoriesAlongRoute(JFK_MIA, [loose]).length).toBe(1);
+    expect(findEchoesAlongRoute(JFK_MIA, [tight]).length).toBe(0);
+    expect(findEchoesAlongRoute(JFK_MIA, [loose]).length).toBe(1);
   });
 
   it("returns hits in the order the aircraft meets them", () => {
-    const hits = findStoriesAlongRoute(JFK_MIA, [
-      makeStory({ id: "south", at: { lat: 27.0, lng: -80.4 } }),
-      makeStory({ id: "north", at: { lat: 40.0, lng: -74.0 } }),
-      makeStory({ id: "middle", at: { lat: 33.69, lng: -78.89 } }),
+    const hits = findEchoesAlongRoute(JFK_MIA, [
+      makeEcho({ id: "south", at: { lat: 27.0, lng: -80.4 } }),
+      makeEcho({ id: "north", at: { lat: 40.0, lng: -74.0 } }),
+      makeEcho({ id: "middle", at: { lat: 33.69, lng: -78.89 } }),
     ]);
-    expect(hits.map((h) => h.story.id)).toEqual(["north", "middle", "south"]);
+    expect(hits.map((h) => h.echo.id)).toEqual(["north", "middle", "south"]);
   });
 
   it("narrows the corridor when asked", () => {
-    const offset = makeStory({ id: "offset", at: { lat: 33.69, lng: -78.3 }, triggerRadiusKm: 200 });
-    expect(findStoriesAlongRoute(JFK_MIA, [offset], { maxCrossTrackKm: 80 }).length).toBe(1);
-    expect(findStoriesAlongRoute(JFK_MIA, [offset], { maxCrossTrackKm: 20 }).length).toBe(0);
+    const offset = makeEcho({ id: "offset", at: { lat: 33.69, lng: -78.3 }, triggerRadiusKm: 200 });
+    expect(findEchoesAlongRoute(JFK_MIA, [offset], { maxCrossTrackKm: 80 }).length).toBe(1);
+    expect(findEchoesAlongRoute(JFK_MIA, [offset], { maxCrossTrackKm: 20 }).length).toBe(0);
   });
 });
 

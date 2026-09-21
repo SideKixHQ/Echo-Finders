@@ -4,15 +4,15 @@ import {
   MVP_POLICY,
   TRUE_CRIME_MIN_AGE,
   validateLibrary,
-  validateStory,
+  validateEcho,
 } from "../src/content/validate.js";
-import type { Source, Story, TrueCrimeReview } from "../src/types.js";
-import { makeStory } from "./fixtures.js";
+import type { Source, Echo, TrueCrimeReview } from "../src/types.js";
+import { makeEcho } from "./fixtures.js";
 
-const errorsOn = (story: Story, field: string) =>
-  validateStory(story).filter((i) => i.severity === "error" && i.field === field);
+const errorsOn = (echo: Echo, field: string) =>
+  validateEcho(echo).filter((i) => i.severity === "error" && i.field === field);
 
-const allErrors = (story: Story) => validateStory(story).filter((i) => i.severity === "error");
+const allErrors = (echo: Echo) => validateEcho(echo).filter((i) => i.severity === "error");
 
 const source = (n: number): Source => ({
   title: `Source ${n}`,
@@ -26,11 +26,11 @@ const REVIEW: TrueCrimeReview = {
   convictionStatus: "convicted",
   reviewedBy: "editorial-lead",
   reviewedAt: "2026-08-01",
-  contentWarning: "This story describes a violent crime.",
+  contentWarning: "This echo describes a violent crime.",
 };
 
-const trueCrime = (overrides: Partial<Story> = {}): Story =>
-  makeStory({
+const trueCrime = (overrides: Partial<Echo> = {}): Echo =>
+  makeEcho({
     id: "tc",
     at: { lat: 41.5, lng: -81.7 },
     category: "true-crime",
@@ -41,29 +41,29 @@ const trueCrime = (overrides: Partial<Story> = {}): Story =>
     ...overrides,
   });
 
-describe("validateStory — basics", () => {
-  it("accepts a well-formed story", () => {
-    expect(allErrors(makeStory({ id: "good-story", at: { lat: 33, lng: -79 } }))).toEqual([]);
+describe("validateEcho — basics", () => {
+  it("accepts a well-formed echo", () => {
+    expect(allErrors(makeEcho({ id: "good-echo", at: { lat: 33, lng: -79 } }))).toEqual([]);
   });
 
   it("insists on kebab-case ids", () => {
-    expect(errorsOn(makeStory({ id: "Not Kebab", at: { lat: 33, lng: -79 } }), "id")).toHaveLength(1);
+    expect(errorsOn(makeEcho({ id: "Not Kebab", at: { lat: 33, lng: -79 } }), "id")).toHaveLength(1);
   });
 
   it("catches the coordinates nobody filled in", () => {
-    expect(errorsOn(makeStory({ id: "s", at: { lat: 0, lng: 0 } }), "at")[0]!.message).toMatch(
+    expect(errorsOn(makeEcho({ id: "s", at: { lat: 0, lng: 0 } }), "at")[0]!.message).toMatch(
       /null island/,
     );
   });
 
   it("rejects out-of-range coordinates", () => {
-    expect(errorsOn(makeStory({ id: "s", at: { lat: 120, lng: 0 } }), "at.lat")).toHaveLength(1);
-    expect(errorsOn(makeStory({ id: "s", at: { lat: 0, lng: 200 } }), "at.lng")).toHaveLength(1);
+    expect(errorsOn(makeEcho({ id: "s", at: { lat: 120, lng: 0 } }), "at.lat")).toHaveLength(1);
+    expect(errorsOn(makeEcho({ id: "s", at: { lat: 0, lng: 200 } }), "at.lng")).toHaveLength(1);
   });
 
   it("keeps trigger radii inside a usable range", () => {
-    const tooTight = makeStory({ id: "s", at: { lat: 33, lng: -79 }, triggerRadiusKm: 0.005 });
-    const tooWide = makeStory({ id: "s", at: { lat: 33, lng: -79 }, triggerRadiusKm: 500 });
+    const tooTight = makeEcho({ id: "s", at: { lat: 33, lng: -79 }, triggerRadiusKm: 0.005 });
+    const tooWide = makeEcho({ id: "s", at: { lat: 33, lng: -79 }, triggerRadiusKm: 500 });
     expect(errorsOn(tooTight, "triggerRadiusKm")).toHaveLength(1);
     expect(errorsOn(tooWide, "triggerRadiusKm")).toHaveLength(1);
   });
@@ -71,34 +71,34 @@ describe("validateStory — basics", () => {
   it("accepts the metre-scale radii a walking tour needs", () => {
     // The same library serves a flight and a walking tour, so the usable range spans four
     // orders of magnitude: a blue plaque is 0.05km, a city is 60.
-    const plaque = makeStory({ id: "plaque", at: { lat: 40.7, lng: -74 }, triggerRadiusKm: 0.05 });
+    const plaque = makeEcho({ id: "plaque", at: { lat: 40.7, lng: -74 }, triggerRadiusKm: 0.05 });
     expect(errorsOn(plaque, "triggerRadiusKm")).toEqual([]);
   });
 
   it("requires a place name, because the script says it out loud", () => {
-    expect(errorsOn(makeStory({ id: "s", at: { lat: 33, lng: -79 }, place: "  " }), "place")).toHaveLength(1);
+    expect(errorsOn(makeEcho({ id: "s", at: { lat: 33, lng: -79 }, place: "  " }), "place")).toHaveLength(1);
   });
 
   it("requires at least one source", () => {
-    expect(errorsOn(makeStory({ id: "s", at: { lat: 33, lng: -79 }, sources: [] }), "sources")).toHaveLength(1);
+    expect(errorsOn(makeEcho({ id: "s", at: { lat: 33, lng: -79 }, sources: [] }), "sources")).toHaveLength(1);
   });
 
   it("requires a retrieval date on every source", () => {
-    const story = makeStory({
+    const echo = makeEcho({
       id: "s",
       at: { lat: 33, lng: -79 },
       sources: [{ ...source(1), retrievedAt: "whenever" }],
     });
-    expect(errorsOn(story, "sources[0].retrievedAt")).toHaveLength(1);
+    expect(errorsOn(echo, "sources[0].retrievedAt")).toHaveLength(1);
   });
 
-  it("will not approve a story whose facts were never checked", () => {
-    const story = makeStory({ id: "s", at: { lat: 33, lng: -79 }, factCheck: "unchecked" });
-    expect(errorsOn(story, "factCheck")).toHaveLength(1);
+  it("will not approve a echo whose facts were never checked", () => {
+    const echo = makeEcho({ id: "s", at: { lat: 33, lng: -79 }, factCheck: "unchecked" });
+    expect(errorsOn(echo, "factCheck")).toHaveLength(1);
   });
 
   it("allows an unchecked draft, since that is what drafts are", () => {
-    const draft = makeStory({
+    const draft = makeEcho({
       id: "s",
       at: { lat: 33, lng: -79 },
       factCheck: "unchecked",
@@ -107,31 +107,31 @@ describe("validateStory — basics", () => {
     expect(allErrors(draft)).toEqual([]);
   });
 
-  it("warns, but does not fail, on an approved story with no audio yet", () => {
-    const story = makeStory({ id: "s", at: { lat: 33, lng: -79 }, audioKey: undefined });
-    const issues = validateStory(story);
+  it("warns, but does not fail, on an approved echo with no audio yet", () => {
+    const echo = makeEcho({ id: "s", at: { lat: 33, lng: -79 }, audioKey: undefined });
+    const issues = validateEcho(echo);
     expect(issues.filter((i) => i.severity === "error")).toEqual([]);
     expect(issues.some((i) => i.field === "audioKey" && i.severity === "warning")).toBe(true);
   });
 
-  it("catches a kids story a child could never hear", () => {
-    const story = makeStory({ id: "s", at: { lat: 33, lng: -79 }, category: "kids", minAge: 15 });
-    expect(errorsOn(story, "minAge")).toHaveLength(1);
+  it("catches a kids echo a child could never hear", () => {
+    const echo = makeEcho({ id: "s", at: { lat: 33, lng: -79 }, category: "kids", minAge: 15 });
+    expect(errorsOn(echo, "minAge")).toHaveLength(1);
   });
 
   it("warns about an over-long pin summary", () => {
-    const story = makeStory({ id: "s", at: { lat: 33, lng: -79 }, summary: "x".repeat(200) });
-    expect(validateStory(story).some((i) => i.field === "summary")).toBe(true);
+    const echo = makeEcho({ id: "s", at: { lat: 33, lng: -79 }, summary: "x".repeat(200) });
+    expect(validateEcho(echo).some((i) => i.field === "summary")).toBe(true);
   });
 
   it("warns when audio is nowhere near its format's nominal length", () => {
-    const story = makeStory({ id: "s", at: { lat: 33, lng: -79 }, format: "short", durationS: 600 });
-    expect(validateStory(story).some((i) => i.field === "durationS")).toBe(true);
+    const echo = makeEcho({ id: "s", at: { lat: 33, lng: -79 }, format: "short", durationS: 600 });
+    expect(validateEcho(echo).some((i) => i.field === "durationS")).toBe(true);
   });
 });
 
-describe("validateStory — the true-crime gate", () => {
-  it("accepts a fully reviewed true-crime story", () => {
+describe("validateEcho — the true-crime gate", () => {
+  it("accepts a fully reviewed true-crime echo", () => {
     expect(allErrors(trueCrime())).toEqual([]);
   });
 
@@ -185,22 +185,22 @@ describe("validateStory — the true-crime gate", () => {
     expect(errorsOn(unwarned, "trueCrimeReview.contentWarning")).toHaveLength(1);
   });
 
-  it("flags a crime story filed under another category to dodge the gate", () => {
-    const disguised = makeStory({
+  it("flags a crime echo filed under another category to dodge the gate", () => {
+    const disguised = makeEcho({
       id: "disguised",
       at: { lat: 33, lng: -79 },
       category: "history",
       trueCrimeReview: REVIEW,
     });
-    expect(validateStory(disguised).some((i) => i.field === "trueCrimeReview")).toBe(true);
+    expect(validateEcho(disguised).some((i) => i.field === "trueCrimeReview")).toBe(true);
   });
 });
 
 describe("validateLibrary", () => {
   it("passes a clean library", () => {
     const report = validateLibrary([
-      makeStory({ id: "one", at: { lat: 33, lng: -79 } }),
-      makeStory({ id: "two", at: { lat: 34, lng: -79 } }),
+      makeEcho({ id: "one", at: { lat: 33, lng: -79 } }),
+      makeEcho({ id: "two", at: { lat: 34, lng: -79 } }),
     ]);
     expect(report.ok).toBe(true);
     expect(report.errorCount).toBe(0);
@@ -208,34 +208,34 @@ describe("validateLibrary", () => {
 
   it("catches duplicate ids", () => {
     const report = validateLibrary([
-      makeStory({ id: "same", at: { lat: 33, lng: -79 } }),
-      makeStory({ id: "same", at: { lat: 34, lng: -79 } }),
+      makeEcho({ id: "same", at: { lat: 33, lng: -79 } }),
+      makeEcho({ id: "same", at: { lat: 34, lng: -79 } }),
     ]);
     expect(report.ok).toBe(false);
     expect(report.issues.some((i) => i.message.includes("duplicated"))).toBe(true);
   });
 
-  it("catches a dangling related-story reference", () => {
+  it("catches a dangling related-echo reference", () => {
     // Left unchecked, the scheduler's duplicate-subject suppression silently stops
     // working and a passenger hears the same subject twice.
     const report = validateLibrary([
-      makeStory({ id: "one", at: { lat: 33, lng: -79 }, relatedIds: ["ghost"] }),
+      makeEcho({ id: "one", at: { lat: 33, lng: -79 }, relatedIds: ["ghost"] }),
     ]);
     expect(report.ok).toBe(false);
     expect(report.issues.some((i) => i.field === "relatedIds")).toBe(true);
   });
 
-  it("accepts a resolved related-story pair", () => {
+  it("accepts a resolved related-echo pair", () => {
     const report = validateLibrary([
-      makeStory({ id: "one", at: { lat: 33, lng: -79 }, relatedIds: ["two"] }),
-      makeStory({ id: "two", at: { lat: 34, lng: -79 }, relatedIds: ["one"] }),
+      makeEcho({ id: "one", at: { lat: 33, lng: -79 }, relatedIds: ["two"] }),
+      makeEcho({ id: "two", at: { lat: 34, lng: -79 }, relatedIds: ["one"] }),
     ]);
     expect(report.ok).toBe(true);
   });
 
   it("separates errors from warnings so CI can fail on errors alone", () => {
     const report = validateLibrary([
-      makeStory({ id: "warn-only", at: { lat: 33, lng: -79 }, audioKey: undefined }),
+      makeEcho({ id: "warn-only", at: { lat: 33, lng: -79 }, audioKey: undefined }),
     ]);
     expect(report.errorCount).toBe(0);
     expect(report.warningCount).toBeGreaterThan(0);
@@ -244,8 +244,8 @@ describe("validateLibrary", () => {
 });
 
 describe("rights policy", () => {
-  const withRights = (rights: Source["rights"], url?: string): Story =>
-    makeStory({
+  const withRights = (rights: Source["rights"], url?: string): Echo =>
+    makeEcho({
       id: "rights-test",
       at: { lat: 33, lng: -79 },
       sources: [{ ...source(1), rights, ...(url ? { url } : {}) }],
@@ -261,7 +261,7 @@ describe("rights policy", () => {
 
   it("wants a creditable URL on a CC-BY source", () => {
     // CC-BY is free to use but not free of obligation; the credit has to land somewhere.
-    const issues = validateStory(withRights("cc-by"));
+    const issues = validateEcho(withRights("cc-by"));
     expect(issues.some((i) => i.field === "sources[0].url" && i.severity === "warning")).toBe(true);
   });
 
@@ -297,7 +297,7 @@ describe("rights policy", () => {
 
 describe("true crime — primary records", () => {
   it("demands a public record, not just two retellings", () => {
-    // Secondary sources repeat each other's errors; a chain of retellings is how a story
+    // Secondary sources repeat each other's errors; a chain of retellings is how a echo
     // ends up asserting a conviction that never happened.
     const retellings = trueCrime({
       sources: [

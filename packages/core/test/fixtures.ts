@@ -1,9 +1,18 @@
-import type { Journey, ListenerProfile, Source, Story, StoryCategory, StoryFormat } from "../src/types.js";
+import type {
+  Echo,
+  EchoCategory,
+  EchoFormat,
+  EchoPoint,
+  LatLng,
+  ListenerProfile,
+  Route,
+  Source,
+} from "../src/types.js";
 import { NOMINAL_DURATION_S } from "../src/types.js";
 import { buildRouteGeometry, pointAtDistance } from "../src/geo/corridor.js";
 import { presetFor } from "../src/modes.js";
 
-export const JFK_MIA: Journey = {
+export const JFK_MIA: Route = {
   id: "test-jfk-mia",
   mode: "flight",
   origin: {
@@ -26,7 +35,7 @@ export const JFK_MIA: Journey = {
     { at: { lat: 30.33, lng: -81.65 }, name: "Jacksonville" },
     { at: { lat: 25.7959, lng: -80.287 }, name: "MIA" },
   ],
-  // Midday departure, so daylight-dependent stories are not suppressed by default.
+  // Midday departure, so daylight-dependent echoes are not suppressed by default.
   departureAt: "2026-06-15T14:00:00Z",
   durationS: 10_800,
   cruiseAltitudeFt: 35_000,
@@ -40,14 +49,39 @@ const SOURCE: Source = {
   rights: "public-domain",
 };
 
-export function makeStory(overrides: Partial<Story> & Pick<Story, "id" | "at">): Story {
-  const format: StoryFormat = overrides.format ?? "short";
-  const category: StoryCategory = overrides.category ?? "history";
+/**
+ * Test-facing shape for building an echo.
+ *
+ * Deliberately flatter than `Echo` itself: a test that only cares where something is
+ * should say `at`, not spell out a whole `EchoPoint`. Spreading an existing echo works
+ * too, so `makeEcho({ ...other, id: "x" })` keeps its point.
+ */
+export type EchoDraft = Partial<Omit<Echo, "point">> & {
+  id: string;
+  at?: LatLng;
+  point?: EchoPoint;
+  triggerRadiusKm?: number;
+  place?: string;
+};
+
+export function makeEcho(draft: EchoDraft): Echo {
+  const format: EchoFormat = draft.format ?? "short";
+  const category: EchoCategory = draft.category ?? "history";
+
+  const at = draft.at ?? draft.point?.at;
+  if (!at) throw new Error(`makeEcho(${draft.id}) needs either at or point`);
+
+  const point: EchoPoint = {
+    at,
+    triggerRadiusKm: draft.triggerRadiusKm ?? draft.point?.triggerRadiusKm ?? 60,
+    place: draft.place ?? draft.point?.place ?? "Somewhere",
+  };
+
+  const { at: _at, triggerRadiusKm: _r, place: _p, point: _point, ...rest } = draft;
+
   return {
-    title: `Story ${overrides.id}`,
-    summary: `Summary for ${overrides.id}`,
-    triggerRadiusKm: 60,
-    place: "Somewhere",
+    title: `Echo ${draft.id}`,
+    summary: `Summary for ${draft.id}`,
     category,
     format,
     durationS: NOMINAL_DURATION_S[format],
@@ -57,13 +91,15 @@ export function makeStory(overrides: Partial<Story> & Pick<Story, "id" | "at">):
     sources: [SOURCE],
     editorial: "approved",
     factCheck: "corroborated",
-    audioKey: `audio/${overrides.id}.opus`,
-    ...overrides,
+    certainty: "documented",
+    audioKey: `audio/${draft.id}.opus`,
+    ...rest,
+    point,
   };
 }
 
 /**
- * Stories spread evenly down the flight path, so scheduling tests have a dense corridor
+ * Echoes spread evenly down the flight path, so scheduling tests have a dense corridor
  * to work with rather than a handful of clustered points.
  *
  * Placed along the *actual* route geometry rather than a straight line between the
@@ -71,20 +107,20 @@ export function makeStory(overrides: Partial<Story> & Pick<Story, "id" | "at">):
  * rejoins the coast near Myrtle Beach, some 190km east of the direct line, so a naive
  * fixture would sit outside the corridor and be correctly rejected by the engine.
  */
-export function storiesAlongJfkMia(
+export function echoesAlongJfkMia(
   count: number,
-  categories: readonly StoryCategory[] = ["history", "famous-people", "nature-science", "culture-food"],
-): Story[] {
+  categories: readonly EchoCategory[] = ["history", "famous-people", "nature-science", "culture-food"],
+): Echo[] {
   const geometry = buildRouteGeometry(JFK_MIA);
 
   return Array.from({ length: count }, (_, i) => {
     const at = pointAtDistance(geometry, ((i + 0.5) / count) * geometry.totalKm);
     // A little lateral scatter, alternating side of the track, so proximity scores vary
-    // rather than every story sitting exactly on the centreline.
+    // rather than every echo sitting exactly on the centreline.
     const offsetDeg = ((i % 5) - 2) * 0.08;
 
-    return makeStory({
-      id: `story-${String(i).padStart(3, "0")}`,
+    return makeEcho({
+      id: `echo-${String(i).padStart(3, "0")}`,
       at: { lat: at.lat + offsetDeg, lng: at.lng },
       category: categories[i % categories.length]!,
       quality: 0.7 + (i % 3) * 0.1,
@@ -112,10 +148,10 @@ export const TRUE_CRIME_FAN: ListenerProfile = {
  * streets rather than a straight line.
  *
  * Deliberately the hardest case for the engine. Everything is close together, the trigger
- * radii are metres rather than kilometres, and a story that plays ninety seconds late is
+ * radii are metres rather than kilometres, and a echo that plays ninety seconds late is
  * about a building the listener can no longer see.
  */
-export const MANHATTAN_WALK: Journey = {
+export const MANHATTAN_WALK: Route = {
   id: "test-manhattan-walk",
   mode: "walking",
   origin: {
@@ -141,7 +177,7 @@ export const MANHATTAN_WALK: Journey = {
 };
 
 /** A drive down the Blue Ridge Parkway: slower than a flight, wider than a walk. */
-export const PARKWAY_DRIVE: Journey = {
+export const PARKWAY_DRIVE: Route = {
   id: "test-parkway-drive",
   mode: "driving",
   origin: {
@@ -165,19 +201,19 @@ export const PARKWAY_DRIVE: Journey = {
   durationS: 9000,
 };
 
-/** Stories placed along an arbitrary journey's real geometry, at a mode-appropriate scale. */
-export function storiesAlong(
-  journey: Journey,
+/** Echoes placed along an arbitrary route's real geometry, at a mode-appropriate scale. */
+export function echoesAlong(
+  route: Route,
   count: number,
-  overrides: Partial<Story> = {},
-): Story[] {
-  const geometry = buildRouteGeometry(journey);
-  const radius = overrides.triggerRadiusKm ?? presetFor(journey.mode).typicalTriggerRadiusKm;
+  overrides: Partial<Echo> = {},
+): Echo[] {
+  const geometry = buildRouteGeometry(route);
+  const radius = overrides.triggerRadiusKm ?? presetFor(route.mode).typicalTriggerRadiusKm;
 
   return Array.from({ length: count }, (_, i) => {
     const at = pointAtDistance(geometry, ((i + 0.5) / count) * geometry.totalKm);
-    return makeStory({
-      id: `${journey.mode}-story-${String(i).padStart(3, "0")}`,
+    return makeEcho({
+      id: `${route.mode}-echo-${String(i).padStart(3, "0")}`,
       at,
       triggerRadiusKm: radius,
       category: (["history", "famous-people", "culture-food", "landmarks"] as const)[i % 4]!,

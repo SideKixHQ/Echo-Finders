@@ -7,7 +7,7 @@
 # TODO: create the @SideKixHQ/editorial team and enable branch protection with
 # "Require review from Code Owners" on main, or these lines are decoration.
 
-/content/stories/true-crime/    @SideKixHQ/editorial
+/content/echoes/true-crime/    @SideKixHQ/editorial
 /content/                       @SideKixHQ/editorial
 
 # Changes to the gate itself need the same scrutiny as the content it guards.

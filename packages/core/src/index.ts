@@ -6,5 +6,6 @@ export * from "./geo/solar.js";
 export * from "./route/profile.js";
 export * from "./ranking/score.js";
 export * from "./ranking/playlist.js";
+export * from "./ranking/nearby.js";
 export * from "./content/validate.js";
 export * from "./pkg/build.js";

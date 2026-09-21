@@ -13,7 +13,7 @@ several of these have free tiers that expire on signup date, not on first use.
 | Service | Why | Notes |
 |---|---|---|
 | **ElevenLabs** | Narration. Realistic TTS at library scale. | **Account already held.** One open question: whether the plan's commercial terms cover *redistributing* generated audio inside a product licensed to a third party (the airline). That is a step beyond ordinary commercial use and worth confirming before the library is voiced at scale. |
-| **Anthropic API** | Story drafting from source material in the discovery pipeline | pay-as-you-go |
+| **Anthropic API** | Echo drafting from source material in the discovery pipeline | pay-as-you-go |
 | **Google Places API** | Attraction enrichment: place IDs, photos, ratings (ADR-0004) | $200/mo free credit covers build-time use easily |
 | Cloudflare R2 | Audio, images, transcripts, route packages | zero egress fees — this matters when airlines pull packages per aircraft |
 
@@ -47,7 +47,7 @@ there is no rights budget in this phase.
    white-labelled airline product. If it does not, the fallback is a licensed voice actor
    or an enterprise TTS agreement, and that negotiation is measured in months — so it is
    worth confirming long before the library is fully voiced.
-2. **True-crime liability.** Defamation exposure on stories involving living people, and
+2. **True-crime liability.** Defamation exposure on echoes involving living people, and
    whether the airline's contract indemnifies us or we indemnify them. Get this in front
-   of a lawyer before the first true-crime story ships, not after. ADR-0006's
+   of a lawyer before the first true-crime echo ships, not after. ADR-0006's
    primary-record rule reduces but does not remove this exposure.

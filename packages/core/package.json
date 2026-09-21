@@ -1,5 +1,5 @@
 {
-  "name": "@echofinders/core",
+  "name": "@echofinder/core",
   "version": "0.0.0",
   "type": "module",
   "main": "./dist/index.js",

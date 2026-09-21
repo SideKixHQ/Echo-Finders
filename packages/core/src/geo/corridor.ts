@@ -1,11 +1,11 @@
 /**
  * Turning a flight plan into a searchable corridor.
  *
- * Every question the ranking engine asks reduces to two numbers per story: how far off
+ * Every question the ranking engine asks reduces to two numbers per echo: how far off
  * the track it sits, and how far along the track you meet it. This module computes both.
  */
 
-import type { Journey, LatLng, Story } from "../types.js";
+import type { Route, LatLng, Echo } from "../types.js";
 import { presetFor } from "../modes.js";
 import {
   boundingBox,
@@ -28,7 +28,7 @@ export interface RouteGeometry {
  * Expand a flight plan's waypoints into a densified great-circle polyline.
  *
  * Densification matters: two waypoints 2,000km apart are joined by a great circle that
- * bows hundreds of kilometres away from the straight line between them, and a story sitting
+ * bows hundreds of kilometres away from the straight line between them, and a echo sitting
  * under that bow would otherwise be missed entirely.
  */
 /**
@@ -43,11 +43,11 @@ export interface RouteGeometry {
  * Ground modes get a proportionally finer step, mostly so the drawn route on the map follows
  * the street rather than chording across a bend.
  */
-export function defaultSegmentKm(journey: Journey): number {
-  return Math.min(25, Math.max(0.05, presetFor(journey.mode).corridorKm / 2));
+export function defaultSegmentKm(route: Route): number {
+  return Math.min(25, Math.max(0.05, presetFor(route.mode).corridorKm / 2));
 }
 
-export function buildRouteGeometry(plan: Journey, segmentKm?: number): RouteGeometry {
+export function buildRouteGeometry(plan: Route, segmentKm?: number): RouteGeometry {
   const step = segmentKm ?? defaultSegmentKm(plan);
   const waypoints = plan.waypoints;
   if (waypoints.length < 2) {
@@ -76,12 +76,12 @@ export function buildRouteGeometry(plan: Journey, segmentKm?: number): RouteGeom
   return { points, cumulativeKm, totalKm: running };
 }
 
-/** Where a story sits relative to the whole route. */
+/** Where a echo sits relative to the whole route. */
 export interface CorridorHit {
-  readonly story: Story;
+  readonly echo: Echo;
   /** Perpendicular distance from the track, km. */
   readonly crossTrackKm: number;
-  /** Distance from the origin at which the aircraft is nearest this story, km. */
+  /** Distance from the origin at which the aircraft is nearest this echo, km. */
   readonly alongTrackKm: number;
   /** The nearest point on the track itself — where the map pin's leader line lands. */
   readonly nearestPoint: LatLng;
@@ -117,7 +117,7 @@ export function projectOntoRoute(
 
 export interface CorridorOptions {
   /**
-   * Corridor half-width in km. A story is only considered if it falls inside this AND
+   * Corridor half-width in km. A echo is only considered if it falls inside this AND
    * inside its own trigger radius, so a route can be narrowed without editing content.
    */
   readonly maxCrossTrackKm?: number;
@@ -128,14 +128,14 @@ export interface CorridorOptions {
 
 
 /**
- * Find every story the flight passes near, with its position along the route.
+ * Find every echo the flight passes near, with its position along the route.
  *
  * Results are sorted by along-track distance, which is the order the aircraft meets them
  * and therefore the natural order for everything downstream.
  */
-export function findStoriesAlongRoute(
-  plan: Journey,
-  stories: readonly Story[],
+export function findEchoesAlongRoute(
+  plan: Route,
+  echoes: readonly Echo[],
   options: CorridorOptions = {},
 ): CorridorHit[] {
   const preset = presetFor(plan.mode);
@@ -147,14 +147,14 @@ export function findStoriesAlongRoute(
   const box = corridorBoundingBox(geometry, maxCrossTrackKm);
 
   const hits: CorridorHit[] = [];
-  for (const story of stories) {
-    if (!inBoundingBox(box, story.at)) continue;
+  for (const echo of echoes) {
+    if (!inBoundingBox(box, echo.point.at)) continue;
 
-    const projection = projectOntoRoute(geometry, story.at);
-    const limit = Math.min(maxCrossTrackKm, story.triggerRadiusKm);
+    const projection = projectOntoRoute(geometry, echo.point.at);
+    const limit = Math.min(maxCrossTrackKm, echo.point.triggerRadiusKm);
     if (projection.crossTrackKm > limit) continue;
 
-    hits.push({ story, ...projection });
+    hits.push({ echo, ...projection });
   }
 
   hits.sort((a, b) => a.alongTrackKm - b.alongTrackKm);

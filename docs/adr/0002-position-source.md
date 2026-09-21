@@ -30,6 +30,6 @@ no position signal whatsoever.** Everything else is an accuracy upgrade.
 
 ## Consequences
 - We are never blocked on an airline integration to build, demo or ship.
-- Story triggering tolerates position error, so trigger radii are generous (25–50 miles)
-  and stories are chosen for a corridor, not a pinpoint.
+- Echo triggering tolerates position error, so trigger radii are generous (25–50 miles)
+  and echoes are chosen for a corridor, not a pinpoint.
 - The flight-plan-only path is also exactly what the pre-flight preview needs, for free.

@@ -1,19 +1,19 @@
 /**
- * The gate every story passes before it can reach a passenger.
+ * The gate every echo passes before it can reach a passenger.
  *
- * This runs in CI against the content library (ADR-0005), so a story that breaks a rule
+ * This runs in CI against the content library (ADR-0005), so a echo that breaks a rule
  * fails the build rather than reaching an aircraft. The rules encode editorial policy, not
  * programmer taste, and each one exists because getting it wrong has a specific cost:
  * a defamation claim, a frightened child, an airline pulling the product mid-contract.
  */
 
-import type { Source, Story } from "../types.js";
-import { NOMINAL_DURATION_S, STORY_CATEGORIES } from "../types.js";
+import type { Source, Echo } from "../types.js";
+import { NOMINAL_DURATION_S, ECHO_CATEGORIES } from "../types.js";
 
 export type Severity = "error" | "warning";
 
 export interface ValidationIssue {
-  readonly storyId: string;
+  readonly echoId: string;
   readonly severity: Severity;
   readonly field: string;
   readonly message: string;
@@ -79,71 +79,71 @@ export const FULL_POLICY: ContentPolicy = {
   allowedRights: ["public-domain", "cc-by", "cc-by-sa", "licensed", "fair-use-facts"],
 };
 
-export function validateStory(story: Story, policy: ContentPolicy = MVP_POLICY): ValidationIssue[] {
+export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const error = (field: string, message: string) =>
-    issues.push({ storyId: story.id, severity: "error", field, message });
+    issues.push({ echoId: echo.id, severity: "error", field, message });
   const warn = (field: string, message: string) =>
-    issues.push({ storyId: story.id, severity: "warning", field, message });
+    issues.push({ echoId: echo.id, severity: "warning", field, message });
 
   // --- Identity and shape ------------------------------------------------------------
-  if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(story.id)) {
+  if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(echo.id)) {
     error("id", "must be lowercase kebab-case so it is stable in file paths and URLs");
   }
-  if (story.title.trim().length === 0) error("title", "is required");
-  if (story.summary.trim().length === 0) error("summary", "is required for the map pin");
-  if (story.summary.length > 140) {
-    warn("summary", `is ${story.summary.length} chars; map pins truncate past ~140`);
+  if (echo.title.trim().length === 0) error("title", "is required");
+  if (echo.summary.trim().length === 0) error("summary", "is required for the map pin");
+  if (echo.summary.length > 140) {
+    warn("summary", `is ${echo.summary.length} chars; map pins truncate past ~140`);
   }
-  if (!STORY_CATEGORIES.includes(story.category)) {
-    error("category", `"${story.category}" is not a known category`);
+  if (!ECHO_CATEGORIES.includes(echo.category)) {
+    error("category", `"${echo.category}" is not a known category`);
   }
 
   // --- Geography ---------------------------------------------------------------------
-  if (story.at.lat < -90 || story.at.lat > 90) error("at.lat", "must be between -90 and 90");
-  if (story.at.lng < -180 || story.at.lng > 180) {
+  if (echo.point.at.lat < -90 || echo.point.at.lat > 90) error("at.lat", "must be between -90 and 90");
+  if (echo.point.at.lng < -180 || echo.point.at.lng > 180) {
     error("at.lng", "must be between -180 and 180");
   }
-  if (story.at.lat === 0 && story.at.lng === 0) {
+  if (echo.point.at.lat === 0 && echo.point.at.lng === 0) {
     error("at", "is null island (0,0) — coordinates were almost certainly never filled in");
   }
   // The usable range spans four orders of magnitude, because the same library serves a
   // flight and a walking tour. The floor is set by GNSS accuracy on a phone in a street
   // (a 10m radius would never reliably trigger); the ceiling by the point at which a place
   // stops being somewhere you are passing.
-  if (story.triggerRadiusKm < 0.02 || story.triggerRadiusKm > 250) {
+  if (echo.point.triggerRadiusKm < 0.02 || echo.point.triggerRadiusKm > 250) {
     error(
       "triggerRadiusKm",
       "must be 0.02–250km; tighter than 20m cannot survive GNSS error, wider than 250km is not somewhere you are passing",
     );
   }
-  if (story.place.trim().length === 0) {
+  if (echo.point.place.trim().length === 0) {
     error("place", "is required — the script and the pin both name the place out loud");
   }
 
   // --- Runtime -----------------------------------------------------------------------
-  const nominal = NOMINAL_DURATION_S[story.format];
-  if (story.durationS <= 0) {
+  const nominal = NOMINAL_DURATION_S[echo.format];
+  if (echo.durationS <= 0) {
     error("durationS", "must be positive");
-  } else if (Math.abs(story.durationS - nominal) / nominal > DURATION_TOLERANCE) {
+  } else if (Math.abs(echo.durationS - nominal) / nominal > DURATION_TOLERANCE) {
     warn(
       "durationS",
-      `${story.durationS}s is far from the ${nominal}s nominal for "${story.format}" — the scheduler paces around these shapes`,
+      `${echo.durationS}s is far from the ${nominal}s nominal for "${echo.format}" — the scheduler paces around these shapes`,
     );
   }
 
   // --- Scoring inputs ----------------------------------------------------------------
-  if (story.quality < 0 || story.quality > 1) error("quality", "must be between 0 and 1");
-  if (story.minAge < 0 || story.minAge > 21) error("minAge", "must be between 0 and 21");
+  if (echo.quality < 0 || echo.quality > 1) error("quality", "must be between 0 and 1");
+  if (echo.minAge < 0 || echo.minAge > 21) error("minAge", "must be between 0 and 21");
 
   // --- Sourcing ----------------------------------------------------------------------
   // Sponsored placements are exempt: an advertisement makes no factual claim we are
   // vouching for, and requiring a National Park Service citation for a restaurant would
   // only teach editors to paste in a meaningless one.
-  if (story.sources.length === 0 && !story.sponsorship) {
+  if (echo.sources.length === 0 && !echo.sponsorship) {
     error("sources", "every claim must be traceable; at least one source is required");
   }
-  for (const [i, source] of story.sources.entries()) {
+  for (const [i, source] of echo.sources.entries()) {
     if (!source.retrievedAt || Number.isNaN(Date.parse(source.retrievedAt))) {
       error(`sources[${i}].retrievedAt`, "must be an ISO date — sources move and vanish");
     }
@@ -169,55 +169,97 @@ export function validateStory(story: Story, policy: ContentPolicy = MVP_POLICY):
   }
 
   // --- Publication readiness ---------------------------------------------------------
-  if (story.editorial === "approved") {
-    if (story.factCheck === "unchecked" || story.factCheck === "disputed") {
+  if (echo.editorial === "approved") {
+    if (echo.factCheck === "unchecked" || echo.factCheck === "disputed") {
       error(
         "factCheck",
-        `cannot approve a story whose facts are "${story.factCheck}"`,
+        `cannot approve a echo whose facts are "${echo.factCheck}"`,
       );
     }
-    if (!story.audioKey) {
+    if (!echo.audioKey) {
       warn("audioKey", "is approved but has no rendered audio, so it cannot be packaged");
     }
   }
 
   // --- Kids --------------------------------------------------------------------------
-  if (story.category === "kids") {
-    if (story.minAge > 12) {
-      error("minAge", "a kids story with minAge above 12 will never reach a child");
+  if (echo.category === "kids") {
+    if (echo.minAge > 12) {
+      error("minAge", "a kids echo with minAge above 12 will never reach a child");
+    }
+  }
+
+  // --- Certainty ----------------------------------------------------------------------
+  // "We distinguish fact from legend and clearly identify uncertainty" only means
+  // something if a build can fail over it. A confident narrator makes a ghost story and a
+  // census record sound identical, and a confident voice is what stops a listener checking.
+  if (echo.certainty !== "documented" && !echo.certaintyNote?.trim()) {
+    error(
+      "certaintyNote",
+      `is required when certainty is "${echo.certainty}" — say what is disputed and who disputes it, because "sources differ" is not a disclosure`,
+    );
+  }
+  if (echo.certainty === "contested" && echo.sources.length < 2) {
+    error(
+      "sources",
+      "a contested echo needs at least two sources; you cannot show a disagreement from one side of it",
+    );
+  }
+  if (echo.category === "local-legends" && echo.certainty === "documented") {
+    error(
+      "certainty",
+      'a local legend cannot be "documented" — label it "legend", or file it under history if the record actually supports it',
+    );
+  }
+  if (echo.category === "true-crime" && echo.certainty === "legend") {
+    error(
+      "certainty",
+      "true crime concerns real people and real harm; folklore belongs under local-legends",
+    );
+  }
+
+  // --- Perspective --------------------------------------------------------------------
+  for (const id of echo.perspectiveIds ?? []) {
+    if (id === echo.id) error("perspectiveIds", "lists the echo itself");
+    if (echo.relatedIds?.includes(id)) {
+      // These mean opposite things to the scheduler: related suppresses, perspective
+      // pairs. An id in both is a contradiction it cannot resolve.
+      error(
+        "perspectiveIds",
+        `lists "${id}", which is also in relatedIds — one suppresses the other as a duplicate, the other actively pairs them`,
+      );
     }
   }
 
   // --- Sponsorship --------------------------------------------------------------------
-  if (story.sponsorship) issues.push(...validateSponsorship(story));
+  if (echo.sponsorship) issues.push(...validateSponsorship(echo));
 
   // --- The simple retelling -----------------------------------------------------------
-  if (story.simple) {
-    const simple = story.simple;
+  if (echo.simple) {
+    const simple = echo.simple;
     if (simple.title.trim().length === 0) error("simple.title", "is required");
     if (simple.script.trim().length === 0) error("simple.script", "is required");
     if (simple.durationS <= 0) {
       error("simple.durationS", "must be positive");
-    } else if (simple.durationS >= story.durationS) {
+    } else if (simple.durationS >= echo.durationS) {
       // The point of the simple telling is that it is shorter as well as plainer. One
       // that runs as long as the original is almost always a copy-paste mistake.
       error(
         "simple.durationS",
-        `is ${simple.durationS}s against the full version's ${story.durationS}s — the simple telling must be shorter`,
+        `is ${simple.durationS}s against the full version's ${echo.durationS}s — the simple telling must be shorter`,
       );
     }
-    if (simple.transcript) issues.push(...validateTranscript(story.id, simple.transcript, "simple.transcript"));
+    if (simple.transcript) issues.push(...validateTranscript(echo.id, simple.transcript, "simple.transcript"));
   }
 
-  if (story.transcript) issues.push(...validateTranscript(story.id, story.transcript, "transcript"));
+  if (echo.transcript) issues.push(...validateTranscript(echo.id, echo.transcript, "transcript"));
 
   // --- True crime: the strictest gate in the system -----------------------------------
-  if (story.category === "true-crime") {
-    issues.push(...validateTrueCrime(story));
-  } else if (story.trueCrimeReview) {
+  if (echo.category === "true-crime") {
+    issues.push(...validateTrueCrime(echo));
+  } else if (echo.trueCrimeReview) {
     warn(
       "trueCrimeReview",
-      "is present on a non-true-crime story; if the subject is a crime, categorise it as such so the gates apply",
+      "is present on a non-true-crime echo; if the subject is a crime, categorise it as such so the gates apply",
     );
   }
 
@@ -227,37 +269,37 @@ export function validateStory(story: Story, policy: ContentPolicy = MVP_POLICY):
 /**
  * Additional obligations for true crime. Every rule here traces to a real failure mode:
  * a wrongly-stated conviction is defamation, an unreviewed draft is an unattributable
- * publication, and a child hearing a murder story is the single fastest way to lose an
+ * publication, and a child hearing a murder echo is the single fastest way to lose an
  * airline contract.
  */
-function validateTrueCrime(story: Story): ValidationIssue[] {
+function validateTrueCrime(echo: Echo): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const error = (field: string, message: string) =>
-    issues.push({ storyId: story.id, severity: "error", field, message });
+    issues.push({ echoId: echo.id, severity: "error", field, message });
 
-  const review = story.trueCrimeReview;
+  const review = echo.trueCrimeReview;
   if (!review) {
     error("trueCrimeReview", "is mandatory for true crime — no exceptions, no defaults");
     return issues;
   }
 
-  if (story.sources.length < 2) {
+  if (echo.sources.length < 2) {
     error("sources", "true crime requires at least two independent credible sources");
   }
   // At least one source must be the primary record itself — a court filing, a coroner's
   // report, a government archive — rather than someone else's account of it. Secondary
-  // sources repeat each other's errors, and a chain of retellings is how a story ends up
+  // sources repeat each other's errors, and a chain of retellings is how a echo ends up
   // asserting a conviction that never happened.
-  if (!story.sources.some((source) => source.rights === "public-domain")) {
+  if (!echo.sources.some((source) => source.rights === "public-domain")) {
     error(
       "sources",
       "true crime needs at least one public record (court, coroner, government archive) as a primary source",
     );
   }
-  if (story.factCheck !== "corroborated") {
+  if (echo.factCheck !== "corroborated") {
     error("factCheck", 'true crime must be "corroborated" before it can be published');
   }
-  if (story.minAge < TRUE_CRIME_MIN_AGE) {
+  if (echo.minAge < TRUE_CRIME_MIN_AGE) {
     error("minAge", `true crime must be gated at ${TRUE_CRIME_MIN_AGE}+`);
   }
   if (review.reviewedBy.trim().length === 0) {
@@ -267,19 +309,19 @@ function validateTrueCrime(story: Story): ValidationIssue[] {
     error("trueCrimeReview.reviewedAt", "must be an ISO date");
   }
   if (review.contentWarning.trim().length === 0) {
-    error("trueCrimeReview.contentWarning", "must be read before the story begins");
+    error("trueCrimeReview.contentWarning", "must be read before the echo begins");
   }
 
-  // A story about someone alive and not convicted is the highest-risk thing we publish.
+  // A echo about someone alive and not convicted is the highest-risk thing we publish.
   // It needs more than the baseline two sources.
   if (
     review.involvesLivingPeople &&
     review.convictionStatus !== "convicted" &&
-    story.sources.length < 3
+    echo.sources.length < 3
   ) {
     error(
       "sources",
-      "a story naming a living person who was not convicted requires at least three sources",
+      "a echo naming a living person who was not convicted requires at least three sources",
     );
   }
 
@@ -299,12 +341,12 @@ export interface LibraryReport {
  * Two of these are not negotiable regardless of what an advertiser is willing to pay:
  * every placement discloses that it is one, and none of them reach children.
  */
-function validateSponsorship(story: Story): ValidationIssue[] {
+function validateSponsorship(echo: Echo): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const error = (field: string, message: string) =>
-    issues.push({ storyId: story.id, severity: "error", field, message });
+    issues.push({ echoId: echo.id, severity: "error", field, message });
 
-  const sponsorship = story.sponsorship;
+  const sponsorship = echo.sponsorship;
   if (!sponsorship) return issues;
 
   if (sponsorship.disclosure.trim().length === 0) {
@@ -336,10 +378,10 @@ function validateSponsorship(story: Story): ValidationIssue[] {
 
   // Advertising to children is a line we do not cross, and it is the one an airline's
   // legal team will ask about first.
-  if (story.category === "kids") {
+  if (echo.category === "kids") {
     error("category", "a sponsored placement cannot be filed as kids content");
   }
-  if (story.minAge < ADVERTISING_MIN_AGE) {
+  if (echo.minAge < ADVERTISING_MIN_AGE) {
     error(
       "minAge",
       `sponsored placements are gated at ${ADVERTISING_MIN_AGE}+; children must never be advertised to`,
@@ -351,13 +393,13 @@ function validateSponsorship(story: Story): ValidationIssue[] {
 
 /** Transcript lines must run forwards and stay inside the audio. */
 function validateTranscript(
-  storyId: string,
+  echoId: string,
   transcript: { lines: readonly { text: string; atS: number; durationS: number }[]; totalS: number },
   field: string,
 ): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const error = (f: string, message: string) =>
-    issues.push({ storyId, severity: "error", field: f, message });
+    issues.push({ echoId, severity: "error", field: f, message });
 
   if (transcript.lines.length === 0) {
     error(field, "has no lines");
@@ -369,7 +411,7 @@ function validateTranscript(
     if (line.text.trim().length === 0) error(`${field}.lines[${i}].text`, "is empty");
     if (line.atS < previousEnd - 0.05) {
       // Line seeking and read-along highlighting both assume monotonic timings; an
-      // overlap silently sends the wrong line highlighted for the rest of the story.
+      // overlap silently sends the wrong line highlighted for the rest of the echo.
       error(`${field}.lines[${i}].atS`, "overlaps the previous line");
     }
     previousEnd = line.atS + line.durationS;
@@ -396,38 +438,45 @@ function rightsAdvice(rights: Rights): string {
   }
 }
 
-/** Validate a whole library, including cross-story checks. */
+/** Validate a whole library, including cross-echo checks. */
 export function validateLibrary(
-  stories: readonly Story[],
+  echoes: readonly Echo[],
   policy: ContentPolicy = MVP_POLICY,
 ): LibraryReport {
   const issues: ValidationIssue[] = [];
 
-  const seen = new Map<string, Story>();
-  for (const story of stories) {
-    if (seen.has(story.id)) {
+  const seen = new Map<string, Echo>();
+  for (const echo of echoes) {
+    if (seen.has(echo.id)) {
       issues.push({
-        storyId: story.id,
+        echoId: echo.id,
         severity: "error",
         field: "id",
         message: "is duplicated in the library",
       });
     }
-    seen.set(story.id, story);
-    issues.push(...validateStory(story, policy));
+    seen.set(echo.id, echo);
+    issues.push(...validateEcho(echo, policy));
   }
 
-  // Related IDs must resolve, or the scheduler's duplicate-subject suppression silently
-  // stops working and a passenger hears the same river twice.
-  for (const story of stories) {
-    for (const relatedId of story.relatedIds ?? []) {
-      if (!seen.has(relatedId)) {
-        issues.push({
-          storyId: story.id,
-          severity: "error",
-          field: "relatedIds",
-          message: `references unknown story "${relatedId}"`,
-        });
+  // Cross-references must resolve. A dangling relatedId silently disables duplicate
+  // suppression and a listener hears the same river twice; a dangling perspectiveId
+  // silently disables the pairing, which is worse — the counterpoint just never plays,
+  // and the account that survives is the one-sided one.
+  for (const echo of echoes) {
+    for (const [field, ids] of [
+      ["relatedIds", echo.relatedIds],
+      ["perspectiveIds", echo.perspectiveIds],
+    ] as const) {
+      for (const id of ids ?? []) {
+        if (!seen.has(id)) {
+          issues.push({
+            echoId: echo.id,
+            severity: "error",
+            field,
+            message: `references unknown echo "${id}"`,
+          });
+        }
       }
     }
   }
