@@ -42,6 +42,16 @@ they cover the overwhelming majority of what the library needs: the National Par
 the Library of Congress, the Smithsonian, USGS, NOAA, NASA, the census, and state and
 federal court records.
 
+## What this does not cover
+
+This policy solves **copyright**. It does not solve **defamation**, and the two are easy to
+merge. Copyright asks whether we may use an expression; defamation asks whether a statement
+is false and harmful about a living person, and no amount of careful sourcing answers that
+— repeating someone else's defamatory statement is itself a publication.
+
+See `docs/protection-policy.md`, which separates the six distinct exposures and states what
+we do about each.
+
 ## Consequences
 - The MVP library can be assembled without a single rights conversation.
 - `FULL_POLICY` already exists in code for the point at which there is a rights desk;
