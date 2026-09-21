@@ -13,4 +13,5 @@ export * from "./permissions/index.js";
 export * from "./session/index.js";
 export * from "./privacy/settings.js";
 export * from "./content/validate.js";
+export * from "./content/parse.js";
 export * from "./pkg/build.js";

@@ -1,0 +1,58 @@
+id: castle-clinton-eight-million
+title: Eight million people walked through this fort
+summary: A harbour fort that became America's first immigration station, decades before Ellis Island.
+place: Castle Clinton, Battery Park, Manhattan
+
+at: { lat: 40.70331, lng: -74.01705 }
+triggerRadiusKm: 0.09
+
+category: history
+format: short
+durationS: 95
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.88
+tags: [immigration, new-york, forts, nineteenth-century]
+
+teaser: Before Ellis Island, there was this.
+
+script: |
+  The round sandstone building ahead of you was built to stop an invasion that never came.
+
+  It went up between 1808 and 1811, out on a small island off the tip of Manhattan, its
+  guns pointed down the harbour at a British fleet everyone expected and nobody saw. The
+  landfill came later. So did almost everything else it has been.
+
+  Because in 1855 the fort became a door. On the first of August that year it opened as the
+  Emigrant Landing Depot — the first immigration station in the United States, run by the
+  State of New York — and over the next thirty-five years something like eight million
+  people walked through it and out into the rest of their lives. Nikola Tesla came through
+  here. So did Harry Houdini, and Emma Goldman, and Joseph Pulitzer.
+
+  In 1890 the federal government took the job over, and two years later moved it to a
+  bigger island further out, where the ferries go now. The fort stayed, and became other
+  things again: a beer garden, a theatre, an aquarium.
+
+  Eight million arrivals, and almost nobody stops here. Most people walk past it to queue
+  for the boat.
+
+detail: |
+  The fort has had at least five lives: coastal battery, public promenade and entertainment
+  hall, immigration depot, city aquarium, and finally a national monument. Jenny Lind gave
+  her first American concert in it in 1850.
+
+editorial: draft
+factCheck: unchecked
+
+sources:
+  - title: Castle Clinton National Monument — History & Culture
+    publisher: National Park Service
+    url: https://www.nps.gov/cacl/learn/historyculture/index.htm
+    retrievedAt: "2026-09-21"
+    rights: public-domain
+  - title: Castle Clinton National Monument
+    publisher: Lower Manhattan Historical Association
+    url: https://www.historiclowermanhattan.org/immigration/castle-clinton-national-monument
+    retrievedAt: "2026-09-21"
+    rights: public-domain

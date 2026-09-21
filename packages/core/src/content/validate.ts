@@ -1,7 +1,7 @@
 /**
  * The gate every echo passes before it can reach a passenger.
  *
- * This runs in CI against the content library (ADR-0005), so a echo that breaks a rule
+ * This runs in CI against the content library (ADR-0005), so an echo that breaks a rule
  * fails the build rather than reaching an aircraft. The rules encode editorial policy, not
  * programmer taste, and each one exists because getting it wrong has a specific cost:
  * a defamation claim, a frightened child, an airline pulling the product mid-contract.
@@ -185,7 +185,7 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
     if (echo.factCheck === "unchecked" || echo.factCheck === "disputed") {
       error(
         "factCheck",
-        `cannot approve a echo whose facts are "${echo.factCheck}"`,
+        `cannot approve an echo whose facts are "${echo.factCheck}"`,
       );
     }
     if (!echo.audioKey) {
@@ -300,7 +300,7 @@ function validateTrueCrime(echo: Echo): ValidationIssue[] {
   }
   // At least one source must be the primary record itself — a court filing, a coroner's
   // report, a government archive — rather than someone else's account of it. Secondary
-  // sources repeat each other's errors, and a chain of retellings is how a echo ends up
+  // sources repeat each other's errors, and a chain of retellings is how an echo ends up
   // asserting a conviction that never happened.
   if (!echo.sources.some((source) => source.rights === "public-domain")) {
     error(
@@ -324,7 +324,7 @@ function validateTrueCrime(echo: Echo): ValidationIssue[] {
     error("trueCrimeReview.contentWarning", "must be read before the echo begins");
   }
 
-  // A echo about someone alive and not convicted is the highest-risk thing we publish.
+  // An echo about someone alive and not convicted is the highest-risk thing we publish.
   // It needs more than the baseline two sources.
   if (
     review.involvesLivingPeople &&
@@ -333,7 +333,7 @@ function validateTrueCrime(echo: Echo): ValidationIssue[] {
   ) {
     error(
       "sources",
-      "a echo naming a living person who was not convicted requires at least three sources",
+      "an echo naming a living person who was not convicted requires at least three sources",
     );
   }
 

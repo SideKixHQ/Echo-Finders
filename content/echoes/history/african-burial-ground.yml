@@ -1,0 +1,58 @@
+id: african-burial-ground
+title: What the excavation found in 1991
+summary: A federal building site uncovered the largest known African burial ground in North America.
+place: African Burial Ground, Duane Street, Manhattan
+
+at: { lat: 40.71455, lng: -74.00437 }
+triggerRadiusKm: 0.07
+
+category: history
+format: short
+durationS: 110
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.95
+tags: [new-york, slavery, archaeology, memorial]
+
+teaser: Twenty-four feet below the pavement.
+
+script: |
+  In 1991 the federal government began digging foundations for an office tower at Broadway
+  and Duane, and about seven metres down the crews found bone.
+
+  What lay beneath the block was a cemetery. From the late sixteen-hundreds into the
+  seventeen-nineties, free and enslaved Africans in this city had buried their dead in a
+  patch of ground outside the settlement's boundary — roughly six and a half acres of it.
+  Later New York built over the site and forgot. Estimates put the number of burials around
+  fifteen thousand.
+
+  Four hundred and nineteen men, women and children were recovered from the part that was
+  excavated. Their descendants and this city's Black community fought to stop the
+  construction, and won. The remains were studied, then reinterred here in 2003.
+
+  It is the earliest and largest African burial ground yet found in the United States, and
+  it existed partly because of a rule: from 1697, Africans were barred from the city's main
+  burial ground. So they made their own, out past the edge of town.
+
+  You are standing at the edge of town.
+
+detail: |
+  The memorial occupies a fraction of the original site; most of the burial ground remains
+  under the surrounding streets and buildings. It was designated a National Monument in
+  2006.
+
+editorial: draft
+factCheck: unchecked
+
+sources:
+  - title: African Burial Ground National Monument
+    publisher: National Park Service
+    url: https://www.nps.gov/afbg/index.htm
+    retrievedAt: "2026-09-21"
+    rights: public-domain
+  - title: New York — African Burial Ground National Monument
+    publisher: National Park Service
+    url: https://www.nps.gov/articles/afamburial.htm
+    retrievedAt: "2026-09-21"
+    rights: public-domain

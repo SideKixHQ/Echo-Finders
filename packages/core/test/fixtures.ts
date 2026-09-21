@@ -148,7 +148,7 @@ export const TRUE_CRIME_FAN: ListenerProfile = {
  * streets rather than a straight line.
  *
  * Deliberately the hardest case for the engine. Everything is close together, the trigger
- * radii are metres rather than kilometres, and a echo that plays ninety seconds late is
+ * radii are metres rather than kilometres, and an echo that plays ninety seconds late is
  * about a building the listener can no longer see.
  */
 export const MANHATTAN_WALK: Route = {

@@ -43,7 +43,7 @@ forty-minute walking tour feels like the app has crashed, because the listener i
 *because of* the audio.
 
 ## Visibility becomes mode-dependent
-A echo's `visibility` class no longer scores on its own. `at-hand` — a plaque, a doorway,
+An echo's `visibility` class no longer scores on its own. `at-hand` — a plaque, a doorway,
 a specific tree — is the most powerful thing this product does on foot and the least useful
 thing it can do from 35,000 feet. It is therefore *suppressed* rather than merely demoted in
 the air, because a dense city holds hundreds of such echoes and a flight crossing Manhattan

@@ -3,7 +3,7 @@
  *
  * A constant-speed model is badly wrong at exactly the moments that matter. Ten minutes
  * after a JFK departure the aircraft has barely cleared Jamaica Bay, but constant speed
- * would place it over Philadelphia and cue a echo about the wrong city. The same mistake
+ * would place it over Philadelphia and cue an echo about the wrong city. The same mistake
  * appears in every mode, just scaled: a walking tour that assumes you were already at
  * strolling pace during the first twenty seconds has you a block further along than you
  * are, which on foot is an entirely different building.

@@ -33,7 +33,7 @@ creditable URL.
 
 True crime carries one extra rule on top: at least one source must be the **primary record**
 (court filing, coroner's report, government archive) rather than someone else's account of
-it. Secondary sources repeat each other's errors, and a chain of retellings is how a echo
+it. Secondary sources repeat each other's errors, and a chain of retellings is how an echo
 ends up asserting a conviction that never happened.
 
 ## Why this is not as limiting as it sounds

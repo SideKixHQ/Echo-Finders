@@ -28,7 +28,7 @@ export interface RouteGeometry {
  * Expand a flight plan's waypoints into a densified great-circle polyline.
  *
  * Densification matters: two waypoints 2,000km apart are joined by a great circle that
- * bows hundreds of kilometres away from the straight line between them, and a echo sitting
+ * bows hundreds of kilometres away from the straight line between them, and an echo sitting
  * under that bow would otherwise be missed entirely.
  */
 /**
@@ -76,7 +76,7 @@ export function buildRouteGeometry(plan: Route, segmentKm?: number): RouteGeomet
   return { points, cumulativeKm, totalKm: running };
 }
 
-/** Where a echo sits relative to the whole route. */
+/** Where an echo sits relative to the whole route. */
 export interface CorridorHit {
   readonly echo: Echo;
   /** Perpendicular distance from the track, km. */
@@ -117,7 +117,7 @@ export function projectOntoRoute(
 
 export interface CorridorOptions {
   /**
-   * Corridor half-width in km. A echo is only considered if it falls inside this AND
+   * Corridor half-width in km. An echo is only considered if it falls inside this AND
    * inside its own trigger radius, so a route can be narrowed without editing content.
    */
   readonly maxCrossTrackKm?: number;

@@ -8,7 +8,7 @@
  *
  * So the scheduler is doing four jobs at once:
  *
- *   1. Play a echo near where it belongs geographically.
+ *   1. Play an echo near where it belongs geographically.
  *   2. Hold the overall talk-to-silence ratio the passenger asked for.
  *   3. Vary the categories, so it feels edited rather than generated.
  *   4. Never cover the same subject twice.
@@ -39,7 +39,7 @@ export interface PlaylistOptions {
   /** Corridor half-width in km. Defaults to the mode preset. */
   readonly maxCrossTrackKm?: number;
   /**
-   * How far, in seconds, a echo may play from the moment the listener is actually nearest
+   * How far, in seconds, an echo may play from the moment the listener is actually nearest
    * it. Defaults to the mode preset, where the spread is enormous: ten minutes on a flight
    * is comfortably inside the trigger radii, while ninety seconds is already generous on
    * foot.
@@ -313,7 +313,7 @@ function nextViableTime(
     if (latestStart < cursor) continue;
 
     const start = Math.max(cursor, ideal);
-    // Same window check as the scheduling loop: a echo that cannot finish before the
+    // Same window check as the scheduling loop: an echo that cannot finish before the
     // descent is not a reason to move the cursor.
     if (start + echo.durationS > windowEndS) continue;
 

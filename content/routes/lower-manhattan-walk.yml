@@ -1,0 +1,27 @@
+# The first walking route. Battery Park to City Hall Park, roughly forty minutes on foot.
+#
+# Chosen because three National Park Service units sit on it, and NPS material is public
+# domain — which satisfies the MVP rights policy (ADR-0006) with no licence conversation.
+id: lower-manhattan-walk
+mode: walking
+name: Lower Manhattan — the Battery to City Hall
+
+origin:
+  name: Battery Park
+  at: { lat: 40.7033, lng: -74.0170 }
+  timeZone: America/New_York
+
+destination:
+  name: City Hall Park
+  at: { lat: 40.7127, lng: -74.0060 }
+  timeZone: America/New_York
+
+durationS: 2400
+
+waypoints:
+  - { name: Battery Park,      at: { lat: 40.7033, lng: -74.0170 } }
+  - { name: Bowling Green,     at: { lat: 40.7046, lng: -74.0132 } }
+  - { name: Wall Street,       at: { lat: 40.7069, lng: -74.0113 } }
+  - { name: Federal Hall,      at: { lat: 40.7073, lng: -74.0100 } }
+  - { name: St Paul's Chapel,  at: { lat: 40.7115, lng: -74.0077 } }
+  - { name: City Hall Park,    at: { lat: 40.7127, lng: -74.0060 } }

@@ -38,7 +38,7 @@ export interface EchoJourneyOptions {
    * data without the listener thinking about it.
    */
   readonly maxBytes?: number;
-  /** Bitrate assumed when a echo has no measured `audioBytes`. Mono Opus speech. */
+  /** Bitrate assumed when an echo has no measured `audioBytes`. Mono Opus speech. */
   readonly bitrateKbps?: number;
   /** Corridor half-width in km. */
   readonly maxCrossTrackKm?: number;

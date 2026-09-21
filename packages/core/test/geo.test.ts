@@ -157,7 +157,7 @@ describe("pointAtDistance", () => {
 });
 
 describe("findEchoesAlongRoute", () => {
-  it("includes a echo under the path and excludes one far inland", () => {
+  it("includes an echo under the path and excludes one far inland", () => {
     const onPath = makeEcho({ id: "on-path", at: { lat: 33.69, lng: -78.89 } });
     const farAway = makeEcho({ id: "far-away", at: { lat: 39.74, lng: -104.99 } }); // Denver
 
@@ -167,7 +167,7 @@ describe("findEchoesAlongRoute", () => {
     expect(hits[0]!.crossTrackKm).toBeLessThan(5);
   });
 
-  it("respects a echo's own trigger radius, not just the corridor width", () => {
+  it("respects an echo's own trigger radius, not just the corridor width", () => {
     // ~55km off the track: inside the default corridor, outside this echo's radius.
     const tight = makeEcho({
       id: "tight",

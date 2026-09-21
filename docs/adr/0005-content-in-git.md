@@ -16,7 +16,7 @@ commits and an immutable history are a stricter editorial gate than any CMS work
 and they cost nothing.
 
 ## Decision
-- A echo is a YAML/Markdown file under `content/echoes/`, validated by schema in CI.
+- An echo is a YAML/Markdown file under `content/echoes/`, validated by schema in CI.
 - `content/echoes/true-crime/**` is CODEOWNERS-gated to the editorial lead. AI may open
   the PR; only a human may merge it.
 - The build compiles content files into Postgres. **Postgres is the system of record for

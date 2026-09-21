@@ -109,7 +109,7 @@ describe("buildEchoJourney", () => {
     expect(pkg.totalBytes).toBeLessThanOrEqual(5 * 1024 * 1024);
   });
 
-  it("never packages a echo with no rendered audio", () => {
+  it("never packages an echo with no rendered audio", () => {
     const silent = library.map((s) => makeEcho({ ...s, audioKey: undefined }));
     expect(buildEchoJourney(JFK_MIA, silent).echoes).toEqual([]);
   });

@@ -39,7 +39,7 @@ describe("RouteProfile", () => {
 
   it("barely moves during taxi", () => {
     // The whole point of modelling phases: ten minutes in, a constant-speed model would
-    // have us 100km down the track and cueing a echo about the wrong city.
+    // have us 100km down the track and cueing an echo about the wrong city.
     expect(profile.distanceAtTime(600)).toBeLessThan(25);
   });
 

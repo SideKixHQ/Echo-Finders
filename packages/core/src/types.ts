@@ -5,10 +5,10 @@
  * landscape; a car, a bicycle and a pair of shoes are others. The engine is written against
  * a *route* rather than a flight, because the underlying question is identical in every
  * case — what is worth saying about the place you are passing, and when — and because the
- * differences that do exist are quantitative (speed, corridor width, how long a echo stays
+ * differences that do exist are quantitative (speed, corridor width, how long an echo stays
  * relevant) rather than structural. Those live in `MODE_PRESETS`.
  *
- * A echo is deliberately split into three independent records: the sourced facts, the
+ * An echo is deliberately split into three independent records: the sourced facts, the
  * script written from them, and the audio rendered from that script. Keeping them apart
  * is what lets us correct a fact without re-recording, or re-voice the whole library
  * without touching a word of editorial. See docs/adr/0005-content-in-git.md.
@@ -22,7 +22,7 @@ export interface LatLng {
 /**
  * How the listener is moving. This is the single most important input to the engine after
  * position itself: it changes speed by two orders of magnitude, corridor width by three,
- * and how long a echo remains relevant by roughly ten.
+ * and how long an echo remains relevant by roughly ten.
  */
 export const TRAVEL_MODES = ["flight", "rail", "driving", "cycling", "walking"] as const;
 
@@ -61,7 +61,7 @@ export const OPT_IN_CATEGORIES: readonly EchoCategory[] = ["true-crime"];
 /**
  * A paid placement.
  *
- * Deliberately *not* a echo category. The design prototype models ads as one more entry
+ * Deliberately *not* an echo category. The design prototype models ads as one more entry
  * in the category list, which is convenient for rendering and wrong for everything else:
  * it means every age gate, interest filter, variety rule and "already heard" check treats
  * a restaurant promotion as editorial content. Ads need their own frequency caps, their
@@ -115,7 +115,7 @@ export const CENTRE_ANCHOR_MAX_S = 240;
 export const LEAD_ANCHOR_S = 60;
 
 /**
- * Where within a echo its "you are here" moment falls, in seconds from the start.
+ * Where within an echo its "you are here" moment falls, in seconds from the start.
  *
  * Short echo: the middle. Long echo: a minute in, just after the scene is set.
  */
@@ -142,7 +142,7 @@ export type Visibility =
   | "landmark-visible"
   /**
    * Immediately present — a building, a plaque, a doorway, a specific tree. Perfect on
-   * foot, glimpsed at best from a car, and meaningless from 35,000 feet. A echo marked
+   * foot, glimpsed at best from a car, and meaningless from 35,000 feet. An echo marked
    * this way is scored almost entirely by whether the listener can actually stop and look.
    */
   | "at-hand"
@@ -260,6 +260,15 @@ export interface Echo {
   readonly certaintyNote?: string;
   readonly trueCrimeReview?: TrueCrimeReview;
 
+  /**
+   * The narration, as written and approved.
+   *
+   * The source of truth for what is said. Audio is rendered from this and the transcript
+   * is timed against that render — keeping all three separate is what lets a fact be
+   * corrected, or the library re-voiced, without touching the other two (ADR-0005).
+   */
+  readonly script?: string;
+
   /** One line of teaser copy, shown under the title before playback. */
   readonly teaser?: string;
   /** A second paragraph revealed once the echo has played, for the reader who wants more. */
@@ -315,7 +324,7 @@ export interface Echo {
   readonly remoteness?: number;
 }
 
-/** A echo split into seekable, highlightable lines. */
+/** An echo split into seekable, highlightable lines. */
 export interface Transcript {
   readonly lines: readonly TranscriptLine[];
   readonly totalS: number;
@@ -447,7 +456,7 @@ export type ListeningDensity = "light" | "balanced" | "immersive";
 // Scheduling output
 // ---------------------------------------------------------------------------
 
-/** A echo placed on the route's timeline. */
+/** An echo placed on the route's timeline. */
 export interface ScheduledEcho {
   readonly echo: Echo;
   /** Seconds after departure when playback begins. */

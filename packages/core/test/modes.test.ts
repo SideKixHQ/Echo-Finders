@@ -133,7 +133,7 @@ describe("a walking tour", () => {
     for (const hit of hits) expect(hit.crossTrackKm).toBeLessThan(0.3);
   });
 
-  it("does not pick up a echo a block away", () => {
+  it("does not pick up an echo a block away", () => {
     // Roughly 400m east of the route — nothing on a flight, a different street on foot.
     const offRoute = makeEcho({
       id: "off-route",
@@ -150,7 +150,7 @@ describe("a walking tour", () => {
   });
 
   it("keeps every echo within a hundred metres of its subject", () => {
-    // The whole point of the tight walking tolerance: play a echo late and the listener
+    // The whole point of the tight walking tolerance: play an echo late and the listener
     // is looking at a different building.
     const playlist = buildPlaylist(MANHATTAN_WALK, library, ADULT);
     const drift = presetFor("walking").maxTimingDriftS;

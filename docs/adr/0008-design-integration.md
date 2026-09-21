@@ -5,7 +5,7 @@
 ## Context
 The phone prototype (see `design/`) is further along than a visual comp: it specifies
 player behaviour, and player behaviour is a content requirement. Three of its features
-cannot be built without changing what a echo *is*, and a fourth is modelled in a way that
+cannot be built without changing what an echo *is*, and a fourth is modelled in a way that
 would cause real problems in production.
 
 ## 1. Long echoes cannot be centred on the place they describe
@@ -18,7 +18,7 @@ it is gone. Worse, the scheduler's drift budget is measured from the anchor — 
 ten-minute echo could never satisfy it, and **long-form content would simply never have
 played**. The tests passed throughout, because no fixture had a long echo in it.
 
-**Decision:** a echo's anchor — its "you are here" moment — is its midpoint up to four
+**Decision:** an echo's anchor — its "you are here" moment — is its midpoint up to four
 minutes and a fixed one-minute lead beyond that (`anchorOffsetS`). Long echoes begin
 shortly before the place arrives and run on into whatever comes next, which is how a
 documentary works anyway. A `deep` format is added at a nominal ten minutes.
@@ -32,7 +32,7 @@ It also serves far more people than the name suggests — younger listeners, any
 in a second language, anyone tired at the end of a long flight, and anyone who just wants
 the short version.
 
-**Decision:** `SimpleVariant` is a first-class part of a echo, validated in CI, and
+**Decision:** `SimpleVariant` is a first-class part of an echo, validated in CI, and
 required to actually be shorter than the full telling.
 
 ## 3. Line seeking needs real timings
@@ -45,7 +45,7 @@ render rather than estimated. The validator enforces monotonic, non-overlapping 
 fit inside the audio — an overlap silently highlights the wrong line for the remainder of
 the echo, which is the sort of bug nobody reports and everybody notices.
 
-## 4. Advertising is not a echo category
+## 4. Advertising is not an echo category
 The prototype models ads as one more entry in the category list, alongside History and
 Kids. That is convenient for rendering and wrong for everything else: it means every age
 gate, interest filter, variety rule and already-heard check treats a restaurant promotion
@@ -67,5 +67,5 @@ which is exactly what ADR-0004 concluded is the only thing that can actually be 
 ## Left open
 - The prototype's eight UI categories versus the engine's longer taxonomy. Someone has to
   own that mapping: it decides what a filter chip actually filters.
-- "Submit a echo" conflicts with ADR-0005, which keeps editorial control closed at launch.
+- "Submit an echo" conflicts with ADR-0005, which keeps editorial control closed at launch.
 - The narrator picker multiplies TTS cost and package size by the number of voices offered.

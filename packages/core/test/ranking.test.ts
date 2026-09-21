@@ -80,7 +80,7 @@ describe("checkEligibility", () => {
     expect(result.reasons).toContain("missing-true-crime-review");
   });
 
-  it("does not repeat a echo the passenger has already heard", () => {
+  it("does not repeat an echo the passenger has already heard", () => {
     const echo = makeEcho({ id: "repeat", at: { lat: 33, lng: -79 } });
     const repeatListener: ListenerProfile = { ...ADULT, heardEchoIds: ["repeat"] };
     expect(checkEligibility(echo, { ...base, profile: repeatListener }).reasons).toContain(
@@ -124,7 +124,7 @@ describe("checkEligibility", () => {
 });
 
 describe("scoreEcho", () => {
-  it("prefers a echo directly below to one at the corridor edge", () => {
+  it("prefers an echo directly below to one at the corridor edge", () => {
     const echo = makeEcho({ id: "s", at: { lat: 33, lng: -79 }, triggerRadiusKm: 60 });
     const near = scoreEcho(hitFor(echo, 2), { profile: ADULT, playAtMs: NOON_UTC, mode: "flight" });
     const far = scoreEcho(hitFor(echo, 58), { profile: ADULT, playAtMs: NOON_UTC, mode: "flight" });
@@ -171,7 +171,7 @@ describe("scoreEcho", () => {
     expect(score.interest).toBe(0.5);
   });
 
-  it("lifts a echo matching a stated interest", () => {
+  it("lifts an echo matching a stated interest", () => {
     const echo = makeEcho({ id: "jazzy", at: { lat: 33, lng: -79 }, tags: ["jazz"] });
     const score = scoreEcho(hitFor(echo), {
       profile: { ...ADULT, interests: { jazz: 1 } },
@@ -311,7 +311,7 @@ describe("buildPlaylist", () => {
   });
 
   it("still waits when there is genuinely nothing to play", () => {
-    // The dead-air penalty must not force a echo to play wildly out of position just to
+    // The dead-air penalty must not force an echo to play wildly out of position just to
     // avoid silence: one echo mid-route should stay near where it belongs.
     const lonely = makeEcho({ id: "lonely", at: { lat: 33.69, lng: -78.89 } });
     const { items } = buildPlaylist(JFK_MIA, [lonely], ADULT);

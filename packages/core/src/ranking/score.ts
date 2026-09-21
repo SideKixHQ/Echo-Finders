@@ -4,7 +4,7 @@
  * Split deliberately into two stages. `checkEligibility` is a set of hard gates that
  * answer "may this echo play at all" — safety, age, consent, editorial state. `scoreEcho`
  * then answers the softer question of how good a choice it is. Nothing in scoring can ever
- * rescue a echo that failed a gate, which is the property we want when the gates are
+ * rescue an echo that failed a gate, which is the property we want when the gates are
  * protecting a seven-year-old from a murder.
  */
 
@@ -44,7 +44,7 @@ export interface EligibilityContext {
 
 /**
  * The hard gates. Returns every failed gate rather than short-circuiting, because the
- * content tooling needs to tell an editor everything wrong with a echo at once.
+ * content tooling needs to tell an editor everything wrong with an echo at once.
  */
 export function checkEligibility(echo: Echo, context: EligibilityContext): EligibilityResult {
   const { profile, playAtMs } = context;
@@ -121,7 +121,7 @@ export interface ScoreContext {
   readonly profile: ListenerProfile;
   readonly playAtMs: number;
   /**
-   * How the listener is moving. This changes the *meaning* of a echo's visibility class,
+   * How the listener is moving. This changes the *meaning* of an echo's visibility class,
    * not merely its weight: a blue plaque is the best possible echo on foot and a
    * pointless one from 35,000 feet.
    */

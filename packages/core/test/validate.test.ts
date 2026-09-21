@@ -92,7 +92,7 @@ describe("validateEcho — basics", () => {
     expect(errorsOn(echo, "sources[0].retrievedAt")).toHaveLength(1);
   });
 
-  it("will not approve a echo whose facts were never checked", () => {
+  it("will not approve an echo whose facts were never checked", () => {
     const echo = makeEcho({ id: "s", at: { lat: 33, lng: -79 }, factCheck: "unchecked" });
     expect(errorsOn(echo, "factCheck")).toHaveLength(1);
   });
@@ -297,7 +297,7 @@ describe("rights policy", () => {
 
 describe("true crime — primary records", () => {
   it("demands a public record, not just two retellings", () => {
-    // Secondary sources repeat each other's errors; a chain of retellings is how a echo
+    // Secondary sources repeat each other's errors; a chain of retellings is how an echo
     // ends up asserting a conviction that never happened.
     const retellings = trueCrime({
       sources: [
