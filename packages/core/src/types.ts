@@ -137,6 +137,8 @@ export interface Story {
 
   /** Audio asset key in object storage. Absent while the story is still text. */
   readonly audioKey?: string;
+  /** Size of the rendered audio in bytes. Drives the route package budget. */
+  readonly audioBytes?: number;
   readonly transcript?: string;
   readonly imageKey?: string;
 

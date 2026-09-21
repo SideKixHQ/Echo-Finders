@@ -7,7 +7,7 @@
  * a defamation claim, a frightened child, an airline pulling the product mid-contract.
  */
 
-import type { Story } from "../types.js";
+import type { Source, Story } from "../types.js";
 import { NOMINAL_DURATION_S, STORY_CATEGORIES } from "../types.js";
 
 export type Severity = "error" | "warning";
@@ -25,7 +25,58 @@ export const TRUE_CRIME_MIN_AGE = 16;
 /** How far a rendered audio file may stray from its format's nominal length. */
 const DURATION_TOLERANCE = 0.6;
 
-export function validateStory(story: Story): ValidationIssue[] {
+// ---------------------------------------------------------------------------
+// Rights policy
+// ---------------------------------------------------------------------------
+
+type Rights = Source["rights"];
+
+/**
+ * Which source licences the library will accept.
+ *
+ * Worth being precise about what this is protecting against, because the intuition is
+ * usually wrong: **facts are not copyrightable**. Reading that a lighthouse was built in
+ * 1847 and writing our own sentence about it infringes nothing, whatever the source. What
+ * copyright protects is the *expression* — the phrasing, structure and selection.
+ *
+ * So this policy is not really a legal necessity. It is a provenance standard: for the
+ * MVP every claim should trace to a source anyone can open and check, with no licence
+ * conversation attached. That makes the library trivially defensible in an airline's
+ * procurement review, which is a commercial advantage rather than a legal one.
+ */
+export interface ContentPolicy {
+  readonly allowedRights: readonly Rights[];
+}
+
+/**
+ * The MVP standard: public domain and CC-BY only.
+ *
+ * Government works carry most of the weight here and are richer than they sound — the
+ * National Park Service, the Library of Congress, USGS, NOAA, the Smithsonian and court
+ * records are all public domain, and between them they cover the overwhelming majority of
+ * what the library needs.
+ *
+ * Two deliberate exclusions:
+ *
+ * - **CC-BY-SA** is excluded despite being "free". Share-alike obligations can propagate
+ *   into derivative works, and a viral licence term sitting inside a product licensed to
+ *   an airline is precisely the surprise we do not want surfacing in their legal review.
+ * - **`licensed`** is excluded because a per-source negotiation is the thing the MVP is
+ *   trying to avoid entirely.
+ */
+export const MVP_POLICY: ContentPolicy = {
+  allowedRights: ["public-domain", "cc-by"],
+};
+
+/**
+ * Once there is a rights desk, licensed material and facts drawn from paywalled reporting
+ * both become available. Most true-crime corroboration will eventually live here.
+ */
+export const FULL_POLICY: ContentPolicy = {
+  allowedRights: ["public-domain", "cc-by", "cc-by-sa", "licensed", "fair-use-facts"],
+};
+
+export function validateStory(story: Story, policy: ContentPolicy = MVP_POLICY): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const error = (field: string, message: string) =>
     issues.push({ storyId: story.id, severity: "error", field, message });
@@ -89,6 +140,22 @@ export function validateStory(story: Story): ValidationIssue[] {
     if (source.publisher.trim().length === 0) {
       error(`sources[${i}].publisher`, "is required to judge credibility");
     }
+    if (!policy.allowedRights.includes(source.rights)) {
+      error(
+        `sources[${i}].rights`,
+        `"${source.rights}" is outside the current policy (${policy.allowedRights.join(", ")}). ` +
+          rightsAdvice(source.rights),
+      );
+    }
+    // CC-BY is free to use but not free of obligation: the credit has to appear somewhere
+    // the passenger can reach, which for an audio product means the transcript or an
+    // on-screen credits panel, not a line nobody renders.
+    if (source.rights === "cc-by" && !source.url) {
+      warn(
+        `sources[${i}].url`,
+        "CC-BY requires attribution, so the source needs a URL we can credit",
+      );
+    }
   }
 
   // --- Publication readiness ---------------------------------------------------------
@@ -144,6 +211,16 @@ function validateTrueCrime(story: Story): ValidationIssue[] {
   if (story.sources.length < 2) {
     error("sources", "true crime requires at least two independent credible sources");
   }
+  // At least one source must be the primary record itself — a court filing, a coroner's
+  // report, a government archive — rather than someone else's account of it. Secondary
+  // sources repeat each other's errors, and a chain of retellings is how a story ends up
+  // asserting a conviction that never happened.
+  if (!story.sources.some((source) => source.rights === "public-domain")) {
+    error(
+      "sources",
+      "true crime needs at least one public record (court, coroner, government archive) as a primary source",
+    );
+  }
   if (story.factCheck !== "corroborated") {
     error("factCheck", 'true crime must be "corroborated" before it can be published');
   }
@@ -183,8 +260,25 @@ export interface LibraryReport {
   readonly ok: boolean;
 }
 
+/** Advice attached to a rejected licence, so an editor knows what to do next. */
+function rightsAdvice(rights: Rights): string {
+  switch (rights) {
+    case "cc-by-sa":
+      return "Share-alike can propagate into derivative works; find a public-domain equivalent instead.";
+    case "licensed":
+      return "Licensed material needs a rights agreement, which the MVP is deliberately avoiding.";
+    case "fair-use-facts":
+      return "Facts themselves are fine to use, but cite the underlying public record rather than the article that reported it.";
+    default:
+      return "Prefer a government or public-domain source.";
+  }
+}
+
 /** Validate a whole library, including cross-story checks. */
-export function validateLibrary(stories: readonly Story[]): LibraryReport {
+export function validateLibrary(
+  stories: readonly Story[],
+  policy: ContentPolicy = MVP_POLICY,
+): LibraryReport {
   const issues: ValidationIssue[] = [];
 
   const seen = new Map<string, Story>();
@@ -198,7 +292,7 @@ export function validateLibrary(stories: readonly Story[]): LibraryReport {
       });
     }
     seen.set(story.id, story);
-    issues.push(...validateStory(story));
+    issues.push(...validateStory(story, policy));
   }
 
   // Related IDs must resolve, or the scheduler's duplicate-subject suppression silently

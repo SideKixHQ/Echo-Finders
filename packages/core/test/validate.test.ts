@@ -1,5 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { TRUE_CRIME_MIN_AGE, validateLibrary, validateStory } from "../src/content/validate.js";
+import {
+  FULL_POLICY,
+  MVP_POLICY,
+  TRUE_CRIME_MIN_AGE,
+  validateLibrary,
+  validateStory,
+} from "../src/content/validate.js";
 import type { Source, Story, TrueCrimeReview } from "../src/types.js";
 import { makeStory } from "./fixtures.js";
 
@@ -227,5 +233,80 @@ describe("validateLibrary", () => {
     expect(report.errorCount).toBe(0);
     expect(report.warningCount).toBeGreaterThan(0);
     expect(report.ok).toBe(true);
+  });
+});
+
+describe("rights policy", () => {
+  const withRights = (rights: Source["rights"], url?: string): Story =>
+    makeStory({
+      id: "rights-test",
+      at: { lat: 33, lng: -79 },
+      sources: [{ ...source(1), rights, ...(url ? { url } : {}) }],
+    });
+
+  it("accepts public-domain sources, which carry most of the library", () => {
+    expect(allErrors(withRights("public-domain"))).toEqual([]);
+  });
+
+  it("accepts CC-BY", () => {
+    expect(allErrors(withRights("cc-by", "https://example.org/a"))).toEqual([]);
+  });
+
+  it("wants a creditable URL on a CC-BY source", () => {
+    // CC-BY is free to use but not free of obligation; the credit has to land somewhere.
+    const issues = validateStory(withRights("cc-by"));
+    expect(issues.some((i) => i.field === "sources[0].url" && i.severity === "warning")).toBe(true);
+  });
+
+  it("rejects CC-BY-SA, because share-alike can propagate into a licensed product", () => {
+    const issues = errorsOn(withRights("cc-by-sa"), "sources[0].rights");
+    expect(issues).toHaveLength(1);
+    expect(issues[0]!.message).toMatch(/[Ss]hare-alike/);
+  });
+
+  it("rejects licensed material under the MVP policy", () => {
+    expect(errorsOn(withRights("licensed"), "sources[0].rights")).toHaveLength(1);
+  });
+
+  it("points an editor at the underlying record rather than the article reporting it", () => {
+    const issues = errorsOn(withRights("fair-use-facts"), "sources[0].rights");
+    expect(issues[0]!.message).toMatch(/public record/);
+  });
+
+  it("allows everything again once a rights desk exists", () => {
+    for (const rights of ["cc-by-sa", "licensed", "fair-use-facts"] as const) {
+      const report = validateLibrary([withRights(rights)], FULL_POLICY);
+      expect(report.errorCount).toBe(0);
+    }
+  });
+
+  it("defaults to the MVP policy when none is given", () => {
+    const explicit = validateLibrary([withRights("licensed")], MVP_POLICY);
+    const implicit = validateLibrary([withRights("licensed")]);
+    expect(implicit.errorCount).toBe(explicit.errorCount);
+    expect(implicit.errorCount).toBeGreaterThan(0);
+  });
+});
+
+describe("true crime — primary records", () => {
+  it("demands a public record, not just two retellings", () => {
+    // Secondary sources repeat each other's errors; a chain of retellings is how a story
+    // ends up asserting a conviction that never happened.
+    const retellings = trueCrime({
+      sources: [
+        { ...source(1), rights: "cc-by", url: "https://example.org/1" },
+        { ...source(2), rights: "cc-by", url: "https://example.org/2" },
+      ],
+    });
+    const issues = errorsOn(retellings, "sources");
+    expect(issues).toHaveLength(1);
+    expect(issues[0]!.message).toMatch(/public record/);
+  });
+
+  it("is satisfied by one court or archive source alongside a secondary one", () => {
+    const grounded = trueCrime({
+      sources: [source(1), { ...source(2), rights: "cc-by", url: "https://example.org/2" }],
+    });
+    expect(allErrors(grounded)).toEqual([]);
   });
 });

@@ -12,13 +12,15 @@ several of these have free tiers that expire on signup date, not on first use.
 ## Phase 1 — content library (cost: ~$50–300/mo)
 | Service | Why | Notes |
 |---|---|---|
-| **ElevenLabs** | Narration. Realistic TTS at library scale. | Creator/Pro tier. **Confirm the commercial licence covers redistribution inside a licensed airline product** — this is a contract question, not a checkbox. |
+| **ElevenLabs** | Narration. Realistic TTS at library scale. | **Account already held.** One open question: whether the plan's commercial terms cover *redistributing* generated audio inside a product licensed to a third party (the airline). That is a step beyond ordinary commercial use and worth confirming before the library is voiced at scale. |
 | **Anthropic API** | Story drafting from source material in the discovery pipeline | pay-as-you-go |
 | **Google Places API** | Attraction enrichment: place IDs, photos, ratings (ADR-0004) | $200/mo free credit covers build-time use easily |
 | Cloudflare R2 | Audio, images, transcripts, route packages | zero egress fees — this matters when airlines pull packages per aircraft |
 
 Free, no account needed, but budget engineering time: NPS API, Library of Congress,
-Smithsonian Open Access, Wikidata/SPARQL, USGS, NOAA.
+Smithsonian Open Access, Wikidata/SPARQL, USGS, NOAA, federal and state court records.
+Under ADR-0006 these public-domain sources carry the entire MVP library, which is why
+there is no rights budget in this phase.
 
 ## Phase 2 — delivery (cost: ~$25–100/mo)
 | Service | Why | Notes |
@@ -41,9 +43,11 @@ Smithsonian Open Access, Wikidata/SPARQL, USGS, NOAA.
 | PostHog | Funnel analytics, self-hostable so airline data never leaves our control |
 
 ## Two contract questions to start now, because they have long lead times
-1. **Voice licensing.** Whether the TTS vendor's licence permits a white-labelled airline
-   product. If not, we need a licensed voice actor or an enterprise TTS agreement, and
-   that negotiation is measured in months.
+1. **Voice licensing.** Whether the ElevenLabs plan permits redistribution inside a
+   white-labelled airline product. If it does not, the fallback is a licensed voice actor
+   or an enterprise TTS agreement, and that negotiation is measured in months — so it is
+   worth confirming long before the library is fully voiced.
 2. **True-crime liability.** Defamation exposure on stories involving living people, and
    whether the airline's contract indemnifies us or we indemnify them. Get this in front
-   of a lawyer before the first true-crime story ships, not after.
+   of a lawyer before the first true-crime story ships, not after. ADR-0006's
+   primary-record rule reduces but does not remove this exposure.

@@ -8,7 +8,9 @@ frequently absent over oceans and at altitude changes. Streaming audio per passe
 demand is not viable, and calling a ranking API mid-flight is not viable either.
 
 ## Decision
-All selection work happens **before pushback**. A route package is a single signed bundle:
+All selection work happens **before pushback**. Pre-flight download is the primary
+delivery path, not a fallback: a passenger who lands on the app mid-flight with nothing
+cached should be the exception we design around, not the case we design for. A route package is a single signed bundle:
 
 - the flight plan and corridor geometry,
 - the ranked candidate story set (roughly 3× what a flight can play, so filter changes
@@ -26,3 +28,10 @@ story from a set it already holds.
   package, so the package carries every variant the passenger might switch to.
 - Onboard servers can host packages for the routes that aircraft actually flies, which is
   how this scales to a fleet without any passenger-facing bandwidth at all.
+- The package ships *candidates plus geometry*, not a fixed running order. Because the
+  engine is pure TypeScript with no I/O it runs unchanged in the passenger's browser, so
+  the client re-runs `buildPlaylist` locally whenever a filter changes. Switching on true
+  crime over Virginia re-sequences the rest of the flight instantly, offline.
+- Budget pressure must degrade every audience together. The builder interleaves its
+  coverage playlists round-robin for exactly this reason; taking them in declaration order
+  silently starved children's content, which is the failure mode that matters most.
