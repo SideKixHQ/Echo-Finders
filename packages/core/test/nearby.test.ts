@@ -4,6 +4,7 @@ import { validateEcho, validateLibrary } from "../src/content/validate.js";
 import { buildPlaylist } from "../src/ranking/playlist.js";
 import type { Echo } from "../src/types.js";
 import { ADULT, CHILD, JFK_MIA, MANHATTAN_WALK, makeEcho, echoesAlong } from "./fixtures.js";
+import type { EchoDraft } from "./fixtures.js";
 
 const WALL_STREET = { lat: 40.7069, lng: -74.0113 };
 const NOON = Date.parse("2026-06-15T17:00:00Z");
@@ -112,7 +113,7 @@ describe("echoUnderfoot", () => {
 });
 
 describe("certainty", () => {
-  const legend = (overrides: Partial<Echo> = {}) =>
+  const legend = (overrides: Partial<EchoDraft> = {}) =>
     makeEcho({
       id: "atchison-house",
       at: { lat: 39.563, lng: -95.121 },

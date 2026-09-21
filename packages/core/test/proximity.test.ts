@@ -11,6 +11,7 @@ import { validateEcho } from "../src/content/validate.js";
 import { presetFor } from "../src/modes.js";
 import type { Echo, LatLng, Position } from "../src/types.js";
 import { ADULT, makeEcho } from "./fixtures.js";
+import type { EchoDraft } from "./fixtures.js";
 
 const HERE: LatLng = { lat: 40.7069, lng: -74.0113 };
 const START = Date.parse("2026-06-15T17:00:00Z");
@@ -25,7 +26,7 @@ const east = (from: LatLng, metres: number): LatLng => ({
   lng: from.lng + metres / (111_195 * Math.cos((from.lat * Math.PI) / 180)),
 });
 
-const echo = (overrides: Partial<Echo> = {}) =>
+const echo = (overrides: Partial<EchoDraft> = {}) =>
   makeEcho({ id: "target", at: HERE, triggerRadiusKm: RADIUS_KM, ...overrides });
 
 describe("proximityCue", () => {

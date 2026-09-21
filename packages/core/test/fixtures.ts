@@ -205,7 +205,7 @@ export const PARKWAY_DRIVE: Route = {
 export function echoesAlong(
   route: Route,
   count: number,
-  overrides: Partial<Echo> = {},
+  overrides: Partial<EchoDraft> = {},
 ): Echo[] {
   const geometry = buildRouteGeometry(route);
   const radius = overrides.triggerRadiusKm ?? presetFor(route.mode).typicalTriggerRadiusKm;

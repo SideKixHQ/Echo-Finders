@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { CaptureTracker, rarityOf, rarityReasons } from "../src/capture/index.js";
 import type { Echo, LatLng, Position } from "../src/types.js";
 import { ADULT, CHILD, makeEcho } from "./fixtures.js";
+import type { EchoDraft } from "./fixtures.js";
 
 const WALL_STREET: LatLng = { lat: 40.7069, lng: -74.0113 };
 const START = Date.parse("2026-06-15T17:00:00Z");
@@ -19,7 +20,7 @@ const fix = (at: LatLng, tMs: number, accuracyM = 5): Position => ({
   source: "device-gnss",
 });
 
-const plaque = (overrides: Partial<Echo> = {}) =>
+const plaque = (overrides: Partial<EchoDraft> = {}) =>
   makeEcho({
     id: "federal-hall",
     at: WALL_STREET,

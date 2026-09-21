@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { checkEligibility, scoreEcho } from "../src/ranking/score.js";
+import type { ScoreContext } from "../src/ranking/score.js";
 import { buildPlaylist } from "../src/ranking/playlist.js";
 import type { CorridorHit } from "../src/geo/corridor.js";
 import type { ListenerProfile, Echo, TrueCrimeReview } from "../src/types.js";
@@ -23,7 +24,7 @@ const hitFor = (echo: Echo, crossTrackKm = 5): CorridorHit => ({
 });
 
 describe("checkEligibility", () => {
-  const base = { profile: ADULT, playAtMs: NOON_UTC };
+  const base = { profile: ADULT, playAtMs: NOON_UTC, mode: "flight" };
 
   it("passes an approved, corroborated, in-category echo", () => {
     const echo = makeEcho({ id: "ok", at: { lat: 33, lng: -79 } });
@@ -125,8 +126,8 @@ describe("checkEligibility", () => {
 describe("scoreEcho", () => {
   it("prefers a echo directly below to one at the corridor edge", () => {
     const echo = makeEcho({ id: "s", at: { lat: 33, lng: -79 }, triggerRadiusKm: 60 });
-    const near = scoreEcho(hitFor(echo, 2), { profile: ADULT, playAtMs: NOON_UTC });
-    const far = scoreEcho(hitFor(echo, 58), { profile: ADULT, playAtMs: NOON_UTC });
+    const near = scoreEcho(hitFor(echo, 2), { profile: ADULT, playAtMs: NOON_UTC, mode: "flight" });
+    const far = scoreEcho(hitFor(echo, 58), { profile: ADULT, playAtMs: NOON_UTC, mode: "flight" });
     expect(near.total).toBeGreaterThan(far.total);
     expect(near.proximity).toBeGreaterThan(0.95);
   });
@@ -134,7 +135,7 @@ describe("scoreEcho", () => {
   it("rewards editorial quality above everything else", () => {
     const good = makeEcho({ id: "good", at: { lat: 33, lng: -79 }, quality: 1 });
     const weak = makeEcho({ id: "weak", at: { lat: 33, lng: -79 }, quality: 0.2 });
-    const ctx = { profile: ADULT, playAtMs: NOON_UTC };
+    const ctx: ScoreContext = { profile: ADULT, playAtMs: NOON_UTC, mode: "flight" };
     expect(scoreEcho(hitFor(good), ctx).total - scoreEcho(hitFor(weak), ctx).total).toBeGreaterThan(
       0.25,
     );
@@ -146,8 +147,16 @@ describe("scoreEcho", () => {
       at: { lat: 36.1, lng: -112.1 },
       visibility: "daylight-dependent",
     });
-    const day = scoreEcho(hitFor(echo), { profile: ADULT, playAtMs: Date.parse("2026-06-15T19:00:00Z") });
-    const night = scoreEcho(hitFor(echo), { profile: ADULT, playAtMs: Date.parse("2026-06-15T08:00:00Z") });
+    const day = scoreEcho(hitFor(echo), {
+      profile: ADULT,
+      playAtMs: Date.parse("2026-06-15T19:00:00Z"),
+      mode: "flight",
+    });
+    const night = scoreEcho(hitFor(echo), {
+      profile: ADULT,
+      playAtMs: Date.parse("2026-06-15T08:00:00Z"),
+      mode: "flight",
+    });
     expect(day.visibility).toBeGreaterThan(0.8);
     expect(night.visibility).toBeLessThan(0.2);
   });
@@ -157,6 +166,7 @@ describe("scoreEcho", () => {
     const score = scoreEcho(hitFor(echo), {
       profile: { ...ADULT, interests: { jazz: 1 } },
       playAtMs: NOON_UTC,
+      mode: "flight",
     });
     expect(score.interest).toBe(0.5);
   });
@@ -166,13 +176,18 @@ describe("scoreEcho", () => {
     const score = scoreEcho(hitFor(echo), {
       profile: { ...ADULT, interests: { jazz: 1 } },
       playAtMs: NOON_UTC,
+      mode: "flight",
     });
     expect(score.interest).toBe(1);
   });
 
   it("stays within 0 and 1", () => {
     const echo = makeEcho({ id: "s", at: { lat: 33, lng: -79 }, quality: 1, visibility: "landmark-visible" });
-    const score = scoreEcho(hitFor(echo, 0), { profile: ADULT, playAtMs: NOON_UTC });
+    const score = scoreEcho(hitFor(echo, 0), {
+      profile: ADULT,
+      playAtMs: NOON_UTC,
+      mode: "flight",
+    });
     expect(score.total).toBeLessThanOrEqual(1);
     expect(score.total).toBeGreaterThanOrEqual(0);
   });

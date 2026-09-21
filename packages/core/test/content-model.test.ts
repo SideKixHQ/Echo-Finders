@@ -4,6 +4,7 @@ import { anchorOffsetS, CENTRE_ANCHOR_MAX_S, NOMINAL_DURATION_S } from "../src/t
 import { buildPlaylist } from "../src/ranking/playlist.js";
 import type { Sponsorship, Echo, Transcript } from "../src/types.js";
 import { ADULT, CHILD, JFK_MIA, makeEcho, echoesAlong } from "./fixtures.js";
+import type { EchoDraft } from "./fixtures.js";
 
 const errorsOn = (echo: Echo, field: string) =>
   validateEcho(echo).filter((i) => i.severity === "error" && i.field === field);
@@ -134,7 +135,7 @@ describe("transcripts", () => {
 });
 
 describe("sponsored placements", () => {
-  const ad = (overrides: Partial<Echo> = {}) =>
+  const ad = (overrides: Partial<EchoDraft> = {}) =>
     makeEcho({
       id: "ad-copper-onion",
       at: { lat: 40.762, lng: -111.891 },

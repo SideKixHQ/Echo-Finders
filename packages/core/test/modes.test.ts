@@ -84,7 +84,7 @@ describe("visibility interacts with travel mode", () => {
     echo: plaque,
     crossTrackKm: 0.02,
     alongTrackKm: 0.5,
-    nearestPoint: plaque.at,
+    nearestPoint: plaque.point.at,
   };
 
   const scoreIn = (mode: TravelMode) =>
@@ -116,7 +116,7 @@ describe("visibility interacts with travel mode", () => {
       echo: mountain,
       crossTrackKm: 1,
       alongTrackKm: 10,
-      nearestPoint: mountain.at,
+      nearestPoint: mountain.point.at,
     };
     const fromAir = scoreEcho(mountainHit, { profile: ADULT, playAtMs: NOON, mode: "flight" });
     const onFoot = scoreEcho(mountainHit, { profile: ADULT, playAtMs: NOON, mode: "walking" });
