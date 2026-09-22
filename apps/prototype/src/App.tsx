@@ -13,6 +13,8 @@ import { NowPlaying } from "./NowPlaying";
 import { Plan } from "./Plan";
 import { RouteRibbon } from "./RouteRibbon";
 import { CategoryChips } from "./CategoryChips";
+import { Arrival } from "./Arrival";
+import { Preflight } from "./Preflight";
 import type { EchoCategory } from "@echofinders/core";
 import { findEchoesAlongRoute, presetFor, upcomingOnRoute, type Route } from "@echofinders/core";
 
@@ -46,6 +48,9 @@ export function App() {
   const [autoPlay, setAutoPlay] = useState(false);
   const [chosen, setChosen] = useState<ReadonlySet<string>>(new Set());
   const [cats, setCats] = useState<ReadonlySet<EchoCategory> | null>(null);
+  // The journey has not been chosen yet. The design opens here, and so does this: a package
+  // that downloads at the gate is the difference between working and not (ADR-0003).
+  const [started, setStarted] = useState(false);
   const [simple, setSimple] = useState(false);
   const [rate, setRate] = useState(1);
 
@@ -69,7 +74,7 @@ export function App() {
     // Undefined rather than an empty set when nothing has been picked: no choice made means
     // no restriction, while an empty choice means "I chose nothing" and is honoured.
     chosen: chosen.size > 0 ? chosen : undefined,
-    paused,
+    paused: paused || !started,
   });
 
   // Whether the traveller can steer. Guidance answers "which way should I go", so it is
@@ -151,6 +156,7 @@ export function App() {
   }, [nowPlaying, simple]);
 
   const walkedPercent = Math.round((walk.walkedMetres / walk.totalMetres) * 100);
+  const arrived = walkedPercent >= 99;
   const remainingS = route.durationS * (1 - Math.min(1, walk.walkedMetres / walk.totalMetres));
 
   // How much of the library this route actually passes. Worth showing: it is the clearest
@@ -175,6 +181,11 @@ export function App() {
     [byRoute],
   );
   const onRoute = byRoute[route.id] ?? [];
+  const savedEchoes = useMemo(() => onRoute.filter((e) => chosen.has(e.id)), [onRoute, chosen]);
+  const suggestion = useMemo(
+    () => ROUTES.find((r) => r.id !== route.id && (corridorCounts[r.id] ?? 0) > 1) ?? null,
+    [route.id, corridorCounts],
+  );
 
   // Only categories this route actually passes get a chip. Offering "Ghosts" on a flight
   // with no ghost stories on it is a promise the library cannot keep.
@@ -345,6 +356,33 @@ export function App() {
             />
           )}
 
+          {arrived && tab === "map" && (
+            <Arrival
+              route={route}
+              heard={kept}
+              saved={savedEchoes}
+              suggestion={suggestion}
+              suggestionCount={suggestion ? (corridorCounts[suggestion.id] ?? 0) : 0}
+              onSuggestion={(next) => {
+                onSelectRoute(next);
+                walk.seekTo(0);
+              }}
+              onAgain={() => walk.seekTo(0)}
+            />
+          )}
+
+          {!started && (
+            <Preflight
+              routes={ROUTES}
+              counts={corridorCounts}
+              current={route}
+              onStart={(next) => {
+                if (next.id !== route.id) onSelectRoute(next);
+                setStarted(true);
+              }}
+            />
+          )}
+
           <Nav
             tab={tab}
             onChange={setTab}
@@ -439,7 +477,14 @@ export function App() {
         </p>
         <div className="controls">
           <button onClick={togglePause}>{paused ? "Resume" : "Pause"}</button>
-          <button onClick={() => walk.seekTo(0)}>Back to start</button>
+          <button
+            onClick={() => {
+              walk.seekTo(0);
+              setStarted(false);
+            }}
+          >
+            Back to start
+          </button>
           <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
             {theme === "dark" ? "Light mode" : "Dark mode"}
           </button>
