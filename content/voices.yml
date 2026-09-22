@@ -59,6 +59,22 @@ voices:
       accessibility — some listeners genuinely follow one voice more easily. A cast serves
       the listening experience. They can coexist, but only the picker costs double.
 
+  - id: MkTSSXNgnBULS6ek4pon
+    name: TODO — the voice's name in ElevenLabs
+    provider: elevenlabs
+    locale: TODO — e.g. en-GB or en-US
+    origin: TODO
+    redistributionCleared: false
+    notes: >-
+      Kids narrator. The one extra voice that earns itself: children's content read by an
+      adult documentary narrator sounds wrong in a way no direction fixes.
+
+      Cast it to echoes whose category is `kids`, and to nothing else. In particular **not**
+      to the simple telling of an adult echo — `simple` means plainer and shorter, which
+      serves tired listeners, second-language listeners and anyone who just wants the short
+      version. Reading those in a children's voice would be patronising. A simple variant
+      stays in whatever voice its echo is cast to.
+
 # ── How many voices ───────────────────────────────────────────────────────────
 #
 # Casting makes extra voices free. Each echo is rendered once, so ten narrators cost exactly

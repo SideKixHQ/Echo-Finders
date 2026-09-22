@@ -34,9 +34,21 @@ if (!key) {
 }
 
 const voices = parseYaml(await readFile("content/voices.yml", "utf8"));
-const voiceId = voiceArg ?? voices.defaultVoiceId;
-
 const echo = parseYaml(await readFile(echoPath, "utf8"));
+
+// An explicit argument wins, then the echo's own casting, then the default narrator.
+// Honouring the cast matters: an echo written for the kids voice read by the documentary
+// narrator is the wrong product, and nothing downstream would flag it.
+const voiceId = voiceArg ?? echo.voice ?? voices.defaultVoiceId;
+
+if (!voiceArg && echo.voice) {
+  console.log(`Using the voice this echo is cast to: ${echo.voice}`);
+} else if (!voiceArg && echo.category === "kids") {
+  console.warn(
+    `  ${echo.id} is a kids echo with no \`voice:\` set — it will be read by the default ` +
+      `narrator. Cast it to the kids voice first.`,
+  );
+}
 if (!echo.script) {
   console.error(`${echoPath} has no script to read.`);
   process.exit(1);
