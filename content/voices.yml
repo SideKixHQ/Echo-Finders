@@ -8,6 +8,28 @@
 # re-rendering every echo AND re-timing every transcript — it roughly doubles both TTS cost
 # and offline package size. Worth doing; not worth doing by accident.
 
+# ── Finding out what a voice is ───────────────────────────────────────────────
+#
+# The ElevenLabs interface does not put "where did this voice come from" anywhere obvious,
+# and it is the one fact about a narrator with legal weight. `node scripts/voice-info.mjs`
+# asks the API and prints name, accent and origin for every voice listed below.
+#
+# You can also answer it from memory, because origin is decided by how you got the voice:
+#
+#   Picked from ElevenLabs' own built-in voices        → stock
+#   Typed a description and generated one (Voice Design) → designed
+#   Browsed the Voice Library and added someone else's  → stock, but see below
+#   Uploaded recordings of a person                     → cloned
+#
+# Uploading audio is the only route to a clone, and it is not something that happens by
+# accident. If you never uploaded a recording, nothing here is cloned, and there is no
+# right of publicity to clear.
+#
+# The Voice Library is the one to look at twice. Those voices were made by other users, and
+# some of them are clones of real people. ElevenLabs requires contributors to hold consent
+# — but that consent is theirs, not ours, and we are the ones shipping the result inside a
+# product licensed to a third party.
+
 defaultVoiceId: plP9aw1rizYgjFfuvLQ7
 
 voices:
@@ -17,9 +39,10 @@ voices:
     locale: TODO — e.g. en-GB or en-US
     # stock    : an ElevenLabs library voice
     # designed : generated from a description, resembling no particular person
-    # cloned   : replicated from a real person's recordings
+    # cloned   : replicated from a real person's recordings — engages that person's right
+    #            of publicity, which several US states treat as surviving their death
     # recorded : a human read it
-    origin: TODO
+    origin: TODO — run scripts/voice-info.mjs, or see the note at the top
     # Does the ElevenLabs plan permit redistribution inside a product licensed to a third
     # party — an airline — rather than only published by us? See docs/01-services.md.
     redistributionCleared: false
@@ -33,7 +56,7 @@ voices:
     name: TODO — the voice's name in ElevenLabs
     provider: elevenlabs
     locale: TODO — e.g. en-GB or en-US
-    origin: TODO
+    origin: TODO — run scripts/voice-info.mjs
     redistributionCleared: false
     notes: >-
       Male narrator. Listened to on 22 September 2026 and judged good.
@@ -63,7 +86,7 @@ voices:
     name: TODO — the voice's name in ElevenLabs
     provider: elevenlabs
     locale: TODO — e.g. en-GB or en-US
-    origin: TODO
+    origin: TODO — run scripts/voice-info.mjs
     redistributionCleared: false
     notes: >-
       Kids narrator. The one extra voice that earns itself: children's content read by an
