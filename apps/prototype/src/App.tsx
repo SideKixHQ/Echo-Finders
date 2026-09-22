@@ -9,7 +9,7 @@ import { Sheet } from "./Sheet";
 import { Collection } from "./Collection";
 import { Privacy } from "./Privacy";
 import { Nav, type Tab } from "./Nav";
-import { findEchoesAlongRoute, type Route } from "@echofinders/core";
+import { findEchoesAlongRoute, presetFor, type Route } from "@echofinders/core";
 
 /** The walk is the richest route, so it is what the prototype opens on. */
 const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROUTES[0]!;
@@ -24,7 +24,13 @@ const MODE_LABEL: Record<string, string> = {
 
 export function App() {
   const [route, setRoute] = useState<Route>(DEFAULT_ROUTE);
-  const { state, session, walk } = useJourney(route, LIBRARY);
+  const [sound, setSound] = useState(true);
+  const { state, session, walk } = useJourney(route, LIBRARY, sound);
+
+  // Whether the traveller can steer. Guidance answers "which way should I go", so it is
+  // shown to a walker and to a car's navigator, and withheld from anyone being carried —
+  // nobody diverts an aircraft towards a good story.
+  const selfDirected = presetFor(route.mode).selfDirected;
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [paused, setPaused] = useState(false);
   const [tab, setTab] = useState<Tab>("map");
@@ -126,7 +132,7 @@ export function App() {
                 selectedId={selectedId}
                 onSelect={setSelectedId}
               />
-              <ProximityBar guidance={state.guidance} cue={state.cue} />
+              {selfDirected && <ProximityBar guidance={state.guidance} cue={state.cue} />}
               <Sheet
                 nearby={state.nearby}
                 lastCapture={state.lastCapture}
@@ -182,9 +188,26 @@ export function App() {
         </p>
         <p>
           Echoes are sealed until you arrive. Step inside one and the ring fills over twelve
-          seconds; when it closes, the echo opens. The bar above the sheet is the haptic made
-          visible — on a phone this is a vibration you feel through a pocket.
+          seconds; when it closes, the echo opens.
         </p>
+        {selfDirected ? (
+          <p>
+            <b>Turn your sound on.</b> As you close on a sealed echo you will hear it — a
+            note followed by quieter repeats of itself, slow and spread out when you are far
+            away, tightening as you approach, and at the moment of arrival a single clean
+            note with no reflection at all, because you are standing at the source. The bar
+            above the sheet is the same cue rendered as the haptic you would feel through a
+            pocket. One proximity model, two ways of expressing it.
+          </p>
+        ) : (
+          <p>
+            No guidance bar and no sound here, which is the point. Guidance answers{" "}
+            <i>which way should I go</i>, and a passenger cannot divert an aircraft towards a
+            good story. The engine still computes proximity — the map wants it — it simply
+            stops telling your body about it. A car gets the full cue, because a navigator
+            can say "turn left here".
+          </p>
+        )}
         <p className="dim">
           No basemap: tile providers are unreachable from this environment, and the pin
           states are the point. A real map slots in underneath unchanged.
@@ -192,6 +215,9 @@ export function App() {
         <div className="controls">
           <button onClick={togglePause}>{paused ? "Resume" : "Pause"}</button>
           <button onClick={() => walk.seekTo(0)}>Back to start</button>
+          {selfDirected && (
+            <button onClick={() => setSound(!sound)}>{sound ? "Sound on" : "Sound off"}</button>
+          )}
         </div>
         <p className="mono dim">
           {walkedPercent}% along · {kept.length} found · {inCorridor} on this route ·{" "}

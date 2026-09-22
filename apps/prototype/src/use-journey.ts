@@ -17,12 +17,14 @@ import {
   type Guidance,
   type HapticCue,
   type HapticsSink,
+  type TonesSink,
   type ListenerProfile,
   type NearbyEcho,
   type Position,
   type Route,
 } from "@echofinders/core";
 import { SimulatedJourney } from "./simulated-journey";
+import { EchoTone } from "./echo-tone";
 
 export interface WalkState {
   readonly position: Position | null;
@@ -45,7 +47,7 @@ const LISTENER: ListenerProfile = {
   density: "immersive",
 };
 
-export function useJourney(route: Route, library: readonly Echo[]) {
+export function useJourney(route: Route, library: readonly Echo[], sound: boolean) {
   const walk = useMemo(() => {
     // `?speed=2` slows the journey so the dwell ring can be watched filling; `?start=0.4`
     // drops in partway along.
@@ -71,6 +73,13 @@ export function useJourney(route: Route, library: readonly Echo[]) {
 
   const cueRef = useRef<HapticCue | null>(null);
 
+  // One renderer for the life of the component: creating an AudioContext per session would
+  // hit the browser's limit within a few mode switches.
+  const toneRenderer = useMemo(() => new EchoTone(), []);
+  useEffect(() => {
+    toneRenderer.setMuted(!sound);
+  }, [toneRenderer, sound]);
+
   const session = useMemo(() => {
     // Stands in for Core Haptics on iOS. Here it only records what would have happened,
     // which is exactly what the visual proximity bar needs to show.
@@ -83,12 +92,22 @@ export function useJourney(route: Route, library: readonly Echo[]) {
       },
     };
 
+    const tones: TonesSink = {
+      play: (cue) => toneRenderer.play(cue),
+      stop: () => toneRenderer.stop(),
+    };
+
     // The mode comes from the route, not from a constant. It is what selects the corridor
     // width, the timing tolerance, the duty cycle and the position source — the whole
     // difference between a walking tour and a flight — and hardcoding it here was the one
     // thing stopping this prototype from exercising the other four.
-    return new WalkSession(library, LISTENER, { location: walk, haptics }, { mode: route.mode });
-  }, [library, walk, route.mode]);
+    return new WalkSession(
+      library,
+      LISTENER,
+      { location: walk, haptics, tones },
+      { mode: route.mode },
+    );
+  }, [library, walk, route.mode, toneRenderer]);
 
   useEffect(() => {
     const off = session.subscribe((event) => {

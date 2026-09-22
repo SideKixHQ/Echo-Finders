@@ -73,6 +73,26 @@ export interface ModePreset {
   readonly destinationDwellS: number;
 
   /**
+   * Whether the traveller can change where they are going.
+   *
+   * The distinction is agency over the route, not speed, and getting that wrong is easy:
+   * the first attempt at this gated guidance on how fast you were moving, which quietly
+   * assumed a driver is a passive passenger. They are not. A navigator in a car can say
+   * "turn left here" as readily as a person on foot can, and both of them can plan a route
+   * around the echoes they want before setting off. That is a different product from the
+   * one a passenger gets, and it is the *same* product walking and driving share.
+   *
+   * Being carried is the real dividing line. Nobody diverts an aircraft towards a good
+   * story, and nobody asks a train to. For those modes an echo is something you pass,
+   * guidance towards one describes a choice the listener does not have, and any feature
+   * that begins "walk this way" is noise.
+   *
+   * Governs, at minimum: whether proximity guidance is worth rendering at all — haptic or
+   * audible — and whether route planning may offer a detour to reach something.
+   */
+  readonly selfDirected: boolean;
+
+  /**
    * Position sources in priority order (ADR-0002).
    *
    * Note that flight is the odd one out, and it is the only mode where GNSS is not the
@@ -120,6 +140,8 @@ const MB = 1024 * 1024;
 
 export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
   flight: {
+    // Carried. The route is somebody else's decision and the door is locked.
+    selfDirected: false,
     speedKph: 850,
     corridorKm: 80,
     maxTimingDriftS: 600,
@@ -140,6 +162,8 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
   },
 
   rail: {
+    // Carried, and the timetable is not negotiable.
+    selfDirected: false,
     speedKph: 120,
     corridorKm: 12,
     maxTimingDriftS: 300,
@@ -158,6 +182,8 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
   },
 
   driving: {
+    // A navigator can redirect a car as readily as a walker redirects themselves.
+    selfDirected: true,
     speedKph: 90,
     corridorKm: 5,
     maxTimingDriftS: 180,
@@ -177,6 +203,7 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
   },
 
   cycling: {
+    selfDirected: true,
     speedKph: 18,
     corridorKm: 1,
     maxTimingDriftS: 120,
@@ -196,6 +223,7 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
   },
 
   walking: {
+    selfDirected: true,
     speedKph: 4.5,
     corridorKm: 0.3,
     // Ninety seconds on foot is roughly a hundred metres — about as far as you can be from

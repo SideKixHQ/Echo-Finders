@@ -1,7 +1,14 @@
 import { describe, expect, it, vi } from "vitest";
 import { WalkSession } from "../src/session/walk.js";
-import type { AudioSink, HapticsSink, LocationSource } from "../src/session/adapters.js";
-import type { LatLng, Position } from "../src/types.js";
+import type {
+  AudioSink,
+  HapticsSink,
+  LocationSource,
+  TonesSink,
+} from "../src/session/adapters.js";
+import type { LatLng, Position, TravelMode } from "../src/types.js";
+import { toneFor, type ToneCue } from "../src/proximity/tone.js";
+import type { Guidance } from "../src/proximity/haptics.js";
 import type { WalkEvent } from "../src/session/walk.js";
 import { ADULT, CHILD, makeEcho } from "./fixtures.js";
 import type { EchoDraft } from "./fixtures.js";
@@ -291,5 +298,82 @@ describe("safety gates still apply on a walk", () => {
     session.start();
     for (let s = 0; s <= 15; s += 3) location.emit(fix(HERE, START + s * 1000));
     expect(events.filter((e) => e.type === "captured")).toEqual([]);
+  });
+});
+
+describe("guidance belongs to whoever is steering", () => {
+  const fakeTones = (): TonesSink & { plays: ToneCue[]; stops: number } => {
+    const plays: ToneCue[] = [];
+    let stops = 0;
+    return {
+      plays,
+      get stops() {
+        return stops;
+      },
+      play: (cue) => void plays.push(cue),
+      stop: () => void stops++,
+    };
+  };
+
+  const approach = (mode: TravelMode) => {
+    const location = new FakeLocation();
+    const haptics = fakeHaptics();
+    const tones = fakeTones();
+    const session = new WalkSession([echo()], ADULT, { location, haptics, tones }, { mode });
+    session.start();
+    [280, 240, 200, 160, 120].forEach((m, i) => location.emit(fix(north(HERE, m), START + i * 4000)));
+    return { haptics, tones, session };
+  };
+
+  it("guides a walker, by buzz and by sound together", () => {
+    const { haptics, tones } = approach("walking");
+    expect(haptics.plays.length).toBeGreaterThan(0);
+    expect(tones.plays.length).toBe(haptics.plays.length);
+  });
+
+  it("guides a car, because a navigator can redirect one", () => {
+    // The distinction is agency over the route, not speed. A passenger in a car can say
+    // "turn left here"; gating this on how fast you are moving would quietly assume they
+    // cannot.
+    const { haptics, tones } = approach("driving");
+    expect(haptics.plays.length).toBeGreaterThan(0);
+    expect(tones.plays.length).toBeGreaterThan(0);
+  });
+
+  it("says nothing to someone being carried", () => {
+    // Nobody diverts an aircraft towards a good story. Buzzing at a passenger about a
+    // landmark off the track describes a choice they do not have.
+    for (const mode of ["flight", "rail"] as const) {
+      const { haptics, tones } = approach(mode);
+      expect(haptics.plays).toEqual([]);
+      expect(tones.plays).toEqual([]);
+    }
+  });
+
+  it("still computes guidance when carried, so the map can show it", () => {
+    // Withholding the cue is a rendering decision, not a reason to stop knowing.
+    const location = new FakeLocation();
+    const session = new WalkSession([echo()], ADULT, { location }, { mode: "flight" });
+    const seen: (Guidance | null)[] = [];
+    session.subscribe((e) => {
+      if (e.type === "guidance") seen.push(e.guidance);
+    });
+    session.start();
+    [280, 200, 120].forEach((m, i) => location.emit(fix(north(HERE, m), START + i * 4000)));
+    expect(seen.some((g) => g !== null)).toBe(true);
+  });
+
+  it("sounds like an echo: reflections that tighten as you close", () => {
+    // The whole conceit. Far off, the returns are slow and many — the sound of a big empty
+    // space. At the source there is no reflection at all.
+    const far = toneFor({ kind: "steady", intensity: 0.4, pulseMs: 40, intervalMs: 900 });
+    const near = toneFor({ kind: "close", intensity: 0.9, pulseMs: 40, intervalMs: 300 });
+    const there = toneFor({ kind: "arrived", intensity: 1, pulseMs: 60, intervalMs: 0 });
+
+    expect(near.repeatGapMs).toBeLessThan(far.repeatGapMs);
+    expect(near.hz).toBeGreaterThan(far.hz);
+    expect(there.repeats).toBe(0);
+    // Arrival is a moment, not a rhythm.
+    expect(there.intervalMs).toBe(Number.POSITIVE_INFINITY);
   });
 });

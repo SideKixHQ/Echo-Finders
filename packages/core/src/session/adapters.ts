@@ -6,13 +6,14 @@
  * things only a device can do: report where it is, vibrate, play a sound, point a camera.
  *
  * Keeping that list short is the whole design. An iOS build's job is to implement these
- * four small interfaces — not to reimplement any decision about what to play, when to
+ * few small interfaces — not to reimplement any decision about what to play, when to
  * capture, or how hard to buzz. Those live in the engine, are tested without a device, and
  * stay identical across platforms by construction rather than by discipline.
  */
 
 import type { Position } from "../types.js";
 import type { HapticCue } from "../proximity/haptics.js";
+import type { ToneCue } from "../proximity/tone.js";
 import type { Capability } from "../permissions/index.js";
 
 /** Unsubscribe from a stream. */
@@ -43,6 +44,21 @@ export interface HapticsSink {
   /** Begin or change the ongoing pattern. Called only when the cue actually changes. */
   play(cue: HapticCue): void;
   /** Stop vibrating. */
+  stop(): void;
+}
+
+/**
+ * Something that can make the proximity sound.
+ *
+ * Separate from `AudioSink` on purpose. That one plays narration — long, foreground, and
+ * the thing the listener came for. This plays a short figure *underneath* it, on its own
+ * bus, at its own level, and has to be duckable and mutable without touching the story.
+ * Wiring them together would mean a listener who turns the guidance off loses the echo too.
+ */
+export interface TonesSink {
+  /** Begin or change the ongoing figure. Called only when the cue actually changes. */
+  play(cue: ToneCue): void;
+  /** Stop. */
   stop(): void;
 }
 

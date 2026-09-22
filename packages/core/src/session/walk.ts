@@ -20,7 +20,15 @@ import type { Arriving, CaptureRecord } from "../capture/types.js";
 import { ProximityGuide, type Guidance, type ProximityOptions } from "../proximity/haptics.js";
 import { findEchoesNearby, type NearbyEcho } from "../ranking/nearby.js";
 import { PRIVACY_DEFAULTS, redactRecord, type PrivacySettings } from "../privacy/settings.js";
-import type { AudioSink, HapticsSink, LocationSource, Unsubscribe } from "./adapters.js";
+import type {
+  AudioSink,
+  HapticsSink,
+  LocationSource,
+  TonesSink,
+  Unsubscribe,
+} from "./adapters.js";
+import { toneFor } from "../proximity/tone.js";
+import { presetFor } from "../modes.js";
 
 export type WalkEvent =
   | { readonly type: "position"; readonly position: Position }
@@ -37,6 +45,8 @@ export interface WalkSessionDeps {
   readonly location: LocationSource;
   /** Optional: absent on iOS Safari, and on any device that cannot vibrate. */
   readonly haptics?: HapticsSink;
+  /** Makes the proximity sound. Optional, like haptics — and the fallback when they are absent. */
+  readonly tones?: TonesSink;
   /** Optional: a caller may prefer to drive audio from its own UI state. */
   readonly audio?: AudioSink;
 }
@@ -79,6 +89,8 @@ export class WalkSession {
   private readonly guide: ProximityGuide;
   private readonly handlers = new Set<(event: WalkEvent) => void>();
 
+  /** Resolved once, because three separate `?? "walking"` defaults is three chances to disagree. */
+  private readonly mode: TravelMode;
   private readonly privacy: PrivacySettings;
   private unwatch: Unsubscribe | null = null;
   /** The cue currently being rendered, so we do not restate it on every fix. */
@@ -94,11 +106,12 @@ export class WalkSession {
     this.listener = listener;
     this.deps = deps;
     this.options = options;
+    this.mode = options.mode ?? "walking";
     this.privacy = options.privacy ?? PRIVACY_DEFAULTS;
     this.guide = new ProximityGuide(options.proximity);
 
     const captureOptions: CaptureOptions = {
-      mode: options.mode ?? "walking",
+      mode: this.mode,
       ...options.capture,
     };
     this.tracker = options.captured
@@ -123,7 +136,7 @@ export class WalkSession {
     this.unwatch?.();
     this.unwatch = null;
     this.guide.reset();
-    this.silenceHaptics();
+    this.silenceGuidance();
   }
 
   /** Capture on an explicit tap, which skips the dwell timer. */
@@ -149,7 +162,7 @@ export class WalkSession {
     for (const capture of captures) this.announce(capture);
 
     const nearby = findEchoesNearby(position.at, this.library, this.listener, {
-      mode: this.options.mode ?? "walking",
+      mode: this.mode,
       atMs: position.timestamp,
       ...(this.options.nearbyRadiusKm !== undefined
         ? { radiusKm: this.options.nearbyRadiusKm }
@@ -166,7 +179,7 @@ export class WalkSession {
       target ? { echo: target.echo, distanceKm: target.distanceKm } : null,
     );
     this.emit({ type: "guidance", guidance });
-    this.renderHaptics(guidance);
+    this.renderGuidance(guidance);
   }
 
   /**
@@ -199,14 +212,24 @@ export class WalkSession {
    *
    * A fix can arrive every second; restating an identical pattern that often would cut it
    * off mid-pulse and turn a rhythm into a stutter. Comparing kind and rate is enough —
-   * those are what a body notices.
+   * those are what a body notices, and the sound is derived from the same cue so the two
+   * channels change together or not at all.
+   *
+   * Nothing is rendered at all unless the mode is self-directed. Guidance answers "which
+   * way should I go", and a passenger on an aircraft has no answer to give: buzzing at
+   * them about a landmark eighty kilometres off the track describes a choice they do not
+   * have. The engine still *computes* guidance in every mode — proximity is proximity, and
+   * the map still wants it — it simply stops telling the body about it.
    */
-  private renderHaptics(guidance: Guidance | null): void {
+  private renderGuidance(guidance: Guidance | null): void {
+    if (!presetFor(this.mode).selfDirected) return;
+
     const haptics = this.deps.haptics;
-    if (!haptics) return;
+    const tones = this.deps.tones;
+    if (!haptics && !tones) return;
 
     if (!guidance || guidance.cue.kind === "none") {
-      this.silenceHaptics();
+      this.silenceGuidance();
       return;
     }
 
@@ -214,13 +237,15 @@ export class WalkSession {
     if (signature === this.activeCue) return;
 
     this.activeCue = signature;
-    haptics.play(guidance.cue);
+    haptics?.play(guidance.cue);
+    tones?.play(toneFor(guidance.cue));
   }
 
-  private silenceHaptics(): void {
+  private silenceGuidance(): void {
     if (this.activeCue === null) return;
     this.activeCue = null;
     this.deps.haptics?.stop();
+    this.deps.tones?.stop();
   }
 
   private emit(event: WalkEvent): void {
