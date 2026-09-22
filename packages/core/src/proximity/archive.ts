@@ -19,7 +19,7 @@
  */
 
 import type { ArchivePhoto, LatLng } from "../types.js";
-import { bearingDeg, distanceKm } from "../geo/great-circle.js";
+import { bearingDeg, distanceKm, turnDeg as turnBetween } from "../geo/great-circle.js";
 
 export interface AlignmentOptions {
   /**
@@ -119,18 +119,29 @@ export function alignmentTo(
   // Which way to face. A photograph taken *from* the vantage looks along its bearing, so
   // when somebody is standing somewhere else the useful direction is towards the subject
   // rather than the recorded bearing — otherwise they face a wall parallel to the shot.
-  const target =
-    metresAway <= onSpotM ? photo.bearingDeg : bearingDeg(from, vantage);
-  const turnDeg = signedAngle(target - headingDeg);
+  const onSpot = metresAway <= onSpotM;
+  const target = onSpot ? photo.bearingDeg : bearingDeg(from, vantage);
+  const turn = turnBetween(headingDeg, target);
 
   // Facing score allows the compass its own error before counting anything as wrong.
-  const slack = Math.max(0, Math.abs(turnDeg) - headingAccuracyDeg);
+  const slack = Math.max(0, Math.abs(turn) - headingAccuracyDeg);
   const facing = clamp01(1 - slack / 60);
 
-  const advice: AlignmentAdvice =
-    metresAway > onSpotM * 2 ? "walk-there" : Math.abs(turnDeg) > headingAccuracyDeg + 12 ? "turn" : "hold-up";
+  // "Hold it up" requires standing on the spot, not merely near it.
+  //
+  // This used to allow it anywhere inside two spot-widths, which is wrong in a way that
+  // wastes the whole exercise: at twelve metres out the target bearing is *towards the
+  // vantage*, so somebody facing it was told to hold the phone up while pointing at the
+  // patch of pavement they were supposed to be standing on, rather than at the building
+  // the photograph is of. The reward for walking the last few metres is the only reason
+  // to walk them.
+  const advice: AlignmentAdvice = !onSpot
+    ? "walk-there"
+    : Math.abs(turn) > headingAccuracyDeg + 12
+      ? "turn"
+      : "hold-up";
 
-  return { advice, metresAway, turnDeg, score: nearness * facing };
+  return { advice, metresAway, turnDeg: turn, score: nearness * facing };
 }
 
 /** Human-readable, and deliberately coarse — a live degree readout invites staring. */
@@ -152,9 +163,3 @@ export function alignmentWords(alignment: Alignment): string {
 }
 
 const clamp01 = (n: number) => Math.max(0, Math.min(1, n));
-
-/** Fold a bearing difference into −180…180. */
-function signedAngle(degrees: number): number {
-  const wrapped = ((degrees % 360) + 540) % 360;
-  return wrapped - 180;
-}

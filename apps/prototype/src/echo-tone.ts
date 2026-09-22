@@ -22,6 +22,15 @@ export class EchoTone {
   private ctx: AudioContext | null = null;
   private timer: ReturnType<typeof setInterval> | null = null;
   private muted = false;
+  /**
+   * Notes already handed to the audio clock.
+   *
+   * A far-away cue schedules its reflections up to a couple of seconds ahead, and once
+   * `start()` has been called the note is the hardware's business, not ours. Clearing the
+   * interval stops the *next* figure and does nothing to the one in flight — so turning the
+   * cue off left it chiming twice more, which reads as a bug however briefly it lasts.
+   */
+  private voices: OscillatorNode[] = [];
 
   /**
    * Browsers refuse to start audio until the user has interacted with the page, so the
@@ -48,7 +57,9 @@ export class EchoTone {
 
   play(cue: ToneCue) {
     this.stop();
-    if (cue.gain <= 0 || cue.hz <= 0) return;
+    // Muted is not "play silently": without this the interval spun on regardless, firing
+    // into a context that refuses to exist, for as long as the cue held.
+    if (this.muted || cue.gain <= 0 || cue.hz <= 0) return;
 
     const fire = () => this.figure(cue);
     fire();
@@ -60,6 +71,25 @@ export class EchoTone {
   stop() {
     if (this.timer) clearInterval(this.timer);
     this.timer = null;
+    for (const osc of this.voices) {
+      // A node that already ended throws on a second stop, and one bad cue must not take
+      // the rest of the cleanup down with it.
+      try {
+        osc.stop();
+        osc.disconnect();
+      } catch {
+        /* already finished */
+      }
+    }
+    this.voices = [];
+  }
+
+  /** Release the audio context. Browsers allow only a handful per page. */
+  async dispose() {
+    this.stop();
+    const ctx = this.ctx;
+    this.ctx = null;
+    await ctx?.close().catch(() => undefined);
   }
 
   /** One note and its reflections. */
@@ -88,6 +118,11 @@ export class EchoTone {
       osc.connect(amp).connect(ctx.destination);
       osc.start(at);
       osc.stop(at + NOTE_MS / 1000 + 0.02);
+
+      this.voices.push(osc);
+      osc.onended = () => {
+        this.voices = this.voices.filter((v) => v !== osc);
+      };
     }
   }
 }

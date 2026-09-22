@@ -106,6 +106,29 @@ export function Player({
           const box = e.currentTarget.getBoundingClientRect();
           onSeek((e.clientX - box.left) / box.width);
         }}
+        /*
+          A focusable `role="slider"` that only answers to a mouse is worse than a plain
+          button: a screen reader announces something operable and then nothing operates it.
+          Five percent a step, ends on Home and End, same as any native range.
+        */
+        onKeyDown={(e) => {
+          const step =
+            e.key === "ArrowRight" || e.key === "ArrowUp"
+              ? 0.05
+              : e.key === "ArrowLeft" || e.key === "ArrowDown"
+                ? -0.05
+                : null;
+          if (step !== null) {
+            e.preventDefault();
+            onSeek(Math.max(0, Math.min(1, progress + step)));
+          } else if (e.key === "Home") {
+            e.preventDefault();
+            onSeek(0);
+          } else if (e.key === "End") {
+            e.preventDefault();
+            onSeek(1);
+          }
+        }}
       >
         {heights.map((h, i) => (
           <span

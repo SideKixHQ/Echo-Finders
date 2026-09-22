@@ -44,6 +44,17 @@ export class SpeechAudio implements AudioSink {
   private muted = false;
   /** Set while we cancel deliberately, so our own stop does not read as "finished". */
   private stopping = false;
+  /**
+   * The listener's speed setting, as a multiplier on each narrator's own pace.
+   *
+   * Applied when an utterance is created, because that is the only moment the Web Speech
+   * API allows: `rate` is read once at `speak()` and a running utterance cannot be
+   * re-paced. So a change lands on the next echo rather than the current one — which is a
+   * limitation of the stand-in, not of the design, and disappears with the real renders
+   * where an `<audio>` element's `playbackRate` is live. Before this existed the control
+   * changed a number on screen and nothing else at all.
+   */
+  private rate = 1;
 
   constructor(private readonly library: readonly Echo[]) {}
 
@@ -54,6 +65,10 @@ export class SpeechAudio implements AudioSink {
   setMuted(muted: boolean) {
     this.muted = muted;
     if (muted) this.stop();
+  }
+
+  setRate(rate: number) {
+    this.rate = rate;
   }
 
   play(audioKey: string) {
@@ -72,7 +87,8 @@ export class SpeechAudio implements AudioSink {
     const utterance = new SpeechSynthesisUtterance(echo.script);
     const cast = CAST[echo.voice ?? ""] ?? { pitch: 1, rate: 0.95, prefer: [] };
     utterance.pitch = cast.pitch;
-    utterance.rate = cast.rate;
+    // Clamped to what browsers actually honour; outside 0.1–10 they silently ignore it.
+    utterance.rate = Math.max(0.5, Math.min(2.5, cast.rate * this.rate));
 
     const voice = this.pick(cast.prefer);
     if (voice) utterance.voice = voice;

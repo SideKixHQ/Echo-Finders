@@ -287,3 +287,67 @@ describe("authoring guidance", () => {
     );
   });
 });
+
+/**
+ * The trend at the rate a device actually reports, and a person actually walks.
+ *
+ * The existing tests move fifty metres between fixes, which is a car on a motorway. At that
+ * step everything works; at a walking pace with a 4Hz receiver — 0.35m per fix — the cue
+ * was permanently "steady" and the hot-and-cold game never once fired on a real device.
+ * Nothing threw and every test was green, because no test walked.
+ */
+describe("guidance at a walking pace", () => {
+  const target = echo();
+  /** 1.4 m/s at 4Hz: what a person leaving a kerb actually does. */
+  const STEP_KM = 0.00035;
+
+  const walk = (guide: ProximityGuide, from: number, fixes: number, toward: boolean) => {
+    let km = from;
+    let last = guide.update({ echo: target, distanceKm: km })!;
+    for (let i = 0; i < fixes; i++) {
+      km += toward ? -STEP_KM : STEP_KM;
+      last = guide.update({ echo: target, distanceKm: km }, 1000 + i * 250)!;
+    }
+    return last;
+  };
+
+  it("notices an approach made of ordinary steps", () => {
+    // Forty fixes is ten seconds and fourteen metres — past the twelve-metre threshold,
+    // and nothing a person would describe as a lot of walking.
+    const result = walk(new ProximityGuide(), 0.2, 40, true);
+    expect(result.trend).toBe("closer");
+    expect(result.cue.kind).toBe("warmer");
+  });
+
+  it("notices walking away at the same pace", () => {
+    const result = walk(new ProximityGuide(), 0.2, 40, false);
+    expect(result.trend).toBe("further");
+    expect(result.cue.kind).toBe("colder");
+  });
+
+  it("says nothing on a few steps either way", () => {
+    // Five fixes is under two metres. Well inside what a phone drifts by standing still.
+    expect(walk(new ProximityGuide(), 0.2, 5, true).trend).toBe("steady");
+  });
+
+  it("does not keep insisting you are approaching once you have stopped", () => {
+    const guide = new ProximityGuide();
+    const approached = walk(guide, 0.2, 40, true);
+    expect(approached.trend).toBe("closer");
+
+    // Standing at a plaque, jittering, for longer than a verdict lives.
+    let last = approached;
+    for (let i = 0; i < 12; i++) {
+      const jitter = (i % 2 === 0 ? 1 : -1) * 0.000002;
+      last = guide.update({ echo: target, distanceKm: approached.distanceKm + jitter }, 20000 + i * 1000)!;
+    }
+    expect(last.trend).toBe("steady");
+  });
+
+  it("stays silent when there is no approach to guide across", () => {
+    // `warmRadii` of 1 means guidance begins at the trigger radius, so there is no span to
+    // be led along: anything outside is out of range and anything inside has arrived.
+    expect(proximityCue(0.05, 0.02, "closer", { warmRadii: 1 }).kind).toBe("none");
+    expect(proximityCue(0.01, 0.02, "closer", { warmRadii: 1 }).kind).toBe("arrived");
+  });
+});

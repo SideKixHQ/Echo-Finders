@@ -140,6 +140,18 @@ export class WalkSession {
   /** The cue currently being rendered, so we do not restate it on every fix. */
   private activeCue: string | null = null;
 
+  /**
+   * Auto-play and the pre-chosen list, held separately because they change mid-journey.
+   *
+   * Everything else in `options` is fixed for the life of a session — the mode, the
+   * capture rules, what the listener agreed to have remembered — but these two are
+   * settings a person reaches for while walking. Leaving them in the constructor forced
+   * the caller to build a new `WalkSession` to change one, and a new session is a new
+   * `CaptureTracker`: ticking one box in the plan silently binned an hour's collection.
+   */
+  private autoPlay: boolean;
+  private autoPlayOnly: readonly string[] | undefined;
+
   constructor(
     library: readonly Echo[],
     listener: ListenerProfile,
@@ -151,6 +163,8 @@ export class WalkSession {
     this.deps = deps;
     this.options = options;
     this.mode = options.mode ?? "walking";
+    this.autoPlay = options.autoPlay ?? false;
+    this.autoPlayOnly = options.autoPlayOnly;
     this.playback = new PlaybackQueue(this.mode, options.playback ?? {});
     this.privacy = options.privacy ?? PRIVACY_DEFAULTS;
     this.guide = new ProximityGuide(options.proximity);
@@ -202,7 +216,8 @@ export class WalkSession {
   play(echo: Echo): void {
     const render = renderFor(echo.renders, this.options.voiceId);
     if (!render) return;
-    this.playback.playNow({ echo, render, atMs: Date.now() });
+    const deferred = this.playback.playNow({ echo, render, atMs: Date.now() });
+    if (deferred) this.emit({ type: "deferred", deferred });
     this.startCurrent();
   }
 
@@ -224,9 +239,26 @@ export class WalkSession {
     this.startCurrent();
   }
 
+  /**
+   * Start captured echoes without being asked. Changeable mid-journey, and nothing else
+   * about the session changes with it — the collection, the queue and the position stream
+   * all carry on.
+   */
+  setAutoPlay(on: boolean): void {
+    this.autoPlay = on;
+  }
+
+  /**
+   * Narrow auto-play to a chosen few. Undefined lifts the restriction; an empty list is
+   * honoured literally and means "I chose nothing".
+   */
+  setAutoPlayOnly(echoIds: readonly string[] | undefined): void {
+    this.autoPlayOnly = echoIds;
+  }
+
   /** Did the listener pick this one, back when they were choosing? */
   private mayAutoPlay(echoId: string): boolean {
-    const chosen = this.options.autoPlayOnly;
+    const chosen = this.autoPlayOnly;
     return chosen === undefined || chosen.includes(echoId);
   }
 
@@ -289,9 +321,14 @@ export class WalkSession {
     const target = nearby.find((n) => this.tracker.stateOf(n.echo.id) === "sealed");
     const guidance = this.guide.update(
       target ? { echo: target.echo, distanceKm: target.distanceKm } : null,
+      position.timestamp,
     );
-    this.emit({ type: "guidance", guidance });
+    // Rendered *before* the event goes out. The other way round, any consumer that reads
+    // the haptics sink when the event arrives — which is exactly how a UI shows the buzz it
+    // cannot feel — is looking at the previous fix's cue, one whole second behind the
+    // guidance it is drawn next to.
     this.renderGuidance(guidance);
+    this.emit({ type: "guidance", guidance });
 
     // Anything still waiting that the listener has now walked away from gives up. Only
     // waiting items — whatever is already playing finishes wherever they have got to.
@@ -321,7 +358,7 @@ export class WalkSession {
     // Offered to the queue rather than played: a second capture arriving while the first is
     // still talking used to call `play()` straight over it, and at a stop where two echoes
     // sit a few metres apart that is the normal case, not the edge one.
-    if (this.options.autoPlay && this.mayAutoPlay(capture.echo.id)) {
+    if (this.autoPlay && this.mayAutoPlay(capture.echo.id)) {
       const render = renderFor(capture.echo.renders, this.options.voiceId);
       if (render) {
         const wasIdle = this.playback.nowPlaying === null;

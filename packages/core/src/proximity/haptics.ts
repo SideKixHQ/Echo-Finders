@@ -111,6 +111,11 @@ export function proximityCue(
 
   const radius = Math.max(triggerRadiusKm, 0.001);
   const ratio = distanceKm / radius;
+  // The width of the approach, in radii. The `ratio > warmRadii` return above already
+  // means this is only reached when the span is positive, so the floor is belt and braces
+  // against a future reordering rather than a live division by zero — and the clamp on
+  // `closeness` keeps the easing in range whatever a caller passes.
+  const span = Math.max(1e-6, warmRadii - 1);
 
   if (ratio <= 1) {
     // Inside. One long, unmistakable confirmation rather than a rhythm — this is an
@@ -123,7 +128,7 @@ export function proximityCue(
   // Map the approach onto a pulse rate. Squared so the quickening is felt late and
   // strongly, the way a metal detector does, rather than creeping up linearly from the
   // edge of range where it would just be irritating.
-  const closeness = 1 - (ratio - 1) / (warmRadii - 1);
+  const closeness = Math.max(0, Math.min(1, 1 - (ratio - 1) / span));
   const eased = closeness ** 2;
   const intervalMs = Math.round(maxIntervalMs - (maxIntervalMs - minIntervalMs) * eased);
 
@@ -156,6 +161,15 @@ export interface Guidance {
 }
 
 /**
+ * How long a verdict stands with nothing to confirm it.
+ *
+ * Eight seconds: long enough to survive a pause at a kerb, short enough that stopping to
+ * look at something settles the cue back to a heartbeat rather than leaving it insisting
+ * you are still getting warmer.
+ */
+const VERDICT_TTL_MS = 8000;
+
+/**
  * Follows the nearest sealed echo and reports what the phone should do.
  *
  * Stateful because the whole point is the comparison with a moment ago, and because raw
@@ -168,6 +182,26 @@ export class ProximityGuide {
   private readonly options: Required<ProximityOptions>;
   private smoothedKm: number | null = null;
   private targetId: string | null = null;
+
+  /**
+   * Net approach since the trend last had enough evidence to say anything, km.
+   *
+   * This exists because comparing one fix to the one before it does not work, and did not.
+   * `trendNoiseM` is twelve metres because that is roughly what a phone standing still
+   * drifts by — but a *walker* covers 0.35m between fixes at 4Hz, so a per-fix delta never
+   * came close to the threshold and the cue was permanently "steady". The hot-and-cold
+   * game, which the whole module exists for, silently never fired on a real device. It
+   * passed its tests because the tests moved fifty metres per fix.
+   *
+   * Accumulating instead makes the threshold mean what it says — twelve metres of *net*
+   * movement, however many fixes that took — so it behaves the same at 1Hz and at 10Hz.
+   * It is hysteretic for free: a verdict stands until twelve metres of evidence the other
+   * way, so the cue cannot flap.
+   */
+  private sinceVerdictKm = 0;
+  private trend: Guidance["trend"] = "steady";
+  /** When the last verdict landed, so one cannot outlive the walk it described. */
+  private verdictAtMs: number | null = null;
 
   constructor(options: ProximityOptions = {}) {
     this.options = {
@@ -185,16 +219,19 @@ export class ProximityGuide {
    * Takes an already-filtered candidate — whoever calls this knows which echoes are still
    * sealed and eligible, and that is not this module's business.
    */
-  update(target: { echo: Echo; distanceKm: number } | null): Guidance | null {
+  update(
+    target: { echo: Echo; distanceKm: number } | null,
+    atMs?: number,
+  ): Guidance | null {
     if (!target) {
-      this.smoothedKm = null;
-      this.targetId = null;
+      this.forget();
       return null;
     }
 
     // Switching targets resets the comparison; distance to a different echo is not a
     // continuation of the previous approach.
     if (this.targetId !== target.echo.id) {
+      this.forget();
       this.targetId = target.echo.id;
       this.smoothedKm = target.distanceKm;
       return {
@@ -215,25 +252,44 @@ export class ProximityGuide {
     const smoothed = previous * (1 - alpha) + target.distanceKm * alpha;
     this.smoothedKm = smoothed;
 
-    const deltaM = (previous - smoothed) * 1000;
-    const trend =
-      deltaM > this.options.trendNoiseM
-        ? "closer"
-        : deltaM < -this.options.trendNoiseM
-          ? "further"
-          : "steady";
+    // Positive is closing.
+    this.sinceVerdictKm += previous - smoothed;
+    const evidenceM = this.sinceVerdictKm * 1000;
+
+    if (Math.abs(evidenceM) > this.options.trendNoiseM) {
+      this.trend = evidenceM > 0 ? "closer" : "further";
+      this.sinceVerdictKm = 0;
+      if (atMs !== undefined) this.verdictAtMs = atMs;
+    } else if (
+      // A verdict that nothing has contradicted still goes stale. Somebody who walked
+      // towards an echo and then stopped to read a plaque is not still approaching it, and
+      // a cue that says otherwise for the rest of the walk is worse than no cue.
+      atMs !== undefined &&
+      this.verdictAtMs !== null &&
+      atMs - this.verdictAtMs > VERDICT_TTL_MS
+    ) {
+      this.trend = "steady";
+      this.verdictAtMs = null;
+    }
 
     return {
       echo: target.echo,
       distanceKm: smoothed,
-      trend,
-      cue: proximityCue(smoothed, target.echo.point.triggerRadiusKm, trend, this.options),
+      trend: this.trend,
+      cue: proximityCue(smoothed, target.echo.point.triggerRadiusKm, this.trend, this.options),
     };
   }
 
   /** Forget the current approach. Call when an echo is captured or the walk ends. */
   reset(): void {
+    this.forget();
+  }
+
+  private forget(): void {
     this.smoothedKm = null;
     this.targetId = null;
+    this.sinceVerdictKm = 0;
+    this.trend = "steady";
+    this.verdictAtMs = null;
   }
 }

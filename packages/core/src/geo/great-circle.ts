@@ -180,3 +180,21 @@ export function inBoundingBox(box: BoundingBox, p: LatLng): boolean {
     p.lat >= box.minLat && p.lat <= box.maxLat && p.lng >= box.minLng && p.lng <= box.maxLng
   );
 }
+
+/**
+ * Fold a difference between two bearings into −180…180, so it reads as a turn.
+ *
+ * Lives here because it had been written twice, in `viewfinder.ts` and in `archive.ts`, and
+ * the two copies disagreed at exactly half a turn: one returned +180 and the other −180, so
+ * the same geometry produced "turn right" on one screen and "turn left" on the other. Two
+ * implementations of one piece of arithmetic will always eventually differ, and the place
+ * they differ is always the edge nobody tested.
+ *
+ * Half a turn resolves to +180 — "turn right" — because a signed zero of a turn has to pick
+ * a side and the alternative is a value that no longer round-trips through `Math.abs`.
+ */
+export function turnDeg(fromDeg: number, toDeg: number): number {
+  const wrapped = (((toDeg - fromDeg) % 360) + 540) % 360;
+  const signed = wrapped - 180;
+  return signed === -180 ? 180 : signed;
+}

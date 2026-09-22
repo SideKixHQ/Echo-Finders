@@ -22,7 +22,7 @@
  */
 
 import type { Echo, LatLng } from "../types.js";
-import { bearingDeg, distanceKm } from "../geo/great-circle.js";
+import { bearingDeg, distanceKm, turnDeg as turnBetween } from "../geo/great-circle.js";
 
 export interface ViewfinderOptions {
   /**
@@ -90,7 +90,7 @@ export function viewfinderMarkers(
     if (km > maxDistanceKm) continue;
 
     const bearing = bearingDeg(at, echo.point.at);
-    const turnDeg = signedAngle(bearing - headingDeg);
+    const turnDeg = turnBetween(headingDeg, bearing);
 
     markers.push({
       echo,
@@ -121,8 +121,3 @@ export function headingIsUsable(headingAccuracyDeg: number, fovDeg = DEFAULTS.fo
   return headingAccuracyDeg < fovDeg / 2;
 }
 
-/** Normalise any angle to the range (−180, 180]. */
-function signedAngle(deg: number): number {
-  const wrapped = ((deg % 360) + 540) % 360 - 180;
-  return wrapped === -180 ? 180 : wrapped;
-}

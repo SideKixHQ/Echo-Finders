@@ -53,7 +53,21 @@ const H = 844;
  * either end of the walk sit underneath the sheet, which is where the first and last echoes
  * of any route would always be.
  */
-const INSET = { top: 76, bottom: 392, side: 38 };
+/*
+ * These track the chrome in `theme.css`, and they are the reason this comment exists: the
+ * sheet grew from 432px to 466px when the then-and-now strip landed, and this number did
+ * not, so the bottom of every route quietly slid underneath it. It had in fact been wrong
+ * before that too — 392 was tuned against a sheet that had already been made taller once.
+ *
+ * A pin you cannot see is worse than a map with less room in it, so the inset is now
+ * derived from the same numbers the CSS uses rather than eyeballed. Change the sheet
+ * height and change this with it.
+ */
+const NAV_H = 72;
+const SHEET_H = 466;
+/** A little of the sheet's rounded top edge may be drawn under; a whole pin may not. */
+const SHEET_OVERLAP = 14;
+const INSET = { top: 76, bottom: NAV_H + SHEET_H - SHEET_OVERLAP, side: 38 };
 
 export function RouteMap({ route, library, position, opening, stateOf, selectedId, onSelect }: Props) {
   const projection = useMemo(() => {

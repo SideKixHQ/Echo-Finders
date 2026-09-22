@@ -1,5 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import { WalkSession } from "../src/session/walk.js";
+import { PlaybackQueue } from "../src/session/playback.js";
 import type {
   AudioSink,
   HapticsSink,
@@ -561,5 +562,64 @@ describe("choosing in advance", () => {
     expect(audio.played.length).toBe(1);
     audio.finish();
     expect(audio.played.length).toBe(2);
+  });
+});
+
+/**
+ * The queue's identity rules.
+ *
+ * All three of these were reachable from the sheet with one tap, and all three were silent:
+ * nothing threw, nothing logged, and the only symptom was an echo you had already heard
+ * starting again by itself, or one that quietly never arrived.
+ */
+describe("playing something that is already in hand", () => {
+  const queued = (id: string, quality = 0.7) => ({
+    echo: echo({ id, quality }),
+    render: { voiceId: "v", audioKey: `a/${id}`, durationS: 30 },
+    atMs: START,
+  });
+
+  it("restarts what is playing rather than cloning it", () => {
+    // Tapping Listen on the card that already says "Playing" used to push the current item
+    // back onto the queue, so the echo played straight through a second time.
+    const queue = new PlaybackQueue("walking");
+    queue.offer(queued("a"));
+    queue.playNow(queued("a"));
+
+    expect(queue.nowPlaying?.echo.id).toBe("a");
+    expect(queue.waiting).toHaveLength(0);
+    expect(queue.finished()).toBeNull();
+  });
+
+  it("promotes a waiting echo instead of duplicating it", () => {
+    const queue = new PlaybackQueue("walking");
+    queue.offer(queued("a"));
+    queue.offer(queued("b"));
+    queue.playNow(queued("b"));
+
+    expect(queue.nowPlaying?.echo.id).toBe("b");
+    expect(queue.waiting.map((q) => q.echo.id)).toEqual(["a"]);
+  });
+
+  it("does not queue the same echo twice", () => {
+    const queue = new PlaybackQueue("walking");
+    queue.offer(queued("a"));
+    queue.offer(queued("b"));
+    queue.offer(queued("b"));
+    expect(queue.waiting.map((q) => q.echo.id)).toEqual(["b"]);
+  });
+
+  it("reports what it gave up to make room, and gives up the weakest", () => {
+    // `playNow` used to pop the tail — the newest arrival — and say nothing about it, while
+    // `offer` right next to it dropped the weakest and reported it. One queue, one rule.
+    const queue = new PlaybackQueue("walking", { maxWaiting: 2 });
+    queue.offer(queued("a", 0.9));
+    queue.offer(queued("weak", 0.2));
+    queue.offer(queued("c", 0.8));
+    const deferred = queue.playNow(queued("d", 0.9));
+
+    expect(deferred?.echo.id).toBe("weak");
+    expect(deferred?.reason).toBe("queue-full");
+    expect(queue.waiting.map((q) => q.echo.id)).toEqual(["a", "c"]);
   });
 });

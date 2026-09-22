@@ -76,6 +76,7 @@ export function App() {
     // no restriction, while an empty choice means "I chose nothing" and is honoured.
     chosen: chosen.size > 0 ? chosen : undefined,
     paused: paused || !started,
+    rate,
   });
 
   // Whether the traveller can steer. Guidance answers "which way should I go", so it is
@@ -156,14 +157,17 @@ export function App() {
       startedRef.current = { id: nowPlaying.id, at: Date.now() };
       setProgress(0);
     }
-    const durationS = (simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS;
+    // Divided by the speed setting, or the bar runs at one speed while the voice runs at
+    // another and the two disagree by more the longer the echo is.
+    const durationS =
+      ((simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS) / rate;
     const tick = setInterval(() => {
       const started = startedRef.current;
       if (!started) return;
       setProgress(Math.min(1, (Date.now() - started.at) / 1000 / durationS));
     }, 250);
     return () => clearInterval(tick);
-  }, [nowPlaying, simple]);
+  }, [nowPlaying, simple, rate]);
 
   const walkedPercent = Math.round((walk.walkedMetres / walk.totalMetres) * 100);
   const arrived = walkedPercent >= 99;

@@ -109,6 +109,10 @@ export class PlaybackQueue {
    * and so a deferral can be reported rather than happening silently.
    */
   offer(item: QueuedEcho): { readonly started: boolean; readonly deferred: Deferred | null } {
+    // Already in hand. Capture is idempotent upstream, but auto-play and a tap can both
+    // reach here for the same echo, and queueing a second copy means hearing it twice.
+    if (this.holds(item.echo.id)) return { started: false, deferred: null };
+
     if (!this.current) {
       this.current = item;
       this.isPaused = false;
@@ -118,14 +122,34 @@ export class PlaybackQueue {
     this.queue.push(item);
     if (this.queue.length <= this.maxWaiting) return { started: false, deferred: null };
 
-    // Over capacity. Drop the *weakest* rather than the newest: arriving last is not a
-    // reason to be dropped, and the listener keeps all of them in the collection either way.
+    return { started: false, deferred: this.evictWeakest() };
+  }
+
+  /** Is this echo already playing or already waiting? */
+  private holds(echoId: string): boolean {
+    return this.current?.echo.id === echoId || this.queue.some((q) => q.echo.id === echoId);
+  }
+
+  /** Remove a waiting copy of this echo, if there is one. */
+  private drop(echoId: string): void {
+    const at = this.queue.findIndex((q) => q.echo.id === echoId);
+    if (at >= 0) this.queue.splice(at, 1);
+  }
+
+  /**
+   * Make room by giving up the *weakest* waiting item, not the newest.
+   *
+   * Arriving last is not a reason to be dropped, and the listener keeps every one of them
+   * in the collection either way — which is the whole reason this queue is allowed to give
+   * up on things at all.
+   */
+  private evictWeakest(): Deferred {
     let worstAt = 0;
     for (let i = 1; i < this.queue.length; i++) {
       if (this.queue[i]!.echo.quality < this.queue[worstAt]!.echo.quality) worstAt = i;
     }
     const dropped = this.queue.splice(worstAt, 1)[0]!;
-    return { started: false, deferred: { echo: dropped.echo, reason: "queue-full" } };
+    return { echo: dropped.echo, reason: "queue-full" };
   }
 
   /**
@@ -154,7 +178,7 @@ export class PlaybackQueue {
     return this.current;
   }
 
-  /** Abandon the current item without advancing — the listener pressed skip. */
+  /** Give up on the current item and take the next — the listener pressed skip. */
   skip(): QueuedEcho | null {
     return this.finished();
   }
@@ -167,12 +191,35 @@ export class PlaybackQueue {
     if (this.current) this.isPaused = false;
   }
 
-  /** Play something on demand, from the collection or the map. Jumps the queue. */
-  playNow(item: QueuedEcho): void {
+  /**
+   * Play something on demand, from the collection or the map. Jumps the queue.
+   *
+   * Returns whatever had to be given up to make room, for the same reason `offer` does:
+   * an echo that quietly stopped being on its way to the listener's ears is the one event
+   * a UI cannot reconstruct for itself.
+   */
+  playNow(item: QueuedEcho): Deferred | null {
+    // Pressing play on what is already playing restarts it — it does not clone it.
+    //
+    // The old version pushed the current item back onto the queue unconditionally, so
+    // tapping Listen on the card that already said "Playing" left a second copy waiting
+    // behind it, and the echo played straight through twice. The same happened to anything
+    // already queued: promoting it to current left the duplicate in place.
+    if (this.current?.echo.id === item.echo.id) {
+      this.current = item;
+      this.isPaused = false;
+      return null;
+    }
+
+    this.drop(item.echo.id);
     if (this.current) this.queue.unshift(this.current);
     this.current = item;
     this.isPaused = false;
-    while (this.queue.length > this.maxWaiting) this.queue.pop();
+
+    // Over capacity: drop the weakest and say so, exactly as `offer` does. Popping the tail
+    // silently threw away whatever had arrived most recently, which is both the wrong item
+    // and an event the listener never heard about.
+    return this.queue.length > this.maxWaiting ? this.evictWeakest() : null;
   }
 
   clear(): void {

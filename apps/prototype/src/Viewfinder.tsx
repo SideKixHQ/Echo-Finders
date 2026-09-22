@@ -160,6 +160,23 @@ export function Viewfinder({ echo, at, nearby, onClose, onSelect }: ViewfinderPr
 
         {alignment && <Guide words={alignmentWords(alignment)} score={alignment.score} advice={alignment.advice} />}
 
+        {/*
+          iOS refuses to deliver orientation events until they have been asked for, and the
+          ask is only honoured from inside a user gesture — so without this button the
+          bearing arcs simply never appear on the one platform most people will hold this
+          up on, silently, with no error anywhere. Offered rather than demanded: the plate
+          against the place works perfectly well without a compass.
+        */}
+        {heading.needsPermission && (
+          <button className="vf-compass" onClick={() => void heading.ask()}>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M15.5 8.5l-2 5-5 2 2-5z" />
+            </svg>
+            Use the compass
+          </button>
+        )}
+
         {/* Said once, at the bottom, and never as a modal. Somebody who declined the camera
             came here anyway — the plate against the place is most of the value, and a
             dialog demanding a permission they just refused is how a screen gets closed. */}

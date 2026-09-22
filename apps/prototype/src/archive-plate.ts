@@ -26,12 +26,30 @@
 
 export type Plate = "then" | "now";
 
-/** A data URI for one drawn plate. Deterministic in the key, so it never flickers on a re-render. */
+/**
+ * A data URI for one drawn plate.
+ *
+ * Cached, and the cache is not an optimisation. Dragging the blend slider re-renders on
+ * every pointer move, and building a fresh thirty-kilobyte data URI each time hands the
+ * browser a *different* `src` sixty times a second — so it re-decodes the image on every
+ * frame of the one gesture the whole screen exists for. Same key, same string, same image,
+ * no decode: the blend is then just an opacity, which is what it should always have been.
+ *
+ * Bounded because it is keyed by content: a handful of plates per journey, a few dozen in
+ * a session, and each entry is a string a browser would otherwise rebuild constantly.
+ */
+const CACHE = new Map<string, string>();
+
 export function platePng(imageKey: string, plate: Plate): string {
-  const svg = plateSvg(imageKey, plate);
+  const key = `${plate}:${imageKey}`;
+  const hit = CACHE.get(key);
+  if (hit) return hit;
+
   // encodeURIComponent rather than btoa: the SVG carries non-ASCII characters and btoa
   // throws on anything above U+00FF, which is a crash in a renderer that must never crash.
-  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+  const uri = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(plateSvg(imageKey, plate))}`;
+  CACHE.set(key, uri);
+  return uri;
 }
 
 // Sized to a phone held upright, not to a postcard. A 3:4 plate in a 1:1.95 frame is

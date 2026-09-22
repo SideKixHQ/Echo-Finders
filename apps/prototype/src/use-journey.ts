@@ -73,12 +73,14 @@ export interface JourneyControls {
   readonly chosen?: ReadonlySet<string>;
   /** The listener pressed pause on the simulation itself. */
   readonly paused: boolean;
+  /** Playback speed, as a multiplier. Takes effect on the next echo — see `SpeechAudio`. */
+  readonly rate?: number;
 }
 
 export function useJourney(
   route: Route,
   library: readonly Echo[],
-  { sound, narrate, autoPlay, chosen, paused }: JourneyControls,
+  { sound, narrate, autoPlay, chosen, paused, rate = 1 }: JourneyControls,
 ) {
   const walk = useMemo(() => {
     // `?speed=2` slows the journey so the dwell ring can be watched filling; `?start=0.4`
@@ -114,11 +116,17 @@ export function useJourney(
   useEffect(() => {
     toneRenderer.setMuted(!sound);
   }, [toneRenderer, sound]);
+  // Released on unmount, because an AudioContext is not garbage: browsers cap them per
+  // page, and one left open per mount is a limit reached by clicking around.
+  useEffect(() => () => void toneRenderer.dispose(), [toneRenderer]);
 
   const speech = useMemo(() => new SpeechAudio(library), [library]);
   useEffect(() => {
     speech.setMuted(!narrate);
   }, [speech, narrate]);
+  useEffect(() => {
+    speech.setRate(rate);
+  }, [speech, rate]);
 
   const session = useMemo(() => {
     // Stands in for Core Haptics on iOS. Here it only records what would have happened,
@@ -145,13 +153,22 @@ export function useJourney(
       library,
       LISTENER,
       { location: walk, haptics, tones, audio: speech },
-      {
-        mode: route.mode,
-        autoPlay,
-        ...(chosen ? { autoPlayOnly: [...chosen] } : {}),
-      },
+      { mode: route.mode },
     );
-  }, [library, walk, route.mode, toneRenderer, speech, autoPlay, chosen]);
+    // `autoPlay` and `chosen` are deliberately *not* dependencies and not constructor
+    // arguments. They change while somebody is walking — every tick in the plan, every
+    // flick of the switch — and a new `WalkSession` is a new `CaptureTracker`: rebuilding
+    // it to carry one boolean threw away the whole collection, stopped whatever was
+    // playing, and reset the map, silently. They are applied below instead.
+  }, [library, walk, route.mode, toneRenderer, speech]);
+
+  useEffect(() => {
+    session.setAutoPlay(autoPlay);
+  }, [session, autoPlay]);
+
+  useEffect(() => {
+    session.setAutoPlayOnly(chosen ? [...chosen] : undefined);
+  }, [session, chosen]);
 
   // Hold the walk while something is being narrated.
   //
