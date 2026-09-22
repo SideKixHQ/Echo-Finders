@@ -117,7 +117,7 @@ describe("certainty", () => {
     makeEcho({
       id: "atchison-house",
       at: { lat: 39.563, lng: -95.121 },
-      category: "local-legends",
+      category: "legend",
       certainty: "legend",
       certaintyNote: "Told locally since the 1990s; no contemporary record supports it.",
       ...overrides,

@@ -1,0 +1,38 @@
+id: savannah-twenty-two-squares
+title: A city plan from 1733 that nobody has managed to undo
+summary: Savannah's grid of squares was drawn before the city existed, and most of it is still there.
+place: Savannah, Georgia
+at: { lat: 32.0809, lng: -81.0912 }
+triggerRadiusKm: 45
+voice: hP72SDESIJq2YuAblBqz
+category: built
+format: short
+durationS: 90
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.87
+tags: [georgia, urban-planning, colonial]
+teaser: If the cloud is thin, look for the pattern. You will know it when you see it.
+script: |
+  If you can see the ground on the left, look for a pattern: a grid, interrupted at regular
+  intervals by small green squares.
+
+  That layout was drawn in seventeen thirty-three, before there was a city to put it in.
+  James Oglethorpe laid out a repeating unit — a square with house lots and civic lots
+  around it — and the plan was simply to keep repeating it as the place grew.
+
+  Twenty-four were eventually built. Twenty-two are still there.
+
+  Cities almost never survive this. Street plans get widened for carts, then for trams, then
+  for cars, and the awkward bits get straightened out. Savannah's squares are exactly the
+  awkward bits — they force traffic to slow down and go around.
+
+  Three were lost to a road scheme in the nineteen fifties. One has since been put back.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: Savannah Historic District — National Historic Landmark documentation
+    publisher: National Park Service
+    retrievedAt: "2026-09-22"
+    rights: public-domain

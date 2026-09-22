@@ -219,7 +219,7 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
       "a contested echo needs at least two sources; you cannot show a disagreement from one side of it",
     );
   }
-  if (echo.category === "local-legends" && echo.certainty === "documented") {
+  if (echo.category === "legend" && echo.certainty === "documented") {
     error(
       "certainty",
       'a local legend cannot be "documented" — label it "legend", or file it under history if the record actually supports it',
@@ -228,7 +228,7 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
   if (echo.category === "true-crime" && echo.certainty === "legend") {
     error(
       "certainty",
-      "true crime concerns real people and real harm; folklore belongs under local-legends",
+      "true crime concerns real people and real harm; folklore belongs under legend",
     );
   }
 

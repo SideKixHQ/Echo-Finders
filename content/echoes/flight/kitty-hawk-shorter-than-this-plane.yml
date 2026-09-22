@@ -1,0 +1,42 @@
+# The clearest case in the library for why mode matters. This echo only works at altitude:
+# the comparison it turns on is the aircraft the listener is physically sitting in.
+id: kitty-hawk-shorter-than-this-plane
+title: The first flight was shorter than this aeroplane
+summary: Twelve seconds, a hundred and twenty feet — less than the length of the cabin you are in.
+place: Kill Devil Hills, North Carolina
+at: { lat: 36.0146, lng: -75.6674 }
+triggerRadiusKm: 50
+voice: hP72SDESIJq2YuAblBqz
+category: history
+format: short
+durationS: 95
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.95
+tags: [north-carolina, outer-banks, aviation, wright-brothers]
+teaser: Look down at the sandbar on your left. Then look along the cabin.
+script: |
+  Look down and to your left. That thin line of sand between the sea and the sound is the
+  Outer Banks.
+
+  On the seventeenth of December nineteen oh three, on the dunes down there, an aeroplane
+  left the ground under its own power with a person aboard and landed at a point higher than
+  where it started. It was in the air for twelve seconds and it travelled a hundred and
+  twenty feet.
+
+  Now look along the cabin you are sitting in.
+
+  Depending on the aircraft, that entire first flight would have started and finished
+  without leaving this fuselage. They flew three more times that day; the longest covered
+  eight hundred and fifty-two feet.
+
+  Sixty-six years after the fourth flight, people landed on the moon.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: Wright Brothers National Memorial
+    publisher: National Park Service
+    url: https://www.nps.gov/wrbr/
+    retrievedAt: "2026-09-22"
+    rights: public-domain

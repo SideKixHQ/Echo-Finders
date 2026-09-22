@@ -139,7 +139,11 @@ describe("sponsored placements", () => {
     makeEcho({
       id: "ad-copper-onion",
       at: { lat: 40.762, lng: -111.891 },
-      category: "attractions",
+      // A restaurant placement is filed under what it is *about*, and carries its paid
+      // status in `sponsorship`. It used to sit under an "attractions" category, which is
+      // the same mistake `Sponsorship`'s own comment warns against — a commercial
+      // relationship is a property, not a subject.
+      category: "food-drink",
       minAge: ADVERTISING_MIN_AGE,
       sources: [],
       sponsorship: SPONSORSHIP,

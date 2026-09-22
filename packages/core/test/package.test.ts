@@ -15,7 +15,7 @@ const REVIEW: TrueCrimeReview = {
 /** A library with something for every audience, as a real corridor would have. */
 function mixedLibrary(): Echo[] {
   return [
-    ...echoesAlongJfkMia(40, ["history", "nature-science"]),
+    ...echoesAlongJfkMia(40, ["history", "land"]),
     ...echoesAlongJfkMia(30, ["kids"]).map((s) =>
       makeEcho({ ...s, id: `kids-${s.id}`, category: "kids", minAge: 0 }),
     ),
@@ -128,7 +128,7 @@ describe("buildEchoJourney", () => {
 
   it("can be narrowed to the categories an airline permits", () => {
     const pkg = buildEchoJourney(JFK_MIA, library, {
-      categories: ["kids", "history", "nature-science"],
+      categories: ["kids", "history", "land"],
     });
     // True crime has no coverage profile, so nothing schedules it as essential.
     expect(pkg.echoes.filter((s) => s.essential && s.echo.category === "true-crime")).toEqual([]);

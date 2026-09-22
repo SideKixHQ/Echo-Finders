@@ -1,0 +1,39 @@
+id: canaveral-free-speed
+title: Why the rockets are on this coast and not the other one
+summary: Launching east from Florida borrows about a thousand miles an hour from the Earth itself.
+place: Cape Canaveral, Florida
+at: { lat: 28.3922, lng: -80.6077 }
+triggerRadiusKm: 55
+voice: plP9aw1rizYgjFfuvLQ7
+category: land
+format: short
+durationS: 95
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.91
+tags: [florida, spaceflight, geography]
+teaser: The cape below is where almost everything the United States has launched went up.
+script: |
+  The cape below you is where nearly everything the United States has ever launched went up.
+
+  The reason it is there and not in Nevada comes down to two things, and neither is the
+  weather.
+
+  The first is the ocean. Rockets go east, and everything that falls off one on the way —
+  spent stages, and occasionally the whole thing — has to fall somewhere that is not a town.
+  East of that cape there is nothing but water for three thousand miles.
+
+  The second is that the Earth is already turning. At that latitude the ground is moving
+  east at about nine hundred miles an hour. Launch in the same direction and you start with
+  that speed for free.
+
+  The closer to the equator, the more you get. That is most of the reason the map of the
+  world's launch sites looks the way it does.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: Launch site selection and orbital mechanics
+    publisher: NASA
+    retrievedAt: "2026-09-22"
+    rights: public-domain

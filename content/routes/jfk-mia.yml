@@ -1,0 +1,37 @@
+# The first flight route, and the widest the engine ever runs: an eighty-kilometre corridor,
+# ten-minute timing tolerance, and echoes about things forty thousand feet below.
+#
+# Routed down the coast rather than inland, which is both realistic for this pairing and
+# where the material is — a flight across open country has long stretches with nothing to
+# say, and the Atlantic seaboard has the opposite problem.
+#
+# No dwells: an aircraft does not stop. The mode's destinationDwellS is zero for the same
+# reason — the listening is over at the gate.
+id: jfk-mia
+mode: flight
+name: New York to Miami — down the seaboard
+
+origin:
+  code: JFK
+  name: John F. Kennedy International
+  at: { lat: 40.6413, lng: -73.7781 }
+  timeZone: America/New_York
+
+destination:
+  code: MIA
+  name: Miami International
+  at: { lat: 25.7959, lng: -80.2870 }
+  timeZone: America/New_York
+
+durationS: 10800
+cruiseAltitudeFt: 35000
+
+waypoints:
+  - { name: JFK, at: { lat: 40.6413, lng: -73.7781 } }
+  - { name: Atlantic City, at: { lat: 39.3600, lng: -74.4200 } }
+  - { name: Kitty Hawk, at: { lat: 36.0700, lng: -75.7000 } }
+  - { name: Cape Hatteras, at: { lat: 35.2200, lng: -75.6300 } }
+  - { name: Myrtle Beach, at: { lat: 33.6900, lng: -78.8900 } }
+  - { name: Savannah, at: { lat: 32.0800, lng: -81.0900 } }
+  - { name: Cape Canaveral, at: { lat: 28.3900, lng: -80.6000 } }
+  - { name: MIA, at: { lat: 25.7959, lng: -80.2870 } }

@@ -1,5 +1,5 @@
 /**
- * React binding for `WalkSession`.
+ * React binding for `WalkSession`, whatever the travel mode.
  *
  * Deliberately thin. Every decision — what is near, what is opening, how hard to buzz,
  * what just captured — is made in the engine and arrives as an event; this only keeps the
@@ -22,7 +22,7 @@ import {
   type Position,
   type Route,
 } from "@echofinders/core";
-import { SimulatedWalk } from "./simulated-walk";
+import { SimulatedJourney } from "./simulated-journey";
 
 export interface WalkState {
   readonly position: Position | null;
@@ -35,20 +35,24 @@ export interface WalkState {
   readonly cue: HapticCue | null;
 }
 
+/**
+ * Everything except true crime, which is opt-in everywhere by design (OPT_IN_CATEGORIES)
+ * and has to be chosen rather than defaulted into.
+ */
 const LISTENER: ListenerProfile = {
-  categories: ["history", "culture-food", "famous-people", "landmarks", "nature-science", "kids"],
+  categories: ["history", "food-drink", "people", "built", "land", "arts", "legend", "kids"],
   age: 35,
   density: "immersive",
 };
 
-export function useWalk(route: Route, library: readonly Echo[]) {
+export function useJourney(route: Route, library: readonly Echo[]) {
   const walk = useMemo(() => {
-    // `?speed=2` slows the walk so the dwell ring can be watched filling; `?start=0.4`
+    // `?speed=2` slows the journey so the dwell ring can be watched filling; `?start=0.4`
     // drops in partway along.
     const params = new URLSearchParams(window.location.search);
     const timeScale = Number(params.get("speed"));
     const start = Number(params.get("start"));
-    const simulation = new SimulatedWalk(route, {
+    const simulation = new SimulatedJourney(route, {
       ...(Number.isFinite(timeScale) && timeScale > 0 ? { timeScale } : {}),
     });
     if (Number.isFinite(start) && start > 0) simulation.seekTo(start);
@@ -79,8 +83,12 @@ export function useWalk(route: Route, library: readonly Echo[]) {
       },
     };
 
-    return new WalkSession(library, LISTENER, { location: walk, haptics }, { mode: "walking" });
-  }, [library, walk]);
+    // The mode comes from the route, not from a constant. It is what selects the corridor
+    // width, the timing tolerance, the duty cycle and the position source — the whole
+    // difference between a walking tour and a flight — and hardcoding it here was the one
+    // thing stopping this prototype from exercising the other four.
+    return new WalkSession(library, LISTENER, { location: walk, haptics }, { mode: route.mode });
+  }, [library, walk, route.mode]);
 
   useEffect(() => {
     const off = session.subscribe((event) => {

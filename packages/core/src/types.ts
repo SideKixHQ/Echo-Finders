@@ -37,19 +37,68 @@ export function isOnFoot(mode: TravelMode): boolean {
 // Classification
 // ---------------------------------------------------------------------------
 
+/**
+ * What an echo is *about*.
+ *
+ * One axis only, and that is the whole discipline. The list this replaced carried three at
+ * once — subject ("history"), audience ("kids") and commercial intent ("attractions",
+ * "stay") — which meant every age gate, interest filter, variety rule and already-heard
+ * check treated "a hotel you could book" as a kind of story. That is exactly the argument
+ * `Sponsorship` below already makes about advertising, and it applies just as well here: a
+ * place you can go is a property an echo *has*, via `attraction`, not a thing it is about.
+ *
+ * Two tests before anything joins this list:
+ *
+ *   1. Does it answer "what is this echo about?" — not who it is for, and not what the
+ *      listener should do next.
+ *   2. Would somebody plausibly switch it off? A category nobody would ever deselect is
+ *      not a filter, it is a tag.
+ *
+ * Eight is also about as many toggles as a phone screen holds, and the scheduler's variety
+ * rules need a list short enough that repeats actually mean something.
+ */
 export const ECHO_CATEGORIES = [
+  /** What happened here. The backbone, and the default when nothing else fits better. */
   "history",
+  /** Its own gates, its own review, and the one category that is opt-in everywhere. */
   "true-crime",
-  "famous-people",
-  "nature-science",
-  "culture-food",
-  "local-legends",
-  "landmarks",
-  "attractions",
-  /** Somewhere to stay. Commercially useful and genuinely interesting when it has a past. */
-  "stay",
-  "music",
-  "industry",
+  /**
+   * Who was here.
+   *
+   * Deliberately not "famous-people". The best echoes about people are rarely about famous
+   * ones — eight million immigrants through one door beats a plaque about a senator — and
+   * the word "famous" quietly instructs a writer to go and find a celebrity.
+   */
+  "people",
+  /**
+   * The built environment: architecture, engineering, why a thing is the shape it is.
+   *
+   * Broader than the "landmarks" it replaces, because "why does this building have no
+   * windows" is a better echo than most famous structures can offer.
+   */
+  "built",
+  /** Geology, wildlife, weather, the shape of the ground. Why the place is where it is. */
+  "land",
+  /** What is eaten and drunk here, and what used to be. */
+  "food-drink",
+  /** Where it was written, recorded, filmed, painted or first performed. */
+  "arts",
+  /** Folklore, ghosts and tall tales — told as such. See `Certainty`. */
+  "legend",
+  /**
+   * Content written for children.
+   *
+   * The odd one out, and knowingly so: this is an *audience*, not a subject, which is the
+   * axis confusion the rest of this list just removed. The Pearl Street oysters echo is
+   * about history and is filed here, so a history filter cannot see it, and the scheduler's
+   * variety rule counts two children's echoes as a repeated subject when in kids mode every
+   * echo should be one.
+   *
+   * The right shape is a *telling*, like `simple` — one echo about a place, with a
+   * children's script, duration and narrator alongside the adult one. Left as a category
+   * for now because changing it moves content rather than a list, and it is the only entry
+   * here with anything filed under it.
+   */
   "kids",
 ] as const;
 
@@ -566,6 +615,14 @@ export interface Waypoint {
 export interface Route {
   readonly id: string;
   readonly mode: TravelMode;
+  /**
+   * What to call this journey to a person: "Blue Ridge Parkway — Asheville to Boone".
+   *
+   * Optional because a flight identifies itself perfectly well by its endpoints, while a
+   * curated walk is a named thing that someone chose and would be unrecognisable as
+   * "lower-manhattan-walk".
+   */
+  readonly name?: string;
   readonly origin: Place;
   readonly destination: Place;
   /**

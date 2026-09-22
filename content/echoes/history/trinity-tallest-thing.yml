@@ -4,7 +4,7 @@ summary: Sailors coming into the harbour saw the spire before they saw the city.
 place: Trinity Church, Broadway and Wall Street, Manhattan
 at: { lat: 40.70810, lng: -74.01220 }
 triggerRadiusKm: 0.08
-category: famous-people
+category: people
 format: short
 durationS: 85
 visibility: landmark-visible

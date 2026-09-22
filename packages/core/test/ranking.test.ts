@@ -72,7 +72,7 @@ describe("checkEligibility", () => {
   });
 
   it("distinguishes an opt-in category from one simply switched off", () => {
-    const musicOff = makeEcho({ id: "music", at: { lat: 33, lng: -79 }, category: "music" });
+    const musicOff = makeEcho({ id: "arts", at: { lat: 33, lng: -79 }, category: "arts" });
     const narrowed: ListenerProfile = { ...ADULT, categories: ["history"] };
     expect(checkEligibility(musicOff, { ...base, profile: narrowed }).reasons).toContain(
       "category-off",
@@ -271,7 +271,7 @@ describe("buildPlaylist", () => {
 
   it("keeps a child's flight free of adult material", () => {
     const adultLibrary = [
-      ...echoesAlongJfkMia(40, ["kids", "nature-science"]),
+      ...echoesAlongJfkMia(40, ["kids", "land"]),
       ...echoesAlongJfkMia(40, ["true-crime"]).map((s) =>
         makeEcho({ ...s, id: `tc-${s.id}`, minAge: 16, trueCrimeReview: REVIEW }),
       ),

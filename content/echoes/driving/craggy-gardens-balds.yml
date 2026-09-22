@@ -1,0 +1,45 @@
+id: craggy-gardens-balds
+title: Nobody is sure why the tops are bare
+summary: The southern Appalachian balds are treeless well below the tree line, and the reason is still argued over.
+place: Craggy Gardens, Blue Ridge Parkway
+at: { lat: 35.7011, lng: -82.3792 }
+triggerRadiusKm: 3
+voice: plP9aw1rizYgjFfuvLQ7
+category: land
+format: short
+durationS: 90
+visibility: landmark-visible
+certainty: contested
+certaintyNote: >-
+  Grazing, fire, ice-age climate and megafauna browsing have all been proposed. No single
+  explanation is accepted, and the script says so rather than picking one.
+minAge: 0
+quality: 0.85
+tags: [blue-ridge, north-carolina, appalachians, ecology]
+teaser: Look at the tops of the ridges. Something is missing.
+script: |
+  Look at the tops of the ridges around you. The trees stop, and then there is grass.
+
+  That is odd. These summits are nowhere near high enough to be above the tree line —
+  there are forests on mountains twice this height. Something else is keeping them bare.
+
+  They are called balds, and after a century of argument there is still no agreed
+  explanation. Cattle grazing is the obvious one, except some were bare before the cattle.
+  Fire. Ice-age climate that never quite reverted. Grazing by animals that are extinct.
+
+  What is agreed is that they are closing. Without something to keep them open, the forest
+  comes back, and it has been coming back for decades.
+
+  So the mystery is solving itself, in the least useful way.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: Craggy Gardens and the southern Appalachian balds
+    publisher: National Park Service
+    url: https://www.nps.gov/blri/
+    retrievedAt: "2026-09-22"
+    rights: public-domain
+  - title: Southern Appalachian grass and heath balds — origin and maintenance
+    publisher: USDA Forest Service, Southern Research Station
+    retrievedAt: "2026-09-22"
+    rights: public-domain

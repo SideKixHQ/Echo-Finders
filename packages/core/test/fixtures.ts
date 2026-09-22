@@ -153,7 +153,7 @@ export function makeEcho(draft: EchoDraft): Echo {
  */
 export function echoesAlongJfkMia(
   count: number,
-  categories: readonly EchoCategory[] = ["history", "famous-people", "nature-science", "culture-food"],
+  categories: readonly EchoCategory[] = ["history", "people", "land", "food-drink"],
 ): Echo[] {
   const geometry = buildRouteGeometry(JFK_MIA);
 
@@ -173,12 +173,12 @@ export function echoesAlongJfkMia(
 }
 
 export const ADULT: ListenerProfile = {
-  categories: ["history", "famous-people", "nature-science", "culture-food", "landmarks", "music"],
+  categories: ["history", "people", "land", "food-drink", "built", "arts"],
   age: 35,
 };
 
 export const CHILD: ListenerProfile = {
-  categories: ["kids", "nature-science", "history"],
+  categories: ["kids", "land", "history"],
   age: 7,
 };
 
@@ -260,7 +260,7 @@ export function echoesAlong(
       id: `${route.mode}-echo-${String(i).padStart(3, "0")}`,
       at,
       triggerRadiusKm: radius,
-      category: (["history", "famous-people", "culture-food", "landmarks"] as const)[i % 4]!,
+      category: (["history", "people", "food-drink", "built"] as const)[i % 4]!,
       ...overrides,
     });
   });

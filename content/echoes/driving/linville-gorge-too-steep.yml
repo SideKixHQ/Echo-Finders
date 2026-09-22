@@ -1,0 +1,43 @@
+id: linville-gorge-too-steep
+title: It survived by being difficult
+summary: Linville Gorge was never logged, because nobody could work out how to get the timber out.
+place: Linville Gorge, North Carolina
+at: { lat: 35.9606, lng: -82.0713 }
+triggerRadiusKm: 4
+voice: hP72SDESIJq2YuAblBqz
+category: land
+format: short
+durationS: 90
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.86
+tags: [blue-ridge, north-carolina, wilderness, forest]
+teaser: Almost every forest you have driven through today is second growth. One is not.
+script: |
+  Almost everything you have driven through today grew back. The southern Appalachians were
+  logged hard between about eighteen eighty and nineteen thirty, and most of what looks
+  ancient out there is a century old at most.
+
+  The gorge on your right is the exception.
+
+  It is around two thousand feet deep with walls to match, and the timber companies looked
+  at it and could not make the arithmetic work. There was no way to get logs out that cost
+  less than the logs were worth.
+
+  So it was left. Not protected, not fought over — just skipped.
+
+  It is one of the few places in the eastern United States where you can look at a forest
+  that nobody ever got around to cutting down.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: Linville Gorge Wilderness
+    publisher: USDA Forest Service
+    retrievedAt: "2026-09-22"
+    rights: public-domain
+  - title: Blue Ridge Parkway — Linville Falls
+    publisher: National Park Service
+    url: https://www.nps.gov/blri/
+    retrievedAt: "2026-09-22"
+    rights: public-domain

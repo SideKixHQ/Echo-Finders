@@ -1,14 +1,28 @@
-# Walking prototype
+# Prototype
 
-A simulated walk down Lower Manhattan, driven by the real engine.
+A simulated journey — on foot, by car or in the air — driven by the real engine.
 
 ```bash
 npm run library:build                      # compile content/ into src/library.generated.ts
-npm run dev -w @echofinders/walk-prototype
+npm run dev -w @echofinders/prototype
 ```
 
-Query parameters: `?speed=2` slows the walk so the dwell ring can be watched filling,
+Query parameters: `?speed=2` slows the journey so the dwell ring can be watched filling,
 `?start=0.4` drops in partway along.
+
+## Travel mode
+
+Air, car and walking, chosen in the panel beside the phone. This is the point of the
+prototype as much as the pin states are: **switching mode changes no code path at all.** It
+swaps one row of `MODE_PRESETS` for another, and everything downstream follows — corridor
+width (80km in the air, 300m on foot), how far an echo may play from its place (ten minutes
+against ninety seconds), talk-to-silence ratio, position source, and the offline package
+budget.
+
+Each mode has content of its own, filed by place in `content/` rather than by journey: the
+Lower Manhattan walk, the Blue Ridge Parkway, and New York to Miami down the seaboard. The
+map is given the echoes in the route's corridor rather than the whole library, which is the
+same question `findEchoesAlongRoute` answers for the scheduler.
 
 ## What is real and what is faked
 
@@ -16,9 +30,17 @@ Query parameters: `?speed=2` slows the walk so the dwell ring can be watched fil
 search, eligibility gates, dwell timing, capture, proximity guidance, haptic cues, rarity.
 The same code an iOS build runs.
 
-**Faked:** the GPS chip. `SimulatedWalk` implements the engine's `LocationSource` and walks
-the route at 4.5km/h with a few metres of jitter, so the smoothing in `ProximityGuide` is
-doing real work rather than being handed a perfect signal no street ever produces.
+**Faked:** the GPS chip. `SimulatedJourney` implements the engine's `LocationSource` and
+takes its position from `RouteProfile` — the same distance–time curve the scheduler plans
+against — with jitter sized to the accuracy the mode claims, so the smoothing in
+`ProximityGuide` is doing real work rather than being handed a perfect signal no street ever
+produces.
+
+Driving it from the profile rather than a constant speed matters: the traveller idles before
+setting off, slows on arrival, and actually stands still at the stops a route declares. A
+simulation with a speed of its own would disagree with the playlist about what the listener
+hears — a walker who strolls through Bowling Green at a steady pace cannot capture both
+echoes there.
 
 **Absent:** a basemap. Tile providers are unreachable from the build environment, and the
 pin states are what this exists to show. A real map slots in underneath without changing any
@@ -73,3 +95,11 @@ the collection footer changes with it.
 
 The camera viewfinder, provenance badges for contributed echoes, and sheet detents.
 `docs/ui-review.md` has the full list and the order I would build them in.
+
+One thing multi-modal support has newly exposed: **proximity guidance is a walking feature
+being shown in every mode.** Hot-and-cold haptics exist so somebody on foot can steer
+towards an echo without looking at the screen. A passenger cannot steer an aircraft and a
+driver cannot leave the Parkway, so in air and car the bar is telling them about a choice
+they do not have. The engine is right to emit guidance — proximity is proximity — but the
+client should probably stop rendering it above walking and cycling pace. Left as it is for
+now because it is a product decision, not a bug.

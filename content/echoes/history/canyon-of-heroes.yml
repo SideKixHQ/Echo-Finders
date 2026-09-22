@@ -4,7 +4,7 @@ summary: Granite strips in the pavement name every ticker-tape parade since 1886
 place: Broadway, the Canyon of Heroes, Manhattan
 at: { lat: 40.70980, lng: -74.01080 }
 triggerRadiusKm: 0.12
-category: culture-food
+category: food-drink
 format: short
 durationS: 55
 visibility: at-hand

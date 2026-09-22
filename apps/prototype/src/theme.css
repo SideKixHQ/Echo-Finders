@@ -196,6 +196,32 @@ body {
 .notes b { display: block; font-family: "Space Grotesk", monospace; color: var(--white); font-size: 13px; letter-spacing: 0.14em; margin-bottom: 12px; }
 .notes p { margin-bottom: 12px; }
 .notes code { font-family: "Space Grotesk", monospace; font-size: 11px; color: var(--aqua); }
+/* ── mode picker ─────────────────────────────────────────── */
+.modepicker { margin: 0 0 16px; }
+.modes { display: flex; gap: 6px; }
+.modes .mode {
+  font: inherit; font-size: 12px; font-weight: 600; flex: 1; padding: 9px 4px; cursor: pointer;
+  background: var(--slate); color: var(--cool);
+  border: 1px solid var(--line-2); border-radius: 9px;
+}
+.modes .mode:hover { border-color: var(--aqua); color: var(--aqua); }
+.modes .mode.on {
+  background: var(--aqua); color: var(--space); border-color: var(--aqua);
+}
+.routes { display: flex; flex-direction: column; gap: 4px; margin-top: 6px; }
+.routes .route {
+  font: inherit; font-size: 11px; text-align: left; padding: 6px 9px; cursor: pointer;
+  background: transparent; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 7px;
+}
+.routes .route:hover { color: var(--aqua); border-color: var(--line-2); }
+.routes .route.on { color: var(--white); border-color: var(--aqua); }
+.routes .route .count { float: right; color: var(--muted); font-size: 10px; }
+.routename {
+  font-family: "Space Grotesk", monospace; color: var(--white);
+  font-size: 12px; margin-bottom: 14px;
+}
+
 .controls { display: flex; gap: 8px; margin: 16px 0 12px; }
 .controls button {
   font: inherit; font-size: 12px; padding: 7px 12px; cursor: pointer;

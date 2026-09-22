@@ -27,7 +27,7 @@ const personal = (overrides: Partial<EchoDraft> = {}): Echo =>
     id: "grandmother-corner",
     at: WALL_STREET,
     triggerRadiusKm: 0.08,
-    category: "culture-food",
+    category: "food-drink",
     provenance: "personal",
     certainty: "testimony",
     contribution: contribution(),

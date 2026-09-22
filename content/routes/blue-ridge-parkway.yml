@@ -1,0 +1,33 @@
+# The first driving route, and the first test of the engine at car scale: a five-kilometre
+# corridor instead of three hundred metres, three-minute timing tolerance instead of ninety
+# seconds, and echoes about things a mile away rather than things you could touch.
+#
+# Dwell means something different here. A driver does not stand still — they pull into an
+# overlook, and the overlooks are the reason the Parkway exists. The dwells below are the
+# ones worth stopping at.
+id: blue-ridge-parkway
+mode: driving
+name: Blue Ridge Parkway — Asheville to Boone
+
+origin:
+  name: Asheville, North Carolina
+  at: { lat: 35.5951, lng: -82.5515 }
+  timeZone: America/New_York
+
+destination:
+  name: Boone, North Carolina
+  at: { lat: 36.2168, lng: -81.6746 }
+  timeZone: America/New_York
+
+# About 160km of Parkway at its 45mph limit, plus three stops. Nobody drives this in a hurry
+# and the route should not pretend otherwise.
+durationS: 10800
+
+waypoints:
+  - { name: Asheville, at: { lat: 35.5951, lng: -82.5515 } }
+  - { name: Craggy Gardens, at: { lat: 35.7011, lng: -82.3792 }, dwellS: 600 }
+  - { name: Mount Mitchell, at: { lat: 35.7654, lng: -82.2651 }, dwellS: 900 }
+  - { name: Linville Falls, at: { lat: 35.9606, lng: -82.0713 }, dwellS: 600 }
+  - { name: Linn Cove Viaduct, at: { lat: 36.0975, lng: -81.8097 } }
+  - { name: Grandfather Mountain, at: { lat: 36.1015, lng: -81.8164 } }
+  - { name: Boone, at: { lat: 36.2168, lng: -81.6746 } }

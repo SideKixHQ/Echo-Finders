@@ -13,7 +13,7 @@ import { parse as parseYaml } from "yaml";
 import { parseEcho, validateLibrary } from "@echofinders/core";
 
 const ROOT = new URL("..", import.meta.url).pathname;
-const OUT = join(ROOT, "apps", "walk-prototype", "src", "library.generated.ts");
+const OUT = join(ROOT, "apps", "prototype", "src", "library.generated.ts");
 
 async function* walk(dir) {
   for (const entry of await readdir(dir, { withFileTypes: true })) {
@@ -66,7 +66,28 @@ if (!report.ok) {
   process.exit(1);
 }
 
-const route = parseYaml(await readFile(join(ROOT, "content", "routes", "lower-manhattan-walk.yml"), "utf8"));
+// Every route in the library, not just the walk. The prototype lets you switch between
+// travel modes, and the whole point of that switch is that the same engine and the same
+// content directory drive all of them — a demo that only ever ran one mode would prove
+// nothing about the other four.
+const routeFiles = (await readdir(join(ROOT, "content", "routes"))).filter((f) => /\.ya?ml$/.test(f)).sort();
+const routes = [];
+for (const file of routeFiles) {
+  const route = parseYaml(await readFile(join(ROOT, "content", "routes", file), "utf8"));
+  routes.push({
+    id: route.id,
+    mode: route.mode,
+    name: route.name,
+    origin: route.origin,
+    destination: route.destination,
+    waypoints: route.waypoints,
+    durationS: route.durationS,
+    // Content files carry no departure time: when a journey starts is a runtime fact, not
+    // an editorial one. The prototype needs a fixed one so its simulated clock is stable.
+    departureAt: "2026-06-15T14:00:00Z",
+    ...(route.cruiseAltitudeFt ? { cruiseAltitudeFt: route.cruiseAltitudeFt } : {}),
+  });
+}
 
 await mkdir(dirname(OUT), { recursive: true });
 await writeFile(
@@ -78,19 +99,7 @@ await writeFile(
     `// something to play. The real library in content/ is untouched and still awaiting\n` +
     `// human fact-checking. Never import this into anything that ships.\n` +
     `export const LIBRARY: readonly Echo[] = ${JSON.stringify(demo, null, 2)} as const;\n\n` +
-    `export const ROUTE: Route = ${JSON.stringify(
-      {
-        id: route.id,
-        mode: route.mode,
-        origin: route.origin,
-        destination: route.destination,
-        waypoints: route.waypoints,
-        durationS: route.durationS,
-        departureAt: "2026-06-15T14:00:00Z",
-      },
-      null,
-      2,
-    )} as const;\n`,
+    `export const ROUTES: readonly Route[] = ${JSON.stringify(routes, null, 2)} as const;\n`,
   "utf8",
 );
 

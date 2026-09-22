@@ -1,0 +1,42 @@
+id: hatteras-moved-the-lighthouse
+title: They picked up the lighthouse and walked it inland
+summary: In 1999 the tallest brick lighthouse in America was moved half a mile, in one piece.
+place: Cape Hatteras, North Carolina
+at: { lat: 35.2508, lng: -75.5288 }
+triggerRadiusKm: 50
+voice: plP9aw1rizYgjFfuvLQ7
+category: built
+format: short
+durationS: 100
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.9
+tags: [north-carolina, outer-banks, lighthouse, coastal-erosion]
+teaser: The cape below you is the reason that stretch of sea is called the Graveyard of the Atlantic.
+script: |
+  The hook of sand below is Cape Hatteras. The shoals run out from it for a dozen miles
+  underwater, two ocean currents meet directly over them, and the wrecks in that stretch of
+  sea number in the hundreds. It has been called the Graveyard of the Atlantic since the
+  eighteen hundreds.
+
+  Which is why there has been a lighthouse down there since eighteen oh three, and the
+  current one — a hundred and ninety-eight feet of brick, the tallest in the country —
+  since eighteen seventy.
+
+  It was built fifteen hundred feet from the sea. By the nineteen nineties the sea was a
+  hundred and twenty feet away.
+
+  So in nineteen ninety-nine they jacked up four thousand eight hundred tons of brick,
+  put it on rails, and moved it. It took twenty-three days to travel twenty-nine hundred
+  feet.
+
+  It did not crack.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: Cape Hatteras Lighthouse relocation
+    publisher: National Park Service
+    url: https://www.nps.gov/caha/
+    retrievedAt: "2026-09-22"
+    rights: public-domain

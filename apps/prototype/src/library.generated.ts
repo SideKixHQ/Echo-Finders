@@ -66,6 +66,44 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "atlantic-city-first-boardwalk",
+    "title": "It was invented to keep sand out of the lobbies",
+    "summary": "The world's first boardwalk was built in 1870 by hoteliers tired of sweeping.",
+    "point": {
+      "at": {
+        "lat": 39.3643,
+        "lng": -74.4229
+      },
+      "triggerRadiusKm": 40,
+      "place": "Atlantic City, New Jersey"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 0,
+    "quality": 0.84,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Atlantic City Boardwalk — Historic American Engineering Record",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Down on your right, that pale line running along the back of the beach.\n\nBoardwalks exist everywhere now. That one is where the idea came from, and it was not\nbuilt for strolling.\n\nIn eighteen seventy the hotels and the railway on that beachfront had the same complaint:\nguests walked in off the sand and brought most of the beach with them, into the lobbies,\nonto the carpets, into the railway carriages. Sweeping it out was a full-time job.\n\nSo a conductor and a hotelier proposed a wooden walkway, laid straight onto the sand, that\npeople would use because it was easier than not using it.\n\nIt was taken up every autumn and stored for the winter.\n\nEverything else that word now means — the piers, the postcards, the amusements — grew on\ntop of a solution to a cleaning problem.\n",
+    "teaser": "The pale line along the beach below is the original of its kind.",
+    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "tags": [
+      "new-jersey",
+      "coast",
+      "seaside"
+    ]
+  },
+  {
     "id": "bowling-green-king-george",
     "title": "They pulled the king down and made him into bullets",
     "summary": "A crowd toppled a gilded statue of George III here in 1776 and melted it into musket balls.",
@@ -112,6 +150,44 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "canaveral-free-speed",
+    "title": "Why the rockets are on this coast and not the other one",
+    "summary": "Launching east from Florida borrows about a thousand miles an hour from the Earth itself.",
+    "point": {
+      "at": {
+        "lat": 28.3922,
+        "lng": -80.6077
+      },
+      "triggerRadiusKm": 55,
+      "place": "Cape Canaveral, Florida"
+    },
+    "category": "land",
+    "format": "short",
+    "durationS": 95,
+    "minAge": 0,
+    "quality": 0.91,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Launch site selection and orbital mechanics",
+        "publisher": "NASA",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The cape below you is where nearly everything the United States has ever launched went up.\n\nThe reason it is there and not in Nevada comes down to two things, and neither is the\nweather.\n\nThe first is the ocean. Rockets go east, and everything that falls off one on the way —\nspent stages, and occasionally the whole thing — has to fall somewhere that is not a town.\nEast of that cape there is nothing but water for three thousand miles.\n\nThe second is that the Earth is already turning. At that latitude the ground is moving\neast at about nine hundred miles an hour. Launch in the same direction and you start with\nthat speed for free.\n\nThe closer to the equator, the more you get. That is most of the reason the map of the\nworld's launch sites looks the way it does.\n",
+    "teaser": "The cape below is where almost everything the United States has launched went up.",
+    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "tags": [
+      "florida",
+      "spaceflight",
+      "geography"
+    ]
+  },
+  {
     "id": "canyon-of-heroes",
     "title": "A canyon named after confetti",
     "summary": "Granite strips in the pavement name every ticker-tape parade since 1886.",
@@ -123,7 +199,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.12,
       "place": "Broadway, the Canyon of Heroes, Manhattan"
     },
-    "category": "culture-food",
+    "category": "food-drink",
     "format": "short",
     "durationS": 55,
     "minAge": 0,
@@ -291,7 +367,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.12,
       "place": "Bowling Green, Broadway, Manhattan"
     },
-    "category": "culture-food",
+    "category": "food-drink",
     "format": "look-below",
     "durationS": 45,
     "minAge": 0,
@@ -361,6 +437,53 @@ export const LIBRARY: readonly Echo[] = [
       "new-york",
       "revolution",
       "washington"
+    ]
+  },
+  {
+    "id": "craggy-gardens-balds",
+    "title": "Nobody is sure why the tops are bare",
+    "summary": "The southern Appalachian balds are treeless well below the tree line, and the reason is still argued over.",
+    "point": {
+      "at": {
+        "lat": 35.7011,
+        "lng": -82.3792
+      },
+      "triggerRadiusKm": 3,
+      "place": "Craggy Gardens, Blue Ridge Parkway"
+    },
+    "category": "land",
+    "format": "short",
+    "durationS": 90,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "landmark-visible",
+    "certainty": "contested",
+    "sources": [
+      {
+        "title": "Craggy Gardens and the southern Appalachian balds",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/blri/"
+      },
+      {
+        "title": "Southern Appalachian grass and heath balds — origin and maintenance",
+        "publisher": "USDA Forest Service, Southern Research Station",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the tops of the ridges around you. The trees stop, and then there is grass.\n\nThat is odd. These summits are nowhere near high enough to be above the tree line —\nthere are forests on mountains twice this height. Something else is keeping them bare.\n\nThey are called balds, and after a century of argument there is still no agreed\nexplanation. Cattle grazing is the obvious one, except some were bare before the cattle.\nFire. Ice-age climate that never quite reverted. Grazing by animals that are extinct.\n\nWhat is agreed is that they are closing. Without something to keep them open, the forest\ncomes back, and it has been coming back for decades.\n\nSo the mystery is solving itself, in the least useful way.\n",
+    "teaser": "Look at the tops of the ridges. Something is missing.",
+    "certaintyNote": "Grazing, fire, ice-age climate and megafauna browsing have all been proposed. No single explanation is accepted, and the script says so rather than picking one.",
+    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "tags": [
+      "blue-ridge",
+      "north-carolina",
+      "appalachians",
+      "ecology"
     ]
   },
   {
@@ -519,6 +642,218 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "hatteras-moved-the-lighthouse",
+    "title": "They picked up the lighthouse and walked it inland",
+    "summary": "In 1999 the tallest brick lighthouse in America was moved half a mile, in one piece.",
+    "point": {
+      "at": {
+        "lat": 35.2508,
+        "lng": -75.5288
+      },
+      "triggerRadiusKm": 50,
+      "place": "Cape Hatteras, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 0,
+    "quality": 0.9,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Cape Hatteras Lighthouse relocation",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/caha/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The hook of sand below is Cape Hatteras. The shoals run out from it for a dozen miles\nunderwater, two ocean currents meet directly over them, and the wrecks in that stretch of\nsea number in the hundreds. It has been called the Graveyard of the Atlantic since the\neighteen hundreds.\n\nWhich is why there has been a lighthouse down there since eighteen oh three, and the\ncurrent one — a hundred and ninety-eight feet of brick, the tallest in the country —\nsince eighteen seventy.\n\nIt was built fifteen hundred feet from the sea. By the nineteen nineties the sea was a\nhundred and twenty feet away.\n\nSo in nineteen ninety-nine they jacked up four thousand eight hundred tons of brick,\nput it on rails, and moved it. It took twenty-three days to travel twenty-nine hundred\nfeet.\n\nIt did not crack.\n",
+    "teaser": "The cape below you is the reason that stretch of sea is called the Graveyard of the Atlantic.",
+    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "tags": [
+      "north-carolina",
+      "outer-banks",
+      "lighthouse",
+      "coastal-erosion"
+    ]
+  },
+  {
+    "id": "kitty-hawk-shorter-than-this-plane",
+    "title": "The first flight was shorter than this aeroplane",
+    "summary": "Twelve seconds, a hundred and twenty feet — less than the length of the cabin you are in.",
+    "point": {
+      "at": {
+        "lat": 36.0146,
+        "lng": -75.6674
+      },
+      "triggerRadiusKm": 50,
+      "place": "Kill Devil Hills, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 95,
+    "minAge": 0,
+    "quality": 0.95,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Wright Brothers National Memorial",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/wrbr/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down and to your left. That thin line of sand between the sea and the sound is the\nOuter Banks.\n\nOn the seventeenth of December nineteen oh three, on the dunes down there, an aeroplane\nleft the ground under its own power with a person aboard and landed at a point higher than\nwhere it started. It was in the air for twelve seconds and it travelled a hundred and\ntwenty feet.\n\nNow look along the cabin you are sitting in.\n\nDepending on the aircraft, that entire first flight would have started and finished\nwithout leaving this fuselage. They flew three more times that day; the longest covered\neight hundred and fifty-two feet.\n\nSixty-six years after the fourth flight, people landed on the moon.\n",
+    "teaser": "Look down at the sandbar on your left. Then look along the cabin.",
+    "voice": "hP72SDESIJq2YuAblBqz",
+    "tags": [
+      "north-carolina",
+      "outer-banks",
+      "aviation",
+      "wright-brothers"
+    ]
+  },
+  {
+    "id": "linn-cove-viaduct-last-piece",
+    "title": "The last seven miles took fifty-two years",
+    "summary": "The Parkway's final section opened in 1987, built from above so as not to touch the mountain.",
+    "point": {
+      "at": {
+        "lat": 36.0975,
+        "lng": -81.8097
+      },
+      "triggerRadiusKm": 3,
+      "place": "Linn Cove Viaduct, Blue Ridge Parkway"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 0,
+    "quality": 0.92,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Linn Cove Viaduct",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/blri/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The road ahead curls around the side of the mountain on concrete legs.\n\nConstruction on the Blue Ridge Parkway started in nineteen thirty-five. This stretch —\nabout seven miles of it — did not open until nineteen eighty-seven.\n\nThe hold-up was the mountain. Grandfather Mountain is old, steep and unusually rich in\nrare plants, and the ordinary way to put a road across something like that is to cut a\nshelf into it and push the spoil over the side. Nobody was willing to do that here.\n\nSo they built it from the top down instead. Each segment of the viaduct was cast off-site,\ncarried out along the piece already finished, and lowered into place. Almost no heavy\nmachinery ever touched the ground underneath it.\n\nThe Parkway is four hundred and sixty-nine miles long. The last seven took a third of the\ntime.\n",
+    "teaser": "The road you are on was the last part to be finished, and it took the longest.",
+    "voice": "hP72SDESIJq2YuAblBqz",
+    "tags": [
+      "blue-ridge",
+      "north-carolina",
+      "engineering",
+      "grandfather-mountain"
+    ]
+  },
+  {
+    "id": "linville-gorge-too-steep",
+    "title": "It survived by being difficult",
+    "summary": "Linville Gorge was never logged, because nobody could work out how to get the timber out.",
+    "point": {
+      "at": {
+        "lat": 35.9606,
+        "lng": -82.0713
+      },
+      "triggerRadiusKm": 4,
+      "place": "Linville Gorge, North Carolina"
+    },
+    "category": "land",
+    "format": "short",
+    "durationS": 90,
+    "minAge": 0,
+    "quality": 0.86,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Linville Gorge Wilderness",
+        "publisher": "USDA Forest Service",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      },
+      {
+        "title": "Blue Ridge Parkway — Linville Falls",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/blri/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Almost everything you have driven through today grew back. The southern Appalachians were\nlogged hard between about eighteen eighty and nineteen thirty, and most of what looks\nancient out there is a century old at most.\n\nThe gorge on your right is the exception.\n\nIt is around two thousand feet deep with walls to match, and the timber companies looked\nat it and could not make the arithmetic work. There was no way to get logs out that cost\nless than the logs were worth.\n\nSo it was left. Not protected, not fought over — just skipped.\n\nIt is one of the few places in the eastern United States where you can look at a forest\nthat nobody ever got around to cutting down.\n",
+    "teaser": "Almost every forest you have driven through today is second growth. One is not.",
+    "voice": "hP72SDESIJq2YuAblBqz",
+    "tags": [
+      "blue-ridge",
+      "north-carolina",
+      "wilderness",
+      "forest"
+    ]
+  },
+  {
+    "id": "mount-mitchell-buried-on-top",
+    "title": "He is buried on the summit he argued about",
+    "summary": "Elisha Mitchell died proving this was the highest peak in the east. He was right.",
+    "point": {
+      "at": {
+        "lat": 35.7654,
+        "lng": -82.2651
+      },
+      "triggerRadiusKm": 4,
+      "place": "Mount Mitchell, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 95,
+    "minAge": 0,
+    "quality": 0.88,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Mount Mitchell State Park",
+        "publisher": "North Carolina Division of Parks and Recreation",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      },
+      {
+        "title": "Blue Ridge Parkway — Mount Mitchell",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/blri/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Off to the left is the highest ground anywhere east of the Mississippi. Six thousand six\nhundred and eighty-four feet.\n\nIt is named after a professor called Elisha Mitchell, who measured it in the eighteen\nthirties and said it was the tallest. A former student of his said it was not, and said so\npublicly, at length.\n\nIn eighteen fifty-seven Mitchell went back up to take the measurements again and settle\nit. He did not come down. They found him days later in a pool below a waterfall.\n\nHis figures were correct, and the argument ended the way arguments do when one side stops\nbeing available.\n\nHe is buried on the summit.\n",
+    "teaser": "The highest ground east of the Mississippi is off to your left.",
+    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "tags": [
+      "blue-ridge",
+      "north-carolina",
+      "appalachians",
+      "mountains"
+    ]
+  },
+  {
     "id": "news-cafe-last-ordinary-morning",
     "title": "The last ordinary hour",
     "summary": "He came here most mornings that summer, bought magazines, and walked home.",
@@ -619,6 +954,44 @@ export const LIBRARY: readonly Echo[] = [
       "oysters",
       "food",
       "dutch"
+    ]
+  },
+  {
+    "id": "savannah-twenty-two-squares",
+    "title": "A city plan from 1733 that nobody has managed to undo",
+    "summary": "Savannah's grid of squares was drawn before the city existed, and most of it is still there.",
+    "point": {
+      "at": {
+        "lat": 32.0809,
+        "lng": -81.0912
+      },
+      "triggerRadiusKm": 45,
+      "place": "Savannah, Georgia"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 90,
+    "minAge": 0,
+    "quality": 0.87,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Savannah Historic District — National Historic Landmark documentation",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "If you can see the ground on the left, look for a pattern: a grid, interrupted at regular\nintervals by small green squares.\n\nThat layout was drawn in seventeen thirty-three, before there was a city to put it in.\nJames Oglethorpe laid out a repeating unit — a square with house lots and civic lots\naround it — and the plan was simply to keep repeating it as the place grew.\n\nTwenty-four were eventually built. Twenty-two are still there.\n\nCities almost never survive this. Street plans get widened for carts, then for trams, then\nfor cars, and the awkward bits get straightened out. Savannah's squares are exactly the\nawkward bits — they force traffic to slow down and go around.\n\nThree were lost to a road scheme in the nineteen fifties. One has since been put back.\n",
+    "teaser": "If the cloud is thin, look for the pattern. You will know it when you see it.",
+    "voice": "hP72SDESIJq2YuAblBqz",
+    "tags": [
+      "georgia",
+      "urban-planning",
+      "colonial"
     ]
   },
   {
@@ -731,7 +1104,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.08,
       "place": "Trinity Church, Broadway and Wall Street, Manhattan"
     },
-    "category": "famous-people",
+    "category": "people",
     "format": "short",
     "durationS": 85,
     "minAge": 0,
@@ -806,97 +1179,348 @@ export const LIBRARY: readonly Echo[] = [
   }
 ] as const;
 
-export const ROUTE: Route = {
-  "id": "lower-manhattan-walk",
-  "mode": "walking",
-  "origin": {
-    "name": "Battery Park",
-    "at": {
-      "lat": 40.7033,
-      "lng": -74.017
+export const ROUTES: readonly Route[] = [
+  {
+    "id": "blue-ridge-parkway",
+    "mode": "driving",
+    "name": "Blue Ridge Parkway — Asheville to Boone",
+    "origin": {
+      "name": "Asheville, North Carolina",
+      "at": {
+        "lat": 35.5951,
+        "lng": -82.5515
+      },
+      "timeZone": "America/New_York"
     },
-    "timeZone": "America/New_York"
-  },
-  "destination": {
-    "name": "African Burial Ground",
-    "at": {
-      "lat": 40.7145,
-      "lng": -74.0044
+    "destination": {
+      "name": "Boone, North Carolina",
+      "at": {
+        "lat": 36.2168,
+        "lng": -81.6746
+      },
+      "timeZone": "America/New_York"
     },
-    "timeZone": "America/New_York"
+    "waypoints": [
+      {
+        "name": "Asheville",
+        "at": {
+          "lat": 35.5951,
+          "lng": -82.5515
+        }
+      },
+      {
+        "name": "Craggy Gardens",
+        "at": {
+          "lat": 35.7011,
+          "lng": -82.3792
+        },
+        "dwellS": 600
+      },
+      {
+        "name": "Mount Mitchell",
+        "at": {
+          "lat": 35.7654,
+          "lng": -82.2651
+        },
+        "dwellS": 900
+      },
+      {
+        "name": "Linville Falls",
+        "at": {
+          "lat": 35.9606,
+          "lng": -82.0713
+        },
+        "dwellS": 600
+      },
+      {
+        "name": "Linn Cove Viaduct",
+        "at": {
+          "lat": 36.0975,
+          "lng": -81.8097
+        }
+      },
+      {
+        "name": "Grandfather Mountain",
+        "at": {
+          "lat": 36.1015,
+          "lng": -81.8164
+        }
+      },
+      {
+        "name": "Boone",
+        "at": {
+          "lat": 36.2168,
+          "lng": -81.6746
+        }
+      }
+    ],
+    "durationS": 10800,
+    "departureAt": "2026-06-15T14:00:00Z"
   },
-  "waypoints": [
-    {
+  {
+    "id": "central-park-west-lennon",
+    "mode": "walking",
+    "name": "Central Park West — three minutes apart",
+    "origin": {
+      "name": "The Dakota, 1 West 72nd Street",
+      "at": {
+        "lat": 40.77625,
+        "lng": -73.97596
+      },
+      "timeZone": "America/New_York"
+    },
+    "destination": {
+      "name": "Strawberry Fields",
+      "at": {
+        "lat": 40.77541,
+        "lng": -73.97461
+      },
+      "timeZone": "America/New_York"
+    },
+    "waypoints": [
+      {
+        "name": "The Dakota",
+        "at": {
+          "lat": 40.77625,
+          "lng": -73.97596
+        },
+        "dwellS": 150
+      },
+      {
+        "name": "West 72nd Street entrance",
+        "at": {
+          "lat": 40.77557,
+          "lng": -73.97531
+        }
+      },
+      {
+        "name": "Imagine mosaic",
+        "at": {
+          "lat": 40.77541,
+          "lng": -73.97461
+        }
+      }
+    ],
+    "durationS": 420,
+    "departureAt": "2026-06-15T14:00:00Z"
+  },
+  {
+    "id": "jfk-mia",
+    "mode": "flight",
+    "name": "New York to Miami — down the seaboard",
+    "origin": {
+      "code": "JFK",
+      "name": "John F. Kennedy International",
+      "at": {
+        "lat": 40.6413,
+        "lng": -73.7781
+      },
+      "timeZone": "America/New_York"
+    },
+    "destination": {
+      "code": "MIA",
+      "name": "Miami International",
+      "at": {
+        "lat": 25.7959,
+        "lng": -80.287
+      },
+      "timeZone": "America/New_York"
+    },
+    "waypoints": [
+      {
+        "name": "JFK",
+        "at": {
+          "lat": 40.6413,
+          "lng": -73.7781
+        }
+      },
+      {
+        "name": "Atlantic City",
+        "at": {
+          "lat": 39.36,
+          "lng": -74.42
+        }
+      },
+      {
+        "name": "Kitty Hawk",
+        "at": {
+          "lat": 36.07,
+          "lng": -75.7
+        }
+      },
+      {
+        "name": "Cape Hatteras",
+        "at": {
+          "lat": 35.22,
+          "lng": -75.63
+        }
+      },
+      {
+        "name": "Myrtle Beach",
+        "at": {
+          "lat": 33.69,
+          "lng": -78.89
+        }
+      },
+      {
+        "name": "Savannah",
+        "at": {
+          "lat": 32.08,
+          "lng": -81.09
+        }
+      },
+      {
+        "name": "Cape Canaveral",
+        "at": {
+          "lat": 28.39,
+          "lng": -80.6
+        }
+      },
+      {
+        "name": "MIA",
+        "at": {
+          "lat": 25.7959,
+          "lng": -80.287
+        }
+      }
+    ],
+    "durationS": 10800,
+    "departureAt": "2026-06-15T14:00:00Z",
+    "cruiseAltitudeFt": 35000
+  },
+  {
+    "id": "lower-manhattan-walk",
+    "mode": "walking",
+    "name": "Lower Manhattan — the Battery to the African Burial Ground",
+    "origin": {
       "name": "Battery Park",
       "at": {
         "lat": 40.7033,
         "lng": -74.017
-      }
-    },
-    {
-      "name": "Bowling Green",
-      "at": {
-        "lat": 40.7046,
-        "lng": -74.0132
       },
-      "dwellS": 240
+      "timeZone": "America/New_York"
     },
-    {
-      "name": "Fraunces Tavern",
-      "at": {
-        "lat": 40.7036,
-        "lng": -74.0112
-      },
-      "dwellS": 240
-    },
-    {
-      "name": "Federal Hall",
-      "at": {
-        "lat": 40.7073,
-        "lng": -74.01
-      },
-      "dwellS": 240
-    },
-    {
-      "name": "Trinity Church",
-      "at": {
-        "lat": 40.7081,
-        "lng": -74.0122
-      },
-      "dwellS": 150
-    },
-    {
-      "name": "Canyon of Heroes",
-      "at": {
-        "lat": 40.7098,
-        "lng": -74.0108
-      },
-      "dwellS": 120
-    },
-    {
-      "name": "St Paul's Chapel",
-      "at": {
-        "lat": 40.7112,
-        "lng": -74.0092
-      },
-      "dwellS": 130
-    },
-    {
-      "name": "City Hall Park",
-      "at": {
-        "lat": 40.7127,
-        "lng": -74.006
-      },
-      "dwellS": 130
-    },
-    {
+    "destination": {
       "name": "African Burial Ground",
       "at": {
         "lat": 40.7145,
         "lng": -74.0044
+      },
+      "timeZone": "America/New_York"
+    },
+    "waypoints": [
+      {
+        "name": "Battery Park",
+        "at": {
+          "lat": 40.7033,
+          "lng": -74.017
+        }
+      },
+      {
+        "name": "Bowling Green",
+        "at": {
+          "lat": 40.7046,
+          "lng": -74.0132
+        },
+        "dwellS": 240
+      },
+      {
+        "name": "Fraunces Tavern",
+        "at": {
+          "lat": 40.7036,
+          "lng": -74.0112
+        },
+        "dwellS": 240
+      },
+      {
+        "name": "Federal Hall",
+        "at": {
+          "lat": 40.7073,
+          "lng": -74.01
+        },
+        "dwellS": 240
+      },
+      {
+        "name": "Trinity Church",
+        "at": {
+          "lat": 40.7081,
+          "lng": -74.0122
+        },
+        "dwellS": 150
+      },
+      {
+        "name": "Canyon of Heroes",
+        "at": {
+          "lat": 40.7098,
+          "lng": -74.0108
+        },
+        "dwellS": 120
+      },
+      {
+        "name": "St Paul's Chapel",
+        "at": {
+          "lat": 40.7112,
+          "lng": -74.0092
+        },
+        "dwellS": 130
+      },
+      {
+        "name": "City Hall Park",
+        "at": {
+          "lat": 40.7127,
+          "lng": -74.006
+        },
+        "dwellS": 130
+      },
+      {
+        "name": "African Burial Ground",
+        "at": {
+          "lat": 40.7145,
+          "lng": -74.0044
+        }
       }
-    }
-  ],
-  "durationS": 3000,
-  "departureAt": "2026-06-15T14:00:00Z"
-} as const;
+    ],
+    "durationS": 3000,
+    "departureAt": "2026-06-15T14:00:00Z"
+  },
+  {
+    "id": "ocean-drive-versace",
+    "mode": "walking",
+    "name": "Ocean Drive — the walk home",
+    "origin": {
+      "name": "News Café, 800 Ocean Drive",
+      "at": {
+        "lat": 25.78013,
+        "lng": -80.13003
+      },
+      "timeZone": "America/New_York"
+    },
+    "destination": {
+      "name": "Casa Casuarina, 1116 Ocean Drive",
+      "at": {
+        "lat": 25.7837,
+        "lng": -80.12985
+      },
+      "timeZone": "America/New_York"
+    },
+    "waypoints": [
+      {
+        "name": "News Café",
+        "at": {
+          "lat": 25.78013,
+          "lng": -80.13003
+        },
+        "dwellS": 150
+      },
+      {
+        "name": "Casa Casuarina",
+        "at": {
+          "lat": 25.7837,
+          "lng": -80.12985
+        }
+      }
+    ],
+    "durationS": 540,
+    "departureAt": "2026-06-15T14:00:00Z"
+  }
+] as const;

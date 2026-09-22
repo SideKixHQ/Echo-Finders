@@ -1,0 +1,40 @@
+id: atlantic-city-first-boardwalk
+title: It was invented to keep sand out of the lobbies
+summary: The world's first boardwalk was built in 1870 by hoteliers tired of sweeping.
+place: Atlantic City, New Jersey
+at: { lat: 39.3643, lng: -74.4229 }
+triggerRadiusKm: 40
+voice: plP9aw1rizYgjFfuvLQ7
+category: built
+format: short
+durationS: 85
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.84
+tags: [new-jersey, coast, seaside]
+teaser: The pale line along the beach below is the original of its kind.
+script: |
+  Down on your right, that pale line running along the back of the beach.
+
+  Boardwalks exist everywhere now. That one is where the idea came from, and it was not
+  built for strolling.
+
+  In eighteen seventy the hotels and the railway on that beachfront had the same complaint:
+  guests walked in off the sand and brought most of the beach with them, into the lobbies,
+  onto the carpets, into the railway carriages. Sweeping it out was a full-time job.
+
+  So a conductor and a hotelier proposed a wooden walkway, laid straight onto the sand, that
+  people would use because it was easier than not using it.
+
+  It was taken up every autumn and stored for the winter.
+
+  Everything else that word now means — the piers, the postcards, the amusements — grew on
+  top of a solution to a cleaning problem.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: Atlantic City Boardwalk — Historic American Engineering Record
+    publisher: Library of Congress
+    retrievedAt: "2026-09-22"
+    rights: public-domain

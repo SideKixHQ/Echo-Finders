@@ -1,0 +1,43 @@
+id: mount-mitchell-buried-on-top
+title: He is buried on the summit he argued about
+summary: Elisha Mitchell died proving this was the highest peak in the east. He was right.
+place: Mount Mitchell, North Carolina
+at: { lat: 35.7654, lng: -82.2651 }
+triggerRadiusKm: 4
+voice: plP9aw1rizYgjFfuvLQ7
+category: people
+format: short
+durationS: 95
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.88
+tags: [blue-ridge, north-carolina, appalachians, mountains]
+teaser: The highest ground east of the Mississippi is off to your left.
+script: |
+  Off to the left is the highest ground anywhere east of the Mississippi. Six thousand six
+  hundred and eighty-four feet.
+
+  It is named after a professor called Elisha Mitchell, who measured it in the eighteen
+  thirties and said it was the tallest. A former student of his said it was not, and said so
+  publicly, at length.
+
+  In eighteen fifty-seven Mitchell went back up to take the measurements again and settle
+  it. He did not come down. They found him days later in a pool below a waterfall.
+
+  His figures were correct, and the argument ended the way arguments do when one side stops
+  being available.
+
+  He is buried on the summit.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: Mount Mitchell State Park
+    publisher: North Carolina Division of Parks and Recreation
+    retrievedAt: "2026-09-22"
+    rights: public-domain
+  - title: Blue Ridge Parkway — Mount Mitchell
+    publisher: National Park Service
+    url: https://www.nps.gov/blri/
+    retrievedAt: "2026-09-22"
+    rights: public-domain

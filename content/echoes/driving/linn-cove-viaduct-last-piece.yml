@@ -1,0 +1,40 @@
+id: linn-cove-viaduct-last-piece
+title: The last seven miles took fifty-two years
+summary: The Parkway's final section opened in 1987, built from above so as not to touch the mountain.
+place: Linn Cove Viaduct, Blue Ridge Parkway
+at: { lat: 36.0975, lng: -81.8097 }
+triggerRadiusKm: 3
+voice: hP72SDESIJq2YuAblBqz
+category: built
+format: short
+durationS: 100
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.92
+tags: [blue-ridge, north-carolina, engineering, grandfather-mountain]
+teaser: The road you are on was the last part to be finished, and it took the longest.
+script: |
+  The road ahead curls around the side of the mountain on concrete legs.
+
+  Construction on the Blue Ridge Parkway started in nineteen thirty-five. This stretch —
+  about seven miles of it — did not open until nineteen eighty-seven.
+
+  The hold-up was the mountain. Grandfather Mountain is old, steep and unusually rich in
+  rare plants, and the ordinary way to put a road across something like that is to cut a
+  shelf into it and push the spoil over the side. Nobody was willing to do that here.
+
+  So they built it from the top down instead. Each segment of the viaduct was cast off-site,
+  carried out along the piece already finished, and lowered into place. Almost no heavy
+  machinery ever touched the ground underneath it.
+
+  The Parkway is four hundred and sixty-nine miles long. The last seven took a third of the
+  time.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: Linn Cove Viaduct
+    publisher: National Park Service
+    url: https://www.nps.gov/blri/
+    retrievedAt: "2026-09-22"
+    rights: public-domain
