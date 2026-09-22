@@ -4,7 +4,7 @@
 # domain — which satisfies the MVP rights policy (ADR-0006) with no licence conversation.
 id: lower-manhattan-walk
 mode: walking
-name: Lower Manhattan — the Battery to City Hall
+name: Lower Manhattan — the Battery to the African Burial Ground
 
 origin:
   name: Battery Park
@@ -12,16 +12,31 @@ origin:
   timeZone: America/New_York
 
 destination:
-  name: City Hall Park
-  at: { lat: 40.7127, lng: -74.0060 }
+  name: African Burial Ground
+  at: { lat: 40.7145, lng: -74.0044 }
   timeZone: America/New_York
 
-durationS: 2400
+# About 2.2km: roughly half an hour of actual walking, and another twenty minutes standing
+# still. The dwells below are not padding — they are what makes this a tour rather than a
+# route. Bowling Green, Fraunces Tavern and Federal Hall each carry two echoes, and two
+# echoes about one corner only both fit if the listener is standing on it.
+#
+# durationS is the door-to-door total and the dwells come out of it, so raising a stop
+# shortens the walk rather than lengthening the tour.
+durationS: 3000
 
 waypoints:
   - { name: Battery Park,      at: { lat: 40.7033, lng: -74.0170 } }
-  - { name: Bowling Green,     at: { lat: 40.7046, lng: -74.0132 } }
-  - { name: Wall Street,       at: { lat: 40.7069, lng: -74.0113 } }
-  - { name: Federal Hall,      at: { lat: 40.7073, lng: -74.0100 } }
-  - { name: St Paul's Chapel,  at: { lat: 40.7115, lng: -74.0077 } }
-  - { name: City Hall Park,    at: { lat: 40.7127, lng: -74.0060 } }
+  # Two echoes: the King George statue and the Charging Bull, both on this one square.
+  - { name: Bowling Green,     at: { lat: 40.7046, lng: -74.0132 }, dwellS: 240 }
+  # Two: Washington's farewell, and the oyster shells under Pearl Street.
+  - { name: Fraunces Tavern,   at: { lat: 40.7036, lng: -74.0112 }, dwellS: 240 }
+  # Two: the inauguration and first Congress, and the wall Wall Street is named after.
+  - { name: Federal Hall,      at: { lat: 40.7073, lng: -74.0100 }, dwellS: 240 }
+  - { name: Trinity Church,    at: { lat: 40.7081, lng: -74.0122 }, dwellS: 150 }
+  - { name: Canyon of Heroes,  at: { lat: 40.7098, lng: -74.0108 }, dwellS: 120 }
+  - { name: St Paul's Chapel,  at: { lat: 40.7112, lng: -74.0092 }, dwellS: 130 }
+  - { name: City Hall Park,    at: { lat: 40.7127, lng: -74.0060 }, dwellS: 130 }
+  # No dwell: arriving here ends the route. The time spent standing at the memorial is the
+  # mode's destination dwell, which reopens the listening window past the route's end.
+  - { name: African Burial Ground, at: { lat: 40.7145, lng: -74.0044 } }

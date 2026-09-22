@@ -1,0 +1,49 @@
+id: wall-street-the-wall
+title: The street is named after something that isn't there
+summary: A nine-foot palisade crossed the island here, built mostly by people who were not free.
+place: Wall Street, Manhattan
+at: { lat: 40.70740, lng: -74.01100 }
+triggerRadiusKm: 0.1
+category: history
+format: short
+durationS: 90
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.92
+voice: hP72SDESIJq2YuAblBqz
+tags: [new-york, dutch, slavery, wall-street]
+teaser: Look down the street. It runs river to river.
+script: |
+  Look down the street. It runs river to river — you can very nearly see one end from the
+  other.
+
+  That is not an accident. It is the width of the island, and in 1653 the Dutch decided to
+  fence it off.
+
+  The governor, Peter Stuyvesant, ordered a palisade built right across here. Nine feet
+  high, made of packed earth and fifteen-foot planks, running from the Hudson to the East
+  River. It was meant to stop an English invasion.
+
+  The people who built it were mostly enslaved Africans, owned by the Dutch West India
+  Company.
+
+  The invasion never came. The English took the colony anyway, eleven years later, by
+  sailing in and asking. And in 1699 they pulled the wall down and used the wood for
+  something else.
+
+  It stood for forty-six years. It has been gone for more than three hundred.
+
+  The street kept the name — which means this is a street named after a thing that is not
+  there, put up by people who were never free to walk away from it.
+pronunciations:
+  - written: Peter Stuyvesant
+    say: STY-ve-sant
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: Anniversary of Wall Street
+    publisher: NYC Department of Records & Information Services
+    url: https://www.archives.nyc/blog/2023/3/9/anniversary-of-wall-street
+    retrievedAt: "2026-09-22"
+    rights: public-domain

@@ -1,0 +1,44 @@
+id: st-pauls-still-standing
+title: The building that keeps not burning down
+summary: Manhattan's oldest public building in continuous use, and what stood between it and the towers.
+place: St Paul's Chapel, Broadway, Manhattan
+at: { lat: 40.71120, lng: -74.00920 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.94
+voice: hP72SDESIJq2YuAblBqz
+tags: [new-york, churches, washington, september-11]
+teaser: The oldest building in Manhattan still doing its job.
+script: |
+  This is the oldest public building in Manhattan still doing the thing it was built to do.
+
+  It went up in 1766, when this was the northern edge of town and the front of the chapel
+  faced the river, because that was the direction people arrived from.
+
+  Ten years later a fire took a quarter of the city and stopped at its churchyard.
+
+  George Washington came here on the day he was inaugurated, and kept coming for the two
+  years New York was the capital. His pew is still inside.
+
+  On the eleventh of September 2001, the towers came down about a hundred metres from where
+  you are standing. Every window in this chapel survived. For eight months afterwards it
+  was where the recovery workers slept and ate and had their feet seen to.
+
+  A sycamore tree in the churchyard took the weight of the debris that would otherwise have
+  hit the building. It did not survive. The chapel did.
+pronunciations:
+  - written: sycamore
+    say: SIK-a-more
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: St Paul's Chapel
+    publisher: National Park Service
+    url: https://www.nps.gov/places/st-paul-s-chapel.htm
+    retrievedAt: "2026-09-22"
+    rights: public-domain

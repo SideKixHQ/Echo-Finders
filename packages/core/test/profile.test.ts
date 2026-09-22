@@ -3,7 +3,7 @@ import { RouteProfile, positionAtTime } from "../src/route/profile.js";
 import { buildRouteGeometry } from "../src/geo/corridor.js";
 import { distanceKm } from "../src/geo/great-circle.js";
 import { isDaylight, localSolarHour, solarElevationDeg } from "../src/geo/solar.js";
-import { JFK_MIA } from "./fixtures.js";
+import { JFK_MIA, MANHATTAN_WALK } from "./fixtures.js";
 
 const THREE_HOURS = 10_800;
 const TOTAL_KM = 1800;
@@ -130,5 +130,100 @@ describe("solar position", () => {
   it("derives a plausible local solar hour from longitude", () => {
     const hour = localSolarHour({ lat: 0, lng: -75 }, Date.parse("2026-06-15T17:00:00Z"));
     expect(hour).toBeCloseTo(12, 0);
+  });
+});
+
+describe("RouteProfile stops", () => {
+  const geometry = buildRouteGeometry(MANHATTAN_WALK);
+  const halfway = geometry.totalKm / 2;
+
+  it("holds the traveller still for the length of a stop", () => {
+    const profile = new RouteProfile(MANHATTAN_WALK.durationS, geometry.totalKm, "walking", {
+      stops: [{ distanceKm: halfway, seconds: 300 }],
+    });
+
+    const arrival = profile.timeAtDistance(halfway);
+    // Standing still means the distance does not move, whatever the clock does.
+    expect(profile.distanceAtTime(arrival + 1)).toBeCloseTo(halfway, 3);
+    expect(profile.distanceAtTime(arrival + 299)).toBeCloseTo(halfway, 3);
+    expect(profile.distanceAtTime(arrival + 320)).toBeGreaterThan(halfway);
+  });
+
+  it("reports arrival at a stop, not departure from it", () => {
+    // The scheduler anchors an echo to the moment the listener is nearest it, and at a
+    // stop that moment lasts the whole dwell. Reporting the end of the dwell would leave
+    // an echo about the place unplayable for the entire time the listener stands in it.
+    const profile = new RouteProfile(MANHATTAN_WALK.durationS, geometry.totalKm, "walking", {
+      stops: [{ distanceKm: halfway, seconds: 300 }],
+    });
+    const arrival = profile.timeAtDistance(halfway);
+    expect(profile.distanceAtTime(arrival)).toBeCloseTo(halfway, 3);
+  });
+
+  it("takes dwell out of the route's duration rather than adding it on", () => {
+    const withoutStops = new RouteProfile(MANHATTAN_WALK.durationS, geometry.totalKm, "walking");
+    const withStops = new RouteProfile(MANHATTAN_WALK.durationS, geometry.totalKm, "walking", {
+      stops: [{ distanceKm: halfway, seconds: 600 }],
+    });
+
+    // Same door-to-door total either way — the legs simply speed up to pay for the stop.
+    expect(withStops.distanceAtTime(MANHATTAN_WALK.durationS)).toBeCloseTo(geometry.totalKm, 6);
+    // And the walk to the stop is quicker than it would have been without one.
+    expect(withStops.timeAtDistance(halfway)).toBeLessThan(withoutStops.timeAtDistance(halfway));
+  });
+
+  it("derives its stops from the waypoints' dwell times", () => {
+    const stopped: typeof MANHATTAN_WALK = {
+      ...MANHATTAN_WALK,
+      waypoints: MANHATTAN_WALK.waypoints.map((waypoint, i) =>
+        i === 2 ? { ...waypoint, dwellS: 300 } : waypoint,
+      ),
+    };
+    const profile = RouteProfile.forRoute(stopped, geometry);
+    const stopKm = geometry.cumulativeKm[geometry.waypointIndex[2]!]!;
+    const arrival = profile.timeAtDistance(stopKm);
+    expect(profile.distanceAtTime(arrival + 200)).toBeCloseTo(stopKm, 3);
+  });
+
+  it("ignores a dwell on the origin, which is time before the route starts", () => {
+    const stopped: typeof MANHATTAN_WALK = {
+      ...MANHATTAN_WALK,
+      waypoints: MANHATTAN_WALK.waypoints.map((waypoint, i) =>
+        i === 0 ? { ...waypoint, dwellS: 600 } : waypoint,
+      ),
+    };
+    const profile = RouteProfile.forRoute(stopped, geometry);
+    const plain = RouteProfile.forRoute(MANHATTAN_WALK, geometry);
+    expect(profile.timeAtDistance(halfway)).toBeCloseTo(plain.timeAtDistance(halfway), 6);
+  });
+
+  it("scales impossible dwell down rather than leaving negative time to travel in", () => {
+    // Content error, not a design case: stops totalling more than the route lasts. The
+    // curve has to stay well formed, so the mistake shows up as an implausibly brisk walk.
+    const profile = new RouteProfile(600, 2, "walking", {
+      stops: [
+        { distanceKm: 0.5, seconds: 900 },
+        { distanceKm: 1.5, seconds: 900 },
+      ],
+    });
+    expect(profile.distanceAtTime(600)).toBeCloseTo(2, 6);
+    expect(profile.timeAtDistance(2)).toBeLessThanOrEqual(600);
+  });
+});
+
+describe("listening window", () => {
+  it("stays open past the end of a walk, so the destination can have an echo", () => {
+    // The last waypoint is the one place the geometry cannot help itself: an echo there is
+    // anchored at the very end of the route and needs room after it. On foot the listener
+    // is standing at the destination looking at the thing, so the window reopens.
+    const geometry = buildRouteGeometry(MANHATTAN_WALK);
+    const profile = RouteProfile.forRoute(MANHATTAN_WALK, geometry);
+    expect(profile.listeningWindow().endS).toBeGreaterThan(MANHATTAN_WALK.durationS);
+  });
+
+  it("closes on arrival for a flight, where there is no standing about", () => {
+    const geometry = buildRouteGeometry(JFK_MIA);
+    const profile = RouteProfile.forRoute(JFK_MIA, geometry);
+    expect(profile.listeningWindow().endS).toBeLessThan(JFK_MIA.durationS);
   });
 });

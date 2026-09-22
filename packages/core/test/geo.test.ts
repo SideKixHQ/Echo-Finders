@@ -214,3 +214,29 @@ describe("boundingBox", () => {
     expect(() => boundingBox([])).toThrow();
   });
 });
+
+describe("waypoint indices", () => {
+  it("points at the densified positions the route's own waypoints landed on", () => {
+    // Densification inserts points between waypoints, so a waypoint's place in `points` is
+    // not its place in `Route.waypoints`. Anything needing a waypoint's distance along the
+    // route — a stop's dwell — has to come back through here rather than re-summing legs.
+    const geometry = buildRouteGeometry(JFK_MIA);
+    expect(geometry.waypointIndex.length).toBe(JFK_MIA.waypoints.length);
+    expect(geometry.waypointIndex[0]).toBe(0);
+    expect(geometry.waypointIndex[JFK_MIA.waypoints.length - 1]).toBe(geometry.points.length - 1);
+
+    JFK_MIA.waypoints.forEach((waypoint, i) => {
+      const point = geometry.points[geometry.waypointIndex[i]!]!;
+      expect(distanceKm(point, waypoint.at)).toBeLessThan(0.001);
+    });
+  });
+
+  it("keeps waypoint distances in step with the densified total", () => {
+    const geometry = buildRouteGeometry(JFK_MIA);
+    const distances = geometry.waypointIndex.map((i) => geometry.cumulativeKm[i]!);
+    for (let i = 1; i < distances.length; i++) {
+      expect(distances[i]!).toBeGreaterThan(distances[i - 1]!);
+    }
+    expect(distances[distances.length - 1]).toBeCloseTo(geometry.totalKm, 6);
+  });
+});

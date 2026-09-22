@@ -22,6 +22,15 @@ export interface RouteGeometry {
   readonly points: readonly LatLng[];
   /** `cumulativeKm[i]` is the distance from the origin to `points[i]`. */
   readonly cumulativeKm: readonly number[];
+  /**
+   * `waypointIndex[i]` is the index in `points` of the route's i-th waypoint.
+   *
+   * Densification inserts points between waypoints, so a waypoint's position in `points`
+   * is not its position in `Route.waypoints`. Anything that needs a waypoint's distance
+   * along the route — a stop's dwell, in practice — has to come back through here rather
+   * than re-summing the legs, which would disagree with the densified total.
+   */
+  readonly waypointIndex: readonly number[];
   readonly totalKm: number;
 }
 
@@ -57,6 +66,7 @@ export function buildRouteGeometry(plan: Route, segmentKm?: number): RouteGeomet
 
   const points: LatLng[] = [waypoints[0]!.at];
   const cumulativeKm: number[] = [0];
+  const waypointIndex: number[] = [0];
   let running = 0;
 
   for (let i = 0; i < waypoints.length - 1; i++) {
@@ -72,9 +82,10 @@ export function buildRouteGeometry(plan: Route, segmentKm?: number): RouteGeomet
       points.push(point);
       cumulativeKm.push(running);
     }
+    waypointIndex.push(points.length - 1);
   }
 
-  return { points, cumulativeKm, totalKm: running };
+  return { points, cumulativeKm, waypointIndex, totalKm: running };
 }
 
 /** Where an echo sits relative to the whole route. */

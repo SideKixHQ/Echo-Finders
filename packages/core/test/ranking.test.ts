@@ -4,7 +4,17 @@ import type { EligibilityContext, ScoreContext } from "../src/ranking/score.js";
 import { buildPlaylist } from "../src/ranking/playlist.js";
 import type { CorridorHit } from "../src/geo/corridor.js";
 import type { ListenerProfile, Echo, TrueCrimeReview } from "../src/types.js";
-import { ADULT, CHILD, JFK_MIA, makeEcho, echoesAlongJfkMia, TRUE_CRIME_FAN } from "./fixtures.js";
+import {
+  ADULT,
+  CHILD,
+  JFK_MIA,
+  MANHATTAN_WALK,
+  makeEcho,
+  echoesAlongJfkMia,
+  TRUE_CRIME_FAN,
+} from "./fixtures.js";
+import { buildRouteGeometry, pointAtDistance } from "../src/geo/corridor.js";
+import { RouteProfile } from "../src/route/profile.js";
 
 const NOON_UTC = Date.parse("2026-06-15T17:00:00Z");
 
@@ -347,5 +357,115 @@ describe("buildPlaylist", () => {
     const silent = library.map((s) => makeEcho({ ...s, audioKey: undefined }));
     expect(buildPlaylist(JFK_MIA, silent, ADULT, { requireAudio: true }).items.length).toBe(0);
     expect(buildPlaylist(JFK_MIA, silent, ADULT).items.length).toBeGreaterThan(0);
+  });
+});
+
+describe("buildPlaylist on a route with stops", () => {
+  const geometry = buildRouteGeometry(MANHATTAN_WALK);
+
+  /** A walk whose third waypoint is a stop the listener stands at for four minutes. */
+  const withStop = (dwellS: number) => ({
+    ...MANHATTAN_WALK,
+    waypoints: MANHATTAN_WALK.waypoints.map((waypoint, i) =>
+      i === 2 ? { ...waypoint, dwellS } : waypoint,
+    ),
+  });
+
+  const atWaypoint = (index: number) =>
+    pointAtDistance(geometry, geometry.cumulativeKm[geometry.waypointIndex[index]!]!);
+
+  it("plays two echoes about one corner, because the listener is standing on it", () => {
+    // The case that drove the dwell and distance-drift work. Bowling Green carries both
+    // the King George statue and the Charging Bull; measured in seconds the second echo is
+    // three minutes stale and gets dropped, measured in metres the listener has not moved
+    // at all and it is exactly where it belongs.
+    const here = atWaypoint(2);
+    const pair = [
+      makeEcho({ id: "corner-a", at: here, triggerRadiusKm: 0.12, durationS: 90 }),
+      makeEcho({ id: "corner-b", at: here, triggerRadiusKm: 0.12, durationS: 90 }),
+    ];
+
+    const route = withStop(300);
+    const items = buildPlaylist(route, pair, ADULT).items;
+    expect(items.map((item) => item.echo.id).sort()).toEqual(["corner-a", "corner-b"]);
+
+    // And both are heard while the listener is still on the corner, rather than one of
+    // them trailing after them up the street.
+    const profile = RouteProfile.forRoute(route, geometry);
+    const arrival = profile.timeAtDistance(geometry.cumulativeKm[geometry.waypointIndex[2]!]!);
+    for (const item of items) {
+      expect(item.startS).toBeGreaterThanOrEqual(arrival - 60);
+      expect(item.endS).toBeLessThanOrEqual(arrival + 300);
+    }
+  });
+
+  it("plays an echo at the destination, which arrival would otherwise cut off", () => {
+    // Regression: the final waypoint's echo is anchored at the very end of the route, so a
+    // window that closes on arrival made it the one echo that could never play — on a walk
+    // that is the place the whole route was built to reach.
+    const destination = MANHATTAN_WALK.waypoints[MANHATTAN_WALK.waypoints.length - 1]!.at;
+    const echo = makeEcho({ id: "at-the-end", at: destination, triggerRadiusKm: 0.12 });
+    expect(buildPlaylist(MANHATTAN_WALK, [echo], ADULT).items.length).toBe(1);
+  });
+
+  it("takes the echo it is about to lose over a better one further along", () => {
+    // Regression: greedy scheduling weighs "this one now" against "that one shortly" and
+    // never notices that choosing the second forfeits the first. On the real walk it
+    // declined the Wall Street echo at zero drift to wait for Trinity Church, and by the
+    // time Trinity finished the listener was past the wall for good.
+    const perishable = makeEcho({
+      id: "perishable",
+      at: atWaypoint(2),
+      triggerRadiusKm: 0.12,
+      durationS: 90,
+    });
+    // Slightly further on, and scored higher: closer to the line, so a better corridor hit.
+    const keeps = makeEcho({
+      id: "keeps",
+      at: atWaypoint(3),
+      triggerRadiusKm: 0.12,
+      durationS: 90,
+    });
+
+    const ids = buildPlaylist(withStop(0), [perishable, keeps], ADULT).items.map((i) => i.echo.id);
+    expect(ids).toContain("perishable");
+    expect(ids).toContain("keeps");
+  });
+
+  it("does not enforce variety a themed route cannot supply", () => {
+    // Eleven of the twelve echoes on the Lower Manhattan walk are history, because the walk
+    // is about history. Charging the full same-category penalty anyway bought a change of
+    // subject at the price of minutes of silence, and pushed echoes off the route entirely.
+    const themed = MANHATTAN_WALK.waypoints.map((waypoint, i) =>
+      makeEcho({
+        id: `history-${i}`,
+        at: waypoint.at,
+        triggerRadiusKm: 0.12,
+        category: "history",
+        durationS: 90,
+      }),
+    );
+
+    const { items } = buildPlaylist(MANHATTAN_WALK, themed, ADULT);
+    expect(items.length).toBeGreaterThanOrEqual(themed.length - 1);
+  });
+});
+
+describe("dead air pricing", () => {
+  it("keeps the flight full: the penalty grows with the wait and is never flattened", () => {
+    // Two bugs, one guard. Capping the penalty made every long wait score alike, so the
+    // variety rules decided between four minutes of silence and twenty. Flattening its
+    // slope — raising the horizon to buy the same fix — cost a fifth of the flight's
+    // echoes and tripled the median gap. Both show up here as a sparser flight.
+    const library = echoesAlongJfkMia(120);
+    const { items } = buildPlaylist(JFK_MIA, library, { ...ADULT, density: "immersive" });
+
+    expect(items.length).toBeGreaterThan(50);
+
+    const gaps = items.slice(1).map((item, i) => item.startS - items[i]!.endS);
+    const medianGap = gaps.sort((a, b) => a - b)[Math.floor(gaps.length / 2)]!;
+    // "immersive" on 90-second echoes implies roughly a 48-second gap, and with this much
+    // material to choose from the scheduler should be sitting right on it.
+    expect(medianGap).toBeLessThan(90);
   });
 });

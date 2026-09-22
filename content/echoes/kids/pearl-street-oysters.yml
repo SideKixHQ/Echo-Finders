@@ -1,0 +1,43 @@
+id: pearl-street-oysters
+title: A street paved with rubbish
+summary: Pearl Street is white underneath because people threw their lunch on the ground.
+place: Pearl Street, Manhattan
+at: { lat: 40.70380, lng: -74.01120 }
+triggerRadiusKm: 0.09
+category: kids
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.9
+voice: MkTSSXNgnBULS6ek4pon
+tags: [new-york, oysters, food, dutch]
+teaser: Why is it called Pearl Street?
+script: |
+  You are standing on a street that was paved with rubbish.
+
+  Look at the name. Pearl Street. The Dutch called it that because the ground here was
+  white — not with stone, but with oyster shells. Millions of them, crushed flat and
+  trodden down until they made a road.
+
+  Four hundred years ago, the water around this island held about half of all the oysters
+  in the world. Three hundred and fifty square miles of oyster beds. Some of the oysters
+  were as big as a dinner plate.
+
+  There were so many that they were cheap, so everybody ate them. Not in restaurants — from
+  carts in the street, the way you might buy a hot dog now. You ate the oyster, and you
+  threw the shell on the ground.
+
+  Enough people did that, for enough years, that the shells became the street.
+
+  One more thing. The Dutch kept opening them to look for pearls. They never found a single
+  one. New York oysters don't make them.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: What in the Pearl? A History of NYC's Oysters
+    publisher: Downtown Alliance
+    url: https://downtownny.com/news/oyster-history-downtown/
+    retrievedAt: "2026-09-22"
+    rights: public-domain

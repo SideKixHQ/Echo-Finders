@@ -26,12 +26,27 @@ interface PhaseSpec {
   readonly to: number;
 }
 
+/** A place the traveller stands still, at a known distance along the route. */
+export interface RouteStop {
+  readonly distanceKm: number;
+  readonly seconds: number;
+}
+
 /** Overrides for the stage lengths the mode preset would otherwise supply. */
 export interface ProfileOptions {
   readonly idleS?: number;
   readonly settlingS?: number;
   readonly arrivingS?: number;
   readonly finishingS?: number;
+  /**
+   * Stops along the route, in distance order. `RouteProfile.forRoute` derives these from
+   * the waypoints' dwell times; they are exposed here so a caller can model a stop that
+   * is not a waypoint.
+   *
+   * The total dwell is taken out of the route's duration, not added to it — the duration
+   * is door to door either way, and the legs between stops speed up to absorb it.
+   */
+  readonly stops?: readonly RouteStop[];
 }
 
 const SAMPLES = 2000;
@@ -43,6 +58,16 @@ const IDLE_FACTOR = 0.02;
 const INITIAL_FACTOR = 0.35;
 
 /**
+ * The most of a route's duration that may be spent standing still.
+ *
+ * A backstop against content, not a design parameter. Dwell is subtracted from the
+ * duration, so stops totalling more than the route lasts would leave negative time to
+ * walk in; capping them keeps the curve well formed and the mistake visible as an
+ * implausibly rushed tour rather than a crash.
+ */
+const MAX_DWELL_FRACTION = 0.75;
+
+/**
  * A monotonic, invertible distance–time curve for one flight.
  *
  * Built once per flight and then queried thousands of times by the scheduler, so it is
@@ -52,6 +77,17 @@ export class RouteProfile {
   private readonly times: Float64Array;
   private readonly distances: Float64Array;
   private readonly phases: readonly PhaseSpec[];
+
+  /**
+   * Stops in distance order, each carrying the wall-clock moment the traveller reaches it.
+   *
+   * The distance–time table above is a *moving* clock: it knows nothing about standing
+   * still. These convert between it and the wall clock the rest of the engine speaks.
+   */
+  private readonly stops: readonly { distanceKm: number; startS: number; seconds: number }[];
+
+  /** Duration with the stops taken out — the span the speed curve is integrated over. */
+  private readonly movingS: number;
 
   readonly durationS: number;
   readonly totalKm: number;
@@ -69,13 +105,27 @@ export class RouteProfile {
     this.durationS = durationS;
     this.totalKm = totalKm;
     this.mode = mode;
-    this.phases = buildPhases(durationS, mode, options);
+
+    // Stops come out of the duration, so a route whose dwells exceed its duration would
+    // leave no time to travel at all. Scale them down together rather than rejecting the
+    // route: the author's intent — mostly standing, briefly walking — is still legible,
+    // and a hard error here would be a content bug surfacing as a crash at playback.
+    const requested = (options.stops ?? [])
+      .filter((stop) => stop.seconds > 0 && stop.distanceKm >= 0 && stop.distanceKm <= totalKm)
+      .slice()
+      .sort((a, b) => a.distanceKm - b.distanceKm);
+    const requestedDwell = requested.reduce((sum, stop) => sum + stop.seconds, 0);
+    const dwellBudget = durationS * MAX_DWELL_FRACTION;
+    const dwellScale = requestedDwell > dwellBudget ? dwellBudget / requestedDwell : 1;
+
+    this.movingS = durationS - requestedDwell * dwellScale;
+    this.phases = buildPhases(this.movingS, mode, options);
 
     this.times = new Float64Array(SAMPLES + 1);
     this.distances = new Float64Array(SAMPLES + 1);
 
     // Integrate the speed profile, then normalise so the curve ends at exactly totalKm.
-    const step = durationS / SAMPLES;
+    const step = this.movingS / SAMPLES;
     let accumulated = 0;
     for (let i = 0; i <= SAMPLES; i++) {
       const t = i * step;
@@ -91,10 +141,23 @@ export class RouteProfile {
     for (let i = 0; i <= SAMPLES; i++) {
       this.distances[i] = this.distances[i]! * scale;
     }
+
+    // Now that the moving curve exists, each stop can be placed on the wall clock: the
+    // moving time at which the traveller reaches it, plus every earlier stop's dwell.
+    let elapsedDwell = 0;
+    this.stops = requested.map((stop) => {
+      const seconds = stop.seconds * dwellScale;
+      const startS = this.movingTimeAtDistance(stop.distanceKm) + elapsedDwell;
+      elapsedDwell += seconds;
+      return { distanceKm: stop.distanceKm, startS, seconds };
+    });
   }
 
   static forRoute(route: Route, geometry: RouteGeometry, options?: ProfileOptions) {
-    return new RouteProfile(route.durationS, geometry.totalKm, route.mode, options);
+    return new RouteProfile(route.durationS, geometry.totalKm, route.mode, {
+      ...options,
+      stops: options?.stops ?? stopsFromWaypoints(route, geometry),
+    });
   }
 
   /** Speed at time `t`, as a fraction of full travelling speed. */
@@ -110,21 +173,62 @@ export class RouteProfile {
     return this.phases[this.phases.length - 1]!.to;
   }
 
-  /** Distance flown, in km, `t` seconds after departure. */
+  /** Distance travelled, in km, `t` seconds after departure. */
   distanceAtTime(t: number): number {
     if (t <= 0) return 0;
     if (t >= this.durationS) return this.totalKm;
-    const exact = (t / this.durationS) * SAMPLES;
+    return this.movingDistanceAtTime(this.movingTimeAt(t));
+  }
+
+  /**
+   * Wall-clock `t` on the moving clock the distance table is indexed by.
+   *
+   * Time spent standing at a stop does not advance the table, so it is subtracted; a `t`
+   * that lands inside a stop returns that stop's arrival time, since the traveller has
+   * not moved since.
+   */
+  private movingTimeAt(t: number): number {
+    let dwell = 0;
+    for (const stop of this.stops) {
+      if (t >= stop.startS + stop.seconds) {
+        dwell += stop.seconds;
+        continue;
+      }
+      if (t > stop.startS) return stop.startS - dwell;
+      break;
+    }
+    return t - dwell;
+  }
+
+  private movingDistanceAtTime(mt: number): number {
+    if (mt <= 0) return 0;
+    if (mt >= this.movingS) return this.totalKm;
+    const exact = (mt / this.movingS) * SAMPLES;
     const lo = Math.floor(exact);
     const hi = Math.min(lo + 1, SAMPLES);
     const fraction = exact - lo;
     return this.distances[lo]! + (this.distances[hi]! - this.distances[lo]!) * fraction;
   }
 
-  /** Seconds after departure at which the aircraft reaches `km` along the route. */
+  /**
+   * Seconds after departure at which the traveller reaches `km` along the route.
+   *
+   * At a stop this is the moment of *arrival*, not of departure: standing at a place is
+   * time spent being able to hear about it, so the echo anchored there should be free to
+   * play anywhere in that span rather than only once the traveller is leaving.
+   */
   timeAtDistance(km: number): number {
+    let dwell = 0;
+    for (const stop of this.stops) {
+      if (stop.distanceKm < km) dwell += stop.seconds;
+      else break;
+    }
+    return this.movingTimeAtDistance(km) + dwell;
+  }
+
+  private movingTimeAtDistance(km: number): number {
     if (km <= 0) return 0;
-    if (km >= this.totalKm) return this.durationS;
+    if (km >= this.totalKm) return this.movingS;
 
     let lo = 0;
     let hi = SAMPLES;
@@ -141,6 +245,9 @@ export class RouteProfile {
 
   phaseAtTime(t: number): RoutePhase {
     if (t >= this.durationS) return "arrived";
+    // Phases are lengths on the moving clock, so a traveller standing at a stop stays in
+    // whatever phase they arrived in rather than drifting through the rest of the route.
+    t = this.movingTimeAt(t);
     let elapsed = 0;
     for (const phase of this.phases) {
       elapsed += phase.seconds;
@@ -153,17 +260,43 @@ export class RouteProfile {
    * The window during which echoes may play: once the route has actually begun, and
    * before it is winding down. On a flight that means after the climb and before the
    * descent announcement. On a walking tour it is a handful of seconds at each end.
+   *
+   * The tail then reopens by the mode's destination dwell, which is the one place the
+   * window has to outlast the route. An echo about the final stop is anchored at the
+   * moment the listener is nearest it — the very end — so it needs room beyond that, and
+   * a window closing on arrival gives it none. For carried modes the dwell is zero and
+   * nothing changes; on foot it is the difference between the walk's destination having
+   * an echo and being the one place that cannot.
    */
   listeningWindow(): { startS: number; endS: number } {
     const idle = this.phases[0]!.seconds;
     const settling = this.phases[1]!.seconds;
     const arriving = this.phases[3]!.seconds;
     const finishing = this.phases[4]!.seconds;
+    const dwell = presetFor(this.mode).destinationDwellS;
     return {
       startS: idle + settling * 0.6,
-      endS: Math.max(0, this.durationS - arriving * 0.5 - finishing),
+      endS: Math.max(0, this.durationS - arriving * 0.5 - finishing + dwell),
     };
   }
+}
+
+/**
+ * The stops a route declares, as distances along its densified geometry.
+ *
+ * The first waypoint is skipped whatever it declares: dwelling at the origin is time
+ * before the route begins, and the listening window already accounts for it.
+ */
+function stopsFromWaypoints(route: Route, geometry: RouteGeometry): readonly RouteStop[] {
+  const stops: RouteStop[] = [];
+  for (let i = 1; i < route.waypoints.length; i++) {
+    const seconds = route.waypoints[i]!.dwellS ?? 0;
+    if (seconds <= 0) continue;
+    const index = geometry.waypointIndex[i];
+    if (index === undefined) continue;
+    stops.push({ distanceKm: geometry.cumulativeKm[index]!, seconds });
+  }
+  return stops;
 }
 
 function buildPhases(

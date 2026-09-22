@@ -546,6 +546,21 @@ export interface Attraction {
 export interface Waypoint {
   readonly at: LatLng;
   readonly name?: string;
+  /**
+   * How long the traveller stands here before moving on.
+   *
+   * Only meaningful on self-paced routes, and on those it is the difference between a
+   * plausible tour and an impossible one. A walking tour is a sequence of stops, not a
+   * slow traverse: you arrive at Bowling Green, you stand in it for three minutes, you
+   * walk on. Modelling that as a uniform 2.6km/h crawl — which is what dividing distance
+   * by duration does — puts the listener permanently in motion, so no two echoes about
+   * the same corner can both play, and the dense, interesting places are the ones that
+   * lose material.
+   *
+   * Omitted means no stop. `Route.durationS` is still the door-to-door total; the dwell
+   * comes out of it, and the legs between stops are walked at the mode's real speed.
+   */
+  readonly dwellS?: number;
 }
 
 export interface Route {

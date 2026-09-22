@@ -1,0 +1,38 @@
+id: canyon-of-heroes
+title: A canyon named after confetti
+summary: Granite strips in the pavement name every ticker-tape parade since 1886.
+place: Broadway, the Canyon of Heroes, Manhattan
+at: { lat: 40.70980, lng: -74.01080 }
+triggerRadiusKm: 0.12
+category: culture-food
+format: short
+durationS: 55
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.82
+voice: plP9aw1rizYgjFfuvLQ7
+tags: [new-york, parades, broadway]
+teaser: Look down at the pavement.
+script: |
+  Look down at the pavement.
+
+  Set into it along this stretch of Broadway are thin strips of granite, each one naming a
+  date and a person. There are more than two hundred of them.
+
+  Every strip is a ticker-tape parade. The first was in 1886, for the dedication of the
+  Statue of Liberty, and nobody organised it — clerks in the offices above started throwing
+  the used tape from their stock tickers out of the windows, because they could not think
+  of anything better to do.
+
+  Nobody has used ticker tape since the 1960s. They shred paper for it now.
+
+  So this is a canyon named after confetti, which was named after rubbish.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: Canyon of Heroes
+    publisher: Downtown Alliance
+    url: https://downtownny.com/canyon-of-heroes/
+    retrievedAt: "2026-09-22"
+    rights: public-domain

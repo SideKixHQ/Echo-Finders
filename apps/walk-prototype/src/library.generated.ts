@@ -47,6 +47,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "In 1991 the federal government began digging foundations for an office tower at Broadway\nand Duane, and about seven metres down the crews found bone.\n\nWhat lay beneath the block was a cemetery. From the late sixteen-hundreds into the\nseventeen-nineties, free and enslaved Africans in this city had buried their dead in a\npatch of ground outside the settlement's boundary — roughly six and a half acres of it.\nLater New York built over the site and forgot. Estimates put the number of burials around\nfifteen thousand.\n\nFour hundred and nineteen men, women and children were recovered from the part that was\nexcavated. Their descendants and this city's Black community fought to stop the\nconstruction, and won. The remains were studied, then reinterred here in 2003.\n\nIt is the earliest and largest African burial ground yet found in the United States, and\nit existed partly because of a rule: from 1697, Africans were barred from the city's main\nburial ground. So they made their own, out past the edge of town.\n\nYou are standing at the edge of town.\n",
     "teaser": "Twenty-four feet below the pavement.",
     "detail": "The memorial occupies a fraction of the original site; most of the burial ground remains\nunder the surrounding streets and buildings. It was designated a National Monument in\n2006.\n",
+    "voice": "plP9aw1rizYgjFfuvLQ7",
     "pronunciations": [
       {
         "written": "Duane Street",
@@ -96,6 +97,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This is the oldest public park in the city, and the fence around it has been here since\n1771.\n\nLook at the tops of the posts. They used to have small crowns on them.\n\nOn the ninth of July 1776, the Declaration of Independence was read aloud to Washington's\ntroops a few streets north of here. The crowd came down to this green afterwards, where a\ngilded lead statue of King George the Third sat on horseback, and pulled it down.\n\nThe lead went to Connecticut and came back as musket balls. Somebody, at some point, took\na saw to the crowns on the fence.\n\nTwo hundred and fifty years later the fence is still standing and the crowns are still\nmissing, which is a fairly direct way of making a point.\n",
     "teaser": "The fence is original. Look at the tops of the posts.",
+    "voice": "hP72SDESIJq2YuAblBqz",
     "pronunciations": [
       {
         "written": "Bowling Green",
@@ -107,6 +109,45 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "statues",
       "protest"
+    ]
+  },
+  {
+    "id": "canyon-of-heroes",
+    "title": "A canyon named after confetti",
+    "summary": "Granite strips in the pavement name every ticker-tape parade since 1886.",
+    "point": {
+      "at": {
+        "lat": 40.7098,
+        "lng": -74.0108
+      },
+      "triggerRadiusKm": 0.12,
+      "place": "Broadway, the Canyon of Heroes, Manhattan"
+    },
+    "category": "culture-food",
+    "format": "short",
+    "durationS": 55,
+    "minAge": 0,
+    "quality": 0.82,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Canyon of Heroes",
+        "publisher": "Downtown Alliance",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain",
+        "url": "https://downtownny.com/canyon-of-heroes/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down at the pavement.\n\nSet into it along this stretch of Broadway are thin strips of granite, each one naming a\ndate and a person. There are more than two hundred of them.\n\nEvery strip is a ticker-tape parade. The first was in 1886, for the dedication of the\nStatue of Liberty, and nobody organised it — clerks in the offices above started throwing\nthe used tape from their stock tickers out of the windows, because they could not think\nof anything better to do.\n\nNobody has used ticker tape since the 1960s. They shred paper for it now.\n\nSo this is a canyon named after confetti, which was named after rubbish.\n",
+    "teaser": "Look down at the pavement.",
+    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "tags": [
+      "new-york",
+      "parades",
+      "broadway"
     ]
   },
   {
@@ -149,6 +190,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "The round sandstone building ahead of you was built to stop an invasion that never came.\n\nIt went up between 1808 and 1811, out on a small island off the tip of Manhattan, its\nguns pointed down the harbour at a British fleet everyone expected and nobody saw. The\nlandfill came later. So did almost everything else it has been.\n\nBecause in 1855 the fort became a door. On the first of August that year it opened as the\nEmigrant Landing Depot — the first immigration station in the United States, run by the\nState of New York — and over the next thirty-five years something like eight million\npeople walked through it and out into the rest of their lives. Nikola Tesla came through\nhere. So did Harry Houdini, and Emma Goldman, and Joseph Pulitzer.\n\nIn 1890 the federal government took the job over, and two years later moved it to a\nbigger island further out, where the ferries go now. The fort stayed, and became other\nthings again: a beer garden, a theatre, an aquarium.\n\nEight million arrivals, and almost nobody stops here. Most people walk past it to queue\nfor the boat.\n",
     "teaser": "Before Ellis Island, there was this.",
     "detail": "The fort has had at least five lives: coastal battery, public promenade and entertainment\nhall, immigration depot, city aquarium, and finally a national monument. Jenny Lind gave\nher first American concert in it in 1850.\n",
+    "voice": "plP9aw1rizYgjFfuvLQ7",
     "pronunciations": [
       {
         "written": "Nikola Tesla",
@@ -175,7 +217,7 @@ export const LIBRARY: readonly Echo[] = [
         "lat": 40.70552,
         "lng": -74.0134
       },
-      "triggerRadiusKm": 0.05,
+      "triggerRadiusKm": 0.12,
       "place": "Bowling Green, Broadway, Manhattan"
     },
     "category": "culture-food",
@@ -198,6 +240,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Nobody commissioned this.\n\nIn December 1989, two years after the crash, a sculptor called Arturo Di Modica drove a\nlorry to Wall Street in the middle of the night and left three and a half tonnes of bronze\noutside the Stock Exchange. He had paid for it himself. It was, legally speaking,\nfly-tipping.\n\nThe city removed it within hours. The public objected loudly enough that it was put back a\nfew days later, here, a couple of streets from where he left it — on a temporary permit\nthat has now lasted more than thirty years.\n",
     "teaser": "Nobody gave permission for this.",
+    "voice": "plP9aw1rizYgjFfuvLQ7",
     "pronunciations": [
       {
         "written": "Arturo Di Modica",
@@ -208,6 +251,45 @@ export const LIBRARY: readonly Echo[] = [
       "new-york",
       "art",
       "wall-street"
+    ]
+  },
+  {
+    "id": "city-hall-declaration",
+    "title": "What the army did after they heard it",
+    "summary": "Washington had the Declaration read to his troops here. They did not stay to discuss it.",
+    "point": {
+      "at": {
+        "lat": 40.7127,
+        "lng": -74.006
+      },
+      "triggerRadiusKm": 0.1,
+      "place": "City Hall Park, Manhattan"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 95,
+    "minAge": 0,
+    "quality": 0.93,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "City Hall Park",
+        "publisher": "NYC Parks",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain",
+        "url": "https://www.nycgovparks.org/parks/city-hall-park/history"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This was not a park. It was the Common — the rough field outside town where you put the\nthings nobody wanted near them. A poorhouse. A prison. A gallows.\n\nOn the ninth of July 1776, George Washington had his army formed up on this ground, in\nsquares, and had an officer read out a document that had arrived from Philadelphia five\ndays earlier.\n\nThere is no record of the soldiers being told to do anything afterwards.\n\nWhat they did was walk down Broadway, about a mile, to the little green at the bottom of\nthe island, and pull a two-ton gilded statue of the king off its plinth.\n\nWashington was not pleased. He put out an order the next morning calling it disorderly,\nand asking that in future such matters be left to the proper authorities.\n\nThe war he had just read them into lasted another seven years.\n",
+    "teaser": "This was not a park.",
+    "voice": "hP72SDESIJq2YuAblBqz",
+    "tags": [
+      "new-york",
+      "revolution",
+      "washington"
     ]
   },
   {
@@ -249,6 +331,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand facing the columns, and know first that this is not the building.\n\nThe one that mattered was New York's City Hall, and it stood on this exact spot. Two\nthings happened in it that the country is still living inside.\n\nIn 1735 a printer named John Peter Zenger was tried here for libel. He had published\ncriticism of the royal governor in his newspaper, and under the law of the time truth was\nno defence — printing it was the crime, whether or not it was accurate. The jury\nacquitted him anyway. It was not yet law, but it was the beginning of the argument that\nbecame a free press.\n\nFifty-four years later the same site, rebuilt as Federal Hall, was the first Capitol of\nthe United States. On the thirtieth of April 1789, George Washington stepped onto a\nbalcony above this street and took the oath as the first president, in front of a crowd\nfilling Wall Street below you.\n\nThat building was demolished in 1812. What you are looking at went up in 1842, as a\ncustoms house. The statue of Washington faces the street, roughly where the balcony was.\n",
     "teaser": "The building is not the one it happened in. The corner is.",
+    "voice": "plP9aw1rizYgjFfuvLQ7",
     "pronunciations": [
       {
         "written": "John Peter Zenger",
@@ -299,10 +382,182 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "On the fourth of December 1783, in an upstairs room of this building, George Washington\nsaid goodbye to the officers he had fought beside for eight years.\n\nThe British had sailed out of the harbour nine days earlier. The war was over, and he was\ngoing home to Virginia, believing he was finished with public life.\n\nBy the accounts that survive, he could not finish what he meant to say. He raised a glass,\nmanaged a few sentences, and then asked each man to come and take his hand. Grown soldiers\nwept. He walked out without trusting himself to speak again.\n\nSix years later he was back in this city, taking an oath three streets from here.\n",
     "teaser": "Upstairs, in the Long Room.",
+    "voice": "hP72SDESIJq2YuAblBqz",
     "tags": [
       "new-york",
       "revolution",
       "washington"
+    ]
+  },
+  {
+    "id": "pearl-street-oysters",
+    "title": "A street paved with rubbish",
+    "summary": "Pearl Street is white underneath because people threw their lunch on the ground.",
+    "point": {
+      "at": {
+        "lat": 40.7038,
+        "lng": -74.0112
+      },
+      "triggerRadiusKm": 0.09,
+      "place": "Pearl Street, Manhattan"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 0,
+    "quality": 0.9,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "What in the Pearl? A History of NYC's Oysters",
+        "publisher": "Downtown Alliance",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain",
+        "url": "https://downtownny.com/news/oyster-history-downtown/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are standing on a street that was paved with rubbish.\n\nLook at the name. Pearl Street. The Dutch called it that because the ground here was\nwhite — not with stone, but with oyster shells. Millions of them, crushed flat and\ntrodden down until they made a road.\n\nFour hundred years ago, the water around this island held about half of all the oysters\nin the world. Three hundred and fifty square miles of oyster beds. Some of the oysters\nwere as big as a dinner plate.\n\nThere were so many that they were cheap, so everybody ate them. Not in restaurants — from\ncarts in the street, the way you might buy a hot dog now. You ate the oyster, and you\nthrew the shell on the ground.\n\nEnough people did that, for enough years, that the shells became the street.\n\nOne more thing. The Dutch kept opening them to look for pearls. They never found a single\none. New York oysters don't make them.\n",
+    "teaser": "Why is it called Pearl Street?",
+    "voice": "MkTSSXNgnBULS6ek4pon",
+    "tags": [
+      "new-york",
+      "oysters",
+      "food",
+      "dutch"
+    ]
+  },
+  {
+    "id": "st-pauls-still-standing",
+    "title": "The building that keeps not burning down",
+    "summary": "Manhattan's oldest public building in continuous use, and what stood between it and the towers.",
+    "point": {
+      "at": {
+        "lat": 40.7112,
+        "lng": -74.0092
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "St Paul's Chapel, Broadway, Manhattan"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 12,
+    "quality": 0.94,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "St Paul's Chapel",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/st-paul-s-chapel.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This is the oldest public building in Manhattan still doing the thing it was built to do.\n\nIt went up in 1766, when this was the northern edge of town and the front of the chapel\nfaced the river, because that was the direction people arrived from.\n\nTen years later a fire took a quarter of the city and stopped at its churchyard.\n\nGeorge Washington came here on the day he was inaugurated, and kept coming for the two\nyears New York was the capital. His pew is still inside.\n\nOn the eleventh of September 2001, the towers came down about a hundred metres from where\nyou are standing. Every window in this chapel survived. For eight months afterwards it\nwas where the recovery workers slept and ate and had their feet seen to.\n\nA sycamore tree in the churchyard took the weight of the debris that would otherwise have\nhit the building. It did not survive. The chapel did.\n",
+    "teaser": "The oldest building in Manhattan still doing its job.",
+    "voice": "hP72SDESIJq2YuAblBqz",
+    "pronunciations": [
+      {
+        "written": "sycamore",
+        "say": "SIK-a-more"
+      }
+    ],
+    "tags": [
+      "new-york",
+      "churches",
+      "washington",
+      "september-11"
+    ]
+  },
+  {
+    "id": "trinity-tallest-thing",
+    "title": "For forty-four years this was the tallest thing in New York",
+    "summary": "Sailors coming into the harbour saw the spire before they saw the city.",
+    "point": {
+      "at": {
+        "lat": 40.7081,
+        "lng": -74.0122
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Trinity Church, Broadway and Wall Street, Manhattan"
+    },
+    "category": "famous-people",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Trinity Church",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/trinity-church.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the spire.\n\nFor forty-four years that was the highest point in New York. Not the tallest church — the\ntallest anything. Ships coming into the harbour saw it before they saw the city.\n\nIt went up in 1846. Two hundred and eighty-one feet, and nothing in this city passed it\nuntil 1890.\n\nWhich means there was a stretch of time, right here, when the largest thing people in New\nYork were willing to build was somewhere to pray.\n\nWhat passed it was a newspaper office. What passed that was an insurance company. Then\nthe banks arrived, and they have not stopped.\n\nAlexander Hamilton is buried in the yard on your right. He was killed in 1804, so he\nnever saw this building — he is lying beside the third church on this spot, in a\ngraveyard that outlasted two of them.\n",
+    "teaser": "Look up at the spire.",
+    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "tags": [
+      "new-york",
+      "architecture",
+      "hamilton"
+    ]
+  },
+  {
+    "id": "wall-street-the-wall",
+    "title": "The street is named after something that isn't there",
+    "summary": "A nine-foot palisade crossed the island here, built mostly by people who were not free.",
+    "point": {
+      "at": {
+        "lat": 40.7074,
+        "lng": -74.011
+      },
+      "triggerRadiusKm": 0.1,
+      "place": "Wall Street, Manhattan"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 90,
+    "minAge": 10,
+    "quality": 0.92,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Anniversary of Wall Street",
+        "publisher": "NYC Department of Records & Information Services",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain",
+        "url": "https://www.archives.nyc/blog/2023/3/9/anniversary-of-wall-street"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down the street. It runs river to river — you can very nearly see one end from the\nother.\n\nThat is not an accident. It is the width of the island, and in 1653 the Dutch decided to\nfence it off.\n\nThe governor, Peter Stuyvesant, ordered a palisade built right across here. Nine feet\nhigh, made of packed earth and fifteen-foot planks, running from the Hudson to the East\nRiver. It was meant to stop an English invasion.\n\nThe people who built it were mostly enslaved Africans, owned by the Dutch West India\nCompany.\n\nThe invasion never came. The English took the colony anyway, eleven years later, by\nsailing in and asking. And in 1699 they pulled the wall down and used the wood for\nsomething else.\n\nIt stood for forty-six years. It has been gone for more than three hundred.\n\nThe street kept the name — which means this is a street named after a thing that is not\nthere, put up by people who were never free to walk away from it.\n",
+    "teaser": "Look down the street. It runs river to river.",
+    "voice": "hP72SDESIJq2YuAblBqz",
+    "pronunciations": [
+      {
+        "written": "Peter Stuyvesant",
+        "say": "STY-ve-sant"
+      }
+    ],
+    "tags": [
+      "new-york",
+      "dutch",
+      "slavery",
+      "wall-street"
     ]
   }
 ] as const;
@@ -319,10 +574,10 @@ export const ROUTE: Route = {
     "timeZone": "America/New_York"
   },
   "destination": {
-    "name": "City Hall Park",
+    "name": "African Burial Ground",
     "at": {
-      "lat": 40.7127,
-      "lng": -74.006
+      "lat": 40.7145,
+      "lng": -74.0044
     },
     "timeZone": "America/New_York"
   },
@@ -339,37 +594,65 @@ export const ROUTE: Route = {
       "at": {
         "lat": 40.7046,
         "lng": -74.0132
-      }
+      },
+      "dwellS": 240
     },
     {
-      "name": "Wall Street",
+      "name": "Fraunces Tavern",
       "at": {
-        "lat": 40.7069,
-        "lng": -74.0113
-      }
+        "lat": 40.7036,
+        "lng": -74.0112
+      },
+      "dwellS": 240
     },
     {
       "name": "Federal Hall",
       "at": {
         "lat": 40.7073,
         "lng": -74.01
-      }
+      },
+      "dwellS": 240
+    },
+    {
+      "name": "Trinity Church",
+      "at": {
+        "lat": 40.7081,
+        "lng": -74.0122
+      },
+      "dwellS": 150
+    },
+    {
+      "name": "Canyon of Heroes",
+      "at": {
+        "lat": 40.7098,
+        "lng": -74.0108
+      },
+      "dwellS": 120
     },
     {
       "name": "St Paul's Chapel",
       "at": {
-        "lat": 40.7115,
-        "lng": -74.0077
-      }
+        "lat": 40.7112,
+        "lng": -74.0092
+      },
+      "dwellS": 130
     },
     {
       "name": "City Hall Park",
       "at": {
         "lat": 40.7127,
         "lng": -74.006
+      },
+      "dwellS": 130
+    },
+    {
+      "name": "African Burial Ground",
+      "at": {
+        "lat": 40.7145,
+        "lng": -74.0044
       }
     }
   ],
-  "durationS": 2400,
+  "durationS": 3000,
   "departureAt": "2026-06-15T14:00:00Z"
 } as const;

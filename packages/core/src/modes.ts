@@ -54,6 +54,25 @@ export interface ModePreset {
   readonly arrivingS: number;
 
   /**
+   * How long the listener is expected to still be *at* the destination once the route's
+   * nominal duration is up, and so still willing to be told about it.
+   *
+   * This exists because the last waypoint is the one place the geometry gets wrong on its
+   * own. An echo is anchored near the moment the listener is closest to it, which for the
+   * final stop is the very end of the route — so it needs room after that moment, and a
+   * window that closes on arrival has none. Without this the most important echo on a
+   * walking tour, the one about the place the walk was built to reach, is the single echo
+   * that can never play.
+   *
+   * It is a mode property because arriving means opposite things. Walk to a memorial and
+   * you stop, stand, and look at it; that is the point of having walked there. A flight
+   * arrives at a gate and the listening is over — nobody is still being told about the
+   * approach while queueing to disembark — so for carried modes this is zero, and the
+   * window closes as it always did.
+   */
+  readonly destinationDwellS: number;
+
+  /**
    * Position sources in priority order (ADR-0002).
    *
    * Note that flight is the odd one out, and it is the only mode where GNSS is not the
@@ -110,6 +129,8 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     idleS: 600,
     settlingS: 900,
     arrivingS: 1200,
+    // The listening ends at the gate.
+    destinationDwellS: 0,
     positionPriority: ["aircraft-feed", "dead-reckoned", "device-gnss"],
     defaultProvenances: ["editorial", "partner"],
     typicalTriggerRadiusKm: 60,
@@ -127,6 +148,7 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     idleS: 60,
     settlingS: 120,
     arrivingS: 120,
+    destinationDwellS: 0,
     positionPriority: ["device-gnss", "dead-reckoned"],
     defaultProvenances: ["editorial", "partner"],
     typicalTriggerRadiusKm: 8,
@@ -144,6 +166,8 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     idleS: 15,
     settlingS: 45,
     arrivingS: 45,
+    // The destination is a parking space, and the driver gets out of the car.
+    destinationDwellS: 0,
     positionPriority: ["device-gnss", "dead-reckoned"],
     defaultProvenances: ["editorial", "partner", "personal"],
     typicalTriggerRadiusKm: 3,
@@ -161,6 +185,8 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     idleS: 5,
     settlingS: 40,
     arrivingS: 40,
+    // Long enough to get off the bike and read the plaque.
+    destinationDwellS: 120,
     positionPriority: ["device-gnss"],
     defaultProvenances: ["editorial", "partner", "personal"],
     typicalTriggerRadiusKm: 0.5,
@@ -180,6 +206,9 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     idleS: 3,
     settlingS: 17,
     arrivingS: 17,
+    // The whole reason for the walk is standing at the last stop, so this is generous:
+    // four minutes is a long echo and a plausible amount of time to spend looking.
+    destinationDwellS: 240,
     positionPriority: ["device-gnss"],
     defaultProvenances: ["editorial", "partner", "personal"],
     typicalTriggerRadiusKm: 0.12,

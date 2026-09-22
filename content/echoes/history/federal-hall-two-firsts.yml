@@ -6,6 +6,7 @@ place: Federal Hall, 26 Wall Street, Manhattan
 at: { lat: 40.70733, lng: -74.01001 }
 triggerRadiusKm: 0.06
 
+voice: plP9aw1rizYgjFfuvLQ7
 category: history
 format: short
 durationS: 105

@@ -101,16 +101,88 @@ const PENALTY = {
 const PERSPECTIVE_BONUS = 0.34;
 
 /**
- * Wait beyond this fraction of the mode's timing tolerance and the dead-air penalty
- * applies in full. Tied to the mode rather than fixed, so a walking tour does not treat a
- * ten-minute silence as a minor inconvenience.
+ * The wait at which the dead-air penalty reaches full strength, as a multiple of the mode's
+ * timing tolerance — and, past that, keeps growing, because the penalty is deliberately
+ * **uncapped**.
+ *
+ * The uncapping is the part that matters. Capped, the penalty stopped discriminating as
+ * soon as it saturated: on a walking tour, where echoes are minutes apart and the tolerance
+ * is ninety seconds, every candidate sat beyond the horizon and waiting four minutes scored
+ * exactly the same as waiting twenty. The variety rules then decided between them, and a
+ * real Lower Manhattan walk came out with a twenty-two minute silence in the middle of it.
+ * Letting it grow without limit is the honest model: waiting twice as long genuinely is
+ * twice as bad, and there is no point past which further silence stops mattering.
+ *
+ * The ratio itself stays at one, which is worth recording because raising it looked like
+ * part of the same fix and was not. This number is the *slope* of the penalty, and
+ * flattening it is exactly as harmful as capping it — at four, a transatlantic flight lost
+ * a fifth of its echoes and its median gap went from forty-eight seconds to three minutes,
+ * while the walk it was meant to help was unaffected. Uncapping alone fixed the walk; the
+ * flight then scheduled more than it ever had.
  */
 const DEAD_AIR_HORIZON_RATIO = 1;
+
+/**
+ * How quickly the variety rules stop mattering as the wait grows.
+ *
+ * Variety is a tiebreaker between echoes playable *now*. It is not a reason to stand in
+ * silence: "same category, available immediately" should beat "different category, five
+ * minutes away", and the old weighting had that backwards — a 0.28 category penalty was
+ * enough to skip an echo entirely rather than merely reorder two.
+ *
+ * Eight, which is gentle. Uncapping the dead-air penalty already prevents the skipping on
+ * its own — waiting five minutes now costs far more than any variety rule can save — so
+ * this only has to stop variety mattering at the extremes. Fading it out aggressively
+ * instead switched variety off entirely on a walking route, and three echoes in the same
+ * voice ran back to back.
+ */
+const VARIETY_FADE_RATIO = 8;
+
+/**
+ * Turn a mode's timing tolerance into the distance tolerance it was always standing in for.
+ *
+ * Every drift number in the preset table was reasoned about as a distance and then written
+ * down as a time: ninety seconds on foot "is roughly a hundred metres", ten minutes in the
+ * air "is a fifth of the way across a state". Doing the conversion explicitly, and then
+ * asking the route profile how far the listener actually moved, costs nothing and fixes the
+ * case the time version gets badly wrong — standing still.
+ *
+ * A walker who has stopped at Bowling Green for three minutes has not walked past anything,
+ * so a second echo about Bowling Green should still be allowed to play. Measured in seconds
+ * it is three minutes stale and rejected; measured in metres it is exactly where it belongs.
+ * That is the difference between a dense, interesting corner carrying two stories and
+ * carrying one.
+ */
+function driftToleranceKm(maxTimingDriftS: number, speedKph: number): number {
+  return (maxTimingDriftS * speedKph) / 3600;
+}
+
+/**
+ * Bonus for an echo whose chance to play is nearly gone.
+ *
+ * Greedy scheduling weighs "this one now" against "that one shortly", and on its own it
+ * never notices that choosing the second forfeits the first. On the real walk that cost
+ * the Wall Street echo entirely: the scheduler declined to play it at zero drift in order
+ * to wait eighty-three seconds for Trinity Church, and by the time Trinity finished the
+ * listener was past the wall and it could never play again.
+ *
+ * Preferring the echo that is about to expire is how an editor thinks — take the one you
+ * are about to lose, the other will keep — and it is cheap, because an echo with a wide
+ * open window loses nothing by yielding. Sized below the dead-air penalty so it breaks
+ * ties and near-ties without ever being a reason to sit in silence.
+ */
+const URGENCY_BONUS = 0.25;
 
 interface Candidate {
   readonly hit: CorridorHit;
   readonly nearestS: number;
   readonly score: number;
+  /**
+   * The latest start at which this echo still lands within the drift budget — the moment
+   * the listener is a tolerance-width beyond the place it describes. Past this it is
+   * behind them for good.
+   */
+  readonly expiresS: number;
 }
 
 export function buildPlaylist(
@@ -131,6 +203,8 @@ export function buildPlaylist(
   }
 
   const window = profile.listeningWindow();
+  const maxDriftKm = driftToleranceKm(maxTimingDriftS, preset.speedKph);
+
   const deadAirHorizonS = maxTimingDriftS * DEAD_AIR_HORIZON_RATIO;
   const dutyCycle = dutyCycleFor(plan.mode, listener.density);
 
@@ -150,10 +224,13 @@ export function buildPlaylist(
     if (!eligibility.eligible) continue;
 
     const score = scoreEcho(hit, { profile: listener, playAtMs, mode: plan.mode }).total;
-    candidates.push({ hit, nearestS, score });
+    const expiresS =
+      profile.timeAtDistance(hit.alongTrackKm + maxDriftKm) - anchorOffsetS(hit.echo.durationS);
+    candidates.push({ hit, nearestS, score, expiresS });
   }
 
   // --- Stage 2: walk the timeline ----------------------------------------------------
+  const scarcity = categoryScarcity(candidates);
   const items: ScheduledEcho[] = [];
   const used = new Set<string>();
   /** Subjects already covered, so a related echo never follows its sibling. */
@@ -189,25 +266,43 @@ export function buildPlaylist(
 
       if (startS + duration > window.endS) continue;
 
-      const drift = Math.abs(startS + anchor - candidate.nearestS);
-      if (drift > maxTimingDriftS) continue;
+      // How far the listener has moved from the echo's place by the time its anchor lands.
+      // Not how long: on a route with stops the two part company, and distance is the one
+      // that decides whether the thing being described is still in front of them.
+      const driftKm = Math.abs(
+        profile.distanceAtTime(startS + anchor) - candidate.hit.alongTrackKm,
+      );
+      if (driftKm > maxDriftKm) continue;
 
       const silence = Math.max(0, startS - cursor);
+
+      // Variety is a tiebreaker among what is playable now, so its weight falls away as the
+      // wait grows. Without this, avoiding two of a category costs more than several minutes
+      // of silence, and the scheduler skips echoes rather than reordering them.
+      const varietyWeight = Math.max(0, 1 - silence / (maxTimingDriftS * VARIETY_FADE_RATIO));
+
+      // Has something already played that this echo answers?
+      const offersPerspective = (echo.perspectiveIds ?? []).some((id) => used.has(id));
+
+      // How nearly out of time this echo is, from 0 (window wide open) to 1 (last chance).
+      const urgency = Math.min(
+        1,
+        Math.max(0, 1 - (candidate.expiresS - startS) / deadAirHorizonS),
+      );
 
       // Annotated, not inferred: this value decides `best`, from which `cursor` and the
       // variety counters are reassigned — and those feed back into this very expression.
       // Without an explicit type TypeScript cannot break the cycle.
-      // Has something already played that this echo answers?
-      const offersPerspective = (echo.perspectiveIds ?? []).some((id) => used.has(id));
-
       const adjusted: number =
         candidate.score +
-        (offersPerspective ? PERSPECTIVE_BONUS : 0) -
-        PENALTY.drift * (drift / maxTimingDriftS) -
-        PENALTY.deadAir * Math.min(1, silence / deadAirHorizonS) -
-        categoryPenalty(echo.category, recentCategories) -
-        formatPenalty(echo.format, lastFormat, recentFormatRun) -
-        (lastVoice !== null && echo.voice === lastVoice ? PENALTY.sameVoiceRun : 0);
+        (offersPerspective ? PERSPECTIVE_BONUS : 0) +
+        URGENCY_BONUS * urgency -
+        PENALTY.drift * (driftKm / maxDriftKm) -
+        PENALTY.deadAir * (silence / deadAirHorizonS) -
+        varietyWeight *
+          (categoryPenalty(echo.category, recentCategories, scarcity) +
+            formatPenalty(echo.format, lastFormat, recentFormatRun) +
+            (lastVoice !== null && echo.voice === lastVoice ? PENALTY.sameVoiceRun : 0));
 
       if (!best || adjusted > best.adjusted) {
         best = { candidate, startS, adjusted };
@@ -218,14 +313,7 @@ export function buildPlaylist(
       // Nothing can play at the cursor. Jump to the earliest point at which some
       // unplayed candidate becomes viable, rather than crawling forward in small steps
       // through an empty stretch of ocean.
-      const next = nextViableTime(
-        candidates,
-        used,
-        coveredSubjects,
-        cursor,
-        window.endS,
-        maxTimingDriftS,
-      );
+      const next = nextViableTime(candidates, used, coveredSubjects, cursor, window.endS);
       // Strict progress or stop. `nextViableTime` applies the same constraints as the
       // loop above, so a value that fails to advance the cursor would mean the two had
       // disagreed — and would spin forever rather than fail.
@@ -286,10 +374,47 @@ export function buildPlaylist(
 function categoryPenalty(
   category: EchoCategory,
   recent: readonly EchoCategory[],
+  scarcity: ReadonlyMap<EchoCategory, number>,
 ): number {
-  if (recent[0] === category) return PENALTY.sameCategoryImmediate;
-  if (recent[1] === category) return PENALTY.sameCategoryRecent;
+  const weight = scarcity.get(category) ?? 1;
+  if (recent[0] === category) return PENALTY.sameCategoryImmediate * weight;
+  if (recent[1] === category) return PENALTY.sameCategoryRecent * weight;
   return 0;
+}
+
+/**
+ * How much repeating each category actually costs on *this* route, from 0 to 1.
+ *
+ * Variety is a choice, and a choice needs alternatives. A transatlantic corridor offers
+ * six categories in rough balance, so playing two history echoes in a row is a decision
+ * worth pricing. A themed walking tour is the opposite case: eleven of the twelve echoes
+ * on the Lower Manhattan walk are history, because the walk is *about* history, and
+ * insisting on a change of subject asks for something the corridor cannot supply.
+ *
+ * Charging the flat penalty anyway is not merely wasteful, it actively damages the tour.
+ * Measured on the real route it bought a kids echo eight minutes early at the price of
+ * eight minutes of silence, and pushed the Fraunces Tavern echo out of its own dwell and
+ * off the walk entirely — a worse outcome on every axis, in the name of a variety nobody
+ * could have noticed.
+ *
+ * So the penalty is scaled by the share of the corridor that is *not* this category. At
+ * 11-of-12 the weight is 0.08 and repetition is effectively free; at an even spread it is
+ * close to full strength and nothing about the old behaviour changes.
+ */
+function categoryScarcity(candidates: readonly Candidate[]): ReadonlyMap<EchoCategory, number> {
+  const counts = new Map<EchoCategory, number>();
+  for (const candidate of candidates) {
+    const { category } = candidate.hit.echo;
+    counts.set(category, (counts.get(category) ?? 0) + 1);
+  }
+
+  const weights = new Map<EchoCategory, number>();
+  const total = candidates.length;
+  if (total === 0) return weights;
+  for (const [category, count] of counts) {
+    weights.set(category, 1 - count / total);
+  }
+  return weights;
 }
 
 function formatPenalty(format: EchoFormat, lastFormat: EchoFormat | null, run: number): number {
@@ -309,7 +434,6 @@ function nextViableTime(
   covered: ReadonlySet<string>,
   cursor: number,
   windowEndS: number,
-  maxTimingDriftS: number,
 ): number | null {
   let earliest: number | null = null;
 
@@ -319,10 +443,7 @@ function nextViableTime(
 
     const anchor = anchorOffsetS(echo.durationS);
     const ideal = candidate.nearestS - anchor;
-    // The latest start that still lands within the drift budget; if that is already past,
-    // this candidate is behind us for good.
-    const latestStart = candidate.nearestS + maxTimingDriftS - anchor;
-    if (latestStart < cursor) continue;
+    if (candidate.expiresS < cursor) continue;
 
     const start = Math.max(cursor, ideal);
     // Same window check as the scheduling loop: an echo that cannot finish before the
