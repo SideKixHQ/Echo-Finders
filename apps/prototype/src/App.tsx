@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { PRIVACY_DEFAULTS, holdsPersonalLocation, type PrivacySettings } from "@echofinders/core";
 import { LIBRARY, ROUTES } from "./library.generated";
 import { useJourney, LISTENER } from "./use-journey";
@@ -33,6 +33,13 @@ export function App() {
   const [narrate, setNarrate] = useState(true);
   const [paused, setPaused] = useState(false);
   const [privacy, setPrivacy] = useState<PrivacySettings>(PRIVACY_DEFAULTS);
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
+
+  // Set on the document rather than a wrapper, so the variables cascade to everything
+  // including the portal-less fixed elements.
+  useEffect(() => {
+    document.documentElement.dataset["theme"] = theme;
+  }, [theme]);
   // Two questions, two answers. `handsFree` buys background location so echoes open with
   // the screen off; this decides whether they then talk. Somebody can very reasonably want
   // a phone collecting in a pocket while still choosing what they hear.
@@ -385,6 +392,9 @@ export function App() {
         <div className="controls">
           <button onClick={togglePause}>{paused ? "Resume" : "Pause"}</button>
           <button onClick={() => walk.seekTo(0)}>Back to start</button>
+          <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+            {theme === "dark" ? "Light mode" : "Dark mode"}
+          </button>
           {selfDirected && (
             <button onClick={() => setSound(!sound)}>{sound ? "Cue on" : "Cue off"}</button>
           )}

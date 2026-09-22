@@ -19,6 +19,7 @@
  */
 
 import { useMemo } from "react";
+import { CATEGORY_ICON } from "./categories";
 import {
   buildRouteGeometry,
   effectiveRadiusKm,
@@ -152,7 +153,7 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
         return (
           <g
             key={echo.id}
-            className={`pin pin-${state}${selected ? " pin-selected" : ""}`}
+            className={`pin pin-${state} cat-${echo.category}${selected ? " pin-selected" : ""}`}
             transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`}
             onClick={() => onSelect(echo.id)}
             role="button"
@@ -164,14 +165,22 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
 
             <Contours />
 
-            <circle className="pin-body" r="7.5" />
+            {/*
+              A ring in the category's colour with its glyph inside — the design's pin, not
+              a dot. At 26px a colour alone cannot carry nine categories: anybody who does
+              not already know the key is looking at coloured dots, and the icon is what
+              makes the colour mean something before it is tapped.
+            */}
+            <circle className="pin-body" r="13" />
+            <g className="pin-icon" transform="translate(-7 -7) scale(0.583)">
+              {CATEGORY_ICON[echo.category]}
+            </g>
 
             {arriving && <ProgressRing progress={arriving.progress} />}
 
-            {state === "captured" || state === "heard" ? (
-              <path className="pin-glyph" d="M-3 0 L-0.8 2.1 L3.4 -2.6" />
-            ) : (
-              <circle className="pin-dot" r="2.4" />
+            {/* The found marker sits on the rim, as it does in the design. */}
+            {(state === "captured" || state === "heard") && (
+              <circle className="pin-found" r="4" cx="9.5" cy="9.5" />
             )}
           </g>
         );
@@ -211,9 +220,8 @@ const CONTOUR =
 function Contours() {
   return (
     <>
-      <use href="#contour" className="pin-contour pin-contour-1" transform="scale(7.5)" />
-      <use href="#contour" className="pin-contour pin-contour-2" transform="scale(11.5) rotate(74)" />
-      <use href="#contour" className="pin-contour pin-contour-3" transform="scale(15.5) rotate(148)" />
+      <use href="#contour" className="pin-contour pin-contour-2" transform="scale(17) rotate(74)" />
+      <use href="#contour" className="pin-contour pin-contour-3" transform="scale(21) rotate(148)" />
     </>
   );
 }
@@ -225,7 +233,7 @@ function Contours() {
  * comes from the engine, so the ring completes at exactly the moment the echo opens.
  */
 function ProgressRing({ progress }: { progress: number }) {
-  const r = 11;
+  const r = 16;
   const circumference = 2 * Math.PI * r;
   return (
     <circle

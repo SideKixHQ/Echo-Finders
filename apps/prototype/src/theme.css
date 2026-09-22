@@ -42,17 +42,65 @@
   --cat-built: #d8dce5;
   --cat-land: #7fd4c1;
 
+  --stage: #07080c;
   --rgb-hair: 216, 220, 229;
   --rgb-panel: 11, 15, 43;
+  --rgb-accent: 0, 255, 231;
   --line: rgba(var(--rgb-hair), 0.12);
   --line-2: rgba(var(--rgb-hair), 0.22);
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/**
+ * Light mode.
+ *
+ * Values from the design prototype's own `body.light` block, not eyeballed. The whole
+ * palette inverts rather than lightening: --white becomes near-black, --aqua becomes a deep
+ * teal that can hold a caption, and every category takes its `lc` variant. That last part
+ * is what makes the mode usable at all — a #9B95FF dot on white is invisible, so the light
+ * colours are darker and more saturated versions of the same hue rather than the same ink
+ * on a different page.
+ */
+:root[data-theme="light"] {
+  --stage: #e2e7ef;
+  --rgb-panel: 222, 229, 240;
+  --rgb-hair: 11, 15, 43;
+  --rgb-accent: 0, 115, 108;
+
+  --space: #ffffff;
+  --charcoal: #edf0f6;
+  --slate: #ffffff;
+  --white: #0b0f2b;
+  --muted: #5d6779;
+  --cool: #3a4459;
+  --aqua: #00736c;
+  --indigo-soft: #5b52d6;
+  --indigo-btn: #5147db;
+  --gold: #7a5a15;
+  --line: rgba(11, 15, 43, 0.14);
+  --line-2: rgba(11, 15, 43, 0.24);
+
+  /* The ember, darkened until it can carry small text on white. */
+  --ember: #c25a00;
+  --ember-core: #e8502a;
+  --ember-deep: #8f4100;
+
+  --cat-history: #4c43c8;
+  --cat-true-crime: #c1005c;
+  --cat-legend: #1d7a3a;
+  --cat-kids: #00736c;
+  --cat-food-drink: #8f4d00;
+  --cat-arts: #b4256f;
+  --cat-people: #5b52d6;
+  --cat-built: #3f4a5c;
+  --cat-land: #1f6b5c;
+
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  background: #07080c;
+  background: var(--stage, #07080c);
   color: var(--white);
   font-family: Poppins, system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -66,6 +114,9 @@ body {
 .dim { color: var(--muted); }
 
 .stage { display: flex; align-items: flex-start; gap: 44px; flex-wrap: wrap; justify-content: center; }
+
+:root[data-theme="light"] .phone { box-shadow: 0 0 0 2px #c3cad6, 0 30px 70px rgba(11, 15, 43, 0.28); }
+:root[data-theme="light"] .notes code { color: var(--aqua); }
 
 /* ── device ──────────────────────────────────────────────── */
 .phone {
@@ -102,63 +153,49 @@ body {
 .pin { cursor: pointer; }
 .pin-radius { fill: rgba(255, 158, 18, 0.05); stroke: rgba(255, 158, 18, 0.28); stroke-width: 1; stroke-dasharray: 3 3; }
 
-/* Nested contours, straight off the mark: the rings are not circles but irregular
-   topographic lines, and they read as *land* rather than as a target reticle. Each ring is
-   the same path rotated and scaled, so the nesting stays legible at 22px where genuine
-   irregularity would turn to mush. */
+/* Two contours outside the pin rather than three around a dot: the mark's language kept,
+   at a size that leaves the category ring room to be the thing you actually read. */
 .pin-contour {
-  fill: none; stroke: currentColor; stroke-width: 1.15; opacity: 0.55;
+  fill: none; stroke: currentColor; stroke-width: 1.1; opacity: 0.3;
 }
-.pin-contour-2 { opacity: 0.32; }
-.pin-contour-3 { opacity: 0.18; }
+.pin-contour-3 { opacity: 0.15; }
 
-.pin-body { fill: rgba(var(--rgb-panel), 0.95); stroke: currentColor; stroke-width: 1.6; transition: all 0.2s var(--ease); }
-.pin-dot { fill: currentColor; }
-.pin-glyph { fill: none; stroke: var(--space); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.pin-body {
+  fill: rgba(var(--rgb-panel), 0.92); stroke: currentColor; stroke-width: 1.8;
+  transition: all 0.2s var(--ease);
+}
+.pin-icon {
+  fill: none; stroke: currentColor; stroke-width: 1.8;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.pin-found { fill: var(--ember); stroke: var(--space); stroke-width: 1.6; }
 
-/* Sealed: outline only. Known about, not yet opened. */
-/* Sealed: contours and nothing else. Cool, and with no warm core, because the ember is
-   what you are walking there to light. */
-.pin-sealed { color: var(--indigo-soft); }
-.pin-sealed .pin-dot { opacity: 0.4; }
+/* Sealed keeps the category colour — what kind of thing is there is not a secret, only
+   what it says is. Found adds the ember marker and a glow. */
+.pin-sealed .pin-body { opacity: 0.85; }
+.pin-sealed .pin-icon { opacity: 0.7; }
 
-/* Opening: the ring fills. Driven by the engine, never a local timer. */
-/* Opening: the ember catches. The contours push outward as it does — the ripples on the
-   app icon, and the one moment in the interface where the mark is literally animated. */
-.pin-opening { color: var(--ember); }
-.pin-opening .pin-body { fill: var(--ember-deep); filter: drop-shadow(0 0 10px var(--ember)); }
-.pin-opening .pin-dot { fill: var(--ember-core); }
+.pin-opening .pin-body { filter: drop-shadow(0 0 10px currentColor); }
 .pin-opening .pin-contour { animation: ripple 1.6s var(--ease) infinite; }
-.pin-opening .pin-contour-2 { animation-delay: 0.28s; }
-.pin-opening .pin-contour-3 { animation-delay: 0.56s; }
+.pin-opening .pin-contour-3 { animation-delay: 0.3s; }
 @keyframes ripple {
-  0% { opacity: 0.5; transform: scale(0.82); }
+  0% { opacity: 0.5; transform: scale(0.8); }
   70% { opacity: 0.08; }
-  100% { opacity: 0; transform: scale(1.5); }
+  100% { opacity: 0; transform: scale(1.45); }
 }
 @media (prefers-reduced-motion: reduce) {
   .pin-opening .pin-contour { animation: none; opacity: 0.35; }
 }
 .pin-ring {
-  fill: none; stroke: var(--ember-core); stroke-width: 3; stroke-linecap: round;
+  fill: none; stroke: var(--ember); stroke-width: 3; stroke-linecap: round;
   filter: drop-shadow(0 0 6px var(--ember));
+  transition: stroke-dashoffset 0.12s linear;
 }
 
-/* Captured: solid aqua. Yours. */
-/* Captured: the mark's focal point, at map scale — a hot core, a ring, a warm glow. */
-.pin-captured { color: var(--ember); }
-.pin-captured .pin-body {
-  fill: var(--ember); stroke: var(--ember-core);
-  filter: drop-shadow(0 0 12px rgba(255, 158, 18, 0.75));
-}
-
-/* Heard: solid, muted. Done. */
-/* Heard: the ember gone cold. Still found, no longer calling. */
-.pin-heard { color: var(--ember-deep); }
-.pin-heard .pin-body { fill: var(--ember-deep); opacity: 0.75; }
-.pin-heard .pin-glyph { stroke: rgba(255, 215, 122, 0.85); }
-
-.pin-selected .pin-body { stroke-width: 2.4; }
+.pin-captured .pin-body { filter: drop-shadow(0 0 12px rgba(255, 158, 18, 0.55)); }
+.pin-heard .pin-body { opacity: 0.55; }
+.pin-heard .pin-found { fill: var(--ember-deep); }
+.pin-selected .pin-body { stroke-width: 2.6; }
 
 .here-dot { fill: var(--white); stroke: var(--aqua); stroke-width: 2.5; filter: drop-shadow(0 0 10px var(--aqua)); }
 
@@ -183,13 +220,18 @@ body {
 
 /* Warming, literally: the bar is reporting how near an echo is, so it carries the echo's
    colour and not the interface's. Cold at a distance, ember on arrival. */
-.proximity-warmer .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(255, 158, 18, 0.32)); }
-.proximity-close .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(255, 158, 18, 0.58)); }
+.proximity-warmer .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(255, 158, 18, 0.16)); }
+.proximity-close .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(255, 158, 18, 0.26)); }
+/* On a white sheet the same alphas read as tan rather than as warmth, so light mode takes
+   the colour down and lets the text carry the state instead. */
+:root[data-theme="light"] .proximity-warmer .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(194, 90, 0, 0.14)); }
+:root[data-theme="light"] .proximity-close .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(194, 90, 0, 0.2)); }
+:root[data-theme="light"] .proximity-arrived .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(194, 90, 0, 0.16)); }
 /* Arrival keeps the same sweep as the states before it rather than filling the bar.
    Ember is far darker and more saturated than the aqua this replaced, so an alpha that
    glowed in cyan paints in orange — a flat fill reads as a brown slab, not as warmth. */
 .proximity-arrived .proximity-pulse {
-  background: linear-gradient(90deg, transparent, rgba(255, 158, 18, 0.34));
+  background: linear-gradient(90deg, transparent, rgba(255, 158, 18, 0.3));
 }
 .proximity-colder .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(174, 181, 194, 0.22)); }
 .proximity-steady .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(155, 149, 255, 0.22)); }
@@ -206,7 +248,7 @@ body {
    somebody reaches for while walking. */
 .playing {
   position: absolute; left: 12px; right: 12px; z-index: 30;
-  background: rgba(31, 37, 46, 0.97);
+  background: rgba(var(--rgb-panel), 0.97);
   border: 1px solid rgba(255, 158, 18, 0.35); border-radius: 16px;
   padding: 11px 12px; backdrop-filter: blur(12px);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
@@ -293,7 +335,7 @@ body {
 }
 .ribbon-bar u {
   position: absolute; top: 50%; width: 7px; height: 7px;
-  margin: -3.5px 0 0 -3.5px; border-radius: 50%; background: #fff;
+  margin: -3.5px 0 0 -3.5px; border-radius: 50%; background: var(--white);
 }
 .ribbon small {
   font-family: "Space Grotesk", monospace; font-size: 10.5px; color: var(--aqua); flex: none;
@@ -324,11 +366,12 @@ body {
   margin-right: 3px; padding-right: 11px;
 }
 .chip-all.on { color: var(--aqua); background: none; }
-.chip-dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: 0.4; }
+.chip-dot {
+  width: 7px; height: 7px; border-radius: 50%; flex: none;
+  background: currentColor; opacity: 0.45;
+}
 .chip.on { background: rgba(var(--rgb-hair), 0.08); }
 .chip.on .chip-dot { opacity: 1; }
-/* Unselected chips stay grey, so the row reads as a key rather than a wall of colour. */
-.chip:not(.on):not(.chip-all) { color: var(--muted); }
 
 /* ── echo card ───────────────────────────────────────────── */
 .ecard {
@@ -491,7 +534,7 @@ body {
 .plan-auto-on .plan-auto-text small { color: var(--ember); }
 
 /* ── coming up ───────────────────────────────────────────── */
-.upnext { padding: 4px 16px 10px; flex: none; }
+.upnext { padding: 2px 16px 8px; flex: none; }
 .upnext-head {
   display: block; font-family: "Space Grotesk", monospace;
   font-size: 8.5px; letter-spacing: 0.15em; text-transform: uppercase;
@@ -500,7 +543,7 @@ body {
 .upnext ul { display: flex; flex-direction: column; gap: 3px; }
 .upnext button {
   display: flex; align-items: center; gap: 10px; width: 100%;
-  background: none; border: 0; padding: 5px 0; cursor: pointer;
+  background: none; border: 0; padding: 4px 0; cursor: pointer;
   font: inherit; color: inherit; text-align: left;
 }
 .upnext-when {
@@ -528,23 +571,23 @@ body {
      collapsed the second to a single clipped row. */
   /* Tall enough for one whole echo card including its actions. A card clipped above its
      Listen button is worse than a list, because it promises something it then hides. */
-  height: 410px; background: var(--slate);
+  height: 432px; background: var(--slate);
   border-radius: 24px 24px 0 0; border-top: 1px solid var(--line-2);
   box-shadow: 0 -14px 40px rgba(0, 0, 0, 0.55);
   display: flex; flex-direction: column; padding-bottom: 18px;
 }
 .grab { width: 38px; height: 4px; border-radius: 99px; background: rgba(var(--rgb-hair), 0.3); margin: 11px auto 6px; flex: none; }
 
-.now { padding: 6px 16px 12px; flex: none; }
+.now { padding: 4px 16px 9px; flex: none; }
 .now-top { display: flex; gap: 12px; align-items: center; }
 .now-text { min-width: 0; flex: 1; }
-.now h2 { font-size: 15px; font-weight: 600; line-height: 1.25; margin: 3px 0 2px; }
+.now h2 { font-size: 14.5px; font-weight: 600; line-height: 1.22; margin: 2px 0 1px; }
 .now p { font-size: 12px; color: var(--muted); }
 .now-idle h2 { font-size: 14px; color: var(--cool); }
 
 .play {
   width: 42px; height: 42px; flex: none; border: 0; border-radius: 50%;
-  background: var(--aqua); color: #042220; display: grid; place-items: center; cursor: pointer;
+  background: var(--indigo-btn); color: #fff; display: grid; place-items: center; cursor: pointer;
 }
 .play svg { width: 16px; height: 16px; fill: currentColor; }
 
@@ -635,7 +678,7 @@ body {
   position: absolute; left: 0; right: 0; bottom: 0; z-index: 50;
   height: 72px; padding-bottom: 14px;
   display: flex; align-items: center;
-  background: rgba(11, 15, 43, 0.96);
+  background: rgba(var(--rgb-panel), 0.96);
   border-top: 1px solid var(--line);
   backdrop-filter: blur(12px);
 }
@@ -652,16 +695,16 @@ body {
 .nav .badge {
   position: absolute; top: -3px; left: 50%; margin-left: 7px;
   min-width: 15px; height: 15px; padding: 0 4px; border-radius: 99px;
-  background: var(--ember); color: var(--space); font-size: 9px; line-height: 15px;
+  background: var(--ember); color: #fff; font-size: 9px; line-height: 15px;
 }
 
 /* The sheet and proximity bar sit above the tab bar rather than under it. */
 .sheet { bottom: 72px; }
-.proximity { bottom: 492px; }
+.proximity { bottom: 514px; }
 /* Above the guidance bar when there is one; the guidance bar's own slot when there is not,
    which is every carried mode. */
-.playing { bottom: 546px; }
-.stack-noguide .playing { bottom: 492px; }
+.playing { bottom: 568px; }
+.stack-noguide .playing { bottom: 514px; }
 
 /* ── full-screen panels ──────────────────────────────────── */
 .screen-body {
@@ -692,7 +735,7 @@ body {
 .entry { display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--line); }
 .entry-glyph {
   width: 30px; height: 30px; flex: none; border-radius: 50%;
-  background: rgba(0, 255, 231, 0.14); display: grid; place-items: center;
+  background: rgba(var(--rgb-accent, 0, 255, 231), 0.14); display: grid; place-items: center;
 }
 .entry-glyph svg { width: 15px; height: 15px; fill: none; stroke: var(--ember); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 .entry-text { min-width: 0; }
@@ -728,7 +771,7 @@ body {
   transition: transform 0.2s var(--ease), background 0.2s var(--ease);
 }
 .setting-on .switch { background: var(--aqua); }
-.setting-on .knob { transform: translateX(17px); background: #042220; }
+.setting-on .knob { transform: translateX(17px); background: var(--space); }
 
 /* The consequence of switching off, stated rather than implied. */
 .setting-cost {

@@ -2,9 +2,12 @@
  * The category filter, as a scrolling row of chips.
  *
  * Straight from the design: an "All" chip pinned to the left behind a divider, then one
- * chip per category carrying its own colour as a dot. Selected chips light their colour;
- * unselected ones keep the dot at low opacity, so the palette is legible even when nothing
- * is on and the row reads as a key rather than a set of buttons.
+ * chip per category carrying its own colour as a dot.
+ *
+ * The dot keeps its colour whether or not the chip is on — only its opacity changes — which
+ * is what makes the row a *key* rather than a set of buttons. Greying the dot out with the
+ * label, as an earlier pass did, left somebody who does not already know the palette staring
+ * at nine identical grey circles.
  *
  * Only categories the route actually passes appear. A filter offering "Ghosts" on a flight
  * with no ghost stories on it is a promise the library cannot keep.
@@ -33,10 +36,12 @@ export function CategoryChips({ available, on, onToggle, onAll }: CategoryChipsP
       {shown.map((category) => (
         <button
           key={category}
-          className={`chip cat-${category}${on.has(category) ? " on" : ""}`}
+          // The colour class goes on the chip only when it is on, so the *label* greys out
+          // with the rest of the row. The dot carries its category's colour either way.
+          className={`chip${on.has(category) ? ` cat-${category} on` : ""}`}
           onClick={() => onToggle(category)}
         >
-          <span className="chip-dot" />
+          <span className={`chip-dot cat-${category}`} />
           {CATEGORY_LABEL[category]}
         </button>
       ))}
