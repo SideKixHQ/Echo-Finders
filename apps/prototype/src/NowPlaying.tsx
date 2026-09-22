@@ -9,6 +9,7 @@
  */
 
 import type { Deferred, PlaybackState, QueuedEcho } from "@echofinders/core";
+import { CATEGORY_LABEL } from "./categories";
 
 export interface NowPlayingProps {
   readonly state: PlaybackState;
@@ -35,37 +36,42 @@ export function NowPlaying({
     <div className="playing">
       <div className="playing-top">
         <button
-          className="playing-button"
+          className="playing-orb"
           onClick={playing ? onPause : onResume}
           aria-label={playing ? "Pause" : "Resume"}
         >
           {playing ? (
-            <svg viewBox="0 0 16 16">
-              <rect x="3" y="2" width="3.6" height="12" rx="1" />
-              <rect x="9.4" y="2" width="3.6" height="12" rx="1" />
+            <svg viewBox="0 0 24 24">
+              <rect x="6" y="4" width="4" height="16" rx="1.2" />
+              <rect x="14" y="4" width="4" height="16" rx="1.2" />
             </svg>
           ) : (
-            <svg viewBox="0 0 16 16">
-              <path d="M4 2.5v11l9-5.5z" />
+            <svg viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
             </svg>
           )}
         </button>
 
         <div className="playing-text">
-          <span className="playing-label">{playing ? "Playing" : "Paused"}</span>
+          <span className={`playing-kicker cat-${echo.category}`}>
+            <span className="playing-dot" />
+            {CATEGORY_LABEL[echo.category]}
+          </span>
           <strong>{echo.title}</strong>
-          <span className="playing-place">{echo.point.place}</span>
+          <span className="playing-place">
+            {echo.point.place} · {clock(echo.durationS)}
+          </span>
         </div>
 
-        <button className="playing-skip" onClick={onSkip} aria-label="Skip">
-          Skip
+        <button className="playing-mark" onClick={onSkip} aria-label="Skip to the next">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 5l10 7-10 7zM18 5v14" />
+          </svg>
         </button>
       </div>
 
       {waiting.length > 0 && (
-        <p className="playing-next">
-          Next: {waiting.map((w) => w.echo.title).join(" · ")}
-        </p>
+        <p className="playing-next">Next: {waiting.map((w) => w.echo.title).join(" · ")}</p>
       )}
 
       {deferred.length > 0 && (
@@ -76,3 +82,6 @@ export function NowPlaying({
     </div>
   );
 }
+
+const clock = (seconds: number) =>
+  `${Math.floor(seconds / 60)}:${String(Math.round(seconds % 60)).padStart(2, "0")}`;

@@ -10,6 +10,7 @@ import type { CaptureEvent, Echo, NearbyEcho } from "@echofinders/core";
 import { rarityOf, rarityReasons } from "@echofinders/core";
 import type { PinState } from "./RouteMap";
 import { UpNext } from "./UpNext";
+import { EchoCard } from "./EchoCard";
 import type { Upcoming } from "@echofinders/core";
 
 interface Props {
@@ -30,6 +31,8 @@ interface Props {
   readonly upcoming: readonly Upcoming[];
   readonly selfDirected: boolean;
   readonly autoPlay: boolean;
+  readonly saved: ReadonlySet<string>;
+  readonly onSave: (echo: Echo) => void;
 }
 
 export function Sheet({
@@ -47,6 +50,8 @@ export function Sheet({
   upcoming,
   selfDirected,
   autoPlay,
+  saved,
+  onSave,
 }: Props) {
   return (
     <div className="sheet">
@@ -72,20 +77,23 @@ export function Sheet({
         <span className="count">{captured.length} found</span>
       </div>
 
-      <ul className="list">
+      <div className="list">
         {nearby.slice(0, 5).map((entry) => (
-          <Row
+          <EchoCard
             key={entry.echo.id}
-            entry={entry}
-            state={stateOf(entry.echo.id)}
+            echo={entry.echo}
+            distanceM={entry.distanceKm * 1000}
+            sealed={stateOf(entry.echo.id) === "sealed"}
             selected={selectedId === entry.echo.id}
-            onSelect={onSelect}
-            onPlay={onPlay}
             playing={isPlaying(entry.echo.id)}
+            saved={saved.has(entry.echo.id)}
+            onPlay={onPlay}
+            onSave={onSave}
+            onSelect={onSelect}
           />
         ))}
-        {nearby.length === 0 && <li className="empty">Nothing within reach. Keep walking.</li>}
-      </ul>
+        {nearby.length === 0 && <p className="empty">Nothing within reach. Keep walking.</p>}
+      </div>
     </div>
   );
 }
@@ -182,73 +190,4 @@ function Idle({
   );
 }
 
-function Row({
-  entry,
-  state,
-  selected,
-  onSelect,
-  onPlay,
-  playing,
-}: {
-  entry: NearbyEcho;
-  state: PinState;
-  selected: boolean;
-  onSelect: (id: string) => void;
-  onPlay: (echo: Echo) => void;
-  playing: boolean;
-}) {
-  const metres = Math.round(entry.distanceKm * 1000);
-  // A sealed echo has nothing to play yet — going there is the only way to open it, and a
-  // play button on one would be an offer the product cannot keep.
-  const found = state !== "sealed";
 
-  return (
-    <li>
-      <button
-        className={`row row-${state}${selected ? " row-selected" : ""}`}
-        onClick={() => onSelect(entry.echo.id)}
-      >
-        <span className={`bullet bullet-${state}`} />
-        <span className="row-text">
-          <strong>{state === "sealed" ? sealedTitle(entry.echo) : entry.echo.title}</strong>
-          <small>{entry.echo.point.place}</small>
-        </span>
-        {found ? (
-          <span
-            className={playing ? "row-play row-play-on" : "row-play"}
-            role="button"
-            tabIndex={0}
-            aria-label={`Play ${entry.echo.title}`}
-            onClick={(event) => {
-              event.stopPropagation();
-              onPlay(entry.echo);
-            }}
-            onKeyDown={(event) => {
-              if (event.key === "Enter" || event.key === " ") {
-                event.stopPropagation();
-                event.preventDefault();
-                onPlay(entry.echo);
-              }
-            }}
-          >
-            <svg viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          </span>
-        ) : (
-          <span className="row-distance">{metres < 1000 ? `${metres}m` : "far"}</span>
-        )}
-      </button>
-    </li>
-  );
-}
-
-/**
- * A sealed echo shows its teaser rather than its title.
- *
- * The map is a map of promises: you can see that something is there and roughly what kind
- * of thing, and finding out means going. Spoiling it on the list removes the reason to walk.
- */
-function sealedTitle(echo: Echo): string {
-  return echo.teaser ?? "Something happened here";
-}

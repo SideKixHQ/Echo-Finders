@@ -11,6 +11,9 @@ import { Privacy } from "./Privacy";
 import { Nav, type Tab } from "./Nav";
 import { NowPlaying } from "./NowPlaying";
 import { Plan } from "./Plan";
+import { RouteRibbon } from "./RouteRibbon";
+import { CategoryChips } from "./CategoryChips";
+import type { EchoCategory } from "@echofinders/core";
 import { findEchoesAlongRoute, presetFor, upcomingOnRoute, type Route } from "@echofinders/core";
 
 /** The walk is the richest route, so it is what the prototype opens on. */
@@ -35,6 +38,7 @@ export function App() {
   // a phone collecting in a pocket while still choosing what they hear.
   const [autoPlay, setAutoPlay] = useState(false);
   const [chosen, setChosen] = useState<ReadonlySet<string>>(new Set());
+  const [cats, setCats] = useState<ReadonlySet<EchoCategory> | null>(null);
   // The listener's own setting drives it, not a constant. `handsFree` is off by default
   // (PRIVACY_DEFAULTS), so an echo collects itself on arrival and then waits to be played.
   const { state, session, walk } = useJourney(route, LIBRARY, {
@@ -101,9 +105,11 @@ export function App() {
     setPaused(false);
     // A choice belongs to the journey it was made for.
     setChosen(new Set());
+    setCats(null);
   };
 
   const walkedPercent = Math.round((walk.walkedMetres / walk.totalMetres) * 100);
+  const remainingS = route.durationS * (1 - Math.min(1, walk.walkedMetres / walk.totalMetres));
 
   // How much of the library this route actually passes. Worth showing: it is the clearest
   // statement that content is filed by place, not by journey, and that a route is a query
@@ -127,6 +133,14 @@ export function App() {
     [byRoute],
   );
   const onRoute = byRoute[route.id] ?? [];
+
+  // Only categories this route actually passes get a chip. Offering "Ghosts" on a flight
+  // with no ghost stories on it is a promise the library cannot keep.
+  const available = useMemo(
+    () => new Set(onRoute.map((e) => e.category)),
+    [onRoute],
+  );
+  const activeCats = cats ?? available;
 
   // Recomputed as the listener moves, from how far along they are rather than from the
   // clock: a journey that paused still knows where it is, and asking the clock would offer
@@ -168,9 +182,27 @@ export function App() {
 
           {tab === "map" && (
             <>
+              <div className="mapbar">
+                <RouteRibbon
+                  route={route}
+                  progress={walk.totalMetres > 0 ? walk.walkedMetres / walk.totalMetres : 0}
+                  remainingS={remainingS}
+                />
+                <CategoryChips
+                  available={available}
+                  on={activeCats}
+                  onToggle={(c) => {
+                    const next = new Set(activeCats);
+                    if (next.has(c) && next.size > 1) next.delete(c);
+                    else next.add(c);
+                    setCats(next);
+                  }}
+                  onAll={() => setCats(null)}
+                />
+              </div>
               <RouteMap
                 route={route}
-                library={onRoute}
+                library={onRoute.filter((e) => activeCats.has(e.category))}
                 position={state.position}
                 opening={state.opening}
                 stateOf={stateOf}
@@ -187,7 +219,7 @@ export function App() {
                 onSkip={() => session.skip()}
               />
               <Sheet
-                nearby={state.nearby}
+                nearby={state.nearby.filter((n) => activeCats.has(n.echo.category))}
                 lastCapture={state.lastCapture}
                 captured={kept}
                 stateOf={stateOf}
@@ -203,6 +235,13 @@ export function App() {
                 upcoming={upcoming}
                 selfDirected={selfDirected}
                 autoPlay={autoPlay}
+                saved={chosen}
+                onSave={(echo) => {
+                  const next = new Set(chosen);
+                  if (next.has(echo.id)) next.delete(echo.id);
+                  else next.add(echo.id);
+                  setChosen(next);
+                }}
               />
             </>
           )}
