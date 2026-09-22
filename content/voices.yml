@@ -38,9 +38,23 @@ voices:
     notes: >-
       Male narrator. Listened to on 22 September 2026 and judged good.
 
-      Both voices working is a decision to make rather than a free win: offering a choice is
-      not a second audio file, it is a second set of transcript timings and a second
-      complete copy of every render, so it roughly doubles both the TTS bill and the size of
-      every offline package. For a first paid route, ship one voice and keep the other in
-      reserve — a narrator picker is a feature to add once people are listening, not
-      something to pay for before anyone has.
+      One male and one female voice is the intended shape. Measured cost, from the package
+      builder, for an echo plus its simple telling in both voices:
+
+        12 echoes · both voices · 24.6 MB   (walking budget 60 MB)  — fine
+        30 echoes · both voices · 61.6 MB   (walking budget 60 MB)  — over
+        250 echoes · both voices · 513 MB   (flight budget 250 MB)  — impossible
+
+      So: carry both on a walking route, carry one on a flight package. That is a per-mode
+      decision the builder already takes, via EchoJourneyOptions.voiceIds.
+
+      Worth considering before building a picker, because it costs nothing and may be
+      better: **casting** rather than choosing. Assign voices per echo — this one told by
+      her, that one by him — so the tour alternates. Each echo is rendered once, so package
+      size and TTS bill stay at one voice, and half an hour of a single narrator is more
+      monotonous than two. It also pairs naturally with perspectiveIds: two accounts of the
+      same event, in two voices, is a thing an audio documentary would do deliberately.
+
+      A picker and a cast answer different needs. A picker serves preference and
+      accessibility — some listeners genuinely follow one voice more easily. A cast serves
+      the listening experience. They can coexist, but only the picker costs double.
