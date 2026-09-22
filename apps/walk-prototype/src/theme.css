@@ -203,3 +203,134 @@ body {
   border: 1px solid var(--line-2); border-radius: 9px;
 }
 .controls button:hover { border-color: var(--aqua); color: var(--aqua); }
+
+/* ── tab bar ─────────────────────────────────────────────── */
+.nav {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 50;
+  height: 72px; padding-bottom: 14px;
+  display: flex; align-items: center;
+  background: rgba(11, 15, 43, 0.96);
+  border-top: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+.nav button {
+  flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;
+  background: none; border: 0; cursor: pointer; position: relative;
+  font-size: 9.5px; letter-spacing: 0.06em; color: var(--muted);
+  font-family: "Space Grotesk", monospace; text-transform: uppercase;
+}
+.nav button svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.nav button.on { color: var(--aqua); }
+.nav .badge {
+  position: absolute; top: -3px; left: 50%; margin-left: 7px;
+  min-width: 15px; height: 15px; padding: 0 4px; border-radius: 99px;
+  background: var(--aqua); color: #042220; font-size: 9px; line-height: 15px;
+}
+
+/* The sheet and proximity bar sit above the tab bar rather than under it. */
+.sheet { bottom: 72px; }
+.proximity { bottom: 378px; }
+
+/* ── full-screen panels ──────────────────────────────────── */
+.screen-body {
+  position: absolute; inset: 46px 0 72px; z-index: 15;
+  overflow-y: auto; padding: 8px 18px 24px;
+  background: var(--space); scrollbar-width: none;
+}
+.screen-body::-webkit-scrollbar { display: none; }
+
+.screen-head { padding: 12px 0 18px; }
+.screen-head h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
+.screen-head p { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+.empty-state { padding: 80px 12px; text-align: center; }
+.empty-state h2 { font-size: 16px; margin-bottom: 8px; color: var(--cool); }
+.empty-state p { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+
+/* ── collection ──────────────────────────────────────────── */
+.group { margin-bottom: 22px; }
+.group-head {
+  font-family: "Space Grotesk", monospace; font-size: 9.5px; letter-spacing: 0.16em;
+  text-transform: uppercase; margin-bottom: 8px; color: var(--muted);
+}
+.group-singular { color: var(--magenta); }
+.group-rare { color: var(--aqua); }
+.group-uncommon { color: var(--indigo-soft); }
+
+.entry { display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.entry-glyph {
+  width: 30px; height: 30px; flex: none; border-radius: 50%;
+  background: rgba(0, 255, 231, 0.14); display: grid; place-items: center;
+}
+.entry-glyph svg { width: 15px; height: 15px; fill: none; stroke: var(--aqua); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.entry-text { min-width: 0; }
+.entry-text h4 { font-size: 13px; font-weight: 500; line-height: 1.35; }
+.entry-text p { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.entry-meta { font-size: 10px; color: rgba(174, 181, 194, 0.72); }
+
+.collection-foot {
+  margin-top: 18px; padding: 14px; border-radius: 12px;
+  background: var(--slate); border: 1px solid var(--line);
+}
+.collection-foot p { font-size: 11.5px; color: var(--muted); line-height: 1.6; }
+.collection-foot strong { color: var(--cool); }
+
+/* ── privacy ─────────────────────────────────────────────── */
+.setting { margin-bottom: 18px; }
+.setting-row {
+  width: 100%; display: flex; align-items: center; gap: 14px;
+  background: none; border: 0; color: inherit; text-align: left; cursor: pointer; padding: 0;
+}
+.setting-text { flex: 1; display: flex; flex-direction: column; gap: 3px; }
+.setting-text strong { font-size: 13.5px; font-weight: 500; }
+.setting-text small { font-size: 11.5px; color: var(--muted); line-height: 1.5; }
+
+.switch {
+  width: 42px; height: 25px; flex: none; border-radius: 99px;
+  background: rgba(var(--rgb-hair), 0.16); position: relative;
+  transition: background 0.2s var(--ease);
+}
+.knob {
+  position: absolute; top: 3px; left: 3px; width: 19px; height: 19px;
+  border-radius: 50%; background: var(--cool);
+  transition: transform 0.2s var(--ease), background 0.2s var(--ease);
+}
+.setting-on .switch { background: var(--aqua); }
+.setting-on .knob { transform: translateX(17px); background: #042220; }
+
+/* The consequence of switching off, stated rather than implied. */
+.setting-cost {
+  font-size: 11px; color: rgba(174, 181, 194, 0.78); line-height: 1.55;
+  margin-top: 7px; padding-left: 2px; border-left: 2px solid var(--line-2); padding-left: 10px;
+}
+
+.panel {
+  margin-top: 26px; padding: 14px; border-radius: 12px;
+  background: var(--slate); border: 1px solid var(--line);
+}
+.panel h3 {
+  font-family: "Space Grotesk", monospace; font-size: 9.5px; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
+}
+.feature-list { list-style: none; }
+.feature {
+  display: grid; grid-template-columns: 1fr auto; gap: 2px 10px;
+  padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 12px;
+}
+.feature:last-child { border-bottom: 0; }
+.feature-level { font-family: "Space Grotesk", monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; }
+.feature-full .feature-level { color: var(--aqua); }
+.feature-degraded .feature-level { color: var(--gold); }
+.feature-unavailable .feature-level { color: var(--muted); }
+.feature-unavailable .feature-name { color: var(--muted); }
+.feature-fallback { grid-column: 1 / -1; font-size: 10.5px; color: rgba(174, 181, 194, 0.7); line-height: 1.5; }
+
+.panel-danger { border-color: rgba(255, 0, 122, 0.24); }
+.danger-row {
+  width: 100%; display: flex; flex-direction: column; gap: 3px; align-items: flex-start;
+  background: none; border: 0; color: inherit; text-align: left; cursor: pointer;
+  padding: 9px 0; border-bottom: 1px solid var(--line);
+}
+.danger-row:last-child { border-bottom: 0; }
+.danger-row span { font-size: 13px; color: var(--magenta); }
+.danger-row small { font-size: 11px; color: var(--muted); line-height: 1.5; }
