@@ -108,6 +108,32 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
           <stop offset="0%" stopColor="var(--aqua)" stopOpacity="0.5" />
           <stop offset="100%" stopColor="var(--aqua)" stopOpacity="0" />
         </radialGradient>
+
+        {/*
+          One contour, reused. The mark's rings are irregular topographic lines rather than
+          circles, and that irregularity is most of what makes it read as a *place*. Drawn
+          once and rotated per ring so the nesting survives at 22px, where genuinely
+          different outlines would turn into a smudge.
+        */}
+        {/*
+          `vectorEffect` belongs on the path itself, not on the `use` that references it:
+          set on the `use` it does not reach the referenced geometry, and the outermost
+          ring's stroke gets scaled fifteen-fold with everything else — three crisp contour
+          lines become three fat halos, which is the opposite of the mark.
+        */}
+        <path id="contour" d={CONTOUR} vectorEffect="non-scaling-stroke" />
+
+        {/*
+          The route carries the mark's own gradient: its contour lines travel from aqua
+          through blue to violet as they spread out from the echo. Reusing that here means
+          the single longest line on the screen is saying the same thing the logo says,
+          rather than being a neutral stroke that happens to sit near it.
+        */}
+        <linearGradient id="routeLine" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0%" stopColor="#00e5ff" />
+          <stop offset="45%" stopColor="#3b6bff" />
+          <stop offset="100%" stopColor="#7b3bff" />
+        </linearGradient>
       </defs>
 
       <path d={path} className="route-casing" />
@@ -136,14 +162,16 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
               <circle className="pin-radius" r={Math.max(radiusPx, 10)} />
             )}
 
-            <circle className="pin-body" r="11" />
+            <Contours />
+
+            <circle className="pin-body" r="7.5" />
 
             {arriving && <ProgressRing progress={arriving.progress} />}
 
             {state === "captured" || state === "heard" ? (
-              <path className="pin-glyph" d="M-3.5 0 L-1 2.5 L4 -3" />
+              <path className="pin-glyph" d="M-3 0 L-0.8 2.1 L3.4 -2.6" />
             ) : (
-              <circle className="pin-dot" r="3" />
+              <circle className="pin-dot" r="2.4" />
             )}
           </g>
         );
@@ -160,13 +188,44 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
 }
 
 /**
+ * A closed, faintly irregular ring — a contour line, not a circle.
+ *
+ * Generated rather than hand-tuned: six points at uneven radii, joined by a Catmull-Rom
+ * spline. The unevenness is the entire point. A perfect circle reads as a target reticle,
+ * which is the wrong idea for a product about standing somewhere.
+ */
+const CONTOUR =
+  "M0.000 -1.000C0.254 -0.998 0.602 -0.689 0.753 -0.435C0.905 -0.181 1.035 0.297 0.909 " +
+  "0.525C0.784 0.752 0.305 0.929 0.000 0.930C-0.305 0.931 -0.790 0.759 -0.918 0.530C-1.046 " +
+  "0.301 -0.924 -0.190 -0.771 -0.445C-0.618 -0.700 -0.254 -1.002 0.000 -1.000Z";
+
+/**
+ * The three nested contours around every pin.
+ *
+ * Three, because the brand notes are explicit that the full mark — five to eight contours,
+ * a doorway and a figure — becomes a blue smudge below about 120px, and that the version
+ * worth drawing small is three rings and the point. A map pin is 22px.
+ *
+ * Each ring is the same path rotated, so they nest without ever tracing each other.
+ */
+function Contours() {
+  return (
+    <>
+      <use href="#contour" className="pin-contour pin-contour-1" transform="scale(7.5)" />
+      <use href="#contour" className="pin-contour pin-contour-2" transform="scale(11.5) rotate(74)" />
+      <use href="#contour" className="pin-contour pin-contour-3" transform="scale(15.5) rotate(148)" />
+    </>
+  );
+}
+
+/**
  * The dwell ring.
  *
  * A stroked circle with a dash offset, so it fills clockwise from the top. `progress`
  * comes from the engine, so the ring completes at exactly the moment the echo opens.
  */
 function ProgressRing({ progress }: { progress: number }) {
-  const r = 15;
+  const r = 11;
   const circumference = 2 * Math.PI * r;
   return (
     <circle

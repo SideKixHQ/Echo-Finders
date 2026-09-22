@@ -48,12 +48,30 @@ active colour throughout. The logo says an echo is orange. Two defensible resolu
 2. **Orange becomes the echo.** A captured echo glows warm, and the interface stays aqua for
    everything else. More striking, and it makes the icon and the product say one thing.
 
-I would take the second, and only for capture — the moment something opens. But it is a
-brand call, not an engineering one, and doing it halfway would be worse than either.
+**Resolved: the second.** The rule the interface now follows is one line long —
 
-Whichever way it goes, the gold already in the system (`--gold: #D4A856`, used for sponsored
-placements) needs to stay clearly distinct from it. A listener must never mistake an advert
-for a discovery.
+> **Aqua is the interface. Ember is the echo.**
+
+Anything the listener *operates* stays cool: the play button, the tab bar, the mode picker,
+their own position on the map. Anything that *is* an echo glows warm: a captured pin, the
+count of what they have found, the proximity bar as they close on one, an entry in the
+collection. A control that glowed would be competing with the content for the only warm
+colour on the screen, which is the one thing this palette cannot afford.
+
+The tokens are `--ember: #FF9E12` with `--ember-core: #FFD77A` for the hot centre and
+`--ember-deep: #C96A00` for an echo already heard — the ember gone cold.
+
+The mark's other idea carried over too, and it matters more than the colour: **the contour
+lines**. Every pin is three nested contours rather than a circle, drawn from one irregular
+path rotated at each scale. The irregularity is the entire point — a perfect circle reads as
+a target reticle, which is the wrong idea for a product about standing somewhere. The route
+line carries the mark's aqua-through-violet gradient for the same reason. And while an echo
+is opening, those contours ripple outward, which is the only place in the interface where
+the logo is literally animated.
+
+The gold already in the system (`--gold: #D4A856`, used for sponsored placements) stays
+clearly distinct: duller and browner than the ember, and never glowing. A listener who
+mistook an advert for a discovery would have been deceived by the interface itself.
 
 ## Still needed before launch
 

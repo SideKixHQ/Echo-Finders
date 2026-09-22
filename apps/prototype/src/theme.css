@@ -11,6 +11,18 @@
   --slate: #1f252e;
   --white: #fff;
   --muted: #aeb5c2;
+  /* ── The echo ──────────────────────────────────────────────
+     Taken from the mark, where the one warm thing in a cold scheme is the echo itself —
+     which is exactly what makes the eye go to it. The rule the rest of this file follows:
+     AQUA IS THE INTERFACE, EMBER IS THE ECHO. Anything the listener operates stays cool;
+     anything that *is* an echo glows warm. A control that glowed would compete with the
+     content for the only warm colour on screen. */
+  --ember: #ff9e12;
+  --ember-core: #ffd77a;
+  --ember-deep: #c96a00;
+
+  /* Sponsorship. Kept deliberately duller and browner than --ember, because a listener who
+     mistook an advert for a discovery would have been deceived by the interface itself. */
   --gold: #d4a856;
 
   --rgb-hair: 216, 220, 229;
@@ -65,33 +77,69 @@ body {
 .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 
 .route-casing { fill: none; stroke: rgba(var(--rgb-hair), 0.1); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
-.route { fill: none; stroke: var(--indigo); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; opacity: 0.85; }
+.route {
+  fill: none; stroke: url(#routeLine); stroke-width: 2.5;
+  stroke-linecap: round; stroke-linejoin: round; opacity: 0.9;
+}
 
 .pin { cursor: pointer; }
-.pin-radius { fill: rgba(0, 255, 231, 0.07); stroke: rgba(0, 255, 231, 0.3); stroke-width: 1; stroke-dasharray: 3 3; }
+.pin-radius { fill: rgba(255, 158, 18, 0.05); stroke: rgba(255, 158, 18, 0.28); stroke-width: 1; stroke-dasharray: 3 3; }
+
+/* Nested contours, straight off the mark: the rings are not circles but irregular
+   topographic lines, and they read as *land* rather than as a target reticle. Each ring is
+   the same path rotated and scaled, so the nesting stays legible at 22px where genuine
+   irregularity would turn to mush. */
+.pin-contour {
+  fill: none; stroke: currentColor; stroke-width: 1.15; opacity: 0.55;
+}
+.pin-contour-2 { opacity: 0.32; }
+.pin-contour-3 { opacity: 0.18; }
+
 .pin-body { fill: rgba(var(--rgb-panel), 0.95); stroke: currentColor; stroke-width: 1.6; transition: all 0.2s var(--ease); }
 .pin-dot { fill: currentColor; }
-.pin-glyph { fill: none; stroke: #042220; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.pin-glyph { fill: none; stroke: var(--space); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
 
 /* Sealed: outline only. Known about, not yet opened. */
-.pin-sealed { color: var(--cool); }
-.pin-sealed .pin-dot { opacity: 0.45; }
+/* Sealed: contours and nothing else. Cool, and with no warm core, because the ember is
+   what you are walking there to light. */
+.pin-sealed { color: var(--indigo-soft); }
+.pin-sealed .pin-dot { opacity: 0.4; }
 
 /* Opening: the ring fills. Driven by the engine, never a local timer. */
-.pin-opening { color: var(--aqua); }
-.pin-opening .pin-body { filter: drop-shadow(0 0 8px var(--aqua)); }
+/* Opening: the ember catches. The contours push outward as it does — the ripples on the
+   app icon, and the one moment in the interface where the mark is literally animated. */
+.pin-opening { color: var(--ember); }
+.pin-opening .pin-body { fill: var(--ember-deep); filter: drop-shadow(0 0 10px var(--ember)); }
+.pin-opening .pin-dot { fill: var(--ember-core); }
+.pin-opening .pin-contour { animation: ripple 1.6s var(--ease) infinite; }
+.pin-opening .pin-contour-2 { animation-delay: 0.28s; }
+.pin-opening .pin-contour-3 { animation-delay: 0.56s; }
+@keyframes ripple {
+  0% { opacity: 0.5; transform: scale(0.82); }
+  70% { opacity: 0.08; }
+  100% { opacity: 0; transform: scale(1.5); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pin-opening .pin-contour { animation: none; opacity: 0.35; }
+}
 .pin-ring {
-  fill: none; stroke: var(--aqua); stroke-width: 3; stroke-linecap: round;
-  filter: drop-shadow(0 0 6px var(--aqua));
+  fill: none; stroke: var(--ember-core); stroke-width: 3; stroke-linecap: round;
+  filter: drop-shadow(0 0 6px var(--ember));
 }
 
 /* Captured: solid aqua. Yours. */
-.pin-captured { color: var(--aqua); }
-.pin-captured .pin-body { fill: var(--aqua); filter: drop-shadow(0 0 10px rgba(0, 255, 231, 0.6)); }
+/* Captured: the mark's focal point, at map scale — a hot core, a ring, a warm glow. */
+.pin-captured { color: var(--ember); }
+.pin-captured .pin-body {
+  fill: var(--ember); stroke: var(--ember-core);
+  filter: drop-shadow(0 0 12px rgba(255, 158, 18, 0.75));
+}
 
 /* Heard: solid, muted. Done. */
-.pin-heard { color: var(--indigo-soft); }
-.pin-heard .pin-body { fill: var(--indigo-soft); }
+/* Heard: the ember gone cold. Still found, no longer calling. */
+.pin-heard { color: var(--ember-deep); }
+.pin-heard .pin-body { fill: var(--ember-deep); opacity: 0.75; }
+.pin-heard .pin-glyph { stroke: rgba(255, 215, 122, 0.85); }
 
 .pin-selected .pin-body { stroke-width: 2.4; }
 
@@ -116,15 +164,22 @@ body {
   100% { opacity: 0; }
 }
 
-.proximity-warmer .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(0, 255, 231, 0.3)); }
-.proximity-close .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(0, 255, 231, 0.55)); }
-.proximity-arrived .proximity-pulse { background: rgba(0, 255, 231, 0.45); }
+/* Warming, literally: the bar is reporting how near an echo is, so it carries the echo's
+   colour and not the interface's. Cold at a distance, ember on arrival. */
+.proximity-warmer .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(255, 158, 18, 0.32)); }
+.proximity-close .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(255, 158, 18, 0.58)); }
+/* Arrival keeps the same sweep as the states before it rather than filling the bar.
+   Ember is far darker and more saturated than the aqua this replaced, so an alpha that
+   glowed in cyan paints in orange — a flat fill reads as a brown slab, not as warmth. */
+.proximity-arrived .proximity-pulse {
+  background: linear-gradient(90deg, transparent, rgba(255, 158, 18, 0.34));
+}
 .proximity-colder .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(174, 181, 194, 0.22)); }
 .proximity-steady .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(155, 149, 255, 0.22)); }
 
 .proximity-label { position: relative; display: flex; justify-content: space-between; width: 100%; font-size: 12px; }
 .proximity-kind { font-weight: 500; letter-spacing: 0.02em; }
-.proximity-warmer .proximity-kind, .proximity-close .proximity-kind, .proximity-arrived .proximity-kind { color: var(--aqua); }
+.proximity-warmer .proximity-kind, .proximity-close .proximity-kind, .proximity-arrived .proximity-kind { color: var(--ember); }
 .proximity-colder .proximity-kind { color: var(--muted); }
 .proximity-distance { color: var(--muted); }
 
@@ -157,7 +212,7 @@ body {
 }
 .tag-common { background: rgba(var(--rgb-hair), 0.12); color: var(--cool); }
 .tag-uncommon { background: rgba(108, 99, 255, 0.22); color: var(--indigo-soft); }
-.tag-rare { background: rgba(0, 255, 231, 0.16); color: var(--aqua); }
+.tag-rare { background: rgba(255, 158, 18, 0.16); color: var(--ember); }
 .tag-singular { background: rgba(255, 0, 122, 0.18); color: var(--magenta); }
 
 .rarity-why { font-size: 11px; color: var(--muted); margin-top: 8px; font-style: italic; }
@@ -168,7 +223,7 @@ body {
   color: var(--muted); font-family: "Space Grotesk", monospace;
   border-top: 1px solid var(--line);
 }
-.count { color: var(--aqua); }
+.count { color: var(--ember); }
 
 .list { list-style: none; overflow-y: auto; flex: 1; padding: 0 8px 14px; scrollbar-width: none; }
 .list::-webkit-scrollbar { display: none; }
@@ -182,8 +237,8 @@ body {
 .row:hover, .row-selected { background: rgba(var(--rgb-hair), 0.07); }
 .bullet { width: 8px; height: 8px; border-radius: 50%; flex: none; }
 .bullet-sealed { border: 1.5px solid var(--cool); opacity: 0.6; }
-.bullet-opening { background: var(--aqua); box-shadow: 0 0 8px var(--aqua); }
-.bullet-captured { background: var(--aqua); }
+.bullet-opening { background: var(--ember); box-shadow: 0 0 8px var(--ember); }
+.bullet-captured { background: var(--ember); }
 .bullet-heard { background: var(--indigo-soft); }
 .row-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
 .row-text strong { font-size: 12.5px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -247,10 +302,12 @@ body {
 }
 .nav button svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .nav button.on { color: var(--aqua); }
+/* A count of echoes found, so it is ember. The tab label beside it stays aqua, because
+   that is a control. */
 .nav .badge {
   position: absolute; top: -3px; left: 50%; margin-left: 7px;
   min-width: 15px; height: 15px; padding: 0 4px; border-radius: 99px;
-  background: var(--aqua); color: #042220; font-size: 9px; line-height: 15px;
+  background: var(--ember); color: var(--space); font-size: 9px; line-height: 15px;
 }
 
 /* The sheet and proximity bar sit above the tab bar rather than under it. */
@@ -280,7 +337,7 @@ body {
   text-transform: uppercase; margin-bottom: 8px; color: var(--muted);
 }
 .group-singular { color: var(--magenta); }
-.group-rare { color: var(--aqua); }
+.group-rare { color: var(--ember); }
 .group-uncommon { color: var(--indigo-soft); }
 
 .entry { display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--line); }
@@ -288,7 +345,7 @@ body {
   width: 30px; height: 30px; flex: none; border-radius: 50%;
   background: rgba(0, 255, 231, 0.14); display: grid; place-items: center;
 }
-.entry-glyph svg { width: 15px; height: 15px; fill: none; stroke: var(--aqua); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.entry-glyph svg { width: 15px; height: 15px; fill: none; stroke: var(--ember); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 .entry-text { min-width: 0; }
 .entry-text h4 { font-size: 13px; font-weight: 500; line-height: 1.35; }
 .entry-text p { font-size: 11px; color: var(--muted); margin-top: 2px; }
