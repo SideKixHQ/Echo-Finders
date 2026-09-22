@@ -368,6 +368,21 @@ export interface Echo {
    */
   readonly script?: string;
 
+  /**
+   * Which narrator tells this one.
+   *
+   * An editorial decision, made per echo, rather than something a listener picks. Two
+   * voices across a tour is better listening than one — half an hour of a single narrator
+   * flattens — and casting costs nothing, because each echo is still rendered once.
+   *
+   * Deliberately a property of the *echo* and not of its position in a playlist. Alternating
+   * by index breaks the moment a route is walked backwards, filtered, or skipped through;
+   * casting survives all three, and the scheduler keeps the sequence varied.
+   *
+   * Absent means the default voice.
+   */
+  readonly voice?: string;
+
   /** How to say the hard words. Place names especially. */
   readonly pronunciations?: readonly Pronunciation[];
 

@@ -58,3 +58,29 @@ voices:
       A picker and a cast answer different needs. A picker serves preference and
       accessibility — some listeners genuinely follow one voice more easily. A cast serves
       the listening experience. They can coexist, but only the picker costs double.
+
+# ── How many voices ───────────────────────────────────────────────────────────
+#
+# Casting makes extra voices free. Each echo is rendered once, so ten narrators cost exactly
+# what two cost, in package size and in TTS. The real cost is elsewhere, and it is brand
+# coherence: a product with eight narrators has no voice of its own. What makes a series feel
+# like a series is a consistent sound.
+#
+# So the answer is not "one per category". It is:
+#
+#   Two general narrators, alternating. What we have. Variety without losing coherence.
+#
+#   One dedicated kids voice. This one genuinely earns it — children's content read by an
+#   adult documentary narrator sounds wrong in a way no direction fixes.
+#
+#   Nothing else, until a category proves it needs one.
+#
+# True crime is the tempting fourth, and the one to resist. A distinctively grave narrator
+# makes it sound like entertainment, which is precisely what the Respect value warns against:
+# "avoid turning pain, tragedy or identity into disposable entertainment." A measured read
+# from a general narrator treats the subject more seriously than a genre voice does.
+#
+# Worth knowing before adding voices at all: **voice is not delivery.** The same narrator can
+# be directed — ElevenLabs stability and style settings change the read considerably. A
+# darker tone for a difficult echo is a setting, not a second voice, and it costs nothing to
+# try first.

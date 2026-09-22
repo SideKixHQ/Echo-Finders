@@ -156,6 +156,7 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
     ...optional("teaser", str("teaser", false)),
     ...optional("detail", str("detail", false)),
     ...optional("certaintyNote", str("certaintyNote", false)),
+    ...optional("voice", str("voice", false)),
     ...optional("renders", renderList(input["renders"], durationS)),
     ...optional("pronunciations", pronunciationList(input["pronunciations"])),
     ...optional("remoteness", num("remoteness", false)),

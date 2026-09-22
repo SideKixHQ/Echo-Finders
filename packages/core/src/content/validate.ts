@@ -245,6 +245,18 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
     }
   }
 
+  // --- Casting ------------------------------------------------------------------------
+  // A cast that does not match the render is a silent mismatch: the file says one narrator
+  // tells this and the audio is somebody else. Nothing downstream would notice.
+  if (echo.voice && echo.renders?.length) {
+    if (!echo.renders.some((render) => render.voiceId === echo.voice)) {
+      error(
+        "voice",
+        `is cast to "${echo.voice}" but no render uses that voice — the file and the audio disagree`,
+      );
+    }
+  }
+
   // --- Contributions ------------------------------------------------------------------
   for (const issue of checkContribution(echo)) error(issue.field, issue.message);
 

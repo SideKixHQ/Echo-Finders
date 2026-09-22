@@ -68,6 +68,15 @@ const PENALTY = {
   /** Same format three times running — all short, or all features. */
   sameFormatRun: 0.08,
   /**
+   * The same narrator twice running.
+   *
+   * Deliberately gentle. With two voices in the cast, roughly half of every candidate set
+   * shares the last one, so a firm penalty would start reordering the walk to serve the
+   * voices — and geography has to win that argument. This is enough to break a tie between
+   * two otherwise similar echoes, and not enough to play something in the wrong place.
+   */
+  sameVoiceRun: 0.1,
+  /**
    * Leaving the passenger in silence while waiting for a better echo later.
    *
    * Without this the scheduler degenerates: a candidate placed at its ideal time in the
@@ -152,6 +161,7 @@ export function buildPlaylist(
   const recentCategories: EchoCategory[] = [];
   let recentFormatRun = 0;
   let lastFormat: EchoFormat | null = null;
+  let lastVoice: string | null = null;
 
   let cursor = window.startS;
 
@@ -196,7 +206,8 @@ export function buildPlaylist(
         PENALTY.drift * (drift / maxTimingDriftS) -
         PENALTY.deadAir * Math.min(1, silence / deadAirHorizonS) -
         categoryPenalty(echo.category, recentCategories) -
-        formatPenalty(echo.format, lastFormat, recentFormatRun);
+        formatPenalty(echo.format, lastFormat, recentFormatRun) -
+        (lastVoice !== null && echo.voice === lastVoice ? PENALTY.sameVoiceRun : 0);
 
       if (!best || adjusted > best.adjusted) {
         best = { candidate, startS, adjusted };
@@ -244,6 +255,7 @@ export function buildPlaylist(
 
     recentFormatRun = echo.format === lastFormat ? recentFormatRun + 1 : 0;
     lastFormat = echo.format;
+    lastVoice = echo.voice ?? null;
 
     // Silence sized to hold the requested talk-to-silence ratio. A passenger on "light"
     // gets long stretches of window-staring; "immersive" barely pauses for breath.

@@ -2,12 +2,13 @@ import { describe, expect, it } from "vitest";
 import { checkContribution, effectiveRadiusKm } from "../src/content/contributions.js";
 import { validateEcho } from "../src/content/validate.js";
 import { checkEligibility } from "../src/ranking/score.js";
-import { findEchoesAlongRoute } from "../src/geo/corridor.js";
+import { buildPlaylist } from "../src/ranking/playlist.js";
+import { buildRouteGeometry, findEchoesAlongRoute, pointAtDistance } from "../src/geo/corridor.js";
 import { presetFor } from "../src/modes.js";
 import { TRUST_REACH_KM } from "../src/types.js";
 import type { Contribution, Echo, TrustLevel } from "../src/types.js";
 import type { EchoDraft } from "./fixtures.js";
-import { ADULT, MANHATTAN_WALK, makeEcho } from "./fixtures.js";
+import { ADULT, MANHATTAN_WALK, echoesAlong, makeEcho } from "./fixtures.js";
 
 const NOON = Date.parse("2026-06-15T17:00:00Z");
 const WALL_STREET = { lat: 40.7069, lng: -74.0113 };
@@ -211,5 +212,67 @@ describe("reports hide first, review after", () => {
     expect(
       checkEligibility(personal(), { profile: ADULT, playAtMs: NOON, mode: "walking" }).eligible,
     ).toBe(true);
+  });
+});
+
+describe("casting", () => {
+  const FEMALE = "plP9aw1rizYgjFfuvLQ7";
+  const MALE = "hP72SDESIJq2YuAblBqz";
+
+  const cast = (voice: string, id: string, at: { lat: number; lng: number }) =>
+    makeEcho({
+      id,
+      at,
+      voice,
+      renders: [{ voiceId: voice, audioKey: `audio/${id}.mp3`, durationS: 90 }],
+    });
+
+  it("catches a file whose cast and audio disagree", () => {
+    // Silent otherwise: the file says one narrator tells this and the audio is someone else.
+    const mismatched = makeEcho({
+      id: "mismatched",
+      at: WALL_STREET,
+      voice: MALE,
+      renders: [{ voiceId: FEMALE, audioKey: "audio/x.mp3", durationS: 90 }],
+    });
+    expect(validateEcho(mismatched).some((i) => i.field === "voice")).toBe(true);
+  });
+
+  it("accepts a cast that matches its render", () => {
+    expect(errors(cast(MALE, "matched", WALL_STREET))).toEqual([]);
+  });
+
+  it("says nothing about an echo with no audio yet", () => {
+    const unrendered = makeEcho({ id: "unrendered", at: WALL_STREET, voice: MALE, audioKey: undefined });
+    expect(validateEcho(unrendered).some((i) => i.field === "voice")).toBe(false);
+  });
+
+  it("alternates voices along a route", () => {
+    // Cast is a property of the echo; the scheduler keeps the sequence varied, so this
+    // survives a route being walked backwards, filtered, or skipped through.
+    const geometry = buildRouteGeometry(MANHATTAN_WALK);
+    const library = Array.from({ length: 12 }, (_, i) =>
+      cast(
+        i % 2 === 0 ? FEMALE : MALE,
+        `cast-${i}`,
+        pointAtDistance(geometry, ((i + 0.5) / 12) * geometry.totalKm),
+      ),
+    );
+
+    const { items } = buildPlaylist(MANHATTAN_WALK, library, ADULT);
+    expect(items.length).toBeGreaterThan(5);
+
+    let runs = 0;
+    for (let i = 1; i < items.length; i++) {
+      if (items[i]!.echo.voice === items[i - 1]!.echo.voice) runs++;
+    }
+    // Not zero — geography still wins when two echoes of one voice sit together — but the
+    // sequence should be mostly alternating rather than clumped.
+    expect(runs / items.length).toBeLessThan(0.4);
+  });
+
+  it("does not disturb a library with no casting at all", () => {
+    const uncast = echoesAlong(MANHATTAN_WALK, 12);
+    expect(buildPlaylist(MANHATTAN_WALK, uncast, ADULT).items.length).toBeGreaterThan(5);
   });
 });
