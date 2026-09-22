@@ -42,8 +42,13 @@ interface Props {
   readonly onSelect: (echoId: string) => void;
 }
 
-const W = 390;
-const H = 844;
+/*
+ * The *screen*, not the phone. `.phone` is 390×844 with 11px of bezel padding, so the
+ * surface this draws on is 368×822 — the viewBox was the outer figure, which quietly scaled
+ * every inset below by about three percent and put them all slightly in the wrong place.
+ */
+const W = 368;
+const H = 822;
 
 /**
  * Where the route is allowed to be drawn.
@@ -65,9 +70,15 @@ const H = 844;
  */
 const NAV_H = 72;
 const SHEET_H = 466;
-/** A little of the sheet's rounded top edge may be drawn under; a whole pin may not. */
-const SHEET_OVERLAP = 14;
-const INSET = { top: 76, bottom: NAV_H + SHEET_H - SHEET_OVERLAP, side: 38 };
+/** Half a pin, so a pin *centre* never lands under the chrome and no pin is half-eaten. */
+const PIN_R = 16;
+/** The route ribbon and the category chips, which float over the map's top edge. */
+const MAPBAR_H = 119;
+const INSET = {
+  top: MAPBAR_H + PIN_R / 2,
+  bottom: NAV_H + SHEET_H + PIN_R / 2,
+  side: 30,
+};
 
 export function RouteMap({ route, library, position, opening, stateOf, selectedId, onSelect }: Props) {
   const projection = useMemo(() => {

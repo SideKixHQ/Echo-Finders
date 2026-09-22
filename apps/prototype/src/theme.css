@@ -1272,3 +1272,25 @@ body {
   backdrop-filter: blur(8px);
 }
 .vf-compass svg { width: 14px; height: 14px; fill: none; stroke: var(--ember); stroke-width: 1.7; stroke-linejoin: round; }
+
+/*
+  Inside the viewfinder, the palette is the dark one whatever the theme.
+  The light-mode category colours exist because a #9B95FF dot vanishes on a white map —
+  but this frame is never white. It is a camera feed behind a dark scrim in both themes,
+  and handing it #4C43C8 on near-black made the one tag on the screen unreadable. The
+  surface decides the palette here, not the setting.
+*/
+:root[data-theme="light"] .vf {
+  --cat-history: #9b95ff;
+  --cat-true-crime: #ff4d9d;
+  --cat-legend: #9ef0a8;
+  --cat-kids: #00ffe7;
+  --cat-food-drink: #ff9e4f;
+  --cat-arts: #ff87c3;
+  --cat-people: #ffd98a;
+  --cat-built: #d8dce5;
+  --cat-land: #7fd4c1;
+  --muted: #aeb5c2;
+}
+/* The tray below it is a light surface again, so it takes the theme's own muted grey. */
+:root[data-theme="light"] .vf-bottom { --muted: #5d6779; }

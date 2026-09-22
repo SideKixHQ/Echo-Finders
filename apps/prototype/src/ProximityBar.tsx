@@ -27,8 +27,20 @@ export function ProximityBar({ guidance, cue }: Props) {
     <div className={`proximity proximity-${cue.kind}`}>
       <div
         className="proximity-pulse"
-        // The cue's own interval drives the animation, so the bar and the buzz keep time.
-        style={{ animationDuration: `${Math.max(cue.intervalMs, 200)}ms` }}
+        /*
+          The cue's own interval drives the animation, so the bar and the buzz keep time.
+
+          Arrival has no rhythm — `intervalMs` is `Infinity`, because it is one long
+          confirmation rather than a pulse train — and formatting that gave CSS
+          "Infinityms", which browsers discard silently. So the one moment the bar exists
+          to mark was the one moment it was not animating to the cue at all.
+        */
+        style={{
+          animationDuration: Number.isFinite(cue.intervalMs)
+            ? `${Math.max(cue.intervalMs, 200)}ms`
+            : `${Math.max(400, cue.pulseMs * 3)}ms`,
+          ...(Number.isFinite(cue.intervalMs) ? {} : { animationIterationCount: 1 }),
+        }}
       />
       <div className="proximity-label">
         <span className="proximity-kind">{labelFor(cue.kind)}</span>

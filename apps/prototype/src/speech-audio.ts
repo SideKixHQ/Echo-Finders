@@ -42,8 +42,6 @@ export class SpeechAudio implements AudioSink {
   private utterance: SpeechSynthesisUtterance | null = null;
   private timer: ReturnType<typeof setTimeout> | null = null;
   private muted = false;
-  /** Set while we cancel deliberately, so our own stop does not read as "finished". */
-  private stopping = false;
   /**
    * The listener's speed setting, as a multiplier on each narrator's own pace.
    *
@@ -94,14 +92,21 @@ export class SpeechAudio implements AudioSink {
     if (voice) utterance.voice = voice;
 
     // `onend` fires for a natural finish *and* for a cancel, and the engine must only hear
-    // the first: treating a deliberate stop as "the echo ended" would advance the queue
-    // every time the listener skipped, playing two things for one tap.
-    utterance.onend = () => {
-      if (!this.stopping) this.fire();
+    // the first: treating a deliberate stop as "the echo ended" advances the queue on top
+    // of the advance the listener just asked for, so one tap on Next skips two echoes.
+    //
+    // This was guarded by a `stopping` flag set around `cancel()`, which does not work:
+    // `speechSynthesis.cancel()` dispatches its end event *asynchronously*, so the flag was
+    // always back to false by the time the handler ran and the guard never once fired.
+    // Comparing the utterance instead has no timing in it at all — a handler whose
+    // utterance is no longer the current one is by definition talking about a finish that
+    // has already been superseded.
+    const ended = () => {
+      if (this.utterance !== utterance) return;
+      this.fire();
     };
-    utterance.onerror = () => {
-      if (!this.stopping) this.fire();
-    };
+    utterance.onend = ended;
+    utterance.onerror = ended;
 
     this.utterance = utterance;
     window.speechSynthesis.speak(utterance);
@@ -124,10 +129,10 @@ export class SpeechAudio implements AudioSink {
     if (this.timer) clearTimeout(this.timer);
     this.timer = null;
     if (!this.available || !this.utterance) return;
-    this.stopping = true;
-    window.speechSynthesis.cancel();
+    // Cleared *before* cancelling, so the end event that arrives some time later finds it
+    // is no longer the current utterance and says nothing.
     this.utterance = null;
-    this.stopping = false;
+    window.speechSynthesis.cancel();
   }
 
   private get voiceCount(): number {

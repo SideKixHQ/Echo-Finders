@@ -12,7 +12,7 @@
  * of a walk, and the list should meet them where they are rather than making them search.
  */
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Route } from "@echofinders/core";
 
 export interface PreflightProps {
@@ -26,6 +26,11 @@ export interface PreflightProps {
 export function Preflight({ routes, counts, current, onStart }: PreflightProps) {
   const [picked, setPicked] = useState<Route>(current);
   const total = counts[picked.id] ?? 0;
+
+  // `current` seeds the choice, and then keeps seeding it. The mode picker sits beside the
+  // phone and is live while this is showing, so switching to Car there used to leave this
+  // panel still offering the walk — and "Find my route" would put you straight back on it.
+  useEffect(() => setPicked(current), [current]);
 
   return (
     <div className="preflight">
