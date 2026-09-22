@@ -15,7 +15,8 @@
     "test": "npm run test --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "content:validate": "node scripts/validate-content.mjs",
-    "library:build": "node scripts/build-library.mjs"
+    "library:build": "node scripts/build-library.mjs",
+    "echo:render": "node scripts/render-echo.mjs"
   },
   "devDependencies": {
     "typescript": "^5.6.3",

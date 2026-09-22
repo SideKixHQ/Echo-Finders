@@ -13,3 +13,4 @@ coverage/
 .turbo
 /tmp/
 apps/*/dist/
+content/audio/
