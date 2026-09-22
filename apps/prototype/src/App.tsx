@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { PRIVACY_DEFAULTS, holdsPersonalLocation, type PrivacySettings } from "@echofinders/core";
 import { LIBRARY, ROUTES } from "./library.generated";
 import { useJourney, LISTENER } from "./use-journey";
@@ -46,6 +46,20 @@ export function App() {
   const [autoPlay, setAutoPlay] = useState(false);
   const [chosen, setChosen] = useState<ReadonlySet<string>>(new Set());
   const [cats, setCats] = useState<ReadonlySet<EchoCategory> | null>(null);
+  const [simple, setSimple] = useState(false);
+  const [rate, setRate] = useState(1);
+
+  /**
+   * How far through the current echo we are.
+   *
+   * Timed from when it started rather than asked of the player, because the browser's
+   * speech synthesis cannot be asked — it reports start and end and nothing between. That
+   * makes this an estimate, and an honest one: it is exactly right at both ends and drifts
+   * in the middle by however much the synthesiser's pace differs from the content file's
+   * stated duration. A real render replaces it with the audio element's own currentTime.
+   */
+  const [progress, setProgress] = useState(0);
+  const startedRef = useRef<{ id: string; at: number } | null>(null);
   // The listener's own setting drives it, not a constant. `handsFree` is off by default
   // (PRIVACY_DEFAULTS), so an echo collects itself on arrival and then waits to be played.
   const { state, session, walk } = useJourney(route, LIBRARY, {
@@ -114,6 +128,27 @@ export function App() {
     setChosen(new Set());
     setCats(null);
   };
+
+  const nowPlaying = state.playback.kind === "idle" ? null : state.playback.item.echo;
+
+  useEffect(() => {
+    if (!nowPlaying) {
+      startedRef.current = null;
+      setProgress(0);
+      return;
+    }
+    if (startedRef.current?.id !== nowPlaying.id) {
+      startedRef.current = { id: nowPlaying.id, at: Date.now() };
+      setProgress(0);
+    }
+    const durationS = (simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS;
+    const tick = setInterval(() => {
+      const started = startedRef.current;
+      if (!started) return;
+      setProgress(Math.min(1, (Date.now() - started.at) / 1000 / durationS));
+    }, 250);
+    return () => clearInterval(tick);
+  }, [nowPlaying, simple]);
 
   const walkedPercent = Math.round((walk.walkedMetres / walk.totalMetres) * 100);
   const remainingS = route.durationS * (1 - Math.min(1, walk.walkedMetres / walk.totalMetres));
@@ -217,14 +252,14 @@ export function App() {
                 onSelect={setSelectedId}
               />
               {selfDirected && <ProximityBar guidance={state.guidance} cue={state.cue} />}
-              <NowPlaying
+              {!nowPlaying && <NowPlaying
                 state={state.playback}
                 waiting={state.waiting}
                 deferred={state.deferred}
                 onPause={() => session.pause()}
                 onResume={() => session.resume()}
                 onSkip={() => session.skip()}
-              />
+              />}
               <Sheet
                 nearby={state.nearby.filter((n) => activeCats.has(n.echo.category))}
                 lastCapture={state.lastCapture}
@@ -243,6 +278,19 @@ export function App() {
                 selfDirected={selfDirected}
                 autoPlay={autoPlay}
                 saved={chosen}
+                nowPlaying={nowPlaying}
+                progress={progress}
+                playing={state.playback.kind === "playing"}
+                simple={simple}
+                onSimple={setSimple}
+                rate={rate}
+                onRate={setRate}
+                onSeek={(f) => {
+                  const d = (simple ? nowPlaying?.simple?.durationS : null) ?? nowPlaying?.durationS ?? 1;
+                  startedRef.current = { id: nowPlaying?.id ?? "", at: Date.now() - f * d * 1000 };
+                  setProgress(Math.max(0, Math.min(1, f)));
+                }}
+                onNext={() => session.skip()}
                 onSave={(echo) => {
                   const next = new Set(chosen);
                   if (next.has(echo.id)) next.delete(echo.id);

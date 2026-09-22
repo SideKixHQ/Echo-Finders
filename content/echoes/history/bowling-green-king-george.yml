@@ -32,6 +32,18 @@ script: |
 pronunciations:
   - written: Bowling Green
     say: BOH-ling Green
+simple:
+  title: The crown came off the fence
+  durationS: 40
+  script: |
+    This is the oldest park in New York. The fence has been here since 1771.
+
+    Look at the tops of the posts. They used to have small crowns on them.
+
+    In 1776 a crowd pulled down a statue of the king that stood here, and melted it into musket balls. Somebody also sawed the crowns off this fence.
+
+    The fence is still standing. The crowns are still gone.
+
 editorial: draft
 factCheck: unchecked
 sources:

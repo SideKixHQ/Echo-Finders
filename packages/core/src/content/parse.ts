@@ -167,9 +167,34 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
     ...optional("relatedIds", stringList(input["relatedIds"])),
     ...optional("perspectiveIds", stringList(input["perspectiveIds"])),
     ...optional("trueCrimeReview", review),
+    ...optional("simple", simpleVariant(input["simple"], fail)),
   };
 
   return { echo, issues };
+}
+
+/**
+ * The plainer, shorter telling.
+ *
+ * Silently skipped when malformed rather than failing the file, unlike the true-crime
+ * review: a missing simple cut means a listener gets the full telling, which is a quality
+ * gap for an editor to notice — not a reason to refuse to publish an otherwise sound echo.
+ */
+function simpleVariant(
+  input: unknown,
+  fail: (field: string, message: string) => void,
+): Echo["simple"] {
+  if (input === undefined || input === null) return undefined;
+  if (!isRecord(input)) {
+    fail("simple", "should be a mapping with title, durationS and script");
+    return undefined;
+  }
+  const { title, durationS, script } = input;
+  if (typeof title !== "string" || typeof durationS !== "number" || typeof script !== "string") {
+    fail("simple", "needs title (text), durationS (number) and script (text)");
+    return undefined;
+  }
+  return { title, durationS, script };
 }
 
 /**

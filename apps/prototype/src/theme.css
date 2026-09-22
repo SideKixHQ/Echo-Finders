@@ -563,6 +563,154 @@ body {
 .upnext-play svg { width: 9px; height: 9px; fill: currentColor; }
 .upnext button:hover .upnext-play { background: var(--ember); color: var(--space); }
 
+/* ── player ─────────────────────────────────────────────── */
+.player { padding: 0 16px 10px; flex: none; }
+
+.phead { display: flex; gap: 12px; align-items: center; padding: 4px 0 12px; }
+.phead-mark {
+  flex: none; width: 42px; height: 42px; border-radius: 12px; cursor: pointer;
+  display: grid; place-items: center;
+  background: transparent; color: var(--muted); border: 1px solid var(--line-2);
+}
+.phead-mark svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.phead-mark.on { color: var(--ember); border-color: rgba(255, 158, 18, 0.55); background: rgba(255, 158, 18, 0.12); }
+.phead-mark.on svg { fill: currentColor; }
+
+/* The waveform. Bars, not a line: a line says "position", bars say "sound", and the second
+   is what somebody is actually scrubbing through. */
+.wave {
+  display: flex; align-items: center; gap: 2px; height: 34px; cursor: pointer;
+  margin-bottom: 6px;
+}
+.wave-bar {
+  flex: 1; border-radius: 99px; background: rgba(var(--rgb-hair), 0.18);
+  transition: background 0.15s linear;
+}
+.wave-on { background: var(--aqua); }
+.wave:focus-visible { outline: 2px solid var(--aqua); outline-offset: 3px; border-radius: 4px; }
+
+.player-time {
+  display: flex; justify-content: space-between;
+  font-family: "Space Grotesk", monospace; font-size: 10.5px; color: var(--muted);
+  margin-bottom: 9px;
+}
+
+.player-row { display: flex; gap: 6px; margin-bottom: 7px; }
+.player-row-centre { justify-content: center; }
+.pill {
+  display: flex; align-items: center; justify-content: center; gap: 5px;
+  padding: 8px 12px; border-radius: 99px; cursor: pointer;
+  font: inherit; font-size: 11.5px; color: var(--cool);
+  background: transparent; border: 1px solid var(--line-2);
+}
+.pill svg {
+  width: 13px; height: 13px; fill: none; stroke: currentColor;
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.pill:hover { border-color: var(--cool); }
+.pill-rate { gap: 9px; padding: 8px 10px; }
+.pill-rate button {
+  background: none; border: 0; color: var(--muted); cursor: pointer;
+  font: inherit; font-size: 14px; line-height: 1; padding: 0 2px;
+}
+.pill-rate button:hover { color: var(--white); }
+.pill-rate b { font-family: "Space Grotesk", monospace; font-size: 11.5px; font-weight: 600; }
+
+/* The plain-language switch, filled when on — the design's one loud control, because it
+   changes what you hear rather than where you are in it. */
+.simpaud {
+  display: flex; align-items: center; gap: 12px; width: 100%; cursor: pointer;
+  padding: 11px 13px; border-radius: 13px; margin: 9px 0 6px;
+  font: inherit; text-align: left; color: var(--cool);
+  background: transparent; border: 1px solid var(--line-2);
+}
+.simpaud svg {
+  width: 19px; height: 19px; flex: none; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.simpaud span { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.simpaud strong { font-size: 12.5px; font-weight: 600; }
+.simpaud small { font-size: 10.5px; color: var(--muted); }
+.simpaud i { font-style: normal; font-family: "Space Grotesk", monospace; font-size: 10.5px; color: var(--muted); }
+.simpaud:disabled { opacity: 0.55; cursor: default; }
+.simpaud-on {
+  background: var(--aqua); border-color: var(--aqua); color: var(--space);
+  box-shadow: 0 0 20px rgba(var(--rgb-accent), 0.35);
+}
+.simpaud-on small, .simpaud-on i { color: rgba(var(--rgb-panel), 0.92); }
+
+.narrator {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 13px; border-radius: 13px; font-size: 12.5px;
+  background: rgba(var(--rgb-hair), 0.05); border: 1px solid var(--line);
+}
+.narrator svg {
+  width: 17px; height: 17px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* ── segmented tabs ──────────────────────────────────────── */
+.segs {
+  display: flex; align-items: center; gap: 4px; flex: none;
+  padding: 0 14px; border-bottom: 1px solid var(--line);
+}
+.seg {
+  background: none; border: 0; cursor: pointer; font: inherit; font-size: 12.5px;
+  color: var(--muted); padding: 11px 10px; position: relative;
+}
+.seg.on { color: var(--white); font-weight: 500; }
+.seg.on::after {
+  content: ""; position: absolute; left: 6px; right: 6px; bottom: -1px; height: 2px;
+  background: var(--aqua); border-radius: 2px;
+}
+.seg-count {
+  display: inline-block; margin-left: 6px; padding: 1px 6px; border-radius: 99px;
+  font-size: 9.5px; background: rgba(var(--rgb-hair), 0.12); color: var(--muted);
+}
+
+/* ── transcript ──────────────────────────────────────────── */
+.transcript { overflow-y: auto; flex: 1; padding: 12px 14px 16px; scrollbar-width: none; }
+.transcript::-webkit-scrollbar { display: none; }
+.tsearch {
+  display: flex; align-items: center; gap: 9px; padding: 10px 12px;
+  border-radius: 12px; background: rgba(var(--rgb-hair), 0.05);
+  border: 1px solid var(--line-2); margin-bottom: 10px;
+}
+.tsearch svg { width: 15px; height: 15px; flex: none; fill: none; stroke: var(--muted); stroke-width: 1.8; }
+.tsearch input {
+  flex: 1; background: none; border: 0; outline: none;
+  font: inherit; font-size: 12.5px; color: var(--white);
+}
+.tsearch input::placeholder { color: var(--muted); }
+
+.tkeys { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.tkey {
+  padding: 6px 11px; border-radius: 99px; cursor: pointer; font: inherit; font-size: 11px;
+  background: transparent; color: var(--cool); border: 1px solid var(--line-2);
+}
+.tkey.on { border-color: var(--aqua); color: var(--aqua); background: rgba(var(--rgb-accent), 0.1); }
+
+.tkicker {
+  font-family: "Space Grotesk", monospace; font-size: 9px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 9px;
+}
+.tlines { display: flex; flex-direction: column; gap: 3px; }
+.tline {
+  text-align: left; background: none; border: 0; cursor: pointer; font: inherit;
+  font-size: 13.5px; line-height: 1.5; color: var(--muted);
+  padding: 8px 11px; border-radius: 10px; border-left: 3px solid transparent;
+}
+.tline:hover { color: var(--white); }
+.tline-on {
+  color: var(--white); background: rgba(var(--rgb-accent), 0.1);
+  border-left-color: var(--aqua);
+}
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
 /* ── sheet ───────────────────────────────────────────────── */
 .sheet {
   position: absolute; left: 0; right: 0; bottom: 0; z-index: 20;
@@ -571,7 +719,8 @@ body {
      collapsed the second to a single clipped row. */
   /* Tall enough for one whole echo card including its actions. A card clipped above its
      Listen button is worse than a list, because it promises something it then hides. */
-  height: 432px; background: var(--slate);
+  height: 432px;
+  transition: height 0.24s var(--ease); background: var(--slate);
   border-radius: 24px 24px 0 0; border-top: 1px solid var(--line-2);
   box-shadow: 0 -14px 40px rgba(0, 0, 0, 0.55);
   display: flex; flex-direction: column; padding-bottom: 18px;
@@ -700,6 +849,12 @@ body {
 
 /* The sheet and proximity bar sit above the tab bar rather than under it. */
 .sheet { bottom: 72px; }
+/* With a player in it the sheet becomes the screen, as it does in the design: the map is
+   still there above the chips, but what you are listening to is the thing you are using. */
+.sheet-tall { height: 650px; }
+/* The guidance bar has nowhere to be once the sheet fills the screen, and drawing it over
+   the player is how it ended up on top of the plain-language switch. */
+.screen:has(.sheet-tall) .proximity { display: none; }
 .proximity { bottom: 514px; }
 /* Above the guidance bar when there is one; the guidance bar's own slot when there is not,
    which is every carried mode. */

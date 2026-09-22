@@ -162,6 +162,11 @@ export const LIBRARY: readonly Echo[] = [
       "statues",
       "protest"
     ],
+    "simple": {
+      "title": "The crown came off the fence",
+      "durationS": 40,
+      "script": "This is the oldest park in New York. The fence has been here since 1771.\n\nLook at the tops of the posts. They used to have small crowns on them.\n\nIn 1776 a crowd pulled down a statue of the king that stood here, and melted it into musket balls. Somebody also sawed the crowns off this fence.\n\nThe fence is still standing. The crowns are still gone.\n"
+    },
     "renders": [
       {
         "voiceId": "hP72SDESIJq2YuAblBqz",
@@ -396,6 +401,11 @@ export const LIBRARY: readonly Echo[] = [
       "forts",
       "nineteenth-century"
     ],
+    "simple": {
+      "title": "Eight million doors",
+      "durationS": 35,
+      "script": "This round stone fort was an immigration station before Ellis Island was built.\n\nEight million people came through this one building.\n\nIf your family reached New York before 1892, this is probably the door they walked through.\n"
+    },
     "renders": [
       {
         "voiceId": "plP9aw1rizYgjFfuvLQ7",

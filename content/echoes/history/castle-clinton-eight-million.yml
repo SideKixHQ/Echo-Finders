@@ -49,6 +49,16 @@ pronunciations:
   - written: Emma Goldman
     say: EM-uh GOLD-mun
 
+simple:
+  title: Eight million doors
+  durationS: 35
+  script: |
+    This round stone fort was an immigration station before Ellis Island was built.
+
+    Eight million people came through this one building.
+
+    If your family reached New York before 1892, this is probably the door they walked through.
+
 editorial: draft
 factCheck: unchecked
 

@@ -11,6 +11,9 @@ import { rarityOf, rarityReasons } from "@echofinders/core";
 import type { PinState } from "./RouteMap";
 import { UpNext } from "./UpNext";
 import { EchoCard } from "./EchoCard";
+import { Player } from "./Player";
+import { Transcript } from "./Transcript";
+import { useState } from "react";
 import type { Upcoming } from "@echofinders/core";
 
 interface Props {
@@ -33,6 +36,16 @@ interface Props {
   readonly autoPlay: boolean;
   readonly saved: ReadonlySet<string>;
   readonly onSave: (echo: Echo) => void;
+  /** What is in the listener's ears, if anything, and how far through it is. */
+  readonly nowPlaying: Echo | null;
+  readonly progress: number;
+  readonly playing: boolean;
+  readonly simple: boolean;
+  readonly onSimple: (on: boolean) => void;
+  readonly rate: number;
+  readonly onRate: (rate: number) => void;
+  readonly onSeek: (fraction: number) => void;
+  readonly onNext: () => void;
 }
 
 export function Sheet({
@@ -52,12 +65,26 @@ export function Sheet({
   autoPlay,
   saved,
   onSave,
+  nowPlaying,
+  progress,
+  playing,
+  simple,
+  onSimple,
+  rate,
+  onRate,
+  onSeek,
+  onNext,
 }: Props) {
+  const [tab, setTab] = useState<"near" | "script" | "saved">("near");
+  // The transcript is only meaningful for something actually playing, so the tab falls back
+  // rather than showing an empty panel with a search box in it.
+  const view = tab === "script" && !nowPlaying ? "near" : tab;
+  const savedCards = nearby.filter((n) => saved.has(n.echo.id));
   return (
-    <div className="sheet">
+    <div className={nowPlaying ? "sheet sheet-tall" : "sheet"}>
       <div className="grab" />
 
-      {lastCapture ? (
+      {lastCapture && !nowPlaying ? (
         <Found
           capture={lastCapture}
           playing={isPlaying(lastCapture.echo.id)}
@@ -66,19 +93,53 @@ export function Sheet({
           onPause={onPause}
           onResume={onResume}
         />
-      ) : (
+      ) : nowPlaying ? null : (
         <Idle count={captured.length} selfDirected={selfDirected} autoPlay={autoPlay} />
       )}
 
-      <UpNext items={upcoming} onPlay={onPlay} />
+      {nowPlaying && (
+        <Player
+          echo={nowPlaying}
+          onPlayPause={playing ? onPause : onResume}
+          saved={saved.has(nowPlaying.id)}
+          onSave={() => onSave(nowPlaying)}
+          progress={progress}
+          playing={playing}
+          simple={simple}
+          onSimple={onSimple}
+          rate={rate}
+          onRate={onRate}
+          onSeek={onSeek}
+          onLine={(delta) => onSeek(Math.max(0, Math.min(1, progress + delta * 0.12)))}
+          onNext={onNext}
+        />
+      )}
 
-      <div className="list-head">
-        <span>Around you</span>
-        <span className="count">{captured.length} found</span>
+      <div className="segs">
+        <button className={view === "near" ? "seg on" : "seg"} onClick={() => setTab("near")}>
+          Around you
+        </button>
+        <button
+          className={view === "script" ? "seg on" : "seg"}
+          onClick={() => setTab("script")}
+          disabled={!nowPlaying}
+        >
+          Transcript
+        </button>
+        <button className={view === "saved" ? "seg on" : "seg"} onClick={() => setTab("saved")}>
+          Saved<span className="seg-count">{saved.size}</span>
+        </button>
       </div>
 
+      {view === "script" && nowPlaying && (
+        <Transcript echo={nowPlaying} simple={simple} progress={progress} onSeek={onSeek} />
+      )}
+
+      {view !== "script" && <UpNext items={view === "near" ? upcoming : []} onPlay={onPlay} />}
+
+      {view !== "script" && (
       <div className="list">
-        {nearby.slice(0, 5).map((entry) => (
+        {(view === "saved" ? savedCards : nearby.slice(0, 5)).map((entry) => (
           <EchoCard
             key={entry.echo.id}
             echo={entry.echo}
@@ -92,8 +153,14 @@ export function Sheet({
             onSelect={onSelect}
           />
         ))}
-        {nearby.length === 0 && <p className="empty">Nothing within reach. Keep walking.</p>}
+        {view === "near" && nearby.length === 0 && (
+          <p className="empty">Nothing within reach. Keep walking.</p>
+        )}
+        {view === "saved" && savedCards.length === 0 && (
+          <p className="empty">Nothing saved on this route yet.</p>
+        )}
       </div>
+      )}
     </div>
   );
 }
