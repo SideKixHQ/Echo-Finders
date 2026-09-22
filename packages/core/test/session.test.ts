@@ -9,7 +9,7 @@ import type {
 import type { LatLng, Position, TravelMode } from "../src/types.js";
 import { toneFor, type ToneCue } from "../src/proximity/tone.js";
 import type { Guidance } from "../src/proximity/haptics.js";
-import type { WalkEvent } from "../src/session/walk.js";
+import type { WalkEvent, WalkSessionOptions } from "../src/session/walk.js";
 import { ADULT, CHILD, makeEcho } from "./fixtures.js";
 import type { EchoDraft } from "./fixtures.js";
 
@@ -506,5 +506,60 @@ describe("two echoes, one pair of ears", () => {
     [0, 0, 0].forEach((m, i) => location.emit(fix(north(CORNER, m), START + i * 13_000)));
     expect(audio.played).toEqual([]);
     expect(audio.chimes).toBeGreaterThan(0);
+  });
+});
+
+describe("choosing in advance", () => {
+  const withAudio = (id: string, at: LatLng) =>
+    makeEcho({ id, at, triggerRadiusKm: 0.05, audioKey: `audio/${id}.mp3` });
+
+  const arrive = (options: WalkSessionOptions) => {
+    const location = new FakeLocation();
+    const audio = fakeAudio();
+    const echoes = [withAudio("wanted", HERE), withAudio("skipped", north(HERE, 8))];
+    const session = new WalkSession(echoes, ADULT, { location, audio }, options);
+    const events = collect(session);
+    session.start();
+    [0, 0, 0, 0, 0].forEach((m, i) => location.emit(fix(north(HERE, m), START + i * 13_000)));
+    return { audio, events, session };
+  };
+
+  it("plays only what the listener picked before setting off", () => {
+    // The pre-departure case: look at what the route passes, choose a few, and let those
+    // play themselves as they come up.
+    const { audio } = arrive({ autoPlay: true, autoPlayOnly: ["wanted"] });
+    expect(audio.played).toEqual(["audio/wanted.mp3"]);
+  });
+
+  it("still collects the ones it does not play", () => {
+    // Not chosen is not the same as not found. Capturing is the game; playing is a choice,
+    // and the unchosen ones are in the collection to be played from there whenever.
+    const { events } = arrive({ autoPlay: true, autoPlayOnly: ["wanted"] });
+    const captured = events.filter((e) => e.type === "captured");
+    expect(captured.map((e) => (e.type === "captured" ? e.capture.echo.id : "")).sort()).toEqual([
+      "skipped",
+      "wanted",
+    ]);
+  });
+
+  it("treats an empty choice literally — nothing plays itself", () => {
+    // How a listener turns auto-play off without turning it off: they chose nothing.
+    const { audio } = arrive({ autoPlay: true, autoPlayOnly: [] });
+    expect(audio.played).toEqual([]);
+  });
+
+  it("plays everything when no choice was made", () => {
+    const { audio } = arrive({ autoPlay: true });
+    expect(audio.played).toEqual(["audio/wanted.mp3"]);
+    // And the second is queued behind it rather than dropped.
+    audio.finish();
+    expect(audio.played).toEqual(["audio/wanted.mp3", "audio/skipped.mp3"]);
+  });
+
+  it("never starts one before the last has finished", () => {
+    const { audio } = arrive({ autoPlay: true });
+    expect(audio.played.length).toBe(1);
+    audio.finish();
+    expect(audio.played.length).toBe(2);
   });
 });

@@ -244,6 +244,67 @@ body {
 .entry-glyph-play { fill: currentColor; stroke: none !important; }
 .entry-now { color: var(--ember); }
 
+/* ── plan ────────────────────────────────────────────────── */
+.plan { display: flex; flex-direction: column; }
+.plan-head { padding: 18px 16px 10px; flex: none; }
+.plan-head h2 { font-size: 19px; font-weight: 600; }
+.plan-head p { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+.plan-summary {
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  padding: 10px 16px; flex: none; font-size: 12px; color: var(--muted);
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.plan-summary strong { color: var(--ember); font-size: 15px; }
+.plan-time { display: block; font-size: 10.5px; margin-top: 1px; }
+.plan-bulk { display: flex; gap: 6px; flex: none; }
+.plan-bulk button {
+  font: inherit; font-size: 11px; padding: 5px 11px; cursor: pointer;
+  background: transparent; color: var(--cool);
+  border: 1px solid var(--line-2); border-radius: 8px;
+}
+.plan-bulk button:hover { color: var(--ember); border-color: rgba(255, 158, 18, 0.5); }
+
+.plan-auto {
+  display: flex; gap: 11px; align-items: flex-start; cursor: pointer; flex: none;
+  margin: 12px 16px; padding: 12px; border-radius: 12px;
+  background: var(--slate); border: 1px solid var(--line-2);
+}
+.plan-auto-on { border-color: rgba(255, 158, 18, 0.5); }
+.plan-auto input { accent-color: var(--ember); width: 17px; height: 17px; margin-top: 1px; flex: none; }
+.plan-auto-text { display: flex; flex-direction: column; gap: 3px; }
+.plan-auto-text strong { font-size: 13px; font-weight: 600; }
+.plan-auto-text small { font-size: 11px; color: var(--muted); line-height: 1.5; }
+
+.plan-list { list-style: none; overflow-y: auto; flex: 1; padding: 0 12px 16px; scrollbar-width: none; }
+.plan-list::-webkit-scrollbar { display: none; }
+.plan-list li { display: flex; align-items: center; gap: 4px; }
+.plan-row {
+  flex: 1; min-width: 0; display: flex; gap: 11px; align-items: center;
+  background: none; border: 0; padding: 9px 4px; cursor: pointer;
+  font: inherit; color: inherit; text-align: left;
+}
+.plan-tick {
+  flex: none; width: 21px; height: 21px; border-radius: 6px;
+  border: 1.5px solid var(--line-2); display: grid; place-items: center;
+}
+.plan-row-on .plan-tick { background: var(--ember); border-color: var(--ember); }
+.plan-tick svg { width: 12px; height: 12px; fill: none; stroke: var(--space); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.plan-text { min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.plan-text strong {
+  font-size: 12.5px; font-weight: 500; color: var(--muted);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.plan-row-on .plan-text strong { color: var(--white); }
+.plan-text small { font-size: 10.5px; color: var(--muted); }
+.plan-preview {
+  flex: none; width: 28px; height: 28px; border-radius: 50%; border: 0; cursor: pointer;
+  display: grid; place-items: center;
+  background: rgba(255, 158, 18, 0.12); color: var(--ember);
+}
+.plan-preview svg { width: 10px; height: 10px; fill: currentColor; }
+.plan-preview:hover { background: var(--ember); color: var(--space); }
+
 /* ── coming up ───────────────────────────────────────────── */
 .upnext { padding: 4px 16px 10px; flex: none; }
 .upnext-head {

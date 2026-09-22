@@ -61,19 +61,16 @@ export interface JourneyControls {
   /** Whether narration is audible at all. Not the same as whether it starts by itself. */
   readonly narrate: boolean;
   /**
-   * Start a captured echo without being asked.
+   * Start captured echoes without being asked, one after another.
    *
    * Off by default, and that is the product rule rather than a preference: finding an echo
    * and hearing it are separate acts. Capture-by-arrival (ADR-0010) collects the thing as
    * you walk up to it, which is the game; narration is a decision, because starting it
    * unasked talks over a conversation, a podcast, or somebody standing in a memorial.
-   *
-   * It exists at all because the hands-free case is real — phone pocketed, screen off,
-   * walking — and `PrivacySettings.handsFree` is where a listener asks for it. That setting
-   * defaults to false and needs background location, which is exactly the kind of thing
-   * that deserves a deliberate choice.
    */
-  readonly handsFree: boolean;
+  readonly autoPlay: boolean;
+  /** Echoes picked in advance. Undefined means no restriction; empty means none. */
+  readonly chosen?: ReadonlySet<string>;
   /** The listener pressed pause on the simulation itself. */
   readonly paused: boolean;
 }
@@ -81,7 +78,7 @@ export interface JourneyControls {
 export function useJourney(
   route: Route,
   library: readonly Echo[],
-  { sound, narrate, handsFree, paused }: JourneyControls,
+  { sound, narrate, autoPlay, chosen, paused }: JourneyControls,
 ) {
   const walk = useMemo(() => {
     // `?speed=2` slows the journey so the dwell ring can be watched filling; `?start=0.4`
@@ -148,9 +145,13 @@ export function useJourney(
       library,
       LISTENER,
       { location: walk, haptics, tones, audio: speech },
-      { mode: route.mode, autoPlay: handsFree },
+      {
+        mode: route.mode,
+        autoPlay,
+        ...(chosen ? { autoPlayOnly: [...chosen] } : {}),
+      },
     );
-  }, [library, walk, route.mode, toneRenderer, speech, handsFree]);
+  }, [library, walk, route.mode, toneRenderer, speech, autoPlay, chosen]);
 
   // Hold the walk while something is being narrated.
   //

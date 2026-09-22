@@ -48,10 +48,16 @@ export function Privacy({ settings, onChange, storedPositions, collectionSize, o
         <p>Everything here is on your device. None of it is sent to us.</p>
       </header>
 
+      {/*
+        Back to what this setting actually buys: background location. Whether echoes then
+        *talk* is a separate question, asked in Plan — conflating the two meant a listener
+        could not have a phone collecting in their pocket without also agreeing to be
+        narrated at.
+      */}
       <Toggle
-        label="Hands-free walking"
-        detail="Echoes open with your phone pocketed and the screen off, and start playing on their own."
-        cost="Off by default. Echoes still open as you reach them — they wait for you to press play."
+        label="Hands-free"
+        detail="Echoes open with your phone pocketed and the screen off."
+        cost="Turn off and echoes still open — you just keep the app on screen while you travel."
         on={settings.handsFree}
         onToggle={() => onChange({ ...settings, handsFree: !settings.handsFree })}
       />

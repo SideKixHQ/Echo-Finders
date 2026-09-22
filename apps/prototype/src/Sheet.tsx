@@ -29,7 +29,7 @@ interface Props {
   /** What is ahead on this route. Offered, never started.  */
   readonly upcoming: readonly Upcoming[];
   readonly selfDirected: boolean;
-  readonly handsFree: boolean;
+  readonly autoPlay: boolean;
 }
 
 export function Sheet({
@@ -46,7 +46,7 @@ export function Sheet({
   paused,
   upcoming,
   selfDirected,
-  handsFree,
+  autoPlay,
 }: Props) {
   return (
     <div className="sheet">
@@ -62,7 +62,7 @@ export function Sheet({
           onResume={onResume}
         />
       ) : (
-        <Idle count={captured.length} selfDirected={selfDirected} handsFree={handsFree} />
+        <Idle count={captured.length} selfDirected={selfDirected} autoPlay={autoPlay} />
       )}
 
       <UpNext items={upcoming} onPlay={onPlay} />
@@ -159,11 +159,11 @@ function Found({
 function Idle({
   count,
   selfDirected,
-  handsFree,
+  autoPlay,
 }: {
   count: number;
   selfDirected: boolean;
-  handsFree: boolean;
+  autoPlay: boolean;
 }) {
   const heading =
     count > 0 ? "Keep going" : selfDirected ? "Walk to open an echo" : "Echoes open as you pass";
@@ -173,8 +173,8 @@ function Idle({
       <div className="now-text">
         <h2>{heading}</h2>
         <p>
-          {handsFree
-            ? "They open as you reach them and start playing on their own. Your phone can stay in your pocket."
+          {autoPlay
+            ? "The ones you chose in Plan will play as you reach them, one at a time."
             : "They open as you reach them and wait — press play when you want to hear one."}
         </p>
       </div>

@@ -81,12 +81,31 @@ export interface WalkSessionOptions {
   /** Most entries in the nearby list. */
   readonly nearbyLimit?: number;
   /**
-   * Begin playing a captured echo immediately.
+   * Start a captured echo without being asked, one after another.
    *
-   * The hands-free case: phone in a pocket, screen off, walking. Off by default, because
-   * starting audio unbidden is the right behaviour only when someone has asked for it.
+   * Off by default, because starting audio unbidden is right only when someone has asked
+   * for it. Deliberately *not* the same switch as `PrivacySettings.handsFree`: that one
+   * buys background location so echoes open with the screen off, and a listener can very
+   * reasonably want their phone to keep collecting in a pocket while still choosing what
+   * they hear. Two settings, because they are two questions.
+   *
+   * Nothing ever interrupts: the queue starts the next only when the current one is done.
    */
   readonly autoPlay?: boolean;
+
+  /**
+   * Restrict auto-play to echoes the listener picked in advance.
+   *
+   * The pre-departure case, and the one that makes auto-play tolerable on a long journey:
+   * sit down before take-off, look at the twelve things the route passes, choose four.
+   * Those four play themselves as they come up; the rest still open and still go into the
+   * collection, they simply do not talk.
+   *
+   * Undefined means no restriction — everything on the route is fair game. An empty list is
+   * not the same thing and is honoured literally: it means "I chose nothing", which is how
+   * a listener switches auto-play off without switching it off.
+   */
+  readonly autoPlayOnly?: readonly string[];
   /** Which narrator to play. Falls back to whatever render exists. */
   readonly voiceId?: string;
   /** How many echoes may wait to be heard, and how far they may travel while waiting. */
@@ -205,6 +224,12 @@ export class WalkSession {
     this.startCurrent();
   }
 
+  /** Did the listener pick this one, back when they were choosing? */
+  private mayAutoPlay(echoId: string): boolean {
+    const chosen = this.options.autoPlayOnly;
+    return chosen === undefined || chosen.includes(echoId);
+  }
+
   /** The current item ran out. Take the next, if there is one. */
   private advance(): void {
     this.playback.finished();
@@ -296,7 +321,7 @@ export class WalkSession {
     // Offered to the queue rather than played: a second capture arriving while the first is
     // still talking used to call `play()` straight over it, and at a stop where two echoes
     // sit a few metres apart that is the normal case, not the edge one.
-    if (this.options.autoPlay) {
+    if (this.options.autoPlay && this.mayAutoPlay(capture.echo.id)) {
       const render = renderFor(capture.echo.renders, this.options.voiceId);
       if (render) {
         const wasIdle = this.playback.nowPlaying === null;

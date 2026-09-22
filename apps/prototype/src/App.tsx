@@ -10,6 +10,7 @@ import { Collection } from "./Collection";
 import { Privacy } from "./Privacy";
 import { Nav, type Tab } from "./Nav";
 import { NowPlaying } from "./NowPlaying";
+import { Plan } from "./Plan";
 import { findEchoesAlongRoute, presetFor, upcomingOnRoute, type Route } from "@echofinders/core";
 
 /** The walk is the richest route, so it is what the prototype opens on. */
@@ -29,12 +30,20 @@ export function App() {
   const [narrate, setNarrate] = useState(true);
   const [paused, setPaused] = useState(false);
   const [privacy, setPrivacy] = useState<PrivacySettings>(PRIVACY_DEFAULTS);
+  // Two questions, two answers. `handsFree` buys background location so echoes open with
+  // the screen off; this decides whether they then talk. Somebody can very reasonably want
+  // a phone collecting in a pocket while still choosing what they hear.
+  const [autoPlay, setAutoPlay] = useState(false);
+  const [chosen, setChosen] = useState<ReadonlySet<string>>(new Set());
   // The listener's own setting drives it, not a constant. `handsFree` is off by default
   // (PRIVACY_DEFAULTS), so an echo collects itself on arrival and then waits to be played.
   const { state, session, walk } = useJourney(route, LIBRARY, {
     sound,
     narrate,
-    handsFree: privacy.handsFree,
+    autoPlay,
+    // Undefined rather than an empty set when nothing has been picked: no choice made means
+    // no restriction, while an empty choice means "I chose nothing" and is honoured.
+    chosen: chosen.size > 0 ? chosen : undefined,
     paused,
   });
 
@@ -90,6 +99,8 @@ export function App() {
     setSelectedId(null);
     setDeleted(new Set());
     setPaused(false);
+    // A choice belongs to the journey it was made for.
+    setChosen(new Set());
   };
 
   const walkedPercent = Math.round((walk.walkedMetres / walk.totalMetres) * 100);
@@ -120,6 +131,13 @@ export function App() {
   // Recomputed as the listener moves, from how far along they are rather than from the
   // clock: a journey that paused still knows where it is, and asking the clock would offer
   // things already behind them.
+  // Everything on the route, in the order it is reached — the same question `upcoming` asks
+  // from where you are, asked from the start line and without a lead-in filter.
+  const wholeRoute = useMemo(
+    () => upcomingOnRoute(route, onRoute, LISTENER, 0, { limit: 99, minLeadS: -Infinity }),
+    [route, onRoute],
+  );
+
   const upcoming = useMemo(
     () =>
       upcomingOnRoute(
@@ -184,9 +202,31 @@ export function App() {
                 paused={state.playback.kind === "paused"}
                 upcoming={upcoming}
                 selfDirected={selfDirected}
-                handsFree={privacy.handsFree}
+                autoPlay={autoPlay}
               />
             </>
+          )}
+
+          {tab === "plan" && (
+            <Plan
+              route={route}
+              items={wholeRoute}
+              chosen={chosen}
+              onToggle={(id) => {
+                const next = new Set(chosen);
+                if (next.has(id)) next.delete(id);
+                else next.add(id);
+                setChosen(next);
+              }}
+              onAll={() => setChosen(new Set(wholeRoute.map((i) => i.echo.id)))}
+              onNone={() => setChosen(new Set())}
+              autoPlay={autoPlay}
+              onAutoPlay={setAutoPlay}
+              onPlay={(echo) => {
+                session.play(echo);
+                setTab("map");
+              }}
+            />
           )}
 
           {tab === "collection" && (
@@ -211,7 +251,12 @@ export function App() {
             />
           )}
 
-          <Nav tab={tab} onChange={setTab} foundCount={kept.length} />
+          <Nav
+            tab={tab}
+            onChange={setTab}
+            foundCount={kept.length}
+            chosenCount={chosen.size}
+          />
           <div className="homebar" />
         </div>
       </div>
@@ -241,17 +286,25 @@ export function App() {
         </p>
         <p>
           Echoes are sealed until you arrive. Step inside one and the ring fills over twelve
-          seconds; when it closes, the echo opens — and then <b>waits</b>. Finding one and
-          hearing it are separate acts: arriving collects it, pressing play is a decision.
-          Starting narration unasked talks over a conversation, a podcast, or somebody
-          standing in a memorial. <b>Hands-free</b> in Privacy is how a listener asks for
-          the opposite; it is off by default.
+          seconds; when it closes, the echo opens, and then it waits. Finding one and hearing
+          it are separate acts: arriving collects it, pressing play is a decision. Starting
+          narration unasked talks over a conversation, a podcast, or somebody standing in a
+          memorial.
         </p>
         <p>
-          <b>Coming up</b> is the other half of that. Nothing is forced, but on a route the
-          engine knows what is ahead and when — which matters most in the air, where you
-          cannot go to an echo and choosing what to hear before it goes past is the whole
-          interaction.
+          Which is what <b>Plan</b> is for. Sit down before you set off, look at everything
+          the route passes, pick a few, and switch on "play these as I reach them". Auto-play
+          without that step is an imposition — twelve echoes is forty minutes of narration,
+          and handing somebody all of it because they once tapped a switch is how a product
+          becomes something people turn off. Choosing first makes the same switch an
+          agreement about a known quantity, which is why the running total is at the top.
+        </p>
+        <p>
+          Nothing ever interrupts: the next starts only when the last has finished. Echoes
+          you did not pick still open and still join your collection — they simply do not
+          talk. And <b>Coming up</b> on the map offers the next couple with their lead times,
+          which matters most in the air, where you cannot go to an echo and choosing what to
+          hear before it goes past is the whole interaction.
         </p>
         {selfDirected ? (
           <p>

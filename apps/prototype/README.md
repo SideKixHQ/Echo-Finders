@@ -34,6 +34,22 @@ is the one way to ask for the opposite, and it is off by default.
 So a capture is really a bookmark: it goes into the collection, and the collection is where
 it gets cashed in — tap any entry, any time, wherever you are.
 
+**Plan** is where auto-play becomes tolerable. Choosing what to hear is a separate moment
+from travelling — you do it sitting down, before the gate closes — so it gets a screen of its
+own: everything the route passes, in order, with durations and a running total of listening
+time. Pick a few, switch on "play these as I reach them", put the phone away.
+
+Auto-play without that step is an imposition. Twelve echoes on this walk is forty minutes of
+narration; handing somebody all of it because they once tapped a switch is how a product
+becomes something people turn off. Choosing first turns the same switch into an agreement
+about a known quantity.
+
+Two settings, because they are two questions. `PrivacySettings.handsFree` buys background
+location so echoes open with the screen off; `autoPlay` decides whether they then talk. A
+listener can very reasonably want a phone collecting in a pocket while still choosing what
+they hear. `autoPlayOnly` carries the choice, and an empty choice is honoured literally —
+that is how somebody turns auto-play off without turning it off.
+
 **Coming up** is the other half. Nothing is forced, but on a route the engine already knows
 what is ahead and when, so it offers the next couple with their lead times and a play button.
 That matters most in the air: walking or driving you can go to an echo, but at 35,000 feet
