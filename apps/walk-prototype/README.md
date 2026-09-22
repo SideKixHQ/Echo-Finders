@@ -1,0 +1,56 @@
+# Walking prototype
+
+A simulated walk down Lower Manhattan, driven by the real engine.
+
+```bash
+npm run library:build                      # compile content/ into src/library.generated.ts
+npm run dev -w @echofinders/walk-prototype
+```
+
+Query parameters: `?speed=2` slows the walk so the dwell ring can be watched filling,
+`?start=0.4` drops in partway along.
+
+## What is real and what is faked
+
+**Real:** `WalkSession` from `@echofinders/core`, and everything it drives — corridor
+search, eligibility gates, dwell timing, capture, proximity guidance, haptic cues, rarity.
+The same code an iOS build runs.
+
+**Faked:** the GPS chip. `SimulatedWalk` implements the engine's `LocationSource` and walks
+the route at 4.5km/h with a few metres of jitter, so the smoothing in `ProximityGuide` is
+doing real work rather than being handed a perfect signal no street ever produces.
+
+**Absent:** a basemap. Tile providers are unreachable from the build environment, and the
+pin states are what this exists to show. A real map slots in underneath without changing any
+of the pin or ring code.
+
+**Overridden:** the library's editorial status. Every echo in `content/` is correctly sitting
+at `draft` / `unchecked` because nobody has fact-checked it yet, and the engine refuses to
+serve unapproved content — so the generated module carries a clearly-labelled demo copy with
+those two fields flipped. The content files themselves are untouched.
+
+## What it demonstrates
+
+**Four pin states.** Sealed is an outline; opening fills a ring; captured is solid aqua;
+heard is muted. The ring is driven by the engine's `opening` event rather than a local
+animation timer, so it completes at exactly the moment the echo opens. A ring that disagreed
+with the capture would be worse than no ring.
+
+**Sealed echoes show their teaser, not their title.** The map is a map of promises: you can
+see something is there and roughly what kind of thing, and finding out means going.
+
+**The haptic, made visible.** The bar above the sheet pulses in time with the cue the engine
+emitted — same rhythm, same meaning. On a phone this is a vibration felt through a pocket;
+on an iPhone web build it is the only feedback there is (ADR-0011).
+
+**Coarse distances.** "About 100m", never a live metre count. A number ticking down invites
+staring at the screen, which is what the whole design is arranged to avoid.
+
+**Rarity in words.** "You have to be close", not a tier badge. `rarityReasons()` explains why
+something was hard to reach; a badge explains nothing.
+
+## What is not here yet
+
+The collection screen, the camera viewfinder, the privacy screen, provenance badges for
+contributed echoes, and sheet detents. `docs/ui-review.md` has the full list and the order
+I would build them in.

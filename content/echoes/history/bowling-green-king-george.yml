@@ -1,0 +1,41 @@
+id: bowling-green-king-george
+title: They pulled the king down and made him into bullets
+summary: A crowd toppled a gilded statue of George III here in 1776 and melted it into musket balls.
+place: Bowling Green, Manhattan
+at: { lat: 40.70463, lng: -74.01319 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 90
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.9
+tags: [new-york, revolution, statues, protest]
+teaser: The fence is original. Look at the tops of the posts.
+script: |
+  This is the oldest public park in the city, and the fence around it has been here since
+  1771.
+
+  Look at the tops of the posts. They used to have small crowns on them.
+
+  On the ninth of July 1776, the Declaration of Independence was read aloud to Washington's
+  troops a few streets north of here. The crowd came down to this green afterwards, where a
+  gilded lead statue of King George the Third sat on horseback, and pulled it down.
+
+  The lead went to Connecticut and came back as musket balls. Somebody, at some point, took
+  a saw to the crowns on the fence.
+
+  Two hundred and fifty years later the fence is still standing and the crowns are still
+  missing, which is a fairly direct way of making a point.
+pronunciations:
+  - written: Bowling Green
+    say: BOH-ling Green
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: Bowling Green
+    publisher: NYC Parks
+    url: https://www.nycgovparks.org/parks/bowling-green/history
+    retrievedAt: "2026-09-21"
+    rights: public-domain

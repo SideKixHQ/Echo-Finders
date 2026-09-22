@@ -1,0 +1,37 @@
+id: charging-bull-illegal
+title: The bull was dumped here illegally in the night
+summary: An artist installed three and a half tonnes of bronze outside the Stock Exchange without asking.
+place: Bowling Green, Broadway, Manhattan
+at: { lat: 40.70552, lng: -74.01340 }
+triggerRadiusKm: 0.05
+category: culture-food
+format: look-below
+durationS: 45
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, art, wall-street]
+teaser: Nobody gave permission for this.
+script: |
+  Nobody commissioned this.
+
+  In December 1989, two years after the crash, a sculptor called Arturo Di Modica drove a
+  lorry to Wall Street in the middle of the night and left three and a half tonnes of bronze
+  outside the Stock Exchange. He had paid for it himself. It was, legally speaking,
+  fly-tipping.
+
+  The city removed it within hours. The public objected loudly enough that it was put back a
+  few days later, here, a couple of streets from where he left it — on a temporary permit
+  that has now lasted more than thirty years.
+pronunciations:
+  - written: Arturo Di Modica
+    say: ar-TOO-roh dee MOH-dee-kah
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: Charging Bull
+    publisher: NYC Parks
+    url: https://www.nycgovparks.org/parks/bowling-green/monuments/1780
+    retrievedAt: "2026-09-21"
+    rights: public-domain

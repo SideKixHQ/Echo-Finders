@@ -12,3 +12,4 @@ coverage/
 .vercel
 .turbo
 /tmp/
+apps/*/dist/

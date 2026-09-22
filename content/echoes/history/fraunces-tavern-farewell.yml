@@ -1,0 +1,35 @@
+id: fraunces-tavern-farewell
+title: The goodbye that nobody got through
+summary: Washington said farewell to his officers in an upstairs room here in December 1783.
+place: Fraunces Tavern, Pearl Street, Manhattan
+at: { lat: 40.70353, lng: -74.01133 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [new-york, revolution, washington]
+teaser: Upstairs, in the Long Room.
+script: |
+  On the fourth of December 1783, in an upstairs room of this building, George Washington
+  said goodbye to the officers he had fought beside for eight years.
+
+  The British had sailed out of the harbour nine days earlier. The war was over, and he was
+  going home to Virginia, believing he was finished with public life.
+
+  By the accounts that survive, he could not finish what he meant to say. He raised a glass,
+  managed a few sentences, and then asked each man to come and take his hand. Grown soldiers
+  wept. He walked out without trusting himself to speak again.
+
+  Six years later he was back in this city, taking an oath three streets from here.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: Fraunces Tavern and the Continental Army
+    publisher: National Park Service
+    url: https://www.nps.gov/articles/fraunces-tavern.htm
+    retrievedAt: "2026-09-21"
+    rights: public-domain
