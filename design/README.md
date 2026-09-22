@@ -2,7 +2,7 @@
 
 `brand/` holds the logos and the notes on using them.
 
-`skystories-phone.prototype.html` is the phone prototype, extracted from the Claude Design
+`echo-finders-phone.prototype.html` is the phone prototype, extracted from the Claude Design
 bundle. It predates the rename and still carries the old product name throughout, including
 in its mock copy — left as-is deliberately, because it is an archived artefact rather than
 living source. **It does not run standalone** — the bundle referenced Leaflet and its fonts by

@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SkyStories · Mobile</title>
+<title>Echo Finders · Mobile</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <style>/* devanagari */
@@ -1525,7 +1525,7 @@ body.light .ochip.on{background:rgba(11,15,43,.05)}
           <div class="row">
             <button class="play" id="playBtn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg></button>
             <div class="nowtxt">
-              <span class="tag" id="plTag"><span class="dot"></span>SkyStories</span>
+              <span class="tag" id="plTag"><span class="dot"></span>Echo Finders</span>
               <h5 id="plTitle">Tap a pin to start listening</h5>
               <p id="plPlace">Stories play automatically as you fly</p>
             </div>
@@ -1607,7 +1607,7 @@ body.light .ochip.on{background:rgba(11,15,43,.05)}
 
   <div class="note">
     <img src="a4cb67e0-6c47-463a-be7e-e9d50f82cd5d" alt="" style="width:44px;height:44px;border-radius:12px;display:block;margin-bottom:12px">
-    <b>SKYSTORIES · PHONE</b>
+    <b>ECHO FINDERS · PHONE</b>
     <p>Passenger's own device, headphones in. Same content graph as the seatback build, the map, saved list and ad inventory are shared.</p>
     <p>Drag the sheet handle to peek, half, or full. Pins auto-play as you reach them.</p>
     <p>First run opens onboarding, flight, interests, who is listening, headphone check, offline pack. Replay it any time from the gear in the flight pill.</p>
@@ -1646,7 +1646,7 @@ const P = [
 
   {id:'a1',lat:40.762,lng:-111.891,cat:'ad',t:'The Copper Onion, Salt Lake City',
    place:'0.6 mi from Temple Square',dur:'0:30',rating:4.6,reviews:'3,411',sponsor:'Sponsored · Utah Restaurant Group',
-   d:'Wood-fired local lamb, house pasta, and the best happy hour downtown. Mention SkyStories for a welcome pour.',
+   d:'Wood-fired local lamb, house pasta, and the best happy hour downtown. Mention Echo Finders for a welcome pour.',
    x:'Sponsored placement, served because your flight path crosses Salt Lake County.'},
 
   {id:'s4',lat:40.760,lng:-113.860,cat:'fact',t:'The flattest place on Earth is under you',
@@ -1681,7 +1681,7 @@ const P = [
 
   {id:'a2',lat:41.892,lng:-87.624,cat:'ad',t:'Chicago Architecture River Cruise',
    place:'Michigan Ave · Riverwalk',dur:'0:30',rating:4.8,reviews:'41,290',sponsor:'Sponsored · Chicago Line',
-   d:'90 minutes, 50 buildings, one certified docent. SkyStories listeners get priority boarding on same-day tickets.',
+   d:'90 minutes, 50 buildings, one certified docent. Echo Finders listeners get priority boarding on same-day tickets.',
    x:'Sponsored placement, served because you are passing over Cook County.'},
 
   {id:'s10',lat:41.498,lng:-81.694,cat:'fact',t:'The river that caught fire, thirteen times',
@@ -1764,7 +1764,7 @@ const SIMPLE = {
   s3:{t:'Reno\u2019s big neon sign',dur:'1:05',
       s:'A giant neon arch has been lit over the street here since 1926. This is the fourth version of it.'},
   a1:{t:'A good dinner near your connection',dur:'0:30',
-      s:'A downtown restaurant by Temple Square: lamb, fresh pasta, cheap happy hour. Say SkyStories and they pour you a drink.'},
+      s:'A downtown restaurant by Temple Square: lamb, fresh pasta, cheap happy hour. Say Echo Finders and they pour you a drink.'},
   s4:{t:'The flattest place on Earth',dur:'1:15',
       s:'Below you is a sheet of salt 30,000 acres wide, flat enough to see the Earth curve. Cars come here to break speed records.'},
   s5:{t:'Fifty-million-year-old fish',dur:'1:30',
@@ -1778,7 +1778,7 @@ const SIMPLE = {
   s9:{t:'The strange hotel by the fair',dur:'2:20',
       s:'In 1893 a pharmacist built a hotel near the World\u2019s Fair, with stairs to nowhere and rooms with no windows. It burned down two years later.'},
   a2:{t:'See Chicago from the water',dur:'0:30',
-      s:'A 90-minute boat ride through the middle of Chicago, with a guide naming 50 buildings. SkyStories listeners board first.'},
+      s:'A 90-minute boat ride through the middle of Chicago, with a guide naming 50 buildings. Echo Finders listeners board first.'},
   s10:{t:'The river that caught fire',dur:'1:35',
       s:'This river was so polluted that it burned, 13 times. A photo of the 1969 fire led to the Clean Water Act.'},
   s11:{t:'Where a famous kids\u2019 show began',dur:'1:25',
@@ -1939,19 +1939,19 @@ const FEED=[
 const UNLOCK_KM=800;
 /* ── the wire: news coming in, matched to what is below ── */
 const WIRE=[
-  {id:'w1',src:'SkyStories Wire',mins:8,date:'Chicago',link:'s18',
+  {id:'w1',src:'Echo Finders Wire',mins:8,date:'Chicago',link:'s18',
    h:'Ground delay programme in force at O’Hare',
    b:'Air traffic managers have put arrivals into Chicago on a ground delay while convective weather crosses the terminal area. Average reported delay is 47 minutes and rising; departures out of the field are unaffected so far.'},
-  {id:'w2',src:'SkyStories Wire',mins:34,date:'Salt Lake City',link:null,
+  {id:'w2',src:'Echo Finders Wire',mins:34,date:'Salt Lake City',link:null,
    h:'Space weather centre issues G2 geomagnetic watch',
    b:'Forecasters expect moderate storm conditions overnight, with aurora possible as far south as the central plains. Aircraft on polar routes may see elevated HF radio noise.'},
-  {id:'w3',src:'SkyStories Wire',mins:72,date:'Cleveland',link:'s10',
+  {id:'w3',src:'Echo Finders Wire',mins:72,date:'Cleveland',link:'s10',
    h:'Steelhead counts on the Cuyahoga hit a post-cleanup high',
    b:'State biologists logged the highest autumn run since monitoring began on a river that was declared biologically dead within living memory. The fire that made it famous was in 1969.'},
-  {id:'w4',src:'SkyStories Wire',mins:96,date:'Promontory, Utah',link:'s14',
+  {id:'w4',src:'Echo Finders Wire',mins:96,date:'Promontory, Utah',link:'s14',
    h:'Park service adds two locomotive runs for the anniversary week',
    b:'The replica Jupiter and No. 119 will meet twice daily at the summit through the end of the month. The original rails at the site were pulled up for scrap in 1942.'},
-  {id:'w5',src:'SkyStories Wire',mins:140,date:'Queens, New York',link:'s23',
+  {id:'w5',src:'Echo Finders Wire',mins:140,date:'Queens, New York',link:'s23',
    h:'JFK runway 13L/31R closes for resurfacing from Monday',
    b:'The airport says arrivals will shift to the parallel while work runs through the spring. Expect longer taxi times and a different approach over Jamaica Bay.'}
 ];
@@ -1984,7 +1984,7 @@ function openCompose(){
     lat:here[0],lng:here[1],place:whereNow().replace(/^Over /,''),geo:false};
   const ACCEPT={video:'video/*',audio:'audio/*',photo:'image/*'};
   openModal(`<h3>Submit a story</h3>
-    <p class="sub">SkyStories carries local independent newsrooms to the people flying over the places they cover. Your story reaches anyone within ${UNLOCK_KM} km of where it was reported, and nobody else. No agency, no syndication fee.</p>
+    <p class="sub">Echo Finders carries local independent newsrooms to the people flying over the places they cover. Your story reaches anyone within ${UNLOCK_KM} km of where it was reported, and nobody else. No agency, no syndication fee.</p>
     <span class="lbl">Format</span>
     <div class="seg2" id="mkind">
       <button class="on" data-k="video"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>Video</button>
@@ -2004,7 +2004,7 @@ function openCompose(){
     <div class="tagpick" id="tagpick">${TAGS.map(t=>`<button data-t="${t}">${t}</button>`).join('')}</div>
     <span class="lbl">Donations</span>
     <div class="row2" id="donRow" style="margin-bottom:10px">
-      <span class="g"><b>Take donations on this story</b><small>Readers can fund you directly. SkyStories takes nothing.</small></span>
+      <span class="g"><b>Take donations on this story</b><small>Readers can fund you directly. Echo Finders takes nothing.</small></span>
       <span class="cbx" id="donCbx"><svg viewBox="0 0 24 24"><path d="M5 12.5 10 17.5 19 7"/></svg></span>
     </div>
     <div id="donFields" style="display:none">
@@ -2013,7 +2013,7 @@ function openCompose(){
     </div>
     <span class="lbl">The story</span>
     <textarea class="ta" id="newPost" placeholder="One line on what the story is and who it affects…"></textarea>
-    <button class="act pri wide" id="postGo">Send to SkyStories</button>`);
+    <button class="act pri wide" id="postGo">Send to Echo Finders</button>`);
   const ta=$('#newPost');
   const setKind=k=>{draft.kind=k;
     document.querySelectorAll('#mkind button').forEach(b=>b.classList.toggle('on',b.dataset.k===k));
@@ -2193,7 +2193,7 @@ function openFund(p){
       <button data-f="month">Every month</button>
     </div>
     <div class="split" id="fSplit"></div>
-    <div class="split" style="border-bottom:1px solid var(--line);margin-bottom:14px"><span>SkyStories's cut</span><b>$0.00</b></div>
+    <div class="split" style="border-bottom:1px solid var(--line);margin-bottom:14px"><span>Echo Finders' cut</span><b>$0.00</b></div>
     <button class="paybtn" id="payNow"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20"/></svg><span>Pay</span></button>
     <button class="paybtn alt" data-close>Not now</button>`);
   document.querySelectorAll('#amts button').forEach(b=>b.onclick=()=>{amt=+b.dataset.a;$('#fCustom').value='';draw();});
@@ -2347,7 +2347,7 @@ function renderResults(q){
   const r=$('#results');
   if(!s){
     r.innerHTML=topicChips(TOPICS,'Browse by topic')
-      +'<p class="yempty">Or type a place, a newsroom, or what a story is about. SkyStories searches your route and the feed together, and suggests topics that sit close to it.</p>';
+      +'<p class="yempty">Or type a place, a newsroom, or what a story is about. Echo Finders searches your route and the feed together, and suggests topics that sit close to it.</p>';
     bindResults(r);return;
   }
   const qt=queryTopics(s);
@@ -2462,7 +2462,7 @@ function renderList(){
       e.stopPropagation();
       if(a.dataset.act==='play')select(p.id,true,true);
       if(a.dataset.act==='save')toggleSave(p);
-      if(a.dataset.act==='share')shareStory(p.t,p.t+', '+p.place+', on SkyStories');
+      if(a.dataset.act==='share')shareStory(p.t,p.t+', '+p.place+', on Echo Finders');
       if(a.dataset.act==='maps'){window.open(`https://www.google.com/maps/search/?api=1&query=${p.lat},${p.lng}`,'_blank');toast('Opening <b>'+p.place+'</b> in Google Maps');}};
   });
   $('#savedCount').textContent=S.saved.size;
@@ -2824,7 +2824,7 @@ function openShare(p){
     <div class="clip">
       <div class="clipwave">${w}</div>
       <p class="qt">“Just learned this crazy fact about ${region}…”</p>
-      <div class="place" style="margin-top:10px">${p.t} · 0:30 · SkyStories</div>
+      <div class="place" style="margin-top:10px">${p.t} · 0:30 · Echo Finders</div>
     </div>
     <div class="mrow">
       <button class="act pri wide" id="clipShare">Share clip</button>
@@ -2836,7 +2836,7 @@ function openShare(p){
 function openOffline(){openPlanStep1();}
 function openPlanStep1(){
   openModal(`<h3>Download your flight before you go</h3>
-    <p class="sub">Put in your flight number at home, pick the stories you want, and SkyStories runs in airplane mode the whole way.</p>
+    <p class="sub">Put in your flight number at home, pick the stories you want, and Echo Finders runs in airplane mode the whole way.</p>
     <input class="fld" id="fnum" placeholder="Flight number, e.g. UA 2314" value="${PLAN.flight}" autocomplete="off">
     <div class="exchips" id="exch">
       <button data-f="UA 2314">UA 2314</button><button data-f="DL 411">DL 411</button>
@@ -2912,7 +2912,7 @@ function openRecap(){
     </div>
     <div class="teaser">
       <b>Want the home of jazz next time you land?</b>
-      <p>New Orleans pack · 22 stories, 3 walking routes, 14 places worth the detour. Free for SkyStories listeners.</p>
+      <p>New Orleans pack · 22 stories, 3 walking routes, 14 places worth the detour. Free for Echo Finders listeners.</p>
     </div>
     <div class="mrow">
       <button class="act pri wide" id="recapMaps">Save ${S.saved.size} places to Google</button>
@@ -2921,7 +2921,7 @@ function openRecap(){
   const rm=$('#recapMaps');if(rm)rm.onclick=()=>{closeModal();$('#gmapsAll').click();};
   const rs=$('#recapShare');
   if(rs)rs.onclick=()=>{closeModal();
-    setTimeout(()=>shareStory('My SkyStories flight',
+    setTimeout(()=>shareStory('My Echo Finders flight',
       'I flew over '+Math.max(cities,1)+' cities on '+(PLAN.flight||'UA 512')+' and heard '+played.length
       +' stories'+(dark?', '+dark+' of them true crime':'')+' — '+mins+' minutes between SFO and JFK.'),240);};
 }
@@ -3011,14 +3011,14 @@ function obPaint(){
   const head=OB===0?'':'<div class="otop"><button class="obk" id="obBack"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button><div class="odots">'+dots+'</div><button class="oskip" id="obSkip">Skip</button></div>';
   let body='',foot='';
   if(OB===0){
-    body='<div class="mark2"><img src="'+((window.__resources&&window.__resources.appIcon)||'assets/skystories-icon.png')+'" alt="SkyStories"></div>'
-      +'<p class="owm">SKYSTORIES</p>'
+    body='<div class="mark2"><img src="'+((window.__resources&&window.__resources.appIcon)||'assets/echo-finders-icon.png')+'" alt="Echo Finders"></div>'
+      +'<p class="owm">ECHO FINDERS</p>'
       +'<h2>The ground beneath you, narrated.</h2>'
-      +'<p class="lead">Headphones in. As you fly, SkyStories tells you what you are passing over, the history, the crimes, the local legends, and the places worth landing for.</p>'
+      +'<p class="lead">Headphones in. As you fly, Echo Finders tells you what you are passing over, the history, the crimes, the local legends, and the places worth landing for.</p>'
       +'<div class="ocard"><span class="ic"><svg viewBox="0 0 24 24">'+OBI.plane+'</svg></span><div><b>Follows your real flight path</b><small>Stories arrive as you reach them, pinned to the map.</small></div></div>'
       +'<div class="ocard"><span class="ic"><svg viewBox="0 0 24 24">'+OBI.ear+'</svg></span><div><b>Audio first</b><small>Listen with the screen off. Read along if you would rather.</small></div></div>'
       +'<div class="ocard"><span class="ic"><svg viewBox="0 0 24 24">'+OBI.down+'</svg></span><div><b>Works without cabin Wi-Fi</b><small>Download your route on the ground and fly offline.</small></div></div>';
-    foot='<button class="pri2" id="obNext">Set up my flight</button><button class="ghost2" id="obHave">I have used SkyStories before</button>';
+    foot='<button class="pri2" id="obNext">Set up my flight</button><button class="ghost2" id="obHave">I have used Echo Finders before</button>';
   }
   if(OB===1){
     body='<h2>Which flight are you on?</h2><p class="lead">We build the route, the pins and the running order from your flight number.</p>'
