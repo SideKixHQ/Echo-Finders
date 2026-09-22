@@ -24,8 +24,10 @@ voices:
     # party — an airline — rather than only published by us? See docs/01-services.md.
     redistributionCleared: false
     notes: >-
-      Default narrator. Origin and redistribution rights both need confirming before the
-      library is voiced at scale; see docs/protection-policy.md, Risk 4.
+      Default narrator. Listened to on 22 September 2026 against the Bowling Green and
+      Charging Bull scripts and judged good. Origin and redistribution rights still need
+      confirming before the library is voiced at scale; see docs/protection-policy.md,
+      Risk 4.
 
   - id: hP72SDESIJq2YuAblBqz
     name: TODO — the voice's name in ElevenLabs
@@ -34,7 +36,11 @@ voices:
     origin: TODO
     redistributionCleared: false
     notes: >-
-      Male narrator. Offering a second voice is not a second audio file — it is a second
-      set of transcript timings and a second complete copy of every render, so it roughly
-      doubles both the TTS bill and the size of every offline package. Decide per surface:
-      a walking tour can afford both, a long-haul flight package may not.
+      Male narrator. Listened to on 22 September 2026 and judged good.
+
+      Both voices working is a decision to make rather than a free win: offering a choice is
+      not a second audio file, it is a second set of transcript timings and a second
+      complete copy of every render, so it roughly doubles both the TTS bill and the size of
+      every offline package. For a first paid route, ship one voice and keep the other in
+      reserve — a narrator picker is a feature to add once people are listening, not
+      something to pay for before anyone has.
