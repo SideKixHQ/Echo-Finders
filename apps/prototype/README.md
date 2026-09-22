@@ -24,6 +24,23 @@ Lower Manhattan walk, the Blue Ridge Parkway, and New York to Miami down the sea
 map is given the echoes in the route's corridor rather than the whole library, which is the
 same question `findEchoesAlongRoute` answers for the scheduler.
 
+## Finding is not hearing
+
+An echo opens when you arrive — that is capture-by-arrival (ADR-0010), and it is the game.
+It then **waits**. Pressing play is a separate act, because starting narration unasked talks
+over a conversation, a podcast, or somebody standing in a memorial. `PrivacySettings.handsFree`
+is the one way to ask for the opposite, and it is off by default.
+
+So a capture is really a bookmark: it goes into the collection, and the collection is where
+it gets cashed in — tap any entry, any time, wherever you are.
+
+**Coming up** is the other half. Nothing is forced, but on a route the engine already knows
+what is ahead and when, so it offers the next couple with their lead times and a play button.
+That matters most in the air: walking or driving you can go to an echo, but at 35,000 feet
+the route is fixed and choosing what to hear before it goes past *is* the interaction.
+`upcomingOnRoute` excludes anything already found, so the thing currently playing never turns
+up as a suggestion.
+
 ## It talks
 
 Nothing has been through ElevenLabs yet, so narration is the browser's own speech synthesis

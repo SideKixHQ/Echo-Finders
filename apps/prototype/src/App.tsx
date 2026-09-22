@@ -1,7 +1,7 @@
 import { useCallback, useMemo, useState } from "react";
 import { PRIVACY_DEFAULTS, holdsPersonalLocation, type PrivacySettings } from "@echofinders/core";
 import { LIBRARY, ROUTES } from "./library.generated";
-import { useJourney } from "./use-journey";
+import { useJourney, LISTENER } from "./use-journey";
 import { ModePicker } from "./ModePicker";
 import { RouteMap, type PinState } from "./RouteMap";
 import { ProximityBar } from "./ProximityBar";
@@ -10,7 +10,7 @@ import { Collection } from "./Collection";
 import { Privacy } from "./Privacy";
 import { Nav, type Tab } from "./Nav";
 import { NowPlaying } from "./NowPlaying";
-import { findEchoesAlongRoute, presetFor, type Route } from "@echofinders/core";
+import { findEchoesAlongRoute, presetFor, upcomingOnRoute, type Route } from "@echofinders/core";
 
 /** The walk is the richest route, so it is what the prototype opens on. */
 const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROUTES[0]!;
@@ -28,7 +28,15 @@ export function App() {
   const [sound, setSound] = useState(true);
   const [narrate, setNarrate] = useState(true);
   const [paused, setPaused] = useState(false);
-  const { state, session, walk } = useJourney(route, LIBRARY, { sound, narrate, paused });
+  const [privacy, setPrivacy] = useState<PrivacySettings>(PRIVACY_DEFAULTS);
+  // The listener's own setting drives it, not a constant. `handsFree` is off by default
+  // (PRIVACY_DEFAULTS), so an echo collects itself on arrival and then waits to be played.
+  const { state, session, walk } = useJourney(route, LIBRARY, {
+    sound,
+    narrate,
+    handsFree: privacy.handsFree,
+    paused,
+  });
 
   // Whether the traveller can steer. Guidance answers "which way should I go", so it is
   // shown to a walker and to a car's navigator, and withheld from anyone being carried —
@@ -36,7 +44,6 @@ export function App() {
   const selfDirected = presetFor(route.mode).selfDirected;
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>("map");
-  const [privacy, setPrivacy] = useState<PrivacySettings>(PRIVACY_DEFAULTS);
   const [deleted, setDeleted] = useState<Set<string>>(new Set());
 
   // What the collection would actually hold, given the privacy settings and any deletion.
@@ -109,6 +116,27 @@ export function App() {
     [byRoute],
   );
   const onRoute = byRoute[route.id] ?? [];
+
+  // Recomputed as the listener moves, from how far along they are rather than from the
+  // clock: a journey that paused still knows where it is, and asking the clock would offer
+  // things already behind them.
+  const upcoming = useMemo(
+    () =>
+      upcomingOnRoute(
+        route,
+        onRoute,
+        // Anything already found is not a suggestion. Reusing `heardEchoIds` rather than
+        // adding an exclusion list keeps one mechanism for "do not offer me this again" —
+        // and without it the thing currently playing turns up under "coming up".
+        { ...LISTENER, heardEchoIds: kept.map((c) => c.echo.id) },
+        walk.walkedMetres / 1000,
+        { limit: 2 },
+      ),
+    // `walk.walkedMetres` is read off a mutable simulation, so the position event is what
+    // says it changed.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [route, onRoute, state.position, kept],
+  );
   const inCorridor = onRoute.length;
 
   return (
@@ -147,12 +175,30 @@ export function App() {
                 stateOf={stateOf}
                 selectedId={selectedId}
                 onSelect={setSelectedId}
+                onPlay={(echo) => session.play(echo)}
+                isPlaying={(id) =>
+                  state.playback.kind !== "idle" && state.playback.item.echo.id === id
+                }
+                onPause={() => session.pause()}
+                onResume={() => session.resume()}
+                paused={state.playback.kind === "paused"}
+                upcoming={upcoming}
+                selfDirected={selfDirected}
+                handsFree={privacy.handsFree}
               />
             </>
           )}
 
           {tab === "collection" && (
-            <Collection captured={kept} privacy={privacy} total={inCorridor} />
+            <Collection
+              captured={kept}
+              privacy={privacy}
+              total={inCorridor}
+              onPlay={(echo) => session.play(echo)}
+              isPlaying={(id) =>
+                state.playback.kind !== "idle" && state.playback.item.echo.id === id
+              }
+            />
           )}
 
           {tab === "privacy" && (
@@ -195,7 +241,17 @@ export function App() {
         </p>
         <p>
           Echoes are sealed until you arrive. Step inside one and the ring fills over twelve
-          seconds; when it closes, the echo opens.
+          seconds; when it closes, the echo opens — and then <b>waits</b>. Finding one and
+          hearing it are separate acts: arriving collects it, pressing play is a decision.
+          Starting narration unasked talks over a conversation, a podcast, or somebody
+          standing in a memorial. <b>Hands-free</b> in Privacy is how a listener asks for
+          the opposite; it is off by default.
+        </p>
+        <p>
+          <b>Coming up</b> is the other half of that. Nothing is forced, but on a route the
+          engine knows what is ahead and when — which matters most in the air, where you
+          cannot go to an echo and choosing what to hear before it goes past is the whole
+          interaction.
         </p>
         {selfDirected ? (
           <p>

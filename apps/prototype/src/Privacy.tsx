@@ -50,8 +50,8 @@ export function Privacy({ settings, onChange, storedPositions, collectionSize, o
 
       <Toggle
         label="Hands-free walking"
-        detail="Echoes open with your phone in your pocket and the screen off."
-        cost="Turn off and echoes still open — you just keep the app on screen while you walk."
+        detail="Echoes open with your phone pocketed and the screen off, and start playing on their own."
+        cost="Off by default. Echoes still open as you reach them — they wait for you to press play."
         on={settings.handsFree}
         onToggle={() => onChange({ ...settings, handsFree: !settings.handsFree })}
       />

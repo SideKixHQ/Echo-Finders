@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { checkEligibility, scoreEcho } from "../src/ranking/score.js";
 import type { EligibilityContext, ScoreContext } from "../src/ranking/score.js";
 import { buildPlaylist } from "../src/ranking/playlist.js";
+import { upcomingOnRoute } from "../src/ranking/upcoming.js";
 import type { CorridorHit } from "../src/geo/corridor.js";
 import type { ListenerProfile, Echo, TrueCrimeReview } from "../src/types.js";
 import {
@@ -467,5 +468,55 @@ describe("dead air pricing", () => {
     // "immersive" on 90-second echoes implies roughly a 48-second gap, and with this much
     // material to choose from the scheduler should be sitting right on it.
     expect(medianGap).toBeLessThan(90);
+  });
+});
+
+describe("suggesting what is next", () => {
+  const library = echoesAlongJfkMia(120);
+
+  it("offers what is ahead, not what has gone past", () => {
+    const geometry = buildRouteGeometry(JFK_MIA);
+    const halfway = geometry.totalKm / 2;
+    const ahead = upcomingOnRoute(JFK_MIA, library, ADULT, halfway);
+
+    expect(ahead.length).toBeGreaterThan(0);
+    for (const item of ahead) {
+      expect(item.atKm).toBeGreaterThan(halfway);
+      expect(item.inS).toBeGreaterThan(0);
+    }
+  });
+
+  it("stays a suggestion rather than a table of contents", () => {
+    const ahead = upcomingOnRoute(JFK_MIA, library, ADULT, 0);
+    expect(ahead.length).toBeLessThanOrEqual(3);
+  });
+
+  it("skips what the listener is effectively already at", () => {
+    // Otherwise the first suggestion is the pin glowing under their thumb, which tells them
+    // nothing they cannot already see.
+    const geometry = buildRouteGeometry(JFK_MIA);
+    const profile = RouteProfile.forRoute(JFK_MIA, geometry);
+    const ahead = upcomingOnRoute(JFK_MIA, library, ADULT, geometry.totalKm / 3, {
+      minLeadS: 600,
+    });
+    const now = profile.timeAtDistance(geometry.totalKm / 3);
+    for (const item of ahead) expect(item.scheduled.nearestS - now).toBeGreaterThanOrEqual(600);
+  });
+
+  it("has nothing to offer at the end of the route", () => {
+    const geometry = buildRouteGeometry(JFK_MIA);
+    expect(upcomingOnRoute(JFK_MIA, library, ADULT, geometry.totalKm)).toEqual([]);
+  });
+
+  it("measures the wait from the place, not from where the playlist starts the echo", () => {
+    // A long feature is anchored well before the place it describes. Offering it by its
+    // start time would say "in one minute" about something two minutes' travel away.
+    const geometry = buildRouteGeometry(JFK_MIA);
+    const profile = RouteProfile.forRoute(JFK_MIA, geometry);
+    const at = geometry.totalKm / 4;
+    const now = profile.timeAtDistance(at);
+    for (const item of upcomingOnRoute(JFK_MIA, library, ADULT, at)) {
+      expect(item.inS).toBeCloseTo(item.scheduled.nearestS - now, 6);
+    }
   });
 });

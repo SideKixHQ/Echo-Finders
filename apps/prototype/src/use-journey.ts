@@ -49,7 +49,7 @@ export interface WalkState {
  * Everything except true crime, which is opt-in everywhere by design (OPT_IN_CATEGORIES)
  * and has to be chosen rather than defaulted into.
  */
-const LISTENER: ListenerProfile = {
+export const LISTENER: ListenerProfile = {
   categories: ["history", "food-drink", "people", "built", "land", "arts", "legend", "kids"],
   age: 35,
   density: "immersive",
@@ -58,8 +58,22 @@ const LISTENER: ListenerProfile = {
 export interface JourneyControls {
   /** Play the proximity cue. */
   readonly sound: boolean;
-  /** Read captured echoes aloud. */
+  /** Whether narration is audible at all. Not the same as whether it starts by itself. */
   readonly narrate: boolean;
+  /**
+   * Start a captured echo without being asked.
+   *
+   * Off by default, and that is the product rule rather than a preference: finding an echo
+   * and hearing it are separate acts. Capture-by-arrival (ADR-0010) collects the thing as
+   * you walk up to it, which is the game; narration is a decision, because starting it
+   * unasked talks over a conversation, a podcast, or somebody standing in a memorial.
+   *
+   * It exists at all because the hands-free case is real — phone pocketed, screen off,
+   * walking — and `PrivacySettings.handsFree` is where a listener asks for it. That setting
+   * defaults to false and needs background location, which is exactly the kind of thing
+   * that deserves a deliberate choice.
+   */
+  readonly handsFree: boolean;
   /** The listener pressed pause on the simulation itself. */
   readonly paused: boolean;
 }
@@ -67,7 +81,7 @@ export interface JourneyControls {
 export function useJourney(
   route: Route,
   library: readonly Echo[],
-  { sound, narrate, paused }: JourneyControls,
+  { sound, narrate, handsFree, paused }: JourneyControls,
 ) {
   const walk = useMemo(() => {
     // `?speed=2` slows the journey so the dwell ring can be watched filling; `?start=0.4`
@@ -134,11 +148,9 @@ export function useJourney(
       library,
       LISTENER,
       { location: walk, haptics, tones, audio: speech },
-      // Hands-free: the whole design assumes a phone in a pocket and a screen that stays
-      // off, so an echo that captured itself should start talking without being asked.
-      { mode: route.mode, autoPlay: true },
+      { mode: route.mode, autoPlay: handsFree },
     );
-  }, [library, walk, route.mode, toneRenderer, speech]);
+  }, [library, walk, route.mode, toneRenderer, speech, handsFree]);
 
   // Hold the walk while something is being narrated.
   //
@@ -156,6 +168,23 @@ export function useJourney(
   }, [walk, paused, state.playback.kind]);
 
   useEffect(() => {
+    // A new session is a new journey: different route, different collection, and nothing
+    // in the listener's ears. The engine already clears itself on stop — this is the view
+    // catching up, and without it switching mode leaves the last journey's echo showing as
+    // "playing" over a map it is nowhere near.
+    setState({
+      position: null,
+      nearby: [],
+      opening: [],
+      guidance: null,
+      captured: [],
+      lastCapture: null,
+      cue: null,
+      playback: { kind: "idle" },
+      waiting: [],
+      deferred: [],
+    });
+
     const off = session.subscribe((event) => {
       setState((previous) => {
         switch (event.type) {
