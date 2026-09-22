@@ -63,6 +63,13 @@ export const LIBRARY: readonly Echo[] = [
       "slavery",
       "archaeology",
       "memorial"
+    ],
+    "renders": [
+      {
+        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "audioKey": "speech/african-burial-ground",
+        "durationS": 110
+      }
     ]
   },
   {
@@ -101,6 +108,13 @@ export const LIBRARY: readonly Echo[] = [
       "new-jersey",
       "coast",
       "seaside"
+    ],
+    "renders": [
+      {
+        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "audioKey": "speech/atlantic-city-first-boardwalk",
+        "durationS": 85
+      }
     ]
   },
   {
@@ -147,6 +161,13 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "statues",
       "protest"
+    ],
+    "renders": [
+      {
+        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "audioKey": "speech/bowling-green-king-george",
+        "durationS": 90
+      }
     ]
   },
   {
@@ -185,6 +206,13 @@ export const LIBRARY: readonly Echo[] = [
       "florida",
       "spaceflight",
       "geography"
+    ],
+    "renders": [
+      {
+        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "audioKey": "speech/canaveral-free-speed",
+        "durationS": 95
+      }
     ]
   },
   {
@@ -224,6 +252,13 @@ export const LIBRARY: readonly Echo[] = [
       "new-york",
       "parades",
       "broadway"
+    ],
+    "renders": [
+      {
+        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "audioKey": "speech/canyon-of-heroes",
+        "durationS": 55
+      }
     ]
   },
   {
@@ -295,7 +330,14 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedBy": "TODO — a named human, before this can leave draft. See the note below.",
       "reviewedAt": "2026-09-22",
       "contentWarning": "This echo describes a murder. No violence is described in detail."
-    }
+    },
+    "renders": [
+      {
+        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "audioKey": "speech/casa-casuarina-the-steps",
+        "durationS": 100
+      }
+    ]
   },
   {
     "id": "castle-clinton-eight-million",
@@ -353,6 +395,13 @@ export const LIBRARY: readonly Echo[] = [
       "new-york",
       "forts",
       "nineteenth-century"
+    ],
+    "renders": [
+      {
+        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "audioKey": "speech/castle-clinton-eight-million",
+        "durationS": 95
+      }
     ]
   },
   {
@@ -398,6 +447,13 @@ export const LIBRARY: readonly Echo[] = [
       "new-york",
       "art",
       "wall-street"
+    ],
+    "renders": [
+      {
+        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "audioKey": "speech/charging-bull-illegal",
+        "durationS": 45
+      }
     ]
   },
   {
@@ -437,6 +493,13 @@ export const LIBRARY: readonly Echo[] = [
       "new-york",
       "revolution",
       "washington"
+    ],
+    "renders": [
+      {
+        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "audioKey": "speech/city-hall-declaration",
+        "durationS": 95
+      }
     ]
   },
   {
@@ -484,6 +547,13 @@ export const LIBRARY: readonly Echo[] = [
       "north-carolina",
       "appalachians",
       "ecology"
+    ],
+    "renders": [
+      {
+        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "audioKey": "speech/craggy-gardens-balds",
+        "durationS": 90
+      }
     ]
   },
   {
@@ -542,7 +612,14 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedBy": "TODO — a named human, before this can leave draft. See the note below.",
       "reviewedAt": "2026-09-22",
       "contentWarning": "This echo describes a murder. No violence is described in detail."
-    }
+    },
+    "renders": [
+      {
+        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "audioKey": "speech/dakota-three-minutes",
+        "durationS": 110
+      }
+    ]
   },
   {
     "id": "federal-hall-two-firsts",
@@ -600,6 +677,13 @@ export const LIBRARY: readonly Echo[] = [
       "founding",
       "press-freedom",
       "wall-street"
+    ],
+    "renders": [
+      {
+        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "audioKey": "speech/federal-hall-two-firsts",
+        "durationS": 105
+      }
     ]
   },
   {
@@ -639,6 +723,13 @@ export const LIBRARY: readonly Echo[] = [
       "new-york",
       "revolution",
       "washington"
+    ],
+    "renders": [
+      {
+        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "audioKey": "speech/fraunces-tavern-farewell",
+        "durationS": 85
+      }
     ]
   },
   {
@@ -679,6 +770,13 @@ export const LIBRARY: readonly Echo[] = [
       "outer-banks",
       "lighthouse",
       "coastal-erosion"
+    ],
+    "renders": [
+      {
+        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "audioKey": "speech/hatteras-moved-the-lighthouse",
+        "durationS": 100
+      }
     ]
   },
   {
@@ -719,6 +817,13 @@ export const LIBRARY: readonly Echo[] = [
       "outer-banks",
       "aviation",
       "wright-brothers"
+    ],
+    "renders": [
+      {
+        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "audioKey": "speech/kitty-hawk-shorter-than-this-plane",
+        "durationS": 95
+      }
     ]
   },
   {
@@ -759,6 +864,13 @@ export const LIBRARY: readonly Echo[] = [
       "north-carolina",
       "engineering",
       "grandfather-mountain"
+    ],
+    "renders": [
+      {
+        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "audioKey": "speech/linn-cove-viaduct-last-piece",
+        "durationS": 100
+      }
     ]
   },
   {
@@ -805,6 +917,13 @@ export const LIBRARY: readonly Echo[] = [
       "north-carolina",
       "wilderness",
       "forest"
+    ],
+    "renders": [
+      {
+        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "audioKey": "speech/linville-gorge-too-steep",
+        "durationS": 90
+      }
     ]
   },
   {
@@ -851,6 +970,13 @@ export const LIBRARY: readonly Echo[] = [
       "north-carolina",
       "appalachians",
       "mountains"
+    ],
+    "renders": [
+      {
+        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "audioKey": "speech/mount-mitchell-buried-on-top",
+        "durationS": 95
+      }
     ]
   },
   {
@@ -914,7 +1040,14 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedBy": "TODO — a named human, before this can leave draft. See the note below.",
       "reviewedAt": "2026-09-22",
       "contentWarning": "This echo describes a murder. No violence is described in detail."
-    }
+    },
+    "renders": [
+      {
+        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "audioKey": "speech/news-cafe-last-ordinary-morning",
+        "durationS": 65
+      }
+    ]
   },
   {
     "id": "pearl-street-oysters",
@@ -954,6 +1087,13 @@ export const LIBRARY: readonly Echo[] = [
       "oysters",
       "food",
       "dutch"
+    ],
+    "renders": [
+      {
+        "voiceId": "MkTSSXNgnBULS6ek4pon",
+        "audioKey": "speech/pearl-street-oysters",
+        "durationS": 85
+      }
     ]
   },
   {
@@ -992,6 +1132,13 @@ export const LIBRARY: readonly Echo[] = [
       "georgia",
       "urban-planning",
       "colonial"
+    ],
+    "renders": [
+      {
+        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "audioKey": "speech/savannah-twenty-two-squares",
+        "durationS": 90
+      }
     ]
   },
   {
@@ -1038,6 +1185,13 @@ export const LIBRARY: readonly Echo[] = [
       "churches",
       "washington",
       "september-11"
+    ],
+    "renders": [
+      {
+        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "audioKey": "speech/st-pauls-still-standing",
+        "durationS": 100
+      }
     ]
   },
   {
@@ -1090,7 +1244,14 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedBy": "TODO — a named human, before this can leave draft. See the note below.",
       "reviewedAt": "2026-09-22",
       "contentWarning": "This echo describes a murder. No violence is described in detail."
-    }
+    },
+    "renders": [
+      {
+        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "audioKey": "speech/strawberry-fields-one-word",
+        "durationS": 70
+      }
+    ]
   },
   {
     "id": "trinity-tallest-thing",
@@ -1129,6 +1290,13 @@ export const LIBRARY: readonly Echo[] = [
       "new-york",
       "architecture",
       "hamilton"
+    ],
+    "renders": [
+      {
+        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "audioKey": "speech/trinity-tallest-thing",
+        "durationS": 85
+      }
     ]
   },
   {
@@ -1175,6 +1343,13 @@ export const LIBRARY: readonly Echo[] = [
       "dutch",
       "slavery",
       "wall-street"
+    ],
+    "renders": [
+      {
+        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "audioKey": "speech/wall-street-the-wall",
+        "durationS": 90
+      }
     ]
   }
 ] as const;

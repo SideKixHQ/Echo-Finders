@@ -29,6 +29,13 @@ import type {
 } from "./adapters.js";
 import { toneFor } from "../proximity/tone.js";
 import { presetFor } from "../modes.js";
+import {
+  PlaybackQueue,
+  type Deferred,
+  type PlaybackOptions,
+  type PlaybackState,
+  type QueuedEcho,
+} from "./playback.js";
 
 export type WalkEvent =
   | { readonly type: "position"; readonly position: Position }
@@ -39,6 +46,20 @@ export type WalkEvent =
   /** Echoes part-way through opening. Drives the progress ring. */
   | { readonly type: "opening"; readonly arriving: readonly Arriving[] }
   | { readonly type: "captured"; readonly capture: CaptureEvent }
+  /** What is in the listener's ears, and what is waiting behind it. */
+  | {
+      readonly type: "playback";
+      readonly state: PlaybackState;
+      readonly waiting: readonly QueuedEcho[];
+    }
+  /**
+   * Captured, but never heard.
+   *
+   * Emitted rather than swallowed because it is the one moment where the collection and the
+   * listening diverge, and a UI that never mentioned it would leave someone wondering why a
+   * pin went solid in silence.
+   */
+  | { readonly type: "deferred"; readonly deferred: Deferred }
   | { readonly type: "error"; readonly error: Error };
 
 export interface WalkSessionDeps {
@@ -68,6 +89,8 @@ export interface WalkSessionOptions {
   readonly autoPlay?: boolean;
   /** Which narrator to play. Falls back to whatever render exists. */
   readonly voiceId?: string;
+  /** How many echoes may wait to be heard, and how far they may travel while waiting. */
+  readonly playback?: PlaybackOptions;
   /** Restore a previous collection, so echoes already found stay found. */
   readonly captured?: readonly CaptureRecord[];
   /**
@@ -91,6 +114,8 @@ export class WalkSession {
 
   /** Resolved once, because three separate `?? "walking"` defaults is three chances to disagree. */
   private readonly mode: TravelMode;
+  private readonly playback: PlaybackQueue;
+  private stopAudio: Unsubscribe | null = null;
   private readonly privacy: PrivacySettings;
   private unwatch: Unsubscribe | null = null;
   /** The cue currently being rendered, so we do not restate it on every fix. */
@@ -107,6 +132,7 @@ export class WalkSession {
     this.deps = deps;
     this.options = options;
     this.mode = options.mode ?? "walking";
+    this.playback = new PlaybackQueue(this.mode, options.playback ?? {});
     this.privacy = options.privacy ?? PRIVACY_DEFAULTS;
     this.guide = new ProximityGuide(options.proximity);
 
@@ -126,6 +152,9 @@ export class WalkSession {
 
   start(): void {
     if (this.unwatch) return;
+    // Subscribed once, not per item: the platform owns one player, and re-subscribing on
+    // every track would leak a handler per echo over a walk.
+    this.stopAudio ??= this.deps.audio?.ended(() => this.advance()) ?? null;
     this.unwatch = this.deps.location.watch(
       (position) => this.onFix(position),
       (error) => this.emit({ type: "error", error }),
@@ -135,8 +164,66 @@ export class WalkSession {
   stop(): void {
     this.unwatch?.();
     this.unwatch = null;
+    this.stopAudio?.();
+    this.stopAudio = null;
     this.guide.reset();
     this.silenceGuidance();
+    this.deps.audio?.stop();
+    this.playback.clear();
+  }
+
+  // --- Playback -----------------------------------------------------------------------
+
+  /** What is in the listener's ears right now. */
+  get nowPlaying(): QueuedEcho | null {
+    return this.playback.nowPlaying;
+  }
+
+  /** Play something on demand — tapped on the map, or picked out of the collection. */
+  play(echo: Echo): void {
+    const render = renderFor(echo.renders, this.options.voiceId);
+    if (!render) return;
+    this.playback.playNow({ echo, render, atMs: Date.now() });
+    this.startCurrent();
+  }
+
+  pause(): void {
+    this.playback.pause();
+    this.deps.audio?.pause();
+    this.emitPlayback();
+  }
+
+  resume(): void {
+    this.playback.resume();
+    this.deps.audio?.resume();
+    this.emitPlayback();
+  }
+
+  /** Give up on the current item and take the next. */
+  skip(): void {
+    this.playback.skip();
+    this.startCurrent();
+  }
+
+  /** The current item ran out. Take the next, if there is one. */
+  private advance(): void {
+    this.playback.finished();
+    this.startCurrent();
+  }
+
+  private startCurrent(): void {
+    const item = this.playback.nowPlaying;
+    if (item) this.deps.audio?.play(item.render.audioKey);
+    else this.deps.audio?.stop();
+    this.emitPlayback();
+  }
+
+  private emitPlayback(): void {
+    this.emit({
+      type: "playback",
+      state: this.playback.state,
+      waiting: this.playback.waiting,
+    });
   }
 
   /** Capture on an explicit tap, which skips the dwell timer. */
@@ -180,6 +267,14 @@ export class WalkSession {
     );
     this.emit({ type: "guidance", guidance });
     this.renderGuidance(guidance);
+
+    // Anything still waiting that the listener has now walked away from gives up. Only
+    // waiting items — whatever is already playing finishes wherever they have got to.
+    const gone = this.playback.moved(position.at);
+    if (gone.length > 0) {
+      for (const deferred of gone) this.emit({ type: "deferred", deferred });
+      this.emitPlayback();
+    }
   }
 
   /**
@@ -197,9 +292,19 @@ export class WalkSession {
 
   private announce(capture: CaptureEvent): void {
     this.deps.audio?.chime();
+
+    // Offered to the queue rather than played: a second capture arriving while the first is
+    // still talking used to call `play()` straight over it, and at a stop where two echoes
+    // sit a few metres apart that is the normal case, not the edge one.
     if (this.options.autoPlay) {
       const render = renderFor(capture.echo.renders, this.options.voiceId);
-      if (render) this.deps.audio?.play(render.audioKey);
+      if (render) {
+        const wasIdle = this.playback.nowPlaying === null;
+        const outcome = this.playback.offer({ echo: capture.echo, render, atMs: Date.now() });
+        if (outcome.deferred) this.emit({ type: "deferred", deferred: outcome.deferred });
+        if (outcome.started && wasIdle) this.deps.audio?.play(render.audioKey);
+        this.emitPlayback();
+      }
     }
     // A captured echo is no longer a destination; drop any approach in progress so the
     // next fix starts guiding towards something else.

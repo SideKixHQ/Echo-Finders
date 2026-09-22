@@ -183,6 +183,46 @@ body {
 .proximity-colder .proximity-kind { color: var(--muted); }
 .proximity-distance { color: var(--muted); }
 
+/* ── now playing ─────────────────────────────────────────── */
+/* Sits between the guidance bar and the sheet: what is in your ears, not what is around
+   you. Ember, because it is an echo rather than a control. */
+.playing {
+  position: absolute; left: 12px; right: 12px; z-index: 30;
+  background: rgba(31, 37, 46, 0.97);
+  border: 1px solid rgba(255, 158, 18, 0.35); border-radius: 14px;
+  padding: 10px 12px; backdrop-filter: blur(12px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+}
+.playing-top { display: flex; gap: 10px; align-items: center; }
+.playing-button {
+  width: 32px; height: 32px; flex: none; border: 0; border-radius: 50%;
+  background: var(--ember); color: var(--space); display: grid; place-items: center;
+  cursor: pointer;
+}
+.playing-button svg { width: 13px; height: 13px; fill: currentColor; }
+.playing-text { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 1px; }
+.playing-label {
+  font-family: "Space Grotesk", monospace; font-size: 8.5px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ember);
+}
+.playing-text strong {
+  font-size: 12.5px; font-weight: 600; line-height: 1.25;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.playing-place { font-size: 10.5px; color: var(--muted); }
+.playing-skip {
+  flex: none; font: inherit; font-size: 10.5px; padding: 5px 9px; cursor: pointer;
+  background: transparent; color: var(--muted);
+  border: 1px solid var(--line-2); border-radius: 8px;
+}
+.playing-skip:hover { color: var(--ember); border-color: rgba(255, 158, 18, 0.5); }
+.playing-next, .playing-missed {
+  margin-top: 7px; padding-top: 7px; border-top: 1px solid var(--line);
+  font-size: 10.5px; color: var(--muted);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.playing-missed { color: var(--indigo-soft); }
+
 /* ── sheet ───────────────────────────────────────────────── */
 .sheet {
   position: absolute; left: 0; right: 0; bottom: 0; z-index: 20;
@@ -313,6 +353,10 @@ body {
 /* The sheet and proximity bar sit above the tab bar rather than under it. */
 .sheet { bottom: 72px; }
 .proximity { bottom: 378px; }
+/* Above the guidance bar when there is one; the guidance bar's own slot when there is not,
+   which is every carried mode. */
+.playing { bottom: 432px; }
+.stack-noguide .playing { bottom: 378px; }
 
 /* ── full-screen panels ──────────────────────────────────── */
 .screen-body {

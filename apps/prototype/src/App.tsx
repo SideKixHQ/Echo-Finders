@@ -9,6 +9,7 @@ import { Sheet } from "./Sheet";
 import { Collection } from "./Collection";
 import { Privacy } from "./Privacy";
 import { Nav, type Tab } from "./Nav";
+import { NowPlaying } from "./NowPlaying";
 import { findEchoesAlongRoute, presetFor, type Route } from "@echofinders/core";
 
 /** The walk is the richest route, so it is what the prototype opens on. */
@@ -25,14 +26,15 @@ const MODE_LABEL: Record<string, string> = {
 export function App() {
   const [route, setRoute] = useState<Route>(DEFAULT_ROUTE);
   const [sound, setSound] = useState(true);
-  const { state, session, walk } = useJourney(route, LIBRARY, sound);
+  const [narrate, setNarrate] = useState(true);
+  const [paused, setPaused] = useState(false);
+  const { state, session, walk } = useJourney(route, LIBRARY, { sound, narrate, paused });
 
   // Whether the traveller can steer. Guidance answers "which way should I go", so it is
   // shown to a walker and to a car's navigator, and withheld from anyone being carried —
   // nobody diverts an aircraft towards a good story.
   const selfDirected = presetFor(route.mode).selfDirected;
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [paused, setPaused] = useState(false);
   const [tab, setTab] = useState<Tab>("map");
   const [privacy, setPrivacy] = useState<PrivacySettings>(PRIVACY_DEFAULTS);
   const [deleted, setDeleted] = useState<Set<string>>(new Set());
@@ -71,10 +73,7 @@ export function App() {
     [session, state],
   );
 
-  const togglePause = () => {
-    walk.setPaused(!paused);
-    setPaused(!paused);
-  };
+  const togglePause = () => setPaused(!paused);
 
   // Switching journeys starts a new session with its own captures, so anything pinned to
   // the old one has to go with it.
@@ -115,7 +114,7 @@ export function App() {
   return (
     <div className="stage">
       <div className="phone">
-        <div className="screen">
+        <div className={selfDirected ? "screen" : "screen stack-noguide"}>
           <div className="statusbar">
             <span className="mono">10:42</span>
             <span className="mono dim">{MODE_LABEL[route.mode] ?? route.mode}</span>
@@ -133,6 +132,14 @@ export function App() {
                 onSelect={setSelectedId}
               />
               {selfDirected && <ProximityBar guidance={state.guidance} cue={state.cue} />}
+              <NowPlaying
+                state={state.playback}
+                waiting={state.waiting}
+                deferred={state.deferred}
+                onPause={() => session.pause()}
+                onResume={() => session.resume()}
+                onSkip={() => session.skip()}
+              />
               <Sheet
                 nearby={state.nearby}
                 lastCapture={state.lastCapture}
@@ -208,6 +215,21 @@ export function App() {
             can say "turn left here".
           </p>
         )}
+        <p>
+          <b>It talks.</b> Nothing has been through ElevenLabs yet, so the narration is your
+          browser reading the actual script aloud. It is flat and its timing is not the real
+          timing — but the words are the real words, which is the only way to judge writing
+          that is heard rather than read. When the real renders land, this file is replaced
+          by twenty lines around an <code>&lt;audio&gt;</code> element and nothing else
+          changes.
+        </p>
+        <p>
+          Two echoes capturing at once is the normal case, not the edge one — the stops on
+          this route exist so a listener can collect both the King George statue and the
+          Charging Bull at Bowling Green. One plays, the other waits, and neither talks over
+          the other. Walk far enough while something waits and it gives up: capturing and
+          hearing are different things, and nothing is lost, because it is in the collection.
+        </p>
         <p className="dim">
           No basemap: tile providers are unreachable from this environment, and the pin
           states are the point. A real map slots in underneath unchanged.
@@ -216,8 +238,11 @@ export function App() {
           <button onClick={togglePause}>{paused ? "Resume" : "Pause"}</button>
           <button onClick={() => walk.seekTo(0)}>Back to start</button>
           {selfDirected && (
-            <button onClick={() => setSound(!sound)}>{sound ? "Sound on" : "Sound off"}</button>
+            <button onClick={() => setSound(!sound)}>{sound ? "Cue on" : "Cue off"}</button>
           )}
+          <button onClick={() => setNarrate(!narrate)}>
+            {narrate ? "Narration on" : "Narration off"}
+          </button>
         </div>
         <p className="mono dim">
           {walkedPercent}% along · {kept.length} found · {inCorridor} on this route ·{" "}

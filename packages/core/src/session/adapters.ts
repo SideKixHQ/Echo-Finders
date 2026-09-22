@@ -62,12 +62,24 @@ export interface TonesSink {
   stop(): void;
 }
 
-/** Playing an echo's audio. The engine decides what and when; the platform decides how. */
+/**
+ * Playing an echo's narration. The engine decides what and when; the platform decides how.
+ *
+ * `ended` is what makes a queue possible at all. Only the platform knows when a file has
+ * actually run out — the engine has a duration in the content file, but trusting it would
+ * mean the next echo starting a second early or a second late on every transition, and a
+ * listener who pauses would desynchronise it permanently.
+ */
 export interface AudioSink {
   play(audioKey: string, options?: { startAtS?: number }): void;
   pause(): void;
+  resume(): void;
+  /** Stop and discard. Used when the listener skips, or the session ends. */
+  stop(): void;
   /** A short sound marking a capture, distinct from narration. */
   chime(): void;
+  /** Called when the current item runs out on its own. Never on pause or stop. */
+  ended(handler: () => void): Unsubscribe;
 }
 
 /** Querying and requesting the capabilities in `CAPABILITY_NEEDS`. */

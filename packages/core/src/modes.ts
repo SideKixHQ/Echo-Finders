@@ -255,3 +255,22 @@ export function presetFor(mode: TravelMode): ModePreset {
 export function dutyCycleFor(mode: TravelMode, density: ListeningDensity = "balanced"): number {
   return MODE_PRESETS[mode].dutyCycle[density];
 }
+
+/**
+ * Turn a mode's timing tolerance into the distance tolerance it was always standing in for.
+ *
+ * Every drift number in the preset table was reasoned about as a distance and then written
+ * down as a time: ninety seconds on foot "is roughly a hundred metres", ten minutes in the
+ * air "is a fifth of the way across a state". Doing the conversion explicitly, and then
+ * asking the route profile how far the listener actually moved, costs nothing and fixes the
+ * case the time version gets badly wrong — standing still.
+ *
+ * A walker who has stopped at Bowling Green for three minutes has not walked past anything,
+ * so a second echo about Bowling Green should still be allowed to play. Measured in seconds
+ * it is three minutes stale and rejected; measured in metres it is exactly where it belongs.
+ * That is the difference between a dense, interesting corner carrying two stories and
+ * carrying one.
+ */
+export function driftToleranceKm(maxTimingDriftS: number, speedKph: number): number {
+  return (maxTimingDriftS * speedKph) / 3600;
+}

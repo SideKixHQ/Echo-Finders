@@ -23,6 +23,8 @@ async function* walk(dir) {
   }
 }
 
+const voices = parseYaml(await readFile(join(ROOT, "content", "voices.yml"), "utf8"));
+
 const echoes = [];
 for await (const path of walk(join(ROOT, "content", "echoes"))) {
   const { echo, issues } = parseEcho(parseYaml(await readFile(path, "utf8")), relative(ROOT, path));
@@ -47,6 +49,29 @@ const demo = echoes.map((echo) => ({
   ...echo,
   editorial: "approved",
   factCheck: "corroborated",
+  // DEMO ONLY: a stand-in render so the playback path has something to play.
+  //
+  // Nothing has been through ElevenLabs yet, and an echo with no `renders` cannot be
+  // played by anything — which would leave the entire audio path, the queue included,
+  // untestable until the day the first real file lands. So each echo gets one render
+  // pointing at `speech/<id>`, which the prototype resolves to the browser's own speech
+  // synthesis reading the script aloud.
+  //
+  // It is a genuinely useful stand-in rather than silence: the words are the real words,
+  // so the writing can be judged *spoken* rather than read, which is the only way it is
+  // ever going to be experienced. The duration is the estimate from the content file and
+  // will be wrong; the real figure arrives with the real render.
+  ...(echo.script
+    ? {
+        renders: [
+          {
+            voiceId: echo.voice ?? voices.defaultVoiceId,
+            audioKey: `speech/${echo.id}`,
+            durationS: echo.durationS,
+          },
+        ],
+      }
+    : {}),
 }));
 
 // Validate what the prototype will actually serve, which means after the override rather

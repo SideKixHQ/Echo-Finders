@@ -24,6 +24,34 @@ Lower Manhattan walk, the Blue Ridge Parkway, and New York to Miami down the sea
 map is given the echoes in the route's corridor rather than the whole library, which is the
 same question `findEchoesAlongRoute` answers for the scheduler.
 
+## It talks
+
+Nothing has been through ElevenLabs yet, so narration is the browser's own speech synthesis
+reading the actual script aloud. Flat, and its timing is not the real timing — but the words
+are the real words, which is the only way to judge writing that will be *heard* rather than
+read. A sentence that needs a second pass, a number that is painful aloud, a clause that
+lands wrong without a comma nobody can hear: none of that shows up on a page. When the real
+renders land, `speech-audio.ts` is replaced by twenty lines around an `<audio>` element and
+nothing above it changes.
+
+Two echoes capturing at once is the normal case here, not the edge one — the stops on the
+Lower Manhattan route exist precisely so a listener can collect both the King George statue
+and the Charging Bull at Bowling Green. One plays, the other waits, and neither talks over
+the other. Walk far enough while something waits and it gives up: **capturing and hearing
+are different things**, and nothing is lost, because a capture is permanent and sits in the
+collection to be played from there.
+
+**The walk holds while an echo is talking**, which the real product does not need. Out on a
+street you walk and listen at the same time, in real time. Here the map runs at fourteen
+times life so fifty minutes fits in three, and narration cannot be compressed with it — you
+would capture twelve echoes in the time it takes to narrate one, and the queue would spend
+the whole walk giving up on things. Holding the map keeps both halves honest.
+
+A browser with no speech voices installed — a headless one, usually — falls back to a timer
+of the echo's stated duration rather than ending instantly. A player that finishes the moment
+it starts drains the queue in a single frame, and every transition the queue exists to get
+right would go untested.
+
 ## What is real and what is faked
 
 **Real:** `WalkSession` from `@echofinders/core`, and everything it drives — corridor

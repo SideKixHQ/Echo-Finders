@@ -66,17 +66,40 @@ const fakeHaptics = (): HapticsSink & { plays: unknown[]; stops: number } => {
   };
 };
 
-const fakeAudio = (): AudioSink & { played: string[]; chimes: number } => {
+/**
+ * A player the test drives by hand.
+ *
+ * `finish()` stands in for a file running out, which is the only way the queue ever
+ * advances — the engine deliberately does not trust the duration in the content file.
+ */
+const fakeAudio = (): AudioSink & {
+  played: string[];
+  chimes: number;
+  stops: number;
+  finish: () => void;
+} => {
   const played: string[] = [];
+  const handlers = new Set<() => void>();
   let chimes = 0;
+  let stops = 0;
   return {
     played,
     get chimes() {
       return chimes;
     },
+    get stops() {
+      return stops;
+    },
+    finish: () => handlers.forEach((h) => h()),
     play: (key) => void played.push(key),
     pause: () => {},
+    resume: () => {},
+    stop: () => void stops++,
     chime: () => void chimes++,
+    ended: (handler) => {
+      handlers.add(handler);
+      return () => handlers.delete(handler);
+    },
   };
 };
 
@@ -375,5 +398,113 @@ describe("guidance belongs to whoever is steering", () => {
     expect(there.repeats).toBe(0);
     // Arrival is a moment, not a rhythm.
     expect(there.intervalMs).toBe(Number.POSITIVE_INFINITY);
+  });
+});
+
+describe("two echoes, one pair of ears", () => {
+  const withAudio = (id: string, at: LatLng, quality = 0.8) =>
+    makeEcho({
+      id,
+      at,
+      triggerRadiusKm: 0.05,
+      quality,
+      audioKey: `audio/${id}.mp3`,
+    });
+
+  /** Two echoes a few metres apart, which is Bowling Green. */
+  const CORNER = HERE;
+  const ALSO_HERE = north(HERE, 8);
+
+  const walkTo = (echoes: ReturnType<typeof withAudio>[], stops: number[] = [0, 0, 0, 0, 0]) => {
+    const location = new FakeLocation();
+    const audio = fakeAudio();
+    const session = new WalkSession(echoes, ADULT, { location, audio }, { autoPlay: true });
+    const events = collect(session);
+    session.start();
+    stops.forEach((m, i) => location.emit(fix(north(CORNER, m), START + i * 13_000)));
+    return { audio, session, events, location };
+  };
+
+  it("does not talk over itself when two echoes capture together", () => {
+    // The bug this exists for. At a stop with two echoes a few metres apart — the King
+    // George statue and the Charging Bull — both capture within seconds, and the second
+    // `play()` used to land straight on top of the first.
+    const { audio } = walkTo([withAudio("statue", CORNER), withAudio("bull", ALSO_HERE)]);
+    expect(audio.played).toEqual(["audio/statue.mp3"]);
+  });
+
+  it("plays the second one when the first runs out", () => {
+    const { audio } = walkTo([withAudio("statue", CORNER), withAudio("bull", ALSO_HERE)]);
+    audio.finish();
+    expect(audio.played).toEqual(["audio/statue.mp3", "audio/bull.mp3"]);
+  });
+
+  it("reports what is playing and what is behind it", () => {
+    const { events } = walkTo([withAudio("statue", CORNER), withAudio("bull", ALSO_HERE)]);
+    const last = [...events].reverse().find((e) => e.type === "playback");
+    expect(last?.type).toBe("playback");
+    const state = last?.type === "playback" ? last.state : null;
+    expect(state?.kind).toBe("playing");
+    expect(state?.kind === "playing" && state.item.echo.id).toBe("statue");
+    expect(last?.type === "playback" && last.waiting.map((w) => w.echo.id)).toEqual(["bull"]);
+  });
+
+  it("gives up on a waiting echo once the listener has walked away from it", () => {
+    // Capturing and hearing are different things. Nothing is lost — it is in the collection
+    // and can be played from there — but an echo saying "look at the tops of the posts" is
+    // worthless two streets later, so it does not wait indefinitely for its turn.
+    const { events } = walkTo(
+      [withAudio("statue", CORNER), withAudio("bull", ALSO_HERE)],
+      [0, 0, 400, 800],
+    );
+    const deferred = events.filter((e) => e.type === "deferred");
+    expect(deferred.length).toBe(1);
+    expect(deferred[0]?.type === "deferred" && deferred[0].deferred.echo.id).toBe("bull");
+    expect(deferred[0]?.type === "deferred" && deferred[0].deferred.reason).toBe("out-of-range");
+  });
+
+  it("lets whatever is already playing finish, wherever the listener has got to", () => {
+    // Stopping a story mid-sentence because somebody rounded a corner would be a bizarre
+    // thing for a product to do.
+    const { audio, events } = walkTo([withAudio("statue", CORNER)], [0, 0, 600, 900]);
+    expect(audio.stops).toBe(0);
+    const last = [...events].reverse().find((e) => e.type === "playback");
+    expect(last?.type === "playback" && last.state.kind).toBe("playing");
+  });
+
+  it("drops the weakest when more arrive than a queue can usefully hold", () => {
+    // Arriving last is not a reason to be dropped; being the least worth hearing is.
+    const echoes = [
+      withAudio("a", CORNER, 0.9),
+      withAudio("b", north(CORNER, 5), 0.85),
+      withAudio("c", north(CORNER, 10), 0.3),
+      withAudio("d", north(CORNER, 15), 0.8),
+    ];
+    const { events } = walkTo(echoes);
+    const deferred = events.filter((e) => e.type === "deferred");
+    expect(deferred.length).toBe(1);
+    expect(deferred[0]?.type === "deferred" && deferred[0].deferred.echo.id).toBe("c");
+    expect(deferred[0]?.type === "deferred" && deferred[0].deferred.reason).toBe("queue-full");
+  });
+
+  it("plays on demand, and puts back what was interrupted", () => {
+    const echoes = [withAudio("statue", CORNER), withAudio("bull", ALSO_HERE)];
+    const { audio, session } = walkTo(echoes);
+    session.play(echoes[1]!);
+    expect(audio.played).toEqual(["audio/statue.mp3", "audio/bull.mp3"]);
+    expect(session.nowPlaying?.echo.id).toBe("bull");
+    audio.finish();
+    // The one it jumped in front of is still there, not thrown away.
+    expect(session.nowPlaying?.echo.id).toBe("statue");
+  });
+
+  it("stays quiet unless hands-free was asked for", () => {
+    const location = new FakeLocation();
+    const audio = fakeAudio();
+    const session = new WalkSession([withAudio("statue", CORNER)], ADULT, { location, audio });
+    session.start();
+    [0, 0, 0].forEach((m, i) => location.emit(fix(north(CORNER, m), START + i * 13_000)));
+    expect(audio.played).toEqual([]);
+    expect(audio.chimes).toBeGreaterThan(0);
   });
 });

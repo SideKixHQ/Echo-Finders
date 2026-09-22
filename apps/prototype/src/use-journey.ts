@@ -18,6 +18,9 @@ import {
   type HapticCue,
   type HapticsSink,
   type TonesSink,
+  type PlaybackState,
+  type QueuedEcho,
+  type Deferred,
   type ListenerProfile,
   type NearbyEcho,
   type Position,
@@ -25,6 +28,7 @@ import {
 } from "@echofinders/core";
 import { SimulatedJourney } from "./simulated-journey";
 import { EchoTone } from "./echo-tone";
+import { SpeechAudio } from "./speech-audio";
 
 export interface WalkState {
   readonly position: Position | null;
@@ -35,6 +39,10 @@ export interface WalkState {
   readonly lastCapture: CaptureEvent | null;
   /** What the phone would be doing, so the UI can show the haptic it cannot feel. */
   readonly cue: HapticCue | null;
+  readonly playback: PlaybackState;
+  readonly waiting: readonly QueuedEcho[];
+  /** Captured but never heard — the one place the collection and the listening diverge. */
+  readonly deferred: readonly Deferred[];
 }
 
 /**
@@ -47,7 +55,20 @@ const LISTENER: ListenerProfile = {
   density: "immersive",
 };
 
-export function useJourney(route: Route, library: readonly Echo[], sound: boolean) {
+export interface JourneyControls {
+  /** Play the proximity cue. */
+  readonly sound: boolean;
+  /** Read captured echoes aloud. */
+  readonly narrate: boolean;
+  /** The listener pressed pause on the simulation itself. */
+  readonly paused: boolean;
+}
+
+export function useJourney(
+  route: Route,
+  library: readonly Echo[],
+  { sound, narrate, paused }: JourneyControls,
+) {
   const walk = useMemo(() => {
     // `?speed=2` slows the journey so the dwell ring can be watched filling; `?start=0.4`
     // drops in partway along.
@@ -69,6 +90,9 @@ export function useJourney(route: Route, library: readonly Echo[], sound: boolea
     captured: [],
     lastCapture: null,
     cue: null,
+    playback: { kind: "idle" },
+    waiting: [],
+    deferred: [],
   });
 
   const cueRef = useRef<HapticCue | null>(null);
@@ -79,6 +103,11 @@ export function useJourney(route: Route, library: readonly Echo[], sound: boolea
   useEffect(() => {
     toneRenderer.setMuted(!sound);
   }, [toneRenderer, sound]);
+
+  const speech = useMemo(() => new SpeechAudio(library), [library]);
+  useEffect(() => {
+    speech.setMuted(!narrate);
+  }, [speech, narrate]);
 
   const session = useMemo(() => {
     // Stands in for Core Haptics on iOS. Here it only records what would have happened,
@@ -104,10 +133,27 @@ export function useJourney(route: Route, library: readonly Echo[], sound: boolea
     return new WalkSession(
       library,
       LISTENER,
-      { location: walk, haptics, tones },
-      { mode: route.mode },
+      { location: walk, haptics, tones, audio: speech },
+      // Hands-free: the whole design assumes a phone in a pocket and a screen that stays
+      // off, so an echo that captured itself should start talking without being asked.
+      { mode: route.mode, autoPlay: true },
     );
-  }, [library, walk, route.mode, toneRenderer]);
+  }, [library, walk, route.mode, toneRenderer, speech]);
+
+  // Hold the walk while something is being narrated.
+  //
+  // A demo-only device, and one the real product does not need: out on a street you walk
+  // and listen at the same time, in real time. Here the map runs at fourteen times life so
+  // fifty minutes fits in three, and narration cannot be compressed with it — a listener
+  // would capture twelve echoes in the time it takes to narrate one, and the queue would
+  // spend the whole walk giving up on things. Holding the map while an echo talks keeps
+  // both halves honest: you hear the whole story, then the walk carries on.
+  // The manual pause and the narration hold are OR-ed in one place, because two callers
+  // setting the same flag independently means whichever ran last wins — and the walk would
+  // resume itself the moment an echo finished, whatever the listener had asked for.
+  useEffect(() => {
+    walk.setPaused(paused || state.playback.kind === "playing");
+  }, [walk, paused, state.playback.kind]);
 
   useEffect(() => {
     const off = session.subscribe((event) => {
@@ -127,6 +173,10 @@ export function useJourney(route: Route, library: readonly Echo[], sound: boolea
               captured: [...previous.captured, event.capture],
               lastCapture: event.capture,
             };
+          case "playback":
+            return { ...previous, playback: event.state, waiting: event.waiting };
+          case "deferred":
+            return { ...previous, deferred: [...previous.deferred, event.deferred] };
           default:
             return previous;
         }
