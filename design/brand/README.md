@@ -8,9 +8,43 @@
 | `monogram-ripples.webp` | EF with echo ripples, on Deep Space Blue | **App icon** |
 | `monogram-parens.webp` | EF in parentheses, on Deep Space Blue | Alternate icon |
 
-Source files are AI-generated raster. **Before launch these need redrawing as vectors** —
-an app icon is rendered at a dozen sizes and a raster original will look soft at every one
-of them.
+All five are raster — `.webp` has no vector mode — and were AI-generated. What that costs
+is narrower than it first sounds, and worth writing down accurately, because "redraw
+everything as vectors" is expensive advice to follow for no reason.
+
+**The app icon does not need to be vector.** iOS takes a single 1024×1024 PNG, opaque, no
+alpha, and generates every other size itself. `monogram-ripples.webp` is 1254×1254 with no
+alpha, which is already the right shape — it needs converting and downscaling, not
+redrawing.
+
+| | Alpha | Size | Fine as raster? |
+|---|---|---|---|
+| `monogram-ripples` | no | 1254² | **Yes** — this is what an app icon wants |
+| `monogram-parens` | no | 1254² | Yes, same |
+| `mark` | yes | 1254² | Yes on screen |
+| `mark-with-wordmark` | yes | 1536×1024 | Yes on screen |
+| `lockup-horizontal` | yes | 2000×667 | Screen yes; print or large format, no |
+
+**Where vector actually earns its cost:**
+
+- **Small sizes.** A favicon or a 24px nav mark is not a scaling problem, it is a *design*
+  problem: five contour lines, a doorway, a figure and a radial glow cannot survive 24px
+  however they are stored. That needs the simplified three-rings-and-a-point version drawn,
+  and once someone is drawing it, drawing it as SVG is free.
+- **Recolouring.** Single-colour, light-background and monochrome versions are routine asks
+  — a partner's deck, an embroidered cap, a fax-quality PDF — and you cannot recolour a
+  baked-in glow.
+- **Print and large format.** 2000px wide is a comfortable screen asset and a thin banner.
+
+**Auto-tracing will not work**, so nobody should waste an afternoon on it. The mark is built
+from soft glows, radial gradients and blur, which are raster-native; a trace produces
+thousands of nested paths and still loses the glow. A real vector version means redrawing,
+with the glow rebuilt as SVG gradients and filters.
+
+Worth noting what is *already* vector: the part of the brand that appears inside the product
+— the contour rings on every pin, the ripples as an echo opens, the route gradient — is
+hand-written SVG and scales perfectly. The raster files are used for splash and marketing
+only, which is exactly where raster costs least.
 
 ## What the mark is saying
 
