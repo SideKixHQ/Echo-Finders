@@ -1,0 +1,55 @@
+# Payoff of the Central Park West pair. Short on purpose: the listener has just walked here,
+# they are looking at the thing, and the echo's job is to let the walk mean something rather
+# than to explain what it meant.
+id: strawberry-fields-one-word
+title: One word on the ground
+summary: The memorial Yoko Ono chose instead of a statue, three minutes from where he died.
+place: Imagine mosaic, Strawberry Fields, Central Park
+at: { lat: 40.77541, lng: -73.97461 }
+triggerRadiusKm: 0.04
+voice: hP72SDESIJq2YuAblBqz
+category: true-crime
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.9
+tags: [new-york, central-park, lennon, memorial]
+teaser: Stop at the mosaic and look down.
+script: |
+  Stop at the mosaic and look down.
+
+  One word. The mosaic was a gift from the city of Naples.
+
+  Turn around. Through the trees, you can still see the Dakota. You walked it in three
+  minutes.
+
+  The city named this part of the park after a song rather than after a man. Yoko Ono wanted
+  a landscape instead of a statue, and she wanted it dedicated to peace rather than to what
+  happened across the road.
+
+  So there are two places, three minutes apart.
+
+  One is where he died. It is unmarked, and people live there.
+
+  The other is a word on the ground, and strangers sit around it all day.
+
+  She chose which one to build.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: true
+  convictionStatus: convicted
+  reviewedBy: "TODO — a named human, before this can leave draft. See the note below."
+  reviewedAt: "2026-09-22"
+  contentWarning: This echo describes a murder. No violence is described in detail.
+sources:
+  - title: People v. Chapman — conviction and sentence, New York Supreme Court, 1981
+    publisher: New York State Unified Court System
+    retrievedAt: "2026-09-22"
+    rights: public-domain
+  - title: Strawberry Fields — landscape and memorial record
+    publisher: NYC Parks
+    retrievedAt: "2026-09-22"
+    rights: public-domain

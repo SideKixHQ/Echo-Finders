@@ -1,0 +1,67 @@
+# First of a two-echo pair. This one is deliberately not about the murder: it is about the
+# walk, and it withholds. The payoff is four blocks north.
+#
+# Note the pair is NOT joined by relatedIds. relatedIds means "do not play both" — the
+# scheduler treats a related echo as a subject already covered — so using it here would
+# silently suppress half the story. Sequence comes from geography, not from a field.
+id: news-cafe-last-ordinary-morning
+title: The last ordinary hour
+summary: He came here most mornings that summer, bought magazines, and walked home.
+place: News Café, 800 Ocean Drive, Miami Beach
+at: { lat: 25.78013, lng: -80.13003 }
+triggerRadiusKm: 0.03
+voice: plP9aw1rizYgjFfuvLQ7
+category: true-crime
+format: short
+durationS: 65
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.85
+tags: [miami-beach, ocean-drive, 1997, versace]
+teaser: A café, a stack of magazines, and a four-block walk north.
+script: |
+  You are outside a café that has been on this corner since the middle of the eighties.
+
+  In the summer of nineteen ninety-seven a man came down here most mornings from a house
+  three blocks north. He sat outside. He bought a stack of magazines. The staff knew him by
+  sight, the way staff know a regular.
+
+  On the fifteenth of July he did exactly that, and then he walked home.
+
+  His name was Gianni Versace, and this was the last ordinary hour of his life.
+
+  It is four blocks north along the beach side. About six minutes.
+
+  Take it slowly. He did.
+pronunciations:
+  - written: Versace
+    say: ver-SAH-chay
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: true
+  convictionStatus: alleged
+  # Deliberately "alleged", not "convicted". Cunanan died before he could be tried, so
+  # there is no conviction to point at, and writing one down would be the exact defamation
+  # this field exists to prevent. What protects the account is not a verdict — it is that
+  # the dead cannot be defamed, and that fair report privilege covers an accurate summary
+  # of an official record. That is why the FBI source is load-bearing rather than decorative.
+  reviewedBy: "TODO — a named human, before this can leave draft. See the note below."
+  reviewedAt: "2026-09-22"
+  contentWarning: This echo describes a murder. No violence is described in detail.
+sources:
+  # No URLs yet: these are sources *identified*, not sources retrieved. Fact-check has to
+  # pull each one and replace retrievedAt with the day it was actually read.
+  - title: Andrew Phillip Cunanan — Ten Most Wanted Fugitives case record
+    publisher: Federal Bureau of Investigation
+    retrievedAt: "2026-09-22"
+    rights: public-domain
+  - title: Incident and investigative record, 1116 Ocean Drive, 15 July 1997
+    publisher: Miami Beach Police Department
+    retrievedAt: "2026-09-22"
+    rights: public-domain
+  - title: Medical examiner's report, Gianni Versace
+    publisher: Miami-Dade County Medical Examiner
+    retrievedAt: "2026-09-22"
+    rights: public-domain

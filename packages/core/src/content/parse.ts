@@ -17,6 +17,7 @@ import type {
   EchoFormat,
   Pronunciation,
   Source,
+  TrueCrimeReview,
 } from "../types.js";
 import { ECHO_CATEGORIES, NOMINAL_DURATION_S } from "../types.js";
 import type { ValidationIssue } from "./validate.js";
@@ -125,6 +126,8 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
     });
   }
 
+  const review = parseTrueCrimeReview(input["trueCrimeReview"], fail);
+
   const durationS = num("durationS", false) ?? NOMINAL_DURATION_S[format] ?? 90;
   const triggerRadiusKm = num("triggerRadiusKm");
   const title = str("title");
@@ -163,9 +166,71 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
     ...optional("tags", stringList(input["tags"])),
     ...optional("relatedIds", stringList(input["relatedIds"])),
     ...optional("perspectiveIds", stringList(input["perspectiveIds"])),
+    ...optional("trueCrimeReview", review),
   };
 
   return { echo, issues };
+}
+
+/**
+ * The editorial sign-off on a true-crime echo.
+ *
+ * Unlike every other optional field here, a malformed one is an **error** rather than a
+ * silent skip. Dropping it quietly is how this field spent its whole life unparsed: the
+ * validator would report `trueCrimeReview is mandatory for true crime` about a file that
+ * plainly contained one, and the only way to find out why was to read the parser. A field
+ * whose entire job is to prove a human looked at something must never go missing without
+ * saying so.
+ *
+ * The values are not interpreted, only shaped. Whether `convictionStatus` is *correct* is
+ * exactly the judgement a named human is signing their name against, and no parser can
+ * check it.
+ */
+function parseTrueCrimeReview(
+  input: unknown,
+  fail: (field: string, message: string) => void,
+): TrueCrimeReview | undefined {
+  if (input === undefined || input === null) return undefined;
+  if (!isRecord(input)) {
+    fail("trueCrimeReview", "should be a mapping of the review fields");
+    return undefined;
+  }
+
+  const statuses = ["convicted", "alleged", "unsolved", "exonerated"] as const;
+  const status = input["convictionStatus"];
+  const involves = input["involvesLivingPeople"];
+  const reviewedBy = input["reviewedBy"];
+  const reviewedAt = input["reviewedAt"];
+  const contentWarning = input["contentWarning"];
+
+  let ok = true;
+  const require = (field: string, value: unknown, expected: string) => {
+    if (typeof value !== expected) {
+      fail(`trueCrimeReview.${field}`, `is required, as ${expected}`);
+      ok = false;
+    }
+  };
+  require("involvesLivingPeople", involves, "boolean");
+  require("reviewedBy", reviewedBy, "string");
+  require("reviewedAt", reviewedAt, "string");
+  require("contentWarning", contentWarning, "string");
+
+  if (!statuses.includes(status as (typeof statuses)[number])) {
+    fail(
+      "trueCrimeReview.convictionStatus",
+      `must be one of ${statuses.join(", ")} — stating the wrong one is defamation`,
+    );
+    ok = false;
+  }
+  if (!ok) return undefined;
+
+  return {
+    involvesLivingPeople: involves as boolean,
+    convictionStatus: status as TrueCrimeReview["convictionStatus"],
+    reviewedBy: reviewedBy as string,
+    reviewedAt: reviewedAt as string,
+    contentWarning: contentWarning as string,
+  };
 }
 
 function optional<K extends string, V>(key: K, value: V | undefined): Record<K, V> | object {

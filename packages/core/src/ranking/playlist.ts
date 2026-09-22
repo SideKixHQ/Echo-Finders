@@ -199,7 +199,7 @@ export function buildPlaylist(
   const profile = RouteProfile.forRoute(plan, geometry);
   const departureMs = Date.parse(plan.departureAt);
   if (Number.isNaN(departureMs)) {
-    throw new Error(`Flight plan ${plan.id} has an unparseable departureAt`);
+    throw new Error(`Route ${plan.id} has an unparseable departureAt`);
   }
 
   const window = profile.listeningWindow();

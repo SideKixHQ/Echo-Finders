@@ -223,3 +223,56 @@ describe("what two voices cost", () => {
     expect(renderFor(undefined, "voice-a")).toBeUndefined();
   });
 });
+
+describe("the true-crime sign-off", () => {
+  const review = {
+    involvesLivingPeople: true,
+    convictionStatus: "convicted",
+    reviewedBy: "editorial-lead",
+    reviewedAt: "2026-09-22",
+    contentWarning: "This echo describes a murder.",
+  };
+
+  const crime = (overrides: Record<string, unknown> = {}) => ({
+    ...minimal(),
+    category: "true-crime",
+    minAge: 16,
+    factCheck: "corroborated",
+    editorial: "approved",
+    sources: [...minimal().sources, { ...minimal().sources[0]!, title: "Second source" }],
+    trueCrimeReview: review,
+    ...overrides,
+  });
+
+  it("survives the parse at all", () => {
+    // Regression, and a bad one: the field was never parsed. The validator would report
+    // "trueCrimeReview is mandatory for true crime" about a file that plainly contained
+    // one, so no true-crime echo could be published from YAML by any route. It went
+    // unnoticed because nothing in the library was true crime until something was.
+    const { echo } = parseEcho(crime());
+    expect(echo?.trueCrimeReview).toEqual(review);
+  });
+
+  it("gets a true-crime echo past the gate it exists to satisfy", () => {
+    const { echo } = parseEcho(crime());
+    const errors = validateEcho(echo as Echo).filter((i) => i.severity === "error");
+    expect(errors).toEqual([]);
+  });
+
+  it("refuses a malformed review instead of quietly dropping it", () => {
+    // Silently skipping is what every other optional field does, and it is precisely how
+    // this one hid for so long. A field whose job is to prove a human looked at something
+    // must never go missing without saying so.
+    expect(errorFields(crime({ trueCrimeReview: { ...review, reviewedBy: 42 } }))).toContain(
+      "trueCrimeReview.reviewedBy",
+    );
+    expect(errorFields(crime({ trueCrimeReview: "yes, reviewed" }))).toContain("trueCrimeReview");
+  });
+
+  it("rejects a conviction status that is not one of the four", () => {
+    // "probably" is the shape of a defamation claim.
+    expect(
+      errorFields(crime({ trueCrimeReview: { ...review, convictionStatus: "probably" } })),
+    ).toContain("trueCrimeReview.convictionStatus");
+  });
+});

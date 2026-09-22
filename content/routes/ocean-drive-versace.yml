@@ -1,0 +1,30 @@
+# A two-point walk, and the shortest route in the library: 430 metres, about nine minutes
+# including the time you spend standing still.
+#
+# The shape is the point. The first echo withholds and sends you north; the second one pays
+# off. That only works if both play, which on a route this short they will — but it is worth
+# saying out loud that nothing in the model *guarantees* a sequence. Order comes from
+# geography. A pair that only makes sense in order has to be a route of its own, as here.
+id: ocean-drive-versace
+mode: walking
+name: Ocean Drive — the walk home
+
+origin:
+  name: News Café, 800 Ocean Drive
+  at: { lat: 25.78013, lng: -80.13003 }
+  timeZone: America/New_York
+
+destination:
+  name: Casa Casuarina, 1116 Ocean Drive
+  at: { lat: 25.78370, lng: -80.12985 }
+  timeZone: America/New_York
+
+# 430m at walking pace is about six minutes, which is the walk the first echo asks you to
+# take slowly. The rest is standing at the café.
+durationS: 540
+
+waypoints:
+  - { name: News Café, at: { lat: 25.78013, lng: -80.13003 }, dwellS: 150 }
+  # No dwell at the end: arriving is what ends the route, and the time spent standing on the
+  # pavement looking at the steps is the walking mode's destination dwell.
+  - { name: Casa Casuarina, at: { lat: 25.78370, lng: -80.12985 } }

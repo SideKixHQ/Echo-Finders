@@ -61,7 +61,7 @@ export function buildRouteGeometry(plan: Route, segmentKm?: number): RouteGeomet
   const step = segmentKm ?? defaultSegmentKm(plan);
   const waypoints = plan.waypoints;
   if (waypoints.length < 2) {
-    throw new Error(`Flight plan ${plan.id} needs at least two waypoints`);
+    throw new Error(`Route ${plan.id} needs at least two waypoints`);
   }
 
   const points: LatLng[] = [waypoints[0]!.at];

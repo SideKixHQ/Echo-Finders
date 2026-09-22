@@ -1,0 +1,78 @@
+# The payoff of the Ocean Drive pair.
+#
+# One idea: he did not get through his own front door. The landing is the other four names,
+# which is the only reason this echo is defensible at all — an address is famous because of
+# who died at it, and saying so out loud is the difference between reporting and tourism.
+#
+# What is deliberately absent: the parking garage, the discarded clothing, the stolen truck,
+# the documents inside it. All true, all sourced, all procedural filler that serves the
+# true-crime genre rather than the place. Rule 4 in docs/writing-echoes.md — one idea.
+id: casa-casuarina-the-steps
+title: He did not get through the door
+summary: Gianni Versace was killed on these steps in 1997, coming back from breakfast.
+place: Casa Casuarina, 1116 Ocean Drive, Miami Beach
+at: { lat: 25.78370, lng: -80.12985 }
+triggerRadiusKm: 0.03
+voice: plP9aw1rizYgjFfuvLQ7
+category: true-crime
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.9
+tags: [miami-beach, ocean-drive, 1997, versace]
+teaser: Look at the steps in front of the gate. Not the house.
+script: |
+  Look at the steps in front of the gate. Not the house — the steps.
+
+  At about a quarter to nine on the morning of the fifteenth of July, nineteen ninety-seven,
+  Gianni Versace came back up Ocean Drive carrying his magazines and stopped here to open
+  his own front door.
+
+  A man walked up behind him and fired twice. Versace was fifty. He did not get through the
+  door.
+
+  Police identified the man who shot him as Andrew Cunanan, already on the FBI's Ten Most
+  Wanted list. Eight days later Cunanan was found dead on a houseboat two miles north of
+  where you are standing. He was never tried. He left nothing behind explaining any of it,
+  and no motive has ever been established.
+
+  By the time he reached Miami Beach, four other people were already dead. Jeffrey Trail.
+  David Madson. Lee Miglin. William Reese.
+
+  This address is famous because of who died at it.
+
+  Nobody stands outside the other four.
+pronunciations:
+  - written: Versace
+    say: ver-SAH-chay
+  - written: Casuarina
+    say: kazh-oo-a-REE-na
+  - written: Cunanan
+    say: koo-NAN-an
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: true
+  # True even though every person named in the script is dead. The five victims' immediate
+  # families are alive and are identifiable through their relatives' names, and the witness
+  # who chased the gunman is a private individual who is probably alive — which is why the
+  # script does not name him. He adds nothing and naming him costs him something.
+  convictionStatus: alleged
+  reviewedBy: "TODO — a named human, before this can leave draft. See the note below."
+  reviewedAt: "2026-09-22"
+  contentWarning: This echo describes a murder. No violence is described in detail.
+sources:
+  - title: Andrew Phillip Cunanan — Ten Most Wanted Fugitives case record
+    publisher: Federal Bureau of Investigation
+    retrievedAt: "2026-09-22"
+    rights: public-domain
+  - title: Incident and investigative record, 1116 Ocean Drive, 15 July 1997
+    publisher: Miami Beach Police Department
+    retrievedAt: "2026-09-22"
+    rights: public-domain
+  - title: Medical examiner's report, Gianni Versace
+    publisher: Miami-Dade County Medical Examiner
+    retrievedAt: "2026-09-22"
+    rights: public-domain

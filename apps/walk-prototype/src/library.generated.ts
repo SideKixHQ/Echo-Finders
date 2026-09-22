@@ -151,6 +151,77 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "casa-casuarina-the-steps",
+    "title": "He did not get through the door",
+    "summary": "Gianni Versace was killed on these steps in 1997, coming back from breakfast.",
+    "point": {
+      "at": {
+        "lat": 25.7837,
+        "lng": -80.12985
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Casa Casuarina, 1116 Ocean Drive, Miami Beach"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 16,
+    "quality": 0.9,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Andrew Phillip Cunanan — Ten Most Wanted Fugitives case record",
+        "publisher": "Federal Bureau of Investigation",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      },
+      {
+        "title": "Incident and investigative record, 1116 Ocean Drive, 15 July 1997",
+        "publisher": "Miami Beach Police Department",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      },
+      {
+        "title": "Medical examiner's report, Gianni Versace",
+        "publisher": "Miami-Dade County Medical Examiner",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the steps in front of the gate. Not the house — the steps.\n\nAt about a quarter to nine on the morning of the fifteenth of July, nineteen ninety-seven,\nGianni Versace came back up Ocean Drive carrying his magazines and stopped here to open\nhis own front door.\n\nA man walked up behind him and fired twice. Versace was fifty. He did not get through the\ndoor.\n\nPolice identified the man who shot him as Andrew Cunanan, already on the FBI's Ten Most\nWanted list. Eight days later Cunanan was found dead on a houseboat two miles north of\nwhere you are standing. He was never tried. He left nothing behind explaining any of it,\nand no motive has ever been established.\n\nBy the time he reached Miami Beach, four other people were already dead. Jeffrey Trail.\nDavid Madson. Lee Miglin. William Reese.\n\nThis address is famous because of who died at it.\n\nNobody stands outside the other four.\n",
+    "teaser": "Look at the steps in front of the gate. Not the house.",
+    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "pronunciations": [
+      {
+        "written": "Versace",
+        "say": "ver-SAH-chay"
+      },
+      {
+        "written": "Casuarina",
+        "say": "kazh-oo-a-REE-na"
+      },
+      {
+        "written": "Cunanan",
+        "say": "koo-NAN-an"
+      }
+    ],
+    "tags": [
+      "miami-beach",
+      "ocean-drive",
+      "versace"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": true,
+      "convictionStatus": "alleged",
+      "reviewedBy": "TODO — a named human, before this can leave draft. See the note below.",
+      "reviewedAt": "2026-09-22",
+      "contentWarning": "This echo describes a murder. No violence is described in detail."
+    }
+  },
+  {
     "id": "castle-clinton-eight-million",
     "title": "Eight million people walked through this fort",
     "summary": "A harbour fort that became America's first immigration station, decades before Ellis Island.",
@@ -293,6 +364,64 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "dakota-three-minutes",
+    "title": "Three minutes from here",
+    "summary": "John Lennon was killed in this archway in 1980. His memorial is across the street.",
+    "point": {
+      "at": {
+        "lat": 40.77625,
+        "lng": -73.97596
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Dakota, 1 West 72nd Street, Manhattan"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 110,
+    "minAge": 16,
+    "quality": 0.92,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "People v. Chapman — conviction and sentence, New York Supreme Court, 1981",
+        "publisher": "New York State Unified Court System",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      },
+      {
+        "title": "Parole Board hearing transcripts, Mark David Chapman",
+        "publisher": "New York State Board of Parole",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across the street, into the park. Those trees are Strawberry Fields. It is about a\nthree-minute walk, and you are going to make it in a moment.\n\nBehind you is the Dakota. John Lennon lived here with Yoko Ono and their son. Yoko Ono\nlives here still — this is not a monument, it is a building full of people's homes, so\nstay on the pavement and keep out of the archway.\n\nOn the eighth of December nineteen eighty, at around ten to eleven at night, Lennon came\nback from a recording session. He walked from the car towards that arch. A man who had\nbeen waiting near the entrance since the afternoon fired five shots, and four of them hit\nhim. Earlier the same day, Lennon had signed a record for him.\n\nThe police did not wait for an ambulance. They put him in the back of a patrol car and\ndrove him to Roosevelt Hospital, where he was pronounced dead. He was forty.\n\nThere is no marker here. There was never going to be one.\n\nCross at the lights and walk into the park.\n",
+    "teaser": "Look across the street, into the park.",
+    "voice": "hP72SDESIJq2YuAblBqz",
+    "pronunciations": [
+      {
+        "written": "Dakota",
+        "say": "duh-KOH-ta"
+      }
+    ],
+    "tags": [
+      "new-york",
+      "upper-west-side",
+      "lennon",
+      "memorial"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": true,
+      "convictionStatus": "convicted",
+      "reviewedBy": "TODO — a named human, before this can leave draft. See the note below.",
+      "reviewedAt": "2026-09-22",
+      "contentWarning": "This echo describes a murder. No violence is described in detail."
+    }
+  },
+  {
     "id": "federal-hall-two-firsts",
     "title": "Two American firsts happened on this corner",
     "summary": "A free press was won here in 1735, and the first president sworn in on the balcony in 1789.",
@@ -390,6 +519,69 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "news-cafe-last-ordinary-morning",
+    "title": "The last ordinary hour",
+    "summary": "He came here most mornings that summer, bought magazines, and walked home.",
+    "point": {
+      "at": {
+        "lat": 25.78013,
+        "lng": -80.13003
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "News Café, 800 Ocean Drive, Miami Beach"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 65,
+    "minAge": 16,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Andrew Phillip Cunanan — Ten Most Wanted Fugitives case record",
+        "publisher": "Federal Bureau of Investigation",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      },
+      {
+        "title": "Incident and investigative record, 1116 Ocean Drive, 15 July 1997",
+        "publisher": "Miami Beach Police Department",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      },
+      {
+        "title": "Medical examiner's report, Gianni Versace",
+        "publisher": "Miami-Dade County Medical Examiner",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are outside a café that has been on this corner since the middle of the eighties.\n\nIn the summer of nineteen ninety-seven a man came down here most mornings from a house\nthree blocks north. He sat outside. He bought a stack of magazines. The staff knew him by\nsight, the way staff know a regular.\n\nOn the fifteenth of July he did exactly that, and then he walked home.\n\nHis name was Gianni Versace, and this was the last ordinary hour of his life.\n\nIt is four blocks north along the beach side. About six minutes.\n\nTake it slowly. He did.\n",
+    "teaser": "A café, a stack of magazines, and a four-block walk north.",
+    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "pronunciations": [
+      {
+        "written": "Versace",
+        "say": "ver-SAH-chay"
+      }
+    ],
+    "tags": [
+      "miami-beach",
+      "ocean-drive",
+      "versace"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": true,
+      "convictionStatus": "alleged",
+      "reviewedBy": "TODO — a named human, before this can leave draft. See the note below.",
+      "reviewedAt": "2026-09-22",
+      "contentWarning": "This echo describes a murder. No violence is described in detail."
+    }
+  },
+  {
     "id": "pearl-street-oysters",
     "title": "A street paved with rubbish",
     "summary": "Pearl Street is white underneath because people threw their lunch on the ground.",
@@ -474,6 +666,58 @@ export const LIBRARY: readonly Echo[] = [
       "washington",
       "september-11"
     ]
+  },
+  {
+    "id": "strawberry-fields-one-word",
+    "title": "One word on the ground",
+    "summary": "The memorial Yoko Ono chose instead of a statue, three minutes from where he died.",
+    "point": {
+      "at": {
+        "lat": 40.77541,
+        "lng": -73.97461
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Imagine mosaic, Strawberry Fields, Central Park"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 16,
+    "quality": 0.9,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "People v. Chapman — conviction and sentence, New York Supreme Court, 1981",
+        "publisher": "New York State Unified Court System",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      },
+      {
+        "title": "Strawberry Fields — landscape and memorial record",
+        "publisher": "NYC Parks",
+        "retrievedAt": "2026-09-22",
+        "rights": "public-domain"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stop at the mosaic and look down.\n\nOne word. The mosaic was a gift from the city of Naples.\n\nTurn around. Through the trees, you can still see the Dakota. You walked it in three\nminutes.\n\nThe city named this part of the park after a song rather than after a man. Yoko Ono wanted\na landscape instead of a statue, and she wanted it dedicated to peace rather than to what\nhappened across the road.\n\nSo there are two places, three minutes apart.\n\nOne is where he died. It is unmarked, and people live there.\n\nThe other is a word on the ground, and strangers sit around it all day.\n\nShe chose which one to build.\n",
+    "teaser": "Stop at the mosaic and look down.",
+    "voice": "hP72SDESIJq2YuAblBqz",
+    "tags": [
+      "new-york",
+      "central-park",
+      "lennon",
+      "memorial"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": true,
+      "convictionStatus": "convicted",
+      "reviewedBy": "TODO — a named human, before this can leave draft. See the note below.",
+      "reviewedAt": "2026-09-22",
+      "contentWarning": "This echo describes a murder. No violence is described in detail."
+    }
   },
   {
     "id": "trinity-tallest-thing",
