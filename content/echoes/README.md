@@ -14,6 +14,10 @@ accident.
 
 ## Writing one
 
+**Read `docs/writing-echoes.md` first.** The schema below says what a file needs;
+that says what makes one worth hearing, which is the harder half.
+
+
 ```yaml
 id: kebab-case-and-stable          # becomes the filename and the URL
 title: A sentence, not a label
