@@ -13,6 +13,7 @@
 
 import type { Echo } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
+import { PlateStrip } from "./PlateStrip";
 
 export interface EchoCardProps {
   readonly echo: Echo;
@@ -26,6 +27,8 @@ export interface EchoCardProps {
   readonly onPlay: (echo: Echo) => void;
   readonly onSave: (echo: Echo) => void;
   readonly onSelect: (echoId: string) => void;
+  /** Open the camera on this echo. Absent where there is no camera to open. */
+  readonly onCamera?: (echo: Echo) => void;
 }
 
 export function EchoCard({
@@ -38,6 +41,7 @@ export function EchoCard({
   onPlay,
   onSave,
   onSelect,
+  onCamera,
 }: EchoCardProps) {
   return (
     <article
@@ -67,6 +71,8 @@ export function EchoCard({
         {echo.point.place}
         {distanceM !== null && <> · {distance(distanceM)}</>}
       </div>
+
+      {!sealed && onCamera && <PlateStrip echo={echo} onOpen={onCamera} />}
 
       <div className="ecard-acts">
         <button

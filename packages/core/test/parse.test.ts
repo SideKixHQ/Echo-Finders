@@ -276,3 +276,102 @@ describe("the true-crime sign-off", () => {
     ).toContain("trueCrimeReview.convictionStatus");
   });
 });
+
+/**
+ * Archive photographs and attractions.
+ *
+ * These exist because the same bug shipped three times: a field declared on `Echo` that the
+ * parser never reads. `trueCrimeReview` spent its whole life dropped, so no true-crime echo
+ * could validate; `simple` followed; `archive` and `attraction` were both still unread when
+ * the camera was built on top of one of them. The failure mode is the worst kind — the
+ * content file plainly contains the field, every test is green, and the only way to find out
+ * is to read the parser — so each one now has a test that would have caught it on day one.
+ */
+describe("archive photographs", () => {
+  const photo = {
+    imageKey: "archive/trinity-1870",
+    at: { lat: 40.7081, lng: -74.0123 },
+    bearingDeg: 92,
+    year: 1870,
+    caption: "The spire above the rooftops",
+    credit: "Library of Congress",
+    rights: "public-domain",
+  };
+
+  it("is read at all", () => {
+    const { echo, issues } = parseEcho({ ...minimal(), archive: [photo] });
+    expect(issues).toEqual([]);
+    expect(echo?.archive).toHaveLength(1);
+    expect(echo?.archive?.[0]?.imageKey).toBe("archive/trinity-1870");
+    expect(echo?.archive?.[0]?.at).toEqual({ lat: 40.7081, lng: -74.0123 });
+    expect(echo?.archive?.[0]?.bearingDeg).toBe(92);
+  });
+
+  it("keeps the vantage and bearing optional", () => {
+    const { echo, issues } = parseEcho({
+      ...minimal(),
+      archive: [{ imageKey: "a", credit: "c", rights: "public-domain" }],
+    });
+    expect(issues).toEqual([]);
+    expect(echo?.archive?.[0]?.at).toBeUndefined();
+    expect(echo?.archive?.[0]?.bearingDeg).toBeUndefined();
+  });
+
+  it("refuses a photograph with no credit", () => {
+    // Not a silent skip: showing an archive plate without its credit is the one thing the
+    // holding institution asked us not to do, and dropping it quietly turns a licensing
+    // obligation into a missing feature nobody notices.
+    const { echo, issues } = parseEcho({
+      ...minimal(),
+      archive: [{ imageKey: "a", credit: "   ", rights: "public-domain" }],
+    });
+    expect(echo).toBeNull();
+    expect(issues.some((i) => i.field === "archive[0].credit")).toBe(true);
+  });
+
+  it("refuses a bearing outside the compass", () => {
+    // 450 is a typo, not an intention, and an out-of-range bearing sends somebody
+    // confidently the wrong way rather than failing where anybody can see it.
+    const { echo, issues } = parseEcho({
+      ...minimal(),
+      archive: [{ imageKey: "a", credit: "c", rights: "public-domain", bearingDeg: 450 }],
+    });
+    expect(echo).toBeNull();
+    expect(issues.some((i) => i.field === "archive[0].bearingDeg")).toBe(true);
+  });
+
+  it("refuses a half-written vantage", () => {
+    const { echo, issues } = parseEcho({
+      ...minimal(),
+      archive: [{ imageKey: "a", credit: "c", rights: "public-domain", at: { lat: 40.7 } }],
+    });
+    expect(echo).toBeNull();
+    expect(issues.some((i) => i.field === "archive[0].at")).toBe(true);
+  });
+
+  it("leaves the field off entirely when there is no archive", () => {
+    const { echo } = parseEcho(minimal());
+    expect(echo).not.toBeNull();
+    expect("archive" in echo!).toBe(false);
+  });
+});
+
+describe("attractions", () => {
+  it("is read at all", () => {
+    const { echo, issues } = parseEcho({
+      ...minimal(),
+      attraction: { name: "Federal Hall", at: { lat: 40.7073, lng: -74.01 }, rating: 4.6 },
+    });
+    expect(issues).toEqual([]);
+    expect(echo?.attraction?.name).toBe("Federal Hall");
+    expect(echo?.attraction?.rating).toBe(4.6);
+  });
+
+  it("refuses one with no position", () => {
+    // Save-for-later is a promise made on the strength of this field; an echo that lost it
+    // silently offers a button that goes nowhere.
+    const { echo, issues } = parseEcho({ ...minimal(), attraction: { name: "Federal Hall" } });
+    expect(echo).toBeNull();
+    expect(issues.some((i) => i.field === "attraction.at")).toBe(true);
+  });
+});

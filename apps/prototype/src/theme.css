@@ -803,8 +803,12 @@ body {
      route ahead, the other is what is within reach — and squeezing them into 296px
      collapsed the second to a single clipped row. */
   /* Tall enough for one whole echo card including its actions. A card clipped above its
-     Listen button is worse than a list, because it promises something it then hides. */
-  height: 432px;
+     Listen button is worse than a list, because it promises something it then hides.
+     Re-measured when the then-and-now strip landed: a card with a plate on it is 48px
+     taller, and a sheet sized against the old card put the Listen button back under the
+     nav bar. This number is a measurement, not a preference — re-measure it whenever the
+     card grows. */
+  height: 466px;
   transition: height 0.24s var(--ease); background: var(--slate);
   border-radius: 24px 24px 0 0; border-top: 1px solid var(--line-2);
   box-shadow: 0 -14px 40px rgba(0, 0, 0, 0.55);
@@ -940,11 +944,11 @@ body {
 /* The guidance bar has nowhere to be once the sheet fills the screen, and drawing it over
    the player is how it ended up on top of the plain-language switch. */
 .screen:has(.sheet-tall) .proximity { display: none; }
-.proximity { bottom: 514px; }
+.proximity { bottom: 548px; }
 /* Above the guidance bar when there is one; the guidance bar's own slot when there is not,
    which is every carried mode. */
-.playing { bottom: 568px; }
-.stack-noguide .playing { bottom: 514px; }
+.playing { bottom: 602px; }
+.stack-noguide .playing { bottom: 548px; }
 
 /* ── full-screen panels ──────────────────────────────────── */
 .screen-body {
@@ -1049,3 +1053,211 @@ body {
 .danger-row:last-child { border-bottom: 0; }
 .danger-row span { font-size: 13px; color: var(--magenta); }
 .danger-row small { font-size: 11px; color: var(--muted); line-height: 1.5; }
+
+/* ── The camera: then and now ─────────────────────────────────────────────────
+   A full takeover, above the nav. Somebody holding a phone up in the street is
+   not browsing tabs, and the frame wants every pixel — the whole judgement being
+   made here is whether two pictures line up, and a chrome-bordered window makes
+   that harder for no gain.
+   Everything floats *over* the frame rather than boxing it in, and everything
+   floating carries its own scrim, because the background is a live street: it can
+   be a white sky or a black doorway from one second to the next, and text that
+   only works on one of those is text that vanishes.                            */
+.vf {
+  position: absolute; inset: 0; z-index: 70;
+  display: flex; flex-direction: column; background: #05060a;
+}
+.vf-frame {
+  position: relative; flex: 1; min-height: 0; overflow: hidden;
+  touch-action: none; cursor: grab; user-select: none;
+}
+.vf-frame:active { cursor: grabbing; }
+.vf-video, .vf-then {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; display: block;
+}
+/* No transition on the blend: the slider *is* the animation, and easing it puts a
+   lag between the thumb and the century, which is the one thing that would make
+   the gesture feel broken. The hold gets a short one, because that is a flick. */
+.vf-then { will-change: opacity; transition: opacity 0.12s linear; }
+
+.vf-top {
+  position: absolute; top: 0; left: 0; right: 0; z-index: 4;
+  display: flex; align-items: center; gap: 8px; padding: 14px 14px 26px;
+  background: linear-gradient(180deg, rgba(5, 6, 10, 0.72), transparent);
+}
+.vf-x {
+  width: 32px; height: 32px; border-radius: 50%; flex: none;
+  display: grid; place-items: center; cursor: pointer;
+  background: rgba(5, 6, 10, 0.5); border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(6px);
+}
+.vf-x svg { width: 15px; height: 15px; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; }
+.vf-tag {
+  display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px;
+  border-radius: 99px; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+  background: rgba(5, 6, 10, 0.5); border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+}
+.vf-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.vf-year {
+  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: 12px;
+  letter-spacing: 0.1em; color: #fff; padding: 4px 9px; border-radius: 99px;
+  background: rgba(5, 6, 10, 0.5); border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+/* Guidance sits high, clear of the thumb that is working the slider and clear of
+   the middle of the frame, which is the part being compared. */
+.vf-guide {
+  position: absolute; top: 62px; left: 50%; transform: translateX(-50%); z-index: 4;
+  min-width: 158px; max-width: 76%; padding: 9px 14px 8px; border-radius: 14px;
+  text-align: center; color: #fff; backdrop-filter: blur(10px);
+  background: rgba(5, 6, 10, 0.58); border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.vf-guide strong { display: block; font-size: 14px; font-weight: 600; letter-spacing: -0.01em; }
+.vf-meter {
+  display: block; height: 3px; margin-top: 7px; border-radius: 99px;
+  background: rgba(255, 255, 255, 0.2); overflow: hidden;
+}
+.vf-meter span {
+  display: block; height: 100%; border-radius: 99px; background: var(--ember);
+  transition: width 0.25s var(--ease);
+}
+/* Arriving on the spot is the payoff, so it is the one state that changes colour. */
+.vf-guide-hold-up { border-color: rgba(255, 158, 18, 0.62); box-shadow: 0 0 22px rgba(255, 158, 18, 0.28); }
+.vf-guide-hold-up .vf-meter span { background: var(--ember-core); }
+.vf-guide-no-compass strong, .vf-guide-no-bearing strong { font-weight: 500; font-size: 13px; }
+
+.vf-note {
+  position: absolute; left: 14px; right: 14px; bottom: 12px; z-index: 4;
+  font-size: 10.5px; line-height: 1.5; text-align: center; color: rgba(255, 255, 255, 0.78);
+  background: rgba(5, 6, 10, 0.52); border-radius: 10px; padding: 6px 10px;
+  backdrop-filter: blur(6px);
+}
+
+/* Arcs, not pins. The band is as wide as the compass is unsure, which is the whole
+   honesty of the thing — see `viewfinderMarkers`. */
+.vf-arcs { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
+/* The button spans the frame and is transparent to the pointer; only its band and its
+   label take clicks. That is what lets the two be placed independently — the band where
+   the bearing says, the label where it can still be read. */
+.vf-arc {
+  position: absolute; inset: 0; background: none; border: 0; padding: 0;
+  cursor: pointer; pointer-events: none;
+}
+.vf-arc-band {
+  position: absolute; top: 20%; height: 58%; transform: translateX(-50%);
+  pointer-events: auto; border-radius: 18px;
+  border: 1px solid currentColor; opacity: 0.62;
+  /* A pastel hairline over a bright sky is a hairline nobody can see. The dark shadow
+     gives every category colour an edge to sit against, whatever the camera is pointed at. */
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.75));
+  /* Weighted to the base: the useful end of a bearing is the ground you walk on, and a
+     band that is brightest at eye level reads as a pane of glass across the picture. */
+  background: linear-gradient(180deg, transparent 30%, rgba(255, 255, 255, 0.05) 78%, rgba(255, 255, 255, 0.12));
+}
+.vf-arc-on .vf-arc-band {
+  opacity: 1; border-width: 1.5px;
+  box-shadow: inset 0 -30px 40px -20px rgba(255, 158, 18, 0.5), 0 0 16px rgba(255, 158, 18, 0.2);
+}
+.vf-arc-label {
+  position: absolute; transform: translateX(-50%); pointer-events: auto;
+  width: max-content; max-width: 150px; padding: 5px 9px;
+  border-radius: 10px; font-size: 10.5px; line-height: 1.3; color: #fff; text-align: center;
+  background: rgba(5, 6, 10, 0.68); border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(6px);
+}
+.vf-arc-on .vf-arc-label { border-color: rgba(255, 158, 18, 0.6); }
+.vf-arc-label em { display: block; font-style: normal; font-size: 9.5px; color: var(--muted); margin-top: 1px; }
+
+/* Behind you is the common case on a street, and the most useful thing this screen
+   can say. Dropping the marker would be the easy answer and the wrong one. */
+.vf-edge {
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 4;
+  pointer-events: auto; cursor: pointer; max-width: 40%;
+  display: flex; align-items: center; gap: 5px; padding: 7px 9px;
+  font-size: 10.5px; line-height: 1.3; color: #fff; text-align: left;
+  background: rgba(5, 6, 10, 0.62); border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px);
+}
+.vf-edge svg { width: 13px; height: 13px; flex: none; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.vf-edge em { display: block; font-style: normal; font-size: 9.5px; color: var(--muted); margin-top: 1px; }
+.vf-edge-l { left: 0; border-left: 0; border-radius: 0 12px 12px 0; }
+.vf-edge-r { right: 0; border-right: 0; border-radius: 12px 0 0 12px; flex-direction: row-reverse; text-align: right; }
+
+.vf-bottom {
+  flex: none; padding: 12px 16px 16px; background: var(--space);
+  border-top: 1px solid var(--line);
+}
+.vf-cap p { font-size: 12.5px; line-height: 1.4; color: var(--white); }
+.vf-cap small { display: block; margin-top: 3px; font-size: 10px; color: var(--muted); }
+
+.vf-blend { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
+.vf-end {
+  font-family: "Space Grotesk", monospace; font-size: 10px; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--muted); flex: none; min-width: 34px;
+}
+.vf-end:last-child { text-align: right; }
+.vf-blend input {
+  flex: 1; -webkit-appearance: none; appearance: none; height: 4px; border-radius: 99px;
+  background: linear-gradient(90deg, var(--cool), var(--ember)); cursor: pointer;
+}
+.vf-blend input::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none; width: 22px; height: 22px; border-radius: 50%;
+  background: var(--ember); border: 2px solid var(--space);
+  box-shadow: 0 0 0 1px var(--ember-deep), 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+.vf-blend input::-moz-range-thumb {
+  width: 20px; height: 20px; border-radius: 50%; background: var(--ember);
+  border: 2px solid var(--space); box-shadow: 0 0 0 1px var(--ember-deep);
+}
+.vf-hint { margin-top: 7px; text-align: center; font-size: 10px; color: var(--muted); }
+
+.vf-plates { display: flex; gap: 8px; margin-top: 11px; overflow-x: auto; }
+.vf-plate {
+  flex: none; width: 46px; cursor: pointer; background: none; border: 0; padding: 0;
+  display: flex; flex-direction: column; gap: 3px; align-items: center;
+}
+.vf-plate img {
+  width: 46px; height: 34px; object-fit: cover; border-radius: 7px;
+  border: 1px solid var(--line); opacity: 0.6;
+}
+.vf-plate span { font-size: 9.5px; color: var(--muted); font-family: "Space Grotesk", monospace; }
+.vf-plate-on img { opacity: 1; border-color: var(--ember); }
+.vf-plate-on span { color: var(--ember); }
+
+/* ── The invitation, on a card ───────────────────────────────────────────────
+   A sepia plate with a year on it, not a button reading "Then & now". The first
+   says somebody stood here in 1905; the second says a feature exists.          */
+.plate-strip {
+  display: flex; align-items: center; gap: 9px; width: 100%; margin-top: 9px;
+  padding: 5px 9px 5px 5px; cursor: pointer; text-align: left;
+  border-radius: 11px; border: 1px solid var(--line);
+  background: linear-gradient(90deg, rgba(255, 158, 18, 0.1), rgba(var(--rgb-panel), 0.4));
+  transition: border-color 0.2s var(--ease);
+}
+.plate-strip:hover { border-color: rgba(255, 158, 18, 0.55); }
+.plate-thumb { position: relative; flex: none; width: 36px; height: 36px; }
+.plate-thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
+.plate-thumb em {
+  position: absolute; right: -3px; bottom: -3px; font-style: normal; font-size: 9px;
+  padding: 1px 4px; border-radius: 99px; background: var(--ember); color: #1a1000;
+  font-family: "Space Grotesk", monospace;
+}
+.plate-text { min-width: 0; flex: 1; }
+.plate-text strong { display: block; font-size: 12px; color: var(--ember); }
+.plate-text small {
+  display: block; font-size: 10.5px; color: var(--muted); margin-top: 1px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.plate-cam { flex: none; }
+.plate-cam svg {
+  width: 17px; height: 17px; fill: none; stroke: var(--ember);
+  stroke-width: 1.6; stroke-linejoin: round;
+}
+
+/* Light mode: the frame stays dark whatever the theme. A viewfinder is a window,
+   and a white one is a glare in the hand at the exact moment somebody is trying
+   to compare two photographs. */
+:root[data-theme="light"] .vf-bottom { background: var(--slate); }

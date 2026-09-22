@@ -15,7 +15,8 @@ import { RouteRibbon } from "./RouteRibbon";
 import { CategoryChips } from "./CategoryChips";
 import { Arrival } from "./Arrival";
 import { Preflight } from "./Preflight";
-import type { EchoCategory } from "@echofinders/core";
+import { Viewfinder } from "./Viewfinder";
+import type { Echo, EchoCategory } from "@echofinders/core";
 import { findEchoesAlongRoute, presetFor, upcomingOnRoute, type Route } from "@echofinders/core";
 
 /** The walk is the richest route, so it is what the prototype opens on. */
@@ -83,6 +84,14 @@ export function App() {
   const selfDirected = presetFor(route.mode).selfDirected;
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>("map");
+  /**
+   * The echo the camera is pointed at, or null for closed.
+   *
+   * Held here rather than inside the sheet because the viewfinder covers the whole screen
+   * and outlives whatever opened it — an arc tapped inside it can move it to another echo
+   * without going back out to the map.
+   */
+  const [camera, setCamera] = useState<Echo | null>(null);
   const [deleted, setDeleted] = useState<Set<string>>(new Set());
 
   // What the collection would actually hold, given the privacy settings and any deletion.
@@ -127,6 +136,7 @@ export function App() {
     if (next.id === route.id) return;
     setRoute(next);
     setSelectedId(null);
+    setCamera(null);
     setDeleted(new Set());
     setPaused(false);
     // A choice belongs to the journey it was made for.
@@ -302,6 +312,7 @@ export function App() {
                   setProgress(Math.max(0, Math.min(1, f)));
                 }}
                 onNext={() => session.skip()}
+                {...(selfDirected ? { onCamera: setCamera } : {})}
                 onSave={(echo) => {
                   const next = new Set(chosen);
                   if (next.has(echo.id)) next.delete(echo.id);
@@ -368,6 +379,19 @@ export function App() {
                 walk.seekTo(0);
               }}
               onAgain={() => walk.seekTo(0)}
+            />
+          )}
+
+          {/* No fix, no viewfinder. Every line on that screen is about where you are
+              standing relative to where a photographer stood, and with no position it
+              would have nothing to say but say it confidently. */}
+          {camera && state.position && (
+            <Viewfinder
+              echo={camera}
+              at={state.position.at}
+              nearby={onRoute.filter((e) => activeCats.has(e.category))}
+              onClose={() => setCamera(null)}
+              onSelect={setCamera}
             />
           )}
 

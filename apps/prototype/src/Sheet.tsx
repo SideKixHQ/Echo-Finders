@@ -11,6 +11,7 @@ import { rarityOf, rarityReasons } from "@echofinders/core";
 import type { PinState } from "./RouteMap";
 import { UpNext } from "./UpNext";
 import { EchoCard } from "./EchoCard";
+import { PlateStrip } from "./PlateStrip";
 import { Player } from "./Player";
 import { Transcript } from "./Transcript";
 import { useState } from "react";
@@ -46,6 +47,8 @@ interface Props {
   readonly onRate: (rate: number) => void;
   readonly onSeek: (fraction: number) => void;
   readonly onNext: () => void;
+  /** Open the camera on an echo. Only where there is one — a flight has no then-and-now. */
+  readonly onCamera?: (echo: Echo) => void;
 }
 
 export function Sheet({
@@ -74,6 +77,7 @@ export function Sheet({
   onRate,
   onSeek,
   onNext,
+  onCamera,
 }: Props) {
   const [tab, setTab] = useState<"near" | "script" | "saved">("near");
   // The transcript is only meaningful for something actually playing, so the tab falls back
@@ -92,6 +96,7 @@ export function Sheet({
           onPlay={onPlay}
           onPause={onPause}
           onResume={onResume}
+          {...(onCamera ? { onCamera } : {})}
         />
       ) : nowPlaying ? null : (
         <Idle count={captured.length} selfDirected={selfDirected} autoPlay={autoPlay} />
@@ -151,6 +156,7 @@ export function Sheet({
             onPlay={onPlay}
             onSave={onSave}
             onSelect={onSelect}
+            {...(onCamera ? { onCamera } : {})}
           />
         ))}
         {view === "near" && nearby.length === 0 && (
@@ -180,6 +186,7 @@ function Found({
   onPlay,
   onPause,
   onResume,
+  onCamera,
 }: {
   capture: CaptureEvent;
   playing: boolean;
@@ -187,6 +194,7 @@ function Found({
   onPlay: (echo: Echo) => void;
   onPause: () => void;
   onResume: () => void;
+  onCamera?: (echo: Echo) => void;
 }) {
   const rarity = rarityOf(capture.echo);
   const reasons = rarityReasons(capture.echo);
@@ -219,6 +227,7 @@ function Found({
       </div>
       {/* Rarity as a sentence, not a badge. A tier icon means nothing; this means something. */}
       {reasons.length > 0 && <p className="rarity-why">{reasons[0]}</p>}
+      {onCamera && <PlateStrip echo={capture.echo} onOpen={onCamera} />}
     </div>
   );
 }

@@ -12,7 +12,21 @@
     "skipLibCheck": true,
     "noEmit": true,
     "allowImportingTsExtensions": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+
+    // Point the typechecker at the engine's *source*, exactly as `vite.config.ts` points
+    // the bundler at it.
+    //
+    // Without this the two disagree, and the disagreement is silent: Vite compiles the
+    // source you just edited while tsc reads whatever was last emitted to `dist`. That has
+    // cost this project real time twice — a new option passed correctly, read correctly and
+    // ignored entirely, because the compiled copy had never heard of it — and a stale `dist`
+    // is exactly the kind of thing nobody suspects, because both the typecheck and the
+    // tests are green. One source of truth, or neither is.
+    "paths": {
+      "@echofinders/core": ["../../packages/core/src/index.ts"]
+    },
+    "baseUrl": "."
   },
   "include": ["src"]
 }

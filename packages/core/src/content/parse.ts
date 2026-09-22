@@ -11,6 +11,8 @@
  */
 
 import type {
+  ArchivePhoto,
+  Attraction,
   AudioRender,
   Echo,
   EchoCategory,
@@ -127,6 +129,8 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
   }
 
   const review = parseTrueCrimeReview(input["trueCrimeReview"], fail);
+  const archive = archivePhotos(input["archive"], fail);
+  const attraction = attractionOf(input["attraction"], fail);
 
   const durationS = num("durationS", false) ?? NOMINAL_DURATION_S[format] ?? 90;
   const triggerRadiusKm = num("triggerRadiusKm");
@@ -166,6 +170,8 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
     ...optional("tags", stringList(input["tags"])),
     ...optional("relatedIds", stringList(input["relatedIds"])),
     ...optional("perspectiveIds", stringList(input["perspectiveIds"])),
+    ...optional("archive", archive),
+    ...optional("attraction", attraction),
     ...optional("trueCrimeReview", review),
     ...optional("simple", simpleVariant(input["simple"], fail)),
   };
@@ -255,6 +261,141 @@ function parseTrueCrimeReview(
     reviewedBy: reviewedBy as string,
     reviewedAt: reviewedAt as string,
     contentWarning: contentWarning as string,
+  };
+}
+
+/**
+ * Archive photographs, for standing where the photographer stood.
+ *
+ * Errors rather than silent skips, for two separate reasons. The first is the one that has
+ * now bitten this parser three times: a field declared on `Echo` that nothing here reads is
+ * indistinguishable from a field an author got wrong, and the only way anybody finds out is
+ * by reading the parser. The second is specific to images — `credit` is not decoration. An
+ * archive plate belongs to an institution, showing it without the credit is the thing they
+ * asked us not to do, and a parser that quietly drops a malformed entry turns a licensing
+ * obligation into a missing feature nobody notices.
+ *
+ * `at` and `bearingDeg` stay optional because a photograph with neither is still worth
+ * showing next to the place it was taken of. Everything downstream degrades (see
+ * `alignmentTo`): no vantage falls back to the echo's own point, no bearing drops the
+ * facing advice and keeps the distance.
+ */
+function archivePhotos(
+  input: unknown,
+  fail: (field: string, message: string) => void,
+): readonly ArchivePhoto[] | undefined {
+  if (input === undefined || input === null) return undefined;
+  if (!Array.isArray(input)) {
+    fail("archive", "should be a list of photographs");
+    return undefined;
+  }
+
+  const photos: ArchivePhoto[] = [];
+  input.forEach((raw, i) => {
+    const where = `archive[${i}]`;
+    if (!isRecord(raw)) {
+      fail(where, "should be a mapping");
+      return;
+    }
+    const imageKey = raw["imageKey"];
+    const credit = raw["credit"];
+    const rights = raw["rights"];
+    if (typeof imageKey !== "string") {
+      fail(`${where}.imageKey`, "is required, as text");
+      return;
+    }
+    if (typeof credit !== "string" || credit.trim() === "") {
+      fail(`${where}.credit`, "is required — an archive image is shown with its credit or not at all");
+      return;
+    }
+    if (typeof rights !== "string") {
+      fail(`${where}.rights`, "is required — we have to know what we are allowed to show");
+      return;
+    }
+
+    const at = raw["at"];
+    let vantage: { lat: number; lng: number } | undefined;
+    if (at !== undefined && at !== null) {
+      if (!isRecord(at) || typeof at["lat"] !== "number" || typeof at["lng"] !== "number") {
+        fail(`${where}.at`, "should be { lat, lng } — where the photographer stood");
+        return;
+      }
+      vantage = { lat: at["lat"], lng: at["lng"] };
+    }
+
+    const bearing = raw["bearingDeg"];
+    if (bearing !== undefined && bearing !== null) {
+      if (typeof bearing !== "number" || Number.isNaN(bearing)) {
+        fail(`${where}.bearingDeg`, "should be a number, degrees clockwise from north");
+        return;
+      }
+      // Out of range is far more likely to be a typo than an intention, and a bearing of
+      // 450 sends somebody confidently the wrong way rather than failing visibly.
+      if (bearing < 0 || bearing >= 360) {
+        fail(`${where}.bearingDeg`, "should be 0–359, degrees clockwise from north");
+        return;
+      }
+    }
+
+    const year = raw["year"];
+    if (year !== undefined && year !== null && typeof year !== "number") {
+      fail(`${where}.year`, "should be a number");
+      return;
+    }
+
+    photos.push({
+      imageKey,
+      credit,
+      rights: rights as Source["rights"],
+      ...optional("at", vantage),
+      ...(typeof bearing === "number" ? { bearingDeg: bearing } : {}),
+      ...(typeof year === "number" ? { year } : {}),
+      ...(typeof raw["caption"] === "string" ? { caption: raw["caption"] } : {}),
+    });
+  });
+
+  return photos.length > 0 ? photos : undefined;
+}
+
+/**
+ * A place a passenger can actually go (ADR-0004).
+ *
+ * An error rather than a skip for the same reason as the review: save-for-later is a
+ * promise made on the strength of this field, and an echo that silently lost its attraction
+ * offers a button that goes nowhere.
+ */
+function attractionOf(
+  input: unknown,
+  fail: (field: string, message: string) => void,
+): Attraction | undefined {
+  if (input === undefined || input === null) return undefined;
+  if (!isRecord(input)) {
+    fail("attraction", "should be a mapping with a name and a position");
+    return undefined;
+  }
+  const name = input["name"];
+  const at = input["at"];
+  if (typeof name !== "string" || name.trim() === "") {
+    fail("attraction.name", "is required, as text");
+    return undefined;
+  }
+  if (!isRecord(at) || typeof at["lat"] !== "number" || typeof at["lng"] !== "number") {
+    fail("attraction.at", "is required, as { lat, lng }");
+    return undefined;
+  }
+  const rating = input["rating"];
+  if (rating !== undefined && rating !== null && typeof rating !== "number") {
+    fail("attraction.rating", "should be a number");
+    return undefined;
+  }
+  return {
+    name,
+    at: { lat: at["lat"], lng: at["lng"] },
+    ...(typeof input["googlePlaceId"] === "string"
+      ? { googlePlaceId: input["googlePlaceId"] }
+      : {}),
+    ...(typeof rating === "number" ? { rating } : {}),
+    ...(typeof input["url"] === "string" ? { url: input["url"] } : {}),
   };
 }
 

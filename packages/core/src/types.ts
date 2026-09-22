@@ -452,6 +452,15 @@ export interface Echo {
   readonly imageKey?: string;
 
   /**
+   * Photographs of this place as it was, for holding up against it as it is.
+   *
+   * More than a picture: each carries where the photographer stood and which way they
+   * faced, which is what turns "here is an old photo" into "stand here and look that way".
+   * Ordered oldest first, since that is the order somebody wants to walk back through.
+   */
+  readonly archive?: readonly ArchivePhoto[];
+
+  /**
    * A plainer, shorter telling of the same echo.
    *
    * Serves more people than it first appears: younger listeners, anyone listening in a
@@ -577,6 +586,31 @@ export interface SimpleVariant {
   readonly script: string;
   /** Renderings of the simple telling, one per voice. */
   readonly renders?: readonly AudioRender[];
+}
+
+/**
+ * A photograph of this place, then.
+ *
+ * `rights` is not optional and is the same vocabulary the written sources use, because an
+ * image is exactly as republishable as a paragraph and considerably easier to get wrong —
+ * a photograph found on a search engine is not a photograph anybody may publish. The MVP
+ * policy admits public domain and CC-BY only, which the Library of Congress, national
+ * archives and most municipal collections satisfy.
+ */
+export interface ArchivePhoto {
+  readonly imageKey: string;
+  /**
+   * Where the photographer stood. Defaults to the echo's own point when absent, which is
+   * usually wrong by the width of a road but better than nothing.
+   */
+  readonly at?: LatLng;
+  /** Compass bearing the camera faced, degrees clockwise from north. */
+  readonly bearingDeg?: number;
+  readonly year?: number;
+  readonly caption?: string;
+  /** Who to credit, shown wherever the image is. Never optional. */
+  readonly credit: string;
+  readonly rights: Source["rights"];
 }
 
 export interface Attraction {
