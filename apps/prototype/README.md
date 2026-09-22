@@ -34,7 +34,15 @@ is the one way to ask for the opposite, and it is off by default.
 So a capture is really a bookmark: it goes into the collection, and the collection is where
 it gets cashed in — tap any entry, any time, wherever you are.
 
-**Plan** is where auto-play becomes tolerable. Choosing what to hear is a separate moment
+**Plan** is a deck, not a list — the design's own `.reel` pattern, scroll-snapped, one echo
+per card at a size where its teaser can do the work it was written to do. The first version
+was twelve checkbox rows, which is a settings screen wearing a product's clothes: you scan
+it, you tick, you feel nothing, and twelve *stories* are reduced to twelve lines of grey
+text. A checklist also asks the wrong question — "which of these twelve", which nobody can
+hold in their head — where a deck asks "this one?" twelve times, which a person can actually
+answer.
+
+It is where auto-play becomes tolerable. Choosing what to hear is a separate moment
 from travelling — you do it sitting down, before the gate closes — so it gets a screen of its
 own: everything the route passes, in order, with durations and a running total of listening
 time. Pick a few, switch on "play these as I reach them", put the phone away.
