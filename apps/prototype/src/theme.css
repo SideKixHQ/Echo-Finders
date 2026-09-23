@@ -49,6 +49,18 @@
   --line: rgba(var(--rgb-hair), 0.12);
   --line-2: rgba(var(--rgb-hair), 0.22);
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /*
+   * The sheet's height, and everything that floats above it.
+   *
+   * These were four separate pixel values that had to agree — and did not: the sheet grew
+   * twice and the map's inset stayed where it was, so the bottom of every route spent a
+   * while underneath it. Deriving them from one number means the next change to the sheet
+   * moves the guidance bar and the player with it.
+   */
+  --nav-h: 72px;
+  --sheet-h: 466px;
+  --sheet-top: calc(var(--nav-h) + var(--sheet-h));
 }
 
 /**
@@ -808,7 +820,7 @@ body {
      taller, and a sheet sized against the old card put the Listen button back under the
      nav bar. This number is a measurement, not a preference — re-measure it whenever the
      card grows. */
-  height: 466px;
+  height: var(--sheet-h);
   transition: height 0.24s var(--ease); background: var(--slate);
   border-radius: 24px 24px 0 0; border-top: 1px solid var(--line-2);
   box-shadow: 0 -14px 40px rgba(0, 0, 0, 0.55);
@@ -937,18 +949,18 @@ body {
 }
 
 /* The sheet and proximity bar sit above the tab bar rather than under it. */
-.sheet { bottom: 72px; }
+.sheet { bottom: var(--nav-h); }
 /* With a player in it the sheet becomes the screen, as it does in the design: the map is
    still there above the chips, but what you are listening to is the thing you are using. */
-.sheet-tall { height: 650px; }
+.sheet-tall { height: var(--sheet-tall-h, 650px); }
 /* The guidance bar has nowhere to be once the sheet fills the screen, and drawing it over
    the player is how it ended up on top of the plain-language switch. */
 .screen:has(.sheet-tall) .proximity { display: none; }
-.proximity { bottom: 548px; }
+.proximity { bottom: calc(var(--sheet-top) + 10px); }
 /* Above the guidance bar when there is one; the guidance bar's own slot when there is not,
    which is every carried mode. */
-.playing { bottom: 602px; }
-.stack-noguide .playing { bottom: 548px; }
+.playing { bottom: calc(var(--sheet-top) + 64px); }
+.stack-noguide .playing { bottom: calc(var(--sheet-top) + 10px); }
 
 /* ── full-screen panels ──────────────────────────────────── */
 .screen-body {
@@ -1310,3 +1322,47 @@ body {
   background: none; border: 0;
 }
 .pf-alt:hover { color: var(--white); }
+
+
+/* ── On an actual phone ───────────────────────────────────────────────────────
+   Everything above this draws a 390×844 handset on a desk, which is the right
+   thing on a laptop and an actively broken thing on a handset: the body centres
+   an 844px-tall element inside a viewport two-thirds that height, so the top and
+   the bottom are both cut off — and the bottom is where every panel keeps its
+   button. Opening the demo on a phone showed the pre-flight panel with no way to
+   dismiss it and no map behind it.
+
+   `pointer: coarse` rather than width alone, because the question is not how wide
+   the screen is. It is whether this is a real device, where the bezel is a
+   decoration standing between somebody and the app.
+
+   `dvh` rather than `vh` throughout: on mobile Safari `vh` is the viewport with
+   the address bar *hidden*, so a full-height layout is always taller than what
+   you can see, which is the same bug again in a smaller dose. */
+@media (max-width: 680px), (pointer: coarse) {
+  body { padding: 0; display: block; place-items: initial; }
+  .stage { display: block; }
+
+  .phone {
+    width: 100%; height: 100dvh;
+    padding: 0; border-radius: 0; background: var(--space);
+    box-shadow: none;
+  }
+  .screen { border-radius: 0; }
+  /* No notch to clear, but a real one to avoid. */
+  .statusbar { display: none; }
+  .homebar { display: none; }
+  .nav { padding-bottom: max(8px, env(safe-area-inset-bottom)); }
+
+  :root {
+    /* Proportional, so the sheet never eats a short screen — the design's own
+       ratio is 466/822, and holding it keeps the map's geometry honest at any
+       height. Capped at the design value so a tall phone gains map, not sheet. */
+    --sheet-h: min(466px, 52dvh);
+    --sheet-tall-h: min(650px, 76dvh);
+  }
+
+  /* The commentary is for reading beside the app, not on top of it. Below the
+     fold, where somebody who wants the controls can still scroll to them. */
+  .notes { width: auto; max-width: 560px; margin: 0 auto; padding: 28px 18px 48px; }
+}
