@@ -1,6 +1,8 @@
 import { describe, expect, it, vi } from "vitest";
 import { WalkSession } from "../src/session/walk.js";
 import { PlaybackQueue } from "../src/session/playback.js";
+import { PRIVACY_DEFAULTS } from "../src/privacy/settings.js";
+import type { CaptureRecord } from "../src/capture/types.js";
 import type {
   AudioSink,
   HapticsSink,
@@ -621,5 +623,127 @@ describe("playing something that is already in hand", () => {
     expect(deferred?.echo.id).toBe("weak");
     expect(deferred?.reason).toBe("queue-full");
     expect(queue.waiting.map((q) => q.echo.id)).toEqual(["a", "c"]);
+  });
+});
+
+/**
+ * Keeping the collection.
+ *
+ * The collection is the reason somebody keeps this app, and until now every record lived in
+ * memory: a refresh threw away the lot. These cover the three things that make persistence
+ * either trustworthy or actively harmful — that it writes what was agreed rather than what
+ * was captured, that turning a setting off reaches what is *already* stored, and that a
+ * storage failure never costs somebody a capture they actually earned.
+ */
+describe("keeping the collection", () => {
+  const fakeStore = () => {
+    const saves: (readonly CaptureRecord[])[] = [];
+    let fail = false;
+    return {
+      saves,
+      failNext: () => void (fail = true),
+      load: async () => [],
+      save: async (records: readonly CaptureRecord[]) => {
+        if (fail) {
+          fail = false;
+          throw new Error("quota exceeded");
+        }
+        saves.push(records);
+      },
+      clear: async () => void (saves.length = 0),
+    };
+  };
+
+  const arriveAt = (location: FakeLocation) => {
+    // Inside the radius, held past the dwell.
+    location.emit(fix(HERE, START));
+    location.emit(fix(HERE, START + 20_000));
+  };
+
+  /**
+   * Let the write chain settle.
+   *
+   * A macrotask rather than a counted run of `await Promise.resolve()`: `persist` chains
+   * through an async `save` and a `catch`, so the number of microtask ticks it takes is an
+   * implementation detail, and a test that counts them breaks the next time the chain grows
+   * a link.
+   */
+  const settled = () => new Promise((resolve) => setTimeout(resolve, 0));
+
+  it("writes after a capture", async () => {
+    const location = new FakeLocation();
+    const store = fakeStore();
+    const session = new WalkSession([echo()], ADULT, { location, collection: store });
+    session.start();
+    arriveAt(location);
+    await settled();
+
+    expect(store.saves.length).toBeGreaterThan(0);
+    expect(store.saves.at(-1)!.map((r) => r.echoId)).toEqual(["target"]);
+  });
+
+  it("writes what the listener agreed to, not what was captured", async () => {
+    // `stoodAt` is a standing position — a fact about a person, not about an echo. Storage
+    // that never received it cannot leak it.
+    const location = new FakeLocation();
+    const store = fakeStore();
+    const session = new WalkSession([echo()], ADULT, { location, collection: store }, {
+      privacy: { ...PRIVACY_DEFAULTS, keepCollection: true, recordPrecisePlaces: false },
+    });
+    session.start();
+    arriveAt(location);
+    await settled();
+
+    expect(store.saves.at(-1)!).toHaveLength(1);
+    expect(store.saves.at(-1)![0]!.stoodAt).toBeUndefined();
+  });
+
+  it("rewrites storage when a setting is turned off", async () => {
+    // The failure this prevents: "stop recording where I was standing" that only applies to
+    // future captures, leaving every previous position sitting on disk.
+    const location = new FakeLocation();
+    const store = fakeStore();
+    const session = new WalkSession([echo()], ADULT, { location, collection: store }, {
+      privacy: { ...PRIVACY_DEFAULTS, keepCollection: true, recordPrecisePlaces: true },
+    });
+    session.start();
+    arriveAt(location);
+    await settled();
+    expect(store.saves.at(-1)![0]!.stoodAt).toBeDefined();
+
+    session.setPrivacy({ ...PRIVACY_DEFAULTS, keepCollection: true, recordPrecisePlaces: false });
+    await settled();
+    expect(store.saves.at(-1)![0]!.stoodAt).toBeUndefined();
+  });
+
+  it("reports a failed write without losing the capture", async () => {
+    // A full disk is a storage problem. Throwing away the capture would turn it into a lie
+    // about where somebody has been.
+    const location = new FakeLocation();
+    const store = fakeStore();
+    const session = new WalkSession([echo()], ADULT, { location, collection: store });
+    const events = collect(session);
+    store.failNext();
+    session.start();
+    arriveAt(location);
+    await settled();
+
+    expect(events.some((e) => e.type === "captured")).toBe(true);
+    expect(events.some((e) => e.type === "error")).toBe(true);
+    expect(session.collection).toHaveLength(1);
+  });
+
+  it("restores a previous collection, so a found echo is not found twice", () => {
+    const location = new FakeLocation();
+    const previous: CaptureRecord[] = [
+      { echoId: "target", capturedAt: new Date(START).toISOString(), distanceKm: 0.01 },
+    ];
+    const session = new WalkSession([echo()], ADULT, { location }, { captured: previous });
+    const events = collect(session);
+    session.start();
+    arriveAt(location);
+
+    expect(session.tracker.stateOf("target")).toBe("captured");
+    expect(events.filter((e) => e.type === "captured")).toHaveLength(0);
   });
 });

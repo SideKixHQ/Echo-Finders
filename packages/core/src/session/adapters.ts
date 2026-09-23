@@ -12,6 +12,7 @@
  */
 
 import type { Position } from "../types.js";
+import type { CaptureRecord } from "../capture/types.js";
 import type { HapticCue } from "../proximity/haptics.js";
 import type { ToneCue } from "../proximity/tone.js";
 import type { Capability } from "../permissions/index.js";
@@ -86,4 +87,39 @@ export interface AudioSink {
 export interface PermissionsAdapter {
   granted(): Promise<Set<Capability>>;
   request(capability: Capability): Promise<boolean>;
+}
+
+/**
+ * Where a collection is kept between sessions.
+ *
+ * The collection is the reason somebody keeps this app. "Here is everywhere your life has
+ * passed through, and what happened there" is only true if it survives closing the tab —
+ * and until now it did not: every record lived in memory and a refresh threw away the lot.
+ *
+ * Three decisions worth stating.
+ *
+ * **It saves everything, not the one that changed.** A collection is small — hundreds of
+ * records of a hundred-odd bytes — and an append-only log would slowly diverge from what
+ * the listener has agreed to store. Redaction can *remove* fields when someone turns a
+ * setting off, and a delete has to actually delete. Writing the whole set keeps "what is
+ * stored" exactly equal to "what is permitted", which is the property the privacy model
+ * rests on (`redactRecord`).
+ *
+ * **What arrives here is already redacted.** The engine applies `PrivacySettings` before
+ * calling `save`, so an implementation never has to know the rules and can never
+ * accidentally persist a standing position the listener asked us not to keep. Storage that
+ * never received it cannot leak it, cannot be subpoenaed, and cannot turn up in a backup.
+ *
+ * **Failure is not exceptional.** Private browsing, a full disk, a denied quota — all
+ * normal. An implementation should resolve rather than throw where it sensibly can, and
+ * the engine treats a rejected save as an error to report, never as a reason to lose the
+ * capture: the echo was still found, and the listener still stood there.
+ */
+export interface CollectionStore {
+  /** Everything kept previously. Empty when there is nothing, or storage is unavailable. */
+  load(): Promise<readonly CaptureRecord[]>;
+  /** Replace what is stored. Already redacted; write it as given. */
+  save(records: readonly CaptureRecord[]): Promise<void>;
+  /** Forget all of it. What the privacy screen's delete calls. */
+  clear(): Promise<void>;
 }

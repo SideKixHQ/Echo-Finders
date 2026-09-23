@@ -83,22 +83,24 @@ export function redactRecord(
   if (settings.recordPrecisePlaces) return record;
 
   // Keep which echo, and when. Drop where the person was.
+  // Which echo, and when. Not where the person was.
+  //
+  // Omitted rather than blanked. An earlier version wrote `NaN` into both fields as a
+  // sentinel, and its comment described substituting the echo's own coordinates — which is
+  // neither what it did nor a good idea, since inventing a position is a worse answer than
+  // admitting there isn't one. Leaving the fields out is the only version that survives
+  // being written to a disk, sent to an API, or read by code that forgot to check.
   const { echoId, capturedAt, heardAt } = record;
   return {
     echoId,
     capturedAt,
-    // The echo's own coordinates are public; the listener's are not. Recording the echo's
-    // point in place of theirs keeps the record shaped the same without saying anything
-    // about a person beyond "they were close enough".
-    stoodAt: { lat: Number.NaN, lng: Number.NaN },
-    distanceKm: Number.NaN,
     ...(heardAt ? { heardAt } : {}),
   };
 }
 
 /** True when this record carries a person's own position rather than only an echo id. */
 export function holdsPersonalLocation(record: CaptureRecord): boolean {
-  return Number.isFinite(record.stoodAt.lat) && Number.isFinite(record.stoodAt.lng);
+  return record.stoodAt !== undefined;
 }
 
 export type DeletionScope =

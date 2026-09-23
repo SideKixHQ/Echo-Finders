@@ -68,7 +68,7 @@ export function App() {
   const startedRef = useRef<{ id: string; at: number } | null>(null);
   // The listener's own setting drives it, not a constant. `handsFree` is off by default
   // (PRIVACY_DEFAULTS), so an echo collects itself on arrival and then waits to be played.
-  const { state, session, walk } = useJourney(route, LIBRARY, {
+  const { state, session, walk, store } = useJourney(route, LIBRARY, {
     sound,
     narrate,
     autoPlay,
@@ -77,6 +77,7 @@ export function App() {
     chosen: chosen.size > 0 ? chosen : undefined,
     paused: paused || !started,
     rate,
+    privacy,
   });
 
   // Whether the traveller can steer. Guidance answers "which way should I go", so it is
@@ -112,8 +113,14 @@ export function App() {
   const onDelete = (what: "positions" | "everything") => {
     if (what === "everything") {
       setDeleted(new Set(state.captured.map((c) => c.echo.id)));
+      // And from disk, not only from this screen. Before the collection persisted, hiding
+      // the rows *was* deleting them; now a delete that only updates the view is a delete
+      // that comes back on the next refresh, which is the worst possible version of this
+      // button.
+      void store.clear();
     } else {
-      // Deleting positions is what turning the setting off does, so it is the same action.
+      // Deleting positions is what turning the setting off does, so it is the same action:
+      // the session rewrites storage the moment the setting changes.
       setPrivacy({ ...privacy, recordPrecisePlaces: false });
     }
   };

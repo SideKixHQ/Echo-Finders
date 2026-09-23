@@ -10,6 +10,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
+  rarityOf,
   WalkSession,
   type Arriving,
   type CaptureEvent,
@@ -25,10 +26,13 @@ import {
   type NearbyEcho,
   type Position,
   type Route,
+  type CaptureRecord,
+  type PrivacySettings,
 } from "@echofinders/core";
 import { SimulatedJourney } from "./simulated-journey";
 import { EchoTone } from "./echo-tone";
 import { SpeechAudio } from "./speech-audio";
+import { IndexedDbCollection } from "./collection-store";
 
 export interface WalkState {
   readonly position: Position | null;
@@ -75,12 +79,14 @@ export interface JourneyControls {
   readonly paused: boolean;
   /** Playback speed, as a multiplier. Takes effect on the next echo — see `SpeechAudio`. */
   readonly rate?: number;
+  /** What the listener has agreed to have remembered. Decides what reaches storage. */
+  readonly privacy: PrivacySettings;
 }
 
 export function useJourney(
   route: Route,
   library: readonly Echo[],
-  { sound, narrate, autoPlay, chosen, paused, rate = 1 }: JourneyControls,
+  { sound, narrate, autoPlay, chosen, paused, rate = 1, privacy }: JourneyControls,
 ) {
   const walk = useMemo(() => {
     // `?speed=2` slows the journey so the dwell ring can be watched filling; `?start=0.4`
@@ -94,6 +100,24 @@ export function useJourney(
     if (Number.isFinite(start) && start > 0) simulation.seekTo(start);
     return simulation;
   }, [route]);
+
+  // The collection survives a refresh, so it has to be read before the session exists.
+  //
+  // `null` means still reading. The session is built either way rather than blocking the
+  // whole app on a disk read — it rebuilds once records arrive, which is free, because a
+  // read completes in milliseconds and nothing can have been captured yet.
+  const store = useMemo(() => new IndexedDbCollection(`route:${route.id}`), [route.id]);
+  const [restored, setRestored] = useState<readonly CaptureRecord[] | null>(null);
+  useEffect(() => {
+    let live = true;
+    setRestored(null);
+    void store.load().then((records) => {
+      if (live) setRestored(records);
+    });
+    return () => {
+      live = false;
+    };
+  }, [store]);
 
   const [state, setState] = useState<WalkState>({
     position: null,
@@ -152,15 +176,20 @@ export function useJourney(
     return new WalkSession(
       library,
       LISTENER,
-      { location: walk, haptics, tones, audio: speech },
-      { mode: route.mode },
+      { location: walk, haptics, tones, audio: speech, collection: store },
+      {
+        mode: route.mode,
+        // Restored before the first fix, so echoes found on a previous visit stay found
+        // rather than opening a second time.
+        ...(restored && restored.length > 0 ? { captured: restored } : {}),
+      },
     );
     // `autoPlay` and `chosen` are deliberately *not* dependencies and not constructor
     // arguments. They change while somebody is walking — every tick in the plan, every
     // flick of the switch — and a new `WalkSession` is a new `CaptureTracker`: rebuilding
     // it to carry one boolean threw away the whole collection, stopped whatever was
     // playing, and reset the map, silently. They are applied below instead.
-  }, [library, walk, route.mode, toneRenderer, speech]);
+  }, [library, walk, route.mode, toneRenderer, speech, store, restored]);
 
   useEffect(() => {
     session.setAutoPlay(autoPlay);
@@ -169,6 +198,13 @@ export function useJourney(
   useEffect(() => {
     session.setAutoPlayOnly(chosen ? [...chosen] : undefined);
   }, [session, chosen]);
+
+  // Applied live, and it rewrites what is already on disk. Turning "remember where I was
+  // standing" off has to erase the positions already stored, not merely stop adding to
+  // them — otherwise the setting is a promise about the future and a lie about the past.
+  useEffect(() => {
+    session.setPrivacy(privacy);
+  }, [session, privacy]);
 
   // Hold the walk while something is being narrated.
   //
@@ -190,12 +226,25 @@ export function useJourney(
     // in the listener's ears. The engine already clears itself on stop — this is the view
     // catching up, and without it switching mode leaves the last journey's echo showing as
     // "playing" over a map it is nowhere near.
+    //
+    // Except for what was restored. `captured` is built from capture *events*, and a
+    // restored record never fires one — the echo was found on a previous visit, not on this
+    // one. So a collection that persisted perfectly still showed as empty until this seeded
+    // it: the engine knew, and only the screen did not.
     setState({
       position: null,
       nearby: [],
       opening: [],
       guidance: null,
-      captured: [],
+      captured: (restored ?? []).flatMap((record) => {
+        const echo = library.find((e) => e.id === record.echoId);
+        // An echo that has left the library — renamed, unpublished, or filtered out of this
+        // build — leaves its record on disk and out of the view. Dropping it silently is
+        // right: we cannot show a story we no longer have.
+        return echo ? [{ echo, record, rarity: rarityOf(echo) }] : [];
+      }),
+      // Deliberately null. `lastCapture` drives the "Found" card, which is about a moment
+      // that just happened; something found last week has not just happened.
       lastCapture: null,
       cue: null,
       playback: { kind: "idle" },
@@ -235,7 +284,7 @@ export function useJourney(
       off();
       session.stop();
     };
-  }, [session]);
+  }, [session, restored, library]);
 
-  return { state, session, walk };
+  return { state, session, walk, store, restoring: restored === null };
 }

@@ -22,6 +22,7 @@ import { findEchoesNearby, type NearbyEcho } from "../ranking/nearby.js";
 import { PRIVACY_DEFAULTS, redactRecord, type PrivacySettings } from "../privacy/settings.js";
 import type {
   AudioSink,
+  CollectionStore,
   HapticsSink,
   LocationSource,
   TonesSink,
@@ -70,6 +71,14 @@ export interface WalkSessionDeps {
   readonly tones?: TonesSink;
   /** Optional: a caller may prefer to drive audio from its own UI state. */
   readonly audio?: AudioSink;
+  /**
+   * Optional: where the collection is kept between sessions.
+   *
+   * Given one, the engine writes after every capture and every privacy change, so a
+   * platform build gets persistence without reimplementing *when* to save — which is the
+   * part that is easy to get subtly wrong, and invisible when you do.
+   */
+  readonly collection?: CollectionStore;
 }
 
 export interface WalkSessionOptions {
@@ -135,7 +144,6 @@ export class WalkSession {
   private readonly mode: TravelMode;
   private readonly playback: PlaybackQueue;
   private stopAudio: Unsubscribe | null = null;
-  private readonly privacy: PrivacySettings;
   private unwatch: Unsubscribe | null = null;
   /** The cue currently being rendered, so we do not restate it on every fix. */
   private activeCue: string | null = null;
@@ -151,6 +159,22 @@ export class WalkSession {
    */
   private autoPlay: boolean;
   private autoPlayOnly: readonly string[] | undefined;
+
+  /**
+   * What the listener has agreed to have remembered.
+   *
+   * Mutable for the same reason auto-play is: it is a setting somebody reaches for while
+   * walking, and it decides what gets written to disk. Constructor-only, it would have
+   * meant persisting under whatever the defaults were rather than under what they chose —
+   * which is the one mistake in this area that cannot be undone after the fact.
+   */
+  private privacy: PrivacySettings;
+
+  /**
+   * Serialises writes, so two captures a few metres apart cannot race and leave the older
+   * set on disk. Chained rather than queued: each save begins after the last has settled.
+   */
+  private saving: Promise<void> = Promise.resolve();
 
   constructor(
     library: readonly Echo[],
@@ -254,6 +278,18 @@ export class WalkSession {
    */
   setAutoPlayOnly(echoIds: readonly string[] | undefined): void {
     this.autoPlayOnly = echoIds;
+  }
+
+  /**
+   * Change what may be remembered, and rewrite storage to match immediately.
+   *
+   * Turning a setting *off* has to take effect on what is already stored, not just on what
+   * is stored next — otherwise "stop recording where I was standing" leaves every previous
+   * standing position sitting on disk, which is the opposite of what was asked.
+   */
+  setPrivacy(privacy: PrivacySettings): void {
+    this.privacy = privacy;
+    this.persist();
   }
 
   /** Did the listener pick this one, back when they were choosing? */
@@ -372,6 +408,28 @@ export class WalkSession {
     // next fix starts guiding towards something else.
     this.guide.reset();
     this.emit({ type: "captured", capture });
+    this.persist();
+  }
+
+  /**
+   * Write the collection as it now stands.
+   *
+   * A failed write is reported and then let go. The capture itself already happened — the
+   * listener stood there, the echo opened — and throwing that away because a disk was full
+   * would turn a storage problem into a lie about where somebody has been.
+   */
+  private persist(): void {
+    const store = this.deps.collection;
+    if (!store) return;
+    const records = this.collection;
+    this.saving = this.saving
+      .then(() => store.save(records))
+      .catch((cause: unknown) => {
+        this.emit({
+          type: "error",
+          error: new Error("Could not save your collection", { cause }),
+        });
+      });
   }
 
   /**

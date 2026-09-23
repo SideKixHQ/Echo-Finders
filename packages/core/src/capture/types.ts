@@ -53,10 +53,19 @@ export interface CaptureRecord {
   readonly echoId: string;
   /** ISO timestamp of the moment it opened. */
   readonly capturedAt: string;
-  /** Where the listener actually stood, which is not the same as where the echo is. */
-  readonly stoodAt: LatLng;
-  /** How far from the echo's point they were, km. */
-  readonly distanceKm: number;
+  /**
+   * Where the listener actually stood, which is not the same as where the echo is.
+   *
+   * Optional because a listener can decline to have it kept, and **absent is how that is
+   * expressed** (`redactRecord`). It used to be a required field carrying `NaN` as a
+   * sentinel, which worked only for as long as the record never left memory: `NaN` survives
+   * a structured clone into IndexedDB and turns into `null` through `JSON.stringify`, so a
+   * redacted record was one serialisation away from looking like a real position at 0°N 0°E.
+   * Optionality says the same thing in a way every store and every reader understands.
+   */
+  readonly stoodAt?: LatLng;
+  /** How far from the echo's point they were, km. Absent with `stoodAt`, and for the same reason. */
+  readonly distanceKm?: number;
   /** ISO timestamp of the first complete listen, if there has been one. */
   readonly heardAt?: string;
 }
