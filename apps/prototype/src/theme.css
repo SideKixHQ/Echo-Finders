@@ -1422,3 +1422,61 @@ body {
   .ripple-ring-2 { transform: scale(1.5); }
   .ripple-ring-3 { transform: scale(2); }
 }
+
+/* ── The control rail ─────────────────────────────────────────────────────────
+   Vertical, because the map is the one surface that cannot spare height: the
+   sheet already takes half the screen, and a horizontal strip would take more of
+   what is left. Down the side costs 44px of width, which the map has. */
+.rail {
+  position: absolute; right: 10px; z-index: 26;
+  top: calc(46px + 84px);
+  display: flex; flex-direction: column; gap: 8px;
+}
+.rail-btn {
+  position: relative; width: 40px; height: 40px; flex: none;
+  display: grid; place-items: center; cursor: pointer; border-radius: 13px;
+  background: rgba(var(--rgb-panel), 0.82); border: 1px solid var(--line-2);
+  backdrop-filter: blur(10px); color: var(--cool);
+  transition: color 0.18s var(--ease), border-color 0.18s var(--ease);
+}
+.rail-btn svg {
+  width: 19px; height: 19px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.rail-btn:hover { color: var(--white); border-color: var(--cool); }
+.rail-btn.on { color: var(--space); background: var(--aqua); border-color: var(--aqua); }
+/* A filter that is doing something should say so without being opened. */
+.rail-btn.marked { color: var(--ember); border-color: rgba(255, 158, 18, 0.5); }
+.rail-btn em {
+  position: absolute; top: -5px; right: -5px; font-style: normal;
+  min-width: 17px; padding: 0 4px; border-radius: 99px;
+  font-family: "Space Grotesk", monospace; font-size: 10px; line-height: 17px;
+  background: var(--ember); color: #1a1000; text-align: center;
+}
+
+.rail-pop {
+  position: absolute; right: 48px; top: 0; width: 168px;
+  display: flex; flex-direction: column; gap: 2px; padding: 6px;
+  border-radius: 14px; background: rgba(var(--rgb-panel), 0.94);
+  border: 1px solid var(--line-2); backdrop-filter: blur(14px);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.45);
+}
+.rail-pop-filter { top: 48px; max-height: 46dvh; overflow-y: auto; scrollbar-width: none; }
+.rail-pop-filter::-webkit-scrollbar { display: none; }
+.rail-item {
+  display: flex; align-items: center; gap: 9px; width: 100%;
+  padding: 9px 10px; border-radius: 9px; cursor: pointer; font: inherit;
+  font-size: 12.5px; color: var(--muted); background: none; border: 0; text-align: left;
+}
+.rail-item svg { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.rail-item span { flex: 1; }
+.rail-item em {
+  font-style: normal; font-family: "Space Grotesk", monospace;
+  font-size: 10.5px; color: var(--muted);
+}
+.rail-item:hover { background: rgba(var(--rgb-hair), 0.07); color: var(--white); }
+.rail-item.on { color: var(--white); background: rgba(var(--rgb-accent), 0.12); }
+.rail-dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; flex: none !important; }
+
+/* The commentary keeps the demo-only controls — pause, seek, narration — that have no
+   place on a rail a real listener would use. */

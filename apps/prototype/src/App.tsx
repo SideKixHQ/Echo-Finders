@@ -16,6 +16,8 @@ import { CategoryChips } from "./CategoryChips";
 import { Arrival } from "./Arrival";
 import { Preflight } from "./Preflight";
 import { Viewfinder } from "./Viewfinder";
+import { Rail } from "./Rail";
+import type { Detent } from "./Sheet";
 import type { Echo, EchoCategory } from "@echofinders/core";
 import { findEchoesAlongRoute, presetFor, upcomingOnRoute, type Route } from "@echofinders/core";
 
@@ -94,6 +96,15 @@ export function App() {
    * without going back out to the map.
    */
   const [camera, setCamera] = useState<Echo | null>(null);
+  /**
+   * How much of the screen the sheet takes.
+   *
+   * Lifted out of the sheet because the map needs it: with a follow-the-listener view, the
+   * listener belongs in the middle of the band that is *visible*, and how much of the
+   * screen the sheet is covering is exactly what decides where that is. Owned by the sheet,
+   * a peek would slide the map's centre under the sheet it had just moved out of the way.
+   */
+  const [detent, setDetent] = useState<Detent>("half");
   const [deleted, setDeleted] = useState<Set<string>>(new Set());
 
   // What the collection would actually hold, given the privacy settings and any deletion.
@@ -282,6 +293,26 @@ export function App() {
                 stateOf={stateOf}
                 selectedId={selectedId}
                 onSelect={setSelectedId}
+                detent={detent}
+              />
+              <Rail
+                theme={theme}
+                onTheme={setTheme}
+                routes={ROUTES}
+                route={route}
+                onRoute={onSelectRoute}
+                counts={corridorCounts}
+                available={available}
+                on={activeCats}
+                onToggle={(c) => {
+                  const next = new Set(activeCats);
+                  if (next.has(c) && next.size > 1) next.delete(c);
+                  else next.add(c);
+                  setCats(next);
+                }}
+                onAll={() => setCats(null)}
+                savedCount={chosen.size}
+                onSaved={() => setTab("plan")}
               />
               {selfDirected && <ProximityBar guidance={state.guidance} cue={state.cue} />}
               {!nowPlaying && <NowPlaying
@@ -322,6 +353,8 @@ export function App() {
                   startedRef.current = { id: nowPlaying?.id ?? "", at: Date.now() - f * d * 1000 };
                   setProgress(Math.max(0, Math.min(1, f)));
                 }}
+                detent={detent}
+                onDetent={setDetent}
                 onNext={() => session.skip()}
                 {...(selfDirected ? { onCamera: setCamera } : {})}
                 onSave={(echo) => {

@@ -6,12 +6,20 @@
  * (ADR-0011). Headphones are the one channel this product can always count on, because
  * wearing them is the premise.
  *
- * The sound is literally an echo, and that is not only a pun. An echo is the sound of a
- * space: far from a wall the returns are slow, spread out and faint; close to it they
- * arrive almost on top of the original. So the cue renders distance as the *shape of the
- * reflection* — a long way off, one note and four slow fading returns; nearly there, the
- * returns tighten until they collapse into the note itself. At the moment of arrival there
- * is no reflection at all, because you are standing at the thing making the sound.
+ * The sound is a **sonar scan**, and the metaphor does real work rather than decorating.
+ * A sonar ping tells you a distance by how long the return takes to come back: far away,
+ * a long wait between the ping and its echo; close, they nearly collide; and on top of the
+ * thing, there is no return at all, because there is no distance left for one to cross.
+ *
+ * That is exactly the quantity this cue has to convey, so the cue *is* the mechanism rather
+ * than a sound chosen to represent it. Nobody has to learn what it means — anybody who has
+ * heard a submarine in a film already knows that a quickening ping means something is
+ * getting closer.
+ *
+ * It also fixes the failure of the first version, which was a note and four fading repeats.
+ * That is an echo in a room, and a room does not have a *direction*: the repeats got
+ * faster as you closed, but faster repeats read as urgency rather than as proximity, and
+ * a listener had to be told what it meant. A returning ping needs no telling.
  *
  * That gives a listener the distance without a word being spoken, and it means the cue
  * never competes with narration for the same channel: it is a shape, not a voice.
@@ -25,11 +33,18 @@ import type { CueKind, HapticCue } from "./haptics.js";
 
 export interface ToneCue {
   readonly kind: CueKind;
-  /** Base pitch, Hz. Rises as the echo nears, so closing has a direction you can hear. */
+  /** Pitch of the ping, Hz. Rises as the echo nears, so closing has a direction too. */
   readonly hz: number;
-  /** Reflections after the first note. Zero means a bare note — you have arrived. */
+  /** Returns after the ping. Zero is a bare ping — there is no distance left to cross. */
   readonly repeats: number;
-  /** Gap between reflections, ms. Tightens as you close. */
+  /**
+   * How long the return takes to come back, ms.
+   *
+   * **This is the distance.** Everything else in the cue is character; this one number is
+   * the message, and it is the reason the sonar framing is not a costume: a gap that
+   * shrinks from nearly a second to nothing is the same information a real sonar carries,
+   * read the same way, by a listener who was never taught it.
+   */
   readonly repeatGapMs: number;
   /** Fraction of the previous reflection's volume each one keeps. */
   readonly decay: number;
@@ -52,19 +67,24 @@ export const NO_TONE: ToneCue = {
 /**
  * Per-band shape.
  *
- * Pitches are a rising minor arpeggio rather than arbitrary frequencies — A3, C4, E4, A4 —
- * so the sequence resolves upward as you approach and a listener hears progress as melody
- * rather than as a siren. "Colder" drops below the start, which reads as wrong without
- * having to be unpleasant: going the wrong way is a shrug, not a reprimand (ADR-0011).
+ * One return, never a train of them — a sonar contact is a ping and its echo, and stacking
+ * four reflections turns a reading into a rhythm. The gap between the two carries the
+ * distance, collapsing from most of a second to nothing.
+ *
+ * Pitch rises as well, but gently and inside a narrow band. Sonar lives around a kilohertz,
+ * where the ear is sharp and a sine cuts through street noise without being loud; the first
+ * version sat down at A3 and read as a doorbell. "Colder" drops below the start, which is
+ * heard as wrong without being unpleasant: going the wrong way is a shrug, not a reprimand
+ * (ADR-0011).
  */
 const SHAPES: Record<CueKind, Omit<ToneCue, "kind" | "intervalMs">> = {
   none: { hz: 0, repeats: 0, repeatGapMs: 0, decay: 0, gain: 0 },
-  colder: { hz: 174.61, repeats: 3, repeatGapMs: 260, decay: 0.5, gain: 0.12 },
-  steady: { hz: 220.0, repeats: 3, repeatGapMs: 220, decay: 0.55, gain: 0.16 },
-  warmer: { hz: 261.63, repeats: 3, repeatGapMs: 150, decay: 0.6, gain: 0.2 },
-  close: { hz: 329.63, repeats: 2, repeatGapMs: 90, decay: 0.65, gain: 0.24 },
-  // No reflection: you are at the source.
-  arrived: { hz: 440.0, repeats: 0, repeatGapMs: 0, decay: 0, gain: 0.3 },
+  colder: { hz: 700, repeats: 1, repeatGapMs: 900, decay: 0.32, gain: 0.1 },
+  steady: { hz: 820, repeats: 1, repeatGapMs: 700, decay: 0.38, gain: 0.13 },
+  warmer: { hz: 920, repeats: 1, repeatGapMs: 430, decay: 0.45, gain: 0.17 },
+  close: { hz: 1050, repeats: 1, repeatGapMs: 170, decay: 0.55, gain: 0.2 },
+  // No return: there is no distance left for one to cross.
+  arrived: { hz: 1200, repeats: 0, repeatGapMs: 0, decay: 0, gain: 0.26 },
 };
 
 /**

@@ -1,22 +1,30 @@
 /**
- * Rendering `ToneCue` with Web Audio.
+ * Rendering `ToneCue` with Web Audio, as a sonar contact.
  *
- * The engine decides the shape — pitch, how many reflections, how tightly spaced — and this
- * is the part that only a browser can do. An iOS build writes the same forty lines against
- * AVAudioEngine and nothing above this file changes.
+ * The engine decides the shape — the pitch, how long the return takes to come back, how
+ * often to scan — and this is the part only a browser can do. An iOS build writes the same
+ * forty lines against AVAudioEngine and nothing above this file changes.
  *
- * The sound is an echo, literally: a note followed by quieter repeats of itself. Far from
- * the target the repeats are slow and there are more of them, which is what a large empty
- * space sounds like; close in they tighten, and at arrival there is no repeat at all,
- * because you are standing at the source.
+ * What it makes is a ping and its echo. A short sine, struck hard and left to ring down
+ * over most of a second while its pitch sags — that sag is most of what makes a sine read
+ * as *sonar* rather than as a notification, because a struck physical thing loses tension
+ * as it decays and a synthesised beep does not. Then the return: the same ping, quieter,
+ * arriving after a gap that *is* the distance.
  *
- * Kept deliberately soft and short. This plays underneath narration, and a guidance cue
+ * Bandpassed, because an unfiltered sine is a hearing test. A moderate Q around the ping's
+ * own pitch is what puts it underwater — the harmonics a real transducer would lose on the
+ * way out and back.
+ *
+ * Kept deliberately quiet and sparse. This plays underneath narration, and a guidance cue
  * that talks over the story has defeated the story.
  */
 
 import type { ToneCue } from "@echofinders/core";
 
-const NOTE_MS = 130;
+/** How long one ping rings down for. Long: the tail is the character. */
+const TAIL_S = 0.85;
+/** How far the pitch sags across that tail. A struck thing loses tension; a beep does not. */
+const SAG = 0.86;
 
 export class EchoTone {
   private ctx: AudioContext | null = null;
@@ -25,10 +33,10 @@ export class EchoTone {
   /**
    * Notes already handed to the audio clock.
    *
-   * A far-away cue schedules its reflections up to a couple of seconds ahead, and once
-   * `start()` has been called the note is the hardware's business, not ours. Clearing the
-   * interval stops the *next* figure and does nothing to the one in flight — so turning the
-   * cue off left it chiming twice more, which reads as a bug however briefly it lasts.
+   * A return is scheduled up to a second ahead, and once `start()` has been called the
+   * sound is the hardware's business rather than ours. Clearing the interval stops the
+   * *next* scan and does nothing to the one in flight — so turning the cue off used to
+   * leave it pinging, which reads as a bug however briefly it lasts.
    */
   private voices: OscillatorNode[] = [];
 
@@ -61,10 +69,14 @@ export class EchoTone {
     // into a context that refuses to exist, for as long as the cue held.
     if (this.muted || cue.gain <= 0 || cue.hz <= 0) return;
 
-    const fire = () => this.figure(cue);
-    fire();
+    const scan = () => this.ping(cue);
+    scan();
     if (Number.isFinite(cue.intervalMs) && cue.intervalMs > 0) {
-      this.timer = setInterval(fire, cue.intervalMs + NOTE_MS + cue.repeats * cue.repeatGapMs);
+      // The scan rate has to clear the whole contact — ping, gap, return, tail — or the
+      // next one starts on top of the last and the gap stops being readable, which is the
+      // one thing this cue is for.
+      const contactMs = cue.repeats * cue.repeatGapMs + TAIL_S * 1000;
+      this.timer = setInterval(scan, Math.max(cue.intervalMs, 0) + contactMs);
     }
   }
 
@@ -92,32 +104,45 @@ export class EchoTone {
     await ctx?.close().catch(() => undefined);
   }
 
-  /** One note and its reflections. */
-  private figure(cue: ToneCue) {
+  /** One contact: the ping, then whatever comes back. */
+  private ping(cue: ToneCue) {
     const ctx = this.context();
     if (!ctx) return;
 
     for (let i = 0; i <= cue.repeats; i++) {
       const at = ctx.currentTime + (i * cue.repeatGapMs) / 1000;
       const level = cue.gain * Math.pow(cue.decay, i);
-      if (level < 0.005) break;
+      if (level < 0.004) break;
+
+      // A return has travelled twice as far, so it comes back duller as well as quieter —
+      // the high end goes first. That is why a distant contact sounds distant rather than
+      // merely soft.
+      const tail = TAIL_S * (i === 0 ? 1 : 0.7);
+      const hz = cue.hz * (i === 0 ? 1 : 0.97);
 
       const osc = ctx.createOscillator();
+      const band = ctx.createBiquadFilter();
       const amp = ctx.createGain();
-      // A triangle is soft enough to sit under speech; a sine reads as a medical alarm and
-      // a square reads as an error.
-      osc.type = "triangle";
-      osc.frequency.value = cue.hz;
 
-      // Percussive: near-instant attack, exponential tail. A slow attack at this length
-      // just sounds like a mistake.
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(hz, at);
+      // The sag. Exponential rather than linear because pitch is heard logarithmically, so
+      // a linear fall sounds like it slows down at the end.
+      osc.frequency.exponentialRampToValueAtTime(hz * SAG, at + tail);
+
+      band.type = "bandpass";
+      band.frequency.value = hz;
+      band.Q.value = i === 0 ? 3.2 : 5.5;
+
+      // Struck, not faded in: a sonar ping has no attack to speak of, and anything slower
+      // than a few milliseconds stops sounding like something hitting water.
       amp.gain.setValueAtTime(0.0001, at);
-      amp.gain.exponentialRampToValueAtTime(level, at + 0.008);
-      amp.gain.exponentialRampToValueAtTime(0.0001, at + NOTE_MS / 1000);
+      amp.gain.exponentialRampToValueAtTime(level, at + 0.004);
+      amp.gain.exponentialRampToValueAtTime(0.0001, at + tail);
 
-      osc.connect(amp).connect(ctx.destination);
+      osc.connect(band).connect(amp).connect(ctx.destination);
       osc.start(at);
-      osc.stop(at + NOTE_MS / 1000 + 0.02);
+      osc.stop(at + tail + 0.05);
 
       this.voices.push(osc);
       osc.onended = () => {

@@ -463,7 +463,21 @@ export class WalkSession {
 
     this.activeCue = signature;
     haptics?.play(guidance.cue);
-    tones?.play(toneFor(guidance.cue));
+
+    /*
+      Sound only while something is actually changing.
+      
+      A sonar pings because a contact is moving relative to you. Standing on a corner
+      reading the screen is not that, and a cue that keeps scanning while somebody browses
+      is noise they did not ask for — which is exactly how it felt: tap an echo, hear a
+      ping, for no reason connected to the tap.
+      
+      "Steady" is precisely the state of not closing on anything, so it is the state that
+      should be silent. The haptic still fires through it, because a buzz in a pocket is
+      addressed to one person and a sound in a street is addressed to everyone nearby.
+    */
+    if (guidance.cue.kind === "steady") tones?.stop();
+    else tones?.play(toneFor(guidance.cue));
   }
 
   private silenceGuidance(): void {

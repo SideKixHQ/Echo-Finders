@@ -42,6 +42,8 @@ interface Props {
   readonly stateOf: (echoId: string) => PinState;
   readonly selectedId: string | null;
   readonly onSelect: (echoId: string) => void;
+  /** How much of the screen the sheet is taking, so the view centres on what is visible. */
+  readonly detent: "peek" | "half" | "full";
 }
 
 /*
@@ -71,18 +73,19 @@ const H = 822;
  * height and change this with it.
  */
 const NAV_H = 72;
-const SHEET_H = 466;
+/** Matches the detents in `Sheet.tsx`, as fractions of the screen. */
+const SHEET_FRACTION = { peek: 0.26, half: 0.52, full: 0.86 } as const;
 /** Half a pin, so a pin *centre* never lands under the chrome and no pin is half-eaten. */
 const PIN_R = 16;
 /** The route ribbon and the category chips, which float over the map's top edge. */
 const MAPBAR_H = 119;
-const INSET = {
+const insetFor = (detent: keyof typeof SHEET_FRACTION) => ({
   top: MAPBAR_H + PIN_R / 2,
-  bottom: NAV_H + SHEET_H + PIN_R / 2,
+  bottom: NAV_H + H * SHEET_FRACTION[detent] + PIN_R / 2,
   side: 30,
-};
+});
 
-export function RouteMap({ route, library, position, opening, stateOf, selectedId, onSelect }: Props) {
+export function RouteMap({ route, library, position, opening, stateOf, selectedId, onSelect, detent }: Props) {
   /**
    * The view follows the listener, rather than fitting the whole journey.
    *
@@ -101,6 +104,7 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
    * question is what the whole journey looks like.
    */
   const projection = useMemo(() => {
+    const INSET = insetFor(detent);
     const geometry = buildRouteGeometry(route);
 
     // The band actually visible between the chips and the sheet. The listener belongs in
@@ -147,7 +151,7 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
       // Screen y grows downward; latitude grows north, so the sign flips.
       y: centreY + (centre.lat - p.lat) * scale,
     });
-  }, [route, library, position]);
+  }, [route, library, position, detent]);
 
   const path = useMemo(() => {
     const geometry = buildRouteGeometry(route);
@@ -214,6 +218,13 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
         </linearGradient>
       </defs>
 
+      <clipPath id="mapBand">
+        {/* Pins outside the map's own band used to draw straight over the route ribbon and
+            the category chips, which float above it with no background of their own. The
+            sheet covers the bottom edge already; this is the top. */}
+        <rect x="0" y={MAPBAR_H} width={W} height={H - MAPBAR_H} />
+      </clipPath>
+      <g clipPath="url(#mapBand)">
       <path d={path} className="route-casing" />
       <path d={path} className="route" />
 
@@ -292,6 +303,7 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
         );
       })}
 
+      </g>
       {here && (
         <g className="here" transform={`translate(${here.x.toFixed(1)} ${here.y.toFixed(1)})`}>
           <circle r="26" fill="url(#hereGlow)" />

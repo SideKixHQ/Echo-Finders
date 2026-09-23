@@ -49,7 +49,12 @@ interface Props {
   readonly onNext: () => void;
   /** Open the camera on an echo. Only where there is one — a flight has no then-and-now. */
   readonly onCamera?: (echo: Echo) => void;
+  /** How much of the screen the sheet takes. Lifted, because the map has to know. */
+  readonly detent: Detent;
+  readonly onDetent: (detent: Detent) => void;
 }
+
+export type Detent = "peek" | "half" | "full";
 
 export function Sheet({
   nearby,
@@ -78,6 +83,8 @@ export function Sheet({
   onSeek,
   onNext,
   onCamera,
+  detent,
+  onDetent,
 }: Props) {
   const [tab, setTab] = useState<"near" | "script" | "saved">("near");
 
@@ -94,7 +101,7 @@ export function Sheet({
    * amounts of room: seeing where you are, reading what just opened, and working through
    * the list.
    */
-  const [detent, setDetent] = useState<Detent>("half");
+  const setDetent = onDetent;
   const drag = useRef<{ startY: number; startH: number } | null>(null);
   const [dragging, setDragging] = useState<number | null>(null);
   // The transcript is only meaningful for something actually playing, so the tab falls back
@@ -323,8 +330,6 @@ function Idle({
 }
 
 
-
-type Detent = "peek" | "half" | "full";
 
 /**
  * Fractions of the viewport each detent settles at.

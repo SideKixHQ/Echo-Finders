@@ -351,10 +351,20 @@ describe("guidance belongs to whoever is steering", () => {
     return { haptics, tones, session };
   };
 
-  it("guides a walker, by buzz and by sound together", () => {
+  it("buzzes a walker throughout, and only pings while they are closing", () => {
+    // The two channels are addressed to different audiences. A buzz reaches one person
+    // through a pocket; a sound in a street reaches everyone standing in it. So the sonar
+    // scans while something is changing and goes quiet when nothing is — standing on a
+    // corner reading the screen is not an approach, and a cue that keeps pinging through it
+    // is noise nobody asked for.
     const { haptics, tones } = approach("walking");
-    expect(haptics.plays.length).toBeGreaterThan(0);
-    expect(tones.plays.length).toBe(haptics.plays.length);
+    const buzzes = haptics.plays as HapticCue[];
+
+    expect(buzzes.length).toBeGreaterThan(0);
+    expect(tones.plays.length).toBeGreaterThan(0);
+    expect(tones.plays.some((t) => t.kind === "steady")).toBe(false);
+    // Every buzz that was not "steady" got its ping, and every "steady" one did not.
+    expect(tones.plays.length).toBe(buzzes.filter((c) => c.kind !== "steady").length);
   });
 
   it("guides a car, because a navigator can redirect one", () => {
