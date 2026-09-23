@@ -43,7 +43,11 @@ voices:
     # cloned   : replicated from a real person's recordings — engages that person's right
     #            of publicity, which several US states treat as surviving their death
     # recorded : a human read it
-    origin: TODO — run scripts/voice-info.mjs, or see the note at the top
+    # Designed — generated from a description via Voice Design, on 23 September 2026.
+    # It resembles no particular person, which is the answer that closes the hardest
+    # question on this file rather than deferring it: there is no right of publicity to
+    # clear, because there is no person. See the note below.
+    origin: designed
     # Does the ElevenLabs plan permit redistribution inside a product licensed to a third
     # party — an airline — rather than only published by us? See docs/01-services.md.
     #
@@ -54,11 +58,20 @@ voices:
     # The licence terms themselves still want saving somewhere durable.
     redistributionCleared: true
     notes: >-
-      Chosen and approved on 23 September 2026 — replaced the earlier default
-      (plP9aw1rizYgjFfuvLQ7), which was a placeholder from the first pass and is no longer
-      cast to anything. Name and origin still to record; origin is the one with legal
-      weight, because a cloned voice carries a real person's right of publicity. See
-      docs/protection-policy.md, Risk 4.
+      Designed and approved on 23 September 2026 — replaced the earlier default
+      (plP9aw1rizYgjFfuvLQ7), a placeholder from the first pass now cast to nothing.
+
+      Designed rather than stock or cloned, and that is worth more than it sounds. It
+      settles Risk 4 in docs/protection-policy.md for this voice outright: a cloned voice
+      carries a real person's right of publicity, which survives their death and runs
+      seventy years in California, and a Voice Library voice carries a consent chain held
+      by whoever contributed it rather than by us. A designed voice has neither, because
+      there is no person behind it.
+
+      It is also a brand asset rather than a rented one. Nobody else can pick this voice
+      out of a library, so the product has a sound of its own — the nearest thing to
+      owning a voice without employing one, and the thing that makes a series feel like a
+      series.
 
   - id: hP72SDESIJq2YuAblBqz
     name: TODO — the voice's name in ElevenLabs

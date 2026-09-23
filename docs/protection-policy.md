@@ -151,6 +151,13 @@ states have recently legislated specifically on voice replication.
 ### Our controls
 - **Never synthesise a real person's voice.** Not as homage, not as a "reading" of their
   words, not for anyone however long dead. One narrator voice, or a licensed actor.
+- **Our narrators are designed, not cloned.** The default voice was generated from a
+  description on 23 September 2026 (`content/voices.yml`). It resembles no particular
+  person, so there is no publicity right attached to it — the risk is avoided at source
+  rather than managed. A Voice Library voice would not have achieved this: those are
+  contributed by other users, some are clones of real people, and the consent behind them
+  is held by the contributor rather than by us, while we are the ones shipping the result
+  inside a licensed product.
 - Names and likenesses appear **editorially** — telling someone's story — never in
   marketing or on a sponsored placement.
 - Contributors record only themselves.
