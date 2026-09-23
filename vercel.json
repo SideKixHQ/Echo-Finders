@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run library:build && npm run build --workspace @echofinders/prototype",
+  "outputDirectory": "apps/prototype/dist",
+  "installCommand": "npm install",
+  "framework": null,
+  "github": { "silent": true },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(self), microphone=(), geolocation=(self)"
+        }
+      ]
+    }
+  ]
+}
