@@ -10,7 +10,9 @@ sync.
 
 In the Vercel dashboard:
 
-1. **Add New… → Project**, and import `SideKixHQ/skystories`.
+1. **Add New… → Project**, and import `SideKixHQ/Echo-Finders`.
+   (GitHub still redirects the repository's old name, so an older link will quietly work
+   and quietly keep the wrong name alive. Use this one.)
 2. Leave every setting alone and press **Deploy**.
 
 That is the whole thing. `vercel.json` at the repository root already says how to build it —
