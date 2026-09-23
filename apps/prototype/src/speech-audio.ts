@@ -30,7 +30,7 @@ import type { AudioSink, Echo } from "@echofinders/core";
  */
 const CAST: Record<string, { pitch: number; rate: number; prefer: string[] }> = {
   // The default narrator.
-  plP9aw1rizYgjFfuvLQ7: { pitch: 1.05, rate: 0.95, prefer: ["female", "samantha", "zira"] },
+  IMlxLW3qgn0MWgfz7Vnh: { pitch: 1.05, rate: 0.95, prefer: ["female", "samantha", "zira"] },
   // The male narrator.
   hP72SDESIJq2YuAblBqz: { pitch: 0.82, rate: 0.93, prefer: ["male", "daniel", "alex", "david"] },
   // The kids narrator.

@@ -30,10 +30,11 @@
 # — but that consent is theirs, not ours, and we are the ones shipping the result inside a
 # product licensed to a third party.
 
-defaultVoiceId: plP9aw1rizYgjFfuvLQ7
+defaultVoiceId: IMlxLW3qgn0MWgfz7Vnh
 
 voices:
-  - id: plP9aw1rizYgjFfuvLQ7
+  - id: IMlxLW3qgn0MWgfz7Vnh
+    role: Main female narrator — the default voice of the product
     name: TODO — the voice's name in ElevenLabs
     provider: elevenlabs
     locale: TODO — e.g. en-GB or en-US
@@ -45,12 +46,19 @@ voices:
     origin: TODO — run scripts/voice-info.mjs, or see the note at the top
     # Does the ElevenLabs plan permit redistribution inside a product licensed to a third
     # party — an airline — rather than only published by us? See docs/01-services.md.
-    redistributionCleared: false
+    #
+    # Marked true on James's statement of 23 September 2026: chosen specifically from
+    # voices permitting redistribution for life. Recorded with its provenance rather than
+    # asserted flatly, because this is the field somebody will ask about years from now,
+    # and "it says true" is a worse answer than "he selected on that basis, on that date".
+    # The licence terms themselves still want saving somewhere durable.
+    redistributionCleared: true
     notes: >-
-      Default narrator. Listened to on 22 September 2026 against the Bowling Green and
-      Charging Bull scripts and judged good. Origin and redistribution rights still need
-      confirming before the library is voiced at scale; see docs/protection-policy.md,
-      Risk 4.
+      Chosen and approved on 23 September 2026 — replaced the earlier default
+      (plP9aw1rizYgjFfuvLQ7), which was a placeholder from the first pass and is no longer
+      cast to anything. Name and origin still to record; origin is the one with legal
+      weight, because a cloned voice carries a real person's right of publicity. See
+      docs/protection-policy.md, Risk 4.
 
   - id: hP72SDESIJq2YuAblBqz
     name: TODO — the voice's name in ElevenLabs

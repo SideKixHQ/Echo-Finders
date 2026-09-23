@@ -7,7 +7,7 @@
  * file does.
  */
 export const VOICE_LABEL: Record<string, string> = {
-  plP9aw1rizYgjFfuvLQ7: "Default narrator",
+  IMlxLW3qgn0MWgfz7Vnh: "Default narrator",
   hP72SDESIJq2YuAblBqz: "Second narrator",
   MkTSSXNgnBULS6ek4pon: "Narrator for children",
 };

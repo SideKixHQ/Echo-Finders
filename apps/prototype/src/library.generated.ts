@@ -47,7 +47,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "In 1991 the federal government began digging foundations for an office tower at Broadway\nand Duane, and about seven metres down the crews found bone.\n\nWhat lay beneath the block was a cemetery. From the late sixteen-hundreds into the\nseventeen-nineties, free and enslaved Africans in this city had buried their dead in a\npatch of ground outside the settlement's boundary — roughly six and a half acres of it.\nLater New York built over the site and forgot. Estimates put the number of burials around\nfifteen thousand.\n\nFour hundred and nineteen men, women and children were recovered from the part that was\nexcavated. Their descendants and this city's Black community fought to stop the\nconstruction, and won. The remains were studied, then reinterred here in 2003.\n\nIt is the earliest and largest African burial ground yet found in the United States, and\nit existed partly because of a rule: from 1697, Africans were barred from the city's main\nburial ground. So they made their own, out past the edge of town.\n\nYou are standing at the edge of town.\n",
     "teaser": "Twenty-four feet below the pavement.",
     "detail": "The memorial occupies a fraction of the original site; most of the burial ground remains\nunder the surrounding streets and buildings. It was designated a National Monument in\n2006.\n",
-    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "pronunciations": [
       {
         "written": "Duane Street",
@@ -66,7 +66,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/african-burial-ground",
         "durationS": 110
       }
@@ -103,7 +103,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Down on your right, that pale line running along the back of the beach.\n\nBoardwalks exist everywhere now. That one is where the idea came from, and it was not\nbuilt for strolling.\n\nIn eighteen seventy the hotels and the railway on that beachfront had the same complaint:\nguests walked in off the sand and brought most of the beach with them, into the lobbies,\nonto the carpets, into the railway carriages. Sweeping it out was a full-time job.\n\nSo a conductor and a hotelier proposed a wooden walkway, laid straight onto the sand, that\npeople would use because it was easier than not using it.\n\nIt was taken up every autumn and stored for the winter.\n\nEverything else that word now means — the piers, the postcards, the amusements — grew on\ntop of a solution to a cleaning problem.\n",
     "teaser": "The pale line along the beach below is the original of its kind.",
-    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
       "new-jersey",
       "coast",
@@ -111,7 +111,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/atlantic-city-first-boardwalk",
         "durationS": 85
       }
@@ -220,7 +220,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "The cape below you is where nearly everything the United States has ever launched went up.\n\nThe reason it is there and not in Nevada comes down to two things, and neither is the\nweather.\n\nThe first is the ocean. Rockets go east, and everything that falls off one on the way —\nspent stages, and occasionally the whole thing — has to fall somewhere that is not a town.\nEast of that cape there is nothing but water for three thousand miles.\n\nThe second is that the Earth is already turning. At that latitude the ground is moving\neast at about nine hundred miles an hour. Launch in the same direction and you start with\nthat speed for free.\n\nThe closer to the equator, the more you get. That is most of the reason the map of the\nworld's launch sites looks the way it does.\n",
     "teaser": "The cape below is where almost everything the United States has launched went up.",
-    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
       "florida",
       "spaceflight",
@@ -228,7 +228,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/canaveral-free-speed",
         "durationS": 95
       }
@@ -266,7 +266,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down at the pavement.\n\nSet into it along this stretch of Broadway are thin strips of granite, each one naming a\ndate and a person. There are more than two hundred of them.\n\nEvery strip is a ticker-tape parade. The first was in 1886, for the dedication of the\nStatue of Liberty, and nobody organised it — clerks in the offices above started throwing\nthe used tape from their stock tickers out of the windows, because they could not think\nof anything better to do.\n\nNobody has used ticker tape since the 1960s. They shred paper for it now.\n\nSo this is a canyon named after confetti, which was named after rubbish.\n",
     "teaser": "Look down at the pavement.",
-    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
       "new-york",
       "parades",
@@ -288,7 +288,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/canyon-of-heroes",
         "durationS": 55
       }
@@ -337,7 +337,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the steps in front of the gate. Not the house — the steps.\n\nAt about a quarter to nine on the morning of the fifteenth of July, nineteen ninety-seven,\nGianni Versace came back up Ocean Drive carrying his magazines and stopped here to open\nhis own front door.\n\nA man walked up behind him and fired twice. Versace was fifty. He did not get through the\ndoor.\n\nPolice identified the man who shot him as Andrew Cunanan, already on the FBI's Ten Most\nWanted list. Eight days later Cunanan was found dead on a houseboat two miles north of\nwhere you are standing. He was never tried. He left nothing behind explaining any of it,\nand no motive has ever been established.\n\nBy the time he reached Miami Beach, four other people were already dead. Jeffrey Trail.\nDavid Madson. Lee Miglin. William Reese.\n\nThis address is famous because of who died at it.\n\nNobody stands outside the other four.\n",
     "teaser": "Look at the steps in front of the gate. Not the house.",
-    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "pronunciations": [
       {
         "written": "Versace",
@@ -366,7 +366,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "renders": [
       {
-        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/casa-casuarina-the-steps",
         "durationS": 100
       }
@@ -412,7 +412,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "The round sandstone building ahead of you was built to stop an invasion that never came.\n\nIt went up between 1808 and 1811, out on a small island off the tip of Manhattan, its\nguns pointed down the harbour at a British fleet everyone expected and nobody saw. The\nlandfill came later. So did almost everything else it has been.\n\nBecause in 1855 the fort became a door. On the first of August that year it opened as the\nEmigrant Landing Depot — the first immigration station in the United States, run by the\nState of New York — and over the next thirty-five years something like eight million\npeople walked through it and out into the rest of their lives. Nikola Tesla came through\nhere. So did Harry Houdini, and Emma Goldman, and Joseph Pulitzer.\n\nIn 1890 the federal government took the job over, and two years later moved it to a\nbigger island further out, where the ferries go now. The fort stayed, and became other\nthings again: a beer garden, a theatre, an aquarium.\n\nEight million arrivals, and almost nobody stops here. Most people walk past it to queue\nfor the boat.\n",
     "teaser": "Before Ellis Island, there was this.",
     "detail": "The fort has had at least five lives: coastal battery, public promenade and entertainment\nhall, immigration depot, city aquarium, and finally a national monument. Jenny Lind gave\nher first American concert in it in 1850.\n",
-    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "pronunciations": [
       {
         "written": "Nikola Tesla",
@@ -450,7 +450,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/castle-clinton-eight-million",
         "durationS": 95
       }
@@ -488,7 +488,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Nobody commissioned this.\n\nIn December 1989, two years after the crash, a sculptor called Arturo Di Modica drove a\nlorry to Wall Street in the middle of the night and left three and a half tonnes of bronze\noutside the Stock Exchange. He had paid for it himself. It was, legally speaking,\nfly-tipping.\n\nThe city removed it within hours. The public objected loudly enough that it was put back a\nfew days later, here, a couple of streets from where he left it — on a temporary permit\nthat has now lasted more than thirty years.\n",
     "teaser": "Nobody gave permission for this.",
-    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "pronunciations": [
       {
         "written": "Arturo Di Modica",
@@ -502,7 +502,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/charging-bull-illegal",
         "durationS": 45
       }
@@ -593,7 +593,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look at the tops of the ridges around you. The trees stop, and then there is grass.\n\nThat is odd. These summits are nowhere near high enough to be above the tree line —\nthere are forests on mountains twice this height. Something else is keeping them bare.\n\nThey are called balds, and after a century of argument there is still no agreed\nexplanation. Cattle grazing is the obvious one, except some were bare before the cattle.\nFire. Ice-age climate that never quite reverted. Grazing by animals that are extinct.\n\nWhat is agreed is that they are closing. Without something to keep them open, the forest\ncomes back, and it has been coming back for decades.\n\nSo the mystery is solving itself, in the least useful way.\n",
     "teaser": "Look at the tops of the ridges. Something is missing.",
     "certaintyNote": "Grazing, fire, ice-age climate and megafauna browsing have all been proposed. No single explanation is accepted, and the script says so rather than picking one.",
-    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
       "blue-ridge",
       "north-carolina",
@@ -602,7 +602,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/craggy-gardens-balds",
         "durationS": 90
       }
@@ -712,7 +712,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand facing the columns, and know first that this is not the building.\n\nThe one that mattered was New York's City Hall, and it stood on this exact spot. Two\nthings happened in it that the country is still living inside.\n\nIn 1735 a printer named John Peter Zenger was tried here for libel. He had published\ncriticism of the royal governor in his newspaper, and under the law of the time truth was\nno defence — printing it was the crime, whether or not it was accurate. The jury\nacquitted him anyway. It was not yet law, but it was the beginning of the argument that\nbecame a free press.\n\nFifty-four years later the same site, rebuilt as Federal Hall, was the first Capitol of\nthe United States. On the thirtieth of April 1789, George Washington stepped onto a\nbalcony above this street and took the oath as the first president, in front of a crowd\nfilling Wall Street below you.\n\nThat building was demolished in 1812. What you are looking at went up in 1842, as a\ncustoms house. The statue of Washington faces the street, roughly where the balcony was.\n",
     "teaser": "The building is not the one it happened in. The corner is.",
-    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "pronunciations": [
       {
         "written": "John Peter Zenger",
@@ -746,7 +746,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/federal-hall-two-firsts",
         "durationS": 105
       }
@@ -830,7 +830,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "The hook of sand below is Cape Hatteras. The shoals run out from it for a dozen miles\nunderwater, two ocean currents meet directly over them, and the wrecks in that stretch of\nsea number in the hundreds. It has been called the Graveyard of the Atlantic since the\neighteen hundreds.\n\nWhich is why there has been a lighthouse down there since eighteen oh three, and the\ncurrent one — a hundred and ninety-eight feet of brick, the tallest in the country —\nsince eighteen seventy.\n\nIt was built fifteen hundred feet from the sea. By the nineteen nineties the sea was a\nhundred and twenty feet away.\n\nSo in nineteen ninety-nine they jacked up four thousand eight hundred tons of brick,\nput it on rails, and moved it. It took twenty-three days to travel twenty-nine hundred\nfeet.\n\nIt did not crack.\n",
     "teaser": "The cape below you is the reason that stretch of sea is called the Graveyard of the Atlantic.",
-    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
       "north-carolina",
       "outer-banks",
@@ -839,7 +839,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/hatteras-moved-the-lighthouse",
         "durationS": 100
       }
@@ -1030,7 +1030,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Off to the left is the highest ground anywhere east of the Mississippi. Six thousand six\nhundred and eighty-four feet.\n\nIt is named after a professor called Elisha Mitchell, who measured it in the eighteen\nthirties and said it was the tallest. A former student of his said it was not, and said so\npublicly, at length.\n\nIn eighteen fifty-seven Mitchell went back up to take the measurements again and settle\nit. He did not come down. They found him days later in a pool below a waterfall.\n\nHis figures were correct, and the argument ended the way arguments do when one side stops\nbeing available.\n\nHe is buried on the summit.\n",
     "teaser": "The highest ground east of the Mississippi is off to your left.",
-    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
       "blue-ridge",
       "north-carolina",
@@ -1039,7 +1039,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/mount-mitchell-buried-on-top",
         "durationS": 95
       }
@@ -1088,7 +1088,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "You are outside a café that has been on this corner since the middle of the eighties.\n\nIn the summer of nineteen ninety-seven a man came down here most mornings from a house\nthree blocks north. He sat outside. He bought a stack of magazines. The staff knew him by\nsight, the way staff know a regular.\n\nOn the fifteenth of July he did exactly that, and then he walked home.\n\nHis name was Gianni Versace, and this was the last ordinary hour of his life.\n\nIt is four blocks north along the beach side. About six minutes.\n\nTake it slowly. He did.\n",
     "teaser": "A café, a stack of magazines, and a four-block walk north.",
-    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "pronunciations": [
       {
         "written": "Versace",
@@ -1109,7 +1109,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "renders": [
       {
-        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/news-cafe-last-ordinary-morning",
         "durationS": 65
       }
@@ -1365,7 +1365,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the spire.\n\nFor forty-four years that was the highest point in New York. Not the tallest church — the\ntallest anything. Ships coming into the harbour saw it before they saw the city.\n\nIt went up in 1846. Two hundred and eighty-one feet, and nothing in this city passed it\nuntil 1890.\n\nWhich means there was a stretch of time, right here, when the largest thing people in New\nYork were willing to build was somewhere to pray.\n\nWhat passed it was a newspaper office. What passed that was an insurance company. Then\nthe banks arrived, and they have not stopped.\n\nAlexander Hamilton is buried in the yard on your right. He was killed in 1804, so he\nnever saw this building — he is lying beside the third church on this spot, in a\ngraveyard that outlasted two of them.\n",
     "teaser": "Look up at the spire.",
-    "voice": "plP9aw1rizYgjFfuvLQ7",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
       "new-york",
       "architecture",
@@ -1387,7 +1387,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "plP9aw1rizYgjFfuvLQ7",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/trinity-tallest-thing",
         "durationS": 85
       }
