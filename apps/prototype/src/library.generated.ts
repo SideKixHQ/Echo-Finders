@@ -47,7 +47,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "In 1991 the federal government began digging foundations for an office tower at Broadway\nand Duane, and about seven metres down the crews found bone.\n\nWhat lay beneath the block was a cemetery. From the late sixteen-hundreds into the\nseventeen-nineties, free and enslaved Africans in this city had buried their dead in a\npatch of ground outside the settlement's boundary — roughly six and a half acres of it.\nLater New York built over the site and forgot. Estimates put the number of burials around\nfifteen thousand.\n\nFour hundred and nineteen men, women and children were recovered from the part that was\nexcavated. Their descendants and this city's Black community fought to stop the\nconstruction, and won. The remains were studied, then reinterred here in 2003.\n\nIt is the earliest and largest African burial ground yet found in the United States, and\nit existed partly because of a rule: from 1697, Africans were barred from the city's main\nburial ground. So they made their own, out past the edge of town.\n\nYou are standing at the edge of town.\n",
     "teaser": "Twenty-four feet below the pavement.",
     "detail": "The memorial occupies a fraction of the original site; most of the burial ground remains\nunder the surrounding streets and buildings. It was designated a National Monument in\n2006.\n",
-    "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "Duane Street",
@@ -66,7 +66,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/african-burial-ground",
         "durationS": 110
       }
@@ -149,7 +149,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This is the oldest public park in the city, and the fence around it has been here since\n1771.\n\nLook at the tops of the posts. They used to have small crowns on them.\n\nOn the ninth of July 1776, the Declaration of Independence was read aloud to Washington's\ntroops a few streets north of here. The crowd came down to this green afterwards, where a\ngilded lead statue of King George the Third sat on horseback, and pulled it down.\n\nThe lead went to Connecticut and came back as musket balls. Somebody, at some point, took\na saw to the crowns on the fence.\n\nTwo hundred and fifty years later the fence is still standing and the crowns are still\nmissing, which is a fairly direct way of making a point.\n",
     "teaser": "The fence is original. Look at the tops of the posts.",
-    "voice": "hP72SDESIJq2YuAblBqz",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "pronunciations": [
       {
         "written": "Bowling Green",
@@ -183,7 +183,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/bowling-green-king-george",
         "durationS": 90
       }
@@ -337,7 +337,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the steps in front of the gate. Not the house — the steps.\n\nAt about a quarter to nine on the morning of the fifteenth of July, nineteen ninety-seven,\nGianni Versace came back up Ocean Drive carrying his magazines and stopped here to open\nhis own front door.\n\nA man walked up behind him and fired twice. Versace was fifty. He did not get through the\ndoor.\n\nPolice identified the man who shot him as Andrew Cunanan, already on the FBI's Ten Most\nWanted list. Eight days later Cunanan was found dead on a houseboat two miles north of\nwhere you are standing. He was never tried. He left nothing behind explaining any of it,\nand no motive has ever been established.\n\nBy the time he reached Miami Beach, four other people were already dead. Jeffrey Trail.\nDavid Madson. Lee Miglin. William Reese.\n\nThis address is famous because of who died at it.\n\nNobody stands outside the other four.\n",
     "teaser": "Look at the steps in front of the gate. Not the house.",
-    "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "Versace",
@@ -366,7 +366,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/casa-casuarina-the-steps",
         "durationS": 100
       }
@@ -540,7 +540,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This was not a park. It was the Common — the rough field outside town where you put the\nthings nobody wanted near them. A poorhouse. A prison. A gallows.\n\nOn the ninth of July 1776, George Washington had his army formed up on this ground, in\nsquares, and had an officer read out a document that had arrived from Philadelphia five\ndays earlier.\n\nThere is no record of the soldiers being told to do anything afterwards.\n\nWhat they did was walk down Broadway, about a mile, to the little green at the bottom of\nthe island, and pull a two-ton gilded statue of the king off its plinth.\n\nWashington was not pleased. He put out an order the next morning calling it disorderly,\nand asking that in future such matters be left to the proper authorities.\n\nThe war he had just read them into lasted another seven years.\n",
     "teaser": "This was not a park.",
-    "voice": "hP72SDESIJq2YuAblBqz",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
       "new-york",
       "revolution",
@@ -548,7 +548,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/city-hall-declaration",
         "durationS": 95
       }
@@ -645,7 +645,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look across the street, into the park. Those trees are Strawberry Fields. It is about a\nthree-minute walk, and you are going to make it in a moment.\n\nBehind you is the Dakota. John Lennon lived here with Yoko Ono and their son. Yoko Ono\nlives here still — this is not a monument, it is a building full of people's homes, so\nstay on the pavement and keep out of the archway.\n\nOn the eighth of December nineteen eighty, at around ten to eleven at night, Lennon came\nback from a recording session. He walked from the car towards that arch. A man who had\nbeen waiting near the entrance since the afternoon fired five shots, and four of them hit\nhim. Earlier the same day, Lennon had signed a record for him.\n\nThe police did not wait for an ambulance. They put him in the back of a patrol car and\ndrove him to Roosevelt Hospital, where he was pronounced dead. He was forty.\n\nThere is no marker here. There was never going to be one.\n\nCross at the lights and walk into the park.\n",
     "teaser": "Look across the street, into the park.",
-    "voice": "hP72SDESIJq2YuAblBqz",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "Dakota",
@@ -667,7 +667,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "renders": [
       {
-        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/dakota-three-minutes",
         "durationS": 110
       }
@@ -784,7 +784,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "On the fourth of December 1783, in an upstairs room of this building, George Washington\nsaid goodbye to the officers he had fought beside for eight years.\n\nThe British had sailed out of the harbour nine days earlier. The war was over, and he was\ngoing home to Virginia, believing he was finished with public life.\n\nBy the accounts that survive, he could not finish what he meant to say. He raised a glass,\nmanaged a few sentences, and then asked each man to come and take his hand. Grown soldiers\nwept. He walked out without trusting himself to speak again.\n\nSix years later he was back in this city, taking an oath three streets from here.\n",
     "teaser": "Upstairs, in the Long Room.",
-    "voice": "hP72SDESIJq2YuAblBqz",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
       "new-york",
       "revolution",
@@ -792,7 +792,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/fraunces-tavern-farewell",
         "durationS": 85
       }
@@ -877,7 +877,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down and to your left. That thin line of sand between the sea and the sound is the\nOuter Banks.\n\nOn the seventeenth of December nineteen oh three, on the dunes down there, an aeroplane\nleft the ground under its own power with a person aboard and landed at a point higher than\nwhere it started. It was in the air for twelve seconds and it travelled a hundred and\ntwenty feet.\n\nNow look along the cabin you are sitting in.\n\nDepending on the aircraft, that entire first flight would have started and finished\nwithout leaving this fuselage. They flew three more times that day; the longest covered\neight hundred and fifty-two feet.\n\nSixty-six years after the fourth flight, people landed on the moon.\n",
     "teaser": "Look down at the sandbar on your left. Then look along the cabin.",
-    "voice": "hP72SDESIJq2YuAblBqz",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
       "north-carolina",
       "outer-banks",
@@ -886,7 +886,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/kitty-hawk-shorter-than-this-plane",
         "durationS": 95
       }
@@ -924,7 +924,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "The road ahead curls around the side of the mountain on concrete legs.\n\nConstruction on the Blue Ridge Parkway started in nineteen thirty-five. This stretch —\nabout seven miles of it — did not open until nineteen eighty-seven.\n\nThe hold-up was the mountain. Grandfather Mountain is old, steep and unusually rich in\nrare plants, and the ordinary way to put a road across something like that is to cut a\nshelf into it and push the spoil over the side. Nobody was willing to do that here.\n\nSo they built it from the top down instead. Each segment of the viaduct was cast off-site,\ncarried out along the piece already finished, and lowered into place. Almost no heavy\nmachinery ever touched the ground underneath it.\n\nThe Parkway is four hundred and sixty-nine miles long. The last seven took a third of the\ntime.\n",
     "teaser": "The road you are on was the last part to be finished, and it took the longest.",
-    "voice": "hP72SDESIJq2YuAblBqz",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
       "blue-ridge",
       "north-carolina",
@@ -933,7 +933,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/linn-cove-viaduct-last-piece",
         "durationS": 100
       }
@@ -977,7 +977,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Almost everything you have driven through today grew back. The southern Appalachians were\nlogged hard between about eighteen eighty and nineteen thirty, and most of what looks\nancient out there is a century old at most.\n\nThe gorge on your right is the exception.\n\nIt is around two thousand feet deep with walls to match, and the timber companies looked\nat it and could not make the arithmetic work. There was no way to get logs out that cost\nless than the logs were worth.\n\nSo it was left. Not protected, not fought over — just skipped.\n\nIt is one of the few places in the eastern United States where you can look at a forest\nthat nobody ever got around to cutting down.\n",
     "teaser": "Almost every forest you have driven through today is second growth. One is not.",
-    "voice": "hP72SDESIJq2YuAblBqz",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
       "blue-ridge",
       "north-carolina",
@@ -986,7 +986,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/linville-gorge-too-steep",
         "durationS": 90
       }
@@ -1088,7 +1088,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "You are outside a café that has been on this corner since the middle of the eighties.\n\nIn the summer of nineteen ninety-seven a man came down here most mornings from a house\nthree blocks north. He sat outside. He bought a stack of magazines. The staff knew him by\nsight, the way staff know a regular.\n\nOn the fifteenth of July he did exactly that, and then he walked home.\n\nHis name was Gianni Versace, and this was the last ordinary hour of his life.\n\nIt is four blocks north along the beach side. About six minutes.\n\nTake it slowly. He did.\n",
     "teaser": "A café, a stack of magazines, and a four-block walk north.",
-    "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "Versace",
@@ -1109,7 +1109,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/news-cafe-last-ordinary-morning",
         "durationS": 65
       }
@@ -1193,7 +1193,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "If you can see the ground on the left, look for a pattern: a grid, interrupted at regular\nintervals by small green squares.\n\nThat layout was drawn in seventeen thirty-three, before there was a city to put it in.\nJames Oglethorpe laid out a repeating unit — a square with house lots and civic lots\naround it — and the plan was simply to keep repeating it as the place grew.\n\nTwenty-four were eventually built. Twenty-two are still there.\n\nCities almost never survive this. Street plans get widened for carts, then for trams, then\nfor cars, and the awkward bits get straightened out. Savannah's squares are exactly the\nawkward bits — they force traffic to slow down and go around.\n\nThree were lost to a road scheme in the nineteen fifties. One has since been put back.\n",
     "teaser": "If the cloud is thin, look for the pattern. You will know it when you see it.",
-    "voice": "hP72SDESIJq2YuAblBqz",
+    "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
       "georgia",
       "urban-planning",
@@ -1201,7 +1201,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/savannah-twenty-two-squares",
         "durationS": 90
       }
@@ -1239,7 +1239,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This is the oldest public building in Manhattan still doing the thing it was built to do.\n\nIt went up in 1766, when this was the northern edge of town and the front of the chapel\nfaced the river, because that was the direction people arrived from.\n\nTen years later a fire took a quarter of the city and stopped at its churchyard.\n\nGeorge Washington came here on the day he was inaugurated, and kept coming for the two\nyears New York was the capital. His pew is still inside.\n\nOn the eleventh of September 2001, the towers came down about a hundred metres from where\nyou are standing. Every window in this chapel survived. For eight months afterwards it\nwas where the recovery workers slept and ate and had their feet seen to.\n\nA sycamore tree in the churchyard took the weight of the debris that would otherwise have\nhit the building. It did not survive. The chapel did.\n",
     "teaser": "The oldest building in Manhattan still doing its job.",
-    "voice": "hP72SDESIJq2YuAblBqz",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "sycamore",
@@ -1268,7 +1268,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/st-pauls-still-standing",
         "durationS": 100
       }
@@ -1311,7 +1311,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stop at the mosaic and look down.\n\nOne word. The mosaic was a gift from the city of Naples.\n\nTurn around. Through the trees, you can still see the Dakota. You walked it in three\nminutes.\n\nThe city named this part of the park after a song rather than after a man. Yoko Ono wanted\na landscape instead of a statue, and she wanted it dedicated to peace rather than to what\nhappened across the road.\n\nSo there are two places, three minutes apart.\n\nOne is where he died. It is unmarked, and people live there.\n\nThe other is a word on the ground, and strangers sit around it all day.\n\nShe chose which one to build.\n",
     "teaser": "Stop at the mosaic and look down.",
-    "voice": "hP72SDESIJq2YuAblBqz",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "new-york",
       "central-park",
@@ -1327,7 +1327,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "renders": [
       {
-        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/strawberry-fields-one-word",
         "durationS": 70
       }
@@ -1425,7 +1425,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down the street. It runs river to river — you can very nearly see one end from the\nother.\n\nThat is not an accident. It is the width of the island, and in 1653 the Dutch decided to\nfence it off.\n\nThe governor, Peter Stuyvesant, ordered a palisade built right across here. Nine feet\nhigh, made of packed earth and fifteen-foot planks, running from the Hudson to the East\nRiver. It was meant to stop an English invasion.\n\nThe people who built it were mostly enslaved Africans, owned by the Dutch West India\nCompany.\n\nThe invasion never came. The English took the colony anyway, eleven years later, by\nsailing in and asking. And in 1699 they pulled the wall down and used the wood for\nsomething else.\n\nIt stood for forty-six years. It has been gone for more than three hundred.\n\nThe street kept the name — which means this is a street named after a thing that is not\nthere, put up by people who were never free to walk away from it.\n",
     "teaser": "Look down the street. It runs river to river.",
-    "voice": "hP72SDESIJq2YuAblBqz",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "Peter Stuyvesant",
@@ -1454,7 +1454,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "hP72SDESIJq2YuAblBqz",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/wall-street-the-wall",
         "durationS": 90
       }

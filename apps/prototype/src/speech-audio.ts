@@ -32,7 +32,7 @@ const CAST: Record<string, { pitch: number; rate: number; prefer: string[] }> = 
   // The default narrator.
   IMlxLW3qgn0MWgfz7Vnh: { pitch: 1.05, rate: 0.95, prefer: ["female", "samantha", "zira"] },
   // The male narrator.
-  hP72SDESIJq2YuAblBqz: { pitch: 0.82, rate: 0.93, prefer: ["male", "daniel", "alex", "david"] },
+  wC1005J19tvhoqqC2hkf: { pitch: 0.82, rate: 0.93, prefer: ["male", "daniel", "alex", "david"] },
   // The kids narrator.
   UrTldiIxfedDl9tlesyS: { pitch: 1.25, rate: 1.0, prefer: ["female", "karen", "moira"] },
 };

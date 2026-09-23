@@ -139,12 +139,40 @@ voices:
       owning a voice without employing one, and the thing that makes a series feel like a
       series.
 
-  - id: hP72SDESIJq2YuAblBqz
+  - id: wC1005J19tvhoqqC2hkf
+    role: Male narrator — the weight in the cast
     name: TODO — the voice's name in ElevenLabs
     provider: elevenlabs
     locale: TODO — e.g. en-GB or en-US
-    origin: TODO — run scripts/voice-info.mjs
-    redistributionCleared: false
+    # Designed on 23 September 2026, replacing the stock placeholder (hP72SDESIJq2YuAblBqz)
+    # that carried this role through the first pass.
+    origin: designed
+    # The brief it was designed from, kept verbatim — and the most carefully written of the
+    # three, because it is the one with a trap in front of it.
+    #
+    # This file argues below that a dedicated true-crime voice is the tempting fourth and
+    # the one to resist: a grave genre narrator makes tragedy sound like entertainment,
+    # which is what the Respect value warns against. That argument was aimed at a *genre*
+    # voice, and this brief is not one. It forbids the exact failure mode in its own words —
+    # "without sounding like a movie trailer", "avoid ... ominous exaggeration", "draws the
+    # listener closer rather than projecting at them". A restrained, warm, understated read
+    # treats difficult material more seriously than the default narrator would, not less.
+    #
+    # What survives of the caution is subtler and worth holding on to: casting *by category*
+    # signals genre whatever the voice sounds like. See the casting note below.
+    designPrompt: |
+      An original male narrator in his late forties with a refined but accessible deep
+      voice. His voice is deep, resonant, composed, and quietly compelling, with subtle
+      warmth beneath a serious exterior. He speaks slowly enough to create tension but
+      maintains natural conversational movement. Precise diction, grounded authority,
+      controlled emotion, and a slightly weathered vocal texture. He draws the listener
+      closer rather than projecting at them, creating suspense through pauses,
+      understatement, and careful emphasis. Sophisticated and cinematic without sounding
+      like a movie trailer, newsreader, stage actor, or aristocratic caricature. Avoid
+      excessive bass, ominous exaggeration, rigid formality, and resemblance to any
+      recognizable individual.
+    designedAt: "2026-09-23"
+    redistributionCleared: true
     notes: >-
       Male narrator. Listened to on 22 September 2026 and judged good.
 
@@ -227,10 +255,53 @@ voices:
 #
 #   Nothing else, until a category proves it needs one.
 #
-# True crime is the tempting fourth, and the one to resist. A distinctively grave narrator
-# makes it sound like entertainment, which is precisely what the Respect value warns against:
-# "avoid turning pain, tragedy or identity into disposable entertainment." A measured read
-# from a general narrator treats the subject more seriously than a genre voice does.
+# ── Casting the male narrator ─────────────────────────────────────────────────
+#
+# An earlier version of this file said a dedicated true-crime voice was the tempting fourth
+# and the one to resist, because a grave genre narrator makes tragedy sound like
+# entertainment — the Respect value's "avoid turning pain, tragedy or identity into
+# disposable entertainment."
+#
+# That still holds against a *genre* voice. It does not hold against the one we have, whose
+# brief forbids the failure mode by name: no movie trailer, no ominous exaggeration, drawing
+# the listener closer rather than projecting at them. Restraint reads as more serious, not
+# less.
+#
+# But one half of the caution survives, and it is about *casting*, not about sound. Give a
+# voice to one category and the voice becomes the category: the listener knows a murder is
+# coming before a word is spoken, however gently it is eventually read.
+#
+# That cuts both ways, which is why it is a judgement rather than a rule.
+#
+#   Against: it turns a narrator into a genre badge, and makes the product's most careful
+#   material sound like a strand.
+#
+#   For: it is a content warning delivered through craft instead of a dialog box. True
+#   crime already carries a mandatory `contentWarning`, and hearing that this one is
+#   different is a kinder way to be told than reading it.
+#
+# The resolution is to cast him for **weight, not genre**. True crime by default, as
+# proposed — plus the echoes that are not crime and are not light. Then the voice means
+# "this one is serious", which is both more useful to a listener and more honest about the
+# library than "this one is a murder".
+#
+# As cast on 23 September 2026 — seven echoes, and each one argued rather than filtered:
+#
+#   dakota-three-minutes              a man shot in an archway
+#   strawberry-fields-one-word        its memorial, three minutes away
+#   casa-casuarina-the-steps          a man shot on his own steps
+#   news-cafe-last-ordinary-morning   the hour before it
+#   african-burial-ground             the largest known African burial ground in North
+#                                     America, found under a building site
+#   wall-street-the-wall              a palisade built mostly by people who were not free
+#   st-pauls-still-standing           what stood between the chapel and the towers
+#
+# The last three are the point. None is true crime and all three are grave, and a cast that
+# could not reach them would be a genre badge after all. Equally: Washington's farewell at
+# Fraunces Tavern is poignant and not grave; a crowd pulling down a gilded king is nearly
+# funny; twelve seconds at Kitty Hawk is wonder. Those went back to the default narrator,
+# because casting everything old and important to the grave voice is the same mistake in a
+# longer coat.
 #
 # Worth knowing before adding voices at all: **voice is not delivery.** The same narrator can
 # be directed — ElevenLabs stability and style settings change the read considerably. A

@@ -8,6 +8,6 @@
  */
 export const VOICE_LABEL: Record<string, string> = {
   IMlxLW3qgn0MWgfz7Vnh: "Default narrator",
-  hP72SDESIJq2YuAblBqz: "Second narrator",
+  wC1005J19tvhoqqC2hkf: "Second narrator",
   UrTldiIxfedDl9tlesyS: "Narrator for children",
 };
