@@ -42,6 +42,39 @@ there is no rights budget in this phase.
 | Stripe | Premium tier, if we go consumer |
 | PostHog | Funnel analytics, self-hostable so airline data never leaves our control |
 
+## What we can actually cut
+
+The table above is the full arc through Phase 4. Asked what we need *to ship*, the honest
+answer is **three accounts, two of which we already hold** — and that is not corner-cutting,
+it falls directly out of decisions already made. The engine is pure TypeScript with no I/O,
+so it runs on the listener's device; content lives in git and compiles to static files;
+audio is rendered once. Nothing is generated at runtime, so there is nothing to run.
+
+### The MVP list
+
+| Service | Why it survives the cut |
+|---|---|
+| **GitHub** | Code and the content library with its editorial gate. Already held, free. |
+| **Cloudflare** (Pages + R2) | One account covers hosting *and* file storage, with zero egress fees. Picking one vendor for both is why this list is three lines rather than four. |
+| **ElevenLabs** | Narration. Nothing else does this. Already held. |
+| *(Anthropic API)* | Only if we draft with AI. With a copywriter writing, its remaining job is the fact-check pre-pass — smaller spend, and the highest-return one we have. |
+
+### What comes off, and when it comes back
+
+| Deferred | Why it is not needed yet | Bring it back when |
+|---|---|---|
+| **Supabase** (Postgres + PostGIS) | Content is in git and the corridor query runs client-side. There is no server-side query to accelerate. | Accounts, sync, or contributions land |
+| **Fly.io / Railway** | There is no API to host. The route package is a static file. | Same |
+| **MapTiler** | A per-load tile provider would cost ~$250/month at 100k listeners — more than three times everything else combined (`02-costs.md`). A self-hosted Protomaps extract on R2 costs cents and sidesteps the offline-caching licence problem at the same time. | Never, most likely |
+| **Google Places** | Enriches save-for-later, which is a Phase 4 feature. Build-time only when it arrives. | Save-for-later ships |
+| **Sentry** | Genuinely useful, free tier, and nothing is in anyone's hands yet. | First external testers |
+| **Vercel** | Cloudflare Pages does the same job in the account we already need for storage. | Only if we want preview URLs badly enough to run two vendors |
+| **Resend · Stripe · PostHog** | Phase 4 commercial layer. | There is something to charge for |
+
+The rule underneath all of this: **a service earns its place when something cannot be
+precomputed.** Almost nothing here cannot be precomputed, which is the same property that
+keeps the marginal cost per listener under a tenth of a penny.
+
 ## Two contract questions to start now, because they have long lead times
 1. **Voice licensing.** Whether the ElevenLabs plan permits redistribution inside a
    white-labelled airline product. If it does not, the fallback is a licensed voice actor
