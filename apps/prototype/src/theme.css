@@ -59,7 +59,7 @@
    * moves the guidance bar and the player with it.
    */
   --nav-h: 72px;
-  --sheet-h: 466px;
+  --sheet-h: 400px;
 }
 
 /**
@@ -208,7 +208,18 @@ body {
 .pin-heard .pin-found { fill: var(--ember-deep); }
 .pin-selected .pin-body { stroke-width: 2.6; }
 
-.here-dot { fill: var(--white); stroke: var(--aqua); stroke-width: 2.5; filter: drop-shadow(0 0 10px var(--aqua)); }
+/* You, drawn as how you are travelling. The disc is opaque because this sits over a grey
+   basemap and a figure alone would fight the streets under it for every stroke. */
+.here-disc {
+  fill: var(--space); stroke: var(--aqua); stroke-width: 2;
+  filter: drop-shadow(0 0 10px var(--aqua));
+}
+.here-figure {
+  fill: none; stroke: var(--aqua); stroke-width: 2.6;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+/* Which way you are moving, for the glyphs drawn from the side — a plane turns instead. */
+.here-pip { fill: var(--aqua); stroke: none; opacity: 0.9; }
 
 /* ── proximity bar: the haptic, made visible ─────────────── */
 .proximity {
@@ -287,11 +298,26 @@ body {
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .playing-mark {
-  flex: none; width: 38px; height: 38px; border-radius: 11px; cursor: pointer;
+  flex: none; width: 34px; height: 34px; border-radius: 11px; cursor: pointer;
   display: grid; place-items: center;
   background: transparent; color: var(--ember); border: 1px solid rgba(255, 158, 18, 0.45);
 }
-.playing-mark svg { width: 15px; height: 15px; fill: currentColor; }
+.playing-mark svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
+/* Skip is drawn filled; the bookmark is an outline until it is one of yours. */
+.playing-mark:last-of-type svg { fill: currentColor; stroke: none; }
+.playing-mark.on { background: var(--ember); color: #1a1000; border-color: var(--ember); }
+.playing-mark.on svg { fill: currentColor; }
+
+/* How far through. Two pixels, because it is a glance, not a scrubber — the scrubber is
+   in the sheet, where there is room to aim at it. */
+.playing-track {
+  height: 3px; border-radius: 99px; margin-top: 10px; overflow: hidden;
+  background: rgba(var(--rgb-hair), 0.16);
+}
+.playing-track span {
+  display: block; height: 100%; border-radius: 99px; background: var(--ember);
+  transition: width 0.3s linear;
+}
 .playing-mark:hover { background: rgba(255, 158, 18, 0.12); }
 .playing-next, .playing-missed {
   margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--line);
@@ -828,10 +854,19 @@ body {
 .grab { width: 38px; height: 4px; border-radius: 99px; background: rgba(var(--rgb-hair), 0.3); margin: 11px auto 6px; flex: none; }
 
 .now { padding: 4px 16px 9px; flex: none; }
-.now-top { display: flex; gap: 12px; align-items: center; }
+.now-top { display: flex; gap: 11px; align-items: center; }
 .now-text { min-width: 0; flex: 1; }
-.now h2 { font-size: 14.5px; font-weight: 600; line-height: 1.22; margin: 2px 0 1px; }
-.now p { font-size: 12px; color: var(--muted); }
+/* Two lines of title at most: a long one used to push place and length onto a fourth and
+   fifth line and turn a row into a paragraph. */
+.now h2 {
+  font-size: 14.5px; font-weight: 600; line-height: 1.22; margin: 2px 0 1px;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.now p {
+  font-size: 12px; color: var(--muted);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
 .now-idle h2 { font-size: 14px; color: var(--cool); }
 
 .play {
@@ -848,6 +883,17 @@ body {
 .tag-uncommon { background: rgba(108, 99, 255, 0.22); color: var(--indigo-soft); }
 .tag-rare { background: rgba(255, 158, 18, 0.16); color: var(--ember); }
 .tag-singular { background: rgba(255, 0, 122, 0.18); color: var(--magenta); }
+
+/* Matches the floating row's, so keeping an echo is the same gesture in the same place
+   whichever of the two is on screen. */
+.now-mark {
+  flex: none; width: 34px; height: 34px; border-radius: 11px; cursor: pointer;
+  display: grid; place-items: center;
+  background: transparent; color: var(--ember); border: 1px solid rgba(255, 158, 18, 0.45);
+}
+.now-mark svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
+.now-mark.on { background: var(--ember); color: #1a1000; border-color: var(--ember); }
+.now-mark.on svg { fill: currentColor; }
 
 .rarity-why { font-size: 11px; color: var(--muted); margin-top: 8px; font-style: italic; }
 
@@ -954,7 +1000,11 @@ body {
 /* The three detents. Set on `.screen` rather than on the sheet so the guidance bar and
    the player, which float above it, move with it. */
 .screen:has(.sheet-peek) { --sheet-h: 26dvh; }
-.screen:has(.sheet-half) { --sheet-h: min(466px, 52dvh); }
+/* 46, not 52. At 52 the sheet plus the tab bar plus the route ribbon left the map 16% of
+   the screen — the complaint that started all this — and the band was too short for the
+   control rail to wrap into fewer than four columns. Six points of height buys back both,
+   and costs the sheet one card it can be dragged up to see. */
+.screen:has(.sheet-half) { --sheet-h: min(400px, 46dvh); }
 .screen:has(.sheet-full) { --sheet-h: 86dvh; }
 /* Something playing wants room for the transport, but never at the cost of a peek that
    was asked for. */
@@ -1367,10 +1417,10 @@ body {
   .nav { padding-bottom: max(8px, env(safe-area-inset-bottom)); }
 
   :root {
-    /* Proportional, so the sheet never eats a short screen — the design's own
-       ratio is 466/822, and holding it keeps the map's geometry honest at any
-       height. Capped at the design value so a tall phone gains map, not sheet. */
-    --sheet-h: min(466px, 52dvh);
+    /* Proportional, so the sheet never eats a short screen. Capped so a tall phone
+       gains map, not sheet. The design's ratio was 466/822; this is 400/844, which
+       is the same sheet with the map given back the six points it was short. */
+    --sheet-h: min(400px, 46dvh);
   }
 
   /* The commentary is for reading beside the app, not on top of it. Below the
@@ -1427,11 +1477,39 @@ body {
    Vertical, because the map is the one surface that cannot spare height: the
    sheet already takes half the screen, and a horizontal strip would take more of
    what is left. Down the side costs 44px of width, which the map has. */
+/* Seven controls is 320px of rail, and at the half detent the strip of map between the
+   category chips and the sheet is about 150. Rather than clip three buttons off the bottom
+   where nobody would know they existed, the column wraps: it is one tall rail when the
+   sheet is down and two or three short ones when it is up, and every control stays on
+   screen at every height. `wrap-reverse` is what makes the new columns grow leftwards,
+   into the map, instead of off the right edge of the phone. */
 .rail {
   position: absolute; right: 10px; z-index: 26;
   top: calc(46px + 84px);
-  display: flex; flex-direction: column; gap: 8px;
+  /* The guidance bar sits in this band too, and a rail that wrapped into it put the
+     filter button on top of "getting warmer". `--guide-h` is zero on the carried modes,
+     which do not draw one. */
+  max-height: calc(
+    100% - 130px - var(--nav-h) - var(--sheet-h)
+    - var(--guide-h, 56px) - var(--now-h, 0px) - 10px
+  );
+  display: flex; flex-flow: column wrap-reverse; gap: 8px;
+  align-content: flex-start;
+  /* The column is as tall as the band whether or not it is full, and an empty stretch of
+     it must not swallow taps meant for the map underneath. */
+  pointer-events: none;
 }
+.rail > * { pointer-events: auto; }
+/* At the full detent there is no map left to control. Same rule the guidance bar follows. */
+.screen:has(.sheet-full) .rail,
+.screen:has(.sheet-playing.sheet-half) .rail { display: none; }
+/* Nobody diverts an aircraft towards a good story, so there is no guidance bar in the
+   carried modes and the rail gets the height back. */
+.stack-noguide,
+.screen:has(.sheet-playing.sheet-half) { --guide-h: 0px; }
+/* The floating player takes the bottom of the same band. Without this the last button on
+   the rail sat underneath it — present, tappable nowhere, which is worse than absent. */
+.screen:has(.playing) { --now-h: 110px; }
 .rail-btn {
   position: relative; width: 40px; height: 40px; flex: none;
   display: grid; place-items: center; cursor: pointer; border-radius: 13px;
@@ -1455,13 +1533,18 @@ body {
 }
 
 .rail-pop {
-  position: absolute; right: 48px; top: 0; width: 168px;
+  /* Clear of the rail's full width, not of one column: once it wraps, `right: 48px` put
+     the panel on top of the buttons it had just been opened from. */
+  position: absolute; right: 100%; margin-right: 8px; top: 0; width: 168px;
   display: flex; flex-direction: column; gap: 2px; padding: 6px;
   border-radius: 14px; background: rgba(var(--rgb-panel), 0.94);
   border: 1px solid var(--line-2); backdrop-filter: blur(14px);
   box-shadow: 0 12px 34px rgba(0, 0, 0, 0.45);
 }
-.rail-pop-filter { top: 48px; max-height: 46dvh; overflow-y: auto; scrollbar-width: none; }
+/* Anchored to the button they belong to. Recentre and download sit above both, so these
+   are the third and fourth slots at 48px a slot. */
+.rail-pop-mode { top: 96px; }
+.rail-pop-filter { top: 144px; max-height: 46dvh; overflow-y: auto; scrollbar-width: none; }
 .rail-pop-filter::-webkit-scrollbar { display: none; }
 .rail-item {
   display: flex; align-items: center; gap: 9px; width: 100%;
@@ -1494,3 +1577,5 @@ body {
 .rail-btn.kids-on {
   color: var(--space); background: var(--ember); border-color: var(--ember);
 }
+/* A journey already on the device is a quiet confirmation, not a call to action. */
+.rail-btn.ready { color: var(--aqua); border-color: rgba(var(--rgb-accent), 0.4); }

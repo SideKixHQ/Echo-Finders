@@ -17,20 +17,13 @@ import { Arrival } from "./Arrival";
 import { Preflight } from "./Preflight";
 import { Viewfinder } from "./Viewfinder";
 import { Rail } from "./Rail";
+import { MODE_PHRASE } from "./travel";
 import type { Detent } from "./Sheet";
 import type { Echo, EchoCategory } from "@echofinders/core";
 import { checkEligibility, findEchoesAlongRoute, presetFor, upcomingOnRoute, type Route } from "@echofinders/core";
 
 /** The walk is the richest route, so it is what the prototype opens on. */
 const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROUTES[0]!;
-
-const MODE_LABEL: Record<string, string> = {
-  flight: "in the air",
-  driving: "driving",
-  walking: "walking",
-  rail: "on the train",
-  cycling: "cycling",
-};
 
 export function App() {
   const [route, setRoute] = useState<Route>(DEFAULT_ROUTE);
@@ -115,6 +108,14 @@ export function App() {
    * a peek would slide the map's centre under the sheet it had just moved out of the way.
    */
   const [detent, setDetent] = useState<Detent>("half");
+  /**
+   * Whether the map is showing the whole journey rather than following the listener.
+   *
+   * Cleared the moment the journey starts, because that is the transition the two views
+   * exist either side of: before you set off the useful question is what the walk looks
+   * like, and from the first step it is where you are.
+   */
+  const [overview, setOverview] = useState(false);
   const [deleted, setDeleted] = useState<Set<string>>(new Set());
 
   // What the collection would actually hold, given the privacy settings and any deletion.
@@ -171,6 +172,7 @@ export function App() {
     // A choice belongs to the journey it was made for.
     setChosen(new Set());
     setCats(null);
+    setOverview(false);
   };
 
   const nowPlaying = state.playback.kind === "idle" ? null : state.playback.item.echo;
@@ -286,7 +288,7 @@ export function App() {
         <div className={selfDirected ? "screen" : "screen stack-noguide"}>
           <div className="statusbar">
             <span className="mono">10:42</span>
-            <span className="mono dim">{MODE_LABEL[route.mode] ?? route.mode}</span>
+            <span className="mono dim">{MODE_PHRASE[route.mode] ?? route.mode}</span>
           </div>
 
           {tab === "map" && (
@@ -318,6 +320,7 @@ export function App() {
                 selectedId={selectedId}
                 onSelect={setSelectedId}
                 detent={detent}
+                overview={overview}
               />
               <Rail
                 theme={theme}
@@ -342,15 +345,42 @@ export function App() {
                 }}
                 savedCount={chosen.size}
                 onSaved={() => setTab("listening")}
+                overview={overview}
+                onOverview={setOverview}
+                downloaded={started}
+                onDownload={() => setStarted(false)}
               />
               {selfDirected && <ProximityBar guidance={state.guidance} cue={state.cue} />}
-              {!nowPlaying && <NowPlaying
+              {/*
+                The floating row, and when it is allowed to exist.
+                
+                It was guarded on `!nowPlaying`, which is the same condition as playback
+                being idle — and the row renders nothing when playback is idle. So it has
+                never once appeared, and the queue it was written to make visible has never
+                been visible.
+                
+                The guard was trying to say something true, though: the sheet carries the
+                full transport, and two players on one screen is worse than none. The
+                honest version of that is the detent. With the sheet down — the walking
+                state, three-quarters map — there is no transport on screen and this is the
+                only thing that says what is in your ears. With the sheet up there is, and
+                this gets out of the way.
+              */}
+              {detent === "peek" && <NowPlaying
                 state={state.playback}
                 waiting={state.waiting}
                 deferred={state.deferred}
                 onPause={() => session.pause()}
                 onResume={() => session.resume()}
                 onSkip={() => session.skip()}
+                progress={progress}
+                saved={nowPlaying ? chosen.has(nowPlaying.id) : false}
+                onSave={(echo) => {
+                  const next = new Set(chosen);
+                  if (next.has(echo.id)) next.delete(echo.id);
+                  else next.add(echo.id);
+                  setChosen(next);
+                }}
               />}
               <Sheet
                 nearby={state.nearby.filter((n) => activeCats.has(n.echo.category))}
@@ -480,6 +510,7 @@ export function App() {
               onStart={(next) => {
                 if (next.id !== route.id) onSelectRoute(next);
                 setStarted(true);
+                setOverview(false);
               }}
             />
           )}
@@ -573,8 +604,10 @@ export function App() {
           hearing are different things, and nothing is lost, because it is in the collection.
         </p>
         <p className="dim">
-          No basemap: tile providers are unreachable from this environment, and the pin
-          states are the point. A real map slots in underneath unchanged.
+          The basemap is Esri's grey canvas, tiled in Web Mercator and projected by the
+          same code that places the pins. It is dimmed on purpose: it is a backdrop for the
+          route, not a thing to read. A tile that cannot be fetched hides itself, so a bad
+          network degrades the map rather than breaking the screen.
         </p>
         <div className="controls">
           <button onClick={togglePause}>{paused ? "Resume" : "Pause"}</button>

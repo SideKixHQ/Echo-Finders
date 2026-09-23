@@ -16,6 +16,7 @@
 
 import {
   RouteProfile,
+  bearingDeg,
   buildRouteGeometry,
   pointAtDistance,
   presetFor,
@@ -123,7 +124,20 @@ export class SimulatedJourney implements LocationSource {
       this.clockMs += simSeconds * 1000;
     }
 
-    const at = pointAtDistance(this.geometry, this.profile.distanceAtTime(this.elapsedS));
+    const km = this.profile.distanceAtTime(this.elapsedS);
+    const at = pointAtDistance(this.geometry, km);
+    /*
+     * Which way the traveller is going, from a short look-ahead — the same method
+     * `positionAtTime` uses, so the simulated fix and the dead-reckoned one agree.
+     *
+     * The field was simply never filled, and `Position.headingDeg` is optional, so nothing
+     * complained: the map's marker, the viewfinder's alignment and the archive's turn
+     * hints were all being handed "no compass" by a source that knows the answer exactly.
+     * Course over ground, not compass facing — at the end of a route there is no course,
+     * and saying nothing is better than saying north.
+     */
+    const ahead = pointAtDistance(this.geometry, Math.min(km + 0.01, this.profile.totalKm));
+    const heading = km >= this.profile.totalKm ? undefined : bearingDeg(at, ahead);
     // Jitter sized to the accuracy being claimed, so the smoothing in ProximityGuide is
     // doing real work rather than being handed a perfect signal it would never see.
     const jitterDeg = this.options.accuracyM / 111_320;
@@ -132,6 +146,7 @@ export class SimulatedJourney implements LocationSource {
         lat: at.lat + (Math.random() - 0.5) * jitterDeg,
         lng: at.lng + (Math.random() - 0.5) * jitterDeg,
       },
+      ...(heading === undefined ? {} : { headingDeg: heading }),
       accuracyM: this.options.accuracyM,
       timestamp: this.clockMs,
       source: this.source,

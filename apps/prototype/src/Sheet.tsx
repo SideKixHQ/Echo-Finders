@@ -159,13 +159,21 @@ export function Sheet({
           onPlay={onPlay}
           onPause={onPause}
           onResume={onResume}
+          saved={saved.has(lastCapture.echo.id)}
+          onSave={onSave}
           {...(onCamera ? { onCamera } : {})}
         />
       ) : nowPlaying ? null : (
         <Idle count={captured.length} selfDirected={selfDirected} autoPlay={autoPlay} />
       )}
 
-      {nowPlaying && (
+      {/*
+        Peek is a sheet with about two hundred pixels in it, and the transport alone is
+        taller than that — drawn here it was cut in half by the sheet's own bottom edge.
+        The floating row over the map is the player at that height; this is the player at
+        every other height, and there is never more than one of them.
+      */}
+      {nowPlaying && detent !== "peek" && (
         <Player
           echo={nowPlaying}
           onPlayPause={playing ? onPause : onResume}
@@ -249,6 +257,8 @@ function Found({
   onPlay,
   onPause,
   onResume,
+  saved,
+  onSave,
   onCamera,
 }: {
   capture: CaptureEvent;
@@ -257,6 +267,8 @@ function Found({
   onPlay: (echo: Echo) => void;
   onPause: () => void;
   onResume: () => void;
+  saved: boolean;
+  onSave: (echo: Echo) => void;
   onCamera?: (echo: Echo) => void;
 }) {
   const rarity = rarityOf(capture.echo);
@@ -285,8 +297,27 @@ function Found({
         <div className="now-text">
           <span className={`tag tag-${rarity}`}>Found · {rarity}</span>
           <h2>{capture.echo.title}</h2>
-          <p>{capture.echo.point.place}</p>
+          {/* Place and length on one line, because the decision this row exists to support
+              is whether to listen now, and that is a question about both. */}
+          <p>
+            {capture.echo.point.place} · {clock(capture.echo.durationS)}
+          </p>
         </div>
+
+        {/*
+          Keeping it is a separate act from hearing it, and it is the one with a deadline:
+          walk on and the row is replaced by the next thing you find.
+        */}
+        <button
+          className={saved ? "now-mark on" : "now-mark"}
+          onClick={() => onSave(capture.echo)}
+          aria-pressed={saved}
+          aria-label={saved ? "Saved" : "Save this echo"}
+        >
+          <svg viewBox="0 0 24 24">
+            <path d="M18 21l-6-3.6L6 21V5.4A1.4 1.4 0 0 1 7.4 4h9.2A1.4 1.4 0 0 1 18 5.4z" />
+          </svg>
+        </button>
       </div>
       {/* Rarity as a sentence, not a badge. A tier icon means nothing; this means something. */}
       {reasons.length > 0 && <p className="rarity-why">{reasons[0]}</p>}
@@ -331,6 +362,10 @@ function Idle({
 
 
 
+/** Minutes and seconds, as a listener reads a length. */
+const clock = (seconds: number) =>
+  `${Math.floor(seconds / 60)}:${String(Math.round(seconds % 60)).padStart(2, "0")}`;
+
 /**
  * Fractions of the viewport each detent settles at.
  *
@@ -339,7 +374,7 @@ function Idle({
  * while somebody is actually walking; half is for browsing what is around them, and full
  * is for working through the list sitting down.
  */
-const DETENTS: Record<Detent, number> = { peek: 0.26, half: 0.52, full: 0.86 };
+const DETENTS: Record<Detent, number> = { peek: 0.26, half: 0.46, full: 0.86 };
 
 const nextDetent = (from: Detent): Detent =>
   from === "peek" ? "half" : from === "half" ? "full" : "peek";

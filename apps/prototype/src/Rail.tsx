@@ -18,6 +18,7 @@
 import { useState } from "react";
 import type { EchoCategory, Route, TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL, CATEGORY_ORDER } from "./categories";
+import { MODE_ICON, MODE_LABEL } from "./travel";
 
 export interface RailProps {
   readonly theme: "dark" | "light";
@@ -35,19 +36,19 @@ export interface RailProps {
   /** Kids mode, for the whole app. An age the engine gates on, not a filter. */
   readonly kids: boolean;
   readonly onKids: (on: boolean) => void;
+  /** Showing the whole journey rather than following the listener. */
+  readonly overview: boolean;
+  readonly onOverview: (overview: boolean) => void;
+  /** Back to the package screen: which journey, and how big it is to carry. */
+  readonly onDownload: () => void;
+  /** Whether the journey is already on the device. */
+  readonly downloaded: boolean;
 }
 
 type Panel = "mode" | "filter" | null;
 
 /** One representative route per mode, so the switch offers journeys rather than jargon. */
 const MODE_ORDER: readonly TravelMode[] = ["walking", "driving", "flight"];
-const MODE_LABEL: Record<string, string> = {
-  walking: "Walk",
-  driving: "Drive",
-  flight: "Fly",
-  rail: "Train",
-  cycling: "Cycle",
-};
 
 export function Rail({
   theme,
@@ -64,6 +65,10 @@ export function Rail({
   onSaved,
   kids,
   onKids,
+  overview,
+  onOverview,
+  onDownload,
+  downloaded,
 }: RailProps) {
   const [panel, setPanel] = useState<Panel>(null);
   const show = (next: Panel) => setPanel(panel === next ? null : next);
@@ -71,6 +76,61 @@ export function Rail({
 
   return (
     <div className="rail">
+      {/*
+        Recentre, first, because it is the only button here that puts right what the others
+        can break. Tapping a pin, dragging the sheet up, switching mode — any of them can
+        leave a walker looking at a piece of map they are not standing on, and the way back
+        should not be a guess.
+
+        It is a toggle rather than a one-way button: the two states answer different
+        questions — *where am I* and *what is this walk* — and both are worth asking. Marked
+        rather than lit while in overview, because overview is a departure from the normal
+        state of the map, not a mode you are meant to settle in.
+      */}
+      <button
+        className={overview ? "rail-btn marked" : "rail-btn"}
+        onClick={() => onOverview(!overview)}
+        aria-pressed={overview}
+        aria-label={overview ? "Follow me" : "Whole journey"}
+      >
+        {overview ? (
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="6.4" />
+            <circle cx="12" cy="12" r="1.7" fill="currentColor" stroke="none" />
+            <path d="M12 2.2v3.1M12 18.7v3.1M2.2 12h3.1M18.7 12h3.1" />
+          </svg>
+        ) : (
+          <svg viewBox="0 0 24 24">
+            <path d="M3 8.2l6-2.7 6 2.7 6-2.7v10.3l-6 2.7-6-2.7-6 2.7z" />
+            <path d="M9 5.5v13M15 8.2v13" />
+          </svg>
+        )}
+      </button>
+
+      {/*
+        The package. An aircraft has no signal and a foreign city has no data plan worth
+        using, so carrying the journey is not a power-user feature — it is the difference
+        between the app working and not (ADR-0003). That earns a permanent button rather
+        than a screen you can only reach by starting over.
+      */}
+      <button
+        className={downloaded ? "rail-btn ready" : "rail-btn marked"}
+        onClick={onDownload}
+        aria-label={downloaded ? "Journey downloaded" : "Download this journey"}
+      >
+        {downloaded ? (
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3.2a8.8 8.8 0 1 1-6.2 2.6" />
+            <path d="M8.2 11.8l3 3 5.6-6.4" />
+          </svg>
+        ) : (
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3.2v10.6M8 10l4 3.8 4-3.8" />
+            <path d="M4.2 16.4v2.9a1.5 1.5 0 0 0 1.5 1.5h12.6a1.5 1.5 0 0 0 1.5-1.5v-2.9" />
+          </svg>
+        )}
+      </button>
+
       {/* Mode. The richest route per mode, so switching lands somewhere worth being rather
           than on whichever one happens to sort first. */}
       <button
@@ -79,7 +139,7 @@ export function Rail({
         aria-label="Travel mode"
         aria-expanded={panel === "mode"}
       >
-        {MODE_ICON[route.mode] ?? MODE_ICON["walking"]}
+        <svg viewBox="0 0 24 24">{MODE_ICON[route.mode] ?? MODE_ICON.walking}</svg>
       </button>
 
       <button
@@ -137,7 +197,7 @@ export function Rail({
       </button>
 
       {panel === "mode" && (
-        <div className="rail-pop">
+        <div className="rail-pop rail-pop-mode">
           {MODE_ORDER.map((mode) => {
             // The richest route in this mode: switching to "Fly" should find the flight
             // with fifty echoes on it, not whichever one sorts first with two.
@@ -154,7 +214,7 @@ export function Rail({
                   setPanel(null);
                 }}
               >
-                {MODE_ICON[mode]}
+                <svg viewBox="0 0 24 24">{MODE_ICON[mode]}</svg>
                 <span>{MODE_LABEL[mode] ?? mode}</span>
                 <em>{counts[best.id] ?? 0}</em>
               </button>
@@ -184,24 +244,3 @@ export function Rail({
     </div>
   );
 }
-
-const MODE_ICON: Record<string, JSX.Element> = {
-  walking: (
-    <svg viewBox="0 0 24 24">
-      <circle cx="13" cy="4" r="2" />
-      <path d="M12.5 22l-1-6-3-3 1.5-5 3 1.5 2.5 2.5M9.5 8L7 10.5M11.5 16l-3 6" />
-    </svg>
-  ),
-  driving: (
-    <svg viewBox="0 0 24 24">
-      <path d="M4 16v-3.5L6 7h12l2 5.5V16M4 16h16M4 16v2.5M20 16v2.5" />
-      <circle cx="7.5" cy="16" r="1.6" />
-      <circle cx="16.5" cy="16" r="1.6" />
-    </svg>
-  ),
-  flight: (
-    <svg viewBox="0 0 24 24">
-      <path d="M21 15.5l-8.5-2.5V6.2a1.7 1.7 0 0 0-3.4 0V13L3 15.5V17l6.1-1.6v3.4L7 20.4V22l3.8-1 3.8 1v-1.6l-2.1-1.6v-3.4L21 17z" />
-    </svg>
-  ),
-};

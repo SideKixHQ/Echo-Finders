@@ -1,9 +1,11 @@
 /**
  * The map.
  *
- * Drawn as vector geometry rather than over a basemap, because tile providers are
- * unreachable from this environment and because the pin states are the point — a real
- * basemap slots in underneath without changing any of this.
+ * A tiled basemap underneath, and the route, the pins and the listener drawn over it in
+ * one SVG that shares the basemap's projection — so nothing can drift between a pin and
+ * the street it is meant to be on. A tile that will not load hides itself, which is what
+ * lets the whole thing degrade to the dark background and the vector route rather than to
+ * a page of broken images.
  *
  * Four pin states, and they have to be legible at a glance, in sunlight, while walking:
  *
@@ -21,6 +23,7 @@
 import { useMemo } from "react";
 import { CATEGORY_ICON } from "./categories";
 import { TILE_ATTRIBUTION, TILE_URL, planTiles, toWorld } from "./tiles";
+import { MODE_ICON } from "./travel";
 import {
   buildRouteGeometry,
   distanceKm,
@@ -31,6 +34,7 @@ import {
   type LatLng,
   type Position,
   type Route,
+  type TravelMode,
 } from "@echofinders/core";
 
 export type PinState = "sealed" | "opening" | "captured" | "heard";
@@ -45,6 +49,15 @@ interface Props {
   readonly onSelect: (echoId: string) => void;
   /** How much of the screen the sheet is taking, so the view centres on what is visible. */
   readonly detent: "peek" | "half" | "full";
+  /**
+   * Show the whole journey instead of following the listener.
+   *
+   * The two are genuinely different questions — *where am I* and *what is this walk* — and
+   * a map can only answer one at a time. Following is the right default once you are
+   * moving; the overview is what you want before you set off, and after you have found
+   * something and wonder what else is out there.
+   */
+  readonly overview: boolean;
 }
 
 /*
@@ -74,19 +87,27 @@ const H = 822;
  * height and change this with it.
  */
 const NAV_H = 72;
-/** Matches the detents in `Sheet.tsx`, as fractions of the screen. */
-const SHEET_FRACTION = { peek: 0.26, half: 0.52, full: 0.86 } as const;
+/** Matches the detents in `Sheet.tsx` and in `theme.css`, as fractions of the screen. */
+const SHEET_FRACTION = { peek: 0.26, half: 0.46, full: 0.86 } as const;
 /** Half a pin, so a pin *centre* never lands under the chrome and no pin is half-eaten. */
 const PIN_R = 16;
 /** The route ribbon and the category chips, which float over the map's top edge. */
 const MAPBAR_H = 119;
-const insetFor = (detent: keyof typeof SHEET_FRACTION) => ({
+/**
+ * The guidance bar, which floats above the sheet on every mode that can steer.
+ *
+ * Height plus its gap. It was not in this sum, so on a walk the bottom of the route ran
+ * underneath "getting warmer" — invisible, and in the one place a walker is most likely to
+ * be looking. Carried modes do not draw it and get the height back.
+ */
+const GUIDE_H = 56;
+const insetFor = (detent: keyof typeof SHEET_FRACTION, guided: boolean) => ({
   top: MAPBAR_H + PIN_R / 2,
-  bottom: NAV_H + H * SHEET_FRACTION[detent] + PIN_R / 2,
+  bottom: NAV_H + H * SHEET_FRACTION[detent] + (guided ? GUIDE_H : 0) + PIN_R / 2,
   side: 30,
 });
 
-export function RouteMap({ route, library, position, opening, stateOf, selectedId, onSelect, detent }: Props) {
+export function RouteMap({ route, library, position, opening, stateOf, selectedId, onSelect, detent, overview }: Props) {
   /**
    * The view follows the listener, rather than fitting the whole journey.
    *
@@ -105,7 +126,7 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
    * question is what the whole journey looks like.
    */
   const projection = useMemo(() => {
-    const INSET = insetFor(detent);
+    const INSET = insetFor(detent, presetFor(route.mode).selfDirected);
     const geometry = buildRouteGeometry(route);
 
     // The band actually visible between the chips and the sheet. The listener belongs in
@@ -119,7 +140,7 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
     /** How wide the view is on the ground, km, measured across its width. */
     let spanKm: number;
 
-    if (position) {
+    if (position && !overview) {
       centre = position.at;
       // Twice the corridor: on foot a couple of streets, in the air a couple of hundred
       // kilometres. The same number that already decides what counts as near on this mode.
@@ -161,7 +182,7 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
     project.plan = plan;
     project.viewport = { left: INSET.side, top: INSET.top, usableW, usableH };
     return project;
-  }, [route, library, position, detent]);
+  }, [route, library, position, detent, overview]);
 
   const path = useMemo(() => {
     const geometry = buildRouteGeometry(route);
@@ -344,13 +365,57 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
       <text className="map-credit" x={W - 8} y={H - NAV_H - 8} textAnchor="end">
         {TILE_ATTRIBUTION}
       </text>
-      {here && (
-        <g className="here" transform={`translate(${here.x.toFixed(1)} ${here.y.toFixed(1)})`}>
-          <circle r="26" fill="url(#hereGlow)" />
-          <circle className="here-dot" r="6" />
-        </g>
-      )}
+      {here && <Here x={here.x} y={here.y} mode={route.mode} headingDeg={position?.headingDeg ?? null} />}
     </svg>
+  );
+}
+
+/**
+ * You, and how you are travelling.
+ *
+ * It was a dot, and a dot says *you are here* — which the map already implies by drawing a
+ * route under it. The figure says *you are here, on foot*, and that second half is not
+ * decoration on this product: the mode decides the corridor width, the timing tolerance and
+ * whether guidance is offered at all, so a listener who has switched from the walk to the
+ * flight and not noticed is looking at a map that behaves nothing like the one they think
+ * they are reading. One glyph, glanced at, is cheaper than a label nobody reads.
+ *
+ * Heading is drawn two ways, and the split is about what view the glyph is in rather than
+ * about which modes matter. A plane is drawn from above — the same view the map is in — so
+ * it can simply point where it is going, which is how every flight tracker ever made draws
+ * it. A person, a car and a bicycle are drawn from the side, and rotating a side view is
+ * how you get a pedestrian lying down at the top of the screen. Those keep their feet and
+ * get a pip on the rim instead.
+ *
+ * `headingDeg` is course over ground, not compass facing: it is which way you are moving,
+ * not which way you are pointing. Standing still it is meaningless, and the route profile
+ * reports zero at the end of a journey, so the pip goes away rather than confidently
+ * pointing north at somebody who has stopped.
+ */
+function Here({
+  x,
+  y,
+  mode,
+  headingDeg,
+}: {
+  x: number;
+  y: number;
+  mode: TravelMode;
+  headingDeg: number | null;
+}) {
+  // Drawn from above, so the glyph itself can carry the heading.
+  const planView = mode === "flight";
+  const spin = headingDeg !== null ? `rotate(${headingDeg.toFixed(1)})` : undefined;
+
+  return (
+    <g className={`here here-${mode}`} transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`}>
+      <circle r="26" fill="url(#hereGlow)" />
+      {spin && !planView && <path className="here-pip" d="M0 -25.5L5.4 -16.5H-5.4Z" transform={spin} />}
+      <circle className="here-disc" r="13" />
+      <g className="here-figure" transform={`${planView && spin ? spin : ""} translate(-7.5 -7.5) scale(0.625)`}>
+        {MODE_ICON[mode] ?? MODE_ICON.walking}
+      </g>
+    </g>
   );
 }
 
