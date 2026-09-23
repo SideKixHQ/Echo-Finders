@@ -8,6 +8,29 @@
 # re-rendering every echo AND re-timing every transcript — it roughly doubles both TTS cost
 # and offline package size. Worth doing; not worth doing by accident.
 
+# ── Do not delete a voice ─────────────────────────────────────────────────────
+#
+# A voice id is a pointer into the ElevenLabs account, not a copy of the voice. Delete the
+# voice and every id below stops resolving — no render, no re-render, no correction.
+#
+# For a **designed** voice this is unrecoverable. Voice Design is not deterministic: feeding
+# the same description in again produces a different voice, not the same one back. There is
+# no export, no backup and no undo. The account is the only copy.
+#
+# Two things follow.
+#
+# **Before the library is rendered, this is the single point of failure in the project.**
+# Losing the voice means re-rendering everything that exists in a voice that is not the one
+# anybody approved.
+#
+# **Afterwards the exposure shrinks but does not close.** Rendered mp3s are ours and live in
+# our own storage, so past echoes are safe. But every correction, every new echo and every
+# re-timed transcript needs the same voice — and a library where echo 47 was fixed in a
+# different voice is a broken library, not a slightly inconsistent one.
+#
+# Worth checking against the plan, too: custom voice slots are usually tied to the
+# subscription tier, so downgrading can remove voices. Confirm before changing plan.
+
 # ── Finding out what a voice is ───────────────────────────────────────────────
 #
 # The ElevenLabs interface does not put "where did this voice come from" anywhere obvious,
