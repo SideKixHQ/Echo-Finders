@@ -1147,7 +1147,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "You are standing on a street that was paved with rubbish.\n\nLook at the name. Pearl Street. The Dutch called it that because the ground here was\nwhite — not with stone, but with oyster shells. Millions of them, crushed flat and\ntrodden down until they made a road.\n\nFour hundred years ago, the water around this island held about half of all the oysters\nin the world. Three hundred and fifty square miles of oyster beds. Some of the oysters\nwere as big as a dinner plate.\n\nThere were so many that they were cheap, so everybody ate them. Not in restaurants — from\ncarts in the street, the way you might buy a hot dog now. You ate the oyster, and you\nthrew the shell on the ground.\n\nEnough people did that, for enough years, that the shells became the street.\n\nOne more thing. The Dutch kept opening them to look for pearls. They never found a single\none. New York oysters don't make them.\n",
     "teaser": "Why is it called Pearl Street?",
-    "voice": "MkTSSXNgnBULS6ek4pon",
+    "voice": "UrTldiIxfedDl9tlesyS",
     "tags": [
       "new-york",
       "oysters",
@@ -1156,7 +1156,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "MkTSSXNgnBULS6ek4pon",
+        "voiceId": "UrTldiIxfedDl9tlesyS",
         "audioKey": "speech/pearl-street-oysters",
         "durationS": 85
       }

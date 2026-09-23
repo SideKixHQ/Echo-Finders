@@ -31,15 +31,16 @@
 # Worth checking against the plan, too: custom voice slots are tied to the subscription
 # tier, so downgrading can remove voices. Confirm before changing plan.
 #
-# **This account holds one custom voice at a time** (23 September 2026). That slot is spent,
-# correctly, on the designed default narrator — the one voice that is ours rather than
-# rented, and the only one that cannot be replaced.
+# **Two designed voices are held as of 23 September 2026** — the default narrator and the
+# kids narrator — alongside one stock voice. Custom-voice slots were briefly thought to be
+# limited to one on this plan; in the event both designs coexist. Worth re-checking before
+# any plan change, because the limit is real on some tiers and a downgrade removing a
+# designed voice is the unrecoverable case above.
 #
-# It is a smaller constraint than it sounds, because *stock voices do not occupy the slot*.
-# A cast of one designed narrator plus stock voices for the rest is available on this plan
-# today. What is not available is a second *designed* voice, and that is the right thing to
-# be unable to do: see the note on how many voices, below. One distinctive voice that is
-# unmistakably ours is worth more than three that anyone could pick.
+# Stock voices do not occupy a custom slot, which is why the male narrator costs nothing to
+# keep. It is also the reason a third *designed* voice should be argued for rather than
+# assumed: see the note on how many voices, below. One sound that is unmistakably ours is
+# worth more than several that anyone could pick.
 
 # ── Finding out what a voice is ───────────────────────────────────────────────
 #
@@ -168,15 +169,14 @@ voices:
       accessibility — some listeners genuinely follow one voice more easily. A cast serves
       the listening experience. They can coexist, but only the picker costs double.
 
-  - id: MkTSSXNgnBULS6ek4pon
+  - id: UrTldiIxfedDl9tlesyS
     role: Kids narrator
     name: TODO — the voice's name in ElevenLabs
     provider: elevenlabs
     locale: en-US
-    # ⚠ THIS ID IS STALE. A kids voice was designed on 23 September 2026 and its brief is
-    # recorded below, but the id it produced has not reached this file yet — the one here is
-    # the stock placeholder from the first pass. Nothing should be rendered in the kids voice
-    # until it is replaced, or twenty-odd echoes come back in the wrong narrator.
+    # Designed on 23 September 2026, replacing the stock placeholder (MkTSSXNgnBULS6ek4pon)
+    # that carried this role through the first pass. Ours, not rented, and resembling no
+    # performer — see the brief below.
     origin: designed
     # The brief it was designed from, kept verbatim. Same three reasons as the default
     # narrator: it records intent, it is editorial direction as much as audio direction, and
@@ -198,7 +198,9 @@ voices:
       and a comfortable medium pace. Avoid cartoon qualities, exaggerated enthusiasm, sales
       language, and resemblance to any recognizable performer.
     designedAt: "2026-09-23"
-    redistributionCleared: false
+    # Same basis as the default narrator: designed from a description, so no person's
+    # publicity right attaches, and chosen under a plan permitting redistribution for life.
+    redistributionCleared: true
     notes: >-
       Kids narrator. The one extra voice that earns itself: children's content read by an
       adult documentary narrator sounds wrong in a way no direction fixes.

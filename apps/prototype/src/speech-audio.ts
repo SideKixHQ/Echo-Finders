@@ -34,7 +34,7 @@ const CAST: Record<string, { pitch: number; rate: number; prefer: string[] }> = 
   // The male narrator.
   hP72SDESIJq2YuAblBqz: { pitch: 0.82, rate: 0.93, prefer: ["male", "daniel", "alex", "david"] },
   // The kids narrator.
-  MkTSSXNgnBULS6ek4pon: { pitch: 1.25, rate: 1.0, prefer: ["female", "karen", "moira"] },
+  UrTldiIxfedDl9tlesyS: { pitch: 1.25, rate: 1.0, prefer: ["female", "karen", "moira"] },
 };
 
 export class SpeechAudio implements AudioSink {
