@@ -169,10 +169,35 @@ voices:
       the listening experience. They can coexist, but only the picker costs double.
 
   - id: MkTSSXNgnBULS6ek4pon
+    role: Kids narrator
     name: TODO — the voice's name in ElevenLabs
     provider: elevenlabs
-    locale: TODO — e.g. en-GB or en-US
-    origin: TODO — run scripts/voice-info.mjs
+    locale: en-US
+    # ⚠ THIS ID IS STALE. A kids voice was designed on 23 September 2026 and its brief is
+    # recorded below, but the id it produced has not reached this file yet — the one here is
+    # the stock placeholder from the first pass. Nothing should be rendered in the kids voice
+    # until it is replaced, or twenty-odd echoes come back in the wrong narrator.
+    origin: designed
+    # The brief it was designed from, kept verbatim. Same three reasons as the default
+    # narrator: it records intent, it is editorial direction as much as audio direction, and
+    # its final sentence — "avoid ... resemblance to any recognizable performer" — is dated
+    # contemporaneous evidence for docs/protection-policy.md, Risk 4.
+    #
+    # Read the middle of it as a writing rule, because it is one: "engaging children and
+    # adults without sounding childish". That is the same line this file already draws about
+    # not casting the kids voice at plain-language cuts — a shorter telling is not a younger
+    # listener, and treating them as one is patronising.
+    designPrompt: |
+      An original female storyteller in her early thirties with a clear contemporary
+      American accent. Her voice is bright, welcoming, curious, and naturally expressive,
+      with a light-medium pitch and a genuine sense of discovery. She speaks with energetic
+      clarity and a friendly smile in her voice, engaging children and adults without
+      sounding childish, overly cheerful, or like a classroom instructor. Her delivery is
+      conversational and animated, using subtle shifts in emphasis to make surprising facts
+      feel exciting. Warm, intelligent, playful, and trustworthy, with crisp pronunciation
+      and a comfortable medium pace. Avoid cartoon qualities, exaggerated enthusiasm, sales
+      language, and resemblance to any recognizable performer.
+    designedAt: "2026-09-23"
     redistributionCleared: false
     notes: >-
       Kids narrator. The one extra voice that earns itself: children's content read by an
