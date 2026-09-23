@@ -1480,3 +1480,11 @@ body {
 
 /* The commentary keeps the demo-only controls — pause, seek, narration — that have no
    place on a rail a real listener would use. */
+
+/* The basemap. Dimmed and desaturated so it stays underneath: the design's grey is a
+   backdrop for the route and the pins, not a thing to read. */
+.map-tile { opacity: 0.85; }
+.map-credit {
+  fill: rgba(var(--rgb-hair), 0.4); font-size: 8.5px;
+  font-family: "Space Grotesk", monospace; pointer-events: none;
+}

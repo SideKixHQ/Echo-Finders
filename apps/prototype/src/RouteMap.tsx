@@ -20,6 +20,7 @@
 
 import { useMemo } from "react";
 import { CATEGORY_ICON } from "./categories";
+import { TILE_ATTRIBUTION, TILE_URL, planTiles, toWorld } from "./tiles";
 import {
   buildRouteGeometry,
   distanceKm,
@@ -115,18 +116,14 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
     const centreY = INSET.top + usableH / 2;
 
     let centre: LatLng;
-    let spanLat: number;
-    let spanLng: number;
-    let lngScale: number;
+    /** How wide the view is on the ground, km, measured across its width. */
+    let spanKm: number;
 
     if (position) {
       centre = position.at;
-      lngScale = Math.cos((centre.lat * Math.PI) / 180);
-      // Twice the corridor across the short side: on foot a couple of streets, in the air
-      // a couple of hundred kilometres.
-      const windowKm = presetFor(route.mode).corridorKm * 2;
-      spanLat = (windowKm / 111.32) * (usableH / Math.min(usableW, usableH));
-      spanLng = spanLat / lngScale;
+      // Twice the corridor: on foot a couple of streets, in the air a couple of hundred
+      // kilometres. The same number that already decides what counts as near on this mode.
+      spanKm = presetFor(route.mode).corridorKm * 2;
     } else {
       const points = [...geometry.points, ...library.map((e) => e.point.at)];
       const lats = points.map((p) => p.lat);
@@ -136,21 +133,34 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
       const minLng = Math.min(...lngs);
       const maxLng = Math.max(...lngs);
       centre = { lat: (minLat + maxLat) / 2, lng: (minLng + maxLng) / 2 };
-      lngScale = Math.cos((centre.lat * Math.PI) / 180);
-      // A tenth of padding, so nothing sits against an edge.
-      spanLat = ((maxLat - minLat) || 1e-6) * 1.1;
-      spanLng = (((maxLng - minLng) || 1e-6) * lngScale) * 1.1 / lngScale;
+      const lngScale = Math.max(Math.cos((centre.lat * Math.PI) / 180), 0.01);
+      // Whichever axis needs more room, plus a tenth so nothing sits against an edge.
+      const acrossKm = ((maxLng - minLng) || 1e-6) * lngScale * 111.32 * 1.1;
+      const downKm = ((maxLat - minLat) || 1e-6) * 111.32 * 1.1;
+      spanKm = Math.max(acrossKm, (downKm * usableW) / usableH);
     }
 
-    // Equirectangular, scaled by cos(latitude) so the shape is not stretched. Fine over a
-    // two-kilometre walk; nobody is navigating by this projection.
-    const scale = Math.min(usableW / (spanLng * lngScale), usableH / spanLat);
+    // Web Mercator, because the basemap underneath is tiled in it. The old
+    // equirectangular projection was fine on its own and would drift against a tile — a pin
+    // and the street it is meant to be on would sit a few metres apart at the top of the
+    // view and agree at the bottom, which is the sort of wrongness people feel before they
+    // can name it.
+    const plan = planTiles(centre, spanKm, usableW, usableH);
+    const world = (p: LatLng) => toWorld(p.lat, p.lng, plan.zoom);
+    const origin = world(centre);
 
-    return (p: LatLng) => ({
-      x: centreX + (p.lng - centre.lng) * lngScale * scale,
-      // Screen y grows downward; latitude grows north, so the sign flips.
-      y: centreY + (centre.lat - p.lat) * scale,
-    });
+    const project = (p: LatLng) => {
+      const w = world(p);
+      return {
+        x: centreX + (w.x - origin.x) * plan.scale,
+        y: centreY + (w.y - origin.y) * plan.scale,
+      };
+    };
+    // The tile plan is expressed in the same offsets, so it rides along rather than being
+    // computed twice and drifting.
+    project.plan = plan;
+    project.viewport = { left: INSET.side, top: INSET.top, usableW, usableH };
+    return project;
   }, [route, library, position, detent]);
 
   const path = useMemo(() => {
@@ -217,6 +227,33 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
           <stop offset="100%" stopColor="#7b3bff" />
         </linearGradient>
       </defs>
+
+      {/*
+        The basemap. Each tile is a plain `<image>`, positioned by the same projection the
+        pins use, so nothing can drift between them.
+
+        `onError` hides a tile that will not load instead of leaving a broken-image mark,
+        which is what makes this degrade to the previous design rather than to a mess: with
+        every tile hidden you get the dark background and the vector route, exactly as
+        before. That matters more than it sounds — the build environment cannot reach a tile
+        server at all, so this ships without ever having been seen working here.
+      */}
+      <g clipPath="url(#mapBand)">
+        {projection.plan.tiles.map((t) => (
+          <image
+            key={`${projection.plan.zoom}/${t.x}/${t.y}`}
+            href={TILE_URL(t.x, t.y, projection.plan.zoom)}
+            x={t.px + projection.viewport.left}
+            y={t.py + projection.viewport.top}
+            width={256 * projection.plan.scale}
+            height={256 * projection.plan.scale}
+            className="map-tile"
+            onError={(e) => {
+              (e.currentTarget as SVGImageElement).style.display = "none";
+            }}
+          />
+        ))}
+      </g>
 
       <clipPath id="mapBand">
         {/* Pins outside the map's own band used to draw straight over the route ribbon and
@@ -304,6 +341,9 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
       })}
 
       </g>
+      <text className="map-credit" x={W - 8} y={H - NAV_H - 8} textAnchor="end">
+        {TILE_ATTRIBUTION}
+      </text>
       {here && (
         <g className="here" transform={`translate(${here.x.toFixed(1)} ${here.y.toFixed(1)})`}>
           <circle r="26" fill="url(#hereGlow)" />
