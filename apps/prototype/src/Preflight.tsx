@@ -20,12 +20,14 @@
  * somebody most likely wants is different on the first visit and the fortieth.
  */
 
-import { useEffect, useState } from "react";
-import type { Route } from "@echofinders/core";
+import { useEffect, useMemo, useState } from "react";
+import { buildEchoJourney, type Echo, type Route } from "@echofinders/core";
 
 export interface PreflightProps {
   readonly routes: readonly Route[];
   readonly counts: Readonly<Record<string, number>>;
+  /** Needed to say how big the journey is, which is the one thing this screen promises. */
+  readonly library: readonly Echo[];
   /** Whatever the app is already showing, so "Find my route" does not move you somewhere else. */
   readonly current: Route;
   readonly onStart: (route: Route) => void;
@@ -38,6 +40,7 @@ export interface PreflightProps {
 export function Preflight({
   routes,
   counts,
+  library,
   current,
   onStart,
   foundCount,
@@ -57,6 +60,13 @@ export function Preflight({
    */
   const [askedToChoose, setAskedToChoose] = useState(false);
   const choosing = askedToChoose || !returning;
+
+  /*
+   * The real package for the route in front of you, against the real budget for its mode —
+   * sixty megabytes on foot, two hundred and fifty in the air. Rebuilt only when the
+   * choice changes, because it runs the corridor query and the coverage passes.
+   */
+  const journey = useMemo(() => buildEchoJourney(picked, library), [picked, library]);
 
   // `current` seeds the choice, and then keeps seeding it. The mode picker sits beside the
   // phone and is live while this is showing, so switching to Car there used to leave this
@@ -99,6 +109,37 @@ export function Preflight({
           </span>
         </div>
 
+        {/*
+          What you are actually carrying.
+          
+          The heading on this screen has said "download your journey before you go" since
+          the first version and the screen has never once mentioned a package: no size, no
+          count, nothing about the budget. It asked which route and called that a download.
+          The engine has built the real thing all along — `buildEchoJourney` selects against
+          the mode's own byte budget and reports what it could not fit — so the number is
+          measured rather than claimed.
+
+          "Already on this device" is the truthful version of the tick on the rail: the
+          prototype ships its library inside the bundle, so by the time you can read this
+          the journey genuinely is local. When the audio is real files in a bucket, this
+          line becomes a progress bar and nothing above it changes.
+        */}
+        <div className="pf-pkg">
+          <span className="pf-pkg-bar">
+            <i style={{ width: `${Math.min(100, (journey.totalBytes / journey.budgetBytes) * 100).toFixed(1)}%` }} />
+          </span>
+          <span className="pf-pkg-text">
+            {journey.echoes.length} {journey.echoes.length === 1 ? "story" : "stories"} ·{" "}
+            {megabytes(journey.totalBytes)} of {megabytes(journey.budgetBytes)} · already on
+            this device
+          </span>
+          {journey.droppedCount > 0 && (
+            <span className="pf-pkg-drop">
+              {journey.droppedCount} more on this route than the offline budget holds
+            </span>
+          )}
+        </div>
+
         {choosing && (
           <div className="pf-picks">
             {routes.map((route) => (
@@ -136,6 +177,11 @@ export function Preflight({
  * A walk has no code and never will, so it is the two ends — which is longer, and correct:
  * nobody has ever called a walk by an abbreviation.
  */
+const megabytes = (bytes: number) =>
+  bytes >= 1024 * 1024
+    ? `${(bytes / (1024 * 1024)).toFixed(bytes < 10 * 1024 * 1024 ? 1 : 0)} MB`
+    : `${Math.max(1, Math.round(bytes / 1024))} KB`;
+
 function code(route: Route): string {
   const a = route.origin.code;
   const b = route.destination.code;

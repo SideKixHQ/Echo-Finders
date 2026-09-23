@@ -7,15 +7,15 @@
  * tap a line and the narration jumps there, which turns a two-minute story into something
  * you can skim.
  *
- * Line timings are estimated from character counts, and that is a stopgap with a date on
- * it. Real timings arrive with the ElevenLabs render — the script already asks for the
- * `/with-timestamps` endpoint precisely so they are measured rather than guessed — and this
- * component keeps working unchanged when `render.transcript` exists, because it reads lines
- * and offsets, not the estimate.
+ * Line timings come from `transcript-lines`, shared with the player's line-step buttons so
+ * that a "line" means the same thing in both places. They are estimated from character
+ * counts today and measured by the ElevenLabs render tomorrow; this component keeps working
+ * unchanged either way, because it reads lines and offsets rather than the estimate.
  */
 
 import { useMemo, useState } from "react";
 import type { Echo } from "@echofinders/core";
+import { splitScript } from "./transcript-lines";
 
 export interface TranscriptProps {
   readonly echo: Echo;
@@ -28,7 +28,7 @@ export interface TranscriptProps {
 export function Transcript({ echo, simple, progress, onSeek }: TranscriptProps) {
   const [query, setQuery] = useState("");
   const script = (simple ? echo.simple?.script : echo.script) ?? echo.script ?? "";
-  const lines = useMemo(() => split(script), [script]);
+  const lines = useMemo(() => splitScript(script), [script]);
 
   const current = lines.findIndex((l) => progress >= l.from && progress < l.to);
   const matching = query.trim()
@@ -83,35 +83,4 @@ export function Transcript({ echo, simple, progress, onSeek }: TranscriptProps) 
       </div>
     </div>
   );
-}
-
-interface Line {
-  readonly index: number;
-  readonly text: string;
-  /** Fraction of the echo at which this line starts and ends. */
-  readonly from: number;
-  readonly to: number;
-}
-
-/**
- * Sentences, with their share of the running time.
- *
- * Proportional to character count, which is a decent proxy for speech: it gets the long
- * sentence right and the short one roughly right, and is wrong in a way nobody notices at
- * this length. It is not good enough to ship against real audio, which is why the render
- * pipeline measures the real thing.
- */
-function split(script: string): readonly Line[] {
-  const parts = script
-    .split(/(?<=[.!?])\s+/)
-    .map((s) => s.trim())
-    .filter((s) => s.length > 0);
-
-  const total = parts.reduce((sum, p) => sum + p.length, 0) || 1;
-  let cursor = 0;
-  return parts.map((text, index) => {
-    const from = cursor / total;
-    cursor += text.length;
-    return { index, text, from, to: cursor / total };
-  });
 }

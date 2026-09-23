@@ -22,6 +22,17 @@ remember next time.
 
 A minute or so later you have a URL. Open it on a phone.
 
+## The live URL
+
+**Not recorded yet.** Paste it in here the first time, because nothing in this repository
+knows it and nothing can find it out: Vercel is configured `silent`, so it posts no
+deployment status back to GitHub, and the sandbox these sessions run in cannot reach
+`vercel.app` at all. Every push to `main` deploys to it whether or not it is written down —
+the only thing missing is the ability to say *where* to look, or to check afterwards that
+the deploy went out.
+
+    Live: <paste the Vercel URL here>
+
 ## Use it on a phone, not a laptop
 
 Two of the more interesting parts only exist on a real device, and Vercel serves over HTTPS,

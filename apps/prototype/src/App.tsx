@@ -577,6 +577,7 @@ export function App() {
             <Preflight
               routes={ROUTES}
               counts={corridorCounts}
+              library={LIBRARY}
               current={route}
               foundCount={kept.length}
               // Most recent first, and de-duplicated: two echoes at Bowling Green should

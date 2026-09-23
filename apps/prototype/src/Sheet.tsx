@@ -14,7 +14,8 @@ import { EchoCard } from "./EchoCard";
 import { PlateStrip } from "./PlateStrip";
 import { Player } from "./Player";
 import { Transcript } from "./Transcript";
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
+import { splitScript, stepLine } from "./transcript-lines";
 import type { Upcoming } from "@echofinders/core";
 
 interface Props {
@@ -123,6 +124,14 @@ export function Sheet({
   // The transcript is only meaningful for something actually playing, so the tab falls back
   // rather than showing an empty panel with a search box in it.
   const view = tab === "script" && !nowPlaying ? "near" : tab;
+  /*
+   * The same lines the transcript shows, so the player's line buttons step by one of them.
+   * Split once per script rather than on every press.
+   */
+  const lines = useMemo(() => {
+    const script = (simple ? nowPlaying?.simple?.script : nowPlaying?.script) ?? nowPlaying?.script;
+    return script ? splitScript(script) : [];
+  }, [nowPlaying, simple]);
   const savedCards = savedNearby;
   return (
     <div
@@ -202,7 +211,7 @@ export function Sheet({
           rate={rate}
           onRate={onRate}
           onSeek={onSeek}
-          onLine={(delta) => onSeek(Math.max(0, Math.min(1, progress + delta * 0.12)))}
+          onLine={(delta) => onSeek(stepLine(lines, progress, delta))}
           onNext={onNext}
         />
       )}

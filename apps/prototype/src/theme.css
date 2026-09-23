@@ -1380,6 +1380,25 @@ body {
 .pf-recent {
   font-size: 12px; line-height: 1.5; color: var(--muted); margin: 8px 0 18px;
 }
+/* What the journey weighs, against what its mode is allowed to carry. A bar rather than
+   a number alone, because "8.5 MB" means nothing and "a seventh of the budget" means
+   you can add more. */
+.pf-pkg { margin: 12px 0 2px; display: flex; flex-direction: column; gap: 6px; }
+.pf-pkg-bar {
+  height: 4px; border-radius: 99px; overflow: hidden;
+  background: rgba(var(--rgb-hair), 0.14);
+}
+.pf-pkg-bar i {
+  display: block; height: 100%; border-radius: 99px;
+  background: linear-gradient(90deg, var(--aqua), var(--indigo-soft));
+  transition: width 0.3s var(--ease);
+}
+.pf-pkg-text {
+  font-size: 11.5px; color: var(--muted);
+  font-family: "Space Grotesk", monospace;
+}
+.pf-pkg-drop { font-size: 11px; color: var(--ember); }
+
 .pf-alt {
   width: 100%; margin-top: 10px; padding: 12px; cursor: pointer; font: inherit;
   font-size: 12.5px; color: var(--muted);
