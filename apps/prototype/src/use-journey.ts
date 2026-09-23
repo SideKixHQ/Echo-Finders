@@ -59,6 +59,26 @@ export const LISTENER: ListenerProfile = {
   density: "immersive",
 };
 
+/** The age kids mode claims. Under every `minAge` the library sets above zero. */
+export const KIDS_AGE = 8;
+
+/**
+ * The listener, as the engine sees them.
+ *
+ * Kids mode is an *age*, not a filter, and that difference is the whole point. A filter is
+ * a view over a library that still contains everything — turn it off, or open a deep link,
+ * or restore a session, and the library is all there. An age goes through
+ * `checkEligibility`, which is a hard gate the scheduler, the capture tracker, the nearby
+ * list and the package builder all run: an echo above it cannot be ranked, cannot be
+ * captured, cannot be packaged and cannot be played, because every one of those asks the
+ * same question first.
+ *
+ * So switching it on does not hide the Dakota. It makes the Dakota ineligible, everywhere,
+ * by the same mechanism that has always kept true crime away from a seven-year-old.
+ */
+export const listenerFor = (kids: boolean): ListenerProfile =>
+  kids ? { ...LISTENER, age: KIDS_AGE } : LISTENER;
+
 export interface JourneyControls {
   /** Play the proximity cue. */
   readonly sound: boolean;
@@ -81,12 +101,14 @@ export interface JourneyControls {
   readonly rate?: number;
   /** What the listener has agreed to have remembered. Decides what reaches storage. */
   readonly privacy: PrivacySettings;
+  /** Kids mode: an age the engine gates on, not a filter over the view. */
+  readonly kids: boolean;
 }
 
 export function useJourney(
   route: Route,
   library: readonly Echo[],
-  { sound, narrate, autoPlay, chosen, paused, rate = 1, privacy }: JourneyControls,
+  { sound, narrate, autoPlay, chosen, paused, rate = 1, privacy, kids }: JourneyControls,
 ) {
   const walk = useMemo(() => {
     // `?speed=2` slows the journey so the dwell ring can be watched filling; `?start=0.4`
@@ -175,7 +197,7 @@ export function useJourney(
     // thing stopping this prototype from exercising the other four.
     return new WalkSession(
       library,
-      LISTENER,
+      listenerFor(kids),
       { location: walk, haptics, tones, audio: speech, collection: store },
       {
         mode: route.mode,
@@ -189,7 +211,7 @@ export function useJourney(
     // flick of the switch — and a new `WalkSession` is a new `CaptureTracker`: rebuilding
     // it to carry one boolean threw away the whole collection, stopped whatever was
     // playing, and reset the map, silently. They are applied below instead.
-  }, [library, walk, route.mode, toneRenderer, speech, store, restored]);
+  }, [library, walk, route.mode, toneRenderer, speech, store, restored, kids]);
 
   useEffect(() => {
     session.setAutoPlay(autoPlay);

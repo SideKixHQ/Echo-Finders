@@ -32,6 +32,9 @@ export interface RailProps {
   readonly onAll: () => void;
   readonly savedCount: number;
   readonly onSaved: () => void;
+  /** Kids mode, for the whole app. An age the engine gates on, not a filter. */
+  readonly kids: boolean;
+  readonly onKids: (on: boolean) => void;
 }
 
 type Panel = "mode" | "filter" | null;
@@ -59,6 +62,8 @@ export function Rail({
   onAll,
   savedCount,
   onSaved,
+  kids,
+  onKids,
 }: RailProps) {
   const [panel, setPanel] = useState<Panel>(null);
   const show = (next: Panel) => setPanel(panel === next ? null : next);
@@ -93,6 +98,25 @@ export function Rail({
           <path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
         </svg>
         {savedCount > 0 && <em>{savedCount}</em>}
+      </button>
+
+      {/*
+        Kids mode. First on the rail because it is the only one of these that changes what
+        the app *is* rather than what it shows — the others are views over the same library,
+        and this one narrows the library itself.
+      */}
+      <button
+        className={kids ? "rail-btn kids-on" : "rail-btn"}
+        onClick={() => onKids(!kids)}
+        aria-pressed={kids}
+        aria-label="Kids mode"
+      >
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M8.5 14.5a4.5 4.5 0 0 0 7 0" />
+          <circle cx="9" cy="10" r="0.9" fill="currentColor" />
+          <circle cx="15" cy="10" r="0.9" fill="currentColor" />
+        </svg>
       </button>
 
       <button

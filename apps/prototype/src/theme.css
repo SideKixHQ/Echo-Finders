@@ -1488,3 +1488,9 @@ body {
   fill: rgba(var(--rgb-hair), 0.4); font-size: 8.5px;
   font-family: "Space Grotesk", monospace; pointer-events: none;
 }
+
+/* Kids mode is the one rail button that changes what the app is rather than what it shows,
+   so it gets the ember rather than the aqua the panels use. */
+.rail-btn.kids-on {
+  color: var(--space); background: var(--ember); border-color: var(--ember);
+}

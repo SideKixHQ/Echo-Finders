@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { PRIVACY_DEFAULTS, holdsPersonalLocation, type PrivacySettings } from "@echofinders/core";
 import { LIBRARY, ROUTES } from "./library.generated";
-import { useJourney, LISTENER } from "./use-journey";
+import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
 import { RouteMap, type PinState } from "./RouteMap";
 import { ProximityBar } from "./ProximityBar";
@@ -19,7 +19,7 @@ import { Viewfinder } from "./Viewfinder";
 import { Rail } from "./Rail";
 import type { Detent } from "./Sheet";
 import type { Echo, EchoCategory } from "@echofinders/core";
-import { findEchoesAlongRoute, presetFor, upcomingOnRoute, type Route } from "@echofinders/core";
+import { checkEligibility, findEchoesAlongRoute, presetFor, upcomingOnRoute, type Route } from "@echofinders/core";
 
 /** The walk is the richest route, so it is what the prototype opens on. */
 const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROUTES[0]!;
@@ -55,6 +55,15 @@ export function App() {
   // that downloads at the gate is the difference between working and not (ADR-0003).
   const [started, setStarted] = useState(false);
   const [simple, setSimple] = useState(false);
+  /**
+   * Kids mode, for the whole app rather than for a list.
+   *
+   * An age handed to the engine, not a filter over a view — see `listenerFor`. It also
+   * turns on the plain-language cut, because the two go together: a listener the library
+   * considers eight is a listener who wants the shorter telling, and making them find a
+   * second switch for it would be a strange thing to ask of a parent.
+   */
+  const [kids, setKids] = useState(false);
   const [rate, setRate] = useState(1);
 
   /**
@@ -80,6 +89,7 @@ export function App() {
     paused: paused || !started,
     rate,
     privacy,
+    kids,
   });
 
   // Whether the traveller can steer. Guidance answers "which way should I go", so it is
@@ -212,7 +222,21 @@ export function App() {
     () => Object.fromEntries(Object.entries(byRoute).map(([id, echoes]) => [id, echoes.length])),
     [byRoute],
   );
-  const onRoute = byRoute[route.id] ?? [];
+  /**
+   * What this route passes, that this listener may hear.
+   *
+   * The corridor query answers the first half and knows nothing about who is asking, so the
+   * eligibility gate is applied here — and applied *once*, above everything, because a
+   * child who is not allowed to hear an echo should not be looking at a pin for it either.
+   * Filtering only the playback would leave the map advertising a murder it then refuses to
+   * play, which is a worse screen than either honest alternative.
+   */
+  const onRoute = useMemo(() => {
+    const listener = listenerFor(kids);
+    return (byRoute[route.id] ?? []).filter(
+      (echo) => checkEligibility(echo, { profile: listener, playAtMs: Date.now() }).eligible,
+    );
+  }, [byRoute, route.id, kids]);
   const savedEchoes = useMemo(() => onRoute.filter((e) => chosen.has(e.id)), [onRoute, chosen]);
   const suggestion = useMemo(
     () => ROUTES.find((r) => r.id !== route.id && (corridorCounts[r.id] ?? 0) > 1) ?? null,
@@ -233,8 +257,8 @@ export function App() {
   // Everything on the route, in the order it is reached — the same question `upcoming` asks
   // from where you are, asked from the start line and without a lead-in filter.
   const wholeRoute = useMemo(
-    () => upcomingOnRoute(route, onRoute, LISTENER, 0, { limit: 99, minLeadS: -Infinity }),
-    [route, onRoute],
+    () => upcomingOnRoute(route, onRoute, listenerFor(kids), 0, { limit: 99, minLeadS: -Infinity }),
+    [route, onRoute, kids],
   );
 
   const upcoming = useMemo(
@@ -245,14 +269,14 @@ export function App() {
         // Anything already found is not a suggestion. Reusing `heardEchoIds` rather than
         // adding an exclusion list keeps one mechanism for "do not offer me this again" —
         // and without it the thing currently playing turns up under "coming up".
-        { ...LISTENER, heardEchoIds: kept.map((c) => c.echo.id) },
+        { ...listenerFor(kids), heardEchoIds: kept.map((c) => c.echo.id) },
         walk.walkedMetres / 1000,
         { limit: 2 },
       ),
     // `walk.walkedMetres` is read off a mutable simulation, so the position event is what
     // says it changed.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [route, onRoute, state.position, kept],
+    [route, onRoute, state.position, kept, kids],
   );
   const inCorridor = onRoute.length;
 
@@ -311,8 +335,13 @@ export function App() {
                   setCats(next);
                 }}
                 onAll={() => setCats(null)}
+                kids={kids}
+                onKids={(on) => {
+                  setKids(on);
+                  setSimple(on);
+                }}
                 savedCount={chosen.size}
-                onSaved={() => setTab("plan")}
+                onSaved={() => setTab("listening")}
               />
               {selfDirected && <ProximityBar guidance={state.guidance} cue={state.cue} />}
               {!nowPlaying && <NowPlaying
@@ -367,7 +396,7 @@ export function App() {
             </>
           )}
 
-          {tab === "plan" && (
+          {tab === "listening" && (
             <Plan
               route={route}
               items={wholeRoute}
@@ -389,7 +418,7 @@ export function App() {
             />
           )}
 
-          {tab === "collection" && (
+          {tab === "saved" && (
             <Collection
               captured={kept}
               privacy={privacy}
@@ -401,7 +430,7 @@ export function App() {
             />
           )}
 
-          {tab === "privacy" && (
+          {tab === "settings" && (
             <Privacy
               settings={privacy}
               onChange={setPrivacy}
