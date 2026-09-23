@@ -24,6 +24,7 @@ import { useMemo } from "react";
 import { CATEGORY_ICON } from "./categories";
 import { TILE_ATTRIBUTION, TILE_URL, planTiles, toWorld } from "./tiles";
 import { MODE_ICON } from "./travel";
+import { useSmoothedPoint } from "./use-smoothed";
 import {
   buildRouteGeometry,
   distanceKm,
@@ -58,6 +59,8 @@ interface Props {
    * something and wonder what else is out there.
    */
   readonly overview: boolean;
+  /** Which basemap to fetch. The pins are drawn for one backdrop or the other, not both. */
+  readonly theme: "dark" | "light";
 }
 
 /*
@@ -89,6 +92,13 @@ const H = 822;
 const NAV_H = 72;
 /** Matches the detents in `Sheet.tsx` and in `theme.css`, as fractions of the screen. */
 const SHEET_FRACTION = { peek: 0.26, half: 0.46, full: 0.86 } as const;
+/**
+ * How many echoes ripple at once.
+ *
+ * Four, because that is about what fits on a walking view without the arcs touching, and
+ * because every one of them is three continuously animated SVG groups.
+ */
+const RIPPLE_LIMIT = 4;
 /** Half a pin, so a pin *centre* never lands under the chrome and no pin is half-eaten. */
 const PIN_R = 16;
 /** The route ribbon and the category chips, which float over the map's top edge. */
@@ -107,7 +117,18 @@ const insetFor = (detent: keyof typeof SHEET_FRACTION, guided: boolean) => ({
   side: 30,
 });
 
-export function RouteMap({ route, library, position, opening, stateOf, selectedId, onSelect, detent, overview }: Props) {
+export function RouteMap({
+  route,
+  library,
+  position,
+  opening,
+  stateOf,
+  selectedId,
+  onSelect,
+  detent,
+  overview,
+  theme,
+}: Props) {
   /**
    * The view follows the listener, rather than fitting the whole journey.
    *
@@ -125,9 +146,20 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
    * Until there is a fix it still fits the route, because before you set off the useful
    * question is what the whole journey looks like.
    */
+  /*
+   * The drawn position, steadied. The engine keeps the raw fix; see `use-smoothed`.
+   */
+  const at = useSmoothedPoint(position?.at ?? null);
+
+  /*
+   * Built once per route. It was built twice for every position fix — once in the
+   * projection and once for the path — which at four fixes a second is eight route
+   * geometries a second, on a flight with a few hundred track points.
+   */
+  const geometry = useMemo(() => buildRouteGeometry(route), [route]);
+
   const projection = useMemo(() => {
     const INSET = insetFor(detent, presetFor(route.mode).selfDirected);
-    const geometry = buildRouteGeometry(route);
 
     // The band actually visible between the chips and the sheet. The listener belongs in
     // the middle of *that*, not the middle of a box that is half covered.
@@ -140,8 +172,8 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
     /** How wide the view is on the ground, km, measured across its width. */
     let spanKm: number;
 
-    if (position && !overview) {
-      centre = position.at;
+    if (at && !overview) {
+      centre = at;
       // Twice the corridor: on foot a couple of streets, in the air a couple of hundred
       // kilometres. The same number that already decides what counts as near on this mode.
       spanKm = presetFor(route.mode).corridorKm * 2;
@@ -166,7 +198,20 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
     // and the street it is meant to be on would sit a few metres apart at the top of the
     // view and agree at the bottom, which is the sort of wrongness people feel before they
     // can name it.
-    const plan = planTiles(centre, spanKm, usableW, usableH);
+    /*
+     * The zoom comes from the fitted band; the grid covers the whole strip of map that is
+     * actually on screen — from under the chips down to the top of the sheet.
+     */
+    const bandTop = MAPBAR_H;
+    const bandBottom = H - NAV_H - H * SHEET_FRACTION[detent];
+    const plan = planTiles(
+      centre,
+      spanKm,
+      usableW,
+      usableH,
+      { x: 0, y: bandTop, w: W, h: Math.max(0, bandBottom - bandTop) },
+      { x: centreX, y: centreY },
+    );
     const world = (p: LatLng) => toWorld(p.lat, p.lng, plan.zoom);
     const origin = world(centre);
 
@@ -180,23 +225,46 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
     // The tile plan is expressed in the same offsets, so it rides along rather than being
     // computed twice and drifting.
     project.plan = plan;
-    project.viewport = { left: INSET.side, top: INSET.top, usableW, usableH };
     return project;
-  }, [route, library, position, detent, overview]);
+  }, [route, geometry, library, at, overview, detent]);
 
   const path = useMemo(() => {
-    const geometry = buildRouteGeometry(route);
     return geometry.points
       .map((p, i) => {
         const { x, y } = projection(p);
         return `${i === 0 ? "M" : "L"}${x.toFixed(1)} ${y.toFixed(1)}`;
       })
       .join(" ");
-  }, [route, projection]);
+  }, [geometry, projection]);
+
+  /**
+   * Which echoes are allowed to call.
+   *
+   * Not all of them. The ripple is the unanswered call and it was drawn on every sealed
+   * pin, which is right when four are on screen and wrong when twelve are: at the whole-
+   * journey zoom the arcs overlap into a haze and the map stops saying anything at all.
+   * Worse, thirty-six animated groups is most of a mid-range phone's frame budget.
+   *
+   * The nearest few, then — the ones somebody could actually walk to from here. In the
+   * follow view that is usually everything on screen, so nothing changes; in the overview
+   * it turns a haze into four things worth looking at. Rendered rather than hidden in CSS,
+   * because a display:none animation still costs a phone.
+   */
+  const calling = useMemo(() => {
+    const sealed = library.filter((echo) => stateOf(echo.id) === "sealed");
+    if (!at) return new Set(sealed.slice(0, RIPPLE_LIMIT).map((e) => e.id));
+    return new Set(
+      sealed
+        .map((echo) => ({ id: echo.id, km: distanceKm(at, echo.point.at) }))
+        .sort((a, b) => a.km - b.km)
+        .slice(0, RIPPLE_LIMIT)
+        .map((e) => e.id),
+    );
+  }, [library, at, stateOf]);
 
   const openingById = new Map(opening.map((a) => [a.echo.id, a]));
-  const here = position ? projection(position.at) : null;
-  const standingAt = position?.at ?? null;
+  const here = at ? projection(at) : null;
+  const standingAt = at;
 
   return (
     <svg className="map" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Walking route">
@@ -262,10 +330,10 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
       <g clipPath="url(#mapBand)">
         {projection.plan.tiles.map((t) => (
           <image
-            key={`${projection.plan.zoom}/${t.x}/${t.y}`}
-            href={TILE_URL(t.x, t.y, projection.plan.zoom)}
-            x={t.px + projection.viewport.left}
-            y={t.py + projection.viewport.top}
+            key={`${theme}/${projection.plan.zoom}/${t.x}/${t.y}`}
+            href={TILE_URL(t.x, t.y, projection.plan.zoom, theme)}
+            x={t.px}
+            y={t.py}
             width={256 * projection.plan.scale}
             height={256 * projection.plan.scale}
             className="map-tile"
@@ -324,7 +392,7 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
               a half, which is the same proximity model the haptic and the tone already
               run on — three channels saying one thing rather than three.
             */}
-            {state === "sealed" && (
+            {state === "sealed" && calling.has(echo.id) && (
               <g className="echo-ripples" style={{ animationDuration: `${ripplePeriod(standingAt, echo)}s` }}>
                 <g className="ripple-ring">
                   <use href="#wave" />
@@ -362,7 +430,22 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
       })}
 
       </g>
-      <text className="map-credit" x={W - 8} y={H - NAV_H - 8} textAnchor="end">
+      {/*
+        The attribution, where it can actually be read.
+        
+        It was placed eight pixels above the tab bar — which is a couple of hundred pixels
+        *behind* the sheet at every detent, so it has never once been visible. Esri's
+        licence requires it to be shown, and a credit line that is present in the DOM and
+        covered by an opaque panel is not shown. It now sits at the bottom of whatever
+        strip of map is on screen, above the guidance bar, which is where every map on the
+        web puts it.
+      */}
+      <text
+        className="map-credit"
+        x={W - 10}
+        y={H - insetFor(detent, presetFor(route.mode).selfDirected).bottom + 2}
+        textAnchor="end"
+      >
         {TILE_ATTRIBUTION}
       </text>
       {here && <Here x={here.x} y={here.y} mode={route.mode} headingDeg={position?.headingDeg ?? null} />}

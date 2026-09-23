@@ -33,7 +33,16 @@ export interface TilePlan {
   readonly originY: number;
   /** How much to scale a tile so the fractional part of the zoom is honoured. */
   readonly scale: number;
+  /** Tile positions, already in the SVG's own coordinates. */
   readonly tiles: readonly { x: number; y: number; px: number; py: number }[];
+}
+
+/** A rectangle in SVG coordinates. */
+export interface Rect {
+  readonly x: number;
+  readonly y: number;
+  readonly w: number;
+  readonly h: number;
 }
 
 /** Web Mercator, in world pixels at a given zoom. */
@@ -58,6 +67,21 @@ export function planTiles(
   spanKm: number,
   widthPx: number,
   heightPx: number,
+  /**
+   * The area to actually fill with tiles, and where `centre` lands inside it.
+   *
+   * Separate from the view that decides the zoom, and that separation is a bug fix rather
+   * than generality. The projection is fitted to the band between the chips and the sheet,
+   * so tiles were only ever generated for *that* box — which left the basemap stopping
+   * short of the sheet with bare background below it, most of a hundred pixels of it at
+   * the peek detent. The zoom still comes from the fitted view; the grid now covers
+   * whatever is on screen.
+   *
+   * Defaults to the fitted view at the origin, which is what the single-argument form
+   * used to do.
+   */
+  cover?: Rect,
+  centreAt?: { x: number; y: number },
 ): TilePlan {
   const mPerPx = (spanKm * 1000) / Math.max(widthPx, 1);
   const cos = Math.max(Math.cos((centre.lat * Math.PI) / 180), 0.01);
@@ -73,17 +97,20 @@ export function planTiles(
   const zoom = Math.max(1, Math.min(19, Math.round(exact)));
   const scale = 2 ** (exact - zoom);
 
+  const box: Rect = cover ?? { x: 0, y: 0, w: widthPx, h: heightPx };
+  const at = centreAt ?? { x: widthPx / 2, y: heightPx / 2 };
+
   const world = toWorld(centre.lat, centre.lng, zoom);
-  // SVG coordinates of world-pixel zero, given the centre sits in the middle of the view.
-  const originX = widthPx / 2 - world.x * scale;
-  const originY = heightPx / 2 - world.y * scale;
+  // SVG coordinates of world-pixel zero, given where the centre lands.
+  const originX = at.x - world.x * scale;
+  const originY = at.y - world.y * scale;
 
   const span = 2 ** zoom;
   const size = TILE * scale;
-  const firstX = Math.floor(-originX / size);
-  const lastX = Math.floor((widthPx - originX) / size);
-  const firstY = Math.max(0, Math.floor(-originY / size));
-  const lastY = Math.min(span - 1, Math.floor((heightPx - originY) / size));
+  const firstX = Math.floor((box.x - originX) / size);
+  const lastX = Math.floor((box.x + box.w - originX) / size);
+  const firstY = Math.max(0, Math.floor((box.y - originY) / size));
+  const lastY = Math.min(span - 1, Math.floor((box.y + box.h - originY) / size));
 
   const tiles: { x: number; y: number; px: number; py: number }[] = [];
   for (let x = firstX; x <= lastX; x++) {
@@ -99,16 +126,23 @@ export function planTiles(
 }
 
 /**
- * Esri's dark grey canvas, which is what the design uses.
+ * Esri's grey canvas, which is what the design uses.
  *
  * Chosen to match rather than on the merits, and that is the right reason here: the design
- * was drawn against this basemap's particular grey, and a different provider's dark theme
- * would put every colour decision half a step out.
+ * was drawn against this basemap's particular grey, and a different provider would put
+ * every colour decision half a step out.
+ *
+ * **Two of them, one per theme.** The dark canvas was hard-coded, so switching the app to
+ * light left a near-black map under a white interface — the pins and the route were drawn
+ * for a light backdrop and had nothing to sit on. Esri publishes the pair; the theme picks
+ * one, and every colour in the app has a basemap that agrees with it.
  *
  * Its licence requires the attribution the map renders in the corner. That line is not
  * decoration and must not be removed.
  */
-export const TILE_URL = (x: number, y: number, z: number) =>
-  `https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/${z}/${y}/${x}`;
+export const TILE_URL = (x: number, y: number, z: number, theme: "dark" | "light" = "dark") =>
+  `https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_${
+    theme === "light" ? "Light" : "Dark"
+  }_Gray_Base/MapServer/tile/${z}/${y}/${x}`;
 
 export const TILE_ATTRIBUTION = "Tiles © Esri";

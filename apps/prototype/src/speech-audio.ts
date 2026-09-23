@@ -53,8 +53,22 @@ export class SpeechAudio implements AudioSink {
    * changed a number on screen and nothing else at all.
    */
   private rate = 1;
+  /**
+   * Whether to speak the plain-language cut.
+   *
+   * The switch existed, the transcript followed it, the clock and the waveform were both
+   * drawn from `simple.durationS` — and the narration read the full script regardless. So
+   * "Simple audio on" was a claim about the one thing it did not change, and on a long
+   * echo the bar finished a minute before the voice did.
+   */
+  private simple = false;
 
-  constructor(private readonly library: readonly Echo[]) {}
+  /** Keyed once. `find` over the library ran on every play, for every echo. */
+  private readonly byKey: ReadonlyMap<string, Echo>;
+
+  constructor(library: readonly Echo[]) {
+    this.byKey = new Map(library.map((echo) => [`speech/${echo.id}`, echo]));
+  }
 
   get available(): boolean {
     return typeof window !== "undefined" && "speechSynthesis" in window;
@@ -69,20 +83,35 @@ export class SpeechAudio implements AudioSink {
     this.rate = rate;
   }
 
+  /** Takes effect on the next echo, for the same reason `rate` does. */
+  setSimple(simple: boolean) {
+    this.simple = simple;
+  }
+
+  /** The telling this listener has asked for, falling back where none is written. */
+  private cut(echo: Echo): { script: string | undefined; durationS: number } {
+    const plain = this.simple ? echo.simple : undefined;
+    return {
+      script: plain?.script ?? echo.script,
+      durationS: plain?.durationS ?? echo.durationS,
+    };
+  }
+
   play(audioKey: string) {
     this.stop();
-    const echo = this.library.find((e) => `speech/${e.id}` === audioKey);
+    const echo = this.byKey.get(audioKey);
+    const cut = echo ? this.cut(echo) : null;
 
     // Muted, unsupported, or a browser with no voices installed — which is the normal case
     // in a headless one. Take the echo's stated duration rather than ending instantly: a
     // player that finishes the moment it starts drains the whole queue in a frame, and
     // every transition the queue exists to get right would go untested.
-    if (this.muted || !this.available || !echo?.script || this.voiceCount === 0) {
-      this.runSilently(echo?.durationS ?? 1);
+    if (!echo || this.muted || !this.available || !cut?.script || this.voiceCount === 0) {
+      this.runSilently(cut?.durationS ?? 1);
       return;
     }
 
-    const utterance = new SpeechSynthesisUtterance(echo.script);
+    const utterance = new SpeechSynthesisUtterance(cut.script);
     const cast = CAST[echo.voice ?? ""] ?? { pitch: 1, rate: 0.95, prefer: [] };
     utterance.pitch = cast.pitch;
     // Clamped to what browsers actually honour; outside 0.1–10 they silently ignore it.
@@ -139,12 +168,18 @@ export class SpeechAudio implements AudioSink {
     return this.available ? window.speechSynthesis.getVoices().length : 0;
   }
 
-  /** Occupy the player for as long as the echo would have taken, then finish. */
+  /**
+   * Occupy the player for as long as the echo would have taken, then finish.
+   *
+   * Divided by the rate, like the spoken path — without it the silent path (a headless
+   * browser, or any device with no voices installed) ran at 1× while the progress bar ran
+   * at the listener's speed, so the bar reached the end and then sat there.
+   */
   private runSilently(durationS: number) {
     this.timer = setTimeout(() => {
       this.timer = null;
       this.fire();
-    }, Math.max(250, durationS * 1000));
+    }, Math.max(250, (durationS * 1000) / this.rate));
   }
 
   /** A capture landed. Deliberately not speech — a different channel, so it never masks a word. */

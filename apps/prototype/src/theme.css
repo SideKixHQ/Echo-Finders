@@ -863,8 +863,10 @@ body {
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.now p {
-  font-size: 12px; color: var(--muted);
+.now p { font-size: 12px; color: var(--muted); }
+/* One line, for the place-and-length line under a found echo. Not for the idle panel,
+   whose paragraph is two sentences of explanation and was being cut off mid-word. */
+.now:not(.now-idle) .now-text p {
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .now-idle h2 { font-size: 14px; color: var(--cool); }
@@ -1438,6 +1440,14 @@ body {
    body inside it keeps the category colour and says which kind. What it is, and
    that it is one, told by two different parts of the same pin.
 
+   The gradient is carried by the three rings rather than by each ring changing
+   colour as it travels, and that is a performance fix with a measurement behind
+   it. `stroke` is a paint property: animating it repaints the whole SVG every
+   frame, and SVG paint is not composited. Thirty-six rings doing that held a
+   throttled phone at 35fps with fifteen long tasks in six seconds. Animating
+   only `transform` and `opacity` — and rippling the nearest few echoes rather
+   than every sealed one — puts it at a flat 60 with none.
+
    `animation-duration` is inherited from the group, so one number per pin drives
    all three rings and the delays stay a fixed fraction of it. */
 .echo-ripples { pointer-events: none; }
@@ -1448,18 +1458,35 @@ body {
   animation-iteration-count: infinite;
   transform-origin: 0 0;
 }
-.ripple-ring path { fill: none; stroke-width: 1.5; stroke-linecap: round; }
+/*
+ * On the group, not on the path — and that is a bug fix, not a tidy-up.
+ *
+ * The rings are `<use href="#wave">`, and a `use` clones its target into a shadow tree
+ * that document selectors cannot reach. `.ripple-ring path { … }` therefore matched
+ * nothing, ever. Only inherited properties cross that boundary, which is why the animated
+ * `stroke` worked and `fill: none` did not: the arcs took whatever fill they inherited and
+ * rendered as solid wedges. Dark on dark they passed for a glow; in light mode they were
+ * black fans across half the map. Every one of these is inherited, so from here they
+ * reach the geometry.
+ */
+.ripple-ring {
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
 /* Thirds of a cycle, negative so all three are already in flight on the first
    frame rather than arriving one at a time. */
 .ripple-ring-2 { animation-delay: -1s; }
 .ripple-ring-3 { animation-delay: -2s; }
 
 @keyframes echo-out {
-  from { transform: scale(0.34); opacity: 0; stroke: #00e5ff; }
+  from { transform: scale(0.34); opacity: 0; }
   18%  { opacity: 0.85; }
-  55%  { stroke: #3b6bff; }
-  to   { transform: scale(2.3); opacity: 0; stroke: #7b3bff; }
+  to   { transform: scale(2.3); opacity: 0; }
 }
+.ripple-ring   { stroke: #00e5ff; }
+.ripple-ring-2 { stroke: #3b6bff; }
+.ripple-ring-3 { stroke: #7b3bff; }
 
 /* Found is quiet. The ripple is the unanswered call, so answering it stops the
    sound — and a map of a walk you finished sits still, which is the point. */
@@ -1467,8 +1494,7 @@ body {
 .pin-heard .echo-ripples { display: none; }
 
 @media (prefers-reduced-motion: reduce) {
-  .ripple-ring { animation: none; opacity: 0.22; }
-  .ripple-ring path { stroke: #3b6bff; }
+  .ripple-ring { animation: none; opacity: 0.22; stroke: #3b6bff; }
   .ripple-ring-2 { transform: scale(1.5); }
   .ripple-ring-3 { transform: scale(2); }
 }
@@ -1501,8 +1527,20 @@ body {
 }
 .rail > * { pointer-events: auto; }
 /* At the full detent there is no map left to control. Same rule the guidance bar follows. */
+/*
+ * Faded rather than dropped. Both of these states cover the map completely, so there is
+ * nothing left for the rail to control and it goes — but a row of buttons that vanishes
+ * between one frame and the next reads as a glitch, and the sheet it is making way for
+ * takes a quarter of a second to arrive. It comes back the moment the sheet is pulled
+ * down, which is the same gesture that brought it up.
+ */
 .screen:has(.sheet-full) .rail,
-.screen:has(.sheet-playing.sheet-half) .rail { display: none; }
+.screen:has(.sheet-playing.sheet-half) .rail {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.16s var(--ease), visibility 0s linear 0.16s;
+}
+.rail { transition: opacity 0.2s var(--ease); }
 /* Nobody diverts an aircraft towards a good story, so there is no guidance bar in the
    carried modes and the rail gets the height back. */
 .stack-noguide,
@@ -1567,9 +1605,13 @@ body {
 /* The basemap. Dimmed and desaturated so it stays underneath: the design's grey is a
    backdrop for the route and the pins, not a thing to read. */
 .map-tile { opacity: 0.85; }
+/* Legible on either basemap without competing with anything: the grey canvases are pale
+   in light and near-black in dark, so the credit takes its contrast from the theme's own
+   muted ink rather than a fixed colour that would disappear in one of them. */
 .map-credit {
-  fill: rgba(var(--rgb-hair), 0.4); font-size: 8.5px;
+  fill: var(--muted); opacity: 0.75; font-size: 8.5px;
   font-family: "Space Grotesk", monospace; pointer-events: none;
+  paint-order: stroke; stroke: rgba(var(--rgb-panel), 0.6); stroke-width: 2.4;
 }
 
 /* Kids mode is the one rail button that changes what the app is rather than what it shows,

@@ -13,6 +13,7 @@
  * with no ghost stories on it is a promise the library cannot keep.
  */
 
+import { memo } from "react";
 import type { EchoCategory } from "@echofinders/core";
 import { CATEGORY_LABEL, CATEGORY_ORDER } from "./categories";
 
@@ -23,7 +24,7 @@ export interface CategoryChipsProps {
   readonly onAll: () => void;
 }
 
-export function CategoryChips({ available, on, onToggle, onAll }: CategoryChipsProps) {
+function CategoryChipsInner({ available, on, onToggle, onAll }: CategoryChipsProps) {
   const shown = CATEGORY_ORDER.filter((c) => available.has(c));
   if (shown.length < 2) return null;
   const all = shown.every((c) => on.has(c));
@@ -48,3 +49,10 @@ export function CategoryChips({ available, on, onToggle, onAll }: CategoryChipsP
     </div>
   );
 }
+
+/*
+ * Memoised. Nothing on this component depends on where the listener is, and the app
+ * re-renders on every position fix — four times a second, for the life of a walk. Its
+ * callbacks are stable in `App`, which is what makes the comparison actually succeed.
+ */
+export const CategoryChips = memo(CategoryChipsInner);

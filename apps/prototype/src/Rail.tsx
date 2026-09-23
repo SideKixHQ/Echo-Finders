@@ -15,7 +15,7 @@
  * that can stack three panels over the map has given the map away by another route.
  */
 
-import { useState } from "react";
+import { memo, useState } from "react";
 import type { EchoCategory, Route, TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL, CATEGORY_ORDER } from "./categories";
 import { MODE_ICON, MODE_LABEL } from "./travel";
@@ -50,7 +50,7 @@ type Panel = "mode" | "filter" | null;
 /** One representative route per mode, so the switch offers journeys rather than jargon. */
 const MODE_ORDER: readonly TravelMode[] = ["walking", "driving", "flight"];
 
-export function Rail({
+function RailInner({
   theme,
   onTheme,
   routes,
@@ -244,3 +244,10 @@ export function Rail({
     </div>
   );
 }
+
+/*
+ * Memoised. Nothing on this component depends on where the listener is, and the app
+ * re-renders on every position fix — four times a second, for the life of a walk. Its
+ * callbacks are stable in `App`, which is what makes the comparison actually succeed.
+ */
+export const Rail = memo(RailInner);

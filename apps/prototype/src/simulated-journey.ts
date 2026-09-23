@@ -118,11 +118,24 @@ export class SimulatedJourney implements LocationSource {
   }
 
   private tick(intervalMs: number) {
-    if (!this.paused) {
-      const simSeconds = (intervalMs / 1000) * this.options.timeScale;
-      this.elapsedS = Math.min(this.route.durationS, this.elapsedS + simSeconds);
-      this.clockMs += simSeconds * 1000;
-    }
+    /*
+     * A paused journey reports nothing, rather than reporting the same place over and over.
+     *
+     * It used to keep emitting a jittered fix four times a second whatever the state of
+     * `paused`, which meant the engine was live behind the pre-flight panel: proximity was
+     * computed, guidance was rendered, and the sonar cue *played out loud* before the
+     * listener had pressed Start or even interacted with the page — which is also why the
+     * browser was refusing the audio context. Nothing captured, because the simulated
+     * clock is frozen too, so it read as a stray noise from a screen that had not started.
+     *
+     * Returning here fixes the pre-flight case and the two real pauses at the same time,
+     * and it is the honest model in all three: standing still is not a new position.
+     */
+    if (this.paused) return;
+
+    const simSeconds = (intervalMs / 1000) * this.options.timeScale;
+    this.elapsedS = Math.min(this.route.durationS, this.elapsedS + simSeconds);
+    this.clockMs += simSeconds * 1000;
 
     const km = this.profile.distanceAtTime(this.elapsedS);
     const at = pointAtDistance(this.geometry, km);

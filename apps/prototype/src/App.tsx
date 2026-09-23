@@ -20,7 +20,14 @@ import { Rail } from "./Rail";
 import { MODE_PHRASE } from "./travel";
 import type { Detent } from "./Sheet";
 import type { Echo, EchoCategory } from "@echofinders/core";
-import { checkEligibility, findEchoesAlongRoute, presetFor, upcomingOnRoute, type Route } from "@echofinders/core";
+import {
+  checkEligibility,
+  distanceKm,
+  findEchoesAlongRoute,
+  presetFor,
+  upcomingOnRoute,
+  type Route,
+} from "@echofinders/core";
 
 /** The walk is the richest route, so it is what the prototype opens on. */
 const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROUTES[0]!;
@@ -70,6 +77,17 @@ export function App() {
    */
   const [progress, setProgress] = useState(0);
   const startedRef = useRef<{ id: string; at: number } | null>(null);
+  /**
+   * The same number, readable without re-running the effect that owns the clock.
+   *
+   * The pause rebase below needs to know where the bar had got to, and depending on
+   * `progress` would restart the interval four times a second.
+   */
+  const progressRef = useRef(0);
+  const setPlayhead = useCallback((fraction: number) => {
+    progressRef.current = fraction;
+    setProgress(fraction);
+  }, []);
   // The listener's own setting drives it, not a constant. `handsFree` is off by default
   // (PRIVACY_DEFAULTS), so an echo collects itself on arrival and then waits to be played.
   const { state, session, walk, store } = useJourney(route, LIBRARY, {
@@ -83,6 +101,7 @@ export function App() {
     rate,
     privacy,
     kids,
+    simple,
   });
 
   // Whether the traveller can steer. Guidance answers "which way should I go", so it is
@@ -177,27 +196,47 @@ export function App() {
 
   const nowPlaying = state.playback.kind === "idle" ? null : state.playback.item.echo;
 
+  const playing = state.playback.kind === "playing";
+
   useEffect(() => {
     if (!nowPlaying) {
       startedRef.current = null;
-      setProgress(0);
+      setPlayhead(0);
       return;
     }
     if (startedRef.current?.id !== nowPlaying.id) {
       startedRef.current = { id: nowPlaying.id, at: Date.now() };
-      setProgress(0);
+      setPlayhead(0);
     }
     // Divided by the speed setting, or the bar runs at one speed while the voice runs at
     // another and the two disagree by more the longer the echo is.
     const durationS =
       ((simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS) / rate;
+
+    /*
+     * A paused echo has a still playhead.
+     *
+     * This ran off the wall clock from the moment the echo started and never asked whether
+     * anything was being said, so pausing froze the voice and left the bar walking: come
+     * back to a paused player after a minute and it claimed to be a minute further in,
+     * then jumped backwards the instant it resumed.
+     */
+    if (!playing) return;
+
+    // Resume from where it stopped rather than from when it began, so a pause costs no
+    // listening time.
+    startedRef.current = {
+      id: nowPlaying.id,
+      at: Date.now() - progressRef.current * durationS * 1000,
+    };
+
     const tick = setInterval(() => {
       const started = startedRef.current;
       if (!started) return;
-      setProgress(Math.min(1, (Date.now() - started.at) / 1000 / durationS));
+      setPlayhead(Math.min(1, (Date.now() - started.at) / 1000 / durationS));
     }, 250);
     return () => clearInterval(tick);
-  }, [nowPlaying, simple, rate]);
+  }, [nowPlaying, simple, rate, playing, setPlayhead]);
 
   const walkedPercent = Math.round((walk.walkedMetres / walk.totalMetres) * 100);
   const arrived = walkedPercent >= 99;
@@ -240,6 +279,18 @@ export function App() {
     );
   }, [byRoute, route.id, kids]);
   const savedEchoes = useMemo(() => onRoute.filter((e) => chosen.has(e.id)), [onRoute, chosen]);
+  /**
+   * The saved list the sheet shows, in the order you will reach them.
+   *
+   * Distance rather than pick order, because that is the question the list answers while
+   * you are standing in a street: of the things I said I wanted, which is closest.
+   */
+  const savedNearby = useMemo(() => {
+    const from = state.position?.at;
+    return savedEchoes
+      .map((echo) => ({ echo, distanceKm: from ? distanceKm(from, echo.point.at) : 0 }))
+      .sort((a, b) => a.distanceKm - b.distanceKm);
+  }, [savedEchoes, state.position]);
   const suggestion = useMemo(
     () => ROUTES.find((r) => r.id !== route.id && (corridorCounts[r.id] ?? 0) > 1) ?? null,
     [route.id, corridorCounts],
@@ -253,6 +304,39 @@ export function App() {
   );
   const activeCats = cats ?? available;
 
+  /*
+   * Hoisted and made stable, and not for tidiness.
+   *
+   * Every one of these was an inline arrow, so the rail, the tab bar and the chip row were
+   * handed brand-new props four times a second and re-rendered with them — a hundred-odd
+   * SVG nodes redrawn per second to show exactly what they already showed. Memoising those
+   * three is worthless while their callbacks change identity every frame, so the callbacks
+   * come first.
+   */
+  const toggleCategory = useCallback((category: EchoCategory) => {
+    setCats((current) => {
+      const next = new Set(current ?? available);
+      if (next.has(category) && next.size > 1) next.delete(category);
+      else next.add(category);
+      return next;
+    });
+  }, [available]);
+  const allCategories = useCallback(() => setCats(null), []);
+  const toggleSave = useCallback((echo: Echo) => {
+    setChosen((current) => {
+      const next = new Set(current);
+      if (next.has(echo.id)) next.delete(echo.id);
+      else next.add(echo.id);
+      return next;
+    });
+  }, []);
+  const openPlan = useCallback(() => setTab("listening"), []);
+  const openPackage = useCallback(() => setStarted(false), []);
+  const setKidsMode = useCallback((on: boolean) => {
+    setKids(on);
+    setSimple(on);
+  }, []);
+
   // Recomputed as the listener moves, from how far along they are rather than from the
   // clock: a journey that paused still knows where it is, and asking the clock would offer
   // things already behind them.
@@ -262,6 +346,16 @@ export function App() {
     () => upcomingOnRoute(route, onRoute, listenerFor(kids), 0, { limit: 99, minLeadS: -Infinity }),
     [route, onRoute, kids],
   );
+
+  /**
+   * Progress, in twenty-metre steps.
+   *
+   * `upcoming` asks a question of the whole route and was re-asked on every position event
+   * — four times a second, forever, to produce the same two rows. Twenty metres is under
+   * the accuracy of the fix that drives it, so nothing on screen can be stale in a way a
+   * listener could detect, and the query runs when they have actually gone somewhere.
+   */
+  const walkedStep = Math.round(walk.walkedMetres / 20);
 
   const upcoming = useMemo(
     () =>
@@ -275,10 +369,10 @@ export function App() {
         walk.walkedMetres / 1000,
         { limit: 2 },
       ),
-    // `walk.walkedMetres` is read off a mutable simulation, so the position event is what
+    // `walk.walkedMetres` is read off a mutable simulation, so the quantised step is what
     // says it changed.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [route, onRoute, state.position, kept, kids],
+    [route, onRoute, walkedStep, kept, kids],
   );
   const inCorridor = onRoute.length;
 
@@ -302,13 +396,8 @@ export function App() {
                 <CategoryChips
                   available={available}
                   on={activeCats}
-                  onToggle={(c) => {
-                    const next = new Set(activeCats);
-                    if (next.has(c) && next.size > 1) next.delete(c);
-                    else next.add(c);
-                    setCats(next);
-                  }}
-                  onAll={() => setCats(null)}
+                  onToggle={toggleCategory}
+                  onAll={allCategories}
                 />
               </div>
               <RouteMap
@@ -321,6 +410,7 @@ export function App() {
                 onSelect={setSelectedId}
                 detent={detent}
                 overview={overview}
+                theme={theme}
               />
               <Rail
                 theme={theme}
@@ -331,24 +421,16 @@ export function App() {
                 counts={corridorCounts}
                 available={available}
                 on={activeCats}
-                onToggle={(c) => {
-                  const next = new Set(activeCats);
-                  if (next.has(c) && next.size > 1) next.delete(c);
-                  else next.add(c);
-                  setCats(next);
-                }}
-                onAll={() => setCats(null)}
+                onToggle={toggleCategory}
+                onAll={allCategories}
                 kids={kids}
-                onKids={(on) => {
-                  setKids(on);
-                  setSimple(on);
-                }}
+                onKids={setKidsMode}
                 savedCount={chosen.size}
-                onSaved={() => setTab("listening")}
+                onSaved={openPlan}
                 overview={overview}
                 onOverview={setOverview}
                 downloaded={started}
-                onDownload={() => setStarted(false)}
+                onDownload={openPackage}
               />
               {selfDirected && <ProximityBar guidance={state.guidance} cue={state.cue} />}
               {/*
@@ -375,12 +457,7 @@ export function App() {
                 onSkip={() => session.skip()}
                 progress={progress}
                 saved={nowPlaying ? chosen.has(nowPlaying.id) : false}
-                onSave={(echo) => {
-                  const next = new Set(chosen);
-                  if (next.has(echo.id)) next.delete(echo.id);
-                  else next.add(echo.id);
-                  setChosen(next);
-                }}
+                onSave={toggleSave}
               />}
               <Sheet
                 nearby={state.nearby.filter((n) => activeCats.has(n.echo.category))}
@@ -400,28 +477,26 @@ export function App() {
                 selfDirected={selfDirected}
                 autoPlay={autoPlay}
                 saved={chosen}
+                savedNearby={savedNearby}
                 nowPlaying={nowPlaying}
                 progress={progress}
-                playing={state.playback.kind === "playing"}
+                playing={playing}
                 simple={simple}
                 onSimple={setSimple}
                 rate={rate}
                 onRate={setRate}
                 onSeek={(f) => {
-                  const d = (simple ? nowPlaying?.simple?.durationS : null) ?? nowPlaying?.durationS ?? 1;
-                  startedRef.current = { id: nowPlaying?.id ?? "", at: Date.now() - f * d * 1000 };
-                  setProgress(Math.max(0, Math.min(1, f)));
+                  if (!nowPlaying) return;
+                  const clamped = Math.max(0, Math.min(1, f));
+                  const d = ((simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS) / rate;
+                  startedRef.current = { id: nowPlaying.id, at: Date.now() - clamped * d * 1000 };
+                  setPlayhead(clamped);
                 }}
                 detent={detent}
                 onDetent={setDetent}
                 onNext={() => session.skip()}
                 {...(selfDirected ? { onCamera: setCamera } : {})}
-                onSave={(echo) => {
-                  const next = new Set(chosen);
-                  if (next.has(echo.id)) next.delete(echo.id);
-                  else next.add(echo.id);
-                  setChosen(next);
-                }}
+                onSave={toggleSave}
               />
             </>
           )}

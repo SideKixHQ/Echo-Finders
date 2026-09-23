@@ -100,14 +100,43 @@ export function EchoCard({
           </svg>
           {saved ? "Saved" : "Save"}
         </button>
-        <button className="act" onClick={(e) => e.stopPropagation()}>
+        {/*
+          Both of these were drawn from the design and wired to nothing: they stopped the
+          click from reaching the card and did not a thing else. A control that answers a
+          tap with silence is worse than one that is not there, because the second time
+          somebody presses it they conclude the app is broken rather than the button.
+
+          Maps hands the point to whatever the phone uses for directions — this is the one
+          place the product should send you *away*, because walking to an echo is the
+          entire game and we do not draw turn-by-turn. Share copies the place and the
+          teaser where the native sheet is unavailable, which is every desktop browser.
+        */}
+        <button
+          className="act"
+          onClick={(e) => {
+            e.stopPropagation();
+            const { lat, lng } = echo.point.at;
+            window.open(
+              `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`,
+              "_blank",
+              "noopener,noreferrer",
+            );
+          }}
+        >
           <svg viewBox="0 0 24 24">
             <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z" />
             <circle cx="12" cy="10" r="2.4" />
           </svg>
           Maps
         </button>
-        <button className="act act-icon" aria-label="Share" onClick={(e) => e.stopPropagation()}>
+        <button
+          className="act act-icon"
+          aria-label="Share"
+          onClick={(e) => {
+            e.stopPropagation();
+            void share(echo);
+          }}
+        >
           <svg viewBox="0 0 24 24">
             <circle cx="18" cy="5" r="3" />
             <circle cx="6" cy="12" r="3" />
@@ -118,6 +147,28 @@ export function EchoCard({
       </div>
     </article>
   );
+}
+
+/**
+ * Share, with the two fallbacks a browser needs.
+ *
+ * `navigator.share` is the right thing on a phone and does not exist on most desktops;
+ * the clipboard is the right thing there and is refused without a secure context. Past
+ * both, do nothing quietly rather than throwing — a share that fails is not worth an
+ * error, and a rejected native sheet is usually somebody changing their mind.
+ */
+async function share(echo: Echo): Promise<void> {
+  const text = `${echo.title} — ${echo.point.place}. ${echo.teaser ?? echo.summary}`;
+  if (typeof navigator === "undefined") return;
+  try {
+    if (typeof navigator.share === "function") {
+      await navigator.share({ title: echo.title, text });
+      return;
+    }
+    await navigator.clipboard?.writeText(text);
+  } catch {
+    /* cancelled, or no clipboard. Neither is worth interrupting a walk for. */
+  }
 }
 
 const clock = (seconds: number) =>

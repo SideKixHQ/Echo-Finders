@@ -36,6 +36,15 @@ interface Props {
   readonly selfDirected: boolean;
   readonly autoPlay: boolean;
   readonly saved: ReadonlySet<string>;
+  /**
+   * Every saved echo on this route, with its distance — not the saved ones that happen to
+   * be within reach.
+   *
+   * The tab was filtering the *nearby* list, so its own counter said three and the list
+   * below it showed nothing: the things you saved are, by definition, mostly the things
+   * you have not got to yet.
+   */
+  readonly savedNearby: readonly SavedEcho[];
   readonly onSave: (echo: Echo) => void;
   /** What is in the listener's ears, if anything, and how far through it is. */
   readonly nowPlaying: Echo | null;
@@ -56,6 +65,12 @@ interface Props {
 
 export type Detent = "peek" | "half" | "full";
 
+/** An echo on the saved list, and how far off it is. All a card needs. */
+export interface SavedEcho {
+  readonly echo: Echo;
+  readonly distanceKm: number;
+}
+
 export function Sheet({
   nearby,
   lastCapture,
@@ -72,6 +87,7 @@ export function Sheet({
   selfDirected,
   autoPlay,
   saved,
+  savedNearby,
   onSave,
   nowPlaying,
   progress,
@@ -107,7 +123,7 @@ export function Sheet({
   // The transcript is only meaningful for something actually playing, so the tab falls back
   // rather than showing an empty panel with a search box in it.
   const view = tab === "script" && !nowPlaying ? "near" : tab;
-  const savedCards = nearby.filter((n) => saved.has(n.echo.id));
+  const savedCards = savedNearby;
   return (
     <div
       className={`sheet sheet-${detent}${nowPlaying ? " sheet-playing" : ""}`}

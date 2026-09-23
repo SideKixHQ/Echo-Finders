@@ -103,12 +103,14 @@ export interface JourneyControls {
   readonly privacy: PrivacySettings;
   /** Kids mode: an age the engine gates on, not a filter over the view. */
   readonly kids: boolean;
+  /** Speak the plain-language cut where one is written. Not a view setting — it is the audio. */
+  readonly simple: boolean;
 }
 
 export function useJourney(
   route: Route,
   library: readonly Echo[],
-  { sound, narrate, autoPlay, chosen, paused, rate = 1, privacy, kids }: JourneyControls,
+  { sound, narrate, autoPlay, chosen, paused, rate = 1, privacy, kids, simple }: JourneyControls,
 ) {
   const walk = useMemo(() => {
     // `?speed=2` slows the journey so the dwell ring can be watched filling; `?start=0.4`
@@ -173,6 +175,9 @@ export function useJourney(
   useEffect(() => {
     speech.setRate(rate);
   }, [speech, rate]);
+  useEffect(() => {
+    speech.setSimple(simple);
+  }, [speech, simple]);
 
   const session = useMemo(() => {
     // Stands in for Core Haptics on iOS. Here it only records what would have happened,

@@ -13,6 +13,7 @@
  * listener reads off it: how far in they are, and how much is left.
  */
 
+import { useMemo } from "react";
 import type { Echo } from "@echofinders/core";
 import { VOICE_LABEL } from "./voices";
 import { CATEGORY_LABEL } from "./categories";
@@ -52,7 +53,12 @@ export function Player({
   onNext,
 }: PlayerProps) {
   const durationS = simple ? (echo.simple?.durationS ?? echo.durationS) : echo.durationS;
-  const heights = barHeights(simple ? (echo.simple?.script ?? echo.script ?? "") : (echo.script ?? ""));
+  // Deterministic, and only the script decides it — so there is no reason to split the
+  // prose and lay out forty-four bars again every time the playhead moves.
+  const heights = useMemo(
+    () => barHeights(simple ? (echo.simple?.script ?? echo.script ?? "") : (echo.script ?? "")),
+    [echo, simple],
+  );
   const played = Math.round(progress * BARS);
 
   return (

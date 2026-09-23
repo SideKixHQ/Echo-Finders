@@ -6,14 +6,17 @@
  * The names are worth more than they look, and they are better than the ones they replace.
  * "Listening" says what the screen is *for* where "Plan" said what you do on it — and what
  * you do on it is choose what goes in your ears, which is also what the now-playing
- * transport is about, so one word covers both. "Saved" is what a person calls the place
- * their things are, where "Collection" is what a product manager calls it.
+ * transport is about, so one word covers both. "Found" is this product's own verb for a
+ * collection — you find echoes — and it leaves the word "Saved" free for the one thing it
+ * already meant everywhere else: the echoes you bookmarked to hear.
  *
  * Settings absorbs Privacy rather than hiding it. Privacy had its own tab because two of
  * its switches delete data the moment they are used, and that reasoning was sound about the
  * *switches* and wrong about the tab: a bottom-bar slot is scarce, and nobody has ever gone
  * looking for a privacy screen anywhere but settings.
  */
+
+import { memo } from "react";
 
 export type Tab = "map" | "listening" | "saved" | "settings";
 
@@ -24,7 +27,7 @@ interface Props {
   readonly chosenCount: number;
 }
 
-export function Nav({ tab, onChange, foundCount, chosenCount }: Props) {
+function NavInner({ tab, onChange, foundCount, chosenCount }: Props) {
   return (
     <nav className="nav">
       <button className={tab === "map" ? "on" : ""} onClick={() => onChange("map")}>
@@ -42,11 +45,24 @@ export function Nav({ tab, onChange, foundCount, chosenCount }: Props) {
         Listening
         {chosenCount > 0 && <span className="badge">{chosenCount}</span>}
       </button>
+      {/*
+        "Found", not "Saved" — and the rename is a bug fix.
+
+        This tab shows the collection: the places you actually stood. The bookmark button
+        on every card, the one on the rail and the sheet's own third tab all mean the other
+        thing, the echoes you picked out to listen to. Both were called Saved, both carried
+        a count, and the two counts are never the same — the screen said "Saved 0" beside
+        "Saved 3" and neither was wrong. A collection is a record of where you have been;
+        a saved list is a plan for where you are going.
+
+        The bookmark went with the name. A pin with a tick is the record.
+      */}
       <button className={tab === "saved" ? "on" : ""} onClick={() => onChange("saved")}>
         <svg viewBox="0 0 24 24">
-          <path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+          <path d="M12 21.5s7-5.7 7-11.1A7 7 0 0 0 5 10.4c0 5.4 7 11.1 7 11.1z" />
+          <path d="M9 10.2l2.2 2.2L15 8.6" />
         </svg>
-        Saved
+        Found
         {foundCount > 0 && <span className="badge">{foundCount}</span>}
       </button>
       <button className={tab === "settings" ? "on" : ""} onClick={() => onChange("settings")}>
@@ -59,3 +75,10 @@ export function Nav({ tab, onChange, foundCount, chosenCount }: Props) {
     </nav>
   );
 }
+
+/*
+ * Memoised. Nothing on this component depends on where the listener is, and the app
+ * re-renders on every position fix — four times a second, for the life of a walk. Its
+ * callbacks are stable in `App`, which is what makes the comparison actually succeed.
+ */
+export const Nav = memo(NavInner);
