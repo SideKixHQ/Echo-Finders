@@ -28,8 +28,18 @@
 # re-timed transcript needs the same voice — and a library where echo 47 was fixed in a
 # different voice is a broken library, not a slightly inconsistent one.
 #
-# Worth checking against the plan, too: custom voice slots are usually tied to the
-# subscription tier, so downgrading can remove voices. Confirm before changing plan.
+# Worth checking against the plan, too: custom voice slots are tied to the subscription
+# tier, so downgrading can remove voices. Confirm before changing plan.
+#
+# **This account holds one custom voice at a time** (23 September 2026). That slot is spent,
+# correctly, on the designed default narrator — the one voice that is ours rather than
+# rented, and the only one that cannot be replaced.
+#
+# It is a smaller constraint than it sounds, because *stock voices do not occupy the slot*.
+# A cast of one designed narrator plus stock voices for the rest is available on this plan
+# today. What is not available is a second *designed* voice, and that is the right thing to
+# be unable to do: see the note on how many voices, below. One distinctive voice that is
+# unmistakably ours is worth more than three that anyone could pick.
 
 # ── Finding out what a voice is ───────────────────────────────────────────────
 #
@@ -71,6 +81,38 @@ voices:
     # question on this file rather than deferring it: there is no right of publicity to
     # clear, because there is no person. See the note below.
     origin: designed
+    # The brief it was designed from, kept verbatim.
+    #
+    # Not a recovery mechanism — Voice Design is not deterministic and this will not bring
+    # the same voice back. It is here for three other reasons.
+    #
+    # It records *intent*. If this voice ever has to be replaced, a person or a model
+    # working from this brief lands somewhere recognisably the same, which is the most
+    # anyone can promise.
+    #
+    # It is **editorial direction as much as audio direction**. "A trusted storyteller
+    # revealing something hidden beneath a familiar place" is the product, stated better
+    # than any of our own documents state it, and scripts should be written to be read by
+    # this person. See docs/writing-echoes.md.
+    #
+    # And its last sentence is contemporaneous evidence. A brief that says in writing
+    # "avoid ... imitation of any recognizable person", dated to the moment of creation, is
+    # exactly what a right-of-publicity question years from now would want to see. It cost
+    # nothing to write and it is the difference between asserting the voice imitates nobody
+    # and being able to show it. See docs/protection-policy.md, Risk 4.
+    designPrompt: |
+      A distinctive female narrative voice in her early forties with a neutral
+      international English accent and subtle British influence. Her voice is warm,
+      intimate, intelligent, and slightly mysterious, with a smooth lower-mid register and
+      gentle natural texture. She speaks at a measured pace, allowing important details to
+      breathe without sounding theatrical or sleepy. Her delivery creates atmosphere
+      through restraint, curiosity, and quiet emotional tension. Clear articulation,
+      controlled dynamics, and natural conversational phrasing. She sounds like a trusted
+      storyteller revealing something hidden beneath a familiar place. Cinematic but
+      believable, immersive but never melodramatic. Avoid exaggerated breathiness,
+      artificial suspense, radio-announcer delivery, and imitation of any recognizable
+      person.
+    designedAt: "2026-09-23"
     # Does the ElevenLabs plan permit redistribution inside a product licensed to a third
     # party — an airline — rather than only published by us? See docs/01-services.md.
     #
