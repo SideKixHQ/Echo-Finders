@@ -1,10 +1,12 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "npm run library:build && npm run build --workspace @echofinders/prototype",
+  "buildCommand": "npm run build --workspace @echofinders/core && npm run library:build && npm run build --workspace @echofinders/prototype",
   "outputDirectory": "apps/prototype/dist",
   "installCommand": "npm install",
   "framework": null,
-  "github": { "silent": true },
+  "github": {
+    "silent": true
+  },
   "headers": [
     {
       "source": "/(.*)",

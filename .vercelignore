@@ -1,0 +1,5 @@
+# Nothing here is served, and none of it should be uploaded to a build.
+design/
+docs/
+scripts/render-echo.mjs
+scripts/voice-info.mjs
