@@ -11,7 +11,7 @@ import type {
 } from "../src/session/adapters.js";
 import type { LatLng, Position, TravelMode } from "../src/types.js";
 import { toneFor, type ToneCue } from "../src/proximity/tone.js";
-import type { Guidance } from "../src/proximity/haptics.js";
+import type { Guidance, HapticCue } from "../src/proximity/haptics.js";
 import type { WalkEvent, WalkSessionOptions } from "../src/session/walk.js";
 import { ADULT, CHILD, makeEcho } from "./fixtures.js";
 import type { EchoDraft } from "./fixtures.js";
