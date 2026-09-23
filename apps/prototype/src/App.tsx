@@ -411,6 +411,10 @@ export function App() {
               routes={ROUTES}
               counts={corridorCounts}
               current={route}
+              foundCount={kept.length}
+              // Most recent first, and de-duplicated: two echoes at Bowling Green should
+              // not read as two places.
+              recentPlaces={[...new Set([...kept].reverse().map((c) => c.echo.point.place.split(",")[0]!.trim()))]}
               onStart={(next) => {
                 if (next.id !== route.id) onSelectRoute(next);
                 setStarted(true);
