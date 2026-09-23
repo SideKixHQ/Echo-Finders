@@ -82,7 +82,10 @@ describe("a collection is not a location history", () => {
     const opted: PrivacySettings = { ...PRIVACY_DEFAULTS, recordPrecisePlaces: true };
     const kept = redactRecord(record(), opted)!;
     expect(holdsPersonalLocation(kept)).toBe(true);
-    expect(kept.stoodAt.lat).toBeCloseTo(40.70691, 5);
+    // Optional since redaction started omitting the field rather than blanking it, so the
+    // assertion has to prove it is there before reading through it.
+    expect(kept.stoodAt).toBeDefined();
+    expect(kept.stoodAt!.lat).toBeCloseTo(40.70691, 5);
   });
 
   it("stores nothing at all when the collection is off", () => {

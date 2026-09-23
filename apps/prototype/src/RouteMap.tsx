@@ -22,7 +22,9 @@ import { useMemo } from "react";
 import { CATEGORY_ICON } from "./categories";
 import {
   buildRouteGeometry,
+  distanceKm,
   effectiveRadiusKm,
+  presetFor,
   type Arriving,
   type Echo,
   type LatLng,
@@ -81,38 +83,71 @@ const INSET = {
 };
 
 export function RouteMap({ route, library, position, opening, stateOf, selectedId, onSelect }: Props) {
+  /**
+   * The view follows the listener, rather than fitting the whole journey.
+   *
+   * Fitting the route is the obvious thing and it gets worse the better the library gets:
+   * a walk with twelve echoes on it squeezes all twelve into whatever height is left over
+   * after the sheet, and they collide into a knot. On a phone that left about a hundred
+   * pixels of map and a clump — the route was there and unreadable, which is the same as
+   * not being there.
+   *
+   * So it is a window a few hundred metres across, centred on where you are, like every
+   * map anybody has ever navigated with. The scale comes from the mode's own corridor, so
+   * a walk shows a couple of streets and a flight shows a couple of hundred kilometres —
+   * the same number that already decides what counts as "near" on that mode.
+   *
+   * Until there is a fix it still fits the route, because before you set off the useful
+   * question is what the whole journey looks like.
+   */
   const projection = useMemo(() => {
     const geometry = buildRouteGeometry(route);
-    const points = [...geometry.points, ...library.map((e) => e.point.at)];
 
-    const lats = points.map((p) => p.lat);
-    const lngs = points.map((p) => p.lng);
-    const minLat = Math.min(...lats);
-    const maxLat = Math.max(...lats);
-    const minLng = Math.min(...lngs);
-    const maxLng = Math.max(...lngs);
+    // The band actually visible between the chips and the sheet. The listener belongs in
+    // the middle of *that*, not the middle of a box that is half covered.
+    const usableW = W - INSET.side * 2;
+    const usableH = H - INSET.top - INSET.bottom;
+    const centreX = INSET.side + usableW / 2;
+    const centreY = INSET.top + usableH / 2;
+
+    let centre: LatLng;
+    let spanLat: number;
+    let spanLng: number;
+    let lngScale: number;
+
+    if (position) {
+      centre = position.at;
+      lngScale = Math.cos((centre.lat * Math.PI) / 180);
+      // Twice the corridor across the short side: on foot a couple of streets, in the air
+      // a couple of hundred kilometres.
+      const windowKm = presetFor(route.mode).corridorKm * 2;
+      spanLat = (windowKm / 111.32) * (usableH / Math.min(usableW, usableH));
+      spanLng = spanLat / lngScale;
+    } else {
+      const points = [...geometry.points, ...library.map((e) => e.point.at)];
+      const lats = points.map((p) => p.lat);
+      const lngs = points.map((p) => p.lng);
+      const minLat = Math.min(...lats);
+      const maxLat = Math.max(...lats);
+      const minLng = Math.min(...lngs);
+      const maxLng = Math.max(...lngs);
+      centre = { lat: (minLat + maxLat) / 2, lng: (minLng + maxLng) / 2 };
+      lngScale = Math.cos((centre.lat * Math.PI) / 180);
+      // A tenth of padding, so nothing sits against an edge.
+      spanLat = ((maxLat - minLat) || 1e-6) * 1.1;
+      spanLng = (((maxLng - minLng) || 1e-6) * lngScale) * 1.1 / lngScale;
+    }
 
     // Equirectangular, scaled by cos(latitude) so the shape is not stretched. Fine over a
     // two-kilometre walk; nobody is navigating by this projection.
-    const latScale = 1;
-    const lngScale = Math.cos((((minLat + maxLat) / 2) * Math.PI) / 180);
-
-    const spanLat = (maxLat - minLat) * latScale || 1e-6;
-    const spanLng = (maxLng - minLng) * lngScale || 1e-6;
-
-    const usableW = W - INSET.side * 2;
-    const usableH = H - INSET.top - INSET.bottom;
-    const scale = Math.min(usableW / spanLng, usableH / spanLat);
-
-    const offsetX = INSET.side + (usableW - spanLng * scale) / 2;
-    const offsetY = INSET.top + (usableH - spanLat * scale) / 2;
+    const scale = Math.min(usableW / (spanLng * lngScale), usableH / spanLat);
 
     return (p: LatLng) => ({
-      x: offsetX + (p.lng - minLng) * lngScale * scale,
-      // Screen y grows downward; latitude grows north, so the span is subtracted.
-      y: offsetY + (maxLat - p.lat) * latScale * scale,
+      x: centreX + (p.lng - centre.lng) * lngScale * scale,
+      // Screen y grows downward; latitude grows north, so the sign flips.
+      y: centreY + (centre.lat - p.lat) * scale,
     });
-  }, [route, library]);
+  }, [route, library, position]);
 
   const path = useMemo(() => {
     const geometry = buildRouteGeometry(route);
@@ -126,6 +161,7 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
 
   const openingById = new Map(opening.map((a) => [a.echo.id, a]));
   const here = position ? projection(position.at) : null;
+  const standingAt = position?.at ?? null;
 
   return (
     <svg className="map" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Walking route">
@@ -148,6 +184,22 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
           lines become three fat halos, which is the opposite of the mark.
         */}
         <path id="contour" d={CONTOUR} vectorEffect="non-scaling-stroke" />
+
+        {/*
+          One wave front, as the mark draws it.
+          
+          The logo's ripples are not rings. They are open arcs leaving the glowing point —
+          a pair of crescents either side, wrapping but never closing, which is what makes
+          them read as *sound leaving a place* rather than as a target reticle or a radar
+          sweep. Closed contours were the first thing I drew here and they were wrong for
+          exactly that reason: the contour lines say "this is a place", and the ripples say
+          "it is calling". Two different ideas that the mark keeps separate, so the map
+          should too.
+        */}
+        <g id="wave">
+          <path d="M8 -13.9A16 16 0 0 1 8 13.9" vectorEffect="non-scaling-stroke" />
+          <path d="M-8 -13.9A16 16 0 0 0 -8 13.9" vectorEffect="non-scaling-stroke" />
+        </g>
 
         {/*
           The route carries the mark's own gradient: its contour lines travel from aqua
@@ -188,6 +240,35 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
               <circle className="pin-radius" r={Math.max(radiusPx, 10)} />
             )}
 
+            {/*
+              The echo, echoing.
+              
+              This is the product's own metaphor and the map was not using it: pins sat
+              there as dots with a logo behind them, and the contour rings only moved during
+              the twelve seconds of a capture. An echo should be *calling* — rings going out
+              from it, over and over, the way a sound leaves a place.
+
+              Two things fall out of that, and both are meaning rather than decoration.
+              It only happens while the echo is sealed: the ripple is the unanswered call,
+              so finding one is what makes it go quiet, and a map of a finished walk is
+              still. And it quickens as you close, from four seconds a ring down to one and
+              a half, which is the same proximity model the haptic and the tone already
+              run on — three channels saying one thing rather than three.
+            */}
+            {state === "sealed" && (
+              <g className="echo-ripples" style={{ animationDuration: `${ripplePeriod(standingAt, echo)}s` }}>
+                <g className="ripple-ring">
+                  <use href="#wave" />
+                </g>
+                <g className="ripple-ring ripple-ring-2">
+                  <use href="#wave" />
+                </g>
+                <g className="ripple-ring ripple-ring-3">
+                  <use href="#wave" />
+                </g>
+              </g>
+            )}
+
             <Contours />
 
             {/*
@@ -219,6 +300,21 @@ export function RouteMap({ route, library, position, opening, stateOf, selectedI
       )}
     </svg>
   );
+}
+
+/**
+ * How long one ring takes to go out, in seconds.
+ *
+ * Four seconds when an echo is somewhere over there, a second and a half when you are
+ * nearly on it. Keyed to the same trigger radius the capture uses, so the quickening is
+ * telling the truth about how close "close" is for *this* echo rather than applying one
+ * distance to a doorway and a neighbourhood alike.
+ */
+function ripplePeriod(from: LatLng | null, echo: Echo): number {
+  if (!from) return 4;
+  const reach = echo.point.triggerRadiusKm * 8;
+  const nearness = Math.max(0, Math.min(1, 1 - distanceKm(from, echo.point.at) / reach));
+  return 4 - nearness * 2.5;
 }
 
 /**

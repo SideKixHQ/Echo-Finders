@@ -49,9 +49,13 @@ function byBoundingBox(route: Route, echoes: readonly Echo[]) {
 }
 
 const route = (mode: Route["mode"], waypoints: Route["waypoints"]): Route => ({
-  id: "r", mode, origin: { name: "a", at: waypoints[0]!.at },
-  destination: { name: "b", at: waypoints[waypoints.length - 1]!.at },
-  waypoints, durationS: 9000, departureAt: "2026-06-15T14:00:00Z",
+  id: "r",
+  mode,
+  origin: { name: "a", at: waypoints[0]!.at, timeZone: "America/New_York" },
+  destination: { name: "b", at: waypoints[waypoints.length - 1]!.at, timeZone: "America/New_York" },
+  waypoints,
+  durationS: 9000,
+  departureAt: "2026-06-15T14:00:00Z",
 });
 
 const walk = route("walking", [

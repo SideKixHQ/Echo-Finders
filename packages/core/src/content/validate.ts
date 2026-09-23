@@ -338,7 +338,18 @@ function validateTrueCrime(echo: Echo): ValidationIssue[] {
       "true crime needs at least one public record (court, coroner, government archive) as a primary source",
     );
   }
-  if (echo.factCheck !== "corroborated") {
+  // Scoped to publication, as its own message always said it was.
+  //
+  // Unscoped, this fired on every true-crime *draft* — which is the state the pipeline
+  // produces by design, since a model may research and draft but only a person may approve
+  // (ADR-0005). So CI went red the day the first true-crime echo landed and stayed red,
+  // and a permanently red build is one nobody reads. It was hiding three real failures by
+  // the time anybody looked.
+  //
+  // Nothing is weakened. The general rule above already refuses to approve anything
+  // `unchecked` or `disputed`; this adds the stricter bar true crime needs — `corroborated`
+  // specifically, so a single unchallenged source is not enough to name somebody in a crime.
+  if (echo.editorial === "approved" && echo.factCheck !== "corroborated") {
     error("factCheck", 'true crime must be "corroborated" before it can be published');
   }
   if (echo.minAge < TRUE_CRIME_MIN_AGE) {

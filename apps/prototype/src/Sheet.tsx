@@ -14,7 +14,7 @@ import { EchoCard } from "./EchoCard";
 import { PlateStrip } from "./PlateStrip";
 import { Player } from "./Player";
 import { Transcript } from "./Transcript";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import type { Upcoming } from "@echofinders/core";
 
 interface Props {
@@ -80,13 +80,69 @@ export function Sheet({
   onCamera,
 }: Props) {
   const [tab, setTab] = useState<"near" | "script" | "saved">("near");
+
+  /**
+   * How much of the screen the sheet is taking.
+   *
+   * The grab handle has been drawn at the top of this sheet since the first version and has
+   * never done anything, which is worse than not drawing it: it is the universal signal for
+   * "pull me", and a sheet that shows the affordance and then holds still teaches people
+   * the screen is broken. On a phone it left about a hundred pixels of map, which is the
+   * same as no map.
+   *
+   * Three detents rather than two, because the sheet has three jobs and they want different
+   * amounts of room: seeing where you are, reading what just opened, and working through
+   * the list.
+   */
+  const [detent, setDetent] = useState<Detent>("half");
+  const drag = useRef<{ startY: number; startH: number } | null>(null);
+  const [dragging, setDragging] = useState<number | null>(null);
   // The transcript is only meaningful for something actually playing, so the tab falls back
   // rather than showing an empty panel with a search box in it.
   const view = tab === "script" && !nowPlaying ? "near" : tab;
   const savedCards = nearby.filter((n) => saved.has(n.echo.id));
   return (
-    <div className={nowPlaying ? "sheet sheet-tall" : "sheet"}>
-      <div className="grab" />
+    <div
+      className={`sheet sheet-${detent}${nowPlaying ? " sheet-playing" : ""}`}
+      style={dragging === null ? undefined : { height: `${dragging}px` }}
+    >
+      {/*
+        The whole header is the handle, not the 4px bar. A grab target the size of a
+        matchstick is a grab target for a mouse.
+      */}
+      <div
+        className="grab-zone"
+        onPointerDown={(e) => {
+          e.currentTarget.setPointerCapture(e.pointerId);
+          const sheet = e.currentTarget.parentElement as HTMLElement;
+          drag.current = { startY: e.clientY, startH: sheet.getBoundingClientRect().height };
+          setDragging(drag.current.startH);
+        }}
+        onPointerMove={(e) => {
+          const from = drag.current;
+          if (!from) return;
+          // Up is negative on screen and taller for a sheet, hence the flip.
+          const next = from.startH + (from.startY - e.clientY);
+          setDragging(Math.max(120, Math.min(window.innerHeight * 0.88, next)));
+        }}
+        onPointerUp={(e) => {
+          const from = drag.current;
+          drag.current = null;
+          if (from === null || dragging === null) return;
+          e.currentTarget.releasePointerCapture(e.pointerId);
+          // A tap is not a drag. Under a few pixels of travel, cycle instead — the handle
+          // should answer a tap, which is what most people try first.
+          const moved = Math.abs(dragging - from.startH);
+          setDetent(moved < 6 ? nextDetent(detent) : nearestDetent(dragging));
+          setDragging(null);
+        }}
+        onPointerCancel={() => {
+          drag.current = null;
+          setDragging(null);
+        }}
+      >
+        <div className="grab" />
+      </div>
 
       {lastCapture && !nowPlaying ? (
         <Found
@@ -267,3 +323,32 @@ function Idle({
 }
 
 
+
+type Detent = "peek" | "half" | "full";
+
+/**
+ * Fractions of the viewport each detent settles at.
+ *
+ * Peek is a quarter, which is enough for the grab handle and whatever just opened while
+ * leaving three-quarters of the screen as map. That is the state the sheet should be in
+ * while somebody is actually walking; half is for browsing what is around them, and full
+ * is for working through the list sitting down.
+ */
+const DETENTS: Record<Detent, number> = { peek: 0.26, half: 0.52, full: 0.86 };
+
+const nextDetent = (from: Detent): Detent =>
+  from === "peek" ? "half" : from === "half" ? "full" : "peek";
+
+/** Where a drag lets go — whichever detent the sheet ended up nearest. */
+function nearestDetent(heightPx: number): Detent {
+  const fraction = heightPx / window.innerHeight;
+  let best: Detent = "half";
+  let gap = Infinity;
+  for (const [name, at] of Object.entries(DETENTS) as [Detent, number][]) {
+    if (Math.abs(fraction - at) < gap) {
+      gap = Math.abs(fraction - at);
+      best = name;
+    }
+  }
+  return best;
+}

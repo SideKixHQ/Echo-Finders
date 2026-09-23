@@ -60,7 +60,6 @@
    */
   --nav-h: 72px;
   --sheet-h: 466px;
-  --sheet-top: calc(var(--nav-h) + var(--sheet-h));
 }
 
 /**
@@ -952,15 +951,28 @@ body {
 .sheet { bottom: var(--nav-h); }
 /* With a player in it the sheet becomes the screen, as it does in the design: the map is
    still there above the chips, but what you are listening to is the thing you are using. */
-.sheet-tall { height: var(--sheet-tall-h, 650px); }
+/* The three detents. Set on `.screen` rather than on the sheet so the guidance bar and
+   the player, which float above it, move with it. */
+.screen:has(.sheet-peek) { --sheet-h: 26dvh; }
+.screen:has(.sheet-half) { --sheet-h: min(466px, 52dvh); }
+.screen:has(.sheet-full) { --sheet-h: 86dvh; }
+/* Something playing wants room for the transport, but never at the cost of a peek that
+   was asked for. */
+.screen:has(.sheet-playing.sheet-half) { --sheet-h: min(650px, 76dvh); }
+
+.grab-zone {
+  padding: 8px 0 4px; cursor: grab; touch-action: none;
+  display: flex; justify-content: center; flex: none;
+}
+.grab-zone:active { cursor: grabbing; }
 /* The guidance bar has nowhere to be once the sheet fills the screen, and drawing it over
    the player is how it ended up on top of the plain-language switch. */
-.screen:has(.sheet-tall) .proximity { display: none; }
-.proximity { bottom: calc(var(--sheet-top) + 10px); }
+.screen:has(.sheet-full) .proximity, .screen:has(.sheet-playing.sheet-half) .proximity { display: none; }
+.proximity { bottom: calc(var(--nav-h) + var(--sheet-h) + 10px); }
 /* Above the guidance bar when there is one; the guidance bar's own slot when there is not,
    which is every carried mode. */
-.playing { bottom: calc(var(--sheet-top) + 64px); }
-.stack-noguide .playing { bottom: calc(var(--sheet-top) + 10px); }
+.playing { bottom: calc(var(--nav-h) + var(--sheet-h) + 64px); }
+.stack-noguide .playing { bottom: calc(var(--nav-h) + var(--sheet-h) + 10px); }
 
 /* ── full-screen panels ──────────────────────────────────── */
 .screen-body {
@@ -1359,10 +1371,54 @@ body {
        ratio is 466/822, and holding it keeps the map's geometry honest at any
        height. Capped at the design value so a tall phone gains map, not sheet. */
     --sheet-h: min(466px, 52dvh);
-    --sheet-tall-h: min(650px, 76dvh);
   }
 
   /* The commentary is for reading beside the app, not on top of it. Below the
      fold, where somebody who wants the controls can still scroll to them. */
   .notes { width: auto; max-width: 560px; margin: 0 auto; padding: 28px 18px 48px; }
+}
+
+/* ── An echo, echoing ─────────────────────────────────────────────────────────
+   Wave fronts leaving the point, over and over, taken from the mark rather than
+   invented: open arcs in mirrored pairs, wrapping but never closing, travelling
+   aqua to blue to violet exactly as the logo's do.
+
+   That colour is deliberately *not* the category's. The mark's ripple is what
+   says "this is an echo" — the one thing every pin has in common — while the
+   body inside it keeps the category colour and says which kind. What it is, and
+   that it is one, told by two different parts of the same pin.
+
+   `animation-duration` is inherited from the group, so one number per pin drives
+   all three rings and the delays stay a fixed fraction of it. */
+.echo-ripples { pointer-events: none; }
+.ripple-ring {
+  animation-name: echo-out;
+  animation-duration: inherit;
+  animation-timing-function: cubic-bezier(0.15, 0.7, 0.3, 1);
+  animation-iteration-count: infinite;
+  transform-origin: 0 0;
+}
+.ripple-ring path { fill: none; stroke-width: 1.5; stroke-linecap: round; }
+/* Thirds of a cycle, negative so all three are already in flight on the first
+   frame rather than arriving one at a time. */
+.ripple-ring-2 { animation-delay: -1s; }
+.ripple-ring-3 { animation-delay: -2s; }
+
+@keyframes echo-out {
+  from { transform: scale(0.34); opacity: 0; stroke: #00e5ff; }
+  18%  { opacity: 0.85; }
+  55%  { stroke: #3b6bff; }
+  to   { transform: scale(2.3); opacity: 0; stroke: #7b3bff; }
+}
+
+/* Found is quiet. The ripple is the unanswered call, so answering it stops the
+   sound — and a map of a walk you finished sits still, which is the point. */
+.pin-captured .echo-ripples,
+.pin-heard .echo-ripples { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ripple-ring { animation: none; opacity: 0.22; }
+  .ripple-ring path { stroke: #3b6bff; }
+  .ripple-ring-2 { transform: scale(1.5); }
+  .ripple-ring-3 { transform: scale(2); }
 }
