@@ -19,7 +19,8 @@
     "echo:render": "node scripts/render-echo.mjs",
     "audit:controls": "node scripts/audit-controls.mjs",
     "audit:contrast": "python3 scripts/check-contrast.py",
-    "gate": "npm run typecheck && npm test && npm run content:validate && npm run audit:contrast && npm run audit:controls"
+    "gate": "npm run typecheck && npm test && npm run content:validate && npm run audit:contrast && npm run audit:controls && npm run audit:spec",
+    "audit:spec": "node scripts/check-spec.mjs"
   },
   "devDependencies": {
     "typescript": "^5.6.3",
