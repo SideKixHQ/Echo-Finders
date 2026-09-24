@@ -475,11 +475,21 @@ function Idle({
       : selfDirected
         ? "Stand on one to sync it"
         : "Echoes open as you pass";
+  /*
+   * Two different products in two sentences, and this said the walking one to everybody.
+   *
+   * On foot you go to the place and standing there is what unlocks the echo. In the air you
+   * cannot go anywhere: the route is fixed, the package came down before take off, and the
+   * echoes are timed to where the aeroplane will be. Telling a passenger at thirty thousand
+   * feet to "get to the spot" is telling them to do something impossible.
+   */
   const line = autoPlay
     ? "The ones you chose will play as you reach them."
-    : count > 0
-      ? "They sync as you reach them, then wait for you."
-      : "Get to the spot and it syncs. Press play when you want it.";
+    : selfDirected
+      ? count > 0
+        ? "They sync as you reach them, then wait for you."
+        : "Get to the spot and it syncs. Press play when you want it."
+      : "They open as you fly over them. Downloaded before you left.";
 
   return (
     <div className="now now-idle">

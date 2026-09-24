@@ -62,6 +62,8 @@ interface Props {
    * something and wonder what else is out there.
    */
   readonly overview: boolean;
+  /** How far along the route, 0 to 1. Decides where the line stops being flown. */
+  readonly progress?: number;
   /** Which basemap to fetch. The pins are drawn for one backdrop or the other, not both. */
   readonly theme: "dark" | "light";
 }
@@ -144,6 +146,7 @@ export function RouteMap({
   onSelect,
   detent,
   overview,
+  progress = 0,
   theme,
 }: Props) {
   /**
@@ -306,7 +309,24 @@ export function RouteMap({
       centre = at;
       // Twice the corridor: on foot a couple of streets, in the air a couple of hundred
       // kilometres. The same number that already decides what counts as near on this mode.
-      spanKm = (presetFor(mode).corridorKm * 2) / zoom;
+      const base = presetFor(mode).corridorKm * 2;
+      /*
+       * And far enough to actually contain something.
+       *
+       * The corridor is how wide a route's catchment is, not how far ahead you can see, and
+       * on a flight those are nothing like each other: the corridor is 80km, so the view
+       * spanned 160km, while the next echo was 149km ahead and the one after it 537km. The
+       * result was a plane alone on an empty map with nothing to tap, at the one moment the
+       * whole map is supposed to be showing you what is coming. Reaching out to the third
+       * nearest echo, with room around it, means there is always something on screen.
+       *
+       * Only ever widens. A walk whose next echo is round the corner keeps the street view
+       * it should have.
+       */
+      const reach = library
+        .map((echo) => distanceKm(at, echo.point.at))
+        .sort((a, b) => a - b)[Math.min(2, Math.max(0, library.length - 1))];
+      spanKm = Math.max(base, (reach ?? 0) * 2.4) / zoom;
     } else {
       const points = [...(geometry?.points ?? []), ...library.map((e) => e.point.at)];
       const lats = points.map((p) => p.lat);
@@ -497,8 +517,29 @@ export function RouteMap({
       <g clipPath="url(#mapBand)">
       {/* No line when roaming. A route drawn through echoes somebody has not agreed to
           walk is a suggestion pretending to be a plan. */}
+      {/*
+        The route, in the design's three passes rather than one.
+
+        It was a single line in an indigo-to-violet gradient, which looked like a route on a
+        transit map and said nothing. The design draws it three times in one aqua: a wide
+        soft casing so it reads against any basemap, the whole path dotted, and the part you
+        have already covered solid over the top. That last one is the point. The line tells
+        you where you are on the journey without a number, and the dots ahead are the part
+        that has not happened yet.
+
+        `pathLength="1"` normalises the path to a length of one, so the dash pattern is just
+        the progress fraction and no arc-length maths is needed.
+      */}
       {path && <path d={path} className="route-casing" />}
-      {path && <path d={path} className="route" />}
+      {path && <path d={path} className="route-ahead" />}
+      {path && (
+        <path
+          d={path}
+          className="route-flown"
+          pathLength="1"
+          strokeDasharray={`${Math.max(0, Math.min(1, progress))} 1`}
+        />
+      )}
 
       {library.map((echo) => {
         const { x, y } = projection(echo.point.at);

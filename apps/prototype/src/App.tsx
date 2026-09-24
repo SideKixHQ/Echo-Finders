@@ -611,6 +611,7 @@ export function App() {
                 onSelect={setSelectedId}
                 detent={detent}
                 overview={overview}
+                progress={along}
                 theme={theme}
               />
               <Rail

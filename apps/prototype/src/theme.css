@@ -160,10 +160,19 @@ body {
   touch-action: pan-y;
 }
 
-.route-casing { fill: none; stroke: rgba(var(--rgb-hair), 0.1); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
-.route {
-  fill: none; stroke: url(#routeLine); stroke-width: 2.5;
-  stroke-linecap: round; stroke-linejoin: round; opacity: 0.9;
+/* The design's own three, in its own aqua: a soft casing, the whole path dotted, and the
+   flown part solid over it. Weights and opacities are the prototype's. */
+.route-casing {
+  fill: none; stroke: var(--aqua); stroke-width: 9; opacity: 0.12;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.route-ahead {
+  fill: none; stroke: var(--aqua); stroke-width: 2; opacity: 0.5;
+  stroke-dasharray: 1 7; stroke-linecap: round; stroke-linejoin: round;
+}
+.route-flown {
+  fill: none; stroke: var(--aqua); stroke-width: 2.5; opacity: 0.95;
+  stroke-linecap: round; stroke-linejoin: round;
 }
 
 .pin { cursor: pointer; }
