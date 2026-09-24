@@ -107,6 +107,15 @@ export function Sheet({
   onDetent,
 }: Props) {
   const [tab, setTab] = useState<"near" | "script" | "saved">("near");
+  /**
+   * Which row is showing its detail. One at a time, held here rather than in the card.
+   *
+   * Two open rows is two thirds of the sheet gone and the scanning problem back, so the
+   * list owns the choice. Tapping the open row closes it, which is the only way out that
+   * does not need a second control.
+   */
+  const [openId, setOpenId] = useState<string | null>(null);
+  const toggleOpen = (id: string) => setOpenId((current) => (current === id ? null : id));
 
   /**
    * How much of the screen the sheet is taking.
@@ -256,6 +265,8 @@ export function Sheet({
             sealed={stateOf(entry.echo.id) === "sealed"}
             selected={selectedId === entry.echo.id}
             playing={isPlaying(entry.echo.id)}
+            open={openId === entry.echo.id}
+            onOpen={toggleOpen}
             saved={saved.has(entry.echo.id)}
             onPlay={onPlay}
             onSave={onSave}
@@ -334,6 +345,7 @@ function Found({
               is whether to listen now, and that is a question about both. */}
           <p>
             {capture.echo.point.place} · {clock(capture.echo.durationS)}
+            {reasons.length > 0 && <> · {reasons[0]!.toLowerCase()}</>}
           </p>
         </div>
 
@@ -352,8 +364,11 @@ function Found({
           </svg>
         </button>
       </div>
-      {/* Rarity as a sentence, not a badge. A tier icon means nothing; this means something. */}
-      {reasons.length > 0 && <p className="rarity-why">{reasons[0]}</p>}
+      {/*
+        The rarity sentence used to sit here as its own line. It is good writing and it was
+        costing a line of a sheet that had none to spare, above a list somebody was trying
+        to scan. It rides with the place instead.
+      */}
       {onCamera && <PlateStrip echo={capture.echo} onOpen={onCamera} />}
     </div>
   );

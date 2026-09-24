@@ -457,31 +457,38 @@ body {
  * the chips move, and it is driven by a scroll listener so it disappears at the end of the
  * row instead of implying there is always more.
  */
-.chipwrap { position: relative; margin-top: 9px; }
-.chipwrap::after {
-  content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 34px;
-  pointer-events: none; border-radius: 0 13px 13px 0;
-  background: linear-gradient(90deg, rgba(var(--rgb-panel), 0), rgba(var(--rgb-panel), 0.96));
-  opacity: 0; transition: opacity 0.18s var(--ease);
-}
-.chipwrap[data-more="1"]::after { opacity: 1; }
-/* The chevron rides on the fade so the affordance is a shape, not only a gradient —
-   a fade alone is invisible to anyone who cannot see a soft edge. */
-.chipwrap::before {
-  content: ""; position: absolute; right: 11px; top: 50%; z-index: 1;
-  width: 7px; height: 7px; margin-top: -4px; pointer-events: none;
-  border-right: 1.6px solid var(--cool); border-bottom: 1.6px solid var(--cool);
-  transform: rotate(-45deg); opacity: 0; transition: opacity 0.18s var(--ease);
-}
-.chipwrap[data-more="1"]::before { opacity: 0.75; }
 /*
- * No `.chip-none`. Two turns ago this row hid categories with nothing on the route; the
- * fix for that was to show them all, and I then dimmed the empty ones to 45% — which
- * traded a row that lost chips for a row where five of nine looked switched off, or
- * broken. The design has no such state, and it is right not to: the chip's job is to be
- * a legible key and a reachable filter, and "there is nothing in this one here" is
- * answered, immediately and recoverably, by tapping it.
+ * There is more of this row than fits, and nothing said so.
+ *
+ * Nine chips are about twice a phone's width, and a strip that ends flush at the screen
+ * edge looks like a strip that ends. Two things say otherwise: content running out *under*
+ * a fade reads as content continuing, and an arrow says it can be moved. The arrow is a
+ * real button (see `CategoryChips`) rather than the decorative pseudo-element it started
+ * as, and both only exist while there is actually something in that direction.
  */
+.chipwrap { position: relative; margin-top: 9px; }
+.chip-nudge {
+  position: absolute; top: 0; bottom: 0; z-index: 2; width: 30px;
+  display: grid; place-items: center; cursor: pointer;
+  border: 0; padding: 0; color: var(--cool);
+}
+.chip-nudge svg {
+  width: 15px; height: 15px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+/* The fade belongs to the arrow, so it can never promise a direction the arrow cannot
+   go: one element, one condition, and they are mounted together. */
+.chip-nudge-r {
+  right: 0; border-radius: 0 13px 13px 0;
+  background: linear-gradient(90deg, rgba(var(--rgb-panel), 0), rgba(var(--rgb-panel), 0.97) 55%);
+}
+.chip-nudge-l {
+  left: 0; border-radius: 13px 0 0 13px;
+  background: linear-gradient(270deg, rgba(var(--rgb-panel), 0), rgba(var(--rgb-panel), 0.97) 55%);
+}
+/* Scrolled by the arrow as well as by a thumb, so the two cannot disagree. */
+.chips { scroll-behavior: smooth; }
+
 .chip {
   flex: none; display: flex; align-items: center; gap: 6px; cursor: pointer; padding: 6px 10px; border-radius: 9px; font: inherit; font-size: 10.5px; background: none; border: 0; white-space: nowrap;
 }
@@ -514,11 +521,66 @@ body {
 .chip.on .chip-dot { opacity: 1; }
 
 /* ── echo card ───────────────────────────────────────────── */
+/* ── The echo row ─────────────────────────────────────────────────────────────
+   Compact by default so a list can be scanned: a plate that plays, a title, and a
+   bookmark. Five fit where one card did. Detail expands in place underneath. */
 .ecard {
+  flex: 0 0 auto; position: relative; overflow: hidden;
   background: rgba(var(--rgb-panel), 0.55); border: 1px solid var(--line);
-  border-radius: 14px; padding: 12px 13px; cursor: pointer; flex: none;
-  transition: border-color 0.2s var(--ease);
+  border-radius: 14px;
+  transition: border-color 0.14s var(--ease), background 0.14s var(--ease);
 }
+.erow { display: flex; align-items: center; gap: 11px; padding: 9px 10px; }
+/* The design's saved-plate, at a size a thumb can hit: 60x46 with the length on it. */
+.erow-plate {
+  position: relative; width: 60px; height: 46px; flex: none; cursor: pointer;
+  border-radius: 9px; display: grid; place-items: center;
+  background: color-mix(in srgb, currentColor 16%, transparent);
+  border: 1px solid color-mix(in srgb, currentColor 34%, transparent);
+  color: inherit;
+}
+.erow-plate svg {
+  width: 17px; height: 17px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.erow-plate .act-fill { fill: currentColor; stroke: none; }
+.erow-plate i {
+  position: absolute; right: 3px; bottom: 3px; padding: 1px 4px; border-radius: 4px;
+  background: rgba(0, 0, 0, 0.72); font-style: normal; color: var(--cool);
+  font-family: "Space Grotesk", monospace; font-size: 8.5px;
+}
+.erow-plate:disabled { cursor: default; opacity: 0.85; }
+.erow-body {
+  flex: 1; min-width: 0; text-align: left; background: none; border: 0;
+  padding: 0; font: inherit; color: inherit; cursor: pointer;
+  display: flex; flex-direction: column; gap: 2px; align-items: flex-start;
+}
+.erow-body strong {
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden; font-size: 12.5px; font-weight: 500; line-height: 1.35;
+  color: var(--white);
+}
+.erow-body small {
+  display: block; font-family: "Space Grotesk", monospace; font-size: 10px;
+  color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  max-width: 100%;
+}
+.erow-save {
+  flex: none; width: 38px; height: 38px; border-radius: 12px; cursor: pointer;
+  border: 1px solid var(--line-2); background: none; color: var(--cool);
+  display: grid; place-items: center;
+}
+.erow-save svg {
+  width: 15px; height: 15px; fill: none; stroke: currentColor;
+  stroke-width: 1.8; stroke-linejoin: round;
+}
+.erow-save.on { border-color: var(--aqua); color: var(--aqua); background: rgba(var(--rgb-accent), 0.12); }
+.erow-save.on svg { fill: currentColor; }
+/* Detail, one row at a time. */
+.ecard-detail { padding: 0 12px 11px; border-top: 1px solid var(--line); margin-top: 2px; }
+.ecard-detail p { margin: 9px 0 0; font-size: 11px; line-height: 1.5; color: var(--muted); }
+.ecard-open { background: rgba(var(--rgb-panel), 0.8); border-color: var(--line-2); }
+
 /* Ember, not the design's aqua: the map already marks a found echo ember, and a card
    disagreeing with its own pin would read as two different states. */
 .ecard-playing {
@@ -541,7 +603,7 @@ body {
   margin: 0 0 4px; font-size: 13.5px; font-weight: 500;
   line-height: 1.35; letter-spacing: -0.01em;
 }
-.ecard-sealed h4 { font-style: italic; color: var(--cool); }
+.ecard-sealed .erow-body strong { font-style: italic; color: var(--cool); }
 .ecard p { margin: 0; font-size: 11px; line-height: 1.5; color: var(--muted); }
 .ecard-place {
   margin-top: 8px; display: flex; align-items: center; gap: 5px;

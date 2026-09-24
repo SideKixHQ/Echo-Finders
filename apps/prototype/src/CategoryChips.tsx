@@ -4,10 +4,13 @@
  * Straight from the design: an "All" chip pinned to the left behind a divider, then one
  * chip per category carrying its own colour as a dot.
  *
- * The dot keeps its colour whether or not the chip is on — only its opacity changes — which
- * is what makes the row a *key* rather than a set of buttons. Greying the dot out with the
- * label, as an earlier pass did, left somebody who does not already know the palette staring
- * at nine identical grey circles.
+ * Nine categories, nine colours, and a chip wears its own when it is on. Off, the label
+ * goes muted but the dot keeps its colour, which is what makes the row a key rather than a
+ * set of buttons: greying the dot out with the label left anybody who does not already know
+ * the palette staring at nine identical grey circles.
+ *
+ * What is lit is what is on the map. There is no second filter and no hidden state: the set
+ * of lit chips is the set passed to the map, the sheet and the nearby list.
  *
  * **Every category, always.** The design renders the whole of its `CATS` table on every
  * screen and never narrows it (`design/SPEC.md`), and matching that is a correction rather
@@ -45,17 +48,20 @@ function CategoryChipsInner({ on, onToggle, onAll }: CategoryChipsProps) {
   const all = CATEGORY_ORDER.every((c) => on.has(c));
 
   /*
-   * Whether there is more row to the right. Measured rather than assumed, because "nine
-   * chips overflow a phone" stops being true on a wide screen and at large text sizes it
-   * becomes true sooner — and a fade promising more where there is none is worse than no
-   * fade at all.
+   * Whether there is more row in each direction. Measured rather than assumed, because
+   * "nine chips overflow a phone" stops being true on a wide screen and becomes true
+   * sooner at large text sizes, and an arrow promising more where there is none is worse
+   * than no arrow.
    */
   const strip = useRef<HTMLDivElement | null>(null);
-  const [more, setMore] = useState(false);
+  const [edge, setEdge] = useState({ left: false, right: false });
   const measure = useCallback(() => {
     const el = strip.current;
     if (!el) return;
-    setMore(el.scrollWidth - el.scrollLeft - el.clientWidth > 8);
+    setEdge({
+      left: el.scrollLeft > 8,
+      right: el.scrollWidth - el.scrollLeft - el.clientWidth > 8,
+    });
   }, []);
   useEffect(() => {
     measure();
@@ -66,9 +72,38 @@ function CategoryChipsInner({ on, onToggle, onAll }: CategoryChipsProps) {
     return () => ro.disconnect();
   }, [measure]);
 
+  /**
+   * The arrow moves the row.
+   *
+   * It was a pseudo-element with `pointer-events: none`: a picture of a control. An arrow
+   * that looks pressable and does nothing when pressed is worse than a plain fade, because
+   * the fade never claimed anything. Now it is a button, it scrolls about two thirds of a
+   * screenful so a chip is never cut in half at the new edge, and it appears on both sides
+   * so the row can be walked back as well as forward.
+   */
+  const nudge = useCallback((direction: -1 | 1) => {
+    const el = strip.current;
+    if (!el) return;
+    el.scrollBy({ left: direction * el.clientWidth * 0.66, behavior: "smooth" });
+  }, []);
+
   return (
-    <div className="chipwrap" data-more={more ? 1 : 0}>
-    <div className="chips" ref={strip} onScroll={measure}>
+    <div className="chipwrap">
+      {edge.left && (
+        <button className="chip-nudge chip-nudge-l" onClick={() => nudge(-1)} aria-label="Earlier categories">
+          <svg viewBox="0 0 24 24">
+            <path d="M15 5l-7 7 7 7" />
+          </svg>
+        </button>
+      )}
+      {edge.right && (
+        <button className="chip-nudge chip-nudge-r" onClick={() => nudge(1)} aria-label="More categories">
+          <svg viewBox="0 0 24 24">
+            <path d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      )}
+      <div className="chips" ref={strip} onScroll={measure}>
       <button className={all ? "chip chip-all on" : "chip chip-all"} onClick={onAll}>
         All
       </button>
@@ -83,8 +118,8 @@ function CategoryChipsInner({ on, onToggle, onAll }: CategoryChipsProps) {
           <span className={`chip-dot cat-${category}`} />
           {CATEGORY_LABEL[category]}
         </button>
-      ))}
-    </div>
+        ))}
+      </div>
     </div>
   );
 }

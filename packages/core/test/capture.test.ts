@@ -54,6 +54,43 @@ describe("capture by arrival", () => {
     expect(tracker.stateOf("federal-hall")).toBe("captured");
   });
 
+  /**
+   * The rule that stops a collection becoming a list of things you were carried past.
+   *
+   * There was no test here, which is exactly why the bug survived: the dwell timer is
+   * documented as "a filter against passing through", and on foot it is one. At 850kph
+   * through an eighty-kilometre corridor it is not even a speed bump, so a flight cleared
+   * it without anybody doing anything and landed with the whole route collected.
+   */
+  it("does not open anything you were merely flown over", () => {
+    const tracker = new CaptureTracker(ADULT, { mode: "flight" });
+    // A flight echo is a region, not a doorstep, and an aircraft sits inside one for
+    // minutes. Ten of them, and still nothing is earned.
+    const library = [plaque({ triggerRadiusKm: 40, visibility: "landmark-visible" })];
+    const events = standAt(tracker, WALL_STREET, library, { dwellS: 600, accuracyM: 80 });
+
+    expect(events).toEqual([]);
+    expect(tracker.stateOf("federal-hall")).toBe("sealed");
+  });
+
+  it("still lets a passenger claim one deliberately", () => {
+    // Arrival is off in the air; intent is not. Choosing a story from the package you
+    // downloaded is how an echo becomes yours on a flight.
+    const tracker = new CaptureTracker(ADULT, { mode: "flight" });
+    const echo = plaque({ triggerRadiusKm: 40, visibility: "landmark-visible" });
+    const attempt = tracker.attempt(echo, fix(WALL_STREET, START, 80));
+
+    expect(attempt.captured).toBe(true);
+    expect(tracker.stateOf("federal-hall")).toBe("captured");
+  });
+
+  it("keeps arrival capture on every mode the traveller steers", () => {
+    for (const mode of ["walking", "driving", "cycling"] as const) {
+      const tracker = new CaptureTracker(ADULT, { mode });
+      expect(standAt(tracker, WALL_STREET, [plaque()])).toHaveLength(1);
+    }
+  });
+
   it("does not open one from across the street", () => {
     const tracker = new CaptureTracker(ADULT);
     const library = [plaque()];

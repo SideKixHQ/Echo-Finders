@@ -7,9 +7,20 @@
  *
  * That record is the reason someone keeps the app. A number that goes up is a poor reason;
  * "here is everywhere your life has passed through, and what happened there" is a good one.
+ *
+ * **Grouped by whether you have heard it, not by how rare it is.** The rarity grouping this
+ * replaces was a scoring instinct: it sorted a record into tiers nobody asked about, and it
+ * buried the one question a person actually has in front of a list of forty. Finding an
+ * echo and hearing it are separate acts by design (ADR-0010) — arriving collects it, and
+ * pressing play is a decision — so "collected and never listened to" is a real and
+ * extremely common state. The engine has tracked it all along in `heardAt`; this screen
+ * threw it away and drew every row the same.
+ *
+ * So the backlog comes first and it is the actionable half. What you have already heard
+ * sits under it, quieter, as the record.
  */
 
-import { rarityOf, rarityReasons, type CaptureEvent, type Echo, type Rarity } from "@echofinders/core";
+import { rarityReasons, type CaptureEvent, type Echo } from "@echofinders/core";
 import { CATEGORY_ICON } from "./categories";
 import type { PrivacySettings } from "@echofinders/core";
 import { holdsPersonalLocation } from "@echofinders/core";
@@ -21,11 +32,18 @@ interface Props {
   /** Play one, from anywhere, at any time — which is the whole point of keeping them. */
   readonly onPlay: (echo: Echo) => void;
   readonly isPlaying: (echoId: string) => boolean;
+  /**
+   * Whether this one has actually been listened to.
+   *
+   * Asked of the live tracker rather than read off `capture.record`, because a capture
+   * event is built at the moment of arrival and its record is a snapshot from before
+   * anybody pressed play. The record on disk gains `heardAt` later; the event in this
+   * array never does.
+   */
+  readonly isHeard: (echoId: string) => boolean;
 }
 
-const RARITY_ORDER: readonly Rarity[] = ["singular", "rare", "uncommon", "common"];
-
-export function Collection({ captured, privacy, total, onPlay, isPlaying }: Props) {
+export function Collection({ captured, privacy, total, onPlay, isPlaying, isHeard }: Props) {
   if (captured.length === 0) {
     return (
       <div className="screen-body">
@@ -38,10 +56,12 @@ export function Collection({ captured, privacy, total, onPlay, isPlaying }: Prop
     );
   }
 
-  const byRarity = RARITY_ORDER.map((rarity) => ({
-    rarity,
-    items: captured.filter((c) => rarityOf(c.echo) === rarity),
-  })).filter((group) => group.items.length > 0);
+  const unheard = captured.filter((c) => !isHeard(c.echo.id));
+  const heard = captured.filter((c) => isHeard(c.echo.id));
+  const groups = [
+    { key: "unheard", label: `Not heard yet · ${unheard.length}`, items: unheard },
+    { key: "heard", label: `Heard · ${heard.length}`, items: heard },
+  ].filter((g) => g.items.length > 0);
 
   return (
     <div className="screen-body">
@@ -57,9 +77,9 @@ export function Collection({ captured, privacy, total, onPlay, isPlaying }: Prop
         </span>
       </header>
 
-      {byRarity.map(({ rarity, items }) => (
-        <section key={rarity} className="group">
-          <h3 className={`group-head group-${rarity}`}>{rarity}</h3>
+      {groups.map(({ key, label, items }) => (
+        <section key={key} className={`group group-${key}`}>
+          <h3 className="group-head">{label}</h3>
           {items.map((capture) => (
             <Entry
               key={capture.echo.id}
@@ -67,6 +87,7 @@ export function Collection({ captured, privacy, total, onPlay, isPlaying }: Prop
               privacy={privacy}
               onPlay={onPlay}
               playing={isPlaying(capture.echo.id)}
+              heard={isHeard(capture.echo.id)}
             />
           ))}
         </section>
@@ -97,18 +118,20 @@ function Entry({
   privacy,
   onPlay,
   playing,
+  heard,
 }: {
   capture: CaptureEvent;
   privacy: PrivacySettings;
   onPlay: (echo: Echo) => void;
   playing: boolean;
+  heard: boolean;
 }) {
   const reasons = rarityReasons(capture.echo);
   const stored = privacy.recordPrecisePlaces && holdsPersonalLocation(capture.record);
   const found = new Date(capture.record.capturedAt);
 
   return (
-    <article className={playing ? "entry entry-playing" : "entry"}>
+    <article className={`entry${playing ? " entry-playing" : ""}${heard ? " entry-heard" : ""}`}>
       {/*
         The whole entry starts it. Capturing an echo bookmarks it; this is where the
         bookmark gets cashed in, and it should take one tap anywhere on the row rather than
@@ -126,7 +149,7 @@ function Entry({
           scannable.
         */}
         <div className={`entry-glyph cat-${capture.echo.category}`} aria-hidden="true">
-          {playing ? (
+          {playing || !heard ? (
             <svg viewBox="0 0 24 24" className="entry-glyph-play">
               <path d="M8 5v14l11-7z" />
             </svg>

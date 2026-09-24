@@ -53,6 +53,14 @@ export interface CaptureOptions {
   /** Multiple of the mode's speed beyond which movement is treated as impossible. */
   readonly maxSpeedFactor?: number;
   readonly requireAudio?: boolean;
+  /**
+   * Whether standing still inside an echo's radius opens it.
+   *
+   * Defaults to the mode's `selfDirected`: true on foot, by car and by bike, false in the
+   * air and on rail. Overridable because a test wants to say so explicitly, not because a
+   * product ever should.
+   */
+  readonly captureByArrival?: boolean;
 }
 
 const DEFAULTS = {
@@ -88,7 +96,14 @@ export class CaptureTracker {
       maxAccuracyRatio: options.maxAccuracyRatio ?? DEFAULTS.maxAccuracyRatio,
       maxSpeedFactor: options.maxSpeedFactor ?? DEFAULTS.maxSpeedFactor,
       requireAudio: options.requireAudio ?? false,
+      captureByArrival:
+        options.captureByArrival ?? presetFor(options.mode ?? "walking").selfDirected,
     };
+  }
+
+  /** Shorthand for the rule in `update`: can standing here open anything at all? */
+  private get byArrival(): boolean {
+    return this.options.captureByArrival;
   }
 
   /** Rebuild from persisted records, so a collection survives reinstalling the app. */
@@ -133,6 +148,29 @@ export class CaptureTracker {
       if (this.fixTooVague(echo, position)) continue;
 
       if (teleported) continue;
+
+      /*
+       * Being carried past something is not arriving at it.
+       *
+       * The dwell timer above is described as "a filter against passing through", and on
+       * foot it is one: fifty metres at walking pace is a decision to stop. In the air it
+       * is not even a speed bump. A flight corridor is eighty kilometres wide and a flight
+       * echo carries a forty-kilometre trigger radius, so an aircraft sits inside one for
+       * something like five minutes, clears a twelve-second dwell without anybody doing
+       * anything, and lands with every echo on the route collected. That is a wall of
+       * things you flew over, and it devalues the ones somebody walked to.
+       *
+       * No dwell length fixes it, because the problem is not duration. On a mode the
+       * traveller cannot steer there is no such thing as going somewhere: the route was
+       * decided at the gate. So arrival does not capture at all where `selfDirected` is
+       * false, and an echo becomes yours the way it actually can on a flight — you
+       * downloaded the journey, and you chose to play this one. `attempt()` below is
+       * untouched, and it is the path a tap takes.
+       */
+      if (!this.byArrival) {
+        arriving.push({ echo, distanceKm: km, progress: 0 });
+        continue;
+      }
 
       const since = this.arrivingSince.get(echo.id) ?? position.timestamp;
       this.arrivingSince.set(echo.id, since);

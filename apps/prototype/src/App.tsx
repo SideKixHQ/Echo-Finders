@@ -536,6 +536,7 @@ export function App() {
               isPlaying={(id) =>
                 state.playback.kind !== "idle" && state.playback.item.echo.id === id
               }
+              isHeard={(id) => stateOf(id) === "heard"}
             />
           )}
 
