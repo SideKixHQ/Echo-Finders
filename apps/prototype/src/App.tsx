@@ -49,6 +49,16 @@ export function App() {
    * is here" with no path to project onto — so this is a flag, not a second app.
    */
   const [roaming, setRoaming] = useState(false);
+  /**
+   * How you are travelling when there is no route.
+   *
+   * Roaming used to imply walking, which is how a driver hunting for echoes ended up run at
+   * walking pace, with a three hundred metre corridor, under a rule that asked them to
+   * stand still at every one. Driving is hunting too; it just hunts at sixty.
+   */
+  const [roamMode, setRoamMode] = useState<"walking" | "driving">("walking");
+  /** Whether the journey screen actually resolved to a route, so "just drive" can roam. */
+  const roamRouteChosen = useRef(false);
 
   /**
    * The real device location. Asked for once, by a tap, and held for the life of the app:
@@ -134,6 +144,7 @@ export function App() {
     chosen: chosen.size > 0 ? chosen : undefined,
     paused,
     rate,
+    roamMode,
     privacy,
     kids,
     simple,
@@ -598,7 +609,7 @@ export function App() {
               </div>
               <RouteMap
                 route={roaming ? null : route}
-                mode={roaming ? "walking" : route.mode}
+                mode={roaming ? roamMode : route.mode}
                 library={
                   roaming
                     ? state.nearby.map((n) => n.echo).filter((e) => activeCats.has(e.category))
@@ -635,6 +646,7 @@ export function App() {
                   echo={selectedEcho.echo}
                   distanceKm={selectedEcho.distanceKm}
                   state={stateOf(selectedEcho.echo.id)}
+                  mode={roaming ? roamMode : route.mode}
                   saved={chosen.has(selectedEcho.echo.id)}
                   onSave={toggleSave}
                   onPlay={(echo) => {
@@ -727,6 +739,7 @@ export function App() {
               isHeard={(id) => stateOf(id) === "heard"}
               saved={savedEchoes}
               onSave={toggleSave}
+              mode={roaming ? roamMode : route.mode}
             />
           )}
 
@@ -798,10 +811,18 @@ export function App() {
               routes={ROUTES}
               onFlight={(routeId) => {
                 const found = routeId ? ROUTES.find((r) => r.id === routeId) : undefined;
+                roamRouteChosen.current = Boolean(found);
                 if (found) onSelectRoute(found);
               }}
-              onDone={(roam) => {
-                setRoaming(roam);
+              onDone={({ roaming: roam, mode }) => {
+                /*
+                 * Driving without a route still roams, and still has to be driving.
+                 * Roaming used to imply walking, so a driver hunting for echoes was run at
+                 * walking pace with a three hundred metre corridor and a rule that asked
+                 * them to stand still. `roamMode` keeps the two apart.
+                 */
+                setRoaming(roam || (mode === "driving" && !roamRouteChosen.current));
+                setRoamMode(mode === "flight" ? "walking" : mode);
                 finishOnboarding();
               }}
             />

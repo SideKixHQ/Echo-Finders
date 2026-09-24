@@ -1105,11 +1105,15 @@ body {
 
 /* Matches the floating row's, so keeping an echo is the same gesture in the same place
    whichever of the two is on screen. */
+/* Neutral until it is on. It wore the ember of the saved state at all times, so an echo
+   nobody had saved sat behind a lit orange button, and the one thing the control exists to
+   tell you was the one thing it could not. The design's own off state: muted ink, hairline
+   border. Ember is still what "saved" looks like, because ember is what "yours" means
+   everywhere else here. */
 .now-mark {
   flex: none; width: 38px; height: 38px; border-radius: 12px; cursor: pointer;
   display: grid; place-items: center;
-  background: transparent; color: var(--ember); border: 1px solid rgba(255, 158, 18, 0.45);
-
+  background: transparent; color: var(--cool); border: 1px solid var(--line-2);
 }
 .now-mark svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
 .now-mark.on { background: var(--ember); color: #1a1000; border-color: var(--ember); }
@@ -1855,7 +1859,9 @@ body {
   background: rgba(var(--rgb-panel), 0.55); border: 1px solid var(--line);
   transition: border-color 0.16s var(--ease), background 0.16s var(--ease);
 }
-.onb-card b { display: block; font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+/* White. It had no colour of its own, so the title of every choice card inherited the
+   screen's muted ink and read as disabled text. */
+.onb-card b { display: block; font-size: 14px; font-weight: 500; margin-bottom: 4px; color: var(--white); }
 .onb-card small { display: block; font-size: 11.5px; line-height: 1.55; color: var(--muted); }
 .onb-card.on { border-color: var(--aqua); background: rgba(var(--rgb-accent), 0.08); }
 
@@ -2165,3 +2171,34 @@ body {
   border: 1px solid var(--line-2);
 }
 .play-far svg.play-pin { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linejoin: round; }
+
+/* The empty state on a full screen, as opposed to the one inside a list.
+   There was no rule for it at all, so "Nothing synced yet" and the sentence after it ran
+   together into one paragraph at body size, which is what an unstyled <b> next to a text
+   node looks like. */
+.screen-body > .empty {
+  padding: 64px 22px; text-align: center; color: var(--muted);
+}
+.screen-body > .empty b {
+  display: block; margin-bottom: 8px;
+  font-size: 15px; font-weight: 500; color: var(--white);
+}
+.screen-body > .empty span {
+  display: block; max-width: 34ch; margin: 0 auto;
+  font-size: 12.5px; line-height: 1.6;
+}
+
+
+/* A secondary choice, not a sentence.
+   `.onb-alt` was plain muted text at body size, so "No route. Just drive and find what I
+   pass." read as a stray line of prose rather than as the other half of the decision. */
+.onb-alt {
+  color: var(--aqua); text-decoration: underline; text-underline-offset: 3px;
+}
+.onb-alt:hover { filter: brightness(1.15); }
+
+/* The note about what is not built yet. Small, last, and not in the mono face, which made
+   it look like debug output stuck to the screen. */
+.onb-note {
+  margin: 10px 2px 0; font-size: 11px; line-height: 1.5; color: var(--muted); opacity: 0.8;
+}

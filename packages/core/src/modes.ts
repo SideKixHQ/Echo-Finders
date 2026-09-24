@@ -24,6 +24,26 @@ export interface ModePreset {
   readonly corridorKm: number;
 
   /**
+   * Fastest you can be moving and still sync an echo, km/h. `null` means no ceiling.
+   *
+   * This is the rule that decides what "being there" means, and it is not the same
+   * question in every mode. On foot it is arrival: you stopped, you are at the place, the
+   * echo is about the thing in front of you, and a ceiling just above walking pace tells a
+   * stop from a stride without asking anybody to stand still on purpose.
+   *
+   * **A car cannot stand anywhere.** Driving past a lighthouse at sixty is the whole
+   * experience of driving past a lighthouse, and there is no version of this product where
+   * the driver pulls over at every echo. So driving has no ceiling: its echoes are
+   * kilometres wide rather than metres, and passing through that is the arrival. This was
+   * a flat eight km/h across every mode, which quietly made the entire driving product
+   * impossible and then told the driver to get out and walk.
+   *
+   * On the carried modes it is moot, because `selfDirected` has already said the route is
+   * not yours to change and the package came down before you left.
+   */
+  readonly syncAtKph: number | null;
+
+  /**
    * How far, in seconds, an echo may play from the moment the listener is nearest it.
    * Roughly "how long the place stays the place you are at".
    */
@@ -144,6 +164,8 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     selfDirected: false,
     speedKph: 850,
     corridorKm: 80,
+    // Moot: carried, and downloaded before the door closed.
+    syncAtKph: null,
     maxTimingDriftS: 600,
     minGapS: 45,
     dutyCycle: { light: 0.2, balanced: 0.4, immersive: 0.65 },
@@ -166,6 +188,8 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     selfDirected: false,
     speedKph: 120,
     corridorKm: 12,
+    // Moot: carried.
+    syncAtKph: null,
     maxTimingDriftS: 300,
     minGapS: 30,
     dutyCycle: { light: 0.25, balanced: 0.45, immersive: 0.7 },
@@ -186,6 +210,9 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     selfDirected: true,
     speedKph: 90,
     corridorKm: 5,
+    // No ceiling. A car cannot stand still, and a three kilometre radius at ninety is
+    // two minutes inside the place. Passing through it *is* the arrival.
+    syncAtKph: null,
     maxTimingDriftS: 180,
     minGapS: 20,
     dutyCycle: { light: 0.3, balanced: 0.55, immersive: 0.8 },
@@ -206,6 +233,9 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     selfDirected: true,
     speedKph: 18,
     corridorKm: 1,
+    // Above a slow roll, below a commute: you can sync without unclipping, and you cannot
+    // sync everything on a training ride.
+    syncAtKph: 12,
     maxTimingDriftS: 120,
     minGapS: 15,
     dutyCycle: { light: 0.35, balanced: 0.6, immersive: 0.8 },
@@ -226,6 +256,8 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     selfDirected: true,
     speedKph: 4.5,
     corridorKm: 0.3,
+    // Just above walking pace, so a stop reads as a stop and a stride does not.
+    syncAtKph: 8,
     // Ninety seconds on foot is roughly a hundred metres — about as far as you can be from
     // a building and still accept that the echo is about it.
     maxTimingDriftS: 90,

@@ -25,7 +25,8 @@
  */
 
 import { useState } from "react";
-import { CAPABILITY_NEEDS, type EchoCategory } from "@echofinders/core";
+import { MODE_ICON } from "./travel";
+import { CAPABILITY_NEEDS, type EchoCategory, type TravelMode } from "@echofinders/core";
 import { CHIP_GROUPS } from "./categories";
 import type { LocationState } from "./browser-location";
 
@@ -63,19 +64,31 @@ export interface OnboardingProps {
   /** Hear the narrator, so a volume can be set before anybody is out in the street. */
   readonly onTestLine: () => void;
   /**
-   * Done. `roaming` true means free roam from here; false means they want a journey and
-   * the package screen takes over.
+   * Done. `roaming` true means free roam from here; false means they picked a journey.
+   * `mode` is how they are travelling, which decides what syncing an echo even means.
    */
-  readonly onDone: (roaming: boolean) => void;
+  readonly onDone: (choice: {
+    readonly roaming: boolean;
+    readonly mode: "walking" | "driving" | "flight";
+  }) => void;
   /** Routes we have content for, so a flight number can resolve to one. */
-  readonly routes: readonly { readonly id: string; readonly name?: string }[];
-  /** A flight number resolved to one of ours. Null clears it. */
+  readonly routes: readonly {
+    readonly id: string;
+    readonly name?: string;
+    readonly mode: TravelMode;
+  }[];
+  /**
+   * A journey resolved to one of ours, by flight number or by picking a drive. Null clears
+   * it. Named for the flight case it started as; it now carries either.
+   */
   readonly onFlight: (routeId: string | null) => void;
 }
 
 const LOCATION = CAPABILITY_NEEDS.find((n) => n.capability === "location-foreground")!;
 
 const ICON = {
+  /* The same car the map and the mode picker draw, so one vehicle means one thing. */
+  car: MODE_ICON.driving,
   walk: (
     <>
       <circle cx="13" cy="4" r="2" />
@@ -106,7 +119,10 @@ const ICON = {
 /** Bars for the headphone check. Deterministic, so it does not flicker on every render. */
 const BARS = Array.from({ length: 40 }, (_, i) => 18 + Math.abs(Math.sin(i * 0.8)) * 70);
 
-/* The journey path has one extra screen: which flight. Roaming has nothing to look up. */
+/*
+ * Walking has nothing to look up, so it is one screen shorter. Driving and flying both ask
+ * what the journey is, in their own words.
+ */
 const lastStep = (roaming: boolean) => (roaming ? 5 : 6);
 
 export function Onboarding({
@@ -123,16 +139,28 @@ export function Onboarding({
   onFlight,
 }: OnboardingProps) {
   const [step, setStep] = useState(0);
-  const [roaming, setRoaming] = useState(true);
+  /*
+   * Three products, not two.
+   *
+   * This was a boolean: roam, or have a journey. Driving fell into "roam" with walking,
+   * which is how a driver ended up being told to stand on the spot, and how the one mode
+   * that most wants a route was the one mode that could not have one.
+   */
+  const [travel, setTravel] = useState<"walking" | "driving" | "flight">("walking");
+  const roaming = travel === "walking";
   const [asking, setAsking] = useState(false);
   const [located, setLocated] = useState<LocationState["kind"] | null>(null);
   const [flight, setFlight] = useState("");
+  /** The drive they chose, if any. Null means they are hunting rather than following. */
+  const [picked, setPicked] = useState<string | null>(null);
+  /** The drives we have content for. */
+  const drives = routes.filter((route) => route.mode === "driving");
   const matched = lookupFlight(flight);
   const matchedRoute = matched ? routes.find((r) => r.id === matched) : undefined;
 
   const next = () => setStep((s) => Math.min(lastStep(roaming), s + 1));
   const back = () => setStep((s) => Math.max(0, s - 1));
-  const finish = () => onDone(roaming);
+  const finish = () => onDone({ roaming, mode: travel });
 
   const chosenCount = CHIP_GROUPS.filter((g) => g.categories.some((c) => cats.has(c))).length;
 
@@ -175,7 +203,8 @@ export function Onboarding({
               history, the crimes, the local legends, and the places worth going to.
             </p>
             <Value icon={ICON.pin} title="Stories fixed to real places">
-              You have to be there. Stand on the spot and the echo syncs.
+              You have to be there. On foot you stand on the spot; driving, you go through
+              it. Either way, being there is what syncs it.
             </Value>
             <Value icon={ICON.ear} title="Audio first">
               Listen with the screen off. Read along if you would rather.
@@ -200,34 +229,50 @@ export function Onboarding({
               This changes what the app does, not just what it shows. You can switch later.
             </p>
             <button
-              className={roaming ? "onb-card on" : "onb-card"}
-              onClick={() => setRoaming(true)}
-              aria-pressed={roaming}
+              className={travel === "walking" ? "onb-card on" : "onb-card"}
+              onClick={() => setTravel("walking")}
+              aria-pressed={travel === "walking"}
             >
               <span className="onb-ic" aria-hidden="true">
                 <svg viewBox="0 0 24 24">{ICON.walk}</svg>
               </span>
               <div>
-                <b>On foot, or driving, around here</b>
+                <b>On foot, around here</b>
                 <small>
-                  No route. It finds what is near you as you move, and you go and stand on
-                  the ones you want.
+                  No route. It finds what is near you as you go, and standing on one is what
+                  syncs it.
                 </small>
               </div>
             </button>
             <button
-              className={!roaming ? "onb-card on" : "onb-card"}
-              onClick={() => setRoaming(false)}
-              aria-pressed={!roaming}
+              className={travel === "driving" ? "onb-card on" : "onb-card"}
+              onClick={() => setTravel("driving")}
+              aria-pressed={travel === "driving"}
+            >
+              <span className="onb-ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24">{ICON.car}</svg>
+              </span>
+              <div>
+                <b>Driving</b>
+                <small>
+                  Follow a drive, or just go and see what you pass. No stopping: echoes sync
+                  as you drive through them.
+                </small>
+              </div>
+            </button>
+            <button
+              className={travel === "flight" ? "onb-card on" : "onb-card"}
+              onClick={() => setTravel("flight")}
+              aria-pressed={travel === "flight"}
             >
               <span className="onb-ic" aria-hidden="true">
                 <svg viewBox="0 0 24 24">{ICON.plane}</svg>
               </span>
               <div>
-                <b>I have a journey</b>
+                <b>Flying</b>
                 <small>
-                  A flight or a planned walk. Download it first and the stories are timed to
-                  where you will be.
+                  Your flight number builds the route. It comes down before you leave and
+                  plays itself as you go over.
                 </small>
               </div>
             </button>
@@ -237,7 +282,70 @@ export function Onboarding({
           </>
         )}
 
-        {step === 2 && !roaming && (
+        {/*
+          Driving's own journey screen.
+
+          A drive is not a flight and it is not a walk. There is no flight number to look up
+          and no standing to do: you pick where you are going, or you pick nothing and just
+          drive, and echoes sync as you pass through them. Both are hunting.
+        */}
+        {step === 2 && travel === "driving" && (
+          <>
+            <h2>Where are you driving?</h2>
+            <p className="onb-lead">
+              Pick a drive and it comes down with you, timed to the road. Or take nothing and
+              we will find what you pass.
+            </p>
+            {drives.length > 0 ? (
+              drives.map((drive) => (
+                <button
+                  key={drive.id}
+                  className={picked === drive.id ? "onb-card on" : "onb-card"}
+                  onClick={() => {
+                    setPicked(drive.id);
+                    onFlight(drive.id);
+                  }}
+                  aria-pressed={picked === drive.id}
+                >
+                  <span className="onb-ic" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">{ICON.car}</svg>
+                  </span>
+                  <div>
+                    <b>{drive.name ?? drive.id}</b>
+                    <small>Downloaded before you set off, so tunnels and dead spots
+                    do not matter.</small>
+                  </div>
+                </button>
+              ))
+            ) : (
+              <p className="onb-sum">No drives in the library yet.</p>
+            )}
+            <button
+              className="onb-alt onb-alt-left"
+              onClick={() => {
+                setPicked(null);
+                onFlight(null);
+                next();
+              }}
+            >
+              No route. Just drive and find what I pass.
+            </button>
+            <button className="onb-go" onClick={next} disabled={!picked}>
+              Take this drive
+            </button>
+            {/*
+              Said plainly rather than mocked up, and last. Pulling a route out of Google
+              Maps needs a Directions key and an account, and a button that looks like it
+              does that and does not is worse than a sentence saying what is coming.
+            */}
+            <p className="onb-note">
+              Bringing in a route from Google Maps is next, and needs a Directions key on our
+              side. Until then these are the drives we have written.
+            </p>
+          </>
+        )}
+
+        {step === 2 && travel === "flight" && (
           <>
             <h2>Which flight are you on?</h2>
             <p className="onb-lead">

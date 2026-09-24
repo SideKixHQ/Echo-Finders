@@ -29,6 +29,7 @@ import {
   type Route,
   type CaptureRecord,
   type PrivacySettings,
+  type TravelMode,
 } from "@echofinders/core";
 import { SimulatedJourney } from "./simulated-journey";
 import { EchoTone } from "./echo-tone";
@@ -106,6 +107,15 @@ export interface JourneyControls {
   readonly kids: boolean;
   /** Where the listener actually is. Used when there is no route to simulate. */
   readonly gps: LocationSource;
+  /**
+   * How you are travelling when there is no route.
+   *
+   * Roaming used to mean walking, which is not a detail: the mode decides the corridor, the
+   * pacing and, since the sync rule became per mode, whether standing still is required at
+   * all. A driver hunting for echoes was being run at walking pace under a rule that asked
+   * them to pull over at every one.
+   */
+  readonly roamMode?: TravelMode;
   /** Speak the plain-language cut where one is written. Not a view setting — it is the audio. */
   readonly simple: boolean;
 }
@@ -135,6 +145,7 @@ export function useJourney(
     kids,
     simple,
     gps,
+    roamMode = "walking",
   }: JourneyControls,
 ) {
   /**
@@ -249,7 +260,7 @@ export function useJourney(
       listenerFor(kids),
       { location, haptics, tones, audio: speech, collection: store },
       {
-        mode: route?.mode ?? "walking",
+        mode: route?.mode ?? roamMode,
         // Restored before the first fix, so echoes found on a previous visit stay found
         // rather than opening a second time.
         ...(restored && restored.length > 0 ? { captured: restored } : {}),

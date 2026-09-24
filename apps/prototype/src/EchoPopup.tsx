@@ -23,7 +23,7 @@
  * place, and standing there is what unlocks it.
  */
 
-import type { Echo } from "@echofinders/core";
+import type { Echo, TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
 import type { PinState } from "./RouteMap";
 
@@ -32,6 +32,8 @@ export interface EchoPopupProps {
   /** Straight-line distance from the listener, km. Null when there is no fix yet. */
   readonly distanceKm: number | null;
   readonly state: PinState;
+  /** How you are travelling, because it decides what getting there means. */
+  readonly mode: TravelMode;
   readonly saved: boolean;
   readonly onSave: (echo: Echo) => void;
   readonly onPlay: (echo: Echo) => void;
@@ -47,10 +49,29 @@ export interface EchoPopupProps {
  */
 const REACH_M = 50;
 
+/** What being there means, per mode. */
+const ARRIVED: Record<TravelMode, string> = {
+  walking: "You are here. Hold still and it syncs.",
+  cycling: "You are here. Pull up and it syncs.",
+  driving: "You are in it now. It syncs as you go through.",
+  flight: "You are over it now.",
+  rail: "You are passing it now.",
+};
+
+/** And how you get there. */
+const APPROACH: Record<TravelMode, string> = {
+  walking: "walk to it to sync",
+  cycling: "ride to it to sync",
+  driving: "it syncs when you drive through",
+  flight: "it opens as you fly over",
+  rail: "it opens as you pass",
+};
+
 export function EchoPopup({
   echo,
   distanceKm,
   state,
+  mode,
   saved,
   onSave,
   onPlay,
@@ -94,10 +115,13 @@ export function EchoPopup({
           {state === "heard" ? "Play it again" : "Play"}
         </button>
       ) : (
+        /*
+          Three sentences, because getting there is three different things. A driver is
+          never going to stand anywhere, and telling them to walk to something fifteen
+          kilometres up the road is the app not knowing what they are doing.
+        */
         <p className={withinReach ? "pop-state pop-state-near" : "pop-state"}>
-          {withinReach
-            ? "You are here. Hold still and it syncs."
-            : `${away(metres)} · walk to it to sync`}
+          {withinReach ? ARRIVED[mode] : `${away(metres)} · ${APPROACH[mode]}`}
         </p>
       )}
 

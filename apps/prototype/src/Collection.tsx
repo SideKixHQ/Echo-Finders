@@ -20,7 +20,7 @@
  * sits under it, quieter, as the record.
  */
 
-import { rarityReasons, type CaptureEvent, type Echo } from "@echofinders/core";
+import { rarityReasons, type CaptureEvent, type Echo, type TravelMode } from "@echofinders/core";
 import { CATEGORY_ICON } from "./categories";
 import type { PrivacySettings } from "@echofinders/core";
 import { holdsPersonalLocation } from "@echofinders/core";
@@ -44,16 +44,44 @@ interface Props {
   /** Echoes bookmarked but not yet stood on. Intentions, as against the record. */
   readonly saved: readonly Echo[];
   readonly onSave: (echo: Echo) => void;
+  /** How you are travelling, because it decides what "being there" means. */
+  readonly mode: TravelMode;
 }
 
-export function Collection({ captured, privacy, total, onPlay, isPlaying, isHeard, saved }: Props) {
+const EMPTY_LINE: Record<TravelMode, string> = {
+  walking:
+    "An echo syncs when you stand on the spot it belongs to. Walk to one and it is yours, to listen to whenever and wherever you like.",
+  cycling:
+    "An echo syncs when you pull up at the spot it belongs to. Stop at one and it is yours, to listen to whenever and wherever you like.",
+  driving:
+    "An echo syncs as you drive through the place it belongs to. No stopping, no pulling over: keep going and it is yours afterwards.",
+  flight:
+    "Echoes on a flight come down with the package before you leave, then open as you fly over them.",
+  rail:
+    "Echoes on a rail journey come down with the package before you leave, then open as you pass them.",
+};
+
+export function Collection({
+  captured,
+  privacy,
+  total,
+  onPlay,
+  isPlaying,
+  isHeard,
+  saved,
+  mode,
+}: Props) {
   if (captured.length === 0 && saved.length === 0) {
     return (
       <div className="screen-body">
+        {/*
+          Three sentences for three products, because "stand on the spot" is arrival on foot
+          and an instruction to abandon the car when driving. This was one sentence, the
+          walking one, shown to everybody.
+        */}
         <div className="empty">
           <b>Nothing synced yet</b>
-          An echo syncs when you stand on the spot it belongs to. Walk to one and it is here
-          afterwards — yours to listen to whenever, wherever.
+          <span>{EMPTY_LINE[mode]}</span>
         </div>
       </div>
     );

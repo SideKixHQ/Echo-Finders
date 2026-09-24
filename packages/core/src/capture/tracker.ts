@@ -43,7 +43,11 @@ export interface CaptureOptions {
    * phone in a pocket — requiring a dead stop would mean requiring people to notice, which
    * is the whole thing this product is arranged to avoid.
    *
-   * Applies to every mode. On the carried ones `captureByArrival` has already said no.
+   * Left unset it comes from the mode, which is where it belongs: `syncAtKph` in
+   * `modes.ts`. It was a flat eight here, across every mode, which quietly made the whole
+   * driving product impossible. A car cannot stand anywhere, and driving past a lighthouse
+   * at sixty is the entire experience of driving past a lighthouse. Driving has no ceiling;
+   * its radii are kilometres, and passing through one is the arrival.
    */
   readonly maxSyncKph?: number;
   /**
@@ -80,7 +84,6 @@ export interface CaptureOptions {
 
 const DEFAULTS = {
   dwellS: 3,
-  maxSyncKph: 8,
   /*
    * Tighter than it was. At half an echo's radius, GPS slack could put somebody a further
    * twenty-five metres out on a fifty-metre plaque and still count — which is across the
@@ -117,7 +120,10 @@ export class CaptureTracker {
       maxSlackFraction: options.maxSlackFraction ?? DEFAULTS.maxSlackFraction,
       maxAccuracyRatio: options.maxAccuracyRatio ?? DEFAULTS.maxAccuracyRatio,
       maxSpeedFactor: options.maxSpeedFactor ?? DEFAULTS.maxSpeedFactor,
-      maxSyncKph: options.maxSyncKph ?? DEFAULTS.maxSyncKph,
+      maxSyncKph:
+        options.maxSyncKph ??
+        presetFor(options.mode ?? "walking").syncAtKph ??
+        Number.POSITIVE_INFINITY,
       requireAudio: options.requireAudio ?? false,
       captureByArrival:
         options.captureByArrival ?? presetFor(options.mode ?? "walking").selfDirected,

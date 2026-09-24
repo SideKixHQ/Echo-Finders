@@ -96,13 +96,34 @@ describe("capture by arrival", () => {
    * the one that actually separates arriving from passing: a timer only asks how patient
    * somebody was, this asks whether they stopped.
    */
-  it("will not sync something you drove past", () => {
+  /*
+   * Driving syncs by passing through, and this test used to assert the opposite.
+   *
+   * The rule was a flat eight km/h for every mode, which is arrival on foot and an
+   * impossibility in a car: it meant a driver had to pull over at every echo, and it made
+   * the whole driving product unreachable while telling the driver to get out and walk.
+   * Driving past a lighthouse at sixty is the entire experience of driving past a
+   * lighthouse. The radius does the work instead, and a driving radius is kilometres.
+   */
+  it("syncs something you drove past, without stopping", () => {
     const tracker = new CaptureTracker(ADULT, { mode: "driving" });
     const library = [plaque({ triggerRadiusKm: 0.4 })];
-    // Inside the radius the whole time, and never below a crawl.
     const events = [];
     for (let s = 0; s <= 20; s += 2) {
       const metres = 400 - s * 30; // 54 kph, straight past it
+      events.push(...tracker.update(fix(north(WALL_STREET, metres), START + s * 1000), library));
+    }
+
+    expect(events).toHaveLength(1);
+    expect(tracker.stateOf("federal-hall")).toBe("captured");
+  });
+
+  it("still refuses a drive-by on foot", () => {
+    const tracker = new CaptureTracker(ADULT, { mode: "walking" });
+    const library = [plaque({ triggerRadiusKm: 0.4 })];
+    const events = [];
+    for (let s = 0; s <= 20; s += 2) {
+      const metres = 400 - s * 30; // the same 54 kph, in a mode where that is a bus
       events.push(...tracker.update(fix(north(WALL_STREET, metres), START + s * 1000), library));
     }
 
@@ -110,10 +131,10 @@ describe("capture by arrival", () => {
     expect(tracker.stateOf("federal-hall")).toBe("sealed");
   });
 
-  it("syncs once you stop, on the same drive", () => {
-    const tracker = new CaptureTracker(ADULT, { mode: "driving" });
+  it("syncs once you stop, on a walk", () => {
+    const tracker = new CaptureTracker(ADULT, { mode: "walking" });
     const library = [plaque({ triggerRadiusKm: 0.4 })];
-    // Arrive at speed, then park.
+    // Arrive at speed, then stand.
     tracker.update(fix(north(WALL_STREET, 400), START), library);
     const events = standAt(tracker, WALL_STREET, library, { dwellS: 6, accuracyM: 20 });
 

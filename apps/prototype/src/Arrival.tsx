@@ -93,7 +93,7 @@ export function Arrival({
 
       <div className="arr-acts">
         <button className="arr-pri" onClick={onAgain}>
-          {saved.length > 0 ? `Save ${saved.length} to your map` : "Walk it again"}
+          {saved.length > 0 ? `Save ${saved.length} to your map` : againLabel(route.mode)}
         </button>
         {/* This had no handler at all: a button that answered a tap with silence, on the
             one screen somebody might actually want to tell someone about. */}
@@ -130,6 +130,27 @@ const headline = (mode: Route["mode"]) =>
     : mode === "driving"
       ? "Your drive, parked up"
       : "Your walk, finished";
+
+/*
+ * "Walk it again", on a drive.
+ *
+ * The heading above it already said "Your drive, parked up", so this card was telling
+ * somebody who had just parked a car to go for a walk, in its loudest control, directly
+ * under the right words. The headline was mode-aware and the button was a string.
+ *
+ * The suggestion below is deliberately *not* fixed this way: it asks about the route it is
+ * offering, not the one just finished, so "somewhere to walk next" after a drive is right.
+ */
+const againLabel = (mode: Route["mode"]) =>
+  mode === "flight"
+    ? "Fly it again"
+    : mode === "driving"
+      ? "Drive it again"
+      : mode === "cycling"
+        ? "Ride it again"
+        : mode === "rail"
+          ? "Take it again"
+          : "Walk it again";
 
 const nextLine = (route: Route) =>
   route.mode === "walking"
