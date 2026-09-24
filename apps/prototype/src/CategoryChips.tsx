@@ -27,7 +27,8 @@
 
 import { memo, useCallback, useEffect, useRef, useState } from "react";
 import type { EchoCategory } from "@echofinders/core";
-import { CATEGORY_LABEL, CATEGORY_ORDER } from "./categories";
+import type { ChipGroup } from "./categories";
+import { CHIP_GROUPS } from "./categories";
 
 export interface CategoryChipsProps {
   /**
@@ -40,12 +41,12 @@ export interface CategoryChipsProps {
    */
   readonly available: ReadonlySet<EchoCategory>;
   readonly on: ReadonlySet<EchoCategory>;
-  readonly onToggle: (category: EchoCategory) => void;
+  readonly onToggle: (group: ChipGroup) => void;
   readonly onAll: () => void;
 }
 
 function CategoryChipsInner({ on, onToggle, onAll }: CategoryChipsProps) {
-  const all = CATEGORY_ORDER.every((c) => on.has(c));
+  const all = CHIP_GROUPS.every((g) => g.categories.every((c) => on.has(c)));
 
   /*
    * Whether there is more row in each direction. Measured rather than assumed, because
@@ -107,18 +108,24 @@ function CategoryChipsInner({ on, onToggle, onAll }: CategoryChipsProps) {
       <button className={all ? "chip chip-all on" : "chip chip-all"} onClick={onAll}>
         All
       </button>
-      {CATEGORY_ORDER.map((category) => (
-        <button
-          key={category}
-          // The colour class goes on the chip only when it is on, so the *label* greys out
-          // with the rest of the row. The dot carries its category's colour either way.
-          className={`chip${on.has(category) ? ` cat-${category} on` : ""}`}
-          onClick={() => onToggle(category)}
-        >
-          <span className={`chip-dot cat-${category}`} />
-          {CATEGORY_LABEL[category]}
-        </button>
-        ))}
+      {CHIP_GROUPS.map((group) => {
+          // A group is on when any of its categories is. Toggling sets them together, so
+          // a chip standing for two can never land half lit.
+          const lit = group.categories.some((c) => on.has(c));
+          return (
+            <button
+              key={group.id}
+              // The colour class goes on the chip only when it is on, so the *label* greys
+              // out with the rest of the row. The dot carries its colour either way.
+              className={`chip${lit ? ` cat-${group.face} on` : ""}`}
+              onClick={() => onToggle(group)}
+              aria-pressed={lit}
+            >
+              <span className={`chip-dot cat-${group.face}`} />
+              {group.label}
+            </button>
+          );
+        })}
       </div>
     </div>
   );

@@ -153,7 +153,12 @@ body {
 }
 
 /* ── map ─────────────────────────────────────────────────── */
-.map { position: absolute; inset: 0; width: 100%; height: 100%; }
+.map {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  /* The map handles pinch itself, so the browser must not take the gesture to zoom the
+     page instead. `pan-y` keeps the vertical scroll that the sheet below depends on. */
+  touch-action: pan-y;
+}
 
 .route-casing { fill: none; stroke: rgba(var(--rgb-hair), 0.1); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
 .route {
@@ -1179,8 +1184,12 @@ body {
 .screen:has(.sheet-half) { --sheet-h: min(400px, 46dvh); }
 .screen:has(.sheet-full) { --sheet-h: 86dvh; }
 /* Something playing wants room for the transport, but never at the cost of a peek that
-   was asked for. */
-.screen:has(.sheet-playing.sheet-half) { --sheet-h: min(650px, 76dvh); }
+   was asked for — and never at the cost of the controls either. At 76dvh the sheet left
+   no band for the control column, so pressing play made the theme, kids, recentre and
+   download buttons disappear. A control that vanishes when you use the app is a control
+   people conclude they imagined. 56dvh fits the whole transport and still leaves room for
+   the column. */
+.screen:has(.sheet-playing.sheet-half) { --sheet-h: min(470px, 56dvh); }
 
 .grab-zone {
   padding: 8px 0 4px; cursor: grab; touch-action: none;
@@ -1722,8 +1731,8 @@ body {
 .fab.on { background: var(--aqua); color: #042220; border-color: var(--aqua); }
 
 /* No map left to control. The same rule the guidance bar already follows. */
-.screen:has(.sheet-full) .rail,
-.screen:has(.sheet-playing.sheet-half) .rail { opacity: 0; pointer-events: none; }
+/* Only at full, where there is genuinely no map left to control. */
+.screen:has(.sheet-full) .rail { opacity: 0; pointer-events: none; }
 
 /* How the design handles a rising sheet: one button collapses to nothing rather
    than the column wrapping into a second row over the map. */
@@ -1759,3 +1768,84 @@ body {
   paint-order: stroke; stroke: rgba(var(--rgb-panel), 0.6); stroke-width: 2.4;
 }
 
+
+/* ── Onboarding ───────────────────────────────────────────────────────────────
+   Full screen and above everything, because it is the only moment the app gets
+   to ask three questions whose answers it cannot guess. Built from the design's
+   `.onb` metrics. */
+.onb {
+  position: absolute; inset: 0; z-index: 1200; background: var(--space);
+  display: flex; flex-direction: column; padding: 54px 22px 28px;
+}
+.onb-top { display: flex; align-items: center; justify-content: space-between; flex: none; }
+.onb-dots { display: flex; gap: 6px; }
+.onb-dots i {
+  width: 6px; height: 6px; border-radius: 99px; display: block;
+  background: rgba(var(--rgb-hair), 0.25); transition: 0.24s var(--ease);
+}
+.onb-dots i.on { width: 18px; background: var(--aqua); }
+.onb-skip {
+  background: none; border: 0; cursor: pointer; font: inherit;
+  font-size: 12px; color: var(--muted); padding: 6px 2px;
+}
+.onb-body {
+  flex: 1; min-height: 0; overflow-y: auto; scrollbar-width: none;
+  display: flex; flex-direction: column; justify-content: center; gap: 10px;
+}
+.onb-body::-webkit-scrollbar { display: none; }
+.onb h2 { font-size: 24px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.2; }
+.onb-lead { font-size: 13px; line-height: 1.6; color: var(--muted); margin: 6px 0 14px; }
+
+/* A choice, not a radio button. The consequence is the label. */
+.onb-card {
+  display: block; width: 100%; text-align: left; cursor: pointer; font: inherit;
+  padding: 14px 15px; border-radius: 16px; margin-bottom: 2px;
+  background: rgba(var(--rgb-panel), 0.55); border: 1px solid var(--line);
+  transition: border-color 0.16s var(--ease), background 0.16s var(--ease);
+}
+.onb-card b { display: block; font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+.onb-card small { display: block; font-size: 11.5px; line-height: 1.55; color: var(--muted); }
+.onb-card.on { border-color: var(--aqua); background: rgba(var(--rgb-accent), 0.08); }
+
+/* The permission, stated in our words before the system says anything. */
+.onb-perm {
+  display: flex; gap: 12px; align-items: flex-start; margin: 4px 0 18px;
+  padding: 14px 15px; border-radius: 16px;
+  background: rgba(var(--rgb-accent), 0.07); border: 1px solid rgba(var(--rgb-accent), 0.28);
+}
+.onb-perm-ic { flex: none; color: var(--aqua); }
+.onb-perm-ic svg {
+  width: 20px; height: 20px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.onb-perm b { display: block; font-size: 13px; font-weight: 500; margin-bottom: 3px; }
+.onb-perm small { display: block; font-size: 11.5px; line-height: 1.55; color: var(--muted); }
+
+.onb-go {
+  width: 100%; padding: 14px; border-radius: 14px; border: 0; cursor: pointer; font: inherit;
+  background: var(--indigo-btn); color: #fff; font-size: 13.5px; font-weight: 500;
+}
+.onb-go:disabled { opacity: 0.6; cursor: default; }
+.onb-alt {
+  width: 100%; padding: 11px; border-radius: 14px; border: 0; cursor: pointer; font: inherit;
+  background: none; color: var(--muted); font-size: 12px; margin-top: 4px;
+}
+
+/* A question, not a score. Two answers, and no number comes back. See `ratings.ts`. */
+.rate-row {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 2px 2px; margin-top: 8px; border-top: 1px solid var(--line);
+}
+.rate-row span { flex: 1; font-size: 11.5px; color: var(--muted); }
+.rate-btn {
+  width: 38px; height: 34px; flex: none; border-radius: 10px; cursor: pointer;
+  border: 1px solid var(--line-2); background: none; color: var(--cool);
+  display: grid; place-items: center;
+}
+.rate-btn svg {
+  width: 16px; height: 16px; fill: none; stroke: currentColor;
+  stroke-width: 1.6; stroke-linejoin: round;
+}
+.rate-btn.on { border-color: var(--aqua); color: var(--aqua); background: rgba(var(--rgb-accent), 0.12); }
+.rate-btn.on svg { fill: currentColor; stroke: none; }
+.rate-btn.on.down { border-color: var(--muted); color: var(--muted); background: rgba(var(--rgb-hair), 0.1); }

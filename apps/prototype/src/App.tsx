@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { PRIVACY_DEFAULTS, holdsPersonalLocation, type PrivacySettings } from "@echofinders/core";
 import { LIBRARY, ROUTES } from "./library.generated";
-import { CATEGORY_ORDER } from "./categories";
+import { CATEGORY_ORDER, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
 import { RouteMap, type PinState } from "./RouteMap";
@@ -17,6 +17,9 @@ import { CategoryChips } from "./CategoryChips";
 import { Arrival } from "./Arrival";
 import { Preflight } from "./Preflight";
 import { Viewfinder } from "./Viewfinder";
+import { Onboarding } from "./Onboarding";
+import { loadRatings, setRating, type Rating } from "./ratings";
+import { BrowserLocation } from "./browser-location";
 import { Rail } from "./Rail";
 import { MODE_PHRASE } from "./travel";
 import type { Detent } from "./Sheet";
@@ -139,6 +142,54 @@ export function App() {
    * like, and from the first step it is where you are.
    */
   const [overview, setOverview] = useState(false);
+
+  /**
+   * First run, remembered.
+   *
+   * `localStorage` rather than the collection store, because this is a fact about the
+   * browser rather than about the journey, and because a read that fails should mean
+   * "show it" rather than blocking the app on a disk error. A private window sees it
+   * every time, which is the right side to fail on.
+   */
+  const [onboarded, setOnboarded] = useState(() => {
+    try {
+      return localStorage.getItem("echo-finders:onboarded") === "1";
+    } catch {
+      return false;
+    }
+  });
+  const finishOnboarding = useCallback(() => {
+    setOnboarded(true);
+    try {
+      localStorage.setItem("echo-finders:onboarded", "1");
+    } catch {
+      /* private browsing. Seeing the welcome twice is not worth an error. */
+    }
+  }, []);
+
+  /**
+   * The real GPS, asked for once, by a tap.
+   *
+   * Held for the life of the app rather than per session: a granted watch should survive
+   * switching journeys, and asking twice is how a permission gets refused. The walk is
+   * still driven by the simulation — see `useJourney` — so this currently proves the
+   * permission path end to end without replacing the demo's position. Swapping the source
+   * is one line in `useJourney` once there is a real route under somebody's feet.
+   */
+  /**
+   * Private ratings, for editorial rather than for display. See `ratings.ts`.
+   *
+   * There is nowhere to send these yet, so they sit on the device. That is the right
+   * order: the question is worth asking before there is a backend to answer it into, and
+   * a signal collected from day one is a signal you have when the backend arrives.
+   */
+  const [ratings, setRatings] = useState(loadRatings);
+  const rateEcho = useCallback((echoId: string, rating: Rating) => {
+    setRatings((current) => setRating(current, echoId, rating));
+  }, []);
+
+  const gps = useMemo(() => new BrowserLocation(), []);
+  useEffect(() => () => gps.stop(), [gps]);
   const [deleted, setDeleted] = useState<Set<string>>(new Set());
 
   // What the collection would actually hold, given the privacy settings and any deletion.
@@ -263,6 +314,22 @@ export function App() {
       ),
     [],
   );
+
+  /**
+   * How far along the route each echo sits, by id.
+   *
+   * The corridor query has always returned this and the line above always threw it away.
+   * It is what makes a list of echoes hold still: see `nearby` below.
+   */
+  const alongKm = useMemo(() => {
+    const out = new Map<string, number>();
+    for (const r of ROUTES) {
+      for (const hit of findEchoesAlongRoute(r, LIBRARY)) {
+        if (r.id === route.id) out.set(hit.echo.id, hit.alongTrackKm);
+      }
+    }
+    return out;
+  }, [route.id]);
   const corridorCounts = useMemo(
     () => Object.fromEntries(Object.entries(byRoute).map(([id, echoes]) => [id, echoes.length])),
     [byRoute],
@@ -327,14 +394,27 @@ export function App() {
    * three is worthless while their callbacks change identity every frame, so the callbacks
    * come first.
    */
-  const toggleCategory = useCallback((category: EchoCategory) => {
+  /**
+   * Toggling a chip moves every category it stands for.
+   *
+   * Landmarks is two (`built` and `land`), so it has to set both or the chip would light
+   * on half its own meaning. The last lit chip cannot be turned off: an empty filter is an
+   * empty map with no obvious way back, and nobody means it.
+   */
+  const toggleCategory = useCallback((group: ChipGroup) => {
     setCats((current) => {
-      const next = new Set(current ?? available);
-      if (next.has(category) && next.size > 1) next.delete(category);
-      else next.add(category);
+      const base = current ?? ALL_CATEGORIES;
+      const next = new Set(base);
+      const lit = group.categories.some((c) => next.has(c));
+      if (lit) {
+        const remaining = [...next].filter((c) => !group.categories.includes(c));
+        if (remaining.length === 0) return next;
+        return new Set(remaining);
+      }
+      for (const c of group.categories) next.add(c);
       return next;
     });
-  }, [available]);
+  }, []);
   const allCategories = useCallback(() => setCats(null), []);
   const toggleSave = useCallback((echo: Echo) => {
     setChosen((current) => {
@@ -387,6 +467,33 @@ export function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [route, onRoute, walkedStep, kept, kids],
   );
+  /**
+   * What is around you, in the order you will reach it.
+   *
+   * The engine ranks `nearby` by score, which blends quality with distance, and distance
+   * changes four times a second. So the list re-sorted continuously: rows swapped under a
+   * thumb, the thing somebody was reading slid somewhere else, and two echoes a few metres
+   * apart traded places over and over on nothing but GPS jitter. On a walk shown at
+   * fourteen times life it is unusable; at real pace it would be slower and still wrong,
+   * because the cause is not speed.
+   *
+   * Ordering by position along the route fixes it by construction rather than by damping.
+   * A route is a sequence. Walking forward, an item can only ever leave the top: nothing
+   * behind you moves ahead of anything, and no amount of jitter reorders two points whose
+   * order was fixed when the route was drawn. The engine's ranking still decides what is
+   * *in* the list; this only decides the order they sit in.
+   *
+   * Echoes with no along-track position sort last rather than first, so a missing value
+   * can never jump a row to the top of somebody's screen.
+   */
+  const nearby = useMemo(() => {
+    const at = (id: string) => alongKm.get(id) ?? Number.POSITIVE_INFINITY;
+    return state.nearby
+      .filter((n) => activeCats.has(n.echo.category))
+      .slice()
+      .sort((a, b) => at(a.echo.id) - at(b.echo.id));
+  }, [state.nearby, activeCats, alongKm]);
+
   const inCorridor = onRoute.length;
 
   return (
@@ -463,7 +570,7 @@ export function App() {
                 onSave={toggleSave}
               />}
               <Sheet
-                nearby={state.nearby.filter((n) => activeCats.has(n.echo.category))}
+                nearby={nearby}
                 lastCapture={state.lastCapture}
                 captured={kept}
                 stateOf={stateOf}
@@ -499,6 +606,8 @@ export function App() {
                 detent={detent}
                 onDetent={setDetent}
                 onNext={() => session.skip()}
+                rating={nowPlaying ? ratings[nowPlaying.id] : undefined}
+                onRating={(r) => nowPlaying && rateEcho(nowPlaying.id, r)}
                 {...(selfDirected ? { onCamera: setCamera } : {})}
                 onSave={toggleSave}
               />
@@ -578,7 +687,21 @@ export function App() {
             />
           )}
 
-          {!started && (
+          {/*
+            Onboarding sits above the package screen, because two of its three steps decide
+            things the package screen assumes: who is listening, and whether we know where
+            they are.
+          */}
+          {!onboarded && (
+            <Onboarding
+              onAskLocation={() => gps.start()}
+              kids={kids}
+              onKids={setKidsMode}
+              onDone={finishOnboarding}
+            />
+          )}
+
+          {onboarded && !started && (
             <Preflight
               routes={ROUTES}
               counts={corridorCounts}

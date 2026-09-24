@@ -15,6 +15,7 @@
 
 import { useMemo } from "react";
 import type { Echo } from "@echofinders/core";
+import type { Rating } from "./ratings";
 import { VOICE_LABEL } from "./voices";
 import { CATEGORY_LABEL } from "./categories";
 
@@ -33,6 +34,9 @@ export interface PlayerProps {
   readonly onSeek: (fraction: number) => void;
   readonly onLine: (delta: -1 | 1) => void;
   readonly onNext: () => void;
+  /** Private, two-answer, never shown back as a score. See `ratings.ts`. */
+  readonly rating: Rating | undefined;
+  readonly onRating: (rating: Rating) => void;
 }
 
 const BARS = 44;
@@ -51,6 +55,8 @@ export function Player({
   onSeek,
   onLine,
   onNext,
+  rating,
+  onRating,
 }: PlayerProps) {
   const durationS = simple ? (echo.simple?.durationS ?? echo.durationS) : echo.durationS;
   // Deterministic, and only the script decides it — so there is no reason to split the
@@ -205,6 +211,35 @@ export function Player({
         </span>
         {echo.simple && <i>{clock(echo.simple.durationS)}</i>}
       </button>
+
+      {/*
+        Asked where the answer is cheap and informed: under the transport, on something the
+        listener is in the middle of. Not on a card they have not opened, and not as a modal
+        at the end, which is a toll on the moment the story lands.
+      */}
+      <div className="rate-row">
+        <span>Worth stopping for?</span>
+        <button
+          className={rating === "up" ? "rate-btn on" : "rate-btn"}
+          onClick={() => onRating("up")}
+          aria-pressed={rating === "up"}
+          aria-label="Yes, worth stopping for"
+        >
+          <svg viewBox="0 0 24 24">
+            <path d="M7 22V10l5-8a2.2 2.2 0 0 1 2 2.6L13 9h5.4a2.2 2.2 0 0 1 2.1 2.8l-2 8A2.2 2.2 0 0 1 16.4 22z" />
+          </svg>
+        </button>
+        <button
+          className={rating === "down" ? "rate-btn on down" : "rate-btn"}
+          onClick={() => onRating("down")}
+          aria-pressed={rating === "down"}
+          aria-label="No, not worth stopping for"
+        >
+          <svg viewBox="0 0 24 24">
+            <path d="M17 2v12l-5 8a2.2 2.2 0 0 1-2-2.6L11 15H5.6a2.2 2.2 0 0 1-2.1-2.8l2-8A2.2 2.2 0 0 1 7.6 2z" />
+          </svg>
+        </button>
+      </div>
 
       <div className="narrator">
         <svg viewBox="0 0 24 24">

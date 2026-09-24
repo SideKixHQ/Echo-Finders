@@ -9,6 +9,7 @@
 import type { CaptureEvent, Echo, NearbyEcho } from "@echofinders/core";
 import { rarityOf, rarityReasons } from "@echofinders/core";
 import type { PinState } from "./RouteMap";
+import type { Rating } from "./ratings";
 import { UpNext } from "./UpNext";
 import { EchoCard } from "./EchoCard";
 import { PlateStrip } from "./PlateStrip";
@@ -59,6 +60,8 @@ interface Props {
   readonly onRate: (rate: number) => void;
   readonly onSeek: (fraction: number) => void;
   readonly onNext: () => void;
+  readonly rating: Rating | undefined;
+  readonly onRating: (rating: Rating) => void;
   /** Open the camera on an echo. Only where there is one — a flight has no then-and-now. */
   readonly onCamera?: (echo: Echo) => void;
   /** How much of the screen the sheet takes. Lifted, because the map has to know. */
@@ -102,6 +105,8 @@ export function Sheet({
   onRate,
   onSeek,
   onNext,
+  rating,
+  onRating,
   onCamera,
   detent,
   onDetent,
@@ -116,6 +121,20 @@ export function Sheet({
    */
   const [openId, setOpenId] = useState<string | null>(null);
   const toggleOpen = (id: string) => setOpenId((current) => (current === id ? null : id));
+
+  /**
+   * The list holds still while a row is open.
+   *
+   * Ordering it along the route (see `App`) stops rows swapping places, but membership
+   * still changes as echoes come into and go out of range, and the worst version of that
+   * is the row somebody has just opened to read disappearing out from under them. While
+   * one is open the list is whatever it was at the moment it opened; close it and the live
+   * list comes straight back.
+   */
+  const frozen = useRef<readonly NearbyEcho[] | null>(null);
+  if (openId === null) frozen.current = null;
+  else frozen.current ??= nearby;
+  const liveNearby = frozen.current ?? nearby;
 
   /**
    * How much of the screen the sheet is taking.
@@ -133,9 +152,26 @@ export function Sheet({
   const setDetent = onDetent;
   const drag = useRef<{ startY: number; startH: number } | null>(null);
   const [dragging, setDragging] = useState<number | null>(null);
-  // The transcript is only meaningful for something actually playing, so the tab falls back
-  // rather than showing an empty panel with a search box in it.
-  const view = tab === "script" && !nowPlaying ? "near" : tab;
+  /**
+   * Which echo the transcript is showing.
+   *
+   * It used to be "whatever is playing, or nothing", with the tab disabled the rest of the
+   * time — so tapping Transcript with nothing playing did nothing at all, which reads as a
+   * broken tab rather than as a considered restriction. And the restriction was wrong
+   * anyway: the transcript is the accessible surface for this product (ADR-0001). Somebody
+   * who cannot hear the audio, or is in a quiet carriage, wants to *read* the echo, and
+   * requiring them to start narration they will not listen to before they may read it is
+   * exactly backwards.
+   *
+   * So it follows what is playing, then what is selected on the map, then the last thing
+   * found. Only genuinely empty when none of those exist.
+   */
+  const scriptEcho =
+    nowPlaying ??
+    nearby.find((n) => n.echo.id === selectedId)?.echo ??
+    lastCapture?.echo ??
+    null;
+  const view = tab === "script" && !scriptEcho ? "near" : tab;
   /*
    * The same lines the transcript shows, so the player's line buttons step by one of them.
    * Split once per script rather than on every press.
@@ -230,6 +266,8 @@ export function Sheet({
           onSeek={onSeek}
           onLine={(delta) => onSeek(stepLine(lines, progress, delta))}
           onNext={onNext}
+          rating={rating}
+          onRating={onRating}
         />
       )}
 
@@ -240,7 +278,7 @@ export function Sheet({
         <button
           className={view === "script" ? "seg on" : "seg"}
           onClick={() => setTab("script")}
-          disabled={!nowPlaying}
+          disabled={!scriptEcho}
         >
           Transcript
         </button>
@@ -249,15 +287,28 @@ export function Sheet({
         </button>
       </div>
 
-      {view === "script" && nowPlaying && (
-        <Transcript echo={nowPlaying} simple={simple} progress={progress} onSeek={onSeek} />
+      {view === "script" && scriptEcho && (
+        <Transcript
+          echo={scriptEcho}
+          simple={simple}
+          /* A line's position only means anything for the echo actually being narrated.
+             Reading somebody else's transcript, nothing is highlighted, which is correct. */
+          progress={scriptEcho.id === nowPlaying?.id ? progress : 0}
+          onSeek={
+            scriptEcho.id === nowPlaying?.id
+              ? onSeek
+              : // Tapping a line in an echo that is not playing starts it. Jumping to a
+                // position in silence would be a control with nothing to control.
+                () => onPlay(scriptEcho)
+          }
+        />
       )}
 
       {view !== "script" && <UpNext items={view === "near" ? upcoming : []} onPlay={onPlay} />}
 
       {view !== "script" && (
       <div className="list">
-        {(view === "saved" ? savedCards : nearby.slice(0, 5)).map((entry) => (
+        {(view === "saved" ? savedCards : liveNearby.slice(0, 5)).map((entry) => (
           <EchoCard
             key={entry.echo.id}
             echo={entry.echo}
@@ -274,7 +325,7 @@ export function Sheet({
             {...(onCamera ? { onCamera } : {})}
           />
         ))}
-        {view === "near" && nearby.length === 0 && (
+        {view === "near" && liveNearby.length === 0 && (
           <p className="empty">Nothing within reach. Keep walking.</p>
         )}
         {view === "saved" && savedCards.length === 0 && (

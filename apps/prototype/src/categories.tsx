@@ -16,24 +16,55 @@ import type { ReactNode } from "react";
 
 export const CATEGORY_LABEL: Record<EchoCategory, string> = {
   history: "History",
-  "true-crime": "Crime",
-  // The design's `culture` is a musical note — music, art, performance. That is our `arts`,
-  // and labelling `food-drink` "Culture" was a straight mix-up: it took the note with it,
-  // so the chip for restaurants and bars had a quaver on it.
-  arts: "Culture",
+  "true-crime": "True Crime",
+  // "Culture" said nothing: it is the word you reach for when you have not decided what
+  // the category is. This one is music, art and performance, so it says that. The design's
+  // note stays with it.
+  arts: "Arts & music",
   kids: "Kids",
-  // "Folklore", not "Ghosts". The design's shortlist is written for a flight over America
-  // and can afford the narrower, punchier word; ours has to hold a Welsh drowned village
-  // and a Hudson Valley headless horseman in the same chip, and only one of those is a
-  // ghost story. Folklore is what the category actually is.
-  legend: "Folklore",
+  // "Ghosts", after all. I argued for Folklore on the grounds that the category holds more
+  // than ghost stories, which is true and beside the point: a ghost tour is a thing people
+  // already go looking for, and Folklore is a thing people read past. The narrower word is
+  // the one with demand behind it.
+  legend: "Ghosts",
   people: "People",
   "food-drink": "Food & drink",
-  // "Built" is a category key, not a word anybody reads. It means architecture and
-  // engineering: why a thing is the shape it is.
-  built: "Buildings",
-  land: "Landscape",
+  // Two engine categories, one chip. See CHIP_GROUPS.
+  built: "Landmarks",
+  land: "Landmarks",
 };
+
+/**
+ * What the filter row offers, and which engine categories each chip stands for.
+ *
+ * Not one chip per category, and that is the point. `built` and `land` are a useful split
+ * for a writer deciding what an echo *is* — one is why a thing is the shape it is, the
+ * other is the ground it stands on — and a meaningless one for somebody choosing what to
+ * listen to, who is looking for a landmark either way. The engine keeps both; the row
+ * offers one.
+ *
+ * The design's own README flagged this as an open question: its categories are a
+ * UI-facing shortlist while the engine carries a longer taxonomy, and somebody had to own
+ * the mapping because it decides what a chip actually filters. This is that mapping.
+ */
+export interface ChipGroup {
+  readonly id: string;
+  readonly label: string;
+  /** Whose colour and glyph the chip wears. */
+  readonly face: EchoCategory;
+  readonly categories: readonly EchoCategory[];
+}
+
+export const CHIP_GROUPS: readonly ChipGroup[] = [
+  { id: "history", label: "History", face: "history", categories: ["history"] },
+  { id: "true-crime", label: "True Crime", face: "true-crime", categories: ["true-crime"] },
+  { id: "ghosts", label: "Ghosts", face: "legend", categories: ["legend"] },
+  { id: "kids", label: "Kids", face: "kids", categories: ["kids"] },
+  { id: "arts", label: "Arts & music", face: "arts", categories: ["arts"] },
+  { id: "people", label: "People", face: "people", categories: ["people"] },
+  { id: "food", label: "Food & drink", face: "food-drink", categories: ["food-drink"] },
+  { id: "landmarks", label: "Landmarks", face: "built", categories: ["built", "land"] },
+];
 
 /**
  * Chip order: the ones people reach for first.

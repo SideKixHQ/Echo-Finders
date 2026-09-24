@@ -20,7 +20,7 @@
  * than no ring.
  */
 
-import { useMemo } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { CATEGORY_ICON } from "./categories";
 import { TILE_ATTRIBUTION, TILE_URL, planTiles, toWorld } from "./tiles";
 import { MODE_ICON } from "./travel";
@@ -151,6 +151,94 @@ export function RouteMap({
    */
   const at = useSmoothedPoint(position?.at ?? null);
 
+  /**
+   * How far in the listener has zoomed, as a multiple of the view the mode chooses.
+   *
+   * The map has never been zoomable. The mode picked a span — two streets on foot, a
+   * couple of hundred kilometres in the air — and that was the only view there was, which
+   * is fine for glancing and useless for the two things people actually do with a map:
+   * look closer at where they are standing, and pull back to see what is around the
+   * corner.
+   *
+   * A multiplier on `spanKm` rather than a tile zoom level, because the projection already
+   * derives everything from the span: one number moves the tiles, the route, the pins and
+   * the trigger radii together, and they cannot drift apart. Clamped so it stays within a
+   * couple of steps either side of the mode's own framing; past that the corridor stops
+   * making sense and the tiles run out.
+   */
+  const [zoom, setZoom] = useState(1);
+  const MIN_ZOOM = 0.25;
+  const MAX_ZOOM = 8;
+  const clamp = (z: number) => Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, z));
+
+  // A new journey, or a jump to the overview, is a new framing. Keeping the old multiplier
+  // across either one lands somebody at 8x on a map they have not seen yet.
+  useEffect(() => setZoom(1), [route.id, overview]);
+
+  /** Two fingers. Tracked here rather than with a library: it is a distance and a ratio. */
+  const pinch = useRef<Map<number, { x: number; y: number }>>(new Map());
+  const pinchFrom = useRef<{ gap: number; zoom: number } | null>(null);
+  const lastTap = useRef(0);
+
+  const gap = () => {
+    const [a, b] = [...pinch.current.values()];
+    return a && b ? Math.hypot(a.x - b.x, a.y - b.y) : 0;
+  };
+
+  const onPointerDown = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
+    pinch.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (pinch.current.size === 2) pinchFrom.current = { gap: gap(), zoom };
+    // Double tap to step in, and to step back out once there is nowhere further in worth
+    // going. One finger, which is the gesture somebody uses while holding a coffee.
+    if (pinch.current.size === 1) {
+      const now = e.timeStamp;
+      if (now - lastTap.current < 300) {
+        setZoom((z) => clamp(z >= MAX_ZOOM ? 1 : z * 2));
+        lastTap.current = 0;
+      } else {
+        lastTap.current = now;
+      }
+    }
+  }, [zoom]);
+
+  const onPointerMove = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
+    if (!pinch.current.has(e.pointerId)) return;
+    pinch.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    const from = pinchFrom.current;
+    if (pinch.current.size !== 2 || !from || from.gap === 0) return;
+    setZoom(clamp(from.zoom * (gap() / from.gap)));
+  }, []);
+
+  const onPointerUp = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
+    pinch.current.delete(e.pointerId);
+    if (pinch.current.size < 2) pinchFrom.current = null;
+  }, []);
+
+  /**
+   * The wheel, on a listener the browser will let us cancel.
+   *
+   * React attaches `onWheel` passively, so `preventDefault` inside it does nothing and the
+   * page scrolls away underneath while you are trying to zoom the map. Scrolling *down*
+   * was the visible half of that: the first notch moved the page instead of the map and
+   * every notch after it landed somewhere else entirely, so zooming in worked and zooming
+   * out appeared completely dead.
+   *
+   * A native listener registered with `passive: false` is the only way to claim the
+   * gesture. Desktop-only in practice, since a phone pinches, but the desktop is where
+   * this is built and reviewed.
+   */
+  const svg = useRef<SVGSVGElement | null>(null);
+  useEffect(() => {
+    const el = svg.current;
+    if (!el) return;
+    const onWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      setZoom((z) => clamp(z * Math.exp(-e.deltaY / 400)));
+    };
+    el.addEventListener("wheel", onWheel, { passive: false });
+    return () => el.removeEventListener("wheel", onWheel);
+  }, []);
+
   /*
    * Built once per route. It was built twice for every position fix — once in the
    * projection and once for the path — which at four fixes a second is eight route
@@ -176,7 +264,7 @@ export function RouteMap({
       centre = at;
       // Twice the corridor: on foot a couple of streets, in the air a couple of hundred
       // kilometres. The same number that already decides what counts as near on this mode.
-      spanKm = presetFor(route.mode).corridorKm * 2;
+      spanKm = (presetFor(route.mode).corridorKm * 2) / zoom;
     } else {
       const points = [...geometry.points, ...library.map((e) => e.point.at)];
       const lats = points.map((p) => p.lat);
@@ -190,7 +278,7 @@ export function RouteMap({
       // Whichever axis needs more room, plus a tenth so nothing sits against an edge.
       const acrossKm = ((maxLng - minLng) || 1e-6) * lngScale * 111.32 * 1.1;
       const downKm = ((maxLat - minLat) || 1e-6) * 111.32 * 1.1;
-      spanKm = Math.max(acrossKm, (downKm * usableW) / usableH);
+      spanKm = Math.max(acrossKm, (downKm * usableW) / usableH) / zoom;
     }
 
     // Web Mercator, because the basemap underneath is tiled in it. The old
@@ -226,7 +314,7 @@ export function RouteMap({
     // computed twice and drifting.
     project.plan = plan;
     return project;
-  }, [route, geometry, library, at, overview, detent]);
+  }, [route, geometry, library, at, overview, detent, zoom]);
 
   const path = useMemo(() => {
     return geometry.points
@@ -267,7 +355,20 @@ export function RouteMap({
   const standingAt = at;
 
   return (
-    <svg className="map" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Walking route">
+    <svg
+      className="map"
+      viewBox={`0 0 ${W} ${H}`}
+      role="img"
+      aria-label="Walking route"
+      /* Exposed so a test can assert the gesture actually moved it, rather than
+         inferring zoom from the distance between two pins. */
+      data-zoom={zoom.toFixed(3)}
+      onPointerDown={onPointerDown}
+      onPointerMove={onPointerMove}
+      onPointerUp={onPointerUp}
+      onPointerCancel={onPointerUp}
+      ref={svg}
+    >
       <defs>
         <radialGradient id="hereGlow">
           <stop offset="0%" stopColor="var(--aqua)" stopOpacity="0.5" />
