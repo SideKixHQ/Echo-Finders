@@ -22,7 +22,7 @@
  * tap from undone. A category that is not on screen at all cannot be reasoned about.
  */
 
-import { memo } from "react";
+import { memo, useCallback, useEffect, useRef, useState } from "react";
 import type { EchoCategory } from "@echofinders/core";
 import { CATEGORY_LABEL, CATEGORY_ORDER } from "./categories";
 
@@ -37,8 +37,31 @@ export interface CategoryChipsProps {
 function CategoryChipsInner({ available, on, onToggle, onAll }: CategoryChipsProps) {
   const all = CATEGORY_ORDER.every((c) => on.has(c));
 
+  /*
+   * Whether there is more row to the right. Measured rather than assumed, because "nine
+   * chips overflow a phone" stops being true on a wide screen and at large text sizes it
+   * becomes true sooner — and a fade promising more where there is none is worse than no
+   * fade at all.
+   */
+  const strip = useRef<HTMLDivElement | null>(null);
+  const [more, setMore] = useState(false);
+  const measure = useCallback(() => {
+    const el = strip.current;
+    if (!el) return;
+    setMore(el.scrollWidth - el.scrollLeft - el.clientWidth > 8);
+  }, []);
+  useEffect(() => {
+    measure();
+    const el = strip.current;
+    if (!el || typeof ResizeObserver === "undefined") return;
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [measure]);
+
   return (
-    <div className="chips">
+    <div className="chipwrap" data-more={more ? 1 : 0}>
+    <div className="chips" ref={strip} onScroll={measure}>
       <button className={all ? "chip chip-all on" : "chip chip-all"} onClick={onAll}>
         All
       </button>
@@ -51,14 +74,20 @@ function CategoryChipsInner({ available, on, onToggle, onAll }: CategoryChipsPro
             available.has(category) ? "" : " chip-none"
           }`}
           onClick={() => onToggle(category)}
-          // Quieter, not disabled: filtering to an empty map is a legitimate thing to do,
-          // and a disabled control cannot be focused or read out.
-          title={available.has(category) ? undefined : "Nothing in this category on this route"}
+          /*
+            Quieter, not disabled: filtering to an empty map is a legitimate thing to do,
+            and a disabled control cannot be focused or read out. The dimming says it, so
+            there is no `title` — a native tooltip is a grey box that appears half a second
+            late, covers the thing next to it, and on a phone never appears at all. Where a
+            control needs a name it has `aria-label`, which reaches a screen reader without
+            showing anybody a tooltip.
+          */
         >
           <span className={`chip-dot cat-${category}`} />
           {CATEGORY_LABEL[category]}
         </button>
       ))}
+    </div>
     </div>
   );
 }

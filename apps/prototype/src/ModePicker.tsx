@@ -53,7 +53,6 @@ export function ModePicker({ routes, selected, onSelect, counts }: ModePickerPro
               key={mode}
               className={mode === selected.mode ? "mode on" : "mode"}
               onClick={() => onSelect(best)}
-              title={label?.hint}
             >
               {label?.name ?? mode}
             </button>

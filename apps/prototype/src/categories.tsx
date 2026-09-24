@@ -17,26 +17,42 @@ import type { ReactNode } from "react";
 export const CATEGORY_LABEL: Record<EchoCategory, string> = {
   history: "History",
   "true-crime": "Crime",
-  people: "People",
-  built: "Built",
-  land: "Land",
-  "food-drink": "Culture",
-  arts: "Arts",
-  legend: "Ghosts",
+  // The design's `culture` is a musical note — music, art, performance. That is our `arts`,
+  // and labelling `food-drink` "Culture" was a straight mix-up: it took the note with it,
+  // so the chip for restaurants and bars had a quaver on it.
+  arts: "Culture",
   kids: "Kids",
+  // "Folklore", not "Ghosts". The design's shortlist is written for a flight over America
+  // and can afford the narrower, punchier word; ours has to hold a Welsh drowned village
+  // and a Hudson Valley headless horseman in the same chip, and only one of those is a
+  // ghost story. Folklore is what the category actually is.
+  legend: "Folklore",
+  people: "People",
+  "food-drink": "Food & drink",
+  // "Built" is a category key, not a word anybody reads. It means architecture and
+  // engineering: why a thing is the shape it is.
+  built: "Buildings",
+  land: "Landscape",
 };
 
-/** Chip order: the ones people reach for first. */
+/**
+ * Chip order: the ones people reach for first.
+ *
+ * History, crime, culture, kids, then the rest — the four that anybody arriving cold will
+ * recognise as a reason to open the app, in front of the five that reward somebody already
+ * looking. The row scrolls, so this is really a decision about what is visible without
+ * scrolling, which makes the first four the only ones that matter.
+ */
 export const CATEGORY_ORDER: readonly EchoCategory[] = [
   "history",
-  "food-drink",
-  "legend",
   "true-crime",
-  "people",
-  "built",
-  "land",
   "arts",
   "kids",
+  "legend",
+  "people",
+  "food-drink",
+  "built",
+  "land",
 ];
 
 /**
@@ -48,7 +64,8 @@ export const CATEGORY_ORDER: readonly EchoCategory[] = [
  */
 export const CATEGORY_ICON: Record<EchoCategory, ReactNode> = {
   history: <path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6" />,
-  "food-drink": (
+  // The design's `culture` note, on the category that actually means music and art.
+  arts: (
     <>
       <path d="M9 18V6l10-2v12" />
       <circle cx="6.5" cy="18" r="2.5" />
@@ -73,17 +90,27 @@ export const CATEGORY_ICON: Record<EchoCategory, ReactNode> = {
       <path d="M9 10h.01M15 10h.01M8.5 14a5 5 0 0 0 7 0" />
     </>
   ),
-  people: <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z" />,
-  arts: (
+  // Two figures, because the category is who was here — and a lightning bolt, which is
+  // what this had, is the design's glyph for a fun fact.
+  people: (
     <>
-      <path d="M2 17V8M2 12h13a5 5 0 0 1 5 5v0M22 17H2" />
-      <circle cx="7" cy="10" r="1.6" />
+      <circle cx="9" cy="8" r="3.2" />
+      <path d="M3.5 20a5.5 5.5 0 0 1 11 0" />
+      <path d="M16 5.6a3.2 3.2 0 0 1 0 6.1M17.5 14.8a5.5 5.5 0 0 1 3 5.2" />
     </>
   ),
+  "food-drink": (
+    <>
+      <path d="M6 3v7a2.5 2.5 0 0 0 5 0V3M8.5 12.5V21" />
+      <path d="M15 21v-7h4a0 0 0 0 0 0 0 5.5 5.5 0 0 0-4-5.3V3" />
+    </>
+  ),
+  // A skyline. The map pin this had is the design's glyph for an attraction, which is a
+  // different idea: a place to go, not a thing to look up at.
   built: (
     <>
-      <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z" />
-      <circle cx="12" cy="10" r="2.4" />
+      <path d="M3 21h18M6 21V9l5-3v15M16 21V12l-5-3" />
+      <path d="M8.5 12h.01M8.5 15.5h.01M13 15h.01M13 18h.01" />
     </>
   ),
   land: <path d="M3 20l6-9 4 6 3-4 5 7z" />,

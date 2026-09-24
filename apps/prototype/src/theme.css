@@ -36,8 +36,8 @@
   --cat-true-crime: #ff4d9d;
   --cat-legend: #9ef0a8;
   --cat-kids: #00ffe7;
-  --cat-food-drink: #ff9e4f;
-  --cat-arts: #ff87c3;
+  --cat-arts: #ff9e4f;
+  --cat-food-drink: #ff87c3;
   --cat-people: #ffd98a;
   --cat-built: #d8dce5;
   --cat-land: #7fd4c1;
@@ -92,7 +92,7 @@
   --line-2: rgba(11, 15, 43, 0.24);
 
   /* The ember, darkened until it can carry small text on white. */
-  --ember: #c25a00;
+  --ember: #a85a00;
   --ember-core: #e8502a;
   --ember-deep: #8f4100;
 
@@ -100,8 +100,8 @@
   --cat-true-crime: #c1005c;
   --cat-legend: #1d7a3a;
   --cat-kids: #00736c;
-  --cat-food-drink: #8f4d00;
-  --cat-arts: #b4256f;
+  --cat-arts: #8f4d00;
+  --cat-food-drink: #b4256f;
   --cat-people: #5b52d6;
   --cat-built: #3f4a5c;
   --cat-land: #1f6b5c;
@@ -334,15 +334,37 @@ body {
 .playing-missed { color: var(--indigo-soft); }
 
 /* ── collection entry ────────────────────────────────────── */
+/* The design's saved row (`.srow` / `.sthumb` / `.sg`): a 76x52 plate in the category's
+   own colour, the title, and the length on the plate. Declared once — these rules used to
+   exist twice, eight hundred lines apart, and the later copy's `stroke: var(--ember)` is
+   why every plate had an orange glyph whatever the category was. */
+.entry { display: flex; gap: 11px; padding: 9px 0; }
+.entry-glyph {
+  position: relative; width: 76px; height: 52px; flex: none; border-radius: 9px;
+  background: color-mix(in srgb, currentColor 16%, transparent);
+  border: 1px solid color-mix(in srgb, currentColor 34%, transparent);
+  display: grid; place-items: center; overflow: hidden;
+}
+.entry-text { flex: 1; min-width: 0; }
 /* The whole entry is the target: one tap, possibly while walking. */
 .entry-hit {
-  display: flex; gap: 12px; align-items: flex-start; width: 100%;
+  display: flex; gap: 11px; align-items: center; width: 100%;
   background: none; border: 0; padding: 0; cursor: pointer;
   font: inherit; color: inherit; text-align: left;
 }
-.entry-playing .entry-glyph { background: var(--ember); }
+.entry-playing .entry-glyph { background: var(--ember); border-color: var(--ember); color: var(--space); }
 .entry-playing .entry-glyph svg { stroke: var(--space); fill: var(--space); }
+.entry-glyph svg {
+  width: 19px; height: 19px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
 .entry-glyph-play { fill: currentColor; stroke: none !important; }
+/* The length, on the plate, as the design puts it. */
+.entry-glyph i {
+  position: absolute; right: 3px; bottom: 3px; padding: 1px 4px; border-radius: 4px;
+  background: rgba(0, 0, 0, 0.72); font-style: normal; color: var(--cool);
+  font-family: "Space Grotesk", monospace; font-size: 8.5px;
+}
 .entry-now { color: var(--ember); }
 
 /* ── category colour carriers ────────────────────────────── */
@@ -391,6 +413,33 @@ body {
   display: flex; flex-direction: column; gap: 7px;
 }
 
+/* ── Focus ────────────────────────────────────────────────────────────────────
+   Every interactive thing, not one slider. The app had exactly one focus style
+   in it, on the waveform, which is a WCAG 2.4.7 failure across the rest of the
+   interface — and a practical one rather than a formal one: the browser default
+   is a thin dark ring, and almost every control here sits on a near-black
+   surface, so keyboard focus was genuinely invisible.
+
+   `:focus-visible` rather than `:focus`, so a thumb on a phone does not leave
+   rings behind it. Two colours so the ring never matches the thing it is
+   ringing: aqua on most surfaces, and the space colour on the aqua controls.
+   `outline` rather than a box-shadow so it follows border-radius and survives
+   forced-colours mode. */
+:where(button, [role="button"], [role="slider"], a, input, select, textarea):focus-visible {
+  outline: 2px solid var(--aqua);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+.fab.on:focus-visible,
+.chip.on:focus-visible,
+.act.act-on:focus-visible,
+.now-mark.on:focus-visible,
+.playing-mark.on:focus-visible { outline-color: var(--space); outline-offset: -4px; }
+/* Windows high-contrast: the outline above is dropped by the OS, so ask for its own. */
+@media (forced-colors: active) {
+  :where(button, [role="button"], a, input):focus-visible { outline: 2px solid Highlight; }
+}
+
 /* ── chips ───────────────────────────────────────────────── */
 .chips {
   display: flex; gap: 3px; padding: 4px; border-radius: 13px;
@@ -398,6 +447,35 @@ body {
   overflow-x: auto; scrollbar-width: none; flex: none;
 }
 .chips::-webkit-scrollbar { display: none; }
+/*
+ * There is more of this row than fits, and nothing said so.
+ *
+ * Nine chips are about twice a phone's width, and a strip that ends flush at the screen
+ * edge looks like a strip that ends. The fade is the whole signal: content running out
+ * *under* something reads as content continuing, which is the one thing a cut-off edge
+ * cannot say. It is painted on the wrapper rather than the scroller so it stays put while
+ * the chips move, and it is driven by a scroll listener so it disappears at the end of the
+ * row instead of implying there is always more.
+ */
+.chipwrap { position: relative; margin-top: 9px; }
+.chipwrap::after {
+  content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 34px;
+  pointer-events: none; border-radius: 0 13px 13px 0;
+  background: linear-gradient(90deg, rgba(var(--rgb-panel), 0), rgba(var(--rgb-panel), 0.96));
+  opacity: 0; transition: opacity 0.18s var(--ease);
+}
+.chipwrap[data-more="1"]::after { opacity: 1; }
+/* The chevron rides on the fade so the affordance is a shape, not only a gradient —
+   a fade alone is invisible to anyone who cannot see a soft edge. */
+.chipwrap::before {
+  content: ""; position: absolute; right: 11px; top: 50%; z-index: 1;
+  width: 7px; height: 7px; margin-top: -4px; pointer-events: none;
+  border-right: 1.6px solid var(--cool); border-bottom: 1.6px solid var(--cool);
+  transform: rotate(-45deg); opacity: 0; transition: opacity 0.18s var(--ease);
+}
+.chipwrap[data-more="1"]::before { opacity: 0.75; }
+/* Nothing in this category on this route. Dimmed, never removed — see CategoryChips. */
+.chip-none { opacity: 0.45; }
 .chip {
   flex: none; display: flex; align-items: center; gap: 6px; cursor: pointer;
   padding: 6px 10px; border-radius: 9px; font: inherit; font-size: 10.5px;
@@ -476,85 +554,68 @@ body {
 /* A deck, not a list. Built on the design's own `.reel` pattern: scroll-snapped cards, one
    at a time, with the next peeking in below so nothing has to say "scroll". */
 .plan {
-  position: absolute; inset: 46px 0 72px; z-index: 15;
-  background: var(--space);
-  display: flex; flex-direction: column; min-height: 0;
+  position: absolute; inset: 46px 0 var(--nav-h); z-index: 15;
+  background: var(--space); display: flex; flex-direction: column;
 }
 
-.plan-bar {
-  display: flex; align-items: center; justify-content: space-between; gap: 10px;
-  padding: 16px 16px 10px; flex: none;
-}
-.plan-bar-text { min-width: 0; }
+/* The header carries the two numbers the screen is about, then gets out of the way. */
+.plan-head { flex: none; padding: 14px 16px 10px; border-bottom: 1px solid var(--line); }
 .plan-kicker {
-  display: block; font-family: "Space Grotesk", monospace;
-  font-size: 8.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ember);
+  display: block; font-family: "Space Grotesk", monospace; font-size: 9px;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--ember);
 }
-.plan-bar-text strong {
-  display: block; font-size: 13px; font-weight: 600; margin-top: 2px;
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+.plan-head h1 {
+  font-size: 17px; font-weight: 600; letter-spacing: -0.01em; margin: 5px 0 3px;
+  line-height: 1.25;
 }
-.plan-chips { display: flex; gap: 5px; flex: none; }
+.plan-head p {
+  font-family: "Space Grotesk", monospace; font-size: 10.5px; color: var(--muted);
+}
+.plan-chips { display: flex; gap: 5px; margin-top: 10px; }
 .plan-chips .chip {
-  font: inherit; font-size: 11px; padding: 5px 12px; cursor: pointer; border-radius: 99px;
-  background: transparent; color: var(--muted); border: 1px solid var(--line-2);
+  padding: 5px 12px; border-radius: 99px; border: 1px solid var(--line-2);
+  font-size: 11px; color: var(--muted); cursor: pointer; background: none;
 }
 .plan-chips .chip.on { color: var(--ember); border-color: rgba(255, 158, 18, 0.55); }
 
-.plan-deck {
-  flex: 1; min-height: 0; overflow-y: auto;
-  scroll-snap-type: y mandatory; scrollbar-width: none;
-  padding: 0 14px 8px; display: flex; flex-direction: column; gap: 12px;
+/* The list, at the design's list metrics: 12/14/16 padding, 9px gap. Six rows on a
+   screen rather than two, which is the entire point of the rewrite. */
+.plan-list {
+  flex: 1; min-height: 0; overflow-y: auto; scrollbar-width: none;
+  padding: 12px 14px 16px; display: flex; flex-direction: column; gap: 9px;
 }
-.plan-deck::-webkit-scrollbar { display: none; }
+.plan-list::-webkit-scrollbar { display: none; }
 
+/* The design's card, verbatim (`design/SPEC.md`), so a story looks the same here as it
+   does in the sheet. */
 .card {
-  scroll-snap-align: start; scroll-snap-stop: always; flex: none;
-  /* Not the full height: the next card shows below it, which is the only instruction
-     anybody needs that this moves. Sized so a short teaser does not float in a field of
-     empty card — at three quarters it read as unfinished rather than spacious. */
-  min-height: 58%;
-  display: flex; flex-direction: column;
-  border-radius: 20px; padding: 18px; position: relative;
-  background: var(--slate); border: 1px solid var(--line-2);
-  transition: border-color 0.2s var(--ease), background 0.2s var(--ease);
+  flex: 0 0 auto; position: relative;
+  background: rgba(var(--rgb-panel), 0.55); border: 1px solid var(--line);
+  border-radius: 14px; padding: 12px 13px;
+  transition: border-color 0.14s var(--ease), background 0.14s var(--ease);
 }
-.card-on { border-color: rgba(255, 158, 18, 0.55); background: rgba(255, 158, 18, 0.06); }
-.card-index {
-  font-family: "Space Grotesk", monospace; font-size: 9.5px; letter-spacing: 0.1em;
-  color: var(--muted); flex: none;
-}
+.card-on { border-color: rgba(255, 158, 18, 0.5); background: rgba(255, 158, 18, 0.07); }
 .card-hit {
-  flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 12px;
-  background: none; border: 0; padding: 12px 0; cursor: pointer;
-  font: inherit; color: inherit; text-align: left;
+  display: block; width: 100%; text-align: left; background: none; border: 0;
+  padding: 0; font: inherit; color: inherit; cursor: pointer;
 }
-.card-teaser { font-size: 21px; line-height: 1.32; font-weight: 500; color: var(--white); }
-.card-meta { display: flex; gap: 6px; font-size: 11.5px; color: var(--muted); }
-.card-dot { opacity: 0.5; }
-
-.card-foot { display: flex; gap: 8px; align-items: center; flex: none; }
-.card-add {
-  flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px;
-  font: inherit; font-size: 12.5px; font-weight: 600; padding: 11px; cursor: pointer;
-  border-radius: 12px; background: transparent; color: var(--cool);
-  border: 1px solid var(--line-2);
+.card-top { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+/* Where it falls along the route. The deck said "3 / 12", which is a scroll position;
+   this is the order you will actually reach them in. */
+/* Where it falls along the route, beside the duration but clearly subordinate to it —
+   and with its own space, because pinned to the same corner the two collided. */
+.card-ord {
+  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: 9.5px;
+  color: var(--muted); opacity: 0.7;
 }
-.card-add-on { background: var(--ember); color: var(--space); border-color: var(--ember); }
-.card-tick { width: 15px; height: 15px; display: grid; place-items: center; }
-.card-tick svg {
-  width: 15px; height: 15px; fill: none; stroke: currentColor;
-  stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; opacity: 0.35;
+.card-top .dur { margin-left: 0; padding-left: 2px; }
+.card h4 {
+  margin: 0 0 4px; font-size: 13.5px; font-weight: 500; line-height: 1.35;
+  letter-spacing: -0.01em;
 }
-.card-add-on .card-tick svg { opacity: 1; }
-.card-hear {
-  flex: none; width: 42px; height: 42px; border-radius: 12px; border: 1px solid var(--line-2);
-  display: grid; place-items: center; cursor: pointer;
-  background: transparent; color: var(--ember);
-}
-.card-hear svg { width: 13px; height: 13px; fill: currentColor; }
-.card-hear:hover { border-color: rgba(255, 158, 18, 0.55); }
-.card-empty { min-height: 40%; justify-content: center; }
+.card p { margin: 0; font-size: 11px; line-height: 1.5; color: var(--muted); }
+.card .ecard-place { margin-top: 8px; }
+.card-foot { display: flex; gap: 6px; margin-top: 10px; }
 
 .plan-auto { flex: none; padding: 10px 14px 14px; }
 .plan-auto-hit {
@@ -1069,6 +1130,14 @@ body {
 .empty-state p { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
 
 /* ── collection ──────────────────────────────────────────── */
+.coll-bar {
+  display: block; height: 3px; margin-top: 10px; border-radius: 99px; overflow: hidden;
+  background: rgba(var(--rgb-hair), 0.14);
+}
+.coll-bar i {
+  display: block; height: 100%; border-radius: 99px; background: var(--ember);
+  transition: width 0.3s var(--ease);
+}
 .group { margin-bottom: 22px; }
 .group-head {
   font-family: "Space Grotesk", monospace; font-size: 9.5px; letter-spacing: 0.16em;
@@ -1078,20 +1147,13 @@ body {
 .group-rare { color: var(--ember); }
 .group-uncommon { color: var(--indigo-soft); }
 
-.entry { display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--line); }
-.entry-glyph {
-  width: 30px; height: 30px; flex: none; border-radius: 50%;
-  background: rgba(var(--rgb-accent, 0, 255, 231), 0.14); display: grid; place-items: center;
-}
-.entry-glyph svg { width: 15px; height: 15px; fill: none; stroke: var(--ember); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
-.entry-text { min-width: 0; }
 .entry-text h4 { font-size: 13px; font-weight: 500; line-height: 1.35; }
 .entry-text p { font-size: 11px; color: var(--muted); margin-top: 2px; }
 .entry-meta { font-size: 10px; color: rgba(174, 181, 194, 0.72); }
 
 .collection-foot {
-  margin-top: 18px; padding: 14px; border-radius: 12px;
-  background: var(--slate); border: 1px solid var(--line);
+  margin-top: 20px; padding: 14px 2px 0; border-top: 1px solid var(--line);
+  font-size: 10.5px; line-height: 1.6; color: var(--muted);
 }
 .collection-foot p { font-size: 11.5px; color: var(--muted); line-height: 1.6; }
 .collection-foot strong { color: var(--cool); }
@@ -1387,8 +1449,8 @@ body {
   --cat-true-crime: #ff4d9d;
   --cat-legend: #9ef0a8;
   --cat-kids: #00ffe7;
-  --cat-food-drink: #ff9e4f;
-  --cat-arts: #ff87c3;
+  --cat-arts: #ff9e4f;
+  --cat-food-drink: #ff87c3;
   --cat-people: #ffd98a;
   --cat-built: #d8dce5;
   --cat-land: #7fd4c1;
