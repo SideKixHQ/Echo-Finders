@@ -120,9 +120,57 @@ export function Privacy({ settings, onChange, storedPositions, collectionSize, o
             and permanent.
           </small>
         </button>
+        <button className="danger-row" onClick={startOver}>
+          <span>Start over</span>
+          <small>
+            Forgets the onboarding, your ratings and everything synced, then reloads. Use it
+            when the app looks like an older version of itself.
+          </small>
+        </button>
       </section>
+
+      {/*
+        Which build this is.
+        "It doesn't look updated" was unanswerable: the deploy posts nothing back to GitHub,
+        and the app said nothing about its own version, so there was no way to tell a stale
+        deploy from stale state in a browser from a change that had not landed. This is the
+        cheapest possible answer and it fits in a screenshot.
+      */}
+      <p className="build-stamp">
+        Build {__BUILD_COMMIT__} · {new Date(__BUILD_TIME__).toLocaleString()}
+      </p>
     </div>
   );
+}
+
+/**
+ * Forget everything this device is holding, and reload.
+ *
+ * Not the same as "delete everything", which is a privacy promise about *your data*. This
+ * is the other failure: an old visit left state behind that makes a new build look like an
+ * old one, most of all the onboarding flag, which sends you straight past the six screens
+ * that were the thing worth looking at.
+ *
+ * Every step is wrapped, because a private window can refuse any of them and a reset that
+ * throws halfway is worse than no reset.
+ */
+function startOver(): void {
+  try {
+    localStorage.clear();
+  } catch {
+    /* Blocked storage. The reload below is still worth doing. */
+  }
+  try {
+    sessionStorage.clear();
+  } catch {
+    /* As above. */
+  }
+  try {
+    indexedDB.deleteDatabase("echo-finders");
+  } catch {
+    /* As above. */
+  }
+  location.reload();
 }
 
 function Toggle({

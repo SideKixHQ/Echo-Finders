@@ -2031,3 +2031,10 @@ body {
   background: linear-gradient(140deg, var(--ember), #d17800);
   box-shadow: 0 0 20px rgba(255, 158, 18, 0.45);
 }
+
+/* Which build this is. Quiet, at the bottom of settings, where it is findable when
+   somebody asks "is this the new one" and invisible the rest of the time. */
+.build-stamp {
+  margin: 18px 4px 0; text-align: center;
+  font-family: "Space Grotesk", monospace; font-size: 10px; color: var(--muted);
+}

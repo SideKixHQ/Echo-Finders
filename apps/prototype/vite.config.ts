@@ -1,8 +1,35 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { fileURLToPath } from "node:url";
+import { execSync } from "node:child_process";
+
+/**
+ * Which build this is.
+ *
+ * "What I see doesn't look updated" is a question nobody could answer: the deploy is
+ * silent by design (`vercel.json` sets `github.silent`), the sandbox cannot reach
+ * `*.vercel.app` to look, and the app itself said nothing about its own version. So it
+ * says it now, on the settings screen, and the answer takes a screenshot rather than an
+ * argument.
+ *
+ * Vercel hands the commit over in the environment; locally, ask git. Neither is fatal if
+ * it fails, because a build stamp is not worth failing a build over.
+ */
+function commit(): string {
+  const fromVercel = process.env.VERCEL_GIT_COMMIT_SHA;
+  if (fromVercel) return fromVercel.slice(0, 7);
+  try {
+    return execSync("git rev-parse --short=7 HEAD", { encoding: "utf8" }).trim();
+  } catch {
+    return "unknown";
+  }
+}
 
 export default defineConfig({
+  define: {
+    __BUILD_COMMIT__: JSON.stringify(commit()),
+    __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
+  },
   plugins: [react()],
   resolve: {
     alias: {
