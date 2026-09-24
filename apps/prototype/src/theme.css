@@ -2038,6 +2038,7 @@ body {
 .sheet-peek .list,
 .sheet-peek .upnext,
 .sheet-peek .plate-strip,
+.sheet-peek .list-progress,
 .sheet-peek .rarity-why { display: none; }
 /* No border under the row when it is the only thing there. */
 .sheet-peek .phead { border-bottom: 0; }
@@ -2146,3 +2147,21 @@ body {
    on screen, lit, and unreachable. This is the same move the sheet already makes as it
    rises: one thing has the map's attention at a time. */
 .screen:has(.pop) .rail { opacity: 0; pointer-events: none; }
+
+/* How far through the journey, above the list. Quiet: it is a fact somebody looks up, not
+   one they need pushed at them, which is why it is no longer the resting row. */
+.list-progress {
+  margin: 0; padding: 6px 16px 0;
+  font-family: "Space Grotesk", monospace; font-size: 9.5px;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+}
+
+/* The resting orb when the echo is not yours yet: same size and place, a pin rather than a
+   play triangle, and quieter, because it opens the echo on the map instead of starting it.
+   A play button that refuses is a lie and a greyed-out one is an insult. */
+.play-far {
+  background: rgba(var(--rgb-hair), 0.12);
+  box-shadow: none; color: var(--cool);
+  border: 1px solid var(--line-2);
+}
+.play-far svg.play-pin { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linejoin: round; }

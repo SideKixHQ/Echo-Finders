@@ -17,6 +17,7 @@ import { Player } from "./Player";
 import { Transcript } from "./Transcript";
 import { useMemo, useRef, useState } from "react";
 import { splitScript, stepLine } from "./transcript-lines";
+import { CATEGORY_LABEL } from "./categories";
 import type { Upcoming } from "@echofinders/core";
 
 interface Props {
@@ -182,6 +183,21 @@ export function Sheet({
     const script = (simple ? nowPlaying?.simple?.script : nowPlaying?.script) ?? nowPlaying?.script;
     return script ? splitScript(script) : [];
   }, [nowPlaying, simple]);
+  /*
+   * The nearest one, which is what the resting row shows.
+   *
+   * By distance, not by position along the route: the list is ordered along the route so it
+   * holds still as you walk, and that ordering is right for a list and wrong for "which one
+   * am I closest to".
+   */
+  const next = useMemo(() => {
+    let best: NearbyEcho | null = null;
+    for (const candidate of liveNearby) {
+      if (!best || candidate.distanceKm < best.distanceKm) best = candidate;
+    }
+    return best;
+  }, [liveNearby]);
+
   const savedCards = savedNearby;
   return (
     <div
@@ -238,13 +254,20 @@ export function Sheet({
           onSave={onSave}
           {...(onCamera ? { onCamera } : {})}
         />
-      ) : nowPlaying ? null : (
-        <Idle
-          count={captured.length}
-          total={onRouteCount}
-          selfDirected={selfDirected}
-          autoPlay={autoPlay}
+      ) : nowPlaying ? null : next ? (
+        <NextUp
+          echo={next.echo}
+          distanceKm={next.distanceKm}
+          /* Synced echoes are yours anywhere. On a route that carries you the package came
+             down before you left, so everything on it plays. */
+          playable={!selfDirected || stateOf(next.echo.id) !== "sealed"}
+          saved={saved.has(next.echo.id)}
+          onPlay={onPlay}
+          onSave={onSave}
+          onOpen={onSelect}
         />
+      ) : (
+        <Empty selfDirected={selfDirected} />
       )}
 
       {/*
@@ -320,6 +343,20 @@ export function Sheet({
       )}
 
       {view !== "script" && <UpNext items={view === "near" ? upcoming : []} onPlay={onPlay} />}
+
+      {/*
+        Progress, where it costs nothing.
+        It used to be the whole resting row, which is how a status line ended up occupying
+        the most valuable strip in the app. It is a label above the list now: the same two
+        numbers, in the place people look when they want to know how much is left.
+      */}
+      {view === "near" && onRouteCount > 0 && (
+        <p className="list-progress">
+          {captured.length} synced
+          {onRouteCount > captured.length && <> · {onRouteCount - captured.length} to go</>}
+          {autoPlay && <> · playing as you reach them</>}
+        </p>
+      )}
 
       {view !== "script" && (
       <div className="list">
@@ -441,61 +478,110 @@ function Found({
 }
 
 /**
- * Before anything has been found.
+ * What is next, with a way to start it.
  *
- * One line, at the height of the design's mini bar, because this is the least valuable
- * block on the screen and it was taking the most room: a heading plus two lines of
- * explanation, about a hundred pixels, sitting between the listener and the list of
- * echoes around them. It is onboarding copy, and onboarding copy that reappears on every
- * visit has stopped being onboarding.
+ * This slot used to hold a status sentence: "12 synced. They sync as you reach them, then
+ * wait for you." Put that beside the design and the difference is the whole product. The
+ * design's peek row is an *echo* — a play orb, what it is, what it is called, where it is
+ * and how long — and mine was a progress report with nothing to press. A one-row sheet over
+ * a full screen of map is the app's entire resting state, and mine was spending it on
+ * telling you how the app works.
  *
- * What survives is the one thing somebody genuinely might not know, said in a clause
- * rather than a paragraph: arriving *opens* an echo, it does not start it. A listener
- * told their phone can stay in their pocket and then handed silence would reasonably
- * think something was broken.
+ * So the resting state is the nearest echo, always, in the same row the design draws.
  *
- * The count does the rest of the work. "3 found, 9 to go" is both the state and the
- * reason to keep walking, and it costs one line.
+ * The orb is the part that had to be thought about rather than copied. This product's rule
+ * is that you cannot play something you have not stood at, so a play triangle on an echo
+ * three streets away would be a lie, and a greyed-out one is a small insult. It is
+ * therefore two controls wearing one shape: play, when the echo is yours; and, when it is
+ * not, a pin that opens it on the map and says how far. Something to press either way,
+ * and true either way.
  */
-function Idle({
-  count,
-  total,
-  selfDirected,
-  autoPlay,
+function NextUp({
+  echo,
+  distanceKm,
+  playable,
+  saved,
+  onPlay,
+  onSave,
+  onOpen,
 }: {
-  count: number;
-  total: number;
-  selfDirected: boolean;
-  autoPlay: boolean;
+  echo: Echo;
+  distanceKm: number | null;
+  playable: boolean;
+  saved: boolean;
+  onPlay: (echo: Echo) => void;
+  onSave: (echo: Echo) => void;
+  onOpen: (echoId: string) => void;
 }) {
-  const left = Math.max(0, total - count);
-  const heading =
-    count > 0
-      ? `${count} synced${left > 0 ? `, ${left} to go` : ""}`
-      : selfDirected
-        ? "Stand on one to sync it"
-        : "Echoes open as you pass";
-  /*
-   * Two different products in two sentences, and this said the walking one to everybody.
-   *
-   * On foot you go to the place and standing there is what unlocks the echo. In the air you
-   * cannot go anywhere: the route is fixed, the package came down before take off, and the
-   * echoes are timed to where the aeroplane will be. Telling a passenger at thirty thousand
-   * feet to "get to the spot" is telling them to do something impossible.
-   */
-  const line = autoPlay
-    ? "The ones you chose will play as you reach them."
-    : selfDirected
-      ? count > 0
-        ? "They sync as you reach them, then wait for you."
-        : "Get to the spot and it syncs. Press play when you want it."
-      : "They open as you fly over them. Downloaded before you left.";
+  return (
+    <div className="now">
+      <div className="now-top">
+        <button
+          className={playable ? "play" : "play play-far"}
+          aria-label={playable ? `Play ${echo.title}` : `Show ${echo.title} on the map`}
+          onClick={() => (playable ? onPlay(echo) : onOpen(echo.id))}
+        >
+          {playable ? (
+            <svg viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          ) : (
+            <svg viewBox="0 0 24 24" className="play-pin">
+              <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z" />
+              <circle cx="12" cy="10" r="2.4" />
+            </svg>
+          )}
+        </button>
+        <div className="now-text">
+          <span className={`playing-kicker cat-${echo.category}`}>
+            <span className="playing-dot" />
+            {CATEGORY_LABEL[echo.category]}
+          </span>
+          <h2>{echo.title}</h2>
+          <p>
+            {echo.point.place} ·{" "}
+            {playable ? clock(echo.durationS) : nearness(distanceKm)}
+          </p>
+        </div>
+        <button
+          className={saved ? "now-mark on" : "now-mark"}
+          onClick={() => onSave(echo)}
+          aria-pressed={saved}
+          aria-label={saved ? "Saved" : "Save this echo"}
+        >
+          <svg viewBox="0 0 24 24">
+            <path d="M18 21l-6-3.6L6 21V5.4A1.4 1.4 0 0 1 7.4 4h9.2A1.4 1.4 0 0 1 18 5.4z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+}
 
+/** Rounded to fifty metres, to agree with everything else that reports a distance. */
+function nearness(distanceKm: number | null): string {
+  if (distanceKm === null) return "near here";
+  const metres = distanceKm * 1000;
+  if (metres < 950) return `${Math.round(metres / 50) * 50}m away`;
+  return `${distanceKm.toFixed(1)}km away`;
+}
+
+/**
+ * When there is genuinely nothing.
+ *
+ * Only reached with an empty map: every category switched off, or a place with no echoes
+ * in it. Anything else has a nearest echo and gets the row above.
+ */
+function Empty({ selfDirected }: { selfDirected: boolean }) {
   return (
     <div className="now now-idle">
       <div className="now-text">
-        <h2>{heading}</h2>
-        <p>{line}</p>
+        <h2>Nothing here yet</h2>
+        <p>
+          {selfDirected
+            ? "Move, or switch more categories on above the map."
+            : "Nothing on this stretch of the route."}
+        </p>
       </div>
     </div>
   );
