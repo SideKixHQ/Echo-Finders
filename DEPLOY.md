@@ -22,16 +22,29 @@ remember next time.
 
 A minute or so later you have a URL. Open it on a phone.
 
-## The live URL
+## Where it is
 
-**Not recorded yet.** Paste it in here the first time, because nothing in this repository
-knows it and nothing can find it out: Vercel is configured `silent`, so it posts no
-deployment status back to GitHub, and the sandbox these sessions run in cannot reach
-`vercel.app` at all. Every push to `main` deploys to it whether or not it is written down —
-the only thing missing is the ability to say *where* to look, or to check afterwards that
-the deploy went out.
+**Project:** `echo-finders`, under the `side-kix` team.
 
-    Live: <paste the Vercel URL here>
+    Dashboard  https://vercel.com/side-kix/echo-finders
+    App        <the Domains line on the dashboard — paste it here>
+
+The dashboard is where the build logs and the deployment history are, and it is behind a
+Vercel login, so it is for you rather than for anybody you send the demo to. The address
+you actually *open the app at* is the Domains line on that page — `echo-finders.vercel.app`
+or similar. Worth writing down here, because nothing in this repository knows it and
+nothing can work it out.
+
+Two reasons it cannot be discovered rather than recorded. `vercel.json` sets
+`github: { silent: true }`, so Vercel posts no deployment status back to GitHub for anyone
+to read. And the sandbox these sessions run in is refused `*.vercel.app` by its network
+policy — a 403 on the tunnel, not a 404 — so the address cannot be probed for, and a deploy
+cannot be checked from here after a push.
+
+Neither of those stops anything deploying: every push to `main` goes out regardless. They
+only stop this file from filling itself in, and stop a session confirming afterwards that
+the deploy was green. If that confirmation is worth having, adding `vercel.app` to the
+environment's allowed domains is what buys it.
 
 ## Use it on a phone, not a laptop
 
