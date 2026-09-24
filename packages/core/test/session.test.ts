@@ -215,13 +215,23 @@ describe("what a walk reports", () => {
   });
 
   it("reports echoes part-way through opening, for the progress ring", () => {
+    // Half way through the settle. Three seconds completes it now, so this samples at 1.5.
     const { location, events } = setup();
     location.emit(fix(HERE, START));
-    location.emit(fix(HERE, START + 3000));
+    location.emit(fix(HERE, START + 1500));
 
     const opening = events.filter((e) => e.type === "opening").at(-1);
     expect(opening).toBeDefined();
     expect(opening!.type === "opening" && opening!.arriving.length).toBe(1);
+    expect(opening!.type === "opening" && opening!.arriving[0]!.progress).toBeCloseTo(0.5, 1);
+  });
+
+  it("syncs once the settle is done", () => {
+    const { location, events } = setup();
+    location.emit(fix(HERE, START));
+    location.emit(fix(HERE, START + 3000));
+
+    expect(events.some((e) => e.type === "captured")).toBe(true);
   });
 });
 

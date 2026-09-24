@@ -82,9 +82,28 @@ export class BrowserLocation implements LocationSource {
       const done = () => {
         if (settled) return true;
         settled = true;
+        clearTimeout(watchdog);
         resolve(this.state);
         return false;
       };
+
+      /*
+       * A prompt nobody answers.
+       *
+       * `watchPosition` calls neither callback while a permission dialog is open, and if
+       * that dialog is dismissed without a choice — or suppressed entirely, which some
+       * embedded and automated browsers do — it calls neither afterwards either. The
+       * promise then never settles, and anything awaiting it waits forever: the onboarding
+       * button sat disabled on "waiting for your answer" with no way past it.
+       *
+       * So the ask resolves either way. The watch is left running, because a late grant
+       * should still start feeding positions; only the *asking* gives up.
+       */
+      const watchdog = setTimeout(() => {
+        if (settled) return;
+        this.set({ kind: "idle" });
+        done();
+      }, 35_000);
 
       this.watchId = navigator.geolocation.watchPosition(
         (fix) => {

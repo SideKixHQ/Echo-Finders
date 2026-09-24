@@ -629,6 +629,7 @@ export function App() {
                 detent={detent}
                 onDetent={setDetent}
                 onNext={() => session.skip()}
+                onStop={() => session.stopPlaying()}
                 rating={nowPlaying ? ratings[nowPlaying.id] : undefined}
                 onRating={(r) => nowPlaying && rateEcho(nowPlaying.id, r)}
                 {...(selfDirected ? { onCamera: setCamera } : {})}
@@ -887,7 +888,7 @@ export function App() {
           </button>
         </div>
         <p className="mono dim">
-          {Math.round(along * 100)}% along · {kept.length} found · {inCorridor} on this route ·{" "}
+          {Math.round(along * 100)}% along · {kept.length} synced · {inCorridor} on this route ·{" "}
           {LIBRARY.length} in the library
         </p>
       </aside>

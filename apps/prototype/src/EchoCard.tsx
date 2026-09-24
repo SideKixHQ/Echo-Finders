@@ -26,6 +26,7 @@
 import type { Echo } from "@echofinders/core";
 import { CATEGORY_ICON, CATEGORY_LABEL } from "./categories";
 import { PlateStrip } from "./PlateStrip";
+import { shareText } from "./share";
 
 export interface EchoCardProps {
   readonly echo: Echo;
@@ -79,7 +80,7 @@ export function EchoCard({
             e.stopPropagation();
             onPlay(echo);
           }}
-          aria-label={sealed ? "Walk to open this" : `Play ${echo.title}`}
+          aria-label={sealed ? "Walk to this to sync it" : `Play ${echo.title}`}
         >
           <svg viewBox="0 0 24 24" className={sealed ? "" : "act-fill"}>
             {sealed ? CATEGORY_ICON[echo.category] : <path d="M8 5v14l11-7z" />}
@@ -125,7 +126,7 @@ export function EchoCard({
       {open && (
         <div className="ecard-detail">
           {!sealed && <p>{echo.summary}</p>}
-          {sealed && <p>Walk to it and it opens. Twelve seconds inside and it is yours.</p>}
+          {sealed && <p>Walk to the spot. Stand still a moment and it syncs.</p>}
 
           {!sealed && onCamera && <PlateStrip echo={echo} onOpen={onCamera} />}
 
@@ -164,7 +165,7 @@ export function EchoCard({
           aria-label="Share"
           onClick={(e) => {
             e.stopPropagation();
-            void share(echo);
+            void shareText(echo.title, `${echo.title} — ${echo.point.place}. ${echo.teaser ?? echo.summary}`);
           }}
         >
           <svg viewBox="0 0 24 24">
@@ -179,28 +180,6 @@ export function EchoCard({
       )}
     </article>
   );
-}
-
-/**
- * Share, with the two fallbacks a browser needs.
- *
- * `navigator.share` is the right thing on a phone and does not exist on most desktops;
- * the clipboard is the right thing there and is refused without a secure context. Past
- * both, do nothing quietly rather than throwing — a share that fails is not worth an
- * error, and a rejected native sheet is usually somebody changing their mind.
- */
-async function share(echo: Echo): Promise<void> {
-  const text = `${echo.title} — ${echo.point.place}. ${echo.teaser ?? echo.summary}`;
-  if (typeof navigator === "undefined") return;
-  try {
-    if (typeof navigator.share === "function") {
-      await navigator.share({ title: echo.title, text });
-      return;
-    }
-    await navigator.clipboard?.writeText(text);
-  } catch {
-    /* cancelled, or no clipboard. Neither is worth interrupting a walk for. */
-  }
 }
 
 const clock = (seconds: number) =>

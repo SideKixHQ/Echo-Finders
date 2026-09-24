@@ -78,7 +78,7 @@ export function Privacy({ settings, onChange, storedPositions, collectionSize, o
 
       <Toggle
         label="Keep my collection"
-        detail="Records which echoes you found, and when."
+        detail="Records which echoes you synced, and when."
         cost="Turn off and echoes still open as you walk. Nothing is kept afterwards."
         on={settings.keepCollection}
         onToggle={() => onChange({ ...settings, keepCollection: !settings.keepCollection })}
@@ -116,7 +116,7 @@ export function Privacy({ settings, onChange, storedPositions, collectionSize, o
         <button className="danger-row" onClick={() => onDelete("everything")}>
           <span>Delete everything</span>
           <small>
-            Removes all {collectionSize} found echo{collectionSize === 1 ? "" : "es"}. Immediate
+            Removes all {collectionSize} synced echo{collectionSize === 1 ? "" : "es"}. Immediate
             and permanent.
           </small>
         </button>

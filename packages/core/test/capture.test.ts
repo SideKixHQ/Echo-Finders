@@ -91,6 +91,35 @@ describe("capture by arrival", () => {
     }
   });
 
+  /**
+   * "Once you have stood there." The rule that replaced the twelve second ceremony, and
+   * the one that actually separates arriving from passing: a timer only asks how patient
+   * somebody was, this asks whether they stopped.
+   */
+  it("will not sync something you drove past", () => {
+    const tracker = new CaptureTracker(ADULT, { mode: "driving" });
+    const library = [plaque({ triggerRadiusKm: 0.4 })];
+    // Inside the radius the whole time, and never below a crawl.
+    const events = [];
+    for (let s = 0; s <= 20; s += 2) {
+      const metres = 400 - s * 30; // 54 kph, straight past it
+      events.push(...tracker.update(fix(north(WALL_STREET, metres), START + s * 1000), library));
+    }
+
+    expect(events).toEqual([]);
+    expect(tracker.stateOf("federal-hall")).toBe("sealed");
+  });
+
+  it("syncs once you stop, on the same drive", () => {
+    const tracker = new CaptureTracker(ADULT, { mode: "driving" });
+    const library = [plaque({ triggerRadiusKm: 0.4 })];
+    // Arrive at speed, then park.
+    tracker.update(fix(north(WALL_STREET, 400), START), library);
+    const events = standAt(tracker, WALL_STREET, library, { dwellS: 6, accuracyM: 20 });
+
+    expect(events).toHaveLength(1);
+  });
+
   it("does not open one from across the street", () => {
     const tracker = new CaptureTracker(ADULT);
     const library = [plaque()];

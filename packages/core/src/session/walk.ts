@@ -257,6 +257,23 @@ export class WalkSession {
     this.emitPlayback();
   }
 
+  /**
+   * Done with this one, and with the queue behind it.
+   *
+   * Distinct from `pause`, which keeps your place, and from `skip`, which moves on to the
+   * next thing. This is the control a listener wants when they have walked away from a
+   * place and no longer care how the story ends: the audio stops, the queue empties, and
+   * the session carries on watching for the next arrival.
+   *
+   * The echoes are not un-synced. Stopping the narration has nothing to do with whether
+   * you stood somewhere, and the collection is a record of the standing.
+   */
+  stopPlaying(): void {
+    this.deps.audio?.stop();
+    this.playback.clear();
+    this.emitPlayback();
+  }
+
   /** Give up on the current item and take the next. */
   skip(): void {
     this.playback.skip();

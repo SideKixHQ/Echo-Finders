@@ -83,7 +83,7 @@ export function Preflight({
           <>
             <span className="pf-kicker">Welcome back</span>
             <h2>
-              {foundCount} {foundCount === 1 ? "echo" : "echoes"} found
+              {foundCount} {foundCount === 1 ? "echo" : "echoes"} synced
             </h2>
             {/* Their own places, in their own words. A number is a score; a list of
                 streets somebody actually stood in is a memory, and that is the thing the

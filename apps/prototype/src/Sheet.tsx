@@ -60,6 +60,7 @@ interface Props {
   readonly onRate: (rate: number) => void;
   readonly onSeek: (fraction: number) => void;
   readonly onNext: () => void;
+  readonly onStop: () => void;
   readonly rating: Rating | undefined;
   readonly onRating: (rating: Rating) => void;
   /** Open the camera on an echo. Only where there is one — a flight has no then-and-now. */
@@ -105,6 +106,7 @@ export function Sheet({
   onRate,
   onSeek,
   onNext,
+  onStop,
   rating,
   onRating,
   onCamera,
@@ -269,6 +271,7 @@ export function Sheet({
           onSeek={onSeek}
           onLine={(delta) => onSeek(stepLine(lines, progress, delta))}
           onNext={onNext}
+          onStop={onStop}
           rating={rating}
           onRating={onRating}
         />
@@ -393,7 +396,7 @@ function Found({
           )}
         </button>
         <div className="now-text">
-          <span className={`tag tag-${rarity}`}>Found · {rarity}</span>
+          <span className={`tag tag-${rarity}`}>Synced · {rarity}</span>
           <h2>{capture.echo.title}</h2>
           {/* Place and length on one line, because the decision this row exists to support
               is whether to listen now, and that is a question about both. */}
@@ -459,15 +462,15 @@ function Idle({
   const left = Math.max(0, total - count);
   const heading =
     count > 0
-      ? `${count} found${left > 0 ? `, ${left} to go` : ""}`
+      ? `${count} synced${left > 0 ? `, ${left} to go` : ""}`
       : selfDirected
-        ? "Walk to open an echo"
+        ? "Stand on one to sync it"
         : "Echoes open as you pass";
   const line = autoPlay
     ? "The ones you chose will play as you reach them."
     : count > 0
-      ? "They open as you reach them, then wait for you."
-      : "Arriving opens one. Press play when you want it.";
+      ? "They sync as you reach them, then wait for you."
+      : "Get to the spot and it syncs. Press play when you want it.";
 
   return (
     <div className="now now-idle">

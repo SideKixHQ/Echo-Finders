@@ -416,6 +416,8 @@ export function Onboarding({
                 <button className="onb-go" onClick={() => void askThenNext()} disabled={asking}>
                   {asking ? "Waiting for your answer…" : "Allow location"}
                 </button>
+                {/* Never disabled, even while asking. It is the way out of a prompt that
+                    does not come back, and a screen with no way out is a trap. */}
                 <button className="onb-alt" onClick={finish}>
                   Not yet
                 </button>

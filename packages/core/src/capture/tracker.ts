@@ -23,14 +23,29 @@ import type {
 export interface CaptureOptions {
   readonly mode?: TravelMode;
   /**
-   * How long the listener must remain inside the radius before it opens.
+   * How long the listener must remain inside the radius before it syncs.
    *
-   * Not a difficulty knob — a filter against passing through. Someone on a bus crossing a
-   * city would otherwise sweep up every echo along the route without ever having been
-   * anywhere, which devalues every capture including the earned ones. A few seconds is
-   * enough to separate arriving from passing.
+   * Short, and deliberately so. Twelve seconds was a ceremony: long enough that a listener
+   * stood on the exact spot watching a ring fill, which is the phone holding their
+   * attention at the precise moment the place should have it. Three is a settle — enough
+   * to tell a stop from a stride — and the real filter against passing through is
+   * `maxSyncKph` below, which asks whether they stopped at all rather than how patient
+   * they were.
    */
   readonly dwellS?: number;
+  /**
+   * Fastest you can be moving and still sync something, kph.
+   *
+   * "Once you have stood there." This is the rule that separates arriving from passing,
+   * and it does the job a timer cannot: a bus crossing a city fails it at every echo no
+   * matter how long the ride, and somebody ambling past a plaque passes it without
+   * breaking step. Set above walking pace rather than at zero, because the premise is a
+   * phone in a pocket — requiring a dead stop would mean requiring people to notice, which
+   * is the whole thing this product is arranged to avoid.
+   *
+   * Applies to every mode. On the carried ones `captureByArrival` has already said no.
+   */
+  readonly maxSyncKph?: number;
   /**
    * Largest share of an echo's own radius that GPS slack may add, 0–1.
    *
@@ -64,8 +79,15 @@ export interface CaptureOptions {
 }
 
 const DEFAULTS = {
-  dwellS: 12,
-  maxSlackFraction: 0.5,
+  dwellS: 3,
+  maxSyncKph: 8,
+  /*
+   * Tighter than it was. At half an echo's radius, GPS slack could put somebody a further
+   * twenty-five metres out on a fifty-metre plaque and still count — which is across the
+   * street, and "you have to be really close to the exact spot" is the point of the
+   * mechanic. A quarter still absorbs ordinary drift without lending anybody a building.
+   */
+  maxSlackFraction: 0.25,
   maxAccuracyRatio: 2,
   // Generous: GPS jitter, a sprint for a bus, a tailwind on a bike. This is meant to catch
   // teleportation, not athleticism.
@@ -95,6 +117,7 @@ export class CaptureTracker {
       maxSlackFraction: options.maxSlackFraction ?? DEFAULTS.maxSlackFraction,
       maxAccuracyRatio: options.maxAccuracyRatio ?? DEFAULTS.maxAccuracyRatio,
       maxSpeedFactor: options.maxSpeedFactor ?? DEFAULTS.maxSpeedFactor,
+      maxSyncKph: options.maxSyncKph ?? DEFAULTS.maxSyncKph,
       requireAudio: options.requireAudio ?? false,
       captureByArrival:
         options.captureByArrival ?? presetFor(options.mode ?? "walking").selfDirected,
@@ -128,6 +151,13 @@ export class CaptureTracker {
     const arriving: Arriving[] = [];
 
     const teleported = this.isImplausible(position);
+    /*
+     * Measured before `lastFix` is overwritten, which is the whole trick and the bug the
+     * first version of this had: computed inside the loop below, the previous fix *is*
+     * this one, elapsed time is zero, and the speed is unknowable — so a car doing a
+     * hundred read as stationary and synced everything it drove past.
+     */
+    const tooFast = this.movingFasterThanSync(position);
     this.lastFix = position;
 
     for (const echo of library) {
@@ -148,6 +178,12 @@ export class CaptureTracker {
       if (this.fixTooVague(echo, position)) continue;
 
       if (teleported) continue;
+
+      // Moving too fast to have stood anywhere. The settle cannot even begin.
+      if (tooFast) {
+        this.arrivingSince.delete(echo.id);
+        continue;
+      }
 
       /*
        * Being carried past something is not arriving at it.
@@ -309,6 +345,24 @@ export class CaptureTracker {
    * so a collection stays a truthful record of where someone has been, which is the thing
    * that makes it worth keeping at all.
    */
+  /** Speed over the ground since the last fix, kph, or null on the first one. */
+  private groundSpeedKph(position: Position): number | null {
+    const previous = this.lastFix;
+    if (!previous) return null;
+    const elapsedS = (position.timestamp - previous.timestamp) / 1000;
+    if (elapsedS <= 0) return null;
+    return (distanceKm(previous.at, position.at) / elapsedS) * 3600;
+  }
+
+  /** Call before `lastFix` is reassigned, or the answer is always "stationary". */
+  private movingFasterThanSync(position: Position): boolean {
+    const measured = this.groundSpeedKph(position);
+    // A reported speed is used only when we could not measure one: a device that says it
+    // is stationary while its coordinates move is describing a wish.
+    const kph = measured ?? position.speedKph;
+    return kph !== undefined && kph !== null && kph > this.options.maxSyncKph;
+  }
+
   private isImplausible(position: Position): boolean {
     const previous = this.lastFix;
     if (!previous) return false;

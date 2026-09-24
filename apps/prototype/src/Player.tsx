@@ -34,6 +34,8 @@ export interface PlayerProps {
   readonly onSeek: (fraction: number) => void;
   readonly onLine: (delta: -1 | 1) => void;
   readonly onNext: () => void;
+  /** Done with this one entirely. Not pause, which keeps your place. */
+  readonly onStop: () => void;
   /** Private, two-answer, never shown back as a score. See `ratings.ts`. */
   readonly rating: Rating | undefined;
   readonly onRating: (rating: Rating) => void;
@@ -55,6 +57,7 @@ export function Player({
   onSeek,
   onLine,
   onNext,
+  onStop,
   rating,
   onRating,
 }: PlayerProps) {
@@ -187,6 +190,17 @@ export function Player({
       </div>
 
       <div className="player-row player-row-centre">
+        {/*
+          Stop, beside next, because they are the two ways of being finished with something
+          and a listener choosing between them is choosing between "not this one" and "not
+          right now". Pause is the orb; it keeps your place. This does not.
+        */}
+        <button className="pill" onClick={onStop}>
+          <svg viewBox="0 0 24 24">
+            <rect x="6" y="6" width="12" height="12" rx="2" />
+          </svg>
+          Stop
+        </button>
         <button className="pill" onClick={onNext}>
           Next echo
           <svg viewBox="0 0 24 24">

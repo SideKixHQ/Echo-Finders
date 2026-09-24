@@ -19,6 +19,7 @@
 
 import type { CaptureEvent, Echo, Route } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
+import { shareText } from "./share";
 
 export interface ArrivalProps {
   readonly route: Route;
@@ -94,7 +95,21 @@ export function Arrival({
         <button className="arr-pri" onClick={onAgain}>
           {saved.length > 0 ? `Save ${saved.length} to your map` : "Walk it again"}
         </button>
-        <button className="arr-ghost">Share</button>
+        {/* This had no handler at all: a button that answered a tap with silence, on the
+            one screen somebody might actually want to tell someone about. */}
+        <button
+          className="arr-ghost"
+          onClick={() =>
+            void shareText(
+              `${heard.length} echoes on ${route.name ?? route.id}`,
+              `I walked ${route.name ?? route.id} and heard ${heard.length} ${
+                heard.length === 1 ? "story" : "stories"
+              } along the way, on Echo Finders.`,
+            )
+          }
+        >
+          Share
+        </button>
       </div>
     </div>
   );

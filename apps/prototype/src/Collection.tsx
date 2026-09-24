@@ -51,8 +51,8 @@ export function Collection({ captured, privacy, total, onPlay, isPlaying, isHear
     return (
       <div className="screen-body">
         <div className="empty">
-          <b>Nothing found yet</b>
-          Echoes open when you arrive at them. Walk towards one and it will be here
+          <b>Nothing synced yet</b>
+          An echo syncs when you stand on the spot it belongs to. Walk to one and it is here
           afterwards — yours to listen to whenever, wherever.
         </div>
       </div>
@@ -73,7 +73,7 @@ export function Collection({ captured, privacy, total, onPlay, isPlaying, isHear
       <header className="screen-head">
         <h1>Your collection</h1>
         <p>
-          {captured.length} of {total} found on this walk
+          {captured.length} of {total} synced here
         </p>
         {/* The number as a shape. "1 of 12" is a fact; a bar that is a twelfth full is an
             invitation to go and get the rest, which is what this screen is for. */}
@@ -130,7 +130,7 @@ export function Collection({ captured, privacy, total, onPlay, isPlaying, isHear
           </p>
         ) : (
           <p>
-            Your collection records <strong>which</strong> echoes you found and when, not
+            Your collection records <strong>which</strong> echoes you synced and when, not
             where you were standing. Turn that on in Privacy if you want a personal map.
           </p>
         )}

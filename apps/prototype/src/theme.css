@@ -798,10 +798,14 @@ body {
   stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
 }
 .pill:hover { border-color: var(--cool); }
-.pill-rate { gap: 9px; padding: 8px 10px; }
+/* The speed stepper. Its two buttons were 16x14, which fails WCAG 2.5.8 and, more to the
+   point, is a sixteen pixel target for a thumb on a moving pavement. The pill keeps its
+   size; the targets inside it grow to meet the minimum. */
+.pill-rate { gap: 2px; padding: 4px 6px; }
 .pill-rate button {
   background: none; border: 0; color: var(--muted); cursor: pointer;
-  font: inherit; font-size: 14px; line-height: 1; padding: 0 2px;
+  font: inherit; font-size: 15px; line-height: 1;
+  min-width: 26px; min-height: 26px; display: grid; place-items: center;
 }
 .pill-rate button:hover { color: var(--white); }
 .pill-rate b { font-family: "Space Grotesk", monospace; font-size: 11.5px; font-weight: 600; }
@@ -877,7 +881,10 @@ body {
   border: 1px solid var(--line-2); margin-bottom: 10px;
 }
 .tsearch svg { width: 15px; height: 15px; flex: none; fill: none; stroke: var(--muted); stroke-width: 1.8; }
+/* 15px tall is not a target. The input keeps its look and gains a thumb's worth of
+   height, which also stops the caret sitting flush against the border. */
 .tsearch input {
+  min-height: 26px;
   flex: 1; background: none; border: 0; outline: none;
   font: inherit; font-size: 12.5px; color: var(--white);
 }
