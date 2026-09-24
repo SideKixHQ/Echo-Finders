@@ -62,6 +62,7 @@ export class SpeechAudio implements AudioSink {
    * echo the bar finished a minute before the voice did.
    */
   private simple = false;
+  private voiceOverride: string | null = null;
 
   /** Keyed once. `find` over the library ran on every play, for every echo. */
   private readonly byKey: ReadonlyMap<string, Echo>;
@@ -84,6 +85,18 @@ export class SpeechAudio implements AudioSink {
   }
 
   /** Takes effect on the next echo, for the same reason `rate` does. */
+  /**
+   * A narrator the listener chose, overriding the one the echo was written for.
+   *
+   * Null means the echo's own, which is the default and the right default: an echo written
+   * for the children's narrator should arrive in it. But a voice is the thing somebody
+   * listens to for forty minutes, and not being able to change it is not a preference we
+   * get to hold on their behalf.
+   */
+  setVoice(voiceId: string | null) {
+    this.voiceOverride = voiceId;
+  }
+
   setSimple(simple: boolean) {
     this.simple = simple;
   }
@@ -112,7 +125,8 @@ export class SpeechAudio implements AudioSink {
     }
 
     const utterance = new SpeechSynthesisUtterance(cut.script);
-    const cast = CAST[echo.voice ?? ""] ?? { pitch: 1, rate: 0.95, prefer: [] };
+    const cast =
+      CAST[this.voiceOverride ?? echo.voice ?? ""] ?? { pitch: 1, rate: 0.95, prefer: [] };
     utterance.pitch = cast.pitch;
     // Clamped to what browsers actually honour; outside 0.1–10 they silently ignore it.
     utterance.rate = Math.max(0.5, Math.min(2.5, cast.rate * this.rate));

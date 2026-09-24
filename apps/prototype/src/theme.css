@@ -2206,3 +2206,37 @@ body {
 .onb-note {
   margin: 10px 2px 0; font-size: 11px; line-height: 1.5; color: var(--muted); opacity: 0.8;
 }
+
+/* Stopped, as a state rather than as a reading of 0:00.
+   Ember, because ember is what "you did this" means everywhere else here, and because the
+   one thing the control has to say is that it is the state you are currently in. */
+.pill-stopped {
+  color: var(--ember); border-color: rgba(255, 158, 18, 0.5);
+  background: rgba(255, 158, 18, 0.12);
+}
+.pill-stopped svg { fill: currentColor; }
+
+/* The narrator row is a control now, so it looks like one and is a thumb tall.
+   The design uses a native select here and so do we: three options should cost one row in
+   a sheet this dense, and the native control already works with a keyboard, a screen reader
+   and a thumb without anything from us. */
+.narrator { cursor: pointer; min-height: 44px; }
+.narrator:hover { border-color: var(--line-2); }
+.narrator select {
+  /* A 15px select inside a 44px row is a 15px target: the row is not the control, the
+     select is, and a thumb aims at what actually takes the tap. */
+  min-height: 40px;
+  flex: 1; min-width: 0; appearance: none; cursor: pointer;
+  background: transparent; border: 0; color: var(--white);
+  font: inherit; font-size: 12.5px; padding: 0 18px 0 0;
+}
+.narrator select:focus { outline: none; }
+/* The ring belongs to the row, since the row is what you see. */
+.narrator:focus-within { outline: 2px solid var(--aqua); outline-offset: 2px; }
+/* A caret, because a select with no arrow is a label. */
+.narrator::after {
+  content: ""; flex: none; width: 8px; height: 8px; margin-left: -14px;
+  border-right: 1.6px solid var(--muted); border-bottom: 1.6px solid var(--muted);
+  transform: rotate(45deg) translate(-2px, -2px); pointer-events: none;
+}
+.narrator select option { background: var(--slate); color: var(--white); }

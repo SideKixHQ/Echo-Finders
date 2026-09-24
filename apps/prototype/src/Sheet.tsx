@@ -62,6 +62,10 @@ interface Props {
   readonly onSeek: (fraction: number) => void;
   readonly onNext: () => void;
   readonly onStop: () => void;
+  /** Stopped, as opposed to paused. */
+  readonly stopped: boolean;
+  readonly voice: string | null;
+  readonly onVoice: (voiceId: string | null) => void;
   readonly rating: Rating | undefined;
   readonly onRating: (rating: Rating) => void;
   /** Open the camera on an echo. Only where there is one — a flight has no then-and-now. */
@@ -72,6 +76,28 @@ interface Props {
 }
 
 export type Detent = "peek" | "half" | "full";
+
+/**
+ * As tall as the sheet may be dragged, in pixels.
+ *
+ * Measured off the sheet's own container, not the window, and that is the whole bug. The
+ * sheet is absolutely positioned inside `.screen`; `window.innerHeight` is something else
+ * entirely, and on iOS Safari it reports the viewport *behind* the browser chrome, which
+ * `100dvh` does not. Dragging up therefore made the sheet taller than the screen it lives
+ * in, pushing its own grab handle above the top edge, where `.screen` clips it — the sheet
+ * was off the screen and the only control that could bring it back was off the screen with
+ * it. No way out but a reload.
+ *
+ * The nav bar and a thumb's worth of map are held back, so the handle is always on screen
+ * and there is always something of the map left to prove the sheet is a sheet.
+ */
+function maxHeight(handle: HTMLElement): number {
+  const screen = handle.closest(".screen");
+  const available = screen?.getBoundingClientRect().height ?? window.innerHeight;
+  const nav = 74;
+  const keepVisible = 56;
+  return Math.max(120, available - nav - keepVisible);
+}
 
 /** An echo on the saved list, and how far off it is. All a card needs. */
 export interface SavedEcho {
@@ -108,6 +134,9 @@ export function Sheet({
   onSeek,
   onNext,
   onStop,
+  stopped,
+  voice,
+  onVoice,
   rating,
   onRating,
   onCamera,
@@ -261,13 +290,18 @@ export function Sheet({
           if (!from) return;
           // Up is negative on screen and taller for a sheet, hence the flip.
           const next = from.startH + (from.startY - e.clientY);
-          setDragging(Math.max(120, Math.min(window.innerHeight * 0.88, next)));
+          setDragging(Math.max(120, Math.min(maxHeight(e.currentTarget), next)));
         }}
         onPointerUp={(e) => {
           const from = drag.current;
           drag.current = null;
-          if (from === null || dragging === null) return;
           e.currentTarget.releasePointerCapture(e.pointerId);
+          if (from === null || dragging === null) {
+            // Always clear the inline height. Leaving it set is how the sheet got stuck at
+            // whatever size a half-finished drag left it.
+            setDragging(null);
+            return;
+          }
           // A tap is not a drag. Under a few pixels of travel, cycle instead — the handle
           // should answer a tap, which is what most people try first.
           const moved = Math.abs(dragging - from.startH);
@@ -275,6 +309,12 @@ export function Sheet({
           setDragging(null);
         }}
         onPointerCancel={() => {
+          drag.current = null;
+          setDragging(null);
+        }}
+        /* A pointer that leaves without an up, which capture usually prevents and sometimes
+           does not. Without this the sheet keeps the inline height it had at that moment. */
+        onLostPointerCapture={() => {
           drag.current = null;
           setDragging(null);
         }}
@@ -335,6 +375,9 @@ export function Sheet({
           onLine={(delta) => onSeek(stepLine(lines, progress, delta))}
           onNext={onNext}
           onStop={onStop}
+          stopped={stopped}
+          voice={voice}
+          onVoice={onVoice}
           rating={rating}
           onRating={onRating}
         />

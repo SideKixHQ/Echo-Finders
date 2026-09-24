@@ -258,19 +258,27 @@ export class WalkSession {
   }
 
   /**
-   * Done with this one, and with the queue behind it.
+   * Stop the narration and go back to the beginning, keeping the echo.
    *
    * Distinct from `pause`, which keeps your place, and from `skip`, which moves on to the
-   * next thing. This is the control a listener wants when they have walked away from a
-   * place and no longer care how the story ends: the audio stops, the queue empties, and
-   * the session carries on watching for the next arrival.
+   * next thing. Stop is the third one people reach for: not now, but this is still the
+   * echo I am looking at.
    *
-   * The echoes are not un-synced. Stopping the narration has nothing to do with whether
-   * you stood somewhere, and the collection is a record of the standing.
+   * It used to empty the queue, which took the echo with it, and the transport vanished
+   * off the screen mid-tap. Stopping a story is not the same as being done with it, and a
+   * control whose effect is that the control disappears is not a control anybody will
+   * press twice. The item stays loaded and paused; the caller rewinds the playhead.
+   *
+   * `dropQueue` is for the case the old behaviour was written for, walking away from a
+   * place and not caring how any of it ends.
+   *
+   * The echoes are not un-synced either way. Stopping the narration has nothing to do with
+   * whether you stood somewhere, and the collection is a record of the standing.
    */
-  stopPlaying(): void {
+  stopPlaying(options: { readonly dropQueue?: boolean } = {}): void {
     this.deps.audio?.stop();
-    this.playback.clear();
+    if (options.dropQueue) this.playback.clear();
+    else this.playback.pause();
     this.emitPlayback();
   }
 

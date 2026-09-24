@@ -36,6 +36,11 @@ export interface PlayerProps {
   readonly onNext: () => void;
   /** Done with this one entirely. Not pause, which keeps your place. */
   readonly onStop: () => void;
+  /** Stopped, as opposed to paused: back at the start, on purpose. */
+  readonly stopped: boolean;
+  /** The narrator the listener picked, or null for the echo's own. */
+  readonly voice: string | null;
+  readonly onVoice: (voiceId: string | null) => void;
   /** Private, two-answer, never shown back as a score. See `ratings.ts`. */
   readonly rating: Rating | undefined;
   readonly onRating: (rating: Rating) => void;
@@ -58,6 +63,9 @@ export function Player({
   onLine,
   onNext,
   onStop,
+  stopped,
+  voice,
+  onVoice,
   rating,
   onRating,
 }: PlayerProps) {
@@ -193,13 +201,22 @@ export function Player({
         {/*
           Stop, beside next, because they are the two ways of being finished with something
           and a listener choosing between them is choosing between "not this one" and "not
-          right now". Pause is the orb; it keeps your place. This does not.
+          right now". Pause is the orb; it keeps your place. This goes back to the start and
+          stays on the echo.
+
+          It lights when it is the state you are in, because otherwise the only difference
+          between paused and stopped is a playhead reading 0:00, which is not a difference
+          anybody reads.
         */}
-        <button className="pill" onClick={onStop}>
+        <button
+          className={stopped ? "pill pill-stopped" : "pill"}
+          onClick={onStop}
+          aria-pressed={stopped}
+        >
           <svg viewBox="0 0 24 24">
             <rect x="6" y="6" width="12" height="12" rx="2" />
           </svg>
-          Stop
+          {stopped ? "Stopped" : "Stop"}
         </button>
         <button className="pill" onClick={onNext}>
           Next echo
@@ -259,12 +276,38 @@ export function Player({
         </button>
       </div>
 
-      <div className="narrator">
-        <svg viewBox="0 0 24 24">
+      {/*
+        The narrator, as a choice rather than a label.
+
+        This was a `<div>`: the name of the voice, and no way to change it. A voice is the
+        thing somebody listens to for forty minutes, and it was the one setting on this
+        screen that looked like a control and was not.
+
+        A `<select>`, as the design has it, because three options in a sheet that is already
+        dense should cost one row rather than three, and because the native control is the
+        one that works with a screen reader, a keyboard and a thumb without any help from
+        us. The first option keeps the echo's own, which stays the default: an echo written
+        for the children's narrator should arrive in it unless somebody says otherwise.
+      */}
+      <label className="narrator">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3zM5 11a7 7 0 0 0 14 0M12 18v3" />
         </svg>
-        {VOICE_LABEL[echo.voice ?? ""] ?? "Default narrator"}
-      </div>
+        <select
+          aria-label="Narrator"
+          value={voice ?? ""}
+          onChange={(e) => onVoice(e.target.value || null)}
+        >
+          <option value="">
+            {VOICE_LABEL[echo.voice ?? ""] ?? "Default narrator"} · as written
+          </option>
+          {Object.entries(VOICE_LABEL).map(([id, label]) => (
+            <option key={id} value={id}>
+              {label}
+            </option>
+          ))}
+        </select>
+      </label>
 
       <span className="sr-only">{playing ? "Playing" : "Paused"}</span>
     </div>

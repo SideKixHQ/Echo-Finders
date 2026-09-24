@@ -57,6 +57,8 @@ export function App() {
    * stand still at every one. Driving is hunting too; it just hunts at sixty.
    */
   const [roamMode, setRoamMode] = useState<"walking" | "driving">("walking");
+  /** A narrator the listener picked. Null keeps whichever the echo was written for. */
+  const [voice, setVoice] = useState<string | null>(null);
   /** Whether the journey screen actually resolved to a route, so "just drive" can roam. */
   const roamRouteChosen = useRef(false);
 
@@ -145,6 +147,7 @@ export function App() {
     paused,
     rate,
     roamMode,
+    voice,
     privacy,
     kids,
     simple,
@@ -301,6 +304,17 @@ export function App() {
   const nowPlaying = state.playback.kind === "idle" ? null : state.playback.item.echo;
 
   const playing = state.playback.kind === "playing";
+  /*
+   * Stopped is not paused, and the transport has to say which.
+   *
+   * The engine has one paused state, correctly: both are "an item, not making sound". The
+   * difference is what the listener meant, and that only this layer knows. It clears itself
+   * the moment anything starts again.
+   */
+  const [stopped, setStopped] = useState(false);
+  useEffect(() => {
+    if (playing) setStopped(false);
+  }, [playing]);
 
   useEffect(() => {
     if (!nowPlaying) {
@@ -670,7 +684,18 @@ export function App() {
                   state.playback.kind !== "idle" && state.playback.item.echo.id === id
                 }
                 onPause={() => session.pause()}
-                onResume={() => session.resume()}
+                onResume={() => {
+                  /*
+                   * Resuming a stopped echo is starting it, not un-pausing it.
+                   *
+                   * Stop cancels the utterance; there is nothing left to resume, so
+                   * `session.resume()` would move the progress bar over silence. Stopped
+                   * means back at the beginning, so play means play it.
+                   */
+                  if (stopped && nowPlaying) session.play(nowPlaying);
+                  else session.resume();
+                  setStopped(false);
+                }}
                 paused={state.playback.kind === "paused"}
                 upcoming={upcoming}
                 selfDirected={selfDirected}
@@ -695,7 +720,22 @@ export function App() {
                 detent={detent}
                 onDetent={setDetent}
                 onNext={() => session.skip()}
-                onStop={() => session.stopPlaying()}
+                stopped={stopped}
+                voice={voice}
+                onVoice={setVoice}
+                onStop={() => {
+                  /*
+                   * Stop, not "be done with it". The audio stops, the playhead goes back to
+                   * the start, and the echo stays exactly where it is, so pressing stop
+                   * does not make the thing you pressed disappear.
+                   */
+                  session.stopPlaying();
+                  if (nowPlaying) {
+                    startedRef.current = { id: nowPlaying.id, at: Date.now() };
+                  }
+                  setPlayhead(0);
+                  setStopped(true);
+                }}
                 rating={nowPlaying ? ratings[nowPlaying.id] : undefined}
                 onRating={(r) => nowPlaying && rateEcho(nowPlaying.id, r)}
                 {...(selfDirected ? { onCamera: setCamera } : {})}

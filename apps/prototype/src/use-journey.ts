@@ -116,6 +116,8 @@ export interface JourneyControls {
    * them to pull over at every one.
    */
   readonly roamMode?: TravelMode;
+  /** A narrator the listener picked, or null for whichever the echo was written for. */
+  readonly voice?: string | null;
   /** Speak the plain-language cut where one is written. Not a view setting — it is the audio. */
   readonly simple: boolean;
 }
@@ -146,6 +148,7 @@ export function useJourney(
     simple,
     gps,
     roamMode = "walking",
+    voice = null,
   }: JourneyControls,
 ) {
   /**
@@ -233,6 +236,9 @@ export function useJourney(
   useEffect(() => {
     speech.setSimple(simple);
   }, [speech, simple]);
+  useEffect(() => {
+    speech.setVoice(voice);
+  }, [speech, voice]);
 
   const session = useMemo(() => {
     // Stands in for Core Haptics on iOS. Here it only records what would have happened,
