@@ -232,9 +232,16 @@ body {
 }
 
 /* ── proximity bar: the haptic, made visible ─────────────── */
+/* A pill, centred, not a bar across the map.
+   Full width with a warm gradient sweeping through it, this was the loudest thing on the
+   screen and it was reporting the quietest fact. It also read as a banner, which invited
+   reading it, and the entire point of the hot-and-cold guidance is that it works with the
+   phone in a pocket. It says the same two things at a size that matches how much they
+   matter. */
 .proximity {
-  position: absolute; left: 14px; right: 14px; bottom: 306px; z-index: 25;
-  height: 46px; border-radius: 14px; overflow: hidden;
+  position: absolute; left: 50%; transform: translateX(-50%); z-index: 25;
+  bottom: 306px; max-width: calc(100% - 28px);
+  height: 34px; border-radius: 99px; overflow: hidden;
   background: rgba(var(--rgb-panel), 0.92); border: 1px solid var(--line);
   display: flex; align-items: center; padding: 0 14px;
   transition: opacity 0.25s var(--ease);
@@ -268,7 +275,10 @@ body {
 .proximity-colder .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(174, 181, 194, 0.22)); }
 .proximity-steady .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(155, 149, 255, 0.22)); }
 
-.proximity-label { position: relative; display: flex; justify-content: space-between; width: 100%; font-size: 12px; }
+.proximity-label {
+  position: relative; display: flex; align-items: baseline; gap: 8px;
+  white-space: nowrap; font-size: 11.5px;
+}
 .proximity-kind { font-weight: 500; letter-spacing: 0.02em; }
 .proximity-warmer .proximity-kind, .proximity-close .proximity-kind, .proximity-arrived .proximity-kind { color: var(--ember); }
 .proximity-colder .proximity-kind { color: var(--muted); }
@@ -2038,3 +2048,92 @@ body {
   margin: 18px 4px 0; text-align: center;
   font-family: "Space Grotesk", monospace; font-size: 10px; color: var(--muted);
 }
+
+/* ── The echo you tapped ──────────────────────────────────────────────────────
+   Over the map, above the sheet, in the guidance bar's slot. It is a card rather
+   than a bar because it carries a title, a place, a teaser and an action, and
+   because it is the one thing on this screen you are meant to read rather than
+   glance at. */
+.pop {
+  position: absolute; left: 14px; right: 14px; z-index: 26;
+  bottom: calc(var(--nav-h) + var(--sheet-h) + 10px);
+  padding: 13px 14px 12px; border-radius: 16px;
+  background: rgba(var(--rgb-panel), 0.96); border: 1px solid var(--line-2);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(14px);
+  animation: pop-in 0.18s var(--ease);
+}
+@keyframes pop-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pop { animation: none; }
+}
+
+/* Its own corner, clear of the title, and a real target rather than a glyph. */
+.pop-close {
+  position: absolute; top: 8px; right: 8px; width: 30px; height: 30px;
+  display: grid; place-items: center; border: 0; border-radius: 9px;
+  background: transparent; color: var(--muted); cursor: pointer;
+}
+.pop-close svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; }
+.pop-close:hover { color: var(--white); background: rgba(var(--rgb-hair), 0.1); }
+
+.pop-kicker {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: "Space Grotesk", monospace; font-size: 9px; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+}
+.pop-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+/* Room for the close button, so a long title does not run under it. */
+.pop h3 {
+  margin: 5px 34px 0 0; font-size: 14px; font-weight: 500;
+  line-height: 1.3; letter-spacing: -0.01em; color: var(--white);
+}
+.pop-where {
+  margin: 4px 0 0; font-size: 10px; color: var(--muted);
+  font-family: "Space Grotesk", monospace;
+}
+.pop-teaser {
+  margin: 8px 0 0; font-size: 11.5px; line-height: 1.5; color: var(--cool);
+}
+
+/* Not a button. There is nothing to press until you are standing there, and a
+   disabled play button is a small insult. */
+.pop-state {
+  margin: 11px 0 0; font-size: 11px; color: var(--muted);
+  font-family: "Space Grotesk", monospace;
+}
+.pop-state-near { color: var(--aqua); }
+
+.pop-go {
+  margin-top: 11px; width: 100%; min-height: 40px;
+  display: flex; align-items: center; justify-content: center; gap: 7px;
+  border: 0; border-radius: 99px; cursor: pointer; font: inherit;
+  font-size: 12.5px; font-weight: 600; color: #fff;
+  background: var(--indigo-btn);
+}
+.pop-go svg { width: 14px; height: 14px; fill: currentColor; }
+.pop-go:hover { filter: brightness(1.1); }
+
+.pop-save {
+  margin-top: 8px; width: 100%; min-height: 34px;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  border: 1px solid var(--line-2); border-radius: 99px; cursor: pointer;
+  font: inherit; font-size: 11px; color: var(--cool); background: transparent;
+}
+.pop-save svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
+.pop-save.on { color: var(--ember); border-color: rgba(255, 158, 18, 0.5); background: rgba(255, 158, 18, 0.1); }
+.pop-save.on svg { fill: currentColor; }
+
+/* The pin's real target. Invisible, and the only reason a pin tap lands: an SVG group
+   has no geometry, so without this the hit area is the 13px body circle. */
+.pin-hit { fill: transparent; }
+
+/* The control column stands down while an echo is open.
+   The popup spans the width and sat straight over the rail's lower buttons, so they were
+   on screen, lit, and unreachable. This is the same move the sheet already makes as it
+   rises: one thing has the map's attention at a time. */
+.screen:has(.pop) .rail { opacity: 0; pointer-events: none; }

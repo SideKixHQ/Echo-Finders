@@ -15,6 +15,7 @@ import { RouteRibbon } from "./RouteRibbon";
 import { CategoryChips } from "./CategoryChips";
 import { Arrival } from "./Arrival";
 import { Preflight } from "./Preflight";
+import { EchoPopup } from "./EchoPopup";
 import { Viewfinder } from "./Viewfinder";
 import { Onboarding } from "./Onboarding";
 import { loadRatings, setRating, type Rating } from "./ratings";
@@ -72,9 +73,22 @@ export function App() {
   const [autoPlay, setAutoPlay] = useState(false);
   const [chosen, setChosen] = useState<ReadonlySet<string>>(new Set());
   const [cats, setCats] = useState<ReadonlySet<EchoCategory> | null>(null);
-  // The journey has not been chosen yet. The design opens here, and so does this: a package
-  // that downloads at the gate is the difference between working and not (ADR-0003).
-  const [started, setStarted] = useState(false);
+  /*
+   * The map is the app, so the map is what opens.
+   *
+   * This used to be `false`, which put the package screen in front of everything as a gate:
+   * a modal over a blurred map asking you to pick a route and agree to a download before
+   * you were allowed to look at anything. That is the wrong shape for a product whose whole
+   * proposition is "open it and see what is around you", and it made the first thing anyone
+   * saw a form.
+   *
+   * The package screen still exists and still matters, because a walk with no signal needs
+   * one (ADR-0003). It is now something you go to, from the rail, rather than something that
+   * happens to you.
+   */
+  const [packageOpen, setPackageOpen] = useState(false);
+  /** Whether this journey has actually been taken onto the device. */
+  const [downloaded, setDownloaded] = useState(false);
   const [simple, setSimple] = useState(false);
   /**
    * Kids mode, for the whole app rather than for a list.
@@ -118,7 +132,7 @@ export function App() {
     // Undefined rather than an empty set when nothing has been picked: no choice made means
     // no restriction, while an empty choice means "I chose nothing" and is honoured.
     chosen: chosen.size > 0 ? chosen : undefined,
-    paused: paused || !started,
+    paused,
     rate,
     privacy,
     kids,
@@ -466,7 +480,7 @@ export function App() {
       return next;
     });
   }, []);
-  const openPackage = useCallback(() => setStarted(false), []);
+  const openPackage = useCallback(() => setPackageOpen(true), []);
   const setKidsMode = useCallback((on: boolean) => {
     setKids(on);
     setSimple(on);
@@ -536,6 +550,24 @@ export function App() {
       .sort((a, b) => at(a.echo.id) - at(b.echo.id));
   }, [state.nearby, activeCats, alongKm]);
 
+  /**
+   * The echo whose pin is open, and how far off it is.
+   *
+   * `nearby` first, because that already carries a measured distance. A pin can be selected
+   * from outside that set though — the map draws everything in the corridor, not only what
+   * is within reach — so the fallback measures it, and reports null rather than zero when
+   * there is no fix yet. Zero would read as "you are standing on it".
+   */
+  const selectedEcho = useMemo(() => {
+    if (!selectedId) return null;
+    const near = state.nearby.find((n) => n.echo.id === selectedId);
+    if (near) return { echo: near.echo, distanceKm: near.distanceKm };
+    const echo = LIBRARY.find((e) => e.id === selectedId);
+    if (!echo) return null;
+    const from = state.position?.at ?? null;
+    return { echo, distanceKm: from ? distanceKm(from, echo.point.at) : null };
+  }, [selectedId, state.nearby, state.position]);
+
   const inCorridor = onRoute.length;
 
   return (
@@ -588,10 +620,31 @@ export function App() {
                 onKids={setKidsMode}
                 overview={overview}
                 onOverview={setOverview}
-                downloaded={started}
+                downloaded={downloaded}
                 onDownload={openPackage}
               />
-              {selfDirected && <ProximityBar guidance={state.guidance} cue={state.cue} />}
+              {/*
+                The echo you tapped, over the map.
+                It replaces the guidance bar while it is open rather than stacking with it:
+                two strips saying how far away something is, one of them about a different
+                echo, is how a screen stops meaning anything.
+              */}
+              {selectedEcho ? (
+                <EchoPopup
+                  echo={selectedEcho.echo}
+                  distanceKm={selectedEcho.distanceKm}
+                  state={stateOf(selectedEcho.echo.id)}
+                  saved={chosen.has(selectedEcho.echo.id)}
+                  onSave={toggleSave}
+                  onPlay={(echo) => {
+                    session.play(echo);
+                    setSelectedId(null);
+                  }}
+                  onClose={() => setSelectedId(null)}
+                />
+              ) : (
+                selfDirected && <ProximityBar guidance={state.guidance} cue={state.cue} />
+              )}
               <Sheet
                 nearby={nearby}
                 lastCapture={state.lastCapture}
@@ -749,13 +802,11 @@ export function App() {
               onDone={(roam) => {
                 setRoaming(roam);
                 finishOnboarding();
-                // Roaming skips the package screen entirely: there is nothing to carry.
-                if (roam) setStarted(true);
               }}
             />
           )}
 
-          {onboarded && !started && (
+          {onboarded && packageOpen && (
             <Preflight
               routes={ROUTES}
               counts={corridorCounts}
@@ -768,7 +819,8 @@ export function App() {
               onChoose={() => setPlanOpen(true)}
               onStart={(next) => {
                 if (next.id !== route.id) onSelectRoute(next);
-                setStarted(true);
+                setDownloaded(true);
+                setPackageOpen(false);
                 setOverview(false);
               }}
             />
@@ -872,7 +924,7 @@ export function App() {
           <button
             onClick={() => {
               walk?.seekTo(0);
-              setStarted(false);
+              setPackageOpen(true);
             }}
           >
             Back to start

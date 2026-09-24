@@ -71,6 +71,19 @@ interface Props {
  * surface this draws on is 368×822 — the viewBox was the outer figure, which quietly scaled
  * every inset below by about three percent and put them all slightly in the wrong place.
  */
+/*
+ * Only a starting guess now, and the reason this comment is longer than the constants.
+ *
+ * These were the viewBox, fixed, on every phone. An SVG whose viewBox does not match the
+ * shape of the box it is in gets letterboxed: at 430x900 the content scaled to 403 wide and
+ * sat centred, so the basemap had a navy gutter down each side and every constant below was
+ * rendering about ten percent larger than it says. MAPBAR_H of 119 landed at 130. That is
+ * the whole reason the map read as a panel inside the app rather than as the app.
+ *
+ * The viewBox now tracks the element's real pixel size, so one SVG unit is one CSS pixel
+ * and these numbers mean what they say. They stay as the first paint's guess, before the
+ * observer has measured anything.
+ */
 const W = 368;
 const H = 822;
 
@@ -114,9 +127,9 @@ const MAPBAR_H = 119;
  * be looking. Carried modes do not draw it and get the height back.
  */
 const GUIDE_H = 56;
-const insetFor = (detent: keyof typeof SHEET_FRACTION, guided: boolean) => ({
+const insetFor = (detent: keyof typeof SHEET_FRACTION, guided: boolean, h: number) => ({
   top: MAPBAR_H + PIN_R / 2,
-  bottom: NAV_H + H * SHEET_FRACTION[detent] + (guided ? GUIDE_H : 0) + PIN_R / 2,
+  bottom: NAV_H + h * SHEET_FRACTION[detent] + (guided ? GUIDE_H : 0) + PIN_R / 2,
   side: 30,
 });
 
@@ -232,6 +245,31 @@ export function RouteMap({
    * this is built and reviewed.
    */
   const svg = useRef<SVGSVGElement | null>(null);
+
+  /**
+   * The map's own size, in CSS pixels, so the viewBox can be it.
+   *
+   * See the note on `W`/`H`. Without this the map is the one element in the app that does
+   * not fit its container, and it fails in the way that is hardest to name: everything is
+   * there, slightly too big, with a margin nobody asked for.
+   */
+  const [box, setBox] = useState({ w: W, h: H });
+  useEffect(() => {
+    const el = svg.current;
+    if (!el || typeof ResizeObserver === "undefined") return;
+    const observer = new ResizeObserver((entries) => {
+      const rect = entries[0]?.contentRect;
+      if (!rect || rect.width < 1 || rect.height < 1) return;
+      setBox((current) =>
+        Math.abs(current.w - rect.width) < 0.5 && Math.abs(current.h - rect.height) < 0.5
+          ? current
+          : { w: Math.round(rect.width), h: Math.round(rect.height) },
+      );
+    });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   useEffect(() => {
     const el = svg.current;
     if (!el) return;
@@ -251,12 +289,12 @@ export function RouteMap({
   const geometry = useMemo(() => (route ? buildRouteGeometry(route) : null), [route]);
 
   const projection = useMemo(() => {
-    const INSET = insetFor(detent, presetFor(mode).selfDirected);
+    const INSET = insetFor(detent, presetFor(mode).selfDirected, box.h);
 
     // The band actually visible between the chips and the sheet. The listener belongs in
     // the middle of *that*, not the middle of a box that is half covered.
-    const usableW = W - INSET.side * 2;
-    const usableH = H - INSET.top - INSET.bottom;
+    const usableW = box.w - INSET.side * 2;
+    const usableH = box.h - INSET.top - INSET.bottom;
     const centreX = INSET.side + usableW / 2;
     const centreY = INSET.top + usableH / 2;
 
@@ -295,13 +333,13 @@ export function RouteMap({
      * actually on screen — from under the chips down to the top of the sheet.
      */
     const bandTop = MAPBAR_H;
-    const bandBottom = H - NAV_H - H * SHEET_FRACTION[detent];
+    const bandBottom = box.h - NAV_H - box.h * SHEET_FRACTION[detent];
     const plan = planTiles(
       centre,
       spanKm,
       usableW,
       usableH,
-      { x: 0, y: bandTop, w: W, h: Math.max(0, bandBottom - bandTop) },
+      { x: 0, y: bandTop, w: box.w, h: Math.max(0, bandBottom - bandTop) },
       { x: centreX, y: centreY },
     );
     const world = (p: LatLng) => toWorld(p.lat, p.lng, plan.zoom);
@@ -318,7 +356,7 @@ export function RouteMap({
     // computed twice and drifting.
     project.plan = plan;
     return project;
-  }, [mode, geometry, library, at, overview, detent, zoom]);
+  }, [mode, geometry, library, at, overview, detent, zoom, box]);
 
   const path = useMemo(() => {
     if (!geometry) return "";
@@ -362,7 +400,7 @@ export function RouteMap({
   return (
     <svg
       className="map"
-      viewBox={`0 0 ${W} ${H}`}
+      viewBox={`0 0 ${box.w} ${box.h}`}
       role="img"
       aria-label="Walking route"
       /* Exposed so a test can assert the gesture actually moved it, rather than
@@ -454,7 +492,7 @@ export function RouteMap({
         {/* Pins outside the map's own band used to draw straight over the route ribbon and
             the category chips, which float above it with no background of their own. The
             sheet covers the bottom edge already; this is the top. */}
-        <rect x="0" y={MAPBAR_H} width={W} height={H - MAPBAR_H} />
+        <rect x="0" y={MAPBAR_H} width={box.w} height={box.h - MAPBAR_H} />
       </clipPath>
       <g clipPath="url(#mapBand)">
       {/* No line when roaming. A route drawn through echoes somebody has not agreed to
@@ -481,6 +519,17 @@ export function RouteMap({
             role="button"
             aria-label={echo.title}
           >
+            {/*
+              Something to actually hit.
+              A `<g>` has no geometry of its own, so an SVG tap only lands if it hits a
+              child — and the only solid child here is a 13px circle. Tapping a pin
+              therefore worked when you were accurate to about six pixels and silently did
+              nothing otherwise, which is most taps on a pavement and, it turns out, every
+              synthetic one: the bounding box includes the ripple rings, so its centre is
+              not the pin. This is a 44px target, invisible, concentric with the pin.
+            */}
+            <circle className="pin-hit" r="22" />
+
             {(state === "opening" || selected) && (
               <circle className="pin-radius" r={Math.max(radiusPx, 10)} />
             )}
@@ -548,11 +597,13 @@ export function RouteMap({
         strip of map is on screen, above the guidance bar, which is where every map on the
         web puts it.
       */}
+      {/* Left, not right: the control column lives on the right and the credit was being
+          drawn straight through it, one unreadable line over three buttons. */}
       <text
         className="map-credit"
-        x={W - 10}
-        y={H - insetFor(detent, presetFor(mode).selfDirected).bottom + 2}
-        textAnchor="end"
+        x={10}
+        y={box.h - insetFor(detent, presetFor(mode).selfDirected, box.h).bottom + 2}
+        textAnchor="start"
       >
         {TILE_ATTRIBUTION}
       </text>

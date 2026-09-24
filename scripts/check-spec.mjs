@@ -162,13 +162,22 @@ await phase('playing', async () => {
   await p.waitForTimeout(2200);
 });
 /*
- * The design's full card lives on the package screen, which is reached from the start
- * screen rather than from the map. Onboarding is behind a stored flag, so a reload lands
- * straight on it.
+ * The design's full card lives on the package screen, which is now somewhere you go rather
+ * than a gate you pass: the map opens first, and the package is behind the rail's download
+ * button. The sheet has to come down first, because the control column fades as it rises.
  */
 await phase('plan', async () => {
-  await p.reload({ waitUntil: 'domcontentloaded' });
-  await p.waitForTimeout(1200);
+  // An open echo stands the rail down, which is deliberate. Close it first.
+  if (await p.locator('.pop-close').count()) {
+    await p.locator('.pop-close').click();
+    await p.waitForTimeout(300);
+  }
+  for (let i = 0; i < 4 && !(await p.locator('.sheet-peek').count()); i++) {
+    await p.locator('.grab-zone').click();
+    await p.waitForTimeout(500);
+  }
+  await p.getByLabel(/Download this journey|Your journey/).click();
+  await p.waitForTimeout(700);
   await p.locator('.pf-alt').first().click();
   await p.waitForTimeout(700);
 });
