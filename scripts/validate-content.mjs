@@ -6,6 +6,9 @@
  * than reaching a listener. The rules themselves live in `@echofinders/core` and are
  * tested there; this script only finds the files, parses the YAML and prints the result.
  *
+ * It also enforces the one house style rule that is not in `@echofinders/core`, because it
+ * is about writing rather than about the model: no dashes in anything a listener reads.
+ *
  * Exits non-zero on any error. Warnings are printed and tolerated — they are advice to an
  * editor, not a broken library.
  */
@@ -54,6 +57,37 @@ for await (const path of walk(ECHO_DIR)) {
   const { echo, issues: parseIssues } = parseEcho(raw, rel);
   issues.push(...parseIssues.map((i) => ({ ...i, file: rel })));
   if (echo) echoes.push({ echo, file: rel });
+}
+
+/**
+ * House style: no dashes.
+ *
+ * Not a preference about typography. A dash is the punctuation you reach for when you have
+ * not decided what the relationship between two clauses is, and the writing gets vaguer
+ * every time one goes in. A full stop, a comma or a colon each commit to something.
+ *
+ * Cited document titles are exempt, and only them: "Blue Ridge Parkway — Linville Falls" is
+ * the actual title of somebody else's record, and editing it would make the citation wrong.
+ * Everything a listener reads or hears is ours and follows the rule.
+ *
+ * Hyphens inside words are not dashes. "Thirty-five" is one word with a hyphen in it.
+ */
+const DASH = /[\u2014\u2013]/;
+const PROSE = ["title", "teaser", "summary", "script"];
+for (const { echo, file } of echoes) {
+  const fields = [
+    ...PROSE.map((f) => [f, echo[f]]),
+    ["simple.script", echo.simple?.script],
+    ["point.place", echo.point?.place],
+  ];
+  for (const [field, text] of fields) {
+    if (typeof text !== "string" || !DASH.test(text)) continue;
+    const line = text.split("\n").find((l) => DASH.test(l)) ?? text;
+    issues.push({
+      echoId: echo.id, file, severity: "error", field,
+      message: `dash in copy (house style): ${line.trim().slice(0, 72)}`,
+    });
+  }
 }
 
 const report = validateLibrary(echoes.map((e) => e.echo));

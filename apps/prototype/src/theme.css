@@ -883,9 +883,14 @@ body {
 .tsearch svg { width: 15px; height: 15px; flex: none; fill: none; stroke: var(--muted); stroke-width: 1.8; }
 /* 15px tall is not a target. The input keeps its look and gains a thumb's worth of
    height, which also stops the caret sitting flush against the border. */
+/* No `outline: none` here. It was written to stop the browser's default ring breaking the
+   composed look of the search row, and what it actually did was beat the blanket
+   `:where(...):focus-visible` rule — one class and one element against zero specificity —
+   in every state, so this input had no keyboard focus indicator at all (WCAG 2.4.7). The
+   default ring only ever shows on focus anyway, so there was nothing to suppress. */
 .tsearch input {
   min-height: 26px;
-  flex: 1; background: none; border: 0; outline: none;
+  flex: 1; background: none; border: 0;
   font: inherit; font-size: 12.5px; color: var(--white);
 }
 .tsearch input::placeholder { color: var(--muted); }
@@ -1950,7 +1955,12 @@ body {
   font-family: "Space Grotesk", monospace; letter-spacing: 0.06em;
 }
 .onb-field::placeholder { color: var(--muted); letter-spacing: 0; font-family: inherit; }
-.onb-field:focus { outline: none; border-color: var(--aqua); }
+/* The aqua border is the pointer-focus treatment and it is enough for a tap. It is not
+   enough for a keyboard, where a 1px border change on a dark field is the only thing
+   saying where you are, so the ring stays for `:focus-visible` and goes for everything
+   else. */
+.onb-field:focus { border-color: var(--aqua); }
+.onb-field:focus:not(:focus-visible) { outline: none; }
 .onb-alt-left { text-align: left; padding-left: 2px; }
 .onb-route {
   padding: 14px 15px; border-radius: 14px; margin: 6px 0 16px;

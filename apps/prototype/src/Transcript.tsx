@@ -74,6 +74,9 @@ export function Transcript({ echo, simple, progress, onSeek }: TranscriptProps) 
           <button
             key={line.index}
             className={line.index === current ? "tline tline-on" : "tline"}
+            /* The line being narrated. `aria-current` rather than `aria-pressed`: this is
+               not a thing you switched on, it is where the narration has got to. */
+            {...(line.index === current ? { "aria-current": true as const } : {})}
             onClick={() => onSeek(line.from)}
           >
             {line.text}

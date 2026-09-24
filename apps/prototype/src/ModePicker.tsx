@@ -52,6 +52,7 @@ export function ModePicker({ routes, selected, onSelect, counts }: ModePickerPro
             <button
               key={mode}
               className={mode === selected.mode ? "mode on" : "mode"}
+              aria-pressed={mode === selected.mode}
               onClick={() => onSelect(best)}
             >
               {label?.name ?? mode}
@@ -66,6 +67,7 @@ export function ModePicker({ routes, selected, onSelect, counts }: ModePickerPro
             <button
               key={route.id}
               className={route.id === selected.id ? "route on" : "route"}
+              aria-pressed={route.id === selected.id}
               onClick={() => onSelect(route)}
             >
               {route.name ?? route.id}

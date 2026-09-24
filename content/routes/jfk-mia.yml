@@ -9,7 +9,7 @@
 # reason — the listening is over at the gate.
 id: jfk-mia
 mode: flight
-name: New York to Miami — down the seaboard
+name: "New York to Miami: down the seaboard"
 
 origin:
   code: JFK

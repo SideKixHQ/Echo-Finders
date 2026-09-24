@@ -44,7 +44,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "In 1991 the federal government began digging foundations for an office tower at Broadway\nand Duane, and about seven metres down the crews found bone.\n\nWhat lay beneath the block was a cemetery. From the late sixteen-hundreds into the\nseventeen-nineties, free and enslaved Africans in this city had buried their dead in a\npatch of ground outside the settlement's boundary — roughly six and a half acres of it.\nLater New York built over the site and forgot. Estimates put the number of burials around\nfifteen thousand.\n\nFour hundred and nineteen men, women and children were recovered from the part that was\nexcavated. Their descendants and this city's Black community fought to stop the\nconstruction, and won. The remains were studied, then reinterred here in 2003.\n\nIt is the earliest and largest African burial ground yet found in the United States, and\nit existed partly because of a rule: from 1697, Africans were barred from the city's main\nburial ground. So they made their own, out past the edge of town.\n\nYou are standing at the edge of town.\n",
+    "script": "In 1991 the federal government began digging foundations for an office tower at Broadway\nand Duane, and about seven metres down the crews found bone.\n\nWhat lay beneath the block was a cemetery. From the late sixteen-hundreds into the\nseventeen-nineties, free and enslaved Africans in this city had buried their dead in a\npatch of ground outside the settlement's boundary, roughly six and a half acres of it.\nLater New York built over the site and forgot. Estimates put the number of burials around\nfifteen thousand.\n\nFour hundred and nineteen men, women and children were recovered from the part that was\nexcavated. Their descendants and this city's Black community fought to stop the\nconstruction, and won. The remains were studied, then reinterred here in 2003.\n\nIt is the earliest and largest African burial ground yet found in the United States, and\nit existed partly because of a rule: from 1697, Africans were barred from the city's main\nburial ground. So they made their own, out past the edge of town.\n\nYou are standing at the edge of town.\n",
     "teaser": "Twenty-four feet below the pavement.",
     "detail": "The memorial occupies a fraction of the original site; most of the burial ground remains\nunder the surrounding streets and buildings. It was designated a National Monument in\n2006.\n",
     "voice": "wC1005J19tvhoqqC2hkf",
@@ -101,7 +101,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Down on your right, that pale line running along the back of the beach.\n\nBoardwalks exist everywhere now. That one is where the idea came from, and it was not\nbuilt for strolling.\n\nIn eighteen seventy the hotels and the railway on that beachfront had the same complaint:\nguests walked in off the sand and brought most of the beach with them, into the lobbies,\nonto the carpets, into the railway carriages. Sweeping it out was a full-time job.\n\nSo a conductor and a hotelier proposed a wooden walkway, laid straight onto the sand, that\npeople would use because it was easier than not using it.\n\nIt was taken up every autumn and stored for the winter.\n\nEverything else that word now means — the piers, the postcards, the amusements — grew on\ntop of a solution to a cleaning problem.\n",
+    "script": "Down on your right, that pale line running along the back of the beach.\n\nBoardwalks exist everywhere now. That one is where the idea came from, and it was not\nbuilt for strolling.\n\nIn eighteen seventy the hotels and the railway on that beachfront had the same complaint:\nguests walked in off the sand and brought most of the beach with them, into the lobbies,\nonto the carpets, into the railway carriages. Sweeping it out was a full-time job.\n\nSo a conductor and a hotelier proposed a wooden walkway, laid straight onto the sand, that\npeople would use because it was easier than not using it.\n\nIt was taken up every autumn and stored for the winter.\n\nEverything else that word now means, the piers and the postcards and the\namusements, grew on top of a solution to a cleaning problem.\n",
     "teaser": "The pale line along the beach below is the original of its kind.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
@@ -177,7 +177,7 @@ export const LIBRARY: readonly Echo[] = [
         "bearingDeg": 155,
         "year": 1905,
         "caption": "Bowling Green and the Custom House",
-        "credit": "DEMO stand-in — no archive plate sourced yet",
+        "credit": "DEMO stand-in, no archive plate sourced yet",
         "rights": "public-domain"
       }
     ],
@@ -218,7 +218,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The cape below you is where nearly everything the United States has ever launched went up.\n\nThe reason it is there and not in Nevada comes down to two things, and neither is the\nweather.\n\nThe first is the ocean. Rockets go east, and everything that falls off one on the way —\nspent stages, and occasionally the whole thing — has to fall somewhere that is not a town.\nEast of that cape there is nothing but water for three thousand miles.\n\nThe second is that the Earth is already turning. At that latitude the ground is moving\neast at about nine hundred miles an hour. Launch in the same direction and you start with\nthat speed for free.\n\nThe closer to the equator, the more you get. That is most of the reason the map of the\nworld's launch sites looks the way it does.\n",
+    "script": "The cape below you is where nearly everything the United States has ever launched went up.\n\nThe reason it is there and not in Nevada comes down to two things, and neither is the\nweather.\n\nThe first is the ocean. Rockets go east, and everything that falls off one on the way,\nspent stages and occasionally the whole thing, has to fall somewhere that is not a town.\nEast of that cape there is nothing but water for three thousand miles.\n\nThe second is that the Earth is already turning. At that latitude the ground is moving\neast at about nine hundred miles an hour. Launch in the same direction and you start with\nthat speed for free.\n\nThe closer to the equator, the more you get. That is most of the reason the map of the\nworld's launch sites looks the way it does.\n",
     "teaser": "The cape below is where almost everything the United States has launched went up.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
@@ -264,7 +264,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look down at the pavement.\n\nSet into it along this stretch of Broadway are thin strips of granite, each one naming a\ndate and a person. There are more than two hundred of them.\n\nEvery strip is a ticker-tape parade. The first was in 1886, for the dedication of the\nStatue of Liberty, and nobody organised it — clerks in the offices above started throwing\nthe used tape from their stock tickers out of the windows, because they could not think\nof anything better to do.\n\nNobody has used ticker tape since the 1960s. They shred paper for it now.\n\nSo this is a canyon named after confetti, which was named after rubbish.\n",
+    "script": "Look down at the pavement.\n\nSet into it along this stretch of Broadway are thin strips of granite, each one naming a\ndate and a person. There are more than two hundred of them.\n\nEvery strip is a ticker-tape parade. The first was in 1886, for the dedication of the\nStatue of Liberty, and nobody organised it. Clerks in the offices above started throwing\nthe used tape from their stock tickers out of the windows, because they could not think\nof anything better to do.\n\nNobody has used ticker tape since the 1960s. They shred paper for it now.\n\nSo this is a canyon named after confetti, which was named after rubbish.\n",
     "teaser": "Look down at the pavement.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
@@ -282,7 +282,7 @@ export const LIBRARY: readonly Echo[] = [
         "bearingDeg": 308,
         "year": 1927,
         "caption": "Lower Broadway during a reception",
-        "credit": "DEMO stand-in — no archive plate sourced yet",
+        "credit": "DEMO stand-in, no archive plate sourced yet",
         "rights": "public-domain"
       }
     ],
@@ -335,7 +335,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the steps in front of the gate. Not the house — the steps.\n\nAt about a quarter to nine on the morning of the fifteenth of July, nineteen ninety-seven,\nGianni Versace came back up Ocean Drive carrying his magazines and stopped here to open\nhis own front door.\n\nA man walked up behind him and fired twice. Versace was fifty. He did not get through the\ndoor.\n\nPolice identified the man who shot him as Andrew Cunanan, already on the FBI's Ten Most\nWanted list. Eight days later Cunanan was found dead on a houseboat two miles north of\nwhere you are standing. He was never tried. He left nothing behind explaining any of it,\nand no motive has ever been established.\n\nBy the time he reached Miami Beach, four other people were already dead. Jeffrey Trail.\nDavid Madson. Lee Miglin. William Reese.\n\nThis address is famous because of who died at it.\n\nNobody stands outside the other four.\n",
+    "script": "Look at the steps in front of the gate. Not the house. The steps.\n\nAt about a quarter to nine on the morning of the fifteenth of July, nineteen ninety-seven,\nGianni Versace came back up Ocean Drive carrying his magazines and stopped here to open\nhis own front door.\n\nA man walked up behind him and fired twice. Versace was fifty. He did not get through the\ndoor.\n\nPolice identified the man who shot him as Andrew Cunanan, already on the FBI's Ten Most\nWanted list. Eight days later Cunanan was found dead on a houseboat two miles north of\nwhere you are standing. He was never tried. He left nothing behind explaining any of it,\nand no motive has ever been established.\n\nBy the time he reached Miami Beach, four other people were already dead. Jeffrey Trail.\nDavid Madson. Lee Miglin. William Reese.\n\nThis address is famous because of who died at it.\n\nNobody stands outside the other four.\n",
     "teaser": "Look at the steps in front of the gate. Not the house.",
     "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
@@ -360,7 +360,7 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": true,
       "convictionStatus": "alleged",
-      "reviewedBy": "TODO — a named human, before this can leave draft. See the note below.",
+      "reviewedBy": "TODO: a named human, before this can leave draft. See the note below.",
       "reviewedAt": "2026-09-22",
       "contentWarning": "This echo describes a murder. No violence is described in detail."
     },
@@ -409,7 +409,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The round sandstone building ahead of you was built to stop an invasion that never came.\n\nIt went up between 1808 and 1811, out on a small island off the tip of Manhattan, its\nguns pointed down the harbour at a British fleet everyone expected and nobody saw. The\nlandfill came later. So did almost everything else it has been.\n\nBecause in 1855 the fort became a door. On the first of August that year it opened as the\nEmigrant Landing Depot — the first immigration station in the United States, run by the\nState of New York — and over the next thirty-five years something like eight million\npeople walked through it and out into the rest of their lives. Nikola Tesla came through\nhere. So did Harry Houdini, and Emma Goldman, and Joseph Pulitzer.\n\nIn 1890 the federal government took the job over, and two years later moved it to a\nbigger island further out, where the ferries go now. The fort stayed, and became other\nthings again: a beer garden, a theatre, an aquarium.\n\nEight million arrivals, and almost nobody stops here. Most people walk past it to queue\nfor the boat.\n",
+    "script": "The round sandstone building ahead of you was built to stop an invasion that never came.\n\nIt went up between 1808 and 1811, out on a small island off the tip of Manhattan, its\nguns pointed down the harbour at a British fleet everyone expected and nobody saw. The\nlandfill came later. So did almost everything else it has been.\n\nBecause in 1855 the fort became a door. On the first of August that year it opened as the\nEmigrant Landing Depot, the first immigration station in the United States, run by\nthe State of New York, and over the next thirty-five years something like eight million\npeople walked through it and out into the rest of their lives. Nikola Tesla came through\nhere. So did Harry Houdini, and Emma Goldman, and Joseph Pulitzer.\n\nIn 1890 the federal government took the job over, and two years later moved it to a\nbigger island further out, where the ferries go now. The fort stayed, and became other\nthings again: a beer garden, a theatre, an aquarium.\n\nEight million arrivals, and almost nobody stops here. Most people walk past it to queue\nfor the boat.\n",
     "teaser": "Before Ellis Island, there was this.",
     "detail": "The fort has had at least five lives: coastal battery, public promenade and entertainment\nhall, immigration depot, city aquarium, and finally a national monument. Jenny Lind gave\nher first American concert in it in 1850.\n",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
@@ -444,7 +444,7 @@ export const LIBRARY: readonly Echo[] = [
         "bearingDeg": 78,
         "year": 1900,
         "caption": "The landing depot at Battery Park",
-        "credit": "DEMO stand-in — no archive plate sourced yet",
+        "credit": "DEMO stand-in, no archive plate sourced yet",
         "rights": "public-domain"
       }
     ],
@@ -486,7 +486,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Nobody commissioned this.\n\nIn December 1989, two years after the crash, a sculptor called Arturo Di Modica drove a\nlorry to Wall Street in the middle of the night and left three and a half tonnes of bronze\noutside the Stock Exchange. He had paid for it himself. It was, legally speaking,\nfly-tipping.\n\nThe city removed it within hours. The public objected loudly enough that it was put back a\nfew days later, here, a couple of streets from where he left it — on a temporary permit\nthat has now lasted more than thirty years.\n",
+    "script": "Nobody commissioned this.\n\nIn December 1989, two years after the crash, a sculptor called Arturo Di Modica drove a\nlorry to Wall Street in the middle of the night and left three and a half tonnes of bronze\noutside the Stock Exchange. He had paid for it himself. It was, legally speaking,\nfly-tipping.\n\nThe city removed it within hours. The public objected loudly enough that it was put back a\nfew days later, here, a couple of streets from where he left it, on a temporary permit\nthat has now lasted more than thirty years.\n",
     "teaser": "Nobody gave permission for this.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "pronunciations": [
@@ -538,7 +538,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This was not a park. It was the Common — the rough field outside town where you put the\nthings nobody wanted near them. A poorhouse. A prison. A gallows.\n\nOn the ninth of July 1776, George Washington had his army formed up on this ground, in\nsquares, and had an officer read out a document that had arrived from Philadelphia five\ndays earlier.\n\nThere is no record of the soldiers being told to do anything afterwards.\n\nWhat they did was walk down Broadway, about a mile, to the little green at the bottom of\nthe island, and pull a two-ton gilded statue of the king off its plinth.\n\nWashington was not pleased. He put out an order the next morning calling it disorderly,\nand asking that in future such matters be left to the proper authorities.\n\nThe war he had just read them into lasted another seven years.\n",
+    "script": "This was not a park. It was the Common, the rough field outside town where you put the\nthings nobody wanted near them. A poorhouse. A prison. A gallows.\n\nOn the ninth of July 1776, George Washington had his army formed up on this ground, in\nsquares, and had an officer read out a document that had arrived from Philadelphia five\ndays earlier.\n\nThere is no record of the soldiers being told to do anything afterwards.\n\nWhat they did was walk down Broadway, about a mile, to the little green at the bottom of\nthe island, and pull a two-ton gilded statue of the king off its plinth.\n\nWashington was not pleased. He put out an order the next morning calling it disorderly,\nand asking that in future such matters be left to the proper authorities.\n\nThe war he had just read them into lasted another seven years.\n",
     "teaser": "This was not a park.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
@@ -590,7 +590,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the tops of the ridges around you. The trees stop, and then there is grass.\n\nThat is odd. These summits are nowhere near high enough to be above the tree line —\nthere are forests on mountains twice this height. Something else is keeping them bare.\n\nThey are called balds, and after a century of argument there is still no agreed\nexplanation. Cattle grazing is the obvious one, except some were bare before the cattle.\nFire. Ice-age climate that never quite reverted. Grazing by animals that are extinct.\n\nWhat is agreed is that they are closing. Without something to keep them open, the forest\ncomes back, and it has been coming back for decades.\n\nSo the mystery is solving itself, in the least useful way.\n",
+    "script": "Look at the tops of the ridges around you. The trees stop, and then there is grass.\n\nThat is odd. These summits are nowhere near high enough to be above the tree line.\nThere are forests on mountains twice this height. Something else is keeping them bare.\n\nThey are called balds, and after a century of argument there is still no agreed\nexplanation. Cattle grazing is the obvious one, except some were bare before the cattle.\nFire. Ice-age climate that never quite reverted. Grazing by animals that are extinct.\n\nWhat is agreed is that they are closing. Without something to keep them open, the forest\ncomes back, and it has been coming back for decades.\n\nSo the mystery is solving itself, in the least useful way.\n",
     "teaser": "Look at the tops of the ridges. Something is missing.",
     "certaintyNote": "Grazing, fire, ice-age climate and megafauna browsing have all been proposed. No single explanation is accepted, and the script says so rather than picking one.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
@@ -643,7 +643,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look across the street, into the park. Those trees are Strawberry Fields. It is about a\nthree-minute walk, and you are going to make it in a moment.\n\nBehind you is the Dakota. John Lennon lived here with Yoko Ono and their son. Yoko Ono\nlives here still — this is not a monument, it is a building full of people's homes, so\nstay on the pavement and keep out of the archway.\n\nOn the eighth of December nineteen eighty, at around ten to eleven at night, Lennon came\nback from a recording session. He walked from the car towards that arch. A man who had\nbeen waiting near the entrance since the afternoon fired five shots, and four of them hit\nhim. Earlier the same day, Lennon had signed a record for him.\n\nThe police did not wait for an ambulance. They put him in the back of a patrol car and\ndrove him to Roosevelt Hospital, where he was pronounced dead. He was forty.\n\nThere is no marker here. There was never going to be one.\n\nCross at the lights and walk into the park.\n",
+    "script": "Look across the street, into the park. Those trees are Strawberry Fields. It is about a\nthree-minute walk, and you are going to make it in a moment.\n\nBehind you is the Dakota. John Lennon lived here with Yoko Ono and their son. Yoko Ono\nlives here still. This is not a monument, it is a building full of people's homes, so\nstay on the pavement and keep out of the archway.\n\nOn the eighth of December nineteen eighty, at around ten to eleven at night, Lennon came\nback from a recording session. He walked from the car towards that arch. A man who had\nbeen waiting near the entrance since the afternoon fired five shots, and four of them hit\nhim. Earlier the same day, Lennon had signed a record for him.\n\nThe police did not wait for an ambulance. They put him in the back of a patrol car and\ndrove him to Roosevelt Hospital, where he was pronounced dead. He was forty.\n\nThere is no marker here. There was never going to be one.\n\nCross at the lights and walk into the park.\n",
     "teaser": "Look across the street, into the park.",
     "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
@@ -661,7 +661,7 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": true,
       "convictionStatus": "convicted",
-      "reviewedBy": "TODO — a named human, before this can leave draft. See the note below.",
+      "reviewedBy": "TODO: a named human, before this can leave draft. See the note below.",
       "reviewedAt": "2026-09-22",
       "contentWarning": "This echo describes a murder. No violence is described in detail."
     },
@@ -710,7 +710,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand facing the columns, and know first that this is not the building.\n\nThe one that mattered was New York's City Hall, and it stood on this exact spot. Two\nthings happened in it that the country is still living inside.\n\nIn 1735 a printer named John Peter Zenger was tried here for libel. He had published\ncriticism of the royal governor in his newspaper, and under the law of the time truth was\nno defence — printing it was the crime, whether or not it was accurate. The jury\nacquitted him anyway. It was not yet law, but it was the beginning of the argument that\nbecame a free press.\n\nFifty-four years later the same site, rebuilt as Federal Hall, was the first Capitol of\nthe United States. On the thirtieth of April 1789, George Washington stepped onto a\nbalcony above this street and took the oath as the first president, in front of a crowd\nfilling Wall Street below you.\n\nThat building was demolished in 1812. What you are looking at went up in 1842, as a\ncustoms house. The statue of Washington faces the street, roughly where the balcony was.\n",
+    "script": "Stand facing the columns, and know first that this is not the building.\n\nThe one that mattered was New York's City Hall, and it stood on this exact spot. Two\nthings happened in it that the country is still living inside.\n\nIn 1735 a printer named John Peter Zenger was tried here for libel. He had published\ncriticism of the royal governor in his newspaper, and under the law of the time truth was\nno defence. Printing it was the crime, whether or not it was accurate. The jury\nacquitted him anyway. It was not yet law, but it was the beginning of the argument that\nbecame a free press.\n\nFifty-four years later the same site, rebuilt as Federal Hall, was the first Capitol of\nthe United States. On the thirtieth of April 1789, George Washington stepped onto a\nbalcony above this street and took the oath as the first president, in front of a crowd\nfilling Wall Street below you.\n\nThat building was demolished in 1812. What you are looking at went up in 1842, as a\ncustoms house. The statue of Washington faces the street, roughly where the balcony was.\n",
     "teaser": "The building is not the one it happened in. The corner is.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "pronunciations": [
@@ -740,7 +740,7 @@ export const LIBRARY: readonly Echo[] = [
         "bearingDeg": 199,
         "year": 1890,
         "caption": "Wall Street from Broad, before the tower",
-        "credit": "DEMO stand-in — no archive plate sourced yet",
+        "credit": "DEMO stand-in, no archive plate sourced yet",
         "rights": "public-domain"
       }
     ],
@@ -828,7 +828,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The hook of sand below is Cape Hatteras. The shoals run out from it for a dozen miles\nunderwater, two ocean currents meet directly over them, and the wrecks in that stretch of\nsea number in the hundreds. It has been called the Graveyard of the Atlantic since the\neighteen hundreds.\n\nWhich is why there has been a lighthouse down there since eighteen oh three, and the\ncurrent one — a hundred and ninety-eight feet of brick, the tallest in the country —\nsince eighteen seventy.\n\nIt was built fifteen hundred feet from the sea. By the nineteen nineties the sea was a\nhundred and twenty feet away.\n\nSo in nineteen ninety-nine they jacked up four thousand eight hundred tons of brick,\nput it on rails, and moved it. It took twenty-three days to travel twenty-nine hundred\nfeet.\n\nIt did not crack.\n",
+    "script": "The hook of sand below is Cape Hatteras. The shoals run out from it for a dozen miles\nunderwater, two ocean currents meet directly over them, and the wrecks in that stretch of\nsea number in the hundreds. It has been called the Graveyard of the Atlantic since the\neighteen hundreds.\n\nWhich is why there has been a lighthouse down there since eighteen oh three, and the\ncurrent one since eighteen seventy: a hundred and ninety-eight feet of brick, the\ntallest in the country.\n\nIt was built fifteen hundred feet from the sea. By the nineteen nineties the sea was a\nhundred and twenty feet away.\n\nSo in nineteen ninety-nine they jacked up four thousand eight hundred tons of brick,\nput it on rails, and moved it. It took twenty-three days to travel twenty-nine hundred\nfeet.\n\nIt did not crack.\n",
     "teaser": "The cape below you is the reason that stretch of sea is called the Graveyard of the Atlantic.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
@@ -848,7 +848,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "kitty-hawk-shorter-than-this-plane",
     "title": "The first flight was shorter than this aeroplane",
-    "summary": "Twelve seconds, a hundred and twenty feet — less than the length of the cabin you are in.",
+    "summary": "Twelve seconds, a hundred and twenty feet, less than the length of the cabin you are in.",
     "point": {
       "at": {
         "lat": 36.0146,
@@ -922,7 +922,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The road ahead curls around the side of the mountain on concrete legs.\n\nConstruction on the Blue Ridge Parkway started in nineteen thirty-five. This stretch —\nabout seven miles of it — did not open until nineteen eighty-seven.\n\nThe hold-up was the mountain. Grandfather Mountain is old, steep and unusually rich in\nrare plants, and the ordinary way to put a road across something like that is to cut a\nshelf into it and push the spoil over the side. Nobody was willing to do that here.\n\nSo they built it from the top down instead. Each segment of the viaduct was cast off-site,\ncarried out along the piece already finished, and lowered into place. Almost no heavy\nmachinery ever touched the ground underneath it.\n\nThe Parkway is four hundred and sixty-nine miles long. The last seven took a third of the\ntime.\n",
+    "script": "The road ahead curls around the side of the mountain on concrete legs.\n\nConstruction on the Blue Ridge Parkway started in nineteen thirty-five. This stretch,\nabout seven miles of it, did not open until nineteen eighty-seven.\n\nThe hold-up was the mountain. Grandfather Mountain is old, steep and unusually rich in\nrare plants, and the ordinary way to put a road across something like that is to cut a\nshelf into it and push the spoil over the side. Nobody was willing to do that here.\n\nSo they built it from the top down instead. Each segment of the viaduct was cast off-site,\ncarried out along the piece already finished, and lowered into place. Almost no heavy\nmachinery ever touched the ground underneath it.\n\nThe Parkway is four hundred and sixty-nine miles long. The last seven took a third of the\ntime.\n",
     "teaser": "The road you are on was the last part to be finished, and it took the longest.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
@@ -975,7 +975,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Almost everything you have driven through today grew back. The southern Appalachians were\nlogged hard between about eighteen eighty and nineteen thirty, and most of what looks\nancient out there is a century old at most.\n\nThe gorge on your right is the exception.\n\nIt is around two thousand feet deep with walls to match, and the timber companies looked\nat it and could not make the arithmetic work. There was no way to get logs out that cost\nless than the logs were worth.\n\nSo it was left. Not protected, not fought over — just skipped.\n\nIt is one of the few places in the eastern United States where you can look at a forest\nthat nobody ever got around to cutting down.\n",
+    "script": "Almost everything you have driven through today grew back. The southern Appalachians were\nlogged hard between about eighteen eighty and nineteen thirty, and most of what looks\nancient out there is a century old at most.\n\nThe gorge on your right is the exception.\n\nIt is around two thousand feet deep with walls to match, and the timber companies looked\nat it and could not make the arithmetic work. There was no way to get logs out that cost\nless than the logs were worth.\n\nSo it was left. Not protected, not fought over. Just skipped.\n\nIt is one of the few places in the eastern United States where you can look at a forest\nthat nobody ever got around to cutting down.\n",
     "teaser": "Almost every forest you have driven through today is second growth. One is not.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
@@ -1103,7 +1103,7 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": true,
       "convictionStatus": "alleged",
-      "reviewedBy": "TODO — a named human, before this can leave draft. See the note below.",
+      "reviewedBy": "TODO: a named human, before this can leave draft. See the note below.",
       "reviewedAt": "2026-09-22",
       "contentWarning": "This echo describes a murder. No violence is described in detail."
     },
@@ -1145,7 +1145,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "You are standing on a street that was paved with rubbish.\n\nLook at the name. Pearl Street. The Dutch called it that because the ground here was\nwhite — not with stone, but with oyster shells. Millions of them, crushed flat and\ntrodden down until they made a road.\n\nFour hundred years ago, the water around this island held about half of all the oysters\nin the world. Three hundred and fifty square miles of oyster beds. Some of the oysters\nwere as big as a dinner plate.\n\nThere were so many that they were cheap, so everybody ate them. Not in restaurants — from\ncarts in the street, the way you might buy a hot dog now. You ate the oyster, and you\nthrew the shell on the ground.\n\nEnough people did that, for enough years, that the shells became the street.\n\nOne more thing. The Dutch kept opening them to look for pearls. They never found a single\none. New York oysters don't make them.\n",
+    "script": "You are standing on a street that was paved with rubbish.\n\nLook at the name. Pearl Street. The Dutch called it that because the ground here was\nwhite. Not with stone, but with oyster shells. Millions of them, crushed flat and\ntrodden down until they made a road.\n\nFour hundred years ago, the water around this island held about half of all the oysters\nin the world. Three hundred and fifty square miles of oyster beds. Some of the oysters\nwere as big as a dinner plate.\n\nThere were so many that they were cheap, so everybody ate them. Not in restaurants. From\ncarts in the street, the way you might buy a hot dog now. You ate the oyster, and you\nthrew the shell on the ground.\n\nEnough people did that, for enough years, that the shells became the street.\n\nOne more thing. The Dutch kept opening them to look for pearls. They never found a single\none. New York oysters don't make them.\n",
     "teaser": "Why is it called Pearl Street?",
     "voice": "UrTldiIxfedDl9tlesyS",
     "tags": [
@@ -1191,7 +1191,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "If you can see the ground on the left, look for a pattern: a grid, interrupted at regular\nintervals by small green squares.\n\nThat layout was drawn in seventeen thirty-three, before there was a city to put it in.\nJames Oglethorpe laid out a repeating unit — a square with house lots and civic lots\naround it — and the plan was simply to keep repeating it as the place grew.\n\nTwenty-four were eventually built. Twenty-two are still there.\n\nCities almost never survive this. Street plans get widened for carts, then for trams, then\nfor cars, and the awkward bits get straightened out. Savannah's squares are exactly the\nawkward bits — they force traffic to slow down and go around.\n\nThree were lost to a road scheme in the nineteen fifties. One has since been put back.\n",
+    "script": "If you can see the ground on the left, look for a pattern: a grid, interrupted at regular\nintervals by small green squares.\n\nThat layout was drawn in seventeen thirty-three, before there was a city to put it in.\nJames Oglethorpe laid out a repeating unit, a square with house lots and civic lots\naround it, and the plan was simply to keep repeating it as the place grew.\n\nTwenty-four were eventually built. Twenty-two are still there.\n\nCities almost never survive this. Street plans get widened for carts, then for trams, then\nfor cars, and the awkward bits get straightened out. Savannah's squares are exactly the\nawkward bits. They force traffic to slow down and go around.\n\nThree were lost to a road scheme in the nineteen fifties. One has since been put back.\n",
     "teaser": "If the cloud is thin, look for the pattern. You will know it when you see it.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
@@ -1262,7 +1262,7 @@ export const LIBRARY: readonly Echo[] = [
         "bearingDeg": 22,
         "year": 1895,
         "caption": "Broadway at the chapel yard",
-        "credit": "DEMO stand-in — no archive plate sourced yet",
+        "credit": "DEMO stand-in, no archive plate sourced yet",
         "rights": "public-domain"
       }
     ],
@@ -1321,7 +1321,7 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": true,
       "convictionStatus": "convicted",
-      "reviewedBy": "TODO — a named human, before this can leave draft. See the note below.",
+      "reviewedBy": "TODO: a named human, before this can leave draft. See the note below.",
       "reviewedAt": "2026-09-22",
       "contentWarning": "This echo describes a murder. No violence is described in detail."
     },
@@ -1363,7 +1363,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the spire.\n\nFor forty-four years that was the highest point in New York. Not the tallest church — the\ntallest anything. Ships coming into the harbour saw it before they saw the city.\n\nIt went up in 1846. Two hundred and eighty-one feet, and nothing in this city passed it\nuntil 1890.\n\nWhich means there was a stretch of time, right here, when the largest thing people in New\nYork were willing to build was somewhere to pray.\n\nWhat passed it was a newspaper office. What passed that was an insurance company. Then\nthe banks arrived, and they have not stopped.\n\nAlexander Hamilton is buried in the yard on your right. He was killed in 1804, so he\nnever saw this building — he is lying beside the third church on this spot, in a\ngraveyard that outlasted two of them.\n",
+    "script": "Look up at the spire.\n\nFor forty-four years that was the highest point in New York. Not the tallest church. The\ntallest anything. Ships coming into the harbour saw it before they saw the city.\n\nIt went up in 1846. Two hundred and eighty-one feet, and nothing in this city passed it\nuntil 1890.\n\nWhich means there was a stretch of time, right here, when the largest thing people in New\nYork were willing to build was somewhere to pray.\n\nWhat passed it was a newspaper office. What passed that was an insurance company. Then\nthe banks arrived, and they have not stopped.\n\nAlexander Hamilton is buried in the yard on your right. He was killed in 1804, so he\nnever saw this building. He is lying beside the third church on this spot, in a\ngraveyard that outlasted two of them.\n",
     "teaser": "Look up at the spire.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
     "tags": [
@@ -1381,7 +1381,7 @@ export const LIBRARY: readonly Echo[] = [
         "bearingDeg": 285,
         "year": 1870,
         "caption": "Trinity's spire above the rooftops",
-        "credit": "DEMO stand-in — no archive plate sourced yet",
+        "credit": "DEMO stand-in, no archive plate sourced yet",
         "rights": "public-domain"
       }
     ],
@@ -1423,7 +1423,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look down the street. It runs river to river — you can very nearly see one end from the\nother.\n\nThat is not an accident. It is the width of the island, and in 1653 the Dutch decided to\nfence it off.\n\nThe governor, Peter Stuyvesant, ordered a palisade built right across here. Nine feet\nhigh, made of packed earth and fifteen-foot planks, running from the Hudson to the East\nRiver. It was meant to stop an English invasion.\n\nThe people who built it were mostly enslaved Africans, owned by the Dutch West India\nCompany.\n\nThe invasion never came. The English took the colony anyway, eleven years later, by\nsailing in and asking. And in 1699 they pulled the wall down and used the wood for\nsomething else.\n\nIt stood for forty-six years. It has been gone for more than three hundred.\n\nThe street kept the name — which means this is a street named after a thing that is not\nthere, put up by people who were never free to walk away from it.\n",
+    "script": "Look down the street. It runs river to river, and you can very nearly see one end from the\nother.\n\nThat is not an accident. It is the width of the island, and in 1653 the Dutch decided to\nfence it off.\n\nThe governor, Peter Stuyvesant, ordered a palisade built right across here. Nine feet\nhigh, made of packed earth and fifteen-foot planks, running from the Hudson to the East\nRiver. It was meant to stop an English invasion.\n\nThe people who built it were mostly enslaved Africans, owned by the Dutch West India\nCompany.\n\nThe invasion never came. The English took the colony anyway, eleven years later, by\nsailing in and asking. And in 1699 they pulled the wall down and used the wood for\nsomething else.\n\nIt stood for forty-six years. It has been gone for more than three hundred.\n\nThe street kept the name, which means this is a street named after a thing that is not\nthere, put up by people who were never free to walk away from it.\n",
     "teaser": "Look down the street. It runs river to river.",
     "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
@@ -1448,7 +1448,7 @@ export const LIBRARY: readonly Echo[] = [
         "bearingDeg": 272,
         "year": 1885,
         "caption": "Looking east along Wall Street",
-        "credit": "DEMO stand-in — no archive plate sourced yet",
+        "credit": "DEMO stand-in, no archive plate sourced yet",
         "rights": "public-domain"
       }
     ],
@@ -1466,7 +1466,7 @@ export const ROUTES: readonly Route[] = [
   {
     "id": "blue-ridge-parkway",
     "mode": "driving",
-    "name": "Blue Ridge Parkway — Asheville to Boone",
+    "name": "Blue Ridge Parkway: Asheville to Boone",
     "origin": {
       "name": "Asheville, North Carolina",
       "at": {
@@ -1543,7 +1543,7 @@ export const ROUTES: readonly Route[] = [
   {
     "id": "central-park-west-lennon",
     "mode": "walking",
-    "name": "Central Park West — three minutes apart",
+    "name": "Central Park West: three minutes apart",
     "origin": {
       "name": "The Dakota, 1 West 72nd Street",
       "at": {
@@ -1590,7 +1590,7 @@ export const ROUTES: readonly Route[] = [
   {
     "id": "jfk-mia",
     "mode": "flight",
-    "name": "New York to Miami — down the seaboard",
+    "name": "New York to Miami: down the seaboard",
     "origin": {
       "code": "JFK",
       "name": "John F. Kennedy International",
@@ -1674,7 +1674,7 @@ export const ROUTES: readonly Route[] = [
   {
     "id": "lower-manhattan-walk",
     "mode": "walking",
-    "name": "Lower Manhattan — the Battery to the African Burial Ground",
+    "name": "Lower Manhattan: the Battery to the African Burial Ground",
     "origin": {
       "name": "Battery Park",
       "at": {
@@ -1769,7 +1769,7 @@ export const ROUTES: readonly Route[] = [
   {
     "id": "ocean-drive-versace",
     "mode": "walking",
-    "name": "Ocean Drive — the walk home",
+    "name": "Ocean Drive: the walk home",
     "origin": {
       "name": "News Café, 800 Ocean Drive",
       "at": {

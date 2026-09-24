@@ -106,7 +106,7 @@ function demoArchive(echo) {
         bearingDeg: (away + 180) % 360,
         year: plate.year,
         caption: plate.caption,
-        credit: "DEMO stand-in — no archive plate sourced yet",
+        credit: "DEMO stand-in, no archive plate sourced yet",
         rights: "public-domain",
       },
     ],

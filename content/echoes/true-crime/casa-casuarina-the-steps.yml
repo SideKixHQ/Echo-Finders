@@ -24,7 +24,7 @@ quality: 0.9
 tags: [miami-beach, ocean-drive, 1997, versace]
 teaser: Look at the steps in front of the gate. Not the house.
 script: |
-  Look at the steps in front of the gate. Not the house — the steps.
+  Look at the steps in front of the gate. Not the house. The steps.
 
   At about a quarter to nine on the morning of the fifteenth of July, nineteen ninety-seven,
   Gianni Versace came back up Ocean Drive carrying his magazines and stopped here to open
@@ -60,7 +60,7 @@ trueCrimeReview:
   # who chased the gunman is a private individual who is probably alive — which is why the
   # script does not name him. He adds nothing and naming him costs him something.
   convictionStatus: alleged
-  reviewedBy: "TODO — a named human, before this can leave draft. See the note below."
+  reviewedBy: "TODO: a named human, before this can leave draft. See the note below."
   reviewedAt: "2026-09-22"
   contentWarning: This echo describes a murder. No violence is described in detail.
 sources:

@@ -36,16 +36,29 @@ interface Props {
   readonly foundCount: number;
 }
 
+/*
+ * `aria-current="page"` rather than `aria-pressed`: these are not three switches, they are
+ * three destinations and you are at one of them. Without it the highlight is the only thing
+ * saying where you are, and the highlight is not readable by anything but an eye.
+ */
 function NavInner({ tab, onChange, foundCount }: Props) {
   return (
     <nav className="nav">
-      <button className={tab === "map" ? "on" : ""} onClick={() => onChange("map")}>
+      <button
+        className={tab === "map" ? "on" : ""}
+        onClick={() => onChange("map")}
+        aria-current={tab === "map" ? "page" : undefined}
+      >
         <svg viewBox="0 0 24 24">
           <path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3-6-3zM9 3v15M15 6v15" />
         </svg>
         Map
       </button>
-      <button className={tab === "echoes" ? "on" : ""} onClick={() => onChange("echoes")}>
+      <button
+        className={tab === "echoes" ? "on" : ""}
+        onClick={() => onChange("echoes")}
+        aria-current={tab === "echoes" ? "page" : undefined}
+      >
         <svg viewBox="0 0 24 24">
           <path d="M12 21.5s7-5.7 7-11.1A7 7 0 0 0 5 10.4c0 5.4 7 11.1 7 11.1z" />
           <path d="M9 10.2l2.2 2.2L15 8.6" />
@@ -53,7 +66,11 @@ function NavInner({ tab, onChange, foundCount }: Props) {
         My Echoes
         {foundCount > 0 && <span className="badge">{foundCount}</span>}
       </button>
-      <button className={tab === "settings" ? "on" : ""} onClick={() => onChange("settings")}>
+      <button
+        className={tab === "settings" ? "on" : ""}
+        onClick={() => onChange("settings")}
+        aria-current={tab === "settings" ? "page" : undefined}
+      >
         <svg viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="3.2" />
           <path d="M19.4 14.5a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-1.8-.3 1.6 1.6 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.6 1.6 0 0 0-1-1.5 1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0 .3-1.8 1.6 1.6 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.6 1.6 0 0 0 1.5-1 1.6 1.6 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.8.3H9a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.6 1.6 0 0 0 1 1.5 1.6 1.6 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.8V9a1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1z" />

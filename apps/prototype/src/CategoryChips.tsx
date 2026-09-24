@@ -105,7 +105,7 @@ function CategoryChipsInner({ on, onToggle, onAll }: CategoryChipsProps) {
         </button>
       )}
       <div className="chips" ref={strip} onScroll={measure}>
-      <button className={all ? "chip chip-all on" : "chip chip-all"} onClick={onAll}>
+      <button className={all ? "chip chip-all on" : "chip chip-all"} onClick={onAll} aria-pressed={all}>
         All
       </button>
       {CHIP_GROUPS.map((group) => {
@@ -118,8 +118,10 @@ function CategoryChipsInner({ on, onToggle, onAll }: CategoryChipsProps) {
               // The colour class goes on the chip only when it is on, so the *label* greys
               // out with the rest of the row. The dot carries its colour either way.
               className={`chip${lit ? ` cat-${group.face} on` : ""}`}
-              onClick={() => onToggle(group)}
+              /* A lit chip and a dark one are the same word to a screen reader without
+                 this. The colour is the whole state on this row. */
               aria-pressed={lit}
+              onClick={() => onToggle(group)}
             >
               <span className={`chip-dot cat-${group.face}`} />
               {group.label}

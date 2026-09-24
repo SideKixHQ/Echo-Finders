@@ -149,6 +149,7 @@ export function Preflight({
               <button
                 key={route.id}
                 className={route.id === picked.id ? "pf-pick on" : "pf-pick"}
+                aria-pressed={route.id === picked.id}
                 onClick={() => setPicked(route)}
               >
                 {code(route)}
@@ -195,6 +196,6 @@ function code(route: Route): string {
   const a = route.origin.code;
   const b = route.destination.code;
   if (a && b) return `${a} → ${b}`;
-  const short = (name: string) => name.split(",")[0]!.split(" — ")[0]!;
+  const short = (name: string) => name.split(",")[0]!;
   return `${short(route.origin.name)} → ${short(route.destination.name)}`;
 }

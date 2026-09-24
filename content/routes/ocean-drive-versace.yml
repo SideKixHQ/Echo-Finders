@@ -7,7 +7,7 @@
 # geography. A pair that only makes sense in order has to be a route of its own, as here.
 id: ocean-drive-versace
 mode: walking
-name: Ocean Drive — the walk home
+name: "Ocean Drive: the walk home"
 
 origin:
   name: News Café, 800 Ocean Drive

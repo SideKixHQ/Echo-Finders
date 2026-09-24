@@ -6,7 +6,7 @@
 # case in the library for why a route is not just a playlist with coordinates attached.
 id: central-park-west-lennon
 mode: walking
-name: Central Park West — three minutes apart
+name: "Central Park West: three minutes apart"
 
 origin:
   name: The Dakota, 1 West 72nd Street

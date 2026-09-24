@@ -30,7 +30,7 @@ script: |
   three-minute walk, and you are going to make it in a moment.
 
   Behind you is the Dakota. John Lennon lived here with Yoko Ono and their son. Yoko Ono
-  lives here still — this is not a monument, it is a building full of people's homes, so
+  lives here still. This is not a monument, it is a building full of people's homes, so
   stay on the pavement and keep out of the archway.
 
   On the eighth of December nineteen eighty, at around ten to eleven at night, Lennon came
@@ -56,7 +56,7 @@ trueCrimeReview:
   # conviction is a matter of record and stating it is not a risk — the Versace echo is the
   # one carrying an untried allegation.
   convictionStatus: convicted
-  reviewedBy: "TODO — a named human, before this can leave draft. See the note below."
+  reviewedBy: "TODO: a named human, before this can leave draft. See the note below."
   reviewedAt: "2026-09-22"
   contentWarning: This echo describes a murder. No violence is described in detail.
 sources:

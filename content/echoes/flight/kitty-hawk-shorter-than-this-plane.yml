@@ -2,7 +2,7 @@
 # the comparison it turns on is the aircraft the listener is physically sitting in.
 id: kitty-hawk-shorter-than-this-plane
 title: The first flight was shorter than this aeroplane
-summary: Twelve seconds, a hundred and twenty feet — less than the length of the cabin you are in.
+summary: Twelve seconds, a hundred and twenty feet, less than the length of the cabin you are in.
 place: Kill Devil Hills, North Carolina
 at: { lat: 36.0146, lng: -75.6674 }
 triggerRadiusKm: 50

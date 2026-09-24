@@ -278,17 +278,26 @@ export function Sheet({
       )}
 
       <div className="segs">
-        <button className={view === "near" ? "seg on" : "seg"} onClick={() => setTab("near")}>
+        <button
+          className={view === "near" ? "seg on" : "seg"}
+          onClick={() => setTab("near")}
+          aria-pressed={view === "near"}
+        >
           Around you
         </button>
         <button
           className={view === "script" ? "seg on" : "seg"}
           onClick={() => setTab("script")}
+          aria-pressed={view === "script"}
           disabled={!scriptEcho}
         >
           Transcript
         </button>
-        <button className={view === "saved" ? "seg on" : "seg"} onClick={() => setTab("saved")}>
+        <button
+          className={view === "saved" ? "seg on" : "seg"}
+          onClick={() => setTab("saved")}
+          aria-pressed={view === "saved"}
+        >
           Saved<span className="seg-count">{saved.size}</span>
         </button>
       </div>

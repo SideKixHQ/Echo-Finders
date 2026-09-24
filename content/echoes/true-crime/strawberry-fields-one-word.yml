@@ -41,7 +41,7 @@ factCheck: unchecked
 trueCrimeReview:
   involvesLivingPeople: true
   convictionStatus: convicted
-  reviewedBy: "TODO — a named human, before this can leave draft. See the note below."
+  reviewedBy: "TODO: a named human, before this can leave draft. See the note below."
   reviewedAt: "2026-09-22"
   contentWarning: This echo describes a murder. No violence is described in detail.
 sources:

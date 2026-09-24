@@ -37,7 +37,7 @@ export function RouteRibbon({ route, progress, remainingS }: RouteRibbonProps) {
 }
 
 const short = (place: { code?: string; name: string }) =>
-  place.code ?? place.name.split(",")[0]!.split(" — ")[0]!;
+  place.code ?? place.name.split(",")[0]!;
 
 function left(seconds: number): string {
   if (seconds <= 30) return "arrived";

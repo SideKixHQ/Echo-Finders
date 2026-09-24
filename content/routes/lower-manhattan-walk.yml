@@ -4,7 +4,7 @@
 # domain — which satisfies the MVP rights policy (ADR-0006) with no licence conversation.
 id: lower-manhattan-walk
 mode: walking
-name: Lower Manhattan — the Battery to the African Burial Ground
+name: "Lower Manhattan: the Battery to the African Burial Ground"
 
 origin:
   name: Battery Park

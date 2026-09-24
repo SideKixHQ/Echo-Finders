@@ -47,7 +47,7 @@ trueCrimeReview:
   # this field exists to prevent. What protects the account is not a verdict — it is that
   # the dead cannot be defamed, and that fair report privilege covers an accurate summary
   # of an official record. That is why the FBI source is load-bearing rather than decorative.
-  reviewedBy: "TODO — a named human, before this can leave draft. See the note below."
+  reviewedBy: "TODO: a named human, before this can leave draft. See the note below."
   reviewedAt: "2026-09-22"
   contentWarning: This echo describes a murder. No violence is described in detail.
 sources:

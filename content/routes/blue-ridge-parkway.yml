@@ -7,7 +7,7 @@
 # ones worth stopping at.
 id: blue-ridge-parkway
 mode: driving
-name: Blue Ridge Parkway — Asheville to Boone
+name: "Blue Ridge Parkway: Asheville to Boone"
 
 origin:
   name: Asheville, North Carolina
