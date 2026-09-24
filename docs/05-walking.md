@@ -88,7 +88,7 @@ That is the entire navigation interface, and it works with the phone face-down i
 *everything in range at once*, each category with its own timbre, mapped from the palette
 that already exists in `echo-tone.ts`. A corner with a ghost story to your left and a food
 story behind you does not sound like a corner with two history plaques. You can hear the
-shape of a place before you know a single fact about it — and that is a thing no other
+shape of a place before you know a single fact about it, and that is a thing no other
 product does, because no other product has a categorised library pinned to coordinates.
 
 Density is a real risk, so the rule is: **four at most, nearest first, and never two of the
@@ -97,7 +97,7 @@ same category at once.** Anything beyond that is noise, not a chord.
 **2. Sealed echoes sound sealed.** This is where the sync fiction becomes audible. An echo
 you have not synced is heard through a low-pass filter and a little noise: present, placed,
 but muffled, like something behind a wall. As you close on it the filter opens. When you are
-inside the radius and still, it **resolves** — the noise falls away, the filter opens fully,
+inside the radius and still, it **resolves**. The noise falls away, the filter opens fully,
 and the tone lands clean. That resolution *is* the sync. No ring, no progress bar, no
 notification. You hear a memory come into focus because you stood where it happened.
 
@@ -117,7 +117,7 @@ just no longer the thing you are handed by default on foot.
 ### What happens without headphones
 
 The rose is the fallback and the haptics carry the proximity, which is what they already do.
-On a device with no vibration API at all — every iPhone on the web, per ADR-0011 — the rose
+On a device with no vibration API at all, which is every iPhone on the web per ADR-0011, the rose
 plus the existing proximity pill is the whole interface, which is still better than a map at
 this scale.
 
