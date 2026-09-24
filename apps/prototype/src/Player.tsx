@@ -178,7 +178,7 @@ export function Player({
 
       <div className="player-row player-row-centre">
         <button className="pill" onClick={onNext}>
-          Next story
+          Next echo
           <svg viewBox="0 0 24 24">
             <path d="M4 12h15M13 6l6 6-6 6" />
           </svg>
@@ -201,7 +201,7 @@ export function Player({
         </svg>
         <span>
           <strong>{!echo.simple ? "No plain-language cut yet" : simple ? "Simple audio on" : "Simple audio"}</strong>
-          <small>{!echo.simple ? "This echo has only the full telling" : simple ? "Tap for the full story" : "Plain words, shorter"}</small>
+          <small>{!echo.simple ? "This echo has only the full telling" : simple ? "Tap for the full telling" : "Plain words, shorter"}</small>
         </span>
         {echo.simple && <i>{clock(echo.simple.durationS)}</i>}
       </button>

@@ -7,7 +7,7 @@
  *
  * The numbers are the real ones — echoes heard, minutes of narration, places saved — and
  * the sentence above them names the places rather than counting them, because "you walked
- * past Bowling Green and Federal Hall" is a memory and "3 stories" is a score. The tiles
+ * past Bowling Green and Federal Hall" is a memory and "3 echoes" is a score. The tiles
  * carry the score for anybody who wants it.
  *
  * The card at the bottom suggests another route from the library rather than an
@@ -55,7 +55,7 @@ export function Arrival({
               You passed <b>{places.slice(0, 2).join(" and ")}</b>
               {places.length > 2 && <> and {places.length - 2} more</>}, and opened{" "}
               <b>
-                {heard.length} {heard.length === 1 ? "story" : "stories"}
+                {heard.length} {heard.length === 1 ? "echo" : "echoes"}
               </b>{" "}
               on the way to {route.destination.name}.
             </>

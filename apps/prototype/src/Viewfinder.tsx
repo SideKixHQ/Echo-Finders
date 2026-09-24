@@ -224,7 +224,7 @@ export function Viewfinder({ echo, at, nearby, onClose, onSelect }: ViewfinderPr
                     aria-pressed={i === photoIndex}
                   >
                     <img src={platePng(p.imageKey, "then")} alt="" />
-                    <span>{p.year ?? "—"}</span>
+                    <span>{p.year ?? "·"}</span>
                   </button>
                 ))}
               </div>

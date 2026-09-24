@@ -27,14 +27,21 @@ import type { EchoCategory } from "@echofinders/core";
 import { CATEGORY_LABEL, CATEGORY_ORDER } from "./categories";
 
 export interface CategoryChipsProps {
-  /** What this route passes. Quietens the rest of the row; never removes it. */
+  /**
+   * What this route passes.
+   *
+   * Accepted and deliberately unused in the rendering. Narrowing the row to it lost the
+   * key; dimming the rest made five chips of nine look switched off. Every chip is drawn
+   * at full strength, on or off. Kept on the interface because the caller has it and a
+   * later pass may find an honest use for it — a count, perhaps, never an opacity.
+   */
   readonly available: ReadonlySet<EchoCategory>;
   readonly on: ReadonlySet<EchoCategory>;
   readonly onToggle: (category: EchoCategory) => void;
   readonly onAll: () => void;
 }
 
-function CategoryChipsInner({ available, on, onToggle, onAll }: CategoryChipsProps) {
+function CategoryChipsInner({ on, onToggle, onAll }: CategoryChipsProps) {
   const all = CATEGORY_ORDER.every((c) => on.has(c));
 
   /*
@@ -70,18 +77,8 @@ function CategoryChipsInner({ available, on, onToggle, onAll }: CategoryChipsPro
           key={category}
           // The colour class goes on the chip only when it is on, so the *label* greys out
           // with the rest of the row. The dot carries its category's colour either way.
-          className={`chip${on.has(category) ? ` cat-${category} on` : ""}${
-            available.has(category) ? "" : " chip-none"
-          }`}
+          className={`chip${on.has(category) ? ` cat-${category} on` : ""}`}
           onClick={() => onToggle(category)}
-          /*
-            Quieter, not disabled: filtering to an empty map is a legitimate thing to do,
-            and a disabled control cannot be focused or read out. The dimming says it, so
-            there is no `title` — a native tooltip is a grey box that appears half a second
-            late, covers the thing next to it, and on a phone never appears at all. Where a
-            control needs a name it has `aria-label`, which reaches a screen reader without
-            showing anybody a tooltip.
-          */
         >
           <span className={`chip-dot cat-${category}`} />
           {CATEGORY_LABEL[category]}

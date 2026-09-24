@@ -83,7 +83,7 @@ export function Collection({ captured, privacy, total, onPlay, isPlaying }: Prop
           </p>
         ) : (
           <p>
-            Your collection records <strong>which</strong> echoes you found and when — not
+            Your collection records <strong>which</strong> echoes you found and when, not
             where you were standing. Turn that on in Privacy if you want a personal map.
           </p>
         )}

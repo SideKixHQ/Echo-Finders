@@ -6,7 +6,7 @@
  * their head, while a deck asks "this one?" twelve times, which is answerable.
  *
  * That reasoning is about the *decision*, and it ignored the screen. A card with a
- * `min-height` of 58% shows two at a time, so the twelve stories you are choosing between
+ * `min-height` of 58% shows two at a time, so the twelve echoes you are choosing between
  * are a thing you scroll past rather than a thing you see — and each card spent most of its
  * height on nothing, because a two-line teaser in a 480px box is a two-line teaser with 400
  * pixels of empty under it. What it produced was the opposite of considered: a screen with
@@ -61,11 +61,11 @@ export function Plan({
         <h1>{route.name ?? route.id}</h1>
         {/*
           The two numbers that decide everything on this screen, in the sentence a person
-          would say. "12 stories · 41 min" is what you are choosing from; the footer says
+          would say. "12 echoes · 41 min" is what you are choosing from; the footer says
           what you have chosen.
         */}
         <p>
-          {items.length} {items.length === 1 ? "story" : "stories"} along the way · {total} min
+          {items.length} {items.length === 1 ? "echo" : "echoes"} along the way · {total} min
           in all
         </p>
         <div className="plan-chips">

@@ -96,7 +96,7 @@ export function Preflight({
           <>
             <h2>Download your journey before you go</h2>
             <p>
-              Pick where you are going, choose the stories you want, and Echo Finders runs in
+              Pick where you are going, choose the echoes you want, and Echo Finders runs in
               airplane mode the whole way.
             </p>
           </>
@@ -129,7 +129,7 @@ export function Preflight({
             <i style={{ width: `${Math.min(100, (journey.totalBytes / journey.budgetBytes) * 100).toFixed(1)}%` }} />
           </span>
           <span className="pf-pkg-text">
-            {journey.echoes.length} {journey.echoes.length === 1 ? "story" : "stories"} ·{" "}
+            {journey.echoes.length} {journey.echoes.length === 1 ? "echo" : "echoes"} ·{" "}
             {megabytes(journey.totalBytes)} of {megabytes(journey.budgetBytes)} · already on
             this device
           </span>

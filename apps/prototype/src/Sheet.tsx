@@ -46,6 +46,8 @@ interface Props {
    * you have not got to yet.
    */
   readonly savedNearby: readonly SavedEcho[];
+  /** How many echoes this route passes at all, so the idle line can say what is left. */
+  readonly onRouteCount: number;
   readonly onSave: (echo: Echo) => void;
   /** What is in the listener's ears, if anything, and how far through it is. */
   readonly nowPlaying: Echo | null;
@@ -89,6 +91,7 @@ export function Sheet({
   autoPlay,
   saved,
   savedNearby,
+  onRouteCount,
   onSave,
   nowPlaying,
   progress,
@@ -189,7 +192,12 @@ export function Sheet({
           {...(onCamera ? { onCamera } : {})}
         />
       ) : nowPlaying ? null : (
-        <Idle count={captured.length} selfDirected={selfDirected} autoPlay={autoPlay} />
+        <Idle
+          count={captured.length}
+          total={onRouteCount}
+          selfDirected={selfDirected}
+          autoPlay={autoPlay}
+        />
       )}
 
       {/*
@@ -354,32 +362,49 @@ function Found({
 /**
  * Before anything has been found.
  *
- * Says what actually happens rather than what the walking case happens to do. Arriving
- * *opens* an echo — it does not start it — and the phrasing has to carry that, because a
- * listener told "your phone can stay in your pocket" and then handed silence would
- * reasonably think something was broken.
+ * One line, at the height of the design's mini bar, because this is the least valuable
+ * block on the screen and it was taking the most room: a heading plus two lines of
+ * explanation, about a hundred pixels, sitting between the listener and the list of
+ * echoes around them. It is onboarding copy, and onboarding copy that reappears on every
+ * visit has stopped being onboarding.
+ *
+ * What survives is the one thing somebody genuinely might not know, said in a clause
+ * rather than a paragraph: arriving *opens* an echo, it does not start it. A listener
+ * told their phone can stay in their pocket and then handed silence would reasonably
+ * think something was broken.
+ *
+ * The count does the rest of the work. "3 found, 9 to go" is both the state and the
+ * reason to keep walking, and it costs one line.
  */
 function Idle({
   count,
+  total,
   selfDirected,
   autoPlay,
 }: {
   count: number;
+  total: number;
   selfDirected: boolean;
   autoPlay: boolean;
 }) {
+  const left = Math.max(0, total - count);
   const heading =
-    count > 0 ? "Keep going" : selfDirected ? "Walk to open an echo" : "Echoes open as you pass";
+    count > 0
+      ? `${count} found${left > 0 ? `, ${left} to go` : ""}`
+      : selfDirected
+        ? "Walk to open an echo"
+        : "Echoes open as you pass";
+  const line = autoPlay
+    ? "The ones you chose will play as you reach them."
+    : count > 0
+      ? "They open as you reach them, then wait for you."
+      : "Arriving opens one. Press play when you want it.";
 
   return (
     <div className="now now-idle">
       <div className="now-text">
         <h2>{heading}</h2>
-        <p>
-          {autoPlay
-            ? "The ones you chose in Plan will play as you reach them, one at a time."
-            : "They open as you reach them and wait — press play when you want to hear one."}
-        </p>
+        <p>{line}</p>
       </div>
     </div>
   );

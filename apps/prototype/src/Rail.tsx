@@ -116,7 +116,7 @@ function RailInner({
       <button
         className="fab rail-pack"
         onClick={onDownload}
-        aria-label={downloaded ? "Your journey — on this device" : "Download this journey"}
+        aria-label={downloaded ? "Your journey, on this device" : "Download this journey"}
       >
         {downloaded ? (
           <svg viewBox="0 0 24 24">

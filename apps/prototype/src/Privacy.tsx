@@ -57,7 +57,7 @@ export function Privacy({ settings, onChange, storedPositions, collectionSize, o
       <Toggle
         label="Hands-free"
         detail="Echoes open with your phone pocketed and the screen off."
-        cost="Turn off and echoes still open — you just keep the app on screen while you travel."
+        cost="Turn off and echoes still open. You just keep the app on screen while you travel."
         on={settings.handsFree}
         onToggle={() => onChange({ ...settings, handsFree: !settings.handsFree })}
       />
@@ -79,7 +79,7 @@ export function Privacy({ settings, onChange, storedPositions, collectionSize, o
       <Toggle
         label="Keep my collection"
         detail="Records which echoes you found, and when."
-        cost="Turn off and echoes still open as you walk — nothing is kept afterwards."
+        cost="Turn off and echoes still open as you walk. Nothing is kept afterwards."
         on={settings.keepCollection}
         onToggle={() => onChange({ ...settings, keepCollection: !settings.keepCollection })}
       />

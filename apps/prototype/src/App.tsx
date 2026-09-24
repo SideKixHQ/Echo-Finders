@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { PRIVACY_DEFAULTS, holdsPersonalLocation, type PrivacySettings } from "@echofinders/core";
 import { LIBRARY, ROUTES } from "./library.generated";
+import { CATEGORY_ORDER } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
 import { RouteMap, type PinState } from "./RouteMap";
@@ -28,6 +29,9 @@ import {
   upcomingOnRoute,
   type Route,
 } from "@echofinders/core";
+
+/** Every category, as the starting filter. See `activeCats`. */
+const ALL_CATEGORIES: ReadonlySet<EchoCategory> = new Set(CATEGORY_ORDER);
 
 /** The walk is the richest route, so it is what the prototype opens on. */
 const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROUTES[0]!;
@@ -302,7 +306,17 @@ export function App() {
     () => new Set(onRoute.map((e) => e.category)),
     [onRoute],
   );
-  const activeCats = cats ?? available;
+  /**
+   * Everything is on until somebody turns something off.
+   *
+   * This used to default to `available` — the categories this route happens to pass — and
+   * the chip row reads that as state: five of nine chips came up grey on a walk, looking
+   * switched off by a listener who had never touched them. Defaulting to the whole
+   * taxonomy means an unlit chip always means "you turned this off", which is the only
+   * thing a filter should ever mean. It changes no results: an echo cannot be in a
+   * category that does not exist.
+   */
+  const activeCats = cats ?? ALL_CATEGORIES;
 
   /*
    * Hoisted and made stable, and not for tidiness.
@@ -467,6 +481,7 @@ export function App() {
                 autoPlay={autoPlay}
                 saved={chosen}
                 savedNearby={savedNearby}
+                onRouteCount={inCorridor}
                 nowPlaying={nowPlaying}
                 progress={progress}
                 playing={playing}
@@ -602,7 +617,7 @@ export function App() {
         <p>
           Everything you see is driven by <code>WalkSession</code> from{" "}
           <code>@echofinders/core</code>, the same code an iOS build would run. Only the GPS
-          chip is faked, and position comes from <code>RouteProfile</code> — so the traveller
+          chip is faked, and position comes from <code>RouteProfile</code>, so the traveller
           idles before setting off, slows on arrival, and actually stands still at the stops
           the route declares.
         </p>
@@ -637,7 +652,7 @@ export function App() {
         </p>
         {selfDirected ? (
           <p>
-            <b>Turn your sound on.</b> As you close on a sealed echo you will hear it — a
+            <b>Turn your sound on.</b> As you close on a sealed echo you will hear it. A
             note followed by quieter repeats of itself, slow and spread out when you are far
             away, tightening as you approach, and at the moment of arrival a single clean
             note with no reflection at all, because you are standing at the source. The bar
