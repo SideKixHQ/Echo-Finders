@@ -144,6 +144,19 @@ for (let i=0;i<9 && await p.locator('.onb').count();i++){
   if (await p.locator('.onb').count()) await capture('onboarding/step' + (i+1));
 }
 await p.waitForTimeout(4500);
+/*
+ * Walking opens on the rose with the sheet at one row (see docs/05-walking.md), so the
+ * sheet has to be raised before anything in the list can be clicked, and the rose is its
+ * own screen worth inventorying.
+ */
+await capture('walk/rose');
+focus.push(...await focusSweep('walk/rose'));
+// Visibility, not presence: the list is in the DOM at peek and hidden by CSS, so a count
+// of one means nothing about whether anything in it can be clicked.
+for (let i = 0; i < 4 && !(await p.locator('.list').isVisible().catch(() => false)); i++) {
+  await p.locator('.grab-zone').click();
+  await p.waitForTimeout(500);
+}
 await capture('map/half');
 focus.push(...await focusSweep('map/half'));
 await p.locator('.erow-body').first().click(); await p.waitForTimeout(500);

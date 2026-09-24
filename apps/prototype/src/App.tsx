@@ -16,6 +16,9 @@ import { CategoryChips } from "./CategoryChips";
 import { Arrival } from "./Arrival";
 import { Preflight } from "./Preflight";
 import { EchoPopup } from "./EchoPopup";
+import { Rose } from "./Rose";
+import { Hum } from "./hum";
+import { useHeading } from "./use-sensors";
 import { Viewfinder } from "./Viewfinder";
 import { Onboarding } from "./Onboarding";
 import { loadRatings, setRating, type Rating } from "./ratings";
@@ -27,6 +30,7 @@ import type { Echo, EchoCategory } from "@echofinders/core";
 import {
   checkEligibility,
   distanceKm,
+  effectiveRadiusKm,
   findEchoesAlongRoute,
   presetFor,
   upcomingOnRoute,
@@ -59,6 +63,19 @@ export function App() {
   const [roamMode, setRoamMode] = useState<"walking" | "driving">("walking");
   /** A narrator the listener picked. Null keeps whichever the echo was written for. */
   const [voice, setVoice] = useState<string | null>(null);
+  /*
+   * Walking's own view.
+   *
+   * On foot the resting screen is the rose rather than the map, because a route map answers
+   * a passenger's question and a walker has a here and a head they can turn. The map is one
+   * tap away rather than gone. Every other mode goes straight to the map: a driver wants the
+   * road and a passenger wants the route.
+   */
+  const [walkingView, setWalkingView] = useState<"rose" | "map">("rose");
+  /** The street humming. Off until somebody asks for it, because it is audio. */
+  const [humming, setHumming] = useState(false);
+  const hum = useMemo(() => new Hum(), []);
+  useEffect(() => () => hum.close(), [hum]);
   /** Whether the journey screen actually resolved to a route, so "just drive" can roam. */
   const roamRouteChosen = useRef(false);
 
@@ -595,6 +612,66 @@ export function App() {
 
   const inCorridor = onRoute.length;
 
+  /*
+   * Walking, and therefore the rose.
+   *
+   * Only free roam on foot: a walking *route* is a planned thing with an order to it, which
+   * is what the map is good at. The rose is for hunting.
+   */
+  const onFoot = roaming && roamMode === "walking";
+  const heading = useHeading(onFoot);
+
+  /*
+   * The rose wants the screen, so it takes the sheet down to one row when it opens.
+   *
+   * Not a preference, a measurement: at the half detent the dial had about two hundred
+   * pixels to live in and its own button was behind the sheet. Peek is what the walking
+   * screen is *for* anyway, and the sheet still opens by hand from there.
+   */
+  const showingRose = onFoot && walkingView === "rose";
+  useEffect(() => {
+    if (showingRose) setDetent("peek");
+  }, [showingRose]);
+
+  /** What the ears and the dial are both fed. One list, so they can never disagree. */
+  const around = useMemo(
+    () =>
+      nearby.map((n) => ({
+        echo: n.echo,
+        bearingDeg: n.bearingDeg,
+        distanceKm: n.distanceKm,
+        sealed: stateOf(n.echo.id) === "sealed",
+      })),
+    [nearby, stateOf],
+  );
+
+  /*
+   * Feeding the hum.
+   *
+   * Three separate effects rather than one, because they change at completely different
+   * rates: the heading many times a second, the voices on every position fix, and the mute
+   * only when somebody presses something. One effect would rebuild the world on every
+   * compass wobble.
+   */
+  useEffect(() => {
+    hum.setMuted(!humming || !onFoot || nowPlaying !== null);
+  }, [hum, humming, onFoot, nowPlaying]);
+  useEffect(() => {
+    hum.setHeading(heading.accuracyDeg <= 45 ? heading.deg : null);
+  }, [hum, heading.deg, heading.accuracyDeg]);
+  useEffect(() => {
+    hum.setVoices(
+      around.map((item) => ({
+        id: item.echo.id,
+        category: item.echo.category,
+        bearingDeg: item.bearingDeg,
+        distanceKm: item.distanceKm,
+        reachKm: effectiveRadiusKm(item.echo),
+        sealed: item.sealed,
+      })),
+    );
+  }, [hum, around]);
+
   return (
     <div className="stage">
       <div className="phone">
@@ -603,6 +680,20 @@ export function App() {
             <span className="mono">10:42</span>
             <span className="mono dim">{MODE_PHRASE[route.mode] ?? route.mode}</span>
           </div>
+
+          {tab === "map" && onFoot && walkingView === "rose" && (
+            <Rose
+              items={around}
+              headingDeg={heading.deg}
+              accuracyDeg={heading.accuracyDeg}
+              needsCompass={heading.needsPermission}
+              onAskCompass={() => void heading.ask()}
+              selectedId={selectedId}
+              onSelect={setSelectedId}
+              humming={humming}
+              onHum={setHumming}
+            />
+          )}
 
           {tab === "map" && (
             <>
@@ -647,6 +738,8 @@ export function App() {
                 overview={overview}
                 onOverview={setOverview}
                 downloaded={downloaded}
+                {...(onFoot ? { roseView: walkingView, onRoseView: setWalkingView } : {})}
+                {...(onFoot ? { roseView: walkingView, onRoseView: setWalkingView } : {})}
                 onDownload={openPackage}
               />
               {/*

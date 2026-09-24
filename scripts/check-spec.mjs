@@ -128,6 +128,12 @@ for (let i = 0; i < 9 && await p.locator('.onb').count(); i++) {
   await p.waitForTimeout(400);
 }
 await p.waitForTimeout(4500);
+// Walking now opens on the rose with the sheet at one row, so raise it before reaching for
+// anything in the list.
+for (let i = 0; i < 4 && !(await p.locator('.list').isVisible().catch(() => false)); i++) {
+  await p.locator('.grab-zone').click();
+  await p.waitForTimeout(500);
+}
 // Open a row so a card, its actions and the transport are all on screen at once.
 await p.locator('.erow-body').first().click();
 await p.waitForTimeout(500);

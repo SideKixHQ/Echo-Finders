@@ -2240,3 +2240,75 @@ body {
   transform: rotate(45deg) translate(-2px, -2px); pointer-events: none;
 }
 .narrator select option { background: var(--slate); color: var(--white); }
+
+/* ── The rose ─────────────────────────────────────────────────────────────────
+   Walking's own screen. Not a map: you at the centre facing up, echoes at their
+   true bearing, distance as radius. See docs/05-walking.md. */
+.rose {
+  position: absolute; left: 0; right: 0; z-index: 10;
+  /* Bounded by the chrome rather than by the screen. Stretched over the whole screen it was
+     centring the dial behind the sheet and clipping its own button off the bottom. */
+  top: 96px; bottom: calc(var(--nav-h) + var(--sheet-h));
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 14px; padding: 8px 16px 14px; overflow: hidden;
+  background: radial-gradient(circle at 50% 42%, rgba(var(--rgb-accent), 0.07), transparent 62%),
+    var(--space);
+}
+/* Shrinks with the space it is given rather than pushing the button off the bottom. */
+.rose-dial { width: 100%; max-width: 320px; height: auto; min-height: 0; flex: 1 1 auto; }
+
+/* The guidance pill says "getting warmer" about one echo; the dial says it about all of
+   them, with a direction. Two of them is one too many. */
+.screen:has(.rose) .proximity { display: none; }
+
+.rose-ring { fill: none; stroke: rgba(var(--rgb-hair), 0.13); stroke-width: 1; }
+
+.rose-north { stroke: rgba(var(--rgb-hair), 0.45); stroke-width: 1.4; stroke-linecap: round; }
+.rose-north-mark {
+  fill: var(--muted); font-family: "Space Grotesk", monospace; font-size: 9px;
+  letter-spacing: 0.14em;
+}
+
+/* You. The halo breathes so the dial is never completely still, which is what stops it
+   reading as a diagram. */
+.rose-me-dot { fill: var(--aqua); }
+.rose-me-halo { fill: rgba(var(--rgb-accent), 0.16); animation: rose-breathe 3.4s ease-in-out infinite; transform-origin: center; }
+.rose-me-cone { fill: rgba(var(--rgb-accent), 0.12); }
+/* No usable heading: the dial is distances only, and says so by going grey rather than by
+   pointing somewhere it cannot vouch for. */
+.rose-me-lost .rose-me-dot { fill: var(--muted); }
+.rose-me-lost .rose-me-halo { fill: rgba(var(--rgb-hair), 0.12); }
+@keyframes rose-breathe {
+  0%, 100% { transform: scale(1); opacity: 0.75; }
+  50% { transform: scale(1.22); opacity: 0.35; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rose-me-halo { animation: none; }
+}
+
+.rose-echo { cursor: pointer; }
+.rose-hit { fill: transparent; }
+.rose-mark { fill: color-mix(in srgb, currentColor 22%, transparent); stroke: currentColor; stroke-width: 1.6; }
+.rose-glyph { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+/* Sealed is an outline, synced is filled: the same language the map pins use, so the two
+   views never disagree about what you have. */
+.rose-sealed .rose-mark { fill: transparent; opacity: 0.72; }
+.rose-sealed .rose-glyph { opacity: 0.72; }
+.rose-on .rose-mark { fill: color-mix(in srgb, currentColor 40%, transparent); stroke-width: 2.2; }
+
+/* Narrow enough to clear the control column, which lives at the right edge and was sitting
+   on top of the button. */
+.rose-foot { width: 100%; max-width: 296px; flex: none; }
+.rose-hum, .rose-ask {
+  width: 100%; display: flex; flex-direction: column; align-items: center; gap: 3px;
+  padding: 13px 16px; border-radius: 16px; cursor: pointer; font: inherit;
+  font-size: 13px; font-weight: 500; color: var(--cool);
+  background: rgba(var(--rgb-panel), 0.6); border: 1px solid var(--line-2);
+}
+.rose-hum svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.rose-hum small, .rose-ask small { font-size: 11px; font-weight: 400; color: var(--muted); text-align: center; }
+.rose-hum.on {
+  color: var(--aqua); border-color: rgba(var(--rgb-accent), 0.5);
+  background: rgba(var(--rgb-accent), 0.1);
+}
+.rose-ask { color: var(--aqua); border-color: rgba(var(--rgb-accent), 0.4); }

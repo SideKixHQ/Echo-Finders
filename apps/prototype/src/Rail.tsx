@@ -40,6 +40,14 @@ export interface RailProps {
   readonly onDownload: () => void;
   /** Whether the journey is already on the device. */
   readonly downloaded: boolean;
+  /**
+   * Walking only: swap between the rose and the street map.
+   *
+   * Absent on every other mode, because a driver wants the road and a passenger wants the
+   * route, and neither has a head they can usefully turn.
+   */
+  readonly roseView?: "rose" | "map";
+  readonly onRoseView?: (view: "rose" | "map") => void;
 }
 
 function RailInner({
@@ -51,6 +59,8 @@ function RailInner({
   onOverview,
   onDownload,
   downloaded,
+  roseView,
+  onRoseView,
 }: RailProps) {
   return (
     <div className="rail">
@@ -87,6 +97,31 @@ function RailInner({
           </svg>
         )}
       </button>
+
+      {/*
+        Walking's view switch. The rose is the resting screen on foot and the street map is
+        a thing you go and get, which is the opposite of every other mode, so the control
+        only exists here.
+      */}
+      {roseView && onRoseView && (
+        <button
+          className="fab"
+          onClick={() => onRoseView(roseView === "rose" ? "map" : "rose")}
+          aria-pressed={roseView === "map"}
+          aria-label={roseView === "rose" ? "Show the street map" : "Back to what is around you"}
+        >
+          {roseView === "rose" ? (
+            <svg viewBox="0 0 24 24">
+              <path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3-6-3zM9 3v15M15 6v15" />
+            </svg>
+          ) : (
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="8.5" />
+              <path d="M12 12l4-7-7 4z" />
+            </svg>
+          )}
+        </button>
+      )}
 
       {/*
         Recentre — the design's "centre on aircraft", and the only button here that puts
