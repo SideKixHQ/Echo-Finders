@@ -1229,7 +1229,11 @@ body {
 /* Peek is the height of one row, not a fraction of the screen. 26dvh left a hundred
    pixels of empty sheet under the now-playing bar, which is a hundred pixels of map given
    away for nothing. */
-.screen:has(.sheet-peek) { --sheet-h: 132px; }
+/* One row, measured. 132px was a number picked once, against one of the two things that
+   can sit in that row; the other is shorter, and the difference showed as a panel of empty
+   between the echo and the tab bar. `Sheet.tsx` measures the row and sets --peek-h; the
+   132 stays as the value before the first measurement lands. */
+.screen:has(.sheet-peek) { --sheet-h: var(--peek-h, 132px); }
 /* 46, not 52. At 52 the sheet plus the tab bar plus the route ribbon left the map 16% of
    the screen — the complaint that started all this — and the band was too short for the
    control rail to wrap into fewer than four columns. Six points of height buys back both,

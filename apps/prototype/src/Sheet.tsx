@@ -15,7 +15,7 @@ import { EchoCard } from "./EchoCard";
 import { PlateStrip } from "./PlateStrip";
 import { Player } from "./Player";
 import { Transcript } from "./Transcript";
-import { useMemo, useRef, useState } from "react";
+import { useLayoutEffect, useMemo, useRef, useState } from "react";
 import { splitScript, stepLine } from "./transcript-lines";
 import { CATEGORY_LABEL } from "./categories";
 import type { Upcoming } from "@echofinders/core";
@@ -199,8 +199,48 @@ export function Sheet({
   }, [liveNearby]);
 
   const savedCards = savedNearby;
+
+  /**
+   * Peek is exactly one row tall, measured rather than guessed.
+   *
+   * It was 132px, a number picked once against one of the two things that can be in that
+   * row. The other one is shorter, so at rest there was sixty-odd pixels of empty panel
+   * between the echo and the tab bar: the sheet looked like a drawer that had failed to
+   * close rather than like a bar.
+   *
+   * Measured from the top of the sheet to the bottom of whichever block is showing, plus
+   * the sheet's own padding. That block keeps its height at every detent — at peek the CSS
+   * hides what is below it rather than resizing it — so this is right whichever detent we
+   * happen to be at when it runs, and it stays right when the title wraps to two lines or
+   * the row gains something.
+   */
+  const sheetRef = useRef<HTMLDivElement | null>(null);
+  useLayoutEffect(() => {
+    const sheet = sheetRef.current;
+    const screen = sheet?.parentElement;
+    if (!sheet || !screen) return;
+
+    const measure = () => {
+      const row = sheet.querySelector(".phead, .now-top");
+      if (!row) return;
+      const pad = parseFloat(getComputedStyle(sheet).paddingBottom) || 0;
+      const height =
+        row.getBoundingClientRect().bottom - sheet.getBoundingClientRect().top + pad;
+      if (height > 0) screen.style.setProperty("--peek-h", `${Math.round(height)}px`);
+    };
+
+    measure();
+    if (typeof ResizeObserver === "undefined") return;
+    const observer = new ResizeObserver(measure);
+    observer.observe(sheet);
+    const row = sheet.querySelector(".phead, .now-top");
+    if (row) observer.observe(row);
+    return () => observer.disconnect();
+  });
+
   return (
     <div
+      ref={sheetRef}
       className={`sheet sheet-${detent}${nowPlaying ? " sheet-playing" : ""}`}
       style={dragging === null ? undefined : { height: `${dragging}px` }}
     >
