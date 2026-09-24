@@ -246,12 +246,15 @@ export function Sheet({
       )}
 
       {/*
-        Peek is a sheet with about two hundred pixels in it, and the transport alone is
-        taller than that — drawn here it was cut in half by the sheet's own bottom edge.
-        The floating row over the map is the player at that height; this is the player at
-        every other height, and there is never more than one of them.
+        The player is always here, at every height, and the sheet reveals it as it rises.
+        That is the design's own mechanism and it is better than the two components I had:
+        at peek `theme.css` hides everything below the top row, so what is left is a
+        compact now-playing bar over a full screen of map, and swiping up turns the same
+        element into the full transport without anything being swapped underneath you.
+
+        It also retires the floating row I had built over the map. One player, one place.
       */}
-      {nowPlaying && detent !== "peek" && (
+      {nowPlaying && (
         <Player
           echo={nowPlaying}
           onPlayPause={playing ? onPause : onResume}
@@ -490,7 +493,7 @@ const clock = (seconds: number) =>
  * while somebody is actually walking; half is for browsing what is around them, and full
  * is for working through the list sitting down.
  */
-const DETENTS: Record<Detent, number> = { peek: 0.26, half: 0.46, full: 0.86 };
+const DETENTS: Record<Detent, number> = { peek: 0.16, half: 0.46, full: 0.86 };
 
 const nextDetent = (from: Detent): Detent =>
   from === "peek" ? "half" : from === "half" ? "full" : "peek";

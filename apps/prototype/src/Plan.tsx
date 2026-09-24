@@ -37,6 +37,7 @@ export interface PlanProps {
   readonly autoPlay: boolean;
   readonly onAutoPlay: (on: boolean) => void;
   readonly onPlay: (echo: Echo) => void;
+  readonly onClose: () => void;
 }
 
 export function Plan({
@@ -49,6 +50,7 @@ export function Plan({
   autoPlay,
   onAutoPlay,
   onPlay,
+  onClose,
 }: PlanProps) {
   const picked = items.filter((item) => chosen.has(item.echo.id));
   const minutes = Math.round(picked.reduce((t, i) => t + i.echo.durationS, 0) / 60);
@@ -57,6 +59,11 @@ export function Plan({
   return (
     <div className="plan">
       <header className="plan-head">
+        <button className="plan-close" onClick={onClose} aria-label="Back">
+          <svg viewBox="0 0 24 24">
+            <path d="M15 5l-7 7 7 7" />
+          </svg>
+        </button>
         <span className="plan-kicker">Before you go</span>
         <h1>{route.name ?? route.id}</h1>
         {/*

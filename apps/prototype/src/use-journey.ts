@@ -23,6 +23,7 @@ import {
   type QueuedEcho,
   type Deferred,
   type ListenerProfile,
+  type LocationSource,
   type NearbyEcho,
   type Position,
   type Route,
@@ -103,16 +104,48 @@ export interface JourneyControls {
   readonly privacy: PrivacySettings;
   /** Kids mode: an age the engine gates on, not a filter over the view. */
   readonly kids: boolean;
+  /** Where the listener actually is. Used when there is no route to simulate. */
+  readonly gps: LocationSource;
   /** Speak the plain-language cut where one is written. Not a view setting — it is the audio. */
   readonly simple: boolean;
 }
 
+/**
+ * @param route  The journey, or `null` for free roam.
+ *
+ * Null is not a degraded case. `WalkSession` has never taken a `Route` — it takes a mode
+ * and a library — and `findEchoesNearby` exists precisely to answer "what is here" with no
+ * path to project onto. Roaming is the engine's own shape; a route is the special case
+ * layered on top, and it took a UX review to notice we had built only the special case.
+ *
+ * @param gps  The real device location, used when roaming. A journey is simulated so it
+ *             can be watched in three minutes; standing in a street cannot be.
+ */
 export function useJourney(
-  route: Route,
+  route: Route | null,
   library: readonly Echo[],
-  { sound, narrate, autoPlay, chosen, paused, rate = 1, privacy, kids, simple }: JourneyControls,
+  {
+    sound,
+    narrate,
+    autoPlay,
+    chosen,
+    paused,
+    rate = 1,
+    privacy,
+    kids,
+    simple,
+    gps,
+  }: JourneyControls,
 ) {
+  /**
+   * The simulated journey, or nothing when roaming.
+   *
+   * Only a route can be simulated: the simulation exists to compress fifty minutes of
+   * walking into three so a demo is watchable, and it does that by following a known
+   * distance-time curve. Standing in a real street has no curve to follow.
+   */
   const walk = useMemo(() => {
+    if (!route) return null;
     // `?speed=2` slows the journey so the dwell ring can be watched filling; `?start=0.4`
     // drops in partway along.
     const params = new URLSearchParams(window.location.search);
@@ -125,12 +158,23 @@ export function useJourney(
     return simulation;
   }, [route]);
 
+  /** Whichever one is actually feeding positions. */
+  const location: LocationSource = walk ?? gps;
+
   // The collection survives a refresh, so it has to be read before the session exists.
   //
   // `null` means still reading. The session is built either way rather than blocking the
   // whole app on a disk read — it rebuilds once records arrive, which is free, because a
   // read completes in milliseconds and nothing can have been captured yet.
-  const store = useMemo(() => new IndexedDbCollection(`route:${route.id}`), [route.id]);
+  /*
+   * The collection is keyed per journey, and roaming is its own key rather than being
+   * filed under whichever route happened to be selected. An echo synced while wandering
+   * belongs to the wandering.
+   */
+  const store = useMemo(
+    () => new IndexedDbCollection(route ? `route:${route.id}` : "roam"),
+    [route],
+  );
   const [restored, setRestored] = useState<readonly CaptureRecord[] | null>(null);
   useEffect(() => {
     let live = true;
@@ -203,9 +247,9 @@ export function useJourney(
     return new WalkSession(
       library,
       listenerFor(kids),
-      { location: walk, haptics, tones, audio: speech, collection: store },
+      { location, haptics, tones, audio: speech, collection: store },
       {
-        mode: route.mode,
+        mode: route?.mode ?? "walking",
         // Restored before the first fix, so echoes found on a previous visit stay found
         // rather than opening a second time.
         ...(restored && restored.length > 0 ? { captured: restored } : {}),
@@ -216,7 +260,7 @@ export function useJourney(
     // flick of the switch — and a new `WalkSession` is a new `CaptureTracker`: rebuilding
     // it to carry one boolean threw away the whole collection, stopped whatever was
     // playing, and reset the map, silently. They are applied below instead.
-  }, [library, walk, route.mode, toneRenderer, speech, store, restored, kids]);
+  }, [library, location, route?.mode, toneRenderer, speech, store, restored, kids]);
 
   useEffect(() => {
     session.setAutoPlay(autoPlay);
@@ -245,7 +289,9 @@ export function useJourney(
   // setting the same flag independently means whichever ran last wins — and the walk would
   // resume itself the moment an echo finished, whatever the listener had asked for.
   useEffect(() => {
-    walk.setPaused(paused || state.playback.kind === "playing");
+    // Only a simulation can be held. Real time does not pause for narration, which is the
+    // honest behaviour anyway: out on a street you walk and listen at once.
+    walk?.setPaused(paused || state.playback.kind === "playing");
   }, [walk, paused, state.playback.kind]);
 
   useEffect(() => {

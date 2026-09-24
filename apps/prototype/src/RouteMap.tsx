@@ -41,7 +41,10 @@ import {
 export type PinState = "sealed" | "opening" | "captured" | "heard";
 
 interface Props {
-  readonly route: Route;
+  /** The journey, or `null` when roaming: there is no line and no corridor, only here. */
+  readonly route: Route | null;
+  /** How the listener is moving. Comes from the route when there is one. */
+  readonly mode: TravelMode;
   readonly library: readonly Echo[];
   readonly position: Position | null;
   readonly opening: readonly Arriving[];
@@ -91,7 +94,7 @@ const H = 822;
  */
 const NAV_H = 72;
 /** Matches the detents in `Sheet.tsx` and in `theme.css`, as fractions of the screen. */
-const SHEET_FRACTION = { peek: 0.26, half: 0.46, full: 0.86 } as const;
+const SHEET_FRACTION = { peek: 0.16, half: 0.46, full: 0.86 } as const;
 /**
  * How many echoes ripple at once.
  *
@@ -119,6 +122,7 @@ const insetFor = (detent: keyof typeof SHEET_FRACTION, guided: boolean) => ({
 
 export function RouteMap({
   route,
+  mode,
   library,
   position,
   opening,
@@ -173,7 +177,7 @@ export function RouteMap({
 
   // A new journey, or a jump to the overview, is a new framing. Keeping the old multiplier
   // across either one lands somebody at 8x on a map they have not seen yet.
-  useEffect(() => setZoom(1), [route.id, overview]);
+  useEffect(() => setZoom(1), [route?.id, overview]);
 
   /** Two fingers. Tracked here rather than with a library: it is a distance and a ratio. */
   const pinch = useRef<Map<number, { x: number; y: number }>>(new Map());
@@ -244,10 +248,10 @@ export function RouteMap({
    * projection and once for the path — which at four fixes a second is eight route
    * geometries a second, on a flight with a few hundred track points.
    */
-  const geometry = useMemo(() => buildRouteGeometry(route), [route]);
+  const geometry = useMemo(() => (route ? buildRouteGeometry(route) : null), [route]);
 
   const projection = useMemo(() => {
-    const INSET = insetFor(detent, presetFor(route.mode).selfDirected);
+    const INSET = insetFor(detent, presetFor(mode).selfDirected);
 
     // The band actually visible between the chips and the sheet. The listener belongs in
     // the middle of *that*, not the middle of a box that is half covered.
@@ -264,9 +268,9 @@ export function RouteMap({
       centre = at;
       // Twice the corridor: on foot a couple of streets, in the air a couple of hundred
       // kilometres. The same number that already decides what counts as near on this mode.
-      spanKm = (presetFor(route.mode).corridorKm * 2) / zoom;
+      spanKm = (presetFor(mode).corridorKm * 2) / zoom;
     } else {
-      const points = [...geometry.points, ...library.map((e) => e.point.at)];
+      const points = [...(geometry?.points ?? []), ...library.map((e) => e.point.at)];
       const lats = points.map((p) => p.lat);
       const lngs = points.map((p) => p.lng);
       const minLat = Math.min(...lats);
@@ -314,9 +318,10 @@ export function RouteMap({
     // computed twice and drifting.
     project.plan = plan;
     return project;
-  }, [route, geometry, library, at, overview, detent, zoom]);
+  }, [mode, geometry, library, at, overview, detent, zoom]);
 
   const path = useMemo(() => {
+    if (!geometry) return "";
     return geometry.points
       .map((p, i) => {
         const { x, y } = projection(p);
@@ -452,8 +457,10 @@ export function RouteMap({
         <rect x="0" y={MAPBAR_H} width={W} height={H - MAPBAR_H} />
       </clipPath>
       <g clipPath="url(#mapBand)">
-      <path d={path} className="route-casing" />
-      <path d={path} className="route" />
+      {/* No line when roaming. A route drawn through echoes somebody has not agreed to
+          walk is a suggestion pretending to be a plan. */}
+      {path && <path d={path} className="route-casing" />}
+      {path && <path d={path} className="route" />}
 
       {library.map((echo) => {
         const { x, y } = projection(echo.point.at);
@@ -544,12 +551,12 @@ export function RouteMap({
       <text
         className="map-credit"
         x={W - 10}
-        y={H - insetFor(detent, presetFor(route.mode).selfDirected).bottom + 2}
+        y={H - insetFor(detent, presetFor(mode).selfDirected).bottom + 2}
         textAnchor="end"
       >
         {TILE_ATTRIBUTION}
       </text>
-      {here && <Here x={here.x} y={here.y} mode={route.mode} headingDeg={position?.headingDeg ?? null} />}
+      {here && <Here x={here.x} y={here.y} mode={mode} headingDeg={position?.headingDeg ?? null} />}
     </svg>
   );
 }

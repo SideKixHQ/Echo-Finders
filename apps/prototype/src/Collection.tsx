@@ -41,10 +41,13 @@ interface Props {
    * array never does.
    */
   readonly isHeard: (echoId: string) => boolean;
+  /** Echoes bookmarked but not yet stood on. Intentions, as against the record. */
+  readonly saved: readonly Echo[];
+  readonly onSave: (echo: Echo) => void;
 }
 
-export function Collection({ captured, privacy, total, onPlay, isPlaying, isHeard }: Props) {
-  if (captured.length === 0) {
+export function Collection({ captured, privacy, total, onPlay, isPlaying, isHeard, saved }: Props) {
+  if (captured.length === 0 && saved.length === 0) {
     return (
       <div className="screen-body">
         <div className="empty">
@@ -62,6 +65,8 @@ export function Collection({ captured, privacy, total, onPlay, isPlaying, isHear
     { key: "unheard", label: `Not heard yet · ${unheard.length}`, items: unheard },
     { key: "heard", label: `Heard · ${heard.length}`, items: heard },
   ].filter((g) => g.items.length > 0);
+  // Not captures: these have never been stood on. Shown apart for exactly that reason.
+  const wishlist = saved.filter((e) => !captured.some((c) => c.echo.id === e.id));
 
   return (
     <div className="screen-body">
@@ -96,6 +101,27 @@ export function Collection({ captured, privacy, total, onPlay, isPlaying, isHear
       {/* A footnote, set as one. It had the same border, padding and background as an
           echo, so a sentence about settings carried the visual weight of a story somebody
           walked to. The distinction it draws is worth keeping; the card around it was not. */}
+      {wishlist.length > 0 && (
+        <section className="group">
+          <h3 className="group-head">Saved to hear · {wishlist.length}</h3>
+          {wishlist.map((echo) => (
+            <article key={echo.id} className="entry entry-wish">
+              <button className="entry-hit" onClick={() => onPlay(echo)}>
+                <div className={`entry-glyph cat-${echo.category}`} aria-hidden="true">
+                  <svg viewBox="0 0 24 24">{CATEGORY_ICON[echo.category]}</svg>
+                  <i>{clock(echo.durationS)}</i>
+                </div>
+                <div className="entry-text">
+                  <h4>{echo.title}</h4>
+                  <p>{echo.point.place}</p>
+                  <p className="entry-meta mono">Not stood on yet</p>
+                </div>
+              </button>
+            </article>
+          ))}
+        </section>
+      )}
+
       <footer className="collection-foot">
         {privacy.recordPrecisePlaces ? (
           <p>

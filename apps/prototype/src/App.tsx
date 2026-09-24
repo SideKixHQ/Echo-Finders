@@ -10,7 +10,6 @@ import { Sheet } from "./Sheet";
 import { Collection } from "./Collection";
 import { Privacy } from "./Privacy";
 import { Nav, type Tab } from "./Nav";
-import { NowPlaying } from "./NowPlaying";
 import { Plan } from "./Plan";
 import { RouteRibbon } from "./RouteRibbon";
 import { CategoryChips } from "./CategoryChips";
@@ -41,6 +40,21 @@ const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROU
 
 export function App() {
   const [route, setRoute] = useState<Route>(DEFAULT_ROUTE);
+  /**
+   * Roaming: there is no journey, only here.
+   *
+   * The front door the app was missing. Everything downstream already supports it —
+   * `WalkSession` takes a mode rather than a route, and `findEchoesNearby` answers "what
+   * is here" with no path to project onto — so this is a flag, not a second app.
+   */
+  const [roaming, setRoaming] = useState(false);
+
+  /**
+   * The real device location. Asked for once, by a tap, and held for the life of the app:
+   * a granted watch should survive switching journeys, and asking twice is how a
+   * permission gets refused.
+   */
+  const gps = useMemo(() => new BrowserLocation(), []);
   const [sound, setSound] = useState(true);
   const [narrate, setNarrate] = useState(true);
   const [paused, setPaused] = useState(false);
@@ -97,7 +111,7 @@ export function App() {
   }, []);
   // The listener's own setting drives it, not a constant. `handsFree` is off by default
   // (PRIVACY_DEFAULTS), so an echo collects itself on arrival and then waits to be played.
-  const { state, session, walk, store } = useJourney(route, LIBRARY, {
+  const { state, session, walk, store } = useJourney(roaming ? null : route, LIBRARY, {
     sound,
     narrate,
     autoPlay,
@@ -109,6 +123,7 @@ export function App() {
     privacy,
     kids,
     simple,
+    gps,
   });
 
   // Whether the traveller can steer. Guidance answers "which way should I go", so it is
@@ -142,6 +157,14 @@ export function App() {
    * like, and from the first step it is where you are.
    */
   const [overview, setOverview] = useState(false);
+  /**
+   * Choosing what plays itself, reached from the package screen rather than the tab bar.
+   *
+   * It is a decision about a journey, made once before setting off, and it only pays off
+   * if the phone is going in a pocket. A permanent tab gave it the same standing as the
+   * map, which it does not have.
+   */
+  const [planOpen, setPlanOpen] = useState(false);
 
   /**
    * First run, remembered.
@@ -151,6 +174,8 @@ export function App() {
    * "show it" rather than blocking the app on a disk error. A private window sees it
    * every time, which is the right side to fail on.
    */
+  useEffect(() => () => gps.stop(), [gps]);
+
   const [onboarded, setOnboarded] = useState(() => {
     try {
       return localStorage.getItem("echo-finders:onboarded") === "1";
@@ -188,8 +213,7 @@ export function App() {
     setRatings((current) => setRating(current, echoId, rating));
   }, []);
 
-  const gps = useMemo(() => new BrowserLocation(), []);
-  useEffect(() => () => gps.stop(), [gps]);
+
   const [deleted, setDeleted] = useState<Set<string>>(new Set());
 
   // What the collection would actually hold, given the privacy settings and any deletion.
@@ -293,9 +317,10 @@ export function App() {
     return () => clearInterval(tick);
   }, [nowPlaying, simple, rate, playing, setPlayhead]);
 
-  const walkedPercent = Math.round((walk.walkedMetres / walk.totalMetres) * 100);
-  const arrived = walkedPercent >= 99;
-  const remainingS = route.durationS * (1 - Math.min(1, walk.walkedMetres / walk.totalMetres));
+  /* Progress along a journey. Roaming has none: there is nowhere you are supposed to end up. */
+  const along = walk && walk.totalMetres > 0 ? walk.walkedMetres / walk.totalMetres : 0;
+  const arrived = walk !== null && along >= 0.99;
+  const remainingS = route.durationS * (1 - Math.min(1, along));
 
   // How much of the library this route actually passes. Worth showing: it is the clearest
   // statement that content is filed by place, not by journey, and that a route is a query
@@ -415,7 +440,24 @@ export function App() {
       return next;
     });
   }, []);
-  const allCategories = useCallback(() => setCats(null), []);
+  /**
+   * All, and none.
+   *
+   * It only ever switched everything on, so once everything was on it was a button that
+   * did nothing. Toggling is what the word implies and it is the fastest way to say "just
+   * this one": clear the row, then tap the one you want.
+   *
+   * An empty filter is reachable this way, and that is fine here where it is not from a
+   * single chip: turning off the last lit category one tap at a time is almost always a
+   * mistake, while emptying the row deliberately is a technique, and the way out of it is
+   * the same button.
+   */
+  const allCategories = useCallback(() => {
+    setCats((current) => {
+      const on = current ?? ALL_CATEGORIES;
+      return on.size >= ALL_CATEGORIES.size ? new Set<EchoCategory>() : null;
+    });
+  }, []);
   const toggleSave = useCallback((echo: Echo) => {
     setChosen((current) => {
       const next = new Set(current);
@@ -448,7 +490,7 @@ export function App() {
    * the accuracy of the fix that drives it, so nothing on screen can be stale in a way a
    * listener could detect, and the query runs when they have actually gone somewhere.
    */
-  const walkedStep = Math.round(walk.walkedMetres / 20);
+  const walkedStep = Math.round((walk?.walkedMetres ?? 0) / 20);
 
   const upcoming = useMemo(
     () =>
@@ -459,7 +501,7 @@ export function App() {
         // adding an exclusion list keeps one mechanism for "do not offer me this again" —
         // and without it the thing currently playing turns up under "coming up".
         { ...listenerFor(kids), heardEchoIds: kept.map((c) => c.echo.id) },
-        walk.walkedMetres / 1000,
+        (walk?.walkedMetres ?? 0) / 1000,
         { limit: 2 },
       ),
     // `walk.walkedMetres` is read off a mutable simulation, so the quantised step is what
@@ -508,11 +550,13 @@ export function App() {
           {tab === "map" && (
             <>
               <div className="mapbar">
-                <RouteRibbon
+                {/* A journey's header. Roaming has no origin, no destination and no ETA,
+                    and inventing one would be the same fiction the whole review was about. */}
+                {!roaming && <RouteRibbon
                   route={route}
-                  progress={walk.totalMetres > 0 ? walk.walkedMetres / walk.totalMetres : 0}
+                  progress={along}
                   remainingS={remainingS}
-                />
+                />}
                 <CategoryChips
                   available={available}
                   on={activeCats}
@@ -521,8 +565,13 @@ export function App() {
                 />
               </div>
               <RouteMap
-                route={route}
-                library={onRoute.filter((e) => activeCats.has(e.category))}
+                route={roaming ? null : route}
+                mode={roaming ? "walking" : route.mode}
+                library={
+                  roaming
+                    ? state.nearby.map((n) => n.echo).filter((e) => activeCats.has(e.category))
+                    : onRoute.filter((e) => activeCats.has(e.category))
+                }
                 position={state.position}
                 opening={state.opening}
                 stateOf={stateOf}
@@ -543,32 +592,6 @@ export function App() {
                 onDownload={openPackage}
               />
               {selfDirected && <ProximityBar guidance={state.guidance} cue={state.cue} />}
-              {/*
-                The floating row, and when it is allowed to exist.
-                
-                It was guarded on `!nowPlaying`, which is the same condition as playback
-                being idle — and the row renders nothing when playback is idle. So it has
-                never once appeared, and the queue it was written to make visible has never
-                been visible.
-                
-                The guard was trying to say something true, though: the sheet carries the
-                full transport, and two players on one screen is worse than none. The
-                honest version of that is the detent. With the sheet down — the walking
-                state, three-quarters map — there is no transport on screen and this is the
-                only thing that says what is in your ears. With the sheet up there is, and
-                this gets out of the way.
-              */}
-              {detent === "peek" && <NowPlaying
-                state={state.playback}
-                waiting={state.waiting}
-                deferred={state.deferred}
-                onPause={() => session.pause()}
-                onResume={() => session.resume()}
-                onSkip={() => session.skip()}
-                progress={progress}
-                saved={nowPlaying ? chosen.has(nowPlaying.id) : false}
-                onSave={toggleSave}
-              />}
               <Sheet
                 nearby={nearby}
                 lastCapture={state.lastCapture}
@@ -614,7 +637,7 @@ export function App() {
             </>
           )}
 
-          {tab === "listening" && (
+          {planOpen && (
             <Plan
               route={route}
               items={wholeRoute}
@@ -631,12 +654,13 @@ export function App() {
               onAutoPlay={setAutoPlay}
               onPlay={(echo) => {
                 session.play(echo);
-                setTab("map");
+                setPlanOpen(false);
               }}
+              onClose={() => setPlanOpen(false)}
             />
           )}
 
-          {tab === "saved" && (
+          {tab === "echoes" && (
             <Collection
               captured={kept}
               privacy={privacy}
@@ -646,6 +670,8 @@ export function App() {
                 state.playback.kind !== "idle" && state.playback.item.echo.id === id
               }
               isHeard={(id) => stateOf(id) === "heard"}
+              saved={savedEchoes}
+              onSave={toggleSave}
             />
           )}
 
@@ -668,9 +694,9 @@ export function App() {
               suggestionCount={suggestion ? (corridorCounts[suggestion.id] ?? 0) : 0}
               onSuggestion={(next) => {
                 onSelectRoute(next);
-                walk.seekTo(0);
+                walk?.seekTo(0);
               }}
-              onAgain={() => walk.seekTo(0)}
+              onAgain={() => walk?.seekTo(0)}
             />
           )}
 
@@ -697,7 +723,34 @@ export function App() {
               onAskLocation={() => gps.start()}
               kids={kids}
               onKids={setKidsMode}
-              onDone={finishOnboarding}
+              cats={activeCats}
+              onToggleCats={(categories) =>
+                setCats((current) => {
+                  const next = new Set(current ?? ALL_CATEGORIES);
+                  if (categories.some((c) => next.has(c))) {
+                    for (const c of categories) next.delete(c);
+                  } else {
+                    for (const c of categories) next.add(c);
+                  }
+                  return next;
+                })
+              }
+              simple={simple}
+              onSimple={setSimple}
+              /* The real narrator, saying a real line, through whatever the listener has
+                 in their ears. A volume set against silence is not set. */
+              onTestLine={() => session.play(LIBRARY[0]!)}
+              routes={ROUTES}
+              onFlight={(routeId) => {
+                const found = routeId ? ROUTES.find((r) => r.id === routeId) : undefined;
+                if (found) onSelectRoute(found);
+              }}
+              onDone={(roam) => {
+                setRoaming(roam);
+                finishOnboarding();
+                // Roaming skips the package screen entirely: there is nothing to carry.
+                if (roam) setStarted(true);
+              }}
             />
           )}
 
@@ -711,6 +764,7 @@ export function App() {
               // Most recent first, and de-duplicated: two echoes at Bowling Green should
               // not read as two places.
               recentPlaces={[...new Set([...kept].reverse().map((c) => c.echo.point.place.split(",")[0]!.trim()))]}
+              onChoose={() => setPlanOpen(true)}
               onStart={(next) => {
                 if (next.id !== route.id) onSelectRoute(next);
                 setStarted(true);
@@ -723,7 +777,6 @@ export function App() {
             tab={tab}
             onChange={setTab}
             foundCount={kept.length}
-            chosenCount={chosen.size}
           />
           <div className="homebar" />
         </div>
@@ -817,7 +870,7 @@ export function App() {
           <button onClick={togglePause}>{paused ? "Resume" : "Pause"}</button>
           <button
             onClick={() => {
-              walk.seekTo(0);
+              walk?.seekTo(0);
               setStarted(false);
             }}
           >
@@ -834,7 +887,7 @@ export function App() {
           </button>
         </div>
         <p className="mono dim">
-          {walkedPercent}% along · {kept.length} found · {inCorridor} on this route ·{" "}
+          {Math.round(along * 100)}% along · {kept.length} found · {inCorridor} on this route ·{" "}
           {LIBRARY.length} in the library
         </p>
       </aside>

@@ -1,176 +1,467 @@
 /**
- * First run.
+ * First run, rebuilt against the design's own onboarding.
  *
- * The design carries one of these and we had never built it, which left the product with
- * no answer to three questions that decide whether anybody gets far enough to enjoy it.
- * It is not a welcome screen. Every step here exists because something downstream breaks
- * without it.
+ * The version this replaces was three steps written from a *list of step names* rather than
+ * from the prototype, which is the same mistake that produced an aeroplane sharing nothing
+ * with the design's aeroplane but the word. The design's flow is six steps with a back
+ * button, and each one earns its place; mine had no welcome, no interests, no headphone
+ * check, no way back, and a first step with no way forward at all.
  *
- * **Who is listening** sets kids mode, and kids mode is an *age* handed to the engine, not
- * a filter over a view (`listenerFor`). Asked once, up front, it gates the library
- * everywhere: scheduler, capture, packaging, playback. Left to be discovered later it is a
- * switch a parent finds after the wrong echo has already played.
+ * What is taken verbatim: the shape (welcome, then one decision per screen, dots and a
+ * back arrow in a fixed header), the three value cards on the welcome, interests as the
+ * same chips the map uses, audience as two cards rather than a switch, and a headphone
+ * check that plays something.
  *
- * **Headphones, then location.** These are one step on purpose. The policy in
- * `@echofinders/core` is explicit that a permission asked cold is a permission lost —
- * on iOS a refusal cannot be re-prompted, only fixed in Settings, which nobody does. So
- * the ask arrives at the one moment its reason is self-evident: the listener has just been
- * told the app finds things near them, they are holding the phone, and the button says
- * what it is for before the system prompt appears. The rationale is read from
- * `CAPABILITY_NEEDS` rather than written here, so the policy and the words a person reads
- * cannot drift apart.
+ * What is ours, and why: the design is a flight product, so its second step asks for a
+ * flight number. Ours has to ask something prior to that, because a walker has no flight
+ * and no route at all — and that question turns out to be the most important screen in the
+ * app. See `docs/04-shape-of-the-app.md`: the whole product had exactly one front door and
+ * it was the wrong one for the commonest case.
  *
- * **The journey** is last because it is the only step with a wrong answer that costs
- * nothing: pick the wrong walk and you change it in a tap. It hands off to the package
- * screen, which is where the download already lives.
- *
- * Skippable throughout, except that skipping the location step means skipping the product.
- * That is stated plainly rather than enforced with a disabled button, because a person who
- * wants to look around before granting anything should be allowed to, and the map behind
- * this is perfectly legible without a fix.
+ * Location is asked for on the step whose reason makes it obvious, and only on the path
+ * that needs it now. A permission requested cold is a permission lost — on iOS a refusal
+ * cannot be re-prompted, only fixed in Settings, which nobody does — so the words come from
+ * `CAPABILITY_NEEDS` and arrive after the listener has said they want to walk around here.
  */
 
 import { useState } from "react";
-import { CAPABILITY_NEEDS } from "@echofinders/core";
+import { CAPABILITY_NEEDS, type EchoCategory } from "@echofinders/core";
+import { CHIP_GROUPS } from "./categories";
 import type { LocationState } from "./browser-location";
 
+/**
+ * Flight number to route.
+ *
+ * A stub, and labelled as one. Real lookup is a flight-data API — you send `UA 2314` and
+ * a date, and you get back a filed route, which is the only way to know that today's UA
+ * 2314 is going where yesterday's did. Until that exists this matches the flights we have
+ * content for, so the screen can be built, used and judged now rather than waiting on a
+ * vendor decision.
+ *
+ * It is deliberately forgiving about spacing and case, because somebody is typing a code
+ * off a boarding pass on a phone.
+ */
+const FLIGHT_ROUTES: Readonly<Record<string, string>> = {
+  DL411: "jfk-mia",
+  AA118: "jfk-mia",
+  B6615: "jfk-mia",
+  UA2314: "jfk-mia",
+};
+
+export const lookupFlight = (entered: string): string | null =>
+  FLIGHT_ROUTES[entered.toUpperCase().replace(/[^A-Z0-9]/g, "")] ?? null;
+
 export interface OnboardingProps {
-  /** Ask the browser for a real fix. Resolves once the answer is known. */
   readonly onAskLocation: () => Promise<LocationState>;
   readonly kids: boolean;
   readonly onKids: (on: boolean) => void;
-  /** Done, one way or another. */
-  readonly onDone: () => void;
+  /** Which categories are on. Same set the map's chip row drives. */
+  readonly cats: ReadonlySet<EchoCategory>;
+  readonly onToggleCats: (categories: readonly EchoCategory[]) => void;
+  readonly simple: boolean;
+  readonly onSimple: (on: boolean) => void;
+  /** Hear the narrator, so a volume can be set before anybody is out in the street. */
+  readonly onTestLine: () => void;
+  /**
+   * Done. `roaming` true means free roam from here; false means they want a journey and
+   * the package screen takes over.
+   */
+  readonly onDone: (roaming: boolean) => void;
+  /** Routes we have content for, so a flight number can resolve to one. */
+  readonly routes: readonly { readonly id: string; readonly name?: string }[];
+  /** A flight number resolved to one of ours. Null clears it. */
+  readonly onFlight: (routeId: string | null) => void;
 }
 
 const LOCATION = CAPABILITY_NEEDS.find((n) => n.capability === "location-foreground")!;
 
-type Step = "who" | "sound" | "ready";
-const ORDER: readonly Step[] = ["who", "sound", "ready"];
+const ICON = {
+  walk: (
+    <>
+      <circle cx="13" cy="4" r="2" />
+      <path d="M12.5 22l-1-6-3-3 1.5-5 3 1.5 2.5 2.5M9.5 8L7 10.5M11.5 16l-3 6" />
+    </>
+  ),
+  plane: <path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V18l-2 1.5V21l3.5-1 3.5 1v-1.5L13 18v-4.5L21 16z" />,
+  ear: (
+    <>
+      <path d="M4 14v-2a8 8 0 0 1 16 0v2" />
+      <path d="M4 14a2 2 0 0 1 2-2h1v6H6a2 2 0 0 1-2-2zM20 14a2 2 0 0 0-2-2h-1v6h1a2 2 0 0 0 2-2z" />
+    </>
+  ),
+  kid: (
+    <>
+      <circle cx="12" cy="12" r="8" />
+      <path d="M9 10h.01M15 10h.01M8.5 14a5 5 0 0 0 7 0" />
+    </>
+  ),
+  pin: (
+    <>
+      <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z" />
+      <circle cx="12" cy="10" r="2.4" />
+    </>
+  ),
+};
 
-export function Onboarding({ onAskLocation, kids, onKids, onDone }: OnboardingProps) {
-  const [step, setStep] = useState<Step>("who");
+/** Bars for the headphone check. Deterministic, so it does not flicker on every render. */
+const BARS = Array.from({ length: 40 }, (_, i) => 18 + Math.abs(Math.sin(i * 0.8)) * 70);
+
+/* The journey path has one extra screen: which flight. Roaming has nothing to look up. */
+const lastStep = (roaming: boolean) => (roaming ? 5 : 6);
+
+export function Onboarding({
+  onAskLocation,
+  kids,
+  onKids,
+  cats,
+  onToggleCats,
+  simple,
+  onSimple,
+  onTestLine,
+  onDone,
+  routes,
+  onFlight,
+}: OnboardingProps) {
+  const [step, setStep] = useState(0);
+  const [roaming, setRoaming] = useState(true);
   const [asking, setAsking] = useState(false);
   const [located, setLocated] = useState<LocationState["kind"] | null>(null);
-  const index = ORDER.indexOf(step);
+  const [flight, setFlight] = useState("");
+  const matched = lookupFlight(flight);
+  const matchedRoute = matched ? routes.find((r) => r.id === matched) : undefined;
 
-  const next = () => {
-    const to = ORDER[index + 1];
-    if (to) setStep(to);
-    else onDone();
-  };
+  const next = () => setStep((s) => Math.min(lastStep(roaming), s + 1));
+  const back = () => setStep((s) => Math.max(0, s - 1));
+  const finish = () => onDone(roaming);
 
-  const ask = async () => {
+  const chosenCount = CHIP_GROUPS.filter((g) => g.categories.some((c) => cats.has(c))).length;
+
+  const askThenNext = async () => {
     setAsking(true);
-    const state = await onAskLocation();
+    setLocated((await onAskLocation()).kind);
     setAsking(false);
-    setLocated(state.kind);
-    // A refusal does not trap anybody on this screen. It is explained on the next one.
     next();
   };
 
   return (
     <div className="onb" role="dialog" aria-modal="true" aria-label="Welcome to Echo Finders">
-      <div className="onb-top">
-        <span className="onb-dots" aria-hidden="true">
-          {ORDER.map((s) => (
-            <i key={s} className={s === step ? "on" : ""} />
-          ))}
-        </span>
-        <button className="onb-skip" onClick={onDone}>
-          Skip
-        </button>
-      </div>
+      {/* The design keeps back, dots and skip in a fixed header on every step but the
+          first, which is what makes a six step flow feel like three. */}
+      {step > 0 && (
+        <div className="onb-top">
+          <button className="onb-back" onClick={back} aria-label="Back">
+            <svg viewBox="0 0 24 24">
+              <path d="M15 5l-7 7 7 7" />
+            </svg>
+          </button>
+          <span className="onb-dots" aria-hidden="true">
+            {Array.from({ length: lastStep(roaming) }, (_, i) => (
+              <i key={i} className={i < step ? "on" : ""} />
+            ))}
+          </span>
+          <button className="onb-skip" onClick={finish}>
+            Skip
+          </button>
+        </div>
+      )}
 
       <div className="onb-body">
-        {step === "who" && (
+        {step === 0 && (
+          <>
+            <p className="onb-wordmark">ECHO FINDERS</p>
+            <h2>The ground beneath you, narrated.</h2>
+            <p className="onb-lead">
+              Headphones in. Echo Finders tells you what happened where you are standing: the
+              history, the crimes, the local legends, and the places worth going to.
+            </p>
+            <Value icon={ICON.pin} title="Stories fixed to real places">
+              You have to be there. Stand on the spot and the echo syncs.
+            </Value>
+            <Value icon={ICON.ear} title="Audio first">
+              Listen with the screen off. Read along if you would rather.
+            </Value>
+            <Value icon={ICON.plane} title="Walking, driving or flying">
+              On foot it finds what is around you. In the air it follows your flight.
+            </Value>
+            <button className="onb-go" onClick={next}>
+              Get started
+            </button>
+          </>
+        )}
+
+        {step === 1 && (
+          <>
+            {/*
+              The screen the app did not have. Everything before this asked which prepared
+              route you were on, which is a real question in the air and a fiction on foot.
+            */}
+            <h2>How are you travelling?</h2>
+            <p className="onb-lead">
+              This changes what the app does, not just what it shows. You can switch later.
+            </p>
+            <button
+              className={roaming ? "onb-card on" : "onb-card"}
+              onClick={() => setRoaming(true)}
+              aria-pressed={roaming}
+            >
+              <span className="onb-ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24">{ICON.walk}</svg>
+              </span>
+              <div>
+                <b>On foot, or driving, around here</b>
+                <small>
+                  No route. It finds what is near you as you move, and you go and stand on
+                  the ones you want.
+                </small>
+              </div>
+            </button>
+            <button
+              className={!roaming ? "onb-card on" : "onb-card"}
+              onClick={() => setRoaming(false)}
+              aria-pressed={!roaming}
+            >
+              <span className="onb-ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24">{ICON.plane}</svg>
+              </span>
+              <div>
+                <b>I have a journey</b>
+                <small>
+                  A flight or a planned walk. Download it first and the stories are timed to
+                  where you will be.
+                </small>
+              </div>
+            </button>
+            <button className="onb-go" onClick={next}>
+              Continue
+            </button>
+          </>
+        )}
+
+        {step === 2 && !roaming && (
+          <>
+            <h2>Which flight are you on?</h2>
+            <p className="onb-lead">
+              We build the route, the pins and the running order from your flight number.
+            </p>
+            <input
+              className="onb-field"
+              value={flight}
+              onChange={(e) => {
+                setFlight(e.target.value);
+                onFlight(lookupFlight(e.target.value));
+              }}
+              placeholder="Flight number, e.g. DL 411"
+              autoComplete="off"
+              spellCheck={false}
+              aria-label="Flight number"
+            />
+            <button className="onb-alt onb-alt-left" onClick={next}>
+              I do not have one. Pick from a list instead.
+            </button>
+            {matchedRoute ? (
+              <div className="onb-route">
+                <b>{matchedRoute.name ?? matchedRoute.id}</b>
+                <span className="onb-route-line" aria-hidden="true">
+                  <i />
+                </span>
+                <small>Found. The next screens set up what you hear on it.</small>
+              </div>
+            ) : (
+              flight.trim().length > 2 && (
+                <p className="onb-sum">
+                  No route for that one yet. We only have content for a few flights while the
+                  library is being written.
+                </p>
+              )
+            )}
+            <button className="onb-go" onClick={next} disabled={!matchedRoute}>
+              Find my route
+            </button>
+          </>
+        )}
+
+        {((roaming && step === 2) || (!roaming && step === 3)) && (
+          <>
+            <h2>What do you want to hear?</h2>
+            <p className="onb-lead">
+              Pick as many as you like. You can change this any time from the map.
+            </p>
+            <div className="onb-chips">
+              {CHIP_GROUPS.map((group) => {
+                const lit = group.categories.some((c) => cats.has(c));
+                return (
+                  <button
+                    key={group.id}
+                    className={lit ? `onb-chip cat-${group.face} on` : "onb-chip"}
+                    onClick={() => onToggleCats(group.categories)}
+                    aria-pressed={lit}
+                  >
+                    <span className={`chip-dot cat-${group.face}`} />
+                    {group.label}
+                  </button>
+                );
+              })}
+            </div>
+            <p className="onb-sum">
+              {chosenCount} of {CHIP_GROUPS.length} on
+            </p>
+            <button className="onb-go" onClick={next}>
+              Continue
+            </button>
+          </>
+        )}
+
+        {((roaming && step === 3) || (!roaming && step === 4)) && (
           <>
             <h2>Who is listening?</h2>
             <p className="onb-lead">
-              This decides what the app will play, everywhere. You can change it later from
-              the smiley on the map.
+              Kids mode hides true crime and hauntings, and leads with the shorter stories.
             </p>
-            {/*
-              Choosing advances. There is no separate Next on this step and there should
-              not be: the answer *is* the action, and a card that records a choice and then
-              leaves somebody looking for a button they cannot find is a dead end. The first
-              build of this had exactly that, and the only way out of the screen was Skip.
-            */}
             <button
               className={!kids ? "onb-card on" : "onb-card"}
-              onClick={() => {
-                onKids(false);
-                next();
-              }}
+              onClick={() => onKids(false)}
               aria-pressed={!kids}
             >
-              <b>Just me</b>
-              <small>Everything, including the darker history. True crime stays off unless
-                you ask for it.</small>
+              <span className="onb-ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24">{ICON.ear}</svg>
+              </span>
+              <div>
+                <b>Just me</b>
+                <small>Everything on the map. True crime stays off until you ask for it.</small>
+              </div>
             </button>
             <button
               className={kids ? "onb-card on" : "onb-card"}
-              onClick={() => {
-                onKids(true);
-                next();
-              }}
+              onClick={() => onKids(true)}
               aria-pressed={kids}
             >
-              <b>There are children with me</b>
-              <small>
-                The library narrows to what suits an eight year old, and the shorter telling
-                comes on with it.
-              </small>
-            </button>
-          </>
-        )}
-
-        {step === "sound" && (
-          <>
-            <h2>Headphones on</h2>
-            <p className="onb-lead">
-              Echo Finders is heard, not read. As you get close to something you will hear a
-              sonar ping quicken, so you can find it without looking at the screen.
-            </p>
-            {/*
-              The rationale is the engine's, not a second copy of it written here. If the
-              policy changes its mind about why it needs this, the screen changes with it.
-            */}
-            <div className="onb-perm">
-              <span className="onb-perm-ic" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z" />
-                  <circle cx="12" cy="10" r="2.4" />
-                </svg>
+              <span className="onb-ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24">{ICON.kid}</svg>
               </span>
               <div>
-                <b>One permission</b>
-                <small>{LOCATION.rationale}</small>
+                <b>Kids with me</b>
+                <small>
+                  Crime and ghost stories hidden, and the shorter telling comes on with it.
+                </small>
               </div>
-            </div>
-            <button className="onb-go" onClick={() => void ask()} disabled={asking}>
-              {asking ? "Waiting for your answer…" : "Allow location"}
             </button>
-            <button className="onb-alt" onClick={next}>
-              Not yet
+            <button className="onb-go" onClick={next}>
+              Continue
             </button>
           </>
         )}
 
-        {step === "ready" && (
+        {((roaming && step === 4) || (!roaming && step === 5)) && (
           <>
-            <h2>{located === "denied" ? "No location yet" : "You are ready"}</h2>
+            <h2>Check your headphones</h2>
+            <p className="onb-lead">
+              Play the test line and set your volume now. Out in the street it is louder than
+              it is here.
+            </p>
+            <div className="onb-wave" aria-hidden="true">
+              {BARS.map((h, i) => (
+                <i key={i} style={{ height: `${h}%` }} />
+              ))}
+            </div>
+            <button className="onb-test" onClick={onTestLine}>
+              <svg viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              Play the test line
+            </button>
+            <div className="onb-row">
+              <div>
+                <b>Simple audio</b>
+                <small>Plain words, shorter. Good for kids and quick listens.</small>
+              </div>
+              <button
+                className={simple ? "onb-sw on" : "onb-sw"}
+                onClick={() => onSimple(!simple)}
+                aria-pressed={simple}
+                aria-label="Simple audio"
+              >
+                <i />
+              </button>
+            </div>
+            <button className="onb-go" onClick={next}>
+              Continue
+            </button>
+          </>
+        )}
+
+        {step === 5 && roaming && (
+          <>
+            <h2>{located === "denied" ? "No location yet" : "One permission"}</h2>
             <p className="onb-lead">
               {located === "denied"
-                ? LOCATION.ifRefused +
-                  " You can grant it later from your browser's site settings, and everything else here still works."
-                : "Pick a journey, carry it with you, and walk. Echoes open as you reach them and wait until you press play."}
+                ? `${LOCATION.ifRefused} You can grant it later from your browser's settings.`
+                : LOCATION.rationale}
             </p>
-            <button className="onb-go" onClick={onDone}>
+            {located !== "denied" && (
+              <div className="onb-perm">
+                <span className="onb-perm-ic" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">{ICON.pin}</svg>
+                </span>
+                <div>
+                  <b>Only while you are using it</b>
+                  <small>
+                    Nothing is sent to us. Where you stood stays on your phone unless you
+                    turn that on in Privacy.
+                  </small>
+                </div>
+              </div>
+            )}
+            {located === null ? (
+              <>
+                <button className="onb-go" onClick={() => void askThenNext()} disabled={asking}>
+                  {asking ? "Waiting for your answer…" : "Allow location"}
+                </button>
+                <button className="onb-alt" onClick={finish}>
+                  Not yet
+                </button>
+              </>
+            ) : (
+              <button className="onb-go" onClick={finish}>
+                Start looking
+              </button>
+            )}
+          </>
+        )}
+
+        {step === 6 && !roaming && (
+          <>
+            <h2>Pick your journey</h2>
+            <p className="onb-lead">
+              Choose the flight or the walk, and carry it with you. The next screen shows what
+              it weighs and downloads it.
+            </p>
+            <button className="onb-go" onClick={finish}>
               Choose a journey
             </button>
           </>
         )}
+      </div>
+    </div>
+  );
+}
+
+function Value({
+  icon,
+  title,
+  children,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="onb-card onb-value">
+      <span className="onb-ic" aria-hidden="true">
+        <svg viewBox="0 0 24 24">{icon}</svg>
+      </span>
+      <div>
+        <b>{title}</b>
+        <small>{children}</small>
       </div>
     </div>
   );

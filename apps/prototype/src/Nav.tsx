@@ -1,6 +1,16 @@
 /**
  * The tab bar.
  *
+ * Three, not four. "Listening" was never a place: it was a decision about a journey —
+ * which echoes should play themselves as you reach them — and as a top level destination
+ * it competed with the map for the same job and lost, because on the map you can simply
+ * press play. It survives as a control on the package screen, where you are already
+ * deciding what to carry.
+ *
+ * Found and Saved were two halves of one idea. Echoes you stood on and echoes you meant to
+ * are both *yours*; one is a record and the other is an intention, and a person holds them
+ * in the same mental drawer. One tab, sections inside it.
+ *
  * The design's, minus Stories until there is a library to browse.
  *
  * The names are worth more than they look, and they are better than the ones they replace.
@@ -18,16 +28,15 @@
 
 import { memo } from "react";
 
-export type Tab = "map" | "listening" | "saved" | "settings";
+export type Tab = "map" | "echoes" | "settings";
 
 interface Props {
   readonly tab: Tab;
   readonly onChange: (tab: Tab) => void;
   readonly foundCount: number;
-  readonly chosenCount: number;
 }
 
-function NavInner({ tab, onChange, foundCount, chosenCount }: Props) {
+function NavInner({ tab, onChange, foundCount }: Props) {
   return (
     <nav className="nav">
       <button className={tab === "map" ? "on" : ""} onClick={() => onChange("map")}>
@@ -36,33 +45,12 @@ function NavInner({ tab, onChange, foundCount, chosenCount }: Props) {
         </svg>
         Map
       </button>
-      <button className={tab === "listening" ? "on" : ""} onClick={() => onChange("listening")}>
-        {/* Headphones, as the design has it — the product's one universal assumption. */}
-        <svg viewBox="0 0 24 24">
-          <path d="M4 14v-2a8 8 0 0 1 16 0v2" />
-          <path d="M4 14a2 2 0 0 1 2-2h1v6H6a2 2 0 0 1-2-2zM20 14a2 2 0 0 0-2-2h-1v6h1a2 2 0 0 0 2-2z" />
-        </svg>
-        Listening
-        {chosenCount > 0 && <span className="badge">{chosenCount}</span>}
-      </button>
-      {/*
-        "Found", not "Saved" — and the rename is a bug fix.
-
-        This tab shows the collection: the places you actually stood. The bookmark button
-        on every card, the one on the rail and the sheet's own third tab all mean the other
-        thing, the echoes you picked out to listen to. Both were called Saved, both carried
-        a count, and the two counts are never the same — the screen said "Saved 0" beside
-        "Saved 3" and neither was wrong. A collection is a record of where you have been;
-        a saved list is a plan for where you are going.
-
-        The bookmark went with the name. A pin with a tick is the record.
-      */}
-      <button className={tab === "saved" ? "on" : ""} onClick={() => onChange("saved")}>
+      <button className={tab === "echoes" ? "on" : ""} onClick={() => onChange("echoes")}>
         <svg viewBox="0 0 24 24">
           <path d="M12 21.5s7-5.7 7-11.1A7 7 0 0 0 5 10.4c0 5.4 7 11.1 7 11.1z" />
           <path d="M9 10.2l2.2 2.2L15 8.6" />
         </svg>
-        Found
+        My Echoes
         {foundCount > 0 && <span className="badge">{foundCount}</span>}
       </button>
       <button className={tab === "settings" ? "on" : ""} onClick={() => onChange("settings")}>

@@ -72,7 +72,11 @@ export function Player({
       {/* The header stays with the transport rather than above the tabs, so switching to
           the transcript does not lose track of what is actually playing. */}
       <div className="phead">
-        <button className="playing-orb" onClick={onPlayPause} aria-label={playing ? "Pause" : "Play"}>
+        <button
+          className={playing ? "playing-orb is-playing" : "playing-orb"}
+          onClick={onPlayPause}
+          aria-label={playing ? "Pause" : "Play"}
+        >
           {playing ? (
             <svg viewBox="0 0 24 24">
               <rect x="6" y="4" width="4" height="16" rx="1.2" />

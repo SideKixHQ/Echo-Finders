@@ -31,6 +31,8 @@ export interface PreflightProps {
   /** Whatever the app is already showing, so "Find my route" does not move you somewhere else. */
   readonly current: Route;
   readonly onStart: (route: Route) => void;
+  /** Open the list of what this journey passes, to pick what plays itself. */
+  readonly onChoose: () => void;
   /** How many echoes are already collected. Zero is a first-time listener. */
   readonly foundCount: number;
   /** The last few places they stood, most recent first. Shown, not counted. */
@@ -43,6 +45,7 @@ export function Preflight({
   library,
   current,
   onStart,
+  onChoose,
   foundCount,
   recentPlaces,
 }: PreflightProps) {
@@ -153,6 +156,12 @@ export function Preflight({
             ))}
           </div>
         )}
+
+        {/* Where "Listening" went. It is a decision about this journey, so it lives on the
+            screen where the journey is being decided. */}
+        <button className="pf-alt" onClick={onChoose}>
+          Choose what plays itself ({journey.echoes.length} on this route)
+        </button>
 
         <button className="pf-go" onClick={() => onStart(picked)}>
           {returning && !choosing ? "Carry on" : "Find my route"}

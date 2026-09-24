@@ -1176,7 +1176,10 @@ body {
    still there above the chips, but what you are listening to is the thing you are using. */
 /* The three detents. Set on `.screen` rather than on the sheet so the guidance bar and
    the player, which float above it, move with it. */
-.screen:has(.sheet-peek) { --sheet-h: 26dvh; }
+/* Peek is the height of one row, not a fraction of the screen. 26dvh left a hundred
+   pixels of empty sheet under the now-playing bar, which is a hundred pixels of map given
+   away for nothing. */
+.screen:has(.sheet-peek) { --sheet-h: 132px; }
 /* 46, not 52. At 52 the sheet plus the tab bar plus the route ribbon left the map 16% of
    the screen — the complaint that started all this — and the band was too short for the
    control rail to wrap into fewer than four columns. Six points of height buys back both,
@@ -1849,3 +1852,147 @@ body {
 .rate-btn.on { border-color: var(--aqua); color: var(--aqua); background: rgba(var(--rgb-accent), 0.12); }
 .rate-btn.on svg { fill: currentColor; stroke: none; }
 .rate-btn.on.down { border-color: var(--muted); color: var(--muted); background: rgba(var(--rgb-hair), 0.1); }
+
+/* ── Onboarding, to the design's own flow ─────────────────────────────────────
+   Six steps with a fixed header, which is what makes six feel like three. */
+.onb-back, .onb-skip {
+  background: none; border: 0; cursor: pointer; font: inherit; color: var(--muted);
+  padding: 6px 2px; display: grid; place-items: center;
+}
+.onb-back svg {
+  width: 20px; height: 20px; fill: none; stroke: currentColor;
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.onb-skip { font-size: 12px; }
+.onb-wordmark {
+  font-family: "Space Grotesk", monospace; font-size: 13px; letter-spacing: 0.22em;
+  font-weight: 600; color: var(--aqua); margin-bottom: 8px;
+}
+/* A value card is a claim with a glyph, not a choice. It must not look pressable. */
+.onb-card { display: flex; gap: 12px; align-items: flex-start; }
+.onb-value { cursor: default; background: none; border-color: transparent; padding: 9px 0; }
+.onb-ic { flex: none; color: var(--aqua); }
+.onb-ic svg {
+  width: 20px; height: 20px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.onb-card.on .onb-ic { color: var(--aqua); }
+
+.onb-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
+.onb-chip {
+  display: flex; align-items: center; gap: 7px; padding: 9px 13px; border-radius: 99px;
+  border: 1px solid var(--line-2); background: none; cursor: pointer; font: inherit;
+  font-size: 12px; color: var(--muted);
+}
+.onb-chip.on { background: rgba(var(--rgb-hair), 0.08); border-color: currentColor; }
+.onb-sum {
+  font-family: "Space Grotesk", monospace; font-size: 11px; color: var(--muted);
+  margin: 6px 0 14px;
+}
+
+.onb-wave {
+  display: flex; align-items: center; gap: 3px; height: 54px; margin: 6px 0 14px;
+}
+.onb-wave i {
+  flex: 1; border-radius: 99px; background: rgba(var(--rgb-accent), 0.35); display: block;
+}
+.onb-test {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; padding: 13px; border-radius: 14px; cursor: pointer; font: inherit;
+  background: none; border: 1px solid var(--line-2); color: var(--white); font-size: 13px;
+  margin-bottom: 14px;
+}
+.onb-test svg { width: 15px; height: 15px; fill: currentColor; }
+
+.onb-row {
+  display: flex; align-items: center; gap: 12px; padding: 13px 0; margin-bottom: 10px;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.onb-row div { flex: 1; }
+.onb-row b { display: block; font-size: 13px; font-weight: 500; margin-bottom: 3px; }
+.onb-row small { display: block; font-size: 11.5px; line-height: 1.5; color: var(--muted); }
+.onb-sw {
+  flex: none; width: 44px; height: 26px; border-radius: 99px; cursor: pointer; padding: 0;
+  border: 1px solid var(--line-2); background: rgba(var(--rgb-hair), 0.1); position: relative;
+}
+.onb-sw i {
+  position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--cool); transition: 0.18s var(--ease);
+}
+.onb-sw.on { background: rgba(var(--rgb-accent), 0.25); border-color: var(--aqua); }
+.onb-sw.on i { left: 20px; background: var(--aqua); }
+
+/* Back out of the plan, which is now reached from the package screen rather than a tab. */
+.plan-close {
+  background: none; border: 0; cursor: pointer; padding: 0 0 8px; color: var(--muted);
+  display: block;
+}
+.plan-close svg {
+  width: 20px; height: 20px; fill: none; stroke: currentColor;
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+/* Saved but never stood on. Quieter than a capture, because it is an intention. */
+.entry-wish .entry-glyph { opacity: 0.75; }
+.entry-wish .entry-text h4 { color: var(--cool); }
+
+/* Flight number, and what it resolved to. */
+.onb-field {
+  width: 100%; padding: 14px 15px; border-radius: 14px; font: inherit; font-size: 15px;
+  background: rgba(var(--rgb-panel), 0.55); border: 1px solid var(--line-2);
+  color: var(--white); margin-bottom: 4px;
+  font-family: "Space Grotesk", monospace; letter-spacing: 0.06em;
+}
+.onb-field::placeholder { color: var(--muted); letter-spacing: 0; font-family: inherit; }
+.onb-field:focus { outline: none; border-color: var(--aqua); }
+.onb-alt-left { text-align: left; padding-left: 2px; }
+.onb-route {
+  padding: 14px 15px; border-radius: 14px; margin: 6px 0 16px;
+  background: rgba(var(--rgb-accent), 0.07); border: 1px solid rgba(var(--rgb-accent), 0.28);
+}
+.onb-route b { display: block; font-size: 13.5px; font-weight: 500; }
+.onb-route-line {
+  display: block; height: 2px; margin: 9px 0; border-radius: 2px;
+  background: rgba(var(--rgb-hair), 0.16); position: relative;
+}
+.onb-route-line i {
+  position: absolute; inset: 0 auto 0 0; width: 38%; border-radius: 2px;
+  background: var(--aqua); box-shadow: 0 0 8px var(--aqua);
+}
+.onb-route small { display: block; font-size: 11.5px; color: var(--muted); }
+
+/* ── Peek is the map, plus one row ────────────────────────────────────────────
+   Verbatim from the design (`design/SPEC.md`):
+
+       .sheet[data-h="peek"] .wave, .times, .ctrls, .simpaud,
+       .voicepick, .plain, .tabs, .list, .foot { display: none }
+
+   I extracted that rule weeks ago and never applied it, which is most of why the
+   app never felt like the design. At peek mine showed the transport, the tabs,
+   "coming up" and the list all at once, in two hundred pixels, over a map that
+   had been squeezed to a strip. The design shows one row: what is playing, a
+   play button and a bookmark. Everything else is one swipe away.
+
+   The same element throughout, progressively revealed, so swiping up never swaps
+   a component out from under a thumb. */
+.sheet-peek .wave,
+.sheet-peek .player-time,
+.sheet-peek .player-row,
+.sheet-peek .simpaud,
+.sheet-peek .narrator,
+.sheet-peek .rate-row,
+.sheet-peek .segs,
+.sheet-peek .list,
+.sheet-peek .upnext,
+.sheet-peek .plate-strip,
+.sheet-peek .rarity-why { display: none; }
+/* No border under the row when it is the only thing there. */
+.sheet-peek .phead { border-bottom: 0; }
+
+/* The transport's own colour tells you which way it will go: indigo to start, ember to
+   stop. The design does this and it is the difference between reading the icon and
+   recognising the button. */
+.playing-orb.is-playing,
+.play.is-playing {
+  background: linear-gradient(140deg, var(--ember), #d17800);
+  box-shadow: 0 0 20px rgba(255, 158, 18, 0.45);
+}
