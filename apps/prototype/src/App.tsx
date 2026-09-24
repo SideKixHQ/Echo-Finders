@@ -330,7 +330,6 @@ export function App() {
       return next;
     });
   }, []);
-  const openPlan = useCallback(() => setTab("listening"), []);
   const openPackage = useCallback(() => setStarted(false), []);
   const setKidsMode = useCallback((on: boolean) => {
     setKids(on);
@@ -415,18 +414,8 @@ export function App() {
               <Rail
                 theme={theme}
                 onTheme={setTheme}
-                routes={ROUTES}
-                route={route}
-                onRoute={onSelectRoute}
-                counts={corridorCounts}
-                available={available}
-                on={activeCats}
-                onToggle={toggleCategory}
-                onAll={allCategories}
                 kids={kids}
                 onKids={setKidsMode}
-                savedCount={chosen.size}
-                onSaved={openPlan}
                 overview={overview}
                 onOverview={setOverview}
                 downloaded={started}

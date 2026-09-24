@@ -463,12 +463,21 @@ export function RouteMap({
  * flight and not noticed is looking at a map that behaves nothing like the one they think
  * they are reading. One glyph, glanced at, is cheaper than a label nobody reads.
  *
+ * **In the air this is the design's own aeroplane**, and it is worth saying what that
+ * changes, because the version before it shared nothing with the design but the word: a
+ * 15px aqua outline sitting inside a dark disc with a ring round it. The design's is a
+ * 32px glyph, *filled white*, with an aqua glow thrown behind it, standing on nothing at
+ * all — and the difference is not fussiness. A disc is a pin, and a pin says *a thing is
+ * here*; the whole point of the aircraft mark is that it is not a place, it is you, moving.
+ * Path and treatment are lifted verbatim from `design/SPEC.md`.
+ *
  * Heading is drawn two ways, and the split is about what view the glyph is in rather than
  * about which modes matter. A plane is drawn from above — the same view the map is in — so
- * it can simply point where it is going, which is how every flight tracker ever made draws
- * it. A person, a car and a bicycle are drawn from the side, and rotating a side view is
- * how you get a pedestrian lying down at the top of the screen. Those keep their feet and
- * get a pip on the rim instead.
+ * it simply points where it is going, which is how the design does it and how every flight
+ * tracker ever made does it. A person, a car and a bicycle are drawn from the side, and
+ * rotating a side view is how you get a pedestrian lying down at the top of the screen.
+ * Those keep their feet, keep the disc that makes them legible over streets, and get a pip
+ * on the rim instead.
  *
  * `headingDeg` is course over ground, not compass facing: it is which way you are moving,
  * not which way you are pointing. Standing still it is meaningless, and the route profile
@@ -486,21 +495,43 @@ function Here({
   mode: TravelMode;
   headingDeg: number | null;
 }) {
-  // Drawn from above, so the glyph itself can carry the heading.
-  const planView = mode === "flight";
-  const spin = headingDeg !== null ? `rotate(${headingDeg.toFixed(1)})` : undefined;
+  const spin = headingDeg !== null ? `rotate(${headingDeg.toFixed(1)})` : "";
+
+  // In the air, the design's mark exactly: 32 across, filled, glowing, on nothing.
+  if (mode === "flight") {
+    return (
+      <g
+        className="here here-flight"
+        transform={`translate(${x.toFixed(1)} ${y.toFixed(1)}) ${spin}`}
+      >
+        <g transform="translate(-16 -16) scale(1.3333)">
+          <path className="here-plane" d={PLANE} />
+        </g>
+      </g>
+    );
+  }
 
   return (
     <g className={`here here-${mode}`} transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`}>
       <circle r="26" fill="url(#hereGlow)" />
-      {spin && !planView && <path className="here-pip" d="M0 -25.5L5.4 -16.5H-5.4Z" transform={spin} />}
+      {spin && <path className="here-pip" d="M0 -25.5L5.4 -16.5H-5.4Z" transform={spin} />}
       <circle className="here-disc" r="13" />
-      <g className="here-figure" transform={`${planView && spin ? spin : ""} translate(-7.5 -7.5) scale(0.625)`}>
+      <g className="here-figure" transform="translate(-7.5 -7.5) scale(0.625)">
         {MODE_ICON[mode] ?? MODE_ICON.walking}
       </g>
     </g>
   );
 }
+
+/**
+ * The design's aeroplane, verbatim.
+ *
+ * Drawn in a 24 box and scaled to the 32 the design renders it at. Do not redraw it: the
+ * last two attempts to approximate this from memory produced something that read as a
+ * different product.
+ */
+const PLANE =
+  "M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V18l-2 1.5V21l3.5-1 3.5 1v-1.5L13 18v-4.5L21 16z";
 
 /**
  * How long one ring takes to go out, in seconds.

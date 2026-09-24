@@ -58,7 +58,7 @@
    * while underneath it. Deriving them from one number means the next change to the sheet
    * moves the guidance bar and the player with it.
    */
-  --nav-h: 72px;
+  --nav-h: 74px;
   --sheet-h: 400px;
 }
 
@@ -220,6 +220,11 @@ body {
 }
 /* Which way you are moving, for the glyphs drawn from the side — a plane turns instead. */
 .here-pip { fill: var(--aqua); stroke: none; opacity: 0.9; }
+/* The design's aircraft: filled white, an aqua glow, and nothing behind it. */
+.here-plane {
+  fill: var(--white); stroke: none;
+  filter: drop-shadow(0 0 9px rgba(var(--rgb-accent), 0.9));
+}
 
 /* ── proximity bar: the haptic, made visible ─────────────── */
 .proximity {
@@ -296,13 +301,15 @@ body {
 .playing-place {
   font-size: 10.5px; color: var(--muted); font-family: "Space Grotesk", monospace;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+
 }
 .playing-mark {
-  flex: none; width: 34px; height: 34px; border-radius: 11px; cursor: pointer;
+  flex: none; width: 38px; height: 38px; border-radius: 12px; cursor: pointer;
   display: grid; place-items: center;
   background: transparent; color: var(--ember); border: 1px solid rgba(255, 158, 18, 0.45);
+
 }
-.playing-mark svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
+.playing-mark svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
 /* Skip is drawn filled; the bookmark is an outline until it is one of yours. */
 .playing-mark:last-of-type svg { fill: currentColor; stroke: none; }
 .playing-mark.on { background: var(--ember); color: #1a1000; border-color: var(--ember); }
@@ -355,7 +362,7 @@ body {
 /* ── route ribbon ────────────────────────────────────────── */
 .ribbon {
   display: flex; align-items: center; gap: 10px; flex: none;
-  padding: 9px 13px; border-radius: 13px;
+  padding: 9px 14px; border-radius: 99px;
   background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
 }
 .ribbon b {
@@ -402,10 +409,11 @@ body {
   border-right: 1px solid var(--line); border-radius: 9px 0 0 9px;
   margin-right: 3px; padding-right: 11px;
 }
-.chip-all.on { color: var(--aqua); background: none; }
+.chip-all.on { color: var(--aqua); background: none; 
+}
 .chip-dot {
   width: 7px; height: 7px; border-radius: 50%; flex: none;
-  background: currentColor; opacity: 0.45;
+  background: currentColor; opacity: 0.4;
 }
 .chip.on { background: rgba(var(--rgb-hair), 0.08); }
 .chip.on .chip-dot { opacity: 1; }
@@ -571,12 +579,12 @@ body {
 .plan-auto-on .plan-auto-text small { color: var(--ember); }
 
 /* ── coming up ───────────────────────────────────────────── */
-.upnext { padding: 2px 16px 8px; flex: none; }
+.upnext { padding: 2px 16px 8px; flex: none; 
+}
 .upnext-head {
   display: block; font-family: "Space Grotesk", monospace;
-  font-size: 8.5px; letter-spacing: 0.15em; text-transform: uppercase;
-  color: var(--muted); margin-bottom: 6px;
-}
+  font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 6px; margin: 4px 2px 0;}
 .upnext ul { display: flex; flex-direction: column; gap: 3px; }
 .upnext button {
   display: flex; align-items: center; gap: 10px; width: 100%;
@@ -688,21 +696,31 @@ body {
 
 /* ── segmented tabs ──────────────────────────────────────── */
 .segs {
-  display: flex; align-items: center; gap: 4px; flex: none;
-  padding: 0 14px; border-bottom: 1px solid var(--line);
+  display: flex; align-items: center; gap: 2px; flex: none;
+  padding: 0 16px; border-bottom: 1px solid var(--line);
+
 }
+/* `flex: 1` is the whole reason the design's `padding: 10px 0` works: each tab owns an
+   equal column and its label centres in it. Taking the padding without the flex — which is
+   what I did on the first pass through the spec — leaves three labels shrink-wrapped to
+   their own text with two pixels between them, which is how "Around youTranscriptSaved"
+   happens. Copy a value and you have to copy what it depends on. */
 .seg {
-  background: none; border: 0; cursor: pointer; font: inherit; font-size: 12.5px;
-  color: var(--muted); padding: 11px 10px; position: relative;
+  flex: 1; text-align: center;
+  background: none; border: 0; cursor: pointer; font: inherit; font-size: 11px;
+  color: var(--muted); padding: 10px 0; position: relative;
 }
 .seg.on { color: var(--white); font-weight: 500; }
+/* Full width of the tab, as the design's `border-bottom` is — inset by six pixels it
+   underlined the word rather than the column. */
 .seg.on::after {
-  content: ""; position: absolute; left: 6px; right: 6px; bottom: -1px; height: 2px;
-  background: var(--aqua); border-radius: 2px;
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px;
+  background: var(--aqua);
 }
 .seg-count {
-  display: inline-block; margin-left: 6px; padding: 1px 6px; border-radius: 99px;
-  font-size: 9.5px; background: rgba(var(--rgb-hair), 0.12); color: var(--muted);
+  display: inline-block; margin-left: 5px; padding: 1px 6px; border-radius: 99px;
+  font-family: "Space Grotesk", monospace; font-size: 9.5px;
+  background: rgba(var(--rgb-accent), 0.16); color: var(--aqua);
 }
 
 /* ── transcript ──────────────────────────────────────────── */
@@ -853,34 +871,38 @@ body {
 }
 .grab { width: 38px; height: 4px; border-radius: 99px; background: rgba(var(--rgb-hair), 0.3); margin: 11px auto 6px; flex: none; }
 
-.now { padding: 4px 16px 9px; flex: none; }
+.now { padding: 2px 16px 12px; flex: none; }
 .now-top { display: flex; gap: 11px; align-items: center; }
 .now-text { min-width: 0; flex: 1; }
-/* Two lines of title at most: a long one used to push place and length onto a fourth and
-   fifth line and turn a row into a paragraph. */
+/* One line, as the design's `.nowtxt h5` is. The row is a row: a title that wraps pushes
+   the place, the length and the rarity line down and turns it into a paragraph. The full
+   title is on the card below and in the player. */
 .now h2 {
-  font-size: 14.5px; font-weight: 600; line-height: 1.22; margin: 2px 0 1px;
-  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
-  overflow: hidden;
+  font-size: 13.5px; font-weight: 500; line-height: 1.22; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
-.now p { font-size: 12px; color: var(--muted); }
+.now p { font-size: 10.5px; color: var(--muted); margin: 2px 0 0;}
 /* One line, for the place-and-length line under a found echo. Not for the idle panel,
    whose paragraph is two sentences of explanation and was being cut off mid-word. */
 .now:not(.now-idle) .now-text p {
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
-.now-idle h2 { font-size: 14px; color: var(--cool); }
+.now-idle h2 { font-size: 14px; color: var(--cool); 
+}
 
 .play {
-  width: 42px; height: 42px; flex: none; border: 0; border-radius: 50%;
-  background: var(--indigo-btn); color: #fff; display: grid; place-items: center; cursor: pointer;
+  width: 46px; height: 46px; flex: none; border: 0; border-radius: 50%;
+  /* The design's orb is a gradient with a glow behind it, not a flat indigo disc. */
+  background: linear-gradient(140deg, var(--indigo), #4a41d6);
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.45);
+  color: #fff; display: grid; place-items: center; cursor: pointer;
+
 }
-.play svg { width: 16px; height: 16px; fill: currentColor; }
+.play svg { width: 19px; height: 19px; fill: currentColor; 
+}
 
 .tag {
   display: inline-block; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
-  padding: 2px 7px; border-radius: 6px; font-family: "Space Grotesk", monospace;
-}
+  padding: 2px 7px; border-radius: 6px; font-family: "Space Grotesk", monospace; gap: 5px; font-weight: 500; margin-bottom: 3px;}
 .tag-common { background: rgba(var(--rgb-hair), 0.12); color: var(--cool); }
 .tag-uncommon { background: rgba(108, 99, 255, 0.22); color: var(--indigo-soft); }
 .tag-rare { background: rgba(255, 158, 18, 0.16); color: var(--ember); }
@@ -889,11 +911,12 @@ body {
 /* Matches the floating row's, so keeping an echo is the same gesture in the same place
    whichever of the two is on screen. */
 .now-mark {
-  flex: none; width: 34px; height: 34px; border-radius: 11px; cursor: pointer;
+  flex: none; width: 38px; height: 38px; border-radius: 12px; cursor: pointer;
   display: grid; place-items: center;
   background: transparent; color: var(--ember); border: 1px solid rgba(255, 158, 18, 0.45);
+
 }
-.now-mark svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
+.now-mark svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
 .now-mark.on { background: var(--ember); color: #1a1000; border-color: var(--ember); }
 .now-mark.on svg { fill: currentColor; }
 
@@ -905,11 +928,12 @@ body {
   color: var(--muted); font-family: "Space Grotesk", monospace;
   border-top: 1px solid var(--line);
 }
-.count { color: var(--ember); }
+.count { color: var(--ember); 
+}
 
 .list {
   overflow-y: auto; flex: 1; min-height: 100px; scrollbar-width: none;
-  padding: 4px 14px 14px; display: flex; flex-direction: column; gap: 8px;
+  padding: 12px 14px 16px; display: flex; flex-direction: column; gap: 9px;
 }
 .list::-webkit-scrollbar { display: none; }
 .list .empty { font-size: 12px; color: var(--muted); padding: 14px 8px; }
@@ -973,19 +997,21 @@ body {
 /* ── tab bar ─────────────────────────────────────────────── */
 .nav {
   position: absolute; left: 0; right: 0; bottom: 0; z-index: 50;
-  height: 72px; padding-bottom: 14px;
+  height: 74px; padding-bottom: 14px;
   display: flex; align-items: center;
   background: rgba(var(--rgb-panel), 0.96);
   border-top: 1px solid var(--line);
   backdrop-filter: blur(12px);
+
 }
 .nav button {
   flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;
   background: none; border: 0; cursor: pointer; position: relative;
-  font-size: 9.5px; letter-spacing: 0.06em; color: var(--muted);
+  font-size: 9.5px; letter-spacing: 0.03em; color: var(--muted);
   font-family: "Space Grotesk", monospace; text-transform: uppercase;
+
 }
-.nav button svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.nav button svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .nav button.on { color: var(--aqua); }
 /* A count of echoes found, so it is ember. The tab label beside it stays aqua, because
    that is a control. */
@@ -1518,105 +1544,60 @@ body {
   .ripple-ring-3 { transform: scale(2); }
 }
 
-/* ── The control rail ─────────────────────────────────────────────────────────
-   Vertical, because the map is the one surface that cannot spare height: the
-   sheet already takes half the screen, and a horizontal strip would take more of
-   what is left. Down the side costs 44px of width, which the map has. */
-/* Seven controls is 320px of rail, and at the half detent the strip of map between the
-   category chips and the sheet is about 150. Rather than clip three buttons off the bottom
-   where nobody would know they existed, the column wraps: it is one tall rail when the
-   sheet is down and two or three short ones when it is up, and every control stays on
-   screen at every height. `wrap-reverse` is what makes the new columns grow leftwards,
-   into the map, instead of off the right edge of the phone. */
+/* ── The control column ───────────────────────────────────────────────────────
+   The design's `.fabs`: four plain toggles, bottom-anchored above the sheet.
+   Every number here is measured (`design/SPEC.md`) — 42px, 14px radius, 8px
+   gap, 18px glyphs — rather than eyeballed, which is what the last three
+   versions of this block were.
+
+   Bottom-anchored, not top. The column belongs just above the sheet, where a
+   thumb already is, and anchoring it there is also what keeps it out of the
+   way as the sheet rises. The design hardcodes `bottom:198px` because its
+   detents are fixed; ours are not, so it is derived from the same variables
+   the sheet and the guidance bar use. Same intent, one number instead of
+   three. */
 .rail {
-  position: absolute; right: 10px; z-index: 26;
-  top: calc(46px + 84px);
-  /* The guidance bar sits in this band too, and a rail that wrapped into it put the
-     filter button on top of "getting warmer". `--guide-h` is zero on the carried modes,
-     which do not draw one. */
-  max-height: calc(
-    100% - 130px - var(--nav-h) - var(--sheet-h)
-    - var(--guide-h, 56px) - var(--now-h, 0px) - 10px
-  );
-  display: flex; flex-flow: column wrap-reverse; gap: 8px;
-  align-content: flex-start;
-  /* The column is as tall as the band whether or not it is full, and an empty stretch of
-     it must not swallow taps meant for the map underneath. */
-  pointer-events: none;
+  position: absolute; right: 14px; z-index: 26;
+  bottom: calc(var(--nav-h) + var(--sheet-h) + var(--guide-h, 56px) + var(--now-h, 0px) + 12px);
+  display: flex; flex-direction: column; gap: 8px;
+  transition: bottom 0.34s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.2s linear;
 }
-.rail > * { pointer-events: auto; }
-/* At the full detent there is no map left to control. Same rule the guidance bar follows. */
-/*
- * Faded rather than dropped. Both of these states cover the map completely, so there is
- * nothing left for the rail to control and it goes — but a row of buttons that vanishes
- * between one frame and the next reads as a glitch, and the sheet it is making way for
- * takes a quarter of a second to arrive. It comes back the moment the sheet is pulled
- * down, which is the same gesture that brought it up.
- */
-.screen:has(.sheet-full) .rail,
-.screen:has(.sheet-playing.sheet-half) .rail {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.16s var(--ease), visibility 0s linear 0.16s;
+.fab {
+  width: 42px; height: 42px; flex: none; cursor: pointer;
+  border-radius: 14px; background: rgba(var(--rgb-panel), 0.94);
+  border: 1px solid var(--line); display: grid; place-items: center;
+  color: var(--cool); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  transition: height 0.26s cubic-bezier(0.32, 0.72, 0, 1),
+    margin 0.26s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.18s linear;
 }
-.rail { transition: opacity 0.2s var(--ease); }
-/* Nobody diverts an aircraft towards a good story, so there is no guidance bar in the
-   carried modes and the rail gets the height back. */
-.stack-noguide,
-.screen:has(.sheet-playing.sheet-half) { --guide-h: 0px; }
-/* The floating player takes the bottom of the same band. Without this the last button on
-   the rail sat underneath it — present, tappable nowhere, which is worse than absent. */
-.screen:has(.playing) { --now-h: 110px; }
-.rail-btn {
-  position: relative; width: 40px; height: 40px; flex: none;
-  display: grid; place-items: center; cursor: pointer; border-radius: 13px;
-  background: rgba(var(--rgb-panel), 0.82); border: 1px solid var(--line-2);
-  backdrop-filter: blur(10px); color: var(--cool);
-  transition: color 0.18s var(--ease), border-color 0.18s var(--ease);
-}
-.rail-btn svg {
-  width: 19px; height: 19px; fill: none; stroke: currentColor;
+.fab svg {
+  width: 18px; height: 18px; stroke: currentColor; fill: none;
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
-.rail-btn:hover { color: var(--white); border-color: var(--cool); }
-.rail-btn.on { color: var(--space); background: var(--aqua); border-color: var(--aqua); }
-/* A filter that is doing something should say so without being opened. */
-.rail-btn.marked { color: var(--ember); border-color: rgba(255, 158, 18, 0.5); }
-.rail-btn em {
-  position: absolute; top: -5px; right: -5px; font-style: normal;
-  min-width: 17px; padding: 0 4px; border-radius: 99px;
-  font-family: "Space Grotesk", monospace; font-size: 10px; line-height: 17px;
-  background: var(--ember); color: #1a1000; text-align: center;
+.fab.on { background: var(--aqua); color: #042220; border-color: var(--aqua); }
+
+/* No map left to control. The same rule the guidance bar already follows. */
+.screen:has(.sheet-full) .rail,
+.screen:has(.sheet-playing.sheet-half) .rail { opacity: 0; pointer-events: none; }
+
+/* How the design handles a rising sheet: one button collapses to nothing rather
+   than the column wrapping into a second row over the map. */
+.screen:has(.sheet-half) .rail-pack {
+  height: 0; margin-top: -8px; border-width: 0; opacity: 0;
+  pointer-events: none; overflow: hidden;
 }
 
-.rail-pop {
-  /* Clear of the rail's full width, not of one column: once it wraps, `right: 48px` put
-     the panel on top of the buttons it had just been opened from. */
-  position: absolute; right: 100%; margin-right: 8px; top: 0; width: 168px;
-  display: flex; flex-direction: column; gap: 2px; padding: 6px;
-  border-radius: 14px; background: rgba(var(--rgb-panel), 0.94);
-  border: 1px solid var(--line-2); backdrop-filter: blur(14px);
-  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.45);
+/* The basemap. Dimmed and desaturated so it stays underneath: the design's grey is a
+   backdrop for the route and the pins, not a thing to read. */
+.map-tile { opacity: 0.85; }
+/* Legible on either basemap without competing with anything: the grey canvases are pale
+   in light and near-black in dark, so the credit takes its contrast from the theme's own
+   muted ink rather than a fixed colour that would disappear in one of them. */
+.map-credit {
+  fill: var(--muted); opacity: 0.75; font-size: 8.5px;
+  font-family: "Space Grotesk", monospace; pointer-events: none;
+  paint-order: stroke; stroke: rgba(var(--rgb-panel), 0.6); stroke-width: 2.4;
 }
-/* Anchored to the button they belong to. Recentre and download sit above both, so these
-   are the third and fourth slots at 48px a slot. */
-.rail-pop-mode { top: 96px; }
-.rail-pop-filter { top: 144px; max-height: 46dvh; overflow-y: auto; scrollbar-width: none; }
-.rail-pop-filter::-webkit-scrollbar { display: none; }
-.rail-item {
-  display: flex; align-items: center; gap: 9px; width: 100%;
-  padding: 9px 10px; border-radius: 9px; cursor: pointer; font: inherit;
-  font-size: 12.5px; color: var(--muted); background: none; border: 0; text-align: left;
-}
-.rail-item svg { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
-.rail-item span { flex: 1; }
-.rail-item em {
-  font-style: normal; font-family: "Space Grotesk", monospace;
-  font-size: 10.5px; color: var(--muted);
-}
-.rail-item:hover { background: rgba(var(--rgb-hair), 0.07); color: var(--white); }
-.rail-item.on { color: var(--white); background: rgba(var(--rgb-accent), 0.12); }
-.rail-dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; flex: none !important; }
 
 /* The commentary keeps the demo-only controls — pause, seek, narration — that have no
    place on a rail a real listener would use. */
@@ -1633,10 +1614,3 @@ body {
   paint-order: stroke; stroke: rgba(var(--rgb-panel), 0.6); stroke-width: 2.4;
 }
 
-/* Kids mode is the one rail button that changes what the app is rather than what it shows,
-   so it gets the ember rather than the aqua the panels use. */
-.rail-btn.kids-on {
-  color: var(--space); background: var(--ember); border-color: var(--ember);
-}
-/* A journey already on the device is a quiet confirmation, not a call to action. */
-.rail-btn.ready { color: var(--aqua); border-color: rgba(var(--rgb-accent), 0.4); }
