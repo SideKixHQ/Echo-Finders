@@ -27,19 +27,17 @@ A minute or so later you have a URL. Open it on a phone.
 **Project:** `echo-finders`, under the `side-kix` team.
 
     Dashboard  https://vercel.com/side-kix/echo-finders
-    App        <the Domains line on the dashboard — paste it here>
+    App        https://echo-finders.vercel.app/
 
 The dashboard is where the build logs and the deployment history are, and it is behind a
 Vercel login, so it is for you rather than for anybody you send the demo to. The address
-you actually *open the app at* is the Domains line on that page — `echo-finders.vercel.app`
-or similar. Worth writing down here, because nothing in this repository knows it and
-nothing can work it out.
+above is the one to open and the one to send.
 
 Two reasons it cannot be discovered rather than recorded. `vercel.json` sets
 `github: { silent: true }`, so Vercel posts no deployment status back to GitHub for anyone
 to read. And the sandbox these sessions run in is refused `*.vercel.app` by its network
-policy — a 403 on the tunnel, not a 404 — so the address cannot be probed for, and a deploy
-cannot be checked from here after a push.
+policy: a 403 on the tunnel rather than a 404, so the address could not be probed for, and
+a deploy still cannot be checked from here after a push.
 
 Neither of those stops anything deploying: every push to `main` goes out regardless. They
 only stop this file from filling itself in, and stop a session confirming afterwards that
