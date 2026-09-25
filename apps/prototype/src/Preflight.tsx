@@ -22,6 +22,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { buildEchoJourney, type Echo, type Route } from "@echofinders/core";
+import { lookupFlight } from "./flights";
+import { MODE_ICON } from "./travel";
 
 export interface PreflightProps {
   readonly routes: readonly Route[];
@@ -37,6 +39,19 @@ export interface PreflightProps {
   readonly foundCount: number;
   /** The last few places they stood, most recent first. Shown, not counted. */
   readonly recentPlaces: readonly string[];
+  /**
+   * How you are travelling, and how to change it.
+   *
+   * This screen could pick a *route* and not a mode, which meant the answer to "how do I
+   * switch to flying" was "reinstall the app": the choice was made once during onboarding,
+   * on a screen that says "you can switch later", and then never offered again. It is a
+   * journey screen, so the journey is all of it.
+   */
+  readonly travel: "walking" | "driving" | "flight";
+  readonly onTravel: (travel: "walking" | "driving" | "flight") => void;
+  /** Free roam: no route, just what is around you. Only meaningful on foot and driving. */
+  readonly roaming: boolean;
+  readonly onRoam: (roaming: boolean) => void;
 }
 
 export function Preflight({
@@ -48,6 +63,10 @@ export function Preflight({
   onChoose,
   foundCount,
   recentPlaces,
+  travel,
+  onTravel,
+  roaming,
+  onRoam,
 }: PreflightProps) {
   const [picked, setPicked] = useState<Route>(current);
   const total = counts[picked.id] ?? 0;
@@ -63,6 +82,18 @@ export function Preflight({
    */
   const [askedToChoose, setAskedToChoose] = useState(false);
   const choosing = askedToChoose || !returning;
+  /** What they typed into the flight box, and what it resolved to. */
+  const [flight, setFlight] = useState("");
+  const flightRoute = useMemo(() => {
+    const id = lookupFlight(flight);
+    return id ? routes.find((r) => r.id === id) : undefined;
+  }, [flight, routes]);
+
+  /** The journeys worth offering for the way they are travelling. */
+  const forTravel = useMemo(
+    () => routes.filter((route) => route.mode === (travel === "flight" ? "flight" : travel)),
+    [routes, travel],
+  );
 
   /*
    * The real package for the route in front of you, against the real budget for its mode —
@@ -105,6 +136,79 @@ export function Preflight({
           </>
         )}
 
+        {/*
+          How you are travelling.
+
+          The first question, above the journey, because it decides what a journey even is:
+          flying means a flight number and a fixed route, driving means a road or no road at
+          all, and on foot there is usually nothing to pick. It was asked once in onboarding,
+          on a screen that promises "you can switch later", and then never again.
+        */}
+        <div className="pf-travel">
+          {(["walking", "driving", "flight"] as const).map((mode) => (
+            <button
+              key={mode}
+              className={travel === mode ? "pf-travel-pick on" : "pf-travel-pick"}
+              onClick={() => onTravel(mode)}
+              aria-pressed={travel === mode}
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                {MODE_ICON[mode === "flight" ? "flight" : mode]}
+              </svg>
+              {TRAVEL_LABEL[mode]}
+            </button>
+          ))}
+        </div>
+
+        {/*
+          The flight number, where somebody flying actually starts.
+
+          It existed in onboarding and nowhere else, so the one input the whole flight
+          product turns on was reachable exactly once. It resolves against the same stub the
+          onboarding uses, so both doors behave identically.
+        */}
+        {travel === "flight" && (
+          <div className="pf-flight">
+            <input
+              className="onb-field"
+              value={flight}
+              onChange={(e) => {
+                setFlight(e.target.value);
+                const id = lookupFlight(e.target.value);
+                const found = id ? routes.find((r) => r.id === id) : undefined;
+                if (found) {
+                  setPicked(found);
+                  onRoam(false);
+                }
+              }}
+              placeholder="Flight number, e.g. DL 411"
+              autoComplete="off"
+              spellCheck={false}
+              aria-label="Flight number"
+            />
+            {flight.trim().length > 2 && !flightRoute && (
+              <p className="pf-note">
+                No route for that one yet. We only have content for a few flights while the
+                library is being written.
+              </p>
+            )}
+          </div>
+        )}
+
+        {/*
+          Free roam, where it means anything. A flight is somebody else's route and the door
+          is locked, so there is nothing to roam.
+        */}
+        {travel !== "flight" && (
+          <button
+            className={roaming ? "pf-pick pf-roam on" : "pf-pick pf-roam"}
+            onClick={() => onRoam(true)}
+            aria-pressed={roaming}
+          >
+            {travel === "walking" ? "Around here, no route" : "Just drive, no route"}
+          </button>
+        )}
+
         <div className="pf-field">
           <span className="pf-code">{code(picked)}</span>
           <span className="pf-sub">
@@ -143,14 +247,17 @@ export function Preflight({
           )}
         </div>
 
-        {choosing && (
+        {choosing && forTravel.length > 0 && (
           <div className="pf-picks">
-            {routes.map((route) => (
+            {forTravel.map((route) => (
               <button
                 key={route.id}
-                className={route.id === picked.id ? "pf-pick on" : "pf-pick"}
-                aria-pressed={route.id === picked.id}
-                onClick={() => setPicked(route)}
+                className={route.id === picked.id && !roaming ? "pf-pick on" : "pf-pick"}
+                aria-pressed={route.id === picked.id && !roaming}
+                onClick={() => {
+                  setPicked(route);
+                  onRoam(false);
+                }}
               >
                 {code(route)}
               </button>
@@ -187,6 +294,12 @@ export function Preflight({
  * A walk has no code and never will, so it is the two ends — which is longer, and correct:
  * nobody has ever called a walk by an abbreviation.
  */
+const TRAVEL_LABEL = {
+  walking: "On foot",
+  driving: "Driving",
+  flight: "Flying",
+} as const;
+
 const megabytes = (bytes: number) =>
   bytes >= 1024 * 1024
     ? `${(bytes / (1024 * 1024)).toFixed(bytes < 10 * 1024 * 1024 ? 1 : 0)} MB`

@@ -60,7 +60,18 @@ export function App() {
    * walking pace, with a three hundred metre corridor, under a rule that asked them to
    * stand still at every one. Driving is hunting too; it just hunts at sixty.
    */
-  const [roamMode, setRoamMode] = useState<"walking" | "driving">("walking");
+  /**
+   * How you are travelling. The source of truth, not something derived.
+   *
+   * It *was* derived, from whether you were roaming and what mode the current route had,
+   * and that quietly made the journey screen's own control not work: pressing Flying set
+   * roaming false, which handed the derivation back to the route, which was still a walk,
+   * so the answer came back "driving" and the button appeared not to do anything. State
+   * that a control sets has to be state.
+   */
+  const [travel, setTravel] = useState<"walking" | "driving" | "flight">("walking");
+  /** What the engine is run as while roaming. Flying is never roaming: the door is locked. */
+  const roamMode: "walking" | "driving" = travel === "driving" ? "driving" : "walking";
   /** A narrator the listener picked. Null keeps whichever the echo was written for. */
   const [voice, setVoice] = useState<string | null>(null);
   /*
@@ -921,11 +932,23 @@ export function App() {
               saved={savedEchoes}
               onSave={toggleSave}
               mode={roaming ? roamMode : route.mode}
+
             />
           )}
 
           {tab === "settings" && (
             <Privacy
+              onJourney={() => {
+                setTab("map");
+                openPackage();
+              }}
+              journey={
+                roaming
+                  ? roamMode === "driving"
+                    ? "Driving, no route"
+                    : "On foot, around here"
+                  : (route.name ?? route.id)
+              }
               settings={privacy}
               onChange={setPrivacy}
               storedPositions={storedPositions}
@@ -1003,7 +1026,7 @@ export function App() {
                  * them to stand still. `roamMode` keeps the two apart.
                  */
                 setRoaming(roam || (mode === "driving" && !roamRouteChosen.current));
-                setRoamMode(mode === "flight" ? "walking" : mode);
+                setTravel(mode);
                 finishOnboarding();
               }}
             />
@@ -1019,9 +1042,26 @@ export function App() {
               // Most recent first, and de-duplicated: two echoes at Bowling Green should
               // not read as two places.
               recentPlaces={[...new Set([...kept].reverse().map((c) => c.echo.point.place.split(",")[0]!.trim()))]}
+              /*
+               * How you are travelling, changeable here and nowhere else until now.
+               *
+               * Switching to flying clears the route rather than carrying a walk over into
+               * the air: a flight is chosen by number, and leaving the old journey selected
+               * would mean "Carry on" quietly putting somebody back on a pavement.
+               */
+              travel={travel}
+              onTravel={(next) => {
+                setTravel(next);
+                // Flying is somebody else's route and the door is locked, so there is
+                // nothing to roam. On foot and driving both land on roaming, because
+                // hunting is the thing you do without a route and it is the common case.
+                setRoaming(next !== "flight");
+              }}
+              roaming={roaming}
+              onRoam={(on) => setRoaming(on)}
               onChoose={() => setPlanOpen(true)}
               onStart={(next) => {
-                if (next.id !== route.id) onSelectRoute(next);
+                if (!roaming && next.id !== route.id) onSelectRoute(next);
                 setDownloaded(true);
                 setPackageOpen(false);
                 setOverview(false);

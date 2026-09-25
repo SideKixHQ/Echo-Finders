@@ -24,6 +24,10 @@ interface Props {
   readonly storedPositions: number;
   readonly collectionSize: number;
   readonly onDelete: (what: "positions" | "everything") => void;
+  /** Open the journey screen: how you are travelling, and which journey. */
+  readonly onJourney: () => void;
+  /** What it currently says, so the row reports rather than only offering. */
+  readonly journey: string;
 }
 
 const FEATURE_LABELS: Record<FeatureId, string> = {
@@ -35,7 +39,15 @@ const FEATURE_LABELS: Record<FeatureId, string> = {
   "passing-alerts": "Alerts when passing something",
 };
 
-export function Privacy({ settings, onChange, storedPositions, collectionSize, onDelete }: Props) {
+export function Privacy({
+  settings,
+  onChange,
+  storedPositions,
+  collectionSize,
+  onDelete,
+  onJourney,
+  journey,
+}: Props) {
   // What the app would actually be granted, given these settings. Shown so the fallbacks
   // below are the real ones rather than a hand-written list that drifts.
   const granted = [...capabilitiesImpliedBy(settings)] as Capability[];
@@ -43,6 +55,28 @@ export function Privacy({ settings, onChange, storedPositions, collectionSize, o
 
   return (
     <div className="screen-body">
+      {/*
+        How you are travelling, first, because it is the setting that changes what the app
+        *is* rather than what it shows, and because it was unreachable.
+
+        It was asked once during onboarding, on a screen that says "you can switch later",
+        and then offered nowhere: the only way back to it was the download icon on the map's
+        control column, which nobody would guess and which does not look like a question
+        about how you are getting around. Settings is where people look for a setting.
+      */}
+      <section className="panel">
+        <h3>Your journey</h3>
+        <button className="setting-row setting-link" onClick={onJourney}>
+          <span className="setting-text">
+            <strong>{journey}</strong>
+            <small>Change how you are travelling, or pick another journey.</small>
+          </span>
+          <svg viewBox="0 0 24 24" aria-hidden="true" className="setting-chev">
+            <path d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </section>
+
       <header className="screen-head">
         <h1>Privacy</h1>
         <p>Everything here is on your device. None of it is sent to us.</p>

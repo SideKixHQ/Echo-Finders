@@ -26,31 +26,11 @@
 
 import { useState } from "react";
 import { MODE_ICON } from "./travel";
+import { lookupFlight } from "./flights";
 import { CAPABILITY_NEEDS, type EchoCategory, type TravelMode } from "@echofinders/core";
 import { CHIP_GROUPS } from "./categories";
 import type { LocationState } from "./browser-location";
 
-/**
- * Flight number to route.
- *
- * A stub, and labelled as one. Real lookup is a flight-data API — you send `UA 2314` and
- * a date, and you get back a filed route, which is the only way to know that today's UA
- * 2314 is going where yesterday's did. Until that exists this matches the flights we have
- * content for, so the screen can be built, used and judged now rather than waiting on a
- * vendor decision.
- *
- * It is deliberately forgiving about spacing and case, because somebody is typing a code
- * off a boarding pass on a phone.
- */
-const FLIGHT_ROUTES: Readonly<Record<string, string>> = {
-  DL411: "jfk-mia",
-  AA118: "jfk-mia",
-  B6615: "jfk-mia",
-  UA2314: "jfk-mia",
-};
-
-export const lookupFlight = (entered: string): string | null =>
-  FLIGHT_ROUTES[entered.toUpperCase().replace(/[^A-Z0-9]/g, "")] ?? null;
 
 export interface OnboardingProps {
   readonly onAskLocation: () => Promise<LocationState>;
