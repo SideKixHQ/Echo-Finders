@@ -2404,3 +2404,11 @@ body {
 .pf-close svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; }
 .pf-close:hover { color: var(--white); background: rgba(var(--rgb-hair), 0.1); }
 .pf-body { position: relative; }
+
+/* The hint under the route ribbon. On a route the header looks exactly as it always did,
+   so without this the fact that it now opens the journey screen is invisible. */
+.journey-hint {
+  display: block; margin-top: 5px; text-align: center;
+  font-family: "Space Grotesk", monospace; font-size: 9px;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--aqua); opacity: 0.85;
+}

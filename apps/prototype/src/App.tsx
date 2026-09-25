@@ -771,7 +771,18 @@ export function App() {
                       <span className="journey-change">Change</span>
                     </>
                   ) : (
-                    <RouteRibbon route={route} progress={along} remainingS={remainingS} />
+                    <>
+                      <RouteRibbon route={route} progress={along} remainingS={remainingS} />
+                      {/*
+                        Visibly tappable.
+
+                        On a route this header renders the ribbon exactly as it always has,
+                        so making it a button changed nothing anybody could see: the control
+                        was there and looked identical to the read-only thing it replaced.
+                        An affordance nobody can see is not an affordance.
+                      */}
+                      <span className="journey-hint">Change journey</span>
+                    </>
                   )}
                 </button>
                 <CategoryChips
