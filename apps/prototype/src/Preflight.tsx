@@ -35,6 +35,14 @@ export interface PreflightProps {
   readonly onStart: (route: Route) => void;
   /** Open the list of what this journey passes, to pick what plays itself. */
   readonly onChoose: () => void;
+  /**
+   * Leave without changing anything.
+   *
+   * There was no way out at all: the only exits committed you to a journey, so opening this
+   * to look at it meant agreeing to something. A panel that can only be left by saying yes
+   * is a trap, however good the yes is.
+   */
+  readonly onClose: () => void;
   /** How many echoes are already collected. Zero is a first-time listener. */
   readonly foundCount: number;
   /** The last few places they stood, most recent first. Shown, not counted. */
@@ -61,6 +69,7 @@ export function Preflight({
   current,
   onStart,
   onChoose,
+  onClose,
   foundCount,
   recentPlaces,
   travel,
@@ -110,6 +119,12 @@ export function Preflight({
   return (
     <div className="preflight">
       <div className="pf-body">
+        <button className="pf-close" onClick={onClose} aria-label="Close">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+
         {returning ? (
           <>
             <span className="pf-kicker">Welcome back</span>
@@ -181,17 +196,24 @@ export function Preflight({
                   onRoam(false);
                 }
               }}
-              placeholder="Flight number, e.g. DL 411"
+              placeholder="Try DL411"
               autoComplete="off"
               spellCheck={false}
               aria-label="Flight number"
             />
-            {flight.trim().length > 2 && !flightRoute && (
-              <p className="pf-note">
-                No route for that one yet. We only have content for a few flights while the
-                library is being written.
-              </p>
-            )}
+            {/*
+              Said plainly, because the old message implied the wrong limit.
+
+              "No route for that one yet" reads as "we have not written those stories", and
+              the truth is there is no flight lookup at all: four numbers are hardcoded.
+              Somebody typing their actual flight deserves to know it was never going to
+              work rather than to conclude the library is thin.
+            */}
+            <p className="pf-note">
+              {flightRoute
+                ? "Found. Everything below is built for this route."
+                : "Not connected to live flight data yet. Four test numbers work: DL411, AA118, B6615, UA2314."}
+            </p>
           </div>
         )}
 
@@ -209,10 +231,20 @@ export function Preflight({
           </button>
         )}
 
+        {/*
+          What you are about to do, which is not always a route.
+
+          This showed the selected route unconditionally, so pressing "Around here, no route"
+          lit the button and left this panel still announcing a walk through Lower Manhattan.
+          The one thing on the screen that says what you have chosen was contradicting the
+          choice, which reads exactly like the button not working.
+        */}
         <div className="pf-field">
-          <span className="pf-code">{code(picked)}</span>
+          <span className="pf-code">{roaming ? ROAM_CODE[travel] : code(picked)}</span>
           <span className="pf-sub">
-            {picked.name ?? picked.id} · {total} {total === 1 ? "echo" : "echoes"}
+            {roaming
+              ? ROAM_SUB[travel]
+              : `${picked.name ?? picked.id} · ${total} ${total === 1 ? "echo" : "echoes"}`}
           </span>
         </div>
 
@@ -231,21 +263,33 @@ export function Preflight({
           the journey genuinely is local. When the audio is real files in a bucket, this
           line becomes a progress bar and nothing above it changes.
         */}
-        <div className="pf-pkg">
+        {/* A package is a route's worth of echoes. Roaming has no route, so there is nothing
+            to weigh and a bar claiming otherwise would be inventing a number. */}
+        {!roaming && <div className="pf-pkg">
           <span className="pf-pkg-bar">
             <i style={{ width: `${Math.min(100, (journey.totalBytes / journey.budgetBytes) * 100).toFixed(1)}%` }} />
           </span>
+          {/*
+            What this actually is, rather than what it will be.
+
+            The line said "already on this device" as though a download had happened. It had
+            not: the prototype ships its library inside the bundle, so there is nothing to
+            fetch and nothing to wait for, and the word download was doing work the app does
+            not do. The count and the size are real, measured by `buildEchoJourney` against
+            the mode's own budget. When the audio is real files in a bucket this becomes a
+            progress bar and nothing above it changes.
+          */}
           <span className="pf-pkg-text">
             {journey.echoes.length} {journey.echoes.length === 1 ? "echo" : "echoes"} ·{" "}
-            {megabytes(journey.totalBytes)} of {megabytes(journey.budgetBytes)} · already on
-            this device
+            {megabytes(journey.totalBytes)} of {megabytes(journey.budgetBytes)} · ships
+            inside the app for now, so there is nothing to download yet
           </span>
           {journey.droppedCount > 0 && (
             <span className="pf-pkg-drop">
               {journey.droppedCount} more on this route than the offline budget holds
             </span>
           )}
-        </div>
+        </div>}
 
         {choosing && forTravel.length > 0 && (
           <div className="pf-picks">
@@ -267,12 +311,20 @@ export function Preflight({
 
         {/* Where "Listening" went. It is a decision about this journey, so it lives on the
             screen where the journey is being decided. */}
-        <button className="pf-alt" onClick={onChoose}>
-          Choose what plays itself ({journey.echoes.length} on this route)
-        </button>
+        {!roaming && (
+          <button className="pf-alt" onClick={onChoose}>
+            Choose what plays itself ({journey.echoes.length} on this route)
+          </button>
+        )}
 
         <button className="pf-go" onClick={() => onStart(picked)}>
-          {returning && !choosing ? "Carry on" : "Find my route"}
+          {roaming
+            ? travel === "driving"
+              ? "Start driving"
+              : "Start looking"
+            : returning && !choosing
+              ? "Carry on"
+              : "Find my route"}
         </button>
 
         {/* Offered rather than imposed. A returning listener usually wants the journey they
@@ -294,6 +346,18 @@ export function Preflight({
  * A walk has no code and never will, so it is the two ends — which is longer, and correct:
  * nobody has ever called a walk by an abbreviation.
  */
+/** What the journey field says when there is no journey, only a here. */
+const ROAM_CODE = {
+  walking: "Around here",
+  driving: "Wherever you drive",
+  flight: "Around here",
+} as const;
+const ROAM_SUB = {
+  walking: "No route. It finds what is near you as you go.",
+  driving: "No route. Echoes sync as you drive through them.",
+  flight: "No route.",
+} as const;
+
 const TRAVEL_LABEL = {
   walking: "On foot",
   driving: "Driving",

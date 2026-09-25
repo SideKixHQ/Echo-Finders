@@ -184,6 +184,13 @@ await phase('plan', async () => {
   }
   await p.getByLabel(/Download this journey|Your journey/).click();
   await p.waitForTimeout(700);
+  // A package is a route's worth of echoes, so the package controls only exist once a
+  // route is picked. Roaming, which is where walking starts, has none.
+  const route = p.locator('.pf-pick:not(.pf-roam)').first();
+  if (await route.count()) {
+    await route.click();
+    await p.waitForTimeout(400);
+  }
   await p.locator('.pf-alt').first().click();
   await p.waitForTimeout(700);
 });

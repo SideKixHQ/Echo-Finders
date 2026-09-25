@@ -24,7 +24,7 @@ import { Onboarding } from "./Onboarding";
 import { loadRatings, setRating, type Rating } from "./ratings";
 import { BrowserLocation } from "./browser-location";
 import { Rail } from "./Rail";
-import { MODE_PHRASE } from "./travel";
+import { MODE_ICON, MODE_PHRASE } from "./travel";
 import type { Detent } from "./Sheet";
 import type { Echo, EchoCategory } from "@echofinders/core";
 import {
@@ -697,7 +697,12 @@ export function App() {
   useEffect(() => {
     if (!beacon) return;
     const state = stateOf(beacon);
-    if (state === "captured" || state === "heard") setBeacon(null);
+    if (state === "captured" || state === "heard") {
+      setBeacon(null);
+      // The map was opened to get you here. You are here, so it has done its job and the
+      // hunting screen comes back rather than leaving you on a street map of where you are.
+      setWalkingView("rose");
+    }
   }, [beacon, stateOf]);
   useEffect(() => {
     hum.setVoices(
@@ -739,13 +744,36 @@ export function App() {
           {tab === "map" && (
             <>
               <div className="mapbar">
-                {/* A journey's header. Roaming has no origin, no destination and no ETA,
-                    and inventing one would be the same fiction the whole review was about. */}
-                {!roaming && <RouteRibbon
-                  route={route}
-                  progress={along}
-                  remainingS={remainingS}
-                />}
+                {/*
+                  The journey, and the way to change it.
+
+                  It was a read-only header, and the only way to the journey screen was a
+                  download icon in the control column, which nobody would guess and which
+                  does not look like a question about how you are getting around. This is
+                  where every travel app puts it: the trip is at the top, and tapping the
+                  trip changes the trip.
+
+                  Roaming has no origin, destination or ETA, and inventing one would be the
+                  fiction the whole UX review was about, so it gets a plain chip saying what
+                  it is. Same slot, same tap, nothing made up.
+                */}
+                <button
+                  className={roaming ? "journey-tap journey-roam" : "journey-tap"}
+                  onClick={openPackage}
+                  aria-label="Change your journey"
+                >
+                  {roaming ? (
+                    <>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        {MODE_ICON[roamMode]}
+                      </svg>
+                      {roamMode === "driving" ? "Driving, no route" : "On foot, around here"}
+                      <span className="journey-change">Change</span>
+                    </>
+                  ) : (
+                    <RouteRibbon route={route} progress={along} remainingS={remainingS} />
+                  )}
+                </button>
                 <CategoryChips
                   available={available}
                   on={activeCats}
@@ -1052,14 +1080,33 @@ export function App() {
               travel={travel}
               onTravel={(next) => {
                 setTravel(next);
+                /*
+                 * Back to the rose.
+                 *
+                 * `walkingView` is set to "map" by "Take me there" and nothing ever set it
+                 * back, so one use of the beacon meant the rose never returned: you picked
+                 * "Around here, no route", pressed Carry on, and got the same street map you
+                 * had been trying to leave. Changing how you are travelling starts the
+                 * walking screen over.
+                 */
+                setWalkingView("rose");
+                setBeacon(null);
                 // Flying is somebody else's route and the door is locked, so there is
                 // nothing to roam. On foot and driving both land on roaming, because
                 // hunting is the thing you do without a route and it is the common case.
                 setRoaming(next !== "flight");
               }}
               roaming={roaming}
-              onRoam={(on) => setRoaming(on)}
+              onRoam={(on) => {
+                setRoaming(on);
+                // Same reason: choosing to roam is choosing the hunting screen.
+                if (on) {
+                  setWalkingView("rose");
+                  setBeacon(null);
+                }
+              }}
               onChoose={() => setPlanOpen(true)}
+              onClose={() => setPackageOpen(false)}
               onStart={(next) => {
                 if (!roaming && next.id !== route.id) onSelectRoute(next);
                 setDownloaded(true);
