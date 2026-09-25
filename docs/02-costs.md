@@ -95,6 +95,48 @@ that.
 True crime runs two to three times longer per echo and needs a second reviewer, which is
 already why it is gated separately (`trueCrimeReview`). Budget it apart from the rest.
 
+## Flight data, which is cheaper than it sounds
+
+Flying needs a flight number to resolve to a route, and right now four numbers are hardcoded
+(`apps/prototype/src/flights.ts`). Real lookup is an API, and the prices vary by two orders
+of magnitude depending on what you ask for.
+
+**The thing that makes this cheap is that we need almost nothing.** One call per person per
+journey, at the start. No live position tracking, because the phone has GPS. No polling. No
+historical data. And, most importantly, **no filed route**: `buildRouteGeometry` needs two
+waypoints and interpolates the great circle between them itself, so origin and destination
+is a complete answer. A great circle from JFK to MIA is within a few miles of the real track
+for almost all of it, and the phone's own position corrects the rest. The expensive endpoints
+are the ones we can skip.
+
+| Provider | Entry | What that buys | Per lookup |
+| --- | --- | --- | --- |
+| FlightAware AeroAPI, Personal | free | $5/month of usage included, 10 result sets a minute | ~$0.001 to $0.05 by endpoint |
+| AeroDataBox (RapidAPI) | free | 600 units a month | Pro $5.35/mo, Ultra $32/mo, Mega $160/mo |
+| AviationStack | free | 100 requests a month | Basic $49.99 for 10k, Pro $149.99 for 50k, Business $499.99 for 250k |
+| FlightAware AeroAPI, Standard | $100/mo minimum | 5 result sets a second, history, email support | metered against the minimum |
+| Cirium, OAG | quote | airline-grade schedules and status | enterprise, five figures a year |
+
+What that means for us, at one lookup per flight:
+
+- **Demo and pilot: nothing.** AeroAPI Personal includes $5 a month of usage, which at a
+  cheap endpoint is on the order of a thousand lookups. AeroDataBox's free tier does the same
+  job. This costs zero until there are real people on real aeroplanes.
+- **A thousand to ten thousand flights a month: five to fifty dollars.** AeroDataBox Pro or
+  Ultra, or AviationStack Basic at half a cent a lookup.
+- **A hundred thousand flights a month: a few hundred dollars**, which is when AeroAPI's
+  $100 minimum starts paying for itself and the volume discounts begin.
+
+Worth saying plainly: **the Google Directions key for driving will cost more than this**, and
+sooner. A flight is one lookup at the gate; a drive re-routes continuously, so the call
+volume is per minute rather than per journey.
+
+Two things that would change the picture. If we ever want the *filed* track rather than a
+great circle, that is a different and dearer endpoint, and the case for it is turbulence
+reroutes and holding patterns rather than accuracy over open country. And a schedules feed,
+so somebody can pick tomorrow's flight before they leave the house, is a different product
+from status lookup and prices like one.
+
 ## Sizes, for reference
 
 | | |
