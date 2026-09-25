@@ -74,6 +74,15 @@ export function App() {
   const [walkingView, setWalkingView] = useState<"rose" | "map">("rose");
   /** The street humming. Off until somebody asks for it, because it is audio. */
   const [humming, setHumming] = useState(false);
+  /**
+   * The echo being walked to.
+   *
+   * The chord tells you what is around you and gets you nowhere in particular, which is
+   * exactly half of a hunting tool. Picking one makes it the beacon: it becomes the loud one
+   * and rises in pitch as you turn towards it, the dial stands everything else back, and the
+   * street map becomes worth showing because there is finally somewhere to go.
+   */
+  const [beacon, setBeacon] = useState<string | null>(null);
   const hum = useMemo(() => new Hum(), []);
   useEffect(() => () => hum.close(), [hum]);
   /** Whether the journey screen actually resolved to a route, so "just drive" can roam. */
@@ -660,6 +669,26 @@ export function App() {
     hum.setHeading(heading.accuracyDeg <= 45 ? heading.deg : null);
   }, [hum, heading.deg, heading.accuracyDeg]);
   useEffect(() => {
+    hum.setBeacon(beacon);
+  }, [hum, beacon]);
+  /*
+   * Arriving is the end of the walk, so it is the end of the beacon.
+   *
+   * Leaving it set would keep one note loud and every other one ducked while standing on the
+   * thing you were walking to, which is the app still pointing at somewhere you already are.
+   *
+   * *Arriving*, specifically, and not "no longer sealed". There are four pin states and the
+   * middle one, `opening`, means you are inside the radius with the dwell still running,
+   * which is the last few seconds of the walk rather than the end of it. Written as "not
+   * sealed" this cleared the beacon the instant it was set on anything you were already
+   * standing near, which looked exactly like the button not working.
+   */
+  useEffect(() => {
+    if (!beacon) return;
+    const state = stateOf(beacon);
+    if (state === "captured" || state === "heard") setBeacon(null);
+  }, [beacon, stateOf]);
+  useEffect(() => {
     hum.setVoices(
       around.map((item) => ({
         id: item.echo.id,
@@ -689,6 +718,7 @@ export function App() {
               needsCompass={heading.needsPermission}
               onAskCompass={() => void heading.ask()}
               selectedId={selectedId}
+              beaconId={beacon}
               onSelect={setSelectedId}
               humming={humming}
               onHum={setHumming}
@@ -755,6 +785,24 @@ export function App() {
                   state={stateOf(selectedEcho.echo.id)}
                   mode={roaming ? roamMode : route.mode}
                   saved={chosen.has(selectedEcho.echo.id)}
+                  aimed={beacon === selectedEcho.echo.id}
+                  {...(selfDirected
+                    ? {
+                        onAim: (echo: Echo) => {
+                          /*
+                           * Pick it, and the app becomes about getting there: the beacon is
+                           * set, the hum ducks everything else, and the street map comes up,
+                           * because a map with a destination on it is the right object and a
+                           * map without one is the question nobody asked. Pressing it again
+                           * lets go and hands the map back.
+                           */
+                          const already = beacon === echo.id;
+                          setBeacon(already ? null : echo.id);
+                          setWalkingView(already ? "rose" : "map");
+                          setSelectedId(already ? null : echo.id);
+                        },
+                      }
+                    : {})}
                   onSave={toggleSave}
                   onPlay={(echo) => {
                     session.play(echo);

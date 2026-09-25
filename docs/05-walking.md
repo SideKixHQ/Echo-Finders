@@ -104,6 +104,30 @@ notification. You hear a memory come into focus because you stood where it happe
 **3. Silence is a feature.** Nothing hums while an echo is playing. The hunt and the story
 never compete, which is the mistake every location-audio app makes.
 
+### And one of them can be the beacon
+
+The chord tells you what is around you and gets you nowhere in particular, which is exactly
+half of a hunting tool. It is the *callouts* half of Soundscape; this is the other half.
+
+Pick an echo and it becomes the beacon. The rest of the chord falls back to a whisper rather
+than stopping, because they are still the answer to "what else is here" while you walk. The
+one you picked rises in pitch as you turn towards it, from nothing when it is behind you to a
+fifth when you are walking straight at it.
+
+Continuous rather than a threshold, deliberately. "You are on course" tells you when you are
+already right; a slope tells you which way to turn, which is the thing you need while
+turning. And panning alone cannot do it, because front and back sound nearly identical over
+headphones and walking away from something is the one mistake worth preventing.
+
+On the dial everything but the beacon stands back, with a dashed line out to it. Dashed
+because it is a bearing rather than a route: it is the direction the thing is in, not a path
+through streets, and a solid line would be promising a way through.
+
+**This is also when the street map earns its place.** Until you have picked something a map
+answers a question nobody asked; the second you have, it is the right object, so "Take me
+there" is what opens it. Arriving ends the beacon, the hum resolves, the echo syncs, and you
+are back in the chord.
+
 ### What is on screen when you do look
 
 A rose, not a map. You at the centre facing up, echoes as coloured arcs at their true

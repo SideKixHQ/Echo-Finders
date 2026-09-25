@@ -29,6 +29,12 @@
  * **Silence is a feature.** Nothing hums while an echo is playing. The hunt and the story
  * never compete, which is the mistake every location-audio app makes.
  *
+ * **And one of them can be the beacon.** The chord tells you what is around; it does not get
+ * you anywhere in particular, which is the half of Soundscape this originally left out. Pick
+ * an echo and the rest fall to a whisper, and the one you picked rises in pitch as you turn
+ * towards it and walk at it. That pitch is the steering: it is the difference between
+ * knowing something is over there and being able to find the door.
+ *
  * Deliberately not here: elevation. Open-ear and bone-conduction hardware localises the
  * vertical axis badly, which is why every system in the literature uses pitch for height and
  * why we do not try to place anything above or below you.
@@ -100,6 +106,17 @@ const MUFFLED_HZ = 420;
 const OPEN_HZ = 7800;
 /** The whole bed, kept well under the narration it plays beneath. */
 const MASTER_GAIN = 0.16;
+/**
+ * How far the beacon's pitch rises when you are walking straight at it, in cents.
+ *
+ * Seven semitones, which is a fifth: far enough to hear without a reference note, and a
+ * consonant interval so a beacon sweeping up through it does not fight the others on its way.
+ * Soundscape uses "higher pitched when on course" and this is that, made continuous, because
+ * a threshold tells you when you are right and a slope tells you which way to turn.
+ */
+const BEACON_CENTS = 700;
+/** What the rest of the chord drops to while a beacon is set. Present, but out of the way. */
+const BACKGROUND = 0.12;
 
 interface Voice {
   readonly osc: OscillatorNode;
@@ -121,6 +138,7 @@ export class Hum {
   private muted = true;
   private headingDeg: number | null = null;
   private wanted: readonly HumVoice[] = [];
+  private beaconId: string | null = null;
 
   /**
    * Browsers refuse audio until somebody has tapped the page, so nothing is built until the
@@ -165,6 +183,19 @@ export class Hum {
     else this.apply();
   }
 
+  /**
+   * The one you are going to, or null for the ambient chord.
+   *
+   * A beacon is always heard, even from outside the range everything else obeys and even
+   * when four nearer things would otherwise have taken every voice: you asked for it, so it
+   * is no longer competing for a slot.
+   */
+  setBeacon(echoId: string | null) {
+    if (echoId === this.beaconId) return;
+    this.beaconId = echoId;
+    this.apply();
+  }
+
   /** Which way the phone is pointing. Null means no compass, and the hum goes mono. */
   setHeading(deg: number | null) {
     this.headingDeg = deg;
@@ -179,7 +210,7 @@ export class Hum {
    * every quarter of a second is a click track.
    */
   setVoices(all: readonly HumVoice[]) {
-    this.wanted = pick(all);
+    this.wanted = pick(all, this.beaconId);
     this.apply();
   }
 
@@ -262,10 +293,17 @@ export class Hum {
   private update(voice: Voice, want: HumVoice, ctx: AudioContext) {
     const now = ctx.currentTime;
     const near = nearness(want);
+    const isBeacon = want.id === this.beaconId;
 
     // Loudness by distance, on a curve rather than a line: the last fifty metres should feel
     // like arriving, and a linear ramp feels like nothing at all.
-    voice.amp.gain.setTargetAtTime(0.16 + 0.5 * near * near, now, 0.25);
+    //
+    // With a beacon set the rest of the chord falls back rather than stopping. Cutting them
+    // would make picking one thing feel like turning the app off, and they are still the
+    // answer to "what else is here" while you walk.
+    const loudness = 0.16 + 0.5 * near * near;
+    const ducked = this.beaconId !== null && !isBeacon ? loudness * BACKGROUND : loudness;
+    voice.amp.gain.setTargetAtTime(ducked, now, 0.25);
     voice.lfo.frequency.setTargetAtTime(PULSE_FAR + (PULSE_NEAR - PULSE_FAR) * near, now, 0.4);
 
     /*
@@ -303,6 +341,26 @@ export class Hum {
       voice.panner.positionY.setTargetAtTime(0, now, 0.08);
       // Web Audio's listener faces −Z, so "ahead" is negative and "behind" is positive.
       voice.panner.positionZ.setTargetAtTime(-Math.cos(relative) * radius, now, 0.08);
+
+      /*
+       * The steering.
+       *
+       * The beacon rises in pitch as you turn towards it, from nothing when it is behind you
+       * to a full fifth when you are walking straight at it. Continuous rather than a
+       * threshold, deliberately: "you are on course" tells you when you are already right,
+       * and a slope tells you which way to turn, which is the thing you actually need while
+       * turning. Panning alone cannot do this, because front and back sound nearly identical
+       * over headphones and walking away from something is the one mistake worth preventing.
+       *
+       * Nothing to steer by without a compass, so the detune stays at zero and the beacon is
+       * simply the loud one.
+       */
+      if (want.id === this.beaconId) {
+        const onCourse = this.headingDeg === null ? 0 : Math.max(0, Math.cos(relative));
+        voice.osc.detune.setTargetAtTime(onCourse * onCourse * BEACON_CENTS, now, 0.12);
+      } else if (voice.osc.detune.value !== 0) {
+        voice.osc.detune.setTargetAtTime(0, now, 0.2);
+      }
     }
   }
 
@@ -355,13 +413,23 @@ export class Hum {
  * apart are the same note twice, which is a beat frequency rather than a chord and is the
  * one combination that genuinely sounds broken.
  */
-function pick(all: readonly HumVoice[]): HumVoice[] {
-  const inRange = all
-    .filter((v) => v.distanceKm <= RANGE_KM)
-    .slice()
-    .sort((a, b) => a.distanceKm - b.distanceKm);
+function pick(all: readonly HumVoice[], beaconId: string | null): HumVoice[] {
   const chosen: HumVoice[] = [];
   const heard = new Set<EchoCategory>();
+
+  // The beacon first and unconditionally. It ignores the range and the one-per-category
+  // rule, both of which exist to keep an *ambient* chord legible and neither of which should
+  // be able to silence the thing somebody is walking towards.
+  const beacon = beaconId ? all.find((v) => v.id === beaconId) : undefined;
+  if (beacon) {
+    chosen.push(beacon);
+    heard.add(beacon.category);
+  }
+
+  const inRange = all
+    .filter((v) => v.distanceKm <= RANGE_KM && v.id !== beaconId)
+    .slice()
+    .sort((a, b) => a.distanceKm - b.distanceKm);
   for (const voice of inRange) {
     if (chosen.length >= MAX_VOICES) break;
     if (heard.has(voice.category)) continue;

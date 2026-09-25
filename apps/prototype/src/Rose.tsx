@@ -36,6 +36,8 @@ export interface RoseProps {
   readonly needsCompass: boolean;
   readonly onAskCompass: () => void;
   readonly selectedId: string | null;
+  /** The one being walked to, if any. Everything else stands back. */
+  readonly beaconId: string | null;
   readonly onSelect: (echoId: string) => void;
   /** Whether the hum is on, and the switch for it. */
   readonly humming: boolean;
@@ -65,6 +67,7 @@ export function Rose({
   needsCompass,
   onAskCompass,
   selectedId,
+  beaconId,
   onSelect,
   humming,
   onHum,
@@ -74,7 +77,12 @@ export function Rose({
 
   return (
     <div className="rose">
-      <svg viewBox={`0 0 ${SIZE} ${SIZE}`} className="rose-dial" role="img" aria-label="What is around you">
+      <svg
+        viewBox={`0 0 ${SIZE} ${SIZE}`}
+        className={beaconId ? "rose-dial rose-aiming" : "rose-dial"}
+        role="img"
+        aria-label="What is around you"
+      >
         {/* Range rings. Three, labelled, because "how far is that" is the second question. */}
         {[0.25, 0.6, 1].map((fraction) => (
           <circle
@@ -107,12 +115,21 @@ export function Rose({
           )}
         </g>
 
+        {/*
+          The line to the one you are walking to.
+          Drawn before the marks so it passes under them, and dashed rather than solid
+          because it is a bearing rather than a route: it is the direction the thing is in,
+          not a path through streets, and a solid line would be promising a way through.
+        */}
+        {beacon(placed(items, trustworthy ? heading : 0), beaconId)}
+
         {placed(items, trustworthy ? heading : 0).map(({ item, x, y }) => {
           const on = selectedId === item.echo.id;
+          const aimed = beaconId === item.echo.id;
           return (
             <g
               key={item.echo.id}
-              className={`rose-echo cat-${item.echo.category}${item.sealed ? " rose-sealed" : ""}${on ? " rose-on" : ""}`}
+              className={`rose-echo cat-${item.echo.category}${item.sealed ? " rose-sealed" : ""}${on ? " rose-on" : ""}${aimed ? " rose-beacon" : ""}`}
               transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`}
               onClick={() => onSelect(item.echo.id)}
               role="button"
@@ -158,6 +175,24 @@ export function Rose({
         )}
       </div>
     </div>
+  );
+}
+
+/** The bearing line, when something is being walked to. */
+function beacon(
+  marks: readonly { item: RoseEcho; x: number; y: number }[],
+  beaconId: string | null,
+) {
+  const aimed = beaconId ? marks.find((m) => m.item.echo.id === beaconId) : undefined;
+  if (!aimed) return null;
+  return (
+    <line
+      className={`rose-line cat-${aimed.item.echo.category}`}
+      x1={CENTRE}
+      y1={CENTRE}
+      x2={aimed.x.toFixed(1)}
+      y2={aimed.y.toFixed(1)}
+    />
   );
 }
 

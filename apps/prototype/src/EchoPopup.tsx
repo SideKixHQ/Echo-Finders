@@ -35,6 +35,13 @@ export interface EchoPopupProps {
   /** How you are travelling, because it decides what getting there means. */
   readonly mode: TravelMode;
   readonly saved: boolean;
+  /** Whether this is the one being walked to. */
+  readonly aimed: boolean;
+  /**
+   * Walk to it. Absent where there is nothing to walk with: on a route that carries you, and
+   * once the echo is yours and the walking is over.
+   */
+  readonly onAim?: (echo: Echo) => void;
   readonly onSave: (echo: Echo) => void;
   readonly onPlay: (echo: Echo) => void;
   readonly onClose: () => void;
@@ -73,6 +80,8 @@ export function EchoPopup({
   state,
   mode,
   saved,
+  aimed,
+  onAim,
   onSave,
   onPlay,
   onClose,
@@ -123,6 +132,26 @@ export function EchoPopup({
         <p className={withinReach ? "pop-state pop-state-near" : "pop-state"}>
           {withinReach ? ARRIVED[mode] : `${away(metres)} · ${APPROACH[mode]}`}
         </p>
+      )}
+
+      {/*
+        Take me there.
+        This is the moment the street map earns its place: until you have picked something,
+        a map answers a question nobody asked, and the second you have, it is the right
+        object. Absent once the echo is yours, because there is nowhere left to walk.
+      */}
+      {onAim && !synced && (
+        <button
+          className={aimed ? "pop-aim on" : "pop-aim"}
+          onClick={() => onAim(echo)}
+          aria-pressed={aimed}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="8.5" />
+            <path d="M12 12l4-7-7 4z" />
+          </svg>
+          {aimed ? "Following this one" : "Take me there"}
+        </button>
       )}
 
       <button
