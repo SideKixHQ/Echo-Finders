@@ -103,11 +103,22 @@ of magnitude depending on what you ask for.
 
 **The thing that makes this cheap is that we need almost nothing.** One call per person per
 journey, at the start. No live position tracking, because the phone has GPS. No polling. No
-historical data. And, most importantly, **no filed route**: `buildRouteGeometry` needs two
-waypoints and interpolates the great circle between them itself, so origin and destination
-is a complete answer. A great circle from JFK to MIA is within a few miles of the real track
-for almost all of it, and the phone's own position corrects the rest. The expensive endpoints
-are the ones we can skip.
+historical data. And no flight number at all: what builds a journey is an origin and a
+destination, so the app asks for two airports and ships the airport list in the bundle
+(`apps/prototype/src/airports.ts`), which costs nothing and works with the wifi off.
+
+**One correction, found by testing rather than reasoning.** An earlier version of this
+section claimed a great circle between two airports was within a few miles of the real track
+and therefore good enough. On this corridor it is not. The actual New York to Miami routing
+follows the coast; the straight line threads between Cape Hatteras and Savannah, missing both
+by more than the eighty kilometre corridor is wide, and five echoes became two. So the
+picker prefers a route we have written when the pair matches one, and draws a great circle
+only where we have nothing. Where content exists, the track comes with it.
+
+That leaves a real question for later: a corridor we have written echoes for but no track
+for. The answer then is either to write the track with the content, which is a few minutes
+per route and free, or to buy the filed one. Writing it is almost certainly right, because
+a corridor worth twenty echoes is worth ten minutes of waypoints.
 
 | Provider | Entry | What that buys | Per lookup |
 | --- | --- | --- | --- |

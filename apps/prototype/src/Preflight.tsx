@@ -22,8 +22,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { buildEchoJourney, type Echo, type Route } from "@echofinders/core";
-import { lookupFlight } from "./flights";
 import { MODE_ICON } from "./travel";
+import { AIRPORTS, searchAirports, type Airport } from "./airports";
+import { buildFlight } from "./build-flight";
 
 export interface PreflightProps {
   readonly routes: readonly Route[];
@@ -78,7 +79,6 @@ export function Preflight({
   onRoam,
 }: PreflightProps) {
   const [picked, setPicked] = useState<Route>(current);
-  const total = counts[picked.id] ?? 0;
   const returning = foundCount > 0;
   /**
    * Whether the listener asked to see the route picker — not whether it is shown.
@@ -91,12 +91,23 @@ export function Preflight({
    */
   const [askedToChoose, setAskedToChoose] = useState(false);
   const choosing = askedToChoose || !returning;
-  /** What they typed into the flight box, and what it resolved to. */
-  const [flight, setFlight] = useState("");
-  const flightRoute = useMemo(() => {
-    const id = lookupFlight(flight);
-    return id ? routes.find((r) => r.id === id) : undefined;
-  }, [flight, routes]);
+  /** The two ends of a flight, which is all a flight is to this app. */
+  const [from, setFrom] = useState<Airport | null>(null);
+  const [to, setTo] = useState<Airport | null>(null);
+
+  /**
+   * The route for a pair: the one we wrote if we wrote one, otherwise a drawn great circle.
+   *
+   * A written route carries the actual track, and on a coastal corridor that is the whole
+   * difference between finding the echoes and threading between them.
+   */
+  const routeFor = (a: Airport, b: Airport): Route =>
+    routes.find(
+      (route) =>
+        route.mode === "flight" &&
+        route.origin.code === a.code &&
+        route.destination.code === b.code,
+    ) ?? buildFlight(a, b);
 
   /** The journeys worth offering for the way they are travelling. */
   const forTravel = useMemo(
@@ -110,6 +121,25 @@ export function Preflight({
    * choice changes, because it runs the corridor query and the coverage passes.
    */
   const journey = useMemo(() => buildEchoJourney(picked, library), [picked, library]);
+  const journeyCount = journey.echoes.length;
+  /*
+   * Flying, with the pair not yet chosen.
+   *
+   * `picked` is still whatever you were on before, so without this the panel announced a
+   * walk through Lower Manhattan under a lit Flying button: the same contradiction roaming
+   * had, where the one line that says what you chose disagrees with the choice.
+   */
+  const awaitingPair = travel === "flight" && (!from || !to || from.code === to.code);
+  /*
+   * How many echoes this journey passes.
+   *
+   * `counts` is precomputed for the routes we ship, and an airport pair somebody just typed
+   * is not one of them, so the fallback is the package's own count. Same query either way,
+   * `findEchoesAlongRoute` through `buildEchoJourney`; the precomputed one is only there to
+   * avoid running it for every route in a list.
+   */
+  const total = counts[picked.id] ?? journeyCount;
+
 
   // `current` seeds the choice, and then keeps seeding it. The mode picker sits beside the
   // phone and is live while this is showing, so switching to Car there used to leave this
@@ -176,44 +206,65 @@ export function Preflight({
         </div>
 
         {/*
-          The flight number, where somebody flying actually starts.
+          Where you are flying, asked as two airports rather than as a flight number.
 
-          It existed in onboarding and nowhere else, so the one input the whole flight
-          product turns on was reachable exactly once. It resolves against the same stub the
-          onboarding uses, so both doors behave identically.
+          The flight number was never the thing we needed: `buildRouteGeometry` takes two
+          waypoints and draws the great circle itself, so origin and destination is a
+          complete answer, and a flight-data subscription is an expensive way of turning one
+          question into another. It also asks a harder question than ours. The unit of this
+          product is the city pair: everybody on the New York to Miami corridor gets the same
+          echoes over the same stretch of coast, whatever is printed on their boarding pass.
+
+          It works offline, which is the entire point, because the place somebody enters
+          their flight is a seat with the wifi off.
         */}
         {travel === "flight" && (
           <div className="pf-flight">
-            <input
-              className="onb-field"
-              value={flight}
-              onChange={(e) => {
-                setFlight(e.target.value);
-                const id = lookupFlight(e.target.value);
-                const found = id ? routes.find((r) => r.id === id) : undefined;
-                if (found) {
-                  setPicked(found);
-                  onRoam(false);
-                }
+            {/*
+              A route is only built once both ends exist. `buildFlight(a, a)` is a journey of
+              zero length, and the geometry refuses to build one, which is correct of it and
+              crashed the screen the moment somebody picked a departure airport.
+
+              And a curated route wins over a drawn one, which is the thing testing this
+              taught me. I had assumed a great circle was close enough to a filed track to
+              not matter. On this corridor it is not: the real New York to Miami routing
+              follows the coast, and the straight line threads between Cape Hatteras and
+              Savannah, missing both by more than the corridor is wide. Five echoes became
+              two. So when a pair matches a route we have written, we fly the written one,
+              with its real waypoints; the drawn great circle is the fallback for everywhere
+              else.
+            */}
+            <AirportField
+              label="From"
+              value={from}
+              onPick={(airport) => {
+                setFrom(airport);
+                if (to && to.code !== airport.code) setPicked(routeFor(airport, to));
+                onRoam(false);
               }}
-              placeholder="Try DL411"
-              autoComplete="off"
-              spellCheck={false}
-              aria-label="Flight number"
+            />
+            <AirportField
+              label="To"
+              value={to}
+              onPick={(airport) => {
+                setTo(airport);
+                if (from && from.code !== airport.code) setPicked(routeFor(from, airport));
+                onRoam(false);
+              }}
             />
             {/*
-              Said plainly, because the old message implied the wrong limit.
-
-              "No route for that one yet" reads as "we have not written those stories", and
-              the truth is there is no flight lookup at all: four numbers are hardcoded.
-              Somebody typing their actual flight deserves to know it was never going to
-              work rather than to conclude the library is thin.
+              Honest about coverage, which matters more here than anywhere else in the app.
+              Any pair of airports builds a route; only some of them fly over anything we
+              have written. Saying "no echoes on that one yet" is better than a screen that
+              looks like it worked and then plays nothing for five hours.
             */}
-            <p className="pf-note">
-              {flightRoute
-                ? "Found. Everything below is built for this route."
-                : "Not connected to live flight data yet. Four test numbers work: DL411, AA118, B6615, UA2314."}
-            </p>
+            {from && to && from.code !== to.code && (
+              <p className="pf-note">
+                {total > 0
+                  ? `${total} ${total === 1 ? "echo" : "echoes"} along that route.`
+                  : "Nothing written along that route yet. New York to Miami is the one with echoes on it today."}
+              </p>
+            )}
           </div>
         )}
 
@@ -240,11 +291,15 @@ export function Preflight({
           choice, which reads exactly like the button not working.
         */}
         <div className="pf-field">
-          <span className="pf-code">{roaming ? ROAM_CODE[travel] : code(picked)}</span>
+          <span className="pf-code">
+            {roaming ? ROAM_CODE[travel] : awaitingPair ? "Where to?" : code(picked)}
+          </span>
           <span className="pf-sub">
             {roaming
               ? ROAM_SUB[travel]
-              : `${picked.name ?? picked.id} · ${total} ${total === 1 ? "echo" : "echoes"}`}
+              : awaitingPair
+                ? "Pick both airports and the route builds itself."
+                : `${picked.name ?? picked.id} · ${total} ${total === 1 ? "echo" : "echoes"}`}
           </span>
         </div>
 
@@ -265,7 +320,7 @@ export function Preflight({
         */}
         {/* A package is a route's worth of echoes. Roaming has no route, so there is nothing
             to weigh and a bar claiming otherwise would be inventing a number. */}
-        {!roaming && <div className="pf-pkg">
+        {!roaming && !awaitingPair && <div className="pf-pkg">
           <span className="pf-pkg-bar">
             <i style={{ width: `${Math.min(100, (journey.totalBytes / journey.budgetBytes) * 100).toFixed(1)}%` }} />
           </span>
@@ -311,13 +366,13 @@ export function Preflight({
 
         {/* Where "Listening" went. It is a decision about this journey, so it lives on the
             screen where the journey is being decided. */}
-        {!roaming && (
+        {!roaming && !awaitingPair && (
           <button className="pf-alt" onClick={onChoose}>
             Choose what plays itself ({journey.echoes.length} on this route)
           </button>
         )}
 
-        <button className="pf-go" onClick={() => onStart(picked)}>
+        <button className="pf-go" onClick={() => onStart(picked)} disabled={awaitingPair}>
           {roaming
             ? travel === "driving"
               ? "Start driving"
@@ -346,6 +401,78 @@ export function Preflight({
  * A walk has no code and never will, so it is the two ends — which is longer, and correct:
  * nobody has ever called a walk by an abbreviation.
  */
+/**
+ * One end of a flight.
+ *
+ * A text box that searches as you type and a short list under it, rather than a dropdown of
+ * five thousand airports: people know where they are flying and type three letters, and the
+ * job of the control is to confirm rather than to browse. Code, city and name all match,
+ * because "LHR", "London" and "Heathrow" are one fact to a person.
+ */
+function AirportField({
+  label,
+  value,
+  onPick,
+}: {
+  label: string;
+  value: Airport | null;
+  onPick: (airport: Airport) => void;
+}) {
+  const [query, setQuery] = useState("");
+  const [open, setOpen] = useState(false);
+  const results = useMemo(() => (open ? searchAirports(query) : []), [open, query]);
+
+  return (
+    <div className="pf-air">
+      <span className="pf-air-label">{label}</span>
+      <input
+        className="onb-field pf-air-input"
+        value={open ? query : value ? `${value.code} · ${value.city}` : ""}
+        onChange={(e) => {
+          setQuery(e.target.value);
+          setOpen(true);
+        }}
+        onFocus={() => {
+          setQuery("");
+          setOpen(true);
+        }}
+        /* A blur that beats the tap on a result would close the list before the tap lands,
+           which is the classic way an autocomplete becomes unusable on a phone. */
+        onBlur={() => window.setTimeout(() => setOpen(false), 160)}
+        placeholder={`${label === "From" ? "Departure" : "Arrival"} airport or city`}
+        autoComplete="off"
+        spellCheck={false}
+        aria-label={`${label} airport`}
+      />
+      {open && results.length > 0 && (
+        <ul className="pf-air-list">
+          {results.map((airport) => (
+            <li key={airport.code}>
+              <button
+                onClick={() => {
+                  onPick(airport);
+                  setOpen(false);
+                }}
+              >
+                <b>{airport.code}</b>
+                <span>
+                  {airport.city} · {airport.name}
+                </span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+      {open && query.trim().length > 0 && results.length === 0 && (
+        <p className="pf-note">
+          Not in the list yet. It holds {AIRPORTS.length} of the busiest; the full set is a
+          build step away.
+        </p>
+      )}
+    </div>
+  );
+}
+
 /** What the journey field says when there is no journey, only a here. */
 const ROAM_CODE = {
   walking: "Around here",
