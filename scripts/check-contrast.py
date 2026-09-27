@@ -15,10 +15,19 @@ script and not a review step.
 
 Touch targets, accessible names and focus visibility are not colour and are not checked
 here; those are measured in the browser, because they depend on layout.
+
+Two gaps closed later, both found by --indigo-btn sitting at 2.93:1 for months:
+
+  1. Only text foregrounds were checked. A filled button is not text, and 1.4.11 asks
+     3:1 for the fill against whatever is behind it. Every primary button in the app was
+     under that bar while its white label passed comfortably, which is exactly the shape
+     of failure a text-only audit cannot see.
+  2. The script printed its failures and exited 0, so `npm run gate` went green with
+     known failures in the output. It exits 1 now.
 """
 
 
-import re, pathlib
+import re, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 css = (ROOT / "apps/prototype/src/theme.css").read_text()
@@ -92,6 +101,24 @@ CHECKS = [
 ]
 CATS = [k for k in DARK if k.startswith("--cat-")]
 
+# Filled controls, and every surface they are painted on. WCAG 1.4.11: the fill has to
+# clear 3:1 against what is behind it or the control cannot be located, however legible
+# its label is.
+CONTROLS = [
+    ("button fill",  "--indigo-btn", ["--space", "--slate", "--charcoal"]),
+    ("found pin",    "--ember",      ["--space"]),
+    ("you, on map",  "--aqua",       ["--space"]),
+]
+
+# Labels sitting on top of a filled control, which is a text check against the fill.
+#
+# The literal #fff is deliberate and has to stay literal. In the light scheme --white is
+# redefined as near-black ink, so reading the label colour from the token gives the wrong
+# answer twice over. The CSS writes `color: #fff` on these buttons, so the audit does too.
+ON_FILL = [
+    ("label on button", "#ffffff", "--indigo-btn"),
+]
+
 def report(name, table):
     print(f"\n===== {name} =====")
     fails = []
@@ -103,6 +130,24 @@ def report(name, table):
         ok = "OK " if r >= 4.5 else ("lg " if r >= 3 else "FAIL")
         if r < 4.5: fails.append((label, round(r,2)))
         print(f"  {label:<20} {r:5.2f}  {ok}")
+    print("  -- filled controls, 3:1 against the surface behind (1.4.11) --")
+    for label, fill, bgs in CONTROLS:
+        f = resolve(f"var({fill})", table)
+        if not f: print(f"  {label:<20} ?  unresolved"); continue
+        for bgname in bgs:
+            b = flatten(resolve(f"var({bgname})", table), (0,0,0))
+            r = ratio(flatten(f, b), b)
+            ok = "OK " if r >= 3 else "FAIL"
+            if r < 3: fails.append((f"{label} on {bgname}", round(r,2)))
+            print(f"  {label + ' / ' + bgname:<20} {r:5.2f}  {ok}")
+    for label, fg, fill in ON_FILL:
+        b = flatten(resolve(f"var({fill})", table), (0,0,0))
+        f = flatten(resolve(fg if fg.startswith("#") else f"var({fg})", table), b)
+        r = ratio(f, b)
+        ok = "OK " if r >= 4.5 else ("lg " if r >= 3 else "FAIL")
+        if r < 4.5: fails.append((label, round(r,2)))
+        print(f"  {label:<20} {r:5.2f}  {ok}")
+
     surf = flatten(resolve("var(--slate)", table), (0,0,0))
     print(f"  -- category text on sheet ({'dark' if name=='DARK' else 'light'}) --")
     for c in sorted(CATS):
@@ -116,6 +161,12 @@ def report(name, table):
 
 f1 = report("DARK", DARK)
 f2 = report("LIGHT", LIGHT)
-print("\n### below 4.5:1 ###")
-for n, r in f1: print(f"  dark   {n:<24} {r}")
-for n, r in f2: print(f"  light  {n:<24} {r}")
+print("\n### below the bar ###")
+for n, r in f1: print(f"  dark   {n:<28} {r}")
+for n, r in f2: print(f"  light  {n:<28} {r}")
+if not f1 and not f2:
+    print("  none")
+else:
+    # Printing a failure and exiting 0 is how these survived. The gate gates now.
+    print(f"\n{len(f1) + len(f2)} failing pair(s).")
+    sys.exit(1)

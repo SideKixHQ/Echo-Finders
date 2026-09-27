@@ -21,7 +21,7 @@ the point of departure, with its reason. Everything else should match.
     --space:#0B0F2B;
     --indigo:#6C63FF;
     --indigo-soft:#9B95FF;
-    --indigo-btn:#5147DB;
+    --indigo-btn:#6358FF;
     --cool:#D8DCE5;
     --aqua:#00FFE7;
     --magenta:#FF007A;

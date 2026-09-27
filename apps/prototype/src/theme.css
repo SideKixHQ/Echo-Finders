@@ -24,8 +24,20 @@
   /* Sponsorship. Kept deliberately duller and browner than --ember, because a listener who
      mistook an advert for a discovery would have been deceived by the interface itself. */
   --gold: #d4a856;
-  /* The design's own button indigo, a shade deeper than --indigo. */
-  --indigo-btn: #5147db;
+  /*
+   * The design's own button indigo, raised until a filled button is legally visible.
+   *
+   * #5147DB was 2.93:1 against --space, 2.40:1 against --slate and 2.73:1 against
+   * --charcoal. WCAG 1.4.11 asks 3:1 for the non-text parts of a control, so every
+   * primary button in the app was below the floor for being seen at all. The white
+   * label on top was fine at 6.41:1, which is why nobody noticed: the text passed and
+   * the button it sat on did not.
+   *
+   * #6358FF keeps the hue at 244 degrees and moves only value and saturation. It reads
+   * 4.81:1 under white text, 3.21:1 at worst against a dark surface and 3.87:1 at worst
+   * against a light one, so it clears both bars in both schemes.
+   */
+  --indigo-btn: #6358ff;
 
   /* ── Category colours ──────────────────────────────────────
      Lifted from the design prototype's CATS table rather than invented, so a dot on a chip
@@ -86,6 +98,17 @@
   --cool: #3a4459;
   --aqua: #00736c;
   --indigo-soft: #5b52d6;
+  /*
+   * NOT the dark scheme's value, and the new 1.4.11 check is what proved it.
+   *
+   * Raising the indigo helps on a dark ground and hurts on a light one: #6358FF put the
+   * white label at 3.91:1 here, under the 4.5 bar. On white the fill needs to go darker,
+   * not lighter, and the original value was already right for that. It reads 6.41:1
+   * under white text and 5.17:1 at worst against a light surface.
+   *
+   * Which is the whole argument for a per-scheme token: one hex cannot be correct on
+   * both grounds.
+   */
   --indigo-btn: #5147db;
   --gold: #7a5a15;
   --line: rgba(11, 15, 43, 0.14);
