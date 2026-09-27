@@ -22,6 +22,19 @@
  * It found the rate stepper at 16x14 and the transcript search at 15px tall, neither of
  * which anybody had looked at twice.
  *
+ * Two more checks, added once the designs were measured properly:
+ *
+ *   - text below 11px. Apple's floor is 11pt, and on a 390pt phone one CSS pixel is one
+ *     point, so 11px is the floor here too. This app is read outdoors, in motion, at
+ *     arm's length, which argues for the high side of any guideline rather than the low.
+ *   - a target a 44px thumb misses. 24x24 is the legal minimum and the app clears it
+ *     everywhere; 44 is what Apple asks for. This one is REPORTED, NOT FAILED, because
+ *     two families of control cannot reach 44 without wrecking what they are for: the
+ *     filter chips sit at 40 in a 48px scrolling row, and map pins overlap each other
+ *     by design when echoes are close together. Both are deliberate, both are well
+ *     above the legal floor, and both are listed every run so the decision stays
+ *     visible rather than quietly rotting into an excuse.
+ *
  *   node scripts/audit-controls.mjs
  *
  * It builds and serves the app itself. It used to expect a `vite preview` already running,
@@ -80,13 +93,53 @@ const inventory = () => p.evaluate(() => {
       saysState: el.hasAttribute('aria-pressed') || el.hasAttribute('aria-selected')
         || el.hasAttribute('aria-current') || el.hasAttribute('aria-checked'),
       role: el.getAttribute('role') ?? el.tagName.toLowerCase(),
+      /*
+       * Can a 44px thumb hit this?
+       *
+       * Not the same question as "is the rectangle 44px". A control may legitimately
+       * paint smaller than it listens, which is how Apple's own controls work and how
+       * the chip row keeps its density. So probe the eight points on the edge of a
+       * 44x44 box centred on the control and ask the page what is actually there. It
+       * also catches the opposite lie: a hit area extended so far it steals a
+       * neighbour's taps shows up as that neighbour failing.
+       */
+      reach44: (() => {
+        const cx = r.left + r.width / 2, cy = r.top + r.height / 2, d = 21;
+        // North, south, east and west at 22px out. Not the corners: a 44px circle is a
+        // perfectly good 44px target and does not reach the corners of a 44px square.
+        const pts = [[cx, cy-d], [cx, cy+d], [cx-d, cy], [cx+d, cy]];
+        return pts.every(([x, y]) => {
+          const hit = document.elementFromPoint(x, y);
+          return hit && (hit === el || el.contains(hit));
+        });
+      })(),
+    });
+  }
+  return out;
+});
+
+/** Every piece of rendered text, with the size it actually renders at. */
+const typeSweep = () => p.evaluate(() => {
+  const out = [];
+  for (const el of document.querySelectorAll('*')) {
+    const own = [...el.childNodes].filter(n => n.nodeType === 3).map(n => n.textContent.trim()).join('');
+    if (!own) continue;
+    const cs = getComputedStyle(el);
+    if (cs.visibility === 'hidden' || cs.display === 'none' || parseFloat(cs.opacity) === 0) continue;
+    const r = el.getBoundingClientRect();
+    if (r.width < 1 || r.height < 1) continue;
+    out.push({
+      text: own.slice(0, 32),
+      cls: (el.className.baseVal ?? el.className ?? '').toString().split(' ')[0],
+      size: Math.round(parseFloat(cs.fontSize) * 10) / 10,
     });
   }
   return out;
 });
 
 const screens = {};
-const capture = async (label) => { screens[label] = await inventory(); };
+const type = {};
+const capture = async (label) => { screens[label] = await inventory(); type[label] = await typeSweep(); };
 
 /**
  * Tab through a screen the way somebody without a mouse has to, and record what the ring
@@ -187,16 +240,33 @@ for (const [screen, items] of all) for (const it of items) {
   if (!seen.has(key)) seen.set(key, { ...it, screen });
 }
 console.log(`=== ${seen.size} distinct controls across ${all.length} screens ===\n`);
-const fail = { unnamed: [], small: [], tooltip: [], mute: [] };
+const fail = { unnamed: [], small: [], thumb: [], tooltip: [], mute: [] };
 for (const [, it] of seen) {
   if (!it.name) fail.unnamed.push(it);
   if (it.w < 24 || it.h < 24) fail.small.push(it);
+  else if (!it.reach44) fail.thumb.push(it);
   if (it.title) fail.tooltip.push(it);
   if (it.looksOn && !it.saysState) fail.mute.push(it);
 }
 const show = (label, list) => console.log(`${label}: ${list.length ? list.map(i=>`${i.cls} "${i.name}" ${i.w}x${i.h} (${i.screen})`).join('\n    ') : 'none'}`);
 show('WITHOUT ACCESSIBLE NAME', fail.unnamed);
 show('UNDER 24x24 (WCAG 2.5.8)', fail.small);
+console.log(`\nADVISORY, a 44px thumb misses these (${fail.thumb.length}). Filter chips at 40 in a
+48px row, and map pins that overlap when echoes are close, are deliberate. Everything
+here clears the 24x24 legal floor. Listed so the decision stays visible:
+    ${fail.thumb.map(i => `${i.cls} "${i.name.slice(0, 30)}" ${i.w}x${i.h}`).join('\n    ') || 'none'}\n`);
+
+// Type, deduplicated by class and size so one offending rule is reported once.
+const tiny = new Map();
+for (const [screen, items] of Object.entries(type)) for (const t of items) {
+  if (t.size >= 11) continue;
+  const key = t.cls + '|' + t.size;
+  if (!tiny.has(key)) tiny.set(key, { ...t, screen });
+}
+console.log(`UNDER 11px (Apple's floor, and this is read outdoors): ${tiny.size
+  ? [...tiny.values()].sort((a, b) => a.size - b.size)
+      .map(t => `${t.size}px  .${t.cls} "${t.text}" (${t.screen})`).join('\n    ')
+  : 'none'}`);
 show('NATIVE TOOLTIP', fail.tooltip);
 show('SELECTED BUT SILENT (WCAG 4.1.2)', fail.mute);
 

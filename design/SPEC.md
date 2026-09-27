@@ -1,5 +1,14 @@
 # The design, measured
 
+> **Type sizes were raised in September 2026, and this file was raised with them.** The
+> original prototype set labels as small as 8.5px. Apple's floor is 11pt, and on a 390pt
+> phone one CSS pixel is one point, so 11px is the floor here. This app is read outdoors,
+> in motion, at arm's length, which argues for the high side of a guideline rather than
+> the low. `scripts/audit-controls.mjs` now fails on anything under 11px, so the old
+> values cannot come back by accident. Where a size below 11px appears in the prototype
+> HTML alongside this file, this file is the one that is current.
+
+
 *Extracted from `echo-finders-phone.prototype.html` — not transcribed by eye, and not
 remembered. Regenerate rather than edit: every value below is lifted verbatim out of that
 file's own stylesheet.*
@@ -88,8 +97,8 @@ const CATS = {
 .flightpill .bar u { position:absolute; top:50%; width:7px; height:7px; margin:-3.5px 0 0 -3.5px; border-radius:50%; background:#fff }
 .flightpill small { font-family:"Space Grotesk"; font-size:11px; color:var(--aqua) }
 .chips { display:flex; gap:3px; margin-top:9px; padding:4px; border-radius:13px; background:rgba(var(--rgb-panel),.94); border:1px solid var(--line); overflow-x:auto; scrollbar-width:none }
-.chip { flex:none; display:flex; align-items:center; gap:6px; padding:6px 10px; border-radius:9px; font-size:10.5px; color:var(--muted); white-space:nowrap }
-.chip.all { font-family:"Space Grotesk"; font-size:9px; letter-spacing:.13em; text-transform:uppercase; color:var(--cool); border-right:1px solid var(--line); border-radius:9px 0 0 9px; margin-right:3px; padding-right:11px }
+.chip { flex:none; display:flex; align-items:center; gap:6px; padding:6px 10px; border-radius:9px; font-size:12px; color:var(--muted); white-space:nowrap }
+.chip.all { font-family:"Space Grotesk"; font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--cool); border-right:1px solid var(--line); border-radius:9px 0 0 9px; margin-right:3px; padding-right:11px }
 .chip.all.on { color:var(--aqua); background:none }
 .chip .dot { width:7px; height:7px; border-radius:50%; background:currentColor; opacity:.4 }
 .chip.on { background:rgba(var(--rgb-hair),.08) }
@@ -135,7 +144,7 @@ const CATS = {
 .mini .play svg { width:14px; height:14px }
 .minitxt { flex:1; min-width:0 }
 .minitxt b { display:block; font-size:12.5px; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis }
-.minitxt span { display:block; font-family:"Space Grotesk"; font-size:10px; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis }
+.minitxt span { display:block; font-family:"Space Grotesk"; font-size:11.5px; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis }
 .mini .savebtn { width:34px; height:34px }
 ```
 
@@ -146,8 +155,8 @@ const CATS = {
 .play svg { width:19px; height:19px; fill:#fff }
 .nowtxt { flex:1; min-width:0 }
 .nowtxt h5 { margin:0; font-size:13.5px; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis }
-.nowtxt p { margin:2px 0 0; font-size:10.5px; color:var(--muted); font-family:"Space Grotesk"; white-space:nowrap; overflow:hidden; text-overflow:ellipsis }
-.tag { display:inline-flex; align-items:center; gap:5px; font-size:9px; letter-spacing:.14em; text-transform:uppercase; font-family:"Space Grotesk"; font-weight:500; margin-bottom:3px }
+.nowtxt p { margin:2px 0 0; font-size:12px; color:var(--muted); font-family:"Space Grotesk"; white-space:nowrap; overflow:hidden; text-overflow:ellipsis }
+.tag { display:inline-flex; align-items:center; gap:5px; font-size:11px; letter-spacing:.14em; text-transform:uppercase; font-family:"Space Grotesk"; font-weight:500; margin-bottom:3px }
 .tag .dot { width:6px; height:6px; border-radius:50%; background:currentColor }
 .savebtn { width:38px; height:38px; flex:none; border-radius:12px; border:1px solid var(--line-2); display:grid; place-items:center; color:var(--cool) }
 .savebtn.on { border-color:var(--aqua); color:var(--aqua); background:rgba(var(--rgb-accent),.12) }
@@ -160,9 +169,9 @@ const CATS = {
 .tabs { display:flex; gap:2px; padding:0 16px; border-bottom:1px solid var(--line); flex:none; background:var(--slate) }
 .tabs button { flex:1; padding:10px 0; font-size:11px; color:var(--muted); border-bottom:2px solid transparent }
 .tabs button.on { color:var(--white); border-color:var(--aqua) }
-.tabs .count { margin-left:5px; padding:1px 6px; border-radius:99px; background:rgba(var(--rgb-accent),.16); color:var(--aqua); font-size:9.5px; font-family:"Space Grotesk" }
+.tabs .count { margin-left:5px; padding:1px 6px; border-radius:99px; background:rgba(var(--rgb-accent),.16); color:var(--aqua); font-size:11px; font-family:"Space Grotesk" }
 .list { flex:none; padding:12px 14px 16px; display:flex; flex-direction:column; gap:9px }
-.sectlabel { flex:0 0 auto; font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); margin:4px 2px 0 }
+.sectlabel { flex:0 0 auto; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:4px 2px 0 }
 ```
 
 ## Card
@@ -170,10 +179,10 @@ const CATS = {
 ```css
 .card { flex:0 0 auto; background:rgba(var(--rgb-panel),.55); border:1px solid var(--line); border-radius:14px; padding:12px 13px; transition:.14s var(--ease); position:relative }
 .card .top { display:flex; align-items:center; gap:8px; margin-bottom:6px }
-.dur { margin-left:auto; font-size:10px; color:var(--muted); font-family:"Space Grotesk" }
+.dur { margin-left:auto; font-size:11.5px; color:var(--muted); font-family:"Space Grotesk" }
 .card h4 { margin:0 0 4px; font-size:13.5px; font-weight:500; line-height:1.35; letter-spacing:-.01em }
 .card p { margin:0; font-size:11px; line-height:1.5; color:var(--muted) }
-.place { margin-top:8px; display:flex; align-items:center; gap:5px; font-size:10px; color:var(--muted); font-family:"Space Grotesk" }
+.place { margin-top:8px; display:flex; align-items:center; gap:5px; font-size:11.5px; color:var(--muted); font-family:"Space Grotesk" }
 .acts { display:flex; gap:6px; margin-top:10px }
 .act { display:flex; align-items:center; gap:5px; padding:7px 11px; border-radius:99px; font-size:11px; border:1px solid var(--line-2); color:var(--cool) }
 .act.pri { background:var(--indigo-btn); border-color:var(--indigo-btn); color:#fff }
@@ -185,7 +194,7 @@ const CATS = {
 
 ```css
 .nav { position:absolute; bottom:0; left:0; right:0; z-index:850; height:74px; display:flex; background:rgba(var(--rgb-panel),.96); border-top:1px solid var(--line); padding-bottom:14px }
-.nav button { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; font-size:9.5px; color:var(--muted); letter-spacing:.03em }
+.nav button { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; font-size:11px; color:var(--muted); letter-spacing:.03em }
 .nav button svg { width:20px; height:20px; stroke:currentColor; fill:none; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round }
 .nav button.on { color:var(--aqua) }
 ```

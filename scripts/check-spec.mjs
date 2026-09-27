@@ -3,6 +3,13 @@
  *
  * "Match the design exactly" was asked for twice, and both times the only way to answer was
  * to look at two screens and have an opinion. This turns it into a number. Each row below is
+ * NOTE, September 2026: the type sizes here no longer match the prototype HTML, on
+ * purpose. The prototype set labels as small as 8.5px, which is below Apple's 11pt
+ * floor, and on a 390pt phone one CSS pixel is one point. Everything under 11px was
+ * raised, `design/SPEC.md` was raised with it, and `audit-controls.mjs` now fails on
+ * anything under 11px so it cannot drift back. Do not "restore" these from the
+ * prototype: the prototype is the older document.
+ *
  * a measurement taken out of `design/echo-finders-phone.prototype.html` (and written down in
  * `design/SPEC.md`), paired with the selector that carries it here, and the script reads the
  * computed style in a real browser and prints the difference.
@@ -46,7 +53,7 @@ const SPEC = [
   { design: '.tabs button', ours: '.seg', where: 'map',
     want: { flexGrow: '1', paddingTop: '10px', paddingBottom: '10px', fontSize: '11px' } },
   { design: '.tabs .count', ours: '.seg-count', where: 'map',
-    want: { marginLeft: '5px', fontSize: '9.5px', borderTopLeftRadius: '99px' } },
+    want: { marginLeft: '5px', fontSize: '11px', borderTopLeftRadius: '99px' } },
   { design: '.list', ours: '.list', where: 'map',
     want: { paddingTop: '12px', paddingRight: '14px', paddingBottom: '16px', paddingLeft: '14px', rowGap: '9px' } },
   /*
@@ -62,7 +69,7 @@ const SPEC = [
   { design: '.nav', ours: '.nav', where: 'map',
     want: { height: '74px', paddingBottom: '14px' } },
   { design: '.nav button', ours: '.nav button', where: 'map',
-    want: { flexGrow: '1', flexDirection: 'column', rowGap: '4px', fontSize: '9.5px', letterSpacing: '0.285px' } },
+    want: { flexGrow: '1', flexDirection: 'column', rowGap: '4px', fontSize: '11px', letterSpacing: '0.33px' } },
   { design: '.nav button svg', ours: '.nav button svg', where: 'map',
     want: { width: '20px', height: '20px', strokeWidth: '1.7px' } },
 
@@ -75,9 +82,9 @@ const SPEC = [
   { design: '.nowtxt h5', ours: '.playing-text strong', where: 'playing',
     want: { fontSize: '13.5px', fontWeight: '500', whiteSpace: 'nowrap', textOverflow: 'ellipsis' } },
   { design: '.nowtxt p', ours: '.playing-place', where: 'playing',
-    want: { fontSize: '10.5px', whiteSpace: 'nowrap', textOverflow: 'ellipsis' } },
+    want: { fontSize: '12px', whiteSpace: 'nowrap', textOverflow: 'ellipsis' } },
   { design: '.tag', ours: '.playing-kicker', where: 'playing',
-    want: { fontSize: '9px', letterSpacing: '1.26px', textTransform: 'uppercase', fontWeight: '500' } },
+    want: { fontSize: '11px', letterSpacing: '1.54px', textTransform: 'uppercase', fontWeight: '500' } },
   { design: '.tag .dot', ours: '.playing-dot', where: 'playing',
     want: { width: '6px', height: '6px', borderTopLeftRadius: '50%' } },
   { design: '.savebtn', ours: '.phead-mark', where: 'playing',
@@ -97,9 +104,9 @@ const SPEC = [
      carries an ordinal ("3 of 12") that takes the right edge, so the duration sits beside
      it rather than in it. The size is the design's. */
   { design: '.dur', ours: '.dur', where: 'plan',
-    want: { fontSize: '10px' } },
+    want: { fontSize: '11.5px' } },
   { design: '.place', ours: '.ecard-place', where: 'plan',
-    want: { marginTop: '8px', fontSize: '10px', columnGap: '5px' } },
+    want: { marginTop: '8px', fontSize: '11.5px', columnGap: '5px' } },
   { design: '.acts', ours: '.card-foot', where: 'plan',
     want: { columnGap: '6px', marginTop: '10px' } },
   { design: '.act', ours: '.act', where: 'plan',

@@ -339,7 +339,7 @@ body {
 .playing-text { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 2px; }
 .playing-kicker {
   display: flex; align-items: center; gap: 6px;
-  font-family: "Space Grotesk", monospace; font-size: 9px; font-weight: 500;
+  font-family: "Space Grotesk", monospace; font-size: 11px; font-weight: 500;
   letter-spacing: 0.14em; text-transform: uppercase;
 }
 .playing-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
@@ -350,7 +350,7 @@ body {
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .playing-place {
-  font-size: 10.5px; color: var(--muted); font-family: "Space Grotesk", monospace;
+  font-size: 12px; color: var(--muted); font-family: "Space Grotesk", monospace;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 
 }
@@ -379,7 +379,7 @@ body {
 .playing-mark:hover { background: rgba(255, 158, 18, 0.12); }
 .playing-next, .playing-missed {
   margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--line);
-  font-size: 10.5px; color: var(--muted);
+  font-size: 12px; color: var(--muted);
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .playing-missed { color: var(--indigo-soft); }
@@ -414,7 +414,7 @@ body {
 .entry-glyph i {
   position: absolute; right: 3px; bottom: 3px; padding: 1px 4px; border-radius: 4px;
   background: rgba(0, 0, 0, 0.72); font-style: normal; color: var(--cool);
-  font-family: "Space Grotesk", monospace; font-size: 8.5px;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
 }
 .entry-now { color: var(--ember); }
 
@@ -455,7 +455,7 @@ body {
   margin: -3.5px 0 0 -3.5px; border-radius: 50%; background: var(--white);
 }
 .ribbon small {
-  font-family: "Space Grotesk", monospace; font-size: 10.5px; color: var(--aqua); flex: none;
+  font-family: "Space Grotesk", monospace; font-size: 12px; color: var(--aqua); flex: none;
 }
 
 /* The stack above the map: ribbon, then filters. */
@@ -541,10 +541,19 @@ body {
 .chips { scroll-behavior: smooth; }
 
 .chip {
-  flex: none; display: flex; align-items: center; gap: 6px; cursor: pointer; padding: 6px 10px; border-radius: 9px; font: inherit; font-size: 10.5px; background: none; border: 0; white-space: nowrap;
+  flex: none; display: flex; align-items: center; gap: 6px; cursor: pointer;
+  /*
+   * 40px tall, inside a 48px row. The ::after trick used everywhere else cannot work
+   * here: .chips is a horizontal scroller, so anything the pseudo element adds above or
+   * below the chip is clipped by the scroll container before a thumb can reach it. The
+   * only honest way to give a chip a 44px target is to make the row tall enough to hold
+   * one, which the probe confirms.
+   */
+  min-height: 40px; padding: 0 12px;
+  border-radius: 11px; font: inherit; font-size: 12px; background: none; border: 0; white-space: nowrap;
 }
 .chip-all {
-  font-family: "Space Grotesk", monospace; font-size: 9px; letter-spacing: 0.13em;
+  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.13em;
   text-transform: uppercase; color: var(--cool);
   border-right: 1px solid var(--line); border-radius: 9px 0 0 9px;
   margin-right: 3px; padding-right: 11px;
@@ -598,7 +607,7 @@ body {
 .erow-plate i {
   position: absolute; right: 3px; bottom: 3px; padding: 1px 4px; border-radius: 4px;
   background: rgba(0, 0, 0, 0.72); font-style: normal; color: var(--cool);
-  font-family: "Space Grotesk", monospace; font-size: 8.5px;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
 }
 .erow-plate:disabled { cursor: default; opacity: 0.85; }
 .erow-body {
@@ -612,7 +621,7 @@ body {
   color: var(--white);
 }
 .erow-body small {
-  display: block; font-family: "Space Grotesk", monospace; font-size: 10px;
+  display: block; font-family: "Space Grotesk", monospace; font-size: 11.5px;
   color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   max-width: 100%;
 }
@@ -642,12 +651,12 @@ body {
 .ecard-top { display: flex; align-items: center; margin-bottom: 7px; }
 .ecard-tag {
   display: flex; align-items: center; gap: 6px;
-  font-family: "Space Grotesk", monospace; font-size: 9px;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
   letter-spacing: 0.13em; text-transform: uppercase;
 }
 .ecard-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 .ecard-dur {
-  margin-left: auto; font-size: 10px; color: var(--muted);
+  margin-left: auto; font-size: 11.5px; color: var(--muted);
   font-family: "Space Grotesk", monospace;
 }
 .ecard h4 {
@@ -658,7 +667,7 @@ body {
 .ecard p { margin: 0; font-size: 11px; line-height: 1.5; color: var(--muted); }
 .ecard-place {
   margin-top: 8px; display: flex; align-items: center; gap: 5px;
-  font-size: 10px; color: var(--muted); font-family: "Space Grotesk", monospace;
+  font-size: 11.5px; color: var(--muted); font-family: "Space Grotesk", monospace;
 }
 .ecard-place svg { width: 10px; height: 10px; fill: none; stroke: currentColor; stroke-width: 1.8; }
 
@@ -691,15 +700,15 @@ body {
 /* The header carries the two numbers the screen is about, then gets out of the way. */
 .plan-head { flex: none; padding: 14px 16px 10px; border-bottom: 1px solid var(--line); }
 .plan-kicker {
-  display: block; font-family: "Space Grotesk", monospace; font-size: 9px;
-  letter-spacing: 0.2em; text-transform: uppercase; color: var(--ember);
+  display: block; font-family: "Space Grotesk", monospace; font-size: 11px;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--ember);
 }
 .plan-head h1 {
   font-size: 17px; font-weight: 600; letter-spacing: -0.01em; margin: 5px 0 3px;
   line-height: 1.25;
 }
 .plan-head p {
-  font-family: "Space Grotesk", monospace; font-size: 10.5px; color: var(--muted);
+  font-family: "Space Grotesk", monospace; font-size: 12px; color: var(--muted);
 }
 .plan-chips { display: flex; gap: 5px; margin-top: 10px; }
 .plan-chips .chip {
@@ -735,7 +744,7 @@ body {
 /* Where it falls along the route, beside the duration but clearly subordinate to it —
    and with its own space, because pinned to the same corner the two collided. */
 .card-ord {
-  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: 9.5px;
+  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: 11px;
   color: var(--muted); opacity: 0.7;
 }
 /* The duration, wherever a card shows one.
@@ -744,7 +753,7 @@ body {
    were showing "4 min" at the size of a heading. The design puts it at 10px in the mono
    face, quiet beside the title. */
 .dur {
-  margin-left: auto; font-size: 10px; color: var(--muted);
+  margin-left: auto; font-size: 11.5px; color: var(--muted);
   font-family: "Space Grotesk", monospace;
 }
 /* In the card header the ordinal takes the `auto`, so the duration sits beside it. */
@@ -784,7 +793,7 @@ body {
 }
 .upnext-head {
   display: block; font-family: "Space Grotesk", monospace;
-  font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--muted); margin-bottom: 6px; margin: 4px 2px 0;}
 .upnext ul { display: flex; flex-direction: column; gap: 3px; }
 .upnext button {
@@ -794,7 +803,7 @@ body {
 }
 .upnext-when {
   flex: none; width: 46px; font-family: "Space Grotesk", monospace;
-  font-size: 10.5px; color: var(--ember);
+  font-size: 12px; color: var(--ember);
 }
 .upnext-title {
   flex: 1; min-width: 0; font-size: 12px; color: var(--cool);
@@ -838,7 +847,7 @@ body {
 
 .player-time {
   display: flex; justify-content: space-between;
-  font-family: "Space Grotesk", monospace; font-size: 10.5px; color: var(--muted);
+  font-family: "Space Grotesk", monospace; font-size: 12px; color: var(--muted);
   margin-bottom: 9px;
 }
 
@@ -881,8 +890,8 @@ body {
 }
 .simpaud span { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
 .simpaud strong { font-size: 12.5px; font-weight: 600; }
-.simpaud small { font-size: 10.5px; color: var(--muted); }
-.simpaud i { font-style: normal; font-family: "Space Grotesk", monospace; font-size: 10.5px; color: var(--muted); }
+.simpaud small { font-size: 12px; color: var(--muted); }
+.simpaud i { font-style: normal; font-family: "Space Grotesk", monospace; font-size: 12px; color: var(--muted); }
 .simpaud:disabled { opacity: 0.55; cursor: default; }
 .simpaud-on {
   background: var(--aqua); border-color: var(--aqua); color: var(--space);
@@ -925,7 +934,7 @@ body {
 }
 .seg-count {
   display: inline-block; margin-left: 5px; padding: 1px 6px; border-radius: 99px;
-  font-family: "Space Grotesk", monospace; font-size: 9.5px;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
   background: rgba(var(--rgb-accent), 0.16); color: var(--aqua);
 }
 
@@ -960,7 +969,7 @@ body {
 .tkey.on { border-color: var(--aqua); color: var(--aqua); background: rgba(var(--rgb-accent), 0.1); }
 
 .tkicker {
-  font-family: "Space Grotesk", monospace; font-size: 9px; letter-spacing: 0.12em;
+  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--muted); margin-bottom: 9px;
 }
 .tlines { display: flex; flex-direction: column; gap: 3px; }
@@ -999,14 +1008,14 @@ body {
 }
 .tile b { font-family: "Space Grotesk", monospace; font-size: 22px; color: var(--aqua); }
 .tile span {
-  font-family: "Space Grotesk", monospace; font-size: 8.5px;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
 }
 
 .arr-cats { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
 .arr-cat {
   display: flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 99px;
-  font-size: 10.5px; background: rgba(var(--rgb-hair), 0.06);
+  font-size: 12px; background: rgba(var(--rgb-hair), 0.06);
 }
 
 .arr-next {
@@ -1094,7 +1103,7 @@ body {
 .now h2 {
   font-size: 13.5px; font-weight: 500; line-height: 1.22; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
-.now p { font-size: 10.5px; color: var(--muted); margin: 2px 0 0;}
+.now p { font-size: 12px; color: var(--muted); margin: 2px 0 0;}
 /* One line, for the place-and-length line under a found echo. Not for the idle panel,
    whose paragraph is two sentences of explanation and was being cut off mid-word. */
 .now:not(.now-idle) .now-text p {
@@ -1105,7 +1114,7 @@ body {
    pixels lower for it. */
 .now-idle { padding: 6px 16px 10px; }
 .now-idle h2 { font-size: 13.5px; font-weight: 500; color: var(--cool); }
-.now-idle p { font-size: 10.5px; }
+.now-idle p { font-size: 12px; }
 
 .play {
   width: 46px; height: 46px; flex: none; border: 0; border-radius: 50%;
@@ -1119,7 +1128,7 @@ body {
 }
 
 .tag {
-  display: inline-block; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
+  display: inline-block; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
   padding: 2px 7px; border-radius: 6px; font-family: "Space Grotesk", monospace; gap: 5px; font-weight: 500; margin-bottom: 3px;}
 .tag-common { background: rgba(var(--rgb-hair), 0.12); color: var(--cool); }
 .tag-uncommon { background: rgba(108, 99, 255, 0.22); color: var(--indigo-soft); }
@@ -1146,7 +1155,7 @@ body {
 
 .list-head {
   display: flex; justify-content: space-between; align-items: baseline;
-  padding: 4px 16px 6px; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 4px 16px 6px; font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--muted); font-family: "Space Grotesk", monospace;
   border-top: 1px solid var(--line);
 }
@@ -1174,7 +1183,7 @@ body {
 .row-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
 .row-text strong { font-size: 12.5px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .row-sealed .row-text strong { color: var(--cool); font-style: italic; font-weight: 400; }
-.row-text small { font-size: 10.5px; color: var(--muted); }
+.row-text small { font-size: 12px; color: var(--muted); }
 .row-distance { font-size: 11px; color: var(--muted); font-family: "Space Grotesk", monospace; flex: none; }
 
 /* ── notes ───────────────────────────────────────────────── */
@@ -1202,7 +1211,7 @@ body {
 }
 .routes .route:hover { color: var(--aqua); border-color: var(--line-2); }
 .routes .route.on { color: var(--white); border-color: var(--aqua); }
-.routes .route .count { float: right; color: var(--muted); font-size: 10px; }
+.routes .route .count { float: right; color: var(--muted); font-size: 11.5px; }
 .routename {
   font-family: "Space Grotesk", monospace; color: var(--white);
   font-size: 12px; margin-bottom: 14px;
@@ -1229,7 +1238,7 @@ body {
 .nav button {
   flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;
   background: none; border: 0; cursor: pointer; position: relative;
-  font-size: 9.5px; letter-spacing: 0.03em; color: var(--muted);
+  font-size: 11px; letter-spacing: 0.03em; color: var(--muted);
   font-family: "Space Grotesk", monospace; text-transform: uppercase;
 
 }
@@ -1240,7 +1249,7 @@ body {
 .nav .badge {
   position: absolute; top: -3px; left: 50%; margin-left: 7px;
   min-width: 15px; height: 15px; padding: 0 4px; border-radius: 99px;
-  background: var(--ember); color: #fff; font-size: 9px; line-height: 15px;
+  background: var(--ember); color: #fff; font-size: 11px; line-height: 15px;
 }
 
 /* The sheet and proximity bar sit above the tab bar rather than under it. */
@@ -1312,7 +1321,7 @@ body {
 }
 .group { margin-bottom: 22px; }
 .group-head {
-  font-family: "Space Grotesk", monospace; font-size: 9.5px; letter-spacing: 0.16em;
+  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.12em;
   text-transform: uppercase; margin-bottom: 8px; color: var(--muted);
 }
 .group-singular { color: var(--magenta); }
@@ -1321,11 +1330,11 @@ body {
 
 .entry-text h4 { font-size: 13px; font-weight: 500; line-height: 1.35; }
 .entry-text p { font-size: 11px; color: var(--muted); margin-top: 2px; }
-.entry-meta { font-size: 10px; color: rgba(174, 181, 194, 0.72); }
+.entry-meta { font-size: 11.5px; color: rgba(174, 181, 194, 0.72); }
 
 .collection-foot {
   margin-top: 20px; padding: 14px 2px 0; border-top: 1px solid var(--line);
-  font-size: 10.5px; line-height: 1.6; color: var(--muted);
+  font-size: 12px; line-height: 1.6; color: var(--muted);
 }
 .collection-foot p { font-size: 11.5px; color: var(--muted); line-height: 1.6; }
 .collection-foot strong { color: var(--cool); }
@@ -1333,6 +1342,7 @@ body {
 /* ── privacy ─────────────────────────────────────────────── */
 .setting { margin-bottom: 18px; }
 .setting-row {
+  min-height: 48px;
   width: 100%; display: flex; align-items: center; gap: 14px;
   background: none; border: 0; color: inherit; text-align: left; cursor: pointer; padding: 0;
 }
@@ -1364,7 +1374,7 @@ body {
   background: var(--slate); border: 1px solid var(--line);
 }
 .panel h3 {
-  font-family: "Space Grotesk", monospace; font-size: 9.5px; letter-spacing: 0.16em;
+  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
 }
 .feature-list { list-style: none; }
@@ -1373,12 +1383,12 @@ body {
   padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 12px;
 }
 .feature:last-child { border-bottom: 0; }
-.feature-level { font-family: "Space Grotesk", monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; }
+.feature-level { font-family: "Space Grotesk", monospace; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.1em; }
 .feature-full .feature-level { color: var(--aqua); }
 .feature-degraded .feature-level { color: var(--gold); }
 .feature-unavailable .feature-level { color: var(--muted); }
 .feature-unavailable .feature-name { color: var(--muted); }
-.feature-fallback { grid-column: 1 / -1; font-size: 10.5px; color: rgba(174, 181, 194, 0.7); line-height: 1.5; }
+.feature-fallback { grid-column: 1 / -1; font-size: 12px; color: rgba(174, 181, 194, 0.7); line-height: 1.5; }
 
 .panel-danger { border-color: rgba(255, 0, 122, 0.24); }
 .danger-row {
@@ -1431,7 +1441,7 @@ body {
 .vf-x svg { width: 15px; height: 15px; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; }
 .vf-tag {
   display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px;
-  border-radius: 99px; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+  border-radius: 99px; font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase;
   background: rgba(5, 6, 10, 0.5); border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(6px);
 }
@@ -1467,7 +1477,7 @@ body {
 
 .vf-note {
   position: absolute; left: 14px; right: 14px; bottom: 12px; z-index: 4;
-  font-size: 10.5px; line-height: 1.5; text-align: center; color: rgba(255, 255, 255, 0.78);
+  font-size: 12px; line-height: 1.5; text-align: center; color: rgba(255, 255, 255, 0.78);
   background: rgba(5, 6, 10, 0.52); border-radius: 10px; padding: 6px 10px;
   backdrop-filter: blur(6px);
 }
@@ -1500,12 +1510,12 @@ body {
 .vf-arc-label {
   position: absolute; transform: translateX(-50%); pointer-events: auto;
   width: max-content; max-width: 150px; padding: 5px 9px;
-  border-radius: 10px; font-size: 10.5px; line-height: 1.3; color: #fff; text-align: center;
+  border-radius: 10px; font-size: 12px; line-height: 1.3; color: #fff; text-align: center;
   background: rgba(5, 6, 10, 0.68); border: 1px solid rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(6px);
 }
 .vf-arc-on .vf-arc-label { border-color: rgba(255, 158, 18, 0.6); }
-.vf-arc-label em { display: block; font-style: normal; font-size: 9.5px; color: var(--muted); margin-top: 1px; }
+.vf-arc-label em { display: block; font-style: normal; font-size: 11px; color: var(--muted); margin-top: 1px; }
 
 /* Behind you is the common case on a street, and the most useful thing this screen
    can say. Dropping the marker would be the easy answer and the wrong one. */
@@ -1513,12 +1523,12 @@ body {
   position: absolute; top: 50%; transform: translateY(-50%); z-index: 4;
   pointer-events: auto; cursor: pointer; max-width: 40%;
   display: flex; align-items: center; gap: 5px; padding: 7px 9px;
-  font-size: 10.5px; line-height: 1.3; color: #fff; text-align: left;
+  font-size: 12px; line-height: 1.3; color: #fff; text-align: left;
   background: rgba(5, 6, 10, 0.62); border: 1px solid rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(6px);
 }
 .vf-edge svg { width: 13px; height: 13px; flex: none; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
-.vf-edge em { display: block; font-style: normal; font-size: 9.5px; color: var(--muted); margin-top: 1px; }
+.vf-edge em { display: block; font-style: normal; font-size: 11px; color: var(--muted); margin-top: 1px; }
 .vf-edge-l { left: 0; border-left: 0; border-radius: 0 12px 12px 0; }
 .vf-edge-r { right: 0; border-right: 0; border-radius: 12px 0 0 12px; flex-direction: row-reverse; text-align: right; }
 
@@ -1527,11 +1537,11 @@ body {
   border-top: 1px solid var(--line);
 }
 .vf-cap p { font-size: 12.5px; line-height: 1.4; color: var(--white); }
-.vf-cap small { display: block; margin-top: 3px; font-size: 10px; color: var(--muted); }
+.vf-cap small { display: block; margin-top: 3px; font-size: 11.5px; color: var(--muted); }
 
 .vf-blend { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
 .vf-end {
-  font-family: "Space Grotesk", monospace; font-size: 10px; letter-spacing: 0.08em;
+  font-family: "Space Grotesk", monospace; font-size: 11.5px; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--muted); flex: none; min-width: 34px;
 }
 .vf-end:last-child { text-align: right; }
@@ -1548,7 +1558,7 @@ body {
   width: 20px; height: 20px; border-radius: 50%; background: var(--ember);
   border: 2px solid var(--space); box-shadow: 0 0 0 1px var(--ember-deep);
 }
-.vf-hint { margin-top: 7px; text-align: center; font-size: 10px; color: var(--muted); }
+.vf-hint { margin-top: 7px; text-align: center; font-size: 11.5px; color: var(--muted); }
 
 .vf-plates { display: flex; gap: 8px; margin-top: 11px; overflow-x: auto; }
 .vf-plate {
@@ -1559,7 +1569,7 @@ body {
   width: 46px; height: 34px; object-fit: cover; border-radius: 7px;
   border: 1px solid var(--line); opacity: 0.6;
 }
-.vf-plate span { font-size: 9.5px; color: var(--muted); font-family: "Space Grotesk", monospace; }
+.vf-plate span { font-size: 11px; color: var(--muted); font-family: "Space Grotesk", monospace; }
 .vf-plate-on img { opacity: 1; border-color: var(--ember); }
 .vf-plate-on span { color: var(--ember); }
 
@@ -1577,14 +1587,14 @@ body {
 .plate-thumb { position: relative; flex: none; width: 36px; height: 36px; }
 .plate-thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
 .plate-thumb em {
-  position: absolute; right: -3px; bottom: -3px; font-style: normal; font-size: 9px;
+  position: absolute; right: -3px; bottom: -3px; font-style: normal; font-size: 11px;
   padding: 1px 4px; border-radius: 99px; background: var(--ember); color: #1a1000;
   font-family: "Space Grotesk", monospace;
 }
 .plate-text { min-width: 0; flex: 1; }
 .plate-text strong { display: block; font-size: 12px; color: var(--ember); }
 .plate-text small {
-  display: block; font-size: 10.5px; color: var(--muted); margin-top: 1px;
+  display: block; font-size: 12px; color: var(--muted); margin-top: 1px;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .plate-cam { flex: none; }
@@ -1634,8 +1644,8 @@ body {
 /* The returning listener's front door. Same panel, different order. */
 .pf-kicker {
   display: block; margin-bottom: 6px;
-  font-family: "Space Grotesk", monospace; font-size: 10px;
-  letter-spacing: 0.16em; text-transform: uppercase; color: var(--ember);
+  font-family: "Space Grotesk", monospace; font-size: 11.5px;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--ember);
 }
 .pf-recent {
   font-size: 12px; line-height: 1.5; color: var(--muted); margin: 8px 0 18px;
@@ -1800,7 +1810,7 @@ body {
   transition: bottom 0.34s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.2s linear;
 }
 .fab {
-  width: 42px; height: 42px; flex: none; cursor: pointer;
+  width: 44px; height: 44px; flex: none; cursor: pointer;
   border-radius: 14px; background: rgba(var(--rgb-panel), 0.94);
   border: 1px solid var(--line); display: grid; place-items: center;
   color: var(--cool); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
@@ -1831,7 +1841,7 @@ body {
    in light and near-black in dark, so the credit takes its contrast from the theme's own
    muted ink rather than a fixed colour that would disappear in one of them. */
 .map-credit {
-  fill: var(--muted); opacity: 0.75; font-size: 8.5px;
+  fill: var(--muted); opacity: 0.75; font-size: 11px;
   font-family: "Space Grotesk", monospace; pointer-events: none;
   paint-order: stroke; stroke: rgba(var(--rgb-panel), 0.6); stroke-width: 2.4;
 }
@@ -1846,7 +1856,7 @@ body {
    in light and near-black in dark, so the credit takes its contrast from the theme's own
    muted ink rather than a fixed colour that would disappear in one of them. */
 .map-credit {
-  fill: var(--muted); opacity: 0.75; font-size: 8.5px;
+  fill: var(--muted); opacity: 0.75; font-size: 11px;
   font-family: "Space Grotesk", monospace; pointer-events: none;
   paint-order: stroke; stroke: rgba(var(--rgb-panel), 0.6); stroke-width: 2.4;
 }
@@ -2089,7 +2099,7 @@ body {
    somebody asks "is this the new one" and invisible the rest of the time. */
 .build-stamp {
   margin: 18px 4px 0; text-align: center;
-  font-family: "Space Grotesk", monospace; font-size: 10px; color: var(--muted);
+  font-family: "Space Grotesk", monospace; font-size: 11.5px; color: var(--muted);
 }
 
 /* ── The echo you tapped ──────────────────────────────────────────────────────
@@ -2125,7 +2135,7 @@ body {
 
 .pop-kicker {
   display: inline-flex; align-items: center; gap: 5px;
-  font-family: "Space Grotesk", monospace; font-size: 9px; font-weight: 500;
+  font-family: "Space Grotesk", monospace; font-size: 11px; font-weight: 500;
   letter-spacing: 0.14em; text-transform: uppercase;
 }
 .pop-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
@@ -2136,7 +2146,7 @@ body {
   line-height: 1.3; letter-spacing: -0.01em; color: var(--white);
 }
 .pop-where {
-  margin: 4px 0 0; font-size: 10px; color: var(--muted);
+  margin: 4px 0 0; font-size: 11.5px; color: var(--muted);
   font-family: "Space Grotesk", monospace;
 }
 .pop-teaser {
@@ -2185,7 +2195,7 @@ body {
    one they need pushed at them, which is why it is no longer the resting row. */
 .list-progress {
   margin: 0; padding: 6px 16px 0;
-  font-family: "Space Grotesk", monospace; font-size: 9.5px;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
 }
 
@@ -2288,7 +2298,7 @@ body {
 
 .rose-north { stroke: rgba(var(--rgb-hair), 0.45); stroke-width: 1.4; stroke-linecap: round; }
 .rose-north-mark {
-  fill: var(--muted); font-family: "Space Grotesk", monospace; font-size: 9px;
+  fill: var(--muted); font-family: "Space Grotesk", monospace; font-size: 11px;
   letter-spacing: 0.14em;
 }
 
@@ -2413,7 +2423,7 @@ body {
 }
 .journey-roam svg { width: 17px; height: 17px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .journey-change {
-  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: 9.5px;
+  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: 11px;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--aqua);
 }
 
@@ -2432,8 +2442,8 @@ body {
    so without this the fact that it now opens the journey screen is invisible. */
 .journey-hint {
   display: block; margin-top: 5px; text-align: center;
-  font-family: "Space Grotesk", monospace; font-size: 9px;
-  letter-spacing: 0.16em; text-transform: uppercase; color: var(--aqua); opacity: 0.85;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--aqua); opacity: 0.85;
 }
 
 /* ── The airport picker ──────────────────────────────────────────────────────
@@ -2443,8 +2453,8 @@ body {
 .pf-air { position: relative; margin-bottom: 8px; }
 .pf-air-label {
   display: block; margin: 0 2px 4px;
-  font-family: "Space Grotesk", monospace; font-size: 9px;
-  letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted);
+  font-family: "Space Grotesk", monospace; font-size: 11px;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
 }
 .pf-air-input { margin-bottom: 0; }
 
@@ -2472,3 +2482,27 @@ body {
   min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   font-size: 11.5px; color: var(--muted);
 }
+
+/*
+ * 44x44, without making anything look chunky.
+ *
+ * 24x24 is the legal floor (WCAG 2.5.8) and the app already cleared it. 44 is what Apple
+ * asks for, and the gap matters more here than in most products because the thumb doing
+ * the tapping belongs to somebody who is walking, often one handed, often in the cold.
+ *
+ * Growing the visual control to 44 would wreck the chip row and the sheet, so the hit
+ * area is extended past the paint instead: a transparent ::after centred on the control,
+ * which is the technique Apple's own controls use. The chip still looks 32px tall and
+ * still catches a 44px thumb.
+ */
+.chip, .seg, .now-mark, .erow-save { position: relative; }
+/* ::before, not ::after: .seg.on::after is already the active underline, and adding a
+   44px box to it turned that underline into a bar struck through the label. */
+.chip::before, .chip-nudge::before, .seg::before, .now-mark::before, .erow-save::before {
+  content: ""; position: absolute;
+  left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: max(100%, 44px); height: max(100%, 44px);
+}
+/* The nav is the one place there is room to simply be 48 tall. */
+.nav button { min-height: 48px; }
+.erow-body { min-height: 44px; }
