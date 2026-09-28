@@ -3047,3 +3047,107 @@ body {
 }
 /* Above the transcript, so the way out of the screen does not disappear behind the words. */
 .hear-back { z-index: 3; }
+
+/* ── The city ───────────────────────────────────────────────────────────────────
+   Density is indigo, not ember, and that is the one place the colour law bends on
+   purpose. A hundred echoes painted ember is the whole warm screen the law exists
+   to prevent; the field here is a statement ABOUT the map, like a contour line,
+   and ember is spent only on the singular ones, as points. */
+.city {
+  position: absolute; inset: 0; z-index: 42;
+  background: radial-gradient(120% 80% at 50% 10%, #0c1230 0%, #080c22 55%, #05070f 100%);
+  overflow: hidden;
+}
+.city-map { position: absolute; inset: 0; width: 100%; height: 100%; }
+.city-tile { opacity: 0.5; }
+/* Additive, so overlapping blooms add up. Density is then what HAPPENS when several
+   echoes land together rather than a number somebody chose and drew. */
+.city-bloom { mix-blend-mode: screen; }
+.city-singular { fill: var(--ember-core); }
+.city-ping {
+  fill: none; stroke: var(--ember-core); stroke-width: 1.4;
+  transform-box: fill-box; transform-origin: center;
+  animation: city-ping 3.8s ease-out infinite;
+}
+@keyframes city-ping {
+  0%   { transform: scale(0.7); opacity: 0.85; }
+  100% { transform: scale(2.6); opacity: 0; }
+}
+.city-you-halo { fill: rgba(0, 255, 231, 0.1); }
+.city-you { fill: var(--aqua); stroke: #05070f; stroke-width: 3; }
+
+/* Type on a plate, because type over a glow is type you cannot read. */
+.city-plate {
+  position: absolute; transform: translateX(-50%); cursor: pointer;
+  min-height: 24px; padding: 4px 9px; border-radius: 7px; white-space: nowrap;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--cool); background: rgba(7, 8, 12, 0.78);
+  border: 1px solid var(--line); backdrop-filter: blur(6px);
+}
+.city-plate-rare { color: var(--ember-core); border-color: rgba(255, 158, 18, 0.45); }
+
+.city-head {
+  position: absolute; left: 14px; right: 14px; top: calc(48px + env(safe-area-inset-top));
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 14px 8px 8px; border-radius: 99px;
+  background: rgba(7, 8, 12, 0.8); border: 1px solid var(--line-2);
+  backdrop-filter: blur(14px);
+}
+.city-back {
+  width: 40px; height: 40px; flex: none; border-radius: 50%; cursor: pointer;
+  display: grid; place-items: center; color: var(--text);
+  background: none; border: 0;
+}
+.city-back svg {
+  width: 17px; height: 17px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.city-where { font-size: 14px; color: var(--text); }
+.city-count {
+  margin-left: auto; font-size: 11px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--ember);
+}
+
+.city-legend {
+  position: absolute; left: 14px; right: 14px; top: calc(104px + env(safe-area-inset-top));
+  display: flex; align-items: center; gap: 9px;
+  padding: 9px 13px; border-radius: 12px;
+  background: rgba(7, 8, 12, 0.72); border: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+}
+.city-ramp {
+  flex-grow: 1; height: 7px; border-radius: 99px;
+  background: linear-gradient(90deg, rgba(108, 99, 255, 0.22), rgba(155, 149, 255, 0.6), #c9c2ff);
+}
+.city-dot {
+  width: 9px; height: 9px; flex: none; border-radius: 50%;
+  background: var(--ember-core); box-shadow: 0 0 8px rgba(255, 158, 18, 0.9);
+  margin-left: 4px;
+}
+.city-worth { color: var(--ember-core); }
+
+.city-card {
+  position: absolute; left: 0; right: 0; bottom: var(--nav-h);
+  padding: 0 16px calc(16px + env(safe-area-inset-bottom));
+  background: rgba(7, 8, 12, 0.94); border-top: 1px solid var(--line-2);
+  border-radius: 22px 22px 0 0; backdrop-filter: blur(20px);
+}
+.city-card-kick {
+  margin: 0; padding-top: 16px; font-size: 11px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--muted);
+}
+.city-card-row { display: flex; align-items: center; gap: 11px; margin-top: 9px; }
+.city-card-text { flex-grow: 1; min-width: 0; }
+.city-card-text b { display: block; font-size: 17px; font-weight: 500; }
+.city-card-text span { display: block; margin-top: 3px; font-size: 12px; color: var(--muted); }
+.city-go {
+  flex: none; min-height: 46px; padding: 0 22px; border-radius: 14px; border: 0;
+  cursor: pointer; font: inherit; font-size: 15px; font-weight: 600; color: #042b28;
+  background: linear-gradient(140deg, #7dfff2, var(--aqua));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .city-ping { animation: none; opacity: 0.5; }
+}

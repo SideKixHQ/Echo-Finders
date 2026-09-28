@@ -8,6 +8,7 @@ export * from "./ranking/score.js";
 export * from "./ranking/playlist.js";
 export * from "./ranking/nearby.js";
 export * from "./ranking/upcoming.js";
+export * from "./ranking/clusters.js";
 export * from "./capture/index.js";
 export * from "./proximity/index.js";
 export * from "./permissions/index.js";

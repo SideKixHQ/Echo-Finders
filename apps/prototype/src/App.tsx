@@ -30,6 +30,7 @@ import { Synced } from "./Synced";
 import { Walk } from "./Walk";
 import { Nowhere } from "./Nowhere";
 import { Ribbon } from "./Ribbon";
+import { City } from "./City";
 import type { Detent } from "./Sheet";
 import type { CaptureEvent, Echo, EchoCategory } from "@echofinders/core";
 import {
@@ -182,6 +183,15 @@ export function App() {
    * street and carrying it into a flight would be a setting nobody set.
    */
   const [lookFurtherKm, setLookFurtherKm] = useState<number | undefined>(undefined);
+  /**
+   * The city view, which is the honest answer to "where are they then".
+   *
+   * It replaced the overview toggle as the destination for that question. The overview
+   * frames the whole library on the street map, which at national scale is a grey
+   * rectangle with eight specks on it — technically the answer and useless as one. This
+   * shows density instead, which is the shape of the question.
+   */
+  const [cityOpen, setCityOpen] = useState(false);
 
   const setPlayhead = useCallback((fraction: number) => {
     progressRef.current = fraction;
@@ -1062,7 +1072,7 @@ export function App() {
                 <Nowhere
                   nearest={nearestAnywhere}
                   reachKm={session.nearbyReachKm}
-                  onShowAll={() => setOverview(true)}
+                  onShowAll={() => setCityOpen(true)}
                   widenToKm={WIDEN_TO_KM}
                   {...(nearestAnywhere && nearestAnywhere.distanceKm <= WIDEN_TO_KM
                     ? { onWiden: () => setLookFurtherKm(WIDEN_TO_KM) }
@@ -1135,6 +1145,7 @@ export function App() {
                     }
                   : {})}
                 onDownload={openPackage}
+                onCity={() => setCityOpen(true)}
               />
               )}
               {/*
@@ -1458,6 +1469,42 @@ export function App() {
                 setDownloaded(true);
                 setPackageOpen(false);
                 setOverview(false);
+              }}
+            />
+          )}
+
+          {/*
+            The city, over the map. Its own screen with its own way out, so nothing under
+            it has to stay reachable.
+          */}
+          {cityOpen && (
+            <City
+              library={LIBRARY}
+              at={state.position?.at ?? null}
+              theme={theme}
+              onClose={() => setCityOpen(false)}
+              onGo={(cluster) => {
+                /*
+                  Going somewhere is looking far enough to see it. Without this, tapping a
+                  cluster four hundred kilometres away closed the city and handed back the
+                  same empty street: the engine's reach had not moved, so neither had the
+                  map. The reach becomes whatever it takes to hold that cluster, with its
+                  own spread added so the far edge is in too.
+                */
+                const from = state.position?.at ?? null;
+                const need = from ? distanceKm(from, cluster.at) + cluster.spreadKm : 0;
+                setLookFurtherKm(Math.max(WIDEN_TO_KM, Math.ceil(need * 1.1)));
+                setCityOpen(false);
+                setTab("map");
+                setOverview(true);
+                /*
+                  And the street map, not the rose. On foot the resting screen is the rose,
+                  which covers the map, so "Go" closed the city and handed back the same
+                  dial you were looking at before — the overview went on underneath where
+                  nobody could see it. Going somewhere means being shown it.
+                */
+                setWalkingView("map");
+                setBeacon(null);
               }}
             />
           )}
