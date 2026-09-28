@@ -15,6 +15,7 @@ import {
   type Arriving,
   type CaptureEvent,
   type Echo,
+  type EchoCategory,
   type Guidance,
   type HapticCue,
   type HapticsSink,
@@ -64,6 +65,9 @@ export const LISTENER: ListenerProfile = {
 /** The age kids mode claims. Under every `minAge` the library sets above zero. */
 export const KIDS_AGE = 8;
 
+/** A stable empty default, so an absent `optIns` cannot rebuild the session every render. */
+const EMPTY_OPT_INS: readonly EchoCategory[] = [];
+
 /**
  * The listener, as the engine sees them.
  *
@@ -78,8 +82,40 @@ export const KIDS_AGE = 8;
  * So switching it on does not hide the Dakota. It makes the Dakota ineligible, everywhere,
  * by the same mechanism that has always kept true crime away from a seven-year-old.
  */
-export const listenerFor = (kids: boolean): ListenerProfile =>
-  kids ? { ...LISTENER, age: KIDS_AGE } : LISTENER;
+/**
+ * The listener, with whatever they have opted into.
+ *
+ * TRUE CRIME IS NOT IN `LISTENER.categories`, deliberately, and that is what makes it an
+ * opt-in rather than a filter: `checkEligibility` returns `opt-in-required` for anything in
+ * a category the profile does not list, so a true-crime echo cannot be ranked, captured,
+ * packaged or played until somebody asks for it.
+ *
+ * What was missing was any way to ask. The chip row offered a True Crime filter over a
+ * category the engine was refusing to supply, so the chip could be switched on and the map
+ * stayed empty — and the one rare echo in the library, which is a true-crime echo, was
+ * unreachable in every state of the app. A control that cannot affect anything is worse
+ * than an absent one, because it reads as a broken promise rather than a missing feature.
+ *
+ * So the chip IS the opt-in. Switching True Crime on adds it to the profile; switching it
+ * off takes it away again, everywhere, by the same gate that keeps it from a seven-year-old.
+ * Off by default, which is the product rule the category existed to express.
+ *
+ * Kids mode still wins, because it is an age rather than a preference: `minAge` is checked
+ * separately and 16 is above the age kids mode claims.
+ */
+export const listenerFor = (
+  kids: boolean,
+  optIns: readonly EchoCategory[] = [],
+): ListenerProfile => {
+  const categories = optIns.length
+    ? [...new Set([...LISTENER.categories, ...optIns])]
+    : LISTENER.categories;
+  return kids
+    ? { ...LISTENER, categories, age: KIDS_AGE }
+    : categories === LISTENER.categories
+      ? LISTENER
+      : { ...LISTENER, categories };
+};
 
 export interface JourneyControls {
   /** Play the proximity cue. */
@@ -114,6 +150,14 @@ export interface JourneyControls {
   readonly privacy: PrivacySettings;
   /** Kids mode: an age the engine gates on, not a filter over the view. */
   readonly kids: boolean;
+  /**
+   * Categories the listener has switched on that are not carried by default.
+   *
+   * A dependency of the session, deliberately: changing it rebuilds the `WalkSession`,
+   * because the profile is what `checkEligibility` gates on and a live session holding the
+   * old profile would keep refusing the category that was just asked for.
+   */
+  readonly optIns?: readonly EchoCategory[];
   /** Where the listener actually is. Used when there is no route to simulate. */
   readonly gps: LocationSource;
   /**
@@ -159,6 +203,7 @@ export function useJourney(
     roamMode = "walking",
     voice = null,
     nearbyRadiusKm,
+    optIns = EMPTY_OPT_INS,
   }: JourneyControls,
 ) {
   /**
@@ -273,7 +318,7 @@ export function useJourney(
     // thing stopping this prototype from exercising the other four.
     return new WalkSession(
       library,
-      listenerFor(kids),
+      listenerFor(kids, optIns),
       { location, haptics, tones, audio: speech, collection: store },
       {
         mode: route?.mode ?? roamMode,
@@ -287,7 +332,10 @@ export function useJourney(
     // flick of the switch — and a new `WalkSession` is a new `CaptureTracker`: rebuilding
     // it to carry one boolean threw away the whole collection, stopped whatever was
     // playing, and reset the map, silently. They are applied below instead.
-  }, [library, location, route?.mode, toneRenderer, speech, store, restored, kids]);
+    // `optIns` is a dependency for the same reason `kids` is: both change the profile that
+    // `checkEligibility` gates on, and a live session holding the old one keeps refusing
+    // the category that was just switched on.
+  }, [library, location, route?.mode, toneRenderer, speech, store, restored, kids, optIns]);
 
   useEffect(() => {
     session.setAutoPlay(autoPlay);

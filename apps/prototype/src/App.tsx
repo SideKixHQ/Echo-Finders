@@ -184,6 +184,24 @@ export function App() {
    */
   const [lookFurtherKm, setLookFurtherKm] = useState<number | undefined>(undefined);
   /**
+   * Categories the listener has asked for that are not carried by default.
+   *
+   * Only true crime today. The chip is the opt-in: the engine refuses a category the
+   * profile does not list, so switching the chip on has to change the profile or the chip
+   * is a filter over an empty set — which is exactly what it was, and why the one rare
+   * echo in the library could not be reached in any state of the app.
+   *
+   * Memoised on the one boolean rather than on `activeCats`, so toggling any other chip
+   * does not rebuild the session.
+   */
+  // Read from `cats` rather than `activeCats`, which is derived further down: null means
+  // nothing has been switched off yet, and the default set carries every category.
+  const trueCrimeOn = (cats ?? ALL_CATEGORIES).has("true-crime");
+  const optIns = useMemo<readonly EchoCategory[]>(
+    () => (trueCrimeOn ? ["true-crime"] : []),
+    [trueCrimeOn],
+  );
+  /**
    * The city view, which is the honest answer to "where are they then".
    *
    * It replaced the overview toggle as the destination for that question. The overview
@@ -225,6 +243,7 @@ export function App() {
     simple,
     gps,
     nearbyRadiusKm: lookFurtherKm,
+    optIns,
   });
 
   // Whether the traveller can steer. Guidance answers "which way should I go", so it is
@@ -579,7 +598,7 @@ export function App() {
    * play, which is a worse screen than either honest alternative.
    */
   const onRoute = useMemo(() => {
-    const listener = listenerFor(kids);
+    const listener = listenerFor(kids, optIns);
     return (byRoute[route.id] ?? []).filter(
       (echo) => checkEligibility(echo, { profile: listener, playAtMs: Date.now() }).eligible,
     );
@@ -688,7 +707,7 @@ export function App() {
   // Everything on the route, in the order it is reached — the same question `upcoming` asks
   // from where you are, asked from the start line and without a lead-in filter.
   const wholeRoute = useMemo(
-    () => upcomingOnRoute(route, onRoute, listenerFor(kids), 0, { limit: 99, minLeadS: -Infinity }),
+    () => upcomingOnRoute(route, onRoute, listenerFor(kids, optIns), 0, { limit: 99, minLeadS: -Infinity }),
     [route, onRoute, kids],
   );
 
@@ -710,7 +729,7 @@ export function App() {
         // Anything already found is not a suggestion. Reusing `heardEchoIds` rather than
         // adding an exclusion list keeps one mechanism for "do not offer me this again" —
         // and without it the thing currently playing turns up under "coming up".
-        { ...listenerFor(kids), heardEchoIds: kept.map((c) => c.echo.id) },
+        { ...listenerFor(kids, optIns), heardEchoIds: kept.map((c) => c.echo.id) },
         (walk?.walkedMetres ?? 0) / 1000,
         { limit: 2 },
       ),
@@ -815,7 +834,7 @@ export function App() {
     if (!nowhere) return null;
     const from = state.position?.at ?? null;
     if (!from) return null;
-    const listener = listenerFor(kids);
+    const listener = listenerFor(kids, optIns);
     let best: { echo: Echo; distanceKm: number } | null = null;
     for (const echo of LIBRARY) {
       if (!checkEligibility(echo, { profile: listener, playAtMs: Date.now() }).eligible) continue;
@@ -1032,15 +1051,6 @@ export function App() {
                   ) : (
                     <>
                       <RouteRibbon route={route} progress={along} remainingS={remainingS} />
-                      {/*
-                        Visibly tappable.
-
-                        On a route this header renders the ribbon exactly as it always has,
-                        so making it a button changed nothing anybody could see: the control
-                        was there and looked identical to the read-only thing it replaced.
-                        An affordance nobody can see is not an affordance.
-                      */}
-                      <span className="journey-hint">Change journey</span>
                     </>
                   )}
                 </button>
