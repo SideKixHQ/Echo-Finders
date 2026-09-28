@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { parseEcho } from "../src/content/parse.js";
+import { rarityOf } from "../src/capture/rarity.js";
 import { estimateBytes } from "../src/pkg/build.js";
 import { renderFor } from "../src/types.js";
 import type { Echo } from "../src/types.js";
@@ -373,5 +374,46 @@ describe("attractions", () => {
     const { echo, issues } = parseEcho({ ...minimal(), attraction: { name: "Federal Hall" } });
     expect(echo).toBeNull();
     expect(issues.some((i) => i.field === "attraction.at")).toBe(true);
+  });
+});
+
+/*
+ * Opening hours.
+ *
+ * `Echo.hours` was declared on the type from the beginning and `rarityOf` scored a point
+ * for it, and the parser never read it — so the field was unreachable from content and one
+ * of rarity's three inputs was dead. A writer could not have earned that point if they had
+ * tried. These are here so it cannot quietly go missing again.
+ */
+describe("opening hours", () => {
+  it("reads a range out of a file", () => {
+    const { echo } = parseEcho({ ...minimal(), hours: { fromHour: 8, toHour: 17 } });
+    expect(echo?.hours).toEqual({ fromHour: 8, toHour: 17 });
+  });
+
+  it("allows a range that wraps midnight, which is the case it is most for", () => {
+    const { echo } = parseEcho({ ...minimal(), hours: { fromHour: 21, toHour: 4 } });
+    expect(echo?.hours).toEqual({ fromHour: 21, toHour: 4 });
+  });
+
+  it("leaves it absent when the file says nothing", () => {
+    expect(parseEcho(minimal()).echo?.hours).toBeUndefined();
+  });
+
+  it("rejects an hour outside the clock", () => {
+    expect(errorFields({ ...minimal(), hours: { fromHour: 8, toHour: 24 } })).toContain("hours.toHour");
+  });
+
+  it("rejects a range that opens and closes at the same hour, which is either always or never", () => {
+    expect(errorFields({ ...minimal(), hours: { fromHour: 9, toHour: 9 } })).toContain("hours");
+  });
+
+  it("earns the difficulty point that makes a tight, time-limited echo rare", () => {
+    const { echo } = parseEcho({
+      ...minimal(),
+      triggerRadiusKm: 0.03,
+      hours: { fromHour: 8, toHour: 17 },
+    });
+    expect(echo && rarityOf(echo)).toBe("rare");
   });
 });

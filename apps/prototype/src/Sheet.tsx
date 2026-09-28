@@ -13,9 +13,10 @@ import type { Rating } from "./ratings";
 import { UpNext } from "./UpNext";
 import { EchoCard } from "./EchoCard";
 import { PlateStrip } from "./PlateStrip";
+import { platePng } from "./archive-plate";
 import { Player } from "./Player";
 import { Transcript } from "./Transcript";
-import { useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { splitScript, stepLine } from "./transcript-lines";
 import { CATEGORY_LABEL } from "./categories";
 import type { Upcoming } from "@echofinders/core";
@@ -508,9 +509,10 @@ function Found({
   return (
     <div className="now">
       <div className="now-top">
-        <button
+        <CardMark
+          echo={capture.echo}
           className="play"
-          aria-label={showPause ? "Pause" : "Play"}
+          label={showPause ? "Pause" : "Play"}
           onClick={() => (showPause ? onPause() : playing ? onResume() : onPlay(capture.echo))}
         >
           {showPause ? (
@@ -523,7 +525,7 @@ function Found({
               <path d="M8 5v14l11-7z" />
             </svg>
           )}
-        </button>
+        </CardMark>
         <div className="now-text">
           <span className={`tag tag-${rarity}`}>Synced · {rarity}</span>
           <h2>{capture.echo.title}</h2>
@@ -599,9 +601,10 @@ function NextUp({
   return (
     <div className="now">
       <div className="now-top">
-        <button
+        <CardMark
+          echo={echo}
           className={playable ? "play" : "play play-far"}
-          aria-label={playable ? `Play ${echo.title}` : `Show ${echo.title} on the map`}
+          label={playable ? `Play ${echo.title}` : `Show ${echo.title} on the map`}
           onClick={() => (playable ? onPlay(echo) : onOpen(echo.id))}
         >
           {playable ? (
@@ -614,7 +617,7 @@ function NextUp({
               <circle cx="12" cy="10" r="2.4" />
             </svg>
           )}
-        </button>
+        </CardMark>
         <div className="now-text">
           <span className={`playing-kicker cat-${echo.category}`}>
             <span className="playing-dot" />
@@ -638,6 +641,47 @@ function NextUp({
         </button>
       </div>
     </div>
+  );
+}
+
+/**
+ * The button on the left of the peek card.
+ *
+ * A round orb where there is no photograph, and THE PHOTOGRAPH where there is one, with
+ * its year on it. That is the design's card: the thing you tap is a picture of the place
+ * as it was, not an abstract disc, and it is the single strongest reason to walk.
+ *
+ * The play glyph stays on top of the plate rather than being replaced by it. The board
+ * drops the play button entirely and sends you to the echo card first, which is coherent
+ * with the product's rule that finding and hearing are separate acts — and costs a tap on
+ * the commonest thing anybody does with a synced echo. Keeping both is not a compromise:
+ * the plate answers "what is this place", the glyph answers "and I can hear it now", and
+ * they are different questions that happen to share a target.
+ */
+function CardMark({
+  echo,
+  className,
+  label,
+  onClick,
+  children,
+}: {
+  echo: Echo;
+  className: string;
+  label: string;
+  onClick: () => void;
+  children: ReactNode;
+}) {
+  const photo = echo.archive?.[0];
+  return (
+    <button
+      className={photo ? `${className} play-plate` : className}
+      aria-label={label}
+      onClick={onClick}
+    >
+      {photo && <img src={platePng(photo.imageKey, "then")} alt="" draggable={false} />}
+      {children}
+      {photo?.year && <i className="mono">{photo.year}</i>}
+    </button>
   );
 }
 

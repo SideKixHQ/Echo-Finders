@@ -767,3 +767,119 @@ describe("keeping the collection", () => {
     expect(events.filter((e) => e.type === "captured")).toHaveLength(0);
   });
 });
+
+/*
+ * Looking further, which is the commonest thing a listener will ever ask this app for.
+ * Twenty-six echoes, all in lower Manhattan: almost everybody who opens it is nowhere
+ * near one, and the first move from there is "look further out".
+ */
+describe("how far it looks", () => {
+  const far = (metres: number) =>
+    makeEcho({ id: "far", at: north(HERE, metres), triggerRadiusKm: 0.05 });
+
+  it("starts at the mode's own reach", () => {
+    const location = new FakeLocation();
+    const session = new WalkSession([far(4000)], ADULT, { location });
+    // Walking's corridor is 0.3km and nearby looks eight times as far.
+    expect(session.nearbyReachKm).toBeCloseTo(2.4, 5);
+  });
+
+  it("does not list something beyond that reach", () => {
+    const location = new FakeLocation();
+    const session = new WalkSession([far(4000)], ADULT, { location });
+    const events = collect(session);
+    session.start();
+    location.emit(fix(HERE, START));
+    const nearby = events.filter((e) => e.type === "nearby").at(-1);
+    expect(nearby?.type === "nearby" && nearby.echoes).toEqual([]);
+  });
+
+  it("lists it once asked to look further", () => {
+    const location = new FakeLocation();
+    const session = new WalkSession([far(4000)], ADULT, { location });
+    const events = collect(session);
+    session.start();
+    session.setNearbyRadius(16);
+    expect(session.nearbyReachKm).toBe(16);
+    location.emit(fix(HERE, START));
+    const nearby = events.filter((e) => e.type === "nearby").at(-1);
+    expect(nearby?.type === "nearby" && nearby.echoes.map((n) => n.echo.id)).toEqual(["far"]);
+  });
+
+  it("goes back to the mode's reach when the widening is cleared", () => {
+    const location = new FakeLocation();
+    const session = new WalkSession([far(4000)], ADULT, { location });
+    const events = collect(session);
+    session.start();
+    session.setNearbyRadius(16);
+    location.emit(fix(HERE, START));
+    session.setNearbyRadius(undefined);
+    location.emit(fix(HERE, START + 1000));
+    expect(session.nearbyReachKm).toBeCloseTo(2.4, 5);
+    const nearby = events.filter((e) => e.type === "nearby").at(-1);
+    expect(nearby?.type === "nearby" && nearby.echoes).toEqual([]);
+  });
+
+  /*
+   * The reason this is a setter and not a constructor argument, which is the same reason
+   * auto-play is: a new WalkSession is a new CaptureTracker, so answering "look further"
+   * by rebuilding one would silently bin the collection.
+   */
+  it("keeps the collection across a widening", () => {
+    const location = new FakeLocation();
+    const session = new WalkSession([echo(), far(4000)], ADULT, { location });
+    session.start();
+    // Arrival takes a dwell, so a single fix leaves it sealed.
+    for (let s = 0; s <= 15; s += 3) location.emit(fix(HERE, START + s * 1000));
+    expect(session.tracker.stateOf("target")).toBe("captured");
+    session.setNearbyRadius(16);
+    location.emit(fix(HERE, START + 20_000));
+    expect(session.tracker.stateOf("target")).toBe("captured");
+  });
+});
+
+/*
+ * Standing still, which is when "look further" is actually pressed.
+ *
+ * `watchPosition` fires on movement, so somebody stood on a pavement can wait a long time
+ * for the next fix, and until it arrives the button has visibly done nothing. Which is
+ * exactly how it behaved the first time it was run.
+ */
+describe("widening while stood still", () => {
+  const far = (metres: number) =>
+    makeEcho({ id: "far", at: north(HERE, metres), triggerRadiusKm: 0.05 });
+
+  it("answers from the last fix rather than waiting for the next one", () => {
+    const location = new FakeLocation();
+    const session = new WalkSession([far(4000)], ADULT, { location });
+    const events = collect(session);
+    session.start();
+    location.emit(fix(HERE, START));
+    const before = events.filter((e) => e.type === "nearby").at(-1);
+    expect(before?.type === "nearby" && before.echoes).toEqual([]);
+
+    // No new fix. Only the setting changes.
+    session.setNearbyRadius(16);
+    const nearby = events.filter((e) => e.type === "nearby").at(-1);
+    expect(nearby?.type === "nearby" && nearby.echoes.map((n) => n.echo.id)).toEqual(["far"]);
+  });
+
+  it("says nothing before there has ever been a fix", () => {
+    const location = new FakeLocation();
+    const session = new WalkSession([far(4000)], ADULT, { location });
+    const events = collect(session);
+    session.start();
+    session.setNearbyRadius(16);
+    expect(events.filter((e) => e.type === "nearby")).toEqual([]);
+  });
+
+  it("does not re-announce when the radius is set to what it already was", () => {
+    const location = new FakeLocation();
+    const session = new WalkSession([far(4000)], ADULT, { location });
+    session.start();
+    location.emit(fix(HERE, START));
+    const events = collect(session);
+    session.setNearbyRadius(undefined);
+    expect(events).toEqual([]);
+  });
+});

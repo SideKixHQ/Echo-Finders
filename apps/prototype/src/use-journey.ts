@@ -97,6 +97,15 @@ export interface JourneyControls {
   readonly autoPlay: boolean;
   /** Echoes picked in advance. Undefined means no restriction; empty means none. */
   readonly chosen?: ReadonlySet<string>;
+  /**
+   * How far to look for what is around, when the listener has asked for further.
+   *
+   * Undefined is the mode's own reach, which is what every walk starts with. A setter on
+   * the live session rather than a constructor argument, because a new `WalkSession` is a
+   * new `CaptureTracker` and answering "look further" by building one would bin the
+   * collection.
+   */
+  readonly nearbyRadiusKm?: number | undefined;
   /** The listener pressed pause on the simulation itself. */
   readonly paused: boolean;
   /** Playback speed, as a multiplier. Takes effect on the next echo — see `SpeechAudio`. */
@@ -149,6 +158,7 @@ export function useJourney(
     gps,
     roamMode = "walking",
     voice = null,
+    nearbyRadiusKm,
   }: JourneyControls,
 ) {
   /**
@@ -286,6 +296,10 @@ export function useJourney(
   useEffect(() => {
     session.setAutoPlayOnly(chosen ? [...chosen] : undefined);
   }, [session, chosen]);
+
+  useEffect(() => {
+    session.setNearbyRadius(nearbyRadiusKm);
+  }, [session, nearbyRadiusKm]);
 
   // Applied live, and it rewrites what is already on disk. Turning "remember where I was
   // standing" off has to erase the positions already stored, not merely stop adding to

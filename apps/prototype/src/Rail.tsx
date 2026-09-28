@@ -27,6 +27,12 @@
 
 import { memo } from "react";
 
+/**
+ * The three screens a walker can be on: what is around you, the street map, and the walk
+ * itself. Named here because the Rail and App both have to agree on it.
+ */
+export type WalkingView = "rose" | "map" | "walk";
+
 export interface RailProps {
   readonly theme: "dark" | "light";
   readonly onTheme: (theme: "dark" | "light") => void;
@@ -46,8 +52,25 @@ export interface RailProps {
    * Absent on every other mode, because a driver wants the road and a passenger wants the
    * route, and neither has a head they can usefully turn.
    */
-  readonly roseView?: "rose" | "map";
-  readonly onRoseView?: (view: "rose" | "map") => void;
+  readonly roseView?: WalkingView;
+  /**
+   * What leaving the map goes back to, in the listener's words.
+   *
+   * Passed in rather than decided here, because the answer depends on whether a walk is
+   * in progress and only App knows that. Hardcoded to "Back to your walk" it promised a
+   * walk to everyone who had never started one.
+   */
+  readonly roseBackLabel?: string;
+  /**
+   * Open the city: where the echoes are, at the scale where pins stop meaning anything.
+   *
+   * On the column rather than only on the empty screen, which is where the design puts its
+   * one link to it. Somebody standing in the middle of the library never sees the empty
+   * screen and would never find the city at all, and "where else is there" is a question
+   * you ask most when you are already somewhere good.
+   */
+  readonly onCity?: () => void;
+  readonly onRoseView?: () => void;
 }
 
 function RailInner({
@@ -60,6 +83,8 @@ function RailInner({
   onDownload,
   downloaded,
   roseView,
+  roseBackLabel,
+  onCity,
   onRoseView,
 }: RailProps) {
   return (
@@ -103,21 +128,42 @@ function RailInner({
         a thing you go and get, which is the opposite of every other mode, so the control
         only exists here.
       */}
+      {onCity && (
+        <button className="fab rail-city" onClick={onCity} aria-label="Where the echoes are">
+          {/* A globe: meridians and a waist, which reads at 20px where continents do not. */}
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="8.5" />
+            <path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.3 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.3-3.6-8.5S9.6 5.9 12 3.5z" />
+          </svg>
+        </button>
+      )}
+
       {roseView && onRoseView && (
         <button
           className="fab"
-          onClick={() => onRoseView(roseView === "rose" ? "map" : "rose")}
+          /*
+            A plain toggle, because the way BACK is not always the way you came. Walk mode
+            sends you to the street map with a destination on it, and the button that
+            leaves the map should hand you back the walk rather than the survey you were
+            doing before you picked one. Only App knows which, so App decides and this
+            only says which direction it is going.
+          */
+          onClick={onRoseView}
           aria-pressed={roseView === "map"}
-          aria-label={roseView === "rose" ? "Show the street map" : "Back to what is around you"}
+          aria-label={
+            roseView === "map"
+              ? (roseBackLabel ?? "Back to what is around you")
+              : "Show the street map"
+          }
         >
-          {roseView === "rose" ? (
-            <svg viewBox="0 0 24 24">
-              <path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3-6-3zM9 3v15M15 6v15" />
-            </svg>
-          ) : (
+          {roseView === "map" ? (
             <svg viewBox="0 0 24 24">
               <circle cx="12" cy="12" r="8.5" />
               <path d="M12 12l4-7-7 4z" />
+            </svg>
+          ) : (
+            <svg viewBox="0 0 24 24">
+              <path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3-6-3zM9 3v15M15 6v15" />
             </svg>
           )}
         </button>

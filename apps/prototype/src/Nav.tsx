@@ -24,6 +24,12 @@
  * its switches delete data the moment they are used, and that reasoning was sound about the
  * *switches* and wrong about the tab: a bottom-bar slot is scarce, and nobody has ever gone
  * looking for a privacy screen anywhere but settings.
+ *
+ * TWO NOW, not three. Settings was taking a third of the bottom bar to hold a screen
+ * nobody opens twice, while the product's actual spine is two verbs: find one, keep it. It
+ * moves behind a gear on My Echoes, which is where somebody already is when they are
+ * sitting down with the app rather than walking with it. Same reasoning that killed the
+ * Privacy tab, applied one level up.
  */
 
 import { memo } from "react";
@@ -65,17 +71,6 @@ function NavInner({ tab, onChange, foundCount }: Props) {
         </svg>
         My Echoes
         {foundCount > 0 && <span className="badge">{foundCount}</span>}
-      </button>
-      <button
-        className={tab === "settings" ? "on" : ""}
-        onClick={() => onChange("settings")}
-        aria-current={tab === "settings" ? "page" : undefined}
-      >
-        <svg viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="3.2" />
-          <path d="M19.4 14.5a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-1.8-.3 1.6 1.6 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.6 1.6 0 0 0-1-1.5 1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0 .3-1.8 1.6 1.6 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.6 1.6 0 0 0 1.5-1 1.6 1.6 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.8.3H9a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.6 1.6 0 0 0 1 1.5 1.6 1.6 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.8V9a1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1z" />
-        </svg>
-        Settings
       </button>
     </nav>
   );

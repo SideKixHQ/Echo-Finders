@@ -42,6 +42,10 @@ export interface RoseProps {
   /** Whether the hum is on, and the switch for it. */
   readonly humming: boolean;
   readonly onHum: (on: boolean) => void;
+  /** What the screen is doing, in the listener's words. Empty when it is doing nothing. */
+  readonly awakeNote?: string;
+  /** Set when the screen could not be held, so the fallback can be stated honestly. */
+  readonly awakeWarning?: string;
 }
 
 /** The outermost ring, in kilometres. Matches what the hum will carry. */
@@ -71,6 +75,8 @@ export function Rose({
   onSelect,
   humming,
   onHum,
+  awakeNote,
+  awakeWarning,
 }: RoseProps) {
   const heading = headingDeg ?? 0;
   const trustworthy = headingDeg !== null && accuracyDeg <= 45;
@@ -166,10 +172,18 @@ export function Rose({
               <path d="M4 12h2.5l2-6 3 12 2.5-8 1.5 4H20" />
             </svg>
             {humming ? "Listening for echoes" : "Listen for echoes"}
+            {/*
+              This used to say "put it in your pocket", which the platform does not allow
+              us to promise: on iOS the audio and the position fix both stop the moment
+              the screen locks. Now that a wake lock is held while the hum is on, the
+              phone can go in a pocket, but the screen will be lit and saying so is the
+              difference between a feature and a battery mystery. Where the browser cannot
+              hold the screen at all, it says that instead of pretending.
+            */}
             <small>
-              {humming
-                ? "Put it in your pocket. Each one hums from where it is."
-                : "Headphones in, and the street starts humming."}
+              {!humming
+                ? "Headphones in, and the street starts humming."
+                : awakeNote || awakeWarning || "Pocket it. Each one hums from where it is."}
             </small>
           </button>
         )}

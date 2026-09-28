@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { PRIVACY_DEFAULTS, holdsPersonalLocation, type PrivacySettings } from "@echofinders/core";
+import { PRIVACY_DEFAULTS, holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
 import { LIBRARY, ROUTES } from "./library.generated";
 import { CATEGORY_ORDER, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
@@ -23,11 +23,18 @@ import { Viewfinder } from "./Viewfinder";
 import { Onboarding } from "./Onboarding";
 import { loadRatings, setRating, type Rating } from "./ratings";
 import { BrowserLocation } from "./browser-location";
-import { Rail } from "./Rail";
+import { Rail, type WalkingView } from "./Rail";
 import { MODE_ICON, MODE_PHRASE } from "./travel";
+import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
+import { Synced } from "./Synced";
+import { Walk } from "./Walk";
+import { Nowhere } from "./Nowhere";
+import { Ribbon } from "./Ribbon";
+import { City } from "./City";
 import type { Detent } from "./Sheet";
-import type { Echo, EchoCategory } from "@echofinders/core";
+import type { CaptureEvent, Echo, EchoCategory } from "@echofinders/core";
 import {
+  bearingDeg as bearingTo,
   checkEligibility,
   distanceKm,
   effectiveRadiusKm,
@@ -82,7 +89,7 @@ export function App() {
    * tap away rather than gone. Every other mode goes straight to the map: a driver wants the
    * road and a passenger wants the route.
    */
-  const [walkingView, setWalkingView] = useState<"rose" | "map">("rose");
+  const [walkingView, setWalkingView] = useState<WalkingView>("rose");
   /** The street humming. Off until somebody asks for it, because it is audio. */
   const [humming, setHumming] = useState(false);
   /**
@@ -168,10 +175,38 @@ export function App() {
    * `progress` would restart the interval four times a second.
    */
   const progressRef = useRef(0);
+  /**
+   * How far the engine looks, when somebody standing nowhere has asked for further.
+   *
+   * Undefined is the mode's own reach and is where every session starts. It is cleared
+   * whenever the journey changes, because "look further" was an answer to a particular
+   * street and carrying it into a flight would be a setting nobody set.
+   */
+  const [lookFurtherKm, setLookFurtherKm] = useState<number | undefined>(undefined);
+  /**
+   * The city view, which is the honest answer to "where are they then".
+   *
+   * It replaced the overview toggle as the destination for that question. The overview
+   * frames the whole library on the street map, which at national scale is a grey
+   * rectangle with eight specks on it — technically the answer and useless as one. This
+   * shows density instead, which is the shape of the question.
+   */
+  const [cityOpen, setCityOpen] = useState(false);
+
   const setPlayhead = useCallback((fraction: number) => {
     progressRef.current = fraction;
     setProgress(fraction);
   }, []);
+  /**
+   * Whether the listening screen has the phone.
+   *
+   * Playing and *listening* are not the same state, which is why this is a flag rather
+   * than `playing`. Starting an echo deliberately — from a row, from a pin, from the sync
+   * moment — is somebody settling in to hear it, and that gets the whole screen. Pressing
+   * back leaves it playing and hands the map back, with the transport in the sheet, which
+   * is what somebody who wants to keep walking is asking for.
+   */
+  const [listening, setListening] = useState(false);
   // The listener's own setting drives it, not a constant. `handsFree` is off by default
   // (PRIVACY_DEFAULTS), so an echo collects itself on arrival and then waits to be played.
   const { state, session, walk, store } = useJourney(roaming ? null : route, LIBRARY, {
@@ -189,6 +224,7 @@ export function App() {
     kids,
     simple,
     gps,
+    nearbyRadiusKm: lookFurtherKm,
   });
 
   // Whether the traveller can steer. Guidance answers "which way should I go", so it is
@@ -338,9 +374,107 @@ export function App() {
     setOverview(false);
   };
 
+  /*
+   * The sync moment.
+   *
+   * An echo opening was a pin changing colour and a row appearing in a list, which is a
+   * report rather than an event, and it is the one thing this product does that nothing
+   * else does. It takes the screen now.
+   *
+   * Tracked by id rather than by list length, because captures can arrive together when
+   * two echoes overlap and a length comparison would miss the second. The seen-set starts
+   * populated from whatever was already captured at mount, so reopening the app does not
+   * replay a celebration for something you synced last week.
+   */
+  const [syncedNow, setSyncedNow] = useState<CaptureEvent | null>(null);
+  const seenCaptures = useRef<Set<string> | null>(null);
+  useEffect(() => {
+    /*
+     * NOT WHILE ONBOARDING, and this one was found by running the app rather than reading
+     * it. The session starts on a demo route the moment the app mounts, and the simulated
+     * journey sets off from Battery Park and promptly syncs Castle Clinton — behind the
+     * onboarding, which covers the screen. Close onboarding and you were handed a
+     * full-screen celebration of an echo you had not walked a step towards, over the top
+     * of the first thing you were ever meant to see.
+     *
+     * Holding the set at null until then is the fix rather than an extra flag, because it
+     * is the same mechanism that stops last week's collection replaying: when onboarding
+     * ends, whatever the simulation collected in the meantime is already-seen history, and
+     * only what happens after counts as a moment.
+     */
+    if (!onboarded) return;
+    if (seenCaptures.current === null) {
+      seenCaptures.current = new Set(state.captured.map((c) => c.echo.id));
+      return;
+    }
+    const fresh = state.captured.filter((c) => !seenCaptures.current!.has(c.echo.id));
+    if (fresh.length === 0) return;
+    for (const c of fresh) seenCaptures.current.add(c.echo.id);
+    // The last one is the one you are standing on.
+    setSyncedNow(fresh[fresh.length - 1]!);
+  }, [state.captured, onboarded]);
+
   const nowPlaying = state.playback.kind === "idle" ? null : state.playback.item.echo;
 
   const playing = state.playback.kind === "playing";
+
+  /*
+   * Hold the screen awake while it matters, and say so.
+   *
+   * On iOS both the audio and the position fix stop when the screen locks, so
+   * `featureAvailability`'s promise that "echoes still open, you just need the app open on
+   * screen while you walk" is only true for the thirty seconds before the phone dims
+   * itself. The engine decides when to hold it; `useScreenAwake` owns the platform call
+   * and the re-request after the page comes back, which the API does not do for you.
+   *
+   * `humming` is the signal for a walk because it is the moment somebody explicitly says
+   * they are out with headphones in, rather than reading a list indoors.
+   */
+  useEffect(() => {
+    if (!nowPlaying) { publishNowPlaying(null); return; }
+    publishNowPlaying({
+      title: nowPlaying.title,
+      place: nowPlaying.point.place,
+      onPlay: () => session.play(nowPlaying),
+      onPause: () => session.stopPlaying(),
+      onStop: () => session.stopPlaying({ dropQueue: true }),
+    });
+    return () => publishNowPlaying(null);
+  }, [nowPlaying, session]);
+
+  /**
+   * Move the playhead, from anywhere.
+   *
+   * There is no real audio for most of the library, so "where you are" is a clock started
+   * when playback began (`startedRef`). Seeking is therefore moving that start time, not
+   * telling a decoder anything, and the sum has to be identical wherever it is done or the
+   * two scrubbers disagree about the same echo. It was inline in the sheet; the ribbon is
+   * the second caller.
+   */
+  const seekTo = useCallback(
+    (fraction: number) => {
+      if (!nowPlaying) return;
+      const clamped = Math.max(0, Math.min(1, fraction));
+      const d = ((simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS) / rate;
+      startedRef.current = { id: nowPlaying.id, at: Date.now() - clamped * d * 1000 };
+      setPlayhead(clamped);
+    },
+    [nowPlaying, simple, rate, setPlayhead],
+  );
+
+  const pageVisible = usePageVisible();
+  /*
+   * Walk mode counts as walking, and that is not a detail.
+   *
+   * `humming` was the only signal, on the reasoning that switching the street hum on is
+   * somebody saying out loud that they are out with headphones in. True, and incomplete:
+   * pressing "Take me there" and holding walk mode open is the same statement made more
+   * plainly, and a listener who never turns the hum on was getting a phone that dimmed
+   * halfway to the echo — which is the exact failure the wake lock was added for.
+   */
+  const walkingNow = humming || (walkingView === "walk" && beacon !== null);
+  const awake = screenAwake({ walking: walkingNow, playing, visible: pageVisible, allowed: true });
+  const wake = useScreenAwake(awake);
   /*
    * Stopped is not paused, and the transport has to say which.
    *
@@ -665,6 +799,58 @@ export function App() {
     [nearby, stateOf],
   );
 
+  /**
+   * The nearest echo anywhere, and whether looking further would turn anything up.
+   *
+   * Measured against the whole library rather than the engine's nearby list, because the
+   * whole point is to answer a question the nearby list cannot: it is empty, and the
+   * listener wants to know why. Eligibility is applied, so a child is never told the
+   * nearest thing to them is one they are not allowed to hear.
+   *
+   * Only computed when there is nothing in range, which is the only time anything asks.
+   */
+  const WIDEN_TO_KM = 16;
+  const nowhere = roaming && state.nearby.length === 0;
+  const nearestAnywhere = useMemo(() => {
+    if (!nowhere) return null;
+    const from = state.position?.at ?? null;
+    if (!from) return null;
+    const listener = listenerFor(kids);
+    let best: { echo: Echo; distanceKm: number } | null = null;
+    for (const echo of LIBRARY) {
+      if (!checkEligibility(echo, { profile: listener, playAtMs: Date.now() }).eligible) continue;
+      const km = distanceKm(from, echo.point.at);
+      if (!best || km < best.distanceKm) best = { echo, distanceKm: km };
+    }
+    return best;
+  }, [nowhere, state.position, kids]);
+
+  /**
+   * What walk mode is pointing at.
+   *
+   * `around` first, because the engine already measured the bearing and the distance for
+   * everything in range, and two answers to one question is how a screen stops meaning
+   * anything. The fallback matters though: the beacon can be set from a map pin, and the
+   * map draws the whole corridor rather than only what is within reach, so somebody can
+   * perfectly well be walking to something a mile off that `around` has never heard of.
+   * Then it gets measured here. With no fix there is nothing to point at, so walk mode
+   * does not open at all rather than pointing north at a guess.
+   */
+  const walkTarget = useMemo(() => {
+    if (!beacon) return null;
+    const near = around.find((a) => a.echo.id === beacon);
+    if (near) return near;
+    const echo = LIBRARY.find((e) => e.id === beacon);
+    const from = state.position?.at ?? null;
+    if (!echo || !from) return null;
+    return {
+      echo,
+      distanceKm: distanceKm(from, echo.point.at),
+      bearingDeg: bearingTo(from, echo.point.at),
+      sealed: stateOf(echo.id) === "sealed",
+    };
+  }, [beacon, around, state.position, stateOf]);
+
   /*
    * Feeding the hum.
    *
@@ -726,7 +912,63 @@ export function App() {
             <span className="mono dim">{MODE_PHRASE[route.mode] ?? route.mode}</span>
           </div>
 
-          {tab === "map" && onFoot && walkingView === "rose" && (
+          {/*
+            Walk mode, over everything, when there is somewhere to go.
+
+            It is the whole screen rather than a layer on the map because the point of it
+            is what is NOT lit: a map under it would be the lit surface the wake lock was
+            added to survive.
+          */}
+          {tab === "map" && onFoot && walkingView === "walk" && walkTarget && (
+            <Walk
+              echo={walkTarget.echo}
+              distanceKm={walkTarget.distanceKm}
+              bearingDeg={walkTarget.bearingDeg}
+              /*
+                A heading we do not trust is not a heading. The rose draws a wide cone and
+                lets you judge it; walk mode turns a heading into the word "right", which
+                is a claim rather than a picture, so below the same 45 degree bar it says
+                it has no compass instead of pointing confidently at nothing.
+              */
+              headingDeg={heading.accuracyDeg <= 45 ? heading.deg : null}
+              needsCompass={heading.needsPermission}
+              onAskCompass={() => void heading.ask()}
+              playsItself={session.playsOnArrival(walkTarget.echo)}
+              syncedNearby={around.filter((a) => !a.sealed).length}
+              totalNearby={around.length}
+              awakeNote={wake === "held" ? screenAwakeNote(awake) : ""}
+              awakeWarning={
+                wake === "held"
+                  ? ""
+                  : wake === "unsupported"
+                    ? "Keep the app on screen: this browser cannot stop the phone sleeping."
+                    : "The phone may sleep. Keep the screen on and it will keep tracking."
+              }
+              /*
+                And close the popup on the way. "Show the map" from a walk left the target's
+                own card open over the map, and that card covers the control column down the
+                right hand side — including the one fab that leads back to the walk. Running
+                it is what showed it: the only route out of the map was the one the map had
+                buried.
+              */
+              onMap={() => {
+                setSelectedId(null);
+                setWalkingView("map");
+              }}
+              onEnd={() => {
+                setBeacon(null);
+                setWalkingView("rose");
+              }}
+            />
+          )}
+
+          {/*
+            Not while there is nothing nearby. The rose's whole content is what is around
+            you, so with nothing around it is an empty dial with a hum switch under it,
+            drawn over the screen that exists to explain the emptiness and offer a way out
+            of it. Two answers to one question, and the useless one was on top.
+          */}
+          {tab === "map" && onFoot && walkingView === "rose" && !nowhere && (
             <Rose
               items={around}
               headingDeg={heading.deg}
@@ -738,6 +980,23 @@ export function App() {
               onSelect={setSelectedId}
               humming={humming}
               onHum={setHumming}
+              /*
+                The note reports what the SCREEN IS DOING, not what we asked it to do.
+                Those came apart the first time this was tested: the request is refused
+                in a headless browser, at low battery, and in any Safari tab that is not
+                an installed home screen app, and the app cheerfully said "screen staying
+                on" over a phone that was about to sleep. A promise the device is not
+                keeping is worse than no promise, so a refusal says so and tells the
+                listener the one thing they can still do about it.
+              */
+              awakeNote={wake === "held" ? screenAwakeNote(awake) : ""}
+              awakeWarning={
+                !walkingNow || wake === "held"
+                  ? ""
+                  : wake === "unsupported"
+                    ? "Keep the app on screen: this browser cannot stop the phone sleeping."
+                    : "The phone may sleep. Keep the screen on and it will keep tracking."
+              }
             />
           )}
 
@@ -792,12 +1051,55 @@ export function App() {
                   onAll={allCategories}
                 />
               </div>
+              {/*
+                Nothing nearby, over the map.
+
+                Over rather than instead of, so the journey chip and the category chips
+                above it stay reachable: the map is where you change what you are looking
+                for, and burying it would leave nowhere to go from the screen whose whole
+                job is to give you somewhere to go.
+
+                Shown on `state.nearby` rather than the filtered `around`, which is the
+                difference between "there is nothing here" and "you switched everything
+                off". The second is a filter and belongs in the chips, not behind a full
+                screen that hides them.
+
+                And not while the overview is up, because the overview is what its own
+                primary button asks for: leaving it on top would have "show me where they
+                are" replace this screen with itself.
+              */}
+              {nowhere && !overview && (
+                <Nowhere
+                  nearest={nearestAnywhere}
+                  reachKm={session.nearbyReachKm}
+                  onShowAll={() => setCityOpen(true)}
+                  widenToKm={WIDEN_TO_KM}
+                  {...(nearestAnywhere && nearestAnywhere.distanceKm <= WIDEN_TO_KM
+                    ? { onWiden: () => setLookFurtherKm(WIDEN_TO_KM) }
+                    : {})}
+                />
+              )}
               <RouteMap
                 route={roaming ? null : route}
                 mode={roaming ? roamMode : route.mode}
                 library={
                   roaming
-                    ? state.nearby.map((n) => n.echo).filter((e) => activeCats.has(e.category))
+                    ? /*
+                        Overview means show me the lot, and while roaming that is the
+                        whole library rather than what happens to be in reach. It is the
+                        answer to "where are they then" from somewhere with nothing
+                        nearby, and without it the button framed an empty street: the map
+                        had only ever been given the engine's nearby list, which on that
+                        screen is empty by definition.
+
+                        Done here rather than by widening the engine's radius, because
+                        the radius also decides what the hum sings and what the rose
+                        draws, and looking at a map of the world should not put four
+                        hundred voices in somebody's ears.
+                      */
+                      (overview ? LIBRARY : state.nearby.map((n) => n.echo)).filter((e) =>
+                        activeCats.has(e.category),
+                      )
                     : onRoute.filter((e) => activeCats.has(e.category))
                 }
                 position={state.position}
@@ -806,10 +1108,20 @@ export function App() {
                 selectedId={selectedId}
                 onSelect={setSelectedId}
                 detent={detent}
+                sheet={!nowhere || nowPlaying !== null}
                 overview={overview}
                 progress={along}
                 theme={theme}
               />
+              {/*
+                No control column either. It carries the map toggle, recentre and download,
+                which all act on echoes in reach, and with none in reach it had nothing to
+                act on. It also sits centred in the band between the chips and the sheet,
+                and with no sheet that band grew until the top fab landed on the journey
+                chip's own Change button. Both gone at once: overview brings it back,
+                because turning overview on is what takes this screen down.
+              */}
+              {(!nowhere || overview) && (
               <Rail
                 theme={theme}
                 onTheme={setTheme}
@@ -818,10 +1130,24 @@ export function App() {
                 overview={overview}
                 onOverview={setOverview}
                 downloaded={downloaded}
-                {...(onFoot ? { roseView: walkingView, onRoseView: setWalkingView } : {})}
-                {...(onFoot ? { roseView: walkingView, onRoseView: setWalkingView } : {})}
+                /*
+                  Leaving the map hands back the WALK when there is one, and the survey
+                  when there is not. Returning everybody to the rose meant that tapping
+                  "Show the map" from a walk and then tapping back silently dropped you
+                  out of the walk you were in the middle of.
+                */
+                {...(onFoot
+                  ? {
+                      roseView: walkingView,
+                      roseBackLabel: beacon ? "Back to your walk" : "Back to what is around you",
+                      onRoseView: () =>
+                        setWalkingView((v) => (v === "map" ? (beacon ? "walk" : "rose") : "map")),
+                    }
+                  : {})}
                 onDownload={openPackage}
+                onCity={() => setCityOpen(true)}
               />
+              )}
               {/*
                 The echo you tapped, over the map.
                 It replaces the guidance bar while it is open rather than stacking with it:
@@ -848,7 +1174,14 @@ export function App() {
                            */
                           const already = beacon === echo.id;
                           setBeacon(already ? null : echo.id);
-                          setWalkingView(already ? "rose" : "map");
+                          /*
+                           * Walk mode, not the street map. Picking a destination used to
+                           * hand over a lit map for the whole walk, which is the thing
+                           * ADR-0001's wake lock exists to survive and the worst possible
+                           * screen to hold on for it. The map is still one tap away from
+                           * inside walk mode, for the moments you genuinely want streets.
+                           */
+                          setWalkingView(already ? "rose" : "walk");
                           setSelectedId(already ? null : echo.id);
                         },
                       }
@@ -857,12 +1190,23 @@ export function App() {
                   onPlay={(echo) => {
                     session.play(echo);
                     setSelectedId(null);
+                    setListening(true);
                   }}
                   onClose={() => setSelectedId(null)}
                 />
               ) : (
                 selfDirected && <ProximityBar guidance={state.guidance} cue={state.cue} />
               )}
+              {/*
+                No sheet while there is nothing nearby, unless something is playing.
+
+                The sheet's own empty state says "Nothing here yet" in grey at the bottom
+                of the screen, which is the sentence the whole Nowhere screen exists to
+                replace, and it would cover the two buttons that are the only way off it.
+                A transport for something already playing is the one thing worth keeping,
+                because losing it mid-echo would strand the audio with no way to stop it.
+              */}
+              {(!nowhere || nowPlaying) && (
               <Sheet
                 nearby={nearby}
                 lastCapture={state.lastCapture}
@@ -870,7 +1214,10 @@ export function App() {
                 stateOf={stateOf}
                 selectedId={selectedId}
                 onSelect={setSelectedId}
-                onPlay={(echo) => session.play(echo)}
+                onPlay={(echo) => {
+                  session.play(echo);
+                  setListening(true);
+                }}
                 isPlaying={(id) =>
                   state.playback.kind !== "idle" && state.playback.item.echo.id === id
                 }
@@ -901,13 +1248,7 @@ export function App() {
                 onSimple={setSimple}
                 rate={rate}
                 onRate={setRate}
-                onSeek={(f) => {
-                  if (!nowPlaying) return;
-                  const clamped = Math.max(0, Math.min(1, f));
-                  const d = ((simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS) / rate;
-                  startedRef.current = { id: nowPlaying.id, at: Date.now() - clamped * d * 1000 };
-                  setPlayhead(clamped);
-                }}
+                onSeek={seekTo}
                 detent={detent}
                 onDetent={setDetent}
                 onNext={() => session.skip()}
@@ -932,6 +1273,7 @@ export function App() {
                 {...(selfDirected ? { onCamera: setCamera } : {})}
                 onSave={toggleSave}
               />
+              )}
             </>
           )}
 
@@ -953,6 +1295,7 @@ export function App() {
               onPlay={(echo) => {
                 session.play(echo);
                 setPlanOpen(false);
+                setListening(true);
               }}
               onClose={() => setPlanOpen(false)}
             />
@@ -962,8 +1305,11 @@ export function App() {
             <Collection
               captured={kept}
               privacy={privacy}
-              total={inCorridor}
-              onPlay={(echo) => session.play(echo)}
+              onPlay={(echo) => {
+                session.play(echo);
+                setListening(true);
+              }}
+              onSettings={() => setTab("settings")}
               isPlaying={(id) =>
                 state.playback.kind !== "idle" && state.playback.item.echo.id === id
               }
@@ -971,14 +1317,13 @@ export function App() {
               saved={savedEchoes}
               onSave={toggleSave}
               mode={roaming ? roamMode : route.mode}
-
             />
           )}
 
           {tab === "settings" && (
             <Privacy
               onJourney={() => {
-                setTab("map");
+                setTab("echoes");
                 openPackage();
               }}
               journey={
@@ -1102,6 +1447,7 @@ export function App() {
                  */
                 setWalkingView("rose");
                 setBeacon(null);
+                setLookFurtherKm(undefined);
                 // Flying is somebody else's route and the door is locked, so there is
                 // nothing to roam. On foot and driving both land on roaming, because
                 // hunting is the thing you do without a route and it is the common case.
@@ -1126,6 +1472,81 @@ export function App() {
               }}
             />
           )}
+
+          {/*
+            The city, over the map. Its own screen with its own way out, so nothing under
+            it has to stay reachable.
+          */}
+          {cityOpen && (
+            <City
+              library={LIBRARY}
+              at={state.position?.at ?? null}
+              theme={theme}
+              onClose={() => setCityOpen(false)}
+              onGo={(cluster) => {
+                /*
+                  Going somewhere is looking far enough to see it. Without this, tapping a
+                  cluster four hundred kilometres away closed the city and handed back the
+                  same empty street: the engine's reach had not moved, so neither had the
+                  map. The reach becomes whatever it takes to hold that cluster, with its
+                  own spread added so the far edge is in too.
+                */
+                const from = state.position?.at ?? null;
+                const need = from ? distanceKm(from, cluster.at) + cluster.spreadKm : 0;
+                setLookFurtherKm(Math.max(WIDEN_TO_KM, Math.ceil(need * 1.1)));
+                setCityOpen(false);
+                setTab("map");
+                setOverview(true);
+                /*
+                  And the street map, not the rose. On foot the resting screen is the rose,
+                  which covers the map, so "Go" closed the city and handed back the same
+                  dial you were looking at before — the overview went on underneath where
+                  nobody could see it. Going somewhere means being shown it.
+                */
+                setWalkingView("map");
+                setBeacon(null);
+              }}
+            />
+          )}
+
+        {/*
+          Hearing it, over everything but the sync moment.
+
+          It leaves the tab bar showing, because it is a state of the app rather than a modal:
+          you can walk away from an echo into My Echoes and it keeps playing. The sync moment
+          sits above it, since arriving somewhere new outranks listening to somewhere old.
+        */}
+        {listening && nowPlaying && (
+          <Ribbon
+            echo={nowPlaying}
+            progress={progress}
+            playing={playing}
+            durationS={(simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS}
+            saved={chosen.has(nowPlaying.id)}
+            onSave={() => toggleSave(nowPlaying)}
+            onPlayPause={() => {
+              /*
+                Stopped is not paused. Stop cancelled the utterance, so there is nothing to
+                resume and `session.resume()` would walk the playhead over silence — the
+                same distinction the sheet's transport already makes.
+              */
+              if (playing) session.pause();
+              else if (stopped) session.play(nowPlaying);
+              else session.resume();
+            }}
+            onSeek={seekTo}
+            /*
+              Fifteen seconds as a fraction, because the playhead is a clock rather than a
+              decoder position. Signed, so one handler serves both buttons.
+            */
+            onNudge={(seconds) => {
+              const d = (simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS;
+              if (d > 0) seekTo(progressRef.current + seconds / d);
+            }}
+            simple={simple}
+            onClose={() => setListening(false)}
+          />
+        )}
 
           <Nav
             tab={tab}
@@ -1245,6 +1666,17 @@ export function App() {
           {LIBRARY.length} in the library
         </p>
       </aside>
+      {syncedNow && (
+        <Synced
+          event={syncedNow}
+          onListen={() => {
+            session.play(syncedNow.echo);
+            setSyncedNow(null);
+            setListening(true);
+          }}
+          onLater={() => setSyncedNow(null)}
+        />
+      )}
     </div>
   );
 }

@@ -24,8 +24,48 @@
   /* Sponsorship. Kept deliberately duller and browner than --ember, because a listener who
      mistook an advert for a discovery would have been deceived by the interface itself. */
   --gold: #d4a856;
-  /* The design's own button indigo, a shade deeper than --indigo. */
-  --indigo-btn: #5147db;
+  /*
+   * The design's own button indigo, raised until a filled button is legally visible.
+   *
+   * #5147DB was 2.93:1 against --space, 2.40:1 against --slate and 2.73:1 against
+   * --charcoal. WCAG 1.4.11 asks 3:1 for the non-text parts of a control, so every
+   * primary button in the app was below the floor for being seen at all. The white
+   * label on top was fine at 6.41:1, which is why nobody noticed: the text passed and
+   * the button it sat on did not.
+   *
+   * #6358FF keeps the hue at 244 degrees and moves only value and saturation. It reads
+   * 4.81:1 under white text, 3.21:1 at worst against a dark surface and 3.87:1 at worst
+   * against a light one, so it clears both bars in both schemes.
+   */
+  --indigo-btn: #6358ff;
+  /*
+     THE PRIMARY BUTTON, and it is aqua now.
+
+     `--indigo-btn` was the app's primary everywhere, and every screen designed since is
+     aqua, because the colour law is "aqua is the interface, ember is the echo" and a
+     button is the interface. Two primaries in one app is the blend that got noticed: the
+     sync moment offered an aqua Listen now, and the card behind it offered an indigo Take
+     me there, for the same product doing the same kind of thing.
+
+     Dark ink on it rather than white. White on #00FFE7 is 1.4:1 and unreadable; #042B28 is
+     a deep teal taken from the aqua itself, which keeps the button one colour rather than
+     one colour with a black label on it.
+  */
+  --btn: linear-gradient(140deg, #7dfff2, #00ffe7);
+  --btn-flat: #00ffe7;
+  --btn-ink: #042b28;
+  /*
+     The same button, for the screens that are dark whatever the theme.
+     
+     Walk mode, the sync moment, hearing it, the city and nothing-nearby all paint their
+     own near-black ground on purpose — an OLED held awake for a whole walk, one lit
+     object on a dark screen. A light theme does not repaint them, so they must not take a
+     light theme's button either: `var(--aqua)` flips to a deep teal in the light scheme
+     and would have put a dark button on a black screen. Defined once, outside both
+     schemes, so it cannot.
+  */
+  --btn-dark: linear-gradient(140deg, #7dfff2, #00ffe7);
+  --btn-dark-ink: #042b28;
 
   /* ── Category colours ──────────────────────────────────────
      Lifted from the design prototype's CATS table rather than invented, so a dot on a chip
@@ -86,7 +126,32 @@
   --cool: #3a4459;
   --aqua: #00736c;
   --indigo-soft: #5b52d6;
+  /*
+   * NOT the dark scheme's value, and the new 1.4.11 check is what proved it.
+   *
+   * Raising the indigo helps on a dark ground and hurts on a light one: #6358FF put the
+   * white label at 3.91:1 here, under the 4.5 bar. On white the fill needs to go darker,
+   * not lighter, and the original value was already right for that. It reads 6.41:1
+   * under white text and 5.17:1 at worst against a light surface.
+   *
+   * Which is the whole argument for a per-scheme token: one hex cannot be correct on
+   * both grounds.
+   */
   --indigo-btn: #5147db;
+  /*
+   * The primary button, light scheme, and the 1.4.11 check is what forced it to exist.
+   *
+   * #00FFE7 on white is 1.28:1. The button was not low contrast, it was invisible — a
+   * bright aqua lozenge on a white card that a person would have to already know was
+   * there. The light scheme's --aqua is already a deep teal for exactly this reason, so
+   * the button takes the same family and goes darker still, with white ink on it.
+   *
+   * Which is the whole argument for a per-scheme token, again: one hex cannot be correct
+   * on both grounds.
+   */
+  --btn: linear-gradient(140deg, #00857c, #00635c);
+  --btn-flat: #00635c;
+  --btn-ink: #ffffff;
   --gold: #7a5a15;
   --line: rgba(11, 15, 43, 0.14);
   --line-2: rgba(11, 15, 43, 0.24);
@@ -307,7 +372,7 @@ body {
 .playing-top { display: flex; gap: 12px; align-items: center; }
 .playing-orb {
   width: 46px; height: 46px; flex: none; border: 0; border-radius: 50%;
-  background: var(--indigo-btn); color: #fff; display: grid; place-items: center;
+  background: var(--btn); color: var(--btn-ink); display: grid; place-items: center;
   cursor: pointer; box-shadow: 0 0 22px rgba(81, 71, 219, 0.5);
 }
 /* 19px, the design's. It was 17, which is the sort of two pixels nobody can name and
@@ -316,7 +381,7 @@ body {
 .playing-text { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 2px; }
 .playing-kicker {
   display: flex; align-items: center; gap: 6px;
-  font-family: "Space Grotesk", monospace; font-size: 9px; font-weight: 500;
+  font-family: "Space Grotesk", monospace; font-size: 11px; font-weight: 500;
   letter-spacing: 0.14em; text-transform: uppercase;
 }
 .playing-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
@@ -327,7 +392,7 @@ body {
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .playing-place {
-  font-size: 10.5px; color: var(--muted); font-family: "Space Grotesk", monospace;
+  font-size: 12px; color: var(--muted); font-family: "Space Grotesk", monospace;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 
 }
@@ -356,7 +421,7 @@ body {
 .playing-mark:hover { background: rgba(255, 158, 18, 0.12); }
 .playing-next, .playing-missed {
   margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--line);
-  font-size: 10.5px; color: var(--muted);
+  font-size: 12px; color: var(--muted);
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .playing-missed { color: var(--indigo-soft); }
@@ -386,12 +451,20 @@ body {
   width: 19px; height: 19px; fill: none; stroke: currentColor;
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
-.entry-glyph-play { fill: currentColor; stroke: none !important; }
+/*
+   `.entry-glyph svg` above sets `fill: none` and is one point more specific than this was,
+   so the fill never applied — and this rule kills the stroke. Fill none plus stroke none is
+   an invisible triangle, which is what every unheard row in the collection has been
+   showing: a plate with nothing on it. Rendering the plate behind it is what made the
+   absence obvious, because an empty grey square reads as a placeholder and an empty
+   photograph reads as a mistake.
+*/
+.entry-glyph .entry-glyph-play { fill: currentColor; stroke: none; }
 /* The length, on the plate, as the design puts it. */
 .entry-glyph i {
   position: absolute; right: 3px; bottom: 3px; padding: 1px 4px; border-radius: 4px;
   background: rgba(0, 0, 0, 0.72); font-style: normal; color: var(--cool);
-  font-family: "Space Grotesk", monospace; font-size: 8.5px;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
 }
 .entry-now { color: var(--ember); }
 
@@ -399,15 +472,32 @@ body {
 /* One rule per category, setting `color` only. Anything inside then picks it up through
    `currentColor` — dots, tags, borders — so a category's identity is declared once rather
    than threaded through every component. */
-.cat-history { color: var(--cat-history); }
-.cat-true-crime { color: var(--cat-true-crime); }
-.cat-legend { color: var(--cat-legend); }
-.cat-kids { color: var(--cat-kids); }
-.cat-food-drink { color: var(--cat-food-drink); }
-.cat-arts { color: var(--cat-arts); }
-.cat-people { color: var(--cat-people); }
-.cat-built { color: var(--cat-built); }
-.cat-land { color: var(--cat-land); }
+/*
+ * AQUA IS THE INTERFACE. EMBER IS THE ECHO. And a category is a glyph, not a colour.
+ *
+ * These nine rules used to paint a pin, a chip and a card in the category's own hue. Two
+ * things were wrong with that, and only one of them is taste.
+ *
+ * The measurable one: simulating the three kinds of colour blindness, four of the nine
+ * collapse into each other. Kids and Landmarks fall from 0.86 apart to 0.02 for a
+ * deuteranope, roughly one man in twelve, and Food & drink and Land to 0.06. Searching the
+ * whole colour space for a set that survives, with the warm channel reserved for the echo
+ * and aqua reserved for the interface, the ceiling is five comfortable and six at a
+ * squeeze. Never nine. That is a property of human vision rather than of the palette.
+ *
+ * The other: nine hues at full strength on one map spend exactly the budget that makes
+ * ember mean "worth walking to". Rarity had nothing left to say with.
+ *
+ * So colour now carries STATE and the glyph carries CATEGORY. Cool ink means an echo is
+ * here and the mark inside says what kind. Ember means this one is worth the walk. Aqua
+ * means you, and anything you can press.
+ *
+ * The --cat-* tokens are kept rather than deleted: check-contrast.py measures all nine in
+ * both schemes, and the day somebody argues for bringing a hue back, the numbers are
+ * already there to argue with.
+ */
+.cat-history, .cat-true-crime, .cat-legend, .cat-kids, .cat-food-drink,
+.cat-arts, .cat-people, .cat-built, .cat-land { color: var(--cool); }
 
 /* ── route ribbon ────────────────────────────────────────── */
 .ribbon {
@@ -432,7 +522,7 @@ body {
   margin: -3.5px 0 0 -3.5px; border-radius: 50%; background: var(--white);
 }
 .ribbon small {
-  font-family: "Space Grotesk", monospace; font-size: 10.5px; color: var(--aqua); flex: none;
+  font-family: "Space Grotesk", monospace; font-size: 12px; color: var(--aqua); flex: none;
 }
 
 /* The stack above the map: ribbon, then filters. */
@@ -518,10 +608,19 @@ body {
 .chips { scroll-behavior: smooth; }
 
 .chip {
-  flex: none; display: flex; align-items: center; gap: 6px; cursor: pointer; padding: 6px 10px; border-radius: 9px; font: inherit; font-size: 10.5px; background: none; border: 0; white-space: nowrap;
+  flex: none; display: flex; align-items: center; gap: 6px; cursor: pointer;
+  /*
+   * 40px tall, inside a 48px row. The ::after trick used everywhere else cannot work
+   * here: .chips is a horizontal scroller, so anything the pseudo element adds above or
+   * below the chip is clipped by the scroll container before a thumb can reach it. The
+   * only honest way to give a chip a 44px target is to make the row tall enough to hold
+   * one, which the probe confirms.
+   */
+  min-height: 40px; padding: 0 12px;
+  border-radius: 11px; font: inherit; font-size: 12px; background: none; border: 0; white-space: nowrap;
 }
 .chip-all {
-  font-family: "Space Grotesk", monospace; font-size: 9px; letter-spacing: 0.13em;
+  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.13em;
   text-transform: uppercase; color: var(--cool);
   border-right: 1px solid var(--line); border-radius: 9px 0 0 9px;
   margin-right: 3px; padding-right: 11px;
@@ -575,7 +674,7 @@ body {
 .erow-plate i {
   position: absolute; right: 3px; bottom: 3px; padding: 1px 4px; border-radius: 4px;
   background: rgba(0, 0, 0, 0.72); font-style: normal; color: var(--cool);
-  font-family: "Space Grotesk", monospace; font-size: 8.5px;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
 }
 .erow-plate:disabled { cursor: default; opacity: 0.85; }
 .erow-body {
@@ -589,7 +688,7 @@ body {
   color: var(--white);
 }
 .erow-body small {
-  display: block; font-family: "Space Grotesk", monospace; font-size: 10px;
+  display: block; font-family: "Space Grotesk", monospace; font-size: 11.5px;
   color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   max-width: 100%;
 }
@@ -619,12 +718,12 @@ body {
 .ecard-top { display: flex; align-items: center; margin-bottom: 7px; }
 .ecard-tag {
   display: flex; align-items: center; gap: 6px;
-  font-family: "Space Grotesk", monospace; font-size: 9px;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
   letter-spacing: 0.13em; text-transform: uppercase;
 }
 .ecard-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 .ecard-dur {
-  margin-left: auto; font-size: 10px; color: var(--muted);
+  margin-left: auto; font-size: 11.5px; color: var(--muted);
   font-family: "Space Grotesk", monospace;
 }
 .ecard h4 {
@@ -635,7 +734,7 @@ body {
 .ecard p { margin: 0; font-size: 11px; line-height: 1.5; color: var(--muted); }
 .ecard-place {
   margin-top: 8px; display: flex; align-items: center; gap: 5px;
-  font-size: 10px; color: var(--muted); font-family: "Space Grotesk", monospace;
+  font-size: 11.5px; color: var(--muted); font-family: "Space Grotesk", monospace;
 }
 .ecard-place svg { width: 10px; height: 10px; fill: none; stroke: currentColor; stroke-width: 1.8; }
 
@@ -650,7 +749,7 @@ body {
   stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
 }
 .act .act-fill { fill: currentColor; stroke: none; }
-.act-pri { background: var(--indigo-btn); border-color: var(--indigo-btn); color: #fff; }
+.act-pri { background: var(--btn); border-color: var(--btn-flat); color: var(--btn-ink); }
 .act-pri:disabled { background: transparent; border-color: var(--line); color: var(--muted); cursor: default; }
 .act-on { background: rgba(255, 158, 18, 0.14); border-color: rgba(255, 158, 18, 0.55); color: var(--ember); }
 .act-icon { padding: 7px; }
@@ -668,15 +767,15 @@ body {
 /* The header carries the two numbers the screen is about, then gets out of the way. */
 .plan-head { flex: none; padding: 14px 16px 10px; border-bottom: 1px solid var(--line); }
 .plan-kicker {
-  display: block; font-family: "Space Grotesk", monospace; font-size: 9px;
-  letter-spacing: 0.2em; text-transform: uppercase; color: var(--ember);
+  display: block; font-family: "Space Grotesk", monospace; font-size: 11px;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--ember);
 }
 .plan-head h1 {
   font-size: 17px; font-weight: 600; letter-spacing: -0.01em; margin: 5px 0 3px;
   line-height: 1.25;
 }
 .plan-head p {
-  font-family: "Space Grotesk", monospace; font-size: 10.5px; color: var(--muted);
+  font-family: "Space Grotesk", monospace; font-size: 12px; color: var(--muted);
 }
 .plan-chips { display: flex; gap: 5px; margin-top: 10px; }
 .plan-chips .chip {
@@ -712,7 +811,7 @@ body {
 /* Where it falls along the route, beside the duration but clearly subordinate to it —
    and with its own space, because pinned to the same corner the two collided. */
 .card-ord {
-  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: 9.5px;
+  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: 11px;
   color: var(--muted); opacity: 0.7;
 }
 /* The duration, wherever a card shows one.
@@ -721,7 +820,7 @@ body {
    were showing "4 min" at the size of a heading. The design puts it at 10px in the mono
    face, quiet beside the title. */
 .dur {
-  margin-left: auto; font-size: 10px; color: var(--muted);
+  margin-left: auto; font-size: 11.5px; color: var(--muted);
   font-family: "Space Grotesk", monospace;
 }
 /* In the card header the ordinal takes the `auto`, so the duration sits beside it. */
@@ -761,7 +860,7 @@ body {
 }
 .upnext-head {
   display: block; font-family: "Space Grotesk", monospace;
-  font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--muted); margin-bottom: 6px; margin: 4px 2px 0;}
 .upnext ul { display: flex; flex-direction: column; gap: 3px; }
 .upnext button {
@@ -771,7 +870,7 @@ body {
 }
 .upnext-when {
   flex: none; width: 46px; font-family: "Space Grotesk", monospace;
-  font-size: 10.5px; color: var(--ember);
+  font-size: 12px; color: var(--ember);
 }
 .upnext-title {
   flex: 1; min-width: 0; font-size: 12px; color: var(--cool);
@@ -815,7 +914,7 @@ body {
 
 .player-time {
   display: flex; justify-content: space-between;
-  font-family: "Space Grotesk", monospace; font-size: 10.5px; color: var(--muted);
+  font-family: "Space Grotesk", monospace; font-size: 12px; color: var(--muted);
   margin-bottom: 9px;
 }
 
@@ -858,8 +957,8 @@ body {
 }
 .simpaud span { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
 .simpaud strong { font-size: 12.5px; font-weight: 600; }
-.simpaud small { font-size: 10.5px; color: var(--muted); }
-.simpaud i { font-style: normal; font-family: "Space Grotesk", monospace; font-size: 10.5px; color: var(--muted); }
+.simpaud small { font-size: 12px; color: var(--muted); }
+.simpaud i { font-style: normal; font-family: "Space Grotesk", monospace; font-size: 12px; color: var(--muted); }
 .simpaud:disabled { opacity: 0.55; cursor: default; }
 .simpaud-on {
   background: var(--aqua); border-color: var(--aqua); color: var(--space);
@@ -902,7 +1001,7 @@ body {
 }
 .seg-count {
   display: inline-block; margin-left: 5px; padding: 1px 6px; border-radius: 99px;
-  font-family: "Space Grotesk", monospace; font-size: 9.5px;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
   background: rgba(var(--rgb-accent), 0.16); color: var(--aqua);
 }
 
@@ -937,7 +1036,7 @@ body {
 .tkey.on { border-color: var(--aqua); color: var(--aqua); background: rgba(var(--rgb-accent), 0.1); }
 
 .tkicker {
-  font-family: "Space Grotesk", monospace; font-size: 9px; letter-spacing: 0.12em;
+  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--muted); margin-bottom: 9px;
 }
 .tlines { display: flex; flex-direction: column; gap: 3px; }
@@ -976,14 +1075,14 @@ body {
 }
 .tile b { font-family: "Space Grotesk", monospace; font-size: 22px; color: var(--aqua); }
 .tile span {
-  font-family: "Space Grotesk", monospace; font-size: 8.5px;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
 }
 
 .arr-cats { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
 .arr-cat {
   display: flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 99px;
-  font-size: 10.5px; background: rgba(var(--rgb-hair), 0.06);
+  font-size: 12px; background: rgba(var(--rgb-hair), 0.06);
 }
 
 .arr-next {
@@ -1000,7 +1099,7 @@ body {
 .arr-pri {
   flex: 1; padding: 14px; border-radius: 99px; cursor: pointer; font: inherit;
   font-size: 13px; font-weight: 600;
-  background: var(--indigo-btn); border: 0; color: #fff;
+  background: var(--btn); border: 0; color: var(--btn-ink);
 }
 .arr-ghost {
   flex: none; padding: 14px 22px; border-radius: 99px; cursor: pointer; font: inherit;
@@ -1038,7 +1137,7 @@ body {
 .pf-go {
   width: 100%; padding: 15px; border-radius: 99px; cursor: pointer; font: inherit;
   font-size: 14px; font-weight: 600;
-  background: var(--indigo-btn); border: 0; color: #fff;
+  background: var(--btn); border: 0; color: var(--btn-ink);
 }
 .pf-go:hover { filter: brightness(1.1); }
 
@@ -1071,7 +1170,7 @@ body {
 .now h2 {
   font-size: 13.5px; font-weight: 500; line-height: 1.22; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
-.now p { font-size: 10.5px; color: var(--muted); margin: 2px 0 0;}
+.now p { font-size: 12px; color: var(--muted); margin: 2px 0 0;}
 /* One line, for the place-and-length line under a found echo. Not for the idle panel,
    whose paragraph is two sentences of explanation and was being cut off mid-word. */
 .now:not(.now-idle) .now-text p {
@@ -1082,7 +1181,7 @@ body {
    pixels lower for it. */
 .now-idle { padding: 6px 16px 10px; }
 .now-idle h2 { font-size: 13.5px; font-weight: 500; color: var(--cool); }
-.now-idle p { font-size: 10.5px; }
+.now-idle p { font-size: 12px; }
 
 .play {
   width: 46px; height: 46px; flex: none; border: 0; border-radius: 50%;
@@ -1096,7 +1195,7 @@ body {
 }
 
 .tag {
-  display: inline-block; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
+  display: inline-block; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
   padding: 2px 7px; border-radius: 6px; font-family: "Space Grotesk", monospace; gap: 5px; font-weight: 500; margin-bottom: 3px;}
 .tag-common { background: rgba(var(--rgb-hair), 0.12); color: var(--cool); }
 .tag-uncommon { background: rgba(108, 99, 255, 0.22); color: var(--indigo-soft); }
@@ -1123,7 +1222,7 @@ body {
 
 .list-head {
   display: flex; justify-content: space-between; align-items: baseline;
-  padding: 4px 16px 6px; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 4px 16px 6px; font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--muted); font-family: "Space Grotesk", monospace;
   border-top: 1px solid var(--line);
 }
@@ -1151,7 +1250,7 @@ body {
 .row-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
 .row-text strong { font-size: 12.5px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .row-sealed .row-text strong { color: var(--cool); font-style: italic; font-weight: 400; }
-.row-text small { font-size: 10.5px; color: var(--muted); }
+.row-text small { font-size: 12px; color: var(--muted); }
 .row-distance { font-size: 11px; color: var(--muted); font-family: "Space Grotesk", monospace; flex: none; }
 
 /* ── notes ───────────────────────────────────────────────── */
@@ -1179,7 +1278,7 @@ body {
 }
 .routes .route:hover { color: var(--aqua); border-color: var(--line-2); }
 .routes .route.on { color: var(--white); border-color: var(--aqua); }
-.routes .route .count { float: right; color: var(--muted); font-size: 10px; }
+.routes .route .count { float: right; color: var(--muted); font-size: 11.5px; }
 .routename {
   font-family: "Space Grotesk", monospace; color: var(--white);
   font-size: 12px; margin-bottom: 14px;
@@ -1206,7 +1305,7 @@ body {
 .nav button {
   flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;
   background: none; border: 0; cursor: pointer; position: relative;
-  font-size: 9.5px; letter-spacing: 0.03em; color: var(--muted);
+  font-size: 11px; letter-spacing: 0.03em; color: var(--muted);
   font-family: "Space Grotesk", monospace; text-transform: uppercase;
 
 }
@@ -1217,7 +1316,7 @@ body {
 .nav .badge {
   position: absolute; top: -3px; left: 50%; margin-left: 7px;
   min-width: 15px; height: 15px; padding: 0 4px; border-radius: 99px;
-  background: var(--ember); color: #fff; font-size: 9px; line-height: 15px;
+  background: var(--ember); color: #fff; font-size: 11px; line-height: 15px;
 }
 
 /* The sheet and proximity bar sit above the tab bar rather than under it. */
@@ -1233,6 +1332,14 @@ body {
    can sit in that row; the other is shorter, and the difference showed as a panel of empty
    between the echo and the tab bar. `Sheet.tsx` measures the row and sets --peek-h; the
    132 stays as the value before the first measurement lands. */
+/*
+   No sheet at all, no room reserved for one. The default above is 400px, which is right
+   while the sheet exists and is being measured, and wrong the moment the sheet is not
+   rendered: the map stopped four hundred pixels short of the tab bar and the gap was a
+   flat dark band. Only "nothing nearby, showing the whole library" reaches this, which is
+   exactly the screen that wants every pixel of map it can get.
+*/
+.screen:not(:has(.sheet)) { --sheet-h: 0px; }
 .screen:has(.sheet-peek) { --sheet-h: var(--peek-h, 132px); }
 /* 46, not 52. At 52 the sheet plus the tab bar plus the route ribbon left the map 16% of
    the screen — the complaint that started all this — and the band was too short for the
@@ -1289,7 +1396,7 @@ body {
 }
 .group { margin-bottom: 22px; }
 .group-head {
-  font-family: "Space Grotesk", monospace; font-size: 9.5px; letter-spacing: 0.16em;
+  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.12em;
   text-transform: uppercase; margin-bottom: 8px; color: var(--muted);
 }
 .group-singular { color: var(--magenta); }
@@ -1298,11 +1405,11 @@ body {
 
 .entry-text h4 { font-size: 13px; font-weight: 500; line-height: 1.35; }
 .entry-text p { font-size: 11px; color: var(--muted); margin-top: 2px; }
-.entry-meta { font-size: 10px; color: rgba(174, 181, 194, 0.72); }
+.entry-meta { font-size: 11.5px; color: rgba(174, 181, 194, 0.72); }
 
 .collection-foot {
   margin-top: 20px; padding: 14px 2px 0; border-top: 1px solid var(--line);
-  font-size: 10.5px; line-height: 1.6; color: var(--muted);
+  font-size: 12px; line-height: 1.6; color: var(--muted);
 }
 .collection-foot p { font-size: 11.5px; color: var(--muted); line-height: 1.6; }
 .collection-foot strong { color: var(--cool); }
@@ -1310,6 +1417,7 @@ body {
 /* ── privacy ─────────────────────────────────────────────── */
 .setting { margin-bottom: 18px; }
 .setting-row {
+  min-height: 48px;
   width: 100%; display: flex; align-items: center; gap: 14px;
   background: none; border: 0; color: inherit; text-align: left; cursor: pointer; padding: 0;
 }
@@ -1341,7 +1449,7 @@ body {
   background: var(--slate); border: 1px solid var(--line);
 }
 .panel h3 {
-  font-family: "Space Grotesk", monospace; font-size: 9.5px; letter-spacing: 0.16em;
+  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
 }
 .feature-list { list-style: none; }
@@ -1350,12 +1458,12 @@ body {
   padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 12px;
 }
 .feature:last-child { border-bottom: 0; }
-.feature-level { font-family: "Space Grotesk", monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; }
+.feature-level { font-family: "Space Grotesk", monospace; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.1em; }
 .feature-full .feature-level { color: var(--aqua); }
 .feature-degraded .feature-level { color: var(--gold); }
 .feature-unavailable .feature-level { color: var(--muted); }
 .feature-unavailable .feature-name { color: var(--muted); }
-.feature-fallback { grid-column: 1 / -1; font-size: 10.5px; color: rgba(174, 181, 194, 0.7); line-height: 1.5; }
+.feature-fallback { grid-column: 1 / -1; font-size: 12px; color: rgba(174, 181, 194, 0.7); line-height: 1.5; }
 
 .panel-danger { border-color: rgba(255, 0, 122, 0.24); }
 .danger-row {
@@ -1408,7 +1516,7 @@ body {
 .vf-x svg { width: 15px; height: 15px; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; }
 .vf-tag {
   display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px;
-  border-radius: 99px; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+  border-radius: 99px; font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase;
   background: rgba(5, 6, 10, 0.5); border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(6px);
 }
@@ -1444,7 +1552,7 @@ body {
 
 .vf-note {
   position: absolute; left: 14px; right: 14px; bottom: 12px; z-index: 4;
-  font-size: 10.5px; line-height: 1.5; text-align: center; color: rgba(255, 255, 255, 0.78);
+  font-size: 12px; line-height: 1.5; text-align: center; color: rgba(255, 255, 255, 0.78);
   background: rgba(5, 6, 10, 0.52); border-radius: 10px; padding: 6px 10px;
   backdrop-filter: blur(6px);
 }
@@ -1477,12 +1585,12 @@ body {
 .vf-arc-label {
   position: absolute; transform: translateX(-50%); pointer-events: auto;
   width: max-content; max-width: 150px; padding: 5px 9px;
-  border-radius: 10px; font-size: 10.5px; line-height: 1.3; color: #fff; text-align: center;
+  border-radius: 10px; font-size: 12px; line-height: 1.3; color: #fff; text-align: center;
   background: rgba(5, 6, 10, 0.68); border: 1px solid rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(6px);
 }
 .vf-arc-on .vf-arc-label { border-color: rgba(255, 158, 18, 0.6); }
-.vf-arc-label em { display: block; font-style: normal; font-size: 9.5px; color: var(--muted); margin-top: 1px; }
+.vf-arc-label em { display: block; font-style: normal; font-size: 11px; color: var(--muted); margin-top: 1px; }
 
 /* Behind you is the common case on a street, and the most useful thing this screen
    can say. Dropping the marker would be the easy answer and the wrong one. */
@@ -1490,12 +1598,12 @@ body {
   position: absolute; top: 50%; transform: translateY(-50%); z-index: 4;
   pointer-events: auto; cursor: pointer; max-width: 40%;
   display: flex; align-items: center; gap: 5px; padding: 7px 9px;
-  font-size: 10.5px; line-height: 1.3; color: #fff; text-align: left;
+  font-size: 12px; line-height: 1.3; color: #fff; text-align: left;
   background: rgba(5, 6, 10, 0.62); border: 1px solid rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(6px);
 }
 .vf-edge svg { width: 13px; height: 13px; flex: none; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
-.vf-edge em { display: block; font-style: normal; font-size: 9.5px; color: var(--muted); margin-top: 1px; }
+.vf-edge em { display: block; font-style: normal; font-size: 11px; color: var(--muted); margin-top: 1px; }
 .vf-edge-l { left: 0; border-left: 0; border-radius: 0 12px 12px 0; }
 .vf-edge-r { right: 0; border-right: 0; border-radius: 12px 0 0 12px; flex-direction: row-reverse; text-align: right; }
 
@@ -1504,11 +1612,11 @@ body {
   border-top: 1px solid var(--line);
 }
 .vf-cap p { font-size: 12.5px; line-height: 1.4; color: var(--white); }
-.vf-cap small { display: block; margin-top: 3px; font-size: 10px; color: var(--muted); }
+.vf-cap small { display: block; margin-top: 3px; font-size: 11.5px; color: var(--muted); }
 
 .vf-blend { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
 .vf-end {
-  font-family: "Space Grotesk", monospace; font-size: 10px; letter-spacing: 0.08em;
+  font-family: "Space Grotesk", monospace; font-size: 11.5px; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--muted); flex: none; min-width: 34px;
 }
 .vf-end:last-child { text-align: right; }
@@ -1525,7 +1633,7 @@ body {
   width: 20px; height: 20px; border-radius: 50%; background: var(--ember);
   border: 2px solid var(--space); box-shadow: 0 0 0 1px var(--ember-deep);
 }
-.vf-hint { margin-top: 7px; text-align: center; font-size: 10px; color: var(--muted); }
+.vf-hint { margin-top: 7px; text-align: center; font-size: 11.5px; color: var(--muted); }
 
 .vf-plates { display: flex; gap: 8px; margin-top: 11px; overflow-x: auto; }
 .vf-plate {
@@ -1536,7 +1644,7 @@ body {
   width: 46px; height: 34px; object-fit: cover; border-radius: 7px;
   border: 1px solid var(--line); opacity: 0.6;
 }
-.vf-plate span { font-size: 9.5px; color: var(--muted); font-family: "Space Grotesk", monospace; }
+.vf-plate span { font-size: 11px; color: var(--muted); font-family: "Space Grotesk", monospace; }
 .vf-plate-on img { opacity: 1; border-color: var(--ember); }
 .vf-plate-on span { color: var(--ember); }
 
@@ -1554,14 +1662,14 @@ body {
 .plate-thumb { position: relative; flex: none; width: 36px; height: 36px; }
 .plate-thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
 .plate-thumb em {
-  position: absolute; right: -3px; bottom: -3px; font-style: normal; font-size: 9px;
+  position: absolute; right: -3px; bottom: -3px; font-style: normal; font-size: 11px;
   padding: 1px 4px; border-radius: 99px; background: var(--ember); color: #1a1000;
   font-family: "Space Grotesk", monospace;
 }
 .plate-text { min-width: 0; flex: 1; }
 .plate-text strong { display: block; font-size: 12px; color: var(--ember); }
 .plate-text small {
-  display: block; font-size: 10.5px; color: var(--muted); margin-top: 1px;
+  display: block; font-size: 12px; color: var(--muted); margin-top: 1px;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .plate-cam { flex: none; }
@@ -1611,8 +1719,8 @@ body {
 /* The returning listener's front door. Same panel, different order. */
 .pf-kicker {
   display: block; margin-bottom: 6px;
-  font-family: "Space Grotesk", monospace; font-size: 10px;
-  letter-spacing: 0.16em; text-transform: uppercase; color: var(--ember);
+  font-family: "Space Grotesk", monospace; font-size: 11.5px;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--ember);
 }
 .pf-recent {
   font-size: 12px; line-height: 1.5; color: var(--muted); margin: 8px 0 18px;
@@ -1743,9 +1851,19 @@ body {
   18%  { opacity: 0.85; }
   to   { transform: scale(2.3); opacity: 0; }
 }
-.ripple-ring   { stroke: #00e5ff; }
-.ripple-ring-2 { stroke: #3b6bff; }
-.ripple-ring-3 { stroke: #7b3bff; }
+/*
+ * One colour, three delays.
+ *
+ * These were #00e5ff, #3b6bff and #7b3bff: a cyan through violet sweep that belonged to
+ * no channel in the palette and, because it was moving, was the loudest thing on the map.
+ * It competed with aqua for "this is yours to operate" and with ember for "this is worth
+ * walking to", and won both fights by moving.
+ *
+ * A ripple means an echo is here and still sealed, which is exactly what cool ink means
+ * everywhere else, so it says it in the same voice. Ember stays scarce for rarity, which
+ * is the only thing on this map that should pull you across it.
+ */
+.ripple-ring { stroke: var(--cool); opacity: 0.55; }
 
 /* Found is quiet. The ripple is the unanswered call, so answering it stops the
    sound — and a map of a walk you finished sits still, which is the point. */
@@ -1777,7 +1895,7 @@ body {
   transition: bottom 0.34s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.2s linear;
 }
 .fab {
-  width: 42px; height: 42px; flex: none; cursor: pointer;
+  width: 44px; height: 44px; flex: none; cursor: pointer;
   border-radius: 14px; background: rgba(var(--rgb-panel), 0.94);
   border: 1px solid var(--line); display: grid; place-items: center;
   color: var(--cool); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
@@ -1794,9 +1912,18 @@ body {
 /* Only at full, where there is genuinely no map left to control. */
 .screen:has(.sheet-full) .rail { opacity: 0; pointer-events: none; }
 
-/* How the design handles a rising sheet: one button collapses to nothing rather
-   than the column wrapping into a second row over the map. */
-.screen:has(.sheet-half) .rail-pack {
+/* How the design handles a rising sheet: a button collapses to nothing rather than the
+   column wrapping into a second row over the map.
+
+   TWO of them now, because the column gained the city. The count is not cosmetic: the
+   column is anchored to the bottom and grows upward, so at the half detent a sixth fab put
+   the top one straight through the category chips, where it swallowed the taps meant for
+   them. A rendered walk found it by failing to click a chip.
+
+   The city is the one that goes, with the package. At half you are reading what is around
+   you here, which is the one moment "where else is there" can wait. */
+.screen:has(.sheet-half) .rail-pack,
+.screen:has(.sheet-half) .rail-city {
   height: 0; margin-top: -8px; border-width: 0; opacity: 0;
   pointer-events: none; overflow: hidden;
 }
@@ -1808,7 +1935,7 @@ body {
    in light and near-black in dark, so the credit takes its contrast from the theme's own
    muted ink rather than a fixed colour that would disappear in one of them. */
 .map-credit {
-  fill: var(--muted); opacity: 0.75; font-size: 8.5px;
+  fill: var(--muted); opacity: 0.75; font-size: 11px;
   font-family: "Space Grotesk", monospace; pointer-events: none;
   paint-order: stroke; stroke: rgba(var(--rgb-panel), 0.6); stroke-width: 2.4;
 }
@@ -1823,7 +1950,7 @@ body {
    in light and near-black in dark, so the credit takes its contrast from the theme's own
    muted ink rather than a fixed colour that would disappear in one of them. */
 .map-credit {
-  fill: var(--muted); opacity: 0.75; font-size: 8.5px;
+  fill: var(--muted); opacity: 0.75; font-size: 11px;
   font-family: "Space Grotesk", monospace; pointer-events: none;
   paint-order: stroke; stroke: rgba(var(--rgb-panel), 0.6); stroke-width: 2.4;
 }
@@ -1885,7 +2012,7 @@ body {
 
 .onb-go {
   width: 100%; padding: 14px; border-radius: 14px; border: 0; cursor: pointer; font: inherit;
-  background: var(--indigo-btn); color: #fff; font-size: 13.5px; font-weight: 500;
+  background: var(--btn); color: var(--btn-ink); font-size: 13.5px; font-weight: 500;
 }
 .onb-go:disabled { opacity: 0.6; cursor: default; }
 .onb-alt {
@@ -2066,7 +2193,7 @@ body {
    somebody asks "is this the new one" and invisible the rest of the time. */
 .build-stamp {
   margin: 18px 4px 0; text-align: center;
-  font-family: "Space Grotesk", monospace; font-size: 10px; color: var(--muted);
+  font-family: "Space Grotesk", monospace; font-size: 11.5px; color: var(--muted);
 }
 
 /* ── The echo you tapped ──────────────────────────────────────────────────────
@@ -2077,6 +2204,18 @@ body {
 .pop {
   position: absolute; left: 14px; right: 14px; z-index: 26;
   bottom: calc(var(--nav-h) + var(--sheet-h) + 10px);
+  /*
+     Bounded, and it scrolls. The card is anchored at the bottom and grows upwards, so
+     adding the archive photograph pushed its own close button off the top of the screen on
+     an echo with a long title — a card with no way to shut it. Found by the spec audit
+     refusing to click something that was "visible, enabled and stable" and outside the
+     viewport, which is the most useful kind of test failure there is.
+
+     The ceiling leaves the map bar and a strip of map showing, because the card is about
+     a pin and covering the pin entirely would make it a modal rather than a callout.
+  */
+  max-height: calc(100% - var(--nav-h) - var(--sheet-h) - 150px);
+  overflow-y: auto; overscroll-behavior: contain;
   padding: 13px 14px 12px; border-radius: 16px;
   background: rgba(var(--rgb-panel), 0.96); border: 1px solid var(--line-2);
   box-shadow: 0 12px 34px rgba(0, 0, 0, 0.5);
@@ -2092,17 +2231,25 @@ body {
 }
 
 /* Its own corner, clear of the title, and a real target rather than a glyph. */
+/*
+   Sticky and floated, so scrolling the card never scrolls away the way out of it.
+
+   It was absolutely positioned, which inside a scrolling box means it scrolls with the
+   content: once the card could overflow, the close button could be pushed out of reach.
+   Floated it stays in flow, which is what sticky needs, and the kicker wraps beside it.
+*/
 .pop-close {
-  position: absolute; top: 8px; right: 8px; width: 30px; height: 30px;
+  position: sticky; top: 0; float: right; z-index: 2;
+  width: 30px; height: 30px; margin: -4px -4px 0 6px;
   display: grid; place-items: center; border: 0; border-radius: 9px;
-  background: transparent; color: var(--muted); cursor: pointer;
+  background: rgba(var(--rgb-panel), 0.9); color: var(--muted); cursor: pointer;
 }
 .pop-close svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; }
 .pop-close:hover { color: var(--white); background: rgba(var(--rgb-hair), 0.1); }
 
 .pop-kicker {
   display: inline-flex; align-items: center; gap: 5px;
-  font-family: "Space Grotesk", monospace; font-size: 9px; font-weight: 500;
+  font-family: "Space Grotesk", monospace; font-size: 11px; font-weight: 500;
   letter-spacing: 0.14em; text-transform: uppercase;
 }
 .pop-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
@@ -2113,7 +2260,7 @@ body {
   line-height: 1.3; letter-spacing: -0.01em; color: var(--white);
 }
 .pop-where {
-  margin: 4px 0 0; font-size: 10px; color: var(--muted);
+  margin: 4px 0 0; font-size: 11.5px; color: var(--muted);
   font-family: "Space Grotesk", monospace;
 }
 .pop-teaser {
@@ -2132,8 +2279,8 @@ body {
   margin-top: 11px; width: 100%; min-height: 40px;
   display: flex; align-items: center; justify-content: center; gap: 7px;
   border: 0; border-radius: 99px; cursor: pointer; font: inherit;
-  font-size: 12.5px; font-weight: 600; color: #fff;
-  background: var(--indigo-btn);
+  font-size: 12.5px; font-weight: 600; color: var(--btn-ink);
+  background: var(--btn);
 }
 .pop-go svg { width: 14px; height: 14px; fill: currentColor; }
 .pop-go:hover { filter: brightness(1.1); }
@@ -2162,7 +2309,7 @@ body {
    one they need pushed at them, which is why it is no longer the resting row. */
 .list-progress {
   margin: 0; padding: 6px 16px 0;
-  font-family: "Space Grotesk", monospace; font-size: 9.5px;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
 }
 
@@ -2265,7 +2412,7 @@ body {
 
 .rose-north { stroke: rgba(var(--rgb-hair), 0.45); stroke-width: 1.4; stroke-linecap: round; }
 .rose-north-mark {
-  fill: var(--muted); font-family: "Space Grotesk", monospace; font-size: 9px;
+  fill: var(--muted); font-family: "Space Grotesk", monospace; font-size: 11px;
   letter-spacing: 0.14em;
 }
 
@@ -2319,8 +2466,8 @@ body {
   margin-top: 11px; width: 100%; min-height: 40px;
   display: flex; align-items: center; justify-content: center; gap: 7px;
   border: 0; border-radius: 99px; cursor: pointer; font: inherit;
-  font-size: 12.5px; font-weight: 600; color: #fff;
-  background: var(--indigo-btn);
+  font-size: 12.5px; font-weight: 600; color: var(--btn-ink);
+  background: var(--btn);
 }
 .pop-aim svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
 .pop-aim:hover { filter: brightness(1.1); }
@@ -2390,7 +2537,7 @@ body {
 }
 .journey-roam svg { width: 17px; height: 17px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .journey-change {
-  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: 9.5px;
+  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: 11px;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--aqua);
 }
 
@@ -2409,8 +2556,8 @@ body {
    so without this the fact that it now opens the journey screen is invisible. */
 .journey-hint {
   display: block; margin-top: 5px; text-align: center;
-  font-family: "Space Grotesk", monospace; font-size: 9px;
-  letter-spacing: 0.16em; text-transform: uppercase; color: var(--aqua); opacity: 0.85;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--aqua); opacity: 0.85;
 }
 
 /* ── The airport picker ──────────────────────────────────────────────────────
@@ -2420,8 +2567,8 @@ body {
 .pf-air { position: relative; margin-bottom: 8px; }
 .pf-air-label {
   display: block; margin: 0 2px 4px;
-  font-family: "Space Grotesk", monospace; font-size: 9px;
-  letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted);
+  font-family: "Space Grotesk", monospace; font-size: 11px;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
 }
 .pf-air-input { margin-bottom: 0; }
 
@@ -2449,3 +2596,707 @@ body {
   min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   font-size: 11.5px; color: var(--muted);
 }
+
+/*
+ * 44x44, without making anything look chunky.
+ *
+ * 24x24 is the legal floor (WCAG 2.5.8) and the app already cleared it. 44 is what Apple
+ * asks for, and the gap matters more here than in most products because the thumb doing
+ * the tapping belongs to somebody who is walking, often one handed, often in the cold.
+ *
+ * Growing the visual control to 44 would wreck the chip row and the sheet, so the hit
+ * area is extended past the paint instead: a transparent ::after centred on the control,
+ * which is the technique Apple's own controls use. The chip still looks 32px tall and
+ * still catches a 44px thumb.
+ */
+.chip, .seg, .now-mark, .erow-save { position: relative; }
+/* ::before, not ::after: .seg.on::after is already the active underline, and adding a
+   44px box to it turned that underline into a bar struck through the label. */
+.chip::before, .chip-nudge::before, .seg::before, .now-mark::before, .erow-save::before {
+  content: ""; position: absolute;
+  left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: max(100%, 44px); height: max(100%, 44px);
+}
+/* The nav is the one place there is room to simply be 48 tall. */
+.nav button { min-height: 48px; }
+.erow-body { min-height: 44px; }
+
+/*
+ * Rarity, as light rather than as a badge.
+ *
+ * `rarityOf` has been in the engine since the beginning and never reached the map, so the
+ * one thing that tells you which way to walk was invisible on the screen you walk with.
+ * Drawn as a halo because a badge is something you read and a glow is something you
+ * notice, and only while the echo is still sealed: an echo already yours has nothing left
+ * to find, so it goes quiet.
+ */
+.pin-halo { pointer-events: none; }
+.pin-halo-rare { fill: url(#rarityRare); }
+.pin-halo-singular { fill: url(#raritySingular); }
+/* Heard is the ember gone cold. */
+.pin-heard .pin-body { stroke: var(--ember-deep); }
+.pin-heard .pin-icon { stroke: var(--ember-deep); }
+
+/*
+ * My Echoes, as board 7 draws it.
+ *
+ * Progress moved out of a thin bar and into three numbers, because this is the screen
+ * somebody opens sitting down and a count is what they came for. Ember on the counts,
+ * because a number of echoes is content; the gear stays cool, because it is a control.
+ */
+.coll-head { display: flex; flex-direction: column; gap: 14px; }
+.coll-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.coll-settings {
+  width: 44px; height: 44px; flex: none; border-radius: 12px; cursor: pointer;
+  border: 1px solid var(--line); background: none; color: var(--muted);
+  display: grid; place-items: center;
+}
+.coll-settings svg {
+  width: 19px; height: 19px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.coll-stats { display: flex; gap: 8px; }
+.coll-stat {
+  flex: 1 1 0; min-width: 0; text-align: center; padding: 13px 10px;
+  border-radius: 14px; background: var(--slate); border: 1px solid var(--line);
+}
+.coll-stat-rare { border-color: rgba(255, 158, 18, 0.3); }
+.coll-stat-n {
+  display: block; font-family: "Space Grotesk", monospace;
+  font-size: 21px; font-weight: 500; color: var(--cool);
+}
+.coll-stat-ember { color: var(--ember); }
+.coll-stat-core { color: var(--ember-core); }
+.coll-stat small {
+  font-family: "Space Grotesk", monospace; font-size: 11px;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+}
+
+/*
+ * THE SYNC MOMENT, board 5.
+ *
+ * Near-black rather than warm. The whole screen goes dark and one object is lit, which is
+ * the only place in the product where the warm channel gets to be the entire point.
+ */
+.synced {
+  position: fixed; inset: 0; z-index: 60;
+  background:
+    radial-gradient(86% 56% at 50% 40%, #16183a 0%, #0a0c1e 52%, #06070d 100%);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 0 24px calc(24px + env(safe-area-inset-bottom));
+  text-align: center; animation: synced-in 0.3s ease-out;
+}
+@keyframes synced-in { from { opacity: 0; } to { opacity: 1; } }
+
+/*
+ * The rings, collapsing inward and landing. The map's ripple, run backwards.
+ *
+ * ONCE, not on a loop, and that is the whole fix. Looping was the instinct — the map's
+ * ripple loops, so this looped too — but the map is waiting and this has arrived. A loop
+ * means that at every frozen moment of the screen's life there is a ring somewhere, and
+ * somewhere is regularly straight through the title: rendering it is what showed a hairline
+ * ruled across "Nobody ever repaired this wall". Landing is a thing that happens and is
+ * then over. They sweep in during the first second, gather on the echo, and go; what is
+ * left is a lit object and some words, which is what the screen is actually for.
+ *
+ * Bounded to the echo, too. The outermost is 288px against a 94px orb, so the sweep stays
+ * around the thing that arrived rather than lassoing the screen.
+ */
+.synced-orb { position: relative; display: grid; place-items: center; margin-bottom: 26px; }
+.synced-rings { position: absolute; top: 50%; left: 50%; width: 0; height: 0; }
+.synced-ring {
+  position: absolute; left: 0; top: 0; width: 180px; height: 180px;
+  margin: -90px 0 0 -90px; border-radius: 50%;
+  border: 1.6px solid rgba(255, 158, 18, 0.42);
+  animation: synced-collapse 1.15s cubic-bezier(0.25, 0, 0.15, 1) both;
+}
+.synced-ring-2 { animation-delay: 0.14s; }
+.synced-ring-3 { animation-delay: 0.28s; }
+@keyframes synced-collapse {
+  0%   { transform: scale(1.6); opacity: 0; }
+  26%  { opacity: 0.85; }
+  100% { transform: scale(0.52); opacity: 0; }
+}
+
+.synced-echo {
+  position: relative; width: 94px; height: 94px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: radial-gradient(circle at 38% 32%, #ffe7b0, var(--ember) 58%, var(--ember-deep));
+  box-shadow: 0 0 64px rgba(255, 158, 18, 0.6), 0 0 150px rgba(255, 158, 18, 0.2);
+  animation: synced-land 0.42s cubic-bezier(0.2, 0.9, 0.3, 1) both;
+}
+@keyframes synced-land {
+  from { transform: scale(1.5); opacity: 0; }
+  to   { transform: none; opacity: 1; }
+}
+.synced-echo svg {
+  width: 36px; height: 36px; fill: none; stroke: #40210a;
+  stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
+}
+
+.synced-say { position: relative; animation: synced-lift 0.5s 0.1s ease-out both; }
+@keyframes synced-lift {
+  from { transform: translateY(10px); opacity: 0; }
+  to   { transform: none; opacity: 1; }
+}
+.synced-kicker {
+  margin: 0; font-family: "Space Grotesk", monospace; font-size: 11px; font-weight: 500;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--ember-core);
+}
+.synced-say h2 {
+  margin: 13px 0 0; font-size: 21px; font-weight: 500; line-height: 1.3; color: var(--white);
+}
+.synced-where {
+  margin: 11px 0 0; font-family: "Space Grotesk", monospace;
+  font-size: 12px; color: var(--muted);
+}
+
+.synced-rare {
+  position: relative; margin-top: 22px; padding: 13px 18px; border-radius: 16px;
+  background: rgba(255, 158, 18, 0.07); border: 1px solid rgba(255, 158, 18, 0.32);
+  animation: synced-lift 0.55s 0.2s ease-out both;
+}
+.synced-rare-why { margin: 0; font-size: 14px; line-height: 1.5; color: var(--ember-core); }
+.synced-rare-cat {
+  margin: 6px 0 0; font-family: "Space Grotesk", monospace; font-size: 11px;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+}
+
+.synced-acts {
+  position: relative; align-self: stretch; margin-top: 34px;
+  display: flex; flex-direction: column; gap: 10px;
+  animation: synced-lift 0.6s 0.28s ease-out both;
+}
+.synced-listen {
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  min-height: 54px; border-radius: 16px; border: 0; cursor: pointer;
+  font: inherit; font-size: 15px; font-weight: 600; color: var(--btn-dark-ink);
+  background: var(--btn-dark);
+  box-shadow: 0 0 36px rgba(0, 255, 231, 0.28);
+}
+.synced-listen svg { width: 16px; height: 16px; fill: currentColor; }
+.synced-later {
+  min-height: 46px; border-radius: 14px; cursor: pointer; font: inherit; font-size: 13px;
+  color: var(--cool); background: none; border: 1px solid var(--line-2);
+}
+@media (prefers-reduced-motion: reduce) {
+  .synced, .synced-ring, .synced-echo, .synced-say, .synced-rare, .synced-acts {
+    animation: none;
+  }
+  /* Still legible as a finished state rather than a half-played animation. */
+  .synced-ring { opacity: 0.3; transform: scale(0.8); }
+}
+
+/* ── Walk mode ──────────────────────────────────────────────────────────────────
+   Near black on purpose: this screen is held awake for the length of a walk, and on
+   an OLED a black pixel costs almost nothing. One lit object, which is the echo
+   pulling. Everything else is as dim as the contrast floor allows. */
+.walk {
+  position: fixed; inset: 0; z-index: 55;
+  background: radial-gradient(70% 42% at 50% 38%, #16110a 0%, #08080e 58%, #04050a 100%);
+  display: flex; flex-direction: column; align-items: center;
+  padding: calc(14px + env(safe-area-inset-top)) 22px calc(18px + env(safe-area-inset-bottom));
+  text-align: center; overflow: hidden;
+}
+
+.walk-awake {
+  display: flex; align-items: center; gap: 9px; margin: 0; align-self: stretch;
+  padding: 10px 14px; border-radius: 99px;
+  background: rgba(11, 15, 43, 0.6); border: 1px solid var(--line-2);
+  font-size: 12px; line-height: 1.35; color: var(--muted); text-align: left;
+}
+.walk-awake svg {
+  width: 17px; height: 17px; flex: none;
+  fill: none; stroke: var(--aqua); stroke-width: 1.8; stroke-linecap: round;
+}
+/* A refusal is not decoration. It gets the warning colour and the warning glyph, and
+   it replaces the reassurance rather than sitting next to it. */
+.walk-awake-warn { border-color: rgba(255, 158, 18, 0.4); color: var(--ember-core); }
+.walk-awake-warn svg { stroke: var(--ember); }
+
+.walk-kicker {
+  margin: 0; font-size: 11px; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--muted);
+}
+
+/* Centres in whatever room the controls leave. */
+.walk-main {
+  flex: 1; align-self: stretch; min-height: 0; padding: 10px 0;
+  display: flex; flex-direction: column; align-items: center;
+}
+.walk-aim { position: relative; display: grid; place-items: center; margin-top: 10px; }
+.walk-glow {
+  position: absolute; width: 300px; height: 300px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 158, 18, 0.26) 0%, rgba(255, 158, 18, 0.07) 44%, rgba(255, 158, 18, 0) 70%);
+}
+.walk-arrow { position: relative; width: 124px; height: 124px; }
+/* The rotation is applied to this group, never to the <svg>: rotating the element
+   rotates its box, and a square box loses its corners inside the viewBox at 45
+   degrees, so the point of the arrow gets sliced off at the angles it matters most. */
+.walk-arrow g { transition: transform 0.45s cubic-bezier(0.3, 0, 0.2, 1); }
+.walk-arrow-mark {
+  fill: var(--ember-core); stroke: var(--ember);
+  stroke-width: 3.5; stroke-linejoin: round;
+}
+/* No compass, no direction. It points up because it has to point somewhere, and it says
+   so by going hollow rather than by pretending. */
+.walk-arrow-lost .walk-arrow-mark { fill: rgba(255, 215, 122, 0.12); stroke: rgba(255, 158, 18, 0.45); }
+
+.walk-far {
+  margin: 4px 0 0; display: flex; align-items: baseline; justify-content: center; gap: 5px;
+  font-family: "Space Grotesk", monospace; line-height: 1;
+}
+.walk-far b {
+  font-size: 76px; font-weight: 500; letter-spacing: -0.02em;
+  color: var(--ember-core); text-shadow: 0 0 40px rgba(255, 158, 18, 0.4);
+}
+.walk-far i { font-size: 28px; font-style: normal; color: var(--ember); }
+
+.walk-turn {
+  margin: 13px 0 0; font-size: 12px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ember);
+}
+.walk-turn-flat { color: var(--muted); }
+.walk-compass {
+  margin-top: 12px; min-height: 44px; padding: 0 18px; border-radius: 12px;
+  font: inherit; font-size: 13px; cursor: pointer;
+  color: var(--cool); background: rgba(0, 255, 231, 0.08);
+  border: 1px solid rgba(0, 255, 231, 0.34);
+}
+
+.walk-card {
+  margin-top: 0; align-self: stretch; padding: 16px 18px; border-radius: 18px;
+  background: rgba(11, 15, 43, 0.66); border: 1px solid rgba(255, 158, 18, 0.26);
+}
+.walk-card-kick {
+  display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0;
+  font-size: 11px; font-weight: 500; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ember-core);
+}
+.walk-card-glyph svg {
+  display: block; width: 15px; height: 15px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.walk-card h2 { margin: 8px 0 0; font-size: 18px; font-weight: 500; line-height: 1.3; }
+.walk-card-note { margin: 9px 0 0; font-size: 12px; color: var(--muted); }
+
+.walk-progress {
+  margin-top: 16px; align-self: stretch; display: flex; align-items: center; gap: 12px;
+}
+.walk-bar {
+  flex-grow: 1; height: 5px; border-radius: 99px; overflow: hidden;
+  background: var(--line-2); display: block;
+}
+.walk-bar > span {
+  display: block; height: 100%; border-radius: 99px;
+  background: linear-gradient(90deg, var(--ember-deep), var(--ember-core));
+  transition: width 0.4s ease-out;
+}
+.walk-count { flex: none; font-size: 12px; color: var(--muted); }
+
+.walk-lock {
+  margin-top: 14px; align-self: stretch;
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  min-height: 48px; border-radius: 14px; cursor: pointer; font: inherit; font-size: 12px;
+  color: var(--muted); background: none; border: 1px dashed var(--line-2);
+}
+.walk-lock svg {
+  width: 16px; height: 16px; flex: none;
+  fill: none; stroke: currentColor; stroke-width: 1.8;
+}
+.walk-locked .walk-lock { border-style: solid; border-color: rgba(0, 255, 231, 0.3); color: var(--cool); }
+
+.walk-acts { margin-top: 10px; align-self: stretch; display: flex; gap: 10px; }
+.walk-map {
+  flex-grow: 1; display: flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 52px; border-radius: 15px; cursor: pointer; font: inherit; font-size: 15px;
+  color: var(--text); background: none; border: 1px solid var(--line-2);
+}
+.walk-map svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+.walk-end {
+  flex: none; min-height: 52px; padding: 0 22px; border-radius: 15px; cursor: pointer;
+  font: inherit; font-size: 15px; font-weight: 500; color: var(--cool);
+  background: rgba(0, 255, 231, 0.1); border: 1px solid rgba(0, 255, 231, 0.4);
+}
+
+/* Swallows the tap. It covers the lock button too, because a target a thigh can
+   reach is not locked; the double tap is what brings the controls back. */
+.walk-shield {
+  position: absolute; inset: 0; z-index: 2;
+  background: none; border: 0; cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .walk-arrow g, .walk-bar > span { transition: none; }
+}
+/* The card and the count are one thought, so they move as one under space-between. */
+.walk-foot { align-self: stretch; }
+/*
+   `margin: auto 0` rather than a justify rule on the parent, because the two blocks want
+   different things. The arrow and the number are the subject and belong where the eye
+   lands, so they take the free space evenly above and below; the card is reference and
+   belongs close to the controls that act on it. Centring both left a three-hundred pixel
+   hole between them, and space-between pinned them to opposite ends of the phone.
+*/
+.walk-head { align-self: stretch; margin: auto 0; }
+
+/* ── Nothing nearby ─────────────────────────────────────────────────────────────
+   The first impression for almost every listener, since the whole library is in
+   lower Manhattan. Cool throughout: nothing here is an echo, so nothing here glows
+   warm. The one warm thing on this screen would be a lie about what is in reach. */
+.nowhere {
+  /*
+     Under the map bar rather than over it (z-index 4 against its 18), so the journey chip
+     and the category chips stay on top and stay tappable. The map is where you change
+     what you are looking for; a full screen that buried it would leave nowhere to go from
+     the one screen whose entire job is to give you somewhere to go. The padding clears
+     them rather than the safe area alone.
+  */
+  position: absolute; left: 0; right: 0; top: 0; bottom: var(--nav-h); z-index: 4;
+  background: radial-gradient(120% 70% at 50% 16%, #141a3d 0%, #0d1230 50%, #080b1e 100%);
+  display: flex; flex-direction: column; align-items: center;
+  padding: calc(126px + env(safe-area-inset-top)) 26px 20px;
+  text-align: center; overflow: hidden;
+}
+
+.nowhere-main { margin: auto 0; }
+.nowhere-seek { width: 100%; max-width: 390px; height: 230px; flex: none; }
+.nowhere-grid { stroke: rgba(216, 220, 229, 0.05); stroke-width: 1; fill: none; }
+.nowhere-ring {
+  fill: none; stroke: rgba(0, 255, 231, 0.42); stroke-width: 1.4;
+  transform-origin: 195px 200px; animation: nowhere-seek 4.4s ease-out infinite;
+}
+.nowhere-ring-2 { animation-delay: -2.2s; }
+@keyframes nowhere-seek {
+  0%   { transform: scale(0.32); opacity: 0.6; }
+  100% { transform: scale(1.15); opacity: 0; }
+}
+/* How far it is actually looking, drawn to scale against nothing. */
+.nowhere-reach { fill: rgba(0, 255, 231, 0.05); stroke: rgba(0, 255, 231, 0.22); stroke-width: 1; }
+.nowhere-me { fill: var(--aqua); }
+
+.nowhere-say { margin-top: 6px; }
+.nowhere-say h1 {
+  margin: 0; font-size: 25px; font-weight: 600; line-height: 1.24; letter-spacing: -0.01em;
+}
+.nowhere-say p { margin: 13px 0 0; font-size: 15px; line-height: 1.6; color: var(--muted); }
+.nowhere-say b { color: var(--text); font-weight: 600; }
+
+.nowhere-acts {
+  align-self: stretch; display: flex; flex-direction: column; gap: 10px;
+}
+.nowhere-go {
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  min-height: 54px; border-radius: 16px; border: 0; cursor: pointer;
+  font: inherit; font-size: 16px; font-weight: 600; color: var(--btn-dark-ink);
+  background: var(--btn-dark);
+}
+.nowhere-go svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; }
+.nowhere-widen {
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  min-height: 50px; border-radius: 15px; cursor: pointer;
+  font: inherit; font-size: 15px; color: var(--text);
+  background: none; border: 1px solid var(--line-2);
+}
+.nowhere-widen svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+
+@media (prefers-reduced-motion: reduce) {
+  .nowhere-ring { animation: none; opacity: 0.35; }
+}
+
+/* ── Hearing it ─────────────────────────────────────────────────────────────────
+   The ribbon is warm because it IS the echo. Every control on this screen is cool
+   because you operate it. The design board drew the pause button ember, which puts
+   the loudest warm object on the screen on the one thing that is not an echo. */
+.hear {
+  position: absolute; inset: 0; z-index: 40;
+  background: linear-gradient(#101534 0%, #100e0a 42%, #07080c 100%);
+  display: flex; flex-direction: column;
+  padding-bottom: calc(var(--nav-h) + 6px);
+  overflow: hidden;
+}
+
+.hear-plate { position: absolute; left: 0; right: 0; top: 0; height: 300px; overflow: hidden; }
+.hear-plate img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* No plate cleared for this one. A warm field rather than a fake window: a fabricated
+   provenance sitting in a repository is the kind of thing that later gets believed. */
+.hear-noplate {
+  width: 100%; height: 100%;
+  background:
+    radial-gradient(70% 90% at 30% 20%, rgba(255, 158, 18, 0.22), transparent 62%),
+    radial-gradient(60% 80% at 78% 40%, rgba(123, 59, 255, 0.18), transparent 64%),
+    #12101c;
+}
+.hear-fade {
+  position: absolute; inset: 0;
+  background: linear-gradient(rgba(7, 8, 12, 0) 48%, #07080c 100%);
+}
+.hear-credit {
+  position: absolute; left: 18px; right: 18px; bottom: 12px; margin: 0;
+  font-size: 11px; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.72);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+.hear-back {
+  position: absolute; left: 14px; top: calc(48px + env(safe-area-inset-top));
+  width: 44px; height: 44px; border-radius: 50%; cursor: pointer;
+  display: grid; place-items: center; color: var(--white);
+  background: rgba(11, 15, 43, 0.5); border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(12px);
+}
+.hear-back svg {
+  width: 17px; height: 17px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+
+.hear-say { position: relative; margin-top: 312px; padding: 0 18px; flex: none; }
+.hear-kicker {
+  display: flex; align-items: center; gap: 10px; margin: 0;
+  font-size: 11px; font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
+}
+.hear-rarity { color: var(--ember-core); }
+.hear-say h1 { margin: 10px 0 0; font-size: 22px; font-weight: 500; line-height: 1.24; }
+
+.hear-track { position: relative; margin: auto 0; flex: none; }
+/* The whole band takes the drag, not a thin line inside it. `touch-action: none` because
+   a horizontal drag on a phone is a page gesture until something claims it, and a scrubber
+   that scrolls the page instead of seeking is a scrubber nobody uses twice. */
+/* The whole band, plus a strip above and below it, because a finger is 44px across and
+   the loud parts of a waveform are two. Measured: without the padding the thin sections
+   of the ribbon were a six pixel target. */
+.hear-hit {
+  display: block; padding: 10px 0; cursor: pointer; touch-action: none;
+}
+.hear-wave { display: block; width: 100%; height: 130px; }
+.hear-heard { fill: url(#ribHeard); }
+.hear-tocome { fill: rgba(255, 158, 18, 0.22); }
+.hear-head { stroke: var(--aqua); stroke-width: 2; stroke-linecap: round; }
+.hear-head-dot { fill: var(--aqua); }
+.hear-clock {
+  display: flex; justify-content: space-between; margin: 2px 0 0; padding: 0 18px;
+  font-size: 12px; color: var(--muted);
+}
+
+.hear-transport {
+  flex: none; display: flex; align-items: center; justify-content: center; gap: 26px;
+  margin-top: 8px;
+}
+.hear-transport button {
+  width: 48px; height: 48px; border-radius: 50%; border: 0; cursor: pointer;
+  background: none; color: var(--text); display: grid; place-items: center;
+}
+.hear-transport button svg {
+  width: 23px; height: 23px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round;
+}
+.hear-go {
+  width: 72px !important; height: 72px !important;
+  background: var(--btn-dark) !important;
+  color: var(--btn-dark-ink) !important; box-shadow: 0 0 40px rgba(0, 255, 231, 0.3);
+}
+.hear-go svg { width: 24px !important; height: 24px !important; fill: currentColor !important; stroke: none !important; }
+
+.hear-acts { flex: none; display: flex; gap: 9px; padding: 16px 18px 0; }
+.hear-acts button {
+  flex-grow: 1; display: flex; align-items: center; justify-content: center; gap: 7px;
+  min-height: 44px; border-radius: 13px; cursor: pointer; font: inherit; font-size: 14px;
+  color: var(--text); background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+.hear-acts button svg {
+  width: 15px; height: 15px; fill: none; stroke: currentColor;
+  stroke-width: 1.8; stroke-linejoin: round;
+}
+.hear-acts button.on { color: var(--cool); border-color: rgba(0, 255, 231, 0.4); }
+.hear-acts button.on svg { fill: currentColor; }
+/* Reading along, over the plate and the ribbon. It stops above the transport, because
+   somebody reading along is exactly the person most likely to want to pause or jump. */
+.hear-read {
+  /*
+     Opaque, not 96%. Four percent of a lit archive plate and a 22px title is plenty to
+     read through, and the ghost of the headline sitting behind the transcript made both
+     harder to read than either alone. A panel you can see through is only ever worth it
+     when what is behind it is dark and quiet, and this one covers the brightest thing on
+     the screen.
+  */
+  position: absolute; left: 0; right: 0; top: 0; bottom: 210px; z-index: 2;
+  background: #07080c; overflow-y: auto;
+  padding: calc(52px + env(safe-area-inset-top)) 4px 8px;
+}
+/* Above the transcript, so the way out of the screen does not disappear behind the words. */
+.hear-back { z-index: 3; }
+
+/* ── The city ───────────────────────────────────────────────────────────────────
+   Density is indigo, not ember, and that is the one place the colour law bends on
+   purpose. A hundred echoes painted ember is the whole warm screen the law exists
+   to prevent; the field here is a statement ABOUT the map, like a contour line,
+   and ember is spent only on the singular ones, as points. */
+.city {
+  position: absolute; inset: 0; z-index: 42;
+  background: radial-gradient(120% 80% at 50% 10%, #0c1230 0%, #080c22 55%, #05070f 100%);
+  overflow: hidden;
+}
+.city-map { position: absolute; inset: 0; width: 100%; height: 100%; }
+.city-tile { opacity: 0.5; }
+/* Additive, so overlapping blooms add up. Density is then what HAPPENS when several
+   echoes land together rather than a number somebody chose and drew. */
+.city-bloom { mix-blend-mode: screen; }
+.city-singular { fill: var(--ember-core); }
+.city-ping {
+  fill: none; stroke: var(--ember-core); stroke-width: 1.4;
+  transform-box: fill-box; transform-origin: center;
+  animation: city-ping 3.8s ease-out infinite;
+}
+@keyframes city-ping {
+  0%   { transform: scale(0.7); opacity: 0.85; }
+  100% { transform: scale(2.6); opacity: 0; }
+}
+.city-you-halo { fill: rgba(0, 255, 231, 0.1); }
+.city-you { fill: var(--aqua); stroke: #05070f; stroke-width: 3; }
+
+/* Type on a plate, because type over a glow is type you cannot read. */
+.city-plate {
+  position: absolute; transform: translateX(-50%); cursor: pointer;
+  min-height: 24px; padding: 4px 9px; border-radius: 7px; white-space: nowrap;
+  font-family: "Space Grotesk", monospace; font-size: 11px;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--cool); background: rgba(7, 8, 12, 0.78);
+  border: 1px solid var(--line); backdrop-filter: blur(6px);
+}
+.city-plate-rare { color: var(--ember-core); border-color: rgba(255, 158, 18, 0.45); }
+
+.city-head {
+  position: absolute; left: 14px; right: 14px; top: calc(48px + env(safe-area-inset-top));
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 14px 8px 8px; border-radius: 99px;
+  background: rgba(7, 8, 12, 0.8); border: 1px solid var(--line-2);
+  backdrop-filter: blur(14px);
+}
+.city-back {
+  width: 40px; height: 40px; flex: none; border-radius: 50%; cursor: pointer;
+  display: grid; place-items: center; color: var(--text);
+  background: none; border: 0;
+}
+.city-back svg {
+  width: 17px; height: 17px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.city-where { font-size: 14px; color: var(--text); }
+.city-count {
+  margin-left: auto; font-size: 11px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--ember);
+}
+
+.city-legend {
+  position: absolute; left: 14px; right: 14px; top: calc(104px + env(safe-area-inset-top));
+  display: flex; align-items: center; gap: 9px;
+  padding: 9px 13px; border-radius: 12px;
+  background: rgba(7, 8, 12, 0.72); border: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+}
+.city-ramp {
+  flex-grow: 1; height: 7px; border-radius: 99px;
+  background: linear-gradient(90deg, rgba(108, 99, 255, 0.22), rgba(155, 149, 255, 0.6), #c9c2ff);
+}
+.city-dot {
+  width: 9px; height: 9px; flex: none; border-radius: 50%;
+  background: var(--ember-core); box-shadow: 0 0 8px rgba(255, 158, 18, 0.9);
+  margin-left: 4px;
+}
+.city-worth { color: var(--ember-core); }
+
+.city-card {
+  position: absolute; left: 0; right: 0; bottom: var(--nav-h);
+  padding: 0 16px calc(16px + env(safe-area-inset-bottom));
+  background: rgba(7, 8, 12, 0.94); border-top: 1px solid var(--line-2);
+  border-radius: 22px 22px 0 0; backdrop-filter: blur(20px);
+}
+.city-card-kick {
+  margin: 0; padding-top: 16px; font-size: 11px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--muted);
+}
+.city-card-row { display: flex; align-items: center; gap: 11px; margin-top: 9px; }
+.city-card-text { flex-grow: 1; min-width: 0; }
+.city-card-text b { display: block; font-size: 17px; font-weight: 500; }
+.city-card-text span { display: block; margin-top: 3px; font-size: 12px; color: var(--muted); }
+.city-go {
+  flex: none; min-height: 46px; padding: 0 22px; border-radius: 14px; border: 0;
+  cursor: pointer; font: inherit; font-size: 15px; font-weight: 600; color: var(--btn-dark-ink);
+  background: var(--btn-dark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .city-ping { animation: none; opacity: 0.5; }
+}
+/* The archive plate on the echo card. The card shows you the place rather than
+   describing it, which is the best idea in the design and the reason to walk. */
+.pop-plate {
+  position: relative; margin: 10px 0 0; border-radius: 14px; overflow: hidden;
+  border: 1px solid var(--line-2); line-height: 0;
+}
+.pop-plate img { width: 100%; height: 132px; object-fit: cover; display: block; }
+.pop-plate span {
+  position: absolute; left: 9px; bottom: 8px; line-height: 1.2;
+  padding: 4px 8px; border-radius: 6px; font-size: 11px; letter-spacing: 0.1em;
+  text-transform: uppercase; background: rgba(0, 0, 0, 0.6);
+  /*
+     A literal #fff, not --white, and this is the same trap the contrast script warns
+     about: in the light scheme --white is redefined as near-black ink, so the caption
+     went black on a black scrim and vanished. The scrim is black in both schemes because
+     it sits on a sepia photograph, so the ink on it is white in both schemes too.
+  */
+  color: #fff;
+}
+.pop-rarity {
+  font-style: normal; margin-left: 2px; color: var(--ember-core);
+  letter-spacing: 0.12em; text-transform: uppercase;
+}
+.pop-reach {
+  margin: 10px 0 0; text-align: center; font-size: 12px;
+  letter-spacing: 0.08em; color: var(--muted);
+}
+/* The card's mark, when there is a photograph of the place to put on it. Square rather
+   than round, because a photograph in a circle is a photograph with its corners cut off,
+   and the corners of a street scene are where the street is. */
+.play-plate {
+  position: relative; width: 58px; height: 58px; border-radius: 12px;
+  overflow: hidden; background: var(--slate); box-shadow: none;
+  border: 1px solid rgba(255, 158, 18, 0.34);
+}
+.play-plate img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+}
+/* The glyph rides over the plate with its own shade under it, so a bright sky cannot
+   swallow it. */
+.play-plate svg {
+  position: relative; z-index: 1;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.9));
+}
+.play-plate i {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 1;
+  font-size: 11px; font-style: normal; letter-spacing: 0.1em; line-height: 1.45;
+  text-align: center; color: #fff; background: rgba(0, 0, 0, 0.5);
+}
+/* First run: three asks, each with its reason. Only the first is a system permission;
+   the third is a promise about the phone, which is why it is stated before the walk
+   rather than discovered at forty percent battery. */
+.onb-asks { display: flex; flex-direction: column; gap: 10px; }
+.onb-perm-need { border-color: rgba(0, 255, 231, 0.32); }
+.onb-ic-aqua { color: var(--aqua); background: rgba(0, 255, 231, 0.12); }
+.onb-ic-indigo { color: var(--indigo-soft); background: rgba(155, 149, 255, 0.12); }
+.onb-ic-ember { color: var(--ember-core); background: rgba(255, 158, 18, 0.12); }
+.onb-without {
+  margin: 14px 0 0; text-align: center; font-size: 11px;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+}
+/* A collection row carrying its archive plate. The glyph rides over it with a shade under
+   it, exactly as on the map card, so one echo looks like one echo wherever it appears. */
+.entry-plate { position: relative; overflow: hidden; border: 1px solid rgba(255, 158, 18, 0.28); }
+.entry-plate img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.entry-plate svg {
+  position: relative; z-index: 1;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.9));
+}
+.entry-plate i { z-index: 1; }
