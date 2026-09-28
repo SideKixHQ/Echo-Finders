@@ -22,6 +22,7 @@
 
 import { rarityOf, rarityReasons, type CaptureEvent, type Echo, type TravelMode } from "@echofinders/core";
 import { CATEGORY_ICON } from "./categories";
+import { platePng } from "./archive-plate";
 import type { PrivacySettings } from "@echofinders/core";
 import { holdsPersonalLocation } from "@echofinders/core";
 
@@ -192,10 +193,7 @@ export function Collection({
           {wishlist.map((echo) => (
             <article key={echo.id} className="entry entry-wish">
               <button className="entry-hit" onClick={() => onPlay(echo)}>
-                <div className={`entry-glyph cat-${echo.category}`} aria-hidden="true">
-                  <svg viewBox="0 0 24 24">{CATEGORY_ICON[echo.category]}</svg>
-                  <i>{clock(echo.durationS)}</i>
-                </div>
+                <Glyph echo={echo} playing={false} heard />
                 <div className="entry-text">
                   <h4>{echo.title}</h4>
                   <p>{echo.point.place}</p>
@@ -259,16 +257,13 @@ function Entry({
           it being on this screen; the category is the thing that makes a list of forty
           scannable.
         */}
-        <div className={`entry-glyph cat-${capture.echo.category}`} aria-hidden="true">
-          {playing || !heard ? (
-            <svg viewBox="0 0 24 24" className="entry-glyph-play">
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          ) : (
-            <svg viewBox="0 0 24 24">{CATEGORY_ICON[capture.echo.category]}</svg>
-          )}
-          <i>{clock(capture.echo.durationS)}</i>
-        </div>
+        {/*
+          The plate again, for the same reason the map card carries it: a record of where
+          you have been should look like the places, not like a list of grey tiles. The map
+          gained this and the collection did not, which put two different pictures of one
+          echo two taps apart.
+        */}
+        <Glyph echo={capture.echo} playing={playing} heard={heard} />
         <div className="entry-text">
           <h4>{capture.echo.title}</h4>
           <p>{capture.echo.point.place}</p>
@@ -284,6 +279,41 @@ function Entry({
         </div>
       </button>
     </article>
+  );
+}
+
+/**
+ * The thumbnail on a row: the archive plate where one exists, the category glyph where it
+ * does not, and a play triangle over either while it is playing or still unheard.
+ *
+ * The length stays on it in both cases, because "how long is this" is the question that
+ * decides whether to press play on a bus.
+ */
+function Glyph({
+  echo,
+  playing,
+  heard,
+}: {
+  echo: Echo;
+  playing: boolean;
+  heard: boolean;
+}) {
+  const photo = echo.archive?.[0];
+  return (
+    <div
+      className={photo ? `entry-glyph entry-plate` : `entry-glyph cat-${echo.category}`}
+      aria-hidden="true"
+    >
+      {photo && <img src={platePng(photo.imageKey, "then")} alt="" draggable={false} />}
+      {playing || !heard ? (
+        <svg viewBox="0 0 24 24" className="entry-glyph-play">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      ) : (
+        <svg viewBox="0 0 24 24">{CATEGORY_ICON[echo.category]}</svg>
+      )}
+      <i>{clock(echo.durationS)}</i>
+    </div>
   );
 }
 

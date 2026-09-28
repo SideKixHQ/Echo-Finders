@@ -451,7 +451,15 @@ body {
   width: 19px; height: 19px; fill: none; stroke: currentColor;
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
-.entry-glyph-play { fill: currentColor; stroke: none !important; }
+/*
+   `.entry-glyph svg` above sets `fill: none` and is one point more specific than this was,
+   so the fill never applied — and this rule kills the stroke. Fill none plus stroke none is
+   an invisible triangle, which is what every unheard row in the collection has been
+   showing: a plate with nothing on it. Rendering the plate behind it is what made the
+   absence obvious, because an empty grey square reads as a placeholder and an empty
+   photograph reads as a mistake.
+*/
+.entry-glyph .entry-glyph-play { fill: currentColor; stroke: none; }
 /* The length, on the plate, as the design puts it. */
 .entry-glyph i {
   position: absolute; right: 3px; bottom: 3px; padding: 1px 4px; border-radius: 4px;
@@ -3283,3 +3291,12 @@ body {
   margin: 14px 0 0; text-align: center; font-size: 11px;
   letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
 }
+/* A collection row carrying its archive plate. The glyph rides over it with a shade under
+   it, exactly as on the map card, so one echo looks like one echo wherever it appears. */
+.entry-plate { position: relative; overflow: hidden; border: 1px solid rgba(255, 158, 18, 0.28); }
+.entry-plate img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.entry-plate svg {
+  position: relative; z-index: 1;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.9));
+}
+.entry-plate i { z-index: 1; }
