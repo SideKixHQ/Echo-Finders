@@ -1904,9 +1904,18 @@ body {
 /* Only at full, where there is genuinely no map left to control. */
 .screen:has(.sheet-full) .rail { opacity: 0; pointer-events: none; }
 
-/* How the design handles a rising sheet: one button collapses to nothing rather
-   than the column wrapping into a second row over the map. */
-.screen:has(.sheet-half) .rail-pack {
+/* How the design handles a rising sheet: a button collapses to nothing rather than the
+   column wrapping into a second row over the map.
+
+   TWO of them now, because the column gained the city. The count is not cosmetic: the
+   column is anchored to the bottom and grows upward, so at the half detent a sixth fab put
+   the top one straight through the category chips, where it swallowed the taps meant for
+   them. A rendered walk found it by failing to click a chip.
+
+   The city is the one that goes, with the package. At half you are reading what is around
+   you here, which is the one moment "where else is there" can wait. */
+.screen:has(.sheet-half) .rail-pack,
+.screen:has(.sheet-half) .rail-city {
   height: 0; margin-top: -8px; border-width: 0; opacity: 0;
   pointer-events: none; overflow: hidden;
 }

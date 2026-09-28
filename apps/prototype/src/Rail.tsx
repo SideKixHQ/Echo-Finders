@@ -129,7 +129,7 @@ function RailInner({
         only exists here.
       */}
       {onCity && (
-        <button className="fab" onClick={onCity} aria-label="Where the echoes are">
+        <button className="fab rail-city" onClick={onCity} aria-label="Where the echoes are">
           {/* A globe: meridians and a waist, which reads at 20px where continents do not. */}
           <svg viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="8.5" />
