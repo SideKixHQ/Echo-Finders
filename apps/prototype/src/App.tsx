@@ -26,8 +26,9 @@ import { BrowserLocation } from "./browser-location";
 import { Rail } from "./Rail";
 import { MODE_ICON, MODE_PHRASE } from "./travel";
 import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
+import { Synced } from "./Synced";
 import type { Detent } from "./Sheet";
-import type { Echo, EchoCategory } from "@echofinders/core";
+import type { CaptureEvent, Echo, EchoCategory } from "@echofinders/core";
 import {
   checkEligibility,
   distanceKm,
@@ -338,6 +339,32 @@ export function App() {
     setCats(null);
     setOverview(false);
   };
+
+  /*
+   * The sync moment.
+   *
+   * An echo opening was a pin changing colour and a row appearing in a list, which is a
+   * report rather than an event, and it is the one thing this product does that nothing
+   * else does. It takes the screen now.
+   *
+   * Tracked by id rather than by list length, because captures can arrive together when
+   * two echoes overlap and a length comparison would miss the second. The seen-set starts
+   * populated from whatever was already captured at mount, so reopening the app does not
+   * replay a celebration for something you synced last week.
+   */
+  const [syncedNow, setSyncedNow] = useState<CaptureEvent | null>(null);
+  const seenCaptures = useRef<Set<string> | null>(null);
+  useEffect(() => {
+    if (seenCaptures.current === null) {
+      seenCaptures.current = new Set(state.captured.map((c) => c.echo.id));
+      return;
+    }
+    const fresh = state.captured.filter((c) => !seenCaptures.current!.has(c.echo.id));
+    if (fresh.length === 0) return;
+    for (const c of fresh) seenCaptures.current.add(c.echo.id);
+    // The last one is the one you are standing on.
+    setSyncedNow(fresh[fresh.length - 1]!);
+  }, [state.captured]);
 
   const nowPlaying = state.playback.kind === "idle" ? null : state.playback.item.echo;
 
@@ -1290,6 +1317,16 @@ export function App() {
           {LIBRARY.length} in the library
         </p>
       </aside>
+      {syncedNow && (
+        <Synced
+          event={syncedNow}
+          onListen={() => {
+            session.play(syncedNow.echo);
+            setSyncedNow(null);
+          }}
+          onLater={() => setSyncedNow(null)}
+        />
+      )}
     </div>
   );
 }
