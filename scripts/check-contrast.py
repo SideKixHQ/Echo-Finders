@@ -105,18 +105,21 @@ CATS = [k for k in DARK if k.startswith("--cat-")]
 # clear 3:1 against what is behind it or the control cannot be located, however legible
 # its label is.
 CONTROLS = [
-    ("button fill",  "--indigo-btn", ["--space", "--slate", "--charcoal"]),
+    # The primary button is aqua now, not indigo, and this check has to follow the app
+    # rather than the token that used to be the app. Checking a colour nothing is painted
+    # in is worse than not checking: it reports OK for a control that is not on screen.
+    ("button fill",  "--btn-flat",   ["--space", "--slate", "--charcoal"]),
     ("found pin",    "--ember",      ["--space"]),
     ("you, on map",  "--aqua",       ["--space"]),
 ]
 
 # Labels sitting on top of a filled control, which is a text check against the fill.
 #
-# The literal #fff is deliberate and has to stay literal. In the light scheme --white is
-# redefined as near-black ink, so reading the label colour from the token gives the wrong
-# answer twice over. The CSS writes `color: #fff` on these buttons, so the audit does too.
+# `--btn-ink` rather than a literal, because unlike the old white-on-indigo the ink is a
+# token and is the same in both schemes: a deep teal taken from the aqua itself, so the
+# button stays one colour rather than becoming one colour with a black label on it.
 ON_FILL = [
-    ("label on button", "#ffffff", "--indigo-btn"),
+    ("label on button", "--btn-ink", "--btn-flat"),
 ]
 
 def report(name, table):

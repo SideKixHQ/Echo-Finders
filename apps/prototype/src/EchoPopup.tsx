@@ -23,8 +23,9 @@
  * place, and standing there is what unlocks it.
  */
 
-import type { Echo, TravelMode } from "@echofinders/core";
+import { rarityOf, type Echo, type TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
+import { platePng } from "./archive-plate";
 import type { PinState } from "./RouteMap";
 
 export interface EchoPopupProps {
@@ -48,13 +49,18 @@ export interface EchoPopupProps {
 }
 
 /**
- * How close is close enough to sync.
+ * How close is close enough to sync — THE ECHO'S OWN ANSWER, not a constant.
  *
- * Matches the tracker's own arrival radius. It is here as a number rather than imported
- * because this is the *copy*, not the rule: the engine decides, and this only has to
- * describe the decision in a way that reads.
+ * This was a flat fifty metres with a comment arguing that the card is the copy rather
+ * than the rule and only has to describe the decision readably. The argument is fine and
+ * the number was wrong: the engine triggers on `triggerRadiusKm`, which is per echo and
+ * ranges from thirty metres to a hundred and fifty. So the card told somebody forty-five
+ * metres from a thirty metre doorway to hold still, and nothing happened.
+ *
+ * Writing the number on screen is what made it obvious. "Syncs when you are within 30 m"
+ * is a promise specific enough to be checked, which a vague one never was.
  */
-const REACH_M = 50;
+const reachM = (echo: Echo) => Math.round(echo.point.triggerRadiusKm * 1000);
 
 /** What being there means, per mode. */
 const ARRIVED: Record<TravelMode, string> = {
@@ -88,7 +94,10 @@ export function EchoPopup({
 }: EchoPopupProps) {
   const metres = distanceKm === null ? null : distanceKm * 1000;
   const synced = state === "captured" || state === "heard";
-  const withinReach = metres !== null && metres <= REACH_M;
+  const reach = reachM(echo);
+  const withinReach = metres !== null && metres <= reach;
+  const rarity = rarityOf(echo);
+  const photo = echo.archive?.[0];
 
   return (
     <div className="pop" role="dialog" aria-label={echo.title}>
@@ -101,7 +110,29 @@ export function EchoPopup({
       <span className={`pop-kicker cat-${echo.category}`}>
         <span className="pop-dot" />
         {CATEGORY_LABEL[echo.category]}
+        {/* The rarity, where the design has it. It is the thing that decides whether the
+            walk is worth taking, and it was only visible once you had already taken it. */}
+        {rarity !== "common" && <em className="pop-rarity">{rarity}</em>}
       </span>
+
+      {/*
+        The photograph, and it is the best idea in the whole design. The card does not
+        describe the place it sends you to, it SHOWS you the place — and because ours have
+        pasts, the picture is the archive plate rather than a street view. You are hunting
+        for the spot this photograph was taken from.
+
+        Absent when no plate has been cleared for this echo (ADR-0006), which is most of
+        them today. A card with a grey rectangle saying "no image" is a worse card than one
+        that never mentioned a picture.
+      */}
+      {photo && (
+        <div className="pop-plate">
+          <img src={platePng(photo.imageKey, "then")} alt="" draggable={false} />
+          <span className="mono">
+            {photo.year ? `Photographed here, ${photo.year}` : "Photographed here"}
+          </span>
+        </div>
+      )}
 
       <h3>{echo.title}</h3>
 
@@ -140,7 +171,21 @@ export function EchoPopup({
         a map answers a question nobody asked, and the second you have, it is the right
         object. Absent once the echo is yours, because there is nowhere left to walk.
       */}
-      {onAim && !synced && (
+      {/*
+        The rule, in a number, and only while it is still a rule you can act on. A person
+        deciding whether to cross a road wants to know how close is close enough, and "walk
+        to it" does not say.
+      */}
+      {!synced && !withinReach && (
+        <p className="pop-reach mono">Syncs when you are within {reach} m</p>
+      )}
+
+      {/*
+        Not while you are standing on it. The card said "You are here. Hold still and it
+        syncs" and then offered to take you there, which is the screen disagreeing with
+        itself in two adjacent sentences. There is nowhere to walk from here.
+      */}
+      {onAim && !synced && !withinReach && (
         <button
           className={aimed ? "pop-aim on" : "pop-aim"}
           onClick={() => onAim(echo)}

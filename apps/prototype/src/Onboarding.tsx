@@ -186,8 +186,15 @@ export function Onboarding({
               You have to be there. On foot you stand on the spot; driving, you go through
               it. Either way, being there is what syncs it.
             </Value>
+            {/*
+              NOT "listen with the screen off", which is what this said and which the wake
+              lock exists because it is not true: on iOS both the audio and the position fix
+              stop the moment the screen locks (ADR-0001). The first screen in the app was
+              making a promise the fourth screen has to walk back.
+            */}
             <Value icon={ICON.ear} title="Audio first">
-              Listen with the screen off. Read along if you would rather.
+              Two minute stories, in your ears while you look at the street. Read along if
+              you would rather.
             </Value>
             <Value icon={ICON.plane} title="Walking, driving or flying">
               On foot it finds what is around you. In the air it follows your flight.
@@ -478,31 +485,78 @@ export function Onboarding({
 
         {step === 5 && roaming && (
           <>
-            <h2>{located === "denied" ? "No location yet" : "One permission"}</h2>
+            {/*
+              "One permission" over three cards was the screen contradicting itself, and it
+              only became wrong when the other two asks arrived. The lead also restated the
+              first card word for word, which is what happens when a heading written for one
+              thing is left above three.
+            */}
+            <h2>{located === "denied" ? "No location yet" : "Three things before you set off"}</h2>
             <p className="onb-lead">
               {located === "denied"
                 ? `${LOCATION.ifRefused} You can grant it later from your browser's settings.`
-                : LOCATION.rationale}
+                : "One permission, one suggestion, and one thing the phone will do that you should hear about now rather than later."}
             </p>
+            {/*
+              THREE asks, not one, each with its reason attached, because a permission
+              prompt with no explanation is the single most common place a location app
+              loses people.
+
+              Only the first is a system permission. The second is advice and the third is a
+              PROMISE ABOUT THE PHONE, and it is here because of the platform limit rather
+              than because it is tidy: the screen has to stay awake for the walk to keep
+              tracking, and somebody who finds that out by looking at their battery at forty
+              percent has been misled. Saying it now costs a paragraph.
+            */}
             {located !== "denied" && (
-              <div className="onb-perm">
-                <span className="onb-perm-ic" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">{ICON.pin}</svg>
-                </span>
-                <div>
-                  <b>Only while you are using it</b>
-                  <small>
-                    Nothing is sent to us. Where you stood stays on your phone unless you
-                    turn that on in Privacy.
-                  </small>
+              <div className="onb-asks">
+                <div className="onb-perm onb-perm-need">
+                  <span className="onb-perm-ic onb-ic-aqua" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">{ICON.pin}</svg>
+                  </span>
+                  <div>
+                    <b>Your location, only while you are using it</b>
+                    <small>
+                      The whole thing is where you are standing. Nothing is sent to us, and
+                      where you stood stays on your phone unless you turn that on in Privacy.
+                    </small>
+                  </div>
+                </div>
+                <div className="onb-perm">
+                  <span className="onb-perm-ic onb-ic-indigo" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">{ICON.ear}</svg>
+                  </span>
+                  <div>
+                    <b>Headphones, ideally</b>
+                    <small>
+                      Echoes are placed in the street around you. On a speaker you lose the
+                      direction, which is most of how you find them.
+                    </small>
+                  </div>
+                </div>
+                <div className="onb-perm">
+                  <span className="onb-perm-ic onb-ic-ember" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <rect x="6" y="2.5" width="12" height="19" rx="3" />
+                      <path d="M10 18.5h4" />
+                    </svg>
+                  </span>
+                  <div>
+                    <b>The screen stays on while you walk</b>
+                    <small>
+                      It has to, or the phone stops listening for where you are. Walk mode
+                      goes nearly black to spend as little battery on it as possible.
+                    </small>
+                  </div>
                 </div>
               </div>
             )}
             {located === null ? (
               <>
                 <button className="onb-go" onClick={() => void askThenNext()} disabled={asking}>
-                  {asking ? "Waiting for your answer…" : "Allow location"}
+                  {asking ? "Waiting for your answer…" : "Allow and start"}
                 </button>
+                <p className="onb-without mono">You can browse the map without any of this</p>
                 {/* Never disabled, even while asking. It is the way out of a prompt that
                     does not come back, and a screen with no way out is a trap. */}
                 <button className="onb-alt" onClick={finish}>

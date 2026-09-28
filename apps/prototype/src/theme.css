@@ -38,6 +38,34 @@
    * against a light one, so it clears both bars in both schemes.
    */
   --indigo-btn: #6358ff;
+  /*
+     THE PRIMARY BUTTON, and it is aqua now.
+
+     `--indigo-btn` was the app's primary everywhere, and every screen designed since is
+     aqua, because the colour law is "aqua is the interface, ember is the echo" and a
+     button is the interface. Two primaries in one app is the blend that got noticed: the
+     sync moment offered an aqua Listen now, and the card behind it offered an indigo Take
+     me there, for the same product doing the same kind of thing.
+
+     Dark ink on it rather than white. White on #00FFE7 is 1.4:1 and unreadable; #042B28 is
+     a deep teal taken from the aqua itself, which keeps the button one colour rather than
+     one colour with a black label on it.
+  */
+  --btn: linear-gradient(140deg, #7dfff2, #00ffe7);
+  --btn-flat: #00ffe7;
+  --btn-ink: #042b28;
+  /*
+     The same button, for the screens that are dark whatever the theme.
+     
+     Walk mode, the sync moment, hearing it, the city and nothing-nearby all paint their
+     own near-black ground on purpose — an OLED held awake for a whole walk, one lit
+     object on a dark screen. A light theme does not repaint them, so they must not take a
+     light theme's button either: `var(--aqua)` flips to a deep teal in the light scheme
+     and would have put a dark button on a black screen. Defined once, outside both
+     schemes, so it cannot.
+  */
+  --btn-dark: linear-gradient(140deg, #7dfff2, #00ffe7);
+  --btn-dark-ink: #042b28;
 
   /* ── Category colours ──────────────────────────────────────
      Lifted from the design prototype's CATS table rather than invented, so a dot on a chip
@@ -110,6 +138,20 @@
    * both grounds.
    */
   --indigo-btn: #5147db;
+  /*
+   * The primary button, light scheme, and the 1.4.11 check is what forced it to exist.
+   *
+   * #00FFE7 on white is 1.28:1. The button was not low contrast, it was invisible — a
+   * bright aqua lozenge on a white card that a person would have to already know was
+   * there. The light scheme's --aqua is already a deep teal for exactly this reason, so
+   * the button takes the same family and goes darker still, with white ink on it.
+   *
+   * Which is the whole argument for a per-scheme token, again: one hex cannot be correct
+   * on both grounds.
+   */
+  --btn: linear-gradient(140deg, #00857c, #00635c);
+  --btn-flat: #00635c;
+  --btn-ink: #ffffff;
   --gold: #7a5a15;
   --line: rgba(11, 15, 43, 0.14);
   --line-2: rgba(11, 15, 43, 0.24);
@@ -330,7 +372,7 @@ body {
 .playing-top { display: flex; gap: 12px; align-items: center; }
 .playing-orb {
   width: 46px; height: 46px; flex: none; border: 0; border-radius: 50%;
-  background: var(--indigo-btn); color: #fff; display: grid; place-items: center;
+  background: var(--btn); color: var(--btn-ink); display: grid; place-items: center;
   cursor: pointer; box-shadow: 0 0 22px rgba(81, 71, 219, 0.5);
 }
 /* 19px, the design's. It was 17, which is the sort of two pixels nobody can name and
@@ -699,7 +741,7 @@ body {
   stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
 }
 .act .act-fill { fill: currentColor; stroke: none; }
-.act-pri { background: var(--indigo-btn); border-color: var(--indigo-btn); color: #fff; }
+.act-pri { background: var(--btn); border-color: var(--btn-flat); color: var(--btn-ink); }
 .act-pri:disabled { background: transparent; border-color: var(--line); color: var(--muted); cursor: default; }
 .act-on { background: rgba(255, 158, 18, 0.14); border-color: rgba(255, 158, 18, 0.55); color: var(--ember); }
 .act-icon { padding: 7px; }
@@ -1049,7 +1091,7 @@ body {
 .arr-pri {
   flex: 1; padding: 14px; border-radius: 99px; cursor: pointer; font: inherit;
   font-size: 13px; font-weight: 600;
-  background: var(--indigo-btn); border: 0; color: #fff;
+  background: var(--btn); border: 0; color: var(--btn-ink);
 }
 .arr-ghost {
   flex: none; padding: 14px 22px; border-radius: 99px; cursor: pointer; font: inherit;
@@ -1087,7 +1129,7 @@ body {
 .pf-go {
   width: 100%; padding: 15px; border-radius: 99px; cursor: pointer; font: inherit;
   font-size: 14px; font-weight: 600;
-  background: var(--indigo-btn); border: 0; color: #fff;
+  background: var(--btn); border: 0; color: var(--btn-ink);
 }
 .pf-go:hover { filter: brightness(1.1); }
 
@@ -1953,7 +1995,7 @@ body {
 
 .onb-go {
   width: 100%; padding: 14px; border-radius: 14px; border: 0; cursor: pointer; font: inherit;
-  background: var(--indigo-btn); color: #fff; font-size: 13.5px; font-weight: 500;
+  background: var(--btn); color: var(--btn-ink); font-size: 13.5px; font-weight: 500;
 }
 .onb-go:disabled { opacity: 0.6; cursor: default; }
 .onb-alt {
@@ -2145,6 +2187,18 @@ body {
 .pop {
   position: absolute; left: 14px; right: 14px; z-index: 26;
   bottom: calc(var(--nav-h) + var(--sheet-h) + 10px);
+  /*
+     Bounded, and it scrolls. The card is anchored at the bottom and grows upwards, so
+     adding the archive photograph pushed its own close button off the top of the screen on
+     an echo with a long title — a card with no way to shut it. Found by the spec audit
+     refusing to click something that was "visible, enabled and stable" and outside the
+     viewport, which is the most useful kind of test failure there is.
+
+     The ceiling leaves the map bar and a strip of map showing, because the card is about
+     a pin and covering the pin entirely would make it a modal rather than a callout.
+  */
+  max-height: calc(100% - var(--nav-h) - var(--sheet-h) - 150px);
+  overflow-y: auto; overscroll-behavior: contain;
   padding: 13px 14px 12px; border-radius: 16px;
   background: rgba(var(--rgb-panel), 0.96); border: 1px solid var(--line-2);
   box-shadow: 0 12px 34px rgba(0, 0, 0, 0.5);
@@ -2160,10 +2214,18 @@ body {
 }
 
 /* Its own corner, clear of the title, and a real target rather than a glyph. */
+/*
+   Sticky and floated, so scrolling the card never scrolls away the way out of it.
+
+   It was absolutely positioned, which inside a scrolling box means it scrolls with the
+   content: once the card could overflow, the close button could be pushed out of reach.
+   Floated it stays in flow, which is what sticky needs, and the kicker wraps beside it.
+*/
 .pop-close {
-  position: absolute; top: 8px; right: 8px; width: 30px; height: 30px;
+  position: sticky; top: 0; float: right; z-index: 2;
+  width: 30px; height: 30px; margin: -4px -4px 0 6px;
   display: grid; place-items: center; border: 0; border-radius: 9px;
-  background: transparent; color: var(--muted); cursor: pointer;
+  background: rgba(var(--rgb-panel), 0.9); color: var(--muted); cursor: pointer;
 }
 .pop-close svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; }
 .pop-close:hover { color: var(--white); background: rgba(var(--rgb-hair), 0.1); }
@@ -2200,8 +2262,8 @@ body {
   margin-top: 11px; width: 100%; min-height: 40px;
   display: flex; align-items: center; justify-content: center; gap: 7px;
   border: 0; border-radius: 99px; cursor: pointer; font: inherit;
-  font-size: 12.5px; font-weight: 600; color: #fff;
-  background: var(--indigo-btn);
+  font-size: 12.5px; font-weight: 600; color: var(--btn-ink);
+  background: var(--btn);
 }
 .pop-go svg { width: 14px; height: 14px; fill: currentColor; }
 .pop-go:hover { filter: brightness(1.1); }
@@ -2387,8 +2449,8 @@ body {
   margin-top: 11px; width: 100%; min-height: 40px;
   display: flex; align-items: center; justify-content: center; gap: 7px;
   border: 0; border-radius: 99px; cursor: pointer; font: inherit;
-  font-size: 12.5px; font-weight: 600; color: #fff;
-  background: var(--indigo-btn);
+  font-size: 12.5px; font-weight: 600; color: var(--btn-ink);
+  background: var(--btn);
 }
 .pop-aim svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
 .pop-aim:hover { filter: brightness(1.1); }
@@ -2691,8 +2753,8 @@ body {
 .synced-listen {
   display: flex; align-items: center; justify-content: center; gap: 9px;
   min-height: 54px; border-radius: 16px; border: 0; cursor: pointer;
-  font: inherit; font-size: 15px; font-weight: 600; color: #042b28;
-  background: linear-gradient(140deg, #7dfff2, var(--aqua));
+  font: inherit; font-size: 15px; font-weight: 600; color: var(--btn-dark-ink);
+  background: var(--btn-dark);
   box-shadow: 0 0 36px rgba(0, 255, 231, 0.28);
 }
 .synced-listen svg { width: 16px; height: 16px; fill: currentColor; }
@@ -2909,8 +2971,8 @@ body {
 .nowhere-go {
   display: flex; align-items: center; justify-content: center; gap: 9px;
   min-height: 54px; border-radius: 16px; border: 0; cursor: pointer;
-  font: inherit; font-size: 16px; font-weight: 600; color: #042b28;
-  background: linear-gradient(140deg, #7dfff2, var(--aqua));
+  font: inherit; font-size: 16px; font-weight: 600; color: var(--btn-dark-ink);
+  background: var(--btn-dark);
 }
 .nowhere-go svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; }
 .nowhere-widen {
@@ -3013,8 +3075,8 @@ body {
 }
 .hear-go {
   width: 72px !important; height: 72px !important;
-  background: linear-gradient(140deg, #7dfff2, var(--aqua)) !important;
-  color: #042b28 !important; box-shadow: 0 0 40px rgba(0, 255, 231, 0.3);
+  background: var(--btn-dark) !important;
+  color: var(--btn-dark-ink) !important; box-shadow: 0 0 40px rgba(0, 255, 231, 0.3);
 }
 .hear-go svg { width: 24px !important; height: 24px !important; fill: currentColor !important; stroke: none !important; }
 
@@ -3144,10 +3206,71 @@ body {
 .city-card-text span { display: block; margin-top: 3px; font-size: 12px; color: var(--muted); }
 .city-go {
   flex: none; min-height: 46px; padding: 0 22px; border-radius: 14px; border: 0;
-  cursor: pointer; font: inherit; font-size: 15px; font-weight: 600; color: #042b28;
-  background: linear-gradient(140deg, #7dfff2, var(--aqua));
+  cursor: pointer; font: inherit; font-size: 15px; font-weight: 600; color: var(--btn-dark-ink);
+  background: var(--btn-dark);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .city-ping { animation: none; opacity: 0.5; }
+}
+/* The archive plate on the echo card. The card shows you the place rather than
+   describing it, which is the best idea in the design and the reason to walk. */
+.pop-plate {
+  position: relative; margin: 10px 0 0; border-radius: 14px; overflow: hidden;
+  border: 1px solid var(--line-2); line-height: 0;
+}
+.pop-plate img { width: 100%; height: 132px; object-fit: cover; display: block; }
+.pop-plate span {
+  position: absolute; left: 9px; bottom: 8px; line-height: 1.2;
+  padding: 4px 8px; border-radius: 6px; font-size: 11px; letter-spacing: 0.1em;
+  text-transform: uppercase; background: rgba(0, 0, 0, 0.6);
+  /*
+     A literal #fff, not --white, and this is the same trap the contrast script warns
+     about: in the light scheme --white is redefined as near-black ink, so the caption
+     went black on a black scrim and vanished. The scrim is black in both schemes because
+     it sits on a sepia photograph, so the ink on it is white in both schemes too.
+  */
+  color: #fff;
+}
+.pop-rarity {
+  font-style: normal; margin-left: 2px; color: var(--ember-core);
+  letter-spacing: 0.12em; text-transform: uppercase;
+}
+.pop-reach {
+  margin: 10px 0 0; text-align: center; font-size: 12px;
+  letter-spacing: 0.08em; color: var(--muted);
+}
+/* The card's mark, when there is a photograph of the place to put on it. Square rather
+   than round, because a photograph in a circle is a photograph with its corners cut off,
+   and the corners of a street scene are where the street is. */
+.play-plate {
+  position: relative; width: 58px; height: 58px; border-radius: 12px;
+  overflow: hidden; background: var(--slate); box-shadow: none;
+  border: 1px solid rgba(255, 158, 18, 0.34);
+}
+.play-plate img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+}
+/* The glyph rides over the plate with its own shade under it, so a bright sky cannot
+   swallow it. */
+.play-plate svg {
+  position: relative; z-index: 1;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.9));
+}
+.play-plate i {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 1;
+  font-size: 11px; font-style: normal; letter-spacing: 0.1em; line-height: 1.45;
+  text-align: center; color: #fff; background: rgba(0, 0, 0, 0.5);
+}
+/* First run: three asks, each with its reason. Only the first is a system permission;
+   the third is a promise about the phone, which is why it is stated before the walk
+   rather than discovered at forty percent battery. */
+.onb-asks { display: flex; flex-direction: column; gap: 10px; }
+.onb-perm-need { border-color: rgba(0, 255, 231, 0.32); }
+.onb-ic-aqua { color: var(--aqua); background: rgba(0, 255, 231, 0.12); }
+.onb-ic-indigo { color: var(--indigo-soft); background: rgba(155, 149, 255, 0.12); }
+.onb-ic-ember { color: var(--ember-core); background: rgba(255, 158, 18, 0.12); }
+.onb-without {
+  margin: 14px 0 0; text-align: center; font-size: 11px;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
 }
