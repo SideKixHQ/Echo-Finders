@@ -2699,3 +2699,156 @@ body {
   /* Still legible as a finished state rather than a half-played animation. */
   .synced-ring { opacity: 0.3; transform: scale(0.8); }
 }
+
+/* ── Walk mode ──────────────────────────────────────────────────────────────────
+   Near black on purpose: this screen is held awake for the length of a walk, and on
+   an OLED a black pixel costs almost nothing. One lit object, which is the echo
+   pulling. Everything else is as dim as the contrast floor allows. */
+.walk {
+  position: fixed; inset: 0; z-index: 55;
+  background: radial-gradient(70% 42% at 50% 38%, #16110a 0%, #08080e 58%, #04050a 100%);
+  display: flex; flex-direction: column; align-items: center;
+  padding: calc(14px + env(safe-area-inset-top)) 22px calc(18px + env(safe-area-inset-bottom));
+  text-align: center; overflow: hidden;
+}
+
+.walk-awake {
+  display: flex; align-items: center; gap: 9px; margin: 0; align-self: stretch;
+  padding: 10px 14px; border-radius: 99px;
+  background: rgba(11, 15, 43, 0.6); border: 1px solid var(--line-2);
+  font-size: 12px; line-height: 1.35; color: var(--muted); text-align: left;
+}
+.walk-awake svg {
+  width: 17px; height: 17px; flex: none;
+  fill: none; stroke: var(--aqua); stroke-width: 1.8; stroke-linecap: round;
+}
+/* A refusal is not decoration. It gets the warning colour and the warning glyph, and
+   it replaces the reassurance rather than sitting next to it. */
+.walk-awake-warn { border-color: rgba(255, 158, 18, 0.4); color: var(--ember-core); }
+.walk-awake-warn svg { stroke: var(--ember); }
+
+.walk-kicker {
+  margin: 0; font-size: 11px; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--muted);
+}
+
+/* Centres in whatever room the controls leave. */
+.walk-main {
+  flex: 1; align-self: stretch; min-height: 0; padding: 10px 0;
+  display: flex; flex-direction: column; align-items: center;
+}
+.walk-aim { position: relative; display: grid; place-items: center; margin-top: 10px; }
+.walk-glow {
+  position: absolute; width: 300px; height: 300px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 158, 18, 0.26) 0%, rgba(255, 158, 18, 0.07) 44%, rgba(255, 158, 18, 0) 70%);
+}
+.walk-arrow { position: relative; width: 124px; height: 124px; }
+/* The rotation is applied to this group, never to the <svg>: rotating the element
+   rotates its box, and a square box loses its corners inside the viewBox at 45
+   degrees, so the point of the arrow gets sliced off at the angles it matters most. */
+.walk-arrow g { transition: transform 0.45s cubic-bezier(0.3, 0, 0.2, 1); }
+.walk-arrow-mark {
+  fill: var(--ember-core); stroke: var(--ember);
+  stroke-width: 3.5; stroke-linejoin: round;
+}
+/* No compass, no direction. It points up because it has to point somewhere, and it says
+   so by going hollow rather than by pretending. */
+.walk-arrow-lost .walk-arrow-mark { fill: rgba(255, 215, 122, 0.12); stroke: rgba(255, 158, 18, 0.45); }
+
+.walk-far {
+  margin: 4px 0 0; display: flex; align-items: baseline; justify-content: center; gap: 5px;
+  font-family: "Space Grotesk", monospace; line-height: 1;
+}
+.walk-far b {
+  font-size: 76px; font-weight: 500; letter-spacing: -0.02em;
+  color: var(--ember-core); text-shadow: 0 0 40px rgba(255, 158, 18, 0.4);
+}
+.walk-far i { font-size: 28px; font-style: normal; color: var(--ember); }
+
+.walk-turn {
+  margin: 13px 0 0; font-size: 12px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ember);
+}
+.walk-turn-flat { color: var(--muted); }
+.walk-compass {
+  margin-top: 12px; min-height: 44px; padding: 0 18px; border-radius: 12px;
+  font: inherit; font-size: 13px; cursor: pointer;
+  color: var(--cool); background: rgba(0, 255, 231, 0.08);
+  border: 1px solid rgba(0, 255, 231, 0.34);
+}
+
+.walk-card {
+  margin-top: 0; align-self: stretch; padding: 16px 18px; border-radius: 18px;
+  background: rgba(11, 15, 43, 0.66); border: 1px solid rgba(255, 158, 18, 0.26);
+}
+.walk-card-kick {
+  display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0;
+  font-size: 11px; font-weight: 500; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ember-core);
+}
+.walk-card-glyph svg {
+  display: block; width: 15px; height: 15px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.walk-card h2 { margin: 8px 0 0; font-size: 18px; font-weight: 500; line-height: 1.3; }
+.walk-card-note { margin: 9px 0 0; font-size: 12px; color: var(--muted); }
+
+.walk-progress {
+  margin-top: 16px; align-self: stretch; display: flex; align-items: center; gap: 12px;
+}
+.walk-bar {
+  flex-grow: 1; height: 5px; border-radius: 99px; overflow: hidden;
+  background: var(--line-2); display: block;
+}
+.walk-bar > span {
+  display: block; height: 100%; border-radius: 99px;
+  background: linear-gradient(90deg, var(--ember-deep), var(--ember-core));
+  transition: width 0.4s ease-out;
+}
+.walk-count { flex: none; font-size: 12px; color: var(--muted); }
+
+.walk-lock {
+  margin-top: 14px; align-self: stretch;
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  min-height: 48px; border-radius: 14px; cursor: pointer; font: inherit; font-size: 12px;
+  color: var(--muted); background: none; border: 1px dashed var(--line-2);
+}
+.walk-lock svg {
+  width: 16px; height: 16px; flex: none;
+  fill: none; stroke: currentColor; stroke-width: 1.8;
+}
+.walk-locked .walk-lock { border-style: solid; border-color: rgba(0, 255, 231, 0.3); color: var(--cool); }
+
+.walk-acts { margin-top: 10px; align-self: stretch; display: flex; gap: 10px; }
+.walk-map {
+  flex-grow: 1; display: flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 52px; border-radius: 15px; cursor: pointer; font: inherit; font-size: 15px;
+  color: var(--text); background: none; border: 1px solid var(--line-2);
+}
+.walk-map svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+.walk-end {
+  flex: none; min-height: 52px; padding: 0 22px; border-radius: 15px; cursor: pointer;
+  font: inherit; font-size: 15px; font-weight: 500; color: var(--cool);
+  background: rgba(0, 255, 231, 0.1); border: 1px solid rgba(0, 255, 231, 0.4);
+}
+
+/* Swallows the tap. It covers the lock button too, because a target a thigh can
+   reach is not locked; the double tap is what brings the controls back. */
+.walk-shield {
+  position: absolute; inset: 0; z-index: 2;
+  background: none; border: 0; cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .walk-arrow g, .walk-bar > span { transition: none; }
+}
+/* The card and the count are one thought, so they move as one under space-between. */
+.walk-foot { align-self: stretch; }
+/*
+   `margin: auto 0` rather than a justify rule on the parent, because the two blocks want
+   different things. The arrow and the number are the subject and belong where the eye
+   lands, so they take the free space evenly above and below; the card is reference and
+   belongs close to the controls that act on it. Centring both left a three-hundred pixel
+   hole between them, and space-between pinned them to opposite ends of the phone.
+*/
+.walk-head { align-self: stretch; margin: auto 0; }

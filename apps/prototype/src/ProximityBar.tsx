@@ -44,7 +44,16 @@ export function ProximityBar({ guidance, cue }: Props) {
       />
       <div className="proximity-label">
         <span className="proximity-kind">{labelFor(cue.kind)}</span>
-        <span className="proximity-distance">{coarseDistance(metres)}</span>
+        {/*
+          Arrival says nothing about distance, and that is a correction rather than a
+          tidy-up. Some echoes reach a hundred and fifty metres, so you can be inside the
+          radius and still a hundred metres from the spot — both facts true, and the bar
+          read "You're here · about 100m", which is a screen arguing with itself. Once you
+          have arrived the distance has stopped being the question.
+        */}
+        {cue.kind !== "arrived" && (
+          <span className="proximity-distance">{coarseDistance(metres)}</span>
+        )}
       </div>
     </div>
   );

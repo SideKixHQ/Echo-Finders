@@ -27,6 +27,12 @@
 
 import { memo } from "react";
 
+/**
+ * The three screens a walker can be on: what is around you, the street map, and the walk
+ * itself. Named here because the Rail and App both have to agree on it.
+ */
+export type WalkingView = "rose" | "map" | "walk";
+
 export interface RailProps {
   readonly theme: "dark" | "light";
   readonly onTheme: (theme: "dark" | "light") => void;
@@ -46,8 +52,16 @@ export interface RailProps {
    * Absent on every other mode, because a driver wants the road and a passenger wants the
    * route, and neither has a head they can usefully turn.
    */
-  readonly roseView?: "rose" | "map";
-  readonly onRoseView?: (view: "rose" | "map") => void;
+  readonly roseView?: WalkingView;
+  /**
+   * What leaving the map goes back to, in the listener's words.
+   *
+   * Passed in rather than decided here, because the answer depends on whether a walk is
+   * in progress and only App knows that. Hardcoded to "Back to your walk" it promised a
+   * walk to everyone who had never started one.
+   */
+  readonly roseBackLabel?: string;
+  readonly onRoseView?: () => void;
 }
 
 function RailInner({
@@ -60,6 +74,7 @@ function RailInner({
   onDownload,
   downloaded,
   roseView,
+  roseBackLabel,
   onRoseView,
 }: RailProps) {
   return (
@@ -106,18 +121,29 @@ function RailInner({
       {roseView && onRoseView && (
         <button
           className="fab"
-          onClick={() => onRoseView(roseView === "rose" ? "map" : "rose")}
+          /*
+            A plain toggle, because the way BACK is not always the way you came. Walk mode
+            sends you to the street map with a destination on it, and the button that
+            leaves the map should hand you back the walk rather than the survey you were
+            doing before you picked one. Only App knows which, so App decides and this
+            only says which direction it is going.
+          */
+          onClick={onRoseView}
           aria-pressed={roseView === "map"}
-          aria-label={roseView === "rose" ? "Show the street map" : "Back to what is around you"}
+          aria-label={
+            roseView === "map"
+              ? (roseBackLabel ?? "Back to what is around you")
+              : "Show the street map"
+          }
         >
-          {roseView === "rose" ? (
-            <svg viewBox="0 0 24 24">
-              <path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3-6-3zM9 3v15M15 6v15" />
-            </svg>
-          ) : (
+          {roseView === "map" ? (
             <svg viewBox="0 0 24 24">
               <circle cx="12" cy="12" r="8.5" />
               <path d="M12 12l4-7-7 4z" />
+            </svg>
+          ) : (
+            <svg viewBox="0 0 24 24">
+              <path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3-6-3zM9 3v15M15 6v15" />
             </svg>
           )}
         </button>

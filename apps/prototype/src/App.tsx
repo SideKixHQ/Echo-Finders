@@ -23,13 +23,15 @@ import { Viewfinder } from "./Viewfinder";
 import { Onboarding } from "./Onboarding";
 import { loadRatings, setRating, type Rating } from "./ratings";
 import { BrowserLocation } from "./browser-location";
-import { Rail } from "./Rail";
+import { Rail, type WalkingView } from "./Rail";
 import { MODE_ICON, MODE_PHRASE } from "./travel";
 import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
 import { Synced } from "./Synced";
+import { Walk } from "./Walk";
 import type { Detent } from "./Sheet";
 import type { CaptureEvent, Echo, EchoCategory } from "@echofinders/core";
 import {
+  bearingDeg as bearingTo,
   checkEligibility,
   distanceKm,
   effectiveRadiusKm,
@@ -84,7 +86,7 @@ export function App() {
    * tap away rather than gone. Every other mode goes straight to the map: a driver wants the
    * road and a passenger wants the route.
    */
-  const [walkingView, setWalkingView] = useState<"rose" | "map">("rose");
+  const [walkingView, setWalkingView] = useState<WalkingView>("rose");
   /** The street humming. Off until somebody asks for it, because it is audio. */
   const [humming, setHumming] = useState(false);
   /**
@@ -355,6 +357,20 @@ export function App() {
   const [syncedNow, setSyncedNow] = useState<CaptureEvent | null>(null);
   const seenCaptures = useRef<Set<string> | null>(null);
   useEffect(() => {
+    /*
+     * NOT WHILE ONBOARDING, and this one was found by running the app rather than reading
+     * it. The session starts on a demo route the moment the app mounts, and the simulated
+     * journey sets off from Battery Park and promptly syncs Castle Clinton — behind the
+     * onboarding, which covers the screen. Close onboarding and you were handed a
+     * full-screen celebration of an echo you had not walked a step towards, over the top
+     * of the first thing you were ever meant to see.
+     *
+     * Holding the set at null until then is the fix rather than an extra flag, because it
+     * is the same mechanism that stops last week's collection replaying: when onboarding
+     * ends, whatever the simulation collected in the meantime is already-seen history, and
+     * only what happens after counts as a moment.
+     */
+    if (!onboarded) return;
     if (seenCaptures.current === null) {
       seenCaptures.current = new Set(state.captured.map((c) => c.echo.id));
       return;
@@ -364,7 +380,7 @@ export function App() {
     for (const c of fresh) seenCaptures.current.add(c.echo.id);
     // The last one is the one you are standing on.
     setSyncedNow(fresh[fresh.length - 1]!);
-  }, [state.captured]);
+  }, [state.captured, onboarded]);
 
   const nowPlaying = state.playback.kind === "idle" ? null : state.playback.item.echo;
 
@@ -395,7 +411,17 @@ export function App() {
   }, [nowPlaying, session]);
 
   const pageVisible = usePageVisible();
-  const awake = screenAwake({ walking: humming, playing, visible: pageVisible, allowed: true });
+  /*
+   * Walk mode counts as walking, and that is not a detail.
+   *
+   * `humming` was the only signal, on the reasoning that switching the street hum on is
+   * somebody saying out loud that they are out with headphones in. True, and incomplete:
+   * pressing "Take me there" and holding walk mode open is the same statement made more
+   * plainly, and a listener who never turns the hum on was getting a phone that dimmed
+   * halfway to the echo — which is the exact failure the wake lock was added for.
+   */
+  const walkingNow = humming || (walkingView === "walk" && beacon !== null);
+  const awake = screenAwake({ walking: walkingNow, playing, visible: pageVisible, allowed: true });
   const wake = useScreenAwake(awake);
   /*
    * Stopped is not paused, and the transport has to say which.
@@ -721,6 +747,32 @@ export function App() {
     [nearby, stateOf],
   );
 
+  /**
+   * What walk mode is pointing at.
+   *
+   * `around` first, because the engine already measured the bearing and the distance for
+   * everything in range, and two answers to one question is how a screen stops meaning
+   * anything. The fallback matters though: the beacon can be set from a map pin, and the
+   * map draws the whole corridor rather than only what is within reach, so somebody can
+   * perfectly well be walking to something a mile off that `around` has never heard of.
+   * Then it gets measured here. With no fix there is nothing to point at, so walk mode
+   * does not open at all rather than pointing north at a guess.
+   */
+  const walkTarget = useMemo(() => {
+    if (!beacon) return null;
+    const near = around.find((a) => a.echo.id === beacon);
+    if (near) return near;
+    const echo = LIBRARY.find((e) => e.id === beacon);
+    const from = state.position?.at ?? null;
+    if (!echo || !from) return null;
+    return {
+      echo,
+      distanceKm: distanceKm(from, echo.point.at),
+      bearingDeg: bearingTo(from, echo.point.at),
+      sealed: stateOf(echo.id) === "sealed",
+    };
+  }, [beacon, around, state.position, stateOf]);
+
   /*
    * Feeding the hum.
    *
@@ -782,6 +834,56 @@ export function App() {
             <span className="mono dim">{MODE_PHRASE[route.mode] ?? route.mode}</span>
           </div>
 
+          {/*
+            Walk mode, over everything, when there is somewhere to go.
+
+            It is the whole screen rather than a layer on the map because the point of it
+            is what is NOT lit: a map under it would be the lit surface the wake lock was
+            added to survive.
+          */}
+          {tab === "map" && onFoot && walkingView === "walk" && walkTarget && (
+            <Walk
+              echo={walkTarget.echo}
+              distanceKm={walkTarget.distanceKm}
+              bearingDeg={walkTarget.bearingDeg}
+              /*
+                A heading we do not trust is not a heading. The rose draws a wide cone and
+                lets you judge it; walk mode turns a heading into the word "right", which
+                is a claim rather than a picture, so below the same 45 degree bar it says
+                it has no compass instead of pointing confidently at nothing.
+              */
+              headingDeg={heading.accuracyDeg <= 45 ? heading.deg : null}
+              needsCompass={heading.needsPermission}
+              onAskCompass={() => void heading.ask()}
+              playsItself={session.playsOnArrival(walkTarget.echo)}
+              syncedNearby={around.filter((a) => !a.sealed).length}
+              totalNearby={around.length}
+              awakeNote={wake === "held" ? screenAwakeNote(awake) : ""}
+              awakeWarning={
+                wake === "held"
+                  ? ""
+                  : wake === "unsupported"
+                    ? "Keep the app on screen: this browser cannot stop the phone sleeping."
+                    : "The phone may sleep. Keep the screen on and it will keep tracking."
+              }
+              /*
+                And close the popup on the way. "Show the map" from a walk left the target's
+                own card open over the map, and that card covers the control column down the
+                right hand side — including the one fab that leads back to the walk. Running
+                it is what showed it: the only route out of the map was the one the map had
+                buried.
+              */
+              onMap={() => {
+                setSelectedId(null);
+                setWalkingView("map");
+              }}
+              onEnd={() => {
+                setBeacon(null);
+                setWalkingView("rose");
+              }}
+            />
+          )}
+
           {tab === "map" && onFoot && walkingView === "rose" && (
             <Rose
               items={around}
@@ -805,7 +907,7 @@ export function App() {
               */
               awakeNote={wake === "held" ? screenAwakeNote(awake) : ""}
               awakeWarning={
-                !humming || wake === "held"
+                !walkingNow || wake === "held"
                   ? ""
                   : wake === "unsupported"
                     ? "Keep the app on screen: this browser cannot stop the phone sleeping."
@@ -891,8 +993,20 @@ export function App() {
                 overview={overview}
                 onOverview={setOverview}
                 downloaded={downloaded}
-                {...(onFoot ? { roseView: walkingView, onRoseView: setWalkingView } : {})}
-                {...(onFoot ? { roseView: walkingView, onRoseView: setWalkingView } : {})}
+                /*
+                  Leaving the map hands back the WALK when there is one, and the survey
+                  when there is not. Returning everybody to the rose meant that tapping
+                  "Show the map" from a walk and then tapping back silently dropped you
+                  out of the walk you were in the middle of.
+                */
+                {...(onFoot
+                  ? {
+                      roseView: walkingView,
+                      roseBackLabel: beacon ? "Back to your walk" : "Back to what is around you",
+                      onRoseView: () =>
+                        setWalkingView((v) => (v === "map" ? (beacon ? "walk" : "rose") : "map")),
+                    }
+                  : {})}
                 onDownload={openPackage}
               />
               {/*
@@ -921,7 +1035,14 @@ export function App() {
                            */
                           const already = beacon === echo.id;
                           setBeacon(already ? null : echo.id);
-                          setWalkingView(already ? "rose" : "map");
+                          /*
+                           * Walk mode, not the street map. Picking a destination used to
+                           * hand over a lit map for the whole walk, which is the thing
+                           * ADR-0001's wake lock exists to survive and the worst possible
+                           * screen to hold on for it. The map is still one tap away from
+                           * inside walk mode, for the moments you genuinely want streets.
+                           */
+                          setWalkingView(already ? "rose" : "walk");
                           setSelectedId(already ? null : echo.id);
                         },
                       }

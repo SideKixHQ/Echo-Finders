@@ -13,6 +13,7 @@
  */
 
 import { renderFor } from "../types.js";
+import { willPlayOnArrival } from "./autoplay.js";
 import type { Echo, ListenerProfile, Position, TravelMode } from "../types.js";
 import { CaptureTracker, type CaptureEvent, type CaptureOptions } from "../capture/index.js";
 import { rarityOf } from "../capture/rarity.js";
@@ -317,10 +318,20 @@ export class WalkSession {
     this.persist();
   }
 
-  /** Did the listener pick this one, back when they were choosing? */
-  private mayAutoPlay(echoId: string): boolean {
-    const chosen = this.autoPlayOnly;
-    return chosen === undefined || chosen.includes(echoId);
+  /**
+   * Will this one start talking on arrival, asked before arriving?
+   *
+   * Walk mode ends with that promise on screen, and the only way for the promise and the
+   * behaviour to stay in step is for both to call one function. `willPlayOnArrival` is
+   * that function; `capture` below applies exactly the same three tests.
+   */
+  playsOnArrival(echo: Echo): boolean {
+    return willPlayOnArrival({
+      autoPlay: this.autoPlay,
+      autoPlayOnly: this.autoPlayOnly,
+      echo,
+      ...(this.options.voiceId === undefined ? {} : { voiceId: this.options.voiceId }),
+    });
   }
 
   /** The current item ran out. Take the next, if there is one. */
@@ -419,7 +430,7 @@ export class WalkSession {
     // Offered to the queue rather than played: a second capture arriving while the first is
     // still talking used to call `play()` straight over it, and at a stop where two echoes
     // sit a few metres apart that is the normal case, not the edge one.
-    if (this.autoPlay && this.mayAutoPlay(capture.echo.id)) {
+    if (this.playsOnArrival(capture.echo)) {
       const render = renderFor(capture.echo.renders, this.options.voiceId);
       if (render) {
         const wasIdle = this.playback.nowPlaying === null;
