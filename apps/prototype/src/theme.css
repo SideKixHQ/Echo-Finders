@@ -1282,6 +1282,14 @@ body {
    can sit in that row; the other is shorter, and the difference showed as a panel of empty
    between the echo and the tab bar. `Sheet.tsx` measures the row and sets --peek-h; the
    132 stays as the value before the first measurement lands. */
+/*
+   No sheet at all, no room reserved for one. The default above is 400px, which is right
+   while the sheet exists and is being measured, and wrong the moment the sheet is not
+   rendered: the map stopped four hundred pixels short of the tab bar and the gap was a
+   flat dark band. Only "nothing nearby, showing the whole library" reaches this, which is
+   exactly the screen that wants every pixel of map it can get.
+*/
+.screen:not(:has(.sheet)) { --sheet-h: 0px; }
 .screen:has(.sheet-peek) { --sheet-h: var(--peek-h, 132px); }
 /* 46, not 52. At 52 the sheet plus the tab bar plus the route ribbon left the map 16% of
    the screen — the complaint that started all this — and the band was too short for the
@@ -2852,3 +2860,67 @@ body {
    hole between them, and space-between pinned them to opposite ends of the phone.
 */
 .walk-head { align-self: stretch; margin: auto 0; }
+
+/* ── Nothing nearby ─────────────────────────────────────────────────────────────
+   The first impression for almost every listener, since the whole library is in
+   lower Manhattan. Cool throughout: nothing here is an echo, so nothing here glows
+   warm. The one warm thing on this screen would be a lie about what is in reach. */
+.nowhere {
+  /*
+     Under the map bar rather than over it (z-index 4 against its 18), so the journey chip
+     and the category chips stay on top and stay tappable. The map is where you change
+     what you are looking for; a full screen that buried it would leave nowhere to go from
+     the one screen whose entire job is to give you somewhere to go. The padding clears
+     them rather than the safe area alone.
+  */
+  position: absolute; left: 0; right: 0; top: 0; bottom: var(--nav-h); z-index: 4;
+  background: radial-gradient(120% 70% at 50% 16%, #141a3d 0%, #0d1230 50%, #080b1e 100%);
+  display: flex; flex-direction: column; align-items: center;
+  padding: calc(126px + env(safe-area-inset-top)) 26px 20px;
+  text-align: center; overflow: hidden;
+}
+
+.nowhere-main { margin: auto 0; }
+.nowhere-seek { width: 100%; max-width: 390px; height: 230px; flex: none; }
+.nowhere-grid { stroke: rgba(216, 220, 229, 0.05); stroke-width: 1; fill: none; }
+.nowhere-ring {
+  fill: none; stroke: rgba(0, 255, 231, 0.42); stroke-width: 1.4;
+  transform-origin: 195px 200px; animation: nowhere-seek 4.4s ease-out infinite;
+}
+.nowhere-ring-2 { animation-delay: -2.2s; }
+@keyframes nowhere-seek {
+  0%   { transform: scale(0.32); opacity: 0.6; }
+  100% { transform: scale(1.15); opacity: 0; }
+}
+/* How far it is actually looking, drawn to scale against nothing. */
+.nowhere-reach { fill: rgba(0, 255, 231, 0.05); stroke: rgba(0, 255, 231, 0.22); stroke-width: 1; }
+.nowhere-me { fill: var(--aqua); }
+
+.nowhere-say { margin-top: 6px; }
+.nowhere-say h1 {
+  margin: 0; font-size: 25px; font-weight: 600; line-height: 1.24; letter-spacing: -0.01em;
+}
+.nowhere-say p { margin: 13px 0 0; font-size: 15px; line-height: 1.6; color: var(--muted); }
+.nowhere-say b { color: var(--text); font-weight: 600; }
+
+.nowhere-acts {
+  align-self: stretch; display: flex; flex-direction: column; gap: 10px;
+}
+.nowhere-go {
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  min-height: 54px; border-radius: 16px; border: 0; cursor: pointer;
+  font: inherit; font-size: 16px; font-weight: 600; color: #042b28;
+  background: linear-gradient(140deg, #7dfff2, var(--aqua));
+}
+.nowhere-go svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; }
+.nowhere-widen {
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  min-height: 50px; border-radius: 15px; cursor: pointer;
+  font: inherit; font-size: 15px; color: var(--text);
+  background: none; border: 1px solid var(--line-2);
+}
+.nowhere-widen svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+
+@media (prefers-reduced-motion: reduce) {
+  .nowhere-ring { animation: none; opacity: 0.35; }
+}

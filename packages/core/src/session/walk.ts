@@ -162,6 +162,31 @@ export class WalkSession {
   private autoPlayOnly: readonly string[] | undefined;
 
   /**
+   * How far the nearby list looks, when the listener has asked for further.
+   *
+   * Mutable for the same reason as the two above, and for one of its own: standing
+   * somewhere with nothing in range is the commonest state this product has. We have
+   * twenty-six echoes and they are all in lower Manhattan, so almost everybody who opens
+   * this is nowhere near one, and "look further" is the first thing they will want. A
+   * constructor argument would have meant rebuilding the session to answer it, which
+   * throws away the collection.
+   *
+   * Undefined means the mode's own reach, which is what every walk starts with.
+   */
+  private nearbyRadiusKm: number | undefined;
+
+  /**
+   * The last fix we saw, kept so a setting change can be answered without waiting for a
+   * new one.
+   *
+   * Standing still is the case that needs it. `watchPosition` fires on movement, so a
+   * listener who presses "look further" while stood on a pavement can wait a long time for
+   * the next fix, and until it arrives the button has visibly done nothing. Which is how
+   * it first behaved.
+   */
+  private lastFix: Position | null = null;
+
+  /**
    * What the listener has agreed to have remembered.
    *
    * Mutable for the same reason auto-play is: it is a setting somebody reaches for while
@@ -190,6 +215,7 @@ export class WalkSession {
     this.mode = options.mode ?? "walking";
     this.autoPlay = options.autoPlay ?? false;
     this.autoPlayOnly = options.autoPlayOnly;
+    this.nearbyRadiusKm = options.nearbyRadiusKm;
     this.playback = new PlaybackQueue(this.mode, options.playback ?? {});
     this.privacy = options.privacy ?? PRIVACY_DEFAULTS;
     this.guide = new ProximityGuide(options.proximity);
@@ -299,6 +325,25 @@ export class WalkSession {
   }
 
   /**
+   * Look further, or stop looking further.
+   *
+   * Takes effect on the next position fix rather than immediately, because the nearby list
+   * is a function of where you are and we do not have a position until one arrives. In
+   * practice that is under a second on foot.
+   */
+  setNearbyRadius(km: number | undefined): void {
+    if (km === this.nearbyRadiusKm) return;
+    this.nearbyRadiusKm = km;
+    // Answer now rather than at the next fix. See `lastFix`.
+    if (this.lastFix) this.emit({ type: "nearby", echoes: this.lookAround(this.lastFix) });
+  }
+
+  /** How far it is currently looking, for a screen that wants to say so. */
+  get nearbyReachKm(): number {
+    return this.nearbyRadiusKm ?? presetFor(this.mode).corridorKm * 8;
+  }
+
+  /**
    * Narrow auto-play to a chosen few. Undefined lifts the restriction; an empty list is
    * honoured literally and means "I chose nothing".
    */
@@ -371,20 +416,24 @@ export class WalkSession {
 
   // --- internals ---------------------------------------------------------------------
 
+  /** What is around a given fix, at whatever reach is currently set. */
+  private lookAround(position: Position): NearbyEcho[] {
+    return findEchoesNearby(position.at, this.library, this.listener, {
+      mode: this.mode,
+      atMs: position.timestamp,
+      ...(this.nearbyRadiusKm !== undefined ? { radiusKm: this.nearbyRadiusKm } : {}),
+      ...(this.options.nearbyLimit !== undefined ? { limit: this.options.nearbyLimit } : {}),
+    });
+  }
+
   private onFix(position: Position): void {
+    this.lastFix = position;
     this.emit({ type: "position", position });
 
     const captures = this.tracker.update(position, this.library);
     for (const capture of captures) this.announce(capture);
 
-    const nearby = findEchoesNearby(position.at, this.library, this.listener, {
-      mode: this.mode,
-      atMs: position.timestamp,
-      ...(this.options.nearbyRadiusKm !== undefined
-        ? { radiusKm: this.options.nearbyRadiusKm }
-        : {}),
-      ...(this.options.nearbyLimit !== undefined ? { limit: this.options.nearbyLimit } : {}),
-    });
+    const nearby = this.lookAround(position);
     this.emit({ type: "nearby", echoes: nearby });
     this.emit({ type: "opening", arriving: this.tracker.opening });
 

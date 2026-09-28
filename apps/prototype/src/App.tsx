@@ -28,6 +28,7 @@ import { MODE_ICON, MODE_PHRASE } from "./travel";
 import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
 import { Synced } from "./Synced";
 import { Walk } from "./Walk";
+import { Nowhere } from "./Nowhere";
 import type { Detent } from "./Sheet";
 import type { CaptureEvent, Echo, EchoCategory } from "@echofinders/core";
 import {
@@ -172,6 +173,15 @@ export function App() {
    * `progress` would restart the interval four times a second.
    */
   const progressRef = useRef(0);
+  /**
+   * How far the engine looks, when somebody standing nowhere has asked for further.
+   *
+   * Undefined is the mode's own reach and is where every session starts. It is cleared
+   * whenever the journey changes, because "look further" was an answer to a particular
+   * street and carrying it into a flight would be a setting nobody set.
+   */
+  const [lookFurtherKm, setLookFurtherKm] = useState<number | undefined>(undefined);
+
   const setPlayhead = useCallback((fraction: number) => {
     progressRef.current = fraction;
     setProgress(fraction);
@@ -193,6 +203,7 @@ export function App() {
     kids,
     simple,
     gps,
+    nearbyRadiusKm: lookFurtherKm,
   });
 
   // Whether the traveller can steer. Guidance answers "which way should I go", so it is
@@ -748,6 +759,32 @@ export function App() {
   );
 
   /**
+   * The nearest echo anywhere, and whether looking further would turn anything up.
+   *
+   * Measured against the whole library rather than the engine's nearby list, because the
+   * whole point is to answer a question the nearby list cannot: it is empty, and the
+   * listener wants to know why. Eligibility is applied, so a child is never told the
+   * nearest thing to them is one they are not allowed to hear.
+   *
+   * Only computed when there is nothing in range, which is the only time anything asks.
+   */
+  const WIDEN_TO_KM = 16;
+  const nowhere = roaming && state.nearby.length === 0;
+  const nearestAnywhere = useMemo(() => {
+    if (!nowhere) return null;
+    const from = state.position?.at ?? null;
+    if (!from) return null;
+    const listener = listenerFor(kids);
+    let best: { echo: Echo; distanceKm: number } | null = null;
+    for (const echo of LIBRARY) {
+      if (!checkEligibility(echo, { profile: listener, playAtMs: Date.now() }).eligible) continue;
+      const km = distanceKm(from, echo.point.at);
+      if (!best || km < best.distanceKm) best = { echo, distanceKm: km };
+    }
+    return best;
+  }, [nowhere, state.position, kids]);
+
+  /**
    * What walk mode is pointing at.
    *
    * `around` first, because the engine already measured the bearing and the distance for
@@ -884,7 +921,13 @@ export function App() {
             />
           )}
 
-          {tab === "map" && onFoot && walkingView === "rose" && (
+          {/*
+            Not while there is nothing nearby. The rose's whole content is what is around
+            you, so with nothing around it is an empty dial with a hum switch under it,
+            drawn over the screen that exists to explain the emptiness and offer a way out
+            of it. Two answers to one question, and the useless one was on top.
+          */}
+          {tab === "map" && onFoot && walkingView === "rose" && !nowhere && (
             <Rose
               items={around}
               headingDeg={heading.deg}
@@ -967,12 +1010,55 @@ export function App() {
                   onAll={allCategories}
                 />
               </div>
+              {/*
+                Nothing nearby, over the map.
+
+                Over rather than instead of, so the journey chip and the category chips
+                above it stay reachable: the map is where you change what you are looking
+                for, and burying it would leave nowhere to go from the screen whose whole
+                job is to give you somewhere to go.
+
+                Shown on `state.nearby` rather than the filtered `around`, which is the
+                difference between "there is nothing here" and "you switched everything
+                off". The second is a filter and belongs in the chips, not behind a full
+                screen that hides them.
+
+                And not while the overview is up, because the overview is what its own
+                primary button asks for: leaving it on top would have "show me where they
+                are" replace this screen with itself.
+              */}
+              {nowhere && !overview && (
+                <Nowhere
+                  nearest={nearestAnywhere}
+                  reachKm={session.nearbyReachKm}
+                  onShowAll={() => setOverview(true)}
+                  widenToKm={WIDEN_TO_KM}
+                  {...(nearestAnywhere && nearestAnywhere.distanceKm <= WIDEN_TO_KM
+                    ? { onWiden: () => setLookFurtherKm(WIDEN_TO_KM) }
+                    : {})}
+                />
+              )}
               <RouteMap
                 route={roaming ? null : route}
                 mode={roaming ? roamMode : route.mode}
                 library={
                   roaming
-                    ? state.nearby.map((n) => n.echo).filter((e) => activeCats.has(e.category))
+                    ? /*
+                        Overview means show me the lot, and while roaming that is the
+                        whole library rather than what happens to be in reach. It is the
+                        answer to "where are they then" from somewhere with nothing
+                        nearby, and without it the button framed an empty street: the map
+                        had only ever been given the engine's nearby list, which on that
+                        screen is empty by definition.
+
+                        Done here rather than by widening the engine's radius, because
+                        the radius also decides what the hum sings and what the rose
+                        draws, and looking at a map of the world should not put four
+                        hundred voices in somebody's ears.
+                      */
+                      (overview ? LIBRARY : state.nearby.map((n) => n.echo)).filter((e) =>
+                        activeCats.has(e.category),
+                      )
                     : onRoute.filter((e) => activeCats.has(e.category))
                 }
                 position={state.position}
@@ -981,10 +1067,20 @@ export function App() {
                 selectedId={selectedId}
                 onSelect={setSelectedId}
                 detent={detent}
+                sheet={!nowhere || nowPlaying !== null}
                 overview={overview}
                 progress={along}
                 theme={theme}
               />
+              {/*
+                No control column either. It carries the map toggle, recentre and download,
+                which all act on echoes in reach, and with none in reach it had nothing to
+                act on. It also sits centred in the band between the chips and the sheet,
+                and with no sheet that band grew until the top fab landed on the journey
+                chip's own Change button. Both gone at once: overview brings it back,
+                because turning overview on is what takes this screen down.
+              */}
+              {(!nowhere || overview) && (
               <Rail
                 theme={theme}
                 onTheme={setTheme}
@@ -1009,6 +1105,7 @@ export function App() {
                   : {})}
                 onDownload={openPackage}
               />
+              )}
               {/*
                 The echo you tapped, over the map.
                 It replaces the guidance bar while it is open rather than stacking with it:
@@ -1057,6 +1154,16 @@ export function App() {
               ) : (
                 selfDirected && <ProximityBar guidance={state.guidance} cue={state.cue} />
               )}
+              {/*
+                No sheet while there is nothing nearby, unless something is playing.
+
+                The sheet's own empty state says "Nothing here yet" in grey at the bottom
+                of the screen, which is the sentence the whole Nowhere screen exists to
+                replace, and it would cover the two buttons that are the only way off it.
+                A transport for something already playing is the one thing worth keeping,
+                because losing it mid-echo would strand the audio with no way to stop it.
+              */}
+              {(!nowhere || nowPlaying) && (
               <Sheet
                 nearby={nearby}
                 lastCapture={state.lastCapture}
@@ -1126,6 +1233,7 @@ export function App() {
                 {...(selfDirected ? { onCamera: setCamera } : {})}
                 onSave={toggleSave}
               />
+              )}
             </>
           )}
 
@@ -1295,6 +1403,7 @@ export function App() {
                  */
                 setWalkingView("rose");
                 setBeacon(null);
+                setLookFurtherKm(undefined);
                 // Flying is somebody else's route and the door is locked, so there is
                 // nothing to roam. On foot and driving both land on roaming, because
                 // hunting is the thing you do without a route and it is the common case.

@@ -42,6 +42,8 @@ interface Props {
   readonly onSelect: (echoId: string) => void;
   /** How much of the screen the sheet is taking, so the view centres on what is visible. */
   readonly detent: "peek" | "half" | "full";
+  /** Whether a sheet is on screen at all. It is not, with nothing nearby. */
+  readonly sheet?: boolean;
   /**
    * Show the whole journey instead of following the listener.
    *
@@ -118,9 +120,27 @@ const MAPBAR_H = 119;
  * be looking. Carried modes do not draw it and get the height back.
  */
 const GUIDE_H = 56;
-const insetFor = (detent: keyof typeof SHEET_FRACTION, guided: boolean, h: number) => ({
+/**
+ * How much of the bottom the sheet is taking.
+ *
+ * Zero when there is no sheet, which is a real state rather than a hypothetical: standing
+ * somewhere with nothing nearby takes the sheet away entirely, and this sum went on
+ * reserving a detent's worth of it. The basemap stopped a hundred and thirty pixels above
+ * the tab bar with bare background under it, and the pins were fitted into a band that
+ * ended in the same place. Visible the moment it was rendered from Lisbon; invisible in
+ * every test, because every test has a sheet.
+ */
+const sheetFraction = (detent: keyof typeof SHEET_FRACTION, sheet: boolean) =>
+  sheet ? SHEET_FRACTION[detent] : 0;
+
+const insetFor = (
+  detent: keyof typeof SHEET_FRACTION,
+  guided: boolean,
+  h: number,
+  sheet: boolean,
+) => ({
   top: MAPBAR_H + PIN_R / 2,
-  bottom: NAV_H + h * SHEET_FRACTION[detent] + (guided ? GUIDE_H : 0) + PIN_R / 2,
+  bottom: NAV_H + h * sheetFraction(detent, sheet) + (guided ? GUIDE_H : 0) + PIN_R / 2,
   side: 30,
 });
 
@@ -134,6 +154,7 @@ export function RouteMap({
   selectedId,
   onSelect,
   detent,
+  sheet = true,
   overview,
   progress = 0,
   theme,
@@ -281,7 +302,7 @@ export function RouteMap({
   const geometry = useMemo(() => (route ? buildRouteGeometry(route) : null), [route]);
 
   const projection = useMemo(() => {
-    const INSET = insetFor(detent, presetFor(mode).selfDirected, box.h);
+    const INSET = insetFor(detent, presetFor(mode).selfDirected, box.h, sheet);
 
     // The band actually visible between the chips and the sheet. The listener belongs in
     // the middle of *that*, not the middle of a box that is half covered.
@@ -342,7 +363,7 @@ export function RouteMap({
      * actually on screen — from under the chips down to the top of the sheet.
      */
     const bandTop = MAPBAR_H;
-    const bandBottom = box.h - NAV_H - box.h * SHEET_FRACTION[detent];
+    const bandBottom = box.h - NAV_H - box.h * sheetFraction(detent, sheet);
     const plan = planTiles(
       centre,
       spanKm,
@@ -365,7 +386,7 @@ export function RouteMap({
     // computed twice and drifting.
     project.plan = plan;
     return project;
-  }, [mode, geometry, library, at, overview, detent, zoom, box]);
+  }, [mode, geometry, library, at, overview, detent, sheet, zoom, box]);
 
   const path = useMemo(() => {
     if (!geometry) return "";
@@ -661,7 +682,7 @@ export function RouteMap({
       <text
         className="map-credit"
         x={10}
-        y={box.h - insetFor(detent, presetFor(mode).selfDirected, box.h).bottom + 2}
+        y={box.h - insetFor(detent, presetFor(mode).selfDirected, box.h, sheet).bottom + 2}
         textAnchor="start"
       >
         {TILE_ATTRIBUTION}
