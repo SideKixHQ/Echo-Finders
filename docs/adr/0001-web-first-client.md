@@ -26,5 +26,17 @@ installable to a home screen for frequent flyers.
 - Offline is a service worker plus a cached route package, not an app bundle.
 - If a consumer-brand native app later earns its place, it wraps the same engine:
   `@echofinders/core` is pure TypeScript and runs unchanged inside React Native.
-- We give up native background audio. Mitigation: the Media Session API plus a wake lock
+- We give up native background audio. Mitigation: the Media Session API plus a wake lock.
+  **Implemented September 2026**, and it needed more than the one line this used to be.
+  On iOS both the audio and the position fix stop when the screen locks, so the fallback
+  `featureAvailability` already promised — "echoes still open, you just need the app open
+  on screen while you walk" — was itself only true for the thirty seconds before the phone
+  dimmed. `screenAwake` in the engine decides when to hold the screen; `wake.ts` in the app
+  owns the platform call, the re-request after the page comes back (the lock releases
+  itself on hide and does not return), and the three ways the request is refused. The
+  walk screen reports what the screen is actually doing rather than what was asked for,
+  because a promise the device is not keeping is worse than no promise.
+  **Still untested on a real iPhone.** Screen Wake Lock needs iOS 18.4 or later and a web
+  app added to the home screen; a plain Safari tab does not get it and falls back to
+  saying so
   covers a seated passenger with headphones in, which is the entire use case.

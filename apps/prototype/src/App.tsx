@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { PRIVACY_DEFAULTS, holdsPersonalLocation, type PrivacySettings } from "@echofinders/core";
+import { PRIVACY_DEFAULTS, holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
 import { LIBRARY, ROUTES } from "./library.generated";
 import { CATEGORY_ORDER, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
@@ -25,6 +25,7 @@ import { loadRatings, setRating, type Rating } from "./ratings";
 import { BrowserLocation } from "./browser-location";
 import { Rail } from "./Rail";
 import { MODE_ICON, MODE_PHRASE } from "./travel";
+import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
 import type { Detent } from "./Sheet";
 import type { Echo, EchoCategory } from "@echofinders/core";
 import {
@@ -341,6 +342,34 @@ export function App() {
   const nowPlaying = state.playback.kind === "idle" ? null : state.playback.item.echo;
 
   const playing = state.playback.kind === "playing";
+
+  /*
+   * Hold the screen awake while it matters, and say so.
+   *
+   * On iOS both the audio and the position fix stop when the screen locks, so
+   * `featureAvailability`'s promise that "echoes still open, you just need the app open on
+   * screen while you walk" is only true for the thirty seconds before the phone dims
+   * itself. The engine decides when to hold it; `useScreenAwake` owns the platform call
+   * and the re-request after the page comes back, which the API does not do for you.
+   *
+   * `humming` is the signal for a walk because it is the moment somebody explicitly says
+   * they are out with headphones in, rather than reading a list indoors.
+   */
+  useEffect(() => {
+    if (!nowPlaying) { publishNowPlaying(null); return; }
+    publishNowPlaying({
+      title: nowPlaying.title,
+      place: nowPlaying.point.place,
+      onPlay: () => session.play(nowPlaying),
+      onPause: () => session.stopPlaying(),
+      onStop: () => session.stopPlaying({ dropQueue: true }),
+    });
+    return () => publishNowPlaying(null);
+  }, [nowPlaying, session]);
+
+  const pageVisible = usePageVisible();
+  const awake = screenAwake({ walking: humming, playing, visible: pageVisible, allowed: true });
+  const wake = useScreenAwake(awake);
   /*
    * Stopped is not paused, and the transport has to say which.
    *
@@ -738,6 +767,23 @@ export function App() {
               onSelect={setSelectedId}
               humming={humming}
               onHum={setHumming}
+              /*
+                The note reports what the SCREEN IS DOING, not what we asked it to do.
+                Those came apart the first time this was tested: the request is refused
+                in a headless browser, at low battery, and in any Safari tab that is not
+                an installed home screen app, and the app cheerfully said "screen staying
+                on" over a phone that was about to sleep. A promise the device is not
+                keeping is worse than no promise, so a refusal says so and tells the
+                listener the one thing they can still do about it.
+              */
+              awakeNote={wake === "held" ? screenAwakeNote(awake) : ""}
+              awakeWarning={
+                !humming || wake === "held"
+                  ? ""
+                  : wake === "unsupported"
+                    ? "Keep the app on screen: this browser cannot stop the phone sleeping."
+                    : "The phone may sleep. Keep the screen on and it will keep tracking."
+              }
             />
           )}
 

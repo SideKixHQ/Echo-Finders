@@ -11,6 +11,7 @@ export * from "./ranking/upcoming.js";
 export * from "./capture/index.js";
 export * from "./proximity/index.js";
 export * from "./permissions/index.js";
+export * from "./permissions/screen.js";
 export * from "./session/index.js";
 export * from "./privacy/settings.js";
 export * from "./content/validate.js";
