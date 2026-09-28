@@ -25,18 +25,7 @@ import { CATEGORY_ICON } from "./categories";
 import { TILE_ATTRIBUTION, TILE_URL, planTiles, toWorld } from "./tiles";
 import { MODE_ICON } from "./travel";
 import { useSmoothedPoint } from "./use-smoothed";
-import {
-  buildRouteGeometry,
-  distanceKm,
-  effectiveRadiusKm,
-  presetFor,
-  type Arriving,
-  type Echo,
-  type LatLng,
-  type Position,
-  type Route,
-  type TravelMode,
-} from "@echofinders/core";
+import { buildRouteGeometry, distanceKm, effectiveRadiusKm, presetFor, rarityOf, type Arriving, type Echo, type LatLng, type Position, type Route, type TravelMode } from "@echofinders/core";
 
 export type PinState = "sealed" | "opening" | "captured" | "heard";
 
@@ -439,6 +428,22 @@ export function RouteMap({
         </radialGradient>
 
         {/*
+          Two strengths of the same warm light, for the two rarities worth walking to.
+          Common and uncommon get none at all: a glow on everything is a glow on nothing,
+          and the whole point of the warm channel is that it is scarce.
+        */}
+        <radialGradient id="raritySingular">
+          <stop offset="0%" stopColor="var(--ember)" stopOpacity="0.4" />
+          <stop offset="42%" stopColor="var(--ember)" stopOpacity="0.12" />
+          <stop offset="100%" stopColor="var(--ember)" stopOpacity="0" />
+        </radialGradient>
+        <radialGradient id="rarityRare">
+          <stop offset="0%" stopColor="var(--ember)" stopOpacity="0.24" />
+          <stop offset="46%" stopColor="var(--ember)" stopOpacity="0.07" />
+          <stop offset="100%" stopColor="var(--ember)" stopOpacity="0" />
+        </radialGradient>
+
+        {/*
           One contour, reused. The mark's rings are irregular topographic lines rather than
           circles, and that irregularity is most of what makes it read as a *place*. Drawn
           once and rotated per ring so the nesting survives at 22px, where genuinely
@@ -603,6 +608,19 @@ export function RouteMap({
                 </g>
               </g>
             )}
+
+            {/* Rarity, in front of the ground and behind the pin. */}
+            {(state === "sealed" || state === "opening") &&
+              (() => {
+                const rarity = rarityOf(echo);
+                if (rarity !== "rare" && rarity !== "singular") return null;
+                return (
+                  <circle
+                    className={`pin-halo pin-halo-${rarity}`}
+                    r={rarity === "singular" ? 52 : 34}
+                  />
+                );
+              })()}
 
             <Contours />
 

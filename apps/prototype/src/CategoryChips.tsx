@@ -123,7 +123,6 @@ function CategoryChipsInner({ on, onToggle, onAll }: CategoryChipsProps) {
               aria-pressed={lit}
               onClick={() => onToggle(group)}
             >
-              <span className={`chip-dot cat-${group.face}`} />
               {group.label}
             </button>
           );

@@ -94,7 +94,21 @@ export const CATEGORY_ORDER: readonly EchoCategory[] = [
  * looking at coloured dots. The icon is what makes the colour legible.
  */
 export const CATEGORY_ICON: Record<EchoCategory, ReactNode> = {
-  history: <path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6" />,
+  /*
+   * An hourglass, not a house.
+   *
+   * The house was a ground line with a pitched roof, and `built` below is a ground line
+   * with two towers. Rendered side by side at the 22px a pin actually is, the only
+   * difference between History and Landmarks was one unit of roof. An hourglass says
+   * "time past", is nothing like a building, and does not collide with the duration clock
+   * either. Two paths, and it survives 13px on a chip, which the alternatives did not.
+   */
+  history: (
+    <>
+      <path d="M7 3h10M7 21h10" />
+      <path d="M6.5 3.5h11l-5.5 8.5zM6.5 20.5h11l-5.5-8.5z" />
+    </>
+  ),
   // The design's `culture` note, on the category that actually means music and art.
   arts: (
     <>
@@ -138,11 +152,19 @@ export const CATEGORY_ICON: Record<EchoCategory, ReactNode> = {
   ),
   // A skyline. The map pin this had is the design's glyph for an attraction, which is a
   // different idea: a place to go, not a thing to look up at.
-  built: (
-    <>
-      <path d="M3 21h18M6 21V9l5-3v15M16 21V12l-5-3" />
-      <path d="M8.5 12h.01M8.5 15.5h.01M13 15h.01M13 18h.01" />
-    </>
-  ),
-  land: <path d="M3 20l6-9 4 6 3-4 5 7z" />,
+  /*
+   * A column, not a skyline.
+   *
+   * Two reasons. It stops colliding with History, above. And the Landmarks chip stands for
+   * `built` AND `land` (see CHIP_GROUPS), so a skyline was promising buildings and
+   * returning mountains half the time. A column reads as "a place worth going to look at"
+   * for either, and holds its shape at 13px where the skyline's four windows turned to
+   * mush.
+   */
+  built: <path d="M4 21h16M6 21V8M10 21V8M14 21V8M18 21V8M4 8h16l-8-5z" />,
+  /*
+   * Same column. `land` and `built` are one chip, so drawing them differently meant the
+   * filter and the map disagreed about what you had asked for.
+   */
+  land: <path d="M4 21h16M6 21V8M10 21V8M14 21V8M18 21V8M4 8h16l-8-5z" />,
 };

@@ -422,15 +422,32 @@ body {
 /* One rule per category, setting `color` only. Anything inside then picks it up through
    `currentColor` — dots, tags, borders — so a category's identity is declared once rather
    than threaded through every component. */
-.cat-history { color: var(--cat-history); }
-.cat-true-crime { color: var(--cat-true-crime); }
-.cat-legend { color: var(--cat-legend); }
-.cat-kids { color: var(--cat-kids); }
-.cat-food-drink { color: var(--cat-food-drink); }
-.cat-arts { color: var(--cat-arts); }
-.cat-people { color: var(--cat-people); }
-.cat-built { color: var(--cat-built); }
-.cat-land { color: var(--cat-land); }
+/*
+ * AQUA IS THE INTERFACE. EMBER IS THE ECHO. And a category is a glyph, not a colour.
+ *
+ * These nine rules used to paint a pin, a chip and a card in the category's own hue. Two
+ * things were wrong with that, and only one of them is taste.
+ *
+ * The measurable one: simulating the three kinds of colour blindness, four of the nine
+ * collapse into each other. Kids and Landmarks fall from 0.86 apart to 0.02 for a
+ * deuteranope, roughly one man in twelve, and Food & drink and Land to 0.06. Searching the
+ * whole colour space for a set that survives, with the warm channel reserved for the echo
+ * and aqua reserved for the interface, the ceiling is five comfortable and six at a
+ * squeeze. Never nine. That is a property of human vision rather than of the palette.
+ *
+ * The other: nine hues at full strength on one map spend exactly the budget that makes
+ * ember mean "worth walking to". Rarity had nothing left to say with.
+ *
+ * So colour now carries STATE and the glyph carries CATEGORY. Cool ink means an echo is
+ * here and the mark inside says what kind. Ember means this one is worth the walk. Aqua
+ * means you, and anything you can press.
+ *
+ * The --cat-* tokens are kept rather than deleted: check-contrast.py measures all nine in
+ * both schemes, and the day somebody argues for bringing a hue back, the numbers are
+ * already there to argue with.
+ */
+.cat-history, .cat-true-crime, .cat-legend, .cat-kids, .cat-food-drink,
+.cat-arts, .cat-people, .cat-built, .cat-land { color: var(--cool); }
 
 /* ── route ribbon ────────────────────────────────────────── */
 .ribbon {
@@ -1776,9 +1793,19 @@ body {
   18%  { opacity: 0.85; }
   to   { transform: scale(2.3); opacity: 0; }
 }
-.ripple-ring   { stroke: #00e5ff; }
-.ripple-ring-2 { stroke: #3b6bff; }
-.ripple-ring-3 { stroke: #7b3bff; }
+/*
+ * One colour, three delays.
+ *
+ * These were #00e5ff, #3b6bff and #7b3bff: a cyan through violet sweep that belonged to
+ * no channel in the palette and, because it was moving, was the loudest thing on the map.
+ * It competed with aqua for "this is yours to operate" and with ember for "this is worth
+ * walking to", and won both fights by moving.
+ *
+ * A ripple means an echo is here and still sealed, which is exactly what cool ink means
+ * everywhere else, so it says it in the same voice. Ember stays scarce for rarity, which
+ * is the only thing on this map that should pull you across it.
+ */
+.ripple-ring { stroke: var(--cool); opacity: 0.55; }
 
 /* Found is quiet. The ripple is the unanswered call, so answering it stops the
    sound — and a map of a walk you finished sits still, which is the point. */
@@ -2506,3 +2533,19 @@ body {
 /* The nav is the one place there is room to simply be 48 tall. */
 .nav button { min-height: 48px; }
 .erow-body { min-height: 44px; }
+
+/*
+ * Rarity, as light rather than as a badge.
+ *
+ * `rarityOf` has been in the engine since the beginning and never reached the map, so the
+ * one thing that tells you which way to walk was invisible on the screen you walk with.
+ * Drawn as a halo because a badge is something you read and a glow is something you
+ * notice, and only while the echo is still sealed: an echo already yours has nothing left
+ * to find, so it goes quiet.
+ */
+.pin-halo { pointer-events: none; }
+.pin-halo-rare { fill: url(#rarityRare); }
+.pin-halo-singular { fill: url(#raritySingular); }
+/* Heard is the ember gone cold. */
+.pin-heard .pin-body { stroke: var(--ember-deep); }
+.pin-heard .pin-icon { stroke: var(--ember-deep); }

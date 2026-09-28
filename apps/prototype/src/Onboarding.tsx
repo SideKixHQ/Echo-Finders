@@ -384,7 +384,6 @@ export function Onboarding({
                     onClick={() => onToggleCats(group.categories)}
                     aria-pressed={lit}
                   >
-                    <span className={`chip-dot cat-${group.face}`} />
                     {group.label}
                   </button>
                 );
