@@ -32,6 +32,17 @@ export function RouteRibbon({ route, progress, remainingS }: RouteRibbonProps) {
       </span>
       <b>{short(route.destination)}</b>
       <small>{left(remainingS)}</small>
+      {/*
+        The tap target says so inside the pill, as the roaming chip already did.
+
+        Route mode carried it as a separate centred line of uppercase aqua UNDER the pill —
+        a whole row of chrome to say the row above it is a button, on the screen with the
+        least room to spare. The chevron is the same promise in eleven pixels, and the
+        button's own label already names it for anything that is not an eye.
+      */}
+      <svg className="ribbon-more" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M9 5l7 7-7 7" />
+      </svg>
     </div>
   );
 }

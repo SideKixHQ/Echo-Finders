@@ -28,7 +28,7 @@
 import { memo, useCallback, useEffect, useRef, useState } from "react";
 import type { EchoCategory } from "@echofinders/core";
 import type { ChipGroup } from "./categories";
-import { CHIP_GROUPS } from "./categories";
+import { CATEGORY_ICON, CHIP_GROUPS } from "./categories";
 
 export interface CategoryChipsProps {
   /**
@@ -105,7 +105,18 @@ function CategoryChipsInner({ on, onToggle, onAll }: CategoryChipsProps) {
         </button>
       )}
       <div className="chips" ref={strip} onScroll={measure}>
+      {/*
+        Each chip carries its own mark, which is board 2's call and a good one: the row is
+        the key to the map, and the map says what kind of thing a pin is with a glyph.
+        A key that names the categories in words while the map names them in marks is a
+        key you have to translate. The marks are the same ones the pins draw.
+
+        "All" gets a tick rather than a category glyph, because it is not a category.
+      */}
       <button className={all ? "chip chip-all on" : "chip chip-all"} onClick={onAll} aria-pressed={all}>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 12.5 L10 17.5 L19 7" />
+        </svg>
         All
       </button>
       {CHIP_GROUPS.map((group) => {
@@ -123,6 +134,9 @@ function CategoryChipsInner({ on, onToggle, onAll }: CategoryChipsProps) {
               aria-pressed={lit}
               onClick={() => onToggle(group)}
             >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                {CATEGORY_ICON[group.face]}
+              </svg>
               {group.label}
             </button>
           );

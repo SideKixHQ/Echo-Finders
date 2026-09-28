@@ -1934,9 +1934,14 @@ body {
   pointer-events: none; overflow: hidden;
 }
 
-/* The basemap. Dimmed and desaturated so it stays underneath: the design's grey is a
-   backdrop for the route and the pins, not a thing to read. */
-.map-tile { opacity: 0.85; }
+/* The basemap, pushed well back.
+   0.38, not 0.85. Esri's "dark gray" canvas is a mid grey however its name reads, and at
+   85 percent over the app's navy it came out a pale rectangle with the furniture floating
+   on it — which is what "this doesn't look correct" was mostly looking at. Letting the
+   ground show through four fifths of the way turns the streets into a texture under the
+   pins rather than the brightest thing on the screen, which is what the design draws.
+   The light scheme keeps its own value below: there the tiles ARE the surface. */
+.map-tile { opacity: 0.38; }
 /* Legible on either basemap without competing with anything: the grey canvases are pale
    in light and near-black in dark, so the credit takes its contrast from the theme's own
    muted ink rather than a fixed colour that would disappear in one of them. */
@@ -1949,9 +1954,15 @@ body {
 /* The commentary keeps the demo-only controls — pause, seek, narration — that have no
    place on a rail a real listener would use. */
 
-/* The basemap. Dimmed and desaturated so it stays underneath: the design's grey is a
-   backdrop for the route and the pins, not a thing to read. */
-.map-tile { opacity: 0.85; }
+/*
+   A DUPLICATE of the rule above, and the later one was winning, which is why turning the
+   basemap down had no effect until this was found. Two identical declarations of the same
+   selector is the kind of thing that survives because neither is wrong on its own.
+
+   Scoped to the light scheme now, where it is correct: there the tiles ARE the surface
+   rather than a texture under one, so they stay near full strength.
+*/
+:root[data-theme="light"] .map-tile { opacity: 0.85; }
 /* Legible on either basemap without competing with anything: the grey canvases are pale
    in light and near-black in dark, so the credit takes its contrast from the theme's own
    muted ink rather than a fixed colour that would disappear in one of them. */
@@ -2560,11 +2571,7 @@ body {
 
 /* The hint under the route ribbon. On a route the header looks exactly as it always did,
    so without this the fact that it now opens the journey screen is invisible. */
-.journey-hint {
-  display: block; margin-top: 5px; text-align: center;
-  font-family: "Space Grotesk", monospace; font-size: 11px;
-  letter-spacing: 0.12em; text-transform: uppercase; color: var(--aqua); opacity: 0.85;
-}
+
 
 /* ── The airport picker ──────────────────────────────────────────────────────
    Two fields rather than a flight number, because two airports is what a route
@@ -3306,3 +3313,60 @@ body {
   filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.9));
 }
 .entry-plate i { z-index: 1; }
+
+/* The mark inside a filter chip. The row is the key to the map, and the map names a
+   category with a glyph, so the key does too: a key in words beside a map in marks is a
+   key you have to translate. Same size as the pin glyph it stands for. */
+.chip svg {
+  width: 14px; height: 14px; flex: none;
+  fill: none; stroke: currentColor; stroke-width: 1.8;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+/* Dimmer than the label while the chip is off, so the row reads as a list of words with
+   marks rather than a row of icons competing with the map behind it. */
+.chip:not(.on) svg { opacity: 0.55; }
+
+/* ── Board 2: the map's own furniture ───────────────────────────────────────────
+   The edges go dark rather than the tiles. Esri's grey canvas is a light basemap
+   whatever its name says, and dimming the whole thing flattens it; dimming the
+   edges pushes the streets back and leaves the lit things in the bright middle. */
+.map-vignette { fill: url(#mapEdge); pointer-events: none; }
+
+/* What a pin is worth and how far, under it. Only on rare and singular, only while
+   sealed: a label under every pin is a map of labels, and the point of this one is to
+   make two pins out of nine pull you towards them. */
+.pin-tag {
+  font-family: "Space Grotesk", monospace; font-size: 11px; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase; pointer-events: none;
+  /* Painted under the glyph rather than behind a plate, so it never boxes the map in.
+     The stroke is the plate: it lifts the words off whatever tile is behind them. */
+  paint-order: stroke; stroke: rgba(4, 6, 15, 0.7); stroke-width: 2.6;
+}
+.pin-tag-singular { fill: var(--ember-core); }
+.pin-tag-rare { fill: var(--ember); }
+
+/* Which way you are pointed. Wide and soft, because course over ground on foot is
+   routinely thirty degrees out and a sharp cone would claim a precision it has not got. */
+.here-cone { fill: url(#coneFade); pointer-events: none; }
+
+/* The edge marker: the best echo you cannot see yet, and which way it is. A map only
+   shows what fits, and the one worth walking to is routinely just off the screen. */
+.map-edge { cursor: pointer; }
+.map-edge-plate {
+  fill: rgba(11, 15, 43, 0.88); stroke: rgba(255, 158, 18, 0.42); stroke-width: 1;
+}
+.map-edge-dot { fill: var(--ember); filter: drop-shadow(0 0 5px rgba(255, 158, 18, 0.9)); }
+.map-edge-text {
+  fill: var(--ember-core); font-family: "Space Grotesk", monospace; font-size: 11px;
+  letter-spacing: 0.1em; text-transform: uppercase;
+}
+.map-edge-arrow {
+  fill: none; stroke: var(--ember-core); stroke-width: 2.2;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+/* The chevron in the route pill, replacing a whole centred line of uppercase aqua that
+   existed only to say the row above it was tappable. */
+.ribbon-more {
+  width: 11px; height: 11px; flex: none; fill: none; stroke: var(--aqua);
+  stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; opacity: 0.85;
+}

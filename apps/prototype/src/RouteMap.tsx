@@ -29,6 +29,16 @@ import { buildRouteGeometry, distanceKm, effectiveRadiusKm, presetFor, rarityOf,
 
 export type PinState = "sealed" | "opening" | "captured" | "heard";
 
+/**
+ * How far, on a map label.
+ *
+ * Rounded to fifty metres to agree with the echo card and the sheet, which round the same
+ * way. Three places on one screen reporting the same distance differently is how somebody
+ * stops believing any of them.
+ */
+const coarse = (km: number): string =>
+  km * 1000 < 950 ? `${Math.round((km * 1000) / 50) * 50} m` : `${km.toFixed(1)} km`;
+
 interface Props {
   /** The journey, or `null` when roaming: there is no line and no corridor, only here. */
   readonly route: Route | null;
@@ -427,6 +437,40 @@ export function RouteMap({
   const here = at ? projection(at) : null;
   const standingAt = at;
 
+  /**
+   * The best thing you cannot see, and which way it is.
+   *
+   * A map only shows what fits, and the one echo most worth walking to is routinely the one
+   * just off the edge. Without this the screen quietly says "nothing much here" when the
+   * truth is "the good one is two streets that way".
+   *
+   * Rare and singular only, and only while sealed — the same restraint as the pin labels,
+   * for the same reason. Nearest wins among equals, because a marker pointing four hundred
+   * metres away when there is one at ninety is pointing at the wrong thing.
+   */
+  const edge = useMemo(() => {
+    if (!at || overview) return null;
+    let best: { echo: Echo; km: number; y: number; rarity: string } | null = null;
+    for (const echo of library) {
+      const state = stateOf(echo.id);
+      if (state !== "sealed" && state !== "opening") continue;
+      const rarity = rarityOf(echo);
+      if (rarity !== "rare" && rarity !== "singular") continue;
+      const p = projection(echo.point.at);
+      // On screen already: the pin speaks for itself.
+      const onScreen =
+        p.x >= -PIN_R && p.x <= box.w + PIN_R && p.y >= MAPBAR_H && p.y <= box.h - NAV_H;
+      if (onScreen) continue;
+      const km = distanceKm(at, echo.point.at);
+      if (!best || km < best.km) {
+        // Clamped into the band, so the marker rides the edge rather than leaving with it.
+        const y = Math.max(MAPBAR_H + 40, Math.min(box.h - NAV_H - 80, p.y));
+        best = { echo, km, y, rarity };
+      }
+    }
+    return best;
+  }, [at, overview, library, stateOf, projection, box]);
+
   return (
     <svg
       className="map"
@@ -443,6 +487,22 @@ export function RouteMap({
       ref={svg}
     >
       <defs>
+        {/*
+          The cone fades out with distance rather than ending in a hard arc, because what
+          it is drawing is confidence and confidence does not have an edge. Flat fill read
+          as a solid wedge of teal laid over the streets.
+        */}
+        <radialGradient id="coneFade" gradientUnits="objectBoundingBox" r="0.7" cx="0.5" cy="1">
+          <stop offset="0%" stopColor="var(--aqua)" stopOpacity="0.22" />
+          <stop offset="100%" stopColor="var(--aqua)" stopOpacity="0" />
+        </radialGradient>
+
+        {/* Transparent in the middle, dark at the corners. See `.map-vignette`. */}
+        <radialGradient id="mapEdge" cx="50%" cy="44%" r="76%">
+          <stop offset="38%" stopColor="#04060f" stopOpacity="0" />
+          <stop offset="100%" stopColor="#04060f" stopOpacity="0.62" />
+        </radialGradient>
+
         <radialGradient id="hereGlow">
           <stop offset="0%" stopColor="var(--aqua)" stopOpacity="0.5" />
           <stop offset="100%" stopColor="var(--aqua)" stopOpacity="0" />
@@ -662,6 +722,31 @@ export function RouteMap({
             {(state === "captured" || state === "heard") && (
               <circle className="pin-found" r="4" cx="9.5" cy="9.5" />
             )}
+
+            {/*
+              WHAT IT IS WORTH, AND HOW FAR, under the pin.
+
+              Only on the rare and singular ones, and only while they are still sealed.
+              That restraint is the point rather than a saving: a label under every pin is
+              a map of labels, and the whole reason this line exists is to make two pins on
+              a screen of nine pull you towards them. Once an echo is yours it has nothing
+              left to advertise.
+
+              The board also put "4 people have stood here" here. That needs a backend
+              counting syncs across everybody, and there isn't one.
+            */}
+            {(state === "sealed" || state === "opening") &&
+              (() => {
+                const rarity = rarityOf(echo);
+                if (rarity !== "rare" && rarity !== "singular") return null;
+                const away = at ? distanceKm(at, echo.point.at) : null;
+                return (
+                  <text className={`pin-tag pin-tag-${rarity}`} y="27" textAnchor="middle">
+                    {rarity === "singular" ? "Singular" : "Rare"}
+                    {away !== null && ` · ${coarse(away)}`}
+                  </text>
+                );
+              })()}
           </g>
         );
       })}
@@ -688,6 +773,47 @@ export function RouteMap({
         {TILE_ATTRIBUTION}
       </text>
       {here && <Here x={here.x} y={here.y} mode={mode} headingDeg={position?.headingDeg ?? null} />}
+
+      {/*
+        THE VIGNETTE, and it is most of why the board looks like night and the app looked
+        washed out.
+
+        Esri's grey canvas is a light basemap however dark its name is, and at 85% over a
+        deep blue ground the result is a pale rectangle with the app's furniture floating on
+        it. The design does not darken the tiles — it darkens the EDGES, which pushes the
+        streets back without flattening the middle, and leaves the lit things (the pins, the
+        walker, a halo) sitting in the one part that is still bright.
+
+        `pointer-events: none` in CSS, or it would eat every tap meant for a pin under it.
+      */}
+      <rect className="map-vignette" x="0" y={MAPBAR_H} width={box.w} height={box.h - MAPBAR_H} />
+
+      {/*
+        The best thing you cannot see, riding the right edge. Tapping it selects the echo,
+        which is the whole offer: here is the good one, and it is that way.
+
+        Above the vignette, because a marker the vignette dims is a marker at the darkest
+        part of the screen.
+      */}
+      {edge && (
+        <g
+          className="map-edge"
+          transform={`translate(${box.w} ${edge.y.toFixed(1)})`}
+          onPointerDown={(e) => {
+            e.stopPropagation();
+            onSelect(edge.echo.id);
+          }}
+          role="button"
+          aria-label={`${edge.rarity === "singular" ? "Singular" : "Rare"} echo, ${coarse(edge.km)} away, off the edge of the map`}
+        >
+          <rect className="map-edge-plate" x="-124" y="-17" width="130" height="34" rx="14" />
+          <circle className="map-edge-dot" cx="-108" cy="0" r="4" />
+          <text className="map-edge-text" x="-97" y="4">
+            {edge.rarity === "singular" ? "Singular" : "Rare"} · {coarse(edge.km)}
+          </text>
+          <path className="map-edge-arrow" d="M-20 -5 L-14 0 L-20 5" />
+        </g>
+      )}
     </svg>
   );
 }
@@ -723,6 +849,15 @@ export function RouteMap({
  * reports zero at the end of a journey, so the pip goes away rather than confidently
  * pointing north at somebody who has stopped.
  */
+/**
+ * A 66 degree wedge reaching 96px ahead, pointing up before it is rotated.
+ *
+ * The angle is the honest one rather than a pretty one: a phone's course over ground on
+ * foot is routinely thirty degrees out either way, so a cone narrower than this would
+ * claim a precision the number does not have.
+ */
+const CONE = "M0 0 L-52.4 -80.5 A96 96 0 0 1 52.4 -80.5 Z";
+
 function Here({
   x,
   y,
@@ -752,6 +887,19 @@ function Here({
 
   return (
     <g className={`here here-${mode}`} transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`}>
+      {/*
+        WHICH WAY YOU ARE POINTED, as a cone rather than only a pip.
+
+        A 5px triangle on the rim says the direction and nothing about how sure we are of
+        it, and the answer is "not very": this is course over ground, which is meaningless
+        below walking pace and wobbles hard at it. A wide soft cone is the honest shape for
+        a bearing with that much slop in it, and it is legible from a hand at waist height
+        where the pip is not.
+
+        Only when there is a heading at all. Drawn from the same rotation as the pip, so
+        the two can never disagree.
+      */}
+      {spin && <path className="here-cone" d={CONE} transform={spin} />}
       <circle r="26" fill="url(#hereGlow)" />
       {spin && <path className="here-pip" d="M0 -25.5L5.4 -16.5H-5.4Z" transform={spin} />}
       <circle className="here-disc" r="13" />
