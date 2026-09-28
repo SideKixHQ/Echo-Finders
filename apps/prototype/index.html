@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Echo Finders</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--
+      THE FONTS, which were never actually loaded.
+
+      This file had the preconnect and no stylesheet, so Sora, Space Grotesk and the
+      Poppins the CSS asked for were all absent and every screen fell back to whatever
+      sans the device had. A preconnect opens a socket to a server nobody then asks for
+      anything, which is why it looked deliberate and survived: the line is there, it is
+      just half of the pair.
+
+      `display=swap` so text is readable immediately on a cold phone rather than invisible
+      while the font arrives. That matters more here than usual — the first thing anybody
+      does with this is open it in a street.
+    -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&family=Space+Grotesk:wght@400;500&display=swap"
+    />
   </head>
   <body>
     <div id="root"></div>

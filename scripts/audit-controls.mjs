@@ -64,7 +64,18 @@ for (let i = 0; i < 60; i++) {
 const tile=(bg,fg)=>Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"><rect width="256" height="256" fill="${bg}"/><path d="M0 64H256M0 128H256M64 0V256M128 0V256" stroke="${fg}" stroke-width="2" fill="none"/></svg>`);
 
 const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
-const ctx = await b.newContext({ viewport:{width:390,height:844}, deviceScaleFactor:2, isMobile:true,
+/*
+   `ignoreHTTPSErrors` so the webfonts actually arrive.
+
+   This sandbox routes HTTPS through a proxy Chromium does not trust, so the Google Fonts
+   stylesheet was refused and every measurement below was taken against a fallback sans.
+   That is the wrong thing to measure: the 11px floor and the 44px targets are about the
+   type that ships, and Sora's metrics are not the system font's. It also put a cert error
+   in the PAGE ERRORS list, where a real one would then have been easy to miss.
+
+   Only the test harness trusts it. Nothing about the app changes.
+*/
+const ctx = await b.newContext({ viewport:{width:390,height:844}, deviceScaleFactor:2, isMobile:true, ignoreHTTPSErrors:true,
   hasTouch:true, permissions:['geolocation'], geolocation:{latitude:40.7033,longitude:-74.0170} });
 const p = await ctx.newPage();
 const errors = [];
@@ -217,6 +228,8 @@ const focusSweep = async (label) => {
 const focus = [];
 
 await p.goto(`http://127.0.0.1:${PORT}/`,{waitUntil:'domcontentloaded'}); await p.waitForTimeout(800);
+// Measuring before the webfont lands measures the fallback.
+await p.evaluate(() => document.fonts.ready);
 await capture('onboarding/welcome');
 // Walk the onboarding, capturing every step.
 for (let i=0;i<9 && await p.locator('.onb').count();i++){
