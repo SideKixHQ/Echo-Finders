@@ -178,7 +178,13 @@
 body {
   background: var(--stage, #07080c);
   color: var(--white);
-  font-family: Poppins, system-ui, -apple-system, sans-serif;
+  /*
+     Sora, not Poppins. Poppins came from the first phone prototype; every one of the nine
+     approved boards sets `font-family: Sora`, and Sora is the one the type scale was
+     drawn against. The app was asking for a font the design had moved off and loading
+     neither.
+  */
+  font-family: Sora, system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   display: grid;
