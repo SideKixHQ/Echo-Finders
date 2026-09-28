@@ -2924,3 +2924,126 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .nowhere-ring { animation: none; opacity: 0.35; }
 }
+
+/* ── Hearing it ─────────────────────────────────────────────────────────────────
+   The ribbon is warm because it IS the echo. Every control on this screen is cool
+   because you operate it. The design board drew the pause button ember, which puts
+   the loudest warm object on the screen on the one thing that is not an echo. */
+.hear {
+  position: absolute; inset: 0; z-index: 40;
+  background: linear-gradient(#101534 0%, #100e0a 42%, #07080c 100%);
+  display: flex; flex-direction: column;
+  padding-bottom: calc(var(--nav-h) + 6px);
+  overflow: hidden;
+}
+
+.hear-plate { position: absolute; left: 0; right: 0; top: 0; height: 300px; overflow: hidden; }
+.hear-plate img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* No plate cleared for this one. A warm field rather than a fake window: a fabricated
+   provenance sitting in a repository is the kind of thing that later gets believed. */
+.hear-noplate {
+  width: 100%; height: 100%;
+  background:
+    radial-gradient(70% 90% at 30% 20%, rgba(255, 158, 18, 0.22), transparent 62%),
+    radial-gradient(60% 80% at 78% 40%, rgba(123, 59, 255, 0.18), transparent 64%),
+    #12101c;
+}
+.hear-fade {
+  position: absolute; inset: 0;
+  background: linear-gradient(rgba(7, 8, 12, 0) 48%, #07080c 100%);
+}
+.hear-credit {
+  position: absolute; left: 18px; right: 18px; bottom: 12px; margin: 0;
+  font-size: 11px; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.72);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+.hear-back {
+  position: absolute; left: 14px; top: calc(48px + env(safe-area-inset-top));
+  width: 44px; height: 44px; border-radius: 50%; cursor: pointer;
+  display: grid; place-items: center; color: var(--white);
+  background: rgba(11, 15, 43, 0.5); border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(12px);
+}
+.hear-back svg {
+  width: 17px; height: 17px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+
+.hear-say { position: relative; margin-top: 312px; padding: 0 18px; flex: none; }
+.hear-kicker {
+  display: flex; align-items: center; gap: 10px; margin: 0;
+  font-size: 11px; font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
+}
+.hear-rarity { color: var(--ember-core); }
+.hear-say h1 { margin: 10px 0 0; font-size: 22px; font-weight: 500; line-height: 1.24; }
+
+.hear-track { position: relative; margin: auto 0; flex: none; }
+/* The whole band takes the drag, not a thin line inside it. `touch-action: none` because
+   a horizontal drag on a phone is a page gesture until something claims it, and a scrubber
+   that scrolls the page instead of seeking is a scrubber nobody uses twice. */
+/* The whole band, plus a strip above and below it, because a finger is 44px across and
+   the loud parts of a waveform are two. Measured: without the padding the thin sections
+   of the ribbon were a six pixel target. */
+.hear-hit {
+  display: block; padding: 10px 0; cursor: pointer; touch-action: none;
+}
+.hear-wave { display: block; width: 100%; height: 130px; }
+.hear-heard { fill: url(#ribHeard); }
+.hear-tocome { fill: rgba(255, 158, 18, 0.22); }
+.hear-head { stroke: var(--aqua); stroke-width: 2; stroke-linecap: round; }
+.hear-head-dot { fill: var(--aqua); }
+.hear-clock {
+  display: flex; justify-content: space-between; margin: 2px 0 0; padding: 0 18px;
+  font-size: 12px; color: var(--muted);
+}
+
+.hear-transport {
+  flex: none; display: flex; align-items: center; justify-content: center; gap: 26px;
+  margin-top: 8px;
+}
+.hear-transport button {
+  width: 48px; height: 48px; border-radius: 50%; border: 0; cursor: pointer;
+  background: none; color: var(--text); display: grid; place-items: center;
+}
+.hear-transport button svg {
+  width: 23px; height: 23px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round;
+}
+.hear-go {
+  width: 72px !important; height: 72px !important;
+  background: linear-gradient(140deg, #7dfff2, var(--aqua)) !important;
+  color: #042b28 !important; box-shadow: 0 0 40px rgba(0, 255, 231, 0.3);
+}
+.hear-go svg { width: 24px !important; height: 24px !important; fill: currentColor !important; stroke: none !important; }
+
+.hear-acts { flex: none; display: flex; gap: 9px; padding: 16px 18px 0; }
+.hear-acts button {
+  flex-grow: 1; display: flex; align-items: center; justify-content: center; gap: 7px;
+  min-height: 44px; border-radius: 13px; cursor: pointer; font: inherit; font-size: 14px;
+  color: var(--text); background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+.hear-acts button svg {
+  width: 15px; height: 15px; fill: none; stroke: currentColor;
+  stroke-width: 1.8; stroke-linejoin: round;
+}
+.hear-acts button.on { color: var(--cool); border-color: rgba(0, 255, 231, 0.4); }
+.hear-acts button.on svg { fill: currentColor; }
+/* Reading along, over the plate and the ribbon. It stops above the transport, because
+   somebody reading along is exactly the person most likely to want to pause or jump. */
+.hear-read {
+  /*
+     Opaque, not 96%. Four percent of a lit archive plate and a 22px title is plenty to
+     read through, and the ghost of the headline sitting behind the transcript made both
+     harder to read than either alone. A panel you can see through is only ever worth it
+     when what is behind it is dark and quiet, and this one covers the brightest thing on
+     the screen.
+  */
+  position: absolute; left: 0; right: 0; top: 0; bottom: 210px; z-index: 2;
+  background: #07080c; overflow-y: auto;
+  padding: calc(52px + env(safe-area-inset-top)) 4px 8px;
+}
+/* Above the transcript, so the way out of the screen does not disappear behind the words. */
+.hear-back { z-index: 3; }

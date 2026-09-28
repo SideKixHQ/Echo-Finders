@@ -29,6 +29,7 @@ import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
 import { Synced } from "./Synced";
 import { Walk } from "./Walk";
 import { Nowhere } from "./Nowhere";
+import { Ribbon } from "./Ribbon";
 import type { Detent } from "./Sheet";
 import type { CaptureEvent, Echo, EchoCategory } from "@echofinders/core";
 import {
@@ -186,6 +187,16 @@ export function App() {
     progressRef.current = fraction;
     setProgress(fraction);
   }, []);
+  /**
+   * Whether the listening screen has the phone.
+   *
+   * Playing and *listening* are not the same state, which is why this is a flag rather
+   * than `playing`. Starting an echo deliberately — from a row, from a pin, from the sync
+   * moment — is somebody settling in to hear it, and that gets the whole screen. Pressing
+   * back leaves it playing and hands the map back, with the transport in the sheet, which
+   * is what somebody who wants to keep walking is asking for.
+   */
+  const [listening, setListening] = useState(false);
   // The listener's own setting drives it, not a constant. `handsFree` is off by default
   // (PRIVACY_DEFAULTS), so an echo collects itself on arrival and then waits to be played.
   const { state, session, walk, store } = useJourney(roaming ? null : route, LIBRARY, {
@@ -420,6 +431,26 @@ export function App() {
     });
     return () => publishNowPlaying(null);
   }, [nowPlaying, session]);
+
+  /**
+   * Move the playhead, from anywhere.
+   *
+   * There is no real audio for most of the library, so "where you are" is a clock started
+   * when playback began (`startedRef`). Seeking is therefore moving that start time, not
+   * telling a decoder anything, and the sum has to be identical wherever it is done or the
+   * two scrubbers disagree about the same echo. It was inline in the sheet; the ribbon is
+   * the second caller.
+   */
+  const seekTo = useCallback(
+    (fraction: number) => {
+      if (!nowPlaying) return;
+      const clamped = Math.max(0, Math.min(1, fraction));
+      const d = ((simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS) / rate;
+      startedRef.current = { id: nowPlaying.id, at: Date.now() - clamped * d * 1000 };
+      setPlayhead(clamped);
+    },
+    [nowPlaying, simple, rate, setPlayhead],
+  );
 
   const pageVisible = usePageVisible();
   /*
@@ -1148,6 +1179,7 @@ export function App() {
                   onPlay={(echo) => {
                     session.play(echo);
                     setSelectedId(null);
+                    setListening(true);
                   }}
                   onClose={() => setSelectedId(null)}
                 />
@@ -1171,7 +1203,10 @@ export function App() {
                 stateOf={stateOf}
                 selectedId={selectedId}
                 onSelect={setSelectedId}
-                onPlay={(echo) => session.play(echo)}
+                onPlay={(echo) => {
+                  session.play(echo);
+                  setListening(true);
+                }}
                 isPlaying={(id) =>
                   state.playback.kind !== "idle" && state.playback.item.echo.id === id
                 }
@@ -1202,13 +1237,7 @@ export function App() {
                 onSimple={setSimple}
                 rate={rate}
                 onRate={setRate}
-                onSeek={(f) => {
-                  if (!nowPlaying) return;
-                  const clamped = Math.max(0, Math.min(1, f));
-                  const d = ((simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS) / rate;
-                  startedRef.current = { id: nowPlaying.id, at: Date.now() - clamped * d * 1000 };
-                  setPlayhead(clamped);
-                }}
+                onSeek={seekTo}
                 detent={detent}
                 onDetent={setDetent}
                 onNext={() => session.skip()}
@@ -1255,6 +1284,7 @@ export function App() {
               onPlay={(echo) => {
                 session.play(echo);
                 setPlanOpen(false);
+                setListening(true);
               }}
               onClose={() => setPlanOpen(false)}
             />
@@ -1264,7 +1294,10 @@ export function App() {
             <Collection
               captured={kept}
               privacy={privacy}
-              onPlay={(echo) => session.play(echo)}
+              onPlay={(echo) => {
+                session.play(echo);
+                setListening(true);
+              }}
               onSettings={() => setTab("settings")}
               isPlaying={(id) =>
                 state.playback.kind !== "idle" && state.playback.item.echo.id === id
@@ -1429,6 +1462,45 @@ export function App() {
             />
           )}
 
+        {/*
+          Hearing it, over everything but the sync moment.
+
+          It leaves the tab bar showing, because it is a state of the app rather than a modal:
+          you can walk away from an echo into My Echoes and it keeps playing. The sync moment
+          sits above it, since arriving somewhere new outranks listening to somewhere old.
+        */}
+        {listening && nowPlaying && (
+          <Ribbon
+            echo={nowPlaying}
+            progress={progress}
+            playing={playing}
+            durationS={(simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS}
+            saved={chosen.has(nowPlaying.id)}
+            onSave={() => toggleSave(nowPlaying)}
+            onPlayPause={() => {
+              /*
+                Stopped is not paused. Stop cancelled the utterance, so there is nothing to
+                resume and `session.resume()` would walk the playhead over silence — the
+                same distinction the sheet's transport already makes.
+              */
+              if (playing) session.pause();
+              else if (stopped) session.play(nowPlaying);
+              else session.resume();
+            }}
+            onSeek={seekTo}
+            /*
+              Fifteen seconds as a fraction, because the playhead is a clock rather than a
+              decoder position. Signed, so one handler serves both buttons.
+            */
+            onNudge={(seconds) => {
+              const d = (simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS;
+              if (d > 0) seekTo(progressRef.current + seconds / d);
+            }}
+            simple={simple}
+            onClose={() => setListening(false)}
+          />
+        )}
+
           <Nav
             tab={tab}
             onChange={setTab}
@@ -1553,6 +1625,7 @@ export function App() {
           onListen={() => {
             session.play(syncedNow.echo);
             setSyncedNow(null);
+            setListening(true);
           }}
           onLater={() => setSyncedNow(null)}
         />

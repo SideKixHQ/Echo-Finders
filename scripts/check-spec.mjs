@@ -173,6 +173,13 @@ await phase('map', async () => {});
 await phase('playing', async () => {
   await p.locator('.erow-plate').first().click();
   await p.waitForTimeout(2200);
+  /*
+   * Playing now opens the listening screen over the map, and these measurements are of the
+   * sheet's own transport underneath it. Back out first, or every later click lands on the
+   * listening screen: the run failed on the plate's own fade swallowing the next tap.
+   */
+  await p.getByLabel('Back to the map').click();
+  await p.waitForTimeout(500);
 });
 /*
  * The design's full card lives on the package screen, which is now somewhere you go rather

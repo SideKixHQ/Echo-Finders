@@ -168,10 +168,42 @@ const focusSweep = async (label) => {
         name: (el.getAttribute('aria-label') || el.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 44),
         cls: (el.className.baseVal ?? el.className ?? '').toString().split(' ')[0],
         tag: el.tagName.toLowerCase(),
-        // A ring is an outline with width, or a shadow standing in for one. Either is
-        // visible; neither is not.
-        ring: (parseFloat(cs.outlineWidth) || 0) > 0 && cs.outlineStyle !== 'none',
-        shadow: cs.boxShadow !== 'none',
+        /*
+          A ring is an outline with width, or a shadow standing in for one. Either is
+          visible; neither is not.
+
+          AN ANCESTOR'S RING COUNTS, which this used to miss and report as a failure. A
+          native <select> inside a labelled row is the case: the ring belongs on the row,
+          because the row is the thing a person sees and the select inside it is a 15px
+          strip of text. The question WCAG 2.4.7 asks is whether focus is visible, not
+          which element the outline is painted on, so this walks up until it finds one or
+          leaves the interactive control's own box.
+        */
+        ring: (() => {
+          for (let n = el; n && n !== document.body; n = n.parentElement) {
+            const s = getComputedStyle(n);
+            if ((parseFloat(s.outlineWidth) || 0) > 0 && s.outlineStyle !== 'none') return true;
+            // Only a wrapper that is drawn as one control counts, not the whole page.
+            if (n !== el && !n.className.toString().length) return false;
+          }
+          return false;
+        })(),
+        /*
+          A shadow only counts if focus is what PUT IT THERE.
+
+          `boxShadow !== 'none'` was the test, and it excused every control with a
+          permanent glow — which on this app is the aqua play button, the one control most
+          likely to be operated from a keyboard. Blurring and re-reading is the only way to
+          ask the question honestly: the element is measured focused, blurred, measured
+          again, and focus is restored so the walk carries on from the same place.
+        */
+        shadow: (() => {
+          const lit = cs.boxShadow;
+          el.blur();
+          const dark = getComputedStyle(el).boxShadow;
+          el.focus();
+          return lit !== 'none' && lit !== dark;
+        })(),
       };
     });
     if (!at) break;
@@ -214,7 +246,19 @@ await capture('map/half');
 focus.push(...await focusSweep('map/half'));
 await p.locator('.erow-body').first().click(); await p.waitForTimeout(500);
 await capture('map/row-open');
+/*
+ * Playing an echo now opens the listening screen, which is a screen in its own right and
+ * gets inventoried like one. Without this step the audit's next click landed on the
+ * listening screen instead of the sheet and the whole walk timed out, which is the audit
+ * doing its job: a screen appeared that it had never been told about.
+ */
 await p.locator('.erow-plate').first().click(); await p.waitForTimeout(2200);
+await capture('listening');
+focus.push(...await focusSweep('listening'));
+await p.getByRole('button', { name: /Read it/ }).click(); await p.waitForTimeout(500);
+await capture('listening/reading');
+await p.getByRole('button', { name: /Hide the words/ }).click(); await p.waitForTimeout(400);
+await p.getByLabel('Back to the map').click(); await p.waitForTimeout(600);
 await capture('map/playing');
 const grab = p.locator('.grab-zone');
 await grab.click(); await p.waitForTimeout(500); await capture('map/full');
