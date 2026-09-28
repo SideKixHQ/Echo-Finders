@@ -2549,3 +2549,38 @@ body {
 /* Heard is the ember gone cold. */
 .pin-heard .pin-body { stroke: var(--ember-deep); }
 .pin-heard .pin-icon { stroke: var(--ember-deep); }
+
+/*
+ * My Echoes, as board 7 draws it.
+ *
+ * Progress moved out of a thin bar and into three numbers, because this is the screen
+ * somebody opens sitting down and a count is what they came for. Ember on the counts,
+ * because a number of echoes is content; the gear stays cool, because it is a control.
+ */
+.coll-head { display: flex; flex-direction: column; gap: 14px; }
+.coll-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.coll-settings {
+  width: 44px; height: 44px; flex: none; border-radius: 12px; cursor: pointer;
+  border: 1px solid var(--line); background: none; color: var(--muted);
+  display: grid; place-items: center;
+}
+.coll-settings svg {
+  width: 19px; height: 19px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.coll-stats { display: flex; gap: 8px; }
+.coll-stat {
+  flex: 1 1 0; min-width: 0; text-align: center; padding: 13px 10px;
+  border-radius: 14px; background: var(--slate); border: 1px solid var(--line);
+}
+.coll-stat-rare { border-color: rgba(255, 158, 18, 0.3); }
+.coll-stat-n {
+  display: block; font-family: "Space Grotesk", monospace;
+  font-size: 21px; font-weight: 500; color: var(--cool);
+}
+.coll-stat-ember { color: var(--ember); }
+.coll-stat-core { color: var(--ember-core); }
+.coll-stat small {
+  font-family: "Space Grotesk", monospace; font-size: 11px;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+}

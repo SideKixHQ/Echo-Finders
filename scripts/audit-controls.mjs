@@ -227,7 +227,14 @@ await p.locator('.sheet .seg', {hasText:'Saved'}).click(); await p.waitForTimeou
 await capture('sheet/saved');
 await p.locator('.nav button').nth(1).click(); await p.waitForTimeout(700); await capture('my-echoes');
 focus.push(...await focusSweep('my-echoes'));
-await p.locator('.nav button').nth(2).click(); await p.waitForTimeout(700); await capture('settings');
+/*
+ * Settings is no longer a tab. It is a gear on My Echoes, so the audit walks the route a
+ * person actually walks. Worth noting why this line changed rather than just changing it:
+ * moving settings behind that gear made it unreachable for anybody with an empty
+ * collection, because Collection returns early before the header renders. The header is
+ * on the empty branch now, and this is the walk that proves it.
+ */
+await p.locator('.coll-settings').click(); await p.waitForTimeout(700); await capture('settings');
 focus.push(...await focusSweep('settings'));
 await p.locator('.nav button').first().click(); await p.waitForTimeout(600);
 await p.getByLabel(/Download this journey|Your journey/).click().catch(()=>{});

@@ -1008,8 +1008,8 @@ export function App() {
             <Collection
               captured={kept}
               privacy={privacy}
-              total={inCorridor}
               onPlay={(echo) => session.play(echo)}
+              onSettings={() => setTab("settings")}
               isPlaying={(id) =>
                 state.playback.kind !== "idle" && state.playback.item.echo.id === id
               }
@@ -1017,14 +1017,13 @@ export function App() {
               saved={savedEchoes}
               onSave={toggleSave}
               mode={roaming ? roamMode : route.mode}
-
             />
           )}
 
           {tab === "settings" && (
             <Privacy
               onJourney={() => {
-                setTab("map");
+                setTab("echoes");
                 openPackage();
               }}
               journey={

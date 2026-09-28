@@ -20,7 +20,7 @@
  * sits under it, quieter, as the record.
  */
 
-import { rarityReasons, type CaptureEvent, type Echo, type TravelMode } from "@echofinders/core";
+import { rarityOf, rarityReasons, type CaptureEvent, type Echo, type TravelMode } from "@echofinders/core";
 import { CATEGORY_ICON } from "./categories";
 import type { PrivacySettings } from "@echofinders/core";
 import { holdsPersonalLocation } from "@echofinders/core";
@@ -28,7 +28,8 @@ import { holdsPersonalLocation } from "@echofinders/core";
 interface Props {
   readonly captured: readonly CaptureEvent[];
   readonly privacy: PrivacySettings;
-  readonly total: number;
+  /** Settings lives behind a gear here now, rather than taking a third of the tab bar. */
+  readonly onSettings: () => void;
   /** Play one, from anywhere, at any time — which is the whole point of keeping them. */
   readonly onPlay: (echo: Echo) => void;
   readonly isPlaying: (echoId: string) => boolean;
@@ -64,8 +65,8 @@ const EMPTY_LINE: Record<TravelMode, string> = {
 export function Collection({
   captured,
   privacy,
-  total,
   onPlay,
+  onSettings,
   isPlaying,
   isHeard,
   saved,
@@ -74,6 +75,27 @@ export function Collection({
   if (captured.length === 0 && saved.length === 0) {
     return (
       <div className="screen-body">
+        {/*
+          The title bar comes with the empty state too, and that is not cosmetic.
+
+          Settings used to be a tab. Now it is a gear on this screen, and this screen has
+          an early return for somebody who has collected nothing — which is everybody, on
+          first run. Without the bar here, a new listener could not reach settings at all:
+          not privacy, not the voice, not the theme, nothing, until they had synced their
+          first echo. Running the app is what found it; reading the diff would not have.
+        */}
+        <header className="screen-head coll-head">
+          <div className="coll-title">
+            <h1>My Echoes</h1>
+            <button className="coll-settings" onClick={onSettings} aria-label="Settings">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7h10M18 7h2M4 17h4M12 17h8" />
+                <circle cx="16" cy="7" r="2.4" />
+                <circle cx="10" cy="17" r="2.4" />
+              </svg>
+            </button>
+          </div>
+        </header>
         {/*
           Three sentences for three products, because "stand on the spot" is arrival on foot
           and an instruction to abandon the car when driving. This was one sentence, the
@@ -96,18 +118,53 @@ export function Collection({
   // Not captures: these have never been stood on. Shown apart for exactly that reason.
   const wishlist = saved.filter((e) => !captured.some((c) => c.echo.id === e.id));
 
+  const singularCount = captured.filter((c) => rarityOf(c.echo) === "singular").length;
+  const minutes = Math.round(captured.reduce((t, c) => t + c.echo.durationS, 0) / 60);
+
   return (
     <div className="screen-body">
-      <header className="screen-head">
-        <h1>Your collection</h1>
-        <p>
-          {captured.length} of {total} synced here
-        </p>
-        {/* The number as a shape. "1 of 12" is a fact; a bar that is a twelfth full is an
-            invitation to go and get the rest, which is what this screen is for. */}
-        <span className="coll-bar" aria-hidden="true">
-          <i style={{ width: `${total > 0 ? (captured.length / total) * 100 : 0}%` }} />
-        </span>
+      <header className="screen-head coll-head">
+        <div className="coll-title">
+          <h1>My Echoes</h1>
+          {/*
+            Sliders rather than a gear. The gear was twelve lobes and eight arcs at 20px
+            with a 1.4px stroke, which renders as a grey smudge; sliders say settings just
+            as well and hold their shape.
+          */}
+          <button className="coll-settings" onClick={onSettings} aria-label="Settings">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h10M18 7h2M4 17h4M12 17h8" />
+              <circle cx="16" cy="7" r="2.4" />
+              <circle cx="10" cy="17" r="2.4" />
+            </svg>
+          </button>
+        </div>
+
+        {/*
+          Three numbers, because progress belongs on the screen you look things up on
+          rather than the one you walk with.
+
+          SINGULAR will read 0 until the content earns it. `rarityOf` takes difficulty from
+          trigger radius, opening hours and remoteness, and nothing we ship is tighter than
+          60m or limited by the clock, so every echo in the library is common or uncommon.
+          Showing the zero is the honest version: the tile is not broken, the content has
+          not got there yet, and lowering the thresholds to light it up would be assigning
+          rarity rather than earning it.
+        */}
+        <div className="coll-stats">
+          <span className="coll-stat">
+            <b className="coll-stat-n coll-stat-ember">{captured.length}</b>
+            <small>Synced</small>
+          </span>
+          <span className="coll-stat coll-stat-rare">
+            <b className="coll-stat-n coll-stat-core">{singularCount}</b>
+            <small>Singular</small>
+          </span>
+          <span className="coll-stat">
+            <b className="coll-stat-n">{minutes}</b>
+            <small>Minutes</small>
+          </span>
+        </div>
       </header>
 
       {groups.map(({ key, label, items }) => (
