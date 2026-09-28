@@ -86,6 +86,37 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
     if (lng === undefined) fail("at.lng", "is required and must be a number");
   }
 
+  /*
+   * Opening hours, and why this is here rather than in the "nice to have" pile.
+   *
+   * `Echo.hours` has existed on the type since the beginning and `rarityOf` scores a point
+   * for it — an echo you can only open after dark, or in one season, is genuinely harder
+   * to stand in than one you can reach at noon on a Tuesday. But nothing ever read it out
+   * of a file, so the field was unreachable from content and one of rarity's three inputs
+   * was dead. Writers could not have earned that point if they had tried.
+   *
+   * Hours wrap, deliberately. `{ fromHour: 21, toHour: 4 }` is an echo for after dark, and
+   * a range that did not wrap could not express the one case this field is most for.
+   */
+  let hours: { fromHour: number; toHour: number } | undefined;
+  const hoursInput = input["hours"];
+  if (hoursInput !== undefined && hoursInput !== null) {
+    if (!isRecord(hoursInput)) {
+      fail("hours", "should be { fromHour, toHour }, in local whole hours");
+    } else {
+      const from = hoursInput["fromHour"];
+      const to = hoursInput["toHour"];
+      const whole = (v: unknown): v is number =>
+        typeof v === "number" && Number.isInteger(v) && v >= 0 && v <= 23;
+      if (!whole(from)) fail("hours.fromHour", "should be a whole number of hours, 0 to 23");
+      if (!whole(to)) fail("hours.toHour", "should be a whole number of hours, 0 to 23");
+      else if (whole(from) && from === to) {
+        fail("hours", "opens and closes at the same hour, which is either always or never");
+      }
+      if (whole(from) && whole(to) && from !== to) hours = { fromHour: from, toHour: to };
+    }
+  }
+
   const category = str("category") as EchoCategory | undefined;
   if (category !== undefined && !ECHO_CATEGORIES.includes(category)) {
     fail("category", `"${category}" is not a known category`);
@@ -167,6 +198,7 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
     ...optional("renders", renderList(input["renders"], durationS)),
     ...optional("pronunciations", pronunciationList(input["pronunciations"])),
     ...optional("remoteness", num("remoteness", false)),
+    ...optional("hours", hours),
     ...optional("tags", stringList(input["tags"])),
     ...optional("relatedIds", stringList(input["relatedIds"])),
     ...optional("perspectiveIds", stringList(input["perspectiveIds"])),

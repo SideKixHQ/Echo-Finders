@@ -1,0 +1,89 @@
+# The first echo written to be RARE, and written that way on purpose.
+#
+# Every echo in the library until now scored common or uncommon, so the halo on the map,
+# the Singular count on My Echoes and the whole "you are the fourth person to stand here"
+# idea had nothing to stand on. `rarityOf` earns difficulty from three things: how exactly
+# you must place yourself, whether the place is open at all hours, and how far it is from
+# anywhere many people go. This echo earns two of the three honestly.
+#
+#   triggerRadiusKm 0.03  -> +2, because the story IS a specific patch of wall
+#   hours 8 to 17         -> +1, because you cannot see pockmarks in the dark
+#                            = 3, which is "rare"
+#
+# Neither is a dial. The scars really are on one facade and really are invisible at night,
+# which is the test the engine's own note sets: rarity has to be a fact about the world
+# rather than pacing. If either stopped being true the echo should stop being rare.
+#
+# True Crime with nobody to protect. Everyone involved has been dead for a century, nobody
+# was ever charged, and the case is formally unsolved — which is also the most interesting
+# thing about it and the reason the script refuses to name a culprit.
+id: wall-street-1920-the-scars
+title: Nobody ever repaired this wall
+summary: >-
+  The deadliest attack in America until 1920 happened on this corner, and the building
+  still carries it.
+place: 23 Wall Street, Manhattan
+at: { lat: 40.70687, lng: -74.01029 }
+# Thirty metres. You have to be at the Wall Street facade, not merely at the junction:
+# stand on the Broad Street side and you are looking at the wrong wall.
+triggerRadiusKm: 0.03
+# Daylight only. The whole echo asks you to look at shallow marks in grey marble, which is
+# a thing you cannot do after dark under sodium light.
+hours: { fromHour: 8, toHour: 17 }
+voice: wC1005J19tvhoqqC2hkf
+category: true-crime
+format: short
+durationS: 115
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.9
+remoteness: 0
+tags: [new-york, financial-district, 1920, unsolved, morgan]
+teaser: Put your hand flat on the stone. Feel the pitting.
+script: |
+  Put your hand flat on the stone, about waist height. Feel the pitting.
+
+  That is not weathering. On the sixteenth of September nineteen twenty, at one minute past
+  noon, a horse-drawn cart stopped outside this building. It was carrying a hundred pounds
+  of dynamite and several hundred pounds of cast iron window weights, cut into slugs.
+
+  When it went off, the iron went sideways. Thirty-eight people were killed and hundreds
+  were hurt, most of them clerks, messengers and stenographers on their lunch break. The
+  youngest was a messenger boy of seventeen.
+
+  This was the House of Morgan, the most powerful bank in the country, and everybody
+  assumed the bank was the target. The Bureau of Investigation spent three years on it. They
+  questioned anarchists, socialists and union organisers, and they never charged anybody.
+  It is still unsolved.
+
+  The bank reopened the next morning. That was the point, and it was also the decision that
+  left these marks: Morgan refused to repair the facade. A hundred years of cleaning and
+  restoration have gone past them.
+
+  You are standing where the cart stood. Everybody who works on this street walks past this
+  wall, and almost nobody touches it.
+pronunciations:
+  - written: stenographers
+    say: steh-NOG-ruh-fers
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  # Nobody alive to name and nobody ever charged. This is the easiest case in the library
+  # and it is still marked for review, because "easy" is a judgement a human should make.
+  involvesLivingPeople: false
+  convictionStatus: unsolved
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-09-28"
+  contentWarning: >-
+    This echo describes a bombing that killed thirty-eight people. No injuries are
+    described in detail.
+sources:
+  - title: Investigation into the Wall Street explosion of 16 September 1920 — case file
+    publisher: United States Bureau of Investigation
+    retrievedAt: "2026-09-28"
+    rights: public-domain
+  - title: Coroner's records, City of New York, September 1920
+    publisher: New York City Municipal Archives
+    retrievedAt: "2026-09-28"
+    rights: public-domain

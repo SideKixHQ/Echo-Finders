@@ -1394,6 +1394,76 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wall-street-1920-the-scars",
+    "title": "Nobody ever repaired this wall",
+    "summary": "The deadliest attack in America until 1920 happened on this corner, and the building still carries it.",
+    "point": {
+      "at": {
+        "lat": 40.70687,
+        "lng": -74.01029
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "23 Wall Street, Manhattan"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 115,
+    "minAge": 16,
+    "quality": 0.9,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Investigation into the Wall Street explosion of 16 September 1920 — case file",
+        "publisher": "United States Bureau of Investigation",
+        "retrievedAt": "2026-09-28",
+        "rights": "public-domain"
+      },
+      {
+        "title": "Coroner's records, City of New York, September 1920",
+        "publisher": "New York City Municipal Archives",
+        "retrievedAt": "2026-09-28",
+        "rights": "public-domain"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Put your hand flat on the stone, about waist height. Feel the pitting.\n\nThat is not weathering. On the sixteenth of September nineteen twenty, at one minute past\nnoon, a horse-drawn cart stopped outside this building. It was carrying a hundred pounds\nof dynamite and several hundred pounds of cast iron window weights, cut into slugs.\n\nWhen it went off, the iron went sideways. Thirty-eight people were killed and hundreds\nwere hurt, most of them clerks, messengers and stenographers on their lunch break. The\nyoungest was a messenger boy of seventeen.\n\nThis was the House of Morgan, the most powerful bank in the country, and everybody\nassumed the bank was the target. The Bureau of Investigation spent three years on it. They\nquestioned anarchists, socialists and union organisers, and they never charged anybody.\nIt is still unsolved.\n\nThe bank reopened the next morning. That was the point, and it was also the decision that\nleft these marks: Morgan refused to repair the facade. A hundred years of cleaning and\nrestoration have gone past them.\n\nYou are standing where the cart stood. Everybody who works on this street walks past this\nwall, and almost nobody touches it.\n",
+    "teaser": "Put your hand flat on the stone. Feel the pitting.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "pronunciations": [
+      {
+        "written": "stenographers",
+        "say": "steh-NOG-ruh-fers"
+      }
+    ],
+    "remoteness": 0,
+    "hours": {
+      "fromHour": 8,
+      "toHour": 17
+    },
+    "tags": [
+      "new-york",
+      "financial-district",
+      "unsolved",
+      "morgan"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "unsolved",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-09-28",
+      "contentWarning": "This echo describes a bombing that killed thirty-eight people. No injuries are described in detail."
+    },
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "speech/wall-street-1920-the-scars",
+        "durationS": 115
+      }
+    ]
+  },
+  {
     "id": "wall-street-the-wall",
     "title": "The street is named after something that isn't there",
     "summary": "A nine-foot palisade crossed the island here, built mostly by people who were not free.",

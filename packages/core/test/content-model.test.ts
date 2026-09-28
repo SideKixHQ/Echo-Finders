@@ -191,3 +191,4 @@ describe("sponsored placements", () => {
     expect(errorsOn(malformed, "sponsorship.runsFrom")).toHaveLength(1);
   });
 });
+
