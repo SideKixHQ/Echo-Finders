@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 import { fileURLToPath } from "node:url";
 import { execSync } from "node:child_process";
@@ -25,12 +25,43 @@ function commit(): string {
   }
 }
 
+/**
+ * `/version.json`, so "is this old?" is one URL rather than an argument.
+ *
+ * The stamp already existed on the settings screen, which is two taps in from My Echoes
+ * and therefore no use at all to somebody staring at a page asking whether it updated.
+ * This is a flat file at a fixed address: open https://<the app>/version.json and it says
+ * which commit is live and when it was built.
+ *
+ * It sits alongside the settings stamp rather than replacing it, because they answer
+ * slightly different questions. The file says what the SERVER has. The settings line says
+ * what the JAVASCRIPT CURRENTLY RUNNING IN THIS TAB is, which is the one that catches a
+ * stale cached bundle. Two different answers means a cache, and that is worth being able
+ * to tell apart.
+ */
+function versionFile(): Plugin {
+  return {
+    name: "echo-finders-version",
+    generateBundle() {
+      this.emitFile({
+        type: "asset",
+        fileName: "version.json",
+        source: JSON.stringify(
+          { commit: commit(), builtAt: new Date().toISOString() },
+          null,
+          2,
+        ),
+      });
+    },
+  };
+}
+
 export default defineConfig({
   define: {
     __BUILD_COMMIT__: JSON.stringify(commit()),
     __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
   },
-  plugins: [react()],
+  plugins: [react(), versionFile()],
   resolve: {
     alias: {
       /**
