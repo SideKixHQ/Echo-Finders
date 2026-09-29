@@ -1176,6 +1176,9 @@ export function App() {
                 onZoom={setZoom}
                 minZoom={MIN_ZOOM}
                 maxZoom={MAX_ZOOM}
+                /* On foot only: the hum places echoes by bearing, and a bearing means
+                   nothing at 500 knots. Carried modes never had it and still do not. */
+                {...(onFoot ? { humming, onHum: setHumming } : {})}
                 overview={overview}
                 onOverview={setOverview}
                 downloaded={downloaded}

@@ -34,7 +34,7 @@
  */
 
 import { useCallback, useRef, useState } from "react";
-import { rarityOf, waveform, type Echo } from "@echofinders/core";
+import { rarityOf, type Echo } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
 import { platePng } from "./archive-plate";
 import { Transcript } from "./Transcript";
@@ -47,7 +47,6 @@ const RARITY_LABEL: Record<string, string> = {
 };
 
 /** Samples across the ribbon. Enough to read as sound, few enough to stay a shape. */
-const SAMPLES = 64;
 const W = 390;
 const H = 150;
 const MID = H / 2;
@@ -89,7 +88,7 @@ export function Ribbon({
   const left = Math.max(0, durationS - elapsed);
   const at = Math.max(0, Math.min(1, progress));
 
-  const path = ribbonPath((simple ? echo.simple?.script : null) ?? echo.script ?? "");
+  const phase = phaseOf(echo.id);
   const track = useRef<HTMLDivElement | null>(null);
   /*
    * Reading along happens HERE rather than by sending you back to the sheet's transcript
@@ -175,11 +174,14 @@ export function Ribbon({
         >
           <svg viewBox={`0 0 ${W} ${H}`} className="hear-wave" aria-hidden="true">
             <defs>
-              <linearGradient id="ribHeard" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#ffd77a" />
-                <stop offset="50%" stopColor="#ff9e12" />
-                <stop offset="100%" stopColor="#c96a00" />
-              </linearGradient>
+              {/* The board's two blurs. The wide one softens the three under-ribbons into
+                  light; the tight one keeps the bright core a shape rather than a haze. */}
+              <filter id="ribSoft" x="-20%" y="-40%" width="140%" height="180%">
+                <feGaussianBlur stdDeviation="5" />
+              </filter>
+              <filter id="ribSoft2" x="-20%" y="-40%" width="140%" height="180%">
+                <feGaussianBlur stdDeviation="2" />
+              </filter>
               <clipPath id="ribHeardClip">
                 <rect x="0" y="0" width={W * at} height={H} />
               </clipPath>
@@ -187,10 +189,19 @@ export function Ribbon({
                 <rect x={W * at} y="0" width={W - W * at} height={H} />
               </clipPath>
             </defs>
-            {/* Still to come: the same shape, banked down. */}
-            <path className="hear-tocome" d={path} clipPath="url(#ribToComeClip)" />
-            {/* Heard: the same shape, lit. */}
-            <path className="hear-heard" d={path} clipPath="url(#ribHeardClip)" />
+            {/*
+              Heard, at full strength. Still to come, banked right down. Same ribbon, so
+              the picture IS the scrubber rather than an ornament sitting next to one.
+
+              The clip is outside the moving group on purpose: the light flows, the
+              boundary between heard and unheard does not flow with it.
+            */}
+            <g clipPath="url(#ribHeardClip)">
+              <Flow phase={phase} />
+            </g>
+            <g clipPath="url(#ribToComeClip)" className="hear-tocome">
+              <Flow phase={phase} />
+            </g>
             <line className="hear-head" x1={W * at} y1={14} x2={W * at} y2={H - 14} />
             <circle className="hear-head-dot" cx={W * at} cy={MID} r="5" />
           </svg>
@@ -263,27 +274,87 @@ export function Ribbon({
 }
 
 /**
- * The ribbon as one closed path: a band that swells and narrows around the centre line.
+ * THE RIBBON, as board 6 draws it: sound as flowing light, not as a bar chart.
  *
- * Built from straight segments between sample midpoints rather than from bezier curves.
- * Curves through noisy samples overshoot, and an overshoot on a scrubber is a peak in a
- * place the audio does not have one. Sixty-four segments across 390 pixels is six pixels
- * each, which is below the eye's ability to see a corner anyway.
+ * What was here before was a closed band built from sixty-four samples of `waveform()`,
+ * which derives amplitude from the script's sentence lengths. Two things were wrong with
+ * it, and the first one is the one that was visible from across the room: rendered, it was
+ * a jagged brown blob. A single flat fill of dim ember over black has no light in it at
+ * all, and the noise it was drawing has no rhythm, because sentence lengths are not a
+ * rhythm.
+ *
+ * The second is worse and quieter. It looked like a waveform, so it claimed to be one, and
+ * its peaks are in places the audio has nothing. The board never asked for amplitude. Its
+ * note says the reference was "taken but not copied": sound drawn as flowing light, with
+ * the rainbow removed and the shape given a job. So there is no data here to be wrong.
+ *
+ * Four overlapping bezier ribbons, three of them blurred, blended with `screen` so they
+ * ADD where they cross — which is where the light comes from, and why the flat fill could
+ * never have got there. The palette is the board's, warm, because this is the echo
+ * playing and the echo is ember.
+ *
+ * The paths are the board's own, to the coordinate.
  */
-function ribbonPath(script: string): string {
-  const amps = waveform(script, SAMPLES);
-  const step = W / (SAMPLES - 1);
-  const top: string[] = [];
-  const bottom: string[] = [];
-  for (let i = 0; i < SAMPLES; i++) {
-    const x = (i * step).toFixed(1);
-    // Half the band, so a full amplitude fills the height with a little air either side.
-    const half = (amps[i] ?? 0.4) * (MID - 12);
-    top.push(`${x} ${(MID - half).toFixed(1)}`);
-    bottom.push(`${x} ${(MID + half).toFixed(1)}`);
-  }
-  return `M${top.join("L")}L${bottom.reverse().join("L")}Z`;
+const RIBBONS: readonly { readonly d: string; readonly fill: string; readonly opacity: number; readonly blur?: string }[] = [
+  {
+    d: "M0 60 C 44 30, 78 26, 110 42 C 142 58, 164 86, 200 88 C 238 90, 262 58, 296 44 C 328 31, 360 36, 390 52 L390 70 C 360 54, 328 49, 296 62 C 262 76, 238 108, 200 106 C 164 104, 142 76, 110 60 C 78 44, 44 48, 0 78 Z",
+    fill: "#c96a00", opacity: 0.55, blur: "url(#ribSoft)",
+  },
+  {
+    d: "M0 84 C 48 104, 84 100, 118 80 C 152 60, 182 36, 220 40 C 258 44, 282 76, 318 85 C 348 92, 370 85, 390 72 L390 90 C 370 103, 348 110, 318 103 C 282 94, 258 62, 220 58 C 182 54, 152 78, 118 98 C 84 118, 48 122, 0 102 Z",
+    fill: "#ff9e12", opacity: 0.5, blur: "url(#ribSoft)",
+  },
+  {
+    d: "M0 44 C 40 58, 70 68, 104 62 C 140 55, 168 28, 206 24 C 246 20, 274 44, 310 55 C 340 64, 368 59, 390 44 L390 58 C 368 73, 340 78, 310 69 C 274 58, 246 34, 206 38 C 168 42, 140 69, 104 76 C 70 82, 40 72, 0 58 Z",
+    fill: "#ffd77a", opacity: 0.6, blur: "url(#ribSoft2)",
+  },
+  {
+    d: "M0 66 C 44 44, 80 42, 114 55 C 150 69, 174 94, 210 94 C 246 94, 270 66, 304 54 C 334 43, 364 46, 390 58 L390 63 C 364 51, 334 48, 304 59 C 270 71, 246 99, 210 99 C 174 99, 150 74, 114 60 C 80 47, 44 49, 0 71 Z",
+    fill: "#fff2d0", opacity: 0.95,
+  },
+];
+
+/**
+ * The flowing group, drawn twice so the loop has no seam.
+ *
+ * The board translates by 38px and repeats, which snaps every nine seconds because the
+ * artwork does not tile at 38. Two copies a full width apart, translated by exactly that
+ * width, return to an identical picture — so the light moves forever and never jumps.
+ *
+ * `phase` is a per-echo delay. The same ribbon under every story would be a brand object,
+ * which is fine, but two echoes opened one after another should not be frame-locked to
+ * each other. It shifts where the loop starts and nothing else: it is not pretending to
+ * be anything about the audio.
+ */
+function Flow({ phase }: { readonly phase: number }) {
+  return (
+    <g className="hear-flow" style={{ animationDelay: `${phase.toFixed(2)}s` }}>
+      {[0, W].map((dx) => (
+        <g key={dx} transform={dx ? `translate(${dx} 0)` : undefined}>
+          {RIBBONS.map((r) => (
+            <path
+              key={`${dx}/${r.fill}`}
+              className="hear-rib"
+              d={r.d}
+              fill={r.fill}
+              opacity={r.opacity}
+              {...(r.blur ? { filter: r.blur } : {})}
+            />
+          ))}
+        </g>
+      ))}
+    </g>
+  );
 }
+
+/** A stable 0 to FLOW_S offset from the echo's id, so two echoes are not in lockstep. */
+function phaseOf(id: string): number {
+  let h = 0;
+  for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) >>> 0;
+  return (h % 1000) / 1000 * FLOW_S;
+}
+/** Seconds for one full pass. Matches `.hear-flow` in `theme.css`. */
+const FLOW_S = 18;
 
 const clock = (seconds: number) =>
   `${Math.floor(seconds / 60)}:${String(Math.max(0, Math.round(seconds % 60))).padStart(2, "0")}`;
