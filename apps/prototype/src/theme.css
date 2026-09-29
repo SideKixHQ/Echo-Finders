@@ -2777,6 +2777,37 @@ body {
  * That is the motion rule this app already follows — motion reports state — used for the
  * one piece of state the whole screen exists to communicate: THIS is the one.
  */
+/*
+ * THE CREATURE.
+ *
+ * Its eyes are a pause button and its play state is the same two shapes swung together,
+ * so the transition between any two faces is a path tween rather than a swap. That is the
+ * whole point: a cross-fade between a face and an icon reads as a control changing state,
+ * and a morph reads as something alive deciding to speak.
+ *
+ * 320ms, and the easing overshoots slightly so the triangle LANDS rather than arrives.
+ */
+.echo-char-eyes path {
+  fill: #FFF9E8;
+  transition: d 0.32s cubic-bezier(0.34, 1.32, 0.64, 1);
+}
+.echo-char-eyes { transition: transform 0.5s cubic-bezier(0.32, 0.72, 0, 1); }
+.echo-char-body { transition: fill 0.32s linear; }
+.echo-char-shine { fill: #ffffff; opacity: 0.45; pointer-events: none; }
+/* Sealed is a story paused in the dark: the light is nearly out and the eyes with it. */
+.echo-char-sealed .echo-char-eyes path { fill: #FFD77A; opacity: 0.5; }
+.echo-char-sealed .echo-char-shine { opacity: 0.16; }
+.echo-char-heard .echo-char-eyes path { fill: none; stroke: #FFD77A; stroke-width: 7; stroke-linecap: round; opacity: 0.7; }
+.echo-char-heard .echo-char-shine { opacity: 0.18; }
+/*
+ * `d` is only animatable where the browser supports interpolating path data. Everywhere
+ * else the shape snaps, which is a worse version of the same thing rather than a broken
+ * one: the states are still correct and still legible, they just change in one frame.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .echo-char-eyes path, .echo-char-eyes, .echo-char-body { transition: none; }
+}
+
 .pin-halo { pointer-events: none; }
 .pin-halo-singular {
   transform-box: fill-box; transform-origin: center;
@@ -2872,6 +2903,45 @@ body {
   0%   { transform: scale(1.6); opacity: 0; }
   26%  { opacity: 0.85; }
   100% { transform: scale(0.52); opacity: 0; }
+}
+
+/*
+ * The creature, as the button that starts the story.
+ *
+ * It replaces both the old `.synced-echo` orb and the aqua "Listen now" beneath it: the
+ * thing you press IS the echo now, so the screen lost a control rather than gaining one.
+ * Sized to the orb it replaces so the landing animation and the ring collapse still line
+ * up with it.
+ */
+.synced-press {
+  position: relative; width: 118px; height: 118px; padding: 0;
+  border: 0; border-radius: 50%; background: none; cursor: pointer;
+  display: grid; place-items: center;
+  filter: drop-shadow(0 0 48px rgba(255, 158, 18, 0.55)) drop-shadow(0 0 120px rgba(255, 158, 18, 0.2));
+  animation: synced-land 0.42s cubic-bezier(0.2, 0.9, 0.3, 1) both;
+}
+.synced-press svg { width: 118px; height: 118px; display: block; overflow: visible; }
+/*
+ * Armed: the aqua ring, and it fades in AFTER the shape has stopped moving.
+ *
+ * Arriving with the morph would read as part of the creature; arriving a beat later reads
+ * as the app saying "now you can press this", which is what it means. It is the only aqua
+ * on the object, because ember is the echo and aqua is everything you operate.
+ */
+.synced-press::after {
+  content: ""; position: absolute; inset: -6px; border-radius: 50%;
+  border: 2px solid var(--aqua); opacity: 0;
+  transition: opacity 0.3s 0.34s linear;
+}
+.synced-press.armed::after { opacity: 0.8; animation: synced-armed 2.4s 0.7s ease-in-out infinite; }
+@keyframes synced-armed {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.045); }
+}
+.synced-press:focus-visible { outline: 2px solid var(--aqua); outline-offset: 8px; }
+@media (prefers-reduced-motion: reduce) {
+  .synced-press, .synced-press.armed::after { animation: none; }
+  .synced-press.armed::after { opacity: 0.8; }
 }
 
 .synced-echo {

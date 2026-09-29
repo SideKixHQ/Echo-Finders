@@ -22,6 +22,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { CATEGORY_ICON, CATEGORY_LABEL } from "./categories";
+import { EchoCharacter, characterFor } from "./Echo";
 import { TILE_ATTRIBUTION, TILE_URL, planTiles, toWorld } from "./tiles";
 import { MODE_ICON } from "./travel";
 import { useSmoothedPoint } from "./use-smoothed";
@@ -154,6 +155,18 @@ export const MAX_ZOOM = 8;
 const RIPPLE_LIMIT = 4;
 
 const clamp = (z: number) => Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, z));
+
+/**
+ * How far a creature at `from` has to swing its eyes to look at `to`, in degrees.
+ *
+ * Screen space rather than bearings, deliberately: the eyes are drawn on the screen, and
+ * a true bearing would have them looking at where something IS rather than at where it
+ * appears once the map has been rotated, zoomed and dragged. Zero is straight ahead, and
+ * the component clamps the result well before it stops reading as a look.
+ */
+function gazeToward(from: { x: number; y: number }, to: { x: number; y: number }): number {
+  return (Math.atan2(to.y - from.y, to.x - from.x) * 180) / Math.PI / 6;
+}
 
 /** An echo that has gone off the edge, and which edge it went off. */
 interface EdgeMark {
@@ -910,10 +923,37 @@ export function RouteMap({
               not already know the key is looking at coloured dots, and the icon is what
               makes the colour mean something before it is tapped.
             */}
-            <circle className="pin-body" r="13" />
-            <g className="pin-icon" transform="translate(-7 -7) scale(0.583)">
-              {CATEGORY_ICON[echo.category]}
-            </g>
+            {/*
+              THE TWO RARITIES ARE CREATURES; everything else is a ring with its glyph.
+
+              A face cannot carry a category — there is no drawing of a sphere that means
+              "food and drink" — so the glyph is doing a job the creature cannot take
+              over, and nine faces on one map is a crowd with no standout in it. The
+              creature is spent on exactly the pins the rest of this screen is built to
+              make you walk towards.
+
+              Its eyes are a pause button, which is the whole idea: a sealed echo is a
+              story that has been PAUSED at this corner, in some cases for a century.
+            */}
+            {(() => {
+              const face = characterFor(rarityOf(echo), state);
+              return face ? (
+                <EchoCharacter
+                  face={face}
+                  r={rarityOf(echo) === "singular" ? 15 : 13}
+                  uid={echo.id}
+                  /* It looks at you. The bearing is already computed for the walk. */
+                  gazeDeg={standingAt ? gazeToward({ x, y }, projection(standingAt)) : 0}
+                />
+              ) : (
+                <>
+                  <circle className="pin-body" r="13" />
+                  <g className="pin-icon" transform="translate(-7 -7) scale(0.583)">
+                    {CATEGORY_ICON[echo.category]}
+                  </g>
+                </>
+              );
+            })()}
 
             {arriving && <ProgressRing progress={arriving.progress} />}
 
