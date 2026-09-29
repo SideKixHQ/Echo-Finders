@@ -4,7 +4,7 @@ import { LIBRARY, ROUTES } from "./library.generated";
 import { CATEGORY_ORDER, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
-import { RouteMap, type PinState } from "./RouteMap";
+import { RouteMap, MAX_ZOOM, MIN_ZOOM, type PinState } from "./RouteMap";
 import { ProximityBar } from "./ProximityBar";
 import { Sheet } from "./Sheet";
 import { Collection } from "./Collection";
@@ -251,6 +251,14 @@ export function App() {
   // nobody diverts an aircraft towards a good story.
   const selfDirected = presetFor(route.mode).selfDirected;
   const [selectedId, setSelectedId] = useState<string | null>(null);
+
+  /**
+   * How far the listener has zoomed the map in, as a multiple of the mode's own framing.
+   *
+   * Held here rather than inside the map, because the control column carries the zoom
+   * buttons and both have to move the same number. The map still owns the gestures.
+   */
+  const [zoom, setZoom] = useState(1);
   const [tab, setTab] = useState<Tab>("map");
   /**
    * The echo the camera is pointed at, or null for closed.
@@ -277,6 +285,12 @@ export function App() {
    * like, and from the first step it is where you are.
    */
   const [overview, setOverview] = useState(false);
+  /*
+   * A new journey, or a jump to the overview, is a new framing. Keeping the old multiplier
+   * across either one lands somebody at 8x on a map they have not seen yet.
+   */
+  const routeId = roaming ? null : route.id;
+  useEffect(() => setZoom(1), [routeId, overview]);
   /**
    * Choosing what plays itself, reached from the package screen rather than the tab bar.
    *
@@ -1122,6 +1136,8 @@ export function App() {
                 overview={overview}
                 progress={along}
                 theme={theme}
+                zoom={zoom}
+                onZoom={setZoom}
               />
               {/*
                 No control column either. It carries the map toggle, recentre and download,
@@ -1133,10 +1149,10 @@ export function App() {
               */}
               {(!nowhere || overview) && (
               <Rail
-                theme={theme}
-                onTheme={setTheme}
-                kids={kids}
-                onKids={setKidsMode}
+                zoom={zoom}
+                onZoom={setZoom}
+                minZoom={MIN_ZOOM}
+                maxZoom={MAX_ZOOM}
                 overview={overview}
                 onOverview={setOverview}
                 downloaded={downloaded}
@@ -1348,6 +1364,10 @@ export function App() {
               storedPositions={storedPositions}
               collectionSize={kept.length}
               onDelete={onDelete}
+              kids={kids}
+              onKids={setKidsMode}
+              theme={theme}
+              onTheme={setTheme}
             />
           )}
 
