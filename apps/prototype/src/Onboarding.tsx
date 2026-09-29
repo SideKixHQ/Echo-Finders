@@ -28,7 +28,7 @@ import { useState } from "react";
 import { MODE_ICON } from "./travel";
 import { lookupFlight } from "./flights";
 import { CAPABILITY_NEEDS, type EchoCategory, type TravelMode } from "@echofinders/core";
-import { CHIP_GROUPS } from "./categories";
+import { CATEGORY_ICON, CHIP_GROUPS } from "./categories";
 import type { LocationState } from "./browser-location";
 
 
@@ -39,6 +39,8 @@ export interface OnboardingProps {
   /** Which categories are on. Same set the map's chip row drives. */
   readonly cats: ReadonlySet<EchoCategory>;
   readonly onToggleCats: (categories: readonly EchoCategory[]) => void;
+  /** Turn every category on at once. */
+  readonly onAllCats: () => void;
   readonly simple: boolean;
   readonly onSimple: (on: boolean) => void;
   /** Hear the narrator, so a volume can be set before anybody is out in the street. */
@@ -111,6 +113,7 @@ export function Onboarding({
   onKids,
   cats,
   onToggleCats,
+  onAllCats,
   simple,
   onSimple,
   onTestLine,
@@ -382,24 +385,52 @@ export function Onboarding({
               Pick as many as you like. You can change this any time from the map.
             </p>
             <div className="onb-chips">
+              {/*
+                Each chip carries its category's mark and its colour, on or off, exactly as
+                the map's filter row does. These were bare labels that only took a colour
+                once lit, so the step that is supposed to TEACH the palette was the one
+                place it was missing, and a listener met the nine hues for the first time
+                on a map with no key to them.
+              */}
               {CHIP_GROUPS.map((group) => {
                 const lit = group.categories.some((c) => cats.has(c));
                 return (
                   <button
                     key={group.id}
-                    className={lit ? `onb-chip cat-${group.face} on` : "onb-chip"}
+                    className={`onb-chip cat-${group.face}${lit ? " on" : ""}`}
                     onClick={() => onToggleCats(group.categories)}
                     aria-pressed={lit}
                   >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      {CATEGORY_ICON[group.face]}
+                    </svg>
                     {group.label}
                   </button>
                 );
               })}
             </div>
+            {/*
+              "All of them" is a real answer to this question and used to be the only one
+              you could give, silently, by leaving every chip alone. Now that the step
+              starts empty it needs saying out loud, and it is one tap rather than nine.
+            */}
+            <button
+              className="onb-all"
+              onClick={() => onAllCats()}
+              disabled={chosenCount === CHIP_GROUPS.length}
+            >
+              All of them
+            </button>
             <p className="onb-sum">
-              {chosenCount} of {CHIP_GROUPS.length} on
+              {chosenCount === 0
+                ? "Nothing picked yet"
+                : `${chosenCount} of ${CHIP_GROUPS.length} on`}
             </p>
-            <button className="onb-go" onClick={next}>
+            {/*
+              Disabled on nothing, because continuing with an empty set lands you on a map
+              with no pins on it and no clue why. The count above says what is missing.
+            */}
+            <button className="onb-go" onClick={next} disabled={chosenCount === 0}>
               Continue
             </button>
           </>
