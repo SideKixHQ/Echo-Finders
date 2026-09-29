@@ -23,8 +23,10 @@
  * allowed to glow warm, or it competes with the thing you just earned.
  */
 
+import { useEffect, useState } from "react";
 import { rarityReasons, type CaptureEvent } from "@echofinders/core";
-import { CATEGORY_ICON, CATEGORY_LABEL } from "./categories";
+import { CATEGORY_LABEL } from "./categories";
+import { EchoCharacter } from "./Echo";
 
 const RARITY_LABEL: Record<string, string> = {
   common: "Synced",
@@ -44,6 +46,19 @@ export function Synced({ event, onListen, onLater }: SyncedProps) {
   const reasons = rarityReasons(echo);
   const minutes = Math.max(1, Math.round(echo.durationS / 60));
 
+  /*
+   * The morph runs once, shortly after it lands.
+   *
+   * 620ms of delay: the orb's own landing animation takes 420, and the eyes have to be
+   * seen AS a pause before they can be seen turning into a play. Morphing immediately
+   * just looks like the play button arriving late.
+   */
+  const [armed, setArmed] = useState(false);
+  useEffect(() => {
+    const t = setTimeout(() => setArmed(true), 620);
+    return () => clearTimeout(t);
+  }, [echo.id]);
+
   return (
     /*
      * `role="dialog"` with a label, because this covers the map and takes the interaction.
@@ -62,9 +77,36 @@ export function Synced({ event, onListen, onLater }: SyncedProps) {
           <span className="synced-ring synced-ring-3" />
         </div>
 
-        <div className="synced-echo" aria-hidden="true">
-          <svg viewBox="0 0 24 24">{CATEGORY_ICON[echo.category]}</svg>
-        </div>
+        {/*
+          THE CREATURE, AND THE MORPH.
+
+          It lands on this screen with its eyes still a pause button — because that is what
+          it has been, sometimes for a century — and a beat later they swing together into
+          a play triangle. Then it IS the button: pressing its face starts the story.
+
+          That is why the old aqua "Listen now" button is gone from below rather than
+          sitting next to this. The creature is the control, so this is one fewer thing on
+          the screen instead of one more.
+
+          EVERY echo gets the creature on THIS screen, not just the two rarities the map
+          gives one to. The map's restraint is about crowding — nine faces on one screen is
+          a crowd and a crowd has no standout. Here there is exactly one echo and nothing
+          to compete with, so the rule that protects the map has nothing to protect.
+
+          The aqua ring is the only part that says pressable, which keeps the colour law
+          intact: the orb stays ember because it is the echo, and the ring around it is
+          aqua because it is the interface. Colouring the triangle itself aqua would put a
+          cold hole through the middle of the warmest object on the screen.
+        */}
+        <button
+          className={armed ? "synced-press armed" : "synced-press"}
+          onClick={onListen}
+          aria-label={`Play: ${echo.title}`}
+        >
+          <svg viewBox="-60 -60 120 120" aria-hidden="true">
+            <EchoCharacter face={armed ? "armed" : "calling"} r={47} uid="sync" />
+          </svg>
+        </button>
       </div>
 
       <div className="synced-say">
@@ -94,12 +136,10 @@ export function Synced({ event, onListen, onLater }: SyncedProps) {
       )}
 
       <div className="synced-acts">
-        <button className="synced-listen" onClick={onListen}>
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M8 5v14l11-7z" />
-          </svg>
-          Listen now
-        </button>
+        {/*
+          One button now, and it is the quiet one. "Listen now" moved onto the creature's
+          own face, so what is left here is the way out rather than a second way in.
+        */}
         <button className="synced-later" onClick={onLater}>
           Keep it for later
         </button>
