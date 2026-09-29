@@ -1914,6 +1914,35 @@ body {
 }
 .fab.on { background: var(--aqua); color: #042220; border-color: var(--aqua); }
 
+/*
+ * Zoom, as one object.
+ *
+ * A `.fab` that holds two buttons instead of being one. It borrows the casing so the
+ * column stays a stack of identically-cased controls, and the two halves are divided by a
+ * hairline rather than a gap, which is the difference between "one control, two
+ * directions" and "two more buttons on an already long column".
+ *
+ * Each half is 44 tall, so the pair is 88 and every target clears the 44x44 floor on its
+ * own. Nothing here shrinks at the half detent: the collapse rules pick the city and the
+ * package, which are the two the map can do without.
+ */
+.fab-zoom {
+  height: auto; padding: 0; overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.fab-zoom button {
+  width: 44px; height: 44px; flex: none; cursor: pointer;
+  background: none; border: 0; color: inherit; display: grid; place-items: center;
+}
+.fab-zoom button + button { border-top: 1px solid var(--line); }
+.fab-zoom svg {
+  width: 18px; height: 18px; stroke: currentColor; fill: none;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+/* At the limit. Dimmed AND not pressable, so it reads as "no further" rather than as a
+   button the map is ignoring. */
+.fab-zoom button:disabled { opacity: 0.34; cursor: default; }
+
 /* No map left to control. The same rule the guidance bar already follows. */
 /* Only at full, where there is genuinely no map left to control. */
 .screen:has(.sheet-full) .rail { opacity: 0; pointer-events: none; }
@@ -1934,14 +1963,23 @@ body {
   pointer-events: none; overflow: hidden;
 }
 
-/* The basemap, pushed well back.
-   0.38, not 0.85. Esri's "dark gray" canvas is a mid grey however its name reads, and at
-   85 percent over the app's navy it came out a pale rectangle with the furniture floating
-   on it — which is what "this doesn't look correct" was mostly looking at. Letting the
-   ground show through four fifths of the way turns the streets into a texture under the
-   pins rather than the brightest thing on the screen, which is what the design draws.
-   The light scheme keeps its own value below: there the tiles ARE the surface. */
-.map-tile { opacity: 0.38; }
+/*
+ * The basemap, inked into the design's navy.
+ *
+ * This rule read 0.38 for one commit, on the argument that Esri's "dark gray" canvas is a
+ * mid grey however its name reads and had to be pushed back. The diagnosis was right and
+ * the fix was wrong: fading a grey gives you a paler grey, so the map got dimmer without
+ * getting any closer to a board whose field is #0D1230.
+ *
+ * So the grey is remapped instead: see the `mapInk` filter in `RouteMap.tsx` for what it
+ * does. Once it is the board's own indigo the tiles can carry their full weight again,
+ * because the streets now ARE the field the board draws by hand rather than a layer
+ * sitting on top of it. The light scheme keeps its own value below, unfiltered: there the
+ * tiles are the surface and a night treatment would be wrong.
+ */
+.map-tile { filter: url(#mapInk); opacity: 0.92; }
+/* Under the tiles, and what is left when one fails to load. */
+.map-field { fill: url(#mapField); pointer-events: none; }
 /* Legible on either basemap without competing with anything: the grey canvases are pale
    in light and near-black in dark, so the credit takes its contrast from the theme's own
    muted ink rather than a fixed colour that would disappear in one of them. */
@@ -1962,7 +2000,10 @@ body {
    Scoped to the light scheme now, where it is correct: there the tiles ARE the surface
    rather than a texture under one, so they stay near full strength.
 */
-:root[data-theme="light"] .map-tile { opacity: 0.85; }
+/* A light map stays a light map: the ink is a night treatment, and Esri's light canvas
+   is already the right colour for a daytime screen. */
+:root[data-theme="light"] .map-tile { filter: none; opacity: 0.85; }
+:root[data-theme="light"] .map-field { fill: var(--space); }
 /* Legible on either basemap without competing with anything: the grey canvases are pale
    in light and near-black in dark, so the credit takes its contrast from the theme's own
    muted ink rather than a fixed colour that would disappear in one of them. */
@@ -3349,21 +3390,37 @@ body {
    routinely thirty degrees out and a sharp cone would claim a precision it has not got. */
 .here-cone { fill: url(#coneFade); pointer-events: none; }
 
-/* The edge marker: the best echo you cannot see yet, and which way it is. A map only
-   shows what fits, and the one worth walking to is routinely just off the screen. */
+/*
+ * The edge marker: an echo you cannot see yet, and which way it is.
+ *
+ * COOL BY DEFAULT, and that is the whole correction. Every marker was ember on the first
+ * pass, so zooming in far enough to push three ordinary echoes off the screen put three
+ * warm pills on a map with nothing rare on it at all — the app spending its scarcest
+ * colour on "there is a sandwich shop that way". Ember means worth the walk here as
+ * everywhere else, so only rare and singular get it; the rest are cool ink, like the pins
+ * they stand for.
+ */
 .map-edge { cursor: pointer; }
 .map-edge-plate {
-  fill: rgba(11, 15, 43, 0.88); stroke: rgba(255, 158, 18, 0.42); stroke-width: 1;
+  fill: rgba(11, 15, 43, 0.9); stroke: rgba(var(--rgb-hair), 0.3); stroke-width: 1;
 }
-.map-edge-dot { fill: var(--ember); filter: drop-shadow(0 0 5px rgba(255, 158, 18, 0.9)); }
+.map-edge-glyph {
+  fill: none; stroke: var(--cool); stroke-width: 1.8;
+  stroke-linecap: round; stroke-linejoin: round;
+}
 .map-edge-text {
-  fill: var(--ember-core); font-family: "Space Grotesk", monospace; font-size: 11px;
+  fill: var(--cool); font-family: "Space Grotesk", monospace; font-size: 11px;
   letter-spacing: 0.1em; text-transform: uppercase;
 }
 .map-edge-arrow {
-  fill: none; stroke: var(--ember-core); stroke-width: 2.2;
+  fill: none; stroke: var(--cool); stroke-width: 2.2;
   stroke-linecap: round; stroke-linejoin: round;
 }
+/* Worth the walk. The board's own marker, and now the only one that gets the warm ink. */
+.map-edge-warm .map-edge-plate { stroke: rgba(255, 158, 18, 0.42); }
+.map-edge-warm .map-edge-glyph { stroke: var(--ember-core); }
+.map-edge-warm .map-edge-text { fill: var(--ember-core); }
+.map-edge-warm .map-edge-arrow { stroke: var(--ember-core); }
 /* The chevron in the route pill, replacing a whole centred line of uppercase aqua that
    existed only to say the row above it was tappable. */
 .ribbon-more {

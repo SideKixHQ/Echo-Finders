@@ -28,6 +28,19 @@ interface Props {
   readonly onJourney: () => void;
   /** What it currently says, so the row reports rather than only offering. */
   readonly journey: string;
+  /**
+   * Kids mode and the theme, which used to sit on the map's control column.
+   *
+   * They are settings. One narrows the library through the engine's age gate and the
+   * other repaints the whole app, and neither is a thing you do TO the map in front of
+   * you, which is what the rest of that column is for. Parked there they also cost the
+   * column two of its six slots, and six was the count that pushed the top button
+   * through the category chips.
+   */
+  readonly kids: boolean;
+  readonly onKids: (on: boolean) => void;
+  readonly theme: "dark" | "light";
+  readonly onTheme: (theme: "dark" | "light") => void;
 }
 
 const FEATURE_LABELS: Record<FeatureId, string> = {
@@ -47,6 +60,10 @@ export function Privacy({
   onDelete,
   onJourney,
   journey,
+  kids,
+  onKids,
+  theme,
+  onTheme,
 }: Props) {
   // What the app would actually be granted, given these settings. Shown so the fallbacks
   // below are the real ones rather than a hand-written list that drifts.
@@ -75,6 +92,28 @@ export function Privacy({
             <path d="M9 5l7 7-7 7" />
           </svg>
         </button>
+      </section>
+
+      {/*
+        The two that came off the map. Kids mode first: it is the only setting in the app
+        that changes which echoes exist at all.
+      */}
+      <section className="panel">
+        <h3>This app</h3>
+        <Toggle
+          label="Kids mode"
+          detail="Only echoes written for children, and nothing with an age on it."
+          cost="Turn off and the whole library comes back, true crime included."
+          on={kids}
+          onToggle={() => onKids(!kids)}
+        />
+        <Toggle
+          label="Dark map"
+          detail="A night map, which is what the app is drawn for."
+          cost="Turn off for the daylight map, which is easier in bright sun."
+          on={theme === "dark"}
+          onToggle={() => onTheme(theme === "dark" ? "light" : "dark")}
+        />
       </section>
 
       <header className="screen-head">

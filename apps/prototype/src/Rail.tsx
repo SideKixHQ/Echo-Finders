@@ -1,7 +1,8 @@
 /**
  * The control column, as the design has it.
  *
- * Four plain toggles down the right-hand side, above the sheet. Every value is from
+ * A short stack of plain controls down the right-hand side, above the sheet. Every value
+ * is from
  * `design/SPEC.md` — 42px, 14px radius, 8px gap, 18px glyphs, aqua when on — rather than
  * from my eye.
  *
@@ -21,8 +22,13 @@
  * So the panels are gone rather than fixed. Adding a dismiss would have been the smaller
  * change and the worse one: two ways to filter, and a covered map whenever one was open.
  *
- * Four buttons also fit in a single column at every sheet height, which retires the
- * wrapping this used to need.
+ * **Kids mode and the theme are no longer here.** Board 2's column carries three things,
+ * all of them about the map in front of you: where am I, how close in, and is this
+ * journey on the phone. Kids mode changes which echoes exist and the theme changes the
+ * whole app, so they were two settings parked on the map, and they cost the column a
+ * third of its height — the six objects that put a fab over the category chips and left
+ * pins hiding behind the stack. They live on the settings tab now, which is where
+ * somebody looks for them.
  */
 
 import { memo } from "react";
@@ -34,11 +40,22 @@ import { memo } from "react";
 export type WalkingView = "rose" | "map" | "walk";
 
 export interface RailProps {
-  readonly theme: "dark" | "light";
-  readonly onTheme: (theme: "dark" | "light") => void;
-  /** Kids mode, for the whole app. An age the engine gates on, not a filter. */
-  readonly kids: boolean;
-  readonly onKids: (on: boolean) => void;
+  /**
+   * The zoom, and how to change it.
+   *
+   * Board 2 puts a magnifier on this column, between recentre and download, and it was
+   * the one control on the board that had never been built. The map HAS been zoomable
+   * since it was written — pinch, double tap, scroll wheel — and every one of those is
+   * invisible. A gesture nobody is told about is a feature nobody has.
+   *
+   * Two buttons rather than the board's one, because a map you can only zoom one way is
+   * a trap, and joined into a single pill so the column still reads as the board's short
+   * stack of round controls rather than growing a sixth object.
+   */
+  readonly zoom: number;
+  readonly onZoom: (next: number) => void;
+  readonly minZoom: number;
+  readonly maxZoom: number;
   /** Showing the whole journey rather than following the listener. */
   readonly overview: boolean;
   readonly onOverview: (overview: boolean) => void;
@@ -74,10 +91,10 @@ export interface RailProps {
 }
 
 function RailInner({
-  theme,
-  onTheme,
-  kids,
-  onKids,
+  zoom,
+  onZoom,
+  minZoom,
+  maxZoom,
   overview,
   onOverview,
   onDownload,
@@ -90,38 +107,39 @@ function RailInner({
   return (
     <div className="rail">
       {/*
-        Kids mode first, because it is the only one here that changes what the app *is*
-        rather than what it shows. The others are views over the same library; this one
-        narrows the library itself, through the engine's age gate.
-      */}
-      <button
-        className={kids ? "fab on" : "fab"}
-        onClick={() => onKids(!kids)}
-        aria-pressed={kids}
-        aria-label="Kids mode"
-      >
-        <svg viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="9" />
-          <path d="M9 10h.01M15 10h.01M8.5 14.5a5 5 0 0 0 7 0" />
-        </svg>
-      </button>
+        Zoom, as board 2 draws it: the same magnifier, on the same column.
 
-      <button
-        className="fab"
-        onClick={() => onTheme(theme === "dark" ? "light" : "dark")}
-        aria-label={theme === "dark" ? "Light mode" : "Dark mode"}
-      >
-        {theme === "dark" ? (
+        A joined pair rather than two fabs. The column is anchored to the bottom and grows
+        upward, and a sixth free-standing object put the top one through the category
+        chips — measured, not guessed, the last time this column grew. Joined, in and out
+        read as one control, which is also what they are.
+
+        Disabled at the limits rather than silently doing nothing, because a button that
+        responds to nothing is how somebody decides the map is broken.
+      */}
+      <div className="fab fab-zoom">
+        <button
+          onClick={() => onZoom(zoom * 1.6)}
+          disabled={zoom >= maxZoom - 1e-6}
+          aria-label="Zoom in"
+        >
           <svg viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="4.2" />
-            <path d="M12 2v2.6M12 19.4V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.6M19.4 12H22M4.2 19.8L6 18M18 6l1.8-1.8" />
+            <circle cx="11" cy="11" r="6.5" />
+            <path d="M8 11h6M11 8v6M20.5 20.5L16 16" />
           </svg>
-        ) : (
+        </button>
+        <button
+          onClick={() => onZoom(zoom / 1.6)}
+          disabled={zoom <= minZoom + 1e-6}
+          aria-label="Zoom out"
+        >
+          {/* The board's own glyph, to the stroke. */}
           <svg viewBox="0 0 24 24">
-            <path d="M20 14.5A8.2 8.2 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" />
+            <circle cx="11" cy="11" r="6.5" />
+            <path d="M8 11h6M20.5 20.5L16 16" />
           </svg>
-        )}
-      </button>
+        </button>
+      </div>
 
       {/*
         Walking's view switch. The rose is the resting screen on foot and the street map is

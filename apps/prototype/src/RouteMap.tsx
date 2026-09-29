@@ -21,7 +21,7 @@
  */
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { CATEGORY_ICON } from "./categories";
+import { CATEGORY_ICON, CATEGORY_LABEL } from "./categories";
 import { TILE_ATTRIBUTION, TILE_URL, planTiles, toWorld } from "./tiles";
 import { MODE_ICON } from "./travel";
 import { useSmoothedPoint } from "./use-smoothed";
@@ -67,6 +67,15 @@ interface Props {
   readonly progress?: number;
   /** Which basemap to fetch. The pins are drawn for one backdrop or the other, not both. */
   readonly theme: "dark" | "light";
+  /**
+   * How far in, as a multiple of the mode's own framing.
+   *
+   * Owned by App rather than by the map, because the control column carries the zoom
+   * buttons and the pinch has to move the same number they do. Held here it moved under
+   * two fingers and ignored the buttons, which is the worst of both.
+   */
+  readonly zoom: number;
+  readonly onZoom: (next: number) => void;
 }
 
 /*
@@ -117,7 +126,28 @@ const SHEET_FRACTION = { peek: 0.16, half: 0.46, full: 0.86 } as const;
  * Four, because that is about what fits on a walking view without the arcs touching, and
  * because every one of them is three continuously animated SVG groups.
  */
+/**
+ * How far in and out the listener may go, as a multiple of the framing the mode chooses.
+ *
+ * Exported because the zoom buttons live on the control column now and App owns the
+ * number. Two places clamping to two different pairs is how a button goes dead one step
+ * before the limit it claims.
+ */
+export const MIN_ZOOM = 0.25;
+export const MAX_ZOOM = 8;
+
 const RIPPLE_LIMIT = 4;
+
+const clamp = (z: number) => Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, z));
+
+/** An echo that has gone off the edge, and which edge it went off. */
+interface EdgeMark {
+  readonly echo: Echo;
+  readonly km: number;
+  readonly y: number;
+  readonly rarity: string;
+  readonly side: "left" | "right";
+}
 /** Half a pin, so a pin *centre* never lands under the chrome and no pin is half-eaten. */
 const PIN_R = 16;
 /** The route ribbon and the category chips, which float over the map's top edge. */
@@ -130,6 +160,14 @@ const MAPBAR_H = 119;
  * be looking. Carried modes do not draw it and get the height back.
  */
 const GUIDE_H = 56;
+/**
+ * How tall the control column is, so a marker can be kept out from behind it.
+ *
+ * Five objects at 8px apart, of which the zoom pair is a double-height pill: 44*4 + 88,
+ * plus four gaps. It tracks `.rail` and `.fab` in `theme.css`; change the column and
+ * change this, exactly as with the two heights above.
+ */
+const RAIL_H = 44 * 4 + 88 + 8 * 4;
 /**
  * How much of the bottom the sheet is taking.
  *
@@ -168,6 +206,8 @@ export function RouteMap({
   overview,
   progress = 0,
   theme,
+  zoom,
+  onZoom,
 }: Props) {
   /**
    * The view follows the listener, rather than fitting the whole journey.
@@ -206,14 +246,11 @@ export function RouteMap({
    * couple of steps either side of the mode's own framing; past that the corridor stops
    * making sense and the tiles run out.
    */
-  const [zoom, setZoom] = useState(1);
-  const MIN_ZOOM = 0.25;
-  const MAX_ZOOM = 8;
-  const clamp = (z: number) => Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, z));
-
-  // A new journey, or a jump to the overview, is a new framing. Keeping the old multiplier
-  // across either one lands somebody at 8x on a map they have not seen yet.
-  useEffect(() => setZoom(1), [route?.id, overview]);
+  const setZoom = useCallback(
+    (next: number | ((z: number) => number)) =>
+      onZoom(clamp(typeof next === "function" ? next(zoom) : next)),
+    [onZoom, zoom],
+  );
 
   /** Two fingers. Tracked here rather than with a library: it is a distance and a ratio. */
   const pinch = useRef<Map<number, { x: number; y: number }>>(new Map());
@@ -239,7 +276,7 @@ export function RouteMap({
         lastTap.current = now;
       }
     }
-  }, [zoom]);
+  }, [zoom, setZoom]);
 
   const onPointerMove = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
     if (!pinch.current.has(e.pointerId)) return;
@@ -247,7 +284,7 @@ export function RouteMap({
     const from = pinchFrom.current;
     if (pinch.current.size !== 2 || !from || from.gap === 0) return;
     setZoom(clamp(from.zoom * (gap() / from.gap)));
-  }, []);
+  }, [setZoom]);
 
   const onPointerUp = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
     pinch.current.delete(e.pointerId);
@@ -302,7 +339,7 @@ export function RouteMap({
     };
     el.addEventListener("wheel", onWheel, { passive: false });
     return () => el.removeEventListener("wheel", onWheel);
-  }, []);
+  }, [setZoom]);
 
   /*
    * Built once per route. It was built twice for every position fix — once in the
@@ -450,25 +487,67 @@ export function RouteMap({
    */
   const edge = useMemo(() => {
     if (!at || overview) return null;
-    let best: { echo: Echo; km: number; y: number; rarity: string } | null = null;
+    const off: EdgeMark[] = [];
     for (const echo of library) {
       const state = stateOf(echo.id);
       if (state !== "sealed" && state !== "opening") continue;
-      const rarity = rarityOf(echo);
-      if (rarity !== "rare" && rarity !== "singular") continue;
       const p = projection(echo.point.at);
       // On screen already: the pin speaks for itself.
       const onScreen =
         p.x >= -PIN_R && p.x <= box.w + PIN_R && p.y >= MAPBAR_H && p.y <= box.h - NAV_H;
       if (onScreen) continue;
-      const km = distanceKm(at, echo.point.at);
-      if (!best || km < best.km) {
-        // Clamped into the band, so the marker rides the edge rather than leaving with it.
-        const y = Math.max(MAPBAR_H + 40, Math.min(box.h - NAV_H - 80, p.y));
-        best = { echo, km, y, rarity };
-      }
+      const rarity = rarityOf(echo);
+      off.push({
+        echo,
+        km: distanceKm(at, echo.point.at),
+        // Clamped into the band, so a marker rides the edge rather than leaving with it.
+        y: Math.max(MAPBAR_H + 40, Math.min(box.h - NAV_H - 80, p.y)),
+        rarity,
+        // Which side it went out of. A marker on the right pointing at something behind
+        // your left shoulder is worse than no marker.
+        side: p.x < box.w / 2 ? ("left" as const) : ("right" as const),
+      });
     }
-    return best;
+    /*
+     * Rare and singular first, then nearest. The warm ones are what the board's marker is
+     * for, and the rest are here because the map can now be zoomed: at 4x most of what is
+     * around you is off the edge, and a map that silently hides two thirds of its content
+     * the moment you look closer is not a map you can navigate with.
+     */
+    const rank = (m: EdgeMark) => (m.rarity === "singular" ? 0 : m.rarity === "rare" ? 1 : 2);
+    off.sort((a, b) => rank(a) - rank(b) || a.km - b.km);
+    /*
+     * Three. Enough that the good one is never the one left out, few enough that the edge
+     * does not become a second list competing with the sheet, which already lists
+     * everything in reach in full.
+     */
+    const shown = off.slice(0, 3);
+
+    /*
+     * Out from under the control column, and out from under each other.
+     *
+     * The column lives on the right, bottom-anchored, and a marker is drawn at the height
+     * of the echo it points at — so a marker and a fab want the same pixels often enough
+     * that the first render had one sitting squarely behind the zoom buttons, tappable by
+     * neither. Right-hand markers are pushed above the column's top; then every marker is
+     * separated downward so two echoes at a similar bearing do not stack into one
+     * unreadable pill with only the top one reachable.
+     */
+    const railBottom =
+      box.h - (NAV_H + box.h * sheetFraction(detent, sheet) + GUIDE_H + 12);
+    const railTop = railBottom - RAIL_H;
+    const floor = MAPBAR_H + 40;
+    let lastY = -Infinity;
+    return shown.map((mark) => {
+      let y = mark.y;
+      if (mark.side === "right" && y > railTop - 18 && y < railBottom + 18) {
+        y = railTop - 26;
+      }
+      if (y - lastY < 40) y = lastY + 40;
+      y = Math.max(floor, y);
+      lastY = y;
+      return { ...mark, y };
+    });
   }, [at, overview, library, stateOf, projection, box]);
 
   return (
@@ -495,6 +574,58 @@ export function RouteMap({
         <radialGradient id="coneFade" gradientUnits="objectBoundingBox" r="0.7" cx="0.5" cy="1">
           <stop offset="0%" stopColor="var(--aqua)" stopOpacity="0.22" />
           <stop offset="100%" stopColor="var(--aqua)" stopOpacity="0" />
+        </radialGradient>
+
+        {/*
+          THE INK. What turns a grey street map into the design's night map.
+
+          Board 2 does not have a basemap at all: its "map" is a drawn navy field with
+          soft roads and building blocks over it, and that deep indigo is most of why the
+          board reads as this app rather than as a map with our pins on it. The app loads
+          Esri's grey canvas, which is a fine map and the wrong colour — grey ends up the
+          largest thing on screen and competes with the cool pins that are supposed to BE
+          the content. Dropping the tiles to 38% opacity made it dimmer, not navier.
+
+          So the grey is remapped rather than faded. Desaturate, then push luminance
+          through the board's own three colours: its darkest field at the black end, its
+          road ink in the middle, its building outline at the white end. Esri's land goes
+          to deep navy and Esri's roads go to the lighter indigo the board draws roads in,
+          because that is the same luminance relationship the board already has.
+
+          A colour matrix is per-pixel with no spatial term, so tiles cannot seam.
+
+          Dark only. A light map should stay a light map, and the board is a night screen.
+        */}
+        <filter id="mapInk" colorInterpolationFilters="sRGB">
+          <feColorMatrix type="saturate" values="0" />
+          <feComponentTransfer>
+            {/*
+              Five stops, not three, and the reason is Esri rather than taste: its dark
+              canvas spends its whole range between about 0.1 and 0.5 luminance, so a ramp
+              spread evenly over 0 to 1 squeezed every street and every building into the
+              bottom fifth of it and the map came out a flat navy sheet. These put the
+              board's three colours in the first half, where the tiles actually live, and
+              leave two lighter stops above for the pale things Esri reserves for labels
+              and motorways.
+
+              #080B1E → #111737 → #1C2450 → #26306A → #303C80.
+            */}
+            <feFuncR type="table" tableValues="0.031 0.067 0.110 0.149 0.188" />
+            <feFuncG type="table" tableValues="0.043 0.090 0.141 0.188 0.235" />
+            <feFuncB type="table" tableValues="0.118 0.216 0.314 0.416 0.502" />
+          </feComponentTransfer>
+        </filter>
+
+        {/*
+          The field the board paints under everything, in its own numbers: lit at the top
+          where the chrome is, falling away to almost black at the bottom corners. It sits
+          under the tiles rather than over them, so a tile that fails to load degrades to
+          this rather than to a flat slab.
+        */}
+        <radialGradient id="mapField" cx="50%" cy="4%" r="108%">
+          <stop offset="0%" stopColor="#141A3D" />
+          <stop offset="46%" stopColor="#0D1230" />
+          <stop offset="100%" stopColor="#080B1E" />
         </radialGradient>
 
         {/* Transparent in the middle, dark at the corners. See `.map-vignette`. */}
@@ -577,6 +708,8 @@ export function RouteMap({
         before. That matters more than it sounds — the build environment cannot reach a tile
         server at all, so this ships without ever having been seen working here.
       */}
+      <rect className="map-field" x="0" y="0" width={box.w} height={box.h} />
+
       <g clipPath="url(#mapBand)">
         {projection.plan.tiles.map((t) => (
           <image
@@ -795,25 +928,60 @@ export function RouteMap({
         Above the vignette, because a marker the vignette dims is a marker at the darkest
         part of the screen.
       */}
-      {edge && (
-        <g
-          className="map-edge"
-          transform={`translate(${box.w} ${edge.y.toFixed(1)})`}
-          onPointerDown={(e) => {
-            e.stopPropagation();
-            onSelect(edge.echo.id);
-          }}
-          role="button"
-          aria-label={`${edge.rarity === "singular" ? "Singular" : "Rare"} echo, ${coarse(edge.km)} away, off the edge of the map`}
-        >
-          <rect className="map-edge-plate" x="-124" y="-17" width="130" height="34" rx="14" />
-          <circle className="map-edge-dot" cx="-108" cy="0" r="4" />
-          <text className="map-edge-text" x="-97" y="4">
-            {edge.rarity === "singular" ? "Singular" : "Rare"} · {coarse(edge.km)}
-          </text>
-          <path className="map-edge-arrow" d="M-20 -5 L-14 0 L-20 5" />
-        </g>
-      )}
+      {edge?.map((mark) => {
+        const warm = mark.rarity === "singular" || mark.rarity === "rare";
+        const right = mark.side === "right";
+        /*
+          The plate holds a glyph and a distance, and nothing else.
+
+          It carried the category NAME first, and "FOOD & DRINK · 450 M" ran straight off
+          the screen: a fixed-width plate on an SVG cannot grow to its text, and the two
+          longest category names are half again as long as the shortest. The glyph is the
+          same mark the pin draws and the chip carries, so the name was saying in eleven
+          characters what the map already says in a symbol, while the one piece of
+          information you actually navigate by got pushed off the edge.
+        */
+        const label = warm ? (mark.rarity === "singular" ? "Singular" : "Rare") : coarse(mark.km);
+        const name = warm
+          ? `${mark.rarity === "singular" ? "Singular" : "Rare"} ${CATEGORY_LABEL[mark.echo.category]}`
+          : CATEGORY_LABEL[mark.echo.category];
+        return (
+          <g
+            key={mark.echo.id}
+            className={warm ? "map-edge map-edge-warm" : "map-edge"}
+            transform={`translate(${right ? box.w : 0} ${mark.y.toFixed(1)})`}
+            onPointerDown={(e) => {
+              e.stopPropagation();
+              onSelect(mark.echo.id);
+            }}
+            role="button"
+            aria-label={`${name} echo, ${coarse(mark.km)} away, off the ${mark.side} edge of the map. Open it.`}
+          >
+            {/* Mirrored for the left edge, so the plate hangs INTO the screen either way. */}
+            <g transform={right ? undefined : "scale(-1 1)"}>
+              <rect className="map-edge-plate" x="-118" y="-17" width="124" height="34" rx="14" />
+            </g>
+            <g
+              className="map-edge-glyph"
+              transform={`translate(${right ? -104 : 104} 0) scale(0.6) translate(-12 -12)`}
+            >
+              {CATEGORY_ICON[mark.echo.category]}
+            </g>
+            <text
+              className="map-edge-text"
+              x={right ? -88 : 88}
+              y="4"
+              textAnchor={right ? "start" : "end"}
+            >
+              {label}
+            </text>
+            <path
+              className="map-edge-arrow"
+              d={right ? "M-20 -5 L-14 0 L-20 5" : "M20 -5 L14 0 L20 5"}
+            />
+          </g>
+        );
+      })}
     </svg>
   );
 }
