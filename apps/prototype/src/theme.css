@@ -1855,7 +1855,16 @@ body {
   .stage { display: block; }
 
   .phone {
-    width: 100%; height: 100dvh;
+    /*
+       Full bleed on a phone, capped and centred on anything wider.
+       
+       This was a flat `width: 100%`, which is right at 390 and wrong at 650: a browser
+       window between the breakpoint and a real phone got the frameless treatment AND the
+       full width, so the app stretched into a very tall, very wide column with a
+       600-pixel "Get started" button. 520 is about as wide as this layout reads before
+       the line lengths and the tap targets stop making sense.
+    */
+    width: 100%; max-width: 520px; margin: 0 auto; height: 100dvh;
     padding: 0; border-radius: 0; background: var(--space);
     box-shadow: none;
   }
@@ -1875,9 +1884,17 @@ body {
     --sheet-h: min(400px, 46dvh);
   }
 
-  /* The commentary is for reading beside the app, not on top of it. Below the
-     fold, where somebody who wants the controls can still scroll to them. */
-  .notes { width: auto; max-width: 560px; margin: 0 auto; padding: 28px 18px 48px; }
+  /*
+     On a narrow window the harness goes entirely.
+     
+     It used to move below the fold on the reasoning that somebody who wants the controls
+     can scroll to them. What actually happened is that somebody testing the app scrolled
+     past it and found several hundred words about MODE_PRESETS, with no idea why they
+     were being shown the engine's documentation. On a phone the app is the whole product
+     and the scaffolding has no business under it. `?dev` brings it back.
+  */
+  .notes { display: none; }
+  .notes-dev { display: block; width: auto; max-width: 560px; margin: 0 auto; padding: 28px 18px 48px; }
 }
 
 /* ── An echo, echoing ─────────────────────────────────────────────────────────
@@ -2866,7 +2883,18 @@ body {
  * the only place in the product where the warm channel gets to be the entire point.
  */
 .synced {
-  position: fixed; inset: 0; z-index: 60;
+  /*
+     ABSOLUTE, not fixed, and this is the whole bug.
+     
+     `fixed` positions against the VIEWPORT, so no amount of moving this in the DOM would
+     have contained it: on a laptop the sync moment covered the entire window while every
+     other screen sat inside a 390px phone frame, with "Keep it for later" as a button the
+     width of the desk. On a phone the viewport and the frame are the same rectangle, so
+     it looked perfect in every render I had ever taken — all of which were 390 wide.
+     
+     `.screen` is `position: relative`, so absolute now resolves against the phone.
+  */
+  position: absolute; inset: 0; z-index: 60;
   background:
     radial-gradient(86% 56% at 50% 40%, #16183a 0%, #0a0c1e 52%, #06070d 100%);
   display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -2988,6 +3016,8 @@ body {
   letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
 }
 
+/* Capped like the paywall's, so nothing in here stretches to whatever it is given. */
+.synced-say, .synced-rare, .synced-acts { width: 100%; max-width: 330px; }
 .synced-acts {
   position: relative; align-self: stretch; margin-top: 34px;
   display: flex; flex-direction: column; gap: 10px;
@@ -3018,7 +3048,13 @@ body {
    an OLED a black pixel costs almost nothing. One lit object, which is the echo
    pulling. Everything else is as dim as the contrast floor allows. */
 .walk {
-  position: fixed; inset: 0; z-index: 55;
+  /*
+     Absolute, for the same reason as `.synced` two hundred lines up: `fixed` resolves
+     against the viewport, so on a laptop this covered the whole window instead of the
+     phone. Both were written the same way on the same day and both looked correct in
+     every 390px render. `.screen` is relative; absolute stays inside it.
+  */
+  position: absolute; inset: 0; z-index: 55;
   background: radial-gradient(70% 42% at 50% 38%, #16110a 0%, #08080e 58%, #04050a 100%);
   display: flex; flex-direction: column; align-items: center;
   padding: calc(14px + env(safe-area-inset-top)) 22px calc(18px + env(safe-area-inset-bottom));

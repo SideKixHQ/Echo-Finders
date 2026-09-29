@@ -54,6 +54,15 @@ const ALL_CATEGORIES: ReadonlySet<EchoCategory> = new Set(CATEGORY_ORDER);
 const EMPTY_CATS: ReadonlySet<EchoCategory> = new Set();
 
 /** The walk is the richest route, so it is what the prototype opens on. */
+/**
+ * Is this somebody building the app, or somebody using it?
+ *
+ * `?dev` on the URL. Read once at module load rather than held in state, because it never
+ * changes within a session and a prototype harness is not worth a re-render.
+ */
+const dev =
+  typeof location !== "undefined" && new URLSearchParams(location.search).has("dev");
+
 const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROUTES[0]!;
 
 export function App() {
@@ -1678,6 +1687,28 @@ export function App() {
           sits above it, since arriving somewhere new outranks listening to somewhere old.
         */}
         {/*
+          INSIDE THE PHONE, and it was not.
+
+          This sat as a sibling of `.phone`, so its `position: absolute; inset: 0`
+          resolved against the whole window. On a phone that is the same rectangle and it
+          looked right; on a laptop the sync moment spread across two thousand pixels
+          while every other screen stayed in its 390px frame, with "Keep it for later" as
+          a button the width of the desk. Invisible in every render I had taken, because
+          every render I had taken was 390 wide.
+        */}
+        {syncedNow && (
+          <Synced
+            event={syncedNow}
+            onListen={() => {
+              playOrAsk(syncedNow.echo);
+              setSyncedNow(null);
+              setListening(true);
+            }}
+            onLater={() => setSyncedNow(null)}
+          />
+        )}
+
+        {/*
           The ask, over everything.
 
           Above the listening screen because it is the reason that screen did not open,
@@ -1766,7 +1797,24 @@ export function App() {
         </div>
       </div>
 
-      <aside className="notes">
+      {/*
+        THE HARNESS, and it is not the product.
+
+        Everything below the mode switcher is scaffolding: several hundred words of
+        engineering commentary about `WalkSession` and `MODE_PRESETS`, written so somebody
+        reading the code could drive the app from a desk. That made complete sense while
+        the only people opening this were building it.
+
+        It stopped making sense the moment the link went to somebody to TEST. Below about
+        a thousand pixels the commentary reflows UNDER the phone, so scrolling past the
+        app lands you in a wall of documentation about the thing you were just using —
+        which is exactly what happened, and the reaction was "why am I able to see this".
+
+        So the prose is behind `?dev` now. The mode switcher stays, because switching to
+        Air or Car is a real thing to test. And on a narrow window the whole aside goes,
+        because on a phone the app IS the product.
+      */}
+      <aside className={dev ? "notes notes-dev" : "notes"}>
         <b>ECHO FINDERS</b>
         <ModePicker
           routes={ROUTES}
@@ -1775,6 +1823,8 @@ export function App() {
           counts={corridorCounts}
         />
         <p className="routename">{route.name ?? route.id}</p>
+        {dev && (
+          <>
         <p>
           Everything you see is driven by <code>WalkSession</code> from{" "}
           <code>@echofinders/core</code>, the same code an iOS build would run. Only the GPS
@@ -1850,6 +1900,8 @@ export function App() {
           route, not a thing to read. A tile that cannot be fetched hides itself, so a bad
           network degrades the map rather than breaking the screen.
         </p>
+          </>
+        )}
         <div className="controls">
           <button onClick={togglePause}>{paused ? "Resume" : "Pause"}</button>
           <button
@@ -1875,17 +1927,7 @@ export function App() {
           {LIBRARY.length} in the library
         </p>
       </aside>
-      {syncedNow && (
-        <Synced
-          event={syncedNow}
-          onListen={() => {
-            playOrAsk(syncedNow.echo);
-            setSyncedNow(null);
-            setListening(true);
-          }}
-          onLater={() => setSyncedNow(null)}
-        />
-      )}
+
     </div>
   );
 }
