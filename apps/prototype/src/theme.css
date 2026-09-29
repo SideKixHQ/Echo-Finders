@@ -1968,6 +1968,15 @@ body {
  * own. Nothing here shrinks at the half detent: the collapse rules pick the city and the
  * package, which are the two the map can do without.
  */
+/* Humming: the one fab that is doing something continuously, so it says so. The pulse is
+   state rather than decoration, which is the rule the whole app follows for motion. */
+.fab-hum.on { animation: humPulse 2.8s ease-in-out infinite; }
+@keyframes humPulse {
+  0%, 100% { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45), 0 0 0 0 rgba(0, 255, 231, 0.34); }
+  50% { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45), 0 0 0 9px rgba(0, 255, 231, 0); }
+}
+@media (prefers-reduced-motion: reduce) { .fab-hum.on { animation: none; } }
+
 .fab-zoom {
   height: auto; padding: 0; overflow: hidden;
   display: flex; flex-direction: column;
@@ -3165,8 +3174,28 @@ body {
   display: block; padding: 10px 0; cursor: pointer; touch-action: none;
 }
 .hear-wave { display: block; width: 100%; height: 130px; }
-.hear-heard { fill: url(#ribHeard); }
-.hear-tocome { fill: rgba(255, 158, 18, 0.22); }
+/*
+ * The ribbons ADD where they overlap, which is the whole reason this reads as light
+ * rather than as a shape. Four warm fills laid over each other with `screen` give a hot
+ * core where they cross and fall away to nothing at the edges; the same four with normal
+ * blending give a flat brown stack, which is exactly what was on screen before.
+ */
+.hear-rib { mix-blend-mode: screen; }
+/* Still to come: the same light, banked right down. */
+.hear-tocome { opacity: 0.22; }
+/*
+ * The flow. 18 seconds for one full width, and the group is drawn twice a width apart, so
+ * the end frame is identical to the first and the loop has no seam.
+ */
+@keyframes hearFlow {
+  from { transform: translateX(0); }
+  to { transform: translateX(-390px); }
+}
+.hear-flow { animation: hearFlow 18s linear infinite; }
+/* Motion here is decoration, not state: the playhead reports the state. So it goes. */
+@media (prefers-reduced-motion: reduce) {
+  .hear-flow { animation: none; }
+}
 .hear-head { stroke: var(--aqua); stroke-width: 2; stroke-linecap: round; }
 .hear-head-dot { fill: var(--aqua); }
 .hear-clock {

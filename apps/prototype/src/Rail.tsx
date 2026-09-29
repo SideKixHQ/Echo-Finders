@@ -56,6 +56,25 @@ export interface RailProps {
   readonly onZoom: (next: number) => void;
   readonly minZoom: number;
   readonly maxZoom: number;
+  /**
+   * The street humming, and the reason it is on this column at all.
+   *
+   * `hum.ts` is the most ambitious thing in the app: every echo in reach emits a quiet
+   * tone placed at its true bearing, one note per category, pentatonic so any combination
+   * of them is a chord rather than a cluster; sealed ones are heard through a low-pass
+   * with noise under them, and standing in the right place opens the filter. It is the
+   * one part of this product that is genuinely immersive rather than a picture of
+   * something immersive.
+   *
+   * It was switched off by default and reachable from exactly one place: a card on the
+   * rose. Then the app stopped opening on the rose, and the answer to "why isn't this
+   * immersive" became "because the immersion is behind a screen you no longer land on".
+   *
+   * So it is on the map, on the column, next to the zoom. Off by default still, because
+   * it is audio and audio that starts itself is a different kind of rude.
+   */
+  readonly humming?: boolean;
+  readonly onHum?: (on: boolean) => void;
   /** Showing the whole journey rather than following the listener. */
   readonly overview: boolean;
   readonly onOverview: (overview: boolean) => void;
@@ -95,6 +114,8 @@ function RailInner({
   onZoom,
   minZoom,
   maxZoom,
+  humming,
+  onHum,
   overview,
   onOverview,
   onDownload,
@@ -106,6 +127,26 @@ function RailInner({
 }: RailProps) {
   return (
     <div className="rail">
+      {/*
+        The hum, at the top of the column, and lit when it is on.
+
+        Top because it is the only control here that changes what the app IS rather than
+        what the map shows, and because a listener who never finds it never meets the
+        product. The equaliser mark is the rose's own, so the two places agree.
+      */}
+      {onHum !== undefined && (
+        <button
+          className={humming ? "fab fab-hum on" : "fab fab-hum"}
+          onClick={() => onHum(!humming)}
+          aria-pressed={humming ?? false}
+          aria-label={humming ? "Stop listening for echoes" : "Listen for echoes"}
+        >
+          <svg viewBox="0 0 24 24">
+            <path d="M4 12h2.5l2-6 3 12 2.5-8 1.5 4H20" />
+          </svg>
+        </button>
+      )}
+
       {/*
         Zoom, as board 2 draws it: the same magnifier, on the same column.
 
