@@ -144,7 +144,18 @@ for (let i = 0; i < 9 && await p.locator('.onb').count(); i++) {
   const allow = p.getByRole('button', { name: /Allow location/ });
   if (await start.count()) await start.click();
   else if (await allow.count()) { await allow.click(); await p.waitForTimeout(1500); }
-  else await p.locator('.onb-go').first().click();
+  else {
+    /*
+      The category step starts EMPTY now, and Continue is disabled until something is
+      picked. It used to open with all nine lit, so this walked past it without choosing
+      anything — which is exactly the state a listener complained about, and exactly why
+      an audit that clicks Continue blind cannot be the thing that notices.
+      "All of them" is the one-tap answer the screen offers.
+    */
+    const all = p.locator('.onb-all');
+    if (await all.count() && await all.isEnabled()) { await all.click(); await p.waitForTimeout(200); }
+    await p.locator('.onb-go').first().click();
+  }
   await p.waitForTimeout(400);
 }
 await p.waitForTimeout(4500);

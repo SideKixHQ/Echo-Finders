@@ -299,6 +299,26 @@ body {
   fill: var(--space); stroke: var(--aqua); stroke-width: 2;
   filter: drop-shadow(0 0 10px var(--aqua));
 }
+/*
+ * YOU, ON FOOT: board 2's mark. A solid aqua disc, lit, with a ring breathing out of it.
+ *
+ * The ring is the one piece of motion on this screen that is about YOU rather than about
+ * an echo, which is why it is aqua and why it is slow: a heartbeat rather than a call.
+ * The pins ripple to say "something is here"; this says "and here you are".
+ */
+.here-dot { fill: var(--aqua); filter: drop-shadow(0 0 12px var(--aqua)); }
+.here-ring {
+  fill: none; stroke: var(--aqua); stroke-width: 2;
+  transform-box: fill-box; transform-origin: center;
+  animation: hereBeat 3.2s ease-out infinite;
+}
+@keyframes hereBeat {
+  0% { transform: scale(0.6); opacity: 0.5; }
+  100% { transform: scale(2.1); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .here-ring { animation: none; opacity: 0.35; }
+}
 .here-figure {
   fill: none; stroke: var(--aqua); stroke-width: 2.6;
   stroke-linecap: round; stroke-linejoin: round;
@@ -692,6 +712,21 @@ body {
  * a category and correctly falls back to the chip's own ink.
  */
 .chip svg { stroke: var(--cat, currentColor); }
+/* Onboarding's chips are the map's chips, so they wear the same marks the same way:
+   the label greys out when off, the glyph keeps its hue. */
+.onb-chip svg {
+  width: 14px; height: 14px; flex: none; fill: none;
+  stroke: var(--cat, currentColor); stroke-width: 1.8;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.onb-chip:not(.on) svg { opacity: 0.55; }
+/* One tap for the answer most people want, now that the step starts empty. */
+.onb-all {
+  align-self: flex-start; margin-top: 10px; min-height: 44px; padding: 0 14px;
+  border-radius: 99px; cursor: pointer; font: inherit; font-size: 13px;
+  color: var(--aqua); background: none; border: 1px solid rgba(var(--rgb-hair), 0.22);
+}
+.onb-all:disabled { opacity: 0.4; cursor: default; }
 .chip.on { background: rgba(var(--rgb-hair), 0.08); }
 .chip.on .chip-dot { opacity: 1; }
 
@@ -2735,7 +2770,23 @@ body {
  * notice, and only while the echo is still sealed: an echo already yours has nothing left
  * to find, so it goes quiet.
  */
+/*
+ * The warm light around the two rarities worth walking to, and the singular one breathes.
+ *
+ * Board 2 gives its singular echo a slow 3.6s pulse and leaves everything else still.
+ * That is the motion rule this app already follows — motion reports state — used for the
+ * one piece of state the whole screen exists to communicate: THIS is the one.
+ */
 .pin-halo { pointer-events: none; }
+.pin-halo-singular {
+  transform-box: fill-box; transform-origin: center;
+  animation: haloBreathe 3.6s ease-in-out infinite;
+}
+@keyframes haloBreathe {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.62; }
+}
+@media (prefers-reduced-motion: reduce) { .pin-halo-singular { animation: none; } }
 .pin-halo-rare { fill: url(#rarityRare); }
 .pin-halo-singular { fill: url(#raritySingular); }
 /* Heard is the ember gone cold. */
@@ -3245,9 +3296,32 @@ body {
      when what is behind it is dark and quiet, and this one covers the brightest thing on
      the screen.
   */
-  position: absolute; left: 0; right: 0; top: 0; bottom: 210px; z-index: 2;
+  position: absolute; left: 0; right: 0; top: 0; z-index: 2;
   background: #07080c; overflow-y: auto;
-  padding: calc(52px + env(safe-area-inset-top)) 4px 8px;
+  /*
+     THE TOP CLEARS THE BACK BUTTON. It was 52px, and the back button sits at 48px and is
+     44 tall, so the search field landed underneath it: the magnifier and the first
+     characters of "Search this transcript" were behind a circle, on the one control on
+     this screen you are most likely to reach for first. 48 + 44 + 12 of air.
+  */
+  padding-top: calc(104px + env(safe-area-inset-top));
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 8px;
+  /*
+     THE BOTTOM CLEARS THE CLOCK, not just the transport. At 210px the panel ran down over
+     the elapsed and remaining times and stopped a few pixels into the play button's glow,
+     so reading an echo cost you every audio control except two buttons floating on the
+     words — which is what "what happened to all the audio controls" was looking at.
+     268px leaves the clock, the transport and the actions all on screen.
+  */
+  bottom: 268px;
+  /*
+     And the words fade out instead of being guillotined. A hard edge mid-sentence reads
+     as broken; a fade reads as "there is more, scroll". Same trick both ends, since the
+     search field also scrolls up under the back button.
+  */
+  mask-image: linear-gradient(to bottom, transparent 0, #000 96px, #000 calc(100% - 26px), transparent 100%);
 }
 /* Above the transcript, so the way out of the screen does not disappear behind the words. */
 .hear-back { z-index: 3; }

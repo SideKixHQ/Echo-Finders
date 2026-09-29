@@ -77,6 +77,14 @@ export interface RailProps {
   readonly onHum?: (on: boolean) => void;
   /** Showing the whole journey rather than following the listener. */
   readonly overview: boolean;
+  /**
+   * Whether the map has been dragged off centre.
+   *
+   * Only used to label the recentre button honestly. With a drag in play the button's job
+   * is "put me back", whatever the overview is set to, and saying "whole journey" there
+   * describes something it is not about to do.
+   */
+  readonly panned?: boolean;
   readonly onOverview: (overview: boolean) => void;
   /** The package screen: what the journey weighs, and the route picker with it. */
   readonly onDownload: () => void;
@@ -117,6 +125,7 @@ function RailInner({
   humming,
   onHum,
   overview,
+  panned,
   onOverview,
   onDownload,
   downloaded,
@@ -238,7 +247,7 @@ function RailInner({
         className={overview ? "fab on" : "fab"}
         onClick={() => onOverview(!overview)}
         aria-pressed={overview}
-        aria-label={overview ? "Follow me" : "Whole journey"}
+        aria-label={panned ? "Back to where I am" : overview ? "Follow me" : "Whole journey"}
       >
         <svg viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="7" />

@@ -46,6 +46,8 @@ import {
 
 /** Every category, as the starting filter. See `activeCats`. */
 const ALL_CATEGORIES: ReadonlySet<EchoCategory> = new Set(CATEGORY_ORDER);
+/** Nothing chosen. Onboarding's starting point, and never the map's. */
+const EMPTY_CATS: ReadonlySet<EchoCategory> = new Set();
 
 /** The walk is the richest route, so it is what the prototype opens on. */
 const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROUTES[0]!;
@@ -139,6 +141,18 @@ export function App() {
   // a phone collecting in a pocket while still choosing what they hear.
   const [autoPlay, setAutoPlay] = useState(false);
   const [chosen, setChosen] = useState<ReadonlySet<string>>(new Set());
+  /**
+   * Which categories are on. `null` means all of them.
+   *
+   * Onboarding starts from an EMPTY set rather than from `null`, which is a different
+   * thing and the reason that step read backwards: the screen says "Pick as many as you
+   * like" over nine chips that are already picked, so the only available action is
+   * deselecting, and the button underneath counts down instead of up. Nobody picks by
+   * unpicking.
+   *
+   * `null` stays the resting state for everything after onboarding, because a listener
+   * who has never opened the filter row should see the whole library rather than nothing.
+   */
   const [cats, setCats] = useState<ReadonlySet<EchoCategory> | null>(null);
   /*
    * The map is the app, so the map is what opens.
@@ -270,6 +284,13 @@ export function App() {
    * buttons and both have to move the same number. The map still owns the gestures.
    */
   const [zoom, setZoom] = useState(1);
+  /**
+   * How far the listener has dragged the map, in screen pixels.
+   *
+   * Held next to the zoom and for the same reason: the recentre button on the control
+   * column has to be able to clear it, and only App can see both.
+   */
+  const [pan, setPan] = useState({ x: 0, y: 0 });
   const [tab, setTab] = useState<Tab>("map");
   /**
    * The echo the camera is pointed at, or null for closed.
@@ -313,7 +334,10 @@ export function App() {
    * across either one lands somebody at 8x on a map they have not seen yet.
    */
   const routeId = roaming ? null : route.id;
-  useEffect(() => setZoom(1), [routeId, overview]);
+  useEffect(() => {
+    setZoom(1);
+    setPan({ x: 0, y: 0 });
+  }, [routeId, overview]);
   /**
    * Choosing what plays itself, reached from the package screen rather than the tab bar.
    *
@@ -1161,6 +1185,8 @@ export function App() {
                 theme={theme}
                 zoom={zoom}
                 onZoom={setZoom}
+                pan={pan}
+                onPan={setPan}
               />
               {/*
                 No control column either. It carries the map toggle, recentre and download,
@@ -1180,7 +1206,17 @@ export function App() {
                    nothing at 500 knots. Carried modes never had it and still do not. */
                 {...(onFoot ? { humming, onHum: setHumming } : {})}
                 overview={overview}
-                onOverview={setOverview}
+                /*
+                  Recentre is the way back from a drag, and it has to work even when the
+                  overview is already where you want it: dragging the map and then tapping
+                  recentre should put you back in the middle, not toggle the framing and
+                  leave the offset in place.
+                */
+                onOverview={(next) => {
+                  setPan({ x: 0, y: 0 });
+                  setOverview(next);
+                }}
+                panned={pan.x !== 0 || pan.y !== 0}
                 downloaded={downloaded}
                 /*
                   Leaving the map hands back the WALK when there is one, and the survey
@@ -1435,10 +1471,25 @@ export function App() {
               onAskLocation={() => gps.start()}
               kids={kids}
               onKids={setKidsMode}
-              cats={activeCats}
+              /*
+                What the onboarding chips show, which is NOT `activeCats`.
+                
+                `activeCats` resolves an untouched filter to the whole library, which is
+                right for the map and wrong for the question. Passed here it lit all nine
+                chips under the words "Pick as many as you like", so the step read
+                backwards. Untouched here means nothing chosen yet.
+              */
+              cats={cats ?? EMPTY_CATS}
+              onAllCats={() => setCats(ALL_CATEGORIES)}
               onToggleCats={(categories) =>
                 setCats((current) => {
-                  const next = new Set(current ?? ALL_CATEGORIES);
+                  /*
+                    During onboarding an untouched filter means NOTHING chosen, not
+                    everything: the step is asking, so the first tap has to add rather
+                    than subtract. Afterwards `null` still means all, which is why this
+                    reads `current ?? (onboarded ? ALL : EMPTY)` rather than picking one.
+                  */
+                  const next = new Set(current ?? (onboarded ? ALL_CATEGORIES : []));
                   if (categories.some((c) => next.has(c))) {
                     for (const c of categories) next.delete(c);
                   } else {
@@ -1606,7 +1657,23 @@ export function App() {
 
           <Nav
             tab={tab}
-            onChange={setTab}
+            /*
+              Leaving by the tab bar closes the listening screen.
+              
+              It used to only set `tab`, under the comment that hearing an echo is a state
+              of the app rather than a modal and you can walk away into My Echoes while it
+              keeps playing. That was the right intent and the wrong code: `Ribbon` renders
+              on `listening` alone, never on the tab, so the overlay stayed over the top and
+              tapping My Echoes changed a variable and nothing else. The tab bar looked
+              broken because from that screen it WAS broken.
+              
+              The playback is untouched — `session` keeps going and the sheet's own
+              transport picks it up — so the intent survives. Only the full-screen view goes.
+            */
+            onChange={(next) => {
+              setTab(next);
+              setListening(false);
+            }}
             foundCount={kept.length}
           />
           <div className="homebar" />

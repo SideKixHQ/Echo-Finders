@@ -76,6 +76,21 @@ interface Props {
    */
   readonly zoom: number;
   readonly onZoom: (next: number) => void;
+  /**
+   * How far the listener has dragged the view, in screen pixels.
+   *
+   * The map has never panned. It centres on you, or it fits the journey, and that is the
+   * whole set of places it can look — so "what is two streets that way" had no answer
+   * except walking there, and a drag did nothing at all, which reads as a broken map
+   * rather than as a deliberate one.
+   *
+   * Pixels rather than a lat/lng centre, deliberately: the offset survives a zoom change
+   * and a new position fix without having to be reprojected, and it keeps FOLLOWING
+   * alive. The view still tracks you as you walk, just shifted by however far you dragged
+   * it. Recentre puts it back.
+   */
+  readonly pan: { readonly x: number; readonly y: number };
+  readonly onPan: (next: { x: number; y: number }) => void;
 }
 
 /*
@@ -208,6 +223,8 @@ export function RouteMap({
   theme,
   zoom,
   onZoom,
+  pan,
+  onPan,
 }: Props) {
   /**
    * The view follows the listener, rather than fitting the whole journey.
@@ -262,9 +279,19 @@ export function RouteMap({
     return a && b ? Math.hypot(a.x - b.x, a.y - b.y) : 0;
   };
 
+  /** Where a one-finger drag started, and the pan it started from. */
+  const dragFrom = useRef<{ x: number; y: number; pan: { x: number; y: number } } | null>(null);
+  /** Whether this gesture has moved far enough to be a drag rather than a tap. */
+  const dragged = useRef(false);
+
   const onPointerDown = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
     pinch.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
-    if (pinch.current.size === 2) pinchFrom.current = { gap: gap(), zoom };
+    if (pinch.current.size === 2) { pinchFrom.current = { gap: gap(), zoom }; dragFrom.current = null; }
+    else if (pinch.current.size === 1) {
+      dragFrom.current = { x: e.clientX, y: e.clientY, pan };
+      dragged.current = false;
+      e.currentTarget.setPointerCapture(e.pointerId);
+    }
     // Double tap to step in, and to step back out once there is nowhere further in worth
     // going. One finger, which is the gesture somebody uses while holding a coffee.
     if (pinch.current.size === 1) {
@@ -276,19 +303,37 @@ export function RouteMap({
         lastTap.current = now;
       }
     }
-  }, [zoom, setZoom]);
+  }, [zoom, setZoom, pan]);
 
   const onPointerMove = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
     if (!pinch.current.has(e.pointerId)) return;
     pinch.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
     const from = pinchFrom.current;
-    if (pinch.current.size !== 2 || !from || from.gap === 0) return;
-    setZoom(clamp(from.zoom * (gap() / from.gap)));
-  }, [setZoom]);
+    if (pinch.current.size === 2 && from && from.gap !== 0) {
+      setZoom(clamp(from.zoom * (gap() / from.gap)));
+      return;
+    }
+    /*
+     * One finger drags the map.
+     *
+     * Six pixels of slop before it counts, because a pin is a 44px target and a thumb
+     * moves two or three pixels on the way down. Under the threshold this is still a tap
+     * and the pin under it still opens; over it, the gesture becomes a drag and the tap
+     * is cancelled, which is the behaviour of every map anybody has used.
+     */
+    const d = dragFrom.current;
+    if (pinch.current.size !== 1 || !d) return;
+    const dx = e.clientX - d.x;
+    const dy = e.clientY - d.y;
+    if (!dragged.current && Math.hypot(dx, dy) < 6) return;
+    dragged.current = true;
+    onPan({ x: d.pan.x + dx, y: d.pan.y + dy });
+  }, [setZoom, onPan]);
 
   const onPointerUp = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
     pinch.current.delete(e.pointerId);
     if (pinch.current.size < 2) pinchFrom.current = null;
+    if (pinch.current.size === 0) dragFrom.current = null;
   }, []);
 
   /**
@@ -355,8 +400,11 @@ export function RouteMap({
     // the middle of *that*, not the middle of a box that is half covered.
     const usableW = box.w - INSET.side * 2;
     const usableH = box.h - INSET.top - INSET.bottom;
-    const centreX = INSET.side + usableW / 2;
-    const centreY = INSET.top + usableH / 2;
+    // The listener's drag, applied to where the centre lands on screen. Everything —
+    // tiles, route, pins, radii — is projected from this one pair, so the whole map moves
+    // together and nothing can drift out of register with the basemap.
+    const centreX = INSET.side + usableW / 2 + pan.x;
+    const centreY = INSET.top + usableH / 2 + pan.y;
 
     let centre: LatLng;
     /** How wide the view is on the ground, km, measured across its width. */
@@ -433,7 +481,7 @@ export function RouteMap({
     // computed twice and drifting.
     project.plan = plan;
     return project;
-  }, [mode, geometry, library, at, overview, detent, sheet, zoom, box]);
+  }, [mode, geometry, library, at, overview, detent, sheet, zoom, box, pan]);
 
   const path = useMemo(() => {
     if (!geometry) return "";
@@ -583,7 +631,8 @@ export function RouteMap({
           as a solid wedge of teal laid over the streets.
         */}
         <radialGradient id="coneFade" gradientUnits="objectBoundingBox" r="0.7" cx="0.5" cy="1">
-          <stop offset="0%" stopColor="var(--aqua)" stopOpacity="0.22" />
+          <stop offset="0%" stopColor="var(--aqua)" stopOpacity="0.34" />
+          <stop offset="55%" stopColor="var(--aqua)" stopOpacity="0.12" />
           <stop offset="100%" stopColor="var(--aqua)" stopOpacity="0" />
         </radialGradient>
 
@@ -842,7 +891,13 @@ export function RouteMap({
                 return (
                   <circle
                     className={`pin-halo pin-halo-${rarity}`}
-                    r={rarity === "singular" ? 52 : 34}
+                    /*
+                      Board 2 draws the singular one's halo at 92 and lets it breathe. Mine
+                      was 52 and still, so the one echo the whole screen is built to point
+                      at was a slightly warmer dot. The rare one stays smaller on purpose:
+                      the gap between the two IS the ranking.
+                    */
+                    r={rarity === "singular" ? 92 : 46}
                   />
                 );
               })()}
@@ -1035,7 +1090,20 @@ export function RouteMap({
  * foot is routinely thirty degrees out either way, so a cone narrower than this would
  * claim a precision the number does not have.
  */
-const CONE = "M0 0 L-52.4 -80.5 A96 96 0 0 1 52.4 -80.5 Z";
+/*
+ * WHICH WAY YOU ARE POINTED, and the board's wedge is bigger and brighter than mine was.
+ *
+ * 96px at plus or minus 33 degrees, against board 2's 110 at a little over 28 either side
+ * of a wider sweep. Asked for "bright and wide", so: 124px, plus or minus 42 degrees, and
+ * the gradient's inner stop lifted from 0.22 to 0.34. It is still a cone rather than a
+ * beam because what it draws is course over ground, which is meaningless below walking
+ * pace and wobbles hard at it; a narrow bright ray would claim a precision the sensor has
+ * not got. Wide and soft is the honest shape, and now it is a wide soft shape you can
+ * actually see from a hand at waist height.
+ *
+ * 124 * sin(42°) = 82.98, 124 * cos(42°) = 92.15.
+ */
+const CONE = "M0 0 L-82.98 -92.15 A124 124 0 0 1 82.98 -92.15 Z";
 
 function Here({
   x,
@@ -1080,11 +1148,34 @@ function Here({
       */}
       {spin && <path className="here-cone" d={CONE} transform={spin} />}
       <circle r="26" fill="url(#hereGlow)" />
-      {spin && <path className="here-pip" d="M0 -25.5L5.4 -16.5H-5.4Z" transform={spin} />}
-      <circle className="here-disc" r="13" />
-      <g className="here-figure" transform="translate(-7.5 -7.5) scale(0.625)">
-        {MODE_ICON[mode] ?? MODE_ICON.walking}
-      </g>
+      {/*
+        ON FOOT, YOU ARE A DOT. No figure inside it.
+
+        The walking glyph was mine, not the board's: board 2 draws a plain bright aqua
+        disc with a soft halo and a ring breathing out of it, and nothing in the middle.
+        Asked whether the figure could be a picture instead, and the board's answer is
+        better than either — the mark says "you are here" and the cone in front of it says
+        which way you face, so a figure inside is a third thing saying what the other two
+        already said, at 8 pixels, where it reads as a smudge.
+
+        The other ground modes keep their glyph. A car and a bicycle are genuinely
+        different things to be, the board does not cover them, and dropping the
+        distinction because one screen did not need it would be overreading it.
+      */}
+      {mode === "walking" ? (
+        <>
+          <circle className="here-ring" r="13" />
+          <circle className="here-dot" r="11" />
+        </>
+      ) : (
+        <>
+          {spin && <path className="here-pip" d="M0 -25.5L5.4 -16.5H-5.4Z" transform={spin} />}
+          <circle className="here-disc" r="13" />
+          <g className="here-figure" transform="translate(-7.5 -7.5) scale(0.625)">
+            {MODE_ICON[mode] ?? MODE_ICON.walking}
+          </g>
+        </>
+      )}
     </g>
   );
 }
