@@ -1963,21 +1963,19 @@ body {
   pointer-events: none; overflow: hidden;
 }
 
-/* The basemap, pushed well back.
-   0.38, not 0.85. Esri's "dark gray" canvas is a mid grey however its name reads, and at
-   85 percent over the app's navy it came out a pale rectangle with the furniture floating
-   on it — which is what "this doesn't look correct" was mostly looking at. Letting the
-   ground show through four fifths of the way turns the streets into a texture under the
-   pins rather than the brightest thing on the screen, which is what the design draws.
-   The light scheme keeps its own value below: there the tiles ARE the surface. */
 /*
- * The basemap, inked into the design's navy. See the `mapInk` filter in `RouteMap.tsx`
- * for what it does and why the tiles are not simply faded.
+ * The basemap, inked into the design's navy.
  *
- * Back up to near-full opacity, and that is the point: at 0.38 the map was a grey haze,
- * which is dimmer rather than different. Once the grey is remapped to the board's own
- * indigo the tiles can carry their full weight, because the streets now ARE the field the
- * board draws by hand instead of a layer sitting on top of it.
+ * This rule read 0.38 for one commit, on the argument that Esri's "dark gray" canvas is a
+ * mid grey however its name reads and had to be pushed back. The diagnosis was right and
+ * the fix was wrong: fading a grey gives you a paler grey, so the map got dimmer without
+ * getting any closer to a board whose field is #0D1230.
+ *
+ * So the grey is remapped instead: see the `mapInk` filter in `RouteMap.tsx` for what it
+ * does. Once it is the board's own indigo the tiles can carry their full weight again,
+ * because the streets now ARE the field the board draws by hand rather than a layer
+ * sitting on top of it. The light scheme keeps its own value below, unfiltered: there the
+ * tiles are the surface and a night treatment would be wrong.
  */
 .map-tile { filter: url(#mapInk); opacity: 0.92; }
 /* Under the tiles, and what is left when one fails to load. */
