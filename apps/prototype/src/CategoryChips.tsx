@@ -126,9 +126,15 @@ function CategoryChipsInner({ on, onToggle, onAll }: CategoryChipsProps) {
           return (
             <button
               key={group.id}
-              // The colour class goes on the chip only when it is on, so the *label* greys
-              // out with the rest of the row. The dot carries its colour either way.
-              className={`chip${lit ? ` cat-${group.face} on` : ""}`}
+              /*
+                The colour class is on the chip ALWAYS, on or off.
+                
+                It used to go on only when lit, which meant an unlit chip had no category
+                colour anywhere on it — nine identical grey marks, and a key that only
+                works for the things already switched on. The label still greys out when
+                off (`.chip:not(.on)`), and the glyph keeps its hue from `--cat`.
+              */
+              className={`chip cat-${group.face}${lit ? " on" : ""}`}
               /* A lit chip and a dark one are the same word to a screen reader without
                  this. The colour is the whole state on this row. */
               aria-pressed={lit}

@@ -479,31 +479,63 @@ body {
    `currentColor` — dots, tags, borders — so a category's identity is declared once rather
    than threaded through every component. */
 /*
- * AQUA IS THE INTERFACE. EMBER IS THE ECHO. And a category is a glyph, not a colour.
+ * THE CATEGORY COLOURS, restored — everywhere except the map.
  *
- * These nine rules used to paint a pin, a chip and a card in the category's own hue. Two
- * things were wrong with that, and only one of them is taste.
+ * These nine were flattened to one cool ink on my argument, and the argument was half
+ * right and applied twice as widely as it should have been. Asked for them back, and the
+ * right answer turns out to be a line rather than a reversal, because the two halves of
+ * that argument have completely different blast radii.
  *
- * The measurable one: simulating the three kinds of colour blindness, four of the nine
- * collapse into each other. Kids and Landmarks fall from 0.86 apart to 0.02 for a
- * deuteranope, roughly one man in twelve, and Food & drink and Land to 0.06. Searching the
- * whole colour space for a set that survives, with the warm channel reserved for the echo
- * and aqua reserved for the interface, the ceiling is five comfortable and six at a
- * squeeze. Never nine. That is a property of human vision rather than of the palette.
+ * **On the map, colour stays out**, and board 2 is the reason rather than my opinion: its
+ * pins are all one cool ink with the category in the glyph inside, and its warm light is
+ * spent on exactly two objects. Nine hues competing on one map is what leaves the
+ * singular echo with nothing to pull your eye with. The map pins never carried a `cat-*`
+ * class in the first place, so this rule cannot reach them.
  *
- * The other: nine hues at full strength on one map spend exactly the budget that makes
- * ember mean "worth walking to". Rarity had nothing left to say with.
+ * **Everywhere else, the colours come back**, because everywhere else they were never
+ * costing the ember anything. A chip row is a key. A card's eyebrow names what you are
+ * about to hear. A saved plate in the collection is a shelf of things you have kept. None
+ * of those sit next to a warm halo, and a grey legend is a worse legend.
  *
- * So colour now carries STATE and the glyph carries CATEGORY. Cool ink means an echo is
- * here and the mark inside says what kind. Ember means this one is worth the walk. Aqua
- * means you, and anything you can press.
+ * What survives of the accessibility half, and it is why the glyph work stays: simulating
+ * the three kinds of colour blindness over these nine, eight of the thirty-six pairs fall
+ * below CIEDE2000 10 for a deuteranope — Kids and Landmarks at 2.03 — against none at all
+ * with normal vision. So colour is never the ONLY carrier: every one of these places
+ * draws the category's glyph or spells its name beside the colour. The hue is the fast
+ * read for people who have it, and nothing is lost for people who do not.
  *
- * The --cat-* tokens are kept rather than deleted: check-contrast.py measures all nine in
- * both schemes, and the day somebody argues for bringing a hue back, the numbers are
- * already there to argue with.
+ * Text colours are set by the children (`.erow-body strong` is white, `small` is muted),
+ * so this lights the dots, the glyphs, the plates and the kickers rather than washing a
+ * whole card in one hue.
  */
-.cat-history, .cat-true-crime, .cat-legend, .cat-kids, .cat-food-drink,
-.cat-arts, .cat-people, .cat-built, .cat-land { color: var(--cool); }
+.cat-history { --cat: var(--cat-history); color: var(--cat); }
+.cat-true-crime { --cat: var(--cat-true-crime); color: var(--cat); }
+.cat-legend { --cat: var(--cat-legend); color: var(--cat); }
+.cat-kids { --cat: var(--cat-kids); color: var(--cat); }
+.cat-arts { --cat: var(--cat-arts); color: var(--cat); }
+.cat-people { --cat: var(--cat-people); color: var(--cat); }
+.cat-food-drink { --cat: var(--cat-food-drink); color: var(--cat); }
+.cat-built { --cat: var(--cat-built); color: var(--cat); }
+.cat-land { --cat: var(--cat-land); color: var(--cat); }
+
+/*
+ * THE MAP PINS ARE THE EXCEPTION, and this rule is the whole line.
+ *
+ * A pin carries `cat-<category>` like everything else, so restoring the nine hues above
+ * repainted the map with them — which I said would not happen and then watched happen in
+ * a render. Board 2 is the argument for putting it back: every pin on it is one cool ink
+ * with the category in the glyph inside, and the only warm light on the screen is the
+ * singular echo's halo and the rare one's ring. Nine hues on a map leaves that halo
+ * competing with four other colours instead of being the one thing that pulls your eye
+ * across the screen.
+ *
+ * So the key is coloured and the map is not, which is the arrangement the board actually
+ * draws. Two classes so this beats the single-class `.cat-*` above whatever the source
+ * order.
+ */
+.pin.pin-sealed, .pin.pin-opening, .pin.pin-captured, .pin.pin-heard {
+  --cat: var(--cool); color: var(--cool);
+}
 
 /* ── route ribbon ────────────────────────────────────────── */
 .ribbon {
@@ -650,6 +682,16 @@ body {
  * the on state, and the colour stays in one place instead of being repeated nine times.
  */
 .chip:not(.on) { color: var(--muted); }
+/*
+ * The label greys out when the chip is off; the mark does not.
+ *
+ * This is the whole difference between a key and a row of buttons. Greying the glyph with
+ * the label leaves anybody who does not already know the palette staring at nine
+ * identical grey marks, and the row exists to explain the colours everywhere else in the
+ * app. `--cat` is set by the `.cat-*` classes above and is absent on "All", which is not
+ * a category and correctly falls back to the chip's own ink.
+ */
+.chip svg { stroke: var(--cat, currentColor); }
 .chip.on { background: rgba(var(--rgb-hair), 0.08); }
 .chip.on .chip-dot { opacity: 1; }
 
