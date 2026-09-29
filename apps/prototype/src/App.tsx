@@ -82,14 +82,25 @@ export function App() {
   /** A narrator the listener picked. Null keeps whichever the echo was written for. */
   const [voice, setVoice] = useState<string | null>(null);
   /*
-   * Walking's own view.
+   * Walking's own view, and the app opens on the MAP.
    *
-   * On foot the resting screen is the rose rather than the map, because a route map answers
-   * a passenger's question and a walker has a here and a head they can turn. The map is one
-   * tap away rather than gone. Every other mode goes straight to the map: a driver wants the
-   * road and a passenger wants the route.
+   * It opened on the rose for months, on an argument I made up and never checked against
+   * the canvas: that a route map answers a passenger's question while a walker has a here
+   * and a head they can turn. It reads well and it is not what was approved. The canvas
+   * has nine screens in order and the second is "FIND IT", which is the street map; the
+   * rose's nearest relative is `Around.dc.html`, which sits on the row headed "Rejected.
+   * Nothing on this row is proposed."
+   *
+   * So on foot the app landed on a compass dial that no approved board describes, with the
+   * designed screen one unexplained tap away behind a folded-map icon. Every pass I made
+   * at board 2 was invisible to anybody who opened the app and looked at it, which is
+   * exactly what happened.
+   *
+   * The rose is still there and still one tap away, inverted: it is a genuinely good
+   * answer to "what is around me" and deleting it would be overcorrecting. It is just no
+   * longer the front door.
    */
-  const [walkingView, setWalkingView] = useState<WalkingView>("rose");
+  const [walkingView, setWalkingView] = useState<WalkingView>("map");
   /** The street humming. Off until somebody asks for it, because it is audio. */
   const [humming, setHumming] = useState(false);
   /**
@@ -276,7 +287,19 @@ export function App() {
    * screen the sheet is covering is exactly what decides where that is. Owned by the sheet,
    * a peek would slide the map's centre under the sheet it had just moved out of the way.
    */
-  const [detent, setDetent] = useState<Detent>("half");
+  /*
+   * The sheet opens at PEEK, which is what board 2 draws.
+   *
+   * It opened at half, and half is 46 percent of the screen: the map got the band between
+   * the chips and a list of everything nearby, the control column was squeezed into that
+   * band until its top button sat on the category chips, and the screen the design calls
+   * FIND IT had barely enough map left to find anything on. Board 2 is a full screen of
+   * map with a single card along the bottom, and that is peek.
+   *
+   * Half is one swipe up and the sheet remembers nothing between sessions, so this is the
+   * resting state rather than a restriction.
+   */
+  const [detent, setDetent] = useState<Detent>("peek");
   /**
    * Whether the map is showing the whole journey rather than following the listener.
    *
