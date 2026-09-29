@@ -19,6 +19,8 @@ import { hasAudio, isOnFoot, OPT_IN_CATEGORIES } from "../types.js";
 import { presetFor } from "../modes.js";
 import { isDaylight, localSolarHour } from "../geo/solar.js";
 import type { CorridorHit } from "../geo/corridor.js";
+import type { Entitlement } from "../entitlement/entitlement.js";
+import { mayHearAnother } from "../entitlement/entitlement.js";
 
 export type IneligibleReason =
   | "not-approved"
@@ -30,6 +32,14 @@ export type IneligibleReason =
   | "already-heard"
   | "no-audio"
   | "outside-hours"
+  /**
+   * The free ten are used up and this one has not been heard before.
+   *
+   * In this list rather than beside it, on `docs/03-selling.md`'s argument: paid-or-not
+   * belongs in the same gate as age and consent, or the map advertises an echo the player
+   * then refuses. Every other surface already knows how to read a reason out of here.
+   */
+  | "needs-unlock"
   /** A contributed echo where only the editorial library is carried. */
   | "provenance-not-carried"
   /** Reported by a listener and hidden pending review. */
@@ -51,6 +61,16 @@ export interface EligibilityContext {
   readonly playAtMs: number;
   /** Require rendered audio. Off while authoring, on when building a route package. */
   readonly requireAudio?: boolean;
+  /**
+   * What the listener has paid for. Absent means do not apply the paywall at all.
+   *
+   * Absent rather than defaulting to free, deliberately. The content tooling, the package
+   * builder and every test that predates selling call this function without knowing
+   * anything about money, and they must keep getting the same answers they always did. A
+   * gate that switches itself on by default would have quietly failed a thousand editorial
+   * checks the first time it shipped.
+   */
+  readonly entitlement?: Entitlement;
 }
 
 /**
@@ -90,6 +110,17 @@ export function checkEligibility(echo: Echo, context: EligibilityContext): Eligi
   if (context.requireAudio && !hasAudio(echo)) reasons.push("no-audio");
 
   if (echo.hours && !withinHours(echo, playAtMs)) reasons.push("outside-hours");
+
+  /*
+   * The paywall, and only when a caller has said there is one.
+   *
+   * It sits after the safety gates on purpose. An echo a child may not hear is not a
+   * thing to sell them, and a reason list that says "below-min-age, needs-unlock" in that
+   * order reads correctly to anything that shows the first reason it finds.
+   */
+  if (context.entitlement && !mayHearAnother(context.entitlement, profile, echo.id)) {
+    reasons.push("needs-unlock");
+  }
 
   // Contributed content is carried by mode and by choice, never by default everywhere.
   const carried: readonly Provenance[] =
