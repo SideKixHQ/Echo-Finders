@@ -517,11 +517,22 @@ export function RouteMap({
     const rank = (m: EdgeMark) => (m.rarity === "singular" ? 0 : m.rarity === "rare" ? 1 : 2);
     off.sort((a, b) => rank(a) - rank(b) || a.km - b.km);
     /*
-     * Three. Enough that the good one is never the one left out, few enough that the edge
-     * does not become a second list competing with the sheet, which already lists
-     * everything in reach in full.
+     * How many, and it depends on whether the listener asked to look closer.
+     *
+     * At the mode's own framing the map shows a couple of streets while "nearby" reaches
+     * much further, so almost everything in the list is off the edge by definition. Three
+     * markers there is not help, it is permanent furniture: a rendered walk had pointers
+     * to 900 m, 1.1 km and 1.4 km sitting over the pins that were actually on screen,
+     * every second of every walk, saying nothing the sheet below was not already saying
+     * in full. So at or below the default framing this behaves like board 2 and shows the
+     * one marker the board shows, for the echo actually worth the walk.
+     *
+     * Zoomed IN, they earn their place: the listener has narrowed the frame themselves,
+     * and things leaving it is a consequence of that rather than the resting state.
      */
-    const shown = off.slice(0, 3);
+    const shown = zoom > 1.05
+      ? off.slice(0, 3)
+      : off.filter((m) => m.rarity === "singular" || m.rarity === "rare").slice(0, 1);
 
     /*
      * Out from under the control column, and out from under each other.
@@ -548,7 +559,7 @@ export function RouteMap({
       lastY = y;
       return { ...mark, y };
     });
-  }, [at, overview, library, stateOf, projection, box]);
+  }, [at, overview, library, stateOf, projection, box, zoom, detent, sheet]);
 
   return (
     <svg
