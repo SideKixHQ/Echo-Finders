@@ -3,6 +3,7 @@ export * from "./modes.js";
 export * from "./geo/great-circle.js";
 export * from "./geo/corridor.js";
 export * from "./geo/solar.js";
+export * from "./entitlement/entitlement.js";
 export * from "./route/profile.js";
 export * from "./ranking/score.js";
 export * from "./ranking/playlist.js";

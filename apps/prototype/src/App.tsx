@@ -30,12 +30,16 @@ import { Synced } from "./Synced";
 import { Walk } from "./Walk";
 import { Nowhere } from "./Nowhere";
 import { Ribbon } from "./Ribbon";
+import { Paywall } from "./Paywall";
+import { readEntitlement, unlock } from "./entitlement-store";
 import { City } from "./City";
 import type { Detent } from "./Sheet";
 import type { CaptureEvent, Echo, EchoCategory } from "@echofinders/core";
 import {
   bearingDeg as bearingTo,
   checkEligibility,
+  mayHearAnother,
+  type Entitlement,
   distanceKm,
   effectiveRadiusKm,
   findEchoesAlongRoute,
@@ -275,6 +279,25 @@ export function App() {
   // shown to a walker and to a car's navigator, and withheld from anyone being carried —
   // nobody diverts an aircraft towards a good story.
   const selfDirected = presetFor(route.mode).selfDirected;
+  /**
+   * What has been paid for, and the one place a play is refused for money.
+   *
+   * NOT on the map filter above, and that is the whole shape of it. The age gate is
+   * applied to the pins, because a child should not be looking at a pin for something
+   * they may not hear. The paywall is the opposite: somebody has to be able to SEE what
+   * they would be buying, or there is no reason to buy it. A map that empties out after
+   * the tenth echo looks broken; a map full of stories with one asking politely for $6.99
+   * is the product.
+   *
+   * So the entitlement never reaches `onRoute`. It is consulted here, at the moment a
+   * play is actually requested, and refuses by opening the paywall rather than by
+   * silently doing nothing.
+   */
+  const [entitlement, setEntitlement] = useState<Entitlement>(() => readEntitlement());
+  const [paywallFor, setPaywallFor] = useState<Echo | null>(null);
+
+
+
   const [selectedId, setSelectedId] = useState<string | null>(null);
 
   /**
@@ -403,6 +426,37 @@ export function App() {
     [state.captured, privacy.keepCollection, deleted],
   );
 
+  /**
+   * Which echoes have actually been HEARD, which is what the free ten counts.
+   *
+   * Not `kept`. Finding something and hearing it are different events and the free tier
+   * only charges for the second: you can sync a whole city for nothing and every one of
+   * those stays yours. `tracker.stateOf` is the engine's own answer to "did this play",
+   * so the count and the gate cannot drift apart.
+   */
+  const heardIds = useMemo(
+    () => state.captured.map((c) => c.echo.id).filter((id) => session.tracker.stateOf(id) === "heard"),
+    [state, session],
+  );
+
+  /**
+   * Play it, or ask for the money. Every play in the app goes through here.
+   *
+   * One funnel rather than a check at each of the nine call sites, because nine checks is
+   * eight chances to forget one, and the one you forget is a free listen somebody was
+   * supposed to pay for.
+   */
+  const playOrAsk = useCallback(
+    (echo: Echo) => {
+      if (!mayHearAnother(entitlement, { ...listenerFor(kids, optIns), heardEchoIds: heardIds }, echo.id)) {
+        setPaywallFor(echo);
+        return;
+      }
+      session.play(echo);
+    },
+    [entitlement, kids, optIns, session, heardIds],
+  );
+
   const storedPositions = useMemo(
     () =>
       privacy.recordPrecisePlaces
@@ -515,7 +569,7 @@ export function App() {
     publishNowPlaying({
       title: nowPlaying.title,
       place: nowPlaying.point.place,
-      onPlay: () => session.play(nowPlaying),
+      onPlay: () => playOrAsk(nowPlaying),
       onPause: () => session.stopPlaying(),
       onStop: () => session.stopPlaying({ dropQueue: true }),
     });
@@ -1276,7 +1330,7 @@ export function App() {
                     : {})}
                   onSave={toggleSave}
                   onPlay={(echo) => {
-                    session.play(echo);
+                    playOrAsk(echo);
                     setSelectedId(null);
                     setListening(true);
                   }}
@@ -1303,7 +1357,7 @@ export function App() {
                 selectedId={selectedId}
                 onSelect={setSelectedId}
                 onPlay={(echo) => {
-                  session.play(echo);
+                  playOrAsk(echo);
                   setListening(true);
                 }}
                 isPlaying={(id) =>
@@ -1318,7 +1372,7 @@ export function App() {
                    * `session.resume()` would move the progress bar over silence. Stopped
                    * means back at the beginning, so play means play it.
                    */
-                  if (stopped && nowPlaying) session.play(nowPlaying);
+                  if (stopped && nowPlaying) playOrAsk(nowPlaying);
                   else session.resume();
                   setStopped(false);
                 }}
@@ -1381,7 +1435,7 @@ export function App() {
               autoPlay={autoPlay}
               onAutoPlay={setAutoPlay}
               onPlay={(echo) => {
-                session.play(echo);
+                playOrAsk(echo);
                 setPlanOpen(false);
                 setListening(true);
               }}
@@ -1394,7 +1448,7 @@ export function App() {
               captured={kept}
               privacy={privacy}
               onPlay={(echo) => {
-                session.play(echo);
+                playOrAsk(echo);
                 setListening(true);
               }}
               onSettings={() => setTab("settings")}
@@ -1502,7 +1556,7 @@ export function App() {
               onSimple={setSimple}
               /* The real narrator, saying a real line, through whatever the listener has
                  in their ears. A volume set against silence is not set. */
-              onTestLine={() => session.play(LIBRARY[0]!)}
+              onTestLine={() => playOrAsk(LIBRARY[0]!)}
               routes={ROUTES}
               onFlight={(routeId) => {
                 const found = routeId ? ROUTES.find((r) => r.id === routeId) : undefined;
@@ -1623,6 +1677,38 @@ export function App() {
           you can walk away from an echo into My Echoes and it keeps playing. The sync moment
           sits above it, since arriving somewhere new outranks listening to somewhere old.
         */}
+        {/*
+          The ask, over everything.
+
+          Above the listening screen because it is the reason that screen did not open,
+          and it has to be dismissible back to exactly where somebody was. It does not
+          take the tab bar away: "not now" should never be the only exit from a screen
+          about money.
+        */}
+        {paywallFor && (
+          <Paywall
+            echo={paywallFor}
+            heardCount={new Set(heardIds).size}
+            onBuy={() => {
+              /*
+                Where Stripe Checkout goes.
+
+                Today it unlocks locally and immediately, which is the honest stub: there
+                is no Checkout session to open, no webhook to hear back from and no
+                account to attach the result to (`docs/03-selling.md`). The shape is the
+                real one though — the app asks, something outside it decides, and the
+                answer comes back as an Entitlement — so the redirect slots in here
+                without any other screen changing.
+              */
+              setEntitlement(unlock());
+              const echo = paywallFor;
+              setPaywallFor(null);
+              session.play(echo);
+            }}
+            onClose={() => setPaywallFor(null)}
+          />
+        )}
+
         {listening && nowPlaying && (
           <Ribbon
             echo={nowPlaying}
@@ -1638,7 +1724,7 @@ export function App() {
                 same distinction the sheet's transport already makes.
               */
               if (playing) session.pause();
-              else if (stopped) session.play(nowPlaying);
+              else if (stopped) playOrAsk(nowPlaying);
               else session.resume();
             }}
             onSeek={seekTo}
@@ -1793,7 +1879,7 @@ export function App() {
         <Synced
           event={syncedNow}
           onListen={() => {
-            session.play(syncedNow.echo);
+            playOrAsk(syncedNow.echo);
             setSyncedNow(null);
             setListening(true);
           }}
