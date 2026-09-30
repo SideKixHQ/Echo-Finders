@@ -2797,32 +2797,36 @@ body {
 /*
  * THE CREATURE.
  *
- * Its eyes are a pause button and its play state is the same two shapes swung together,
- * so the transition between any two faces is a path tween rather than a swap. That is the
- * whole point: a cross-fade between a face and an icon reads as a control changing state,
- * and a morph reads as something alive deciding to speak.
+ * THE SHAPE OF THE EYES IS NOT ANIMATED FROM HERE ANY MORE. It used to be
+ * `transition: d`, which is a Chromium-only CSS property: it genuinely works in Chrome,
+ * which is why every render taken here showed it working, and it is a coin toss on the
+ * browser this app is mostly opened in. Echo.tsx now tweens the path points in
+ * JavaScript, which runs everywhere and can be sampled by a test. See the long note at
+ * the top of that file.
  *
- * 320ms, and the easing overshoots slightly so the triangle LANDS rather than arrives.
+ * What is left here is the slow stuff: the colour settling between states, and the
+ * satellites drifting. Both are decoration and both belong in a stylesheet.
  */
-.echo-char-eyes path {
-  fill: #FFF9E8;
-  transition: d 0.32s cubic-bezier(0.34, 1.32, 0.64, 1);
+.echo-char-body, .echo-char-rim, .echo-char-glow, .echo-char-speck {
+  transition: fill 0.34s linear, stroke 0.34s linear, opacity 0.34s linear;
 }
-.echo-char-eyes { transition: transform 0.5s cubic-bezier(0.32, 0.72, 0, 1); }
-.echo-char-body { transition: fill 0.32s linear; }
-.echo-char-shine { fill: #ffffff; opacity: 0.45; pointer-events: none; }
-/* Sealed is a story paused in the dark: the light is nearly out and the eyes with it. */
-.echo-char-sealed .echo-char-eyes path { fill: #FFD77A; opacity: 0.5; }
-.echo-char-sealed .echo-char-shine { opacity: 0.16; }
-.echo-char-heard .echo-char-eyes path { fill: none; stroke: #FFD77A; stroke-width: 7; stroke-linecap: round; opacity: 0.7; }
-.echo-char-heard .echo-char-shine { opacity: 0.18; }
+.echo-char-shine { fill: #fffdf4; opacity: 0.9; pointer-events: none; }
+.echo-char-shine-2 { opacity: 0.7; }
 /*
- * `d` is only animatable where the browser supports interpolating path data. Everywhere
- * else the shape snaps, which is a worse version of the same thing rather than a broken
- * one: the states are still correct and still legible, they just change in one frame.
+ * The satellites drift, very slightly and out of phase with each other.
+ *
+ * Two pixels over six seconds. Enough that the thing looks alive when you stop and look
+ * at it, small enough that it never competes with the singular pin's own pulse — which
+ * is the one piece of motion on the map that is allowed to mean something.
  */
+@keyframes echoSatDrift {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(0.8%, -1.4%); }
+}
+.echo-char-sat { animation: echoSatDrift 6s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) {
-  .echo-char-eyes path, .echo-char-eyes, .echo-char-body { transition: none; }
+  .echo-char-sat { animation: none; }
+  .echo-char-body, .echo-char-rim, .echo-char-glow, .echo-char-speck { transition: none; }
 }
 
 .pin-halo { pointer-events: none; }
