@@ -651,8 +651,26 @@ export function RouteMap({
    * impossible: focusing an echo pans the map to it, the effect fired on the new pan, and
    * the fan it had just opened shut in the same frame. So the two gesture handlers say so
    * themselves, which is also more honest about what is being detected.
+   *
+   * AND IT WATCHES WHAT IS IN THE LIBRARY, NOT WHICH ARRAY IT IS.
+   *
+   * This was `[library]`, and on a phone that meant the fan could never stay open for
+   * more than a quarter of a second: reported as "you tap on a number, it expands and
+   * closes really quickly". `library` comes from a memo that depends on the engine's
+   * nearby list, which is a fresh array on every position fix — so on a device with
+   * `watchPosition` running, the identity changes four times a second and this effect
+   * fired with it. Instrumented, the log was a wall of `CLOSE (library changed)` at 250ms
+   * intervals.
+   *
+   * It survived every test here because a headless browser has a fixed position and stops
+   * emitting fixes, which is the one condition under which the bug does not happen.
+   *
+   * A signature of the ids costs one join over a few dozen strings and fires only when
+   * the set of echoes on the map actually changes: a category turned off, or something
+   * coming into range. That is the case this was for.
    */
-  useEffect(() => setOpenCluster(null), [library]);
+  const librarySignature = useMemo(() => library.map((e) => e.id).join(","), [library]);
+  useEffect(() => setOpenCluster(null), [librarySignature]);
 
   /**
    * The pins, grouped by what landed on top of what.
@@ -1205,6 +1223,13 @@ export function RouteMap({
       {groups.map((group) => {
         const first = group.members[0]!.item;
         if (group.members.length === 1) return renderPin(first, group.x, group.y);
+        /*
+         * Whether a group is open is answered at render time from the group that is
+         * actually here, rather than trusted from state. Grouping is recomputed every
+         * time the map moves, so an id held in state can stop naming a group at any
+         * moment; asking each group whether it is the open one means a stale id simply
+         * draws nothing instead of needing an effect to chase it.
+         */
         if (openCluster !== first.id) {
           return (
             <ClusterDot

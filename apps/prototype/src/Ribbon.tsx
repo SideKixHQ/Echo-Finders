@@ -223,7 +223,29 @@ export function Ribbon({
             e.preventDefault();
           }}
         >
-          <svg viewBox={`0 0 ${W} ${H}`} className="hear-wave" aria-hidden="true">
+          {/*
+            STRETCH, DO NOT FIT.
+
+            The viewBox is 390 by 150 and the box it renders into is 390 by about 110, so
+            the default `preserveAspectRatio` of `xMidYMid meet` scaled the whole thing to
+            0.73 and centred it: twenty six pixels of nothing down each side, and the
+            ribbon stopping short of both edges. Reported as "the wave form doesn't extend
+            far enough", which is exactly what it was.
+
+            It also put the scrubber out of register with its own picture. The drag maths
+            uses the fraction across the ELEMENT, so a finger at the very left edge seeked
+            to 0 while the ribbon there was already 7% in.
+
+            `none` fills the box on both axes. The ribbon is abstract light rather than
+            data, so squashing it vertically costs nothing, and the playhead and both clip
+            rects are in the same coordinate space so they stretch with it.
+          */}
+          <svg
+            viewBox={`0 0 ${W} ${H}`}
+            preserveAspectRatio="none"
+            className="hear-wave"
+            aria-hidden="true"
+          >
             <defs>
               {/* The board's two blurs. The wide one softens the three under-ribbons into
                   light; the tight one keeps the bright core a shape rather than a haze. */}
