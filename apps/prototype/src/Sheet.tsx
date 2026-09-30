@@ -9,15 +9,13 @@
 import type { CaptureEvent, Echo, NearbyEcho } from "@echofinders/core";
 import { rarityOf, rarityReasons } from "@echofinders/core";
 import type { PinState } from "./RouteMap";
-import type { Rating } from "./ratings";
 import { UpNext } from "./UpNext";
 import { EchoCard } from "./EchoCard";
 import { PlateStrip } from "./PlateStrip";
 import { platePng } from "./archive-plate";
-import { Player } from "./Player";
+import { MiniPlayer } from "./MiniPlayer";
 import { Transcript } from "./Transcript";
 import { useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
-import { splitScript, stepLine } from "./transcript-lines";
 import { CATEGORY_LABEL } from "./categories";
 import type { Upcoming } from "@echofinders/core";
 
@@ -57,18 +55,10 @@ interface Props {
   readonly progress: number;
   readonly playing: boolean;
   readonly simple: boolean;
-  readonly onSimple: (on: boolean) => void;
-  readonly rate: number;
-  readonly onRate: (rate: number) => void;
   readonly onSeek: (fraction: number) => void;
-  readonly onNext: () => void;
-  readonly onStop: () => void;
+  /** Open the full player on this echo. The mini bar's whole middle does it. */
+  readonly onOpenPlayer: (echo: Echo) => void;
   /** Stopped, as opposed to paused. */
-  readonly stopped: boolean;
-  readonly voice: string | null;
-  readonly onVoice: (voiceId: string | null) => void;
-  readonly rating: Rating | undefined;
-  readonly onRating: (rating: Rating) => void;
   /** Open the camera on an echo. Only where there is one — a flight has no then-and-now. */
   readonly onCamera?: (echo: Echo) => void;
   /** How much of the screen the sheet takes. Lifted, because the map has to know. */
@@ -129,17 +119,8 @@ export function Sheet({
   progress,
   playing,
   simple,
-  onSimple,
-  rate,
-  onRate,
   onSeek,
-  onNext,
-  onStop,
-  stopped,
-  voice,
-  onVoice,
-  rating,
-  onRating,
+  onOpenPlayer,
   onCamera,
   detent,
   onDetent,
@@ -205,14 +186,6 @@ export function Sheet({
     lastCapture?.echo ??
     null;
   const view = tab === "script" && !scriptEcho ? "near" : tab;
-  /*
-   * The same lines the transcript shows, so the player's line buttons step by one of them.
-   * Split once per script rather than on every press.
-   */
-  const lines = useMemo(() => {
-    const script = (simple ? nowPlaying?.simple?.script : nowPlaying?.script) ?? nowPlaying?.script;
-    return script ? splitScript(script) : [];
-  }, [nowPlaying, simple]);
   /*
    * The nearest one, which is what the resting row shows.
    *
@@ -352,35 +325,27 @@ export function Sheet({
       )}
 
       {/*
-        The player is always here, at every height, and the sheet reveals it as it rises.
-        That is the design's own mechanism and it is better than the two components I had:
-        at peek `theme.css` hides everything below the top row, so what is left is a
-        compact now-playing bar over a full screen of map, and swiping up turns the same
-        element into the full transport without anything being swapped underneath you.
+        The mini bar is always here, at every height.
 
-        It also retires the floating row I had built over the map. One player, one place.
+        It used to be a whole second player that the sheet revealed as it rose — the peek
+        detent hid everything below the top row, and dragging up grew a full transport
+        with its own waveform, its own speed control and its own glyphs, none of which
+        matched the full screen player. That is what "two different audio players" was
+        looking at.
+
+        Now the row is all there is, and tapping it opens the one player. Everything that
+        only lived in the grown version — stop, the narrator, the rating — went with it.
       */}
       {nowPlaying && (
-        <Player
+        <MiniPlayer
           echo={nowPlaying}
           onPlayPause={playing ? onPause : onResume}
+          playing={playing}
           saved={saved.has(nowPlaying.id)}
           onSave={() => onSave(nowPlaying)}
           progress={progress}
-          playing={playing}
           simple={simple}
-          onSimple={onSimple}
-          rate={rate}
-          onRate={onRate}
-          onSeek={onSeek}
-          onLine={(delta) => onSeek(stepLine(lines, progress, delta))}
-          onNext={onNext}
-          onStop={onStop}
-          stopped={stopped}
-          voice={voice}
-          onVoice={onVoice}
-          rating={rating}
-          onRating={onRating}
+          onOpen={() => onOpenPlayer(nowPlaying)}
         />
       )}
 

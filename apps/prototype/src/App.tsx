@@ -560,6 +560,24 @@ export function App() {
 
   const nowPlaying = state.playback.kind === "idle" ? null : state.playback.item.echo;
 
+  /**
+   * Stop, not "be done with it".
+   *
+   * The audio stops, the playhead goes back to the start, and the echo stays exactly where
+   * it is, so pressing stop does not make the thing you pressed disappear.
+   *
+   * Hoisted out of the sheet's props when the sheet's player became a one line bar. Stop
+   * has to exist somewhere, because leaving the full screen player does NOT stop the
+   * audio — hearing an echo is a state of the app rather than a modal — and the sheet used
+   * to be the somewhere.
+   */
+  const stopPlaying = useCallback(() => {
+    session.stopPlaying();
+    if (nowPlaying) startedRef.current = { id: nowPlaying.id, at: Date.now() };
+    setPlayhead(0);
+    setStopped(true);
+  }, [session, nowPlaying, setPlayhead]);
+
   const playing = state.playback.kind === "playing";
 
   /*
@@ -1521,31 +1539,14 @@ export function App() {
                 progress={progress}
                 playing={playing}
                 simple={simple}
-                onSimple={setSimple}
-                rate={rate}
-                onRate={setRate}
                 onSeek={seekTo}
                 detent={detent}
                 onDetent={setDetent}
-                onNext={() => session.skip()}
-                stopped={stopped}
-                voice={voice}
-                onVoice={setVoice}
-                onStop={() => {
-                  /*
-                   * Stop, not "be done with it". The audio stops, the playhead goes back to
-                   * the start, and the echo stays exactly where it is, so pressing stop
-                   * does not make the thing you pressed disappear.
-                   */
-                  session.stopPlaying();
-                  if (nowPlaying) {
-                    startedRef.current = { id: nowPlaying.id, at: Date.now() };
-                  }
-                  setPlayhead(0);
-                  setStopped(true);
+                /* Tapping the mini bar is how you reach the player now. */
+                onOpenPlayer={(echo) => {
+                  playOrAsk(echo);
+                  setListening(true);
                 }}
-                rating={nowPlaying ? ratings[nowPlaying.id] : undefined}
-                onRating={(r) => nowPlaying && rateEcho(nowPlaying.id, r)}
                 {...(selfDirected ? { onCamera: setCamera } : {})}
                 onSave={toggleSave}
               />
@@ -1904,6 +1905,15 @@ export function App() {
             onRate={setRate}
             onRestart={() => seekTo(0)}
             onNext={() => session.skip()}
+            /* The last three arrived when the sheet's player became a one line bar: stop,
+               the narrator and the rating had nowhere else to be, and this is the screen
+               they belonged on anyway. */
+            onStop={stopPlaying}
+            stopped={stopped}
+            voice={voice}
+            onVoice={setVoice}
+            rating={ratings[nowPlaying.id]}
+            onRating={(r) => rateEcho(nowPlaying.id, r)}
             onClose={() => setListening(false)}
           />
         )}

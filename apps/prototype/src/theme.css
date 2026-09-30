@@ -79,7 +79,15 @@
   --cat-arts: #ff9e4f;
   --cat-food-drink: #ff87c3;
   --cat-people: #ffd98a;
-  --cat-built: #d8dce5;
+  /*
+     Landmarks had no colour. It was #d8dce5, which is --cool to the digit, so the one
+     category with more pins on a city route than any other drew in exactly the neutral
+     ink everything else was already using — and when the map was asked to carry category
+     colour, a third of it stayed grey. The prototype's table was written for chips, where
+     a near-white dot beside a label is fine; a map needs nine hues that are nine hues.
+     Sky blue is the gap in the set: away from history's violet, land's teal and the
+     interface aqua. */
+  --cat-built: #7fb4ff;
   --cat-land: #7fd4c1;
 
   --stage: #07080c;
@@ -168,7 +176,8 @@
   --cat-arts: #8f4d00;
   --cat-food-drink: #b4256f;
   --cat-people: #5b52d6;
-  --cat-built: #3f4a5c;
+  /* Same gap on the light scheme: this was a slate that read as "no category". */
+  --cat-built: #1f5bb8;
   --cat-land: #1f6b5c;
 
 }
@@ -269,7 +278,11 @@ body {
 /* Sealed keeps the category colour — what kind of thing is there is not a secret, only
    what it says is. Found adds the ember marker and a glow. */
 .pin-sealed .pin-body { opacity: 0.85; }
-.pin-sealed .pin-icon { opacity: 0.7; }
+/* 0.7 was fine when every pin was the same neutral ink and the dimming was the only thing
+   saying "not yours yet". With the category carrying colour, seven tenths of a pastel on a
+   near-black field is a grey pin: rendered and sampled, #7fb4ff came off the glass at
+   about #5a7fb4. Sealed is still quieter than found, and it is quieter by a tenth. */
+.pin-sealed .pin-icon { opacity: 0.9; }
 
 .pin-opening .pin-body { filter: drop-shadow(0 0 10px currentColor); }
 .pin-opening .pin-contour { animation: ripple 1.6s var(--ease) infinite; }
@@ -404,7 +417,14 @@ body {
 /* 19px, the design's. It was 17, which is the sort of two pixels nobody can name and
    everybody can see: the glyph sat small inside a 46px orb. */
 .playing-orb svg { width: 19px; height: 19px; fill: currentColor; }
-.playing-text { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 2px; }
+/* It is a button now, so that tapping the row opens the player — which means undoing
+   every default a button brings with it. Without this it renders as a white box with a
+   border, which is exactly what it did the first time it was looked at. */
+.playing-text {
+  min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 2px;
+  background: none; border: 0; padding: 0; margin: 0; font: inherit;
+  text-align: left; color: inherit; cursor: pointer;
+}
 .playing-kicker {
   display: flex; align-items: center; gap: 6px;
   font-family: "Space Grotesk", monospace; font-size: 11px; font-weight: 500;
@@ -422,29 +442,9 @@ body {
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 
 }
-.playing-mark {
-  flex: none; width: 38px; height: 38px; border-radius: 12px; cursor: pointer;
-  display: grid; place-items: center;
-  background: transparent; color: var(--ember); border: 1px solid rgba(255, 158, 18, 0.45);
-
-}
-.playing-mark svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
 /* Skip is drawn filled; the bookmark is an outline until it is one of yours. */
-.playing-mark:last-of-type svg { fill: currentColor; stroke: none; }
-.playing-mark.on { background: var(--ember); color: #1a1000; border-color: var(--ember); }
-.playing-mark.on svg { fill: currentColor; }
-
 /* How far through. Two pixels, because it is a glance, not a scrubber — the scrubber is
    in the sheet, where there is room to aim at it. */
-.playing-track {
-  height: 3px; border-radius: 99px; margin-top: 10px; overflow: hidden;
-  background: rgba(var(--rgb-hair), 0.16);
-}
-.playing-track span {
-  display: block; height: 100%; border-radius: 99px; background: var(--ember);
-  transition: width 0.3s linear;
-}
-.playing-mark:hover { background: rgba(255, 158, 18, 0.12); }
 .playing-next, .playing-missed {
   margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--line);
   font-size: 12px; color: var(--muted);
@@ -543,18 +543,34 @@ body {
  *
  * A pin carries `cat-<category>` like everything else, so restoring the nine hues above
  * repainted the map with them — which I said would not happen and then watched happen in
- * a render. Board 2 is the argument for putting it back: every pin on it is one cool ink
- * with the category in the glyph inside, and the only warm light on the screen is the
- * singular echo's halo and the rare one's ring. Nine hues on a map leaves that halo
- * competing with four other colours instead of being the one thing that pulls your eye
- * across the screen.
+ * a render. The argument was board 2: every pin on it is one cool ink with the category
+ * in the glyph inside, so the only warm light on the screen is the singular echo's halo.
  *
- * So the key is coloured and the map is not, which is the arrangement the board actually
- * draws. Two classes so this beats the single-class `.cat-*` above whatever the source
- * order.
+ * ASKED FOR TWICE, AND THE SECOND TIME WITH THE REASON: "the icons on the map really need
+ * to have the same colours as their category, it makes it more alive". That is the better
+ * call and the objection was answerable rather than fatal.
+ *
+ * What was actually at risk was the standout, and the standout does not live in the ring.
+ * A rare or singular echo is not a coloured ring at all — it is the creature, with an
+ * ember halo behind it, which is a different channel from hue entirely. So the glyph and
+ * the ring take the category, the contour rings around them stay at the 0.3 and 0.15
+ * opacity they already had so nine hues never shout at once, and the one warm thing on
+ * the map is still the only warm thing on the map.
  */
-.pin.pin-sealed, .pin.pin-opening, .pin.pin-captured, .pin.pin-heard {
-  --cat: var(--cool); color: var(--cool);
+.pin .pin-icon { stroke: var(--cat, var(--cool)); }
+/* The ring takes the colour too. Muting it to 78% was the cautious version and the ask
+   was "it makes it more alive", so the ring and the glyph agree and the restraint stays
+   where it was already working: the contour rings outside them sit at 0.3 and 0.15. */
+.pin .pin-body {
+  stroke: var(--cat, var(--cool));
+  /*
+     And a puddle of its own colour under it. This is what "it makes it more alive" is
+     actually asking for: a 1.8px ring of a pastel is a hairline on a dark map, and the
+     glow is what makes the hue read from arm's length without making the ring itself
+     shout. Warm echoes keep their own ember halo on top of this, which is brighter,
+     wider and a different colour family, so the standout survives.
+  */
+  filter: drop-shadow(0 0 5px color-mix(in srgb, var(--cat, var(--cool)) 60%, transparent));
 }
 
 /* ── route ribbon ────────────────────────────────────────── */
@@ -610,7 +626,6 @@ body {
 .chip.on:focus-visible,
 .act.act-on:focus-visible,
 .now-mark.on:focus-visible,
-.playing-mark.on:focus-visible { outline-color: var(--space); outline-offset: -4px; }
 /* Windows high-contrast: the outline above is dropped by the OS, so ask for its own. */
 @media (forced-colors: active) {
   :where(button, [role="button"], a, input):focus-visible { outline: 2px solid Highlight; }
@@ -984,81 +999,11 @@ body {
 
 /* The waveform. Bars, not a line: a line says "position", bars say "sound", and the second
    is what somebody is actually scrubbing through. */
-.wave {
-  display: flex; align-items: center; gap: 2px; height: 34px; cursor: pointer;
-  margin-bottom: 6px;
-}
-.wave-bar {
-  flex: 1; border-radius: 99px; background: rgba(var(--rgb-hair), 0.18);
-  transition: background 0.15s linear;
-}
-.wave-on { background: var(--aqua); }
-.wave:focus-visible { outline: 2px solid var(--aqua); outline-offset: 3px; border-radius: 4px; }
-
-.player-time {
-  display: flex; justify-content: space-between;
-  font-family: "Space Grotesk", monospace; font-size: 12px; color: var(--muted);
-  margin-bottom: 9px;
-}
-
-.player-row { display: flex; gap: 6px; margin-bottom: 7px; }
-.player-row-centre { justify-content: center; }
-.pill {
-  display: flex; align-items: center; justify-content: center; gap: 5px;
-  padding: 8px 12px; border-radius: 99px; cursor: pointer;
-  font: inherit; font-size: 11.5px; color: var(--cool);
-  background: transparent; border: 1px solid var(--line-2);
-}
-.pill svg {
-  width: 13px; height: 13px; fill: none; stroke: currentColor;
-  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
-}
-.pill:hover { border-color: var(--cool); }
 /* The speed stepper. Its two buttons were 16x14, which fails WCAG 2.5.8 and, more to the
    point, is a sixteen pixel target for a thumb on a moving pavement. The pill keeps its
    size; the targets inside it grow to meet the minimum. */
-.pill-rate { gap: 2px; padding: 4px 6px; }
-.pill-rate button {
-  background: none; border: 0; color: var(--muted); cursor: pointer;
-  font: inherit; font-size: 15px; line-height: 1;
-  min-width: 26px; min-height: 26px; display: grid; place-items: center;
-}
-.pill-rate button:hover { color: var(--white); }
-.pill-rate b { font-family: "Space Grotesk", monospace; font-size: 11.5px; font-weight: 600; }
-
 /* The plain-language switch, filled when on — the design's one loud control, because it
    changes what you hear rather than where you are in it. */
-.simpaud {
-  display: flex; align-items: center; gap: 12px; width: 100%; cursor: pointer;
-  padding: 11px 13px; border-radius: 13px; margin: 9px 0 6px;
-  font: inherit; text-align: left; color: var(--cool);
-  background: transparent; border: 1px solid var(--line-2);
-}
-.simpaud svg {
-  width: 19px; height: 19px; flex: none; fill: none; stroke: currentColor;
-  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
-}
-.simpaud span { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
-.simpaud strong { font-size: 12.5px; font-weight: 600; }
-.simpaud small { font-size: 12px; color: var(--muted); }
-.simpaud i { font-style: normal; font-family: "Space Grotesk", monospace; font-size: 12px; color: var(--muted); }
-.simpaud:disabled { opacity: 0.55; cursor: default; }
-.simpaud-on {
-  background: var(--aqua); border-color: var(--aqua); color: var(--space);
-  box-shadow: 0 0 20px rgba(var(--rgb-accent), 0.35);
-}
-.simpaud-on small, .simpaud-on i { color: rgba(var(--rgb-panel), 0.92); }
-
-.narrator {
-  display: flex; align-items: center; gap: 10px;
-  padding: 10px 13px; border-radius: 13px; font-size: 12.5px;
-  background: rgba(var(--rgb-hair), 0.05); border: 1px solid var(--line);
-}
-.narrator svg {
-  width: 17px; height: 17px; fill: none; stroke: currentColor;
-  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
-}
-
 /* ── segmented tabs ──────────────────────────────────────── */
 .segs {
   display: flex; align-items: center; gap: 2px; flex: none;
@@ -2345,24 +2290,6 @@ body {
 }
 
 /* A question, not a score. Two answers, and no number comes back. See `ratings.ts`. */
-.rate-row {
-  display: flex; align-items: center; gap: 8px;
-  padding: 10px 2px 2px; margin-top: 8px; border-top: 1px solid var(--line);
-}
-.rate-row span { flex: 1; font-size: 11.5px; color: var(--muted); }
-.rate-btn {
-  width: 38px; height: 34px; flex: none; border-radius: 10px; cursor: pointer;
-  border: 1px solid var(--line-2); background: none; color: var(--cool);
-  display: grid; place-items: center;
-}
-.rate-btn svg {
-  width: 16px; height: 16px; fill: none; stroke: currentColor;
-  stroke-width: 1.6; stroke-linejoin: round;
-}
-.rate-btn.on { border-color: var(--aqua); color: var(--aqua); background: rgba(var(--rgb-accent), 0.12); }
-.rate-btn.on svg { fill: currentColor; stroke: none; }
-.rate-btn.on.down { border-color: var(--muted); color: var(--muted); background: rgba(var(--rgb-hair), 0.1); }
-
 /* ── Onboarding, to the design's own flow ─────────────────────────────────────
    Six steps with a fixed header, which is what makes six feel like three. */
 .onb-back, .onb-skip {
@@ -2489,12 +2416,6 @@ body {
 
    The same element throughout, progressively revealed, so swiping up never swaps
    a component out from under a thumb. */
-.sheet-peek .wave,
-.sheet-peek .player-time,
-.sheet-peek .player-row,
-.sheet-peek .simpaud,
-.sheet-peek .narrator,
-.sheet-peek .rate-row,
 .sheet-peek .segs,
 .sheet-peek .list,
 .sheet-peek .upnext,
@@ -2742,37 +2663,12 @@ body {
 /* Stopped, as a state rather than as a reading of 0:00.
    Ember, because ember is what "you did this" means everywhere else here, and because the
    one thing the control has to say is that it is the state you are currently in. */
-.pill-stopped {
-  color: var(--ember); border-color: rgba(255, 158, 18, 0.5);
-  background: rgba(255, 158, 18, 0.12);
-}
-.pill-stopped svg { fill: currentColor; }
-
 /* The narrator row is a control now, so it looks like one and is a thumb tall.
    The design uses a native select here and so do we: three options should cost one row in
    a sheet this dense, and the native control already works with a keyboard, a screen reader
    and a thumb without anything from us. */
-.narrator { cursor: pointer; min-height: 44px; }
-.narrator:hover { border-color: var(--line-2); }
-.narrator select {
-  /* A 15px select inside a 44px row is a 15px target: the row is not the control, the
-     select is, and a thumb aims at what actually takes the tap. */
-  min-height: 40px;
-  flex: 1; min-width: 0; appearance: none; cursor: pointer;
-  background: transparent; border: 0; color: var(--white);
-  font: inherit; font-size: 12.5px; padding: 0 18px 0 0;
-}
-.narrator select:focus { outline: none; }
 /* The ring belongs to the row, since the row is what you see. */
-.narrator:focus-within { outline: 2px solid var(--aqua); outline-offset: 2px; }
 /* A caret, because a select with no arrow is a label. */
-.narrator::after {
-  content: ""; flex: none; width: 8px; height: 8px; margin-left: -14px;
-  border-right: 1.6px solid var(--muted); border-bottom: 1.6px solid var(--muted);
-  transform: rotate(45deg) translate(-2px, -2px); pointer-events: none;
-}
-.narrator select option { background: var(--slate); color: var(--white); }
-
 /* ── The rose ─────────────────────────────────────────────────────────────────
    Walking's own screen. Not a map: you at the centre facing up, echoes at their
    true bearing, distance as radius. See docs/05-walking.md. */
@@ -3551,6 +3447,29 @@ body {
   background: rgba(11, 15, 43, 0.5); border: 1px solid rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(12px);
 }
+/* Done with it, top right, mirroring the way out top left. Absolute, so it costs the
+   layout nothing on a screen that already fits an iPhone SE with no slack. */
+.hear-stop {
+  position: absolute; right: 14px; top: calc(48px + env(safe-area-inset-top));
+  width: 44px; height: 44px; border-radius: 50%; cursor: pointer; z-index: 3;
+  display: grid; place-items: center; color: var(--muted);
+  background: rgba(11, 15, 43, 0.5); border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(12px);
+}
+.hear-stop svg { width: 15px; height: 15px; fill: currentColor; stroke: none; }
+
+/* How far through, under the mini bar, as a hairline rather than a scrubber: a bar you
+   can drag is a bar people drag by accident while reaching for the sheet. */
+.phead-progress {
+  height: 2px; margin: 0 14px 10px; border-radius: 2px;
+  background: rgba(var(--rgb-hair), 0.16); overflow: hidden;
+}
+.phead-progress span {
+  display: block; height: 100%; border-radius: 2px; background: var(--ember);
+  transition: width 0.3s linear;
+}
+.hear-stop.on { color: var(--aqua); border-color: rgba(0, 255, 231, 0.4); }
+
 .hear-back svg {
   width: 17px; height: 17px; fill: none; stroke: currentColor;
   stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
@@ -3585,8 +3504,10 @@ body {
  * blending give a flat brown stack, which is exactly what was on screen before.
  */
 .hear-rib { mix-blend-mode: screen; }
-/* Still to come: the same light, banked right down. */
-.hear-tocome { opacity: 0.22; }
+/* Still to come: the same light, banked down but not drained.
+   0.22 read as a grey smear beside the lit half, which is half of why the two sides
+   looked like two different pictures joined by a seam. 0.3 keeps the colour in it. */
+.hear-tocome { opacity: 0.3; }
 /*
  * The flow. 18 seconds for one full width, and the group is drawn twice a width apart, so
  * the end frame is identical to the first and the loop has no seam.
@@ -3637,6 +3558,22 @@ body {
   stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
 }
 .hear-chip.on { color: var(--aqua); border-color: rgba(0, 255, 231, 0.4); }
+/* The same row asking the question instead of offering the settings, once the story has
+   essentially landed. Same height, so nothing below it moves. */
+.hear-ask { gap: 10px; }
+.hear-ask > span {
+  align-self: center; font-size: 13px; color: var(--muted);
+}
+/*
+ * The narrator chip is a label wrapping a native select. The select is stretched over the
+ * whole chip at zero opacity, so the chip is the target and the platform still supplies
+ * the picker, the keyboard handling and the screen reader behaviour.
+ */
+.hear-voice { position: relative; max-width: 42%; }
+.hear-voice select {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  opacity: 0; cursor: pointer; font: inherit;
+}
 /* Dimmed rather than hidden: the gap is in the library, not in the app, and a control
    that vanishes on some echoes is a control nobody trusts. `aria-label` says why. */
 .hear-chip:disabled { opacity: 0.4; cursor: default; }

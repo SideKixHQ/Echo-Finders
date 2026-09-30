@@ -52,6 +52,8 @@
 import { useCallback, useRef, useState } from "react";
 import { rarityOf, type Echo } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
+import { VOICE_LABEL } from "./voices";
+import type { Rating } from "./ratings";
 import { platePng } from "./archive-plate";
 import { Transcript } from "./Transcript";
 import { shareText } from "./share";
@@ -99,6 +101,23 @@ export interface RibbonProps {
   readonly onRestart: () => void;
   /** The next echo in the queue. `session.skip()`, same as the sheet's "Next echo". */
   readonly onNext: () => void;
+  /**
+   * Done with this one entirely. Not pause, which keeps your place.
+   *
+   * It has to live here now, because this is the only player. Leaving the screen does not
+   * stop the audio — hearing an echo is a state of the app rather than a modal, so you can
+   * walk away into My Echoes while it keeps talking — which means there has to be
+   * somewhere that actually stops it, and the sheet used to be that somewhere.
+   */
+  readonly onStop: () => void;
+  /** Stopped, as opposed to paused: back at the beginning, on purpose. */
+  readonly stopped: boolean;
+  /** The narrator the listener picked, or null for the echo's own. */
+  readonly voice: string | null;
+  readonly onVoice: (voiceId: string | null) => void;
+  /** Private, two-answer, never shown back as a score. See `ratings.ts`. */
+  readonly rating: Rating | undefined;
+  readonly onRating: (rating: Rating) => void;
 }
 
 /**
@@ -132,6 +151,12 @@ export function Ribbon({
   onRate,
   onRestart,
   onNext,
+  onStop,
+  stopped,
+  voice,
+  onVoice,
+  rating,
+  onRating,
 }: RibbonProps) {
   const rarity = RARITY_LABEL[rarityOf(echo)] ?? "";
   const photo = echo.archive?.[0];
@@ -183,6 +208,28 @@ export function Ribbon({
       <button className="hear-back" onClick={onClose} aria-label="Back to the map">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M14.5 5L8 12l6.5 7" />
+        </svg>
+      </button>
+
+      {/*
+        DONE WITH IT, top right, mirroring the way out top left.
+
+        Stop lived in the sheet's player and the sheet's player is now a one-line bar, so
+        it had to come here — and this is the only screen where it belongs anyway. It
+        cannot go in a row: the screen already fits an iPhone SE with nothing to spare, and
+        the two corners are the one place a control costs no height at all.
+
+        Back leaves and the voice keeps going; this ends it. They are opposite actions and
+        they sit in opposite corners, which is most of the explaining done.
+      */}
+      <button
+        className={stopped ? "hear-stop on" : "hear-stop"}
+        onClick={onStop}
+        aria-pressed={stopped}
+        aria-label={stopped ? "Stopped" : "Stop, and go back to the beginning"}
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="6.5" y="6.5" width="11" height="11" rx="2" />
         </svg>
       </button>
 
@@ -255,12 +302,29 @@ export function Ribbon({
               <filter id="ribSoft2" x="-20%" y="-40%" width="140%" height="180%">
                 <feGaussianBlur stdDeviation="2" />
               </filter>
-              <clipPath id="ribHeardClip">
-                <rect x="0" y="0" width={W * at} height={H} />
-              </clipPath>
-              <clipPath id="ribToComeClip">
-                <rect x={W * at} y="0" width={W - W * at} height={H} />
-              </clipPath>
+              <filter id="ribSoft3" x="-20%" y="-40%" width="140%" height="180%">
+                <feGaussianBlur stdDeviation="0.9" />
+              </filter>
+              {/*
+                THE PLAYHEAD IS A FADE, NOT A CUT.
+
+                Heard and still-to-come used to be two copies of the artwork clipped by two
+                hard rectangles meeting at the playhead, which drew a dead straight vertical
+                edge through the middle of a picture whose entire subject is flowing light.
+                That was the most visible of the "breaks in the lines".
+
+                One gradient instead, white to black over about a tenth of the width, used
+                as a mask. The bright copy dissolves into the dim one over fifty pixels
+                rather than stopping dead, and the boundary still reads as a boundary
+                because the playhead itself is drawn on top of it.
+              */}
+              <linearGradient id="ribHeardGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset={Math.max(0, at - 0.055)} stopColor="#fff" />
+                <stop offset={Math.min(1, at + 0.055)} stopColor="#000" />
+              </linearGradient>
+              <mask id="ribHeardMask">
+                <rect x="0" y="0" width={W} height={H} fill="url(#ribHeardGrad)" />
+              </mask>
             </defs>
             {/*
               Heard, at full strength. Still to come, banked right down. Same ribbon, so
@@ -269,10 +333,15 @@ export function Ribbon({
               The clip is outside the moving group on purpose: the light flows, the
               boundary between heard and unheard does not flow with it.
             */}
-            <g clipPath="url(#ribHeardClip)">
+            {/*
+              Still to come underneath, the whole width, banked down. Heard over the top
+              of it, masked so it fades out at the playhead rather than being cut off.
+              Two layers rather than two clipped halves, so there is no edge anywhere.
+            */}
+            <g className="hear-tocome">
               <Flow phase={phase} />
             </g>
-            <g clipPath="url(#ribToComeClip)" className="hear-tocome">
+            <g mask="url(#ribHeardMask)">
               <Flow phase={phase} />
             </g>
             <line className="hear-head" x1={W * at} y1={14} x2={W * at} y2={H - 14} />
@@ -298,6 +367,43 @@ export function Ribbon({
         touching, and the transport below is the row you touch every thirty seconds. Same
         ordering rule the sheet's player already follows.
       */}
+      {/*
+        ONE ROW, TWO JOBS, and which one depends on where you are in the story.
+
+        While it is playing these are the things you might reach for: how fast, which cut,
+        whose voice. Once it has essentially finished, none of those matter and one thing
+        does — was that worth stopping for. The old sheet asked it permanently, in a row
+        of its own, from the first second; asking at the end costs no height and catches
+        somebody at the only moment they can actually answer.
+
+        `ratings.ts` keeps it private and two-answer, and it is never shown back as a
+        score, so this is a question rather than a review.
+      */}
+      {at >= 0.92 || stopped ? (
+        <div className="hear-set hear-ask">
+          <span>Worth stopping for?</span>
+          <button
+            className={rating === "up" ? "hear-chip on" : "hear-chip"}
+            onClick={() => onRating("up")}
+            aria-pressed={rating === "up"}
+            aria-label="Yes, worth stopping for"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 22V10l5-8a2.2 2.2 0 0 1 2 2.6L13 9h5.4a2.2 2.2 0 0 1 2.1 2.8l-2 8A2.2 2.2 0 0 1 16.4 22z" />
+            </svg>
+          </button>
+          <button
+            className={rating === "down" ? "hear-chip on" : "hear-chip"}
+            onClick={() => onRating("down")}
+            aria-pressed={rating === "down"}
+            aria-label="No, not worth stopping for"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17 2v12l-5 8a2.2 2.2 0 0 1-2-2.6L11 15H5.6a2.2 2.2 0 0 1-2.1-2.8l2-8A2.2 2.2 0 0 1 7.6 2z" />
+            </svg>
+          </button>
+        </div>
+      ) : (
       <div className="hear-set">
         <button
           className="hear-chip"
@@ -328,7 +434,37 @@ export function Ribbon({
           </svg>
           Plain words
         </button>
+        {/*
+          The narrator, wrapping the native select rather than replacing it.
+
+          A voice is the thing somebody listens to for forty minutes and it was the one
+          setting stranded in the sheet. The native control is the one that works with a
+          screen reader, a keyboard and a thumb without any help from us; the chip is
+          just the skin, and the select sits invisibly over it so the whole chip is the
+          target.
+        */}
+        <label className="hear-chip hear-voice">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3zM5 11a7 7 0 0 0 14 0M12 18v3" />
+          </svg>
+          {short(VOICE_LABEL[voice ?? echo.voice ?? ""] ?? "Narrator")}
+          <select
+            aria-label="Narrator"
+            value={voice ?? ""}
+            onChange={(e) => onVoice(e.target.value || null)}
+          >
+            <option value="">
+              {VOICE_LABEL[echo.voice ?? ""] ?? "Default narrator"} · as written
+            </option>
+            {Object.entries(VOICE_LABEL).map(([id, label]) => (
+              <option key={id} value={id}>
+                {label}
+              </option>
+            ))}
+          </select>
+        </label>
       </div>
+      )}
 
       <div className="hear-transport">
         {/*
@@ -469,37 +605,125 @@ export function Ribbon({
  * widest and softest layer and the aqua core sits on top of it — which is the order light
  * actually stacks in, and the order the reference has.
  */
-const RIBBONS: readonly { readonly d: string; readonly fill: string; readonly opacity: number; readonly blur?: string }[] = [
-  {
-    d: "M0 60 C 44 30, 78 26, 110 42 C 142 58, 164 86, 200 88 C 238 90, 262 58, 296 44 C 328 31, 360 36, 390 52 L390 70 C 360 54, 328 49, 296 62 C 262 76, 238 108, 200 106 C 164 104, 142 76, 110 60 C 78 44, 44 48, 0 78 Z",
-    fill: "#7b3bff", opacity: 0.68, blur: "url(#ribSoft)",
-  },
-  {
-    d: "M0 84 C 48 104, 84 100, 118 80 C 152 60, 182 36, 220 40 C 258 44, 282 76, 318 85 C 348 92, 370 85, 390 72 L390 90 C 370 103, 348 110, 318 103 C 282 94, 258 62, 220 58 C 182 54, 152 78, 118 98 C 84 118, 48 122, 0 102 Z",
-    fill: "#3b6bff", opacity: 0.62, blur: "url(#ribSoft)",
-  },
-  {
-    d: "M0 44 C 40 58, 70 68, 104 62 C 140 55, 168 28, 206 24 C 246 20, 274 44, 310 55 C 340 64, 368 59, 390 44 L390 58 C 368 73, 340 78, 310 69 C 274 58, 246 34, 206 38 C 168 42, 140 69, 104 76 C 70 82, 40 72, 0 58 Z",
-    fill: "#00e5ff", opacity: 0.6, blur: "url(#ribSoft2)",
-  },
-  {
-    d: "M0 66 C 44 44, 80 42, 114 55 C 150 69, 174 94, 210 94 C 246 94, 270 66, 304 54 C 334 43, 364 46, 390 58 L390 63 C 364 51, 334 48, 304 59 C 270 71, 246 99, 210 99 C 174 99, 150 74, 114 60 C 80 47, 44 49, 0 71 Z",
-    fill: "#dff7ff", opacity: 0.95,
-  },
+/**
+ * THE STRANDS ARE GENERATED, not drawn by hand, and that is what fixes the breaks.
+ *
+ * There were four hardcoded bezier ribbons, taken off the board to the coordinate. The
+ * report was "too many breaks in the lines, it should be more fluid and connected", and
+ * looking at a crop of the real thing that is exactly right: four separate closed shapes,
+ * far enough apart to leave black between them, crossing at hard angles, each one ending
+ * abruptly at its own edge. Four ribbons read as four ribbons.
+ *
+ * Nine strands from one function read as a field of light. Each is the sum of two sine
+ * waves rather than one, so the line wanders instead of repeating; the thickness breathes
+ * along its own third wave, so a strand thins where another crosses it and the two merge
+ * rather than colliding; and every wave number is a whole number of cycles across the
+ * width, so the picture tiles seamlessly and the loop has no seam.
+ *
+ * They are packed close enough to overlap. With `screen` blending, overlapping is the
+ * whole point: where two strands cross they ADD, which is where the light comes from, and
+ * it is the gaps between them that were reading as breaks.
+ */
+interface Strand {
+  readonly d: string;
+  readonly fill: string;
+  readonly opacity: number;
+  readonly blur: string;
+}
+
+/** The brand gradient, as stops to interpolate between. Aqua, blue, violet. */
+const BRAND: readonly (readonly [number, number, number])[] = [
+  [0x00, 0xe5, 0xff],
+  [0x3b, 0x6b, 0xff],
+  [0x7b, 0x3b, 0xff],
 ];
 
+/** A colour t of the way along the brand gradient. */
+function brandAt(t: number): string {
+  const x = Math.max(0, Math.min(0.999, t)) * (BRAND.length - 1);
+  const i = Math.floor(x);
+  const f = x - i;
+  const a = BRAND[i]!;
+  const b = BRAND[Math.min(BRAND.length - 1, i + 1)]!;
+  const mix = a.map((v, k) => Math.round(v + (b[k]! - v) * f));
+  return `#${mix.map((v) => v.toString(16).padStart(2, "0")).join("")}`;
+}
+
 /**
- * The flowing group, drawn twice so the loop has no seam.
+ * One strand, as a closed path traced along the top edge and back along the bottom.
  *
- * The board translates by 38px and repeats, which snaps every nine seconds because the
- * artwork does not tile at 38. Two copies a full width apart, translated by exactly that
- * width, return to an identical picture — so the light moves forever and never jumps.
- *
- * `phase` is a per-echo delay. The same ribbon under every story would be a brand object,
- * which is fine, but two echoes opened one after another should not be frame-locked to
- * each other. It shifts where the loop starts and nothing else: it is not pretending to
- * be anything about the audio.
+ * Sampled rather than hand-placed control points: 48 steps across the width is smooth at
+ * any size this is drawn at, and it costs nothing because the whole set is built once when
+ * the module loads.
  */
+function strandPath(
+  amp: number, k1: number, k2: number, phase: number, mid: number, thick: number, tk: number,
+): string {
+  const N = 48;
+  const y = (x: number) => {
+    const u = (x / W) * Math.PI * 2;
+    return mid + Math.sin(u * k1 + phase) * amp + Math.sin(u * k2 + phase * 1.7) * amp * 0.38;
+  };
+  // The thickness breathes, so strands thin where they cross instead of colliding.
+  const t = (x: number) => thick * (0.55 + 0.45 * Math.sin((x / W) * Math.PI * 2 * tk + phase * 2.3));
+  const top: string[] = [];
+  const bottom: string[] = [];
+  for (let i = 0; i <= N; i++) {
+    const x = (W * i) / N;
+    const c = y(x);
+    const h = t(x) / 2;
+    top.push(`${x.toFixed(1)} ${(c - h).toFixed(1)}`);
+    bottom.push(`${x.toFixed(1)} ${(c + h).toFixed(1)}`);
+  }
+  bottom.reverse();
+  return `M${top.join("L")}L${bottom.join("L")}Z`;
+}
+
+const STRANDS: readonly Strand[] = (() => {
+  const out: Strand[] = [];
+  /*
+   * Back to front: the wide soft ones first in violet, the tight bright ones last in
+   * aqua. That is the order light stacks in, and it means the sharp strands read as the
+   * core of something rather than as lines lying on top of a picture.
+   */
+  /*
+   * EVERYTHING STAYS INSIDE THE BOX. The first set reached y=146 in a 150 unit viewBox,
+   * and with `preserveAspectRatio="none"` the viewBox IS the element, so the widest
+   * strands were sliced flat along the bottom edge — a dead straight horizontal line
+   * under the whole picture, which is the same defect as the vertical one at the
+   * playhead and just as visible. The sum of offset, amplitude and half thickness is
+   * held to about 52 either side of the middle, which leaves air top and bottom.
+   */
+  const spec: readonly [number, number, number, number, number, number, number, number][] = [
+    // amp,  k1, k2, phase, midOffset, thickness, thicknessWave, colour t
+    [28, 1, 2, 0.0, 6, 34, 1, 1.0],
+    [26, 1, 3, 1.1, -7, 30, 2, 0.86],
+    [24, 2, 1, 2.2, 8, 26, 1, 0.66],
+    [23, 1, 2, 3.4, -4, 23, 3, 0.5],
+    [21, 2, 3, 4.5, 7, 19, 2, 0.34],
+    [19, 1, 2, 5.6, -8, 15, 1, 0.16],
+    [17, 2, 1, 0.7, 2, 11, 3, 0.04],
+  ];
+  spec.forEach(([amp, k1, k2, phase, off, thick, tk, ct], i) => {
+    out.push({
+      d: strandPath(amp, k1, k2, phase, MID + off, thick, tk),
+      fill: brandAt(ct),
+      // The soft wide ones sit low so they never flatten into a wash; the tight ones
+      // carry the brightness.
+      opacity: 0.44 + (i / (spec.length - 1)) * 0.34,
+      blur: i < 3 ? "url(#ribSoft)" : i < 5 ? "url(#ribSoft2)" : "url(#ribSoft3)",
+    });
+  });
+  /*
+   * And two hot cores, near white and barely blurred. The reference has one bright line
+   * running through the whole thing and it is what stops a field of soft colour reading
+   * as fog.
+   */
+  out.push({ d: strandPath(26, 1, 2, 0.4, MID + 2, 5, 2), fill: "#f2feff", opacity: 1, blur: "url(#ribSoft3)" });
+  out.push({ d: strandPath(21, 2, 1, 3.0, MID - 5, 3.4, 3), fill: "#dff7ff", opacity: 0.8, blur: "url(#ribSoft3)" });
+  return out;
+})();
+
 function Flow({ phase }: { readonly phase: number }) {
   return (
     /*
@@ -519,14 +743,14 @@ function Flow({ phase }: { readonly phase: number }) {
     <g className="hear-flow" style={{ animationDelay: `${(-phase).toFixed(2)}s` }}>
       {[0, W].map((dx) => (
         <g key={dx} transform={dx ? `translate(${dx} 0)` : undefined}>
-          {RIBBONS.map((r) => (
+          {STRANDS.map((r, i) => (
             <path
-              key={`${dx}/${r.fill}`}
+              key={`${dx}/${i}`}
               className="hear-rib"
               d={r.d}
               fill={r.fill}
               opacity={r.opacity}
-              {...(r.blur ? { filter: r.blur } : {})}
+              filter={r.blur}
             />
           ))}
         </g>
@@ -543,6 +767,22 @@ function phaseOf(id: string): number {
 }
 /** Seconds for one full pass. Matches `.hear-flow` in `theme.css`. */
 const FLOW_S = 18;
+
+/**
+ * A narrator name that fits a chip.
+ *
+ * "Narrator for children" is 21 characters and the row has three chips in 339 pixels, so
+ * it has to shorten. Taking the first word was the obvious way and it produces "Narrator"
+ * for the children's voice, which names nothing — the distinguishing word is the last
+ * one. Dropping the word "narrator" wherever it appears leaves Default, Second and
+ * Children, which are three different things. The full name is still in the select the
+ * chip opens, and in the accessible name.
+ */
+const short = (name: string) => {
+  const trimmed = name.replace(/\s*narrator\s*/i, " ").trim().replace(/^for\s+/i, "");
+  const out = trimmed || name;
+  return out.charAt(0).toUpperCase() + out.slice(1);
+};
 
 const clock = (seconds: number) =>
   `${Math.floor(seconds / 60)}:${String(Math.max(0, Math.round(seconds % 60))).padStart(2, "0")}`;
