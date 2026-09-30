@@ -1768,6 +1768,17 @@ export function App() {
               if (d > 0) seekTo(progressRef.current + seconds / d);
             }}
             simple={simple}
+            /*
+              Everything below was already in this component and already wired to the
+              SHEET's player. The full-screen player was a strict subset of the small one,
+              which is what "what happened to all the audio controls" was pointing at: not
+              a rendering bug, a screen that never got the props.
+            */
+            onSimple={setSimple}
+            rate={rate}
+            onRate={setRate}
+            onRestart={() => seekTo(0)}
+            onNext={() => session.skip()}
             onClose={() => setListening(false)}
           />
         )}

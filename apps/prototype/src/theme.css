@@ -3267,18 +3267,35 @@ body {
 }
 
 /* ── Hearing it ─────────────────────────────────────────────────────────────────
-   The ribbon is warm because it IS the echo. Every control on this screen is cool
-   because you operate it. The design board drew the pause button ember, which puts
-   the loudest warm object on the screen on the one thing that is not an echo. */
+   The ribbon carries the brand gradient because it is the SCRUBBER — the thing you
+   put a thumb on — and the law in design/brand/README.md puts everything you operate
+   in aqua. The ember moves to the playhead, which is the one object here that is
+   genuinely the echo rather than a control: where the voice has got to. See the
+   COLOUR note at the top of Ribbon.tsx.
+
+   NOTHING ON THIS SCREEN IS A FIXED NUMBER OF PIXELS FROM THE TOP ANY MORE.
+
+   The plate was `height: 300px` and the title `margin-top: 312px`, which is exactly
+   right on the 844px frame this app is always rendered in and off the bottom of the
+   screen on a 667px phone. Measured on an iPhone SE: the whole transport sat under
+   the tab bar and "Read it" and "Keep" were below the glass. That is the "the play
+   controls are cut off" report, and it survived because every render ever taken of
+   this screen was 390x844.
+
+   So the plate is a share of the viewport with a floor and a ceiling, and everything
+   below it is measured from the plate rather than from a number. The floor is what
+   an archive photograph still reads as; the ceiling is the board's 300. */
 .hear {
   position: absolute; inset: 0; z-index: 40;
+  /* The one number the rest of the screen is built from. */
+  --plate-h: clamp(150px, 26dvh, 300px);
   background: linear-gradient(#101534 0%, #100e0a 42%, #07080c 100%);
   display: flex; flex-direction: column;
   padding-bottom: calc(var(--nav-h) + 6px);
   overflow: hidden;
 }
 
-.hear-plate { position: absolute; left: 0; right: 0; top: 0; height: 300px; overflow: hidden; }
+.hear-plate { position: absolute; left: 0; right: 0; top: 0; height: var(--plate-h); overflow: hidden; }
 .hear-plate img { width: 100%; height: 100%; object-fit: cover; display: block; }
 /* No plate cleared for this one. A warm field rather than a fake window: a fabricated
    provenance sitting in a repository is the kind of thing that later gets believed. */
@@ -3311,7 +3328,7 @@ body {
   stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
 }
 
-.hear-say { position: relative; margin-top: 312px; padding: 0 18px; flex: none; }
+.hear-say { position: relative; margin-top: calc(var(--plate-h) + 12px); padding: 0 18px; flex: none; }
 .hear-kicker {
   display: flex; align-items: center; gap: 10px; margin: 0;
   font-size: 11px; font-weight: 500; letter-spacing: 0.12em;
@@ -3330,7 +3347,9 @@ body {
 .hear-hit {
   display: block; padding: 10px 0; cursor: pointer; touch-action: none;
 }
-.hear-wave { display: block; width: 100%; height: 130px; }
+/* Scales with the screen for the same reason the plate does. 96px is where the four
+   ribbons still read as four rather than as one band; 130 is the board's. */
+.hear-wave { display: block; width: 100%; height: clamp(96px, 16dvh, 130px); }
 /*
  * The ribbons ADD where they overlap, which is the whole reason this reads as light
  * rather than as a shape. Four warm fills laid over each other with `screen` give a hot
@@ -3353,35 +3372,102 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .hear-flow { animation: none; }
 }
-.hear-head { stroke: var(--aqua); stroke-width: 2; stroke-linecap: round; }
-.hear-head-dot { fill: var(--aqua); }
+/*
+ * THE PLAYHEAD IS THE EMBER. It used to be aqua, which was correct while the ribbon was
+ * warm and became invisible the moment the ribbon took the aqua. Ember is the complement
+ * of cyan, so it is the one colour that cannot be lost in this gradient — and it is the
+ * honest one: the position of the voice is the echo, and everything around it is a
+ * control. The glow is doing legibility work, not decoration: a 2px line over a blurred
+ * light source needs its own edge.
+ */
+.hear-head {
+  stroke: var(--ember-core); stroke-width: 2.4; stroke-linecap: round;
+  filter: drop-shadow(0 0 5px var(--ember));
+}
+.hear-head-dot { fill: var(--ember-core); filter: drop-shadow(0 0 7px var(--ember)); }
 .hear-clock {
   display: flex; justify-content: space-between; margin: 2px 0 0; padding: 0 18px;
   font-size: 12px; color: var(--muted);
 }
 
+/*
+ * The two settings. Quiet on purpose: these are set once and the transport under them is
+ * touched every thirty seconds, so they must not read as equals of it.
+ */
+.hear-set {
+  flex: none; display: flex; justify-content: center; gap: 8px;
+  padding: 6px 18px 0;
+}
+.hear-chip {
+  position: relative; display: inline-flex; align-items: center; gap: 6px;
+  min-height: 34px; padding: 0 13px; border-radius: 99px; cursor: pointer;
+  font: inherit; font-size: 13px; color: var(--muted);
+  background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.13);
+}
+.hear-chip svg {
+  width: 14px; height: 14px; fill: none; stroke: currentColor;
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.hear-chip.on { color: var(--aqua); border-color: rgba(0, 255, 231, 0.4); }
+/* Dimmed rather than hidden: the gap is in the library, not in the app, and a control
+   that vanishes on some echoes is a control nobody trusts. `aria-label` says why. */
+.hear-chip:disabled { opacity: 0.4; cursor: default; }
+/*
+ * THE TARGET IS BIGGER THAN THE CHIP. 34px is the height the row wants and 44 is the
+ * height a thumb wants (Apple HIG, WCAG 2.5.8), so the difference goes on as an
+ * invisible pseudo-element rather than as padding that would push the transport down.
+ */
+.hear-chip::after {
+  content: ""; position: absolute; inset: -5px -4px;
+}
+
+/*
+ * Five buttons wide now: restart, back fifteen, play, forward fifteen, next echo.
+ *
+ * The gap was 26px, which fits three and overflows five at 375px. `space-between` inside
+ * a padded row instead, so the outer two sit under the thumbs rather than crowding the
+ * middle, and the spacing solves itself at every width.
+ */
 .hear-transport {
-  flex: none; display: flex; align-items: center; justify-content: center; gap: 26px;
-  margin-top: 8px;
+  flex: none; display: flex; align-items: center; justify-content: space-between;
+  gap: 4px; margin-top: 6px; padding: 0 16px;
 }
 .hear-transport button {
   width: 48px; height: 48px; border-radius: 50%; border: 0; cursor: pointer;
   background: none; color: var(--text); display: grid; place-items: center;
+  flex: none;
 }
 .hear-transport button svg {
   width: 23px; height: 23px; fill: none; stroke: currentColor;
-  stroke-width: 1.7; stroke-linecap: round;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
+/* The wedge in the skip glyphs is a solid, the bar beside it is a stroke. One icon, two
+   treatments, because an outlined triangle at 23px closes up into a grey blob. */
+.hear-transport button svg .hear-solid { fill: currentColor; stroke: none; }
+/* Restart and next are secondary to the three in the middle, and saying so with weight
+   costs nothing and stops a five-button row reading as five equal choices. */
+.hear-transport button:first-child, .hear-transport button:last-child { color: var(--muted); }
 .hear-go {
   width: 72px !important; height: 72px !important;
   background: var(--btn-dark) !important;
-  color: var(--btn-dark-ink) !important; box-shadow: 0 0 40px rgba(0, 255, 231, 0.3);
+  color: var(--btn-dark-ink) !important;
+  /*
+     The glow was 40px of aqua, which made this the brightest object on the screen. That
+     was right when everything else was warm; with the ribbon now carrying the aqua it
+     read as a second light source competing with the story. Halved, and the disc still
+     wins on size, which is the right way for a play button to win.
+  */
+  box-shadow: 0 0 20px rgba(0, 255, 231, 0.22);
 }
 .hear-go svg { width: 24px !important; height: 24px !important; fill: currentColor !important; stroke: none !important; }
 
-.hear-acts { flex: none; display: flex; gap: 9px; padding: 16px 18px 0; }
+.hear-acts { flex: none; display: flex; gap: 8px; padding: 12px 18px 0; }
+/* Three across now rather than two, so they have to be able to shrink: `flex: 1 1 0`
+   with `min-width: 0`, not `flex-grow` alone, which keeps each button at least as wide
+   as its own label and pushes the last one off a 375px screen. */
 .hear-acts button {
-  flex-grow: 1; display: flex; align-items: center; justify-content: center; gap: 7px;
+  flex: 1 1 0; min-width: 0; white-space: nowrap;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
   min-height: 44px; border-radius: 13px; cursor: pointer; font: inherit; font-size: 14px;
   color: var(--text); background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.14);
@@ -3429,6 +3515,17 @@ body {
   */
   mask-image: linear-gradient(to bottom, transparent 0, #000 96px, #000 calc(100% - 26px), transparent 100%);
 }
+/*
+ * And it moves down again when the controls grow.
+ *
+ * 268px was measured against a three-button transport and a two-button actions row. The
+ * settings row and the two extra transport buttons added about 46px, so the number is now
+ * written as what it actually is — the tab bar plus everything stacked on top of it —
+ * rather than as a constant that silently goes wrong the next time a control is added.
+ *
+ *   nav 74 + pad 6 + acts (12 + 44) + transport (6 + 72) + settings (6 + 34) + clock 18
+ */
+.hear-read { bottom: calc(var(--nav-h) + 204px); }
 /* Above the transcript, so the way out of the screen does not disappear behind the words. */
 .hear-back { z-index: 3; }
 

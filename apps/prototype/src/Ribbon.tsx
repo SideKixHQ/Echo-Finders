@@ -17,10 +17,26 @@
  * is stable for it, and the one thing anybody actually reads off it — how far in, how much
  * left — is true either way, because that comes from the playhead.
  *
- * COLOUR. The ribbon is warm because it IS the echo, and every control on the screen is
- * cool because you operate them. That is the law in `design/brand/README.md` and this is
- * the screen where it pays: the design board drew the pause button ember, which puts the
- * loudest warm object on the screen on the one thing that is not an echo.
+ * COLOUR, and a board decision that got overturned by its own code.
+ *
+ * Board 6 painted these ribbons warm, on the law in `design/brand/README.md`: "Aqua is the
+ * interface. Ember is the echo." The ribbon is the echo, so the ribbon is ember. That was
+ * a sound reading of the board and it is the wrong reading of this screen, because of what
+ * the ribbon then became: THE SCRUBBER. It is the thing you put your thumb on and drag.
+ * Under the same one-line law, a thing you operate is cool.
+ *
+ * So it now carries the brand's own aqua-through-violet gradient — the same three stops as
+ * the `routeLine` on the map, `#00e5ff → #3b6bff → #7b3bff` — and the ember moves to the
+ * PLAYHEAD, which is the one object on this screen that is genuinely the echo rather than
+ * a control: where the voice has got to. The law is not bent; the two things it names
+ * simply turned out to be the other way round here.
+ *
+ * It is also the version that is legible. Four warm fills screen-blended over black gave a
+ * narrow brown band, because warm-on-dark has nowhere to go: every stop is already close
+ * to the background in luminance. Aqua over black has the full range, and aqua crossing
+ * violet under `screen` produces the pinks in the reference without a pink ever being
+ * declared — which matters, because the brand gradient ends at violet and inventing a
+ * fourth stop for one screen is how palettes rot.
  *
  * The classes are `hear-`, not `ribbon-`. `.ribbon` was already the route progress pill
  * at the top of the map, and its `align-items: center` and pill padding quietly reshaped
@@ -38,6 +54,7 @@ import { rarityOf, type Echo } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
 import { platePng } from "./archive-plate";
 import { Transcript } from "./Transcript";
+import { shareText } from "./share";
 
 const RARITY_LABEL: Record<string, string> = {
   common: "",
@@ -63,11 +80,40 @@ export interface RibbonProps {
   readonly onClose: () => void;
   /** The plain-language cut, which the transcript has to follow. */
   readonly simple: boolean;
+  readonly onSimple: (on: boolean) => void;
   readonly saved: boolean;
   readonly onSave: () => void;
   /** The plain-language cut is shorter, so the clock has to ask which is playing. */
   readonly durationS: number;
+  /**
+   * Playback speed, shared with the sheet's transport rather than owned here.
+   *
+   * It was already in `App`, already wired to the sheet, and already the divisor on the
+   * clock — the full-screen player was simply the one place you could not reach it. A
+   * speed that only exists on a screen you have to leave the story to open is a speed
+   * nobody changes.
+   */
+  readonly rate: number;
+  readonly onRate: (rate: number) => void;
+  /** Back to 0:00 and keep playing. Not stop, which is the sheet's and means "done". */
+  readonly onRestart: () => void;
+  /** The next echo in the queue. `session.skip()`, same as the sheet's "Next echo". */
+  readonly onNext: () => void;
 }
+
+/**
+ * The speeds the pill walks through, and why it is a cycle rather than a pair of steppers.
+ *
+ * The sheet has minus and plus at 0.1 from 0.7 to 2.0, which is thirteen taps to get from
+ * 1× to 2× and is fine on a screen you are sitting with. This screen is the one you use
+ * with the phone at arm's length in a street, and there the question is never "0.1 faster"
+ * — it is "this narrator is slow". One tap, four useful values, and it comes back round to
+ * 1× rather than dead-ending, so nobody has to find their way home from 2×.
+ *
+ * 0.8 is in it because the plain-language cut exists for tired and second-language
+ * listeners and slower is the same kindness.
+ */
+const RATES = [1, 1.2, 1.5, 2, 0.8] as const;
 
 export function Ribbon({
   echo,
@@ -78,9 +124,14 @@ export function Ribbon({
   onNudge,
   onClose,
   simple,
+  onSimple,
   saved,
   onSave,
   durationS,
+  rate,
+  onRate,
+  onRestart,
+  onNext,
 }: RibbonProps) {
   const rarity = RARITY_LABEL[rarityOf(echo)] ?? "";
   const photo = echo.archive?.[0];
@@ -212,7 +263,63 @@ export function Ribbon({
         </p>
       </div>
 
+      {/*
+        THE TWO SETTINGS, above the transport rather than in it.
+
+        Both of these existed in the sheet's player and in neither case could you reach
+        them from this screen, which is the actual answer to "what happened to all the
+        audio controls": the full-screen player was a strict subset of the small one. Speed
+        is the control a spoken-word app is judged on, and the plain-language cut changes
+        what you are listening to, so a listener who wants either had to leave the story.
+
+        They sit in their own quiet row because they are things you set once and then stop
+        touching, and the transport below is the row you touch every thirty seconds. Same
+        ordering rule the sheet's player already follows.
+      */}
+      <div className="hear-set">
+        <button
+          className="hear-chip"
+          onClick={() => onRate(RATES[(RATES.indexOf(rate as (typeof RATES)[number]) + 1) % RATES.length] ?? 1)}
+          aria-label={`Speed, ${rate} times. Tap to change.`}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 20a8 8 0 1 1 8-8" />
+            <path d="M12 12l4.5-3.4" />
+          </svg>
+          {/*
+            One decimal only where it earns one. "1.0×" and "2.0×" are two characters of
+            precision nobody asked for, and the row is narrow.
+          */}
+          {Number.isInteger(rate) ? rate : rate.toFixed(1)}×
+        </button>
+        <button
+          className={simple ? "hear-chip on" : "hear-chip"}
+          onClick={() => onSimple(!simple)}
+          disabled={!echo.simple}
+          aria-pressed={simple}
+          /* Said out loud, because a disabled control with no reason on it is a bug to
+             everybody who meets one. The gap is in the library, not in the app. */
+          aria-label={echo.simple ? "Plain language cut" : "No plain language cut for this echo"}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 14v-3a8 8 0 0 1 16 0v3M4 14a2 2 0 0 0 2 2h1v-5H6a2 2 0 0 0-2 2zM20 14a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2z" />
+          </svg>
+          Plain words
+        </button>
+      </div>
+
       <div className="hear-transport">
+        {/*
+          Restart, on the glyph every player uses for it. First press goes to the start,
+          which is what a listener who has just walked under a bus and missed the opening
+          line reaches for — and what `Home` on the scrubber already did with no button.
+        */}
+        <button onClick={onRestart} aria-label="Back to the start">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 5v14l-9.5-7z" className="hear-solid" />
+            <path d="M6 5v14" />
+          </svg>
+        </button>
         <button onClick={() => onNudge(-15)} aria-label="Back fifteen seconds">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M11 5L6.5 9.2 11 13.4" />
@@ -237,6 +344,19 @@ export function Ribbon({
             <path d="M17.2 9.2H10a4.6 4.6 0 0 0 0 9.2h5" />
           </svg>
         </button>
+        {/*
+          Next echo. The one control on this screen that is arguably against the product —
+          ADR-0010 says arriving is the mechanic and nothing plays that you did not walk
+          to. It is here because `session.skip()` only ever moves through echoes you have
+          ALREADY synced, so it skips within what you earned rather than handing you
+          something you did not. The sheet has had exactly this button all along.
+        */}
+        <button onClick={onNext} aria-label="Next echo">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 5v14l9.5-7z" className="hear-solid" />
+            <path d="M18 5v14" />
+          </svg>
+        </button>
       </div>
 
       <div className="hear-acts">
@@ -249,13 +369,43 @@ export function Ribbon({
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M5 5h14M5 10h14M5 15h10" />
           </svg>
-          {reading ? "Hide the words" : "Read it"}
+          {/*
+            "Hide it" rather than "Hide the words", which is better copy and no longer
+            fits: this row is three buttons wide now and fourteen characters ran the label
+            under its own icon at 375px. Measured, not guessed.
+          */}
+          {reading ? "Hide it" : "Read it"}
         </button>
         <button className={saved ? "on" : ""} onClick={onSave} aria-pressed={saved}>
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M18 21l-6-3.6L6 21V5.4A1.4 1.4 0 0 1 7.4 4h9.2A1.4 1.4 0 0 1 18 5.4z" />
           </svg>
           {saved ? "Kept" : "Keep"}
+        </button>
+        {/*
+          Share, which the card has had all along and the screen you are actually on while
+          the story lands did not. This is the moment somebody wants to tell somebody
+          else, and it was two taps back to a card to do it.
+
+          No link, because there is no link: nothing in this app has a URL of its own yet
+          (no router, no deep link, `docs/03-selling.md`). A share button that pastes a
+          dead address is worse than one that pastes a sentence, so it sends the title,
+          the place and the teaser — which is a thing somebody can act on by walking there.
+          It gets a URL the day echoes get addresses.
+        */}
+        <button
+          onClick={() => {
+            void shareText(
+              echo.title,
+              `${echo.title} — ${echo.point.place}. ${echo.teaser ?? echo.summary}`,
+            );
+          }}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 15V3M8.5 6.5L12 3l3.5 3.5" />
+            <path d="M6 12H5a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1h-1" />
+          </svg>
+          Share
         </button>
       </div>
 
@@ -290,27 +440,29 @@ export function Ribbon({
  *
  * Four overlapping bezier ribbons, three of them blurred, blended with `screen` so they
  * ADD where they cross — which is where the light comes from, and why the flat fill could
- * never have got there. The palette is the board's, warm, because this is the echo
- * playing and the echo is ember.
+ * never have got there.
  *
- * The paths are the board's own, to the coordinate.
+ * The paths are the board's own, to the coordinate. The palette is not: see COLOUR at the
+ * top of this file. It is the brand gradient, back to front, so the deepest violet is the
+ * widest and softest layer and the aqua core sits on top of it — which is the order light
+ * actually stacks in, and the order the reference has.
  */
 const RIBBONS: readonly { readonly d: string; readonly fill: string; readonly opacity: number; readonly blur?: string }[] = [
   {
     d: "M0 60 C 44 30, 78 26, 110 42 C 142 58, 164 86, 200 88 C 238 90, 262 58, 296 44 C 328 31, 360 36, 390 52 L390 70 C 360 54, 328 49, 296 62 C 262 76, 238 108, 200 106 C 164 104, 142 76, 110 60 C 78 44, 44 48, 0 78 Z",
-    fill: "#c96a00", opacity: 0.55, blur: "url(#ribSoft)",
+    fill: "#7b3bff", opacity: 0.68, blur: "url(#ribSoft)",
   },
   {
     d: "M0 84 C 48 104, 84 100, 118 80 C 152 60, 182 36, 220 40 C 258 44, 282 76, 318 85 C 348 92, 370 85, 390 72 L390 90 C 370 103, 348 110, 318 103 C 282 94, 258 62, 220 58 C 182 54, 152 78, 118 98 C 84 118, 48 122, 0 102 Z",
-    fill: "#ff9e12", opacity: 0.5, blur: "url(#ribSoft)",
+    fill: "#3b6bff", opacity: 0.62, blur: "url(#ribSoft)",
   },
   {
     d: "M0 44 C 40 58, 70 68, 104 62 C 140 55, 168 28, 206 24 C 246 20, 274 44, 310 55 C 340 64, 368 59, 390 44 L390 58 C 368 73, 340 78, 310 69 C 274 58, 246 34, 206 38 C 168 42, 140 69, 104 76 C 70 82, 40 72, 0 58 Z",
-    fill: "#ffd77a", opacity: 0.6, blur: "url(#ribSoft2)",
+    fill: "#00e5ff", opacity: 0.6, blur: "url(#ribSoft2)",
   },
   {
     d: "M0 66 C 44 44, 80 42, 114 55 C 150 69, 174 94, 210 94 C 246 94, 270 66, 304 54 C 334 43, 364 46, 390 58 L390 63 C 364 51, 334 48, 304 59 C 270 71, 246 99, 210 99 C 174 99, 150 74, 114 60 C 80 47, 44 49, 0 71 Z",
-    fill: "#fff2d0", opacity: 0.95,
+    fill: "#dff7ff", opacity: 0.95,
   },
 ];
 
@@ -328,7 +480,21 @@ const RIBBONS: readonly { readonly d: string; readonly fill: string; readonly op
  */
 function Flow({ phase }: { readonly phase: number }) {
   return (
-    <g className="hear-flow" style={{ animationDelay: `${phase.toFixed(2)}s` }}>
+    /*
+      NEGATIVE. The sign is the whole thing, and it was wrong.
+
+      A positive `animation-delay` does not shift where a loop starts — it postpones the
+      animation, and with the default `animation-fill-mode: none` nothing at all is
+      applied while it waits. `phaseOf` returns up to 18 seconds, so an echo could open
+      and the ribbon could sit completely still for the length of a full pass before it
+      ever moved. Measured in a browser: `getAnimations()` reported the animation
+      "running" and its `currentTime` climbing, while the computed transform stayed
+      `none` and the artwork did not move a pixel. "Running" during a delay is running.
+
+      Negative starts the animation already that far in, which is the idiom and what the
+      comment below always claimed this did.
+    */
+    <g className="hear-flow" style={{ animationDelay: `${(-phase).toFixed(2)}s` }}>
       {[0, W].map((dx) => (
         <g key={dx} transform={dx ? `translate(${dx} 0)` : undefined}>
           {RIBBONS.map((r) => (
