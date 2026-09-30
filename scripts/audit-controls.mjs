@@ -148,9 +148,103 @@ const typeSweep = () => p.evaluate(() => {
   return out;
 });
 
+/**
+ * What a short phone cannot see.
+ *
+ * EVERY RENDER THIS PROJECT HAS EVER TAKEN WAS 844 PIXELS TALL, and that is not a small
+ * detail — it is the reason the same class of bug has now shipped three times. `position:
+ * fixed` escaping the phone frame was invisible at 390 wide. The listening screen's
+ * `height: 300px` plate and `margin-top: 312px` title were invisible at 844 tall, and on
+ * an iPhone SE they put the entire transport under the tab bar and both action buttons
+ * below the glass. That was reported by a person, twice, as "the play controls are cut
+ * off", and every screenshot taken to check it was the wrong height to show it.
+ *
+ * So each screen is now also measured at 375x667, which is the iPhone SE and the shortest
+ * phone anybody is realistically holding. A control that leaves the frame or hides under
+ * the tab bar at that height is reported with its screen and its name.
+ *
+ * It measures the SAME app in the SAME state — one `setViewportSize` and back — rather
+ * than walking the whole product twice, because the failure is a layout that does not
+ * respond to height and one resize is enough to expose it.
+ */
+const SHORT = { width: 375, height: 667 };
+const TALL = { width: 390, height: 844 };
+const fitSweep = async () => {
+  await p.setViewportSize(SHORT);
+  // Long enough for a clamp() on dvh to settle and for any transition to land.
+  await p.waitForTimeout(260);
+  const out = await p.evaluate(() => {
+    const screen = document.querySelector('.screen');
+    if (!screen) return [];
+    const box = screen.getBoundingClientRect();
+    const navEl = document.querySelector('.nav');
+    // Under the tab bar is as lost as off the bottom, so the ceiling is whichever is
+    // higher: the bottom of the frame, or the top of the nav when one is showing.
+    const floor = navEl && navEl.getBoundingClientRect().height > 0
+      ? Math.min(box.bottom, navEl.getBoundingClientRect().top)
+      : box.bottom;
+    const out = [];
+    for (const el of document.querySelectorAll('button,[role="button"],[role="slider"],a,input,select')) {
+      const r = el.getBoundingClientRect();
+      const cs = getComputedStyle(el);
+      if (r.width === 0 || r.height === 0 || cs.visibility === 'hidden') continue;
+      // A control inside something that scrolls is not lost, it is below the fold. Only
+      // a control the listener has no way to reach counts.
+      let scrolls = false;
+      for (let a = el.parentElement; a && a !== document.body; a = a.parentElement) {
+        const o = getComputedStyle(a).overflowY;
+        if (o === 'auto' || o === 'scroll') { scrolls = true; break; }
+      }
+      if (scrolls) continue;
+      // The tab bar's own buttons are inside the tab bar, so measuring them against the
+      // top of the tab bar reports every one of them forever. The bar is the floor.
+      if (el.closest('.nav')) continue;
+      /*
+       * A map pin off the bottom of the map is a pin somebody pans to, not a control
+       * that fell out of a column. The whole point of this check is layouts that do not
+       * respond to height, and an SVG scene graph is not one.
+       */
+      if (el.closest('svg.map')) continue;
+      /*
+       * And a control UNDER a full-screen overlay is not lost either — it is behind the
+       * listening screen, where it belongs. Without this the sheet's narrator, its
+       * segmented control and every map fab were reported on the listening screen, none
+       * of which a person can see, let alone miss.
+       *
+       * A point inside the element that is also inside the viewport: if nothing is there,
+       * the control really is off the glass, which is the failure. If something else is,
+       * it is covered.
+       */
+      const px = Math.min(Math.max(r.left + r.width / 2, 1), window.innerWidth - 1);
+      const py = Math.min(Math.max(r.top + r.height / 2, 1), window.innerHeight - 1);
+      const inView = py >= r.top - 1 && py <= r.bottom + 1;
+      if (inView) {
+        const hit = document.elementFromPoint(px, py);
+        if (!hit || !(hit === el || el.contains(hit) || hit.contains(el))) continue;
+      }
+      const lost = r.bottom > floor + 1 || r.top < box.top - 1 || r.right > box.right + 1 || r.left < box.left - 1;
+      if (!lost) continue;
+      out.push({
+        name: (el.getAttribute('aria-label') || el.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 40),
+        cls: (el.className.baseVal ?? el.className ?? '').toString().split(' ')[0],
+        by: Math.round(Math.max(r.bottom - floor, box.top - r.top, r.right - box.right, box.left - r.left)),
+      });
+    }
+    return out;
+  });
+  await p.setViewportSize(TALL);
+  await p.waitForTimeout(260);
+  return out;
+};
+
 const screens = {};
 const type = {};
-const capture = async (label) => { screens[label] = await inventory(); type[label] = await typeSweep(); };
+const fits = {};
+const capture = async (label) => {
+  screens[label] = await inventory();
+  type[label] = await typeSweep();
+  fits[label] = await fitSweep();
+};
 
 /**
  * Tab through a screen the way somebody without a mouse has to, and record what the ring
@@ -281,7 +375,7 @@ await capture('listening');
 focus.push(...await focusSweep('listening'));
 await p.getByRole('button', { name: /Read it/ }).click(); await p.waitForTimeout(500);
 await capture('listening/reading');
-await p.getByRole('button', { name: /Hide the words/ }).click(); await p.waitForTimeout(400);
+await p.getByRole('button', { name: /Hide it/ }).click(); await p.waitForTimeout(400);
 await p.getByLabel('Back to the map').click(); await p.waitForTimeout(600);
 await capture('map/playing');
 const grab = p.locator('.grab-zone');
@@ -349,6 +443,20 @@ const ringless = new Map();
 for (const stop of focus) if (!stop.ring && !stop.shadow) ringless.set(stop.cls + '|' + stop.name, stop);
 console.log(`NO FOCUS RING (WCAG 2.4.7, ${focus.length} tab stops): ` + (ringless.size
   ? [...ringless.values()].map(i => `${i.tag}.${i.cls} "${i.name}" (${i.screen})`).join('\n    ')
+  : 'none'));
+
+/*
+ * The short-screen report. Deduplicated by control, because one unresponsive layout shows
+ * up on every screen that uses it and the interesting number is how many CONTROLS are
+ * unreachable, not how many screens.
+ */
+const lost = new Map();
+for (const [screen, items] of Object.entries(fits)) for (const it of items) {
+  const key = it.cls + '|' + it.name;
+  if (!lost.has(key)) lost.set(key, { ...it, screen });
+}
+console.log(`\nOFF A SHORT PHONE (${SHORT.width}x${SHORT.height}, an iPhone SE): ` + (lost.size
+  ? [...lost.values()].map(i => `.${i.cls} "${i.name}" is ${i.by}px past the frame or under the tab bar (${i.screen})`).join('\n    ')
   : 'none'));
 
 console.log('\nPAGE ERRORS:', errors.length ? [...new Set(errors)].join('\n  ') : 'none');

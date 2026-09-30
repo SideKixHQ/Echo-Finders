@@ -23,10 +23,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { CATEGORY_ICON, CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, characterFor } from "./Echo";
+import { ClusterDot, FAN_GAP, GROUP_PX } from "./PinCluster";
 import { TILE_ATTRIBUTION, TILE_URL, planTiles, toWorld } from "./tiles";
 import { MODE_ICON } from "./travel";
 import { useSmoothedPoint } from "./use-smoothed";
-import { buildRouteGeometry, distanceKm, effectiveRadiusKm, presetFor, rarityOf, type Arriving, type Echo, type LatLng, type Position, type Route, type TravelMode } from "@echofinders/core";
+import { buildRouteGeometry, distanceKm, effectiveRadiusKm, presetFor, rarityOf, type Arriving, type Echo, type LatLng, type Position, type Route, type TravelMode,
+  clusterPoints,
+  fanOut,
+} from "@echofinders/core";
 
 export type PinState = "sealed" | "opening" | "captured" | "heard";
 
@@ -91,6 +95,27 @@ interface Props {
    * it. Recentre puts it back.
    */
   readonly pan: { readonly x: number; readonly y: number };
+  /**
+   * An echo to bring to the middle of the map, or null.
+   *
+   * Separate from `selectedId` on purpose. Tapping a pin selects it and the map must NOT
+   * move — the thing you just aimed at jumping to the centre under your thumb is
+   * disorienting and it takes the ground you were reading with it. Stepping through the
+   * list with the arrows is the opposite: you cannot see the next one yet, so bringing it
+   * to you is the whole action.
+   */
+  readonly focusId?: string | null;
+  /**
+   * Pixels of the bottom that something else is covering, on top of the sheet.
+   *
+   * The stepper, today. It is part of the bottom chrome as far as the map is concerned,
+   * so pins, edge markers and the Esri credit all have to clear it — the credit
+   * especially, because Esri's licence requires it to be shown and "present in the DOM
+   * behind an opaque panel" is not shown. That exact bug is why the credit was moved out
+   * from behind the sheet in the first place, and putting a card over the bottom of the
+   * map put it straight back.
+   */
+  readonly reservedBottom?: number;
   readonly onPan: (next: { x: number; y: number }) => void;
 }
 
@@ -178,8 +203,20 @@ interface EdgeMark {
 }
 /** Half a pin, so a pin *centre* never lands under the chrome and no pin is half-eaten. */
 const PIN_R = 16;
-/** The route ribbon and the category chips, which float over the map's top edge. */
-const MAPBAR_H = 119;
+/**
+ * The route ribbon and the category chips, which float over the map's top edge.
+ *
+ * A FALLBACK, not the number. This was hardcoded at 119 and the bar actually renders 151
+ * tall, because the category chips grew a coloured icon and nobody came back to this
+ * line. The gap was 32 pixels of map that pins were allowed to sit in, and the pin
+ * sitting in it was the fifteen-echo cluster for the whole of lower Manhattan: measured,
+ * `elementFromPoint` at its centre returned `BUTTON.chip`, so the most important object
+ * on the screen was behind a filter chip and could not be tapped at all.
+ *
+ * So the real height is measured off the real element below, and this is only what gets
+ * used before the first measurement lands.
+ */
+const MAPBAR_FALLBACK = 119;
 /**
  * The guidance bar, which floats above the sheet on every mode that can steer.
  *
@@ -214,9 +251,12 @@ const insetFor = (
   guided: boolean,
   h: number,
   sheet: boolean,
+  barH: number,
+  reservedBottom: number,
 ) => ({
-  top: MAPBAR_H + PIN_R / 2,
-  bottom: NAV_H + h * sheetFraction(detent, sheet) + (guided ? GUIDE_H : 0) + PIN_R / 2,
+  top: barH + PIN_R / 2,
+  bottom:
+    NAV_H + h * sheetFraction(detent, sheet) + (guided ? GUIDE_H : 0) + reservedBottom + PIN_R / 2,
   side: 30,
 });
 
@@ -238,6 +278,8 @@ export function RouteMap({
   onZoom,
   pan,
   onPan,
+  focusId = null,
+  reservedBottom = 0,
 }: Props) {
   /**
    * The view follows the listener, rather than fitting the whole journey.
@@ -276,9 +318,21 @@ export function RouteMap({
    * couple of steps either side of the mode's own framing; past that the corridor stops
    * making sense and the tiles run out.
    */
+  /**
+   * Which group of piled-up pins is currently fanned open, by the id of its first member.
+   *
+   * View state, so it lives here rather than in `App` with the rest: nothing above this
+   * component needs to know, and a group that is open is a thing about this map at this
+   * moment rather than a thing about the walk.
+   */
+  const [openCluster, setOpenCluster] = useState<string | null>(null);
+
   const setZoom = useCallback(
-    (next: number | ((z: number) => number)) =>
-      onZoom(clamp(typeof next === "function" ? next(zoom) : next)),
+    (next: number | ((z: number) => number)) => {
+      // A fan drawn around a point that has just moved three streets is worse than none.
+      setOpenCluster(null);
+      onZoom(clamp(typeof next === "function" ? next(zoom) : next));
+    },
     [onZoom, zoom],
   );
 
@@ -303,7 +357,23 @@ export function RouteMap({
     else if (pinch.current.size === 1) {
       dragFrom.current = { x: e.clientX, y: e.clientY, pan };
       dragged.current = false;
-      e.currentTarget.setPointerCapture(e.pointerId);
+      /*
+       * NO POINTER CAPTURE HERE. It used to be taken on every pointerdown, and that is
+       * why tapping a pin did nothing at all.
+       *
+       * While a pointer is captured, the `click` that follows is dispatched at the
+       * CAPTURING element rather than at what was under the finger. Instrumented in a
+       * browser: pointerdown landed on `circle.pin-body` inside the pin, and both
+       * pointerup and click were delivered to `svg.map`. So the pin's own onClick never
+       * ran, on any pin, ever — the most basic interaction on the map was dead, and it
+       * looked like a hit-target problem, which is what sent the last round after a 44px
+       * invisible circle that was already there and already working.
+       *
+       * Capture is only needed to keep receiving moves once a finger has slid off the
+       * element, which cannot happen before the drag has started. So it is taken at the
+       * moment the drag threshold is crossed, in `onPointerMove`, and a tap never
+       * involves capture at all.
+       */
     }
     // Double tap to step in, and to step back out once there is nowhere further in worth
     // going. One finger, which is the gesture somebody uses while holding a coffee.
@@ -339,7 +409,12 @@ export function RouteMap({
     const dx = e.clientX - d.x;
     const dy = e.clientY - d.y;
     if (!dragged.current && Math.hypot(dx, dy) < 6) return;
-    dragged.current = true;
+    if (!dragged.current) {
+      dragged.current = true;
+      // Now, and not before. See the note in `onPointerDown`.
+      e.currentTarget.setPointerCapture(e.pointerId);
+      setOpenCluster(null);
+    }
     onPan({ x: d.pan.x + dx, y: d.pan.y + dy });
   }, [setZoom, onPan]);
 
@@ -388,6 +463,39 @@ export function RouteMap({
     return () => observer.disconnect();
   }, []);
 
+  /**
+   * How much of the top the chrome is actually taking, measured rather than declared.
+   *
+   * See `MAPBAR_FALLBACK`. A constant that has to agree with a stylesheet is a constant
+   * that will disagree with it, and this one had drifted by 32 pixels — enough to hide a
+   * cluster of fifteen echoes behind a filter chip.
+   *
+   * It reaches out of the component for the element, which is not lovely, and the
+   * alternative is threading a measured height down from `App` purely so this can be
+   * told a fact it is standing next to. The bar is part of the same screen and its
+   * bottom edge is the map's top edge; that relationship is what is being measured.
+   */
+  const [barH, setBarH] = useState(MAPBAR_FALLBACK);
+  useEffect(() => {
+    const el = svg.current;
+    if (!el || typeof ResizeObserver === "undefined") return;
+    const bar = el.closest(".screen")?.querySelector(".mapbar");
+    if (!bar) return;
+    const measure = () => {
+      const b = bar.getBoundingClientRect();
+      const s = el.getBoundingClientRect();
+      if (b.height < 1) return;
+      // Plus six, so a pin rides just clear of the chips rather than touching them.
+      const next = Math.round(b.bottom - s.top + 6);
+      setBarH((cur) => (Math.abs(cur - next) < 1 ? cur : next));
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(bar);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   useEffect(() => {
     const el = svg.current;
     if (!el) return;
@@ -407,7 +515,7 @@ export function RouteMap({
   const geometry = useMemo(() => (route ? buildRouteGeometry(route) : null), [route]);
 
   const projection = useMemo(() => {
-    const INSET = insetFor(detent, presetFor(mode).selfDirected, box.h, sheet);
+    const INSET = insetFor(detent, presetFor(mode).selfDirected, box.h, sheet, barH, reservedBottom);
 
     // The band actually visible between the chips and the sheet. The listener belongs in
     // the middle of *that*, not the middle of a box that is half covered.
@@ -470,7 +578,7 @@ export function RouteMap({
      * The zoom comes from the fitted band; the grid covers the whole strip of map that is
      * actually on screen — from under the chips down to the top of the sheet.
      */
-    const bandTop = MAPBAR_H;
+    const bandTop = barH;
     const bandBottom = box.h - NAV_H - box.h * sheetFraction(detent, sheet);
     const plan = planTiles(
       centre,
@@ -494,7 +602,7 @@ export function RouteMap({
     // computed twice and drifting.
     project.plan = plan;
     return project;
-  }, [mode, geometry, library, at, overview, detent, sheet, zoom, box, pan]);
+  }, [mode, geometry, library, at, overview, detent, sheet, zoom, box, pan, barH, reservedBottom]);
 
   const path = useMemo(() => {
     if (!geometry) return "";
@@ -531,6 +639,80 @@ export function RouteMap({
     );
   }, [library, at, stateOf]);
 
+  /*
+   * And it closes the moment the map moves. A fan drawn around a point that has slid
+   * three streets away is worse than no fan, and "tap the backdrop" is not a thing
+   * anybody thinks to do while dragging.
+   */
+  /*
+   * It closes when the map moves UNDER A FINGER, not whenever `pan` changes.
+   *
+   * The obvious version was an effect on `[zoom, pan]`, and it made the stepper
+   * impossible: focusing an echo pans the map to it, the effect fired on the new pan, and
+   * the fan it had just opened shut in the same frame. So the two gesture handlers say so
+   * themselves, which is also more honest about what is being detected.
+   */
+  useEffect(() => setOpenCluster(null), [library]);
+
+  /**
+   * The pins, grouped by what landed on top of what.
+   *
+   * See `pin-clusters.ts` in the engine for why this is greedy rather than single link,
+   * and for the measurements that made it necessary. The grouping is in screen pixels, so
+   * it loosens by itself as somebody zooms in: two echoes a hundred metres apart are one
+   * dot at city scale and two pins in a street.
+   */
+  const groups = useMemo(
+    () =>
+      clusterPoints(
+        library.map((echo) => {
+          const { x, y } = projection(echo.point.at);
+          return { item: echo, x, y };
+        }),
+        GROUP_PX,
+      ),
+    [library, projection],
+  );
+
+  /**
+   * Bring the stepper's echo to the middle, and open its group if it is in one.
+   *
+   * The pan is worked out from where the echo IS on screen rather than from latitudes:
+   * `projection` already knows, `pan` is a straight pixel offset on the centre, so the
+   * move is the difference between where the thing is and where the middle of the visible
+   * band is. No second copy of the projection maths to fall out of step with the first.
+   *
+   * "The middle of the visible band" and not the middle of the screen. The chips cover
+   * the top and the sheet covers the bottom, and centring into a box that is half hidden
+   * puts the echo you just asked for behind the sheet — which `insetFor` exists to
+   * prevent and which every other part of this component already respects.
+   *
+   * And it opens the group, because a stepper that says "3 of 26" and then centres on a
+   * dot labelled 15 has answered a different question. Clustering and stepping only work
+   * together.
+   */
+  const lastFocus = useRef<string | null>(null);
+  useEffect(() => {
+    if (!focusId || focusId === lastFocus.current) {
+      lastFocus.current = focusId;
+      return;
+    }
+    lastFocus.current = focusId;
+    const echo = library.find((e) => e.id === focusId);
+    if (!echo) return;
+    const inset = insetFor(detent, presetFor(mode).selfDirected, box.h, sheet, barH, reservedBottom);
+    const wantX = inset.side + (box.w - inset.side * 2) / 2;
+    const wantY = inset.top + (box.h - inset.top - inset.bottom) / 2;
+    const now = projection(echo.point.at);
+    // A move of a couple of pixels is not a move, and calling onPan for it would churn
+    // the projection for nothing.
+    if (Math.hypot(wantX - now.x, wantY - now.y) > 2) {
+      onPan({ x: pan.x + (wantX - now.x), y: pan.y + (wantY - now.y) });
+    }
+    const group = groups.find((g) => g.members.some((m) => m.item.id === focusId));
+    setOpenCluster(group && group.members.length > 1 ? group.members[0]!.item.id : null);
+  }, [focusId, library, projection, groups, pan, onPan, detent, mode, box, sheet, barH, reservedBottom]);
+
   const openingById = new Map(opening.map((a) => [a.echo.id, a]));
   const here = at ? projection(at) : null;
   const standingAt = at;
@@ -555,14 +737,14 @@ export function RouteMap({
       const p = projection(echo.point.at);
       // On screen already: the pin speaks for itself.
       const onScreen =
-        p.x >= -PIN_R && p.x <= box.w + PIN_R && p.y >= MAPBAR_H && p.y <= box.h - NAV_H;
+        p.x >= -PIN_R && p.x <= box.w + PIN_R && p.y >= barH && p.y <= box.h - NAV_H;
       if (onScreen) continue;
       const rarity = rarityOf(echo);
       off.push({
         echo,
         km: distanceKm(at, echo.point.at),
         // Clamped into the band, so a marker rides the edge rather than leaving with it.
-        y: Math.max(MAPBAR_H + 40, Math.min(box.h - NAV_H - 80, p.y)),
+        y: Math.max(barH + 40, Math.min(box.h - NAV_H - 80, p.y)),
         rarity,
         // Which side it went out of. A marker on the right pointing at something behind
         // your left shoulder is worse than no marker.
@@ -608,7 +790,7 @@ export function RouteMap({
     const railBottom =
       box.h - (NAV_H + box.h * sheetFraction(detent, sheet) + GUIDE_H + 12);
     const railTop = railBottom - RAIL_H;
-    const floor = MAPBAR_H + 40;
+    const floor = barH + 40;
     let lastY = -Infinity;
     return shown.map((mark) => {
       let y = mark.y;
@@ -620,11 +802,184 @@ export function RouteMap({
       lastY = y;
       return { ...mark, y };
     });
-  }, [at, overview, library, stateOf, projection, box, zoom, detent, sheet]);
+  }, [at, overview, library, stateOf, projection, box, zoom, detent, sheet, barH]);
+
+  /**
+   * One pin, drawn wherever it has been put.
+   *
+   * Split out of the `library.map` it used to live inside, because a pin no longer
+   * necessarily sits at its own projected position: when a group is fanned open, its
+   * members are drawn out around the group's centre. Everything else about it is
+   * unchanged.
+   */
+  const renderPin = (echo: Echo, x: number, y: number) => {
+      const state = stateOf(echo.id);
+      const arriving = openingById.get(echo.id);
+      const selected = selectedId === echo.id;
+
+      // The trigger radius, drawn to scale. Seeing how big "here" actually is explains
+      // the whole mechanic faster than any label.
+      const radiusPx = radiusToPixels(echo, projection);
+
+      return (
+        <g
+          key={echo.id}
+          className={`pin pin-${state} cat-${echo.category}${selected ? " pin-selected" : ""}${
+            echo.id === focusId ? " pin-focus" : ""
+          }`}
+          transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`}
+          data-echo={echo.id}
+          onClick={() => onSelect(echo.id)}
+          role="button"
+          aria-label={echo.title}
+        >
+          {/*
+            Something to actually hit.
+            A `<g>` has no geometry of its own, so an SVG tap only lands if it hits a
+            child — and the only solid child here is a 13px circle. Tapping a pin
+            therefore worked when you were accurate to about six pixels and silently did
+            nothing otherwise, which is most taps on a pavement and, it turns out, every
+            synthetic one: the bounding box includes the ripple rings, so its centre is
+            not the pin. This is a 44px target, invisible, concentric with the pin.
+          */}
+          <circle className="pin-hit" r="22" />
+
+          {/* The bloom, on the one the arrows are on. */}
+          {echo.id === focusId && <circle className="pin-focus-ring" r="16" />}
+
+          {(state === "opening" || selected) && (
+            <circle className="pin-radius" r={Math.max(radiusPx, 10)} />
+          )}
+
+          {/*
+            The echo, echoing.
+            
+            This is the product's own metaphor and the map was not using it: pins sat
+            there as dots with a logo behind them, and the contour rings only moved during
+            the twelve seconds of a capture. An echo should be *calling* — rings going out
+            from it, over and over, the way a sound leaves a place.
+
+            Two things fall out of that, and both are meaning rather than decoration.
+            It only happens while the echo is sealed: the ripple is the unanswered call,
+            so finding one is what makes it go quiet, and a map of a finished walk is
+            still. And it quickens as you close, from four seconds a ring down to one and
+            a half, which is the same proximity model the haptic and the tone already
+            run on — three channels saying one thing rather than three.
+          */}
+          {state === "sealed" && calling.has(echo.id) && (
+            <g className="echo-ripples" style={{ animationDuration: `${ripplePeriod(standingAt, echo)}s` }}>
+              <g className="ripple-ring">
+                <use href="#wave" />
+              </g>
+              <g className="ripple-ring ripple-ring-2">
+                <use href="#wave" />
+              </g>
+              <g className="ripple-ring ripple-ring-3">
+                <use href="#wave" />
+              </g>
+            </g>
+          )}
+
+          {/* Rarity, in front of the ground and behind the pin. */}
+          {(state === "sealed" || state === "opening") &&
+            (() => {
+              const rarity = rarityOf(echo);
+              if (rarity !== "rare" && rarity !== "singular") return null;
+              return (
+                <circle
+                  className={`pin-halo pin-halo-${rarity}`}
+                  /*
+                    Board 2 draws the singular one's halo at 92 and lets it breathe. Mine
+                    was 52 and still, so the one echo the whole screen is built to point
+                    at was a slightly warmer dot. The rare one stays smaller on purpose:
+                    the gap between the two IS the ranking.
+                  */
+                  r={rarity === "singular" ? 92 : 46}
+                />
+              );
+            })()}
+
+          <Contours />
+
+          {/*
+            A ring in the category's colour with its glyph inside — the design's pin, not
+            a dot. At 26px a colour alone cannot carry nine categories: anybody who does
+            not already know the key is looking at coloured dots, and the icon is what
+            makes the colour mean something before it is tapped.
+          */}
+          {/*
+            THE TWO RARITIES ARE CREATURES; everything else is a ring with its glyph.
+
+            A face cannot carry a category — there is no drawing of a sphere that means
+            "food and drink" — so the glyph is doing a job the creature cannot take
+            over, and nine faces on one map is a crowd with no standout in it. The
+            creature is spent on exactly the pins the rest of this screen is built to
+            make you walk towards.
+
+            Its eyes are a pause button, which is the whole idea: a sealed echo is a
+            story that has been PAUSED at this corner, in some cases for a century.
+          */}
+          {(() => {
+            const face = characterFor(rarityOf(echo), state);
+            return face ? (
+              <EchoCharacter
+                face={face}
+                r={rarityOf(echo) === "singular" ? 15 : 13}
+                uid={echo.id}
+                /* It looks at you. The bearing is already computed for the walk. */
+                gazeDeg={standingAt ? gazeToward({ x, y }, projection(standingAt)) : 0}
+              />
+            ) : (
+              <>
+                <circle className="pin-body" r="13" />
+                <g className="pin-icon" transform="translate(-7 -7) scale(0.583)">
+                  {CATEGORY_ICON[echo.category]}
+                </g>
+              </>
+            );
+          })()}
+
+          {arriving && <ProgressRing progress={arriving.progress} />}
+
+          {/* The found marker sits on the rim, as it does in the design. */}
+          {(state === "captured" || state === "heard") && (
+            <circle className="pin-found" r="4" cx="9.5" cy="9.5" />
+          )}
+
+          {/*
+            WHAT IT IS WORTH, AND HOW FAR, under the pin.
+
+            Only on the rare and singular ones, and only while they are still sealed.
+            That restraint is the point rather than a saving: a label under every pin is
+            a map of labels, and the whole reason this line exists is to make two pins on
+            a screen of nine pull you towards them. Once an echo is yours it has nothing
+            left to advertise.
+
+            The board also put "4 people have stood here" here. That needs a backend
+            counting syncs across everybody, and there isn't one.
+          */}
+          {(state === "sealed" || state === "opening") &&
+            (() => {
+              const rarity = rarityOf(echo);
+              if (rarity !== "rare" && rarity !== "singular") return null;
+              const away = at ? distanceKm(at, echo.point.at) : null;
+              return (
+                <text className={`pin-tag pin-tag-${rarity}`} y="27" textAnchor="middle">
+                  {rarity === "singular" ? "Singular" : "Rare"}
+                  {away !== null && ` · ${coarse(away)}`}
+                </text>
+              );
+            })()}
+        </g>
+      );
+  };
 
   return (
     <svg
-      className="map"
+      /* `map-focusing` dims everything that is not the echo the arrows are on. The
+         bloom alone is not enough on a map of twenty six pins: it says "this one is
+         special" where the job is to say "this one, and you can ignore the rest". */
+      className={focusId ? "map map-focusing" : "map"}
       viewBox={`0 0 ${box.w} ${box.h}`}
       role="img"
       aria-label="Walking route"
@@ -804,7 +1159,7 @@ export function RouteMap({
         {/* Pins outside the map's own band used to draw straight over the route ribbon and
             the category chips, which float above it with no background of their own. The
             sheet covers the bottom edge already; this is the top. */}
-        <rect x="0" y={MAPBAR_H} width={box.w} height={box.h - MAPBAR_H} />
+        <rect x="0" y={barH} width={box.w} height={box.h - barH} />
       </clipPath>
       <g clipPath="url(#mapBand)">
       {/* No line when roaming. A route drawn through echoes somebody has not agreed to
@@ -833,162 +1188,98 @@ export function RouteMap({
         />
       )}
 
-      {library.map((echo) => {
-        const { x, y } = projection(echo.point.at);
-        const state = stateOf(echo.id);
-        const arriving = openingById.get(echo.id);
-        const selected = selectedId === echo.id;
+      {/*
+        PINS, GROUPED BY WHAT LANDED ON TOP OF WHAT.
 
-        // The trigger radius, drawn to scale. Seeing how big "here" actually is explains
-        // the whole mechanic faster than any label.
-        const radiusPx = radiusToPixels(echo, projection);
+        Measured on the Manhattan map: twenty six pins drawn, and fifteen of them within
+        one pixel of (317.7, 143.2). Seventeen of the twenty six had a nearest neighbour
+        at a distance of zero, and zooming in twice did not change that — coincident
+        points stay coincident however you scale them. Whatever was on top won every tap
+        and fourteen stories were unreachable.
 
+        So anything that lands within a thumb of a group's centre joins the group and the
+        group draws as one numbered dot. Tapping it fans the members out onto rings at
+        hittable spacing, with a line back to where they really are, and tapping the
+        backdrop or moving the map puts them away.
+      */}
+      {groups.map((group) => {
+        const first = group.members[0]!.item;
+        if (group.members.length === 1) return renderPin(first, group.x, group.y);
+        if (openCluster !== first.id) {
+          return (
+            <ClusterDot
+              key={first.id}
+              x={group.x}
+              y={group.y}
+              members={group.members.map((m) => m.item)}
+              onOpen={() => setOpenCluster(first.id)}
+            />
+          );
+        }
+        const spokes = fanOut(group.members.length, FAN_GAP);
+        /*
+         * Keep the fan on the glass. A group near an edge would otherwise throw half its
+         * members off the side, which is the bug it exists to fix, inside out. The whole
+         * ring is shifted rather than individual pins, so the spokes stay straight and
+         * the shape still reads as one group.
+         */
+        const reach = Math.max(...spokes.map((s) => Math.hypot(s.x, s.y))) + PIN_R;
+        const bandBottom = box.h - NAV_H - reservedBottom - box.h * sheetFraction(detent, sheet);
+        /*
+         * And clear of the control column, which is drawn over the map on the right.
+         *
+         * Rendered, three of the fifteen fanned pins came out behind the zoom buttons —
+         * separated from each other by a full thumb and then covered by something else,
+         * which is the same echo unreachable for a different reason. 58 is the column
+         * plus its margin. Ignored when the fan is too wide for what is left, because a
+         * fan pushed off the left edge is worse than one under the fabs.
+         */
+        const gutter = 58;
+        const right = box.w - reach - gutter;
+        const cx = right > reach ? Math.max(reach, Math.min(right, group.x)) : box.w / 2;
+        const cy = Math.max(barH + reach, Math.min(bandBottom - reach, group.y));
         return (
-          <g
-            key={echo.id}
-            className={`pin pin-${state} cat-${echo.category}${selected ? " pin-selected" : ""}`}
-            transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`}
-            onClick={() => onSelect(echo.id)}
-            role="button"
-            aria-label={echo.title}
-          >
-            {/*
-              Something to actually hit.
-              A `<g>` has no geometry of its own, so an SVG tap only lands if it hits a
-              child — and the only solid child here is a 13px circle. Tapping a pin
-              therefore worked when you were accurate to about six pixels and silently did
-              nothing otherwise, which is most taps on a pavement and, it turns out, every
-              synthetic one: the bounding box includes the ripple rings, so its centre is
-              not the pin. This is a 44px target, invisible, concentric with the pin.
-            */}
-            <circle className="pin-hit" r="22" />
-
-            {(state === "opening" || selected) && (
-              <circle className="pin-radius" r={Math.max(radiusPx, 10)} />
-            )}
-
-            {/*
-              The echo, echoing.
-              
-              This is the product's own metaphor and the map was not using it: pins sat
-              there as dots with a logo behind them, and the contour rings only moved during
-              the twelve seconds of a capture. An echo should be *calling* — rings going out
-              from it, over and over, the way a sound leaves a place.
-
-              Two things fall out of that, and both are meaning rather than decoration.
-              It only happens while the echo is sealed: the ripple is the unanswered call,
-              so finding one is what makes it go quiet, and a map of a finished walk is
-              still. And it quickens as you close, from four seconds a ring down to one and
-              a half, which is the same proximity model the haptic and the tone already
-              run on — three channels saying one thing rather than three.
-            */}
-            {state === "sealed" && calling.has(echo.id) && (
-              <g className="echo-ripples" style={{ animationDuration: `${ripplePeriod(standingAt, echo)}s` }}>
-                <g className="ripple-ring">
-                  <use href="#wave" />
-                </g>
-                <g className="ripple-ring ripple-ring-2">
-                  <use href="#wave" />
-                </g>
-                <g className="ripple-ring ripple-ring-3">
-                  <use href="#wave" />
-                </g>
+          <g key={first.id} className="fan">
+            {/* Under the fan and over everything else: anywhere else is a way out. */}
+            <rect
+              className="fan-backdrop"
+              x="0"
+              y={barH}
+              width={box.w}
+              height={box.h - barH}
+              onClick={() => setOpenCluster(null)}
+            />
+            {/* Where they actually are, and a line from it to each one. Without this the
+                fan is just pins in the wrong places. */}
+            <circle className="fan-anchor" cx={group.x} cy={group.y} r="4" />
+            {spokes.map((s, i) => (
+              <line
+                key={i}
+                className="fan-spoke"
+                x1={group.x}
+                y1={group.y}
+                x2={cx + s.x}
+                y2={cy + s.y}
+              />
+            ))}
+            {group.members.map((m, i) => (
+              <g
+                key={m.item.id}
+                className="fan-pop"
+                /* Staggered, so the ring opens rather than blinking on. Ten milliseconds
+                   apart: fifteen of them is a fifth of a second end to end. */
+                style={{ animationDelay: `${i * 0.01}s` }}
+                /* Bubbles up from the pin's own onClick, so picking one both selects it
+                   and puts the fan away. */
+                onClick={() => setOpenCluster(null)}
+              >
+                {renderPin(m.item, cx + (spokes[i]?.x ?? 0), cy + (spokes[i]?.y ?? 0))}
               </g>
-            )}
-
-            {/* Rarity, in front of the ground and behind the pin. */}
-            {(state === "sealed" || state === "opening") &&
-              (() => {
-                const rarity = rarityOf(echo);
-                if (rarity !== "rare" && rarity !== "singular") return null;
-                return (
-                  <circle
-                    className={`pin-halo pin-halo-${rarity}`}
-                    /*
-                      Board 2 draws the singular one's halo at 92 and lets it breathe. Mine
-                      was 52 and still, so the one echo the whole screen is built to point
-                      at was a slightly warmer dot. The rare one stays smaller on purpose:
-                      the gap between the two IS the ranking.
-                    */
-                    r={rarity === "singular" ? 92 : 46}
-                  />
-                );
-              })()}
-
-            <Contours />
-
-            {/*
-              A ring in the category's colour with its glyph inside — the design's pin, not
-              a dot. At 26px a colour alone cannot carry nine categories: anybody who does
-              not already know the key is looking at coloured dots, and the icon is what
-              makes the colour mean something before it is tapped.
-            */}
-            {/*
-              THE TWO RARITIES ARE CREATURES; everything else is a ring with its glyph.
-
-              A face cannot carry a category — there is no drawing of a sphere that means
-              "food and drink" — so the glyph is doing a job the creature cannot take
-              over, and nine faces on one map is a crowd with no standout in it. The
-              creature is spent on exactly the pins the rest of this screen is built to
-              make you walk towards.
-
-              Its eyes are a pause button, which is the whole idea: a sealed echo is a
-              story that has been PAUSED at this corner, in some cases for a century.
-            */}
-            {(() => {
-              const face = characterFor(rarityOf(echo), state);
-              return face ? (
-                <EchoCharacter
-                  face={face}
-                  r={rarityOf(echo) === "singular" ? 15 : 13}
-                  uid={echo.id}
-                  /* It looks at you. The bearing is already computed for the walk. */
-                  gazeDeg={standingAt ? gazeToward({ x, y }, projection(standingAt)) : 0}
-                />
-              ) : (
-                <>
-                  <circle className="pin-body" r="13" />
-                  <g className="pin-icon" transform="translate(-7 -7) scale(0.583)">
-                    {CATEGORY_ICON[echo.category]}
-                  </g>
-                </>
-              );
-            })()}
-
-            {arriving && <ProgressRing progress={arriving.progress} />}
-
-            {/* The found marker sits on the rim, as it does in the design. */}
-            {(state === "captured" || state === "heard") && (
-              <circle className="pin-found" r="4" cx="9.5" cy="9.5" />
-            )}
-
-            {/*
-              WHAT IT IS WORTH, AND HOW FAR, under the pin.
-
-              Only on the rare and singular ones, and only while they are still sealed.
-              That restraint is the point rather than a saving: a label under every pin is
-              a map of labels, and the whole reason this line exists is to make two pins on
-              a screen of nine pull you towards them. Once an echo is yours it has nothing
-              left to advertise.
-
-              The board also put "4 people have stood here" here. That needs a backend
-              counting syncs across everybody, and there isn't one.
-            */}
-            {(state === "sealed" || state === "opening") &&
-              (() => {
-                const rarity = rarityOf(echo);
-                if (rarity !== "rare" && rarity !== "singular") return null;
-                const away = at ? distanceKm(at, echo.point.at) : null;
-                return (
-                  <text className={`pin-tag pin-tag-${rarity}`} y="27" textAnchor="middle">
-                    {rarity === "singular" ? "Singular" : "Rare"}
-                    {away !== null && ` · ${coarse(away)}`}
-                  </text>
-                );
-              })()}
+            ))}
           </g>
         );
       })}
+
 
       </g>
       {/*
@@ -1006,7 +1297,7 @@ export function RouteMap({
       <text
         className="map-credit"
         x={10}
-        y={box.h - insetFor(detent, presetFor(mode).selfDirected, box.h, sheet).bottom + 2}
+        y={box.h - insetFor(detent, presetFor(mode).selfDirected, box.h, sheet, barH, reservedBottom).bottom + 2}
         textAnchor="start"
       >
         {TILE_ATTRIBUTION}
@@ -1025,7 +1316,7 @@ export function RouteMap({
 
         `pointer-events: none` in CSS, or it would eat every tap meant for a pin under it.
       */}
-      <rect className="map-vignette" x="0" y={MAPBAR_H} width={box.w} height={box.h - MAPBAR_H} />
+      <rect className="map-vignette" x="0" y={barH} width={box.w} height={box.h - barH} />
 
       {/*
         The best thing you cannot see, riding the right edge. Tapping it selects the echo,

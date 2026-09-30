@@ -1446,11 +1446,118 @@ body {
 /* The guidance bar has nowhere to be once the sheet fills the screen, and drawing it over
    the player is how it ended up on top of the plain-language switch. */
 .screen:has(.sheet-full) .proximity, .screen:has(.sheet-playing.sheet-half) .proximity { display: none; }
-.proximity { bottom: calc(var(--nav-h) + var(--sheet-h) + 10px); }
+/*
+ * And the control column goes with it, for the same reason and with better evidence.
+ *
+ * At those two detents the band left between the chips and the sheet is 63px on a tall
+ * phone and negative on a short one, against a column that is 350 tall. It has never
+ * fitted: measured by the audit at 375x667, every one of the five fabs was 94 pixels off
+ * the TOP of the screen at the full detent — drawn over the journey chip or past it.
+ *
+ * The note on `.sheet-playing.sheet-half` says 56dvh was chosen to leave the column room,
+ * and the arithmetic says it does not. Hiding it is the honest version of what was
+ * already happening, and the sheet is one drag from being out of the way.
+ */
+.screen:has(.sheet-full) .rail, .screen:has(.sheet-playing.sheet-half) .rail { display: none; }
+/*
+ * THE STEPPER, and the bottom stack it joins.
+ *
+ * It sits directly above the sheet, at the bottom of the screen where a thumb already
+ * is — the whole argument for it over a pin is that neither arrow ever moves and neither
+ * one has to be aimed at. Everything else in the stack is pushed up by its height, using
+ * the same `:has()` idiom the sheet's own detents already use, so nothing has to be told
+ * twice that the stepper is there.
+ */
+.screen:has(.stepper) { --step-h: 104px; }
+.stepper {
+  position: absolute; left: 0; right: 0; z-index: 24;
+  bottom: calc(var(--nav-h) + var(--sheet-h) + 8px);
+  padding: 0 14px;
+  transition: bottom 0.34s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.stepper-row { display: flex; align-items: stretch; gap: 8px; }
+/*
+ * 54, which is over the 44 Apple asks for rather than exactly at it. These are the two
+ * targets the whole feature exists to provide and they are pressed while walking; the
+ * legal floor is the wrong place to land when the control's entire job is being easy to
+ * hit without looking.
+ */
+.stepper-arrow {
+  width: 54px; flex: none; border-radius: 16px; cursor: pointer;
+  display: grid; place-items: center; color: var(--text);
+  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+.stepper-arrow svg {
+  width: 20px; height: 20px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.stepper-arrow:active { background: rgba(var(--rgb-panel), 1); }
+.stepper-card {
+  flex: 1; min-width: 0; text-align: left; cursor: pointer;
+  display: flex; flex-direction: column; gap: 4px;
+  padding: 11px 14px; border-radius: 16px; font: inherit;
+  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+.stepper-kicker {
+  /* 11, not 10.5. Apple's floor is 11pt and on a 390pt phone that is 11px; the audit
+     caught the half pixel, and this app is read outdoors at arm's length, which argues
+     for the high side of any guideline rather than the low. */
+  display: flex; gap: 8px; font-size: 11px; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+}
+/* The one warm thing on the card, because rarity is the echo rather than the control. */
+.stepper-kicker b { color: var(--ember-core); font-weight: 500; }
+/*
+ * Two lines, then an ellipsis. A title that wraps to four lines changes the height of the
+ * card every time the arrow is pressed, and a control that moves under your thumb between
+ * presses is the one thing this is supposed to fix.
+ */
+.stepper-title {
+  font-size: 15px; font-weight: 500; line-height: 1.26; color: var(--white);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.stepper-where {
+  font-size: 12px; color: var(--muted);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+/*
+ * THE ONE THE ARROWS ARE ON.
+ *
+ * A bloom on it and everything else banked down. The dim is doing the harder half of the
+ * work: on a map of twenty six pins a highlight says "this one is special", and what the
+ * stepper needs to say is "this one, and you can ignore the rest until you press again".
+ */
+.map-focusing .pin:not(.pin-focus), .map-focusing .clus { opacity: 0.32; }
+.map-focusing .pin, .map-focusing .clus { transition: opacity 0.26s linear; }
+.pin-focus .pin-hit ~ * { filter: drop-shadow(0 0 10px rgba(0, 255, 231, 0.55)); }
+.pin-focus::after { content: none; }
+/* A ring that arrives with it, so the eye is told where to look rather than left to
+   find the one thing that did not fade. */
+@keyframes focusBloom {
+  from { r: 16; opacity: 0.9; }
+  to { r: 40; opacity: 0; }
+}
+.pin-focus-ring {
+  fill: none; stroke: var(--aqua); stroke-width: 2; pointer-events: none;
+  animation: focusBloom 1.1s cubic-bezier(0.32, 0.72, 0, 1) infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pin-focus-ring { animation: none; r: 26px; opacity: 0.55; }
+}
+
+.stepper-count {
+  margin: 7px 0 0; text-align: center; font-size: 11px;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+}
+
+.proximity { bottom: calc(var(--nav-h) + var(--sheet-h) + var(--step-h, 0px) + 10px); }
 /* Above the guidance bar when there is one; the guidance bar's own slot when there is not,
    which is every carried mode. */
-.playing { bottom: calc(var(--nav-h) + var(--sheet-h) + 64px); }
-.stack-noguide .playing { bottom: calc(var(--nav-h) + var(--sheet-h) + 10px); }
+.playing { bottom: calc(var(--nav-h) + var(--sheet-h) + var(--step-h, 0px) + 64px); }
+.stack-noguide .playing { bottom: calc(var(--nav-h) + var(--sheet-h) + var(--step-h, 0px) + 10px); }
 
 /* ── full-screen panels ──────────────────────────────────── */
 .screen-body {
@@ -1988,10 +2095,66 @@ body {
    detents are fixed; ours are not, so it is derived from the same variables
    the sheet and the guidance bar use. Same intent, one number instead of
    three. */
+/*
+ * How tall the column is, and how much of the top the chrome takes.
+ *
+ * Both are here so the clamp below can be written, and both track the components rather
+ * than the design: measured on a real render, the column is 350 tall and the journey chip
+ * plus the category chips come to 151.
+ */
+/* How much of the top the chrome takes, measured on a real render: the journey
+   chip plus the category chips come to 151, and the column wants to clear them. */
+.screen { --mapbar-h: 157px; }
 .rail {
   position: absolute; right: 14px; z-index: 26;
-  bottom: calc(var(--nav-h) + var(--sheet-h) + var(--guide-h, 56px) + var(--now-h, 0px) + 12px);
-  display: flex; flex-direction: column; gap: 8px;
+  /*
+   * Bottom anchored, AND CLAMPED INTO THE MAP BAND.
+   *
+   * The stack it sits on top of keeps growing — sheet, guidance bar, now playing, and now
+   * the stepper — and on a tall phone that is fine. On a 375x667 iPhone SE, adding the
+   * stepper's 104 pushed the column's top to y=71, which is above the category chips: the
+   * zoom buttons were drawn over the filter row and the top fab over the journey chip's
+   * own Change button. Rendered, immediately, the first time it was looked at on a short
+   * screen. The audit already had the other half of this — at the full sheet detent the
+   * same column goes off the BOTTOM — so it is a column that has never been told it has
+   * to fit anywhere.
+   *
+   * `min` keeps it below the chrome, `max` keeps it above the tab bar, and between them
+   * it behaves exactly as before on any screen tall enough to hold it.
+   */
+  bottom: calc(var(--nav-h) + var(--sheet-h) + var(--step-h, 0px) + var(--guide-h, 56px) + var(--now-h, 0px) + 12px);
+  /*
+   * IT WRAPS RATHER THAN OVERFLOWING, and that is the only thing that actually works.
+   *
+   * The stack under this column keeps growing — sheet, guidance bar, now playing, and
+   * now the stepper — and on a 375x667 iPhone SE the sum stopped fitting. Pushing the
+   * column up put its top at y=71, over the category chips and the journey chip's Change
+   * button. Clamping it below the chrome instead pushed its bottom down into the
+   * stepper's right arrow. Both were rendered and both were wrong, because at 350 tall
+   * plus 157 of chrome plus 74 of tab bar plus 104 of stepper the column is asking for
+   * 685 pixels of a 667 pixel phone. There is no offset that fixes that.
+   *
+   * So it is allowed to become two columns. `wrap-reverse` grows leftwards, away from
+   * the edge it is anchored to, and `align-content: flex-end` keeps the full column on
+   * the right where the thumb is. On any screen tall enough it stays one column and
+   * nothing changes.
+   *
+   * The audit's other complaint about this column — at the full sheet detent every fab
+   * is off the bottom — is the same arithmetic and the same fix.
+   */
+  max-height: max(
+    /* Never collapses to nothing, whatever the sum says. */
+    88px,
+    calc(
+      100% - var(--mapbar-h) - var(--nav-h) - var(--sheet-h) - var(--step-h, 0px) -
+        var(--guide-h, 56px) - var(--now-h, 0px) - 24px
+    )
+  );
+  display: flex; flex-direction: column; flex-wrap: wrap-reverse;
+  /* Each column ends at the bottom, so a wrapped second column sits level with the
+     first rather than starting at the top with a gap under it. No effect at all while
+     the column fits, because then the box is only as tall as its contents. */
+  align-content: flex-end; justify-content: flex-end; gap: 8px;
   transition: bottom 0.34s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.2s linear;
 }
 .fab {
@@ -2460,6 +2623,67 @@ body {
    has no geometry, so without this the hit area is the 13px body circle. */
 .pin-hit { fill: transparent; }
 
+/*
+ * A PILE OF PINS, AS ONE THING YOU CAN TAP.
+ *
+ * Measured before this existed: twenty six pins on the Manhattan map with fifteen of them
+ * within one pixel of each other, and seventeen of the twenty six with a nearest
+ * neighbour at a distance of zero. Whatever was last in the DOM won every tap.
+ *
+ * The dot is not anonymous. It takes its category colour from the best echo in the pile
+ * through `cat-*`, and keeps that echo's rarity halo, so the one singular story in a
+ * stack of fifteen still pulls the eye the way the rest of the map is built to make it.
+ */
+.clus { cursor: pointer; }
+/* Two rings a few pixels apart: a stack of cards rather than a bubble, which says "more
+   than one" before the number is read. */
+.clus-back {
+  fill: var(--space); stroke: currentColor; stroke-width: 1.6; opacity: 0.45;
+}
+.clus-body {
+  fill: var(--space); stroke: currentColor; stroke-width: 2.4;
+}
+.clus-n {
+  fill: var(--white); font-family: "Space Grotesk", ui-monospace, monospace;
+  font-weight: 500; paint-order: stroke; pointer-events: none;
+}
+/* The two rarities keep their warmth here too, so a pile containing the good one does not
+   read as a pile of nothing. */
+.clus-singular .clus-body, .clus-rare .clus-body { stroke: var(--ember); }
+.clus-singular .clus-n, .clus-rare .clus-n { fill: var(--ember-core); }
+
+/*
+ * FANNED OPEN. The members pushed out onto rings at a full 44 apart, each with a line
+ * back to where it really is — without the lines this is just pins in the wrong places.
+ */
+.fan-backdrop { fill: rgba(5, 7, 15, 0.5); cursor: pointer; }
+.fan-spoke {
+  stroke: rgba(255, 255, 255, 0.28); stroke-width: 1.2; stroke-dasharray: 2 3;
+  pointer-events: none;
+}
+.fan-anchor { fill: rgba(255, 255, 255, 0.5); pointer-events: none; }
+/*
+ * They arrive rather than appear, and the animation goes on a WRAPPER rather than on the
+ * pin.
+ *
+ * Put on `.fan .pin` directly, the `transform: none` at the end of the keyframe overrides
+ * the pin's own `transform="translate(x y)"` attribute — CSS transform beats the SVG
+ * presentation attribute — so every one of the fifteen snapped to the origin of the map
+ * the instant the animation finished. Measured: closest pair zero, which is the exact
+ * defect this feature exists to fix, reintroduced by its own transition.
+ */
+@keyframes fanIn {
+  from { opacity: 0; transform: scale(0.55); }
+  to { opacity: 1; transform: scale(1); }
+}
+.fan-pop {
+  transform-box: fill-box; transform-origin: center;
+  animation: fanIn 0.2s cubic-bezier(0.32, 0.72, 0, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fan-pop { animation: none; }
+}
+
 /* The control column stands down while an echo is open.
    The popup spans the width and sat straight over the rail's lower buttons, so they were
    on screen, lit, and unreachable. This is the same move the sheet already makes as it
@@ -2797,32 +3021,36 @@ body {
 /*
  * THE CREATURE.
  *
- * Its eyes are a pause button and its play state is the same two shapes swung together,
- * so the transition between any two faces is a path tween rather than a swap. That is the
- * whole point: a cross-fade between a face and an icon reads as a control changing state,
- * and a morph reads as something alive deciding to speak.
+ * THE SHAPE OF THE EYES IS NOT ANIMATED FROM HERE ANY MORE. It used to be
+ * `transition: d`, which is a Chromium-only CSS property: it genuinely works in Chrome,
+ * which is why every render taken here showed it working, and it is a coin toss on the
+ * browser this app is mostly opened in. Echo.tsx now tweens the path points in
+ * JavaScript, which runs everywhere and can be sampled by a test. See the long note at
+ * the top of that file.
  *
- * 320ms, and the easing overshoots slightly so the triangle LANDS rather than arrives.
+ * What is left here is the slow stuff: the colour settling between states, and the
+ * satellites drifting. Both are decoration and both belong in a stylesheet.
  */
-.echo-char-eyes path {
-  fill: #FFF9E8;
-  transition: d 0.32s cubic-bezier(0.34, 1.32, 0.64, 1);
+.echo-char-body, .echo-char-rim, .echo-char-glow, .echo-char-speck {
+  transition: fill 0.34s linear, stroke 0.34s linear, opacity 0.34s linear;
 }
-.echo-char-eyes { transition: transform 0.5s cubic-bezier(0.32, 0.72, 0, 1); }
-.echo-char-body { transition: fill 0.32s linear; }
-.echo-char-shine { fill: #ffffff; opacity: 0.45; pointer-events: none; }
-/* Sealed is a story paused in the dark: the light is nearly out and the eyes with it. */
-.echo-char-sealed .echo-char-eyes path { fill: #FFD77A; opacity: 0.5; }
-.echo-char-sealed .echo-char-shine { opacity: 0.16; }
-.echo-char-heard .echo-char-eyes path { fill: none; stroke: #FFD77A; stroke-width: 7; stroke-linecap: round; opacity: 0.7; }
-.echo-char-heard .echo-char-shine { opacity: 0.18; }
+.echo-char-shine { fill: #fffdf4; opacity: 0.9; pointer-events: none; }
+.echo-char-shine-2 { opacity: 0.7; }
 /*
- * `d` is only animatable where the browser supports interpolating path data. Everywhere
- * else the shape snaps, which is a worse version of the same thing rather than a broken
- * one: the states are still correct and still legible, they just change in one frame.
+ * The satellites drift, very slightly and out of phase with each other.
+ *
+ * Two pixels over six seconds. Enough that the thing looks alive when you stop and look
+ * at it, small enough that it never competes with the singular pin's own pulse — which
+ * is the one piece of motion on the map that is allowed to mean something.
  */
+@keyframes echoSatDrift {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(0.8%, -1.4%); }
+}
+.echo-char-sat { animation: echoSatDrift 6s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) {
-  .echo-char-eyes path, .echo-char-eyes, .echo-char-body { transition: none; }
+  .echo-char-sat { animation: none; }
+  .echo-char-body, .echo-char-rim, .echo-char-glow, .echo-char-speck { transition: none; }
 }
 
 .pin-halo { pointer-events: none; }
@@ -3267,18 +3495,35 @@ body {
 }
 
 /* ── Hearing it ─────────────────────────────────────────────────────────────────
-   The ribbon is warm because it IS the echo. Every control on this screen is cool
-   because you operate it. The design board drew the pause button ember, which puts
-   the loudest warm object on the screen on the one thing that is not an echo. */
+   The ribbon carries the brand gradient because it is the SCRUBBER — the thing you
+   put a thumb on — and the law in design/brand/README.md puts everything you operate
+   in aqua. The ember moves to the playhead, which is the one object here that is
+   genuinely the echo rather than a control: where the voice has got to. See the
+   COLOUR note at the top of Ribbon.tsx.
+
+   NOTHING ON THIS SCREEN IS A FIXED NUMBER OF PIXELS FROM THE TOP ANY MORE.
+
+   The plate was `height: 300px` and the title `margin-top: 312px`, which is exactly
+   right on the 844px frame this app is always rendered in and off the bottom of the
+   screen on a 667px phone. Measured on an iPhone SE: the whole transport sat under
+   the tab bar and "Read it" and "Keep" were below the glass. That is the "the play
+   controls are cut off" report, and it survived because every render ever taken of
+   this screen was 390x844.
+
+   So the plate is a share of the viewport with a floor and a ceiling, and everything
+   below it is measured from the plate rather than from a number. The floor is what
+   an archive photograph still reads as; the ceiling is the board's 300. */
 .hear {
   position: absolute; inset: 0; z-index: 40;
+  /* The one number the rest of the screen is built from. */
+  --plate-h: clamp(150px, 26dvh, 300px);
   background: linear-gradient(#101534 0%, #100e0a 42%, #07080c 100%);
   display: flex; flex-direction: column;
   padding-bottom: calc(var(--nav-h) + 6px);
   overflow: hidden;
 }
 
-.hear-plate { position: absolute; left: 0; right: 0; top: 0; height: 300px; overflow: hidden; }
+.hear-plate { position: absolute; left: 0; right: 0; top: 0; height: var(--plate-h); overflow: hidden; }
 .hear-plate img { width: 100%; height: 100%; object-fit: cover; display: block; }
 /* No plate cleared for this one. A warm field rather than a fake window: a fabricated
    provenance sitting in a repository is the kind of thing that later gets believed. */
@@ -3311,7 +3556,7 @@ body {
   stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
 }
 
-.hear-say { position: relative; margin-top: 312px; padding: 0 18px; flex: none; }
+.hear-say { position: relative; margin-top: calc(var(--plate-h) + 12px); padding: 0 18px; flex: none; }
 .hear-kicker {
   display: flex; align-items: center; gap: 10px; margin: 0;
   font-size: 11px; font-weight: 500; letter-spacing: 0.12em;
@@ -3330,7 +3575,9 @@ body {
 .hear-hit {
   display: block; padding: 10px 0; cursor: pointer; touch-action: none;
 }
-.hear-wave { display: block; width: 100%; height: 130px; }
+/* Scales with the screen for the same reason the plate does. 96px is where the four
+   ribbons still read as four rather than as one band; 130 is the board's. */
+.hear-wave { display: block; width: 100%; height: clamp(96px, 16dvh, 130px); }
 /*
  * The ribbons ADD where they overlap, which is the whole reason this reads as light
  * rather than as a shape. Four warm fills laid over each other with `screen` give a hot
@@ -3353,35 +3600,102 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .hear-flow { animation: none; }
 }
-.hear-head { stroke: var(--aqua); stroke-width: 2; stroke-linecap: round; }
-.hear-head-dot { fill: var(--aqua); }
+/*
+ * THE PLAYHEAD IS THE EMBER. It used to be aqua, which was correct while the ribbon was
+ * warm and became invisible the moment the ribbon took the aqua. Ember is the complement
+ * of cyan, so it is the one colour that cannot be lost in this gradient — and it is the
+ * honest one: the position of the voice is the echo, and everything around it is a
+ * control. The glow is doing legibility work, not decoration: a 2px line over a blurred
+ * light source needs its own edge.
+ */
+.hear-head {
+  stroke: var(--ember-core); stroke-width: 2.4; stroke-linecap: round;
+  filter: drop-shadow(0 0 5px var(--ember));
+}
+.hear-head-dot { fill: var(--ember-core); filter: drop-shadow(0 0 7px var(--ember)); }
 .hear-clock {
   display: flex; justify-content: space-between; margin: 2px 0 0; padding: 0 18px;
   font-size: 12px; color: var(--muted);
 }
 
+/*
+ * The two settings. Quiet on purpose: these are set once and the transport under them is
+ * touched every thirty seconds, so they must not read as equals of it.
+ */
+.hear-set {
+  flex: none; display: flex; justify-content: center; gap: 8px;
+  padding: 6px 18px 0;
+}
+.hear-chip {
+  position: relative; display: inline-flex; align-items: center; gap: 6px;
+  min-height: 34px; padding: 0 13px; border-radius: 99px; cursor: pointer;
+  font: inherit; font-size: 13px; color: var(--muted);
+  background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.13);
+}
+.hear-chip svg {
+  width: 14px; height: 14px; fill: none; stroke: currentColor;
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.hear-chip.on { color: var(--aqua); border-color: rgba(0, 255, 231, 0.4); }
+/* Dimmed rather than hidden: the gap is in the library, not in the app, and a control
+   that vanishes on some echoes is a control nobody trusts. `aria-label` says why. */
+.hear-chip:disabled { opacity: 0.4; cursor: default; }
+/*
+ * THE TARGET IS BIGGER THAN THE CHIP. 34px is the height the row wants and 44 is the
+ * height a thumb wants (Apple HIG, WCAG 2.5.8), so the difference goes on as an
+ * invisible pseudo-element rather than as padding that would push the transport down.
+ */
+.hear-chip::after {
+  content: ""; position: absolute; inset: -5px -4px;
+}
+
+/*
+ * Five buttons wide now: restart, back fifteen, play, forward fifteen, next echo.
+ *
+ * The gap was 26px, which fits three and overflows five at 375px. `space-between` inside
+ * a padded row instead, so the outer two sit under the thumbs rather than crowding the
+ * middle, and the spacing solves itself at every width.
+ */
 .hear-transport {
-  flex: none; display: flex; align-items: center; justify-content: center; gap: 26px;
-  margin-top: 8px;
+  flex: none; display: flex; align-items: center; justify-content: space-between;
+  gap: 4px; margin-top: 6px; padding: 0 16px;
 }
 .hear-transport button {
   width: 48px; height: 48px; border-radius: 50%; border: 0; cursor: pointer;
   background: none; color: var(--text); display: grid; place-items: center;
+  flex: none;
 }
 .hear-transport button svg {
   width: 23px; height: 23px; fill: none; stroke: currentColor;
-  stroke-width: 1.7; stroke-linecap: round;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
+/* The wedge in the skip glyphs is a solid, the bar beside it is a stroke. One icon, two
+   treatments, because an outlined triangle at 23px closes up into a grey blob. */
+.hear-transport button svg .hear-solid { fill: currentColor; stroke: none; }
+/* Restart and next are secondary to the three in the middle, and saying so with weight
+   costs nothing and stops a five-button row reading as five equal choices. */
+.hear-transport button:first-child, .hear-transport button:last-child { color: var(--muted); }
 .hear-go {
   width: 72px !important; height: 72px !important;
   background: var(--btn-dark) !important;
-  color: var(--btn-dark-ink) !important; box-shadow: 0 0 40px rgba(0, 255, 231, 0.3);
+  color: var(--btn-dark-ink) !important;
+  /*
+     The glow was 40px of aqua, which made this the brightest object on the screen. That
+     was right when everything else was warm; with the ribbon now carrying the aqua it
+     read as a second light source competing with the story. Halved, and the disc still
+     wins on size, which is the right way for a play button to win.
+  */
+  box-shadow: 0 0 20px rgba(0, 255, 231, 0.22);
 }
 .hear-go svg { width: 24px !important; height: 24px !important; fill: currentColor !important; stroke: none !important; }
 
-.hear-acts { flex: none; display: flex; gap: 9px; padding: 16px 18px 0; }
+.hear-acts { flex: none; display: flex; gap: 8px; padding: 12px 18px 0; }
+/* Three across now rather than two, so they have to be able to shrink: `flex: 1 1 0`
+   with `min-width: 0`, not `flex-grow` alone, which keeps each button at least as wide
+   as its own label and pushes the last one off a 375px screen. */
 .hear-acts button {
-  flex-grow: 1; display: flex; align-items: center; justify-content: center; gap: 7px;
+  flex: 1 1 0; min-width: 0; white-space: nowrap;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
   min-height: 44px; border-radius: 13px; cursor: pointer; font: inherit; font-size: 14px;
   color: var(--text); background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.14);
@@ -3429,6 +3743,17 @@ body {
   */
   mask-image: linear-gradient(to bottom, transparent 0, #000 96px, #000 calc(100% - 26px), transparent 100%);
 }
+/*
+ * And it moves down again when the controls grow.
+ *
+ * 268px was measured against a three-button transport and a two-button actions row. The
+ * settings row and the two extra transport buttons added about 46px, so the number is now
+ * written as what it actually is — the tab bar plus everything stacked on top of it —
+ * rather than as a constant that silently goes wrong the next time a control is added.
+ *
+ *   nav 74 + pad 6 + acts (12 + 44) + transport (6 + 72) + settings (6 + 34) + clock 18
+ */
+.hear-read { bottom: calc(var(--nav-h) + 204px); }
 /* Above the transcript, so the way out of the screen does not disappear behind the words. */
 .hear-back { z-index: 3; }
 
