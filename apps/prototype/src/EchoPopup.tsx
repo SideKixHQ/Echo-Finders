@@ -45,6 +45,13 @@ export interface EchoPopupProps {
   readonly onAim?: (echo: Echo) => void;
   readonly onSave: (echo: Echo) => void;
   readonly onPlay: (echo: Echo) => void;
+  /**
+   * Raise the phone and stand where the photograph was taken.
+   *
+   * Absent on a journey that carries you — there is no then and now from 35,000 feet — and
+   * silently ignored on an echo with no plate, which is most of them today (ADR-0006).
+   */
+  readonly onCamera?: (echo: Echo) => void;
   readonly onClose: () => void;
 }
 
@@ -90,6 +97,7 @@ export function EchoPopup({
   onAim,
   onSave,
   onPlay,
+  onCamera,
   onClose,
 }: EchoPopupProps) {
   const metres = distanceKm === null ? null : distanceKm * 1000;
@@ -125,14 +133,42 @@ export function EchoPopup({
         them today. A card with a grey rectangle saying "no image" is a worse card than one
         that never mentioned a picture.
       */}
-      {photo && (
-        <div className="pop-plate">
-          <img src={platePng(photo.imageKey, "then")} alt="" draggable={false} />
-          <span className="mono">
-            {photo.year ? `Photographed here, ${photo.year}` : "Photographed here"}
-          </span>
-        </div>
-      )}
+      {photo &&
+        /*
+          THE PLATE IS THE CAMERA BUTTON, when there is a camera to open.
+
+          This used to be a picture, and the way to the viewfinder was a separate strip
+          inside the bottom sheet — a sepia thumbnail with "Then & now" next to it, which
+          said the same thing twice a screen apart. With the sheet gone the strip had
+          nowhere to live, and the honest place for it was always here: the card is already
+          showing the photograph, so the offer to go and stand where it was taken belongs
+          on the photograph rather than in a fifth grey button underneath.
+
+          Still a plain picture where there is no camera. A thing that looks pressable and
+          is not is worse than a thing that never claimed to be.
+        */
+        (onCamera ? (
+          <button className="pop-plate pop-plate-tap" onClick={() => onCamera(echo)}>
+            <img src={platePng(photo.imageKey, "then")} alt="" draggable={false} />
+            <span className="mono">
+              {photo.year ? `Photographed here, ${photo.year}` : "Photographed here"}
+            </span>
+            <span className="pop-plate-cam" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 8h3l1.6-2.2h6.8L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                <circle cx="12" cy="13.5" r="3.4" />
+              </svg>
+              Then &amp; now
+            </span>
+          </button>
+        ) : (
+          <div className="pop-plate">
+            <img src={platePng(photo.imageKey, "then")} alt="" draggable={false} />
+            <span className="mono">
+              {photo.year ? `Photographed here, ${photo.year}` : "Photographed here"}
+            </span>
+          </div>
+        ))}
 
       <h3>{echo.title}</h3>
 

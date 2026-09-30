@@ -107,7 +107,6 @@
    * moves the guidance bar and the player with it.
    */
   --nav-h: 74px;
-  --sheet-h: 400px;
 }
 
 /**
@@ -351,20 +350,8 @@ body {
    reading it, and the entire point of the hot-and-cold guidance is that it works with the
    phone in a pocket. It says the same two things at a size that matches how much they
    matter. */
-.proximity {
-  position: absolute; left: 50%; transform: translateX(-50%); z-index: 25;
-  bottom: 306px; max-width: calc(100% - 28px);
-  height: 34px; border-radius: 99px; overflow: hidden;
-  background: rgba(var(--rgb-panel), 0.92); border: 1px solid var(--line);
-  display: flex; align-items: center; padding: 0 14px;
-  transition: opacity 0.25s var(--ease);
-}
-.proximity-idle { opacity: 0; }
 
-.proximity-pulse {
-  position: absolute; inset: 0; pointer-events: none;
-  animation-name: pulse; animation-iteration-count: infinite; animation-timing-function: ease-out;
-}
+
 @keyframes pulse {
   0% { opacity: 0.55; }
   100% { opacity: 0; }
@@ -372,85 +359,16 @@ body {
 
 /* Warming, literally: the bar is reporting how near an echo is, so it carries the echo's
    colour and not the interface's. Cold at a distance, ember on arrival. */
-.proximity-warmer .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(255, 158, 18, 0.16)); }
-.proximity-close .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(255, 158, 18, 0.26)); }
+
+
 /* On a white sheet the same alphas read as tan rather than as warmth, so light mode takes
    the colour down and lets the text carry the state instead. */
-:root[data-theme="light"] .proximity-warmer .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(194, 90, 0, 0.14)); }
-:root[data-theme="light"] .proximity-close .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(194, 90, 0, 0.2)); }
-:root[data-theme="light"] .proximity-arrived .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(194, 90, 0, 0.16)); }
+
+
 /* Arrival keeps the same sweep as the states before it rather than filling the bar.
    Ember is far darker and more saturated than the aqua this replaced, so an alpha that
    glowed in cyan paints in orange — a flat fill reads as a brown slab, not as warmth. */
-.proximity-arrived .proximity-pulse {
-  background: linear-gradient(90deg, transparent, rgba(255, 158, 18, 0.3));
-}
-.proximity-colder .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(174, 181, 194, 0.22)); }
-.proximity-steady .proximity-pulse { background: linear-gradient(90deg, transparent, rgba(155, 149, 255, 0.22)); }
 
-.proximity-label {
-  position: relative; display: flex; align-items: baseline; gap: 8px;
-  white-space: nowrap; font-size: 11.5px;
-}
-.proximity-kind { font-weight: 500; letter-spacing: 0.02em; }
-.proximity-warmer .proximity-kind, .proximity-close .proximity-kind, .proximity-arrived .proximity-kind { color: var(--ember); }
-.proximity-colder .proximity-kind { color: var(--muted); }
-.proximity-distance { color: var(--muted); }
-
-/* ── now playing ─────────────────────────────────────────── */
-/* The design's header: a large indigo orb, the category kicker in its own colour, the
-   title, then place and length. The orb being big is the point — it is the control
-   somebody reaches for while walking. */
-.playing {
-  position: absolute; left: 12px; right: 12px; z-index: 30;
-  background: rgba(var(--rgb-panel), 0.97);
-  border: 1px solid rgba(255, 158, 18, 0.35); border-radius: 16px;
-  padding: 11px 12px; backdrop-filter: blur(12px);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
-}
-.playing-top { display: flex; gap: 12px; align-items: center; }
-.playing-orb {
-  width: 46px; height: 46px; flex: none; border: 0; border-radius: 50%;
-  background: var(--btn); color: var(--btn-ink); display: grid; place-items: center;
-  cursor: pointer; box-shadow: 0 0 22px rgba(81, 71, 219, 0.5);
-}
-/* 19px, the design's. It was 17, which is the sort of two pixels nobody can name and
-   everybody can see: the glyph sat small inside a 46px orb. */
-.playing-orb svg { width: 19px; height: 19px; fill: currentColor; }
-/* It is a button now, so that tapping the row opens the player — which means undoing
-   every default a button brings with it. Without this it renders as a white box with a
-   border, which is exactly what it did the first time it was looked at. */
-.playing-text {
-  min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 2px;
-  background: none; border: 0; padding: 0; margin: 0; font: inherit;
-  text-align: left; color: inherit; cursor: pointer;
-}
-.playing-kicker {
-  display: flex; align-items: center; gap: 6px;
-  font-family: "Space Grotesk", monospace; font-size: 11px; font-weight: 500;
-  letter-spacing: 0.14em; text-transform: uppercase;
-}
-.playing-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
-/* 13.5px at 500, the design's. 14px at 600 was heavier than everything around it and
-   made the row read as a heading rather than as a line of status. */
-.playing-text strong {
-  font-size: 13.5px; font-weight: 500; line-height: 1.2;
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-}
-.playing-place {
-  font-size: 12px; color: var(--muted); font-family: "Space Grotesk", monospace;
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-
-}
-/* Skip is drawn filled; the bookmark is an outline until it is one of yours. */
-/* How far through. Two pixels, because it is a glance, not a scrubber — the scrubber is
-   in the sheet, where there is room to aim at it. */
-.playing-next, .playing-missed {
-  margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--line);
-  font-size: 12px; color: var(--muted);
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-}
-.playing-missed { color: var(--indigo-soft); }
 
 /* ── collection entry ────────────────────────────────────── */
 /* The design's saved row (`.srow` / `.sthumb` / `.sg`): a 76x52 plate in the category's
@@ -622,10 +540,24 @@ body {
   outline-offset: 2px;
   border-radius: 6px;
 }
+/*
+ * The aqua controls get the space colour instead, so the ring never matches the thing it
+ * is ringing.
+ *
+ * This selector list had no block on it at all — it ran straight into the comment below
+ * and the media query after it, which makes the whole run invalid CSS. The build has been
+ * printing `Unexpected "@media"` about it ever since, and the effect was that every lit
+ * chip, lit fab and lit action had an aqua focus ring on an aqua background: a WCAG 2.4.7
+ * pass on paper and invisible in fact. Found by reading a build warning rather than by any
+ * audit, because a rule that does not parse cannot be measured.
+ */
 .fab.on:focus-visible,
 .chip.on:focus-visible,
 .act.act-on:focus-visible,
-.now-mark.on:focus-visible,
+.catfilter-tap.is-filtered:focus-visible,
+.now-mark.on:focus-visible {
+  outline-color: var(--space);
+}
 /* Windows high-contrast: the outline above is dropped by the OS, so ask for its own. */
 @media (forced-colors: active) {
   :where(button, [role="button"], a, input):focus-visible { outline: 2px solid Highlight; }
@@ -749,94 +681,33 @@ body {
 /* ── The echo row ─────────────────────────────────────────────────────────────
    Compact by default so a list can be scanned: a plate that plays, a title, and a
    bookmark. Five fit where one card did. Detail expands in place underneath. */
-.ecard {
-  flex: 0 0 auto; position: relative; overflow: hidden;
-  background: rgba(var(--rgb-panel), 0.55); border: 1px solid var(--line);
-  border-radius: 14px;
-  transition: border-color 0.14s var(--ease), background 0.14s var(--ease);
-}
-.erow { display: flex; align-items: center; gap: 11px; padding: 9px 10px; }
+
+
 /* The design's saved-plate, at a size a thumb can hit: 60x46 with the length on it. */
-.erow-plate {
-  position: relative; width: 60px; height: 46px; flex: none; cursor: pointer;
-  border-radius: 9px; display: grid; place-items: center;
-  background: color-mix(in srgb, currentColor 16%, transparent);
-  border: 1px solid color-mix(in srgb, currentColor 34%, transparent);
-  color: inherit;
-}
-.erow-plate svg {
-  width: 17px; height: 17px; fill: none; stroke: currentColor;
-  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
-}
-.erow-plate .act-fill { fill: currentColor; stroke: none; }
-.erow-plate i {
-  position: absolute; right: 3px; bottom: 3px; padding: 1px 4px; border-radius: 4px;
-  background: rgba(0, 0, 0, 0.72); font-style: normal; color: var(--cool);
-  font-family: "Space Grotesk", monospace; font-size: 11px;
-}
-.erow-plate:disabled { cursor: default; opacity: 0.85; }
-.erow-body {
-  flex: 1; min-width: 0; text-align: left; background: none; border: 0;
-  padding: 0; font: inherit; color: inherit; cursor: pointer;
-  display: flex; flex-direction: column; gap: 2px; align-items: flex-start;
-}
-.erow-body strong {
-  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
-  overflow: hidden; font-size: 12.5px; font-weight: 500; line-height: 1.35;
-  color: var(--white);
-}
-.erow-body small {
-  display: block; font-family: "Space Grotesk", monospace; font-size: 11.5px;
-  color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-  max-width: 100%;
-}
-.erow-save {
-  flex: none; width: 38px; height: 38px; border-radius: 12px; cursor: pointer;
-  border: 1px solid var(--line-2); background: none; color: var(--cool);
-  display: grid; place-items: center;
-}
-.erow-save svg {
-  width: 15px; height: 15px; fill: none; stroke: currentColor;
-  stroke-width: 1.8; stroke-linejoin: round;
-}
-.erow-save.on { border-color: var(--aqua); color: var(--aqua); background: rgba(var(--rgb-accent), 0.12); }
-.erow-save.on svg { fill: currentColor; }
+
+
 /* Detail, one row at a time. */
-.ecard-detail { padding: 0 12px 11px; border-top: 1px solid var(--line); margin-top: 2px; }
-.ecard-detail p { margin: 9px 0 0; font-size: 11px; line-height: 1.5; color: var(--muted); }
-.ecard-open { background: rgba(var(--rgb-panel), 0.8); border-color: var(--line-2); }
+
 
 /* Ember, not the design's aqua: the map already marks a found echo ember, and a card
    disagreeing with its own pin would read as two different states. */
-.ecard-playing {
-  border-color: rgba(255, 158, 18, 0.65);
-  box-shadow: 0 0 0 1px rgba(255, 158, 18, 0.22);
-}
-.ecard-selected { border-color: var(--line-2); background: rgba(var(--rgb-panel), 0.8); }
-.ecard-top { display: flex; align-items: center; margin-bottom: 7px; }
+
+
 .ecard-tag {
   display: flex; align-items: center; gap: 6px;
   font-family: "Space Grotesk", monospace; font-size: 11px;
   letter-spacing: 0.13em; text-transform: uppercase;
 }
 .ecard-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
-.ecard-dur {
-  margin-left: auto; font-size: 11.5px; color: var(--muted);
-  font-family: "Space Grotesk", monospace;
-}
-.ecard h4 {
-  margin: 0 0 4px; font-size: 13.5px; font-weight: 500;
-  line-height: 1.35; letter-spacing: -0.01em;
-}
-.ecard-sealed .erow-body strong { font-style: italic; color: var(--cool); }
-.ecard p { margin: 0; font-size: 11px; line-height: 1.5; color: var(--muted); }
+
+
 .ecard-place {
   margin-top: 8px; display: flex; align-items: center; gap: 5px;
   font-size: 11.5px; color: var(--muted); font-family: "Space Grotesk", monospace;
 }
 .ecard-place svg { width: 10px; height: 10px; fill: none; stroke: currentColor; stroke-width: 1.8; }
 
-.ecard-acts { display: flex; gap: 6px; margin-top: 10px; }
+
 .act {
   display: flex; align-items: center; gap: 5px; cursor: pointer;
   padding: 7px 11px; border-radius: 99px; font: inherit; font-size: 11px;
@@ -984,18 +855,7 @@ body {
 .upnext button:hover .upnext-play { background: var(--ember); color: var(--space); }
 
 /* ── player ─────────────────────────────────────────────── */
-.player { padding: 0 16px 10px; flex: none; }
 
-.phead { display: flex; gap: 12px; align-items: center; padding: 4px 0 12px; }
-.phead-mark {
-  /* 38px, the design's, and still well over the 24px minimum. */
-  flex: none; width: 38px; height: 38px; border-radius: 12px; cursor: pointer;
-  display: grid; place-items: center;
-  background: transparent; color: var(--muted); border: 1px solid var(--line-2);
-}
-.phead-mark svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-.phead-mark.on { color: var(--ember); border-color: rgba(255, 158, 18, 0.55); background: rgba(255, 158, 18, 0.12); }
-.phead-mark.on svg { fill: currentColor; }
 
 /* The waveform. Bars, not a line: a line says "position", bars say "sound", and the second
    is what somebody is actually scrubbing through. */
@@ -1005,33 +865,17 @@ body {
 /* The plain-language switch, filled when on — the design's one loud control, because it
    changes what you hear rather than where you are in it. */
 /* ── segmented tabs ──────────────────────────────────────── */
-.segs {
-  display: flex; align-items: center; gap: 2px; flex: none;
-  padding: 0 16px; border-bottom: 1px solid var(--line);
 
-}
 /* `flex: 1` is the whole reason the design's `padding: 10px 0` works: each tab owns an
    equal column and its label centres in it. Taking the padding without the flex — which is
    what I did on the first pass through the spec — leaves three labels shrink-wrapped to
    their own text with two pixels between them, which is how "Around youTranscriptSaved"
    happens. Copy a value and you have to copy what it depends on. */
-.seg {
-  flex: 1; text-align: center;
-  background: none; border: 0; cursor: pointer; font: inherit; font-size: 11px;
-  color: var(--muted); padding: 10px 0; position: relative;
-}
-.seg.on { color: var(--white); font-weight: 500; }
+
+
 /* Full width of the tab, as the design's `border-bottom` is — inset by six pixels it
    underlined the word rather than the column. */
-.seg.on::after {
-  content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px;
-  background: var(--aqua);
-}
-.seg-count {
-  display: inline-block; margin-left: 5px; padding: 1px 6px; border-radius: 99px;
-  font-family: "Space Grotesk", monospace; font-size: 11px;
-  background: rgba(var(--rgb-accent), 0.16); color: var(--aqua);
-}
+
 
 /* ── transcript ──────────────────────────────────────────── */
 .transcript { overflow-y: auto; flex: 1; padding: 12px 14px 16px; scrollbar-width: none; }
@@ -1170,24 +1014,7 @@ body {
 .pf-go:hover { filter: brightness(1.1); }
 
 /* ── sheet ───────────────────────────────────────────────── */
-.sheet {
-  position: absolute; left: 0; right: 0; bottom: 0; z-index: 20;
-  /* Taller than it was: "coming up" and "around you" both earn their place — one is the
-     route ahead, the other is what is within reach — and squeezing them into 296px
-     collapsed the second to a single clipped row. */
-  /* Tall enough for one whole echo card including its actions. A card clipped above its
-     Listen button is worse than a list, because it promises something it then hides.
-     Re-measured when the then-and-now strip landed: a card with a plate on it is 48px
-     taller, and a sheet sized against the old card put the Listen button back under the
-     nav bar. This number is a measurement, not a preference — re-measure it whenever the
-     card grows. */
-  height: var(--sheet-h);
-  transition: height 0.24s var(--ease); background: var(--slate);
-  border-radius: 24px 24px 0 0; border-top: 1px solid var(--line-2);
-  box-shadow: 0 -14px 40px rgba(0, 0, 0, 0.55);
-  display: flex; flex-direction: column; padding-bottom: 18px;
-}
-.grab { width: 38px; height: 4px; border-radius: 99px; background: rgba(var(--rgb-hair), 0.3); margin: 11px auto 6px; flex: none; }
+
 
 .now { padding: 2px 16px 12px; flex: none; }
 .now-top { display: flex; gap: 11px; align-items: center; }
@@ -1246,14 +1073,7 @@ body {
 .now-mark.on { background: var(--ember); color: #1a1000; border-color: var(--ember); }
 .now-mark.on svg { fill: currentColor; }
 
-.rarity-why { font-size: 11px; color: var(--muted); margin-top: 8px; font-style: italic; }
 
-.list-head {
-  display: flex; justify-content: space-between; align-items: baseline;
-  padding: 4px 16px 6px; font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--muted); font-family: "Space Grotesk", monospace;
-  border-top: 1px solid var(--line);
-}
 .count { color: var(--ember); 
 }
 
@@ -1347,127 +1167,34 @@ body {
   background: var(--ember); color: #fff; font-size: 11px; line-height: 15px;
 }
 
-/* The sheet and proximity bar sit above the tab bar rather than under it. */
-.sheet { bottom: var(--nav-h); }
-/* With a player in it the sheet becomes the screen, as it does in the design: the map is
-   still there above the chips, but what you are listening to is the thing you are using. */
-/* The three detents. Set on `.screen` rather than on the sheet so the guidance bar and
-   the player, which float above it, move with it. */
-/* Peek is the height of one row, not a fraction of the screen. 26dvh left a hundred
-   pixels of empty sheet under the now-playing bar, which is a hundred pixels of map given
-   away for nothing. */
-/* One row, measured. 132px was a number picked once, against one of the two things that
-   can sit in that row; the other is shorter, and the difference showed as a panel of empty
-   between the echo and the tab bar. `Sheet.tsx` measures the row and sets --peek-h; the
-   132 stays as the value before the first measurement lands. */
-/*
-   No sheet at all, no room reserved for one. The default above is 400px, which is right
-   while the sheet exists and is being measured, and wrong the moment the sheet is not
-   rendered: the map stopped four hundred pixels short of the tab bar and the gap was a
-   flat dark band. Only "nothing nearby, showing the whole library" reaches this, which is
-   exactly the screen that wants every pixel of map it can get.
-*/
-.screen:not(:has(.sheet)) { --sheet-h: 0px; }
-.screen:has(.sheet-peek) { --sheet-h: var(--peek-h, 132px); }
-/* 46, not 52. At 52 the sheet plus the tab bar plus the route ribbon left the map 16% of
-   the screen — the complaint that started all this — and the band was too short for the
-   control rail to wrap into fewer than four columns. Six points of height buys back both,
-   and costs the sheet one card it can be dragged up to see. */
-.screen:has(.sheet-half) { --sheet-h: min(400px, 46dvh); }
-.screen:has(.sheet-full) { --sheet-h: 86dvh; }
-/* Something playing wants room for the transport, but never at the cost of a peek that
-   was asked for — and never at the cost of the controls either. At 76dvh the sheet left
-   no band for the control column, so pressing play made the theme, kids, recentre and
-   download buttons disappear. A control that vanishes when you use the app is a control
-   people conclude they imagined. 56dvh fits the whole transport and still leaves room for
-   the column. */
-.screen:has(.sheet-playing.sheet-half) { --sheet-h: min(470px, 56dvh); }
 
-.grab-zone {
-  padding: 8px 0 4px; cursor: grab; touch-action: none;
-  display: flex; justify-content: center; flex: none;
-}
-.grab-zone:active { cursor: grabbing; }
-/* The guidance bar has nowhere to be once the sheet fills the screen, and drawing it over
-   the player is how it ended up on top of the plain-language switch. */
-.screen:has(.sheet-full) .proximity, .screen:has(.sheet-playing.sheet-half) .proximity { display: none; }
-/*
- * And the control column goes with it, for the same reason and with better evidence.
- *
- * At those two detents the band left between the chips and the sheet is 63px on a tall
- * phone and negative on a short one, against a column that is 350 tall. It has never
- * fitted: measured by the audit at 375x667, every one of the five fabs was 94 pixels off
- * the TOP of the screen at the full detent — drawn over the journey chip or past it.
- *
- * The note on `.sheet-playing.sheet-half` says 56dvh was chosen to leave the column room,
- * and the arithmetic says it does not. Hiding it is the honest version of what was
- * already happening, and the sheet is one drag from being out of the way.
- */
-.screen:has(.sheet-full) .rail, .screen:has(.sheet-playing.sheet-half) .rail { display: none; }
-/*
- * THE STEPPER, and the bottom stack it joins.
- *
- * It sits directly above the sheet, at the bottom of the screen where a thumb already
- * is — the whole argument for it over a pin is that neither arrow ever moves and neither
- * one has to be aimed at. Everything else in the stack is pushed up by its height, using
- * the same `:has()` idiom the sheet's own detents already use, so nothing has to be told
- * twice that the stepper is there.
- */
-.screen:has(.stepper) { --step-h: 104px; }
-.stepper {
-  position: absolute; left: 0; right: 0; z-index: 24;
-  bottom: calc(var(--nav-h) + var(--sheet-h) + 8px);
-  padding: 0 14px;
-  transition: bottom 0.34s cubic-bezier(0.32, 0.72, 0, 1);
-}
-.stepper-row { display: flex; align-items: stretch; gap: 8px; }
+
+
+
+
+
+
+
+
+
+
 /*
  * 54, which is over the 44 Apple asks for rather than exactly at it. These are the two
  * targets the whole feature exists to provide and they are pressed while walking; the
  * legal floor is the wrong place to land when the control's entire job is being easy to
  * hit without looking.
  */
-.stepper-arrow {
-  width: 54px; flex: none; border-radius: 16px; cursor: pointer;
-  display: grid; place-items: center; color: var(--text);
-  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
-  backdrop-filter: blur(12px);
-}
-.stepper-arrow svg {
-  width: 20px; height: 20px; fill: none; stroke: currentColor;
-  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
-}
-.stepper-arrow:active { background: rgba(var(--rgb-panel), 1); }
-.stepper-card {
-  flex: 1; min-width: 0; text-align: left; cursor: pointer;
-  display: flex; flex-direction: column; gap: 4px;
-  padding: 11px 14px; border-radius: 16px; font: inherit;
-  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
-  backdrop-filter: blur(12px);
-}
-.stepper-kicker {
-  /* 11, not 10.5. Apple's floor is 11pt and on a 390pt phone that is 11px; the audit
-     caught the half pixel, and this app is read outdoors at arm's length, which argues
-     for the high side of any guideline rather than the low. */
-  display: flex; gap: 8px; font-size: 11px; font-weight: 500;
-  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
-}
+
+
 /* The one warm thing on the card, because rarity is the echo rather than the control. */
-.stepper-kicker b { color: var(--ember-core); font-weight: 500; }
+
 /*
  * Two lines, then an ellipsis. A title that wraps to four lines changes the height of the
  * card every time the arrow is pressed, and a control that moves under your thumb between
  * presses is the one thing this is supposed to fix.
  */
-.stepper-title {
-  font-size: 15px; font-weight: 500; line-height: 1.26; color: var(--white);
-  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.stepper-where {
-  font-size: 12px; color: var(--muted);
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-}
+
+
 /*
  * THE ONE THE ARROWS ARE ON.
  *
@@ -1493,16 +1220,6 @@ body {
   .pin-focus-ring { animation: none; r: 26px; opacity: 0.55; }
 }
 
-.stepper-count {
-  margin: 7px 0 0; text-align: center; font-size: 11px;
-  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
-}
-
-.proximity { bottom: calc(var(--nav-h) + var(--sheet-h) + var(--step-h, 0px) + 10px); }
-/* Above the guidance bar when there is one; the guidance bar's own slot when there is not,
-   which is every carried mode. */
-.playing { bottom: calc(var(--nav-h) + var(--sheet-h) + var(--step-h, 0px) + 64px); }
-.stack-noguide .playing { bottom: calc(var(--nav-h) + var(--sheet-h) + var(--step-h, 0px) + 10px); }
 
 /* ── full-screen panels ──────────────────────────────────── */
 .screen-body {
@@ -1516,9 +1233,6 @@ body {
 .screen-head h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
 .screen-head p { font-size: 12px; color: var(--muted); margin-top: 4px; }
 
-.empty-state { padding: 80px 12px; text-align: center; }
-.empty-state h2 { font-size: 16px; margin-bottom: 8px; color: var(--cool); }
-.empty-state p { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
 
 /* ── collection ──────────────────────────────────────────── */
 .coll-bar {
@@ -1786,32 +1500,7 @@ body {
 /* ── The invitation, on a card ───────────────────────────────────────────────
    A sepia plate with a year on it, not a button reading "Then & now". The first
    says somebody stood here in 1905; the second says a feature exists.          */
-.plate-strip {
-  display: flex; align-items: center; gap: 9px; width: 100%; margin-top: 9px;
-  padding: 5px 9px 5px 5px; cursor: pointer; text-align: left;
-  border-radius: 11px; border: 1px solid var(--line);
-  background: linear-gradient(90deg, rgba(255, 158, 18, 0.1), rgba(var(--rgb-panel), 0.4));
-  transition: border-color 0.2s var(--ease);
-}
-.plate-strip:hover { border-color: rgba(255, 158, 18, 0.55); }
-.plate-thumb { position: relative; flex: none; width: 36px; height: 36px; }
-.plate-thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
-.plate-thumb em {
-  position: absolute; right: -3px; bottom: -3px; font-style: normal; font-size: 11px;
-  padding: 1px 4px; border-radius: 99px; background: var(--ember); color: #1a1000;
-  font-family: "Space Grotesk", monospace;
-}
-.plate-text { min-width: 0; flex: 1; }
-.plate-text strong { display: block; font-size: 12px; color: var(--ember); }
-.plate-text small {
-  display: block; font-size: 12px; color: var(--muted); margin-top: 1px;
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-}
-.plate-cam { flex: none; }
-.plate-cam svg {
-  width: 17px; height: 17px; fill: none; stroke: var(--ember);
-  stroke-width: 1.6; stroke-linejoin: round;
-}
+
 
 /* Light mode: the frame stays dark whatever the theme. A viewfinder is a window,
    and a white one is a glare in the hand at the exact moment somebody is trying
@@ -1929,13 +1618,6 @@ body {
      as more. A phone with no inset should still get the spacing the design asked for. */
   .nav { padding-bottom: max(14px, env(safe-area-inset-bottom)); }
 
-  :root {
-    /* Proportional, so the sheet never eats a short screen. Capped so a tall phone
-       gains map, not sheet. The design's ratio was 466/822; this is 400/844, which
-       is the same sheet with the map given back the six points it was short. */
-    --sheet-h: min(400px, 46dvh);
-  }
-
   /*
      On a narrow window the harness goes entirely.
      
@@ -2049,7 +1731,10 @@ body {
  */
 /* How much of the top the chrome takes, measured on a real render: the journey
    chip plus the category chips come to 151, and the column wants to clear them. */
-.screen { --mapbar-h: 157px; }
+/* One row now: the journey chip and the folded category filter, side by side. It was 157
+   with the nine-chip row under it. Measured on a real render at 375x667, where the chip is
+   the taller of the two. */
+.screen { --mapbar-h: 64px; }
 .rail {
   position: absolute; right: 14px; z-index: 26;
   /*
@@ -2067,7 +1752,7 @@ body {
    * `min` keeps it below the chrome, `max` keeps it above the tab bar, and between them
    * it behaves exactly as before on any screen tall enough to hold it.
    */
-  bottom: calc(var(--nav-h) + var(--sheet-h) + var(--step-h, 0px) + var(--guide-h, 56px) + var(--now-h, 0px) + 12px);
+  bottom: calc(var(--nav-h) + var(--step-h, 0px) + 12px);
   /*
    * IT WRAPS RATHER THAN OVERFLOWING, and that is the only thing that actually works.
    *
@@ -2091,8 +1776,7 @@ body {
     /* Never collapses to nothing, whatever the sum says. */
     88px,
     calc(
-      100% - var(--mapbar-h) - var(--nav-h) - var(--sheet-h) - var(--step-h, 0px) -
-        var(--guide-h, 56px) - var(--now-h, 0px) - 24px
+      100% - var(--mapbar-h) - var(--nav-h) - var(--step-h, 0px) - 24px
     )
   );
   display: flex; flex-direction: column; flex-wrap: wrap-reverse;
@@ -2156,7 +1840,7 @@ body {
 
 /* No map left to control. The same rule the guidance bar already follows. */
 /* Only at full, where there is genuinely no map left to control. */
-.screen:has(.sheet-full) .rail { opacity: 0; pointer-events: none; }
+
 
 /* How the design handles a rising sheet: a button collapses to nothing rather than the
    column wrapping into a second row over the map.
@@ -2168,11 +1852,7 @@ body {
 
    The city is the one that goes, with the package. At half you are reading what is around
    you here, which is the one moment "where else is there" can wait. */
-.screen:has(.sheet-half) .rail-pack,
-.screen:has(.sheet-half) .rail-city {
-  height: 0; margin-top: -8px; border-width: 0; opacity: 0;
-  pointer-events: none; overflow: hidden;
-}
+
 
 /*
  * The basemap, inked into the design's navy.
@@ -2402,38 +2082,6 @@ body {
 }
 .onb-route small { display: block; font-size: 11.5px; color: var(--muted); }
 
-/* ── Peek is the map, plus one row ────────────────────────────────────────────
-   Verbatim from the design (`design/SPEC.md`):
-
-       .sheet[data-h="peek"] .wave, .times, .ctrls, .simpaud,
-       .voicepick, .plain, .tabs, .list, .foot { display: none }
-
-   I extracted that rule weeks ago and never applied it, which is most of why the
-   app never felt like the design. At peek mine showed the transport, the tabs,
-   "coming up" and the list all at once, in two hundred pixels, over a map that
-   had been squeezed to a strip. The design shows one row: what is playing, a
-   play button and a bookmark. Everything else is one swipe away.
-
-   The same element throughout, progressively revealed, so swiping up never swaps
-   a component out from under a thumb. */
-.sheet-peek .segs,
-.sheet-peek .list,
-.sheet-peek .upnext,
-.sheet-peek .plate-strip,
-.sheet-peek .list-progress,
-.sheet-peek .rarity-why { display: none; }
-/* No border under the row when it is the only thing there. */
-.sheet-peek .phead { border-bottom: 0; }
-
-/* The transport's own colour tells you which way it will go: indigo to start, ember to
-   stop. The design does this and it is the difference between reading the icon and
-   recognising the button. */
-.playing-orb.is-playing,
-.play.is-playing {
-  background: linear-gradient(140deg, var(--ember), #d17800);
-  box-shadow: 0 0 20px rgba(255, 158, 18, 0.45);
-}
-
 /* Which build this is. Quiet, at the bottom of settings, where it is findable when
    somebody asks "is this the new one" and invisible the rest of the time. */
 .build-stamp {
@@ -2442,13 +2090,13 @@ body {
 }
 
 /* ── The echo you tapped ──────────────────────────────────────────────────────
-   Over the map, above the sheet, in the guidance bar's slot. It is a card rather
+   Over the map, above the one bar. It is a card rather
    than a bar because it carries a title, a place, a teaser and an action, and
    because it is the one thing on this screen you are meant to read rather than
    glance at. */
 .pop {
   position: absolute; left: 14px; right: 14px; z-index: 26;
-  bottom: calc(var(--nav-h) + var(--sheet-h) + 10px);
+  bottom: calc(var(--nav-h) + var(--step-h, 0px) + 10px);
   /*
      Bounded, and it scrolls. The card is anchored at the bottom and grows upwards, so
      adding the archive photograph pushed its own close button off the top of the screen on
@@ -2459,7 +2107,7 @@ body {
      The ceiling leaves the map bar and a strip of map showing, because the card is about
      a pin and covering the pin entirely would make it a modal rather than a callout.
   */
-  max-height: calc(100% - var(--nav-h) - var(--sheet-h) - 150px);
+  max-height: calc(100% - var(--nav-h) - var(--step-h, 0px) - 150px);
   overflow-y: auto; overscroll-behavior: contain;
   padding: 13px 14px 12px; border-radius: 16px;
   background: rgba(var(--rgb-panel), 0.96); border: 1px solid var(--line-2);
@@ -2613,11 +2261,7 @@ body {
 
 /* How far through the journey, above the list. Quiet: it is a fact somebody looks up, not
    one they need pushed at them, which is why it is no longer the resting row. */
-.list-progress {
-  margin: 0; padding: 6px 16px 0;
-  font-family: "Space Grotesk", monospace; font-size: 11px;
-  letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
-}
+
 
 /* The resting orb when the echo is not yours yet: same size and place, a pin rather than a
    play triangle, and quieter, because it opens the echo on the map instead of starting it.
@@ -2675,8 +2319,9 @@ body {
 .rose {
   position: absolute; left: 0; right: 0; z-index: 10;
   /* Bounded by the chrome rather than by the screen. Stretched over the whole screen it was
-     centring the dial behind the sheet and clipping its own button off the bottom. */
-  top: 96px; bottom: calc(var(--nav-h) + var(--sheet-h));
+     centring the dial behind the sheet and clipping its own button off the bottom. The
+     sheet is gone and the bar is hidden on the rose, so the tab bar is all that is left. */
+  top: 96px; bottom: var(--nav-h);
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   gap: 14px; padding: 8px 16px 14px; overflow: hidden;
   background: radial-gradient(circle at 50% 42%, rgba(var(--rgb-accent), 0.07), transparent 62%),
@@ -2687,7 +2332,7 @@ body {
 
 /* The guidance pill says "getting warmer" about one echo; the dial says it about all of
    them, with a direction. Two of them is one too many. */
-.screen:has(.rose) .proximity { display: none; }
+
 
 .rose-ring { fill: none; stroke: rgba(var(--rgb-hair), 0.13); stroke-width: 1; }
 
@@ -2810,8 +2455,11 @@ body {
 .journey-tap .ribbon { pointer-events: none; }
 /* Roaming has no origin, destination or ETA, so it gets a plain chip rather than an
    invented one. Same slot, same tap. */
+/* One line, always. It read "On foot, around here" beside a Change button, which wrapped
+   on a 375px phone and made the top chrome 145px tall — half of what this whole pass was
+   buying back. Rendered and measured. */
 .journey-roam {
-  display: flex; align-items: center; gap: 9px;
+  display: flex; align-items: center; gap: 9px; white-space: nowrap; min-width: 0;
   padding: 11px 14px; border-radius: 99px; font-size: 12.5px; color: var(--cool);
   background: rgba(var(--rgb-panel), 0.9); border: 1px solid var(--line-2);
   backdrop-filter: blur(12px);
@@ -2896,7 +2544,7 @@ body {
 }
 /* The nav is the one place there is room to simply be 48 tall. */
 .nav button { min-height: 48px; }
-.erow-body { min-height: 44px; }
+
 
 /*
  * Rarity, as light rather than as a badge.
@@ -3460,14 +3108,8 @@ body {
 
 /* How far through, under the mini bar, as a hairline rather than a scrubber: a bar you
    can drag is a bar people drag by accident while reaching for the sheet. */
-.phead-progress {
-  height: 2px; margin: 0 14px 10px; border-radius: 2px;
-  background: rgba(var(--rgb-hair), 0.16); overflow: hidden;
-}
-.phead-progress span {
-  display: block; height: 100%; border-radius: 2px; background: var(--ember);
-  transition: width 0.3s linear;
-}
+
+
 .hear-stop.on { color: var(--aqua); border-color: rgba(0, 255, 231, 0.4); }
 
 .hear-back svg {
@@ -3998,3 +3640,234 @@ body {
   width: 11px; height: 11px; flex: none; fill: none; stroke: var(--aqua);
   stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; opacity: 0.85;
 }
+
+/* ── ONE BAR, AND ONE ROW OF CHROME ────────────────────────────────────────────
+ *
+ * Measured off a photograph of the real app on a real phone. Top: a journey chip and a
+ * nine-chip category row, 151px. Bottom: a proximity strip, a stepper, a sheet at its
+ * peek and the tab bar, 366px. On a 375x667 iPhone SE that left the map 150 pixels —
+ * 22 percent of the screen — on the one product whose whole proposition is looking at
+ * what is around you. "The map is the main focus but you have a sheet and the selector
+ * and it doesn't make sense, it takes up too much room."
+ *
+ * So: one bar at the bottom, one row at the top. The sheet is gone (`App`), the chip row
+ * folded into a button (`CategoryFilter`), and the stepper, the mini player and the
+ * proximity strip became one object about one echo (`EchoBar`). Top chrome 151 -> ~64,
+ * bottom chrome 366 -> ~152, and the map goes from 22 percent of the screen to 66.
+ */
+
+/* One line, not two. The filter used to be a whole row under this. */
+.mapbar {
+  flex-direction: row; align-items: flex-start; gap: 8px; flex-wrap: wrap;
+}
+.mapbar > .journey-tap { flex: 1 1 190px; min-width: 0; }
+
+/* ── the category filter, folded ────────────────────────────────────────────── */
+.catfilter { position: relative; flex: none; }
+.catfilter-tap {
+  display: flex; align-items: center; gap: 7px; cursor: pointer;
+  /* 40 inside a row that pads to 44, the same bargain the chips strike. */
+  min-height: 40px; padding: 0 10px; white-space: nowrap;
+  border-radius: 13px; font: inherit; font-size: 12px; color: var(--cool);
+  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+/* A filter that is ON must always say so somewhere. A map quietly missing two thirds of
+   its pins with no visible cause is the worst thing this screen could do. */
+.catfilter-tap.is-filtered { color: var(--white); border-color: rgba(0, 255, 231, 0.45); }
+.catfilter-tap svg {
+  width: 14px; height: 14px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.catfilter-tap[aria-expanded="true"] svg { transform: rotate(180deg); }
+/* Three dots of the key rather than a funnel glyph: it says "this is about the coloured
+   things on the map", which a funnel does not. */
+.catfilter-key { display: flex; align-items: center; }
+.catfilter-key i {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--cat);
+  margin-right: -3px; box-shadow: 0 0 0 1.5px var(--panel);
+}
+.catfilter-key i:last-child { margin-right: 0; }
+
+.catpop {
+  position: absolute; top: calc(100% + 7px); right: 0; z-index: 40;
+  width: min(330px, calc(100vw - 30px));
+  border-radius: 15px; padding: 5px;
+  background: rgba(var(--rgb-panel), 0.98); border: 1px solid var(--line);
+  backdrop-filter: blur(16px); box-shadow: 0 16px 44px rgba(0, 0, 0, 0.5);
+  animation: catpopIn 0.16s var(--ease);
+}
+@keyframes catpopIn { from { opacity: 0; transform: translateY(-6px); } }
+@media (prefers-reduced-motion: reduce) { .catpop { animation: none; } }
+/* The row wraps inside a panel rather than scrolling. A horizontal scroller in a popover
+   is a way of hiding half your options behind a gesture nobody makes. */
+.catpop .chipwrap { margin-top: 0; }
+.catpop .chips {
+  flex-wrap: wrap; overflow: visible; background: none; border: 0; padding: 0;
+}
+
+/* ── the bar ───────────────────────────────────────────────────────────────── */
+/*
+ * Its height, and the one number the rest of the bottom stack is told. It replaced
+ * `--sheet-h` plus `--step-h` plus `--guide-h`; those three are why the control column
+ * had to learn to wrap. `ECHOBAR_H` in `EchoBar.tsx` tracks this — change both.
+ */
+.screen:has(.echobar) { --step-h: 78px; }
+.echobar {
+  position: absolute; left: 0; right: 0; z-index: 24;
+  bottom: calc(var(--nav-h) + 8px);
+  padding: 0 12px;
+}
+.echobar-row { display: flex; align-items: stretch; gap: 6px; }
+/*
+ * 48 wide and the full height of the card, so the target is 48x66 against Apple's 44x44.
+ * These are the two controls the whole feature exists to provide and they are pressed
+ * while walking; the legal floor is the wrong place to land when a control's entire job
+ * is being easy to hit without looking.
+ */
+.echobar-arrow {
+  width: 48px; flex: none; border-radius: 16px; cursor: pointer;
+  display: grid; place-items: center; color: var(--white);
+  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+.echobar-arrow svg {
+  width: 20px; height: 20px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.echobar-arrow:active { background: rgba(var(--rgb-panel), 1); }
+
+/*
+ * The card carries the echo's category as `--cat`, which is what tints the kicker and
+ * warms the rim. It has to put `color` back, because `.cat-*` sets both and the title
+ * would otherwise come out in the category's colour — declared after those rules on
+ * purpose, since the two selectors weigh the same.
+ */
+.echobar-card {
+  flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center;
+  padding: 7px 11px 6px 7px; border-radius: 16px; color: var(--white);
+  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+  transition: border-color 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+/* Warmer, literally. The bar is reporting how near an echo is, so it carries the echo's
+   own heat rather than the interface's aqua — the same argument the strip it replaced
+   made, on an object that costs no height to say it. */
+.echobar-warm .echobar-card {
+  border-color: rgba(255, 158, 18, 0.5);
+  box-shadow: 0 0 0 1px rgba(255, 158, 18, 0.14), 0 10px 30px rgba(255, 158, 18, 0.12);
+}
+.echobar[data-cue="arrived"] .echobar-card {
+  border-color: rgba(255, 158, 18, 0.78);
+  box-shadow: 0 0 0 1px rgba(255, 158, 18, 0.26), 0 10px 34px rgba(255, 158, 18, 0.2);
+}
+
+.echobar-face { display: flex; align-items: center; gap: 9px; min-width: 0; }
+.echobar-orb {
+  position: relative; flex: none; width: 48px; height: 48px; padding: 0;
+  border: 0; background: none; cursor: pointer; display: grid; place-items: center;
+}
+.echobar-orb svg { width: 48px; height: 48px; display: block; overflow: visible; }
+/*
+ * The halo pulses to the engine's own interval, so the bar and the buzz keep time. On an
+ * iPhone web build there is no buzz at all (ADR-0011) and this is the only proximity
+ * feedback there is, which is why it is a moving thing rather than a colour.
+ */
+.echobar-halo {
+  position: absolute; inset: -6px; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 158, 18, 0.5), rgba(255, 158, 18, 0) 66%);
+  animation-name: echobarPulse; animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+@keyframes echobarPulse {
+  0% { opacity: 0.9; transform: scale(0.8); }
+  100% { opacity: 0; transform: scale(1.26); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .echobar-halo { animation: none; opacity: 0.5; }
+}
+
+.echobar-tap {
+  min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 2px;
+  background: none; border: 0; padding: 0; margin: 0; font: inherit;
+  text-align: left; color: inherit; cursor: pointer;
+}
+/* 11, not 10.5. Apple's floor is 11pt and on a 390pt phone that is 11px; the audit
+   caught the half pixel on the card this replaced, and this app is read outdoors at
+   arm's length, which argues for the high side of any guideline. */
+.echobar-kicker {
+  display: flex; align-items: center; gap: 5px; min-width: 0;
+  font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--cat, var(--cool)); white-space: nowrap; overflow: hidden;
+}
+.echobar-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; flex: none; }
+/* The one warm thing on the bar, because rarity is the echo rather than the control. */
+.echobar-kicker b { color: var(--ember-core); font-weight: 500; }
+/* Where you are in the ring, banked back so it never competes with what the thing IS. */
+.echobar-kicker em {
+  font-style: normal; color: var(--muted); margin-left: auto; padding-left: 8px; flex: none;
+}
+/*
+ * ONE LINE, then an ellipsis, and that is the point rather than a saving. A title that
+ * wraps changes the height of the card every time an arrow is pressed, and a control that
+ * moves under your thumb between presses is the one thing this exists to fix. The whole
+ * title is one tap away on the card.
+ */
+.echobar-tap strong {
+  font-size: 14.5px; font-weight: 500; line-height: 1.25; color: var(--white);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.echobar-where {
+  display: flex; gap: 6px; min-width: 0;
+  font-size: 11.5px; color: var(--muted); white-space: nowrap;
+}
+.echobar-place { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.echobar-place::after { content: " ·"; }
+/* Never truncated. The distance is the one fact on this line somebody acts on. */
+.echobar-facts { flex: none; }
+.echobar-warm .echobar-where { color: var(--ember-core); }
+
+/*
+ * How far through, as a hairline rather than a scrubber.
+ *
+ * It keeps its 3px whether or not anything is playing, so the bar is exactly one height
+ * and the map's reserved band never moves under it.
+ */
+.echobar-progress {
+  height: 3px; margin: 5px 3px 0; border-radius: 99px;
+  background: rgba(var(--rgb-hair), 0.16); overflow: hidden;
+}
+.echobar-progress span {
+  display: block; height: 100%; border-radius: 99px;
+  background: linear-gradient(90deg, var(--aqua), var(--ember));
+  transition: width 0.25s linear;
+}
+
+/* ── the plate is the camera button ────────────────────────────────────────── */
+.pop-plate-tap {
+  display: block; width: 100%; padding: 0; font: inherit; color: inherit;
+  background: none; text-align: left; cursor: pointer;
+}
+/*
+ * Written against `.pop-plate` rather than alone, and the reason is worth keeping.
+ *
+ * `.pop-plate span` already exists for the year caption and pins it to the bottom left.
+ * The badge is also a span inside `.pop-plate`, so that rule applied to it too — and at
+ * one class plus one element it outweighs a single class, so `left` and `bottom` kept
+ * winning while only `top` and `right` came from here. All four edges set at once made the
+ * badge stretch across the plate and sit on top of the caption, which is exactly what it
+ * did on screen. Rendered, not reasoned about.
+ */
+.pop-plate .pop-plate-cam {
+  position: absolute; left: auto; bottom: auto; right: 8px; top: 8px;
+  display: flex; align-items: center; gap: 6px;
+  padding: 5px 9px 5px 7px; border-radius: 99px;
+  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.04em;
+  background: rgba(8, 10, 24, 0.72); color: #fff;
+  backdrop-filter: blur(8px);
+}
+.pop-plate .pop-plate-cam svg {
+  width: 14px; height: 14px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linejoin: round;
+}
+.pop-plate-tap:hover { border-color: rgba(255, 158, 18, 0.55); }

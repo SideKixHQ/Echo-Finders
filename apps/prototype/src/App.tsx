@@ -5,14 +5,12 @@ import { CATEGORY_ORDER, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
 import { RouteMap, MAX_ZOOM, MIN_ZOOM, type PinState } from "./RouteMap";
-import { ProximityBar } from "./ProximityBar";
-import { Sheet } from "./Sheet";
 import { Collection } from "./Collection";
 import { Privacy } from "./Privacy";
 import { Nav, type Tab } from "./Nav";
 import { Plan } from "./Plan";
 import { RouteRibbon } from "./RouteRibbon";
-import { CategoryChips } from "./CategoryChips";
+import { CategoryFilter } from "./CategoryFilter";
 import { Arrival } from "./Arrival";
 import { Preflight } from "./Preflight";
 import { EchoPopup } from "./EchoPopup";
@@ -30,11 +28,11 @@ import { Synced } from "./Synced";
 import { Walk } from "./Walk";
 import { Nowhere } from "./Nowhere";
 import { Ribbon } from "./Ribbon";
-import { Stepper, STEPPER_H } from "./Stepper";
+import { EchoBar, ECHOBAR_H } from "./EchoBar";
+import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
 import { readEntitlement, unlock } from "./entitlement-store";
 import { City } from "./City";
-import type { Detent } from "./Sheet";
 import type { CaptureEvent, Echo, EchoCategory } from "@echofinders/core";
 import {
   bearingDeg as bearingTo,
@@ -333,27 +331,17 @@ export function App() {
    * without going back out to the map.
    */
   const [camera, setCamera] = useState<Echo | null>(null);
-  /**
-   * How much of the screen the sheet takes.
-   *
-   * Lifted out of the sheet because the map needs it: with a follow-the-listener view, the
-   * listener belongs in the middle of the band that is *visible*, and how much of the
-   * screen the sheet is covering is exactly what decides where that is. Owned by the sheet,
-   * a peek would slide the map's centre under the sheet it had just moved out of the way.
-   */
   /*
-   * The sheet opens at PEEK, which is what board 2 draws.
+   * THE SHEET IS GONE, and this is where its height used to be held.
    *
-   * It opened at half, and half is 46 percent of the screen: the map got the band between
-   * the chips and a list of everything nearby, the control column was squeezed into that
-   * band until its top button sat on the category chips, and the screen the design calls
-   * FIND IT had barely enough map left to find anything on. Board 2 is a full screen of
-   * map with a single card along the bottom, and that is peek.
+   * It was lifted out of the sheet because the map needed to know how much of itself was
+   * covered. Nothing covers the map now but one bar and the tab bar, both of them fixed
+   * heights, so there is nothing left to lift.
    *
-   * Half is one swipe up and the sheet remembers nothing between sessions, so this is the
-   * resting state rather than a restriction.
+   * What the sheet carried went to the places that were already carrying it better. The
+   * transcript is on the player. Saved is under My Echoes. The nearby list is what the
+   * bar's two arrows walk, one echo at a time, without covering the map to do it.
    */
-  const [detent, setDetent] = useState<Detent>("peek");
   /**
    * Whether the map is showing the whole journey rather than following the listener.
    *
@@ -748,16 +736,21 @@ export function App() {
   }, [byRoute, route.id, kids]);
   const savedEchoes = useMemo(() => onRoute.filter((e) => chosen.has(e.id)), [onRoute, chosen]);
   /**
-   * The saved list the sheet shows, in the order you will reach them.
+   * The saved list, in the order you will reach them.
    *
    * Distance rather than pick order, because that is the question the list answers while
    * you are standing in a street: of the things I said I wanted, which is closest.
+   *
+   * It was the sheet's saved tab and it is My Echoes' now, which is where the listener
+   * said it already lived. The ordering came with it rather than being dropped with the
+   * sheet: "Saved to hear" in the order you added them is a list about last Tuesday.
    */
   const savedNearby = useMemo(() => {
     const from = state.position?.at;
     return savedEchoes
       .map((echo) => ({ echo, distanceKm: from ? distanceKm(from, echo.point.at) : 0 }))
-      .sort((a, b) => a.distanceKm - b.distanceKm);
+      .sort((a, b) => a.distanceKm - b.distanceKm)
+      .map((s) => s.echo);
   }, [savedEchoes, state.position]);
   const suggestion = useMemo(
     () => ROUTES.find((r) => r.id !== route.id && (corridorCounts[r.id] ?? 0) > 1) ?? null,
@@ -937,17 +930,8 @@ export function App() {
   const onFoot = roaming && roamMode === "walking";
   const heading = useHeading(onFoot);
 
-  /*
-   * The rose wants the screen, so it takes the sheet down to one row when it opens.
-   *
-   * Not a preference, a measurement: at the half detent the dial had about two hundred
-   * pixels to live in and its own button was behind the sheet. Peek is what the walking
-   * screen is *for* anyway, and the sheet still opens by hand from there.
-   */
+  /* The rose is drawn over the map and wants the whole screen for the dial. */
   const showingRose = onFoot && walkingView === "rose";
-  useEffect(() => {
-    if (showingRose) setDetent("peek");
-  }, [showingRose]);
 
   /**
    * What is drawn on the map, and therefore what the stepper walks.
@@ -1015,6 +999,23 @@ export function App() {
   const [focusId, setFocusId] = useState<string | null>(null);
 
   /**
+   * Starting an echo moves the bar onto it.
+   *
+   * The bar has ONE subject and it is whatever the arrows are on, which is the only
+   * arrangement where its orb, its words and its hairline can all be about the same
+   * thing. Without this, pressing play on a card three taps away left the bar showing
+   * one echo with another echo's playhead crawling underneath it — which is exactly the
+   * "two different audio players" complaint in a smaller box.
+   *
+   * On the id rather than on the echo, so a re-render mid-playback does not keep
+   * yanking the map back: the effect only fires when what is playing actually changes.
+   */
+  const playingId = nowPlaying?.id ?? null;
+  useEffect(() => {
+    if (playingId) setFocusId(playingId);
+  }, [playingId]);
+
+  /**
    * Where the stepper is, derived from the selection rather than held beside it.
    *
    * Two sources of truth for "which echo are we on" is how a stepper and a map stop
@@ -1065,22 +1066,23 @@ export function App() {
   }, [nowhere, state.position, kids]);
 
   /**
-   * Whether the arrows are up, named because the map has to know too.
+   * Whether the bar is up, named because the map has to know too.
    *
    * Not while the "nothing nearby" panel is up, which is already a full screen answering
-   * the same question, and not while the sheet is open past a peek, because the sheet IS
-   * a list of the same echoes and two ways to walk one list is worse than either.
+   * the same question with its own two buttons.
    *
    * And not on the rose, which is drawn OVER the map rather than instead of it — so the
-   * stepper was still mounted under it, invisible, reserving its hundred pixels and
-   * pushing the control column into the tab bar. The audit caught it: "Zoom in is 38px
-   * under the tab bar (walk/rose)". The rose is its own way of moving between echoes and
-   * does not want a second one underneath.
+   * bar would still be mounted under it, invisible, reserving its height and pushing the
+   * control column into the tab bar. The audit caught exactly that with the stepper:
+   * "Zoom in is 38px under the tab bar (walk/rose)". The rose is its own way of moving
+   * between echoes and does not want a second one underneath.
+   *
+   * The clause about the sheet is gone with the sheet. It used to hide the arrows
+   * whenever the sheet was dragged past a peek, because the sheet was a list of the same
+   * echoes and two ways to walk one list, stacked, is worse than either. There is one way
+   * now.
    */
-  const showStepper =
-    !showingRose &&
-    !(nowhere && !overview) &&
-    (!(!nowhere || nowPlaying !== null) || detent === "peek");
+  const showBar = !showingRose && !(nowhere && !overview) && stepList.length > 0;
 
   /**
    * What walk mode is pointing at.
@@ -1283,7 +1285,7 @@ export function App() {
                       <svg viewBox="0 0 24 24" aria-hidden="true">
                         {MODE_ICON[roamMode]}
                       </svg>
-                      {roamMode === "driving" ? "Driving, no route" : "On foot, around here"}
+                      {roamMode === "driving" ? "Driving" : "Around here"}
                       <span className="journey-change">Change</span>
                     </>
                   ) : (
@@ -1292,7 +1294,12 @@ export function App() {
                     </>
                   )}
                 </button>
-                <CategoryChips
+                {/*
+                  The nine chips, folded into one button on the same line as the journey.
+                  Two rows of top chrome became one, and the row itself is one tap away
+                  inside it, unchanged. See `CategoryFilter`.
+                */}
+                <CategoryFilter
                   available={available}
                   on={activeCats}
                   onToggle={toggleCategory}
@@ -1343,9 +1350,7 @@ export function App() {
                 focusId={focusId}
                 /* The stepper covers the bottom of the map, so the map has to know: it
                    keeps pins, edge markers and the Esri credit above it. */
-                reservedBottom={showStepper ? STEPPER_H : 0}
-                detent={detent}
-                sheet={!nowhere || nowPlaying !== null}
+                reservedBottom={showBar ? ECHOBAR_H : 0}
                 overview={overview}
                 progress={along}
                 theme={theme}
@@ -1356,41 +1361,79 @@ export function App() {
               />
 
               {/*
-                STEP THROUGH THEM, nearest first.
+                ONE BAR, and it is the only chrome at the bottom of the map.
 
-                The map's own answer to "move from echo to echo" was to aim a thumb at a
-                41px pin in a pile of twenty six, and zooming in to make that easier left
-                zero of the twenty six on screen. Clustering made the pile hittable; this
-                makes the aiming optional. Two targets that never move, at the bottom of
-                the screen where a thumb already is.
+                Which echo we are on, what is in my ears, and am I getting warmer: three
+                questions about one echo, which used to be three stacked strips because
+                they arrived on three different days. See `EchoBar`.
 
-                Hidden while the sheet is up past a peek, because the sheet IS a list of
-                the same echoes and two ways to walk one list, one on top of the other, is
-                worse than either. Hidden behind the "nothing nearby" panel too, which is
-                already a full screen answering the same question.
-
-                NOT hidden in the overview, which was the first guess and was wrong. The
-                overview is exactly the screen where somebody has asked "where are they
-                then" about a library spread from Manhattan to Miami — twenty six pins,
-                fifteen of them in one pile — and stepping nearest first is the only
-                answer on that screen that does not involve aiming at the pile.
+                NOT hidden in the overview, which was the first guess about the stepper and
+                was wrong. The overview is exactly the screen where somebody has asked
+                "where are they then" about a library spread from Manhattan to Miami —
+                twenty six pins, fifteen of them in one pile — and stepping nearest first
+                is the only answer on that screen that does not involve aiming at the pile.
               */}
-              {showStepper && (
-                <Stepper
+              {showBar && (
+                <EchoBar
                   items={stepList}
                   index={stepIndex}
+                  stateOf={stateOf}
                   onStep={(i) => {
                     const next = stepList[i];
                     if (!next) return;
-                    // Looking, not choosing. No selection, so no popup over the arrows.
+                    // Looking, not choosing. No selection, so no card over the arrows.
                     setSelectedId(null);
                     setFocusId(next.echo.id);
                   }}
-                  /* Tapping the card is choosing rather than looking, and it opens the
-                     echo exactly as tapping its pin does. */
+                  /*
+                    Tapping the words is choosing rather than looking. On the echo already
+                    playing that means the player, exactly as the mini bar used to; on any
+                    other it means the card, exactly as tapping its pin does.
+                  */
                   onOpen={(echo) => {
+                    if (nowPlaying?.id === echo.id) {
+                      setListening(true);
+                      return;
+                    }
                     setFocusId(null);
                     setSelectedId(echo.id);
+                  }}
+                  nowPlaying={nowPlaying}
+                  playing={playing}
+                  progress={progress}
+                  onPlayPause={() => {
+                    /*
+                      Stopped is not paused. Stop cancelled the utterance, so there is
+                      nothing to resume and `session.resume()` would walk the playhead over
+                      silence — the same distinction the player makes.
+                    */
+                    if (playing) session.pause();
+                    else if (stopped && nowPlaying) playOrAsk(nowPlaying);
+                    else session.resume();
+                  }}
+                  onPlay={(echo) => {
+                    playOrAsk(echo);
+                    setListening(true);
+                  }}
+                  simple={simple}
+                  guidance={state.guidance}
+                />
+              )}
+              {/*
+                What is ahead, and only where you cannot go anywhere.
+
+                It is the one thing the sheet carried that has nowhere else to be. Walking
+                or driving, the bar's arrows ARE the answer to "what next": press right and
+                go to it. At 35,000 feet the route is fixed, nothing is reachable, and
+                choosing what to hear before it goes past is the whole interaction — so on
+                a journey that carries you, the coming-up list stays.
+              */}
+              {!selfDirected && (
+                <UpNext
+                  items={upcoming}
+                  onPlay={(echo) => {
+                    playOrAsk(echo);
+                    setListening(true);
                   }}
                 />
               )}
@@ -1444,9 +1487,10 @@ export function App() {
               )}
               {/*
                 The echo you tapped, over the map.
-                It replaces the guidance bar while it is open rather than stacking with it:
-                two strips saying how far away something is, one of them about a different
-                echo, is how a screen stops meaning anything.
+
+                It is the detail view now that the sheet is gone, which is what it was
+                already doing: everything the sheet's nearby card carried is here, plus the
+                plate and the rule about how close you have to get.
               */}
               {selectedEcho ? (
                 <EchoPopup
@@ -1486,71 +1530,19 @@ export function App() {
                     setSelectedId(null);
                     setListening(true);
                   }}
+                  /*
+                    The camera, which used to hang off a strip inside the sheet.
+
+                    It belongs on the card anyway: the card is already SHOWING the archive
+                    plate, so "there is a photograph of this" is a sentence the screen has
+                    just made without a button, and the offer is to go and stand where it
+                    was taken. Absent on a journey that carries you — there is no then and
+                    now from 35,000 feet.
+                  */
+                  {...(selfDirected ? { onCamera: setCamera } : {})}
                   onClose={() => setSelectedId(null)}
                 />
-              ) : (
-                selfDirected && <ProximityBar guidance={state.guidance} cue={state.cue} />
-              )}
-              {/*
-                No sheet while there is nothing nearby, unless something is playing.
-
-                The sheet's own empty state says "Nothing here yet" in grey at the bottom
-                of the screen, which is the sentence the whole Nowhere screen exists to
-                replace, and it would cover the two buttons that are the only way off it.
-                A transport for something already playing is the one thing worth keeping,
-                because losing it mid-echo would strand the audio with no way to stop it.
-              */}
-              {(!nowhere || nowPlaying) && (
-              <Sheet
-                nearby={nearby}
-                lastCapture={state.lastCapture}
-                captured={kept}
-                stateOf={stateOf}
-                selectedId={selectedId}
-                onSelect={setSelectedId}
-                onPlay={(echo) => {
-                  playOrAsk(echo);
-                  setListening(true);
-                }}
-                isPlaying={(id) =>
-                  state.playback.kind !== "idle" && state.playback.item.echo.id === id
-                }
-                onPause={() => session.pause()}
-                onResume={() => {
-                  /*
-                   * Resuming a stopped echo is starting it, not un-pausing it.
-                   *
-                   * Stop cancels the utterance; there is nothing left to resume, so
-                   * `session.resume()` would move the progress bar over silence. Stopped
-                   * means back at the beginning, so play means play it.
-                   */
-                  if (stopped && nowPlaying) playOrAsk(nowPlaying);
-                  else session.resume();
-                  setStopped(false);
-                }}
-                paused={state.playback.kind === "paused"}
-                upcoming={upcoming}
-                selfDirected={selfDirected}
-                autoPlay={autoPlay}
-                saved={chosen}
-                savedNearby={savedNearby}
-                onRouteCount={inCorridor}
-                nowPlaying={nowPlaying}
-                progress={progress}
-                playing={playing}
-                simple={simple}
-                onSeek={seekTo}
-                detent={detent}
-                onDetent={setDetent}
-                /* Tapping the mini bar is how you reach the player now. */
-                onOpenPlayer={(echo) => {
-                  playOrAsk(echo);
-                  setListening(true);
-                }}
-                {...(selfDirected ? { onCamera: setCamera } : {})}
-                onSave={toggleSave}
-              />
-              )}
+              ) : null}
             </>
           )}
 
@@ -1591,7 +1583,7 @@ export function App() {
                 state.playback.kind !== "idle" && state.playback.item.echo.id === id
               }
               isHeard={(id) => stateOf(id) === "heard"}
-              saved={savedEchoes}
+              saved={savedNearby}
               onSave={toggleSave}
               mode={roaming ? roamMode : route.mode}
             />

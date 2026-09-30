@@ -55,10 +55,6 @@ interface Props {
   readonly stateOf: (echoId: string) => PinState;
   readonly selectedId: string | null;
   readonly onSelect: (echoId: string) => void;
-  /** How much of the screen the sheet is taking, so the view centres on what is visible. */
-  readonly detent: "peek" | "half" | "full";
-  /** Whether a sheet is on screen at all. It is not, with nothing nearby. */
-  readonly sheet?: boolean;
   /**
    * Show the whole journey instead of following the listener.
    *
@@ -106,14 +102,18 @@ interface Props {
    */
   readonly focusId?: string | null;
   /**
-   * Pixels of the bottom that something else is covering, on top of the sheet.
+   * Pixels of the bottom that something else is covering, above the tab bar.
    *
-   * The stepper, today. It is part of the bottom chrome as far as the map is concerned,
-   * so pins, edge markers and the Esri credit all have to clear it — the credit
-   * especially, because Esri's licence requires it to be shown and "present in the DOM
-   * behind an opaque panel" is not shown. That exact bug is why the credit was moved out
-   * from behind the sheet in the first place, and putting a card over the bottom of the
-   * map put it straight back.
+   * The one bar, today, and there used to be a sheet and a guidance strip under it as
+   * well — a whole fraction-of-the-screen calculation, because the sheet had three
+   * detents and could be dragged between them. One fixed number replaced the lot when the
+   * sheet was retired.
+   *
+   * It is part of the bottom chrome as far as the map is concerned, so pins, edge markers
+   * and the Esri credit all have to clear it — the credit especially, because Esri's
+   * licence requires it to be shown and "present in the DOM behind an opaque panel" is
+   * not shown. That exact bug is why the credit was moved out from behind the sheet in
+   * the first place, and putting a card over the bottom of the map put it straight back.
    */
   readonly reservedBottom?: number;
   readonly onPan: (next: { x: number; y: number }) => void;
@@ -140,27 +140,15 @@ interface Props {
 const W = 368;
 const H = 822;
 
-/**
- * Where the route is allowed to be drawn.
- *
- * The map fills the screen, but the sheet covers the bottom third and the status bar the
- * top — so the geometry is fitted into what is actually visible. Without this the pins at
- * either end of the walk sit underneath the sheet, which is where the first and last echoes
- * of any route would always be.
- */
 /*
- * These track the chrome in `theme.css`, and they are the reason this comment exists: the
- * sheet grew from 432px to 466px when the then-and-now strip landed, and this number did
- * not, so the bottom of every route quietly slid underneath it. It had in fact been wrong
- * before that too — 392 was tuned against a sheet that had already been made taller once.
+ * The tab bar, which is the only fixed thing left at the bottom. Everything else down
+ * there arrives as `reservedBottom`.
  *
- * A pin you cannot see is worse than a map with less room in it, so the inset is now
- * derived from the same numbers the CSS uses rather than eyeballed. Change the sheet
- * height and change this with it.
+ * This comment used to be about a sheet that grew from 432px to 466px while this number
+ * did not, so the bottom of every route quietly slid underneath it. That failure mode is
+ * gone with the sheet: there is one number now and the caller passes it.
  */
 const NAV_H = 72;
-/** Matches the detents in `Sheet.tsx` and in `theme.css`, as fractions of the screen. */
-const SHEET_FRACTION = { peek: 0.16, half: 0.46, full: 0.86 } as const;
 /**
  * How many echoes ripple at once.
  *
@@ -218,14 +206,6 @@ const PIN_R = 16;
  */
 const MAPBAR_FALLBACK = 119;
 /**
- * The guidance bar, which floats above the sheet on every mode that can steer.
- *
- * Height plus its gap. It was not in this sum, so on a walk the bottom of the route ran
- * underneath "getting warmer" — invisible, and in the one place a walker is most likely to
- * be looking. Carried modes do not draw it and get the height back.
- */
-const GUIDE_H = 56;
-/**
  * How tall the control column is, so a marker can be kept out from behind it.
  *
  * Five objects at 8px apart, of which the zoom pair is a double-height pill: 44*4 + 88,
@@ -234,29 +214,15 @@ const GUIDE_H = 56;
  */
 const RAIL_H = 44 * 4 + 88 + 8 * 4;
 /**
- * How much of the bottom the sheet is taking.
+ * Where the route and the pins are allowed to be drawn.
  *
- * Zero when there is no sheet, which is a real state rather than a hypothetical: standing
- * somewhere with nothing nearby takes the sheet away entirely, and this sum went on
- * reserving a detent's worth of it. The basemap stopped a hundred and thirty pixels above
- * the tab bar with bare background under it, and the pins were fitted into a band that
- * ended in the same place. Visible the moment it was rendered from Lisbon; invisible in
- * every test, because every test has a sheet.
+ * The map fills the screen; the map bar covers the top and the tab bar plus whatever the
+ * caller reserved covers the bottom. A pin you cannot see is worse than a map with less
+ * room in it, so this is derived from measured heights rather than eyeballed.
  */
-const sheetFraction = (detent: keyof typeof SHEET_FRACTION, sheet: boolean) =>
-  sheet ? SHEET_FRACTION[detent] : 0;
-
-const insetFor = (
-  detent: keyof typeof SHEET_FRACTION,
-  guided: boolean,
-  h: number,
-  sheet: boolean,
-  barH: number,
-  reservedBottom: number,
-) => ({
+const insetFor = (barH: number, reservedBottom: number) => ({
   top: barH + PIN_R / 2,
-  bottom:
-    NAV_H + h * sheetFraction(detent, sheet) + (guided ? GUIDE_H : 0) + reservedBottom + PIN_R / 2,
+  bottom: NAV_H + reservedBottom + PIN_R / 2,
   side: 30,
 });
 
@@ -269,8 +235,6 @@ export function RouteMap({
   stateOf,
   selectedId,
   onSelect,
-  detent,
-  sheet = true,
   overview,
   progress = 0,
   theme,
@@ -515,7 +479,7 @@ export function RouteMap({
   const geometry = useMemo(() => (route ? buildRouteGeometry(route) : null), [route]);
 
   const projection = useMemo(() => {
-    const INSET = insetFor(detent, presetFor(mode).selfDirected, box.h, sheet, barH, reservedBottom);
+    const INSET = insetFor(barH, reservedBottom);
 
     // The band actually visible between the chips and the sheet. The listener belongs in
     // the middle of *that*, not the middle of a box that is half covered.
@@ -576,10 +540,10 @@ export function RouteMap({
     // can name it.
     /*
      * The zoom comes from the fitted band; the grid covers the whole strip of map that is
-     * actually on screen — from under the chips down to the top of the sheet.
+     * actually on screen — from under the map bar down to the top of the tab bar.
      */
     const bandTop = barH;
-    const bandBottom = box.h - NAV_H - box.h * sheetFraction(detent, sheet);
+    const bandBottom = box.h - NAV_H;
     const plan = planTiles(
       centre,
       spanKm,
@@ -602,7 +566,7 @@ export function RouteMap({
     // computed twice and drifting.
     project.plan = plan;
     return project;
-  }, [mode, geometry, library, at, overview, detent, sheet, zoom, box, pan, barH, reservedBottom]);
+  }, [mode, geometry, library, at, overview, zoom, box, pan, barH, reservedBottom]);
 
   const path = useMemo(() => {
     if (!geometry) return "";
@@ -718,7 +682,7 @@ export function RouteMap({
     lastFocus.current = focusId;
     const echo = library.find((e) => e.id === focusId);
     if (!echo) return;
-    const inset = insetFor(detent, presetFor(mode).selfDirected, box.h, sheet, barH, reservedBottom);
+    const inset = insetFor(barH, reservedBottom);
     const wantX = inset.side + (box.w - inset.side * 2) / 2;
     const wantY = inset.top + (box.h - inset.top - inset.bottom) / 2;
     const now = projection(echo.point.at);
@@ -729,7 +693,7 @@ export function RouteMap({
     }
     const group = groups.find((g) => g.members.some((m) => m.item.id === focusId));
     setOpenCluster(group && group.members.length > 1 ? group.members[0]!.item.id : null);
-  }, [focusId, library, projection, groups, pan, onPan, detent, mode, box, sheet, barH, reservedBottom]);
+  }, [focusId, library, projection, groups, pan, onPan, box, barH, reservedBottom]);
 
   const openingById = new Map(opening.map((a) => [a.echo.id, a]));
   const here = at ? projection(at) : null;
@@ -784,7 +748,7 @@ export function RouteMap({
      * much further, so almost everything in the list is off the edge by definition. Three
      * markers there is not help, it is permanent furniture: a rendered walk had pointers
      * to 900 m, 1.1 km and 1.4 km sitting over the pins that were actually on screen,
-     * every second of every walk, saying nothing the sheet below was not already saying
+     * every second of every walk, saying nothing the bar below was not already saying
      * in full. So at or below the default framing this behaves like board 2 and shows the
      * one marker the board shows, for the echo actually worth the walk.
      *
@@ -805,8 +769,7 @@ export function RouteMap({
      * separated downward so two echoes at a similar bearing do not stack into one
      * unreadable pill with only the top one reachable.
      */
-    const railBottom =
-      box.h - (NAV_H + box.h * sheetFraction(detent, sheet) + GUIDE_H + 12);
+    const railBottom = box.h - (NAV_H + reservedBottom + 12);
     const railTop = railBottom - RAIL_H;
     const floor = barH + 40;
     let lastY = -Infinity;
@@ -820,7 +783,7 @@ export function RouteMap({
       lastY = y;
       return { ...mark, y };
     });
-  }, [at, overview, library, stateOf, projection, box, zoom, detent, sheet, barH]);
+  }, [at, overview, library, stateOf, projection, box, zoom, barH, reservedBottom]);
 
   /**
    * One pin, drawn wherever it has been put.
@@ -1175,8 +1138,8 @@ export function RouteMap({
 
       <clipPath id="mapBand">
         {/* Pins outside the map's own band used to draw straight over the route ribbon and
-            the category chips, which float above it with no background of their own. The
-            sheet covers the bottom edge already; this is the top. */}
+            the category filter, which float above it with no background of their own. The
+            bar and the tab bar cover the bottom edge already; this is the top. */}
         <rect x="0" y={barH} width={box.w} height={box.h - barH} />
       </clipPath>
       <g clipPath="url(#mapBand)">
@@ -1249,7 +1212,7 @@ export function RouteMap({
          * the shape still reads as one group.
          */
         const reach = Math.max(...spokes.map((s) => Math.hypot(s.x, s.y))) + PIN_R;
-        const bandBottom = box.h - NAV_H - reservedBottom - box.h * sheetFraction(detent, sheet);
+        const bandBottom = box.h - NAV_H - reservedBottom;
         /*
          * And clear of the control column, which is drawn over the map on the right.
          *
@@ -1310,19 +1273,19 @@ export function RouteMap({
       {/*
         The attribution, where it can actually be read.
         
-        It was placed eight pixels above the tab bar — which is a couple of hundred pixels
-        *behind* the sheet at every detent, so it has never once been visible. Esri's
-        licence requires it to be shown, and a credit line that is present in the DOM and
-        covered by an opaque panel is not shown. It now sits at the bottom of whatever
-        strip of map is on screen, above the guidance bar, which is where every map on the
-        web puts it.
+        It was placed eight pixels above the tab bar — which was a couple of hundred pixels
+        *behind* the sheet at every detent, so it went a long time without once being
+        visible. Esri's licence requires it to be shown, and a credit line that is present
+        in the DOM and covered by an opaque panel is not shown. It now sits at the bottom
+        of whatever strip of map is on screen, above the bar, which is where every map on
+        the web puts it.
       */}
       {/* Left, not right: the control column lives on the right and the credit was being
           drawn straight through it, one unreadable line over three buttons. */}
       <text
         className="map-credit"
         x={10}
-        y={box.h - insetFor(detent, presetFor(mode).selfDirected, box.h, sheet, barH, reservedBottom).bottom + 2}
+        y={box.h - insetFor(barH, reservedBottom).bottom + 2}
         textAnchor="start"
       >
         {TILE_ATTRIBUTION}
