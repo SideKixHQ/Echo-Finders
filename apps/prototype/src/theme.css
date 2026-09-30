@@ -1446,11 +1446,118 @@ body {
 /* The guidance bar has nowhere to be once the sheet fills the screen, and drawing it over
    the player is how it ended up on top of the plain-language switch. */
 .screen:has(.sheet-full) .proximity, .screen:has(.sheet-playing.sheet-half) .proximity { display: none; }
-.proximity { bottom: calc(var(--nav-h) + var(--sheet-h) + 10px); }
+/*
+ * And the control column goes with it, for the same reason and with better evidence.
+ *
+ * At those two detents the band left between the chips and the sheet is 63px on a tall
+ * phone and negative on a short one, against a column that is 350 tall. It has never
+ * fitted: measured by the audit at 375x667, every one of the five fabs was 94 pixels off
+ * the TOP of the screen at the full detent — drawn over the journey chip or past it.
+ *
+ * The note on `.sheet-playing.sheet-half` says 56dvh was chosen to leave the column room,
+ * and the arithmetic says it does not. Hiding it is the honest version of what was
+ * already happening, and the sheet is one drag from being out of the way.
+ */
+.screen:has(.sheet-full) .rail, .screen:has(.sheet-playing.sheet-half) .rail { display: none; }
+/*
+ * THE STEPPER, and the bottom stack it joins.
+ *
+ * It sits directly above the sheet, at the bottom of the screen where a thumb already
+ * is — the whole argument for it over a pin is that neither arrow ever moves and neither
+ * one has to be aimed at. Everything else in the stack is pushed up by its height, using
+ * the same `:has()` idiom the sheet's own detents already use, so nothing has to be told
+ * twice that the stepper is there.
+ */
+.screen:has(.stepper) { --step-h: 104px; }
+.stepper {
+  position: absolute; left: 0; right: 0; z-index: 24;
+  bottom: calc(var(--nav-h) + var(--sheet-h) + 8px);
+  padding: 0 14px;
+  transition: bottom 0.34s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.stepper-row { display: flex; align-items: stretch; gap: 8px; }
+/*
+ * 54, which is over the 44 Apple asks for rather than exactly at it. These are the two
+ * targets the whole feature exists to provide and they are pressed while walking; the
+ * legal floor is the wrong place to land when the control's entire job is being easy to
+ * hit without looking.
+ */
+.stepper-arrow {
+  width: 54px; flex: none; border-radius: 16px; cursor: pointer;
+  display: grid; place-items: center; color: var(--text);
+  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+.stepper-arrow svg {
+  width: 20px; height: 20px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.stepper-arrow:active { background: rgba(var(--rgb-panel), 1); }
+.stepper-card {
+  flex: 1; min-width: 0; text-align: left; cursor: pointer;
+  display: flex; flex-direction: column; gap: 4px;
+  padding: 11px 14px; border-radius: 16px; font: inherit;
+  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+.stepper-kicker {
+  /* 11, not 10.5. Apple's floor is 11pt and on a 390pt phone that is 11px; the audit
+     caught the half pixel, and this app is read outdoors at arm's length, which argues
+     for the high side of any guideline rather than the low. */
+  display: flex; gap: 8px; font-size: 11px; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+}
+/* The one warm thing on the card, because rarity is the echo rather than the control. */
+.stepper-kicker b { color: var(--ember-core); font-weight: 500; }
+/*
+ * Two lines, then an ellipsis. A title that wraps to four lines changes the height of the
+ * card every time the arrow is pressed, and a control that moves under your thumb between
+ * presses is the one thing this is supposed to fix.
+ */
+.stepper-title {
+  font-size: 15px; font-weight: 500; line-height: 1.26; color: var(--white);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.stepper-where {
+  font-size: 12px; color: var(--muted);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+/*
+ * THE ONE THE ARROWS ARE ON.
+ *
+ * A bloom on it and everything else banked down. The dim is doing the harder half of the
+ * work: on a map of twenty six pins a highlight says "this one is special", and what the
+ * stepper needs to say is "this one, and you can ignore the rest until you press again".
+ */
+.map-focusing .pin:not(.pin-focus), .map-focusing .clus { opacity: 0.32; }
+.map-focusing .pin, .map-focusing .clus { transition: opacity 0.26s linear; }
+.pin-focus .pin-hit ~ * { filter: drop-shadow(0 0 10px rgba(0, 255, 231, 0.55)); }
+.pin-focus::after { content: none; }
+/* A ring that arrives with it, so the eye is told where to look rather than left to
+   find the one thing that did not fade. */
+@keyframes focusBloom {
+  from { r: 16; opacity: 0.9; }
+  to { r: 40; opacity: 0; }
+}
+.pin-focus-ring {
+  fill: none; stroke: var(--aqua); stroke-width: 2; pointer-events: none;
+  animation: focusBloom 1.1s cubic-bezier(0.32, 0.72, 0, 1) infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pin-focus-ring { animation: none; r: 26px; opacity: 0.55; }
+}
+
+.stepper-count {
+  margin: 7px 0 0; text-align: center; font-size: 11px;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+}
+
+.proximity { bottom: calc(var(--nav-h) + var(--sheet-h) + var(--step-h, 0px) + 10px); }
 /* Above the guidance bar when there is one; the guidance bar's own slot when there is not,
    which is every carried mode. */
-.playing { bottom: calc(var(--nav-h) + var(--sheet-h) + 64px); }
-.stack-noguide .playing { bottom: calc(var(--nav-h) + var(--sheet-h) + 10px); }
+.playing { bottom: calc(var(--nav-h) + var(--sheet-h) + var(--step-h, 0px) + 64px); }
+.stack-noguide .playing { bottom: calc(var(--nav-h) + var(--sheet-h) + var(--step-h, 0px) + 10px); }
 
 /* ── full-screen panels ──────────────────────────────────── */
 .screen-body {
@@ -1988,10 +2095,66 @@ body {
    detents are fixed; ours are not, so it is derived from the same variables
    the sheet and the guidance bar use. Same intent, one number instead of
    three. */
+/*
+ * How tall the column is, and how much of the top the chrome takes.
+ *
+ * Both are here so the clamp below can be written, and both track the components rather
+ * than the design: measured on a real render, the column is 350 tall and the journey chip
+ * plus the category chips come to 151.
+ */
+/* How much of the top the chrome takes, measured on a real render: the journey
+   chip plus the category chips come to 151, and the column wants to clear them. */
+.screen { --mapbar-h: 157px; }
 .rail {
   position: absolute; right: 14px; z-index: 26;
-  bottom: calc(var(--nav-h) + var(--sheet-h) + var(--guide-h, 56px) + var(--now-h, 0px) + 12px);
-  display: flex; flex-direction: column; gap: 8px;
+  /*
+   * Bottom anchored, AND CLAMPED INTO THE MAP BAND.
+   *
+   * The stack it sits on top of keeps growing — sheet, guidance bar, now playing, and now
+   * the stepper — and on a tall phone that is fine. On a 375x667 iPhone SE, adding the
+   * stepper's 104 pushed the column's top to y=71, which is above the category chips: the
+   * zoom buttons were drawn over the filter row and the top fab over the journey chip's
+   * own Change button. Rendered, immediately, the first time it was looked at on a short
+   * screen. The audit already had the other half of this — at the full sheet detent the
+   * same column goes off the BOTTOM — so it is a column that has never been told it has
+   * to fit anywhere.
+   *
+   * `min` keeps it below the chrome, `max` keeps it above the tab bar, and between them
+   * it behaves exactly as before on any screen tall enough to hold it.
+   */
+  bottom: calc(var(--nav-h) + var(--sheet-h) + var(--step-h, 0px) + var(--guide-h, 56px) + var(--now-h, 0px) + 12px);
+  /*
+   * IT WRAPS RATHER THAN OVERFLOWING, and that is the only thing that actually works.
+   *
+   * The stack under this column keeps growing — sheet, guidance bar, now playing, and
+   * now the stepper — and on a 375x667 iPhone SE the sum stopped fitting. Pushing the
+   * column up put its top at y=71, over the category chips and the journey chip's Change
+   * button. Clamping it below the chrome instead pushed its bottom down into the
+   * stepper's right arrow. Both were rendered and both were wrong, because at 350 tall
+   * plus 157 of chrome plus 74 of tab bar plus 104 of stepper the column is asking for
+   * 685 pixels of a 667 pixel phone. There is no offset that fixes that.
+   *
+   * So it is allowed to become two columns. `wrap-reverse` grows leftwards, away from
+   * the edge it is anchored to, and `align-content: flex-end` keeps the full column on
+   * the right where the thumb is. On any screen tall enough it stays one column and
+   * nothing changes.
+   *
+   * The audit's other complaint about this column — at the full sheet detent every fab
+   * is off the bottom — is the same arithmetic and the same fix.
+   */
+  max-height: max(
+    /* Never collapses to nothing, whatever the sum says. */
+    88px,
+    calc(
+      100% - var(--mapbar-h) - var(--nav-h) - var(--sheet-h) - var(--step-h, 0px) -
+        var(--guide-h, 56px) - var(--now-h, 0px) - 24px
+    )
+  );
+  display: flex; flex-direction: column; flex-wrap: wrap-reverse;
+  /* Each column ends at the bottom, so a wrapped second column sits level with the
+     first rather than starting at the top with a gap under it. No effect at all while
+     the column fits, because then the box is only as tall as its contents. */
+  align-content: flex-end; justify-content: flex-end; gap: 8px;
   transition: bottom 0.34s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.2s linear;
 }
 .fab {
@@ -2459,6 +2622,67 @@ body {
 /* The pin's real target. Invisible, and the only reason a pin tap lands: an SVG group
    has no geometry, so without this the hit area is the 13px body circle. */
 .pin-hit { fill: transparent; }
+
+/*
+ * A PILE OF PINS, AS ONE THING YOU CAN TAP.
+ *
+ * Measured before this existed: twenty six pins on the Manhattan map with fifteen of them
+ * within one pixel of each other, and seventeen of the twenty six with a nearest
+ * neighbour at a distance of zero. Whatever was last in the DOM won every tap.
+ *
+ * The dot is not anonymous. It takes its category colour from the best echo in the pile
+ * through `cat-*`, and keeps that echo's rarity halo, so the one singular story in a
+ * stack of fifteen still pulls the eye the way the rest of the map is built to make it.
+ */
+.clus { cursor: pointer; }
+/* Two rings a few pixels apart: a stack of cards rather than a bubble, which says "more
+   than one" before the number is read. */
+.clus-back {
+  fill: var(--space); stroke: currentColor; stroke-width: 1.6; opacity: 0.45;
+}
+.clus-body {
+  fill: var(--space); stroke: currentColor; stroke-width: 2.4;
+}
+.clus-n {
+  fill: var(--white); font-family: "Space Grotesk", ui-monospace, monospace;
+  font-weight: 500; paint-order: stroke; pointer-events: none;
+}
+/* The two rarities keep their warmth here too, so a pile containing the good one does not
+   read as a pile of nothing. */
+.clus-singular .clus-body, .clus-rare .clus-body { stroke: var(--ember); }
+.clus-singular .clus-n, .clus-rare .clus-n { fill: var(--ember-core); }
+
+/*
+ * FANNED OPEN. The members pushed out onto rings at a full 44 apart, each with a line
+ * back to where it really is — without the lines this is just pins in the wrong places.
+ */
+.fan-backdrop { fill: rgba(5, 7, 15, 0.5); cursor: pointer; }
+.fan-spoke {
+  stroke: rgba(255, 255, 255, 0.28); stroke-width: 1.2; stroke-dasharray: 2 3;
+  pointer-events: none;
+}
+.fan-anchor { fill: rgba(255, 255, 255, 0.5); pointer-events: none; }
+/*
+ * They arrive rather than appear, and the animation goes on a WRAPPER rather than on the
+ * pin.
+ *
+ * Put on `.fan .pin` directly, the `transform: none` at the end of the keyframe overrides
+ * the pin's own `transform="translate(x y)"` attribute — CSS transform beats the SVG
+ * presentation attribute — so every one of the fifteen snapped to the origin of the map
+ * the instant the animation finished. Measured: closest pair zero, which is the exact
+ * defect this feature exists to fix, reintroduced by its own transition.
+ */
+@keyframes fanIn {
+  from { opacity: 0; transform: scale(0.55); }
+  to { opacity: 1; transform: scale(1); }
+}
+.fan-pop {
+  transform-box: fill-box; transform-origin: center;
+  animation: fanIn 0.2s cubic-bezier(0.32, 0.72, 0, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fan-pop { animation: none; }
+}
 
 /* The control column stands down while an echo is open.
    The popup spans the width and sat straight over the rail's lower buttons, so they were

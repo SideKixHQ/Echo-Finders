@@ -30,6 +30,7 @@ import { Synced } from "./Synced";
 import { Walk } from "./Walk";
 import { Nowhere } from "./Nowhere";
 import { Ribbon } from "./Ribbon";
+import { Stepper, STEPPER_H } from "./Stepper";
 import { Paywall } from "./Paywall";
 import { readEntitlement, unlock } from "./entitlement-store";
 import { City } from "./City";
@@ -930,6 +931,83 @@ export function App() {
     if (showingRose) setDetent("peek");
   }, [showingRose]);
 
+  /**
+   * What is drawn on the map, and therefore what the stepper walks.
+   *
+   * One list, hoisted out of the `RouteMap` call it used to be written inline in, because
+   * the stepper has to step through EXACTLY what is on the map. Two expressions that
+   * happen to agree today is how "3 of 26" ends up pointing at an echo with no pin.
+   *
+   * Overview means show me the lot, and while roaming that is the whole library rather
+   * than what happens to be in reach. It is the answer to "where are they then" from
+   * somewhere with nothing nearby, and without it the button framed an empty street: the
+   * map had only ever been given the engine's nearby list, which on that screen is empty
+   * by definition.
+   *
+   * Done here rather than by widening the engine's radius, because the radius also
+   * decides what the hum sings and what the rose draws, and looking at a map of the world
+   * should not put four hundred voices in somebody's ears.
+   */
+  const onMap = useMemo(
+    () =>
+      roaming
+        ? (overview ? LIBRARY : state.nearby.map((n) => n.echo)).filter((e) =>
+            activeCats.has(e.category),
+          )
+        : onRoute.filter((e) => activeCats.has(e.category)),
+    [roaming, overview, state.nearby, activeCats, onRoute],
+  );
+
+  /**
+   * The same list, nearest first, which is the order the stepper moves in.
+   *
+   * Distance order rather than library order, because the next item then has a meaning: it
+   * is the cheapest one to go and get. Library order would be an order about the database.
+   *
+   * With no position fix there is nothing to measure from, so it keeps the map's own
+   * order and says no distance rather than inventing one.
+   */
+  const stepList = useMemo(() => {
+    const from = state.position?.at ?? null;
+    const items = onMap.map((echo) => ({
+      echo,
+      distanceKm: from ? distanceKm(from, echo.point.at) : null,
+    }));
+    if (from) items.sort((a, b) => (a.distanceKm ?? 0) - (b.distanceKm ?? 0));
+    return items;
+  }, [onMap, state.position]);
+
+  /**
+   * The echo the arrows are looking at.
+   *
+   * SEPARATE FROM `selectedId`, and the separation is the design rather than plumbing.
+   * Stepping is LOOKING: the map brings the next echo to the middle and its pin blooms,
+   * and nothing else happens. Tapping the card, or tapping a pin, is CHOOSING, and that
+   * opens the echo.
+   *
+   * Collapsing the two was the first attempt and it broke itself immediately: selecting
+   * opens the detail popup, the popup covers the bottom of the screen, and the bottom of
+   * the screen is where the arrows are — so pressing next once made it impossible to
+   * press next again. Measured in a browser, as a click that timed out on "popup
+   * intercepts pointer events".
+   *
+   * It also means tapping a pin must not move the map. The thing you just aimed at
+   * jumping to the centre under your thumb takes the ground you were reading with it.
+   */
+  const [focusId, setFocusId] = useState<string | null>(null);
+
+  /**
+   * Where the stepper is, derived from the selection rather than held beside it.
+   *
+   * Two sources of truth for "which echo are we on" is how a stepper and a map stop
+   * agreeing: tap a pin and the arrows carry on from somewhere else. The selection IS
+   * the position, so tapping a pin moves the stepper to it for free.
+   */
+  const stepIndex = useMemo(() => {
+    const on = focusId ?? selectedId;
+    return on ? stepList.findIndex((i) => i.echo.id === on) : -1;
+  }, [stepList, focusId, selectedId]);
+
   /** What the ears and the dial are both fed. One list, so they can never disagree. */
   const around = useMemo(
     () =>
@@ -967,6 +1045,24 @@ export function App() {
     }
     return best;
   }, [nowhere, state.position, kids]);
+
+  /**
+   * Whether the arrows are up, named because the map has to know too.
+   *
+   * Not while the "nothing nearby" panel is up, which is already a full screen answering
+   * the same question, and not while the sheet is open past a peek, because the sheet IS
+   * a list of the same echoes and two ways to walk one list is worse than either.
+   *
+   * And not on the rose, which is drawn OVER the map rather than instead of it — so the
+   * stepper was still mounted under it, invisible, reserving its hundred pixels and
+   * pushing the control column into the tab bar. The audit caught it: "Zoom in is 38px
+   * under the tab bar (walk/rose)". The rose is its own way of moving between echoes and
+   * does not want a second one underneath.
+   */
+  const showStepper =
+    !showingRose &&
+    !(nowhere && !overview) &&
+    (!(!nowhere || nowPlaying !== null) || detent === "peek");
 
   /**
    * What walk mode is pointing at.
@@ -1216,31 +1312,20 @@ export function App() {
               <RouteMap
                 route={roaming ? null : route}
                 mode={roaming ? roamMode : route.mode}
-                library={
-                  roaming
-                    ? /*
-                        Overview means show me the lot, and while roaming that is the
-                        whole library rather than what happens to be in reach. It is the
-                        answer to "where are they then" from somewhere with nothing
-                        nearby, and without it the button framed an empty street: the map
-                        had only ever been given the engine's nearby list, which on that
-                        screen is empty by definition.
-
-                        Done here rather than by widening the engine's radius, because
-                        the radius also decides what the hum sings and what the rose
-                        draws, and looking at a map of the world should not put four
-                        hundred voices in somebody's ears.
-                      */
-                      (overview ? LIBRARY : state.nearby.map((n) => n.echo)).filter((e) =>
-                        activeCats.has(e.category),
-                      )
-                    : onRoute.filter((e) => activeCats.has(e.category))
-                }
+                library={onMap}
                 position={state.position}
                 opening={state.opening}
                 stateOf={stateOf}
                 selectedId={selectedId}
-                onSelect={setSelectedId}
+                onSelect={(id) => {
+                  // A pin tap is a selection, not a request to move the map.
+                  setFocusId(null);
+                  setSelectedId(id);
+                }}
+                focusId={focusId}
+                /* The stepper covers the bottom of the map, so the map has to know: it
+                   keeps pins, edge markers and the Esri credit above it. */
+                reservedBottom={showStepper ? STEPPER_H : 0}
                 detent={detent}
                 sheet={!nowhere || nowPlaying !== null}
                 overview={overview}
@@ -1251,6 +1336,46 @@ export function App() {
                 pan={pan}
                 onPan={setPan}
               />
+
+              {/*
+                STEP THROUGH THEM, nearest first.
+
+                The map's own answer to "move from echo to echo" was to aim a thumb at a
+                41px pin in a pile of twenty six, and zooming in to make that easier left
+                zero of the twenty six on screen. Clustering made the pile hittable; this
+                makes the aiming optional. Two targets that never move, at the bottom of
+                the screen where a thumb already is.
+
+                Hidden while the sheet is up past a peek, because the sheet IS a list of
+                the same echoes and two ways to walk one list, one on top of the other, is
+                worse than either. Hidden behind the "nothing nearby" panel too, which is
+                already a full screen answering the same question.
+
+                NOT hidden in the overview, which was the first guess and was wrong. The
+                overview is exactly the screen where somebody has asked "where are they
+                then" about a library spread from Manhattan to Miami — twenty six pins,
+                fifteen of them in one pile — and stepping nearest first is the only
+                answer on that screen that does not involve aiming at the pile.
+              */}
+              {showStepper && (
+                <Stepper
+                  items={stepList}
+                  index={stepIndex}
+                  onStep={(i) => {
+                    const next = stepList[i];
+                    if (!next) return;
+                    // Looking, not choosing. No selection, so no popup over the arrows.
+                    setSelectedId(null);
+                    setFocusId(next.echo.id);
+                  }}
+                  /* Tapping the card is choosing rather than looking, and it opens the
+                     echo exactly as tapping its pin does. */
+                  onOpen={(echo) => {
+                    setFocusId(null);
+                    setSelectedId(echo.id);
+                  }}
+                />
+              )}
               {/*
                 No control column either. It carries the map toggle, recentre and download,
                 which all act on echoes in reach, and with none in reach it had nothing to

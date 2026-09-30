@@ -1,6 +1,8 @@
 # Moving from echo to echo, on a phone
 
-Options, not a decision. Nothing here is built yet.
+**C and B are built.** A, D and E are still options. The measurements below are the ones
+that led to the choice and are kept as the record of what was wrong; see *What got built*
+at the bottom for what changed and what it cost.
 
 ![The five options](img/moving-between-echoes-options.png)
 
@@ -151,3 +153,77 @@ These are defects rather than choices, and they want fixing either way.
    It needs an edge marker, or "26 echoes off screen, tap to fit".
 4. There is no list on the roam map at all, so there is currently nothing to step through
    even if you wanted to.
+
+
+## What got built
+
+**C, then B, in that order, because C is the one the other four are standing on.**
+
+And before either of them, the thing neither option would have fixed: **tapping a pin did
+nothing at all.** The map took pointer capture on every `pointerdown`, and while a pointer
+is captured the `click` that follows is dispatched at the capturing element rather than at
+what was under the finger. Instrumented in a browser: pointerdown landed on
+`circle.pin-body` inside the pin, and both pointerup and click were delivered to
+`svg.map`, so no pin's own handler had ever run. Capture is only needed once a finger has
+slid off the element, which cannot happen before a drag has started, so it is taken at the
+moment the drag threshold is crossed instead. A tap now involves no capture at all.
+
+That is worth saying plainly because it had been read as a hit-target problem twice, and
+the 44px invisible circle added to fix it was already there and already working.
+
+![Clustering and stepping](img/clustering-and-stepping.png)
+
+### C, cluster and fan out
+
+Anything landing within 40px of a group's centre joins the group, which draws as one
+numbered dot. The dot keeps the best member's category colour and rarity halo, so the one
+singular echo in a pile of fifteen still pulls the eye. Tapping fans the members onto
+concentric rings spaced exactly 44px apart, each with a line back to where it really is.
+Tapping the backdrop, a member, or moving the map puts them away.
+
+Greedy assignment to the nearest centre rather than the single-link method the city screen
+uses, because single link would chain a street of well-spaced pins into one dot. The
+geometry is in `packages/core/src/ranking/pin-clusters.ts` with eleven tests, one of which
+checks every pair at every group size from two to twenty six and fails if any two land
+closer than a thumb.
+
+### B, one at a time
+
+Two arrows at the bottom of the screen, nearest first, wrapping at both ends. The map
+brings the next echo to the middle of the visible band, its pin blooms and everything else
+dims, and a card names it. "4 of 26 · nearest first".
+
+**Stepping is looking; tapping is choosing.** The two were the same thing in the first
+version and it broke itself immediately: selecting opens the detail popup, the popup covers
+the bottom of the screen, and the bottom of the screen is where the arrows are, so pressing
+next once made it impossible to press next again. The two are separate state now, and
+stepping into a group opens that group's fan — a stepper that says "3 of 26" and then
+centres on a dot labelled 15 has answered a different question.
+
+### Three layout defects it turned up on the way
+
+None of these were the feature, and all three were only visible at a size nobody had
+rendered at.
+
+**The map bar's height was a constant that had drifted 32 pixels.** `MAPBAR_H` said 119;
+the journey chip plus the category chips render 151. The gap was a band of map that pins
+were allowed to sit in, and the pin sitting in it was the fifteen-echo cluster for the
+whole of lower Manhattan: `elementFromPoint` at its centre returned `BUTTON.chip`. It is
+measured off the real element now rather than declared.
+
+**The control column has never fitted.** The stack under it kept growing — sheet, guidance
+bar, now playing, and now the stepper — and at 375x667 the sum stopped fitting: every fab
+94 pixels off the top at the full sheet detent. It wraps into a second column now, and at
+the two detents where the band is negative on any phone it is hidden, exactly as the
+guidance bar already is.
+
+**A CSS animation wiped the pins' positions.** The fan's arrival animation ended in
+`transform: none`, which overrides an SVG `transform` attribute, so all fifteen snapped to
+the origin of the map the instant it finished. Measured as a closest pair of zero — the
+exact defect the feature exists to fix, reintroduced by its own transition.
+
+### Still open
+
+`npm run audit:controls` still reports the zoom pill off the top of a 375x667 screen on the
+rose view. It is reported rather than fixed: reproducing it needs the walking simulation
+the audit drives, and it is a rose-screen layout question rather than part of this.
