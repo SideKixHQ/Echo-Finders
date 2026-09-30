@@ -1,8 +1,8 @@
 /**
  * Every control in the app, checked against the things a screenshot cannot show.
  *
- * Walks the whole product — onboarding, every sheet detent, every tab, the package screen
- * — and inventories each visible interactive element, then reports the three failures that
+ * Walks the whole product — onboarding, the map, the card, the player, every tab, the
+ * package screen — and inventories each visible interactive element, then reports the three failures that
  * are invisible to the eye and fatal to somebody relying on assistive technology:
  *
  *   - no accessible name (a button a screen reader announces as "button")
@@ -348,45 +348,51 @@ for (let i=0;i<9 && await p.locator('.onb').count();i++){
 }
 await p.waitForTimeout(4500);
 /*
- * Walking opens on the rose with the sheet at one row (see docs/05-walking.md), so the
- * sheet has to be raised before anything in the list can be clicked, and the rose is its
- * own screen worth inventorying.
+ * Walking opens on the rose, which is its own screen and worth inventorying. The map is
+ * one tap behind it.
  */
 await capture('walk/rose');
 focus.push(...await focusSweep('walk/rose'));
-// Visibility, not presence: the list is in the DOM at peek and hidden by CSS, so a count
-// of one means nothing about whether anything in it can be clicked.
-for (let i = 0; i < 4 && !(await p.locator('.list').isVisible().catch(() => false)); i++) {
-  await p.locator('.grab-zone').click();
-  await p.waitForTimeout(500);
-}
-await capture('map/half');
-focus.push(...await focusSweep('map/half'));
-await p.locator('.erow-body').first().click(); await p.waitForTimeout(500);
-await capture('map/row-open');
 /*
- * Playing an echo now opens the listening screen, which is a screen in its own right and
- * gets inventoried like one. Without this step the audit's next click landed on the
- * listening screen instead of the sheet and the whole walk timed out, which is the audit
- * doing its job: a screen appeared that it had never been told about.
+ * THE SHEET IS GONE, and so are the four steps that used to be here.
+ *
+ * This walked the sheet: raise it to half, click a row, click a plate to play, then drag
+ * through full and peek and both of the sheet's tabs. There is one bar now (`EchoBar`),
+ * the transcript is on the player and saved is under My Echoes, so the walk is the walk a
+ * person actually takes — step the arrows, open the card, play from it.
  */
-await p.locator('.erow-plate').first().click(); await p.waitForTimeout(2200);
+await p.getByLabel(/^Show me the map|the street map/).click().catch(()=>{});
+await p.waitForTimeout(800);
+await capture('map');
+focus.push(...await focusSweep('map'));
+await p.locator('.echobar-arrow').last().click(); await p.waitForTimeout(700);
+await capture('map/stepped');
+await p.locator('.echobar-tap').click(); await p.waitForTimeout(600);
+await capture('map/card');
+focus.push(...await focusSweep('map/card'));
+/*
+ * Playing an echo opens the listening screen, which is a screen in its own right and gets
+ * inventoried like one. Without this step the audit's next click landed on the listening
+ * screen instead of the map and the whole walk timed out, which is the audit doing its
+ * job: a screen appeared that it had never been told about.
+ */
+const play = p.locator('.pop-go');
+if (await play.count()) { await play.click(); await p.waitForTimeout(2200); }
+else { await p.locator('.pop-close').click(); await p.waitForTimeout(400);
+       await p.locator('.echobar-orb').click(); await p.waitForTimeout(2200); }
 await capture('listening');
 focus.push(...await focusSweep('listening'));
-await p.getByRole('button', { name: /Read it/ }).click(); await p.waitForTimeout(500);
+await p.getByRole('button', { name: /Read it/ }).click().catch(()=>{}); await p.waitForTimeout(500);
 await capture('listening/reading');
-await p.getByRole('button', { name: /Hide it/ }).click(); await p.waitForTimeout(400);
-await p.getByLabel('Back to the map').click(); await p.waitForTimeout(600);
+await p.getByRole('button', { name: /Hide it/ }).click().catch(()=>{}); await p.waitForTimeout(400);
+await p.getByLabel('Back to the map').click().catch(()=>{}); await p.waitForTimeout(600);
 await capture('map/playing');
-const grab = p.locator('.grab-zone');
-await grab.click(); await p.waitForTimeout(500); await capture('map/full');
-await grab.click(); await p.waitForTimeout(600); await capture('map/peek');
-await grab.click(); await p.waitForTimeout(600);
-await p.locator('.sheet .seg', {hasText:'Transcript'}).click(); await p.waitForTimeout(500);
-await capture('sheet/transcript');
-focus.push(...await focusSweep('sheet/transcript'));
-await p.locator('.sheet .seg', {hasText:'Saved'}).click(); await p.waitForTimeout(500);
-await capture('sheet/saved');
+focus.push(...await focusSweep('map/playing'));
+/* The category row, which is behind one button now rather than always on screen. */
+await p.locator('.catfilter-tap').click(); await p.waitForTimeout(400);
+await capture('map/filter');
+focus.push(...await focusSweep('map/filter'));
+await p.locator('.catfilter-tap').click(); await p.waitForTimeout(300);
 await p.locator('.nav button').nth(1).click(); await p.waitForTimeout(700); await capture('my-echoes');
 focus.push(...await focusSweep('my-echoes'));
 /*

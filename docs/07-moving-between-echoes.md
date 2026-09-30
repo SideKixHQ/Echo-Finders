@@ -222,8 +222,122 @@ guidance bar already is.
 the origin of the map the instant it finished. Measured as a closest pair of zero — the
 exact defect the feature exists to fix, reintroduced by its own transition.
 
+## Then a photograph arrived
+
+The same screen, on a real phone, from the deployed build. Measured off the picture:
+
+| | |
+| --- | --- |
+| Journey chip plus category chips | 151px |
+| Proximity strip, stepper, sheet peek, tab bar | 366px |
+| Map | 150px, on a 667px screen |
+
+Twenty two percent of the screen was the map, on a product whose whole proposition is
+looking at what is around you. "The map is the main focus but you have a sheet and the
+selector and it doesn't make sense, it takes up too much room."
+
+The three strips at the bottom were three because they arrived on three different days,
+not because they answer three different questions:
+
+| strip | question |
+| --- | --- |
+| the stepper | which echo are we on, and take me to the next one |
+| the mini player | what is in my ears, and shut it up |
+| the proximity bar | am I getting warmer |
+
+All three are about **one echo**. So there is one bar about one echo, and the three answers
+are a row, an orb and a colour rather than 224 pixels of stacked panels.
+
+### The orb is the creature
+
+It was going to be a play triangle in a circle, which is what every audio app has, and the
+character was going to be a flourish somewhere else. But the creature's eyes ALREADY ARE a
+pause glyph that swings into a play triangle when you sync it — that is the whole idea of
+it (`Echo.tsx`). A bar that needs a play button and a product whose character's face IS a
+play button is not two problems.
+
+| state | face | tapping it |
+| --- | --- | --- |
+| you have not been there | `sealed` | opens the card. There is nothing to play yet, and a play button that refuses is worse than no play button |
+| the cue is warm on this one | `calling` | opens the card. It has noticed you |
+| synced | `armed`, which is the play triangle | plays it |
+| playing | `playing` | pauses |
+
+### Proximity rides the same object
+
+The strip is gone and the answer costs no height: the orb's halo pulses in time with the
+cue the engine emitted, in ember, the rim warms with it, and the creature turns to
+`calling`. Same rhythm as the haptic, so the two channels say one thing. On an iPhone web
+build this is the only proximity feedback there is at all — there is no vibration API in
+Safari (ADR-0011).
+
+It is honoured only when the cue is about the echo the bar is showing. `Guidance` carries
+its own echo precisely so that check can exist: the engine follows the nearest sealed one,
+the bar follows whatever the arrows are on, and those are the same thing most of the time
+and not all of it. Warming the bar for one echo while its words describe another is the
+screen arguing with itself.
+
+### The sheet went with it
+
+Its three tabs were already served better elsewhere, which is where the listener put it:
+"transcriptions which can be in the player, saved which are actually under my echos".
+
+| what the sheet carried | where it is now |
+| --- | --- |
+| the transcript tab | the player (`Ribbon`) |
+| the saved tab | My Echoes, and it kept its nearest-first ordering |
+| the nearby list | the bar's two arrows, without covering the map to do it |
+| the mini player | the bar |
+| the then-and-now strip | the echo card's own plate, which was already showing the photograph |
+| coming up | still there, and only on a journey that carries you: walking or driving the arrows are the answer to "what next", but at 35,000 feet choosing before it goes past IS the interaction |
+
+Retiring it deleted a whole fraction-of-the-screen calculation from the map. `RouteMap` had
+a three-detent sheet fraction, a guidance-bar height and a reserved bottom to add up before
+it knew where a pin was allowed to sit; it has one number now, which the caller passes.
+
+### The chips folded into a button
+
+Nine chips, always on screen, costing 48px forever to answer a question most people ask
+twice a month. The row is one tap away inside a popover now, unchanged — every category
+always present, each chip carrying its own colour and glyph, because it is the KEY to the
+map. The button says "All echoes", or the count when something is off: a map quietly
+missing two thirds of its pins with no visible cause is the worst thing this screen could
+do.
+
+### Measured after
+
+| | before | after |
+| --- | --- | --- |
+| top chrome | 151px | 41px |
+| bottom chrome | 366px | 155px |
+| map, on a 375x667 phone | 150px (22%) | 427px (64%) |
+
+### Four things rendering caught
+
+**The where line ate its own facts.** Written as one string it came out "Castle Clinton,
+Battery Par…" — the ellipsis had taken the distance and the running time, which are the two
+things on that line somebody acts on. The place stretches and truncates now; the facts
+never do. The place is also cut at its first comma, because "Castle Clinton, Battery Park"
+is a place and the neighbourhood it is in.
+
+**The bar and the card disagreed about the same distance.** "390 m" on the bar over "About
+400m away" on the card, two inches apart. The bar rounded to ten metres and the card to
+fifty. They round the same way now.
+
+**The camera badge sat on top of the caption.** `.pop-plate span` already existed for the
+year caption and pinned it bottom left; the badge is also a span inside `.pop-plate`, so
+that rule outweighed a single class and only `top` and `right` came from the badge's own.
+All four edges set at once stretched it across the plate.
+
+**A focus rule had never parsed.** `.fab.on:focus-visible, .chip.on:focus-visible, …` ran
+into a comment and then an `@media` with no block of its own, which invalidates the whole
+run. The build had been printing `Unexpected "@media"` about it for weeks. The effect: every
+lit chip, lit fab and lit action had an aqua focus ring on an aqua background — a WCAG 2.4.7
+pass on paper and invisible in fact. Found by reading a build warning, because a rule that
+does not parse cannot be measured by an audit.
+
 ### Still open
 
-`npm run audit:controls` still reports the zoom pill off the top of a 375x667 screen on the
-rose view. It is reported rather than fixed: reproducing it needs the walking simulation
-the audit drives, and it is a rose-screen layout question rather than part of this.
+`Synced` draws its own dark background and does not follow the light theme, so its title
+comes out near-black on near-black in light mode. Seen while rendering this pass; it is a
+sync-screen bug rather than part of this.

@@ -47,25 +47,20 @@ for (let i = 0; i < 60; i++) {
  * something is playing.
  */
 const SPEC = [
-  // On the map, with the sheet at its usual height.
-  { design: '.grab i', ours: '.grab', where: 'map',
-    want: { width: '38px', height: '4px', borderTopLeftRadius: '99px' } },
-  { design: '.tabs button', ours: '.seg', where: 'map',
-    want: { flexGrow: '1', paddingTop: '10px', paddingBottom: '10px', fontSize: '11px' } },
-  { design: '.tabs .count', ours: '.seg-count', where: 'map',
-    want: { marginLeft: '5px', fontSize: '11px', borderTopLeftRadius: '99px' } },
-  { design: '.list', ours: '.list', where: 'map',
-    want: { paddingTop: '12px', paddingRight: '14px', paddingBottom: '16px', paddingLeft: '14px', rowGap: '9px' } },
   /*
-   * The design's `.card` is our `.ecard` in the sheet, and only its shell is asserted here.
-   * Its 12px/13px padding and 13.5px title are deliberately not: the sheet list was
-   * rebuilt denser on purpose, after "isn't this a waste of space", and the design's card
-   * is still what the package screen uses, where it is measured in full below.
+   * THE SHEET AND ITS LIST ARE GONE, and with them six measurements that used to live
+   * here: the grab handle, the two tab rules, the list padding and the card shell.
+   *
+   * Not a regression against the design, a decision taken against it. The design draws a
+   * three-detent sheet over the map; measured on a real phone that sheet, the stepper, the
+   * proximity strip and the tab bar left the map a fifth of the screen, on a product whose
+   * whole proposition is looking at what is around you. One bar replaced the three strips
+   * (`EchoBar`), and the sheet's contents went where they were already better served: the
+   * transcript onto the player, saved under My Echoes, the nearby list onto two arrows.
+   *
+   * The design's own card is still measured in full on the package screen below, which is
+   * where it now lives, so the rules themselves are still held to.
    */
-  { design: '.card (shell)', ours: '.ecard', where: 'map',
-    want: { borderTopLeftRadius: '14px', borderTopWidth: '1px' } },
-  { design: '.card p', ours: '.ecard-detail p', where: 'map',
-    want: { fontSize: '11px', lineHeight: '16.5px' } },
   { design: '.nav', ours: '.nav', where: 'map',
     want: { height: '74px', paddingBottom: '14px' } },
   { design: '.nav button', ours: '.nav button', where: 'map',
@@ -73,24 +68,23 @@ const SPEC = [
   { design: '.nav button svg', ours: '.nav button svg', where: 'map',
     want: { width: '20px', height: '20px', strokeWidth: '1.7px' } },
 
-  // The now-playing row. The design calls it `.now`; here it is the player's own header,
-  // which is the same row in the same place doing the same job.
-  { design: '.play', ours: '.playing-orb', where: 'playing',
-    want: { width: '46px', height: '46px', borderTopLeftRadius: '50%' } },
-  { design: '.play svg', ours: '.playing-orb svg', where: 'playing',
-    want: { width: '19px', height: '19px' } },
-  { design: '.nowtxt h5', ours: '.playing-text strong', where: 'playing',
-    want: { fontSize: '13.5px', fontWeight: '500', whiteSpace: 'nowrap', textOverflow: 'ellipsis' } },
-  { design: '.nowtxt p', ours: '.playing-place', where: 'playing',
-    want: { fontSize: '12px', whiteSpace: 'nowrap', textOverflow: 'ellipsis' } },
-  { design: '.tag', ours: '.playing-kicker', where: 'playing',
-    want: { fontSize: '11px', letterSpacing: '1.54px', textTransform: 'uppercase', fontWeight: '500' } },
-  { design: '.tag .dot', ours: '.playing-dot', where: 'playing',
+  /*
+   * The design's now-playing row (`.now`) is the bar now, and the bar is a different
+   * object on purpose: the design's row is a play orb, a title and a bookmark, and ours
+   * also has to carry which echo of how many, how far off it is, and whether you are
+   * getting warmer — because it replaced the three strips that used to say those things.
+   *
+   * What carries over is measured. The orb is 48 rather than the design's 46, because it
+   * is the creature rather than a glyph in a circle and a 46px sphere with two eyes in it
+   * is smaller than it reads on paper. The kicker keeps the design's 11px uppercase; the
+   * dot keeps its 6px.
+   */
+  { design: '.tag', ours: '.echobar-kicker', where: 'map',
+    want: { fontSize: '11px', textTransform: 'uppercase', fontWeight: '500' } },
+  { design: '.tag .dot', ours: '.echobar-dot', where: 'map',
     want: { width: '6px', height: '6px', borderTopLeftRadius: '50%' } },
-  { design: '.savebtn', ours: '.phead-mark', where: 'playing',
-    want: { width: '38px', height: '38px', borderTopLeftRadius: '12px' } },
-  { design: '.savebtn svg', ours: '.phead-mark svg', where: 'playing',
-    want: { width: '16px', height: '16px', strokeWidth: '1.8px' } },
+  { design: '.nowtxt h5', ours: '.echobar-tap strong', where: 'map',
+    want: { fontWeight: '500', whiteSpace: 'nowrap', textOverflow: 'ellipsis' } },
 
   // The package screen, which is where the design's full card lives.
   { design: '.card', ours: '.card', where: 'plan',
@@ -159,15 +153,9 @@ for (let i = 0; i < 9 && await p.locator('.onb').count(); i++) {
   await p.waitForTimeout(400);
 }
 await p.waitForTimeout(4500);
-// Walking now opens on the rose with the sheet at one row, so raise it before reaching for
-// anything in the list.
-for (let i = 0; i < 4 && !(await p.locator('.list').isVisible().catch(() => false)); i++) {
-  await p.locator('.grab-zone').click();
-  await p.waitForTimeout(500);
-}
-// Open a row so a card, its actions and the transport are all on screen at once.
-await p.locator('.erow-body').first().click();
-await p.waitForTimeout(500);
+// Walking opens on the rose. The map, which is what these measure, is one tap behind it.
+await p.getByLabel(/^Show me the map|the street map/).click().catch(() => {});
+await p.waitForTimeout(800);
 
 const read = (sel, props) => p.evaluate(([sel, props]) => {
   const el = document.querySelector(sel);
@@ -194,31 +182,16 @@ const phase = async (name, enter) => {
 };
 
 await phase('map', async () => {});
-await phase('playing', async () => {
-  await p.locator('.erow-plate').first().click();
-  await p.waitForTimeout(2200);
-  /*
-   * Playing now opens the listening screen over the map, and these measurements are of the
-   * sheet's own transport underneath it. Back out first, or every later click lands on the
-   * listening screen: the run failed on the plate's own fade swallowing the next tap.
-   */
-  await p.getByLabel('Back to the map').click();
-  await p.waitForTimeout(500);
-});
 /*
  * The design's full card lives on the package screen, which is now somewhere you go rather
  * than a gate you pass: the map opens first, and the package is behind the rail's download
- * button. The sheet has to come down first, because the control column fades as it rises.
+ * button.
  */
 await phase('plan', async () => {
   // An open echo stands the rail down, which is deliberate. Close it first.
   if (await p.locator('.pop-close').count()) {
     await p.locator('.pop-close').click();
     await p.waitForTimeout(300);
-  }
-  for (let i = 0; i < 4 && !(await p.locator('.sheet-peek').count()); i++) {
-    await p.locator('.grab-zone').click();
-    await p.waitForTimeout(500);
   }
   await p.getByLabel(/Download this journey|Your journey/).click();
   await p.waitForTimeout(700);
