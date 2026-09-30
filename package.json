@@ -19,9 +19,10 @@
     "echo:render": "node scripts/render-echo.mjs",
     "audit:controls": "node scripts/audit-controls.mjs",
     "audit:contrast": "python3 scripts/check-contrast.py",
-    "gate": "npm run typecheck && npm test && npm run content:validate && npm run audit:contrast && npm run audit:frame && npm run audit:controls && npm run audit:spec",
+    "gate": "npm run typecheck && npm test && npm run content:validate && npm run audit:contrast && npm run audit:frame && npm run audit:controls && npm run audit:spec && npm run audit:layout",
     "audit:spec": "node scripts/check-spec.mjs",
-    "audit:frame": "node scripts/check-frame.mjs"
+    "audit:frame": "node scripts/check-frame.mjs",
+    "audit:layout": "node scripts/audit-layout.mjs"
   },
   "devDependencies": {
     "typescript": "^5.6.3",

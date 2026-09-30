@@ -35,6 +35,24 @@ import { buildRouteGeometry, distanceKm, effectiveRadiusKm, presetFor, rarityOf,
 export type PinState = "sealed" | "opening" | "captured" | "heard";
 
 /**
+ * How far the warm light reaches, by rarity.
+ *
+ * Board 2 draws the singular one at 92 and lets it breathe. The gaps between these three
+ * numbers ARE the ranking — more of the separation than the opacities do, because a bloom
+ * twice the size of another reads as twice as important at a glance, while two blooms of
+ * the same size and different alpha just read as two blooms.
+ *
+ * Uncommon at 26 against a 13px pin is a rim rather than a bloom, which is what lets
+ * sixteen of them sit on one screen without becoming a wash. Common gets nothing, because
+ * something has to be the floor.
+ */
+const HALO_R: Record<string, number | undefined> = {
+  singular: 92,
+  rare: 52,
+  uncommon: 26,
+};
+
+/**
  * How far, on a map label.
  *
  * Rounded to fifty metres to agree with the echo card and the sheet, which round the same
@@ -865,19 +883,9 @@ export function RouteMap({
           {(state === "sealed" || state === "opening") &&
             (() => {
               const rarity = rarityOf(echo);
-              if (rarity !== "rare" && rarity !== "singular") return null;
-              return (
-                <circle
-                  className={`pin-halo pin-halo-${rarity}`}
-                  /*
-                    Board 2 draws the singular one's halo at 92 and lets it breathe. Mine
-                    was 52 and still, so the one echo the whole screen is built to point
-                    at was a slightly warmer dot. The rare one stays smaller on purpose:
-                    the gap between the two IS the ranking.
-                  */
-                  r={rarity === "singular" ? 92 : 46}
-                />
-              );
+              const r = HALO_R[rarity];
+              if (!r) return null;
+              return <circle className={`pin-halo pin-halo-${rarity}`} r={r} />;
             })()}
 
           <Contours />
@@ -1043,24 +1051,55 @@ export function RouteMap({
           <stop offset="100%" stopColor="#04060f" stopOpacity="0.62" />
         </radialGradient>
 
+        {/*
+          YOU, AND THE LIGHT YOU THROW.
+          
+          Two stops became three, and the fall-off moved. A straight ramp from 0.5 to
+          nothing is a smudge: at every radius it is a bit transparent, so it reads as a
+          blurred dot rather than as light coming off something. Holding most of the
+          strength through the first third and then dropping fast is how a light source
+          behaves, and it is what makes the middle look bright rather than merely large.
+        */}
         <radialGradient id="hereGlow">
-          <stop offset="0%" stopColor="var(--aqua)" stopOpacity="0.5" />
+          <stop offset="0%" stopColor="var(--aqua)" stopOpacity="0.72" />
+          <stop offset="34%" stopColor="var(--aqua)" stopOpacity="0.34" />
+          <stop offset="68%" stopColor="var(--aqua)" stopOpacity="0.1" />
           <stop offset="100%" stopColor="var(--aqua)" stopOpacity="0" />
         </radialGradient>
 
         {/*
-          Two strengths of the same warm light, for the two rarities worth walking to.
-          Common and uncommon get none at all: a glow on everything is a glow on nothing,
-          and the whole point of the warm channel is that it is scarce.
+          THREE STRENGTHS OF THE SAME WARM LIGHT, and the gaps between them are the ranking.
+
+          It used to be two, with common AND uncommon getting nothing, under the argument
+          that a glow on everything is a glow on nothing. The argument is right and the
+          line was drawn in the wrong place: counted against the real library, 16 of 26
+          echoes are uncommon, so "uncommon" was a tier the map never showed at all, and
+          the one rare echo had to carry the entire warm channel on its own.
+
+          So uncommon gets a light, and it is deliberately TIGHT rather than faint — 26
+          against a 13px pin, which is a rim on the pin itself rather than a bloom around
+          it. Sixteen rims read as a warm speckle across a neighbourhood; sixteen blooms
+          would be a wash, which is the thing the old argument was actually about. Radius
+          is doing the separating here, not just opacity.
+
+          Rare and singular went up hard. At 0.24 the rare halo was a slightly warmer patch
+          of navy and the listener could not see it, which is the whole report.
         */}
         <radialGradient id="raritySingular">
-          <stop offset="0%" stopColor="var(--ember)" stopOpacity="0.4" />
-          <stop offset="42%" stopColor="var(--ember)" stopOpacity="0.12" />
+          <stop offset="0%" stopColor="var(--ember)" stopOpacity="0.62" />
+          <stop offset="30%" stopColor="var(--ember)" stopOpacity="0.3" />
+          <stop offset="64%" stopColor="var(--ember)" stopOpacity="0.1" />
           <stop offset="100%" stopColor="var(--ember)" stopOpacity="0" />
         </radialGradient>
         <radialGradient id="rarityRare">
-          <stop offset="0%" stopColor="var(--ember)" stopOpacity="0.24" />
-          <stop offset="46%" stopColor="var(--ember)" stopOpacity="0.07" />
+          <stop offset="0%" stopColor="var(--ember)" stopOpacity="0.5" />
+          <stop offset="34%" stopColor="var(--ember)" stopOpacity="0.22" />
+          <stop offset="70%" stopColor="var(--ember)" stopOpacity="0.06" />
+          <stop offset="100%" stopColor="var(--ember)" stopOpacity="0" />
+        </radialGradient>
+        <radialGradient id="rarityUncommon">
+          <stop offset="0%" stopColor="var(--ember)" stopOpacity="0.4" />
+          <stop offset="52%" stopColor="var(--ember)" stopOpacity="0.16" />
           <stop offset="100%" stopColor="var(--ember)" stopOpacity="0" />
         </radialGradient>
 
@@ -1466,7 +1505,14 @@ function Here({
         the two can never disagree.
       */}
       {spin && <path className="here-cone" d={CONE} transform={spin} />}
-      <circle r="26" fill="url(#hereGlow)" />
+      {/*
+        The light you throw, 26 to 40.
+        
+        It is the only aqua bloom on the map and it was smaller than a rare echo's ember
+        one, which had the screen quietly saying that a story two streets away matters more
+        than where you are standing.
+      */}
+      <circle r="40" fill="url(#hereGlow)" />
       {/*
         ON FOOT, YOU ARE A DOT. No figure inside it.
 
@@ -1483,7 +1529,13 @@ function Here({
       */}
       {mode === "walking" ? (
         <>
+          {/*
+            Two rings rather than one, half a beat apart. One ring leaving a dot is a
+            pulse; two is a source that keeps sending, which is what the mark means and
+            what the pins' own ripples already do.
+          */}
           <circle className="here-ring" r="13" />
+          <circle className="here-ring here-ring-2" r="13" />
           <circle className="here-dot" r="11" />
         </>
       ) : (
