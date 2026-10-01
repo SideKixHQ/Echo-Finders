@@ -86,10 +86,6 @@ export interface RailProps {
    */
   readonly panned?: boolean;
   readonly onOverview: (overview: boolean) => void;
-  /** The package screen: what the journey weighs, and the route picker with it. */
-  readonly onDownload: () => void;
-  /** Whether the journey is already on the device. */
-  readonly downloaded: boolean;
   /**
    * Walking only: swap between the rose and the street map.
    *
@@ -127,8 +123,6 @@ function RailInner({
   overview,
   panned,
   onOverview,
-  onDownload,
-  downloaded,
   roseView,
   roseBackLabel,
   onCity,
@@ -238,10 +232,19 @@ function RailInner({
       )}
 
       {/*
-        Recentre — the design's "centre on aircraft", and the only button here that puts
-        right what the others can break. Tapping a pin, dragging the sheet, changing
-        journey: any of them can leave somebody looking at a piece of map they are not
-        standing on, and the way back should not be a guess.
+        THE FRAMING BUTTON, and its glyph now says which of its three jobs it is doing.
+
+        It is one control with three labels — "Back to where I am" when the map has been
+        dragged, "Follow me" when the whole journey is framed, "Whole journey" otherwise —
+        and it drew the same crosshair for all three. A crosshair means "put me in the
+        middle", so two thirds of the time the picture was arguing with the words, and the
+        one people actually reach for after dragging the map looked identical to the one
+        that zooms out to the county.
+
+        Same button, same tap, three glyphs:
+          panned      a crosshair. Put me back in the middle.
+          overview    a person in a circle. Follow me again.
+          otherwise   four corners. Frame the lot.
       */}
       <button
         className={overview ? "fab on" : "fab"}
@@ -249,35 +252,38 @@ function RailInner({
         aria-pressed={overview}
         aria-label={panned ? "Back to where I am" : overview ? "Follow me" : "Whole journey"}
       >
-        <svg viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="7" />
-          <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
-        </svg>
-      </button>
-
-      {/*
-        The package, and the route picker with it. An aircraft has no signal and a foreign
-        city has no data plan worth using, so carrying the journey is the difference
-        between the app working and not (ADR-0003). The design collapses this one at the
-        middle detent rather than letting the column grow into the sheet; so does
-        `theme.css`.
-      */}
-      <button
-        className="fab rail-pack"
-        onClick={onDownload}
-        aria-label={downloaded ? "Your journey, on this device" : "Download this journey"}
-      >
-        {downloaded ? (
+        {panned ? (
           <svg viewBox="0 0 24 24">
-            <path d="M12 3.2a8.8 8.8 0 1 1-6.2 2.6" />
-            <path d="M8.2 11.8l3 3 5.6-6.4" />
+            <circle cx="12" cy="12" r="7" />
+            <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+          </svg>
+        ) : overview ? (
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="8.5" />
+            <circle cx="12" cy="12" r="3" />
           </svg>
         ) : (
           <svg viewBox="0 0 24 24">
-            <path d="M12 3v12M7.5 10.5 12 15l4.5-4.5M4 19h16" />
+            <path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" />
           </svg>
         )}
       </button>
+
+      {/*
+        THE DOWNLOAD FAB WAS A DUPLICATE, and that is why it is not here any more.
+
+        It called `onDownload`, which is `openPackage`. The journey chip across the top of
+        the map calls `openPackage` too, is always on screen, says what it is in words, and
+        carries a "CHANGE" affordance next to it. Two controls, one destination, and the
+        one people could actually read was not the one taking a 44px bite out of the map.
+
+        Carrying the journey still matters exactly as much as ADR-0003 says — an aircraft
+        has no signal and a foreign city has no data plan worth using. It is one tap away,
+        through the thing that names the journey.
+
+        This also buys the map back a fab's worth of column, which is the whole reason the
+        column had to learn to wrap into two on a short phone.
+      */}
     </div>
   );
 }

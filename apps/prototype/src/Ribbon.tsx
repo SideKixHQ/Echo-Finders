@@ -52,6 +52,7 @@
 import { useCallback, useRef, useState } from "react";
 import { rarityOf, type Echo } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
+import { EchoCharacter } from "./Echo";
 import { VOICE_LABEL } from "./voices";
 import type { Rating } from "./ratings";
 import { platePng } from "./archive-plate";
@@ -484,17 +485,25 @@ export function Ribbon({
             <path d="M6.8 9.2H14a4.6 4.6 0 0 1 0 9.2H9" />
           </svg>
         </button>
+        {/*
+          THE BIG BUTTON IS THE CREATURE, here as everywhere else.
+
+          It was a plain aqua disc with a pause glyph on it, which is the button every
+          audio app has — and this product has a character whose FACE IS THAT GLYPH. Two
+          soft uprights side by side is the pause mark, and syncing swings them into a play
+          triangle; that is the whole idea of the thing (see `Echo.tsx`). Drawing a generic
+          pause icon on the one screen the story actually happens on, while the bar over
+          the map was already using the creature for the same job, meant the app had two
+          play buttons that looked nothing alike again.
+
+          `armed` is the play triangle and `playing` is the pair of uprights, so the states
+          map onto the transport exactly rather than by coincidence, and the morph between
+          them is the one `Echo.tsx` already animates.
+        */}
         <button className="hear-go" onClick={onPlayPause} aria-label={playing ? "Pause" : "Play"}>
-          {playing ? (
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="7" y="5" width="4" height="14" rx="1.2" />
-              <rect x="13" y="5" width="4" height="14" rx="1.2" />
-            </svg>
-          ) : (
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          )}
+          <svg viewBox="-60 -60 120 120" aria-hidden="true">
+            <EchoCharacter face={playing ? "playing" : "armed"} r={46} uid="hear" detail />
+          </svg>
         </button>
         <button onClick={() => onNudge(15)} aria-label="Forward fifteen seconds">
           <svg viewBox="0 0 24 24" aria-hidden="true">

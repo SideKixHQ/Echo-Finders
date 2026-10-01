@@ -405,7 +405,9 @@ focus.push(...await focusSweep('my-echoes'));
 await p.locator('.coll-settings').click(); await p.waitForTimeout(700); await capture('settings');
 focus.push(...await focusSweep('settings'));
 await p.locator('.nav button').first().click(); await p.waitForTimeout(600);
-await p.getByLabel(/Download this journey|Your journey/).click().catch(()=>{});
+/* The package is reached through the journey chip now: the download fab that used to
+   open it was a duplicate of that chip and is gone. */
+await p.getByLabel(/Change your journey|Your journey, on this device/).click().catch(()=>{});
 await p.waitForTimeout(700); await capture('package');
 
 const all = Object.entries(screens);

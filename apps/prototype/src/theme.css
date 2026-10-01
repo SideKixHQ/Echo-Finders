@@ -6,11 +6,50 @@
   --indigo-soft: #9b95ff;
   --cool: #d8dce5;
   --aqua: #00ffe7;
+  /*
+   * Aqua as INK, which is not the same colour as aqua as light.
+   *
+   * On a dark ground they are the same thing. On a light one they cannot be: the light
+   * scheme's aqua is already a deep teal so it can hold a caption on white, and a lit
+   * "All" chip is not white — it carries an 8 percent dark wash, which took that teal to
+   * 3.84:1. Same argument the light scheme already makes for --indigo-btn and --btn:
+   * one hex cannot be right on both grounds.
+   */
+  --aqua-ink: #00ffe7;
   --magenta: #ff007a;
+  /*
+   * The same magenta, lifted until it can be read.
+   *
+   * #ff007a is 4.06:1 on --slate, which fails 1.4.3 for body text by a margin you can see:
+   * "Delete everything" and the two rows beside it, plus the singular tag on My Echoes,
+   * were all set in it. Measured against the composed page rather than assumed, because
+   * this pair was never in the contrast script at all — magenta appears three times in the
+   * whole stylesheet and all three are text, which is exactly how a colour slips through.
+   *
+   * The flat token stays for fills and borders, where the ratio rule does not apply and
+   * the brand hue should not be diluted. This is for ink only. Same instinct as
+   * --ember-core sitting beside --ember.
+   */
+  --magenta-ink: #ff3d8f;
   --charcoal: #161a1d;
   --slate: #1f252e;
   --white: #fff;
   --muted: #aeb5c2;
+  /*
+   * The quieter grey, as a token rather than as an alpha written out three times.
+   *
+   * It WAS written out three times, as a literal `rgba(174, 181, 194, 0.7x)` — which is
+   * the dark scheme's --muted with the alpha baked in. In the light scheme --muted is
+   * redefined to a dark slate and those three literals were not, so the entry meta, every
+   * setting's cost line and the feature fallbacks all rendered as pale grey on white:
+   * 1.73:1, which is not low contrast, it is unreadable. Three rules, six paragraphs of
+   * genuinely important small print about permissions and deletion.
+   *
+   * Caught by measuring the composed page in the light theme, which nothing had ever
+   * actually done: the old contrast script reads declared pairs, and nobody declares a
+   * literal.
+   */
+  --muted-soft: rgba(174, 181, 194, 0.78);
   /* ── The echo ──────────────────────────────────────────────
      Taken from the mark, where the one warm thing in a cold scheme is the echo itself —
      which is exactly what makes the eye go to it. The rule the rest of this file follows:
@@ -130,8 +169,14 @@
   --slate: #ffffff;
   --white: #0b0f2b;
   --muted: #5d6779;
+  /* Full strength here, because the dark scheme's alpha trick composes to 1.73:1 on white. */
+  --muted-soft: #5d6779;
+  /* Lifted magenta is a DARK-scheme fix. On white it goes the other way, or the three
+     delete rows read at 3.32:1. */
+  --magenta-ink: #b30055;
   --cool: #3a4459;
   --aqua: #00736c;
+  --aqua-ink: #00655f;
   --indigo-soft: #5b52d6;
   /*
    * NOT the dark scheme's value, and the new 1.4.11 check is what proved it.
@@ -163,21 +208,40 @@
   --line: rgba(11, 15, 43, 0.14);
   --line-2: rgba(11, 15, 43, 0.24);
 
-  /* The ember, darkened until it can carry small text on white. */
+  /*
+   * The ember, darkened until it can carry small text on white.
+   *
+   * --ember-core is the warm INK of this app: the rarity word on a card, the count on My
+   * Echoes, the "getting warmer" line on the bar, the singular pin's label, twenty-odd
+   * places in all. At #e8502a it was 3.74:1 on white and 2.98:1 on a card, so every one
+   * of them failed 1.4.3 in the light scheme. It keeps its hue and loses its brightness.
+   */
   --ember: #a85a00;
-  --ember-core: #e8502a;
+  --ember-core: #a83a10;
   --ember-deep: #8f4100;
 
+  /*
+   * DARKER AGAIN, and measured against the surface they are actually printed on.
+   *
+   * These were chosen against white and all nine cleared 4.5:1 there. A lit chip is not
+   * white: it carries `rgba(var(--rgb-hair), 0.08)` over the panel, which composes to
+   * about #cdd4e0 — and against that, seven of the nine fell between 3.6 and 4.4. So the
+   * key to the whole map, the one control that explains what the colours mean, was the
+   * one place the colours could not be read.
+   *
+   * Each is its own hue taken down until it clears 4.6:1 on that composed chip AND on
+   * plain white, so the same token works as a chip label, a pin stroke and a card kicker.
+   */
   --cat-history: #4c43c8;
-  --cat-true-crime: #c1005c;
-  --cat-legend: #1d7a3a;
-  --cat-kids: #00736c;
-  --cat-arts: #8f4d00;
-  --cat-food-drink: #b4256f;
-  --cat-people: #5b52d6;
+  --cat-true-crime: #b10054;
+  --cat-legend: #186630;
+  --cat-kids: #00655f;
+  --cat-arts: #894900;
+  --cat-food-drink: #a52266;
+  --cat-people: #5048bc;
   /* Same gap on the light scheme: this was a slate that read as "no category". */
-  --cat-built: #1f5bb8;
-  --cat-land: #1f6b5c;
+  --cat-built: #1d57b0;
+  --cat-land: #1a5e51;
 
 }
 
@@ -305,6 +369,17 @@ body {
 .pin-heard .pin-found { fill: var(--ember-deep); }
 .pin-selected .pin-body { stroke-width: 2.6; }
 
+/*
+ * YOU ARE NOT A BUTTON.
+ *
+ * The marker is a 40px glow around an 11px dot, and without this it swallowed every tap
+ * inside that radius — so an echo you were standing next to, the one echo you are most
+ * likely to want, was the one pin that could not be tapped. Found by hit-testing the
+ * composed page: ".pin is under .here-dot". It was true at the old 26px glow too and got
+ * worse when the glow was turned up.
+ */
+.here { pointer-events: none; }
+
 /* You, drawn as how you are travelling. The disc is opaque because this sits over a grey
    basemap and a figure alone would fight the streets under it for every stroke. */
 .here-disc {
@@ -318,18 +393,31 @@ body {
  * an echo, which is why it is aqua and why it is slow: a heartbeat rather than a call.
  * The pins ripple to say "something is here"; this says "and here you are".
  */
-.here-dot { fill: var(--aqua); filter: drop-shadow(0 0 12px var(--aqua)); }
+/*
+ * The dot itself, and it is a light source rather than a coloured circle.
+ *
+ * Two shadows, not one: a tight bright one that gives the disc an edge you can find on a
+ * busy basemap, and a wide soft one that is the light actually leaving it. A single 12px
+ * shadow does neither job well — too wide to sharpen the edge, too tight to read as glow.
+ */
+.here-dot {
+  fill: var(--aqua);
+  filter: drop-shadow(0 0 6px var(--aqua)) drop-shadow(0 0 18px rgba(var(--rgb-accent), 0.85));
+}
 .here-ring {
-  fill: none; stroke: var(--aqua); stroke-width: 2;
+  fill: none; stroke: var(--aqua); stroke-width: 2.4;
   transform-box: fill-box; transform-origin: center;
   animation: hereBeat 3.2s ease-out infinite;
 }
+/* Half a beat behind, so it is a source that keeps sending rather than one pulse. */
+.here-ring-2 { animation-delay: -1.6s; }
 @keyframes hereBeat {
-  0% { transform: scale(0.6); opacity: 0.5; }
-  100% { transform: scale(2.1); opacity: 0; }
+  0% { transform: scale(0.6); opacity: 0.85; }
+  100% { transform: scale(2.4); opacity: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .here-ring { animation: none; opacity: 0.35; }
+  .here-ring { animation: none; opacity: 0.4; }
+  .here-ring-2 { display: none; }
 }
 .here-figure {
   fill: none; stroke: var(--aqua); stroke-width: 2.6;
@@ -493,14 +581,59 @@ body {
 
 /* ── route ribbon ────────────────────────────────────────── */
 .ribbon {
-  display: flex; align-items: center; gap: 10px; flex: none;
-  padding: 9px 14px; border-radius: 99px;
+  display: flex; align-items: center; gap: 10px; flex: none; min-width: 0;
+  padding: 9px 14px; border-radius: 99px; position: relative;
   background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
 }
-.ribbon b {
+/* The mode, so the line says how you are travelling without spending a word on it. */
+.ribbon-mode {
+  width: 16px; height: 16px; flex: none; fill: none; stroke: var(--cool);
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+/*
+ * CARRIED ONLY. The 34% cap is what truncated two street names to one word each, and it
+ * is correct for the thing it was written for: a three-letter airport code never reaches
+ * it, so on a flight the cap does nothing and the bar keeps every pixel it is owed.
+ */
+.ribbon-carried b {
   font-family: "Space Grotesk", monospace; font-size: 12px; letter-spacing: 0.04em;
   max-width: 34%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: none;
 }
+/*
+ * SELF-DIRECTED: one name, and it takes the row.
+ *
+ * `flex: 1` with `min-width: 0` rather than a percentage cap, which is the difference
+ * between "you may have a third of whatever is left" and "you may have everything nobody
+ * else needs". A percentage of a box that keeps shrinking is how this broke.
+ */
+.ribbon-dest {
+  flex: 1; min-width: 0; font-size: 13px; font-weight: 500; color: var(--white);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+/*
+ * Progress, as the chip rather than as a bar inside it.
+ *
+ * A background cannot be squeezed to minus thirty-nine pixels by its neighbours, which is
+ * the whole reason it is drawn this way. The right edge is the playhead: a hairline where
+ * the old white dot was, doing the same job with none of the width.
+ *
+ * It rounds its own left end rather than being clipped by `overflow: hidden` on the pill,
+ * and it has no transition. The second one is the real reason: the walk updates this four
+ * times a second, so a 600ms ease is a transition that can never finish, and all it would
+ * do is make the fill permanently lag the number beside it.
+ */
+.ribbon-fill {
+  position: absolute; inset: 0 auto 0 0; pointer-events: none;
+  border-radius: 99px 0 0 99px;
+  background: linear-gradient(90deg, rgba(0, 255, 231, 0.17), rgba(0, 255, 231, 0.05));
+  border-right: 1px solid rgba(0, 255, 231, 0.55);
+}
+:root[data-theme="light"] .ribbon-fill {
+  background: linear-gradient(90deg, rgba(0, 115, 108, 0.16), rgba(0, 115, 108, 0.05));
+  border-right-color: rgba(0, 115, 108, 0.6);
+}
+/* Everything else rides above the fill. */
+.ribbon-mode, .ribbon b, .ribbon-bar, .ribbon small, .ribbon-more { position: relative; }
 .ribbon-bar {
   flex: 1; height: 2px; border-radius: 2px; position: relative;
   background: rgba(var(--rgb-hair), 0.16);
@@ -516,6 +649,8 @@ body {
 .ribbon small {
   font-family: "Space Grotesk", monospace; font-size: 12px; color: var(--aqua); flex: none;
 }
+/* Nudged up a half step on the self-directed line, where it is one of only two facts. */
+.ribbon-ahead small { font-size: 12.5px; font-weight: 500; }
 
 /* The stack above the map: ribbon, then filters. */
 .mapbar {
@@ -630,8 +765,7 @@ body {
   border-right: 1px solid var(--line); border-radius: 9px 0 0 9px;
   margin-right: 3px; padding-right: 11px;
 }
-.chip-all.on { color: var(--aqua); background: none; 
-}
+.chip-all.on { color: var(--aqua-ink); background: none; }
 .chip-dot {
   width: 7px; height: 7px; border-radius: 50%; flex: none;
   background: currentColor; opacity: 0.4;
@@ -1055,7 +1189,7 @@ body {
 .tag-common { background: rgba(var(--rgb-hair), 0.12); color: var(--cool); }
 .tag-uncommon { background: rgba(108, 99, 255, 0.22); color: var(--indigo-soft); }
 .tag-rare { background: rgba(255, 158, 18, 0.16); color: var(--ember); }
-.tag-singular { background: rgba(255, 0, 122, 0.18); color: var(--magenta); }
+.tag-singular { background: rgba(255, 0, 122, 0.18); color: var(--magenta-ink); }
 
 /* Matches the floating row's, so keeping an echo is the same gesture in the same place
    whichever of the two is on screen. */
@@ -1248,13 +1382,13 @@ body {
   font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.12em;
   text-transform: uppercase; margin-bottom: 8px; color: var(--muted);
 }
-.group-singular { color: var(--magenta); }
+.group-singular { color: var(--magenta-ink); }
 .group-rare { color: var(--ember); }
 .group-uncommon { color: var(--indigo-soft); }
 
 .entry-text h4 { font-size: 13px; font-weight: 500; line-height: 1.35; }
 .entry-text p { font-size: 11px; color: var(--muted); margin-top: 2px; }
-.entry-meta { font-size: 11.5px; color: rgba(174, 181, 194, 0.72); }
+.entry-meta { font-size: 11.5px; color: var(--muted-soft); }
 
 .collection-foot {
   margin-top: 20px; padding: 14px 2px 0; border-top: 1px solid var(--line);
@@ -1289,7 +1423,7 @@ body {
 
 /* The consequence of switching off, stated rather than implied. */
 .setting-cost {
-  font-size: 11px; color: rgba(174, 181, 194, 0.78); line-height: 1.55;
+  font-size: 11px; color: var(--muted-soft); line-height: 1.55;
   margin-top: 7px; padding-left: 2px; border-left: 2px solid var(--line-2); padding-left: 10px;
 }
 
@@ -1312,7 +1446,10 @@ body {
 .feature-degraded .feature-level { color: var(--gold); }
 .feature-unavailable .feature-level { color: var(--muted); }
 .feature-unavailable .feature-name { color: var(--muted); }
-.feature-fallback { grid-column: 1 / -1; font-size: 12px; color: rgba(174, 181, 194, 0.7); line-height: 1.5; }
+/* --muted-soft, not a literal. At the old 0.7 this composed to 4.43:1 on the dark panel —
+   seven hundredths under 1.4.3 — and to 1.73:1 on white, because the literal never learned
+   about the light scheme. */
+.feature-fallback { grid-column: 1 / -1; font-size: 12px; color: var(--muted-soft); line-height: 1.5; }
 
 .panel-danger { border-color: rgba(255, 0, 122, 0.24); }
 .danger-row {
@@ -1321,7 +1458,7 @@ body {
   padding: 9px 0; border-bottom: 1px solid var(--line);
 }
 .danger-row:last-child { border-bottom: 0; }
-.danger-row span { font-size: 13px; color: var(--magenta); }
+.danger-row span { font-size: 13px; color: var(--magenta-ink); }
 .danger-row small { font-size: 11px; color: var(--muted); line-height: 1.5; }
 
 /* ── The camera: then and now ─────────────────────────────────────────────────
@@ -1786,6 +1923,17 @@ body {
   align-content: flex-end; justify-content: flex-end; gap: 8px;
   transition: bottom 0.34s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.2s linear;
 }
+/*
+ * THE GAPS BETWEEN THE FABS BELONG TO THE MAP.
+ *
+ * The column is 44 wide and 350 tall with eight-pixel gaps, and all 350 of it was eating
+ * taps — so a cluster dot sitting in the space between two buttons could not be opened,
+ * for no reason at all. The buttons themselves still take their own taps, and a pin
+ * squarely under one is still reachable by panning or by the bar's arrows, which is what
+ * they are for.
+ */
+.rail { pointer-events: none; }
+.fab, .rail button { pointer-events: auto; }
 .fab {
   width: 44px; height: 44px; flex: none; cursor: pointer;
   border-radius: 14px; background: rgba(var(--rgb-panel), 0.94);
@@ -2598,17 +2746,30 @@ body {
 }
 
 .pin-halo { pointer-events: none; }
-.pin-halo-singular {
+.pin-halo-uncommon { fill: url(#rarityUncommon); }
+.pin-halo-rare { fill: url(#rarityRare); }
+.pin-halo-singular { fill: url(#raritySingular); }
+/*
+ * The two worth crossing a road for breathe; uncommon does not.
+ *
+ * Motion is the scarcest signal on this screen and the one the eye cannot ignore, so it
+ * is spent last. Sixteen breathing rims would be a map that will not sit still. The rare
+ * one breathes half a beat behind the singular so two on one screen do not pulse in
+ * lockstep, which reads as a rendering artefact rather than as two separate things
+ * calling.
+ */
+.pin-halo-singular, .pin-halo-rare {
   transform-box: fill-box; transform-origin: center;
   animation: haloBreathe 3.6s ease-in-out infinite;
 }
+.pin-halo-rare { animation-delay: -1.8s; animation-duration: 4.2s; }
 @keyframes haloBreathe {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.62; }
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.55; transform: scale(0.9); }
 }
-@media (prefers-reduced-motion: reduce) { .pin-halo-singular { animation: none; } }
-.pin-halo-rare { fill: url(#rarityRare); }
-.pin-halo-singular { fill: url(#raritySingular); }
+@media (prefers-reduced-motion: reduce) {
+  .pin-halo-singular, .pin-halo-rare { animation: none; }
+}
 /* Heard is the ember gone cold. */
 .pin-heard .pin-body { stroke: var(--ember-deep); }
 .pin-heard .pin-icon { stroke: var(--ember-deep); }
@@ -3254,19 +3415,33 @@ body {
 /* Restart and next are secondary to the three in the middle, and saying so with weight
    costs nothing and stops a five-button row reading as five equal choices. */
 .hear-transport button:first-child, .hear-transport button:last-child { color: var(--muted); }
+/*
+ * The creature, at 78, and no disc under it.
+ *
+ * It used to be an aqua lozenge with a glyph on it, so the rules here were all about the
+ * disc: a background, an ink colour, and a glow that had already been halved once for
+ * being the brightest thing on the screen. The creature brings its own body, its own rim
+ * light and its own glow, so every one of those is now something drawn twice — the disc
+ * has to go entirely or it reads as a sticker behind a sphere.
+ *
+ * Bigger than the 72 it replaced, because a sphere with two eyes needs more room than a
+ * flat triangle to be the same size to the eye, and this is still the one control on the
+ * screen that should win on size.
+ */
 .hear-go {
-  width: 72px !important; height: 72px !important;
-  background: var(--btn-dark) !important;
-  color: var(--btn-dark-ink) !important;
-  /*
-     The glow was 40px of aqua, which made this the brightest object on the screen. That
-     was right when everything else was warm; with the ribbon now carrying the aqua it
-     read as a second light source competing with the story. Halved, and the disc still
-     wins on size, which is the right way for a play button to win.
-  */
-  box-shadow: 0 0 20px rgba(0, 255, 231, 0.22);
+  width: 78px !important; height: 78px !important;
+  background: none !important; border: 0 !important; box-shadow: none !important;
+  padding: 0 !important; overflow: visible;
 }
-.hear-go svg { width: 24px !important; height: 24px !important; fill: currentColor !important; stroke: none !important; }
+/*
+ * No fill or stroke override here, and that is deliberate rather than an omission.
+ *
+ * The old rule forced `fill: currentColor; stroke: none` on the svg, because the glyph
+ * inside it was a bare path with no styling of its own. The creature is not: every part of
+ * it carries its own class and its own paint, and anything in it that legitimately
+ * inherits — the speckle, the satellites — would be painted out by a blanket override.
+ */
+.hear-go svg { width: 78px !important; height: 78px !important; overflow: visible; }
 
 .hear-acts { flex: none; display: flex; gap: 8px; padding: 12px 18px 0; }
 /* Three across now rather than two, so they have to be able to shrink: `flex: 1 1 0`
@@ -3667,7 +3842,7 @@ body {
 .catfilter-tap {
   display: flex; align-items: center; gap: 7px; cursor: pointer;
   /* 40 inside a row that pads to 44, the same bargain the chips strike. */
-  min-height: 40px; padding: 0 10px; white-space: nowrap;
+  min-height: 40px; padding: 0 9px; white-space: nowrap;
   border-radius: 13px; font: inherit; font-size: 12px; color: var(--cool);
   background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
   backdrop-filter: blur(12px);
@@ -3871,3 +4046,13 @@ body {
   stroke-width: 1.7; stroke-linejoin: round;
 }
 .pop-plate-tap:hover { border-color: rgba(255, 158, 18, 0.55); }
+
+/* Carried, on the one line that is always about the journey. See `App`. */
+.journey-kept { display: flex; flex: none; color: var(--aqua); margin-left: auto; }
+.journey-kept svg {
+  width: 15px; height: 15px; fill: none; stroke: currentColor;
+  stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round;
+}
+/* With the tick taking the auto margin, the word sits beside it rather than fighting for
+   the same edge. */
+.journey-kept + .journey-change { margin-left: 6px; }

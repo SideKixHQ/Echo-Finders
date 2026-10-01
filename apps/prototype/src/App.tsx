@@ -1278,7 +1278,9 @@ export function App() {
                 <button
                   className={roaming ? "journey-tap journey-roam" : "journey-tap"}
                   onClick={openPackage}
-                  aria-label="Change your journey"
+                  aria-label={
+                    downloaded ? "Your journey, on this device. Tap to change it" : "Change your journey"
+                  }
                 >
                   {roaming ? (
                     <>
@@ -1286,7 +1288,25 @@ export function App() {
                         {MODE_ICON[roamMode]}
                       </svg>
                       {roamMode === "driving" ? "Driving" : "Around here"}
-                      <span className="journey-change">Change</span>
+                      {/*
+                        CARRIED, said where the journey is named.
+
+                        The app has always tracked whether the journey is on the device and
+                        the only thing that showed it was a tick inside the control column's
+                        download fab — the fab that has now gone, because it opened the same
+                        screen this chip opens. A fact with nowhere to be is a fact that
+                        drifts, so it moved to the one line that is always on screen and is
+                        already about the journey.
+                      */}
+                      {downloaded && (
+                        <span className="journey-kept" aria-hidden="true">
+                          <svg viewBox="0 0 24 24">
+                            <path d="M12 3.2a8.8 8.8 0 1 1-6.2 2.6" />
+                            <path d="M8.2 11.8l3 3 5.6-6.4" />
+                          </svg>
+                        </span>
+                      )}
+                      <span className="journey-change">{downloaded ? "Kept" : "Change"}</span>
                     </>
                   ) : (
                     <>
@@ -1466,7 +1486,6 @@ export function App() {
                   setOverview(next);
                 }}
                 panned={pan.x !== 0 || pan.y !== 0}
-                downloaded={downloaded}
                 /*
                   Leaving the map hands back the WALK when there is one, and the survey
                   when there is not. Returning everybody to the rose meant that tapping
@@ -1481,7 +1500,6 @@ export function App() {
                         setWalkingView((v) => (v === "map" ? (beacon ? "walk" : "rose") : "map")),
                     }
                   : {})}
-                onDownload={openPackage}
                 onCity={() => setCityOpen(true)}
               />
               )}
