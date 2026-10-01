@@ -581,8 +581,9 @@ body {
 
 /* ── route ribbon ────────────────────────────────────────── */
 .ribbon {
-  display: flex; align-items: center; gap: 10px; flex: none; min-width: 0;
-  padding: 9px 14px; border-radius: 99px; position: relative;
+  /* 8 and 12, down from 10 and 14. Ten pixels, and they buy the end of a place name. */
+  display: flex; align-items: center; gap: 8px; flex: none; min-width: 0;
+  padding: 9px 12px; border-radius: 99px; position: relative;
   background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
 }
 /* The mode, so the line says how you are travelling without spending a word on it. */
@@ -3434,14 +3435,32 @@ body {
   padding: 0 !important; overflow: visible;
 }
 /*
- * No fill or stroke override here, and that is deliberate rather than an omission.
+ * STROKE: NONE, AND I TOOK IT OUT ONCE AND WAS WRONG.
  *
- * The old rule forced `fill: currentColor; stroke: none` on the svg, because the glyph
- * inside it was a bare path with no styling of its own. The creature is not: every part of
- * it carries its own class and its own paint, and anything in it that legitimately
- * inherits — the speckle, the satellites — would be painted out by a blanket override.
+ * The rule above this one — `.hear-transport button svg { fill: none; stroke: currentColor;
+ * stroke-width: 1.7 }` — exists for the four outline glyphs in this row, and `.hear-go` is
+ * one of those buttons, so its svg matches it too. Every shape in the creature that does
+ * not set its own stroke therefore inherited a 1.7px WHITE one:
+ *
+ *   the glow circle at r*1.4   a crisp white ring floating outside the sphere
+ *   110 sub-pixel specks       1.7px white dots, so the body looked like a sesame bagel
+ *   the eyes and their light   white outlines around both
+ *
+ * I removed this override deliberately, with a comment arguing that a blanket rule would
+ * paint out the parts of the creature that legitimately inherit. Half right: `fill` would
+ * have mattered if anything inside relied on inheriting a fill, and nothing does — every
+ * painted part carries its own `fill` attribute or its own class. `stroke` was the one
+ * doing damage, and taking the guard off let the row's glyph styling leak into the
+ * artwork. Reasoned about rather than rendered, which is exactly how it got past me:
+ * at 1x the white specks read as texture and the ring read as a glow.
+ *
+ * Elements that set their own stroke — the rim's gradient — are untouched, because a
+ * presentation attribute still applies where no CSS rule targets that element.
  */
-.hear-go svg { width: 78px !important; height: 78px !important; overflow: visible; }
+.hear-go svg {
+  width: 78px !important; height: 78px !important; overflow: visible;
+  fill: none !important; stroke: none !important;
+}
 
 .hear-acts { flex: none; display: flex; gap: 8px; padding: 12px 18px 0; }
 /* Three across now rather than two, so they have to be able to shrink: `flex: 1 1 0`
@@ -3831,14 +3850,30 @@ body {
  * bottom chrome 366 -> ~152, and the map goes from 22 percent of the screen to 66.
  */
 
-/* One line, not two. The filter used to be a whole row under this. */
+/*
+ * One line, and the WIDTH GOES TO THE FILTER.
+ *
+ * It was the other way round, and the listener called it: "the echo selection should be
+ * bigger, the travel should be expandable". The journey is a label you set once a session
+ * and then read; the filter is a tool you reach for whenever the mood changes. Giving the
+ * flexible width to the label and the fixed scrap to the tool had it backwards.
+ *
+ * The journey keeps its name and its time and simply stops stretching — it is as wide as
+ * it needs to be and no wider, and the full journey screen is still one tap into it.
+ */
 .mapbar {
   flex-direction: row; align-items: flex-start; gap: 8px; flex-wrap: wrap;
 }
-.mapbar > .journey-tap { flex: 1 1 190px; min-width: 0; }
+.mapbar > .journey-tap { flex: 0 1 auto; min-width: 0; max-width: 58%; }
+.catfilter { flex: 1 1 auto; min-width: 0; }
+.catfilter-tap { width: 100%; justify-content: flex-start; }
+/* The words take the middle, so the chevron stays pinned to the right edge where a
+   disclosure belongs rather than floating beside the label. */
+.catfilter-label { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; text-align: left; }
+.catfilter-tap > svg:last-child { margin-left: auto; flex: none; }
 
 /* ── the category filter, folded ────────────────────────────────────────────── */
-.catfilter { position: relative; flex: none; }
+.catfilter { position: relative; }
 .catfilter-tap {
   display: flex; align-items: center; gap: 7px; cursor: pointer;
   /* 40 inside a row that pads to 44, the same bargain the chips strike. */

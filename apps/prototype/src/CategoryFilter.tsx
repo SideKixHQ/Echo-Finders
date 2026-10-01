@@ -89,7 +89,18 @@ export function CategoryFilter({ available, on, onToggle, onAll }: CategoryFilte
           <i className="cat-legend" />
           <i className="cat-food-drink" />
         </span>
-        {!all && <span>{lit} of {CHIP_GROUPS.length}</span>}
+        {/*
+          IT SAYS WHAT IT IS AGAIN, because this is the control people actually use.
+          
+          It was collapsed to three dots on the argument that "All echoes" cost 131 pixels
+          to say nothing was filtered. True about the pixels and wrong about the priority:
+          you change your journey once a session and you change what you are looking for
+          whenever the mood changes, so the tool got shrunk to make room for the label.
+          This row now spends its width the other way round.
+        */}
+        <span className="catfilter-label">
+          {all ? "All echoes" : `${lit} of ${CHIP_GROUPS.length} kinds`}
+        </span>
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M6 9.5l6 6 6-6" />
         </svg>
