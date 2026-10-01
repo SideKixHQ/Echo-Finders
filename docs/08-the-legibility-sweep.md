@@ -317,3 +317,88 @@ package screen was **still mounted on top with `backdrop-filter: blur(3px)`**. T
 picked a route and never closed it, so every reading was taken through a frosted panel the
 app puts there on purpose. The harness now closes it and throws if it is still up, because
 a measurement taken through a scrim is worse than no measurement.
+
+## Then: the chip and the bar were saying the same thing
+
+> "but dont you see that on the bottom where the card selection is? isnt that the same thing?"
+
+Checked against the route table rather than argued about:
+
+| route | the chip showed | is that an echo's place? |
+| --- | --- | --- |
+| Lower Manhattan walk | African Burial Ground | **yes** |
+| Ocean Drive | Casa Casuarina | **yes** |
+| Central Park West | Strawberry Fields | the same spot |
+| Blue Ridge Parkway | Boone | no |
+| JFK to MIA | Miami International | no |
+
+So on the walk anybody would open first, the top of the screen said "African Burial Ground"
+and the bar at the bottom said "African Burial Ground" the moment you stepped to that echo.
+The same words twice, five hundred pixels apart. Three of the five routes end at an echo,
+because a walk worth taking ends somewhere worth standing — the collision is structural,
+not bad luck.
+
+They were never meant to be the same thing:
+
+| | the chip | the bar |
+| --- | --- | --- |
+| subject | the journey, one per session | one echo of thirteen, changing on every arrow press |
+| the name | where you are going | what this story is, and where |
+| the number | minutes until the walk ends | how long the story is |
+| the progress | how far along the walk | how far through the audio |
+
+Genuinely different, and two of those rows looked like the same kind of number while the
+names matched outright. That is not a distinction, it is a coincidence that held because
+the two had only ever been looked at separately.
+
+### The chip names the journey now
+
+Route names are written "area: what happens on it", so the part before the colon is the
+area — which is what this line is for, is always short, and can never collide with an echo.
+
+| route name in the data | the chip |
+| --- | --- |
+| Lower Manhattan: the Battery to the African Burial Ground | **Lower Manhattan** |
+| Ocean Drive: the walk home | **Ocean Drive** |
+| Blue Ridge Parkway: Asheville to Boone | **Blue Ridge Parkway** |
+
+It is the better answer anyway. The chip exists to say *why these pins and not others*, and
+"you are on the Lower Manhattan walk" answers that where "you are heading to the African
+Burial Ground" does not. A journey is an area you move through; an echo is a story at a
+point. Roaming already got this right with "Around here"; route mode now matches it.
+
+Flights keep `JFK ●———— MIA`, because in the air both ends are the orientation and there is
+no bottom-bar echo to collide with.
+
+### And the bar says how long until you are there
+
+> "I like being able to know the time left to echo."
+
+It did not say that anywhere. The chip had how long the whole journey has left, the bar had
+how long the story is, and neither is **how far away the thing in front of you is, in the
+unit a person plans with**. "390 m" is a measurement; you have to divide it by your own
+walking pace in your head before it decides anything. Five minutes is the decision.
+
+`presetFor(mode).speedKph` is the pace the engine already reckons with — 4.5 on foot, 90 in
+a car — so the bar and the engine's own arrival cannot drift apart by being worked out
+twice. Under 150 m it goes back to metres, because "one minute" is noise when you can see
+the doorway while "100 m" tells you to look up, and inside the trigger radius it stops
+being a number at all.
+
+    Fraunces Tavern · 5 min · 1:25
+
+Two numbers, different in kind and written differently so they cannot be read as the same
+measurement twice. The eight pixels that cost came out of the line's gaps and half a point
+of type, not out of the place name.
+
+### One more false alarm, in the audit again
+
+The short-phone check reported the package screen's primary button as 52px lost on every
+375x667 run. It was not: the floor was the top of the tab bar whenever a tab bar existed,
+and the package screen is z-index 60 against the nav's 50, so its button is drawn **over**
+the bar and is perfectly tappable.
+
+The frame is the only floor now, and whether the bar actually covers a control is asked of
+the composed page, per control, by hit-testing its bottom edge. Second time this pass that
+an assumption baked into a measurement produced a defect that was not there — the first was
+measuring the whole app through the package screen's own blur.

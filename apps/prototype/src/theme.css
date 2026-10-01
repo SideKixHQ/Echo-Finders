@@ -3992,13 +3992,25 @@ body {
   font-size: 14.5px; font-weight: 500; line-height: 1.25; color: var(--white);
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
+/*
+ * Three facts and a place in 181 pixels, so the gaps are counted.
+ *
+ * 4px and 11px rather than 6 and 11.5, which is worth eight pixels — the difference
+ * between "Fraunces Tavern" and "Fraunces Taver…" once the line started carrying a time
+ * to the echo as well as the length of the story. 11 is Apple's floor and this sits at it
+ * rather than under it, which the controls audit checks on every run.
+ */
 .echobar-where {
-  display: flex; gap: 6px; min-width: 0;
-  font-size: 11.5px; color: var(--muted); white-space: nowrap;
+  display: flex; gap: 4px; min-width: 0;
+  font-size: 11px; color: var(--muted); white-space: nowrap;
 }
 .echobar-place { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 .echobar-place::after { content: " ·"; }
-/* Never truncated. The distance is the one fact on this line somebody acts on. */
+/*
+ * Never truncated, and now two numbers rather than one: how long until you are there, and
+ * how long the story is. Different in kind and written differently — "5 min" against
+ * "1:25" — so they cannot be read as the same measurement twice.
+ */
 .echobar-facts { flex: none; }
 .echobar-warm .echobar-where { color: var(--ember-core); }
 

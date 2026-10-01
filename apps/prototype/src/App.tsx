@@ -1436,6 +1436,7 @@ export function App() {
                     setListening(true);
                   }}
                   simple={simple}
+                  mode={roaming ? roamMode : route.mode}
                   guidance={state.guidance}
                 />
               )}

@@ -47,7 +47,7 @@
  * of twenty six. Nearest first, so the next item is always the cheapest one to go and get.
  */
 
-import { rarityOf, type Echo, type Guidance } from "@echofinders/core";
+import { presetFor, rarityOf, type Echo, type Guidance, type TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, type EchoFace } from "./Echo";
 import type { PinState } from "./RouteMap";
@@ -77,6 +77,14 @@ export interface EchoBarProps {
   readonly onPlay: (echo: Echo) => void;
   /** The plain-language cut, which changes the title and the running time. */
   readonly simple: boolean;
+  /**
+   * How you are travelling, which is the only way a distance becomes a time.
+   *
+   * `presetFor(mode).speedKph` is the pace the engine already reckons with — 4.5 on foot,
+   * 90 in a car — so "six minutes" here and the arrival the engine predicts cannot drift
+   * apart by being worked out twice.
+   */
+  readonly mode: TravelMode;
   /**
    * The engine's hot-and-cold verdict, carrying the echo it is about.
    *
@@ -110,6 +118,7 @@ export function EchoBar({
   onPlayPause,
   onPlay,
   simple,
+  mode,
   guidance,
 }: EchoBarProps) {
   /*
@@ -253,7 +262,7 @@ export function EchoBar({
             <span className="echobar-where">
               <span className="echobar-place">{shortPlace(echo.point.place)}</span>
               <span className="echobar-facts">
-                {nearness(distanceKm, cue?.kind ?? null)} · {clock(durationS)}
+                {reach(distanceKm, cue?.kind ?? null, presetFor(mode).speedKph)} · {clock(durationS)}
               </span>
             </span>
           </button>
@@ -288,27 +297,36 @@ export function EchoBar({
 }
 
 /**
- * How far off, and it stops being a number the moment you are nearly there.
+ * HOW LONG UNTIL I AM THERE, which is the question, and metres only when minutes are silly.
  *
- * Distance is what a person acts on from across a neighbourhood: "400 m" decides whether
- * to cross the road. Inside the trigger radius it stops deciding anything, and a live
- * metre count that close invites staring at a screen instead of looking up at the thing —
- * which is the one behaviour this whole product is arranged to prevent. So the last two
- * cue states say a word instead.
+ * It was metres all the way out, and "390 m" is a measurement rather than an answer:
+ * nobody decides anything from it without first dividing by their own walking pace in
+ * their head. Six minutes is the decision. It is also the one number this bar was missing
+ * — the top of the screen has how long the whole journey has left, the bar had how long
+ * the story is, and neither of them is how far away the thing in front of you is in the
+ * only unit a person plans with.
  *
- * ROUNDED TO FIFTY METRES, which is the echo card's rounding rather than the stepper's
- * ten. They are on screen together now — tap the bar and the card opens above it — and
- * they disagreed in the first render: "390 m" on the bar over "About 400m away" on the
- * card, about the same echo, two inches apart. That is the kind of disagreement that makes
- * somebody stop believing either number. Fifty is also honest about a phone fix.
+ * Near the end it goes back to distance, because minutes stop meaning anything there: "one
+ * minute" is noise when you can see the doorway, while "100 m" tells you to look up. And
+ * inside the trigger radius it stops being a number at all — a live count that close
+ * invites staring at a screen instead of at the thing, which is the one behaviour this
+ * whole product is arranged to prevent.
+ *
+ * The metres are rounded to fifty, which is the echo card's rounding. They are on screen
+ * together — tap the bar and the card opens above it — and they disagreed in an early
+ * render: "390 m" on the bar over "About 400m away" on the card, about the same echo, two
+ * inches apart. That is how somebody stops believing either number.
  */
-function nearness(distanceKm: number | null, cue: string | null): string {
+function reach(distanceKm: number | null, cue: string | null, speedKph: number): string {
   if (cue === "arrived") return "you're here";
   if (cue === "close") return "a few steps";
   if (distanceKm === null) return "near here";
   const m = distanceKm * 1000;
-  if (m < 950) return `${Math.max(50, Math.round(m / 50) * 50)} m`;
-  return `${distanceKm.toFixed(1)} km`;
+  if (m < 150) return `${Math.max(50, Math.round(m / 50) * 50)} m`;
+  const minutes = Math.round((distanceKm / speedKph) * 60);
+  if (minutes < 1) return `${Math.round(m / 50) * 50} m`;
+  if (minutes < 60) return `${minutes} min`;
+  return `${Math.floor(minutes / 60)}h ${String(minutes % 60).padStart(2, "0")}`;
 }
 
 /**

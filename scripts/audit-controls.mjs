@@ -177,12 +177,24 @@ const fitSweep = async () => {
     const screen = document.querySelector('.screen');
     if (!screen) return [];
     const box = screen.getBoundingClientRect();
+    /*
+     * THE TAB BAR DOES NOT ALWAYS WIN, and assuming it did made this audit lie.
+     *
+     * The floor used to be the top of the nav whenever a nav was showing, on the fair
+     * reasoning that under the tab bar is as lost as off the bottom. It is not always
+     * under it: the package screen is z-index 60 against the nav's 50, so its primary
+     * button is drawn OVER the bar, perfectly visible and perfectly tappable — and was
+     * reported as "52px past the frame or under the tab bar" on every short-phone run.
+     * A false positive in an audit is worse than a gap, because it teaches you to skim
+     * the output and the next one will be real.
+     *
+     * So the frame is the only floor, and whether the bar actually covers anything is a
+     * question asked of the composed page below, per control, by hit-testing.
+     */
     const navEl = document.querySelector('.nav');
-    // Under the tab bar is as lost as off the bottom, so the ceiling is whichever is
-    // higher: the bottom of the frame, or the top of the nav when one is showing.
-    const floor = navEl && navEl.getBoundingClientRect().height > 0
-      ? Math.min(box.bottom, navEl.getBoundingClientRect().top)
-      : box.bottom;
+    const navTop = navEl && navEl.getBoundingClientRect().height > 0
+      ? navEl.getBoundingClientRect().top : Infinity;
+    const floor = box.bottom;
     const out = [];
     for (const el of document.querySelectorAll('button,[role="button"],[role="slider"],a,input,select')) {
       const r = el.getBoundingClientRect();
@@ -222,12 +234,26 @@ const fitSweep = async () => {
         const hit = document.elementFromPoint(px, py);
         if (!hit || !(hit === el || el.contains(hit) || hit.contains(el))) continue;
       }
-      const lost = r.bottom > floor + 1 || r.top < box.top - 1 || r.right > box.right + 1 || r.left < box.left - 1;
+      /*
+       * Does the tab bar REALLY cover this one? Asked at the control's own bottom edge
+       * rather than assumed from its coordinates, because a control can legitimately be
+       * drawn over the bar.
+       */
+      let buried = false;
+      if (r.bottom > navTop + 1) {
+        const by = Math.min(Math.max(r.bottom - 3, 1), window.innerHeight - 1);
+        const hit = document.elementFromPoint(px, by);
+        buried = !hit || !(hit === el || el.contains(hit) || hit.contains(el));
+      }
+      const lost = buried || r.bottom > floor + 1 || r.top < box.top - 1
+        || r.right > box.right + 1 || r.left < box.left - 1;
       if (!lost) continue;
       out.push({
         name: (el.getAttribute('aria-label') || el.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 40),
         cls: (el.className.baseVal ?? el.className ?? '').toString().split(' ')[0],
-        by: Math.round(Math.max(r.bottom - floor, box.top - r.top, r.right - box.right, box.left - r.left)),
+        by: Math.round(Math.max(
+          buried ? r.bottom - navTop : 0,
+          r.bottom - floor, box.top - r.top, r.right - box.right, box.left - r.left)),
       });
     }
     return out;

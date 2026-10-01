@@ -86,12 +86,22 @@ export function RouteRibbon({ route, progress, remainingS }: RouteRibbonProps) {
         {MODE_ICON[route.mode]}
       </svg>
       {/*
-        The one name that matters, and it takes every pixel the row has left. It can still
-        truncate on a very long destination with a filter switched on, and that is the
-        right thing to lose: a filter hiding two thirds of the map has to say so, and the
-        last few letters of a place you are walking to do not.
+        THE JOURNEY'S NAME, NOT ITS DESTINATION, and that is a correction rather than a
+        preference.
+        
+        It showed the destination, and the destination of a walk is usually an echo:
+        checked against the route table, three of the five end at one. So on the Lower
+        Manhattan walk this line said "African Burial Ground" while the bar at the bottom
+        of the same screen said "African Burial Ground" the moment you stepped to that
+        echo. The same words twice, five hundred pixels apart, with two different-looking
+        time numbers under them. Spotted by the listener, confirmed in the data.
+        
+        The name is the better answer anyway. This chip exists to say why these pins and
+        not others, and "you are on the Lower Manhattan walk" answers that where "you are
+        heading to the African Burial Ground" does not. A journey is an area you move
+        through; an echo is a story at a point. Those two can never collide.
       */}
-      <b className="ribbon-dest">{short(route.destination)}</b>
+      <b className="ribbon-dest">{journeyName(route)}</b>
       <small>{left(remainingS)}</small>
       <Chevron />
     </div>
@@ -121,6 +131,24 @@ const Chevron = () => (
  */
 const short = (place: { code?: string; name: string }) =>
   place.code ?? place.name.split(",")[0]!;
+
+/**
+ * What to call the journey, in the width of a chip.
+ *
+ * Route names are written as "area: what happens on it" — "Lower Manhattan: the Battery
+ * to the African Burial Ground", "Ocean Drive: the walk home" — so the part before the
+ * colon is the area, which is exactly what this line is for and is always short. The
+ * subtitle after it belongs on the package screen, which is one tap away and has room for
+ * a sentence.
+ *
+ * Falls back to the destination for a route with no name, which is what this showed for
+ * every route until now.
+ */
+function journeyName(route: Route): string {
+  const name = route.name?.trim();
+  if (!name) return short(route.destination);
+  return name.split(":")[0]!.trim();
+}
 
 function left(seconds: number): string {
   if (seconds <= 30) return "arrived";
