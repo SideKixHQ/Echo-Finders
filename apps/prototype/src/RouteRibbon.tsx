@@ -103,12 +103,22 @@ export function RouteRibbon({ route, progress, remainingS }: RouteRibbonProps) {
       */}
       <b className="ribbon-dest">{journeyName(route)}</b>
       <small>{left(remainingS)}</small>
-      <Chevron />
     </div>
   );
 }
 
 /*
+ * CARRIED MODES ONLY now, and the reason is width rather than taste.
+ *
+ * With the category filter taking the room it needs — it is the control people actually
+ * use — the journey has whatever is left, and on a 375px phone that is about 204 pixels.
+ * The chevron and its gap are 21 of them, which is the difference between "Lower
+ * Manhattan" and "Lower Man…". A disclosure arrow is the most expendable thing in that
+ * pill: the chip is the only object on the row that names a place, and tapping a thing
+ * that names your journey to change your journey needs no arrow to be guessable.
+ *
+ * It stays on the flight line, where the two codes are short and the space is there.
+ *
  * The tap target says so inside the pill, as the roaming chip already does.
  *
  * Route mode carried it as a separate centred line of uppercase aqua UNDER the pill — a
