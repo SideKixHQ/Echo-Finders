@@ -233,3 +233,87 @@ map, and it is worth asking before the library gets much bigger.
 
 `Synced` draws its own dark background and does not follow the light theme, so its title
 comes out near-black on near-black there. Seen while rendering this pass.
+
+---
+
+# The journey chip
+
+A photograph of it on a phone: `Battery … ● African … 17m ›`. Two place names cut to one
+word each with a bullet between them.
+
+**The bullet is not a separator.** It is the playhead, sitting on a progress bar with no
+width, and the arithmetic says exactly why:
+
+| | px |
+| --- | --- |
+| `.mapbar` at 375 | 351 |
+| less the category filter | 131 |
+| the chip gets | **212** |
+| less padding and four gaps | 144 for content |
+| two names capped at 34% each | 72 and 72, where "Battery Park" needs about 82 |
+| **left for the bar** | **−39** |
+
+So the bar collapses, its dot survives, and the one picture the component exists to draw —
+*here is the line, here is you on it* — is gone. It had six pixels before the category
+filter joined that row and went negative after, which is worth owning: the squeeze was
+self-inflicted, by the pass immediately before this one.
+
+## The deeper cause
+
+`short()` returns the airport code when a place has one. **This was drawn for a flight.**
+`SFO ●———— JFK · 5h19` fits 212px beautifully; `Battery Park ● African Burial Ground` never
+could. A component built for three-letter codes was reused for street names and nobody
+re-did the sums.
+
+## What other apps do
+
+Once you are *moving*, mainstream navigation drops the origin. Google Maps shows distance
+remaining, time remaining and ETA; Apple Maps shows arrival time and remaining distance.
+Neither mentions where you started, because the origin stops being information the moment
+you set off. Flight trackers keep both ends, because a passenger cannot look out of the
+window and know where they are — there, the line *is* the orientation.
+
+That is the same split this app already draws everywhere else, so the component takes it:
+
+| | shows |
+| --- | --- |
+| carried (flight, rail) | origin, bar, destination, time — unchanged |
+| self-directed (foot, car, bike) | the destination and the time left |
+
+## Progress is the chip, not a bar inside it
+
+A background cannot be squeezed to minus thirty-nine pixels by its neighbours. The pill
+fills from the left and its right edge is the playhead — the same hairline the white dot
+used to be, with none of the width. No transition on it: the walk updates this four times a
+second, so a 600ms ease is one that can never finish and all it would do is make the fill
+lag the number beside it.
+
+## And the filter gives the room back
+
+"All echoes" cost **131 pixels to say that nothing is filtered**, which is its state almost
+always. Three dots and a chevron say the same in 52.
+
+| | chip | destination |
+| --- | --- | --- |
+| before | 212 | "African …" |
+| after | 284 | "African Burial Ground", uncut |
+| with a filter on | 244 | "African Burial Gro…" |
+
+A switched-on filter takes its words back, and that asymmetry is the point: a map quietly
+missing two thirds of its pins with no visible cause is the worst thing this screen could
+do, while a map showing everything needs no announcement. The accessible name says it in
+full in both states, because a screen reader has no pixels to save.
+
+## One thing the measuring got wrong first
+
+Every photograph of the new chip came out soft — the pill, the text, all of it — while the
+roaming chip beside it in the same frame stayed razor sharp. Two theories went in before
+anything was measured: a composited layer from `overflow: hidden` plus a transitioning
+child, rasterising off the pixel grid at a fractional flex width. Plausible, tidy, and
+wrong.
+
+Querying `elementsFromPoint` at the bar's own centre named the culprit in one line: the
+package screen was **still mounted on top with `backdrop-filter: blur(3px)`**. The probe had
+picked a route and never closed it, so every reading was taken through a frosted panel the
+app puts there on purpose. The harness now closes it and throws if it is still up, because
+a measurement taken through a scrim is worse than no measurement.

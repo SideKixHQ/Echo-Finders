@@ -57,6 +57,22 @@ export function CategoryFilter({ available, on, onToggle, onAll }: CategoryFilte
 
   return (
     <div className="catfilter" ref={wrap}>
+      {/*
+        IT ONLY SPELLS ITSELF OUT WHEN IT IS DOING SOMETHING.
+
+        "All echoes" cost 131 pixels to say that nothing is filtered, which is its state
+        almost always — and it was taking those pixels off the journey chip beside it,
+        which needed them badly enough that its progress bar had gone to minus thirty-nine
+        (see `RouteRibbon`). Three dots and a chevron say the same thing in 52, and the
+        chip goes from 212 to 291, which is finally enough for a destination not to
+        truncate.
+
+        A switched-on filter takes its words back, because that is the asymmetry: a map
+        quietly missing two thirds of its pins with no visible cause is the worst thing
+        this screen could do, while a map showing everything needs no announcement at all.
+        The accessible name says it in full either way, since a screen reader has no
+        pixels to save.
+      */}
       <button
         className={all ? "catfilter-tap" : "catfilter-tap is-filtered"}
         onClick={() => setOpen(!open)}
@@ -73,7 +89,7 @@ export function CategoryFilter({ available, on, onToggle, onAll }: CategoryFilte
           <i className="cat-legend" />
           <i className="cat-food-drink" />
         </span>
-        {all ? "All echoes" : `${lit} of ${CHIP_GROUPS.length} kinds`}
+        {!all && <span>{lit} of {CHIP_GROUPS.length}</span>}
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M6 9.5l6 6 6-6" />
         </svg>
