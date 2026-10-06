@@ -424,14 +424,12 @@ if (await p.locator('.catfilter-tap').count()) {
   focus.push(...await focusSweep('map/filter'));
   await p.locator('.catfilter-tap').click(); await p.waitForTimeout(300);
 }
-/* The travel modes, behind a press and hold on the journey chip. A right-click opens the
-   same menu and is what a script can do reliably. */
-if (await p.locator('.jchip').count()) {
-  await p.locator('.jchip').click({ button: 'right' }); await p.waitForTimeout(400);
-  await capture('map/modes');
-  focus.push(...await focusSweep('map/modes'));
-  await p.keyboard.press('Escape'); await p.waitForTimeout(300);
-}
+/* The trip sheet: Walk / Drive / Fly and the routes for each, one tap on the journey chip. */
+await p.getByLabel(/Change your journey|Your journey, on this device/).click().catch(()=>{});
+await p.waitForTimeout(400);
+await capture('map/trip');
+focus.push(...await focusSweep('map/trip'));
+await p.keyboard.press('Escape'); await p.waitForTimeout(300);
 await p.locator('.nav button').nth(1).click(); await p.waitForTimeout(700); await capture('my-echoes');
 focus.push(...await focusSweep('my-echoes'));
 /*
@@ -447,6 +445,8 @@ await p.locator('.nav button').first().click(); await p.waitForTimeout(600);
 /* The package is reached through the journey chip now: the download fab that used to
    open it was a duplicate of that chip and is gone. */
 await p.getByLabel(/Change your journey|Your journey, on this device/).click().catch(()=>{});
+await p.waitForTimeout(300);
+await p.getByRole('button', { name: /Journey details|Find a flight by airport/ }).click().catch(()=>{});
 await p.waitForTimeout(700); await capture('package');
 
 const all = Object.entries(screens);

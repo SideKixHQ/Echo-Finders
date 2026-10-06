@@ -24,7 +24,7 @@ import { Onboarding } from "./Onboarding";
 import { loadRatings, setRating, type Rating } from "./ratings";
 import { BrowserLocation } from "./browser-location";
 import { Rail, type WalkingView } from "./Rail";
-import { MODE_ICON, MODE_PHRASE } from "./travel";
+import { MODE_PHRASE } from "./travel";
 import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
 import { Synced } from "./Synced";
 import { Walk } from "./Walk";
@@ -512,7 +512,10 @@ export function App() {
    * Changing how you are travelling: the journey screen's control and the map's hold menu
    * both come here, so the two can never disagree about what a switch does.
    */
+  /** The ground journey before Flying was chosen, so backing out of a flight can restore it. */
+  const beforeFlight = useRef<{ travel: Travel; roaming: boolean } | null>(null);
   const switchTravel = (next: Travel) => {
+    if (next === "flight" && travel !== "flight") beforeFlight.current = { travel, roaming };
     setTravel(next);
     /*
      * Back to the walking screen's start, which is the map now.
@@ -712,7 +715,7 @@ export function App() {
    */
   const compactBar = roaming || route.mode !== "flight";
   /* "47 min", not "47m": on a walk, "47m" reads as forty-seven metres. */
-  const leftLabel = left(remainingS).replace(/(\d+)m$/, "$1 min");
+  const leftLabel = left(remainingS).replace(/^(\d+)m$/, "$1 min");
   const journeyLabel = (route.name ?? route.destination.name).split(":")[0]!.trim();
 
   // How much of the library this route actually passes. Worth showing: it is the clearest
@@ -1308,93 +1311,69 @@ export function App() {
                   fiction the whole UX review was about, so it gets a plain chip saying what
                   it is. Same slot, same tap, nothing made up.
                 */}
+                {/*
+                  The journey, and the way to change it: a small chip on the ground, the
+                  origin-to-destination ribbon in the air. Both open the same trip sheet.
+                  See `JourneyChip`.
+                */}
+                <JourneyChip
+                  travel={travel}
+                  roaming={roaming}
+                  route={route}
+                  routes={ROUTES}
+                  counts={corridorCounts}
+                  kept={downloaded}
+                  label={roaming ? "Exploring" : leftLabel}
+                  progress={roaming ? null : along}
+                  name={
+                    roaming
+                      ? `Change your journey: ${roamMode === "driving" ? "driving" : "walking"}, exploring with no route`
+                      : `Change your journey: ${journeyLabel}, ${leftLabel} left`
+                  }
+                  onRoam={(mode) => {
+                    switchTravel(mode);
+                  }}
+                  onRoute={(next) => {
+                    setTravel(next.mode === "flight" ? "flight" : next.mode === "driving" ? "driving" : "walking");
+                    setRoaming(false);
+                    setWalkingView("map");
+                    setBeacon(null);
+                    onSelectRoute(next);
+                  }}
+                  onDetails={(mode) => {
+                    /* Airports are picked on the journey screen, so it opens already flying.
+                       Closing it without a flight puts the journey back (see `Preflight`'s
+                       `onClose`), so this can never leave a walk running as a "flight". */
+                    if (mode === "flight" && travel !== "flight") switchTravel("flight");
+                    openPackage();
+                  }}
+                >
+                  {compactBar ? undefined : (
+                    <RouteRibbon route={route} progress={along} remainingS={remainingS} />
+                  )}
+                </JourneyChip>
                 {compactBar ? (
-                  <>
-                    <JourneyChip
-                      travel={travel}
-                      mode={roaming ? roamMode : route.mode}
-                      label={roaming ? "Here" : leftLabel}
-                      progress={roaming ? null : along}
-                      name={
-                        roaming
-                          ? `Change your journey: ${roamMode === "driving" ? "driving" : "walking"} around here`
-                          : `Change your journey: ${journeyLabel}, ${leftLabel} left`
-                      }
-                      onOpen={openPackage}
-                      onTravel={(next) => {
-                        switchTravel(next);
-                        // A flight is chosen by number, so flying lands on the journey
-                        // screen to pick one rather than on a map with no route.
-                        if (next === "flight") openPackage();
-                      }}
+                  /*
+                    THE CATEGORIES, IN THE ROW, which is where board 2 of the canvas draws
+                    them. On foot they are what you change as you go, and they matter more
+                    than the name of the walk you already chose.
+                  */
+                  <div className="mapbar-chips">
+                    <CategoryChips
+                      available={available}
+                      on={activeCats}
+                      onToggle={toggleCategory}
+                      onAll={allCategories}
                     />
-                    {/*
-                      THE CATEGORIES, BACK IN THE ROW, which is where board 2 of the canvas
-                      draws them. On foot they are what you change as you go, and they
-                      matter more than the name of the walk you already chose.
-                    */}
-                    <div className="mapbar-chips">
-                      <CategoryChips
-                        available={available}
-                        on={activeCats}
-                        onToggle={toggleCategory}
-                        onAll={allCategories}
-                      />
-                    </div>
-                  </>
+                  </div>
                 ) : (
-                  <>
-                  <button
-                    className={roaming ? "journey-tap journey-roam" : "journey-tap"}
-                    onClick={openPackage}
-                    aria-label={
-                      downloaded ? "Your journey, on this device. Tap to change it" : "Change your journey"
-                    }
-                  >
-                    {roaming ? (
-                      <>
-                        <svg viewBox="0 0 24 24" aria-hidden="true">
-                          {MODE_ICON[roamMode]}
-                        </svg>
-                        {roamMode === "driving" ? "Driving" : "Around here"}
-                        {/*
-                          CARRIED, said where the journey is named.
-
-                          The app has always tracked whether the journey is on the device and
-                          the only thing that showed it was a tick inside the control column's
-                          download fab — the fab that has now gone, because it opened the same
-                          screen this chip opens. A fact with nowhere to be is a fact that
-                          drifts, so it moved to the one line that is always on screen and is
-                          already about the journey.
-                        */}
-                        {downloaded && (
-                          <span className="journey-kept" aria-hidden="true">
-                            <svg viewBox="0 0 24 24">
-                              <path d="M12 3.2a8.8 8.8 0 1 1-6.2 2.6" />
-                              <path d="M8.2 11.8l3 3 5.6-6.4" />
-                            </svg>
-                          </span>
-                        )}
-                        <span className="journey-change">{downloaded ? "Kept" : "Change"}</span>
-                      </>
-                    ) : (
-                      <>
-                        <RouteRibbon route={route} progress={along} remainingS={remainingS} />
-                      </>
-                    )}
-                  </button>
-                  {/*
-                    The nine chips, folded into one button on the same line as the journey.
-                    Two rows of top chrome became one, and the row itself is one tap away
-                    inside it, unchanged. See `CategoryFilter`.
-                  */}
+                  /* In the air the ribbon needs the width, so the chips fold into a button. */
                   <CategoryFilter
                     available={available}
                     on={activeCats}
                     onToggle={toggleCategory}
                     onAll={allCategories}
                   />
-                  </>
                 )}
               </div>
               {/*
@@ -1818,12 +1797,27 @@ export function App() {
                 setRoaming(on);
                 // Same reason: choosing to roam is choosing the hunting screen.
                 if (on) {
-                  setWalkingView("rose");
+                  setWalkingView("map");
                   setBeacon(null);
                 }
               }}
               onChoose={() => setPlanOpen(true)}
-              onClose={() => setPackageOpen(false)}
+              onClose={() => {
+                /*
+                 * Closed while flying with no flight picked: put the journey back.
+                 *
+                 * Choosing Flying here switches at once, and a flight is only real once a
+                 * pair of airports is picked. Closing before that used to leave the app
+                 * "flying" a walking route — the chip said walking while the app thought
+                 * it was in the air. Back to the ground journey you had instead.
+                 */
+                if (travel === "flight" && route.mode !== "flight") {
+                  const back = beforeFlight.current;
+                  setTravel(back?.travel ?? "walking");
+                  setRoaming(back?.roaming ?? true);
+                }
+                setPackageOpen(false);
+              }}
               onStart={(next) => {
                 if (!roaming && next.id !== route.id) onSelectRoute(next);
                 setDownloaded(true);

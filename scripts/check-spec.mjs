@@ -194,7 +194,10 @@ await phase('plan', async () => {
     await p.waitForTimeout(300);
   }
   /* Through the journey chip, since the duplicate download fab is gone. */
+  /* The chip opens the trip sheet; the journey screen is its last item. */
   await p.getByLabel(/Change your journey|Your journey, on this device/).click();
+  await p.waitForTimeout(300);
+  await p.getByRole('button', { name: /Journey details|Find a flight by airport/ }).click();
   await p.waitForTimeout(700);
   // A package is a route's worth of echoes, so the package controls only exist once a
   // route is picked. Roaming, which is where walking starts, has none.
