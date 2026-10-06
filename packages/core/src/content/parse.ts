@@ -19,6 +19,7 @@ import type {
   EchoFormat,
   Pronunciation,
   Source,
+  Claim,
   TrueCrimeReview,
 } from "../types.js";
 import { ECHO_CATEGORIES, NOMINAL_DURATION_S } from "../types.js";
@@ -159,6 +160,25 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
     });
   }
 
+  const claimsInput = input["claims"];
+  const claims: Claim[] = [];
+  if (claimsInput !== undefined) {
+    if (!Array.isArray(claimsInput)) fail("claims", "should be a list");
+    else
+      claimsInput.forEach((raw, i) => {
+        if (
+          !isRecord(raw) ||
+          typeof raw["says"] !== "string" ||
+          typeof raw["source"] !== "number" ||
+          typeof raw["quote"] !== "string"
+        ) {
+          fail(`claims[${i}]`, "needs says (text), source (a number from 1) and quote (text)");
+          return;
+        }
+        claims.push({ says: raw["says"], source: raw["source"], quote: raw["quote"] });
+      });
+  }
+
   const review = parseTrueCrimeReview(input["trueCrimeReview"], fail);
   const archive = archivePhotos(input["archive"], fail);
   const attraction = attractionOf(input["attraction"], fail);
@@ -186,6 +206,7 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
     visibility: (str("visibility", false) ?? "position-only") as Echo["visibility"],
     certainty: (str("certainty", false) ?? "documented") as Echo["certainty"],
     sources,
+    ...(claims.length > 0 ? { claims } : {}),
     // Both default to the cautious value: an unmarked file is a draft whose facts nobody
     // has checked. Publishing has to be something a person did on purpose.
     editorial: (str("editorial", false) ?? "draft") as Echo["editorial"],

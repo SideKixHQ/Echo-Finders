@@ -155,7 +155,14 @@ const demo = echoes.map((echo) => ({
 // *published* is `npm run content:validate`, which reads the content files as authored and
 // still reports those echoes as errors. This one only decides what a local demo can show.
 const report = validateLibrary(demo);
-if (!report.ok) {
+// The same bargain as the approval override above: an echo needs every checkable sentence
+// backed by a quoted source before it may be *published* (`claims.backing`), and none is
+// yet. That rule is the publishing gate's, `content:validate`; the demo plays drafts.
+// Malformed claims (`claims`) still fail here.
+const blocking = report.issues.filter(
+  (i) => i.severity === "error" && i.field !== "claims.backing",
+);
+if (blocking.length > 0) {
   console.error("library has errors; run npm run content:validate");
   process.exit(1);
 }
