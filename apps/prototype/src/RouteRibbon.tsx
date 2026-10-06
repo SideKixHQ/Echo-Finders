@@ -150,7 +150,7 @@ function journeyName(route: Route): string {
   return name.split(":")[0]!.trim();
 }
 
-function left(seconds: number): string {
+export function left(seconds: number): string {
   if (seconds <= 30) return "arrived";
   const minutes = Math.round(seconds / 60);
   if (minutes < 60) return `${minutes}m`;

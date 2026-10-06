@@ -4088,3 +4088,101 @@ body {
 /* With the tick taking the auto margin, the word sits beside it rather than fighting for
    the same edge. */
 .journey-kept + .journey-change { margin-left: 6px; }
+
+/* ── the compact top row: journey chip, then the categories ─────────────────────
+ *
+ * On foot and driving, the journey is a small chip (mode and time left) and the category
+ * chips get the rest of the row, which is how board 2 of the canvas draws them. A flight
+ * keeps the full ribbon and the folded filter (`.mapbar` above).
+ */
+.mapbar-compact { flex-wrap: nowrap; align-items: center; }
+.jchip-wrap { position: relative; flex: none; }
+.jchip {
+  position: relative; overflow: hidden; display: flex; align-items: center; gap: 7px;
+  min-height: 48px; padding: 0 10px 0 13px; border-radius: 99px; cursor: pointer;
+  font: inherit; color: var(--white); white-space: nowrap;
+  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line-2);
+  backdrop-filter: blur(12px);
+}
+.jchip-fill {
+  position: absolute; inset: 0 auto 0 0; pointer-events: none;
+  background: linear-gradient(90deg, rgba(0, 255, 231, 0.17), rgba(0, 255, 231, 0.05));
+  border-right: 1px solid rgba(0, 255, 231, 0.55);
+}
+:root[data-theme="light"] .jchip-fill {
+  background: linear-gradient(90deg, rgba(0, 115, 108, 0.16), rgba(0, 115, 108, 0.05));
+  border-right-color: rgba(0, 115, 108, 0.6);
+}
+.jchip-mode {
+  position: relative; width: 18px; height: 18px; flex: none; fill: none; stroke: var(--aqua);
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.jchip-label {
+  position: relative; font-family: "Space Grotesk", monospace; font-size: 13px;
+  font-weight: 500; color: var(--aqua);
+}
+/* The ▾: this opens something. */
+.jchip-caret {
+  position: relative; width: 13px; height: 13px; flex: none; fill: none; stroke: var(--muted);
+  stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round;
+}
+.jchip[aria-expanded="true"] .jchip-caret { transform: rotate(180deg); }
+/* On a flight the ribbon keeps the width it was drawn with. */
+.jchip-wrap-wide { flex: 1 1 190px; min-width: 0; }
+
+.jmenu {
+  position: absolute; top: calc(100% + 8px); left: 0; z-index: 42;
+  width: min(300px, calc(100vw - 30px)); padding: 6px; border-radius: 16px;
+  background: rgba(var(--rgb-panel), 0.98); border: 1px solid var(--line-2);
+  backdrop-filter: blur(16px); box-shadow: 0 16px 44px rgba(0, 0, 0, 0.5);
+  animation: catpopIn 0.16s var(--ease);
+}
+/* Walk / Drive / Fly: a visible row, the way every maps app shows travel mode. */
+.jmenu-modes {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; padding: 3px;
+  margin-bottom: 6px; border-radius: 12px; background: rgba(var(--rgb-hair), 0.06);
+}
+.jmenu-mode {
+  display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px;
+  border: 0; border-radius: 10px; background: none; cursor: pointer;
+  font: inherit; font-size: 13px; color: var(--cool);
+}
+.jmenu-mode svg {
+  width: 17px; height: 17px; flex: none; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.jmenu-mode.on {
+  color: var(--aqua); background: rgba(0, 255, 231, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(0, 255, 231, 0.45);
+}
+.jmenu-empty { margin: 8px 10px; font-size: 13px; color: var(--muted); }
+.jmenu-item {
+  display: flex; align-items: center; gap: 11px; width: 100%; min-height: 48px;
+  padding: 6px 10px; border: 0; border-radius: 11px; background: none; cursor: pointer;
+  font: inherit; font-size: 14px; color: var(--white); text-align: left;
+}
+.jmenu-item > svg:not(.jmenu-tick) {
+  width: 19px; height: 19px; flex: none; fill: none; stroke: var(--cool);
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.jmenu-item span { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.jmenu-item small { font-size: 12px; color: var(--muted); }
+.jmenu-item.on { background: rgba(0, 255, 231, 0.09); }
+.jmenu-item.on > svg { stroke: var(--aqua); }
+.jmenu-item .jmenu-tick { width: 16px; height: 16px; stroke: var(--aqua); stroke-width: 2.2; }
+.jmenu-more {
+  margin-top: 4px; border-top: 1px solid var(--line); border-radius: 0 0 11px 11px;
+  font-size: 13px; color: var(--aqua);
+}
+@media (hover: hover) { .jmenu-item:hover { background: rgba(var(--rgb-hair), 0.07); } }
+@media (prefers-reduced-motion: reduce) { .jmenu { animation: none; } }
+
+/* The categories take the rest of the row, in their own pill so the strip reads as one key. */
+.mapbar-chips {
+  flex: 1 1 0; min-width: 0; border-radius: 15px;
+  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+.mapbar-chips .chipwrap { margin-top: 0; }
+.mapbar-chips .chips { background: none; border: 0; }
+.jmenu-tick { flex: none; fill: none; stroke-linecap: round; stroke-linejoin: round; }

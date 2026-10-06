@@ -465,6 +465,8 @@ async function walk(width, height, theme) {
   await p.locator('.nav button').first().click(); await p.waitForTimeout(600);
   /* Through the journey chip, since the duplicate download fab is gone. */
   await p.getByLabel(/Change your journey|Your journey, on this device/).click({ force: true }).catch(() => {});
+  await p.waitForTimeout(400); await look('trip-sheet');
+  await p.getByRole('button', { name: /Journey details|Find a flight by airport/ }).click({ force: true }).catch(() => {});
   await p.waitForTimeout(800); await look('package');
 
   await ctx.close();

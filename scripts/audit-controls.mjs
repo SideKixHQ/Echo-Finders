@@ -414,11 +414,22 @@ await p.getByRole('button', { name: /Hide it/ }).click().catch(()=>{}); await p.
 await p.getByLabel('Back to the map').click().catch(()=>{}); await p.waitForTimeout(600);
 await capture('map/playing');
 focus.push(...await focusSweep('map/playing'));
-/* The category row, which is behind one button now rather than always on screen. */
-await p.locator('.catfilter-tap').click(); await p.waitForTimeout(400);
-await capture('map/filter');
-focus.push(...await focusSweep('map/filter'));
-await p.locator('.catfilter-tap').click(); await p.waitForTimeout(300);
+/*
+ * The category row is inline on foot and driving (`JourneyChip`), so it is already in the
+ * map captures. On a flight it is still folded behind one button, which is opened here.
+ */
+if (await p.locator('.catfilter-tap').count()) {
+  await p.locator('.catfilter-tap').click(); await p.waitForTimeout(400);
+  await capture('map/filter');
+  focus.push(...await focusSweep('map/filter'));
+  await p.locator('.catfilter-tap').click(); await p.waitForTimeout(300);
+}
+/* The trip sheet: Walk / Drive / Fly and the routes for each, one tap on the journey chip. */
+await p.getByLabel(/Change your journey|Your journey, on this device/).click().catch(()=>{});
+await p.waitForTimeout(400);
+await capture('map/trip');
+focus.push(...await focusSweep('map/trip'));
+await p.keyboard.press('Escape'); await p.waitForTimeout(300);
 await p.locator('.nav button').nth(1).click(); await p.waitForTimeout(700); await capture('my-echoes');
 focus.push(...await focusSweep('my-echoes'));
 /*
@@ -434,6 +445,8 @@ await p.locator('.nav button').first().click(); await p.waitForTimeout(600);
 /* The package is reached through the journey chip now: the download fab that used to
    open it was a duplicate of that chip and is gone. */
 await p.getByLabel(/Change your journey|Your journey, on this device/).click().catch(()=>{});
+await p.waitForTimeout(300);
+await p.getByRole('button', { name: /Journey details|Find a flight by airport/ }).click().catch(()=>{});
 await p.waitForTimeout(700); await capture('package');
 
 const all = Object.entries(screens);

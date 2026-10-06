@@ -1,0 +1,201 @@
+/**
+ * The journey at the top of the map, and the one place to change it.
+ *
+ * On foot and driving it is a small chip (how you are travelling, and either "Exploring"
+ * or the time left on a route) so the category chips get the rest of the row: on a walk
+ * they are what you change as you go, and board 2 of the canvas draws them as a row. On
+ * a flight it wraps the origin-to-destination ribbon, because a passenger cannot look out
+ * of the window and the line is the orientation.
+ *
+ * TAP opens a small trip sheet under it: a visible Walk / Drive / Fly row, then the
+ * choices for that mode — "Around here, no route" or one of its routes — and a link to the
+ * full journey screen. Every comparable app keeps travel mode one visible tap away (Google
+ * and Apple Maps' mode row, Strava's sport icon); none hides it behind a long press, and
+ * Apple's guidelines say a gesture must never be the only way to an important action. So
+ * there is no press-and-hold here.
+ *
+ * NOTHING COMMITS UNTIL A CONCRETE CHOICE IS MADE. Switching the Walk / Drive / Fly row only
+ * changes what the sheet lists; the journey changes when you pick "Around here" or a route.
+ * That is what stops "Flying" leaving the app half-switched — flying with a walking route
+ * still selected — when you change your mind before picking a flight.
+ */
+
+import { useEffect, useRef, useState, type ReactNode } from "react";
+import type { Route } from "@echofinders/core";
+import { MODE_ICON } from "./travel";
+
+export type Travel = "walking" | "driving" | "flight";
+
+export interface JourneyChipProps {
+  /** How you are travelling now. */
+  readonly travel: Travel;
+  readonly roaming: boolean;
+  readonly route: Route;
+  readonly routes: readonly Route[];
+  /** Echoes along each route, by id. */
+  readonly counts: Readonly<Record<string, number>>;
+  /** The journey is on this device, so it plays with no signal. */
+  readonly kept: boolean;
+  /** Short text on the chip: "Exploring", or the time left on a route. */
+  readonly label: string;
+  /** 0–1 along the route, drawn as the chip's fill. Null while roaming. */
+  readonly progress: number | null;
+  /** The accessible name, which says in full what the chip says in a word. */
+  readonly name: string;
+  /** The flight ribbon, drawn inside the button instead of the chip's own face. */
+  readonly children?: ReactNode;
+  readonly onRoam: (mode: "walking" | "driving") => void;
+  readonly onRoute: (route: Route) => void;
+  /** The full journey screen, opened on the mode the sheet was showing. */
+  readonly onDetails: (mode: Travel) => void;
+}
+
+const MODES: readonly { readonly id: Travel; readonly label: string }[] = [
+  { id: "walking", label: "Walk" },
+  { id: "driving", label: "Drive" },
+  { id: "flight", label: "Fly" },
+];
+
+/** The area before the colon is the route's name; what follows belongs on the journey screen. */
+const routeName = (r: Route) => (r.name ?? r.destination.name).split(":")[0]!.trim();
+
+export function JourneyChip(props: JourneyChipProps) {
+  const { travel, roaming, route, routes, counts, label, progress, name, children } = props;
+  const [open, setOpen] = useState(false);
+  /** The mode the sheet is showing, which is not a commitment. */
+  const [tab, setTab] = useState<Travel>(travel);
+  const wrap = useRef<HTMLDivElement | null>(null);
+
+  // Opening always starts on how you are travelling now.
+  useEffect(() => {
+    if (open) setTab(travel);
+  }, [open, travel]);
+
+  // A tap anywhere else, or Escape, closes it.
+  useEffect(() => {
+    if (!open) return;
+    const away = (e: PointerEvent) => {
+      if (wrap.current && !wrap.current.contains(e.target as Node)) setOpen(false);
+    };
+    const key = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("pointerdown", away);
+    document.addEventListener("keydown", key);
+    return () => {
+      document.removeEventListener("pointerdown", away);
+      document.removeEventListener("keydown", key);
+    };
+  }, [open]);
+
+  const done = (fn: () => void) => () => {
+    setOpen(false);
+    fn();
+  };
+
+  const forTab = routes.filter((r) => r.mode === tab);
+  const pct = progress === null ? null : Math.max(0, Math.min(1, progress)) * 100;
+
+  return (
+    <div className={children ? "jchip-wrap jchip-wrap-wide" : "jchip-wrap"} ref={wrap}>
+      <button
+        className={children ? "journey-tap" : "jchip"}
+        aria-label={name}
+        aria-haspopup="dialog"
+        aria-expanded={open}
+        onClick={() => setOpen(!open)}
+      >
+        {children ?? (
+          <>
+            {pct !== null && <span className="jchip-fill" style={{ width: `${pct}%` }} aria-hidden="true" />}
+            <svg className="jchip-mode" viewBox="0 0 24 24" aria-hidden="true">
+              {MODE_ICON[travel]}
+            </svg>
+            <span className="jchip-label">{label}</span>
+            {/* The ▾: this opens something. */}
+            <svg className="jchip-caret" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 9.5l6 6 6-6" />
+            </svg>
+          </>
+        )}
+      </button>
+
+      {open && (
+        <div className="jmenu" role="dialog" aria-label="Your trip">
+          <div className="jmenu-modes" role="group" aria-label="How are you travelling?">
+            {MODES.map((m) => (
+              <button
+                key={m.id}
+                className={tab === m.id ? "jmenu-mode on" : "jmenu-mode"}
+                aria-pressed={tab === m.id}
+                onClick={() => setTab(m.id)}
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  {MODE_ICON[m.id]}
+                </svg>
+                {m.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Roaming exists on the ground only: a flight is somebody else's route. */}
+          {tab !== "flight" && (
+            <button
+              className={roaming && travel === tab ? "jmenu-item on" : "jmenu-item"}
+              aria-current={roaming && travel === tab ? "true" : undefined}
+              onClick={done(() => props.onRoam(tab as "walking" | "driving"))}
+            >
+              <span>
+                Around here
+                <small>No route. Finds what is near you as you go.</small>
+              </span>
+              {roaming && travel === tab && <Tick />}
+            </button>
+          )}
+          {forTab.map((r) => {
+            const on = !roaming && r.id === route.id;
+            return (
+              <button
+                key={r.id}
+                className={on ? "jmenu-item on" : "jmenu-item"}
+                aria-current={on ? "true" : undefined}
+                onClick={done(() => props.onRoute(r))}
+              >
+                <span>
+                  {routeName(r)}
+                  <small>
+                    {counts[r.id] ?? 0} {(counts[r.id] ?? 0) === 1 ? "echo" : "echoes"}
+                    {r.mode === "flight" && r.origin.code && r.destination.code
+                      ? ` · ${r.origin.code} to ${r.destination.code}`
+                      : ""}
+                  </small>
+                </span>
+                {on && <Tick />}
+              </button>
+            );
+          })}
+          {tab === "flight" && forTab.length === 0 && (
+            <p className="jmenu-empty">No flights with echoes yet.</p>
+          )}
+
+          <button className="jmenu-item jmenu-more" onClick={done(() => props.onDetails(tab))}>
+            {tab === "flight" ? (
+              "Find a flight by airport…"
+            ) : (
+              <span>
+                Journey details…
+                {props.kept && <small>On this device, plays with no signal</small>}
+              </span>
+            )}
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+const Tick = () => (
+  <svg className="jmenu-tick" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M5 12.5 L10 17.5 L19 7" />
+  </svg>
+);
