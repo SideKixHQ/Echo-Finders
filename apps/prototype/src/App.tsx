@@ -1698,8 +1698,6 @@ export function App() {
                   return next;
                 })
               }
-              simple={simple}
-              onSimple={setSimple}
               /* The real narrator, saying a real line, through whatever the listener has
                  in their ears. A volume set against silence is not set. */
               onTestLine={() => playOrAsk(LIBRARY[0]!)}
@@ -1911,7 +1909,6 @@ export function App() {
               which is what "what happened to all the audio controls" was pointing at: not
               a rendering bug, a screen that never got the props.
             */
-            onSimple={setSimple}
             rate={rate}
             onRate={setRate}
             onRestart={() => seekTo(0)}
