@@ -829,36 +829,33 @@ export function App() {
    */
   const toggleCategory = useCallback((group: ChipGroup) => {
     setCats((current) => {
-      const base = current ?? ALL_CATEGORIES;
-      const next = new Set(base);
+      /*
+       * TAPPING A KIND SHOWS THAT KIND, the way every map's filter chips work.
+       *
+       * It used to toggle the chip off. With nothing filtered every chip is on, so the
+       * first tap on "History" hid history — the opposite of what the tap meant, reported
+       * by the listener as "everything is selected, then I select something and it
+       * unselects". So the first tap from "everything" narrows to that kind alone; after
+       * that, taps add and remove; and removing the last kind, or adding the last one
+       * back, returns to everything rather than to an empty map.
+       */
+      const all = !current || current.size >= ALL_CATEGORIES.size;
+      if (all) return new Set(group.categories);
+      const next = new Set(current);
       const lit = group.categories.some((c) => next.has(c));
-      if (lit) {
-        const remaining = [...next].filter((c) => !group.categories.includes(c));
-        if (remaining.length === 0) return next;
-        return new Set(remaining);
-      }
-      for (const c of group.categories) next.add(c);
+      if (lit) for (const c of group.categories) next.delete(c);
+      else for (const c of group.categories) next.add(c);
+      if (next.size === 0 || next.size >= ALL_CATEGORIES.size) return null;
       return next;
     });
   }, []);
   /**
-   * All, and none.
+   * All: back to everything, always.
    *
-   * It only ever switched everything on, so once everything was on it was a button that
-   * did nothing. Toggling is what the word implies and it is the fastest way to say "just
-   * this one": clear the row, then tap the one you want.
-   *
-   * An empty filter is reachable this way, and that is fine here where it is not from a
-   * single chip: turning off the last lit category one tap at a time is almost always a
-   * mistake, while emptying the row deliberately is a technique, and the way out of it is
-   * the same button.
+   * It toggled to none when everything was on, which made the one reset button empty the
+   * map. "Just this one" is now a single tap on that chip, so All only ever means all.
    */
-  const allCategories = useCallback(() => {
-    setCats((current) => {
-      const on = current ?? ALL_CATEGORIES;
-      return on.size >= ALL_CATEGORIES.size ? new Set<EchoCategory>() : null;
-    });
-  }, []);
+  const allCategories = useCallback(() => setCats(null), []);
   const toggleSave = useCallback((echo: Echo) => {
     setChosen((current) => {
       const next = new Set(current);
