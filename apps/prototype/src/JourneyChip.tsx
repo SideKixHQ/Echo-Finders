@@ -65,11 +65,26 @@ export function JourneyChip(props: JourneyChipProps) {
   /** The mode the sheet is showing, which is not a commitment. */
   const [tab, setTab] = useState<Travel>(travel);
   const wrap = useRef<HTMLDivElement | null>(null);
+  const chip = useRef<HTMLButtonElement | null>(null);
+  const current = useRef<HTMLButtonElement | null>(null);
 
   // Opening always starts on how you are travelling now.
   useEffect(() => {
     if (open) setTab(travel);
   }, [open, travel]);
+
+  /*
+   * Focus goes into the sheet when it opens and back to the chip when it closes, so a
+   * keyboard or screen-reader user is never dropped at the top of the page when the
+   * sheet they were in disappears (WCAG 2.4.3).
+   */
+  const close = (refocus: boolean) => {
+    setOpen(false);
+    if (refocus) chip.current?.focus();
+  };
+  useEffect(() => {
+    if (open) current.current?.focus();
+  }, [open]);
 
   // A tap anywhere else, or Escape, closes it.
   useEffect(() => {
@@ -78,7 +93,7 @@ export function JourneyChip(props: JourneyChipProps) {
       if (wrap.current && !wrap.current.contains(e.target as Node)) setOpen(false);
     };
     const key = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") close(true);
     };
     document.addEventListener("pointerdown", away);
     document.addEventListener("keydown", key);
@@ -89,7 +104,7 @@ export function JourneyChip(props: JourneyChipProps) {
   }, [open]);
 
   const done = (fn: () => void) => () => {
-    setOpen(false);
+    close(true);
     fn();
   };
 
@@ -99,6 +114,7 @@ export function JourneyChip(props: JourneyChipProps) {
   return (
     <div className={children ? "jchip-wrap jchip-wrap-wide" : "jchip-wrap"} ref={wrap}>
       <button
+        ref={chip}
         className={children ? "journey-tap" : "jchip"}
         aria-label={name}
         aria-haspopup="dialog"
@@ -126,6 +142,7 @@ export function JourneyChip(props: JourneyChipProps) {
             {MODES.map((m) => (
               <button
                 key={m.id}
+                ref={m.id === travel ? current : undefined}
                 className={tab === m.id ? "jmenu-mode on" : "jmenu-mode"}
                 aria-pressed={tab === m.id}
                 onClick={() => setTab(m.id)}

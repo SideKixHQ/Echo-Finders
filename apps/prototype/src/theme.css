@@ -4186,3 +4186,10 @@ body {
 .mapbar-chips .chipwrap { margin-top: 0; }
 .mapbar-chips .chips { background: none; border: 0; }
 .jmenu-tick { flex: none; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ── 44px targets for the small controls the controls audit lists ──────────────
+ * They cleared WCAG's 24x24 floor but not Apple's 44pt, and the card's close is the one
+ * control every card has. Grown without moving what they draw: the box gets bigger, the
+ * glyph stays put. */
+.pop-close { width: 44px; height: 44px; margin: -11px -11px 0 2px; background: none; }
+.onb-back, .onb-skip { min-width: 44px; min-height: 44px; }

@@ -49,10 +49,21 @@ export function CategoryFilter({ available, on, onToggle, onAll }: CategoryFilte
   const close = useCallback((e: PointerEvent) => {
     if (wrap.current && !wrap.current.contains(e.target as Node)) setOpen(false);
   }, []);
+  // Escape closes it too, handing focus back to the button (WCAG 2.1.2, 2.4.3).
+  const tap = useRef<HTMLButtonElement | null>(null);
   useEffect(() => {
     if (!open) return;
+    const key = (e: KeyboardEvent) => {
+      if (e.key !== "Escape") return;
+      setOpen(false);
+      tap.current?.focus();
+    };
     document.addEventListener("pointerdown", close);
-    return () => document.removeEventListener("pointerdown", close);
+    document.addEventListener("keydown", key);
+    return () => {
+      document.removeEventListener("pointerdown", close);
+      document.removeEventListener("keydown", key);
+    };
   }, [open, close]);
 
   return (
@@ -74,6 +85,7 @@ export function CategoryFilter({ available, on, onToggle, onAll }: CategoryFilte
         pixels to save.
       */}
       <button
+        ref={tap}
         className={all ? "catfilter-tap" : "catfilter-tap is-filtered"}
         onClick={() => setOpen(!open)}
         aria-expanded={open}
