@@ -9,8 +9,10 @@ import { Collection } from "./Collection";
 import { Privacy } from "./Privacy";
 import { Nav, type Tab } from "./Nav";
 import { Plan } from "./Plan";
-import { RouteRibbon } from "./RouteRibbon";
+import { RouteRibbon, left } from "./RouteRibbon";
 import { CategoryFilter } from "./CategoryFilter";
+import { CategoryChips } from "./CategoryChips";
+import { JourneyChip, type Travel } from "./JourneyChip";
 import { Arrival } from "./Arrival";
 import { Preflight } from "./Preflight";
 import { EchoPopup } from "./EchoPopup";
@@ -507,6 +509,29 @@ export function App() {
   };
 
   /*
+   * Changing how you are travelling: the journey screen's control and the map's hold menu
+   * both come here, so the two can never disagree about what a switch does.
+   */
+  const switchTravel = (next: Travel) => {
+    setTravel(next);
+    /*
+     * Back to the walking screen's start, which is the map now.
+     *
+     * This said the rose, from when the app opened on it. It opens on the map, and the
+     * map's own hold menu switches modes from here, so resetting to the rose would throw
+     * you off the screen you switched from. Clearing the beacon is what the reset was
+     * for: one use of "Take me there" used to leave you stuck on its view.
+     */
+    setWalkingView("map");
+    setBeacon(null);
+    setLookFurtherKm(undefined);
+    // Flying is somebody else's route and the door is locked, so there is
+    // nothing to roam. On foot and driving both land on roaming, because
+    // hunting is the thing you do without a route and it is the common case.
+    setRoaming(next !== "flight");
+  };
+
+  /*
    * The sync moment.
    *
    * An echo opening was a pin changing colour and a row appearing in a list, which is a
@@ -681,6 +706,14 @@ export function App() {
   const along = walk && walk.totalMetres > 0 ? walk.walkedMetres / walk.totalMetres : 0;
   const arrived = walk !== null && along >= 0.99;
   const remainingS = route.durationS * (1 - Math.min(1, along));
+  /*
+   * The compact top row: everything but a flight. A flight keeps origin, bar and
+   * destination, because a passenger cannot look out of the window to know where they are.
+   */
+  const compactBar = roaming || route.mode !== "flight";
+  /* "47 min", not "47m": on a walk, "47m" reads as forty-seven metres. */
+  const leftLabel = left(remainingS).replace(/(\d+)m$/, "$1 min");
+  const journeyLabel = (route.name ?? route.destination.name).split(":")[0]!.trim();
 
   // How much of the library this route actually passes. Worth showing: it is the clearest
   // statement that content is filed by place, not by journey, and that a route is a query
@@ -1261,7 +1294,7 @@ export function App() {
 
           {tab === "map" && (
             <>
-              <div className="mapbar">
+              <div className={compactBar ? "mapbar mapbar-compact" : "mapbar"}>
                 {/*
                   The journey, and the way to change it.
 
@@ -1275,56 +1308,94 @@ export function App() {
                   fiction the whole UX review was about, so it gets a plain chip saying what
                   it is. Same slot, same tap, nothing made up.
                 */}
-                <button
-                  className={roaming ? "journey-tap journey-roam" : "journey-tap"}
-                  onClick={openPackage}
-                  aria-label={
-                    downloaded ? "Your journey, on this device. Tap to change it" : "Change your journey"
-                  }
-                >
-                  {roaming ? (
-                    <>
-                      <svg viewBox="0 0 24 24" aria-hidden="true">
-                        {MODE_ICON[roamMode]}
-                      </svg>
-                      {roamMode === "driving" ? "Driving" : "Around here"}
-                      {/*
-                        CARRIED, said where the journey is named.
+                {compactBar ? (
+                  <>
+                    <JourneyChip
+                      travel={travel}
+                      mode={roaming ? roamMode : route.mode}
+                      label={roaming ? "Here" : leftLabel}
+                      progress={roaming ? null : along}
+                      name={
+                        roaming
+                          ? `Change your journey: ${roamMode === "driving" ? "driving" : "walking"} around here`
+                          : `Change your journey: ${journeyLabel}, ${leftLabel} left`
+                      }
+                      onOpen={openPackage}
+                      onTravel={(next) => {
+                        switchTravel(next);
+                        // A flight is chosen by number, so flying lands on the journey
+                        // screen to pick one rather than on a map with no route.
+                        if (next === "flight") openPackage();
+                      }}
+                    />
+                    {/*
+                      THE CATEGORIES, BACK IN THE ROW, which is where board 2 of the canvas
+                      draws them. On foot they are what you change as you go, and they
+                      matter more than the name of the walk you already chose.
+                    */}
+                    <div className="mapbar-chips">
+                      <CategoryChips
+                        available={available}
+                        on={activeCats}
+                        onToggle={toggleCategory}
+                        onAll={allCategories}
+                      />
+                    </div>
+                  </>
+                ) : (
+                  <>
+                  <button
+                    className={roaming ? "journey-tap journey-roam" : "journey-tap"}
+                    onClick={openPackage}
+                    aria-label={
+                      downloaded ? "Your journey, on this device. Tap to change it" : "Change your journey"
+                    }
+                  >
+                    {roaming ? (
+                      <>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          {MODE_ICON[roamMode]}
+                        </svg>
+                        {roamMode === "driving" ? "Driving" : "Around here"}
+                        {/*
+                          CARRIED, said where the journey is named.
 
-                        The app has always tracked whether the journey is on the device and
-                        the only thing that showed it was a tick inside the control column's
-                        download fab — the fab that has now gone, because it opened the same
-                        screen this chip opens. A fact with nowhere to be is a fact that
-                        drifts, so it moved to the one line that is always on screen and is
-                        already about the journey.
-                      */}
-                      {downloaded && (
-                        <span className="journey-kept" aria-hidden="true">
-                          <svg viewBox="0 0 24 24">
-                            <path d="M12 3.2a8.8 8.8 0 1 1-6.2 2.6" />
-                            <path d="M8.2 11.8l3 3 5.6-6.4" />
-                          </svg>
-                        </span>
-                      )}
-                      <span className="journey-change">{downloaded ? "Kept" : "Change"}</span>
-                    </>
-                  ) : (
-                    <>
-                      <RouteRibbon route={route} progress={along} remainingS={remainingS} />
-                    </>
-                  )}
-                </button>
-                {/*
-                  The nine chips, folded into one button on the same line as the journey.
-                  Two rows of top chrome became one, and the row itself is one tap away
-                  inside it, unchanged. See `CategoryFilter`.
-                */}
-                <CategoryFilter
-                  available={available}
-                  on={activeCats}
-                  onToggle={toggleCategory}
-                  onAll={allCategories}
-                />
+                          The app has always tracked whether the journey is on the device and
+                          the only thing that showed it was a tick inside the control column's
+                          download fab — the fab that has now gone, because it opened the same
+                          screen this chip opens. A fact with nowhere to be is a fact that
+                          drifts, so it moved to the one line that is always on screen and is
+                          already about the journey.
+                        */}
+                        {downloaded && (
+                          <span className="journey-kept" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M12 3.2a8.8 8.8 0 1 1-6.2 2.6" />
+                              <path d="M8.2 11.8l3 3 5.6-6.4" />
+                            </svg>
+                          </span>
+                        )}
+                        <span className="journey-change">{downloaded ? "Kept" : "Change"}</span>
+                      </>
+                    ) : (
+                      <>
+                        <RouteRibbon route={route} progress={along} remainingS={remainingS} />
+                      </>
+                    )}
+                  </button>
+                  {/*
+                    The nine chips, folded into one button on the same line as the journey.
+                    Two rows of top chrome became one, and the row itself is one tap away
+                    inside it, unchanged. See `CategoryFilter`.
+                  */}
+                  <CategoryFilter
+                    available={available}
+                    on={activeCats}
+                    onToggle={toggleCategory}
+                    onAll={allCategories}
+                  />
+                  </>
+                )}
               </div>
               {/*
                 Nothing nearby, over the map.
@@ -1741,25 +1812,7 @@ export function App() {
                * would mean "Carry on" quietly putting somebody back on a pavement.
                */
               travel={travel}
-              onTravel={(next) => {
-                setTravel(next);
-                /*
-                 * Back to the rose.
-                 *
-                 * `walkingView` is set to "map" by "Take me there" and nothing ever set it
-                 * back, so one use of the beacon meant the rose never returned: you picked
-                 * "Around here, no route", pressed Carry on, and got the same street map you
-                 * had been trying to leave. Changing how you are travelling starts the
-                 * walking screen over.
-                 */
-                setWalkingView("rose");
-                setBeacon(null);
-                setLookFurtherKm(undefined);
-                // Flying is somebody else's route and the door is locked, so there is
-                // nothing to roam. On foot and driving both land on roaming, because
-                // hunting is the thing you do without a route and it is the common case.
-                setRoaming(next !== "flight");
-              }}
+              onTravel={switchTravel}
               roaming={roaming}
               onRoam={(on) => {
                 setRoaming(on);

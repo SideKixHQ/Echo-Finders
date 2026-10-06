@@ -414,11 +414,24 @@ await p.getByRole('button', { name: /Hide it/ }).click().catch(()=>{}); await p.
 await p.getByLabel('Back to the map').click().catch(()=>{}); await p.waitForTimeout(600);
 await capture('map/playing');
 focus.push(...await focusSweep('map/playing'));
-/* The category row, which is behind one button now rather than always on screen. */
-await p.locator('.catfilter-tap').click(); await p.waitForTimeout(400);
-await capture('map/filter');
-focus.push(...await focusSweep('map/filter'));
-await p.locator('.catfilter-tap').click(); await p.waitForTimeout(300);
+/*
+ * The category row is inline on foot and driving (`JourneyChip`), so it is already in the
+ * map captures. On a flight it is still folded behind one button, which is opened here.
+ */
+if (await p.locator('.catfilter-tap').count()) {
+  await p.locator('.catfilter-tap').click(); await p.waitForTimeout(400);
+  await capture('map/filter');
+  focus.push(...await focusSweep('map/filter'));
+  await p.locator('.catfilter-tap').click(); await p.waitForTimeout(300);
+}
+/* The travel modes, behind a press and hold on the journey chip. A right-click opens the
+   same menu and is what a script can do reliably. */
+if (await p.locator('.jchip').count()) {
+  await p.locator('.jchip').click({ button: 'right' }); await p.waitForTimeout(400);
+  await capture('map/modes');
+  focus.push(...await focusSweep('map/modes'));
+  await p.keyboard.press('Escape'); await p.waitForTimeout(300);
+}
 await p.locator('.nav button').nth(1).click(); await p.waitForTimeout(700); await capture('my-echoes');
 focus.push(...await focusSweep('my-echoes'));
 /*
