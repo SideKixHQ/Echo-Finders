@@ -263,6 +263,18 @@ const PROBE = () => {
     const r = el.getBoundingClientRect();
     const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
     if (cx < frame.left || cx > frame.right || cy < frame.top || cy > frame.bottom) continue;
+    /*
+     * Scrolled off, not covered. A chip whose middle has run past the end of a horizontal
+     * scroller is partly out of view, and what is at its centre is whatever sits beyond the
+     * scroller — the "more" arrow, here. The arrow, or a swipe, is how it is reached; that
+     * is the scroller working rather than a control lying on top of another.
+     */
+    let scroller = el.parentElement;
+    while (scroller && !/(auto|scroll)/.test(getComputedStyle(scroller).overflowX)) scroller = scroller.parentElement;
+    if (scroller) {
+      const s = scroller.getBoundingClientRect();
+      if (cx < s.left || cx > s.right) continue;
+    }
     const hit = document.elementFromPoint(cx, cy);
     if (!hit) continue;
     if (hit === el || el.contains(hit) || hit.contains(el)) continue;

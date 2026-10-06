@@ -4216,6 +4216,8 @@ body {
  */
 .mapbar-chips .chipwrap { display: flex; align-items: stretch; }
 .mapbar-chips .chips { flex: 1 1 0; min-width: 0; order: 1; }
-.mapbar-chips .chip-nudge { position: static; flex: none; background: none; }
+/* Relative, not static: its 44px ::before hit area anchors to the nearest positioned box,
+   and static handed that to the whole row, laying it across the middle chips. */
+.mapbar-chips .chip-nudge { position: relative; inset: auto; flex: none; background: none; }
 .mapbar-chips .chip-nudge-l { order: 0; }
 .mapbar-chips .chip-nudge-r { order: 2; }
