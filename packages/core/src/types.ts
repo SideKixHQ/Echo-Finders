@@ -236,6 +236,19 @@ export interface Source {
 }
 
 /**
+ * One checkable sentence from the script, beside the passage that backs it.
+ *
+ * `says` is the sentence (or the part of it making the claim) as it appears in the script;
+ * `source` is a 1-based index into the echo's `sources`, the way an editor counts them; and
+ * `quote` is the supporting passage copied verbatim from that source. See `checkClaims`.
+ */
+export interface Claim {
+  readonly says: string;
+  readonly source: number;
+  readonly quote: string;
+}
+
+/**
  * Extra obligations attached to the riskiest category. A true-crime echo that does not
  * satisfy every one of these cannot be published; see `validateEcho`.
  */
@@ -392,6 +405,8 @@ export interface Echo {
   readonly hours?: { readonly fromHour: number; readonly toHour: number };
 
   readonly sources: readonly Source[];
+  /** Each checkable sentence of the script beside its quoted source. Required to approve. */
+  readonly claims?: readonly Claim[];
   readonly editorial: EditorialStatus;
   readonly factCheck: FactCheckStatus;
   /** Who made this, and what kind of claim it makes. Defaults to editorial where absent. */

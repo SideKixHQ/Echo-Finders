@@ -7,6 +7,7 @@
  * a defamation claim, a frightened child, an airline pulling the product mid-contract.
  */
 
+import { checkClaims } from "./claims.js";
 import type { Source, Echo } from "../types.js";
 import { hasAudio } from "../types.js";
 import { MODE_PRESETS } from "../modes.js";
@@ -183,7 +184,28 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
     }
   }
 
+  // --- Claims ------------------------------------------------------------------------
+  // A malformed claim is an error at any stage: it is a reviewer's aid that points at the
+  // wrong place. A missing one only blocks approval (below), because a draft is allowed to
+  // be unfinished.
+  const claimCheck = checkClaims(echo);
+  for (const c of claimCheck.badSource) {
+    error("claims", `"${c.says}" cites source ${c.source}, but the echo lists ${echo.sources.length}`);
+  }
+  for (const c of claimCheck.unquoted) {
+    error("claims", `"${c.says}" has no quoted passage from its source`);
+  }
+  for (const c of claimCheck.orphaned) {
+    warn("claims", `"${c.says}" is not in the script any more; update or remove the claim`);
+  }
+
   // --- Publication readiness ---------------------------------------------------------
+  if (echo.editorial === "approved" && !echo.sponsorship && !isTestimony) {
+    const unbacked = claimCheck.checkable.filter((c) => !c.claim);
+    for (const { sentence } of unbacked) {
+      error("claims", `approved, but this sentence has no quoted source: "${sentence}"`);
+    }
+  }
   if (echo.editorial === "approved") {
     if (echo.factCheck === "unchecked" || echo.factCheck === "disputed") {
       error(

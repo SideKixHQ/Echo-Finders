@@ -42,14 +42,41 @@ sources:
 Omit `editorial` and `factCheck` and the file is a draft whose facts nobody has checked,
 which is the honest default.
 
+## Claims: each checkable sentence beside its quote
+
+Every sentence with a number, a date, a counting word, a superlative or a name is a claim
+that is either right or wrong. Before an echo can be approved, each one needs an entry in
+`claims` saying which source backs it and quoting the passage verbatim:
+
+```yaml
+claims:
+  - says: between 1808 and 1811          # the words in the script making the claim
+    source: 1                            # which of `sources`, counting from 1
+    quote: "…copied exactly from the source, never paraphrased…"
+```
+
+`npm run content:validate` refuses an approved echo with an unbacked sentence. The quotes
+are a reviewer's aid, not proof: whoever writes one (a person or a model) can get it wrong,
+so the reviewer still opens the source and confirms the quote is really there.
+
+## Where the library stands
+
+```bash
+npm run content:status                       # every echo: what it still needs
+npm run content:review -- <echo-id> > r.md   # a one-page review sheet for one echo
+```
+
 ## Before marking one approved
 
-1. Open every source and confirm every claim in the script against it.
-2. Set `factCheck: corroborated` (or `single-source` for a fun fact with one solid source).
-3. Set `editorial: approved`.
-4. Check `certainty` is honest. A ghost story is `legend`, not `documented`, and anything
+1. Run `npm run content:review -- <id>`. Fill in `claims` until nothing is listed as not
+   yet backed, then check every quote is really in its source.
+2. Open every source and confirm every claim in the script against it, including any the
+   sheet could not detect. It finds sentences mechanically; it cannot find them all.
+3. Set `factCheck: corroborated` (or `single-source` for a fun fact with one solid source).
+4. Set `editorial: approved`.
+5. Check `certainty` is honest. A ghost story is `legend`, not `documented`, and anything
    not documented needs a `certaintyNote` saying what is disputed and by whom.
-5. For true crime, read `docs/protection-policy.md` before writing a word. Two sources
+6. For true crime, read `docs/protection-policy.md` before writing a word. Two sources
    minimum, three when a living person was not convicted, one of them a primary public
    record, a named reviewer and a content warning.
 
