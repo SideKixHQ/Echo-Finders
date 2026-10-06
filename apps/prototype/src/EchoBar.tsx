@@ -47,6 +47,7 @@
  * of twenty six. Nearest first, so the next item is always the cheapest one to go and get.
  */
 
+import { useRef } from "react";
 import { presetFor, rarityOf, type Echo, type Guidance, type TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, type EchoFace } from "./Echo";
@@ -128,6 +129,8 @@ export function EchoBar({
    */
   const at = index >= 0 ? index : 0;
   const current = items[at];
+  // Before the early return: hooks run on every render or not at all.
+  const swipe = useRef<{ x: number; y: number } | null>(null);
   if (!current) return null;
 
   const { echo, distanceKm } = current;
@@ -184,7 +187,26 @@ export function EchoBar({
       className={warm ? "echobar echobar-warm" : "echobar"}
       data-cue={cue ? cue.kind : "none"}
     >
-      <div className="echobar-row">
+      {/*
+        The row also takes a sideways swipe, as a shortcut for the arrows rather than a
+        replacement: a swipe is invisible, the arrows are not.
+      */}
+      <div
+        className="echobar-row"
+        onTouchStart={(e) => {
+          const t = e.touches[0];
+          swipe.current = t ? { x: t.clientX, y: t.clientY } : null;
+        }}
+        onTouchEnd={(e) => {
+          const from = swipe.current;
+          const t = e.changedTouches[0];
+          swipe.current = null;
+          if (!from || !t || items.length < 2) return;
+          const dx = t.clientX - from.x;
+          const dy = t.clientY - from.y;
+          if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.5) step(dx < 0 ? 1 : -1);
+        }}
+      >
         {/* Two arrows that never move. The whole argument for this over aiming at a pin. */}
         {items.length > 1 && (
           <button

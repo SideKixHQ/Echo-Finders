@@ -3900,7 +3900,21 @@ body {
   bottom: calc(var(--nav-h) + 8px);
   padding: 0 12px;
 }
-.echobar-row { display: flex; align-items: stretch; gap: 6px; }
+/*
+ * ONE PILL, arrows inside it.
+ *
+ * The arrows were two separate 48px boxes with their own borders and gaps: 108px of a
+ * 351px row, drawn as three objects where there is one. They live inside the pill now,
+ * borderless at either end, 44 wide (Apple's floor) and the full height of the bar, so
+ * they are still easy to hit without looking and the title gets the width back.
+ */
+.echobar-row {
+  display: flex; align-items: stretch; gap: 0; border-radius: 18px;
+  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+  transition: border-color 0.4s var(--ease), box-shadow 0.4s var(--ease);
+  touch-action: pan-y;
+}
 /*
  * 48 wide and the full height of the card, so the target is 48x66 against Apple's 44x44.
  * These are the two controls the whole feature exists to provide and they are pressed
@@ -3908,16 +3922,16 @@ body {
  * is being easy to hit without looking.
  */
 .echobar-arrow {
-  width: 48px; flex: none; border-radius: 16px; cursor: pointer;
-  display: grid; place-items: center; color: var(--white);
-  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
-  backdrop-filter: blur(12px);
+  width: 44px; flex: none; cursor: pointer; padding: 0; border: 0;
+  display: grid; place-items: center; color: var(--cool); background: none;
 }
+.echobar-arrow:first-child { border-radius: 17px 0 0 17px; }
+.echobar-arrow:last-child { border-radius: 0 17px 17px 0; }
 .echobar-arrow svg {
-  width: 20px; height: 20px; fill: none; stroke: currentColor;
-  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+  width: 18px; height: 18px; fill: none; stroke: currentColor;
+  stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round;
 }
-.echobar-arrow:active { background: rgba(var(--rgb-panel), 1); }
+.echobar-arrow:active { background: rgba(var(--rgb-hair), 0.08); color: var(--white); }
 
 /*
  * The card carries the echo's category as `--cat`, which is what tints the kicker and
@@ -3927,19 +3941,18 @@ body {
  */
 .echobar-card {
   flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center;
-  padding: 7px 11px 6px 7px; border-radius: 16px; color: var(--white);
-  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
-  backdrop-filter: blur(12px);
-  transition: border-color 0.4s var(--ease), box-shadow 0.4s var(--ease);
+  padding: 7px 4px 6px; color: var(--white);
 }
+/* With no arrows (a single echo) the card is the whole pill and pads itself. */
+.echobar-row > .echobar-card:only-child { padding: 7px 11px 6px 7px; }
 /* Warmer, literally. The bar is reporting how near an echo is, so it carries the echo's
    own heat rather than the interface's aqua — the same argument the strip it replaced
    made, on an object that costs no height to say it. */
-.echobar-warm .echobar-card {
+.echobar-warm .echobar-row {
   border-color: rgba(255, 158, 18, 0.5);
   box-shadow: 0 0 0 1px rgba(255, 158, 18, 0.14), 0 10px 30px rgba(255, 158, 18, 0.12);
 }
-.echobar[data-cue="arrived"] .echobar-card {
+.echobar[data-cue="arrived"] .echobar-row {
   border-color: rgba(255, 158, 18, 0.78);
   box-shadow: 0 0 0 1px rgba(255, 158, 18, 0.26), 0 10px 34px rgba(255, 158, 18, 0.2);
 }
