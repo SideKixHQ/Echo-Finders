@@ -26,6 +26,12 @@ Asked to do something, do it end to end: branch, fix, run the gate, push, open t
 Ask only when a decision is genuinely his. Show the work, not a description of it:
 before/after screenshots for anything visual, and what was not verified. One change per PR.
 
+## Keep in view
+
+`docs/10-blockers.md` lists what will get in the way: content approval, iOS screen lock, the
+voice licence, legal, rights, the backend, costs. We build and solve as we go; when work
+touches one, say so in the PR and strike it through when settled.
+
 ## Stack
 
 - npm workspace, **Node 22** (`engines.node: 22.x`), TypeScript strict, Vitest.
