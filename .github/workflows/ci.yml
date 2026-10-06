@@ -19,3 +19,28 @@ jobs:
       - run: npm test
       - run: npm run build --workspace @echofinders/core
       - run: npm run content:validate
+
+  # The rest of `npm run gate`: contrast, frame, controls, spec and layout, the audits that
+  # used to run only when somebody remembered to. They render the built app in Chromium, so
+  # they are slower and live in their own job.
+  audits:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build --workspace @echofinders/core
+      - run: npm run library:build
+      - run: npm run audit:contrast
+      - run: npm run audit:frame
+      - run: npm run audit:controls
+      - run: npm run audit:spec
+      - run: npm run audit:layout

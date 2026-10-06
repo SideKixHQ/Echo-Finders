@@ -47,6 +47,7 @@
  */
 
 import { chromium } from 'playwright';
+import { existsSync } from 'node:fs';
 import { spawn, spawnSync } from 'node:child_process';
 import { setTimeout as sleep } from 'node:timers/promises';
 
@@ -63,7 +64,9 @@ for (let i = 0; i < 60; i++) {
 
 const tile=(bg,fg)=>Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"><rect width="256" height="256" fill="${bg}"/><path d="M0 64H256M0 128H256M64 0V256M128 0V256" stroke="${fg}" stroke-width="2" fill="none"/></svg>`);
 
-const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+/* The cloud sandbox ships its own Chromium; CI and laptops use Playwright's. */
+const SANDBOX_CHROMIUM = '/opt/pw-browsers/chromium';
+const b = await chromium.launch(existsSync(SANDBOX_CHROMIUM) ? { executablePath: SANDBOX_CHROMIUM } : {});
 /*
    `ignoreHTTPSErrors` so the webfonts actually arrive.
 
