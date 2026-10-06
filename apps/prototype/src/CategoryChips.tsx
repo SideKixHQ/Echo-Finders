@@ -122,7 +122,9 @@ function CategoryChipsInner({ on, onToggle, onAll }: CategoryChipsProps) {
       {CHIP_GROUPS.map((group) => {
           // A group is on when any of its categories is. Toggling sets them together, so
           // a chip standing for two can never land half lit.
-          const lit = group.categories.some((c) => on.has(c));
+          // With everything showing, "All" is the one lit chip and the kinds sit unlit:
+          // nine lit chips read as nine things picked, and invite a tap that narrows.
+          const lit = !all && group.categories.some((c) => on.has(c));
           return (
             <button
               key={group.id}
