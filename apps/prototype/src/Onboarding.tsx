@@ -41,8 +41,6 @@ export interface OnboardingProps {
   readonly onToggleCats: (categories: readonly EchoCategory[]) => void;
   /** Turn every category on at once. */
   readonly onAllCats: () => void;
-  readonly simple: boolean;
-  readonly onSimple: (on: boolean) => void;
   /** Hear the narrator, so a volume can be set before anybody is out in the street. */
   readonly onTestLine: () => void;
   /**
@@ -114,8 +112,6 @@ export function Onboarding({
   cats,
   onToggleCats,
   onAllCats,
-  simple,
-  onSimple,
   onTestLine,
   onDone,
   routes,
@@ -494,20 +490,6 @@ export function Onboarding({
               </svg>
               Play the test line
             </button>
-            <div className="onb-row">
-              <div>
-                <b>Simple audio</b>
-                <small>Plain words, shorter. Good for kids and quick listens.</small>
-              </div>
-              <button
-                className={simple ? "onb-sw on" : "onb-sw"}
-                onClick={() => onSimple(!simple)}
-                aria-pressed={simple}
-                aria-label="Simple audio"
-              >
-                <i />
-              </button>
-            </div>
             <button className="onb-go" onClick={next}>
               Continue
             </button>
