@@ -15,7 +15,12 @@ first, and the pretty map last, because the map is the easy part.
 
 ## Order of operations
 
-### Phase 0 — Foundation (week 1) ← **we are here**
+**Where we actually are (2026-10-06):** Phase 0 is done, and the build ran ahead of the
+plan's order — a working prototype (`apps/prototype`) is live on Vercel while Phase 1's
+approved library is not: 26 echoes written, none approved, no real audio or photographs.
+What stands between here and each phase is in `docs/10-blockers.md`.
+
+### Phase 0 — Foundation (week 1) ✓ done
 - Monorepo, TypeScript strict, test runner.
 - `@echofinders/core`: the domain model and the engine. Pure TypeScript, zero I/O, zero
   external services. Everything below depends on it; it depends on nothing.
