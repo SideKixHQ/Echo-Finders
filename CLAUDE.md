@@ -20,6 +20,12 @@ Claude Code sessions do all the code: build, fix, test, push, PR. Cowork does de
 canvases, strategy and planning; it reads the repo but does not push, and hands code
 changes over as a ready-to-paste prompt for a Code session.
 
+## How James wants to work
+
+Asked to do something, do it end to end: branch, fix, run the gate, push, open the PR.
+Ask only when a decision is genuinely his. Show the work, not a description of it:
+before/after screenshots for anything visual, and what was not verified. One change per PR.
+
 ## Stack
 
 - npm workspace, **Node 22** (`engines.node: 22.x`), TypeScript strict, Vitest.
@@ -30,9 +36,7 @@ changes over as a ready-to-paste prompt for a Code session.
 - `scripts/` — content validation, library build and the audits the gate runs.
 
 ```bash
-npm install
-npm test
-npm run gate   # typecheck, tests, content validation, all audits
+npm install && npm run gate   # typecheck, tests, content validation, all audits
 ```
 
 ## Before every push
