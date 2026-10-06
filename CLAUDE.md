@@ -28,9 +28,8 @@ before/after screenshots for anything visual, and what was not verified. One cha
 
 ## Keep in view
 
-`docs/10-blockers.md` lists what will get in the way: content approval, iOS screen lock, the
-voice licence, legal, rights, the backend, costs. We build and solve as we go; when work
-touches one, say so in the PR and strike it through when settled.
+`docs/10-blockers.md`: what will get in the way. Solve as we go; when work touches one, say so
+in the PR and strike it through when settled.
 
 ## Stack
 
@@ -40,10 +39,6 @@ touches one, say so in the PR and strike it through when settled.
 - `content/` — the echo library and routes, as reviewed, schema-validated files in git.
 - `docs/` — build plan, services, decision records. `design/` — the prototype spec.
 - `scripts/` — content validation, library build and the audits the gate runs.
-
-```bash
-npm install && npm run gate   # typecheck, tests, content validation, all audits
-```
 
 ## Before every push
 
