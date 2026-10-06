@@ -4205,3 +4205,17 @@ body {
  */
 .jmenu-mode.on { background: var(--btn-flat); color: var(--btn-ink); box-shadow: none; }
 .jmenu-item.on small { color: var(--cool); }
+
+/*
+ * In the top row the scroll arrows sit BESIDE the chips, not over them.
+ *
+ * Floating over the strip, the arrow covered whichever chip happened to end under it —
+ * at 390 wide that was "True Crime", centre and all, so the chip could not be pressed
+ * until you scrolled (the layout audit's "covered at its own centre"). As flex siblings
+ * the strip simply ends where the arrow begins, and nothing is ever underneath it.
+ */
+.mapbar-chips .chipwrap { display: flex; align-items: stretch; }
+.mapbar-chips .chips { flex: 1 1 0; min-width: 0; order: 1; }
+.mapbar-chips .chip-nudge { position: static; flex: none; background: none; }
+.mapbar-chips .chip-nudge-l { order: 0; }
+.mapbar-chips .chip-nudge-r { order: 2; }
