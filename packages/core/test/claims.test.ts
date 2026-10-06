@@ -84,7 +84,7 @@ describe("checkClaims", () => {
 
 describe("validateEcho with claims", () => {
   const claimErrors = (e: Echo) =>
-    validateEcho(e).filter((i) => i.severity === "error" && i.field === "claims");
+    validateEcho(e).filter((i) => i.severity === "error" && i.field.startsWith("claims"));
 
   it("lets a draft be unfinished", () => {
     expect(claimErrors(echo({ editorial: "draft", factCheck: "unchecked" }))).toEqual([]);

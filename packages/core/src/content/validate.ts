@@ -203,7 +203,7 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
   if (echo.editorial === "approved" && !echo.sponsorship && !isTestimony) {
     const unbacked = claimCheck.checkable.filter((c) => !c.claim);
     for (const { sentence } of unbacked) {
-      error("claims", `approved, but this sentence has no quoted source: "${sentence}"`);
+      error("claims.backing", `approved, but this sentence has no quoted source: "${sentence}"`);
     }
   }
   if (echo.editorial === "approved") {
