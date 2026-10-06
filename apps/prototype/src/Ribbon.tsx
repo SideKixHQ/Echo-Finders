@@ -83,7 +83,6 @@ export interface RibbonProps {
   readonly onClose: () => void;
   /** The plain-language cut, which the transcript has to follow. */
   readonly simple: boolean;
-  readonly onSimple: (on: boolean) => void;
   readonly saved: boolean;
   readonly onSave: () => void;
   /** The plain-language cut is shorter, so the clock has to ask which is playing. */
@@ -144,7 +143,6 @@ export function Ribbon({
   onNudge,
   onClose,
   simple,
-  onSimple,
   saved,
   onSave,
   durationS,
@@ -421,20 +419,8 @@ export function Ribbon({
           */}
           {Number.isInteger(rate) ? rate : rate.toFixed(1)}×
         </button>
-        <button
-          className={simple ? "hear-chip on" : "hear-chip"}
-          onClick={() => onSimple(!simple)}
-          disabled={!echo.simple}
-          aria-pressed={simple}
-          /* Said out loud, because a disabled control with no reason on it is a bug to
-             everybody who meets one. The gap is in the library, not in the app. */
-          aria-label={echo.simple ? "Plain language cut" : "No plain language cut for this echo"}
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4 14v-3a8 8 0 0 1 16 0v3M4 14a2 2 0 0 0 2 2h1v-5H6a2 2 0 0 0-2 2zM20 14a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2z" />
-          </svg>
-          Plain words
-        </button>
+        {/* "Plain words" (the plain-language cut) is held for phase 2: the switch and the
+            kids-mode behaviour behind it still exist, only this chip is gone. */}
         {/*
           The narrator, wrapping the native select rather than replacing it.
 
