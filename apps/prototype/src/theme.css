@@ -3442,6 +3442,13 @@ body {
  * inherits — the speckle, the satellites — would be painted out by a blanket override.
  */
 .hear-go svg { width: 78px !important; height: 78px !important; overflow: visible; }
+/*
+ * But `.hear-transport button svg` above still reaches it, and outranks `.hear-go svg`:
+ * its `stroke: currentColor` is inherited by every part of the creature that does not set
+ * its own, which drew a white ring round the glow and a white outline on every speck and
+ * satellite. Only the rim strokes, and it names its own paint, so none is the right value.
+ */
+.hear-transport .hear-go svg { stroke: none; }
 
 .hear-acts { flex: none; display: flex; gap: 8px; padding: 12px 18px 0; }
 /* Three across now rather than two, so they have to be able to shrink: `flex: 1 1 0`
