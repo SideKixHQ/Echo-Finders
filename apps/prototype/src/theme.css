@@ -4186,3 +4186,38 @@ body {
 .mapbar-chips .chipwrap { margin-top: 0; }
 .mapbar-chips .chips { background: none; border: 0; }
 .jmenu-tick { flex: none; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ── 44px targets for the small controls the controls audit lists ──────────────
+ * They cleared WCAG's 24x24 floor but not Apple's 44pt, and the card's close is the one
+ * control every card has. Grown without moving what they draw: the box gets bigger, the
+ * glyph stays put. */
+.pop-close { width: 44px; height: 44px; margin: -11px -11px 0 2px; background: none; }
+.onb-back, .onb-skip { min-width: 44px; min-height: 44px; }
+
+/*
+ * The trip sheet's selected states, on solid fills rather than tints.
+ *
+ * A 12% aqua wash over a blurred panel measured 1.1:1 for "Walk" in the dark theme and
+ * 2.53:1 in the light, because what is behind the wash decides the colour and it is not
+ * the panel. The selected mode now wears the primary button's own pair (`--btn-flat` /
+ * `--btn-ink`, which the contrast audit holds at 11.9:1 and 7.1:1), and a selected route's
+ * caption moves from muted to cool so it clears 4.5:1 on its tint in both themes.
+ */
+.jmenu-mode.on { background: var(--btn-flat); color: var(--btn-ink); box-shadow: none; }
+.jmenu-item.on small { color: var(--cool); }
+
+/*
+ * In the top row the scroll arrows sit BESIDE the chips, not over them.
+ *
+ * Floating over the strip, the arrow covered whichever chip happened to end under it —
+ * at 390 wide that was "True Crime", centre and all, so the chip could not be pressed
+ * until you scrolled (the layout audit's "covered at its own centre"). As flex siblings
+ * the strip simply ends where the arrow begins, and nothing is ever underneath it.
+ */
+.mapbar-chips .chipwrap { display: flex; align-items: stretch; }
+.mapbar-chips .chips { flex: 1 1 0; min-width: 0; order: 1; }
+/* Relative, not static: its 44px ::before hit area anchors to the nearest positioned box,
+   and static handed that to the whole row, laying it across the middle chips. */
+.mapbar-chips .chip-nudge { position: relative; inset: auto; flex: none; background: none; }
+.mapbar-chips .chip-nudge-l { order: 0; }
+.mapbar-chips .chip-nudge-r { order: 2; }
