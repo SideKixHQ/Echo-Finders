@@ -42,10 +42,9 @@ in the PR and strike it through when settled.
 
 ## Before every push
 
-Run `npm run gate` and push only when it is green. CI runs only typecheck, tests and
-content validation, so the audits are on you. On a fresh checkout, build the engine first
-(`npm run build --workspace @echofinders/core`); three audits import `playwright`, which
-is not a dependency, so link a global install into `node_modules/` if it is missing.
+Run `npm run gate` and push only when it is green. CI runs the same checks, the browser
+audits in their own job (about 15 minutes). On a fresh checkout, build the engine first
+(`npm run build --workspace @echofinders/core`).
 
 ## Workflow
 
