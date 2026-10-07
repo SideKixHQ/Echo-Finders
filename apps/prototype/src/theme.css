@@ -625,12 +625,12 @@ body {
 .ribbon-fill {
   position: absolute; inset: 0 auto 0 0; pointer-events: none;
   border-radius: 99px 0 0 99px;
-  background: linear-gradient(90deg, rgba(0, 255, 231, 0.17), rgba(0, 255, 231, 0.05));
-  border-right: 1px solid rgba(0, 255, 231, 0.55);
+  /* Fades out at its leading edge rather than ending in a 1px line, like the journey
+     chip's: drawn hard, that line read as a crack. */
+  background: linear-gradient(90deg, rgba(0, 255, 231, 0.17), rgba(0, 255, 231, 0.07) 70%, rgba(0, 255, 231, 0));
 }
 :root[data-theme="light"] .ribbon-fill {
-  background: linear-gradient(90deg, rgba(0, 115, 108, 0.16), rgba(0, 115, 108, 0.05));
-  border-right-color: rgba(0, 115, 108, 0.6);
+  background: linear-gradient(90deg, rgba(0, 115, 108, 0.16), rgba(0, 115, 108, 0.06) 70%, rgba(0, 115, 108, 0));
 }
 /* Everything else rides above the fill. */
 .ribbon-mode, .ribbon b, .ribbon-bar, .ribbon small, .ribbon-more { position: relative; }
@@ -1296,7 +1296,9 @@ body {
 /* A count of echoes found, so it is ember. The tab label beside it stays aqua, because
    that is a control. */
 .nav .badge {
-  position: absolute; top: -3px; left: 50%; margin-left: 7px;
+  /* Beside the icon's top corner, not on it: at margin-left 7 a two-digit count covered
+     the icon's right half. */
+  position: absolute; top: -7px; left: 50%; margin-left: 10px;
   min-width: 15px; height: 15px; padding: 0 4px; border-radius: 99px;
   background: var(--ember); color: #fff; font-size: 11px; line-height: 15px;
 }
@@ -1920,7 +1922,7 @@ body {
   /* Each column ends at the bottom, so a wrapped second column sits level with the
      first rather than starting at the top with a gap under it. No effect at all while
      the column fits, because then the box is only as tall as its contents. */
-  align-content: flex-end; justify-content: flex-end; gap: 8px;
+  align-content: flex-end; justify-content: flex-end; gap: 10px;
   transition: bottom 0.34s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.2s linear;
 }
 /*
@@ -2952,7 +2954,9 @@ body {
 /* Capped like the paywall's, so nothing in here stretches to whatever it is given. */
 .synced-say, .synced-rare, .synced-acts { width: 100%; max-width: 330px; }
 .synced-acts {
-  position: relative; align-self: stretch; margin-top: 34px;
+  /* Centred, not stretched: stretch with a max-width pins it to the left, which put
+     "Keep it for later" 12px off the line of everything above it. */
+  position: relative; align-self: center; margin-top: 34px;
   display: flex; flex-direction: column; gap: 10px;
   animation: synced-lift 0.6s 0.28s ease-out both;
 }
@@ -3462,11 +3466,11 @@ body {
  */
 .hear-acts {
   flex: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 2px; padding: 6px 10px 0;
+  gap: 2px; padding: 12px 10px 4px;
 }
 .hear-acts > button, .hear-acts > label {
   position: relative; min-width: 0; min-height: 52px; padding: 5px 2px;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px;
   border: 0; border-radius: 14px; background: none; cursor: pointer;
   font: inherit; font-size: 12px; line-height: 1; white-space: nowrap; color: var(--cool);
 }
@@ -3938,7 +3942,8 @@ body {
  * `--sheet-h` plus `--step-h` plus `--guide-h`; those three are why the control column
  * had to learn to wrap. `ECHOBAR_H` in `EchoBar.tsx` tracks this — change both.
  */
-.screen:has(.echobar) { --step-h: 78px; }
+/* The bar (77px) and the 8px it floats above the tab bar, so what clears it really does. */
+.screen:has(.echobar) { --step-h: 86px; }
 .echobar {
   position: absolute; left: 0; right: 0; z-index: 24;
   bottom: calc(var(--nav-h) + 8px);
@@ -3985,7 +3990,8 @@ body {
  */
 .echobar-card {
   flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center;
-  padding: 7px 4px 6px; color: var(--white);
+  /* 8px off the left arrow, so the orb's sparkles do not touch it. */
+  padding: 8px 4px 7px 8px; color: var(--white);
 }
 /* With no arrows (a single echo) the card is the whole pill and pads itself. */
 .echobar-row > .echobar-card:only-child { padding: 7px 11px 6px 7px; }
@@ -4001,7 +4007,7 @@ body {
   box-shadow: 0 0 0 1px rgba(255, 158, 18, 0.26), 0 10px 34px rgba(255, 158, 18, 0.2);
 }
 
-.echobar-face { display: flex; align-items: center; gap: 9px; min-width: 0; }
+.echobar-face { display: flex; align-items: center; gap: 12px; min-width: 0; }
 .echobar-orb {
   position: relative; flex: none; width: 48px; height: 48px; padding: 0;
   border: 0; background: none; cursor: pointer; display: grid; place-items: center;
@@ -4085,7 +4091,7 @@ body {
  * and the map's reserved band never moves under it.
  */
 .echobar-progress {
-  height: 3px; margin: 5px 3px 0; border-radius: 99px;
+  height: 3px; margin: 7px 3px 0; border-radius: 99px;
   background: rgba(var(--rgb-hair), 0.16); overflow: hidden;
 }
 .echobar-progress span {
@@ -4150,12 +4156,12 @@ body {
 }
 .jchip-fill {
   position: absolute; inset: 0 auto 0 0; pointer-events: none;
-  background: linear-gradient(90deg, rgba(0, 255, 231, 0.17), rgba(0, 255, 231, 0.05));
-  border-right: 1px solid rgba(0, 255, 231, 0.55);
+  /* Fades out at its leading edge rather than ending in a 1px line: drawn hard, that
+     line ran through "42 min" and read as a crack in the chip on a real phone. */
+  background: linear-gradient(90deg, rgba(0, 255, 231, 0.17), rgba(0, 255, 231, 0.07) 70%, rgba(0, 255, 231, 0));
 }
 :root[data-theme="light"] .jchip-fill {
-  background: linear-gradient(90deg, rgba(0, 115, 108, 0.16), rgba(0, 115, 108, 0.05));
-  border-right-color: rgba(0, 115, 108, 0.6);
+  background: linear-gradient(90deg, rgba(0, 115, 108, 0.16), rgba(0, 115, 108, 0.06) 70%, rgba(0, 115, 108, 0));
 }
 .jchip-mode {
   position: relative; width: 18px; height: 18px; flex: none; fill: none; stroke: var(--aqua);
@@ -4265,3 +4271,18 @@ body {
 .mapbar-chips .chip-nudge { position: relative; inset: auto; flex: none; background: none; }
 .mapbar-chips .chip-nudge-l { order: 0; }
 .mapbar-chips .chip-nudge-r { order: 2; }
+/*
+ * A chip running out under the edge FADES rather than being sliced.
+ *
+ * Beside the arrows the strip ends in a hard vertical cut, and whatever chip is half
+ * through it shows as a fragment: a lone "y" on the left, "Ghos" on the right, on a real
+ * iPhone. A short fade on each side that has more says "continues" instead of "broken",
+ * and only on a side the arrow says has more, so the first chip is never dimmed.
+ */
+.mapbar-chips .chips {
+  --fade-l: 0px; --fade-r: 0px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 var(--fade-l), #000 calc(100% - var(--fade-r)), transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 var(--fade-l), #000 calc(100% - var(--fade-r)), transparent);
+}
+.mapbar-chips .chipwrap:has(.chip-nudge-l) .chips { --fade-l: 22px; }
+.mapbar-chips .chipwrap:has(.chip-nudge-r) .chips { --fade-r: 22px; }

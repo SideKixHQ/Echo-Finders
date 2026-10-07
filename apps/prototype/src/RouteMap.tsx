@@ -1324,7 +1324,7 @@ export function RouteMap({
       <text
         className="map-credit"
         x={10}
-        y={box.h - insetFor(barH, reservedBottom).bottom + 2}
+        y={box.h - insetFor(barH, reservedBottom).bottom - 6}
         textAnchor="start"
       >
         {TILE_ATTRIBUTION}
