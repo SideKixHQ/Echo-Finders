@@ -62,6 +62,14 @@ export type WalkEvent =
    * pin went solid in silence.
    */
   | { readonly type: "deferred"; readonly deferred: Deferred }
+  /**
+   * An echo began playing: in the listener's ears now. What the free allowance counts,
+   * because it is the one moment every way of playing (a tap, an arrival, the queue
+   * moving on) has in common.
+   */
+  | { readonly type: "started"; readonly echo: Echo }
+  /** The play gate said no, so it did not start. The caller says why (the paywall). */
+  | { readonly type: "refused"; readonly echo: Echo }
   | { readonly type: "error"; readonly error: Error };
 
 export interface WalkSessionDeps {
@@ -146,6 +154,15 @@ export class WalkSession {
   private readonly playback: PlaybackQueue;
   private stopAudio: Unsubscribe | null = null;
   private unwatch: Unsubscribe | null = null;
+  /**
+   * Asked before anything starts playing. Null lets everything through.
+   *
+   * The paywall lives outside the engine (it needs to know what was bought), but where a
+   * play begins is in here: on a tap, on arrival with auto-play on, and when the queue
+   * moves on. A check in the app's play button covered only the first, so the other two
+   * played for free. One gate at the one place they all pass is the fix.
+   */
+  private playGate: ((echo: Echo) => boolean) | null = null;
   /** The cue currently being rendered, so we do not restate it on every fix. */
   private activeCue: string | null = null;
 
@@ -309,6 +326,11 @@ export class WalkSession {
     this.emitPlayback();
   }
 
+  /** Set or clear the play gate. Applies to the next thing that would start. */
+  setPlayGate(gate: ((echo: Echo) => boolean) | null): void {
+    this.playGate = gate;
+  }
+
   /** Give up on the current item and take the next. */
   skip(): void {
     this.playback.skip();
@@ -386,10 +408,29 @@ export class WalkSession {
   }
 
   private startCurrent(): void {
-    const item = this.playback.nowPlaying;
-    if (item) this.deps.audio?.play(item.render.audioKey);
-    else this.deps.audio?.stop();
+    let item = this.playback.nowPlaying;
+    // Anything the gate refuses is dropped from the queue, not left blocking it.
+    while (item && this.playGate && !this.playGate(item.echo)) {
+      this.emit({ type: "refused", echo: item.echo });
+      this.playback.skip();
+      item = this.playback.nowPlaying;
+    }
+    if (item) {
+      this.deps.audio?.play(item.render.audioKey);
+      this.began(item.echo);
+    } else this.deps.audio?.stop();
     this.emitPlayback();
+  }
+
+  /**
+   * Something is now in the listener's ears.
+   *
+   * Marks it heard in the collection too: `markHeard` existed and nothing called it, so
+   * every pin stayed "captured" and "Play it again" never appeared.
+   */
+  private began(echo: Echo): void {
+    if (this.tracker.markHeard(echo.id)) this.persist();
+    this.emit({ type: "started", echo });
   }
 
   private emitPlayback(): void {
@@ -481,11 +522,17 @@ export class WalkSession {
     // sit a few metres apart that is the normal case, not the edge one.
     if (this.playsOnArrival(capture.echo)) {
       const render = renderFor(capture.echo.renders, this.options.voiceId);
-      if (render) {
+      if (render && this.playGate && !this.playGate(capture.echo)) {
+        // Still captured (they stood there), just not played. The pin goes solid.
+        this.emit({ type: "refused", echo: capture.echo });
+      } else if (render) {
         const wasIdle = this.playback.nowPlaying === null;
         const outcome = this.playback.offer({ echo: capture.echo, render, atMs: Date.now() });
         if (outcome.deferred) this.emit({ type: "deferred", deferred: outcome.deferred });
-        if (outcome.started && wasIdle) this.deps.audio?.play(render.audioKey);
+        if (outcome.started && wasIdle) {
+          this.deps.audio?.play(render.audioKey);
+          this.began(capture.echo);
+        }
         this.emitPlayback();
       }
     }
