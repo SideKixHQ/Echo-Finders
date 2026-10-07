@@ -230,7 +230,10 @@ async function attempt(size, screen) {
     await p.waitForTimeout(800);
     await onboard(p);
     await SETUP[screen].steps(p, ctx);
-    if (!(await p.locator(SETUP[screen].ready).count())) return null;
+    if (!(await p.locator(SETUP[screen].ready).count())) {
+      if (SHOTS) await p.screenshot({ path: `align-shots/MISSED-${screen}-${size.name}.png` });
+      return null;
+    }
     return await measure(p, size, screen);
   } catch {
     return null;
@@ -245,8 +248,8 @@ const report = [];
 for (const size of SIZES.filter((s) => !ONLY || s.name === ONLY[0])) {
   for (const screen of Object.keys(SCREENS).filter((s) => !ONLY || s === ONLY[1])) {
     let problems = null;
-    for (let tries = 0; tries < 4 && problems === null; tries++) problems = await attempt(size, screen);
-    report.push([size.name, screen, problems ?? [`never reached ${SETUP[screen].ready} in 4 tries`]]);
+    for (let tries = 0; tries < 6 && problems === null; tries++) problems = await attempt(size, screen);
+    report.push([size.name, screen, problems ?? [`never reached ${SETUP[screen].ready} in 6 tries`]]);
     console.log(`  ${size.name}: ${screen} done`);
   }
 }

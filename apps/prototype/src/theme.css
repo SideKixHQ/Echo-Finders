@@ -4272,7 +4272,9 @@ body {
  * top. Centred in its 44px box it sat 8-9px low. `audit:align` holds the two together.
  */
 .pop-close {
-  width: 44px; height: 44px; margin: 0 -11px 0 2px; padding: 5.5px 0 0;
+  /* -11 below, so the float takes the same room it did before the glyph moved: without
+     it the 44px box reached 11px further down and pushed the title (8px over on an SE). */
+  width: 44px; height: 44px; margin: 0 -11px -11px 2px; padding: 5.5px 0 0;
   place-items: start center; background: none;
 }
 .onb-back, .onb-skip { min-width: 44px; min-height: 44px; }
