@@ -19,8 +19,6 @@ import {
 } from "@echofinders/core";
 
 interface Props {
-  /** Back to My Echoes, which is where Settings is opened from. */
-  readonly onBack: () => void;
   readonly settings: PrivacySettings;
   readonly onChange: (next: PrivacySettings) => void;
   readonly storedPositions: number;
@@ -55,7 +53,6 @@ const FEATURE_LABELS: Record<FeatureId, string> = {
 };
 
 export function Privacy({
-  onBack,
   settings,
   onChange,
   storedPositions,
@@ -75,17 +72,9 @@ export function Privacy({
 
   return (
     <div className="screen-body">
-      {/*
-        A title and a way back. This screen had neither, and no tab lit either, so somebody
-        who opened it (from My Echoes, by an icon that looked like a filter) was on an
-        unnamed page with no visible way out. The back arrow is the way they came.
-      */}
-      <header className="screen-head set-head">
-        <button className="set-back" onClick={onBack} aria-label="Back to My Echoes">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M15 5l-7 7 7 7" />
-          </svg>
-        </button>
+      {/* Titled, like every tab. It had no title at all, so it was a page of switches
+          that did not say what it was. */}
+      <header className="screen-head">
         <h1>Settings</h1>
       </header>
       {/*

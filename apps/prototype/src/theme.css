@@ -1371,18 +1371,17 @@ body {
 }
 .screen-body::-webkit-scrollbar { display: none; }
 
-.screen-head { padding: 12px 0 18px; }
-.screen-head h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
-/* Settings: a back arrow on the gutter, the title beside it, on one centre line. */
-.set-head { display: flex; align-items: center; gap: 4px; }
-.set-back {
-  width: 44px; height: 44px; margin-left: -12px; flex: none; cursor: pointer;
-  display: grid; place-items: center; border: 0; background: none; color: var(--white);
+/* 16 under every title row, on every tab: My Echoes had 14 to its stats and Settings 44
+   to its first panel (18 here plus the panel's own 26). */
+.screen-head { padding: 12px 0 16px; }
+.screen-head + .panel { margin-top: 0; }
+/* Every tab's title sits in the same 44px row, so "My Echoes" (beside its 44px filter
+   button) and "Settings" (alone) land on the same line. Settings sat 9px higher. */
+.screen-head h1 {
+  font-size: 22px; font-weight: 600; letter-spacing: -0.01em;
+  min-height: 44px; display: flex; align-items: center; margin: 0;
 }
-.set-back svg {
-  width: 22px; height: 22px; fill: none; stroke: currentColor;
-  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
-}
+
 .screen-head p { font-size: 12px; color: var(--muted); margin-top: 4px; }
 
 
@@ -2801,8 +2800,34 @@ body {
  * somebody opens sitting down and a count is what they came for. Ember on the counts,
  * because a number of echoes is content; the gear stays cool, because it is a control.
  */
-.coll-head { display: flex; flex-direction: column; gap: 14px; }
+.coll-head { display: flex; flex-direction: column; gap: 16px; }
 .coll-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+/* The filter button: the old settings button's box, aqua with a dot while filtering. */
+.coll-filter-btn {
+  position: relative;
+  width: 44px; height: 44px; flex: none; border-radius: 12px; cursor: pointer;
+  border: 1px solid var(--line); background: none; color: var(--muted);
+  display: grid; place-items: center;
+}
+.coll-filter-btn svg {
+  width: 20px; height: 20px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.coll-filter-btn[aria-expanded="true"], .coll-filter-btn.on { color: var(--aqua); border-color: rgba(0, 255, 231, 0.4); }
+.coll-filter-dot {
+  position: absolute; top: 7px; right: 7px; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--aqua);
+}
+/* The chips sit between the title and the list, in the map bar's own panel and layout
+   (`mapbar-chips`), so the arrows sit beside the chips and the cut edge fades. Drawn as
+   a plain `.chips` row, the arrows covered "ALL" and "Ghosts". */
+.coll-filter { margin: 0 0 16px; }
+.coll-nomatch { padding-top: 24px; }
+.coll-showall {
+  margin-top: 14px; min-height: 44px; padding: 0 20px; border-radius: 12px; cursor: pointer;
+  font: inherit; font-size: 14px; color: var(--aqua);
+  background: none; border: 1px solid rgba(0, 255, 231, 0.4);
+}
 .coll-settings {
   width: 44px; height: 44px; flex: none; border-radius: 12px; cursor: pointer;
   border: 1px solid var(--line); background: none; color: var(--muted);

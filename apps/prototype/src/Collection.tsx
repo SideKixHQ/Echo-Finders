@@ -20,8 +20,10 @@
  * sits under it, quieter, as the record.
  */
 
-import { rarityOf, rarityReasons, type CaptureEvent, type Echo, type TravelMode } from "@echofinders/core";
-import { CATEGORY_ICON } from "./categories";
+import { useCallback, useState } from "react";
+import { rarityOf, rarityReasons, type CaptureEvent, type Echo, type EchoCategory, type TravelMode } from "@echofinders/core";
+import { ALL_CATEGORIES, CATEGORY_ICON, toggleCategories, type ChipGroup } from "./categories";
+import { CategoryChips } from "./CategoryChips";
 import { platePng } from "./archive-plate";
 import type { PrivacySettings } from "@echofinders/core";
 import { holdsPersonalLocation } from "@echofinders/core";
@@ -29,8 +31,6 @@ import { holdsPersonalLocation } from "@echofinders/core";
 interface Props {
   readonly captured: readonly CaptureEvent[];
   readonly privacy: PrivacySettings;
-  /** Settings lives behind a gear here now, rather than taking a third of the tab bar. */
-  readonly onSettings: () => void;
   /** Play one, from anywhere, at any time — which is the whole point of keeping them. */
   readonly onPlay: (echo: Echo) => void;
   readonly isPlaying: (echoId: string) => boolean;
@@ -67,28 +67,29 @@ export function Collection({
   captured,
   privacy,
   onPlay,
-  onSettings,
   isPlaying,
   isHeard,
   saved,
   mode,
 }: Props) {
+  /*
+   * The filter: the map's own category chips, with the map's rule (`toggleCategories`),
+   * so it behaves the same in both places. Null is everything. Opened by the button beside
+   * the title, which is a sliders icon because a filter is what that icon means.
+   */
+  const [filterOpen, setFilterOpen] = useState(false);
+  const [cats, setCats] = useState<ReadonlySet<EchoCategory> | null>(null);
+  const onToggle = useCallback((group: ChipGroup) => setCats((c) => toggleCategories(c, group)), []);
+  const onAll = useCallback(() => setCats(null), []);
+
   if (captured.length === 0 && saved.length === 0) {
     return (
       <div className="screen-body">
-        {/*
-          The title bar comes with the empty state too, and that is not cosmetic.
-
-          Settings used to be a tab. Now it is a gear on this screen, and this screen has
-          an early return for somebody who has collected nothing — which is everybody, on
-          first run. Without the bar here, a new listener could not reach settings at all:
-          not privacy, not the voice, not the theme, nothing, until they had synced their
-          first echo. Running the app is what found it; reading the diff would not have.
-        */}
+        {/* No filter until there is something to filter: a control that can only ever
+            show "nothing" is one more thing to wonder about. Settings is a tab. */}
         <header className="screen-head coll-head">
           <div className="coll-title">
             <h1>My Echoes</h1>
-            <SettingsButton onClick={onSettings} />
           </div>
         </header>
         {/*
@@ -104,14 +105,19 @@ export function Collection({
     );
   }
 
-  const unheard = captured.filter((c) => !isHeard(c.echo.id));
-  const heard = captured.filter((c) => isHeard(c.echo.id));
+  const shown = (echo: Echo) => !cats || cats.has(echo.category);
+  const filtered = captured.filter((c) => shown(c.echo));
+  const unheard = filtered.filter((c) => !isHeard(c.echo.id));
+  const heard = filtered.filter((c) => isHeard(c.echo.id));
+  // The kinds actually in this collection, for the chips' `available`.
+  const present = new Set<EchoCategory>([...captured.map((c) => c.echo.category), ...saved.map((e) => e.category)]);
   const groups = [
     { key: "unheard", label: `Not heard yet · ${unheard.length}`, items: unheard },
     { key: "heard", label: `Heard · ${heard.length}`, items: heard },
   ].filter((g) => g.items.length > 0);
   // Not captures: these have never been stood on. Shown apart for exactly that reason.
-  const wishlist = saved.filter((e) => !captured.some((c) => c.echo.id === e.id));
+  const wishlist = saved.filter((e) => shown(e) && !captured.some((c) => c.echo.id === e.id));
+  const nothingMatches = cats !== null && filtered.length === 0 && wishlist.length === 0;
 
   const singularCount = captured.filter((c) => rarityOf(c.echo) === "singular").length;
   const minutes = Math.round(captured.reduce((t, c) => t + c.echo.durationS, 0) / 60);
@@ -121,7 +127,11 @@ export function Collection({
       <header className="screen-head coll-head">
         <div className="coll-title">
           <h1>My Echoes</h1>
-          <SettingsButton onClick={onSettings} />
+          <FilterButton
+            open={filterOpen}
+            active={cats !== null}
+            onClick={() => setFilterOpen((o) => !o)}
+          />
         </div>
 
         {/*
@@ -150,6 +160,20 @@ export function Collection({
           </span>
         </div>
       </header>
+
+      {filterOpen && (
+        <div className="coll-filter mapbar-chips" id="coll-filter">
+          <CategoryChips available={present} on={cats ?? ALL_CATEGORIES} onToggle={onToggle} onAll={onAll} />
+        </div>
+      )}
+
+      {nothingMatches && (
+        <div className="empty coll-nomatch">
+          <b>Nothing of this kind yet</b>
+          <span>None of your echoes are in the kinds you picked.</span>
+          <button className="coll-showall" onClick={onAll}>Show all</button>
+        </div>
+      )}
 
       {groups.map(({ key, label, items }) => (
         <section key={key} className={`group group-${key}`}>
@@ -191,13 +215,13 @@ export function Collection({
       <footer className="collection-foot">
         {privacy.recordPrecisePlaces ? (
           <p>
-            Your collection records where you were standing. You can turn that off in Privacy
+            Your collection records where you were standing. You can turn that off in Settings
             without losing anything above.
           </p>
         ) : (
           <p>
             Your collection records <strong>which</strong> echoes you synced and when, not
-            where you were standing. Turn that on in Privacy if you want a personal map.
+            where you were standing. Turn that on in Settings if you want a personal map.
           </p>
         )}
       </footer>
@@ -305,21 +329,36 @@ const clock = (seconds: number) =>
   `${Math.floor(seconds / 60)}:${String(Math.round(seconds % 60)).padStart(2, "0")}`;
 
 /**
- * The way into Settings, drawn once.
+ * The filter, beside the title.
  *
- * A gear, because this opens Settings. It was a sliders icon, which every app uses for
- * FILTER: people tapped it to filter their echoes and landed in settings with no way back.
- * It also existed twice (this screen has a separate header for the empty state) and a fix
- * to one copy left the other as it was, so there is one now. Drawn at 21px with a 1.7
- * stroke so it holds its shape at phone size.
+ * Sliders, because that is what a filter looks like everywhere. For a while this icon
+ * opened Settings, so people tapped it to filter their echoes and landed somewhere else
+ * with no way back. Settings is its own tab now, and this does what it looks like.
+ * Aqua with a dot while a filter is on, so a shortened list never looks like lost echoes.
  */
-function SettingsButton({ onClick }: { readonly onClick: () => void }) {
+function FilterButton({
+  open,
+  active,
+  onClick,
+}: {
+  readonly open: boolean;
+  readonly active: boolean;
+  readonly onClick: () => void;
+}) {
   return (
-    <button className="coll-settings" onClick={onClick} aria-label="Settings">
+    <button
+      className={`coll-filter-btn${active ? " on" : ""}`}
+      onClick={onClick}
+      aria-label={active ? "Filter my echoes (filtered)" : "Filter my echoes"}
+      aria-expanded={open}
+      aria-controls="coll-filter"
+    >
       <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
-        <circle cx="12" cy="12" r="3" />
+        <path d="M4 7h10M18 7h2M4 17h4M12 17h8" />
+        <circle cx="16" cy="7" r="2.4" />
+        <circle cx="10" cy="17" r="2.4" />
       </svg>
+      {active && <span className="coll-filter-dot" aria-hidden="true" />}
     </button>
   );
 }

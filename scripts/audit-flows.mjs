@@ -75,37 +75,29 @@ const visible = async (loc) => (await loc.count()) > 0 && await loc.first().isVi
 const title = (p, text) => p.locator('h1:visible', { hasText: text });
 const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().catch(() => '');
 
-// ── My Echoes, and Settings from it ─────────────────────────────────────────────
+// ── The three tabs ──────────────────────────────────────────────────────────────
 {
   const { ctx, p } = await freshApp();
-  await p.getByRole('button', { name: /My Echoes/ }).click();
+  const nav = p.locator('.nav');
+  await nav.getByRole('button', { name: /My Echoes/ }).click();
   await p.waitForTimeout(500);
   check('My Echoes: titled', await visible(title(p, 'My Echoes')));
   check('My Echoes: its tab is lit', /My Echoes/i.test(await currentTab(p)));
+  check('My Echoes: no settings button pretending to be a filter',
+    (await p.locator('.screen-body').getByRole('button', { name: 'Settings' }).count()) === 0);
 
-  const settings = p.getByRole('button', { name: 'Settings' });
-  check('My Echoes: the settings button says Settings', await visible(settings));
-  await settings.click();
+  await nav.getByRole('button', { name: /Settings/ }).click();
   await p.waitForTimeout(500);
-  check('Settings: titled', await visible(title(p, 'Settings')));
-  check('Settings: My Echoes tab stays lit', /My Echoes/i.test(await currentTab(p)));
-  const back = p.getByRole('button', { name: 'Back to My Echoes' });
-  check('Settings: a visible way back', await visible(back));
-  await back.click().catch(() => {});
-  await p.waitForTimeout(500);
-  check('Settings: back returns to My Echoes', await visible(title(p, 'My Echoes')));
-
-  // Out by the tab bar instead.
-  await p.getByRole('button', { name: 'Settings' }).click();
+  check('Settings: a tab of its own', await visible(title(p, 'Settings')));
+  check('Settings: its tab is lit', /Settings/i.test(await currentTab(p)));
+  await nav.getByRole('button', { name: /My Echoes/ }).click();
   await p.waitForTimeout(400);
-  await p.locator('.nav').getByRole('button', { name: /My Echoes/ }).click();
+  check('Settings: My Echoes tab leads out', await visible(title(p, 'My Echoes')));
+  await nav.getByRole('button', { name: /Settings/ }).click();
   await p.waitForTimeout(400);
-  check('Settings: the My Echoes tab also leads back', await visible(title(p, 'My Echoes')));
-  await p.getByRole('button', { name: 'Settings' }).click();
-  await p.waitForTimeout(400);
-  await p.locator('.nav').getByRole('button', { name: /Map/ }).click();
+  await nav.getByRole('button', { name: /Map/ }).click();
   await p.waitForTimeout(600);
-  check('Settings: the Map tab leads to the map', await visible(p.locator('.mapbar')));
+  check('Settings: Map tab leads to the map', await visible(p.locator('.mapbar')));
   check('Map: its tab is lit', /Map/i.test(await currentTab(p)));
   await ctx.close();
 }
@@ -174,6 +166,27 @@ async function arrive() {
     await back.click().catch(() => {});
     await p.waitForTimeout(600);
     check('Player: back returns to the map', !(await visible(p.locator('.hear'))) && await visible(p.locator('.mapbar')));
+
+    // My Echoes now holds the fort (History), so its filter has something to filter.
+    await p.locator('.nav').getByRole('button', { name: /My Echoes/ }).click();
+    await p.waitForTimeout(500);
+    const filter = p.getByRole('button', { name: /^Filter my echoes/ });
+    const fort = p.locator('.entry', { hasText: 'Eight million' });
+    check('Filter: a filter button on My Echoes', await visible(filter));
+    await filter.click();
+    await p.waitForTimeout(400);
+    check('Filter: opens the category chips', await visible(p.locator('#coll-filter .chip')));
+    await p.locator('#coll-filter').getByRole('button', { name: /Ghosts/ }).click();
+    await p.waitForTimeout(400);
+    check('Filter: a kind you have none of hides the rest and says so',
+      !(await visible(fort)) && await visible(p.locator('.coll-nomatch')));
+    check('Filter: the button shows a filter is on', /filtered/.test(await filter.getAttribute('aria-label') ?? ''));
+    await p.getByRole('button', { name: 'Show all' }).click();
+    await p.waitForTimeout(400);
+    check('Filter: Show all brings everything back', await visible(fort));
+    await p.locator('#coll-filter').getByRole('button', { name: /History/ }).click();
+    await p.waitForTimeout(400);
+    check("Filter: the fort's own kind shows it", await visible(fort));
     await ctx.close();
   }
 }
