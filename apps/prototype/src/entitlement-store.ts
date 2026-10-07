@@ -15,16 +15,16 @@
  *   3. a gate the engine sees                           BUILT, in `entitlement.ts`
  *   4. Stripe Checkout and a webhook                    NOT BUILT
  *
- * What it does give is the shape. `unlock()` is the function a Stripe webhook's success
- * redirect will call, `read()` is what a session start will hydrate from a server, and
- * every screen above already treats both as the truth. When links 1, 2 and 4 land, this
- * file gets a network call and nothing above it changes.
+ * What it does give is the shape. `buyCityPass()` and `buyAllAccess()` are what a Stripe
+ * webhook's success redirect will call, `readEntitlement()` is what a session start will
+ * hydrate from a server, and every screen above already treats them as the truth. When
+ * links 1, 2 and 4 land, this file gets a network call and nothing above it changes.
  *
  * Until then it is honest about what it is: a device-local flag, cleared by clearing the
  * browser, and the paywall says so out loud rather than implying a receipt exists.
  */
 
-import { FREE, type Entitlement } from "@echofinders/core";
+import { ALL_ACCESS_TERM_MS, FREE, type Entitlement } from "@echofinders/core";
 
 const KEY = "echo-finders:entitlement";
 
@@ -39,14 +39,22 @@ export function readEntitlement(): Entitlement {
   try {
     const raw = localStorage.getItem(KEY);
     if (!raw) return FREE;
-    const parsed: unknown = JSON.parse(raw);
-    if (
-      typeof parsed === "object" &&
-      parsed !== null &&
-      (parsed as { kind?: unknown }).kind === "unlocked"
-    ) {
-      const at = (parsed as { purchasedAt?: unknown }).purchasedAt;
-      return { kind: "unlocked", ...(typeof at === "number" ? { purchasedAt: at } : {}) };
+    const parsed = JSON.parse(raw) as Record<string, unknown> | null;
+    if (typeof parsed !== "object" || parsed === null) return FREE;
+    const at = typeof parsed.purchasedAt === "number" ? { purchasedAt: parsed.purchasedAt } : {};
+    // The retired $6.99 unlock. Whoever bought it keeps everything.
+    if (parsed.kind === "unlocked") return { kind: "unlocked", ...at };
+    if (parsed.kind === "passes") {
+      const cities = Array.isArray(parsed.cities)
+        ? parsed.cities.filter((c): c is string => typeof c === "string")
+        : [];
+      const until = typeof parsed.allAccessUntil === "number" ? parsed.allAccessUntil : undefined;
+      return {
+        kind: "passes",
+        ...at,
+        ...(cities.length ? { cities } : {}),
+        ...(until !== undefined ? { allAccessUntil: until } : {}),
+      };
     }
     return FREE;
   } catch {
@@ -55,26 +63,51 @@ export function readEntitlement(): Entitlement {
 }
 
 /**
- * Record a purchase.
- *
- * The signature is the one a real flow wants: a Stripe webhook confirms, the app calls
- * this, every screen re-reads. What is missing underneath is the confirmation, not the
- * shape — so when Checkout lands, this grows an `await` and its callers do not change.
- *
  * Writing can fail (a private window, storage disabled, a full quota) and it fails
  * quietly. Somebody who has just paid and whose browser refuses to remember it still gets
- * the rest of this session unlocked, because the caller holds the value in state too.
- * They will be asked again next time, which is bad, and they will not be robbed of the
- * thing they just bought right now, which is worse.
+ * the rest of this session, because the caller holds the value in state too. They will be
+ * asked again next time, which is bad, and they will not be robbed of the thing they just
+ * bought right now, which is worse.
  */
-export function unlock(at: number = Date.now()): Entitlement {
-  const next: Entitlement = { kind: "unlocked", purchasedAt: at };
+function save(next: Entitlement): Entitlement {
   try {
     localStorage.setItem(KEY, JSON.stringify(next));
   } catch {
     /* Session-only. See above. */
   }
   return next;
+}
+
+/** What is already held, as passes, so buying a second thing never drops the first. */
+function asPasses(current: Entitlement, at: number): Entitlement {
+  if (current.kind === "passes") return current;
+  return { kind: "passes", purchasedAt: at };
+}
+
+/**
+ * Record a City Pass.
+ *
+ * The signature is the one a real flow wants: a Stripe webhook confirms, the app calls
+ * this, every screen re-reads. What is missing underneath is the confirmation, not the
+ * shape — so when Checkout lands, this grows an `await` and its callers do not change.
+ */
+export function buyCityPass(
+  current: Entitlement,
+  cityId: string,
+  at: number = Date.now(),
+): Entitlement {
+  if (current.kind === "unlocked") return current;
+  const base = asPasses(current, at);
+  const cities = [...new Set([...(base.cities ?? []), cityId])];
+  return save({ ...base, cities });
+}
+
+/** Record a year of All-Access, added on to any time still left. */
+export function buyAllAccess(current: Entitlement, at: number = Date.now()): Entitlement {
+  if (current.kind === "unlocked") return current;
+  const base = asPasses(current, at);
+  const from = Math.max(at, base.allAccessUntil ?? 0);
+  return save({ ...base, allAccessUntil: from + ALL_ACCESS_TERM_MS });
 }
 
 /**

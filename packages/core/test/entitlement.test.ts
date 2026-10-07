@@ -13,7 +13,10 @@ import {
   FREE_ECHO_LIMIT,
   freeEchoesLeft,
   mayHearAnother,
-  PRICE,
+  ALL_ACCESS_TERM_MS,
+  cityAt,
+  covers,
+  PLANS,
   type Entitlement,
 } from "../src/entitlement/entitlement.js";
 import type { Echo, ListenerProfile } from "../src/types.js";
@@ -73,9 +76,58 @@ describe("once it is bought", () => {
     expect(mayHearAnother(UNLOCKED, listener(heardIds(999)), "anything")).toBe(true);
   });
 
-  it("is one payment at the price the document decided", () => {
-    expect(PRICE.amountMinor).toBe(699);
-    expect(PRICE.currency).toBe("USD");
+  it("keeps honouring the retired $6.99 unlock", () => {
+    expect(covers(UNLOCKED, undefined, Date.UTC(2040, 0, 1))).toBe(true);
+  });
+});
+
+describe("the two plans", () => {
+  const NOW = Date.UTC(2026, 9, 7);
+  const BATTERY = { lat: 40.7033, lng: -74.017 };
+  const BLUE_RIDGE = { lat: 36.2, lng: -81.7 };
+  const NEW_YORK: Entitlement = { kind: "passes", purchasedAt: NOW, cities: ["new-york"] };
+  const ALL: Entitlement = {
+    kind: "passes",
+    purchasedAt: NOW,
+    allAccessUntil: NOW + ALL_ACCESS_TERM_MS,
+  };
+  const spent = listener(heardIds(FREE_ECHO_LIMIT));
+
+  it("cost what the pricing doc proposes", () => {
+    expect(PLANS.city.amountMinor).toBe(999);
+    expect(PLANS.allAccess.amountMinor).toBe(3499);
+    expect(PLANS.city.per).toBe("once");
+  });
+
+  it("puts Lower Manhattan in New York and a parkway in no city", () => {
+    expect(cityAt(BATTERY)?.id).toBe("new-york");
+    expect(cityAt(BLUE_RIDGE)).toBeNull();
+  });
+
+  it("opens every echo in the city a City Pass was bought for, and only there", () => {
+    expect(mayHearAnother(NEW_YORK, spent, "new", BATTERY, NOW)).toBe(true);
+    expect(mayHearAnother(NEW_YORK, spent, "new", BLUE_RIDGE, NOW)).toBe(false);
+  });
+
+  it("never lets a City Pass open an echo whose place nobody said", () => {
+    expect(mayHearAnother(NEW_YORK, spent, "new", undefined, NOW)).toBe(false);
+  });
+
+  it("keeps the free ten running outside a City Pass's city", () => {
+    expect(mayHearAnother(NEW_YORK, listener(heardIds(3)), "new", BLUE_RIDGE, NOW)).toBe(true);
+  });
+
+  it("opens everything with All-Access, until the year is up", () => {
+    expect(mayHearAnother(ALL, spent, "new", BLUE_RIDGE, NOW)).toBe(true);
+    expect(freeEchoesLeft(ALL, spent, NOW)).toBe(Infinity);
+    const lapsed = NOW + ALL_ACCESS_TERM_MS + 1;
+    expect(mayHearAnother(ALL, spent, "new", BLUE_RIDGE, lapsed)).toBe(false);
+  });
+
+  it("goes through the eligibility gate with the echo's place", () => {
+    const e = makeEcho({ id: "far", category: "history", at: BLUE_RIDGE, place: "Blue Ridge" });
+    const r = checkEligibility(e, { profile: spent, playAtMs: NOW, entitlement: NEW_YORK });
+    expect(r.reasons).toContain("needs-unlock");
   });
 });
 

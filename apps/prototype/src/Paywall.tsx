@@ -3,42 +3,66 @@
  *
  * It arrives on the eleventh echo, in the street, with headphones in — which is the worst
  * possible moment to be sold to and the only honest one. By then somebody has walked to
- * ten places and heard ten stories, so the question is not "will you gamble $6.99 on this"
+ * ten places and heard ten stories, so the question is not "will you gamble on this"
  * but "do you want the rest of it". That is the whole reason the free tier is ten rather
  * than two, and why this screen can be short.
  *
- * WHAT IT DOES NOT DO. It does not dress the price up, run a countdown, offer a
- * subscription, or hint at a better deal later. There is one product at one price, bought
- * once, and every trick that makes a paywall convert better also makes it the moment
- * somebody decides this app is like all the others. Respect is a stated value of this
- * product and this is the screen that tests whether we meant it.
+ * TWO OFFERS, AND NOTHING ELSE. A City Pass for the visitor here for two days: one city,
+ * paid once, nothing to cancel. All-Access for whoever will cross several cities, a road
+ * trip and a flight in a year, and it renews, which is said beside the price rather than
+ * found on a statement. The sum that decides between them is printed as a fact ("four
+ * cities or more, All-Access costs less") instead of a "best value" badge. No countdown, no
+ * struck-through price, no pre-ticked upgrade: every trick that makes a paywall convert
+ * better also makes it the moment somebody decides this app is like all the others.
+ * Respect is a stated value of this product and this is the screen that tests whether we
+ * meant it.
+ *
+ * An echo outside every city (a parkway, a flight path) has no City Pass to sell, so only
+ * All-Access is offered and the screen says why rather than showing a pass that would not
+ * open the story they asked for.
  *
  * It is also the screen most likely to be read in bright sun by somebody who has been
- * walking for an hour, so: one heading, one number, one button, one way out.
+ * walking for an hour, so: one heading, two plain choices, one button, one way out.
  *
  * The echo they were reaching for is named at the top. Not decoration — it is the whole
  * argument. "Unlock everything" is abstract; "you were about to hear The bull was dumped
  * here in the night" is the specific thing they are being kept from.
  */
 
-import { FREE_ECHO_LIMIT, PRICE, type Echo } from "@echofinders/core";
+import { useState } from "react";
+import { FREE_ECHO_LIMIT, PLANS, type City, type Echo } from "@echofinders/core";
+
+export type Plan = "city" | "allAccess";
 
 export interface PaywallProps {
   /** The echo they tried to play. Named, because it is the reason to buy. */
   readonly echo: Echo;
+  /** The city it is in, or null on the road and in the air: no City Pass to offer. */
+  readonly city: City | null;
   /** How many they have heard. Shown as a fact, never as a warning. */
   readonly heardCount: number;
-  readonly onBuy: () => void;
+  readonly onBuy: (plan: Plan) => void;
   readonly onClose: () => void;
 }
 
-export function Paywall({ echo, heardCount, onBuy, onClose }: PaywallProps) {
+/** How many City Passes cost more than a year of All-Access. Four, at $9.99 and $34.99. */
+const CITIES_WHERE_ALL_ACCESS_WINS =
+  Math.floor(PLANS.allAccess.amountMinor / PLANS.city.amountMinor) + 1;
+
+const COUNT_WORDS = ["", "one", "two", "three", "four", "five", "six", "seven", "eight"];
+
+export function Paywall({ echo, city, heardCount, onBuy, onClose }: PaywallProps) {
+  // The City Pass first when there is one: the visitor on a short trip is most people here.
+  const [plan, setPlan] = useState<Plan>(city ? "city" : "allAccess");
+  const chosen = city && plan === "city" ? "city" : "allAccess";
+  const wins = COUNT_WORDS[CITIES_WHERE_ALL_ACCESS_WINS] ?? String(CITIES_WHERE_ALL_ACCESS_WINS);
+
   return (
     <div
       className="paywall"
       role="dialog"
       aria-modal="true"
-      aria-label="Unlock every echo"
+      aria-label="Keep listening"
     >
       <div className="paywall-body">
         <p className="paywall-count mono">
@@ -66,15 +90,63 @@ export function Paywall({ echo, heardCount, onBuy, onClose }: PaywallProps) {
           <span className="paywall-where"> · {echo.point.place}</span>
         </p>
 
-        <div className="paywall-offer">
-          <p className="paywall-price">{PRICE.label}</p>
-          <p className="paywall-what">
-            Every echo, everywhere, for good. No subscription and nothing to cancel.
-          </p>
-        </div>
+        {/*
+          Real radio buttons, so a screen reader hears "1 of 2, selected" and arrow keys
+          move between them. The whole card is the label, so the whole card is the target.
+        */}
+        <fieldset className="paywall-plans">
+          <legend className="sr-only">Choose a plan</legend>
+          {city && (
+            <label className={`paywall-plan${chosen === "city" ? " on" : ""}`}>
+              <input
+                type="radio"
+                name="plan"
+                value="city"
+                checked={chosen === "city"}
+                onChange={() => setPlan("city")}
+              />
+              <span className="paywall-plan-head">
+                <span className="paywall-plan-name">{city.name} {PLANS.city.name}</span>
+                <span className="paywall-plan-price">
+                  {PLANS.city.price} <small>{PLANS.city.per}</small>
+                </span>
+              </span>
+              <span className="paywall-plan-what">
+                Every echo in {city.name}, for good, including the ones we add later. Nothing
+                to renew.
+              </span>
+            </label>
+          )}
+          <label className={`paywall-plan${chosen === "allAccess" ? " on" : ""}`}>
+            <input
+              type="radio"
+              name="plan"
+              value="allAccess"
+              checked={chosen === "allAccess"}
+              onChange={() => setPlan("allAccess")}
+            />
+            <span className="paywall-plan-head">
+              <span className="paywall-plan-name">{PLANS.allAccess.name}</span>
+              <span className="paywall-plan-price">
+                {PLANS.allAccess.price} <small>{PLANS.allAccess.per}</small>
+              </span>
+            </span>
+            <span className="paywall-plan-what">
+              Every city, every road trip, every flight. Renews each year; cancel any time.
+            </span>
+          </label>
+        </fieldset>
 
-        <button className="paywall-buy" onClick={onBuy}>
-          Unlock everything
+        <p className="paywall-sum">
+          {city
+            ? `Visiting ${wins} cities or more this year? All-Access costs less.`
+            : "City Passes cover a city. This echo is on the road, so it is part of All-Access."}
+        </p>
+
+        <button className="paywall-buy" onClick={() => onBuy(chosen)}>
+          {chosen === "city"
+            ? `Get the ${PLANS.city.name} · ${PLANS.city.price}`
+            : `Start All-Access · ${PLANS.allAccess.price} ${PLANS.allAccess.per}`}
         </button>
 
         {/*
@@ -82,8 +154,8 @@ export function Paywall({ echo, heardCount, onBuy, onClose }: PaywallProps) {
 
           There is no account yet (`docs/03-selling.md`), so a purchase lives on this
           device and this browser. That is a real limitation and burying it would be the
-          kind of thing that turns a $6.99 customer into a refund and a review. It goes
-          under the button in plain words, before the money moves rather than after.
+          kind of thing that turns a customer into a refund and a review. It goes under the
+          button in plain words, before the money moves rather than after.
         */}
         <p className="paywall-small">
           Kept on this device for now. Accounts are coming, and your purchase will move

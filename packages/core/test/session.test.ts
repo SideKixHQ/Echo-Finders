@@ -883,3 +883,76 @@ describe("widening while stood still", () => {
     expect(events).toEqual([]);
   });
 });
+
+/**
+ * The play gate: where the paywall reaches every way an echo can start.
+ *
+ * A check on the app's play button alone let arrivals with hands-free on, and the queue
+ * moving on, play without ever being asked. These walk each of those paths.
+ */
+describe("the play gate", () => {
+  const voiced = (id: string, at: LatLng) =>
+    makeEcho({ id, at, triggerRadiusKm: 0.05, quality: 0.8, audioKey: `audio/${id}.mp3` });
+  const STATUE = voiced("statue", HERE);
+  const BULL = voiced("bull", north(HERE, 8));
+
+  const walk = (gate: (id: string) => boolean, echoes = [STATUE, BULL]) => {
+    const location = new FakeLocation();
+    const audio = fakeAudio();
+    const session = new WalkSession(echoes, ADULT, { location, audio }, { autoPlay: true });
+    session.setPlayGate((e) => gate(e.id));
+    const events = collect(session);
+    session.start();
+    [0, 0, 0, 0, 0].forEach((m, i) => location.emit(fix(north(HERE, m), START + i * 13_000)));
+    const of = (type: "started" | "refused") =>
+      events.flatMap((e) => (e.type === type ? [e.echo.id] : []));
+    return { audio, session, of };
+  };
+
+  it("says what started, so the free allowance can count it", () => {
+    const { of } = walk(() => true);
+    expect(of("started")).toEqual(["statue"]);
+  });
+
+  it("will not auto-play an arrival the gate refuses, and still captures it", () => {
+    const { audio, session, of } = walk(() => false);
+    expect(audio.played).toEqual([]);
+    expect(of("refused")).toContain("statue");
+    expect(session.tracker.stateOf("statue")).toBe("captured");
+  });
+
+  it("checks again when the queue moves on, not only when something was queued", () => {
+    let open = true;
+    const { audio, of } = walk((id) => open || id === "statue");
+    open = false; // the allowance ran out while the statue was talking
+    audio.finish();
+    expect(audio.played).toEqual(["audio/statue.mp3"]);
+    expect(of("refused")).toEqual(["bull"]);
+  });
+
+  it("gates a tap too", () => {
+    const { audio, session, of } = walk(() => false, [STATUE]);
+    session.play(STATUE);
+    expect(audio.played).toEqual([]);
+    expect(of("refused")).toContain("statue");
+  });
+
+  it("lets everything through when no gate is set", () => {
+    const { audio, session } = walk(() => true, [STATUE]);
+    session.setPlayGate(null);
+    session.play(STATUE);
+    expect(audio.played.length).toBeGreaterThan(0);
+  });
+});
+
+describe("hearing is recorded", () => {
+  it("marks a captured echo heard once it starts playing", () => {
+    const location = new FakeLocation();
+    const audio = fakeAudio();
+    const target = makeEcho({ id: "statue", at: HERE, triggerRadiusKm: 0.05, audioKey: "a.mp3" });
+    const session = new WalkSession([target], ADULT, { location, audio }, { autoPlay: true });
+    session.start();
+    for (let s = 0; s <= 15; s += 3) location.emit(fix(HERE, START + s * 1000));
+    expect(session.tracker.stateOf("statue")).toBe("heard");
+  });
+});

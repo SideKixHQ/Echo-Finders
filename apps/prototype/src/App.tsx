@@ -33,13 +33,15 @@ import { Ribbon } from "./Ribbon";
 import { EchoBar, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
-import { readEntitlement, unlock } from "./entitlement-store";
+import { buyAllAccess, buyCityPass, readEntitlement } from "./entitlement-store";
+import { addHeard, readHeard } from "./heard-store";
 import { City } from "./City";
 import type { CaptureEvent, Echo, EchoCategory } from "@echofinders/core";
 import {
   bearingDeg as bearingTo,
   checkEligibility,
   mayHearAnother,
+  cityAt,
   type Entitlement,
   distanceKm,
   effectiveRadiusKm,
@@ -296,7 +298,7 @@ export function App() {
    * applied to the pins, because a child should not be looking at a pin for something
    * they may not hear. The paywall is the opposite: somebody has to be able to SEE what
    * they would be buying, or there is no reason to buy it. A map that empties out after
-   * the tenth echo looks broken; a map full of stories with one asking politely for $6.99
+   * the tenth echo looks broken; a map full of stories with one asking politely for $9.99
    * is the product.
    *
    * So the entitlement never reaches `onRoute`. It is consulted here, at the moment a
@@ -431,30 +433,69 @@ export function App() {
    *
    * Not `kept`. Finding something and hearing it are different events and the free tier
    * only charges for the second: you can sync a whole city for nothing and every one of
-   * those stays yours. `tracker.stateOf` is the engine's own answer to "did this play",
-   * so the count and the gate cannot drift apart.
+   * those stays yours. Kept per device across journeys (`heard-store.ts`), and added to
+   * on the session's `started` event, which every way of playing goes through.
    */
-  const heardIds = useMemo(
-    () => state.captured.map((c) => c.echo.id).filter((id) => session.tracker.stateOf(id) === "heard"),
-    [state, session],
-  );
+  const [heardIds, setHeardIds] = useState<readonly string[]>(() => readHeard());
 
   /**
-   * Play it, or ask for the money. Every play in the app goes through here.
+   * May this echo start? The one answer, asked by the button below and by the engine.
    *
-   * One funnel rather than a check at each of the nine call sites, because nine checks is
-   * eight chances to forget one, and the one you forget is a free listen somebody was
-   * supposed to pay for.
+   * Read through a ref so the engine's gate always sees the latest purchase and count
+   * without the session being rebuilt (a rebuild is a new journey).
+   */
+  const mayStart = useCallback(
+    (echo: Echo) => {
+      const profile = { ...listenerFor(kids, optIns), heardEchoIds: [...heardIds] };
+      return mayHearAnother(entitlement, profile, echo.id, echo.point.at, Date.now());
+    },
+    [entitlement, kids, optIns, heardIds],
+  );
+  const mayStartRef = useRef(mayStart);
+  mayStartRef.current = mayStart;
+
+  useEffect(() => {
+    session.setPlayGate((echo) => mayStartRef.current(echo));
+    const off = session.subscribe((event) => {
+      if (event.type === "started") setHeardIds((ids) => addHeard(ids, event.echo.id));
+      // Refused on arrival or as the queue moved on: ask, rather than going quiet.
+      else if (event.type === "refused") setPaywallFor((open) => open ?? event.echo);
+    });
+    return () => {
+      off();
+      session.setPlayGate(null);
+    };
+  }, [session]);
+
+  /**
+   * The echo to play once a purchase has rendered.
+   *
+   * Not played inside the buy handler: the engine's gate reads the purchase through a
+   * ref that only updates on render, so playing straight away was refused by the old,
+   * unpaid answer and opened the paywall again on top of the purchase.
+   */
+  const [playAfterBuying, setPlayAfterBuying] = useState<Echo | null>(null);
+  useEffect(() => {
+    if (!playAfterBuying) return;
+    setPlayAfterBuying(null);
+    session.play(playAfterBuying);
+  }, [playAfterBuying, session]);
+
+  /**
+   * Play it, or ask for the money.
+   *
+   * The engine's gate refuses too, but asking here first opens the paywall without a
+   * round trip through the session, on the tap that caused it.
    */
   const playOrAsk = useCallback(
     (echo: Echo) => {
-      if (!mayHearAnother(entitlement, { ...listenerFor(kids, optIns), heardEchoIds: heardIds }, echo.id)) {
+      if (!mayStart(echo)) {
         setPaywallFor(echo);
         return;
       }
       session.play(echo);
     },
-    [entitlement, kids, optIns, session, heardIds],
+    [mayStart, session],
   );
 
   const storedPositions = useMemo(
@@ -1898,22 +1939,27 @@ export function App() {
         {paywallFor && (
           <Paywall
             echo={paywallFor}
-            heardCount={new Set(heardIds).size}
-            onBuy={() => {
+            city={cityAt(paywallFor.point.at)}
+            heardCount={heardIds.length}
+            onBuy={(plan) => {
               /*
                 Where Stripe Checkout goes.
 
-                Today it unlocks locally and immediately, which is the honest stub: there
-                is no Checkout session to open, no webhook to hear back from and no
-                account to attach the result to (`docs/03-selling.md`). The shape is the
+                Today it records the purchase locally and immediately, which is the honest
+                stub: there is no Checkout session to open, no webhook to hear back from and
+                no account to attach the result to (`docs/03-selling.md`). The shape is the
                 real one though — the app asks, something outside it decides, and the
                 answer comes back as an Entitlement — so the redirect slots in here
                 without any other screen changing.
               */
-              setEntitlement(unlock());
-              const echo = paywallFor;
+              const city = cityAt(paywallFor.point.at);
+              setEntitlement(
+                plan === "city" && city
+                  ? buyCityPass(entitlement, city.id)
+                  : buyAllAccess(entitlement),
+              );
               setPaywallFor(null);
-              session.play(echo);
+              setPlayAfterBuying(paywallFor);
             }}
             onClose={() => setPaywallFor(null)}
           />

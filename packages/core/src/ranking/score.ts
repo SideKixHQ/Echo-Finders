@@ -118,7 +118,10 @@ export function checkEligibility(echo: Echo, context: EligibilityContext): Eligi
    * thing to sell them, and a reason list that says "below-min-age, needs-unlock" in that
    * order reads correctly to anything that shows the first reason it finds.
    */
-  if (context.entitlement && !mayHearAnother(context.entitlement, profile, echo.id)) {
+  if (
+    context.entitlement &&
+    !mayHearAnother(context.entitlement, profile, echo.id, echo.point.at, playAtMs)
+  ) {
     reasons.push("needs-unlock");
   }
 
