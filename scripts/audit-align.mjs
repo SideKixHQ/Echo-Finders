@@ -53,6 +53,10 @@ const SCREENS = {
     { sel: '.rail', right: true },
     { sel: '.echobar-row', left: true, right: true },
     { sel: '.map-credit', left: true },
+    // The off-screen marker, when there is one: a whole pill, its right edge on the gutter.
+    { sel: '.map-edge-plate', right: true, optional: true },
+    // ...and sits the rail's own 10px above it, when it is pushed up off the rail.
+    { sel: '.map-edge-plate', gapAbove: '.rail', gap: 10, optional: true },
     { sel: '.nav', whole: true },
   ],
   synced: [
@@ -81,6 +85,8 @@ const SCREENS = {
     { sel: '.pop-close svg', middleOf: '.pop-kicker' },
   ],
   paywall: [
+    // Fitted to an iPhone in Safari without scrolling; an SE scrolls, by design.
+    { sel: '.paywall', fits: 'iphone' },
     { sel: '.paywall-count', centre: true },
     { sel: '.paywall h2', centre: true },
     { sel: '.paywall-plans', centre: true },
@@ -104,11 +110,21 @@ const browser = await chromium.launch(existsSync(SANDBOX_CHROMIUM) ? { executabl
 
 /** Measure one screen against its promises. */
 async function measure(p, size, screen) {
-  const rows = await p.evaluate(([checks, width, height]) => checks.map((c) => {
+  const rows = await p.evaluate(([checks, width, height, size]) => checks.map((c) => {
     const el = [...document.querySelectorAll(c.sel)].find((e) => e.getClientRects().length);
-    if (!el) return { ...c, missing: true };
+    if (!el) return c.optional ? { ...c, absent: true } : { ...c, missing: true };
     const r = el.getBoundingClientRect();
     const cs = getComputedStyle(el);
+    if (c.gapAbove) {
+      const below = document.querySelector(c.gapAbove)?.getBoundingClientRect();
+      if (!below) return { ...c, absent: true };
+      // Only judged when the marker is above the rail and near it; elsewhere on the edge it
+      // is simply pointing at its echo.
+      const gap = below.top - r.bottom;
+      if (gap < 0 || gap > 30 || r.right < below.left) return { ...c, absent: true };
+      const svg = el.ownerSVGElement?.getBoundingClientRect();
+      return { ...c, gapNow: gap, info: `rail ${below.top.toFixed(1)}-${below.bottom.toFixed(1)} (h ${below.height.toFixed(1)}), map svg ${svg?.top.toFixed(1)}-${svg?.bottom.toFixed(1)}, nav top ${document.querySelector('.nav')?.getBoundingClientRect().top.toFixed(1)}` };
+    }
     if (c.middleOf) {
       const other = document.querySelector(c.middleOf)?.getBoundingClientRect();
       if (!other) return { ...c, missing: true };
@@ -124,17 +140,19 @@ async function measure(p, size, screen) {
       return { ...c, above: first.top - (r.top + parseFloat(cs.paddingTop)), below: r.bottom - parseFloat(cs.paddingBottom) - last.bottom };
     }
     // A full-width row lines up by where its content starts, not by its own box.
-    if (c.fits && el.scrollHeight > el.clientHeight + 1) {
+    if (c.fits && (c.fits === true || size.startsWith(c.fits)) && el.scrollHeight > el.clientHeight + 1) {
       return { ...c, x: r.left, rx: width - r.right, top: r.top, under: height - r.bottom, off: 0, hidden: el.scrollHeight - el.clientHeight };
     }
     const padL = c.inner ? parseFloat(cs.paddingLeft) : 0;
     const padR = c.inner ? parseFloat(cs.paddingRight) : 0;
     return { ...c, x: r.left + padL, rx: width - r.right + padR, top: r.top, under: height - r.bottom,
       off: r.left + r.width / 2 - width / 2 };
-  }), [SCREENS[screen], size.width, size.height]);
+  }), [SCREENS[screen], size.width, size.height, size.name]);
   const problems = [];
   for (const r of rows) {
+    if (r.absent) continue;
     if (r.missing) { problems.push(`${r.sel}: not on screen`); continue; }
+    if (r.gapAbove && Math.abs(r.gapNow - r.gap) > TOLERANCE) problems.push(`${r.sel}: ${r.gapNow.toFixed(1)}px above ${r.gapAbove}, should be ${r.gap}${process.env.DEBUG ? ` (${r.info})` : ''}`);
     if (r.middleOf && Math.abs(r.dy) > TOLERANCE) problems.push(`${r.sel}: ${r.dy.toFixed(1)}px off the centre line of ${r.middleOf}${process.env.DEBUG ? ` (${r.dbg})` : ''}`);
     if (r.hidden) problems.push(`${r.sel}: ${r.hidden}px of its content cut off inside it`);
     if (r.stack && Math.abs(r.above - r.below) > TOLERANCE * 2) problems.push(`${r.sel}: ${r.above.toFixed(0)}px above the content, ${r.below.toFixed(0)}px below`);
