@@ -12,6 +12,8 @@ decision that settled them.
 - [ ] **Who reviews and approves content?** A named editor, and a CODEOWNERS team that exists.
 - [ ] **Consumers first, or airlines?** The airline cycle is "measured in quarters" (ADR-0007).
 - [ ] Is a **native iOS shell** acceptable for walking if screen-lock defeats the web app?
+- [ ] **Approve pricing.** Proposed: City Pass $9.99 once, All-Access $34.99 a year, web checkout
+  only (`03-selling.md`). Shown on the prototype paywall; nothing is charged until Stripe lands.
 
 ## Tier 1: blocks a real public launch
 
@@ -27,7 +29,7 @@ decision that settled them.
 
 | # | Blocker | Where |
 |---|---|---|
-| 6 | **No backend.** No accounts, payments (the $6.99 Stripe unlock), analytics, error reporting (Sentry listed, not wired), database. | `03-selling.md:69-78`, `01-services.md:86-97` |
+| 6 | **No backend.** No accounts, payments (Stripe for the City Pass and All-Access), analytics, error reporting (Sentry listed, not wired), database. | `03-selling.md:69-78`, `01-services.md:86-97` |
 | 7 | **Map tiles.** MapTiler vs Protomaps undecided ("decide it with a spike"). Per-load tiles ~ $250/mo at 100k users, against ~$75/mo for everything else. | `01-services.md:101-107`, `02-costs.md:170-174` |
 | 8 | **Airlines.** Seatback browsers (Panasonic, Thales) untested; aircraft position feed assumed, not secured; indemnification open. Flight corridor query is 944 ms at 50k echoes (urgent around 5,000). | ADR-0001/0002/0012, `01-services.md:58-73` |
 | 9 | **The numbers disagree.** Contribution per customer is $15.25 or $5.85 (break-even 17 or 43 customers/month; plan on 43). Infrastructure is $250/mo in one doc, $75 in another. Several prices are from memory. | `03-selling.md:25-36`, `02-costs.md:185-187` |

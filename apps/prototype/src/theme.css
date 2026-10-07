@@ -3532,11 +3532,13 @@ body {
 .paywall {
   position: absolute; inset: 0; z-index: 60;
   background: radial-gradient(120% 80% at 50% 12%, #10142f 0%, #090c1e 52%, #05060f 100%);
-  display: grid; place-items: center; padding: 24px;
+  /* Flex and an auto margin rather than grid centring, so a short screen scrolls to the
+     top of the body instead of clipping it. Two plans made this taller than one price. */
+  display: flex; flex-direction: column; padding: 24px; overflow-y: auto;
   animation: paywall-in 0.28s ease-out both;
 }
 @keyframes paywall-in { from { opacity: 0; } to { opacity: 1; } }
-.paywall-body { width: 100%; max-width: 330px; text-align: center; }
+.paywall-body { width: 100%; max-width: 340px; margin: auto; text-align: center; }
 .paywall-count {
   margin: 0 0 18px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--muted);
@@ -3547,16 +3549,36 @@ body {
 }
 .paywall-next strong { color: var(--white); font-weight: 500; }
 .paywall-where { color: var(--muted); }
-.paywall-offer {
-  margin: 26px 0 18px; padding: 18px 16px; border-radius: 16px;
-  border: 1px solid rgba(255, 158, 18, 0.32); background: rgba(255, 158, 18, 0.05);
+.paywall-plans {
+  margin: 24px 0 0; padding: 0; border: 0; min-width: 0;
+  display: grid; gap: 10px; text-align: left;
 }
+.paywall-plan {
+  position: relative; display: block; cursor: pointer;
+  padding: 14px 16px 14px 46px; border-radius: 16px;
+  border: 1px solid var(--line); background: rgba(255, 255, 255, 0.03);
+}
+/* Chosen: the ember edge, because what is behind the wall is echoes. */
+.paywall-plan.on {
+  border-color: rgba(255, 158, 18, 0.6); background: rgba(255, 158, 18, 0.06);
+}
+.paywall-plan input {
+  position: absolute; left: 16px; top: 17px; margin: 0;
+  width: 18px; height: 18px; accent-color: var(--ember-core);
+}
+.paywall-plan:has(input:focus-visible) { outline: 2px solid var(--cool); outline-offset: 2px; }
+.paywall-plan-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.paywall-plan-name { font-size: 15px; font-weight: 600; color: var(--white); }
 /* Ember, because what is behind the wall is echoes and ember is what an echo is. */
-.paywall-price {
-  margin: 0; font-size: 27px; font-weight: 600; color: var(--ember-core);
-  letter-spacing: -0.3px;
+.paywall-plan-price {
+  font-size: 18px; font-weight: 600; color: var(--ember-core); white-space: nowrap;
 }
-.paywall-what { margin: 8px 0 0; font-size: 12.5px; line-height: 1.5; color: var(--cool); }
+.paywall-plan-price small { font-size: 12px; font-weight: 500; color: var(--cool); }
+.paywall-plan-what {
+  display: block; margin-top: 6px; font-size: 12.5px; line-height: 1.5; color: var(--cool);
+}
+/* The sum that decides between them, said as a fact rather than a "best value" badge. */
+.paywall-sum { text-wrap: balance; margin: 12px 0 16px; font-size: 12.5px; line-height: 1.5; color: var(--muted); }
 .paywall-buy {
   width: 100%; min-height: 52px; border: 0; border-radius: 14px; cursor: pointer;
   font: inherit; font-size: 15.5px; font-weight: 500;

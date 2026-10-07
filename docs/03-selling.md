@@ -8,32 +8,59 @@ got lost: it survives here rather than in a chat log.
 
 ## The model
 
+**Proposed 7 Oct 2026, waiting for James's sign-off.** The evidence is in
+`11-pricing-research.md`. The paywall in the prototype shows these two offers; nothing
+charges money yet.
+
 | | |
 |---|---|
-| Free | 10 echoes |
-| Unlock everything | **$6.99**, one payment |
-| First milestone | 100 paying customers |
-| Conversion assumed | ~5% of active users |
+| Free | 10 echoes (proposed: 10 per city; the app counts 10 in total for now) |
+| City Pass | **$9.99 once.** One city, for good, including echoes added there later |
+| All-Access | **$34.99 a year.** Every city, road trip and flight. Renews; cancel any time |
+| Checkout | Web only (Stripe, with Apple Pay and Google Pay). No App Store purchases |
+| Floor | Nothing sold under $4.99, and no lifetime plan at launch |
 
-The shape is right, and it is the right shape for this product specifically: an echo costs
-an hour to research, verify and write, and then serves thousands of people for almost
-nothing. Produce once, sell many times. Ten free is enough to be a real walk rather than a
-demo, which is what makes the payment a decision about more rather than a toll gate.
+The $6.99 lifetime unlock is retired. It priced under every comparable product (single
+audio tours sell at $8–15; Autio, the closest analogue, at $35.99 a year) and earned
+nothing when the second city launched. Anyone who bought it keeps everything.
 
-## One number to resolve before planning against it
+An echo outside every city (a parkway, a flight path) has no City Pass; only All-Access
+opens it. Cities are a centre and a radius in `packages/core/src/entitlement/entitlement.ts`.
 
-The plan carries **$15.25 of contribution per paying customer** and also "100 purchasers →
-$575–600 from a $6.99 pack", which is ~$5.85 each and consistent with Apple's 15%
-small-business rate. Both cannot be true of a single $6.99 purchase.
+The shape is still the right one for this product: an echo costs an hour to research,
+verify and write, and then serves thousands of people for almost nothing. Produce once,
+sell many times. Ten free is enough to be a real walk rather than a demo, which is what
+makes the payment a decision about more rather than a toll gate.
 
-It matters more than it looks. At $250/month of infrastructure:
+## What 80% margin takes
 
-    $250 / $15.25  ≈ 17 customers a month
-    $250 / $5.85   ≈ 43 customers a month
+80% margin means fees, running costs and producing the stories stay at or under 20% of
+revenue.
 
-Two and a half times harder. $15.25 only holds if the average buyer takes roughly three
-packs, and there is no evidence yet that anyone takes one. Plan against $5.85 until a real
-purchase says otherwise.
+- **Fees.** Stripe is about 2.9% + $0.30: about 6% of $9.99 and 4% of $34.99, so a City
+  Pass keeps about $9.40 and All-Access about $33.65. On $4.99 the fee is about 9%, on
+  $2.99 about 13%: hence the floor. Apple's 30% breaks the target outright and its 15%
+  leaves 5% for everything else, hence web only.
+- **Running.** About $0.001 per user per month. Effectively nothing.
+- **Content is the cost.** About $8–18 per echo today, almost all of it human review.
+- **Per city.** A 300-echo city costs about $2.5k–5.3k to produce and needs about
+  $18k–38k of sales to sit at 80%: roughly 1,800–3,800 City Passes, or the All-Access
+  equivalent.
+- **The whole library.** 5,000 echoes plus a year of running is about $42k–91k, which
+  needs about $306k–650k of sales: roughly 19,000–41,000 buyers.
+
+80% is a scale outcome, not a day-one number, and it improves every year because the
+library is paid for once. What gets there sooner: cutting review from about 20 minutes an
+echo to 7 (the `claims` tooling), which halves every figure above; and the two below.
+
+## Tourism boards and airlines
+
+- **Tourism boards** are the best-documented buyer: commissioned tours sell for
+  $4k–10k each. Proposed: about **$7,500 for a 25-echo city pack**, which costs about
+  $200–450 to produce and pays for a city's content before any listener buys.
+- **Airlines** reuse the library already built, so they are nearly pure margin, but the
+  sales cycle is measured in quarters and no comparable price is public. Count them as
+  zero until a contract is signed.
 
 ## How they would buy, and why that is not a small question
 
@@ -68,8 +95,8 @@ usually makes this hard.
 
 | | |
 |---|---|
-| Pricing model | decided, above. Not implemented anywhere |
-| Paywall / free-tier split | none |
+| Pricing model | proposed, above. The prototype paywall offers both plans; nothing is charged |
+| Paywall / free-tier split | built in the prototype: 10 free, then City Pass or All-Access |
 | Accounts or identity | none |
 | Entitlements | none |
 | Stripe | not integrated |

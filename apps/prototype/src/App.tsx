@@ -33,13 +33,14 @@ import { Ribbon } from "./Ribbon";
 import { EchoBar, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
-import { readEntitlement, unlock } from "./entitlement-store";
+import { buyAllAccess, buyCityPass, readEntitlement } from "./entitlement-store";
 import { City } from "./City";
 import type { CaptureEvent, Echo, EchoCategory } from "@echofinders/core";
 import {
   bearingDeg as bearingTo,
   checkEligibility,
   mayHearAnother,
+  cityAt,
   type Entitlement,
   distanceKm,
   effectiveRadiusKm,
@@ -296,7 +297,7 @@ export function App() {
    * applied to the pins, because a child should not be looking at a pin for something
    * they may not hear. The paywall is the opposite: somebody has to be able to SEE what
    * they would be buying, or there is no reason to buy it. A map that empties out after
-   * the tenth echo looks broken; a map full of stories with one asking politely for $6.99
+   * the tenth echo looks broken; a map full of stories with one asking politely for $9.99
    * is the product.
    *
    * So the entitlement never reaches `onRoute`. It is consulted here, at the moment a
@@ -448,7 +449,8 @@ export function App() {
    */
   const playOrAsk = useCallback(
     (echo: Echo) => {
-      if (!mayHearAnother(entitlement, { ...listenerFor(kids, optIns), heardEchoIds: heardIds }, echo.id)) {
+      const profile = { ...listenerFor(kids, optIns), heardEchoIds: heardIds };
+      if (!mayHearAnother(entitlement, profile, echo.id, echo.point.at, Date.now())) {
         setPaywallFor(echo);
         return;
       }
@@ -1898,19 +1900,25 @@ export function App() {
         {paywallFor && (
           <Paywall
             echo={paywallFor}
+            city={cityAt(paywallFor.point.at)}
             heardCount={new Set(heardIds).size}
-            onBuy={() => {
+            onBuy={(plan) => {
               /*
                 Where Stripe Checkout goes.
 
-                Today it unlocks locally and immediately, which is the honest stub: there
-                is no Checkout session to open, no webhook to hear back from and no
-                account to attach the result to (`docs/03-selling.md`). The shape is the
+                Today it records the purchase locally and immediately, which is the honest
+                stub: there is no Checkout session to open, no webhook to hear back from and
+                no account to attach the result to (`docs/03-selling.md`). The shape is the
                 real one though — the app asks, something outside it decides, and the
                 answer comes back as an Entitlement — so the redirect slots in here
                 without any other screen changing.
               */
-              setEntitlement(unlock());
+              const city = cityAt(paywallFor.point.at);
+              setEntitlement(
+                plan === "city" && city
+                  ? buyCityPass(entitlement, city.id)
+                  : buyAllAccess(entitlement),
+              );
               const echo = paywallFor;
               setPaywallFor(null);
               session.play(echo);
