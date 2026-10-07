@@ -146,6 +146,12 @@
    * moves the guidance bar and the player with it.
    */
   --nav-h: 74px;
+  /*
+   * The one side margin. The design canvas uses 16; the build had drifted to 10, 12, 14
+   * and 18 on different screens, and on a phone four margins read as nothing lining up.
+   * Everything edge-anchored uses this, and `npm run audit:align` measures it.
+   */
+  --gutter: 16px;
 }
 
 /**
@@ -654,7 +660,7 @@ body {
 
 /* The stack above the map: ribbon, then filters. */
 .mapbar {
-  position: absolute; top: 44px; left: 12px; right: 12px; z-index: 18;
+  position: absolute; top: 44px; left: var(--gutter); right: var(--gutter); z-index: 18;
   display: flex; flex-direction: column; gap: 7px;
 }
 
@@ -1875,7 +1881,7 @@ body {
    the taller of the two. */
 .screen { --mapbar-h: 64px; }
 .rail {
-  position: absolute; right: 14px; z-index: 26;
+  position: absolute; right: var(--gutter); z-index: 26;
   /*
    * Bottom anchored, AND CLAMPED INTO THE MAP BAND.
    *
@@ -2245,7 +2251,7 @@ body {
    because it is the one thing on this screen you are meant to read rather than
    glance at. */
 .pop {
-  position: absolute; left: 14px; right: 14px; z-index: 26;
+  position: absolute; left: var(--gutter); right: var(--gutter); z-index: 26;
   bottom: calc(var(--nav-h) + var(--step-h, 0px) + 10px);
   /*
      Bounded, and it scrolls. The card is anchored at the bottom and grows upwards, so
@@ -2257,9 +2263,9 @@ body {
      The ceiling leaves the map bar and a strip of map showing, because the card is about
      a pin and covering the pin entirely would make it a modal rather than a callout.
   */
-  max-height: calc(100% - var(--nav-h) - var(--step-h, 0px) - 150px);
+  max-height: calc(100% - var(--nav-h) - var(--step-h, 0px) - 120px);
   overflow-y: auto; overscroll-behavior: contain;
-  padding: 13px 14px 12px; border-radius: 16px;
+  padding: 13px 16px 12px; border-radius: 16px;
   background: rgba(var(--rgb-panel), 0.96); border: 1px solid var(--line-2);
   box-shadow: 0 12px 34px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(14px);
@@ -2299,6 +2305,8 @@ body {
 
 /* Room for the close button, so a long title does not run under it. */
 .pop h3 {
+  /* Balanced, so a two-line title never leaves one word alone ("fort"). */
+  text-wrap: balance;
   margin: 5px 34px 0 0; font-size: 14px; font-weight: 500;
   line-height: 1.3; letter-spacing: -0.01em; color: var(--white);
 }
@@ -2833,7 +2841,9 @@ body {
   background:
     radial-gradient(86% 56% at 50% 40%, #16183a 0%, #0a0c1e 52%, #06070d 100%);
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  padding: 0 24px calc(24px + env(safe-area-inset-bottom));
+  /* The same space above as below, so the stack is centred top to bottom: it had 24px
+     under it and none over it, which sat the whole card 12px high. */
+  padding: calc(24px + env(safe-area-inset-top)) 24px calc(24px + env(safe-area-inset-bottom));
   text-align: center; animation: synced-in 0.3s ease-out;
 }
 @keyframes synced-in { from { opacity: 0; } to { opacity: 1; } }
@@ -3254,7 +3264,7 @@ body {
 }
 
 .hear-back {
-  position: absolute; left: 14px; top: calc(48px + env(safe-area-inset-top));
+  position: absolute; left: var(--gutter); top: calc(48px + env(safe-area-inset-top));
   width: 44px; height: 44px; border-radius: 50%; cursor: pointer;
   display: grid; place-items: center; color: var(--white);
   background: rgba(11, 15, 43, 0.5); border: 1px solid rgba(255, 255, 255, 0.16);
@@ -3263,7 +3273,7 @@ body {
 /* Done with it, top right, mirroring the way out top left. Absolute, so it costs the
    layout nothing on a screen that already fits an iPhone SE with no slack. */
 .hear-stop {
-  position: absolute; right: 14px; top: calc(48px + env(safe-area-inset-top));
+  position: absolute; right: var(--gutter); top: calc(48px + env(safe-area-inset-top));
   width: 44px; height: 44px; border-radius: 50%; cursor: pointer; z-index: 3;
   display: grid; place-items: center; color: var(--muted);
   background: rgba(11, 15, 43, 0.5); border: 1px solid rgba(255, 255, 255, 0.16);
@@ -3282,7 +3292,7 @@ body {
   stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
 }
 
-.hear-say { position: relative; margin-top: calc(var(--plate-h) + 12px); padding: 0 18px; flex: none; }
+.hear-say { position: relative; margin-top: calc(var(--plate-h) + 12px); padding: 0 var(--gutter); flex: none; }
 .hear-kicker {
   display: flex; align-items: center; gap: 10px; margin: 0;
   font-size: 11px; font-weight: 500; letter-spacing: 0.12em;
@@ -3342,7 +3352,7 @@ body {
 }
 .hear-head-dot { fill: var(--ember-core); filter: drop-shadow(0 0 7px var(--ember)); }
 .hear-clock {
-  display: flex; justify-content: space-between; margin: 2px 0 0; padding: 0 18px;
+  display: flex; justify-content: space-between; margin: 2px 0 0; padding: 0 var(--gutter);
   font-size: 12px; color: var(--muted);
 }
 
@@ -3352,7 +3362,7 @@ body {
  */
 .hear-set {
   flex: none; display: flex; justify-content: center; gap: 8px;
-  padding: 6px 18px 0;
+  padding: 6px var(--gutter) 0;
 }
 .hear-chip {
   position: relative; display: inline-flex; align-items: center; gap: 6px;
@@ -3397,7 +3407,7 @@ body {
  */
 .hear-transport {
   flex: none; display: flex; align-items: center; justify-content: space-between;
-  gap: 4px; margin-top: 6px; padding: 0 16px;
+  gap: 4px; margin-top: 6px; padding: 0 var(--gutter);
 }
 .hear-transport button {
   width: 48px; height: 48px; border-radius: 50%; border: 0; cursor: pointer;
@@ -3466,7 +3476,7 @@ body {
  */
 .hear-acts {
   flex: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 2px; padding: 12px 10px 4px;
+  gap: 2px; padding: 12px var(--gutter) 4px;
 }
 .hear-acts > button, .hear-acts > label {
   position: relative; min-width: 0; min-height: 52px; padding: 5px 2px;
@@ -3733,7 +3743,21 @@ body {
   position: relative; margin: 10px 0 0; border-radius: 14px; overflow: hidden;
   border: 1px solid var(--line-2); line-height: 0;
 }
-.pop-plate img { width: 100%; height: 132px; object-fit: cover; display: block; }
+/* Shorter on a shorter screen, so the whole card fits without scrolling in Safari, where
+   the bars leave about 664px: at a fixed 132 "Save for later" was cut in half. */
+.pop-plate img { width: 100%; height: clamp(84px, calc(100dvh - 560px), 132px); object-fit: cover; display: block; }
+/*
+ * An iPhone SE in Safari leaves 553px, and the card was 51px taller than its room, with
+ * "Save for later" cut off. Measured, not guessed (`audit:align`). Below 600px the photo
+ * becomes a strip and the one-line teaser goes: the title, the place and both buttons are
+ * what the card is for.
+ */
+@media (max-height: 600px) {
+  .pop-plate img { height: 56px; }
+  .pop-teaser { display: none; }
+  /* One label in a 56px strip: the caption and "Then & now" overlapped at this height. */
+  .pop-plate span:not(.pop-plate-cam) { display: none; }
+}
 .pop-plate span {
   position: absolute; left: 9px; bottom: 8px; line-height: 1.2;
   padding: 4px 8px; border-radius: 6px; font-size: 11px; letter-spacing: 0.1em;
@@ -3947,7 +3971,7 @@ body {
 .echobar {
   position: absolute; left: 0; right: 0; z-index: 24;
   bottom: calc(var(--nav-h) + 8px);
-  padding: 0 12px;
+  padding: 0 var(--gutter);
 }
 /*
  * ONE PILL, arrows inside it.
@@ -4241,7 +4265,16 @@ body {
  * They cleared WCAG's 24x24 floor but not Apple's 44pt, and the card's close is the one
  * control every card has. Grown without moving what they draw: the box gets bigger, the
  * glyph stays put. */
-.pop-close { width: 44px; height: 44px; margin: -11px -11px 0 2px; background: none; }
+/*
+ * The ✕ is the kicker line's control, so it sits on that line's centre. Measured: the box
+ * is sticky, so it starts at the card's padding edge whatever its margin says, and the
+ * kicker's centre is 13px below that. The glyph is 15px, so it goes in 5.5px from the
+ * top. Centred in its 44px box it sat 8-9px low. `audit:align` holds the two together.
+ */
+.pop-close {
+  width: 44px; height: 44px; margin: 0 -11px 0 2px; padding: 5.5px 0 0;
+  place-items: start center; background: none;
+}
 .onb-back, .onb-skip { min-width: 44px; min-height: 44px; }
 
 /*

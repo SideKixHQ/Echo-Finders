@@ -1323,7 +1323,7 @@ export function RouteMap({
           drawn straight through it, one unreadable line over three buttons. */}
       <text
         className="map-credit"
-        x={10}
+        x={16}
         y={box.h - insetFor(barH, reservedBottom).bottom - 6}
         textAnchor="start"
       >

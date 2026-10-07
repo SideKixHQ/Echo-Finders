@@ -14,3 +14,4 @@ coverage/
 /tmp/
 apps/*/dist/
 content/audio/
+align-shots/

@@ -21,11 +21,12 @@
     "echo:render": "node scripts/render-echo.mjs",
     "audit:controls": "node scripts/audit-controls.mjs",
     "audit:contrast": "python3 scripts/check-contrast.py",
-    "gate": "npm run typecheck && npm test && npm run content:validate && npm run build --workspace @echofinders/core && npm run library:build && npm run audit:contrast && npm run audit:frame && npm run audit:controls && npm run audit:spec && npm run audit:layout && npm run audit:paywall",
+    "gate": "npm run typecheck && npm test && npm run content:validate && npm run build --workspace @echofinders/core && npm run library:build && npm run audit:contrast && npm run audit:frame && npm run audit:controls && npm run audit:spec && npm run audit:layout && npm run audit:paywall && npm run audit:align",
     "audit:spec": "node scripts/check-spec.mjs",
     "audit:frame": "node scripts/check-frame.mjs",
     "audit:layout": "node scripts/audit-layout.mjs",
-    "audit:paywall": "node scripts/audit-paywall.mjs"
+    "audit:paywall": "node scripts/audit-paywall.mjs",
+    "audit:align": "node scripts/audit-align.mjs"
   },
   "devDependencies": {
     "playwright": "1.56.1",
