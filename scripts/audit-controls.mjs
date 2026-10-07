@@ -411,9 +411,9 @@ else { await p.locator('.pop-close').click(); await p.waitForTimeout(400);
        await p.locator('.echobar-orb').click(); await p.waitForTimeout(2200); }
 await capture('listening');
 focus.push(...await focusSweep('listening'));
-await p.getByRole('button', { name: /Read it/ }).click().catch(()=>{}); await p.waitForTimeout(500);
+await p.getByRole('button', { name: /^Read$/ }).click().catch(()=>{}); await p.waitForTimeout(500);
 await capture('listening/reading');
-await p.getByRole('button', { name: /Hide it/ }).click().catch(()=>{}); await p.waitForTimeout(400);
+await p.getByRole('button', { name: /^Hide$/ }).click().catch(()=>{}); await p.waitForTimeout(400);
 await p.getByLabel('Back to the map').click().catch(()=>{}); await p.waitForTimeout(600);
 await capture('map/playing');
 focus.push(...await focusSweep('map/playing'));

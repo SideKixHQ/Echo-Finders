@@ -268,7 +268,7 @@ export function App() {
   const [listening, setListening] = useState(false);
   // The listener's own setting drives it, not a constant. `handsFree` is off by default
   // (PRIVACY_DEFAULTS), so an echo collects itself on arrival and then waits to be played.
-  const { state, session, walk, store } = useJourney(roaming ? null : route, LIBRARY, {
+  const { state, session, walk, store, speech } = useJourney(roaming ? null : route, LIBRARY, {
     sound,
     narrate,
     autoPlay,
@@ -677,9 +677,23 @@ export function App() {
       const d = ((simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS) / rate;
       startedRef.current = { id: nowPlaying.id, at: Date.now() - clamped * d * 1000 };
       setPlayhead(clamped);
+      // And the voice with it: a clock that moves on its own is a scrubber that lies.
+      speech.seek(clamped);
     },
-    [nowPlaying, simple, rate, setPlayhead],
+    [nowPlaying, simple, rate, setPlayhead, speech],
   );
+
+  /*
+   * A new speed or narrator applies now, from where the listener is, rather than on the
+   * next echo. Speech cannot change pace mid-sentence, so it says the rest again.
+   */
+  const voiceSettings = useRef({ rate, voice });
+  useEffect(() => {
+    const was = voiceSettings.current;
+    voiceSettings.current = { rate, voice };
+    if (was.rate === rate && was.voice === voice) return;
+    speech.seek(progressRef.current);
+  }, [rate, voice, speech]);
 
   const pageVisible = usePageVisible();
   /*

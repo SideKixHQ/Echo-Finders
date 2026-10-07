@@ -3372,11 +3372,6 @@ body {
  * whole chip at zero opacity, so the chip is the target and the platform still supplies
  * the picker, the keyboard handling and the screen reader behaviour.
  */
-.hear-voice { position: relative; max-width: 42%; }
-.hear-voice select {
-  position: absolute; inset: 0; width: 100%; height: 100%;
-  opacity: 0; cursor: pointer; font: inherit;
-}
 /* Dimmed rather than hidden: the gap is in the library, not in the app, and a control
    that vanishes on some echoes is a control nobody trusts. `aria-label` says why. */
 .hear-chip:disabled { opacity: 0.4; cursor: default; }
@@ -3412,6 +3407,14 @@ body {
 /* The wedge in the skip glyphs is a solid, the bar beside it is a stroke. One icon, two
    treatments, because an outlined triangle at 23px closes up into a grey blob. */
 .hear-transport button svg .hear-solid { fill: currentColor; stroke: none; }
+/* "15" inside the skip arrows, so they read as fifteen seconds and not as undo and redo. */
+.hear-transport button svg .hear-num {
+  fill: currentColor; stroke: none; font-size: 7.5px; font-weight: 600; text-anchor: middle;
+  font-family: inherit;
+}
+.hear-transport button:nth-child(2) svg, .hear-transport button:nth-child(4) svg {
+  width: 28px; height: 28px; stroke-width: 1.5;
+}
 /* Restart and next are secondary to the three in the middle, and saying so with weight
    costs nothing and stops a five-button row reading as five equal choices. */
 .hear-transport button:first-child, .hear-transport button:last-child { color: var(--muted); }
@@ -3450,23 +3453,42 @@ body {
  */
 .hear-transport .hear-go svg { stroke: none; }
 
-.hear-acts { flex: none; display: flex; gap: 8px; padding: 12px 18px 0; }
-/* Three across now rather than two, so they have to be able to shrink: `flex: 1 1 0`
-   with `min-width: 0`, not `flex-grow` alone, which keeps each button at least as wide
-   as its own label and pushes the last one off a 375px screen. */
-.hear-acts button {
-  flex: 1 1 0; min-width: 0; white-space: nowrap;
-  display: flex; align-items: center; justify-content: center; gap: 6px;
-  min-height: 44px; border-radius: 13px; cursor: pointer; font: inherit; font-size: 14px;
-  color: var(--text); background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+/*
+ * Five tools under the transport: speed, voice, read, keep, share.
+ *
+ * Icon over a word and no boxes. This was a row of floating chips above the transport
+ * and three boxed buttons below it, which read as two unrelated control panels and spent
+ * a whole row on two settings. One row of equal columns, each a 52px-tall target.
+ */
+.hear-acts {
+  flex: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 2px; padding: 6px 10px 0;
 }
-.hear-acts button svg {
-  width: 15px; height: 15px; fill: none; stroke: currentColor;
-  stroke-width: 1.8; stroke-linejoin: round;
+.hear-acts > button, .hear-acts > label {
+  position: relative; min-width: 0; min-height: 52px; padding: 5px 2px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;
+  border: 0; border-radius: 14px; background: none; cursor: pointer;
+  font: inherit; font-size: 12px; line-height: 1; white-space: nowrap; color: var(--cool);
 }
-.hear-acts button.on { color: var(--cool); border-color: rgba(0, 255, 231, 0.4); }
+.hear-acts > button:hover, .hear-acts > label:hover { background: rgba(255, 255, 255, 0.05); }
+.hear-acts svg {
+  width: 21px; height: 21px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.hear-acts button.on { color: var(--aqua); }
 .hear-acts button.on svg { fill: currentColor; }
+/* The speed reads as a number, so it gets the mono figures the clock uses. */
+.hear-speed { font-variant-numeric: tabular-nums; }
+/*
+ * The voice is a label wrapping a native select, stretched invisibly over it, so the
+ * platform supplies the picker, the keyboard and the screen reader behaviour.
+ */
+.hear-voice select {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  opacity: 0; cursor: pointer; font: inherit;
+}
+.hear-voice:has(select:focus-visible) { outline: 2px solid var(--aqua); outline-offset: -2px; }
+
 /* Reading along, over the plate and the ribbon. It stops above the transport, because
    somebody reading along is exactly the person most likely to want to pause or jump. */
 .hear-read {

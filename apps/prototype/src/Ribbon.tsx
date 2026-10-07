@@ -378,8 +378,14 @@ export function Ribbon({
         `ratings.ts` keeps it private and two-answer, and it is never shown back as a
         score, so this is a question rather than a review.
       */}
-      {at >= 0.92 || stopped ? (
-        <div className="hear-set hear-ask">
+      {/*
+        The question, once the story has essentially landed. Speed and narrator used to
+        hold this row the rest of the time, floating on their own above the transport;
+        they are in the row under it now with the other things you do to a story, and
+        this appears only when there is something to ask.
+      */}
+      {(at >= 0.92 || stopped) && (
+  <div className="hear-set hear-ask">
           <span>Worth stopping for?</span>
           <button
             className={rating === "up" ? "hear-chip on" : "hear-chip"}
@@ -402,55 +408,6 @@ export function Ribbon({
             </svg>
           </button>
         </div>
-      ) : (
-      <div className="hear-set">
-        <button
-          className="hear-chip"
-          onClick={() => onRate(RATES[(RATES.indexOf(rate as (typeof RATES)[number]) + 1) % RATES.length] ?? 1)}
-          aria-label={`Speed, ${rate} times. Tap to change.`}
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 20a8 8 0 1 1 8-8" />
-            <path d="M12 12l4.5-3.4" />
-          </svg>
-          {/*
-            One decimal only where it earns one. "1.0×" and "2.0×" are two characters of
-            precision nobody asked for, and the row is narrow.
-          */}
-          {Number.isInteger(rate) ? rate : rate.toFixed(1)}×
-        </button>
-        {/* "Plain words" (the plain-language cut) is held for phase 2: the switch and the
-            kids-mode behaviour behind it still exist, only this chip is gone. */}
-        {/*
-          The narrator, wrapping the native select rather than replacing it.
-
-          A voice is the thing somebody listens to for forty minutes and it was the one
-          setting stranded in the sheet. The native control is the one that works with a
-          screen reader, a keyboard and a thumb without any help from us; the chip is
-          just the skin, and the select sits invisibly over it so the whole chip is the
-          target.
-        */}
-        <label className="hear-chip hear-voice">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3zM5 11a7 7 0 0 0 14 0M12 18v3" />
-          </svg>
-          {short(VOICE_LABEL[voice ?? echo.voice ?? ""] ?? "Narrator")}
-          <select
-            aria-label="Narrator"
-            value={voice ?? ""}
-            onChange={(e) => onVoice(e.target.value || null)}
-          >
-            <option value="">
-              {VOICE_LABEL[echo.voice ?? ""] ?? "Default narrator"} · as written
-            </option>
-            {Object.entries(VOICE_LABEL).map(([id, label]) => (
-              <option key={id} value={id}>
-                {label}
-              </option>
-            ))}
-          </select>
-        </label>
-      </div>
       )}
 
       <div className="hear-transport">
@@ -467,8 +424,9 @@ export function Ribbon({
         </button>
         <button onClick={() => onNudge(-15)} aria-label="Back fifteen seconds">
           <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M11 5L6.5 9.2 11 13.4" />
-            <path d="M6.8 9.2H14a4.6 4.6 0 0 1 0 9.2H9" />
+            <path d="M9.5 3.5L6 7l3.5 3.5" />
+            <path d="M6.5 7H13a7 7 0 1 1-6.6 9.3" />
+            <text x="13" y="17.2" className="hear-num">15</text>
           </svg>
         </button>
         {/*
@@ -493,8 +451,9 @@ export function Ribbon({
         </button>
         <button onClick={() => onNudge(15)} aria-label="Forward fifteen seconds">
           <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M13 5l4.5 4.2L13 13.4" />
-            <path d="M17.2 9.2H10a4.6 4.6 0 0 0 0 9.2h5" />
+            <path d="M14.5 3.5L18 7l-3.5 3.5" />
+            <path d="M17.5 7H11a7 7 0 1 0 6.6 9.3" />
+            <text x="11" y="17.2" className="hear-num">15</text>
           </svg>
         </button>
         {/*
@@ -512,7 +471,56 @@ export function Ribbon({
         </button>
       </div>
 
+      {/*
+        Everything you do to a story, in one row of five under the transport: how fast,
+        who reads it, read along, keep it, pass it on. Icon over a word, no boxes, so the
+        row reads as tools rather than three competing buttons.
+      */}
       <div className="hear-acts">
+        <button
+          className="hear-speed"
+          onClick={() => onRate(RATES[(RATES.indexOf(rate as (typeof RATES)[number]) + 1) % RATES.length] ?? 1)}
+          aria-label={`Speed, ${rate} times. Tap to change.`}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 20a8 8 0 1 1 8-8" />
+            <path d="M12 12l4.5-3.4" />
+          </svg>
+          {/*
+            One decimal only where it earns one. "1.0×" and "2.0×" are two characters of
+            precision nobody asked for, and the row is narrow.
+          */}
+          {Number.isInteger(rate) ? rate : rate.toFixed(1)}×
+        </button>
+        {/*
+          The narrator, wrapping the native select rather than replacing it, so the
+          platform supplies the picker, the keyboard and the screen reader. The label is
+          "Voice" rather than the narrator's name: the names are ours ("Second") and meant
+          nothing on a button. The picker shows them.
+        */}
+        <label className="hear-voice">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3zM5 11a7 7 0 0 0 14 0M12 18v3" />
+          </svg>
+          Voice
+          <select
+            aria-label={`Narrator: ${VOICE_LABEL[voice ?? echo.voice ?? ""] ?? "Default narrator"}`}
+            value={voice ?? ""}
+            onChange={(e) => onVoice(e.target.value || null)}
+          >
+            <option value="">
+              {VOICE_LABEL[echo.voice ?? ""] ?? "Default narrator"} (as written)
+            </option>
+            {/* Not the one "as written" again: it was listed twice. */}
+            {Object.entries(VOICE_LABEL)
+              .filter(([id]) => id !== (echo.voice ?? ""))
+              .map(([id, label]) => (
+                <option key={id} value={id}>
+                  {label}
+                </option>
+              ))}
+          </select>
+        </label>
         <button
           className={reading ? "on" : ""}
           onClick={() => setReading((r) => !r)}
@@ -527,7 +535,7 @@ export function Ribbon({
             fits: this row is three buttons wide now and fourteen characters ran the label
             under its own icon at 375px. Measured, not guessed.
           */}
-          {reading ? "Hide it" : "Read it"}
+          {reading ? "Hide" : "Read"}
         </button>
         <button className={saved ? "on" : ""} onClick={onSave} aria-pressed={saved}>
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -762,22 +770,6 @@ function phaseOf(id: string): number {
 }
 /** Seconds for one full pass. Matches `.hear-flow` in `theme.css`. */
 const FLOW_S = 18;
-
-/**
- * A narrator name that fits a chip.
- *
- * "Narrator for children" is 21 characters and the row has three chips in 339 pixels, so
- * it has to shorten. Taking the first word was the obvious way and it produces "Narrator"
- * for the children's voice, which names nothing — the distinguishing word is the last
- * one. Dropping the word "narrator" wherever it appears leaves Default, Second and
- * Children, which are three different things. The full name is still in the select the
- * chip opens, and in the accessible name.
- */
-const short = (name: string) => {
-  const trimmed = name.replace(/\s*narrator\s*/i, " ").trim().replace(/^for\s+/i, "");
-  const out = trimmed || name;
-  return out.charAt(0).toUpperCase() + out.slice(1);
-};
 
 const clock = (seconds: number) =>
   `${Math.floor(seconds / 60)}:${String(Math.max(0, Math.round(seconds % 60))).padStart(2, "0")}`;

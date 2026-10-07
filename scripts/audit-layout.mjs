@@ -466,9 +466,9 @@ async function walk(width, height, theme) {
     await p.waitForTimeout(2200);
   }
   await look('listening');
-  await p.getByRole('button', { name: /Read it/ }).click({ force: true }).catch(() => {});
+  await p.getByRole('button', { name: /^Read$/ }).click({ force: true }).catch(() => {});
   await p.waitForTimeout(500); await look('listening/reading');
-  await p.getByRole('button', { name: /Hide it/ }).click({ force: true }).catch(() => {});
+  await p.getByRole('button', { name: /^Hide$/ }).click({ force: true }).catch(() => {});
   await p.waitForTimeout(300);
   await p.getByLabel('Back to the map').click({ force: true }).catch(() => {});
   await p.waitForTimeout(700); await look('map/playing');

@@ -47,10 +47,10 @@ export class SpeechAudio implements AudioSink {
    *
    * Applied when an utterance is created, because that is the only moment the Web Speech
    * API allows: `rate` is read once at `speak()` and a running utterance cannot be
-   * re-paced. So a change lands on the next echo rather than the current one — which is a
-   * limitation of the stand-in, not of the design, and disappears with the real renders
-   * where an `<audio>` element's `playbackRate` is live. Before this existed the control
-   * changed a number on screen and nothing else at all.
+   * re-paced. So a change is applied by `seek`ing to where the listener already is, which
+   * speaks the rest again at the new pace (the app does that on every speed or voice
+   * change). It used to land on the next echo instead, so the chip said 1.5× over a voice
+   * still at 1×.
    */
   private rate = 1;
   /**
@@ -63,6 +63,10 @@ export class SpeechAudio implements AudioSink {
    */
   private simple = false;
   private voiceOverride: string | null = null;
+  /** What is loaded, so a seek knows what to speak again. Null when nothing is. */
+  private currentKey: string | null = null;
+  /** Paused rather than playing, so a seek while paused stays paused. */
+  private paused = false;
 
   /** Keyed once. `find` over the library ran on every play, for every echo. */
   private readonly byKey: ReadonlyMap<string, Echo>;
@@ -111,7 +115,29 @@ export class SpeechAudio implements AudioSink {
   }
 
   play(audioKey: string) {
-    this.stop();
+    this.speakFrom(audioKey, 0);
+  }
+
+  /**
+   * Move to this fraction of the current echo and carry on from there.
+   *
+   * Speech cannot seek, so this speaks the script again from the word nearest the point.
+   * Before it existed, back fifteen, forward fifteen, back to the start and dragging the
+   * waveform all moved the clock and none of them moved the voice, so the two drifted
+   * apart with every press.
+   */
+  seek(fraction: number) {
+    if (!this.currentKey) return;
+    const wasPaused = this.paused;
+    this.speakFrom(this.currentKey, fraction);
+    if (wasPaused) this.pause();
+  }
+
+  private speakFrom(audioKey: string, fraction: number) {
+    this.halt();
+    this.currentKey = audioKey;
+    this.paused = false;
+    const at = Math.max(0, Math.min(1, fraction));
     const echo = this.byKey.get(audioKey);
     const cut = echo ? this.cut(echo) : null;
 
@@ -120,11 +146,11 @@ export class SpeechAudio implements AudioSink {
     // player that finishes the moment it starts drains the whole queue in a frame, and
     // every transition the queue exists to get right would go untested.
     if (!echo || this.muted || !this.available || !cut?.script || this.voiceCount === 0) {
-      this.runSilently(cut?.durationS ?? 1);
+      this.runSilently((cut?.durationS ?? 1) * (1 - at));
       return;
     }
 
-    const utterance = new SpeechSynthesisUtterance(cut.script);
+    const utterance = new SpeechSynthesisUtterance(fromWord(cut.script, at));
     const cast =
       CAST[this.voiceOverride ?? echo.voice ?? ""] ?? { pitch: 1, rate: 0.95, prefer: [] };
     utterance.pitch = cast.pitch;
@@ -156,10 +182,12 @@ export class SpeechAudio implements AudioSink {
   }
 
   pause() {
+    this.paused = true;
     if (this.available) window.speechSynthesis.pause();
   }
 
   resume() {
+    this.paused = false;
     if (this.available) window.speechSynthesis.resume();
   }
 
@@ -168,7 +196,14 @@ export class SpeechAudio implements AudioSink {
     return this.utterance !== null || this.timer !== null;
   }
 
+  /** Stopped by the listener: nothing is loaded any more, so a seek has nothing to say. */
   stop() {
+    this.halt();
+    this.currentKey = null;
+    this.paused = false;
+  }
+
+  private halt() {
     if (this.timer) clearTimeout(this.timer);
     this.timer = null;
     if (!this.available || !this.utterance) return;
@@ -209,6 +244,7 @@ export class SpeechAudio implements AudioSink {
 
   private fire() {
     this.utterance = null;
+    this.currentKey = null;
     for (const handler of this.handlers) handler();
   }
 
@@ -222,4 +258,17 @@ export class SpeechAudio implements AudioSink {
     }
     return voices[0] ?? null;
   }
+}
+
+/**
+ * The script from this far through, starting at a word.
+ *
+ * By characters, which is close enough for a stand-in voice: speaking pace is roughly
+ * even, and landing a word early beats cutting one in half.
+ */
+export function fromWord(script: string, fraction: number): string {
+  if (fraction <= 0) return script;
+  const at = Math.floor(script.length * Math.min(1, fraction));
+  const back = script.lastIndexOf(" ", at);
+  return script.slice(back < 0 ? 0 : back + 1);
 }
