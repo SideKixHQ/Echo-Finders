@@ -19,6 +19,8 @@ import {
 } from "@echofinders/core";
 
 interface Props {
+  /** Back to My Echoes, which is where Settings is opened from. */
+  readonly onBack: () => void;
   readonly settings: PrivacySettings;
   readonly onChange: (next: PrivacySettings) => void;
   readonly storedPositions: number;
@@ -53,6 +55,7 @@ const FEATURE_LABELS: Record<FeatureId, string> = {
 };
 
 export function Privacy({
+  onBack,
   settings,
   onChange,
   storedPositions,
@@ -72,6 +75,19 @@ export function Privacy({
 
   return (
     <div className="screen-body">
+      {/*
+        A title and a way back. This screen had neither, and no tab lit either, so somebody
+        who opened it (from My Echoes, by an icon that looked like a filter) was on an
+        unnamed page with no visible way out. The back arrow is the way they came.
+      */}
+      <header className="screen-head set-head">
+        <button className="set-back" onClick={onBack} aria-label="Back to My Echoes">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 5l-7 7 7 7" />
+          </svg>
+        </button>
+        <h1>Settings</h1>
+      </header>
       {/*
         How you are travelling, first, because it is the setting that changes what the app
         *is* rather than what it shows, and because it was unreachable.

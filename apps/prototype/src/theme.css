@@ -1365,14 +1365,24 @@ body {
 
 /* ── full-screen panels ──────────────────────────────────── */
 .screen-body {
-  position: absolute; inset: 46px 0 72px; z-index: 15;
-  overflow-y: auto; padding: 8px 18px 24px;
+  position: absolute; inset: 46px 0 var(--nav-h); z-index: 15;
+  overflow-y: auto; padding: 8px var(--gutter) 24px;
   background: var(--space); scrollbar-width: none;
 }
 .screen-body::-webkit-scrollbar { display: none; }
 
 .screen-head { padding: 12px 0 18px; }
 .screen-head h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
+/* Settings: a back arrow on the gutter, the title beside it, on one centre line. */
+.set-head { display: flex; align-items: center; gap: 4px; }
+.set-back {
+  width: 44px; height: 44px; margin-left: -12px; flex: none; cursor: pointer;
+  display: grid; place-items: center; border: 0; background: none; color: var(--white);
+}
+.set-back svg {
+  width: 22px; height: 22px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
 .screen-head p { font-size: 12px; color: var(--muted); margin-top: 4px; }
 
 
@@ -2799,7 +2809,7 @@ body {
   display: grid; place-items: center;
 }
 .coll-settings svg {
-  width: 19px; height: 19px; fill: none; stroke: currentColor;
+  width: 21px; height: 21px; fill: none; stroke: currentColor;
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
 .coll-stats { display: flex; gap: 8px; }

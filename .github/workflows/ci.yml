@@ -46,3 +46,4 @@ jobs:
       - run: npm run audit:layout
       - run: npm run audit:paywall
       - run: npm run audit:align
+      - run: npm run audit:flows

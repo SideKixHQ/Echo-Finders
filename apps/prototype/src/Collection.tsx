@@ -88,13 +88,7 @@ export function Collection({
         <header className="screen-head coll-head">
           <div className="coll-title">
             <h1>My Echoes</h1>
-            <button className="coll-settings" onClick={onSettings} aria-label="Settings">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4 7h10M18 7h2M4 17h4M12 17h8" />
-                <circle cx="16" cy="7" r="2.4" />
-                <circle cx="10" cy="17" r="2.4" />
-              </svg>
-            </button>
+            <SettingsButton onClick={onSettings} />
           </div>
         </header>
         {/*
@@ -127,18 +121,7 @@ export function Collection({
       <header className="screen-head coll-head">
         <div className="coll-title">
           <h1>My Echoes</h1>
-          {/*
-            Sliders rather than a gear. The gear was twelve lobes and eight arcs at 20px
-            with a 1.4px stroke, which renders as a grey smudge; sliders say settings just
-            as well and hold their shape.
-          */}
-          <button className="coll-settings" onClick={onSettings} aria-label="Settings">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M4 7h10M18 7h2M4 17h4M12 17h8" />
-              <circle cx="16" cy="7" r="2.4" />
-              <circle cx="10" cy="17" r="2.4" />
-            </svg>
-          </button>
+          <SettingsButton onClick={onSettings} />
         </div>
 
         {/*
@@ -320,3 +303,23 @@ function Glyph({
 /** Minutes and seconds, as a listener reads a length. */
 const clock = (seconds: number) =>
   `${Math.floor(seconds / 60)}:${String(Math.round(seconds % 60)).padStart(2, "0")}`;
+
+/**
+ * The way into Settings, drawn once.
+ *
+ * A gear, because this opens Settings. It was a sliders icon, which every app uses for
+ * FILTER: people tapped it to filter their echoes and landed in settings with no way back.
+ * It also existed twice (this screen has a separate header for the empty state) and a fix
+ * to one copy left the other as it was, so there is one now. Drawn at 21px with a 1.7
+ * stroke so it holds its shape at phone size.
+ */
+function SettingsButton({ onClick }: { readonly onClick: () => void }) {
+  return (
+    <button className="coll-settings" onClick={onClick} aria-label="Settings">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+        <circle cx="12" cy="12" r="3" />
+      </svg>
+    </button>
+  );
+}

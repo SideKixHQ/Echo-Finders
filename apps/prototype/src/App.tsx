@@ -1712,6 +1712,7 @@ export function App() {
 
           {tab === "settings" && (
             <Privacy
+              onBack={() => setTab("echoes")}
               onJourney={() => {
                 setTab("echoes");
                 openPackage();
@@ -2031,7 +2032,8 @@ export function App() {
         )}
 
           <Nav
-            tab={tab}
+            /* Settings belongs to My Echoes, so that tab stays lit while it is open. */
+            tab={tab === "settings" ? "echoes" : tab}
             /*
               Leaving by the tab bar closes the listening screen.
               
