@@ -36,7 +36,17 @@ jobs:
         with:
           python-version: "3.12"
       - run: npm ci
-      - run: npx playwright install --with-deps chromium
+      # The Ubuntu package mirror has hung for the whole job (39 minutes on 7 Oct, both
+      # jobs). Five minutes a try, three tries, so a stuck mirror costs minutes, not the run.
+      - name: Install Chromium
+        timeout-minutes: 16
+        run: |
+          for i in 1 2 3; do
+            timeout 300 npx playwright install --with-deps chromium && exit 0
+            echo "Chromium install attempt $i stalled or failed; retrying"
+            sleep 10
+          done
+          exit 1
       - run: npm run build --workspace @echofinders/core
       - run: npm run library:build
       - run: npm run audit:contrast
@@ -58,7 +68,17 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
-      - run: npx playwright install --with-deps chromium
+      # The Ubuntu package mirror has hung for the whole job (39 minutes on 7 Oct, both
+      # jobs). Five minutes a try, three tries, so a stuck mirror costs minutes, not the run.
+      - name: Install Chromium
+        timeout-minutes: 16
+        run: |
+          for i in 1 2 3; do
+            timeout 300 npx playwright install --with-deps chromium && exit 0
+            echo "Chromium install attempt $i stalled or failed; retrying"
+            sleep 10
+          done
+          exit 1
       - run: npm run build --workspace @echofinders/core
       - run: npm run library:build
       - run: npm run audit:paywall
