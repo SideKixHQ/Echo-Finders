@@ -36,17 +36,15 @@ jobs:
         with:
           python-version: "3.12"
       - run: npm ci
-      # The Ubuntu package mirror has hung for the whole job (39 minutes on 7 Oct, both
-      # jobs). Five minutes a try, three tries, so a stuck mirror costs minutes, not the run.
-      - name: Install Chromium
-        timeout-minutes: 16
-        run: |
-          for i in 1 2 3; do
-            timeout 300 npx playwright install --with-deps chromium && exit 0
-            echo "Chromium install attempt $i stalled or failed; retrying"
-            sleep 10
-          done
-          exit 1
+      # Chromium itself comes from Playwright's own CDN; only its system libraries come from
+      # apt. On 7 Oct the Ubuntu mirror hung for 39 minutes, and a time-boxed retry then hit
+      # the apt lock the hung install still held. GitHub's runner image already carries
+      # Chrome and its libraries, so the apt half is best-effort and bounded, never fatal.
+      - run: npx playwright install chromium
+      - name: Chromium's system libraries (best-effort)
+        timeout-minutes: 5
+        continue-on-error: true
+        run: sudo npx playwright install-deps chromium
       - run: npm run build --workspace @echofinders/core
       - run: npm run library:build
       - run: npm run audit:contrast
@@ -68,17 +66,15 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
-      # The Ubuntu package mirror has hung for the whole job (39 minutes on 7 Oct, both
-      # jobs). Five minutes a try, three tries, so a stuck mirror costs minutes, not the run.
-      - name: Install Chromium
-        timeout-minutes: 16
-        run: |
-          for i in 1 2 3; do
-            timeout 300 npx playwright install --with-deps chromium && exit 0
-            echo "Chromium install attempt $i stalled or failed; retrying"
-            sleep 10
-          done
-          exit 1
+      # Chromium itself comes from Playwright's own CDN; only its system libraries come from
+      # apt. On 7 Oct the Ubuntu mirror hung for 39 minutes, and a time-boxed retry then hit
+      # the apt lock the hung install still held. GitHub's runner image already carries
+      # Chrome and its libraries, so the apt half is best-effort and bounded, never fatal.
+      - run: npx playwright install chromium
+      - name: Chromium's system libraries (best-effort)
+        timeout-minutes: 5
+        continue-on-error: true
+        run: sudo npx playwright install-deps chromium
       - run: npm run build --workspace @echofinders/core
       - run: npm run library:build
       - run: npm run audit:paywall
