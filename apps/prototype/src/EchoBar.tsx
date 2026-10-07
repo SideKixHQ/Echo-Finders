@@ -103,7 +103,7 @@ export interface EchoBarProps {
  * Change the bar and change both. It replaced 104 of stepper plus a 132 sheet peek plus a
  * 56 guidance strip.
  */
-export const ECHOBAR_H = 76;
+export const ECHOBAR_H = 86;
 
 const RARITY_LABEL: Record<string, string> = { rare: "Rare", singular: "Singular" };
 

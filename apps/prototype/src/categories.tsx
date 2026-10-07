@@ -168,3 +168,30 @@ export const CATEGORY_ICON: Record<EchoCategory, ReactNode> = {
    */
   land: <path d="M4 21h16M6 21V8M10 21V8M14 21V8M18 21V8M4 8h16l-8-5z" />,
 };
+
+/** Every category: the filter's "everything", on the map and on My Echoes alike. */
+export const ALL_CATEGORIES: ReadonlySet<EchoCategory> = new Set(CATEGORY_ORDER);
+
+/**
+ * What a tap on a category chip selects next. One rule, used by the map and by My Echoes,
+ * so the two filters can never behave differently.
+ *
+ * TAPPING A KIND SHOWS THAT KIND, the way every map's filter chips work. With nothing
+ * filtered every chip is on, so the first tap narrows to that kind alone (it used to hide
+ * it: "everything is selected, then I select something and it unselects"). After that,
+ * taps add and remove; removing the last kind, or adding the last one back, returns to
+ * everything (null) rather than to nothing.
+ */
+export function toggleCategories(
+  current: ReadonlySet<EchoCategory> | null,
+  group: ChipGroup,
+): ReadonlySet<EchoCategory> | null {
+  const all = !current || current.size >= ALL_CATEGORIES.size;
+  if (all) return new Set(group.categories);
+  const next = new Set(current);
+  const lit = group.categories.some((c) => next.has(c));
+  if (lit) for (const c of group.categories) next.delete(c);
+  else for (const c of group.categories) next.add(c);
+  if (next.size === 0 || next.size >= ALL_CATEGORIES.size) return null;
+  return next;
+}

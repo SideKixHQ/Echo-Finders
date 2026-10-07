@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Viewport check</title>
+<!--
+  What a real phone actually gives the app, for measuring rather than guessing.
+
+  Open https://<the app>/viewport.html on the phone, take one screenshot, send it. The
+  numbers are the browser's own: the layout size, the visible size, the four safe-area
+  insets, and what 100vh / 100dvh / 100svh / 100lvh resolve to. The ruler down the left is
+  in CSS pixels from the top of the page, so wherever Safari's bars cover it, the screenshot
+  shows exactly how many pixels they take.
+
+  Static and self-contained: no app code, no network, nothing stored.
+-->
+<style>
+  :root { color-scheme: dark; }
+  html, body { margin: 0; background: #0b0f2b; color: #fff; font: 15px/1.4 -apple-system, system-ui, sans-serif; }
+  body { min-height: 100lvh; position: relative; }
+  .ruler { position: absolute; left: 0; top: 0; width: 64px; height: 1200px; }
+  .ruler div { position: absolute; left: 0; width: 64px; border-top: 1px solid #00ffe7; font: 11px/1 ui-monospace, monospace; color: #00ffe7; padding: 2px 0 0 4px; box-sizing: border-box; }
+  .ruler div.minor { width: 16px; border-color: rgba(0, 255, 231, 0.45); }
+  .probe { position: absolute; left: 0; width: 0; visibility: hidden; }
+  main { margin-left: 76px; padding: 140px 16px 0 0; }
+  h1 { font-size: 18px; margin: 0 0 12px; }
+  table { border-collapse: collapse; width: 100%; }
+  td { padding: 5px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
+  td:last-child { text-align: right; font-family: ui-monospace, monospace; color: #ffd27a; }
+  .edge { position: fixed; left: 0; right: 0; height: 4px; background: #ff4d9d; }
+  .edge.top { top: env(safe-area-inset-top); }
+  .edge.bottom { bottom: env(safe-area-inset-bottom); }
+  p { color: #aeb5c2; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="ruler" id="ruler"></div>
+<div class="probe" id="vh" style="height: 100vh"></div>
+<div class="probe" id="dvh" style="height: 100dvh"></div>
+<div class="probe" id="svh" style="height: 100svh"></div>
+<div class="probe" id="lvh" style="height: 100lvh"></div>
+<div class="probe" id="safe" style="padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)"></div>
+<div class="edge top"></div>
+<div class="edge bottom"></div>
+<main>
+  <h1>Viewport check</h1>
+  <table id="out"></table>
+  <p>Pink lines: the safe-area edges. Ruler: CSS pixels from the top of the page.
+     One screenshot of this is all that is needed.</p>
+</main>
+<script>
+  const ruler = document.getElementById('ruler');
+  for (let y = 0; y <= 1200; y += 10) {
+    const d = document.createElement('div');
+    d.style.top = y + 'px';
+    if (y % 50) d.className = 'minor'; else d.textContent = y;
+    ruler.appendChild(d);
+  }
+  const h = (id) => document.getElementById(id).getBoundingClientRect().height;
+  const safe = getComputedStyle(document.getElementById('safe'));
+  function render() {
+    const vv = window.visualViewport;
+    const rows = [
+      ['window.inner', `${innerWidth} × ${innerHeight}`],
+      ['visual viewport', vv ? `${Math.round(vv.width)} × ${Math.round(vv.height)}` : 'n/a'],
+      ['visual viewport top', vv ? Math.round(vv.offsetTop) : 'n/a'],
+      ['screen', `${screen.width} × ${screen.height}`],
+      ['100vh', h('vh')],
+      ['100dvh', h('dvh')],
+      ['100svh', h('svh')],
+      ['100lvh', h('lvh')],
+      ['safe top', safe.paddingTop],
+      ['safe bottom', safe.paddingBottom],
+      ['safe left / right', `${safe.paddingLeft} / ${safe.paddingRight}`],
+      ['pixel ratio', devicePixelRatio],
+      ['standalone', matchMedia('(display-mode: standalone)').matches ? 'yes' : 'no'],
+      ['browser', (navigator.userAgent.match(/OS [\d_]+|Version\/[\d.]+|CriOS\/[\d.]+/g) || []).join(' · ')],
+    ];
+    document.getElementById('out').innerHTML = rows.map(([k, v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('');
+  }
+  render();
+  addEventListener('resize', render);
+  window.visualViewport && visualViewport.addEventListener('resize', render);
+</script>
+</body>
+</html>

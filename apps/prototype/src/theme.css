@@ -146,6 +146,12 @@
    * moves the guidance bar and the player with it.
    */
   --nav-h: 74px;
+  /*
+   * The one side margin. The design canvas uses 16; the build had drifted to 10, 12, 14
+   * and 18 on different screens, and on a phone four margins read as nothing lining up.
+   * Everything edge-anchored uses this, and `npm run audit:align` measures it.
+   */
+  --gutter: 16px;
 }
 
 /**
@@ -625,12 +631,12 @@ body {
 .ribbon-fill {
   position: absolute; inset: 0 auto 0 0; pointer-events: none;
   border-radius: 99px 0 0 99px;
-  background: linear-gradient(90deg, rgba(0, 255, 231, 0.17), rgba(0, 255, 231, 0.05));
-  border-right: 1px solid rgba(0, 255, 231, 0.55);
+  /* Fades out at its leading edge rather than ending in a 1px line, like the journey
+     chip's: drawn hard, that line read as a crack. */
+  background: linear-gradient(90deg, rgba(0, 255, 231, 0.17), rgba(0, 255, 231, 0.07) 70%, rgba(0, 255, 231, 0));
 }
 :root[data-theme="light"] .ribbon-fill {
-  background: linear-gradient(90deg, rgba(0, 115, 108, 0.16), rgba(0, 115, 108, 0.05));
-  border-right-color: rgba(0, 115, 108, 0.6);
+  background: linear-gradient(90deg, rgba(0, 115, 108, 0.16), rgba(0, 115, 108, 0.06) 70%, rgba(0, 115, 108, 0));
 }
 /* Everything else rides above the fill. */
 .ribbon-mode, .ribbon b, .ribbon-bar, .ribbon small, .ribbon-more { position: relative; }
@@ -654,7 +660,7 @@ body {
 
 /* The stack above the map: ribbon, then filters. */
 .mapbar {
-  position: absolute; top: 44px; left: 12px; right: 12px; z-index: 18;
+  position: absolute; top: 44px; left: var(--gutter); right: var(--gutter); z-index: 18;
   display: flex; flex-direction: column; gap: 7px;
 }
 
@@ -1296,7 +1302,9 @@ body {
 /* A count of echoes found, so it is ember. The tab label beside it stays aqua, because
    that is a control. */
 .nav .badge {
-  position: absolute; top: -3px; left: 50%; margin-left: 7px;
+  /* Beside the icon's top corner, not on it: at margin-left 7 a two-digit count covered
+     the icon's right half. */
+  position: absolute; top: -7px; left: 50%; margin-left: 10px;
   min-width: 15px; height: 15px; padding: 0 4px; border-radius: 99px;
   background: var(--ember); color: #fff; font-size: 11px; line-height: 15px;
 }
@@ -1357,14 +1365,23 @@ body {
 
 /* ── full-screen panels ──────────────────────────────────── */
 .screen-body {
-  position: absolute; inset: 46px 0 72px; z-index: 15;
-  overflow-y: auto; padding: 8px 18px 24px;
+  position: absolute; inset: 46px 0 var(--nav-h); z-index: 15;
+  overflow-y: auto; padding: 8px var(--gutter) 24px;
   background: var(--space); scrollbar-width: none;
 }
 .screen-body::-webkit-scrollbar { display: none; }
 
-.screen-head { padding: 12px 0 18px; }
-.screen-head h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
+/* 16 under every title row, on every tab: My Echoes had 14 to its stats and Settings 44
+   to its first panel (18 here plus the panel's own 26). */
+.screen-head { padding: 12px 0 16px; }
+.screen-head + .panel { margin-top: 0; }
+/* Every tab's title sits in the same 44px row, so "My Echoes" (beside its 44px filter
+   button) and "Settings" (alone) land on the same line. Settings sat 9px higher. */
+.screen-head h1 {
+  font-size: 22px; font-weight: 600; letter-spacing: -0.01em;
+  min-height: 44px; display: flex; align-items: center; margin: 0;
+}
+
 .screen-head p { font-size: 12px; color: var(--muted); margin-top: 4px; }
 
 
@@ -1873,7 +1890,7 @@ body {
    the taller of the two. */
 .screen { --mapbar-h: 64px; }
 .rail {
-  position: absolute; right: 14px; z-index: 26;
+  position: absolute; right: var(--gutter); z-index: 26;
   /*
    * Bottom anchored, AND CLAMPED INTO THE MAP BAND.
    *
@@ -1920,7 +1937,7 @@ body {
   /* Each column ends at the bottom, so a wrapped second column sits level with the
      first rather than starting at the top with a gap under it. No effect at all while
      the column fits, because then the box is only as tall as its contents. */
-  align-content: flex-end; justify-content: flex-end; gap: 8px;
+  align-content: flex-end; justify-content: flex-end; gap: 10px;
   transition: bottom 0.34s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.2s linear;
 }
 /*
@@ -2243,7 +2260,7 @@ body {
    because it is the one thing on this screen you are meant to read rather than
    glance at. */
 .pop {
-  position: absolute; left: 14px; right: 14px; z-index: 26;
+  position: absolute; left: var(--gutter); right: var(--gutter); z-index: 26;
   bottom: calc(var(--nav-h) + var(--step-h, 0px) + 10px);
   /*
      Bounded, and it scrolls. The card is anchored at the bottom and grows upwards, so
@@ -2255,9 +2272,9 @@ body {
      The ceiling leaves the map bar and a strip of map showing, because the card is about
      a pin and covering the pin entirely would make it a modal rather than a callout.
   */
-  max-height: calc(100% - var(--nav-h) - var(--step-h, 0px) - 150px);
+  max-height: calc(100% - var(--nav-h) - var(--step-h, 0px) - 120px);
   overflow-y: auto; overscroll-behavior: contain;
-  padding: 13px 14px 12px; border-radius: 16px;
+  padding: 13px 16px 12px; border-radius: 16px;
   background: rgba(var(--rgb-panel), 0.96); border: 1px solid var(--line-2);
   box-shadow: 0 12px 34px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(14px);
@@ -2297,6 +2314,8 @@ body {
 
 /* Room for the close button, so a long title does not run under it. */
 .pop h3 {
+  /* Balanced, so a two-line title never leaves one word alone ("fort"). */
+  text-wrap: balance;
   margin: 5px 34px 0 0; font-size: 14px; font-weight: 500;
   line-height: 1.3; letter-spacing: -0.01em; color: var(--white);
 }
@@ -2781,17 +2800,35 @@ body {
  * somebody opens sitting down and a count is what they came for. Ember on the counts,
  * because a number of echoes is content; the gear stays cool, because it is a control.
  */
-.coll-head { display: flex; flex-direction: column; gap: 14px; }
+.coll-head { display: flex; flex-direction: column; gap: 16px; }
 .coll-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.coll-settings {
+/* The filter button: the old settings button's box, aqua with a dot while filtering. */
+.coll-filter-btn {
+  position: relative;
   width: 44px; height: 44px; flex: none; border-radius: 12px; cursor: pointer;
   border: 1px solid var(--line); background: none; color: var(--muted);
   display: grid; place-items: center;
 }
-.coll-settings svg {
-  width: 19px; height: 19px; fill: none; stroke: currentColor;
+.coll-filter-btn svg {
+  width: 20px; height: 20px; fill: none; stroke: currentColor;
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
+.coll-filter-btn[aria-expanded="true"], .coll-filter-btn.on { color: var(--aqua); border-color: rgba(0, 255, 231, 0.4); }
+.coll-filter-dot {
+  position: absolute; top: 7px; right: 7px; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--aqua);
+}
+/* The chips sit between the title and the list, in the map bar's own panel and layout
+   (`mapbar-chips`), so the arrows sit beside the chips and the cut edge fades. Drawn as
+   a plain `.chips` row, the arrows covered "ALL" and "Ghosts". */
+.coll-filter { margin: 0 0 16px; }
+.coll-nomatch { padding-top: 24px; }
+.coll-showall {
+  margin-top: 14px; min-height: 44px; padding: 0 20px; border-radius: 12px; cursor: pointer;
+  font: inherit; font-size: 14px; color: var(--aqua);
+  background: none; border: 1px solid rgba(0, 255, 231, 0.4);
+}
+
 .coll-stats { display: flex; gap: 8px; }
 .coll-stat {
   flex: 1 1 0; min-width: 0; text-align: center; padding: 13px 10px;
@@ -2831,7 +2868,9 @@ body {
   background:
     radial-gradient(86% 56% at 50% 40%, #16183a 0%, #0a0c1e 52%, #06070d 100%);
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  padding: 0 24px calc(24px + env(safe-area-inset-bottom));
+  /* The same space above as below, so the stack is centred top to bottom: it had 24px
+     under it and none over it, which sat the whole card 12px high. */
+  padding: calc(24px + env(safe-area-inset-top)) 24px calc(24px + env(safe-area-inset-bottom));
   text-align: center; animation: synced-in 0.3s ease-out;
 }
 @keyframes synced-in { from { opacity: 0; } to { opacity: 1; } }
@@ -2850,7 +2889,9 @@ body {
  * Bounded to the echo, too. The outermost is 288px against a 94px orb, so the sweep stays
  * around the thing that arrived rather than lassoing the screen.
  */
-.synced-orb { position: relative; display: grid; place-items: center; margin-bottom: 26px; }
+/* Two spacings in this stack: 24 between its blocks (orb, the words, the rarity box, the
+   button), and the tighter 13/11 inside the words. It was 26, 22 and 34 between blocks. */
+.synced-orb { position: relative; display: grid; place-items: center; margin-bottom: 24px; }
 .synced-rings { position: absolute; top: 50%; left: 50%; width: 0; height: 0; }
 .synced-ring {
   position: absolute; left: 0; top: 0; width: 180px; height: 180px;
@@ -2939,7 +2980,7 @@ body {
 }
 
 .synced-rare {
-  position: relative; margin-top: 22px; padding: 13px 18px; border-radius: 16px;
+  position: relative; margin-top: 24px; padding: 13px 18px; border-radius: 16px;
   background: rgba(255, 158, 18, 0.07); border: 1px solid rgba(255, 158, 18, 0.32);
   animation: synced-lift 0.55s 0.2s ease-out both;
 }
@@ -2952,7 +2993,9 @@ body {
 /* Capped like the paywall's, so nothing in here stretches to whatever it is given. */
 .synced-say, .synced-rare, .synced-acts { width: 100%; max-width: 330px; }
 .synced-acts {
-  position: relative; align-self: stretch; margin-top: 34px;
+  /* Centred, not stretched: stretch with a max-width pins it to the left, which put
+     "Keep it for later" 12px off the line of everything above it. */
+  position: relative; align-self: center; margin-top: 24px;
   display: flex; flex-direction: column; gap: 10px;
   animation: synced-lift 0.6s 0.28s ease-out both;
 }
@@ -3250,7 +3293,7 @@ body {
 }
 
 .hear-back {
-  position: absolute; left: 14px; top: calc(48px + env(safe-area-inset-top));
+  position: absolute; left: var(--gutter); top: calc(48px + env(safe-area-inset-top));
   width: 44px; height: 44px; border-radius: 50%; cursor: pointer;
   display: grid; place-items: center; color: var(--white);
   background: rgba(11, 15, 43, 0.5); border: 1px solid rgba(255, 255, 255, 0.16);
@@ -3259,7 +3302,7 @@ body {
 /* Done with it, top right, mirroring the way out top left. Absolute, so it costs the
    layout nothing on a screen that already fits an iPhone SE with no slack. */
 .hear-stop {
-  position: absolute; right: 14px; top: calc(48px + env(safe-area-inset-top));
+  position: absolute; right: var(--gutter); top: calc(48px + env(safe-area-inset-top));
   width: 44px; height: 44px; border-radius: 50%; cursor: pointer; z-index: 3;
   display: grid; place-items: center; color: var(--muted);
   background: rgba(11, 15, 43, 0.5); border: 1px solid rgba(255, 255, 255, 0.16);
@@ -3278,7 +3321,7 @@ body {
   stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
 }
 
-.hear-say { position: relative; margin-top: calc(var(--plate-h) + 12px); padding: 0 18px; flex: none; }
+.hear-say { position: relative; margin-top: calc(var(--plate-h) + 12px); padding: 0 var(--gutter); flex: none; }
 .hear-kicker {
   display: flex; align-items: center; gap: 10px; margin: 0;
   font-size: 11px; font-weight: 500; letter-spacing: 0.12em;
@@ -3338,7 +3381,7 @@ body {
 }
 .hear-head-dot { fill: var(--ember-core); filter: drop-shadow(0 0 7px var(--ember)); }
 .hear-clock {
-  display: flex; justify-content: space-between; margin: 2px 0 0; padding: 0 18px;
+  display: flex; justify-content: space-between; margin: 2px 0 0; padding: 0 var(--gutter);
   font-size: 12px; color: var(--muted);
 }
 
@@ -3348,7 +3391,7 @@ body {
  */
 .hear-set {
   flex: none; display: flex; justify-content: center; gap: 8px;
-  padding: 6px 18px 0;
+  padding: 6px var(--gutter) 0;
 }
 .hear-chip {
   position: relative; display: inline-flex; align-items: center; gap: 6px;
@@ -3372,11 +3415,6 @@ body {
  * whole chip at zero opacity, so the chip is the target and the platform still supplies
  * the picker, the keyboard handling and the screen reader behaviour.
  */
-.hear-voice { position: relative; max-width: 42%; }
-.hear-voice select {
-  position: absolute; inset: 0; width: 100%; height: 100%;
-  opacity: 0; cursor: pointer; font: inherit;
-}
 /* Dimmed rather than hidden: the gap is in the library, not in the app, and a control
    that vanishes on some echoes is a control nobody trusts. `aria-label` says why. */
 .hear-chip:disabled { opacity: 0.4; cursor: default; }
@@ -3398,7 +3436,7 @@ body {
  */
 .hear-transport {
   flex: none; display: flex; align-items: center; justify-content: space-between;
-  gap: 4px; margin-top: 6px; padding: 0 16px;
+  gap: 4px; margin-top: 6px; padding: 0 var(--gutter);
 }
 .hear-transport button {
   width: 48px; height: 48px; border-radius: 50%; border: 0; cursor: pointer;
@@ -3412,6 +3450,14 @@ body {
 /* The wedge in the skip glyphs is a solid, the bar beside it is a stroke. One icon, two
    treatments, because an outlined triangle at 23px closes up into a grey blob. */
 .hear-transport button svg .hear-solid { fill: currentColor; stroke: none; }
+/* "15" inside the skip arrows, so they read as fifteen seconds and not as undo and redo. */
+.hear-transport button svg .hear-num {
+  fill: currentColor; stroke: none; font-size: 7.5px; font-weight: 600; text-anchor: middle;
+  font-family: inherit;
+}
+.hear-transport button:nth-child(2) svg, .hear-transport button:nth-child(4) svg {
+  width: 28px; height: 28px; stroke-width: 1.5;
+}
 /* Restart and next are secondary to the three in the middle, and saying so with weight
    costs nothing and stops a five-button row reading as five equal choices. */
 .hear-transport button:first-child, .hear-transport button:last-child { color: var(--muted); }
@@ -3450,23 +3496,42 @@ body {
  */
 .hear-transport .hear-go svg { stroke: none; }
 
-.hear-acts { flex: none; display: flex; gap: 8px; padding: 12px 18px 0; }
-/* Three across now rather than two, so they have to be able to shrink: `flex: 1 1 0`
-   with `min-width: 0`, not `flex-grow` alone, which keeps each button at least as wide
-   as its own label and pushes the last one off a 375px screen. */
-.hear-acts button {
-  flex: 1 1 0; min-width: 0; white-space: nowrap;
-  display: flex; align-items: center; justify-content: center; gap: 6px;
-  min-height: 44px; border-radius: 13px; cursor: pointer; font: inherit; font-size: 14px;
-  color: var(--text); background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+/*
+ * Five tools under the transport: speed, voice, read, keep, share.
+ *
+ * Icon over a word and no boxes. This was a row of floating chips above the transport
+ * and three boxed buttons below it, which read as two unrelated control panels and spent
+ * a whole row on two settings. One row of equal columns, each a 52px-tall target.
+ */
+.hear-acts {
+  flex: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 2px; padding: 12px var(--gutter) 4px;
 }
-.hear-acts button svg {
-  width: 15px; height: 15px; fill: none; stroke: currentColor;
-  stroke-width: 1.8; stroke-linejoin: round;
+.hear-acts > button, .hear-acts > label {
+  position: relative; min-width: 0; min-height: 52px; padding: 5px 2px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px;
+  border: 0; border-radius: 14px; background: none; cursor: pointer;
+  font: inherit; font-size: 12px; line-height: 1; white-space: nowrap; color: var(--cool);
 }
-.hear-acts button.on { color: var(--cool); border-color: rgba(0, 255, 231, 0.4); }
+.hear-acts > button:hover, .hear-acts > label:hover { background: rgba(255, 255, 255, 0.05); }
+.hear-acts svg {
+  width: 21px; height: 21px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.hear-acts button.on { color: var(--aqua); }
 .hear-acts button.on svg { fill: currentColor; }
+/* The speed reads as a number, so it gets the mono figures the clock uses. */
+.hear-speed { font-variant-numeric: tabular-nums; }
+/*
+ * The voice is a label wrapping a native select, stretched invisibly over it, so the
+ * platform supplies the picker, the keyboard and the screen reader behaviour.
+ */
+.hear-voice select {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  opacity: 0; cursor: pointer; font: inherit;
+}
+.hear-voice:has(select:focus-visible) { outline: 2px solid var(--aqua); outline-offset: -2px; }
+
 /* Reading along, over the plate and the ribbon. It stops above the transport, because
    somebody reading along is exactly the person most likely to want to pause or jump. */
 .hear-read {
@@ -3534,28 +3599,30 @@ body {
   background: radial-gradient(120% 80% at 50% 12%, #10142f 0%, #090c1e 52%, #05060f 100%);
   /* Flex and an auto margin rather than grid centring, so a short screen scrolls to the
      top of the body instead of clipping it. Two plans made this taller than one price. */
-  display: flex; flex-direction: column; padding: 24px; overflow-y: auto;
+  /* 16 top and bottom, not 24: with two plans the screen is fitted to an iPhone in
+     Safari (390x664) exactly, and `audit:align` measures that it does. */
+  display: flex; flex-direction: column; padding: 16px 24px; overflow-y: auto;
   animation: paywall-in 0.28s ease-out both;
 }
 @keyframes paywall-in { from { opacity: 0; } to { opacity: 1; } }
 .paywall-body { width: 100%; max-width: 340px; margin: auto; text-align: center; }
 .paywall-count {
-  margin: 0 0 18px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  margin: 0 0 12px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--muted);
 }
 .paywall h2 { margin: 0; font-size: 23px; font-weight: 600; line-height: 1.28; }
 .paywall-next {
-  margin: 14px 0 0; font-size: 14px; line-height: 1.55; color: var(--cool);
+  margin: 10px 0 0; font-size: 14px; line-height: 1.55; color: var(--cool);
 }
 .paywall-next strong { color: var(--white); font-weight: 500; }
 .paywall-where { color: var(--muted); }
 .paywall-plans {
-  margin: 24px 0 0; padding: 0; border: 0; min-width: 0;
+  margin: 16px 0 0; padding: 0; border: 0; min-width: 0;
   display: grid; gap: 10px; text-align: left;
 }
 .paywall-plan {
   position: relative; display: block; cursor: pointer;
-  padding: 14px 16px 14px 46px; border-radius: 16px;
+  padding: 12px 16px 12px 46px; border-radius: 16px;
   border: 1px solid var(--line); background: rgba(255, 255, 255, 0.03);
 }
 /* Chosen: the ember edge, because what is behind the wall is echoes. */
@@ -3578,7 +3645,7 @@ body {
   display: block; margin-top: 6px; font-size: 12.5px; line-height: 1.5; color: var(--cool);
 }
 /* The sum that decides between them, said as a fact rather than a "best value" badge. */
-.paywall-sum { text-wrap: balance; margin: 12px 0 16px; font-size: 12.5px; line-height: 1.5; color: var(--muted); }
+.paywall-sum { text-wrap: balance; margin: 10px 0 12px; font-size: 12.5px; line-height: 1.5; color: var(--muted); }
 .paywall-buy {
   width: 100%; min-height: 52px; border: 0; border-radius: 14px; cursor: pointer;
   font: inherit; font-size: 15.5px; font-weight: 500;
@@ -3586,16 +3653,16 @@ body {
 }
 /* Under the button, before the money moves. Not a disclaimer, a fact. */
 .paywall-small {
-  margin: 12px 0 0; font-size: 11.5px; line-height: 1.5; color: var(--muted);
+  margin: 10px 0 0; font-size: 11.5px; line-height: 1.5; color: var(--muted);
 }
 .paywall-later {
-  margin-top: 22px; min-height: 44px; width: 100%; cursor: pointer;
+  margin-top: 14px; min-height: 44px; width: 100%; cursor: pointer;
   font: inherit; font-size: 14px; color: var(--cool);
   background: none; border: 1px solid var(--line); border-radius: 13px;
 }
 /* What they keep either way, which is not nothing. */
 .paywall-keep {
-  margin: 18px 0 0; font-size: 11.5px; line-height: 1.5; color: var(--muted);
+  margin: 10px 0 0; font-size: 11.5px; line-height: 1.5; color: var(--muted);
 }
 
 /* ── The city ───────────────────────────────────────────────────────────────────
@@ -3707,7 +3774,21 @@ body {
   position: relative; margin: 10px 0 0; border-radius: 14px; overflow: hidden;
   border: 1px solid var(--line-2); line-height: 0;
 }
-.pop-plate img { width: 100%; height: 132px; object-fit: cover; display: block; }
+/* Shorter on a shorter screen, so the whole card fits without scrolling in Safari, where
+   the bars leave about 664px: at a fixed 132 "Save for later" was cut in half. */
+.pop-plate img { width: 100%; height: clamp(84px, calc(100dvh - 560px), 132px); object-fit: cover; display: block; }
+/*
+ * An iPhone SE in Safari leaves 553px, and the card was 51px taller than its room, with
+ * "Save for later" cut off. Measured, not guessed (`audit:align`). Below 600px the photo
+ * becomes a strip and the one-line teaser goes: the title, the place and both buttons are
+ * what the card is for.
+ */
+@media (max-height: 600px) {
+  .pop-plate img { height: 56px; }
+  .pop-teaser { display: none; }
+  /* One label in a 56px strip: the caption and "Then & now" overlapped at this height. */
+  .pop-plate span:not(.pop-plate-cam) { display: none; }
+}
 .pop-plate span {
   position: absolute; left: 9px; bottom: 8px; line-height: 1.2;
   padding: 4px 8px; border-radius: 6px; font-size: 11px; letter-spacing: 0.1em;
@@ -3916,11 +3997,12 @@ body {
  * `--sheet-h` plus `--step-h` plus `--guide-h`; those three are why the control column
  * had to learn to wrap. `ECHOBAR_H` in `EchoBar.tsx` tracks this — change both.
  */
-.screen:has(.echobar) { --step-h: 78px; }
+/* The bar (77px) and the 8px it floats above the tab bar, so what clears it really does. */
+.screen:has(.echobar) { --step-h: 86px; }
 .echobar {
   position: absolute; left: 0; right: 0; z-index: 24;
   bottom: calc(var(--nav-h) + 8px);
-  padding: 0 12px;
+  padding: 0 var(--gutter);
 }
 /*
  * ONE PILL, arrows inside it.
@@ -3963,7 +4045,8 @@ body {
  */
 .echobar-card {
   flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center;
-  padding: 7px 4px 6px; color: var(--white);
+  /* 8px off the left arrow, so the orb's sparkles do not touch it. */
+  padding: 8px 4px 7px 8px; color: var(--white);
 }
 /* With no arrows (a single echo) the card is the whole pill and pads itself. */
 .echobar-row > .echobar-card:only-child { padding: 7px 11px 6px 7px; }
@@ -3979,7 +4062,7 @@ body {
   box-shadow: 0 0 0 1px rgba(255, 158, 18, 0.26), 0 10px 34px rgba(255, 158, 18, 0.2);
 }
 
-.echobar-face { display: flex; align-items: center; gap: 9px; min-width: 0; }
+.echobar-face { display: flex; align-items: center; gap: 12px; min-width: 0; }
 .echobar-orb {
   position: relative; flex: none; width: 48px; height: 48px; padding: 0;
   border: 0; background: none; cursor: pointer; display: grid; place-items: center;
@@ -4063,7 +4146,7 @@ body {
  * and the map's reserved band never moves under it.
  */
 .echobar-progress {
-  height: 3px; margin: 5px 3px 0; border-radius: 99px;
+  height: 3px; margin: 7px 3px 0; border-radius: 99px;
   background: rgba(var(--rgb-hair), 0.16); overflow: hidden;
 }
 .echobar-progress span {
@@ -4128,12 +4211,12 @@ body {
 }
 .jchip-fill {
   position: absolute; inset: 0 auto 0 0; pointer-events: none;
-  background: linear-gradient(90deg, rgba(0, 255, 231, 0.17), rgba(0, 255, 231, 0.05));
-  border-right: 1px solid rgba(0, 255, 231, 0.55);
+  /* Fades out at its leading edge rather than ending in a 1px line: drawn hard, that
+     line ran through "42 min" and read as a crack in the chip on a real phone. */
+  background: linear-gradient(90deg, rgba(0, 255, 231, 0.17), rgba(0, 255, 231, 0.07) 70%, rgba(0, 255, 231, 0));
 }
 :root[data-theme="light"] .jchip-fill {
-  background: linear-gradient(90deg, rgba(0, 115, 108, 0.16), rgba(0, 115, 108, 0.05));
-  border-right-color: rgba(0, 115, 108, 0.6);
+  background: linear-gradient(90deg, rgba(0, 115, 108, 0.16), rgba(0, 115, 108, 0.06) 70%, rgba(0, 115, 108, 0));
 }
 .jchip-mode {
   position: relative; width: 18px; height: 18px; flex: none; fill: none; stroke: var(--aqua);
@@ -4213,7 +4296,18 @@ body {
  * They cleared WCAG's 24x24 floor but not Apple's 44pt, and the card's close is the one
  * control every card has. Grown without moving what they draw: the box gets bigger, the
  * glyph stays put. */
-.pop-close { width: 44px; height: 44px; margin: -11px -11px 0 2px; background: none; }
+/*
+ * The ✕ is the kicker line's control, so it sits on that line's centre. Measured: the box
+ * is sticky, so it starts at the card's padding edge whatever its margin says, and the
+ * kicker's centre is 13px below that. The glyph is 15px, so it goes in 5.5px from the
+ * top. Centred in its 44px box it sat 8-9px low. `audit:align` holds the two together.
+ */
+.pop-close {
+  /* -11 below, so the float takes the same room it did before the glyph moved: without
+     it the 44px box reached 11px further down and pushed the title (8px over on an SE). */
+  width: 44px; height: 44px; margin: 0 -11px -11px 2px; padding: 5.5px 0 0;
+  place-items: start center; background: none;
+}
 .onb-back, .onb-skip { min-width: 44px; min-height: 44px; }
 
 /*
@@ -4243,3 +4337,18 @@ body {
 .mapbar-chips .chip-nudge { position: relative; inset: auto; flex: none; background: none; }
 .mapbar-chips .chip-nudge-l { order: 0; }
 .mapbar-chips .chip-nudge-r { order: 2; }
+/*
+ * A chip running out under the edge FADES rather than being sliced.
+ *
+ * Beside the arrows the strip ends in a hard vertical cut, and whatever chip is half
+ * through it shows as a fragment: a lone "y" on the left, "Ghos" on the right, on a real
+ * iPhone. A short fade on each side that has more says "continues" instead of "broken",
+ * and only on a side the arrow says has more, so the first chip is never dimmed.
+ */
+.mapbar-chips .chips {
+  --fade-l: 0px; --fade-r: 0px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 var(--fade-l), #000 calc(100% - var(--fade-r)), transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 var(--fade-l), #000 calc(100% - var(--fade-r)), transparent);
+}
+.mapbar-chips .chipwrap:has(.chip-nudge-l) .chips { --fade-l: 22px; }
+.mapbar-chips .chipwrap:has(.chip-nudge-r) .chips { --fade-r: 22px; }

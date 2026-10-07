@@ -411,9 +411,9 @@ else { await p.locator('.pop-close').click(); await p.waitForTimeout(400);
        await p.locator('.echobar-orb').click(); await p.waitForTimeout(2200); }
 await capture('listening');
 focus.push(...await focusSweep('listening'));
-await p.getByRole('button', { name: /Read it/ }).click().catch(()=>{}); await p.waitForTimeout(500);
+await p.getByRole('button', { name: /^Read$/ }).click().catch(()=>{}); await p.waitForTimeout(500);
 await capture('listening/reading');
-await p.getByRole('button', { name: /Hide it/ }).click().catch(()=>{}); await p.waitForTimeout(400);
+await p.getByRole('button', { name: /^Hide$/ }).click().catch(()=>{}); await p.waitForTimeout(400);
 await p.getByLabel('Back to the map').click().catch(()=>{}); await p.waitForTimeout(600);
 await capture('map/playing');
 focus.push(...await focusSweep('map/playing'));
@@ -435,14 +435,8 @@ focus.push(...await focusSweep('map/trip'));
 await p.keyboard.press('Escape'); await p.waitForTimeout(300);
 await p.locator('.nav button').nth(1).click(); await p.waitForTimeout(700); await capture('my-echoes');
 focus.push(...await focusSweep('my-echoes'));
-/*
- * Settings is no longer a tab. It is a gear on My Echoes, so the audit walks the route a
- * person actually walks. Worth noting why this line changed rather than just changing it:
- * moving settings behind that gear made it unreachable for anybody with an empty
- * collection, because Collection returns early before the header renders. The header is
- * on the empty branch now, and this is the walk that proves it.
- */
-await p.locator('.coll-settings').click(); await p.waitForTimeout(700); await capture('settings');
+/* Settings is the third tab again (James's call): the icon on My Echoes filters echoes. */
+await p.locator('.nav button').nth(2).click(); await p.waitForTimeout(700); await capture('settings');
 focus.push(...await focusSweep('settings'));
 await p.locator('.nav button').first().click(); await p.waitForTimeout(600);
 /* The package is reached through the journey chip now: the download fab that used to

@@ -166,7 +166,8 @@ const H = 822;
  * did not, so the bottom of every route quietly slid underneath it. That failure mode is
  * gone with the sheet: there is one number now and the caller passes it.
  */
-const NAV_H = 72;
+/* 74, as `--nav-h` is: measured. It was 72, two pixels short of the real bar. */
+const NAV_H = 74;
 /**
  * How many echoes ripple at once.
  *
@@ -226,11 +227,16 @@ const MAPBAR_FALLBACK = 119;
 /**
  * How tall the control column is, so a marker can be kept out from behind it.
  *
- * Five objects at 8px apart, of which the zoom pair is a double-height pill: 44*4 + 88,
+ * Five objects 10px apart, of which the zoom pair is a double-height pill: 44*4 + 88,
  * plus four gaps. It tracks `.rail` and `.fab` in `theme.css`; change the column and
  * change this, exactly as with the two heights above.
  */
-const RAIL_H = 44 * 4 + 88 + 8 * 4;
+/* Five items (pulse, the zoom pair, globe, compass, full screen) and four gaps of the
+   rail's 10px (`theme.css`). Stale at 8 after the gap changed, which let the rare marker
+   sit 8px into the column's top button. */
+const RAIL_H = 44 * 4 + 90 + 10 * 4; // measured 306: the zoom pair is 90 with its borders
+/* The side margin, `--gutter` in `theme.css`. The edge marker lines up with the rail. */
+const GUTTER = 16;
 /**
  * Where the route and the pins are allowed to be drawn.
  *
@@ -794,7 +800,8 @@ export function RouteMap({
     return shown.map((mark) => {
       let y = mark.y;
       if (mark.side === "right" && y > railTop - 18 && y < railBottom + 18) {
-        y = railTop - 26;
+        // The plate is 34 tall: its bottom sits the rail's own 10px above the column.
+        y = railTop - 17 - 10;
       }
       if (y - lastY < 40) y = lastY + 40;
       y = Math.max(floor, y);
@@ -1323,8 +1330,8 @@ export function RouteMap({
           drawn straight through it, one unreadable line over three buttons. */}
       <text
         className="map-credit"
-        x={10}
-        y={box.h - insetFor(barH, reservedBottom).bottom + 2}
+        x={16}
+        y={box.h - insetFor(barH, reservedBottom).bottom - 6}
         textAnchor="start"
       >
         {TILE_ATTRIBUTION}
@@ -1373,7 +1380,7 @@ export function RouteMap({
           <g
             key={mark.echo.id}
             className={warm ? "map-edge map-edge-warm" : "map-edge"}
-            transform={`translate(${right ? box.w : 0} ${mark.y.toFixed(1)})`}
+            transform={`translate(${right ? box.w - GUTTER : GUTTER} ${mark.y.toFixed(1)})`}
             onPointerDown={(e) => {
               e.stopPropagation();
               onSelect(mark.echo.id);
@@ -1383,17 +1390,19 @@ export function RouteMap({
           >
             {/* Mirrored for the left edge, so the plate hangs INTO the screen either way. */}
             <g transform={right ? undefined : "scale(-1 1)"}>
-              <rect className="map-edge-plate" x="-118" y="-17" width="124" height="34" rx="14" />
+              {/* A whole pill on the gutter, its right edge on the rail's: hung off the
+                  screen edge as a tab, it read as cut off beside everything else on 16px. */}
+              <rect className="map-edge-plate" x="-124" y="-17" width="124" height="34" rx="14" />
             </g>
             <g
               className="map-edge-glyph"
-              transform={`translate(${right ? -104 : 104} 0) scale(0.6) translate(-12 -12)`}
+              transform={`translate(${right ? -110 : 110} 0) scale(0.6) translate(-12 -12)`}
             >
               {CATEGORY_ICON[mark.echo.category]}
             </g>
             <text
               className="map-edge-text"
-              x={right ? -88 : 88}
+              x={right ? -94 : 94}
               y="4"
               textAnchor={right ? "start" : "end"}
             >
@@ -1401,7 +1410,7 @@ export function RouteMap({
             </text>
             <path
               className="map-edge-arrow"
-              d={right ? "M-20 -5 L-14 0 L-20 5" : "M20 -5 L14 0 L20 5"}
+              d={right ? "M-26 -5 L-20 0 L-26 5" : "M26 -5 L20 0 L26 5"}
             />
           </g>
         );

@@ -438,5 +438,5 @@ export function useJourney(
     };
   }, [session, restored, library]);
 
-  return { state, session, walk, store, restoring: restored === null };
+  return { state, session, walk, store, speech, restoring: restored === null };
 }

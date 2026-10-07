@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { PRIVACY_DEFAULTS, holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
 import { LIBRARY, ROUTES } from "./library.generated";
-import { CATEGORY_ORDER, type ChipGroup } from "./categories";
+import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
 import { RouteMap, MAX_ZOOM, MIN_ZOOM, type PinState } from "./RouteMap";
@@ -51,8 +51,6 @@ import {
   type Route,
 } from "@echofinders/core";
 
-/** Every category, as the starting filter. See `activeCats`. */
-const ALL_CATEGORIES: ReadonlySet<EchoCategory> = new Set(CATEGORY_ORDER);
 /** Nothing chosen. Onboarding's starting point, and never the map's. */
 const EMPTY_CATS: ReadonlySet<EchoCategory> = new Set();
 
@@ -268,7 +266,7 @@ export function App() {
   const [listening, setListening] = useState(false);
   // The listener's own setting drives it, not a constant. `handsFree` is off by default
   // (PRIVACY_DEFAULTS), so an echo collects itself on arrival and then waits to be played.
-  const { state, session, walk, store } = useJourney(roaming ? null : route, LIBRARY, {
+  const { state, session, walk, store, speech } = useJourney(roaming ? null : route, LIBRARY, {
     sound,
     narrate,
     autoPlay,
@@ -677,9 +675,23 @@ export function App() {
       const d = ((simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS) / rate;
       startedRef.current = { id: nowPlaying.id, at: Date.now() - clamped * d * 1000 };
       setPlayhead(clamped);
+      // And the voice with it: a clock that moves on its own is a scrubber that lies.
+      speech.seek(clamped);
     },
-    [nowPlaying, simple, rate, setPlayhead],
+    [nowPlaying, simple, rate, setPlayhead, speech],
   );
+
+  /*
+   * A new speed or narrator applies now, from where the listener is, rather than on the
+   * next echo. Speech cannot change pace mid-sentence, so it says the rest again.
+   */
+  const voiceSettings = useRef({ rate, voice });
+  useEffect(() => {
+    const was = voiceSettings.current;
+    voiceSettings.current = { rate, voice };
+    if (was.rate === rate && was.voice === voice) return;
+    speech.seek(progressRef.current);
+  }, [rate, voice, speech]);
 
   const pageVisible = usePageVisible();
   /*
@@ -869,26 +881,8 @@ export function App() {
    * empty map with no obvious way back, and nobody means it.
    */
   const toggleCategory = useCallback((group: ChipGroup) => {
-    setCats((current) => {
-      /*
-       * TAPPING A KIND SHOWS THAT KIND, the way every map's filter chips work.
-       *
-       * It used to toggle the chip off. With nothing filtered every chip is on, so the
-       * first tap on "History" hid history — the opposite of what the tap meant, reported
-       * by the listener as "everything is selected, then I select something and it
-       * unselects". So the first tap from "everything" narrows to that kind alone; after
-       * that, taps add and remove; and removing the last kind, or adding the last one
-       * back, returns to everything rather than to an empty map.
-       */
-      const all = !current || current.size >= ALL_CATEGORIES.size;
-      if (all) return new Set(group.categories);
-      const next = new Set(current);
-      const lit = group.categories.some((c) => next.has(c));
-      if (lit) for (const c of group.categories) next.delete(c);
-      else for (const c of group.categories) next.add(c);
-      if (next.size === 0 || next.size >= ALL_CATEGORIES.size) return null;
-      return next;
-    });
+    // The rule lives in `categories.tsx`, shared with My Echoes' filter.
+    setCats((current) => toggleCategories(current, group));
   }, []);
   /**
    * All: back to everything, always.
@@ -1685,7 +1679,6 @@ export function App() {
                 playOrAsk(echo);
                 setListening(true);
               }}
-              onSettings={() => setTab("settings")}
               isPlaying={(id) =>
                 state.playback.kind !== "idle" && state.playback.item.echo.id === id
               }

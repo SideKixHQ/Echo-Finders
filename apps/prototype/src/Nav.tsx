@@ -25,11 +25,10 @@
  * *switches* and wrong about the tab: a bottom-bar slot is scarce, and nobody has ever gone
  * looking for a privacy screen anywhere but settings.
  *
- * TWO NOW, not three. Settings was taking a third of the bottom bar to hold a screen
- * nobody opens twice, while the product's actual spine is two verbs: find one, keep it. It
- * moves behind a gear on My Echoes, which is where somebody already is when they are
- * sitting down with the app rather than walking with it. Same reasoning that killed the
- * Privacy tab, applied one level up.
+ * THREE AGAIN: Map, My Echoes, Settings. Settings went behind an icon on My Echoes for a
+ * while, and the icon was the sliders everyone reads as "filter", so people tapped it to
+ * filter their echoes and landed in settings with no way back. James's call: settings is
+ * a tab, and the icon on My Echoes filters echoes.
  */
 
 import { memo } from "react";
@@ -71,6 +70,17 @@ function NavInner({ tab, onChange, foundCount }: Props) {
         </svg>
         My Echoes
         {foundCount > 0 && <span className="badge">{foundCount}</span>}
+      </button>
+      <button
+        className={tab === "settings" ? "on" : ""}
+        onClick={() => onChange("settings")}
+        aria-current={tab === "settings" ? "page" : undefined}
+      >
+        <svg viewBox="0 0 24 24">
+          <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+          <circle cx="12" cy="12" r="3" />
+        </svg>
+        Settings
       </button>
     </nav>
   );

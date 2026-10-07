@@ -36,7 +36,15 @@ jobs:
         with:
           python-version: "3.12"
       - run: npm ci
-      - run: npx playwright install --with-deps chromium
+      # Chromium itself comes from Playwright's own CDN; only its system libraries come from
+      # apt. On 7 Oct the Ubuntu mirror hung for 39 minutes, and a time-boxed retry then hit
+      # the apt lock the hung install still held. GitHub's runner image already carries
+      # Chrome and its libraries, so the apt half is best-effort and bounded, never fatal.
+      - run: npx playwright install chromium
+      - name: Chromium's system libraries (best-effort)
+        timeout-minutes: 5
+        continue-on-error: true
+        run: sudo npx playwright install-deps chromium
       - run: npm run build --workspace @echofinders/core
       - run: npm run library:build
       - run: npm run audit:contrast
@@ -44,4 +52,31 @@ jobs:
       - run: npm run audit:controls
       - run: npm run audit:spec
       - run: npm run audit:layout
+
+  # The checks that walk the app (a simulated walk to the fort, real timers) are slow, and
+  # with alignment and flows added they took the audits job past its 40 minutes. They run
+  # alongside it instead, so both finish sooner and neither is cut off.
+  journeys:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      # Chromium itself comes from Playwright's own CDN; only its system libraries come from
+      # apt. On 7 Oct the Ubuntu mirror hung for 39 minutes, and a time-boxed retry then hit
+      # the apt lock the hung install still held. GitHub's runner image already carries
+      # Chrome and its libraries, so the apt half is best-effort and bounded, never fatal.
+      - run: npx playwright install chromium
+      - name: Chromium's system libraries (best-effort)
+        timeout-minutes: 5
+        continue-on-error: true
+        run: sudo npx playwright install-deps chromium
+      - run: npm run build --workspace @echofinders/core
+      - run: npm run library:build
       - run: npm run audit:paywall
+      - run: npm run audit:align
+      - run: npm run audit:flows

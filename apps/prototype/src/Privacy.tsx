@@ -72,6 +72,11 @@ export function Privacy({
 
   return (
     <div className="screen-body">
+      {/* Titled, like every tab. It had no title at all, so it was a page of switches
+          that did not say what it was. */}
+      <header className="screen-head">
+        <h1>Settings</h1>
+      </header>
       {/*
         How you are travelling, first, because it is the setting that changes what the app
         *is* rather than what it shows, and because it was unreachable.
