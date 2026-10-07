@@ -2828,15 +2828,7 @@ body {
   font: inherit; font-size: 14px; color: var(--aqua);
   background: none; border: 1px solid rgba(0, 255, 231, 0.4);
 }
-.coll-settings {
-  width: 44px; height: 44px; flex: none; border-radius: 12px; cursor: pointer;
-  border: 1px solid var(--line); background: none; color: var(--muted);
-  display: grid; place-items: center;
-}
-.coll-settings svg {
-  width: 21px; height: 21px; fill: none; stroke: currentColor;
-  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
-}
+
 .coll-stats { display: flex; gap: 8px; }
 .coll-stat {
   flex: 1 1 0; min-width: 0; text-align: center; padding: 13px 10px;

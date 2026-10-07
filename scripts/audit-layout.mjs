@@ -423,7 +423,7 @@ async function walk(width, height, theme) {
    */
   if (theme === 'light') {
     await p.locator('.nav button').nth(1).click(); await p.waitForTimeout(500);
-    await p.locator('.coll-settings').click().catch(() => {}); await p.waitForTimeout(500);
+    await p.locator('.nav button').nth(2).click().catch(() => {}); await p.waitForTimeout(500);
     /*
      * The switch is a `role="switch"` called "Dark map", not a button called "Light".
      *
@@ -475,7 +475,7 @@ async function walk(width, height, theme) {
 
   await p.locator('.nav button').nth(1).click(); await p.waitForTimeout(700);
   await look('my-echoes');
-  await p.locator('.coll-settings').click().catch(() => {}); await p.waitForTimeout(600);
+  await p.locator('.nav button').nth(2).click().catch(() => {}); await p.waitForTimeout(600);
   await look('settings');
   await p.locator('.nav button').first().click(); await p.waitForTimeout(600);
   /* Through the journey chip, since the duplicate download fab is gone. */
