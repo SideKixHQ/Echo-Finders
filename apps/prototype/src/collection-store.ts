@@ -72,6 +72,27 @@ export class IndexedDbCollection implements CollectionStore {
     }
   }
 
+  /**
+   * Every journey's collection, for My Echoes.
+   *
+   * Collections are filed per journey (a walk, a drive, a flight, roaming), which is right
+   * for a session but wrong for a person looking at what they have found: My Echoes showed
+   * only the journey currently selected, so its Travel filter could never offer more than
+   * one way of travelling. This reads them all.
+   */
+  async loadAll(): Promise<readonly { readonly key: string; readonly records: readonly CaptureRecord[] }[]> {
+    const db = await this.open();
+    if (!db) return [];
+    try {
+      const rows = await request<{ key: string; records: CaptureRecord[] }[]>(
+        db.transaction(STORE, "readonly").objectStore(STORE).getAll(),
+      );
+      return rows.map((r) => ({ key: r.key, records: r.records ?? [] }));
+    } catch {
+      return [];
+    }
+  }
+
   /** Opened once, lazily, and never retried: a browser that refuses will refuse again. */
   private open(): Promise<IDBDatabase | null> {
     this.db ??= new Promise((resolve) => {

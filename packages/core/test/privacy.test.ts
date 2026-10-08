@@ -73,6 +73,12 @@ describe("a collection is not a location history", () => {
     expect(redacted.capturedAt).toBe("2026-06-14T14:32:07.000Z");
   });
 
+  it("keeps how they travelled, which says how and not where", () => {
+    const redacted = redactRecord({ ...record(), mode: "driving" }, PRIVACY_DEFAULTS)!;
+    expect(redacted.mode).toBe("driving");
+    expect(holdsPersonalLocation(redacted)).toBe(false);
+  });
+
   it("drops the standing position by default", () => {
     const redacted = redactRecord(record(), PRIVACY_DEFAULTS)!;
     expect(holdsPersonalLocation(redacted)).toBe(false);

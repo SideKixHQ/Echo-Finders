@@ -23,7 +23,7 @@
  * product's stated purpose and quietly replacing it.
  */
 
-import type { Echo, LatLng } from "../types.js";
+import type { Echo, LatLng, TravelMode } from "../types.js";
 
 /**
  * Three states, not two.
@@ -68,6 +68,13 @@ export interface CaptureRecord {
   readonly distanceKm?: number;
   /** ISO timestamp of the first complete listen, if there has been one. */
   readonly heardAt?: string;
+  /**
+   * How the listener was travelling when it opened: walking, driving, flying. What My
+   * Echoes filters "Travel" by. Not personal in the way `stoodAt` is (it says how, not
+   * where), so it survives redaction. Absent on records made before it existed; the app
+   * falls back to the journey the record was filed under.
+   */
+  readonly mode?: TravelMode;
 }
 
 /** Why an arrival did not open an echo. */
