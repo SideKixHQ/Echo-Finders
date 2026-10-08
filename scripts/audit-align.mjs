@@ -55,8 +55,8 @@ const SCREENS = {
     { sel: '.map-credit', left: true },
     // The off-screen marker, when there is one: a whole pill, its right edge on the gutter.
     { sel: '.map-edge-plate', right: true, optional: true },
-    // ...and sits the rail's own 10px above it, when it is pushed up off the rail.
-    { sel: '.map-edge-plate', gapAbove: '.rail', gap: 10, optional: true },
+    // ...and sits the rail's own 10px above it when near it; from 24px up it is clear of it.
+    { sel: '.map-edge-plate', gapAbove: '.rail', gap: 10, clear: 24, optional: true },
     { sel: '.nav', whole: true },
   ],
   synced: [
@@ -152,7 +152,7 @@ async function measure(p, size, screen) {
   for (const r of rows) {
     if (r.absent) continue;
     if (r.missing) { problems.push(`${r.sel}: not on screen`); continue; }
-    if (r.gapAbove && Math.abs(r.gapNow - r.gap) > TOLERANCE) problems.push(`${r.sel}: ${r.gapNow.toFixed(1)}px above ${r.gapAbove}, should be ${r.gap}${process.env.DEBUG ? ` (${r.info})` : ''}`);
+    if (r.gapAbove && Math.abs(r.gapNow - r.gap) > TOLERANCE && !(r.clear && r.gapNow >= r.clear - TOLERANCE)) problems.push(`${r.sel}: ${r.gapNow.toFixed(1)}px above ${r.gapAbove}, should be ${r.gap}${process.env.DEBUG ? ` (${r.info})` : ''}`);
     if (r.middleOf && Math.abs(r.dy) > TOLERANCE) problems.push(`${r.sel}: ${r.dy.toFixed(1)}px off the centre line of ${r.middleOf}${process.env.DEBUG ? ` (${r.dbg})` : ''}`);
     if (r.hidden) problems.push(`${r.sel}: ${r.hidden}px of its content cut off inside it`);
     if (r.stack && Math.abs(r.above - r.below) > TOLERANCE * 2) problems.push(`${r.sel}: ${r.above.toFixed(0)}px above the content, ${r.below.toFixed(0)}px below`);
