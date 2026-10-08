@@ -1306,7 +1306,10 @@ body {
      the icon's right half. */
   position: absolute; top: -7px; left: 50%; margin-left: 10px;
   min-width: 15px; height: 15px; padding: 0 4px; border-radius: 99px;
-  background: var(--ember); color: #fff; font-size: 11px; line-height: 15px;
+  /* Dark figures on ember: white on it was 2.07:1, under the 4.5:1 a count needs. This
+     ink is #0b0f2b, fixed rather than a theme token, because the badge stays ember in
+     both themes and so must its figures. */
+  background: var(--ember); color: #0b0f2b; font-weight: 600; font-size: 11px; line-height: 15px;
 }
 
 
