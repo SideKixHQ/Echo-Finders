@@ -105,6 +105,47 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── Settings › Membership ──────────────────────────────────────────────────────
+// Buying, cancelling and turning renewal back on, all from Settings. Nothing is charged:
+// purchases are recorded on the device until Stripe lands.
+{
+  const { ctx, p } = await freshApp();
+  await p.locator('.nav').getByRole('button', { name: /Settings/ }).click();
+  await p.waitForTimeout(400);
+  const panel = p.locator('.membership');
+  check('Membership: first in Settings, and says the plan', /Free/.test(await panel.locator('.membership-plan').textContent() ?? ''));
+  await panel.getByRole('button', { name: /Restore purchases/ }).click();
+  await p.waitForTimeout(300);
+  check('Membership: Restore says what it found', /Nothing to restore/.test(await panel.getByRole('status').textContent() ?? ''));
+  await panel.getByRole('button', { name: /Membership options/ }).click();
+  await p.waitForTimeout(400);
+  const sheet = p.getByRole('dialog', { name: 'Membership options' });
+  check('Membership: options open the plans', await visible(sheet));
+  await sheet.getByRole('button', { name: 'Close' }).click();
+  await p.waitForTimeout(300);
+  check('Membership: Close closes them', !(await visible(sheet)));
+  await panel.getByRole('button', { name: /Membership options/ }).click();
+  await p.waitForTimeout(400);
+  await sheet.locator('label', { hasText: 'All-Access' }).click();
+  await sheet.getByRole('button', { name: /Start All-Access/ }).click();
+  await p.waitForTimeout(400);
+  check('Membership: buying All-Access shows it, renewing', /All-Access[\s\S]*Renews/.test(await panel.locator('.membership-plan').textContent() ?? ''));
+  await panel.getByRole('button', { name: /Cancel All-Access/ }).click();
+  await p.waitForTimeout(300);
+  await panel.getByRole('button', { name: 'Keep All-Access' }).click();
+  await p.waitForTimeout(300);
+  check('Membership: Keep All-Access backs out of cancelling', /Renews/.test(await panel.locator('.membership-plan').textContent() ?? ''));
+  await panel.getByRole('button', { name: /Cancel All-Access/ }).click();
+  await p.waitForTimeout(300);
+  await panel.getByRole('button', { name: 'Cancel renewal' }).click();
+  await p.waitForTimeout(300);
+  check('Membership: cancelling keeps the year and stops the renewal', /All-Access[\s\S]*will not renew/.test(await panel.locator('.membership-plan').textContent() ?? ''));
+  await panel.getByRole('button', { name: /Turn renewal back on/ }).click();
+  await p.waitForTimeout(300);
+  check('Membership: renewal turns back on', /Renews/.test(await panel.locator('.membership-plan').textContent() ?? ''));
+  await ctx.close();
+}
+
 // ── The trip sheet ──────────────────────────────────────────────────────────────
 {
   const { ctx, p } = await freshApp();

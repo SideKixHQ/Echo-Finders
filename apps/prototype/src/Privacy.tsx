@@ -10,6 +10,7 @@
  * (`featureAvailability`) rather than being written twice.
  */
 
+import type { ReactNode } from "react";
 import {
   capabilitiesImpliedBy,
   featureAvailability,
@@ -41,6 +42,8 @@ interface Props {
   readonly onKids: (on: boolean) => void;
   readonly theme: "dark" | "light";
   readonly onTheme: (theme: "dark" | "light") => void;
+  /** Settings › Membership, first: what you have is the first thing anybody looks for here. */
+  readonly membership?: ReactNode;
 }
 
 const FEATURE_LABELS: Record<FeatureId, string> = {
@@ -64,6 +67,7 @@ export function Privacy({
   onKids,
   theme,
   onTheme,
+  membership,
 }: Props) {
   // What the app would actually be granted, given these settings. Shown so the fallbacks
   // below are the real ones rather than a hand-written list that drifts.
@@ -77,6 +81,7 @@ export function Privacy({
       <header className="screen-head">
         <h1>Settings</h1>
       </header>
+      {membership}
       {/*
         How you are travelling, first, because it is the setting that changes what the app
         *is* rather than what it shows, and because it was unreachable.

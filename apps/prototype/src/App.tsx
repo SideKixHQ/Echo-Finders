@@ -34,7 +34,8 @@ import { Ribbon } from "./Ribbon";
 import { EchoBar, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
-import { buyAllAccess, buyCityPass, readEntitlement } from "./entitlement-store";
+import { buyAllAccess, buyCityPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
+import { MembershipPanel } from "./Membership";
 import { addHeard, readHeard } from "./heard-store";
 import { City } from "./City";
 import type { CaptureEvent, CaptureRecord, Echo, EchoCategory, TravelMode } from "@echofinders/core";
@@ -44,6 +45,8 @@ import {
   checkEligibility,
   mayHearAnother,
   cityAt,
+  freeEchoesLeft,
+  membershipOf,
   type Entitlement,
   distanceKm,
   effectiveRadiusKm,
@@ -333,6 +336,8 @@ export function App() {
    */
   const [entitlement, setEntitlement] = useState<Entitlement>(() => readEntitlement());
   const [paywallFor, setPaywallFor] = useState<Echo | null>(null);
+  /** Settings › Membership options: the plans, with nobody stopped mid-walk. */
+  const [optionsOpen, setOptionsOpen] = useState(false);
 
 
 
@@ -1768,6 +1773,19 @@ export function App() {
               onKids={setKidsMode}
               theme={theme}
               onTheme={setTheme}
+              membership={
+                <MembershipPanel
+                  membership={membershipOf(entitlement, Date.now())}
+                  freeLeft={freeEchoesLeft(entitlement, { ...listenerFor(kids, optIns), heardEchoIds: [...heardIds] }, Date.now())}
+                  onOptions={() => setOptionsOpen(true)}
+                  onRestore={() => {
+                    const back = readEntitlement();
+                    setEntitlement(back);
+                    return membershipOf(back, Date.now());
+                  }}
+                  onRenewal={(on) => setEntitlement(setAllAccessRenewal(entitlement, on))}
+                />
+              }
             />
           )}
 
@@ -1986,6 +2004,22 @@ export function App() {
           take the tab bar away: "not now" should never be the only exit from a screen
           about money.
         */}
+        {optionsOpen && !paywallFor && (
+          <Paywall
+            city={state.position ? cityAt(state.position.at) : null}
+            heardCount={heardIds.length}
+            allAccessRunning={membershipOf(entitlement, Date.now()).plan === "all-access"}
+            onBuy={(plan) => {
+              // The same stub as the paywall below: recorded on this device, nothing charged.
+              const city = state.position ? cityAt(state.position.at) : null;
+              setEntitlement(
+                plan === "city" && city ? buyCityPass(entitlement, city.id) : buyAllAccess(entitlement),
+              );
+              setOptionsOpen(false);
+            }}
+            onClose={() => setOptionsOpen(false)}
+          />
+        )}
         {paywallFor && (
           <Paywall
             echo={paywallFor}

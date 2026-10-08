@@ -17,6 +17,8 @@ import {
   cityAt,
   covers,
   PLANS,
+  membershipOf,
+  withRenewal,
   type Entitlement,
 } from "../src/entitlement/entitlement.js";
 import type { Echo, ListenerProfile } from "../src/types.js";
@@ -190,5 +192,44 @@ describe("the paywall, inside the eligibility gate", () => {
       entitlement: FREE,
     });
     expect(r.reasons.indexOf("below-min-age")).toBeLessThan(r.reasons.indexOf("needs-unlock"));
+  });
+});
+
+describe("membership, as Settings shows it", () => {
+  const NOW = Date.UTC(2026, 9, 8);
+  const YEAR_ON = NOW + ALL_ACCESS_TERM_MS;
+  const ALL: Entitlement = { kind: "passes", purchasedAt: NOW, allAccessUntil: YEAR_ON };
+
+  it("says free, a City Pass, All-Access or the old lifetime unlock", () => {
+    expect(membershipOf(FREE, NOW)).toEqual({ plan: "free" });
+    expect(membershipOf(UNLOCKED, NOW)).toEqual({ plan: "lifetime" });
+    expect(membershipOf({ kind: "passes", cities: ["new-york"] }, NOW)).toEqual({
+      plan: "city-pass",
+      cities: ["new-york"],
+    });
+    expect(membershipOf(ALL, NOW)).toEqual({
+      plan: "all-access",
+      until: YEAR_ON,
+      renews: true,
+      cities: [],
+    });
+  });
+
+  it("falls back to the City Passes once All-Access has run out, since they never expire", () => {
+    const both: Entitlement = { ...ALL, cities: ["new-york"] };
+    expect(membershipOf(both, YEAR_ON + 1)).toEqual({ plan: "city-pass", cities: ["new-york"] });
+  });
+
+  it("cancelling stops the renewal and keeps the year already paid for", () => {
+    const cancelled = withRenewal(ALL, false);
+    expect(membershipOf(cancelled, NOW)).toMatchObject({ plan: "all-access", renews: false });
+    expect(mayHearAnother(cancelled, listener(heardIds(FREE_ECHO_LIMIT)), "new", undefined, NOW)).toBe(true);
+    expect(withRenewal(cancelled, true)).toEqual(ALL);
+  });
+
+  it("has nothing to cancel on a City Pass", () => {
+    const pass: Entitlement = { kind: "passes", cities: ["new-york"] };
+    expect(withRenewal(pass, false)).toBe(pass);
+    expect(withRenewal(FREE, false)).toBe(FREE);
   });
 });
