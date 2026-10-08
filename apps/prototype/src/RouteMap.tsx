@@ -799,8 +799,16 @@ export function RouteMap({
     let lastY = -Infinity;
     return shown.map((mark) => {
       let y = mark.y;
-      if (mark.side === "right" && y > railTop - 18 && y < railBottom + 18) {
-        // The plate is 34 tall: its bottom sits the rail's own 10px above the column.
+      /*
+       * The plate is 34 tall: its bottom sits the rail's own 10px above the column.
+       *
+       * Snapped from 24px out, not only on overlap. It used to snap only when the plate
+       * would cover the column, so a marker whose echo landed just above it stayed where it
+       * fell: 15.7px up, which reads as a 10px gap done badly, and anything from 1 to 9px up
+       * sat nearly touching. Within 24px it lines up exactly; beyond that it is plainly its
+       * own thing and keeps its true bearing.
+       */
+      if (mark.side === "right" && y + 17 > railTop - 24 && y < railBottom + 18) {
         y = railTop - 17 - 10;
       }
       if (y - lastY < 40) y = lastY + 40;
