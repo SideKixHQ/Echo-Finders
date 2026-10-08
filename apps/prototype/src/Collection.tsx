@@ -23,7 +23,7 @@
 import { useCallback, useState } from "react";
 import { cityAt, rarityOf, rarityReasons, type CaptureEvent, type Echo, type EchoCategory, type TravelMode } from "@echofinders/core";
 import { ALL_CATEGORIES, CATEGORY_ICON, toggleCategories, type ChipGroup } from "./categories";
-import { CategoryChips } from "./CategoryChips";
+import { KindGrid } from "./KindPicker";
 import { platePng } from "./archive-plate";
 import type { PrivacySettings } from "@echofinders/core";
 import { holdsPersonalLocation } from "@echofinders/core";
@@ -121,8 +121,6 @@ export function Collection({
   const filtered = captured.filter((c) => shown(c.echo) && (!travel || travelOf(c.echo.id) === travel));
   const unheard = filtered.filter((c) => !isHeard(c.echo.id));
   const heard = filtered.filter((c) => isHeard(c.echo.id));
-  // The kinds actually in this collection, for the chips' `available`.
-  const present = new Set<EchoCategory>([...captured.map((c) => c.echo.category), ...saved.map((e) => e.category)]);
   // Only what this collection holds: a filter never offers a place or a way of
   // travelling that would show nothing.
   const places = [...new Set([...captured.map((c) => placeOf(c.echo)), ...saved.map(placeOf)])].sort();
@@ -184,9 +182,7 @@ export function Collection({
         <div className="coll-filter" id="coll-filter">
           {/* Kind: the map's own chips and rule. */}
           <p className="coll-filter-label">Kind</p>
-          <div className="mapbar-chips">
-            <CategoryChips available={present} on={cats ?? ALL_CATEGORIES} onToggle={onToggle} onAll={onAllKinds} />
-          </div>
+          <KindGrid on={cats ?? ALL_CATEGORIES} onToggle={onToggle} onAll={onAllKinds} />
           <p className="coll-filter-label">Place</p>
           <Options
             label="Place"
