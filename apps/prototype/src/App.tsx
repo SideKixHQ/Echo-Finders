@@ -6,6 +6,7 @@ import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
 import { RouteMap, MAX_ZOOM, MIN_ZOOM, type PinState } from "./RouteMap";
 import { Collection } from "./Collection";
+import { IndexedDbCollection } from "./collection-store";
 import { Privacy } from "./Privacy";
 import { Nav, type Tab } from "./Nav";
 import { Plan } from "./Plan";
@@ -36,8 +37,9 @@ import { Paywall } from "./Paywall";
 import { buyAllAccess, buyCityPass, readEntitlement } from "./entitlement-store";
 import { addHeard, readHeard } from "./heard-store";
 import { City } from "./City";
-import type { CaptureEvent, Echo, EchoCategory } from "@echofinders/core";
+import type { CaptureEvent, CaptureRecord, Echo, EchoCategory, TravelMode } from "@echofinders/core";
 import {
+  rarityOf,
   bearingDeg as bearingTo,
   checkEligibility,
   mayHearAnother,
@@ -64,6 +66,8 @@ const EMPTY_CATS: ReadonlySet<EchoCategory> = new Set();
 const dev =
   typeof location !== "undefined" && new URLSearchParams(location.search).has("dev");
 
+/** The library by id, for turning stored records from other journeys back into echoes. */
+const LIBRARY_BY_ID: ReadonlyMap<string, Echo> = new Map(LIBRARY.map((e) => [e.id, e]));
 const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROUTES[0]!;
 
 export function App() {
@@ -425,6 +429,49 @@ export function App() {
     () => (privacy.keepCollection ? state.captured.filter((c) => !deleted.has(c.echo.id)) : []),
     [state.captured, privacy.keepCollection, deleted],
   );
+
+  /*
+   * Everything found, on every journey, for My Echoes.
+   *
+   * Collections are filed per journey, so My Echoes used to show only the journey that
+   * happened to be selected, and its Travel filter could never offer more than one way
+   * of travelling. The current journey comes live from the session; the others are read
+   * from storage when the tab opens. Each echo carries how it was found (`record.mode`),
+   * falling back to the journey it was filed under for records made before that existed.
+   */
+  const journeyKey = roaming ? "roam" : `route:${route.id}`;
+  const journeyMode: TravelMode = roaming ? roamMode : route.mode;
+  const [elsewhere, setElsewhere] = useState<readonly { key: string; records: readonly CaptureRecord[] }[]>([]);
+  useEffect(() => {
+    if (tab !== "echoes") return;
+    let live = true;
+    void new IndexedDbCollection(journeyKey).loadAll().then((rows) => {
+      if (live) setElsewhere(rows.filter((r) => r.key !== journeyKey));
+    });
+    return () => {
+      live = false;
+    };
+  }, [tab, journeyKey]);
+  const found = useMemo(() => {
+    const travel = new Map<string, TravelMode>();
+    const heardBefore = new Set<string>();
+    if (!privacy.keepCollection) return { list: [] as CaptureEvent[], travel, heardBefore };
+    const list: CaptureEvent[] = [...kept];
+    for (const c of kept) travel.set(c.echo.id, c.record.mode ?? journeyMode);
+    for (const { key, records } of elsewhere) {
+      const keyMode: TravelMode =
+        key === "roam" ? "walking" : (ROUTES.find((r) => `route:${r.id}` === key)?.mode ?? "walking");
+      for (const record of records) {
+        if (deleted.has(record.echoId) || travel.has(record.echoId)) continue;
+        const echo = LIBRARY_BY_ID.get(record.echoId);
+        if (!echo) continue;
+        list.push({ echo, record, rarity: rarityOf(echo) });
+        travel.set(record.echoId, record.mode ?? keyMode);
+        if (record.heardAt) heardBefore.add(record.echoId);
+      }
+    }
+    return { list, travel, heardBefore };
+  }, [kept, elsewhere, deleted, privacy.keepCollection, journeyMode]);
 
   /**
    * Which echoes have actually been HEARD, which is what the free ten counts.
@@ -1673,7 +1720,8 @@ export function App() {
 
           {tab === "echoes" && (
             <Collection
-              captured={kept}
+              captured={found.list}
+              travelOf={(id) => found.travel.get(id) ?? journeyMode}
               privacy={privacy}
               onPlay={(echo) => {
                 playOrAsk(echo);
@@ -1682,7 +1730,7 @@ export function App() {
               isPlaying={(id) =>
                 state.playback.kind !== "idle" && state.playback.item.echo.id === id
               }
-              isHeard={(id) => stateOf(id) === "heard"}
+              isHeard={(id) => stateOf(id) === "heard" || found.heardBefore.has(id)}
               saved={savedNearby}
               onSave={toggleSave}
               mode={roaming ? roamMode : route.mode}
@@ -2028,7 +2076,7 @@ export function App() {
               setTab(next);
               setListening(false);
             }}
-            foundCount={kept.length}
+            foundCount={found.list.length}
           />
           <div className="homebar" />
         </div>

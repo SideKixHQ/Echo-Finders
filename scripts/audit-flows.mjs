@@ -187,6 +187,30 @@ async function arrive() {
     await p.locator('#coll-filter').getByRole('button', { name: /History/ }).click();
     await p.waitForTimeout(400);
     check("Filter: the fort's own kind shows it", await visible(fort));
+
+    // Place and Travel: only what the collection holds, and each narrows to the fort.
+    const placeGroup = p.getByRole('group', { name: 'Place' });
+    const travelGroup = p.getByRole('group', { name: 'Travel' });
+    check('Filter: Place offers New York', await visible(placeGroup.getByRole('button', { name: 'New York' })));
+    await placeGroup.getByRole('button', { name: 'New York' }).click();
+    await p.waitForTimeout(300);
+    check('Filter: New York shows the fort', await visible(fort));
+    check('Filter: Travel offers Walking', await visible(travelGroup.getByRole('button', { name: 'Walking' })));
+    check('Filter: Travel offers no way you have not travelled',
+      (await travelGroup.getByRole('button', { name: 'Flying' }).count()) === 0);
+    await travelGroup.getByRole('button', { name: 'Walking' }).click();
+    await p.waitForTimeout(300);
+    check('Filter: Walking shows the fort', await visible(fort));
+
+    // Another journey: what was found on the first stays in My Echoes.
+    await p.locator('.nav').getByRole('button', { name: /Map/ }).click();
+    await p.waitForTimeout(500);
+    await p.getByLabel(/Change your journey/).click();
+    await p.locator('.jmenu-item', { hasText: 'Ocean Drive' }).first().click();
+    await p.waitForTimeout(1500);
+    await p.locator('.nav').getByRole('button', { name: /My Echoes/ }).click();
+    await p.waitForTimeout(800);
+    check('My Echoes: keeps what was found on other journeys', await visible(fort));
     await ctx.close();
   }
 }

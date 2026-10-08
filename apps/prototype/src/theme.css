@@ -2822,6 +2822,26 @@ body {
    (`mapbar-chips`), so the arrows sit beside the chips and the cut edge fades. Drawn as
    a plain `.chips` row, the arrows covered "ALL" and "Ghosts". */
 .coll-filter { margin: 0 0 16px; }
+/* Three labelled groups: Kind, Place, Travel. Labels in the section-head style, 16 above
+   each group's controls and 8 below the label, so the panel reads as one form. */
+.coll-filter-label {
+  margin: 16px 0 8px; font-family: "Space Grotesk", monospace; font-size: 11px;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+}
+.coll-filter-label:first-child { margin-top: 0; }
+/* Place and Travel: one pick from a short list, drawn exactly as the Kind row is: one
+   panel (the chips' own), borderless options inside it, the chosen one filled. They wrap
+   rather than scroll, because there are few of them and every one should be visible. */
+.coll-opts {
+  display: flex; flex-wrap: wrap; gap: 3px; padding: 4px; border-radius: 15px;
+  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
+}
+.coll-opt {
+  min-height: 40px; padding: 0 12px; border-radius: 11px; cursor: pointer; border: 0;
+  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.03em;
+  text-transform: uppercase; color: var(--muted); background: none;
+}
+.coll-opt.on { color: var(--aqua); background: rgba(var(--rgb-hair), 0.08); }
 .coll-nomatch { padding-top: 24px; }
 .coll-showall {
   margin-top: 14px; min-height: 44px; padding: 0 20px; border-radius: 12px; cursor: pointer;

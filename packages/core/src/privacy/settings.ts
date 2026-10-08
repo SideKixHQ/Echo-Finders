@@ -90,11 +90,13 @@ export function redactRecord(
   // neither what it did nor a good idea, since inventing a position is a worse answer than
   // admitting there isn't one. Leaving the fields out is the only version that survives
   // being written to a disk, sent to an API, or read by code that forgot to check.
-  const { echoId, capturedAt, heardAt } = record;
+  const { echoId, capturedAt, heardAt, mode } = record;
   return {
     echoId,
     capturedAt,
     ...(heardAt ? { heardAt } : {}),
+    // How, not where: kept, because My Echoes filters by it and it locates nobody.
+    ...(mode ? { mode } : {}),
   };
 }
 

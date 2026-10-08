@@ -54,6 +54,16 @@ describe("capture by arrival", () => {
     expect(tracker.stateOf("federal-hall")).toBe("captured");
   });
 
+  it("records how the listener was travelling, for My Echoes' Travel filter", () => {
+    const walking = new CaptureTracker(ADULT);
+    standAt(walking, WALL_STREET, [plaque()]);
+    expect(walking.records[0]!.mode).toBe("walking");
+
+    const driving = new CaptureTracker(ADULT, { mode: "driving" });
+    standAt(driving, WALL_STREET, [plaque()]);
+    expect(driving.records[0]?.mode).toBe("driving");
+  });
+
   /**
    * The rule that stops a collection becoming a list of things you were carried past.
    *

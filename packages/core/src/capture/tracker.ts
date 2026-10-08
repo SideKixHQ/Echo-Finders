@@ -230,6 +230,7 @@ export class CaptureTracker {
       const record: CaptureRecord = {
         echoId: echo.id,
         capturedAt: new Date(position.timestamp).toISOString(),
+        mode: this.options.mode,
         stoodAt: position.at,
         distanceKm: km,
       };
@@ -271,6 +272,7 @@ export class CaptureTracker {
     const record: CaptureRecord = {
       echoId: echo.id,
       capturedAt: new Date(position.timestamp).toISOString(),
+      mode: this.options.mode,
       stoodAt: position.at,
       distanceKm: km,
     };

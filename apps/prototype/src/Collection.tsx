@@ -21,7 +21,7 @@
  */
 
 import { useCallback, useState } from "react";
-import { rarityOf, rarityReasons, type CaptureEvent, type Echo, type EchoCategory, type TravelMode } from "@echofinders/core";
+import { cityAt, rarityOf, rarityReasons, type CaptureEvent, type Echo, type EchoCategory, type TravelMode } from "@echofinders/core";
 import { ALL_CATEGORIES, CATEGORY_ICON, toggleCategories, type ChipGroup } from "./categories";
 import { CategoryChips } from "./CategoryChips";
 import { platePng } from "./archive-plate";
@@ -30,6 +30,8 @@ import { holdsPersonalLocation } from "@echofinders/core";
 
 interface Props {
   readonly captured: readonly CaptureEvent[];
+  /** How each found echo was found: walking, driving, flying. What Travel filters by. */
+  readonly travelOf: (echoId: string) => TravelMode;
   readonly privacy: PrivacySettings;
   /** Play one, from anywhere, at any time — which is the whole point of keeping them. */
   readonly onPlay: (echo: Echo) => void;
@@ -65,6 +67,7 @@ const EMPTY_LINE: Record<TravelMode, string> = {
 
 export function Collection({
   captured,
+  travelOf,
   privacy,
   onPlay,
   isPlaying,
@@ -80,7 +83,15 @@ export function Collection({
   const [filterOpen, setFilterOpen] = useState(false);
   const [cats, setCats] = useState<ReadonlySet<EchoCategory> | null>(null);
   const onToggle = useCallback((group: ChipGroup) => setCats((c) => toggleCategories(c, group)), []);
-  const onAll = useCallback(() => setCats(null), []);
+  // Place and Travel pick one at a time: "New York", "Driving". Null is all.
+  const [place, setPlace] = useState<string | null>(null);
+  const [travel, setTravel] = useState<TravelMode | null>(null);
+  const onAllKinds = useCallback(() => setCats(null), []);
+  const clearAll = useCallback(() => {
+    setCats(null);
+    setPlace(null);
+    setTravel(null);
+  }, []);
 
   if (captured.length === 0 && saved.length === 0) {
     return (
@@ -105,19 +116,27 @@ export function Collection({
     );
   }
 
-  const shown = (echo: Echo) => !cats || cats.has(echo.category);
-  const filtered = captured.filter((c) => shown(c.echo));
+  const shown = (echo: Echo) =>
+    (!cats || cats.has(echo.category)) && (!place || placeOf(echo) === place);
+  const filtered = captured.filter((c) => shown(c.echo) && (!travel || travelOf(c.echo.id) === travel));
   const unheard = filtered.filter((c) => !isHeard(c.echo.id));
   const heard = filtered.filter((c) => isHeard(c.echo.id));
   // The kinds actually in this collection, for the chips' `available`.
   const present = new Set<EchoCategory>([...captured.map((c) => c.echo.category), ...saved.map((e) => e.category)]);
+  // Only what this collection holds: a filter never offers a place or a way of
+  // travelling that would show nothing.
+  const places = [...new Set([...captured.map((c) => placeOf(c.echo)), ...saved.map(placeOf)])].sort();
+  const travels = TRAVEL_ORDER.filter((m) => captured.some((c) => travelOf(c.echo.id) === m));
+  const filtering = cats !== null || place !== null || travel !== null;
   const groups = [
     { key: "unheard", label: `Not heard yet · ${unheard.length}`, items: unheard },
     { key: "heard", label: `Heard · ${heard.length}`, items: heard },
   ].filter((g) => g.items.length > 0);
   // Not captures: these have never been stood on. Shown apart for exactly that reason.
-  const wishlist = saved.filter((e) => shown(e) && !captured.some((c) => c.echo.id === e.id));
-  const nothingMatches = cats !== null && filtered.length === 0 && wishlist.length === 0;
+  // Saved echoes were never stood on, so they have no way of travelling: a Travel filter
+  // shows only what was found that way.
+  const wishlist = saved.filter((e) => shown(e) && !travel && !captured.some((c) => c.echo.id === e.id));
+  const nothingMatches = filtering && filtered.length === 0 && wishlist.length === 0;
 
   const singularCount = captured.filter((c) => rarityOf(c.echo) === "singular").length;
   const minutes = Math.round(captured.reduce((t, c) => t + c.echo.durationS, 0) / 60);
@@ -129,7 +148,7 @@ export function Collection({
           <h1>My Echoes</h1>
           <FilterButton
             open={filterOpen}
-            active={cats !== null}
+            active={filtering}
             onClick={() => setFilterOpen((o) => !o)}
           />
         </div>
@@ -162,16 +181,36 @@ export function Collection({
       </header>
 
       {filterOpen && (
-        <div className="coll-filter mapbar-chips" id="coll-filter">
-          <CategoryChips available={present} on={cats ?? ALL_CATEGORIES} onToggle={onToggle} onAll={onAll} />
+        <div className="coll-filter" id="coll-filter">
+          {/* Kind: the map's own chips and rule. */}
+          <p className="coll-filter-label">Kind</p>
+          <div className="mapbar-chips">
+            <CategoryChips available={present} on={cats ?? ALL_CATEGORIES} onToggle={onToggle} onAll={onAllKinds} />
+          </div>
+          <p className="coll-filter-label">Place</p>
+          <Options
+            label="Place"
+            all="All places"
+            options={places.map((p) => ({ value: p, label: p }))}
+            value={place}
+            onChange={setPlace}
+          />
+          <p className="coll-filter-label">Travel</p>
+          <Options
+            label="Travel"
+            all="Any way"
+            options={travels.map((m) => ({ value: m, label: TRAVEL_LABEL[m] }))}
+            value={travel}
+            onChange={(v) => setTravel(v as TravelMode | null)}
+          />
         </div>
       )}
 
       {nothingMatches && (
         <div className="empty coll-nomatch">
-          <b>Nothing of this kind yet</b>
-          <span>None of your echoes are in the kinds you picked.</span>
-          <button className="coll-showall" onClick={onAll}>Show all</button>
+          <b>Nothing matches yet</b>
+          <span>None of your echoes fit everything you picked.</span>
+          <button className="coll-showall" onClick={clearAll}>Show all</button>
         </div>
       )}
 
@@ -360,5 +399,65 @@ function FilterButton({
       </svg>
       {active && <span className="coll-filter-dot" aria-hidden="true" />}
     </button>
+  );
+}
+
+/** The order Travel options appear in, slowest first, as a person would list them. */
+const TRAVEL_ORDER: readonly TravelMode[] = ["walking", "cycling", "driving", "rail", "flight"];
+const TRAVEL_LABEL: Record<TravelMode, string> = {
+  walking: "Walking",
+  cycling: "Cycling",
+  driving: "Driving",
+  rail: "Train",
+  flight: "Flying",
+};
+
+/**
+ * Where an echo is, as a place a person would filter by.
+ *
+ * The city it falls in (the same areas a City Pass covers, so the filter and what a pass
+ * opens always agree), else the last part of its place line: "Blue Ridge Parkway,
+ * Virginia" files under Virginia. New cities need no change here.
+ */
+function placeOf(echo: Echo): string {
+  const city = cityAt(echo.point.at);
+  if (city) return city.name;
+  const parts = echo.point.place.split(",").map((p) => p.trim()).filter(Boolean);
+  return parts[parts.length - 1] ?? echo.point.place;
+}
+
+/**
+ * One pick from a short list, with All first. Real toggle buttons in a labelled group, so
+ * a screen reader hears "Place, New York, pressed".
+ */
+function Options({
+  label,
+  all,
+  options,
+  value,
+  onChange,
+}: {
+  readonly label: string;
+  readonly all: string;
+  readonly options: readonly { readonly value: string; readonly label: string }[];
+  readonly value: string | null;
+  readonly onChange: (value: string | null) => void;
+}) {
+  return (
+    <div className="coll-opts" role="group" aria-label={label}>
+      <button className={value === null ? "coll-opt on" : "coll-opt"} aria-pressed={value === null} onClick={() => onChange(null)}>
+        {all}
+      </button>
+      {options.map((o) => (
+        <button
+          key={o.value}
+          className={value === o.value ? "coll-opt on" : "coll-opt"}
+          aria-pressed={value === o.value}
+          onClick={() => onChange(value === o.value ? null : o.value)}
+        >
+          {o.label}
+        </button>
+      ))}
+    </div>
   );
 }
