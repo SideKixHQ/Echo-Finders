@@ -27,6 +27,7 @@ import { BrowserLocation } from "./browser-location";
 import { Rail, type WalkingView } from "./Rail";
 import { MODE_PHRASE } from "./travel";
 import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
+import { holdLockScreen, primeLockScreen } from "./lock-screen";
 import { Synced } from "./Synced";
 import { Walk } from "./Walk";
 import { Nowhere } from "./Nowhere";
@@ -708,17 +709,6 @@ export function App() {
    * `humming` is the signal for a walk because it is the moment somebody explicitly says
    * they are out with headphones in, rather than reading a list indoors.
    */
-  useEffect(() => {
-    if (!nowPlaying) { publishNowPlaying(null); return; }
-    publishNowPlaying({
-      title: nowPlaying.title,
-      place: nowPlaying.point.place,
-      onPlay: () => playOrAsk(nowPlaying),
-      onPause: () => session.stopPlaying(),
-      onStop: () => session.stopPlaying({ dropQueue: true }),
-    });
-    return () => publishNowPlaying(null);
-  }, [nowPlaying, session]);
 
   /**
    * Move the playhead, from anywhere.
@@ -778,6 +768,36 @@ export function App() {
   useEffect(() => {
     if (playing) setStopped(false);
   }, [playing]);
+
+  /*
+   * The lock screen: the story's name, and Pause, Play and Stop that do what the player's
+   * own buttons do.
+   *
+   * Pause used to call stopPlaying, so pausing from the lock screen threw the place away;
+   * it pauses now, and Play picks up where it left off (or starts again after a Stop, the
+   * same distinction the player makes). None of it ever showed on an iPhone, because iOS
+   * only gives lock-screen controls to a page playing an audio element and narration is
+   * the speech voice; `holdLockScreen` plays the silent track that makes iOS listen.
+   */
+  useEffect(() => {
+    if (!nowPlaying) {
+      publishNowPlaying(null);
+      holdLockScreen("none");
+      return;
+    }
+    holdLockScreen(stopped ? "none" : playing ? "playing" : "paused");
+    if (stopped) { publishNowPlaying(null); return; }
+    publishNowPlaying({
+      title: nowPlaying.title,
+      place: nowPlaying.point.place,
+      state: playing ? "playing" : "paused",
+      onPlay: () => session.resume(),
+      onPause: () => session.pause(),
+      onStop: () => stopPlaying(),
+    });
+  }, [nowPlaying, playing, stopped, session, stopPlaying]);
+  useEffect(() => () => { publishNowPlaying(null); holdLockScreen("none"); }, []);
+  useEffect(() => primeLockScreen(), []);
 
   useEffect(() => {
     if (!nowPlaying) {
