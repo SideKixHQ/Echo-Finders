@@ -92,6 +92,14 @@ export interface Entitlement {
   readonly cities?: readonly string[];
   /** All-Access is paid through this time, epoch ms. Renewal moves it on a year. */
   readonly allAccessUntil?: number;
+  /**
+   * Whether All-Access renews at `allAccessUntil`. Absent means it does.
+   *
+   * Cancelling sets this false and changes nothing else: the year already paid for stays
+   * open to its last day. Taking it away at the tap would be charging for a year and
+   * delivering part of one.
+   */
+  readonly renews?: boolean;
 }
 
 /** Nobody has paid yet. The state every listener starts in. */
@@ -191,3 +199,43 @@ export const PLANS = {
 
 /** How long one payment for All-Access lasts. */
 export const ALL_ACCESS_TERM_MS = 365 * 24 * 60 * 60 * 1000;
+
+/**
+ * What somebody has, said the way Settings says it.
+ *
+ * One answer, worked out in one place, because the plan line in Settings, the options
+ * sheet and the cancel row must never disagree about whether All-Access is running.
+ * All-Access wins when it is running, since it covers every City Pass too; the passes are
+ * still listed, because they outlive it.
+ */
+export type Membership =
+  | { readonly plan: "free" }
+  | { readonly plan: "lifetime" }
+  | { readonly plan: "city-pass"; readonly cities: readonly string[] }
+  | {
+      readonly plan: "all-access";
+      readonly until: number;
+      readonly renews: boolean;
+      readonly cities: readonly string[];
+    };
+
+export function membershipOf(entitlement: Entitlement, nowMs: number): Membership {
+  if (entitlement.kind === "unlocked") return { plan: "lifetime" };
+  const cities = entitlement.cities ?? [];
+  const until = entitlement.allAccessUntil ?? 0;
+  if (until > nowMs) {
+    return { plan: "all-access", until, renews: entitlement.renews !== false, cities };
+  }
+  if (cities.length > 0) return { plan: "city-pass", cities };
+  return { plan: "free" };
+}
+
+/**
+ * Turn All-Access renewal off or back on. Anything without All-Access comes back unchanged:
+ * a City Pass is bought once and has nothing to cancel.
+ */
+export function withRenewal(entitlement: Entitlement, on: boolean): Entitlement {
+  if (entitlement.kind !== "passes" || entitlement.allAccessUntil === undefined) return entitlement;
+  const { renews: _previous, ...rest } = entitlement;
+  return on ? rest : { ...rest, renews: false };
+}

@@ -24,7 +24,7 @@
  * browser, and the paywall says so out loud rather than implying a receipt exists.
  */
 
-import { ALL_ACCESS_TERM_MS, FREE, type Entitlement } from "@echofinders/core";
+import { ALL_ACCESS_TERM_MS, FREE, withRenewal, type Entitlement } from "@echofinders/core";
 
 const KEY = "echo-finders:entitlement";
 
@@ -54,6 +54,8 @@ export function readEntitlement(): Entitlement {
         ...at,
         ...(cities.length ? { cities } : {}),
         ...(until !== undefined ? { allAccessUntil: until } : {}),
+        // Only an explicit false: anything unreadable keeps renewing, as it was bought to.
+        ...(until !== undefined && parsed.renews === false ? { renews: false } : {}),
       };
     }
     return FREE;
@@ -102,12 +104,27 @@ export function buyCityPass(
   return save({ ...base, cities });
 }
 
-/** Record a year of All-Access, added on to any time still left. */
+/**
+ * Record a year of All-Access, added on to any time still left. Buying it is choosing it
+ * again, so a renewal cancelled earlier is back on.
+ */
 export function buyAllAccess(current: Entitlement, at: number = Date.now()): Entitlement {
   if (current.kind === "unlocked") return current;
   const base = asPasses(current, at);
   const from = Math.max(at, base.allAccessUntil ?? 0);
-  return save({ ...base, allAccessUntil: from + ALL_ACCESS_TERM_MS });
+  return save(withRenewal({ ...base, allAccessUntil: from + ALL_ACCESS_TERM_MS }, true));
+}
+
+/**
+ * Cancel All-Access renewal, or turn it back on. The year already paid for stays open to
+ * its last day either way.
+ *
+ * When Stripe lands this becomes the subscription's `cancel_at_period_end`, which is the
+ * same promise: no refund dance, no access taken early, just no next charge.
+ */
+export function setAllAccessRenewal(current: Entitlement, on: boolean): Entitlement {
+  const next = withRenewal(current, on);
+  return next === current ? current : save(next);
 }
 
 /**

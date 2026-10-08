@@ -4374,3 +4374,34 @@ body {
 }
 .mapbar-chips .chipwrap:has(.chip-nudge-l) .chips { --fade-l: 22px; }
 .mapbar-chips .chipwrap:has(.chip-nudge-r) .chips { --fade-r: 22px; }
+
+/* ── Settings › Membership ─────────────────────────────────── */
+/* The plan line reports; it is not a control, so it does not look pressable. */
+.membership-plan { cursor: default; }
+.membership-plan strong { font-size: 15px; }
+/* Rows divided the way the data panel divides them, so the panel reads as one list. */
+.membership-row,
+.membership .danger-row,
+.membership-confirm { border-top: 1px solid var(--line); }
+.membership-row { padding: 8px 0; }
+.membership .danger-row { padding: 9px 0 0; border-bottom: 0; }
+/* Not a button: there is no card to add until payments are on. A word, not a fake control. */
+.membership-soon {
+  flex: none; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--muted); border: 1px solid var(--line-2); border-radius: 6px; padding: 3px 7px;
+}
+.membership-note { font-size: 11.5px; line-height: 1.5; color: var(--muted); }
+.membership-note:empty { display: none; }
+.membership-note:not(:empty) { margin: -2px 0 8px; }
+.membership-confirm { padding: 10px 0 0; }
+.membership-confirm p { font-size: 13px; line-height: 1.5; margin-bottom: 10px; }
+.membership-confirm-actions { display: flex; gap: 8px; }
+.membership-confirm-actions button {
+  flex: 1; min-height: 44px; border-radius: 12px; cursor: pointer;
+  font: inherit; font-size: 13px; font-weight: 500;
+}
+/* Keeping it is the safe choice, so it is the filled one. */
+.membership-keep { border: 0; background: var(--btn-dark); color: var(--btn-dark-ink); }
+.membership-cancel {
+  background: none; color: var(--magenta-ink); border: 1px solid rgba(255, 0, 122, 0.4);
+}

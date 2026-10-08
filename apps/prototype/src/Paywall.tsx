@@ -35,12 +35,19 @@ import { FREE_ECHO_LIMIT, PLANS, type City, type Echo } from "@echofinders/core"
 export type Plan = "city" | "allAccess";
 
 export interface PaywallProps {
-  /** The echo they tried to play. Named, because it is the reason to buy. */
-  readonly echo: Echo;
+  /**
+   * The echo they tried to play. Named, because it is the reason to buy.
+   *
+   * Absent when it was opened from Settings › Membership options: nobody was stopped, so
+   * the screen offers rather than explains, and its way out says Close, not Not now.
+   */
+  readonly echo?: Echo;
   /** The city it is in, or null on the road and in the air: no City Pass to offer. */
   readonly city: City | null;
   /** How many they have heard. Shown as a fact, never as a warning. */
   readonly heardCount: number;
+  /** All-Access already running: the City Pass would add nothing, and buying adds a year. */
+  readonly allAccessRunning?: boolean;
   readonly onBuy: (plan: Plan) => void;
   readonly onClose: () => void;
 }
@@ -51,7 +58,8 @@ const CITIES_WHERE_ALL_ACCESS_WINS =
 
 const COUNT_WORDS = ["", "one", "two", "three", "four", "five", "six", "seven", "eight"];
 
-export function Paywall({ echo, city, heardCount, onBuy, onClose }: PaywallProps) {
+export function Paywall({ echo, city: here, heardCount, allAccessRunning = false, onBuy, onClose }: PaywallProps) {
+  const city = allAccessRunning ? null : here;
   // The City Pass first when there is one: the visitor on a short trip is most people here.
   const [plan, setPlan] = useState<Plan>(city ? "city" : "allAccess");
   const chosen = city && plan === "city" ? "city" : "allAccess";
@@ -62,7 +70,7 @@ export function Paywall({ echo, city, heardCount, onBuy, onClose }: PaywallProps
       className="paywall"
       role="dialog"
       aria-modal="true"
-      aria-label="Keep listening"
+      aria-label={echo ? "Keep listening" : "Membership options"}
     >
       <div className="paywall-body">
         <p className="paywall-count mono">
@@ -78,17 +86,19 @@ export function Paywall({ echo, city, heardCount, onBuy, onClose }: PaywallProps
           promising ten. A price and a count are the two things on this screen that must
           never be able to disagree with what the engine actually enforces.
         */}
-        <h2>That is all {FREE_ECHO_LIMIT} of your free echoes.</h2>
+        <h2>{echo ? `That is all ${FREE_ECHO_LIMIT} of your free echoes.` : "Hear every echo."}</h2>
 
         {/*
           The specific thing behind the wall, by name. A paywall that says "unlock
           everything" is asking somebody to value an abstraction; one that says "you were
           about to hear THIS" is asking them about a story they already walked to.
         */}
-        <p className="paywall-next">
-          You were about to hear <strong>{echo.title}</strong>
-          <span className="paywall-where"> · {echo.point.place}</span>
-        </p>
+        {echo && (
+          <p className="paywall-next">
+            You were about to hear <strong>{echo.title}</strong>
+            <span className="paywall-where"> · {echo.point.place}</span>
+          </p>
+        )}
 
         {/*
           Real radio buttons, so a screen reader hears "1 of 2, selected" and arrow keys
@@ -138,15 +148,21 @@ export function Paywall({ echo, city, heardCount, onBuy, onClose }: PaywallProps
         </fieldset>
 
         <p className="paywall-sum">
-          {city
-            ? `Visiting ${wins} cities or more this year? All-Access costs less.`
-            : "City Passes cover a city. This echo is on the road, so it is part of All-Access."}
+          {allAccessRunning
+            ? "You have All-Access. Another year starts when this one ends."
+            : city
+              ? `Visiting ${wins} cities or more this year? All-Access costs less.`
+              : echo
+                ? "City Passes cover a city. This echo is on the road, so it is part of All-Access."
+                : "City Passes are offered in the city they cover. Away from one, All-Access opens everything."}
         </p>
 
         <button className="paywall-buy" onClick={() => onBuy(chosen)}>
           {chosen === "city"
             ? `Get the ${PLANS.city.name} · ${PLANS.city.price}`
-            : `Start All-Access · ${PLANS.allAccess.price} ${PLANS.allAccess.per}`}
+            : allAccessRunning
+              ? `Add a year · ${PLANS.allAccess.price}`
+              : `Start All-Access · ${PLANS.allAccess.price} ${PLANS.allAccess.per}`}
         </button>
 
         {/*
@@ -163,7 +179,7 @@ export function Paywall({ echo, city, heardCount, onBuy, onClose }: PaywallProps
         </p>
 
         <button className="paywall-later" onClick={onClose}>
-          Not now
+          {echo ? "Not now" : "Close"}
         </button>
 
         {/*
@@ -171,9 +187,11 @@ export function Paywall({ echo, city, heardCount, onBuy, onClose }: PaywallProps
           found, and everything already heard stays playable forever. A paywall that also
           takes away what somebody already had is a different and much worse screen.
         */}
-        <p className="paywall-keep">
-          Your {heardCount} echoes stay yours, and you can keep finding more for free.
-        </p>
+        {echo && (
+          <p className="paywall-keep">
+            Your {heardCount} echoes stay yours, and you can keep finding more for free.
+          </p>
+        )}
       </div>
     </div>
   );
