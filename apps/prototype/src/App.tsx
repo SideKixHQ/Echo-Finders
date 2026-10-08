@@ -270,6 +270,23 @@ export function App() {
   const [listening, setListening] = useState(false);
   // The listener's own setting drives it, not a constant. `handsFree` is off by default
   // (PRIVACY_DEFAULTS), so an echo collects itself on arrival and then waits to be played.
+  /**
+   * First run, remembered.
+   *
+   * `localStorage` rather than the collection store, because this is a fact about the
+   * browser rather than about the journey, and because a read that fails should mean
+   * "show it" rather than blocking the app on a disk error. A private window sees it
+   * every time, which is the right side to fail on.
+   *
+   * Declared before the journey, because the journey waits for it: see `paused` below.
+   */
+  const [onboarded, setOnboarded] = useState(() => {
+    try {
+      return localStorage.getItem("echo-finders:onboarded") === "1";
+    } catch {
+      return false;
+    }
+  });
   const { state, session, walk, store, speech } = useJourney(roaming ? null : route, LIBRARY, {
     sound,
     narrate,
@@ -277,7 +294,14 @@ export function App() {
     // Undefined rather than an empty set when nothing has been picked: no choice made means
     // no restriction, while an empty choice means "I chose nothing" and is honoured.
     chosen: chosen.size > 0 ? chosen : undefined,
-    paused,
+    /*
+     * The demo walk holds still until the welcome screens close. It starts at Battery
+     * Park, and left running behind onboarding it reached Castle Clinton and SAVED it:
+     * a find nobody walked to, in their collection before they had taken a step, and
+     * (now that My Echoes shows every journey) on their first look at it. It also
+     * marked the fort as already celebrated, so walking there for real got no card.
+     */
+    paused: paused || !onboarded,
     rate,
     roamMode,
     voice,
@@ -374,23 +398,8 @@ export function App() {
    */
   const [planOpen, setPlanOpen] = useState(false);
 
-  /**
-   * First run, remembered.
-   *
-   * `localStorage` rather than the collection store, because this is a fact about the
-   * browser rather than about the journey, and because a read that fails should mean
-   * "show it" rather than blocking the app on a disk error. A private window sees it
-   * every time, which is the right side to fail on.
-   */
   useEffect(() => () => gps.stop(), [gps]);
 
-  const [onboarded, setOnboarded] = useState(() => {
-    try {
-      return localStorage.getItem("echo-finders:onboarded") === "1";
-    } catch {
-      return false;
-    }
-  });
   const finishOnboarding = useCallback(() => {
     setOnboarded(true);
     try {

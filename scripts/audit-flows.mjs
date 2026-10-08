@@ -82,6 +82,9 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await nav.getByRole('button', { name: /My Echoes/ }).click();
   await p.waitForTimeout(500);
   check('My Echoes: titled', await visible(title(p, 'My Echoes')));
+  // The demo walk ran behind onboarding and saved Castle Clinton, so a new listener's
+  // collection opened with a fort they had never walked to.
+  check('My Echoes: nothing found before a single step', (await p.locator('.entry').count()) === 0);
   check('My Echoes: its tab is lit', /My Echoes/i.test(await currentTab(p)));
   check('My Echoes: no settings button pretending to be a filter',
     (await p.locator('.screen-body').getByRole('button', { name: 'Settings' }).count()) === 0);

@@ -260,11 +260,11 @@ async function attempt(size, screen) {
   }
 }
 
-// `ONLY=se-safari:popup` measures one pairing, for checking a single fix quickly.
+// `ONLY=se-safari:popup` measures one pairing, `ONLY=se-safari` one size's screens.
 const ONLY = process.env.ONLY?.split(':');
 const report = [];
 for (const size of SIZES.filter((s) => !ONLY || s.name === ONLY[0])) {
-  for (const screen of Object.keys(SCREENS).filter((s) => !ONLY || s === ONLY[1])) {
+  for (const screen of Object.keys(SCREENS).filter((s) => !ONLY?.[1] || s === ONLY[1])) {
     let problems = null;
     for (let tries = 0; tries < 6 && problems === null; tries++) problems = await attempt(size, screen);
     report.push([size.name, screen, problems ?? [`never reached ${SETUP[screen].ready} in 6 tries`]]);
@@ -278,6 +278,12 @@ for (const [size, screen, problems] of report) {
   console.log(`${problems.length ? 'FAIL' : 'ok  '}  ${size.padEnd(14)} ${screen}`);
   for (const line of problems) console.log(`        ${line}`);
   failures += problems.length;
+}
+// Nothing measured is not a pass: `ONLY=se-safari` once matched no screens and said
+// "all exact" about nothing.
+if (!report.length) {
+  console.log(`\nalign: nothing measured${ONLY ? ` (ONLY=${process.env.ONLY} matched no size and screen)` : ''}`);
+  process.exit(1);
 }
 console.log(failures ? `\n${failures} misaligned` : '\nalign: all exact');
 process.exit(failures ? 1 : 0);
