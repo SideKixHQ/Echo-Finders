@@ -147,6 +147,8 @@ export function useScreenAwake(want: ScreenAwakeDecision): WakeState {
 export interface NowPlayingMeta {
   readonly title: string;
   readonly place: string;
+  /** Which button the lock screen shows: Pause while playing, Play while paused. */
+  readonly state?: "playing" | "paused";
   readonly onPlay?: () => void;
   readonly onPause?: () => void;
   readonly onStop?: () => void;
@@ -171,7 +173,7 @@ export function publishNowPlaying(meta: NowPlayingMeta | null): void {
       album: "Echo Finders",
     });
   } catch { /* Firefox has mediaSession without MediaMetadata in some versions */ }
-  ms.playbackState = "playing";
+  ms.playbackState = meta.state ?? "playing";
   const set = (action: MediaSessionAction, fn?: () => void) => {
     try { ms.setActionHandler(action, fn ? () => fn() : null); } catch { /* unsupported action */ }
   };

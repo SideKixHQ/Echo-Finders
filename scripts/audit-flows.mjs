@@ -47,6 +47,14 @@ async function freshApp() {
     ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation: START,
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  // The lock screen's buttons, recorded as the app registers them, so they can be pressed.
+  await ctx.addInitScript(() => {
+    window.__lock = {};
+    const ms = navigator.mediaSession;
+    if (!ms) return;
+    const set = ms.setActionHandler.bind(ms);
+    ms.setActionHandler = (action, fn) => { window.__lock[action] = fn; set(action, fn); };
+  });
   const p = await ctx.newPage();
   p.setDefaultTimeout(6000);
   p.on('pageerror', (e) => errors.push(e.message));
@@ -205,6 +213,30 @@ async function arrive() {
     await p.locator('.pop-go').click().catch(() => {});
     await p.waitForTimeout(1200);
     check('Player: Play opens it', await visible(p.locator('.hear')));
+    // The lock screen: the story's name, and Pause, Play and Stop that work.
+    const lock = () => p.evaluate(() => ({
+      title: navigator.mediaSession?.metadata?.title ?? null,
+      state: navigator.mediaSession?.playbackState ?? null,
+      actions: Object.keys(window.__lock).filter((a) => window.__lock[a]),
+    }));
+    const press = (a) => p.evaluate((a) => window.__lock[a]?.({ action: a }), a);
+    const go = p.locator('.hear-go');
+    let ls = await lock();
+    check('Lock screen: names the story', /Eight million/.test(ls.title ?? ''), JSON.stringify(ls));
+    check('Lock screen: offers pause, play and stop', ['pause', 'play', 'stop'].every((a) => ls.actions.includes(a)), ls.actions.join(','));
+    await press('pause');
+    await p.waitForTimeout(500);
+    ls = await lock();
+    check('Lock screen: Pause pauses the story', (await go.getAttribute('aria-label')) === 'Play' && ls.state === 'paused', JSON.stringify(ls));
+    await press('play');
+    await p.waitForTimeout(500);
+    check('Lock screen: Play carries on', (await go.getAttribute('aria-label')) === 'Pause' && (await lock()).state === 'playing');
+    await press('stop');
+    await p.waitForTimeout(500);
+    check('Lock screen: Stop stops it and lets the lock screen go', (await go.getAttribute('aria-label')) === 'Play' && (await lock()).title === null);
+    await go.click();
+    await p.waitForTimeout(800);
+
     const back = p.getByRole('button', { name: 'Back to the map' });
     check('Player: a visible way back', await visible(back));
     await back.click().catch(() => {});
