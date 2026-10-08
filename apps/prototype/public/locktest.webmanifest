@@ -1,0 +1,9 @@
+{
+  "name": "Echo Finders lock test",
+  "short_name": "Lock test",
+  "start_url": "/locktest.html",
+  "scope": "/locktest.html",
+  "display": "standalone",
+  "background_color": "#0b0f2b",
+  "theme_color": "#0b0f2b"
+}

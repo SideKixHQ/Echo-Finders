@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Lock test" />
+<link rel="manifest" href="locktest.webmanifest" />
+<title>Lock test</title>
+<!--
+  What survives an iPhone screen lock, measured rather than guessed.
+
+  `docs/10-blockers.md` #2: in a web app on iPhone, audio and GPS are expected to stop at
+  screen lock, and the answer (a wake lock, iOS 18.4+, a home-screen install) has never been
+  tried on a real phone. Whether it works decides web or native for walking. This page
+  answers it in one sitting.
+
+  Start it, lock the phone, walk, unlock. Every second the page writes down what it can see
+  into localStorage, so the record survives even if iOS throws the page away while locked,
+  and on the way back it compares the gap against what kept moving:
+
+    - an audio FILE playing (what real narration will be once voices are recorded)
+    - the browser's speech voice (what narration is today: speech-audio.ts)
+    - Web Audio chimes (what the arrival sounds are: echo-tone.ts)
+    - GPS fixes arriving (what opens echoes on arrival)
+    - the page's own timers (whether any of the app's code runs at all)
+    - the Screen Wake Lock (whether the screen can be kept from dimming by itself)
+
+  Static and self-contained: no app code, no network, nothing leaves the phone.
+-->
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #0b0f2b; color: #fff; font: 15px/1.45 -apple-system, system-ui, sans-serif; }
+  body { padding: max(16px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom)); }
+  h1 { font-size: 22px; margin: 8px 0 4px; }
+  h2 { font: 600 11px/1 ui-monospace, monospace; letter-spacing: 0.14em; text-transform: uppercase; color: #aeb5c2; margin: 22px 0 8px; }
+  p, li { color: #d8dce5; }
+  .muted { color: #aeb5c2; font-size: 13px; }
+  ol { padding-left: 20px; margin: 8px 0; }
+  li { margin: 4px 0; }
+  .card { background: #151b3d; border: 1px solid rgba(216, 220, 229, 0.12); border-radius: 14px; padding: 14px; }
+  button { font: inherit; font-weight: 600; min-height: 48px; border-radius: 14px; border: 0; cursor: pointer; width: 100%; }
+  .go { background: #00ffe7; color: #042b28; font-size: 16px; }
+  .quiet { background: none; color: #d8dce5; border: 1px solid rgba(216, 220, 229, 0.24); margin-top: 8px; }
+  .row { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid rgba(216, 220, 229, 0.1); }
+  .row:last-child { border-bottom: 0; }
+  .row b { font-weight: 500; }
+  .v { font-family: ui-monospace, monospace; font-size: 13px; text-align: right; }
+  .ok { color: #7dfff2; } .bad { color: #ff5fa8; } .part { color: #ffd77a; }
+  .verdict { font-size: 13px; color: #aeb5c2; margin-top: 2px; }
+  #live .v { color: #ffd77a; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<h1>Screen lock test</h1>
+<p class="muted">What keeps working when an iPhone locks. Nothing leaves the phone.</p>
+
+<div class="card">
+  <ol>
+    <li>Turn the sound up (ringer switch on) or use headphones.</li>
+    <li>Tap <b>Start</b> and allow location.</li>
+    <li>Put the phone down without touching it for <b>one minute</b>. Did the screen stay on by itself?</li>
+    <li>Press the side button to <b>lock</b> it. Walk for about <b>two minutes</b>, listening.</li>
+    <li>While it is locked, tap the screen once: if <b>pause/play controls</b> show, pause and play once.</li>
+    <li>Unlock and come back here. The results appear below. <b>Screenshot them.</b></li>
+  </ol>
+  <p class="muted">Then do it once more from the home screen: Share › Add to Home Screen, open
+    “Lock test” from its icon, and repeat. The two answers can differ.</p>
+  <button class="go" id="start">Start</button>
+  <button class="quiet hidden" id="stop">Stop and clear</button>
+</div>
+
+<h2>Right now</h2>
+<div class="card" id="live"></div>
+
+<h2>What happened while locked</h2>
+<div class="card" id="result"><p class="muted" style="margin:0">Nothing yet. Start, lock, walk, unlock.</p></div>
+
+<h2>This phone</h2>
+<div class="card" id="phone"></div>
+
+<script>
+(() => {
+  const KEY = 'echo-finders:locktest';
+  const MAX = 4000;
+  const $ = (id) => document.getElementById(id);
+  const now = () => Date.now();
+
+  // ── The record. Written every time, so an evicted page still leaves its evidence. ──
+  let log = [];
+  try { log = JSON.parse(localStorage.getItem(KEY) || '[]'); } catch { log = []; }
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(log.slice(-MAX))); } catch {} };
+  const note = (k, extra = {}) => { log.push({ t: now(), k, ...extra }); if (log.length > MAX) log = log.slice(-MAX); save(); };
+
+  const standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+  const ios = (navigator.userAgent.match(/OS (\d+)_(\d+)/) || []).slice(1).join('.');
+  const wakeSupported = typeof navigator.wakeLock?.request === 'function';
+
+  let running = false, audio = null, ctx = null, wake = null, wakeState = wakeSupported ? 'idle' : 'unsupported';
+  let watchId = null, lastFix = null, fixes = 0, spoken = 0, ticker = null;
+
+  // ── An audio FILE, made here: a soft tick every second for five minutes. ──
+  // Long rather than looped, so how far it got is simply its currentTime.
+  function tickWav(seconds) {
+    const rate = 8000, n = rate * seconds, buf = new ArrayBuffer(44 + n), v = new DataView(buf);
+    const str = (o, s) => { for (let i = 0; i < s.length; i++) v.setUint8(o + i, s.charCodeAt(i)); };
+    str(0, 'RIFF'); v.setUint32(4, 36 + n, true); str(8, 'WAVE'); str(12, 'fmt ');
+    v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
+    v.setUint32(24, rate, true); v.setUint32(28, rate, true); v.setUint16(32, 1, true); v.setUint16(34, 8, true);
+    str(36, 'data'); v.setUint32(40, n, true);
+    for (let i = 0; i < n; i++) {
+      const s = (i % rate) / rate;                       // position within the second
+      const on = s < 0.08;                                // an 80 ms tick
+      const amp = on ? 38 * Math.sin(Math.PI * s / 0.08) : 0;
+      v.setUint8(44 + i, 128 + Math.round(amp * Math.sin(2 * Math.PI * 660 * i / rate)));
+    }
+    return URL.createObjectURL(new Blob([buf], { type: 'audio/wav' }));
+  }
+
+  // ── The browser's speech voice, one short sentence after another. ──
+  function speakNext() {
+    if (!running || !('speechSynthesis' in window)) return;
+    const u = new SpeechSynthesisUtterance(`Voice check ${spoken + 1}.`);
+    u.rate = 0.9;
+    u.onstart = () => { spoken++; note('speech', { n: spoken }); };
+    u.onend = () => setTimeout(speakNext, 6000);
+    u.onerror = (e) => { note('speech-error', { e: e.error }); setTimeout(speakNext, 6000); };
+    speechSynthesis.speak(u);
+  }
+
+  // ── Web Audio: a chime every ten seconds, scheduled from the timer below. ──
+  function chime() {
+    if (!ctx || ctx.state !== 'running') return;
+    const o = ctx.createOscillator(), g = ctx.createGain();
+    o.frequency.value = 880; g.gain.setValueAtTime(0.0001, ctx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.15, ctx.currentTime + 0.02);
+    g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.6);
+    o.connect(g).connect(ctx.destination); o.start(); o.stop(ctx.currentTime + 0.65);
+  }
+
+  // ── The wake lock, re-taken every time the page comes back, as wake.ts does. ──
+  async function takeWake() {
+    if (!wakeSupported || !running || document.visibilityState !== 'visible') return;
+    if (wake && !wake.released) return;
+    try {
+      wake = await navigator.wakeLock.request('screen');
+      wakeState = 'held'; note('wake', { s: 'held' });
+      wake.addEventListener('release', () => { wakeState = 'released'; note('wake', { s: 'released' }); });
+    } catch (e) { wakeState = 'refused'; note('wake', { s: 'refused', e: String(e && e.name) }); }
+  }
+
+  async function start() {
+    log = []; running = true; fixes = 0; spoken = 0; lastFix = null;
+    note('start', { standalone, ios, wakeSupported });
+
+    audio = new Audio(tickWav(300));
+    audio.addEventListener('pause', () => note('audio-pause', { ct: audio.currentTime }));
+    audio.addEventListener('play', () => note('audio-play', { ct: audio.currentTime }));
+    try { await audio.play(); } catch (e) { note('audio-error', { e: String(e && e.name) }); }
+
+    /*
+      Lock-screen controls. iOS shows them only for sound from an audio element, which is
+      why the app's speech narration gets none. Each press is recorded, so the results say
+      whether the lock screen showed the controls and whether they reached the page.
+    */
+    if ('mediaSession' in navigator) {
+      navigator.mediaSession.metadata = new MediaMetadata({ title: 'Lock test running', artist: 'Echo Finders' });
+      const on = (action, fn) => { try { navigator.mediaSession.setActionHandler(action, () => { note('control', { a: action }); fn(); render(); }); } catch {} };
+      on('play', () => { audio?.play(); if ('speechSynthesis' in window) speechSynthesis.resume(); navigator.mediaSession.playbackState = 'playing'; });
+      on('pause', () => { audio?.pause(); if ('speechSynthesis' in window) speechSynthesis.pause(); navigator.mediaSession.playbackState = 'paused'; });
+      on('stop', () => { audio?.pause(); if ('speechSynthesis' in window) speechSynthesis.cancel(); navigator.mediaSession.playbackState = 'none'; });
+      navigator.mediaSession.playbackState = 'playing';
+    }
+
+    try { ctx = new (window.AudioContext || window.webkitAudioContext)(); await ctx.resume(); } catch { ctx = null; }
+
+    speakNext();
+    await takeWake();
+
+    if ('geolocation' in navigator) {
+      watchId = navigator.geolocation.watchPosition(
+        (p) => { fixes++; lastFix = now(); note('fix', { ts: p.timestamp, acc: Math.round(p.coords.accuracy) }); },
+        (e) => note('fix-error', { code: e.code }),
+        { enableHighAccuracy: true, maximumAge: 0 },
+      );
+    }
+
+    let n = 0;
+    ticker = setInterval(() => {
+      n++;
+      note('tick', {
+        ct: audio ? +audio.currentTime.toFixed(1) : null,
+        ac: ctx ? +ctx.currentTime.toFixed(1) : null,
+        as: ctx ? ctx.state : null,
+        vis: document.visibilityState,
+      });
+      if (n % 10 === 0) chime();
+      render();
+    }, 1000);
+
+    $('start').classList.add('hidden'); $('stop').classList.remove('hidden');
+    render();
+  }
+
+  function stop() {
+    running = false;
+    clearInterval(ticker); ticker = null;
+    if (watchId !== null) navigator.geolocation.clearWatch(watchId);
+    if (audio) { audio.pause(); audio = null; }
+    if (ctx) { ctx.close().catch(() => {}); ctx = null; }
+    if ('speechSynthesis' in window) speechSynthesis.cancel();
+    if (wake && !wake.released) wake.release().catch(() => {});
+    log = []; save();
+    $('start').classList.remove('hidden'); $('stop').classList.add('hidden');
+    render();
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    note('vis', { s: document.visibilityState, ct: audio ? +audio.currentTime.toFixed(1) : null, ac: ctx ? +ctx.currentTime.toFixed(1) : null, as: ctx ? ctx.state : null });
+    if (document.visibilityState === 'visible') { takeWake(); render(); }
+  });
+  addEventListener('pagehide', () => note('pagehide'));
+  addEventListener('pageshow', (e) => note('pageshow', { persisted: e.persisted }));
+
+  // ── Reading the record back. ──
+  const mmss = (ms) => { const s = Math.round(ms / 1000); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; };
+  const row = (label, value, cls = '', verdict = '') =>
+    `<div class="row"><span><b>${label}</b>${verdict ? `<div class="verdict">${verdict}</div>` : ''}</span><span class="v ${cls}">${value}</span></div>`;
+
+  /** The longest stretch the page was hidden, from the hide to the show that ended it. */
+  function lastLock() {
+    let hide = null, best = null;
+    for (const e of log) {
+      // The first hide starts the lock. Unloading fires another one, which must not move it.
+      if (e.k === 'vis' && e.s === 'hidden' && !hide) hide = e;
+      // Back on screen, or a fresh load after iOS threw the locked page away.
+      if (((e.k === 'vis' && e.s === 'visible') || e.k === 'reopened') && hide) {
+        const span = { from: hide, to: e, ms: e.t - hide.t };
+        if (span.ms >= 5000) best = span; // the most recent real lock, not a flicker
+        hide = null;
+      }
+    }
+    return best;
+  }
+
+  function judge(fraction) {
+    if (fraction >= 0.9) return ['ok', 'kept going'];
+    if (fraction <= 0.1) return ['bad', 'stopped'];
+    return ['part', `${Math.round(fraction * 100)}% of the time`];
+  }
+
+  function render() {
+    // Right now
+    const live = [];
+    live.push(row('Running', running ? 'yes' : 'no'));
+    live.push(row('Screen kept awake', wakeState, wakeState === 'held' ? 'ok' : wakeState === 'unsupported' || wakeState === 'refused' ? 'bad' : ''));
+    live.push(row('Audio file', audio ? `${audio.paused ? 'paused' : 'playing'} · ${audio.currentTime.toFixed(0)}s` : '–'));
+    live.push(row('Speech voice', `${spoken} said`));
+    live.push(row('Web Audio', ctx ? `${ctx.state} · ${ctx.currentTime.toFixed(0)}s` : '–'));
+    live.push(row('GPS fixes', lastFix ? `${fixes} · last ${Math.round((now() - lastFix) / 1000)}s ago` : String(fixes)));
+    $('live').innerHTML = live.join('');
+
+    // While locked
+    const lock = lastLock();
+    if (lock) {
+      const secs = lock.ms / 1000;
+      const inside = log.filter((e) => e.t > lock.from.t && e.t < lock.to.t);
+      const ticks = inside.filter((e) => e.k === 'tick').length;
+      const gps = inside.filter((e) => e.k === 'fix').length;
+      const said = inside.filter((e) => e.k === 'speech').length;
+      // A reopened page has no end position: use the last one written before it went.
+      const lastTick = [...inside].reverse().find((e) => e.k === 'tick');
+      const endCt = lock.to.ct ?? lastTick?.ct, endAc = lock.to.ac ?? lastTick?.ac;
+      const audioRan = endCt != null && lock.from.ct != null ? (endCt - lock.from.ct) / secs : 0;
+      const ctxRan = endAc != null && lock.from.ac != null ? (endAc - lock.from.ac) / secs : 0;
+      const expectSaid = Math.max(1, Math.floor(secs / 8));
+      const evicted = inside.some((e) => e.k === 'pagehide');
+      const presses = inside.filter((e) => e.k === 'control').map((e) => e.a);
+
+      const [aC, aW] = judge(audioRan);
+      const [vC, vW] = judge(said / expectSaid);
+      const [wC, wW] = judge(ctxRan);
+      const [gC, gW] = judge(Math.min(1, gps / Math.max(1, secs / 5)));
+      const [tC, tW] = judge(ticks / secs);
+
+      $('result').innerHTML = [
+        row('Locked for', mmss(lock.ms), '', new Date(lock.from.t).toLocaleTimeString()),
+        row('Audio file', aW, aC, `played ${Math.max(0, Math.round(audioRan * secs))}s of ${Math.round(secs)}s. Real narration will work like this.`),
+        row('Speech voice', vW, vC, `${said} sentences while locked. Today's narration works like this.`),
+        row('Web Audio chimes', wW, wC, 'The arrival sounds.'),
+        row('GPS', gW, gC, `${gps} fixes while locked. Opens echoes as you arrive.`),
+        row('Lock-screen controls', presses.length ? presses.join(', ') : 'none pressed', presses.length ? 'ok' : '', 'Pause and play from the lock screen while locked. Pressed ones show here.'),
+        row('App code', tW, tC, `${ticks} of ${Math.round(secs)} timer beats ran.${evicted ? ' iOS also unloaded the page.' : ''}`),
+      ].join('');
+    }
+
+    $('phone').innerHTML = [
+      row('Opened from', standalone ? 'Home screen' : 'Safari tab'),
+      row('iOS', ios || 'not an iPhone'),
+      row('Wake lock available', wakeSupported ? 'yes' : 'no', wakeSupported ? 'ok' : 'bad'),
+      row('Browser', (navigator.userAgent.match(/Version\/[\d.]+|CriOS\/[\d.]+|FxiOS\/[\d.]+/) || ['?'])[0]),
+    ].join('');
+  }
+
+  $('start').addEventListener('click', start);
+  $('stop').addEventListener('click', stop);
+  render();
+  // A record left by a page iOS unloaded while locked: show what it captured.
+  if (log.length) { note('reopened'); $('stop').classList.remove('hidden'); render(); }
+})();
+</script>
+</body>
+</html>
