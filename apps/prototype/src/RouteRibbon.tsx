@@ -102,7 +102,8 @@ export function RouteRibbon({ route, progress, remainingS }: RouteRibbonProps) {
         through; an echo is a story at a point. Those two can never collide.
       */}
       <b className="ribbon-dest">{journeyName(route)}</b>
-      <small>{left(remainingS)}</small>
+      {/* "50 min", not "50m": on a walk, "50m" reads as fifty metres. */}
+      <small>{left(remainingS).replace(/^(\d+)m$/, "$1 min")}</small>
       <Chevron />
     </div>
   );

@@ -417,15 +417,12 @@ await p.getByRole('button', { name: /^Hide$/ }).click().catch(()=>{}); await p.w
 await p.getByLabel('Back to the map').click().catch(()=>{}); await p.waitForTimeout(600);
 await capture('map/playing');
 focus.push(...await focusSweep('map/playing'));
-/*
- * The category row is inline on foot and driving (`JourneyChip`), so it is already in the
- * map captures. On a flight it is still folded behind one button, which is opened here.
- */
-if (await p.locator('.catfilter-tap').count()) {
-  await p.locator('.catfilter-tap').click(); await p.waitForTimeout(400);
+/* The kinds of echo: one button on the map bar, every kind in a panel behind it. */
+if (await p.locator('.kind-tap').count()) {
+  await p.locator('.kind-tap').click(); await p.waitForTimeout(400);
   await capture('map/filter');
   focus.push(...await focusSweep('map/filter'));
-  await p.locator('.catfilter-tap').click(); await p.waitForTimeout(300);
+  await p.locator('.kind-tap').click(); await p.waitForTimeout(300);
 }
 /* The trip sheet: Walk / Drive / Fly and the routes for each, one tap on the journey chip. */
 await p.getByLabel(/Change your journey|Your journey, on this device/).click().catch(()=>{});

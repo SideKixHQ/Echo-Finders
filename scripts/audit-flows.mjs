@@ -110,6 +110,28 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await p.waitForTimeout(600);
   check('Settings: Map tab leads to the map', await visible(p.locator('.mapbar')));
   check('Map: its tab is lit', /Map/i.test(await currentTab(p)));
+
+  // Kinds of echo: one button that says what is on, every kind behind it at once.
+  const kinds = p.locator('.kind-tap');
+  check('Kinds: the button says everything is on', (await kinds.innerText()).trim() === "Echoes");
+  await kinds.click();
+  await p.waitForTimeout(400);
+  const sheet = p.locator('#kind-box');
+  check('Kinds: tapping it shows all of them at once, just below', (await sheet.locator('.chip').count()) === 9);
+  await sheet.getByRole('button', { name: 'Ghosts' }).click();
+  await p.waitForTimeout(300);
+  check('Kinds: picking keeps it open, to pick more', await visible(sheet));
+  await p.mouse.click(195, 400);
+  await p.waitForTimeout(300);
+  check('Kinds: a tap on the map closes it', !(await visible(sheet)));
+  check('Kinds: the button says what is picked', /Ghosts/.test(await kinds.innerText()));
+  await kinds.click();
+  await p.waitForTimeout(300);
+  await sheet.getByRole('button', { name: 'All' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(300);
+  check('Kinds: Escape closes it, and All puts everything back',
+    !(await visible(sheet)) && (await kinds.innerText()).trim() === "Echoes");
   await ctx.close();
 }
 
@@ -251,7 +273,7 @@ async function arrive() {
     check('Filter: a filter button on My Echoes', await visible(filter));
     await filter.click();
     await p.waitForTimeout(400);
-    check('Filter: opens the category chips', await visible(p.locator('#coll-filter .chip')));
+    check('Filter: shows every kind at once', (await p.locator('#coll-filter .chip').count()) === 9);
     await p.locator('#coll-filter').getByRole('button', { name: /Ghosts/ }).click();
     await p.waitForTimeout(400);
     check('Filter: a kind you have none of hides the rest and says so',

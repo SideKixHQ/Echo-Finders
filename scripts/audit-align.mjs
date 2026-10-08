@@ -49,7 +49,6 @@ const SIZES = [
 const SCREENS = {
   map: [
     { sel: '.jchip', left: true },
-    { sel: '.mapbar-chips', right: true },
     { sel: '.rail', right: true },
     { sel: '.echobar-row', left: true, right: true },
     { sel: '.map-credit', left: true },

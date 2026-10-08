@@ -587,8 +587,10 @@ body {
 
 /* ── route ribbon ────────────────────────────────────────── */
 .ribbon {
-  display: flex; align-items: center; gap: 10px; flex: none; min-width: 0;
-  padding: 9px 14px; border-radius: 99px; position: relative;
+  /* 48 tall, the same pill as the echoes button and the exploring chip beside it. Clipped,
+     so a fill at a few percent cannot poke a sliver past the rounded left end. */
+  display: flex; align-items: center; gap: 8px; flex: none; min-width: 0;
+  min-height: 48px; padding: 0 14px; border-radius: 99px; position: relative; overflow: hidden;
   background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
 }
 /* The mode, so the line says how you are travelling without spending a word on it. */
@@ -1291,7 +1293,9 @@ body {
 
 }
 .nav button {
-  flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;
+  /* Centred in its tab, as the design draws it (board "Yours"). Without justify-content the
+     icon sat at the top of its 48px box, 6.5px under the bar's edge instead of 11.5. */
+  flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
   background: none; border: 0; cursor: pointer; position: relative;
   font-size: 11px; letter-spacing: 0.03em; color: var(--muted);
   font-family: "Space Grotesk", monospace; text-transform: uppercase;
@@ -4222,7 +4226,8 @@ body {
  * chips get the rest of the row, which is how board 2 of the canvas draws them. A flight
  * keeps the full ribbon and the folded filter (`.mapbar` above).
  */
-.mapbar-compact { flex-wrap: nowrap; align-items: center; }
+/* One row in every mode: the journey (chip or ribbon) and the echoes button. */
+.mapbar { flex-wrap: nowrap; align-items: center; }
 .jchip-wrap { position: relative; flex: none; }
 .jchip {
   position: relative; overflow: hidden; display: flex; align-items: center; gap: 7px;
@@ -4256,6 +4261,10 @@ body {
 .jchip[aria-expanded="true"] .jchip-caret { transform: rotate(180deg); }
 /* On a flight the ribbon keeps the width it was drawn with. */
 .jchip-wrap-wide { flex: 1 1 190px; min-width: 0; }
+/* The journey side always fills the row up to the echoes button, chip or ribbon alike. */
+.mapbar > .jchip-wrap { flex: 1 1 auto; min-width: 0; }
+.mapbar .jchip { width: 100%; }
+.mapbar .jchip-caret { margin-left: auto; }
 
 .jmenu {
   position: absolute; top: calc(100% + 8px); left: 0; z-index: 42;
@@ -4405,3 +4414,47 @@ body {
 .membership-cancel {
   background: none; color: var(--magenta-ink); border: 1px solid rgba(255, 0, 122, 0.4);
 }
+
+/* ── Kinds of echo: one button, all of them behind it (KindPicker) ──────────── */
+/* The journey chip's twin: same 48px pill, side by side in the map bar. */
+.kind-tap {
+  flex: none; display: flex; align-items: center; gap: 6px; cursor: pointer;
+  min-height: 48px; padding: 0 12px; border-radius: 99px; white-space: nowrap;
+  font: inherit; font-size: 13px; font-weight: 500; color: var(--cool);
+  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+/* A filter that is ON must always say so: aqua edge, white words. */
+.kind-tap.is-filtered { color: var(--white); border-color: rgba(var(--rgb-accent), 0.5); }
+.kind-tap.is-filtered:focus-visible { outline-color: var(--space); }
+.kind-glyph, .kind-chev {
+  width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor;
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.kind-glyph { color: var(--cat); }
+.kind-chev { width: 14px; height: 14px; stroke-width: 2; color: var(--muted); }
+.kind-key { display: flex; align-items: center; }
+.kind-key i {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--cat);
+  margin-right: -3px; box-shadow: 0 0 0 1.5px var(--panel);
+}
+.kind-key i:last-child { margin-right: 0; }
+
+/* The box: straight below the map bar, its full width, every kind in view at once. The
+   map bar is the positioned parent, so the box spans gutter to gutter under both pills. */
+.kind-box {
+  position: absolute; top: calc(100% + 8px); left: 0; right: 0; z-index: 40;
+  padding: 6px; border-radius: 16px;
+  background: rgba(var(--rgb-panel), 0.98); border: 1px solid var(--line-2);
+  backdrop-filter: blur(16px); box-shadow: 0 16px 44px rgba(0, 0, 0, 0.5);
+  animation: catpopIn 0.16s var(--ease);
+}
+@media (prefers-reduced-motion: reduce) { .kind-box { animation: none; } }
+/* Chips that wrap, never scroll: a scroller hides half the options behind a gesture. */
+.kind-chips { display: flex; flex-wrap: wrap; gap: 3px; }
+/* Every chip in its own colour, picked or not: the box is the map's colour key. A later
+   `.chip svg` rule had put unpicked marks back to grey at 55%, undoing the key. */
+.kind-chips .chip svg { stroke: var(--cat, currentColor); opacity: 1; }
+/* Open, the box sits over the control column; the map bar is its stacking context, and at
+   18 it lost to the column's 26, which drew the pulse button over "Landmarks". */
+.mapbar:has(.kind-box) { z-index: 45; }

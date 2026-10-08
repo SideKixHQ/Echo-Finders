@@ -11,8 +11,7 @@ import { Privacy } from "./Privacy";
 import { Nav, type Tab } from "./Nav";
 import { Plan } from "./Plan";
 import { RouteRibbon, left } from "./RouteRibbon";
-import { CategoryFilter } from "./CategoryFilter";
-import { CategoryChips } from "./CategoryChips";
+import { KindPicker } from "./KindPicker";
 import { JourneyChip, type Travel } from "./JourneyChip";
 import { Arrival } from "./Arrival";
 import { Preflight } from "./Preflight";
@@ -847,7 +846,6 @@ export function App() {
    * The compact top row: everything but a flight. A flight keeps origin, bar and
    * destination, because a passenger cannot look out of the window to know where they are.
    */
-  const compactBar = roaming || route.mode !== "flight";
   /* "47 min", not "47m": on a walk, "47m" reads as forty-seven metres. */
   const leftLabel = left(remainingS).replace(/^(\d+)m$/, "$1 min");
   const journeyLabel = (route.name ?? route.destination.name).split(":")[0]!.trim();
@@ -927,12 +925,6 @@ export function App() {
     [route.id, corridorCounts],
   );
 
-  // Only categories this route actually passes get a chip. Offering "Ghosts" on a flight
-  // with no ghost stories on it is a promise the library cannot keep.
-  const available = useMemo(
-    () => new Set(onRoute.map((e) => e.category)),
-    [onRoute],
-  );
   /**
    * Everything is on until somebody turns something off.
    *
@@ -1410,7 +1402,7 @@ export function App() {
 
           {tab === "map" && (
             <>
-              <div className={compactBar ? "mapbar mapbar-compact" : "mapbar"}>
+              <div className="mapbar">
                 {/*
                   The journey, and the way to change it.
 
@@ -1461,33 +1453,24 @@ export function App() {
                     openPackage();
                   }}
                 >
-                  {compactBar ? undefined : (
+                  {/* Any route, walked, driven or flown, shows its progress the same way.
+                      Exploring has no route, so it keeps the plain chip. */}
+                  {roaming ? undefined : (
                     <RouteRibbon route={route} progress={along} remainingS={remainingS} />
                   )}
                 </JourneyChip>
-                {compactBar ? (
-                  /*
-                    THE CATEGORIES, IN THE ROW, which is where board 2 of the canvas draws
-                    them. On foot they are what you change as you go, and they matter more
-                    than the name of the walk you already chose.
-                  */
-                  <div className="mapbar-chips">
-                    <CategoryChips
-                      available={available}
-                      on={activeCats}
-                      onToggle={toggleCategory}
-                      onAll={allCategories}
-                    />
-                  </div>
-                ) : (
-                  /* In the air the ribbon needs the width, so the chips fold into a button. */
-                  <CategoryFilter
-                    available={available}
-                    on={activeCats}
-                    onToggle={toggleCategory}
-                    onAll={allCategories}
-                  />
-                )}
+                {/*
+                  WHICH ECHOES, AS ONE BUTTON THAT SAYS WHAT IS ON. It was a scrolling strip
+                  on the ground, and a phone showed "All", "History" and an arrow: two
+                  choices, apparently. Tapping it now shows all of them at once (KindPicker).
+                  The same button in every mode; it is small enough now that the trip's
+                  progress ribbon fits beside it on foot as well as in the air.
+                */}
+                <KindPicker
+                  on={activeCats}
+                  onToggle={toggleCategory}
+                  onAll={allCategories}
+                />
               </div>
               {/*
                 Nothing nearby, over the map.

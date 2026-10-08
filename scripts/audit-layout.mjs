@@ -182,7 +182,7 @@ const PROBE = () => {
    * under the card you opened by tapping that pin is the product working. Reporting it
    * every run is how a person learns to stop reading the report.
    */
-  const LAYER = ['pop', 'synced', 'hear', 'vf', 'onb', 'pf', 'plan', 'city', 'paywall', 'walk', 'rose', 'nowhere', 'catpop', 'chipwrap', 'chips', 'fan-backdrop'];
+  const LAYER = ['pop', 'synced', 'hear', 'vf', 'onb', 'pf', 'plan', 'city', 'paywall', 'walk', 'rose', 'nowhere', 'kind-sheet', 'kind-scrim', 'fan-backdrop'];
   const inLayer = (el) => {
     for (let n = el; n && n !== document.body; n = n.parentElement) {
       const c = (n.className.baseVal ?? n.className ?? '').toString();
@@ -446,9 +446,9 @@ async function walk(width, height, theme) {
   await p.waitForTimeout(900);
   await look('map');
 
-  await p.locator('.catfilter-tap').click({ force: true }).catch(() => {});
+  await p.locator('.kind-tap').click({ force: true }).catch(() => {});
   await p.waitForTimeout(400); await look('map/filter');
-  await p.locator('.catfilter-tap').click({ force: true }).catch(() => {});
+  await p.locator('.kind-tap').click({ force: true }).catch(() => {});
   await p.waitForTimeout(300);
 
   await p.locator('.echobar-arrow').last().click({ force: true }).catch(() => {});
