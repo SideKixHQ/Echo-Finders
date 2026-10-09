@@ -100,6 +100,17 @@ describe("checkout", () => {
     expect(body.get("customer")).toBe("cus_123");
   });
 
+  it("always asks for a billing address, and adds sales tax only when switched on", async () => {
+    answers.push({ url: "u" }, { url: "u" });
+    await checkout(post("/api/checkout", { plan: "city", cityId: "new-york" }));
+    expect(sent[0]!.body.get("billing_address_collection")).toBe("required");
+    expect(sent[0]!.body.get("automatic_tax[enabled]")).toBeNull();
+    vi.stubEnv("STRIPE_AUTOMATIC_TAX", "on");
+    await checkout(post("/api/checkout", { plan: "allAccess", customerId: "cus_123" }));
+    expect(sent[1]!.body.get("automatic_tax[enabled]")).toBe("true");
+    expect(sent[1]!.body.get("customer_update[address]")).toBe("auto");
+  });
+
   it("refuses a city with no pass, and a plan that does not exist", async () => {
     expect((await checkout(post("/api/checkout", { plan: "city", cityId: "atlantis" }))).status).toBe(400);
     expect((await checkout(post("/api/checkout", { plan: "lifetime" }))).status).toBe(400);

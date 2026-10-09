@@ -96,11 +96,25 @@ nothing is charged, exactly as before. Turning payments on is these steps, not a
        STRIPE_PRICE_ALL_ACCESS  price_…    (the All-Access price)
 
    Then redeploy (Deployments → the latest → Redeploy) so the functions pick them up.
-4. Buy something on the phone with Stripe's test card `4242 4242 4242 4242`, any future
+4. **US only (2026-10-09).** In Stripe, Radar → Rules, add **Block if `:card_country: !=
+   'US'`**, in test mode and again in live mode. Checkout always asks for a billing
+   address.
+5. **Sales tax.** In Stripe, Tax → Settings: add the business address and register the
+   state or states where tax is collected (an accountant's call; usually the home state to
+   start). Then add `STRIPE_AUTOMATIC_TAX` = `on` in Vercel and redeploy. Until then
+   checkout charges the price with no tax line; Stripe refuses automatic tax before the
+   address exists, so it is a switch rather than always on.
+6. Buy something on the phone with Stripe's test card `4242 4242 4242 4242`, any future
    date, any CVC. You come back to the app owning it, and Settings → Membership → Payment
    card opens Stripe's page for the card and receipts.
 
-To go live, repeat 1 to 3 in live mode with the live key and live price ids.
+To go live, repeat 1 to 5 in live mode with the live key and live price ids.
+
+**Done in test mode (2026-10-09):** both products exist in the Stripe sandbox (*Echo Finders
+City Pass* `price_1UOliPIsk2G8juHsveyHcC5X`, *Echo Finders All-Access*
+`price_1UOliRIsk2G8juHsxx1UHAoC`), the customer portal is configured, and both price ids
+are set in Vercel, labelled TEST MODE. Left for James: the test secret key, the Radar rule
+and the tax settings.
 
 What it does not do yet, on purpose: there are no accounts, so Stripe is the record of who
 paid, and the phone keeps the Stripe customer id. Restore works on the phone that bought; a
