@@ -513,29 +513,54 @@ export function RouteMap({
   /**
    * The control column's real top, in map pixels, or null before it has been measured.
    *
-   * `RAIL_H` is the column on a full-size phone. On an iPhone SE its buttons are smaller and
-   * the column is 252 tall, not 306, so a rare marker snapped "10px above it" from the
-   * constant landed 54px too high, under the floor, and was pushed back down to sit 6px
-   * above the column. Measured like the two bars above; the constant is only the fallback.
+   * `RAIL_H` is the column on a full-size phone. On an iPhone SE the column wraps and its
+   * top is not where the constant puts it, so a rare marker snapped "10px above it" settled
+   * 6px above it instead. Measured like the two bars above; the constant is only the
+   * fallback.
+   *
+   * Also on `transitionend`: the column slides (its `bottom` animates as the player bar
+   * comes and goes), a size observer never hears about a move, and a top read mid-slide
+   * once put the marker on the column's buttons.
    */
   const [railTopPx, setRailTopPx] = useState<number | null>(null);
   useEffect(() => {
     const el = svg.current;
-    if (!el || typeof ResizeObserver === "undefined") return;
-    const rail = el.closest(".screen")?.querySelector(".rail");
-    if (!rail) return;
+    const screen = el?.closest(".screen");
+    if (!el || !screen || typeof ResizeObserver === "undefined") return;
+    let rail: Element | null = null;
     const measure = () => {
+      if (!rail) return;
       const r = rail.getBoundingClientRect();
-      const s = el.getBoundingClientRect();
       if (r.height < 1) return;
-      const next = Math.round(r.top - s.top);
+      const next = Math.round(r.top - el.getBoundingClientRect().top);
       setRailTopPx((cur) => (cur !== null && Math.abs(cur - next) < 1 ? cur : next));
     };
-    measure();
-    const observer = new ResizeObserver(measure);
-    observer.observe(rail);
-    observer.observe(el);
-    return () => observer.disconnect();
+    const sizes = new ResizeObserver(measure);
+    /*
+     * The column is a different element once the map has settled (it is rendered again
+     * with more buttons), so watching the first one measured a column that was no longer
+     * there: 198 tall at mount, 252 on screen. Follow whichever one is current.
+     */
+    const follow = () => {
+      const now = screen.querySelector(".rail");
+      if (now === rail) return;
+      rail?.removeEventListener("transitionend", measure);
+      sizes.disconnect();
+      rail = now;
+      if (!rail) return;
+      sizes.observe(rail);
+      sizes.observe(el);
+      rail.addEventListener("transitionend", measure);
+      measure();
+    };
+    follow();
+    const swaps = new MutationObserver(follow);
+    swaps.observe(screen, { childList: true, subtree: true });
+    return () => {
+      swaps.disconnect();
+      sizes.disconnect();
+      rail?.removeEventListener("transitionend", measure);
+    };
   }, []);
 
   useEffect(() => {

@@ -120,6 +120,10 @@ async function measure(p, size, screen) {
       // Only judged when the marker is above the rail and near it; elsewhere on the edge it
       // is simply pointing at its echo.
       const gap = below.top - r.bottom;
+      // Sitting ON the column is the worst case, not an exempt one: it used to read as
+      // "absent", which let a marker drawn over the column's top button pass.
+      const over = r.bottom > below.top && r.top < below.bottom && r.right > below.left && r.left < below.right;
+      if (over) return { ...c, gapNow: gap, overlap: true, info: `plate ${r.top.toFixed(1)}-${r.bottom.toFixed(1)}, rail ${below.top.toFixed(1)}-${below.bottom.toFixed(1)}` };
       if (gap < 0 || gap > 30 || r.right < below.left) return { ...c, absent: true };
       const svg = el.ownerSVGElement?.getBoundingClientRect();
       return { ...c, gapNow: gap, info: `rail ${below.top.toFixed(1)}-${below.bottom.toFixed(1)} (h ${below.height.toFixed(1)}), map svg ${svg?.top.toFixed(1)}-${svg?.bottom.toFixed(1)}, nav top ${document.querySelector('.nav')?.getBoundingClientRect().top.toFixed(1)}` };
@@ -151,7 +155,8 @@ async function measure(p, size, screen) {
   for (const r of rows) {
     if (r.absent) continue;
     if (r.missing) { problems.push(`${r.sel}: not on screen`); continue; }
-    if (r.gapAbove && Math.abs(r.gapNow - r.gap) > TOLERANCE && !(r.clear && r.gapNow >= r.clear - TOLERANCE)) problems.push(`${r.sel}: ${r.gapNow.toFixed(1)}px above ${r.gapAbove}, should be ${r.gap}${process.env.DEBUG ? ` (${r.info})` : ''}`);
+    if (r.overlap) problems.push(`${r.sel}: sits on ${r.gapAbove} (${r.info})`);
+    else if (r.gapAbove && Math.abs(r.gapNow - r.gap) > TOLERANCE && !(r.clear && r.gapNow >= r.clear - TOLERANCE)) problems.push(`${r.sel}: ${r.gapNow.toFixed(1)}px above ${r.gapAbove}, should be ${r.gap}${process.env.DEBUG ? ` (${r.info})` : ''}`);
     if (r.middleOf && Math.abs(r.dy) > TOLERANCE) problems.push(`${r.sel}: ${r.dy.toFixed(1)}px off the centre line of ${r.middleOf}${process.env.DEBUG ? ` (${r.dbg})` : ''}`);
     if (r.hidden) problems.push(`${r.sel}: ${r.hidden}px of its content cut off inside it`);
     if (r.stack && Math.abs(r.above - r.below) > TOLERANCE * 2) problems.push(`${r.sel}: ${r.above.toFixed(0)}px above the content, ${r.below.toFixed(0)}px below`);
