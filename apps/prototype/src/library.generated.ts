@@ -1343,7 +1343,7 @@ export const LIBRARY: readonly Echo[] = [
         "lng": -90.0578
       },
       "triggerRadiusKm": 0.04,
-      "place": "Lorraine Motel / National Civil Rights Museum, Memphis, Memphis"
+      "place": "Lorraine Motel / National Civil Rights Museum, Memphis"
     },
     "category": "true-crime",
     "format": "short",
@@ -1460,7 +1460,7 @@ export const LIBRARY: readonly Echo[] = [
         "lng": -77.02596
       },
       "triggerRadiusKm": 0.04,
-      "place": "Ford’s Theatre, Washington, D.C, Washington, D.C."
+      "place": "Ford’s Theatre, Washington, D.C."
     },
     "category": "true-crime",
     "format": "short",
@@ -1525,7 +1525,7 @@ export const LIBRARY: readonly Echo[] = [
         "lng": -71.09921
       },
       "triggerRadiusKm": 0.06,
-      "place": "Isabella Stewart Gardner Museum, Boston, Boston"
+      "place": "Isabella Stewart Gardner Museum, Boston"
     },
     "category": "true-crime",
     "format": "short",
@@ -1766,7 +1766,7 @@ export const LIBRARY: readonly Echo[] = [
         "lng": -77.94295
       },
       "triggerRadiusKm": 0.04,
-      "place": "Bellamy Mansion Museum, Wilmington, North Carolina, Wilmington, North Carolina"
+      "place": "Bellamy Mansion Museum, Wilmington, North Carolina"
     },
     "category": "legend",
     "format": "short",
@@ -1818,7 +1818,7 @@ export const LIBRARY: readonly Echo[] = [
         "lng": -87.64968
       },
       "triggerRadiusKm": 0.04,
-      "place": "Biograph Theater, Chicago, Chicago"
+      "place": "Biograph Theater, Chicago"
     },
     "category": "true-crime",
     "format": "short",
@@ -1928,7 +1928,7 @@ export const LIBRARY: readonly Echo[] = [
         "lng": -122.42298
       },
       "triggerRadiusKm": 0.06,
-      "place": "Alcatraz Island, San Francisco, San Francisco"
+      "place": "Alcatraz Island, San Francisco"
     },
     "category": "true-crime",
     "format": "short",
@@ -2162,7 +2162,7 @@ export const LIBRARY: readonly Echo[] = [
         "lng": -94.5842
       },
       "triggerRadiusKm": 0.06,
-      "place": "Union Station, Kansas City, Missouri, Kansas City, Missouri"
+      "place": "Union Station, Kansas City, Missouri"
     },
     "category": "true-crime",
     "format": "short",
@@ -2368,7 +2368,7 @@ export const LIBRARY: readonly Echo[] = [
         "lng": -96.8089
       },
       "triggerRadiusKm": 0.05,
-      "place": "Dealey Plaza, Dallas, Dallas"
+      "place": "Dealey Plaza, Dallas"
     },
     "category": "true-crime",
     "format": "short",

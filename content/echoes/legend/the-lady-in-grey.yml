@@ -7,7 +7,7 @@
 id: the-lady-in-grey
 title: "The Lady in Grey"
 summary: "Look at the windows of the main house."
-place: "Bellamy Mansion Museum, Wilmington, North Carolina, Wilmington, North Carolina"
+place: "Bellamy Mansion Museum, Wilmington, North Carolina"
 at: { lat: 34.23595, lng: -77.94295 }
 triggerRadiusKm: 0.04
 category: legend

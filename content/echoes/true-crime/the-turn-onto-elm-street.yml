@@ -4,7 +4,7 @@
 id: the-turn-onto-elm-street
 title: "The Turn onto Elm Street"
 summary: "Watch the curve of Elm Street."
-place: "Dealey Plaza, Dallas, Dallas"
+place: "Dealey Plaza, Dallas"
 at: { lat: 32.77905, lng: -96.80890 }
 triggerRadiusKm: 0.05
 category: true-crime

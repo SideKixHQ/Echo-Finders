@@ -4,7 +4,7 @@
 id: the-balcony
 title: "The Balcony"
 summary: "Look up at the balcony."
-place: "Lorraine Motel / National Civil Rights Museum, Memphis, Memphis"
+place: "Lorraine Motel / National Civil Rights Museum, Memphis"
 at: { lat: 35.13450, lng: -90.05780 }
 triggerRadiusKm: 0.04
 category: true-crime

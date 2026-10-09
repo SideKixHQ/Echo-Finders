@@ -4,7 +4,7 @@
 id: the-distance-across-the-street
 title: "The Distance Across the Street"
 summary: "Look from Ford’s Theatre to the house across the street."
-place: "Ford’s Theatre, Washington, D.C, Washington, D.C."
+place: "Ford’s Theatre, Washington, D.C."
 at: { lat: 38.89668, lng: -77.02596 }
 triggerRadiusKm: 0.04
 category: true-crime
