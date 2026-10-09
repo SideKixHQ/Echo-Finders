@@ -4,7 +4,7 @@
 id: the-prisoner-who-never-reached-the-prison
 title: "The Prisoner Who Never Reached the Prison"
 summary: "Look toward the station entrance."
-place: "Union Station, Kansas City, Missouri, Kansas City, Missouri"
+place: "Union Station, Kansas City, Missouri"
 at: { lat: 39.08525, lng: -94.58420 }
 triggerRadiusKm: 0.06
 category: true-crime

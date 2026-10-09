@@ -4,7 +4,7 @@
 id: the-last-movie
 title: "The Last Movie"
 summary: "Stand outside the theatre and look at the entrance."
-place: "Biograph Theater, Chicago, Chicago"
+place: "Biograph Theater, Chicago"
 at: { lat: 41.92636, lng: -87.64968 }
 triggerRadiusKm: 0.04
 category: true-crime

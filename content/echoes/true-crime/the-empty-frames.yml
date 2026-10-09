@@ -4,7 +4,7 @@
 id: the-empty-frames
 title: "The Empty Frames"
 summary: "Look at the empty frames."
-place: "Isabella Stewart Gardner Museum, Boston, Boston"
+place: "Isabella Stewart Gardner Museum, Boston"
 at: { lat: 42.33822, lng: -71.09921 }
 triggerRadiusKm: 0.06
 category: true-crime
