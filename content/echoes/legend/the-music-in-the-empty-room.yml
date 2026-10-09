@@ -1,0 +1,71 @@
+# From 20 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Authorized public area or booked tour stop; guest corridors and rooms require permission.
+# Position: main building (medium confidence).
+id: the-music-in-the-empty-room
+title: "The Music in the Empty Room"
+summary: "Pause somewhere the hotel allows visitors to stand."
+place: "Stanley Hotel, Estes Park, Colorado"
+at: { lat: 40.38288, lng: -105.51921 }
+triggerRadiusKm: 0.08
+category: legend
+format: short
+durationS: 112
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven;
+  no supernatural claim is established.
+minAge: 0
+quality: 0.75
+tags: [estes-park, ghosts]
+teaser: "Pause somewhere the hotel allows visitors to stand."
+script: |
+  Pause somewhere the hotel allows visitors to stand.
+
+  Listen.
+
+  The Stanley’s ghost folklore includes children laughing in supposedly deserted hallways
+  and piano music coming from an empty ballroom.
+
+  Those stories appear in Colorado’s official tourism account.
+
+  They are reported experiences, not proof that the dead are making music.
+
+  The hotel is also associated with Stephen King, whose stay helped inspire The Shining.
+
+  But the fictional hotel in that novel is not a documentary account of this building.
+
+  Keep the two stories separate.
+
+  Now consider the sound at the center of the legend.
+
+  Music normally means somebody is nearby: a player at a piano, a guest rehearsing, a
+  recording in another room.
+
+  The story becomes unsettling when that expected person is missing.
+
+  You hear the notes.
+
+  You look for the musician.
+
+  The room appears empty.
+
+  At the Stanley, that gap between a sound and its visible source has become part of the
+  hotel’s identity.
+
+  The music is reported.
+
+  The musician remains a matter of belief.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Haunted colorado hot spots ghost hunters"
+    publisher: "Colorado Tourism Office"
+    url: https://www.colorado.com/articles/haunted-colorado-hot-spots-ghost-hunters
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Tours"
+    publisher: "The Stanley Hotel"
+    url: https://www.stanleyhotel.com/tours/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

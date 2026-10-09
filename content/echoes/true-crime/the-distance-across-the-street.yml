@@ -1,0 +1,72 @@
+# From 03 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Tenth Street sidewalk, with the theatre and Petersen House in view.
+# Position: 10th St NW between the theatre and the Petersen House (medium confidence).
+id: the-distance-across-the-street
+title: "The Distance Across the Street"
+summary: "Look from Ford’s Theatre to the house across the street."
+place: "Ford’s Theatre, Washington, D.C, Washington, D.C."
+at: { lat: 38.89668, lng: -77.02596 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [washington, lincoln]
+teaser: "Look from Ford’s Theatre to the house across the street."
+script: |
+  Look from Ford’s Theatre to the house across the street.
+
+  That short distance became the final journey of Abraham Lincoln’s life.
+
+  On April 14, 1865, Lincoln attended a performance of Our American Cousin.
+
+  Actor John Wilkes Booth knew the theatre. That evening, he entered the presidential box
+  and shot the president.
+
+  Booth escaped from the theatre. Lincoln could not.
+
+  People carried the wounded president across Tenth Street into the Petersen family’s
+  boarding house.
+
+  He died there the following morning, April 15.
+
+  Look at the crossing again.
+
+  Today, it takes only a few seconds to walk from one side to the other.
+
+  On that night, people crossed it carrying the president of the United States, trying to
+  find somewhere to care for him.
+
+  The theatre marks the attack.
+
+  The house marks his death.
+
+  Between them is an ordinary city street that briefly became the center of a national
+  catastrophe.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: alleged
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-10-09"
+  contentWarning: "This echo describes an assassination. No violence is described in detail."
+sources:
+  - title: "Faq the assassination"
+    publisher: "National Park Service"
+    url: https://home.nps.gov/foth/learn/historyculture/faq-the-assassination.htm
+    retrievedAt: "2026-10-09"
+    rights: public-domain
+  - title: "Lincolns death"
+    publisher: "Ford's Theatre"
+    url: https://fords.org/lincolns-assassination/lincolns-death/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "The Petersen House"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/foth/the-petersen-house.htm
+    retrievedAt: "2026-10-09"
+    rights: public-domain

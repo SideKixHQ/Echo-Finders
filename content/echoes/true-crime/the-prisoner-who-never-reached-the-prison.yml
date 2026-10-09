@@ -1,0 +1,69 @@
+# From 05 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Permitted pedestrian area outside the east entrance; avoid vehicle lanes.
+# Position: front of the east end of the station; check against the plaque (low confidence).
+id: the-prisoner-who-never-reached-the-prison
+title: "The Prisoner Who Never Reached the Prison"
+summary: "Look toward the station entrance."
+place: "Union Station, Kansas City, Missouri, Kansas City, Missouri"
+at: { lat: 39.08525, lng: -94.58420 }
+triggerRadiusKm: 0.06
+category: true-crime
+format: short
+durationS: 99
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [kansas-city, 1933]
+teaser: "Look toward the station entrance."
+script: |
+  Look toward the station entrance.
+
+  On June 17, 1933, officers brought a handcuffed prisoner through Union Station.
+
+  His name was Frank Nash. They were taking him back to federal prison.
+
+  Outside, a car waited.
+
+  As the officers gathered around it, armed men attacked.
+
+  The apparent purpose was to free Nash.
+
+  Instead, Nash and four law enforcement officers were killed.
+
+  A journey that should have continued toward prison ended here, outside a railway
+  station.
+
+  The killings became known as the Kansas City Massacre.
+
+  They helped drive changes in federal law enforcement, including broader authority for
+  federal agents.
+
+  Look at the people arriving and leaving now.
+
+  Stations are places of movement. Someone steps off a train, crosses a lobby, finds a
+  ride, continues home.
+
+  For five people that morning, the next part of the journey never happened.
+
+  This entrance became the boundary between an ordinary transfer and a nationally
+  consequential crime.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-10-09"
+  contentWarning: "This echo describes a shooting in which five people died. No violence is described in detail."
+sources:
+  - title: "Kansas city massacre pretty boy floyd"
+    publisher: "Federal Bureau of Investigation"
+    url: https://www.fbi.gov/history/cases-and-criminals/kansas-city-massacre-pretty-boy-floyd
+    retrievedAt: "2026-10-09"
+    rights: public-domain
+  - title: "100 years of kansas city history"
+    publisher: "Union Station Kansas City"
+    url: https://unionstation.org/100-years-of-kansas-city-history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

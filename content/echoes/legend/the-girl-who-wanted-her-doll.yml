@@ -1,0 +1,64 @@
+# From 17 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Annie’s Room when included in your guided visit.
+# Position: attraction entrance, Warriston's Close (medium confidence).
+id: the-girl-who-wanted-her-doll
+title: "The Girl Who Wanted Her Doll"
+summary: "This story begins with a visitor’s claim."
+place: "The Real Mary King’s Close, Edinburgh"
+at: { lat: 55.94995, lng: -3.19049 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 108
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven;
+  no supernatural claim is established.
+minAge: 0
+quality: 0.75
+tags: [edinburgh, ghosts]
+teaser: "This story begins with a visitor’s claim."
+script: |
+  This story begins with a visitor’s claim.
+
+  In the 1990s, Japanese psychic Aiko Gibo visited Mary King’s Close.
+
+  According to the attraction’s account, she said she sensed a young girl in a room off
+  Allan’s Close.
+
+  The girl, she claimed, was called Annie and was distressed because she had lost her
+  doll.
+
+  Gibo brought a replacement.
+
+  Visitors later began leaving toys of their own.
+
+  Here is the important distinction: the attraction says its researchers have not found a
+  historical record identifying a child named Annie as the girl in this story.
+
+  The ghost’s identity is unverified.
+
+  The visitors’ response is real.
+
+  People heard about a lonely child and wanted to offer comfort.
+
+  Look around the room.
+
+  Some ghost stories are built around a threat approaching from the dark.
+
+  This one is built around something missing.
+
+  A child without her family.
+
+  A doll that could be replaced.
+
+  A small act of kindness offered to someone nobody could prove was there.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The story of annies doll"
+    publisher: "The Real Mary King's Close"
+    url: https://www.realmarykingsclose.com/experience/the-story-of-annies-doll/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

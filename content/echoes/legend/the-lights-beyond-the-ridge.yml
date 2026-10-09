@@ -1,0 +1,66 @@
+# From 18 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Designated overlook, only when open. This is a viewing location, not an alleged apparition’s exact position.
+# Position: interpolated to Parkway milepost 310; check on a map (low confidence).
+# REVIEW FLAG: no published coordinate for Lost Cove Cliffs Overlook (MP 310); interpolated
+# along the Parkway and could be up to 1.5 km out. Check on a map.
+id: the-lights-beyond-the-ridge
+title: "The Lights Beyond the Ridge"
+summary: "Look out toward the ridges."
+place: "Lost Cove Cliffs Overlook, Blue Ridge Parkway, North Carolina"
+at: { lat: 36.00100, lng: -81.87900 }
+triggerRadiusKm: 0.4
+category: legend
+format: short
+durationS: 100
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven;
+  no supernatural claim is established.
+minAge: 0
+quality: 0.75
+tags: [blue-ridge-parkway, ghosts]
+teaser: "Look out toward the ridges."
+script: |
+  Look out toward the ridges.
+
+  For more than a century, people have reported unusual lights around Brown Mountain.
+
+  The descriptions vary: bright points that appear, seem to move, then disappear.
+
+  The lights became part of Appalachian folklore, often given ghostly explanations.
+
+  The National Park Service notes that studies have linked reports to ordinary sources,
+  including vehicle headlights.
+
+  So a distant light is not evidence of a spirit.
+
+  But distance makes certainty difficult.
+
+  You may not see the road beneath a moving light. You may not recognize the angle. Trees
+  can hide a source and reveal it again.
+
+  That uncertainty helped the legend endure.
+
+  Watch from the designated overlook. There is no need to chase anything into the woods.
+
+  If you see a light, notice its direction and movement before deciding what it is.
+
+  The landscape is real.
+
+  The reports are documented.
+
+  What people make of them is where the ghost story begins.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Lost cove cliffs overlook"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/lost-cove-cliffs-overlook.htm
+    retrievedAt: "2026-10-09"
+    rights: public-domain
+  - title: "Index"
+    publisher: "Appalachian State University, Department of Physics"
+    url: https://www.dancaton.physics.appstate.edu/BML/SeeTheLights/index.htm
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,73 @@
+# From 07 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Designated visitor area facing the balcony outside Room 306.
+# Position: Mulberry St forecourt facing the balcony (medium confidence).
+id: the-balcony
+title: "The Balcony"
+summary: "Look up at the balcony."
+place: "Lorraine Motel / National Civil Rights Museum, Memphis, Memphis"
+at: { lat: 35.13450, lng: -90.05780 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 97
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [memphis, civil-rights]
+teaser: "Look up at the balcony."
+script: |
+  Look up at the balcony.
+
+  On April 4, 1968, Martin Luther King Jr. stood there.
+
+  He had come to Memphis to support striking Black sanitation workers seeking better pay
+  and safer working conditions.
+
+  The Lorraine was a place to stay while that work continued.
+
+  Then King was shot.
+
+  He died that evening.
+
+  Pause before looking away.
+
+  This site can become so familiar through photographs that the balcony starts to feel
+  like an image rather than a place.
+
+  But it was a place.
+
+  There was a room behind him. A city around him. A campaign still underway.
+
+  The workers’ demands had not disappeared. Neither had the need for the work he was
+  doing.
+
+  Today, the museum preserves this location within the larger history of civil rights.
+
+  Look at the balcony once more.
+
+  Remember the reason he was in Memphis, as well as what happened here.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: true
+  convictionStatus: convicted
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-10-09"
+  contentWarning: "This echo describes an assassination. No violence is described in detail."
+sources:
+  - title: "About us"
+    publisher: "National Civil Rights Museum"
+    url: https://civilrightsmuseum.org/about-us/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "April 4th a day of remembrance"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/malu/april-4th-a-day-of-remembrance.htm
+    retrievedAt: "2026-10-09"
+    rights: public-domain
+  - title: "Tennessee: The Lorraine Motel"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/tennessee-the-lorraine-hotel-memphis.htm
+    retrievedAt: "2026-10-09"
+    rights: public-domain

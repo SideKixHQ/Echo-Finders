@@ -1,0 +1,79 @@
+# From 10 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Public sidewalk outside the former site. The original garage no longer stands.
+# Position: estimated from the Chicago address grid; check on a map (low confidence).
+# REVIEW FLAG: the Mob Museum wall pieces have no public-domain source; it rests on the museum's
+# own pages.
+id: the-garage-that-vanished
+title: "The Garage That Vanished"
+summary: "The garage is gone."
+place: "Former garage site, 2122 North Clark Street, Chicago"
+at: { lat: 41.92040, lng: -87.63800 }
+triggerRadiusKm: 0.06
+category: true-crime
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [chicago, prohibition]
+teaser: "The garage is gone."
+script: |
+  The garage is gone.
+
+  On February 14, 1929, it stood at this address.
+
+  Inside, seven men associated with George “Bugs” Moran’s bootlegging organization were
+  lined up against a wall and shot.
+
+  The killings became known as the St. Valentine’s Day Massacre.
+
+  The crime helped define the public image of Prohibition-era Chicago: rival
+  organizations, illegal alcohol, and violence reaching far beyond a private dispute.
+
+  Al Capone became a leading suspect in public accounts.
+
+  But he was never convicted of this massacre, and the case remains unsolved.
+
+  Look at the space where the building stood.
+
+  You cannot inspect its rooms here. Even the original bullet-marked wall was removed;
+  portions are now displayed at the Mob Museum in Las Vegas.
+
+  The address survives in Chicago.
+
+  The evidence traveled.
+
+  The name became famous.
+
+  Behind that name were seven deaths, and a crime whose reputation became clearer than its
+  complete solution.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: unsolved
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-10-09"
+  contentWarning: "This echo describes the killing of seven men. No violence is described in detail."
+sources:
+  - title: "1191"
+    publisher: "Encyclopedia of Chicago, Chicago Historical Society"
+    url: https://www.encyclopedia.chicagohistory.org/pages/1191.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Massacre wall"
+    publisher: "The Mob Museum"
+    url: https://themobmuseum.org/exhibits/massacre-wall/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "St valentines day massacre"
+    publisher: "The Mob Museum"
+    url: https://themobmuseum.org/case-files/the-exhibits/st-valentines-day-massacre/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Al Capone"
+    publisher: "Federal Bureau of Investigation"
+    url: https://www.fbi.gov/history/cases-and-criminals/al-capone
+    retrievedAt: "2026-10-09"
+    rights: public-domain
