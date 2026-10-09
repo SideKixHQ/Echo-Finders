@@ -36,6 +36,15 @@ import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
 import { buyAllAccess, buyCityPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
 import { MembershipPanel } from "./Membership";
+import {
+  customerId,
+  finishCheckout,
+  openCardPage,
+  paymentsReady,
+  restoreFromStripe,
+  setRenewalAtStripe,
+  startCheckout,
+} from "./payments";
 import { addHeard, readHeard } from "./heard-store";
 import { City } from "./City";
 import type { CaptureEvent, CaptureRecord, Echo, EchoCategory, TravelMode } from "@echofinders/core";
@@ -335,6 +344,31 @@ export function App() {
    * silently doing nothing.
    */
   const [entitlement, setEntitlement] = useState<Entitlement>(() => readEntitlement());
+  /*
+   * Real payments, once the Stripe keys are in Vercel (`payments.ts`). Until then this stays
+   * false and every purchase is the device-only record it always was.
+   */
+  const [paymentsOn, setPaymentsOn] = useState(false);
+  const [paymentError, setPaymentError] = useState<string | null>(null);
+  useEffect(() => {
+    let live = true;
+    void paymentsReady().then((on) => live && setPaymentsOn(on));
+    // Back from Stripe's checkout or card page: read what is owned now.
+    finishCheckout()
+      .then((back) => live && back && setEntitlement(back))
+      .catch((e: Error) => live && setPaymentError(e.message));
+    return () => {
+      live = false;
+    };
+  }, []);
+  /** Buy for real when payments are on; otherwise record it on this device, as before. */
+  const buy = (plan: "city" | "allAccess", cityId: string | undefined, local: () => void) => {
+    if (!paymentsOn) return local();
+    setPaymentError(null);
+    startCheckout(plan === "city" && cityId ? "city" : "allAccess", cityId).catch((e: Error) =>
+      setPaymentError(e.message),
+    );
+  };
   const [paywallFor, setPaywallFor] = useState<Echo | null>(null);
   /** Settings › Membership options: the plans, with nobody stopped mid-walk. */
   const [optionsOpen, setOptionsOpen] = useState(false);
@@ -1798,12 +1832,21 @@ export function App() {
                   membership={membershipOf(entitlement, Date.now())}
                   freeLeft={freeEchoesLeft(entitlement, { ...listenerFor(kids, optIns), heardEchoIds: [...heardIds] }, Date.now())}
                   onOptions={() => setOptionsOpen(true)}
-                  onRestore={() => {
-                    const back = readEntitlement();
+                  payments={paymentsOn}
+                  canManageCard={paymentsOn && customerId() !== null}
+                  error={paymentError}
+                  onCard={() => openCardPage().catch((e: Error) => setPaymentError(e.message))}
+                  onRestore={async () => {
+                    const back = (paymentsOn ? await restoreFromStripe().catch(() => null) : null) ?? readEntitlement();
                     setEntitlement(back);
                     return membershipOf(back, Date.now());
                   }}
-                  onRenewal={(on) => setEntitlement(setAllAccessRenewal(entitlement, on))}
+                  onRenewal={(on) => {
+                    if (!paymentsOn || !customerId()) return setEntitlement(setAllAccessRenewal(entitlement, on));
+                    setRenewalAtStripe(on)
+                      .then(setEntitlement)
+                      .catch((e: Error) => setPaymentError(e.message));
+                  }}
                 />
               }
             />
@@ -2030,12 +2073,14 @@ export function App() {
             heardCount={heardIds.length}
             allAccessRunning={membershipOf(entitlement, Date.now()).plan === "all-access"}
             onBuy={(plan) => {
-              // The same stub as the paywall below: recorded on this device, nothing charged.
+              // Stripe when payments are on; otherwise recorded on this device, nothing charged.
               const city = state.position ? cityAt(state.position.at) : null;
-              setEntitlement(
-                plan === "city" && city ? buyCityPass(entitlement, city.id) : buyAllAccess(entitlement),
-              );
-              setOptionsOpen(false);
+              buy(plan, city?.id, () => {
+                setEntitlement(
+                  plan === "city" && city ? buyCityPass(entitlement, city.id) : buyAllAccess(entitlement),
+                );
+                setOptionsOpen(false);
+              });
             }}
             onClose={() => setOptionsOpen(false)}
           />
@@ -2047,23 +2092,20 @@ export function App() {
             heardCount={heardIds.length}
             onBuy={(plan) => {
               /*
-                Where Stripe Checkout goes.
-
-                Today it records the purchase locally and immediately, which is the honest
-                stub: there is no Checkout session to open, no webhook to hear back from and
-                no account to attach the result to (`docs/03-selling.md`). The shape is the
-                real one though — the app asks, something outside it decides, and the
-                answer comes back as an Entitlement — so the redirect slots in here
-                without any other screen changing.
+                Stripe Checkout, when payments are on (`payments.ts`): the page leaves for
+                Stripe and comes back with what was bought. Until the keys are in Vercel it
+                records the purchase on this device, immediately, as it always has.
               */
               const city = cityAt(paywallFor.point.at);
-              setEntitlement(
-                plan === "city" && city
-                  ? buyCityPass(entitlement, city.id)
-                  : buyAllAccess(entitlement),
-              );
-              setPaywallFor(null);
-              setPlayAfterBuying(paywallFor);
+              buy(plan, city?.id, () => {
+                setEntitlement(
+                  plan === "city" && city
+                    ? buyCityPass(entitlement, city.id)
+                    : buyAllAccess(entitlement),
+                );
+                setPaywallFor(null);
+                setPlayAfterBuying(paywallFor);
+              });
             }}
             onClose={() => setPaywallFor(null)}
           />

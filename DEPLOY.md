@@ -77,6 +77,38 @@ Worth knowing before you judge it, so you spend your attention on the right thin
 - `?speed=2` slows the simulation, so the twelve-second capture ring is watchable.
 - `?start=0.4` drops you four-tenths of the way along, to skip to a busier stretch.
 
+## Payments (Stripe)
+
+Built and switched off. The app asks `/api/config` whether payments are on, and until all
+three settings below exist the answer is no: every purchase is recorded on the phone and
+nothing is charged, exactly as before. Turning payments on is these steps, not a deploy.
+
+1. **In Stripe** (start in **test mode**, the toggle top right), create two products:
+   - **City Pass**: a one-off price, $9.99 (or whatever price you settle on).
+   - **All-Access**: a recurring yearly price, $34.99.
+   Copy each price's id (`price_…`).
+2. **In Stripe**, Settings → Billing → Customer portal: turn on *update payment method*,
+   *invoice history* and *cancel subscriptions* (at period end).
+3. **In Vercel**, Project → Settings → Environment Variables, add:
+
+       STRIPE_SECRET_KEY        sk_test_…  (sk_live_… when going live)
+       STRIPE_PRICE_CITY_PASS   price_…    (the City Pass price)
+       STRIPE_PRICE_ALL_ACCESS  price_…    (the All-Access price)
+
+   Then redeploy (Deployments → the latest → Redeploy) so the functions pick them up.
+4. Buy something on the phone with Stripe's test card `4242 4242 4242 4242`, any future
+   date, any CVC. You come back to the app owning it, and Settings → Membership → Payment
+   card opens Stripe's page for the card and receipts.
+
+To go live, repeat 1 to 3 in live mode with the live key and live price ids.
+
+What it does not do yet, on purpose: there are no accounts, so Stripe is the record of who
+paid, and the phone keeps the Stripe customer id. Restore works on the phone that bought; a
+second phone waits for accounts (`docs/03-selling.md`). No webhook is needed for this: the
+app reads what was bought from Stripe directly when it comes back from checkout.
+
+The secret key lives only in Vercel. It is never in the repository and never in the app.
+
 ## What is most useful to hear from you
 
 Not bugs — I can find those. The things only you can answer:

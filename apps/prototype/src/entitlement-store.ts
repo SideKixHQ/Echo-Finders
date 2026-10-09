@@ -13,7 +13,9 @@
  *   1. an identity          email and a magic link      NOT BUILT
  *   2. an entitlement store one row: who, what, when    NOT BUILT (Supabase, deferred)
  *   3. a gate the engine sees                           BUILT, in `entitlement.ts`
- *   4. Stripe Checkout and a webhook                    NOT BUILT
+ *   4. Stripe Checkout                                  BUILT, off until the keys are in
+ *                                                       Vercel (`payments.ts`, `api/`).
+ *                                                       Stripe is the record meanwhile.
  *
  * What it does give is the shape. `buyCityPass()` and `buyAllAccess()` are what a Stripe
  * webhook's success redirect will call, `readEntitlement()` is what a session start will
@@ -78,6 +80,14 @@ function save(next: Entitlement): Entitlement {
     /* Session-only. See above. */
   }
   return next;
+}
+
+/**
+ * Keep what Stripe says this device owns (`payments.ts`). The server's answer replaces the
+ * device record whole: it is the record now, and merging could resurrect a cancelled year.
+ */
+export function storeEntitlement(next: Entitlement): Entitlement {
+  return save(next);
 }
 
 /** What is already held, as passes, so buying a second thing never drops the first. */
