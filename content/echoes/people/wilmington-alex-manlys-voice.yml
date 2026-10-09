@@ -1,0 +1,41 @@
+# From W058 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public marker-side sidewalk; commemorative location, separate from the former newspaper office.
+# Position: D-103 is on Third between Nun and Church (one source: at 3rd & Church); no coordinates found. Placed mid-block on Third St line fitted from hmdb markers at 212/316/412 S 3rd. Position along block uncertain +/-50 m; side of street unknown. (low confidence).
+id: wilmington-alex-manlys-voice
+title: "Alex Manly's Voice"
+summary: "Alex Manly edited the Daily Record, Wilmington's Black-owned newspaper."
+place: "Alex Manly historical marker, South Third Street between Nun and Church streets, Wilmington, North Carolina"
+at: { lat: 34.22960, lng: -77.94550 }
+triggerRadiusKm: 0.06
+category: people
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Alex Manly edited the Daily Record, Wilmington's Black-owned newspaper."
+script: |
+  Alex Manly edited the Daily Record, Wilmington's Black-owned newspaper. In 1898, a white
+  supremacist campaign targeted his writing and made him a focus of threats.
+
+  He fled before the mob burned the newspaper's building during the coup. His departure
+  was a response to danger, not an admission that the attackers' claims were true.
+
+  This marker honors him near downtown's historic streets. The press building stood
+  elsewhere, on Seventh Street.
+
+  Pause by his name. A newspaper editor works to make words public; a campaign of
+  intimidation works to make that public voice disappear. Manly's story connects both
+  acts. The paper's office was destroyed, but historical records preserve his identity and
+  the political attack directed against him. The marker returns a name to the city's
+  visible memory.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Alex manly 1866 1944 d 103"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/11/alex-manly-1866-1944-d-103
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

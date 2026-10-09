@@ -1,0 +1,41 @@
+# From W077 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk; active religious property, interior access by permission.
+# Position: hmdb Historic Wilmington Foundation marker for the church: 34 14.274N 77 56.412W, south side of Chestnut just west of 8th. (high confidence).
+id: wilmington-chestnut-streets-wooden-church
+title: "Chestnut Street's Wooden Church"
+summary: "Wilmington identifies this 1858 church as an important example of Carpenter Gothic architecture with Italianate influences."
+place: "Chestnut Street Presbyterian Church, 712 Chestnut Street, Wilmington, North Carolina"
+at: { lat: 34.23790, lng: -77.94020 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 65
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Wilmington identifies this 1858 church as an important example of Carpenter Gothic architecture with Italianate influences."
+script: |
+  Wilmington identifies this 1858 church as an important example of Carpenter Gothic
+  architecture with Italianate influences.
+
+  The city's account also connects it with one of Wilmington's early Black congregations.
+  Its significance therefore belongs to both architectural form and community life.
+
+  Listen from the public sidewalk. Gothic ideas did not require stone walls and enormous
+  cathedrals to become recognizable. Builders could interpret them in a smaller wooden
+  structure suited to a different setting.
+
+  The result asks you to look beyond size when deciding what counts as a landmark. A
+  modest building can carry a substantial history. Here, a continuing religious community
+  and a distinctive design give the structure meaning together. Its value lies in that
+  relationship, not merely in its age.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Local Historic Landmarks"
+    publisher: "City of Wilmington"
+    url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,41 @@
+# From W047 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Open museum lobby or public Second Street sidewalk; historic entertainment site.
+# Position: West sidewalk of S 2nd St at the USO entrance, ~23 m north of Orange; address point + OSM footprint (building is NW corner of 2nd & Orange) (high confidence).
+# Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
+id: wilmington-the-wartime-dance-floor
+title: "The Wartime Dance Floor"
+summary: "The USO's wartime program included big-band dances, plays, recitals, and radio broadcasts."
+place: "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Carolina"
+at: { lat: 34.23320, lng: -77.94718 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The USO's wartime program included big-band dances, plays, recitals, and radio broadcasts."
+script: |
+  The USO's wartime program included big-band dances, plays, recitals, and radio
+  broadcasts. Entertainment was part of what the building offered people far from home.
+
+  That did not make the war disappear. It gave service members a temporary change of
+  rhythm: a chance to listen, move, and join a crowd for reasons other than military duty.
+
+  Stand in the open lobby if permitted, or listen from the sidewalk. The building helps
+  you locate the idea without pretending a particular dance is happening around you.
+
+  Art can do practical work. A song or performance may help a stranger feel less isolated,
+  even when the larger circumstances remain difficult. Here, organized entertainment
+  belonged to a wider effort of hospitality. The dance floor was one way Wilmington
+  offered an evening's company.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Museum"
+    publisher: "Wilmington Community Arts"
+    url: https://wilmingtoncommunityarts.org/museum/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

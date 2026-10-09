@@ -1,0 +1,43 @@
+# From W096 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Open museum area near the restored telephone booth; observe rather than use unless staff invite interaction.
+# Position: West sidewalk of S 2nd St at the USO entrance, ~23 m north of Orange; address point + OSM footprint (building is NW corner of 2nd & Orange) (high confidence).
+# Shares a stop with other echoes, so it sits 8m off the spot to keep its pin tappable.
+id: wilmington-calling-home-before-a-pocket-phone
+title: "Calling Home Before a Pocket Phone"
+summary: "Imagine needing to call home without a phone in your pocket."
+place: "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Carolina"
+at: { lat: 34.23322, lng: -77.94729 }
+triggerRadiusKm: 0.04
+category: kids
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [wilmington, downtown]
+teaser: "Imagine needing to call home without a phone in your pocket."
+script: |
+  Imagine needing to call home without a phone in your pocket. This museum has a restored
+  wartime-era telephone booth with a vintage phone inside.
+
+  The booth gives you a small space where one person could stand or sit and make a call. A
+  public telephone was something you went to, rather than something that followed you
+  everywhere.
+
+  Look at the phone with your grown-up. It may have parts that seem unfamiliar because the
+  way people placed calls has changed.
+
+  The object belongs in a building that welcomed people far from home during the Second
+  World War. We cannot say who used this particular phone for every conversation. We can
+  understand why a call mattered: a familiar voice could connect someone here with people
+  waiting somewhere else.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "July 4th open house"
+    publisher: "Wilmington Community Arts"
+    url: https://wilmingtoncommunityarts.org/classes-and-events/july-4th-open-house/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

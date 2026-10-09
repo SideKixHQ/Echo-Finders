@@ -1,0 +1,41 @@
+# From W100 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public park viewing area; look without climbing or handling the sculpture.
+# Position: Centre of Bijou Park (OSM polygon, west side of N Front between Chestnut and Grace, ~12x47 m); sculpture position within the park not confirmed (medium confidence).
+id: wilmington-the-dog-made-of-metal
+title: "The Dog Made of Metal"
+summary: "Paul Hill made a dog for Bijou Park, but this dog does not need food, water, or a nap."
+place: "Straining to Be sculpture, Bijou Park, 209 North Front Street, Wilmington, North Carolina"
+at: { lat: 34.23802, lng: -77.94941 }
+triggerRadiusKm: 0.04
+category: kids
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [wilmington, downtown]
+teaser: "Paul Hill made a dog for Bijou Park, but this dog does not need food, water, or a nap."
+script: |
+  Paul Hill made a dog for Bijou Park, but this dog does not need food, water, or a nap.
+  It is a sculpture called Straining to Be.
+
+  The tourism authority describes its materials as Corten steel and found objects. Things
+  made for other purposes became part of an animal's shape.
+
+  Stand back and look at the outline. What makes you recognize a dog before you examine
+  every detail? Then look for the parts the artist used to suggest that shape.
+
+  The real story is a person's choice to turn material into something viewers can
+  recognize. No imaginary dog adventure is needed. The sculpture gives an ordinary park a
+  playful surprise, and it gives you a challenge: discover how an artist made a familiar
+  creature from things that were never alive.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Discover outdoor art in wilmington nc"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/discover-outdoor-art-in-wilmington-nc/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

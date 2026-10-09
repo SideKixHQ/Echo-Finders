@@ -1,0 +1,46 @@
+# From W054 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public park paths at Third and Davis streets; memorial site, not one exact location of all the violence.
+# Position: Inside 1898 Memorial Park polygon near the 3rd/Davis corner (park centroid 34.24775,-77.94707) (high confidence).
+id: wilmington-six-paddles-for-memory
+title: "Six Paddles for Memory"
+summary: "The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its victims."
+place: "1898 Memorial Park, 1018 North Third Street, Wilmington, North Carolina"
+at: { lat: 34.24800, lng: -77.94725 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its victims."
+script: |
+  The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its
+  victims. Artist Ayokunle Odeleye gave the memorial a form tied to movement and
+  collective effort.
+
+  This park is a place of remembrance. The events it commemorates happened across the
+  city, not all on this patch of ground.
+
+  Walk slowly along the public path. The sculpture asks for a different pace from the
+  surrounding streets. Its repeated forms can bring separate lives into one field of
+  attention without pretending the violence had a simple or settled ending.
+
+  Public art carries a responsibility here. It makes history present while leaving room
+  for reflection. The bronze survives in the open air; the work of understanding what the
+  city lost must continue among the people who visit.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "1898 Memorial Park"
+    publisher: "City of Wilmington"
+    url: https://www.wilmingtonnc.gov/Connect-With-Us/Department-Directory/Parks-Recreation/Parks-Trails/1898-Memorial-Park
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Monument"
+    publisher: "Documenting the American South, UNC Chapel Hill"
+    url: https://docsouth.unc.edu/commland/monument/842/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

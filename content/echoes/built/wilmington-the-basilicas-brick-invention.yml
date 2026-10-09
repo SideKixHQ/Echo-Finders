@@ -1,0 +1,46 @@
+# From W082 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Ann Street sidewalk; interior viewing only when the parish permits, outside services unless invited.
+# Position: South sidewalk of Ann St at 412 Ann (county address point/footprint south side). Wikipedia/OSM church point is north side ~35 m away; either side within 20 m of this spot (medium confidence).
+id: wilmington-the-basilicas-brick-invention
+title: "The Basilica's Brick Invention"
+summary: "Saint Mary's church is associated with the Guastavino family's brick-and-tile vaulting work."
+place: "Basilica Shrine of Saint Mary, 412 Ann Street, Wilmington, North Carolina"
+at: { lat: 34.23188, lng: -77.94360 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Saint Mary's church is associated with the Guastavino family's brick-and-tile vaulting work."
+script: |
+  Saint Mary's church is associated with the Guastavino family's brick-and-tile vaulting
+  work. Its dedication in 1912 gave Wilmington a distinctive new religious building.
+
+  The construction method is central to its identity. Thin layers of tile and careful
+  geometry could create substantial vaulted forms.
+
+  This remains a place of worship. Begin on the public sidewalk and enter only when
+  visitor access is permitted.
+
+  Look at the building as both a community's religious home and the result of specialist
+  craft. Its architectural impact depends on thousands of smaller pieces working together.
+  A large interior space can feel almost effortless to a visitor; the method behind it
+  required knowledge and precision. The landmark makes that marriage of design, material,
+  and labor part of downtown's visible history.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "History"
+    publisher: "Basilica Shrine of St. Mary"
+    url: https://saintmarybasilica.org/history
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Marker 264877"
+    publisher: "The Historical Marker Database"
+    url: https://www.hmdb.org/m.asp?m=264877
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

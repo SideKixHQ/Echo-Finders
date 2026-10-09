@@ -1,0 +1,47 @@
+# From W064 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk; associated project site, not a claim about the exact place of each diary entry.
+# Position: DigitalNC building point 34.2361,-77.9429 (NE corner Market & 5th); moved ~17 m south to north Market St sidewalk in front of house (high confidence).
+# Shares a stop with other echoes, so it sits 10m off the spot to keep its pin tappable.
+id: wilmington-rufus-bunnells-written-weather
+title: "Rufus Bunnell's Written Weather"
+summary: "Rufus Bunnell assisted with the Bellamy design and kept a diary."
+place: "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23587, lng: -77.94281 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Rufus Bunnell assisted with the Bellamy design and kept a diary."
+script: |
+  Rufus Bunnell assisted with the Bellamy design and kept a diary. The museum's published
+  excerpts include an 1859 Independence Day described through heat and a thunderstorm.
+
+  Such an entry brings a working person into a history often told through architectural
+  labels. He experienced Wilmington as weather, time, and daily activity while the house
+  was taking shape.
+
+  This is the construction project associated with his work. We do not need to invent his
+  private thoughts or place every diary line on this sidewalk.
+
+  Look at the mansion and remember that its finished appearance came after many unfinished
+  days. A diary preserves the scale of those days. Bunnell's records let the building's
+  design history meet the ordinary conditions in which an architect actually lived and
+  worked.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Museum blog"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/museum-blog
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "The place"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/the-place.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -83,6 +83,35 @@ export const FULL_POLICY: ContentPolicy = {
   allowedRights: ["public-domain", "cc-by", "cc-by-sa", "licensed", "fair-use-facts"],
 };
 
+/**
+ * The one exception to the rights policy: a ghost story citing the place's own account.
+ *
+ * James (2026-10-09): "Allow it for legends and have a disclaimer. Ghost stories are not all
+ * true anyway." A haunting at the Queen Mary or the Stanley has exactly one origin, the
+ * place that tells it, and no government archive records a knock in stateroom B340. What
+ * such a source backs is never "this happened", only "this is what they tell", and the
+ * script says that out loud (ADR-0016). So an echo that is a legend in both category and
+ * certainty may cite that account as `fair-use-facts`, with a link. Anything a legend
+ * states as history (a hanging in 1852, a drowning in 1873) still wants a public record.
+ */
+function legendAccount(echo: Echo, source: Source): boolean {
+  return echo.category === "legend" && echo.certainty === "legend" && source.rights === "fair-use-facts";
+}
+
+/**
+ * A draft may cite any credible source it links to; approval still needs the policy.
+ *
+ * James (2026-10-09), sending a hundred downtown Wilmington stories whose sources are
+ * mostly the places themselves (the Bellamy, the Burgwin-Wright House, Thalian Hall, the
+ * railroad museum): allow credible sources for drafts, and keep the public-domain or CC-BY
+ * bar for anything marked approved (ADR-0016). Facts are not copyrightable, so citing a
+ * museum's page for a date infringes nothing. What the policy buys is an airline being able
+ * to check every source with no licence question, and that only matters at approval.
+ */
+function draftCitation(echo: Echo, source: Source): boolean {
+  return echo.editorial !== "approved" && source.rights === "fair-use-facts";
+}
+
 export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const error = (field: string, message: string) =>
@@ -166,7 +195,21 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
     if (source.publisher.trim().length === 0) {
       error(`sources[${i}].publisher`, "is required to judge credibility");
     }
-    if (!policy.allowedRights.includes(source.rights)) {
+    if (legendAccount(echo, source)) {
+      if (!source.url) {
+        error(
+          `sources[${i}].url`,
+          "a place's own account of its legend must link to it, so anyone can read where the story comes from",
+        );
+      }
+    } else if (draftCitation(echo, source)) {
+      if (!source.url) {
+        error(
+          `sources[${i}].url`,
+          "a draft citing a source outside the policy must link to it, so a reviewer can open it",
+        );
+      }
+    } else if (!policy.allowedRights.includes(source.rights)) {
       error(
         `sources[${i}].rights`,
         `"${source.rights}" is outside the current policy (${policy.allowedRights.join(", ")}). ` +
@@ -340,6 +383,8 @@ function validateTrueCrime(echo: Echo): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const error = (field: string, message: string) =>
     issues.push({ echoId: echo.id, severity: "error", field, message });
+  const warn = (field: string, message: string) =>
+    issues.push({ echoId: echo.id, severity: "warning", field, message });
 
   const review = echo.trueCrimeReview;
   if (!review) {
@@ -354,8 +399,10 @@ function validateTrueCrime(echo: Echo): ValidationIssue[] {
   // report, a government archive — rather than someone else's account of it. Secondary
   // sources repeat each other's errors, and a chain of retellings is how an echo ends up
   // asserting a conviction that never happened.
+  // A draft may still be gathering its record (ADR-0016); it is told so, and cannot be
+  // approved without one.
   if (!echo.sources.some((source) => source.rights === "public-domain")) {
-    error(
+    (echo.editorial === "approved" ? error : warn)(
       "sources",
       "true crime needs at least one public record (court, coroner, government archive) as a primary source",
     );

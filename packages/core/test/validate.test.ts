@@ -280,6 +280,57 @@ describe("rights policy", () => {
     expect(issues[0]!.message).toMatch(/public record/);
   });
 
+  describe("a legend citing the place's own account (ADR-0016)", () => {
+    const legend = (overrides: Partial<Echo> = {}): Echo =>
+      makeEcho({
+        id: "legend-test",
+        at: { lat: 33, lng: -79 },
+        category: "legend",
+        certainty: "legend",
+        certaintyNote: "Reported by the house; nothing supernatural is established.",
+        sources: [{ ...source(1), rights: "fair-use-facts", url: "https://example.org/ghost" }],
+        ...overrides,
+      });
+
+    it("accepts it, with a link", () => {
+      expect(allErrors(legend())).toEqual([]);
+    });
+
+    it("wants the link", () => {
+      const echo = legend({ sources: [{ ...source(1), rights: "fair-use-facts" }] });
+      expect(errorsOn(echo, "sources[0].url")).toHaveLength(1);
+    });
+
+    it("does not stretch to history told as fact, or to anything licensed", () => {
+      const asHistory = legend({ category: "history", certainty: "documented" });
+      expect(errorsOn(asHistory, "sources[0].rights")).toHaveLength(1);
+      const licensed = legend({ sources: [{ ...source(1), rights: "licensed", url: "https://example.org/x" }] });
+      expect(errorsOn(licensed, "sources[0].rights")).toHaveLength(1);
+    });
+  });
+
+  describe("a draft citing any credible source (ADR-0016)", () => {
+    const draft = (url?: string): Echo => ({
+      ...withRights("fair-use-facts", url),
+      editorial: "draft",
+      factCheck: "unchecked",
+    });
+
+    it("accepts it while it is a draft, with a link", () => {
+      expect(errorsOn(draft("https://example.org/museum"), "sources[0].rights")).toEqual([]);
+      expect(errorsOn(draft("https://example.org/museum"), "sources[0].url")).toEqual([]);
+    });
+
+    it("wants the link", () => {
+      expect(errorsOn(draft(), "sources[0].url")).toHaveLength(1);
+    });
+
+    it("still refuses it once approved", () => {
+      const approved = { ...draft("https://example.org/museum"), editorial: "approved" as const };
+      expect(errorsOn(approved, "sources[0].rights")).toHaveLength(1);
+    });
+  });
+
   it("allows everything again once a rights desk exists", () => {
     for (const rights of ["cc-by-sa", "licensed", "fair-use-facts"] as const) {
       const report = validateLibrary([withRights(rights)], FULL_POLICY);
@@ -296,6 +347,15 @@ describe("rights policy", () => {
 });
 
 describe("true crime — primary records", () => {
+  it("tells a draft without a public record, and stops it at approval", () => {
+    const museum: Source = { ...source(1), rights: "fair-use-facts", url: "https://example.org/1" };
+    const sources = [museum, { ...museum, title: "Source 2" }];
+    const draft = trueCrime({ sources, editorial: "draft", factCheck: "unchecked" });
+    const warned = validateEcho(draft).filter((i) => i.field === "sources");
+    expect(warned.map((i) => i.severity)).toEqual(["warning"]);
+    expect(errorsOn(trueCrime({ sources }), "sources")).toHaveLength(1);
+  });
+
   it("demands a public record, not just two retellings", () => {
     // Secondary sources repeat each other's errors; a chain of retellings is how an echo
     // ends up asserting a conviction that never happened.

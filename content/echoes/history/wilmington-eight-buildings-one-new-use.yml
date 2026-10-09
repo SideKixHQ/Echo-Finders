@@ -1,0 +1,47 @@
+# From W029 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public frontage or open shopping passages; follow business-hour access signs.
+# Position: HMDB Sprunt Building marker on Cotton Exchange facade, N Front just S of Walnut (34.23970,-77.94932); west Front St sidewalk mid-block Grace-Walnut (high confidence).
+# Shares a stop with other echoes, so it sits 6m off the spot to keep its pin tappable.
+id: wilmington-eight-buildings-one-new-use
+title: "Eight Buildings, One New Use"
+summary: "The Cotton Exchange is described as a complex of eight interconnected historic buildings."
+place: "Cotton Exchange, 321 North Front Street, Wilmington, North Carolina"
+at: { lat: 34.23946, lng: -77.94929 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The Cotton Exchange is described as a complex of eight interconnected historic buildings."
+script: |
+  The Cotton Exchange is described as a complex of eight interconnected historic
+  buildings. That explains why it does not behave like one purpose-built shopping center.
+
+  Its present use asks visitors to move through spaces that began with different
+  commercial roles. Floors and passageways preserve some of that uneven history.
+
+  Stand where a public passage turns or changes level. The interesting question is not
+  simply how old the brick might be. It is how several old buildings were made useful
+  together.
+
+  This kind of reuse keeps the city legible. You can buy something in a contemporary shop
+  and still notice that the setting was shaped by an earlier port economy. The present
+  activity does not erase the past; it gives you a reason to encounter it at walking
+  speed.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Journey into the haunted depths of old wilmington"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Central business district"
+    publisher: "Downtown Business Alliance Wilmington"
+    url: https://dbawilmington.org/downtown/central-business-district/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

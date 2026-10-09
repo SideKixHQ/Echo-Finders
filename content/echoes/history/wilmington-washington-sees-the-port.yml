@@ -1,0 +1,40 @@
+# From W037 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Third Street sidewalk beside the state marker at Dock Street.
+# Position: HMDB marker coords 34 14.067N 77 56.766W at Dock & N 3rd (high confidence).
+id: wilmington-washington-sees-the-port
+title: "Washington Sees the Port"
+summary: "In 1791, President George Washington visited Wilmington during his Southern Tour."
+place: "Washington's Southern Tour marker, Third and Dock streets, Wilmington, North Carolina"
+at: { lat: 34.23445, lng: -77.94610 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "In 1791, President George Washington visited Wilmington during his Southern Tour."
+script: |
+  In 1791, President George Washington visited Wilmington during his Southern Tour.
+
+  His diary described a compact town with some good houses and recorded a disagreement
+  over how accurately the census represented its population. The visit gave the first
+  president a direct encounter with the developing port.
+
+  This marker commemorates the visit; it does not prove that he stood at the exact spot
+  where you are listening. That difference keeps the scene honest.
+
+  Look along the historic streets and imagine a president trying to understand a place by
+  moving through it. A tour could connect the new federal government with communities that
+  otherwise knew it through correspondence and law. Wilmington was one stop in that
+  effort, and Washington left a brief written impression rather than a complete portrait.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Washingtons southern tour d 19"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/08/washingtons-southern-tour-d-19
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

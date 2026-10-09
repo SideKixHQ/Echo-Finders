@@ -1,0 +1,40 @@
+# From W055 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Riverwalk viewing area; television filming location, not an event in real residents' lives.
+# Position: Federal Building fills Market-Princess block on Water St (Wikipedia 34.23528,-77.95000, DMS-rounded); Riverwalk opposite its mid-block, ~50 m north of Market landing. (medium confidence).
+id: wilmington-a-real-riverwalk-an-invented-romance
+title: "A Real Riverwalk, an Invented Romance"
+summary: "Wilmington's tourism authority identifies this riverfront area as the Dawson's Creek location of Andie and Pacey's first kiss."
+place: "Riverwalk opposite the Alton Lennon Federal Building, Water and Market streets, Wilmington, North Carolina"
+at: { lat: 34.23590, lng: -77.94998 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Wilmington's tourism authority identifies this riverfront area as the Dawson's Creek location of Andie and Pacey's first kiss."
+script: |
+  Wilmington's tourism authority identifies this riverfront area as the Dawson's Creek
+  location of Andie and Pacey's first kiss.
+
+  The romance was fiction. The place where the scene was filmed is real, and people can
+  return to it after the cameras and actors have gone.
+
+  Stand on the public Riverwalk and look at what a production gained here: water, space,
+  and a city backdrop that could become part of another town's screen identity.
+
+  That transformation is part of Wilmington's arts history. Filmmaking asks a real place
+  to play a role. Once the episode reaches an audience, the setting can hold two meanings
+  at once: an ordinary local walkway and a remembered moment in a television story. You
+  are standing in the overlap.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Famous film and tv sites"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/things-to-do/tours-and-cruises/famous-film-and-tv-sites/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

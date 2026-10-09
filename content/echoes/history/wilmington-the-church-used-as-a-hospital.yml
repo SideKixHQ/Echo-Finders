@@ -1,0 +1,43 @@
+# From W033 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Third Street sidewalk; original building viewed from outside.
+# Position: SE corner 3rd & Market (St James block 3rd-4th/Market-Dock). Market St south sidewalk ~35 m east of Third, facing church/churchyard. UNF NRHP photo point 34.23560,-77.94591 agrees within ~25 m. (medium confidence).
+# Shares a stop with other echoes, so it sits 6m off the spot to keep its pin tappable.
+id: wilmington-the-church-used-as-a-hospital
+title: "The Church Used as a Hospital"
+summary: "In February 1865, Union forces entered Wilmington."
+place: "St. James Episcopal Church, 25 South Third Street, Wilmington, North Carolina"
+at: { lat: 34.23542, lng: -77.94561 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "In February 1865, Union forces entered Wilmington."
+script: |
+  In February 1865, Union forces entered Wilmington. St. James's church building was
+  seized and used as a hospital.
+
+  The congregation's history records that the building was returned that summer, repaired,
+  and used for services again in December. A space designed for worship had temporarily
+  become a place of wartime care.
+
+  The change makes you see the church differently. Its doors and interior were practical
+  resources in a city undergoing military occupation, not just symbols on a familiar
+  street.
+
+  From the sidewalk, consider the work required to make a building serve an urgent
+  purpose, then restore it to its regular life. The hospital chapter was temporary, but it
+  belongs to the building's history. Returning to worship did not mean that the preceding
+  months had never happened.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Our history"
+    publisher: "St. James Parish"
+    url: https://www.stjamesp.org/our-history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

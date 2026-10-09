@@ -1,0 +1,44 @@
+# From W021 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk facing the house; associated site of its boarding-house period.
+# Position: NCSU Built Heritage 34.233547,-77.945924; nudged west to east sidewalk of 3rd between Dock and Orange; fits grid (Dock 34.2344) (high confidence).
+# Shares a stop with other echoes, so it sits 6m off the spot to keep its pin tappable.
+id: wilmington-the-mansion-with-boarders
+title: "The Mansion with Boarders"
+summary: "An old family home can continue by becoming something its builders never anticipated."
+place: "Latimer House, 126 South Third Street, Wilmington, North Carolina"
+at: { lat: 34.23351, lng: -77.94601 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 73
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "An old family home can continue by becoming something its builders never anticipated."
+script: |
+  An old family home can continue by becoming something its builders never anticipated.
+
+  After William Latimer's death in 1923, Margaret Latimer took in boarders. The museum
+  records that artist Elisabeth Chant later rented a room here.
+
+  That shift brought additional lives into a house strongly identified with one family.
+  Private rooms became lodgings; a formal residence gained a practical way to keep
+  operating.
+
+  Look at the windows from Third Street. They do not reveal which occupant belonged to
+  which period. A mansion can conceal a boarding house in plain sight, because a changed
+  use does not always require a changed facade.
+
+  The house survived partly through adaptation. Its story is therefore more than an
+  account of affluent beginnings. It also includes the choices that allowed a large, aging
+  building to remain useful.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "About"
+    publisher: "Latimer House Museum, Lower Cape Fear Historical Society"
+    url: https://latimerhouse.org/about/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

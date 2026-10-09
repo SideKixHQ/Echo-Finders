@@ -1,0 +1,42 @@
+# From W095 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk or authorized museum visitor area with an accompanying adult.
+# Position: 116 Orange = south side, 100 block (Front-2nd), across from the USO; exact frontage within the block not confirmed, placed mid-block. (low confidence).
+id: wilmington-three-buildings-become-a-play-place
+title: "Three Buildings Become a Play Place"
+summary: "The Children's Museum did not move into one brand-new building."
+place: "Children's Museum of Wilmington, 116 Orange Street, Wilmington, North Carolina"
+at: { lat: 34.23290, lng: -77.94765 }
+triggerRadiusKm: 0.06
+category: kids
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [wilmington, downtown]
+teaser: "The Children's Museum did not move into one brand-new building."
+script: |
+  The Children's Museum did not move into one brand-new building. In 2004, it bought a
+  group of three old buildings downtown.
+
+  They included a Masonic lodge, a Greek Orthodox church, and the Cowan house. The
+  buildings had already helped people meet, worship, and live before they became part of a
+  place for learning through play.
+
+  Look at the complex with your grown-up. Can you notice differences between its parts?
+  You do not have to know every architectural name to recognize that they were not all
+  built as one piece.
+
+  This is a true story of finding a new use for old places. The museum kept important
+  parts of downtown standing and brought children inside for a different purpose. A
+  building's first job does not have to be its last.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Mission and history"
+    publisher: "Play Wilmington"
+    url: https://www.playwilmington.org/mission-and-history
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

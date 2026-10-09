@@ -1,0 +1,46 @@
+# From W089 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk; museum interior requires authorized admission.
+# Position: South sidewalk of Orange St in front of 116 Orange (Front-2nd block); address point + footprint (high confidence).
+id: wilmington-the-lodge-on-orange-street
+title: "The Lodge on Orange Street"
+summary: "The historic St."
+place: "Historic St. John's Lodge building, Children's Museum complex, 116 Orange Street, Wilmington, North Carolina"
+at: { lat: 34.23285, lng: -77.94738 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 65
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The historic St."
+script: |
+  The historic St. John's Lodge building dates to 1804. Its later uses included an art
+  museum, and it now belongs to the Children's Museum complex.
+
+  This stop concerns the surviving building rather than the original purpose of every room
+  inside today's museum.
+
+  Look at the old structure from Orange Street. Its long life illustrates how an
+  institution's needs can change while useful architecture remains.
+
+  A lodge, an art gallery, and a children's learning space bring very different activities
+  to an address. The connection is the building that could accommodate new possibilities.
+  Preservation here did not mean keeping only one use forever. It meant retaining a
+  substantial piece of downtown while finding reasons for later generations to cross its
+  threshold.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "St johns lodge d 107"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/11/st-johns-lodge-d-107
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Mission and history"
+    publisher: "Play Wilmington"
+    url: https://www.playwilmington.org/mission-and-history
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,41 @@
+# From W050 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk; the painting's display and conservation status must be confirmed before any interior visit.
+# Position: SE corner 3rd & Market (St James block 3rd-4th/Market-Dock). Market St south sidewalk ~35 m east of Third, facing church/churchyard. UNF NRHP photo point 34.23560,-77.94591 agrees within ~25 m. (medium confidence).
+# Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
+id: wilmington-the-painting-with-a-river-journey
+title: "The Painting with a River Journey"
+summary: "St."
+place: "St. James Episcopal Church, 25 South Third Street, Wilmington, North Carolina"
+at: { lat: 34.23550, lng: -77.94559 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "St."
+script: |
+  St. James preserves the story of Ecce Homo, a painting associated with the capture of a
+  Spanish privateer vessel near Brunswick Town in 1748.
+
+  The parish's account says the salvaged painting went first to St. Philip's Church and
+  later to St. James after Brunswick Town was abandoned. Its artist remains uncertain.
+
+  In 2026, the parish reported sending the painting for conservation. This stop therefore
+  connects you with its history, not a promise that it is currently hanging inside.
+
+  Stand outside and consider an artwork that outlasted changes in location and care. Its
+  story is not only what it depicts. The journeys, the uncertain attribution, and the work
+  needed to stabilize the canvas all belong to it. The object survives because later
+  people keep accepting responsibility for its future.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "A new journey for ecce homo"
+    publisher: "St. James Parish"
+    url: https://www.stjamesp.org/a-new-journey-for-ecce-homo/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

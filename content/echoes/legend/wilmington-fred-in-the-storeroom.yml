@@ -1,0 +1,49 @@
+# From W003 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Walnut Street sidewalk; interior access only as an authorized customer or visitor.
+# Position: South sidewalk of Walnut St in front of 10 Walnut St (Cotton Exchange, Water-Front block); county address point + OSM footprint (high confidence).
+id: wilmington-fred-in-the-storeroom
+title: "Fred in the Storeroom"
+summary: "The Cotton Exchange has the right ingredients for a ghost story: connected old buildings, changing levels, and passages where somebody…"
+place: "Cotton Exchange, Walnut Street entrance near 10 Walnut Street, Wilmington, North Carolina"
+at: { lat: 34.23979, lng: -77.94958 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 74
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven;
+  no supernatural claim is established.
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The Cotton Exchange has the right ingredients for a ghost story: connected old buildings, changing levels, and passages where somebody…"
+script: |
+  The Cotton Exchange has the right ingredients for a ghost story: connected old
+  buildings, changing levels, and passages where somebody can disappear from view.
+
+  A published account of a Wilmington ghost tour tells of Fred, a tall, dark-haired
+  apparition associated with Paddy's Hollow. In that version, a manager encountered him in
+  a storage room. He seemed ready to offer help, then vanished.
+
+  The encounter is a reported legend, not a verified event. We cannot establish that the
+  manager saw a ghost, or identify an actual dead person behind the name Fred.
+
+  What makes the story memorable is its almost ordinary beginning. A person appears in a
+  workplace and behaves like someone who belongs there. Only the ending breaks the
+  pattern. From the public entrance, imagine the moment between recognizing a stranger and
+  realizing there is nobody left to recognize.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Haunted wilmington north carolina"
+    publisher: "Drugstore Divas"
+    url: https://www.drugstoredivas.net/haunted-wilmington-north-carolina/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Journey into the haunted depths of old wilmington"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

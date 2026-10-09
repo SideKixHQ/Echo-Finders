@@ -1,0 +1,42 @@
+# From W025 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Nutt Street sidewalk or authorized museum area; interpretive site, not the former headquarters building.
+# Position: VisitNC 34.24200,-77.95060 and directory 34.24161,-77.95103 (47 m apart); averaged and nudged to the Nutt St frontage just north of Red Cross St. (medium confidence).
+id: wilmington-the-headquarters-that-left-town
+title: "The Headquarters That Left Town"
+summary: "For decades, Wilmington was a headquarters city for the Atlantic Coast Line Railroad."
+place: "Wilmington Railroad Museum, 505 Nutt Street, Wilmington, North Carolina"
+at: { lat: 34.24170, lng: -77.95060 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "For decades, Wilmington was a headquarters city for the Atlantic Coast Line Railroad."
+script: |
+  For decades, Wilmington was a headquarters city for the Atlantic Coast Line Railroad. In
+  1960, that role moved to Jacksonville, Florida.
+
+  The museum describes a relocation of more than a thousand employees, along with
+  families, belongings, records, and office equipment. The railway carried away part of
+  the city's working life.
+
+  This museum is a place to understand that change, not the vanished headquarters itself.
+  Its collections preserve a local industry after the institution's center of gravity
+  shifted south.
+
+  Imagine the difference between a train departing on its regular run and a train helping
+  an employer leave for good. One promises another arrival. The other changes the
+  neighborhood that waits behind. Here, preserved objects keep the railroad visible even
+  after its headquarters stopped calling Wilmington home.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "History"
+    publisher: "Wilmington Railroad Museum"
+    url: https://www.wrrm.org/history.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

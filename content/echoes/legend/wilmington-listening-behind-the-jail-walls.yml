@@ -1,0 +1,49 @@
+# From W004 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk at Third and Market; investigations and restricted rooms are not visitor activities.
+# Position: House on SW corner of 3rd & Market (even/south side of Market, across Third from St James). Spot = corner sidewalk at Third & Market on the house side. Wikipedia bldg 34.2350,-77.9461 (DMS-rounded). (medium confidence).
+id: wilmington-listening-behind-the-jail-walls
+title: "Listening Behind the Jail Walls"
+summary: "The elegant house above you was built in 1770 over remains of Wilmington's earlier jail."
+place: "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23544, lng: -77.94640 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 71
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven;
+  no supernatural claim is established.
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The elegant house above you was built in 1770 over remains of Wilmington's earlier jail."
+script: |
+  The elegant house above you was built in 1770 over remains of Wilmington's earlier jail.
+  That combination has drawn more than architectural curiosity.
+
+  The Ghost Guild records a paranormal investigation here in March 2018, including a
+  bedroom recording session described as an attempt to capture electronic voice phenomena.
+  Such recordings are interpreted by enthusiasts as possible voices, but they do not
+  establish that spirits exist.
+
+  There is a documented investigation and an interpretation. Those are different things.
+
+  From the sidewalk, consider how much expectation changes listening. A creak in a new
+  building may pass unnoticed. The same creak above old cells can become the beginning of
+  a story. The house's real history supplies the weight; the haunting remains an
+  unanswered claim. You can enjoy that uncertainty without pretending it has been solved.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Burgwin wright house"
+    publisher: "The Ghost Guild"
+    url: https://theghostguild.weebly.com/burgwin-wright-house.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "History"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.org/history
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

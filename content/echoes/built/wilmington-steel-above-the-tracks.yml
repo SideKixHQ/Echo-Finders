@@ -1,0 +1,41 @@
+# From W078 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Permitted public approach; obey closures and do not enter the rail corridor.
+# Position: Same structure as Harry Forden Bridge; same south-approach point (medium confidence).
+id: wilmington-steel-above-the-tracks
+title: "Steel Above the Tracks"
+summary: "This bridge was built in 1911 to replace a deteriorating wooden crossing above railroad tracks."
+place: "North Sixth Street truss bridge, between Brunswick and Campbell streets, Wilmington, North Carolina"
+at: { lat: 34.24360, lng: -77.94290 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "This bridge was built in 1911 to replace a deteriorating wooden crossing above railroad tracks."
+script: |
+  This bridge was built in 1911 to replace a deteriorating wooden crossing above railroad
+  tracks. Wilmington recognizes it as the city's surviving steel truss bridge from that
+  era.
+
+  The truss makes structural work visible: connected members help carry loads across an
+  opening. The form is not simply decorative.
+
+  Look from a safe public approach, following any closure signs. Do not go beneath it onto
+  railway property for a better view.
+
+  A bridge solves a local problem, but it also records what lay in the way. Here, streets
+  had to cross the railroad infrastructure that helped define the neighborhood. The steel
+  span kept those two systems connected. Its survival lets you see a practical response to
+  a city built around trains as well as streets.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Local Historic Landmarks"
+    publisher: "City of Wilmington"
+    url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

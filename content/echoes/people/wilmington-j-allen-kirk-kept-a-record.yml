@@ -1,0 +1,41 @@
+# From W059 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk beside the state marker; commemorative stop associated with his Wilmington ministry.
+# Position: HMDB marker D-122 coords 34 14.482N 77 56.812W, west side of N 3rd at Red Cross (high confidence).
+id: wilmington-j-allen-kirk-kept-a-record
+title: "J. Allen Kirk Kept a Record"
+summary: "J."
+place: "J. Allen Kirk marker, Third and Red Cross streets, Wilmington, North Carolina"
+at: { lat: 34.24137, lng: -77.94687 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "J."
+script: |
+  J. Allen Kirk came to Wilmington as a Baptist pastor in 1897. The following year, the
+  coup forced him to seek safety.
+
+  He later published an account of the violence and his escape. That record preserves the
+  perspective of a Black community leader who experienced the danger directly.
+
+  Historians disagree on some details of his route and timing. His account should be read
+  as testimony, with its particular viewpoint, rather than treated as an all-seeing
+  description of every event.
+
+  Listen beside the marker. Kirk survived the attempt to silence and drive out people like
+  him, then made a written record. His story demonstrates another form of resistance:
+  preserving an experience so later generations would have evidence beyond the version
+  offered by those who seized power.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "J allen kirk d 122"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/12/j-allen-kirk-d-122
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

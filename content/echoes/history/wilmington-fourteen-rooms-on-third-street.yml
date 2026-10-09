@@ -1,0 +1,42 @@
+# From W020 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Third Street sidewalk; interior rooms require authorized museum access.
+# Position: NCSU Built Heritage 34.233547,-77.945924; nudged west to east sidewalk of 3rd between Dock and Orange; fits grid (Dock 34.2344) (high confidence).
+id: wilmington-fourteen-rooms-on-third-street
+title: "Fourteen Rooms on Third Street"
+summary: "The Latimer house was built in 1852 for Zebulon and Elizabeth Latimer."
+place: "Latimer House, 126 South Third Street, Wilmington, North Carolina"
+at: { lat: 34.23355, lng: -77.94605 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The Latimer house was built in 1852 for Zebulon and Elizabeth Latimer."
+script: |
+  The Latimer house was built in 1852 for Zebulon and Elizabeth Latimer. Its fourteen
+  rooms offered an unusually substantial home in the growing port city.
+
+  The museum identifies the design as Italianate, with symmetry and a central-hall
+  arrangement. What looks like a single handsome facade held a complicated household
+  behind it.
+
+  Stand where you can see the windows without blocking the sidewalk. Their orderly spacing
+  invites you to read the house as a finished composition. Daily life would have been less
+  orderly: family responsibilities, domestic work, business pressures, and change across
+  generations.
+
+  The museum's surviving furnishings and objects connect that exterior pattern to
+  particular lives. The building gives them a setting. From outside, the first clue is
+  scale: enough rooms to make a family home a small working world.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "About"
+    publisher: "Latimer House Museum, Lower Cape Fear Historical Society"
+    url: https://latimerhouse.org/about/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

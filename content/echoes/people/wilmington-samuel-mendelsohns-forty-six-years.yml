@@ -1,0 +1,41 @@
+# From W074 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk; active religious site, interior visits by permission only.
+# Position: 1 S Fourth = SE corner of 4th & Market; Wikipedia 34.23546,-77.94444; 4th St line from hmdb 409 Market and 111 S 4th markers. (high confidence).
+id: wilmington-samuel-mendelsohns-forty-six-years
+title: "Samuel Mendelsohn's Forty-Six Years"
+summary: "Rabbi Samuel Mendelsohn presided when Wilmington's Temple of Israel was dedicated in 1876."
+place: "Temple of Israel, Fourth and Market streets, Wilmington, North Carolina"
+at: { lat: 34.23552, lng: -77.94440 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 65
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Rabbi Samuel Mendelsohn presided when Wilmington's Temple of Israel was dedicated in 1876."
+script: |
+  Rabbi Samuel Mendelsohn presided when Wilmington's Temple of Israel was dedicated in
+  1876. His tenure continued until 1922, spanning forty-six years.
+
+  The congregation's history connects that first sermon with Jewish liberty. The new
+  synagogue supplied a permanent local setting for worship and community life.
+
+  Listen from the public sidewalk. A long tenure means more than one ceremonial opening:
+  it includes repeated services, teaching, changes in families, and the ordinary
+  responsibilities of sustaining a congregation.
+
+  Mendelsohn's name helps make the building's history personal. The synagogue was not only
+  constructed; it was used and cared for by a community over time. His decades of
+  leadership link its early years with the city that developed around this corner into the
+  twentieth century.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "History"
+    publisher: "Temple of Israel"
+    url: https://temple-of-israel.org/history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

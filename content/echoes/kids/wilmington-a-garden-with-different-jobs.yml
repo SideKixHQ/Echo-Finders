@@ -1,0 +1,43 @@
+# From W099 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Open public garden paths with an accompanying adult; do not pick or taste plants.
+# Position: Garden lies behind (south of) the house on the SW corner of 3rd & Market; estimated from grid, no direct garden coordinate. (low confidence).
+# Shares a stop with other echoes, so it sits 6m off the spot to keep its pin tappable.
+id: wilmington-a-garden-with-different-jobs
+title: "A Garden with Different Jobs"
+summary: "These gardens have different parts with different jobs."
+place: "Burgwin-Wright House gardens, 224 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23511, lng: -77.94656 }
+triggerRadiusKm: 0.06
+category: kids
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [wilmington, downtown]
+teaser: "These gardens have different parts with different jobs."
+script: |
+  These gardens have different parts with different jobs. The museum identifies an
+  orchard, a kitchen garden, a rose garden, and an area recalling the historical use of
+  medicinal herbs.
+
+  People planted useful things as well as beautiful things. A garden could help supply a
+  household, while another part offered a pleasant place to look and walk.
+
+  Stay on the paths with your grown-up. Do not pick or taste anything; a historical garden
+  is a place to explore with your eyes.
+
+  Try spotting the difference between a plant grown for its shape and an area arranged for
+  a practical purpose. The present gardens were designed to help visitors think about an
+  earlier period. Their story shows that outdoor space, like a house, can contain several
+  kinds of work.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Gardens"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.org/gardens
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

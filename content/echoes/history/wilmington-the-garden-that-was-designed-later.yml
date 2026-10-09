@@ -1,0 +1,47 @@
+# From W015 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public garden paths when open; follow signs and avoid planted beds.
+# Position: Garden lies behind (south of) the house on the SW corner of 3rd & Market; estimated from grid, no direct garden coordinate. (low confidence).
+id: wilmington-the-garden-that-was-designed-later
+title: "The Garden That Was Designed Later"
+summary: "These gardens may feel as old as the house."
+place: "Burgwin-Wright House gardens, 224 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23515, lng: -77.94660 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "These gardens may feel as old as the house."
+script: |
+  These gardens may feel as old as the house. Their present design belongs to a later
+  chapter.
+
+  In 1962, the museum hired landscape architect Alden Hopkins to create gardens in an
+  eighteenth-century style. The grounds therefore interpret a period; they are not a
+  garden preserved unchanged from 1770.
+
+  That distinction adds to the experience. The orchard, herb areas, terraces, and formal
+  planting give visitors different ways to approach the past. A useful plant tells a
+  different story from a decorative hedge.
+
+  Walk only along the open paths. Notice where the design invites a pause and where it
+  directs your gaze. This landscape records two eras at once: the colonial world it evokes
+  and the twentieth-century preservation work that chose how that world would be
+  presented.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The property"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.org/the-property
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Gardens"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.org/gardens
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

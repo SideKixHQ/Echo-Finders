@@ -1,0 +1,43 @@
+# From W018 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Market Street sidewalk facing the house; associated household site.
+# Position: DigitalNC building point 34.2361,-77.9429 (NE corner Market & 5th); moved ~17 m south to north Market St sidewalk in front of house (high confidence).
+# Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
+id: wilmington-the-household-that-fled-yellow-fever
+title: "The Household That Fled Yellow Fever"
+summary: "The Bellamy family had barely begun living in this house when Wilmington's circumstances changed."
+place: "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23599, lng: -77.94279 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 71
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The Bellamy family had barely begun living in this house when Wilmington's circumstances changed."
+script: |
+  The Bellamy family had barely begun living in this house when Wilmington's circumstances
+  changed.
+
+  During the yellow fever epidemic of 1862, the family left the city and took refuge at
+  Floral College. A residence meant to secure status and comfort could not protect its
+  occupants from the city's public-health disaster.
+
+  This house is the family's associated site, not the place to which they escaped. The
+  epidemic extended far beyond one household, and leaving was not an option available
+  equally to everyone.
+
+  Look at the imposing exterior. It can suggest permanence, but the first years of its
+  domestic life were disrupted almost immediately. The story turns on that mismatch: a
+  carefully planned new home meeting a crisis its plans could not contain. Its owners
+  departed; the larger city still had to endure the outbreak.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "War and politics a house divided"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/museum-blog/war-and-politics-a-house-divided
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

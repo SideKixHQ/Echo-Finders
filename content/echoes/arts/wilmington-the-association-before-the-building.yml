@@ -1,0 +1,47 @@
+# From W046 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk or open arts-center lobby; present organizational home, not its 1788 meeting site.
+# Position: Corner of Second & Orange; 120 S 2nd = even/west side, 100 block -> NW corner. Second St line from hmdb markers at Princess/2nd and 2nd near Ann; Orange lat interpolated. (medium confidence).
+id: wilmington-the-association-before-the-building
+title: "The Association Before the Building"
+summary: "The Thalian Association traces its beginnings to 1788, long before the theater now called Thalian Hall was built."
+place: "Hannah Block Historic USO and Thalian Association offices, 120 South Second Street, Wilmington, North Carolina"
+at: { lat: 34.23312, lng: -77.94710 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The Thalian Association traces its beginnings to 1788, long before the theater now called Thalian Hall was built."
+script: |
+  The Thalian Association traces its beginnings to 1788, long before the theater now
+  called Thalian Hall was built.
+
+  That order matters. Wilmington had people organizing dramatic activity before it had the
+  famous surviving stage. A building later gave the activity a landmark; it did not create
+  the interest from nothing.
+
+  You are at the association's present arts-center setting, not its original
+  eighteenth-century meeting place. The institution's history links these different
+  locations.
+
+  Pause by the entrance. Community theater depends on people agreeing to work together,
+  return for rehearsals, and invite others to watch. The association's long history
+  records that recurring effort. A stage can be constructed once. A theater community has
+  to be made again whenever people choose to put on the next performance.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Our history"
+    publisher: "Thalian Association"
+    url: https://www.thalian.org/about/our-history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Hannah block historic uso history then and now"
+    publisher: "Wilmington Community Arts"
+    url: https://wilmingtoncommunityarts.org/museum/hannah-block-historic-uso-history-then-and-now/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

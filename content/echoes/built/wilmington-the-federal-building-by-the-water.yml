@@ -1,0 +1,41 @@
+# From W086 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Water or Princess Street sidewalk; federal interior access is restricted and subject to security rules.
+# Position: South sidewalk of Princess St by 2 Princess, ~30 m east of Water St; address point + OSM courthouse footprint (high confidence).
+id: wilmington-the-federal-building-by-the-water
+title: "The Federal Building by the Water"
+summary: "The Federal Judicial Center dates this Wilmington courthouse building to 1919."
+place: "Alton Lennon Federal Building, 2 Princess Street, Wilmington, North Carolina"
+at: { lat: 34.23631, lng: -77.94973 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 65
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The Federal Judicial Center dates this Wilmington courthouse building to 1919."
+script: |
+  The Federal Judicial Center dates this Wilmington courthouse building to 1919. It was
+  named for Alton Lennon in 1972.
+
+  Its waterfront position gives it an unusually visible place in the downtown landscape.
+  Federal authority occupies the same streetscape as the riverfront's shops, visitors, and
+  historic commercial buildings.
+
+  Listen from the public sidewalk. Do not assume that a courthouse interior is a
+  sightseeing area; any entry must follow current security and visitor rules.
+
+  The building's two dates tell different stories. One belongs to construction and
+  institutional use, the other to later commemoration. Names can change what a city
+  remembers about a structure without changing its physical age. Here, the architecture
+  and the public name carry separate layers of Wilmington's civic memory.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Wilmington north carolina 1919"
+    publisher: "Federal Judicial Center"
+    url: https://www.fjc.gov/history/courthouse/wilmington-north-carolina-1919
+    retrievedAt: "2026-10-09"
+    rights: public-domain

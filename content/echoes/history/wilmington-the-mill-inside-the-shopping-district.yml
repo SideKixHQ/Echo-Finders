@@ -1,0 +1,41 @@
+# From W028 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Front Street sidewalk or open visitor passages during business hours.
+# Position: HMDB Sprunt Building marker on Cotton Exchange facade, N Front just S of Walnut (34.23970,-77.94932); west Front St sidewalk mid-block Grace-Walnut (high confidence).
+id: wilmington-the-mill-inside-the-shopping-district
+title: "The Mill Inside the Shopping District"
+summary: "The Cotton Exchange can feel like a collection of old shops."
+place: "Cotton Exchange, 321 North Front Street, Wilmington, North Carolina"
+at: { lat: 34.23950, lng: -77.94933 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The Cotton Exchange can feel like a collection of old shops."
+script: |
+  The Cotton Exchange can feel like a collection of old shops. One of its earlier chapters
+  involved something much less leisurely: milling.
+
+  Downtown's business association identifies part of the complex with a flour and hominy
+  mill before later alterations and cotton-business use. The connected buildings
+  accumulated different jobs rather than appearing all at once as a shopping destination.
+
+  Walk through only the passages open to visitors. Notice the changes in level and
+  construction. They make more sense when you think of separate working buildings joined
+  into a modern experience.
+
+  The name Cotton Exchange highlights one phase. Milling reminds us that waterfront
+  commerce included everyday food as well as export goods. Behind the present storefronts
+  lies a city that processed, stored, sold, and shipped the things people needed.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Central business district"
+    publisher: "Downtown Business Alliance Wilmington"
+    url: https://dbawilmington.org/downtown/central-business-district/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

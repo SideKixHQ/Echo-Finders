@@ -1,0 +1,41 @@
+# From W066 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk facing the house; associated residence and memoir subject.
+# Position: DigitalNC building point 34.2361,-77.9429 (NE corner Market & 5th); moved ~17 m south to north Market St sidewalk in front of house (high confidence).
+# Shares a stop with other echoes, so it sits 11m off the spot to keep its pin tappable.
+id: wilmington-ellen-bellamys-long-view
+title: "Ellen Bellamy's Long View"
+summary: "Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back with the Tide."
+place: "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23598, lng: -77.94274 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back with the Tide."
+script: |
+  Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back with
+  the Tide. Her recollections became one source for understanding this household.
+
+  A memoir gives us a person's perspective, not an impartial view of everyone who shared
+  the setting. Her position within the family shaped what she noticed and how she
+  described it.
+
+  Stand before the mansion and consider the reach of one life. A house built before the
+  Civil War could still be remembered by a resident in the twentieth century.
+
+  Ellen's memories help connect those eras, but the museum's wider story also requires
+  records of enslaved workers, craftspeople, and others. Her voice is valuable when heard
+  as one voice among the people whose lives belonged to this place.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Ellen lina stewards of the bellamy house"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/museum-blog/ellen-lina-stewards-of-the-bellamy-house
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

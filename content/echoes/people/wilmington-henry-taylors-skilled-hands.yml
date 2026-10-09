@@ -1,0 +1,43 @@
+# From W061 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk or authorized museum grounds; documented construction association.
+# Position: DigitalNC building point 34.2361,-77.9429 (NE corner Market & 5th); moved ~17 m south to north Market St sidewalk in front of house (high confidence).
+# Shares a stop with other echoes, so it sits 9m off the spot to keep its pin tappable.
+id: wilmington-henry-taylors-skilled-hands
+title: "Henry Taylor's Skilled Hands"
+summary: "Henry Taylor was a carpenter and builder who worked on the Bellamy project."
+place: "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23593, lng: -77.94276 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Henry Taylor was a carpenter and builder who worked on the Bellamy project."
+script: |
+  Henry Taylor was a carpenter and builder who worked on the Bellamy project. His career
+  continued after emancipation and included other Wilmington buildings and community
+  activity.
+
+  The museum identifies him among the Black craftspeople whose skill made the mansion
+  possible. The owner's surname on the building can otherwise make the builders disappear
+  from its story.
+
+  Look at the exterior from the sidewalk. Plans only become walls, floors, and finished
+  details when people know how to execute them.
+
+  Taylor's work reminds us to connect an impressive residence with the expertise it
+  required. His name belongs in the account of this place, alongside its architect and
+  owners. A building can preserve craftsmanship for generations while concealing the
+  craftsperson. Historical research makes the person visible again.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The people"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/the-people.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

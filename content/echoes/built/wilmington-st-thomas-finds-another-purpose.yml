@@ -1,0 +1,47 @@
+# From W088 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Dock Street sidewalk; venue interior requires an authorized tour or event.
+# Position: HMDB St. Thomas the Apostle Church marker 34 14.055N 77 56.803W; listing lat 34.23413; Dock St south sidewalk east of DeRosset House (high confidence).
+id: wilmington-st-thomas-finds-another-purpose
+title: "St. Thomas Finds Another Purpose"
+summary: "St."
+place: "St. Thomas Preservation Hall, 208 Dock Street, Wilmington, North Carolina"
+at: { lat: 34.23430, lng: -77.94672 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "St."
+script: |
+  St. Thomas Preservation Hall describes its building as a former Catholic church
+  constructed in 1847. Today it is used as an event venue.
+
+  The change illustrates a practical route to preservation: keep an old structure useful
+  while allowing its role to evolve.
+
+  The original worship setting and the present venue are different chapters. Neither
+  requires us to pretend that every surface or furnishing stayed unchanged.
+
+  Listen from Dock Street unless you have permission to enter. A building's public history
+  does not make a private event open to everyone.
+
+  From outside, the survival is clear. The old structure remains part of downtown instead
+  of becoming an empty lot. A new purpose supplies the reason to maintain it, while the
+  name and building keep its earlier identity in view.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Stthomaspreservationhall.com"
+    publisher: "St. Thomas Preservation Hall"
+    url: https://www.stthomaspreservationhall.com/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Contact"
+    publisher: "St. Thomas Preservation Hall"
+    url: https://www.stthomaspreservationhall.com/contact
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

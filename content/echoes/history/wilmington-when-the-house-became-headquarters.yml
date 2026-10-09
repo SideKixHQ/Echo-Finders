@@ -1,0 +1,47 @@
+# From W019 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Market Street sidewalk; original headquarters building viewed from outside.
+# Position: DigitalNC building point 34.2361,-77.9429 (NE corner Market & 5th); moved ~17 m south to north Market St sidewalk in front of house (high confidence).
+# Shares a stop with other echoes, so it sits 8m off the spot to keep its pin tappable.
+id: wilmington-when-the-house-became-headquarters
+title: "When the House Became Headquarters"
+summary: "In 1865, the Bellamy mansion took on a job its owners had not planned."
+place: "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23588, lng: -77.94287 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "In 1865, the Bellamy mansion took on a job its owners had not planned."
+script: |
+  In 1865, the Bellamy mansion took on a job its owners had not planned.
+
+  After Union forces entered Wilmington, military staff used the empty house as
+  headquarters. The property of a Confederate-supporting household became a place from
+  which Union officers worked.
+
+  The change was part of a much larger upheaval. Wilmington's Confederate port economy was
+  collapsing, and emancipation was transforming the lives of the people whose labor had
+  sustained households like this one.
+
+  Look toward the entrance from the public sidewalk. The same rooms could serve domestic
+  authority in one period and military authority in another. Their walls did not settle
+  the conflict; occupation changed who controlled the space. A building that appears
+  unified from outside can hold profoundly different histories of power within.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Audio 1"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/audio-1.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "War and politics a house divided"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/museum-blog/war-and-politics-a-house-divided
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,41 @@
+# From W075 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk at a permitted approach; do not enter tracks or any closed bridge section.
+# Position: Structurae bridge 34.24381,-77.94293 (2 sources agree); point is south approach on N 6th sidewalk ~25 m south of span center. Grid puts 6th St at -77.9428 here. Note WWAY says span is between Campbell and Hanover (medium confidence).
+id: wilmington-harry-fordens-name-on-the-bridge
+title: "Harry Forden's Name on the Bridge"
+summary: "In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who worked to revive North Fourth Street after the…"
+place: "Harry Forden Bridge, North Sixth Street between Brunswick and Campbell streets, Wilmington, North Carolina"
+at: { lat: 34.24360, lng: -77.94290 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who worked to revive North Fourth Street after the…"
+script: |
+  In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who
+  worked to revive North Fourth Street after the Atlantic Coast Line's departure.
+
+  The bridge itself is older. The new name added a person's work to an existing piece of
+  infrastructure.
+
+  Listen at a safe public approach rather than entering railroad property below. From
+  here, the connection is visible: a crossing links streets, while a community advocate
+  works to reconnect a neighborhood with opportunity.
+
+  A commemorative name can become so familiar that its meaning disappears into directions.
+  This stop restores the person behind it. Forden's public work concerned the area's
+  future, not merely its old buildings. The city attached that effort to a structure
+  people could continue to encounter in everyday life.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Local Historic Landmarks"
+    publisher: "City of Wilmington"
+    url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

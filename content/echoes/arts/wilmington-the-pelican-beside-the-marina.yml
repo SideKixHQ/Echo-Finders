@@ -1,0 +1,40 @@
+# From W053 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public viewing route near the sculpture; marina docks are not unrestricted public access.
+# Position: between the Riverwalk and Port City Marina (mapped at 34.24574,-77.95141); sculpture position unconfirmed (low confidence).
+id: wilmington-the-pelican-beside-the-marina
+title: "The Pelican Beside the Marina"
+summary: "Dumay Gorham's Pelican places a coastal bird in sculptural form beside Port City Marina."
+place: "Pelican sculpture near Port City Marina, 10 Harnett Street, Wilmington, North Carolina"
+at: { lat: 34.24540, lng: -77.95130 }
+triggerRadiusKm: 0.09
+category: arts
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Dumay Gorham's Pelican places a coastal bird in sculptural form beside Port City Marina."
+script: |
+  Dumay Gorham's Pelican places a coastal bird in sculptural form beside Port City Marina.
+
+  The marina setting changes how you encounter the work. Water, boats, and open air supply
+  part of its context; the sculpture turns attention toward a bird that belongs to the
+  region's coastal imagination.
+
+  You are looking at art, not a live animal or an exact scientific diagram. Its shape
+  reflects choices about what a viewer will recognize and what the material can express.
+
+  Use the public viewing route and leave private docks alone. Notice the outline before
+  looking for smaller details. A sculpture can make you pause in a place built for
+  departures and arrivals. This bird stays while the boats move, giving the waterfront a
+  different sort of permanent resident.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Discover outdoor art in wilmington nc"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/discover-outdoor-art-in-wilmington-nc/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

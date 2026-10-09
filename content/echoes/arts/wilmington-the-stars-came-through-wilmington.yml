@@ -1,0 +1,42 @@
+# From W044 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk outside the theater; associated performance site.
+# Position: South sidewalk of Chestnut St at the 310 Chestnut theatre entrance; OSM Thalian Hall footprint centre is ~45 m south. Alternative: 3rd St portico (34.23715,-77.94610) (medium confidence).
+# Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
+id: wilmington-the-stars-came-through-wilmington
+title: "The Stars Came Through Wilmington"
+summary: "Thalian Hall's history lists appearances by performers including Lillian Russell, Buffalo Bill Cody, and John Philip Sousa."
+place: "Thalian Hall, 310 Chestnut Street, Wilmington, North Carolina"
+at: { lat: 34.23777, lng: -77.94562 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Thalian Hall's history lists appearances by performers including Lillian Russell, Buffalo Bill Cody, and John Philip Sousa."
+script: |
+  Thalian Hall's history lists appearances by performers including Lillian Russell,
+  Buffalo Bill Cody, and John Philip Sousa.
+
+  They brought different kinds of entertainment, but their presence made the same point:
+  Wilmington belonged to a national touring circuit. A port city could receive artistic
+  traffic as well as commercial cargo.
+
+  We do not need to invent the sound of a particular concert or borrow a famous tune. The
+  documented appearances are enough to establish the connection.
+
+  Stand outside the theater and consider the practical journey behind a celebrated name.
+  Performers, equipment, schedules, and audiences had to meet here on the same date. The
+  building supplied the local end of that arrangement. For an evening, a touring
+  reputation became something Wilmington residents could experience together.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "About"
+    publisher: "Thalian Hall"
+    url: https://www.thalianhall.org/about
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

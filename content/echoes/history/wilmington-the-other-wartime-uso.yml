@@ -1,0 +1,48 @@
+# From W031 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Open museum lobby and its tribute to the Ninth and Nixon USO; associated interpretive site.
+# Position: West sidewalk of S 2nd St at the USO entrance, ~23 m north of Orange; address point + OSM footprint (building is NW corner of 2nd & Orange) (high confidence).
+# Shares a stop with other echoes, so it sits 6m off the spot to keep its pin tappable.
+id: wilmington-the-other-wartime-uso
+title: "The Other Wartime USO"
+summary: "The wartime welcome offered here had a boundary."
+place: "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Carolina"
+at: { lat: 34.23312, lng: -77.94720 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The wartime welcome offered here had a boundary."
+script: |
+  The wartime welcome offered here had a boundary. Wilmington's USO facilities were
+  segregated.
+
+  The city's history records a separate club on Nixon Street for African American service
+  members. Today's museum includes a tribute to the Ninth and Nixon USO, preserving a
+  story that this building alone cannot fully represent.
+
+  You are at the interpretive site, not at that other club's original address. The
+  distinction matters. A visitor who hears only about this downtown center could mistake
+  one part of the wartime experience for everyone's experience.
+
+  If the exhibit is open, pause before the tribute. Both clubs served people preparing for
+  military duty, but their separation reflected the racial restrictions of civilian
+  America. Remembering the welcome requires remembering who was directed to a different
+  door.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Museum"
+    publisher: "Wilmington Community Arts"
+    url: https://wilmingtoncommunityarts.org/museum/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "July 4th open house"
+    publisher: "Wilmington Community Arts"
+    url: https://wilmingtoncommunityarts.org/classes-and-events/july-4th-open-house/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

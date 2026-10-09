@@ -1,0 +1,42 @@
+# From W022 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk or authorized museum entrance area.
+# Position: NCSU Built Heritage 34.233547,-77.945924; nudged west to east sidewalk of 3rd between Dock and Orange; fits grid (Dock 34.2344) (high confidence).
+# Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
+id: wilmington-the-home-purchased-for-history
+title: "The Home Purchased for History"
+summary: "In 1963, the Lower Cape Fear Historical Society acquired the Latimer house."
+place: "Latimer House, 126 South Third Street, Wilmington, North Carolina"
+at: { lat: 34.23356, lng: -77.94612 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "In 1963, the Lower Cape Fear Historical Society acquired the Latimer house."
+script: |
+  In 1963, the Lower Cape Fear Historical Society acquired the Latimer house. A family
+  residence became a place where the region's history could be studied and shared.
+
+  The society had formed in 1956. Purchasing this house gave its work a physical anchor
+  downtown, with rooms, collections, and an address people could visit.
+
+  Pause at the entrance. Museums often seem inevitable once their signs are in place. This
+  one required a choice: keep a nineteenth-century house available and give it a public
+  purpose.
+
+  The transition did not freeze its meaning. Each visitor can notice different evidence,
+  from household objects to traces of the people who worked here. The house's new role
+  made those encounters possible. Its preservation connects personal memories with a
+  community's responsibility to examine its past.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "About"
+    publisher: "Latimer House Museum, Lower Cape Fear Historical Society"
+    url: https://latimerhouse.org/about/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

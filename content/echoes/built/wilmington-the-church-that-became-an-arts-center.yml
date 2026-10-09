@@ -1,0 +1,41 @@
+# From W084 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk at Fourth and Campbell; interior access through an authorized event or visit.
+# Position: Former St Andrew's Presbyterian at corner of N 4th & Campbell; 516 = even/east side -> SE corner. No direct coordinate found; extrapolated 4th St and Campbell from grid (hmdb Red Cross & 7th 34.24153). (low confidence).
+id: wilmington-the-church-that-became-an-arts-center
+title: "The Church That Became an Arts Center"
+summary: "Construction of St."
+place: "Brooklyn Arts Center, 516 North Fourth Street, Wilmington, North Carolina"
+at: { lat: 34.24225, lng: -77.94505 }
+triggerRadiusKm: 0.06
+category: built
+format: short
+durationS: 65
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Construction of St."
+script: |
+  Construction of St. Andrew's Presbyterian Church began here in 1888. The congregation
+  dedicated the building in 1889.
+
+  Its later history included other congregations, serious deterioration, and preservation
+  efforts. The surviving structure became the Brooklyn Arts Center.
+
+  From the public corner, notice that a changed purpose did not require the old building
+  to disappear. Its prominent form remains part of the neighborhood while its interior
+  serves new gatherings.
+
+  The building's survival is the turning point. A former church could have become only a
+  historical photograph. Instead, restoration made another use possible. Today's arts
+  setting carries an architectural inheritance from the congregation that first raised it.
+  When people gather here now, they add a chapter rather than beginning on a blank site.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Full history"
+    publisher: "Brooklyn Arts Center"
+    url: https://www.brooklynartsnc.com/full-history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

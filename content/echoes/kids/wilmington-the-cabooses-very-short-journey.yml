@@ -1,0 +1,47 @@
+# From W094 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Authorized outdoor display route; board equipment only where current museum signs permit.
+# Position: VisitNC 34.24200,-77.95060 and directory 34.24161,-77.95103 (47 m apart); averaged and nudged to the Nutt St frontage just north of Red Cross St. (medium confidence).
+# Shares a stop with other echoes, so it sits 8m off the spot to keep its pin tappable.
+id: wilmington-the-cabooses-very-short-journey
+title: "The Caboose's Very Short Journey"
+summary: "In 2007, the museum had to move its red caboose to a new home."
+place: "Wilmington Railroad Museum, 505 Nutt Street, Wilmington, North Carolina"
+at: { lat: 34.24163, lng: -77.95062 }
+triggerRadiusKm: 0.04
+category: kids
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [wilmington, downtown]
+teaser: "In 2007, the museum had to move its red caboose to a new home."
+script: |
+  In 2007, the museum had to move its red caboose to a new home. The distance was short,
+  but the caboose could not simply roll there along a ready-made track.
+
+  Workers lifted its body onto one truck and carried its wheels on another. They placed
+  ties and rails at the new site, and the job continued into darkness.
+
+  Look at the caboose from the permitted display area. A thing designed to travel can
+  still be difficult to move!
+
+  The team had to solve the problem one part at a time. Wheels, body, trucks, and rails
+  all needed the right place in the plan. The caboose's short trip became a real adventure
+  in cooperation, helping the museum keep a big piece of railroad history for visitors
+  like you.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Museum move 2007"
+    publisher: "Wilmington Railroad Museum"
+    url: https://www.wrrm.org/museum-move---2007.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Outdoor rolling stock"
+    publisher: "Wilmington Railroad Museum"
+    url: https://www.wrrm.org/outdoor-rolling-stock.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,58 @@
+# From W009 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Third Street sidewalk outside the historic municipal complex.
+# Position: HMDB City Hall marker by west entrance on N 3rd (34.23708,-77.94595); Wikipedia building 34.23722,-77.94667; 3rd St east sidewalk (high confidence).
+id: wilmington-the-government-taken-by-force
+title: "The Government Taken by Force"
+summary: "This building has held both city government and a theater."
+place: "City Hall and Thalian Hall, 310 Chestnut Street, Wilmington, North Carolina"
+at: { lat: 34.23710, lng: -77.94598 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "This building has held both city government and a theater."
+script: |
+  This building has held both city government and a theater. In November 1898, the civic
+  part of that history became a scene of forced political change.
+
+  White supremacist leaders used violence and intimidation to overthrow Wilmington's
+  elected, biracial government. Officials were compelled to resign, and Alfred Moore
+  Waddell assumed the mayor's office.
+
+  The outcome was not a normal transfer of authority after an election. The state
+  recognizes the events as a coup. Black residents were killed, threatened, and driven
+  from the city; the full death toll remains uncertain.
+
+  Look at the municipal entrance from the sidewalk. Government buildings can make
+  authority appear orderly and permanent. This one asks a harder question: how was that
+  authority obtained? The architecture remained. The democratic rights of many Wilmington
+  residents did not.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: alleged
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-10-09"
+  contentWarning: "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
+sources:
+  - title: "Wilmington coup"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2016/11/10/wilmington-coup
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "1898 wilmington coup"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/1898-wilmington-coup
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "About"
+    publisher: "Thalian Hall"
+    url: https://www.thalianhall.org/about
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
