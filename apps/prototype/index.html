@@ -4,6 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Echo Finders</title>
+    <!--
+      INSTALLABLE, so "Add to Home Screen" opens Echo Finders as its own full-screen app
+      rather than another Safari window. That is also the only place iOS (18.4+) lets a web
+      app hold the screen awake, which is what keeps a walk going without the phone
+      sleeping: `useScreenAwake` in wake.ts asks for it, and from here it can be granted.
+
+      The status bar is solid black, not translucent, so the app starts below the clock
+      and the Dynamic Island exactly as it does in a Safari tab. The home indicator below
+      is handled by `--nav-h`, which grows by the phone's own inset.
+    -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#0b0f2b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Echo Finders" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!--

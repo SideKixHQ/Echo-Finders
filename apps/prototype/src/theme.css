@@ -145,7 +145,19 @@
    * while underneath it. Deriving them from one number means the next change to the sheet
    * moves the guidance bar and the player with it.
    */
-  --nav-h: 74px;
+  /* 60 for the tabs, plus the design's 14 or the phone's home-indicator inset, whichever is
+     more. Opened from the home screen an iPhone reports 34, and a fixed 74 squeezed the
+     tabs into 40px. Everything below the map reads this, and the map measures the bar. */
+  --nav-h: calc(60px + max(14px, env(safe-area-inset-bottom)));
+  /*
+   * The pretend status bar the desktop frame draws ("10:42 … walking"), and where the top
+   * chrome starts below it. On a real phone that bar is hidden (the phone has its own), so
+   * `--top-h` is 0 and the chrome starts 12px down. It was 46px everywhere, which left an
+   * empty band at the top of every screen on James's iPhone and pushed the whole layout
+   * down: the one thing the desktop frame could never show.
+   */
+  --top-h: 46px;
+  --top-gap: max(12px, calc(var(--top-h) - 2px));
   /*
    * The one side margin. The design canvas uses 16; the build had drifted to 10, 12, 14
    * and 18 on different screens, and on a phone four margins read as nothing lining up.
@@ -662,7 +674,7 @@ body {
 
 /* The stack above the map: ribbon, then filters. */
 .mapbar {
-  position: absolute; top: 44px; left: var(--gutter); right: var(--gutter); z-index: 18;
+  position: absolute; top: var(--top-gap); left: var(--gutter); right: var(--gutter); z-index: 18;
   display: flex; flex-direction: column; gap: 7px;
 }
 
@@ -871,7 +883,7 @@ body {
 /* A deck, not a list. Built on the design's own `.reel` pattern: scroll-snapped cards, one
    at a time, with the next peeking in below so nothing has to say "scroll". */
 .plan {
-  position: absolute; inset: 46px 0 var(--nav-h); z-index: 15;
+  position: absolute; inset: var(--top-h) 0 var(--nav-h); z-index: 15;
   background: var(--space); display: flex; flex-direction: column;
 }
 
@@ -1285,7 +1297,7 @@ body {
 /* ── tab bar ─────────────────────────────────────────────── */
 .nav {
   position: absolute; left: 0; right: 0; bottom: 0; z-index: 50;
-  height: 74px; padding-bottom: 14px;
+  height: var(--nav-h); padding-bottom: max(14px, env(safe-area-inset-bottom));
   display: flex; align-items: center;
   background: rgba(var(--rgb-panel), 0.96);
   border-top: 1px solid var(--line);
@@ -1371,7 +1383,7 @@ body {
 
 /* ── full-screen panels ──────────────────────────────────── */
 .screen-body {
-  position: absolute; inset: 46px 0 var(--nav-h); z-index: 15;
+  position: absolute; inset: var(--top-h) 0 var(--nav-h); z-index: 15;
   overflow-y: auto; padding: 8px var(--gutter) 24px;
   background: var(--space); scrollbar-width: none;
 }
@@ -1772,6 +1784,8 @@ body {
   .screen { border-radius: 0; }
   /* No notch to clear, but a real one to avoid. */
   .statusbar { display: none; }
+  /* ...and none of the room it took: the phone's own status bar is outside the page. */
+  .phone { --top-h: 0px; --top-gap: 12px; }
   .homebar { display: none; }
   /* The design's 14px is the floor, not a value to replace: it was measured against its
      own drawn home indicator, which a real phone reports for itself and usually reports
@@ -2494,7 +2508,7 @@ body {
   /* Bounded by the chrome rather than by the screen. Stretched over the whole screen it was
      centring the dial behind the sheet and clipping its own button off the bottom. The
      sheet is gone and the bar is hidden on the rose, so the tab bar is all that is left. */
-  top: 96px; bottom: var(--nav-h);
+  top: calc(var(--top-gap) + 52px); bottom: var(--nav-h);
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   gap: 14px; padding: 8px 16px 14px; overflow: hidden;
   background: radial-gradient(circle at 50% 42%, rgba(var(--rgb-accent), 0.07), transparent 62%),
@@ -3219,7 +3233,7 @@ body {
   position: absolute; left: 0; right: 0; top: 0; bottom: var(--nav-h); z-index: 4;
   background: radial-gradient(120% 70% at 50% 16%, #141a3d 0%, #0d1230 50%, #080b1e 100%);
   display: flex; flex-direction: column; align-items: center;
-  padding: calc(126px + env(safe-area-inset-top)) 26px 20px;
+  padding: calc(var(--top-gap) + 82px + env(safe-area-inset-top)) 26px 20px;
   text-align: center; overflow: hidden;
 }
 
@@ -3319,7 +3333,7 @@ body {
 }
 
 .hear-back {
-  position: absolute; left: var(--gutter); top: calc(48px + env(safe-area-inset-top));
+  position: absolute; left: var(--gutter); top: calc(var(--top-gap) + 4px + env(safe-area-inset-top));
   width: 44px; height: 44px; border-radius: 50%; cursor: pointer;
   display: grid; place-items: center; color: var(--white);
   background: rgba(11, 15, 43, 0.5); border: 1px solid rgba(255, 255, 255, 0.16);
@@ -3328,7 +3342,7 @@ body {
 /* Done with it, top right, mirroring the way out top left. Absolute, so it costs the
    layout nothing on a screen that already fits an iPhone SE with no slack. */
 .hear-stop {
-  position: absolute; right: var(--gutter); top: calc(48px + env(safe-area-inset-top));
+  position: absolute; right: var(--gutter); top: calc(var(--top-gap) + 4px + env(safe-area-inset-top));
   width: 44px; height: 44px; border-radius: 50%; cursor: pointer; z-index: 3;
   display: grid; place-items: center; color: var(--muted);
   background: rgba(11, 15, 43, 0.5); border: 1px solid rgba(255, 255, 255, 0.16);
@@ -3576,7 +3590,7 @@ body {
      characters of "Search this transcript" were behind a circle, on the one control on
      this screen you are most likely to reach for first. 48 + 44 + 12 of air.
   */
-  padding-top: calc(104px + env(safe-area-inset-top));
+  padding-top: calc(var(--top-gap) + 60px + env(safe-area-inset-top));
   padding-left: 4px;
   padding-right: 4px;
   padding-bottom: 8px;
@@ -3731,7 +3745,7 @@ body {
 .city-plate-rare { color: var(--ember-core); border-color: rgba(255, 158, 18, 0.45); }
 
 .city-head {
-  position: absolute; left: 14px; right: 14px; top: calc(48px + env(safe-area-inset-top));
+  position: absolute; left: 14px; right: 14px; top: calc(var(--top-gap) + 4px + env(safe-area-inset-top));
   display: flex; align-items: center; gap: 10px;
   padding: 8px 14px 8px 8px; border-radius: 99px;
   background: rgba(7, 8, 12, 0.8); border: 1px solid var(--line-2);
@@ -3753,7 +3767,7 @@ body {
 }
 
 .city-legend {
-  position: absolute; left: 14px; right: 14px; top: calc(104px + env(safe-area-inset-top));
+  position: absolute; left: 14px; right: 14px; top: calc(var(--top-gap) + 60px + env(safe-area-inset-top));
   display: flex; align-items: center; gap: 9px;
   padding: 9px 13px; border-radius: 12px;
   background: rgba(7, 8, 12, 0.72); border: 1px solid var(--line);
