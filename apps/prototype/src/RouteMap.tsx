@@ -166,8 +166,13 @@ const H = 822;
  * did not, so the bottom of every route quietly slid underneath it. That failure mode is
  * gone with the sheet: there is one number now and the caller passes it.
  */
-/* 74, as `--nav-h` is: measured. It was 72, two pixels short of the real bar. */
-const NAV_H = 74;
+/*
+ * The tab bar's height before it has been measured: 74, as `--nav-h` is in a browser tab.
+ * Measured from then on, because opened from the home screen an iPhone adds its home
+ * indicator under the tabs and the bar becomes 60 + 34. A constant here put every edge
+ * marker and the control column 20px into the tab bar.
+ */
+const NAV_FALLBACK = 74;
 /**
  * How many echoes ripple at once.
  *
@@ -244,9 +249,9 @@ const GUTTER = 16;
  * caller reserved covers the bottom. A pin you cannot see is worse than a map with less
  * room in it, so this is derived from measured heights rather than eyeballed.
  */
-const insetFor = (barH: number, reservedBottom: number) => ({
+const insetFor = (barH: number, reservedBottom: number, navH: number) => ({
   top: barH + PIN_R / 2,
-  bottom: NAV_H + reservedBottom + PIN_R / 2,
+  bottom: navH + reservedBottom + PIN_R / 2,
   side: 30,
 });
 
@@ -484,6 +489,27 @@ export function RouteMap({
     return () => observer.disconnect();
   }, []);
 
+  /** The tab bar's real height: from its top edge to the map's bottom. See `NAV_FALLBACK`. */
+  const [navH, setNavH] = useState(NAV_FALLBACK);
+  useEffect(() => {
+    const el = svg.current;
+    if (!el || typeof ResizeObserver === "undefined") return;
+    const nav = el.closest(".screen")?.querySelector(".nav");
+    if (!nav) return;
+    const measure = () => {
+      const n = nav.getBoundingClientRect();
+      const s = el.getBoundingClientRect();
+      if (n.height < 1) return;
+      const next = Math.round(s.bottom - n.top);
+      setNavH((cur) => (Math.abs(cur - next) < 1 ? cur : next));
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(nav);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   useEffect(() => {
     const el = svg.current;
     if (!el) return;
@@ -503,7 +529,7 @@ export function RouteMap({
   const geometry = useMemo(() => (route ? buildRouteGeometry(route) : null), [route]);
 
   const projection = useMemo(() => {
-    const INSET = insetFor(barH, reservedBottom);
+    const INSET = insetFor(barH, reservedBottom, navH);
 
     // The band actually visible between the chips and the sheet. The listener belongs in
     // the middle of *that*, not the middle of a box that is half covered.
@@ -567,7 +593,7 @@ export function RouteMap({
      * actually on screen — from under the map bar down to the top of the tab bar.
      */
     const bandTop = barH;
-    const bandBottom = box.h - NAV_H;
+    const bandBottom = box.h - navH;
     const plan = planTiles(
       centre,
       spanKm,
@@ -590,7 +616,7 @@ export function RouteMap({
     // computed twice and drifting.
     project.plan = plan;
     return project;
-  }, [mode, geometry, library, at, overview, zoom, box, pan, barH, reservedBottom]);
+  }, [mode, geometry, library, at, overview, zoom, box, pan, barH, reservedBottom, navH]);
 
   const path = useMemo(() => {
     if (!geometry) return "";
@@ -706,7 +732,7 @@ export function RouteMap({
     lastFocus.current = focusId;
     const echo = library.find((e) => e.id === focusId);
     if (!echo) return;
-    const inset = insetFor(barH, reservedBottom);
+    const inset = insetFor(barH, reservedBottom, navH);
     const wantX = inset.side + (box.w - inset.side * 2) / 2;
     const wantY = inset.top + (box.h - inset.top - inset.bottom) / 2;
     const now = projection(echo.point.at);
@@ -717,7 +743,7 @@ export function RouteMap({
     }
     const group = groups.find((g) => g.members.some((m) => m.item.id === focusId));
     setOpenCluster(group && group.members.length > 1 ? group.members[0]!.item.id : null);
-  }, [focusId, library, projection, groups, pan, onPan, box, barH, reservedBottom]);
+  }, [focusId, library, projection, groups, pan, onPan, box, barH, reservedBottom, navH]);
 
   const openingById = new Map(opening.map((a) => [a.echo.id, a]));
   const here = at ? projection(at) : null;
@@ -743,14 +769,14 @@ export function RouteMap({
       const p = projection(echo.point.at);
       // On screen already: the pin speaks for itself.
       const onScreen =
-        p.x >= -PIN_R && p.x <= box.w + PIN_R && p.y >= barH && p.y <= box.h - NAV_H;
+        p.x >= -PIN_R && p.x <= box.w + PIN_R && p.y >= barH && p.y <= box.h - navH;
       if (onScreen) continue;
       const rarity = rarityOf(echo);
       off.push({
         echo,
         km: distanceKm(at, echo.point.at),
         // Clamped into the band, so a marker rides the edge rather than leaving with it.
-        y: Math.max(barH + 40, Math.min(box.h - NAV_H - 80, p.y)),
+        y: Math.max(barH + 40, Math.min(box.h - navH - 80, p.y)),
         rarity,
         // Which side it went out of. A marker on the right pointing at something behind
         // your left shoulder is worse than no marker.
@@ -793,7 +819,7 @@ export function RouteMap({
      * separated downward so two echoes at a similar bearing do not stack into one
      * unreadable pill with only the top one reachable.
      */
-    const railBottom = box.h - (NAV_H + reservedBottom + 12);
+    const railBottom = box.h - (navH + reservedBottom + 12);
     const railTop = railBottom - RAIL_H;
     const floor = barH + 40;
     let lastY = -Infinity;
@@ -816,7 +842,7 @@ export function RouteMap({
       lastY = y;
       return { ...mark, y };
     });
-  }, [at, overview, library, stateOf, projection, box, zoom, barH, reservedBottom]);
+  }, [at, overview, library, stateOf, projection, box, zoom, barH, reservedBottom, navH]);
 
   /**
    * One pin, drawn wherever it has been put.
@@ -1266,7 +1292,7 @@ export function RouteMap({
          * the shape still reads as one group.
          */
         const reach = Math.max(...spokes.map((s) => Math.hypot(s.x, s.y))) + PIN_R;
-        const bandBottom = box.h - NAV_H - reservedBottom;
+        const bandBottom = box.h - navH - reservedBottom;
         /*
          * And clear of the control column, which is drawn over the map on the right.
          *
@@ -1339,7 +1365,7 @@ export function RouteMap({
       <text
         className="map-credit"
         x={16}
-        y={box.h - insetFor(barH, reservedBottom).bottom - 6}
+        y={box.h - insetFor(barH, reservedBottom, navH).bottom - 6}
         textAnchor="start"
       >
         {TILE_ATTRIBUTION}
