@@ -1,0 +1,57 @@
+# From W010 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Nun Street sidewalk by the marker; church property and services require permission.
+# Position: North sidewalk of Nun St in front of Gregory Congregational (609 Nun; address point + OSM footprint agree). Marker itself not located; assumed in front of church (medium confidence).
+id: wilmington-the-wilmington-ten-and-the-missing-evidence
+title: "The Wilmington Ten and the Missing Evidence"
+summary: "This block was a gathering place for students protesting unequal treatment during school desegregation in 1971."
+place: "Wilmington Ten marker near Gregory Congregational Church, 609 Nun Street, Wilmington, North Carolina"
+at: { lat: 34.23098, lng: -77.94077 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "This block was a gathering place for students protesting unequal treatment during school desegregation in 1971."
+script: |
+  This block was a gathering place for students protesting unequal treatment during school
+  desegregation in 1971. Nearby, Mike's Grocery was firebombed.
+
+  Ten people were convicted on charges connected with the fire. Their case became known as
+  the Wilmington Ten. The evidence and prosecution were later exposed as deeply flawed,
+  including perjured testimony.
+
+  The convictions were overturned by the federal appeals court in 1980. Governor Beverly
+  Perdue issued pardons in 2012. Responsibility for the grocery arson remains unclear;
+  these ten people should not be presented as its proven perpetrators.
+
+  Listen beside the marker, not inside the church without permission. This true crime
+  story includes a crime committed against justice itself: people losing years while a
+  false case was challenged. The ending is correction, but correction cannot return the
+  time already taken.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: true
+  convictionStatus: exonerated
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-10-09"
+  contentWarning: "This echo describes an arson and a wrongful conviction. Nothing is described in detail."
+sources:
+  - title: "Wilmington 10 and firebombing mikes grocery"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2016/02/06/wilmington-10-and-firebombing-mikes-grocery
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Marker 262587"
+    publisher: "The Historical Marker Database"
+    url: https://www.hmdb.org/m.asp?m=262587
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Chavis v. North Carolina, 637 F.2d 213 (4th Cir. 1980)"
+    publisher: "United States Court of Appeals for the Fourth Circuit"
+    retrievedAt: "2026-10-09"
+    rights: public-domain

@@ -1,0 +1,44 @@
+# From W002 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk at Water and Dock; historical tavern area, not a claim that a present business is haunted.
+# Position: HMDB J.W. Brooks Building marker at S Water & Dock (34.23422,-77.94958); sidewalk at the corner (high confidence).
+id: wilmington-meg-at-the-old-waterfront
+title: "Meg at the Old Waterfront"
+summary: "This waterfront once belonged as much to sailors and taverns as to strolling visitors."
+place: "Historic waterfront near Water and Dock streets, Wilmington, North Carolina"
+at: { lat: 34.23420, lng: -77.94950 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 70
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven;
+  no supernatural claim is established.
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "This waterfront once belonged as much to sailors and taverns as to strolling visitors."
+script: |
+  This waterfront once belonged as much to sailors and taverns as to strolling visitors.
+  One of its surviving legends concerns a formidable woman known as Gallus Meg.
+
+  Local ghost-tour tradition associates her with the old Blue Post tavern and says her
+  presence lingered after death. The historic tavern in this tale should not be confused
+  with another business that now uses the Blue Post name.
+
+  Meg's reputation belongs to folklore. The reported haunting is not proof that a spirit
+  occupies a building, and the more lurid versions should not be mistaken for a documented
+  criminal biography.
+
+  Stand by the public street and let the river supply the atmosphere. A working port
+  brings strangers together, then sends them away. Meg's story reverses that pattern: one
+  waterfront character, storytellers suggest, never quite left.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Journey into the haunted depths of old wilmington"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

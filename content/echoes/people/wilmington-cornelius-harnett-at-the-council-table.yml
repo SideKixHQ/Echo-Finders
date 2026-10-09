@@ -1,0 +1,46 @@
+# From W057 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk at the marker; associated Council of Safety site, courthouse no longer standing.
+# Position: NE corner sidewalk of Market & 3rd (intersection 34.23554,-77.94605); NE corner per Wrightsville Beach Magazine description of the Old Courthouse marker; not independently confirmed (medium confidence).
+id: wilmington-cornelius-harnett-at-the-council-table
+title: "Cornelius Harnett at the Council Table"
+summary: "Cornelius Harnett helped lead revolutionary political organization in the Cape Fear region."
+place: "Old Courthouse marker, Market and Third streets, Wilmington, North Carolina"
+at: { lat: 34.23567, lng: -77.94592 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Cornelius Harnett helped lead revolutionary political organization in the Cape Fear region."
+script: |
+  Cornelius Harnett helped lead revolutionary political organization in the Cape Fear
+  region. The Wilmington Council of Safety met at the old courthouse on this corner.
+
+  That work involved more than opposing Britain. A new political system required people to
+  discuss how authority would operate after the old one was challenged.
+
+  The courthouse is gone, but the site gives Harnett's role a local setting. This is an
+  associated meeting place, not a claim that his entire career unfolded at one
+  intersection.
+
+  Stand beside the marker and consider the difference between declaring a principle and
+  arranging a government. Both require action. Harnett's public life connected those
+  demands, helping the region move from resistance toward new institutions. The corner
+  preserves the setting of that practical political work.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old courthouse d 2"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/08/old-courthouse-d-2
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Cornelius harnett 1723 1781 d 1"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/08/cornelius-harnett-1723-1781-d-1
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

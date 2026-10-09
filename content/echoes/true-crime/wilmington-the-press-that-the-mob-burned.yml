@@ -1,0 +1,53 @@
+# From W007 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Seventh Street sidewalk on the block south of Nun; original newspaper building no longer stands.
+# Position: West sidewalk of S 7th St midway Nun-Church (by 412 S 7th, Wilmington Journal); exact lot and side of Love and Charity Hall unverified, street is ~13 m wide (medium confidence).
+id: wilmington-the-press-that-the-mob-burned
+title: "The Press That the Mob Burned"
+summary: "An ordinary block can hold the site of an extraordinary assault."
+place: "Former Daily Record site, Seventh Street between Nun and Church streets, Wilmington, North Carolina"
+at: { lat: 34.23038, lng: -77.94008 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 71
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "An ordinary block can hold the site of an extraordinary assault."
+script: |
+  An ordinary block can hold the site of an extraordinary assault. On November 10, 1898, a
+  white supremacist mob came to the Daily Record, Wilmington's Black-owned newspaper.
+
+  The newspaper occupied Free Love Hall on this Seventh Street block. The mob invaded the
+  building and set it ablaze. Editor Alex Manly had already fled, anticipating the
+  violence.
+
+  This was part of the Wilmington coup, not an isolated dispute over a newspaper.
+  Destroying the press attacked a community's ability to speak while armed violence spread
+  through the city.
+
+  The original building is gone. Listen from the public sidewalk rather than entering
+  today's property. Its absence does not make the event less specific. Here, printed words
+  were answered with fire. The record we can recover belongs to the people whose right to
+  publish was attacked.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: alleged
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-10-09"
+  contentWarning: "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
+sources:
+  - title: "Alex manly 1866 1944 d 103"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/11/alex-manly-1866-1944-d-103
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "1898 wilmington coup"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/1898-wilmington-coup
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,49 @@
+# From W083 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public corner sidewalk; active synagogue, interior access only with permission.
+# Position: 1 S Fourth = SE corner of 4th & Market; Wikipedia 34.23546,-77.94444; 4th St line from hmdb 409 Market and 111 S 4th markers. (high confidence).
+# Shares a stop with other echoes, so it sits 6m off the spot to keep its pin tappable.
+id: wilmington-north-carolinas-first-synagogue-building
+title: "North Carolina's First Synagogue Building"
+summary: "Dedicated in 1876, Wilmington's Temple of Israel is recognized as North Carolina's first Jewish house of worship."
+place: "Temple of Israel, Fourth and Market streets, Wilmington, North Carolina"
+at: { lat: 34.23548, lng: -77.94436 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Dedicated in 1876, Wilmington's Temple of Israel is recognized as North Carolina's first Jewish house of worship."
+script: |
+  Dedicated in 1876, Wilmington's Temple of Israel is recognized as North Carolina's first
+  Jewish house of worship.
+
+  The congregation describes its building as Moorish Revival, a style used by synagogues
+  in Europe and the United States during that period.
+
+  The corner therefore carries two stories together: a community establishing a permanent
+  worship space and a design expressing that presence publicly.
+
+  Remain on the sidewalk unless the congregation has authorized a visit. Its historical
+  significance does not change its role as an active religious site.
+
+  Look at how the building addresses Market Street. It belongs to Wilmington's streetscape
+  while retaining a distinctive identity. The milestone is not simply that construction
+  finished. A Jewish congregation secured a place where its life could continue across
+  generations in the city.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "States first jewish house worship temple israel"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2016/05/12/states-first-jewish-house-worship-temple-israel
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "History"
+    publisher: "Temple of Israel"
+    url: https://temple-of-israel.org/history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

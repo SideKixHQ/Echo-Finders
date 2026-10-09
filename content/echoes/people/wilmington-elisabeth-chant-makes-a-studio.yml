@@ -1,0 +1,41 @@
+# From W071 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public lane only; the historic studio property is not open for unrestricted entry.
+# Position: Cottage Lane by 309/311 Cottage Ln (only addresses on the lane); Hart Wine House exact building not confirmed (medium confidence).
+id: wilmington-elisabeth-chant-makes-a-studio
+title: "Elisabeth Chant Makes a Studio"
+summary: "Elisabeth Chant made a studio in the old Hart Wine House on Cottage Lane."
+place: "Cottage Lane near the historic Hart Wine House, between Dock and Orange streets, Wilmington, North Carolina"
+at: { lat: 34.23378, lng: -77.94505 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Elisabeth Chant made a studio in the old Hart Wine House on Cottage Lane."
+script: |
+  Elisabeth Chant made a studio in the old Hart Wine House on Cottage Lane. There she
+  taught and influenced artists who helped shape Wilmington's visual-arts community.
+
+  Among her students were Claude Howell and Henry Jay MacMillan. The important thing at
+  this stop is the local relationship: a teacher, a working space, and people learning to
+  see and make art.
+
+  Stay on the public lane. The studio's history does not grant access to today's private
+  property.
+
+  The small setting helps explain the scale of cultural beginnings. A teacher did not need
+  an institution with a monumental facade to have a lasting effect. Chant's studio made
+  room for practice and exchange. Later artistic careers carried that influence beyond the
+  lane where some of their learning began.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "History"
+    publisher: "Cameron Art Museum"
+    url: https://cameronartmuseum.org/history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

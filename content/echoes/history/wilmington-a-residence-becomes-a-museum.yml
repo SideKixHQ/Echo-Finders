@@ -1,0 +1,44 @@
+# From W014 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Market Street sidewalk or authorized museum visitor area.
+# Position: House on SW corner of 3rd & Market (even/south side of Market, across Third from St James). Spot = corner sidewalk at Third & Market on the house side. Wikipedia bldg 34.2350,-77.9461 (DMS-rounded). (medium confidence).
+# Shares a stop with other echoes, so it sits 8m off the spot to keep its pin tappable.
+id: wilmington-a-residence-becomes-a-museum
+title: "A Residence Becomes a Museum"
+summary: "Saving a building is only the beginning."
+place: "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23550, lng: -77.94645 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Saving a building is only the beginning."
+script: |
+  Saving a building is only the beginning. Someone must decide what people will learn
+  inside it.
+
+  The Colonial Dames acquired the Burgwin-Wright House in 1937. Its museum history
+  describes decades of restoration and interpretation, including school visits and work on
+  the grounds.
+
+  A residence built for private life gradually became a public encounter with colonial
+  Wilmington. Rooms, objects, jail remains, and gardens could be examined together instead
+  of disappearing into separate collections.
+
+  Look at the entrance. The change from home to museum altered who could cross that
+  threshold and why. Visitors now arrive to ask questions that the original owners did not
+  intend the building to answer: about trade, confinement, domestic labor, and whose lives
+  are easiest to recover. Preservation makes those questions possible; interpretation
+  keeps them open.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The museum"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.org/the-museum
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

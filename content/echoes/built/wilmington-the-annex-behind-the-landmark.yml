@@ -1,0 +1,40 @@
+# From W085 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk view; annex interior and courtyard access only when authorized.
+# Position: Brooklyn Arts Center (516 N 4th) geocodes 34.2422-34.2424,-77.9451/-77.9453; annex assumed east of church, viewed from Campbell St south sidewalk. Annex exact footprint/frontage not confirmed (low confidence).
+id: wilmington-the-annex-behind-the-landmark
+title: "The Annex Behind the Landmark"
+summary: "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H."
+place: "Brooklyn Arts Center Annex, behind the Fourth and Campbell church complex, Wilmington, North Carolina"
+at: { lat: 34.24250, lng: -77.94490 }
+triggerRadiusKm: 0.06
+category: built
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H."
+script: |
+  The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H.
+  Sprunt in memory of his parents and the earlier congregation's founders.
+
+  The annex served functions that the main sanctuary alone could not contain. Its history
+  reminds you that a community's building needs extend beyond one ceremonial room.
+
+  Look from the public sidewalk and keep to authorized visitor areas. A less dramatic
+  building can still be central to how a place works.
+
+  The addition makes growth tangible. People who gathered in the church also needed rooms
+  for teaching, meetings, and other activities. The annex supplied that supporting space.
+  Its continued presence helps you read the complex as a working community setting, not
+  simply a striking facade preserved for photographs.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Full history"
+    publisher: "Brooklyn Arts Center"
+    url: https://www.brooklynartsnc.com/full-history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

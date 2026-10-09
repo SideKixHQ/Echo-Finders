@@ -1,0 +1,41 @@
+# From W040 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Grace Street sidewalk or authorized museum visitor area; current downtown museum.
+# Position: New building opened Aug 2026 (Project Grace, Grace St between 2nd and 3rd, south side). NC Science Trail 34.238748,-77.946831; set on Grace St south sidewalk. Not Wikipedia's old 814 Market St point (medium confidence).
+id: wilmington-a-new-home-for-old-evidence
+title: "A New Home for Old Evidence"
+summary: "Cape Fear Museum began in 1898."
+place: "Cape Fear Museum, 230 Grace Street, Wilmington, North Carolina"
+at: { lat: 34.23882, lng: -77.94690 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Cape Fear Museum began in 1898."
+script: |
+  Cape Fear Museum began in 1898. In August 2026, it opened a new downtown home on Grace
+  Street.
+
+  The county's opening announcement describes more than four hundred artifacts alongside
+  history and science galleries. The move placed the museum and a new main library on the
+  same downtown block.
+
+  You are at the new building, not the museum's earlier Market Street location. Its age
+  belongs to the institution; the structure before you is a recent chapter.
+
+  That contrast is the point of the stop. Old evidence does not need an old building to
+  remain valuable. It needs care, context, and people willing to examine it. The museum's
+  move brings a long-running collection into a new setting where Wilmington can keep
+  asking how its past connects with the present.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Detail"
+    publisher: "Cape Fear Museum of History and Science"
+    url: https://capefearmuseum.com/m/newsflash/Home/Detail/1159
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

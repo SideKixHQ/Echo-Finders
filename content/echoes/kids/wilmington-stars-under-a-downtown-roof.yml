@@ -1,0 +1,42 @@
+# From W098 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Authorized planetarium program with an accompanying adult; tickets and schedules follow museum rules.
+# Position: Inside new Cape Fear Museum (dome theater); same Grace St entrance point as museum (medium confidence).
+id: wilmington-stars-under-a-downtown-roof
+title: "Stars Under a Downtown Roof"
+summary: "Wilmington's new downtown museum opened in August 2026 with a sixty-seat planetarium."
+place: "Cape Fear Museum planetarium, 230 Grace Street, Wilmington, North Carolina"
+at: { lat: 34.23882, lng: -77.94690 }
+triggerRadiusKm: 0.04
+category: kids
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [wilmington, downtown]
+teaser: "Wilmington's new downtown museum opened in August 2026 with a sixty-seat planetarium."
+script: |
+  Wilmington's new downtown museum opened in August 2026 with a sixty-seat planetarium.
+  Inside, a presentation can help visitors explore the sky while sitting under a roof.
+
+  The images are a way of learning, not actual stars brought indoors. Real stars are much
+  farther away than any building in the city.
+
+  If you are attending an authorized program, settle into your seat and let the
+  presentation guide your eyes. What becomes easier to notice when the view is arranged
+  for learning?
+
+  The planetarium joins science with storytelling. It can help turn distant things into
+  questions you can investigate. When you leave, the real sky is still outside, and the
+  downtown streets are still around you. A visit can make that familiar walk feel
+  connected with a much larger world.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Detail"
+    publisher: "Cape Fear Museum of History and Science"
+    url: https://capefearmuseum.com/m/newsflash/Home/Detail/1159
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,41 @@
+# From W080 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Front Street sidewalk; enter a current business only during authorized opening hours.
+# Position: 200 block N Front (Chestnut-Grace), Efird's at north/Grace end of east side (UNF NRHP photo 34.23746,-77.94906 for block). Placed on east Front sidewalk ~40 m south of Grace.; moved onto the Front St sidewalk at the county address point (medium confidence).
+id: wilmington-the-department-stores-big-windows
+title: "The Department Store's Big Windows"
+summary: "This five-story commercial building dates to 1906, with a later addition."
+place: "Former Efird's and Einstein Brothers store, 272 North Front Street, Wilmington, North Carolina"
+at: { lat: 34.23879, lng: -77.94904 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 64
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "This five-story commercial building dates to 1906, with a later addition."
+script: |
+  This five-story commercial building dates to 1906, with a later addition. Wilmington's
+  landmark description notes the light and open space that served wholesale and retail
+  trade.
+
+  The building was designed to show goods, not merely store them. Its scale makes the
+  ambition visible from the street.
+
+  Stand clear of entrances and look upward. A downtown shop could occupy a substantial
+  architectural presence, combining business needs with a recognizable public face.
+
+  Names and tenants changed, but the structure continued offering space for commerce. The
+  landmark's story connects the customer on the pavement with the larger world of
+  suppliers and merchants inside. A display window is the meeting point: goods become
+  visible, and a passing person becomes a possible buyer.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Local Historic Landmarks"
+    publisher: "City of Wilmington"
+    url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,42 @@
+# From W093 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Authorized Model Hall visitor area; use only visitor controls the museum allows.
+# Position: VisitNC 34.24200,-77.95060 and directory 34.24161,-77.95103 (47 m apart); averaged and nudged to the Nutt St frontage just north of Red Cross St. (medium confidence).
+# Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
+id: wilmington-a-little-town-in-the-1950s
+title: "A Little Town in the 1950s"
+summary: "The museum's big model layout takes you into the early 1950s, when steam locomotives and diesel trains shared the railroad world."
+place: "Wilmington Railroad Museum, 505 Nutt Street, Wilmington, North Carolina"
+at: { lat: 34.24174, lng: -77.95054 }
+triggerRadiusKm: 0.04
+category: kids
+format: short
+durationS: 71
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [wilmington, downtown]
+teaser: "The museum's big model layout takes you into the early 1950s, when steam locomotives and diesel trains shared the railroad world."
+script: |
+  The museum's big model layout takes you into the early 1950s, when steam locomotives and
+  diesel trains shared the railroad world.
+
+  Its builders used coastal North Carolina history to create towns, tracks, industries,
+  and moving trains. Parts of Wilmington are represented in miniature.
+
+  Find a safe place beside the layout and look closely. A model is not the actual town
+  shrunk by magic. People chose what to include and built the pieces to help tell a story.
+
+  Try following one train with your eyes. Where does it go, and what does it pass? Then
+  look at the tiny buildings around it. The train needs the town, and the town needs
+  connections. This small world helps you notice relationships that can be harder to see
+  when you are standing inside the real city.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Model railroads"
+    publisher: "Wilmington Railroad Museum"
+    url: https://www.wrrm.org/model-railroads.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

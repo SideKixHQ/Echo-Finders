@@ -1,0 +1,41 @@
+# From W043 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public entrance or authorized auditorium visit; do not approach stage equipment.
+# Position: South sidewalk of Chestnut St at the 310 Chestnut theatre entrance; OSM Thalian Hall footprint centre is ~45 m south. Alternative: 3rd St portico (34.23715,-77.94610) (medium confidence).
+# Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
+id: wilmington-when-the-stage-turned-electric
+title: "When the Stage Turned Electric"
+summary: "In 1909, Thalian Hall installed electric stage lights."
+place: "Thalian Hall, 310 Chestnut Street, Wilmington, North Carolina"
+at: { lat: 34.23774, lng: -77.94575 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "In 1909, Thalian Hall installed electric stage lights."
+script: |
+  In 1909, Thalian Hall installed electric stage lights. Its renovation also changed the
+  balconies and proscenium, the frame around the stage.
+
+  The theater was adapting to new expectations instead of preserving every feature from
+  its opening. The audience's view and the performers' working conditions could change
+  while the building continued serving the same larger purpose.
+
+  If you can enter through an authorized visit, look toward the stage opening. The frame
+  tells you where to direct attention; light tells you what to notice within it.
+
+  From outside, the story still works. A historic theater is not one unaltered machine. It
+  is a place repeatedly adjusted so performance can continue. The 1909 work reminds us
+  that what now looks traditional was once a substantial modern improvement.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "About"
+    publisher: "Thalian Hall"
+    url: https://www.thalianhall.org/about
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

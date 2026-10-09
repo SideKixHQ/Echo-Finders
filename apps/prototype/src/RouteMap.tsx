@@ -510,6 +510,59 @@ export function RouteMap({
     return () => observer.disconnect();
   }, []);
 
+  /**
+   * The control column's real top, in map pixels, or null before it has been measured.
+   *
+   * `RAIL_H` is the column on a full-size phone. On an iPhone SE the column wraps and its
+   * top is not where the constant puts it, so a rare marker snapped "10px above it" settled
+   * 6px above it instead. Measured like the two bars above; the constant is only the
+   * fallback.
+   *
+   * Also on `transitionend`: the column slides (its `bottom` animates as the player bar
+   * comes and goes), a size observer never hears about a move, and a top read mid-slide
+   * once put the marker on the column's buttons.
+   */
+  const [railTopPx, setRailTopPx] = useState<number | null>(null);
+  useEffect(() => {
+    const el = svg.current;
+    const screen = el?.closest(".screen");
+    if (!el || !screen || typeof ResizeObserver === "undefined") return;
+    let rail: Element | null = null;
+    const measure = () => {
+      if (!rail) return;
+      const r = rail.getBoundingClientRect();
+      if (r.height < 1) return;
+      const next = Math.round(r.top - el.getBoundingClientRect().top);
+      setRailTopPx((cur) => (cur !== null && Math.abs(cur - next) < 1 ? cur : next));
+    };
+    const sizes = new ResizeObserver(measure);
+    /*
+     * The column is a different element once the map has settled (it is rendered again
+     * with more buttons), so watching the first one measured a column that was no longer
+     * there: 198 tall at mount, 252 on screen. Follow whichever one is current.
+     */
+    const follow = () => {
+      const now = screen.querySelector(".rail");
+      if (now === rail) return;
+      rail?.removeEventListener("transitionend", measure);
+      sizes.disconnect();
+      rail = now;
+      if (!rail) return;
+      sizes.observe(rail);
+      sizes.observe(el);
+      rail.addEventListener("transitionend", measure);
+      measure();
+    };
+    follow();
+    const swaps = new MutationObserver(follow);
+    swaps.observe(screen, { childList: true, subtree: true });
+    return () => {
+      swaps.disconnect();
+      sizes.disconnect();
+      rail?.removeEventListener("transitionend", measure);
+    };
+  }, []);
+
   useEffect(() => {
     const el = svg.current;
     if (!el) return;
@@ -820,7 +873,7 @@ export function RouteMap({
      * unreadable pill with only the top one reachable.
      */
     const railBottom = box.h - (navH + reservedBottom + 12);
-    const railTop = railBottom - RAIL_H;
+    const railTop = railTopPx ?? railBottom - RAIL_H;
     const floor = barH + 40;
     let lastY = -Infinity;
     return shown.map((mark) => {
@@ -834,15 +887,20 @@ export function RouteMap({
        * sat nearly touching. Within 24px it lines up exactly; beyond that it is plainly its
        * own thing and keeps its true bearing.
        */
+      let snapped = false;
       if (mark.side === "right" && y + 17 > railTop - 24 && y < railBottom + 18) {
         y = railTop - 17 - 10;
+        snapped = true;
       }
       if (y - lastY < 40) y = lastY + 40;
-      y = Math.max(floor, y);
+      // A snapped plate only has to clear the top bar by the same 10px. On a short map (an
+      // iPhone SE) the column starts high enough that the usual floor would pull it 4px
+      // down onto the column, which is the nearly-touching gap the snap exists to prevent.
+      y = Math.max(snapped ? barH + 17 + 10 : floor, y);
       lastY = y;
       return { ...mark, y };
     });
-  }, [at, overview, library, stateOf, projection, box, zoom, barH, reservedBottom, navH]);
+  }, [at, overview, library, stateOf, projection, box, zoom, barH, reservedBottom, navH, railTopPx]);
 
   /**
    * One pin, drawn wherever it has been put.

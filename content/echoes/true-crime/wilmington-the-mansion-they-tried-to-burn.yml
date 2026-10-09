@@ -1,0 +1,54 @@
+# From W006 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Market Street sidewalk; restored interiors require authorized museum admission.
+# Position: DigitalNC building point 34.2361,-77.9429 (NE corner Market & 5th); moved ~17 m south to north Market St sidewalk in front of house (high confidence).
+id: wilmington-the-mansion-they-tried-to-burn
+title: "The Mansion They Tried to Burn"
+summary: "The columns still stand."
+place: "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23595, lng: -77.94285 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 73
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The columns still stand."
+script: |
+  The columns still stand. That makes it easy to miss the violence committed inside this
+  house on March 13, 1972.
+
+  The museum describes an arson attack in which gasoline was spread on floors and ignited.
+  Fire damaged plaster, woodwork, fixtures, and mirrors. The outside survived while the
+  interior needed extensive restoration.
+
+  No culprit or motive was established. Suggestions about political motives remain
+  theories, and this story does not identify anyone as responsible.
+
+  What happened afterward is visible in the building's continued life. Preservation turned
+  a damaged, empty mansion into a place where visitors can examine the work of enslaved
+  and free Black craftspeople, family history, and the restoration itself.
+
+  From the sidewalk, hold both versions in mind: the building someone tried to destroy,
+  and the building a community decided was worth keeping.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: unsolved
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-10-09"
+  contentWarning: "This echo describes an arson attack on the house. Nobody is described as hurt."
+sources:
+  - title: "Bellamy mansion suffers fire of incendiary origin"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/museum-blog/bellamy-mansion-suffers-fire-of-incendiary-origin
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Audio 1"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/audio-1.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

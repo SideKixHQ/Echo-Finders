@@ -1,0 +1,42 @@
+# From W032 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk or open museum area; downtown interpretive stop for a citywide designation.
+# Position: West sidewalk of S 2nd St at the USO entrance, ~23 m north of Orange; address point + OSM footprint (building is NW corner of 2nd & Orange) (high confidence).
+# Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
+id: wilmington-the-first-heritage-city
+title: "The First Heritage City"
+summary: "In 2020, Wilmington became the country's first American World War II Heritage City."
+place: "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Carolina"
+at: { lat: 34.23317, lng: -77.94731 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "In 2020, Wilmington became the country's first American World War II Heritage City."
+script: |
+  In 2020, Wilmington became the country's first American World War II Heritage City.
+
+  The designation recognizes a community's wartime role and its work to preserve that
+  history. It reaches beyond this building, encompassing the wider city's military,
+  industrial, and civilian contributions.
+
+  The USO makes a useful downtown place to listen because it preserves one direct part of
+  that experience: the gathering place for people in uniform and the volunteers supporting
+  them.
+
+  Look at the building before you. A national designation can sound like a distant
+  administrative honor. Here, it points back to concrete local spaces and the people who
+  used them. The title does not create the history. It asks present-day Wilmington to keep
+  that history available, examined, and connected to the city that exists now.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "World War II City"
+    publisher: "City of Wilmington"
+    url: https://www.wilmingtonnc.gov/Connect-With-Us/Community-Honors/World-War-II-City
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,46 @@
+# From W087 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Third or Princess Street sidewalk; enter only through an authorized public event or visitor process.
+# Position: NCDCR: SE corner of 3rd & Princess; hmdb Johnston Blakeley marker (postal 24 N 3rd, at 3rd & Princess) 34 14.19N 77 56.763W. (high confidence).
+id: wilmington-the-county-courthouse-on-third
+title: "The County Courthouse on Third"
+summary: "This is the late-nineteenth-century county courthouse at Third and Princess, built in 1892 to 1893."
+place: "New Hanover County Historic Courthouse, 24 North Third Street, Wilmington, North Carolina"
+at: { lat: 34.23642, lng: -77.94600 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "This is the late-nineteenth-century county courthouse at Third and Princess, built in 1892 to 1893."
+script: |
+  This is the late-nineteenth-century county courthouse at Third and Princess, built in
+  1892 to 1893.
+
+  It is not the earlier courthouse once located at Market and Third. Keeping those places
+  separate prevents two very different periods from collapsing into one story.
+
+  Look from the public sidewalk. The building's prominent scale and detailed exterior make
+  government visible in the streetscape. A courthouse is designed to gather public
+  business under an identifiable roof.
+
+  Its landmark role continues even when visitors come mainly to look at the architecture.
+  The exact address matters: history happened in particular buildings, and similar names
+  can lead you to the wrong one. This stop anchors the later county institution, while the
+  Market Street marker recalls the vanished colonial courthouse a block away.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "New Hanover County Historic Courthouse 51"
+    publisher: "New Hanover County"
+    url: https://www.nhcgov.com/Facilities/Facility/Details/New-Hanover-County-Historic-Courthouse-51
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "New hanover county"
+    publisher: "Courthouses.co"
+    url: https://courthouses.co/us-states/n/north-carolina/new-hanover-county/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

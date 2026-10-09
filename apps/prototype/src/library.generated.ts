@@ -1529,6 +1529,4734 @@ export const LIBRARY: readonly Echo[] = [
         "durationS": 90
       }
     ]
+  },
+  {
+    "id": "wilmington-a-garden-with-different-jobs",
+    "title": "A Garden with Different Jobs",
+    "summary": "These gardens have different parts with different jobs.",
+    "point": {
+      "at": {
+        "lat": 34.23511,
+        "lng": -77.94656
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Burgwin-Wright House gardens, 224 Market Street, Wilmington, North Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Gardens",
+        "publisher": "Burgwin-Wright House and Gardens",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.burgwinwrighthouse.org/gardens"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "These gardens have different parts with different jobs. The museum identifies an\norchard, a kitchen garden, a rose garden, and an area recalling the historical use of\nmedicinal herbs.\n\nPeople planted useful things as well as beautiful things. A garden could help supply a\nhousehold, while another part offered a pleasant place to look and walk.\n\nStay on the paths with your grown-up. Do not pick or taste anything; a historical garden\nis a place to explore with your eyes.\n\nTry spotting the difference between a plant grown for its shape and an area arranged for\na practical purpose. The present gardens were designed to help visitors think about an\nearlier period. Their story shows that outdoor space, like a house, can contain several\nkinds of work.\n",
+    "teaser": "These gardens have different parts with different jobs.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/wilmington-a-garden-with-different-jobs",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-government-before-independence",
+    "title": "A Government Before Independence",
+    "summary": "The old courthouse at this corner housed meetings of the Wilmington Council of Safety.",
+    "point": {
+      "at": {
+        "lat": 34.23569,
+        "lng": -77.94591
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old Courthouse historical marker, Market and Third streets, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old courthouse d 2",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2023/12/08/old-courthouse-d-2"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The old courthouse at this corner housed meetings of the Wilmington Council of Safety.\nIts members helped plan a political system to replace colonial authority.\n\nOpposition to Britain was only one part of the task. A different government would\nrequire organization: people agreeing on how public power could operate after the old\narrangements were challenged.\n\nThe building is gone, so let the intersection anchor the account rather than imagining a\nsurviving meeting room.\n\nStand safely beside the marker and look at the streets crossing here. Public life\nrequires connections as well as declarations. The council's work helped connect local\nresistance with the possibility of a new state government. On this site, the future was\nsomething people had to discuss and arrange, not merely announce.\n",
+    "teaser": "The old courthouse at this corner housed meetings of the Wilmington Council of Safety.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-government-before-independence",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-house-built-to-catch-the-air",
+    "title": "A House Built to Catch the Air",
+    "summary": "Look above the columns to the small structure at the top of the mansion.",
+    "point": {
+      "at": {
+        "lat": 34.23591,
+        "lng": -77.94281
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The place",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/the-place.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look above the columns to the small structure at the top of the mansion. Its usefulness\nwent beyond the view.\n\nBellamy's design included a belvedere that helped ventilate the house. The museum also\nnotes the deliberate placement of the kitchen to receive early daylight. The architects\nconsidered climate and daily work along with appearance.\n\nBuilt between 1859 and 1861, the house combined Greek Revival and Italianate elements.\nThose labels can sound abstract until you notice how the building meets its\nsurroundings: shade, height, openings, and the movement of air.\n\nFrom this sidewalk, let the building become a practical invention as well as an\nexpensive residence. Beauty and function shared the same plans. The comfort it offered,\nhowever, depended on skilled construction and the labor of people whose freedom was\nsharply unequal.\n",
+    "teaser": "Look above the columns to the small structure at the top of the mansion.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-house-built-to-catch-the-air",
+        "durationS": 70
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-little-town-in-the-1950s",
+    "title": "A Little Town in the 1950s",
+    "summary": "The museum's big model layout takes you into the early 1950s, when steam locomotives and diesel trains shared the railroad world.",
+    "point": {
+      "at": {
+        "lat": 34.24174,
+        "lng": -77.95054
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Wilmington Railroad Museum, 505 Nutt Street, Wilmington, North Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 71,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Model railroads",
+        "publisher": "Wilmington Railroad Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wrrm.org/model-railroads.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The museum's big model layout takes you into the early 1950s, when steam locomotives and\ndiesel trains shared the railroad world.\n\nIts builders used coastal North Carolina history to create towns, tracks, industries,\nand moving trains. Parts of Wilmington are represented in miniature.\n\nFind a safe place beside the layout and look closely. A model is not the actual town\nshrunk by magic. People chose what to include and built the pieces to help tell a story.\n\nTry following one train with your eyes. Where does it go, and what does it pass? Then\nlook at the tiny buildings around it. The train needs the town, and the town needs\nconnections. This small world helps you notice relationships that can be harder to see\nwhen you are standing inside the real city.\n",
+    "teaser": "The museum's big model layout takes you into the early 1950s, when steam locomotives and diesel trains shared the railroad world.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/wilmington-a-little-town-in-the-1950s",
+        "durationS": 71
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-museum-begins-with-one-case",
+    "title": "A Museum Begins with One Case",
+    "summary": "This museum did not begin with a building full of trains.",
+    "point": {
+      "at": {
+        "lat": 34.24166,
+        "lng": -77.95056
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Wilmington Railroad Museum, 505 Nutt Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "History",
+        "publisher": "Wilmington Railroad Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wrrm.org/history.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This museum did not begin with a building full of trains. Its early effort included a\nsingle display case and a table at Riverfest.\n\nThe foundation was chartered in 1979. Hazel Morse, Gerda Wooten, and Marguerite James\nled the effort to preserve Wilmington's railroad history after the railroad's major\ndeparture.\n\nA collection needed somewhere to grow, and the work expanded from those small\nbeginnings. The current museum is the outcome, not the setting of every early exhibit.\n\nStand near its entrance and consider how easily ordinary equipment becomes disposable\nonce a company moves on. Someone has to recognize its future value before that happens.\nThese organizers made the first modest display into a commitment: the railroad might\nleave, but its Wilmington story would still have a place.\n",
+    "teaser": "This museum did not begin with a building full of trains.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-museum-begins-with-one-case",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-new-home-for-old-evidence",
+    "title": "A New Home for Old Evidence",
+    "summary": "Cape Fear Museum began in 1898.",
+    "point": {
+      "at": {
+        "lat": 34.23882,
+        "lng": -77.9469
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Cape Fear Museum, 230 Grace Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Detail",
+        "publisher": "Cape Fear Museum of History and Science",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://capefearmuseum.com/m/newsflash/Home/Detail/1159"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Cape Fear Museum began in 1898. In August 2026, it opened a new downtown home on Grace\nStreet.\n\nThe county's opening announcement describes more than four hundred artifacts alongside\nhistory and science galleries. The move placed the museum and a new main library on the\nsame downtown block.\n\nYou are at the new building, not the museum's earlier Market Street location. Its age\nbelongs to the institution; the structure before you is a recent chapter.\n\nThat contrast is the point of the stop. Old evidence does not need an old building to\nremain valuable. It needs care, context, and people willing to examine it. The museum's\nmove brings a long-running collection into a new setting where Wilmington can keep\nasking how its past connects with the present.\n",
+    "teaser": "Cape Fear Museum began in 1898.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-new-home-for-old-evidence",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-real-riverwalk-an-invented-romance",
+    "title": "A Real Riverwalk, an Invented Romance",
+    "summary": "Wilmington's tourism authority identifies this riverfront area as the Dawson's Creek location of Andie and Pacey's first kiss.",
+    "point": {
+      "at": {
+        "lat": 34.2359,
+        "lng": -77.94998
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Riverwalk opposite the Alton Lennon Federal Building, Water and Market streets, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Famous film and tv sites",
+        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonandbeaches.com/things-to-do/tours-and-cruises/famous-film-and-tv-sites/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Wilmington's tourism authority identifies this riverfront area as the Dawson's Creek\nlocation of Andie and Pacey's first kiss.\n\nThe romance was fiction. The place where the scene was filmed is real, and people can\nreturn to it after the cameras and actors have gone.\n\nStand on the public Riverwalk and look at what a production gained here: water, space,\nand a city backdrop that could become part of another town's screen identity.\n\nThat transformation is part of Wilmington's arts history. Filmmaking asks a real place\nto play a role. Once the episode reaches an audience, the setting can hold two meanings\nat once: an ordinary local walkway and a remembered moment in a television story. You\nare standing in the overlap.\n",
+    "teaser": "Wilmington's tourism authority identifies this riverfront area as the Dawson's Creek location of Andie and Pacey's first kiss.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-real-riverwalk-an-invented-romance",
+        "durationS": 66
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-residence-becomes-a-museum",
+    "title": "A Residence Becomes a Museum",
+    "summary": "Saving a building is only the beginning.",
+    "point": {
+      "at": {
+        "lat": 34.2355,
+        "lng": -77.94645
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The museum",
+        "publisher": "Burgwin-Wright House and Gardens",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.burgwinwrighthouse.org/the-museum"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Saving a building is only the beginning. Someone must decide what people will learn\ninside it.\n\nThe Colonial Dames acquired the Burgwin-Wright House in 1937. Its museum history\ndescribes decades of restoration and interpretation, including school visits and work on\nthe grounds.\n\nA residence built for private life gradually became a public encounter with colonial\nWilmington. Rooms, objects, jail remains, and gardens could be examined together instead\nof disappearing into separate collections.\n\nLook at the entrance. The change from home to museum altered who could cross that\nthreshold and why. Visitors now arrive to ask questions that the original owners did not\nintend the building to answer: about trade, confinement, domestic labor, and whose lives\nare easiest to recover. Preservation makes those questions possible; interpretation\nkeeps them open.\n",
+    "teaser": "Saving a building is only the beginning.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-residence-becomes-a-museum",
+        "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-welcome-with-teeth",
+    "title": "A Welcome with Teeth",
+    "summary": "Paul Hill's Southern Hospitality takes the shape of an enormous Venus flytrap.",
+    "point": {
+      "at": {
+        "lat": 34.2353,
+        "lng": -77.94992
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Southern Hospitality sculpture, downtown Riverwalk near the foot of Market Street, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Discover outdoor art in wilmington nc",
+        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonandbeaches.com/blog/post/discover-outdoor-art-in-wilmington-nc/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Paul Hill's Southern Hospitality takes the shape of an enormous Venus flytrap. The\ntourism authority describes the sculpture as metal and glass, about fifteen feet high.\n\nIts title creates a playful tension. Hospitality promises welcome; the plant's trap\nsuggests a very different relationship with its visitors.\n\nThe artwork does not need to move to make that joke work. Its scale changes a small,\nlocally associated plant into something that can meet your gaze on the waterfront.\n\nStand back far enough to see the silhouette. Then notice the materials: manufactured\nsurfaces representing a living organism. A public sculpture can make a familiar place\nfeel briefly strange. Here, an emblem of the region becomes a greeting you are unlikely\nto mistake for an ordinary street sign.\n",
+    "teaser": "Paul Hill's Southern Hospitality takes the shape of an enormous Venus flytrap.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-welcome-with-teeth",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-alex-manlys-voice",
+    "title": "Alex Manly's Voice",
+    "summary": "Alex Manly edited the Daily Record, Wilmington's Black-owned newspaper.",
+    "point": {
+      "at": {
+        "lat": 34.2296,
+        "lng": -77.9455
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Alex Manly historical marker, South Third Street between Nun and Church streets, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Alex manly 1866 1944 d 103",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2023/12/11/alex-manly-1866-1944-d-103"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Alex Manly edited the Daily Record, Wilmington's Black-owned newspaper. In 1898, a white\nsupremacist campaign targeted his writing and made him a focus of threats.\n\nHe fled before the mob burned the newspaper's building during the coup. His departure\nwas a response to danger, not an admission that the attackers' claims were true.\n\nThis marker honors him near downtown's historic streets. The press building stood\nelsewhere, on Seventh Street.\n\nPause by his name. A newspaper editor works to make words public; a campaign of\nintimidation works to make that public voice disappear. Manly's story connects both\nacts. The paper's office was destroyed, but historical records preserve his identity and\nthe political attack directed against him. The marker returns a name to the city's\nvisible memory.\n",
+    "teaser": "Alex Manly edited the Daily Record, Wilmington's Black-owned newspaper.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-alex-manlys-voice",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-art-in-the-old-lodge",
+    "title": "Art in the Old Lodge",
+    "summary": "In 1962, a community effort established St.",
+    "point": {
+      "at": {
+        "lat": 34.23268,
+        "lng": -77.9476
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Former St. John's Art Museum complex, now Children's Museum, 116 Orange Street, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 64,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "History",
+        "publisher": "Cameron Art Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://cameronartmuseum.org/history/"
+      },
+      {
+        "title": "Mission and history",
+        "publisher": "Play Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.playwilmington.org/mission-and-history"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge\non this block.\n\nArtists and supporters wanted Wilmington to have a place to encounter visual art. The\ninstitution grew into the museum that later moved to its present Cameron Art Museum\nlocation outside downtown.\n\nThe downtown buildings gained another use: the Children's Museum acquired the complex in\n2004. You are at the earlier art-museum setting, not Cameron Art Museum today.\n\nLook at the old buildings from Orange Street. Their cultural work has changed, but the\nimpulse remains recognizable: make spaces where people can look, learn, and try\nsomething new. The art gallery's beginnings belong here, even though the institution\ncontinued its journey elsewhere.\n",
+    "teaser": "In 1962, a community effort established St.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-art-in-the-old-lodge",
+        "durationS": 64
+      }
+    ]
+  },
+  {
+    "id": "wilmington-bricks-that-crossed-two-churches",
+    "title": "Bricks That Crossed Two Churches",
+    "summary": "The present church replaced an earlier building, but some of the earlier church came with it.",
+    "point": {
+      "at": {
+        "lat": 34.23547,
+        "lng": -77.94572
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. James Episcopal Church, 25 South Third Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Our history",
+        "publisher": "St. James Parish",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.stjamesp.org/our-history/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The present church replaced an earlier building, but some of the earlier church came\nwith it.\n\nSt. James's history says bricks from the first church were reused after its demolition\nin 1839. The new church was consecrated in 1840. It also records that the original\nbuilding had used bricks brought to the port as ship ballast.\n\nThose details turn a wall into a sequence of journeys: material arriving by water,\nserving one building, then serving another.\n\nLook from the sidewalk rather than touching or inspecting the masonry. You cannot\nidentify every brick's past by sight. The documented reuse is enough to change how you\nread the surface. What seems like one architectural moment may contain material from\nanother. Wilmington rebuilt here without starting entirely from nothing.\n",
+    "teaser": "The present church replaced an earlier building, but some of the earlier church came with it.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-bricks-that-crossed-two-churches",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-calling-home-before-a-pocket-phone",
+    "title": "Calling Home Before a Pocket Phone",
+    "summary": "Imagine needing to call home without a phone in your pocket.",
+    "point": {
+      "at": {
+        "lat": 34.23322,
+        "lng": -77.94729
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "July 4th open house",
+        "publisher": "Wilmington Community Arts",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://wilmingtoncommunityarts.org/classes-and-events/july-4th-open-house/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Imagine needing to call home without a phone in your pocket. This museum has a restored\nwartime-era telephone booth with a vintage phone inside.\n\nThe booth gives you a small space where one person could stand or sit and make a call. A\npublic telephone was something you went to, rather than something that followed you\neverywhere.\n\nLook at the phone with your grown-up. It may have parts that seem unfamiliar because the\nway people placed calls has changed.\n\nThe object belongs in a building that welcomed people far from home during the Second\nWorld War. We cannot say who used this particular phone for every conversation. We can\nunderstand why a call mattered: a familiar voice could connect someone here with people\nwaiting somewhere else.\n",
+    "teaser": "Imagine needing to call home without a phone in your pocket.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/wilmington-calling-home-before-a-pocket-phone",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-chestnut-streets-wooden-church",
+    "title": "Chestnut Street's Wooden Church",
+    "summary": "Wilmington identifies this 1858 church as an important example of Carpenter Gothic architecture with Italianate influences.",
+    "point": {
+      "at": {
+        "lat": 34.2379,
+        "lng": -77.9402
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Chestnut Street Presbyterian Church, 712 Chestnut Street, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 65,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Local Historic Landmarks",
+        "publisher": "City of Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Wilmington identifies this 1858 church as an important example of Carpenter Gothic\narchitecture with Italianate influences.\n\nThe city's account also connects it with one of Wilmington's early Black congregations.\nIts significance therefore belongs to both architectural form and community life.\n\nListen from the public sidewalk. Gothic ideas did not require stone walls and enormous\ncathedrals to become recognizable. Builders could interpret them in a smaller wooden\nstructure suited to a different setting.\n\nThe result asks you to look beyond size when deciding what counts as a landmark. A\nmodest building can carry a substantial history. Here, a continuing religious community\nand a distinctive design give the structure meaning together. Its value lies in that\nrelationship, not merely in its age.\n",
+    "teaser": "Wilmington identifies this 1858 church as an important example of Carpenter Gothic architecture with Italianate influences.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-chestnut-streets-wooden-church",
+        "durationS": 65
+      }
+    ]
+  },
+  {
+    "id": "wilmington-claude-howell-asks-for-more-art",
+    "title": "Claude Howell Asks for More Art",
+    "summary": "Claude Howell helped advocate for a stronger visual-arts life in Wilmington.",
+    "point": {
+      "at": {
+        "lat": 34.23264,
+        "lng": -77.94756
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Former St. John's Art Museum complex, now Children's Museum, 116 Orange Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "History",
+        "publisher": "Cameron Art Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://cameronartmuseum.org/history/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Claude Howell helped advocate for a stronger visual-arts life in Wilmington. In 1962, he\nsupported the movement that established St. John's Art Gallery here.\n\nThe Cameron Art Museum's history records his call for the community to encounter\nimportant art from the past and present. He wanted local audiences to have wider\nopportunities to look and learn.\n\nWe do not need to reproduce his letter to understand the action behind it. Advocacy\nhelped turn a hope into an institution.\n\nLook at the earlier museum complex from Orange Street. Howell's role connected making\nart with building an audience for it. A city's cultural life depends on both. The\ngallery gave that argument rooms and a public address, allowing an artistic ambition to\nbecome something visitors could actually enter.\n",
+    "teaser": "Claude Howell helped advocate for a stronger visual-arts life in Wilmington.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-claude-howell-asks-for-more-art",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-cornelius-harnett-at-the-council-table",
+    "title": "Cornelius Harnett at the Council Table",
+    "summary": "Cornelius Harnett helped lead revolutionary political organization in the Cape Fear region.",
+    "point": {
+      "at": {
+        "lat": 34.23567,
+        "lng": -77.94592
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old Courthouse marker, Market and Third streets, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old courthouse d 2",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2023/12/08/old-courthouse-d-2"
+      },
+      {
+        "title": "Cornelius harnett 1723 1781 d 1",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2023/12/08/cornelius-harnett-1723-1781-d-1"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Cornelius Harnett helped lead revolutionary political organization in the Cape Fear\nregion. The Wilmington Council of Safety met at the old courthouse on this corner.\n\nThat work involved more than opposing Britain. A new political system required people to\ndiscuss how authority would operate after the old one was challenged.\n\nThe courthouse is gone, but the site gives Harnett's role a local setting. This is an\nassociated meeting place, not a claim that his entire career unfolded at one\nintersection.\n\nStand beside the marker and consider the difference between declaring a principle and\narranging a government. Both require action. Harnett's public life connected those\ndemands, helping the region move from resistance toward new institutions. The corner\npreserves the setting of that practical political work.\n",
+    "teaser": "Cornelius Harnett helped lead revolutionary political organization in the Cape Fear region.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-cornelius-harnett-at-the-council-table",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-eight-buildings-one-new-use",
+    "title": "Eight Buildings, One New Use",
+    "summary": "The Cotton Exchange is described as a complex of eight interconnected historic buildings.",
+    "point": {
+      "at": {
+        "lat": 34.23946,
+        "lng": -77.94929
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Cotton Exchange, 321 North Front Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Journey into the haunted depths of old wilmington",
+        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/"
+      },
+      {
+        "title": "Central business district",
+        "publisher": "Downtown Business Alliance Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://dbawilmington.org/downtown/central-business-district/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The Cotton Exchange is described as a complex of eight interconnected historic\nbuildings. That explains why it does not behave like one purpose-built shopping center.\n\nIts present use asks visitors to move through spaces that began with different\ncommercial roles. Floors and passageways preserve some of that uneven history.\n\nStand where a public passage turns or changes level. The interesting question is not\nsimply how old the brick might be. It is how several old buildings were made useful\ntogether.\n\nThis kind of reuse keeps the city legible. You can buy something in a contemporary shop\nand still notice that the setting was shaped by an earlier port economy. The present\nactivity does not erase the past; it gives you a reason to encounter it at walking\nspeed.\n",
+    "teaser": "The Cotton Exchange is described as a complex of eight interconnected historic buildings.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-eight-buildings-one-new-use",
+        "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "wilmington-elisabeth-chant-makes-a-studio",
+    "title": "Elisabeth Chant Makes a Studio",
+    "summary": "Elisabeth Chant made a studio in the old Hart Wine House on Cottage Lane.",
+    "point": {
+      "at": {
+        "lat": 34.23378,
+        "lng": -77.94505
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Cottage Lane near the historic Hart Wine House, between Dock and Orange streets, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "History",
+        "publisher": "Cameron Art Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://cameronartmuseum.org/history/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Elisabeth Chant made a studio in the old Hart Wine House on Cottage Lane. There she\ntaught and influenced artists who helped shape Wilmington's visual-arts community.\n\nAmong her students were Claude Howell and Henry Jay MacMillan. The important thing at\nthis stop is the local relationship: a teacher, a working space, and people learning to\nsee and make art.\n\nStay on the public lane. The studio's history does not grant access to today's private\nproperty.\n\nThe small setting helps explain the scale of cultural beginnings. A teacher did not need\nan institution with a monumental facade to have a lasting effect. Chant's studio made\nroom for practice and exchange. Later artistic careers carried that influence beyond the\nlane where some of their learning began.\n",
+    "teaser": "Elisabeth Chant made a studio in the old Hart Wine House on Cottage Lane.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-elisabeth-chant-makes-a-studio",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-elizabeth-savage-latimers-wilmington",
+    "title": "Elizabeth Savage Latimer's Wilmington",
+    "summary": "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St.",
+    "point": {
+      "at": {
+        "lat": 34.23361,
+        "lng": -77.9461
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Latimer House, 126 South Third Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "About",
+        "publisher": "Latimer House Museum, Lower Cape Fear Historical Society",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://latimerhouse.org/about/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St.\nJames in 1848. The house built four years later became their family residence.\n\nHer local background complicates the idea of the house as simply the achievement of a\nmerchant who arrived from elsewhere. Family relationships tied it to a city that already\nhad its own networks and histories.\n\nStand outside the home and consider what is left unnamed when a household is introduced\nonly by its male owner. A marriage and a family are not incidental to a residence's\nmeaning.\n\nElizabeth's story supplies a different connection between the building and Wilmington.\nThe house represented shared family life, shaped by her place in the community as well\nas her husband's commercial career.\n",
+    "teaser": "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-elizabeth-savage-latimers-wilmington",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-ellen-bellamys-long-view",
+    "title": "Ellen Bellamy's Long View",
+    "summary": "Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back with the Tide.",
+    "point": {
+      "at": {
+        "lat": 34.23598,
+        "lng": -77.94274
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Ellen lina stewards of the bellamy house",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/museum-blog/ellen-lina-stewards-of-the-bellamy-house"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back with\nthe Tide. Her recollections became one source for understanding this household.\n\nA memoir gives us a person's perspective, not an impartial view of everyone who shared\nthe setting. Her position within the family shaped what she noticed and how she\ndescribed it.\n\nStand before the mansion and consider the reach of one life. A house built before the\nCivil War could still be remembered by a resident in the twentieth century.\n\nEllen's memories help connect those eras, but the museum's wider story also requires\nrecords of enslaved workers, craftspeople, and others. Her voice is valuable when heard\nas one voice among the people whose lives belonged to this place.\n",
+    "teaser": "Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back with the Tide.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-ellen-bellamys-long-view",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-fords-other-opera-house",
+    "title": "Ford's Other Opera House",
+    "summary": "John T.",
+    "point": {
+      "at": {
+        "lat": 34.23766,
+        "lng": -77.9457
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Thalian Hall, 310 Chestnut Street, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "About",
+        "publisher": "Thalian Hall",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.thalianhall.org/about"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "John T. Ford, associated with Ford's Theatre in Washington, leased this Wilmington\ntheater from 1867 to 1871. During his tenure, it was called the Opera House.\n\nThe connection can surprise visitors who know Ford's name only through Abraham Lincoln's\nassassination. This story concerns his theatrical business in Wilmington, not a claim\nthat the Washington crime happened here.\n\nNames and management changed while the local building continued hosting entertainment.\nIts history reaches through people whose careers crossed several cities.\n\nLook at the entrance and imagine a playbill announcing the Opera House rather than\nThalian Hall. A different title could mark a different business strategy without moving\nthe stage. The theater's long life includes those shifts: familiar walls, new operators,\nand another invitation to an audience.\n",
+    "teaser": "John T.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-fords-other-opera-house",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-fourteen-rooms-on-third-street",
+    "title": "Fourteen Rooms on Third Street",
+    "summary": "The Latimer house was built in 1852 for Zebulon and Elizabeth Latimer.",
+    "point": {
+      "at": {
+        "lat": 34.23355,
+        "lng": -77.94605
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Latimer House, 126 South Third Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "About",
+        "publisher": "Latimer House Museum, Lower Cape Fear Historical Society",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://latimerhouse.org/about/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The Latimer house was built in 1852 for Zebulon and Elizabeth Latimer. Its fourteen\nrooms offered an unusually substantial home in the growing port city.\n\nThe museum identifies the design as Italianate, with symmetry and a central-hall\narrangement. What looks like a single handsome facade held a complicated household\nbehind it.\n\nStand where you can see the windows without blocking the sidewalk. Their orderly spacing\ninvites you to read the house as a finished composition. Daily life would have been less\norderly: family responsibilities, domestic work, business pressures, and change across\ngenerations.\n\nThe museum's surviving furnishings and objects connect that exterior pattern to\nparticular lives. The building gives them a setting. From outside, the first clue is\nscale: enough rooms to make a family home a small working world.\n",
+    "teaser": "The Latimer house was built in 1852 for Zebulon and Elizabeth Latimer.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-fourteen-rooms-on-third-street",
+        "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "wilmington-fred-in-the-storeroom",
+    "title": "Fred in the Storeroom",
+    "summary": "The Cotton Exchange has the right ingredients for a ghost story: connected old buildings, changing levels, and passages where somebody…",
+    "point": {
+      "at": {
+        "lat": 34.23979,
+        "lng": -77.94958
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Cotton Exchange, Walnut Street entrance near 10 Walnut Street, Wilmington, North Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 74,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Haunted wilmington north carolina",
+        "publisher": "Drugstore Divas",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.drugstoredivas.net/haunted-wilmington-north-carolina/"
+      },
+      {
+        "title": "Journey into the haunted depths of old wilmington",
+        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The Cotton Exchange has the right ingredients for a ghost story: connected old\nbuildings, changing levels, and passages where somebody can disappear from view.\n\nA published account of a Wilmington ghost tour tells of Fred, a tall, dark-haired\napparition associated with Paddy's Hollow. In that version, a manager encountered him in\na storage room. He seemed ready to offer help, then vanished.\n\nThe encounter is a reported legend, not a verified event. We cannot establish that the\nmanager saw a ghost, or identify an actual dead person behind the name Fred.\n\nWhat makes the story memorable is its almost ordinary beginning. A person appears in a\nworkplace and behaves like someone who belongs there. Only the ending breaks the\npattern. From the public entrance, imagine the moment between recognizing a stranger and\nrealizing there is nobody left to recognize.\n",
+    "teaser": "The Cotton Exchange has the right ingredients for a ghost story: connected old buildings, changing levels, and passages where somebody…",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-fred-in-the-storeroom",
+        "durationS": 74
+      }
+    ]
+  },
+  {
+    "id": "wilmington-giblem-lodge-holds-a-community",
+    "title": "Giblem Lodge Holds a Community",
+    "summary": "Built in 1873, Giblem Lodge is a surviving place of Black community organization in Wilmington.",
+    "point": {
+      "at": {
+        "lat": 34.23697,
+        "lng": -77.93956
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Giblem Lodge, 19 North Eighth Street, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Local Historic Landmarks",
+        "publisher": "City of Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Built in 1873, Giblem Lodge is a surviving place of Black community organization in\nWilmington. The city's landmark account emphasizes its roles as a gathering space and\nsource of support.\n\nA lodge building can be easy to overlook beside more famous mansions. Yet institutions\nlike this helped people assemble, maintain networks, and exercise independence.\n\nStay on the public sidewalk. You can recognize that history without entering an active\norganization's space.\n\nThe important architectural fact is survival in place. A building associated with\ncollective activity remains here to counter the idea that Wilmington's past belonged\nonly to prominent individual owners. This landmark preserves evidence of people\norganizing for one another. Its walls held a community, and its continued presence gives\nthat community's history a downtown address.\n",
+    "teaser": "Built in 1873, Giblem Lodge is a surviving place of Black community organization in Wilmington.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-giblem-lodge-holds-a-community",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-guy-nixon-and-the-water-tank",
+    "title": "Guy Nixon and the Water Tank",
+    "summary": "Guy Nixon was an enslaved member of the Bellamy household.",
+    "point": {
+      "at": {
+        "lat": 34.23599,
+        "lng": -77.94295
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Museum blog",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/museum-blog"
+      },
+      {
+        "title": "The people",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/the-people.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Guy Nixon was an enslaved member of the Bellamy household. The museum discusses a family\nrecollection of his work pumping water from the cistern to a tank high in the house.\n\nThat practical task supported the comfort of people who controlled his labor. It should\nnot be turned into a nostalgic picture of a happy household helper.\n\nLook upward from the public sidewalk. Water needed to move against gravity before it\ncould serve the rooms above. The building's conveniences relied on repeated human\neffort.\n\nNixon's story makes a system personal. A tank and a pump can sound like technical\ndetails; naming the person required to operate them changes the account. The mansion's\ndaily life depended on work, and that work took place within slavery's restrictions on\nfreedom.\n",
+    "teaser": "Guy Nixon was an enslaved member of the Bellamy household.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-guy-nixon-and-the-water-tank",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-hannah-block-at-the-piano",
+    "title": "Hannah Block at the Piano",
+    "summary": "Hannah Block entertained wartime service members by singing and playing piano.",
+    "point": {
+      "at": {
+        "lat": 34.23309,
+        "lng": -77.94726
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "85th anniversary celebration",
+        "publisher": "Wilmington Community Arts",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://wilmingtoncommunityarts.org/classes-and-events/85th-anniversary-celebration/"
+      },
+      {
+        "title": "Museum",
+        "publisher": "Wilmington Community Arts",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://wilmingtoncommunityarts.org/museum/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Hannah Block entertained wartime service members by singing and playing piano. The\nbuilding that carries her name preserves that connection, including a piano identified\nwith her performances.\n\nThe center was rededicated in her honor in 2006. A volunteer's contribution became part\nof the place's public identity.\n\nIf you can visit the open museum area, look at the instrument without touching it. Its\nsignificance comes from use: someone sat here to offer music and company during a\ndifficult period.\n\nBlock's story brings a large wartime account down to a human scale. An evening's\nentertainment required a person willing to provide it. The name over the door remembers\nthat practical generosity, while the preserved instrument gives it a concrete form you\ncan see.\n",
+    "teaser": "Hannah Block entertained wartime service members by singing and playing piano.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-hannah-block-at-the-piano",
+        "durationS": 66
+      }
+    ]
+  },
+  {
+    "id": "wilmington-harry-fordens-name-on-the-bridge",
+    "title": "Harry Forden's Name on the Bridge",
+    "summary": "In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who worked to revive North Fourth Street after the…",
+    "point": {
+      "at": {
+        "lat": 34.2436,
+        "lng": -77.9429
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Harry Forden Bridge, North Sixth Street between Brunswick and Campbell streets, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Local Historic Landmarks",
+        "publisher": "City of Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who\nworked to revive North Fourth Street after the Atlantic Coast Line's departure.\n\nThe bridge itself is older. The new name added a person's work to an existing piece of\ninfrastructure.\n\nListen at a safe public approach rather than entering railroad property below. From\nhere, the connection is visible: a crossing links streets, while a community advocate\nworks to reconnect a neighborhood with opportunity.\n\nA commemorative name can become so familiar that its meaning disappears into directions.\nThis stop restores the person behind it. Forden's public work concerned the area's\nfuture, not merely its old buildings. The city attached that effort to a structure\npeople could continue to encounter in everyday life.\n",
+    "teaser": "In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who worked to revive North Fourth Street after the…",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-harry-fordens-name-on-the-bridge",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-henry-bacons-smaller-building",
+    "title": "Henry Bacon's Smaller Building",
+    "summary": "The MacRae house was built in 1901 and designed by Henry Bacon, the architect later associated with the Lincoln Memorial in Washington.",
+    "point": {
+      "at": {
+        "lat": 34.2347,
+        "lng": -77.94588
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Donald MacRae House, St. James offices near Third and Dock streets, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Our history",
+        "publisher": "St. James Parish",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.stjamesp.org/our-history/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The MacRae house was built in 1901 and designed by Henry Bacon, the architect later\nassociated with the Lincoln Memorial in Washington.\n\nSt. James acquired the house in 1955, and it serves parish offices. Its local history\ntherefore combines domestic design with a later institutional role.\n\nStand on the public sidewalk. The Washington connection is about the architect, not a\nclaim that this house was a model for the memorial.\n\nA famous commission can overshadow an architect's smaller work. This stop restores the\nsmaller scale: rooms intended for daily life rather than a national monument. Bacon's\ncareer reached both kinds of building. Downtown Wilmington retains a place where his\ndesign work met an ordinary urban household and, later, the needs of a parish.\n",
+    "teaser": "The MacRae house was built in 1901 and designed by Henry Bacon, the architect later associated with the Lincoln Memorial in Washington.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-henry-bacons-smaller-building",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-henry-taylors-skilled-hands",
+    "title": "Henry Taylor's Skilled Hands",
+    "summary": "Henry Taylor was a carpenter and builder who worked on the Bellamy project.",
+    "point": {
+      "at": {
+        "lat": 34.23593,
+        "lng": -77.94276
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The people",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/the-people.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Henry Taylor was a carpenter and builder who worked on the Bellamy project. His career\ncontinued after emancipation and included other Wilmington buildings and community\nactivity.\n\nThe museum identifies him among the Black craftspeople whose skill made the mansion\npossible. The owner's surname on the building can otherwise make the builders disappear\nfrom its story.\n\nLook at the exterior from the sidewalk. Plans only become walls, floors, and finished\ndetails when people know how to execute them.\n\nTaylor's work reminds us to connect an impressive residence with the expertise it\nrequired. His name belongs in the account of this place, alongside its architect and\nowners. A building can preserve craftsmanship for generations while concealing the\ncraftsperson. Historical research makes the person visible again.\n",
+    "teaser": "Henry Taylor was a carpenter and builder who worked on the Bellamy project.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-henry-taylors-skilled-hands",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-j-allen-kirk-kept-a-record",
+    "title": "J. Allen Kirk Kept a Record",
+    "summary": "J.",
+    "point": {
+      "at": {
+        "lat": 34.24137,
+        "lng": -77.94687
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "J. Allen Kirk marker, Third and Red Cross streets, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "J allen kirk d 122",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2023/12/12/j-allen-kirk-d-122"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "J. Allen Kirk came to Wilmington as a Baptist pastor in 1897. The following year, the\ncoup forced him to seek safety.\n\nHe later published an account of the violence and his escape. That record preserves the\nperspective of a Black community leader who experienced the danger directly.\n\nHistorians disagree on some details of his route and timing. His account should be read\nas testimony, with its particular viewpoint, rather than treated as an all-seeing\ndescription of every event.\n\nListen beside the marker. Kirk survived the attempt to silence and drive out people like\nhim, then made a written record. His story demonstrates another form of resistance:\npreserving an experience so later generations would have evidence beyond the version\noffered by those who seized power.\n",
+    "teaser": "J.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-j-allen-kirk-kept-a-record",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-james-posts-practical-design",
+    "title": "James Post's Practical Design",
+    "summary": "James F.",
+    "point": {
+      "at": {
+        "lat": 34.23603,
+        "lng": -77.94281
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The place",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/the-place.html"
+      },
+      {
+        "title": "Audio 1",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/audio-1.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "James F. Post designed the Bellamy mansion with assistant architect Rufus Bunnell. Their\nwork had to turn a wealthy client's ambitions into a building that could function in\nWilmington's climate.\n\nThe museum points to deliberate choices involving daylight and ventilation. Architecture\nhere was a practical arrangement as well as a display of status.\n\nFrom the sidewalk, trace the building upward. Different parts serve different purposes,\neven when the whole facade looks like one confident gesture.\n\nPost's name gives the design a human author. The house did not simply emerge from a\nfashionable style; people made choices about proportions, rooms, and use. Those choices\nstill shape what you can see. The builders' labor then transformed the design into the\nsurviving structure before you.\n",
+    "teaser": "James F.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-james-posts-practical-design",
+        "durationS": 66
+      }
+    ]
+  },
+  {
+    "id": "wilmington-joshua-wright-buys-a-downtown-home",
+    "title": "Joshua Wright Buys a Downtown Home",
+    "summary": "Joshua Grainger Wright purchased this house in 1799.",
+    "point": {
+      "at": {
+        "lat": 34.2354,
+        "lng": -77.94649
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Family timeline",
+        "publisher": "Burgwin-Wright House and Gardens",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.burgwinwrighthouse.com/family-timeline"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Joshua Grainger Wright purchased this house in 1799. His family supplied the second\nsurname by which the museum is known today.\n\nWright became a judge, and the house entered a new household's history. Its earlier\nconnection with John Burgwin remained in the building even as ownership changed.\n\nStand at the corner and listen to the two names together: Burgwin and Wright. A compound\nname can compress decades into something that sounds like a single identity.\n\nThe purchase was a turning point rather than a minor footnote. A new owner meant new\nfamily routines and later adaptations, while the old jail remains stayed underneath.\nWright's arrival shows how a landmark accumulates its identity. The building survived\none owner by becoming meaningful to another.\n",
+    "teaser": "Joshua Grainger Wright purchased this house in 1799.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-joshua-wright-buys-a-downtown-home",
+        "durationS": 66
+      }
+    ]
+  },
+  {
+    "id": "wilmington-listening-behind-the-jail-walls",
+    "title": "Listening Behind the Jail Walls",
+    "summary": "The elegant house above you was built in 1770 over remains of Wilmington's earlier jail.",
+    "point": {
+      "at": {
+        "lat": 34.23544,
+        "lng": -77.9464
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 71,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Burgwin wright house",
+        "publisher": "The Ghost Guild",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://theghostguild.weebly.com/burgwin-wright-house.html"
+      },
+      {
+        "title": "History",
+        "publisher": "Burgwin-Wright House and Gardens",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.burgwinwrighthouse.org/history"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The elegant house above you was built in 1770 over remains of Wilmington's earlier jail.\nThat combination has drawn more than architectural curiosity.\n\nThe Ghost Guild records a paranormal investigation here in March 2018, including a\nbedroom recording session described as an attempt to capture electronic voice phenomena.\nSuch recordings are interpreted by enthusiasts as possible voices, but they do not\nestablish that spirits exist.\n\nThere is a documented investigation and an interpretation. Those are different things.\n\nFrom the sidewalk, consider how much expectation changes listening. A creak in a new\nbuilding may pass unnoticed. The same creak above old cells can become the beginning of\na story. The house's real history supplies the weight; the haunting remains an\nunanswered claim. You can enjoy that uncertainty without pretending it has been solved.\n",
+    "teaser": "The elegant house above you was built in 1770 over remains of Wilmington's earlier jail.",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-listening-behind-the-jail-walls",
+        "durationS": 71
+      }
+    ]
+  },
+  {
+    "id": "wilmington-meg-at-the-old-waterfront",
+    "title": "Meg at the Old Waterfront",
+    "summary": "This waterfront once belonged as much to sailors and taverns as to strolling visitors.",
+    "point": {
+      "at": {
+        "lat": 34.2342,
+        "lng": -77.9495
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Historic waterfront near Water and Dock streets, Wilmington, North Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Journey into the haunted depths of old wilmington",
+        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This waterfront once belonged as much to sailors and taverns as to strolling visitors.\nOne of its surviving legends concerns a formidable woman known as Gallus Meg.\n\nLocal ghost-tour tradition associates her with the old Blue Post tavern and says her\npresence lingered after death. The historic tavern in this tale should not be confused\nwith another business that now uses the Blue Post name.\n\nMeg's reputation belongs to folklore. The reported haunting is not proof that a spirit\noccupies a building, and the more lurid versions should not be mistaken for a documented\ncriminal biography.\n\nStand by the public street and let the river supply the atmosphere. A working port\nbrings strangers together, then sends them away. Meg's story reverses that pattern: one\nwaterfront character, storytellers suggest, never quite left.\n",
+    "teaser": "This waterfront once belonged as much to sailors and taverns as to strolling visitors.",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-meg-at-the-old-waterfront",
+        "durationS": 70
+      }
+    ]
+  },
+  {
+    "id": "wilmington-north-carolinas-first-synagogue-building",
+    "title": "North Carolina's First Synagogue Building",
+    "summary": "Dedicated in 1876, Wilmington's Temple of Israel is recognized as North Carolina's first Jewish house of worship.",
+    "point": {
+      "at": {
+        "lat": 34.23548,
+        "lng": -77.94436
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Temple of Israel, Fourth and Market streets, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "States first jewish house worship temple israel",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2016/05/12/states-first-jewish-house-worship-temple-israel"
+      },
+      {
+        "title": "History",
+        "publisher": "Temple of Israel",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://temple-of-israel.org/history/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Dedicated in 1876, Wilmington's Temple of Israel is recognized as North Carolina's first\nJewish house of worship.\n\nThe congregation describes its building as Moorish Revival, a style used by synagogues\nin Europe and the United States during that period.\n\nThe corner therefore carries two stories together: a community establishing a permanent\nworship space and a design expressing that presence publicly.\n\nRemain on the sidewalk unless the congregation has authorized a visit. Its historical\nsignificance does not change its role as an active religious site.\n\nLook at how the building addresses Market Street. It belongs to Wilmington's streetscape\nwhile retaining a distinctive identity. The milestone is not simply that construction\nfinished. A Jewish congregation secured a place where its life could continue across\ngenerations in the city.\n",
+    "teaser": "Dedicated in 1876, Wilmington's Temple of Israel is recognized as North Carolina's first Jewish house of worship.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-north-carolinas-first-synagogue-building",
+        "durationS": 70
+      }
+    ]
+  },
+  {
+    "id": "wilmington-robert-taylor-beyond-wilmington",
+    "title": "Robert Taylor Beyond Wilmington",
+    "summary": "Robert Robinson Taylor was born in Wilmington and became MIT's first known Black graduate, completing his degree in 1892.",
+    "point": {
+      "at": {
+        "lat": 34.23601,
+        "lng": -77.9429
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Robert r taylor",
+        "publisher": "MIT Black History",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://blackhistory.mit.edu/story/robert-r-taylor"
+      },
+      {
+        "title": "The people",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/the-people.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Robert Robinson Taylor was born in Wilmington and became MIT's first known Black\ngraduate, completing his degree in 1892.\n\nHis father, Henry Taylor, was a skilled builder associated with the Bellamy\nconstruction. This house therefore offers a connection to the family trade, not a claim\nthat Robert designed it.\n\nRobert's architectural career developed at Tuskegee and beyond. Education expanded the\npossibilities of work that already had a strong family foundation.\n\nFrom the sidewalk, look at the evidence of building skill around you. Then consider the\ndistance between learning a trade locally and gaining access to an institution that had\nscarcely admitted Black students. Taylor's achievement was individual, but his\nWilmington background helps prevent us from imagining that his talent began only when a\ncollege recognized it.\n",
+    "teaser": "Robert Robinson Taylor was born in Wilmington and became MIT's first known Black graduate, completing his degree in 1892.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-robert-taylor-beyond-wilmington",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-rufus-bunnells-written-weather",
+    "title": "Rufus Bunnell's Written Weather",
+    "summary": "Rufus Bunnell assisted with the Bellamy design and kept a diary.",
+    "point": {
+      "at": {
+        "lat": 34.23587,
+        "lng": -77.94281
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Museum blog",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/museum-blog"
+      },
+      {
+        "title": "The place",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/the-place.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Rufus Bunnell assisted with the Bellamy design and kept a diary. The museum's published\nexcerpts include an 1859 Independence Day described through heat and a thunderstorm.\n\nSuch an entry brings a working person into a history often told through architectural\nlabels. He experienced Wilmington as weather, time, and daily activity while the house\nwas taking shape.\n\nThis is the construction project associated with his work. We do not need to invent his\nprivate thoughts or place every diary line on this sidewalk.\n\nLook at the mansion and remember that its finished appearance came after many unfinished\ndays. A diary preserves the scale of those days. Bunnell's records let the building's\ndesign history meet the ordinary conditions in which an architect actually lived and\nworked.\n",
+    "teaser": "Rufus Bunnell assisted with the Bellamy design and kept a diary.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-rufus-bunnells-written-weather",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-samuel-mendelsohns-forty-six-years",
+    "title": "Samuel Mendelsohn's Forty-Six Years",
+    "summary": "Rabbi Samuel Mendelsohn presided when Wilmington's Temple of Israel was dedicated in 1876.",
+    "point": {
+      "at": {
+        "lat": 34.23552,
+        "lng": -77.9444
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Temple of Israel, Fourth and Market streets, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 65,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "History",
+        "publisher": "Temple of Israel",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://temple-of-israel.org/history/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Rabbi Samuel Mendelsohn presided when Wilmington's Temple of Israel was dedicated in\n1876. His tenure continued until 1922, spanning forty-six years.\n\nThe congregation's history connects that first sermon with Jewish liberty. The new\nsynagogue supplied a permanent local setting for worship and community life.\n\nListen from the public sidewalk. A long tenure means more than one ceremonial opening:\nit includes repeated services, teaching, changes in families, and the ordinary\nresponsibilities of sustaining a congregation.\n\nMendelsohn's name helps make the building's history personal. The synagogue was not only\nconstructed; it was used and cared for by a community over time. His decades of\nleadership link its early years with the city that developed around this corner into the\ntwentieth century.\n",
+    "teaser": "Rabbi Samuel Mendelsohn presided when Wilmington's Temple of Israel was dedicated in 1876.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-samuel-mendelsohns-forty-six-years",
+        "durationS": 65
+      }
+    ]
+  },
+  {
+    "id": "wilmington-six-paddles-for-memory",
+    "title": "Six Paddles for Memory",
+    "summary": "The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its victims.",
+    "point": {
+      "at": {
+        "lat": 34.248,
+        "lng": -77.94725
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "1898 Memorial Park, 1018 North Third Street, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "1898 Memorial Park",
+        "publisher": "City of Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonnc.gov/Connect-With-Us/Department-Directory/Parks-Recreation/Parks-Trails/1898-Memorial-Park"
+      },
+      {
+        "title": "Monument",
+        "publisher": "Documenting the American South, UNC Chapel Hill",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://docsouth.unc.edu/commland/monument/842/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its\nvictims. Artist Ayokunle Odeleye gave the memorial a form tied to movement and\ncollective effort.\n\nThis park is a place of remembrance. The events it commemorates happened across the\ncity, not all on this patch of ground.\n\nWalk slowly along the public path. The sculpture asks for a different pace from the\nsurrounding streets. Its repeated forms can bring separate lives into one field of\nattention without pretending the violence had a simple or settled ending.\n\nPublic art carries a responsibility here. It makes history present while leaving room\nfor reflection. The bronze survives in the open air; the work of understanding what the\ncity lost must continue among the people who visit.\n",
+    "teaser": "The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its victims.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-six-paddles-for-memory",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-st-thomas-finds-another-purpose",
+    "title": "St. Thomas Finds Another Purpose",
+    "summary": "St.",
+    "point": {
+      "at": {
+        "lat": 34.2343,
+        "lng": -77.94672
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. Thomas Preservation Hall, 208 Dock Street, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Stthomaspreservationhall.com",
+        "publisher": "St. Thomas Preservation Hall",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.stthomaspreservationhall.com/"
+      },
+      {
+        "title": "Contact",
+        "publisher": "St. Thomas Preservation Hall",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.stthomaspreservationhall.com/contact"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "St. Thomas Preservation Hall describes its building as a former Catholic church\nconstructed in 1847. Today it is used as an event venue.\n\nThe change illustrates a practical route to preservation: keep an old structure useful\nwhile allowing its role to evolve.\n\nThe original worship setting and the present venue are different chapters. Neither\nrequires us to pretend that every surface or furnishing stayed unchanged.\n\nListen from Dock Street unless you have permission to enter. A building's public history\ndoes not make a private event open to everyone.\n\nFrom outside, the survival is clear. The old structure remains part of downtown instead\nof becoming an empty lot. A new purpose supplies the reason to maintain it, while the\nname and building keep its earlier identity in view.\n",
+    "teaser": "St.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-st-thomas-finds-another-purpose",
+        "durationS": 70
+      }
+    ]
+  },
+  {
+    "id": "wilmington-stars-under-a-downtown-roof",
+    "title": "Stars Under a Downtown Roof",
+    "summary": "Wilmington's new downtown museum opened in August 2026 with a sixty-seat planetarium.",
+    "point": {
+      "at": {
+        "lat": 34.23882,
+        "lng": -77.9469
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Cape Fear Museum planetarium, 230 Grace Street, Wilmington, North Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Detail",
+        "publisher": "Cape Fear Museum of History and Science",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://capefearmuseum.com/m/newsflash/Home/Detail/1159"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Wilmington's new downtown museum opened in August 2026 with a sixty-seat planetarium.\nInside, a presentation can help visitors explore the sky while sitting under a roof.\n\nThe images are a way of learning, not actual stars brought indoors. Real stars are much\nfarther away than any building in the city.\n\nIf you are attending an authorized program, settle into your seat and let the\npresentation guide your eyes. What becomes easier to notice when the view is arranged\nfor learning?\n\nThe planetarium joins science with storytelling. It can help turn distant things into\nquestions you can investigate. When you leave, the real sky is still outside, and the\ndowntown streets are still around you. A visit can make that familiar walk feel\nconnected with a much larger world.\n",
+    "teaser": "Wilmington's new downtown museum opened in August 2026 with a sixty-seat planetarium.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/wilmington-stars-under-a-downtown-roof",
+        "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "wilmington-steel-above-the-tracks",
+    "title": "Steel Above the Tracks",
+    "summary": "This bridge was built in 1911 to replace a deteriorating wooden crossing above railroad tracks.",
+    "point": {
+      "at": {
+        "lat": 34.2436,
+        "lng": -77.9429
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "North Sixth Street truss bridge, between Brunswick and Campbell streets, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Local Historic Landmarks",
+        "publisher": "City of Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This bridge was built in 1911 to replace a deteriorating wooden crossing above railroad\ntracks. Wilmington recognizes it as the city's surviving steel truss bridge from that\nera.\n\nThe truss makes structural work visible: connected members help carry loads across an\nopening. The form is not simply decorative.\n\nLook from a safe public approach, following any closure signs. Do not go beneath it onto\nrailway property for a better view.\n\nA bridge solves a local problem, but it also records what lay in the way. Here, streets\nhad to cross the railroad infrastructure that helped define the neighborhood. The steel\nspan kept those two systems connected. Its survival lets you see a practical response to\na city built around trains as well as streets.\n",
+    "teaser": "This bridge was built in 1911 to replace a deteriorating wooden crossing above railroad tracks.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-steel-above-the-tracks",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-annex-behind-the-landmark",
+    "title": "The Annex Behind the Landmark",
+    "summary": "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H.",
+    "point": {
+      "at": {
+        "lat": 34.2425,
+        "lng": -77.9449
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Brooklyn Arts Center Annex, behind the Fourth and Campbell church complex, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Full history",
+        "publisher": "Brooklyn Arts Center",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.brooklynartsnc.com/full-history/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H.\nSprunt in memory of his parents and the earlier congregation's founders.\n\nThe annex served functions that the main sanctuary alone could not contain. Its history\nreminds you that a community's building needs extend beyond one ceremonial room.\n\nLook from the public sidewalk and keep to authorized visitor areas. A less dramatic\nbuilding can still be central to how a place works.\n\nThe addition makes growth tangible. People who gathered in the church also needed rooms\nfor teaching, meetings, and other activities. The annex supplied that supporting space.\nIts continued presence helps you read the complex as a working community setting, not\nsimply a striking facade preserved for photographs.\n",
+    "teaser": "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-annex-behind-the-landmark",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-association-before-the-building",
+    "title": "The Association Before the Building",
+    "summary": "The Thalian Association traces its beginnings to 1788, long before the theater now called Thalian Hall was built.",
+    "point": {
+      "at": {
+        "lat": 34.23312,
+        "lng": -77.9471
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Hannah Block Historic USO and Thalian Association offices, 120 South Second Street, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Our history",
+        "publisher": "Thalian Association",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.thalian.org/about/our-history/"
+      },
+      {
+        "title": "Hannah block historic uso history then and now",
+        "publisher": "Wilmington Community Arts",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://wilmingtoncommunityarts.org/museum/hannah-block-historic-uso-history-then-and-now/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The Thalian Association traces its beginnings to 1788, long before the theater now\ncalled Thalian Hall was built.\n\nThat order matters. Wilmington had people organizing dramatic activity before it had the\nfamous surviving stage. A building later gave the activity a landmark; it did not create\nthe interest from nothing.\n\nYou are at the association's present arts-center setting, not its original\neighteenth-century meeting place. The institution's history links these different\nlocations.\n\nPause by the entrance. Community theater depends on people agreeing to work together,\nreturn for rehearsals, and invite others to watch. The association's long history\nrecords that recurring effort. A stage can be constructed once. A theater community has\nto be made again whenever people choose to put on the next performance.\n",
+    "teaser": "The Thalian Association traces its beginnings to 1788, long before the theater now called Thalian Hall was built.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-association-before-the-building",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-basilicas-brick-invention",
+    "title": "The Basilica's Brick Invention",
+    "summary": "Saint Mary's church is associated with the Guastavino family's brick-and-tile vaulting work.",
+    "point": {
+      "at": {
+        "lat": 34.23188,
+        "lng": -77.9436
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Basilica Shrine of Saint Mary, 412 Ann Street, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "History",
+        "publisher": "Basilica Shrine of St. Mary",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://saintmarybasilica.org/history"
+      },
+      {
+        "title": "Marker 264877",
+        "publisher": "The Historical Marker Database",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.hmdb.org/m.asp?m=264877"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Saint Mary's church is associated with the Guastavino family's brick-and-tile vaulting\nwork. Its dedication in 1912 gave Wilmington a distinctive new religious building.\n\nThe construction method is central to its identity. Thin layers of tile and careful\ngeometry could create substantial vaulted forms.\n\nThis remains a place of worship. Begin on the public sidewalk and enter only when\nvisitor access is permitted.\n\nLook at the building as both a community's religious home and the result of specialist\ncraft. Its architectural impact depends on thousands of smaller pieces working together.\nA large interior space can feel almost effortless to a visitor; the method behind it\nrequired knowledge and precision. The landmark makes that marriage of design, material,\nand labor part of downtown's visible history.\n",
+    "teaser": "Saint Mary's church is associated with the Guastavino family's brick-and-tile vaulting work.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-basilicas-brick-invention",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-building-behind-the-mansion",
+    "title": "The Building Behind the Mansion",
+    "summary": "The mansion commands attention.",
+    "point": {
+      "at": {
+        "lat": 34.23596,
+        "lng": -77.94292
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Audio 2",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/audio-2.html"
+      },
+      {
+        "title": "The museum",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/the-museum.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The mansion commands attention. The separate brick building behind it changes what that\nattention means.\n\nThe enslaved quarters were built in 1859, initially housing workers involved in\nconstruction and later people performing household labor. The museum opened the restored\nbuilding to visitors in 2014.\n\nThis is a surviving structure, not a theatrical reconstruction of an imagined plantation\nscene. It helps visitors examine how the household organized space, work, and control.\n\nIf you are on the authorized grounds, turn your view between the quarters and the main\nhouse. Their relationship is the story. One building advertised family wealth; the other\nsupported that wealth through coerced labor. Restoring both makes it harder to admire\nthe mansion while overlooking the people whose work kept it functioning.\n",
+    "teaser": "The mansion commands attention.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-building-behind-the-mansion",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-cabooses-very-short-journey",
+    "title": "The Caboose's Very Short Journey",
+    "summary": "In 2007, the museum had to move its red caboose to a new home.",
+    "point": {
+      "at": {
+        "lat": 34.24163,
+        "lng": -77.95062
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Wilmington Railroad Museum, 505 Nutt Street, Wilmington, North Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Museum move 2007",
+        "publisher": "Wilmington Railroad Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wrrm.org/museum-move---2007.html"
+      },
+      {
+        "title": "Outdoor rolling stock",
+        "publisher": "Wilmington Railroad Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wrrm.org/outdoor-rolling-stock.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In 2007, the museum had to move its red caboose to a new home. The distance was short,\nbut the caboose could not simply roll there along a ready-made track.\n\nWorkers lifted its body onto one truck and carried its wheels on another. They placed\nties and rails at the new site, and the job continued into darkness.\n\nLook at the caboose from the permitted display area. A thing designed to travel can\nstill be difficult to move!\n\nThe team had to solve the problem one part at a time. Wheels, body, trucks, and rails\nall needed the right place in the plan. The caboose's short trip became a real adventure\nin cooperation, helping the museum keep a big piece of railroad history for visitors\nlike you.\n",
+    "teaser": "In 2007, the museum had to move its red caboose to a new home.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/wilmington-the-cabooses-very-short-journey",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-church-that-became-an-arts-center",
+    "title": "The Church That Became an Arts Center",
+    "summary": "Construction of St.",
+    "point": {
+      "at": {
+        "lat": 34.24225,
+        "lng": -77.94505
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Brooklyn Arts Center, 516 North Fourth Street, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 65,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Full history",
+        "publisher": "Brooklyn Arts Center",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.brooklynartsnc.com/full-history/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Construction of St. Andrew's Presbyterian Church began here in 1888. The congregation\ndedicated the building in 1889.\n\nIts later history included other congregations, serious deterioration, and preservation\nefforts. The surviving structure became the Brooklyn Arts Center.\n\nFrom the public corner, notice that a changed purpose did not require the old building\nto disappear. Its prominent form remains part of the neighborhood while its interior\nserves new gatherings.\n\nThe building's survival is the turning point. A former church could have become only a\nhistorical photograph. Instead, restoration made another use possible. Today's arts\nsetting carries an architectural inheritance from the congregation that first raised it.\nWhen people gather here now, they add a chapter rather than beginning on a blank site.\n",
+    "teaser": "Construction of St.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-church-that-became-an-arts-center",
+        "durationS": 65
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-church-used-as-a-hospital",
+    "title": "The Church Used as a Hospital",
+    "summary": "In February 1865, Union forces entered Wilmington.",
+    "point": {
+      "at": {
+        "lat": 34.23542,
+        "lng": -77.94561
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. James Episcopal Church, 25 South Third Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Our history",
+        "publisher": "St. James Parish",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.stjamesp.org/our-history/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In February 1865, Union forces entered Wilmington. St. James's church building was\nseized and used as a hospital.\n\nThe congregation's history records that the building was returned that summer, repaired,\nand used for services again in December. A space designed for worship had temporarily\nbecome a place of wartime care.\n\nThe change makes you see the church differently. Its doors and interior were practical\nresources in a city undergoing military occupation, not just symbols on a familiar\nstreet.\n\nFrom the sidewalk, consider the work required to make a building serve an urgent\npurpose, then restore it to its regular life. The hospital chapter was temporary, but it\nbelongs to the building's history. Returning to worship did not mean that the preceding\nmonths had never happened.\n",
+    "teaser": "In February 1865, Union forces entered Wilmington.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-church-used-as-a-hospital",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-county-courthouse-on-third",
+    "title": "The County Courthouse on Third",
+    "summary": "This is the late-nineteenth-century county courthouse at Third and Princess, built in 1892 to 1893.",
+    "point": {
+      "at": {
+        "lat": 34.23642,
+        "lng": -77.946
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "New Hanover County Historic Courthouse, 24 North Third Street, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "New Hanover County Historic Courthouse 51",
+        "publisher": "New Hanover County",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.nhcgov.com/Facilities/Facility/Details/New-Hanover-County-Historic-Courthouse-51"
+      },
+      {
+        "title": "New hanover county",
+        "publisher": "Courthouses.co",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://courthouses.co/us-states/n/north-carolina/new-hanover-county/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This is the late-nineteenth-century county courthouse at Third and Princess, built in\n1892 to 1893.\n\nIt is not the earlier courthouse once located at Market and Third. Keeping those places\nseparate prevents two very different periods from collapsing into one story.\n\nLook from the public sidewalk. The building's prominent scale and detailed exterior make\ngovernment visible in the streetscape. A courthouse is designed to gather public\nbusiness under an identifiable roof.\n\nIts landmark role continues even when visitors come mainly to look at the architecture.\nThe exact address matters: history happened in particular buildings, and similar names\ncan lead you to the wrong one. This stop anchors the later county institution, while the\nMarket Street marker recalls the vanished colonial courthouse a block away.\n",
+    "teaser": "This is the late-nineteenth-century county courthouse at Third and Princess, built in 1892 to 1893.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-county-courthouse-on-third",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-courthouse-and-the-stamp-act",
+    "title": "The Courthouse and the Stamp Act",
+    "summary": "An earlier courthouse stood at this intersection.",
+    "point": {
+      "at": {
+        "lat": 34.23573,
+        "lng": -77.94595
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old Courthouse historical marker, Market and Third streets, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old courthouse d 2",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2023/12/08/old-courthouse-d-2"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "An earlier courthouse stood at this intersection. In the 1760s, it became a focus of\nresistance to Britain's Stamp Act.\n\nThe tax touched printed documents and provoked organized opposition in the Cape Fear\nregion. The state marker's history connects the courthouse with that struggle over\nimperial authority.\n\nThe building is gone, and the later county courthouse farther north is a different\nstructure. Here, the marker identifies a political setting that ordinary traffic now\ncrosses.\n\nStand safely on the sidewalk and look across the intersection. Public disagreement\nneeded places where people could assemble and make demands visible. Before independence,\nthis corner helped supply one. The story belongs to a town still under British rule,\nbeginning to challenge who could impose terms on its public life.\n",
+    "teaser": "An earlier courthouse stood at this intersection.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-courthouse-and-the-stamp-act",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-department-stores-big-windows",
+    "title": "The Department Store's Big Windows",
+    "summary": "This five-story commercial building dates to 1906, with a later addition.",
+    "point": {
+      "at": {
+        "lat": 34.23879,
+        "lng": -77.94904
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Former Efird's and Einstein Brothers store, 272 North Front Street, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 64,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Local Historic Landmarks",
+        "publisher": "City of Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This five-story commercial building dates to 1906, with a later addition. Wilmington's\nlandmark description notes the light and open space that served wholesale and retail\ntrade.\n\nThe building was designed to show goods, not merely store them. Its scale makes the\nambition visible from the street.\n\nStand clear of entrances and look upward. A downtown shop could occupy a substantial\narchitectural presence, combining business needs with a recognizable public face.\n\nNames and tenants changed, but the structure continued offering space for commerce. The\nlandmark's story connects the customer on the pavement with the larger world of\nsuppliers and merchants inside. A display window is the meeting point: goods become\nvisible, and a passing person becomes a possible buyer.\n",
+    "teaser": "This five-story commercial building dates to 1906, with a later addition.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-department-stores-big-windows",
+        "durationS": 64
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-dog-made-of-metal",
+    "title": "The Dog Made of Metal",
+    "summary": "Paul Hill made a dog for Bijou Park, but this dog does not need food, water, or a nap.",
+    "point": {
+      "at": {
+        "lat": 34.23802,
+        "lng": -77.94941
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Straining to Be sculpture, Bijou Park, 209 North Front Street, Wilmington, North Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Discover outdoor art in wilmington nc",
+        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonandbeaches.com/blog/post/discover-outdoor-art-in-wilmington-nc/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Paul Hill made a dog for Bijou Park, but this dog does not need food, water, or a nap.\nIt is a sculpture called Straining to Be.\n\nThe tourism authority describes its materials as Corten steel and found objects. Things\nmade for other purposes became part of an animal's shape.\n\nStand back and look at the outline. What makes you recognize a dog before you examine\nevery detail? Then look for the parts the artist used to suggest that shape.\n\nThe real story is a person's choice to turn material into something viewers can\nrecognize. No imaginary dog adventure is needed. The sculpture gives an ordinary park a\nplayful surprise, and it gives you a challenge: discover how an artist made a familiar\ncreature from things that were never alive.\n",
+    "teaser": "Paul Hill made a dog for Bijou Park, but this dog does not need food, water, or a nap.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/wilmington-the-dog-made-of-metal",
+        "durationS": 70
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-exhibition-in-a-little-lane",
+    "title": "The Exhibition in a Little Lane",
+    "summary": "In 1953, Claude Howell and Gar Faulkner staged a Cottage Lane art show during the Azalea Festival, according to Cape Fear Museum's…",
+    "point": {
+      "at": {
+        "lat": 34.23373,
+        "lng": -77.94513
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Cottage Lane between Dock and Orange streets, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Sets",
+        "publisher": "Flickr",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.flickr.com/photos/capefearmuseum/sets/72157647490782635"
+      },
+      {
+        "title": "History",
+        "publisher": "Cameron Art Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://cameronartmuseum.org/history/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In 1953, Claude Howell and Gar Faulkner staged a Cottage Lane art show during the Azalea\nFestival, according to Cape Fear Museum's historical account.\n\nThe setting made an exhibition part of the neighborhood rather than an event confined to\na grand gallery. Artists could bring work into a small downtown place already associated\nwith creative life.\n\nDo not enter a private courtyard to recreate the show. The public lane is enough to\nunderstand the scale.\n\nLook along the buildings and imagine the practical decision: choose a place, gather the\nwork, and invite people to see it. A local art community grows through events like that,\nwhere the audience meets artists nearby. The lane's size is part of the story. Cultural\nbeginnings do not always require a monumental address.\n",
+    "teaser": "In 1953, Claude Howell and Gar Faulkner staged a Cottage Lane art show during the Azalea Festival, according to Cape Fear Museum's…",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-exhibition-in-a-little-lane",
+        "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-federal-building-by-the-water",
+    "title": "The Federal Building by the Water",
+    "summary": "The Federal Judicial Center dates this Wilmington courthouse building to 1919.",
+    "point": {
+      "at": {
+        "lat": 34.23631,
+        "lng": -77.94973
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Alton Lennon Federal Building, 2 Princess Street, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 65,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Wilmington north carolina 1919",
+        "publisher": "Federal Judicial Center",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.fjc.gov/history/courthouse/wilmington-north-carolina-1919"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The Federal Judicial Center dates this Wilmington courthouse building to 1919. It was\nnamed for Alton Lennon in 1972.\n\nIts waterfront position gives it an unusually visible place in the downtown landscape.\nFederal authority occupies the same streetscape as the riverfront's shops, visitors, and\nhistoric commercial buildings.\n\nListen from the public sidewalk. Do not assume that a courthouse interior is a\nsightseeing area; any entry must follow current security and visitor rules.\n\nThe building's two dates tell different stories. One belongs to construction and\ninstitutional use, the other to later commemoration. Names can change what a city\nremembers about a structure without changing its physical age. Here, the architecture\nand the public name carry separate layers of Wilmington's civic memory.\n",
+    "teaser": "The Federal Judicial Center dates this Wilmington courthouse building to 1919.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-federal-building-by-the-water",
+        "durationS": 65
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-first-curtain",
+    "title": "The First Curtain",
+    "summary": "On October 12, 1858, Thalian Hall opened with a gala.",
+    "point": {
+      "at": {
+        "lat": 34.23773,
+        "lng": -77.94568
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Thalian Hall, 310 Chestnut Street, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Thalian hall opens wilmington",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2016/10/12/thalian-hall-opens-wilmington"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "On October 12, 1858, Thalian Hall opened with a gala. Wilmington gained a theater that\nwould connect local audiences with performers traveling through the country.\n\nFor the people arriving that evening, this was a new room, not a historic landmark. The\nexpectation lay ahead: a curtain would rise, a performance would begin, and the city's\ninvestment would become an experience.\n\nStand outside the entrance. A theater's opening can be remembered as a date, but its\nreal test comes when people gather and listen together.\n\nEvery later audience added another use to the building. The first night's importance is\nthat it began the pattern. Before the reputation, restorations, and anniversary\ncelebrations, Wilmington had to take the simple step that makes a theater work: open the\ndoors and invite people in.\n",
+    "teaser": "On October 12, 1858, Thalian Hall opened with a gala.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-first-curtain",
+        "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-first-heritage-city",
+    "title": "The First Heritage City",
+    "summary": "In 2020, Wilmington became the country's first American World War II Heritage City.",
+    "point": {
+      "at": {
+        "lat": 34.23317,
+        "lng": -77.94731
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "World War II City",
+        "publisher": "City of Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonnc.gov/Connect-With-Us/Community-Honors/World-War-II-City"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In 2020, Wilmington became the country's first American World War II Heritage City.\n\nThe designation recognizes a community's wartime role and its work to preserve that\nhistory. It reaches beyond this building, encompassing the wider city's military,\nindustrial, and civilian contributions.\n\nThe USO makes a useful downtown place to listen because it preserves one direct part of\nthat experience: the gathering place for people in uniform and the volunteers supporting\nthem.\n\nLook at the building before you. A national designation can sound like a distant\nadministrative honor. Here, it points back to concrete local spaces and the people who\nused them. The title does not create the history. It asks present-day Wilmington to keep\nthat history available, examined, and connected to the city that exists now.\n",
+    "teaser": "In 2020, Wilmington became the country's first American World War II Heritage City.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-first-heritage-city",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-friend-who-came-back",
+    "title": "The Friend Who Came Back",
+    "summary": "Look toward the churchyard.",
+    "point": {
+      "at": {
+        "lat": 34.23546,
+        "lng": -77.94565
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. James Episcopal Church, 25 South Third Street, Wilmington, North Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 73,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Journey into the haunted depths of old wilmington",
+        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/"
+      },
+      {
+        "title": "Our history",
+        "publisher": "St. James Parish",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.stjamesp.org/our-history/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look toward the churchyard. Wilmington storytellers attach a particularly unsettling\nlegend to Samuel Jocelyn Junior: a dead man supposedly appeared to a friend and asked to\nbe taken out of his grave.\n\nIn the tale, the friend initially dismissed the encounter. Further appearances finally\npersuaded him to investigate. The ending suggested that Jocelyn had been buried alive.\n\nThat is the ghost story, not a verified account of a premature burial. Its power comes\nfrom an ordinary human fear: needing help when nobody believes you can still ask for it.\n\nFrom this public sidewalk, the churchyard gives the tale its setting. You do not need to\nenter, search for a particular grave, or treat a sound as evidence. Listen to the city\ncontinuing around you. The legend asks you to imagine one voice trying to reach it.\n",
+    "teaser": "Look toward the churchyard.",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-friend-who-came-back",
+        "durationS": 73
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-garden-that-was-designed-later",
+    "title": "The Garden That Was Designed Later",
+    "summary": "These gardens may feel as old as the house.",
+    "point": {
+      "at": {
+        "lat": 34.23515,
+        "lng": -77.9466
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Burgwin-Wright House gardens, 224 Market Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The property",
+        "publisher": "Burgwin-Wright House and Gardens",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.burgwinwrighthouse.org/the-property"
+      },
+      {
+        "title": "Gardens",
+        "publisher": "Burgwin-Wright House and Gardens",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.burgwinwrighthouse.org/gardens"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "These gardens may feel as old as the house. Their present design belongs to a later\nchapter.\n\nIn 1962, the museum hired landscape architect Alden Hopkins to create gardens in an\neighteenth-century style. The grounds therefore interpret a period; they are not a\ngarden preserved unchanged from 1770.\n\nThat distinction adds to the experience. The orchard, herb areas, terraces, and formal\nplanting give visitors different ways to approach the past. A useful plant tells a\ndifferent story from a decorative hedge.\n\nWalk only along the open paths. Notice where the design invites a pause and where it\ndirects your gaze. This landscape records two eras at once: the colonial world it evokes\nand the twentieth-century preservation work that chose how that world would be\npresented.\n",
+    "teaser": "These gardens may feel as old as the house.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-garden-that-was-designed-later",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-gas-station-that-never-came",
+    "title": "The Gas Station That Never Came",
+    "summary": "In 1930, this house faced a future that could have removed it from Wilmington entirely.",
+    "point": {
+      "at": {
+        "lat": 34.23537,
+        "lng": -77.94642
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Family timeline",
+        "publisher": "Burgwin-Wright House and Gardens",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.burgwinwrighthouse.com/family-timeline"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In 1930, this house faced a future that could have removed it from Wilmington entirely.\n\nBusinessman Samuel Pryor considered taking the building apart and moving it to\nConnecticut. A gas station was proposed for the cleared site. The Colonial Dames\ncampaigned to preserve the house, and Pryor changed course, contributing money and\nsupporting the effort.\n\nThe museum's timeline records that reversal. What you see is the result of people\ntreating an old building as a shared historical resource rather than simply a valuable\ndowntown lot.\n\nStand at the corner and picture the gap its removal would have made. No imagined\ndemolition is needed to appreciate the stakes. The threatened future was real, and so\nwas the intervention. The house stayed where its history could still be encountered.\n",
+    "teaser": "In 1930, this house faced a future that could have removed it from Wilmington entirely.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-gas-station-that-never-came",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-gathering-before-the-coup",
+    "title": "The Gathering Before the Coup",
+    "summary": "This marker identifies a place of preparation.",
+    "point": {
+      "at": {
+        "lat": 34.2358,
+        "lng": -77.94435
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Wilmington Coup historical marker, Market Street between Fourth and Fifth streets, Wilmington, North Carolina"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Wilmington coup d 118",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2023/12/12/wilmington-coup-d-118"
+      },
+      {
+        "title": "Nc highway historical marker commemorate 1898 wilmington coup",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/news/press-releases/2019/10/28/nc-highway-historical-marker-commemorate-1898-wilmington-coup"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This marker identifies a place of preparation. On November 10, 1898, armed white men\nassembled at the Wilmington Light Infantry armory before marching on the Daily Record.\n\nThe violence that followed was organized around a political aim: removing Wilmington's\nlegitimately elected government and suppressing Black political power. It was not simply\nan unexpected crowd losing control.\n\nStand beside the marker and look along Market Street. The route began among familiar\ncivic buildings and ordinary city blocks. That is part of the story's difficulty.\nPolitical violence did not arrive in a landscape separate from everyday Wilmington; it\nmoved through it.\n\nThe marker now interrupts that everyday view with a record of what happened. Before you\nmove on, notice its location. Remembering the starting point helps reveal the planning\nbehind the crime.\n",
+    "teaser": "This marker identifies a place of preparation.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "alleged",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-gathering-before-the-coup",
+        "durationS": 70
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-government-taken-by-force",
+    "title": "The Government Taken by Force",
+    "summary": "This building has held both city government and a theater.",
+    "point": {
+      "at": {
+        "lat": 34.2371,
+        "lng": -77.94598
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "City Hall and Thalian Hall, 310 Chestnut Street, Wilmington, North Carolina"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Wilmington coup",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2016/11/10/wilmington-coup"
+      },
+      {
+        "title": "1898 wilmington coup",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/1898-wilmington-coup"
+      },
+      {
+        "title": "About",
+        "publisher": "Thalian Hall",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.thalianhall.org/about"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This building has held both city government and a theater. In November 1898, the civic\npart of that history became a scene of forced political change.\n\nWhite supremacist leaders used violence and intimidation to overthrow Wilmington's\nelected, biracial government. Officials were compelled to resign, and Alfred Moore\nWaddell assumed the mayor's office.\n\nThe outcome was not a normal transfer of authority after an election. The state\nrecognizes the events as a coup. Black residents were killed, threatened, and driven\nfrom the city; the full death toll remains uncertain.\n\nLook at the municipal entrance from the sidewalk. Government buildings can make\nauthority appear orderly and permanent. This one asks a harder question: how was that\nauthority obtained? The architecture remained. The democratic rights of many Wilmington\nresidents did not.\n",
+    "teaser": "This building has held both city government and a theater.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "alleged",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-government-taken-by-force",
+        "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-headquarters-that-left-town",
+    "title": "The Headquarters That Left Town",
+    "summary": "For decades, Wilmington was a headquarters city for the Atlantic Coast Line Railroad.",
+    "point": {
+      "at": {
+        "lat": 34.2417,
+        "lng": -77.9506
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Wilmington Railroad Museum, 505 Nutt Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "History",
+        "publisher": "Wilmington Railroad Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wrrm.org/history.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "For decades, Wilmington was a headquarters city for the Atlantic Coast Line Railroad. In\n1960, that role moved to Jacksonville, Florida.\n\nThe museum describes a relocation of more than a thousand employees, along with\nfamilies, belongings, records, and office equipment. The railway carried away part of\nthe city's working life.\n\nThis museum is a place to understand that change, not the vanished headquarters itself.\nIts collections preserve a local industry after the institution's center of gravity\nshifted south.\n\nImagine the difference between a train departing on its regular run and a train helping\nan employer leave for good. One promises another arrival. The other changes the\nneighborhood that waits behind. Here, preserved objects keep the railroad visible even\nafter its headquarters stopped calling Wilmington home.\n",
+    "teaser": "For decades, Wilmington was a headquarters city for the Atlantic Coast Line Railroad.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-headquarters-that-left-town",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-home-purchased-for-history",
+    "title": "The Home Purchased for History",
+    "summary": "In 1963, the Lower Cape Fear Historical Society acquired the Latimer house.",
+    "point": {
+      "at": {
+        "lat": 34.23356,
+        "lng": -77.94612
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Latimer House, 126 South Third Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "About",
+        "publisher": "Latimer House Museum, Lower Cape Fear Historical Society",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://latimerhouse.org/about/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In 1963, the Lower Cape Fear Historical Society acquired the Latimer house. A family\nresidence became a place where the region's history could be studied and shared.\n\nThe society had formed in 1956. Purchasing this house gave its work a physical anchor\ndowntown, with rooms, collections, and an address people could visit.\n\nPause at the entrance. Museums often seem inevitable once their signs are in place. This\none required a choice: keep a nineteenth-century house available and give it a public\npurpose.\n\nThe transition did not freeze its meaning. Each visitor can notice different evidence,\nfrom household objects to traces of the people who worked here. The house's new role\nmade those encounters possible. Its preservation connects personal memories with a\ncommunity's responsibility to examine its past.\n",
+    "teaser": "In 1963, the Lower Cape Fear Historical Society acquired the Latimer house.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-home-purchased-for-history",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-house-above-the-cells",
+    "title": "The House Above the Cells",
+    "summary": "The neat doorway and Georgian proportions tell one story.",
+    "point": {
+      "at": {
+        "lat": 34.23545,
+        "lng": -77.94647
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "History",
+        "publisher": "Burgwin-Wright House and Gardens",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.burgwinwrighthouse.org/history"
+      },
+      {
+        "title": "Family timeline",
+        "publisher": "Burgwin-Wright House and Gardens",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.burgwinwrighthouse.com/family-timeline"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The neat doorway and Georgian proportions tell one story. The walls underneath tell\nanother.\n\nJohn Burgwin's house was built in 1770 on the remains of Wilmington's first jail, which\ndated to about 1744. Parts of the older structure became part of a merchant's\nfashionable residence.\n\nIt was a dramatic change in use. A place designed to restrict movement became a place\ndesigned to display wealth and receive guests. Yet rebuilding did not erase everything\nthat had been there before.\n\nFrom the public sidewalk, look at the house as a layered object. The oldest history may\nbe below the features that first catch your eye. An authorized visit makes that contrast\nmore tangible: beneath a domestic setting survive reminders of the town's earlier system\nof confinement.\n",
+    "teaser": "The neat doorway and Georgian proportions tell one story.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-house-above-the-cells",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-house-with-several-lives",
+    "title": "The House with Several Lives",
+    "summary": "This Grace Street house was built in 1818.",
+    "point": {
+      "at": {
+        "lat": 34.23903,
+        "lng": -77.94559
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Lazarus-Hill-Divine House, 314 Grace Street, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Local Historic Landmarks",
+        "publisher": "City of Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This Grace Street house was built in 1818. Wilmington's landmark description records\nlater uses that included a military academy, a convent, and an emergency hospital.\n\nThat sequence is more revealing than the idea of one perfectly preserved household. The\nsame building had to meet different needs as the city changed around it.\n\nStay on the public sidewalk. Its historical significance does not make a present\ninterior automatically open to visitors.\n\nLook at the facade and ask what architecture can tell you by itself. A house's shape may\nsuggest domestic life, yet records reveal institutional uses you could not guess from a\npassing glance. The landmark survives as a physical meeting point for those different\nchapters, even when their occupants and furnishings have long since moved on.\n",
+    "teaser": "This Grace Street house was built in 1818.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-house-with-several-lives",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-household-that-fled-yellow-fever",
+    "title": "The Household That Fled Yellow Fever",
+    "summary": "The Bellamy family had barely begun living in this house when Wilmington's circumstances changed.",
+    "point": {
+      "at": {
+        "lat": 34.23599,
+        "lng": -77.94279
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 71,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "War and politics a house divided",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/museum-blog/war-and-politics-a-house-divided"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The Bellamy family had barely begun living in this house when Wilmington's circumstances\nchanged.\n\nDuring the yellow fever epidemic of 1862, the family left the city and took refuge at\nFloral College. A residence meant to secure status and comfort could not protect its\noccupants from the city's public-health disaster.\n\nThis house is the family's associated site, not the place to which they escaped. The\nepidemic extended far beyond one household, and leaving was not an option available\nequally to everyone.\n\nLook at the imposing exterior. It can suggest permanence, but the first years of its\ndomestic life were disrupted almost immediately. The story turns on that mismatch: a\ncarefully planned new home meeting a crisis its plans could not contain. Its owners\ndeparted; the larger city still had to endure the outbreak.\n",
+    "teaser": "The Bellamy family had barely begun living in this house when Wilmington's circumstances changed.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-household-that-fled-yellow-fever",
+        "durationS": 71
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-jail-fire-without-an-answer",
+    "title": "The Jail Fire Without an Answer",
+    "summary": "Before this was a handsome house, it was Wilmington's jail.",
+    "point": {
+      "at": {
+        "lat": 34.2354,
+        "lng": -77.94636
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Family timeline",
+        "publisher": "Burgwin-Wright House and Gardens",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.burgwinwrighthouse.com/family-timeline"
+      },
+      {
+        "title": "History",
+        "publisher": "Burgwin-Wright House and Gardens",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.burgwinwrighthouse.org/history"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Before this was a handsome house, it was Wilmington's jail. The museum's timeline\nrecords that its roof burned in 1768 under suspicious circumstances.\n\nSuspicious is the crucial word. The surviving account does not give us a proven culprit\nor a settled motive. Calling it a solved arson would turn a historical uncertainty into\nan accusation.\n\nThe fire nevertheless changed what happened to the property. John Burgwin subsequently\nacquired the site, and the house built in 1770 incorporated the old jail's walls.\n\nLook at the building from the public street. It can seem like a clean beginning: a\nmerchant's residence rising on a downtown corner. Underneath lies the unresolved damage\nthat made the transformation possible. This case ends with a new building, not an\nidentified offender. The physical aftermath survives more clearly than the answer.\n",
+    "teaser": "Before this was a handsome house, it was Wilmington's jail.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "unsolved",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes a suspicious fire. Nobody is described as hurt."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-jail-fire-without-an-answer",
+        "durationS": 72
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-kitchen-with-an-earlier-job",
+    "title": "The Kitchen with an Earlier Job",
+    "summary": "A kitchen can look like a modest supporting building.",
+    "point": {
+      "at": {
+        "lat": 34.23548,
+        "lng": -77.94634
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Family timeline",
+        "publisher": "Burgwin-Wright House and Gardens",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.burgwinwrighthouse.com/family-timeline"
+      },
+      {
+        "title": "History",
+        "publisher": "Burgwin-Wright House and Gardens",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.burgwinwrighthouse.org/history"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "A kitchen can look like a modest supporting building. Here, it carries part of the\nproperty's first life.\n\nThe museum identifies the detached kitchen as the former jailer's quarters. When the\nsite became a residence, the small structure gained a new domestic role.\n\nThat reuse matters. Wilmington's early buildings were working resources, not untouched\nmonuments. Owners adapted what already existed, and the resulting place kept traces of\nseveral purposes.\n\nIf you are on an authorized tour, let the scale of the kitchen pull your attention away\nfrom the grander house. Food preparation required heat, repeated tasks, and labor that a\npolished dining room could conceal. The building connects those ordinary demands with an\neven earlier responsibility: watching over the people confined on this corner.\n",
+    "teaser": "A kitchen can look like a modest supporting building.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-kitchen-with-an-earlier-job",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-lodge-on-orange-street",
+    "title": "The Lodge on Orange Street",
+    "summary": "The historic St.",
+    "point": {
+      "at": {
+        "lat": 34.23285,
+        "lng": -77.94738
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Historic St. John's Lodge building, Children's Museum complex, 116 Orange Street, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 65,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "St johns lodge d 107",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2023/12/11/st-johns-lodge-d-107"
+      },
+      {
+        "title": "Mission and history",
+        "publisher": "Play Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.playwilmington.org/mission-and-history"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The historic St. John's Lodge building dates to 1804. Its later uses included an art\nmuseum, and it now belongs to the Children's Museum complex.\n\nThis stop concerns the surviving building rather than the original purpose of every room\ninside today's museum.\n\nLook at the old structure from Orange Street. Its long life illustrates how an\ninstitution's needs can change while useful architecture remains.\n\nA lodge, an art gallery, and a children's learning space bring very different activities\nto an address. The connection is the building that could accommodate new possibilities.\nPreservation here did not mean keeping only one use forever. It meant retaining a\nsubstantial piece of downtown while finding reasons for later generations to cross its\nthreshold.\n",
+    "teaser": "The historic St.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-lodge-on-orange-street",
+        "durationS": 65
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-longest-line",
+    "title": "The Longest Line",
+    "summary": "In 1840, Wilmington gained a connection that reached far beyond the riverfront.",
+    "point": {
+      "at": {
+        "lat": 34.24445,
+        "lng": -77.94706
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Wilmington and Weldon Railroad marker, Third and Brunswick streets, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Wilmington and weldon railroad d 20",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2023/12/08/wilmington-and-weldon-railroad-d-20"
+      },
+      {
+        "title": "History",
+        "publisher": "Wilmington Railroad Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wrrm.org/history.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In 1840, Wilmington gained a connection that reached far beyond the riverfront.\n\nThe Wilmington and Weldon Railroad opened a continuous line of about 161 miles. At\ncompletion, it was regarded as the longest continuous railroad line in the world.\n\nThat achievement changed how the port could connect with inland markets. The river\nremained important, but goods and passengers had another long route into and out of the\ncity.\n\nListen beside the historical marker. Do not enter the rail corridor. The impressive part\nis not merely the distance: every mile had to function as part of one connected system.\nWilmington's story widened along those rails. The city was no longer only a place\nreached by the river; it became an endpoint in a much larger network.\n",
+    "teaser": "In 1840, Wilmington gained a connection that reached far beyond the riverfront.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-longest-line",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-mansion-they-tried-to-burn",
+    "title": "The Mansion They Tried to Burn",
+    "summary": "The columns still stand.",
+    "point": {
+      "at": {
+        "lat": 34.23595,
+        "lng": -77.94285
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 73,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Bellamy mansion suffers fire of incendiary origin",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/museum-blog/bellamy-mansion-suffers-fire-of-incendiary-origin"
+      },
+      {
+        "title": "Audio 1",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/audio-1.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The columns still stand. That makes it easy to miss the violence committed inside this\nhouse on March 13, 1972.\n\nThe museum describes an arson attack in which gasoline was spread on floors and ignited.\nFire damaged plaster, woodwork, fixtures, and mirrors. The outside survived while the\ninterior needed extensive restoration.\n\nNo culprit or motive was established. Suggestions about political motives remain\ntheories, and this story does not identify anyone as responsible.\n\nWhat happened afterward is visible in the building's continued life. Preservation turned\na damaged, empty mansion into a place where visitors can examine the work of enslaved\nand free Black craftspeople, family history, and the restoration itself.\n\nFrom the sidewalk, hold both versions in mind: the building someone tried to destroy,\nand the building a community decided was worth keeping.\n",
+    "teaser": "The columns still stand.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "unsolved",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes an arson attack on the house. Nobody is described as hurt."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-mansion-they-tried-to-burn",
+        "durationS": 73
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-mansion-with-boarders",
+    "title": "The Mansion with Boarders",
+    "summary": "An old family home can continue by becoming something its builders never anticipated.",
+    "point": {
+      "at": {
+        "lat": 34.23351,
+        "lng": -77.94601
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Latimer House, 126 South Third Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 73,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "About",
+        "publisher": "Latimer House Museum, Lower Cape Fear Historical Society",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://latimerhouse.org/about/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "An old family home can continue by becoming something its builders never anticipated.\n\nAfter William Latimer's death in 1923, Margaret Latimer took in boarders. The museum\nrecords that artist Elisabeth Chant later rented a room here.\n\nThat shift brought additional lives into a house strongly identified with one family.\nPrivate rooms became lodgings; a formal residence gained a practical way to keep\noperating.\n\nLook at the windows from Third Street. They do not reveal which occupant belonged to\nwhich period. A mansion can conceal a boarding house in plain sight, because a changed\nuse does not always require a changed facade.\n\nThe house survived partly through adaptation. Its story is therefore more than an\naccount of affluent beginnings. It also includes the choices that allowed a large, aging\nbuilding to remain useful.\n",
+    "teaser": "An old family home can continue by becoming something its builders never anticipated.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-mansion-with-boarders",
+        "durationS": 73
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-mill-inside-the-shopping-district",
+    "title": "The Mill Inside the Shopping District",
+    "summary": "The Cotton Exchange can feel like a collection of old shops.",
+    "point": {
+      "at": {
+        "lat": 34.2395,
+        "lng": -77.94933
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Cotton Exchange, 321 North Front Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Central business district",
+        "publisher": "Downtown Business Alliance Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://dbawilmington.org/downtown/central-business-district/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The Cotton Exchange can feel like a collection of old shops. One of its earlier chapters\ninvolved something much less leisurely: milling.\n\nDowntown's business association identifies part of the complex with a flour and hominy\nmill before later alterations and cotton-business use. The connected buildings\naccumulated different jobs rather than appearing all at once as a shopping destination.\n\nWalk through only the passages open to visitors. Notice the changes in level and\nconstruction. They make more sense when you think of separate working buildings joined\ninto a modern experience.\n\nThe name Cotton Exchange highlights one phase. Milling reminds us that waterfront\ncommerce included everyday food as well as export goods. Behind the present storefronts\nlies a city that processed, stored, sold, and shipped the things people needed.\n",
+    "teaser": "The Cotton Exchange can feel like a collection of old shops.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-mill-inside-the-shopping-district",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-movie-theater-in-a-tent",
+    "title": "The Movie Theater in a Tent",
+    "summary": "Would you go to the movies inside a tent?",
+    "point": {
+      "at": {
+        "lat": 34.23807,
+        "lng": -77.9493
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bijou Park, 209 North Front Street, Wilmington, North Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Bijou Park",
+        "publisher": "City of Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonnc.gov/Connect-With-Us/Department-Directory/Parks-Recreation/Parks-Trails/Bijou-Park"
+      },
+      {
+        "title": "B003837",
+        "publisher": "North Carolina Architects and Builders, NC State University Libraries",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://ncarchitects.lib.ncsu.edu/buildings/B003837"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Would you go to the movies inside a tent? Wilmington's Bijou began that way in 1906,\nwith folding chairs for its audience.\n\nLater, a permanent theater took its place. The theater itself is gone now, but this park\nremembers it, including preserved tiles from the old building.\n\nStand on the open path and imagine choosing a chair before a show. The people coming\nhere were discovering a new kind of entertainment, not visiting an old landmark.\n\nNow you can visit the place where they gathered. Look for the name Bijou among the\npreserved features, without touching them. A small piece of lettering can help a big\nstory survive. The screen disappeared, but the park keeps a reminder of Wilmington's\nearly moviegoing days right on Front Street.\n",
+    "teaser": "Would you go to the movies inside a tent?",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/wilmington-the-movie-theater-in-a-tent",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-museum-moves-with-the-rails",
+    "title": "The Museum Moves with the Rails",
+    "summary": "A railroad museum has an unusual moving problem: some of its most important objects are built to travel, but cannot simply be driven…",
+    "point": {
+      "at": {
+        "lat": 34.24171,
+        "lng": -77.95067
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Wilmington Railroad Museum, 505 Nutt Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Museum move 2007",
+        "publisher": "Wilmington Railroad Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wrrm.org/museum-move---2007.html"
+      },
+      {
+        "title": "Wrrm.org",
+        "publisher": "Wilmington Railroad Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wrrm.org/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "A railroad museum has an unusual moving problem: some of its most important objects are\nbuilt to travel, but cannot simply be driven down a city street.\n\nThe museum's account of its 2007 relocation records the work of moving the collection to\nits present Nutt Street setting. A new location had to accommodate artifacts and\nfull-size railroad equipment together.\n\nThis building now gives the collection a downtown home beside the city's railroad\nhistory. The move was itself another chapter in preservation, not the end of the\nprocess.\n\nLook at the scale of the outdoor equipment from the permitted visitor area. Each large\nobject represents a decision to carry difficult evidence forward. Keeping history\nsometimes means arranging a journey for things that have already finished their working\njourneys.\n",
+    "teaser": "A railroad museum has an unusual moving problem: some of its most important objects are built to travel, but cannot simply be driven…",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-museum-moves-with-the-rails",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-other-wartime-uso",
+    "title": "The Other Wartime USO",
+    "summary": "The wartime welcome offered here had a boundary.",
+    "point": {
+      "at": {
+        "lat": 34.23312,
+        "lng": -77.9472
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Museum",
+        "publisher": "Wilmington Community Arts",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://wilmingtoncommunityarts.org/museum/"
+      },
+      {
+        "title": "July 4th open house",
+        "publisher": "Wilmington Community Arts",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://wilmingtoncommunityarts.org/classes-and-events/july-4th-open-house/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The wartime welcome offered here had a boundary. Wilmington's USO facilities were\nsegregated.\n\nThe city's history records a separate club on Nixon Street for African American service\nmembers. Today's museum includes a tribute to the Ninth and Nixon USO, preserving a\nstory that this building alone cannot fully represent.\n\nYou are at the interpretive site, not at that other club's original address. The\ndistinction matters. A visitor who hears only about this downtown center could mistake\none part of the wartime experience for everyone's experience.\n\nIf the exhibit is open, pause before the tribute. Both clubs served people preparing for\nmilitary duty, but their separation reflected the racial restrictions of civilian\nAmerica. Remembering the welcome requires remembering who was directed to a different\ndoor.\n",
+    "teaser": "The wartime welcome offered here had a boundary.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-other-wartime-uso",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-painting-with-a-river-journey",
+    "title": "The Painting with a River Journey",
+    "summary": "St.",
+    "point": {
+      "at": {
+        "lat": 34.2355,
+        "lng": -77.94559
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. James Episcopal Church, 25 South Third Street, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "A new journey for ecce homo",
+        "publisher": "St. James Parish",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.stjamesp.org/a-new-journey-for-ecce-homo/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "St. James preserves the story of Ecce Homo, a painting associated with the capture of a\nSpanish privateer vessel near Brunswick Town in 1748.\n\nThe parish's account says the salvaged painting went first to St. Philip's Church and\nlater to St. James after Brunswick Town was abandoned. Its artist remains uncertain.\n\nIn 2026, the parish reported sending the painting for conservation. This stop therefore\nconnects you with its history, not a promise that it is currently hanging inside.\n\nStand outside and consider an artwork that outlasted changes in location and care. Its\nstory is not only what it depicts. The journeys, the uncertain attribution, and the work\nneeded to stabilize the canvas all belong to it. The object survives because later\npeople keep accepting responsibility for its future.\n",
+    "teaser": "St.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-painting-with-a-river-journey",
+        "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-pelican-beside-the-marina",
+    "title": "The Pelican Beside the Marina",
+    "summary": "Dumay Gorham's Pelican places a coastal bird in sculptural form beside Port City Marina.",
+    "point": {
+      "at": {
+        "lat": 34.2454,
+        "lng": -77.9513
+      },
+      "triggerRadiusKm": 0.09,
+      "place": "Pelican sculpture near Port City Marina, 10 Harnett Street, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Discover outdoor art in wilmington nc",
+        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonandbeaches.com/blog/post/discover-outdoor-art-in-wilmington-nc/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Dumay Gorham's Pelican places a coastal bird in sculptural form beside Port City Marina.\n\nThe marina setting changes how you encounter the work. Water, boats, and open air supply\npart of its context; the sculpture turns attention toward a bird that belongs to the\nregion's coastal imagination.\n\nYou are looking at art, not a live animal or an exact scientific diagram. Its shape\nreflects choices about what a viewer will recognize and what the material can express.\n\nUse the public viewing route and leave private docks alone. Notice the outline before\nlooking for smaller details. A sculpture can make you pause in a place built for\ndepartures and arrivals. This bird stays while the boats move, giving the waterfront a\ndifferent sort of permanent resident.\n",
+    "teaser": "Dumay Gorham's Pelican places a coastal bird in sculptural form beside Port City Marina.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-pelican-beside-the-marina",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-people-who-decided-to-save-downtown",
+    "title": "The People Who Decided to Save Downtown",
+    "summary": "Historic Wilmington Foundation began in 1966, when preservation advocates organized to protect the city's historic places.",
+    "point": {
+      "at": {
+        "lat": 34.23307,
+        "lng": -77.94656
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Historic Wilmington Foundation headquarters, 211 Orange Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Headquarters",
+        "publisher": "Historic Wilmington Foundation",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://historicwilmington.org/headquarters/"
+      },
+      {
+        "title": "Sixty years of historic wilmington foundation",
+        "publisher": "Historic Wilmington Foundation",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://historicwilmington.org/sixty-years-of-historic-wilmington-foundation/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Historic Wilmington Foundation began in 1966, when preservation advocates organized to\nprotect the city's historic places.\n\nDowntown survival was not automatic. Buildings could be neglected, demolished, or\ntreated as obstacles to a different kind of development. The foundation made\npreservation an ongoing community effort.\n\nThis Orange Street address is its present headquarters, an associated site rather than\nthe setting of every early campaign. From the sidewalk, look at the neighboring streets\nas a collection of individual decisions.\n\nAn old building remains because someone maintains it, finds it useful, or argues for its\nvalue. A historic district is the accumulated result. The foundation's story helps\nexplain why downtown Wilmington still offers more than a list of vanished places. Many\nof its stories retain walls, doors, and street corners you can encounter.\n",
+    "teaser": "Historic Wilmington Foundation began in 1966, when preservation advocates organized to protect the city's historic places.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-people-who-decided-to-save-downtown",
+        "durationS": 70
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-press-that-the-mob-burned",
+    "title": "The Press That the Mob Burned",
+    "summary": "An ordinary block can hold the site of an extraordinary assault.",
+    "point": {
+      "at": {
+        "lat": 34.23038,
+        "lng": -77.94008
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Former Daily Record site, Seventh Street between Nun and Church streets, Wilmington, North Carolina"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 71,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Alex manly 1866 1944 d 103",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2023/12/11/alex-manly-1866-1944-d-103"
+      },
+      {
+        "title": "1898 wilmington coup",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/1898-wilmington-coup"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "An ordinary block can hold the site of an extraordinary assault. On November 10, 1898, a\nwhite supremacist mob came to the Daily Record, Wilmington's Black-owned newspaper.\n\nThe newspaper occupied Free Love Hall on this Seventh Street block. The mob invaded the\nbuilding and set it ablaze. Editor Alex Manly had already fled, anticipating the\nviolence.\n\nThis was part of the Wilmington coup, not an isolated dispute over a newspaper.\nDestroying the press attacked a community's ability to speak while armed violence spread\nthrough the city.\n\nThe original building is gone. Listen from the public sidewalk rather than entering\ntoday's property. Its absence does not make the event less specific. Here, printed words\nwere answered with fire. The record we can recover belongs to the people whose right to\npublish was attacked.\n",
+    "teaser": "An ordinary block can hold the site of an extraordinary assault.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "alleged",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-press-that-the-mob-burned",
+        "durationS": 71
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-railroad-called-raleigh",
+    "title": "The Railroad Called Raleigh",
+    "summary": "The railroad remembered here did not begin with the name Wilmington and Weldon.",
+    "point": {
+      "at": {
+        "lat": 34.24441,
+        "lng": -77.94702
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Wilmington and Weldon Railroad marker, Third and Brunswick streets, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Wilmington and weldon railroad d 20",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2023/12/08/wilmington-and-weldon-railroad-d-20"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The railroad remembered here did not begin with the name Wilmington and Weldon. It was\noriginally chartered as the Wilmington and Raleigh Railroad.\n\nIts completed route reached Weldon instead of the state capital. The later name\nreflected the connection that actually existed rather than the destination first\nimagined.\n\nThat small naming change contains a larger lesson about infrastructure. A plan on paper\nis a proposal; a working line is the result of decisions, geography, financing, and\nconstruction.\n\nLook at the name on the marker. It records the outcome, while the earlier title\npreserves the ambition. Wilmington's future was not delivered in one straight line from\nidea to result. The railway became important through the route that could be built, and\nthe city learned to use the connection it obtained.\n",
+    "teaser": "The railroad remembered here did not begin with the name Wilmington and Weldon.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-railroad-called-raleigh",
+        "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-shop-that-made-the-parts",
+    "title": "The Shop That Made the Parts",
+    "summary": "Wilmington Iron Works made components for the machinery that kept the port city functioning.",
+    "point": {
+      "at": {
+        "lat": 34.23262,
+        "lng": -77.94912
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Former Wilmington Iron Works Machine Shop, 201 South Water Street, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Local Historic Landmarks",
+        "publisher": "City of Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Wilmington Iron Works made components for the machinery that kept the port city\nfunctioning. The city's history lists products ranging from fences to parts for\nlocomotives and steamboats.\n\nThis building began as a warehouse and was later reconstructed in brick. In 2025,\nWilmington designated the former machine shop a local historic landmark.\n\nListen from the public sidewalk. A waterfront economy needs more than ships and cargo.\nEquipment wears out; parts must be produced, repaired, and fitted.\n\nThe shop's importance lies in that supporting work. Its products could leave the\nbuilding and become nearly invisible inside larger machines. The surviving structure\nrestores a place to that labor, reminding you that the city depended on skilled\nmanufacturing behind the more dramatic scenes of transportation.\n",
+    "teaser": "Wilmington Iron Works made components for the machinery that kept the port city functioning.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-shop-that-made-the-parts",
+        "durationS": 66
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-stars-came-through-wilmington",
+    "title": "The Stars Came Through Wilmington",
+    "summary": "Thalian Hall's history lists appearances by performers including Lillian Russell, Buffalo Bill Cody, and John Philip Sousa.",
+    "point": {
+      "at": {
+        "lat": 34.23777,
+        "lng": -77.94562
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Thalian Hall, 310 Chestnut Street, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "About",
+        "publisher": "Thalian Hall",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.thalianhall.org/about"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Thalian Hall's history lists appearances by performers including Lillian Russell,\nBuffalo Bill Cody, and John Philip Sousa.\n\nThey brought different kinds of entertainment, but their presence made the same point:\nWilmington belonged to a national touring circuit. A port city could receive artistic\ntraffic as well as commercial cargo.\n\nWe do not need to invent the sound of a particular concert or borrow a famous tune. The\ndocumented appearances are enough to establish the connection.\n\nStand outside the theater and consider the practical journey behind a celebrated name.\nPerformers, equipment, schedules, and audiences had to meet here on the same date. The\nbuilding supplied the local end of that arrangement. For an evening, a touring\nreputation became something Wilmington residents could experience together.\n",
+    "teaser": "Thalian Hall's history lists appearances by performers including Lillian Russell, Buffalo Bill Cody, and John Philip Sousa.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-stars-came-through-wilmington",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-tiny-train-with-a-huge-record",
+    "title": "The Tiny Train with a Huge Record",
+    "summary": "In April 2011, model railroaders made a very small kind of train do something very big inside this convention center.",
+    "point": {
+      "at": {
+        "lat": 34.24265,
+        "lng": -77.9504
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Wilmington Convention Center, 515 Nutt Street, Wilmington, North Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Guinness world record 2011",
+        "publisher": "Wilmington Railroad Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wrrm.org/guinness-world-record-2011.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In April 2011, model railroaders made a very small kind of train do something very big\ninside this convention center.\n\nThey connected thirty-one model locomotives and 1,563 cars. The train stretched more\nthan nine hundred feet and completed the run needed for a Guinness world record.\n\nThe event is over; there is no promise that the record train is waiting inside today.\nBut this is the building where it happened.\n\nLook at its size from the public sidewalk. One tiny car would be easy to hold.\nConnecting more than fifteen hundred of them created a problem of teamwork, space, and\ncareful movement. The achievement was not just owning lots of pieces. It was making all\nthose pieces work together as one astonishing train.\n",
+    "teaser": "In April 2011, model railroaders made a very small kind of train do something very big inside this convention center.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/wilmington-the-tiny-train-with-a-huge-record",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-tree-kept-in-watercolor",
+    "title": "The Tree Kept in Watercolor",
+    "summary": "The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould Latimer among his works.",
+    "point": {
+      "at": {
+        "lat": 34.23359,
+        "lng": -77.94599
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Latimer House, 126 South Third Street, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "About",
+        "publisher": "Latimer House Museum, Lower Cape Fear Historical Society",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://latimerhouse.org/about/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould\nLatimer among his works.\n\nA tree that no longer survives can remain available through art. The painting records an\nartist's view, not a replacement for the actual tree or a photograph of every detail.\n\nYou are at the house associated with the artist and the collection. If the work is\navailable on your authorized visit, look first at what the artist chose to emphasize. Do\nnot assume every object in the collection is always on display.\n\nThe image gives the vanished landmark a different kind of life. Waterfront memory moved\nfrom a living tree into paper, pigment, and preservation. An artist's decision to look\nclosely became something later Wilmington visitors could still encounter.\n",
+    "teaser": "The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould Latimer among his works.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-tree-kept-in-watercolor",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-wartime-dance-floor",
+    "title": "The Wartime Dance Floor",
+    "summary": "The USO's wartime program included big-band dances, plays, recitals, and radio broadcasts.",
+    "point": {
+      "at": {
+        "lat": 34.2332,
+        "lng": -77.94718
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Museum",
+        "publisher": "Wilmington Community Arts",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://wilmingtoncommunityarts.org/museum/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The USO's wartime program included big-band dances, plays, recitals, and radio\nbroadcasts. Entertainment was part of what the building offered people far from home.\n\nThat did not make the war disappear. It gave service members a temporary change of\nrhythm: a chance to listen, move, and join a crowd for reasons other than military duty.\n\nStand in the open lobby if permitted, or listen from the sidewalk. The building helps\nyou locate the idea without pretending a particular dance is happening around you.\n\nArt can do practical work. A song or performance may help a stranger feel less isolated,\neven when the larger circumstances remain difficult. Here, organized entertainment\nbelonged to a wider effort of hospitality. The dance floor was one way Wilmington\noffered an evening's company.\n",
+    "teaser": "The USO's wartime program included big-band dances, plays, recitals, and radio broadcasts.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-wartime-dance-floor",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-wilmington-ten-and-the-missing-evidence",
+    "title": "The Wilmington Ten and the Missing Evidence",
+    "summary": "This block was a gathering place for students protesting unequal treatment during school desegregation in 1971.",
+    "point": {
+      "at": {
+        "lat": 34.23098,
+        "lng": -77.94077
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Wilmington Ten marker near Gregory Congregational Church, 609 Nun Street, Wilmington, North Carolina"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Wilmington 10 and firebombing mikes grocery",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2016/02/06/wilmington-10-and-firebombing-mikes-grocery"
+      },
+      {
+        "title": "Marker 262587",
+        "publisher": "The Historical Marker Database",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.hmdb.org/m.asp?m=262587"
+      },
+      {
+        "title": "Chavis v. North Carolina, 637 F.2d 213 (4th Cir. 1980)",
+        "publisher": "United States Court of Appeals for the Fourth Circuit",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This block was a gathering place for students protesting unequal treatment during school\ndesegregation in 1971. Nearby, Mike's Grocery was firebombed.\n\nTen people were convicted on charges connected with the fire. Their case became known as\nthe Wilmington Ten. The evidence and prosecution were later exposed as deeply flawed,\nincluding perjured testimony.\n\nThe convictions were overturned by the federal appeals court in 1980. Governor Beverly\nPerdue issued pardons in 2012. Responsibility for the grocery arson remains unclear;\nthese ten people should not be presented as its proven perpetrators.\n\nListen beside the marker, not inside the church without permission. This true crime\nstory includes a crime committed against justice itself: people losing years while a\nfalse case was challenged. The ending is correction, but correction cannot return the\ntime already taken.\n",
+    "teaser": "This block was a gathering place for students protesting unequal treatment during school desegregation in 1971.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": true,
+      "convictionStatus": "exonerated",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes an arson and a wrongful conviction. Nothing is described in detail."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-wilmington-ten-and-the-missing-evidence",
+        "durationS": 70
+      }
+    ]
+  },
+  {
+    "id": "wilmington-thirty-years-along-the-river",
+    "title": "Thirty Years Along the River",
+    "summary": "The Riverwalk can feel like something the city always had.",
+    "point": {
+      "at": {
+        "lat": 34.23545,
+        "lng": -77.94992
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Wilmington Riverwalk near Market Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Riverwalk",
+        "publisher": "City of Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.wilmingtonnc.gov/Connect-With-Us/Department-Directory/Parks-Recreation/Riverwalk"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The Riverwalk can feel like something the city always had. Its construction instead\nunfolded over about thirty years.\n\nWilmington marked its completion in November 2017. The city describes a route running\nfrom Nun Street toward the Isabel Holmes Bridge, linking a long stretch of downtown\nwaterfront.\n\nThat project changed how people could encounter the river. A sequence of working and\ncommercial edges became a connected public experience.\n\nPause without blocking the path. The people moving past you are using the result of many\nseparate planning and building decisions. The story is not one spectacular opening but\npersistence over time. Wilmington gradually made a continuous place to walk beside the\nwater that had shaped its economy long before visitors came here simply to enjoy the\nview.\n",
+    "teaser": "The Riverwalk can feel like something the city always had.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-thirty-years-along-the-river",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-this-liberty-bell-came-from-the-river-fleet",
+    "title": "This Liberty Bell Came from the River Fleet",
+    "summary": "The museum lists a Liberty Bell salvaged from the Brunswick River Reserve Fleet among its displays.",
+    "point": {
+      "at": {
+        "lat": 34.23314,
+        "lng": -77.94715
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "July 4th open house",
+        "publisher": "Wilmington Community Arts",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://wilmingtoncommunityarts.org/classes-and-events/july-4th-open-house/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The museum lists a Liberty Bell salvaged from the Brunswick River Reserve Fleet among\nits displays.\n\nIt is not Philadelphia's famous Liberty Bell. The similar name belongs to a different\nobject with a different story.\n\nStand where you can see the display with your grown-up. Read the label before making\nguesses. That is one of the best tricks for exploring a museum: let the object surprise\nyou, then use the information nearby to learn what it really is.\n\nThis bell connects the museum with ships once gathered in the river fleet. An object can\nleave its first setting and still help us remember it. Here, something associated with\nthe water has come indoors, where you can stop, look closely, and ask how it reached\nthis new home.\n",
+    "teaser": "The museum lists a Liberty Bell salvaged from the Brunswick River Reserve Fleet among its displays.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/wilmington-this-liberty-bell-came-from-the-river-fleet",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-thomas-wright-changes-the-house",
+    "title": "Thomas Wright Changes the House",
+    "summary": "Thomas Henry Wright inherited this house as a boy and later trained as a physician.",
+    "point": {
+      "at": {
+        "lat": 34.23542,
+        "lng": -77.94631
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Family timeline",
+        "publisher": "Burgwin-Wright House and Gardens",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.burgwinwrighthouse.com/family-timeline"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Thomas Henry Wright inherited this house as a boy and later trained as a physician. In\n1845, he enlarged the property.\n\nThe museum's family timeline also connects him with banking and railroad leadership. A\nsingle resident's career could link domestic space with the institutions helping\nWilmington grow.\n\nLook at the house from the public corner. Its name joins two families, but even one\nfamily's occupancy included substantial change. Thomas did not receive a finished\nmuseum; he received a working residence that could be adapted.\n\nThe expansion gives his life a physical consequence here. The rooms belonged to\ndifferent decisions made at different times. His story helps explain why the building\ncannot be read as one moment in 1770. Later occupants continued to shape the place they\ninherited.\n",
+    "teaser": "Thomas Henry Wright inherited this house as a boy and later trained as a physician.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-thomas-wright-changes-the-house",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-three-buildings-become-a-play-place",
+    "title": "Three Buildings Become a Play Place",
+    "summary": "The Children's Museum did not move into one brand-new building.",
+    "point": {
+      "at": {
+        "lat": 34.2329,
+        "lng": -77.94765
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Children's Museum of Wilmington, 116 Orange Street, Wilmington, North Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Mission and history",
+        "publisher": "Play Wilmington",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.playwilmington.org/mission-and-history"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The Children's Museum did not move into one brand-new building. In 2004, it bought a\ngroup of three old buildings downtown.\n\nThey included a Masonic lodge, a Greek Orthodox church, and the Cowan house. The\nbuildings had already helped people meet, worship, and live before they became part of a\nplace for learning through play.\n\nLook at the complex with your grown-up. Can you notice differences between its parts?\nYou do not have to know every architectural name to recognize that they were not all\nbuilt as one piece.\n\nThis is a true story of finding a new use for old places. The museum kept important\nparts of downtown standing and brought children inside for a different purpose. A\nbuilding's first job does not have to be its last.\n",
+    "teaser": "The Children's Museum did not move into one brand-new building.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/wilmington-three-buildings-become-a-play-place",
+        "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "wilmington-trimbles-surviving-theater",
+    "title": "Trimble's Surviving Theater",
+    "summary": "Thalian Hall is the only surviving theater designed by John Montague Trimble, according to its institutional history.",
+    "point": {
+      "at": {
+        "lat": 34.23769,
+        "lng": -77.94564
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Thalian Hall, 310 Chestnut Street, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 71,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "About",
+        "publisher": "Thalian Hall",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.thalianhall.org/about"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Thalian Hall is the only surviving theater designed by John Montague Trimble, according\nto its institutional history.\n\nThat makes this building more than a local survivor. It carries physical evidence of a\ntheater architect's work after his other theaters have disappeared.\n\nThe original project joined performance with municipal functions. Art and government\nshared a substantial downtown building rather than occupying separate civic worlds.\n\nFrom outside, notice how confidently the building addresses the street. A theater begins\nits work before an audience reaches a seat: the approach, entrance, and sense of\noccasion all matter.\n\nThe surviving structure lets today's visitors encounter a design that written\ndescriptions alone cannot replace. Trimble's name may be unfamiliar, but the building\nstill performs one part of his intention: making an arrival feel significant.\n",
+    "teaser": "Thalian Hall is the only surviving theater designed by John Montague Trimble, according to its institutional history.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-trimbles-surviving-theater",
+        "durationS": 71
+      }
+    ]
+  },
+  {
+    "id": "wilmington-twenty-four-hours-at-the-uso",
+    "title": "Twenty-Four Hours at the USO",
+    "summary": "During the Second World War, this corner offered service members a place to spend their hours away from duty.",
+    "point": {
+      "at": {
+        "lat": 34.23316,
+        "lng": -77.94724
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Museum",
+        "publisher": "Wilmington Community Arts",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://wilmingtoncommunityarts.org/museum/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "During the Second World War, this corner offered service members a place to spend their\nhours away from duty.\n\nThe USO club opened in December 1941. Volunteers kept it operating around the clock,\nwith recreation, assistance, and familiar comforts for visitors far from home.\n\nIts public role was built from repeated small acts: directing a newcomer, providing\nrefreshments, arranging an activity, keeping the doors available. A building can support\nwartime life without being a battlefield.\n\nPause at the entrance. The continuity is striking: a place created for gathering still\nserves community life. The current arts center has a different purpose, but the building\nremains a meeting point. Its wartime story is measured in the people who passed through\nand the practical welcome they found here.\n",
+    "teaser": "During the Second World War, this corner offered service members a place to spend their hours away from duty.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-twenty-four-hours-at-the-uso",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-washington-sees-the-port",
+    "title": "Washington Sees the Port",
+    "summary": "In 1791, President George Washington visited Wilmington during his Southern Tour.",
+    "point": {
+      "at": {
+        "lat": 34.23445,
+        "lng": -77.9461
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Washington's Southern Tour marker, Third and Dock streets, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Washingtons southern tour d 19",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2023/12/08/washingtons-southern-tour-d-19"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In 1791, President George Washington visited Wilmington during his Southern Tour.\n\nHis diary described a compact town with some good houses and recorded a disagreement\nover how accurately the census represented its population. The visit gave the first\npresident a direct encounter with the developing port.\n\nThis marker commemorates the visit; it does not prove that he stood at the exact spot\nwhere you are listening. That difference keeps the scene honest.\n\nLook along the historic streets and imagine a president trying to understand a place by\nmoving through it. A tour could connect the new federal government with communities that\notherwise knew it through correspondence and law. Wilmington was one stop in that\neffort, and Washington left a brief written impression rather than a complete portrait.\n",
+    "teaser": "In 1791, President George Washington visited Wilmington during his Southern Tour.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-washington-sees-the-port",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-when-the-house-became-headquarters",
+    "title": "When the House Became Headquarters",
+    "summary": "In 1865, the Bellamy mansion took on a job its owners had not planned.",
+    "point": {
+      "at": {
+        "lat": 34.23588,
+        "lng": -77.94287
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Audio 1",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/audio-1.html"
+      },
+      {
+        "title": "War and politics a house divided",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/museum-blog/war-and-politics-a-house-divided"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In 1865, the Bellamy mansion took on a job its owners had not planned.\n\nAfter Union forces entered Wilmington, military staff used the empty house as\nheadquarters. The property of a Confederate-supporting household became a place from\nwhich Union officers worked.\n\nThe change was part of a much larger upheaval. Wilmington's Confederate port economy was\ncollapsing, and emancipation was transforming the lives of the people whose labor had\nsustained households like this one.\n\nLook toward the entrance from the public sidewalk. The same rooms could serve domestic\nauthority in one period and military authority in another. Their walls did not settle\nthe conflict; occupation changed who controlled the space. A building that appears\nunified from outside can hold profoundly different histories of power within.\n",
+    "teaser": "In 1865, the Bellamy mansion took on a job its owners had not planned.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-when-the-house-became-headquarters",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-when-the-stage-turned-electric",
+    "title": "When the Stage Turned Electric",
+    "summary": "In 1909, Thalian Hall installed electric stage lights.",
+    "point": {
+      "at": {
+        "lat": 34.23774,
+        "lng": -77.94575
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Thalian Hall, 310 Chestnut Street, Wilmington, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "About",
+        "publisher": "Thalian Hall",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.thalianhall.org/about"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In 1909, Thalian Hall installed electric stage lights. Its renovation also changed the\nbalconies and proscenium, the frame around the stage.\n\nThe theater was adapting to new expectations instead of preserving every feature from\nits opening. The audience's view and the performers' working conditions could change\nwhile the building continued serving the same larger purpose.\n\nIf you can enter through an authorized visit, look toward the stage opening. The frame\ntells you where to direct attention; light tells you what to notice within it.\n\nFrom outside, the story still works. A historic theater is not one unaltered machine. It\nis a place repeatedly adjusted so performance can continue. The 1909 work reminds us\nthat what now looks traditional was once a substantial modern improvement.\n",
+    "teaser": "In 1909, Thalian Hall installed electric stage lights.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-when-the-stage-turned-electric",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-william-goulds-initials",
+    "title": "William Gould's Initials",
+    "summary": "William Benjamin Gould was an enslaved plasterer hired out for work at the Bellamy site.",
+    "point": {
+      "at": {
+        "lat": 34.23591,
+        "lng": -77.94294
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Previous",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/museum-blog/previous/2"
+      },
+      {
+        "title": "The people",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/the-people.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "William Benjamin Gould was an enslaved plasterer hired out for work at the Bellamy site.\nThe museum records that a later renovation revealed plasterwork bearing his initials.\n\nIn 1862, Gould escaped down the Cape Fear River and entered Union naval service. He kept\na diary, leaving a record in his own words beyond the evidence of his skilled labor.\n\nThis is his documented worksite, not the location of every stage of his escape or\nservice.\n\nIf the identified plaster is available on your authorized tour, notice how small a\nsignature can be beside a large house. Initials connect a finished surface to a\nparticular person. Gould's later life changes the meaning again: the craftsperson was\nalso someone who acted to claim freedom and preserve his experience.\n",
+    "teaser": "William Benjamin Gould was an enslaved plasterer hired out for work at the Bellamy site.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-william-goulds-initials",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-william-hoopers-wilmington-beginning",
+    "title": "William Hooper's Wilmington Beginning",
+    "summary": "William Hooper arrived in Wilmington in 1764 and opened a law office.",
+    "point": {
+      "at": {
+        "lat": 34.23688,
+        "lng": -77.946
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "William Hooper marker, Third and Princess streets, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "William hooper d 45",
+        "publisher": "North Carolina Department of Natural and Cultural Resources",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dncr.nc.gov/blog/2023/12/08/william-hooper-d-45"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "William Hooper arrived in Wilmington in 1764 and opened a law office. Twelve years\nlater, he signed the Declaration of Independence.\n\nThat national achievement can obscure the local beginning: a young lawyer building a\ncareer in a port town. Wilmington supplied professional relationships and a political\nsetting before the Continental Congress became his larger stage.\n\nYou are at a marker honoring that connection, not standing inside a verified surviving\noffice.\n\nLook along Third Street and think about how a public life begins. The later signature\ngives Hooper a place in national memory, but the earlier years consisted of work and\ndecisions whose consequences were still unknown. The marker brings the two scales\ntogether: a person's Wilmington chapter and the document that would define his\nreputation.\n",
+    "teaser": "William Hooper arrived in Wilmington in 1764 and opened a law office.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-william-hoopers-wilmington-beginning",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-zebulon-latimers-port-city-fortune",
+    "title": "Zebulon Latimer's Port-City Fortune",
+    "summary": "Zebulon Latimer came from Connecticut and built a career as a commission merchant in Wilmington.",
+    "point": {
+      "at": {
+        "lat": 34.23348,
+        "lng": -77.94607
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Latimer House, 126 South Third Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "About",
+        "publisher": "Latimer House Museum, Lower Cape Fear Historical Society",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://latimerhouse.org/about/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Zebulon Latimer came from Connecticut and built a career as a commission merchant in\nWilmington. His business success helped support the substantial house completed here in\n1852.\n\nThe museum also connects his wealth with investments in gas lighting and railroads. His\ndomestic surroundings belonged to a larger commercial network.\n\nThis is his residence, not the place where every business transaction occurred. The\ndistinction helps you read the house as evidence of economic results rather than the\nwhole economy itself.\n\nFrom Third Street, notice the confidence of its scale. A merchant's success could become\nbrick, rooms, and furnishings. The facade makes private prosperity visible, while the\nwider story asks where that prosperity came from and whose work helped sustain the city\naround it.\n",
+    "teaser": "Zebulon Latimer came from Connecticut and built a career as a commission merchant in Wilmington.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-zebulon-latimers-port-city-fortune",
+        "durationS": 66
+      }
+    ]
   }
 ] as const;
 

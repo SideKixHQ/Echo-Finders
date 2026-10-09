@@ -1,0 +1,40 @@
+# From W052 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sculpture viewing area; remain behind any barriers and do not climb the artwork.
+# Position: Sculpture reported 'at the foot of Market Street' on the Riverwalk; exact spot unconfirmed, placed on Riverwalk just south of Market landing. (low confidence).
+id: wilmington-a-welcome-with-teeth
+title: "A Welcome with Teeth"
+summary: "Paul Hill's Southern Hospitality takes the shape of an enormous Venus flytrap."
+place: "Southern Hospitality sculpture, downtown Riverwalk near the foot of Market Street, Wilmington, North Carolina"
+at: { lat: 34.23530, lng: -77.94992 }
+triggerRadiusKm: 0.06
+category: arts
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Paul Hill's Southern Hospitality takes the shape of an enormous Venus flytrap."
+script: |
+  Paul Hill's Southern Hospitality takes the shape of an enormous Venus flytrap. The
+  tourism authority describes the sculpture as metal and glass, about fifteen feet high.
+
+  Its title creates a playful tension. Hospitality promises welcome; the plant's trap
+  suggests a very different relationship with its visitors.
+
+  The artwork does not need to move to make that joke work. Its scale changes a small,
+  locally associated plant into something that can meet your gaze on the waterfront.
+
+  Stand back far enough to see the silhouette. Then notice the materials: manufactured
+  surfaces representing a living organism. A public sculpture can make a familiar place
+  feel briefly strange. Here, an emblem of the region becomes a greeting you are unlikely
+  to mistake for an ordinary street sign.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Discover outdoor art in wilmington nc"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/discover-outdoor-art-in-wilmington-nc/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

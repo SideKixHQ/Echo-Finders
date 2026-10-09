@@ -1,6 +1,6 @@
 # ADR-0006 — The MVP library is public domain and CC-BY only
 
-**Status:** accepted · **Date:** 2026-09-21
+**Status:** accepted, amended by ADR-0016 (drafts and legends) · **Date:** 2026-09-21
 
 ## Context
 The library should be "free and clear" for the MVP: no per-source negotiations, nothing

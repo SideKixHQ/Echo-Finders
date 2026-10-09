@@ -1,0 +1,42 @@
+# From W056 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk beside the state marker; commemorative stop, not an identified surviving law office.
+# Position: DNCR D-45 'Third St at Princess St'; no HMDB coords found for it. Intersection from HMDB Statue of Liberty replica marker at 3rd & Princess (34.23688,-77.94595); corner not confirmed (within ~30 m) (medium confidence).
+id: wilmington-william-hoopers-wilmington-beginning
+title: "William Hooper's Wilmington Beginning"
+summary: "William Hooper arrived in Wilmington in 1764 and opened a law office."
+place: "William Hooper marker, Third and Princess streets, Wilmington, North Carolina"
+at: { lat: 34.23688, lng: -77.94600 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "William Hooper arrived in Wilmington in 1764 and opened a law office."
+script: |
+  William Hooper arrived in Wilmington in 1764 and opened a law office. Twelve years
+  later, he signed the Declaration of Independence.
+
+  That national achievement can obscure the local beginning: a young lawyer building a
+  career in a port town. Wilmington supplied professional relationships and a political
+  setting before the Continental Congress became his larger stage.
+
+  You are at a marker honoring that connection, not standing inside a verified surviving
+  office.
+
+  Look along Third Street and think about how a public life begins. The later signature
+  gives Hooper a place in national memory, but the earlier years consisted of work and
+  decisions whose consequences were still unknown. The marker brings the two scales
+  together: a person's Wilmington chapter and the document that would define his
+  reputation.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "William hooper d 45"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/08/william-hooper-d-45
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

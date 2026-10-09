@@ -1,0 +1,42 @@
+# From W070 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk facing the associated family home.
+# Position: NCSU Built Heritage 34.233547,-77.945924; nudged west to east sidewalk of 3rd between Dock and Orange; fits grid (Dock 34.2344) (high confidence).
+# Shares a stop with other echoes, so it sits 8m off the spot to keep its pin tappable.
+id: wilmington-elizabeth-savage-latimers-wilmington
+title: "Elizabeth Savage Latimer's Wilmington"
+summary: "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St."
+place: "Latimer House, 126 South Third Street, Wilmington, North Carolina"
+at: { lat: 34.23361, lng: -77.94610 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St."
+script: |
+  Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St.
+  James in 1848. The house built four years later became their family residence.
+
+  Her local background complicates the idea of the house as simply the achievement of a
+  merchant who arrived from elsewhere. Family relationships tied it to a city that already
+  had its own networks and histories.
+
+  Stand outside the home and consider what is left unnamed when a household is introduced
+  only by its male owner. A marriage and a family are not incidental to a residence's
+  meaning.
+
+  Elizabeth's story supplies a different connection between the building and Wilmington.
+  The house represented shared family life, shaped by her place in the community as well
+  as her husband's commercial career.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "About"
+    publisher: "Latimer House Museum, Lower Cape Fear Historical Society"
+    url: https://latimerhouse.org/about/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

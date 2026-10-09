@@ -1,0 +1,43 @@
+# From W097 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Open museum display area; do not ring or handle the bell unless staff specifically permit it.
+# Position: West sidewalk of S 2nd St at the USO entrance, ~23 m north of Orange; address point + OSM footprint (building is NW corner of 2nd & Orange) (high confidence).
+# Shares a stop with other echoes, so it sits 9m off the spot to keep its pin tappable.
+id: wilmington-this-liberty-bell-came-from-the-river-fleet
+title: "This Liberty Bell Came from the River Fleet"
+summary: "The museum lists a Liberty Bell salvaged from the Brunswick River Reserve Fleet among its displays."
+place: "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Carolina"
+at: { lat: 34.23314, lng: -77.94715 }
+triggerRadiusKm: 0.04
+category: kids
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [wilmington, downtown]
+teaser: "The museum lists a Liberty Bell salvaged from the Brunswick River Reserve Fleet among its displays."
+script: |
+  The museum lists a Liberty Bell salvaged from the Brunswick River Reserve Fleet among
+  its displays.
+
+  It is not Philadelphia's famous Liberty Bell. The similar name belongs to a different
+  object with a different story.
+
+  Stand where you can see the display with your grown-up. Read the label before making
+  guesses. That is one of the best tricks for exploring a museum: let the object surprise
+  you, then use the information nearby to learn what it really is.
+
+  This bell connects the museum with ships once gathered in the river fleet. An object can
+  leave its first setting and still help us remember it. Here, something associated with
+  the water has come indoors, where you can stop, look closely, and ask how it reached
+  this new home.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "July 4th open house"
+    publisher: "Wilmington Community Arts"
+    url: https://wilmingtoncommunityarts.org/classes-and-events/july-4th-open-house/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

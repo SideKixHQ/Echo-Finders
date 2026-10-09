@@ -1,0 +1,41 @@
+# From W030 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk at Second and Orange or open museum lobby.
+# Position: West sidewalk of S 2nd St at the USO entrance, ~23 m north of Orange; address point + OSM footprint (building is NW corner of 2nd & Orange) (high confidence).
+id: wilmington-twenty-four-hours-at-the-uso
+title: "Twenty-Four Hours at the USO"
+summary: "During the Second World War, this corner offered service members a place to spend their hours away from duty."
+place: "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Carolina"
+at: { lat: 34.23316, lng: -77.94724 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "During the Second World War, this corner offered service members a place to spend their hours away from duty."
+script: |
+  During the Second World War, this corner offered service members a place to spend their
+  hours away from duty.
+
+  The USO club opened in December 1941. Volunteers kept it operating around the clock,
+  with recreation, assistance, and familiar comforts for visitors far from home.
+
+  Its public role was built from repeated small acts: directing a newcomer, providing
+  refreshments, arranging an activity, keeping the doors available. A building can support
+  wartime life without being a battlefield.
+
+  Pause at the entrance. The continuity is striking: a place created for gathering still
+  serves community life. The current arts center has a different purpose, but the building
+  remains a meeting point. Its wartime story is measured in the people who passed through
+  and the practical welcome they found here.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Museum"
+    publisher: "Wilmington Community Arts"
+    url: https://wilmingtoncommunityarts.org/museum/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

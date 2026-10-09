@@ -1,0 +1,48 @@
+# From W060 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk; associated family-craftsmanship stop, not Robert Taylor's MIT or Tuskegee worksite.
+# Position: DigitalNC building point 34.2361,-77.9429 (NE corner Market & 5th); moved ~17 m south to north Market St sidewalk in front of house (high confidence).
+# Shares a stop with other echoes, so it sits 8m off the spot to keep its pin tappable.
+id: wilmington-robert-taylor-beyond-wilmington
+title: "Robert Taylor Beyond Wilmington"
+summary: "Robert Robinson Taylor was born in Wilmington and became MIT's first known Black graduate, completing his degree in 1892."
+place: "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23601, lng: -77.94290 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Robert Robinson Taylor was born in Wilmington and became MIT's first known Black graduate, completing his degree in 1892."
+script: |
+  Robert Robinson Taylor was born in Wilmington and became MIT's first known Black
+  graduate, completing his degree in 1892.
+
+  His father, Henry Taylor, was a skilled builder associated with the Bellamy
+  construction. This house therefore offers a connection to the family trade, not a claim
+  that Robert designed it.
+
+  Robert's architectural career developed at Tuskegee and beyond. Education expanded the
+  possibilities of work that already had a strong family foundation.
+
+  From the sidewalk, look at the evidence of building skill around you. Then consider the
+  distance between learning a trade locally and gaining access to an institution that had
+  scarcely admitted Black students. Taylor's achievement was individual, but his
+  Wilmington background helps prevent us from imagining that his talent began only when a
+  college recognized it.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Robert r taylor"
+    publisher: "MIT Black History"
+    url: https://blackhistory.mit.edu/story/robert-r-taylor
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "The people"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/the-people.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

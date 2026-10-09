@@ -1,0 +1,42 @@
+# From W034 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Market Street sidewalk facing the present church.
+# Position: SE corner 3rd & Market (St James block 3rd-4th/Market-Dock). Market St south sidewalk ~35 m east of Third, facing church/churchyard. UNF NRHP photo point 34.23560,-77.94591 agrees within ~25 m. (medium confidence).
+# Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
+id: wilmington-bricks-that-crossed-two-churches
+title: "Bricks That Crossed Two Churches"
+summary: "The present church replaced an earlier building, but some of the earlier church came with it."
+place: "St. James Episcopal Church, 25 South Third Street, Wilmington, North Carolina"
+at: { lat: 34.23547, lng: -77.94572 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The present church replaced an earlier building, but some of the earlier church came with it."
+script: |
+  The present church replaced an earlier building, but some of the earlier church came
+  with it.
+
+  St. James's history says bricks from the first church were reused after its demolition
+  in 1839. The new church was consecrated in 1840. It also records that the original
+  building had used bricks brought to the port as ship ballast.
+
+  Those details turn a wall into a sequence of journeys: material arriving by water,
+  serving one building, then serving another.
+
+  Look from the sidewalk rather than touching or inspecting the masonry. You cannot
+  identify every brick's past by sight. The documented reuse is enough to change how you
+  read the surface. What seems like one architectural moment may contain material from
+  another. Wilmington rebuilt here without starting entirely from nothing.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Our history"
+    publisher: "St. James Parish"
+    url: https://www.stjamesp.org/our-history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,41 @@
+# From W068 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk facing the house; documented home association.
+# Position: House on SW corner of 3rd & Market (even/south side of Market, across Third from St James). Spot = corner sidewalk at Third & Market on the house side. Wikipedia bldg 34.2350,-77.9461 (DMS-rounded). (medium confidence).
+# Shares a stop with other echoes, so it sits 9m off the spot to keep its pin tappable.
+id: wilmington-joshua-wright-buys-a-downtown-home
+title: "Joshua Wright Buys a Downtown Home"
+summary: "Joshua Grainger Wright purchased this house in 1799."
+place: "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23540, lng: -77.94649 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Joshua Grainger Wright purchased this house in 1799."
+script: |
+  Joshua Grainger Wright purchased this house in 1799. His family supplied the second
+  surname by which the museum is known today.
+
+  Wright became a judge, and the house entered a new household's history. Its earlier
+  connection with John Burgwin remained in the building even as ownership changed.
+
+  Stand at the corner and listen to the two names together: Burgwin and Wright. A compound
+  name can compress decades into something that sounds like a single identity.
+
+  The purchase was a turning point rather than a minor footnote. A new owner meant new
+  family routines and later adaptations, while the old jail remains stayed underneath.
+  Wright's arrival shows how a landmark accumulates its identity. The building survived
+  one owner by becoming meaningful to another.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Family timeline"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.com/family-timeline
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

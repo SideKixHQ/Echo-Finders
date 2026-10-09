@@ -1,0 +1,42 @@
+# From W079 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk; lodge interior is not open without authorization.
+# Position: West sidewalk of N 8th St just south of Princess, beside lodge (19 N 8th / 720 Princess; address point + footprint at SW corner of 8th & Princess) (high confidence).
+id: wilmington-giblem-lodge-holds-a-community
+title: "Giblem Lodge Holds a Community"
+summary: "Built in 1873, Giblem Lodge is a surviving place of Black community organization in Wilmington."
+place: "Giblem Lodge, 19 North Eighth Street, Wilmington, North Carolina"
+at: { lat: 34.23697, lng: -77.93956 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Built in 1873, Giblem Lodge is a surviving place of Black community organization in Wilmington."
+script: |
+  Built in 1873, Giblem Lodge is a surviving place of Black community organization in
+  Wilmington. The city's landmark account emphasizes its roles as a gathering space and
+  source of support.
+
+  A lodge building can be easy to overlook beside more famous mansions. Yet institutions
+  like this helped people assemble, maintain networks, and exercise independence.
+
+  Stay on the public sidewalk. You can recognize that history without entering an active
+  organization's space.
+
+  The important architectural fact is survival in place. A building associated with
+  collective activity remains here to counter the idea that Wilmington's past belonged
+  only to prominent individual owners. This landmark preserves evidence of people
+  organizing for one another. Its walls held a community, and its continued presence gives
+  that community's history a downtown address.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Local Historic Landmarks"
+    publisher: "City of Wilmington"
+    url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

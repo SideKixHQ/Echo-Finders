@@ -1,0 +1,41 @@
+# From W081 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Water Street sidewalk; current business interior requires authorized admission.
+# Position: HMDB Wilmington Iron Works Machine Shop marker at Orange & S Water, 201 S Water (34.23272,-77.94905); Water St sidewalk just south of Orange (high confidence).
+id: wilmington-the-shop-that-made-the-parts
+title: "The Shop That Made the Parts"
+summary: "Wilmington Iron Works made components for the machinery that kept the port city functioning."
+place: "Former Wilmington Iron Works Machine Shop, 201 South Water Street, Wilmington, North Carolina"
+at: { lat: 34.23262, lng: -77.94912 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Wilmington Iron Works made components for the machinery that kept the port city functioning."
+script: |
+  Wilmington Iron Works made components for the machinery that kept the port city
+  functioning. The city's history lists products ranging from fences to parts for
+  locomotives and steamboats.
+
+  This building began as a warehouse and was later reconstructed in brick. In 2025,
+  Wilmington designated the former machine shop a local historic landmark.
+
+  Listen from the public sidewalk. A waterfront economy needs more than ships and cargo.
+  Equipment wears out; parts must be produced, repaired, and fitted.
+
+  The shop's importance lies in that supporting work. Its products could leave the
+  building and become nearly invisible inside larger machines. The surviving structure
+  restores a place to that labor, reminding you that the city depended on skilled
+  manufacturing behind the more dramatic scenes of transportation.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Local Historic Landmarks"
+    publisher: "City of Wilmington"
+    url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

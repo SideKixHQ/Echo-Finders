@@ -1,0 +1,41 @@
+# From W051 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Authorized museum collection visit; public sidewalk alternative for the painting's associated home.
+# Position: NCSU Built Heritage 34.233547,-77.945924; nudged west to east sidewalk of 3rd between Dock and Orange; fits grid (Dock 34.2344) (high confidence).
+# Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
+id: wilmington-the-tree-kept-in-watercolor
+title: "The Tree Kept in Watercolor"
+summary: "The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould Latimer among his works."
+place: "Latimer House, 126 South Third Street, Wilmington, North Carolina"
+at: { lat: 34.23359, lng: -77.94599 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould Latimer among his works."
+script: |
+  The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould
+  Latimer among his works.
+
+  A tree that no longer survives can remain available through art. The painting records an
+  artist's view, not a replacement for the actual tree or a photograph of every detail.
+
+  You are at the house associated with the artist and the collection. If the work is
+  available on your authorized visit, look first at what the artist chose to emphasize. Do
+  not assume every object in the collection is always on display.
+
+  The image gives the vanished landmark a different kind of life. Waterfront memory moved
+  from a living tree into paper, pigment, and preservation. An artist's decision to look
+  closely became something later Wilmington visitors could still encounter.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "About"
+    publisher: "Latimer House Museum, Lower Cape Fear Historical Society"
+    url: https://latimerhouse.org/about/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

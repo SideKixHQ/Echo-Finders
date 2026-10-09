@@ -1,0 +1,41 @@
+# From W041 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public entrance area; auditorium access requires a ticket, tour, or other authorization.
+# Position: South sidewalk of Chestnut St at the 310 Chestnut theatre entrance; OSM Thalian Hall footprint centre is ~45 m south. Alternative: 3rd St portico (34.23715,-77.94610) (medium confidence).
+id: wilmington-the-first-curtain
+title: "The First Curtain"
+summary: "On October 12, 1858, Thalian Hall opened with a gala."
+place: "Thalian Hall, 310 Chestnut Street, Wilmington, North Carolina"
+at: { lat: 34.23773, lng: -77.94568 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "On October 12, 1858, Thalian Hall opened with a gala."
+script: |
+  On October 12, 1858, Thalian Hall opened with a gala. Wilmington gained a theater that
+  would connect local audiences with performers traveling through the country.
+
+  For the people arriving that evening, this was a new room, not a historic landmark. The
+  expectation lay ahead: a curtain would rise, a performance would begin, and the city's
+  investment would become an experience.
+
+  Stand outside the entrance. A theater's opening can be remembered as a date, but its
+  real test comes when people gather and listen together.
+
+  Every later audience added another use to the building. The first night's importance is
+  that it began the pattern. Before the reputation, restorations, and anniversary
+  celebrations, Wilmington had to take the simple step that makes a theater work: open the
+  doors and invite people in.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Thalian hall opens wilmington"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2016/10/12/thalian-hall-opens-wilmington
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

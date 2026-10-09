@@ -1,0 +1,46 @@
+# From W048 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Orange Street sidewalk; present museum interior requires authorized admission.
+# Position: Directory geocodes 34.23274,-77.94750 (several agree within 20 m); HMDB Hogg-Anderson 110 Orange 34.23277,-77.94777; south Orange St sidewalk between Front and 2nd (medium confidence).
+id: wilmington-art-in-the-old-lodge
+title: "Art in the Old Lodge"
+summary: "In 1962, a community effort established St."
+place: "Former St. John's Art Museum complex, now Children's Museum, 116 Orange Street, Wilmington, North Carolina"
+at: { lat: 34.23268, lng: -77.94760 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 64
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "In 1962, a community effort established St."
+script: |
+  In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge
+  on this block.
+
+  Artists and supporters wanted Wilmington to have a place to encounter visual art. The
+  institution grew into the museum that later moved to its present Cameron Art Museum
+  location outside downtown.
+
+  The downtown buildings gained another use: the Children's Museum acquired the complex in
+  2004. You are at the earlier art-museum setting, not Cameron Art Museum today.
+
+  Look at the old buildings from Orange Street. Their cultural work has changed, but the
+  impulse remains recognizable: make spaces where people can look, learn, and try
+  something new. The art gallery's beginnings belong here, even though the institution
+  continued its journey elsewhere.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "History"
+    publisher: "Cameron Art Museum"
+    url: https://cameronartmuseum.org/history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Mission and history"
+    publisher: "Play Wilmington"
+    url: https://www.playwilmington.org/mission-and-history
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

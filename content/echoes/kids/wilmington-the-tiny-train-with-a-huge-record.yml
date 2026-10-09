@@ -1,0 +1,41 @@
+# From W092 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public exterior sidewalk; the record event was inside in 2011, not a permanent train display.
+# Position: West sidewalk of Nutt St along the convention centre building east face (OSM footprint); 515 Nutt address point is ~85 m south by the parking deck (medium confidence).
+id: wilmington-the-tiny-train-with-a-huge-record
+title: "The Tiny Train with a Huge Record"
+summary: "In April 2011, model railroaders made a very small kind of train do something very big inside this convention center."
+place: "Wilmington Convention Center, 515 Nutt Street, Wilmington, North Carolina"
+at: { lat: 34.24265, lng: -77.95040 }
+triggerRadiusKm: 0.04
+category: kids
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [wilmington, downtown]
+teaser: "In April 2011, model railroaders made a very small kind of train do something very big inside this convention center."
+script: |
+  In April 2011, model railroaders made a very small kind of train do something very big
+  inside this convention center.
+
+  They connected thirty-one model locomotives and 1,563 cars. The train stretched more
+  than nine hundred feet and completed the run needed for a Guinness world record.
+
+  The event is over; there is no promise that the record train is waiting inside today.
+  But this is the building where it happened.
+
+  Look at its size from the public sidewalk. One tiny car would be easy to hold.
+  Connecting more than fifteen hundred of them created a problem of teamwork, space, and
+  careful movement. The achievement was not just owning lots of pieces. It was making all
+  those pieces work together as one astonishing train.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Guinness world record 2011"
+    publisher: "Wilmington Railroad Museum"
+    url: https://www.wrrm.org/guinness-world-record-2011.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,48 @@
+# From W001 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Market Street sidewalk facing the churchyard; enter grounds only when permitted.
+# Position: SE corner 3rd & Market (St James block 3rd-4th/Market-Dock). Market St south sidewalk ~35 m east of Third, facing church/churchyard. UNF NRHP photo point 34.23560,-77.94591 agrees within ~25 m. (medium confidence).
+id: wilmington-the-friend-who-came-back
+title: "The Friend Who Came Back"
+summary: "Look toward the churchyard."
+place: "St. James Episcopal Church, 25 South Third Street, Wilmington, North Carolina"
+at: { lat: 34.23546, lng: -77.94565 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 73
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven;
+  no supernatural claim is established.
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Look toward the churchyard."
+script: |
+  Look toward the churchyard. Wilmington storytellers attach a particularly unsettling
+  legend to Samuel Jocelyn Junior: a dead man supposedly appeared to a friend and asked to
+  be taken out of his grave.
+
+  In the tale, the friend initially dismissed the encounter. Further appearances finally
+  persuaded him to investigate. The ending suggested that Jocelyn had been buried alive.
+
+  That is the ghost story, not a verified account of a premature burial. Its power comes
+  from an ordinary human fear: needing help when nobody believes you can still ask for it.
+
+  From this public sidewalk, the churchyard gives the tale its setting. You do not need to
+  enter, search for a particular grave, or treat a sound as evidence. Listen to the city
+  continuing around you. The legend asks you to imagine one voice trying to reach it.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Journey into the haunted depths of old wilmington"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Our history"
+    publisher: "St. James Parish"
+    url: https://www.stjamesp.org/our-history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

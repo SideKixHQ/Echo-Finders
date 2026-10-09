@@ -1,0 +1,46 @@
+# From W091 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public park; keep to open paths and do not disturb preserved features.
+# Position: HMDB Bijou Theater marker in Bijou Park 34 14.284N 77 56.953W; park entrance off west Front St sidewalk (high confidence).
+id: wilmington-the-movie-theater-in-a-tent
+title: "The Movie Theater in a Tent"
+summary: "Would you go to the movies inside a tent?"
+place: "Bijou Park, 209 North Front Street, Wilmington, North Carolina"
+at: { lat: 34.23807, lng: -77.94930 }
+triggerRadiusKm: 0.04
+category: kids
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [wilmington, downtown]
+teaser: "Would you go to the movies inside a tent?"
+script: |
+  Would you go to the movies inside a tent? Wilmington's Bijou began that way in 1906,
+  with folding chairs for its audience.
+
+  Later, a permanent theater took its place. The theater itself is gone now, but this park
+  remembers it, including preserved tiles from the old building.
+
+  Stand on the open path and imagine choosing a chair before a show. The people coming
+  here were discovering a new kind of entertainment, not visiting an old landmark.
+
+  Now you can visit the place where they gathered. Look for the name Bijou among the
+  preserved features, without touching them. A small piece of lettering can help a big
+  story survive. The screen disappeared, but the park keeps a reminder of Wilmington's
+  early moviegoing days right on Front Street.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Bijou Park"
+    publisher: "City of Wilmington"
+    url: https://www.wilmingtonnc.gov/Connect-With-Us/Department-Directory/Parks-Recreation/Parks-Trails/Bijou-Park
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "B003837"
+    publisher: "North Carolina Architects and Builders, NC State University Libraries"
+    url: https://ncarchitects.lib.ncsu.edu/buildings/B003837
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,43 @@
+# From W067 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk; associated residence, interior changes viewed only through authorized access.
+# Position: House on SW corner of 3rd & Market (even/south side of Market, across Third from St James). Spot = corner sidewalk at Third & Market on the house side. Wikipedia bldg 34.2350,-77.9461 (DMS-rounded). (medium confidence).
+# Shares a stop with other echoes, so it sits 9m off the spot to keep its pin tappable.
+id: wilmington-thomas-wright-changes-the-house
+title: "Thomas Wright Changes the House"
+summary: "Thomas Henry Wright inherited this house as a boy and later trained as a physician."
+place: "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23542, lng: -77.94631 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Thomas Henry Wright inherited this house as a boy and later trained as a physician."
+script: |
+  Thomas Henry Wright inherited this house as a boy and later trained as a physician. In
+  1845, he enlarged the property.
+
+  The museum's family timeline also connects him with banking and railroad leadership. A
+  single resident's career could link domestic space with the institutions helping
+  Wilmington grow.
+
+  Look at the house from the public corner. Its name joins two families, but even one
+  family's occupancy included substantial change. Thomas did not receive a finished
+  museum; he received a working residence that could be adapted.
+
+  The expansion gives his life a physical consequence here. The rooms belonged to
+  different decisions made at different times. His story helps explain why the building
+  cannot be read as one moment in 1770. Later occupants continued to shape the place they
+  inherited.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Family timeline"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.com/family-timeline
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

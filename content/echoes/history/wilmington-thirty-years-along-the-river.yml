@@ -1,0 +1,42 @@
+# From W039 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Riverwalk at Market Street; keep the walking route clear.
+# Position: Riverwalk at the foot of Market; Market Street Landing dock listed 34 14.124N 77 57.004W (34.23540,-77.95007). (high confidence).
+id: wilmington-thirty-years-along-the-river
+title: "Thirty Years Along the River"
+summary: "The Riverwalk can feel like something the city always had."
+place: "Wilmington Riverwalk near Market Street, Wilmington, North Carolina"
+at: { lat: 34.23545, lng: -77.94992 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The Riverwalk can feel like something the city always had."
+script: |
+  The Riverwalk can feel like something the city always had. Its construction instead
+  unfolded over about thirty years.
+
+  Wilmington marked its completion in November 2017. The city describes a route running
+  from Nun Street toward the Isabel Holmes Bridge, linking a long stretch of downtown
+  waterfront.
+
+  That project changed how people could encounter the river. A sequence of working and
+  commercial edges became a connected public experience.
+
+  Pause without blocking the path. The people moving past you are using the result of many
+  separate planning and building decisions. The story is not one spectacular opening but
+  persistence over time. Wilmington gradually made a continuous place to walk beside the
+  water that had shaped its economy long before visitors came here simply to enjoy the
+  view.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Riverwalk"
+    publisher: "City of Wilmington"
+    url: https://www.wilmingtonnc.gov/Connect-With-Us/Department-Directory/Parks-Recreation/Riverwalk
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

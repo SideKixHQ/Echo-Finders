@@ -1,0 +1,47 @@
+# From W017 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Authorized museum grounds facing the enslaved quarters; public sidewalk alternative at the main entrance.
+# Position: DigitalNC building point 34.2361,-77.9429 (NE corner Market & 5th); moved ~17 m south to north Market St sidewalk in front of house (high confidence).
+# Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
+id: wilmington-the-building-behind-the-mansion
+title: "The Building Behind the Mansion"
+summary: "The mansion commands attention."
+place: "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23596, lng: -77.94292 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The mansion commands attention."
+script: |
+  The mansion commands attention. The separate brick building behind it changes what that
+  attention means.
+
+  The enslaved quarters were built in 1859, initially housing workers involved in
+  construction and later people performing household labor. The museum opened the restored
+  building to visitors in 2014.
+
+  This is a surviving structure, not a theatrical reconstruction of an imagined plantation
+  scene. It helps visitors examine how the household organized space, work, and control.
+
+  If you are on the authorized grounds, turn your view between the quarters and the main
+  house. Their relationship is the story. One building advertised family wealth; the other
+  supported that wealth through coerced labor. Restoring both makes it harder to admire
+  the mansion while overlooking the people whose work kept it functioning.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Audio 2"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/audio-2.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "The museum"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/the-museum.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

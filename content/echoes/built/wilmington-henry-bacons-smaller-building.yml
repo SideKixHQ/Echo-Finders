@@ -1,0 +1,40 @@
+# From W090 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public corner sidewalk; parish office interior is not an unrestricted visitor space.
+# Position: MacRae (Bacon) House = parish office at NE corner of 3rd & Dock (St James block). hmdb Wooster House marker on opposite (west) corner 34.23457,-77.94615. (medium confidence).
+id: wilmington-henry-bacons-smaller-building
+title: "Henry Bacon's Smaller Building"
+summary: "The MacRae house was built in 1901 and designed by Henry Bacon, the architect later associated with the Lincoln Memorial in Washington."
+place: "Donald MacRae House, St. James offices near Third and Dock streets, Wilmington, North Carolina"
+at: { lat: 34.23470, lng: -77.94588 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "The MacRae house was built in 1901 and designed by Henry Bacon, the architect later associated with the Lincoln Memorial in Washington."
+script: |
+  The MacRae house was built in 1901 and designed by Henry Bacon, the architect later
+  associated with the Lincoln Memorial in Washington.
+
+  St. James acquired the house in 1955, and it serves parish offices. Its local history
+  therefore combines domestic design with a later institutional role.
+
+  Stand on the public sidewalk. The Washington connection is about the architect, not a
+  claim that this house was a model for the memorial.
+
+  A famous commission can overshadow an architect's smaller work. This stop restores the
+  smaller scale: rooms intended for daily life rather than a national monument. Bacon's
+  career reached both kinds of building. Downtown Wilmington retains a place where his
+  design work met an ordinary urban household and, later, the needs of a parish.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Our history"
+    publisher: "St. James Parish"
+    url: https://www.stjamesp.org/our-history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

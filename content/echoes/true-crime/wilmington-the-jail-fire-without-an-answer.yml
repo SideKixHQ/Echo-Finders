@@ -1,0 +1,53 @@
+# From W005 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk facing the house; surviving jail features require authorized museum access.
+# Position: House on SW corner of 3rd & Market (even/south side of Market, across Third from St James). Spot = corner sidewalk at Third & Market on the house side. Wikipedia bldg 34.2350,-77.9461 (DMS-rounded). (medium confidence).
+# Shares a stop with other echoes, so it sits 6m off the spot to keep its pin tappable.
+id: wilmington-the-jail-fire-without-an-answer
+title: "The Jail Fire Without an Answer"
+summary: "Before this was a handsome house, it was Wilmington's jail."
+place: "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23540, lng: -77.94636 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 72
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Before this was a handsome house, it was Wilmington's jail."
+script: |
+  Before this was a handsome house, it was Wilmington's jail. The museum's timeline
+  records that its roof burned in 1768 under suspicious circumstances.
+
+  Suspicious is the crucial word. The surviving account does not give us a proven culprit
+  or a settled motive. Calling it a solved arson would turn a historical uncertainty into
+  an accusation.
+
+  The fire nevertheless changed what happened to the property. John Burgwin subsequently
+  acquired the site, and the house built in 1770 incorporated the old jail's walls.
+
+  Look at the building from the public street. It can seem like a clean beginning: a
+  merchant's residence rising on a downtown corner. Underneath lies the unresolved damage
+  that made the transformation possible. This case ends with a new building, not an
+  identified offender. The physical aftermath survives more clearly than the answer.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: unsolved
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-10-09"
+  contentWarning: "This echo describes a suspicious fire. Nobody is described as hurt."
+sources:
+  - title: "Family timeline"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.com/family-timeline
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "History"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.org/history
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

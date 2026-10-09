@@ -1,0 +1,42 @@
+# From W045 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public entrance area; historical performance building.
+# Position: South sidewalk of Chestnut St at the 310 Chestnut theatre entrance; OSM Thalian Hall footprint centre is ~45 m south. Alternative: 3rd St portico (34.23715,-77.94610) (medium confidence).
+# Shares a stop with other echoes, so it sits 8m off the spot to keep its pin tappable.
+id: wilmington-fords-other-opera-house
+title: "Ford's Other Opera House"
+summary: "John T."
+place: "Thalian Hall, 310 Chestnut Street, Wilmington, North Carolina"
+at: { lat: 34.23766, lng: -77.94570 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "John T."
+script: |
+  John T. Ford, associated with Ford's Theatre in Washington, leased this Wilmington
+  theater from 1867 to 1871. During his tenure, it was called the Opera House.
+
+  The connection can surprise visitors who know Ford's name only through Abraham Lincoln's
+  assassination. This story concerns his theatrical business in Wilmington, not a claim
+  that the Washington crime happened here.
+
+  Names and management changed while the local building continued hosting entertainment.
+  Its history reaches through people whose careers crossed several cities.
+
+  Look at the entrance and imagine a playbill announcing the Opera House rather than
+  Thalian Hall. A different title could mark a different business strategy without moving
+  the stage. The theater's long life includes those shifts: familiar walls, new operators,
+  and another invitation to an audience.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "About"
+    publisher: "Thalian Hall"
+    url: https://www.thalianhall.org/about
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

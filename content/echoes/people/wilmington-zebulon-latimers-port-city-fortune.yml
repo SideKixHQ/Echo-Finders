@@ -1,0 +1,43 @@
+# From W069 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk; associated residence, not his Market Street business premises.
+# Position: NCSU Built Heritage 34.233547,-77.945924; nudged west to east sidewalk of 3rd between Dock and Orange; fits grid (Dock 34.2344) (high confidence).
+# Shares a stop with other echoes, so it sits 8m off the spot to keep its pin tappable.
+id: wilmington-zebulon-latimers-port-city-fortune
+title: "Zebulon Latimer's Port-City Fortune"
+summary: "Zebulon Latimer came from Connecticut and built a career as a commission merchant in Wilmington."
+place: "Latimer House, 126 South Third Street, Wilmington, North Carolina"
+at: { lat: 34.23348, lng: -77.94607 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Zebulon Latimer came from Connecticut and built a career as a commission merchant in Wilmington."
+script: |
+  Zebulon Latimer came from Connecticut and built a career as a commission merchant in
+  Wilmington. His business success helped support the substantial house completed here in
+  1852.
+
+  The museum also connects his wealth with investments in gas lighting and railroads. His
+  domestic surroundings belonged to a larger commercial network.
+
+  This is his residence, not the place where every business transaction occurred. The
+  distinction helps you read the house as evidence of economic results rather than the
+  whole economy itself.
+
+  From Third Street, notice the confidence of its scale. A merchant's success could become
+  brick, rooms, and furnishings. The facade makes private prosperity visible, while the
+  wider story asks where that prosperity came from and whose work helped sustain the city
+  around it.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "About"
+    publisher: "Latimer House Museum, Lower Cape Fear Historical Society"
+    url: https://latimerhouse.org/about/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

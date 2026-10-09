@@ -1,0 +1,47 @@
+# From W038 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Orange Street sidewalk; office interior is not an unrestricted visitor space.
+# Position: North sidewalk of Orange St in front of 211 Orange; county address point + footprint (high confidence).
+id: wilmington-the-people-who-decided-to-save-downtown
+title: "The People Who Decided to Save Downtown"
+summary: "Historic Wilmington Foundation began in 1966, when preservation advocates organized to protect the city's historic places."
+place: "Historic Wilmington Foundation headquarters, 211 Orange Street, Wilmington, North Carolina"
+at: { lat: 34.23307, lng: -77.94656 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Historic Wilmington Foundation began in 1966, when preservation advocates organized to protect the city's historic places."
+script: |
+  Historic Wilmington Foundation began in 1966, when preservation advocates organized to
+  protect the city's historic places.
+
+  Downtown survival was not automatic. Buildings could be neglected, demolished, or
+  treated as obstacles to a different kind of development. The foundation made
+  preservation an ongoing community effort.
+
+  This Orange Street address is its present headquarters, an associated site rather than
+  the setting of every early campaign. From the sidewalk, look at the neighboring streets
+  as a collection of individual decisions.
+
+  An old building remains because someone maintains it, finds it useful, or argues for its
+  value. A historic district is the accumulated result. The foundation's story helps
+  explain why downtown Wilmington still offers more than a list of vanished places. Many
+  of its stories retain walls, doors, and street corners you can encounter.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Headquarters"
+    publisher: "Historic Wilmington Foundation"
+    url: https://historicwilmington.org/headquarters/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Sixty years of historic wilmington foundation"
+    publisher: "Historic Wilmington Foundation"
+    url: https://historicwilmington.org/sixty-years-of-historic-wilmington-foundation/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

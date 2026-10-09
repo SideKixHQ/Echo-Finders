@@ -1,0 +1,42 @@
+# From W072 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk; associated museum-founding site, not his apartment or present Cameron Art Museum.
+# Position: Directory geocodes 34.23274,-77.94750 (several agree within 20 m); HMDB Hogg-Anderson 110 Orange 34.23277,-77.94777; south Orange St sidewalk between Front and 2nd (medium confidence).
+# Shares a stop with other echoes, so it sits 6m off the spot to keep its pin tappable.
+id: wilmington-claude-howell-asks-for-more-art
+title: "Claude Howell Asks for More Art"
+summary: "Claude Howell helped advocate for a stronger visual-arts life in Wilmington."
+place: "Former St. John's Art Museum complex, now Children's Museum, 116 Orange Street, Wilmington, North Carolina"
+at: { lat: 34.23264, lng: -77.94756 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Claude Howell helped advocate for a stronger visual-arts life in Wilmington."
+script: |
+  Claude Howell helped advocate for a stronger visual-arts life in Wilmington. In 1962, he
+  supported the movement that established St. John's Art Gallery here.
+
+  The Cameron Art Museum's history records his call for the community to encounter
+  important art from the past and present. He wanted local audiences to have wider
+  opportunities to look and learn.
+
+  We do not need to reproduce his letter to understand the action behind it. Advocacy
+  helped turn a hope into an institution.
+
+  Look at the earlier museum complex from Orange Street. Howell's role connected making
+  art with building an audience for it. A city's cultural life depends on both. The
+  gallery gave that argument rooms and a public address, allowing an artistic ambition to
+  become something visitors could actually enter.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "History"
+    publisher: "Cameron Art Museum"
+    url: https://cameronartmuseum.org/history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

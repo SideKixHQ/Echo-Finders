@@ -1,0 +1,48 @@
+# From W073 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Open museum lobby near the piano when available; public sidewalk alternative.
+# Position: West sidewalk of S 2nd St at the USO entrance, ~23 m north of Orange; address point + OSM footprint (building is NW corner of 2nd & Orange) (high confidence).
+# Shares a stop with other echoes, so it sits 8m off the spot to keep its pin tappable.
+id: wilmington-hannah-block-at-the-piano
+title: "Hannah Block at the Piano"
+summary: "Hannah Block entertained wartime service members by singing and playing piano."
+place: "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Carolina"
+at: { lat: 34.23309, lng: -77.94726 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Hannah Block entertained wartime service members by singing and playing piano."
+script: |
+  Hannah Block entertained wartime service members by singing and playing piano. The
+  building that carries her name preserves that connection, including a piano identified
+  with her performances.
+
+  The center was rededicated in her honor in 2006. A volunteer's contribution became part
+  of the place's public identity.
+
+  If you can visit the open museum area, look at the instrument without touching it. Its
+  significance comes from use: someone sat here to offer music and company during a
+  difficult period.
+
+  Block's story brings a large wartime account down to a human scale. An evening's
+  entertainment required a person willing to provide it. The name over the door remembers
+  that practical generosity, while the preserved instrument gives it a concrete form you
+  can see.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "85th anniversary celebration"
+    publisher: "Wilmington Community Arts"
+    url: https://wilmingtoncommunityarts.org/classes-and-events/85th-anniversary-celebration/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Museum"
+    publisher: "Wilmington Community Arts"
+    url: https://wilmingtoncommunityarts.org/museum/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

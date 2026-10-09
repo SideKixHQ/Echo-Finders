@@ -1,0 +1,46 @@
+# From W049 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public lane where access is permitted; respect residential entrances and private courtyards.
+# Position: Midpoint of Cottage Lane (OSM centreline), the alley midway between Dock and Orange, 3rd-4th block (high confidence).
+id: wilmington-the-exhibition-in-a-little-lane
+title: "The Exhibition in a Little Lane"
+summary: "In 1953, Claude Howell and Gar Faulkner staged a Cottage Lane art show during the Azalea Festival, according to Cape Fear Museum's…"
+place: "Cottage Lane between Dock and Orange streets, Wilmington, North Carolina"
+at: { lat: 34.23373, lng: -77.94513 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "In 1953, Claude Howell and Gar Faulkner staged a Cottage Lane art show during the Azalea Festival, according to Cape Fear Museum's…"
+script: |
+  In 1953, Claude Howell and Gar Faulkner staged a Cottage Lane art show during the Azalea
+  Festival, according to Cape Fear Museum's historical account.
+
+  The setting made an exhibition part of the neighborhood rather than an event confined to
+  a grand gallery. Artists could bring work into a small downtown place already associated
+  with creative life.
+
+  Do not enter a private courtyard to recreate the show. The public lane is enough to
+  understand the scale.
+
+  Look along the buildings and imagine the practical decision: choose a place, gather the
+  work, and invite people to see it. A local art community grows through events like that,
+  where the audience meets artists nearby. The lane's size is part of the story. Cultural
+  beginnings do not always require a monumental address.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Sets"
+    publisher: "Flickr"
+    url: https://www.flickr.com/photos/capefearmuseum/sets/72157647490782635
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "History"
+    publisher: "Cameron Art Museum"
+    url: https://cameronartmuseum.org/history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

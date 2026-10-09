@@ -1,0 +1,42 @@
+# From W026 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public entrance area or authorized museum gallery; current museum, not its first display location.
+# Position: VisitNC 34.24200,-77.95060 and directory 34.24161,-77.95103 (47 m apart); averaged and nudged to the Nutt St frontage just north of Red Cross St. (medium confidence).
+# Shares a stop with other echoes, so it sits 6m off the spot to keep its pin tappable.
+id: wilmington-a-museum-begins-with-one-case
+title: "A Museum Begins with One Case"
+summary: "This museum did not begin with a building full of trains."
+place: "Wilmington Railroad Museum, 505 Nutt Street, Wilmington, North Carolina"
+at: { lat: 34.24166, lng: -77.95056 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "This museum did not begin with a building full of trains."
+script: |
+  This museum did not begin with a building full of trains. Its early effort included a
+  single display case and a table at Riverfest.
+
+  The foundation was chartered in 1979. Hazel Morse, Gerda Wooten, and Marguerite James
+  led the effort to preserve Wilmington's railroad history after the railroad's major
+  departure.
+
+  A collection needed somewhere to grow, and the work expanded from those small
+  beginnings. The current museum is the outcome, not the setting of every early exhibit.
+
+  Stand near its entrance and consider how easily ordinary equipment becomes disposable
+  once a company moves on. Someone has to recognize its future value before that happens.
+  These organizers made the first modest display into a commitment: the railroad might
+  leave, but its Wilmington story would still have a place.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "History"
+    publisher: "Wilmington Railroad Museum"
+    url: https://www.wrrm.org/history.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,43 @@
+# From W016 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Market Street sidewalk with a clear view of the upper structure.
+# Position: DigitalNC building point 34.2361,-77.9429 (NE corner Market & 5th); moved ~17 m south to north Market St sidewalk in front of house (high confidence).
+# Shares a stop with other echoes, so it sits 6m off the spot to keep its pin tappable.
+id: wilmington-a-house-built-to-catch-the-air
+title: "A House Built to Catch the Air"
+summary: "Look above the columns to the small structure at the top of the mansion."
+place: "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23591, lng: -77.94281 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Look above the columns to the small structure at the top of the mansion."
+script: |
+  Look above the columns to the small structure at the top of the mansion. Its usefulness
+  went beyond the view.
+
+  Bellamy's design included a belvedere that helped ventilate the house. The museum also
+  notes the deliberate placement of the kitchen to receive early daylight. The architects
+  considered climate and daily work along with appearance.
+
+  Built between 1859 and 1861, the house combined Greek Revival and Italianate elements.
+  Those labels can sound abstract until you notice how the building meets its
+  surroundings: shade, height, openings, and the movement of air.
+
+  From this sidewalk, let the building become a practical invention as well as an
+  expensive residence. Beauty and function shared the same plans. The comfort it offered,
+  however, depended on skilled construction and the labor of people whose freedom was
+  sharply unequal.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The place"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/the-place.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

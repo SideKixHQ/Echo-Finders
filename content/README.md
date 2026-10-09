@@ -10,7 +10,10 @@ for what gets served; it is built from here (ADR-0005).
 2. **Public domain and CC-BY only** for the MVP (ADR-0006). Not because facts are
    copyrightable — they are not — but so that every claim traces to something anyone can
    open and check, with no licence conversation attached. CC-BY-SA and licensed material
-   are rejected by CI until there is a rights desk.
+   are rejected by CI until there is a rights desk. A **draft** may cite any credible,
+   linked source as `fair-use-facts`; it has to meet this rule before approval. A ghost
+   story may keep the place's own account of its legend even then, and its script says out
+   loud that the legend is reported, not proven (ADR-0016).
 3. `editorial: approved` is a human's decision. A model may draft and may open the pull
    request. A model may never merge one.
 4. `content/echoes/true-crime/` is CODEOWNERS-gated. Two credible sources minimum, three

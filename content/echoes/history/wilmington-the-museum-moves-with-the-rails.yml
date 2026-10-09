@@ -1,0 +1,48 @@
+# From W027 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public museum entrance or authorized visitor route; current location of the 2007 move.
+# Position: VisitNC 34.24200,-77.95060 and directory 34.24161,-77.95103 (47 m apart); averaged and nudged to the Nutt St frontage just north of Red Cross St. (medium confidence).
+# Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
+id: wilmington-the-museum-moves-with-the-rails
+title: "The Museum Moves with the Rails"
+summary: "A railroad museum has an unusual moving problem: some of its most important objects are built to travel, but cannot simply be driven…"
+place: "Wilmington Railroad Museum, 505 Nutt Street, Wilmington, North Carolina"
+at: { lat: 34.24171, lng: -77.95067 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "A railroad museum has an unusual moving problem: some of its most important objects are built to travel, but cannot simply be driven…"
+script: |
+  A railroad museum has an unusual moving problem: some of its most important objects are
+  built to travel, but cannot simply be driven down a city street.
+
+  The museum's account of its 2007 relocation records the work of moving the collection to
+  its present Nutt Street setting. A new location had to accommodate artifacts and
+  full-size railroad equipment together.
+
+  This building now gives the collection a downtown home beside the city's railroad
+  history. The move was itself another chapter in preservation, not the end of the
+  process.
+
+  Look at the scale of the outdoor equipment from the permitted visitor area. Each large
+  object represents a decision to carry difficult evidence forward. Keeping history
+  sometimes means arranging a journey for things that have already finished their working
+  journeys.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Museum move 2007"
+    publisher: "Wilmington Railroad Museum"
+    url: https://www.wrrm.org/museum-move---2007.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Wrrm.org"
+    publisher: "Wilmington Railroad Museum"
+    url: https://www.wrrm.org/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

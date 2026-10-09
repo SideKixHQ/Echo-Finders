@@ -1,0 +1,47 @@
+# From W012 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Authorized museum tour of the detached kitchen; exterior listening alternative on Market Street.
+# Position: House on SW corner of 3rd & Market (even/south side of Market, across Third from St James). Spot = corner sidewalk at Third & Market on the house side. Wikipedia bldg 34.2350,-77.9461 (DMS-rounded). (medium confidence).
+# Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
+id: wilmington-the-kitchen-with-an-earlier-job
+title: "The Kitchen with an Earlier Job"
+summary: "A kitchen can look like a modest supporting building."
+place: "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23548, lng: -77.94634 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "A kitchen can look like a modest supporting building."
+script: |
+  A kitchen can look like a modest supporting building. Here, it carries part of the
+  property's first life.
+
+  The museum identifies the detached kitchen as the former jailer's quarters. When the
+  site became a residence, the small structure gained a new domestic role.
+
+  That reuse matters. Wilmington's early buildings were working resources, not untouched
+  monuments. Owners adapted what already existed, and the resulting place kept traces of
+  several purposes.
+
+  If you are on an authorized tour, let the scale of the kitchen pull your attention away
+  from the grander house. Food preparation required heat, repeated tasks, and labor that a
+  polished dining room could conceal. The building connects those ordinary demands with an
+  even earlier responsibility: watching over the people confined on this corner.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Family timeline"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.com/family-timeline
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "History"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.org/history
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,40 @@
+# From W076 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Grace Street sidewalk; exterior only unless the owner authorizes entry.
+# Position: South sidewalk of Grace St in front of 314 Grace; address point + footprint (high confidence).
+id: wilmington-the-house-with-several-lives
+title: "The House with Several Lives"
+summary: "This Grace Street house was built in 1818."
+place: "Lazarus-Hill-Divine House, 314 Grace Street, Wilmington, North Carolina"
+at: { lat: 34.23903, lng: -77.94559 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "This Grace Street house was built in 1818."
+script: |
+  This Grace Street house was built in 1818. Wilmington's landmark description records
+  later uses that included a military academy, a convent, and an emergency hospital.
+
+  That sequence is more revealing than the idea of one perfectly preserved household. The
+  same building had to meet different needs as the city changed around it.
+
+  Stay on the public sidewalk. Its historical significance does not make a present
+  interior automatically open to visitors.
+
+  Look at the facade and ask what architecture can tell you by itself. A house's shape may
+  suggest domestic life, yet records reveal institutional uses you could not guess from a
+  passing glance. The landmark survives as a physical meeting point for those different
+  chapters, even when their occupants and furnishings have long since moved on.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Local Historic Landmarks"
+    publisher: "City of Wilmington"
+    url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

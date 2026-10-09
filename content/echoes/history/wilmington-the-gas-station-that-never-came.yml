@@ -1,0 +1,42 @@
+# From W013 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk at Market and Third, facing the surviving house.
+# Position: House on SW corner of 3rd & Market (even/south side of Market, across Third from St James). Spot = corner sidewalk at Third & Market on the house side. Wikipedia bldg 34.2350,-77.9461 (DMS-rounded). (medium confidence).
+# Shares a stop with other echoes, so it sits 8m off the spot to keep its pin tappable.
+id: wilmington-the-gas-station-that-never-came
+title: "The Gas Station That Never Came"
+summary: "In 1930, this house faced a future that could have removed it from Wilmington entirely."
+place: "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23537, lng: -77.94642 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "In 1930, this house faced a future that could have removed it from Wilmington entirely."
+script: |
+  In 1930, this house faced a future that could have removed it from Wilmington entirely.
+
+  Businessman Samuel Pryor considered taking the building apart and moving it to
+  Connecticut. A gas station was proposed for the cleared site. The Colonial Dames
+  campaigned to preserve the house, and Pryor changed course, contributing money and
+  supporting the effort.
+
+  The museum's timeline records that reversal. What you see is the result of people
+  treating an old building as a shared historical resource rather than simply a valuable
+  downtown lot.
+
+  Stand at the corner and picture the gap its removal would have made. No imagined
+  demolition is needed to appreciate the stakes. The threatened future was real, and so
+  was the intervention. The house stayed where its history could still be encountered.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Family timeline"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.com/family-timeline
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
