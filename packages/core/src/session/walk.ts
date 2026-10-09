@@ -143,7 +143,7 @@ export class WalkSession {
   readonly tracker: CaptureTracker;
 
   private readonly library: readonly Echo[];
-  private readonly listener: ListenerProfile;
+  private listener: ListenerProfile;
   private readonly deps: WalkSessionDeps;
   private readonly options: WalkSessionOptions;
   private readonly guide: ProximityGuide;
@@ -353,6 +353,20 @@ export class WalkSession {
    * is a function of where you are and we do not have a position until one arrives. In
    * practice that is under a second on foot.
    */
+  /**
+   * What this listener has shown they like (`reactions.ts`), applied live.
+   *
+   * Not a constructor argument for the reason `setAutoPlay` is not: it changes while
+   * somebody walks, every time they react to an echo, and a new session is a new journey.
+   * Only ranking reads it; nothing it can say makes an echo eligible or ineligible.
+   */
+  setInterests(interests: Readonly<Record<string, number>> | undefined): void {
+    if (interests === this.listener.interests) return;
+    const { interests: _old, ...rest } = this.listener;
+    this.listener = interests ? { ...rest, interests } : rest;
+    if (this.lastFix) this.emit({ type: "nearby", echoes: this.lookAround(this.lastFix) });
+  }
+
   setNearbyRadius(km: number | undefined): void {
     if (km === this.nearbyRadiusKm) return;
     this.nearbyRadiusKm = km;
