@@ -290,7 +290,7 @@ export function App() {
       return false;
     }
   });
-  const { state, session, walk, store, speech } = useJourney(roaming ? null : route, LIBRARY, {
+  const { state, session, walk, store, speech, restored } = useJourney(roaming ? null : route, LIBRARY, {
     sound,
     narrate,
     autoPlay,
@@ -648,6 +648,8 @@ export function App() {
    */
   const [syncedNow, setSyncedNow] = useState<CaptureEvent | null>(null);
   const seenCaptures = useRef<Set<string> | null>(null);
+  /** Which journey's past finds the seen-set has taken in. */
+  const seenFor = useRef<string | null>(null);
   useEffect(() => {
     /*
      * NOT WHILE ONBOARDING, and this one was found by running the app rather than reading
@@ -663,8 +665,23 @@ export function App() {
      * only what happens after counts as a moment.
      */
     if (!onboarded) return;
-    if (seenCaptures.current === null) {
-      seenCaptures.current = new Set(state.captured.map((c) => c.echo.id));
+    /*
+     * EACH JOURNEY'S PAST FINDS ARE HISTORY TOO, not only the first one's.
+     *
+     * The set was seeded once, from whichever journey was open at start-up. Switch to a
+     * journey with finds from an earlier visit and those finds arrived as new, so the
+     * sync card celebrated a fort found yesterday (reproduced: find it exploring, reload,
+     * switch back to exploring). Now the set waits for this journey's own records to be
+     * read and takes them in before anything counts as a moment.
+     */
+    if (restored === null) return;
+    if (seenCaptures.current === null || seenFor.current !== journeyKey) {
+      seenCaptures.current = new Set([
+        ...(seenCaptures.current ?? []),
+        ...restored.map((r) => r.echoId),
+        ...state.captured.map((c) => c.echo.id),
+      ]);
+      seenFor.current = journeyKey;
       return;
     }
     const fresh = state.captured.filter((c) => !seenCaptures.current!.has(c.echo.id));
@@ -672,7 +689,7 @@ export function App() {
     for (const c of fresh) seenCaptures.current.add(c.echo.id);
     // The last one is the one you are standing on.
     setSyncedNow(fresh[fresh.length - 1]!);
-  }, [state.captured, onboarded]);
+  }, [state.captured, onboarded, restored, journeyKey]);
 
   const nowPlaying = state.playback.kind === "idle" ? null : state.playback.item.echo;
 

@@ -309,6 +309,24 @@ async function arrive() {
     await p.locator('.nav').getByRole('button', { name: /My Echoes/ }).click();
     await p.waitForTimeout(800);
     check('My Echoes: keeps what was found on other journeys', await visible(fort));
+
+    // Come back another day to where the fort was found: it is history, not a new sync.
+    await p.reload();
+    // The reload reopens the Lower Manhattan demo walk, which reaches the fort a few seconds
+    // in: a genuine new sync on that journey. Clear it, however late it lands, first.
+    for (let i = 0; i < 16; i++) {
+      if (await p.locator('.synced').count()) await p.locator('.synced-later').click().catch(() => {});
+      await p.waitForTimeout(500);
+    }
+    // A later demo card must not block the taps; it is still counted below if it is the fort.
+    await p.addStyleTag({ content: '.synced { pointer-events: none !important; }' });
+    await p.getByLabel(/Change your journey/).click();
+    await p.waitForTimeout(300);
+    await p.locator('.jmenu-mode', { hasText: 'Walk' }).click();
+    await p.locator('.jmenu-item', { hasText: 'Around here' }).first().click();
+    await p.waitForTimeout(2500);
+    check('Sync card: going back to a journey does not replay an old find',
+      !(await p.locator('.synced', { hasText: 'Eight million' }).count()));
     await ctx.close();
   }
 }

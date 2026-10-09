@@ -244,12 +244,17 @@ export function useJourney(
     () => new IndexedDbCollection(route ? `route:${route.id}` : "roam"),
     [route],
   );
-  const [restored, setRestored] = useState<readonly CaptureRecord[] | null>(null);
+  /*
+   * Tagged with the store it was read from, so a journey switch never reports the last
+   * journey's records as this one's. Cleared in an effect, the old list survived the render
+   * the switch happened in, and the sync card took this journey's old finds for new ones.
+   */
+  const [loaded, setLoaded] = useState<{ store: IndexedDbCollection; records: readonly CaptureRecord[] } | null>(null);
+  const restored = loaded?.store === store ? loaded.records : null;
   useEffect(() => {
     let live = true;
-    setRestored(null);
     void store.load().then((records) => {
-      if (live) setRestored(records);
+      if (live) setLoaded({ store, records });
     });
     return () => {
       live = false;
@@ -438,5 +443,5 @@ export function useJourney(
     };
   }, [session, restored, library]);
 
-  return { state, session, walk, store, speech, restoring: restored === null };
+  return { state, session, walk, store, speech, restored, restoring: restored === null };
 }
