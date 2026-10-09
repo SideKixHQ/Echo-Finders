@@ -21,8 +21,9 @@
  */
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import type { Route } from "@echofinders/core";
+import type { Echo, Route } from "@echofinders/core";
 import { MODE_ICON } from "./travel";
+import { loadZips, searchPlaces, type PlaceHit } from "./place-search";
 
 export type Travel = "walking" | "driving" | "flight";
 
@@ -48,6 +49,10 @@ export interface JourneyChipProps {
   readonly onRoute: (route: Route) => void;
   /** The full journey screen, opened on the mode the sheet was showing. */
   readonly onDetails: (mode: Travel) => void;
+  /** Everything there is, for finding a place by name. */
+  readonly library?: readonly Echo[];
+  /** Look at somewhere else: a ZIP code or a place (`place-search.ts`). */
+  readonly onLook?: (hit: PlaceHit, mode: "walking" | "driving") => void;
 }
 
 const MODES: readonly { readonly id: Travel; readonly label: string }[] = [
@@ -169,6 +174,12 @@ export function JourneyChip(props: JourneyChipProps) {
               {roaming && travel === tab && <Tick />}
             </button>
           )}
+          {tab !== "flight" && props.onLook && (
+            <LookSomewhere
+              library={props.library ?? []}
+              onPick={(hit) => done(() => props.onLook!(hit, tab as "walking" | "driving"))()}
+            />
+          )}
           {forTab.map((r) => {
             const on = !roaming && r.id === route.id;
             return (
@@ -216,3 +227,53 @@ const Tick = () => (
     <path d="M5 12.5 L10 17.5 L19 7" />
   </svg>
 );
+
+/**
+ * A ZIP code or a place, typed: the map goes and looks there.
+ *
+ * Under "Around here" because it is the same kind of choice: where the map is looking, with
+ * no route. The ZIP list is fetched the first time this box is used, not before.
+ */
+function LookSomewhere({ library, onPick }: { readonly library: readonly Echo[]; readonly onPick: (hit: PlaceHit) => void }) {
+  const [query, setQuery] = useState("");
+  const [table, setTable] = useState<ReadonlyMap<string, { lat: number; lng: number }> | null>(null);
+  const hits = query.trim().length >= 2 ? searchPlaces(query, table ?? new Map(), library) : [];
+  const waiting = /^\d{2,5}$/.test(query.trim()) && table === null;
+  return (
+    <div className="jmenu-look">
+      <label className="jmenu-look-field">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6.5" />
+          <path d="M16 16l4.5 4.5" />
+        </svg>
+        <input
+          type="search"
+          inputMode="search"
+          autoComplete="off"
+          placeholder="Look somewhere else: ZIP or place"
+          aria-label="Look somewhere else: a ZIP code or a place"
+          value={query}
+          onFocus={() => {
+            if (!table) void loadZips().then(setTable);
+          }}
+          onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && hits[0]) onPick(hits[0]);
+          }}
+        />
+      </label>
+      {waiting && <p className="jmenu-empty">Finding ZIP codes…</p>}
+      {!waiting && query.trim().length >= 2 && hits.length === 0 && (
+        <p className="jmenu-empty">Nothing by that name or ZIP code yet.</p>
+      )}
+      {hits.map((hit) => (
+        <button key={hit.label + hit.at.lat} className="jmenu-item jmenu-hit" onClick={() => onPick(hit)}>
+          <span>
+            {hit.label}
+            {hit.detail && <small>{hit.detail}</small>}
+          </span>
+        </button>
+      ))}
+    </div>
+  );
+}

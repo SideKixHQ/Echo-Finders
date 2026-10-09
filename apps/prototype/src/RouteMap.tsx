@@ -135,6 +135,11 @@ interface Props {
    */
   readonly reservedBottom?: number;
   readonly onPan: (next: { x: number; y: number }) => void;
+  /**
+   * Somewhere the listener has asked to look at instead of where they are: a ZIP code or a
+   * place (`place-search.ts`). The map centres there; where they stand is unchanged.
+   */
+  readonly lookAt?: LatLng | null;
 }
 
 /*
@@ -271,6 +276,7 @@ export function RouteMap({
   onZoom,
   pan,
   onPan,
+  lookAt = null,
   focusId = null,
   reservedBottom = 0,
 }: Props) {
@@ -598,8 +604,9 @@ export function RouteMap({
     /** How wide the view is on the ground, km, measured across its width. */
     let spanKm: number;
 
-    if (at && !overview) {
-      centre = at;
+    const looking = lookAt ?? at;
+    if (looking && !overview) {
+      centre = looking;
       // Twice the corridor: on foot a couple of streets, in the air a couple of hundred
       // kilometres. The same number that already decides what counts as near on this mode.
       const base = presetFor(mode).corridorKm * 2;
@@ -617,7 +624,7 @@ export function RouteMap({
        * it should have.
        */
       const reach = library
-        .map((echo) => distanceKm(at, echo.point.at))
+        .map((echo) => distanceKm(looking, echo.point.at))
         .sort((a, b) => a - b)[Math.min(2, Math.max(0, library.length - 1))];
       spanKm = Math.max(base, (reach ?? 0) * 2.4) / zoom;
     } else {
@@ -669,7 +676,7 @@ export function RouteMap({
     // computed twice and drifting.
     project.plan = plan;
     return project;
-  }, [mode, geometry, library, at, overview, zoom, box, pan, barH, reservedBottom, navH]);
+  }, [mode, geometry, library, at, lookAt, overview, zoom, box, pan, barH, reservedBottom, navH]);
 
   const path = useMemo(() => {
     if (!geometry) return "";
@@ -814,7 +821,8 @@ export function RouteMap({
    * metres away when there is one at ninety is pointing at the wrong thing.
    */
   const edge = useMemo(() => {
-    if (!at || overview) return null;
+    // Looking somewhere else, "the best thing you cannot see" from here means nothing.
+    if (!at || overview || lookAt) return null;
     const off: EdgeMark[] = [];
     for (const echo of library) {
       const state = stateOf(echo.id);
@@ -900,7 +908,7 @@ export function RouteMap({
       lastY = y;
       return { ...mark, y };
     });
-  }, [at, overview, library, stateOf, projection, box, zoom, barH, reservedBottom, navH, railTopPx]);
+  }, [at, overview, lookAt, library, stateOf, projection, box, zoom, barH, reservedBottom, navH, railTopPx]);
 
   /**
    * One pin, drawn wherever it has been put.
