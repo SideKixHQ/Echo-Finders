@@ -6,6 +6,81 @@ Every figure below is computed from the repository, not estimated in the abstrac
 lengths from `content/echoes/`, audio sizes from the bitrate in `packages/core/src/pkg/build.ts`,
 route sizes from the per-mode budgets in `packages/core/src/modes.ts`.
 
+## Prices and margin (2026-10-09)
+
+James approved **$9.99 for a City Pass** (one-time) and **$34.99 a year for All-Access**,
+on one condition: every cost of hosting and operating the app is counted, and the margin
+is at least 80%. "Don't let me find out that one day you forgot a hidden cost." This
+section is that count. The older sections below were written before payments existed and
+missed several of these lines; where they disagree, this section wins.
+
+**Decisions it rests on (James, 2026-10-09):** US only for the MVP. Echo writing and
+fact-checking are James's own work and are not counted as a cost. Apple's Small Business
+Program applies, so App Store purchases pay 15%.
+
+### What each sale keeps
+
+| | City Pass $9.99 | All-Access $34.99/yr |
+|---|---|---|
+| **Sold on the web (Stripe)** | | |
+| Card fee, 2.9% + 30¢ | $0.59 | $1.31 |
+| Stripe Billing, 0.7% (subscriptions only) | none | $0.24 |
+| Stripe Tax, 0.5% (sales tax itself is added on top, US) | $0.05 | $0.17 |
+| Refunds and disputes, allow 2% ($15 per dispute) | $0.20 | $0.70 |
+| Foreign cards, +1.5% on about a fifth of sales (Radar blocks non-US) | $0.03 | $0.10 |
+| Serving the app, map and audio to that listener | about $0.20, for life | $0.10 to $1 a year |
+| **Kept** | **about $8.90 (89%)** | **about $31.50 to $32.40 (90–93%)** |
+| **Sold in the App Store (only if walking needs a native app)** | | |
+| Apple, 15% (Small Business Program; Apple collects US sales tax) | $1.50 | $5.25 |
+| **Kept** | **about $8.30 (83%)** | **about $29.50 (84%)** |
+
+Stripe figures are its published US rates, checked against secondary sources on
+2026-10-09; confirm on stripe.com/pricing once. Apple's 15% becomes 30% for the year after
+App Store revenue passes $1M.
+
+### Fixed costs, every month
+
+| | |
+|---|---|
+| Vercel Pro (functions, bandwidth) | $20 |
+| Error reporting (Sentry) | $26 |
+| Database for accounts (Supabase), once accounts exist | $25 |
+| Sign-in email (magic links) | about $20 |
+| Storage for audio and the map file (Cloudflare R2) | $1 to $5 |
+| Domain | about $2 |
+| ElevenLabs Pro, while voicing new echoes (pause between batches) | about $99 |
+| Apple Developer Program, only if native | about $8 |
+| Insurance (media liability), legal, accounting, sales-tax filing | $300 to $600 |
+| **Total** | **about $500 to $900** |
+
+### When the business as a whole clears 80%
+
+Each sale keeps about 90%. The whole business clears 80% once fixed costs are no more than
+about a tenth of revenue: roughly **$9,000 a month**, which is about 1,000 City Passes or
+3,100 All-Access members. Below that the per-sale margin is fine and the fixed costs
+dominate.
+
+### The costs that would break this, and what is done about each
+
+1. **Map tiles. Live in the app until it is fixed.** The map draws Esri's tiles with no key.
+   Esri's terms require a paid plan for an app that earns money, charge per session or per
+   thousand tiles beyond a free allowance, and forbid caching or self-hosting them (which
+   offline flights need). At 100,000 listeners that is thousands of dollars a month, and a
+   City Pass, paid once, would keep costing money for ever. **Fix: an open basemap
+   (OpenStreetMap data, drawn by MapLibre), which costs cents.** Required before taking
+   money.
+2. **A native iOS app.** If the screen-lock test fails and walking needs a real app, App
+   Store sales pay Apple 15%: still over 80% (table above). Keep selling on the web too.
+3. **Sales tax and VAT.** US only: tax is added on top at checkout, so it is not a cost.
+   Selling in the UK or EU means prices that include about 20% VAT, which would take the
+   margin to about 70%. Price those markets separately when the time comes.
+4. **Per-listener runtime calls.** Any model call, text-to-speech or routing request made
+   while somebody listens turns a fixed cost into a per-user one. Everything is
+   pre-rendered today. Driving directions (Google) would be the first per-minute cost, and
+   must be priced before it ships.
+5. **Disputes.** $15 each. A chargeback rate much over 1% means something is wrong with
+   how a purchase is described, not a cost to absorb.
+
 ## The shape of it, before the numbers
 
 **This is a content business with almost no marginal cost.** Serving one more listener costs
@@ -33,6 +108,11 @@ costs essentially nothing, because R2 charges nothing for egress. The only per-u
 bucket read operations, at $0.36 per million.
 
 ## Monthly, in total
+
+*The two tables below are from before payments. The fixed costs in "Prices and margin"
+above are the current count: these left out insurance, legal, accounting, sign-in email,
+the ElevenLabs plan and, most of all, map tiles, which were assumed to be self-hosted and
+are not yet.*
 
 ### MVP — one city, walking, no backend
 
@@ -64,6 +144,10 @@ At a million listeners this rises to roughly $100 — the only line that scales 
 reads, and it scales at $0.36 per million.
 
 ## One-time, to build the library
+
+*Not counted in the margin: James writes and fact-checks the echoes himself (2026-10-09).
+Kept here for when that changes, for example a second editor or an airline's bigger
+library.*
 
 The numbers below are for a 5,000-echo library. Measured inputs: **805 characters and 89
 seconds per echo**, average, across the 25 written so far.
