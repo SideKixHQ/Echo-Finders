@@ -27,6 +27,7 @@ import { rarityOf, type Echo, type TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
 import { platePng } from "./archive-plate";
 import type { PinState } from "./RouteMap";
+import { TruthMark } from "./TruthMark";
 
 export interface EchoPopupProps {
   readonly echo: Echo;
@@ -121,6 +122,10 @@ export function EchoPopup({
         {/* The rarity, where the design has it. It is the thing that decides whether the
             walk is worth taking, and it was only visible once you had already taken it. */}
         {rarity !== "common" && <em className="pop-rarity">{rarity}</em>}
+        {/* On a short screen the mark rides this line instead of taking its own. */}
+        <span className="pop-truth-inline">
+          <TruthMark echo={echo} short />
+        </span>
       </span>
 
       {/*
@@ -171,6 +176,9 @@ export function EchoPopup({
         ))}
 
       <h3>{echo.title}</h3>
+      <span className="pop-truth">
+        <TruthMark echo={echo} />
+      </span>
 
       <p className="pop-where">
         {echo.point.place} · {Math.max(1, Math.round(echo.durationS / 60))} min

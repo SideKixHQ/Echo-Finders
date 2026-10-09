@@ -23,6 +23,13 @@ for what gets served; it is built from here (ADR-0005).
 5. Wikipedia is for finding subjects and their original sources. It is not itself a
    source, and its prose is never the basis for a script.
 
+## Fact and folklore (ADR-0017)
+
+History, True Crime, People, Landmarks, Nature, Food & Drink and Arts are **fact**: certainty
+`documented` or `contested`, verified before approval. Ghosts, folklore and local myths are
+**folklore**: certainty `legend`, always. Every screen marks which one a listener is hearing:
+"True story · not yet verified", "✓ True story · verified", "Disputed" or "Legend · not fact".
+
 ## Layout
 
 ```

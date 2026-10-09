@@ -10,7 +10,7 @@
 import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
 import { join, relative, dirname } from "node:path";
 import { parse as parseYaml } from "yaml";
-import { parseEcho, validateLibrary } from "@echofinders/core";
+import { isVerified, parseEcho, validateLibrary } from "@echofinders/core";
 
 const ROOT = new URL("..", import.meta.url).pathname;
 const OUT = join(ROOT, "apps", "prototype", "src", "library.generated.ts");
@@ -197,6 +197,8 @@ for (const file of routeFiles) {
   });
 }
 
+const verified = echoes.filter(isVerified).map((echo) => echo.id);
+
 await mkdir(dirname(OUT), { recursive: true });
 await writeFile(
   OUT,
@@ -207,7 +209,10 @@ await writeFile(
     `// something to play. The real library in content/ is untouched and still awaiting\n` +
     `// human fact-checking. Never import this into anything that ships.\n` +
     `export const LIBRARY: readonly Echo[] = ${JSON.stringify(demo, null, 2)} as const;\n\n` +
-    `export const ROUTES: readonly Route[] = ${JSON.stringify(routes, null, 2)} as const;\n`,
+    `export const ROUTES: readonly Route[] = ${JSON.stringify(routes, null, 2)} as const;\n\n` +
+    `// What a person has really checked, as authored, before the demo override above. The\n` +
+    `// "true story" mark reads this, never the overridden status (\`truth.ts\` in the engine).\n` +
+    `export const VERIFIED_IDS: ReadonlySet<string> = new Set(${JSON.stringify(verified)});\n`,
   "utf8",
 );
 
