@@ -58,6 +58,7 @@ import type { Rating } from "./ratings";
 import { platePng } from "./archive-plate";
 import { Transcript } from "./Transcript";
 import { shareText } from "./share";
+import { TruthMark } from "./TruthMark";
 
 const RARITY_LABEL: Record<string, string> = {
   common: "",
@@ -236,6 +237,7 @@ export function Ribbon({
         <p className="hear-kicker mono">
           {rarity && <span className="hear-rarity">{rarity}</span>}
           <span>{CATEGORY_LABEL[echo.category]}</span>
+          <TruthMark echo={echo} />
         </p>
         <h1>{echo.title}</h1>
       </div>

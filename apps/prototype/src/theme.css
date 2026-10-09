@@ -4472,3 +4472,32 @@ body {
 /* Open, the box sits over the control column; the map bar is its stacking context, and at
    18 it lost to the column's 26, which drew the pulse button over "Landmarks". */
 .mapbar:has(.kind-box) { z-index: 45; }
+
+/*
+ * True story, not yet verified, disputed, legend (`TruthMark.tsx`). Small and quiet: it is
+ * a fact about the echo, read in passing, not a badge competing with the title. Each colour
+ * is checked against the card in both themes by `audit:contrast`.
+ */
+.truth {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-family: "Space Grotesk", monospace; font-size: 10.5px; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap;
+}
+.truth svg {
+  width: 12px; height: 12px; fill: none; stroke: currentColor;
+  stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round;
+}
+.truth-true-story { color: var(--aqua); }
+.truth-unverified, .truth-memory { color: var(--muted); }
+.truth-disputed { color: var(--ember-core); }
+.truth-legend { color: var(--cat-legend); }
+/* Its own line under the title; on a short screen (an iPhone SE in Safari, 553px) that line
+   cut 14px off the bottom of the card, so there it joins the category line, short. */
+.pop-truth { display: flex; margin-top: 4px; }
+.pop-truth-inline { display: none; margin-left: 4px; }
+@media (max-height: 600px) {
+  .pop-truth { display: none; }
+  .pop-truth-inline { display: inline-flex; }
+}
+/* In My Echoes it is part of a sentence-case line, so it reads as words, not a stamp. */
+.entry-meta .truth { font: inherit; letter-spacing: 0; text-transform: lowercase; }

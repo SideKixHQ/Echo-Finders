@@ -27,6 +27,7 @@ import { KindGrid } from "./KindPicker";
 import { platePng } from "./archive-plate";
 import type { PrivacySettings } from "@echofinders/core";
 import { holdsPersonalLocation } from "@echofinders/core";
+import { TruthMark } from "./TruthMark";
 
 interface Props {
   readonly captured: readonly CaptureEvent[];
@@ -315,6 +316,8 @@ function Entry({
             ) : (
               found.toLocaleDateString("en-GB", { day: "numeric", month: "short" })
             )}
+            {" · "}
+            <TruthMark echo={capture.echo} short />
             {reasons.length > 0 && <> · {reasons[0]!.toLowerCase()}</>}
             {stored && <> · position saved</>}
           </p>

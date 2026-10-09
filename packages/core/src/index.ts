@@ -20,6 +20,7 @@ export * from "./privacy/settings.js";
 export * from "./content/validate.js";
 export * from "./content/parse.js";
 export * from "./content/claims.js";
+export * from "./content/truth.js";
 export * from "./content/contributions.js";
 export * from "./content/waveform.js";
 export * from "./pkg/build.js";

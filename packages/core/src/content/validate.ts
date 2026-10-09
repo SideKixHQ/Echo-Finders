@@ -12,6 +12,7 @@ import type { Source, Echo } from "../types.js";
 import { hasAudio } from "../types.js";
 import { MODE_PRESETS } from "../modes.js";
 import { checkContribution } from "./contributions.js";
+import { FACT_CATEGORIES, FOLKLORE_CATEGORIES } from "./truth.js";
 import { NOMINAL_DURATION_S, ECHO_CATEGORIES } from "../types.js";
 
 export type Severity = "error" | "warning";
@@ -295,6 +296,16 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
       "certainty",
       "true crime concerns real people and real harm; folklore belongs under legend",
     );
+  } else if (FACT_CATEGORIES.includes(echo.category) && echo.certainty === "legend") {
+    // James (2026-10-09): history, people and the arts are told as fact and verified. A
+    // legend filed here would wear "true story" on every screen (`truth.ts`).
+    error(
+      "certainty",
+      `${echo.category} is told as fact; a legend belongs under legend, where it is labelled one`,
+    );
+  } else if (FOLKLORE_CATEGORIES.includes(echo.category) && echo.certainty !== "legend" && echo.certainty !== "documented") {
+    // Folklore is labelled Legend on every screen, so nothing filed here may claim otherwise.
+    error("certainty", `folklore is always "legend", not "${echo.certainty}"`);
   }
 
   // --- Perspective --------------------------------------------------------------------

@@ -6605,3 +6605,7 @@ export const ROUTES: readonly Route[] = [
     "departureAt": "2026-06-15T14:00:00Z"
   }
 ] as const;
+
+// What a person has really checked, as authored, before the demo override above. The
+// "true story" mark reads this, never the overridden status (`truth.ts` in the engine).
+export const VERIFIED_IDS: ReadonlySet<string> = new Set([]);
