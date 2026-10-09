@@ -2,17 +2,19 @@
  * Settings › Membership: what you have, and every way to change it.
  *
  * James asked for the four things any paid app keeps here: membership options, restore
- * purchases, a payment card, and cancel. Two of them need things that do not exist yet
- * (`docs/10-blockers.md` #6: no accounts, no Stripe), so each row says what it does today
- * rather than pretending:
+ * purchases, a payment card, and cancel. Each row says what it does today rather than
+ * pretending, because real payments switch on only once the Stripe keys are in Vercel
+ * (`payments.ts`), and accounts do not exist yet (`docs/10-blockers.md` #6):
  *
  *   - Membership options opens the two plans, as the paywall offers them.
- *   - Restore reads back what this device has bought. Moving a purchase to another phone
- *     needs an account, and the row says so after it runs.
- *   - The card row is a statement, not a button: there is no card to add until payments
- *     are switched on, and a button that did nothing would be worse than a sentence.
+ *   - Restore reads back what this device has bought: from Stripe when payments are on,
+ *     from the device record otherwise. Moving a purchase to another phone needs an
+ *     account, and the row says so after it runs.
+ *   - The card row opens Stripe's own page (card, receipts, cancel) once this device has
+ *     bought through Stripe. Before that it is a statement, not a button: a button that
+ *     did nothing would be worse than a sentence.
  *   - Cancel stops All-Access renewing and keeps the year already paid for, which is the
- *     promise the paywall makes ("cancel any time") and what Stripe will do with
+ *     promise the paywall makes ("cancel any time"). At Stripe it is the subscription's
  *     `cancel_at_period_end`. It asks once before it acts, because it is about money.
  *
  * A City Pass is bought once and has nothing to cancel, and the plan line says that rather
@@ -28,13 +30,31 @@ interface Props {
   readonly freeLeft: number;
   /** Open the plans. */
   readonly onOptions: () => void;
-  /** Read back what this device holds, and say what that is. */
-  readonly onRestore: () => Membership;
+  /** Read back what this device holds (from Stripe, when payments are on), and say what. */
+  readonly onRestore: () => Membership | Promise<Membership>;
   /** Cancel All-Access renewal (false) or turn it back on (true). */
   readonly onRenewal: (on: boolean) => void;
+  /** Real payments are switched on (`payments.ts`). */
+  readonly payments?: boolean;
+  /** This device has bought through Stripe, so Stripe has a card page for it. */
+  readonly canManageCard?: boolean;
+  /** Open Stripe's page for the card, receipts and cancelling. */
+  readonly onCard?: () => void;
+  /** What went wrong talking to payments, said where the listener is looking. */
+  readonly error?: string | null;
 }
 
-export function MembershipPanel({ membership, freeLeft, onOptions, onRestore, onRenewal }: Props) {
+export function MembershipPanel({
+  membership,
+  freeLeft,
+  onOptions,
+  onRestore,
+  onRenewal,
+  payments = false,
+  canManageCard = false,
+  onCard,
+  error = null,
+}: Props) {
   const [confirming, setConfirming] = useState(false);
   const [restored, setRestored] = useState<string | null>(null);
   const { name, detail } = describe(membership, freeLeft);
@@ -62,21 +82,32 @@ export function MembershipPanel({ membership, freeLeft, onOptions, onRestore, on
         <Chevron />
       </button>
 
-      <div className="setting-row membership-row">
-        <span className="setting-text">
-          <strong>Payment card</strong>
-          <small>
-            No card yet: payments are not switched on. When they are, your card is held by
-            Stripe, never by Echo Finders, and you change it here.
-          </small>
-        </span>
-        <span className="membership-soon mono">Soon</span>
-      </div>
+      {canManageCard && onCard ? (
+        <button className="setting-row setting-link membership-row" onClick={onCard}>
+          <span className="setting-text">
+            <strong>Payment card</strong>
+            <small>Change your card, see receipts or cancel. Stripe holds it, never Echo Finders.</small>
+          </span>
+          <Chevron />
+        </button>
+      ) : (
+        <div className="setting-row membership-row">
+          <span className="setting-text">
+            <strong>Payment card</strong>
+            <small>
+              {payments
+                ? "No card yet. When you buy, Stripe holds your card, never Echo Finders, and you change it here."
+                : "No card yet: payments are not switched on. When they are, your card is held by Stripe, never by Echo Finders, and you change it here."}
+            </small>
+          </span>
+          {!payments && <span className="membership-soon mono">Soon</span>}
+        </div>
+      )}
 
       <button
         className="setting-row setting-link membership-row"
-        onClick={() => {
-          const now = onRestore();
+        onClick={async () => {
+          const now = await onRestore();
           setRestored(
             now.plan === "free"
               ? "Nothing to restore on this device."
@@ -92,6 +123,7 @@ export function MembershipPanel({ membership, freeLeft, onOptions, onRestore, on
       </button>
       {/* Spoken when it changes, so a screen reader hears the result of the tap. */}
       <p className="membership-note" role="status">
+        {error && <>{error} </>}
         {restored && (
           <>
             {restored} Bought on another phone or browser? That moves over once accounts

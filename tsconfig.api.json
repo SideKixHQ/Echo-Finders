@@ -1,0 +1,17 @@
+{
+  // The Vercel functions in `api/`. Kept out of that folder so Vercel's own build of them
+  // never reads it. Type-checked against the engine's source, the same
+  // way the prototype is, so a stale `packages/core/dist` cannot hide a mismatch.
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "DOM"],
+    "types": ["node"],
+    "noEmit": true,
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": false,
+    "rootDir": ".",
+    "paths": { "@echofinders/core": ["./packages/core/src/index.ts"] }
+  },
+  "include": ["api/*.ts", "test/api/*.ts"]
+}
