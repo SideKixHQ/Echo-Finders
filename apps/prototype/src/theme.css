@@ -4501,3 +4501,36 @@ body {
 }
 /* In My Echoes it is part of a sentence-case line, so it reads as words, not a stamp. */
 .entry-meta .truth { font: inherit; letter-spacing: 0; text-transform: lowercase; }
+
+/*
+ * Looking somewhere else (`place-search.ts`): the search in the journey menu, and the pill
+ * that says where the map is looking and brings it back. Browsing only; syncing an echo
+ * still means standing at it.
+ */
+.jmenu-look { padding: 4px 0 2px; }
+.jmenu-look-field {
+  display: flex; align-items: center; gap: 8px; margin: 4px 0;
+  padding: 0 12px; height: 44px; border-radius: 12px;
+  background: rgba(var(--rgb-panel), 0.6); border: 1px solid var(--line);
+}
+.jmenu-look-field svg {
+  width: 16px; height: 16px; flex: none; fill: none; stroke: var(--muted);
+  stroke-width: 1.8; stroke-linecap: round;
+}
+.jmenu-look-field input {
+  flex: 1; min-width: 0; height: 100%; border: 0; outline: none; background: none;
+  color: var(--white); font: inherit; font-size: 16px;
+}
+.jmenu-look-field:focus-within { border-color: var(--aqua); }
+.look-back {
+  position: absolute; left: 50%; transform: translateX(-50%); z-index: 27;
+  top: calc(var(--top-gap, 12px) + var(--mapbar-h, 56px) + 8px);
+  display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 16px 0 12px;
+  border-radius: 999px; border: 0; cursor: pointer;
+  background: var(--aqua); color: #042220; font: inherit; font-size: 14px; font-weight: 500;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+.look-back svg {
+  width: 18px; height: 18px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round;
+}

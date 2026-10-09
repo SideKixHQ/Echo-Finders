@@ -37,6 +37,7 @@ import { Paywall } from "./Paywall";
 import { buyAllAccess, buyCityPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
 import { MembershipPanel } from "./Membership";
 import { keepJourney, readJourney } from "./journey-store";
+import type { PlaceHit } from "./place-search";
 import {
   customerId,
   finishCheckout,
@@ -81,6 +82,8 @@ const dev =
 
 /** The library by id, for turning stored records from other journeys back into echoes. */
 const LIBRARY_BY_ID: ReadonlyMap<string, Echo> = new Map(LIBRARY.map((e) => [e.id, e]));
+/** How far from a searched place its echoes are shown. */
+const LOOK_RADIUS_KM = 25;
 const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROUTES[0]!;
 /** The journey to reopen on: the one you were on, or here, on foot (`journey-store.ts`). */
 const KEPT = readJourney(new Set(ROUTES.map((r) => r.id)));
@@ -393,6 +396,12 @@ export function App() {
    * buttons and both have to move the same number. The map still owns the gestures.
    */
   const [zoom, setZoom] = useState(1);
+  /**
+   * Somewhere searched for, being looked at from wherever you are (`place-search.ts`).
+   * Browsing only: syncing still means standing there. Not kept across a reload, which
+   * opens on where you actually are.
+   */
+  const [lookAt, setLookAt] = useState<PlaceHit | null>(null);
   /**
    * How far the listener has dragged the map, in screen pixels.
    *
@@ -1154,11 +1163,14 @@ export function App() {
   const onMap = useMemo(
     () =>
       roaming
-        ? (overview ? LIBRARY : state.nearby.map((n) => n.echo)).filter((e) =>
-            activeCats.has(e.category),
-          )
+        ? (overview
+            ? LIBRARY
+            : lookAt
+              ? LIBRARY.filter((e) => distanceKm(lookAt.at, e.point.at) <= LOOK_RADIUS_KM)
+              : state.nearby.map((n) => n.echo)
+          ).filter((e) => activeCats.has(e.category))
         : onRoute.filter((e) => activeCats.has(e.category)),
-    [roaming, overview, state.nearby, activeCats, onRoute],
+    [roaming, overview, lookAt, state.nearby, activeCats, onRoute],
   );
 
   /**
@@ -1171,14 +1183,15 @@ export function App() {
    * order and says no distance rather than inventing one.
    */
   const stepList = useMemo(() => {
-    const from = state.position?.at ?? null;
+    // Nearest to where the map is looking: the searched place, or where you are.
+    const from = (roaming ? lookAt?.at : null) ?? state.position?.at ?? null;
     const items = onMap.map((echo) => ({
       echo,
       distanceKm: from ? distanceKm(from, echo.point.at) : null,
     }));
     if (from) items.sort((a, b) => (a.distanceKm ?? 0) - (b.distanceKm ?? 0));
     return items;
-  }, [onMap, state.position]);
+  }, [onMap, state.position, roaming, lookAt]);
 
   /**
    * The echo the arrows are looking at.
@@ -1251,7 +1264,8 @@ export function App() {
    * Only computed when there is nothing in range, which is the only time anything asks.
    */
   const WIDEN_TO_KM = 16;
-  const nowhere = roaming && state.nearby.length === 0;
+  // Not while looking somewhere else: that map has its own echoes, and the pill says so.
+  const nowhere = roaming && !lookAt && state.nearby.length === 0;
   const nearestAnywhere = useMemo(() => {
     if (!nowhere) return null;
     const from = state.position?.at ?? null;
@@ -1488,7 +1502,23 @@ export function App() {
                   routes={ROUTES}
                   counts={corridorCounts}
                   kept={downloaded}
-                  label={roaming ? "Exploring" : leftLabel}
+                  label={roaming ? (lookAt ? lookAt.label : "Exploring") : leftLabel}
+                  library={LIBRARY}
+                  onLook={(hit, mode) => {
+                    switchTravel(mode);
+                    /*
+                     * Open on the nearest echoes, not on the ZIP's own centre. A ZIP point
+                     * marks an area: 28401's is six kilometres north of downtown Wilmington,
+                     * which put a hundred echoes in one bubble at the edge of the map.
+                     */
+                    const nearest = LIBRARY.map((e) => ({ e, km: distanceKm(hit.at, e.point.at) }))
+                      .filter((n) => n.km <= LOOK_RADIUS_KM)
+                      .sort((a, b) => a.km - b.km)[0];
+                    setLookAt(nearest ? { ...hit, at: nearest.e.point.at } : hit);
+                    setSelectedId(null);
+                    setPan({ x: 0, y: 0 });
+                    setZoom(1);
+                  }}
                   progress={roaming ? null : along}
                   name={
                     roaming
@@ -1496,9 +1526,11 @@ export function App() {
                       : `Change your journey: ${journeyLabel}, ${leftLabel} left`
                   }
                   onRoam={(mode) => {
+                    setLookAt(null);
                     switchTravel(mode);
                   }}
                   onRoute={(next) => {
+                    setLookAt(null);
                     setTravel(next.mode === "flight" ? "flight" : next.mode === "driving" ? "driving" : "walking");
                     setRoaming(false);
                     setWalkingView("map");
@@ -1584,7 +1616,26 @@ export function App() {
                 onZoom={setZoom}
                 pan={pan}
                 onPan={setPan}
+                lookAt={roaming ? lookAt?.at ?? null : null}
               />
+              {roaming && lookAt && (
+                <button
+                  className="look-back"
+                  aria-label={`Looking at ${lookAt.label}. Back to where I am`}
+                  onClick={() => {
+                    setLookAt(null);
+                    setPan({ x: 0, y: 0 });
+                    setZoom(1);
+                  }}
+                >
+                  {/* Where it is looking is on the journey chip already; this says how back. */}
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
+                  </svg>
+                  Back to me
+                </button>
+              )}
 
               {/*
                 ONE BAR, and it is the only chrome at the bottom of the map.
