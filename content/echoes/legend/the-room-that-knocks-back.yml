@@ -1,0 +1,64 @@
+# From 12 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Authorized onboard visitor area. B340 itself requires a booking or permitted access.
+# Position: the ship; B340 position unknown (medium confidence).
+id: the-room-that-knocks-back
+title: "The Room That Knocks Back"
+summary: "You are aboard a ship where movement and unfamiliar sounds can have ordinary explanations."
+place: "Queen Mary, Long Beach, California"
+at: { lat: 33.75306, lng: -118.18972 }
+triggerRadiusKm: 0.15
+category: legend
+format: short
+durationS: 100
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven;
+  no supernatural claim is established.
+minAge: 0
+quality: 0.75
+tags: [long-beach, ghosts]
+teaser: "You are aboard a ship where movement and unfamiliar sounds can have ordinary explanations."
+script: |
+  You are aboard a ship where movement and unfamiliar sounds can have ordinary
+  explanations.
+
+  That makes the story of stateroom B340 especially difficult to separate from its
+  surroundings.
+
+  The Queen Mary’s operator publishes reports of nighttime knocks, bathroom lights
+  switching on, faucets running, and doors opening or closing unexpectedly.
+
+  The room has become part of the ship’s ghost folklore.
+
+  Those reports are not independently established evidence of spirits.
+
+  Still, imagine the situation they describe.
+
+  You are inside a small cabin. You hear a knock.
+
+  You open the door.
+
+  Nobody is there.
+
+  You close it and return to bed.
+
+  Then you hear another sound.
+
+  A ship is full of compartments you cannot see into, pipes behind walls, and passages
+  beyond doors.
+
+  B340’s legend lives in that uncertainty.
+
+  You know you heard something.
+
+  The harder question is whether the explanation is somewhere nearby, hidden by the ship
+  itself.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Special offers"
+    publisher: "The Queen Mary"
+    url: https://www.queenmary.com/special-offers.htm
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

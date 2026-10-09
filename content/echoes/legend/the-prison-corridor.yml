@@ -1,0 +1,71 @@
+# From 14 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Open cellblock on the designated visitor route; admission required.
+# Position: Fairmount Ave sidewalk at the main gate (medium confidence).
+id: the-prison-corridor
+title: "The Prison Corridor"
+summary: "Stand still for a moment."
+place: "Eastern State Penitentiary, Philadelphia"
+at: { lat: 39.96765, lng: -75.17265 }
+triggerRadiusKm: 0.06
+category: legend
+format: short
+durationS: 101
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven;
+  no supernatural claim is established.
+minAge: 0
+quality: 0.75
+tags: [philadelphia, ghosts]
+teaser: "Stand still for a moment."
+script: |
+  Stand still for a moment.
+
+  Look along the corridor, then toward the cells.
+
+  Eastern State’s ghost reputation includes stories of shadowy movement and something
+  appearing in an otherwise empty prison.
+
+  The historic site has discussed paranormal television investigations, including
+  controversial footage filmed in Cellblock Twelve.
+
+  Controversial matters.
+
+  A recording that people argue about is not proof of a ghost.
+
+  Now listen to the space around you.
+
+  A prison changes the meaning of ordinary sounds. A footstep may suggest an approaching
+  guard. A door may suggest confinement. Silence may suggest someone listening.
+
+  You do not need to imagine a particular dead prisoner.
+
+  The real people confined here already give these walls a difficult history.
+
+  The haunting stories add another question: can a place seem occupied after the people
+  who lived inside it are gone?
+
+  Look down the corridor again.
+
+  You may see nothing unusual.
+
+  The feeling of waiting for something is part of this story.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "easternstate.org"
+    publisher: "Eastern State Penitentiary Historic Site"
+    url: https://www.easternstate.org/FAQ
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Audio tour"
+    publisher: "Eastern State Penitentiary Historic Site"
+    url: https://easternstate.org/audio_tour.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Eastern State Penitentiary (HABS)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/pa1207/
+    retrievedAt: "2026-10-09"
+    rights: public-domain

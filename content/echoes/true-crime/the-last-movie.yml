@@ -1,0 +1,66 @@
+# From 04 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Public sidewalk outside the historic theatre on North Lincoln Avenue. Nearby scene of Dillinger’s fatal shooting.
+# Position: Lincoln Ave sidewalk at the theatre entrance (medium confidence).
+id: the-last-movie
+title: "The Last Movie"
+summary: "Stand outside the theatre and look at the entrance."
+place: "Biograph Theater, Chicago, Chicago"
+at: { lat: 41.92636, lng: -87.64968 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [chicago, dillinger]
+teaser: "Stand outside the theatre and look at the entrance."
+script: |
+  Stand outside the theatre and look at the entrance.
+
+  On July 22, 1934, John Dillinger walked through it to watch Manhattan Melodrama.
+
+  He was one of the country’s most wanted fugitives.
+
+  Federal agents knew he might come here. A woman accompanying him had provided
+  information about his plans.
+
+  They waited outside.
+
+  According to the FBI’s account, Dillinger emerged at about ten-thirty that night. Agent
+  Melvin Purvis lit a cigar to signal the others.
+
+  The FBI says Dillinger drew a pistol and ran toward a nearby alley.
+
+  Agents fired. Dillinger was fatally wounded.
+
+  Stay on the sidewalk. There is no need to enter the alley.
+
+  Look back toward the theatre doors.
+
+  Movie audiences leave carrying a story that has just ended.
+
+  That night, Dillinger stepped out of a fictional gangster story and into the final
+  moments of his own.
+
+  The theatre remains. The nationwide pursuit ended just beyond it.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-10-09"
+  contentWarning: "This echo describes a killing. No violence is described in detail."
+sources:
+  - title: "John dillinger"
+    publisher: "Federal Bureau of Investigation"
+    url: https://www.fbi.gov/history/cases-and-criminals/john-dillinger
+    retrievedAt: "2026-10-09"
+    rights: public-domain
+  - title: "FBI Chicago History"
+    publisher: "Federal Bureau of Investigation"
+    url: https://www.fbi.gov/history/field-office-histories/chicago
+    retrievedAt: "2026-10-09"
+    rights: public-domain

@@ -1,0 +1,65 @@
+# From 16 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Designated visitor path near the execution memorial; admission required.
+# Position: scaffold-site memorial, Tower Green (medium confidence).
+id: the-queen-who-returns
+title: "The Queen Who Returns"
+summary: "Look across Tower Green toward the Chapel of St Peter ad Vincula."
+place: "Tower Green, Tower of London"
+at: { lat: 51.50832, lng: -0.07700 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 99
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven;
+  no supernatural claim is established.
+minAge: 0
+quality: 0.75
+tags: [london, ghosts]
+teaser: "Look across Tower Green toward the Chapel of St Peter ad Vincula."
+script: |
+  Look across Tower Green toward the Chapel of St Peter ad Vincula.
+
+  Anne Boleyn was executed within the Tower in 1536. She was buried in that chapel.
+
+  Those are historical events.
+
+  One of the Tower’s enduring legends says she returns.
+
+  In the version published by Historic Royal Palaces, her ghost moves through the grounds,
+  leading a silent procession toward the chapel.
+
+  Nobody has established that such a procession is supernatural.
+
+  But the story’s route is meaningful.
+
+  It connects the place where a queen’s life ended with the place where her body was
+  buried.
+
+  No journey out of the fortress.
+
+  Only a return through it.
+
+  Pause and look between the green and the chapel.
+
+  The legend imagines movement where history imposed an ending.
+
+  Anne’s death is documented. Her supposed return belongs to the stories people tell about
+  this place.
+
+  Standing here, you can see how close those two settings are.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Famous ghost stories of the tower of london"
+    publisher: "Historic Royal Palaces"
+    url: https://www.hrp.org.uk/blog/famous-ghost-stories-of-the-tower-of-london/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Anne Boleyn"
+    publisher: "Historic Royal Palaces"
+    url: https://www.hrp.org.uk/tower-of-london/history-and-stories/anne-boleyn/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

@@ -1,0 +1,68 @@
+# From 06 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Designated visitor aisle beside the escape exhibits in the cellhouse; ticketed ferry visit required.
+# Position: inside the cellhouse (medium confidence).
+id: the-men-who-left-their-faces-behind
+title: "The Men Who Left Their Faces Behind"
+summary: "Look into the cells."
+place: "Alcatraz Island, San Francisco, San Francisco"
+at: { lat: 37.82671, lng: -122.42298 }
+triggerRadiusKm: 0.06
+category: true-crime
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [san-francisco, alcatraz]
+teaser: "Look into the cells."
+script: |
+  Look into the cells.
+
+  In June 1962, the men inside needed the guards to believe they were sleeping.
+
+  So they left faces on their pillows.
+
+  Frank Morris and brothers John and Clarence Anglin made dummy heads using materials that
+  included paint and human hair.
+
+  Behind the cells, they prepared an escape route. They also assembled makeshift flotation
+  equipment from raincoats.
+
+  On the night of June 11, the three men disappeared from their cells.
+
+  By morning, the deception was discovered.
+
+  The faces were still in bed.
+
+  The men were gone.
+
+  Their ultimate fate has never been conclusively established. The escape does not prove
+  they survived the bay.
+
+  When you later look toward the mainland, notice the water between here and there.
+
+  The men overcame the walls, the checks, and the locks.
+
+  The unanswered part begins beyond the island.
+
+  They left behind something that looked like sleep, and a mystery that never settled.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-10-09"
+  contentWarning: "This echo describes a prison escape. No violence is described."
+sources:
+  - title: "Alcatraz escape"
+    publisher: "Federal Bureau of Investigation"
+    url: https://www.fbi.gov/history/cases-and-criminals/alcatraz-escape
+    retrievedAt: "2026-10-09"
+    rights: public-domain
+  - title: "Alcatraz.jsp"
+    publisher: "Federal Bureau of Prisons"
+    url: https://www.bop.gov/about/history/alcatraz.jsp
+    retrievedAt: "2026-10-09"
+    rights: public-domain

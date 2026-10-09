@@ -1,0 +1,70 @@
+# From 13 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Authorized grounds near the tower. This is the associated property, not the exact drowning point.
+# Position: the tower (high confidence).
+id: the-children-at-the-lighthouse
+title: "The Children at the Lighthouse"
+summary: "Look up at the lighthouse."
+place: "St. Augustine Lighthouse & Maritime Museum, Florida"
+at: { lat: 29.88543, lng: -81.28852 }
+triggerRadiusKm: 0.06
+category: legend
+format: short
+durationS: 103
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven;
+  no supernatural claim is established.
+minAge: 0
+quality: 0.75
+tags: [st-augustine, ghosts]
+teaser: "Look up at the lighthouse."
+script: |
+  Look up at the lighthouse.
+
+  Before the tower was completed, this was a construction site where children sometimes
+  played.
+
+  In July 1873, children rode a cart used to transport building materials.
+
+  The cart overturned into the water.
+
+  Three girls drowned, including two daughters of construction superintendent Hezekiah
+  Pittee. A younger sister survived.
+
+  The museum documents that tragedy.
+
+  The ghost stories came afterward.
+
+  Its published accounts describe reports of unexplained footsteps and a little girl
+  appearing in the keeper’s house.
+
+  Some people connect those stories to the children who died.
+
+  That connection is belief, not an established fact.
+
+  Pause beneath the tower.
+
+  A lighthouse is built to guide people away from danger.
+
+  Here, a childhood accident became part of the place’s remembered history, then part of
+  its folklore.
+
+  The deaths were real.
+
+  The stories of children still moving through the property remain unverified.
+
+  Both deserve to be told with care.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Ghost stories the pittee girls"
+    publisher: "St. Augustine Lighthouse and Maritime Museum"
+    url: https://www.staugustinelighthouse.org/2020/03/02/ghost-stories-the-pittee-girls/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Pittee descendants visit the museum"
+    publisher: "St. Augustine Lighthouse and Maritime Museum"
+    url: https://www.staugustinelighthouse.org/2023/03/19/pittee-descendants-visit-the-museum/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

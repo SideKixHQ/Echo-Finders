@@ -1,0 +1,71 @@
+# From 02 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Dutch Room during an admitted museum visit.
+# Position: building, Evans Way side (medium confidence).
+id: the-empty-frames
+title: "The Empty Frames"
+summary: "Look at the empty frames."
+place: "Isabella Stewart Gardner Museum, Boston, Boston"
+at: { lat: 42.33822, lng: -71.09921 }
+triggerRadiusKm: 0.06
+category: true-crime
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [boston, art-theft]
+teaser: "Look at the empty frames."
+script: |
+  Look at the empty frames.
+
+  In most museums, an empty frame means something is being moved or restored.
+
+  Here, it means something was stolen.
+
+  Early on March 18, 1990, two men dressed as police officers arrived at the Isabella
+  Stewart Gardner Museum. They claimed they were responding to a disturbance.
+
+  A guard let them inside.
+
+  The men restrained the guards and stole thirteen works of art.
+
+  Among the missing pieces were paintings by Rembrandt and Vermeer. The thieves left
+  behind spaces that visitors would continue to see for decades.
+
+  Pause beside one of those spaces.
+
+  A museum normally asks you to examine what is present: the brushwork, the light, the
+  expression on a face.
+
+  This room also asks you to notice what is missing.
+
+  The theft remains unresolved, and the museum continues seeking the return of its art.
+
+  Those frames are waiting.
+
+  The most striking thing in this room may be something nobody can show you.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: unsolved
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-10-09"
+  contentWarning: "This echo describes an armed robbery. Nobody is described as hurt."
+sources:
+  - title: "Theft"
+    publisher: "Isabella Stewart Gardner Museum"
+    url: https://www.gardnermuseum.org/about/theft
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Inside the fbi podcast the isabella stewart gardner museum heist"
+    publisher: "Federal Bureau of Investigation"
+    url: https://www.fbi.gov/news/podcasts/inside-the-fbi-podcast-the-isabella-stewart-gardner-museum-heist
+    retrievedAt: "2026-10-09"
+    rights: public-domain
+  - title: "Isabella Stewart Gardner Museum Heist"
+    publisher: "Federal Bureau of Investigation"
+    url: https://www.fbi.gov/history/cases-and-criminals/isabella-stewart-gardner-museum-heist
+    retrievedAt: "2026-10-09"
+    rights: public-domain
