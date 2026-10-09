@@ -1,0 +1,68 @@
+# From 19 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Public sidewalk facing the main house, or authorized museum grounds.
+# Position: Market St sidewalk at the portico (medium confidence).
+# REVIEW FLAG: research found no source tying a "lady in grey" to the Bellamy. Ghost listings
+# describe a Victorian woman near the nursery (usually said to be Ellen Bellamy), handprints and
+# a man in black. Find the source of "lady in grey" or rework the echo before approval.
+id: the-lady-in-grey
+title: "The Lady in Grey"
+summary: "Look at the windows of the main house."
+place: "Bellamy Mansion Museum, Wilmington, North Carolina, Wilmington, North Carolina"
+at: { lat: 34.23595, lng: -77.94295 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 105
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven;
+  no supernatural claim is established.
+minAge: 0
+quality: 0.75
+tags: [wilmington, ghosts]
+teaser: "Look at the windows of the main house."
+script: |
+  Look at the windows of the main house.
+
+  A longtime Bellamy volunteer described a story about a woman in grey, supposedly seen
+  wandering its rooms.
+
+  The museum includes that account in its discussion of hauntings.
+
+  It also asks a revealing question: why do people so strongly want old houses to be
+  haunted?
+
+  The woman has not been established as a supernatural presence. The museum does not
+  identify her as a proven spirit of a particular resident.
+
+  Instead, the story became attached to the house.
+
+  Look at the windows again.
+
+  From outside, you can see only part of each room. Reflections and shadows change what
+  appears behind the glass.
+
+  An old house contains lives you cannot meet and rooms you cannot fully read from the
+  street.
+
+  The lady in grey gives that uncertainty a human shape.
+
+  But the building’s documented history deserves attention too.
+
+  The legend is one story people tell about Bellamy.
+
+  It is not the whole story of the people who lived and worked here.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "10 2024"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/museum-blog/archives/10-2024
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Bellamy Mansion (HABS NC-198)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/nc0053/
+    retrievedAt: "2026-10-09"
+    rights: public-domain

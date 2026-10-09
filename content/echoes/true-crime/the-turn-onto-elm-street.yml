@@ -1,0 +1,78 @@
+# From 08 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Public sidewalk beside Elm Street. Remain off the roadway.
+# Position: Elm St north sidewalk near the former X; check on a map (low confidence).
+id: the-turn-onto-elm-street
+title: "The Turn onto Elm Street"
+summary: "Watch the curve of Elm Street."
+place: "Dealey Plaza, Dallas, Dallas"
+at: { lat: 32.77905, lng: -96.80890 }
+triggerRadiusKm: 0.05
+category: true-crime
+format: short
+durationS: 101
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [dallas, kennedy]
+teaser: "Watch the curve of Elm Street."
+script: |
+  Watch the curve of Elm Street.
+
+  On November 22, 1963, President John F. Kennedy’s motorcade passed through this plaza.
+
+  People had gathered to see him.
+
+  At about twelve-thirty, Kennedy was shot while riding along Elm Street.
+
+  He was taken to Parkland Memorial Hospital, where he was pronounced dead.
+
+  Look toward the former Texas School Book Depository.
+
+  The Warren Commission concluded that Lee Harvey Oswald fired from that building. Later
+  investigations and decades of debate followed.
+
+  This short account does not settle every disputed question.
+
+  But the central event is documented: a president was fatally shot during a public
+  motorcade on the street beside you.
+
+  Notice how compact the setting is.
+
+  The road. The windows. The sidewalks where witnesses stood.
+
+  An event that expanded into millions of pages of investigation began within this small
+  stretch of city.
+
+  You can stand beside the route.
+
+  You cannot recover the certainty people had before the motorcade reached it.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: true
+  convictionStatus: alleged
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-10-09"
+  contentWarning: "This echo describes an assassination. No violence is described in detail."
+sources:
+  - title: "Dallas motorcade"
+    publisher: "The Sixth Floor Museum at Dealey Plaza"
+    url: https://emuseum.jfk.org/collections/37371/dallas-motorcade
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Chapter 1"
+    publisher: "National Archives"
+    url: https://www.archives.gov/research/jfk/warren-commission-report/chapter-1
+    retrievedAt: "2026-10-09"
+    rights: public-domain
+  - title: "Warren Commission Report, Chapter 3"
+    publisher: "National Archives"
+    url: https://www.archives.gov/research/jfk/warren-commission-report/chapter-3.html
+    retrievedAt: "2026-10-09"
+    rights: public-domain
+  - title: "House Select Committee on Assassinations, Summary of Findings"
+    publisher: "National Archives"
+    url: https://www.archives.gov/research/jfk/select-committee-report/summary.html
+    retrievedAt: "2026-10-09"
+    rights: public-domain

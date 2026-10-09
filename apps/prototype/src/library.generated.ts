@@ -1334,6 +1334,1103 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "the-balcony",
+    "title": "The Balcony",
+    "summary": "Look up at the balcony.",
+    "point": {
+      "at": {
+        "lat": 35.1345,
+        "lng": -90.0578
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Lorraine Motel / National Civil Rights Museum, Memphis, Memphis"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 97,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "About us",
+        "publisher": "National Civil Rights Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://civilrightsmuseum.org/about-us/"
+      },
+      {
+        "title": "April 4th a day of remembrance",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/malu/april-4th-a-day-of-remembrance.htm"
+      },
+      {
+        "title": "Tennessee: The Lorraine Motel",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/tennessee-the-lorraine-hotel-memphis.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the balcony.\n\nOn April 4, 1968, Martin Luther King Jr. stood there.\n\nHe had come to Memphis to support striking Black sanitation workers seeking better pay\nand safer working conditions.\n\nThe Lorraine was a place to stay while that work continued.\n\nThen King was shot.\n\nHe died that evening.\n\nPause before looking away.\n\nThis site can become so familiar through photographs that the balcony starts to feel\nlike an image rather than a place.\n\nBut it was a place.\n\nThere was a room behind him. A city around him. A campaign still underway.\n\nThe workers’ demands had not disappeared. Neither had the need for the work he was\ndoing.\n\nToday, the museum preserves this location within the larger history of civil rights.\n\nLook at the balcony once more.\n\nRemember the reason he was in Memphis, as well as what happened here.\n",
+    "teaser": "Look up at the balcony.",
+    "tags": [
+      "memphis",
+      "civil-rights"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": true,
+      "convictionStatus": "convicted",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes an assassination. No violence is described in detail."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-balcony",
+        "durationS": 97
+      }
+    ]
+  },
+  {
+    "id": "the-children-at-the-lighthouse",
+    "title": "The Children at the Lighthouse",
+    "summary": "Look up at the lighthouse.",
+    "point": {
+      "at": {
+        "lat": 29.88543,
+        "lng": -81.28852
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "St. Augustine Lighthouse & Maritime Museum, Florida"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 103,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Ghost stories the pittee girls",
+        "publisher": "St. Augustine Lighthouse and Maritime Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.staugustinelighthouse.org/2020/03/02/ghost-stories-the-pittee-girls/"
+      },
+      {
+        "title": "Pittee descendants visit the museum",
+        "publisher": "St. Augustine Lighthouse and Maritime Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.staugustinelighthouse.org/2023/03/19/pittee-descendants-visit-the-museum/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the lighthouse.\n\nBefore the tower was completed, this was a construction site where children sometimes\nplayed.\n\nIn July 1873, children rode a cart used to transport building materials.\n\nThe cart overturned into the water.\n\nThree girls drowned, including two daughters of construction superintendent Hezekiah\nPittee. A younger sister survived.\n\nThe museum documents that tragedy.\n\nThe ghost stories came afterward.\n\nIts published accounts describe reports of unexplained footsteps and a little girl\nappearing in the keeper’s house.\n\nSome people connect those stories to the children who died.\n\nThat connection is belief, not an established fact.\n\nPause beneath the tower.\n\nA lighthouse is built to guide people away from danger.\n\nHere, a childhood accident became part of the place’s remembered history, then part of\nits folklore.\n\nThe deaths were real.\n\nThe stories of children still moving through the property remain unverified.\n\nBoth deserve to be told with care.\n",
+    "teaser": "Look up at the lighthouse.",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "tags": [
+      "st-augustine",
+      "ghosts"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-children-at-the-lighthouse",
+        "durationS": 103
+      }
+    ]
+  },
+  {
+    "id": "the-distance-across-the-street",
+    "title": "The Distance Across the Street",
+    "summary": "Look from Ford’s Theatre to the house across the street.",
+    "point": {
+      "at": {
+        "lat": 38.89668,
+        "lng": -77.02596
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Ford’s Theatre, Washington, D.C, Washington, D.C."
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Faq the assassination",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://home.nps.gov/foth/learn/historyculture/faq-the-assassination.htm"
+      },
+      {
+        "title": "Lincolns death",
+        "publisher": "Ford's Theatre",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://fords.org/lincolns-assassination/lincolns-death/"
+      },
+      {
+        "title": "The Petersen House",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/foth/the-petersen-house.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look from Ford’s Theatre to the house across the street.\n\nThat short distance became the final journey of Abraham Lincoln’s life.\n\nOn April 14, 1865, Lincoln attended a performance of Our American Cousin.\n\nActor John Wilkes Booth knew the theatre. That evening, he entered the presidential box\nand shot the president.\n\nBooth escaped from the theatre. Lincoln could not.\n\nPeople carried the wounded president across Tenth Street into the Petersen family’s\nboarding house.\n\nHe died there the following morning, April 15.\n\nLook at the crossing again.\n\nToday, it takes only a few seconds to walk from one side to the other.\n\nOn that night, people crossed it carrying the president of the United States, trying to\nfind somewhere to care for him.\n\nThe theatre marks the attack.\n\nThe house marks his death.\n\nBetween them is an ordinary city street that briefly became the center of a national\ncatastrophe.\n",
+    "teaser": "Look from Ford’s Theatre to the house across the street.",
+    "tags": [
+      "washington",
+      "lincoln"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "alleged",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes an assassination. No violence is described in detail."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-distance-across-the-street",
+        "durationS": 96
+      }
+    ]
+  },
+  {
+    "id": "the-empty-frames",
+    "title": "The Empty Frames",
+    "summary": "Look at the empty frames.",
+    "point": {
+      "at": {
+        "lat": 42.33822,
+        "lng": -71.09921
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Isabella Stewart Gardner Museum, Boston, Boston"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Theft",
+        "publisher": "Isabella Stewart Gardner Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.gardnermuseum.org/about/theft"
+      },
+      {
+        "title": "Inside the fbi podcast the isabella stewart gardner museum heist",
+        "publisher": "Federal Bureau of Investigation",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.fbi.gov/news/podcasts/inside-the-fbi-podcast-the-isabella-stewart-gardner-museum-heist"
+      },
+      {
+        "title": "Isabella Stewart Gardner Museum Heist",
+        "publisher": "Federal Bureau of Investigation",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.fbi.gov/history/cases-and-criminals/isabella-stewart-gardner-museum-heist"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the empty frames.\n\nIn most museums, an empty frame means something is being moved or restored.\n\nHere, it means something was stolen.\n\nEarly on March 18, 1990, two men dressed as police officers arrived at the Isabella\nStewart Gardner Museum. They claimed they were responding to a disturbance.\n\nA guard let them inside.\n\nThe men restrained the guards and stole thirteen works of art.\n\nAmong the missing pieces were paintings by Rembrandt and Vermeer. The thieves left\nbehind spaces that visitors would continue to see for decades.\n\nPause beside one of those spaces.\n\nA museum normally asks you to examine what is present: the brushwork, the light, the\nexpression on a face.\n\nThis room also asks you to notice what is missing.\n\nThe theft remains unresolved, and the museum continues seeking the return of its art.\n\nThose frames are waiting.\n\nThe most striking thing in this room may be something nobody can show you.\n",
+    "teaser": "Look at the empty frames.",
+    "tags": [
+      "boston",
+      "art-theft"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "unsolved",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes an armed robbery. Nobody is described as hurt."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-empty-frames",
+        "durationS": 100
+      }
+    ]
+  },
+  {
+    "id": "the-footsteps-above-the-gallows",
+    "title": "The Footsteps Above the Gallows",
+    "summary": "Look at the upstairs windows.",
+    "point": {
+      "at": {
+        "lat": 32.75283,
+        "lng": -117.19449
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Whaley House, Old Town San Diego"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 98,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "San diego paranormal ghost hunting",
+        "publisher": "Whaley House Museum, Save Our Heritage Organisation",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.whaleyhousesandiego.com/san-diego-paranormal-ghost-hunting/"
+      },
+      {
+        "title": "Whaley House (HABS CA-422)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ca0615/"
+      },
+      {
+        "title": "The First San Diego Courthouse",
+        "publisher": "California State Parks",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.parks.ca.gov/?page_id=30565"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the upstairs windows.\n\nOne of the Whaley House’s oldest ghost stories begins with footsteps.\n\nBefore the house was built, James Robinson, known as Yankee Jim, was executed on this\nproperty in 1852.\n\nThe Whaley family built their home here several years later.\n\nAccording to the house’s published account, family members reported heavy footsteps\nupstairs and on the staircase.\n\nThomas Whaley believed the sounds belonged to Robinson.\n\nThat is the legend’s explanation. It is not proof of a haunting.\n\nBut notice the strange overlap.\n\nA family built a home on land where a public execution had taken place. The story later\nplaced the dead man inside their everyday surroundings.\n\nNo distant cemetery. No ruined castle.\n\nJust someone walking above the rooms where people lived.\n\nLook at the windows again.\n\nThe unsettling part of this legend is how little it needs: a quiet room downstairs, and\nfootsteps where nobody should be.\n",
+    "teaser": "Look at the upstairs windows.",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "tags": [
+      "san-diego",
+      "ghosts"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-footsteps-above-the-gallows",
+        "durationS": 98
+      }
+    ]
+  },
+  {
+    "id": "the-garage-that-vanished",
+    "title": "The Garage That Vanished",
+    "summary": "The garage is gone.",
+    "point": {
+      "at": {
+        "lat": 41.9204,
+        "lng": -87.638
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Former garage site, 2122 North Clark Street, Chicago"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "1191",
+        "publisher": "Encyclopedia of Chicago, Chicago Historical Society",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.encyclopedia.chicagohistory.org/pages/1191.html"
+      },
+      {
+        "title": "Massacre wall",
+        "publisher": "The Mob Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://themobmuseum.org/exhibits/massacre-wall/"
+      },
+      {
+        "title": "St valentines day massacre",
+        "publisher": "The Mob Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://themobmuseum.org/case-files/the-exhibits/st-valentines-day-massacre/"
+      },
+      {
+        "title": "Al Capone",
+        "publisher": "Federal Bureau of Investigation",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.fbi.gov/history/cases-and-criminals/al-capone"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The garage is gone.\n\nOn February 14, 1929, it stood at this address.\n\nInside, seven men associated with George “Bugs” Moran’s bootlegging organization were\nlined up against a wall and shot.\n\nThe killings became known as the St. Valentine’s Day Massacre.\n\nThe crime helped define the public image of Prohibition-era Chicago: rival\norganizations, illegal alcohol, and violence reaching far beyond a private dispute.\n\nAl Capone became a leading suspect in public accounts.\n\nBut he was never convicted of this massacre, and the case remains unsolved.\n\nLook at the space where the building stood.\n\nYou cannot inspect its rooms here. Even the original bullet-marked wall was removed;\nportions are now displayed at the Mob Museum in Las Vegas.\n\nThe address survives in Chicago.\n\nThe evidence traveled.\n\nThe name became famous.\n\nBehind that name were seven deaths, and a crime whose reputation became clearer than its\ncomplete solution.\n",
+    "teaser": "The garage is gone.",
+    "tags": [
+      "chicago",
+      "prohibition"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "unsolved",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes the killing of seven men. No violence is described in detail."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-garage-that-vanished",
+        "durationS": 96
+      }
+    ]
+  },
+  {
+    "id": "the-girl-who-wanted-her-doll",
+    "title": "The Girl Who Wanted Her Doll",
+    "summary": "This story begins with a visitor’s claim.",
+    "point": {
+      "at": {
+        "lat": 55.94995,
+        "lng": -3.19049
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Real Mary King’s Close, Edinburgh"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 108,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "The story of annies doll",
+        "publisher": "The Real Mary King's Close",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.realmarykingsclose.com/experience/the-story-of-annies-doll/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This story begins with a visitor’s claim.\n\nIn the 1990s, Japanese psychic Aiko Gibo visited Mary King’s Close.\n\nAccording to the attraction’s account, she said she sensed a young girl in a room off\nAllan’s Close.\n\nThe girl, she claimed, was called Annie and was distressed because she had lost her\ndoll.\n\nGibo brought a replacement.\n\nVisitors later began leaving toys of their own.\n\nHere is the important distinction: the attraction says its researchers have not found a\nhistorical record identifying a child named Annie as the girl in this story.\n\nThe ghost’s identity is unverified.\n\nThe visitors’ response is real.\n\nPeople heard about a lonely child and wanted to offer comfort.\n\nLook around the room.\n\nSome ghost stories are built around a threat approaching from the dark.\n\nThis one is built around something missing.\n\nA child without her family.\n\nA doll that could be replaced.\n\nA small act of kindness offered to someone nobody could prove was there.\n",
+    "teaser": "This story begins with a visitor’s claim.",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "tags": [
+      "edinburgh",
+      "ghosts"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-girl-who-wanted-her-doll",
+        "durationS": 108
+      }
+    ]
+  },
+  {
+    "id": "the-lady-in-grey",
+    "title": "The Lady in Grey",
+    "summary": "Look at the windows of the main house.",
+    "point": {
+      "at": {
+        "lat": 34.23595,
+        "lng": -77.94295
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bellamy Mansion Museum, Wilmington, North Carolina, Wilmington, North Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 105,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "10 2024",
+        "publisher": "Bellamy Mansion Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.bellamymansion.org/museum-blog/archives/10-2024"
+      },
+      {
+        "title": "Bellamy Mansion (HABS NC-198)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/nc0053/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the windows of the main house.\n\nA longtime Bellamy volunteer described a story about a woman in grey, supposedly seen\nwandering its rooms.\n\nThe museum includes that account in its discussion of hauntings.\n\nIt also asks a revealing question: why do people so strongly want old houses to be\nhaunted?\n\nThe woman has not been established as a supernatural presence. The museum does not\nidentify her as a proven spirit of a particular resident.\n\nInstead, the story became attached to the house.\n\nLook at the windows again.\n\nFrom outside, you can see only part of each room. Reflections and shadows change what\nappears behind the glass.\n\nAn old house contains lives you cannot meet and rooms you cannot fully read from the\nstreet.\n\nThe lady in grey gives that uncertainty a human shape.\n\nBut the building’s documented history deserves attention too.\n\nThe legend is one story people tell about Bellamy.\n\nIt is not the whole story of the people who lived and worked here.\n",
+    "teaser": "Look at the windows of the main house.",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "tags": [
+      "wilmington",
+      "ghosts"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-lady-in-grey",
+        "durationS": 105
+      }
+    ]
+  },
+  {
+    "id": "the-last-movie",
+    "title": "The Last Movie",
+    "summary": "Stand outside the theatre and look at the entrance.",
+    "point": {
+      "at": {
+        "lat": 41.92636,
+        "lng": -87.64968
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Biograph Theater, Chicago, Chicago"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "John dillinger",
+        "publisher": "Federal Bureau of Investigation",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.fbi.gov/history/cases-and-criminals/john-dillinger"
+      },
+      {
+        "title": "FBI Chicago History",
+        "publisher": "Federal Bureau of Investigation",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.fbi.gov/history/field-office-histories/chicago"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand outside the theatre and look at the entrance.\n\nOn July 22, 1934, John Dillinger walked through it to watch Manhattan Melodrama.\n\nHe was one of the country’s most wanted fugitives.\n\nFederal agents knew he might come here. A woman accompanying him had provided\ninformation about his plans.\n\nThey waited outside.\n\nAccording to the FBI’s account, Dillinger emerged at about ten-thirty that night. Agent\nMelvin Purvis lit a cigar to signal the others.\n\nThe FBI says Dillinger drew a pistol and ran toward a nearby alley.\n\nAgents fired. Dillinger was fatally wounded.\n\nStay on the sidewalk. There is no need to enter the alley.\n\nLook back toward the theatre doors.\n\nMovie audiences leave carrying a story that has just ended.\n\nThat night, Dillinger stepped out of a fictional gangster story and into the final\nmoments of his own.\n\nThe theatre remains. The nationwide pursuit ended just beyond it.\n",
+    "teaser": "Stand outside the theatre and look at the entrance.",
+    "tags": [
+      "chicago",
+      "dillinger"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "convicted",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes a killing. No violence is described in detail."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-last-movie",
+        "durationS": 96
+      }
+    ]
+  },
+  {
+    "id": "the-lights-beyond-the-ridge",
+    "title": "The Lights Beyond the Ridge",
+    "summary": "Look out toward the ridges.",
+    "point": {
+      "at": {
+        "lat": 36.001,
+        "lng": -81.879
+      },
+      "triggerRadiusKm": 0.4,
+      "place": "Lost Cove Cliffs Overlook, Blue Ridge Parkway, North Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Lost cove cliffs overlook",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/lost-cove-cliffs-overlook.htm"
+      },
+      {
+        "title": "Index",
+        "publisher": "Appalachian State University, Department of Physics",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.dancaton.physics.appstate.edu/BML/SeeTheLights/index.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out toward the ridges.\n\nFor more than a century, people have reported unusual lights around Brown Mountain.\n\nThe descriptions vary: bright points that appear, seem to move, then disappear.\n\nThe lights became part of Appalachian folklore, often given ghostly explanations.\n\nThe National Park Service notes that studies have linked reports to ordinary sources,\nincluding vehicle headlights.\n\nSo a distant light is not evidence of a spirit.\n\nBut distance makes certainty difficult.\n\nYou may not see the road beneath a moving light. You may not recognize the angle. Trees\ncan hide a source and reveal it again.\n\nThat uncertainty helped the legend endure.\n\nWatch from the designated overlook. There is no need to chase anything into the woods.\n\nIf you see a light, notice its direction and movement before deciding what it is.\n\nThe landscape is real.\n\nThe reports are documented.\n\nWhat people make of them is where the ghost story begins.\n",
+    "teaser": "Look out toward the ridges.",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "tags": [
+      "blue-ridge-parkway",
+      "ghosts"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-lights-beyond-the-ridge",
+        "durationS": 100
+      }
+    ]
+  },
+  {
+    "id": "the-men-who-left-their-faces-behind",
+    "title": "The Men Who Left Their Faces Behind",
+    "summary": "Look into the cells.",
+    "point": {
+      "at": {
+        "lat": 37.82671,
+        "lng": -122.42298
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Alcatraz Island, San Francisco, San Francisco"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Alcatraz escape",
+        "publisher": "Federal Bureau of Investigation",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.fbi.gov/history/cases-and-criminals/alcatraz-escape"
+      },
+      {
+        "title": "Alcatraz.jsp",
+        "publisher": "Federal Bureau of Prisons",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.bop.gov/about/history/alcatraz.jsp"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look into the cells.\n\nIn June 1962, the men inside needed the guards to believe they were sleeping.\n\nSo they left faces on their pillows.\n\nFrank Morris and brothers John and Clarence Anglin made dummy heads using materials that\nincluded paint and human hair.\n\nBehind the cells, they prepared an escape route. They also assembled makeshift flotation\nequipment from raincoats.\n\nOn the night of June 11, the three men disappeared from their cells.\n\nBy morning, the deception was discovered.\n\nThe faces were still in bed.\n\nThe men were gone.\n\nTheir ultimate fate has never been conclusively established. The escape does not prove\nthey survived the bay.\n\nWhen you later look toward the mainland, notice the water between here and there.\n\nThe men overcame the walls, the checks, and the locks.\n\nThe unanswered part begins beyond the island.\n\nThey left behind something that looked like sleep, and a mystery that never settled.\n",
+    "teaser": "Look into the cells.",
+    "tags": [
+      "san-francisco",
+      "alcatraz"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "convicted",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes a prison escape. No violence is described."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-men-who-left-their-faces-behind",
+        "durationS": 100
+      }
+    ]
+  },
+  {
+    "id": "the-music-in-the-empty-room",
+    "title": "The Music in the Empty Room",
+    "summary": "Pause somewhere the hotel allows visitors to stand.",
+    "point": {
+      "at": {
+        "lat": 40.38288,
+        "lng": -105.51921
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Stanley Hotel, Estes Park, Colorado"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 112,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Haunted colorado hot spots ghost hunters",
+        "publisher": "Colorado Tourism Office",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.colorado.com/articles/haunted-colorado-hot-spots-ghost-hunters"
+      },
+      {
+        "title": "Tours",
+        "publisher": "The Stanley Hotel",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.stanleyhotel.com/tours/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Pause somewhere the hotel allows visitors to stand.\n\nListen.\n\nThe Stanley’s ghost folklore includes children laughing in supposedly deserted hallways\nand piano music coming from an empty ballroom.\n\nThose stories appear in Colorado’s official tourism account.\n\nThey are reported experiences, not proof that the dead are making music.\n\nThe hotel is also associated with Stephen King, whose stay helped inspire The Shining.\n\nBut the fictional hotel in that novel is not a documentary account of this building.\n\nKeep the two stories separate.\n\nNow consider the sound at the center of the legend.\n\nMusic normally means somebody is nearby: a player at a piano, a guest rehearsing, a\nrecording in another room.\n\nThe story becomes unsettling when that expected person is missing.\n\nYou hear the notes.\n\nYou look for the musician.\n\nThe room appears empty.\n\nAt the Stanley, that gap between a sound and its visible source has become part of the\nhotel’s identity.\n\nThe music is reported.\n\nThe musician remains a matter of belief.\n",
+    "teaser": "Pause somewhere the hotel allows visitors to stand.",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "tags": [
+      "estes-park",
+      "ghosts"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-music-in-the-empty-room",
+        "durationS": 112
+      }
+    ]
+  },
+  {
+    "id": "the-other-history-of-fraunces-tavern",
+    "title": "The Other History of Fraunces Tavern",
+    "summary": "This block is often associated with the American Revolution.",
+    "point": {
+      "at": {
+        "lat": 40.7033,
+        "lng": -74.01145
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Fraunces Tavern complex, Lower Manhattan"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 101,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "History",
+        "publisher": "Fraunces Tavern Museum",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://frauncestavernmuseum.squarespace.com/history"
+      },
+      {
+        "title": "Buildings of the Department of State",
+        "publisher": "U.S. Department of State, Office of the Historian",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://history.state.gov/departmenthistory/buildings/section11"
+      },
+      {
+        "title": "Fraunces Tavern Museum Complex (HABS)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ny1654/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This block is often associated with the American Revolution.\n\nBut its history includes a much more recent act of violence.\n\nOn January 24, 1975, a bomb exploded in the building at 101 Broad Street, part of the\nFraunces Tavern complex.\n\nFour people were killed.\n\nThe organization known as FALN claimed responsibility.\n\nThat claim belongs to the historical record. It does not establish the identity of every\nperson involved in preparing or placing the bomb.\n\nLook at the buildings together.\n\nIt is easy to imagine a historic place as belonging to one period: colonial rooms, old\npaintings, a famous farewell.\n\nPeople continued using these buildings long after that period ended.\n\nThey came here to work, meet, and eat.\n\nThe bombing became another chapter in the life of this block.\n\nStanding here, you are beside a place associated with the founding of a country and with\npeople whose lives ended almost two centuries later.\n\nBoth histories belong to it.\n",
+    "teaser": "This block is often associated with the American Revolution.",
+    "tags": [
+      "new-york",
+      "lower-manhattan"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": true,
+      "convictionStatus": "unsolved",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes a bombing that killed four people. No injuries are described."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-other-history-of-fraunces-tavern",
+        "durationS": 101
+      }
+    ]
+  },
+  {
+    "id": "the-prison-corridor",
+    "title": "The Prison Corridor",
+    "summary": "Stand still for a moment.",
+    "point": {
+      "at": {
+        "lat": 39.96765,
+        "lng": -75.17265
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Eastern State Penitentiary, Philadelphia"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 101,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "easternstate.org",
+        "publisher": "Eastern State Penitentiary Historic Site",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.easternstate.org/FAQ"
+      },
+      {
+        "title": "Audio tour",
+        "publisher": "Eastern State Penitentiary Historic Site",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://easternstate.org/audio_tour.html"
+      },
+      {
+        "title": "Eastern State Penitentiary (HABS)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/pa1207/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand still for a moment.\n\nLook along the corridor, then toward the cells.\n\nEastern State’s ghost reputation includes stories of shadowy movement and something\nappearing in an otherwise empty prison.\n\nThe historic site has discussed paranormal television investigations, including\ncontroversial footage filmed in Cellblock Twelve.\n\nControversial matters.\n\nA recording that people argue about is not proof of a ghost.\n\nNow listen to the space around you.\n\nA prison changes the meaning of ordinary sounds. A footstep may suggest an approaching\nguard. A door may suggest confinement. Silence may suggest someone listening.\n\nYou do not need to imagine a particular dead prisoner.\n\nThe real people confined here already give these walls a difficult history.\n\nThe haunting stories add another question: can a place seem occupied after the people\nwho lived inside it are gone?\n\nLook down the corridor again.\n\nYou may see nothing unusual.\n\nThe feeling of waiting for something is part of this story.\n",
+    "teaser": "Stand still for a moment.",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "tags": [
+      "philadelphia",
+      "ghosts"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-prison-corridor",
+        "durationS": 101
+      }
+    ]
+  },
+  {
+    "id": "the-prisoner-who-never-reached-the-prison",
+    "title": "The Prisoner Who Never Reached the Prison",
+    "summary": "Look toward the station entrance.",
+    "point": {
+      "at": {
+        "lat": 39.08525,
+        "lng": -94.5842
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Union Station, Kansas City, Missouri, Kansas City, Missouri"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 99,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Kansas city massacre pretty boy floyd",
+        "publisher": "Federal Bureau of Investigation",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.fbi.gov/history/cases-and-criminals/kansas-city-massacre-pretty-boy-floyd"
+      },
+      {
+        "title": "100 years of kansas city history",
+        "publisher": "Union Station Kansas City",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://unionstation.org/100-years-of-kansas-city-history/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look toward the station entrance.\n\nOn June 17, 1933, officers brought a handcuffed prisoner through Union Station.\n\nHis name was Frank Nash. They were taking him back to federal prison.\n\nOutside, a car waited.\n\nAs the officers gathered around it, armed men attacked.\n\nThe apparent purpose was to free Nash.\n\nInstead, Nash and four law enforcement officers were killed.\n\nA journey that should have continued toward prison ended here, outside a railway\nstation.\n\nThe killings became known as the Kansas City Massacre.\n\nThey helped drive changes in federal law enforcement, including broader authority for\nfederal agents.\n\nLook at the people arriving and leaving now.\n\nStations are places of movement. Someone steps off a train, crosses a lobby, finds a\nride, continues home.\n\nFor five people that morning, the next part of the journey never happened.\n\nThis entrance became the boundary between an ordinary transfer and a nationally\nconsequential crime.\n",
+    "teaser": "Look toward the station entrance.",
+    "tags": [
+      "kansas-city"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "convicted",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes a shooting in which five people died. No violence is described in detail."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-prisoner-who-never-reached-the-prison",
+        "durationS": 99
+      }
+    ]
+  },
+  {
+    "id": "the-queen-in-the-wrong-corridor",
+    "title": "The Queen in the Wrong Corridor",
+    "summary": "This corridor has a famous ghost story.",
+    "point": {
+      "at": {
+        "lat": 51.40372,
+        "lng": -0.33745
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Haunted Gallery, Hampton Court Palace, England"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 93,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Catherine howard",
+        "publisher": "Historic Royal Palaces",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.hrp.org.uk/hampton-court-palace/history-and-stories/catherine-howard/"
+      },
+      {
+        "title": "Historic hauntings at hampton court palace",
+        "publisher": "Historic Royal Palaces",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.hrp.org.uk/hampton-court-palace/history-and-stories/historic-hauntings-at-hampton-court-palace/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This corridor has a famous ghost story.\n\nAccording to the legend, Catherine Howard runs through it, crying out as she tries to\nreach Henry VIII and plead for mercy.\n\nCatherine was Henry’s fifth wife. She was executed in 1542.\n\nFor generations, people have connected her story with this gallery.\n\nBut the palace’s own historians point out a problem.\n\nHer original apartments no longer exist. Even if she had attempted the escape described\nin the legend, her route would not have passed through this corridor.\n\nSo you are standing in the setting of a ghost story, not a verified escape scene.\n\nLook along the gallery.\n\nThat correction does not erase Catherine’s death. It shows how a real tragedy can\nacquire a location, a sound, and a repeated action over time.\n\nThe legend gives her one endless attempt to reach the king.\n\nHistory does not confirm that she ever ran here.\n",
+    "teaser": "This corridor has a famous ghost story.",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "tags": [
+      "london",
+      "ghosts"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-queen-in-the-wrong-corridor",
+        "durationS": 93
+      }
+    ]
+  },
+  {
+    "id": "the-queen-who-returns",
+    "title": "The Queen Who Returns",
+    "summary": "Look across Tower Green toward the Chapel of St Peter ad Vincula.",
+    "point": {
+      "at": {
+        "lat": 51.50832,
+        "lng": -0.077
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Tower Green, Tower of London"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 99,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Famous ghost stories of the tower of london",
+        "publisher": "Historic Royal Palaces",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.hrp.org.uk/blog/famous-ghost-stories-of-the-tower-of-london/"
+      },
+      {
+        "title": "Anne Boleyn",
+        "publisher": "Historic Royal Palaces",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.hrp.org.uk/tower-of-london/history-and-stories/anne-boleyn/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across Tower Green toward the Chapel of St Peter ad Vincula.\n\nAnne Boleyn was executed within the Tower in 1536. She was buried in that chapel.\n\nThose are historical events.\n\nOne of the Tower’s enduring legends says she returns.\n\nIn the version published by Historic Royal Palaces, her ghost moves through the grounds,\nleading a silent procession toward the chapel.\n\nNobody has established that such a procession is supernatural.\n\nBut the story’s route is meaningful.\n\nIt connects the place where a queen’s life ended with the place where her body was\nburied.\n\nNo journey out of the fortress.\n\nOnly a return through it.\n\nPause and look between the green and the chapel.\n\nThe legend imagines movement where history imposed an ending.\n\nAnne’s death is documented. Her supposed return belongs to the stories people tell about\nthis place.\n\nStanding here, you can see how close those two settings are.\n",
+    "teaser": "Look across Tower Green toward the Chapel of St Peter ad Vincula.",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "tags": [
+      "london",
+      "ghosts"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-queen-who-returns",
+        "durationS": 99
+      }
+    ]
+  },
+  {
+    "id": "the-room-that-knocks-back",
+    "title": "The Room That Knocks Back",
+    "summary": "You are aboard a ship where movement and unfamiliar sounds can have ordinary explanations.",
+    "point": {
+      "at": {
+        "lat": 33.75306,
+        "lng": -118.18972
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "Queen Mary, Long Beach, California"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Special offers",
+        "publisher": "The Queen Mary",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://www.queenmary.com/special-offers.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are aboard a ship where movement and unfamiliar sounds can have ordinary\nexplanations.\n\nThat makes the story of stateroom B340 especially difficult to separate from its\nsurroundings.\n\nThe Queen Mary’s operator publishes reports of nighttime knocks, bathroom lights\nswitching on, faucets running, and doors opening or closing unexpectedly.\n\nThe room has become part of the ship’s ghost folklore.\n\nThose reports are not independently established evidence of spirits.\n\nStill, imagine the situation they describe.\n\nYou are inside a small cabin. You hear a knock.\n\nYou open the door.\n\nNobody is there.\n\nYou close it and return to bed.\n\nThen you hear another sound.\n\nA ship is full of compartments you cannot see into, pipes behind walls, and passages\nbeyond doors.\n\nB340’s legend lives in that uncertainty.\n\nYou know you heard something.\n\nThe harder question is whether the explanation is somewhere nearby, hidden by the ship\nitself.\n",
+    "teaser": "You are aboard a ship where movement and unfamiliar sounds can have ordinary explanations.",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "tags": [
+      "long-beach",
+      "ghosts"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-room-that-knocks-back",
+        "durationS": 100
+      }
+    ]
+  },
+  {
+    "id": "the-turn-onto-elm-street",
+    "title": "The Turn onto Elm Street",
+    "summary": "Watch the curve of Elm Street.",
+    "point": {
+      "at": {
+        "lat": 32.77905,
+        "lng": -96.8089
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Dealey Plaza, Dallas, Dallas"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 101,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Dallas motorcade",
+        "publisher": "The Sixth Floor Museum at Dealey Plaza",
+        "retrievedAt": "2026-10-09",
+        "rights": "fair-use-facts",
+        "url": "https://emuseum.jfk.org/collections/37371/dallas-motorcade"
+      },
+      {
+        "title": "Chapter 1",
+        "publisher": "National Archives",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.archives.gov/research/jfk/warren-commission-report/chapter-1"
+      },
+      {
+        "title": "Warren Commission Report, Chapter 3",
+        "publisher": "National Archives",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.archives.gov/research/jfk/warren-commission-report/chapter-3.html"
+      },
+      {
+        "title": "House Select Committee on Assassinations, Summary of Findings",
+        "publisher": "National Archives",
+        "retrievedAt": "2026-10-09",
+        "rights": "public-domain",
+        "url": "https://www.archives.gov/research/jfk/select-committee-report/summary.html"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Watch the curve of Elm Street.\n\nOn November 22, 1963, President John F. Kennedy’s motorcade passed through this plaza.\n\nPeople had gathered to see him.\n\nAt about twelve-thirty, Kennedy was shot while riding along Elm Street.\n\nHe was taken to Parkland Memorial Hospital, where he was pronounced dead.\n\nLook toward the former Texas School Book Depository.\n\nThe Warren Commission concluded that Lee Harvey Oswald fired from that building. Later\ninvestigations and decades of debate followed.\n\nThis short account does not settle every disputed question.\n\nBut the central event is documented: a president was fatally shot during a public\nmotorcade on the street beside you.\n\nNotice how compact the setting is.\n\nThe road. The windows. The sidewalks where witnesses stood.\n\nAn event that expanded into millions of pages of investigation began within this small\nstretch of city.\n\nYou can stand beside the route.\n\nYou cannot recover the certainty people had before the motorcade reached it.\n",
+    "teaser": "Watch the curve of Elm Street.",
+    "tags": [
+      "dallas",
+      "kennedy"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": true,
+      "convictionStatus": "alleged",
+      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedAt": "2026-10-09",
+      "contentWarning": "This echo describes an assassination. No violence is described in detail."
+    },
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/the-turn-onto-elm-street",
+        "durationS": 101
+      }
+    ]
+  },
+  {
     "id": "trinity-tallest-thing",
     "title": "For forty-four years this was the tallest thing in New York",
     "summary": "Sailors coming into the harbour saw the spire before they saw the city.",

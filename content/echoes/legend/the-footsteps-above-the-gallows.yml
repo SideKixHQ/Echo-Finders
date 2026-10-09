@@ -1,0 +1,69 @@
+# From 11 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Public sidewalk outside, or an authorized museum visitor area.
+# Position: San Diego Ave in front of the house (medium confidence).
+id: the-footsteps-above-the-gallows
+title: "The Footsteps Above the Gallows"
+summary: "Look at the upstairs windows."
+place: "Whaley House, Old Town San Diego"
+at: { lat: 32.75283, lng: -117.19449 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 98
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven;
+  no supernatural claim is established.
+minAge: 0
+quality: 0.75
+tags: [san-diego, ghosts]
+teaser: "Look at the upstairs windows."
+script: |
+  Look at the upstairs windows.
+
+  One of the Whaley House’s oldest ghost stories begins with footsteps.
+
+  Before the house was built, James Robinson, known as Yankee Jim, was executed on this
+  property in 1852.
+
+  The Whaley family built their home here several years later.
+
+  According to the house’s published account, family members reported heavy footsteps
+  upstairs and on the staircase.
+
+  Thomas Whaley believed the sounds belonged to Robinson.
+
+  That is the legend’s explanation. It is not proof of a haunting.
+
+  But notice the strange overlap.
+
+  A family built a home on land where a public execution had taken place. The story later
+  placed the dead man inside their everyday surroundings.
+
+  No distant cemetery. No ruined castle.
+
+  Just someone walking above the rooms where people lived.
+
+  Look at the windows again.
+
+  The unsettling part of this legend is how little it needs: a quiet room downstairs, and
+  footsteps where nobody should be.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "San diego paranormal ghost hunting"
+    publisher: "Whaley House Museum, Save Our Heritage Organisation"
+    url: https://www.whaleyhousesandiego.com/san-diego-paranormal-ghost-hunting/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Whaley House (HABS CA-422)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/ca0615/
+    retrievedAt: "2026-10-09"
+    rights: public-domain
+  - title: "The First San Diego Courthouse"
+    publisher: "California State Parks"
+    url: https://www.parks.ca.gov/?page_id=30565
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

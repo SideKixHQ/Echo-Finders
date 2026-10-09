@@ -1,0 +1,59 @@
+# From 15 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Gallery during an authorized palace visit.
+# Position: estimated from the palace layout; indoors (low confidence).
+id: the-queen-in-the-wrong-corridor
+title: "The Queen in the Wrong Corridor"
+summary: "This corridor has a famous ghost story."
+place: "Haunted Gallery, Hampton Court Palace, England"
+at: { lat: 51.40372, lng: -0.33745 }
+triggerRadiusKm: 0.08
+category: legend
+format: short
+durationS: 93
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven;
+  no supernatural claim is established.
+minAge: 0
+quality: 0.75
+tags: [london, ghosts]
+teaser: "This corridor has a famous ghost story."
+script: |
+  This corridor has a famous ghost story.
+
+  According to the legend, Catherine Howard runs through it, crying out as she tries to
+  reach Henry VIII and plead for mercy.
+
+  Catherine was Henry’s fifth wife. She was executed in 1542.
+
+  For generations, people have connected her story with this gallery.
+
+  But the palace’s own historians point out a problem.
+
+  Her original apartments no longer exist. Even if she had attempted the escape described
+  in the legend, her route would not have passed through this corridor.
+
+  So you are standing in the setting of a ghost story, not a verified escape scene.
+
+  Look along the gallery.
+
+  That correction does not erase Catherine’s death. It shows how a real tragedy can
+  acquire a location, a sound, and a repeated action over time.
+
+  The legend gives her one endless attempt to reach the king.
+
+  History does not confirm that she ever ran here.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Catherine howard"
+    publisher: "Historic Royal Palaces"
+    url: https://www.hrp.org.uk/hampton-court-palace/history-and-stories/catherine-howard/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Historic hauntings at hampton court palace"
+    publisher: "Historic Royal Palaces"
+    url: https://www.hrp.org.uk/hampton-court-palace/history-and-stories/historic-hauntings-at-hampton-court-palace/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts

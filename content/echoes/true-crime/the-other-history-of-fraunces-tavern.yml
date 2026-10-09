@@ -1,0 +1,72 @@
+# From 09 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Public sidewalk near 101 Broad Street, beside the complex.
+# Position: Broad St sidewalk at 101 Broad (medium confidence).
+id: the-other-history-of-fraunces-tavern
+title: "The Other History of Fraunces Tavern"
+summary: "This block is often associated with the American Revolution."
+place: "Fraunces Tavern complex, Lower Manhattan"
+at: { lat: 40.70330, lng: -74.01145 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 101
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [new-york, lower-manhattan]
+teaser: "This block is often associated with the American Revolution."
+script: |
+  This block is often associated with the American Revolution.
+
+  But its history includes a much more recent act of violence.
+
+  On January 24, 1975, a bomb exploded in the building at 101 Broad Street, part of the
+  Fraunces Tavern complex.
+
+  Four people were killed.
+
+  The organization known as FALN claimed responsibility.
+
+  That claim belongs to the historical record. It does not establish the identity of every
+  person involved in preparing or placing the bomb.
+
+  Look at the buildings together.
+
+  It is easy to imagine a historic place as belonging to one period: colonial rooms, old
+  paintings, a famous farewell.
+
+  People continued using these buildings long after that period ended.
+
+  They came here to work, meet, and eat.
+
+  The bombing became another chapter in the life of this block.
+
+  Standing here, you are beside a place associated with the founding of a country and with
+  people whose lives ended almost two centuries later.
+
+  Both histories belong to it.
+editorial: draft
+factCheck: unchecked
+trueCrimeReview:
+  involvesLivingPeople: true
+  convictionStatus: unsolved
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-10-09"
+  contentWarning: "This echo describes a bombing that killed four people. No injuries are described."
+sources:
+  - title: "History"
+    publisher: "Fraunces Tavern Museum"
+    url: https://frauncestavernmuseum.squarespace.com/history
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Buildings of the Department of State"
+    publisher: "U.S. Department of State, Office of the Historian"
+    url: https://history.state.gov/departmenthistory/buildings/section11
+    retrievedAt: "2026-10-09"
+    rights: public-domain
+  - title: "Fraunces Tavern Museum Complex (HABS)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/ny1654/
+    retrievedAt: "2026-10-09"
+    rights: public-domain
