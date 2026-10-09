@@ -46,6 +46,8 @@ interface Props {
    * array never does.
    */
   readonly isHeard: (echoId: string) => boolean;
+  /** The face this listener gave each echo, if any (`ReactionCard.tsx`). */
+  readonly faceOf?: (echoId: string) => string | null;
   /** Echoes bookmarked but not yet stood on. Intentions, as against the record. */
   readonly saved: readonly Echo[];
   readonly onSave: (echo: Echo) => void;
@@ -75,6 +77,7 @@ export function Collection({
   isHeard,
   saved,
   mode,
+  faceOf,
 }: Props) {
   /*
    * The filter: the map's own category chips, with the map's rule (`toggleCategories`),
@@ -222,6 +225,7 @@ export function Collection({
               onPlay={onPlay}
               playing={isPlaying(capture.echo.id)}
               heard={isHeard(capture.echo.id)}
+              face={faceOf?.(capture.echo.id) ?? null}
             />
           ))}
         </section>
@@ -271,12 +275,14 @@ function Entry({
   onPlay,
   playing,
   heard,
+  face,
 }: {
   capture: CaptureEvent;
   privacy: PrivacySettings;
   onPlay: (echo: Echo) => void;
   playing: boolean;
   heard: boolean;
+  face: string | null;
 }) {
   const reasons = rarityReasons(capture.echo);
   const stored = privacy.recordPrecisePlaces && holdsPersonalLocation(capture.record);
@@ -308,7 +314,10 @@ function Entry({
         */}
         <Glyph echo={capture.echo} playing={playing} heard={heard} />
         <div className="entry-text">
-          <h4>{capture.echo.title}</h4>
+          <h4>
+            {capture.echo.title}
+            {face && <span className="entry-face" aria-label="Your reaction">{face}</span>}
+          </h4>
           <p>{capture.echo.point.place}</p>
           <p className="entry-meta mono">
             {playing ? (

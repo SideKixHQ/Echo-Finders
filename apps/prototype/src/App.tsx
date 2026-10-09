@@ -36,6 +36,8 @@ import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
 import { buyAllAccess, buyCityPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
 import { MembershipPanel } from "./Membership";
+import { ReactionCard, faceOf } from "./ReactionCard";
+import { react, readReactions, type Reactions } from "./reaction-store";
 import { keepJourney, readJourney } from "./journey-store";
 import type { PlaceHit } from "./place-search";
 import {
@@ -52,6 +54,7 @@ import { City } from "./City";
 import type { CaptureEvent, CaptureRecord, Echo, EchoCategory, TravelMode } from "@echofinders/core";
 import {
   rarityOf,
+  interestsFrom,
   bearingDeg as bearingTo,
   checkEligibility,
   mayHearAnother,
@@ -744,6 +747,27 @@ export function App() {
   }, [state.captured, onboarded, restored, journeyKey]);
 
   const nowPlaying = state.playback.kind === "idle" ? null : state.playback.item.echo;
+
+  /*
+   * How it landed (`ReactionCard.tsx`): asked once per echo, as it reaches its end, and
+   * never again for one already answered. The answers steer this listener's own ranking.
+   */
+  const [reactions, setReactions] = useState<Reactions>(() => readReactions());
+  const [askFor, setAskFor] = useState<Echo | null>(null);
+  const asked = useRef(new Set<string>());
+  useEffect(() => {
+    if (!nowPlaying || progress < 0.97) return;
+    if (reactions[nowPlaying.id] || asked.current.has(nowPlaying.id)) return;
+    asked.current.add(nowPlaying.id);
+    setAskFor(nowPlaying);
+  }, [nowPlaying, progress, reactions]);
+  useEffect(() => {
+    const rated = Object.entries(reactions).flatMap(([id, { reaction }]) => {
+      const echo = LIBRARY_BY_ID.get(id);
+      return echo ? [{ echo, reaction }] : [];
+    });
+    session.setInterests(rated.length ? interestsFrom(rated) : undefined);
+  }, [session, reactions]);
 
   /**
    * Stop, not "be done with it".
@@ -1848,6 +1872,10 @@ export function App() {
 
           {tab === "echoes" && (
             <Collection
+              faceOf={(id) => {
+                const r = reactions[id];
+                return r ? faceOf(r.reaction) : null;
+              }}
               captured={found.list}
               travelOf={(id) => found.travel.get(id) ?? journeyMode}
               privacy={privacy}
@@ -2107,6 +2135,16 @@ export function App() {
           a button the width of the desk. Invisible in every render I had taken, because
           every render I had taken was 390 wide.
         */}
+        {askFor && !syncedNow && (
+          <ReactionCard
+            echo={askFor}
+            onReact={(r) => {
+              setReactions((cur) => react(cur, askFor.id, r));
+              setAskFor(null);
+            }}
+            onSkip={() => setAskFor(null)}
+          />
+        )}
         {syncedNow && (
           <Synced
             event={syncedNow}

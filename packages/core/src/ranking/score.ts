@@ -216,13 +216,18 @@ function proximityScore(hit: CorridorHit): number {
   return clamp01(1 - ratio ** 2);
 }
 
+/** The interest key for an echo's kind (`reactions.ts`). */
+export const kindTag = (category: string): string => `kind:${category}`;
+
 function interestScore(echo: Echo, profile: ListenerProfile): number {
   const interests = profile.interests;
-  if (!interests || !echo.tags || echo.tags.length === 0) return 0.5;
+  if (!interests) return 0.5;
 
   let matched = 0;
   let count = 0;
-  for (const tag of echo.tags) {
+  // The echo's kind counts as one more tag: "you get chills from ghost stories" is the
+  // strongest thing a listener tells us, and most echoes are tagged only with places.
+  for (const tag of [...(echo.tags ?? []), kindTag(echo.category)]) {
     const affinity = interests[tag];
     if (affinity !== undefined) {
       matched += clamp01(affinity);
