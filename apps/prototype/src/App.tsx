@@ -36,6 +36,7 @@ import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
 import { buyAllAccess, buyCityPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
 import { MembershipPanel } from "./Membership";
+import { keepJourney, readJourney } from "./journey-store";
 import {
   customerId,
   finishCheckout,
@@ -81,9 +82,13 @@ const dev =
 /** The library by id, for turning stored records from other journeys back into echoes. */
 const LIBRARY_BY_ID: ReadonlyMap<string, Echo> = new Map(LIBRARY.map((e) => [e.id, e]));
 const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROUTES[0]!;
+/** The journey to reopen on: the one you were on, or here, on foot (`journey-store.ts`). */
+const KEPT = readJourney(new Set(ROUTES.map((r) => r.id)));
 
 export function App() {
-  const [route, setRoute] = useState<Route>(DEFAULT_ROUTE);
+  const [route, setRoute] = useState<Route>(
+    () => ROUTES.find((r) => r.id === KEPT.routeId) ?? DEFAULT_ROUTE,
+  );
   /**
    * Roaming: there is no journey, only here.
    *
@@ -91,7 +96,7 @@ export function App() {
    * `WalkSession` takes a mode rather than a route, and `findEchoesNearby` answers "what
    * is here" with no path to project onto — so this is a flag, not a second app.
    */
-  const [roaming, setRoaming] = useState(false);
+  const [roaming, setRoaming] = useState(KEPT.roaming);
   /**
    * How you are travelling when there is no route.
    *
@@ -108,7 +113,11 @@ export function App() {
    * so the answer came back "driving" and the button appeared not to do anything. State
    * that a control sets has to be state.
    */
-  const [travel, setTravel] = useState<"walking" | "driving" | "flight">("walking");
+  const [travel, setTravel] = useState<"walking" | "driving" | "flight">(KEPT.travel);
+  // Kept as it changes, so a reload (or the trip out to Stripe and back) reopens it.
+  useEffect(() => {
+    keepJourney({ roaming, travel, routeId: roaming ? null : route.id });
+  }, [roaming, travel, route.id]);
   /** What the engine is run as while roaming. Flying is never roaming: the door is locked. */
   const roamMode: "walking" | "driving" = travel === "driving" ? "driving" : "walking";
   /** A narrator the listener picked. Null keeps whichever the echo was written for. */
