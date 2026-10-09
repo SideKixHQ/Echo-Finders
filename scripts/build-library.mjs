@@ -159,9 +159,16 @@ const report = validateLibrary(demo);
 // backed by a quoted source before it may be *published* (`claims.backing`), and none is
 // yet. That rule is the publishing gate's, `content:validate`; the demo plays drafts.
 // Malformed claims (`claims`) still fail here.
-const blocking = report.issues.filter(
-  (i) => i.severity === "error" && i.field !== "claims.backing",
-);
+//
+// Sources are the same bargain (ADR-0016, James 2026-10-09). A draft may cite any
+// credible, linked source and must swap it for a public record before approval. The demo
+// copy is "approved" only so it can play, so those approval-only source rules belong to
+// the publishing gate too, which still enforces them on the files as authored.
+const approvalOnly = (i) =>
+  i.field === "claims.backing" ||
+  /^sources\[\d+\]\.rights$/.test(i.field) ||
+  (i.field === "sources" && /public record/.test(i.message));
+const blocking = report.issues.filter((i) => i.severity === "error" && !approvalOnly(i));
 if (blocking.length > 0) {
   console.error("library has errors; run npm run content:validate");
   process.exit(1);
