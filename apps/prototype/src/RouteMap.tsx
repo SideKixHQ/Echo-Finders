@@ -510,6 +510,34 @@ export function RouteMap({
     return () => observer.disconnect();
   }, []);
 
+  /**
+   * The control column's real top, in map pixels, or null before it has been measured.
+   *
+   * `RAIL_H` is the column on a full-size phone. On an iPhone SE its buttons are smaller and
+   * the column is 252 tall, not 306, so a rare marker snapped "10px above it" from the
+   * constant landed 54px too high, under the floor, and was pushed back down to sit 6px
+   * above the column. Measured like the two bars above; the constant is only the fallback.
+   */
+  const [railTopPx, setRailTopPx] = useState<number | null>(null);
+  useEffect(() => {
+    const el = svg.current;
+    if (!el || typeof ResizeObserver === "undefined") return;
+    const rail = el.closest(".screen")?.querySelector(".rail");
+    if (!rail) return;
+    const measure = () => {
+      const r = rail.getBoundingClientRect();
+      const s = el.getBoundingClientRect();
+      if (r.height < 1) return;
+      const next = Math.round(r.top - s.top);
+      setRailTopPx((cur) => (cur !== null && Math.abs(cur - next) < 1 ? cur : next));
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(rail);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   useEffect(() => {
     const el = svg.current;
     if (!el) return;
@@ -820,7 +848,7 @@ export function RouteMap({
      * unreadable pill with only the top one reachable.
      */
     const railBottom = box.h - (navH + reservedBottom + 12);
-    const railTop = railBottom - RAIL_H;
+    const railTop = railTopPx ?? railBottom - RAIL_H;
     const floor = barH + 40;
     let lastY = -Infinity;
     return shown.map((mark) => {
@@ -834,15 +862,20 @@ export function RouteMap({
        * sat nearly touching. Within 24px it lines up exactly; beyond that it is plainly its
        * own thing and keeps its true bearing.
        */
+      let snapped = false;
       if (mark.side === "right" && y + 17 > railTop - 24 && y < railBottom + 18) {
         y = railTop - 17 - 10;
+        snapped = true;
       }
       if (y - lastY < 40) y = lastY + 40;
-      y = Math.max(floor, y);
+      // A snapped plate only has to clear the top bar by the same 10px. On a short map (an
+      // iPhone SE) the column starts high enough that the usual floor would pull it 4px
+      // down onto the column, which is the nearly-touching gap the snap exists to prevent.
+      y = Math.max(snapped ? barH + 17 + 10 : floor, y);
       lastY = y;
       return { ...mark, y };
     });
-  }, [at, overview, library, stateOf, projection, box, zoom, barH, reservedBottom, navH]);
+  }, [at, overview, library, stateOf, projection, box, zoom, barH, reservedBottom, navH, railTopPx]);
 
   /**
    * One pin, drawn wherever it has been put.
