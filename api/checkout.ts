@@ -9,6 +9,23 @@
 import { CITIES } from "@echofinders/core";
 import { configured, failure, isCustomerId, reply, stripe } from "./_stripe.js";
 
+/**
+ * The same on both plans. A billing address is always asked for: it is what sales tax is
+ * worked out from, and what the US-only Radar rule checks against the card (DEPLOY.md).
+ * Automatic sales tax is a switch, `STRIPE_AUTOMATIC_TAX=on`, because Stripe refuses it
+ * until the business address and the states collected in are set up in the dashboard,
+ * which only James can do.
+ */
+function taxAndAddress(customer: string | undefined): Record<string, string> {
+  const tax = process.env.STRIPE_AUTOMATIC_TAX === "on";
+  return {
+    billing_address_collection: "required",
+    ...(tax ? { "automatic_tax[enabled]": "true" } : {}),
+    // A returning customer's address is saved back to them, which automatic tax needs.
+    ...(tax && customer ? { "customer_update[address]": "auto" } : {}),
+  };
+}
+
 export async function POST(request: Request): Promise<Response> {
   if (!configured()) return reply(503, { error: "Payments are not switched on yet." });
   const body = (await request.json().catch(() => ({}))) as { plan?: unknown; cityId?: unknown; customerId?: unknown };
@@ -28,6 +45,7 @@ export async function POST(request: Request): Promise<Response> {
         "payment_intent_data[metadata][plan]": "city-pass",
         "payment_intent_data[metadata][city]": city.id,
         ...(customer ? { customer } : { customer_creation: "always" }),
+        ...taxAndAddress(customer),
         success_url: `${origin}/?checkout=success&session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${origin}/?checkout=cancelled`,
       });
@@ -41,6 +59,7 @@ export async function POST(request: Request): Promise<Response> {
         "metadata[plan]": "all-access",
         "subscription_data[metadata][plan]": "all-access",
         ...(customer ? { customer } : {}),
+        ...taxAndAddress(customer),
         success_url: `${origin}/?checkout=success&session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${origin}/?checkout=cancelled`,
       });
