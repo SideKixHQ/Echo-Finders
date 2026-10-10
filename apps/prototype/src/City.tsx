@@ -24,7 +24,7 @@
  * than dressing it up.
  */
 
-import { useMemo } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   clusterEchoes,
   distanceKm,
@@ -33,7 +33,8 @@ import {
   type EchoCluster,
   type LatLng,
 } from "@echofinders/core";
-import { TILE_ATTRIBUTION, TILE_URL, planTiles, toWorld } from "./tiles";
+import { TILE_ATTRIBUTION, TILE_URL, VECTOR_ATTRIBUTION, VECTOR_TILES_URL, cameraFor, planTiles, toWorld } from "./tiles";
+import { VectorBasemap } from "./VectorBasemap";
 
 export interface CityProps {
   readonly library: readonly Echo[];
@@ -91,6 +92,26 @@ export function City({ library, at, theme, onClose, onGo }: CityProps) {
     () => clusterEchoes(library, Math.max(JOIN_KM, spanKm / 30)),
     [library, spanKm],
   );
+
+  /*
+   * Where the fixed 390x844 drawing lands on this screen. The SVG fits itself with
+   * `preserveAspectRatio`; the vector basemap is HTML and has to be told, or it would sit
+   * a few pixels off the blooms on any phone that is not exactly that shape.
+   */
+  const frame = useRef<HTMLDivElement>(null);
+  const [fit, setFit] = useState<{ scale: number; left: number; top: number } | null>(null);
+  useEffect(() => {
+    const el = frame.current;
+    if (!el || !VECTOR_TILES_URL || typeof ResizeObserver === "undefined") return;
+    const measure = () => {
+      const scale = Math.min(el.clientWidth / W, el.clientHeight / H);
+      setFit({ scale, left: (el.clientWidth - W * scale) / 2, top: (el.clientHeight - H * scale) / 2 });
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   const view = useMemo(() => {
     const points = clusters.map((c) => c.at);
@@ -179,7 +200,22 @@ export function City({ library, at, theme, onClose, onGo }: CityProps) {
   }, [clusters, view]);
 
   return (
-    <div className="city">
+    <div className="city" ref={frame}>
+      {VECTOR_TILES_URL && fit && view && (
+        <VectorBasemap
+          tiles={VECTOR_TILES_URL}
+          camera={cameraFor(view.plan, W, H)}
+          theme={theme}
+          width={W}
+          height={H}
+          scale={fit.scale}
+          left={fit.left}
+          top={fit.top}
+          clipTop={TOP}
+          clipBottom={BOTTOM}
+          className="city-base"
+        />
+      )}
       <svg viewBox={`0 0 ${W} ${H}`} className="city-map" aria-hidden="true">
         <defs>
           <radialGradient id="cityHot">
@@ -197,7 +233,7 @@ export function City({ library, at, theme, onClose, onGo }: CityProps) {
         </defs>
 
         <g clipPath="url(#cityBand)">
-          {view?.plan.tiles.map((t) => (
+          {!VECTOR_TILES_URL && view?.plan.tiles.map((t) => (
             <image
               key={`${theme}/${view.plan.zoom}/${t.x}/${t.y}`}
               href={TILE_URL(t.x, t.y, view.plan.zoom, theme)}
@@ -263,7 +299,7 @@ export function City({ library, at, theme, onClose, onGo }: CityProps) {
 
         {view && (
           <text className="map-credit" x={W - 10} y={H - BOTTOM - 8} textAnchor="end">
-            {TILE_ATTRIBUTION}
+            {VECTOR_TILES_URL ? VECTOR_ATTRIBUTION : TILE_ATTRIBUTION}
           </text>
         )}
       </svg>

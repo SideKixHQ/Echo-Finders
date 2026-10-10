@@ -55,6 +55,31 @@ export function toWorld(lat: number, lng: number, zoom: number) {
   };
 }
 
+/** The inverse of `toWorld`: world pixels at a zoom back to a position. */
+export function fromWorld(x: number, y: number, zoom: number) {
+  const size = TILE * 2 ** zoom;
+  const n = Math.PI - (2 * Math.PI * y) / size;
+  return {
+    lat: (180 / Math.PI) * Math.atan(Math.sinh(n)),
+    lng: (x / size) * 360 - 180,
+  };
+}
+
+/**
+ * Where a MapLibre camera has to be to draw exactly what this plan draws.
+ *
+ * The vector basemap is a separate canvas under the SVG, so it gets the projection as a
+ * camera rather than as tile positions: the position at the middle of a `w` by `h` box,
+ * and a zoom. MapLibre counts zoom in 512px tiles where this file counts in 256px ones,
+ * which is the `- 1`; the fractional part this plan carries as `scale` goes back into the
+ * zoom, since a vector map has no tile grid to snap to.
+ */
+export function cameraFor(plan: TilePlan, w: number, h: number) {
+  const x = (w / 2 - plan.originX) / plan.scale;
+  const y = (h / 2 - plan.originY) / plan.scale;
+  return { ...fromWorld(x, y, plan.zoom), zoom: plan.zoom + Math.log2(plan.scale) - 1 };
+}
+
 /**
  * Which tiles cover a view, and where to put them.
  *
@@ -126,7 +151,21 @@ export function planTiles(
 }
 
 /**
- * Esri's grey canvas, which is what the design uses.
+ * The vector basemap's tiles: one Protomaps archive of the US on Cloudflare R2, set in
+ * Vercel as `VITE_MAP_TILES_URL` (DEPLOY.md, "The map"). James chose the navy style and R2
+ * hosting on 2026-10-09.
+ *
+ * Until it is set, the map falls back to the Esri canvas below, so a deploy without it
+ * still has streets. That fallback is a stopgap and not a plan: Esri's tiles are not
+ * licensed for a paid app, which is why this exists (`docs/10-blockers.md`).
+ */
+export const VECTOR_TILES_URL: string | undefined = import.meta.env.VITE_MAP_TILES_URL || undefined;
+
+/** The credit the vector tiles need: OpenStreetMap's data is ODbL, which requires it. */
+export const VECTOR_ATTRIBUTION = "© OpenStreetMap · Protomaps";
+
+/**
+ * Esri's grey canvas, the fallback while `VITE_MAP_TILES_URL` is unset.
  *
  * Chosen to match rather than on the merits, and that is the right reason here: the design
  * was drawn against this basemap's particular grey, and a different provider would put

@@ -68,7 +68,12 @@ dominate.
    offline flights need). At 100,000 listeners that is thousands of dollars a month, and a
    City Pass, paid once, would keep costing money for ever. **Fix: an open basemap
    (OpenStreetMap data, drawn by MapLibre), which costs cents.** Required before taking
-   money.
+   money. *Built (2026-10-10): Protomaps tiles from one US file on Cloudflare R2, in the
+   navy style. It switches on when the file is uploaded and `VITE_MAP_TILES_URL` is set
+   (`DEPLOY.md`, The map); until then the app still draws Esri.* Its running cost is R2
+   reads, one per map tile a phone fetches: free for the first 10 million a month, then
+   $0.36 per million, and repeat tiles served from Cloudflare's cache are not billed. The
+   scale table below carries it.
 2. **A native iOS app.** If the screen-lock test fails and walking needs a real app, App
    Store sales pay Apple 15%: still over 80% (table above). Keep selling on the web too.
 3. **Sales tax and VAT.** US only: tax is added on top at checkout, so it is not a cost.
@@ -133,15 +138,17 @@ content is precompiled, so the MVP genuinely has no backend to pay for.
 | R2 storage — 5 GB library | $0.08 |
 | R2 read operations — ~1.5M | $0.54 |
 | R2 egress | **$0** |
-| Protomaps basemap extract, self-hosted on R2 | ~$0.25 |
+| Protomaps basemap extract, self-hosted on R2 (storage) | ~$0.25 |
+| R2 reads for map tiles: ~10–40M, one per tile a phone fetches, fewer behind Cloudflare's cache *(estimate, added 2026-10-10)* | $4 to $15 |
 | Vercel Pro | $20 |
 | Sentry | $26 |
 | Supabase Pro *(only once accounts or sync exist)* | $25 |
 | Domain | $1.50 |
-| **Total** | **≈ $75/month** |
+| **Total** | **≈ $80 to $90/month** |
 
-At a million listeners this rises to roughly $100 — the only line that scales is bucket
-reads, and it scales at $0.36 per million.
+At a million listeners this rises to roughly $150 to $250. The only lines that scale are
+bucket reads, at $0.36 per million, and map tiles are most of them; putting the map file
+behind a custom domain so Cloudflare caches it is what keeps that at the low end.
 
 ## One-time, to build the library
 
@@ -255,7 +262,7 @@ would end it, and three are already decided correctly:
    at 100k listeners — more than three times the rest of the bill combined, and the single
    largest line item on this page. Self-hosting a Protomaps extract on R2 costs cents and
    sidesteps the offline-caching licence problem at the same time (already flagged in
-   `01-services.md`). **This is the one live decision on this page.**
+   `01-services.md`). *Decided 2026-10-09: Protomaps on R2, built 2026-10-10.*
 2. **Any runtime model call.** Generating or ranking anything per-listener turns a fixed cost
    into a per-user one. ADR-0003 already forbids it, for bandwidth reasons; the economics
    agree.
