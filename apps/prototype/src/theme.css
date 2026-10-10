@@ -4574,3 +4574,20 @@ body {
 }
 /* My Echoes: the face you gave it, beside the title. */
 .entry-face { margin-left: 6px; font-size: 14px; }
+
+/*
+ * The vector basemap (`VectorBasemap.tsx`): a MapLibre canvas under the map's SVG.
+ *
+ * It carries the field the SVG's `map-field` rect used to paint, because that rect is
+ * opaque and sits above it. Land is not drawn by the style at all; this is the land.
+ */
+.vector-base {
+  position: absolute; left: 0; top: 0; transform-origin: 0 0; pointer-events: none;
+  background: radial-gradient(108% 108% at 50% 4%, #141A3D 0%, #0D1230 46%, #080B1E 100%);
+}
+/* Sized rather than inset: MapLibre sets `position: relative` on its container. */
+.vector-base-canvas { width: 100%; height: 100%; }
+:root[data-theme="light"] .vector-base { background: var(--space); }
+/* The city view keeps its own gradient and shows the streets as texture, at the weight
+   its raster tiles had. */
+.vector-base.city-base { background: none; opacity: 0.5; }

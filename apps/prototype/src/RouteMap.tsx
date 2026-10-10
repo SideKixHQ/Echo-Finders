@@ -24,7 +24,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { CATEGORY_ICON, CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, characterFor } from "./Echo";
 import { ClusterDot, FAN_GAP, GROUP_PX } from "./PinCluster";
-import { TILE_ATTRIBUTION, TILE_URL, planTiles, toWorld } from "./tiles";
+import { TILE_ATTRIBUTION, TILE_URL, VECTOR_ATTRIBUTION, VECTOR_TILES_URL, cameraFor, planTiles, toWorld } from "./tiles";
+import { VectorBasemap } from "./VectorBasemap";
 import { MODE_ICON } from "./travel";
 import { useSmoothedPoint } from "./use-smoothed";
 import { buildRouteGeometry, distanceKm, effectiveRadiusKm, presetFor, rarityOf, type Arriving, type Echo, type LatLng, type Position, type Route, type TravelMode,
@@ -1071,6 +1072,17 @@ export function RouteMap({
   };
 
   return (
+    <>
+    {VECTOR_TILES_URL && (
+      <VectorBasemap
+        tiles={VECTOR_TILES_URL}
+        camera={cameraFor(projection.plan, box.w, box.h)}
+        theme={theme}
+        width={box.w}
+        height={box.h}
+        clipTop={barH}
+      />
+    )}
     <svg
       /* `map-focusing` dims everything that is not the echo the arrows are on. The
          bloom alone is not enough on a map of twenty six pins: it says "this one is
@@ -1263,10 +1275,12 @@ export function RouteMap({
         before. That matters more than it sounds — the build environment cannot reach a tile
         server at all, so this ships without ever having been seen working here.
       */}
-      <rect className="map-field" x="0" y="0" width={box.w} height={box.h} />
+      {/* With vector tiles the field is painted under their canvas instead (`.vector-base`),
+          because anything opaque here would cover them. */}
+      {!VECTOR_TILES_URL && <rect className="map-field" x="0" y="0" width={box.w} height={box.h} />}
 
       <g clipPath="url(#mapBand)">
-        {projection.plan.tiles.map((t) => (
+        {!VECTOR_TILES_URL && projection.plan.tiles.map((t) => (
           <image
             key={`${theme}/${projection.plan.zoom}/${t.x}/${t.y}`}
             href={TILE_URL(t.x, t.y, projection.plan.zoom, theme)}
@@ -1434,7 +1448,7 @@ export function RouteMap({
         y={box.h - insetFor(barH, reservedBottom, navH).bottom - 6}
         textAnchor="start"
       >
-        {TILE_ATTRIBUTION}
+        {VECTOR_TILES_URL ? VECTOR_ATTRIBUTION : TILE_ATTRIBUTION}
       </text>
       {here && <Here x={here.x} y={here.y} mode={mode} headingDeg={position?.headingDeg ?? null} />}
 
@@ -1516,6 +1530,7 @@ export function RouteMap({
         );
       })}
     </svg>
+    </>
   );
 }
 
