@@ -99,6 +99,41 @@ export const FONT = "Noto Sans Medium";
  * The style for a given theme, reading tiles from `tiles` (a `pmtiles://` URL) and glyphs
  * from `glyphs` (a URL template with `{fontstack}` and `{range}`).
  */
+/**
+ * The stopgap until the Protomaps file is on R2: Esri's raster canvas, drawn by MapLibre
+ * so the map still pans and pinches like a map. Dimmed into the navy rather than inked:
+ * MapLibre cannot apply the five-stop colour table the SVG version used, so the grey sits
+ * at a third strength over the board's field, which reads as navy streets.
+ *
+ * Not licensed for a paid app (`docs/02-costs.md`); gone once `VITE_MAP_TILES_URL` is set.
+ */
+export function rasterStyle(theme: MapTheme): StyleSpecification {
+  const variant = theme === "light" ? "Light" : "Dark";
+  return {
+    version: 8,
+    sources: {
+      esri: {
+        type: "raster",
+        tiles: [`https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_${variant}_Gray_Base/MapServer/tile/{z}/{y}/{x}`],
+        tileSize: 256,
+        maxzoom: 16,
+        attribution: "Tiles © Esri",
+      },
+    },
+    layers: [
+      {
+        id: "esri",
+        type: "raster",
+        source: "esri",
+        paint:
+          theme === "light"
+            ? { "raster-opacity": 0.85 }
+            : { "raster-opacity": 0.55, "raster-saturation": -1, "raster-brightness-max": 0.55, "raster-contrast": 0.15 },
+      },
+    ],
+  };
+}
+
 export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme): StyleSpecification {
   const p = PALETTE[theme];
   const roads: [id: string, filter: ExpressionSpecification, w: [number, number, number], colour: string][] = [
@@ -174,7 +209,9 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme): St
       filter: kind("building", "building_part"),
       paint: {
         "fill-color": p.building,
-        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0.25, 16, 0.6],
+        // Faint from a distance, solid on the street, where buildings are how you know
+        // which side of the road you are on.
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0.25, 16, 0.6, 17.5, 0.9],
         "fill-outline-color": p.buildingLine,
       },
     },
@@ -247,6 +284,45 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme): St
     "text-halo-width": 1.4,
   } as const;
   layers.push(
+    {
+      // Paths and alleys get their names too once you are close enough to walk them.
+      id: "path-labels",
+      type: "symbol",
+      source: "base",
+      "source-layer": "roads",
+      minzoom: 16.5,
+      filter: ["all", kind("path", "other"), ["has", "name"]],
+      layout: {
+        "symbol-placement": "line",
+        "text-field": ["get", "name"],
+        "text-font": [FONT],
+        "text-size": 9,
+        "text-transform": "uppercase",
+        "text-letter-spacing": 0.06,
+        "symbol-spacing": 280,
+      },
+      paint: { ...text, "text-opacity": 0.8 },
+    },
+    {
+      // Landmarks on the street: what you can see from where you are standing, which is
+      // how people actually find their way ("past the church, left at the café"). Names
+      // only, no icons, so they stay quieter than the echoes.
+      id: "pois",
+      type: "symbol",
+      source: "base",
+      "source-layer": "pois",
+      minzoom: 16,
+      filter: ["has", "name"],
+      layout: {
+        "text-field": ["get", "name"],
+        "text-font": [FONT],
+        "text-size": 9.5,
+        "text-max-width": 8,
+        "symbol-sort-key": ["coalesce", ["get", "min_zoom"], 99],
+        "text-padding": 6,
+      },
+      paint: { ...text, "text-opacity": 0.85 },
+    },
     {
       // Street names on foot, quiet and in capitals, in the board's label ink.
       id: "road-labels",
