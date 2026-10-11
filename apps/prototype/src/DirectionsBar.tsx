@@ -61,11 +61,11 @@ export function DirectionsBar({ echo, directions, bearingDeg, onEnd, step }: Pro
   let total: string;
   if (directions.kind === "route") {
     ({ say, inM, glyph } = nextStep(directions.route.turns, directions.route.metres));
-    total = `${walkTime(directions.route.seconds)} · ${walkDistance(directions.route.metres)}`;
+    total = walkTime(directions.route.seconds);
   } else if (directions.kind === "unrouted") {
     const heading = bearingDeg === null ? null : COMPASS[Math.round(((bearingDeg % 360) + 360) % 360 / 45) % 8];
     say = heading ? `Head ${heading}` : "Head towards it";
-    total = `${walkDistance(directions.metres)} as the crow flies`;
+    total = walkDistance(directions.metres);
   } else {
     say = "Finding the way…";
     total = "";
@@ -73,33 +73,33 @@ export function DirectionsBar({ echo, directions, bearingDeg, onEnd, step }: Pro
 
   return (
     <div className="dirbar" role="status" aria-live="polite">
-      <div className="dirbar-main">
-        <Arrow glyph={glyph} />
-        <div className="dirbar-say">
-          <strong>
-            {say}
-            {inM !== null && <span className="dirbar-in"> in {walkDistance(inM)}</span>}
-          </strong>
-          <span className="dirbar-to">
-            {step && <span className="dirbar-step">Stop {step.at} of {step.of} · </span>}
-            {total && <>{total} · </>}
-            {echo.title}
-          </span>
-        </div>
-        <button className="dirbar-end" onClick={onEnd} aria-label={step ? "End the walk" : "Stop directions"}>
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6 6l12 12M18 6L6 18" />
-          </svg>
-        </button>
+      <Arrow glyph={glyph} />
+      <div className="dirbar-say">
+        <strong>
+          {say}
+          {inM !== null && <span className="dirbar-in"> · {walkDistance(inM)}</span>}
+        </strong>
+        <span className="dirbar-to">
+          {total ? `${total} · ` : ""}
+          {step ? `stop ${step.at} of ${step.of}: ` : ""}
+          {echo.title}
+        </span>
+        {/*
+          Only where there is no street route here: then the phone's own maps app is the
+          better guide, and saying so is the honest answer. Where there is a route, the
+          line on the map is the instruction and a second way to the same place is noise.
+        */}
+        {directions.kind === "unrouted" && (
+          <a className="dirbar-maps" href={mapsLink(echo.point.at, echo.point.place ?? echo.title)} target="_blank" rel="noreferrer">
+            Directions in Maps
+          </a>
+        )}
       </div>
-      <a
-        className="dirbar-maps"
-        href={mapsLink(echo.point.at, echo.point.place ?? echo.title)}
-        target="_blank"
-        rel="noreferrer"
-      >
-        Open in Maps
-      </a>
+      <button className="dirbar-end" onClick={onEnd} aria-label={step ? "End the walk" : "Stop directions"}>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
     </div>
   );
 }

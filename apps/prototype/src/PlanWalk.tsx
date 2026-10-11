@@ -20,8 +20,6 @@ export const BUDGETS = [
 interface Props {
   readonly budgetS: number;
   readonly onBudget: (s: number) => void;
-  readonly loop: boolean;
-  readonly onLoop: (loop: boolean) => void;
   /** In walking order. */
   readonly stops: readonly Echo[];
   /** Nearby echoes not in the walk, nearest first, for adding. */
@@ -58,21 +56,14 @@ export function PlanWalk(p: Props) {
             {b.label}
           </button>
         ))}
-        <button
-          className={p.loop ? "pw-chip on" : "pw-chip"}
-          aria-pressed={p.loop}
-          onClick={() => p.onLoop(!p.loop)}
-        >
-          Back to the start
-        </button>
       </div>
 
       <p className="pw-sum">
         {p.stops.length === 0
           ? "Nothing fits in that time from here. Try longer, or add one below."
           : `${p.stops.length} ${p.stops.length === 1 ? "echo" : "echoes"} · ${
-              p.walk ? `${walkTime(p.walk.seconds)} walking · ${walkDistance(p.walk.metres)}` : "working out the way…"
-            } · ${walkTime(listenS)} listening`}
+              p.walk ? `${walkTime(p.walk.seconds + listenS)} with listening` : "working out the way…"
+            }`}
       </p>
 
       <ol className="pw-stops">
@@ -96,7 +87,7 @@ export function PlanWalk(p: Props) {
         <>
           <p className="pw-label">Add one</p>
           <ul className="pw-others">
-            {p.others.slice(0, 8).map(({ echo: e, distanceKm }) => (
+            {p.others.slice(0, 4).map(({ echo: e, distanceKm }) => (
               <li key={e.id}>
                 <button className="pw-add" onClick={() => p.onAdd(e.id)} aria-label={`Add: ${e.title}`}>
                   <svg viewBox="0 0 24 24" aria-hidden="true">

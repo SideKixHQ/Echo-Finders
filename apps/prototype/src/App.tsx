@@ -4,7 +4,7 @@ import { LIBRARY, ROUTES } from "./library.generated";
 import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
-import { RouteMap, MAX_ZOOM, MIN_ZOOM, type PinState } from "./RouteMap";
+import { RouteMap, type PinState } from "./RouteMap";
 import { Collection } from "./Collection";
 import { IndexedDbCollection } from "./collection-store";
 import { Privacy } from "./Privacy";
@@ -1310,9 +1310,10 @@ export function App() {
    * the position, so tapping a pin moves the stepper to it for free.
    */
   const stepIndex = useMemo(() => {
-    const on = focusId ?? selectedId;
+    // Walking to one, the bar shows the one you are walking to.
+    const on = focusId ?? selectedId ?? beacon;
     return on ? stepList.findIndex((i) => i.echo.id === on) : -1;
-  }, [stepList, focusId, selectedId]);
+  }, [stepList, focusId, selectedId, beacon]);
 
   /** What the ears and the dial are both fed. One list, so they can never disagree. */
   const around = useMemo(
@@ -1762,7 +1763,13 @@ export function App() {
                 onPan={setPan}
                 lookAt={roaming ? lookAt?.at ?? null : null}
                 directions={directions.kind === "route" ? directions.route.line : null}
-                directionsTo={beacon}
+                aimId={beacon}
+                onBackgroundTap={() => {
+                  setSelectedId(null);
+                  // A plan being made is a sheet; tapping away puts it down. One under way
+                  // is a walk, and only its own button ends it.
+                  if (plan && !plan.active) setPlan(null);
+                }}
                 plan={
                   plan
                     ? {
@@ -1780,8 +1787,6 @@ export function App() {
                 <PlanWalk
                   budgetS={plan.budgetS}
                   onBudget={(budgetS) => setPlan({ ...plan, budgetS, stops: suggestPlan(plan.start, budgetS, plan.loop) })}
-                  loop={plan.loop}
-                  onLoop={(loop) => setPlan({ ...plan, loop, stops: reorder(plan.start, plan.stops, loop) })}
                   stops={plan.stops.flatMap((id) => LIBRARY_BY_ID.get(id) ?? [])}
                   others={nearby
                     .filter((n) => !plan.stops.includes(n.echo.id) && stateOf(n.echo.id) === "sealed")
@@ -1816,17 +1821,6 @@ export function App() {
                     setPan({ x: 0, y: 0 });
                   }}
                 />
-              )}
-              {roaming && onFoot && !lookAt && !beacon && !plan && state.position && (
-                <button className="pw-pill" onClick={openPlanner}>
-                  {/* A route through three stops. */}
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="6" cy="18" r="2" />
-                    <circle cx="18" cy="6" r="2" />
-                    <path d="M8 18h6a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h6" />
-                  </svg>
-                  Plan a walk
-                </button>
               )}
               {roaming && lookAt && (
                 <button
@@ -1935,10 +1929,6 @@ export function App() {
               */}
               {(!nowhere || overview) && (
               <Rail
-                zoom={zoom}
-                onZoom={setZoom}
-                minZoom={MIN_ZOOM}
-                maxZoom={MAX_ZOOM}
                 /* On foot only: the hum places echoes by bearing, and a bearing means
                    nothing at 500 knots. Carried modes never had it and still do not. */
                 {...(onFoot ? { humming, onHum: setHumming } : {})}
@@ -2018,6 +2008,8 @@ export function App() {
                           setWalkingView(already ? "rose" : "map");
                           // Close the card either way: going, the route is what to look at.
                           setSelectedId(null);
+                          // And follow again, so the map keeps you and the echo in view.
+                          setPan({ x: 0, y: 0 });
                         },
                       }
                     : {})}

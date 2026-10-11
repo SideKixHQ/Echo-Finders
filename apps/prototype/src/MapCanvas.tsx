@@ -41,6 +41,11 @@ interface Props {
    * is "closer" or "further", not "show me somewhere else", so the map zooms and stays on you.
    */
   readonly onUserDrag: () => void;
+  /**
+   * A tap on the map itself, not on a pin (pins are in the SVG over it and take their own
+   * taps). Closes whatever card is open, as tapping away does on every phone map.
+   */
+  readonly onMapTap: () => void;
   /** A person changed the zoom, with the zoom it settled on. */
   readonly onUserZoom: (zoom: number) => void;
 }
@@ -48,12 +53,12 @@ interface Props {
 const styleFor = (tiles: string | null, theme: MapTheme) =>
   tiles ? basemapStyle(`pmtiles://${tiles}`, glyphs(), theme) : rasterStyle(theme);
 
-export function MapCanvas({ tiles, theme, start, clipTop, onReady, onMove, onUserGesture, onSettle, onUserDrag, onUserZoom }: Props) {
+export function MapCanvas({ tiles, theme, start, clipTop, onReady, onMove, onUserGesture, onSettle, onUserDrag, onUserZoom, onMapTap }: Props) {
   const host = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibre | null>(null);
   // The handlers change identity every render; the map is made once and calls the latest.
-  const handlers = useRef({ onReady, onMove, onUserGesture, onSettle, onUserDrag, onUserZoom });
-  handlers.current = { onReady, onMove, onUserGesture, onSettle, onUserDrag, onUserZoom };
+  const handlers = useRef({ onReady, onMove, onUserGesture, onSettle, onUserDrag, onUserZoom, onMapTap });
+  handlers.current = { onReady, onMove, onUserGesture, onSettle, onUserDrag, onUserZoom, onMapTap };
   const firstTheme = useRef(theme);
   const firstStart = useRef(start);
 
@@ -90,6 +95,7 @@ export function MapCanvas({ tiles, theme, start, clipTop, onReady, onMove, onUse
         });
         created.on("dragstart", () => handlers.current.onUserDrag());
         created.on("moveend", () => handlers.current.onSettle());
+        created.on("click", () => handlers.current.onMapTap());
         created.on("zoomend", (e) => {
           if ((e as { originalEvent?: Event }).originalEvent) handlers.current.onUserZoom(created!.getZoom());
         });

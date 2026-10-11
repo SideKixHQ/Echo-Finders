@@ -531,7 +531,7 @@ export function Onboarding({
                     <b>Your location, only while you are using it</b>
                     <small>
                       The whole thing is where you are standing. Nothing is sent to us, and
-                      where you stood stays on your phone unless you turn that on in Privacy.
+                      where you stood stays on your phone unless you turn that on in Settings.
                     </small>
                   </div>
                 </div>
