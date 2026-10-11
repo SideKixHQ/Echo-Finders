@@ -4784,4 +4784,9 @@ body {
  * on whatever pin was under the finger, so putting a menu away opened an echo
  * (found 2026-10-11). Transparent, and below the menu itself.
  */
-.menu-scrim { position: fixed; inset: 0; z-index: -1; background: transparent; }
+/* Absolute, oversized and clipped by `.screen` (overflow hidden), so it covers the phone
+   and nothing outside it; `fixed` would cover a whole desktop window (check-frame). */
+.menu-scrim {
+  position: absolute; top: -100vh; left: -100vw; width: 300vw; height: 300vh;
+  z-index: -1; background: transparent;
+}
