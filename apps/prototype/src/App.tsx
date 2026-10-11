@@ -39,6 +39,9 @@ import { MembershipPanel } from "./Membership";
 import { ReactionCard, faceOf } from "./ReactionCard";
 import { react, readReactions, type Reactions } from "./reaction-store";
 import { keepJourney, readJourney } from "./journey-store";
+import { useDirections, useWalkLine } from "./directions";
+import { DirectionsBar } from "./DirectionsBar";
+import { PlanWalk } from "./PlanWalk";
 import type { PlaceHit } from "./place-search";
 import {
   customerId,
@@ -53,6 +56,10 @@ import { addHeard, readHeard } from "./heard-store";
 import { City } from "./City";
 import type { CaptureEvent, CaptureRecord, Echo, EchoCategory, TravelMode } from "@echofinders/core";
 import {
+  planWalk,
+  orderStops,
+  type Candidate,
+  type LatLng,
   rarityOf,
   interestsFrom,
   bearingDeg as bearingTo,
@@ -1391,6 +1398,57 @@ export function App() {
     };
   }, [beacon, around, state.position, stateOf]);
 
+  /**
+   * The way there, along the streets (ADR-0018). Recomputed as you walk, so taking a
+   * different street from the one suggested just gives you a new way from where you are.
+   */
+  const aimed = useMemo(() => (beacon ? LIBRARY.find((e) => e.id === beacon) ?? null : null), [beacon]);
+  const directions = useDirections(selfDirected && aimed ? state.position?.at ?? null : null, aimed?.point.at ?? null);
+
+  /**
+   * A planned walk (ADR-0018): being planned, or under way.
+   *
+   * While it is under way the beacon is always its current stop, so everything built for
+   * "take me there" (the directions, the hum, walk mode) works for each leg unchanged.
+   */
+  const [plan, setPlan] = useState<{
+    readonly stops: readonly string[];
+    readonly budgetS: number;
+    readonly loop: boolean;
+    readonly active: boolean;
+    readonly at: number;
+    readonly start: LatLng;
+  } | null>(null);
+  const planCandidates = useMemo(
+    (): Candidate[] =>
+      nearby
+        .filter((n) => stateOf(n.echo.id) === "sealed")
+        .map((n) => ({ id: n.echo.id, at: n.echo.point.at, listenS: n.echo.durationS, score: n.score })),
+    [nearby, stateOf],
+  );
+  const suggestPlan = (start: LatLng, budgetS: number, loop: boolean) =>
+    planWalk(start, planCandidates, budgetS, { loop }).stops.map((c) => c.id);
+  const candidateFor = (id: string): Candidate | null => {
+    const echo = LIBRARY_BY_ID.get(id);
+    return echo ? { id, at: echo.point.at, listenS: echo.durationS, score: 0.5 } : null;
+  };
+  const reorder = (start: LatLng, ids: readonly string[], loop: boolean) =>
+    orderStops(start, ids.map(candidateFor).filter((c): c is Candidate => c !== null), loop).stops.map((c) => c.id);
+  const openPlanner = () => {
+    const start = state.position?.at;
+    if (!start) return;
+    const budgetS = plan?.budgetS ?? 60 * 60;
+    setBeacon(null);
+    setSelectedId(null);
+    setLookAt(null);
+    setPlan({ stops: suggestPlan(start, budgetS, false), budgetS, loop: false, active: false, at: 0, start });
+  };
+  const walkLine = useWalkLine(
+    plan ? plan.start : null,
+    useMemo(() => (plan ? plan.stops.map((id) => LIBRARY_BY_ID.get(id)?.point.at).filter((p): p is LatLng => !!p) : []), [plan]),
+    plan?.loop ?? false,
+  );
+
   /*
    * Feeding the hum.
    *
@@ -1424,12 +1482,22 @@ export function App() {
     if (!beacon) return;
     const state = stateOf(beacon);
     if (state === "captured" || state === "heard") {
+      // On a planned walk, arriving at one stop is setting off for the next.
+      if (plan?.active && plan.stops[plan.at] === beacon) {
+        const next = plan.stops.findIndex((id, i) => i > plan.at && stateOf(id) === "sealed");
+        if (next >= 0) {
+          setPlan({ ...plan, at: next });
+          setBeacon(plan.stops[next]!);
+          return;
+        }
+        setPlan(null);
+      }
       setBeacon(null);
       // The map was opened to get you here. You are here, so it has done its job and the
       // hunting screen comes back rather than leaving you on a street map of where you are.
       setWalkingView("rose");
     }
-  }, [beacon, stateOf]);
+  }, [beacon, stateOf, plan]);
   useEffect(() => {
     hum.setVoices(
       around.map((item) => ({
@@ -1585,6 +1653,7 @@ export function App() {
                     setPan({ x: 0, y: 0 });
                     setZoom(1);
                   }}
+                  {...(selfDirected && state.position ? { onPlan: openPlanner } : {})}
                   progress={roaming ? null : along}
                   name={
                     roaming
@@ -1692,7 +1761,73 @@ export function App() {
                 pan={pan}
                 onPan={setPan}
                 lookAt={roaming ? lookAt?.at ?? null : null}
+                directions={directions.kind === "route" ? directions.route.line : null}
+                directionsTo={beacon}
+                plan={
+                  plan
+                    ? {
+                        line: walkLine?.line ?? null,
+                        stops: plan.stops.flatMap((id) => {
+                          const echo = LIBRARY_BY_ID.get(id);
+                          return echo ? [{ at: echo.point.at, done: stateOf(id) !== "sealed" }] : [];
+                        }),
+                        frame: !plan.active,
+                      }
+                    : null
+                }
               />
+              {plan && !plan.active && (
+                <PlanWalk
+                  budgetS={plan.budgetS}
+                  onBudget={(budgetS) => setPlan({ ...plan, budgetS, stops: suggestPlan(plan.start, budgetS, plan.loop) })}
+                  loop={plan.loop}
+                  onLoop={(loop) => setPlan({ ...plan, loop, stops: reorder(plan.start, plan.stops, loop) })}
+                  stops={plan.stops.flatMap((id) => LIBRARY_BY_ID.get(id) ?? [])}
+                  others={nearby
+                    .filter((n) => !plan.stops.includes(n.echo.id) && stateOf(n.echo.id) === "sealed")
+                    .map((n) => ({ echo: n.echo, distanceKm: distanceKm(plan.start, n.echo.point.at) }))
+                    .sort((a, b) => a.distanceKm - b.distanceKm)}
+                  onRemove={(id) => setPlan({ ...plan, stops: plan.stops.filter((s) => s !== id) })}
+                  onAdd={(id) => setPlan({ ...plan, stops: reorder(plan.start, [...plan.stops, id], plan.loop) })}
+                  walk={walkLine}
+                  onStart={() => {
+                    const first = plan.stops.find((id) => stateOf(id) === "sealed");
+                    if (!first) return;
+                    setPlan({ ...plan, active: true, at: plan.stops.indexOf(first) });
+                    setBeacon(first);
+                    setWalkingView("map");
+                    setPan({ x: 0, y: 0 });
+                  }}
+                  onCancel={() => {
+                    setPlan(null);
+                    setPan({ x: 0, y: 0 });
+                  }}
+                />
+              )}
+              {aimed && selfDirected && (
+                <DirectionsBar
+                  echo={aimed}
+                  directions={directions}
+                  bearingDeg={walkTarget?.bearingDeg ?? null}
+                  {...(plan?.active ? { step: { at: plan.at + 1, of: plan.stops.length } } : {})}
+                  onEnd={() => {
+                    setBeacon(null);
+                    setPlan(null);
+                    setPan({ x: 0, y: 0 });
+                  }}
+                />
+              )}
+              {roaming && onFoot && !lookAt && !beacon && !plan && state.position && (
+                <button className="pw-pill" onClick={openPlanner}>
+                  {/* A route through three stops. */}
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="6" cy="18" r="2" />
+                    <circle cx="18" cy="6" r="2" />
+                    <path d="M8 18h6a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h6" />
+                  </svg>
+                  Plan a walk
+                </button>
+              )}
               {roaming && lookAt && (
                 <button
                   className="look-back"
@@ -1875,8 +2010,14 @@ export function App() {
                            * screen to hold on for it. The map is still one tap away from
                            * inside walk mode, for the moments you genuinely want streets.
                            */
-                          setWalkingView(already ? "rose" : "walk");
-                          setSelectedId(already ? null : echo.id);
+                          /*
+                           * The street map with the way drawn on it (ADR-0018). Walk mode,
+                           * the screen built to be held for a whole walk, stays one tap
+                           * away on the column for anyone who would rather the compass.
+                           */
+                          setWalkingView(already ? "rose" : "map");
+                          // Close the card either way: going, the route is what to look at.
+                          setSelectedId(null);
                         },
                       }
                     : {})}
@@ -2210,6 +2351,42 @@ export function App() {
               setListening(true);
             }}
             onLater={() => setSyncedNow(null)}
+            next={(() => {
+              if (!selfDirected) return undefined;
+              // On a planned walk the next stop is already chosen (and already the beacon).
+              if (plan?.active && beacon) {
+                const echo = LIBRARY_BY_ID.get(beacon);
+                if (!echo) return undefined;
+                return {
+                  title: echo.title,
+                  walk: `stop ${plan.at + 1} of ${plan.stops.length}`,
+                  onGo: () => {
+                    setSyncedNow(null);
+                    setWalkingView("map");
+                    setPan({ x: 0, y: 0 });
+                  },
+                };
+              }
+              // The nearest still waiting, not the best ranked: this is about where to walk.
+              const n = around
+                .filter((a) => a.sealed && a.echo.id !== syncedNow.echo.id)
+                .reduce<(typeof around)[number] | null>((best, a) => (!best || a.distanceKm < best.distanceKm ? a : best), null);
+              if (!n) return undefined;
+              // A street walk is about a third longer than the crow flies; the real time
+              // shows on the directions bar the moment it is worked out.
+              const minutes = Math.max(1, Math.round((n.distanceKm * 1000 * 1.3) / 1.25 / 60));
+              return {
+                title: n.echo.title,
+                walk: `about ${minutes} min walk`,
+                onGo: () => {
+                  setSyncedNow(null);
+                  setBeacon(n.echo.id);
+                  setWalkingView("map");
+                  setSelectedId(null);
+                  setPan({ x: 0, y: 0 });
+                },
+              };
+            })()}
           />
         )}
 

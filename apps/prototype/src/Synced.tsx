@@ -39,9 +39,15 @@ export interface SyncedProps {
   readonly event: CaptureEvent;
   readonly onListen: () => void;
   readonly onLater: () => void;
+  /**
+   * The next one: the nearest echo still waiting, and how far a walk it is. Taking it
+   * starts the directions there (ADR-0018). James (2026-10-11): "pick echoes, navigate to
+   * them, sync with them and go to the next one."
+   */
+  readonly next?: { readonly title: string; readonly walk: string; readonly onGo: () => void } | undefined;
 }
 
-export function Synced({ event, onListen, onLater }: SyncedProps) {
+export function Synced({ event, onListen, onLater, next }: SyncedProps) {
   const { echo, rarity } = event;
   const reasons = rarityReasons(echo);
   const minutes = Math.max(1, Math.round(echo.durationS / 60));
@@ -140,6 +146,15 @@ export function Synced({ event, onListen, onLater }: SyncedProps) {
           One button now, and it is the quiet one. "Listen now" moved onto the creature's
           own face, so what is left here is the way out rather than a second way in.
         */}
+        {next && (
+          <button className="synced-next" onClick={next.onGo}>
+            <span className="synced-next-kicker">Next · {next.walk}</span>
+            <span className="synced-next-title">{next.title}</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </button>
+        )}
         <button className="synced-later" onClick={onLater}>
           Keep it for later
         </button>

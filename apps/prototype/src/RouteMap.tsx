@@ -142,6 +142,24 @@ interface Props {
    * place (`place-search.ts`). The map centres there; where they stand is unchanged.
    */
   readonly lookAt?: LatLng | null;
+  /**
+   * The walk to the echo you asked to be taken to, along the streets, from where you are
+   * (`directions.ts`). Drawn over everything but the pins; framed once when it first
+   * appears, so you see the whole way before following it.
+   */
+  readonly directions?: readonly LatLng[] | null;
+  /** Which echo the directions lead to: a new one is a new walk to frame. */
+  readonly directionsTo?: string | null;
+  /**
+   * A planned walk (`PlanWalk.tsx`): the way round, and the stops in order. Numbered on the
+   * map, and framed whole whenever its stops change.
+   */
+  readonly plan?: {
+    readonly line: readonly LatLng[] | null;
+    readonly stops: readonly { readonly at: LatLng; readonly done: boolean }[];
+    /** Frame the whole walk; false once it is under way and following you matters more. */
+    readonly frame: boolean;
+  } | null;
 }
 
 /*
@@ -302,6 +320,9 @@ export function RouteMap({
   pan,
   onPan,
   lookAt = null,
+  directions = null,
+  directionsTo = null,
+  plan = null,
   focusId = null,
   reservedBottom = 0,
 }: Props) {
@@ -738,6 +759,79 @@ export function RouteMap({
       })
       .join(" ");
   }, [geometry, projection]);
+
+  const planPath = useMemo(() => {
+    const line = plan?.line;
+    if (!line || line.length < 2) return "";
+    return line
+      .map((p, i) => {
+        const { x, y } = projection(p);
+        return `${i === 0 ? "M" : "L"}${x.toFixed(1)} ${y.toFixed(1)}`;
+      })
+      .join(" ");
+  }, [plan?.line, projection]);
+
+  // The whole planned walk on screen, each time its stops change while planning.
+  const planKey = plan?.frame ? plan.stops.map((s) => `${s.at.lat},${s.at.lng}`).join(";") : "";
+  useEffect(() => {
+    if (!gl || !planKey || !plan) return;
+    const inset = insetFor(barH, reservedBottom, navH);
+    const pts = [...plan.stops.map((s) => s.at), ...(at ? [at] : [])];
+    const lngs = pts.map((p) => p.lng);
+    const lats = pts.map((p) => p.lat);
+    // The planner sheet covers the bottom of the map: frame into the top part.
+    const sheet = Math.round(box.h * 0.6);
+    gl.fitBounds(
+      [
+        [Math.min(...lngs), Math.min(...lats)],
+        [Math.max(...lngs), Math.max(...lats)],
+      ],
+      { padding: { top: inset.top + 30, bottom: sheet + 30, left: inset.side + 10, right: inset.side + 60 }, maxZoom: base, duration: 500 },
+    );
+    if (pan.x === 0 && pan.y === 0) onPan({ x: 1, y: 0 });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gl, planKey]);
+
+  const dirPath = useMemo(() => {
+    if (!directions || directions.length < 2) return "";
+    return directions
+      .map((p, i) => {
+        const { x, y } = projection(p);
+        return `${i === 0 ? "M" : "L"}${x.toFixed(1)} ${y.toFixed(1)}`;
+      })
+      .join(" ");
+  }, [directions, projection]);
+
+  /**
+   * Show the whole way once, when a walk to an echo begins: you, the echo and every street
+   * between, at whatever zoom fits. Following carries on from there at that zoom, so the
+   * walk stays on screen as you go rather than snapping back to the street you are on.
+   */
+  const framedWalk = useRef<string | null>(null);
+  useEffect(() => {
+    if (!gl || !directionsTo || !directions || directions.length < 2) {
+      if (!directionsTo) framedWalk.current = null;
+      return;
+    }
+    if (framedWalk.current === directionsTo) return;
+    framedWalk.current = directionsTo;
+    const inset = insetFor(barH, reservedBottom, navH);
+    const lngs = directions.map((p) => p.lng);
+    const lats = directions.map((p) => p.lat);
+    const cam = gl.cameraForBounds(
+      [
+        [Math.min(...lngs), Math.min(...lats)],
+        [Math.max(...lngs), Math.max(...lats)],
+      ],
+      { padding: { top: inset.top + 90, bottom: inset.bottom + 20, left: inset.side + 10, right: inset.side + 60 } },
+    );
+    if (!cam?.zoom) return;
+    const z = Math.min(base, cam.zoom);
+    onZoom(Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, 2 ** (z - base))));
+    gl.easeTo({ ...(cam.center ? { center: cam.center } : {}), zoom: z, duration: 700 });
+    // The listener is free to drag after this; following resumes at the new zoom.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gl, directionsTo, directions]);
 
   /**
    * Which echoes are allowed to call.
@@ -1458,6 +1552,21 @@ export function RouteMap({
         `pathLength="1"` normalises the path to a length of one, so the dash pattern is just
         the progress fraction and no arc-length maths is needed.
       */}
+      {planPath && <path d={planPath} className="pw-line-casing" />}
+      {planPath && <path d={planPath} className="pw-line" />}
+      {dirPath && <path d={dirPath} className="dir-casing" />}
+      {dirPath && <path d={dirPath} className="dir-line" />}
+      {dirPath && directions && (() => {
+        // Where it ends: a ring round the echo you are walking to, so it stands out from
+        // its neighbours without another colour.
+        const end = projection(directions[directions.length - 1]!);
+        return (
+          <g className="dir-dest" transform={`translate(${end.x.toFixed(1)} ${end.y.toFixed(1)})`}>
+            <circle r="26" />
+            <circle className="dir-dest-pulse" r="26" />
+          </g>
+        );
+      })()}
       {path && <path d={path} className="route-casing" />}
       {path && <path d={path} className="route-ahead" />}
       {path && (
@@ -1590,6 +1699,21 @@ export function RouteMap({
       >
         {VECTOR_TILES_URL ? VECTOR_ATTRIBUTION : TILE_ATTRIBUTION}
       </text>
+      {plan?.stops.map((s, i) => {
+        // The stop's number, riding the top right of its pin.
+        const q = projection(s.at);
+        return (
+          <g
+            key={`plan-${i}`}
+            className={s.done ? "pw-badge done" : "pw-badge"}
+            transform={`translate(${(q.x + 16).toFixed(1)} ${(q.y - 18).toFixed(1)})`}
+            aria-hidden="true"
+          >
+            <circle r="11" />
+            <text>{i + 1}</text>
+          </g>
+        );
+      })}
       {here && <Here x={here.x} y={here.y} mode={mode} headingDeg={position?.headingDeg ?? null} />}
 
       {/*
