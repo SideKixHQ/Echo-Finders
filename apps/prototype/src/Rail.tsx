@@ -41,22 +41,6 @@ export type WalkingView = "rose" | "map" | "walk";
 
 export interface RailProps {
   /**
-   * The zoom, and how to change it.
-   *
-   * Board 2 puts a magnifier on this column, between recentre and download, and it was
-   * the one control on the board that had never been built. The map HAS been zoomable
-   * since it was written — pinch, double tap, scroll wheel — and every one of those is
-   * invisible. A gesture nobody is told about is a feature nobody has.
-   *
-   * Two buttons rather than the board's one, because a map you can only zoom one way is
-   * a trap, and joined into a single pill so the column still reads as the board's short
-   * stack of round controls rather than growing a sixth object.
-   */
-  readonly zoom: number;
-  readonly onZoom: (next: number) => void;
-  readonly minZoom: number;
-  readonly maxZoom: number;
-  /**
    * The street humming, and the reason it is on this column at all.
    *
    * `hum.ts` is the most ambitious thing in the app: every echo in reach emits a quiet
@@ -124,10 +108,6 @@ export interface RailProps {
 }
 
 function RailInner({
-  zoom,
-  onZoom,
-  minZoom,
-  maxZoom,
   humming,
   onHum,
   sonar,
@@ -189,39 +169,11 @@ function RailInner({
       )}
 
       {/*
-        Zoom, as board 2 draws it: the same magnifier, on the same column.
-
-        A joined pair rather than two fabs. The column is anchored to the bottom and grows
-        upward, and a sixth free-standing object put the top one through the category
-        chips — measured, not guessed, the last time this column grew. Joined, in and out
-        read as one control, which is also what they are.
-
-        Disabled at the limits rather than silently doing nothing, because a button that
-        responds to nothing is how somebody decides the map is broken.
+        No zoom buttons. They were here while the map did its own gestures and pinch was
+        unreliable; MapLibre's pinch, double tap and wheel now do it properly, and two more
+        buttons on this column covered the echoes on the right of the map (James,
+        2026-10-11: the map was "hard to navigate").
       */}
-      <div className="fab fab-zoom">
-        <button
-          onClick={() => onZoom(zoom * 1.6)}
-          disabled={zoom >= maxZoom - 1e-6}
-          aria-label="Zoom in"
-        >
-          <svg viewBox="0 0 24 24">
-            <circle cx="11" cy="11" r="6.5" />
-            <path d="M8 11h6M11 8v6M20.5 20.5L16 16" />
-          </svg>
-        </button>
-        <button
-          onClick={() => onZoom(zoom / 1.6)}
-          disabled={zoom <= minZoom + 1e-6}
-          aria-label="Zoom out"
-        >
-          {/* The board's own glyph, to the stroke. */}
-          <svg viewBox="0 0 24 24">
-            <circle cx="11" cy="11" r="6.5" />
-            <path d="M8 11h6M20.5 20.5L16 16" />
-          </svg>
-        </button>
-      </div>
 
       {/*
         Walking's view switch. The rose is the resting screen on foot and the street map is

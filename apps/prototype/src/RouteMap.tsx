@@ -148,12 +148,14 @@ interface Props {
    * appears, so you see the whole way before following it.
    */
   readonly directions?: readonly LatLng[] | null;
-  /** Which echo the directions lead to: a new one is a new walk to frame. */
-  readonly directionsTo?: string | null;
+  /** The echo the directions lead to: it stays lit while every other pin dims. */
+  readonly aimId?: string | null;
   /**
    * A planned walk (`PlanWalk.tsx`): the way round, and the stops in order. Numbered on the
    * map, and framed whole whenever its stops change.
    */
+  /** The map itself was tapped, away from any pin: close what is open. */
+  readonly onBackgroundTap?: () => void;
   readonly plan?: {
     readonly line: readonly LatLng[] | null;
     readonly stops: readonly { readonly at: LatLng; readonly done: boolean }[];
@@ -321,8 +323,9 @@ export function RouteMap({
   onPan,
   lookAt = null,
   directions = null,
-  directionsTo = null,
+  aimId = null,
   plan = null,
+  onBackgroundTap,
   focusId = null,
   reservedBottom = 0,
 }: Props) {
@@ -802,36 +805,6 @@ export function RouteMap({
       .join(" ");
   }, [directions, projection]);
 
-  /**
-   * Show the whole way once, when a walk to an echo begins: you, the echo and every street
-   * between, at whatever zoom fits. Following carries on from there at that zoom, so the
-   * walk stays on screen as you go rather than snapping back to the street you are on.
-   */
-  const framedWalk = useRef<string | null>(null);
-  useEffect(() => {
-    if (!gl || !directionsTo || !directions || directions.length < 2) {
-      if (!directionsTo) framedWalk.current = null;
-      return;
-    }
-    if (framedWalk.current === directionsTo) return;
-    framedWalk.current = directionsTo;
-    const inset = insetFor(barH, reservedBottom, navH);
-    const lngs = directions.map((p) => p.lng);
-    const lats = directions.map((p) => p.lat);
-    const cam = gl.cameraForBounds(
-      [
-        [Math.min(...lngs), Math.min(...lats)],
-        [Math.max(...lngs), Math.max(...lats)],
-      ],
-      { padding: { top: inset.top + 90, bottom: inset.bottom + 20, left: inset.side + 10, right: inset.side + 60 } },
-    );
-    if (!cam?.zoom) return;
-    const z = Math.min(base, cam.zoom);
-    onZoom(Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, 2 ** (z - base))));
-    gl.easeTo({ ...(cam.center ? { center: cam.center } : {}), zoom: z, duration: 700 });
-    // The listener is free to drag after this; following resumes at the new zoom.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [gl, directionsTo, directions]);
 
   /**
    * Which echoes are allowed to call.
@@ -999,10 +972,88 @@ export function RouteMap({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gl, overview, lookAt?.lat, lookAt?.lng, hasFix, geometry]);
 
+  /*
+   * SHOW SOMETHING. Whenever following starts (the first fix, or "Back to where I am"),
+   * the zoom is chosen so you and your nearest few echoes are all on screen, clear of the
+   * chips, the button column and the bottom bar; street level when they are close, further
+   * out when they are not, never closer than the mode's own view. A fixed street-level
+   * zoom opened on a map with nobody's echoes on it, and the two nearest hidden under the
+   * buttons and the tab bar (James, 2026-10-11: "hard to navigate and find an echo").
+   * After that the listener's own zoom is kept.
+   */
+  const revealed = useRef(false);
+  useEffect(() => {
+    if (!following || overview || lookAt) revealed.current = false;
+  }, [following, overview, lookAt]);
+  // A new journey is a new place: show its nearest echoes again.
+  useEffect(() => {
+    revealed.current = false;
+  }, [route?.id, mode]);
+
   useEffect(() => {
     if (!gl || !at || overview || lookAt || !following) return;
     // Mid-pinch, a finger is in charge; the next fix after it lets go will catch up.
     if (gesturing.current) return;
+    /*
+     * Somewhere else entirely (a new journey, a reopened app): go there, do not glide. An
+     * ease restarted by every fix crawled from Wilmington to New York over a dozen seconds
+     * with nothing on screen the whole way (found 2026-10-11).
+     */
+    const seen = gl.project([at.lng, at.lat]);
+    const far = seen.x < -box.w || seen.x > box.w * 2 || seen.y < -box.h || seen.y > box.h * 2;
+    if (far) gl.jumpTo({ center: [at.lng, at.lat] });
+    /*
+     * Walking to an echo, following means keeping the way there in view: you and the
+     * echo, re-fitted as you go, clear of the chips, the directions bar, the buttons and
+     * the bottom bar. Centring on you put the echo under the button column, which is the
+     * one thing the walk is about.
+     */
+    if (directions && directions.length > 1) {
+      const pts = [at, directions[directions.length - 1]!];
+      const lngs = pts.map((p) => p.lng);
+      const lats = pts.map((p) => p.lat);
+      const inset = insetFor(barH, reservedBottom, navH);
+      gl.fitBounds(
+        [
+          [Math.min(...lngs), Math.min(...lats)],
+          [Math.max(...lngs), Math.max(...lats)],
+        ],
+        {
+          padding: { top: inset.top + 96, bottom: inset.bottom + 32, left: 40, right: 112 },
+          maxZoom: base + 0.5,
+          duration: 400,
+        },
+      );
+      revealed.current = false;
+      return;
+    }
+    if (!revealed.current) {
+      revealed.current = true;
+      const near = library
+        .map((e) => ({ p: e.point.at, km: distanceKm(at, e.point.at) }))
+        .sort((a, b) => a.km - b.km)
+        .slice(0, 3);
+      let z = base;
+      if (near.length) {
+        // A box centred on you that reaches the furthest of them, so that following
+        // (which keeps you in the middle) still has them all in view.
+        const dLat = Math.max(...near.map((n) => Math.abs(n.p.lat - at.lat))) * 1.15 + 0.0002;
+        const dLng = Math.max(...near.map((n) => Math.abs(n.p.lng - at.lng))) * 1.15 + 0.0002;
+        const inset = insetFor(barH, reservedBottom, navH);
+        const cam = gl.cameraForBounds(
+          [
+            [at.lng - dLng, at.lat - dLat],
+            [at.lng + dLng, at.lat + dLat],
+          ],
+          // The right side keeps clear of the button column, which is where pins vanished.
+          { padding: { top: inset.top + 8, bottom: inset.bottom + 8, left: 64, right: 64 } },
+        );
+        if (cam?.zoom) z = Math.max(base - 3.5, Math.min(base, cam.zoom));
+      }
+      onZoom(Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, 2 ** (z - base))));
+      gl.easeTo({ center: [at.lng, at.lat], zoom: z, offset: bandOffset, duration: 500 });
+      return;
+    }
     gl.easeTo({
       center: [at.lng, at.lat],
       zoom: base + Math.log2(zoom),
@@ -1012,7 +1063,7 @@ export function RouteMap({
     });
     // `zoom` is applied here only when following; the next effect handles it otherwise.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [gl, at?.lat, at?.lng, overview, lookAt, following, base, bandOffset]);
+  }, [gl, at?.lat, at?.lng, overview, lookAt, following, base, bandOffset, directions]);
 
   // The zoom buttons, and anything else that sets the zoom from outside the map.
   useEffect(() => {
@@ -1153,7 +1204,7 @@ export function RouteMap({
         <g
           key={echo.id}
           className={`pin pin-${state} cat-${echo.category}${selected ? " pin-selected" : ""}${
-            echo.id === focusId ? " pin-focus" : ""
+            echo.id === focusId || echo.id === aimId ? " pin-focus" : ""
           }`}
           transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`}
           data-echo={echo.id}
@@ -1315,13 +1366,17 @@ export function RouteMap({
       onUserDrag={() => {
         if (pan.x === 0 && pan.y === 0) onPan({ x: 1, y: 0 });
       }}
+      onMapTap={() => {
+        setOpenCluster(null);
+        onBackgroundTap?.();
+      }}
       onUserZoom={(z) => onZoom(Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, 2 ** (z - base))))}
     />
     <svg
       /* `map-focusing` dims everything that is not the echo the arrows are on. The
          bloom alone is not enough on a map of twenty six pins: it says "this one is
          special" where the job is to say "this one, and you can ignore the rest". */
-      className={`map${gl ? " map-live" : ""}${focusId ? " map-focusing" : ""}`}
+      className={`map${gl ? " map-live" : ""}${focusId || (aimId && directions) ? " map-focusing" : ""}`}
       viewBox={`0 0 ${box.w} ${box.h}`}
       role="img"
       aria-label="Walking route"

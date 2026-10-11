@@ -88,6 +88,7 @@ export function KindPicker({ on, onToggle, onAll }: KindProps) {
     const down = (e: PointerEvent) => {
       const t = e.target as Node;
       if (box.current?.contains(t) || tap.current?.contains(t)) return;
+      if ((e.target as Element).classList?.contains("menu-scrim")) return;
       close();
     };
     const key = (e: KeyboardEvent) => {
@@ -130,6 +131,7 @@ export function KindPicker({ on, onToggle, onAll }: KindProps) {
         </svg>
       </button>
 
+      {open && <div className="menu-scrim" aria-hidden="true" onClick={close} />}
       {/* Below the whole map bar, its full width: one box, every kind in view. */}
       {open && (
         <div className="kind-box" id="kind-box" ref={box}>

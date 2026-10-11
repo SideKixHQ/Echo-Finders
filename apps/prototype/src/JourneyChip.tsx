@@ -97,6 +97,9 @@ export function JourneyChip(props: JourneyChipProps) {
   useEffect(() => {
     if (!open) return;
     const away = (e: PointerEvent) => {
+      // The scrim closes it on its own click, so the tap is swallowed rather than landing
+      // on the pin under it (see `.menu-scrim`).
+      if ((e.target as Element).classList?.contains("menu-scrim")) return;
       if (wrap.current && !wrap.current.contains(e.target as Node)) setOpen(false);
     };
     const key = (e: KeyboardEvent) => {
@@ -120,6 +123,7 @@ export function JourneyChip(props: JourneyChipProps) {
 
   return (
     <div className={children ? "jchip-wrap jchip-wrap-wide" : "jchip-wrap"} ref={wrap}>
+      {open && <div className="menu-scrim" aria-hidden="true" onClick={() => setOpen(false)} />}
       <button
         ref={chip}
         className={children ? "journey-tap" : "jchip"}
@@ -260,7 +264,7 @@ function LookSomewhere({ library, onPick }: { readonly library: readonly Echo[];
           type="search"
           inputMode="search"
           autoComplete="off"
-          placeholder="Look somewhere else: ZIP or place"
+          placeholder="ZIP code or place"
           aria-label="Look somewhere else: a ZIP code or a place"
           value={query}
           onFocus={() => {
