@@ -1,0 +1,296 @@
+{
+ "v": 1,
+ "release": "2026-09-23.0",
+ "areas": [
+  {
+   "area": "african-burial-ground",
+   "bbox": [
+    -74.03127,
+    40.69252,
+    -73.99015,
+    40.72533
+   ],
+   "file": "african-burial-ground.json"
+  },
+  {
+   "area": "atlantic-city-first-boardwalk",
+   "bbox": [
+    -74.43684,
+    39.35352,
+    -74.40896,
+    39.37508
+   ],
+   "file": "atlantic-city-first-boardwalk.json"
+  },
+  {
+   "area": "canaveral-free-speed",
+   "bbox": [
+    -80.61995,
+    28.38142,
+    -80.59545,
+    28.40298
+   ],
+   "file": "canaveral-free-speed.json"
+  },
+  {
+   "area": "casa-casuarina-the-steps",
+   "bbox": [
+    -80.142,
+    25.76935,
+    -80.11788,
+    25.79448
+   ],
+   "file": "casa-casuarina-the-steps.json"
+  },
+  {
+   "area": "craggy-gardens-balds",
+   "bbox": [
+    -82.39247,
+    35.69032,
+    -82.36593,
+    35.71188
+   ],
+   "file": "craggy-gardens-balds.json"
+  },
+  {
+   "area": "dakota-three-minutes",
+   "bbox": [
+    -73.99019,
+    40.76463,
+    -73.96038,
+    40.78703
+   ],
+   "file": "dakota-three-minutes.json"
+  },
+  {
+   "area": "hatteras-moved-the-lighthouse",
+   "bbox": [
+    -75.542,
+    35.24002,
+    -75.5156,
+    35.26158
+   ],
+   "file": "hatteras-moved-the-lighthouse.json"
+  },
+  {
+   "area": "kitty-hawk-shorter-than-this-plane",
+   "bbox": [
+    -75.68073,
+    36.00382,
+    -75.65407,
+    36.02538
+   ],
+   "file": "kitty-hawk-shorter-than-this-plane.json"
+  },
+  {
+   "area": "linn-cove-viaduct-last-piece",
+   "bbox": [
+    -81.82304,
+    36.08672,
+    -81.79636,
+    36.10828
+   ],
+   "file": "linn-cove-viaduct-last-piece.json"
+  },
+  {
+   "area": "linville-gorge-too-steep",
+   "bbox": [
+    -82.08462,
+    35.94982,
+    -82.05798,
+    35.97138
+   ],
+   "file": "linville-gorge-too-steep.json"
+  },
+  {
+   "area": "mount-mitchell-buried-on-top",
+   "bbox": [
+    -82.27839,
+    35.75462,
+    -82.25181,
+    35.77618
+   ],
+   "file": "mount-mitchell-buried-on-top.json"
+  },
+  {
+   "area": "savannah-twenty-two-squares",
+   "bbox": [
+    -81.10392,
+    32.07012,
+    -81.07848,
+    32.09168
+   ],
+   "file": "savannah-twenty-two-squares.json"
+  },
+  {
+   "area": "the-balcony",
+   "bbox": [
+    -90.07098,
+    35.12372,
+    -90.04462,
+    35.14528
+   ],
+   "file": "the-balcony.json"
+  },
+  {
+   "area": "the-children-at-the-lighthouse",
+   "bbox": [
+    -81.30095,
+    29.87465,
+    -81.27609,
+    29.89621
+   ],
+   "file": "the-children-at-the-lighthouse.json"
+  },
+  {
+   "area": "the-distance-across-the-street",
+   "bbox": [
+    -77.03981,
+    38.8859,
+    -77.01211,
+    38.90746
+   ],
+   "file": "the-distance-across-the-street.json"
+  },
+  {
+   "area": "the-empty-frames",
+   "bbox": [
+    -71.11379,
+    42.32744,
+    -71.08463,
+    42.349
+   ],
+   "file": "the-empty-frames.json"
+  },
+  {
+   "area": "the-footsteps-above-the-gallows",
+   "bbox": [
+    -117.20731,
+    32.74205,
+    -117.18167,
+    32.76361
+   ],
+   "file": "the-footsteps-above-the-gallows.json"
+  },
+  {
+   "area": "the-garage-that-vanished",
+   "bbox": [
+    -87.66417,
+    41.90962,
+    -87.62351,
+    41.93714
+   ],
+   "file": "the-garage-that-vanished.json"
+  },
+  {
+   "area": "the-girl-who-wanted-her-doll",
+   "bbox": [
+    -3.20974,
+    55.93917,
+    -3.17124,
+    55.96073
+   ],
+   "file": "the-girl-who-wanted-her-doll.json"
+  },
+  {
+   "area": "the-lady-in-grey",
+   "bbox": [
+    -77.96434,
+    34.21882,
+    -77.92652,
+    34.25878
+   ],
+   "file": "the-lady-in-grey.json"
+  },
+  {
+   "area": "the-lights-beyond-the-ridge",
+   "bbox": [
+    -81.89232,
+    35.99022,
+    -81.86568,
+    36.01178
+   ],
+   "file": "the-lights-beyond-the-ridge.json"
+  },
+  {
+   "area": "the-men-who-left-their-faces-behind",
+   "bbox": [
+    -122.43663,
+    37.81593,
+    -122.40933,
+    37.83749
+   ],
+   "file": "the-men-who-left-their-faces-behind.json"
+  },
+  {
+   "area": "the-music-in-the-empty-room",
+   "bbox": [
+    -105.53336,
+    40.3721,
+    -105.50506,
+    40.39366
+   ],
+   "file": "the-music-in-the-empty-room.json"
+  },
+  {
+   "area": "the-prison-corridor",
+   "bbox": [
+    -75.18672,
+    39.95687,
+    -75.15858,
+    39.97843
+   ],
+   "file": "the-prison-corridor.json"
+  },
+  {
+   "area": "the-prisoner-who-never-reached-the-prison",
+   "bbox": [
+    -94.59809,
+    39.07447,
+    -94.57031,
+    39.09603
+   ],
+   "file": "the-prisoner-who-never-reached-the-prison.json"
+  },
+  {
+   "area": "the-queen-in-the-wrong-corridor",
+   "bbox": [
+    -0.35473,
+    51.39294,
+    -0.32017,
+    51.4145
+   ],
+   "file": "the-queen-in-the-wrong-corridor.json"
+  },
+  {
+   "area": "the-queen-who-returns",
+   "bbox": [
+    -0.09432,
+    51.49754,
+    -0.05968,
+    51.5191
+   ],
+   "file": "the-queen-who-returns.json"
+  },
+  {
+   "area": "the-room-that-knocks-back",
+   "bbox": [
+    -118.20269,
+    33.74228,
+    -118.17675,
+    33.76384
+   ],
+   "file": "the-room-that-knocks-back.json"
+  },
+  {
+   "area": "the-turn-onto-elm-street",
+   "bbox": [
+    -96.82172,
+    32.76827,
+    -96.79608,
+    32.78983
+   ],
+   "file": "the-turn-onto-elm-street.json"
+  }
+ ]
+}

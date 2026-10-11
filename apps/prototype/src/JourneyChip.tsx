@@ -53,6 +53,8 @@ export interface JourneyChipProps {
   readonly library?: readonly Echo[];
   /** Look at somewhere else: a ZIP code or a place (`place-search.ts`). */
   readonly onLook?: (hit: PlaceHit, mode: "walking" | "driving") => void;
+  /** Plan a walk from here: pick echoes, or a time, and get the way round them mapped. */
+  readonly onPlan?: () => void;
 }
 
 const MODES: readonly { readonly id: Travel; readonly label: string }[] = [
@@ -172,6 +174,14 @@ export function JourneyChip(props: JourneyChipProps) {
                 <small>No route. Finds what is near you as you go.</small>
               </span>
               {roaming && travel === tab && <Tick />}
+            </button>
+          )}
+          {tab === "walking" && props.onPlan && (
+            <button className="jmenu-item" onClick={done(props.onPlan)}>
+              <span>
+                Plan a walk
+                <small>Pick echoes, or say how long you have. We map the way round them.</small>
+              </span>
             </button>
           )}
           {tab !== "flight" && props.onLook && (

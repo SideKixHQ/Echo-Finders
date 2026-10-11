@@ -123,9 +123,10 @@ back in your pocket. The map becomes a thing you check.
 - **For:** most true to the product. ADR-0010 already says arriving is the mechanic, and the
   proximity hum is already built. It is the best answer on a phone because it is the answer
   that does not need the phone.
-- **Against:** "Take me to this one" currently draws no route and gives no directions, and
-  that needs the Google Routes key which is not in the environment yet. So this one is
-  partly blocked on something outside the code.
+- **Against:** ~~"Take me to this one" currently draws no route and gives no directions, and
+  that needs the Google Routes key which is not in the environment yet.~~ Built without a
+  key (2026-10-11, ADR-0018): walking directions are worked out on the phone from street
+  files built from Overture, with a hand-off to Apple or Google Maps outside them.
 - **Effort:** large, and gated.
 
 ## What I would do
