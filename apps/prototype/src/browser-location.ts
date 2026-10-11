@@ -69,7 +69,11 @@ export class BrowserLocation implements LocationSource {
    * so a button can show a spinner and then the answer.
    */
   async start(): Promise<LocationState> {
-    if (this.watchId !== null) return this.state;
+    // Already watching, unless the last answer was a refusal: then "try again" has to
+    // actually try again, after the listener changed the setting.
+    if (this.watchId !== null && this.state.kind !== "denied") return this.state;
+    if (this.watchId !== null && this.available) navigator.geolocation.clearWatch(this.watchId);
+    this.watchId = null;
     if (!this.available) {
       this.set({ kind: "denied", why: "This browser cannot share a location" });
       return this.state;

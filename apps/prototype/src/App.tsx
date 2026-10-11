@@ -22,7 +22,7 @@ import { useHeading } from "./use-sensors";
 import { Viewfinder } from "./Viewfinder";
 import { Onboarding } from "./Onboarding";
 import { loadRatings, setRating, type Rating } from "./ratings";
-import { BrowserLocation } from "./browser-location";
+import { BrowserLocation, type LocationState } from "./browser-location";
 import { Rail, type WalkingView } from "./Rail";
 import { MODE_PHRASE } from "./travel";
 import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
@@ -479,6 +479,28 @@ export function App() {
   const [planOpen, setPlanOpen] = useState(false);
 
   useEffect(() => () => gps.stop(), [gps]);
+
+  /*
+   * Location, every time the app opens, not only the first.
+   *
+   * `gps.start()` was called from one place: the onboarding button. Onboarding happens
+   * once, so every later visit opened with the GPS off and roaming said "Nothing within
+   * 2.4km" to somebody standing among a hundred echoes (found 2026-10-11). When the browser
+   * says permission is already granted, starting it asks nothing and is what the listener
+   * already agreed to; otherwise the empty screen offers the tap (`Nowhere`'s `finding`).
+   */
+  const [locating, setLocating] = useState<LocationState>({ kind: "idle" });
+  useEffect(() => gps.watchState(setLocating), [gps]);
+  useEffect(() => {
+    if (!onboarded) return;
+    let live = true;
+    void BrowserLocation.status().then((status) => {
+      if (live && status === "granted") void gps.start();
+    });
+    return () => {
+      live = false;
+    };
+  }, [gps, onboarded]);
 
   const finishOnboarding = useCallback(() => {
     setOnboarded(true);
@@ -1631,6 +1653,15 @@ export function App() {
                   reachKm={session.nearbyReachKm}
                   onShowAll={() => setCityOpen(true)}
                   widenToKm={WIDEN_TO_KM}
+                  {...(!state.position && locating.kind !== "live"
+                    ? {
+                        finding: {
+                          state: locating.kind,
+                          ...(locating.kind === "denied" ? { why: locating.why } : {}),
+                          onFind: () => void gps.start(),
+                        },
+                      }
+                    : {})}
                   {...(nearestAnywhere && nearestAnywhere.distanceKm <= WIDEN_TO_KM
                     ? { onWiden: () => setLookFurtherKm(WIDEN_TO_KM) }
                     : {})}

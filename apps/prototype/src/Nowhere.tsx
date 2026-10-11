@@ -36,9 +36,21 @@ export interface NowhereProps {
   /** Widen the search. Given only when it would actually turn something up. */
   readonly onWiden?: (() => void) | undefined;
   readonly widenToKm: number;
+  /**
+   * Where the phone is in finding itself, while there is no fix yet.
+   *
+   * Without it this screen said "Nothing within 2.4km" to somebody standing among a
+   * hundred echoes, because it could not tell "nothing here" from "I do not know where
+   * here is". Absent once there is a fix.
+   */
+  readonly finding?: {
+    readonly state: "idle" | "locating" | "denied";
+    readonly why?: string;
+    readonly onFind: () => void;
+  };
 }
 
-export function Nowhere({ nearest, reachKm, onShowAll, onWiden, widenToKm }: NowhereProps) {
+export function Nowhere({ nearest, reachKm, onShowAll, onWiden, widenToKm, finding }: NowhereProps) {
   return (
     <div className="nowhere">
       {/*
@@ -63,6 +75,19 @@ export function Nowhere({ nearest, reachKm, onShowAll, onWiden, widenToKm }: Now
       </svg>
 
       <div className="nowhere-say">
+        {finding ? (
+          <>
+            <h1>{finding.state === "locating" ? "Finding you…" : "Where are you?"}</h1>
+            <p>
+              {finding.state === "denied"
+                ? `${finding.why ?? "Location is off"}. Echoes play where they happened, so the app needs to know where you are. Turn location on for this site in your browser's settings, then try again.`
+                : finding.state === "locating"
+                  ? "Asking the phone where you are. Outdoors this takes a few seconds."
+                  : "Echoes play where they happened, so the app needs to know where you are."}
+            </p>
+          </>
+        ) : (
+        <>
         <h1>Nothing within {reach(reachKm)}</h1>
         {/*
           The distance is the honest version of "we are only in lower Manhattan so far".
@@ -81,11 +106,23 @@ export function Nowhere({ nearest, reachKm, onShowAll, onWiden, widenToKm }: Now
             and it will keep changing.
           </p>
         )}
+        </>
+        )}
       </div>
       </div>
 
       <div className="nowhere-acts">
-        <button className="nowhere-go" onClick={onShowAll}>
+        {finding && finding.state !== "locating" && (
+          <button className="nowhere-go" onClick={finding.onFind}>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="7" />
+              <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+            Use my location
+          </button>
+        )}
+        <button className={finding ? "nowhere-widen" : "nowhere-go"} onClick={onShowAll}>
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="11" cy="11" r="6.5" />
             <path d="M8 11h6M20.5 20.5L16 16" />
