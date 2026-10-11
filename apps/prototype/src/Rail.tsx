@@ -75,6 +75,16 @@ export interface RailProps {
    */
   readonly humming?: boolean;
   readonly onHum?: (on: boolean) => void;
+  /**
+   * The sonar: the ping that quickens as you close on a sealed echo.
+   *
+   * James (2026-10-11): "the sonar noise, you need a way to mute really easy. right on the
+   * map and it should be a pin and an echo like a submarine sonar." Its only switch was in
+   * the demo harness, which a phone never shows, so on a phone it could not be silenced at
+   * all. Present whenever the sonar can sound, which is the self-directed modes.
+   */
+  readonly sonar?: boolean;
+  readonly onSonar?: (on: boolean) => void;
   /** Showing the whole journey rather than following the listener. */
   readonly overview: boolean;
   /**
@@ -120,6 +130,8 @@ function RailInner({
   maxZoom,
   humming,
   onHum,
+  sonar,
+  onSonar,
   overview,
   panned,
   onOverview,
@@ -137,6 +149,32 @@ function RailInner({
         what the map shows, and because a listener who never finds it never meets the
         product. The equaliser mark is the rose's own, so the two places agree.
       */}
+      {/*
+        The sonar switch, first in the column so a thumb finds it without looking. A pin
+        sending out a ping when it is on; the same pin, silent and crossed, when it is not.
+      */}
+      {onSonar !== undefined && (
+        <button
+          className={sonar ? "fab fab-sonar on" : "fab fab-sonar"}
+          onClick={() => onSonar(!sonar)}
+          aria-pressed={sonar ?? false}
+          aria-label={sonar ? "Mute the sonar" : "Turn the sonar on"}
+        >
+          <svg viewBox="0 0 24 24">
+            <path d="M8 20.5s-5-4.4-5-8.4a5 5 0 0 1 10 0c0 4-5 8.4-5 8.4z" />
+            <circle cx="8" cy="12" r="1.6" />
+            {sonar ? (
+              <>
+                <path className="sonar-ping sonar-ping-1" d="M15.5 9.2a4 4 0 0 1 0 5.6" />
+                <path className="sonar-ping sonar-ping-2" d="M18.4 6.6a7.6 7.6 0 0 1 0 10.8" />
+              </>
+            ) : (
+              <path d="M16 9.5l5 5M21 9.5l-5 5" />
+            )}
+          </svg>
+        </button>
+      )}
+
       {onHum !== undefined && (
         <button
           className={humming ? "fab fab-hum on" : "fab fab-hum"}

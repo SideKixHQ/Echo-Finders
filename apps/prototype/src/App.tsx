@@ -87,6 +87,8 @@ const dev =
 const LIBRARY_BY_ID: ReadonlyMap<string, Echo> = new Map(LIBRARY.map((e) => [e.id, e]));
 /** How far from a searched place its echoes are shown. */
 const LOOK_RADIUS_KM = 25;
+/** Where the sonar on/off choice is remembered. */
+const SONAR_KEY = "echo-finders:sonar";
 const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROUTES[0]!;
 /** The journey to reopen on: the one you were on, or here, on foot (`journey-store.ts`). */
 const KEPT = readJourney(new Set(ROUTES.map((r) => r.id)));
@@ -170,7 +172,25 @@ export function App() {
    * permission gets refused.
    */
   const gps = useMemo(() => new BrowserLocation(), []);
-  const [sound, setSound] = useState(true);
+  /*
+   * The sonar, on unless the listener turned it off, and remembered: somebody who muted it
+   * on their walk yesterday does not want it pinging at them when the app opens today.
+   */
+  const [sound, setSoundState] = useState(() => {
+    try {
+      return localStorage.getItem(SONAR_KEY) !== "off";
+    } catch {
+      return true;
+    }
+  });
+  const setSound = useCallback((on: boolean) => {
+    setSoundState(on);
+    try {
+      localStorage.setItem(SONAR_KEY, on ? "on" : "off");
+    } catch {
+      // Private browsing: it still mutes, it just will not be remembered.
+    }
+  }, []);
   const [narrate, setNarrate] = useState(true);
   const [paused, setPaused] = useState(false);
   const [privacy, setPrivacy] = useState<PrivacySettings>(PRIVACY_DEFAULTS);
@@ -1756,6 +1776,7 @@ export function App() {
                 /* On foot only: the hum places echoes by bearing, and a bearing means
                    nothing at 500 knots. Carried modes never had it and still do not. */
                 {...(onFoot ? { humming, onHum: setHumming } : {})}
+                {...(selfDirected ? { sonar: sound, onSonar: setSound } : {})}
                 overview={overview}
                 /*
                   Recentre is the way back from a drag, and it has to work even when the

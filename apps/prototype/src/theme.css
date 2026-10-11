@@ -2006,6 +2006,16 @@ body {
 }
 @media (prefers-reduced-motion: reduce) { .fab-hum.on { animation: none; } }
 
+/* The sonar: its two arcs ping outward in turn while it is on, the way a sonar screen
+   sweeps. State, not decoration: a still pin is a silent one. */
+.fab-sonar .sonar-ping { animation: sonarPing 2.4s ease-out infinite; }
+.fab-sonar .sonar-ping-2 { animation-delay: 0.3s; }
+@keyframes sonarPing {
+  0%, 55%, 100% { opacity: 1; }
+  25% { opacity: 0.25; }
+}
+@media (prefers-reduced-motion: reduce) { .fab-sonar .sonar-ping { animation: none; } }
+
 .fab-zoom {
   height: auto; padding: 0; overflow: hidden;
   display: flex; flex-direction: column;
