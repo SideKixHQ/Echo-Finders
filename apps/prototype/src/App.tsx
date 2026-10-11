@@ -1816,7 +1816,11 @@ export function App() {
                   leave the offset in place.
                 */
                 onOverview={(next) => {
+                  const wasPanned = pan.x !== 0 || pan.y !== 0;
                   setPan({ x: 0, y: 0 });
+                  // Dragged away while following: the button says "Back to where I am",
+                  // so that is all it does. It used to switch to the whole journey too.
+                  if (wasPanned && !overview) return;
                   setOverview(next);
                 }}
                 panned={pan.x !== 0 || pan.y !== 0}

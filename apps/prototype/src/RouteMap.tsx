@@ -24,8 +24,9 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { CATEGORY_ICON, CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, characterFor } from "./Echo";
 import { ClusterDot, FAN_GAP, GROUP_PX } from "./PinCluster";
-import { TILE_ATTRIBUTION, TILE_URL, VECTOR_ATTRIBUTION, VECTOR_TILES_URL, cameraFor, planTiles, toWorld } from "./tiles";
-import { VectorBasemap } from "./VectorBasemap";
+import { TILE_ATTRIBUTION, TILE_URL, VECTOR_ATTRIBUTION, VECTOR_TILES_URL, planTiles, toWorld, type TilePlan } from "./tiles";
+import type { Map as MapLibre } from "maplibre-gl";
+import { MapCanvas } from "./MapCanvas";
 import { MODE_ICON } from "./travel";
 import { useSmoothedPoint } from "./use-smoothed";
 import { buildRouteGeometry, distanceKm, effectiveRadiusKm, presetFor, rarityOf, type Arriving, type Echo, type LatLng, type Position, type Route, type TravelMode,
@@ -192,8 +193,31 @@ const NAV_FALLBACK = 74;
  * number. Two places clamping to two different pairs is how a button goes dead one step
  * before the limit it claims.
  */
-export const MIN_ZOOM = 0.25;
+/*
+ * A thirty-second of the mode's framing out, eight times in. On foot that is from a whole
+ * town down to a single doorway; the old floor of a quarter stopped at two kilometres,
+ * which is not far enough to see the next neighbourhood's echoes.
+ */
+export const MIN_ZOOM = 1 / 32;
 export const MAX_ZOOM = 8;
+
+/**
+ * Where the map sits for each mode when it is following you, as a MapLibre zoom.
+ *
+ * On foot it is street level: about three hundred metres across a phone, so the street you
+ * are on, the next junction and the buildings either side are all readable. James
+ * (2026-10-11): "it should be very close and detailed." The rest scale up with speed.
+ */
+export const BASE_ZOOM: Record<TravelMode, number> = {
+  walking: 16.5,
+  cycling: 15.5,
+  driving: 13.5,
+  rail: 11,
+  flight: 7.5,
+};
+
+/** A plan with no raster tiles in it, for when MapLibre is drawing the streets. */
+const NO_TILES: TilePlan = { zoom: 0, originX: 0, originY: 0, scale: 1, tiles: [] };
 
 const RIPPLE_LIMIT = 4;
 
@@ -327,6 +351,18 @@ export function RouteMap({
    */
   const [openCluster, setOpenCluster] = useState<string | null>(null);
 
+  /**
+   * MapLibre, once it is running, and a counter that ticks every frame its camera moves.
+   *
+   * While `gl` is set the map's own gestures move the camera and everything in the SVG is
+   * projected through it; while it is null (loading, or no WebGL on this device) the SVG
+   * keeps its own projection and gestures, exactly as before.
+   */
+  const [gl, setGl] = useState<MapLibre | null>(null);
+  const [frame, setFrame] = useState(0);
+  /** A finger (or a wheel) is moving the map right now. */
+  const gesturing = useRef(false);
+
   const setZoom = useCallback(
     (next: number | ((z: number) => number)) => {
       // A fan drawn around a point that has just moved three streets is worse than none.
@@ -352,6 +388,7 @@ export function RouteMap({
   const dragged = useRef(false);
 
   const onPointerDown = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
+    if (gl) return;
     pinch.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
     if (pinch.current.size === 2) { pinchFrom.current = { gap: gap(), zoom }; dragFrom.current = null; }
     else if (pinch.current.size === 1) {
@@ -386,10 +423,10 @@ export function RouteMap({
         lastTap.current = now;
       }
     }
-  }, [zoom, setZoom, pan]);
+  }, [zoom, setZoom, pan, gl]);
 
   const onPointerMove = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
-    if (!pinch.current.has(e.pointerId)) return;
+    if (gl || !pinch.current.has(e.pointerId)) return;
     pinch.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
     const from = pinchFrom.current;
     if (pinch.current.size === 2 && from && from.gap !== 0) {
@@ -416,7 +453,7 @@ export function RouteMap({
       setOpenCluster(null);
     }
     onPan({ x: d.pan.x + dx, y: d.pan.y + dy });
-  }, [setZoom, onPan]);
+  }, [setZoom, onPan, gl]);
 
   const onPointerUp = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
     pinch.current.delete(e.pointerId);
@@ -574,12 +611,14 @@ export function RouteMap({
     const el = svg.current;
     if (!el) return;
     const onWheel = (e: WheelEvent) => {
+      // MapLibre has the wheel when it is running; this is only the fallback's.
+      if (gl) return;
       e.preventDefault();
       setZoom((z) => clamp(z * Math.exp(-e.deltaY / 400)));
     };
     el.addEventListener("wheel", onWheel, { passive: false });
     return () => el.removeEventListener("wheel", onWheel);
-  }, [setZoom]);
+  }, [setZoom, gl]);
 
   /*
    * Built once per route. It was built twice for every position fix — once in the
@@ -589,6 +628,15 @@ export function RouteMap({
   const geometry = useMemo(() => (route ? buildRouteGeometry(route) : null), [route]);
 
   const projection = useMemo(() => {
+    // MapLibre is the camera: ask it where each point is, every frame it moves.
+    if (gl) {
+      const project = (p: LatLng) => {
+        const q = gl.project([p.lng, p.lat]);
+        return { x: q.x, y: q.y };
+      };
+      project.plan = NO_TILES;
+      return project;
+    }
     const INSET = insetFor(barH, reservedBottom, navH);
 
     // The band actually visible between the chips and the sheet. The listener belongs in
@@ -677,7 +725,9 @@ export function RouteMap({
     // computed twice and drifting.
     project.plan = plan;
     return project;
-  }, [mode, geometry, library, at, lookAt, overview, zoom, box, pan, barH, reservedBottom, navH]);
+    // `frame` is read by nothing above: it is here so a camera move makes a new projection.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode, geometry, library, at, lookAt, overview, zoom, box, pan, barH, reservedBottom, navH, gl, frame]);
 
   const path = useMemo(() => {
     if (!geometry) return "";
@@ -797,14 +847,91 @@ export function RouteMap({
     const wantX = inset.side + (box.w - inset.side * 2) / 2;
     const wantY = inset.top + (box.h - inset.top - inset.bottom) / 2;
     const now = projection(echo.point.at);
-    // A move of a couple of pixels is not a move, and calling onPan for it would churn
-    // the projection for nothing.
-    if (Math.hypot(wantX - now.x, wantY - now.y) > 2) {
+    if (gl) {
+      // Glide there, and stop following: the listener asked to look at this one.
+      gl.easeTo({ center: [echo.point.at.lng, echo.point.at.lat], offset: [wantX - box.w / 2, wantY - box.h / 2], duration: 500 });
+      if (pan.x === 0 && pan.y === 0) onPan({ x: 1, y: 0 });
+    } else if (Math.hypot(wantX - now.x, wantY - now.y) > 2) {
+      // A move of a couple of pixels is not a move, and calling onPan for it would churn
+      // the projection for nothing.
       onPan({ x: pan.x + (wantX - now.x), y: pan.y + (wantY - now.y) });
     }
     const group = groups.find((g) => g.members.some((m) => m.item.id === focusId));
     setOpenCluster(group && group.members.length > 1 ? group.members[0]!.item.id : null);
-  }, [focusId, library, projection, groups, pan, onPan, box, barH, reservedBottom, navH]);
+  }, [focusId, library, projection, groups, pan, onPan, box, barH, reservedBottom, navH, gl]);
+
+  /*
+   * THE CAMERA, while MapLibre is running.
+   *
+   * Three things decide where it looks, in this order: the whole journey (`overview`, or
+   * before there is any fix), somewhere searched for (`lookAt`), and otherwise you. It
+   * follows you until a drag says otherwise (`pan` stops being zero), and the recentre
+   * button sets `pan` back to zero, which is the whole of "follow me" again. The zoom the
+   * listener chose is kept throughout: following moves the map, never the scale.
+   *
+   * Centred in the band the chips and the bar leave visible, not in the middle of the
+   * screen, so "you" is never under the bottom bar.
+   */
+  const base = BASE_ZOOM[mode];
+  const following = pan.x === 0 && pan.y === 0;
+  const bandOffset = useMemo((): [number, number] => {
+    const inset = insetFor(barH, reservedBottom, navH);
+    return [0, (inset.top + (box.h - inset.top - inset.bottom) / 2) - box.h / 2];
+  }, [barH, reservedBottom, navH, box.h]);
+  const framed = useRef(false);
+  const hasFix = at !== null;
+  useEffect(() => {
+    if (!gl) return;
+    const inset = insetFor(barH, reservedBottom, navH);
+    const duration = framed.current ? 600 : 0;
+    framed.current = true;
+    if (overview || (!hasFix && !lookAt)) {
+      const points = [...(geometry?.points ?? []), ...library.map((e) => e.point.at)];
+      if (points.length === 0) return;
+      const lngs = points.map((p) => p.lng);
+      const lats = points.map((p) => p.lat);
+      gl.fitBounds(
+        [
+          [Math.min(...lngs), Math.min(...lats)],
+          [Math.max(...lngs), Math.max(...lats)],
+        ],
+        { padding: { top: inset.top + 10, bottom: inset.bottom + 10, left: inset.side, right: inset.side + 50 }, maxZoom: base, duration },
+      );
+    } else if (lookAt) {
+      gl.easeTo({ center: [lookAt.lng, lookAt.lat], zoom: base - 1, offset: bandOffset, duration });
+    }
+    // Following is the next effect's job.
+    // Only a change of framing reframes; a new fix or a new library does not.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gl, overview, lookAt?.lat, lookAt?.lng, hasFix, geometry]);
+
+  useEffect(() => {
+    if (!gl || !at || overview || lookAt || !following) return;
+    // Mid-pinch, a finger is in charge; the next fix after it lets go will catch up.
+    if (gesturing.current) return;
+    gl.easeTo({
+      center: [at.lng, at.lat],
+      zoom: base + Math.log2(zoom),
+      offset: bandOffset,
+      duration: 350,
+      easing: (t) => t,
+    });
+    // `zoom` is applied here only when following; the next effect handles it otherwise.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gl, at?.lat, at?.lng, overview, lookAt, following, base, bandOffset]);
+
+  // The zoom buttons, and anything else that sets the zoom from outside the map.
+  useEffect(() => {
+    if (!gl) return;
+    const target = base + Math.log2(zoom);
+    if (Math.abs(gl.getZoom() - target) < 0.02) return;
+    if (following && at && !overview && !lookAt) {
+      gl.easeTo({ center: [at.lng, at.lat], zoom: target, offset: bandOffset, duration: 300 });
+    } else {
+      gl.easeTo({ zoom: target, duration: 300 });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gl, zoom, base]);
 
   const openingById = new Map(opening.map((a) => [a.echo.id, a]));
   const here = at ? projection(at) : null;
@@ -1073,21 +1200,34 @@ export function RouteMap({
 
   return (
     <>
-    {VECTOR_TILES_URL && (
-      <VectorBasemap
-        tiles={VECTOR_TILES_URL}
-        camera={cameraFor(projection.plan, box.w, box.h)}
-        theme={theme}
-        width={box.w}
-        height={box.h}
-        clipTop={barH}
-      />
-    )}
+    <MapCanvas
+      tiles={VECTOR_TILES_URL ?? null}
+      theme={theme}
+      start={
+        at
+          ? { lat: at.lat, lng: at.lng, zoom: base }
+          : { lat: library[0]?.point.at.lat ?? 39.5, lng: library[0]?.point.at.lng ?? -98.35, zoom: library[0] ? base - 3 : 3.5 }
+      }
+      clipTop={barH}
+      onReady={setGl}
+      onMove={() => setFrame((f) => f + 1)}
+      onUserGesture={() => {
+        gesturing.current = true;
+        setOpenCluster(null);
+      }}
+      onSettle={() => {
+        gesturing.current = false;
+      }}
+      onUserDrag={() => {
+        if (pan.x === 0 && pan.y === 0) onPan({ x: 1, y: 0 });
+      }}
+      onUserZoom={(z) => onZoom(Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, 2 ** (z - base))))}
+    />
     <svg
       /* `map-focusing` dims everything that is not the echo the arrows are on. The
          bloom alone is not enough on a map of twenty six pins: it says "this one is
          special" where the job is to say "this one, and you can ignore the rest". */
-      className={focusId ? "map map-focusing" : "map"}
+      className={`map${gl ? " map-live" : ""}${focusId ? " map-focusing" : ""}`}
       viewBox={`0 0 ${box.w} ${box.h}`}
       role="img"
       aria-label="Walking route"
@@ -1277,10 +1417,10 @@ export function RouteMap({
       */}
       {/* With vector tiles the field is painted under their canvas instead (`.vector-base`),
           because anything opaque here would cover them. */}
-      {!VECTOR_TILES_URL && <rect className="map-field" x="0" y="0" width={box.w} height={box.h} />}
+      {!gl && <rect className="map-field" x="0" y="0" width={box.w} height={box.h} />}
 
       <g clipPath="url(#mapBand)">
-        {!VECTOR_TILES_URL && projection.plan.tiles.map((t) => (
+        {!gl && !VECTOR_TILES_URL && projection.plan.tiles.map((t) => (
           <image
             key={`${theme}/${projection.plan.zoom}/${t.x}/${t.y}`}
             href={TILE_URL(t.x, t.y, projection.plan.zoom, theme)}

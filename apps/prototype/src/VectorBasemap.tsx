@@ -44,13 +44,13 @@ interface Props {
 }
 
 /** Glyphs ship with the app (`public/fonts`): one less host to depend on. */
-const glyphs = () =>
+export const glyphs = () =>
   `${window.location.origin}${import.meta.env.BASE_URL}fonts/{fontstack}/{range}.pbf`;
 
 let loading: Promise<typeof import("maplibre-gl")> | null = null;
 
 /** MapLibre and the PMTiles protocol, loaded once, on first use. */
-function loadMapLibre() {
+export function loadMapLibre() {
   loading ??= Promise.all([
     import("maplibre-gl"),
     import("pmtiles"),
