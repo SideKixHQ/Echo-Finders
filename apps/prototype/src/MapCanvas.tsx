@@ -32,33 +32,36 @@ interface Props {
   readonly onReady: (map: MapLibre) => void;
   /** Every frame the camera moves, for whatever it was moved by. */
   readonly onMove: () => void;
-  /** A person started any gesture: a drag, a pinch, a wheel, a double tap. */
-  readonly onUserGesture: () => void;
-  /** The camera came to rest, whoever moved it. */
-  readonly onSettle: () => void;
   /**
-   * A person dragged it. Only a drag stops the map following you: a pinch or a double tap
-   * is "closer" or "further", not "show me somewhere else", so the map zooms and stays on you.
+   * A person started any gesture: a drag, a pinch, a wheel, a double tap. Every one of
+   * them stops the map following you.
+   *
+   * It used to be only a drag, on the idea that a pinch means "closer", not "somewhere
+   * else", so the map should zoom and stay on you. On a phone it meant the map fought you:
+   * pinch in on the echoes down the street and the next GPS fix, about a second later,
+   * pulled the map back to your dot and off the echoes you were zooming in on (James,
+   * 2026-10-12). A pinch zooms between your fingers, and the map stays where you put it
+   * until "Back to where I am".
    */
-  readonly onUserDrag: () => void;
+  readonly onUserGesture: () => void;
+  /** The camera came to rest, whoever moved it, at this MapLibre zoom. */
+  readonly onSettle: (zoom: number) => void;
   /**
-   * A tap on the map itself, not on a pin (pins are in the SVG over it and take their own
-   * taps). Closes whatever card is open, as tapping away does on every phone map.
+   * A tap on the map itself, not on a pin (pins are in the SVG inside it and take their
+   * own taps). Closes whatever card is open, as tapping away does on every phone map.
    */
   readonly onMapTap: () => void;
-  /** A person changed the zoom, with the zoom it settled on. */
-  readonly onUserZoom: (zoom: number) => void;
 }
 
 const styleFor = (tiles: string | null, theme: MapTheme) =>
   tiles ? basemapStyle(`pmtiles://${tiles}`, glyphs(), theme) : rasterStyle(theme);
 
-export function MapCanvas({ tiles, theme, start, clipTop, onReady, onMove, onUserGesture, onSettle, onUserDrag, onUserZoom, onMapTap }: Props) {
+export function MapCanvas({ tiles, theme, start, clipTop, onReady, onMove, onUserGesture, onSettle, onMapTap }: Props) {
   const host = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibre | null>(null);
   // The handlers change identity every render; the map is made once and calls the latest.
-  const handlers = useRef({ onReady, onMove, onUserGesture, onSettle, onUserDrag, onUserZoom, onMapTap });
-  handlers.current = { onReady, onMove, onUserGesture, onSettle, onUserDrag, onUserZoom, onMapTap };
+  const handlers = useRef({ onReady, onMove, onUserGesture, onSettle, onMapTap });
+  handlers.current = { onReady, onMove, onUserGesture, onSettle, onMapTap };
   const firstTheme = useRef(theme);
   const firstStart = useRef(start);
 
@@ -93,11 +96,11 @@ export function MapCanvas({ tiles, theme, start, clipTop, onReady, onMove, onUse
         created.on("movestart", (e) => {
           if ((e as { originalEvent?: Event }).originalEvent) handlers.current.onUserGesture();
         });
-        created.on("dragstart", () => handlers.current.onUserDrag());
-        created.on("moveend", () => handlers.current.onSettle());
-        created.on("click", () => handlers.current.onMapTap());
-        created.on("zoomend", (e) => {
-          if ((e as { originalEvent?: Event }).originalEvent) handlers.current.onUserZoom(created!.getZoom());
+        created.on("moveend", () => handlers.current.onSettle(created!.getZoom()));
+        // The pins are inside the map's layer, so MapLibre hears their taps too; only a
+        // tap on the map itself is "tap away".
+        created.on("click", (e) => {
+          if (e.originalEvent.target === created!.getCanvas()) handlers.current.onMapTap();
         });
         let frame = 0;
         created.on("move", () => {
