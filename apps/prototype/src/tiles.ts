@@ -24,7 +24,7 @@
 const TILE = 256;
 
 /** Metres per pixel at the equator, zoom 0. */
-const EQUATOR_M_PER_PX = 156543.03392804097;
+export const EQUATOR_M_PER_PX = 156543.03392804097;
 
 export interface TilePlan {
   readonly zoom: number;
@@ -151,18 +151,29 @@ export function planTiles(
 }
 
 /**
- * The vector basemap's tiles: one Protomaps archive of the US on Cloudflare R2, set in
- * Vercel as `VITE_MAP_TILES_URL` (DEPLOY.md, "The map"). James chose the navy style and R2
- * hosting on 2026-10-09.
+ * The vector basemap's tiles: the map built by `scripts/build-map.py` from Overture's open
+ * data, around every echo, and served by Vercel from this app's own files.
  *
- * Until it is set, the map falls back to the Esri canvas below, so a deploy without it
- * still has streets. That fallback is a stopgap and not a plan: Esri's tiles are not
- * licensed for a paid app, which is why this exists (`docs/10-blockers.md`).
+ * It was going to be a US-wide Protomaps file on Cloudflare R2, set here through
+ * `VITE_MAP_TILES_URL`. The file was never uploaded, so the live map stayed on Esri's grey
+ * canvas, and James did not want another service or bill (2026-10-12). Building the map
+ * ourselves, only where there are echoes, needs neither. `VITE_MAP_TILES_URL` still wins
+ * when set, for a bigger file kept elsewhere later.
  */
-export const VECTOR_TILES_URL: string | undefined = import.meta.env.VITE_MAP_TILES_URL || undefined;
+export const VECTOR_TILES_URL: string | undefined =
+  import.meta.env.VITE_MAP_TILES_URL ||
+  (typeof location === "undefined" ? undefined : `${location.origin}/map/echoes.pmtiles`);
 
-/** The credit the vector tiles need: OpenStreetMap's data is ODbL, which requires it. */
-export const VECTOR_ATTRIBUTION = "© OpenStreetMap · Protomaps";
+/**
+ * Coastlines, country borders and US state lines, everywhere, at zoom 0 to 7, drawn under
+ * the map above (`scripts/map-tiles.mjs --world`). Without it the map between echo areas,
+ * and the whole "where the echoes are" view, was an empty field.
+ */
+export const WORLD_TILES_URL: string | undefined =
+  typeof location === "undefined" ? undefined : `${location.origin}/map/world.pmtiles`;
+
+/** The credit the map needs: OpenStreetMap's data is ODbL, which requires it. */
+export const VECTOR_ATTRIBUTION = "© OpenStreetMap · Overture Maps";
 
 /**
  * Esri's grey canvas, the fallback while `VITE_MAP_TILES_URL` is unset.

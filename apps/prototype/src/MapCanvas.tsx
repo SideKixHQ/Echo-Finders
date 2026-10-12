@@ -11,18 +11,20 @@
  * are what every phone map feels like, so they do the moving now, and the SVG over the top
  * (pins, route, you) reads its positions from this camera on every frame.
  *
- * The basemap is the navy Protomaps style once its file is on R2 (`DEPLOY.md`, The map),
- * and Esri's raster until then. If MapLibre cannot start (no WebGL), `onReady` never fires
- * and `RouteMap` keeps its own projection and gestures, so the map still works as it did.
+ * The basemap is the navy style over the app's own map file (`scripts/build-map.py`,
+ * `DEPLOY.md` The map), and Esri's raster only if there is no file at all. If MapLibre
+ * cannot start (no WebGL), `onReady` never fires and `RouteMap` keeps its own projection
+ * and gestures, so the map still works as it did.
  */
 
 import { useEffect, useRef } from "react";
 import type { Map as MapLibre } from "maplibre-gl";
+import { WORLD_TILES_URL } from "./tiles";
 import { basemapStyle, rasterStyle, type MapTheme } from "./basemap-style";
 import { glyphs, loadMapLibre } from "./VectorBasemap";
 
 interface Props {
-  /** The Protomaps archive, or null for the Esri stopgap. */
+  /** The map file (PMTiles), or null for the Esri stopgap. */
   readonly tiles: string | null;
   readonly theme: MapTheme;
   /** Where to start, before the first fix: roughly the whole US. */
@@ -54,7 +56,7 @@ interface Props {
 }
 
 const styleFor = (tiles: string | null, theme: MapTheme) =>
-  tiles ? basemapStyle(`pmtiles://${tiles}`, glyphs(), theme) : rasterStyle(theme);
+  tiles ? basemapStyle(`pmtiles://${tiles}`, glyphs(), theme, WORLD_TILES_URL && `pmtiles://${WORLD_TILES_URL}`) : rasterStyle(theme);
 
 export function MapCanvas({ tiles, theme, start, clipTop, onReady, onMove, onUserGesture, onSettle, onMapTap }: Props) {
   const host = useRef<HTMLDivElement>(null);

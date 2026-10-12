@@ -70,7 +70,7 @@ Worth knowing before you judge it, so you spend your attention on the right thin
 | **Simulated** | Your position. A `RouteProfile` walks the route for you, so a fifty-minute walk fits in about three minutes. |
 | **Standing in** | The voice. Your browser reads the script aloud, which is flat and mistimed — the designed narrators are not rendered yet. |
 | **Standing in** | The archive photographs. Drawn, and labelled as such in their own credit line. |
-| **Standing in** | The basemap, until the map file is on R2 (below). Until then the map draws Esri's tiles, which may not be used once the app takes money. |
+| **Real, near echoes** | The basemap: built from Overture's open data around every echo area (below). Between areas the map is the plain navy field. |
 
 ## Two things in the URL
 
@@ -79,50 +79,29 @@ Worth knowing before you judge it, so you spend your attention on the right thin
 
 ## The map
 
-The streets are Protomaps vector tiles (OpenStreetMap data) drawn by MapLibre in the navy
-style, from one file of the whole US kept on Cloudflare R2. James chose the style and the
-host on 2026-10-09. Until the file exists and Vercel knows where it is, the app falls back
-to Esri's tiles, which are not licensed for a paid app: **do this before taking money.**
+The map is built from open data and ships with the app (ADR-0019): streets with their
+names, buildings, water, parks and landmarks, drawn by MapLibre in the navy style. There
+is no map service, no account and nothing to set in Vercel. The file is
+`apps/prototype/public/map/echoes.pmtiles`, and Vercel serves it like any other file.
 
-1. **In Cloudflare**, R2 → Create bucket, e.g. `echo-finders-map`.
-2. **Make the file reachable.** Bucket → Settings → Public access:
-   - For trying it: turn on the `r2.dev` subdomain. Cloudflare rate-limits it and says it is
-     not for production.
-   - For launch: connect a custom domain, e.g. `map.whatishere.com`. This needs that domain's
-     DNS on Cloudflare (the free plan is enough). It also lets Cloudflare's cache serve repeat
-     tiles, so they are not billed as R2 reads.
-3. **CORS.** Bucket → Settings → CORS policy:
+**Adding a city.** After new echoes are in the library, in a new place:
 
-       [{ "AllowedOrigins": ["https://echo-finders.vercel.app"],
-          "AllowedMethods": ["GET", "HEAD"],
-          "AllowedHeaders": ["range", "if-match"],
-          "ExposeHeaders": ["etag"], "MaxAgeSeconds": 3000 }]
+    pip install pyarrow pmtiles
+    python3 scripts/build-streets.py      # the walking directions
+    python3 scripts/build-map.py          # the map
 
-   Add the custom app domain too once there is one. Previews on other `*.vercel.app`
-   addresses will show the plain field unless added.
-4. **Make the file, on a laptop.** Install the `pmtiles` command
-   (https://github.com/protomaps/go-pmtiles/releases), then cut the US out of the latest
-   daily planet build (https://maps.protomaps.com/builds lists the dates):
+Commit both outputs. `build-map.py` takes a few minutes; it reads Overture Maps
+(OpenStreetMap data, ODbL) from Overture's public bucket, only the parts around echoes.
 
-       pmtiles extract https://build.protomaps.com/20261009.pmtiles us.pmtiles --bbox=-125.0,24.4,-66.9,49.4
+**Picking up new streets and buildings.** About once a year, set `OVERTURE_RELEASE` to a
+newer Overture release (https://docs.overturemaps.org/release/latest/) and run both again.
 
-   That box is the lower 48. It downloads only the US, but expect several GB and some
-   time. Alaska and Hawaii need a wider box and are left out for MVP.
-5. **Upload it.** The file is too big for the dashboard's upload button. Make an R2 API
-   token (R2 → Manage API tokens, *Object Read & Write* on this bucket), then use `rclone`
-   (https://developers.cloudflare.com/r2/examples/rclone/):
+**When the file gets big.** Each area adds roughly 0.2 to 2 MB. If the file passes about
+100 MB, move it to Vercel Blob (same Vercel account) and set `VITE_MAP_TILES_URL` in
+Vercel to its address. The app prefers that setting when it exists; no code changes.
 
-       rclone copyto us.pmtiles r2:echo-finders-map/us.pmtiles --s3-upload-cutoff=100M --s3-chunk-size=100M
-
-   The token stays on the laptop. It is not needed by the app and goes nowhere else.
-6. **In Vercel**, add `VITE_MAP_TILES_URL` = the file's public URL, e.g.
-   `https://map.whatishere.com/us.pmtiles` (not secret: it is in the app for anyone to
-   read). Redeploy. The credit under the map changes from *Tiles © Esri* to
-   *© OpenStreetMap · Protomaps*.
-
-Once a year or so, repeat 4 and 5 with a newer build to pick up new streets. The fonts for
-street names ship with the app (`apps/prototype/public/fonts`, Noto Sans, SIL Open Font
-Licence).
+The fonts for street names ship with the app (`apps/prototype/public/fonts`, Noto Sans,
+SIL Open Font Licence). The credit under the map reads *© OpenStreetMap · Overture Maps*.
 
 ## Payments (Stripe)
 

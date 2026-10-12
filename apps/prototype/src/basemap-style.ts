@@ -21,6 +21,9 @@ import type { StyleSpecification, LayerSpecification, ExpressionSpecification } 
 export type MapTheme = "dark" | "light";
 
 interface Palette {
+  /** Land on the world outline, zoomed out. Up close the land is the app's own field. */
+  readonly earth: string;
+  readonly border: string;
   readonly water: string;
   readonly wild: string;
   readonly park: string;
@@ -40,24 +43,34 @@ interface Palette {
 }
 
 const PALETTE: Record<MapTheme, Palette> = {
+  /*
+   * Brighter than it was, a step at a time from the ground up (James, 2026-10-12: "its
+   * hard to see streets and names and buildings"). Every road, building and name used to
+   * sit within a shade or two of the field, which read as atmosphere in a screenshot and
+   * as nothing at all on a phone outdoors. Still navy, still quieter than the pins.
+   */
   dark: {
-    water: "#18245c",
-    wild: "#0f1739",
-    park: "#12313a",
-    plaza: "#131a40",
-    building: "#1a2152",
-    buildingLine: "#242e68",
-    path: "#1a2251",
-    service: "#1f2856",
-    minor: "#28326c",
-    major: "#36428a",
-    highway: "#4150a0",
+    earth: "#1a2354",
+    border: "#3c4890",
+    water: "#1d3778",
+    wild: "#122046",
+    park: "#14403f",
+    plaza: "#1a2350",
+    building: "#232c66",
+    buildingLine: "#36438f",
+    path: "#2e3a7a",
+    service: "#323d7c",
+    minor: "#435094",
+    major: "#5c69b4",
+    highway: "#7280cc",
     casing: null,
-    rail: "#262f66",
-    label: "#5f6aa8",
+    rail: "#3a4585",
+    label: "#b4bdf0",
     halo: "#0b0f2b",
   },
   light: {
+    earth: "#eef0f3",
+    border: "#b9c0cc",
     water: "#c6d3e0",
     wild: "#e9ece9",
     park: "#d9e6d4",
@@ -134,7 +147,7 @@ export function rasterStyle(theme: MapTheme): StyleSpecification {
   };
 }
 
-export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme): StyleSpecification {
+export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme, world?: string): StyleSpecification {
   const p = PALETTE[theme];
   const roads: [id: string, filter: ExpressionSpecification, w: [number, number, number], colour: string][] = [
     ["service", ["all", kind("minor_road"), ["==", ["get", "kind_detail"], "service"]], [0.3, 1.6, 5], p.service],
@@ -143,8 +156,50 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme): St
     ["highway", kind("highway"), [1.6, 6, 17], p.highway],
   ];
 
+  const outline: LayerSpecification[] = world
+    ? [
+        {
+          // Land, zoomed out, so a coast and a continent read against the sea. It fades
+          // as the streets arrive: up close the land is the app's own field, and the
+          // outline is too coarse to sit under a street.
+          id: "earth",
+          type: "fill",
+          source: "world",
+          "source-layer": "earth",
+          paint: { "fill-color": p.earth, "fill-opacity": ["interpolate", ["linear"], ["zoom"], 9, 1, 12, 0] },
+        },
+        {
+          id: "borders-state",
+          type: "line",
+          source: "world",
+          "source-layer": "boundaries",
+          maxzoom: 12,
+          filter: kind("region"),
+          paint: {
+            "line-color": p.border,
+            "line-width": 0.7,
+            "line-dasharray": [3, 2],
+            "line-opacity": ["interpolate", ["linear"], ["zoom"], 9, 0.8, 12, 0],
+          },
+        },
+        {
+          id: "borders-country",
+          type: "line",
+          source: "world",
+          "source-layer": "boundaries",
+          maxzoom: 12,
+          filter: kind("country"),
+          paint: {
+            "line-color": p.border,
+            "line-width": 1.2,
+            "line-opacity": ["interpolate", ["linear"], ["zoom"], 9, 1, 12, 0],
+          },
+        },
+      ]
+    : [];
   const layers: LayerSpecification[] = [
-    // No background and no `earth`: the land is the app's own field, painted underneath.
+    ...outline,
+    // No background: the land is the app's own field, painted underneath.
     {
       id: "wild",
       type: "fill",
@@ -211,7 +266,7 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme): St
         "fill-color": p.building,
         // Faint from a distance, solid on the street, where buildings are how you know
         // which side of the road you are on.
-        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0.25, 16, 0.6, 17.5, 0.9],
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0.45, 16, 0.85, 17.5, 1],
         "fill-outline-color": p.buildingLine,
       },
     },
@@ -296,7 +351,7 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme): St
         "symbol-placement": "line",
         "text-field": ["get", "name"],
         "text-font": [FONT],
-        "text-size": 9,
+        "text-size": 10,
         "text-transform": "uppercase",
         "text-letter-spacing": 0.06,
         "symbol-spacing": 280,
@@ -316,7 +371,7 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme): St
       layout: {
         "text-field": ["get", "name"],
         "text-font": [FONT],
-        "text-size": 9.5,
+        "text-size": ["interpolate", ["linear"], ["zoom"], 16, 10.5, 18, 12],
         "text-max-width": 8,
         "symbol-sort-key": ["coalesce", ["get", "min_zoom"], 99],
         "text-padding": 6,
@@ -335,7 +390,8 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme): St
         "symbol-placement": "line",
         "text-field": ["get", "name"],
         "text-font": [FONT],
-        "text-size": 10,
+        // Readable at arm's length outdoors: 11 at the walking view, 13 on a doorstep.
+        "text-size": ["interpolate", ["linear"], ["zoom"], 14, 10, 16.5, 11.5, 18, 13],
         "text-transform": "uppercase",
         "text-letter-spacing": 0.06,
         "text-max-angle": 30,
@@ -373,6 +429,7 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme): St
         // The tiles' own credit. Shown by the app (`MAP_ATTRIBUTION`), not by MapLibre's control.
         attribution: "© OpenStreetMap",
       },
+      ...(world ? { world: { type: "vector" as const, url: world, attribution: "Natural Earth" } } : {}),
     },
     layers,
   };
