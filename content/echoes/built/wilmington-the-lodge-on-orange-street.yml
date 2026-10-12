@@ -3,7 +3,7 @@
 # Position: South sidewalk of Orange St in front of 116 Orange (Front-2nd block); address point + footprint (high confidence).
 id: wilmington-the-lodge-on-orange-street
 title: "The Lodge on Orange Street"
-summary: "The historic St."
+summary: "The historic St. John's Lodge building dates to 1804."
 place: "Historic St. John's Lodge building, Children's Museum complex, 116 Orange Street, Wilmington, North Carolina"
 at: { lat: 34.23285, lng: -77.94738 }
 triggerRadiusKm: 0.04
@@ -15,7 +15,7 @@ certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "The historic St."
+teaser: "The historic St. John's Lodge building dates to 1804."
 script: |
   The historic St. John's Lodge building dates to 1804. Its later uses included an art
   museum, and it now belongs to the Children's Museum complex.

@@ -3,7 +3,7 @@
 # Position: Directory geocodes 34.23274,-77.94750 (several agree within 20 m); HMDB Hogg-Anderson 110 Orange 34.23277,-77.94777; south Orange St sidewalk between Front and 2nd (medium confidence).
 id: wilmington-art-in-the-old-lodge
 title: "Art in the Old Lodge"
-summary: "In 1962, a community effort established St."
+summary: "In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge on this block."
 place: "Former St. John's Art Museum complex, now Children's Museum, 116 Orange Street, Wilmington, North Carolina"
 at: { lat: 34.23268, lng: -77.94760 }
 triggerRadiusKm: 0.04
@@ -15,7 +15,7 @@ certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "In 1962, a community effort established St."
+teaser: "In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge on this block."
 script: |
   In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge
   on this block.

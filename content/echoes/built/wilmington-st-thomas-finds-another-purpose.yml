@@ -3,7 +3,7 @@
 # Position: HMDB St. Thomas the Apostle Church marker 34 14.055N 77 56.803W; listing lat 34.23413; Dock St south sidewalk east of DeRosset House (high confidence).
 id: wilmington-st-thomas-finds-another-purpose
 title: "St. Thomas Finds Another Purpose"
-summary: "St."
+summary: "St. Thomas Preservation Hall describes its building as a former Catholic church constructed in 1847."
 place: "St. Thomas Preservation Hall, 208 Dock Street, Wilmington, North Carolina"
 at: { lat: 34.23430, lng: -77.94672 }
 triggerRadiusKm: 0.04
@@ -15,7 +15,7 @@ certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "St."
+teaser: "St. Thomas Preservation Hall describes its building as a former Catholic church constructed in 1847."
 script: |
   St. Thomas Preservation Hall describes its building as a former Catholic church
   constructed in 1847. Today it is used as an event venue.

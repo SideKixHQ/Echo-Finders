@@ -3,7 +3,7 @@
 # Position: HMDB marker D-122 coords 34 14.482N 77 56.812W, west side of N 3rd at Red Cross (high confidence).
 id: wilmington-j-allen-kirk-kept-a-record
 title: "J. Allen Kirk Kept a Record"
-summary: "J."
+summary: "J. Allen Kirk came to Wilmington as a Baptist pastor in 1897."
 place: "J. Allen Kirk marker, Third and Red Cross streets, Wilmington, North Carolina"
 at: { lat: 34.24137, lng: -77.94687 }
 triggerRadiusKm: 0.04
@@ -15,7 +15,7 @@ certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "J."
+teaser: "J. Allen Kirk came to Wilmington as a Baptist pastor in 1897."
 script: |
   J. Allen Kirk came to Wilmington as a Baptist pastor in 1897. The following year, the
   coup forced him to seek safety.

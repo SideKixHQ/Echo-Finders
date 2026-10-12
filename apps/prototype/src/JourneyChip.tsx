@@ -272,7 +272,12 @@ function LookSomewhere({ library, onPick }: { readonly library: readonly Echo[];
           }}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={(e) => {
-            if (e.key === "Enter" && hits[0]) onPick(hits[0]);
+            if (e.key !== "Enter" || !hits[0]) return;
+            // Kept here: picking closes the menu and puts focus back on the chip, and the
+            // same Enter then landed on the chip and opened the menu again, over the place
+            // just found (found 2026-10-12). A phone keyboard's Search key is this Enter.
+            e.preventDefault();
+            onPick(hits[0]);
           }}
         />
       </label>

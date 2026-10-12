@@ -43,11 +43,16 @@ export interface ClusterDotProps {
   /** Whether a tap zooms the map in on the pile, rather than fanning it out where it is. */
   readonly zooms?: boolean;
   readonly onOpen: () => void;
+  /** Mouse hover in and out, for the map's label (`RouteMap`). */
+  readonly hover?: {
+    readonly onPointerEnter: (e: React.PointerEvent) => void;
+    readonly onPointerLeave: () => void;
+  };
 }
 
 const RANK = { singular: 0, rare: 1, uncommon: 2, common: 3 } as const;
 
-function ClusterDotInner({ x, y, members, zooms = false, onOpen }: ClusterDotProps) {
+function ClusterDotInner({ x, y, members, zooms = false, onOpen, hover }: ClusterDotProps) {
   /*
    * The best one in the pile decides how the pile looks. Sorted rather than scanned for a
    * maximum because the label wants the same answer: "3 rare" is a different invitation
@@ -73,6 +78,7 @@ function ClusterDotInner({ x, y, members, zooms = false, onOpen }: ClusterDotPro
       className={`clus clus-${rarity} cat-${best.category}`}
       transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`}
       onClick={onOpen}
+      {...hover}
       role="button"
       /*
        * Said out loud, because a screen reader meeting a number in a circle learns
