@@ -46,7 +46,7 @@ App Store revenue passes $1M.
 | Error reporting (Sentry) | $26 |
 | Database for accounts (Supabase), once accounts exist | $25 |
 | Sign-in email (magic links) | about $20 |
-| Storage for audio and the map file (Cloudflare R2) | $1 to $5 |
+| Storage for audio (Cloudflare R2); the map ships with the app | $1 to $5 |
 | Domain | about $2 |
 | ElevenLabs Pro, while voicing new echoes (pause between batches) | about $99 |
 | Apple Developer Program, only if native | about $8 |
@@ -68,12 +68,13 @@ dominate.
    offline flights need). At 100,000 listeners that is thousands of dollars a month, and a
    City Pass, paid once, would keep costing money for ever. **Fix: an open basemap
    (OpenStreetMap data, drawn by MapLibre), which costs cents.** Required before taking
-   money. *Built (2026-10-10): Protomaps tiles from one US file on Cloudflare R2, in the
-   navy style. It switches on when the file is uploaded and `VITE_MAP_TILES_URL` is set
-   (`DEPLOY.md`, The map); until then the app still draws Esri.* Its running cost is R2
-   reads, one per map tile a phone fetches: free for the first 10 million a month, then
-   $0.36 per million, and repeat tiles served from Cloudflare's cache are not billed. The
-   scale table below carries it.
+   money. *Built (2026-10-10) and settled (2026-10-12, ADR-0019): the map is built from
+   Overture's open data around every echo (`scripts/build-map.py`) and served with the app
+   from Vercel. No map service and no tile bill.* Its running cost is Vercel bandwidth: a
+   phone fetches a few hundred KB to a few MB of map per area, and keeps it. That is inside
+   the plan's included transfer (1 TB a month on Pro) until well past 100,000 listeners;
+   beyond it Vercel bills about $0.15 per GB, and moving the file to a host with free
+   egress (R2) is the saving then. The scale table below carries it.
 2. **A native iOS app.** If the screen-lock test fails and walking needs a real app, App
    Store sales pay Apple 15%: still over 80% (table above). Keep selling on the web too.
 3. **Sales tax and VAT.** US only: tax is added on top at checkout, so it is not a cost.
@@ -138,17 +139,17 @@ content is precompiled, so the MVP genuinely has no backend to pay for.
 | R2 storage — 5 GB library | $0.08 |
 | R2 read operations — ~1.5M | $0.54 |
 | R2 egress | **$0** |
-| Protomaps basemap extract, self-hosted on R2 (storage) | ~$0.25 |
-| R2 reads for map tiles: ~10–40M, one per tile a phone fetches, fewer behind Cloudflare's cache *(estimate, added 2026-10-10)* | $4 to $15 |
+| The map, served with the app from Vercel: ~2–5 MB per listener a month, ~200–500 GB, inside Pro's 1 TB *(estimate, 2026-10-12)* | $0 |
 | Vercel Pro | $20 |
 | Sentry | $26 |
 | Supabase Pro *(only once accounts or sync exist)* | $25 |
 | Domain | $1.50 |
-| **Total** | **≈ $80 to $90/month** |
+| **Total** | **≈ $75/month** |
 
-At a million listeners this rises to roughly $150 to $250. The only lines that scale are
-bucket reads, at $0.36 per million, and map tiles are most of them; putting the map file
-behind a custom domain so Cloudflare caches it is what keeps that at the low end.
+At a million listeners this rises to roughly $150 to $250, plus the map's bandwidth: about
+2 to 5 TB a month, of which the part past Pro's 1 TB is billed at about $0.15 per GB
+($150 to $600). Before then, move the map file to a host with free egress (R2) and set
+`VITE_MAP_TILES_URL`; the app needs no change.
 
 ## One-time, to build the library
 
@@ -262,7 +263,8 @@ would end it, and three are already decided correctly:
    at 100k listeners — more than three times the rest of the bill combined, and the single
    largest line item on this page. Self-hosting a Protomaps extract on R2 costs cents and
    sidesteps the offline-caching licence problem at the same time (already flagged in
-   `01-services.md`). *Decided 2026-10-09: Protomaps on R2, built 2026-10-10.*
+   `01-services.md`). *Decided 2026-10-09; settled 2026-10-12 (ADR-0019): built from
+   Overture's open data and served with the app.*
 2. **Any runtime model call.** Generating or ranking anything per-listener turns a fixed cost
    into a per-user one. ADR-0003 already forbids it, for bandwidth reasons; the economics
    agree.

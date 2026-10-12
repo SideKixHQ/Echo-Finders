@@ -33,7 +33,7 @@ import {
   type EchoCluster,
   type LatLng,
 } from "@echofinders/core";
-import { TILE_ATTRIBUTION, TILE_URL, VECTOR_ATTRIBUTION, VECTOR_TILES_URL, cameraFor, planTiles, toWorld } from "./tiles";
+import { EQUATOR_M_PER_PX, TILE_ATTRIBUTION, TILE_URL, VECTOR_ATTRIBUTION, VECTOR_TILES_URL, cameraFor, planTiles, toWorld } from "./tiles";
 import { VectorBasemap } from "./VectorBasemap";
 
 export interface CityProps {
@@ -88,6 +88,27 @@ export function City({ library, at, theme, onClose, onGo }: CityProps) {
     return Math.max(2, reach * 2.4);
   }, [library]);
 
+  /*
+   * And a ceiling: no further out than the map underneath can go.
+   *
+   * MapLibre will not draw the world shorter than its box. Asked for a view from North
+   * Carolina to Edinburgh on a phone, it zoomed in a little and re-centred on the equator,
+   * while the blooms kept the view they were given, so North Carolina's glow sat over
+   * Central America (found 2026-10-12, the first time this view drew the map). Past the
+   * ceiling the furthest places sit off the edges, and the card still names the nearest.
+   */
+  const viewKm = useMemo(() => {
+    if (!VECTOR_TILES_URL) return spanKm;
+    const first = clusterEchoes(library, JOIN_KM);
+    const lat = first.length ? mean(first.map((c) => c.at)).lat : 0;
+    // The world is S pixels tall. Half a screen must fit above the centre and half below
+    // it, or MapLibre moves the centre: S >= (H / 2) / the centre's share of the way down.
+    const down = toWorld(lat, 0, 0).y / 256;
+    const S = (H / 2 / Math.min(down, 1 - down)) * 1.05;
+    const metresPerPx = (EQUATOR_M_PER_PX * Math.cos((lat * Math.PI) / 180) * 256) / S;
+    return Math.min(spanKm, (W * metresPerPx) / 1000);
+  }, [library, spanKm]);
+
   const clusters = useMemo(
     () => clusterEchoes(library, Math.max(JOIN_KM, spanKm / 30)),
     [library, spanKm],
@@ -119,7 +140,7 @@ export function City({ library, at, theme, onClose, onGo }: CityProps) {
     const centre = mean(points);
     const plan = planTiles(
       centre,
-      spanKm,
+      viewKm,
       W,
       BOTTOM - TOP,
       { x: 0, y: TOP, w: W, h: H - TOP - BOTTOM },
@@ -134,9 +155,9 @@ export function City({ library, at, theme, onClose, onGo }: CityProps) {
       };
     };
     // Metres per pixel, so a bloom can be sized in metres rather than in guesses.
-    const mPerPx = (spanKm * 1000) / W;
+    const mPerPx = (viewKm * 1000) / W;
     return { plan, project, mPerPx };
-  }, [clusters]);
+  }, [clusters, viewKm]);
 
   /*
    * The one to offer. Nearest to the listener when there is a fix, biggest otherwise —

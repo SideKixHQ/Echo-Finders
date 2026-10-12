@@ -14,6 +14,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { Map as MapLibre } from "maplibre-gl";
+import { WORLD_TILES_URL } from "./tiles";
 import { basemapStyle, type MapTheme } from "./basemap-style";
 
 export interface Camera {
@@ -103,7 +104,7 @@ export function VectorBasemap({
         const at = latest.current;
         created = new maplibre.Map({
           container: host.current,
-          style: basemapStyle(`pmtiles://${tiles}`, glyphs(), theme),
+          style: basemapStyle(`pmtiles://${tiles}`, glyphs(), theme, WORLD_TILES_URL && `pmtiles://${WORLD_TILES_URL}`),
           center: at ? [at.lng, at.lat] : [-98.5, 39.8],
           zoom: at?.zoom ?? 3,
           interactive: false,
@@ -131,7 +132,7 @@ export function VectorBasemap({
   }, [tiles]);
 
   useEffect(() => {
-    map?.setStyle(basemapStyle(`pmtiles://${tiles}`, glyphs(), theme));
+    map?.setStyle(basemapStyle(`pmtiles://${tiles}`, glyphs(), theme, WORLD_TILES_URL && `pmtiles://${WORLD_TILES_URL}`));
   }, [map, theme, tiles]);
 
   useEffect(() => {
