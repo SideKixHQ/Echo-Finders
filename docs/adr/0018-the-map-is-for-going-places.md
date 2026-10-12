@@ -46,9 +46,17 @@ missing piece between them.
    phone, with buildings, street and path names and landmarks. You can zoom out to a whole
    town and in to a doorway.
 3. **Following.**
-   - The map follows you until you drag it.
-   - Pinching only changes the scale; it does not stop following.
-   - "Back to where I am" picks the following back up, at the zoom you chose.
+   - The map follows you until you move it: a drag, a pinch, a double tap or a tap on a
+     numbered dot.
+   - "Back to where I am" picks the following back up.
+   - Amended 2026-10-12. This said a pinch only changes the scale and does not stop
+     following. On a phone that made the map fight you: pinch in on echoes down the street,
+     and the next GPS fix, about a second later, pulled the map back to your dot (James:
+     "i have a tough time zooming in to find an echo then going there").
+   - The pins are drawn inside MapLibre's layer, so a gesture that starts on a pin still
+     moves the map. Over it, they swallowed every pinch and drag that began on one.
+   - A numbered dot zooms in until its echoes come apart. It fans them out in place only
+     when they stand within 25 m of each other, where zooming cannot separate them.
 4. **Directions on the phone, not from a service.**
    - A hosted router would charge for every "take me there" and needs a network that a
      flight or a basement does not have (`02-costs.md`).

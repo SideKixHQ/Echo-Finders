@@ -337,7 +337,9 @@ body {
 }
 
 .pin { cursor: pointer; }
-.pin-radius { fill: rgba(255, 158, 18, 0.05); stroke: rgba(255, 158, 18, 0.28); stroke-width: 1; stroke-dasharray: 3 3; }
+/* Drawn, never tapped: at street level the 40 m circle is half the screen, and as part of
+   the pin it caught every tap meant for the map, so tapping away re-opened the card. */
+.pin-radius { fill: rgba(255, 158, 18, 0.05); stroke: rgba(255, 158, 18, 0.28); stroke-width: 1; stroke-dasharray: 3 3; pointer-events: none; }
 
 /* Two contours outside the pin rather than three around a dot: the mark's language kept,
    at a size that leaves the category ring room to be the thing you actually read. */
@@ -4637,7 +4639,9 @@ body {
 :root[data-theme="light"] .map-canvas { background: var(--space); }
 /* Sized rather than inset: MapLibre sets `position: relative` on its container. */
 .map-canvas-gl { width: 100%; height: 100%; }
-.map-live { pointer-events: none; }
+/* Inside MapLibre's layer (see `inMap` in `RouteMap.tsx`), so MapLibre takes every gesture,
+   including one that starts on a pin; the browser takes none of them. */
+.map-live { pointer-events: none; touch-action: none; }
 .map-live .pin, .map-live .clus, .map-live .map-edge, .map-live .fan-backdrop, .map-live .fan-pop {
   pointer-events: auto;
 }

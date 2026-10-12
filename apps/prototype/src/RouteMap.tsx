@@ -21,6 +21,7 @@
  */
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { CATEGORY_ICON, CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, characterFor } from "./Echo";
 import { ClusterDot, FAN_GAP, GROUP_PX } from "./PinCluster";
@@ -305,6 +306,11 @@ const insetFor = (barH: number, reservedBottom: number, navH: number) => ({
   side: 30,
 });
 
+/** Echoes closer than this stay one dot however far in you go: tapping it fans them out. */
+const SAME_SPOT_M = 25;
+/** How far in a tap on a numbered dot will take the map: a building or two across. */
+const MAX_MAP_ZOOM = 19;
+
 export function RouteMap({
   route,
   mode,
@@ -386,6 +392,73 @@ export function RouteMap({
   const [frame, setFrame] = useState(0);
   /** A finger (or a wheel) is moving the map right now. */
   const gesturing = useRef(false);
+
+  /*
+   * HOLD WHAT IS UNDER A FINGER UNTIL IT LIFTS.
+   *
+   * A touch is delivered to the element it started on for as long as it lasts, and if that
+   * element leaves the page the rest of the touch goes nowhere: not to MapLibre, which
+   * listens on its own layer, and not to anything else. Pinch on a numbered dot, the dot
+   * comes apart into pins halfway through (it is meant to), and the lift of your fingers
+   * was never heard, so the map believed they were still down: frozen mid-gesture, and the
+   * app never told the zoom had changed (found 2026-10-12, in a touch walk-through).
+   *
+   * So while any finger is down the pins keep the groups they had when it landed and only
+   * move with the map; they regroup when the last finger lifts. An open fan stays open
+   * until the map settles, for the same reason. And should something under a finger still
+   * go (an edge marker whose echo comes on screen), its own touch events are handed to
+   * MapLibre directly, because the element itself still hears them.
+   */
+  const heldGroups = useRef<string[][] | null>(null);
+  const groupsNow = useRef<readonly { members: readonly { item: Echo }[] }[]>([]);
+  const [hold, setHold] = useState(0);
+  const closeFanOnSettle = useRef(false);
+  useEffect(() => {
+    if (!gl) return;
+    const layer = gl.getCanvasContainer();
+    const handleEvent = (gl as unknown as { _handlers?: { handleEvent?: (e: Event) => void } })._handlers
+      ?.handleEvent;
+    const release = (e: TouchEvent) => {
+      if (e.touches.length > 0 || !heldGroups.current) return;
+      heldGroups.current = null;
+      setHold((h) => h + 1);
+    };
+    const holdUnder = (e: TouchEvent) => {
+      if (!heldGroups.current) {
+        heldGroups.current = groupsNow.current.map((g) => g.members.map((m) => m.item.id));
+        setHold((h) => h + 1);
+      }
+      const target = e.target;
+      if (!(target instanceof Element) || target === gl.getCanvas()) return;
+      const orphaned = (ev: Event) => {
+        const t = ev as TouchEvent;
+        if (target.isConnected) return;
+        handleEvent?.(t);
+        if (t.type !== "touchmove") release(t);
+      };
+      const done = (ev: Event) => {
+        if ((ev as TouchEvent).touches.length > 0) return;
+        target.removeEventListener("touchmove", orphaned);
+        target.removeEventListener("touchend", orphaned);
+        target.removeEventListener("touchcancel", orphaned);
+        target.removeEventListener("touchend", done);
+        target.removeEventListener("touchcancel", done);
+      };
+      target.addEventListener("touchmove", orphaned, { passive: true });
+      target.addEventListener("touchend", orphaned);
+      target.addEventListener("touchcancel", orphaned);
+      target.addEventListener("touchend", done);
+      target.addEventListener("touchcancel", done);
+    };
+    layer.addEventListener("touchstart", holdUnder, { capture: true, passive: true });
+    layer.addEventListener("touchend", release);
+    layer.addEventListener("touchcancel", release);
+    return () => {
+      layer.removeEventListener("touchstart", holdUnder, { capture: true });
+      layer.removeEventListener("touchend", release);
+      layer.removeEventListener("touchcancel", release);
+    };
+  }, [gl]);
 
   const setZoom = useCallback(
     (next: number | ((z: number) => number)) => {
@@ -499,6 +572,16 @@ export function RouteMap({
    * this is built and reviewed.
    */
   const svg = useRef<SVGSVGElement | null>(null);
+  /*
+   * The same element as state, so the measuring effects below run again when it changes.
+   * It does change, once: the SVG moves inside MapLibre's own layer when the map starts
+   * (see the return), which makes it a new element.
+   */
+  const [svgEl, setSvgEl] = useState<SVGSVGElement | null>(null);
+  const svgRef = useCallback((node: SVGSVGElement | null) => {
+    svg.current = node;
+    setSvgEl(node);
+  }, []);
 
   /**
    * The map's own size, in CSS pixels, so the viewBox can be it.
@@ -522,7 +605,7 @@ export function RouteMap({
     });
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
+  }, [svgEl]);
 
   /**
    * How much of the top the chrome is actually taking, measured rather than declared.
@@ -555,7 +638,7 @@ export function RouteMap({
     observer.observe(bar);
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
+  }, [svgEl]);
 
   /** The tab bar's real height: from its top edge to the map's bottom. See `NAV_FALLBACK`. */
   const [navH, setNavH] = useState(NAV_FALLBACK);
@@ -576,7 +659,7 @@ export function RouteMap({
     observer.observe(nav);
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
+  }, [svgEl]);
 
   /**
    * The control column's real top, in map pixels, or null before it has been measured.
@@ -629,7 +712,7 @@ export function RouteMap({
       sizes.disconnect();
       rail?.removeEventListener("transitionend", measure);
     };
-  }, []);
+  }, [svgEl]);
 
   useEffect(() => {
     const el = svg.current;
@@ -642,7 +725,7 @@ export function RouteMap({
     };
     el.addEventListener("wheel", onWheel, { passive: false });
     return () => el.removeEventListener("wheel", onWheel);
-  }, [setZoom, gl]);
+  }, [setZoom, gl, svgEl]);
 
   /*
    * Built once per route. It was built twice for every position fix — once in the
@@ -872,17 +955,36 @@ export function RouteMap({
    * it loosens by itself as somebody zooms in: two echoes a hundred metres apart are one
    * dot at city scale and two pins in a street.
    */
-  const groups = useMemo(
-    () =>
-      clusterPoints(
-        library.map((echo) => {
-          const { x, y } = projection(echo.point.at);
-          return { item: echo, x, y };
-        }),
-        GROUP_PX,
-      ),
-    [library, projection],
-  );
+  const groups = useMemo(() => {
+    const placed = library.map((echo) => {
+      const { x, y } = projection(echo.point.at);
+      return { item: echo, x, y };
+    });
+    const held = heldGroups.current;
+    if (!held) return clusterPoints(placed, GROUP_PX);
+    /*
+     * A finger is down: the same groups as when it landed, only moved. See `holdUnder`.
+     * Centred on the mean of their members, as `clusterPoints` centres them.
+     */
+    const byId = new Map(placed.map((p) => [p.item.id, p]));
+    const used = new Set<string>();
+    const out: { x: number; y: number; members: typeof placed }[] = [];
+    for (const ids of held) {
+      const members = ids.flatMap((id) => byId.get(id) ?? []);
+      if (members.length === 0) continue;
+      for (const m of members) used.add(m.item.id);
+      out.push({
+        x: members.reduce((t, m) => t + m.x, 0) / members.length,
+        y: members.reduce((t, m) => t + m.y, 0) / members.length,
+        members,
+      });
+    }
+    for (const p of placed) if (!used.has(p.item.id)) out.push({ x: p.x, y: p.y, members: [p] });
+    return out;
+    // `hold` is in the list because the groups to keep are read from a ref.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [library, projection, hold]);
+  groupsNow.current = groups;
 
   /**
    * Bring the stepper's echo to the middle, and open its group if it is in one.
@@ -932,9 +1034,10 @@ export function RouteMap({
    *
    * Three things decide where it looks, in this order: the whole journey (`overview`, or
    * before there is any fix), somewhere searched for (`lookAt`), and otherwise you. It
-   * follows you until a drag says otherwise (`pan` stops being zero), and the recentre
-   * button sets `pan` back to zero, which is the whole of "follow me" again. The zoom the
-   * listener chose is kept throughout: following moves the map, never the scale.
+   * follows you until a drag, a pinch or a double tap says otherwise (`pan` stops being
+   * zero), and the recentre button sets `pan` back to zero, which is the whole of "follow
+   * me" again. The zoom the listener chose is kept throughout: following moves the map,
+   * never the scale.
    *
    * Centred in the band the chips and the bar leave visible, not in the middle of the
    * screen, so "you" is never under the bottom bar.
@@ -1065,9 +1168,14 @@ export function RouteMap({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gl, at?.lat, at?.lng, overview, lookAt, following, base, bandOffset, directions]);
 
-  // The zoom buttons, and anything else that sets the zoom from outside the map.
+  // Anything that sets the zoom from outside the map. Not the map reporting its own.
+  const synced = useRef<number | null>(null);
   useEffect(() => {
     if (!gl) return;
+    if (synced.current === zoom) {
+      synced.current = null;
+      return;
+    }
     const target = base + Math.log2(zoom);
     if (Math.abs(gl.getZoom() - target) < 0.02) return;
     if (following && at && !overview && !lookAt) {
@@ -1156,31 +1264,46 @@ export function RouteMap({
     const railBottom = box.h - (navH + reservedBottom + 12);
     const railTop = railTopPx ?? railBottom - RAIL_H;
     const floor = barH + 40;
-    let lastY = -Infinity;
-    return shown.map((mark) => {
-      let y = mark.y;
+    const ceiling = box.h - navH - 80;
+    /*
+     * Each plate takes a 40px slot on its own side. A right-hand plate is never allowed
+     * onto the column, and when its slot is taken it goes UP, away from the column.
+     *
+     * Plates used to be separated by pushing each one 40px below the last. The first
+     * snapped just above the column, so the second and third were pushed straight down
+     * onto the sonar and hum buttons: three "150 M" plates with the buttons drawn through
+     * them (found 2026-10-12, zoomed in on Wilmington).
+     */
+    const onColumn = (y: number) => y + 17 > railTop - 24 && y - 17 < railBottom + 18;
+    const taken: { side: "left" | "right"; y: number }[] = [];
+    const free = (side: "left" | "right", y: number) =>
+      taken.every((t) => t.side !== side || Math.abs(t.y - y) >= 40) && !(side === "right" && onColumn(y));
+    const placed: (EdgeMark & { y: number })[] = [];
+    for (const mark of shown) {
       /*
-       * The plate is 34 tall: its bottom sits the rail's own 10px above the column.
-       *
-       * Snapped from 24px out, not only on overlap. It used to snap only when the plate
-       * would cover the column, so a marker whose echo landed just above it stayed where it
-       * fell: 15.7px up, which reads as a 10px gap done badly, and anything from 1 to 9px up
-       * sat nearly touching. Within 24px it lines up exactly; beyond that it is plainly its
-       * own thing and keeps its true bearing.
+       * Snapped to sit the rail's own 10px above the column when it lands near it, rather
+       * than 1 to 9px off it, which reads as nearly touching. A snapped plate only has to
+       * clear the top bar by the same 10px.
        */
-      let snapped = false;
-      if (mark.side === "right" && y + 17 > railTop - 24 && y < railBottom + 18) {
-        y = railTop - 17 - 10;
-        snapped = true;
+      const want = mark.side === "right" && onColumn(mark.y) ? railTop - 17 - 10 : mark.y;
+      const low = mark.side === "right" && want === railTop - 17 - 10 ? barH + 17 + 10 : floor;
+      let y: number | null = null;
+      for (let k = 0; k < 12 && y === null; k++) {
+        // The nearest free slot: here, then above, then below, widening.
+        for (const step of k === 0 ? [0] : [-k, k]) {
+          const slot = want + step * 40;
+          if (slot >= low && slot <= ceiling && free(mark.side, slot)) {
+            y = slot;
+            break;
+          }
+        }
       }
-      if (y - lastY < 40) y = lastY + 40;
-      // A snapped plate only has to clear the top bar by the same 10px. On a short map (an
-      // iPhone SE) the column starts high enough that the usual floor would pull it 4px
-      // down onto the column, which is the nearly-touching gap the snap exists to prevent.
-      y = Math.max(snapped ? barH + 17 + 10 : floor, y);
-      lastY = y;
-      return { ...mark, y };
-    });
+      // No room left on this side of a short screen: leave it out rather than cover a button.
+      if (y === null) continue;
+      taken.push({ side: mark.side, y });
+      placed.push({ ...mark, y });
+    }
+    return placed;
   }, [at, overview, lookAt, library, stateOf, projection, box, zoom, barH, reservedBottom, navH, railTopPx]);
 
   /**
@@ -1343,6 +1466,55 @@ export function RouteMap({
       );
   };
 
+  /*
+   * A numbered dot is a place you have not zoomed in on yet, so tapping it zooms in.
+   *
+   * It used to fan the pile out round the dot at every zoom. With a dozen echoes across
+   * three streets that is a ring of pins in the wrong places, and the map you were trying
+   * to read never got any closer (James, 2026-10-12: "i have a tough time zooming in to
+   * find an echo"). Now the map closes in on the pile until it comes apart, as every map
+   * app's clusters do. The fan stays for what zooming cannot separate: echoes standing
+   * within a few metres of each other, like eight stories in one house.
+   */
+  const splits = (members: readonly Echo[]) => {
+    if (!gl || members.length < 2) return false;
+    let spread = 0;
+    for (let i = 0; i < members.length; i++)
+      for (let j = i + 1; j < members.length; j++)
+        spread = Math.max(spread, distanceKm(members[i]!.point.at, members[j]!.point.at));
+    // At the closest the map goes, 25 m is about a thumb and a half apart.
+    if (spread * 1000 < SAME_SPOT_M) return false;
+    return gl.getZoom() < MAX_MAP_ZOOM - 0.25;
+  };
+  const zoomInto = (members: readonly Echo[]) => {
+    if (!gl) return;
+    const lngs = members.map((m) => m.point.at.lng);
+    const lats = members.map((m) => m.point.at.lat);
+    const inset = insetFor(barH, reservedBottom, navH);
+    gl.fitBounds(
+      [
+        [Math.min(...lngs), Math.min(...lats)],
+        [Math.max(...lngs), Math.max(...lats)],
+      ],
+      // Clear of the chips, the bottom bar and the button column, with a pin's width spare.
+      { padding: { top: inset.top + 24, bottom: inset.bottom + 24, left: 48, right: 96 }, maxZoom: MAX_MAP_ZOOM, duration: 450 },
+    );
+    // You chose where to look; the next GPS fix should not take it back.
+    if (pan.x === 0 && pan.y === 0) onPan({ x: 1, y: 0 });
+  };
+
+  /*
+   * The pins live INSIDE MapLibre's layer once it is running, not over it.
+   *
+   * MapLibre only counts a finger that lands inside its own container. Drawn over it, a
+   * pin took the touch for itself, so a pinch or a drag that began on a pin or a numbered
+   * dot did nothing at all, and where echoes are thick that is most of the screen (James,
+   * 2026-10-12: "i have a tough time zooming in to find an echo"). Inside, a touch on a
+   * pin still taps the pin and still moves the map; a tap is told apart by MapLibre's own
+   * click, which only closes cards when it landed on the map itself (`MapCanvas`).
+   */
+  const inMap = (node: React.ReactElement) => (gl ? createPortal(node, gl.getCanvasContainer()) : node);
+
   return (
     <>
     <MapCanvas
@@ -1358,21 +1530,33 @@ export function RouteMap({
       onMove={() => setFrame((f) => f + 1)}
       onUserGesture={() => {
         gesturing.current = true;
-        setOpenCluster(null);
-      }}
-      onSettle={() => {
-        gesturing.current = false;
-      }}
-      onUserDrag={() => {
+        // Not now: a finger may be on one of its pins. When the map comes to rest.
+        closeFanOnSettle.current = true;
         if (pan.x === 0 && pan.y === 0) onPan({ x: 1, y: 0 });
+      }}
+      onSettle={(mapZoom) => {
+        gesturing.current = false;
+        if (closeFanOnSettle.current) {
+          closeFanOnSettle.current = false;
+          setOpenCluster(null);
+        }
+        /*
+         * Whatever moved it (a pinch, a tap on a numbered dot, a framing), the zoom the
+         * rest of the app reads is the zoom on screen. Only a pinch used to report it, so
+         * after a tap on a dot zoomed in, the app still thought it was zoomed out.
+         */
+        const rel = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, 2 ** (mapZoom - base)));
+        if (Math.abs(rel - zoom) > 1e-3) {
+          synced.current = rel;
+          onZoom(rel);
+        }
       }}
       onMapTap={() => {
         setOpenCluster(null);
         onBackgroundTap?.();
       }}
-      onUserZoom={(z) => onZoom(Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, 2 ** (z - base))))}
     />
-    <svg
+    {inMap(<svg
       /* `map-focusing` dims everything that is not the echo the arrows are on. The
          bloom alone is not enough on a map of twenty six pins: it says "this one is
          special" where the job is to say "this one, and you can ignore the rest". */
@@ -1387,7 +1571,7 @@ export function RouteMap({
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
       onPointerCancel={onPointerUp}
-      ref={svg}
+      ref={svgRef}
     >
       <defs>
         {/*
@@ -1649,6 +1833,7 @@ export function RouteMap({
       */}
       {groups.map((group) => {
         const first = group.members[0]!.item;
+        const zoomable = splits(group.members.map((m) => m.item));
         if (group.members.length === 1) return renderPin(first, group.x, group.y);
         /*
          * Whether a group is open is answered at render time from the group that is
@@ -1664,7 +1849,8 @@ export function RouteMap({
               x={group.x}
               y={group.y}
               members={group.members.map((m) => m.item)}
-              onOpen={() => setOpenCluster(first.id)}
+              zooms={zoomable}
+              onOpen={() => (zoomable ? zoomInto(group.members.map((m) => m.item)) : setOpenCluster(first.id))}
             />
           );
         }
@@ -1848,7 +2034,7 @@ export function RouteMap({
           </g>
         );
       })}
-    </svg>
+    </svg>)}
     </>
   );
 }

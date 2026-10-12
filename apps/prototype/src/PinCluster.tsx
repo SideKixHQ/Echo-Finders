@@ -40,12 +40,14 @@ export interface ClusterDotProps {
   readonly x: number;
   readonly y: number;
   readonly members: readonly Echo[];
+  /** Whether a tap zooms the map in on the pile, rather than fanning it out where it is. */
+  readonly zooms?: boolean;
   readonly onOpen: () => void;
 }
 
 const RANK = { singular: 0, rare: 1, uncommon: 2, common: 3 } as const;
 
-function ClusterDotInner({ x, y, members, onOpen }: ClusterDotProps) {
+function ClusterDotInner({ x, y, members, zooms = false, onOpen }: ClusterDotProps) {
   /*
    * The best one in the pile decides how the pile looks. Sorted rather than scanned for a
    * maximum because the label wants the same answer: "3 rare" is a different invitation
@@ -76,11 +78,9 @@ function ClusterDotInner({ x, y, members, onOpen }: ClusterDotProps) {
        * Said out loud, because a screen reader meeting a number in a circle learns
        * nothing. The count and what it is worth, then how to get at it.
        */
-      aria-label={
-        rarity === "singular" || rarity === "rare"
-          ? `${n} echoes here, including a ${rarity} one. Tap to spread them out.`
-          : `${n} echoes here. Tap to spread them out.`
-      }
+      aria-label={`${n} echoes here${rarity === "singular" || rarity === "rare" ? `, including a ${rarity} one` : ""}. ${
+        zooms ? "Tap to zoom in." : "Tap to spread them out."
+      }`}
     >
       {/* The same invisible 44 every pin gets, so a group is never harder to hit than
           one of the things inside it. */}
