@@ -3072,7 +3072,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-art-in-the-old-lodge",
     "title": "Art in the Old Lodge",
-    "summary": "In 1962, a community effort established St.",
+    "summary": "In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge on this block.",
     "point": {
       "at": {
         "lat": 34.23268,
@@ -3107,7 +3107,7 @@ export const LIBRARY: readonly Echo[] = [
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge\non this block.\n\nArtists and supporters wanted Wilmington to have a place to encounter visual art. The\ninstitution grew into the museum that later moved to its present Cameron Art Museum\nlocation outside downtown.\n\nThe downtown buildings gained another use: the Children's Museum acquired the complex in\n2004. You are at the earlier art-museum setting, not Cameron Art Museum today.\n\nLook at the old buildings from Orange Street. Their cultural work has changed, but the\nimpulse remains recognizable: make spaces where people can look, learn, and try\nsomething new. The art gallery's beginnings belong here, even though the institution\ncontinued its journey elsewhere.\n",
-    "teaser": "In 1962, a community effort established St.",
+    "teaser": "In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge on this block.",
     "tags": [
       "wilmington",
       "downtown"
@@ -3446,7 +3446,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-elizabeth-savage-latimers-wilmington",
     "title": "Elizabeth Savage Latimer's Wilmington",
-    "summary": "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St.",
+    "summary": "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St. James in 1848.",
     "point": {
       "at": {
         "lat": 34.23361,
@@ -3474,7 +3474,7 @@ export const LIBRARY: readonly Echo[] = [
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St.\nJames in 1848. The house built four years later became their family residence.\n\nHer local background complicates the idea of the house as simply the achievement of a\nmerchant who arrived from elsewhere. Family relationships tied it to a city that already\nhad its own networks and histories.\n\nStand outside the home and consider what is left unnamed when a household is introduced\nonly by its male owner. A marriage and a family are not incidental to a residence's\nmeaning.\n\nElizabeth's story supplies a different connection between the building and Wilmington.\nThe house represented shared family life, shaped by her place in the community as well\nas her husband's commercial career.\n",
-    "teaser": "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St.",
+    "teaser": "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St. James in 1848.",
     "tags": [
       "wilmington",
       "downtown"
@@ -3534,7 +3534,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-fords-other-opera-house",
     "title": "Ford's Other Opera House",
-    "summary": "John T.",
+    "summary": "John T. Ford, associated with Ford's Theatre in Washington, leased this Wilmington theater from 1867 to 1871.",
     "point": {
       "at": {
         "lat": 34.23766,
@@ -3562,7 +3562,7 @@ export const LIBRARY: readonly Echo[] = [
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "John T. Ford, associated with Ford's Theatre in Washington, leased this Wilmington\ntheater from 1867 to 1871. During his tenure, it was called the Opera House.\n\nThe connection can surprise visitors who know Ford's name only through Abraham Lincoln's\nassassination. This story concerns his theatrical business in Wilmington, not a claim\nthat the Washington crime happened here.\n\nNames and management changed while the local building continued hosting entertainment.\nIts history reaches through people whose careers crossed several cities.\n\nLook at the entrance and imagine a playbill announcing the Opera House rather than\nThalian Hall. A different title could mark a different business strategy without moving\nthe stage. The theater's long life includes those shifts: familiar walls, new operators,\nand another invitation to an audience.\n",
-    "teaser": "John T.",
+    "teaser": "John T. Ford, associated with Ford's Theatre in Washington, leased this Wilmington theater from 1867 to 1871.",
     "tags": [
       "wilmington",
       "downtown"
@@ -3952,7 +3952,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-j-allen-kirk-kept-a-record",
     "title": "J. Allen Kirk Kept a Record",
-    "summary": "J.",
+    "summary": "J. Allen Kirk came to Wilmington as a Baptist pastor in 1897.",
     "point": {
       "at": {
         "lat": 34.24137,
@@ -3980,7 +3980,7 @@ export const LIBRARY: readonly Echo[] = [
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "J. Allen Kirk came to Wilmington as a Baptist pastor in 1897. The following year, the\ncoup forced him to seek safety.\n\nHe later published an account of the violence and his escape. That record preserves the\nperspective of a Black community leader who experienced the danger directly.\n\nHistorians disagree on some details of his route and timing. His account should be read\nas testimony, with its particular viewpoint, rather than treated as an all-seeing\ndescription of every event.\n\nListen beside the marker. Kirk survived the attempt to silence and drive out people like\nhim, then made a written record. His story demonstrates another form of resistance:\npreserving an experience so later generations would have evidence beyond the version\noffered by those who seized power.\n",
-    "teaser": "J.",
+    "teaser": "J. Allen Kirk came to Wilmington as a Baptist pastor in 1897.",
     "tags": [
       "wilmington",
       "downtown"
@@ -3996,7 +3996,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-james-posts-practical-design",
     "title": "James Post's Practical Design",
-    "summary": "James F.",
+    "summary": "James F. Post designed the Bellamy mansion with assistant architect Rufus Bunnell.",
     "point": {
       "at": {
         "lat": 34.23603,
@@ -4031,7 +4031,7 @@ export const LIBRARY: readonly Echo[] = [
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "James F. Post designed the Bellamy mansion with assistant architect Rufus Bunnell. Their\nwork had to turn a wealthy client's ambitions into a building that could function in\nWilmington's climate.\n\nThe museum points to deliberate choices involving daylight and ventilation. Architecture\nhere was a practical arrangement as well as a display of status.\n\nFrom the sidewalk, trace the building upward. Different parts serve different purposes,\neven when the whole facade looks like one confident gesture.\n\nPost's name gives the design a human author. The house did not simply emerge from a\nfashionable style; people made choices about proportions, rooms, and use. Those choices\nstill shape what you can see. The builders' labor then transformed the design into the\nsurviving structure before you.\n",
-    "teaser": "James F.",
+    "teaser": "James F. Post designed the Bellamy mansion with assistant architect Rufus Bunnell.",
     "tags": [
       "wilmington",
       "downtown"
@@ -4436,7 +4436,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-st-thomas-finds-another-purpose",
     "title": "St. Thomas Finds Another Purpose",
-    "summary": "St.",
+    "summary": "St. Thomas Preservation Hall describes its building as a former Catholic church constructed in 1847.",
     "point": {
       "at": {
         "lat": 34.2343,
@@ -4471,7 +4471,7 @@ export const LIBRARY: readonly Echo[] = [
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "St. Thomas Preservation Hall describes its building as a former Catholic church\nconstructed in 1847. Today it is used as an event venue.\n\nThe change illustrates a practical route to preservation: keep an old structure useful\nwhile allowing its role to evolve.\n\nThe original worship setting and the present venue are different chapters. Neither\nrequires us to pretend that every surface or furnishing stayed unchanged.\n\nListen from Dock Street unless you have permission to enter. A building's public history\ndoes not make a private event open to everyone.\n\nFrom outside, the survival is clear. The old structure remains part of downtown instead\nof becoming an empty lot. A new purpose supplies the reason to maintain it, while the\nname and building keep its earlier identity in view.\n",
-    "teaser": "St.",
+    "teaser": "St. Thomas Preservation Hall describes its building as a former Catholic church constructed in 1847.",
     "tags": [
       "wilmington",
       "downtown"
@@ -4576,7 +4576,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-the-annex-behind-the-landmark",
     "title": "The Annex Behind the Landmark",
-    "summary": "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H.",
+    "summary": "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H. Sprunt in memory of his parents and the earlier congregation's founders.",
     "point": {
       "at": {
         "lat": 34.2425,
@@ -4604,7 +4604,7 @@ export const LIBRARY: readonly Echo[] = [
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H.\nSprunt in memory of his parents and the earlier congregation's founders.\n\nThe annex served functions that the main sanctuary alone could not contain. Its history\nreminds you that a community's building needs extend beyond one ceremonial room.\n\nLook from the public sidewalk and keep to authorized visitor areas. A less dramatic\nbuilding can still be central to how a place works.\n\nThe addition makes growth tangible. People who gathered in the church also needed rooms\nfor teaching, meetings, and other activities. The annex supplied that supporting space.\nIts continued presence helps you read the complex as a working community setting, not\nsimply a striking facade preserved for photographs.\n",
-    "teaser": "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H.",
+    "teaser": "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H. Sprunt in memory of his parents and the earlier congregation's founders.",
     "tags": [
       "wilmington",
       "downtown"
@@ -4825,7 +4825,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-the-church-that-became-an-arts-center",
     "title": "The Church That Became an Arts Center",
-    "summary": "Construction of St.",
+    "summary": "Construction of St. Andrew's Presbyterian Church began here in 1888.",
     "point": {
       "at": {
         "lat": 34.24225,
@@ -4853,7 +4853,7 @@ export const LIBRARY: readonly Echo[] = [
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Construction of St. Andrew's Presbyterian Church began here in 1888. The congregation\ndedicated the building in 1889.\n\nIts later history included other congregations, serious deterioration, and preservation\nefforts. The surviving structure became the Brooklyn Arts Center.\n\nFrom the public corner, notice that a changed purpose did not require the old building\nto disappear. Its prominent form remains part of the neighborhood while its interior\nserves new gatherings.\n\nThe building's survival is the turning point. A former church could have become only a\nhistorical photograph. Instead, restoration made another use possible. Today's arts\nsetting carries an architectural inheritance from the congregation that first raised it.\nWhen people gather here now, they add a chapter rather than beginning on a blank site.\n",
-    "teaser": "Construction of St.",
+    "teaser": "Construction of St. Andrew's Presbyterian Church began here in 1888.",
     "tags": [
       "wilmington",
       "downtown"
@@ -5886,7 +5886,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-the-lodge-on-orange-street",
     "title": "The Lodge on Orange Street",
-    "summary": "The historic St.",
+    "summary": "The historic St. John's Lodge building dates to 1804.",
     "point": {
       "at": {
         "lat": 34.23285,
@@ -5921,7 +5921,7 @@ export const LIBRARY: readonly Echo[] = [
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The historic St. John's Lodge building dates to 1804. Its later uses included an art\nmuseum, and it now belongs to the Children's Museum complex.\n\nThis stop concerns the surviving building rather than the original purpose of every room\ninside today's museum.\n\nLook at the old structure from Orange Street. Its long life illustrates how an\ninstitution's needs can change while useful architecture remains.\n\nA lodge, an art gallery, and a children's learning space bring very different activities\nto an address. The connection is the building that could accommodate new possibilities.\nPreservation here did not mean keeping only one use forever. It meant retaining a\nsubstantial piece of downtown while finding reasons for later generations to cross its\nthreshold.\n",
-    "teaser": "The historic St.",
+    "teaser": "The historic St. John's Lodge building dates to 1804.",
     "tags": [
       "wilmington",
       "downtown"
@@ -6288,7 +6288,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-the-painting-with-a-river-journey",
     "title": "The Painting with a River Journey",
-    "summary": "St.",
+    "summary": "St. James preserves the story of Ecce Homo, a painting associated with the capture of a Spanish privateer vessel near Brunswick Town in 1748.",
     "point": {
       "at": {
         "lat": 34.2355,
@@ -6316,7 +6316,7 @@ export const LIBRARY: readonly Echo[] = [
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "St. James preserves the story of Ecce Homo, a painting associated with the capture of a\nSpanish privateer vessel near Brunswick Town in 1748.\n\nThe parish's account says the salvaged painting went first to St. Philip's Church and\nlater to St. James after Brunswick Town was abandoned. Its artist remains uncertain.\n\nIn 2026, the parish reported sending the painting for conservation. This stop therefore\nconnects you with its history, not a promise that it is currently hanging inside.\n\nStand outside and consider an artwork that outlasted changes in location and care. Its\nstory is not only what it depicts. The journeys, the uncertain attribution, and the work\nneeded to stabilize the canvas all belong to it. The object survives because later\npeople keep accepting responsibility for its future.\n",
-    "teaser": "St.",
+    "teaser": "St. James preserves the story of Ecce Homo, a painting associated with the capture of a Spanish privateer vessel near Brunswick Town in 1748.",
     "tags": [
       "wilmington",
       "downtown"

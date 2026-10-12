@@ -4,7 +4,7 @@
 # Shares a stop with other echoes, so it sits 8m off the spot to keep its pin tappable.
 id: wilmington-fords-other-opera-house
 title: "Ford's Other Opera House"
-summary: "John T."
+summary: "John T. Ford, associated with Ford's Theatre in Washington, leased this Wilmington theater from 1867 to 1871."
 place: "Thalian Hall, 310 Chestnut Street, Wilmington, North Carolina"
 at: { lat: 34.23766, lng: -77.94570 }
 triggerRadiusKm: 0.04
@@ -16,7 +16,7 @@ certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "John T."
+teaser: "John T. Ford, associated with Ford's Theatre in Washington, leased this Wilmington theater from 1867 to 1871."
 script: |
   John T. Ford, associated with Ford's Theatre in Washington, leased this Wilmington
   theater from 1867 to 1871. During his tenure, it was called the Opera House.

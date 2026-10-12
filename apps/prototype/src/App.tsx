@@ -2501,6 +2501,10 @@ export function App() {
               transport picks it up — so the intent survives. Only the full-screen view goes.
             */
             onChange={(next) => {
+              // Map, tapped on the map, means the map: out of the compass or the walk
+              // view, which the tab used to ignore (found 2026-10-12, a tour of every
+              // button: from the compass the only way back was a small icon on the rail).
+              if (next === "map" && tab === "map") setWalkingView("map");
               setTab(next);
               setListening(false);
             }}

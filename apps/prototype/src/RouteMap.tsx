@@ -380,6 +380,21 @@ export function RouteMap({
    * moment rather than a thing about the walk.
    */
   const [openCluster, setOpenCluster] = useState<string | null>(null);
+  /*
+   * HOVER: the pin or numbered dot under a mouse, and what to say about it (James,
+   * 2026-10-12: "make sure the map icons have a hover over"). A laptop has no other way to
+   * tell one hourglass from the next without opening each. Mouse only: a finger has no
+   * hover, and a label left behind by a tap would sit over the map.
+   */
+  const [hover, setHover] = useState<{ id: string; title: string; sub: string } | null>(null);
+  const hoverAt = useRef(new Map<string, { x: number; y: number }>());
+  hoverAt.current.clear();
+  const hoverHandlers = (id: string, title: string, sub: string) => ({
+    onPointerEnter: (e: React.PointerEvent) => {
+      if (e.pointerType === "mouse") setHover({ id, title, sub });
+    },
+    onPointerLeave: () => setHover((h) => (h?.id === id ? null : h)),
+  });
 
   /**
    * MapLibre, once it is running, and a counter that ticks every frame its camera moves.
@@ -1017,17 +1032,55 @@ export function RouteMap({
     const wantY = inset.top + (box.h - inset.top - inset.bottom) / 2;
     const now = projection(echo.point.at);
     if (gl) {
-      // Glide there, and stop following: the listener asked to look at this one.
-      gl.easeTo({ center: [echo.point.at.lng, echo.point.at.lat], offset: [wantX - box.w / 2, wantY - box.h / 2], duration: 500 });
+      /*
+       * Fly there, at street level at least, and stop following: the listener asked to
+       * look at this one. It used to keep the zoom, so from a city view the arrows landed
+       * on a dot of a hundred echoes and burst it into a fan across the whole screen
+       * (found 2026-10-12). Close up, the echo stands on its own.
+       */
+      gl.easeTo({
+        center: [echo.point.at.lng, echo.point.at.lat],
+        zoom: Math.max(gl.getZoom(), base),
+        offset: [wantX - box.w / 2, wantY - box.h / 2],
+        duration: 600,
+      });
       if (pan.x === 0 && pan.y === 0) onPan({ x: 1, y: 0 });
     } else if (Math.hypot(wantX - now.x, wantY - now.y) > 2) {
       // A move of a couple of pixels is not a move, and calling onPan for it would churn
       // the projection for nothing.
       onPan({ x: pan.x + (wantX - now.x), y: pan.y + (wantY - now.y) });
     }
+    // Fanned only when zooming in cannot separate it from its neighbours (`splits`).
     const group = groups.find((g) => g.members.some((m) => m.item.id === focusId));
-    setOpenCluster(group && group.members.length > 1 ? group.members[0]!.item.id : null);
+    const together = group && group.members.length > 1 && !(gl && splits(group.members.map((m) => m.item)));
+    setOpenCluster(together ? group.members[0]!.item.id : null);
   }, [focusId, library, projection, groups, pan, onPan, box, barH, reservedBottom, navH, gl]);
+
+  /*
+   * A pin tapped from a long way out: fly in to it.
+   *
+   * At street level the map stays still when a pin is tapped (see `focusId`): the thing
+   * you aimed at jumping away under your thumb is disorienting. From the city view or
+   * further, though, getting to one echo meant pinching in several times (James,
+   * 2026-10-12: "It also takes a lot of work to zoom all the way in to a certain echo.
+   * should be really fast"). So a tap from out there flies to it at street level, above
+   * the card it opens.
+   */
+  const lastSelected = useRef<string | null>(null);
+  useEffect(() => {
+    const was = lastSelected.current;
+    lastSelected.current = selectedId;
+    if (!gl || !selectedId || selectedId === was) return;
+    if (gl.getZoom() >= base - 1.5) return;
+    const echo = library.find((e) => e.id === selectedId);
+    if (!echo) return;
+    const inset = insetFor(barH, reservedBottom, navH);
+    // The card covers the bottom half: put the echo in the middle of what is left.
+    const wantY = inset.top + (box.h * 0.5 - inset.top) / 2;
+    gl.easeTo({ center: [echo.point.at.lng, echo.point.at.lat], zoom: base, offset: [0, wantY - box.h / 2], duration: 700 });
+    if (pan.x === 0 && pan.y === 0) onPan({ x: 1, y: 0 });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedId, gl]);
 
   /*
    * THE CAMERA, while MapLibre is running.
@@ -1197,7 +1250,9 @@ export function RouteMap({
    */
   const edge = useMemo(() => {
     // Looking somewhere else, "the best thing you cannot see" from here means nothing.
-    if (!at || overview || lookAt) return null;
+    // Nor while walking to one: the way there is the map, and the plates showed through
+    // the directions bar on a small phone (found 2026-10-12).
+    if (!at || overview || lookAt || (directions && directions.length > 1)) return null;
     const off: EdgeMark[] = [];
     for (const echo of library) {
       const state = stateOf(echo.id);
@@ -1298,7 +1353,7 @@ export function RouteMap({
       placed.push({ ...mark, y });
     }
     return placed;
-  }, [at, overview, lookAt, library, stateOf, projection, box, zoom, barH, reservedBottom, navH, railTopPx]);
+  }, [at, overview, lookAt, directions, library, stateOf, projection, box, zoom, barH, reservedBottom, navH, railTopPx]);
 
   /**
    * One pin, drawn wherever it has been put.
@@ -1309,6 +1364,7 @@ export function RouteMap({
    * unchanged.
    */
   const renderPin = (echo: Echo, x: number, y: number) => {
+      hoverAt.current.set(echo.id, { x, y });
       const state = stateOf(echo.id);
       const arriving = openingById.get(echo.id);
       const selected = selectedId === echo.id;
@@ -1326,6 +1382,11 @@ export function RouteMap({
           transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`}
           data-echo={echo.id}
           onClick={() => onSelect(echo.id)}
+          {...hoverHandlers(
+            echo.id,
+            echo.title,
+            [CATEGORY_LABEL[echo.category], at ? coarse(distanceKm(at, echo.point.at)) : null].filter(Boolean).join(" · "),
+          )}
           role="button"
           aria-label={echo.title}
         >
@@ -1834,6 +1895,7 @@ export function RouteMap({
          * draws nothing instead of needing an effect to chase it.
          */
         if (openCluster !== first.id) {
+          hoverAt.current.set(`group:${first.id}`, { x: group.x, y: group.y });
           return (
             <ClusterDot
               key={first.id}
@@ -1842,6 +1904,11 @@ export function RouteMap({
               members={group.members.map((m) => m.item)}
               zooms={zoomable}
               onOpen={() => (zoomable ? zoomInto(group.members.map((m) => m.item)) : setOpenCluster(first.id))}
+              hover={hoverHandlers(
+                `group:${first.id}`,
+                `${group.members.length} echoes here`,
+                zoomable ? "Tap to zoom in" : "Tap to spread them out",
+              )}
             />
           );
         }
@@ -1986,9 +2053,11 @@ export function RouteMap({
         const name = warm
           ? `${mark.rarity === "singular" ? "Singular" : "Rare"} ${CATEGORY_LABEL[mark.echo.category]}`
           : CATEGORY_LABEL[mark.echo.category];
+        hoverAt.current.set(`edge:${mark.echo.id}`, { x: right ? box.w - GUTTER - 62 : GUTTER + 62, y: mark.y - 4 });
         return (
           <g
             key={mark.echo.id}
+            {...hoverHandlers(`edge:${mark.echo.id}`, mark.echo.title, `${coarse(mark.km)} away · tap to see it`)}
             className={warm ? "map-edge map-edge-warm" : "map-edge"}
             transform={`translate(${right ? box.w - GUTTER : GUTTER} ${mark.y.toFixed(1)})`}
             onPointerDown={(e) => {
@@ -2025,6 +2094,30 @@ export function RouteMap({
           </g>
         );
       })}
+      {hover && hoverAt.current.has(hover.id) && (() => {
+        const at = hoverAt.current.get(hover.id)!;
+        const title = hover.title.length > 34 ? `${hover.title.slice(0, 33)}…` : hover.title;
+        const w = Math.min(box.w - 16, Math.max(title.length * 6.9, hover.sub.length * 6.3) + 24);
+        const h = hover.sub ? 42 : 28;
+        // Clear of the button column on the right, which is drawn over the map.
+        const x = Math.max(8, Math.min(box.w - GUTTER - 54 - w, at.x - w / 2));
+        // Above the pin, or below it when that would run under the top chips.
+        const above = at.y - 30 - h > barH + 4;
+        const y = above ? at.y - 30 - h : at.y + 30;
+        return (
+          <g className="map-tip" transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`} aria-hidden="true">
+            <rect width={w} height={h} rx="10" />
+            <text className="map-tip-title" x={w / 2} y={hover.sub ? 17 : 18} textAnchor="middle">
+              {title}
+            </text>
+            {hover.sub && (
+              <text className="map-tip-sub" x={w / 2} y={33} textAnchor="middle">
+                {hover.sub}
+              </text>
+            )}
+          </g>
+        );
+      })()}
     </svg>)}
     </>
   );

@@ -1988,6 +1988,30 @@ body {
 .fab.on { background: var(--aqua); color: #042220; border-color: var(--aqua); }
 
 /*
+ * HOVER: what a button does, said beside it (James, 2026-10-12: "make sure the map icons
+ * have a hover over"). Icons alone ask a person on a laptop to guess, and the names were
+ * already there for screen readers, so the label is the button's own `aria-label` and
+ * cannot drift from it. Only where there is a real pointer: a phone has no hover, and a
+ * sticky label after a tap would sit over the map.
+ */
+@media (hover: hover) and (pointer: fine) {
+  .rail .fab, .map-chrome-btn { position: relative; }
+  .rail .fab::after, .map-chrome-btn::after {
+    content: attr(aria-label);
+    position: absolute; right: calc(100% + 10px); top: 50%;
+    transform: translate(4px, -50%); opacity: 0; pointer-events: none;
+    white-space: nowrap; padding: 6px 10px; border-radius: 9px;
+    font: 500 12px/1.2 inherit; letter-spacing: 0; text-transform: none;
+    color: var(--cool); background: rgba(var(--rgb-panel), 0.97);
+    border: 1px solid var(--line); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    transition: opacity 0.12s linear, transform 0.12s ease-out;
+  }
+  .rail .fab:hover::after, .map-chrome-btn:hover::after { opacity: 1; transform: translate(0, -50%); }
+  .rail .fab:hover { border-color: var(--aqua); color: var(--aqua); }
+  .rail .fab.on:hover { color: #042220; }
+}
+
+/*
  * Zoom, as one object.
  *
  * A `.fab` that holds two buttons instead of being one. It borrows the casing so the
@@ -2074,7 +2098,9 @@ body {
 .map-credit {
   fill: var(--muted); opacity: 0.75; font-size: 11px;
   font-family: "Space Grotesk", monospace; pointer-events: none;
-  paint-order: stroke; stroke: rgba(var(--rgb-panel), 0.6); stroke-width: 2.4;
+  /* A solid halo: over the brighter map's own street and landmark names the thin one
+     let them run through the credit ("Farmers Market" across "OpenStreetMap"). */
+  paint-order: stroke; stroke: rgb(var(--rgb-panel)); stroke-width: 4; stroke-linejoin: round;
 }
 
 /* The commentary keeps the demo-only controls — pause, seek, narration — that have no
@@ -2098,7 +2124,9 @@ body {
 .map-credit {
   fill: var(--muted); opacity: 0.75; font-size: 11px;
   font-family: "Space Grotesk", monospace; pointer-events: none;
-  paint-order: stroke; stroke: rgba(var(--rgb-panel), 0.6); stroke-width: 2.4;
+  /* A solid halo: over the brighter map's own street and landmark names the thin one
+     let them run through the credit ("Farmers Market" across "OpenStreetMap"). */
+  paint-order: stroke; stroke: rgb(var(--rgb-panel)); stroke-width: 4; stroke-linejoin: round;
 }
 
 
@@ -2457,6 +2485,9 @@ body {
    on screen, lit, and unreachable. This is the same move the sheet already makes as it
    rises: one thing has the map's attention at a time. */
 .screen:has(.pop) .rail { opacity: 0; pointer-events: none; }
+/* And under the walk planner, whose sheet is see-through: the column showed through it, a
+   ghost of buttons behind the close button (found 2026-10-12). */
+.screen:has(.pw) .rail { opacity: 0; pointer-events: none; }
 
 /* How far through the journey, above the list. Quiet: it is a fact somebody looks up, not
    one they need pushed at them, which is why it is no longer the resting row. */
@@ -2570,7 +2601,9 @@ body {
 
 /* Narrow enough to clear the control column, which lives at the right edge and was sitting
    on top of the button. */
-.rose-foot { width: 100%; max-width: 296px; flex: none; }
+/* Clear of the button column on the right, and as far in on the left so it stays centred:
+   at 296 wide on a 390 phone it ran under the column's buttons (found 2026-10-12). */
+.rose-foot { width: 100%; max-width: min(296px, calc(100% - 2 * (var(--gutter) + 54px))); flex: none; }
 .rose-hum, .rose-ask {
   width: 100%; display: flex; flex-direction: column; align-items: center; gap: 3px;
   padding: 13px 16px; border-radius: 16px; cursor: pointer; font: inherit;
@@ -3824,6 +3857,10 @@ body {
   background: rgba(7, 8, 12, 0.94); border-top: 1px solid var(--line-2);
   border-radius: 22px 22px 0 0; backdrop-filter: blur(20px);
 }
+.city-credit {
+  position: absolute; right: 12px; bottom: calc(100% + 6px);
+  font-size: 11px; color: var(--muted); pointer-events: none; white-space: nowrap;
+}
 .city-card-kick {
   margin: 0; padding-top: 16px; font-size: 11px; letter-spacing: 0.14em;
   text-transform: uppercase; color: var(--muted);
@@ -4505,6 +4542,9 @@ body {
 /* Open, the box sits over the control column; the map bar is its stacking context, and at
    18 it lost to the column's 26, which drew the pulse button over "Landmarks". */
 .mapbar:has(.kind-box) { z-index: 45; }
+/* The journey menu too. It is drawn inside the bar's layer, so "Back to me" (27) showed
+   through it, sitting on the Walk / Drive / Fly switch (found 2026-10-12). */
+.mapbar:has(.jmenu) { z-index: 45; }
 
 /*
  * True story, not yet verified, disputed, legend (`TruthMark.tsx`). Small and quiet: it is
@@ -4639,6 +4679,20 @@ body {
 :root[data-theme="light"] .map-canvas { background: var(--space); }
 /* Sized rather than inset: MapLibre sets `position: relative` on its container. */
 .map-canvas-gl { width: 100%; height: 100%; }
+/* The label over a hovered pin or dot (`hover` in `RouteMap.tsx`). Never takes a tap. */
+.map-tip { pointer-events: none; }
+.map-tip rect {
+  fill: rgba(var(--rgb-panel), 0.97); stroke: var(--line); stroke-width: 1;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45));
+}
+.map-tip-title { fill: var(--cool); font-size: 12px; font-weight: 600; }
+.map-tip-sub { fill: var(--muted); font-size: 11px; }
+@media (hover: hover) and (pointer: fine) {
+  .map-live .pin, .map-live .clus, .map-live .map-edge { cursor: pointer; }
+  .map-live .pin:hover .pin-body, .map-live .clus:hover .clus-body { stroke-width: 2.6; filter: brightness(1.25); }
+  .map-live .map-edge:hover .map-edge-plate { stroke: var(--aqua); }
+}
+
 /* Inside MapLibre's layer (see `inMap` in `RouteMap.tsx`), so MapLibre takes every gesture,
    including one that starts on a pin; the browser takes none of them. */
 .map-live { pointer-events: none; touch-action: none; }

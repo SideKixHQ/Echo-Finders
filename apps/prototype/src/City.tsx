@@ -187,38 +187,46 @@ export function City({ library, at, theme, onClose, onGo }: CityProps) {
    */
   const plates = useMemo(() => {
     if (!view) return [];
-    const ROW = 27;
-    const taken: { x: number; y: number; w: number }[] = [];
+    const PLATE_H = 24;
+    const GAP = 4;
+    type Box = { x0: number; y0: number; x1: number; y1: number };
+    const taken: Box[] = [];
+    // Your own dot is not to be covered: a label sat squarely on it (found 2026-10-12).
+    if (you) taken.push({ x0: you.x - 14, y0: you.y - 14, x1: you.x + 14, y1: you.y + 14 });
+    const hits = (b: Box) => taken.some((t) => b.x0 < t.x1 + GAP && b.x1 > t.x0 - GAP && b.y0 < t.y1 + GAP && b.y1 > t.y0 - GAP);
     const out: { cluster: EchoCluster; x: number; y: number }[] = [];
     for (const c of clusters) {
       const p = view.project(c.at);
-      if (p.x < -40 || p.x > W + 40) continue;
+      if (p.x < 0 || p.x > W || p.y < TOP || p.y > H - BOTTOM) continue;
       // Roughly: 7px a character plus the padding. Close enough to decide an overlap.
-      const w = (c.label.length + 4) * 7 + 18;
+      const w = (c.label.length + 4) * 7.4 + 18;
       /*
-       * Three rows and no further. Pushing until it fits sounds better and is worse: one
-       * label ended up three hundred pixels from its own bloom, pointing at nothing, which
-       * is a label that actively lies about where a place is. Past eighty pixels the honest
-       * move is to drop it — the bloom is still there, and the card below names the one
-       * that matters.
+       * Beside its own glow or not at all.
+       *
+       * Below, above, right, then left, each touching the glow. It used to be pushed down a
+       * row at a time until it stopped clashing, which on the map of the country put
+       * Dallas over Mexico and Colorado over Texas: a label that lies about where a place
+       * is. Nothing goes off the screen's edge either ("CALIFORNIA" was cut off). If no
+       * spot is free the bloom is still there, and the card below names the one that
+       * matters.
        */
-      let y = p.y + 14;
-      for (let tries = 0; tries < 3; tries++) {
-        const clash = taken.some(
-          (t) => Math.abs(t.y - y) < ROW && Math.abs(t.x - p.x) < (t.w + w) / 2,
-        );
-        if (!clash) break;
-        y += ROW;
+      const spots = [
+        { x: p.x, y: p.y + 14 },
+        { x: p.x, y: p.y - 14 - PLATE_H },
+        { x: p.x + w / 2 + 14, y: p.y - PLATE_H / 2 },
+        { x: p.x - w / 2 - 14, y: p.y - PLATE_H / 2 },
+      ];
+      for (const spot of spots) {
+        const box = { x0: spot.x - w / 2, y0: spot.y, x1: spot.x + w / 2, y1: spot.y + PLATE_H };
+        if (box.x0 < 8 || box.x1 > W - 8 || box.y0 < TOP + 6 || box.y1 > H - BOTTOM - 4) continue;
+        if (hits(box)) continue;
+        taken.push(box);
+        out.push({ cluster: c, x: spot.x, y: spot.y });
+        break;
       }
-      const stillClashes = taken.some(
-        (t) => Math.abs(t.y - y) < ROW && Math.abs(t.x - p.x) < (t.w + w) / 2,
-      );
-      if (stillClashes || y < TOP + 6 || y > H - BOTTOM - ROW) continue;
-      taken.push({ x: p.x, y, w });
-      out.push({ cluster: c, x: p.x, y });
     }
     return out;
-  }, [clusters, view]);
+  }, [clusters, view, you?.x, you?.y]);
 
   return (
     <div className="city" ref={frame}>
@@ -227,13 +235,17 @@ export function City({ library, at, theme, onClose, onGo }: CityProps) {
           tiles={VECTOR_TILES_URL}
           camera={cameraFor(view.plan, W, H)}
           theme={theme}
-          width={W}
-          height={H}
+          /* The whole screen, in the drawing's units: the drawing is letterboxed to fit,
+             and a map only as big as the drawing left bare strips down the sides of any
+             phone narrower than 390 (found 2026-10-12). Centred on the same point, so the
+             camera is unchanged and the blooms still sit on their places. */
+          width={W + (2 * fit.left) / fit.scale}
+          height={H + (2 * fit.top) / fit.scale}
           scale={fit.scale}
-          left={fit.left}
-          top={fit.top}
-          clipTop={TOP}
-          clipBottom={BOTTOM}
+          left={0}
+          top={0}
+          clipTop={TOP + fit.top / fit.scale}
+          clipBottom={BOTTOM + fit.top / fit.scale}
           className="city-base"
         />
       )}
@@ -318,11 +330,6 @@ export function City({ library, at, theme, onClose, onGo }: CityProps) {
           )}
         </g>
 
-        {view && (
-          <text className="map-credit" x={W - 10} y={H - BOTTOM - 8} textAnchor="end">
-            {VECTOR_TILES_URL ? VECTOR_ATTRIBUTION : TILE_ATTRIBUTION}
-          </text>
-        )}
       </svg>
 
       {/* Labels as HTML, on plates, because type over a glow is type you cannot read. */}
@@ -330,7 +337,9 @@ export function City({ library, at, theme, onClose, onGo }: CityProps) {
         <button
           key={c.label + c.echoes.length}
           className={c.singular > 0 ? "city-plate city-plate-rare" : "city-plate"}
-          style={{ left: `${x}px`, top: `${y}px` }}
+          /* In the drawing's own 390 x 844 units, placed the way the SVG is fitted to
+             this screen (`fit`), or they sat off their blooms on any other phone size. */
+          style={{ left: `${(fit?.left ?? 0) + x * (fit?.scale ?? 1)}px`, top: `${(fit?.top ?? 0) + y * (fit?.scale ?? 1)}px` }}
           onClick={() => onGo(c)}
         >
           {c.label} · {c.echoes.length}
@@ -361,6 +370,9 @@ export function City({ library, at, theme, onClose, onGo }: CityProps) {
 
       {pick && (
         <div className="city-card">
+          {/* The map's credit rides the card's top edge. Drawn in the scaled drawing, it
+              slid behind the card on a short phone, where the licence needs it seen. */}
+          {view && <span className="city-credit">{VECTOR_TILES_URL ? VECTOR_ATTRIBUTION : TILE_ATTRIBUTION}</span>}
           <p className="city-card-kick mono">{at ? "Closest to you" : "The most of them"}</p>
           <div className="city-card-row">
             <span className="city-card-text">

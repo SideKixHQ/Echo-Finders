@@ -191,6 +191,15 @@ await phase('map', async () => {});
  * button.
  */
 await phase('plan', async () => {
+  /*
+   * The listener stands at Battery Park, on Castle Clinton and near the Charging Bull.
+   * Once a walk is picked below, standing there syncs one, and its card covers the screen
+   * a second or several later: on a busy machine that landed on the button this phase
+   * presses next (seen in two full gates, 2026-10-12, and reproduced on main with the CPU
+   * slowed). It is the app working, and nothing measured here is under the card, so it
+   * is let through as audit-flows does.
+   */
+  await p.addStyleTag({ content: '.synced { pointer-events: none !important; }' });
   // An open echo stands the rail down, which is deliberate. Close it first.
   if (await p.locator('.pop-close').count()) {
     await p.locator('.pop-close').click();
