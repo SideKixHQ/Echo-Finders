@@ -1168,24 +1168,18 @@ export function RouteMap({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gl, at?.lat, at?.lng, overview, lookAt, following, base, bandOffset, directions]);
 
-  // Anything that sets the zoom from outside the map. Not the map reporting its own.
-  const synced = useRef<number | null>(null);
-  useEffect(() => {
-    if (!gl) return;
-    if (synced.current === zoom) {
-      synced.current = null;
-      return;
-    }
-    const target = base + Math.log2(zoom);
-    if (Math.abs(gl.getZoom() - target) < 0.02) return;
-    if (following && at && !overview && !lookAt) {
-      gl.easeTo({ center: [at.lng, at.lat], zoom: target, offset: bandOffset, duration: 300 });
-    } else {
-      gl.easeTo({ zoom: target, duration: 300 });
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [gl, zoom, base]);
-
+  /*
+   * NOTHING PUSHES A ZOOM INTO THE MAP FROM OUTSIDE ANY MORE.
+   *
+   * There was an effect here for the zoom buttons: when the app's `zoom` changed, the map
+   * eased to it. The buttons went in #56, and what was left using it was `App` resetting
+   * the zoom to 1 whenever the framing changes. The framing effects above already place
+   * the camera for those, and this ran after them and undid it: "Whole journey" fitted the
+   * journey and then zoomed straight back in to street level at its middle, which was
+   * usually empty country (found 2026-10-12). It only showed once the map began
+   * reporting its own zoom (#57), because until then the reset was usually from 1 to 1.
+   * The map owns its zoom; `zoom` follows it (`onSettle`).
+   */
   const openingById = new Map(opening.map((a) => [a.echo.id, a]));
   const here = at ? projection(at) : null;
   const standingAt = at;
@@ -1546,10 +1540,7 @@ export function RouteMap({
          * after a tap on a dot zoomed in, the app still thought it was zoomed out.
          */
         const rel = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, 2 ** (mapZoom - base)));
-        if (Math.abs(rel - zoom) > 1e-3) {
-          synced.current = rel;
-          onZoom(rel);
-        }
+        if (Math.abs(rel - zoom) > 1e-3) onZoom(rel);
       }}
       onMapTap={() => {
         setOpenCluster(null);
