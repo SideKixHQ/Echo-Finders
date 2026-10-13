@@ -99,6 +99,35 @@ const LIBRARY_BY_ID: ReadonlyMap<string, Echo> = new Map(LIBRARY.map((e) => [e.i
 const LOOK_RADIUS_KM = 25;
 /** Exploring, "everything around me" reaches this far: a city centre and its edges. */
 const OVERVIEW_RADIUS_KM = 6;
+/**
+ * Seatback mode: a big landscape touch screen in the back of an aircraft seat (ADR-0001).
+ *
+ * James (2026-10-13): "seatback mode". The app drew itself as a 390px phone in the middle of
+ * a 1920px screen. On a screen like that it fills the whole screen instead: the map edge
+ * to edge, the controls in a readable column down the left, the lists centred. `?seat`
+ * forces it, for an airline's integration and for testing on a desk.
+ */
+const SEAT_QUERY =
+  "(min-width: 1000px) and (min-height: 560px) and (orientation: landscape) and (pointer: coarse)";
+const SEAT_FORCED = typeof location !== "undefined" && new URLSearchParams(location.search).has("seat");
+function useSeat(): boolean {
+  const [seat, setSeat] = useState(
+    () => SEAT_FORCED || (typeof matchMedia !== "undefined" && matchMedia(SEAT_QUERY).matches),
+  );
+  // On the body too, for its padding: older seatback browsers have no `:has()`.
+  useEffect(() => {
+    document.body.classList.toggle("seat", seat);
+  }, [seat]);
+  useEffect(() => {
+    if (SEAT_FORCED || typeof matchMedia === "undefined") return;
+    const q = matchMedia(SEAT_QUERY);
+    const on = () => setSeat(q.matches);
+    q.addEventListener("change", on);
+    return () => q.removeEventListener("change", on);
+  }, []);
+  return seat;
+}
+
 /** Where the sonar on/off choice is remembered. */
 const SONAR_KEY = "echo-finders:sonar";
 const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROUTES[0]!;
@@ -106,6 +135,7 @@ const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROU
 const KEPT = readJourney(new Set(ROUTES.map((r) => r.id)));
 
 export function App() {
+  const seat = useSeat();
   const [route, setRoute] = useState<Route>(
     () => ROUTES.find((r) => r.id === KEPT.routeId) ?? DEFAULT_ROUTE,
   );
@@ -1580,7 +1610,7 @@ export function App() {
 
   return (
     <div className="stage">
-      <div className="phone">
+      <div className={seat ? "phone seat" : "phone"}>
         <div className={selfDirected ? "screen" : "screen stack-noguide"}>
           <div className="statusbar">
             <span className="mono">10:42</span>
