@@ -1175,7 +1175,30 @@ export function RouteMap({
         { padding: { top: inset.top + 10, bottom: inset.bottom + 10, left: inset.side, right: inset.side + 50 }, maxZoom: base, duration },
       );
     } else if (lookAt) {
-      gl.easeTo({ center: [lookAt.lng, lookAt.lat], zoom: base - 1, offset: bandOffset, duration });
+      /*
+       * Somewhere looked up: show its nearest few echoes, not one pin at a fixed zoom.
+       * "10004" opened on Castle Clinton alone with fifteen more just off screen, which is
+       * the "hard to zoom in to find an echo" complaint all over again.
+       */
+      const near = library
+        .map((e) => ({ at: e.point.at, km: distanceKm(lookAt, e.point.at) }))
+        .sort((a, b) => a.km - b.km)
+        .slice(0, 6)
+        .map((n) => n.at);
+      if (near.length < 2) {
+        gl.easeTo({ center: [lookAt.lng, lookAt.lat], zoom: base - 1, offset: bandOffset, duration });
+      } else {
+        const pts = [lookAt, ...near];
+        const lngs = pts.map((p) => p.lng);
+        const lats = pts.map((p) => p.lat);
+        gl.fitBounds(
+          [
+            [Math.min(...lngs), Math.min(...lats)],
+            [Math.max(...lngs), Math.max(...lats)],
+          ],
+          { padding: { top: inset.top + 40, bottom: inset.bottom + 30, left: inset.side + 20, right: inset.side + 70 }, maxZoom: base, duration },
+        );
+      }
     }
     // Following is the next effect's job.
     // Only a change of framing reframes; a new fix or a new library does not.
