@@ -192,9 +192,11 @@ const CATS = {
 
 ## Tab bar
 
+Labels 13px, up from the boards' 11px: James, 2026-10-13, "make the tab bar labels bigger too".
+
 ```css
 .nav { position:absolute; bottom:0; left:0; right:0; z-index:850; height:74px; display:flex; background:rgba(var(--rgb-panel),.96); border-top:1px solid var(--line); padding-bottom:14px }
-.nav button { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; font-size:11px; color:var(--muted); letter-spacing:.03em }
+.nav button { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; font-size:13px; color:var(--muted); letter-spacing:.03em }
 .nav button svg { width:20px; height:20px; stroke:currentColor; fill:none; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round }
 .nav button.on { color:var(--aqua) }
 ```

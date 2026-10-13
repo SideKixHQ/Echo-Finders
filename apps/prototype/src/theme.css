@@ -1320,7 +1320,7 @@ body {
      icon sat at the top of its 48px box, 6.5px under the bar's edge instead of 11.5. */
   flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
   background: none; border: 0; cursor: pointer; position: relative;
-  font-size: 11px; letter-spacing: 0.03em; color: var(--muted);
+  font-size: 13px; letter-spacing: 0.03em; color: var(--muted);
   font-family: "Space Grotesk", monospace; text-transform: uppercase;
 
 }
@@ -5043,8 +5043,8 @@ body.seat { padding: 0; display: block; }
  *
  * Three steps: 14px for what you read, 13px for what supports it, 12px for the small
  * capitals that label things. Map credits, badges and the figure inside the 15-second
- * skip icon stay small; they are marks, not reading. The tab bar stays at the design's
- * 11px (`design/SPEC.md`, checked by `audit:spec`): the design wins over the code.
+ * skip icon stay small; they are marks, not reading. The tab bar is 13px, changed in
+ * `design/SPEC.md` first (James, 2026-10-13), since `audit:spec` holds it to the design.
  */
 .pop-teaser { font-size: 14px; line-height: 1.45; }
 .pop-aim, .feature-name { font-size: 14px; }

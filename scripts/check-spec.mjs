@@ -64,8 +64,10 @@ const SPEC = [
    */
   { design: '.nav', ours: '.nav', where: 'map',
     want: { height: '74px', paddingBottom: '14px' } },
+  // 13px, up from the boards' 11px (James, 2026-10-13: "make the tab bar labels bigger
+  // too"); `design/SPEC.md` says the same. Letter spacing is .03em of it.
   { design: '.nav button', ours: '.nav button', where: 'map',
-    want: { flexGrow: '1', flexDirection: 'column', rowGap: '4px', fontSize: '11px', letterSpacing: '0.33px' } },
+    want: { flexGrow: '1', flexDirection: 'column', rowGap: '4px', fontSize: '13px', letterSpacing: '0.39px' } },
   { design: '.nav button svg', ours: '.nav button svg', where: 'map',
     want: { width: '20px', height: '20px', strokeWidth: '1.7px' } },
 
