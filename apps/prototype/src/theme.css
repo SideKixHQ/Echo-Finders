@@ -2414,6 +2414,11 @@ body {
 .pop-save svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
 .pop-save.on { color: var(--ember); border-color: rgba(255, 158, 18, 0.5); background: rgba(255, 158, 18, 0.1); }
 .pop-save.on svg { fill: currentColor; }
+/* Save for later and Add to route, side by side: the two ways of keeping one for later. */
+.pop-keep { display: flex; gap: 8px; margin-top: 8px; }
+.pop-keep .pop-save { margin-top: 0; flex: 1 1 0; min-width: 0; min-height: 38px; padding: 0 8px; white-space: nowrap; }
+.pop-route.on { color: var(--aqua); border-color: rgba(var(--rgb-accent), 0.5); background: rgba(var(--rgb-accent), 0.1); }
+.pop-route svg { fill: none !important; stroke-linecap: round; }
 
 /* The pin's real target. Invisible, and the only reason a pin tap lands: an SVG group
    has no geometry, so without this the hit area is the 13px body circle. */
@@ -4847,4 +4852,112 @@ body {
 .menu-scrim {
   position: absolute; top: -100vh; left: -100vw; width: 300vw; height: 300vh;
   z-index: -1; background: transparent;
+}
+
+/*
+ * Routes (`Routes.tsx`, `AddToRoute.tsx`): the listener's own walks, kept to start later.
+ */
+.coll-views {
+  display: flex; gap: 4px; padding: 4px; border-radius: 999px;
+  background: rgba(var(--rgb-panel), 0.6); border: 1px solid var(--line);
+}
+.coll-view {
+  flex: 1; min-height: 40px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 14px;
+  color: var(--cool); background: none; border: 0;
+}
+.coll-view.on { color: var(--btn-ink); background: var(--btn); font-weight: 600; }
+
+.routes { display: flex; flex-direction: column; gap: 12px; padding-bottom: 24px; }
+.routes-empty { padding-top: 8px; }
+.rt {
+  padding: 14px; border-radius: 18px;
+  background: rgba(var(--rgb-panel), 0.6); border: 1px solid var(--line);
+}
+.rt.editing { border-color: rgba(var(--rgb-accent), 0.45); }
+.rt-name { margin: 0; font-size: 17px; font-weight: 600; color: var(--white); overflow-wrap: anywhere; }
+.rt-name-input {
+  width: 100%; min-height: 44px; padding: 0 12px; border-radius: 12px; font: inherit; font-size: 17px;
+  font-weight: 600; color: var(--white); background: rgba(var(--rgb-panel), 0.9); border: 1px solid var(--line-2);
+}
+.rt-meta { margin: 4px 0 10px; font-size: 13.5px; color: var(--cool); }
+.rt-left { color: var(--muted); }
+.rt-stops { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.rt-stop { display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 0 0 0 2px; }
+.rt-stop.done { opacity: 0.5; }
+.rt-hint { margin: 10px 0 0; font-size: 13px; line-height: 1.4; color: var(--muted); }
+.rt-acts { display: flex; gap: 8px; margin-top: 12px; }
+.rt-btn {
+  min-height: 44px; padding: 0 16px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 14px;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  color: var(--cool); background: none; border: 1px solid var(--line-2);
+}
+.rt-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.rt-primary { flex: 1; font-weight: 600; color: #042b28; border: 0; background: linear-gradient(140deg, #7dfff2, var(--aqua)); }
+.rt-primary svg { fill: currentColor; stroke: none; }
+.rt-primary:disabled { opacity: 0.45; cursor: default; }
+.rt-del { width: 44px; padding: 0; color: var(--muted); }
+.rt-new {
+  min-height: 48px; border-radius: 16px; cursor: pointer; font: inherit; font-size: 15px;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  color: var(--aqua); background: none; border: 1px dashed rgba(var(--rgb-accent), 0.5);
+}
+.rt-new svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.rt-undo {
+  position: sticky; bottom: 12px; align-self: center; z-index: 5;
+  display: flex; align-items: center; gap: 14px; padding: 8px 8px 8px 16px; border-radius: 999px;
+  max-width: calc(100% - 2 * var(--gutter)); font-size: 14px; color: var(--white);
+  background: rgba(var(--rgb-panel), 0.98); border: 1px solid var(--line-2); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.rt-undo span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rt-undo button {
+  min-height: 36px; padding: 0 14px; border-radius: 999px; cursor: pointer; font: inherit; font-weight: 600;
+  color: var(--aqua); background: none; border: 0;
+}
+
+/* Add to route: a sheet over the card, so the echo stays in view above it. */
+.atr {
+  position: absolute; left: 0; right: 0; bottom: var(--nav-h); z-index: 46;
+  max-height: 70%; overflow-y: auto; overscroll-behavior: contain;
+  padding: 16px var(--gutter) 16px; border-radius: 22px 22px 0 0;
+  background: rgba(var(--rgb-panel), 0.98); border-top: 1px solid var(--line-2);
+  box-shadow: 0 -14px 40px rgba(0, 0, 0, 0.55);
+}
+.atr-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.atr-what { min-width: 0; }
+.atr-what h2 { margin: 0; font-size: 19px; font-weight: 600; }
+.atr-what p { margin: 4px 0 0; font-size: 14px; color: var(--cool); overflow-wrap: anywhere; }
+.atr-list { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.atr-route {
+  width: 100%; min-height: 48px; display: flex; align-items: center; gap: 12px; padding: 0 12px;
+  border-radius: 14px; cursor: pointer; font: inherit; text-align: left;
+  color: var(--white); background: rgba(var(--rgb-panel), 0.6); border: 1px solid var(--line);
+}
+.atr-route.on { border-color: rgba(var(--rgb-accent), 0.5); background: rgba(var(--rgb-accent), 0.08); }
+.atr-tick {
+  width: 22px; height: 22px; flex: none; border-radius: 6px; display: grid; place-items: center;
+  border: 1.6px solid var(--line-2);
+}
+.atr-tick svg { width: 14px; height: 14px; fill: none; stroke: #042220; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; opacity: 0; }
+.atr-route.on .atr-tick { background: var(--aqua); border-color: var(--aqua); }
+.atr-route.on .atr-tick svg { opacity: 1; }
+.atr-name { flex: 1; min-width: 0; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.atr-n { font-size: 13px; color: var(--muted); }
+.atr-new {
+  width: 100%; margin-top: 10px; min-height: 48px; border-radius: 14px; cursor: pointer; font: inherit; font-size: 15px;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  color: var(--aqua); background: none; border: 1px dashed rgba(var(--rgb-accent), 0.5);
+}
+.atr-new svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.atr-new-form { display: flex; gap: 8px; margin-top: 12px; }
+.atr-input {
+  flex: 1; min-width: 0; min-height: 48px; padding: 0 14px; border-radius: 14px; font: inherit; font-size: 16px;
+  color: var(--white); background: rgba(var(--rgb-panel), 0.9); border: 1px solid var(--line-2);
+}
+.atr-create {
+  min-height: 48px; padding: 0 18px; border-radius: 14px; cursor: pointer; font: inherit; font-size: 15px; font-weight: 600;
+  color: #042b28; border: 0; background: linear-gradient(140deg, #7dfff2, var(--aqua));
+}
+.atr-done {
+  width: 100%; margin-top: 12px; min-height: 48px; border-radius: 16px; cursor: pointer; font: inherit; font-size: 15px;
+  font-weight: 600; color: var(--white); background: none; border: 1px solid var(--line-2);
 }

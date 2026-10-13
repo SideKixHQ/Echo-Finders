@@ -20,7 +20,7 @@
  * sits under it, quieter, as the record.
  */
 
-import { useCallback, useState } from "react";
+import { useCallback, useState, type ReactNode } from "react";
 import { cityAt, rarityOf, rarityReasons, type CaptureEvent, type Echo, type EchoCategory, type TravelMode } from "@echofinders/core";
 import { ALL_CATEGORIES, CATEGORY_ICON, toggleCategories, type ChipGroup } from "./categories";
 import { KindGrid } from "./KindPicker";
@@ -53,6 +53,29 @@ interface Props {
   readonly onSave: (echo: Echo) => void;
   /** How you are travelling, because it decides what "being there" means. */
   readonly mode: TravelMode;
+  /** Echoes, or the listener's routes (`Routes.tsx`), drawn in place of the list. */
+  readonly view?: "echoes" | "routes";
+  readonly onView?: (view: "echoes" | "routes") => void;
+  readonly routes?: ReactNode;
+}
+
+/** Echoes | Routes, under the title. */
+function ViewSwitch({ view, onView }: { view: "echoes" | "routes"; onView: (v: "echoes" | "routes") => void }) {
+  return (
+    <div className="coll-views" role="tablist" aria-label="Show">
+      {(["echoes", "routes"] as const).map((v) => (
+        <button
+          key={v}
+          role="tab"
+          aria-selected={view === v}
+          className={view === v ? "coll-view on" : "coll-view"}
+          onClick={() => onView(v)}
+        >
+          {v === "echoes" ? "Echoes" : "Routes"}
+        </button>
+      ))}
+    </div>
+  );
 }
 
 const EMPTY_LINE: Record<TravelMode, string> = {
@@ -78,6 +101,9 @@ export function Collection({
   saved,
   mode,
   faceOf,
+  view = "echoes",
+  onView,
+  routes,
 }: Props) {
   /*
    * The filter: the map's own category chips, with the map's rule (`toggleCategories`),
@@ -97,6 +123,22 @@ export function Collection({
     setTravel(null);
   }, []);
 
+  const switcher = onView && routes ? <ViewSwitch view={view} onView={onView} /> : null;
+
+  if (switcher && view === "routes") {
+    return (
+      <div className="screen-body">
+        <header className="screen-head coll-head">
+          <div className="coll-title">
+            <h1>My Echoes</h1>
+          </div>
+          {switcher}
+        </header>
+        {routes}
+      </div>
+    );
+  }
+
   if (captured.length === 0 && saved.length === 0) {
     return (
       <div className="screen-body">
@@ -106,6 +148,7 @@ export function Collection({
           <div className="coll-title">
             <h1>My Echoes</h1>
           </div>
+          {switcher}
         </header>
         {/*
           Three sentences for three products, because "stand on the spot" is arrival on foot
@@ -154,6 +197,7 @@ export function Collection({
             onClick={() => setFilterOpen((o) => !o)}
           />
         </div>
+        {switcher}
 
         {/*
           Three numbers, because progress belongs on the screen you look things up on

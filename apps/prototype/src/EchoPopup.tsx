@@ -45,6 +45,10 @@ export interface EchoPopupProps {
    */
   readonly onAim?: (echo: Echo) => void;
   readonly onSave: (echo: Echo) => void;
+  /** Opens the route picker (`AddToRoute.tsx`). */
+  readonly onAddToRoute?: (echo: Echo) => void;
+  /** How many of the listener's routes this echo is already on. */
+  readonly inRoutes?: number;
   readonly onPlay: (echo: Echo) => void;
   /**
    * Raise the phone and stand where the photograph was taken.
@@ -97,6 +101,8 @@ export function EchoPopup({
   aimed,
   onAim,
   onSave,
+  onAddToRoute,
+  inRoutes = 0,
   onPlay,
   onCamera,
   onClose,
@@ -243,16 +249,36 @@ export function EchoPopup({
         </button>
       )}
 
-      <button
-        className={saved ? "pop-save on" : "pop-save"}
-        onClick={() => onSave(echo)}
-        aria-pressed={saved}
-      >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-        </svg>
-        {saved ? "Saved" : "Save for later"}
-      </button>
+      {/*
+        Keep it for later, two ways: on the saved list, or on one of your routes. Side by
+        side, because they are the same kind of decision and neither is the main act.
+      */}
+      <div className="pop-keep">
+        <button
+          className={saved ? "pop-save on" : "pop-save"}
+          onClick={() => onSave(echo)}
+          aria-pressed={saved}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+          </svg>
+          {saved ? "Saved" : "Save for later"}
+        </button>
+        {onAddToRoute && (
+          <button
+            className={inRoutes ? "pop-save pop-route on" : "pop-save pop-route"}
+            onClick={() => onAddToRoute(echo)}
+            aria-haspopup="dialog"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="6" cy="18" r="2.2" />
+              <circle cx="18" cy="6" r="2.2" />
+              <path d="M8 18h6.5a3.5 3.5 0 0 0 0-7h-5a3.5 3.5 0 0 1 0-7H16" />
+            </svg>
+            {inRoutes ? (inRoutes === 1 ? "On a route" : `On ${inRoutes} routes`) : "Add to route"}
+          </button>
+        )}
+      </div>
     </div>
   );
 }

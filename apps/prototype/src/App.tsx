@@ -42,6 +42,9 @@ import { keepJourney, readJourney } from "./journey-store";
 import { useDirections, useWalkLine } from "./directions";
 import { DirectionsBar } from "./DirectionsBar";
 import { PlanWalk } from "./PlanWalk";
+import { AddToRoute } from "./AddToRoute";
+import { Routes } from "./Routes";
+import { newRoute, readRoutes, writeRoutes, type SavedRoute } from "./routes-store";
 import type { PlaceHit } from "./place-search";
 import {
   customerId,
@@ -1444,6 +1447,47 @@ export function App() {
     setLookAt(null);
     setPlan({ stops: suggestPlan(start, budgetS, false), budgetS, loop: false, active: false, at: 0, start });
   };
+  /**
+   * The listener's own routes (`routes-store.ts`), kept on the phone.
+   *
+   * Stops are kept in walking order from the first one, so a route reads the way it walks;
+   * starting one orders it again from wherever you are standing.
+   */
+  const [routes, setRoutes] = useState<readonly SavedRoute[]>(readRoutes);
+  useEffect(() => writeRoutes(routes), [routes]);
+  const [routePicker, setRoutePicker] = useState<Echo | null>(null);
+  const [deletedRoute, setDeletedRoute] = useState<{ route: SavedRoute; index: number } | null>(null);
+  const [echoesView, setEchoesView] = useState<"echoes" | "routes">("echoes");
+  const ordered = (ids: readonly string[]) => {
+    const first = ids[0] ? LIBRARY_BY_ID.get(ids[0])?.point.at : undefined;
+    return first ? reorder(first, ids, false) : ids;
+  };
+  const editRoute = (id: string, change: (r: SavedRoute) => SavedRoute) =>
+    setRoutes((all) => all.map((r) => (r.id === id ? change(r) : r)));
+  const toggleOnRoute = (routeId: string, echoId: string) =>
+    editRoute(routeId, (r) => ({
+      ...r,
+      stops: r.stops.includes(echoId) ? r.stops.filter((s) => s !== echoId) : ordered([...r.stops, echoId]),
+    }));
+  const routeStartBlock = !selfDirected
+    ? "Routes are walked. Start one when you are on foot or exploring a city."
+    : !state.position
+      ? "Start needs your location."
+      : null;
+  /** Start a saved route: the planned-walk machinery, already under way, from here. */
+  const startRoute = (r: SavedRoute) => {
+    const start = state.position?.at;
+    if (!start) return;
+    const ids = reorder(start, r.stops.filter((id) => stateOf(id) === "sealed"), false);
+    if (ids.length === 0) return;
+    setSelectedId(null);
+    setLookAt(null);
+    setPlan({ stops: ids, budgetS: plan?.budgetS ?? 60 * 60, loop: false, active: true, at: 0, start });
+    setBeacon(ids[0]!);
+    setTab("map");
+    setWalkingView("map");
+    setPan({ x: 0, y: 0 });
+  };
   const walkLine = useWalkLine(
     plan ? plan.start : null,
     useMemo(() => (plan ? plan.stops.map((id) => LIBRARY_BY_ID.get(id)?.point.at).filter((p): p is LatLng => !!p) : []), [plan]),
@@ -1973,7 +2017,7 @@ export function App() {
                 already doing: everything the sheet's nearby card carried is here, plus the
                 plate and the rule about how close you have to get.
               */}
-              {selectedEcho ? (
+              {selectedEcho && !routePicker ? (
                 <EchoPopup
                   echo={selectedEcho.echo}
                   distanceKm={selectedEcho.distanceKm}
@@ -2014,6 +2058,8 @@ export function App() {
                       }
                     : {})}
                   onSave={toggleSave}
+                  onAddToRoute={setRoutePicker}
+                  inRoutes={routes.filter((r) => r.stops.includes(selectedEcho.echo.id)).length}
                   onPlay={(echo) => {
                     playOrAsk(echo);
                     setSelectedId(null);
@@ -2032,6 +2078,15 @@ export function App() {
                   onClose={() => setSelectedId(null)}
                 />
               ) : null}
+              {routePicker && (
+                <AddToRoute
+                  echo={routePicker}
+                  routes={routes}
+                  onToggle={(id) => toggleOnRoute(id, routePicker.id)}
+                  onCreate={(name) => setRoutes((all) => [...all, newRoute(all, [routePicker.id], name)])}
+                  onClose={() => setRoutePicker(null)}
+                />
+              )}
             </>
           )}
 
@@ -2079,6 +2134,41 @@ export function App() {
               saved={savedNearby}
               onSave={toggleSave}
               mode={roaming ? roamMode : route.mode}
+              view={echoesView}
+              onView={setEchoesView}
+              routes={
+                <Routes
+                  routes={routes}
+                  echoOf={(id) => LIBRARY_BY_ID.get(id)}
+                  isDone={(id) => stateOf(id) !== "sealed"}
+                  saved={savedNearby}
+                  startBlock={routeStartBlock}
+                  onStart={startRoute}
+                  onCreate={() => {
+                    const r = newRoute(routes);
+                    setRoutes([...routes, r]);
+                    return r.id;
+                  }}
+                  onRename={(id, name) => {
+                    if (name.trim()) editRoute(id, (r) => ({ ...r, name: name.trim() }));
+                  }}
+                  onRemoveStop={(id, echoId) => editRoute(id, (r) => ({ ...r, stops: r.stops.filter((s) => s !== echoId) }))}
+                  onAddStop={(id, echoId) => toggleOnRoute(id, echoId)}
+                  onDelete={(id) => {
+                    const index = routes.findIndex((r) => r.id === id);
+                    if (index < 0) return;
+                    setDeletedRoute({ route: routes[index]!, index });
+                    setRoutes(routes.filter((r) => r.id !== id));
+                  }}
+                  deleted={deletedRoute?.route ?? null}
+                  onUndoDelete={() => {
+                    if (!deletedRoute) return;
+                    const { route: r, index } = deletedRoute;
+                    setRoutes((all) => [...all.slice(0, index), r, ...all.slice(index)]);
+                    setDeletedRoute(null);
+                  }}
+                />
+              }
             />
           )}
 
