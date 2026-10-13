@@ -31,3 +31,19 @@ export function TruthMark({ echo, short = false }: { readonly echo: Echo; readon
     </span>
   );
 }
+
+/**
+ * The disclaimer every true-crime echo carries.
+ *
+ * James (2026-10-13): true crime ships "as long as you double check the facts and have a
+ * disclaimer." The facts are checked against the echo's sources before it is approved
+ * (`content:review`); this is the disclaimer, on the card and in the player, so it is seen
+ * before and while the story plays.
+ */
+export const CRIME_NOTE =
+  "Told from public records and published reporting. Anyone accused but not convicted is presumed innocent.";
+
+export function CrimeNote({ echo }: { readonly echo: Echo }) {
+  if (echo.category !== "true-crime") return null;
+  return <p className="crime-note">{CRIME_NOTE}</p>;
+}

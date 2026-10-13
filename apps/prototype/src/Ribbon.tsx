@@ -58,7 +58,7 @@ import type { Rating } from "./ratings";
 import { platePng } from "./archive-plate";
 import { Transcript } from "./Transcript";
 import { shareText } from "./share";
-import { TruthMark } from "./TruthMark";
+import { CrimeNote, TruthMark } from "./TruthMark";
 
 const RARITY_LABEL: Record<string, string> = {
   common: "",
@@ -240,6 +240,7 @@ export function Ribbon({
           <TruthMark echo={echo} />
         </p>
         <h1>{echo.title}</h1>
+        <CrimeNote echo={echo} />
       </div>
 
       <div className="hear-track" ref={track}>
