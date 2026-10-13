@@ -24,11 +24,12 @@
  * becomes something people turn off.
  */
 
-import type { Echo, Upcoming } from "@echofinders/core";
+import type { Echo, Route, Upcoming } from "@echofinders/core";
+import { PlanMap } from "./PlanMap";
 import { CATEGORY_LABEL } from "./categories";
 
 export interface PlanProps {
-  readonly route: { readonly name?: string; readonly id: string };
+  readonly route: Route;
   readonly items: readonly Upcoming[];
   readonly chosen: ReadonlySet<string>;
   readonly onToggle: (echoId: string) => void;
@@ -75,6 +76,14 @@ export function Plan({
           {items.length} {items.length === 1 ? "echo" : "echoes"} along the way · {total} min
           in all
         </p>
+        <PlanMap
+          route={route}
+          items={items}
+          chosen={chosen}
+          onPick={(id) =>
+            document.getElementById(`plan-${id}`)?.scrollIntoView({ behavior: "smooth", block: "center" })
+          }
+        />
         <div className="plan-chips">
           <button
             className={picked.length === items.length && items.length > 0 ? "chip on" : "chip"}
@@ -93,7 +102,7 @@ export function Plan({
           const on = chosen.has(item.echo.id);
           const echo = item.echo;
           return (
-            <article key={echo.id} className={on ? "card card-on" : "card"}>
+            <article key={echo.id} id={`plan-${echo.id}`} className={on ? "card card-on" : "card"}>
               {/*
                 The whole row toggles, so nobody has to aim at a pill when the row is the
                 thing they are thinking about. There is no second tick floating in the
