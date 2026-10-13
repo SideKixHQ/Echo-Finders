@@ -79,6 +79,11 @@ export interface RailProps {
    * describes something it is not about to do.
    */
   readonly panned?: boolean;
+  /**
+   * What the zoom-out is called here. "Whole journey" on a flight or a drive; exploring has
+   * no journey, so it is the route you are walking, or the echoes around you.
+   */
+  readonly overviewLabel?: string;
   readonly onOverview: (overview: boolean) => void;
   /**
    * Walking only: swap between the rose and the street map.
@@ -114,6 +119,7 @@ function RailInner({
   onSonar,
   overview,
   panned,
+  overviewLabel = "Whole journey",
   onOverview,
   roseView,
   roseBackLabel,
@@ -240,7 +246,7 @@ function RailInner({
         className={overview ? "fab on" : "fab"}
         onClick={() => onOverview(!overview)}
         aria-pressed={overview}
-        aria-label={panned ? "Back to where I am" : overview ? "Follow me" : "Whole journey"}
+        aria-label={panned ? "Back to where I am" : overview ? "Follow me" : overviewLabel}
       >
         {panned ? (
           <svg viewBox="0 0 24 24">

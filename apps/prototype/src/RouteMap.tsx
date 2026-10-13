@@ -1162,7 +1162,8 @@ export function RouteMap({
     const duration = framed.current ? 600 : 0;
     framed.current = true;
     if (overview || (!hasFix && !lookAt)) {
-      const points = [...(geometry?.points ?? []), ...library.map((e) => e.point.at)];
+      // You as well: "the whole route" with the walker cut off at the edge is not the whole of it.
+      const points = [...(geometry?.points ?? []), ...library.map((e) => e.point.at), ...(at && !lookAt ? [at] : [])];
       if (points.length === 0) return;
       const lngs = points.map((p) => p.lng);
       const lats = points.map((p) => p.lat);

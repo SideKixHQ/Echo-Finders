@@ -97,6 +97,8 @@ const dev =
 const LIBRARY_BY_ID: ReadonlyMap<string, Echo> = new Map(LIBRARY.map((e) => [e.id, e]));
 /** How far from a searched place its echoes are shown. */
 const LOOK_RADIUS_KM = 25;
+/** Exploring, "everything around me" reaches this far: a city centre and its edges. */
+const OVERVIEW_RADIUS_KM = 6;
 /** Where the sonar on/off choice is remembered. */
 const SONAR_KEY = "echo-finders:sonar";
 const DEFAULT_ROUTE = ROUTES.find((r) => r.id === "lower-manhattan-walk") ?? ROUTES[0]!;
@@ -1219,6 +1221,30 @@ export function App() {
   /* The rose is drawn over the map and wants the whole screen for the dial. */
   const showingRose = onFoot && walkingView === "rose";
 
+  const [plan, setPlan] = useState<{
+    readonly stops: readonly string[];
+    readonly budgetS: number;
+    readonly loop: boolean;
+    readonly active: boolean;
+    readonly at: number;
+    readonly start: LatLng;
+  } | null>(null);
+  /**
+   * What "the whole thing" is while exploring, where there is no journey to fit.
+   *
+   * It was every echo in the library, so the button framed New York to Wilmington and the
+   * pins were dust (James, 2026-10-13: it "zooms out too far when exploring"). On a route
+   * it is the route; otherwise the echoes around where you are looking, or where you are:
+   * everything within a walk of the city, or the nearest few when nothing is that close.
+   */
+  const overviewEchoes = useMemo((): readonly Echo[] => {
+    if (plan) return plan.stops.flatMap((id) => LIBRARY_BY_ID.get(id) ?? []);
+    const from = lookAt?.at ?? state.position?.at;
+    if (!from) return LIBRARY;
+    const byDistance = LIBRARY.map((e) => ({ e, d: distanceKm(from, e.point.at) })).sort((a, b) => a.d - b.d);
+    const near = byDistance.filter((x) => x.d <= OVERVIEW_RADIUS_KM);
+    return (near.length >= 3 ? near : byDistance.slice(0, 8)).map((x) => x.e);
+  }, [plan, lookAt, state.position]);
   /**
    * What is drawn on the map, and therefore what the stepper walks.
    *
@@ -1240,13 +1266,13 @@ export function App() {
     () =>
       roaming
         ? (overview
-            ? LIBRARY
+            ? overviewEchoes
             : lookAt
               ? LIBRARY.filter((e) => distanceKm(lookAt.at, e.point.at) <= LOOK_RADIUS_KM)
               : state.nearby.map((n) => n.echo)
           ).filter((e) => activeCats.has(e.category))
         : onRoute.filter((e) => activeCats.has(e.category)),
-    [roaming, overview, lookAt, state.nearby, activeCats, onRoute],
+    [roaming, overview, overviewEchoes, lookAt, state.nearby, activeCats, onRoute],
   );
 
   /**
@@ -1415,14 +1441,6 @@ export function App() {
    * While it is under way the beacon is always its current stop, so everything built for
    * "take me there" (the directions, the hum, walk mode) works for each leg unchanged.
    */
-  const [plan, setPlan] = useState<{
-    readonly stops: readonly string[];
-    readonly budgetS: number;
-    readonly loop: boolean;
-    readonly active: boolean;
-    readonly at: number;
-    readonly start: LatLng;
-  } | null>(null);
   const planCandidates = useMemo(
     (): Candidate[] =>
       nearby
@@ -1993,6 +2011,7 @@ export function App() {
                   setOverview(next);
                 }}
                 panned={pan.x !== 0 || pan.y !== 0}
+                overviewLabel={roaming ? (plan ? "Whole route" : "Echoes around me") : "Whole journey"}
                 /*
                   Leaving the map hands back the WALK when there is one, and the survey
                   when there is not. Returning everybody to the rose meant that tapping
