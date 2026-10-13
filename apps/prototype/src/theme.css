@@ -884,8 +884,10 @@ body {
 /* ── plan ────────────────────────────────────────────────── */
 /* A deck, not a list. Built on the design's own `.reel` pattern: scroll-snapped cards, one
    at a time, with the next peeking in below so nothing has to say "scroll". */
+/* Above the map's chip, buttons and stepper (18 to 28), which drew over its header and rows
+   once it opened over the map (2026-10-13); under the player and the tab bar. */
 .plan {
-  position: absolute; inset: var(--top-h) 0 var(--nav-h); z-index: 15;
+  position: absolute; inset: var(--top-h) 0 var(--nav-h); z-index: 30;
   background: var(--space); display: flex; flex-direction: column;
 }
 

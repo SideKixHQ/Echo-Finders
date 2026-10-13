@@ -34,8 +34,12 @@ export interface PreflightProps {
   /** Whatever the app is already showing, so "Find my route" does not move you somewhere else. */
   readonly current: Route;
   readonly onStart: (route: Route) => void;
-  /** Open the list of what this journey passes, to pick what plays itself. */
-  readonly onChoose: () => void;
+  /**
+   * Open the list of what this journey passes, to pick what plays itself. Takes the route
+   * on this screen, which is not yet the app's: it showed the walk behind the screen
+   * instead of the flight just picked (found 2026-10-13).
+   */
+  readonly onChoose: (route: Route) => void;
   /**
    * Leave without changing anything.
    *
@@ -367,7 +371,7 @@ export function Preflight({
         {/* Where "Listening" went. It is a decision about this journey, so it lives on the
             screen where the journey is being decided. */}
         {!roaming && !awaitingPair && (
-          <button className="pf-alt" onClick={onChoose}>
+          <button className="pf-alt" onClick={() => onChoose(picked)}>
             Choose what plays itself ({journey.echoes.length} on this route)
           </button>
         )}
