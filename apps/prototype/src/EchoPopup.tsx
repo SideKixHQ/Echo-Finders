@@ -27,7 +27,7 @@ import { rarityOf, type Echo, type TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
 import { platePng } from "./archive-plate";
 import type { PinState } from "./RouteMap";
-import { TruthMark } from "./TruthMark";
+import { CrimeNote, TruthMark } from "./TruthMark";
 
 export interface EchoPopupProps {
   readonly echo: Echo;
@@ -191,6 +191,7 @@ export function EchoPopup({
       </p>
 
       <p className="pop-teaser">{echo.teaser ?? echo.summary}</p>
+      <CrimeNote echo={echo} />
 
       {/*
         One control, and only when there is something to press. The rest of the time this
