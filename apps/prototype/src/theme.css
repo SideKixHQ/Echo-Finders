@@ -981,16 +981,23 @@ body {
 .plan-auto-on .plan-auto-text small { color: var(--ember); }
 
 /* ── coming up ───────────────────────────────────────────── */
-.upnext { padding: 2px 16px 8px; flex: none; 
+/* A small card under the journey chip. It had no position, so it fell to the top of the
+   screen and showed through behind the chip on every flight. */
+.upnext {
+  position: absolute; z-index: 17;
+  top: calc(var(--top-gap) + var(--mapbar-h) + 8px); left: var(--gutter); right: calc(var(--gutter) + 60px);
+  max-width: 340px; padding: 8px 12px 6px; border-radius: 16px;
+  background: rgba(var(--rgb-panel), 0.92); border: 1px solid var(--line);
+  backdrop-filter: blur(12px);
 }
 .upnext-head {
   display: block; font-family: "Space Grotesk", monospace;
   font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--muted); margin-bottom: 6px; margin: 4px 2px 0;}
-.upnext ul { display: flex; flex-direction: column; gap: 3px; }
+.upnext ul { display: flex; flex-direction: column; gap: 0; list-style: none; margin: 0; padding: 0; }
 .upnext button {
   display: flex; align-items: center; gap: 10px; width: 100%;
-  background: none; border: 0; padding: 4px 0; cursor: pointer;
+  min-height: 40px; background: none; border: 0; padding: 4px 0; cursor: pointer;
   font: inherit; color: inherit; text-align: left;
 }
 .upnext-when {
