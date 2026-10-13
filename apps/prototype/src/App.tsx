@@ -1983,7 +1983,9 @@ export function App() {
                 choosing what to hear before it goes past is the whole interaction — so on
                 a journey that carries you, the coming-up list stays.
               */}
-              {!selfDirected && (
+              {/* Not under the list of what plays: since it became a card it sat on the
+                  list's header (found 2026-10-13). */}
+              {!selfDirected && !planOpen && (
                 <UpNext
                   items={upcoming}
                   onPlay={(echo) => {
@@ -2365,7 +2367,15 @@ export function App() {
                   setBeacon(null);
                 }
               }}
-              onChoose={() => setPlanOpen(true)}
+              onChoose={(next) => {
+                // Take the route picked here, close this screen, and open its list over the
+                // map. The list used to open underneath this screen, for the old route.
+                if (!roaming && next.id !== route.id) onSelectRoute(next);
+                setDownloaded(true);
+                setPackageOpen(false);
+                setOverview(false);
+                setPlanOpen(true);
+              }}
               onClose={() => {
                 /*
                  * Closed while flying with no flight picked: put the journey back.
@@ -2454,7 +2464,11 @@ export function App() {
             onSkip={() => setAskFor(null)}
           />
         )}
-        {syncedNow && (
+        {/* Held while the journey screen is open: a demo flight syncs as it passes over
+            Manhattan, and each card landed on top of the airport fields (found 2026-10-13),
+            and then on the list of what plays.
+            It shows when the screen closes. */}
+        {syncedNow && !(onboarded && packageOpen) && !planOpen && (
           <Synced
             event={syncedNow}
             onListen={() => {
