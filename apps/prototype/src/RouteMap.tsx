@@ -237,6 +237,16 @@ export const BASE_ZOOM: Record<TravelMode, number> = {
   flight: 7.5,
 };
 
+/** Whether this device can run MapLibre at all. Asked once. */
+const HAS_WEBGL = (() => {
+  try {
+    const c = document.createElement("canvas");
+    return !!(c.getContext("webgl2") ?? c.getContext("webgl"));
+  } catch {
+    return false;
+  }
+})();
+
 /** A plan with no raster tiles in it, for when MapLibre is drawing the streets. */
 const NO_TILES: TilePlan = { zoom: 0, originX: 0, originY: 0, scale: 1, tiles: [] };
 
@@ -913,6 +923,36 @@ export function RouteMap({
       })
       .join(" ");
   }, [geometry, projection]);
+
+  /*
+   * Coastlines, when there is no MapLibre to draw the map (no WebGL: an old phone, or a
+   * seatback browser). The fallback drew the route on a blank field, so a flight showed a
+   * line over nothing. `public/map/land.json` comes with the app (`scripts/build-land.mjs`),
+   * so it needs no internet, and it is only fetched on a device that cannot run the map.
+   */
+  const [land, setLand] = useState<readonly (readonly [number, number])[][] | null>(null);
+  useEffect(() => {
+    if (HAS_WEBGL) return;
+    fetch("/map/land.json")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((rings) => Array.isArray(rings) && setLand(rings))
+      .catch(() => {});
+  }, []);
+  const landPath = useMemo(() => {
+    if (!land || gl) return "";
+    let d = "";
+    for (const ring of land) {
+      let prev: number | null = null;
+      for (const [lng, lat] of ring) {
+        const { x, y } = projection({ lat, lng });
+        // A jump across the date line is two shapes, not a line across the world.
+        d += `${prev === null || Math.abs(lng - prev) > 180 ? "M" : "L"}${x.toFixed(1)} ${y.toFixed(1)}`;
+        prev = lng;
+      }
+      d += "Z";
+    }
+    return d;
+  }, [land, gl, projection]);
 
   const planPath = useMemo(() => {
     const line = plan?.line;
@@ -1882,6 +1922,7 @@ export function RouteMap({
       {!gl && <rect className="map-field" x="0" y="0" width={box.w} height={box.h} />}
 
       <g clipPath="url(#mapBand)">
+        {landPath && <path className="map-land" d={landPath} />}
         {!gl && !VECTOR_TILES_URL && projection.plan.tiles.map((t) => (
           <image
             key={`${theme}/${projection.plan.zoom}/${t.x}/${t.y}`}

@@ -4985,3 +4985,37 @@ body {
   font-size: 11.5px; line-height: 1.45; color: var(--cool);
 }
 .hear-say .crime-note { margin-top: 10px; font-size: 12.5px; }
+
+/*
+ * Seatback mode (`useSeat` in `App.tsx`): the whole screen, not a phone drawn in the middle
+ * of it. The map runs edge to edge; the things laid over it keep a phone's width down the
+ * left, where they were designed to be read; lists and the player are centred. Comes last
+ * so it wins over the phone rules above, including the coarse-pointer one.
+ */
+body.seat { padding: 0; display: block; }
+.phone.seat {
+  --panel-w: 480px;
+  width: 100vw; max-width: none; height: 100dvh; margin: 0;
+  padding: 0; border-radius: 0; background: var(--space); box-shadow: none;
+  --top-h: 0px; --top-gap: 14px;
+}
+.seat .screen { border-radius: 0; }
+.seat .statusbar, .seat .homebar { display: none; }
+/* Over the map: a phone-width column on the left. */
+.seat .mapbar, .seat .pop, .seat .dirbar, .seat .look-empty, .seat .pw, .seat .atr {
+  right: auto; width: calc(var(--panel-w) - 2 * var(--gutter));
+}
+.seat .pw, .seat .atr { left: 0; width: var(--panel-w); border-radius: 0 22px 0 0; }
+.seat .echobar { right: auto; width: var(--panel-w); }
+.seat .look-back { left: calc(var(--panel-w) / 2); }
+/* The tab bar: three tabs, not three tabs 640px apart. */
+.seat .nav { justify-content: center; }
+.seat .nav button { flex: 0 0 200px; }
+/* Lists and the player: centred, at the width they read at. */
+.seat .screen-body { padding-inline: max(var(--gutter), calc((100% - 760px) / 2)); }
+.seat .hear { padding-inline: max(0px, calc((100% - 760px) / 2)); }
+
+/* Land, when the map cannot run (`landPath` in `RouteMap.tsx`): the basemap's own earth
+   colour and a coastline, so a flight is a line over somewhere. */
+.map-land { fill: #1a2354; stroke: #2f3d80; stroke-width: 1; stroke-linejoin: round; }
+:root[data-theme="light"] .map-land { fill: #eef0f3; stroke: #b9c3d6; }
