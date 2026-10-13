@@ -405,7 +405,13 @@ export function App() {
   // Whether the traveller can steer. Guidance answers "which way should I go", so it is
   // shown to a walker and to a car's navigator, and withheld from anyone being carried —
   // nobody diverts an aircraft towards a good story.
-  const selfDirected = presetFor(route.mode).selfDirected;
+  //
+  // Read from how you are travelling while exploring, not from the route. Exploring keeps
+  // the last route underneath, and after a flight that is the flight: walking off a plane
+  // left the app treating a walker as a passenger — the flight's "Coming up" on the
+  // street map, no "Plan a walk", no sound to find echoes by, routes refusing to start
+  // (found 2026-10-13).
+  const selfDirected = presetFor(roaming ? roamMode : route.mode).selfDirected;
   /**
    * What has been paid for, and the one place a play is refused for money.
    *
@@ -1750,7 +1756,16 @@ export function App() {
                     setPan({ x: 0, y: 0 });
                     setZoom(1);
                   }}
-                  {...(selfDirected && state.position ? { onPlan: openPlanner } : {})}
+                  {...(state.position
+                    ? {
+                        onPlan: () => {
+                          // Offered on the Walk tab whatever you were doing, so it switches
+                          // to walking first: from a flight it was missing altogether.
+                          if (!(roaming && travel === "walking")) switchTravel("walking");
+                          openPlanner();
+                        },
+                      }
+                    : {})}
                   progress={roaming ? null : along}
                   name={
                     roaming
@@ -1770,10 +1785,12 @@ export function App() {
                     onSelectRoute(next);
                   }}
                   onDetails={(mode) => {
-                    /* Airports are picked on the journey screen, so it opens already flying.
-                       Closing it without a flight puts the journey back (see `Preflight`'s
-                       `onClose`), so this can never leave a walk running as a "flight". */
-                    if (mode === "flight" && travel !== "flight") switchTravel("flight");
+                    /* The journey screen opens on the tab it was asked from. Airports are
+                       picked there, so Fly opens it already flying, and closing it without
+                       a flight puts the journey back (see `Preflight`'s `onClose`). Walk
+                       and Drive opened it on the flight you were on, so "Journey details"
+                       from the Walk tab showed flight details (found 2026-10-13). */
+                    if (mode !== travel) switchTravel(mode);
                     openPackage();
                   }}
                 >
