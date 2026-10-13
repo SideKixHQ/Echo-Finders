@@ -1496,6 +1496,22 @@ export function App() {
   };
   const reorder = (start: LatLng, ids: readonly string[], loop: boolean) =>
     orderStops(start, ids.map(candidateFor).filter((c): c is Candidate => c !== null), loop).stops.map((c) => c.id);
+  /** Look at a ZIP code or a place: the journey menu's search and "Where are you?"'s. */
+  const lookSomewhere = (hit: PlaceHit, mode: "walking" | "driving") => {
+    switchTravel(mode);
+    /*
+     * Open on the nearest echoes, not on the ZIP's own centre. A ZIP point marks an area:
+     * 28401's is six kilometres north of downtown Wilmington, which put a hundred echoes
+     * in one bubble at the edge of the map.
+     */
+    const nearest = LIBRARY.map((e) => ({ e, km: distanceKm(hit.at, e.point.at) }))
+      .filter((n) => n.km <= LOOK_RADIUS_KM)
+      .sort((a, b) => a.km - b.km)[0];
+    setLookAt(nearest ? { ...hit, at: nearest.e.point.at } : hit);
+    setSelectedId(null);
+    setPan({ x: 0, y: 0 });
+    setZoom(1);
+  };
   const openPlanner = () => {
     const start = state.position?.at;
     if (!start) return;
@@ -1741,21 +1757,7 @@ export function App() {
                   kept={downloaded}
                   label={roaming ? (lookAt ? lookAt.label : "Exploring") : leftLabel}
                   library={LIBRARY}
-                  onLook={(hit, mode) => {
-                    switchTravel(mode);
-                    /*
-                     * Open on the nearest echoes, not on the ZIP's own centre. A ZIP point
-                     * marks an area: 28401's is six kilometres north of downtown Wilmington,
-                     * which put a hundred echoes in one bubble at the edge of the map.
-                     */
-                    const nearest = LIBRARY.map((e) => ({ e, km: distanceKm(hit.at, e.point.at) }))
-                      .filter((n) => n.km <= LOOK_RADIUS_KM)
-                      .sort((a, b) => a.km - b.km)[0];
-                    setLookAt(nearest ? { ...hit, at: nearest.e.point.at } : hit);
-                    setSelectedId(null);
-                    setPan({ x: 0, y: 0 });
-                    setZoom(1);
-                  }}
+                  onLook={lookSomewhere}
                   {...(state.position
                     ? {
                         onPlan: () => {
@@ -1836,6 +1838,8 @@ export function App() {
                   reachKm={session.nearbyReachKm}
                   onShowAll={() => setCityOpen(true)}
                   widenToKm={WIDEN_TO_KM}
+                  library={LIBRARY}
+                  onLook={(hit) => lookSomewhere(hit, roamMode)}
                   {...(!state.position && locating.kind !== "live"
                     ? {
                         finding: {

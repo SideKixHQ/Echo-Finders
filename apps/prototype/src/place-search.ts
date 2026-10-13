@@ -65,8 +65,32 @@ export function searchPlaces(
     return hits;
   }
 
+  // Towns first: "Wilmington" should find Wilmington, not the first museum in it. Echo
+  // places end "…, town, state"; a town hit sits at the middle of its echoes.
+  const towns = new Map<string, { town: string; state: string; lat: number; lng: number; n: number }>();
+  for (const echo of library) {
+    const parts = echo.point.place.split(",").map((s) => s.trim());
+    if (parts.length < 3) continue;
+    const town = parts[parts.length - 2]!;
+    const state = parts[parts.length - 1]!;
+    if (!town.toLowerCase().includes(q)) continue;
+    const key = `${town}, ${state}`;
+    const t = towns.get(key) ?? { town, state, lat: 0, lng: 0, n: 0 };
+    towns.set(key, { ...t, lat: t.lat + echo.point.at.lat, lng: t.lng + echo.point.at.lng, n: t.n + 1 });
+  }
+  const townHits = [...towns.values()]
+    .sort((a, b) => Number(b.town.toLowerCase().startsWith(q)) - Number(a.town.toLowerCase().startsWith(q)) || b.n - a.n)
+    .slice(0, limit);
+  for (const t of townHits) {
+    hits.push({
+      label: t.town,
+      detail: `${t.state} · ${t.n} ${t.n === 1 ? "echo" : "echoes"}`,
+      at: { lat: t.lat / t.n, lng: t.lng / t.n },
+    });
+  }
+
   // Places: one hit per distinct place name, at its first echo.
-  const seen = new Set<string>();
+  const seen = new Set<string>(townHits.map((t) => t.town));
   for (const echo of library) {
     const place = echo.point.place;
     if (!place.toLowerCase().includes(q) || seen.has(short(place))) continue;

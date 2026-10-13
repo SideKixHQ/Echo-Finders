@@ -26,6 +26,8 @@
  */
 
 import type { Echo } from "@echofinders/core";
+import { LookSomewhere } from "./LookSomewhere";
+import type { PlaceHit } from "./place-search";
 
 export interface NowhereProps {
   /** The closest echo in the whole library, however far off, or null with no fix yet. */
@@ -36,6 +38,13 @@ export interface NowhereProps {
   /** Widen the search. Given only when it would actually turn something up. */
   readonly onWiden?: (() => void) | undefined;
   readonly widenToKm: number;
+  /**
+   * Say where instead: a ZIP code or a place. "Where are you?" had one answer, the
+   * location button, and with location off or nothing near there was no way to tell it
+   * (James, 2026-10-13: "it is difficult to figure out how to tell it where you are").
+   */
+  readonly library: readonly Echo[];
+  readonly onLook: (hit: PlaceHit) => void;
   /**
    * Where the phone is in finding itself, while there is no fix yet.
    *
@@ -50,7 +59,7 @@ export interface NowhereProps {
   };
 }
 
-export function Nowhere({ nearest, reachKm, onShowAll, onWiden, widenToKm, finding }: NowhereProps) {
+export function Nowhere({ nearest, reachKm, onShowAll, onWiden, widenToKm, finding, library, onLook }: NowhereProps) {
   return (
     <div className="nowhere">
       {/*
@@ -80,10 +89,10 @@ export function Nowhere({ nearest, reachKm, onShowAll, onWiden, widenToKm, findi
             <h1>{finding.state === "locating" ? "Finding you…" : "Where are you?"}</h1>
             <p>
               {finding.state === "denied"
-                ? `${finding.why ?? "Location is off"}. Echoes play where they happened, so the app needs to know where you are. Turn location on for this site in your browser's settings, then try again.`
+                ? `${finding.why ?? "Location is off"}. Echoes play where they happened, so the app needs to know where you are. Turn location on for this site in your browser's settings and try again, or type a ZIP code or place below.`
                 : finding.state === "locating"
                   ? "Asking the phone where you are. Outdoors this takes a few seconds."
-                  : "Echoes play where they happened, so the app needs to know where you are."}
+                  : "Echoes play where they happened. Use your location, or type a ZIP code or place to look around there."}
             </p>
           </>
         ) : (
@@ -122,6 +131,9 @@ export function Nowhere({ nearest, reachKm, onShowAll, onWiden, widenToKm, findi
             Use my location
           </button>
         )}
+        <div className="nowhere-look">
+          <LookSomewhere library={library} onPick={onLook} limit={3} />
+        </div>
         <button className={finding ? "nowhere-widen" : "nowhere-go"} onClick={onShowAll}>
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="11" cy="11" r="6.5" />

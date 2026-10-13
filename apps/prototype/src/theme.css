@@ -3358,6 +3358,19 @@ body {
 }
 .nowhere-widen svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; }
 
+/* Say where instead: the journey menu's ZIP-or-place box, the height of the buttons. */
+.nowhere-look { text-align: left; }
+.nowhere-look .jmenu-look { padding: 0; }
+.nowhere-look .jmenu-look-field { height: 50px; margin: 0; border-radius: 15px; border-color: var(--line-2); }
+.nowhere-look .jmenu-look-field:focus-within { border-color: var(--aqua); }
+.nowhere-look .jmenu-hit { min-height: 44px; }
+/* Typing, the keyboard takes half the screen: the picture goes so the answers show. */
+.nowhere:has(.nowhere-look input:focus) .nowhere-seek { display: none; }
+@media (max-height: 700px) {
+  .nowhere-seek { height: 150px; }
+  .nowhere-say p { font-size: 14px; line-height: 1.5; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .nowhere-ring { animation: none; opacity: 0.35; }
 }
