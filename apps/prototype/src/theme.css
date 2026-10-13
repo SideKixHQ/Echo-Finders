@@ -4615,6 +4615,14 @@ body {
   background: var(--aqua); color: #042220; font: inherit; font-size: 14px; font-weight: 500;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
 }
+/* Under "Back to me", when the place looked up has no echoes yet. */
+.look-empty {
+  position: absolute; left: var(--gutter); right: var(--gutter); z-index: 26; margin: 0;
+  top: calc(var(--top-gap, 12px) + var(--mapbar-h, 56px) + 60px);
+  padding: 12px 14px; border-radius: 14px; text-align: center;
+  font-size: 14px; line-height: 1.4; color: var(--white);
+  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line-2);
+}
 .look-back svg {
   width: 18px; height: 18px; fill: none; stroke: currentColor;
   stroke-width: 2; stroke-linecap: round;

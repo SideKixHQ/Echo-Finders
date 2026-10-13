@@ -1285,14 +1285,18 @@ export function App() {
    * order and says no distance rather than inventing one.
    */
   const stepList = useMemo(() => {
-    // Nearest to where the map is looking: the searched place, or where you are.
+    // Ordered from where the map is looking: the searched place, or where you are.
     const from = (roaming ? lookAt?.at : null) ?? state.position?.at ?? null;
+    // But the distance shown is always from you. Measured from the searched place, the bar
+    // said Castle Clinton was "50 m" away to somebody standing in Wilmington.
+    const you = state.position?.at ?? null;
     const items = onMap.map((echo) => ({
       echo,
-      distanceKm: from ? distanceKm(from, echo.point.at) : null,
+      order: from ? distanceKm(from, echo.point.at) : 0,
+      distanceKm: you ? distanceKm(you, echo.point.at) : null,
     }));
-    if (from) items.sort((a, b) => (a.distanceKm ?? 0) - (b.distanceKm ?? 0));
-    return items;
+    if (from) items.sort((a, b) => a.order - b.order);
+    return items.map(({ echo, distanceKm }) => ({ echo, distanceKm }));
   }, [onMap, state.position, roaming, lookAt]);
 
   /**
@@ -1901,6 +1905,13 @@ export function App() {
                   </svg>
                   Back to me
                 </button>
+              )}
+              {/* A place with nothing in it said nothing: an empty navy screen (90210, found
+                  2026-10-13). */}
+              {roaming && lookAt && onMap.length === 0 && (
+                <p className="look-empty" role="status">
+                  No echoes near {lookAt.label.replace(/^ZIP /, "")} yet. We are adding cities.
+                </p>
               )}
 
               {/*

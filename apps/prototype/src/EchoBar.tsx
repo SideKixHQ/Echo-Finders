@@ -348,6 +348,8 @@ function reach(distanceKm: number | null, cue: string | null, speedKph: number):
   const minutes = Math.round((distanceKm / speedKph) * 60);
   if (minutes < 1) return `${Math.round(m / 50) * 50} m`;
   if (minutes < 60) return `${minutes} min`;
+  // Somewhere looked up, not walked to: hours on foot is not an answer, a distance is.
+  if (minutes >= 600) return `${Math.round(distanceKm).toLocaleString("en-US")} km`;
   return `${Math.floor(minutes / 60)}h ${String(minutes % 60).padStart(2, "0")}`;
 }
 
