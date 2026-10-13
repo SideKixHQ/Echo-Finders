@@ -4578,14 +4578,11 @@ body {
 .truth-unverified, .truth-memory { color: var(--muted); }
 .truth-disputed { color: var(--ember-core); }
 .truth-legend { color: var(--cat-legend); }
-/* Its own line under the title; on a short screen (an iPhone SE in Safari, 553px) that line
-   cut 14px off the bottom of the card, so there it joins the category line, short. */
+/* Its own line under the title. It joined the category line on an SE to save height; the
+   card has more room there now (see the type floor), and at 12px the joined line wrapped
+   and pulled the close button off its centre. */
 .pop-truth { display: flex; margin-top: 4px; }
 .pop-truth-inline { display: none; margin-left: 4px; }
-@media (max-height: 600px) {
-  .pop-truth { display: none; }
-  .pop-truth-inline { display: inline-flex; }
-}
 /* In My Echoes it is part of a sentence-case line, so it reads as words, not a stamp. */
 .entry-meta .truth { font: inherit; letter-spacing: 0; text-transform: lowercase; }
 
@@ -5035,3 +5032,40 @@ body.seat { padding: 0; display: block; }
 :root[data-theme="light"] .plan-map-land { fill: #eef0f3; stroke: #b9c3d6; }
 :root[data-theme="light"] .plan-map-stop circle:not(.plan-map-hit) { fill: #fff; }
 :root[data-theme="light"] .plan-map-stop text { fill: #0b0f2b; }
+
+/*
+ * THE TYPE FLOOR ON A PHONE.
+ *
+ * James (2026-10-13): "double check type size on mobile. some seem small." Measured on
+ * every main screen at 390px: the card's description was 11.5px, the place and distance
+ * on the bar 11px, the truth mark 10.5px, the tab labels 11px, and Settings and My Echoes
+ * explained themselves at 11px. Read outdoors, at arm's length, often while walking.
+ *
+ * Three steps: 14px for what you read, 13px for what supports it, 12px for the small
+ * capitals that label things. Map credits, badges and the figure inside the 15-second
+ * skip icon stay small; they are marks, not reading. The tab bar stays at the design's
+ * 11px (`design/SPEC.md`, checked by `audit:spec`): the design wins over the code.
+ */
+.pop-teaser { font-size: 14px; line-height: 1.45; }
+.pop-aim, .feature-name { font-size: 14px; }
+.pop-where, .pop-state, .pop-reach, .pop-save,
+.echobar-place, .echobar-facts,
+.rose-hum small, .hear-acts button, .hear-clock span,
+.entry-text p, .onb-card small, .setting-text small, .setting-cost,
+.feature-fallback, .feature-level, .screen-head p, .jmenu-item small,
+.synced-where, .chip, .hear-voice, .hear-speed { font-size: 13px; }
+.pop-kicker, .pop-rarity, .truth,
+.echobar-kicker span, .echobar-kicker em,
+.hear-kicker span, .hear-rarity, .coll-stat small,
+.entry-glyph i, .entry-meta, .group-head, .panel h3,
+.synced-kicker, .synced-rare-cat, .synced-next-kicker, .city-card-kick { font-size: 12px; }
+.onb-skip { font-size: 14px; }
+/* A short phone (an SE in Safari) cannot hold the card at these sizes: the reading text
+   keeps its size; the decoration gives way (the photograph's strip, the place's second
+   line) and the card may reach closer to the map bar. It was cut off 35px short there. */
+@media (max-height: 700px) {
+  /* Up to just under the map bar (12px gap + 48px chip + 16px), not 120px under it. */
+  .pop { max-height: calc(100% - var(--nav-h) - var(--step-h, 0px) - 76px); }
+  .pop-plate img { height: 64px; }
+  .pop-where { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+}
