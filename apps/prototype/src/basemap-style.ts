@@ -395,7 +395,10 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme, wor
         "text-transform": "uppercase",
         "text-letter-spacing": 0.06,
         "text-max-angle": 30,
-        "symbol-spacing": 320,
+        // More places along a street to try: when the echo pins take one (they keep map
+        // names out from under them, `pin-space` in RouteMap), the name moves along the
+        // street rather than leaving it unnamed.
+        "symbol-spacing": 200,
       },
       paint: text,
     },

@@ -26,7 +26,7 @@ import { CATEGORY_ICON, CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, characterFor } from "./Echo";
 import { ClusterDot, FAN_GAP, GROUP_PX } from "./PinCluster";
 import { TILE_ATTRIBUTION, TILE_URL, VECTOR_ATTRIBUTION, VECTOR_TILES_URL, planTiles, toWorld, type TilePlan } from "./tiles";
-import type { Map as MapLibre } from "maplibre-gl";
+import type { GeoJSONSource, Map as MapLibre } from "maplibre-gl";
 import { MapCanvas } from "./MapCanvas";
 import { MODE_ICON } from "./travel";
 import { useSmoothedPoint } from "./use-smoothed";
@@ -407,6 +407,59 @@ export function RouteMap({
   const [frame, setFrame] = useState(0);
   /** A finger (or a wheel) is moving the map right now. */
   const gesturing = useRef(false);
+
+  /*
+   * ROOM FOR THE PINS IN THE MAP'S OWN LABELLING.
+   *
+   * The pins are drawn over MapLibre, so its street and landmark names had no idea they
+   * were there and sat underneath them: "St. James Episcopal Parish" through a numbered
+   * dot, "Innes Park" under another (James, 2026-10-13: "fix the landmark labels sitting
+   * under the pins"). So every echo also goes into the map as an invisible 40px mark, the
+   * pin's footprint, drawn above the labels and placed first. MapLibre leaves out any name
+   * that would collide with one, as it does when two names collide, and puts it back when
+   * the pin moves away. Re-added whenever the style is (the theme switch replaces it).
+   */
+  // Keyed on which echoes, not on the array: `library` is a new array on every GPS fix.
+  const pinKey = library.map((e) => e.id).join(",");
+  const pinSpace = useMemo(
+    () => ({
+      type: "FeatureCollection" as const,
+      features: library.map((e) => ({
+        type: "Feature" as const,
+        properties: {},
+        geometry: { type: "Point" as const, coordinates: [e.point.at.lng, e.point.at.lat] },
+      })),
+    }),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [pinKey],
+  );
+  const pinSpaceNow = useRef(pinSpace);
+  pinSpaceNow.current = pinSpace;
+  useEffect(() => {
+    if (!gl) return;
+    const SIZE = 40;
+    const ensure = () => {
+      if (!gl.isStyleLoaded()) return;
+      if (!gl.hasImage("pin-space")) gl.addImage("pin-space", { width: SIZE, height: SIZE, data: new Uint8Array(SIZE * SIZE * 4) });
+      if (!gl.getSource("pin-space")) gl.addSource("pin-space", { type: "geojson", data: pinSpaceNow.current });
+      if (!gl.getLayer("pin-space"))
+        gl.addLayer({
+          id: "pin-space",
+          type: "symbol",
+          source: "pin-space",
+          // Always placed, and what it covers is taken: the names give way, not the pins.
+          layout: { "icon-image": "pin-space", "icon-allow-overlap": true, "icon-ignore-placement": false },
+        });
+    };
+    ensure();
+    gl.on("styledata", ensure);
+    return () => {
+      gl.off("styledata", ensure);
+    };
+  }, [gl]);
+  useEffect(() => {
+    (gl?.getSource("pin-space") as GeoJSONSource | undefined)?.setData(pinSpace);
+  }, [gl, pinSpace]);
 
   /*
    * HOLD WHAT IS UNDER A FINGER UNTIL IT LIFTS.
