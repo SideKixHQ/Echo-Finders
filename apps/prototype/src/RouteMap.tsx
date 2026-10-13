@@ -1223,7 +1223,9 @@ export function RouteMap({
       const near = library
         .map((e) => ({ at: e.point.at, km: distanceKm(lookAt, e.point.at) }))
         .sort((a, b) => a.km - b.km)
-        .slice(0, 6)
+        // Twelve, and not quite street level: six nearest were often all one house, which
+        // opened North Carolina on a single bubble of thirteen.
+        .slice(0, 12)
         .map((n) => n.at);
       if (near.length < 2) {
         gl.easeTo({ center: [lookAt.lng, lookAt.lat], zoom: base - 1, offset: bandOffset, duration });
@@ -1236,7 +1238,7 @@ export function RouteMap({
             [Math.min(...lngs), Math.min(...lats)],
             [Math.max(...lngs), Math.max(...lats)],
           ],
-          { padding: { top: inset.top + 40, bottom: inset.bottom + 30, left: inset.side + 20, right: inset.side + 70 }, maxZoom: base, duration },
+          { padding: { top: inset.top + 40, bottom: inset.bottom + 30, left: inset.side + 20, right: inset.side + 70 }, maxZoom: base - 1, duration },
         );
       }
     }

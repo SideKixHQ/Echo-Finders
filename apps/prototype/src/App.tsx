@@ -2454,7 +2454,29 @@ export function App() {
                 setLookFurtherKm(Math.max(WIDEN_TO_KM, Math.ceil(need * 1.1)));
                 setCityOpen(false);
                 setTab("map");
-                setOverview(true);
+                /*
+                  Exploring, "Go" looks at the place, the way a ZIP or a place search does:
+                  centred on it, its nearest echoes in view, "Back to me" to return. It
+                  switched on the overview instead, which with no location framed the whole
+                  library, and off centre: North Carolina pinned to the left edge of the
+                  Atlantic (James, 2026-10-13: "shouldnt it be centered?").
+                */
+                if (roaming) {
+                  setOverview(false);
+                  setPan({ x: 0, y: 0 });
+                  // Its busiest spot, not its middle: North Carolina's middle is a field
+                  // between Wilmington, the Outer Banks and the Blue Ridge.
+                  const busiest = cluster.echoes.reduce(
+                    (best, e) => {
+                      const n = cluster.echoes.filter((o) => distanceKm(e.point.at, o.point.at) <= 5).length;
+                      return n > best.n ? { at: e.point.at, n } : best;
+                    },
+                    { at: cluster.at, n: 0 },
+                  );
+                  setLookAt({ label: cluster.label, detail: "", at: busiest.at });
+                } else {
+                  setOverview(true);
+                }
                 /*
                   And the street map, not the rose. On foot the resting screen is the rose,
                   which covers the map, so "Go" closed the city and handed back the same
