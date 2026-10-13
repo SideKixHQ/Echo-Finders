@@ -5019,3 +5019,19 @@ body.seat { padding: 0; display: block; }
    colour and a coastline, so a flight is a line over somewhere. */
 .map-land { fill: #1a2354; stroke: #2f3d80; stroke-width: 1; stroke-linejoin: round; }
 :root[data-theme="light"] .map-land { fill: #eef0f3; stroke: #b9c3d6; }
+
+/* The route, small, at the top of the plan (`PlanMap.tsx`). */
+.plan-map { display: block; width: 100%; height: auto; max-height: 170px; margin: 12px 0 2px; }
+.plan-map-sea { fill: #0d1336; }
+.plan-map-land { fill: #1a2354; stroke: #2f3d80; stroke-width: 1; }
+.plan-map-route { fill: none; stroke: var(--aqua); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1 6; opacity: 0.9; }
+.plan-map-stop { cursor: pointer; }
+.plan-map-stop circle:not(.plan-map-hit) { fill: #0b0f2b; stroke: var(--cool); stroke-width: 1.6; }
+.plan-map-stop text { fill: var(--white); font: 600 10px "Space Grotesk", monospace; text-anchor: middle; pointer-events: none; }
+.plan-map-stop.on circle:not(.plan-map-hit) { fill: var(--ember); stroke: var(--ember); }
+.plan-map-stop.on text { fill: #1a0f00; }
+.plan-map-hit { fill: transparent; }
+:root[data-theme="light"] .plan-map-sea { fill: #c6d3e0; }
+:root[data-theme="light"] .plan-map-land { fill: #eef0f3; stroke: #b9c3d6; }
+:root[data-theme="light"] .plan-map-stop circle:not(.plan-map-hit) { fill: #fff; }
+:root[data-theme="light"] .plan-map-stop text { fill: #0b0f2b; }
