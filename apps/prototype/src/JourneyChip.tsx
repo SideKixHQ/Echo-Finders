@@ -23,7 +23,8 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import type { Echo, Route } from "@echofinders/core";
 import { MODE_ICON } from "./travel";
-import { loadZips, searchPlaces, type PlaceHit } from "./place-search";
+import type { PlaceHit } from "./place-search";
+import { LookSomewhere } from "./LookSomewhere";
 
 export type Travel = "walking" | "driving" | "flight";
 
@@ -241,58 +242,3 @@ const Tick = () => (
     <path d="M5 12.5 L10 17.5 L19 7" />
   </svg>
 );
-
-/**
- * A ZIP code or a place, typed: the map goes and looks there.
- *
- * Under "Around here" because it is the same kind of choice: where the map is looking, with
- * no route. The ZIP list is fetched the first time this box is used, not before.
- */
-function LookSomewhere({ library, onPick }: { readonly library: readonly Echo[]; readonly onPick: (hit: PlaceHit) => void }) {
-  const [query, setQuery] = useState("");
-  const [table, setTable] = useState<ReadonlyMap<string, { lat: number; lng: number }> | null>(null);
-  const hits = query.trim().length >= 2 ? searchPlaces(query, table ?? new Map(), library) : [];
-  const waiting = /^\d{2,5}$/.test(query.trim()) && table === null;
-  return (
-    <div className="jmenu-look">
-      <label className="jmenu-look-field">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="11" cy="11" r="6.5" />
-          <path d="M16 16l4.5 4.5" />
-        </svg>
-        <input
-          type="search"
-          inputMode="search"
-          autoComplete="off"
-          placeholder="ZIP code or place"
-          aria-label="Look somewhere else: a ZIP code or a place"
-          value={query}
-          onFocus={() => {
-            if (!table) void loadZips().then(setTable);
-          }}
-          onChange={(e) => setQuery(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key !== "Enter" || !hits[0]) return;
-            // Kept here: picking closes the menu and puts focus back on the chip, and the
-            // same Enter then landed on the chip and opened the menu again, over the place
-            // just found (found 2026-10-12). A phone keyboard's Search key is this Enter.
-            e.preventDefault();
-            onPick(hits[0]);
-          }}
-        />
-      </label>
-      {waiting && <p className="jmenu-empty">Finding ZIP codes…</p>}
-      {!waiting && query.trim().length >= 2 && hits.length === 0 && (
-        <p className="jmenu-empty">Nothing by that name or ZIP code yet.</p>
-      )}
-      {hits.map((hit) => (
-        <button key={hit.label + hit.at.lat} className="jmenu-item jmenu-hit" onClick={() => onPick(hit)}>
-          <span>
-            {hit.label}
-            {hit.detail && <small>{hit.detail}</small>}
-          </span>
-        </button>
-      ))}
-    </div>
-  );
-}
