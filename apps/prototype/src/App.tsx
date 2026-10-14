@@ -1945,19 +1945,37 @@ export function App() {
               {roaming && lookAt && (
                 <button
                   className="look-back"
-                  aria-label={`Looking at ${lookAt.label}. Back to where I am`}
+                  aria-label={
+                    state.position
+                      ? `Looking at ${lookAt.label}. Back to where I am`
+                      : `Looking at ${lookAt.label}. Look somewhere else`
+                  }
                   onClick={() => {
                     setLookAt(null);
                     setPan({ x: 0, y: 0 });
                     setZoom(1);
                   }}
                 >
-                  {/* Where it is looking is on the journey chip already; this says how back. */}
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="12" cy="12" r="3" />
-                    <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
-                  </svg>
-                  Back to me
+                  {/* Where it is looking is on the journey chip already; this says how back.
+                      With no fix there is no "me" to go back to: it goes back to "Where are
+                      you?", which is where another place is typed (found 2026-10-13). */}
+                  {state.position ? (
+                    <>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="3" />
+                        <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
+                      </svg>
+                      Back to me
+                    </>
+                  ) : (
+                    <>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="6.5" />
+                        <path d="M16 16l4.5 4.5" />
+                      </svg>
+                      Somewhere else
+                    </>
+                  )}
                 </button>
               )}
               {/* A place with nothing in it said nothing: an empty navy screen (90210, found
