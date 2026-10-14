@@ -1,0 +1,59 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Congo Square, the open plaza inside Louis Armstrong Park off North Rampart Street; public park, open in daytime.
+# Position: Overture "Congo Square" public_plaza point (701 N Rampart St), checked against fitted N Rampart / St Peter / Orleans street lines; sits about 80 m inside the park from Rampart near the Orleans Avenue line (medium confidence).
+id: new-orleans-the-noise-on-the-common
+title: "The Noise on the Common"
+summary: "In 1819 an architect heard a sound he took for a horse mill, and found five or six hundred people dancing."
+place: "Congo Square, Louis Armstrong Park, North Rampart Street, New Orleans, Louisiana"
+at: { lat: 29.96126, lng: -90.06863 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 97
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.75
+tags: [new-orleans, new-orleans-core, treme, congo-square, music, slavery]
+teaser: "He thought it was horses on a wooden floor."
+script: |
+  Look out across this open square.
+
+  One Sunday afternoon early in eighteen nineteen, an architect named Benjamin Latrobe set out from the old town for a walk along a canal. He went up St. Peter Street, toward the common ground at the back of the city, and he heard something he could not place.
+
+  He thought it was a horse mill. Horses, tramping round and round on a wooden floor.
+
+  It was people. Five or six hundred of them, he reckoned, gathered in an open space at the edge of the common. People would come to call that space Congo Square.
+
+  They stood in circles, and inside each circle was a ring of dancers, the largest not ten feet across.
+
+  He wrote down what he saw. An old man sitting astride a drum, beating it with the edge of his hand, with incredible quickness. A stringed instrument with a gourd for a body and a small carved figure of a seated man at the top of its neck, played by a man who looked eighty or ninety years old. Women answering the music in two notes. A man singing in a language that was not French.
+
+  He was told they met here every Sunday afternoon. He did not like what he heard, and his journal says so in ugly terms.
+
+  Then he walked on, about a mile along the canal. He came back after sunset, near the same spot.
+
+  They were still playing.
+detail: |
+  Latrobe's journals were published in 1905 as The Journal of Latrobe; the passage falls
+  between his entries of 9 January and 8 March 1819. The National Park Service notes that
+  enslaved people gathered on Sundays at a market outside the city's rampart by the
+  mid-eighteenth century, and that the dancing in Congo Square ended before the Civil War.
+pronunciations:
+  - written: Latrobe
+    say: luh-TROBE
+  - written: Congo Square
+    say: KONG-go Square
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The journal of Latrobe; being the notes and sketches of an architect, naturalist and traveler in the United States from 1796 to 1820 (New York, D. Appleton, 1905), pp. 179-182"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/05039052/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Jazz Origins in New Orleans"
+    publisher: "National Park Service, New Orleans Jazz National Historical Park"
+    url: https://www.nps.gov/jazz/learn/historyculture/history_early.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

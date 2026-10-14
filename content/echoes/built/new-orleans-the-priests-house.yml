@@ -1,0 +1,56 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Pedestrian Chartres Street in front of the Presbytère, facing its arcade.
+# Position: Grid offset from the Overture Jackson Square centre, checked against the Overture Presbytère point (751 Chartres St); the Presbytère stands right of the cathedral as you face it (medium confidence).
+id: new-orleans-the-priests-house
+title: "The Priests' House"
+summary: "The Presbytère was built as a home for the cathedral's clergy. It stalled for fifteen years, and no priest ever lived in it."
+place: "The Presbytère, Jackson Square, New Orleans, Louisiana"
+at: { lat: 29.95805, lng: -90.06317 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 86
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, jackson-square, french-quarter, spanish-colonial, architecture]
+teaser: "It was built to be the priests' house. No priest ever lived in it."
+script: |
+  Look at the building to the right of the cathedral. It is a near twin of the Cabildo on the other side. Arches below, arches above.
+
+  It was built to be the priests' house. The name says so. The Presbytère.
+
+  No priest ever lived in it.
+
+  The rich Spaniard who paid for the cathedral started this building in the seventeen nineties, and got it as far as the first row of arches. Then, in seventeen ninety-eight, he died.
+
+  And it stopped. For years it was just the ground floor, roofed over with boards and rented out.
+
+  The church wardens finally finished it in eighteen thirteen. By then New Orleans belonged to the United States. They let it to shopkeepers, and then to the courts, because the rent was useful. The parish priest went on living in a small frame house round the back.
+
+  In the nineteen thirties, workmen stripped the stucco off the walls, and found the pause written in the brickwork. At the sills of the upper windows, the bricks and the mortar change completely.
+
+  Look at those upper window sills now. The join is covered again, but that line is about fifteen years of nothing.
+
+  The priests' house became a courthouse, and later a museum. It has been a lot of things.
+
+  It was never a home.
+pronunciations:
+  - written: Presbytère
+    say: PREZ-bih-tair
+  - written: Cabildo
+    say: kah-BEEL-doh
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Presbytere, Jackson Square, New Orleans (HABS LA-18-5), written historical and descriptive data"
+    publisher: "Historic American Buildings Survey, National Park Service; Library of Congress"
+    url: https://www.loc.gov/item/la0008/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Presbytere, New Orleans, Louisiana"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/the-presbytere-new-orleans-louisiana.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

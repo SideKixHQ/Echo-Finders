@@ -1,0 +1,66 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: St. Peter Street sidewalk beside the Cabildo's side wall, midway between Chartres Street and Pirate's Alley.
+# Position: Grid offset from the Overture Jackson Square centre, checked against the Overture Cabildo point and the Upper Pontalba building on the same street (medium confidence).
+id: new-orleans-the-candle-on-good-friday
+title: "The Candle on Good Friday"
+summary: "In 1788 a chapel candle burned most of New Orleans. The old city you walk through was largely rebuilt afterwards, under Spain."
+place: "The Cabildo, St. Peter Street side, Jackson Square, New Orleans, Louisiana"
+at: { lat: 29.95747, lng: -90.06403 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, jackson-square, french-quarter, fires, spanish-colonial]
+teaser: "Look at the arched windows along this wall. Part of it is older than the fire."
+script: |
+  You are standing beside the side wall of the Cabildo. Look at the row of arched windows along the ground floor.
+
+  Keep them in mind.
+
+  On Good Friday in seventeen eighty-eight, candles were burning in the private chapel of the colony's military treasurer, a couple of blocks up Chartres Street from here. The story is that one fell against the lace on the altar.
+
+  The fire went from house to house.
+
+  A correspondent for a European newspaper reported something else. He said the priests would not allow the alarm to be rung, because on Good Friday every bell must be silent.
+
+  By the end, eight hundred and fifty-six houses were gone. The church. The town hall. The guardhouse that stood right here.
+
+  A few years later, another fire took much of what had been rebuilt.
+
+  So here is the thing about the French Quarter. Much of the old city you walk through was built after those fires, while Spain ruled it. A New Orleans writer in the eighteen nineties put it plainly. An ill-built French town went into the ashes. A stately Spanish city came out.
+
+  Now look again at the wall beside you. When the Cabildo went up on this spot, part of the burned guardhouse wall was still standing. The builders kept it, and laid out these windows to its old rhythm.
+
+  The town hall is Spanish. Part of the wall it stands on is older than the fire.
+pronunciations:
+  - written: Cabildo
+    say: kah-BEEL-doh
+  - written: Chartres
+    say: CHAR-ters
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "New Orleans, the place and the people (1895)"
+    publisher: "Grace King, Macmillan, 1895; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/01008773/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "A history of Louisiana (1905)"
+    publisher: "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/34036146/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Cabildo, 711 Chartres Street, New Orleans (HABS LA-18-4), written historical and descriptive data"
+    publisher: "Historic American Buildings Survey, National Park Service; Library of Congress"
+    url: https://www.loc.gov/item/la0007/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Vieux Carré: A Creole Neighborhood in New Orleans (Teaching with Historic Places)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

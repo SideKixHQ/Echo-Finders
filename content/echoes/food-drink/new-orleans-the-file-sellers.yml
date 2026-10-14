@@ -1,0 +1,64 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Riverside sidewalk of Decatur Street under the French Market arcade, just downriver of St. Ann Street.
+# Position: Grid offset from the Overture Jackson Square centre past the Overture Café du Monde point (800 Decatur St); Overture French Market entries scatter over 300 m, so this is the market's upriver end by layout (low confidence).
+id: new-orleans-the-file-sellers
+title: "The Filé Sellers"
+summary: "The French Market began as goods laid out on the open levee. Into the 1900s, Choctaw women came here to sell filé for gumbo."
+place: "French Market, Decatur Street, New Orleans, Louisiana"
+at: { lat: 29.95765, lng: -90.06172 }
+triggerRadiusKm: 0.05
+category: food-drink
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, french-market, choctaw, gumbo]
+teaser: "Before there was a roof here, there was the open levee and whatever people had to sell."
+script: |
+  Walk in under the long roof of the market and look along the line of columns.
+
+  Before there was any roof here, there was the open levee, just downriver of the old parade ground. People laid out what they had to sell on the ground. Vegetables, fruit, game, skins, herbs, baskets. Hunters and trappers. Black vendors. Native traders. In the Spanish years a butcher's shed went up, and the market grew along the river from there.
+
+  One thing kept arriving, long after the sheds went up.
+
+  At the start of the twentieth century, Choctaw women still came here twice a week from their settlement at Bayou Lacombe, across Lake Pontchartrain. They crossed the lake by steamer, walked from the lakeshore to this market, and sat with bundles of herbs, baskets, and one thing above all.
+
+  Dried sassafras leaves, pounded into a powder. Filé.
+
+  It was a Native food first. Creole cooks took it up to thicken their gumbo, and kept it. A guidebook from nineteen oh four says the Choctaw sellers here always found a ready sale.
+
+  So if your gumbo in this city comes with filé, that powder is a Native food, and for a long time, Choctaw women sold it right here.
+pronunciations:
+  - written: Filé
+    say: FEE-lay
+  - written: Bayou Lacombe
+    say: BY-oo la-KOHM
+  - written: Pontchartrain
+    say: PONCH-er-train
+  - written: Choctaw
+    say: CHOK-taw
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Picayune's guide to New Orleans (1904)"
+    publisher: "The Picayune, New Orleans, 1904; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "New Orleans, the place and the people (1895)"
+    publisher: "Grace King, Macmillan, 1895; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/01008773/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Creole Food Ways"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/creole-food-ways.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Norman's New Orleans and environs (1845)"
+    publisher: "B. M. Norman, New Orleans, 1845; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/01008776/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

@@ -1,0 +1,59 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Esplanade Avenue sidewalk in front of the Old U.S. Mint's portico.
+# Position: Overture Old US Mint point (400 Esplanade Ave) moved about 30 m toward Esplanade Avenue, checked against 435 Esplanade on the opposite side (medium confidence).
+id: new-orleans-the-flag-on-the-mint
+title: "The Flag on the Mint"
+summary: "In April 1862 sailors raised a US flag on the Mint. William Mumford tore it down, and in June he was hanged in front of the building."
+place: "Old U.S. Mint, Esplanade Avenue, New Orleans, Louisiana"
+at: { lat: 29.9617, lng: -90.0576 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, civil-war, esplanade]
+teaser: "Look up at the roof of the Mint. A flag flew there for about three hours."
+script: |
+  Look up at the roof of the Mint, above the columns.
+
+  Sunday the twenty-seventh of April, eighteen sixty-two. A Union fleet had fought its way up the river, and the city had nothing left to resist it with. The mayor refused to raise the United States flag himself. So the navy sent a party ashore to raise one here.
+
+  They put it up at about eight in the morning, and went back to their ship. They left no guard. Instead, guns up in the rigging of the warship lying off the Mint were aimed at the flagstaff, with orders to fire on anyone who touched it.
+
+  At eleven, the crews gathered on deck for prayers.
+
+  About twenty minutes in, the guns went off. Men were on the roof. They tore the flag down and got away with it.
+
+  Accounts disagree about who reached it first. They agree on who ended up with it. William Mumford.
+
+  When General Benjamin Butler took command of the city a few days later, Mumford was arrested and tried for treason by a military commission. His wife and three children knelt in front of Butler to beg for his life.
+
+  On the seventh of June, he was hanged on a scaffold built in front of the Mint, near where you are standing.
+
+  Butler's side called it justice. Mumford's side called it murder, and him a martyr.
+
+  The flag he pulled down had been flying for a little over three hours.
+pronunciations:
+  - written: Esplanade
+    say: ess-pluh-NAYD
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "General Butler in New Orleans (1864)"
+    publisher: "James Parton, Mason Brothers, 1864; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/32008202/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "A history of Louisiana (1905)"
+    publisher: "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/34036146/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (1904)"
+    publisher: "The Picayune, New Orleans, 1904; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

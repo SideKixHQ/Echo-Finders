@@ -1,0 +1,52 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: The riverfront promenade (the Moonwalk) at the rail, directly across from Jackson Square; public walkway, stay behind the rail.
+# Position: Grid offset riverward from the Overture Jackson Square centre past the Overture Washington Artillery Park point; the Overture "Moon Walk" point (453 St Peter St) disagrees and was not used (medium confidence).
+id: new-orleans-the-river-above-the-street
+title: "The River Above the Street"
+summary: "You walk uphill to reach the river here. At flood the Mississippi rises above the streets behind you, and its bend is the Crescent."
+place: "Moonwalk riverfront promenade, opposite Jackson Square, New Orleans, Louisiana"
+at: { lat: 29.95661, lng: -90.06178 }
+triggerRadiusKm: 0.06
+category: land
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, mississippi-river, levee, riverfront]
+teaser: "You walked uphill to get here. You probably did not notice."
+script: |
+  Stand at the rail and look at the water. Then turn round and look back at the cathedral.
+
+  To get here from the square, you walked uphill. You probably did not notice. A guidebook from nineteen oh four made the same point. The slope starts a long way back, it said, and rises so gently that you cannot feel it.
+
+  That slope is the levee. A great bank of earth between the city and the Mississippi, added to again and again as the years went on.
+
+  Because when the river floods, it rises far above the level of the streets behind you. The cathedral you are looking at sits lower than the water in front of you can reach.
+
+  A New Orleans writer in the eighteen nineties described the yellow floods rising high above the land, threatening to tear the levees like cobwebs.
+
+  Now look left and right along the bank. The river does not run straight past the old city. It bends around it.
+
+  The same writer said the river had shaped its banks here into the edges of the moon in its first quarter.
+
+  That is the crescent. That is why it is the Crescent City. Not a nickname somebody chose. A description of the water you are standing above.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Picayune's guide to New Orleans (1904)"
+    publisher: "The Picayune, New Orleans, 1904; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "New Orleans, the place and the people (1895)"
+    publisher: "Grace King, Macmillan, 1895; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/01008773/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Vieux Carré: A Creole Neighborhood in New Orleans (Teaching with Historic Places)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

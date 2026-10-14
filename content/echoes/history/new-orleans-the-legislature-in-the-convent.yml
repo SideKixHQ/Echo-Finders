@@ -1,0 +1,47 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk on the river side of Chartres Street, outside the gate in the convent wall at 1100 Chartres.
+# Position: Grid offset from the Overture Old Ursuline Convent point (1100 Chartres St) onto the Chartres sidewalk, street line fitted from Overture addresses (medium confidence).
+id: new-orleans-the-legislature-in-the-convent
+title: "The Legislature in the Convent"
+summary: "The Ursuline nuns lived behind this wall until 1824. For a short time afterwards, the Louisiana legislature met inside."
+place: "Old Ursuline Convent, Chartres Street, New Orleans, Louisiana"
+at: { lat: 29.96086, lng: -90.06075 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, ursulines, convent, architecture]
+teaser: "Look through the gate in the wall along Chartres Street."
+script: |
+  Look through the gate in the wall along Chartres Street.
+
+  The building behind it is two storeys of plastered brick. Its middle section steps forward under a triangular pediment, and a steep slate roof sits over the whole thing.
+
+  It was built for the Ursuline nuns. They lived behind this wall until eighteen twenty-four, when they moved to a new convent further downriver. A city guide of nineteen-oh-four called this the oldest building in Louisiana.
+
+  Then the empty convent found a tenant nobody would have predicted.
+
+  In eighteen thirty-one, the State of Louisiana leased the building from the nuns. The state legislature held its sessions inside these walls. For a while, the laws of Louisiana were argued over in a house built for nuns.
+
+  It did not last. The lease ran out, and the nuns gave the building to the archbishop of New Orleans. For most of the rest of the century, it was where the archbishops lived.
+
+  That same guide told its readers to look for one thing inside. The staircase. Each step, it said, was a single massive piece of timber, worn down by the feet of many generations.
+
+  Most of those feet belonged to nuns and priests. For one short stretch, some of them belonged to politicians.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Picayune's Guide to New Orleans (1904), The Oldest Building in Louisiana"
+    publisher: "The Picayune, via the Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Archbishopric, 1114 Chartres Street, New Orleans, Orleans Parish, LA (HABS LA-18-2)"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/la0106/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

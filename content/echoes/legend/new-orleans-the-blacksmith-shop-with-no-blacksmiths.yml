@@ -1,0 +1,61 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk on the river side of Bourbon Street, opposite 941 Bourbon at the St. Philip Street corner, with both corners in view.
+# Position: Grid offset from the Overture Lafitte's Blacksmith Shop Bar point (941 Bourbon St) to the opposite Bourbon sidewalk, street line fitted from Overture addresses (medium confidence).
+id: new-orleans-the-blacksmith-shop-with-no-blacksmiths
+title: "The Blacksmith Shop With No Blacksmiths"
+summary: "Lafitte's Blacksmith Shop is an unproved legend. The documented Lafitte link is across the street, in Marie Louise Villard's house."
+place: "Lafitte's Blacksmith Shop, Bourbon and St. Philip streets, New Orleans, Louisiana"
+at: { lat: 29.96097, lng: -90.06353 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 96
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The blacksmith shop is a tradition in print since at least 1884; the National Park Service
+  says no evidence confirms it. Marie Louise Villard's house across the street is documented.
+  The script says which is which.
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, lafitte, legend, bourbon-street]
+teaser: "Look at the little cottage on the corner of Bourbon and Saint Philip."
+script: |
+  Look at the small, low cottage on the corner of Bourbon and Saint Philip. Its walls are brick packed between wooden posts, the way houses here were built long ago, and in places the plaster over them has worn thin.
+
+  It is called Lafitte's Blacksmith Shop. The story goes that the smuggler Jean Lafitte and his brother Pierre ran a forge on this corner, as cover for their real business.
+
+  It is an old story. George Washington Cable printed it as fact in eighteen eighty-four. By the nineteen-thirties there was a bronze plate on the building that read Lafitte's Rendezvous, site blacksmith shop, eighteen ten.
+
+  But when federal surveyors studied the cottage in the nineteen-thirties, they found no record of who built it, or when. And the National Park Service, which tells the Lafittes' story today, says plainly that no evidence confirms the legend.
+
+  What the records do show is across the street.
+
+  On the opposite corner stood a house bought in eighteen sixteen by Marie Louise Villard, a free woman of color and Pierre Lafitte's partner of many years. They had seven children together. The house was in her name, so the government could not seize it for the brothers' crimes. Pierre was in this neighborhood often. That, the Park Service suggests, may be how the legend found this corner.
+
+  So the Lafittes probably never shod a horse here.
+
+  But one of them had a family just over the road.
+pronunciations:
+  - written: Lafitte
+    say: lah-FEET
+  - written: Villard
+    say: vee-YAR
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Jean Lafitte, A Pirate's Life"
+    publisher: "National Park Service, Jean Lafitte National Historical Park and Preserve"
+    url: https://www.nps.gov/jela/learn/historyculture/jean-lafitte-a-pirate-s-life.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "941 Bourbon Street (Cottage), New Orleans, Orleans Parish, LA (HABS LA-24)"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/la0018/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Creoles of Louisiana (1884), by George W. Cable, chapter The Pirates of Barataria"
+    publisher: "Charles Scribner's Sons, via the Library of Congress"
+    url: https://www.loc.gov/item/01008769/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

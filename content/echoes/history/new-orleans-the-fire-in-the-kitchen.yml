@@ -1,0 +1,57 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk on the far side of Royal Street from 1140 Royal, at the Governor Nicholls Street corner, looking across at the house.
+# Position: Grid offset from the Overture point for 1140 Royal St to the opposite Royal Street sidewalk, street line fitted from Overture addresses (medium confidence).
+id: new-orleans-the-fire-in-the-kitchen
+title: "The Fire in the Kitchen"
+summary: "In April 1834 an enslaved woman set fire to the house on this corner. It was the only way she could see to end what was being done there."
+place: "1140 Royal Street, corner of Governor Nicholls Street, New Orleans, Louisiana"
+at: { lat: 29.96199, lng: -90.06138 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, slavery, royal-street]
+teaser: "Look across at the house on the corner."
+script: |
+  Look across at the big house on the corner of Royal Street.
+
+  On the morning of the tenth of April, eighteen thirty-four, flames broke out of it. The fire had started in the kitchen.
+
+  It was started on purpose. A woman held captive in this house told the mayor afterwards that she had set it herself. It was, she said, the only way left to end what she and the others were suffering. The English writer Harriet Martineau, who heard the story in this city a few years later, says it was the cook, kept chained within a few yards of the kitchen fire.
+
+  Neighbours and firemen ran in. They forced open doors that had always been kept locked, and behind them they found seven people in chains, starved, covered in wounds. The editor of the city newspaper, the Bee, was there. He wrote that he saw where the collars and manacles had cut into their flesh.
+
+  They were carried through the streets to the mayor's office, and their irons were struck off. At least two thousand people came to see them that day.
+
+  The woman who held them, Madame Lalaurie, never answered for it. She left in her carriage, reached the lake, and escaped by boat to Mobile and then to France. A crowd tore her house apart.
+
+  Neither of the old accounts gives the name of the woman who lit that fire.
+
+  What was being done in this house came out because she set it on fire.
+pronunciations:
+  - written: Lalaurie
+    say: lah-LOH-ree
+  - written: Martineau
+    say: MAR-tin-oh
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "New Orleans As It Was, Episodes of Louisiana Life (1895), by Henry C. Castellanos, chapter A Tale of Slavery Times"
+    publisher: "L. Graham and Son, via the Library of Congress"
+    url: https://www.loc.gov/item/01008770/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Retrospect of Western Travel, volume one (1838), by Harriet Martineau"
+    publisher: "Saunders and Otley, via the Library of Congress"
+    url: https://www.loc.gov/item/01027893/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's Guide to New Orleans (1904), 1140 Royal Street"
+    publisher: "The Picayune, via the Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

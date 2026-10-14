@@ -1,0 +1,78 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk on North Rampart Street just below Esplanade Avenue, in the Faubourg Marigny.
+# Position: Between Overture address points at 1422 and 1700 N Rampart St, about 90 m below the fitted Rampart/Esplanade intersection (medium confidence).
+id: new-orleans-love-street
+title: "Love Street"
+summary: "Bernard de Marigny named his new streets Love, Good Children, Piety, Desire and Craps. Most of the names are gone."
+place: "North Rampart Street below Esplanade Avenue, Faubourg Marigny, New Orleans, Louisiana"
+at: { lat: 29.96640, lng: -90.06278 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 91
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  The street names and their later renaming are documented in the 1900, 1904 and 1913
+  Picayune guides and Grace King's Creole Families of New Orleans (1921). Why one street
+  was called Craps is disputed: King says Marigny named it for a game he was addicted to,
+  the 1904 guide says boys playing the game there gave the street its name, and neither
+  cites a source. The failed sale of the faubourg is King's retelling of an American
+  narrator's account, and the script hedges it.
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, marigny, street-names, creole]
+teaser: "This stretch of Rampart was called Love Street."
+script: |
+  Look at the street sign. It says Rampart.
+
+  Back on the old town side of Esplanade, that name makes sense. The city's defenses ran along that line. But this stretch was laid out later, on a plantation, when its owner cut his land into streets and lots in the early eighteen-hundreds. He named this one himself.
+
+  He called it Rue d'Amour. Love Street.
+
+  His name was Bernard de Marigny, and he named the whole neighborhood like a poet. Poet Street. Good Children Street. Piety. Desire. And Craps.
+
+  Craps is where the stories split. Grace King, writing about the old Creole families in nineteen twenty-one, said he named it after a game he was addicted to. A guidebook from nineteen hundred and four says the street got the name because boys played the game there. Neither one gives a source. Take your pick.
+
+  Marigny meant to build a Creole city that would outshine the American one growing up across Canal Street. It never came. One story says a sale of the whole faubourg fell apart in a notary's office, because his wife did not come to sign.
+
+  Later the city tidied up its map. Love Street became part of Rampart. Good Children became St. Claude. Moreau became Chartres.
+
+  The pretty names, King wrote, are all that survive of his scheme. Even some of those were taken off the signs.
+detail: |
+  The 1913 Picayune guide dates the laying out of the Faubourg Marigny to 1805. The guides
+  credit the naming of Love Street to "Mandeville de Marigny"; Bernard de Marigny de
+  Mandeville is the same man. The 1904 guide notes that older residents still called this
+  stretch Love Street after the city council made it part of Rampart.
+pronunciations:
+  - written: Marigny
+    say: MAIR-uh-nee
+  - written: Rue d'Amour
+    say: roo dah-MOOR
+  - written: faubourg
+    say: FOH-burg
+  - written: Esplanade
+    say: ESS-pluh-nade
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Creole families of New Orleans (New York, Macmillan, 1921), by Grace King, chapter on Bernard de Marigny"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/21004871/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), street names and the new Rampart Street"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), North Rampart and the French Quarter beyond the Vieux Carre"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/13004346/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (1900), Good Children street, now St. Claude"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/00001333/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

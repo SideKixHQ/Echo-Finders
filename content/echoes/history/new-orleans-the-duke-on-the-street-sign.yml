@@ -1,0 +1,65 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk at the corner of Bourbon and Dumaine streets, where both street signs are in view.
+# Position: Bourbon and Dumaine intersection from street lines fitted to Overture addresses, set on the river-side, upriver corner (medium confidence).
+id: new-orleans-the-duke-on-the-street-sign
+title: "The Duke on the Street Sign"
+summary: "Bourbon Street was named for a French duke, not a drink. The streets around it are a family tree of the French court."
+place: "Bourbon and Dumaine streets, French Quarter, New Orleans, Louisiana"
+at: { lat: 29.96018, lng: -90.06421 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, bourbon-street, street-names]
+teaser: "Look at the two street signs on this corner."
+script: |
+  Look at the two street signs on this corner. Bourbon. And Dumaine.
+
+  On this street of all streets, people tend to assume the name has something to do with what is in their glass.
+
+  It doesn't.
+
+  When French engineers laid out this town in the seventeen-twenties, they drew a grid of streets and gave them names from the very top of French society. George Washington Cable, writing in eighteen eighty-four, listed who was being honoured. The dukes of Orleans, Chartres, Maine and Bourbon. The princes of Conti and Condé. The Count of Toulouse.
+
+  So the grid around you is a kind of family tree of the French court. Orleans Street. Chartres Street. Conti. Toulouse. And Bourbon, for the Duke of Bourbon.
+
+  Now look at the other sign again. Dumaine. Say it slowly. Du Maine. On the old French plans of the city, it is written Rue du Maine. The street of the Duke of Maine.
+
+  A city guide from nineteen-oh-four put it simply. All through the old French Quarter, it said, the street names suggest the city's royal descent.
+
+  The duke is still up there on the sign.
+
+  Everything else on Bourbon Street came later.
+pronunciations:
+  - written: Dumaine
+    say: doo-MAYN
+  - written: Condé
+    say: kon-DAY
+  - written: Conti
+    say: KON-tie
+  - written: Toulouse
+    say: too-LOOSE
+  - written: Chartres
+    say: CHAR-ters
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Creoles of Louisiana (1884), by George W. Cable"
+    publisher: "Charles Scribner's Sons, via the Library of Congress"
+    url: https://www.loc.gov/item/01008769/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Vieux Carré, A Creole Neighborhood in New Orleans (Teaching with Historic Places), Map 3 street key"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's Guide to New Orleans (1904)"
+    publisher: "The Picayune, via the Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

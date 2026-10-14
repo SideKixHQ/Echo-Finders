@@ -1,0 +1,59 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk on the far side of Dumaine Street from 632 Dumaine, between Royal and Chartres, looking across at the gallery and roof.
+# Position: Grid offset from the Overture Madame John's Legacy point (632 Dumaine St) to the opposite Dumaine sidewalk, street line fitted from Overture addresses (medium confidence).
+id: new-orleans-the-woman-who-never-lived-here
+title: "The Woman Who Never Lived Here"
+summary: "Madame John's Legacy is named for a character in a George Washington Cable story. The woman who really held this ground was Elizabeth Real."
+place: "Madame John's Legacy, 632 Dumaine Street, New Orleans, Louisiana"
+at: { lat: 29.95952, lng: -90.063 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 118
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, architecture, women, literature]
+teaser: "Look at the roof sweeping down over the long front gallery."
+script: |
+  Look across at the house set up high on its brick ground floor, with a long wooden gallery across the front, and a roof that sweeps down steeply and then flattens out over the gallery, like the brim of a hat.
+
+  It is called Madame John's Legacy.
+
+  Madame John never lived here. She never lived anywhere.
+
+  She is a character in a story by the New Orleans writer George Washington Cable. In it, a gentleman named John, about to die, gives his house to the woman who has looked after him, and to her baby daughter. Cable describes it as a frame house with a deep front gallery, the roof running out over it. She sells it, puts the money in a bank, and the bank fails.
+
+  Somewhere along the way, the story attached itself to this house. By nineteen-oh-four a city guide was pointing visitors here as the house that John left behind. The name stuck.
+
+  The real story of this ground, according to the federal survey of the building, belongs to someone else. Her name was Elizabeth Real. Her husband, a ship's captain, held this lot in the seventeen-twenties. He was killed at Natchez in seventeen twenty-nine. She married the innkeeper next door, outlived him too, and kept this property in her own hands for about fifty years.
+
+  When she made her will in seventeen sixty-nine, she was described as ill in body because of her great age, but sound in spirit.
+
+  The house in front of you came after her. A building contract signed weeks after the great fire of seventeen eighty-eight describes a house that matches it.
+
+  So the name on this house belongs to a woman somebody made up. The ground under it belonged to one who was very real.
+pronunciations:
+  - written: Elizabeth Real
+    say: Elizabeth ray-AHL
+  - written: Natchez
+    say: NATCH-iz
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Madame John's Legacy, 632 Dumaine Street, New Orleans, Orleans Parish, LA (HABS LA-39, with addendum)"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/la0023/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Old Creole Days (1890 edition), by George W. Cable, story 'Tite Poulette"
+    publisher: "Charles Scribner's Sons, via the Library of Congress"
+    url: https://www.loc.gov/item/04015080/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's Guide to New Orleans (1904)"
+    publisher: "The Picayune, via the Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

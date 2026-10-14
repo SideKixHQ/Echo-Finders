@@ -1,0 +1,56 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk on Basin Street at Bienville Street, on the French Quarter edge, looking across Basin Street to the site of Storyville.
+# Position: Fitted Basin/Bienville intersection (Basin St line rms 9 m from Overture address points; Bienville line from its own address points) (medium confidence).
+id: new-orleans-a-district-with-his-name
+title: "A District With His Name On It"
+summary: "Storyville, the legal red-light district across Basin Street, was named for the man whose ordinance created it."
+place: "Basin Street at Bienville Street, across from the site of Storyville, New Orleans, Louisiana"
+at: { lat: 29.95801, lng: -90.07205 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+tags: [new-orleans, new-orleans-core, storyville, basin-street, jazz, music]
+teaser: "The name outlived every building."
+script: |
+  Look across Basin Street, away from the French Quarter.
+
+  For twenty years, the blocks over there were a legal red-light district. It operated openly from eighteen ninety-seven.
+
+  The newspapers called it Storyville, and explained the name. The district had been set up by an ordinance, and the man behind the ordinance was named Story.
+
+  Music was a sideline here, but a real one. Bands worked the dance halls and cabarets. Pete Lala's. The hundred and one Ranch. The Tuxedo Dance Hall. The Big Twenty-Five. A young pianist named Jelly Roll Morton started out playing in this neighborhood.
+
+  Jazz was not born here, whatever the legend says. The National Park Service is firm about that. But Storyville put the new music in front of people who might never have heard it otherwise.
+
+  It ended at midnight on the twelfth of November, nineteen seventeen. Everything closed at the stroke of twelve, at the request of the Navy Department. One wire report said more than a third of the district's two thousand women had already left the city.
+
+  In the nineteen-forties nearly every building over there was torn down for public housing.
+
+  The name outlived every one of them.
+detail: |
+  The National Park Service says only six original Storyville structures and remnants
+  survive, among them Frank Early's Saloon. The Tango Belt, another early jazz district,
+  lay just across Basin and North Rampart streets in the French Quarter.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Jazz Neighborhoods"
+    publisher: "National Park Service, New Orleans Jazz National Historical Park"
+    url: https://www.nps.gov/jazz/learn/historyculture/jazz-map.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Restricted District at New Orleans Closed, Evening capital news, Boise, Idaho, 13 November 1917, p. 1"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn88056024/1917-11-13/ed-1/?sp=1
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Jelly Roll Morton interviews conducted by Alan Lomax (National Recording Registry essay)"
+    publisher: "Library of Congress, National Recording Preservation Board"
+    url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Lomax-JellyRollMorton.pdf
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts

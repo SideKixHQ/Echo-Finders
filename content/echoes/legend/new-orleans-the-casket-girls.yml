@@ -1,0 +1,63 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk on the convent side of Ursulines Avenue, between Chartres and Decatur streets, looking up at the convent roof.
+# Position: Grid offset from the Ursulines Avenue line, fitted from Overture addresses on both sides of the 600 block, and the Chartres line; the convent's Ursulines frontage is assumed, not checked (medium confidence).
+id: new-orleans-the-casket-girls
+title: "The Casket Girls"
+summary: "France sent young women to marry colonists, each with a small chest. The old accounts agree on little else, and the story keeps growing."
+place: "Old Ursuline Convent, Ursulines Avenue side, New Orleans, Louisiana"
+at: { lat: 29.9604, lng: -90.06058 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 107
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The women and their chests are a colonial tradition the old accounts disagree about, and
+  Cable himself called the record slender. The modern vampire tale has no source at all. The
+  script says both out loud.
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, ursulines, legend, women]
+teaser: "Look up at the convent roof, and the small windows set into it."
+script: |
+  Look up at the convent roof, and the small windows set into it.
+
+  The nuns who lived here belong to one of the oldest stories in New Orleans. In the early years of the colony, France sent young women across the ocean to marry its colonists. Each one came with a small chest of clothes. The French called them the filles à la cassette. In English, the casket girls.
+
+  That much the old writers agree on. Almost nothing else.
+
+  George Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king. He says those sixty were the first of many shiploads. Grace King, eleven years later, has sixty girls too. She says they were the last.
+
+  A city guide from nineteen-oh-four tells it differently again. Twenty girls, years earlier, each chosen by the Bishop of Quebec, each given a little chest as proof of her good character.
+
+  Cable admitted the record was slender. The Creoles, he wrote, were never careful about checking their traditions.
+
+  So the story kept growing. In recent years some tellers have added something none of the old writers ever mentioned. That the little chests carried vampires into the city, and that they are still up there, under this roof.
+
+  There is no record of that. None. It is a legend built on top of a legend.
+
+  The women were real. Their chests were real. And as far as anyone ever wrote down at the time, what was in them was clothes.
+pronunciations:
+  - written: filles à la cassette
+    say: fee ah lah kah-SET
+  - written: Quebec
+    say: kay-BECK
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Creoles of Louisiana (1884), by George W. Cable"
+    publisher: "Charles Scribner's Sons, via the Library of Congress"
+    url: https://www.loc.gov/item/01008769/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "New Orleans, the Place and the People (1895), by Grace King"
+    publisher: "Macmillan and Co., via the Library of Congress"
+    url: https://www.loc.gov/item/01008773/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's Guide to New Orleans (1904)"
+    publisher: "The Picayune, via the Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

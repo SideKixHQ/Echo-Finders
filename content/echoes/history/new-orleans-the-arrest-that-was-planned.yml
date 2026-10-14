@@ -1,0 +1,70 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk at Press and Royal streets, beside the railroad tracks; stay off the tracks.
+# Position: Royal St line between Overture points at 2832 and 2940 Royal St, crossed with the Press St line through "Press Street Station" (5 Homer Plessy Way) and 1135 Press St; corner of the historical marker not confirmed (medium-low confidence).
+id: new-orleans-the-arrest-that-was-planned
+title: "The Arrest That Was Planned"
+summary: "Homer Plessy's 1892 arrest on an East Louisiana train was arranged in advance, to test Louisiana's separate car law."
+place: "Press and Royal streets, Faubourg Marigny, New Orleans, Louisiana"
+at: { lat: 29.96397, lng: -90.04856 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 97
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, marigny, plessy, civil-rights, railroad]
+teaser: "Everyone knew it was going to happen."
+script: |
+  Look along the railroad tracks.
+
+  On the seventh of June, eighteen ninety-two, a shoemaker named Homer Plessy bought a first-class ticket on the East Louisiana Railroad, for Covington, across the lake. He took a seat in the car for white passengers.
+
+  Under a Louisiana law two years old, that seat was not his. The law said railroads must keep separate cars by race, and under that law Plessy was Black. His own petition later told the court that no one could see it in him.
+
+  The conductor told him to move. He refused. He was arrested and taken to the parish jail.
+
+  None of it was an accident. A committee of citizens had organized to test the law in court, and Plessy volunteered. The railroad was in on the plan. The detective who arrested him had been hired ahead of time. The arrest is remembered here, by these tracks.
+
+  The case went all the way to the Supreme Court. In eighteen ninety-six it lost, seven votes to one. The ruling made separate but equal the law of the land, and it stood for almost sixty years.
+
+  The one dissenting justice wrote that the Constitution is color-blind.
+
+  More than a century later, a descendant of the judge who first ruled against Plessy and a member of the Plessy family came to this story together. They were photographed standing on the tracks where he was arrested.
+
+  A Plessy and a Ferguson, side by side.
+detail: |
+  The Comité des Citoyens formed in 1891. Plessy's trial judge was John Howard Ferguson of
+  the Orleans Parish Criminal Court. The Supreme Court heard the case on 13 April 1896 and
+  decided it on 18 May; Brown v. Board of Education overturned it in 1954. One National
+  Park Service page gives the date of the arrest as 8 June; the Supreme Court record and the
+  Jean Lafitte park page give 7 June.
+pronunciations:
+  - written: Plessy
+    say: PLESS-ee
+  - written: Marigny
+    say: MAIR-uh-nee
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Homer Plessy"
+    publisher: "National Park Service, Jean Lafitte National Historical Park and Preserve"
+    url: https://www.nps.gov/people/homer-plessy.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "U.S. Reports: Plessy v. Ferguson, 163 U.S. 537 (1896)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/usrep163537/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Plessy in the Making"
+    publisher: "National Park Service, Brown v. Board of Education National Historical Park"
+    url: https://www.nps.gov/brvb/learn/historyculture/plessy.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Plessy and Ferguson (program announcement, 2010)"
+    publisher: "National Park Service, Brown v. Board of Education National Historical Park"
+    url: https://www.nps.gov/brvb/learn/news/plessyferguson.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
