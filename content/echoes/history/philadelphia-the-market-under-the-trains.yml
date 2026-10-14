@@ -1,0 +1,56 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: East sidewalk of Twelfth Street at the Reading Terminal Market entrance, between Filbert and Arch, below the old train shed.
+# Position: Overture market stalls at 51 N 12th St (39.95346 to 39.95353, -75.15915 to -75.15944) and Panera at 48 N 12th St across the street (39.95384, -75.15966); spot on the market side of Twelfth Street (medium confidence).
+id: philadelphia-the-market-under-the-trains
+title: "The Market Under the Trains"
+summary: "A railroad came for the block where the city's biggest market shed stood. The market ended up underneath it."
+place: "Reading Terminal Market, Twelfth and Filbert streets, Philadelphia, Pennsylvania"
+at: { lat: 39.95345, lng: -75.15955 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, center-city, markets, railroads, reading-terminal]
+teaser: "The roof above this market was built to hold trains."
+script: |
+  Stand outside the market doors on Twelfth Street and look up. The building keeps going, well above where a market would need a roof. That high shed was built for trains.
+
+  Start a little earlier, on Market Street, round the corner. For generations, Philadelphia's main street had market sheds down its middle. In eighteen fifty-nine they were cleared away, and the traders needed somewhere new.
+
+  Two big market houses went up on the north side of Market Street, between Eleventh and Twelfth. One was the Farmers' Market, the largest market shed of its kind in the city. Beside it, at Twelfth Street, was the Franklin Market, which old housekeepers just called the Twelfth Street Market.
+
+  Thirty years later the Reading Railroad wanted a station in the middle of town. It ran its tracks in from Ninth and Green, raised up on an elevated line, and it chose this exact block. The Reading Terminal opened for traffic on the twentieth of January, eighteen ninety-three.
+
+  So the trains came in up there, under that great arched roof.
+
+  And the market is still down here, underneath it.
+pronunciations:
+  - written: Reading
+    say: RED-ing
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Market Street, Philadelphia; the most historic highway in America, its merchants and its story, by Joseph Jackson (1918)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/18015276/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Reading Terminal, 11th & Arch Streets, Philadelphia (HAER PA-417), index to photographs"
+    publisher: "Historic American Engineering Record, Library of Congress"
+    url: https://www.loc.gov/item/pa3514/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Philadelphia & Reading Railroad, Terminal Station, 1115-1141 Market Street, Philadelphia (HABS PA-1528), index to photographs"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/pa1051/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Scene inside the Reading Terminal Market in Philadelphia, Pennsylvania"
+    publisher: "Carol M. Highsmith Archive, Library of Congress"
+    url: https://www.loc.gov/item/2019688706/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

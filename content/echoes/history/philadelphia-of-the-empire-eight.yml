@@ -1,0 +1,52 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Arch Street sidewalk beside the Free Quaker Meeting House, looking up at the tablet on its Arch Street wall.
+# Position: Overture "Free Quaker Meetinghouse" (39.95247, -75.14864, 500 Arch St), south-west corner of Fifth and Arch; spot moved about 15 m north to the Arch Street sidewalk (medium confidence).
+id: philadelphia-of-the-empire-eight
+title: "Of the Empire, Eight"
+summary: "The Quakers who fought in the Revolution were thrown out of meeting, so they built their own, and dated it oddly."
+place: "Free Quaker Meeting House, Fifth and Arch streets, Philadelphia, Pennsylvania"
+at: { lat: 39.95262, lng: -75.14868 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 107
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, independence-mall, free-quakers, quakers, revolution, religion]
+teaser: "Look up under the eaves. The building gives two dates."
+script: |
+  Stand on Arch Street and look up at the side of this small brick meeting house, high under the eaves. There is a stone tablet set into the wall.
+
+  It says the house was erected by general subscription, for the Free Quakers, in seventeen eighty-three. Then it gives a second date. Of the Empire, eight.
+
+  Quakers do not fight. During the Revolution most Philadelphia Friends would not take up arms, pay war taxes, or swear an oath of allegiance. Some members broke with that. They served in the army, sat on the committee of safety, took seats in the legislature.
+
+  The Society of Friends disowned them. Read them out of meeting, as it was called.
+
+  So they started their own. They called themselves the Free Quakers, and people called them the Fighting Quakers. They paid for this house by subscription, and one of the people who gave was Benjamin Franklin, who was not a Quaker at all.
+
+  As for the Empire. A Philadelphia newspaper told a story about it in nineteen eighteen. When the stone was being set, someone asked one of the Free Quakers what the words meant. I tell thee, friend, he is supposed to have said, it is because our country is destined to be the great empire over all the world. That is the story. Nobody recorded the conversation at the time.
+
+  After the war, some of the fighters made their peace with their old meetings and went back. By the eighteen thirties, services here had stopped.
+
+  They dated their building from the birth of a country. The country lasted. The congregation did not.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Free Quaker Meeting House"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-freequaker.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Free Quakers Meetinghouse, 500 Arch Street, Philadelphia (HABS PA-1120)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/pa0762/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Fighting Quakers, by Henry Longcope. Evening Public Ledger (Philadelphia), March 26, 1918, page 12"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045211/1918-03-26/ed-1/?sp=12
+    retrievedAt: "2026-10-14"
+    rights: public-domain

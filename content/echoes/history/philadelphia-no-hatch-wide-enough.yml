@@ -1,0 +1,53 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Penn's Landing waterfront promenade beside the cruiser's berth, south of the Independence Seaport Museum, in view of the stern.
+# Position: Overture "Cruiser Olympia and Submarine Becuna" at 39.94359, -75.14147 and Independence Seaport Museum at 39.94573, -75.14085; spot set on the promenade between them, nearer the ship; exact berth and stern position not confirmed (low confidence).
+id: philadelphia-no-hatch-wide-enough
+title: "No Hatch Wide Enough"
+summary: "In 1921 the cruiser Olympia carried the Unknown Soldier home from France on her open deck, because no hatch could take the casket level."
+place: "USS Olympia, Penn's Landing, Philadelphia, Pennsylvania"
+at: { lat: 39.94400, lng: -75.14110 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, waterfront, navy, world-war-one, ships]
+teaser: "Find the back end of the ship. That is where he rode."
+script: |
+  Look at the old cruiser at the pier, and find her stern, the back end of the ship.
+
+  In October nineteen twenty-one, the Olympia took on a coffin at Le Havre, in France. Inside was an American soldier killed in the First World War, whose name nobody would ever know. He was going home to be buried at Arlington as the Unknown Soldier.
+
+  The crew had a problem. The casket could not go below. No hatch on the ship was large enough to pass it through without tipping it on end. So it was secured on deck, at the stern, and later moved up onto the after signal bridge.
+
+  Near the Azores the ship ran into a storm so violent that the captain feared she might capsize. He asked the chaplain to pray. The men off watch gathered in the mess hall, holding on to the stanchions as she rolled, and prayed that the soldier high above them would get home.
+
+  He did. On the ninth of November the Olympia came up the Potomac with her flag at half mast, and the guns along the river fired salutes as she passed.
+
+  He crossed the whole Atlantic out in the weather, rather than be carried below standing on his end.
+pronunciations:
+  - written: Le Havre
+    say: luh HAH-vruh
+  - written: Azores
+    say: AY-zorz
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "U.S.S. Olympia, Penn's Landing, 211 South Columbus Boulevard (HAER PA-428), written historical and descriptive data"
+    publisher: "Library of Congress, Historic American Engineering Record"
+    url: https://www.loc.gov/item/pa3529/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), November 9, 1921, page 1"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1921-11-09/ed-1/?sp=1
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Time Will Not Dim the Glory of Their Deeds: President Dwight D. Eisenhower and the Tomb of the Unknown Soldier"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/time-will-not-dim-the-glory-of-their-deeds-president-dwight-d-eisenhower-and-the-tomb-of-the-unknown-soldier.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

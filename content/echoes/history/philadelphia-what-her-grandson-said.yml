@@ -1,0 +1,52 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: North sidewalk of Arch Street in front of the Betsy Ross House, between Second and Third streets.
+# Position: Overture places the Betsy Ross House at 39.95221, -75.14467 (239 Arch St); odd-numbered Arch Street points sit near 39.9525, so the spot is on the north sidewalk in front (high confidence).
+id: philadelphia-what-her-grandson-said
+title: "What Her Grandson Said"
+summary: "The story of Washington asking Betsy Ross to sew the first flag was first told in 1870, by her grandson. What is and is not on record."
+place: "Betsy Ross House, Arch Street, Philadelphia, Pennsylvania"
+at: { lat: 39.95235, lng: -75.14467 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 86
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  Betsy Ross's work as an upholsterer and flag-maker is on record. The visit from
+  Washington, Robert Morris and George Ross, and her part in the first Stars and Stripes,
+  rest on family tradition first made public by her grandson William Canby in 1870; no
+  record of Congress, letter, diary or newspaper of 1776 or 1777 mentions it, as Franklin
+  Hanford set out in 1917. The script says so plainly.
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, old-city, flag, betsy-ross, myth-and-memory]
+teaser: "Everyone knows the scene in this house. Nobody wrote it down for ninety-three years."
+script: |
+  This small house on Arch Street is famous for one scene. George Washington and two gentlemen of Congress call on a young widow, an upholsterer named Betsy Ross. They show her a rough sketch of a flag. She suggests changes. She sews the first Stars and Stripes.
+
+  Here is what is on record. Betsy Ross was real. Her first husband died in seventeen seventy-six, and she carried on his trade. For about fifty years she was an expert needlewoman and flag-maker. During the war she made colours for Pennsylvania's ships. After her, one of her daughters kept the flag business going.
+
+  Here is what is not. The visit appears in no record of Congress, no letter, no diary and no newspaper of the time. Washington wrote a great deal, and never mentioned it.
+
+  The story was first told in public in eighteen seventy, ninety-three years after the flag was adopted. Her grandson, William Canby, read it to the Historical Society of Pennsylvania. It was, he said, what the family had heard her say.
+
+  For most people, the evidence is a picture. Washington seated in her parlour, the new flag across her lap.
+
+  That picture was printed in eighteen ninety-three. Prints of it went to people who joined a club raising money to save this house.
+pronunciations:
+  - written: Canby
+    say: KAN-bee
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Did Betsey Ross design the flag of the United States of America? (Franklin Hanford, 1917)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/17010994/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Birth of our nation's flag (C. H. Weisgerber, 1893), catalogue record"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/2004669130/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

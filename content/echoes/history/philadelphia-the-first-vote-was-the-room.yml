@@ -1,0 +1,65 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Carpenters' Court, the public walk running south from Chestnut Street between Third and Fourth, in sight of the hall.
+# Position: Overture places Carpenters' Hall at 39.94814, -75.14723; Chestnut Street line from Overture points at 317 and 325 Chestnut (39.9491-39.9495); spot set in the court between street and hall (medium confidence).
+id: philadelphia-the-first-vote-was-the-room
+title: "The First Vote Was the Room"
+summary: "In 1774 the Speaker offered the Continental Congress the State House. The delegates walked here and chose a carpenters' guild hall instead."
+place: "Carpenters' Hall, Carpenters' Court off Chestnut Street, Philadelphia, Pennsylvania"
+at: { lat: 39.94845, lng: -75.14725 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 83
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, old-city, continental-congress, revolution, guilds]
+teaser: "The first question the Continental Congress voted on was where to sit."
+script: |
+  Look down the court from Chestnut Street. At the end of it is a small brick hall with a cupola on top. It was built by a guild of carpenters, and the guild still owns it.
+
+  On the fifth of September seventeen seventy-four, the delegates to the first Continental Congress gathered in the city with a choice to make. The Speaker of the Pennsylvania Assembly, Joseph Galloway, had offered them the State House. The carpenters had offered their hall.
+
+  They walked here first, to take a look.
+
+  John Adams wrote that the general cry was that this was a good room. One delegate, James Duane, argued that the State House ought to be preferred. It was a public building, he said, and this was a private one, and the Speaker deserved the courtesy. The question was called anyway. A great majority chose the carpenters.
+
+  That evening Galloway wrote to a friend that Congress had met at Carpenters' Hall, notwithstanding the offer of a much more proper place. He suspected it had all been settled privately, out of doors, before anyone walked over.
+
+  Only after that vote did they choose a president.
+
+  The first question the Continental Congress ever decided was where to sit. It chose the builders.
+pronunciations:
+  - written: Galloway
+    say: GAL-oh-way
+  - written: Duane
+    say: doo-AYN
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Carpenters' Hall"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/carpenters-hall.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Letters of Delegates to Congress: James Duane's Notes of Debates, September 5, 1774"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/76002592_01_0006/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Letters of Delegates to Congress: Joseph Galloway to William Franklin, September 5, 1774"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/76002592_01_0007/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Letters of Delegates to Congress: John Adams' Diary, August 29, 1774 to September 5, 1774"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/76002592_01_0001/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Carpenters' Company Hall, 320 Chestnut Street and Carpenters' Court (HABS PA-1398)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/pa1131/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

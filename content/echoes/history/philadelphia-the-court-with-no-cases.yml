@@ -1,0 +1,52 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Chestnut Street sidewalk outside the north door of Old City Hall, at Fifth Street, before the security screening area.
+# Position: Overture "Old City Hall" (39.94887, -75.14934, 110 S 5th St) is the building at the south-west corner of Fifth and Chestnut; spot moved about 20 m north onto Chestnut Street (high confidence).
+id: philadelphia-the-court-with-no-cases
+title: "The Court With No Cases"
+summary: "When the Supreme Court came to Philadelphia it had nothing to decide, and its first case was thrown out over paperwork."
+place: "Old City Hall, Fifth and Chestnut streets, Philadelphia, Pennsylvania"
+at: { lat: 39.94905, lng: -75.14930 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 99
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, independence-mall, old-city-hall, supreme-court, law]
+teaser: "The court opened, but there was no business."
+script: |
+  Look at the small brick building on the corner of Fifth and Chestnut. It was built as Philadelphia's city hall. Through the seventeen nineties it was also the home of the Supreme Court of the United States.
+
+  Today that court decides the hardest questions in the country. When it came to Philadelphia, it had almost nothing to decide.
+
+  Its first term in this city opened in February, seventeen ninety-one. A Philadelphia lawyer wrote about the day in a letter. The court opened, he said, but there was no business.
+
+  So the justices did the one thing they could, which was admit lawyers to practise before them. The local bar assumed Justice James Wilson, one of their own, would simply vouch for them. He would not. The Chief Justice ruled that one lawyer could not vouch for another. Some of the best known lawyers in the city had to go off and find certificates of good character, and come back after one o'clock.
+
+  That August the court finally called a case for argument, West against Barnes. One of the parties stood up and pointed out that the paperwork had come from the wrong clerk's office. The court agreed, and dismissed it.
+
+  One of the original justices, John Rutledge, resigned without ever sitting in a session.
+
+  The courtroom inside is furnished the way an eighteenth century courtroom would have been, and it is open to look into.
+
+  The most powerful court in the world started out by checking references.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Visiting Old City Hall"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/planyourvisit/oldcityhall.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Old City Hall"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-oldcityhall.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Supreme Court in United States history, volume 1 (Charles Warren, 1922)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/22011303/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

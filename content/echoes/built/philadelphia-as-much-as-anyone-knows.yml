@@ -1,0 +1,43 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Franklin Court courtyard, open daily, beside the steel ghost structure of the house; enter by the Market Street archway or the Chestnut Street gates.
+# Position: Overture "Franklin Court and Ghost Structures" at 39.95014, -75.14666 and Benjamin Franklin Museum at 39.94947, -75.14690; the house frame stands mid-block between Market and Chestnut, so the spot is set between them (medium confidence).
+id: philadelphia-as-much-as-anyone-knows
+title: "As Much as Anyone Knows"
+summary: "Nobody knew what Franklin's demolished house looked like, so the architects built only its outline, in steel, to his insurance measurements."
+place: "Franklin Court ghost structure, between Market and Chestnut streets, Philadelphia, Pennsylvania"
+at: { lat: 39.94985, lng: -75.14665 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 63
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, old-city, franklin, architecture, archaeology]
+teaser: "Look up at the steel frame. It is a house with nothing filled in."
+script: |
+  Stand in the courtyard and look up at the steel frame. It is the outline of a house, drawn in the air, with nothing filled in.
+
+  Benjamin Franklin's house stood here. It was large for the city, and unusual, set back from Market Street in a garden court. Franklin died here in seventeen ninety. Twenty-two years later his heirs tore it down. The land had become too valuable to keep one house on it.
+
+  When the Park Service investigated the court, archaeologists found the outline of the house and its cellar. But nobody could find enough evidence of what the house had actually looked like.
+
+  So the architects decided not to guess. They built a frame to the measurements recorded in Franklin's own property insurance, and left it empty.
+
+  Look down through the viewing portals near your feet. You can see what is left of his cellar kitchen.
+
+  Everything above that is exactly as much as anyone knows.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Franklin Court"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-franklincourt.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Visiting the Franklin Court Courtyard"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/planyourvisit/franklincourtcourtyard.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

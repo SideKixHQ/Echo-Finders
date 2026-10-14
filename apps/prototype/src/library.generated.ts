@@ -5048,6 +5048,2089 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "philadelphia-a-firehouse-on-a-market",
+    "title": "A Firehouse on a Market",
+    "summary": "The little building at the end of the Second Street market shed housed firemen, not traders.",
+    "point": {
+      "at": {
+        "lat": 39.943,
+        "lng": -75.14533
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Head House and the New Market shed, Second and Pine streets, Philadelphia, Pennsylvania"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 84,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Hope Hose Company No. 6 & Fellowship Engine Company No. 29 (New Market, Head House), Second Street between Pine & Lombard Streets, Philadelphia (HABS PA-1351)",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/pa0819/"
+      },
+      {
+        "title": "Market Street, Philadelphia; the most historic highway in America, its merchants and its story, by Joseph Jackson (1918)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/18015276/"
+      },
+      {
+        "title": "Picture of Philadelphia (1835), South Second Street Market",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01010570/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down the middle of Second Street. The road splits around a long, open shed on brick pillars. And at this end of it, facing Pine Street, stands a small building of its own.\n\nIt looks like part of the market. The federal building survey records who actually used it. Not traders. Firemen. Two companies, the Hope Hose Company number six, and the Fellowship Engine Company number twenty-nine.\n\nThe market behind it is the New Market. The first section, running south from Pine down the middle of Second, was built in seventeen forty-five, because people in this end of town complained that the old market was too far away. They did not want to cross Dock Creek to reach it.\n\nBy the eighteen thirties, a city guide called it the second market in Philadelphia, for its age and for its food, and it reached all the way to South Street.\n\nPhiladelphia's main street once had sheds like this down its middle too. So many that people stopped calling it High Street and called it Market Street, and in eighteen fifty-three the city made the name official.\n\nSix years later, the sheds on Market Street came down.\n\nSecond Street kept one. This is what Market Street used to look like.\n",
+    "teaser": "A market in the middle of the road, with a firehouse on the end.",
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "society-hill",
+      "markets",
+      "firefighting",
+      "head-house"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-a-firehouse-on-a-market",
+        "durationS": 84
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-a-steeple-paid-by-lottery",
+    "title": "A Steeple Paid by Lottery",
+    "summary": "Christ Church's steeple, a landmark of colonial Philadelphia, was paid for with lottery tickets printed in Benjamin Franklin's shop.",
+    "point": {
+      "at": {
+        "lat": 39.95075,
+        "lng": -75.14348
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Christ Church, North Second Street, Philadelphia, Pennsylvania"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 52,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Christ Church",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/000/christ-church.htm"
+      },
+      {
+        "title": "Philadelphia, guide to the city (Rotary Club of Philadelphia, 1920)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/20012885/"
+      },
+      {
+        "title": "A Guide to Philadelphia (Pennsylvania Society for Promotion of Arts and Sciences, 1935)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/item/a36000831/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the steeple of Christ Church.\n\nIt went up in the seventeen fifties, and from then on it could be picked out from all over the colonial city. A Philadelphia guidebook from nineteen twenty calls it the highest point in town at the time.\n\nSteeples are expensive. A congregation usually builds one slowly, out of collections and bequests and patience.\n\nThis one was paid for with a lottery.\n\nTickets were sold to the public, and the money went into the tower and the spire. The tickets themselves came off the press in Benjamin Franklin's printing office. The same guidebook says Franklin sat on the committee that built the spire.\n\nSo when you look up at the landmark of colonial Philadelphia, you are looking at a great many losing tickets.\n",
+    "teaser": "Look up at the steeple. It was paid for by gamblers.",
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "old-city",
+      "churches",
+      "franklin",
+      "lotteries"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-a-steeple-paid-by-lottery",
+        "durationS": 52
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-as-much-as-anyone-knows",
+    "title": "As Much as Anyone Knows",
+    "summary": "Nobody knew what Franklin's demolished house looked like, so the architects built only its outline, in steel, to his insurance measurements.",
+    "point": {
+      "at": {
+        "lat": 39.94985,
+        "lng": -75.14665
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Franklin Court ghost structure, between Market and Chestnut streets, Philadelphia, Pennsylvania"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 63,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Franklin Court",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/places-franklincourt.htm"
+      },
+      {
+        "title": "Visiting the Franklin Court Courtyard",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/planyourvisit/franklincourtcourtyard.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand in the courtyard and look up at the steel frame. It is the outline of a house, drawn in the air, with nothing filled in.\n\nBenjamin Franklin's house stood here. It was large for the city, and unusual, set back from Market Street in a garden court. Franklin died here in seventeen ninety. Twenty-two years later his heirs tore it down. The land had become too valuable to keep one house on it.\n\nWhen the Park Service investigated the court, archaeologists found the outline of the house and its cellar. But nobody could find enough evidence of what the house had actually looked like.\n\nSo the architects decided not to guess. They built a frame to the measurements recorded in Franklin's own property insurance, and left it empty.\n\nLook down through the viewing portals near your feet. You can see what is left of his cellar kitchen.\n\nEverything above that is exactly as much as anyone knows.\n",
+    "teaser": "Look up at the steel frame. It is a house with nothing filled in.",
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "old-city",
+      "franklin",
+      "architecture",
+      "archaeology"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-as-much-as-anyone-knows",
+        "durationS": 63
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-congress-started-at-the-tavern",
+    "title": "Congress Started at the Tavern",
+    "summary": "Before the first Continental Congress had a president or a room, its delegates met at this tavern. The building is a 1975 copy.",
+    "point": {
+      "at": {
+        "lat": 39.94705,
+        "lng": -75.14405
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "City Tavern, Second and Walnut streets, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "City Tavern",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/city-tavern.htm"
+      },
+      {
+        "title": "Independence National Historical Park has issued a Request for Proposals (RFP) to lease, operate, and maintain City Tavern",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/news/independence-national-historical-park-has-issued-a-request-for-proposals-rfp-to-lease-operate-and-maintain-city-tavern.htm"
+      },
+      {
+        "title": "Letters of Delegates to Congress: John Adams' Diary, August 29, 1774 to September 5, 1774",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/76002592_01_0001/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This is City Tavern, on the corner of Second and Walnut. Look at the brickwork. It is younger than it looks.\n\nThe tavern the founders knew was built in seventeen seventy-three and torn down in eighteen fifty-four. The Park Service built this one in nineteen seventy-five, as a copy.\n\nThe original was still new in the late summer of seventeen seventy-four, when delegates to the first Continental Congress began arriving in town, colony by colony.\n\nThey did not wait for anything official. On the first of September, John Adams wrote in his diary, all the gentlemen of the Congress who had arrived met at the new City Tavern and spent the evening together. Twenty-five had come. Virginia, North Carolina, Maryland and New York City were still on the road.\n\nFour days later they met here again, at ten in the morning, and walked up the street to choose a room.\n\nSo before the Continental Congress had a president, a secretary or a place to sit, it had a tavern. This corner.\n",
+    "teaser": "Look at the brickwork. It is younger than it looks.",
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "old-city",
+      "continental-congress",
+      "taverns",
+      "reconstruction"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-congress-started-at-the-tavern",
+        "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-dorothy-todd-widow",
+    "title": "Dorothy Todd, Widow",
+    "summary": "Before she was Dolley Madison, she lived in this corner house with a young lawyer, until the yellow fever of 1793 came to the door.",
+    "point": {
+      "at": {
+        "lat": 39.94728,
+        "lng": -75.14775
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Todd House, Fourth and Walnut streets, Philadelphia, Pennsylvania"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 74,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Dolley Todd House",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/places-dolleytoddhouse.htm"
+      },
+      {
+        "title": "Visiting the Dolley Todd House",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/planyourvisit/dolleytoddhouse.htm"
+      },
+      {
+        "title": "Life and letters of Dolly Madison (Allen C. Clark, 1914)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/14014620/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the brick house on the corner of Fourth and Walnut. It is a modest house, a lawyer's house. For two years it was home to John Todd, his young wife Dolley, and their two small sons.\n\nIn the summer of seventeen ninety-three, yellow fever came to Philadelphia. Thomas Jefferson wrote that about eleven people a day were dying, and that the doctors saw no way of stopping it.\n\nJohn Todd took Dolley and the boys out of the city, to Gray's Ferry on the Schuylkill. Then he went back. He had clients who needed him. In the city he found his own father and mother sick, and both of them died.\n\nHe came back to his wife carrying the fever. The family remembered him saying he could feel it in his veins, but he must see her once more. Within hours he was dead. The younger baby died too.\n\nDolley survived. Not long after, she married James Madison, who would become the fourth President.\n\nBut first, the city directory for seventeen ninety-four lists the family's address under a new name.\n\nDorothy Todd, widow.\n",
+    "teaser": "Look at the corner house. The directory changed its name in a year.",
+    "pronunciations": [
+      {
+        "written": "Dolley",
+        "say": "DOL-ee"
+      },
+      {
+        "written": "Schuylkill",
+        "say": "SKOO-kul"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "old-city",
+      "dolley-madison",
+      "yellow-fever",
+      "women"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-dorothy-todd-widow",
+        "durationS": 74
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-hamlet-paid-for-the-hospital",
+    "title": "Hamlet Paid for the Hospital",
+    "summary": "The first hospital in the United States took money from almost anyone. In 1759 that included a company of actors.",
+    "point": {
+      "at": {
+        "lat": 39.94448,
+        "lng": -75.1557
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Pennsylvania Hospital, Pine Street between Eighth and Ninth, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Pennsylvania Hospital, Eighth and Ninth, Pine and Spruce Streets, Philadelphia (HABS PA-1123), architectural data form and photo captions",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/pa1040/"
+      },
+      {
+        "title": "The Book of Philadelphia, by Robert Shackleton (1918), chapter XXVI, Some Benefactions, Old and New",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/19000869/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look through the iron fence on Pine Street. On the lawn there is a small statue of William Penn, and behind him a long building of brick and marble, with an eight-sided cupola on each wing.\n\nThis is Pennsylvania Hospital. Benjamin Franklin and a doctor named Thomas Bond founded it in seventeen fifty-one, and it is the oldest hospital in the United States. The east wing went up in the seventeen fifties. Franklin wrote the words for its cornerstone. Piously founded, they say, for the relief of the sick and miserable.\n\nA hospital needs money. This one took it from nearly everyone. Private citizens gave. The preacher George Whitefield sent a large sum.\n\nThen, in seventeen fifty-nine, a company of actors put on Hamlet for the hospital's benefit.\n\nThat was thought quite shocking. Plays did not have the approval of the best people, and the managers had to decide whether they could take money earned on a stage.\n\nThey decided the hospital's charter gave them no right to refuse it.\n\nHamlet brought in forty-seven pounds, two shillings and sixpence.\n\nLook at the building again. The first hospital in the country. And a small part of its bills was paid by the Prince of Denmark.\n",
+    "teaser": "The country's first hospital, and part of the bill was paid by the Prince of Denmark.",
+    "pronunciations": [
+      {
+        "written": "George Whitefield",
+        "say": "JORJ WIT-feeld"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "society-hill",
+      "medicine",
+      "benjamin-franklin",
+      "theatre"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-hamlet-paid-for-the-hospital",
+        "durationS": 82
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-he-left-the-year-blank",
+    "title": "He Left the Year Blank",
+    "summary": "At twenty-two Franklin wrote himself a witty epitaph. At eighty-two he asked for a plain stone, and left the last number of the year blank.",
+    "point": {
+      "at": {
+        "lat": 39.95215,
+        "lng": -75.1481
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Benjamin Franklin's grave, Christ Church Burial Ground, Fifth and Arch streets, Philadelphia, Pennsylvania"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 79,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Transcript of Benjamin Franklin, Epitaph (Benjamin Franklin: In His Own Words)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/exhibits/franklin/bf-trans61.html"
+      },
+      {
+        "title": "Epitaph (Benjamin Franklin: In His Own Words)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/exhibits/franklin/franklin-epitaph.html"
+      },
+      {
+        "title": "Life and times of Benjamin Franklin, volume 2, page 591 (James Parton, 1882), quoting the codicil to Franklin's will",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/09019866/"
+      },
+      {
+        "title": "Philadelphia, guide to the city (Rotary Club of Philadelphia, 1920)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/20012885/"
+      },
+      {
+        "title": "Christ Church Burial Ground",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/000/christ-church-burial-ground.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look through the iron bars at the corner of Fifth and Arch. In the corner of the burial ground nearest you, Benjamin Franklin and his wife Deborah lie under a plain marble slab.\n\nWhen Franklin was twenty-two, a young printer, he wrote his own epitaph. It is a joke about his trade.\n\nThe body of B. Franklin, printer, like the cover of an old book, its contents torn out, and stript of its lettering and gilding, lies here, food for worms. But the work shall not be wholly lost. For it will, as he believed, appear once more, in a new and more perfect edition, corrected and amended by the author.\n\nHe liked it enough to copy it out for friends for the rest of his life.\n\nIt is not on the stone.\n\nAt eighty-two, adding to his will, he asked for something else. A marble stone, six feet long and four feet wide, plain, with only a small moulding round the edge. Two names, Benjamin and Deborah Franklin. And a year.\n\nFor the year he wrote one, seven, eight, and then a dash.\n\nHe knew the century and the decade. Somebody else had to finish the line.\n",
+    "teaser": "He wrote a famous epitaph for himself. It is not on the stone.",
+    "pronunciations": [
+      {
+        "written": "stript",
+        "say": "stripped"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "old-city",
+      "franklin",
+      "graves",
+      "printing"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-he-left-the-year-blank",
+        "durationS": 79
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-no-hatch-wide-enough",
+    "title": "No Hatch Wide Enough",
+    "summary": "In 1921 the cruiser Olympia carried the Unknown Soldier home from France on her open deck, because no hatch could take the casket level.",
+    "point": {
+      "at": {
+        "lat": 39.944,
+        "lng": -75.1411
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "USS Olympia, Penn's Landing, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 84,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "U.S.S. Olympia, Penn's Landing, 211 South Columbus Boulevard (HAER PA-428), written historical and descriptive data",
+        "publisher": "Library of Congress, Historic American Engineering Record",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/pa3529/"
+      },
+      {
+        "title": "Evening Star (Washington, D.C.), November 9, 1921, page 1",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045462/1921-11-09/ed-1/?sp=1"
+      },
+      {
+        "title": "Time Will Not Dim the Glory of Their Deeds: President Dwight D. Eisenhower and the Tomb of the Unknown Soldier",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/time-will-not-dim-the-glory-of-their-deeds-president-dwight-d-eisenhower-and-the-tomb-of-the-unknown-soldier.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the old cruiser at the pier, and find her stern, the back end of the ship.\n\nIn October nineteen twenty-one, the Olympia took on a coffin at Le Havre, in France. Inside was an American soldier killed in the First World War, whose name nobody would ever know. He was going home to be buried at Arlington as the Unknown Soldier.\n\nThe crew had a problem. The casket could not go below. No hatch on the ship was large enough to pass it through without tipping it on end. So it was secured on deck, at the stern, and later moved up onto the after signal bridge.\n\nNear the Azores the ship ran into a storm so violent that the captain feared she might capsize. He asked the chaplain to pray. The men off watch gathered in the mess hall, holding on to the stanchions as she rolled, and prayed that the soldier high above them would get home.\n\nHe did. On the ninth of November the Olympia came up the Potomac with her flag at half mast, and the guns along the river fired salutes as she passed.\n\nHe crossed the whole Atlantic out in the weather, rather than be carried below standing on his end.\n",
+    "teaser": "Find the back end of the ship. That is where he rode.",
+    "pronunciations": [
+      {
+        "written": "Le Havre",
+        "say": "luh HAH-vruh"
+      },
+      {
+        "written": "Azores",
+        "say": "AY-zorz"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "waterfront",
+      "navy",
+      "world-war-one",
+      "ships"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-no-hatch-wide-enough",
+        "durationS": 84
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-of-the-empire-eight",
+    "title": "Of the Empire, Eight",
+    "summary": "The Quakers who fought in the Revolution were thrown out of meeting, so they built their own, and dated it oddly.",
+    "point": {
+      "at": {
+        "lat": 39.95262,
+        "lng": -75.14868
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Free Quaker Meeting House, Fifth and Arch streets, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 107,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Free Quaker Meeting House",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/places-freequaker.htm"
+      },
+      {
+        "title": "Free Quakers Meetinghouse, 500 Arch Street, Philadelphia (HABS PA-1120)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/pa0762/"
+      },
+      {
+        "title": "Fighting Quakers, by Henry Longcope. Evening Public Ledger (Philadelphia), March 26, 1918, page 12",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045211/1918-03-26/ed-1/?sp=12"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on Arch Street and look up at the side of this small brick meeting house, high under the eaves. There is a stone tablet set into the wall.\n\nIt says the house was erected by general subscription, for the Free Quakers, in seventeen eighty-three. Then it gives a second date. Of the Empire, eight.\n\nQuakers do not fight. During the Revolution most Philadelphia Friends would not take up arms, pay war taxes, or swear an oath of allegiance. Some members broke with that. They served in the army, sat on the committee of safety, took seats in the legislature.\n\nThe Society of Friends disowned them. Read them out of meeting, as it was called.\n\nSo they started their own. They called themselves the Free Quakers, and people called them the Fighting Quakers. They paid for this house by subscription, and one of the people who gave was Benjamin Franklin, who was not a Quaker at all.\n\nAs for the Empire. A Philadelphia newspaper told a story about it in nineteen eighteen. When the stone was being set, someone asked one of the Free Quakers what the words meant. I tell thee, friend, he is supposed to have said, it is because our country is destined to be the great empire over all the world. That is the story. Nobody recorded the conversation at the time.\n\nAfter the war, some of the fighters made their peace with their old meetings and went back. By the eighteen thirties, services here had stopped.\n\nThey dated their building from the birth of a country. The country lasted. The congregation did not.\n",
+    "teaser": "Look up under the eaves. The building gives two dates.",
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "independence-mall",
+      "free-quakers",
+      "quakers",
+      "revolution",
+      "religion"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-of-the-empire-eight",
+        "durationS": 107
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-ona-judge-walked-out",
+    "title": "Ona Judge Walked Out",
+    "summary": "In 1796 an enslaved seamstress walked out of the President's House here, and Washington spent years trying to get her back.",
+    "point": {
+      "at": {
+        "lat": 39.95045,
+        "lng": -75.1501
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "President's House Site, Sixth and Market streets, Philadelphia, Pennsylvania"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 94,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "President's House Site: Enslaved People in the Washington Household",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/enslaved-people.htm"
+      },
+      {
+        "title": "The President's House Site: Presidents Washington and Adams",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/the-presidents-house-washington-and-adams.htm"
+      },
+      {
+        "title": "Visiting the President's House Site: From Enslavement to Emancipation",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/planyourvisit/presidentshousesite.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are standing on the site of the President's House. The building itself was demolished long ago, but its real foundations are still here to see, found by archaeologists in two thousand seven.\n\nGeorge Washington lived here from seventeen ninety to seventeen ninety-seven. His household was about thirty people. Nine of them, at one time or another, were enslaved Africans brought up from Mount Vernon. Their names are memorialized here.\n\nFind the name Ona Judge.\n\nShe was Martha Washington's personal maid, and a skilled seamstress. Pennsylvania law said that an enslaved person held in the state for six months could claim freedom. So the Washingtons kept sending the people they enslaved back to Virginia before the six months ran out.\n\nIn seventeen ninety-six, Ona Judge walked out of this house and did not come back.\n\nShe reached Portsmouth, New Hampshire, where someone recognised her. Washington, still president, wrote to the customs collector there and asked him to seize her and send her back. The collector talked with her, and declined.\n\nTwo years later Washington's nephew went north to try again. Over dinner he mentioned the plan to the governor of New Hampshire. The governor sent her a warning, and she got away again, with her child.\n\nWashington died in seventeen ninety-nine. Ona Judge lived free in New Hampshire until eighteen forty-eight.\n\nShe outlived the man who was looking for her by almost fifty years.\n",
+    "teaser": "Find the name Ona Judge.",
+    "pronunciations": [
+      {
+        "written": "Ona Judge",
+        "say": "OH-nuh JUDJ"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "independence-mall",
+      "presidents-house",
+      "slavery",
+      "african-american-history",
+      "washington"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-ona-judge-walked-out",
+        "durationS": 94
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-penn-on-the-tower",
+    "title": "The Man on the Tower",
+    "summary": "William Penn stands on top of City Hall. For most of a century nothing in the city stood higher.",
+    "point": {
+      "at": {
+        "lat": 39.95255,
+        "lng": -75.16475
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "City Hall tower, Dilworth Park, Philadelphia, Pennsylvania"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The New Public Buildings, Penn Square, Broad and Market Streets, Philadelphia (HABS PA-1530), written historical and descriptive data, prepared 16 November 1981",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/pa1054/"
+      },
+      {
+        "title": "Street-level view of Philadelphia, Pennsylvania's, iconic City Hall, above which stands perhaps the city's best-known landmark, a statue of Pennsylvania founder and Philadelphia planner William Penn",
+        "publisher": "Carol M. Highsmith Archive, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/2019689257/"
+      },
+      {
+        "title": "View of Philadelphia, Pennsylvania's, City Hall, famously topped by a statue of William Penn",
+        "publisher": "Carol M. Highsmith Archive, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/2019689061/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look straight up the tower in front of you, past the clock, to the very top. There is a man standing up there.\n\nHe is William Penn, the founder of Pennsylvania and the planner of this city. From down here he looks about life size. He is thirty-seven feet tall, and he weighs more than fifty-three thousand pounds of bronze.\n\nThe last piece to go up was his head. It was set on his shoulders on the twenty-eighth of November, eighteen ninety-four, and the statue was complete.\n\nThe tower under him rises five hundred and forty-eight feet. Until nineteen oh nine it was the highest occupied building in the United States.\n\nIn the autumn of nineteen eighty-one, historians wrote this building up for the federal survey of American architecture. They put down one plain sentence. No other building in the city exceeds its height.\n\nNow turn around, and look at the skyline to the west.\n\nCount the towers standing higher than Penn's hat.\n\nEvery one of them is younger than that sentence.\n",
+    "teaser": "Look all the way up the tower. There is a man standing on top.",
+    "pronunciations": [
+      {
+        "written": "Dilworth Park",
+        "say": "DIL-wurth Park"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "center-city",
+      "city-hall",
+      "skyline",
+      "sculpture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-penn-on-the-tower",
+        "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-read-aloud-in-the-yard",
+    "title": "Read Aloud in the Yard",
+    "summary": "The Declaration was first read to the public in this yard on 8 July 1776. The king's coat of arms did not last the afternoon.",
+    "point": {
+      "at": {
+        "lat": 39.94795,
+        "lng": -75.15045
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Independence Square, the old State House Yard, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 89,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "First Public Reading of the Declaration of Independence",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/news/first-public-reading-of-the-declaration-of-independence.htm"
+      },
+      {
+        "title": "A national treasure will be returning to Independence Hall just in time for Independence Day",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/news/a-national-treasure-will-be-returning-to-independence-hall-just-in-time-for-independence-day.htm"
+      },
+      {
+        "title": "Letters of Delegates to Congress: John Adams to Samuel Chase, July 9, 1776",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/76002592_04_0334/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Face the back of the hall. This square was the State House yard, and you are standing in it.\n\nOn the fourth of July, seventeen seventy-six, Congress approved the Declaration of Independence in there. Almost nobody out here had heard a word of it.\n\nFour days later, on the eighth, the bells of the city called people into this yard. At noon a militia colonel named John Nixon stood up on a raised stage and read the whole thing out loud. It was the first public reading of the Declaration.\n\nJohn Adams wrote about it the next day. He called the platform that awful stage, and he meant awe inspiring. Three cheers, he wrote, rended the welkin. The bells rang all day, and almost all night. Even the chimers chimed away.\n\nIn the courtroom of the State House, above the judge's bench, hung the coat of arms of King George the Third. That same day a crowd took it down and burned it.\n\nAbout nine years later a Philadelphia painter, George Rutter, made a new coat of arms for the same courtroom. The arms of Pennsylvania. It is one of the very few furnishings from that century still in the building, and it hangs in the courtroom now.\n\nThe king's arms did not last the afternoon. Pennsylvania's are still on the wall.\n",
+    "teaser": "Almost nobody out here had heard a word of it.",
+    "pronunciations": [
+      {
+        "written": "welkin",
+        "say": "WEL-kin"
+      },
+      {
+        "written": "Rutter",
+        "say": "RUT-er"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "independence-mall",
+      "independence-square",
+      "declaration-of-independence",
+      "revolution"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-read-aloud-in-the-yard",
+        "durationS": 89
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-rising-or-setting",
+    "title": "Rising or Setting",
+    "summary": "Franklin spent the Constitutional Convention staring at the sun carved on Washington's chair, unsure which way it was going.",
+    "point": {
+      "at": {
+        "lat": 39.94925,
+        "lng": -75.14975
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Assembly Room, Independence Hall, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Assembly Room of Independence Hall",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/places-independencehall-assemblyroom.htm"
+      },
+      {
+        "title": "Signing the Constitution",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/signing-the-constitution.htm"
+      },
+      {
+        "title": "James Madison's notes of debates in the Federal convention of 1787 (James Brown Scott, 1918)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/19000141/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the hall in front of you. On its ground floor is the room where the Constitution was signed.\n\nFor four months in the summer of seventeen eighty-seven, George Washington presided in that room from a tall wooden chair. Carved into the top of its back is a sun.\n\nIt was not an easy summer. Large states against small states. Arguments over the slave trade. More than once it looked as if the whole thing might come apart.\n\nOn the last day, the seventeenth of September, the delegates lined up to sign. While the last of them were signing, Benjamin Franklin looked at Washington's chair and said something to the men near him. James Madison wrote it down.\n\nPainters, Franklin said, had always found it hard to show the difference between a rising sun and a setting one. All through the session, in his hopes and fears, he had looked at that sun behind the president, and could not tell which it was.\n\nBut now at length, he said, I have the happiness to know that it is a rising and not a setting sun.\n\nThe chair had been made here in Philadelphia in seventeen seventy-nine, for the speaker of Pennsylvania's assembly. It went with the legislature to Harrisburg, and came back to this city in eighteen seventy-two.\n\nEarlier that day Franklin had asked every doubter in the room to doubt a little his own infallibility, and sign. Three still refused.\n\nNothing about the carving had changed. Franklin had.\n",
+    "teaser": "Painters, he said, could never tell a rising sun from a setting one.",
+    "pronunciations": [
+      {
+        "written": "infallibility",
+        "say": "in-fal-ih-BIL-ih-tee"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "independence-mall",
+      "independence-hall",
+      "constitution",
+      "franklin"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-rising-or-setting",
+        "durationS": 100
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-shoes-for-bob",
+    "title": "Shoes for Bob",
+    "summary": "Jefferson wrote the Declaration in rented rooms on this corner. His account book for those weeks survives.",
+    "point": {
+      "at": {
+        "lat": 39.95068,
+        "lng": -75.15212
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Declaration House (Graff House), Seventh and Market streets, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Visiting the Declaration House",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/planyourvisit/declarationhouse.htm"
+      },
+      {
+        "title": "Declaration House",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/places-declarationhouse.htm"
+      },
+      {
+        "title": "The Declaration of Independence, its history (John H. Hazelton, 1906)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/06006240/"
+      },
+      {
+        "title": "Market street, Philadelphia; the most historic highway in America (Joseph Jackson, 1918)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/18015276/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the brick house on this corner of Seventh and Market. It is not old. The house that stood here was demolished, and this one was built in nineteen seventy-five to stand in for it.\n\nIn the summer of seventeen seventy-six this corner was out near the edge of town. Thomas Jefferson rented rooms here from a young bricklayer named Graff.\n\nNearly fifty years later a Philadelphia doctor wrote to ask him exactly where he had written the Declaration of Independence. Jefferson answered from Monticello. A new brick house, three stories high, he wrote. I rented the second floor, a parlour and bedroom, ready furnished. In that parlour I wrote habitually, and in it wrote this paper particularly.\n\nHe also kept an account book that summer, and it survives. Thirty-five shillings a week for lodging. Dinners at Smith's. A straw hat. One shilling for seeing a monkey.\n\nAnd shoes for Bob. Stockings for Bob.\n\nJefferson did not come alone. With him was Robert Hemings, fourteen years old, whom he enslaved. Bob, in the account book, was almost certainly him.\n\nThe rooms are a reconstruction. The shoes for Bob are in Jefferson's own handwriting.\n",
+    "teaser": "A straw hat. A monkey. Shoes for Bob.",
+    "pronunciations": [
+      {
+        "written": "Monticello",
+        "say": "mon-tih-CHEL-oh"
+      },
+      {
+        "written": "Hemings",
+        "say": "HEM-ingz"
+      },
+      {
+        "written": "Graff",
+        "say": "GRAF"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "independence-mall",
+      "declaration-house",
+      "jefferson",
+      "declaration-of-independence",
+      "slavery"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-shoes-for-bob",
+        "durationS": 78
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-the-baby-over-the-bank-door",
+    "title": "The Baby Over the Bank Door",
+    "summary": "A carved panel over the First Bank's door celebrates a young nation's money, and one word on its globe says where some of it came from.",
+    "point": {
+      "at": {
+        "lat": 39.94803,
+        "lng": -75.14615
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "First Bank of the United States, South Third Street, Philadelphia, Pennsylvania"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "First Bank of the United States",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/places-firstbank.htm"
+      },
+      {
+        "title": "First Bank of the United States FAQs",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/firstbank-faq.htm"
+      },
+      {
+        "title": "First Bank of the United States, 120 South Third Street (HABS PA-1417)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/pa0850/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand in front of the columns on Third Street and look above the main door.\n\nThere is a carved marble panel there, and it is busier than it first appears. A baby wearing a helmet leans against a globe. One foot rests on a beehive. Beside him a horn of plenty spills out, not fruit, but coins. Behind him are tall ledgers, sailing ships and an American flag.\n\nThe baby is America. This was the Bank of the United States, and it opened in this building in seventeen ninety-seven. The whole front was designed to tell you what it was for. Even the keystone over the door is the head of Mercury, the Roman god of commerce.\n\nNow look at the globe again. One word is carved on it clearly. Africa.\n\nThe Park Service reads that word as the riches of that continent, human and mineral.\n\nThe panel is a celebration of a young country's money. It names one of the places the money came from.\n",
+    "teaser": "Look above the main door. There is a baby in a helmet.",
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "old-city",
+      "architecture",
+      "banking",
+      "slavery"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-the-baby-over-the-bank-door",
+        "durationS": 66
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-the-bell-went-to-allentown",
+    "title": "The Bell Went to Allentown",
+    "summary": "In 1777 the State House bell was lowered from this tower and hauled north ahead of the British army.",
+    "point": {
+      "at": {
+        "lat": 39.94835,
+        "lng": -75.14995
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Independence Hall tower, Independence Square, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 79,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Independence Hall Tower and Steeple FAQs",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/tower-faqs.htm"
+      },
+      {
+        "title": "The Liberty Bell",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm"
+      },
+      {
+        "title": "The Liberty bell, Independence hall, Philadelphia (Charles S. Keyser, 1901)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01028082/"
+      },
+      {
+        "title": "The story of the Liberty bell (Wayne Whipple, 1910)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/10030089/"
+      },
+      {
+        "title": "The Liberty bell, its history, associations and home (E. R. Gudehus, 1915)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/16006838/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the tower on the back of the hall. The brick part is original, from the seventeen fifties. The wooden steeple on top came later.\n\nIn September, seventeen seventy-seven, a British army was closing in on Philadelphia. Before it arrived, the State House bell was taken down from up there, to keep it out of British hands. It was not the Liberty Bell yet. Nobody would call it that for almost sixty years.\n\nIt went north in a wagon, in a train of about seven hundred wagons carrying the army's heavy baggage, guarded by two hundred soldiers from Virginia and North Carolina. Through Germantown, through Bethlehem, to Allentown.\n\nA diary kept in Bethlehem that autumn has one line about it. September the twenty-ninth. The wagon which conveyed the State House bell broke down in the street, and had to be unloaded.\n\nThey got it moving again. It spent the winter in Zion's Church in Allentown, while the British held this city, and it came home in June, seventeen seventy-eight, after they had gone.\n\nThe bell got through a war without a scratch. What finally silenced it, in eighteen forty-six, was a repair job for Washington's birthday.\n",
+    "teaser": "The wagon carrying the bell broke down in the street.",
+    "pronunciations": [
+      {
+        "written": "Allentown",
+        "say": "AL-en-town"
+      },
+      {
+        "written": "Zion's",
+        "say": "ZY-unz"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "independence-mall",
+      "independence-hall",
+      "liberty-bell",
+      "revolution"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-the-bell-went-to-allentown",
+        "durationS": 79
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-the-church-that-came-on-a-cart",
+    "title": "The Church That Came on a Cart",
+    "summary": "Mother Bethel's first meeting house was an old blacksmith shop, hauled across town by a team of horses.",
+    "point": {
+      "at": {
+        "lat": 39.9433,
+        "lng": -75.152
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Mother Bethel A.M.E. Church, Sixth and Lombard streets, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 88,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Goal, in Walnut Street Philadelphia by W. Birch & Son, 1799",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/inde-goal-bethelame-walnut-st-birch-1799.htm"
+      },
+      {
+        "title": "Timeline of Early Black Philadelphia and the Nation",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/education/timeline-early-black-philadelphia-nation.htm"
+      },
+      {
+        "title": "Bethel African Methodist Episcopal Church, Philadelphia. (lithograph, 1829, catalogue description)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/item/2021670179/"
+      },
+      {
+        "title": "Picture of Philadelphia (1835)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01010570/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across Sixth Street at the church, and at the ground it stands on.\n\nThis is Mother Bethel. The National Park Service counts this lot among the oldest pieces of land in the country continuously owned by African Americans.\n\nThe first church on it was not built here. It was dragged here.\n\nIn the seventeen nineties, Black members of Saint George's Methodist Church walked out together, rather than sit in a separate gallery made for them. A preacher named Richard Allen bought this lot so they could have a church of their own. What he had to put on it was an old blacksmith shop.\n\nIn seventeen ninety-nine an engraver named William Birch published a view of Walnut Street, with the city jail in the background. In the foreground, a team of horses is pulling a wooden shed down the street. Historians believe it is this church, on its way here.\n\nThe first meeting house was dedicated in July, seventeen ninety-four. The congregation has rebuilt on this same ground more than once since, so the building in front of you is not the shed.\n\nAllen is known to have used a blacksmith's anvil as his pulpit. The church still keeps the anvil as its emblem. It stands for self-determination.\n\nMost churches begin with a cornerstone. This one began with a forge.\n",
+    "teaser": "Most churches begin with a cornerstone. This one began with a forge.",
+    "pronunciations": [
+      {
+        "written": "Bethel",
+        "say": "BETH-ul"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "society-hill",
+      "african-american-history",
+      "richard-allen",
+      "churches"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-the-church-that-came-on-a-cart",
+        "durationS": 88
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-the-church-you-have-to-find",
+    "title": "The Church You Have to Find",
+    "summary": "Old St. Joseph's was tucked into a courtyard off an alley. Washington and Adams came looking for it anyway.",
+    "point": {
+      "at": {
+        "lat": 39.94643,
+        "lng": -75.14745
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old St. Joseph's Church, Willings Alley, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 87,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Book of Philadelphia, by Robert Shackleton (1918), chapter III, Within a Nooked Courtyard",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/19000869/"
+      },
+      {
+        "title": "Picture of Philadelphia (1835), Roman Catholic churches",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01010570/"
+      },
+      {
+        "title": "Interior View of the New Church of Saint Joseph, Philadelphia. (lithograph, circa 1840, catalogue description)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/item/2021670340/"
+      },
+      {
+        "title": "The President's House Site: Presidents Washington and Adams",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/the-presidents-house-washington-and-adams.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Walk west down Willings Alley from Third Street, between the tall walls, and look on your right for an iron gate in an archway. It leads through a building and into a paved courtyard. The church is in there.\n\nYou cannot see it from any street. That was not an accident, though nobody forced it.\n\nCatholics in early Philadelphia were tolerated, but they were looked on with suspicion. So when they built a church here, in seventeen thirty-three, they put it somewhere inconspicuous, in a court between this alley and Walnut Street. Then the city filled in close all around it.\n\nIt did not stay unnoticed. On one October day in seventeen seventy-four, two visitors came to service here. One was George Washington. In his diary he wrote only that he went to Saint Joseph's in the afternoon.\n\nThe other was John Adams, raised a Puritan, and he was shaken. He wrote to his wife about the poor wretches fingering their beads, chanting Latin, bowing and kneeling. He called it awful and affecting.\n\nThe church behind the gate today is not the one they sat in. It was rebuilt on the same spot in eighteen thirty-eight and thirty-nine.\n\nIt was built not to be noticed. The first two presidents of the United States came looking for it anyway.\n",
+    "teaser": "You cannot see this church from any street. That was the idea.",
+    "pronunciations": [
+      {
+        "written": "Willings Alley",
+        "say": "WILL-ingz AL-ee"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "society-hill",
+      "catholic",
+      "religious-liberty",
+      "churches"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-the-church-you-have-to-find",
+        "durationS": 87
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-the-congregation-of-the-dead",
+    "title": "The Congregation of the Dead",
+    "summary": "The tomb in Washington Square holds one unknown soldier. The square around it holds thousands more.",
+    "point": {
+      "at": {
+        "lat": 39.94708,
+        "lng": -75.1529
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Tomb of the Unknown Revolutionary War Soldier, Washington Square, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 92,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Washington Square",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/places-washingtonsquare.htm"
+      },
+      {
+        "title": "Invisible Architects, Stop 7: Washington Square",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/invisible-architects-stop-7.htm"
+      },
+      {
+        "title": "The Tomb of the Unknown Revolutionary War Soldier: Graffiti and the Legacy of the Founding Fathers",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/tomb-of-the-unknown-revolutionary-war-soldier.htm"
+      },
+      {
+        "title": "Preservation on the Memorial in Washington Square",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/preservation-on-the-memorial-in-washington-square.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In front of you, a bronze George Washington stands above a stone tomb, and a flame burns near his feet. Go close enough to read the lid. Beneath this stone rests a soldier of Washington's army, who died to give you liberty.\n\nOne soldier, name unknown. His remains were found in a grave nearby in nineteen fifty-six, and the memorial was dedicated the next year.\n\nHe is not alone. He is not even unusual.\n\nFor most of the seventeen hundreds this square was the city's potter's field, the burial ground for strangers and the poor. Free and enslaved Africans were buried here, and their families sometimes gathered to guard the graves from the anatomy lecturers.\n\nThen came the war. In January seventeen seventy-seven, Deborah Norris wrote to her friend Sally Wister about a shocking sight here. Large pits are dug, she wrote, and forty or fifty coffins are put in the same hole.\n\nThat April John Adams came and spent an hour among the graves. He had been told perhaps two thousand soldiers lay here. They are enough, he wrote, to make the heart of stone melt away.\n\nIn seventeen ninety-three, more than thirteen hundred victims of yellow fever filled the space that was left.\n\nLook past the tomb, at the lawns and the benches and the paths.\n\nThe memorial honours one soldier. The rest of them are under the grass.\n",
+    "teaser": "The memorial honours one soldier. The rest are under the grass.",
+    "pronunciations": [
+      {
+        "written": "Sally Wister",
+        "say": "SAL-ee WIS-ter"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "washington-square",
+      "revolution",
+      "burial-ground",
+      "yellow-fever"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-the-congregation-of-the-dead",
+        "durationS": 92
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-the-court-with-no-cases",
+    "title": "The Court With No Cases",
+    "summary": "When the Supreme Court came to Philadelphia it had nothing to decide, and its first case was thrown out over paperwork.",
+    "point": {
+      "at": {
+        "lat": 39.94905,
+        "lng": -75.1493
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old City Hall, Fifth and Chestnut streets, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 99,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Visiting Old City Hall",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/planyourvisit/oldcityhall.htm"
+      },
+      {
+        "title": "Old City Hall",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/places-oldcityhall.htm"
+      },
+      {
+        "title": "The Supreme Court in United States history, volume 1 (Charles Warren, 1922)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/22011303/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the small brick building on the corner of Fifth and Chestnut. It was built as Philadelphia's city hall. Through the seventeen nineties it was also the home of the Supreme Court of the United States.\n\nToday that court decides the hardest questions in the country. When it came to Philadelphia, it had almost nothing to decide.\n\nIts first term in this city opened in February, seventeen ninety-one. A Philadelphia lawyer wrote about the day in a letter. The court opened, he said, but there was no business.\n\nSo the justices did the one thing they could, which was admit lawyers to practise before them. The local bar assumed Justice James Wilson, one of their own, would simply vouch for them. He would not. The Chief Justice ruled that one lawyer could not vouch for another. Some of the best known lawyers in the city had to go off and find certificates of good character, and come back after one o'clock.\n\nThat August the court finally called a case for argument, West against Barnes. One of the parties stood up and pointed out that the paperwork had come from the wrong clerk's office. The court agreed, and dismissed it.\n\nOne of the original justices, John Rutledge, resigned without ever sitting in a session.\n\nThe courtroom inside is furnished the way an eighteenth century courtroom would have been, and it is open to look into.\n\nThe most powerful court in the world started out by checking references.\n",
+    "teaser": "The court opened, but there was no business.",
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "independence-mall",
+      "old-city-hall",
+      "supreme-court",
+      "law"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-the-court-with-no-cases",
+        "durationS": 99
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-the-crack-is-the-repair",
+    "title": "The Crack Is the Repair",
+    "summary": "The wide crack in the Liberty Bell was drilled out on purpose in 1846, as a repair that failed.",
+    "point": {
+      "at": {
+        "lat": 39.94935,
+        "lng": -75.1503
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Liberty Bell Center, Independence Mall, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 84,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Liberty Bell",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm"
+      },
+      {
+        "title": "Visiting the Liberty Bell Center",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/planyourvisit/libertybellcenter.htm"
+      },
+      {
+        "title": "The Liberty bell, its history, associations and home (E. R. Gudehus, 1915)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/16006838/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the bell, and look at the crack.\n\nIt is wide and dark, and it may be the best known flaw in the country. Now look along its edges. They are not clean breaks. They are a row of little round scallops.\n\nNobody wrote down when the bell first cracked. The likeliest answer is the early eighteen forties, after almost ninety years of hard use. A thin split, easy to miss.\n\nIn eighteen forty-six the city wanted the bell rung for Washington's birthday. So metal workers drilled out the thin crack and widened it on purpose, to stop it spreading and to bring the tone back. Those scallops are their drill holes. The Park Service counts more than forty of them.\n\nIt did not work. A newspaper, the Public Ledger, reported that the bell had split again. The second crack runs up through the word Liberty, and nobody alive has heard this bell ring freely.\n\nBy then it had a new name. In eighteen thirty-five an abolitionist paper had called it the Liberty Bell, for the verse cast around its top. Proclaim liberty throughout all the land, unto all the inhabitants thereof. The name took years to catch on.\n\nSo the famous crack is not the damage. It is the repair.\n",
+    "teaser": "Look along the edges of the crack. They are not clean breaks.",
+    "pronunciations": [
+      {
+        "written": "thereof",
+        "say": "thair-OV"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "independence-mall",
+      "liberty-bell",
+      "abolition"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-the-crack-is-the-repair",
+        "durationS": 84
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-the-first-vote-was-the-room",
+    "title": "The First Vote Was the Room",
+    "summary": "In 1774 the Speaker offered the Continental Congress the State House. The delegates walked here and chose a carpenters' guild hall instead.",
+    "point": {
+      "at": {
+        "lat": 39.94845,
+        "lng": -75.14725
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Carpenters' Hall, Carpenters' Court off Chestnut Street, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 83,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Carpenters' Hall",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/000/carpenters-hall.htm"
+      },
+      {
+        "title": "Letters of Delegates to Congress: James Duane's Notes of Debates, September 5, 1774",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/76002592_01_0006/"
+      },
+      {
+        "title": "Letters of Delegates to Congress: Joseph Galloway to William Franklin, September 5, 1774",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/76002592_01_0007/"
+      },
+      {
+        "title": "Letters of Delegates to Congress: John Adams' Diary, August 29, 1774 to September 5, 1774",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/76002592_01_0001/"
+      },
+      {
+        "title": "Carpenters' Company Hall, 320 Chestnut Street and Carpenters' Court (HABS PA-1398)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/pa1131/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down the court from Chestnut Street. At the end of it is a small brick hall with a cupola on top. It was built by a guild of carpenters, and the guild still owns it.\n\nOn the fifth of September seventeen seventy-four, the delegates to the first Continental Congress gathered in the city with a choice to make. The Speaker of the Pennsylvania Assembly, Joseph Galloway, had offered them the State House. The carpenters had offered their hall.\n\nThey walked here first, to take a look.\n\nJohn Adams wrote that the general cry was that this was a good room. One delegate, James Duane, argued that the State House ought to be preferred. It was a public building, he said, and this was a private one, and the Speaker deserved the courtesy. The question was called anyway. A great majority chose the carpenters.\n\nThat evening Galloway wrote to a friend that Congress had met at Carpenters' Hall, notwithstanding the offer of a much more proper place. He suspected it had all been settled privately, out of doors, before anyone walked over.\n\nOnly after that vote did they choose a president.\n\nThe first question the Continental Congress ever decided was where to sit. It chose the builders.\n",
+    "teaser": "The first question the Continental Congress voted on was where to sit.",
+    "pronunciations": [
+      {
+        "written": "Galloway",
+        "say": "GAL-oh-way"
+      },
+      {
+        "written": "Duane",
+        "say": "doo-AYN"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "old-city",
+      "continental-congress",
+      "revolution",
+      "guilds"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-the-first-vote-was-the-room",
+        "durationS": 83
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-the-good-china",
+    "title": "The Good China",
+    "summary": "Under the Constitution Center's bus drop-off is the house where a free Black coachman hosted the meeting that founded a church.",
+    "point": {
+      "at": {
+        "lat": 39.9536,
+        "lng": -75.1485
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "James Dexter site, Fifth Street beside the National Constitution Center, Philadelphia, Pennsylvania"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 99,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "James Dexter Site",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/james-dexter-site.htm"
+      },
+      {
+        "title": "Excavation of James Dexter Site",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/excavation-dexter.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on Fifth Street beside the National Constitution Center, where the buses pull in to drop people off.\n\nUnder this drop-off is the site of a small rented house. From seventeen ninety, a free Black coachman named James Oronoco Dexter lived in it with nine other people.\n\nDexter had been enslaved. On this block he was one of at least six free Black heads of household. In seventeen ninety-two he hosted the first meeting, in his own house, to arrange the building of a church. It became the African Episcopal Church of Saint Thomas, and its congregation is still active.\n\nWhen the Constitution Center was being built, the Park Service at first decided not to dig here. The drop-off would sit on top, and whatever was underneath would be left alone. People in the community disagreed. They wanted to know what was down there. So the archaeologists dug.\n\nIn the old back yard they found a barrel sunk in the ground and filled with sweepings, with nearly four thousand household objects in it. Pieces of a teapot made by English potters. A Chinese porcelain saucer. Bones from good cuts of meat, and from pig's feet.\n\nA coachman to a wealthy family was well paid. The archaeologists think the imported china let Dexter set a proper table for the people planning that church.\n\nMost of what survives from the founding years is paper. What survived of James Dexter's house was the good china, swept up in the yard.\n",
+    "teaser": "You are standing at a bus drop-off. Underneath it is a back yard.",
+    "pronunciations": [
+      {
+        "written": "Oronoco",
+        "say": "or-oh-NOH-koh"
+      },
+      {
+        "written": "Dexter",
+        "say": "DEX-ter"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "independence-mall",
+      "african-american-history",
+      "archaeology",
+      "churches"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-the-good-china",
+        "durationS": 99
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-the-market-under-the-trains",
+    "title": "The Market Under the Trains",
+    "summary": "A railroad came for the block where the city's biggest market shed stood. The market ended up underneath it.",
+    "point": {
+      "at": {
+        "lat": 39.95345,
+        "lng": -75.15955
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Reading Terminal Market, Twelfth and Filbert streets, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 74,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Market Street, Philadelphia; the most historic highway in America, its merchants and its story, by Joseph Jackson (1918)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/18015276/"
+      },
+      {
+        "title": "Reading Terminal, 11th & Arch Streets, Philadelphia (HAER PA-417), index to photographs",
+        "publisher": "Historic American Engineering Record, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/pa3514/"
+      },
+      {
+        "title": "Philadelphia & Reading Railroad, Terminal Station, 1115-1141 Market Street, Philadelphia (HABS PA-1528), index to photographs",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/pa1051/"
+      },
+      {
+        "title": "Scene inside the Reading Terminal Market in Philadelphia, Pennsylvania",
+        "publisher": "Carol M. Highsmith Archive, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/2019688706/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand outside the market doors on Twelfth Street and look up. The building keeps going, well above where a market would need a roof. That high shed was built for trains.\n\nStart a little earlier, on Market Street, round the corner. For generations, Philadelphia's main street had market sheds down its middle. In eighteen fifty-nine they were cleared away, and the traders needed somewhere new.\n\nTwo big market houses went up on the north side of Market Street, between Eleventh and Twelfth. One was the Farmers' Market, the largest market shed of its kind in the city. Beside it, at Twelfth Street, was the Franklin Market, which old housekeepers just called the Twelfth Street Market.\n\nThirty years later the Reading Railroad wanted a station in the middle of town. It ran its tracks in from Ninth and Green, raised up on an elevated line, and it chose this exact block. The Reading Terminal opened for traffic on the twentieth of January, eighteen ninety-three.\n\nSo the trains came in up there, under that great arched roof.\n\nAnd the market is still down here, underneath it.\n",
+    "teaser": "The roof above this market was built to hold trains.",
+    "pronunciations": [
+      {
+        "written": "Reading",
+        "say": "RED-ing"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "center-city",
+      "markets",
+      "railroads",
+      "reading-terminal"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-the-market-under-the-trains",
+        "durationS": 74
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-the-room-upstairs",
+    "title": "The Room Upstairs",
+    "summary": "In a rented room at Third and Pine, a Polish general wrote a will with Thomas Jefferson's help, then left the country in secret.",
+    "point": {
+      "at": {
+        "lat": 39.94335,
+        "lng": -75.14712
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Thaddeus Kosciuszko House, Third and Pine streets, Philadelphia, Pennsylvania"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 91,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Kosciuszko House",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/kosciuszko-house.htm"
+      },
+      {
+        "title": "Thaddeus Kosciuszko (biography)",
+        "publisher": "National Park Service, Thaddeus Kosciuszko National Memorial",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/thko/learn/historyculture/kosciuszkobio.htm"
+      },
+      {
+        "title": "Thaddeus Kosciuszko House, 301 Pine Street, Philadelphia (HABS PA-1342)",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/pa1222/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the corner house here, at Third and Pine, and then up at its second floor.\n\nThe whole site covers two hundredths of an acre. The National Park Service calls it the smallest unit in the national park system.\n\nLate in seventeen ninety-seven, a Polish general took a cramped room up there, in Mrs. Relf's boarding house. His name was Thaddeus Kosciuszko. More than twenty years earlier he had come to America and designed fortifications for the Revolution, at Saratoga and at West Point. Then he went home to fight for Poland, was wounded, captured and imprisoned in Russia, and came back to Philadelphia a hero, still recovering.\n\nPeople climbed the stairs to see him. A Virginia congressman who pushed Congress to pay what it owed him. Chief Little Turtle of the Miami, who gave him a pipe tomahawk. And the Vice President, Thomas Jefferson, who became a close friend.\n\nUp in that room, with Jefferson's legal help, Kosciuszko worked out his will. He asked that after his death his estate be used to free as many enslaved people as possible.\n\nIn May seventeen ninety-eight he slipped out of the country in the small hours, on a ship from New Castle, Delaware. He told one person he was going. Jefferson.\n\nHe gave Thomas Jefferson two things to keep. The secret of his leaving. And the will.\n",
+    "teaser": "The smallest unit of the National Park System, and a will written upstairs.",
+    "pronunciations": [
+      {
+        "written": "Thaddeus Kosciuszko",
+        "say": "THAD-ee-us kosh-CHOOSH-koh"
+      },
+      {
+        "written": "Relf",
+        "say": "RELF"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "society-hill",
+      "revolution",
+      "kosciuszko",
+      "jefferson",
+      "national-park"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-the-room-upstairs",
+        "durationS": 91
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-the-street-that-was-a-creek",
+    "title": "The Street That Was a Creek",
+    "summary": "Dock Street bends in a city of right angles, because it follows a creek William Penn once came up in a boat.",
+    "point": {
+      "at": {
+        "lat": 39.9474,
+        "lng": -75.14565
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Dock Street at the Merchants' Exchange, Philadelphia, Pennsylvania"
+    },
+    "category": "land",
+    "format": "short",
+    "durationS": 80,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Dock Creek",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/dock-creek.htm"
+      },
+      {
+        "title": "Merchants' Exchange Building",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/places-merchantsexchange.htm"
+      },
+      {
+        "title": "Philadelphia Exchange. (lithograph, catalogue description)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/item/2021670211/"
+      },
+      {
+        "title": "Market Street, Philadelphia; the most historic highway in America, its merchants and its story, by Joseph Jackson (1918)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/18015276/"
+      },
+      {
+        "title": "The Book of Philadelphia, by Robert Shackleton (1918)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/19000869/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Every street around here runs straight, at right angles, the way William Penn liked it. Except the one you are standing on. Dock Street bends.\n\nNow look at the building beside you. Its end is not flat. It is round, a curve of stone columns with a little round lantern on top. This is the Merchants' Exchange, finished in the eighteen thirties, and its architect fitted it onto a triangle of ground between Third Street, Walnut Street, and this odd curving road.\n\nSo why does the road curve?\n\nWhen Penn first came to Philadelphia, he left the big ship out on the Delaware and went up a creek in a skiff. That creek ran here. Dock Creek. In the seventeen nineties the city covered it over, and the street took its line.\n\nBefore this building, merchants did their deals in coffee houses and taverns down by the river. This was the first large building in the city put up for doing business. Ships' cargoes changed hands in it. So did stocks. The Philadelphia Stock Exchange met here.\n\nPenn came up this line in a small boat. A hundred and fifty years later, the city's money was following it too.\n",
+    "teaser": "Every street here runs straight. Except this one.",
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "old-city",
+      "dock-creek",
+      "merchants-exchange",
+      "waterways"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-the-street-that-was-a-creek",
+        "durationS": 80
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-two-rooms-one-roof",
+    "title": "Two Rooms, One Roof",
+    "summary": "The Arch Street Meeting House has two matching wings because Quaker men and women held separate meetings, and the women wanted one building.",
+    "point": {
+      "at": {
+        "lat": 39.95212,
+        "lng": -75.1462
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Arch Street Meeting House, Arch Street between Third and Fourth, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 79,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Arch Street Friends Meeting House, 330 Arch Street (HABS PA-1388), written historical and descriptive data",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/pa1087/"
+      },
+      {
+        "title": "Philadelphia, guide to the city (Rotary Club of Philadelphia, 1920)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/20012885/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the long brick meeting house. It is built in three parts, a middle section with a wing on each side, and the two wings match.\n\nThat symmetry is the whole story.\n\nQuakers held their business meetings separately, one for men and one for women. George Fox, who founded the Society of Friends, wanted it that way, so that women would take an active part. For years in Philadelphia, the two meetings gathered in separate buildings.\n\nThe push for this house is said to have come from the women. They wanted both meetings under the same roof. The women's yearly meeting moved in here in eighteen hundred and four. When the second wing was finished in eighteen eleven, the men joined them.\n\nInside are two meeting rooms, one on each side of a central hall. There was no need for a partition down the middle. Each meeting had a room of its own.\n\nIt was not equality. The women's meeting mostly dealt with marriages and help for the needy, and the men's with policy and money. But the two rooms were built to the same proportions and fitted out the same way.\n\nSomebody insisted on that.\n",
+    "teaser": "Look at the two wings. They match for a reason.",
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "old-city",
+      "quakers",
+      "women",
+      "architecture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-two-rooms-one-roof",
+        "durationS": 79
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-two-things-from-st-louis",
+    "title": "Two Things From St. Louis",
+    "summary": "The bronze eagle and the great organ in Wanamaker's Grand Court both came from the 1904 world's fair.",
+    "point": {
+      "at": {
+        "lat": 39.9519,
+        "lng": -75.16235
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Wanamaker Building, Thirteenth and Market streets, Philadelphia, Pennsylvania"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 86,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "A friendly guide to Philadelphia and the Wanamaker store (1926)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/27012482/"
+      },
+      {
+        "title": "John Wanamaker Store, Thirteenth & Chestnut Streets, Philadelphia (HABS PA-1692)",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/pa1340/"
+      },
+      {
+        "title": "Interior with historic organ, Wanamaker's Department Store, Philadelphia, Pennsylvania",
+        "publisher": "Carol M. Highsmith Archive, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/2010630086/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This building was John Wanamaker's department store. In the middle of it is a hall called the Grand Court, its galleries climbing floor over floor to a dome a hundred and fifty feet up.\n\nTwo things were set in that court that were not made in Philadelphia.\n\nThe first is a bronze eagle on a granite pedestal. The bird alone weighs two and a half thousand pounds. Every feather was shaped and fitted by hand, sixteen hundred on the head, five thousand on the whole eagle. It took a crew of skilled metalworkers more than five months.\n\nThe second is the organ, filling the south end of the court. When it was brought here it took thirteen freight cars. The store's own workshop then rebuilt it and made it bigger. By nineteen twenty-six it had more than eighteen thousand pipes, and its biggest wooden pipe was so wide that two men could crawl through it side by side.\n\nThe eagle and the organ have one thing in common. Both were made for the world's fair in St. Louis, in nineteen oh four. When the fair closed, they came east, to a shop.\n\nA world's fair is built to be taken down.\n\nPhiladelphia kept two of its best pieces, and put them in a shop.\n",
+    "teaser": "A world's fair is built to be taken down. Philadelphia kept two pieces.",
+    "pronunciations": [
+      {
+        "written": "Wanamaker",
+        "say": "WAH-nuh-may-ker"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "center-city",
+      "wanamakers",
+      "organ",
+      "worlds-fair"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-two-things-from-st-louis",
+        "durationS": 86
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-washington-left-last",
+    "title": "Washington Left Last",
+    "summary": "At John Adams's inauguration in 1797, the outgoing president waited at the door and walked out behind the new vice president.",
+    "point": {
+      "at": {
+        "lat": 39.94905,
+        "lng": -75.1509
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Congress Hall, Sixth and Chestnut streets, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 79,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Visiting Congress Hall",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/planyourvisit/congresshall.htm"
+      },
+      {
+        "title": "Congress Hall",
+        "publisher": "National Park Service, Independence National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/inde/learn/historyculture/places-congresshall.htm"
+      },
+      {
+        "title": "Congress hall (Samuel W. Pennypacker, 1895)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/02024648/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand beside the brick building on the corner of Sixth and Chestnut. This is Congress Hall. For ten years the House of Representatives met on its ground floor, and the Senate upstairs.\n\nOn the fourth of March, seventeen ninety-seven, the room downstairs was packed. The country was about to do something it had never done. Hand the presidency from one man to another.\n\nA man named John McKoy was there, and wrote down what he saw. When the word Washington went round the doorway, he said, the shout made the hall tremble. Washington crossed the floor at a quick step, as if eager to escape notice, and sat down. Thomas Jefferson came in next, the new vice president, to a smaller cheer. Then John Adams, the new president, to a smaller one again.\n\nAdams took the oath, read his address, bowed, and left to applause.\n\nThat left Washington and Jefferson standing together, and the whole room watching them in silence.\n\nWashington gestured for Jefferson to go out first. Jefferson declined. Washington asked again. Jefferson went, and Washington followed him out.\n\nHe walked in as the most famous man in the country. He walked out behind the vice president.\n",
+    "teaser": "Two men at a door, and a whole room watching to see who would go first.",
+    "pronunciations": [
+      {
+        "written": "McKoy",
+        "say": "muh-KOY"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "independence-mall",
+      "congress-hall",
+      "presidents",
+      "washington",
+      "adams"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-washington-left-last",
+        "durationS": 79
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-what-her-grandson-said",
+    "title": "What Her Grandson Said",
+    "summary": "The story of Washington asking Betsy Ross to sew the first flag was first told in 1870, by her grandson. What is and is not on record.",
+    "point": {
+      "at": {
+        "lat": 39.95235,
+        "lng": -75.14467
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Betsy Ross House, Arch Street, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 86,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [
+      {
+        "title": "Did Betsey Ross design the flag of the United States of America? (Franklin Hanford, 1917)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/17010994/"
+      },
+      {
+        "title": "Birth of our nation's flag (C. H. Weisgerber, 1893), catalogue record",
+        "publisher": "Library of Congress, Prints and Photographs Division",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/2004669130/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This small house on Arch Street is famous for one scene. George Washington and two gentlemen of Congress call on a young widow, an upholsterer named Betsy Ross. They show her a rough sketch of a flag. She suggests changes. She sews the first Stars and Stripes.\n\nHere is what is on record. Betsy Ross was real. Her first husband died in seventeen seventy-six, and she carried on his trade. For about fifty years she was an expert needlewoman and flag-maker. During the war she made colours for Pennsylvania's ships. After her, one of her daughters kept the flag business going.\n\nHere is what is not. The visit appears in no record of Congress, no letter, no diary and no newspaper of the time. Washington wrote a great deal, and never mentioned it.\n\nThe story was first told in public in eighteen seventy, ninety-three years after the flag was adopted. Her grandson, William Canby, read it to the Historical Society of Pennsylvania. It was, he said, what the family had heard her say.\n\nFor most people, the evidence is a picture. Washington seated in her parlour, the new flag across her lap.\n\nThat picture was printed in eighteen ninety-three. Prints of it went to people who joined a club raising money to save this house.\n",
+    "teaser": "Everyone knows the scene in this house. Nobody wrote it down for ninety-three years.",
+    "certaintyNote": "Betsy Ross's work as an upholsterer and flag-maker is on record. The visit from Washington, Robert Morris and George Ross, and her part in the first Stars and Stripes, rest on family tradition first made public by her grandson William Canby in 1870; no record of Congress, letter, diary or newspaper of 1776 or 1777 mentions it, as Franklin Hanford set out in 1917. The script says so plainly.",
+    "pronunciations": [
+      {
+        "written": "Canby",
+        "say": "KAN-bee"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "old-city",
+      "flag",
+      "betsy-ross",
+      "myth-and-memory"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-what-her-grandson-said",
+        "durationS": 86
+      }
+    ]
+  },
+  {
     "id": "savannah-twenty-two-squares",
     "title": "A city plan from 1733 that nobody has managed to undo",
     "summary": "Savannah's grid of squares was drawn before the city existed, and most of it is still there.",

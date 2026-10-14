@@ -1,0 +1,57 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Chestnut Street in front of Independence Hall, between the hall and the Liberty Bell Center, outside the security line.
+# Position: Overture "Independence Hall" (39.94888, -75.14997, 520 Chestnut St) is the building; spot moved about 40 m north and slightly east onto Chestnut Street (medium confidence).
+id: philadelphia-rising-or-setting
+title: "Rising or Setting"
+summary: "Franklin spent the Constitutional Convention staring at the sun carved on Washington's chair, unsure which way it was going."
+place: "Assembly Room, Independence Hall, Philadelphia, Pennsylvania"
+at: { lat: 39.94925, lng: -75.14975 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, independence-mall, independence-hall, constitution, franklin]
+teaser: "Painters, he said, could never tell a rising sun from a setting one."
+script: |
+  Look at the hall in front of you. On its ground floor is the room where the Constitution was signed.
+
+  For four months in the summer of seventeen eighty-seven, George Washington presided in that room from a tall wooden chair. Carved into the top of its back is a sun.
+
+  It was not an easy summer. Large states against small states. Arguments over the slave trade. More than once it looked as if the whole thing might come apart.
+
+  On the last day, the seventeenth of September, the delegates lined up to sign. While the last of them were signing, Benjamin Franklin looked at Washington's chair and said something to the men near him. James Madison wrote it down.
+
+  Painters, Franklin said, had always found it hard to show the difference between a rising sun and a setting one. All through the session, in his hopes and fears, he had looked at that sun behind the president, and could not tell which it was.
+
+  But now at length, he said, I have the happiness to know that it is a rising and not a setting sun.
+
+  The chair had been made here in Philadelphia in seventeen seventy-nine, for the speaker of Pennsylvania's assembly. It went with the legislature to Harrisburg, and came back to this city in eighteen seventy-two.
+
+  Earlier that day Franklin had asked every doubter in the room to doubt a little his own infallibility, and sign. Three still refused.
+
+  Nothing about the carving had changed. Franklin had.
+pronunciations:
+  - written: infallibility
+    say: in-fal-ih-BIL-ih-tee
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Assembly Room of Independence Hall"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-independencehall-assemblyroom.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Signing the Constitution"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/signing-the-constitution.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "James Madison's notes of debates in the Federal convention of 1787 (James Brown Scott, 1918)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/19000141/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

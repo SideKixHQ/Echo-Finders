@@ -1,0 +1,53 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Public sidewalk on Market Street outside the Wanamaker Building, at Thirteenth Street. The Grand Court is inside; the script does not assume the doors are open.
+# Position: Overture "The Wanamaker Building" (39.95143, -75.16255, 100 E Penn Square) and "John Wanamaker" (39.95212, -75.16187, Market St & S 13th St); spot on the Market Street frontage (high confidence).
+id: philadelphia-two-things-from-st-louis
+title: "Two Things From St. Louis"
+summary: "The bronze eagle and the great organ in Wanamaker's Grand Court both came from the 1904 world's fair."
+place: "Wanamaker Building, Thirteenth and Market streets, Philadelphia, Pennsylvania"
+at: { lat: 39.95190, lng: -75.16235 }
+triggerRadiusKm: 0.05
+category: arts
+format: short
+durationS: 86
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, center-city, wanamakers, organ, worlds-fair]
+teaser: "A world's fair is built to be taken down. Philadelphia kept two pieces."
+script: |
+  This building was John Wanamaker's department store. In the middle of it is a hall called the Grand Court, its galleries climbing floor over floor to a dome a hundred and fifty feet up.
+
+  Two things were set in that court that were not made in Philadelphia.
+
+  The first is a bronze eagle on a granite pedestal. The bird alone weighs two and a half thousand pounds. Every feather was shaped and fitted by hand, sixteen hundred on the head, five thousand on the whole eagle. It took a crew of skilled metalworkers more than five months.
+
+  The second is the organ, filling the south end of the court. When it was brought here it took thirteen freight cars. The store's own workshop then rebuilt it and made it bigger. By nineteen twenty-six it had more than eighteen thousand pipes, and its biggest wooden pipe was so wide that two men could crawl through it side by side.
+
+  The eagle and the organ have one thing in common. Both were made for the world's fair in St. Louis, in nineteen oh four. When the fair closed, they came east, to a shop.
+
+  A world's fair is built to be taken down.
+
+  Philadelphia kept two of its best pieces, and put them in a shop.
+pronunciations:
+  - written: Wanamaker
+    say: WAH-nuh-may-ker
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "A friendly guide to Philadelphia and the Wanamaker store (1926)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/27012482/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "John Wanamaker Store, Thirteenth & Chestnut Streets, Philadelphia (HABS PA-1692)"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/pa1340/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Interior with historic organ, Wanamaker's Department Store, Philadelphia, Pennsylvania"
+    publisher: "Carol M. Highsmith Archive, Library of Congress"
+    url: https://www.loc.gov/item/2010630086/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

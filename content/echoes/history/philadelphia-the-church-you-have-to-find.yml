@@ -1,0 +1,58 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Willings Alley, the public lane west of Third Street, at the iron-gated archway into the church courtyard.
+# Position: Overture "Old Saint Joseph's Catholic Church" (39.94650, -75.14752, 321 Willings Alley); the 1918 Shackleton directions put the gate on the north side of the alley walking west from Third, so the spot is set in the alley just south of the listed point (medium confidence).
+id: philadelphia-the-church-you-have-to-find
+title: "The Church You Have to Find"
+summary: "Old St. Joseph's was tucked into a courtyard off an alley. Washington and Adams came looking for it anyway."
+place: "Old St. Joseph's Church, Willings Alley, Philadelphia, Pennsylvania"
+at: { lat: 39.94643, lng: -75.14745 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 87
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, society-hill, catholic, religious-liberty, churches]
+teaser: "You cannot see this church from any street. That was the idea."
+script: |
+  Walk west down Willings Alley from Third Street, between the tall walls, and look on your right for an iron gate in an archway. It leads through a building and into a paved courtyard. The church is in there.
+
+  You cannot see it from any street. That was not an accident, though nobody forced it.
+
+  Catholics in early Philadelphia were tolerated, but they were looked on with suspicion. So when they built a church here, in seventeen thirty-three, they put it somewhere inconspicuous, in a court between this alley and Walnut Street. Then the city filled in close all around it.
+
+  It did not stay unnoticed. On one October day in seventeen seventy-four, two visitors came to service here. One was George Washington. In his diary he wrote only that he went to Saint Joseph's in the afternoon.
+
+  The other was John Adams, raised a Puritan, and he was shaken. He wrote to his wife about the poor wretches fingering their beads, chanting Latin, bowing and kneeling. He called it awful and affecting.
+
+  The church behind the gate today is not the one they sat in. It was rebuilt on the same spot in eighteen thirty-eight and thirty-nine.
+
+  It was built not to be noticed. The first two presidents of the United States came looking for it anyway.
+pronunciations:
+  - written: Willings Alley
+    say: WILL-ingz AL-ee
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Book of Philadelphia, by Robert Shackleton (1918), chapter III, Within a Nooked Courtyard"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/19000869/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Picture of Philadelphia (1835), Roman Catholic churches"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01010570/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Interior View of the New Church of Saint Joseph, Philadelphia. (lithograph, circa 1840, catalogue description)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/2021670340/
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "The President's House Site: Presidents Washington and Adams"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/the-presidents-house-washington-and-adams.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

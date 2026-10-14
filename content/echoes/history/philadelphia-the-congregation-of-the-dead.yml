@@ -1,0 +1,62 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: The paved walk in front of the Tomb of the Unknown Revolutionary War Soldier, west side of Washington Square, inside the public park.
+# Position: Overture "Tomb of the Unknown Soldier" (39.94710, -75.15312, W Washington Square), consistent with the square's centre and fountain (39.94706, -75.15234); spot set about 20 m east of the tomb on the approach walk (high confidence).
+id: philadelphia-the-congregation-of-the-dead
+title: "The Congregation of the Dead"
+summary: "The tomb in Washington Square holds one unknown soldier. The square around it holds thousands more."
+place: "Tomb of the Unknown Revolutionary War Soldier, Washington Square, Philadelphia, Pennsylvania"
+at: { lat: 39.94708, lng: -75.15290 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, washington-square, revolution, burial-ground, yellow-fever]
+teaser: "The memorial honours one soldier. The rest are under the grass."
+script: |
+  In front of you, a bronze George Washington stands above a stone tomb, and a flame burns near his feet. Go close enough to read the lid. Beneath this stone rests a soldier of Washington's army, who died to give you liberty.
+
+  One soldier, name unknown. His remains were found in a grave nearby in nineteen fifty-six, and the memorial was dedicated the next year.
+
+  He is not alone. He is not even unusual.
+
+  For most of the seventeen hundreds this square was the city's potter's field, the burial ground for strangers and the poor. Free and enslaved Africans were buried here, and their families sometimes gathered to guard the graves from the anatomy lecturers.
+
+  Then came the war. In January seventeen seventy-seven, Deborah Norris wrote to her friend Sally Wister about a shocking sight here. Large pits are dug, she wrote, and forty or fifty coffins are put in the same hole.
+
+  That April John Adams came and spent an hour among the graves. He had been told perhaps two thousand soldiers lay here. They are enough, he wrote, to make the heart of stone melt away.
+
+  In seventeen ninety-three, more than thirteen hundred victims of yellow fever filled the space that was left.
+
+  Look past the tomb, at the lawns and the benches and the paths.
+
+  The memorial honours one soldier. The rest of them are under the grass.
+pronunciations:
+  - written: Sally Wister
+    say: SAL-ee WIS-ter
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Washington Square"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-washingtonsquare.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Invisible Architects, Stop 7: Washington Square"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/invisible-architects-stop-7.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Tomb of the Unknown Revolutionary War Soldier: Graffiti and the Legacy of the Founding Fathers"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/tomb-of-the-unknown-revolutionary-war-soldier.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Preservation on the Memorial in Washington Square"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/preservation-on-the-memorial-in-washington-square.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

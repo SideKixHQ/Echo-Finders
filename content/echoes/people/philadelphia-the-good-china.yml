@@ -1,0 +1,50 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: West sidewalk of Fifth Street beside the National Constitution Center bus drop-off, about halfway between Arch and Race streets.
+# Position: NPS places the James Dexter site on North Fifth Street halfway between Arch and Race, partly under the NCC bus drop-off; Fifth Street line estimated from Overture points on both sides (US Mint 39.95340, -75.14808; Free Quaker 39.95247, -75.14864) (low confidence).
+id: philadelphia-the-good-china
+title: "The Good China"
+summary: "Under the Constitution Center's bus drop-off is the house where a free Black coachman hosted the meeting that founded a church."
+place: "James Dexter site, Fifth Street beside the National Constitution Center, Philadelphia, Pennsylvania"
+at: { lat: 39.95360, lng: -75.14850 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 99
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, independence-mall, african-american-history, archaeology, churches]
+teaser: "You are standing at a bus drop-off. Underneath it is a back yard."
+script: |
+  Stand on Fifth Street beside the National Constitution Center, where the buses pull in to drop people off.
+
+  Under this drop-off is the site of a small rented house. From seventeen ninety, a free Black coachman named James Oronoco Dexter lived in it with nine other people.
+
+  Dexter had been enslaved. On this block he was one of at least six free Black heads of household. In seventeen ninety-two he hosted the first meeting, in his own house, to arrange the building of a church. It became the African Episcopal Church of Saint Thomas, and its congregation is still active.
+
+  When the Constitution Center was being built, the Park Service at first decided not to dig here. The drop-off would sit on top, and whatever was underneath would be left alone. People in the community disagreed. They wanted to know what was down there. So the archaeologists dug.
+
+  In the old back yard they found a barrel sunk in the ground and filled with sweepings, with nearly four thousand household objects in it. Pieces of a teapot made by English potters. A Chinese porcelain saucer. Bones from good cuts of meat, and from pig's feet.
+
+  A coachman to a wealthy family was well paid. The archaeologists think the imported china let Dexter set a proper table for the people planning that church.
+
+  Most of what survives from the founding years is paper. What survived of James Dexter's house was the good china, swept up in the yard.
+pronunciations:
+  - written: Oronoco
+    say: or-oh-NOH-koh
+  - written: Dexter
+    say: DEX-ter
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "James Dexter Site"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/james-dexter-site.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Excavation of James Dexter Site"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/excavation-dexter.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

@@ -1,0 +1,48 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: West sidewalk of North Second Street in front of Christ Church, just north of Market Street, with the steeple in view.
+# Position: Overture places Christ Church at 39.95074, -75.14380 (20 N American St); spot moved east to the Second Street frontage, Second Street line estimated from Old City points (medium confidence).
+id: philadelphia-a-steeple-paid-by-lottery
+title: "A Steeple Paid by Lottery"
+summary: "Christ Church's steeple, a landmark of colonial Philadelphia, was paid for with lottery tickets printed in Benjamin Franklin's shop."
+place: "Christ Church, North Second Street, Philadelphia, Pennsylvania"
+at: { lat: 39.95075, lng: -75.14348 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 52
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, old-city, churches, franklin, lotteries]
+teaser: "Look up at the steeple. It was paid for by gamblers."
+script: |
+  Look up at the steeple of Christ Church.
+
+  It went up in the seventeen fifties, and from then on it could be picked out from all over the colonial city. A Philadelphia guidebook from nineteen twenty calls it the highest point in town at the time.
+
+  Steeples are expensive. A congregation usually builds one slowly, out of collections and bequests and patience.
+
+  This one was paid for with a lottery.
+
+  Tickets were sold to the public, and the money went into the tower and the spire. The tickets themselves came off the press in Benjamin Franklin's printing office. The same guidebook says Franklin sat on the committee that built the spire.
+
+  So when you look up at the landmark of colonial Philadelphia, you are looking at a great many losing tickets.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Christ Church"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/christ-church.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Philadelphia, guide to the city (Rotary Club of Philadelphia, 1920)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/20012885/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "A Guide to Philadelphia (Pennsylvania Society for Promotion of Arts and Sciences, 1935)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/a36000831/
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts

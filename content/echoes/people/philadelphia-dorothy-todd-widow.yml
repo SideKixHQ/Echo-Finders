@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Sidewalk at the northeast corner of Fourth and Walnut streets, beside the Todd House.
+# Position: Overture places the Todd House at 39.94742, -75.14778; NPS puts it on the northeast corner of Fourth and Walnut, and the spot is the corner sidewalk (medium confidence).
+id: philadelphia-dorothy-todd-widow
+title: "Dorothy Todd, Widow"
+summary: "Before she was Dolley Madison, she lived in this corner house with a young lawyer, until the yellow fever of 1793 came to the door."
+place: "Todd House, Fourth and Walnut streets, Philadelphia, Pennsylvania"
+at: { lat: 39.94728, lng: -75.14775 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, old-city, dolley-madison, yellow-fever, women]
+teaser: "Look at the corner house. The directory changed its name in a year."
+script: |
+  Look at the brick house on the corner of Fourth and Walnut. It is a modest house, a lawyer's house. For two years it was home to John Todd, his young wife Dolley, and their two small sons.
+
+  In the summer of seventeen ninety-three, yellow fever came to Philadelphia. Thomas Jefferson wrote that about eleven people a day were dying, and that the doctors saw no way of stopping it.
+
+  John Todd took Dolley and the boys out of the city, to Gray's Ferry on the Schuylkill. Then he went back. He had clients who needed him. In the city he found his own father and mother sick, and both of them died.
+
+  He came back to his wife carrying the fever. The family remembered him saying he could feel it in his veins, but he must see her once more. Within hours he was dead. The younger baby died too.
+
+  Dolley survived. Not long after, she married James Madison, who would become the fourth President.
+
+  But first, the city directory for seventeen ninety-four lists the family's address under a new name.
+
+  Dorothy Todd, widow.
+pronunciations:
+  - written: Dolley
+    say: DOL-ee
+  - written: Schuylkill
+    say: SKOO-kul
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Dolley Todd House"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-dolleytoddhouse.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Visiting the Dolley Todd House"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/planyourvisit/dolleytoddhouse.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Life and letters of Dolly Madison (Allen C. Clark, 1914)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/14014620/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

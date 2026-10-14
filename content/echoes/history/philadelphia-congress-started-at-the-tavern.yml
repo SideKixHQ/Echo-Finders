@@ -1,0 +1,48 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: West sidewalk of Second Street in front of the tavern, just north of Walnut Street.
+# Position: Overture's City Tavern point (39.95009, -75.14385) sits near Market Street and is wrong; NPS gives 138 S. 2nd Street at Second and Walnut, so the spot is placed between Walnut (Overture 200 Walnut, 39.94674) and Welcome Park (39.94740) on the Second Street line (medium confidence).
+id: philadelphia-congress-started-at-the-tavern
+title: "Congress Started at the Tavern"
+summary: "Before the first Continental Congress had a president or a room, its delegates met at this tavern. The building is a 1975 copy."
+place: "City Tavern, Second and Walnut streets, Philadelphia, Pennsylvania"
+at: { lat: 39.94705, lng: -75.14405 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, old-city, continental-congress, taverns, reconstruction]
+teaser: "Look at the brickwork. It is younger than it looks."
+script: |
+  This is City Tavern, on the corner of Second and Walnut. Look at the brickwork. It is younger than it looks.
+
+  The tavern the founders knew was built in seventeen seventy-three and torn down in eighteen fifty-four. The Park Service built this one in nineteen seventy-five, as a copy.
+
+  The original was still new in the late summer of seventeen seventy-four, when delegates to the first Continental Congress began arriving in town, colony by colony.
+
+  They did not wait for anything official. On the first of September, John Adams wrote in his diary, all the gentlemen of the Congress who had arrived met at the new City Tavern and spent the evening together. Twenty-five had come. Virginia, North Carolina, Maryland and New York City were still on the road.
+
+  Four days later they met here again, at ten in the morning, and walked up the street to choose a room.
+
+  So before the Continental Congress had a president, a secretary or a place to sit, it had a tavern. This corner.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "City Tavern"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/city-tavern.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Independence National Historical Park has issued a Request for Proposals (RFP) to lease, operate, and maintain City Tavern"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/news/independence-national-historical-park-has-issued-a-request-for-proposals-rfp-to-lease-operate-and-maintain-city-tavern.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Letters of Delegates to Congress: John Adams' Diary, August 29, 1774 to September 5, 1774"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/76002592_01_0001/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

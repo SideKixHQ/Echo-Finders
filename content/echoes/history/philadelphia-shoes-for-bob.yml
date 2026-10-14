@@ -1,0 +1,62 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Market Street sidewalk at the south-west corner of Seventh and Market, in front of the reconstructed Declaration House; the building itself is closed.
+# Position: Overture "Graff House" (39.95073, -75.15225, 700 Market St) and "Declaration House" (39.95078, -75.15216) agree; spot set on the corner sidewalk a few metres south-east (medium confidence).
+id: philadelphia-shoes-for-bob
+title: "Shoes for Bob"
+summary: "Jefferson wrote the Declaration in rented rooms on this corner. His account book for those weeks survives."
+place: "Declaration House (Graff House), Seventh and Market streets, Philadelphia, Pennsylvania"
+at: { lat: 39.95068, lng: -75.15212 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, independence-mall, declaration-house, jefferson, declaration-of-independence, slavery]
+teaser: "A straw hat. A monkey. Shoes for Bob."
+script: |
+  Look at the brick house on this corner of Seventh and Market. It is not old. The house that stood here was demolished, and this one was built in nineteen seventy-five to stand in for it.
+
+  In the summer of seventeen seventy-six this corner was out near the edge of town. Thomas Jefferson rented rooms here from a young bricklayer named Graff.
+
+  Nearly fifty years later a Philadelphia doctor wrote to ask him exactly where he had written the Declaration of Independence. Jefferson answered from Monticello. A new brick house, three stories high, he wrote. I rented the second floor, a parlour and bedroom, ready furnished. In that parlour I wrote habitually, and in it wrote this paper particularly.
+
+  He also kept an account book that summer, and it survives. Thirty-five shillings a week for lodging. Dinners at Smith's. A straw hat. One shilling for seeing a monkey.
+
+  And shoes for Bob. Stockings for Bob.
+
+  Jefferson did not come alone. With him was Robert Hemings, fourteen years old, whom he enslaved. Bob, in the account book, was almost certainly him.
+
+  The rooms are a reconstruction. The shoes for Bob are in Jefferson's own handwriting.
+pronunciations:
+  - written: Monticello
+    say: mon-tih-CHEL-oh
+  - written: Hemings
+    say: HEM-ingz
+  - written: Graff
+    say: GRAF
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Visiting the Declaration House"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/planyourvisit/declarationhouse.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Declaration House"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-declarationhouse.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Declaration of Independence, its history (John H. Hazelton, 1906)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/06006240/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Market street, Philadelphia; the most historic highway in America (Joseph Jackson, 1918)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/18015276/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
