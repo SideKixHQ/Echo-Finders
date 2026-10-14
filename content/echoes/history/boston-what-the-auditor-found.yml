@@ -1,0 +1,68 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public pavement on Commercial Street at the entrance to Langone Park, beside the flood plaque, with Copp's Hill Terrace rising across the road.
+# Position: Overture "Great Molasses Flood Plaque", 529 Commercial St, cross-checked against Langone Park and Copp's Hill Terrace entries on the same stretch (high confidence).
+id: boston-what-the-auditor-found
+title: "What the Auditor Found"
+summary: "In 1919 a molasses tank burst here and killed twenty-one people. The owners blamed saboteurs. It took six years to answer them."
+place: "Langone Park, site of the 1919 molasses flood, Commercial Street, North End, Boston, Massachusetts"
+at: { lat: 42.36833, lng: -71.05576 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.75
+tags: [boston, boston-core, north-end, waterfront, disasters, molasses-flood]
+teaser: "Look up the slope across the road. In 1919 a house slid down it."
+script: |
+  Look across Commercial Street, at the slope rising toward Copp's Hill.
+
+  On the fifteenth of January, nineteen nineteen, a little after noon, a steel tank stood on
+  the waterfront here. It held molasses. Close to two million gallons of it, stored for
+  making alcohol.
+
+  People nearby heard a muffled roar. The tank split into two great pieces, and the molasses
+  came out as a wave.
+
+  It knocked out spans of the elevated railway that ran along this street. It crushed a fire
+  station. In a city building close by, workers had been eating their lunch. On the slope
+  across the road, a small house slid down into the street.
+
+  Firemen had to hose the molasses away before they could reach anyone. It was days before
+  the last of the dead were found. Twenty-one people were killed.
+
+  The next day, the company's lawyer gave a statement. The tank, he suggested, had been blown
+  up from outside. Perhaps by enemies of the United States.
+
+  It took six years to answer him. A court auditor sat for eight hundred and fifty-one days
+  and heard nine hundred and ten witnesses. In January nineteen twenty-five, he gave his
+  finding.
+
+  He found the company responsible.
+
+  The tank had simply not been strong enough to hold what was in it.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Six Years Later: Col. Ogden Prepares Report on Boston Molasses Flood, New Britain Herald, 16 January 1925, page 15"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82014519/1925-01-16/ed-1/?sp=15
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Yankee Enemies May Have Blown Up Syrup Tank, Harrisburg Telegraph, 16 January 1919, page 12"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn85038411/1919-01-16/ed-1/?sp=12
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Molasses Blast, The Washington Times, 16 January 1919, page 10"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84026749/1919-01-16/ed-1/?sp=10
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Explosion of Molasses, Alexandria Gazette, 16 January 1919, page 3"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn85025007/1919-01-16/ed-1/?sp=3
+    retrievedAt: "2026-10-14"
+    rights: public-domain

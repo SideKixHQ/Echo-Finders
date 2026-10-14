@@ -1,0 +1,65 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public sidewalk at the corner of School and Washington streets, beside the Old Corner Bookstore building.
+# Position: Overture place for Old Corner Book Store, 283 Washington Street, nudged to the street corner (medium confidence).
+id: boston-say-no-more
+title: "Say No More"
+summary: "A woman was banished for what she taught on this corner. Two centuries later it was where America's writers brought their manuscripts."
+place: "Old Corner Bookstore building, School and Washington streets, Boston, Massachusetts"
+at: { lat: 42.35760, lng: -71.05855 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, literature, publishing, anne-hutchinson]
+teaser: "Find the little brick building with the steep roof."
+script: |
+  Find the little brick building on the corner with the steep, two sloped roof. It is one of
+  the oldest buildings in the city, and among the taller ones around it, it looks it.
+
+  Before it was built, this ground belonged to a woman named Anne Hutchinson.
+
+  She held meetings in her house here, talking about religion. The colony's leaders judged
+  her teaching dangerous. In sixteen thirty eight she was tried and banished.
+
+  At the end of the trial she asked why she was being sent away. The governor told her, say
+  no more. The court knows wherefore, and is satisfied.
+
+  Later, fire took the houses on this corner. The building in front of you went up in its
+  place as an apothecary's shop, and stayed one for about a hundred years.
+
+  Then the booksellers moved in.
+
+  By the middle of the eighteen hundreds this was the home of Ticknor and Fields, the
+  leading publisher in the country, and the writers came here with their manuscripts.
+  Hawthorne. Emerson. Longfellow. Harriet Beecher Stowe. Louisa May Alcott.
+
+  So on this one small corner, a woman was thrown out of the colony and told to say no more.
+
+  Two hundred years later, saying more was the whole business.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old Corner Book Store, Corner of Washington and School streets, Boston (HABS MA-325)"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/ma1736/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Freedom Trail Audio Described Brochure"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/planyourvisit/freedom-trail-audio-described-brochure.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Colonial and revolutionary landmarks of Boston (1913)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/14003283/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Literary landmarks of Boston (1922)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/22012901/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

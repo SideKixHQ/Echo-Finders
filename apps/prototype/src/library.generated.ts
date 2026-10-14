@@ -118,6 +118,2067 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "boston-abiel-smith-school-goodbye",
+    "title": "Goodbye Forever",
+    "summary": "Black families boycotted this segregated school until Massachusetts outlawed school segregation in 1855.",
+    "point": {
+      "at": {
+        "lat": 42.35997,
+        "lng": -71.06515
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Abiel Smith School, 46 Joy Street, Beacon Hill, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 74,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Abiel Smith School",
+        "publisher": "National Park Service, Boston African American National Historic Site",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/boaf/learn/historyculture/abiel-smith-school.htm"
+      },
+      {
+        "title": "African Meeting House",
+        "publisher": "National Park Service, Boston African American National Historic Site",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/boaf/learn/historyculture/amh.htm"
+      },
+      {
+        "title": "The Black Struggle for Equal Education in Boston, 1787 to 1976",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/the-black-struggle-for-equal-education-in-boston-1787-to-1976.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the schoolhouse at the corner of Smith Court. It opened in eighteen thirty-five as\na public school for Black children, and it became the default school for most of the\nBlack children in the city.\n\nPart of the money came from a white businessman, Abiel Smith, who left it for the\neducation of Black children. The school was still worse than the white schools, and the\nfamilies here kept saying so.\n\nIn eighteen forty-nine, many of them took their children out. Classes moved back into the\nmeeting house next door. A father, Benjamin Roberts, sued so his daughter Sarah could go to\nthe school nearest her home. He lost.\n\nSo they went to the state. William Cooper Nell, who had been a pupil in the old African\nSchool himself, led the petitions. In eighteen fifty-five, Massachusetts outlawed\nsegregated public schools.\n\nNell lived on this court. On the first day of school that year, he watched a young\nstudent walk past this building, and heard what the boy said to it.\n\nGoodbye forever, colored school. Tomorrow we are like the other Boston boys.\n",
+    "teaser": "Look at the schoolhouse at the corner of Smith Court. A boy once said goodbye to it.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "black-heritage-trail",
+      "beacon-hill",
+      "schools",
+      "civil-rights"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-abiel-smith-school-goodbye",
+        "durationS": 74
+      }
+    ]
+  },
+  {
+    "id": "boston-african-meeting-house-built-by-its-people",
+    "title": "The House Its People Built",
+    "summary": "The oldest Black church building in the country was paid for and built by its own congregation.",
+    "point": {
+      "at": {
+        "lat": 42.36001,
+        "lng": -71.06545
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "African Meeting House, 8 Smith Court, Beacon Hill, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "African Meeting House",
+        "publisher": "National Park Service, Boston African American National Historic Site",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/boaf/learn/historyculture/amh.htm"
+      },
+      {
+        "title": "African Meeting House",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/african-meeting-house.htm"
+      },
+      {
+        "title": "Peter Faneuil: Empire of Goods, Wealth, and Enslavement",
+        "publisher": "National Park Service, Boston National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bost/learn/historyculture/peter-faneuil.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are in Smith Court. Look at the meeting house. It opened in eighteen-oh-six, and it is\nthe oldest Black church building still standing in the United States.\n\nLook at it as a building first. Somebody had to pay for it, and somebody had to build it.\n\nThe African Baptist Church was founded the year before, with twenty-four members. Fifteen\nof them were women. To give it a home, a man named Cato Gardner, born in Africa, went out\nand raised fifteen hundred dollars himself. Black craftsmen did most of the work.\n\nThen the building did its job. It was a church, and a school met on the first floor.\nFrederick Douglass spoke here. So did Maria Stewart. In eighteen thirty-two, William Lloyd\nGarrison founded the New England Anti-Slavery Society inside.\n\nPeople called it the Black Faneuil Hall.\n\nIt was meant as a compliment. But Faneuil Hall was the gift of one rich merchant, a man who\nbought and sold enslaved people. This hall was paid for and built by the people who sat in\nit.\n",
+    "teaser": "Look at the meeting house. Somebody had to pay for it, and somebody had to build it.",
+    "pronunciations": [
+      {
+        "written": "Faneuil",
+        "say": "FAN-yul"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "black-heritage-trail",
+      "beacon-hill",
+      "churches",
+      "abolition"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-african-meeting-house-built-by-its-people",
+        "durationS": 70
+      }
+    ]
+  },
+  {
+    "id": "boston-beacon-hill-the-beacon",
+    "title": "The Hill Named for a Pole",
+    "summary": "Beacon Hill is named for a wooden warning beacon that a British general took down and a storm finished off.",
+    "point": {
+      "at": {
+        "lat": 42.35895,
+        "lng": -71.06285
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Beacon Hill Monument, Ashburton Park, behind the State House, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Beacon Hill",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/beacon-hill.htm"
+      },
+      {
+        "title": "The Evacuation of Boston, 1776",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/evacuation-of-boston-1776.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the tall column with the eagle on top. It stands in for something that is gone.\n\nIn sixteen thirty-five, the English settlers put up a tall wooden beacon on top of this\nhill. If danger came, an attack or an outbreak, it could warn the countryside. The hill\ntook its name from it.\n\nIn seventeen seventy-five, with colonial troops gathering across the river at Cambridge,\nGeneral Gage built a small fort up here, and had the beacon taken down. A signal to the countryside was the\nlast thing he wanted.\n\nThe British left Boston in March seventeen seventy-six. Bostonians put the beacon straight\nback up.\n\nIt lasted another thirteen years. In seventeen eighty-nine, a storm blew it down. The\neagle column, designed by Charles Bulfinch, took its place.\n\nThe hill has changed even more than the beacon. It once had three peaks. Bostonians dug\nmuch of them away to fill in land around the city.\n\nThe beacon is gone, and most of the hill is gone. Only the name stayed put.\n",
+    "teaser": "Find the tall column with the eagle on top. It stands in for something that is gone.",
+    "pronunciations": [
+      {
+        "written": "Bulfinch",
+        "say": "BULL-finch"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "beacon-hill",
+      "revolution",
+      "place-names",
+      "bulfinch"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-beacon-hill-the-beacon",
+        "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "boston-brimstone-corner",
+    "title": "Why They Call It Brimstone Corner",
+    "summary": "Park Street Church's corner has been called Brimstone Corner for well over a century. There are two stories why.",
+    "point": {
+      "at": {
+        "lat": 42.35672,
+        "lng": -71.0619
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Park Street Church, corner of Park and Tremont streets, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 76,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [
+      {
+        "title": "Park Street Church",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/park-street-church.htm"
+      },
+      {
+        "title": "\"Brimstone Corner,\" Boston. The Universalist, September 25, 1897, page 4",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn90053049/1897-09-25/ed-1/?sp=4"
+      },
+      {
+        "title": "\"Brimstone Corner.\" New-York Tribune, December 21, 1902, page 21",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83030214/1902-12-21/ed-1/?sp=21"
+      },
+      {
+        "title": "The New York Herald, June 25, 1922, section seven, page 85 (review of a history of Park Street)",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045774/1922-06-25/ed-1/?sp=85"
+      },
+      {
+        "title": "Palestine Daily Herald, February 20, 1909, page 2 (Park Street church and Brimstone Corner)",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn86090383/1909-02-20/ed-1/?sp=2"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the spire on the corner. This is Park Street Church, and for more than a\ncentury Bostonians have called this spot Brimstone Corner.\n\nNobody quite agrees why.\n\nThe first story is about sermons. The church was founded in eighteen-oh-nine, as much of\nBoston was turning Unitarian, and its early ministers preached the old orthodox faith at\nfull heat. Newspapers around nineteen hundred said the name came from the first of them,\nEdward Dorr Griffin. One old Boston joke went like this. The Unitarians had managed to\nfreeze over hell, and this congregation broke a hole in the ice and let the flames up\nagain.\n\nThe second story is about the cellar. A Boston historian, in a book about Park Street\npublished in the early nineteen-twenties, said the sermons had nothing to do with it.\nDuring the War of eighteen twelve, he said, brimstone for making gunpowder was stored in\nthe building.\n\nBrimstone is sulphur. It goes into gunpowder, and it is what hell is supposed to smell of.\n\nSo the corner got its name from the pulpit, or from the basement. Either way, it was the\nsame smell.\n",
+    "teaser": "Look up at the spire on the corner. Bostonians have called this spot Brimstone Corner for more than a century.",
+    "certaintyNote": "Two origins for the nickname circulate in the record. Newspapers of 1897 and 1902 credit the preaching of the first minister, Edward Dorr Griffin; a 1922 New York Herald review of a history of Park Street reports its author, Dr. Lawrence, saying instead that brimstone for gunpowder was stored in the building during the War of 1812. The script gives both and picks neither.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "churches",
+      "war-of-1812",
+      "place-names"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-brimstone-corner",
+        "durationS": 76
+      }
+    ]
+  },
+  {
+    "id": "boston-common-cows",
+    "title": "The Cows Outlasted the Army",
+    "summary": "Boston Common was a cow pasture for two centuries, and a British army camp for one winter.",
+    "point": {
+      "at": {
+        "lat": 42.35541,
+        "lng": -71.06513
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Boston Common, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 60,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Boston Common",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/boston-common-ma.htm"
+      },
+      {
+        "title": "The Evacuation of Boston, 1776",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/evacuation-of-boston-1776.htm"
+      },
+      {
+        "title": "Chicago Daily Tribune, February 20, 1876, page 5 (the Old Elm on Boston Common)",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn84031492/1876-02-20/ed-1/?sp=5"
+      },
+      {
+        "title": "Cows on Boston Common, The Ely Miner, January 9, 1931, page 5",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn90059182/1931-01-09/ed-1/?sp=5"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the grass around you. For about two hundred years, this was a pasture.\n\nThe town bought the land in sixteen thirty-four, and families grazed their cattle here.\nThere were rules about it. Each family could only put so many cows on the Common, so the\ngrass would not run out.\n\nOn hot days the cows sheltered under a huge old elm. The ground around it was swampy then.\n\nIn the winter of seventeen seventy-five, the Common was taken over by something else.\nBritish soldiers dug artillery positions into it, and a garrison of about seventeen\nhundred men camped here.\n\nIn March they sailed away.\n\nThe cows stayed. They kept grazing this ground for another fifty-four years, until the\ncity banned them in eighteen thirty. The pasture fences came down six years after that.\n\nThe British army held the Common for one winter. The cows held it for two centuries.\n",
+    "teaser": "Look at the grass around you. For about two hundred years, this was a pasture.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "boston-common",
+      "revolution",
+      "farming"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-common-cows",
+        "durationS": 60
+      }
+    ]
+  },
+  {
+    "id": "boston-franklins-other-corner",
+    "title": "Franklin's Other Corner",
+    "summary": "Boston says Benjamin Franklin was born on Milk Street. A Victorian historian found that Franklin may have named another corner.",
+    "point": {
+      "at": {
+        "lat": 42.35666,
+        "lng": -71.0584
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Benjamin Franklin birthplace site, Milk Street opposite Old South Meeting House, Boston, Massachusetts"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 97,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [
+      {
+        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01012230/"
+      },
+      {
+        "title": "King's hand-book of Boston (1885)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01015801/"
+      },
+      {
+        "title": "Walks & talks about historic Boston (1917)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/17025471/"
+      },
+      {
+        "title": "Old South Meeting House",
+        "publisher": "National Park Service, Boston National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bost/learn/historyculture/osmh.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on Milk Street and look across at the Old South Meeting House, the big brick church\nwith the tall steeple.\n\nBenjamin Franklin was baptized in there, as a baby, in seventeen oh six. And the story\nBoston has told for a very long time is that he was born right about where you are\nstanding, in a small wooden house that belonged to his father, a candle maker.\n\nIt was a plain house. Clapboard on the front, rough shingles on the sides, about twenty\nfeet wide on the street. It stood for over a century, and it burned down in eighteen\neleven. A newspaper office was later built on the site.\n\nTidy enough. Except for one detail.\n\nIn eighteen seventy three, the Boston historian Samuel Adams Drake pointed out that a\ncorner of Hanover Street, across town, also claimed the honour. And the witness for that\nother corner, by his account, was Franklin himself, who was said to have told a reliable\nperson he was born there.\n\nOther evidence points back here. Drake weighed the two and threw up his hands. A plague on\nboth the houses, he wrote.\n\nWhat is certain is that the boy grew up at the Hanover Street house, making tallow candles\nfor his father. What is likely is that he was born on Milk Street.\n\nSo look at the church across the road. Whichever corner he was born on, he was carried\nover there to be baptized.\n",
+    "teaser": "Look across the street at Old South. He was baptized in there.",
+    "certaintyNote": "Milk Street is the generally accepted birthplace, but an 1873 history records a rival claim for Hanover Street, said to rest on Franklin's own word. The script presents both and says which is likelier. The baptism at Old South is not in dispute.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "benjamin-franklin",
+      "old-south"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-franklins-other-corner",
+        "durationS": 97
+      }
+    ]
+  },
+  {
+    "id": "boston-granary-five-in-one-grave",
+    "title": "Five Men, One Stone",
+    "summary": "The Boston Massacre dead were buried together here, followed by most of the town.",
+    "point": {
+      "at": {
+        "lat": 42.3572,
+        "lng": -71.06128
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Granary Burying Ground, Tremont Street, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 48,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Boston Massacre",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/boston-massacre.htm"
+      },
+      {
+        "title": "Crispus Attucks",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/crispus-attucks.htm"
+      },
+      {
+        "title": "Granary Burying Ground",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/granary-burying-ground.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look for a stone that faces Tremont Street. It belongs to five men.\n\nOn the fifth of March, seventeen seventy, British soldiers fired into a crowd on King\nStreet. Three days later, Boston buried the dead.\n\nWitnesses said around ten thousand people followed the funeral. That was most of the town.\n\nThe procession ended here. Samuel Gray, Samuel Maverick, James Caldwell and Crispus\nAttucks went into the same plot. A week later a fifth man, Patrick Carr, was laid in with\nthem.\n\nTwo of them, Attucks and Caldwell, were sailors with no family and no home in Boston.\nBefore the funeral, their bodies lay in state at Faneuil Hall.\n\nNobody in Boston was their family. That week, the whole town was.\n",
+    "teaser": "Look for a stone that faces Tremont Street. It belongs to five men.",
+    "pronunciations": [
+      {
+        "written": "Attucks",
+        "say": "AT-ucks"
+      },
+      {
+        "written": "Faneuil",
+        "say": "FAN-yul"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "revolution",
+      "boston-massacre",
+      "burial-ground"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-granary-five-in-one-grave",
+        "durationS": 48
+      }
+    ]
+  },
+  {
+    "id": "boston-hayden-house-keg",
+    "title": "A Keg Under the House",
+    "summary": "When slave catchers came for William and Ellen Craft, the Haydens' house had an answer waiting in the cellar.",
+    "point": {
+      "at": {
+        "lat": 42.36024,
+        "lng": -71.06908
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Lewis and Harriet Hayden House, 66 Phillips Street, Beacon Hill, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 77,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Lewis and Harriet Hayden House",
+        "publisher": "National Park Service, Boston African American National Historic Site",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/boaf/learn/historyculture/lewis-and-harriet-hayden-house.htm"
+      },
+      {
+        "title": "Lewis and Harriet Hayden House",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/lewis-and-harriet-hayden-house.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This is sixty-six Phillips Street. It is a private home, so please look from the\nsidewalk.\n\nIn eighteen fifty it was a boarding house run by Lewis and Harriet Hayden. Both had\nescaped slavery in Kentucky. Lewis was out in the city. Harriet almost certainly ran the\nhouse. Between them it became the busiest Underground Railroad safe house in Boston.\n\nThat summer, the census found two famous guests living here. William and Ellen Craft had\nescaped from Georgia, Ellen dressed as a white slaveholder and William posing as her slave.\n\nThat autumn, under the new Fugitive Slave Law, slave catchers came to Boston looking for\nthem. It was the city's first test of the law.\n\nWhat happened next is William Craft's own account. He said that he and Lewis Hayden had a\nkeg of gunpowder under this house, with a fuse attached, ready to light if anyone tried to\ntake them. That is his word. No other record of the keg survives that we know of.\n\nNobody tried. The slave catchers gave up.\n\nAn abolitionist paper later explained why. The marshal knew that the road to hell lay over\nLewis Hayden's threshold.\n",
+    "teaser": "This is sixty-six Phillips Street. Please look from the sidewalk.",
+    "certaintyNote": "The gunpowder keg rests on William Craft's own later account, quoted by Henry Ingersoll Bowditch and cited by the National Park Service. The script attributes it to him and says no other record of the keg is known to us.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "black-heritage-trail",
+      "beacon-hill",
+      "underground-railroad",
+      "abolition"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-hayden-house-keg",
+        "durationS": 77
+      }
+    ]
+  },
+  {
+    "id": "boston-in-short-i-lost-most-all",
+    "title": "In Short, I Lost Most All",
+    "summary": "The British burned Charlestown during the Battle of Bunker Hill. A tavern's foundations in this park are almost all that is left.",
+    "point": {
+      "at": {
+        "lat": 42.3729,
+        "lng": -71.06245
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "City Square Park, Three Cranes Tavern foundations, Charlestown, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 87,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Burning of Charlestown",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/the-burning-of-charlestown.htm"
+      },
+      {
+        "title": "Copp's Hill Burying Ground",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/copp-s-hill-burying-ground.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look for the old stone foundations in this park. They belonged to the Great House, later the\nThree Cranes Tavern. In seventeen seventy-five this was the middle of Charlestown.\n\nThat spring, about sixteen hundred people lived here. Wooden houses, workshops, warehouses,\nnarrow streets, a ferry across to Boston.\n\nBy June, most of them had gone. The British army was shut up in Boston, the colonial army\nwas gathering outside, and Charlestown sat in between.\n\nOn the seventeenth of June, the militia dug in on the hill above the town. During the\nbattle, colonial soldiers fired on the British from the empty houses. General William Howe\nordered the town set on fire.\n\nA British general, John Burgoyne, had been directing guns from Copp's Hill, across the\nwater. He wrote that the timber church steeples were great pyramids of fire above the rest.\n\nAfterwards, more than four hundred and fifty families listed what they had lost. One man,\nWillson Chamberlain, began his list and ran out of room on the paper. He ended it with one\nline.\n\nIn short, I lost most all that I had.\n\nThe town asked Congress to pay. Congress said it lamented the distress. Nobody was ever\ncompensated.\n\nOf the town Chamberlain lost, this is what you can still see. A tavern's foundations, in a\npark.\n",
+    "teaser": "Look for the old foundations in this park. They are most of what is left of a town.",
+    "pronunciations": [
+      {
+        "written": "Burgoyne",
+        "say": "bur-GOYN"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "charlestown",
+      "bunker-hill",
+      "revolution",
+      "archaeology"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-in-short-i-lost-most-all",
+        "durationS": 87
+      }
+    ]
+  },
+  {
+    "id": "boston-say-no-more",
+    "title": "Say No More",
+    "summary": "A woman was banished for what she taught on this corner. Two centuries later it was where America's writers brought their manuscripts.",
+    "point": {
+      "at": {
+        "lat": 42.3576,
+        "lng": -71.05855
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old Corner Bookstore building, School and Washington streets, Boston, Massachusetts"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old Corner Book Store, Corner of Washington and School streets, Boston (HABS MA-325)",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ma1736/"
+      },
+      {
+        "title": "Freedom Trail Audio Described Brochure",
+        "publisher": "National Park Service, Boston National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bost/planyourvisit/freedom-trail-audio-described-brochure.htm"
+      },
+      {
+        "title": "Colonial and revolutionary landmarks of Boston (1913)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/14003283/"
+      },
+      {
+        "title": "Literary landmarks of Boston (1922)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/22012901/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the little brick building on the corner with the steep, two sloped roof. It is one of\nthe oldest buildings in the city, and among the taller ones around it, it looks it.\n\nBefore it was built, this ground belonged to a woman named Anne Hutchinson.\n\nShe held meetings in her house here, talking about religion. The colony's leaders judged\nher teaching dangerous. In sixteen thirty eight she was tried and banished.\n\nAt the end of the trial she asked why she was being sent away. The governor told her, say\nno more. The court knows wherefore, and is satisfied.\n\nLater, fire took the houses on this corner. The building in front of you went up in its\nplace as an apothecary's shop, and stayed one for about a hundred years.\n\nThen the booksellers moved in.\n\nBy the middle of the eighteen hundreds this was the home of Ticknor and Fields, the\nleading publisher in the country, and the writers came here with their manuscripts.\nHawthorne. Emerson. Longfellow. Harriet Beecher Stowe. Louisa May Alcott.\n\nSo on this one small corner, a woman was thrown out of the colony and told to say no more.\n\nTwo hundred years later, saying more was the whole business.\n",
+    "teaser": "Find the little brick building with the steep roof.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "literature",
+      "publishing",
+      "anne-hutchinson"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-say-no-more",
+        "durationS": 82
+      }
+    ]
+  },
+  {
+    "id": "boston-shaw-memorial-forty-faces",
+    "title": "Forty Faces",
+    "summary": "Saint-Gaudens spent fourteen years giving the soldiers of the 54th their own faces. Their names took longer.",
+    "point": {
+      "at": {
+        "lat": 42.3576,
+        "lng": -71.0635
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Robert Gould Shaw and Massachusetts 54th Regiment Memorial, Beacon Street, Boston, Massachusetts"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 79,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Robert Gould Shaw and the 54th Regiment",
+        "publisher": "National Park Service, Boston African American National Historic Site",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/boaf/learn/historyculture/shaw.htm"
+      },
+      {
+        "title": "The Robert Gould Shaw Memorial",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/the-robert-gould-shaw-memorial.htm"
+      },
+      {
+        "title": "Robert Gould Shaw & Massachusetts 54th Regiment Memorial",
+        "publisher": "National Park Service, Saint-Gaudens National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/robert-gould-shaw-massachusetts-54th-regiment-memorial.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the soldiers in the bronze, not the man on the horse. Look at their faces.\n\nThey are not one face repeated. Some are young, some older. The features and the builds\nare different.\n\nThat was the point. The sculptor, Augustus Saint-Gaudens, was first expected to make a\nstatue of Colonel Robert Gould Shaw alone on horseback. Shaw's family objected. He had not\nbeen a great commander, they said, and it seemed pretentious. So Saint-Gaudens put him\namong his men.\n\nThe men were the Fifty-fourth Massachusetts, one of the first Black regiments of the Civil\nWar. They marched down this street, off to the war, in eighteen sixty-three. That July, in\nthe assault on Fort Wagner in South Carolina, Shaw and many of his men were killed.\n\nIn his New York studio, Saint-Gaudens hired Black men to pose, and modelled some forty\nheads. The work took him about fourteen years, longer than anything else in his career.\n\nIt was unveiled in eighteen ninety-seven, and the original inscriptions named only the\nwhite officers who fell. The names of the Black soldiers were added in the early\nnineteen-eighties.\n\nThe faces came first. The names took another eighty-five years.\n",
+    "teaser": "Look at the soldiers in the bronze, not the man on the horse. Look at their faces.",
+    "pronunciations": [
+      {
+        "written": "Saint-Gaudens",
+        "say": "saint GAW-dens"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "black-heritage-trail",
+      "freedom-trail",
+      "civil-war",
+      "sculpture",
+      "54th-massachusetts"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-shaw-memorial-forty-faces",
+        "durationS": 79
+      }
+    ]
+  },
+  {
+    "id": "boston-sides-made-of-iron",
+    "title": "Sides Made of Iron",
+    "summary": "USS Constitution got the name Old Ironsides in 1812, when a British cannonball bounced off her hull. The hull was oak.",
+    "point": {
+      "at": {
+        "lat": 42.37253,
+        "lng": -71.05648
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "USS Constitution, Pier 1, Charlestown Navy Yard, Charlestown, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 86,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Summer 1812: The USS Constitution shatters the aura of British naval superiority",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/old-ironsides.htm"
+      },
+      {
+        "title": "USS Constitution",
+        "publisher": "National Park Service, Boston National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bost/learn/historyculture/ussconst.htm"
+      },
+      {
+        "title": "'Old Ironsides' in Dry Dock 1 (wayside exhibit)",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/old-ironsides-dry-dock-1-cny-wayside.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the side of the ship in front of you.\n\nIn August eighteen twelve, about seven hundred and fifty miles east of Boston, she met the\nBritish frigate Guerriere.\n\nThe Royal Navy was the most powerful in the world. The American navy had fewer than two\ndozen ships. The British captain said he would take this one in thirty minutes.\n\nHer captain, Isaac Hull, held his fire as they closed. He waited until the two ships were\nside by side. Then he fired the whole broadside.\n\nThe Guerriere was wrecked. And at some point in the fight, a British cannonball hit this\nhull and bounced off. One of the crew shouted that her sides were made of iron.\n\nThey were not. They were live oak, a wood so dense it can weigh seventy-five pounds to the\ncubic foot. It grew on the swampy islands off Georgia. The first timber cutters sent from New\nEngland fell sick within days, and enslaved men were brought in to build the roads to get it out.\n\nShe has been rebuilt again and again since. But below the waterline, a good part of her\noriginal wood is still there.\n\nThe nickname stuck. She has been Old Ironsides for more than two hundred years.\n\nShe has never been iron.\n",
+    "teaser": "Look at the side of the ship. A cannonball once bounced off it.",
+    "pronunciations": [
+      {
+        "written": "Guerriere",
+        "say": "gair-ee-AIR"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "charlestown",
+      "navy-yard",
+      "uss-constitution",
+      "war-of-1812",
+      "ships"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-sides-made-of-iron",
+        "durationS": 86
+      }
+    ]
+  },
+  {
+    "id": "boston-state-house-dome-copper",
+    "title": "What Is Under the Gold",
+    "summary": "Before it was gold, the State House dome was copper, rolled at Paul Revere's mill.",
+    "point": {
+      "at": {
+        "lat": 42.35705,
+        "lng": -71.0641
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Massachusetts State House dome, seen from Boston Common, Boston, Massachusetts"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "United States Oracle and Portsmouth Advertiser, November 20, 1802, page 3",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83025545/1802-11-20/ed-1/?sp=3"
+      },
+      {
+        "title": "Paul Revere",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/paul-revere.htm"
+      },
+      {
+        "title": "New-York Tribune, April 17, 1875, page 1 (Boston letter on the gilding of the State House dome)",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83030214/1875-04-17/ed-1/?sp=1"
+      },
+      {
+        "title": "Springfield Weekly Republican, March 12, 1942, page 9",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83020847/1942-03-12/ed-1/?sp=9"
+      },
+      {
+        "title": "Massachusetts State House",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/massachusetts-state-house.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up the hill at the dome of the State House. It was not always gold.\n\nIn November eighteen-oh-two, a New Hampshire newspaper reported that the superb dome of\nthe new State House had just been coppered. The sheets, it said, were made in\nMassachusetts by Colonel Revere and son.\n\nThat is Paul Revere. After the war he went into industry, and in eighteen-oh-one he opened\na copper mill. The paper added, with some pride, that it was the only sheet copper works\nin America.\n\nSo for about seventy years the dome was the colour of copper. It was gilded in the\neighteen-seventies, and Boston argued about whether the gold was worth the money. A\nnewspaper later made a point of it. Real gold leaf, not gilt paint.\n\nThen in nineteen forty-two, with the country at war, the dome was to be painted a dull\ngrey, as an air raid precaution.\n\nRevere is remembered for one night on a horse. Look up. This was his day job.\n",
+    "teaser": "Look up the hill at the gold dome. It was not always gold.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "state-house",
+      "paul-revere",
+      "second-world-war"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-state-house-dome-copper",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "boston-swan-boats-mrs-paget",
+    "title": "Mrs. Paget's Swans",
+    "summary": "In 1893 newspapers across the country reported that Boston's swan boats were owned and run by a woman.",
+    "point": {
+      "at": {
+        "lat": 42.3541,
+        "lng": -71.06985
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Swan Boats, the Lagoon, Boston Public Garden, Boston, Massachusetts"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 74,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Boston Public Garden",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/boston-public-garden.htm"
+      },
+      {
+        "title": "Mrs. Paget's Swan Boats. The Helena Independent, October 8, 1893, page 6",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83025308/1893-10-08/ed-1/?sp=6"
+      },
+      {
+        "title": "Fort Worth Gazette, October 29, 1893, page 2 (Mrs. Paget's swan boats)",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn86071158/1893-10-29/ed-1/?sp=2"
+      },
+      {
+        "title": "Shirley Temple Going for Ride. The Waterbury Democrat, August 3, 1938, page 9",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn82014085/1938-08-03/ed-1/?sp=9"
+      },
+      {
+        "title": "Whiting's Boston Letter. Springfield Weekly Republican, April 8, 1937, page 9",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83020847/1937-04-08/ed-1/?sp=9"
+      },
+      {
+        "title": "Cruel Captain! The St. Johns Herald, April 8, 1899, page 3 (from Youth's Companion)",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn94051692/1899-04-08/ed-1/?sp=3"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Watch a swan boat come round the pond. Look at the back of it. That is where the driver\nsits, pedalling as if on a bicycle, and paddle wheels push the whole thing along.\n\nThe boats began running here in eighteen seventy-seven. They were designed by a man named\nRobert Paget.\n\nSixteen years later, newspapers across the country ran a small item about who was really\nin charge. The owner and manager of the Boston swan boats, they reported, was a woman.\nMrs. Paget.\n\nShe did not stand at the landing calling for fares. She left that to a man. But she came\ndown to the landing often, studied the business, and made a very comfortable living from\nit. By then she had been running it for fourteen years.\n\nIn nineteen thirty-eight, the owner of the fleet was still a Paget, John Paget. When\nShirley Temple came to town, he made her an honorary admiral of the swan boat navy.\n\nAs for the man at the landing, one story from those years gives his whole sales pitch.\nGrown folks, ten cents. Children, five. Babies thrown in.\n",
+    "teaser": "Watch a swan boat come round the pond. Look at the back of it.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "public-garden",
+      "boats",
+      "women",
+      "family-business"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-swan-boats-mrs-paget",
+        "durationS": 74
+      }
+    ]
+  },
+  {
+    "id": "boston-the-church-inside-the-church",
+    "title": "The Church Inside the Church",
+    "summary": "King's Chapel was built around the old wooden church, while the congregation kept worshipping inside it.",
+    "point": {
+      "at": {
+        "lat": 42.35795,
+        "lng": -71.06035
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "King's Chapel, Tremont and School streets, Boston, Massachusetts"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01012230/"
+      },
+      {
+        "title": "A brief sketch of the history of King's Chapel (1898)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/07030336/"
+      },
+      {
+        "title": "Freedom Trail Audio Described Brochure",
+        "publisher": "National Park Service, Boston National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bost/planyourvisit/freedom-trail-audio-described-brochure.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the walls of King's Chapel. Dark, rough blocks of stone.\n\nNobody quarried them. There were no quarries yet. The stone was gathered off the surface\nof the ground in Braintree, south of here, and the builders had little skill at dressing\nit. That is why it looks the way it does.\n\nNow picture this corner in the summer of seventeen forty nine.\n\nThere is already a church here. A wooden one, old and decaying. The governor lays the\ncornerstone for a new stone chapel, gives the workmen money to drink his health, and then\nwalks inside the old wooden church for a service.\n\nBecause the plan was not to pull the old church down first.\n\nThe plan was to build the new one around it.\n\nSo for nearly four years the congregation kept worshipping in a wooden church while stone\nwalls went up on every side of them. Only when the old building was too far gone did they\nmove out, and borrow somebody else's.\n\nBy the summer of seventeen fifty four the stone chapel was in use. The pulpit was carried\nover from the old church into the new one.\n\nMost buildings replace the one before them. This one swallowed it.\n",
+    "teaser": "Look at the stone. Nobody quarried it.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "kings-chapel",
+      "architecture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-the-church-inside-the-church",
+        "durationS": 82
+      }
+    ]
+  },
+  {
+    "id": "boston-the-house-that-stayed-useful",
+    "title": "The House That Stayed Useful",
+    "summary": "Downtown Boston's oldest building, built about 1680, survived a century as a boarding house, tenement, cigar factory and bank.",
+    "point": {
+      "at": {
+        "lat": 42.36374,
+        "lng": -71.05368
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Paul Revere House, North Square, Boston, Massachusetts"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 77,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Paul Revere House",
+        "publisher": "National Park Service, Boston National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bost/learn/historyculture/prh.htm"
+      },
+      {
+        "title": "Paul Revere House",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/paul-revere-house.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the house at number nineteen, North Square. Everything else you can see from here\nis younger than it.\n\nIt went up around sixteen eighty. That makes it the oldest building in downtown Boston.\n\nPaul Revere bought it in seventeen seventy. He was a silversmith, a veteran and a father of\nfive. On the night of the eighteenth of April, seventeen seventy-five, he set out from this\nsquare to warn Samuel Adams and John Hancock.\n\nThe Reveres owned the house for thirty years and lived in it for about twenty. In eighteen\nhundred, he sold it.\n\nWhat came next is why it is still here.\n\nIt became a boarding house for sailors. Then a tenement, with shops on the ground floor. At\none point it was a cigar factory. At another, a bank. Nobody was preserving it. It was just\na building people kept finding a use for.\n\nBy the early nineteen hundreds it faced demolition. A great-grandson of Paul Revere bought\nit, and in April nineteen oh eight it opened as a museum.\n\nTwenty years of Reveres. A century of sailors, shopkeepers and cigar makers.\n\nThe house only remembers the twenty.\n",
+    "teaser": "Look at the house at number nineteen. Everything around it is younger.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "north-end",
+      "paul-revere",
+      "houses"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-the-house-that-stayed-useful",
+        "durationS": 77
+      }
+    ]
+  },
+  {
+    "id": "boston-the-lion-and-the-unicorn",
+    "title": "The Lion and the Unicorn",
+    "summary": "The royal lion and unicorn on the Old State House were burned in the street in 1776. The pair up there now came back a century later.",
+    "point": {
+      "at": {
+        "lat": 42.3587,
+        "lng": -71.05672
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old State House, east end and balcony, State Street, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 81,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old State House",
+        "publisher": "National Park Service, Boston National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bost/learn/historyculture/osh.htm"
+      },
+      {
+        "title": "Old Massachusetts State House, 206 Washington Street, Boston (HABS MA-1246)",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ma1403/"
+      },
+      {
+        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01012230/"
+      },
+      {
+        "title": "Colonial and revolutionary landmarks of Boston (1913)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/14003283/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the end of the old brick State House with the balcony on it. Now look up, past the\nbalcony, to the two corners of the roof.\n\nA lion on one side. A unicorn on the other. The badge of the British king.\n\nOn the eighteenth of July, seventeen seventy six, a crowd filled the street below you to\nhear a document read aloud from that balcony. It was the Declaration of Independence, and\nBoston was hearing it for the first time.\n\nSix years earlier, soldiers had fired into a crowd on this same spot. This time the guns\nwent off in celebration.\n\nThen the crowd turned to the roof.\n\nThe lion and the unicorn came down. They were carried a little way down the street,\nheaped up with every other royal emblem that could be found in town, and burned in a\nbonfire outside a tavern.\n\nFor about a hundred years, those corners stayed bare. Then the building was restored, and\nnew figures went back up.\n\nSo the pair you are looking at never heard the Declaration. The ones that did are ash.\n\nBoston burned the king's animals to make a point. A century later, it put them back to\nmake another.\n",
+    "teaser": "Look up at the two corners of the roof.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "revolution",
+      "old-state-house"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-the-lion-and-the-unicorn",
+        "durationS": 81
+      }
+    ]
+  },
+  {
+    "id": "boston-the-poem-that-built-a-statue",
+    "title": "The Poem That Built a Statue",
+    "summary": "Cyrus Dallin won the commission for this Paul Revere statue in 1884, at twenty-three. It went up in 1940, after he wrote a poem.",
+    "point": {
+      "at": {
+        "lat": 42.36558,
+        "lng": -71.05326
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Paul Revere statue, Paul Revere Mall, North End, Boston, Massachusetts"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 88,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Revere's Statue: Description of the Proposed Work, The Salt Lake Herald, 30 November 1884, page 3",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn85058130/1884-11-30/ed-1/?sp=3"
+      },
+      {
+        "title": "Dallin's Paul Revere Wins at Last, Springfield Weekly Republican, 11 January 1940, page 3",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83020847/1940-01-11/ed-1/?sp=3"
+      },
+      {
+        "title": "Whiting's Boston Letter, Springfield Weekly Republican, 10 October 1940, page 9",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83020847/1940-10-10/ed-1/?sp=9"
+      },
+      {
+        "title": "Cyrus E. Dallin and the Paul Revere model, The Frontier, O'Neill, Nebraska, 18 April 1940, page 2",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/2010270509/1940-04-18/ed-1/?sp=2"
+      },
+      {
+        "title": "Paul Revere Rides Again, The Guardian, Boston, 14 September 1940, page 4",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83045863/1940-09-14/ed-1/?sp=4"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the rider. When this design was first described, it was Revere stopping for a\nmoment in the middle of his ride, to warn the people.\n\nIt won a competition in eighteen eighty-four. Ten models were entered. The winner\nwas a sculptor from Utah, twenty-three years old, who had come to Boston a few years before\nwith no money at all.\n\nThe newspapers announced the winner and got his name wrong. They called him Charles Dillon.\nHis name was Cyrus Dallin.\n\nOn the Fourth of July, eighteen eighty-five, he signed a contract for a bronze to stand in\nCopley Square. The money was supposed to come from public subscription. It never did.\n\nDallin became one of the best-known sculptors in the country. He kept asking Boston about\nhis statue. Boston kept being sympathetic.\n\nAfter more than half a century, he tried something new. He wrote a poem, in the rhythm of\nLongfellow.\n\nListen, my children, and you shall hear, of the ignoble failure of Boston to rear, the\ngreatest creation of my long career, the equestrian statue of Paul Revere.\n\nThe city found the money. In September nineteen forty, fifty-five years after the contract,\nthis statue was unveiled here. Dallin was seventy-eight.\n\nHe said it was the poem that did it. It was probably the only poem he ever wrote.\n",
+    "teaser": "This statue was designed in 1884. Look at the date it went up.",
+    "pronunciations": [
+      {
+        "written": "Dallin",
+        "say": "DAL-in"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "north-end",
+      "paul-revere",
+      "statues",
+      "sculpture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-the-poem-that-built-a-statue",
+        "durationS": 88
+      }
+    ]
+  },
+  {
+    "id": "boston-the-school-that-lost-its-ground",
+    "title": "The School That Lost Its Ground",
+    "summary": "School Street is named for Boston's first school. In the 1740s a church needed the land, and the school was pushed across the street.",
+    "point": {
+      "at": {
+        "lat": 42.35788,
+        "lng": -71.05948
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "First public school site and Franklin statue, School Street, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 84,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01012230/"
+      },
+      {
+        "title": "Freedom Trail Audio Described Brochure",
+        "publisher": "National Park Service, Boston National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bost/planyourvisit/freedom-trail-audio-described-brochure.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are on School Street. It is named after a school that is not here.\n\nFind the bronze statue of Benjamin Franklin, set back from the sidewalk. Close by, in the\nsixteen thirties, the town of Boston started its first school. The Latin School. A plain\nbuilding of one storey, big enough for about a hundred boys.\n\nNow look up the street, toward the dark stone church on the corner. That is King's Chapel.\n\nIn the seventeen forties the chapel wanted to rebuild, bigger. It needed more ground, and\npart of that ground had the schoolhouse on it. After a good deal of haggling, the church\nbuilt the school a new house on the other side of the street, and took the old site.\n\nThe town was not pleased. A local wit put it in verse. A fig for your learning, I tell you\nthe town, to make the church larger, must pull the school down.\n\nThe school moved many more times after that. It is still open, nearly four hundred years\non, just not on the street that carries its name.\n\nAs for Franklin. He started here at eight years old, and he lasted one year.\n\nOf everyone who ever studied on this street, he is the one who stayed.\n",
+    "teaser": "This street is named after a school that is not here.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "education",
+      "latin-school",
+      "benjamin-franklin"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-the-school-that-lost-its-ground",
+        "durationS": 84
+      }
+    ]
+  },
+  {
+    "id": "boston-the-sextons-lodgers",
+    "title": "The Sexton's Lodgers",
+    "summary": "The man said to have hung the two lanterns in Old North's tower in 1775 had British officers quartered in his own house.",
+    "point": {
+      "at": {
+        "lat": 42.36623,
+        "lng": -71.05462
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old North Church tower, Salem Street, North End, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 75,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old North Church",
+        "publisher": "National Park Service, Boston National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bost/learn/historyculture/onc.htm"
+      },
+      {
+        "title": "Old North Church",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/old-north-church.htm"
+      },
+      {
+        "title": "Boston, a guide book, by Edwin M. Bacon (Ginn and Company, 1909), Christ Church and the Newman house",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/33007578/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the brick tower, and the tablet on its front. It says the signal lanterns of Paul\nRevere were shown in the steeple of this church.\n\nIt does not say who carried them up.\n\nOn the night of the eighteenth of April, seventeen seventy-five, by the usual account, two\nmen let themselves in. One was John Pulling, a member of the vestry. The other was the man\nwho kept the church, its sexton. His name was Robert Newman.\n\nThey climbed to the top of the tower, the tallest structure in the town. They held two\nlanterns near the windows, briefly. Then they got out.\n\nTwo lanterns meant the British troops were crossing the river by water, heading for\nLexington and Concord.\n\nNewman lived a block up this street, on the corner of Sheafe Street. And there is one more\ndetail about that house.\n\nAt the time, British officers were quartered in it, on the Newman family.\n\nSo the signal that the army was moving went up from the tallest building in Boston. And the\nman who hung it was sharing his home with the army's officers.\n",
+    "teaser": "The tablet on the tower says what happened here. It does not say who did it.",
+    "pronunciations": [
+      {
+        "written": "Sheafe Street",
+        "say": "SHEEF Street"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "north-end",
+      "old-north-church",
+      "revolution",
+      "paul-revere"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-the-sextons-lodgers",
+        "durationS": 75
+      }
+    ]
+  },
+  {
+    "id": "boston-the-spire-that-fell",
+    "title": "The Spire That Fell",
+    "summary": "Old North's spire has blown down twice. The one above you went up in 1955, a copy of the one that stood in 1775.",
+    "point": {
+      "at": {
+        "lat": 42.36612,
+        "lng": -71.05421
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old North Church steeple from Paul Revere Mall, North End, Boston, Massachusetts"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 80,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old North Steeple (editorial), Evening Star, Washington, D.C., 2 September 1954, page 22",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83045462/1954-09-02/ed-1/?sp=22"
+      },
+      {
+        "title": "Hurricane topples Old North Church steeple, Evening Star, Washington, D.C., 1 September 1954, page 2",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83045462/1954-09-01/ed-1/?sp=2"
+      },
+      {
+        "title": "$10 for Steeple Fund, Evening Star, Washington, D.C., 3 September 1954, page 13",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83045462/1954-09-03/ed-1/?sp=13"
+      },
+      {
+        "title": "Church Spire Is Dedicated, The Key West Citizen, 13 October 1955, page 4",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83016244/1955-10-13/ed-1/?sp=4"
+      },
+      {
+        "title": "Boston, a guide book, by Edwin M. Bacon (Ginn and Company, 1909), Christ Church",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/33007578/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the white spire on top of the tower.\n\nIt is younger than it looks.\n\nThe first spire went up in the seventeen hundreds. A guidebook called it the most elegant\nin the town. Early in the eighteen hundreds, a gale blew it down.\n\nIts replacement was built from a model by Charles Bulfinch, the architect of the State\nHouse. That one stood for about a hundred and fifty years.\n\nThen, on the thirty-first of August, nineteen fifty-four, Hurricane Carol reached Boston.\nThe wind worked at the spire for more than an hour. It swayed, cracked, and went over into\nthe street.\n\nAn amateur photographer visiting from New York happened to catch it as it fell.\n\nWithin weeks there was a fund to put it back. Money came from well beyond Boston. A Lions\nClub in Maine voted to send ten dollars.\n\nIn October nineteen fifty-five, a new spire was dedicated here. At the ceremony it was\ndescribed as a duplicate of the spire the lanterns hung from in seventeen seventy-five.\n\nSo when you look up, you are seeing the night of the lanterns, more or less. You are just\nseeing it in a copy about seventy years old.\n",
+    "teaser": "Look up at the white spire. It is younger than it looks.",
+    "pronunciations": [
+      {
+        "written": "Bulfinch",
+        "say": "BULL-finch"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "north-end",
+      "old-north-church",
+      "storms",
+      "hurricanes"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-the-spire-that-fell",
+        "durationS": 80
+      }
+    ]
+  },
+  {
+    "id": "boston-the-spy-question",
+    "title": "The Spy Question",
+    "summary": "Faneuil Hall's gilded grasshopper has topped the cupola since 1742. Legend says it was once used to catch spies.",
+    "point": {
+      "at": {
+        "lat": 42.3601,
+        "lng": -71.05575
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Faneuil Hall grasshopper weathervane, Dock Square, Boston, Massachusetts"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 88,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Faneuil Hall Virtual Tour: Grasshopper Weathervane",
+        "publisher": "National Park Service, Boston National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bost/learn/faneuil-hall-virtual-tour.htm"
+      },
+      {
+        "title": "Faneuil Hall Audio Described Brochure",
+        "publisher": "National Park Service, Boston National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bost/planyourvisit/faneuil-hall-audio-described-brochure.htm"
+      },
+      {
+        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01012230/"
+      },
+      {
+        "title": "Walks & talks about historic Boston (1917)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/17025471/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at Faneuil Hall, at the little tower on the end nearest the harbour, and then at\nthe very tip of it. That gold shape catching the light is not an arrow, and it is not a\nrooster.\n\nIt is a grasshopper.\n\nIt is about four feet long, hammered out of copper and covered in gold, and it has been up\nthere since seventeen forty two. A craftsman named Shem Drowne made it, probably copying\nthe grasshopper on the Royal Exchange in London.\n\nIt has been knocked off by an earthquake. It has come down in a fire. In the nineteen\nseventies it was stolen, and after a week of searching it turned up hidden inside the\ntower it fell from.\n\nAnd there is a story about it that nobody has ever proved.\n\nThe story goes that during the War of Eighteen Twelve, with Boston nervous about British\nspies, a stranger could be stopped and asked one question. What is on top of Faneuil Hall?\n\nAny Bostonian would know. A spy would have to guess.\n\nThe National Park Service tells that one as a legend, and a legend is what it is.\n\nBut stand here for a minute and watch the people walking past. Count how many of them look\nup.\n\nThen decide whether the question would still work.\n",
+    "teaser": "Look at the very top of Faneuil Hall. That is not a rooster.",
+    "certaintyNote": "The weathervane, its maker and its history are documented by the National Park Service. The spy test is a legend the Park Service itself labels as one; the script says so out loud.",
+    "pronunciations": [
+      {
+        "written": "Faneuil",
+        "say": "FAN-yul"
+      },
+      {
+        "written": "Drowne",
+        "say": "DROWN"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "faneuil-hall",
+      "weathervane",
+      "folklore"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-the-spy-question",
+        "durationS": 88
+      }
+    ]
+  },
+  {
+    "id": "boston-the-stone-they-shot-at",
+    "title": "The Stone They Shot At",
+    "summary": "The story goes that British soldiers used Copp's Hill gravestones for target practice, and one patriot's stone above all.",
+    "point": {
+      "at": {
+        "lat": 42.36712,
+        "lng": -71.05584
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Copp's Hill Burying Ground, Hull Street, North End, Boston, Massachusetts"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 80,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Copp's Hill Burying Ground",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/copp-s-hill-burying-ground.htm"
+      },
+      {
+        "title": "Historic burial-places of Boston and vicinity, by John M. Merriam (Worcester, 1892)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/18006883/"
+      },
+      {
+        "title": "Historical sketch of Copp's Hill burying ground, with inscriptions and quaint epitaphs, by John Norton (Boston, 1921)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/22013534/"
+      },
+      {
+        "title": "Old Copp's Hill and burial ground; with historic sketches, by Edward MacDonald (Boston, 1879)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/03024090/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the slate headstones on this hill. Some of them, people will tell you, are pitted\nby British musket balls.\n\nThe story goes that redcoats used them for target practice while the army held Boston.\n\nOne stone gets named more than any other. It belongs to a merchant, Captain Daniel Malcom,\nwho died in seventeen sixty-nine.\n\nListen to what was carved on it. A true son of Liberty. A friend to the public. An enemy to\noppression. And one of the foremost in opposing the Revenue Acts on America.\n\nMalcom meant it. One night in seventeen sixty-eight, with friends carrying clubs, he\nbrought sixty casks of wine ashore from a ship down the harbour, without paying the King's\nduty.\n\nSo when the soldiers came, the story says, his stone was the one they chose.\n\nIs it true? Nobody has proved it. A history of Boston's burial grounds from eighteen\nninety-two put it carefully. Several stones here are said to bear the marks, and Malcom's\nwould seem the most likely. The park service today says only that some historians suggest\nit.\n\nBut nobody needed the soldiers to fire.\n\nThe stone had already said exactly what it thought of them.\n",
+    "teaser": "Some of these slate stones, people will tell you, carry British musket marks.",
+    "certaintyNote": "A long-told tradition, not an established fact. The National Park Service says only that some historians suggest British soldiers used headstones here for target practice; an 1892 history says the stones are \"said to bear the marks\". The script says out loud that it is unproven. Malcom's epitaph and his wine-smuggling are documented in the 1921 sketch.",
+    "pronunciations": [
+      {
+        "written": "Malcom",
+        "say": "MAL-kum"
+      },
+      {
+        "written": "Copp's Hill",
+        "say": "KOPS Hill"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "north-end",
+      "copps-hill",
+      "burying-grounds",
+      "revolution"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-the-stone-they-shot-at",
+        "durationS": 80
+      }
+    ]
+  },
+  {
+    "id": "boston-the-street-that-ran-into-the-sea",
+    "title": "The Street That Ran into the Sea",
+    "summary": "Long Wharf was built as King Street carried straight out into the harbour. In 1768 an army marched up it.",
+    "point": {
+      "at": {
+        "lat": 42.3599,
+        "lng": -71.05
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Long Wharf, foot of State Street, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 94,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01012230/"
+      },
+      {
+        "title": "King's hand-book of Boston (1885)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01015801/"
+      },
+      {
+        "title": "Walks & talks about historic Boston (1917)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/17025471/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are on Long Wharf. Turn around and look back toward the city, straight up State\nStreet. If the view is clear, the old brick State House sits at the far end.\n\nThat straight line is the whole idea.\n\nWhen this wharf was begun, around seventeen ten, it was laid out as the main street\ncarried on into the harbour. King Street, it was called then, and the wharf was built to\nthe same width. The street simply kept going into the sea.\n\nAnd it went a long way. Close to two thousand feet. About a third of a mile, with\nwarehouses along one side nearly the whole length. A ship could tie up at the end, and a\nmerchant could step off the deck and walk one straight road to the Town House.\n\nThe landward end of the old wharf is now under solid ground. The city filled in along the\nshore and ran a new avenue across the heads of the wharves, so what you are standing on is\nonly part of the original.\n\nIt was built for cargo.\n\nOn the first of October, seventeen sixty eight, warships anchored off this wharf and put\ntwo regiments of British soldiers ashore, sent to bring an unruly town to heel. They\nmarched into town with drums beating and bayonets fixed.\n\nThe road built to bring the world into Boston had just brought in an army.\n",
+    "teaser": "Turn around and look straight up State Street.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "waterfront",
+      "harbour",
+      "revolution",
+      "long-wharf"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-the-street-that-ran-into-the-sea",
+        "durationS": 94
+      }
+    ]
+  },
+  {
+    "id": "boston-the-whites-of-their-eyes",
+    "title": "The Whites of Their Eyes",
+    "summary": "The most famous order of the Battle of Bunker Hill is credited to Prescott, or to Putnam. Nobody can show either said it.",
+    "point": {
+      "at": {
+        "lat": 42.3759,
+        "lng": -71.06058
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "William Prescott statue, Bunker Hill Monument grounds, Charlestown, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 65,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [
+      {
+        "title": "William Prescott",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/william-prescott.htm"
+      },
+      {
+        "title": "Israel Putnam",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/israel-putnam.htm"
+      },
+      {
+        "title": "Bunker Hill - Prescott Statue",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/bunker-hill-prescott-statue.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The bronze figure on these grounds is Colonel William Prescott. He is shown walking\nalong the top of an earth wall, the way witnesses said he did at dawn, while British cannon\nfired at it.\n\nPrescott commanded the earthwork on this hill. And he usually gets the credit for the most\nfamous order of the battle.\n\nDon't fire until you see the whites of their eyes.\n\nHere is the trouble. Nobody can show that he said it.\n\nSome accounts give the line to Prescott. Others give it to General Israel Putnam. The park\nservice, which looks after this hill, calls it possibly a myth.\n\nWhat the record supports is plainer. Wait. Do not waste a shot on men too far away. Fire\ntogether, on the signal.\n\nWhatever was actually shouted, officers passed it along the line. And when the British\ncame up the slope, more than fourteen hundred men fired at once.\n\nThe words may be a legend.\n\nThe waiting was real.\n",
+    "teaser": "Everyone knows the order. Nobody can show who gave it.",
+    "certaintyNote": "The order \"don't fire until you see the whites of their eyes\" is credited by some to Colonel William Prescott and by others to General Israel Putnam (NPS, Israel Putnam); the NPS article on Prescott calls it possibly a myth. What the sources support is that officers told the men to hold their fire and fire together. The script says this out loud.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "charlestown",
+      "bunker-hill",
+      "revolution",
+      "quotations"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-the-whites-of-their-eyes",
+        "durationS": 65
+      }
+    ]
+  },
+  {
+    "id": "boston-the-wrong-hill",
+    "title": "The Wrong Hill",
+    "summary": "The Battle of Bunker Hill was fought here, on Breed's Hill. The Breed family spent generations asking for the credit.",
+    "point": {
+      "at": {
+        "lat": 42.37616,
+        "lng": -71.06082
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Bunker Hill Monument on Breed's Hill, Monument Square, Charlestown, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 83,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Breed's Hill versus Bunker Hill",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/breeds-v-bunker-hill.htm"
+      },
+      {
+        "title": "Breed's Hill",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/breeds-hill.htm"
+      },
+      {
+        "title": "Bunker Hill Monument",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/bunker-hill-monument.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the plaque on the eastern wall of the lodge beside the monument. It begins with two\nwords. Breed's Hill.\n\nYou are not standing on Bunker Hill. Bunker Hill is the higher one, to the northwest. A\nchurch stands on top of it now.\n\nIn June seventeen seventy-five, the colonial officers had orders to fortify Bunker Hill.\nThey talked it over, and on the night of the sixteenth they dug in here instead. This hill\nwas lower, but it was closer to Boston and steep for anyone marching up it.\n\nAt the time, it barely had a name of its own. Some locals called it Breed's, after a family\nwhose cattle grazed here.\n\nThe battle was fought on this hill the next day, and it went into print as Bunker Hill. A\nBritish map even swapped the two hills round.\n\nThe Breeds asked for the battle to be renamed almost at once. In the seventeen nineties they\nbought land up here, and asked again. They kept asking for more than a century.\n\nIn nineteen twenty-three, the state finally gave them something. Not the battle. The plaque.\n\nRead it. Breed's Hill. Site of the Battle of Bunker Hill.\n\nThat is as far as anyone was ever willing to go.\n",
+    "teaser": "Find the plaque on the lodge. It starts with the name of a different hill.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "charlestown",
+      "bunker-hill",
+      "revolution",
+      "place-names"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-the-wrong-hill",
+        "durationS": 83
+      }
+    ]
+  },
+  {
+    "id": "boston-waiting-for-mister-rotch",
+    "title": "Waiting for Mister Rotch",
+    "summary": "On 16 December 1773 thousands sat in Old South until dark, waiting for one man to come back from the governor.",
+    "point": {
+      "at": {
+        "lat": 42.35705,
+        "lng": -71.0587
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old South Meeting House, Washington and Milk streets, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old South Meeting House",
+        "publisher": "National Park Service, Boston National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bost/learn/historyculture/osmh.htm"
+      },
+      {
+        "title": "The Boston Tea Party in Real Time",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/boston-tea-party-in-real-time.htm"
+      },
+      {
+        "title": "Colonial and revolutionary landmarks of Boston (1913)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/14003283/"
+      },
+      {
+        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01012230/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This is the Old South Meeting House. On the morning of the sixteenth of December,\nseventeen seventy three, nearly five thousand people crowded in. About a third of the town.\n\nThree ships full of tea were tied up at a wharf nearby. By law, the tea had to be landed\nand the tax paid by the next day. The crowd wanted the ships sent home instead.\n\nOnly the governor could let them go. And the governor was not in town. He was at his\ncountry house in Milton, ten miles away.\n\nSo the owner of one of the ships, Francis Rotch, was sent to ask him. In December. Twenty\nmiles there and back, in freezing rain.\n\nAnd everyone waited.\n\nThey waited through the morning. They broke off and came back at three. By four it was\ngetting dark, and Rotch had still not returned. Thousands of people in this building, in\nthe dusk, waiting on one man on a cold road.\n\nWhen he finally came in, the answer was no.\n\nBy the traditional account, Samuel Adams stood and said, this meeting can do nothing more\nto save the country. A war whoop went up at the doors. Men with soot on their faces were\nalready in the street, heading for the wharf.\n\nBy the end of the night, three hundred and forty two chests of tea were in the harbour.\n\nIt began as a meeting that ran out of options. Look at the doors. That is the way they\nwent.\n",
+    "teaser": "Nearly five thousand people waited in there for one man.",
+    "pronunciations": [
+      {
+        "written": "Rotch",
+        "say": "ROTCH, rhymes with notch"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "revolution",
+      "tea-party",
+      "old-south"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-waiting-for-mister-rotch",
+        "durationS": 100
+      }
+    ]
+  },
+  {
+    "id": "boston-what-the-auditor-found",
+    "title": "What the Auditor Found",
+    "summary": "In 1919 a molasses tank burst here and killed twenty-one people. The owners blamed saboteurs. It took six years to answer them.",
+    "point": {
+      "at": {
+        "lat": 42.36833,
+        "lng": -71.05576
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Langone Park, site of the 1919 molasses flood, Commercial Street, North End, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 12,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Six Years Later: Col. Ogden Prepares Report on Boston Molasses Flood, New Britain Herald, 16 January 1925, page 15",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn82014519/1925-01-16/ed-1/?sp=15"
+      },
+      {
+        "title": "Yankee Enemies May Have Blown Up Syrup Tank, Harrisburg Telegraph, 16 January 1919, page 12",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn85038411/1919-01-16/ed-1/?sp=12"
+      },
+      {
+        "title": "Molasses Blast, The Washington Times, 16 January 1919, page 10",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn84026749/1919-01-16/ed-1/?sp=10"
+      },
+      {
+        "title": "Explosion of Molasses, Alexandria Gazette, 16 January 1919, page 3",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn85025007/1919-01-16/ed-1/?sp=3"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across Commercial Street, at the slope rising toward Copp's Hill.\n\nOn the fifteenth of January, nineteen nineteen, a little after noon, a steel tank stood on\nthe waterfront here. It held molasses. Close to two million gallons of it, stored for\nmaking alcohol.\n\nPeople nearby heard a muffled roar. The tank split into two great pieces, and the molasses\ncame out as a wave.\n\nIt knocked out spans of the elevated railway that ran along this street. It crushed a fire\nstation. In a city building close by, workers had been eating their lunch. On the slope\nacross the road, a small house slid down into the street.\n\nFiremen had to hose the molasses away before they could reach anyone. It was days before\nthe last of the dead were found. Twenty-one people were killed.\n\nThe next day, the company's lawyer gave a statement. The tank, he suggested, had been blown\nup from outside. Perhaps by enemies of the United States.\n\nIt took six years to answer him. A court auditor sat for eight hundred and fifty-one days\nand heard nine hundred and ten witnesses. In January nineteen twenty-five, he gave his\nfinding.\n\nHe found the company responsible.\n\nThe tank had simply not been strong enough to hold what was in it.\n",
+    "teaser": "Look up the slope across the road. In 1919 a house slid down it.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "north-end",
+      "waterfront",
+      "disasters",
+      "molasses-flood"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-what-the-auditor-found",
+        "durationS": 85
+      }
+    ]
+  },
+  {
+    "id": "boston-where-the-water-was",
+    "title": "Where the Water Was",
+    "summary": "The Tea Party ships lay at Griffin's Wharf, at the end of Pearl Street. The wharf and the shoreline have since been filled in.",
+    "point": {
+      "at": {
+        "lat": 42.3545,
+        "lng": -71.05355
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Site of Griffin's Wharf, foot of Pearl Street, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 97,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Boston Tea Party in Real Time",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/boston-tea-party-in-real-time.htm"
+      },
+      {
+        "title": "Old South Meeting House",
+        "publisher": "National Park Service, Boston National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bost/learn/historyculture/osmh.htm"
+      },
+      {
+        "title": "Walks & talks about historic Boston (1917)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/17025471/"
+      },
+      {
+        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01012230/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are near the bottom of Pearl Street. Look around. Office towers, traffic, pavement.\nNot a drop of harbour in sight.\n\nOn the night of the sixteenth of December, seventeen seventy three, this was the edge of\nthe water.\n\nA footpath called Flounder Lane wound along the shoreline under a hill and came into this\nstreet. Opposite the end of the street stood Griffin's Wharf. And tied up at Griffin's\nWharf were three ships carrying tea.\n\nAbout a hundred and fifty men, faces darkened with soot, came down from the Old South\nMeeting House. A ten minute walk. They split into three groups and boarded the ships. They\ntold the crews to open the hatches and hand over the hoisting tackle, and promised them no\nharm.\n\nFor three hours they hauled up chests, split them open with axes, and tipped the tea over\nthe side. Three hundred and forty two chests. They were careful to take nothing else. One\npadlock was broken by accident, and it was replaced a few days later.\n\nThen they went home without a word to each other. One of them remembered it as the\nstillest night Boston had known in months.\n\nAfterwards the city kept building out into the harbour. The footpath became a street, and\nthe street became part of the waterfront avenue. The filling nearly wiped Griffin's Wharf\noff the map.\n\nThe most famous splash in American history happened somewhere under the ground around you.\n",
+    "teaser": "Look around. Not a drop of harbour in sight.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "waterfront",
+      "revolution",
+      "tea-party",
+      "griffins-wharf"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-where-the-water-was",
+        "durationS": 97
+      }
+    ]
+  },
+  {
+    "id": "boston-who-said-fire",
+    "title": "Who Said Fire?",
+    "summary": "Five people were shot here in 1770. The question that decided the soldiers' fate was whether anyone gave the order.",
+    "point": {
+      "at": {
+        "lat": 42.35877,
+        "lng": -71.05717
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Boston Massacre site, cobblestone circle below the Old State House balcony, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 103,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old State House",
+        "publisher": "National Park Service, Boston National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bost/learn/historyculture/osh.htm"
+      },
+      {
+        "title": "The Boston Massacre",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/boston-massacre.htm"
+      },
+      {
+        "title": "The Boston Massacre Trials",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/boston-massacre-trial.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down. Under the balcony of the Old State House there is a circle of cobblestones set\ninto the street.\n\nIt marks a cold March night in seventeen seventy. A light snow on the ground. A lone\nBritish sentry outside the Custom House, and some local boys giving him a hard time.\n\nIt grew. Labourers, sailors, men with sticks and clubs. A captain and a small squad came to\nrescue the sentry, and the crowd closed in around them.\n\nA soldier was struck. He got up, aimed and fired. The others fired too.\n\nFive people died. By the next morning the town was calling it a massacre.\n\nAnd then came the question that decided everything. Who said fire?\n\nIf the captain gave the order, he was guilty and his men had only obeyed. If nobody did,\nthe soldiers had chosen to shoot on their own.\n\nLawyer after lawyer refused to defend them. John Adams said yes.\n\nAt the trial the witnesses contradicted each other, even about what the captain had been\nwearing. But several swore he had been standing in front of his own men when they fired.\nOne of them, a free Black man named Newton Prince, said he heard no order at all.\n\nNobody stands in front of muskets he has just told to fire. The captain was acquitted. So\nwere six of his soldiers. Two were convicted of manslaughter and branded on the thumb.\n\nYears later, Adams said this night laid the foundation of American independence. He spent\nthat autumn defending the men who fired.\n",
+    "teaser": "Look down for a circle of cobblestones.",
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "revolution",
+      "boston-massacre",
+      "john-adams"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/boston-who-said-fire",
+        "durationS": 103
+      }
+    ]
+  },
+  {
     "id": "bowling-green-king-george",
     "title": "They pulled the king down and made him into bullets",
     "summary": "A crowd toppled a gilded statue of George III here in 1776 and melted it into musket balls.",

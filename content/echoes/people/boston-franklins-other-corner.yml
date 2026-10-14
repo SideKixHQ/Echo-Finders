@@ -1,0 +1,72 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public sidewalk on the south side of Milk Street, across from the Old South Meeting House.
+# Position: Between the Overture places for 1 and 21 Milk Street on the south side, opposite Old South (medium confidence).
+id: boston-franklins-other-corner
+title: "Franklin's Other Corner"
+summary: "Boston says Benjamin Franklin was born on Milk Street. A Victorian historian found that Franklin may have named another corner."
+place: "Benjamin Franklin birthplace site, Milk Street opposite Old South Meeting House, Boston, Massachusetts"
+at: { lat: 42.35666, lng: -71.05840 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 97
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  Milk Street is the generally accepted birthplace, but an 1873 history records a rival claim
+  for Hanover Street, said to rest on Franklin's own word. The script presents both and says
+  which is likelier. The baptism at Old South is not in dispute.
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, benjamin-franklin, old-south]
+teaser: "Look across the street at Old South. He was baptized in there."
+script: |
+  Stand on Milk Street and look across at the Old South Meeting House, the big brick church
+  with the tall steeple.
+
+  Benjamin Franklin was baptized in there, as a baby, in seventeen oh six. And the story
+  Boston has told for a very long time is that he was born right about where you are
+  standing, in a small wooden house that belonged to his father, a candle maker.
+
+  It was a plain house. Clapboard on the front, rough shingles on the sides, about twenty
+  feet wide on the street. It stood for over a century, and it burned down in eighteen
+  eleven. A newspaper office was later built on the site.
+
+  Tidy enough. Except for one detail.
+
+  In eighteen seventy three, the Boston historian Samuel Adams Drake pointed out that a
+  corner of Hanover Street, across town, also claimed the honour. And the witness for that
+  other corner, by his account, was Franklin himself, who was said to have told a reliable
+  person he was born there.
+
+  Other evidence points back here. Drake weighed the two and threw up his hands. A plague on
+  both the houses, he wrote.
+
+  What is certain is that the boy grew up at the Hanover Street house, making tallow candles
+  for his father. What is likely is that he was born on Milk Street.
+
+  So look at the church across the road. Whichever corner he was born on, he was carried
+  over there to be baptized.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01012230/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "King's hand-book of Boston (1885)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01015801/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Walks & talks about historic Boston (1917)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/17025471/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Old South Meeting House"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/learn/historyculture/osmh.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

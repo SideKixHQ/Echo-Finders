@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Ashburton Park, the small public plaza behind the Massachusetts State House, beside the column topped by an eagle.
+# Position: Overture "Ashburton park" point (Mass State House), cross-checked against State House Park and the State House entries; the column's exact spot in the plaza is not in the data (medium confidence).
+id: boston-beacon-hill-the-beacon
+title: "The Hill Named for a Pole"
+summary: "Beacon Hill is named for a wooden warning beacon that a British general took down and a storm finished off."
+place: "Beacon Hill Monument, Ashburton Park, behind the State House, Boston, Massachusetts"
+at: { lat: 42.35895, lng: -71.06285 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, beacon-hill, revolution, place-names, bulfinch]
+teaser: "Find the tall column with the eagle on top. It stands in for something that is gone."
+script: |
+  Find the tall column with the eagle on top. It stands in for something that is gone.
+
+  In sixteen thirty-five, the English settlers put up a tall wooden beacon on top of this
+  hill. If danger came, an attack or an outbreak, it could warn the countryside. The hill
+  took its name from it.
+
+  In seventeen seventy-five, with colonial troops gathering across the river at Cambridge,
+  General Gage built a small fort up here, and had the beacon taken down. A signal to the countryside was the
+  last thing he wanted.
+
+  The British left Boston in March seventeen seventy-six. Bostonians put the beacon straight
+  back up.
+
+  It lasted another thirteen years. In seventeen eighty-nine, a storm blew it down. The
+  eagle column, designed by Charles Bulfinch, took its place.
+
+  The hill has changed even more than the beacon. It once had three peaks. Bostonians dug
+  much of them away to fill in land around the city.
+
+  The beacon is gone, and most of the hill is gone. Only the name stayed put.
+pronunciations:
+  - written: Bulfinch
+    say: BULL-finch
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Beacon Hill"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/beacon-hill.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Evacuation of Boston, 1776"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/evacuation-of-boston-1776.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

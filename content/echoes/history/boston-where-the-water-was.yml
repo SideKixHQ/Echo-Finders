@@ -1,0 +1,69 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public sidewalk at the foot of Pearl Street near Purchase Street and Atlantic Avenue; the site of Griffin's Wharf, now built over, not a marked spot.
+# Position: Foot of Pearl Street estimated from Overture places at 151 Pearl Street and 175 Purchase Street; the sources place Griffin's Wharf opposite the end of Pearl Street, not at a surveyed point (low confidence).
+id: boston-where-the-water-was
+title: "Where the Water Was"
+summary: "The Tea Party ships lay at Griffin's Wharf, at the end of Pearl Street. The wharf and the shoreline have since been filled in."
+place: "Site of Griffin's Wharf, foot of Pearl Street, Boston, Massachusetts"
+at: { lat: 42.35450, lng: -71.05355 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 97
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, waterfront, revolution, tea-party, griffins-wharf]
+teaser: "Look around. Not a drop of harbour in sight."
+script: |
+  You are near the bottom of Pearl Street. Look around. Office towers, traffic, pavement.
+  Not a drop of harbour in sight.
+
+  On the night of the sixteenth of December, seventeen seventy three, this was the edge of
+  the water.
+
+  A footpath called Flounder Lane wound along the shoreline under a hill and came into this
+  street. Opposite the end of the street stood Griffin's Wharf. And tied up at Griffin's
+  Wharf were three ships carrying tea.
+
+  About a hundred and fifty men, faces darkened with soot, came down from the Old South
+  Meeting House. A ten minute walk. They split into three groups and boarded the ships. They
+  told the crews to open the hatches and hand over the hoisting tackle, and promised them no
+  harm.
+
+  For three hours they hauled up chests, split them open with axes, and tipped the tea over
+  the side. Three hundred and forty two chests. They were careful to take nothing else. One
+  padlock was broken by accident, and it was replaced a few days later.
+
+  Then they went home without a word to each other. One of them remembered it as the
+  stillest night Boston had known in months.
+
+  Afterwards the city kept building out into the harbour. The footpath became a street, and
+  the street became part of the waterfront avenue. The filling nearly wiped Griffin's Wharf
+  off the map.
+
+  The most famous splash in American history happened somewhere under the ground around you.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Boston Tea Party in Real Time"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/boston-tea-party-in-real-time.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Old South Meeting House"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/learn/historyculture/osmh.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Walks & talks about historic Boston (1917)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/17025471/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01012230/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

@@ -1,0 +1,61 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Bunker Hill Monument grounds beside the lodge at the foot of the obelisk, where the 1923 Breed's Hill plaque is on the lodge's eastern wall; National Park Service grounds, open daily.
+# Position: Overture "Bunker Hill Monument", 100 Monument Sq, cross-checked against the Bunker Hill Museum at 43 Monument Sq; the lodge's exact footprint was not available, so the point is the monument itself (high confidence for the site, medium for the plaque).
+id: boston-the-wrong-hill
+title: "The Wrong Hill"
+summary: "The Battle of Bunker Hill was fought here, on Breed's Hill. The Breed family spent generations asking for the credit."
+place: "Bunker Hill Monument on Breed's Hill, Monument Square, Charlestown, Boston, Massachusetts"
+at: { lat: 42.37616, lng: -71.06082 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 83
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, charlestown, bunker-hill, revolution, place-names]
+teaser: "Find the plaque on the lodge. It starts with the name of a different hill."
+script: |
+  Find the plaque on the eastern wall of the lodge beside the monument. It begins with two
+  words. Breed's Hill.
+
+  You are not standing on Bunker Hill. Bunker Hill is the higher one, to the northwest. A
+  church stands on top of it now.
+
+  In June seventeen seventy-five, the colonial officers had orders to fortify Bunker Hill.
+  They talked it over, and on the night of the sixteenth they dug in here instead. This hill
+  was lower, but it was closer to Boston and steep for anyone marching up it.
+
+  At the time, it barely had a name of its own. Some locals called it Breed's, after a family
+  whose cattle grazed here.
+
+  The battle was fought on this hill the next day, and it went into print as Bunker Hill. A
+  British map even swapped the two hills round.
+
+  The Breeds asked for the battle to be renamed almost at once. In the seventeen nineties they
+  bought land up here, and asked again. They kept asking for more than a century.
+
+  In nineteen twenty-three, the state finally gave them something. Not the battle. The plaque.
+
+  Read it. Breed's Hill. Site of the Battle of Bunker Hill.
+
+  That is as far as anyone was ever willing to go.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Breed's Hill versus Bunker Hill"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/breeds-v-bunker-hill.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Breed's Hill"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/breeds-hill.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Bunker Hill Monument"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/bunker-hill-monument.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

@@ -1,0 +1,71 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: The footbridge over the Lagoon in the Public Garden, where the swan boats pass underneath; public park.
+# Position: Estimated midpoint of the Lagoon footbridge from the Overture "The Lagoon" point and the Public Garden gate entries; the boat landing itself is not in the places data (low confidence).
+id: boston-swan-boats-mrs-paget
+title: "Mrs. Paget's Swans"
+summary: "In 1893 newspapers across the country reported that Boston's swan boats were owned and run by a woman."
+place: "Swan Boats, the Lagoon, Boston Public Garden, Boston, Massachusetts"
+at: { lat: 42.35410, lng: -71.06985 }
+triggerRadiusKm: 0.06
+category: people
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, public-garden, boats, women, family-business]
+teaser: "Watch a swan boat come round the pond. Look at the back of it."
+script: |
+  Watch a swan boat come round the pond. Look at the back of it. That is where the driver
+  sits, pedalling as if on a bicycle, and paddle wheels push the whole thing along.
+
+  The boats began running here in eighteen seventy-seven. They were designed by a man named
+  Robert Paget.
+
+  Sixteen years later, newspapers across the country ran a small item about who was really
+  in charge. The owner and manager of the Boston swan boats, they reported, was a woman.
+  Mrs. Paget.
+
+  She did not stand at the landing calling for fares. She left that to a man. But she came
+  down to the landing often, studied the business, and made a very comfortable living from
+  it. By then she had been running it for fourteen years.
+
+  In nineteen thirty-eight, the owner of the fleet was still a Paget, John Paget. When
+  Shirley Temple came to town, he made her an honorary admiral of the swan boat navy.
+
+  As for the man at the landing, one story from those years gives his whole sales pitch.
+  Grown folks, ten cents. Children, five. Babies thrown in.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Boston Public Garden"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/boston-public-garden.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Mrs. Paget's Swan Boats. The Helena Independent, October 8, 1893, page 6"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83025308/1893-10-08/ed-1/?sp=6
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Fort Worth Gazette, October 29, 1893, page 2 (Mrs. Paget's swan boats)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86071158/1893-10-29/ed-1/?sp=2
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Shirley Temple Going for Ride. The Waterbury Democrat, August 3, 1938, page 9"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82014085/1938-08-03/ed-1/?sp=9
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Whiting's Boston Letter. Springfield Weekly Republican, April 8, 1937, page 9"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83020847/1937-04-08/ed-1/?sp=9
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Cruel Captain! The St. Johns Herald, April 8, 1899, page 3 (from Youth's Companion)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn94051692/1899-04-08/ed-1/?sp=3
+    retrievedAt: "2026-10-14"
+    rights: public-domain

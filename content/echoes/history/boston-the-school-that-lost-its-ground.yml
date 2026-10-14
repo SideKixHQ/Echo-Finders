@@ -1,0 +1,53 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public sidewalk on School Street beside the Benjamin Franklin statue, with King's Chapel visible up the street.
+# Position: Overture place for the Benjamin Franklin Statue, 45 School Street, nudged to the School Street sidewalk (medium confidence).
+id: boston-the-school-that-lost-its-ground
+title: "The School That Lost Its Ground"
+summary: "School Street is named for Boston's first school. In the 1740s a church needed the land, and the school was pushed across the street."
+place: "First public school site and Franklin statue, School Street, Boston, Massachusetts"
+at: { lat: 42.35788, lng: -71.05948 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, education, latin-school, benjamin-franklin]
+teaser: "This street is named after a school that is not here."
+script: |
+  You are on School Street. It is named after a school that is not here.
+
+  Find the bronze statue of Benjamin Franklin, set back from the sidewalk. Close by, in the
+  sixteen thirties, the town of Boston started its first school. The Latin School. A plain
+  building of one storey, big enough for about a hundred boys.
+
+  Now look up the street, toward the dark stone church on the corner. That is King's Chapel.
+
+  In the seventeen forties the chapel wanted to rebuild, bigger. It needed more ground, and
+  part of that ground had the schoolhouse on it. After a good deal of haggling, the church
+  built the school a new house on the other side of the street, and took the old site.
+
+  The town was not pleased. A local wit put it in verse. A fig for your learning, I tell you
+  the town, to make the church larger, must pull the school down.
+
+  The school moved many more times after that. It is still open, nearly four hundred years
+  on, just not on the street that carries its name.
+
+  As for Franklin. He started here at eight years old, and he lasted one year.
+
+  Of everyone who ever studied on this street, he is the one who stayed.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01012230/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Freedom Trail Audio Described Brochure"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/planyourvisit/freedom-trail-audio-described-brochure.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

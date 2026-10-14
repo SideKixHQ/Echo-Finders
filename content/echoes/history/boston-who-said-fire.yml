@@ -1,0 +1,66 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public sidewalk beside the cobblestone circle under the Old State House balcony; the circle sits in a busy junction, so listen from the kerb, not the roadway.
+# Position: Overture place "Boston Massacre Site", corner of State and Congress streets, just east of the Old State House (medium confidence).
+id: boston-who-said-fire
+title: "Who Said Fire?"
+summary: "Five people were shot here in 1770. The question that decided the soldiers' fate was whether anyone gave the order."
+place: "Boston Massacre site, cobblestone circle below the Old State House balcony, Boston, Massachusetts"
+at: { lat: 42.35877, lng: -71.05717 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 103
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, revolution, boston-massacre, john-adams]
+teaser: "Look down for a circle of cobblestones."
+script: |
+  Look down. Under the balcony of the Old State House there is a circle of cobblestones set
+  into the street.
+
+  It marks a cold March night in seventeen seventy. A light snow on the ground. A lone
+  British sentry outside the Custom House, and some local boys giving him a hard time.
+
+  It grew. Labourers, sailors, men with sticks and clubs. A captain and a small squad came to
+  rescue the sentry, and the crowd closed in around them.
+
+  A soldier was struck. He got up, aimed and fired. The others fired too.
+
+  Five people died. By the next morning the town was calling it a massacre.
+
+  And then came the question that decided everything. Who said fire?
+
+  If the captain gave the order, he was guilty and his men had only obeyed. If nobody did,
+  the soldiers had chosen to shoot on their own.
+
+  Lawyer after lawyer refused to defend them. John Adams said yes.
+
+  At the trial the witnesses contradicted each other, even about what the captain had been
+  wearing. But several swore he had been standing in front of his own men when they fired.
+  One of them, a free Black man named Newton Prince, said he heard no order at all.
+
+  Nobody stands in front of muskets he has just told to fire. The captain was acquitted. So
+  were six of his soldiers. Two were convicted of manslaughter and branded on the thumb.
+
+  Years later, Adams said this night laid the foundation of American independence. He spent
+  that autumn defending the men who fired.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old State House"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/learn/historyculture/osh.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Boston Massacre"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/boston-massacre.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Boston Massacre Trials"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/boston-massacre-trial.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

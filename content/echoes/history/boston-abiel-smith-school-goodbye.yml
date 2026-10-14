@@ -1,0 +1,57 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Joy Street sidewalk at the corner of Smith Court, outside the Abiel Smith School (46 Joy Street), now the Museum of African American History.
+# Position: Overture "Museum of African American History" point (46 Joy St), on the Joy Street side; about 30 m from boston-african-meeting-house-built-by-its-people (medium confidence).
+id: boston-abiel-smith-school-goodbye
+title: "Goodbye Forever"
+summary: "Black families boycotted this segregated school until Massachusetts outlawed school segregation in 1855."
+place: "Abiel Smith School, 46 Joy Street, Beacon Hill, Boston, Massachusetts"
+at: { lat: 42.35997, lng: -71.06515 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, black-heritage-trail, beacon-hill, schools, civil-rights]
+teaser: "Look at the schoolhouse at the corner of Smith Court. A boy once said goodbye to it."
+script: |
+  Look at the schoolhouse at the corner of Smith Court. It opened in eighteen thirty-five as
+  a public school for Black children, and it became the default school for most of the
+  Black children in the city.
+
+  Part of the money came from a white businessman, Abiel Smith, who left it for the
+  education of Black children. The school was still worse than the white schools, and the
+  families here kept saying so.
+
+  In eighteen forty-nine, many of them took their children out. Classes moved back into the
+  meeting house next door. A father, Benjamin Roberts, sued so his daughter Sarah could go to
+  the school nearest her home. He lost.
+
+  So they went to the state. William Cooper Nell, who had been a pupil in the old African
+  School himself, led the petitions. In eighteen fifty-five, Massachusetts outlawed
+  segregated public schools.
+
+  Nell lived on this court. On the first day of school that year, he watched a young
+  student walk past this building, and heard what the boy said to it.
+
+  Goodbye forever, colored school. Tomorrow we are like the other Boston boys.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Abiel Smith School"
+    publisher: "National Park Service, Boston African American National Historic Site"
+    url: https://www.nps.gov/boaf/learn/historyculture/abiel-smith-school.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "African Meeting House"
+    publisher: "National Park Service, Boston African American National Historic Site"
+    url: https://www.nps.gov/boaf/learn/historyculture/amh.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Black Struggle for Equal Education in Boston, 1787 to 1976"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/the-black-struggle-for-equal-education-in-boston-1787-to-1976.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
