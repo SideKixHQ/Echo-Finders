@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Beside the two original 1912 Yoshino cherry trees and their bronze plaque, north bank of the Tidal Basin.
+# Position: Overture "First Cherry Trees" point, consistent with NPS ("several hundred yards west of the John Paul Jones Memorial", north bank, near Independence Ave SW) (medium confidence).
+id: dc-the-trees-that-came-second
+title: "The Trees That Came Second"
+summary: "Tokyo's first gift of two thousand cherry trees was burned in 1910; the two trees by this plaque are from the second."
+place: "First cherry trees, Tidal Basin, Washington, D.C."
+at: { lat: 38.88669, lng: -77.04122 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 72
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, tidal-basin, cherry-blossoms, japan]
+teaser: "Find the two old cherry trees by the large bronze plaque here."
+script: |
+  Find the two old cherry trees by the large bronze plaque here.
+
+  They were planted on the twenty-seventh of March, 1912, by the First Lady, Helen Taft,
+  and Viscountess Chinda, the wife of the Japanese ambassador. Only a few people watched.
+  The whole cherry blossom festival grew out of that small ceremony.
+
+  But these were not the first trees Tokyo sent.
+
+  Two years earlier, two thousand cherry trees arrived in Washington, a gift from the city
+  of Tokyo. Inspectors from the Department of Agriculture found them full of insects and
+  nematodes, and diseased. To protect American growers, they had to go. The President gave
+  his consent, and in January 1910 the whole gift was burned.
+
+  A local paper reported that about a dozen of the buggiest trees were kept back for
+  study, with an entomologist standing guard, armed with a butterfly net and a cyanide
+  bottle.
+
+  Tokyo's answer was to try again. Three thousand and twenty trees this time, grafted
+  from a famous collection along a riverbank outside the city.
+
+  The first gift was burned.
+
+  These two trees are the reply.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "History of the Cherry Trees"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/subjects/cherryblossom/history-of-the-cherry-trees.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Cherry Trees Burned. The Washington Herald, 30 January 1910, page 2 (Chronicling America)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/resource/sn83045433/1910-01-30/ed-1/?sp=2
+    retrievedAt: "2026-10-14"
+    rights: public-domain

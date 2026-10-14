@@ -1,0 +1,65 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Public sidewalk at the corner of 18th Street and New York Avenue NW, facing the Octagon's curved entrance bay.
+# Position: Corner sidewalk just southwest of Overture's Octagon Museum entry (38.89632, -77.04154), which agrees with the AIA entry at the same address, 1799 New York Ave NW (medium confidence).
+id: dc-where-the-war-ended
+title: "Where the War Ended"
+summary: "After the British burned the White House, the War of 1812 ended in the round room of this house."
+place: "The Octagon, 18th Street and New York Avenue NW, Washington, D.C."
+at: { lat: 38.89620, lng: -77.04165 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 72
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, octagon, war-of-1812]
+teaser: "Look at the curved front of the Octagon, and the window above the door."
+script: |
+  Look at the curved front of the Octagon, the round bay with the door at its base.
+
+  Above that door is a round room. In the winter of eighteen fifteen, it was the
+  President's study.
+
+  On the twenty-fourth of August, eighteen fourteen, British troops had burned the White
+  House, the Capitol and the Treasury. James and Dolley Madison fled the city. When they came
+  back a few weeks later, they needed somewhere to live.
+
+  This house had come through. Its resident was the French minister, and the British most
+  likely left it alone because of the French flag he flew. The Madisons moved in on the
+  eighth of September.
+
+  The war went on. On the eighth of January, Andrew Jackson won the Battle of New Orleans.
+
+  Then, on the seventeenth of February, in the round room above the door, Madison signed the
+  Treaty of Ghent, and the War of eighteen twelve was over.
+
+  New Orleans had been fought six weeks before the war ended. And the war that burned the
+  President out of his house ended in somebody else's.
+editorial: draft
+factCheck: unchecked
+pronunciations:
+  - written: Ghent
+    say: GENT
+sources:
+  - title: "Octagon House"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/octagon-house.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Octagon House, 1799 New York Avenue Northwest, HABS DC-25"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/dc0195/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "General Andrew Jackson Statue"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/general-andrew-jackson-statue.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Octagon House, The Times (Washington), April 11, 1897, image 20"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn85054468/1897-04-11/ed-1/?sp=20
+    retrievedAt: "2026-10-14"
+    rights: public-domain

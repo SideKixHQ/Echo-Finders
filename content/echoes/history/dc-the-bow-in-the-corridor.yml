@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: The oval plaza in front of the Supreme Court's west steps, on First Street NE, facing the Capitol.
+# Position: West plaza of 1 First St NE, offset west from Overture's building point (38.89063, -77.00459) towards First Street (medium confidence).
+id: dc-the-bow-in-the-corridor
+title: "The Bow in the Corridor"
+summary: "Until 1935 the Supreme Court had no building of its own, and its daily ritual happened in a public hallway."
+place: "Supreme Court of the United States, First Street NE, Washington, D.C."
+at: { lat: 38.89060, lng: -77.00525 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, supreme-court, capitol-hill]
+teaser: "Read the words cut across the front of the building."
+script: |
+  Stand in front of the steps and read the words cut across the front. Equal justice
+  under law.
+
+  This building opened in October 1935, and the newspapers that week noticed something odd
+  about it. It was the first building the Supreme Court had ever had for its own use. The
+  Court was a hundred and forty-six years old.
+
+  Until then it had sat across the street, inside the Capitol. Its courtroom was on one side
+  of a main corridor. The room where the justices put on their robes was on the other.
+
+  So before each session, attendants stretched plush ropes across the corridor to make an
+  aisle. The Chief Justice met the Court's marshal in the middle. They bowed, exchanged a
+  quiet greeting, and the justices followed through into court, in full view of whoever
+  happened to be passing.
+
+  Sightseers loved it.
+
+  When the Court moved in here, the justices brought their old chairs with them. The papers
+  called the chairs the only relics of the old room.
+
+  The robing room in this building sits behind bronze gates, where the public cannot go.
+
+  If the bow still happens, nobody outside gets to see it.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Many Important Cases to Come Before Highest Tribunal Tomorrow, Evening Star, October 6, 1935, page A-25"
+    publisher: "The Evening Star, via Library of Congress Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1935-10-06/ed-1/?sp=25
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Highest Court Convenes in New Home, Washington Times, October 7, 1935, page 16"
+    publisher: "The Washington Times, via Library of Congress Chronicling America"
+    url: https://www.loc.gov/resource/sn84026749/1935-10-07/ed-1/?sp=16
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts

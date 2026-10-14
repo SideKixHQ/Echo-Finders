@@ -1,0 +1,61 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: The Capitol Rotunda floor, on the public tour route, looking up at the frieze below the dome.
+# Position: Rotunda centre, beneath the dome; north of Overture's Statuary Hall point (38.88954, -77.00908) on the same axis (medium-high confidence).
+id: dc-seventy-six-years-round
+title: "Seventy-Six Years Round"
+summary: "The painted band around the Capitol Rotunda was begun in 1877 and finished in 1953."
+place: "Rotunda frieze, U.S. Capitol, Washington, D.C."
+at: { lat: 38.88990, lng: -77.00906 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, capitol, painting, brumidi]
+teaser: "Look up to the band of painted figures that runs right round the rotunda."
+script: |
+  Look up, to the band of painted figures that runs right round the rotunda, below the
+  dome.
+
+  It is one long procession through American history, a little over eight feet high and
+  about three hundred feet around.
+
+  It was designed by Constantino Brumidi, a painter from Rome who had come to America as an
+  exile, and who spent more than twenty years decorating this building. He began the band
+  in 1877. He was in his seventies, working on a scaffold high above this floor.
+
+  In the autumn of 1879 he very nearly fell from it. A newspaper reported that he never
+  completely recovered from the shock. He died the following February. He had painted six
+  scenes and part of a seventh.
+
+  Another Italian, Filippo Costaggini, carried on with Brumidi's designs for eight more
+  years. When he finished, there was still a gap. About thirty feet of the circle was empty.
+
+  It stayed empty for more than sixty years.
+
+  In 1952 and 1953 a New York artist, Allyn Cox, filled it with the Civil War, the Spanish
+  American War and the birth of aviation. The papers announced that the frieze was complete.
+
+  It had taken seventy-six years to go once around the room. The man who started it saw six
+  scenes of it.
+pronunciations:
+  - written: Brumidi
+    say: broo-MEE-dee
+  - written: Costaggini
+    say: koss-tah-JEE-nee
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Death of a Fresco Artist, Alexandria Gazette, February 21, 1880, page 4"
+    publisher: "Alexandria Gazette, via Library of Congress Chronicling America"
+    url: https://www.loc.gov/resource/sn85025007/1880-02-21/ed-1/?sp=4
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Frieze in Capitol's Rotunda Is Completed After 76 Years, Evening Star, December 11, 1953"
+    publisher: "The Evening Star, via Library of Congress Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1953-12-11/ed-1/?sp=43
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts

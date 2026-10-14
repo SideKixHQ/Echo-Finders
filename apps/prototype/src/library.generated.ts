@@ -674,6 +674,1830 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "dc-a-country-he-never-saw",
+    "title": "A Country He Never Saw",
+    "summary": "James Smithson left his fortune to a country he never visited; he lies inside the Castle, brought here seventy-five years after he died.",
+    "point": {
+      "at": {
+        "lat": 38.88912,
+        "lng": -77.026
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Smithsonian Institution Building, the Castle, Washington, D.C."
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 75,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Story of Smithson: His Dust Soon to Be Buried in City of Washington. The Weekly Corinthian, 17 February 1904, page 10 (Chronicling America)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn87065046/1904-02-17/ed-1/?sp=10"
+      },
+      {
+        "title": "Smithsonian Institution, by Frederic J. Haskin. The Washington Herald, 10 October 1907, page 7 (Chronicling America)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045433/1907-10-10/ed-1/?sp=7"
+      },
+      {
+        "title": "Smithsonian Institution Building, HABS DC-141, index to photographs (photo 49: crypt with Smithson's sarcophagus)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/dc0231/"
+      },
+      {
+        "title": "[Coffin with the remains of James Smithson being carried out of the British cemetery at San Benigno, outside Genoa, Italy], 1904",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/2016651958/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Face the north door of the red castle.\n\nInside, close to this entrance, there is a small crypt with a sarcophagus in it. The man\nin it paid for all of this.\n\nHis name was James Smithson. He was an English scientist, born outside marriage to a\nduke, and never given a title. When he died, he left his entire fortune to the United\nStates, to found an institution in Washington under his name.\n\nHe had never been here. He never visited the country in his life.\n\nHe died in Genoa in 1829 and was buried on a hill there, in a small British cemetery.\nBy the turn of the century a stone quarry was eating the hill away.\n\nSo in 1904 one of the Smithsonian's regents, Alexander Graham Bell, went to Genoa at his\nown expense and brought the body back across the Atlantic.\n\nA Washington paper put it neatly a few years later. That voyage was the first time\nSmithson ever had personal contact with these shores.\n\nHe gave everything to a country he had never seen.\n\nHe got here seventy-five years after he died.\n",
+    "teaser": "Face the north door of the red castle.",
+    "pronunciations": [
+      {
+        "written": "Genoa",
+        "say": "JEN-oh-uh"
+      }
+    ],
+    "tags": [
+      "washington",
+      "dc-core",
+      "national-mall",
+      "smithsonian"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-a-country-he-never-saw",
+        "durationS": 75
+      }
+    ]
+  },
+  {
+    "id": "dc-nineteen-in-the-stone",
+    "title": "Nineteen in the Stone",
+    "summary": "The Korean War memorial's sculptor first modeled thirty-eight soldiers; nineteen were built, and the polished wall reflects them.",
+    "point": {
+      "at": {
+        "lat": 38.88762,
+        "lng": -77.0476
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Korean War Veterans Memorial, Washington, D.C."
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Design of the Korean War Veterans Memorial",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/kowa/learn/historyculture/design.htm"
+      },
+      {
+        "title": "Features of the Korean War Veterans Memorial",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/kowa/learn/historyculture/features.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Walk beside the polished wall, and watch the soldiers in the field appear in the stone.\n\nThere are nineteen of them, out on patrol.\n\nWhen the sculptor, Frank Gaylord, first showed his clay models, there were thirty-eight\nsoldiers. They were in the middle of a mission, under fire, in every kind of pose. The\nCommission of Fine Arts liked the photographs, and worried the figures would become too\nrealistic.\n\nWhat was finally built was nineteen.\n\nThe wall beside you carries the faces of the people behind the troops. Nurses,\nchaplains, sailors, supply crews. More than two thousand four hundred photographs went\ninto it. The architects wrote that as visitors walked down beside it, the etched faces\nwould mix with the reflections of the soldiers.\n\nSo look into the granite now. Count the patrol in the field. Then count it again in the\nstone.\n\nNineteen out there. Nineteen in here.\n\nThe record does not say whether anyone planned it that way.\n\nBut that is thirty-eight.\n",
+    "teaser": "Walk beside the polished wall, and watch the soldiers in the field appear in the stone.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "national-mall",
+      "memorials",
+      "korea"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-nineteen-in-the-stone",
+        "durationS": 66
+      }
+    ]
+  },
+  {
+    "id": "dc-no-props-no-serpents",
+    "title": "No Props, No Serpents",
+    "summary": "The Jackson statue was cast by a man who had never seen an equestrian statue. Look at what holds it up.",
+    "point": {
+      "at": {
+        "lat": 38.8995,
+        "lng": -77.0366
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Andrew Jackson statue, Lafayette Square, Washington, D.C."
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 73,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "General Andrew Jackson Statue",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/000/general-andrew-jackson-statue.htm"
+      },
+      {
+        "title": "Lafayette Square, HABS DC-676, written historical and descriptive data",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/dc0784/"
+      },
+      {
+        "title": "Jackson statue feature by Edward Boykin, Evening Star Pictorial Magazine, January 4, 1953, image 140",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045462/1953-01-04/ed-1/?sp=140"
+      },
+      {
+        "title": "Jackson statue and the 1853 Douglas oration, Evening Star, April 19, 1936, image 54",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045462/1936-04-19/ed-1/?sp=54"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look under the horse.\n\nAndrew Jackson's horse is rearing. Its front hooves are in the air. Fifteen tons of\nbronze, balanced on the back legs.\n\nThe man who made it, Clark Mills, was a former ornamental plasterer from South Carolina.\nHe had never seen Jackson. He had never seen an equestrian statue either.\n\nHe built a furnace near this park and cast the whole thing himself, in ten pieces. The\nhorse alone took six castings before the final one was done.\n\nTo learn how a horse rears, he bought a retired racehorse named Olympus. He taught it to\nstand on its hind legs, so that he could watch how it was done.\n\nThe statue was unveiled on the eighth of January, eighteen fifty-three. It was the first\nequestrian statue cast in the United States. Stephen Douglas gave the speech, and he\ncompared it with the famous horses of Europe. Peter the Great's horse leans on a bronze\nserpent. Wellington's has its hind legs and tail riveted to the pedestal.\n\nOf this one, Douglas said: no props. No serpents.\n\nLook under the horse again.\n",
+    "teaser": "Look under the horse.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "lafayette-square",
+      "sculpture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-no-props-no-serpents",
+        "durationS": 73
+      }
+    ]
+  },
+  {
+    "id": "dc-priced-by-size",
+    "title": "Priced by Size",
+    "summary": "After the British burned Congress's library, it bought Thomas Jefferson's instead, and worked out the price from the size of the books.",
+    "point": {
+      "at": {
+        "lat": 38.8887,
+        "lng": -77.0056
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Thomas Jefferson Building, Library of Congress, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Jefferson's Library (Thomas Jefferson exhibition)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/exhibits/jefferson/jefflib.html"
+      },
+      {
+        "title": "Exhibition Overview - Thomas Jefferson's Library",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/exhibits/thomas-jeffersons-library/overview.html"
+      },
+      {
+        "title": "Exhibitions (current: Thomas Jefferson's Library, Southwest Pavilion, Second Floor, ongoing)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/exhibits/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the building behind the fountain. Upstairs, on the second floor, is a room of old\nbooks arranged in a slightly strange order.\n\nIn August 1814 the British burned the Capitol, and with it the library of Congress. About\nthree thousand books.\n\nThomas Jefferson, retired at Monticello, owned the largest private collection of books in\nthe country. He offered to sell it, at whatever price Congress chose.\n\nThere were sharp debates. Some members complained that too many of the books were in\nforeign languages, or about subjects that had nothing to do with Congress. Jefferson had\nalready answered that. There was, he wrote, no subject to which a member of Congress may\nnot have occasion to refer.\n\nCongress bought them. Six thousand four hundred and eighty-seven volumes, for twenty-three\nthousand nine hundred and fifty dollars.\n\nThe price was not worked out by title, or by rarity. It was based on measurements of the\nsize of the books.\n\nOn Christmas Eve 1851, another fire in the Capitol destroyed nearly two thirds of them.\nThe room upstairs is the library rebuilt the way Jefferson arranged it, around some two\nthousand survivors.\n\nThe largest library in the world grew out of one man's bookshelves, priced by size.\n",
+    "teaser": "Upstairs in this building is a room of old books in a slightly strange order.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "library-of-congress",
+      "jefferson",
+      "war-of-1812"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-priced-by-size",
+        "durationS": 82
+      }
+    ]
+  },
+  {
+    "id": "dc-seventy-six-years-round",
+    "title": "Seventy-Six Years Round",
+    "summary": "The painted band around the Capitol Rotunda was begun in 1877 and finished in 1953.",
+    "point": {
+      "at": {
+        "lat": 38.8899,
+        "lng": -77.00906
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Rotunda frieze, U.S. Capitol, Washington, D.C."
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Death of a Fresco Artist, Alexandria Gazette, February 21, 1880, page 4",
+        "publisher": "Alexandria Gazette, via Library of Congress Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn85025007/1880-02-21/ed-1/?sp=4"
+      },
+      {
+        "title": "Frieze in Capitol's Rotunda Is Completed After 76 Years, Evening Star, December 11, 1953",
+        "publisher": "The Evening Star, via Library of Congress Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83045462/1953-12-11/ed-1/?sp=43"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up, to the band of painted figures that runs right round the rotunda, below the\ndome.\n\nIt is one long procession through American history, a little over eight feet high and\nabout three hundred feet around.\n\nIt was designed by Constantino Brumidi, a painter from Rome who had come to America as an\nexile, and who spent more than twenty years decorating this building. He began the band\nin 1877. He was in his seventies, working on a scaffold high above this floor.\n\nIn the autumn of 1879 he very nearly fell from it. A newspaper reported that he never\ncompletely recovered from the shock. He died the following February. He had painted six\nscenes and part of a seventh.\n\nAnother Italian, Filippo Costaggini, carried on with Brumidi's designs for eight more\nyears. When he finished, there was still a gap. About thirty feet of the circle was empty.\n\nIt stayed empty for more than sixty years.\n\nIn 1952 and 1953 a New York artist, Allyn Cox, filled it with the Civil War, the Spanish\nAmerican War and the birth of aviation. The papers announced that the frieze was complete.\n\nIt had taken seventy-six years to go once around the room. The man who started it saw six\nscenes of it.\n",
+    "teaser": "Look up to the band of painted figures that runs right round the rotunda.",
+    "pronunciations": [
+      {
+        "written": "Brumidi",
+        "say": "broo-MEE-dee"
+      },
+      {
+        "written": "Costaggini",
+        "say": "koss-tah-JEE-nee"
+      }
+    ],
+    "tags": [
+      "washington",
+      "dc-core",
+      "capitol",
+      "painting",
+      "brumidi"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-seventy-six-years-round",
+        "durationS": 85
+      }
+    ]
+  },
+  {
+    "id": "dc-somewhere-to-hide",
+    "title": "Somewhere to Hide",
+    "summary": "The Declaration of Independence spent a century on show, until it was taken down for fading.",
+    "point": {
+      "at": {
+        "lat": 38.8924,
+        "lng": -77.02305
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Rotunda for the Charters of Freedom, National Archives Museum, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "How the National Archives Became Home to the US Constitution, Declaration of Independence, and Bill of Rights",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/how-the-national-archives-became-home-to-the-us-constitution-declaration-of-independence-and-bill-of-rights.htm"
+      },
+      {
+        "title": "\"The Honor of Your Company is Requested\": Lincoln's Second Inaugural Ball at the Patent Office (Teaching with Historic Places)",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/-the-honor-of-your-company-is-requested-lincoln-s-second-inaugural-ball-at-the-patent-office.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Inside the rotunda, find the Declaration of Independence, and look closely at the ink.\n\nFor most of its life this sheet was not kept in the dark. It was a display piece. For\nyears it was on show in the Patent Office, a few blocks north of here, alongside George\nWashington's camp tent. In 1876 it went to Philadelphia for the Centennial Exhibition.\nThen it came back to a cabinet in the State Department's library.\n\nIn 1894 it was taken off display, because it was fading.\n\nIt spent the next quarter of a century in storage. In 1921 it went to the Library of\nCongress. After Pearl Harbor it went to Fort Knox. In 1951 the Library tried sealing it in\na case filled with helium.\n\nOn the thirteenth of December 1952 it came here, with the Constitution, in an armored\ncarrier escorted by tanks.\n\nUnder the display cases, the Archives had built a fifty-ton safe of steel and concrete,\nwith its own elevator. Every night the documents could be lowered into a vault, out of\nthe light, and raised again in the morning.\n\nAfter more than a century of being looked at, the first thing it got in its new home was\nsomewhere to hide.\n",
+    "teaser": "Find the Declaration of Independence, and look closely at the ink.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "national-archives",
+      "declaration-of-independence"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-somewhere-to-hide",
+        "durationS": 82
+      }
+    ]
+  },
+  {
+    "id": "dc-the-ballroom-ward",
+    "title": "The Ballroom Ward",
+    "summary": "Lincoln's second inaugural ball was held in rooms that had been a hospital ward. Walt Whitman saw both.",
+    "point": {
+      "at": {
+        "lat": 38.89728,
+        "lng": -77.023
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Old Patent Office Building, F and Eighth Streets NW, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 77,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "\"The Honor of Your Company is Requested\": Lincoln's Second Inaugural Ball at the Patent Office (Teaching with Historic Places)",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/-the-honor-of-your-company-is-requested-lincoln-s-second-inaugural-ball-at-the-patent-office.htm"
+      },
+      {
+        "title": "Patent Office Building, Bounded by 7th, 9th, F, and G Streets Northwest (HABS DC-130)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/dc0194/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the columns on the F Street front. On the sixth of March 1865, guests climbed\nto that portico for Abraham Lincoln's second inaugural ball.\n\nIt was the first time a government building had been used for one. The great hall\nupstairs was the largest empty room in the city for dancing.\n\nOne of the clerks in the building went up to look while it was being made ready. His name\nwas Walt Whitman, and he wrote down what he saw.\n\nEarlier in the war, this building had been a military hospital. Whitman remembered these\nsame rooms filled with the worst wounded of the war, brought in from Second Bull Run,\nAntietam and Fredericksburg.\n\nTonight, he wrote, beautiful women, perfumes, the violins' sweetness, the polka and the\nwaltz. Then, the amputation, the blue face, the groan, the glassy eye of the dying. And\nmany a mother's son amid strangers, passing away untended.\n\nBy midnight on the night of the ball, there were more than four thousand guests.\n\nThe building is an art museum now. Whitman saw both of its nights in the same rooms, a\nlittle over two years apart.\n",
+    "teaser": "Look up at the columns on the F Street front.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "penn-quarter",
+      "lincoln",
+      "civil-war",
+      "whitman"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-ballroom-ward",
+        "durationS": 77
+      }
+    ]
+  },
+  {
+    "id": "dc-the-bow-in-the-corridor",
+    "title": "The Bow in the Corridor",
+    "summary": "Until 1935 the Supreme Court had no building of its own, and its daily ritual happened in a public hallway.",
+    "point": {
+      "at": {
+        "lat": 38.8906,
+        "lng": -77.00525
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Supreme Court of the United States, First Street NE, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Many Important Cases to Come Before Highest Tribunal Tomorrow, Evening Star, October 6, 1935, page A-25",
+        "publisher": "The Evening Star, via Library of Congress Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83045462/1935-10-06/ed-1/?sp=25"
+      },
+      {
+        "title": "Highest Court Convenes in New Home, Washington Times, October 7, 1935, page 16",
+        "publisher": "The Washington Times, via Library of Congress Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn84026749/1935-10-07/ed-1/?sp=16"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand in front of the steps and read the words cut across the front. Equal justice\nunder law.\n\nThis building opened in October 1935, and the newspapers that week noticed something odd\nabout it. It was the first building the Supreme Court had ever had for its own use. The\nCourt was a hundred and forty-six years old.\n\nUntil then it had sat across the street, inside the Capitol. Its courtroom was on one side\nof a main corridor. The room where the justices put on their robes was on the other.\n\nSo before each session, attendants stretched plush ropes across the corridor to make an\naisle. The Chief Justice met the Court's marshal in the middle. They bowed, exchanged a\nquiet greeting, and the justices followed through into court, in full view of whoever\nhappened to be passing.\n\nSightseers loved it.\n\nWhen the Court moved in here, the justices brought their old chairs with them. The papers\ncalled the chairs the only relics of the old room.\n\nThe robing room in this building sits behind bronze gates, where the public cannot go.\n\nIf the bow still happens, nobody outside gets to see it.\n",
+    "teaser": "Read the words cut across the front of the building.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "supreme-court",
+      "capitol-hill"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-bow-in-the-corridor",
+        "durationS": 78
+      }
+    ]
+  },
+  {
+    "id": "dc-the-caretaker-heard-nothing",
+    "title": "The Caretaker Heard Nothing",
+    "summary": "In 1897 the Octagon was the most famous haunted house in Washington. The man living in it laughed.",
+    "point": {
+      "at": {
+        "lat": 38.89648,
+        "lng": -77.0417
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Octagon, 18th Street and New York Avenue NW, Washington, D.C."
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 77,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "The Octagon House, The Times (Washington), April 11, 1897, image 20",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn85054468/1897-04-11/ed-1/?sp=20"
+      },
+      {
+        "title": "Octagon House",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/octagon-house.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the old brick walls of the Octagon from the Eighteenth Street side.\n\nIn April eighteen ninety-seven, a Washington newspaper said this had long been the most\nnoted of the haunted houses in the city.\n\nThis is a legend. Nothing in it has ever been proven. It is only what people said.\n\nAnd people said a great deal. Doors and windows that opened when they were shut, and shut\nwhen they were opened. A woman's shriek. The clank of sabres. Heavy footsteps. Groans and\ncries from the passage by the back stairs. And an officer who died in an upper room,\nwhose blood, the story went, could still be heard dripping from the mantelpiece.\n\nAt the time, the house stood neglected. A caretaker lived in it, rent free and unpaid,\nwith his son. They slept in the room where Dolley Madison had once held her receptions.\n\nThe reporter asked him about the ghosts. He laughed.\n\nIf there are any ghosts here, he said, I have never heard or seen them. The only ghosts\nthat haunt this house exist in people's imagination.\n\nEveryone else told stories about this house. He slept in it.\n",
+    "teaser": "Look at the old brick walls of the Octagon from the Eighteenth Street side.",
+    "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven. The only source is an 1897 newspaper account of what people claimed; no supernatural claim is established, and the caretaker's denial is quoted from the same article.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "octagon",
+      "ghosts"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-caretaker-heard-nothing",
+        "durationS": 77
+      }
+    ]
+  },
+  {
+    "id": "dc-the-cherry-tree-rebellion",
+    "title": "The Cherry Tree Rebellion",
+    "summary": "In 1938 women chained themselves to the cherry trees being cleared for this memorial, and a police sergeant got chained too.",
+    "point": {
+      "at": {
+        "lat": 38.88195,
+        "lng": -77.03651
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Jefferson Memorial, Tidal Basin, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 75,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "History of the Cherry Trees",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/subjects/cherryblossom/history-of-the-cherry-trees.htm"
+      },
+      {
+        "title": "Women Lock Selves To Cherry Trees. The Washington Times, 18 November 1938, page 6 (Chronicling America)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn84026749/1938-11-18/ed-1/?sp=6"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on the steps of the Jefferson Memorial and look at the cherry trees along the\nshore.\n\nIn November 1938, this ground was being cleared for the building behind you. Some of the\ncherry trees were in the way.\n\nSo more than a hundred and fifty women came down to the Tidal Basin, in limousines, in\ncabs and in buses. They were leaders of the city's women's clubs and parent teacher\nassociations. Dozens of them chained and padlocked themselves to the trees. Others took\nthe shovels out of the workmen's hands and filled the holes back in. Where trees had\nalready been dug up, women sat on them.\n\nA park police sergeant, Carl Gillespie, walked over to find out what was going on.\n\nHe found himself chained to a tree.\n\nThe paper said he took it good-naturedly.\n\nThe director of the city's parks stopped the work until the White House decided what to\ndo.\n\nThe memorial was built. But part of the compromise was more cherry trees, planted along\nthis side of the basin, to frame it.\n\nThe sergeant got his chain off. The trees got this shore.\n",
+    "teaser": "Stand on the steps of the Jefferson Memorial and look at the cherry trees along the shore.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "tidal-basin",
+      "cherry-blossoms",
+      "protest",
+      "jefferson-memorial"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-cherry-tree-rebellion",
+        "durationS": 75
+      }
+    ]
+  },
+  {
+    "id": "dc-the-engine-under-the-floor",
+    "title": "The Engine Under the Floor",
+    "summary": "In 1953 a runaway express crashed through Union Station's concourse floor, days before an inauguration.",
+    "point": {
+      "at": {
+        "lat": 38.8977,
+        "lng": -77.0063
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Union Station concourse, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 84,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Runaway Train Rams Station, 40 Hurt, Evening Star, January 15, 1953, page A-1",
+        "publisher": "The Evening Star, via Library of Congress Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83045462/1953-01-15/ed-1/?sp=1"
+      },
+      {
+        "title": "Station Rushes Repairs for Inauguration; Engine Still Lies in Basement, Sunday Star, January 18, 1953, page A-12",
+        "publisher": "The Evening Star, via Library of Congress Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83045462/1953-01-18/ed-1/?sp=12"
+      },
+      {
+        "title": "Union Station, 50 Massachusetts Avenue Northeast (HABS DC-139)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/dc0254/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Walk through to the great concourse behind the main hall, and look at the floor.\n\nOn the morning of the fifteenth of January 1953, the Pennsylvania Railroad's Federal\nExpress was running in from Boston, full of visitors for the presidential inauguration.\n\nBy the railroad's account, as the train came into the Washington yards, the engineer found\nthat his brakes had failed completely. He sounded the horn in short blasts. A dispatcher in\na signal tower saw the train race past and sent a warning ahead.\n\nStation staff had less than two minutes to clear the concourse.\n\nThe train ran off the end of the track at an estimated fifty miles an hour, crossed the\nplatform and smashed through the barrier. The locomotive broke through this floor and\ndropped into the basement. Clocks stopped by the impact read eight thirty-six.\n\nForty-three people were hurt.\n\nThe inauguration was days away, so the engine stayed where it was. Crews built a wooden\nfloor over the hole and surfaced it with quick-drying asphalt. According to a station\nattendant, they even spread sooty dust over it, so it would match the rest.\n\nThat week, thousands of visitors walked across this concourse with no idea that a giant\nlocomotive was lying on its side beneath their feet.\n",
+    "teaser": "Walk through to the concourse behind the main hall, and look at the floor.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "union-station",
+      "railways"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-engine-under-the-floor",
+        "durationS": 84
+      }
+    ]
+  },
+  {
+    "id": "dc-the-first-are-with-the-last",
+    "title": "The First Are With the Last",
+    "summary": "A student's design for the Vietnam Veterans Memorial puts the first names and the last side by side, and puts you between them.",
+    "point": {
+      "at": {
+        "lat": 38.89117,
+        "lng": -77.04785
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Vietnam Veterans Memorial, Washington, D.C."
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Frequently Asked Questions: How are the names arranged on the wall?",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/vive/faqs.htm"
+      },
+      {
+        "title": "[Vietnam Veterans Memorial. Competition drawing], Maya Lin, competition entry no. 1026, catalogue record and exhibit captions",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/97505164/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand where the two walls meet, and look into the black stone.\n\nYou will see yourself, standing among the names.\n\nThe design was entry number one thousand and twenty-six, in a blind competition with\nmore than fourteen hundred entries. It began as a student project. Maya Lin was studying\narchitecture at Yale when she proposed it, in 1981.\n\nNo figures. No sculpture. Two long walls of polished black granite, angled so that one\nlines up with the Washington Monument and the other with the Lincoln Memorial.\n\nNow look at the top of the panel at the very center, on the east side. The names begin\nthere, with the earliest dead, and they run in the order people died, east along the\nwall to its far end. Then they pick up again at the far west end, and run back toward\nyou.\n\nSo the last names on the wall finish right here, beside the first.\n\nThe Park Service puts it plainly. The first are with the last.\n\nAnd in the stone, in the middle of all of them, is you.\n",
+    "teaser": "Stand where the two walls meet, and look into the black stone.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "national-mall",
+      "memorials",
+      "vietnam"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-first-are-with-the-last",
+        "durationS": 72
+      }
+    ]
+  },
+  {
+    "id": "dc-the-house-on-h-street",
+    "title": "The House on H Street",
+    "summary": "Lincoln's assassins met in a boarding house here. Its owner became the first woman executed by the federal government.",
+    "point": {
+      "at": {
+        "lat": 38.89962,
+        "lng": -77.02041
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Surratt boarding house, 604 H Street NW, Chinatown, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 92,
+    "minAge": 12,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Lincoln Conspirators",
+        "publisher": "National Park Service, Ford's Theatre National Historic Site",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/foth/learn/historyculture/the-lincoln-conspirators.htm"
+      },
+      {
+        "title": "Johnson's Last Words on Mary Surratt",
+        "publisher": "National Park Service, Andrew Johnson National Historic Site",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/anjo/learn/historyculture/mary-surratt.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at number 604 H Street. These days it is a restaurant and karaoke bar.\n\nIn the spring of 1865 it was a boarding house, owned by a widow named Mary Surratt.\n\nHer son John was one of John Wilkes Booth's most capable conspirators. Booth and his men\noften met here, to plan the kidnapping of President Lincoln and, in the end, his murder.\nTwo of them lodged here for a while. Andrew Johnson, who became president when Lincoln\ndied, called this house the nest that hatched the egg.\n\nAfter the assassination, detectives came to arrest the people living here. While they\nwere at it, one of the conspirators, Lewis Powell, turned up at the door. He had attacked\nthe Secretary of State three days before, and had been wandering the city since. They took\nhim too.\n\nMary Surratt was tried by a military tribunal. The case against her rested mainly on one\nwitness, the man who leased her tavern in Maryland. Five of the officers who tried her\nasked the president to spare her. He refused.\n\nShe was hanged on the seventh of July 1865, the first woman executed by the federal\ngovernment. How much she knew is still argued over by historians.\n\nNear the end of his own life, Johnson is reported to have called her execution a crime.\nHe was the president who had declined to stop it.\n",
+    "teaser": "Look at number 604 H Street. The ground floor is a restaurant and karaoke bar.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "chinatown",
+      "lincoln",
+      "civil-war"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-house-on-h-street",
+        "durationS": 92
+      }
+    ]
+  },
+  {
+    "id": "dc-the-house-that-fired-back",
+    "title": "The House That Fired Back",
+    "summary": "In 1814 someone fired on the British from this house. The British burned it down.",
+    "point": {
+      "at": {
+        "lat": 38.8922,
+        "lng": -77.00375
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Belmont-Paul Women's Equality National Monument, 144 Constitution Avenue NE, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "History of the House",
+        "publisher": "National Park Service, Belmont-Paul Women's Equality National Monument",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bepa/learn/history-of-the-house.htm"
+      },
+      {
+        "title": "Sewall-Belmont House, 144 Constitution Avenue, Northeast (HABS DC-821)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/dc0963/"
+      },
+      {
+        "title": "Belmont-Paul Women's Equality National Monument",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/bepa/index.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the old brick house on the corner, tucked in beside the big Senate office building.\n\nIt is one of the oldest houses on Capitol Hill. But it is not quite the house that was\nfirst built here.\n\nThe first one went up in 1800. On the twenty-fourth of August 1814, the British army\nmarched into Washington.\n\nAccording to a claim the owner later filed with Congress, a group of Commodore Joshua\nBarney's men, retreating from the battle at Bladensburg, got into this house and shot at\nthe British troops coming up the street.\n\nThey killed several men. They also killed the horse of the British commander, General\nRobert Ross.\n\nRoss's troops set the house on fire, and it was destroyed.\n\nThe house you are looking at was rebuilt on the same spot by 1820.\n\nA little over a century later, the National Woman's Party bought it, and campaigned for\nequal rights from here, just behind the Capitol.\n\nIn the 1960s, when the Senate office building next door was going up, the house was\nthreatened again. The Woman's Party lobbied to have it protected, and won.\n\nThis time, nobody had to fire a shot.\n",
+    "teaser": "Find the old brick house on the corner, beside the big Senate office building.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "war-of-1812",
+      "capitol-hill",
+      "womens-rights"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-house-that-fired-back",
+        "durationS": 78
+      }
+    ]
+  },
+  {
+    "id": "dc-the-ladies-waiting-room",
+    "title": "The Ladies' Waiting Room",
+    "summary": "President Garfield was shot in a railroad depot that stood here in 1881; part of the National Gallery of Art now covers the site.",
+    "point": {
+      "at": {
+        "lat": 38.89218,
+        "lng": -77.0199
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "National Gallery of Art West Building, Constitution Avenue and 6th Street, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 77,
+    "minAge": 12,
+    "quality": 0.75,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Assassination of President Garfield Stirred Capital 58 Years Ago Today, by John Clagett Proctor. Evening Star, 2 July 1939, page 22 (Chronicling America)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83045462/1939-07-02/ed-1/?sp=22"
+      },
+      {
+        "title": "James A. Garfield Papers: timeline and featured items",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/collections/james-a-garfield-papers/articles-and-essays/timeline/"
+      },
+      {
+        "title": "Assassination and Death of President James A. Garfield",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/jaga/learn/historyculture/assassination-and-death-of-president-james-a-garfield.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on Constitution Avenue at Sixth Street and look at the gallery in front of you.\n\nA railroad station stood here once, the Baltimore and Potomac depot. This avenue was\ncalled B Street then.\n\nAt about half past nine on the morning of the second of July, 1881, President James\nGarfield came here to catch a train north. He was walking through the ladies' waiting\nroom, arm in arm with his Secretary of State, when a man named Charles Guiteau shot him\ntwice.\n\nThe doctors probed for one of the bullets and could not find it. The bulletins they put\nout were hopeful. For eighty days the president declined, from spreading infection, and\nhe died on the nineteenth of September.\n\nHe had kept a diary all his life. The entry for the first of July, the day before the\nshooting, was the last he ever wrote.\n\nThe station is gone. In 1939, as this gallery was going up, a Washington columnist noted\nthat part of the enormous building would cover the site, and that very few visitors\nwould ever remember.\n\nSomewhere under the building in front of you, there was a waiting room.\n",
+    "teaser": "Stand on Constitution Avenue at Sixth Street and look at the gallery in front of you.",
+    "pronunciations": [
+      {
+        "written": "Guiteau",
+        "say": "gih-TOH"
+      }
+    ],
+    "tags": [
+      "washington",
+      "dc-core",
+      "national-mall",
+      "presidents",
+      "railways"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-ladies-waiting-room",
+        "durationS": 77
+      }
+    ]
+  },
+  {
+    "id": "dc-the-man-who-found-the-bolts",
+    "title": "The Man Who Found the Bolts",
+    "summary": "The statue on top of the Capitol is called Freedom. The man who got her out of the plaster was enslaved.",
+    "point": {
+      "at": {
+        "lat": 38.8899,
+        "lng": -77.0077
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Statue of Freedom, U.S. Capitol East Front, Washington, D.C."
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 88,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "[Model for the Statue of Freedom]",
+        "publisher": "Library of Congress, Prints and Photographs Division",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/2023631991/"
+      },
+      {
+        "title": "U.S. Capitol, Statue of Freedom (HABS DC-38-C)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/dc1054/"
+      },
+      {
+        "title": "Sixty-Seven-Year Reign of Freedom, Evening Star, December 14, 1930",
+        "publisher": "The Evening Star, via Library of Congress Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045462/1930-12-14/ed-1/?sp=94"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up past the dome, to the bronze figure standing on the very top.\n\nShe is called Freedom. She is nineteen and a half feet tall, and she weighs about fifteen\nthousand pounds.\n\nBefore she was bronze, she was plaster. The sculptor, Thomas Crawford, made the full-size\nmodel in his studio in Rome, and died before it left. It crossed the Atlantic in six\ncrates. Here, an Italian craftsman put the pieces together so cleverly that nobody could\nsee the joints.\n\nThen it had to come apart again, to be cast. By one account, the craftsman refused to\nseparate it unless he was paid a great deal more. Only he knew where the bolts were\nhidden.\n\nThe casting had gone to Clark Mills, whose foundry stood out on the Bladensburg road.\nMills owned a man named Philip Reid.\n\nReid rigged a pulley to an iron eye in the statue's head. He strained the rope gently,\nuntil the seams showed themselves one by one. Then he found the bolts, scraped away the\nplaster, and took them out. The model came apart, ready for the foundry.\n\nIn December 1863 the last section, her head and shoulders, was raised up there to a\nsalute of thirty-five guns.\n\nThe statue is called Freedom. The man who freed her from the plaster was not free.\n",
+    "teaser": "Look up past the dome, to the bronze figure on the very top.",
+    "pronunciations": [
+      {
+        "written": "Reid",
+        "say": "REED"
+      }
+    ],
+    "tags": [
+      "washington",
+      "dc-core",
+      "capitol",
+      "slavery",
+      "sculpture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-man-who-found-the-bolts",
+        "durationS": 88
+      }
+    ]
+  },
+  {
+    "id": "dc-the-map-underfoot",
+    "title": "The Map Underfoot",
+    "summary": "Freedom Plaza is paved with L'Enfant's plan of Washington. You can stand on the White House.",
+    "point": {
+      "at": {
+        "lat": 38.89588,
+        "lng": -77.03085
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Freedom Plaza, Pennsylvania Avenue NW between 13th and 14th Streets, Washington, D.C."
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 52,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Freedom Plaza",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/000/freedom-plaza.htm"
+      },
+      {
+        "title": "Pershing Park, HALS DC-63, written historical and descriptive data",
+        "publisher": "Library of Congress, Historic American Landscapes Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/dc1230/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down. You are standing on a map.\n\nThe dark lines in the stone are streets and avenues. The curving edge is the shoreline of\nthe Potomac. Bronze plaques set into the pavement mark the places that matter.\n\nIt is the plan Pierre L'Enfant drew for this city in seventeen ninety-one. It was laid into\nthe stone of this plaza when the plaza opened in nineteen eighty.\n\nFind Pennsylvania Avenue on the map. Follow it to the Capitol at one end, and the\nPresident's house at the other.\n\nNow look up. The plaza was built so that you can see the Capitol in one direction, and\nthe White House in the other.\n\nThe map is the promise. Lift your eyes, and you are standing in the city it turned into.\n",
+    "teaser": "Look down. You are standing on a map.",
+    "pronunciations": [
+      {
+        "written": "L'Enfant",
+        "say": "lahn-FAHN"
+      }
+    ],
+    "tags": [
+      "washington",
+      "dc-core",
+      "pennsylvania-avenue",
+      "lenfant"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-map-underfoot",
+        "durationS": 52
+      }
+    ]
+  },
+  {
+    "id": "dc-the-other-half-of-the-circle",
+    "title": "The Other Half of the Circle",
+    "summary": "A curved federal building on 12th Street was meant to be half of a circle. The Old Post Office tower stood where the other half should go.",
+    "point": {
+      "at": {
+        "lat": 38.894,
+        "lng": -77.0283
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Old Post Office tower and the Federal Triangle hemicycle, 12th Street NW, Washington, D.C."
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 88,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old Post Office Tower",
+        "publisher": "National Park Service, National Mall and Memorial Parks",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/nama/planyourvisit/opot.htm"
+      },
+      {
+        "title": "New Post Office Building, Twelfth Street and Pennsylvania Avenue (HABS DC-814)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/dc0948/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on Twelfth Street and look at the two buildings facing each other.\n\nOn one side, a federal building sweeps round in a great half circle. On the other stands\nthe Old Post Office, and its tower.\n\nThe curve was supposed to be a whole circle. When the federal buildings here went up in\nthe early 1930s, a matching curve was meant to be built across the street, on the site of\nthe Old Post Office. The tower was in the way.\n\nThe old building had fallen out of fashion, and locals thought it unappealing. It faced\ndemolition in 1934, and was spared only because the Depression had swallowed the money.\n\nIn 1970 Congress approved tearing it down again. By the mid seventies there were fires and\npiles of trash inside, and metal sheets over the glass roof of the atrium.\n\nThen Nancy Hanks, who chaired the National Endowment for the Arts, testified. Old\nbuildings, she told Congress, are like old friends. People picketed. The building was\nsaved, and in 1973 it went on the National Register of Historic Places.\n\nFor forty-two years, park rangers took visitors to the top of the tower. That ended on the\nfirst of October 2025, while the building's owners decide what happens next.\n\nEither way, the circle across the street still stops halfway.\n",
+    "teaser": "Stand on Twelfth Street and look at the two buildings facing each other.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "penn-quarter",
+      "preservation",
+      "federal-triangle"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-other-half-of-the-circle",
+        "durationS": 88
+      }
+    ]
+  },
+  {
+    "id": "dc-the-other-revere",
+    "title": "The Other Revere",
+    "summary": "The bell in the Church of the Presidents carries a famous name, but not the famous man.",
+    "point": {
+      "at": {
+        "lat": 38.90025,
+        "lng": -77.03612
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. John's Church, Lafayette Square, Washington, D.C."
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 57,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "St. John's Church, Sixteenth and H Streets Northwest, HABS DC-19, written historical and descriptive data",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/dc0235/"
+      },
+      {
+        "title": "Lafayette Square, HABS DC-676, written historical and descriptive data",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/dc0784/"
+      },
+      {
+        "title": "Lafayette Park",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/000/lafayette-park.htm"
+      },
+      {
+        "title": "Paul Revere's House, Bill Barlow's Budget, September 20, 1905, image 7",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn92067125/1905-09-20/ed-1/?sp=7"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the tower of St. John's Church, across H Street from the park.\n\nBehind the louvres, there is a bell. It has hung there since eighteen twenty-two.\n\nThis is the church people call the Church of the Presidents. Benjamin Latrobe designed\nit, James Madison was given a pew, and every president from Madison to Lincoln came here\nto worship.\n\nThe bell carries a maker's mark. It reads, Revere, Boston, eighteen twenty-two.\n\nNot Paul Revere. By then the family foundry had passed to his son, Joseph, and this is\nhis bell.\n\nA federal survey of the church says what it is for. It rings the hours of worship. And it is\nsounded on occasions of national interest.\n\nThe father is remembered for one night of raising the alarm. The son made something that\nhas been doing it here for two hundred years.\n",
+    "teaser": "Look up at the tower of St. John's Church.",
+    "pronunciations": [
+      {
+        "written": "Latrobe",
+        "say": "luh-TROHB"
+      }
+    ],
+    "tags": [
+      "washington",
+      "dc-core",
+      "lafayette-square",
+      "st-johns-church"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-other-revere",
+        "durationS": 57
+      }
+    ]
+  },
+  {
+    "id": "dc-the-part-he-didnt-write",
+    "title": "The Part He Didn't Write",
+    "summary": "A stone on the Lincoln Memorial landing marks where King stood, and the most famous part of his speech was not in his text.",
+    "point": {
+      "at": {
+        "lat": 38.88927,
+        "lng": -77.04968
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Lincoln Memorial steps, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Other Notable Figures: Martin Luther King, Jr.",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/linc/learn/historyculture/other-notable-figures.htm"
+      },
+      {
+        "title": "\"I Have a Dream\" Speech by Dr. Martin Luther King, Jr. (August 28, 1963), National Recording Registry essay by Gregory Alan Barnes",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/IHaveADream.pdf"
+      },
+      {
+        "title": "Exterior Features: Lincoln Memorial",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/linc/learn/historyculture/exterior-features.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down at the landing, just below the top flight of steps.\n\nOne stone here is engraved. It marks where Martin Luther King Junior stood on the\ntwenty-eighth of August, 1963.\n\nIt was late afternoon. More than a quarter of a million people were out there. Many of\nthem had come a long way by bus and by train, and they had already sat through a long\nlist of speakers.\n\nKing had a prepared text. A promissory note. A bad check, come back marked insufficient\nfunds.\n\nHe was near the end of it, telling people to go home and keep up the fight, when a voice\ncalled out from just off to the side. It was his friend, the gospel singer Mahalia\nJackson.\n\nTell them about the dream, Martin.\n\nWhat came next was not on the page. He improvised it.\n\nStand on the landing and look out the way he did, down the length of the water toward\nthe Washington Monument.\n\nThe part of that speech everyone can still recite is the part he had not planned to say.\n",
+    "teaser": "Look down at the landing, just below the top flight of steps.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "national-mall",
+      "civil-rights",
+      "lincoln-memorial"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-part-he-didnt-write",
+        "durationS": 72
+      }
+    ]
+  },
+  {
+    "id": "dc-the-plaque-on-the-fence",
+    "title": "The Plaque on the Fence",
+    "summary": "In 1950 a White House policeman died defending the President at Blair House.",
+    "point": {
+      "at": {
+        "lat": 38.8989,
+        "lng": -77.03848
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Blair House, 1651 Pennsylvania Avenue NW, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 73,
+    "minAge": 12,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Shooting coverage, Evening Star, November 2, 1950, image 5",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045462/1950-11-02/ed-1/?sp=5"
+      },
+      {
+        "title": "Collazo appeal and Coffelt anniversary, Evening Star, November 9, 1951, image 8",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045462/1951-11-09/ed-1/?sp=8"
+      },
+      {
+        "title": "Plaque Honors Truman Guard Killed in Assassination Attempt, Evening Star, May 22, 1952, image 4",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045462/1952-05-22/ed-1/?sp=4"
+      },
+      {
+        "title": "Blair House, Sunday Star Magazine, Evening Star, January 13, 1957, image 155",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045462/1957-01-13/ed-1/?sp=155"
+      },
+      {
+        "title": "Walk with Mr. Truman, Evening Star, April 14, 1958, image 27",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045462/1958-04-14/ed-1/?sp=27"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the small bronze plaque on the fence in front of Blair House.\n\nIn the autumn of nineteen fifty, the White House was being rebuilt, and President Truman\nwas living here, across the street. On the afternoon of the first of November, he was\nresting upstairs.\n\nTwo Puerto Rican nationalists came to this house armed. One of them later admitted they\nhad expected to shoot their way in. The White House police on duty shot back.\n\nThree officers were hit. One of them, Private Leslie Coffelt, forty years old, was shot\ntwice. As he lay dying beside his post, he fired, and killed one of the attackers. The\nother was wounded and taken. The attempt on the President failed.\n\nThe plaque was dedicated in May nineteen fifty-two, and Truman came to unveil it. He said\nit commemorated an event about which he did not like to think.\n\nSix years later, he walked past here with a writer from the Evening Star. He stopped and\nread the plaque. Then he pointed.\n\nHe was in a little sentry house, Truman said, that stood right there.\n",
+    "teaser": "Find the small bronze plaque on the fence in front of Blair House.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "lafayette-square",
+      "truman"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-plaque-on-the-fence",
+        "durationS": 73
+      }
+    ]
+  },
+  {
+    "id": "dc-the-starting-line-came-later",
+    "title": "The Starting Line Came Later",
+    "summary": "The Zero Milestone marks where an army convoy set off across the continent in 1919, four years before the stone arrived.",
+    "point": {
+      "at": {
+        "lat": 38.89511,
+        "lng": -77.03656
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Zero Milestone, the Ellipse, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 64,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Zero Milestone",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/000/zero-milestone.htm"
+      },
+      {
+        "title": "Dedication, zero milestone, 6/4/23 (National Photo Company Collection)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/2016847638/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the small granite post here, with a bronze compass on top.\n\nWalk round to the south face and read it. Point for the measurement of distances from\nWashington on highways of the United States.\n\nThis is zero.\n\nOn the seventh of July, 1919, an army motor convoy set out from this spot to cross the\ncontinent. It was the first transcontinental military motor convoy, and it went by the\nLincoln Highway. The east face says so.\n\nThe stone was not here to see them off. Congress authorized a permanent marker the\nfollowing year, and this one was presented to the city on the fourth of June, 1923.\n\nSo the starting line arrived four years after the start.\n\nThe Park Service chooses its words carefully. It calls this, symbolically, the\nofficial starting point for highway distances from Washington.\n\nEvery highway in the country, measured from a post you can walk around in a few steps.\n\nSymbolically.\n",
+    "teaser": "Look at the small granite post here, with a bronze compass on top.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "ellipse",
+      "roads",
+      "monuments"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-starting-line-came-later",
+        "durationS": 64
+      }
+    ]
+  },
+  {
+    "id": "dc-the-trees-that-came-second",
+    "title": "The Trees That Came Second",
+    "summary": "Tokyo's first gift of two thousand cherry trees was burned in 1910; the two trees by this plaque are from the second.",
+    "point": {
+      "at": {
+        "lat": 38.88669,
+        "lng": -77.04122
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "First cherry trees, Tidal Basin, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "History of the Cherry Trees",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/subjects/cherryblossom/history-of-the-cherry-trees.htm"
+      },
+      {
+        "title": "Cherry Trees Burned. The Washington Herald, 30 January 1910, page 2 (Chronicling America)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045433/1910-01-30/ed-1/?sp=2"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the two old cherry trees by the large bronze plaque here.\n\nThey were planted on the twenty-seventh of March, 1912, by the First Lady, Helen Taft,\nand Viscountess Chinda, the wife of the Japanese ambassador. Only a few people watched.\nThe whole cherry blossom festival grew out of that small ceremony.\n\nBut these were not the first trees Tokyo sent.\n\nTwo years earlier, two thousand cherry trees arrived in Washington, a gift from the city\nof Tokyo. Inspectors from the Department of Agriculture found them full of insects and\nnematodes, and diseased. To protect American growers, they had to go. The President gave\nhis consent, and in January 1910 the whole gift was burned.\n\nA local paper reported that about a dozen of the buggiest trees were kept back for\nstudy, with an entomologist standing guard, armed with a butterfly net and a cyanide\nbottle.\n\nTokyo's answer was to try again. Three thousand and twenty trees this time, grafted\nfrom a famous collection along a riverbank outside the city.\n\nThe first gift was burned.\n\nThese two trees are the reply.\n",
+    "teaser": "Find the two old cherry trees by the large bronze plaque here.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "tidal-basin",
+      "cherry-blossoms",
+      "japan"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-trees-that-came-second",
+        "durationS": 72
+      }
+    ]
+  },
+  {
+    "id": "dc-the-word-was-waiting",
+    "title": "The Word Was Waiting",
+    "summary": "Legend says Ulysses Grant coined the word lobbyist in the Willard. The word is older.",
+    "point": {
+      "at": {
+        "lat": 38.89632,
+        "lng": -77.0325
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Willard hotel, Pennsylvania Avenue NW, Washington, D.C."
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 73,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "The Willard Hotel is Subject of Display in American Treasures Exhibition",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/prn-06-072/"
+      },
+      {
+        "title": "New Hampshire Gazette and Republican Union, July 31, 1849, image 2",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn84023141/1849-07-31/ed-1/?sp=2"
+      },
+      {
+        "title": "The Republic (Washington), July 12, 1852, image 2",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn82014434/1852-07-12/ed-1/?sp=2"
+      },
+      {
+        "title": "Ulysses S. Grant National Historic Site",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/ulsg/index.htm"
+      },
+      {
+        "title": "Willard Hotel, 1401-1409 Pennsylvania Avenue Northwest, HABS DC-293, written historical and descriptive data",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/dc0300/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look through the doors of the Willard, into the lobby.\n\nThere is a story about that room. The story goes that President Ulysses Grant coined a\nword here. Lobbyist. As in, someone who waits in a hotel lobby to ask a powerful man for\nsomething. Even the Library of Congress has passed it on, with the word reportedly.\n\nIt is a good story. It is a legend, and the word is older.\n\nIn July eighteen forty-nine, a newspaper in Portsmouth, New Hampshire, complained about a\nscore of indefatigable lobbyists who kept up an untiring attack on lawmakers. Three years\nlater, a Washington paper printed a speech warning that English lobbyists should be\nspurned from your halls.\n\nIn the summer of eighteen forty-nine, Ulysses Grant was a young army officer who had been\nmarried for a year.\n\nEven the lobby is younger than the story. The Willard of Grant's day was replaced at the\nturn of the century, by the building in front of you.\n\nGrant did not invent the word. It was already here, waiting for him, like everyone else in\nthe lobby.\n",
+    "teaser": "Look through the doors of the Willard, into the lobby.",
+    "certaintyNote": "A popular legend, repeated with \"reportedly\" in a 2006 Library of Congress press release. The script says out loud that it is a legend, and newspapers from 1849 and 1852 show the word in use long before Grant's presidency.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "willard",
+      "words"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-word-was-waiting",
+        "durationS": 73
+      }
+    ]
+  },
+  {
+    "id": "dc-three-names-for-one-wing",
+    "title": "Three Names for One Wing",
+    "summary": "The brick wing beside Decatur House has been described three ways. The first was right.",
+    "point": {
+      "at": {
+        "lat": 38.9002,
+        "lng": -77.0387
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Decatur House, H Street and Jackson Place, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 57,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Decatur House, 748 Jackson Place Northwest, HABS DC-16, written historical and descriptive data and 2011 addendum",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/dc0085/"
+      },
+      {
+        "title": "The Beale Homestead, Daily Kennebec Journal, April 13, 1903, image 2",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn82014248/1903-04-13/ed-1/?sp=2"
+      },
+      {
+        "title": "Lafayette Park",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/000/lafayette-park.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the brick wing that runs back from Decatur House, along H Street.\n\nIt has been described three different ways.\n\nIn nineteen-oh-three, a newspaper story about this house put it plainly. On H Street, it\nsaid, is a long addition, formerly slave quarters.\n\nA federal survey of the building chose a gentler phrase. Grouped around the garden, it\nsays, are the original servants' quarters, stables and carriage houses.\n\nIn twenty eleven, historians began a new study of the wing. The report that came out of\nit, filed with that same federal survey, calls it the slave wing.\n\nNow turn around and look at the park. The National Park Service keeps a list of what that\nground has been used for. A race track. A graveyard. A slave market.\n\nThree names for one wing. The newspaper had it right the first time.\n",
+    "teaser": "Look at the brick wing that runs back from Decatur House along H Street.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "lafayette-square",
+      "slavery"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-three-names-for-one-wing",
+        "durationS": 57
+      }
+    ]
+  },
+  {
+    "id": "dc-to-thee-we-sing",
+    "title": "To Thee We Sing",
+    "summary": "Refused a concert hall, Marian Anderson sang from the Lincoln Memorial steps in 1939, and changed one line of her first song.",
+    "point": {
+      "at": {
+        "lat": 38.88929,
+        "lng": -77.04888
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Lincoln Memorial steps, Washington, D.C."
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 63,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Other Notable Figures: Marian Anderson",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/linc/learn/historyculture/other-notable-figures.htm"
+      },
+      {
+        "title": "NBC Radio Coverage of Marian Anderson's Recital at the Lincoln Memorial (April 9, 1939), National Recording Registry essay by Cary O'Dell",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/MarianAndersonLincolnMem.pdf"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand at the foot of the steps and look up at the statue in the doorway.\n\nOn Easter Sunday, the ninth of April 1939, a singer stood up there with Lincoln at her\nback and a row of microphones in front of her.\n\nHer name was Marian Anderson. Toscanini had said a voice like hers came along once in a\nhundred years. She had already sung at the White House.\n\nShe could not sing at Constitution Hall, which is nearby. Its owners, the Daughters of\nthe American Revolution, barred Black performers, and they would not make an exception.\nA mostly white high school turned her down as well.\n\nSo these steps were offered instead. The concert was free. About seventy-five thousand\npeople came, of every race, and NBC radio carried it live across the country.\n\nShe opened with America. My country, 'tis of thee.\n\nThe song says, of thee I sing.\n\nShe sang, to thee we sing.\n",
+    "teaser": "Stand at the foot of the steps and look up at the statue in the doorway.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "national-mall",
+      "civil-rights",
+      "music",
+      "lincoln-memorial"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-to-thee-we-sing",
+        "durationS": 63
+      }
+    ]
+  },
+  {
+    "id": "dc-where-the-money-ran-out",
+    "title": "Where the Money Ran Out",
+    "summary": "The color change a third of the way up the Washington Monument is a twenty-year pause and three different quarries.",
+    "point": {
+      "at": {
+        "lat": 38.88949,
+        "lng": -77.03462
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Washington Monument, Washington, D.C."
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 76,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "History & Culture: Washington Monument",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/wamo/learn/historyculture/index.htm"
+      },
+      {
+        "title": "Frequently Asked Questions: Why does the color change on the outside of the monument?",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/wamo/faqs.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the monument, about a third of the way.\n\nThere is a line. Below it the marble is one shade, and above it, another. Right at the\nline there is a narrow band of something browner.\n\nNobody designed that.\n\nThe first stones went up in 1848, paid for by a private society that never had enough\nmoney. By 1854 the society was bankrupt, and the work stopped at one hundred and\nfifty-six feet.\n\nThen it stayed that way. Through the Civil War and for more than twenty years, the\nmonument to the father of the country stood half built on the Mall.\n\nWhen the government finally took it over, the old quarry near Baltimore was no longer\navailable. The builders tried stone from Massachusetts. They had trouble with its color,\nlaid a few courses of it anyway, and then switched to a third quarry for everything above.\n\nThe stones never matched exactly, and the weather has been pulling them apart in color\never since.\n\nWhen it was finished, this was the tallest building in the world. And you can still see\nexactly where it ran out of money.\n",
+    "teaser": "Look up at the monument, about a third of the way.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "national-mall",
+      "monuments"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-where-the-money-ran-out",
+        "durationS": 76
+      }
+    ]
+  },
+  {
+    "id": "dc-where-the-war-ended",
+    "title": "Where the War Ended",
+    "summary": "After the British burned the White House, the War of 1812 ended in the round room of this house.",
+    "point": {
+      "at": {
+        "lat": 38.8962,
+        "lng": -77.04165
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Octagon, 18th Street and New York Avenue NW, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Octagon House",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/octagon-house.htm"
+      },
+      {
+        "title": "Octagon House, 1799 New York Avenue Northwest, HABS DC-25",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/dc0195/"
+      },
+      {
+        "title": "General Andrew Jackson Statue",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/000/general-andrew-jackson-statue.htm"
+      },
+      {
+        "title": "The Octagon House, The Times (Washington), April 11, 1897, image 20",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn85054468/1897-04-11/ed-1/?sp=20"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the curved front of the Octagon, the round bay with the door at its base.\n\nAbove that door is a round room. In the winter of eighteen fifteen, it was the\nPresident's study.\n\nOn the twenty-fourth of August, eighteen fourteen, British troops had burned the White\nHouse, the Capitol and the Treasury. James and Dolley Madison fled the city. When they came\nback a few weeks later, they needed somewhere to live.\n\nThis house had come through. Its resident was the French minister, and the British most\nlikely left it alone because of the French flag he flew. The Madisons moved in on the\neighth of September.\n\nThe war went on. On the eighth of January, Andrew Jackson won the Battle of New Orleans.\n\nThen, on the seventeenth of February, in the round room above the door, Madison signed the\nTreaty of Ghent, and the War of eighteen twelve was over.\n\nNew Orleans had been fought six weeks before the war ended. And the war that burned the\nPresident out of his house ended in somebody else's.\n",
+    "teaser": "Look at the curved front of the Octagon, and the window above the door.",
+    "pronunciations": [
+      {
+        "written": "Ghent",
+        "say": "GENT"
+      }
+    ],
+    "tags": [
+      "washington",
+      "dc-core",
+      "octagon",
+      "war-of-1812"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-where-the-war-ended",
+        "durationS": 72
+      }
+    ]
+  },
+  {
+    "id": "dc-white-before-the-fire",
+    "title": "White Before the Fire",
+    "summary": "The famous story of why the White House is white has a dating problem.",
+    "point": {
+      "at": {
+        "lat": 38.8988,
+        "lng": -77.03655
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "The White House, north fence on Pennsylvania Avenue, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The White House",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/white-house.htm"
+      },
+      {
+        "title": "Other Repairs to White House Dispossessed Three Presidents, Evening Star, January 16, 1949, image 96",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045462/1949-01-16/ed-1/?sp=96"
+      },
+      {
+        "title": "British Army Receives White House Memento, Evening Star, August 22, 1952, image 8",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045462/1952-08-22/ed-1/?sp=8"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look through the fence at the north front of the White House.\n\nThere is a story about that white paint, and people have been telling it for a long time.\nIn nineteen forty-nine, a Washington newspaper printed it as plain fact.\n\nIt goes like this. On the twenty-fourth of August, eighteen fourteen, British troops set\nthe house on fire. The walls were left stained with smoke. So the house was painted white\nto hide the stains, and that is how it got its name.\n\nIt is a good story. The dates do not fit it.\n\nThe National Park Service says the house was carrying the name White House from around\neighteen eleven. That is three years before the fire.\n\nThe fire itself was real. The outer walls stood, but they were so weakened that little of\nthe original building could be kept.\n\nAnd some of the scorched wood had one more journey to make. In nineteen fifty-two, a piece\nof White House timber, still marked by the British fire, was made into a gavel. With a\nmessage of good wishes from President Truman, it was presented to a training centre of\nthe British Army, in England.\n\nThis time, they were invited to take it.\n",
+    "teaser": "Look through the fence at the north front of the White House.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "white-house",
+      "war-of-1812"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-white-before-the-fire",
+        "durationS": 82
+      }
+    ]
+  },
+  {
+    "id": "dc-written-in-the-dark",
+    "title": "Written in the Dark",
+    "summary": "Julia Ward Howe wrote the Battle Hymn of the Republic on this corner, in the dark, half asleep.",
+    "point": {
+      "at": {
+        "lat": 38.89665,
+        "lng": -77.03215
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Willard hotel, 14th Street and Pennsylvania Avenue NW, Washington, D.C."
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Julia Ward Howe",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/julia-ward-howe.htm"
+      },
+      {
+        "title": "Willard Hotel, 1401-1409 Pennsylvania Avenue Northwest, HABS DC-293, written historical and descriptive data",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/dc0300/"
+      },
+      {
+        "title": "The Willard Hotel is Subject of Display in American Treasures Exhibition",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/prn-06-072/"
+      },
+      {
+        "title": "Battle Hymn of the Republic, from the February Atlantic Monthly, Worcester Daily Spy, January 27, 1862, image 1",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83021205/1862-01-27/ed-1/?sp=1"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the windows of the Willard.\n\nIn November eighteen sixty-one, Julia Ward Howe was a guest at the hotel on this corner.\nThe Civil War had begun, and she had come to Washington with her husband to see the war\neffort for themselves, and to meet President Lincoln.\n\nOne night, she woke from a dream with a poem in her head. Years later, she described what\nshe did next.\n\nWith a sudden effort, she wrote, I sprang out of bed, and found in the dimness an old\nstump of a pen. I scrawled the verses almost without looking at the paper.\n\nThe Atlantic Monthly printed them in February. People sang them to the tune of the John\nBrown song, and they still do.\n\nThe building has changed. The old Willard was replaced at the turn of the century, on the\nsame corner, under the same name.\n\nThe song has not. You probably know the first line. Mine eyes have seen the glory.\n\nShe wrote it without looking.\n",
+    "teaser": "Look up at the windows of the Willard.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "willard",
+      "civil-war"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-written-in-the-dark",
+        "durationS": 68
+      }
+    ]
+  },
+  {
     "id": "federal-hall-two-firsts",
     "title": "Two American firsts happened on this corner",
     "summary": "A free press was won here in 1735, and the first president sworn in on the balcony in 1789.",

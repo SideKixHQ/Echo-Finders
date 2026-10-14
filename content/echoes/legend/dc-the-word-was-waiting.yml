@@ -1,0 +1,72 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Public sidewalk on Pennsylvania Avenue NW outside the Willard's main entrance, looking into the lobby.
+# Position: Pennsylvania Avenue sidewalk on the south face of the hotel; Overture's Willard entries at 1401 Pennsylvania Ave NW (38.8963-38.8968, -77.0323 to -77.0325) and Pershing Park to the south at 38.89599 bracket it (medium confidence).
+id: dc-the-word-was-waiting
+title: "The Word Was Waiting"
+summary: "Legend says Ulysses Grant coined the word lobbyist in the Willard. The word is older."
+place: "The Willard hotel, Pennsylvania Avenue NW, Washington, D.C."
+at: { lat: 38.89632, lng: -77.03250 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 73
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A popular legend, repeated with "reportedly" in a 2006 Library of Congress press release.
+  The script says out loud that it is a legend, and newspapers from 1849 and 1852 show the
+  word in use long before Grant's presidency.
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, willard, words]
+teaser: "Look through the doors of the Willard, into the lobby."
+script: |
+  Look through the doors of the Willard, into the lobby.
+
+  There is a story about that room. The story goes that President Ulysses Grant coined a
+  word here. Lobbyist. As in, someone who waits in a hotel lobby to ask a powerful man for
+  something. Even the Library of Congress has passed it on, with the word reportedly.
+
+  It is a good story. It is a legend, and the word is older.
+
+  In July eighteen forty-nine, a newspaper in Portsmouth, New Hampshire, complained about a
+  score of indefatigable lobbyists who kept up an untiring attack on lawmakers. Three years
+  later, a Washington paper printed a speech warning that English lobbyists should be
+  spurned from your halls.
+
+  In the summer of eighteen forty-nine, Ulysses Grant was a young army officer who had been
+  married for a year.
+
+  Even the lobby is younger than the story. The Willard of Grant's day was replaced at the
+  turn of the century, by the building in front of you.
+
+  Grant did not invent the word. It was already here, waiting for him, like everyone else in
+  the lobby.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Willard Hotel is Subject of Display in American Treasures Exhibition"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/prn-06-072/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "New Hampshire Gazette and Republican Union, July 31, 1849, image 2"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84023141/1849-07-31/ed-1/?sp=2
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Republic (Washington), July 12, 1852, image 2"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82014434/1852-07-12/ed-1/?sp=2
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Ulysses S. Grant National Historic Site"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/ulsg/index.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Willard Hotel, 1401-1409 Pennsylvania Avenue Northwest, HABS DC-293, written historical and descriptive data"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/dc0300/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Public sidewalk on H Street NW in Chinatown, in front of number 604.
+# Position: Overture's "Mary E. Surratt Boarding House" (38.89967, -77.02041) and the restaurant at 604 H St NW (38.89954, -77.02039) agree; neighbours at 602 and 608 H St bracket it (high confidence).
+id: dc-the-house-on-h-street
+title: "The House on H Street"
+summary: "Lincoln's assassins met in a boarding house here. Its owner became the first woman executed by the federal government."
+place: "Surratt boarding house, 604 H Street NW, Chinatown, Washington, D.C."
+at: { lat: 38.89962, lng: -77.02041 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.75
+tags: [washington, dc-core, chinatown, lincoln, civil-war]
+teaser: "Look at number 604 H Street. The ground floor is a restaurant and karaoke bar."
+script: |
+  Look at number 604 H Street. These days it is a restaurant and karaoke bar.
+
+  In the spring of 1865 it was a boarding house, owned by a widow named Mary Surratt.
+
+  Her son John was one of John Wilkes Booth's most capable conspirators. Booth and his men
+  often met here, to plan the kidnapping of President Lincoln and, in the end, his murder.
+  Two of them lodged here for a while. Andrew Johnson, who became president when Lincoln
+  died, called this house the nest that hatched the egg.
+
+  After the assassination, detectives came to arrest the people living here. While they
+  were at it, one of the conspirators, Lewis Powell, turned up at the door. He had attacked
+  the Secretary of State three days before, and had been wandering the city since. They took
+  him too.
+
+  Mary Surratt was tried by a military tribunal. The case against her rested mainly on one
+  witness, the man who leased her tavern in Maryland. Five of the officers who tried her
+  asked the president to spare her. He refused.
+
+  She was hanged on the seventh of July 1865, the first woman executed by the federal
+  government. How much she knew is still argued over by historians.
+
+  Near the end of his own life, Johnson is reported to have called her execution a crime.
+  He was the president who had declined to stop it.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Lincoln Conspirators"
+    publisher: "National Park Service, Ford's Theatre National Historic Site"
+    url: https://www.nps.gov/foth/learn/historyculture/the-lincoln-conspirators.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Johnson's Last Words on Mary Surratt"
+    publisher: "National Park Service, Andrew Johnson National Historic Site"
+    url: https://www.nps.gov/anjo/learn/historyculture/mary-surratt.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

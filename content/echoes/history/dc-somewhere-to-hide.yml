@@ -1,0 +1,54 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: The Rotunda of the National Archives Museum, entered from Constitution Avenue NW.
+# Position: Overture's "National Archives Rotunda" point (38.89244, -77.02309), which sits inside the building footprint between the Constitution Avenue and Pennsylvania Avenue entries for 700 Pennsylvania Ave NW (high confidence).
+id: dc-somewhere-to-hide
+title: "Somewhere to Hide"
+summary: "The Declaration of Independence spent a century on show, until it was taken down for fading."
+place: "Rotunda for the Charters of Freedom, National Archives Museum, Washington, D.C."
+at: { lat: 38.89240, lng: -77.02305 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, national-archives, declaration-of-independence]
+teaser: "Find the Declaration of Independence, and look closely at the ink."
+script: |
+  Inside the rotunda, find the Declaration of Independence, and look closely at the ink.
+
+  For most of its life this sheet was not kept in the dark. It was a display piece. For
+  years it was on show in the Patent Office, a few blocks north of here, alongside George
+  Washington's camp tent. In 1876 it went to Philadelphia for the Centennial Exhibition.
+  Then it came back to a cabinet in the State Department's library.
+
+  In 1894 it was taken off display, because it was fading.
+
+  It spent the next quarter of a century in storage. In 1921 it went to the Library of
+  Congress. After Pearl Harbor it went to Fort Knox. In 1951 the Library tried sealing it in
+  a case filled with helium.
+
+  On the thirteenth of December 1952 it came here, with the Constitution, in an armored
+  carrier escorted by tanks.
+
+  Under the display cases, the Archives had built a fifty-ton safe of steel and concrete,
+  with its own elevator. Every night the documents could be lowered into a vault, out of
+  the light, and raised again in the morning.
+
+  After more than a century of being looked at, the first thing it got in its new home was
+  somewhere to hide.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "How the National Archives Became Home to the US Constitution, Declaration of Independence, and Bill of Rights"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/how-the-national-archives-became-home-to-the-us-constitution-declaration-of-independence-and-bill-of-rights.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "\"The Honor of Your Company is Requested\": Lincoln's Second Inaugural Ball at the Patent Office (Teaching with Historic Places)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/-the-honor-of-your-company-is-requested-lincoln-s-second-inaugural-ball-at-the-patent-office.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

@@ -1,0 +1,54 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Public sidewalk on the south side of H Street NW, beside the brick service wing that runs west from Decatur House.
+# Position: H Street sidewalk just west of the Jackson Place corner; Overture's Decatur House entries (1610 H St and 748 Jackson Pl, 38.90011-38.90019, -77.03843) cluster at the corner, and St. John's Church across H Street sits at 38.90041 (medium confidence).
+id: dc-three-names-for-one-wing
+title: "Three Names for One Wing"
+summary: "The brick wing beside Decatur House has been described three ways. The first was right."
+place: "Decatur House, H Street and Jackson Place, Washington, D.C."
+at: { lat: 38.90020, lng: -77.03870 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 57
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, lafayette-square, slavery]
+teaser: "Look at the brick wing that runs back from Decatur House along H Street."
+script: |
+  Look at the brick wing that runs back from Decatur House, along H Street.
+
+  It has been described three different ways.
+
+  In nineteen-oh-three, a newspaper story about this house put it plainly. On H Street, it
+  said, is a long addition, formerly slave quarters.
+
+  A federal survey of the building chose a gentler phrase. Grouped around the garden, it
+  says, are the original servants' quarters, stables and carriage houses.
+
+  In twenty eleven, historians began a new study of the wing. The report that came out of
+  it, filed with that same federal survey, calls it the slave wing.
+
+  Now turn around and look at the park. The National Park Service keeps a list of what that
+  ground has been used for. A race track. A graveyard. A slave market.
+
+  Three names for one wing. The newspaper had it right the first time.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Decatur House, 748 Jackson Place Northwest, HABS DC-16, written historical and descriptive data and 2011 addendum"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/dc0085/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Beale Homestead, Daily Kennebec Journal, April 13, 1903, image 2"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82014248/1903-04-13/ed-1/?sp=2
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Lafayette Park"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/lafayette-park.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

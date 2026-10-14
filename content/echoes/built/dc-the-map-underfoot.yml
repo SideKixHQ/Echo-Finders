@@ -1,0 +1,50 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: The open stone surface of Freedom Plaza, Pennsylvania Avenue between 13th and 14th Streets NW.
+# Position: Centre of the plaza; Overture's Freedom Plaza entry (38.89584, -77.03072) sits between 13th and 14th Streets as the NPS page describes, nudged west towards the middle of the inlaid plan (high confidence).
+id: dc-the-map-underfoot
+title: "The Map Underfoot"
+summary: "Freedom Plaza is paved with L'Enfant's plan of Washington. You can stand on the White House."
+place: "Freedom Plaza, Pennsylvania Avenue NW between 13th and 14th Streets, Washington, D.C."
+at: { lat: 38.89588, lng: -77.03085 }
+triggerRadiusKm: 0.06
+category: built
+format: short
+durationS: 52
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, pennsylvania-avenue, lenfant]
+teaser: "Look down. You are standing on a map."
+script: |
+  Look down. You are standing on a map.
+
+  The dark lines in the stone are streets and avenues. The curving edge is the shoreline of
+  the Potomac. Bronze plaques set into the pavement mark the places that matter.
+
+  It is the plan Pierre L'Enfant drew for this city in seventeen ninety-one. It was laid into
+  the stone of this plaza when the plaza opened in nineteen eighty.
+
+  Find Pennsylvania Avenue on the map. Follow it to the Capitol at one end, and the
+  President's house at the other.
+
+  Now look up. The plaza was built so that you can see the Capitol in one direction, and
+  the White House in the other.
+
+  The map is the promise. Lift your eyes, and you are standing in the city it turned into.
+editorial: draft
+factCheck: unchecked
+pronunciations:
+  - written: L'Enfant
+    say: lahn-FAHN
+sources:
+  - title: "Freedom Plaza"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/freedom-plaza.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Pershing Park, HALS DC-63, written historical and descriptive data"
+    publisher: "Library of Congress, Historic American Landscapes Survey"
+    url: https://www.loc.gov/item/dc1230/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

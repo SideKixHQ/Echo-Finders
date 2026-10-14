@@ -1,0 +1,63 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Public sidewalk on the south side of H Street NW at the edge of Lafayette Square, facing St. John's Church and its tower.
+# Position: Across H Street from Overture's St. John's Episcopal Church entry (38.90041, -77.03607), which agrees with the adjoining Ashburton House at the same address, 1525 H St NW (medium confidence).
+id: dc-the-other-revere
+title: "The Other Revere"
+summary: "The bell in the Church of the Presidents carries a famous name, but not the famous man."
+place: "St. John's Church, Lafayette Square, Washington, D.C."
+at: { lat: 38.90025, lng: -77.03612 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 57
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, lafayette-square, st-johns-church]
+teaser: "Look up at the tower of St. John's Church."
+script: |
+  Look up at the tower of St. John's Church, across H Street from the park.
+
+  Behind the louvres, there is a bell. It has hung there since eighteen twenty-two.
+
+  This is the church people call the Church of the Presidents. Benjamin Latrobe designed
+  it, James Madison was given a pew, and every president from Madison to Lincoln came here
+  to worship.
+
+  The bell carries a maker's mark. It reads, Revere, Boston, eighteen twenty-two.
+
+  Not Paul Revere. By then the family foundry had passed to his son, Joseph, and this is
+  his bell.
+
+  A federal survey of the church says what it is for. It rings the hours of worship. And it is
+  sounded on occasions of national interest.
+
+  The father is remembered for one night of raising the alarm. The son made something that
+  has been doing it here for two hundred years.
+editorial: draft
+factCheck: unchecked
+pronunciations:
+  - written: Latrobe
+    say: luh-TROHB
+sources:
+  - title: "St. John's Church, Sixteenth and H Streets Northwest, HABS DC-19, written historical and descriptive data"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/dc0235/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Lafayette Square, HABS DC-676, written historical and descriptive data"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/dc0784/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Lafayette Park"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/lafayette-park.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Paul Revere's House, Bill Barlow's Budget, September 20, 1905, image 7"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn92067125/1905-09-20/ed-1/?sp=7
+    retrievedAt: "2026-10-14"
+    rights: public-domain

@@ -1,0 +1,65 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: East Front plaza of the Capitol, with the Statue of Freedom visible on top of the dome.
+# Position: East Front plaza, about 100 m east of the Rotunda centre; estimated from the Capitol's known footprint and cross-checked against Overture entries for the Capitol Visitor Center and Statuary Hall (medium confidence).
+id: dc-the-man-who-found-the-bolts
+title: "The Man Who Found the Bolts"
+summary: "The statue on top of the Capitol is called Freedom. The man who got her out of the plaster was enslaved."
+place: "Statue of Freedom, U.S. Capitol East Front, Washington, D.C."
+at: { lat: 38.88990, lng: -77.00770 }
+triggerRadiusKm: 0.06
+category: people
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, capitol, slavery, sculpture]
+teaser: "Look up past the dome, to the bronze figure on the very top."
+script: |
+  Look up past the dome, to the bronze figure standing on the very top.
+
+  She is called Freedom. She is nineteen and a half feet tall, and she weighs about fifteen
+  thousand pounds.
+
+  Before she was bronze, she was plaster. The sculptor, Thomas Crawford, made the full-size
+  model in his studio in Rome, and died before it left. It crossed the Atlantic in six
+  crates. Here, an Italian craftsman put the pieces together so cleverly that nobody could
+  see the joints.
+
+  Then it had to come apart again, to be cast. By one account, the craftsman refused to
+  separate it unless he was paid a great deal more. Only he knew where the bolts were
+  hidden.
+
+  The casting had gone to Clark Mills, whose foundry stood out on the Bladensburg road.
+  Mills owned a man named Philip Reid.
+
+  Reid rigged a pulley to an iron eye in the statue's head. He strained the rope gently,
+  until the seams showed themselves one by one. Then he found the bolts, scraped away the
+  plaster, and took them out. The model came apart, ready for the foundry.
+
+  In December 1863 the last section, her head and shoulders, was raised up there to a
+  salute of thirty-five guns.
+
+  The statue is called Freedom. The man who freed her from the plaster was not free.
+pronunciations:
+  - written: Reid
+    say: REED
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "[Model for the Statue of Freedom]"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/2023631991/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "U.S. Capitol, Statue of Freedom (HABS DC-38-C)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/dc1054/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Sixty-Seven-Year Reign of Freedom, Evening Star, December 14, 1930"
+    publisher: "The Evening Star, via Library of Congress Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1930-12-14/ed-1/?sp=94
+    retrievedAt: "2026-10-14"
+    rights: public-domain

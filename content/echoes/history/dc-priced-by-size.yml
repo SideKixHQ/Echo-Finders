@@ -1,0 +1,62 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: First Street SE sidewalk at the Neptune Fountain, facing the Thomas Jefferson Building.
+# Position: Overture's Neptune Fountain point (38.88868, -77.00573) nudged onto the sidewalk; consistent with the Jefferson Building's First Street front (high confidence).
+id: dc-priced-by-size
+title: "Priced by Size"
+summary: "After the British burned Congress's library, it bought Thomas Jefferson's instead, and worked out the price from the size of the books."
+place: "Thomas Jefferson Building, Library of Congress, Washington, D.C."
+at: { lat: 38.88870, lng: -77.00560 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, library-of-congress, jefferson, war-of-1812]
+teaser: "Upstairs in this building is a room of old books in a slightly strange order."
+script: |
+  Look at the building behind the fountain. Upstairs, on the second floor, is a room of old
+  books arranged in a slightly strange order.
+
+  In August 1814 the British burned the Capitol, and with it the library of Congress. About
+  three thousand books.
+
+  Thomas Jefferson, retired at Monticello, owned the largest private collection of books in
+  the country. He offered to sell it, at whatever price Congress chose.
+
+  There were sharp debates. Some members complained that too many of the books were in
+  foreign languages, or about subjects that had nothing to do with Congress. Jefferson had
+  already answered that. There was, he wrote, no subject to which a member of Congress may
+  not have occasion to refer.
+
+  Congress bought them. Six thousand four hundred and eighty-seven volumes, for twenty-three
+  thousand nine hundred and fifty dollars.
+
+  The price was not worked out by title, or by rarity. It was based on measurements of the
+  size of the books.
+
+  On Christmas Eve 1851, another fire in the Capitol destroyed nearly two thirds of them.
+  The room upstairs is the library rebuilt the way Jefferson arranged it, around some two
+  thousand survivors.
+
+  The largest library in the world grew out of one man's bookshelves, priced by size.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Jefferson's Library (Thomas Jefferson exhibition)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/exhibits/jefferson/jefflib.html
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Exhibition Overview - Thomas Jefferson's Library"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/exhibits/thomas-jeffersons-library/overview.html
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Exhibitions (current: Thomas Jefferson's Library, Southwest Pavilion, Second Floor, ongoing)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/exhibits/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

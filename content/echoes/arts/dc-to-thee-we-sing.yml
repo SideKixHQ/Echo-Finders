@@ -1,0 +1,52 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: The plaza at the foot of the Lincoln Memorial steps, where the 1939 crowd stood, looking up at the statue.
+# Position: Estimated ~110 m east of the memorial's centre (38.88927, -77.05014, Overture), between the steps and the west end of the Reflecting Pool (medium confidence).
+id: dc-to-thee-we-sing
+title: "To Thee We Sing"
+summary: "Refused a concert hall, Marian Anderson sang from the Lincoln Memorial steps in 1939, and changed one line of her first song."
+place: "Lincoln Memorial steps, Washington, D.C."
+at: { lat: 38.88929, lng: -77.04888 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 63
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, national-mall, civil-rights, music, lincoln-memorial]
+teaser: "Stand at the foot of the steps and look up at the statue in the doorway."
+script: |
+  Stand at the foot of the steps and look up at the statue in the doorway.
+
+  On Easter Sunday, the ninth of April 1939, a singer stood up there with Lincoln at her
+  back and a row of microphones in front of her.
+
+  Her name was Marian Anderson. Toscanini had said a voice like hers came along once in a
+  hundred years. She had already sung at the White House.
+
+  She could not sing at Constitution Hall, which is nearby. Its owners, the Daughters of
+  the American Revolution, barred Black performers, and they would not make an exception.
+  A mostly white high school turned her down as well.
+
+  So these steps were offered instead. The concert was free. About seventy-five thousand
+  people came, of every race, and NBC radio carried it live across the country.
+
+  She opened with America. My country, 'tis of thee.
+
+  The song says, of thee I sing.
+
+  She sang, to thee we sing.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Other Notable Figures: Marian Anderson"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/linc/learn/historyculture/other-notable-figures.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "NBC Radio Coverage of Marian Anderson's Recital at the Lincoln Memorial (April 9, 1939), National Recording Registry essay by Cary O'Dell"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/MarianAndersonLincolnMem.pdf
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts

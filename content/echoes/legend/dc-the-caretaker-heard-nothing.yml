@@ -1,0 +1,57 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Public sidewalk on 18th Street NW beside the Octagon's garden wall, north of the corner entrance.
+# Position: 18th Street sidewalk about 30 m north of the New York Avenue corner, beside Overture's Octagon Museum entry (38.89632, -77.04154) (medium confidence).
+id: dc-the-caretaker-heard-nothing
+title: "The Caretaker Heard Nothing"
+summary: "In 1897 the Octagon was the most famous haunted house in Washington. The man living in it laughed."
+place: "The Octagon, 18th Street and New York Avenue NW, Washington, D.C."
+at: { lat: 38.89648, lng: -77.04170 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 77
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven.
+  The only source is an 1897 newspaper account of what people claimed; no supernatural
+  claim is established, and the caretaker's denial is quoted from the same article.
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, octagon, ghosts]
+teaser: "Look at the old brick walls of the Octagon from the Eighteenth Street side."
+script: |
+  Look at the old brick walls of the Octagon from the Eighteenth Street side.
+
+  In April eighteen ninety-seven, a Washington newspaper said this had long been the most
+  noted of the haunted houses in the city.
+
+  This is a legend. Nothing in it has ever been proven. It is only what people said.
+
+  And people said a great deal. Doors and windows that opened when they were shut, and shut
+  when they were opened. A woman's shriek. The clank of sabres. Heavy footsteps. Groans and
+  cries from the passage by the back stairs. And an officer who died in an upper room,
+  whose blood, the story went, could still be heard dripping from the mantelpiece.
+
+  At the time, the house stood neglected. A caretaker lived in it, rent free and unpaid,
+  with his son. They slept in the room where Dolley Madison had once held her receptions.
+
+  The reporter asked him about the ghosts. He laughed.
+
+  If there are any ghosts here, he said, I have never heard or seen them. The only ghosts
+  that haunt this house exist in people's imagination.
+
+  Everyone else told stories about this house. He slept in it.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Octagon House, The Times (Washington), April 11, 1897, image 20"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn85054468/1897-04-11/ed-1/?sp=20
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Octagon House"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/octagon-house.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

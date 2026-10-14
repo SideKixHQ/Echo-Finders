@@ -1,0 +1,61 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: The landing below the top flight of the Lincoln Memorial steps, at the engraved stone.
+# Position: Estimated ~40 m east of the memorial's centre (38.88927, -77.05014, Overture) along the steps' axis; NPS places the stone "on the landing below the white marble steps" but publishes no coordinates (medium confidence).
+id: dc-the-part-he-didnt-write
+title: "The Part He Didn't Write"
+summary: "A stone on the Lincoln Memorial landing marks where King stood, and the most famous part of his speech was not in his text."
+place: "Lincoln Memorial steps, Washington, D.C."
+at: { lat: 38.88927, lng: -77.04968 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 72
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, national-mall, civil-rights, lincoln-memorial]
+teaser: "Look down at the landing, just below the top flight of steps."
+script: |
+  Look down at the landing, just below the top flight of steps.
+
+  One stone here is engraved. It marks where Martin Luther King Junior stood on the
+  twenty-eighth of August, 1963.
+
+  It was late afternoon. More than a quarter of a million people were out there. Many of
+  them had come a long way by bus and by train, and they had already sat through a long
+  list of speakers.
+
+  King had a prepared text. A promissory note. A bad check, come back marked insufficient
+  funds.
+
+  He was near the end of it, telling people to go home and keep up the fight, when a voice
+  called out from just off to the side. It was his friend, the gospel singer Mahalia
+  Jackson.
+
+  Tell them about the dream, Martin.
+
+  What came next was not on the page. He improvised it.
+
+  Stand on the landing and look out the way he did, down the length of the water toward
+  the Washington Monument.
+
+  The part of that speech everyone can still recite is the part he had not planned to say.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Other Notable Figures: Martin Luther King, Jr."
+    publisher: "National Park Service"
+    url: https://www.nps.gov/linc/learn/historyculture/other-notable-figures.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "\"I Have a Dream\" Speech by Dr. Martin Luther King, Jr. (August 28, 1963), National Recording Registry essay by Gregory Alan Barnes"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/IHaveADream.pdf
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Exterior Features: Lincoln Memorial"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/linc/learn/historyculture/exterior-features.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

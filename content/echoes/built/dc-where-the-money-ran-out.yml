@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Monument grounds just east of the base, where the colour change a third of the way up is plain to see.
+# Position: About 55 m east of the obelisk's centre (38.88947, -77.03525, Overture and known layout agree) (high confidence).
+id: dc-where-the-money-ran-out
+title: "Where the Money Ran Out"
+summary: "The color change a third of the way up the Washington Monument is a twenty-year pause and three different quarries."
+place: "Washington Monument, Washington, D.C."
+at: { lat: 38.88949, lng: -77.03462 }
+triggerRadiusKm: 0.08
+category: built
+format: short
+durationS: 76
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, national-mall, monuments]
+teaser: "Look up at the monument, about a third of the way."
+script: |
+  Look up at the monument, about a third of the way.
+
+  There is a line. Below it the marble is one shade, and above it, another. Right at the
+  line there is a narrow band of something browner.
+
+  Nobody designed that.
+
+  The first stones went up in 1848, paid for by a private society that never had enough
+  money. By 1854 the society was bankrupt, and the work stopped at one hundred and
+  fifty-six feet.
+
+  Then it stayed that way. Through the Civil War and for more than twenty years, the
+  monument to the father of the country stood half built on the Mall.
+
+  When the government finally took it over, the old quarry near Baltimore was no longer
+  available. The builders tried stone from Massachusetts. They had trouble with its color,
+  laid a few courses of it anyway, and then switched to a third quarry for everything above.
+
+  The stones never matched exactly, and the weather has been pulling them apart in color
+  ever since.
+
+  When it was finished, this was the tallest building in the world. And you can still see
+  exactly where it ran out of money.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "History & Culture: Washington Monument"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/wamo/learn/historyculture/index.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Frequently Asked Questions: Why does the color change on the outside of the monument?"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/wamo/faqs.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

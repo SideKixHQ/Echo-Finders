@@ -1,0 +1,60 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Inside Union Station, where the main hall opens onto the train concourse.
+# Position: Main hall / concourse junction, between Overture's Union Station food court (38.89783, -77.00607) and station entries at 50 Massachusetts Ave NE; NOT the misplaced Overture "Washington DC Union Station" point (medium confidence).
+id: dc-the-engine-under-the-floor
+title: "The Engine Under the Floor"
+summary: "In 1953 a runaway express crashed through Union Station's concourse floor, days before an inauguration."
+place: "Union Station concourse, Washington, D.C."
+at: { lat: 38.89770, lng: -77.00630 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, union-station, railways]
+teaser: "Walk through to the concourse behind the main hall, and look at the floor."
+script: |
+  Walk through to the great concourse behind the main hall, and look at the floor.
+
+  On the morning of the fifteenth of January 1953, the Pennsylvania Railroad's Federal
+  Express was running in from Boston, full of visitors for the presidential inauguration.
+
+  By the railroad's account, as the train came into the Washington yards, the engineer found
+  that his brakes had failed completely. He sounded the horn in short blasts. A dispatcher in
+  a signal tower saw the train race past and sent a warning ahead.
+
+  Station staff had less than two minutes to clear the concourse.
+
+  The train ran off the end of the track at an estimated fifty miles an hour, crossed the
+  platform and smashed through the barrier. The locomotive broke through this floor and
+  dropped into the basement. Clocks stopped by the impact read eight thirty-six.
+
+  Forty-three people were hurt.
+
+  The inauguration was days away, so the engine stayed where it was. Crews built a wooden
+  floor over the hole and surfaced it with quick-drying asphalt. According to a station
+  attendant, they even spread sooty dust over it, so it would match the rest.
+
+  That week, thousands of visitors walked across this concourse with no idea that a giant
+  locomotive was lying on its side beneath their feet.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Runaway Train Rams Station, 40 Hurt, Evening Star, January 15, 1953, page A-1"
+    publisher: "The Evening Star, via Library of Congress Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1953-01-15/ed-1/?sp=1
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Station Rushes Repairs for Inauguration; Engine Still Lies in Basement, Sunday Star, January 18, 1953, page A-12"
+    publisher: "The Evening Star, via Library of Congress Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1953-01-18/ed-1/?sp=12
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Union Station, 50 Massachusetts Avenue Northeast (HABS DC-139)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/dc0254/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

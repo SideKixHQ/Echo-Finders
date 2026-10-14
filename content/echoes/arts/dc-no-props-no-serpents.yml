@@ -1,0 +1,64 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Path beside the Jackson statue at the centre of Lafayette Square.
+# Position: A few metres south of Overture's General Andrew Jackson Statue entry (38.89957, -77.03659), on the White House axis at the centre of the square, as the NPS page describes (high confidence).
+id: dc-no-props-no-serpents
+title: "No Props, No Serpents"
+summary: "The Jackson statue was cast by a man who had never seen an equestrian statue. Look at what holds it up."
+place: "Andrew Jackson statue, Lafayette Square, Washington, D.C."
+at: { lat: 38.89950, lng: -77.03660 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 73
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, lafayette-square, sculpture]
+teaser: "Look under the horse."
+script: |
+  Look under the horse.
+
+  Andrew Jackson's horse is rearing. Its front hooves are in the air. Fifteen tons of
+  bronze, balanced on the back legs.
+
+  The man who made it, Clark Mills, was a former ornamental plasterer from South Carolina.
+  He had never seen Jackson. He had never seen an equestrian statue either.
+
+  He built a furnace near this park and cast the whole thing himself, in ten pieces. The
+  horse alone took six castings before the final one was done.
+
+  To learn how a horse rears, he bought a retired racehorse named Olympus. He taught it to
+  stand on its hind legs, so that he could watch how it was done.
+
+  The statue was unveiled on the eighth of January, eighteen fifty-three. It was the first
+  equestrian statue cast in the United States. Stephen Douglas gave the speech, and he
+  compared it with the famous horses of Europe. Peter the Great's horse leans on a bronze
+  serpent. Wellington's has its hind legs and tail riveted to the pedestal.
+
+  Of this one, Douglas said: no props. No serpents.
+
+  Look under the horse again.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "General Andrew Jackson Statue"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/general-andrew-jackson-statue.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Lafayette Square, HABS DC-676, written historical and descriptive data"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/dc0784/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Jackson statue feature by Edward Boykin, Evening Star Pictorial Magazine, January 4, 1953, image 140"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1953-01-04/ed-1/?sp=140
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Jackson statue and the 1853 Douglas oration, Evening Star, April 19, 1936, image 54"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1936-04-19/ed-1/?sp=54
+    retrievedAt: "2026-10-14"
+    rights: public-domain
