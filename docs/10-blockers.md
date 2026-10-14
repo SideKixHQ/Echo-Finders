@@ -14,11 +14,12 @@ decision that settled them.
 - [x] ~~**Who reviews and approves content?**~~ James (2026-10-13): "i give you content after review
   or i review it when you create it." Content James supplies arrives reviewed; content Claude
   drafts is reviewed by James before approval.
-- [ ] **Consumers first, or airlines?** The airline cycle is "measured in quarters" (ADR-0007).
+- [x] ~~**Consumers first, or airlines?**~~ Consumers first (James, 2026-10-14): "i will try to sell
+  to airlines and we can adapt at that time." Airline work (#8) waits for a buyer.
 - [ ] Is a **native iOS shell** acceptable for walking if screen-lock defeats the web app? James
   (2026-10-13) already has an Apple developer account and accepts the App Store's 15%.
-- [ ] **Approve pricing.** Proposed: City Pass $9.99 once, All-Access $34.99 a year, web checkout
-  only (`03-selling.md`). Shown on the prototype paywall; nothing is charged until Stripe lands.
+- [x] ~~**Approve pricing.**~~ Approved (James, 2026-10-14): City Pass $9.99 once, All-Access $34.99 a
+  year, web checkout only (`03-selling.md`). Charged once the Stripe keys are in Vercel.
 
 ## Tier 1: blocks a real public launch
 
@@ -37,14 +38,14 @@ decision that settled them.
 |---|---|---|
 | 6 | **No backend.** No accounts, ~~payments~~ (Stripe Checkout for the City Pass and All-Access is built in `api/` and switches on when the keys are in Vercel, `DEPLOY.md` Payments; until accounts exist Stripe is the record and Restore works only on the phone that bought), analytics, error reporting (Sentry listed, not wired), database. | `03-selling.md:69-78`, `01-services.md:86-97` |
 | 7 | ~~**Map tiles.** MapTiler vs Protomaps undecided ("decide it with a spike"). Per-load tiles ~ $250/mo at 100k users, against ~$75/mo for everything else.~~ Decided (James, 2026-10-09): navy style; built 2026-10-10. Settled 2026-10-12 (ADR-0019): built from Overture's open data around every echo and served with the app from Vercel, no R2 and no upload. Esri is no longer drawn. | `01-services.md:101-107`, `02-costs.md` |
-| 8 | **Airlines.** Seatback browsers (Panasonic, Thales) untested on real hardware; emulated 2026-10-13 and seat mode built (ADR-0020: full-screen landscape layout, fonts and coastlines served with the app); aircraft position feed assumed, not secured; indemnification open. Flight corridor query is 944 ms at 50k echoes (urgent around 5,000). | ADR-0001/0002/0012, `01-services.md:58-73` |
+| 8 | **Airlines.** Seatback browsers (Panasonic, Thales) untested on real hardware; emulated 2026-10-13 and seat mode built (ADR-0020: full-screen landscape layout, fonts and coastlines served with the app); aircraft position feed assumed, not secured; indemnification open. **Waits for the first airline buyer** (consumers first, James 2026-10-14). How, then: the position comes from the airline itself, through its in-flight entertainment or Wi-Fi portal (Panasonic, Thales, Viasat, Intelsat each publish an onboard flight-data feed to approved partners), asked for in the pilot agreement; until then the app keeps estimating position from the schedule. Indemnification is a contract clause: we cover our content (backed by media liability insurance), the airline covers its systems and passengers; a lawyer drafts it from `protection-policy.md`, question 1. Flight corridor query is 944 ms at 50k echoes (urgent around 5,000). | ADR-0001/0002/0012, `01-services.md:58-73` |
 | 9 | **The numbers disagree.** Contribution per customer is $15.25 or $5.85 (break-even 17 or 43 customers/month; plan on 43). Infrastructure is $250/mo in one doc, $75 in another. Several prices are from memory. | `03-selling.md:25-36`, `02-costs.md:185-187` |
 
 ## Tier 3: slows how we build
 
 | # | Blocker | Status |
 |---|---|---|
-| 10 | **Cloud sandbox network** blocks loc.gov, nypl.org, wikimedia.org, nps.gov, si.edu, wikidata.org, api.elevenlabs.io: research, photos and audio. | Open. Allowlist them under the environment's Network access. |
+| 10 | **Cloud sandbox network** blocks wikimedia.org, si.edu, wikidata.org, api.elevenlabs.io: research, photos and audio. loc.gov, nypl.org and nps.gov answer (checked 2026-10-14). | James approved allowing them (2026-10-14); he adds them under the environment's Network access, Allowed domains. |
 | 11 | **Nothing can be checked on a real device from a session.** Sessions cannot reach `*.vercel.app` or a phone; every visual change needs James's eyes. | Open by nature. Screenshots plus a phone check per merge. |
 | 12 | **Weak safety nets.** CI skipped the audits; branch protection is off; the CODEOWNERS editorial team does not exist. | Audits move into CI with Playwright as a real dependency. Branch protection and the team are GitHub settings for James. |
 | 13 | **Stale docs.** Build plan said Phase 0; ADR-0005 vs 01-services on Postgres timing; ADR-0012 says `apps/*` does not exist. | Build plan marker updated with this doc; the ADR contradictions remain. |
