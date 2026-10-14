@@ -773,6 +773,9 @@ export function App() {
     setWalkingView("map");
     setBeacon(null);
     setLookFurtherKm(undefined);
+    // A planned walk is walked. Switching to Drive or Fly left its stops and dotted line
+    // on the map with nobody walking them (found 2026-10-13); it ends with the walk.
+    if (next !== "walking") setPlan(null);
     // Flying is somebody else's route and the door is locked, so there is
     // nothing to roam. On foot and driving both land on roaming, because
     // hunting is the thing you do without a route and it is the common case.
