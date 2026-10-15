@@ -100,17 +100,20 @@ function legendAccount(echo: Echo, source: Source): boolean {
 }
 
 /**
- * A draft may cite any credible source it links to; approval still needs the policy.
+ * Any credible source the echo links to, labelled as not clearly public domain.
  *
  * James (2026-10-09), sending a hundred downtown Wilmington stories whose sources are
  * mostly the places themselves (the Bellamy, the Burgwin-Wright House, Thalian Hall, the
- * railroad museum): allow credible sources for drafts, and keep the public-domain or CC-BY
- * bar for anything marked approved (ADR-0016). Facts are not copyrightable, so citing a
- * museum's page for a date infringes nothing. What the policy buys is an airline being able
- * to check every source with no licence question, and that only matters at approval.
+ * railroad museum): allow credible sources for drafts (ADR-0016). Facts are not
+ * copyrightable, so citing a museum's page for a date infringes nothing.
+ *
+ * James (2026-10-15), on the city drafts' newspapers after 1930 and Library of Congress
+ * essays: "Its ok if some sources arent clearly PD yet. Just state that." So the label is
+ * the statement, and approval no longer waits on replacing them. An approved echo citing
+ * one gets a warning, so the report still says which sources an airline would ask about.
  */
-function draftCitation(echo: Echo, source: Source): boolean {
-  return echo.editorial !== "approved" && source.rights === "fair-use-facts";
+function labelledCitation(source: Source, policy: ContentPolicy): boolean {
+  return source.rights === "fair-use-facts" && !policy.allowedRights.includes(source.rights);
 }
 
 export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): ValidationIssue[] {
@@ -203,11 +206,17 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
           "a place's own account of its legend must link to it, so anyone can read where the story comes from",
         );
       }
-    } else if (draftCitation(echo, source)) {
+    } else if (labelledCitation(source, policy)) {
       if (!source.url) {
         error(
           `sources[${i}].url`,
-          "a draft citing a source outside the policy must link to it, so a reviewer can open it",
+          "a source that is not clearly public domain must link to it, so a reviewer can open it",
+        );
+      }
+      if (echo.editorial === "approved") {
+        warn(
+          `sources[${i}].rights`,
+          "not clearly public domain: allowed because it is labelled, and listed here for anyone checking rights",
         );
       }
     } else if (!policy.allowedRights.includes(source.rights)) {

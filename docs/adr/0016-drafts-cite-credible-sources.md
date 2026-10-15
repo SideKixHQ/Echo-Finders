@@ -28,8 +28,12 @@ Enforced by `validateEcho`:
 
 1. **Drafts** may cite any credible source as `rights: fair-use-facts`, provided it has a
    `url` a reviewer can open.
-2. **Approval** still needs every source to pass `MVP_POLICY`. Before approval, a
-   museum-sourced claim has to be backed by a public record, or cut.
+2. ~~**Approval** still needs every source to pass `MVP_POLICY`. Before approval, a
+   museum-sourced claim has to be backed by a public record, or cut.~~ Superseded
+   (James, 2026-10-15): "Its ok if some sources arent clearly PD yet. Just state that."
+   An approved echo may keep a linked `fair-use-facts` source; the label is the statement,
+   and the validator lists each one as a warning so anyone checking rights can find it.
+   CC-BY-SA and `licensed` are still refused.
 3. **Legends** are the exception at approval too. An echo that is `legend` in both
    category and certainty may keep the place's own linked account of its legend, because
    that account is exactly what the claim is about. Anything a legend states as history,
