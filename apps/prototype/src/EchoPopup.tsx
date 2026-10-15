@@ -28,6 +28,8 @@ import { CATEGORY_LABEL } from "./categories";
 import { platePng } from "./archive-plate";
 import type { PinState } from "./RouteMap";
 import { CrimeNote, TruthMark } from "./TruthMark";
+import { driveThereUrl } from "./drive-there";
+import { MODE_ICON } from "./travel";
 
 export interface EchoPopupProps {
   readonly echo: Echo;
@@ -236,7 +238,25 @@ export function EchoPopup({
         syncs" and then offered to take you there, which is the screen disagreeing with
         itself in two adjacent sentences. There is nowhere to walk from here.
       */}
-      {onAim && !synced && !withinReach && (
+      {/*
+        Drive there. A driver is not walked anywhere by the beacon: the drive goes to their
+        own maps app (`drive-there.ts`), and the story keeps playing here.
+      */}
+      {mode === "driving" && !synced && !withinReach && (
+        <a
+          className="pop-aim"
+          href={driveThereUrl(echo.point.at, echo.point.place.split(",")[0])}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            {MODE_ICON.driving}
+          </svg>
+          Drive there
+        </a>
+      )}
+
+      {onAim && mode !== "driving" && !synced && !withinReach && (
         <button
           className={aimed ? "pop-aim on" : "pop-aim"}
           onClick={() => onAim(echo)}

@@ -2643,6 +2643,8 @@ body {
 }
 .pop-aim svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
 .pop-aim:hover { filter: brightness(1.1); }
+/* Drive there is a link out to the phone's maps app, styled as the same button. */
+a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* Already following it: aqua, because it is a state you are in rather than an act.
    Pressing it again lets go, which is why it stays a button rather than becoming a label. */
 .pop-aim.on {
