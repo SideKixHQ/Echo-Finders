@@ -1,0 +1,57 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public sidewalk on Phillips Street outside number 66. The house is a private residence and is not open to the public.
+# Position: Overture "Lewis and Harriet Hayden House" point (66 Phillips St), consistent with neighbouring addresses 57 and 60 Phillips St (medium confidence).
+id: boston-hayden-house-keg
+title: "A Keg Under the House"
+summary: "When slave catchers came for William and Ellen Craft, the Haydens' house had an answer waiting in the cellar."
+place: "Lewis and Harriet Hayden House, 66 Phillips Street, Beacon Hill, Boston, Massachusetts"
+at: { lat: 42.36024, lng: -71.06908 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 77
+visibility: at-hand
+certainty: documented
+certaintyNote: >-
+  The gunpowder keg rests on William Craft's own later account, quoted by Henry Ingersoll
+  Bowditch and cited by the National Park Service. The script attributes it to him and says
+  no other record of the keg is known to us.
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, black-heritage-trail, beacon-hill, underground-railroad, abolition]
+teaser: "This is sixty-six Phillips Street. Please look from the sidewalk."
+script: |
+  This is sixty-six Phillips Street. It is a private home, so please look from the
+  sidewalk.
+
+  In eighteen fifty it was a boarding house run by Lewis and Harriet Hayden. Both had
+  escaped slavery in Kentucky. Lewis was out in the city. Harriet almost certainly ran the
+  house. Between them it became the busiest Underground Railroad safe house in Boston.
+
+  That summer, the census found two famous guests living here. William and Ellen Craft had
+  escaped from Georgia, Ellen dressed as a white slaveholder and William posing as her slave.
+
+  That autumn, under the new Fugitive Slave Law, slave catchers came to Boston looking for
+  them. It was the city's first test of the law.
+
+  What happened next is William Craft's own account. He said that he and Lewis Hayden had a
+  keg of gunpowder under this house, with a fuse attached, ready to light if anyone tried to
+  take them. That is his word. No other record of the keg survives that we know of.
+
+  Nobody tried. The slave catchers gave up.
+
+  An abolitionist paper later explained why. The marshal knew that the road to hell lay over
+  Lewis Hayden's threshold.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Lewis and Harriet Hayden House"
+    publisher: "National Park Service, Boston African American National Historic Site"
+    url: https://www.nps.gov/boaf/learn/historyculture/lewis-and-harriet-hayden-house.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Lewis and Harriet Hayden House"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/lewis-and-harriet-hayden-house.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

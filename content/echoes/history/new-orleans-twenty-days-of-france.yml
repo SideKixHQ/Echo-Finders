@@ -1,0 +1,67 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Inside Jackson Square on the walk near the Cabildo corner, facing the Cabildo's pediment.
+# Position: Grid offset from the Overture Jackson Square centre toward the Overture Cabildo point (Cabildo stands left of the cathedral as you face it) (medium confidence).
+id: new-orleans-twenty-days-of-france
+title: "Twenty Days of France"
+summary: "In 1803 Louisiana passed from Spain to France in the Cabildo, and twenty days later from France to the United States."
+place: "The Cabildo, Jackson Square, New Orleans, Louisiana"
+at: { lat: 29.95739, lng: -90.06353 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 94
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, jackson-square, french-quarter, louisiana-purchase]
+teaser: "There is an eagle over the Cabildo's arches. It was not there yet on the day that matters."
+script: |
+  Face the Cabildo, the arcaded building to the left of the cathedral. Look up at the triangle above its centre arches. There is an eagle carved in it.
+
+  That eagle was not there yet on the day that matters.
+
+  In November eighteen oh three, Louisiana was still Spanish. Spain had already agreed to hand it back to France, and the city already knew that France had sold it on to the United States.
+
+  On the thirtieth of November, in the council chamber upstairs, the Spanish governor handed the colony to a French official named Laussat. Out in this square, the Spanish flag came down and the French tricolour went up.
+
+  It stayed up for twenty days.
+
+  On the twentieth of December, the American commissioners rode into the square at the head of their troops. They went up to the same building, and Laussat gave them the keys of the city. Then they all walked out onto the gallery up there to watch the flags change again.
+
+  A guard of about fifty old French soldiers had kept watch over their flag for those three weeks. As it came down, they took it in their arms, and marched away with it in silence.
+
+  The eagle was carved into that triangle eighteen years later. By then, nobody needed telling whose building it was.
+pronunciations:
+  - written: Cabildo
+    say: kah-BEEL-doh
+  - written: Laussat
+    say: loh-SAH
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Cabildo, 711 Chartres Street, New Orleans (HABS LA-18-4), written historical and descriptive data"
+    publisher: "Historic American Buildings Survey, National Park Service; Library of Congress"
+    url: https://www.loc.gov/item/la0007/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "New Orleans, the place and the people (1895)"
+    publisher: "Grace King, Macmillan, 1895; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/01008773/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "A history of Louisiana (1905)"
+    publisher: "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/34036146/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Presbytere, Jackson Square, New Orleans (HABS LA-18-5), written historical and descriptive data"
+    publisher: "Historic American Buildings Survey, National Park Service; Library of Congress"
+    url: https://www.loc.gov/item/la0008/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Louisiana Purchase Transfer Document"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/louisiana-purchase-transfer-document.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

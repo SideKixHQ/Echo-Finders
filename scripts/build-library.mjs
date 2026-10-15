@@ -180,8 +180,18 @@ if (blocking.length > 0) {
 // nothing about the other four.
 const routeFiles = (await readdir(join(ROOT, "content", "routes"))).filter((f) => /\.ya?ml$/.test(f)).sort();
 const routes = [];
+// A drive's traced road, when `scripts/build-route-paths.py` has written one beside it.
+const pathOf = async (id) => {
+  try {
+    const traced = JSON.parse(await readFile(join(ROOT, "content", "routes", `${id}.path.json`), "utf8"));
+    return traced.path.map(([lat, lng]) => ({ lat, lng }));
+  } catch {
+    return null;
+  }
+};
 for (const file of routeFiles) {
   const route = parseYaml(await readFile(join(ROOT, "content", "routes", file), "utf8"));
+  const path = await pathOf(route.id);
   routes.push({
     id: route.id,
     mode: route.mode,
@@ -194,10 +204,23 @@ for (const file of routeFiles) {
     // an editorial one. The prototype needs a fixed one so its simulated clock is stable.
     departureAt: "2026-06-15T14:00:00Z",
     ...(route.cruiseAltitudeFt ? { cruiseAltitudeFt: route.cruiseAltitudeFt } : {}),
+    ...(path ? { path } : {}),
   });
 }
 
 const verified = echoes.filter(isVerified).map((echo) => echo.id);
+
+// Routes as readable JSON, except a traced road, which is a thousand points and goes on
+// one line rather than four thousand.
+function routesJson(list) {
+  const paths = [];
+  const text = JSON.stringify(
+    list.map((r) => (r.path ? { ...r, path: `@@path${paths.push(r.path) - 1}@@` } : r)),
+    null,
+    2,
+  );
+  return text.replace(/"@@path(\d+)@@"/g, (_, i) => JSON.stringify(paths[Number(i)]));
+}
 
 await mkdir(dirname(OUT), { recursive: true });
 await writeFile(
@@ -209,7 +232,7 @@ await writeFile(
     `// something to play. The real library in content/ is untouched and still awaiting\n` +
     `// human fact-checking. Never import this into anything that ships.\n` +
     `export const LIBRARY: readonly Echo[] = ${JSON.stringify(demo, null, 2)} as const;\n\n` +
-    `export const ROUTES: readonly Route[] = ${JSON.stringify(routes, null, 2)} as const;\n\n` +
+    `export const ROUTES: readonly Route[] = ${routesJson(routes)} as const;\n\n` +
     `// What a person has really checked, as authored, before the demo override above. The\n` +
     `// "true story" mark reads this, never the overridden status (\`truth.ts\` in the engine).\n` +
     `export const VERIFIED_IDS: ReadonlySet<string> = new Set(${JSON.stringify(verified)});\n`,

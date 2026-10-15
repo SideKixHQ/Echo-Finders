@@ -1,0 +1,53 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Outside the south end of the Liberty Bell Center, where the bell is visible through the glass with Independence Hall behind it.
+# Position: Overture "Liberty Bell" (39.94962, -75.15029, 526 Market St) is the building centre; moved about 30 m south to the glass at the Chestnut Street end (medium confidence).
+id: philadelphia-the-crack-is-the-repair
+title: "The Crack Is the Repair"
+summary: "The wide crack in the Liberty Bell was drilled out on purpose in 1846, as a repair that failed."
+place: "Liberty Bell Center, Independence Mall, Philadelphia, Pennsylvania"
+at: { lat: 39.94935, lng: -75.15030 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, independence-mall, liberty-bell, abolition]
+teaser: "Look along the edges of the crack. They are not clean breaks."
+script: |
+  Find the bell, and look at the crack.
+
+  It is wide and dark, and it may be the best known flaw in the country. Now look along its edges. They are not clean breaks. They are a row of little round scallops.
+
+  Nobody wrote down when the bell first cracked. The likeliest answer is the early eighteen forties, after almost ninety years of hard use. A thin split, easy to miss.
+
+  In eighteen forty-six the city wanted the bell rung for Washington's birthday. So metal workers drilled out the thin crack and widened it on purpose, to stop it spreading and to bring the tone back. Those scallops are their drill holes. The Park Service counts more than forty of them.
+
+  It did not work. A newspaper, the Public Ledger, reported that the bell had split again. The second crack runs up through the word Liberty, and nobody alive has heard this bell ring freely.
+
+  By then it had a new name. In eighteen thirty-five an abolitionist paper had called it the Liberty Bell, for the verse cast around its top. Proclaim liberty throughout all the land, unto all the inhabitants thereof. The name took years to catch on.
+
+  So the famous crack is not the damage. It is the repair.
+pronunciations:
+  - written: thereof
+    say: thair-OV
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Liberty Bell"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Visiting the Liberty Bell Center"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/planyourvisit/libertybellcenter.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Liberty bell, its history, associations and home (E. R. Gudehus, 1915)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/16006838/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

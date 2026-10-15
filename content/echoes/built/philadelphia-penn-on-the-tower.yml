@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Dilworth Park, the open public plaza on the west side of City Hall, with the tower and the statue overhead and the western skyline behind.
+# Position: Overture "Wintergarden at Dilworth Park" (39.95266, -75.16480) and "Dilworth Park" (39.95305, -75.16470), cross-checked against "Philadelphia City Hall" (39.95241, -75.16363); placed on the plaza west of the building (high confidence).
+id: philadelphia-penn-on-the-tower
+title: "The Man on the Tower"
+summary: "William Penn stands on top of City Hall. For most of a century nothing in the city stood higher."
+place: "City Hall tower, Dilworth Park, Philadelphia, Pennsylvania"
+at: { lat: 39.95255, lng: -75.16475 }
+triggerRadiusKm: 0.06
+category: built
+format: short
+durationS: 69
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, center-city, city-hall, skyline, sculpture]
+teaser: "Look all the way up the tower. There is a man standing on top."
+script: |
+  Look straight up the tower in front of you, past the clock, to the very top. There is a man standing up there.
+
+  He is William Penn, the founder of Pennsylvania and the planner of this city. From down here he looks about life size. He is thirty-seven feet tall, and he weighs more than fifty-three thousand pounds of bronze.
+
+  The last piece to go up was his head. It was set on his shoulders on the twenty-eighth of November, eighteen ninety-four, and the statue was complete.
+
+  The tower under him rises five hundred and forty-eight feet. Until nineteen oh nine it was the highest occupied building in the United States.
+
+  In the autumn of nineteen eighty-one, historians wrote this building up for the federal survey of American architecture. They put down one plain sentence. No other building in the city exceeds its height.
+
+  Now turn around, and look at the skyline to the west.
+
+  Count the towers standing higher than Penn's hat.
+
+  Every one of them is younger than that sentence.
+pronunciations:
+  - written: Dilworth Park
+    say: DIL-wurth Park
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The New Public Buildings, Penn Square, Broad and Market Streets, Philadelphia (HABS PA-1530), written historical and descriptive data, prepared 16 November 1981"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/pa1054/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Street-level view of Philadelphia, Pennsylvania's, iconic City Hall, above which stands perhaps the city's best-known landmark, a statue of Pennsylvania founder and Philadelphia planner William Penn"
+    publisher: "Carol M. Highsmith Archive, Library of Congress"
+    url: https://www.loc.gov/item/2019689257/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "View of Philadelphia, Pennsylvania's, City Hall, famously topped by a statue of William Penn"
+    publisher: "Carol M. Highsmith Archive, Library of Congress"
+    url: https://www.loc.gov/item/2019689061/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

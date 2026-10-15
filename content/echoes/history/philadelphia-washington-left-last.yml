@@ -1,0 +1,53 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: East sidewalk of Sixth Street beside Congress Hall, at the Chestnut Street corner; public sidewalk outside the security line.
+# Position: Overture "Congress Hall" (39.94908, -75.15055) is the building; spot moved about 30 m west onto the Sixth Street sidewalk, checked against the Sixth Street address cluster near -75.1511 (medium confidence).
+id: philadelphia-washington-left-last
+title: "Washington Left Last"
+summary: "At John Adams's inauguration in 1797, the outgoing president waited at the door and walked out behind the new vice president."
+place: "Congress Hall, Sixth and Chestnut streets, Philadelphia, Pennsylvania"
+at: { lat: 39.94905, lng: -75.15090 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, independence-mall, congress-hall, presidents, washington, adams]
+teaser: "Two men at a door, and a whole room watching to see who would go first."
+script: |
+  Stand beside the brick building on the corner of Sixth and Chestnut. This is Congress Hall. For ten years the House of Representatives met on its ground floor, and the Senate upstairs.
+
+  On the fourth of March, seventeen ninety-seven, the room downstairs was packed. The country was about to do something it had never done. Hand the presidency from one man to another.
+
+  A man named John McKoy was there, and wrote down what he saw. When the word Washington went round the doorway, he said, the shout made the hall tremble. Washington crossed the floor at a quick step, as if eager to escape notice, and sat down. Thomas Jefferson came in next, the new vice president, to a smaller cheer. Then John Adams, the new president, to a smaller one again.
+
+  Adams took the oath, read his address, bowed, and left to applause.
+
+  That left Washington and Jefferson standing together, and the whole room watching them in silence.
+
+  Washington gestured for Jefferson to go out first. Jefferson declined. Washington asked again. Jefferson went, and Washington followed him out.
+
+  He walked in as the most famous man in the country. He walked out behind the vice president.
+pronunciations:
+  - written: McKoy
+    say: muh-KOY
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Visiting Congress Hall"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/planyourvisit/congresshall.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Congress Hall"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-congresshall.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Congress hall (Samuel W. Pennypacker, 1895)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/02024648/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

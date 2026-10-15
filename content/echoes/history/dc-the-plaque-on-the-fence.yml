@@ -1,0 +1,67 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Public sidewalk on the north side of Pennsylvania Avenue, in front of the Blair House fence and the Coffelt plaque.
+# Position: Sidewalk just south of Overture's Blair House entry (38.89903, -77.03849), which agrees with the Guest House entry at the same address and sits between the Renwick Gallery and Jackson Place (medium confidence).
+id: dc-the-plaque-on-the-fence
+title: "The Plaque on the Fence"
+summary: "In 1950 a White House policeman died defending the President at Blair House."
+place: "Blair House, 1651 Pennsylvania Avenue NW, Washington, D.C."
+at: { lat: 38.89890, lng: -77.03848 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 73
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.75
+tags: [washington, dc-core, lafayette-square, truman]
+teaser: "Find the small bronze plaque on the fence in front of Blair House."
+script: |
+  Find the small bronze plaque on the fence in front of Blair House.
+
+  In the autumn of nineteen fifty, the White House was being rebuilt, and President Truman
+  was living here, across the street. On the afternoon of the first of November, he was
+  resting upstairs.
+
+  Two Puerto Rican nationalists came to this house armed. One of them later admitted they
+  had expected to shoot their way in. The White House police on duty shot back.
+
+  Three officers were hit. One of them, Private Leslie Coffelt, forty years old, was shot
+  twice. As he lay dying beside his post, he fired, and killed one of the attackers. The
+  other was wounded and taken. The attempt on the President failed.
+
+  The plaque was dedicated in May nineteen fifty-two, and Truman came to unveil it. He said
+  it commemorated an event about which he did not like to think.
+
+  Six years later, he walked past here with a writer from the Evening Star. He stopped and
+  read the plaque. Then he pointed.
+
+  He was in a little sentry house, Truman said, that stood right there.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Shooting coverage, Evening Star, November 2, 1950, image 5"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1950-11-02/ed-1/?sp=5
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Collazo appeal and Coffelt anniversary, Evening Star, November 9, 1951, image 8"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1951-11-09/ed-1/?sp=8
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Plaque Honors Truman Guard Killed in Assassination Attempt, Evening Star, May 22, 1952, image 4"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1952-05-22/ed-1/?sp=4
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Blair House, Sunday Star Magazine, Evening Star, January 13, 1957, image 155"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1957-01-13/ed-1/?sp=155
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Walk with Mr. Truman, Evening Star, April 14, 1958, image 27"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1958-04-14/ed-1/?sp=27
+    retrievedAt: "2026-10-14"
+    rights: public-domain

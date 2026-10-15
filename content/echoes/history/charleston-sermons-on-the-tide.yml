@@ -1,0 +1,69 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: East sidewalk of Church Street in front of the French Huguenot Church, just south of Queen Street.
+# Position: Church Street centreline from Overture road segments, offset to the east sidewalk beside the Overture place point for the church (136 Church St) (high confidence).
+id: charleston-sermons-on-the-tide
+title: "Sermons on the Tide"
+summary: "The French Huguenots came to church by boat, and in 1693 they won a promise that worship would not fight the tide."
+place: "French Huguenot Church, 136 Church Street, Charleston, South Carolina"
+at: { lat: 32.77812, lng: -79.92925 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 102
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, french-quarter, huguenots, churches, colonial]
+teaser: "Some of the carving on this church is not stone. But the real story here is about water."
+script: |
+  The stuccoed church on this corner, with the pointed windows, is the French Huguenot
+  Church. Look closely at the decoration. Some of what looks like carved stone is iron.
+
+  But the story here is about time, and water.
+
+  The Huguenots were French Protestants who came to Carolina in the sixteen-eighties. Many
+  of them settled on plantations outside the town, and the easiest road to church was the
+  river. So on Sundays they came to service by boat.
+
+  A boat on these rivers moves when the tide lets it. Leave at the wrong hour and you row
+  against it the whole way.
+
+  In sixteen ninety-three the French took their complaints to the Lords Proprietors, the men
+  who ran the colony. The answer came back with a list of protections. Their land would not
+  be taken from their children. Their marriages would be recognised. And they were not to be
+  made to begin their worship at an hour inconvenient to the tide.
+
+  The Park Service says services here were timed to the tides, for the families arriving by
+  boat from the plantations.
+
+  The church that stood here in seventeen ninety-six was blown up on purpose, to stop a fire
+  spreading through the neighbourhood. This one went up in the eighteen-forties. The
+  congregation is still French Calvinist, the only congregation of its kind in the
+  country.
+
+  The river is a few streets east of you, still rising and falling twice a day. Somewhere in
+  a colonial record there is a promise that Sunday would wait for it.
+pronunciations:
+  - written: "Huguenot"
+    say: "HYOO-guh-not"
+  - written: "Calvinist"
+    say: "KAL-vin-ist"
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "French Huguenot Church"
+    publisher: "National Park Service, Travel Historic Charleston"
+    url: https://www.nps.gov/places/french-huguenot-church.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the Proprietors' answer of 1693"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/06042434/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, S.C. and vicinity illustrated (1901), the Huguenot Church in the fire of 1796"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/02003003/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

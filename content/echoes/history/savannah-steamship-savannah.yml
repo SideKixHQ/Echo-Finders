@@ -1,0 +1,53 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: The River Street riverwalk west of City Hall, looking out over the river; the ship's exact berth in 1819 is not recorded in the sources.
+# Position: Riverwalk edge north of River Street near the Overture World War II Memorial point, about 85 m north of Oglethorpe's bench (medium confidence).
+id: savannah-steamship-savannah
+title: "Reported on fire off Ireland"
+summary: "In 1819 the Savannah left this river for Liverpool, the first steamship to cross the Atlantic, and was mistaken for a burning ship."
+place: "Savannah riverfront, River Street, Savannah, Georgia"
+at: { lat: 32.08215, lng: -81.09230 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, riverfront, shipping, firsts]
+teaser: "The first people to see her cross thought she was burning."
+script: |
+  Look out at the river, and picture a sailing ship like any other, with one odd thing about her. Smoke, and a paddle wheel on each side.
+
+  She was called the Savannah. Merchants of this city paid for her, at the suggestion of a captain named Moses Rogers, and she was built in the North. In May eighteen nineteen she left this river for Liverpool.
+
+  It was cautious engineering. The iron paddle wheels were hinged, so the crew could fold them up onto the deck. She burned pitch pine, not coal, so the engine was used sparingly. Old accounts disagree about how many days it actually ran.
+
+  Off Cape Clear, on the south coast of Ireland, someone saw her coming. A ship under sail, pouring out smoke. She was signalled to Liverpool as a vessel on fire, and a cutter was sent out from Cork to her relief.
+
+  She did not need relief. She went on into Liverpool, and then to Saint Petersburg, and came home to Savannah that November, by one account with not a screw, nor a bolt, nor a rope yarn parted.
+
+  By this city's proud account, she was the first steamship to cross the Atlantic.
+
+  The first people to see her do it thought she was on fire.
+pronunciations:
+  - written: Cape Clear
+    say: Cape CLEER
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Historical record of the city of Savannah (1869), chapter VII"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah: Georgia's chief seaport (1884), Ocean Steam Navigation"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/87126083/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah: her trade, commerce and industries, 1883-4"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007698/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

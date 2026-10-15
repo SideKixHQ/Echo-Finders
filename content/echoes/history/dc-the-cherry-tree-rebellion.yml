@@ -1,0 +1,57 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: The north steps of the Jefferson Memorial, facing back across the Tidal Basin.
+# Position: ~55 m north of the memorial's centre (38.88144, -77.03651, Overture, matches known layout), on the steps' axis (medium confidence).
+id: dc-the-cherry-tree-rebellion
+title: "The Cherry Tree Rebellion"
+summary: "In 1938 women chained themselves to the cherry trees being cleared for this memorial, and a police sergeant got chained too."
+place: "Jefferson Memorial, Tidal Basin, Washington, D.C."
+at: { lat: 38.88195, lng: -77.03651 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, tidal-basin, cherry-blossoms, protest, jefferson-memorial]
+teaser: "Stand on the steps of the Jefferson Memorial and look at the cherry trees along the shore."
+script: |
+  Stand on the steps of the Jefferson Memorial and look at the cherry trees along the
+  shore.
+
+  In November 1938, this ground was being cleared for the building behind you. Some of the
+  cherry trees were in the way.
+
+  So more than a hundred and fifty women came down to the Tidal Basin, in limousines, in
+  cabs and in buses. They were leaders of the city's women's clubs and parent teacher
+  associations. Dozens of them chained and padlocked themselves to the trees. Others took
+  the shovels out of the workmen's hands and filled the holes back in. Where trees had
+  already been dug up, women sat on them.
+
+  A park police sergeant, Carl Gillespie, walked over to find out what was going on.
+
+  He found himself chained to a tree.
+
+  The paper said he took it good-naturedly.
+
+  The director of the city's parks stopped the work until the White House decided what to
+  do.
+
+  The memorial was built. But part of the compromise was more cherry trees, planted along
+  this side of the basin, to frame it.
+
+  The sergeant got his chain off. The trees got this shore.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "History of the Cherry Trees"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/subjects/cherryblossom/history-of-the-cherry-trees.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Women Lock Selves To Cherry Trees. The Washington Times, 18 November 1938, page 6 (Chronicling America)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/resource/sn84026749/1938-11-18/ed-1/?sp=6
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts

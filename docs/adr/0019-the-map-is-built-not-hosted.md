@@ -25,8 +25,13 @@ manual upload:
 ## Decision
 - **The map is built here, from Overture Maps open data, and ships with the app.**
   - `scripts/build-map.py` reads Overture's public S3 bucket, the same way
-    `build-streets.py` builds the walking network. It writes one PMTiles file,
-    `apps/prototype/public/map/echoes.pmtiles`, which Vercel serves like any other file.
+    `build-streets.py` builds the walking network. It writes PMTiles files to
+    `apps/prototype/public/map/echoes/`, which Vercel serves like any other file.
+  - One file per zoom-8 square, not one file (2026-10-15). The single `echoes.pmtiles`
+    reached 46 MB at six cities, heading for GitHub's 100 MB limit per file, and every
+    rebuild added a new copy of all of it to the repository. A square nothing changed in
+    builds to the same bytes, so a new city adds only its own file; the app reads each
+    tile from its square's file (`echo-map.ts`).
   - The layers are roads with names, buildings (with heights), water, parks and
     landmarks. They are written in the Protomaps schema, so the navy style draws them
     unchanged.

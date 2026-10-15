@@ -1,0 +1,64 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk on Basin Street at Toulouse Street, beside Louis Armstrong Park; the Old Basin site lay on this side of the old town.
+# Position: Basin St line fitted from Overture address points (201-501 Basin St, rms 9 m), stepped one block past the fitted Basin/St Louis intersection and averaged with a fitted Basin/Toulouse intersection (medium-low confidence; the basin covered several blocks, so radius is wide).
+id: new-orleans-the-harbor-behind-the-cemetery
+title: "The Harbor Behind the Cemetery"
+summary: "Basin Street is named for a square of water where oyster luggers and charcoal schooners once tied up."
+place: "Basin Street at Toulouse Street, site of the Old Basin, New Orleans, Louisiana"
+at: { lat: 29.96045, lng: -90.07020 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 76
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, treme, basin-street, canal, waterways]
+teaser: "There is no basin on Basin Street."
+script: |
+  Look at the street sign. Basin Street.
+
+  There is no basin here now. A little over a century ago, there was.
+
+  Turn the corner at St. Louis Street, a guidebook of nineteen hundred told its readers, and the Old Basin bursts upon the view. A square of water at the end of a canal, with oyster luggers and charcoal schooners tied up along its banks, unloading.
+
+  The canal ran from here out to Bayou St. John, and through the bayou boats could reach Lake Pontchartrain. A schooner could come in off the lake and finish its trip close under the old city ramparts.
+
+  It was a Spanish governor's project. The Baron de Carondelet had it dug in the seventeen-nineties, to drain the swamps behind the city and to bring trade to its back door. The digging was done by gangs of enslaved men, lent free of charge by the city's wealthy.
+
+  By nineteen hundred and four, the guidebooks noted that a railway company had bought the land along the canal, for car yards and warehouses.
+
+  The water is gone, and so are the schooners. The street kept the name.
+detail: |
+  The 1900 and 1904 Picayune guides place the Old Basin between St. Claude and North
+  Franklin streets, Carondelet Walk and Toulouse, with the luggers' landing on the banks
+  from St. Louis Street to Toulouse. The 1913 guide dates the canal and basin to 1794-1796
+  (it names the governor as Claiborne, an error; the earlier guides credit Carondelet).
+pronunciations:
+  - written: Carondelet
+    say: kuh-RON-duh-let
+  - written: Pontchartrain
+    say: PON-chuh-train
+  - written: Bayou St. John
+    say: BY-oo Saint John
+  - written: luggers
+    say: LUG-erz
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Rampart Street and its vicinity: the Old Basin"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (1900), the Old Basin"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/00001333/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), North Rampart from Canal to Esplanade"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/13004346/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

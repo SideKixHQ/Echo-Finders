@@ -1,0 +1,59 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: East sidewalk of Meeting Street outside the Circular Congregational Church, where the graveyard is visible through the railings.
+# Position: Meeting Street centreline from Overture road segments, offset to the east sidewalk beside the Overture point for the church (150 Meeting St) (high confidence).
+id: charleston-the-street-named-for-a-meeting-house
+title: "The Street Named for a Meeting House"
+summary: "Meeting Street is named for a plain white meeting house that stood here. Every church on the site has gone since. The graves stayed."
+place: "Circular Congregational Church and graveyard, 150 Meeting Street, Charleston, South Carolina"
+at: { lat: 32.77881, lng: -79.93121 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 90
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, french-quarter, churches, churchyards, place-names]
+teaser: "Look into the oldest graveyard in Charleston. Then look at the name of the street you are standing on."
+script: |
+  Look into the graveyard around the Circular Congregational Church. It is the oldest burial
+  ground in Charleston, and one of its monuments has stood here since the sixteen hundreds.
+
+  Now think about the name of the street you are standing on.
+
+  Meeting Street is named for a building that is not here. In the first years of the town,
+  its dissenters, English Congregationalists, Scots and Irish Presbyterians and French
+  Huguenots, put up a plain meeting house on this spot. It was painted white. People called
+  it the White Meeting House, and the road in front of it took the name.
+
+  Since then, this site has been through almost everything Charleston could throw at it.
+  During the Revolution the meeting house was turned into a granary, and horses grazed
+  among these graves. In eighteen-oh-six a new church went up here, round, designed by the
+  Charleston-born architect Robert Mills. It gave the congregation its name. It burned in
+  the great fire of eighteen sixty-one, stood as a ruin for twenty-five years, and the
+  earthquake of eighteen eighty-six finished it off.
+
+  The church in front of you was built after that, around eighteen ninety-two, and it was
+  built partly from the old bricks.
+
+  Every church before this one has gone. The street is still named for the first of them.
+  And the graves have outlasted all of them.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Circular Congregational Church and Parish House"
+    publisher: "National Park Service, Travel Historic Charleston"
+    url: https://www.nps.gov/places/circular-congregational-church-and-parish-house.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the White Meeting"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/06042434/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, S.C. and vicinity illustrated (1901), the Circular Church"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/02003003/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

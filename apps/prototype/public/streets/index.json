@@ -23,6 +23,16 @@
    "file": "atlantic-city-first-boardwalk.json"
   },
   {
+   "area": "boston-abiel-smith-school-goodbye",
+   "bbox": [
+    -71.08444,
+    42.34332,
+    -71.03541,
+    42.38694
+   ],
+   "file": "boston-abiel-smith-school-goodbye.json"
+  },
+  {
    "area": "canaveral-free-speed",
    "bbox": [
     -80.61995,
@@ -43,6 +53,16 @@
    "file": "casa-casuarina-the-steps.json"
   },
   {
+   "area": "charleston-a-strangers-initials",
+   "bbox": [
+    -79.95642,
+    32.75914,
+    -79.91183,
+    32.80238
+   ],
+   "file": "charleston-a-strangers-initials.json"
+  },
+  {
    "area": "craggy-gardens-balds",
    "bbox": [
     -82.39247,
@@ -61,6 +81,16 @@
     40.78703
    ],
    "file": "dakota-three-minutes.json"
+  },
+  {
+   "area": "dc-a-country-he-never-saw",
+   "bbox": [
+    -77.06353,
+    38.87117,
+    -76.9899,
+    38.91103
+   ],
+   "file": "dc-a-country-he-never-saw.json"
   },
   {
    "area": "hatteras-moved-the-lighthouse",
@@ -113,14 +143,34 @@
    "file": "mount-mitchell-buried-on-top.json"
   },
   {
-   "area": "savannah-twenty-two-squares",
+   "area": "new-orleans-a-district-with-his-name",
    "bbox": [
-    -81.10392,
-    32.07012,
-    -81.07848,
-    32.09168
+    -90.08449,
+    29.94235,
+    -90.03612,
+    29.97718
    ],
-   "file": "savannah-twenty-two-squares.json"
+   "file": "new-orleans-a-district-with-his-name.json"
+  },
+  {
+   "area": "philadelphia-a-firehouse-on-a-market",
+   "bbox": [
+    -75.17881,
+    39.93222,
+    -75.12704,
+    39.96438
+   ],
+   "file": "philadelphia-a-firehouse-on-a-market.json"
+  },
+  {
+   "area": "savannah-a-city-for-christmas",
+   "bbox": [
+    -81.11422,
+    32.05857,
+    -81.07136,
+    32.09293
+   ],
+   "file": "savannah-a-city-for-christmas.json"
   },
   {
    "area": "the-balcony",
@@ -141,16 +191,6 @@
     29.89621
    ],
    "file": "the-children-at-the-lighthouse.json"
-  },
-  {
-   "area": "the-distance-across-the-street",
-   "bbox": [
-    -77.03981,
-    38.8859,
-    -77.01211,
-    38.90746
-   ],
-   "file": "the-distance-across-the-street.json"
   },
   {
    "area": "the-empty-frames",

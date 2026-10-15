@@ -1,0 +1,62 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public pavement on Salem Street in front of the Old North Church tower.
+# Position: Salem Street frontage of Old North, offset west of the Overture "Basement Crypt of the Old North Church" point (42.36631, -71.05449) toward the street; 193 Salem St (medium confidence).
+id: boston-the-sextons-lodgers
+title: "The Sexton's Lodgers"
+summary: "The man said to have hung the two lanterns in Old North's tower in 1775 had British officers quartered in his own house."
+place: "Old North Church tower, Salem Street, North End, Boston, Massachusetts"
+at: { lat: 42.36623, lng: -71.05462 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, north-end, old-north-church, revolution, paul-revere]
+teaser: "The tablet on the tower says what happened here. It does not say who did it."
+script: |
+  Look at the brick tower, and the tablet on its front. It says the signal lanterns of Paul
+  Revere were shown in the steeple of this church.
+
+  It does not say who carried them up.
+
+  On the night of the eighteenth of April, seventeen seventy-five, by the usual account, two
+  men let themselves in. One was John Pulling, a member of the vestry. The other was the man
+  who kept the church, its sexton. His name was Robert Newman.
+
+  They climbed to the top of the tower, the tallest structure in the town. They held two
+  lanterns near the windows, briefly. Then they got out.
+
+  Two lanterns meant the British troops were crossing the river by water, heading for
+  Lexington and Concord.
+
+  Newman lived a block up this street, on the corner of Sheafe Street. And there is one more
+  detail about that house.
+
+  At the time, British officers were quartered in it, on the Newman family.
+
+  So the signal that the army was moving went up from the tallest building in Boston. And the
+  man who hung it was sharing his home with the army's officers.
+pronunciations:
+  - written: Sheafe Street
+    say: SHEEF Street
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old North Church"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/learn/historyculture/onc.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Old North Church"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/old-north-church.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Boston, a guide book, by Edwin M. Bacon (Ginn and Company, 1909), Christ Church and the Newman house"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/33007578/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

@@ -1,0 +1,62 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: South side of the Oglethorpe monument in Chippewa Square, on the square's paths, looking north at the statue's face.
+# Position: Square centre from Overture street centrelines (midpoint of Bull at Hull and Bull at Perry), nudged about 15 m south of the monument (medium confidence).
+id: savannah-the-general-facing-south
+title: "The General Facing South"
+summary: "Savannah's founder stands in bronze in Chippewa Square, young, armed, and looking south."
+place: "Oglethorpe Monument, Chippewa Square, Savannah, Georgia"
+at: { lat: 32.07565, lng: -81.09318 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, squares, colonial, monuments]
+teaser: "Look up at the man in bronze, then look at which way he is facing."
+script: |
+  Stand on the south side of the square and look up at the man in bronze.
+
+  He is young. Full uniform, a hand resting on his sword hilt. When the statue was unveiled in November nineteen ten, the newspapers made a point of it. Most old prints showed James Oglethorpe as an old man. The sculptor, Daniel Chester French, gave the city a soldier instead.
+
+  Now look at which way he is facing.
+
+  When the figure was hoisted onto its pedestal, a few weeks before the unveiling, the Atlanta paper noted one detail. The figure faces south.
+
+  South, in Oglethorpe's day, was the problem. The land below Savannah was claimed by both Britain and Spain, and Georgia was meant, in part, as a military buffer against Spanish Florida. Oglethorpe built a fort town on St. Simons Island. In seventeen forty he besieged St. Augustine for thirty-eight days, and failed. Two years later he turned back a Spanish invasion of Georgia.
+
+  The papers of nineteen ten did not say whether that was the point of the pose.
+
+  He sailed for England in seventeen forty-three and never came back. He is buried at Cranham, on the edge of London.
+
+  He is still watching the southern road.
+editorial: draft
+factCheck: unchecked
+pronunciations:
+  - written: Oglethorpe
+    say: OH-gul-thorp
+  - written: St. Augustine
+    say: saint AW-guh-steen
+sources:
+  - title: "Atlanta semi-weekly journal, 8 November 1910, page 5: Oglethorpe statue is now in position"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86090947/1910-11-08/ed-1/?sp=5
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The Montgomery advertiser, 24 November 1910, page 3: statue of Oglethorpe is unveiled"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84020645/1910-11-24/ed-1/?sp=3
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "New-York tribune, 24 November 1910, page 7: Oglethorpe honored"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030214/1910-11-24/ed-1/?sp=7
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "James Edward Oglethorpe"
+    publisher: "National Park Service, Fort Frederica National Monument"
+    url: https://www.nps.gov/fofr/learn/historyculture/james-edward-oglethorpe.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain

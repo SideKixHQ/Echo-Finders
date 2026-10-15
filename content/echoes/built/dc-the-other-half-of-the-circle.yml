@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Twelfth Street NW between Pennsylvania Avenue and C Street, between the curved federal building and the Old Post Office tower.
+# Position: On 12th St NW beside the Old Post Office's west side; Overture places the Old Post Office (1100 Pennsylvania Ave NW) at about -77.0273 and the Federal Triangle Metro entrance on 12th St at about -77.0292, so the street lies between (medium confidence).
+id: dc-the-other-half-of-the-circle
+title: "The Other Half of the Circle"
+summary: "A curved federal building on 12th Street was meant to be half of a circle. The Old Post Office tower stood where the other half should go."
+place: "Old Post Office tower and the Federal Triangle hemicycle, 12th Street NW, Washington, D.C."
+at: { lat: 38.89400, lng: -77.02830 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, penn-quarter, preservation, federal-triangle]
+teaser: "Stand on Twelfth Street and look at the two buildings facing each other."
+script: |
+  Stand on Twelfth Street and look at the two buildings facing each other.
+
+  On one side, a federal building sweeps round in a great half circle. On the other stands
+  the Old Post Office, and its tower.
+
+  The curve was supposed to be a whole circle. When the federal buildings here went up in
+  the early 1930s, a matching curve was meant to be built across the street, on the site of
+  the Old Post Office. The tower was in the way.
+
+  The old building had fallen out of fashion, and locals thought it unappealing. It faced
+  demolition in 1934, and was spared only because the Depression had swallowed the money.
+
+  In 1970 Congress approved tearing it down again. By the mid seventies there were fires and
+  piles of trash inside, and metal sheets over the glass roof of the atrium.
+
+  Then Nancy Hanks, who chaired the National Endowment for the Arts, testified. Old
+  buildings, she told Congress, are like old friends. People picketed. The building was
+  saved, and in 1973 it went on the National Register of Historic Places.
+
+  For forty-two years, park rangers took visitors to the top of the tower. That ended on the
+  first of October 2025, while the building's owners decide what happens next.
+
+  Either way, the circle across the street still stops halfway.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old Post Office Tower"
+    publisher: "National Park Service, National Mall and Memorial Parks"
+    url: https://www.nps.gov/nama/planyourvisit/opot.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "New Post Office Building, Twelfth Street and Pennsylvania Avenue (HABS DC-814)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/dc0948/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

@@ -1,0 +1,63 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Public sidewalk on Constitution Avenue NE at Second Street, in front of the brick house.
+# Position: Sidewalk in front of 144 Constitution Ave NE; Overture's Belmont-Paul entry (38.89231, -77.00372) agrees with the address and the neighbouring Hart Senate Office Building entries (high confidence).
+id: dc-the-house-that-fired-back
+title: "The House That Fired Back"
+summary: "In 1814 someone fired on the British from this house. The British burned it down."
+place: "Belmont-Paul Women's Equality National Monument, 144 Constitution Avenue NE, Washington, D.C."
+at: { lat: 38.89220, lng: -77.00375 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, war-of-1812, capitol-hill, womens-rights]
+teaser: "Find the old brick house on the corner, beside the big Senate office building."
+script: |
+  Find the old brick house on the corner, tucked in beside the big Senate office building.
+
+  It is one of the oldest houses on Capitol Hill. But it is not quite the house that was
+  first built here.
+
+  The first one went up in 1800. On the twenty-fourth of August 1814, the British army
+  marched into Washington.
+
+  According to a claim the owner later filed with Congress, a group of Commodore Joshua
+  Barney's men, retreating from the battle at Bladensburg, got into this house and shot at
+  the British troops coming up the street.
+
+  They killed several men. They also killed the horse of the British commander, General
+  Robert Ross.
+
+  Ross's troops set the house on fire, and it was destroyed.
+
+  The house you are looking at was rebuilt on the same spot by 1820.
+
+  A little over a century later, the National Woman's Party bought it, and campaigned for
+  equal rights from here, just behind the Capitol.
+
+  In the 1960s, when the Senate office building next door was going up, the house was
+  threatened again. The Woman's Party lobbied to have it protected, and won.
+
+  This time, nobody had to fire a shot.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "History of the House"
+    publisher: "National Park Service, Belmont-Paul Women's Equality National Monument"
+    url: https://www.nps.gov/bepa/learn/history-of-the-house.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Sewall-Belmont House, 144 Constitution Avenue, Northeast (HABS DC-821)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/dc0963/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Belmont-Paul Women's Equality National Monument"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/bepa/index.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

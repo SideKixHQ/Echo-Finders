@@ -1,0 +1,64 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Pier 1 at the Charlestown Navy Yard, beside USS Constitution; the yard is public, boarding the ship needs a security screening, and the echo works from the pier.
+# Position: Overture "USS Constitution", 93 Chelsea St, cross-checked against Dry Dock 1 and the Charlestown Navy Yard entries (high confidence).
+id: boston-sides-made-of-iron
+title: "Sides Made of Iron"
+summary: "USS Constitution got the name Old Ironsides in 1812, when a British cannonball bounced off her hull. The hull was oak."
+place: "USS Constitution, Pier 1, Charlestown Navy Yard, Charlestown, Boston, Massachusetts"
+at: { lat: 42.37253, lng: -71.05648 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 86
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, charlestown, navy-yard, uss-constitution, war-of-1812, ships]
+teaser: "Look at the side of the ship. A cannonball once bounced off it."
+script: |
+  Look at the side of the ship in front of you.
+
+  In August eighteen twelve, about seven hundred and fifty miles east of Boston, she met the
+  British frigate Guerriere.
+
+  The Royal Navy was the most powerful in the world. The American navy had fewer than two
+  dozen ships. The British captain said he would take this one in thirty minutes.
+
+  Her captain, Isaac Hull, held his fire as they closed. He waited until the two ships were
+  side by side. Then he fired the whole broadside.
+
+  The Guerriere was wrecked. And at some point in the fight, a British cannonball hit this
+  hull and bounced off. One of the crew shouted that her sides were made of iron.
+
+  They were not. They were live oak, a wood so dense it can weigh seventy-five pounds to the
+  cubic foot. It grew on the swampy islands off Georgia. The first timber cutters sent from New
+  England fell sick within days, and enslaved men were brought in to build the roads to get it out.
+
+  She has been rebuilt again and again since. But below the waterline, a good part of her
+  original wood is still there.
+
+  The nickname stuck. She has been Old Ironsides for more than two hundred years.
+
+  She has never been iron.
+pronunciations:
+  - written: Guerriere
+    say: gair-ee-AIR
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Summer 1812: The USS Constitution shatters the aura of British naval superiority"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/old-ironsides.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "USS Constitution"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/learn/historyculture/ussconst.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "'Old Ironsides' in Dry Dock 1 (wayside exhibit)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/old-ironsides-dry-dock-1-cny-wayside.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

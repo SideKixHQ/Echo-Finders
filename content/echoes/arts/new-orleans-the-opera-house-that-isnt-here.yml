@@ -1,0 +1,59 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk on the river side of Bourbon Street at the Toulouse Street corner, looking across at the lake-side corner of the 500 block where the opera house stood.
+# Position: Bourbon and Toulouse intersection from street lines fitted to Overture addresses; the 1919 reports say only "Bourbon and Toulouse" and the block toward St. Peter, so the exact corner is not confirmed (medium confidence).
+id: new-orleans-the-opera-house-that-isnt-here
+title: "The Opera House That Isn't Here"
+summary: "The French Opera House stood here sixty years. Its 1866 company drowned on the way over, and in 1919 it burned to the ground."
+place: "Site of the French Opera House, Bourbon and Toulouse streets, New Orleans, Louisiana"
+at: { lat: 29.95791, lng: -90.06621 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, opera, music, bourbon-street]
+teaser: "Stand at the corner of Bourbon and Toulouse, and look for an opera house."
+script: |
+  Stand at the corner of Bourbon and Toulouse, and look for an opera house.
+
+  There isn't one. For sixty years, there was.
+
+  The French Opera House opened here in December eighteen fifty-nine. A city guide from nineteen-oh-four counted about two thousand eight hundred seats, in four tiers, and every tier had its own French name. The gallery, at the top, was popularly called le paradis. Paradise.
+
+  During the Civil War the house went dark. In eighteen sixty-six it was ready to open again, and its new director was sailing from France with a whole company of singers, aboard a ship called the Evening Star.
+
+  The ship went down. The entire company was lost.
+
+  The house opened anyway, and kept going for another half century.
+
+  Then, early on the fourth of December, nineteen nineteen, a fire started in a restaurant at the front of the building. Within hours the French Opera House had burned to the ground. Its season had opened on Armistice night, barely three weeks before. The management said it was the most successful season the house had ever had.
+
+  So look up, above the corner, into the empty air.
+
+  That is about where Paradise used to be.
+pronunciations:
+  - written: le paradis
+    say: luh pah-rah-DEE
+  - written: Toulouse
+    say: too-LOOSE
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Historic Opera House in New Orleans Burns, Evening Star (Washington), 4 December 1919, page 2"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn83045462/1919-12-04/ed-1/?sp=2
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Famous French Opera House at New Orleans Burned, New-York Tribune, 5 December 1919, page 10"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn83030214/1919-12-05/ed-1/?sp=10
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's Guide to New Orleans (1904), French Opera House"
+    publisher: "The Picayune, via the Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

@@ -1,0 +1,60 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: South sidewalk of Cumberland Street in front of the Powder Magazine at number 79.
+# Position: Overture place point for the Powder Magazine Museum (79 Cumberland St), moved onto the Cumberland Street frontage using Overture road segments; other Overture points at this address are scattered and were ignored (medium confidence).
+id: charleston-built-to-fall-inward
+title: "Built to Fall Inward"
+summary: "The oldest public building in South Carolina stored the town's gunpowder, and its roof was designed for the day it exploded."
+place: "Powder Magazine, 79 Cumberland Street, Charleston, South Carolina"
+at: { lat: 32.77956, lng: -79.93008 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 94
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, french-quarter, colonial, architecture, revolutionary-war]
+teaser: "A squat brick building with a steep tiled roof. Every powder store has to answer one question."
+script: |
+  The squat brick building with the steep tiled roof is the Powder Magazine. It went up in
+  seventeen thirteen, and it is the oldest public building in South Carolina.
+
+  Look at how solid it is. The walls are thirty-two inches thick, and when it was built they
+  had no windows at all.
+
+  Charles Town was a small walled settlement then, at the southern edge of England's claims,
+  and it expected attack, from the Spanish, the French, and pirates. The town's gunpowder
+  was kept here.
+
+  It was condemned in seventeen seventy, then filled with powder again when the Revolution
+  came. One old guide to the city says that during the British siege of seventeen eighty a
+  shell landed close by, and after that it was given up as a magazine.
+
+  Which brings you to the question every powder store has to answer. What happens if it goes
+  off?
+
+  Here, the answer was in the roof. According to the Park Service, the timbers inside were
+  built so that if there were ever an explosion in the building, it would collapse in on
+  itself.
+
+  Not outward, into the town. Inward.
+
+  Later it was a printing house, and then a livery stable. Since nineteen-oh-two it has
+  belonged to the Colonial Dames, and today it is a museum.
+
+  More than three hundred years on, it is still a building designed, if the worst came, to
+  bury its own disaster.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Powder Magazine"
+    publisher: "National Park Service, Travel Historic Charleston"
+    url: https://www.nps.gov/places/powder-magazine.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Guide to Charleston, S.C., with brief history of the city (C. Irvine Walker, 1919), the Old Powder Magazine"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/20002718/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

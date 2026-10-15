@@ -1,0 +1,50 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: North sidewalk of Pine Street between Eighth and Ninth, at the iron fence in front of the hospital's historic Pine Street front.
+# Position: Pine Street centreline from Overture addresses on the 200 and 800 blocks (822 Pine St at 39.94415), hospital block from "Pennsylvania Hospital" (39.94539, -75.15556, 800 Spruce St); spot on the north sidewalk at mid-block (medium confidence).
+id: philadelphia-hamlet-paid-for-the-hospital
+title: "Hamlet Paid for the Hospital"
+summary: "The first hospital in the United States took money from almost anyone. In 1759 that included a company of actors."
+place: "Pennsylvania Hospital, Pine Street between Eighth and Ninth, Philadelphia, Pennsylvania"
+at: { lat: 39.94448, lng: -75.15570 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, society-hill, medicine, benjamin-franklin, theatre]
+teaser: "The country's first hospital, and part of the bill was paid by the Prince of Denmark."
+script: |
+  Look through the iron fence on Pine Street. On the lawn there is a small statue of William Penn, and behind him a long building of brick and marble, with an eight-sided cupola on each wing.
+
+  This is Pennsylvania Hospital. Benjamin Franklin and a doctor named Thomas Bond founded it in seventeen fifty-one, and it is the oldest hospital in the United States. The east wing went up in the seventeen fifties. Franklin wrote the words for its cornerstone. Piously founded, they say, for the relief of the sick and miserable.
+
+  A hospital needs money. This one took it from nearly everyone. Private citizens gave. The preacher George Whitefield sent a large sum.
+
+  Then, in seventeen fifty-nine, a company of actors put on Hamlet for the hospital's benefit.
+
+  That was thought quite shocking. Plays did not have the approval of the best people, and the managers had to decide whether they could take money earned on a stage.
+
+  They decided the hospital's charter gave them no right to refuse it.
+
+  Hamlet brought in forty-seven pounds, two shillings and sixpence.
+
+  Look at the building again. The first hospital in the country. And a small part of its bills was paid by the Prince of Denmark.
+pronunciations:
+  - written: George Whitefield
+    say: JORJ WIT-feeld
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Pennsylvania Hospital, Eighth and Ninth, Pine and Spruce Streets, Philadelphia (HABS PA-1123), architectural data form and photo captions"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/pa1040/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Book of Philadelphia, by Robert Shackleton (1918), chapter XXVI, Some Benefactions, Old and New"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/19000869/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

@@ -1,0 +1,71 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: East sidewalk of Church Street, across from 89-91 Church Street, south of Broad.
+# Position: Overture "Catfish Row" (91 Church St) and 89 Church St entries, moved to the opposite sidewalk; about 150 m from the Broad and Church echo (medium confidence).
+id: charleston-not-called-catfish
+title: "Not Called Catfish"
+summary: "The Catfish Row of Porgy and Porgy and Bess had a real model on Church Street. In Charleston it went by another name."
+place: "Cabbage Row, 89-91 Church Street, Charleston, South Carolina"
+at: { lat: 32.77542, lng: -79.92912 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 83
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, south-of-broad, porgy, theatre, opera]
+teaser: "Look across the street at numbers eighty-nine and ninety-one. They have two names."
+script: |
+  Look across the street at numbers eighty-nine and ninety-one Church Street. The federal
+  survey of historic buildings files them under two names. Cabbage Row. And Catfish Row.
+
+  Only one of those is a Charleston name.
+
+  In the nineteen twenties a Charleston man, DuBose Heyward, and his wife Dorothy wrote a
+  play called Porgy. It is set in a crowded courtyard of Black Charlestonians called
+  Catfish Row. Its hero is a disabled beggar who gets around the city in a little cart
+  pulled by a goat.
+
+  It ran for a year on Broadway, then went on tour. When it reached Washington in
+  nineteen twenty-eight, the Evening Star explained to its readers that the sets were
+  authentic, drawn after a visit to Charleston. And then it added a correction. The row
+  itself, the paper said, is not called Catfish in Charleston. It is referred to as
+  Cabbage Row. Porgy himself, it said, was based on a real person.
+
+  A few years later George Gershwin turned the play into an opera, Porgy and Bess. A
+  Washington paper reported, perhaps generously, that he had spent his spare time for two
+  years visiting Catfish Row.
+
+  He could not have. There is no such place. It is across the street, under another name.
+pronunciations:
+  - written: DuBose Heyward
+    say: doo-BOHZ HAY-wurd
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "89-91 Church Street (Houses) (Cabbage Row, Catfish Row), Charleston (HABS SC-447)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/sc0488/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), April 15, 1928, theatre page, \"Porgy\""
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1928-04-15/ed-1/?sp=53
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), April 22, 1928, amusement section, \"Porgy\""
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1928-04-22/ed-1/?sp=55
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The Indianapolis Times, November 30, 1929, theatre page, \"Porgy\""
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82015313/1929-11-30/ed-1/?sp=6
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The Washington Times, March 10, 1936, \"World of Music\""
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84026749/1936-03-10/ed-1/?sp=9
+    retrievedAt: "2026-10-15"
+    rights: fair-use-facts

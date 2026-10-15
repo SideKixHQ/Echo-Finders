@@ -1,0 +1,74 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Royal Street sidewalk at the railings of St. Anthony's Garden, behind the cathedral.
+# Position: Overture St. Anthony's Garden point moved to the Royal Street frontage by the square's grid, checked against the Overture cathedral point (medium confidence).
+id: new-orleans-the-inquisitor-who-came-back
+title: "The Inquisitor Who Came Back"
+summary: "A Capuchin sent to set up the Inquisition was shipped out by the governor. He returned as Père Antoine, the city's beloved priest."
+place: "St. Anthony's Garden, behind St. Louis Cathedral, Royal Street, New Orleans, Louisiana"
+at: { lat: 29.95834, lng: -90.06426 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 102
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, churches, spanish-colonial]
+teaser: "He came to set up the Inquisition. The governor had other plans."
+script: |
+  Look through the railings into the garden behind the cathedral.
+
+  Around seventeen eighty-nine, a Spanish Capuchin friar named Antonio de Sedella called on the governor of this colony, Esteban Miró. He showed him a commission. He had been sent to set up the Holy Office of the Inquisition in New Orleans.
+
+  His preparations were complete, he said. Some night soon, he would send for soldiers to help him make the arrests.
+
+  The governor was polite. Then he made preparations of his own.
+
+  The next night there was a heavy knocking at the friar's door. He opened it to an officer and a file of grenadiers. He thanked them for coming so promptly, and told them he did not need them yet.
+
+  He was told he was under arrest. The next day he was on a ship for Cádiz.
+
+  Miró wrote to Madrid that the very word Inquisition, spoken in New Orleans, could drive people out of the colony.
+
+  And then the friar came back.
+
+  He came back as Père Antoine, the parish priest of this cathedral, for nearly fifty years. A guidebook from eighteen forty-five says he was supposed to have married or buried nearly half the people of the place. When a church official tried to suspend him, his congregation left the cathedral and ran to his door.
+
+  He lived in a little cabin in the alley back here. He is buried at the foot of the altar.
+
+  New Orleans threw out the inquisitor. Then it kept the priest for half a century.
+pronunciations:
+  - written: Antonio de Sedella
+    say: an-TOH-nee-oh day seh-DEL-ah
+  - written: Esteban Miró
+    say: ess-TAY-bahn mee-ROH
+  - written: Cádiz
+    say: KAH-deeth
+  - written: Père Antoine
+    say: pair ahn-TWAHN
+  - written: Capuchin
+    say: KAP-yoo-chin
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "New Orleans, the place and the people (1895)"
+    publisher: "Grace King, Macmillan, 1895; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/01008773/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "A history of Louisiana (1905)"
+    publisher: "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/34036146/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Norman's New Orleans and environs (1845)"
+    publisher: "B. M. Norman, New Orleans, 1845; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/01008776/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Presbytere, Jackson Square, New Orleans (HABS LA-18-5), written historical and descriptive data"
+    publisher: "Historic American Buildings Survey, National Park Service; Library of Congress"
+    url: https://www.loc.gov/item/la0008/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

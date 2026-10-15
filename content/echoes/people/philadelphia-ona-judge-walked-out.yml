@@ -1,0 +1,57 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: The President's House Site open-air exhibit at Sixth and Market, beside the Liberty Bell Center; open daily 7 am to 10 pm, no ticket.
+# Position: Overture "President's House Site" (39.95045, -75.15006) and "Presidents House Enslaved Africans Memorial" (39.95050, -75.15005) agree; used as given (medium confidence: may sit some metres east of the exhibit's Sixth Street edge).
+id: philadelphia-ona-judge-walked-out
+title: "Ona Judge Walked Out"
+summary: "In 1796 an enslaved seamstress walked out of the President's House here, and Washington spent years trying to get her back."
+place: "President's House Site, Sixth and Market streets, Philadelphia, Pennsylvania"
+at: { lat: 39.95045, lng: -75.15010 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 94
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, independence-mall, presidents-house, slavery, african-american-history, washington]
+teaser: "Find the name Ona Judge."
+script: |
+  You are standing on the site of the President's House. The building itself was demolished long ago, but its real foundations are still here to see, found by archaeologists in two thousand seven.
+
+  George Washington lived here from seventeen ninety to seventeen ninety-seven. His household was about thirty people. Nine of them, at one time or another, were enslaved Africans brought up from Mount Vernon. Their names are memorialized here.
+
+  Find the name Ona Judge.
+
+  She was Martha Washington's personal maid, and a skilled seamstress. Pennsylvania law said that an enslaved person held in the state for six months could claim freedom. So the Washingtons kept sending the people they enslaved back to Virginia before the six months ran out.
+
+  In seventeen ninety-six, Ona Judge walked out of this house and did not come back.
+
+  She reached Portsmouth, New Hampshire, where someone recognised her. Washington, still president, wrote to the customs collector there and asked him to seize her and send her back. The collector talked with her, and declined.
+
+  Two years later Washington's nephew went north to try again. Over dinner he mentioned the plan to the governor of New Hampshire. The governor sent her a warning, and she got away again, with her child.
+
+  Washington died in seventeen ninety-nine. Ona Judge lived free in New Hampshire until eighteen forty-eight.
+
+  She outlived the man who was looking for her by almost fifty years.
+pronunciations:
+  - written: Ona Judge
+    say: OH-nuh JUDJ
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "President's House Site: Enslaved People in the Washington Household"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/enslaved-people.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The President's House Site: Presidents Washington and Adams"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/the-presidents-house-washington-and-adams.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Visiting the President's House Site: From Enslavement to Emancipation"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/planyourvisit/presidentshousesite.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

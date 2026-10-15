@@ -1,0 +1,52 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Southwest corner of Bull Street and Oglethorpe Avenue, looking up at the steeple of the Independent Presbyterian Church.
+# Position: Bull and Oglethorpe intersection from Overture street centrelines, set on the southwest corner beside the church's Overture footprint (high confidence).
+id: savannah-the-church-copied-from-itself
+title: "The Church Copied from Itself"
+summary: "The Independent Presbyterian Church burned in 1889 and was rebuilt from measurements of the building that had burned."
+place: "Independent Presbyterian Church, Bull Street at Oglethorpe Avenue, Savannah, Georgia"
+at: { lat: 32.07672, lng: -81.09292 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 81
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, churches, architecture, fire]
+teaser: "This church is about seventy years younger than it looks."
+script: |
+  Look up at the white steeple on the corner of Bull Street and Oglethorpe Avenue.
+
+  The Independent Presbyterian Church was dedicated in eighteen nineteen. Fifty years later, a history of the city called it one of the most elegant and spacious houses of worship in the country.
+
+  On the evening of the sixth of April, eighteen eighty-nine, a clerk in a dry goods store on Broughton Street stepped into a shop window to light the gas. A gust of wind blew the flame against something light and flammable.
+
+  By morning more than fifty buildings were gone. The Savannah Morning News described what was left of this church. Skeleton walls.
+
+  What you are looking at went up in eighteen ninety. It was rebuilt from measured drawings of the church that burned. A copy of itself, built to its own measurements.
+
+  The congregation had reasons to be faithful to the old design. By one account from the nineteen thirties, a legacy left to the church required that its high pulpit never be changed.
+
+  So the church in front of you is about seventy years younger than it looks.
+
+  The original stood for seventy years. The copy has now stood for well over a century.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Independent Presbyterian Church, Bull and Oglethorpe Streets, Savannah (HABS GA-237): record, data pages and addendum"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/ga0046/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The morning news (Savannah), 7 April 1889, page 1: report of the fire"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86063034/1889-04-07/ed-1/?sp=1
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Historical record of the city of Savannah (Lee and Agnew, 1869): Churches, Presbyterian"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

@@ -1,0 +1,51 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: Elizabeth Street sidewalk beside the long service wing of the Aiken-Rhett House, north of the main house.
+# Position: Overture point for 48 Elizabeth St moved west onto the Elizabeth St sidewalk and slightly north toward the service wing, checked against 49 and 38 Elizabeth St, 10 Judith St and 20 Mary St; the street points disagree by tens of metres (low confidence).
+id: charleston-what-the-survey-wrote-down
+title: "What the Survey Wrote Down"
+summary: "Behind a governor's town house, the whole working yard survived, and federal surveyors measured every part of it."
+place: "Aiken-Rhett House, Elizabeth Street, Charleston, South Carolina"
+at: { lat: 32.79160, lng: -79.93505 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 72
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, architecture, town-houses]
+teaser: "Six windows that were never windows."
+script: |
+  Look at the long plain wing that runs back from the house along Elizabeth Street. Up at the second floor there are six blank panels with pointed tops. Windows that were never windows.
+
+  This is the back of a planter's town house. Governor William Aiken lived here. What makes the place rare is not the front. It is everything behind it.
+
+  When federal surveyors came in the late nineteen fifties and early sixties, they found the working yard still standing. A stable with six stalls. A carriage room. A harness room. A hay loft. And in the garden, two small brick cow houses. One was nearly gone. The other had an earth floor and room for two animals.
+
+  They measured the floorboards. They noted a wrought iron lock on one door, stamped with its maker's name.
+
+  Upstairs at the far end of the wing were two small rooms with fireplaces. The surveyors wrote that they appear to have been used for living purposes.
+
+  They wrote down the hinges and the locks. They did not write down who lived in those rooms.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Robinson-Aiken House, 48 Elizabeth Street, Charleston (HABS SC-269), data pages"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/sc0023/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Robinson-Aiken Service Building and Stable (HABS SC-275), data pages"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/sc0025/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Robinson-Aiken Cow House (HABS SC-274), data pages"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/sc0022/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Aiken
+    say: AY-kin

@@ -1,0 +1,53 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: The apex of the Vietnam Veterans Memorial, where the east and west walls meet, at panels 1E and 1W.
+# Position: The wall's vertex; Overture's "Vietnam Veterans Memorial" point sits on it and matches the known layout (high confidence).
+id: dc-the-first-are-with-the-last
+title: "The First Are With the Last"
+summary: "A student's design for the Vietnam Veterans Memorial puts the first names and the last side by side, and puts you between them."
+place: "Vietnam Veterans Memorial, Washington, D.C."
+at: { lat: 38.89117, lng: -77.04785 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 72
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, national-mall, memorials, vietnam]
+teaser: "Stand where the two walls meet, and look into the black stone."
+script: |
+  Stand where the two walls meet, and look into the black stone.
+
+  You will see yourself, standing among the names.
+
+  The design was entry number one thousand and twenty-six, in a blind competition with
+  more than fourteen hundred entries. It began as a student project. Maya Lin was studying
+  architecture at Yale when she proposed it, in 1981.
+
+  No figures. No sculpture. Two long walls of polished black granite, angled so that one
+  lines up with the Washington Monument and the other with the Lincoln Memorial.
+
+  Now look at the top of the panel at the very center, on the east side. The names begin
+  there, with the earliest dead, and they run in the order people died, east along the
+  wall to its far end. Then they pick up again at the far west end, and run back toward
+  you.
+
+  So the last names on the wall finish right here, beside the first.
+
+  The Park Service puts it plainly. The first are with the last.
+
+  And in the stone, in the middle of all of them, is you.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Frequently Asked Questions: How are the names arranged on the wall?"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/vive/faqs.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "[Vietnam Veterans Memorial. Competition drawing], Maya Lin, competition entry no. 1026, catalogue record and exhibit captions"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/97505164/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

@@ -1,0 +1,76 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Paul Revere Mall at the Hanover Street end, beside the equestrian statue; public park.
+# Position: Overture "Paul Revere Statue" (42.36558, -71.05326), consistent with the Paul Revere Mall centre (42.36586, -71.05378) and the Hanover Street luggage-store entry named after the statue (medium confidence).
+id: boston-the-poem-that-built-a-statue
+title: "The Poem That Built a Statue"
+summary: "Cyrus Dallin won the commission for this Paul Revere statue in 1884, at twenty-three. It went up in 1940, after he wrote a poem."
+place: "Paul Revere statue, Paul Revere Mall, North End, Boston, Massachusetts"
+at: { lat: 42.36558, lng: -71.05326 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, north-end, paul-revere, statues, sculpture]
+teaser: "This statue was designed in 1884. Look at the date it went up."
+script: |
+  Look at the rider. When this design was first described, it was Revere stopping for a
+  moment in the middle of his ride, to warn the people.
+
+  It won a competition in eighteen eighty-four. Ten models were entered. The winner
+  was a sculptor from Utah, twenty-three years old, who had come to Boston a few years before
+  with no money at all.
+
+  The newspapers announced the winner and got his name wrong. They called him Charles Dillon.
+  His name was Cyrus Dallin.
+
+  On the Fourth of July, eighteen eighty-five, he signed a contract for a bronze to stand in
+  Copley Square. The money was supposed to come from public subscription. It never did.
+
+  Dallin became one of the best-known sculptors in the country. He kept asking Boston about
+  his statue. Boston kept being sympathetic.
+
+  After more than half a century, he tried something new. He wrote a poem, in the rhythm of
+  Longfellow.
+
+  Listen, my children, and you shall hear, of the ignoble failure of Boston to rear, the
+  greatest creation of my long career, the equestrian statue of Paul Revere.
+
+  The city found the money. In September nineteen forty, fifty-five years after the contract,
+  this statue was unveiled here. Dallin was seventy-eight.
+
+  He said it was the poem that did it. It was probably the only poem he ever wrote.
+pronunciations:
+  - written: Dallin
+    say: DAL-in
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Revere's Statue: Description of the Proposed Work, The Salt Lake Herald, 30 November 1884, page 3"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn85058130/1884-11-30/ed-1/?sp=3
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Dallin's Paul Revere Wins at Last, Springfield Weekly Republican, 11 January 1940, page 3"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83020847/1940-01-11/ed-1/?sp=3
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Whiting's Boston Letter, Springfield Weekly Republican, 10 October 1940, page 9"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83020847/1940-10-10/ed-1/?sp=9
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Cyrus E. Dallin and the Paul Revere model, The Frontier, O'Neill, Nebraska, 18 April 1940, page 2"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/2010270509/1940-04-18/ed-1/?sp=2
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Paul Revere Rides Again, The Guardian, Boston, 14 September 1940, page 4"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045863/1940-09-14/ed-1/?sp=4
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts

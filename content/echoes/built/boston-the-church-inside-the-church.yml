@@ -1,0 +1,61 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public sidewalk on Tremont Street at the corner of School Street, in front of the chapel's portico.
+# Position: Offset from the Overture place for King's Chapel, 58 Tremont Street, to the Tremont and School street corner (medium confidence).
+id: boston-the-church-inside-the-church
+title: "The Church Inside the Church"
+summary: "King's Chapel was built around the old wooden church, while the congregation kept worshipping inside it."
+place: "King's Chapel, Tremont and School streets, Boston, Massachusetts"
+at: { lat: 42.35795, lng: -71.06035 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, kings-chapel, architecture]
+teaser: "Look at the stone. Nobody quarried it."
+script: |
+  Look at the walls of King's Chapel. Dark, rough blocks of stone.
+
+  Nobody quarried them. There were no quarries yet. The stone was gathered off the surface
+  of the ground in Braintree, south of here, and the builders had little skill at dressing
+  it. That is why it looks the way it does.
+
+  Now picture this corner in the summer of seventeen forty nine.
+
+  There is already a church here. A wooden one, old and decaying. The governor lays the
+  cornerstone for a new stone chapel, gives the workmen money to drink his health, and then
+  walks inside the old wooden church for a service.
+
+  Because the plan was not to pull the old church down first.
+
+  The plan was to build the new one around it.
+
+  So for nearly four years the congregation kept worshipping in a wooden church while stone
+  walls went up on every side of them. Only when the old building was too far gone did they
+  move out, and borrow somebody else's.
+
+  By the summer of seventeen fifty four the stone chapel was in use. The pulpit was carried
+  over from the old church into the new one.
+
+  Most buildings replace the one before them. This one swallowed it.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01012230/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "A brief sketch of the history of King's Chapel (1898)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/07030336/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Freedom Trail Audio Described Brochure"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/planyourvisit/freedom-trail-audio-described-brochure.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

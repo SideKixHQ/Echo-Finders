@@ -1,0 +1,72 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Morrell Park at the east end of River Street, beside the Waving Girl statue.
+# Position: Overture "Savannah's Waving Girl Statue" historic-site point in Morrell Park; a second Overture point at 220 E River St is an address geocode and was not used (medium confidence).
+id: savannah-waving-girl
+title: "Every ship, for forty-four years"
+summary: "Florence Martus waved at every ship entering or leaving Savannah from 1887 to 1931, a cloth by day and a lantern by night."
+place: "Waving Girl statue, Morrell Park, River Street, Savannah, Georgia"
+at: { lat: 32.07993, lng: -81.08416 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 86
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, riverfront, women, shipping]
+teaser: "Sailors had a story about why she waved. She did not confirm it."
+script: |
+  Look at the statue, waving at the river.
+
+  Her name was Florence Martus. She was born in eighteen sixty eight on Cockspur Island, at the mouth of this river, the daughter of a sergeant at Fort Pulaski. As a small child she waved her handkerchief at the passing ships, and the sailors waved back.
+
+  A few years later she went to live with her brother George, a lightkeeper, in a cottage on Elba Island, between here and the sea. And she kept waving. A cloth by day. A lantern by night. Every ship in. Every ship out.
+
+  The ships answered. Steamers gave three blasts of the whistle. Sailing ships dipped their flags. A reporter wrote that a letter addressed only to the Waving Girl would probably reach her from anywhere in the world.
+
+  The sailors had a story about why. A sweetheart lost at sea, they said, and she waved so that she would be the first to greet him when he came home.
+
+  She never confirmed it. In nineteen twenty three she told a reporter that the sailors were all her sweethearts.
+
+  In nineteen thirty one her brother retired, and she came ashore with him. She had been waving for forty four years.
+
+  She died in nineteen forty three. Here, she is still at it.
+pronunciations:
+  - written: Martus
+    say: MAR-tus
+  - written: Cockspur
+    say: COCK-spur
+  - written: Pulaski
+    say: puh-LAS-kee
+detail: >-
+  The statue is by Felix de Weldon. Newspapers in 1931 and 1936 retold the lost-sweetheart
+  story as sailors' legend; Martus and her brother declined to confirm it.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Florence Martus"
+    publisher: "National Park Service, Fort Pulaski National Monument"
+    url: https://www.nps.gov/people/florence-martus.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "\"Waving Girl\" keeps her vigil in Savannah harbor 30 years, The Washington daily news, May 5, 1923, image 5"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn82016181/1923-05-05/ed-1/?sp=5
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Lovelorn salutes by \"Waving Girl\" to vessels ended, Evening star, June 1, 1931, image 22"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn83045462/1931-06-01/ed-1/?sp=22
+    retrievedAt: "2026-10-15"
+    rights: fair-use-facts
+  - title: "Spent her lifetime waving at sailors, Detroit evening times, May 23, 1943, image 84"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn88063294/1943-05-23/ed-1/?sp=84
+    retrievedAt: "2026-10-15"
+    rights: fair-use-facts
+  - title: "Felix de Weldon's Waving Girl statue on Savannah, Georgia's, waterfront"
+    publisher: "Carol M. Highsmith Archive, Library of Congress"
+    url: https://www.loc.gov/item/2017880364/
+    retrievedAt: "2026-10-15"
+    rights: fair-use-facts

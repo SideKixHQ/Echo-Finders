@@ -1,0 +1,63 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Public sidewalk on 14th Street NW along the east side of the Willard hotel, near Pennsylvania Avenue.
+# Position: 14th Street sidewalk beside the hotel; Overture's Willard entries at 1401 Pennsylvania Ave NW cluster at 38.8963-38.8968, -77.0323 to -77.0325, with the Pershing statue on 14th Street at -77.03236 (medium confidence).
+id: dc-written-in-the-dark
+title: "Written in the Dark"
+summary: "Julia Ward Howe wrote the Battle Hymn of the Republic on this corner, in the dark, half asleep."
+place: "The Willard hotel, 14th Street and Pennsylvania Avenue NW, Washington, D.C."
+at: { lat: 38.89665, lng: -77.03215 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, willard, civil-war]
+teaser: "Look up at the windows of the Willard."
+script: |
+  Look up at the windows of the Willard.
+
+  In November eighteen sixty-one, Julia Ward Howe was a guest at the hotel on this corner.
+  The Civil War had begun, and she had come to Washington with her husband to see the war
+  effort for themselves, and to meet President Lincoln.
+
+  One night, she woke from a dream with a poem in her head. Years later, she described what
+  she did next.
+
+  With a sudden effort, she wrote, I sprang out of bed, and found in the dimness an old
+  stump of a pen. I scrawled the verses almost without looking at the paper.
+
+  The Atlantic Monthly printed them in February. People sang them to the tune of the John
+  Brown song, and they still do.
+
+  The building has changed. The old Willard was replaced at the turn of the century, on the
+  same corner, under the same name.
+
+  The song has not. You probably know the first line. Mine eyes have seen the glory.
+
+  She wrote it without looking.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Julia Ward Howe"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/julia-ward-howe.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Willard Hotel, 1401-1409 Pennsylvania Avenue Northwest, HABS DC-293, written historical and descriptive data"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/dc0300/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Willard Hotel is Subject of Display in American Treasures Exhibition"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/prn-06-072/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Battle Hymn of the Republic, from the February Atlantic Monthly, Worcester Daily Spy, January 27, 1862, image 1"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83021205/1862-01-27/ed-1/?sp=1
+    retrievedAt: "2026-10-14"
+    rights: public-domain

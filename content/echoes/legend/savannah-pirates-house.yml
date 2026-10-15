@@ -1,0 +1,58 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Public sidewalk on East Broad Street outside the Pirates' House, at the edge of the old Trustees' Garden.
+# Position: Overture "The Pirates' House" point at 20 E Broad St, matched by its gift-shop entry at the same address (medium confidence).
+id: savannah-pirates-house
+title: "Where Captain Flint died, if he did"
+summary: "Stevenson sent Captain Flint to die of rum at Savannah. By 1951, tradition had found him an upstairs room here."
+place: "The Pirates' House, 20 East Broad Street, Savannah, Georgia"
+at: { lat: 32.07820, lng: -81.08408 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 95
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published tradition. Captain Flint is a fictional character; Treasure Island places his death
+  at Savannah but names no house. The upstairs-room tradition and the ghost are reported in 1951 as
+  "tradition" and "said to"; the 1753 inn claim is the house's own account. The script says
+  plainly that none of it is proven.
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, pirates, literature, ghosts]
+teaser: "Stevenson gave Captain Flint a death in Savannah, but no address."
+script: |
+  This low old building calls itself the Pirates' House. Before you go in, it is worth knowing which parts of that are history, and which are a very good story.
+
+  Start with the book. In Treasure Island, published in eighteen eighty three, Robert Louis Stevenson gives his pirate captain, Flint, a death but no grave. Billy Bones says Flint handed him the map at Savannah, when he lay dying. Long John Silver puts it more bluntly. Flint died of rum at Savannah.
+
+  That is all Stevenson says. He never names a house. And Flint never existed.
+
+  The house came later. In February nineteen fifty one, the food editor of a Sunday magazine in the Washington Evening Star wrote about the newly restored tavern here, in the old Trustees' Garden. Tradition has it, the article said, that the man Stevenson based Flint on died in an upstairs bedroom of the old inn. And Flint's ghost is said to haunt the area on moonless nights.
+
+  The house tells its own story too. It says it opened in seventeen fifty three as an inn for seafarers, and soon became a meeting place for pirates and sailors back from ports around the world.
+
+  None of that is proven. Not the inn's pirates, not the real man behind Flint, and certainly not the ghost.
+
+  But Stevenson did send Flint to Savannah to die. Savannah has been happy to find him a room.
+pronunciations:
+  - written: Stevenson
+    say: STEE-ven-sun
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Treasure Island (Robert Louis Stevenson, 1883)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/50041964/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Evening star (Washington, D.C.), February 18, 1951, image 122: This Week magazine, an old house where pirates met"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn83045462/1951-02-18/ed-1/?sp=122
+    retrievedAt: "2026-10-15"
+    rights: fair-use-facts
+  - title: "The Pirates' House, a historic restaurant location in Savannah, Georgia, established in 1753, opened as an inn for seafarers"
+    publisher: "Carol M. Highsmith Archive, Library of Congress"
+    url: https://www.loc.gov/item/2017880450/
+    retrievedAt: "2026-10-15"
+    rights: fair-use-facts

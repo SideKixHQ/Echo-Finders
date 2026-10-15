@@ -1,0 +1,58 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core. Replaces "The Curse of Billy Penn", which could not be sourced from any reachable page.
+# Listening spot: Public sidewalk on Dock Street beside the rounded east end of the Merchants' Exchange.
+# Position: Overture "Merchants' Exchange Building" (39.94722, -75.14623, 143 S 3rd St) moved about 55 m east to the Dock Street side of the triangular site described by NPS (medium confidence).
+id: philadelphia-the-street-that-was-a-creek
+title: "The Street That Was a Creek"
+summary: "Dock Street bends in a city of right angles, because it follows a creek William Penn once came up in a boat."
+place: "Dock Street at the Merchants' Exchange, Philadelphia, Pennsylvania"
+at: { lat: 39.94740, lng: -75.14565 }
+triggerRadiusKm: 0.04
+category: land
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, old-city, dock-creek, merchants-exchange, waterways]
+teaser: "Every street here runs straight. Except this one."
+script: |
+  Every street around here runs straight, at right angles, the way William Penn liked it. Except the one you are standing on. Dock Street bends.
+
+  Now look at the building beside you. Its end is not flat. It is round, a curve of stone columns with a little round lantern on top. This is the Merchants' Exchange, finished in the eighteen thirties, and its architect fitted it onto a triangle of ground between Third Street, Walnut Street, and this odd curving road.
+
+  So why does the road curve?
+
+  When Penn first came to Philadelphia, he left the big ship out on the Delaware and went up a creek in a skiff. That creek ran here. Dock Creek. In the seventeen nineties the city covered it over, and the street took its line.
+
+  Before this building, merchants did their deals in coffee houses and taverns down by the river. This was the first large building in the city put up for doing business. Ships' cargoes changed hands in it. So did stocks. The Philadelphia Stock Exchange met here.
+
+  Penn came up this line in a small boat. A hundred and fifty years later, the city's money was following it too.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Dock Creek"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/dock-creek.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Merchants' Exchange Building"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-merchantsexchange.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Philadelphia Exchange. (lithograph, catalogue description)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/2021670211/
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Market Street, Philadelphia; the most historic highway in America, its merchants and its story, by Joseph Jackson (1918)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/18015276/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Book of Philadelphia, by Robert Shackleton (1918)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/19000869/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

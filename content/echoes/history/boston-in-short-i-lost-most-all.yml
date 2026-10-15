@@ -1,0 +1,62 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: City Square Park, Charlestown, beside the exposed foundations of the Great House and Three Cranes Tavern; public park.
+# Position: Estimated centre of City Square Park from surrounding Overture entries (10 and 20 City Square to the east, 90 Main St and the Warren Tavern to the north-west, the former City Square MBTA point to the south); the park itself is not in the places file (low confidence; check on site).
+id: boston-in-short-i-lost-most-all
+title: "In Short, I Lost Most All"
+summary: "The British burned Charlestown during the Battle of Bunker Hill. A tavern's foundations in this park are almost all that is left."
+place: "City Square Park, Three Cranes Tavern foundations, Charlestown, Boston, Massachusetts"
+at: { lat: 42.37290, lng: -71.06245 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 87
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, charlestown, bunker-hill, revolution, archaeology]
+teaser: "Look for the old foundations in this park. They are most of what is left of a town."
+script: |
+  Look for the old stone foundations in this park. They belonged to the Great House, later the
+  Three Cranes Tavern. In seventeen seventy-five this was the middle of Charlestown.
+
+  That spring, about sixteen hundred people lived here. Wooden houses, workshops, warehouses,
+  narrow streets, a ferry across to Boston.
+
+  By June, most of them had gone. The British army was shut up in Boston, the colonial army
+  was gathering outside, and Charlestown sat in between.
+
+  On the seventeenth of June, the militia dug in on the hill above the town. During the
+  battle, colonial soldiers fired on the British from the empty houses. General William Howe
+  ordered the town set on fire.
+
+  A British general, John Burgoyne, had been directing guns from Copp's Hill, across the
+  water. He wrote that the timber church steeples were great pyramids of fire above the rest.
+
+  Afterwards, more than four hundred and fifty families listed what they had lost. One man,
+  Willson Chamberlain, began his list and ran out of room on the paper. He ended it with one
+  line.
+
+  In short, I lost most all that I had.
+
+  The town asked Congress to pay. Congress said it lamented the distress. Nobody was ever
+  compensated.
+
+  Of the town Chamberlain lost, this is what you can still see. A tavern's foundations, in a
+  park.
+pronunciations:
+  - written: Burgoyne
+    say: bur-GOYN
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Burning of Charlestown"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/the-burning-of-charlestown.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Copp's Hill Burying Ground"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/copp-s-hill-burying-ground.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

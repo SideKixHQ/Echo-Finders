@@ -1,0 +1,63 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Independence Square, south of Independence Hall, looking up at the brick tower and steeple; the open part of the square is reachable from Walnut Street.
+# Position: Overture "Independence Hall" (39.94888, -75.14997); spot set about 55 m south in the square, below the tower on the hall's south face (medium confidence).
+id: philadelphia-the-bell-went-to-allentown
+title: "The Bell Went to Allentown"
+summary: "In 1777 the State House bell was lowered from this tower and hauled north ahead of the British army."
+place: "Independence Hall tower, Independence Square, Philadelphia, Pennsylvania"
+at: { lat: 39.94835, lng: -75.14995 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, independence-mall, independence-hall, liberty-bell, revolution]
+teaser: "The wagon carrying the bell broke down in the street."
+script: |
+  Look up at the tower on the back of the hall. The brick part is original, from the seventeen fifties. The wooden steeple on top came later.
+
+  In September, seventeen seventy-seven, a British army was closing in on Philadelphia. Before it arrived, the State House bell was taken down from up there, to keep it out of British hands. It was not the Liberty Bell yet. Nobody would call it that for almost sixty years.
+
+  It went north in a wagon, in a train of about seven hundred wagons carrying the army's heavy baggage, guarded by two hundred soldiers from Virginia and North Carolina. Through Germantown, through Bethlehem, to Allentown.
+
+  A diary kept in Bethlehem that autumn has one line about it. September the twenty-ninth. The wagon which conveyed the State House bell broke down in the street, and had to be unloaded.
+
+  They got it moving again. It spent the winter in Zion's Church in Allentown, while the British held this city, and it came home in June, seventeen seventy-eight, after they had gone.
+
+  The bell got through a war without a scratch. What finally silenced it, in eighteen forty-six, was a repair job for Washington's birthday.
+pronunciations:
+  - written: Allentown
+    say: AL-en-town
+  - written: Zion's
+    say: ZY-unz
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Independence Hall Tower and Steeple FAQs"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/tower-faqs.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Liberty Bell"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Liberty bell, Independence hall, Philadelphia (Charles S. Keyser, 1901)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01028082/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The story of the Liberty bell (Wayne Whipple, 1910)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/10030089/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Liberty bell, its history, associations and home (E. R. Gudehus, 1915)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/16006838/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

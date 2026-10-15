@@ -1,0 +1,61 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: South sidewalk of Queen Street beside the Dock Street Theatre, just west of Church Street, looking at the corner balcony.
+# Position: On the Queen Street centreline from Overture road segments, about fifty metres west of Church Street, nudged to the theatre's side; Overture place point for the theatre (135 Church St) sits on the corner (medium confidence).
+id: charleston-the-playhouse-on-dock-street
+title: "The Playhouse on Dock Street"
+summary: "America's first building made for theatre stood on this side of the block in 1736. You are on the street it was named for."
+place: "Dock Street Theatre, Church and Queen streets, Charleston, South Carolina"
+at: { lat: 32.77818, lng: -79.92990 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 89
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, french-quarter, theatre, colonial]
+teaser: "The sign says Dock Street Theatre. Look at the street sign. You are on Queen Street."
+script: |
+  Look up at the iron balcony on the corner. The name on the building is the Dock Street
+  Theatre.
+
+  Now look at the street sign. You are standing on Queen Street.
+
+  Queen Street used to be called Dock Street. And on this side of the block, in seventeen
+  thirty-six, Charleston put up a building for one purpose only. Plays. It is said to have
+  been the first building in America made for the theatre.
+
+  Nobody was building a monument. A history of the city written in nineteen-oh-six says the
+  early playhouses here were described as temporary, and were probably not much more than
+  barns. Planters and merchants came to watch tragedies, and Addison's Cato, and a comedy
+  called The Recruiting Officer, put on by special request of the local militia.
+
+  The barn is long gone. The building in front of you started life around eighteen-oh-nine
+  as the Planter's Hotel, where planters from up-country stayed for the horse-racing season.
+  Then, in the nineteen-thirties, the city restored it as a Works Progress Administration
+  project. It built an eighteenth-century style theatre into the back of the old hotel, and
+  gave the whole thing the old playhouse's name.
+
+  So America's first theatre is a story told by a hotel, about a barn, on a street that
+  changed its name.
+
+  For a theatre, that seems about right.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Dock Street Theatre"
+    publisher: "National Park Service, Travel Historic Charleston"
+    url: https://www.nps.gov/places/dock-street-theatre.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston Community History"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/charleston-community-history.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the early playhouses"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/06042434/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

@@ -1,0 +1,60 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: West edge of Madison Square on Bull Street, facing the Green-Meldrim House at the corner of Bull and Macon.
+# Position: HABS record coordinates and the Overture building footprint agree within 7 m; spot set on the Bull Street side between the house and the square (high confidence).
+id: savannah-a-city-for-christmas
+title: "A City for Christmas"
+summary: "From this house, Sherman's headquarters, came the most famous Christmas present of the Civil War."
+place: "Green-Meldrim House, Madison Square, Savannah, Georgia"
+at: { lat: 32.07375, lng: -81.09435 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, civil-war, squares, lincoln]
+teaser: "Not many Christmas presents come with an inventory."
+script: |
+  Look at the house on the corner, with the iron porches and the battlements along the roofline. It was begun in eighteen fifty-three for Charles Green, in the Gothic style, and finished in eighteen sixty-one.
+
+  On the twenty-second of December, eighteen sixty-four, it became the headquarters of General William Tecumseh Sherman. His army had marched from Atlanta to the sea, and Savannah was his.
+
+  That same day, Sherman dated a telegram to President Lincoln.
+
+  It went by way of Fort Monroe, in Virginia, and it is marked from there on the twenty-fifth. Christmas Day.
+
+  It reads, I beg to present you as a Christmas gift the City of Savannah, with one hundred and fifty heavy guns and plenty of ammunition, and also about twenty-five thousand bales of cotton.
+
+  Lincoln answered the day after Christmas. Many, many thanks for your Christmas gift, he wrote. He admitted that when Sherman left Atlanta for the coast, he had been anxious, if not fearful.
+
+  Sherman kept his headquarters in this house until the first of February.
+
+  The telegram, and a copy of the reply, are in the Library of Congress. Not many Christmas presents come with an inventory.
+editorial: draft
+factCheck: unchecked
+pronunciations:
+  - written: Meldrim
+    say: MEL-drim
+sources:
+  - title: "Green-Meldrim House, 327 Bull Street, Savannah (HABS GA-222): record and data pages"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/ga0144/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "William T. Sherman to Abraham Lincoln, 22 December 1864 (telegram offering Savannah as a Christmas present)"
+    publisher: "Library of Congress, Abraham Lincoln Papers"
+    url: https://www.loc.gov/item/mal3954500/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Abraham Lincoln to William T. Sherman, 26 December 1864"
+    publisher: "Library of Congress, Abraham Lincoln Papers"
+    url: https://www.loc.gov/item/mal3954600/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah"
+    publisher: "National Park Service, Fort Pulaski National Monument"
+    url: https://www.nps.gov/fopu/learn/historyculture/savannah.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain

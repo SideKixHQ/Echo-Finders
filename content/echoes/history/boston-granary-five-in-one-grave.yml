@@ -1,0 +1,57 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Tremont Street sidewalk at the Granary Burying Ground gate, or just inside during opening hours; the shared stone faces Tremont Street.
+# Position: Estimated midpoint of the Tremont Street frontage between Park Street Church and Tremont Temple from Overture points; the Overture Granary point sits at the ground's centre, so the gate is inferred (medium confidence).
+id: boston-granary-five-in-one-grave
+title: "Five Men, One Stone"
+summary: "The Boston Massacre dead were buried together here, followed by most of the town."
+place: "Granary Burying Ground, Tremont Street, Boston, Massachusetts"
+at: { lat: 42.35720, lng: -71.06128 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 48
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, revolution, boston-massacre, burial-ground]
+teaser: "Look for a stone that faces Tremont Street. It belongs to five men."
+script: |
+  Look for a stone that faces Tremont Street. It belongs to five men.
+
+  On the fifth of March, seventeen seventy, British soldiers fired into a crowd on King
+  Street. Three days later, Boston buried the dead.
+
+  Witnesses said around ten thousand people followed the funeral. That was most of the town.
+
+  The procession ended here. Samuel Gray, Samuel Maverick, James Caldwell and Crispus
+  Attucks went into the same plot. A week later a fifth man, Patrick Carr, was laid in with
+  them.
+
+  Two of them, Attucks and Caldwell, were sailors with no family and no home in Boston.
+  Before the funeral, their bodies lay in state at Faneuil Hall.
+
+  Nobody in Boston was their family. That week, the whole town was.
+pronunciations:
+  - written: Attucks
+    say: AT-ucks
+  - written: Faneuil
+    say: FAN-yul
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Boston Massacre"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/boston-massacre.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Crispus Attucks"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/crispus-attucks.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Granary Burying Ground"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/granary-burying-ground.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

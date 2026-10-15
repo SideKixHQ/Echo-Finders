@@ -1,0 +1,65 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: The path in front of the Bunker Hill Monument beside the William Prescott statue; National Park Service grounds, open daily.
+# Position: No mapped point for the statue; placed on the approach just south-east of the Overture "Bunker Hill Monument" point (42.37616, -71.06082), where the NPS describes the Prescott statue on the grounds (low confidence; check on site).
+id: boston-the-whites-of-their-eyes
+title: "The Whites of Their Eyes"
+summary: "The most famous order of the Battle of Bunker Hill is credited to Prescott, or to Putnam. Nobody can show either said it."
+place: "William Prescott statue, Bunker Hill Monument grounds, Charlestown, Boston, Massachusetts"
+at: { lat: 42.37590, lng: -71.06058 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 65
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  The order "don't fire until you see the whites of their eyes" is credited by some to
+  Colonel William Prescott and by others to General Israel Putnam (NPS, Israel Putnam); the
+  NPS article on Prescott calls it possibly a myth. What the sources support is that officers
+  told the men to hold their fire and fire together. The script says this out loud.
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, charlestown, bunker-hill, revolution, quotations]
+teaser: "Everyone knows the order. Nobody can show who gave it."
+script: |
+  The bronze figure on these grounds is Colonel William Prescott. He is shown walking
+  along the top of an earth wall, the way witnesses said he did at dawn, while British cannon
+  fired at it.
+
+  Prescott commanded the earthwork on this hill. And he usually gets the credit for the most
+  famous order of the battle.
+
+  Don't fire until you see the whites of their eyes.
+
+  Here is the trouble. Nobody can show that he said it.
+
+  Some accounts give the line to Prescott. Others give it to General Israel Putnam. The park
+  service, which looks after this hill, calls it possibly a myth.
+
+  What the record supports is plainer. Wait. Do not waste a shot on men too far away. Fire
+  together, on the signal.
+
+  Whatever was actually shouted, officers passed it along the line. And when the British
+  came up the slope, more than fourteen hundred men fired at once.
+
+  The words may be a legend.
+
+  The waiting was real.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "William Prescott"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/william-prescott.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Israel Putnam"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/israel-putnam.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Bunker Hill - Prescott Statue"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/bunker-hill-prescott-statue.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

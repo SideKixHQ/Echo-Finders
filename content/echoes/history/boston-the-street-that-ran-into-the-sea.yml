@@ -1,0 +1,61 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public walkway on Long Wharf near its landward end, facing back up State Street.
+# Position: Overture place "The Landing at Long Wharf", 1 Long Wharf, nudged onto the public wharf (medium confidence).
+id: boston-the-street-that-ran-into-the-sea
+title: "The Street That Ran into the Sea"
+summary: "Long Wharf was built as King Street carried straight out into the harbour. In 1768 an army marched up it."
+place: "Long Wharf, foot of State Street, Boston, Massachusetts"
+at: { lat: 42.35990, lng: -71.05000 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 94
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, waterfront, harbour, revolution, long-wharf]
+teaser: "Turn around and look straight up State Street."
+script: |
+  You are on Long Wharf. Turn around and look back toward the city, straight up State
+  Street. If the view is clear, the old brick State House sits at the far end.
+
+  That straight line is the whole idea.
+
+  When this wharf was begun, around seventeen ten, it was laid out as the main street
+  carried on into the harbour. King Street, it was called then, and the wharf was built to
+  the same width. The street simply kept going into the sea.
+
+  And it went a long way. Close to two thousand feet. About a third of a mile, with
+  warehouses along one side nearly the whole length. A ship could tie up at the end, and a
+  merchant could step off the deck and walk one straight road to the Town House.
+
+  The landward end of the old wharf is now under solid ground. The city filled in along the
+  shore and ran a new avenue across the heads of the wharves, so what you are standing on is
+  only part of the original.
+
+  It was built for cargo.
+
+  On the first of October, seventeen sixty eight, warships anchored off this wharf and put
+  two regiments of British soldiers ashore, sent to bring an unruly town to heel. They
+  marched into town with drums beating and bayonets fixed.
+
+  The road built to bring the world into Boston had just brought in an army.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01012230/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "King's hand-book of Boston (1885)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01015801/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Walks & talks about historic Boston (1917)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/17025471/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

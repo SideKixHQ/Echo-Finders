@@ -1,0 +1,62 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: South side of Constitution Avenue at 6th Street NW, facing the National Gallery of Art West Building.
+# Position: Intersection of 6th St NW and Constitution Ave from the known street grid; the 1939 Evening Star puts the depot at "Sixth and B streets (the latter now Constitution avenue)" under part of the Gallery; the exact footprint is not pinned (medium confidence).
+id: dc-the-ladies-waiting-room
+title: "The Ladies' Waiting Room"
+summary: "President Garfield was shot in a railroad depot that stood here in 1881; part of the National Gallery of Art now covers the site."
+place: "National Gallery of Art West Building, Constitution Avenue and 6th Street, Washington, D.C."
+at: { lat: 38.89218, lng: -77.01990 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 77
+visibility: position-only
+certainty: documented
+minAge: 12
+quality: 0.75
+tags: [washington, dc-core, national-mall, presidents, railways]
+teaser: "Stand on Constitution Avenue at Sixth Street and look at the gallery in front of you."
+script: |
+  Stand on Constitution Avenue at Sixth Street and look at the gallery in front of you.
+
+  A railroad station stood here once, the Baltimore and Potomac depot. This avenue was
+  called B Street then.
+
+  At about half past nine on the morning of the second of July, 1881, President James
+  Garfield came here to catch a train north. He was walking through the ladies' waiting
+  room, arm in arm with his Secretary of State, when a man named Charles Guiteau shot him
+  twice.
+
+  The doctors probed for one of the bullets and could not find it. The bulletins they put
+  out were hopeful. For eighty days the president declined, from spreading infection, and
+  he died on the nineteenth of September.
+
+  He had kept a diary all his life. The entry for the first of July, the day before the
+  shooting, was the last he ever wrote.
+
+  The station is gone. In 1939, as this gallery was going up, a Washington columnist noted
+  that part of the enormous building would cover the site, and that very few visitors
+  would ever remember.
+
+  Somewhere under the building in front of you, there was a waiting room.
+pronunciations:
+  - written: Guiteau
+    say: gih-TOH
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Assassination of President Garfield Stirred Capital 58 Years Ago Today, by John Clagett Proctor. Evening Star, 2 July 1939, page 22 (Chronicling America)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/resource/sn83045462/1939-07-02/ed-1/?sp=22
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "James A. Garfield Papers: timeline and featured items"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/collections/james-a-garfield-papers/articles-and-essays/timeline/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Assassination and Death of President James A. Garfield"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/jaga/learn/historyculture/assassination-and-death-of-president-james-a-garfield.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

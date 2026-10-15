@@ -1,0 +1,54 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk at the corner of Esplanade Avenue and North Rampart Street.
+# Position: Fitted Esplanade Ave (600-1100 block points, rms 21 m) and N Rampart (1000-1500 block points) intersection (medium confidence).
+id: new-orleans-named-for-empty-ground
+title: "Named for Empty Ground"
+summary: "Esplanade Avenue, the grand street of Creole New Orleans, takes its name from the cleared ground outside a fort."
+place: "Esplanade Avenue at North Rampart Street, New Orleans, Louisiana"
+at: { lat: 29.96599, lng: -90.06355 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 60
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, esplanade, fortifications, creole]
+teaser: "The best address in Creole New Orleans is a military word."
+script: |
+  Look down Esplanade Avenue, toward the river. The trees, the wide middle, the old houses on both sides.
+
+  A guidebook of nineteen hundred and four said this avenue was to the Creoles what St. Charles Avenue was to the Americans. Their grand residence street.
+
+  The name is older than the houses, and it is a soldier's word.
+
+  Right here, where Rampart now crosses Esplanade, the Spanish governor Carondelet put up a fort in seventeen ninety-six. Fort St. Ferdinand. It was part of a ring of defenses around the town.
+
+  An esplanade is the open, cleared ground that lies outside a line of fortifications like that. Flat, bare and empty. That is what this was.
+
+  The fort was taken down early in the eighteen-hundreds, and the town spread out across the cleared ground.
+
+  So the finest address in Creole New Orleans is named for the space that was meant to stay empty.
+detail: |
+  The 1913 Picayune guide calls Esplanade the principal residence street of the French
+  Quarter and says Fort St. Ferdinand was dismantled in the early part of the nineteenth
+  century; the Rampart Street defenses did not wholly disappear until 1820.
+pronunciations:
+  - written: Esplanade
+    say: ESS-pluh-nade
+  - written: Carondelet
+    say: kuh-RON-duh-let
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), Esplanade Avenue, from the river to Rampart Street"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/13004346/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Esplanade Avenue"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

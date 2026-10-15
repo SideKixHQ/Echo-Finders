@@ -1,0 +1,38 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: The Cistern Yard at the College of Charleston, under the oaks, looking toward the columned front of Randolph Hall. Campus grounds, open to walkers.
+# Position: Estimated between the George St frontage (Overture points for 66 George St) and the main building, south of George St; the yard itself is not in the places file (low confidence).
+id: charleston-the-yard-named-for-a-water-tank
+title: "The Yard Named for a Water Tank"
+summary: "The college's buildings were named for people. Its central green was named for the plumbing."
+place: "The Cistern Yard, College of Charleston, Charleston, South Carolina"
+at: { lat: 32.78290, lng: -79.93730 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 60
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, college-of-charleston, architecture]
+teaser: "Randolph Hall, Towell Library, and the Cistern."
+script: |
+  Stand under the oaks and look toward the building with the columns at the end of the green. That is the college's main building, and it has a person's name. Randolph Hall. The old library on the green has a person's name too. Towell.
+
+  The green itself is called the Cistern.
+
+  In the nineteenth century, the college built an oval cistern here to hold its water supply. The name stuck to the whole yard, oaks and all.
+
+  The college is old. It was founded in seventeen seventy, and its founders included three signers of the Declaration of Independence. Its first classes met in former Revolutionary War barracks. The main building went up in eighteen twenty nine. The columns came twenty five years later.
+
+  It is the oldest municipal college in the United States, and a National Historic Landmark.
+
+  And the heart of it is named after a water tank.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "College of Charleston"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/college-of-charleston.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain

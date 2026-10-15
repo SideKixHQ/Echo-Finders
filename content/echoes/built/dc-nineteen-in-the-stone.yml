@@ -1,0 +1,56 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Beside the etched mural wall on the south edge of the Korean War Veterans Memorial, where the patrol is reflected.
+# Position: Just south of the Overture "Korean War Veterans Memorial" point (38.88778, -77.04759), toward the mural wall; matches the known layout (medium confidence).
+id: dc-nineteen-in-the-stone
+title: "Nineteen in the Stone"
+summary: "The Korean War memorial's sculptor first modeled thirty-eight soldiers; nineteen were built, and the polished wall reflects them."
+place: "Korean War Veterans Memorial, Washington, D.C."
+at: { lat: 38.88762, lng: -77.04760 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, national-mall, memorials, korea]
+teaser: "Walk beside the polished wall, and watch the soldiers in the field appear in the stone."
+script: |
+  Walk beside the polished wall, and watch the soldiers in the field appear in the stone.
+
+  There are nineteen of them, out on patrol.
+
+  When the sculptor, Frank Gaylord, first showed his clay models, there were thirty-eight
+  soldiers. They were in the middle of a mission, under fire, in every kind of pose. The
+  Commission of Fine Arts liked the photographs, and worried the figures would become too
+  realistic.
+
+  What was finally built was nineteen.
+
+  The wall beside you carries the faces of the people behind the troops. Nurses,
+  chaplains, sailors, supply crews. More than two thousand four hundred photographs went
+  into it. The architects wrote that as visitors walked down beside it, the etched faces
+  would mix with the reflections of the soldiers.
+
+  So look into the granite now. Count the patrol in the field. Then count it again in the
+  stone.
+
+  Nineteen out there. Nineteen in here.
+
+  The record does not say whether anyone planned it that way.
+
+  But that is thirty-eight.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Design of the Korean War Veterans Memorial"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/kowa/learn/historyculture/design.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Features of the Korean War Veterans Memorial"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/kowa/learn/historyculture/features.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

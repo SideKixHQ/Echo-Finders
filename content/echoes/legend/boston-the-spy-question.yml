@@ -1,0 +1,77 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public plaza between Faneuil Hall and Quincy Market, looking up at the cupola on the hall's east end.
+# Position: East of the Overture place for the Faneuil Hall visitor center, on the plaza facing the cupola end (medium confidence).
+id: boston-the-spy-question
+title: "The Spy Question"
+summary: "Faneuil Hall's gilded grasshopper has topped the cupola since 1742. Legend says it was once used to catch spies."
+place: "Faneuil Hall grasshopper weathervane, Dock Square, Boston, Massachusetts"
+at: { lat: 42.36010, lng: -71.05575 }
+triggerRadiusKm: 0.05
+category: legend
+format: short
+durationS: 88
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The weathervane, its maker and its history are documented by the National Park Service. The
+  spy test is a legend the Park Service itself labels as one; the script says so out loud.
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, faneuil-hall, weathervane, folklore]
+teaser: "Look at the very top of Faneuil Hall. That is not a rooster."
+script: |
+  Look up at Faneuil Hall, at the little tower on the end nearest the harbour, and then at
+  the very tip of it. That gold shape catching the light is not an arrow, and it is not a
+  rooster.
+
+  It is a grasshopper.
+
+  It is about four feet long, hammered out of copper and covered in gold, and it has been up
+  there since seventeen forty two. A craftsman named Shem Drowne made it, probably copying
+  the grasshopper on the Royal Exchange in London.
+
+  It has been knocked off by an earthquake. It has come down in a fire. In the nineteen
+  seventies it was stolen, and after a week of searching it turned up hidden inside the
+  tower it fell from.
+
+  And there is a story about it that nobody has ever proved.
+
+  The story goes that during the War of Eighteen Twelve, with Boston nervous about British
+  spies, a stranger could be stopped and asked one question. What is on top of Faneuil Hall?
+
+  Any Bostonian would know. A spy would have to guess.
+
+  The National Park Service tells that one as a legend, and a legend is what it is.
+
+  But stand here for a minute and watch the people walking past. Count how many of them look
+  up.
+
+  Then decide whether the question would still work.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Faneuil Hall Virtual Tour: Grasshopper Weathervane"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/learn/faneuil-hall-virtual-tour.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Faneuil Hall Audio Described Brochure"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/planyourvisit/faneuil-hall-audio-described-brochure.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01012230/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Walks & talks about historic Boston (1917)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/17025471/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+pronunciations:
+  - written: "Faneuil"
+    say: "FAN-yul"
+  - written: "Drowne"
+    say: "DROWN"

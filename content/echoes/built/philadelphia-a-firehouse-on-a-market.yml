@@ -1,0 +1,50 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Public sidewalk at Second and Pine streets, facing the head house at the north end of the open market shed.
+# Position: Overture "The Shambles" (39.94276, -75.14531, 2nd St & Pine St) and "Head House Square" (39.94213, -75.14532); spot set at the Pine Street end, about 25 m north of the shed's listed point (high confidence).
+id: philadelphia-a-firehouse-on-a-market
+title: "A Firehouse on a Market"
+summary: "The little building at the end of the Second Street market shed housed firemen, not traders."
+place: "Head House and the New Market shed, Second and Pine streets, Philadelphia, Pennsylvania"
+at: { lat: 39.94300, lng: -75.14533 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, society-hill, markets, firefighting, head-house]
+teaser: "A market in the middle of the road, with a firehouse on the end."
+script: |
+  Look down the middle of Second Street. The road splits around a long, open shed on brick pillars. And at this end of it, facing Pine Street, stands a small building of its own.
+
+  It looks like part of the market. The federal building survey records who actually used it. Not traders. Firemen. Two companies, the Hope Hose Company number six, and the Fellowship Engine Company number twenty-nine.
+
+  The market behind it is the New Market. The first section, running south from Pine down the middle of Second, was built in seventeen forty-five, because people in this end of town complained that the old market was too far away. They did not want to cross Dock Creek to reach it.
+
+  By the eighteen thirties, a city guide called it the second market in Philadelphia, for its age and for its food, and it reached all the way to South Street.
+
+  Philadelphia's main street once had sheds like this down its middle too. So many that people stopped calling it High Street and called it Market Street, and in eighteen fifty-three the city made the name official.
+
+  Six years later, the sheds on Market Street came down.
+
+  Second Street kept one. This is what Market Street used to look like.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Hope Hose Company No. 6 & Fellowship Engine Company No. 29 (New Market, Head House), Second Street between Pine & Lombard Streets, Philadelphia (HABS PA-1351)"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/pa0819/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Market Street, Philadelphia; the most historic highway in America, its merchants and its story, by Joseph Jackson (1918)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/18015276/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Picture of Philadelphia (1835), South Second Street Market"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01010570/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

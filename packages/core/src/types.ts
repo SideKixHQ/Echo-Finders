@@ -683,6 +683,13 @@ export interface Route {
    * gets more points.
    */
   readonly waypoints: readonly Waypoint[];
+  /**
+   * The road itself, origin to destination, when it has been traced
+   * (`scripts/build-route-paths.py`). Drives only: waypoints joined by straight lines cut
+   * across every bend, and on a mountain road that put the line, and the corridor echoes
+   * are found in, off the road. Absent, the waypoints are joined as before.
+   */
+  readonly path?: readonly LatLng[];
   /** Scheduled departure, ISO 8601 with offset. */
   readonly departureAt: string;
   /** Expected total duration in seconds, door to door. */

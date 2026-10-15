@@ -1,0 +1,60 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Open lawn on the central paths of Boston Common, near the old Great Elm site; public park.
+# Position: Overture "The Great Elm" historic-site point, cross-checked against the Soldiers and Sailors Monument and Common entries nearby; wide radius for a large place (medium confidence).
+id: boston-common-cows
+title: "The Cows Outlasted the Army"
+summary: "Boston Common was a cow pasture for two centuries, and a British army camp for one winter."
+place: "Boston Common, Boston, Massachusetts"
+at: { lat: 42.35541, lng: -71.06513 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 60
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, boston-common, revolution, farming]
+teaser: "Look at the grass around you. For about two hundred years, this was a pasture."
+script: |
+  Look at the grass around you. For about two hundred years, this was a pasture.
+
+  The town bought the land in sixteen thirty-four, and families grazed their cattle here.
+  There were rules about it. Each family could only put so many cows on the Common, so the
+  grass would not run out.
+
+  On hot days the cows sheltered under a huge old elm. The ground around it was swampy then.
+
+  In the winter of seventeen seventy-five, the Common was taken over by something else.
+  British soldiers dug artillery positions into it, and a garrison of about seventeen
+  hundred men camped here.
+
+  In March they sailed away.
+
+  The cows stayed. They kept grazing this ground for another fifty-four years, until the
+  city banned them in eighteen thirty. The pasture fences came down six years after that.
+
+  The British army held the Common for one winter. The cows held it for two centuries.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Boston Common"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/boston-common-ma.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Evacuation of Boston, 1776"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/evacuation-of-boston-1776.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Chicago Daily Tribune, February 20, 1876, page 5 (the Old Elm on Boston Common)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84031492/1876-02-20/ed-1/?sp=5
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Cows on Boston Common, The Ely Miner, January 9, 1931, page 5"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn90059182/1931-01-09/ed-1/?sp=5
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts

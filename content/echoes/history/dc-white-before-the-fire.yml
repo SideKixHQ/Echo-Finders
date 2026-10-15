@@ -1,0 +1,60 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Pennsylvania Avenue pedestrian plaza, at the north fence of the White House, facing the North Portico.
+# Position: On the closed section of Pennsylvania Avenue due north of the White House centre (Overture 38.89770, -77.03654) and south of Lafayette Square, on the 16th Street axis (high confidence).
+id: dc-white-before-the-fire
+title: "White Before the Fire"
+summary: "The famous story of why the White House is white has a dating problem."
+place: "The White House, north fence on Pennsylvania Avenue, Washington, D.C."
+at: { lat: 38.89880, lng: -77.03655 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, white-house, war-of-1812]
+teaser: "Look through the fence at the north front of the White House."
+script: |
+  Look through the fence at the north front of the White House.
+
+  There is a story about that white paint, and people have been telling it for a long time.
+  In nineteen forty-nine, a Washington newspaper printed it as plain fact.
+
+  It goes like this. On the twenty-fourth of August, eighteen fourteen, British troops set
+  the house on fire. The walls were left stained with smoke. So the house was painted white
+  to hide the stains, and that is how it got its name.
+
+  It is a good story. The dates do not fit it.
+
+  The National Park Service says the house was carrying the name White House from around
+  eighteen eleven. That is three years before the fire.
+
+  The fire itself was real. The outer walls stood, but they were so weakened that little of
+  the original building could be kept.
+
+  And some of the scorched wood had one more journey to make. In nineteen fifty-two, a piece
+  of White House timber, still marked by the British fire, was made into a gavel. With a
+  message of good wishes from President Truman, it was presented to a training centre of
+  the British Army, in England.
+
+  This time, they were invited to take it.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The White House"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/white-house.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Other Repairs to White House Dispossessed Three Presidents, Evening Star, January 16, 1949, image 96"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1949-01-16/ed-1/?sp=96
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "British Army Receives White House Memento, Evening Star, August 22, 1952, image 8"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1952-08-22/ed-1/?sp=8
+    retrievedAt: "2026-10-14"
+    rights: public-domain

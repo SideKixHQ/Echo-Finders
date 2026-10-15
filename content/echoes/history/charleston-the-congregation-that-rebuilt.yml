@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: Calhoun Street sidewalk in front of Mother Emanuel AME Church, looking up at the steeple. A working church; listen from the public sidewalk.
+# Position: Overture point for 110 Calhoun St moved south onto the north sidewalk of Calhoun St, checked against 100, 103, 115 and 117 Calhoun St (medium confidence).
+id: charleston-the-congregation-that-rebuilt
+title: "The Congregation That Rebuilt"
+summary: "A lottery ticket, a plan for freedom in 1822, and a church that was destroyed and kept coming back."
+place: "Mother Emanuel AME Church, Calhoun Street, Charleston, South Carolina"
+at: { lat: 32.78728, lng: -79.93302 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 86
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  The two NPS pages differ on the 1822 plot. The church page gives 313 arrested and says the
+  church was burned; the Denmark Vesey page gives 131 arrested and charged, 67 convicted,
+  calls the plot alleged, and says white Charlestonians tore the church down. Both give 35
+  executed. The script hedges the arrests, the plan and the destruction.
+minAge: 12
+quality: 0.75
+tags: [charleston, charleston-core, denmark-vesey, african-american-history, churches]
+teaser: "It begins with a winning lottery ticket."
+script: |
+  Look up at the steeple. This church was built in eighteen ninety one. The congregation inside it is much older, and for about thirty years it had no legal right to meet at all.
+
+  It begins with a lottery ticket. In seventeen ninety nine, a Charleston carpenter named Denmark Vesey won fifteen hundred dollars, and used it to buy his own freedom.
+
+  Vesey was one of the founders of the African Church, the congregation that became this one. In eighteen twenty two, the authorities said, he was at the centre of a plan for the enslaved people of the city to rise and win their freedom.
+
+  The plan was betrayed before it began. More than a hundred people were arrested. Thirty five men were hanged, Vesey among them. And the church was destroyed. Accounts differ on whether it was burned or torn down.
+
+  The congregation rebuilt. In eighteen thirty four, all Black churches were outlawed, so they met in secret. In eighteen sixty five they organised again, openly, and took a new name. Emanuel.
+
+  On a June evening in two thousand fifteen, nine of its members were killed at Bible study in this building, and the congregation endured that too.
+
+  The building is from eighteen ninety one. The congregation has been rebuilding since eighteen twenty two.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "South Carolina: Mother Emanuel AME Church"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/south-carolina-mother-emanuel-ame-church.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Denmark Vesey"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/denmark-vesey.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Denmark Vesey
+    say: DEN-mark VEE-zee
+  - written: Calhoun Street
+    say: kal-HOON Street

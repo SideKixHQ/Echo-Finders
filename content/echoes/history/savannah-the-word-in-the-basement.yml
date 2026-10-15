@@ -1,0 +1,45 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Public sidewalk in front of the Owens-Thomas House on Abercorn Street, facing the curved entrance stair; the carriage house is reached through the museum.
+# Position: Overture building footprint and HABS record coordinates agree within 12 m; spot set on the Abercorn Street side between the house and Oglethorpe Square (medium confidence).
+id: savannah-the-word-in-the-basement
+title: "One Word in the Survey"
+summary: "The 1930s survey of the Owens-Thomas House measured every curve. The people who were enslaved there got one word."
+place: "Owens-Thomas House, Oglethorpe Square, Savannah, Georgia"
+at: { lat: 32.07735, lng: -81.08965 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, slavery, architecture, museums]
+teaser: "The surveyors measured every curve of this house. Then they got to the basement."
+script: |
+  Start with the front of the house. The curved double stair. The curved porch above it. The cast-iron balcony on the side.
+
+  It was finished in eighteen nineteen, to designs by the English architect William Jay. When surveyors from the Historic American Buildings Survey came here in the nineteen thirties, this is what they wrote about. The curves. The Greek fret on the parlour ceiling. A white marble mantel, carved with women carrying baskets of fruit.
+
+  Then they reached the basement. They listed a kitchen, a bakery, a wine cellar, and servants' quarters.
+
+  That was all. One word. Servants.
+
+  Behind the house stands its original carriage house. The Library of Congress record for this property now describes it as containing one of the earliest intact urban slave quarters in the South. The people who lived and worked there were enslaved by the families in the big house.
+
+  The survey that measured every curve of the staircase did not write down a single one of their names.
+
+  Their rooms are still standing. The house is a museum now, and the quarters are part of it.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Richardson-Maxwell-Owen-Thomas House, 124 Abercorn Street, Savannah (HABS GA-14-9): record and significance statement"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/ga0091/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "HABS GA-14-9 data pages, including the 1936 architectural notes"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/ga/ga0000/ga0091/data/ga0091data.pdf
+    retrievedAt: "2026-10-15"
+    rights: public-domain

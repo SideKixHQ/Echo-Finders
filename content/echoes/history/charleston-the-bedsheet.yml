@@ -1,0 +1,52 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: Harbour edge of Liberty Square by the Fort Sumter ferry dock, looking out over the Cooper River toward the harbour mouth.
+# Position: Water side of Liberty Square, east of the visitor centre point in the Overture places file; NPS names the Planter's wharves but they cannot be located today, so this is the public waterfront nearest the route (low confidence).
+id: charleston-the-bedsheet
+title: "The Bedsheet"
+summary: "In May 1862 an enslaved pilot steamed a Confederate ship out of this harbour with sixteen people aboard."
+place: "Liberty Square waterfront, Charleston, South Carolina"
+at: { lat: 32.79050, lng: -79.92465 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, civil-war, freedom-seekers, waterfront]
+teaser: "Three in the morning, a borrowed straw hat, and the signal for Fort Sumter."
+script: |
+  Look out at the water. The boats to Fort Sumter leave from this wharf, and the harbour runs from here down to the open sea.
+
+  At three in the morning on the thirteenth of May, eighteen sixty two, a Confederate steamer called the Planter began to move away from a Charleston wharf. Her three white officers were ashore for the night. That was against standing orders, and it happened often.
+
+  The men left aboard were enslaved. One of them was a pilot in his early twenties named Robert Smalls.
+
+  They fired the boilers and steamed up the Cooper River to another wharf, where their wives and children were waiting aboard another boat. Sixteen people in all. Then they turned for the sea.
+
+  Smalls put on the captain's coat and straw hat. He knew the signals. He was the pilot. At about a quarter past four the Planter came up to Fort Sumter, with Fort Moultrie across the channel. Smalls gave the signal. The fort let them pass.
+
+  It was not over. As they reached the Union fleet, a warship took them for an attacker and readied its guns. The crew ran a bedsheet up the mast.
+
+  The wharves they left from are gone, and nobody can point to the exact spot now. The water they crossed is in front of you.
+
+  Robert Smalls went on to serve five terms in Congress. That night, all of it hung on a sheet.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Planter"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/the-planter.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Robert Smalls"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/robert-smalls.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Christopher Gadsden"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/christopher-gadsden.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain

@@ -1,0 +1,70 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk outside the Basin Street gate of St. Louis Cemetery No. 1; the cemetery itself is entered only with a licensed guide, so the echo stays at the gate.
+# Position: Midpoint of the cemetery's Basin St frontage between fitted Basin/Conti and Basin/St Louis intersections (Basin rms 9 m), offset to the cemetery-side sidewalk; agrees with Overture points for 425 Basin St (medium confidence).
+id: new-orleans-the-crosses-on-the-tomb
+title: "The Crosses on the Tomb"
+summary: "Marie Laveau's 1881 obituary called her a nurse and never mentioned voodoo. The legend came later, and stayed."
+place: "St. Louis Cemetery No. 1, Basin Street gate, New Orleans, Louisiana"
+at: { lat: 29.95920, lng: -90.07125 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 96
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  Marie Laveau's death, burial in this cemetery and nursing work are from her 1881
+  obituary. The voodoo-queen story, the serpent in the box and the idea that marking her
+  tomb brings luck or a wish are folklore; the script says so out loud. No supernatural
+  claim is made.
+minAge: 10
+quality: 0.75
+tags: [new-orleans, new-orleans-core, treme, marie-laveau, cemetery, folklore]
+teaser: "Her obituary never used the word."
+script: |
+  Look through the gate. Somewhere in there is the tomb of Marie Laveau.
+
+  Start with what the record says. When she died, in June of eighteen eighty-one, a New Orleans obituary was reprinted as far away as Omaha. It said she was buried at five in the evening in her family tomb in this cemetery, followed by a large crowd, the most prominent and the most humble.
+
+  It called her a nurse. In yellow fever and cholera epidemics, it said, she was always called on, and always went. She sat with condemned prisoners in their last hours.
+
+  The closest it came to anything else was one line. The ignorant, it said, credited her cures to unnatural means.
+
+  It never used the word voodoo.
+
+  Within a couple of decades, the guidebooks had a different woman. A voodoo queen, keeping a sacred serpent in a carved box in her bedroom. They give no source for any of it.
+
+  The legend outgrew the nurse. In nineteen thirty-seven, a wire story reported that the bricks of her crumbling tomb were scratched with crosses, left by people who traced one, said a prayer, and slipped away. People still come hoping for luck. That is a custom built on a legend, not a fact.
+
+  The gate is as close as this story needs to bring you. Please do not add a mark of your own.
+
+  The nurse is in the record. The queen is in the scratches.
+detail: |
+  An 1898 New York Sun piece, reprinted in Savannah, follows two visitors led to the tomb
+  by a local woman who tells them that anything you get in a cemetery will bring you luck.
+pronunciations:
+  - written: Marie Laveau
+    say: muh-REE lah-VOH
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Death of Marie Laveau, reprinted from New Orleans, Omaha daily bee, 22 June 1881, p. 6"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn99021999/1881-06-22/ed-1/?sp=6
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Marie Laveau, the Voudoo Queen"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Black Magic and Voodoo Still Rife in Louisiana (United Press), The daily independent, Elizabeth City, N.C., 11 February 1937, p. 8"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn91068099/1937-02-11/ed-1/?sp=8
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "A Voudoo Queen's Grave (from the New York Sun), The morning news, Savannah, 26 June 1898, p. 20"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86063034/1898-06-26/ed-1/?sp=20
+    retrievedAt: "2026-10-14"
+    rights: public-domain

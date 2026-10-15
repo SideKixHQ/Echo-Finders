@@ -1,0 +1,73 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public sidewalk on Washington Street in front of the Old South Meeting House, near the Milk Street corner.
+# Position: Offset from the Overture place for Old South Meeting House, 310 Washington Street, to the Washington Street sidewalk (medium confidence).
+id: boston-waiting-for-mister-rotch
+title: "Waiting for Mister Rotch"
+summary: "On 16 December 1773 thousands sat in Old South until dark, waiting for one man to come back from the governor."
+place: "Old South Meeting House, Washington and Milk streets, Boston, Massachusetts"
+at: { lat: 42.35705, lng: -71.05870 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, revolution, tea-party, old-south]
+teaser: "Nearly five thousand people waited in there for one man."
+script: |
+  This is the Old South Meeting House. On the morning of the sixteenth of December,
+  seventeen seventy three, nearly five thousand people crowded in. About a third of the town.
+
+  Three ships full of tea were tied up at a wharf nearby. By law, the tea had to be landed
+  and the tax paid by the next day. The crowd wanted the ships sent home instead.
+
+  Only the governor could let them go. And the governor was not in town. He was at his
+  country house in Milton, ten miles away.
+
+  So the owner of one of the ships, Francis Rotch, was sent to ask him. In December. Twenty
+  miles there and back, in freezing rain.
+
+  And everyone waited.
+
+  They waited through the morning. They broke off and came back at three. By four it was
+  getting dark, and Rotch had still not returned. Thousands of people in this building, in
+  the dusk, waiting on one man on a cold road.
+
+  When he finally came in, the answer was no.
+
+  By the traditional account, Samuel Adams stood and said, this meeting can do nothing more
+  to save the country. A war whoop went up at the doors. Men with soot on their faces were
+  already in the street, heading for the wharf.
+
+  By the end of the night, three hundred and forty two chests of tea were in the harbour.
+
+  It began as a meeting that ran out of options. Look at the doors. That is the way they
+  went.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old South Meeting House"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/learn/historyculture/osmh.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Boston Tea Party in Real Time"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/boston-tea-party-in-real-time.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Colonial and revolutionary landmarks of Boston (1913)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/14003283/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01012230/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+pronunciations:
+  - written: "Rotch"
+    say: "ROTCH, rhymes with notch"

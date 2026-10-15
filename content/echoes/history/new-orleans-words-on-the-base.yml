@@ -1,0 +1,67 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Inside Jackson Square at the foot of the Andrew Jackson statue, in front of its granite base.
+# Position: Overture Jackson Square centre; the statue stands at the centre of the square (high confidence).
+id: new-orleans-words-on-the-base
+title: "Words Added Later"
+summary: "Jackson's statue was unveiled in 1856. The Union general who occupied the city in 1862 had the words on its base cut in."
+place: "Andrew Jackson statue, Jackson Square, New Orleans, Louisiana"
+at: { lat: 29.95741, lng: -90.06297 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, jackson-square, french-quarter, civil-war, statues]
+teaser: "Find the line cut into the granite base. It was not there on the day the statue was unveiled."
+script: |
+  Walk to the statue's granite base and find the line cut into it. The Union must and shall be preserved.
+
+  Now look up at the man on the horse. Andrew Jackson, who defended this city against the British in eighteen fifteen.
+
+  The statue was unveiled here on the ninth of February, eighteen fifty-six. The square was packed with soldiers, families and children. People crowded the balconies of the red brick buildings on either side. When the sculptor, Clark Mills, pulled the white cover away, a salute of a hundred guns went off.
+
+  The words on the base were not there that day.
+
+  Six years later, Louisiana had left the Union, and a Union fleet came up the river and took New Orleans. The general sent to govern the city was Benjamin Butler. Much of the city came to hate him.
+
+  Butler had that sentence cut deep into the granite under Jackson's horse. His admiring biographer said it was the motto the base had been meant to carry all along.
+
+  So the city's own hero, in the middle of the city's own square, was made to say the one thing the city least wanted to hear, in the voice of the army that had taken it.
+
+  Nobody ever chiselled it off.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Picayune's guide to New Orleans (1904)"
+    publisher: "The Picayune, New Orleans, 1904; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "General Butler in New Orleans (1864)"
+    publisher: "James Parton, Mason Brothers, 1864; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/32008202/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "New Orleans daily crescent, February 9, 1856: programme for the inauguration of Clark Mills' equestrian statue of Andrew Jackson"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn82015753/1856-02-09/ed-1/?sp=2
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Feliciana Democrat, February 16, 1856: Inauguration of Jackson's Statue"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn88067030/1856-02-16/ed-1/?sp=3
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Houma Ceres, March 20, 1856: The Inauguration of the Statue"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn83026391/1856-03-20/ed-1/?sp=3
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "A history of Louisiana (1905)"
+    publisher: "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/34036146/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

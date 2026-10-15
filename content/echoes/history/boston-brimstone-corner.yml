@@ -1,0 +1,74 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public sidewalk at the corner of Park and Tremont streets, outside Park Street Church.
+# Position: Overture "Park Street Church" point (1 Park St), nudged toward the street corner (medium confidence).
+id: boston-brimstone-corner
+title: "Why They Call It Brimstone Corner"
+summary: "Park Street Church's corner has been called Brimstone Corner for well over a century. There are two stories why."
+place: "Park Street Church, corner of Park and Tremont streets, Boston, Massachusetts"
+at: { lat: 42.35672, lng: -71.06190 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 76
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  Two origins for the nickname circulate in the record. Newspapers of 1897 and 1902 credit
+  the preaching of the first minister, Edward Dorr Griffin; a 1922 New York Herald review
+  of a history of Park Street reports its author, Dr. Lawrence, saying instead that brimstone
+  for gunpowder was stored in the building during the War of 1812. The script gives both
+  and picks neither.
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, churches, war-of-1812, place-names]
+teaser: "Look up at the spire on the corner. Bostonians have called this spot Brimstone Corner for more than a century."
+script: |
+  Look up at the spire on the corner. This is Park Street Church, and for more than a
+  century Bostonians have called this spot Brimstone Corner.
+
+  Nobody quite agrees why.
+
+  The first story is about sermons. The church was founded in eighteen-oh-nine, as much of
+  Boston was turning Unitarian, and its early ministers preached the old orthodox faith at
+  full heat. Newspapers around nineteen hundred said the name came from the first of them,
+  Edward Dorr Griffin. One old Boston joke went like this. The Unitarians had managed to
+  freeze over hell, and this congregation broke a hole in the ice and let the flames up
+  again.
+
+  The second story is about the cellar. A Boston historian, in a book about Park Street
+  published in the early nineteen-twenties, said the sermons had nothing to do with it.
+  During the War of eighteen twelve, he said, brimstone for making gunpowder was stored in
+  the building.
+
+  Brimstone is sulphur. It goes into gunpowder, and it is what hell is supposed to smell of.
+
+  So the corner got its name from the pulpit, or from the basement. Either way, it was the
+  same smell.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Park Street Church"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/park-street-church.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "\"Brimstone Corner,\" Boston. The Universalist, September 25, 1897, page 4"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn90053049/1897-09-25/ed-1/?sp=4
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "\"Brimstone Corner.\" New-York Tribune, December 21, 1902, page 21"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030214/1902-12-21/ed-1/?sp=21
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The New York Herald, June 25, 1922, section seven, page 85 (review of a history of Park Street)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045774/1922-06-25/ed-1/?sp=85
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Palestine Daily Herald, February 20, 1909, page 2 (Park Street church and Brimstone Corner)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86090383/1909-02-20/ed-1/?sp=2
+    retrievedAt: "2026-10-14"
+    rights: public-domain

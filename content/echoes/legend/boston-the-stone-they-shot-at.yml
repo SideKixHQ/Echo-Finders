@@ -1,0 +1,77 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Copp's Hill Burying Ground main gate on Hull Street; a city-run historic burying ground, open to the public in daylight. Stay on the paths.
+# Position: Overture "Copps Hill Burying Ground", 45 Hull St (42.36724, -71.05591), nudged toward the Hull Street side; cross-checked against "Copps Hill" and the Skinny House at 44 Hull St opposite (medium confidence).
+id: boston-the-stone-they-shot-at
+title: "The Stone They Shot At"
+summary: "The story goes that British soldiers used Copp's Hill gravestones for target practice, and one patriot's stone above all."
+place: "Copp's Hill Burying Ground, Hull Street, North End, Boston, Massachusetts"
+at: { lat: 42.36712, lng: -71.05584 }
+triggerRadiusKm: 0.06
+category: legend
+format: short
+durationS: 80
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A long-told tradition, not an established fact. The National Park Service says only that
+  some historians suggest British soldiers used headstones here for target practice; an 1892
+  history says the stones are "said to bear the marks". The script says out loud that it is
+  unproven. Malcom's epitaph and his wine-smuggling are documented in the 1921 sketch.
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, north-end, copps-hill, burying-grounds, revolution]
+teaser: "Some of these slate stones, people will tell you, carry British musket marks."
+script: |
+  Look at the slate headstones on this hill. Some of them, people will tell you, are pitted
+  by British musket balls.
+
+  The story goes that redcoats used them for target practice while the army held Boston.
+
+  One stone gets named more than any other. It belongs to a merchant, Captain Daniel Malcom,
+  who died in seventeen sixty-nine.
+
+  Listen to what was carved on it. A true son of Liberty. A friend to the public. An enemy to
+  oppression. And one of the foremost in opposing the Revenue Acts on America.
+
+  Malcom meant it. One night in seventeen sixty-eight, with friends carrying clubs, he
+  brought sixty casks of wine ashore from a ship down the harbour, without paying the King's
+  duty.
+
+  So when the soldiers came, the story says, his stone was the one they chose.
+
+  Is it true? Nobody has proved it. A history of Boston's burial grounds from eighteen
+  ninety-two put it carefully. Several stones here are said to bear the marks, and Malcom's
+  would seem the most likely. The park service today says only that some historians suggest
+  it.
+
+  But nobody needed the soldiers to fire.
+
+  The stone had already said exactly what it thought of them.
+pronunciations:
+  - written: Malcom
+    say: MAL-kum
+  - written: Copp's Hill
+    say: KOPS Hill
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Copp's Hill Burying Ground"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/copp-s-hill-burying-ground.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Historic burial-places of Boston and vicinity, by John M. Merriam (Worcester, 1892)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/18006883/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Historical sketch of Copp's Hill burying ground, with inscriptions and quaint epitaphs, by John Norton (Boston, 1921)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/22013534/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Old Copp's Hill and burial ground; with historic sketches, by Edward MacDonald (Boston, 1879)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/03024090/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

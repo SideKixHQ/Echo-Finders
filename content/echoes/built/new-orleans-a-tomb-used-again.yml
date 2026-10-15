@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk on St. Louis Street along the outside wall of St. Louis Cemetery No. 1; no entry needed (the cemetery is entered only with a licensed guide).
+# Position: Basin/St Louis intersection from fitted street lines (Basin rms 9 m), stepped about 50 m lakeward along St Louis St on the cemetery side, about 60 m from the Basin Street gate echo (medium-low confidence).
+id: new-orleans-a-tomb-used-again
+title: "A Tomb Used Again"
+summary: "Why New Orleans buries its dead above ground, and how one small tomb holds a family for generations."
+place: "St. Louis Cemetery No. 1, St. Louis Street side, New Orleans, Louisiana"
+at: { lat: 29.95974, lng: -90.07135 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.75
+tags: [new-orleans, new-orleans-core, treme, cemetery, st-louis-cemetery]
+teaser: "The wall is not just a wall."
+script: |
+  Look at the wall around this cemetery, and how thick it is.
+
+  In the old St. Louis cemeteries, the wall was never just a fence. It was built as tombs, stacked in tiers. Visitors a century ago were told these vaults were called ovens, after the oldest tombs here, which were brick and shaped like ovens.
+
+  Why build up instead of down? A guidebook of nineteen hundred and two put it plainly. The soil is low and wet. Dig very deep, and you strike water.
+
+  But that is only half the answer. The other half is what happens inside.
+
+  A family tomb usually held two vaults, with a space for bones beneath. When a vault was needed again, the law first made the family wait. A year or two, the guidebooks said. Then the slab came off, the old wooden coffin was broken up and burned, and what remained was moved down into the space below. The vault was ready again.
+
+  In these cemeteries, one guide wrote, generation after generation mingle their dust in the same crypt.
+
+  Each tomb behind that wall is not one person. It is a family, folded down into one small house.
+detail: |
+  The 1904 Picayune guide says St. Louis No. 1 was by then closed to new tombs and opened
+  only to heirs. Not every guide agreed that the ground was too wet everywhere: an 1845
+  guide notes that at the Firemen's cemetery out on the Metairie ridge, graves could be
+  sunk six feet without reaching water.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "New Orleans guide (New Orleans, F.F. Hansell & Bro., c1902), by James S. Zacharie, Cemeteries"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/03001137/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), The Cemeteries: St. Louis No. 1"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Norman's New Orleans and environs (1845), Public buildings: cemeteries"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01008776/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

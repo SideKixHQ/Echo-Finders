@@ -1,0 +1,53 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: F Street NW sidewalk at Eighth Street, below the south portico of the old Patent Office building.
+# Position: South (F Street) front of the block bounded by 7th, 9th, F and G; Overture's Reynolds Center point (38.89785, -77.02301) is the building centre on the 8th Street axis, moved south to F Street (medium-high confidence).
+id: dc-the-ballroom-ward
+title: "The Ballroom Ward"
+summary: "Lincoln's second inaugural ball was held in rooms that had been a hospital ward. Walt Whitman saw both."
+place: "Old Patent Office Building, F and Eighth Streets NW, Washington, D.C."
+at: { lat: 38.89728, lng: -77.02300 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 77
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, penn-quarter, lincoln, civil-war, whitman]
+teaser: "Look up at the columns on the F Street front."
+script: |
+  Look up at the columns on the F Street front. On the sixth of March 1865, guests climbed
+  to that portico for Abraham Lincoln's second inaugural ball.
+
+  It was the first time a government building had been used for one. The great hall
+  upstairs was the largest empty room in the city for dancing.
+
+  One of the clerks in the building went up to look while it was being made ready. His name
+  was Walt Whitman, and he wrote down what he saw.
+
+  Earlier in the war, this building had been a military hospital. Whitman remembered these
+  same rooms filled with the worst wounded of the war, brought in from Second Bull Run,
+  Antietam and Fredericksburg.
+
+  Tonight, he wrote, beautiful women, perfumes, the violins' sweetness, the polka and the
+  waltz. Then, the amputation, the blue face, the groan, the glassy eye of the dying. And
+  many a mother's son amid strangers, passing away untended.
+
+  By midnight on the night of the ball, there were more than four thousand guests.
+
+  The building is an art museum now. Whitman saw both of its nights in the same rooms, a
+  little over two years apart.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "\"The Honor of Your Company is Requested\": Lincoln's Second Inaugural Ball at the Patent Office (Teaching with Historic Places)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/-the-honor-of-your-company-is-requested-lincoln-s-second-inaugural-ball-at-the-patent-office.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Patent Office Building, Bounded by 7th, 9th, F, and G Streets Northwest (HABS DC-130)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/dc0194/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

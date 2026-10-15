@@ -1,0 +1,45 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: South sidewalk of Arch Street outside the Arch Street Meeting House grounds, between Third and Fourth streets.
+# Position: Overture places Arch Street Meeting House at 39.95205, -75.14618 (320 Arch St; HABS gives 330 Arch); even-numbered Arch Street points sit near 39.9519 and odd-numbered near 39.9525, so the spot is on the south sidewalk in front of the building (medium confidence).
+id: philadelphia-two-rooms-one-roof
+title: "Two Rooms, One Roof"
+summary: "The Arch Street Meeting House has two matching wings because Quaker men and women held separate meetings, and the women wanted one building."
+place: "Arch Street Meeting House, Arch Street between Third and Fourth, Philadelphia, Pennsylvania"
+at: { lat: 39.95212, lng: -75.14620 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, old-city, quakers, women, architecture]
+teaser: "Look at the two wings. They match for a reason."
+script: |
+  Look at the long brick meeting house. It is built in three parts, a middle section with a wing on each side, and the two wings match.
+
+  That symmetry is the whole story.
+
+  Quakers held their business meetings separately, one for men and one for women. George Fox, who founded the Society of Friends, wanted it that way, so that women would take an active part. For years in Philadelphia, the two meetings gathered in separate buildings.
+
+  The push for this house is said to have come from the women. They wanted both meetings under the same roof. The women's yearly meeting moved in here in eighteen hundred and four. When the second wing was finished in eighteen eleven, the men joined them.
+
+  Inside are two meeting rooms, one on each side of a central hall. There was no need for a partition down the middle. Each meeting had a room of its own.
+
+  It was not equality. The women's meeting mostly dealt with marriages and help for the needy, and the men's with policy and money. But the two rooms were built to the same proportions and fitted out the same way.
+
+  Somebody insisted on that.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Arch Street Friends Meeting House, 330 Arch Street (HABS PA-1388), written historical and descriptive data"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/pa1087/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Philadelphia, guide to the city (Rotary Club of Philadelphia, 1920)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/20012885/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

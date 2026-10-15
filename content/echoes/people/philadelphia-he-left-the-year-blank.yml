@@ -1,0 +1,65 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: South sidewalk of Arch Street at Fifth, outside the railings of Christ Church Burial Ground, where the Franklin grave is visible from the street.
+# Position: Overture "Benjamin Franklin's Grave" at 39.95245, -75.14827 sits on the Arch Street line; the 1920 guide puts the grave in the burial ground's northwest corner, seen from the southeast corner of Fifth and Arch, so the spot is the sidewalk there (Overture's 340 N 5th St burial-ground point at 39.9567 is wrong) (medium confidence).
+id: philadelphia-he-left-the-year-blank
+title: "He Left the Year Blank"
+summary: "At twenty-two Franklin wrote himself a witty epitaph. At eighty-two he asked for a plain stone, and left the last number of the year blank."
+place: "Benjamin Franklin's grave, Christ Church Burial Ground, Fifth and Arch streets, Philadelphia, Pennsylvania"
+at: { lat: 39.95215, lng: -75.14810 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, old-city, franklin, graves, printing]
+teaser: "He wrote a famous epitaph for himself. It is not on the stone."
+script: |
+  Look through the iron bars at the corner of Fifth and Arch. In the corner of the burial ground nearest you, Benjamin Franklin and his wife Deborah lie under a plain marble slab.
+
+  When Franklin was twenty-two, a young printer, he wrote his own epitaph. It is a joke about his trade.
+
+  The body of B. Franklin, printer, like the cover of an old book, its contents torn out, and stript of its lettering and gilding, lies here, food for worms. But the work shall not be wholly lost. For it will, as he believed, appear once more, in a new and more perfect edition, corrected and amended by the author.
+
+  He liked it enough to copy it out for friends for the rest of his life.
+
+  It is not on the stone.
+
+  At eighty-two, adding to his will, he asked for something else. A marble stone, six feet long and four feet wide, plain, with only a small moulding round the edge. Two names, Benjamin and Deborah Franklin. And a year.
+
+  For the year he wrote one, seven, eight, and then a dash.
+
+  He knew the century and the decade. Somebody else had to finish the line.
+pronunciations:
+  - written: stript
+    say: stripped
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Transcript of Benjamin Franklin, Epitaph (Benjamin Franklin: In His Own Words)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/exhibits/franklin/bf-trans61.html
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Epitaph (Benjamin Franklin: In His Own Words)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/exhibits/franklin/franklin-epitaph.html
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Life and times of Benjamin Franklin, volume 2, page 591 (James Parton, 1882), quoting the codicil to Franklin's will"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/09019866/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Philadelphia, guide to the city (Rotary Club of Philadelphia, 1920)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/20012885/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Christ Church Burial Ground"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/christ-church-burial-ground.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

@@ -1,0 +1,68 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Pedestrian St. Peter Street between Jackson Square and the Upper Pontalba Building, mid-block.
+# Position: Grid offset from the Overture Jackson Square centre, between the square and the Overture Upper Pontalba point (520 St Peter St) (medium confidence).
+id: new-orleans-her-initials-in-the-iron
+title: "Her Initials in the Iron"
+summary: "The A and P in the Pontalba balconies belong to Micaela Almonester de Pontalba, who survived being shot and came home to build."
+place: "Upper Pontalba Building, St. Peter Street, Jackson Square, New Orleans, Louisiana"
+at: { lat: 29.957, lng: -90.06333 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 90
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, jackson-square, french-quarter, women, ironwork]
+teaser: "Look for two letters twisted together in the iron balconies."
+script: |
+  Look up at the long red brick building along this side of the square, at the cast iron railings on its balconies. Somewhere in the pattern, two letters are twisted together. An A and a P.
+
+  They belong to a woman who was supposed to be dead.
+
+  Micaela Almonester was born in this city, the daughter of the rich Spaniard who paid for the cathedral. She married into a noble French family, the Pontalbas, and went to live in France.
+
+  The marriage went badly. There were lawsuits. In the end she won her independence from her husband and his family.
+
+  Then, one October morning in eighteen thirty-four, at the family château, she was found on the floor of her rooms, shot several times. Her father-in-law, the old baron, was found dead in his armchair with a pistol in his hand.
+
+  She lived. She carried the bullets in her body for the rest of her life.
+
+  Twelve years later she put a plan to the city. She would tear down her father's old buildings on both sides of this square, and put up something grander, if the council would play its part. The council backed out. She built them anyway. They were finished around eighteen fifty.
+
+  The A is for Almonester. The P is for Pontalba.
+
+  She kept both.
+pronunciations:
+  - written: Micaela
+    say: mee-kah-EH-lah
+  - written: Almonester
+    say: al-mo-NESS-ter
+  - written: Pontalba
+    say: pon-TAL-buh
+  - written: château
+    say: sha-TOH
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Creole families of New Orleans (1921)"
+    publisher: "Grace King, Macmillan, 1921; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/21004871/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "New Orleans, the place and the people (1895)"
+    publisher: "Grace King, Macmillan, 1895; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/01008773/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Pontalba Buildings, 1850 House, Jackson Square, New Orleans (HABS LA-1259-A), index card and supplemental material"
+    publisher: "Historic American Buildings Survey, National Park Service; Library of Congress"
+    url: https://www.loc.gov/item/la0365/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Presbytere, New Orleans, Louisiana"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/the-presbytere-new-orleans-louisiana.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

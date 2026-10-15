@@ -1,0 +1,59 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: The Tomochichi granite stone in the southeast quarter of Wright Square, on the square's paths.
+# Position: Square centre from Overture street centrelines (Bull at State and Bull at York) agrees with the Overture place to 4 m; the 1899 report puts the stone in the southeast quarter, so offset about 15 m south-east of centre (medium confidence).
+id: savannah-the-stone-beside-the-grave
+title: "The Stone Beside the Grave"
+summary: "Tomochichi is buried somewhere in Wright Square. The stone that marks him was put where people could see it."
+place: "Tomochichi memorial stone, Wright Square, Savannah, Georgia"
+at: { lat: 32.07783, lng: -81.09215 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 101
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, squares, colonial, native-american, monuments]
+teaser: "The children used to play on his grave. Not where the stone is."
+script: |
+  Find the big rough granite stone in the southeast corner of Wright Square.
+
+  It honours Tomochichi, the Yamacraw leader whose friendship the first colonists depended on. When he died, he had asked to be buried among the English. His body came down the river by canoe. Oglethorpe himself was one of the pall-bearers, and the militia fired three volleys as he was lowered into the ground, in this square.
+
+  Exactly where in this square, nobody knows.
+
+  In eighteen ninety-nine, as the Georgia Society of Colonial Dames prepared to mark the grave, the Savannah Morning News laid out the candidates. One tradition put him under the courthouse. Another, under the Gordon monument in the middle of the square. A pile of stones had once stood here, said to be over his body.
+
+  The best evidence the Dames had came from an old woman who had died a few months before, at eighty-nine. She remembered recess at a school near the square, and the children shouting, let's go play on old Tomochichi's grave. They would race to the northeast corner, in front of the Lutheran church.
+
+  So why is the stone in the southeast corner?
+
+  Because it could be seen better here. The paper said so, plainly.
+
+  The granite came from Stone Mountain, given by a quarry owner and carried free by the railroad. A few days before the dedication, the same paper pointed out that it was not, technically, a boulder.
+
+  Look across to the northeast corner. He may well be over there.
+editorial: draft
+factCheck: unchecked
+pronunciations:
+  - written: Tomochichi
+    say: toh-moh-CHEE-chee
+  - written: Yamacraw
+    say: YAM-uh-craw
+sources:
+  - title: "The morning news (Savannah), 5 February 1899, page 8: Over Tomochichi's grave"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86063034/1899-02-05/ed-1/?sp=8
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The morning news (Savannah), 24 April 1899, page 2: Is not a boulder"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86063034/1899-04-24/ed-1/?sp=2
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Historical record of the city of Savannah (Lee and Agnew, 1869): Burial of Tomichichi"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

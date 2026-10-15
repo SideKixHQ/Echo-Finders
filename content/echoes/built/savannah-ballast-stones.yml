@@ -1,0 +1,67 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: River Street sidewalk at the foot of the cobbled ramp below Abercorn Street, beside the stone and brick of the old warehouses.
+# Position: Estimated on the River Street line between the Overture River Street points, north of the Abercorn ramp; ramp foot not surveyed (low confidence).
+id: savannah-ballast-stones
+title: "Stones from somewhere else"
+summary: "River Street's stone is said to be ships' ballast. The record shows ballast came here; it cannot show you which stone."
+place: "River Street at the Abercorn ramp, Savannah, Georgia"
+at: { lat: 32.08140, lng: -81.08950 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 96
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  That ships arriving in ballast came up this river, and that foreign ballast was used as
+  waterfront fill, is documented. That the stones in River Street's walls and paving are that
+  ballast is a tradition recorded as "said to have been" since the 1930s; no source ties any
+  particular stone to a ship. The script says so.
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, riverfront, shipping, cotton]
+teaser: "Everyone will tell you this stone was ballast. Here is what the record says."
+script: |
+  Look down at the cobbles under your feet, and at the rough stone in the old walls along River Street.
+
+  You will hear, probably more than once today, that this stone crossed the ocean as ballast. Ships that came over light carried rock low in the hold to keep them steady, dumped it here, and loaded cotton for the voyage out.
+
+  Here is what the record actually supports.
+
+  Ships really did arrive that way. On the second of November eighteen eighty nine, the Savannah Morning News listed a Norwegian bark up from Buenos Aires, in ballast. Another came from Brazil, in ballast. That was an ordinary day.
+
+  Ballast really was dumped on this waterfront. A city guide from eighteen eighty one boasted that when a railway's wharves downriver were filled in, the four quarters of the habitable globe had contributed, by way of ballast from foreign ships. When the old eastern wharves were recorded in two thousand seven, just before they were demolished, the ballast that filled them was still there.
+
+  And when federal surveyors photographed a stone warehouse on River Street in the nineteen thirties, they wrote that its rubble stone was said to have been brought over as ballast.
+
+  Said to have been. Even then it was the story, not the receipt.
+
+  So nobody can show you which stone came from where. But the ships came in heavy with rock, and the rock had to go somewhere.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Factor's Warehouse, River Street West (HABS GA-2144), data pages"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/pictures/item/ga0053/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The morning news (Savannah, Ga.), November 2, 1889, image 7: shipping intelligence"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn86063034/1889-11-02/ed-1/?sp=7
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "A guide to strangers visiting Savannah for business, health, or pleasure (1881)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007696/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah Eastern Wharves (HAER GA-157), data pages"
+    publisher: "Historic American Engineering Record, Library of Congress"
+    url: https://www.loc.gov/pictures/item/ga1012/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The morning news (Savannah, Ga.), September 15, 1887, image 8: foreign steam tonnage loading"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn86063034/1887-09-15/ed-1/?sp=8
+    retrievedAt: "2026-10-15"
+    rights: public-domain

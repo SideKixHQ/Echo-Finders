@@ -1,0 +1,67 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public sidewalk on State Street just east of the Old State House, facing its east end, balcony and gable.
+# Position: About forty metres east of the building's east end along State Street, from Overture places for the Old State House and the Massacre site circle (medium confidence).
+id: boston-the-lion-and-the-unicorn
+title: "The Lion and the Unicorn"
+summary: "The royal lion and unicorn on the Old State House were burned in the street in 1776. The pair up there now came back a century later."
+place: "Old State House, east end and balcony, State Street, Boston, Massachusetts"
+at: { lat: 42.35870, lng: -71.05672 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 81
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, revolution, old-state-house]
+teaser: "Look up at the two corners of the roof."
+script: |
+  Find the end of the old brick State House with the balcony on it. Now look up, past the
+  balcony, to the two corners of the roof.
+
+  A lion on one side. A unicorn on the other. The badge of the British king.
+
+  On the eighteenth of July, seventeen seventy six, a crowd filled the street below you to
+  hear a document read aloud from that balcony. It was the Declaration of Independence, and
+  Boston was hearing it for the first time.
+
+  Six years earlier, soldiers had fired into a crowd on this same spot. This time the guns
+  went off in celebration.
+
+  Then the crowd turned to the roof.
+
+  The lion and the unicorn came down. They were carried a little way down the street,
+  heaped up with every other royal emblem that could be found in town, and burned in a
+  bonfire outside a tavern.
+
+  For about a hundred years, those corners stayed bare. Then the building was restored, and
+  new figures went back up.
+
+  So the pair you are looking at never heard the Declaration. The ones that did are ash.
+
+  Boston burned the king's animals to make a point. A century later, it put them back to
+  make another.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old State House"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/learn/historyculture/osh.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Old Massachusetts State House, 206 Washington Street, Boston (HABS MA-1246)"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/ma1403/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01012230/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Colonial and revolutionary landmarks of Boston (1913)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/14003283/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

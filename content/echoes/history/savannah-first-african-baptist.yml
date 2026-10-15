@@ -1,0 +1,43 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Public sidewalk on Montgomery Street in front of the church, facing it from the Franklin Square side.
+# Position: HABS GA-276 addendum gives the church at 32.081339, -81.096275; the spot is moved a few metres east onto the Montgomery Street frontage (high confidence).
+id: savannah-first-african-baptist
+title: "Bricks made after dark"
+summary: "First African Baptist's walls were made, by the church's recorded history, by members working at night after a full day enslaved."
+place: "First African Baptist Church, 23 Montgomery Street, Franklin Square, Savannah, Georgia"
+at: { lat: 32.08132, lng: -81.09617 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, african-american, religion, slavery]
+teaser: "Look at the walls. You cannot see a single brick."
+script: |
+  Look at the walls of this church. Smooth, pale stucco.
+
+  Underneath it is brick. Savannah grey brick, laid four bricks deep. And the history of this building, as recorded for the federal survey, says those bricks were formed by hand at night, on the bank of the river, by members of this congregation, after they had worked a full day for the people who owned them.
+
+  They had been worshipping on this spot since the eighteen thirties, in an old wooden church bought from a white Baptist congregation that had moved to a new building. They paid for it with money earned working nights, with their owners' permission. Often, the survey notes, it was money they had been saving to buy their own freedom, or their family's.
+
+  In eighteen fifty five they pulled the wooden church down and began this one. It took four years. It cost more than ten thousand dollars, and it was paid off before the end of eighteen fifty nine, the year it was finished.
+
+  It is recorded as the first brick building in Savannah owned by African Americans.
+
+  The stucco went on in the nineteen forties. So you cannot see a single one of those bricks. They are all still there.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "First African Baptist Church, 23 Montgomery Street (HABS GA-276), data pages and 2017 addendum"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/pictures/item/ga0018/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The First African Baptist Church in Savannah, Georgia"
+    publisher: "Carol M. Highsmith Archive, Library of Congress"
+    url: https://www.loc.gov/item/2017880508/
+    retrievedAt: "2026-10-15"
+    rights: fair-use-facts

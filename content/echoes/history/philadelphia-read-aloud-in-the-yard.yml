@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: The open southern half of Independence Square, facing the back of Independence Hall; reachable from Walnut Street without security screening.
+# Position: Overture "Independence Square" (39.94825, -75.15016); spot placed about 40 m south-west of that point, in the old State House Yard, to keep 60 m from the tower echo (medium confidence).
+id: philadelphia-read-aloud-in-the-yard
+title: "Read Aloud in the Yard"
+summary: "The Declaration was first read to the public in this yard on 8 July 1776. The king's coat of arms did not last the afternoon."
+place: "Independence Square, the old State House Yard, Philadelphia, Pennsylvania"
+at: { lat: 39.94795, lng: -75.15045 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 89
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, independence-mall, independence-square, declaration-of-independence, revolution]
+teaser: "Almost nobody out here had heard a word of it."
+script: |
+  Face the back of the hall. This square was the State House yard, and you are standing in it.
+
+  On the fourth of July, seventeen seventy-six, Congress approved the Declaration of Independence in there. Almost nobody out here had heard a word of it.
+
+  Four days later, on the eighth, the bells of the city called people into this yard. At noon a militia colonel named John Nixon stood up on a raised stage and read the whole thing out loud. It was the first public reading of the Declaration.
+
+  John Adams wrote about it the next day. He called the platform that awful stage, and he meant awe inspiring. Three cheers, he wrote, rended the welkin. The bells rang all day, and almost all night. Even the chimers chimed away.
+
+  In the courtroom of the State House, above the judge's bench, hung the coat of arms of King George the Third. That same day a crowd took it down and burned it.
+
+  About nine years later a Philadelphia painter, George Rutter, made a new coat of arms for the same courtroom. The arms of Pennsylvania. It is one of the very few furnishings from that century still in the building, and it hangs in the courtroom now.
+
+  The king's arms did not last the afternoon. Pennsylvania's are still on the wall.
+pronunciations:
+  - written: welkin
+    say: WEL-kin
+  - written: Rutter
+    say: RUT-er
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "First Public Reading of the Declaration of Independence"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/news/first-public-reading-of-the-declaration-of-independence.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "A national treasure will be returning to Independence Hall just in time for Independence Day"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/news/a-national-treasure-will-be-returning-to-independence-hall-just-in-time-for-independence-day.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Letters of Delegates to Congress: John Adams to Samuel Chase, July 9, 1776"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/76002592_04_0334/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

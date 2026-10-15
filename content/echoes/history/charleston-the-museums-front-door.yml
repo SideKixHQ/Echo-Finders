@@ -1,0 +1,46 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: Rutledge Avenue edge of Cannon Park, in front of the four free-standing columns.
+# Position: HALS SC-15 gives the park centre as 32.782871, -79.944343 and puts the columns at the Rutledge Avenue (east) end; spot set east of centre, inside the park line estimated from Overture points for 114 and 122 Rutledge Ave and 241-247 Calhoun St (medium confidence).
+id: charleston-the-museums-front-door
+title: "The Museum's Front Door"
+summary: "Four columns in Cannon Park are all that is left of the hall that housed America's oldest museum."
+place: "Cannon Park, Rutledge Avenue, Charleston, South Carolina"
+at: { lat: 32.78290, lng: -79.94360 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, museums, parks, ruins]
+teaser: "Four columns, holding up nothing."
+script: |
+  Four tall columns stand at this end of the park, holding up nothing. Look at the tops. Corinthian capitals, the kind crowned with leaves.
+
+  They were the front entrance of a great hall, built here in eighteen ninety nine for a Confederate reunion. After the reunion it was rarely used. It became a theatre, then for a while a city hospital.
+
+  In nineteen oh seven it found a lasting tenant. The Charleston Museum moved in, with its natural history collections, its workshops and its library. A city guidebook of nineteen nineteen called it the oldest museum in America, founded in seventeen seventy three. Older, the guide pointed out, than the nation.
+
+  The museum stayed for some seventy years. Then it built a new home on Meeting Street and moved out. The old hall had already been declared a fire hazard.
+
+  In nineteen eighty one, it burned to the ground.
+
+  The museum is still open, over on Meeting Street. Its old front door is here, with nothing behind it.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Cannon Park, HALS SC-15, data pages"
+    publisher: "Historic American Landscapes Survey, Library of Congress"
+    url: https://www.loc.gov/item/sc1224/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Guide to Charleston, S. C.; with brief history of the city and a map thereof (1919)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/20002718/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Rutledge Avenue
+    say: RUT-lij Avenue

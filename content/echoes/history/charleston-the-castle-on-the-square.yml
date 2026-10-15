@@ -1,0 +1,51 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: North side of Marion Square, facing the old South Carolina State Arsenal across Tobacco Street.
+# Position: Between the HALS SC-17 centre point for Marion Square (32.786891, -79.935684) and the Overture points for the arsenal at 337 and 347 Meeting St, inside the square near its north edge (medium confidence).
+id: charleston-the-castle-on-the-square
+title: "The Castle on the Square"
+summary: "The fortress on the north side of Marion Square was built after 1822, and not to keep out a foreign army."
+place: "Old Citadel, Marion Square, Charleston, South Carolina"
+at: { lat: 32.78735, lng: -79.93580 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, denmark-vesey, the-citadel, architecture]
+teaser: "It looks like a fortress because it was one."
+script: |
+  Look at the long building on the north side of the square. Battlements along the roof. Towers at the corners. It looks like a fortress because it was meant to be one. Not against a foreign army.
+
+  In eighteen twenty two, the authorities said they had uncovered a plan by enslaved Charlestonians to rise and take the city. In the aftermath, the state built an arsenal here, with a guard of armed men to live in it and patrol the streets. When federal surveyors described the building in the nineteen fifties, they put its purpose plainly. A safeguard against slave uprisings.
+
+  In the eighteen forties the guard was disbanded. Cadets of a new state military academy moved in and took over its duties. That academy was the Citadel. For decades its cadets drilled on the grass in front of you, which was called Citadel Green.
+
+  The building kept growing. A third storey, then wings, then a fourth. In nineteen twenty two the cadets left for a new campus, and the green was renamed for Francis Marion.
+
+  The building is a hotel now. It still has the battlements.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "South Carolina State Arsenal (Old Citadel), HABS SC-184, data pages"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/sc0013/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Marion Square (Citadel Green), HALS SC-17, data pages"
+    publisher: "Historic American Landscapes Survey, Library of Congress"
+    url: https://www.loc.gov/item/sc1226/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Denmark Vesey"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/denmark-vesey.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Guide to Charleston, S. C.; with brief history of the city and a map thereof (1919)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/20002718/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

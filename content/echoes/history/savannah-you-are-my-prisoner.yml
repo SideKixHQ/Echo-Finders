@@ -1,0 +1,52 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Barnard Street sidewalk on the west side of Telfair Square, in front of the Telfair Academy.
+# Position: Overture building footprint for the Telfair Academy; spot set about 25 m east of its centre on the square side, matching HABS's note that the building faces east (medium confidence).
+id: savannah-you-are-my-prisoner
+title: "Sir James, You Are My Prisoner"
+summary: "On the ground where the Telfair Academy stands, a twenty-four-year-old arrested the royal governor of Georgia with one hand."
+place: "Telfair Academy, Telfair Square, Savannah, Georgia"
+at: { lat: 32.07893, lng: -81.09500 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 89
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, revolution, squares, museums]
+teaser: "He walked in alone, put a hand on the governor's shoulder, and the room emptied."
+script: |
+  The grand house on the west side of Telfair Square is the Telfair Academy, designed by the English architect William Jay about two centuries ago. Mary Telfair left it in her will to become an academy of arts and sciences.
+
+  But the academy's own account of this ground goes back further. This, it says, was the site of Government House, home of Georgia's royal governor.
+
+  In January seventeen seventy-six, British warships were lying off Tybee. On the eighteenth, Savannah's Council of Safety voted to arrest the governor, Sir James Wright.
+
+  A major named Joseph Habersham, twenty-four years old, volunteered. That evening the governor was meeting his council in his house. Habersham walked past the sentries at the door, alone. He went into the room, up to the head of the table, laid his hand on the governor's shoulder, and said, Sir James, you are my prisoner.
+
+  According to the city's history of eighteen sixty-nine, the councillors assumed he had a large force close behind him. They fled through the doors and the windows.
+
+  He did not have a large force.
+
+  Wright gave his word that he would not leave town, and was kept in his own house under guard.
+
+  He kept his word for twenty-four days. Then he slipped past the sentries, ran to Bonaventure, and was rowed out to a British ship.
+editorial: draft
+factCheck: unchecked
+pronunciations:
+  - written: Habersham
+    say: HAB-er-sham
+  - written: Telfair
+    say: TEL-fair
+sources:
+  - title: "Historical record of the city of Savannah (Lee and Agnew, 1869): Gallant capture of Governor Wright by Major Joseph Habersham"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Telfair Academy of Arts and Sciences, Savannah (HABS GA-217): data pages, including the Academy's published history of the site"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/ga0221/
+    retrievedAt: "2026-10-15"
+    rights: fair-use-facts

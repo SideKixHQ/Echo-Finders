@@ -1,0 +1,65 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Path on the upper slope of Boston Common, below Beacon Street, with a clear view up to the State House dome; public park.
+# Position: Placed about seventy metres downhill and south-west of the Shaw Memorial so it does not share that echo's trigger; dome sightline inferred from Overture State House and Shaw Memorial points (medium confidence).
+id: boston-state-house-dome-copper
+title: "What Is Under the Gold"
+summary: "Before it was gold, the State House dome was copper, rolled at Paul Revere's mill."
+place: "Massachusetts State House dome, seen from Boston Common, Boston, Massachusetts"
+at: { lat: 42.35705, lng: -71.06410 }
+triggerRadiusKm: 0.06
+category: built
+format: short
+durationS: 67
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, state-house, paul-revere, second-world-war]
+teaser: "Look up the hill at the gold dome. It was not always gold."
+script: |
+  Look up the hill at the dome of the State House. It was not always gold.
+
+  In November eighteen-oh-two, a New Hampshire newspaper reported that the superb dome of
+  the new State House had just been coppered. The sheets, it said, were made in
+  Massachusetts by Colonel Revere and son.
+
+  That is Paul Revere. After the war he went into industry, and in eighteen-oh-one he opened
+  a copper mill. The paper added, with some pride, that it was the only sheet copper works
+  in America.
+
+  So for about seventy years the dome was the colour of copper. It was gilded in the
+  eighteen-seventies, and Boston argued about whether the gold was worth the money. A
+  newspaper later made a point of it. Real gold leaf, not gilt paint.
+
+  Then in nineteen forty-two, with the country at war, the dome was to be painted a dull
+  grey, as an air raid precaution.
+
+  Revere is remembered for one night on a horse. Look up. This was his day job.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "United States Oracle and Portsmouth Advertiser, November 20, 1802, page 3"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83025545/1802-11-20/ed-1/?sp=3
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Paul Revere"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/paul-revere.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "New-York Tribune, April 17, 1875, page 1 (Boston letter on the gilding of the State House dome)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030214/1875-04-17/ed-1/?sp=1
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Springfield Weekly Republican, March 12, 1942, page 9"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83020847/1942-03-12/ed-1/?sp=9
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Massachusetts State House"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/massachusetts-state-house.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

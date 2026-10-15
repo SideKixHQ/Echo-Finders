@@ -1,0 +1,70 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: Inside White Point Garden, on the paths under the oaks between the bandstand and the Murray Boulevard sea wall.
+# Position: Overture "White Point Gardens" park point, nudged to the park's centre between the street grid edges; the Stede Bonnet stone's exact spot in the park is not in the sources (medium confidence).
+id: charleston-where-the-tide-came-in
+title: "Where the Tide Came In"
+summary: "Stede Bonnet and his crew were hanged at White Point in 1718 and buried at the low-water mark. The garden was laid out on top."
+place: "White Point Garden, Charleston, South Carolina"
+at: { lat: 32.76992, lng: -79.93035 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 93
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.75
+tags: [charleston, charleston-core, south-of-broad, battery, pirates, colonial]
+teaser: "Somewhere in this garden is a small stone with a pirate's name on it."
+script: |
+  Somewhere in this garden is a small stone with a pirate's name on it. Stede Bonnet. It
+  was put up in nineteen forty-three, and it is easy to walk straight past.
+
+  Bonnet was not the usual kind of pirate. The old histories describe a gentleman. Educated,
+  well off, a former army major. Nobody could say why he took to the sea.
+
+  In the autumn of seventeen eighteen, ships from Charles Town caught him and brought him
+  back in irons. He escaped once, in a woman's dress, and was hunted down in the sandhills
+  of Sullivan's Island.
+
+  The record of the trials was printed the following year. Most of his crew were hanged in
+  November. Bonnet followed on the tenth of December, executed, it says, at the White Point
+  near Charles Town.
+
+  That is here.
+
+  There was no garden then. The point took its name from the heaps of white oyster shell
+  along the shore. A Charleston historian, writing in nineteen-oh-six, recorded where the
+  pirates went afterwards. They were buried on the White Point shoal, just above the
+  low-water mark. Out on the mud, at the edge of the tide.
+
+  The city later filled the shoal in. This garden was laid out in eighteen thirty-seven, on
+  made ground, and the oaks you are standing under grew up on top of it.
+
+  They were buried where the tide came in. The city moved the tide.
+pronunciations:
+  - written: Stede Bonnet
+    say: STEED BON-it
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The tryals of Major Stede Bonnet and other pirates (1719)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/33008758/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), The Conquest of the Pirates"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/06042434/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The history of South Carolina under the proprietary government, 1670-1719 (Edward McCrady, 1897)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01010815/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "White Point Gardens, 2 Murray Boulevard, Charleston (HALS SC-19)"
+    publisher: "Library of Congress, Historic American Landscapes Survey"
+    url: https://www.loc.gov/item/sc1228/
+    retrievedAt: "2026-10-15"
+    rights: fair-use-facts

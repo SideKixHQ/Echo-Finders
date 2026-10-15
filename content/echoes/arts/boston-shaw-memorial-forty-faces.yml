@@ -1,0 +1,62 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Beacon Street sidewalk in front of the memorial, on the Boston Common side, opposite the State House.
+# Position: Overture "Robert Gould Shaw and the 54th Regiment Memorial" point (26 Beacon St), moved a few metres toward the Beacon Street sidewalk the relief faces (medium confidence).
+id: boston-shaw-memorial-forty-faces
+title: "Forty Faces"
+summary: "Saint-Gaudens spent fourteen years giving the soldiers of the 54th their own faces. Their names took longer."
+place: "Robert Gould Shaw and Massachusetts 54th Regiment Memorial, Beacon Street, Boston, Massachusetts"
+at: { lat: 42.35760, lng: -71.06350 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, black-heritage-trail, freedom-trail, civil-war, sculpture, 54th-massachusetts]
+teaser: "Look at the soldiers in the bronze, not the man on the horse. Look at their faces."
+script: |
+  Look at the soldiers in the bronze, not the man on the horse. Look at their faces.
+
+  They are not one face repeated. Some are young, some older. The features and the builds
+  are different.
+
+  That was the point. The sculptor, Augustus Saint-Gaudens, was first expected to make a
+  statue of Colonel Robert Gould Shaw alone on horseback. Shaw's family objected. He had not
+  been a great commander, they said, and it seemed pretentious. So Saint-Gaudens put him
+  among his men.
+
+  The men were the Fifty-fourth Massachusetts, one of the first Black regiments of the Civil
+  War. They marched down this street, off to the war, in eighteen sixty-three. That July, in
+  the assault on Fort Wagner in South Carolina, Shaw and many of his men were killed.
+
+  In his New York studio, Saint-Gaudens hired Black men to pose, and modelled some forty
+  heads. The work took him about fourteen years, longer than anything else in his career.
+
+  It was unveiled in eighteen ninety-seven, and the original inscriptions named only the
+  white officers who fell. The names of the Black soldiers were added in the early
+  nineteen-eighties.
+
+  The faces came first. The names took another eighty-five years.
+pronunciations:
+  - written: Saint-Gaudens
+    say: saint GAW-dens
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Robert Gould Shaw and the 54th Regiment"
+    publisher: "National Park Service, Boston African American National Historic Site"
+    url: https://www.nps.gov/boaf/learn/historyculture/shaw.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Robert Gould Shaw Memorial"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/the-robert-gould-shaw-memorial.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Robert Gould Shaw & Massachusetts 54th Regiment Memorial"
+    publisher: "National Park Service, Saint-Gaudens National Historical Park"
+    url: https://www.nps.gov/places/robert-gould-shaw-massachusetts-54th-regiment-memorial.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

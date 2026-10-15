@@ -109,7 +109,7 @@ const kind = (...kinds: string[]): ExpressionSpecification => ["in", ["get", "ki
 export const FONT = "Noto Sans Medium";
 
 /**
- * The style for a given theme, reading tiles from `tiles` (a `pmtiles://` URL) and glyphs
+ * The style for a given theme, reading tiles from `tiles` (a `pmtiles://` or `echomap://` URL, `echo-map.ts`) and glyphs
  * from `glyphs` (a URL template with `{fontstack}` and `{range}`).
  */
 /**

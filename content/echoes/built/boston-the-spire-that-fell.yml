@@ -1,0 +1,74 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Paul Revere Mall, the brick plaza behind Old North, at the church end where the spire is in full view; public park.
+# Position: North end of the Overture "Paul Revere Mall" (centre 42.36586, -71.05378), moved toward the Old North crypt point (42.36631, -71.05449) so the steeple is overhead (medium confidence).
+id: boston-the-spire-that-fell
+title: "The Spire That Fell"
+summary: "Old North's spire has blown down twice. The one above you went up in 1955, a copy of the one that stood in 1775."
+place: "Old North Church steeple from Paul Revere Mall, North End, Boston, Massachusetts"
+at: { lat: 42.36612, lng: -71.05421 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, north-end, old-north-church, storms, hurricanes]
+teaser: "Look up at the white spire. It is younger than it looks."
+script: |
+  Look up at the white spire on top of the tower.
+
+  It is younger than it looks.
+
+  The first spire went up in the seventeen hundreds. A guidebook called it the most elegant
+  in the town. Early in the eighteen hundreds, a gale blew it down.
+
+  Its replacement was built from a model by Charles Bulfinch, the architect of the State
+  House. That one stood for about a hundred and fifty years.
+
+  Then, on the thirty-first of August, nineteen fifty-four, Hurricane Carol reached Boston.
+  The wind worked at the spire for more than an hour. It swayed, cracked, and went over into
+  the street.
+
+  An amateur photographer visiting from New York happened to catch it as it fell.
+
+  Within weeks there was a fund to put it back. Money came from well beyond Boston. A Lions
+  Club in Maine voted to send ten dollars.
+
+  In October nineteen fifty-five, a new spire was dedicated here. At the ceremony it was
+  described as a duplicate of the spire the lanterns hung from in seventeen seventy-five.
+
+  So when you look up, you are seeing the night of the lanterns, more or less. You are just
+  seeing it in a copy about seventy years old.
+pronunciations:
+  - written: Bulfinch
+    say: BULL-finch
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old North Steeple (editorial), Evening Star, Washington, D.C., 2 September 1954, page 22"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1954-09-02/ed-1/?sp=22
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Hurricane topples Old North Church steeple, Evening Star, Washington, D.C., 1 September 1954, page 2"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1954-09-01/ed-1/?sp=2
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "$10 for Steeple Fund, Evening Star, Washington, D.C., 3 September 1954, page 13"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1954-09-03/ed-1/?sp=13
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Church Spire Is Dedicated, The Key West Citizen, 13 October 1955, page 4"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83016244/1955-10-13/ed-1/?sp=4
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Boston, a guide book, by Edwin M. Bacon (Ginn and Company, 1909), Christ Church"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/33007578/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

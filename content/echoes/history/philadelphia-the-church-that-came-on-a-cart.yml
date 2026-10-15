@@ -1,0 +1,60 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: West sidewalk of Sixth Street, across from the church, between Pine and Lombard.
+# Position: Overture "Mother Bethel African Methodist Episcopal Church" (39.94330, -75.15182, 419 S 6th St), east side of Sixth per the 1835 guide; spot moved about 15 m west across the street (high confidence).
+id: philadelphia-the-church-that-came-on-a-cart
+title: "The Church That Came on a Cart"
+summary: "Mother Bethel's first meeting house was an old blacksmith shop, hauled across town by a team of horses."
+place: "Mother Bethel A.M.E. Church, Sixth and Lombard streets, Philadelphia, Pennsylvania"
+at: { lat: 39.94330, lng: -75.15200 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, society-hill, african-american-history, richard-allen, churches]
+teaser: "Most churches begin with a cornerstone. This one began with a forge."
+script: |
+  Look across Sixth Street at the church, and at the ground it stands on.
+
+  This is Mother Bethel. The National Park Service counts this lot among the oldest pieces of land in the country continuously owned by African Americans.
+
+  The first church on it was not built here. It was dragged here.
+
+  In the seventeen nineties, Black members of Saint George's Methodist Church walked out together, rather than sit in a separate gallery made for them. A preacher named Richard Allen bought this lot so they could have a church of their own. What he had to put on it was an old blacksmith shop.
+
+  In seventeen ninety-nine an engraver named William Birch published a view of Walnut Street, with the city jail in the background. In the foreground, a team of horses is pulling a wooden shed down the street. Historians believe it is this church, on its way here.
+
+  The first meeting house was dedicated in July, seventeen ninety-four. The congregation has rebuilt on this same ground more than once since, so the building in front of you is not the shed.
+
+  Allen is known to have used a blacksmith's anvil as his pulpit. The church still keeps the anvil as its emblem. It stands for self-determination.
+
+  Most churches begin with a cornerstone. This one began with a forge.
+pronunciations:
+  - written: Bethel
+    say: BETH-ul
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Goal, in Walnut Street Philadelphia by W. Birch & Son, 1799"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/articles/000/inde-goal-bethelame-walnut-st-birch-1799.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Timeline of Early Black Philadelphia and the Nation"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/education/timeline-early-black-philadelphia-nation.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Bethel African Methodist Episcopal Church, Philadelphia. (lithograph, 1829, catalogue description)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/2021670179/
+    retrievedAt: "2026-10-14"
+    rights: fair-use-facts
+  - title: "Picture of Philadelphia (1835)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01010570/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

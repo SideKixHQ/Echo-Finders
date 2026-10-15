@@ -1,0 +1,58 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk in front of the church on North Rampart Street at Conti Street.
+# Position: Overture "Our Lady of Guadalupe Chapel" at 411 N Rampart St, matching the HABS address (411 North Rampart at Conti) and the fitted Rampart/Conti intersection about 50 m away (medium-high confidence).
+id: new-orleans-no-funerals-at-the-cathedral
+title: "No Funerals at the Cathedral"
+summary: "In 1827 New Orleans fined anyone who held a funeral at the cathedral, and sent the dead here instead."
+place: "Our Lady of Guadalupe Church, the old Mortuary Chapel, North Rampart and Conti streets, New Orleans, Louisiana"
+at: { lat: 29.95846, lng: -90.07066 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, rampart-street, church, epidemics]
+teaser: "A fifty dollar fine for a funeral."
+script: |
+  Look at the front of this church. The plain stucco face, the open porch, the bell tower above.
+
+  It was built for one purpose. Funerals.
+
+  In the early eighteen-hundreds, Catholic funerals in New Orleans were held at the cathedral, in the middle of the old town. The city council came to fear that the custom was spreading disease, in a city where epidemics came back again and again.
+
+  So the council asked the church to build a chapel out here instead, at the back edge of town, close to the cemetery. The church bought this lot in eighteen twenty-five, for four hundred and twenty-five dollars. The chapel was finished in eighteen twenty-seven.
+
+  That same year the council made it law. A funeral at the cathedral would now cost a fifty dollar fine.
+
+  So for years, this was where the city's Catholic dead stopped on their way to the tomb.
+
+  Later the chapel became a parish church. It was called the Italian church for a while, then served the city's Spanish speakers, which is how it came by the name it carries now. Our Lady of Guadalupe.
+
+  The building was enlarged, but its front was left as it was. It was made to be the last door a great many people came through.
+detail: |
+  Sources differ on how long it served only the dead. The HABS report says the funeral
+  ordinance was struck down by the Louisiana Supreme Court in 1844, when the chapel became
+  the parish church of St. Anthony of Padua; the 1913 Picayune guide says it was in
+  constant use as a mortuary chapel until 1870. It was renamed Our Lady of Guadalupe in
+  1918 and enlarged in 1952.
+pronunciations:
+  - written: Guadalupe
+    say: gwah-duh-LOO-pay
+  - written: Conti
+    say: KON-tie
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Our Lady of Guadaloupe Church (St. Anthony of Padua, The Mortuary Chapel), 411 North Rampart Street, HABS LA-1104, written historical and descriptive data (1958)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/la0048/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), North Rampart: the church of St. Anthony of Padua"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/13004346/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

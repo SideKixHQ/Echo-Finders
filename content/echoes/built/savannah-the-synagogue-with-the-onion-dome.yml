@@ -1,0 +1,58 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: The east side of Monterey Square, looking across at the front of Congregation Mickve Israel's synagogue with its tower and pointed windows. Public square and sidewalk.
+# Position: Between the Overture point for Congregation Mickve Israel (32.07090,-81.09387, 20 E Gordon St) and the square's east edge; HABS gives the address as 428 Bull Street on the square (medium confidence).
+id: savannah-the-synagogue-with-the-onion-dome
+title: "The Synagogue with the Onion Dome"
+summary: "A building that looks like a Gothic church, for a congregation that reached Savannah five months after the first colonists."
+place: "Congregation Mickve Israel, Monterey Square, Savannah, Georgia"
+at: { lat: 32.07115, lng: -81.09435 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 76
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, monterey-square, architecture, jewish-history]
+teaser: "Pointed windows, buttresses, a tower. Now look at the very top."
+script: |
+  From the east side of the square, look at the building with the pointed windows and the tower. Buttresses down its sides. A big pointed window over the entrance. Inside, the plan is shaped like a cross, with a nave and transepts.
+
+  You would guess it was a church.
+
+  Now look at the very top of the tower. An onion dome.
+
+  This is a synagogue, the home of Congregation Mickve Israel. It went up between eighteen seventy six and eighteen seventy eight.
+
+  The congregation is far older than the building. Savannah's first colonists arrived in February, seventeen thirty three. In July, a group of about forty Jewish settlers arrived straight from London, paying their own way. They brought two scrolls of the Law with them, and an Ark to keep them in.
+
+  How the congregation grew from there is not clear. In eighteen sixty nine, a historian of the city spent a long time trying to find the date it was founded, and gave up. Its written records begin in seventeen ninety, the year of its charter.
+
+  The scrolls arrived first. The paperwork caught up fifty seven years later.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Mickve Israel Synagogue, 428 Bull Street, Savannah (HABS GA-1190), data pages"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/ga0132/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Historical record of the city of Savannah (F. D. Lee and J. L. Agnew, 1869)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Illustrated guide to Savannah (Maude Heyward, 1910)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/unk84031503/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah and its surroundings (G. A. Gregory, 1890)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007695/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Mickve Israel
+    say: MIK-vay IZ-ray-el

@@ -1,0 +1,49 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: The grounds of the Georgia State Railroad Museum, in the old Central of Georgia repair shops, within sight of the tall brick smokestack with the iron water tank round its base. Museum grounds; check opening hours.
+# Position: Overture points for the Roundhouse Railroad Museum and Georgia State Railroad Museum (32.07558,-81.10151 and -81.10157); HAER places the stack in the yard between the engine house and blacksmith shop, which is not separately located here (low-to-medium confidence).
+id: savannah-the-chimney-with-privies-in-its-base
+title: "The Chimney with Privies in Its Base"
+summary: "A railroad smokestack that was also a water tank and a row of workers' privies."
+place: "Central of Georgia Railway shops smokestack, Georgia State Railroad Museum, Savannah, Georgia"
+at: { lat: 32.07560, lng: -81.10150 }
+triggerRadiusKm: 0.06
+category: built
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, railroads, engineering]
+teaser: "It was three things at once. Look at the base."
+script: |
+  Find the tall, many-sided brick chimney rising over the old railroad shops.
+
+  It was built in eighteen fifty five for the Central of Georgia Railroad. A hundred and twenty three feet high, standing on a hundred and twenty piles.
+
+  It was three things at once.
+
+  First, a chimney. Through flues under the yard it pulled the smoke from every forge and boiler in the shops.
+
+  Second, a water tank. Round its waist sits a ring of cast iron panels, made here in Savannah. Behind them was a tank of forty thousand gallons, for filling the locomotives.
+
+  Third, look at the base. Between the brick buttresses there are little arched cells. Those were the workers' privies.
+
+  When the government surveyed the shops, it said the combination of smokestack and privy appeared to be unique.
+
+  The day it was finished, the railroad's superintendent and the master bricklayer climbed to the top before the scaffolding came down, and drank a bottle of champagne up there.
+
+  The bosses toasted it from the top. Everyone else used it from the bottom.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Central of Georgia Railway, Savannah Repair Shops and Terminal Facilities (HAER GA-1), data pages"
+    publisher: "Library of Congress, Historic American Engineering Record"
+    url: https://www.loc.gov/item/ga0356/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Central of Georgia Railway, Combination Smokestack, Water Tank and Privies (HAER GA-1-F)"
+    publisher: "Library of Congress, Historic American Engineering Record"
+    url: https://www.loc.gov/item/ga0829/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

@@ -1,0 +1,64 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: The north-west corner of Meeting and Broad, the Four Corners of the Law, in front of the Charleston County Courthouse.
+# Position: Corner of Meeting and Broad from Overture 84 Broad (courthouse), 80 Broad (City Hall) and 83 Broad (post office) entries and the street grid (high confidence).
+id: charleston-built-for-a-capital
+title: "Built for a Capital"
+summary: "The courthouse was the colonial statehouse. Charleston rebuilt it to keep the government, and finished it after the government left."
+place: "Charleston County Courthouse, Four Corners of the Law, Meeting and Broad Streets, Charleston, South Carolina"
+at: { lat: 32.77662, lng: -79.93120 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, south-of-broad, four-corners, courthouse, revolution]
+teaser: "Four corners, four buildings, four kinds of law. One of them was meant for something else."
+script: |
+  You are standing at the crossing of Meeting and Broad. Four corners, four buildings. A
+  church, a city hall, a federal post office and court, and a county courthouse. Charleston
+  calls this the Four Corners of the Law. The law of the church, of the city, of the nation
+  and of the state.
+
+  Look at the courthouse, on the north-west corner. It was not built to be a courthouse.
+
+  It went up in seventeen fifty-three as the statehouse of the colony. The royal governor's
+  council met upstairs. From its balcony over Meeting Street, the Declaration of
+  Independence was read aloud for the first time in South Carolina.
+
+  In seventeen eighty-eight it burned. Only the foundations, the walls and the doorways
+  were left.
+
+  By then the rest of the state wanted the capital moved to the middle of South Carolina,
+  not left out on its edge. Charleston rebuilt fast anyway, anxious to keep its place in
+  the government.
+
+  By the time the work was finished, in seventeen ninety-two, the capital was in Columbia.
+
+  So the courts moved in, and they are still there. It is the state's corner of this
+  crossing. It just never got the state back.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Charleston County Courthouse"
+    publisher: "National Park Service, Travel Charleston"
+    url: https://www.nps.gov/places/charleston-county-courthouse.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston City Hall"
+    publisher: "National Park Service, Travel Charleston"
+    url: https://www.nps.gov/places/charleston-city-hall.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston United States Post Office"
+    publisher: "National Park Service, Travel Charleston"
+    url: https://www.nps.gov/places/charleston-united-states-post-office.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the State House and the move to Columbia"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/06042434/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

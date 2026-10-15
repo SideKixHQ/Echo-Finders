@@ -1,0 +1,64 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Pedestrian Chartres Street in front of the cathedral steps, facing the facade.
+# Position: Grid offset from the Overture Jackson Square centre, checked against the Overture cathedral, Cabildo and Presbytère points (cathedral faces the square from the northwest) (medium confidence).
+id: new-orleans-the-man-under-the-altar
+title: "The Man Under the Altar"
+summary: "A rich Spaniard rebuilt the burned church at his own expense, asked for masses for his soul, and was buried in front of the altar."
+place: "St. Louis Cathedral, Jackson Square, New Orleans, Louisiana"
+at: { lat: 29.95777, lng: -90.06345 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, jackson-square, french-quarter, churches, spanish-colonial]
+teaser: "Look up at the three spires. They are younger than they look."
+script: |
+  Look up at the three spires on the front of the cathedral.
+
+  They are younger than they look. The front you are facing was remodelled around eighteen fifty, when steeples were raised on the old towers and the portico was added.
+
+  The church before that was paid for by one man.
+
+  In seventeen eighty-eight, fire took the old parish church along with most of the town. Don Andrés Almonester y Roxas, a Spaniard who had grown very rich in this colony, offered to build a new one at his own expense.
+
+  He asked for something in return. Masses for his soul, said for ever.
+
+  A guidebook from eighteen forty-five says the bargain was being kept. Every Saturday evening, it says, at sunset, the bell tolled for the founder.
+
+  He died in seventeen ninety-eight and was buried in front of the altar. A writer in the eighteen nineties described his name, his coat of arms and his motto, cut into the stone over him.
+
+  The building has been remade around him since. The steeples are new. The portico is new.
+
+  He is still inside, under the floor, at the front.
+
+  And by his own arrangement, someone is meant to be praying for him.
+pronunciations:
+  - written: Andrés Almonester y Roxas
+    say: ahn-DRESS al-mo-NESS-ter ee ROH-hahs
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Norman's New Orleans and environs (1845)"
+    publisher: "B. M. Norman, New Orleans, 1845; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/01008776/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "New Orleans, the place and the people (1895)"
+    publisher: "Grace King, Macmillan, 1895; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/01008773/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (1904)"
+    publisher: "The Picayune, New Orleans, 1904; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "A history of Louisiana (1905)"
+    publisher: "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress"
+    url: https://www.loc.gov/item/34036146/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

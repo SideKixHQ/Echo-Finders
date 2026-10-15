@@ -1,0 +1,64 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk on the courthouse side of Royal Street, opposite 417 Royal, between Conti and St. Louis streets.
+# Position: Grid offset from the Overture points for 417 Royal St to the opposite Royal sidewalk, street line fitted from Overture addresses (medium confidence).
+id: new-orleans-the-champion-who-stopped
+title: "The Champion Who Stopped"
+summary: "Paul Morphy beat the best chess players in the world, came home to this house, and stopped playing. He never quite stopped watching."
+place: "417 Royal Street, New Orleans, Louisiana"
+at: { lat: 29.95604, lng: -90.06647 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 103
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, chess, royal-street]
+teaser: "Look at the iron railing on the balcony across Royal Street."
+script: |
+  Look at the iron railing on the balcony of the building across Royal Street. A writer in nineteen nineteen pointed out a monogram twined into that ironwork. It belonged to the Louisiana Bank, which put up this building in eighteen sixteen.
+
+  But the man people came here to think about was not a banker.
+
+  Paul Morphy was born in New Orleans in eighteen thirty-seven, the son of a judge. When he was about ten, his father explained to him how the chess pieces move. Within two years the boy was beating the best players in the city. Before he turned thirteen, a famous Hungarian master passing through New Orleans played him three games. The boy won two, and drew the other.
+
+  He went on to Paris and London, and came home the greatest chess player in the world. The city gave him a set of chessmen in gold and silver.
+
+  And then he stopped.
+
+  In his later years, a newspaper reported, he never played. Now and then friends would coax him to sit down at a board, and in the middle of the game he would suddenly sweep the pieces away, stand up and leave. When the master Steinitz came to New Orleans, people tried several times to bring the two of them together. Morphy would not do it.
+
+  He died in this house in July eighteen eighty-four. He was forty-seven.
+
+  The same report added one more thing. While Steinitz was playing in New Orleans, Morphy followed his games closely in the newspapers.
+
+  And he criticised the moves.
+pronunciations:
+  - written: Morphy
+    say: MOR-fee
+  - written: Steinitz
+    say: SHTY-nits
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Obituary, Paul Morphy, New-York Tribune, 11 July 1884, page 2"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn83030214/1884-07-11/ed-1/?sp=2
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Death of Paul Morphy, The Sun (New York), 11 July 1884, page 3"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn83030272/1884-07-11/ed-1/?sp=3
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Romance of New Orleans (1919)"
+    publisher: "R. H. True and Co., via the Library of Congress"
+    url: https://www.loc.gov/item/20006638/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's Guide to New Orleans (1904), 417 Royal Street"
+    publisher: "The Picayune, via the Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

@@ -1,0 +1,48 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Sidewalk on the west side of South Third Street in front of the bank's portico, between Walnut and Chestnut.
+# Position: Overture places the First Bank of the United States at 39.94803, -75.14635 (120 S 3rd St, matching NPS and HABS); spot moved east to the Third Street frontage (medium confidence).
+id: philadelphia-the-baby-over-the-bank-door
+title: "The Baby Over the Bank Door"
+summary: "A carved panel over the First Bank's door celebrates a young nation's money, and one word on its globe says where some of it came from."
+place: "First Bank of the United States, South Third Street, Philadelphia, Pennsylvania"
+at: { lat: 39.94803, lng: -75.14615 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, old-city, architecture, banking, slavery]
+teaser: "Look above the main door. There is a baby in a helmet."
+script: |
+  Stand in front of the columns on Third Street and look above the main door.
+
+  There is a carved marble panel there, and it is busier than it first appears. A baby wearing a helmet leans against a globe. One foot rests on a beehive. Beside him a horn of plenty spills out, not fruit, but coins. Behind him are tall ledgers, sailing ships and an American flag.
+
+  The baby is America. This was the Bank of the United States, and it opened in this building in seventeen ninety-seven. The whole front was designed to tell you what it was for. Even the keystone over the door is the head of Mercury, the Roman god of commerce.
+
+  Now look at the globe again. One word is carved on it clearly. Africa.
+
+  The Park Service reads that word as the riches of that continent, human and mineral.
+
+  The panel is a celebration of a young country's money. It names one of the places the money came from.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "First Bank of the United States"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-firstbank.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "First Bank of the United States FAQs"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/firstbank-faq.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "First Bank of the United States, 120 South Third Street (HABS PA-1417)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/pa0850/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

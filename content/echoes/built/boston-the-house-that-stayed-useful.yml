@@ -1,0 +1,56 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public pavement in North Square facing number nineteen; the house is a ticketed museum, so the echo works from the square outside.
+# Position: Overture place "The Paul Revere House", 19 North Sq, cross-checked against the Pierce-Hichborn House entry next door and the North Square plaza point (high confidence).
+id: boston-the-house-that-stayed-useful
+title: "The House That Stayed Useful"
+summary: "Downtown Boston's oldest building, built about 1680, survived a century as a boarding house, tenement, cigar factory and bank."
+place: "Paul Revere House, North Square, Boston, Massachusetts"
+at: { lat: 42.36374, lng: -71.05368 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 77
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, north-end, paul-revere, houses]
+teaser: "Look at the house at number nineteen. Everything around it is younger."
+script: |
+  Look at the house at number nineteen, North Square. Everything else you can see from here
+  is younger than it.
+
+  It went up around sixteen eighty. That makes it the oldest building in downtown Boston.
+
+  Paul Revere bought it in seventeen seventy. He was a silversmith, a veteran and a father of
+  five. On the night of the eighteenth of April, seventeen seventy-five, he set out from this
+  square to warn Samuel Adams and John Hancock.
+
+  The Reveres owned the house for thirty years and lived in it for about twenty. In eighteen
+  hundred, he sold it.
+
+  What came next is why it is still here.
+
+  It became a boarding house for sailors. Then a tenement, with shops on the ground floor. At
+  one point it was a cigar factory. At another, a bank. Nobody was preserving it. It was just
+  a building people kept finding a use for.
+
+  By the early nineteen hundreds it faced demolition. A great-grandson of Paul Revere bought
+  it, and in April nineteen oh eight it opened as a museum.
+
+  Twenty years of Reveres. A century of sailors, shopkeepers and cigar makers.
+
+  The house only remembers the twenty.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Paul Revere House"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/learn/historyculture/prh.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Paul Revere House"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/paul-revere-house.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

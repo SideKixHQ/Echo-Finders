@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Public sidewalk at the corner of Third and Pine streets, outside the Kosciuszko House.
+# Position: Overture "Thaddeus Kosciuszko National Memorial" (39.94346, -75.14732, 301 Pine St), consistent with odd numbers on the north side of Pine and St. Peter's Church at 313 Pine (39.94322, -75.14764); spot set at the Third Street corner (high confidence).
+id: philadelphia-the-room-upstairs
+title: "The Room Upstairs"
+summary: "In a rented room at Third and Pine, a Polish general wrote a will with Thomas Jefferson's help, then left the country in secret."
+place: "Thaddeus Kosciuszko House, Third and Pine streets, Philadelphia, Pennsylvania"
+at: { lat: 39.94335, lng: -75.14712 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 91
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, society-hill, revolution, kosciuszko, jefferson, national-park]
+teaser: "The smallest unit of the National Park System, and a will written upstairs."
+script: |
+  Look at the corner house here, at Third and Pine, and then up at its second floor.
+
+  The whole site covers two hundredths of an acre. The National Park Service calls it the smallest unit in the national park system.
+
+  Late in seventeen ninety-seven, a Polish general took a cramped room up there, in Mrs. Relf's boarding house. His name was Thaddeus Kosciuszko. More than twenty years earlier he had come to America and designed fortifications for the Revolution, at Saratoga and at West Point. Then he went home to fight for Poland, was wounded, captured and imprisoned in Russia, and came back to Philadelphia a hero, still recovering.
+
+  People climbed the stairs to see him. A Virginia congressman who pushed Congress to pay what it owed him. Chief Little Turtle of the Miami, who gave him a pipe tomahawk. And the Vice President, Thomas Jefferson, who became a close friend.
+
+  Up in that room, with Jefferson's legal help, Kosciuszko worked out his will. He asked that after his death his estate be used to free as many enslaved people as possible.
+
+  In May seventeen ninety-eight he slipped out of the country in the small hours, on a ship from New Castle, Delaware. He told one person he was going. Jefferson.
+
+  He gave Thomas Jefferson two things to keep. The secret of his leaving. And the will.
+pronunciations:
+  - written: Thaddeus Kosciuszko
+    say: THAD-ee-us kosh-CHOOSH-koh
+  - written: Relf
+    say: RELF
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Kosciuszko House"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/kosciuszko-house.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Thaddeus Kosciuszko (biography)"
+    publisher: "National Park Service, Thaddeus Kosciuszko National Memorial"
+    url: https://www.nps.gov/thko/learn/historyculture/kosciuszkobio.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Thaddeus Kosciuszko House, 301 Pine Street, Philadelphia (HABS PA-1342)"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/pa1222/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

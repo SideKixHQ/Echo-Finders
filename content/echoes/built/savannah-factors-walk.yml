@@ -1,0 +1,51 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Bay Street sidewalk at the railing above Factors Walk, by the iron footbridges of the 200 block of East Bay, just east of Abercorn Street.
+# Position: Estimated from the Bay Street line and the Overture "Factor's Walk" point, east of Reynolds Square's Abercorn Street; exact bridge not pinned (medium confidence).
+id: savannah-factors-walk
+title: "The front door is on the top floor"
+summary: "The cotton factors' buildings along the bluff are entered from Bay Street by iron bridges, straight into their top floors."
+place: "Factors Walk, East Bay Street, Savannah, Georgia"
+at: { lat: 32.08080, lng: -81.08880 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, riverfront, cotton, architecture]
+teaser: "Follow one of the iron bridges to its door."
+script: |
+  Stand at the railing and look down. Between Bay Street and the row of old buildings on the river side there is a gap, and narrow iron bridges cross it.
+
+  Follow one of those bridges to its door. You are walking into the top floor of the building.
+
+  This was the row of the cotton factors, the brokers of the cotton trade. One of these buildings, at the two hundred block of East Bay, went up in eighteen twenty three. When federal surveyors measured it, they described entrances on the fourth floor, a cantilevered walk, and more bridges reaching the floors below.
+
+  The offices were up here, level with the street and the merchants. The warehouse floors stacked down the face of the bluff toward the river.
+
+  A stone store on the west side of Bay Street, built around eighteen sixteen, works the same way. Three storeys from Bay Street. Four from the river. Every floor but the attic opens onto a different level of the town.
+
+  So none of these buildings has one ground floor. There is the floor at the water, and the floor at the street, and an iron bridge in between.
+pronunciations:
+  - written: factors
+    say: FAK-terz
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Archibald Smith's Factor's Building, 202-206 East Bay Street (HABS GA-1195), data pages"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/pictures/item/ga0029/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "William Taylor Store, 204 West Bay Street (HABS GA-1196), data pages"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/pictures/item/ga0142/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Old \"Factors' Row\" cotton warehouses and offices of cotton \"factors,\" or brokers on the Savannah, Georgia, waterfront"
+    publisher: "Carol M. Highsmith Archive, Library of Congress"
+    url: https://www.loc.gov/item/2017880453/
+    retrievedAt: "2026-10-15"
+    rights: fair-use-facts

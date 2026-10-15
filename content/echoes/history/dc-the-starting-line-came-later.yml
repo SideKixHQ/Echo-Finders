@@ -1,0 +1,54 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Beside the Zero Milestone, on the north edge of the Ellipse facing the White House.
+# Position: Overture "Zero Milestone" point, consistent with its known spot on the Ellipse's north side by E St NW (high confidence).
+id: dc-the-starting-line-came-later
+title: "The Starting Line Came Later"
+summary: "The Zero Milestone marks where an army convoy set off across the continent in 1919, four years before the stone arrived."
+place: "Zero Milestone, the Ellipse, Washington, D.C."
+at: { lat: 38.89511, lng: -77.03656 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 64
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, ellipse, roads, monuments]
+teaser: "Look at the small granite post here, with a bronze compass on top."
+script: |
+  Look at the small granite post here, with a bronze compass on top.
+
+  Walk round to the south face and read it. Point for the measurement of distances from
+  Washington on highways of the United States.
+
+  This is zero.
+
+  On the seventh of July, 1919, an army motor convoy set out from this spot to cross the
+  continent. It was the first transcontinental military motor convoy, and it went by the
+  Lincoln Highway. The east face says so.
+
+  The stone was not here to see them off. Congress authorized a permanent marker the
+  following year, and this one was presented to the city on the fourth of June, 1923.
+
+  So the starting line arrived four years after the start.
+
+  The Park Service chooses its words carefully. It calls this, symbolically, the
+  official starting point for highway distances from Washington.
+
+  Every highway in the country, measured from a post you can walk around in a few steps.
+
+  Symbolically.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Zero Milestone"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/zero-milestone.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Dedication, zero milestone, 6/4/23 (National Photo Company Collection)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/2016847638/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

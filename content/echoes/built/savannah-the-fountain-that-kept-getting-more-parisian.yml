@@ -1,0 +1,71 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: The paved walk around the fountain basin at the north end of Forsyth Park, on the Bull Street axis south of Gaston Street. Public park.
+# Position: Between the two Overture fountain points (32.06925,-81.09559 and 32.07007,-81.09679); the first lies on the Bull Street line of the Pulaski monument (-81.0949) and south of Gaston Street, so the spot is taken just north of it, on the basin's edge (medium confidence).
+id: savannah-the-fountain-that-kept-getting-more-parisian
+title: "The Fountain That Kept Getting More Parisian"
+summary: "Three Savannah guidebooks described where this fountain came from. Each one made it a little more like Paris."
+place: "Forsyth Park fountain, Savannah, Georgia"
+at: { lat: 32.06935, lng: -81.09550 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 69
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  The fountain's date is documented, from a dated stereograph record at the Library of
+  Congress. Its model is not settled in these sources: an 1890 guide ties it to a prize model
+  shown in London and calls it similar to the Place de la Concorde fountain, an 1899 guide
+  calls it an exact reproduction of the Paris fountain, and a 1910 guide says only that it was
+  modelled on it. The script reports each claim as the guidebook's, not as fact. A widely
+  repeated account that it was ordered from a manufacturer's catalogue could not be sourced
+  from reachable sites and is left out.
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, forsyth-park, fountains]
+teaser: "Ask where it came from. The guidebooks never quite agreed."
+script: |
+  Walk up to the edge of the basin and look at the fountain. The tiers, the figures, the water falling from one level to the next.
+
+  Now ask where it came from. Savannah's own guidebooks never quite agreed.
+
+  In eighteen ninety, one said it was designed from a prize model shown at an exhibition in London, and that it was similar to the grand fountain in the Place de la Concorde, in Paris.
+
+  In eighteen ninety nine, another went further. An exact reproduction, it said, of the one in Paris.
+
+  By nineteen ten, a third guide had it modelled on Paris. Close, but no longer exact.
+
+  What is certain is plainer. Before the fountain, the middle of this park was marked by a small wooden bridge. The fountain went in around eighteen fifty eight, and local photographers were soon selling pictures of it. After the war, a photographer who had followed Sherman's army put it in his book of the campaign.
+
+  The fountain has not changed much since. The story keeps improving.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Park fountain playing / photographed by J.N. Wilson (stereograph, Marian S. Carson Collection)"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/2017659035/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah and its surroundings (G. A. Gregory, 1890)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007695/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "A sketch of Savannah, historical and topographical (1899)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007700/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Illustrated guide to Savannah (Maude Heyward, 1910)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/unk84031503/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Fountain, Savannah, Ga. (G. N. Barnard, Photographic views of Sherman's campaign, 1866)"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/2003677263/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Place de la Concorde
+    say: PLAHSS duh lah kon-KORD

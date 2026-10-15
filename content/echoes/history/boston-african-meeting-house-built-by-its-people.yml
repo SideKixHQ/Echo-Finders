@@ -1,0 +1,58 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Smith Court, a public lane off Joy Street, in front of the African Meeting House (8 Smith Court).
+# Position: Overture "African Meeting House" point (8 Smith Ct), agreeing with the Boston African American NHS entry at the same address; about 30 m from boston-abiel-smith-school-goodbye (high confidence).
+id: boston-african-meeting-house-built-by-its-people
+title: "The House Its People Built"
+summary: "The oldest Black church building in the country was paid for and built by its own congregation."
+place: "African Meeting House, 8 Smith Court, Beacon Hill, Boston, Massachusetts"
+at: { lat: 42.36001, lng: -71.06545 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, black-heritage-trail, beacon-hill, churches, abolition]
+teaser: "Look at the meeting house. Somebody had to pay for it, and somebody had to build it."
+script: |
+  You are in Smith Court. Look at the meeting house. It opened in eighteen-oh-six, and it is
+  the oldest Black church building still standing in the United States.
+
+  Look at it as a building first. Somebody had to pay for it, and somebody had to build it.
+
+  The African Baptist Church was founded the year before, with twenty-four members. Fifteen
+  of them were women. To give it a home, a man named Cato Gardner, born in Africa, went out
+  and raised fifteen hundred dollars himself. Black craftsmen did most of the work.
+
+  Then the building did its job. It was a church, and a school met on the first floor.
+  Frederick Douglass spoke here. So did Maria Stewart. In eighteen thirty-two, William Lloyd
+  Garrison founded the New England Anti-Slavery Society inside.
+
+  People called it the Black Faneuil Hall.
+
+  It was meant as a compliment. But Faneuil Hall was the gift of one rich merchant, a man who
+  bought and sold enslaved people. This hall was paid for and built by the people who sat in
+  it.
+pronunciations:
+  - written: Faneuil
+    say: FAN-yul
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "African Meeting House"
+    publisher: "National Park Service, Boston African American National Historic Site"
+    url: https://www.nps.gov/boaf/learn/historyculture/amh.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "African Meeting House"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/african-meeting-house.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Peter Faneuil: Empire of Goods, Wealth, and Enslavement"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/learn/historyculture/peter-faneuil.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

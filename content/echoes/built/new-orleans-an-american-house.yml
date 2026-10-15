@@ -1,0 +1,50 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk on the far side of St. Louis Street from 820 St. Louis, between Bourbon and Dauphine, looking across at the facade.
+# Position: Grid offset from the Overture Hermann-Grima House point (820 St Louis St) to the opposite St. Louis sidewalk, street line fitted from Overture addresses (medium confidence).
+id: new-orleans-an-american-house
+title: "An American House"
+summary: "In 1819 Latrobe predicted an American town. This house is what he saw coming, and what the French Quarter made of it."
+place: "Hermann-Grima House, 820 St. Louis Street, New Orleans, Louisiana"
+at: { lat: 29.95741, lng: -90.06742 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, architecture, st-louis-street]
+teaser: "Look at the front door across the street, set back into the wall under a fan of glass."
+script: |
+  Look across at the front of this house. Five openings wide, evenly spaced, in pale yellow brick. Then look at the front door, set back into the wall, with slender columns on either side and a half-oval fan of glass above it.
+
+  Now look at its neighbours.
+
+  In eighteen nineteen the architect Benjamin Henry Latrobe, who had worked on the Capitol in Washington, came to live in New Orleans. He was taken with the city's Creole character, and he could see what was coming. Merchants from the old United States, he wrote, had already begun to bring in the lopsided London house. In a few years, he predicted, this will be an American town.
+
+  This house is part of what he saw coming. It was built around eighteen thirty-one for Samuel Hermann, a wealthy merchant. The federal survey of it describes a plan from the northeastern United States, adapted to work as a New Orleans townhouse. The yellow brick, it has been said, came all the way from Philadelphia.
+
+  Latrobe was half right. The American houses did come. But they had to fit the town the French had already laid out. Narrow, deep lots. Buildings right up to the street. Courtyards hidden behind. The Americans' favourite front yards hardly ever appeared in the Quarter. They kept the iron balconies too.
+
+  Look at the door again. It is an American door.
+
+  It just had to stand where the street told it to.
+pronunciations:
+  - written: Hermann-Grima
+    say: HER-man GREE-mah
+  - written: Latrobe
+    say: luh-TROHB
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Hermann-Grima House, 820 Saint Louis Street, New Orleans, Orleans Parish, LA (HABS LA-1122)"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/la0067/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Vieux Carré, A Creole Neighborhood in New Orleans (Teaching with Historic Places)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

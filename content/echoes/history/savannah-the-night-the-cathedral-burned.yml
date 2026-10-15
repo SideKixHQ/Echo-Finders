@@ -1,0 +1,56 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: The Harris Street sidewalk in front of the Cathedral of St. John the Baptist, at the northeast side of Lafayette Square, looking up at the twin spires. Public sidewalk.
+# Position: Overture point for the Cathedral Basilica at 222 E Harris St (32.07336,-81.09102), moved slightly south onto the Harris Street sidewalk where the 1898 report puts the firemen (high confidence).
+id: savannah-the-night-the-cathedral-burned
+title: "The Night the Cathedral Burned"
+summary: "In 1898 every fire engine in Savannah was somewhere else when the cathedral caught fire."
+place: "Cathedral of St. John the Baptist, Lafayette Square, Savannah, Georgia"
+at: { lat: 32.07325, lng: -81.09105 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 87
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, lafayette-square, fires, churches]
+teaser: "The firemen stood on this sidewalk. Their water reached the first window sill."
+script: |
+  Look up at the two spires of the cathedral, then down the long walls beneath them.
+
+  On a Sunday night in February, eighteen ninety eight, a streetcar driver coming through this square saw fire. It was about ten minutes to eleven.
+
+  The alarm went in quickly. It did not help. Every engine in the city was down at a big fire on River Street. The hose wagons that came had almost no pressure. Firemen stood on the Harris Street sidewalk, about where you are, and their streams barely reached the first window sill.
+
+  It was three quarters of an hour before an engine arrived. By then the roof was gone.
+
+  Thousands of people stood around the square and watched sparks pour from the towers like fireworks. Some of the sparks burned holes in their hats and coats.
+
+  The next morning the paper said nothing remained but the four walls and parts of the two spires.
+
+  The rebuilding went to the same architect who had designed the church in the first place. He kept its lines. The spires, the towers, the tall pointed windows. Two years and eight months after the fire, the cathedral was dedicated again.
+
+  So the shape you are looking at is the shape that crowd watched burn. What is new is almost everything inside.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Cathedral in Ruins (The morning news, Savannah, 7 February 1898, page 8)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86063034/1898-02-07/ed-1/?sp=8
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah's New Cathedral (The Savannah morning news, 28 October 1900, page 10)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn89053684/1900-10-28/ed-1/?sp=10
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Dedication sermon report (The Savannah morning news, 29 October 1900, page 8)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn89053684/1900-10-29/ed-1/?sp=8
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+detail: >-
+  The 1900 report names the architect as E. M. Baldwin of Baltimore, who drew the plans for
+  the original building in the 1870s, and says it was a matter of economy as well as taste to
+  preserve its spires, towers and high Gothic windows.

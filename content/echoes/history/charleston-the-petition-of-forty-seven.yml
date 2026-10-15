@@ -1,0 +1,43 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: Hasell Street sidewalk in front of Kahal Kadosh Beth Elohim, looking at the columned portico. A working synagogue; listen from the public sidewalk.
+# Position: Overture point for 90 Hasell St moved south onto the north sidewalk of Hasell St, checked against 89, 87 and 92 Hasell St (medium confidence).
+id: charleston-the-petition-of-forty-seven
+title: "The Petition of Forty-Seven"
+summary: "In 1824, forty-seven members of this congregation asked to pray in English, and started something."
+place: "Kahal Kadosh Beth Elohim, Hasell Street, Charleston, South Carolina"
+at: { lat: 32.78212, lng: -79.93290 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 76
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, jewish-history, religion, architecture]
+teaser: "The petition lost. Seventeen years later it had the whole building."
+script: |
+  Look at the front of this synagogue. Tall columns, a deep porch, a heavy roof line. It was designed to look like a temple from ancient Greece.
+
+  The congregation is older than the building. It began in seventeen forty nine, and by the end of that century it was the largest Jewish community in the country.
+
+  In eighteen twenty four, forty seven members sent the trustees a petition. They asked for shorter Hebrew rituals. They asked for prayers and sermons in English. The trustees said no, and for a time the congregation split.
+
+  By eighteen thirty three, the congregation was back together, and most of it was on the petitioners' side. Then the Charleston fire of eighteen thirty eight burned the first synagogue, which stood on this spot.
+
+  This one was built to replace it in eighteen forty. When its first service was held, the year after, it was the new kind. Beth Elohim became the first Reform congregation in America, and this is now the oldest synagogue in the country in continuous use.
+
+  The petition of eighteen twenty four was turned down. Seventeen years later, it had the whole building.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Kahal Kadosh Beth Elohim Synagogue"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/kahal-kadosh-beth-elohim-synagogue.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Kahal Kadosh Beth Elohim
+    say: kah-HAHL kah-DOHSH bayt eh-loh-HEEM
+  - written: Hasell Street
+    say: HAY-zel Street

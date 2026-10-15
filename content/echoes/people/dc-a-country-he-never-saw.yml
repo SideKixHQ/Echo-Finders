@@ -1,0 +1,68 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: Jefferson Drive SW, outside the north entrance of the Smithsonian Institution Building, the Castle.
+# Position: Estimated from the known layout: north facade on Jefferson Dr between 9th and 12th St SW, centre entrance; Overture had no usable point for the building (medium confidence).
+id: dc-a-country-he-never-saw
+title: "A Country He Never Saw"
+summary: "James Smithson left his fortune to a country he never visited; he lies inside the Castle, brought here seventy-five years after he died."
+place: "Smithsonian Institution Building, the Castle, Washington, D.C."
+at: { lat: 38.88912, lng: -77.02600 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, national-mall, smithsonian]
+teaser: "Face the north door of the red castle."
+script: |
+  Face the north door of the red castle.
+
+  Inside, close to this entrance, there is a small crypt with a sarcophagus in it. The man
+  in it paid for all of this.
+
+  His name was James Smithson. He was an English scientist, born outside marriage to a
+  duke, and never given a title. When he died, he left his entire fortune to the United
+  States, to found an institution in Washington under his name.
+
+  He had never been here. He never visited the country in his life.
+
+  He died in Genoa in 1829 and was buried on a hill there, in a small British cemetery.
+  By the turn of the century a stone quarry was eating the hill away.
+
+  So in 1904 one of the Smithsonian's regents, Alexander Graham Bell, went to Genoa at his
+  own expense and brought the body back across the Atlantic.
+
+  A Washington paper put it neatly a few years later. That voyage was the first time
+  Smithson ever had personal contact with these shores.
+
+  He gave everything to a country he had never seen.
+
+  He got here seventy-five years after he died.
+pronunciations:
+  - written: Genoa
+    say: JEN-oh-uh
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Story of Smithson: His Dust Soon to Be Buried in City of Washington. The Weekly Corinthian, 17 February 1904, page 10 (Chronicling America)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/resource/sn87065046/1904-02-17/ed-1/?sp=10
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Smithsonian Institution, by Frederic J. Haskin. The Washington Herald, 10 October 1907, page 7 (Chronicling America)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/resource/sn83045433/1907-10-10/ed-1/?sp=7
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Smithsonian Institution Building, HABS DC-141, index to photographs (photo 49: crypt with Smithson's sarcophagus)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/dc0231/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "[Coffin with the remains of James Smithson being carried out of the British cemetery at San Benigno, outside Genoa, Italy], 1904"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/2016651958/
+    retrievedAt: "2026-10-14"
+    rights: public-domain

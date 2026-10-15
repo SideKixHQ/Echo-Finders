@@ -1,0 +1,58 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: The Canal Street neutral ground at Royal and St. Charles streets, at the streetcar stop; watch for streetcars.
+# Position: Midpoint between Overture corner points at 637 Canal St (Canal and Royal) and 102 St Charles Ave (Canal and St Charles), checked against fitted Canal/Royal lines (medium confidence).
+id: new-orleans-the-neutral-ground
+title: "The Neutral Ground"
+summary: "Why New Orleans calls the middle of a street the neutral ground, starting with the strip down Canal Street."
+place: "Canal Street neutral ground at Royal and St. Charles, New Orleans, Louisiana"
+at: { lat: 29.95313, lng: -90.06893 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 89
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, canal-street, language, streetcar]
+teaser: "Neutral between what?"
+script: |
+  Look at the strip down the middle of Canal Street, where the streetcar tracks run.
+
+  Anywhere else it would be a median. In New Orleans it is the neutral ground.
+
+  Start with the street's name. Canal Street really did have a canal, of a sort. A narrow, crooked stream once ran here, and the Spanish used it as a moat in front of the city wall. When Americans began settling upriver, they filled their lots with earth dug from its banks, and it grew into a straight, deep ditch. Iron posts and chains along the edge kept people from falling in. As far as anyone knows, nothing ever sailed on it.
+
+  By eighteen thirty-eight the ditch had been filled in as far as Claiborne Street, and the car tracks were laid on the ground it left behind. The guidebooks called that ground the neutral ground.
+
+  They also called Canal Street the line between two cities. The French and Creole town downriver. The American town upriver. A guidebook of nineteen hundred and four said this street divided New Orleans into two phases of life, two styles of architecture, two forms of civilization.
+
+  The old guidebooks never stop to explain the word neutral. Maybe it did not need explaining.
+
+  Stand here, in the middle of the line between two cities, and decide for yourself.
+detail: |
+  By 1900 the guidebooks used "neutral ground" for the middle of North Rampart, St. Charles
+  Avenue and Elysian Fields as well. The statue of Henry Clay stood on the Canal Street
+  neutral ground at this intersection from 1856 until 1900, when it was moved to Lafayette
+  Square.
+pronunciations:
+  - written: Claiborne
+    say: CLAY-born
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), Part III: Canal Street"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/13004346/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Chapter XI: Canal Street"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Jazz Origins in New Orleans"
+    publisher: "National Park Service, New Orleans Jazz National Historical Park"
+    url: https://www.nps.gov/jazz/learn/historyculture/history_early.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain

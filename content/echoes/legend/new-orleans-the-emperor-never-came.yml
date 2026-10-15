@@ -1,0 +1,72 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk at the Chartres and St. Louis corner opposite the Napoleon House, on the courthouse side of Chartres, looking across at 500 Chartres.
+# Position: Grid offset from the Overture Napoleon House point (500 Chartres St) across Chartres and St. Louis, street lines fitted from Overture addresses (medium confidence).
+id: new-orleans-the-emperor-never-came
+title: "The Emperor Never Came"
+summary: "The Napoleon House was said to be meant for Napoleon after a rescue from St. Helena. The plot is a legend, and so is which house."
+place: "Napoleon House, Chartres and St. Louis streets, New Orleans, Louisiana"
+at: { lat: 29.95588, lng: -90.0653 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 98
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The rescue plot is told as certain by some nineteenth-century writers and called a popular
+  legend by the 1955 federal survey; even the house it attaches to has moved. The script says
+  so.
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, napoleon, legend, chartres-street]
+teaser: "Look across at the old house on the corner, with the iron balconies."
+script: |
+  Look across at the three-storey house on the corner of Chartres and Saint Louis, with iron balconies on both street fronts and an old tile roof.
+
+  It is called the Napoleon House. The story is that it was meant for Napoleon himself.
+
+  In his last years, Napoleon was held prisoner on the island of Saint Helena. In New Orleans there were Frenchmen who still adored him. One of them was Nicholas Girod, a former mayor of the city, who lived in this house.
+
+  The story goes that Girod and his friends paid for a fast ship called the Seraphine, signed on a crew of Baratarian privateers, and planned to sail to the island, take the emperor off by night, and bring him here.
+
+  Then word came that Napoleon had died, in May eighteen twenty-one. The ship never sailed.
+
+  Is it true? A New Orleans writer in eighteen ninety-five said there could be no doubt the expedition was real. A federal survey in nineteen fifty-five called it a popular legend.
+
+  It is not even clear which house it is. A city guide of nineteen-oh-four gave the name Napoleon House to a different mansion altogether, near Canal Street, and expected it to be torn down that year. And the survey of nineteen fifty-five found two houses on this short stretch of Chartres Street, both going by the name.
+
+  The emperor never came to New Orleans.
+
+  But the city had more than one house ready for him.
+pronunciations:
+  - written: Girod
+    say: zhee-ROH
+  - written: Seraphine
+    say: say-rah-FEEN
+  - written: Chartres
+    say: CHAR-ters
+  - written: Baratarian
+    say: bar-uh-TARE-ee-un
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Girod House, 500-506 Chartres Street, New Orleans, Orleans Parish, LA (HABS LA-9)"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/la0011/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "New Orleans As It Was, Episodes of Louisiana Life (1895), by Henry C. Castellanos"
+    publisher: "L. Graham and Son, via the Library of Congress"
+    url: https://www.loc.gov/item/01008770/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Picayune's Guide to New Orleans (1904), The Napoleon House"
+    publisher: "The Picayune, via the Library of Congress"
+    url: https://www.loc.gov/item/04005555/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "The Romance of New Orleans (1919)"
+    publisher: "R. H. True and Co., via the Library of Congress"
+    url: https://www.loc.gov/item/20006638/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
