@@ -5,7 +5,7 @@
  * the track it sits, and how far along the track you meet it. This module computes both.
  */
 
-import type { Route, LatLng, Echo } from "../types.js";
+import type { Route, LatLng, Echo, Waypoint } from "../types.js";
 import { presetFor } from "../modes.js";
 import { effectiveRadiusKm } from "../content/contributions.js";
 import {
@@ -64,6 +64,8 @@ export function buildRouteGeometry(plan: Route, segmentKm?: number): RouteGeomet
     throw new Error(`Route ${plan.id} needs at least two waypoints`);
   }
 
+  if (plan.path && plan.path.length >= 2) return alongPath(plan.path, waypoints, step);
+
   const points: LatLng[] = [waypoints[0]!.at];
   const cumulativeKm: number[] = [0];
   const waypointIndex: number[] = [0];
@@ -85,6 +87,55 @@ export function buildRouteGeometry(plan: Route, segmentKm?: number): RouteGeomet
     waypointIndex.push(points.length - 1);
   }
 
+  return { points, cumulativeKm, waypointIndex, totalKm: running };
+}
+
+/**
+ * A traced road (`Route.path`) as the route's geometry.
+ *
+ * The road's own points, filled in wherever two are further apart than `step` so the
+ * spacing stays what the rest of the engine expects, and each waypoint pinned to the road
+ * point nearest it, searching forward so an out-and-back spur cannot pin a later waypoint
+ * behind an earlier one.
+ */
+function alongPath(path: readonly LatLng[], waypoints: readonly Waypoint[], step: number): RouteGeometry {
+  const points: LatLng[] = [path[0]!];
+  const cumulativeKm: number[] = [0];
+  let running = 0;
+  for (let i = 1; i < path.length; i++) {
+    const from = path[i - 1]!;
+    const to = path[i]!;
+    const steps = Math.max(1, Math.ceil(distanceKm(from, to) / step));
+    for (let s = 1; s <= steps; s++) {
+      const point = s === steps ? to : interpolate(from, to, s / steps);
+      running += distanceKm(points[points.length - 1]!, point);
+      points.push(point);
+      cumulativeKm.push(running);
+    }
+  }
+  const waypointIndex: number[] = [];
+  let from = 0;
+  for (let w = 0; w < waypoints.length; w++) {
+    if (w === 0) {
+      waypointIndex.push(0);
+      continue;
+    }
+    if (w === waypoints.length - 1) {
+      waypointIndex.push(points.length - 1);
+      continue;
+    }
+    let best = from;
+    let bestKm = Infinity;
+    for (let i = from; i < points.length; i++) {
+      const d = distanceKm(points[i]!, waypoints[w]!.at);
+      if (d < bestKm) {
+        best = i;
+        bestKm = d;
+      }
+    }
+    waypointIndex.push(best);
+    from = best;
+  }
   return { points, cumulativeKm, waypointIndex, totalKm: running };
 }
 

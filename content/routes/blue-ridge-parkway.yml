@@ -8,6 +8,8 @@
 id: blue-ridge-parkway
 mode: driving
 name: "Blue Ridge Parkway: Asheville to Boone"
+# The road the line on the map follows between waypoints (`scripts/build-route-paths.py`).
+follows: Blue Ridge Parkway
 
 origin:
   name: Asheville, North Carolina

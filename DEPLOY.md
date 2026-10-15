@@ -95,6 +95,16 @@ them like any other file, and adding a city adds only that city's file.
 Commit both outputs. `build-map.py` takes a few minutes; it reads Overture Maps
 (OpenStreetMap data, ODbL) from Overture's public bucket, only the parts around echoes.
 
+**Adding a drive.** A driving route's line follows the road it names
+(`follows:` in `content/routes/<id>.yml`), traced once from the same Overture roads:
+
+    pip install pyarrow pyyaml
+    python3 scripts/build-route-paths.py   # writes content/routes/<id>.path.json
+    npm run library:build
+
+Commit the `.path.json`. Without one, a drive is drawn as straight lines between its
+waypoints, as flights are. Directions while driving are left to the phone's own maps app.
+
 **Picking up new streets and buildings.** About once a year, set `OVERTURE_RELEASE` to a
 newer Overture release (https://docs.overturemaps.org/release/latest/) and run both again.
 
