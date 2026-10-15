@@ -81,8 +81,10 @@ Worth knowing before you judge it, so you spend your attention on the right thin
 
 The map is built from open data and ships with the app (ADR-0019): streets with their
 names, buildings, water, parks and landmarks, drawn by MapLibre in the navy style. There
-is no map service, no account and nothing to set in Vercel. The file is
-`apps/prototype/public/map/echoes.pmtiles`, and Vercel serves it like any other file.
+is no map service, no account and nothing to set in Vercel. The map is
+`apps/prototype/public/map/echoes/`: one PMTiles file per zoom-8 square (about 150 km
+across, so a city is one or two files) and an `index.json` listing them. Vercel serves
+them like any other file, and adding a city adds only that city's file.
 
 **Adding a city.** After new echoes are in the library, in a new place:
 
@@ -96,9 +98,11 @@ Commit both outputs. `build-map.py` takes a few minutes; it reads Overture Maps
 **Picking up new streets and buildings.** About once a year, set `OVERTURE_RELEASE` to a
 newer Overture release (https://docs.overturemaps.org/release/latest/) and run both again.
 
-**When the file gets big.** Each area adds roughly 0.2 to 2 MB. If the file passes about
-100 MB, move it to Vercel Blob (same Vercel account) and set `VITE_MAP_TILES_URL` in
-Vercel to its address. The app prefers that setting when it exists; no code changes.
+**Size.** Each area adds roughly 0.2 to 2 MB, to its own square's file, so no one file
+grows toward GitHub's 100 MB limit, and a rebuild changes only the squares that gained
+or lost echoes. `python3 scripts/build-map.py --reshard` re-cuts an old single
+`echoes.pmtiles` into squares. `VITE_MAP_TILES_URL`, if ever set, still wins, and one
+ending in `.pmtiles` is read as a single file.
 
 The fonts for street names ship with the app (`apps/prototype/public/fonts`, Noto Sans,
 SIL Open Font Licence). The credit under the map reads *© OpenStreetMap · Overture Maps*.

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-`apps/prototype/public/map/echoes.pmtiles`: the map itself, around every echo.
+`apps/prototype/public/map/echoes/`: the map itself, around every echo.
 
-Streets with their names, buildings, water, parks and landmarks, in one file the app serves
+Streets with their names, buildings, water, parks and landmarks, in files the app serves
 from Vercel with everything else (`DEPLOY.md`, The map). No map service, no account and no
 per-view bill: the file is built here, once, from open data, and a phone fetches only the
 few hundred kilobytes of it around where it is looking.
@@ -22,9 +22,19 @@ Layers are written in the Protomaps basemap schema (`roads`, `buildings`, `water
 `landuse`, `landcover`, `pois`), which is what `basemap-style.ts` draws, so the app cannot
 tell this file from a Protomaps one.
 
+ONE FILE PER SQUARE, NOT ONE FILE. It was a single `echoes.pmtiles`, and six cities took it
+to 46 MB, on its way past GitHub's 100 MB limit for a file, with every rebuild adding a whole
+new copy to the repository's history. Now every tile goes into the file for the zoom-8 square
+it falls in (about 150 km across, so a city is one or two files), named `8-<x>-<y>.pmtiles`,
+with `index.json` listing them. Tiles are written with no timestamps and in a fixed order,
+so a square nothing changed in builds to the same bytes and git records nothing: adding a
+city adds that city's file. The app asks for each tile from its square's file
+(`echo-map.ts`).
+
 Run: `pip install pyarrow pmtiles` then `python3 scripts/build-map.py`. A few minutes: it
 reads only the parquet row groups that overlap an area. A new place needs it run again,
-the same as `build-streets.py`.
+the same as `build-streets.py`. `--reshard` re-cuts an existing single `echoes.pmtiles`
+into squares without fetching anything.
 """
 
 import concurrent.futures as cf
@@ -46,7 +56,11 @@ from pmtiles.writer import Writer
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
 MAP_DIR = os.path.join(ROOT, "apps", "prototype", "public", "map")
-OUT = os.path.join(MAP_DIR, "echoes.pmtiles")
+OUT = os.path.join(MAP_DIR, "echoes")
+# The old single file, removed once its tiles are in squares.
+LEGACY = os.path.join(MAP_DIR, "echoes.pmtiles")
+# The zoom of the squares the map is cut into. Equal to MIN_ZOOM, so every tile has one.
+SHARD_ZOOM = 8
 WORLD = os.path.join(MAP_DIR, "world.pmtiles")
 
 # The Overture reader and the areas are the walking network's, so the two always agree.
@@ -296,7 +310,7 @@ def main():
         subprocess.run(["node", os.path.join(HERE, "map-tiles.mjs"), work, tiles], check=True)
         w, s = min(b[0] for b in boxes), min(b[1] for b in boxes)
         e, n = max(b[2] for b in boxes), max(b[3] for b in boxes)
-        pack(tiles, OUT, MIN_ZOOM, MAX_ZOOM, (w, s, e, n), [layer[0] for layer in LAYERS], f"Overture Maps {streets.RELEASE}")
+        shard(read_dir(tiles), [layer[0] for layer in LAYERS], f"Overture Maps {streets.RELEASE}")
         world(work)
     finally:
         shutil.rmtree(work, ignore_errors=True)
@@ -306,24 +320,71 @@ def world(work):
     """`world.pmtiles`: coastlines and borders everywhere (`map-tiles.mjs --world`)."""
     tiles = os.path.join(work, "world")
     subprocess.run(["node", os.path.join(HERE, "map-tiles.mjs"), "--world", tiles], check=True)
-    pack(tiles, WORLD, 0, 7, (-180, -85, 180, 85), ["earth", "boundaries"], "Natural Earth (public domain)")
+    pack(read_dir(tiles), WORLD, 0, 7, (-180, -85, 180, 85), ["earth", "boundaries"], "Natural Earth (public domain)")
 
 
-def pack(tiles, out, min_zoom, max_zoom, bounds, layers, source):
-    entries = []
+def read_dir(tiles):
+    """{(z, x, y): raw tile bytes} from a z/x/y.pbf folder."""
+    out = {}
     for z in os.listdir(tiles):
         for x in os.listdir(os.path.join(tiles, z)):
             for f in os.listdir(os.path.join(tiles, z, x)):
-                entries.append((zxy_to_tileid(int(z), int(x), int(f.split(".")[0])), os.path.join(tiles, z, x, f)))
-    entries.sort()
+                with open(os.path.join(tiles, z, x, f), "rb") as fh:
+                    out[(int(z), int(x), int(f.split(".")[0]))] = fh.read()
+    return out
+
+
+def tile_bounds(z, x, y):
+    """(west, south, east, north) of a web-mercator tile."""
+    def lat(yy):
+        return math.degrees(math.atan(math.sinh(math.pi * (1 - 2 * yy / 2**z))))
+    return (x / 2**z * 360 - 180, lat(y + 1), (x + 1) / 2**z * 360 - 180, lat(y))
+
+
+def shard(tiles, layers, source):
+    """Every tile into the file for the SHARD_ZOOM square it falls in, plus `index.json`."""
+    squares = {}
+    for (z, x, y), data in tiles.items():
+        d = z - SHARD_ZOOM
+        squares.setdefault((x >> d, y >> d), {})[(z, x, y)] = data
+    os.makedirs(OUT, exist_ok=True)
+    names = []
+    for (sx, sy), part in sorted(squares.items()):
+        name = f"{SHARD_ZOOM}-{sx}-{sy}"
+        pack(part, os.path.join(OUT, f"{name}.pmtiles"), MIN_ZOOM, MAX_ZOOM, tile_bounds(SHARD_ZOOM, sx, sy), layers, source)
+        names.append(name)
+    # A square with no echoes left in it goes, so a deleted city does not linger.
+    for f in os.listdir(OUT):
+        if f.endswith(".pmtiles") and f[: -len(".pmtiles")] not in names:
+            os.remove(os.path.join(OUT, f))
+    with open(os.path.join(OUT, "index.json"), "w") as fh:
+        json.dump({"v": 1, "zoom": SHARD_ZOOM, "minZoom": MIN_ZOOM, "maxZoom": MAX_ZOOM, "layers": layers, "squares": names}, fh, indent=1)
+        fh.write("\n")
+    if os.path.exists(LEGACY):
+        os.remove(LEGACY)
+    print(f"{OUT}: {len(names)} squares, {len(tiles)} tiles", file=sys.stderr)
+
+
+def reshard():
+    """Re-cut the old single `echoes.pmtiles` into squares, fetching nothing."""
+    from pmtiles.reader import MmapSource, Reader, all_tiles
+
+    with open(LEGACY, "rb") as fh:
+        reader = Reader(MmapSource(fh))
+        meta = reader.metadata()
+        tiles = {zxy: gzip.decompress(data) for zxy, data in all_tiles(reader.get_bytes)}
+    shard(tiles, [layer["id"] for layer in meta.get("vector_layers", [])], meta.get("source", ""))
+
+
+def pack(tiles, out, min_zoom, max_zoom, bounds, layers, source):
+    entries = sorted((zxy_to_tileid(z, x, y), data) for (z, x, y), data in tiles.items())
     os.makedirs(os.path.dirname(out), exist_ok=True)
     w, s, e, n = bounds
     with open(out, "wb") as fo:
         writer = Writer(fo)
-        for tile_id, path in entries:
-            with open(path, "rb") as fh:
-                # mtime=0 so an unchanged map builds to the same bytes, and git sees no change.
-                writer.write_tile(tile_id, gzip.compress(fh.read(), mtime=0))
+        for tile_id, data in entries:
+            # mtime=0 so an unchanged map builds to the same bytes, and git sees no change.
+            writer.write_tile(tile_id, gzip.compress(data, mtime=0))
         writer.finalize(
             {
                 "tile_type": TileType.MVT,
@@ -349,4 +410,4 @@ def pack(tiles, out, min_zoom, max_zoom, bounds, layers, source):
 
 
 if __name__ == "__main__":
-    main()
+    reshard() if "--reshard" in sys.argv else main()

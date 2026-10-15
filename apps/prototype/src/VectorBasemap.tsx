@@ -15,6 +15,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { Map as MapLibre } from "maplibre-gl";
 import { WORLD_TILES_URL } from "./tiles";
+import { echoMapProtocol, mapSourceUrl } from "./echo-map";
 import { basemapStyle, type MapTheme } from "./basemap-style";
 
 export interface Camera {
@@ -64,6 +65,8 @@ export function loadMapLibre() {
     maplibre.setWorkerUrl(worker.default);
     const protocol = new pmtiles.Protocol();
     maplibre.addProtocol("pmtiles", protocol.tile);
+    // The map, one file per square (`echo-map.ts`).
+    maplibre.addProtocol("echomap", echoMapProtocol);
     return maplibre;
   });
   return loading;
@@ -104,7 +107,7 @@ export function VectorBasemap({
         const at = latest.current;
         created = new maplibre.Map({
           container: host.current,
-          style: basemapStyle(`pmtiles://${tiles}`, glyphs(), theme, WORLD_TILES_URL && `pmtiles://${WORLD_TILES_URL}`),
+          style: basemapStyle(mapSourceUrl(tiles), glyphs(), theme, WORLD_TILES_URL && `pmtiles://${WORLD_TILES_URL}`),
           center: at ? [at.lng, at.lat] : [-98.5, 39.8],
           zoom: at?.zoom ?? 3,
           interactive: false,
@@ -132,7 +135,7 @@ export function VectorBasemap({
   }, [tiles]);
 
   useEffect(() => {
-    map?.setStyle(basemapStyle(`pmtiles://${tiles}`, glyphs(), theme, WORLD_TILES_URL && `pmtiles://${WORLD_TILES_URL}`));
+    map?.setStyle(basemapStyle(mapSourceUrl(tiles), glyphs(), theme, WORLD_TILES_URL && `pmtiles://${WORLD_TILES_URL}`));
   }, [map, theme, tiles]);
 
   useEffect(() => {

@@ -159,10 +159,13 @@ export function planTiles(
  * canvas, and James did not want another service or bill (2026-10-12). Building the map
  * ourselves, only where there are echoes, needs neither. `VITE_MAP_TILES_URL` still wins
  * when set, for a bigger file kept elsewhere later.
+ *
+ * A folder, not a file: the map is cut into one file per square (`echo-map.ts`), and a
+ * `.pmtiles` URL here is still read as the single file it names (`mapSourceUrl`).
  */
 export const VECTOR_TILES_URL: string | undefined =
   import.meta.env.VITE_MAP_TILES_URL ||
-  (typeof location === "undefined" ? undefined : `${location.origin}/map/echoes.pmtiles`);
+  (typeof location === "undefined" ? undefined : `${location.origin}/map/echoes`);
 
 /**
  * Coastlines, country borders and US state lines, everywhere, at zoom 0 to 7, drawn under

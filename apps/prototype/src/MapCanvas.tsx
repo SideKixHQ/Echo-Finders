@@ -20,6 +20,7 @@
 import { useEffect, useRef } from "react";
 import type { Map as MapLibre } from "maplibre-gl";
 import { WORLD_TILES_URL } from "./tiles";
+import { mapSourceUrl } from "./echo-map";
 import { basemapStyle, rasterStyle, type MapTheme } from "./basemap-style";
 import { glyphs, loadMapLibre } from "./VectorBasemap";
 
@@ -56,7 +57,7 @@ interface Props {
 }
 
 const styleFor = (tiles: string | null, theme: MapTheme) =>
-  tiles ? basemapStyle(`pmtiles://${tiles}`, glyphs(), theme, WORLD_TILES_URL && `pmtiles://${WORLD_TILES_URL}`) : rasterStyle(theme);
+  tiles ? basemapStyle(mapSourceUrl(tiles), glyphs(), theme, WORLD_TILES_URL && `pmtiles://${WORLD_TILES_URL}`) : rasterStyle(theme);
 
 export function MapCanvas({ tiles, theme, start, clipTop, onReady, onMove, onUserGesture, onSettle, onMapTap }: Props) {
   const host = useRef<HTMLDivElement>(null);
