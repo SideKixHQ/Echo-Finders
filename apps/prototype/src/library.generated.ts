@@ -2570,6 +2570,1923 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "charleston-a-strangers-initials",
+    "title": "A Stranger's Initials",
+    "summary": "The first house on Rainbow Row to be rescued wears an iron balcony with someone else's initials in it.",
+    "point": {
+      "at": {
+        "lat": 32.77595,
+        "lng": -79.92705
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Othniel Beale House, Rainbow Row, East Bay Street, Charleston, South Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 90,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Othniel Beale House, 99-101 East Bay Street, Charleston (HABS SC-874)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/item/sc1143/"
+      },
+      {
+        "title": "95-103 East Bay Street (Rainbow Row, townhouses), Charleston (HABS SC-405)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/sc0434/"
+      },
+      {
+        "title": "Charleston and Preservation",
+        "publisher": "National Park Service, Travel Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "fair-use-facts",
+        "url": "https://www.nps.gov/articles/charleston-and-preservation.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the house numbered ninety-nine on this row, and look at its iron balcony. There are\ntwo letters worked into the ironwork. A C and a P.\n\nThe letters have nothing to do with this house.\n\nThe house went up around seventeen forty. It was built by Othniel Beale, a wharf owner\nwho had come down from Marblehead in Massachusetts, and his wharf was right across the\nstreet. He built three dwellings under one roof, kept the biggest for his family and let\nthe other two. The ground floor was for trade, split by an arched passage through to the\nyards at the back.\n\nBy the nineteen thirties this stretch of the old waterfront had slid into dilapidation.\n\nThis was the first house on the row to be rescued. Judge Lionel Legge and his wife took it\non, with Susan Pringle Frost, an estate agent who had spent years saving old Charleston\nhouses one at a time. They put back the early windows. They replaced the shop fronts with\ncargo doors. And they hung a balcony salvaged from a house on Elizabeth Street that has\nsince been demolished. The C. F. Prigge house.\n\nThey are credited with starting the revival of the whole block. It is called Rainbow Row\nnow.\n\nThe row was saved one house at a time. The first one wears a stranger's initials.\n",
+    "teaser": "Find the house numbered ninety-nine and look at its iron balcony.",
+    "pronunciations": [
+      {
+        "written": "Othniel",
+        "say": "OTH-nee-ul"
+      },
+      {
+        "written": "Legge",
+        "say": "LEG"
+      },
+      {
+        "written": "Prigge",
+        "say": "PRIG-ee"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "rainbow-row",
+      "preservation"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-a-strangers-initials",
+        "durationS": 90
+      }
+    ]
+  },
+  {
+    "id": "charleston-a-wharf-he-was-willing-to-lose",
+    "title": "A Wharf He Was Willing to Lose",
+    "summary": "Christopher Gadsden built a great wharf here, then argued for the trade boycott that would leave it empty.",
+    "point": {
+      "at": {
+        "lat": 32.79025,
+        "lng": -79.9263
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Liberty Square, site of Gadsden's Wharf, Charleston, South Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Christopher Gadsden",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/christopher-gadsden.htm"
+      },
+      {
+        "title": "Christopher Gadsden, by E. I. Renick (Publications of the Southern History Association, 1898)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/05013227/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The ground under this square was once part of a wharf. A big one, on the Cooper River, built by a merchant named Christopher Gadsden.\n\nBy seventeen seventy four, Gadsden owned four stores, merchant ships, two rice plantations, and a whole district of Charleston. The wharf had just been finished, at great cost. To pay for itself, it needed ships, and trade.\n\nThat year he went to Philadelphia, to the first Continental Congress. And there he argued for cutting off all trade with Britain. Others wanted South Carolina's rice and indigo left out of the boycott. Gadsden did not.\n\nIf he won, his own wharf would sit idle. He argued for it anyway.\n\nWhen nervous delegates warned that the coastal towns could be shelled, Gadsden's reply was later written down like this. Our seaport towns are composed of brick and wood. If they are destroyed, we have clay and timber enough to rebuild them. But if the liberties of our country are destroyed, where shall we find the material to replace them?\n\nHe was ready to let the wharf stand empty. A piece of it is still here, under the visitor centre beside you.\n",
+    "teaser": "Brick and wood, clay and timber.",
+    "pronunciations": [
+      {
+        "written": "Gadsden",
+        "say": "GADZ-den"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "american-revolution",
+      "waterfront"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-a-wharf-he-was-willing-to-lose",
+        "durationS": 78
+      }
+    ]
+  },
+  {
+    "id": "charleston-bolted-together",
+    "title": "Bolted Together",
+    "summary": "After the 1886 earthquake Charleston bolted its buildings back together. When the ground shook again, the iron held.",
+    "point": {
+      "at": {
+        "lat": 32.77482,
+        "lng": -79.9304
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Tradd Street, south of Broad, Charleston, South Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 95,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Connecticut Western News, March 23, 1887, \"Charleston Again Shaken\"",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn84027718/1887-03-23/ed-1/?sp=4"
+      },
+      {
+        "title": "Short sketch of Charleston, S.C.; how it fared in two wars and an earthquake",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/00002680/"
+      },
+      {
+        "title": "Charleston Community History",
+        "publisher": "National Park Service, Travel Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/charleston-community-history.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along the house fronts on this street for iron on the outside of the walls. A plate,\nor the end of a bolt, up between the floors. Not every house has one. Many old buildings\nin this city do, and a lot of them were put there because of one night.\n\nAt about ten o'clock on the thirty-first of August, eighteen eighty-six, an earthquake\nhit Charleston. It came with no warning and a roar like nothing anyone had heard. Walls\nand chimneys came down into the streets. Overturned lamps started fires. It was said at\nthe time that more people were killed or hurt in those few seconds than the shelling of\nthe whole Civil War siege had managed.\n\nIn the months that followed, much of the town was not so much rebuilt as bolted back\ntogether. Iron bolts and iron plates went into the cracked walls.\n\nThe test came on St. Patrick's Day, eighteen eighty-seven. At ten past nine in the\nmorning there was another violent shock, with the same underground roar. The buildings\nseemed to be thrust forward and pulled back.\n\nA report from Charleston that day said that most of the buildings in town had been made\nearthquake-proof by iron bolts and plates, and that without them there would have been\nserious damage. Unrepaired cracks widened. Windows rattled. Plaster fell.\n\nThe St. Patrick's Day celebrations went ahead as planned. Somebody had done the\nironmongery.\n",
+    "teaser": "Look along the house fronts for iron on the outside of the walls.",
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "earthquake",
+      "architecture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-bolted-together",
+        "durationS": 95
+      }
+    ]
+  },
+  {
+    "id": "charleston-built-for-a-capital",
+    "title": "Built for a Capital",
+    "summary": "The courthouse was the colonial statehouse. Charleston rebuilt it to keep the government, and finished it after the government left.",
+    "point": {
+      "at": {
+        "lat": 32.77662,
+        "lng": -79.9312
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Charleston County Courthouse, Four Corners of the Law, Meeting and Broad Streets, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 79,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Charleston County Courthouse",
+        "publisher": "National Park Service, Travel Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/charleston-county-courthouse.htm"
+      },
+      {
+        "title": "Charleston City Hall",
+        "publisher": "National Park Service, Travel Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/charleston-city-hall.htm"
+      },
+      {
+        "title": "Charleston United States Post Office",
+        "publisher": "National Park Service, Travel Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/charleston-united-states-post-office.htm"
+      },
+      {
+        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the State House and the move to Columbia",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/06042434/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are standing at the crossing of Meeting and Broad. Four corners, four buildings. A\nchurch, a city hall, a federal post office and court, and a county courthouse. Charleston\ncalls this the Four Corners of the Law. The law of the church, of the city, of the nation\nand of the state.\n\nLook at the courthouse, on the north-west corner. It was not built to be a courthouse.\n\nIt went up in seventeen fifty-three as the statehouse of the colony. The royal governor's\ncouncil met upstairs. From its balcony over Meeting Street, the Declaration of\nIndependence was read aloud for the first time in South Carolina.\n\nIn seventeen eighty-eight it burned. Only the foundations, the walls and the doorways\nwere left.\n\nBy then the rest of the state wanted the capital moved to the middle of South Carolina,\nnot left out on its edge. Charleston rebuilt fast anyway, anxious to keep its place in\nthe government.\n\nBy the time the work was finished, in seventeen ninety-two, the capital was in Columbia.\n\nSo the courts moved in, and they are still there. It is the state's corner of this\ncrossing. It just never got the state back.\n",
+    "teaser": "Four corners, four buildings, four kinds of law. One of them was meant for something else.",
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "four-corners",
+      "courthouse",
+      "revolution"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-built-for-a-capital",
+        "durationS": 79
+      }
+    ]
+  },
+  {
+    "id": "charleston-built-to-fall-inward",
+    "title": "Built to Fall Inward",
+    "summary": "The oldest public building in South Carolina stored the town's gunpowder, and its roof was designed for the day it exploded.",
+    "point": {
+      "at": {
+        "lat": 32.77956,
+        "lng": -79.93008
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Powder Magazine, 79 Cumberland Street, Charleston, South Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 94,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Powder Magazine",
+        "publisher": "National Park Service, Travel Historic Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/powder-magazine.htm"
+      },
+      {
+        "title": "Guide to Charleston, S.C., with brief history of the city (C. Irvine Walker, 1919), the Old Powder Magazine",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/20002718/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The squat brick building with the steep tiled roof is the Powder Magazine. It went up in\nseventeen thirteen, and it is the oldest public building in South Carolina.\n\nLook at how solid it is. The walls are thirty-two inches thick, and when it was built they\nhad no windows at all.\n\nCharles Town was a small walled settlement then, at the southern edge of England's claims,\nand it expected attack, from the Spanish, the French, and pirates. The town's gunpowder\nwas kept here.\n\nIt was condemned in seventeen seventy, then filled with powder again when the Revolution\ncame. One old guide to the city says that during the British siege of seventeen eighty a\nshell landed close by, and after that it was given up as a magazine.\n\nWhich brings you to the question every powder store has to answer. What happens if it goes\noff?\n\nHere, the answer was in the roof. According to the Park Service, the timbers inside were\nbuilt so that if there were ever an explosion in the building, it would collapse in on\nitself.\n\nNot outward, into the town. Inward.\n\nLater it was a printing house, and then a livery stable. Since nineteen-oh-two it has\nbelonged to the Colonial Dames, and today it is a museum.\n\nMore than three hundred years on, it is still a building designed, if the worst came, to\nbury its own disaster.\n",
+    "teaser": "A squat brick building with a steep tiled roof. Every powder store has to answer one question.",
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "french-quarter",
+      "colonial",
+      "architecture",
+      "revolutionary-war"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-built-to-fall-inward",
+        "durationS": 94
+      }
+    ]
+  },
+  {
+    "id": "charleston-calhoun-moved-by-night",
+    "title": "Moved by Night",
+    "summary": "John C. Calhoun is buried in St. Philip's western churchyard. During the war, a few men dug him up by candlelight and hid him.",
+    "point": {
+      "at": {
+        "lat": 32.779,
+        "lng": -79.92972
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. Philip's Church western churchyard, Church Street, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 120,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "\"Charleston's Statue. Calhoun's memorable funeral 37 years ago. The reinterment during the war.\" The Morning News (Savannah), April 26, 1887, page 3",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn86063034/1887-04-26/ed-1/?sp=3"
+      },
+      {
+        "title": "St. Philip's Episcopal Church",
+        "publisher": "National Park Service, Travel Historic Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/st-philips-episcopal-church.htm"
+      },
+      {
+        "title": "John C. Calhoun",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/john-c-calhoun.htm"
+      },
+      {
+        "title": "Guide to Charleston, S.C., with brief history of the city (C. Irvine Walker, 1919), St. Philip's churchyards",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/20002718/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Across the street from St. Philip's Church is its western churchyard. In the middle of it\nstands a large stone sarcophagus. It holds John C. Calhoun.\n\nCalhoun was vice president, secretary of state, and one of the most powerful politicians\nof his age. In the Senate he led the defence of slavery, and called it a positive good. He\ndied in eighteen fifty, ten years before the war his ideas helped to bring, and he was\nburied here after what one paper called the grandest pageant the city had ever seen.\n\nHe did not stay put.\n\nAs the war went on, it began to look as if Charleston would fall, and some in the city\nfeared what would be done to his grave. So a few men decided to move him. At night, and in\nsecret.\n\nOne of them remembered being summoned from camp in the dark. When he reached the church,\nthe coffin had already been dug up and carried inside. One candle. Two or three men\nstanding by. In complete silence they lifted it, carried it down the middle aisle and out\nthrough the north door, and buried it again in another spot.\n\nSome time after the war, it was dug up once more, quietly, and put back. Later the state\npaid for the sarcophagus you can see.\n\nThe plain marble slab that first covered the grave, carved with just his name, was broken\nin the earthquake of eighteen eighty-six. The church set it against the north wall of the\nchurchyard, near the place where he had lain hidden.\n\nFor a while, then, the tomb with his name on it was empty. The man who had argued the South\ntoward secession spent part of the war it led to hidden, in a secret grave beside this\nchurch.\n",
+    "teaser": "In the churchyard across from St. Philip's stands a stone sarcophagus. For part of the war, the grave under it was empty.",
+    "pronunciations": [
+      {
+        "written": "Calhoun",
+        "say": "kal-HOON"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "french-quarter",
+      "st-philips",
+      "churchyards",
+      "civil-war"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-calhoun-moved-by-night",
+        "durationS": 120
+      }
+    ]
+  },
+  {
+    "id": "charleston-five-times-across",
+    "title": "Five Times Across",
+    "summary": "Taken by the British, sold back, broken in 1865 and recast: St. Michael's bells have crossed the Atlantic five times.",
+    "point": {
+      "at": {
+        "lat": 32.77605,
+        "lng": -79.93095
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. Michael's Church, Meeting and Broad Streets, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 108,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "St. Michael's Episcopal Church",
+        "publisher": "National Park Service, Travel Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/st-michael-s-episcopal-church.htm"
+      },
+      {
+        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), St. Michael's bells",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/06042434/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the white steeple of St. Michael's. The bells hang up there. If they are\nringing, listen.\n\nA Charleston historian, writing in nineteen-oh-six, counted how many times those bells\nhad crossed the Atlantic. She made it five.\n\nThe first crossing was the obvious one. They were made in England, and imported in\nseventeen sixty-four.\n\nThe second came at the end of the Revolution. In seventeen eighty-two the British army\nwas getting ready to leave Charleston, and an artillery officer claimed the bells as his\nown, a perquisite of his rank. He had them taken down. The church appealed, and an order\ncame from New York to give them back. Too late. They were already on a ship to England.\n\nThe third crossing was a business deal. A merchant who had once lived in Charleston bought\nthem in England, as a speculation, and shipped them back to sell to the church. When they\narrived, people ran down to the wharf, hauled them to the church themselves, and swung\nthem back up into the steeple. Then the merchant died suddenly, his estate went bankrupt,\nand nobody ever asked for payment.\n\nThe fourth and fifth came with the Civil War. The bells were sent inland to Columbia for\nsafekeeping, and in eighteen sixty-five Columbia burned. They broke in the fire. The\npieces were gathered up and sent back to the same English foundry that had made them.\nThe foundry still had the original moulds. The bells were recast, and came home.\n\nBy that historian's account, they ring today with the same tone they rang for the\nbirthday of King George.\n",
+    "teaser": "Look up at the white steeple of St. Michael's. The bells up there have been around.",
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "st-michaels",
+      "bells",
+      "revolution",
+      "civil-war"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-five-times-across",
+        "durationS": 108
+      }
+    ]
+  },
+  {
+    "id": "charleston-gothic-over-brick",
+    "title": "Gothic over Brick",
+    "summary": "The Unitarian Church looks medieval. Its buttresses hold nothing up, and under the stucco is a plain brick meeting house of 1787.",
+    "point": {
+      "at": {
+        "lat": 32.77856,
+        "lng": -79.93456
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Unitarian Church, 4 Archdale Street, Charleston, South Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Unitarian Church",
+        "publisher": "National Park Service, Travel Historic Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/unitarian-church.htm"
+      },
+      {
+        "title": "Charleston, S.C. and vicinity illustrated (1901), the Unitarian Church on Archdale Street",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/02003003/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the Unitarian Church. A tower with battlements, pointed windows, buttresses down\nthe sides. It looks like a piece of medieval England.\n\nLook again at the buttresses.\n\nButtresses are supposed to hold a building up. According to the Park Service, these are\nfalse. They are there for the look. Inside, the vaulted ceiling, modelled on the chapel of\nHenry the Seventh at Westminster, is lath and plaster.\n\nThe Gothic is a costume. Underneath it is a much plainer building.\n\nIn seventeen seventy-two, work began here on a small rectangular brick church, because the\nIndependent Church over on Meeting Street had more members than it could hold. The\nRevolution stopped the work. The church was finally finished in seventeen eighty-seven.\n\nThen, in eighteen fifty-two, a young architect named Francis Lee was given two years to\nremake it in the romantic taste of the day. He added the chancel at the back and the\nfour-storey tower, and he covered the old brick walls in stucco.\n\nWhen the earthquake of eighteen eighty-six badly damaged it, people from across the\ncountry sent money for the repairs.\n\nSo the oldest Unitarian church in the South is an eighteenth-century meeting house in a\nnineteenth-century dream of the Middle Ages. The brick is still in there, under the\nstucco.\n",
+    "teaser": "Crenellated tower, pointed windows, buttresses. Look again at the buttresses.",
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "churches",
+      "architecture",
+      "gothic-revival"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-gothic-over-brick",
+        "durationS": 85
+      }
+    ]
+  },
+  {
+    "id": "charleston-hey-charleston",
+    "title": "Hey Charleston",
+    "summary": "An orphanage paid its way with a brass band, and by many accounts gave the world a dance.",
+    "point": {
+      "at": {
+        "lat": 32.7779,
+        "lng": -79.9377
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old Marine Hospital (Jenkins Orphanage), 20 Franklin Street, Charleston, South Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 84,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old Marine Hospital",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/old-marine-hospital.htm"
+      },
+      {
+        "title": "Fox Movietone News: Jenkins Orphanage Band (National Film Registry essay by Julie Hubbert)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/static/programs/national-film-preservation-board/documents/jenkins.pdf"
+      },
+      {
+        "title": "Guide to Charleston, S. C.; with brief history of the city and a map thereof (1919)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/20002718/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the porch railings on this building. They were designed to look like the stone tracery around a Gothic church window. It was built in the eighteen thirties as a hospital for sailors.\n\nFrom eighteen ninety five, it was home to something louder. The Jenkins Orphanage.\n\nThe Reverend Daniel Jenkins had been born enslaved, and orphaned young. In eighteen ninety one he took in four boys he found sheltering in an abandoned building. Soon there were hundreds. To pay for them, he did something unusual. He gathered up instruments, hired two local musicians as teachers, and sent the boys out as a brass band.\n\nIt worked. The band played the streets of Charleston, then New York and London. It marched in the inaugural parades of two presidents.\n\nAnd it played the tunes of the Gullah people of the Sea Islands, with a small boy out front, dancing the steps. In Harlem, the pianist Willie the Lion Smith remembered, people would shout to that boy. Hey Charleston, do your Geechie dance.\n\nJames P Johnson heard the band and wrote a set of tunes in that rhythm. One of them was called The Charleston, and it went around the world.\n\nBy many accounts, the craze started here. With orphans, earning their keep.\n",
+    "teaser": "A boy dancing in front of a band of orphans.",
+    "pronunciations": [
+      {
+        "written": "Geechie",
+        "say": "GEE-chee"
+      },
+      {
+        "written": "Gullah",
+        "say": "GULL-uh"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "music",
+      "jazz",
+      "african-american-history"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-hey-charleston",
+        "durationS": 84
+      }
+    ]
+  },
+  {
+    "id": "charleston-not-called-catfish",
+    "title": "Not Called Catfish",
+    "summary": "The Catfish Row of Porgy and Porgy and Bess had a real model on Church Street. In Charleston it went by another name.",
+    "point": {
+      "at": {
+        "lat": 32.77542,
+        "lng": -79.92912
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Cabbage Row, 89-91 Church Street, Charleston, South Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 83,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "89-91 Church Street (Houses) (Cabbage Row, Catfish Row), Charleston (HABS SC-447)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/sc0488/"
+      },
+      {
+        "title": "Evening Star (Washington, D.C.), April 15, 1928, theatre page, \"Porgy\"",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045462/1928-04-15/ed-1/?sp=53"
+      },
+      {
+        "title": "Evening Star (Washington, D.C.), April 22, 1928, amusement section, \"Porgy\"",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045462/1928-04-22/ed-1/?sp=55"
+      },
+      {
+        "title": "The Indianapolis Times, November 30, 1929, theatre page, \"Porgy\"",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn82015313/1929-11-30/ed-1/?sp=6"
+      },
+      {
+        "title": "The Washington Times, March 10, 1936, \"World of Music\"",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn84026749/1936-03-10/ed-1/?sp=9"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across the street at numbers eighty-nine and ninety-one Church Street. The federal\nsurvey of historic buildings files them under two names. Cabbage Row. And Catfish Row.\n\nOnly one of those is a Charleston name.\n\nIn the nineteen twenties a Charleston man, DuBose Heyward, and his wife Dorothy wrote a\nplay called Porgy. It is set in a crowded courtyard of Black Charlestonians called\nCatfish Row. Its hero is a disabled beggar who gets around the city in a little cart\npulled by a goat.\n\nIt ran for a year on Broadway, then went on tour. When it reached Washington in\nnineteen twenty-eight, the Evening Star explained to its readers that the sets were\nauthentic, drawn after a visit to Charleston. And then it added a correction. The row\nitself, the paper said, is not called Catfish in Charleston. It is referred to as\nCabbage Row. Porgy himself, it said, was based on a real person.\n\nA few years later George Gershwin turned the play into an opera, Porgy and Bess. A\nWashington paper reported, perhaps generously, that he had spent his spare time for two\nyears visiting Catfish Row.\n\nHe could not have. There is no such place. It is across the street, under another name.\n",
+    "teaser": "Look across the street at numbers eighty-nine and ninety-one. They have two names.",
+    "pronunciations": [
+      {
+        "written": "DuBose Heyward",
+        "say": "doo-BOHZ HAY-wurd"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "porgy",
+      "theatre",
+      "opera"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-not-called-catfish",
+        "durationS": 83
+      }
+    ]
+  },
+  {
+    "id": "charleston-sermons-on-the-tide",
+    "title": "Sermons on the Tide",
+    "summary": "The French Huguenots came to church by boat, and in 1693 they won a promise that worship would not fight the tide.",
+    "point": {
+      "at": {
+        "lat": 32.77812,
+        "lng": -79.92925
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "French Huguenot Church, 136 Church Street, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 102,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "French Huguenot Church",
+        "publisher": "National Park Service, Travel Historic Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/french-huguenot-church.htm"
+      },
+      {
+        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the Proprietors' answer of 1693",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/06042434/"
+      },
+      {
+        "title": "Charleston, S.C. and vicinity illustrated (1901), the Huguenot Church in the fire of 1796",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/02003003/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The stuccoed church on this corner, with the pointed windows, is the French Huguenot\nChurch. Look closely at the decoration. Some of what looks like carved stone is iron.\n\nBut the story here is about time, and water.\n\nThe Huguenots were French Protestants who came to Carolina in the sixteen-eighties. Many\nof them settled on plantations outside the town, and the easiest road to church was the\nriver. So on Sundays they came to service by boat.\n\nA boat on these rivers moves when the tide lets it. Leave at the wrong hour and you row\nagainst it the whole way.\n\nIn sixteen ninety-three the French took their complaints to the Lords Proprietors, the men\nwho ran the colony. The answer came back with a list of protections. Their land would not\nbe taken from their children. Their marriages would be recognised. And they were not to be\nmade to begin their worship at an hour inconvenient to the tide.\n\nThe Park Service says services here were timed to the tides, for the families arriving by\nboat from the plantations.\n\nThe church that stood here in seventeen ninety-six was blown up on purpose, to stop a fire\nspreading through the neighbourhood. This one went up in the eighteen-forties. The\ncongregation is still French Calvinist, the only congregation of its kind in the\ncountry.\n\nThe river is a few streets east of you, still rising and falling twice a day. Somewhere in\na colonial record there is a promise that Sunday would wait for it.\n",
+    "teaser": "Some of the carving on this church is not stone. But the real story here is about water.",
+    "pronunciations": [
+      {
+        "written": "Huguenot",
+        "say": "HYOO-guh-not"
+      },
+      {
+        "written": "Calvinist",
+        "say": "KAL-vin-ist"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "french-quarter",
+      "huguenots",
+      "churches",
+      "colonial"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-sermons-on-the-tide",
+        "durationS": 102
+      }
+    ]
+  },
+  {
+    "id": "charleston-skulls-over-the-market",
+    "title": "Skulls over the Market",
+    "summary": "Look up at the Market Hall's frieze. The skulls tell you what was sold here, and the buzzards were protected by law.",
+    "point": {
+      "at": {
+        "lat": 32.78075,
+        "lng": -79.93145
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Market Hall and Sheds, Meeting and Market streets, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 97,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Market Hall and Sheds",
+        "publisher": "National Park Service, Travel Historic Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/market-hall-and-sheds.htm"
+      },
+      {
+        "title": "\"The South,\" Chicago Daily Tribune, October 19, 1874, page 3 (turkey buzzards at the Charleston market)",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn84031492/1874-10-19/ed-1/?sp=3"
+      },
+      {
+        "title": "Old Slave Mart",
+        "publisher": "National Park Service, Travel Historic Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/old-slave-mart.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the band of decoration under the roof of the Market Hall. Those shapes are\nskulls. Bulls, and sheep.\n\nThey are an advertisement. This was a meat market.\n\nThe land was given to the city for a market in seventeen eighty-eight, and after a great\nfire the hall and the long open sheds behind it went up in eighteen forty and forty-one.\nEvery day, meat and produce came in from the country around the town. The rules were\nstrict. Cuts and weights were regulated. Vendors had to wear clean white aprons. And to\nkeep everything fresh, whatever was left at the end of the day was thrown into the street.\n\nWhich is where the market's other workers came in.\n\nBuzzards cleaned the streets around the market, and Charlestonians valued the service so\nmuch that the birds were protected by law. People called them Charleston eagles. A\nvisiting reporter in eighteen seventy-four watched one pick the street clean, then fly up\nto sit on the market-house roof, protected, he wrote, like any official of the city.\n\nYou may have heard that these sheds were a slave market. The record puts those sales\nsomewhere else. Charleston sold enslaved people at the Exchange, and after eighteen\nfifty-six in private marts on Chalmers, State and Queen streets.\n\nThese sheds were built to sell beef. One of the buildings built to sell people is still\nstanding, a few blocks south of here, on Chalmers Street.\n",
+    "teaser": "Look up under the roof of the Market Hall. Those shapes are skulls.",
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "city-market",
+      "markets",
+      "architecture",
+      "birds"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-skulls-over-the-market",
+        "durationS": 97
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-audience-on-the-sea-wall",
+    "title": "The Audience on the Sea Wall",
+    "summary": "When the guns opened on Fort Sumter in April 1861, Charleston came down to this wall to watch.",
+    "point": {
+      "at": {
+        "lat": 32.7703,
+        "lng": -79.9283
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "The High Battery sea wall, East Battery, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 91,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Battle of Fort Sumter, April 1861",
+        "publisher": "National Park Service, Fort Sumter and Fort Moultrie National Historical Park",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/battle-of-fort-sumter-april-1861.htm"
+      },
+      {
+        "title": "Fort Sumter",
+        "publisher": "National Park Service, Fort Sumter and Fort Moultrie National Historical Park",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/fosu/learn/historyculture/fort_sumter.htm"
+      },
+      {
+        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), Confederate Charleston",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/06042434/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out across the harbour to the low fort near its mouth. That is Fort Sumter.\n\nAt half past four in the morning on the twelfth of April, eighteen sixty-one, a mortar\nfired from Fort Johnson, across the water. The shell arched high over the harbour and\nburst in the air above Sumter. It was a signal. Within half an hour, every Confederate\nbattery that could reach the fort was firing at it.\n\nAnd the town came out to watch.\n\nA Charleston writer, telling it years later, says that within five minutes this Battery\nswarmed with people. Then the houses behind you, the wharves, the rooftops. The road was\nso jammed with carriages that boys got from the pavement to the sea wall by jumping from\none carriage roof to the next.\n\nThey watched all that day and into the next. Fathers, brothers and sons were out in the\nbatteries on the islands. On the second day the fort caught fire, its flag came down,\nand the garrison agreed to leave.\n\nThe people on this wall had come to see a war begin. They did not expect to be in it.\n\nTwo summers later, Union troops took Morris Island, at the harbour mouth, and the\nbombardment of Charleston began in earnest. The siege went on until February eighteen\nsixty-five. The guns were pointed at the city behind you.\n",
+    "teaser": "Look out across the harbour to the low fort near its mouth.",
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "battery",
+      "civil-war",
+      "fort-sumter"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-audience-on-the-sea-wall",
+        "durationS": 91
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-bedsheet",
+    "title": "The Bedsheet",
+    "summary": "In May 1862 an enslaved pilot steamed a Confederate ship out of this harbour with sixteen people aboard.",
+    "point": {
+      "at": {
+        "lat": 32.7905,
+        "lng": -79.92465
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Liberty Square waterfront, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Planter",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/the-planter.htm"
+      },
+      {
+        "title": "Robert Smalls",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/robert-smalls.htm"
+      },
+      {
+        "title": "Christopher Gadsden",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/christopher-gadsden.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out at the water. The boats to Fort Sumter leave from this wharf, and the harbour runs from here down to the open sea.\n\nAt three in the morning on the thirteenth of May, eighteen sixty two, a Confederate steamer called the Planter began to move away from a Charleston wharf. Her three white officers were ashore for the night. That was against standing orders, and it happened often.\n\nThe men left aboard were enslaved. One of them was a pilot in his early twenties named Robert Smalls.\n\nThey fired the boilers and steamed up the Cooper River to another wharf, where their wives and children were waiting aboard another boat. Sixteen people in all. Then they turned for the sea.\n\nSmalls put on the captain's coat and straw hat. He knew the signals. He was the pilot. At about a quarter past four the Planter came up to Fort Sumter, with Fort Moultrie across the channel. Smalls gave the signal. The fort let them pass.\n\nIt was not over. As they reached the Union fleet, a warship took them for an attacker and readied its guns. The crew ran a bedsheet up the mast.\n\nThe wharves they left from are gone, and nobody can point to the exact spot now. The water they crossed is in front of you.\n\nRobert Smalls went on to serve five terms in Congress. That night, all of it hung on a sheet.\n",
+    "teaser": "Three in the morning, a borrowed straw hat, and the signal for Fort Sumter.",
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "civil-war",
+      "freedom-seekers",
+      "waterfront"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-bedsheet",
+        "durationS": 96
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-castle-on-the-square",
+    "title": "The Castle on the Square",
+    "summary": "The fortress on the north side of Marion Square was built after 1822, and not to keep out a foreign army.",
+    "point": {
+      "at": {
+        "lat": 32.78735,
+        "lng": -79.9358
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Old Citadel, Marion Square, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 75,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "South Carolina State Arsenal (Old Citadel), HABS SC-184, data pages",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/sc0013/"
+      },
+      {
+        "title": "Marion Square (Citadel Green), HALS SC-17, data pages",
+        "publisher": "Historic American Landscapes Survey, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/sc1226/"
+      },
+      {
+        "title": "Denmark Vesey",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/denmark-vesey.htm"
+      },
+      {
+        "title": "Guide to Charleston, S. C.; with brief history of the city and a map thereof (1919)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/20002718/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the long building on the north side of the square. Battlements along the roof. Towers at the corners. It looks like a fortress because it was meant to be one. Not against a foreign army.\n\nIn eighteen twenty two, the authorities said they had uncovered a plan by enslaved Charlestonians to rise and take the city. In the aftermath, the state built an arsenal here, with a guard of armed men to live in it and patrol the streets. When federal surveyors described the building in the nineteen fifties, they put its purpose plainly. A safeguard against slave uprisings.\n\nIn the eighteen forties the guard was disbanded. Cadets of a new state military academy moved in and took over its duties. That academy was the Citadel. For decades its cadets drilled on the grass in front of you, which was called Citadel Green.\n\nThe building kept growing. A third storey, then wings, then a fourth. In nineteen twenty two the cadets left for a new campus, and the green was renamed for Francis Marion.\n\nThe building is a hotel now. It still has the battlements.\n",
+    "teaser": "It looks like a fortress because it was one.",
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "denmark-vesey",
+      "the-citadel",
+      "architecture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-castle-on-the-square",
+        "durationS": 75
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-congregation-that-rebuilt",
+    "title": "The Congregation That Rebuilt",
+    "summary": "A lottery ticket, a plan for freedom in 1822, and a church that was destroyed and kept coming back.",
+    "point": {
+      "at": {
+        "lat": 32.78728,
+        "lng": -79.93302
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Mother Emanuel AME Church, Calhoun Street, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 86,
+    "minAge": 12,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [
+      {
+        "title": "South Carolina: Mother Emanuel AME Church",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/south-carolina-mother-emanuel-ame-church.htm"
+      },
+      {
+        "title": "Denmark Vesey",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/denmark-vesey.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the steeple. This church was built in eighteen ninety one. The congregation inside it is much older, and for about thirty years it had no legal right to meet at all.\n\nIt begins with a lottery ticket. In seventeen ninety nine, a Charleston carpenter named Denmark Vesey won fifteen hundred dollars, and used it to buy his own freedom.\n\nVesey was one of the founders of the African Church, the congregation that became this one. In eighteen twenty two, the authorities said, he was at the centre of a plan for the enslaved people of the city to rise and win their freedom.\n\nThe plan was betrayed before it began. More than a hundred people were arrested. Thirty five men were hanged, Vesey among them. And the church was destroyed. Accounts differ on whether it was burned or torn down.\n\nThe congregation rebuilt. In eighteen thirty four, all Black churches were outlawed, so they met in secret. In eighteen sixty five they organised again, openly, and took a new name. Emanuel.\n\nOn a June evening in two thousand fifteen, nine of its members were killed at Bible study in this building, and the congregation endured that too.\n\nThe building is from eighteen ninety one. The congregation has been rebuilding since eighteen twenty two.\n",
+    "teaser": "It begins with a winning lottery ticket.",
+    "certaintyNote": "The two NPS pages differ on the 1822 plot. The church page gives 313 arrested and says the church was burned; the Denmark Vesey page gives 131 arrested and charged, 67 convicted, calls the plot alleged, and says white Charlestonians tore the church down. Both give 35 executed. The script hedges the arrests, the plan and the destruction.",
+    "pronunciations": [
+      {
+        "written": "Denmark Vesey",
+        "say": "DEN-mark VEE-zee"
+      },
+      {
+        "written": "Calhoun Street",
+        "say": "kal-HOON Street"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "denmark-vesey",
+      "african-american-history",
+      "churches"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-congregation-that-rebuilt",
+        "durationS": 86
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-fire-and-the-brick-law",
+    "title": "The Fire and the Brick Law",
+    "summary": "The fire of November 1740 burned the oldest part of Charles Town. Three weeks later the colony ordered it rebuilt in brick or stone.",
+    "point": {
+      "at": {
+        "lat": 32.77675,
+        "lng": -79.92925
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Broad and Church Streets, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The history of South Carolina under the royal government, 1719-1776 (Edward McCrady, 1899), the fire of 1740",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/99002812/"
+      },
+      {
+        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the great fire of 1740",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/06042434/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look south down Church Street at the walls. Brick. Stucco over brick. Stone.\n\nThat is not only taste. It is a fire, and a law.\n\nOn the afternoon of the eighteenth of November, seventeen forty, a fire broke out in\nCharles Town. By one account it took every house from about this corner, Broad and\nChurch, down to Granville Bastion, at the water's edge, where the East Battery now\nbegins. Three hundred houses, by the count at the time, and storehouses, stables and\nwarehouses with them. This was the oldest part of town, and full of goods. The tide was\nhigh that afternoon, and by one account that is the only reason the ships at the wharves\ndid not burn as well.\n\nParliament in London sent twenty thousand pounds.\n\nAnd on the tenth of December, three weeks after the fire, the colony passed an act for\nrebuilding the town. Every new building was to be made of brick, or stone, or both. The\nact even fixed the price of bricks.\n\nThe town had tried a law like that once before and given it up, because bricks were\nscarce. This time it stuck. A Charleston historian, writing in nineteen-oh-six, noted that\nmany of the small, dark brick houses between Broad and Water Street date from that time on.\n\nYou are standing at the edge of the fire. What it took was rebuilt in the only materials\nthe law would allow.\n",
+    "teaser": "Look down Church Street at the walls. There is a reason for what they are made of.",
+    "pronunciations": [
+      {
+        "written": "Granville",
+        "say": "GRAN-vil"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "fires",
+      "colonial",
+      "architecture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-fire-and-the-brick-law",
+        "durationS": 96
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-museums-front-door",
+    "title": "The Museum's Front Door",
+    "summary": "Four columns in Cannon Park are all that is left of the hall that housed America's oldest museum.",
+    "point": {
+      "at": {
+        "lat": 32.7829,
+        "lng": -79.9436
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Cannon Park, Rutledge Avenue, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Cannon Park, HALS SC-15, data pages",
+        "publisher": "Historic American Landscapes Survey, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/sc1224/"
+      },
+      {
+        "title": "Guide to Charleston, S. C.; with brief history of the city and a map thereof (1919)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/20002718/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Four tall columns stand at this end of the park, holding up nothing. Look at the tops. Corinthian capitals, the kind crowned with leaves.\n\nThey were the front entrance of a great hall, built here in eighteen ninety nine for a Confederate reunion. After the reunion it was rarely used. It became a theatre, then for a while a city hospital.\n\nIn nineteen oh seven it found a lasting tenant. The Charleston Museum moved in, with its natural history collections, its workshops and its library. A city guidebook of nineteen nineteen called it the oldest museum in America, founded in seventeen seventy three. Older, the guide pointed out, than the nation.\n\nThe museum stayed for some seventy years. Then it built a new home on Meeting Street and moved out. The old hall had already been declared a fire hazard.\n\nIn nineteen eighty one, it burned to the ground.\n\nThe museum is still open, over on Meeting Street. Its old front door is here, with nothing behind it.\n",
+    "teaser": "Four columns, holding up nothing.",
+    "pronunciations": [
+      {
+        "written": "Rutledge Avenue",
+        "say": "RUT-lij Avenue"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "museums",
+      "parks",
+      "ruins"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-museums-front-door",
+        "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-night-the-wall-opened",
+    "title": "The Night the Wall Opened",
+    "summary": "The Old Jail used to be taller. On the night of the 1886 earthquake, its yard wall split, and half the prisoners walked out.",
+    "point": {
+      "at": {
+        "lat": 32.77862,
+        "lng": -79.93718
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old City Jail, 21 Magazine Street, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 89,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Charleston County Jail, HABS No. SC-688, written historical and descriptive data (Christine Trebellas, 1994)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/sc0902/"
+      },
+      {
+        "title": "Old Jail",
+        "publisher": "National Park Service, Travel Historic Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/old-jail.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the old jail. Heavy walls, towers, the look of a building nothing could move.\n\nIt used to be taller.\n\nIt was built in eighteen-oh-two, and for most of the century it had a fourth floor. Over\nthe eight-sided wing at the back stood a tall tower, which the records call the\nventilator, or the high cupola.\n\nOn the last night of August, eighteen eighty-six, an earthquake struck Charleston.\n\nThe local paper reported that the jail's walls, in some places nearly three feet thick,\nyielded to the quivering earth like so much glass. Cracks ran from the top of the building\ndown into the foundations.\n\nThe jailer made a decision. Rather than leave his prisoners in cells that might come down\non them, he let them out into the jail yard.\n\nThe yard had a wall around it. The earthquake opened a gap in it.\n\nThere were sixty-nine prisoners in the jail that night. Thirty-six of them went out\nthrough the gap.\n\nAfterwards the tower was condemned and torn down, and the top floor was taken off. The\nbuilding you are looking at is the jail the earthquake left behind. It went on holding\nprisoners until nineteen thirty-nine.\n\nIt still looks like nothing could get out of it. For one night, more than half of the\npeople inside proved otherwise.\n",
+    "teaser": "Look up at the Old Jail. It used to be taller.",
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "jails",
+      "earthquake-1886",
+      "architecture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-night-the-wall-opened",
+        "durationS": 89
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-petition-of-forty-seven",
+    "title": "The Petition of Forty-Seven",
+    "summary": "In 1824, forty-seven members of this congregation asked to pray in English, and started something.",
+    "point": {
+      "at": {
+        "lat": 32.78212,
+        "lng": -79.9329
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Kahal Kadosh Beth Elohim, Hasell Street, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 76,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Kahal Kadosh Beth Elohim Synagogue",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/kahal-kadosh-beth-elohim-synagogue.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the front of this synagogue. Tall columns, a deep porch, a heavy roof line. It was designed to look like a temple from ancient Greece.\n\nThe congregation is older than the building. It began in seventeen forty nine, and by the end of that century it was the largest Jewish community in the country.\n\nIn eighteen twenty four, forty seven members sent the trustees a petition. They asked for shorter Hebrew rituals. They asked for prayers and sermons in English. The trustees said no, and for a time the congregation split.\n\nBy eighteen thirty three, the congregation was back together, and most of it was on the petitioners' side. Then the Charleston fire of eighteen thirty eight burned the first synagogue, which stood on this spot.\n\nThis one was built to replace it in eighteen forty. When its first service was held, the year after, it was the new kind. Beth Elohim became the first Reform congregation in America, and this is now the oldest synagogue in the country in continuous use.\n\nThe petition of eighteen twenty four was turned down. Seventeen years later, it had the whole building.\n",
+    "teaser": "The petition lost. Seventeen years later it had the whole building.",
+    "pronunciations": [
+      {
+        "written": "Kahal Kadosh Beth Elohim",
+        "say": "kah-HAHL kah-DOHSH bayt eh-loh-HEEM"
+      },
+      {
+        "written": "Hasell Street",
+        "say": "HAY-zel Street"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "jewish-history",
+      "religion",
+      "architecture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-petition-of-forty-seven",
+        "durationS": 76
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-piece-somebody-kept",
+    "title": "The Piece Somebody Kept",
+    "summary": "A fenced fragment on Marion Square is what is left of the fortification that guarded Charleston in 1780.",
+    "point": {
+      "at": {
+        "lat": 32.7868,
+        "lng": -79.9364
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Horn work remains, Marion Square, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 64,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Marion Square (Citadel Green), HALS SC-17, data pages",
+        "publisher": "Historic American Landscapes Survey, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/sc1226/"
+      },
+      {
+        "title": "Guide to Charleston, S. C.; with brief history of the city and a map thereof (1919)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/20002718/"
+      },
+      {
+        "title": "Christopher Gadsden",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/christopher-gadsden.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "On the King Street side of this square, behind an iron fence, is a fragment of old wall. It is easy to walk past. It is the oldest thing on the square.\n\nIn seventeen fifty nine, this was the northern edge of Charleston, and the road into town came through here. To guard it, the colony built a horn work, a great fortification designed by a German engineer named Emmanuel Hesse. It covered five acres. It mounted eighteen cannon. A wide moat ran along its north side. Parts of it were built of tabby, the old coastal building material you can see in that fragment.\n\nIn seventeen eighty, a British army laid siege to Charleston, and the horn work was the city's main defence.\n\nIt was not enough. Charleston surrendered, and it was the largest American surrender until the Civil War.\n\nFour years later, the horn work was taken down. Somebody kept this piece, and put a fence around it.\n",
+    "teaser": "The oldest thing on the square is easy to walk past.",
+    "pronunciations": [
+      {
+        "written": "Emmanuel Hesse",
+        "say": "eh-MAN-yoo-el HESS-eh"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "american-revolution",
+      "fortifications",
+      "ruins"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-piece-somebody-kept",
+        "durationS": 64
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-playhouse-on-dock-street",
+    "title": "The Playhouse on Dock Street",
+    "summary": "America's first building made for theatre stood on this side of the block in 1736. You are on the street it was named for.",
+    "point": {
+      "at": {
+        "lat": 32.77818,
+        "lng": -79.9299
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Dock Street Theatre, Church and Queen streets, Charleston, South Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 89,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Dock Street Theatre",
+        "publisher": "National Park Service, Travel Historic Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/dock-street-theatre.htm"
+      },
+      {
+        "title": "Charleston Community History",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/charleston-community-history.htm"
+      },
+      {
+        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the early playhouses",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/06042434/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the iron balcony on the corner. The name on the building is the Dock Street\nTheatre.\n\nNow look at the street sign. You are standing on Queen Street.\n\nQueen Street used to be called Dock Street. And on this side of the block, in seventeen\nthirty-six, Charleston put up a building for one purpose only. Plays. It is said to have\nbeen the first building in America made for the theatre.\n\nNobody was building a monument. A history of the city written in nineteen-oh-six says the\nearly playhouses here were described as temporary, and were probably not much more than\nbarns. Planters and merchants came to watch tragedies, and Addison's Cato, and a comedy\ncalled The Recruiting Officer, put on by special request of the local militia.\n\nThe barn is long gone. The building in front of you started life around eighteen-oh-nine\nas the Planter's Hotel, where planters from up-country stayed for the horse-racing season.\nThen, in the nineteen-thirties, the city restored it as a Works Progress Administration\nproject. It built an eighteenth-century style theatre into the back of the old hotel, and\ngave the whole thing the old playhouse's name.\n\nSo America's first theatre is a story told by a hotel, about a barn, on a street that\nchanged its name.\n\nFor a theatre, that seems about right.\n",
+    "teaser": "The sign says Dock Street Theatre. Look at the street sign. You are on Queen Street.",
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "french-quarter",
+      "theatre",
+      "colonial"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-playhouse-on-dock-street",
+        "durationS": 89
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-powder-behind-the-wall",
+    "title": "The Powder Behind the Wall",
+    "summary": "In 1780 the Americans bricked ten thousand pounds of powder into the Exchange vaults. The British never found it.",
+    "point": {
+      "at": {
+        "lat": 32.77695,
+        "lng": -79.9273
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Old Exchange and Provost Dungeon, East Bay Street, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 80,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Exchange and Provost Building",
+        "publisher": "National Park Service, Travel Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/exchange-and-provost-building.htm"
+      },
+      {
+        "title": "The history of South Carolina in the revolution, 1775-1780 (Edward McCrady, 1901)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01031018/"
+      },
+      {
+        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), The Siege and The Captured City",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/06042434/"
+      },
+      {
+        "title": "The Siege of Charleston, 1780",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/siege-of-charleston-1780.htm"
+      },
+      {
+        "title": "British Evacuation of Charleston",
+        "publisher": "National Park Service, Fort Sumter and Fort Moultrie National Historical Park",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/000/british-evacuation-of-charleston.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The building at the foot of Broad Street is the Exchange. When it was finished, in\nseventeen seventy-one, the harbour came right up to it. Everything between it and the\nwater now is filled land.\n\nThink about what is underneath it.\n\nIn the spring of seventeen eighty a British army laid siege to Charleston. During the\nsiege the defenders moved ten thousand pounds of gunpowder out of the town's main\nmagazine, by night, and carried it down into the vaults of this building. Then they\nbricked it in.\n\nThe city surrendered in May. The British took vast stores of powder when it fell. They\nheld Charleston for more than two years. They used the Exchange as barracks, and the\ncellar became their military prison, the Provost. In one damp, dark room they kept\ncriminals and suspected rebels together, men and women, some held on the thinnest of\ncharges.\n\nWilliam Moultrie, one of the American commanders, wrote about it afterwards. The Provost,\nhe said, was right next to the powder. The British never found it. When the Americans\ncame back into the town, it was still there.\n\nFor more than two years, the British had been guarding it for them.\n",
+    "teaser": "Look at the building at the foot of Broad Street. Think about what is under it.",
+    "pronunciations": [
+      {
+        "written": "Moultrie",
+        "say": "MOOL-tree"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "old-exchange",
+      "revolution"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-powder-behind-the-wall",
+        "durationS": 80
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-sailor-on-the-steeple",
+    "title": "The Sailor on the Steeple",
+    "summary": "In the fire of 1796 an enslaved man climbed the burning steeple and saved St. Philip's. A poem later credited the wrong church.",
+    "point": {
+      "at": {
+        "lat": 32.77857,
+        "lng": -79.92942
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. Philip's Church, Church Street, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 98,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "St. Philip's Episcopal Church",
+        "publisher": "National Park Service, Travel Historic Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/st-philips-episcopal-church.htm"
+      },
+      {
+        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the fire of 1796",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/06042434/"
+      },
+      {
+        "title": "Charleston, S.C. and vicinity illustrated (1901), St. Philip's Church",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/02003003/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up Church Street at the steeple of St. Philip's. The church sits right out in the\nroadway, the way parish churches did in England, and the street has to bend around it.\n\nThis is not the steeple this story is about.\n\nIn seventeen ninety-six a great fire swept through this part of town. It destroyed the\nFrench church on the corner behind you. And it reached the older St. Philip's, which stood\non this same spot, and set its steeple alight.\n\nAn enslaved Black man, a sailor by one account, climbed up the outside of the tower and\ntore off the burning shingles.\n\nIt worked. The church was saved.\n\nFor this, the old accounts agree, he was given his freedom. One adds a sum of money, and a\nfishing boat, completely fitted out with nets.\n\nThen the story got away from him. A popular poem moved it to the other great church in\ntown, and called it How He Saved St. Michael's. By nineteen-oh-one it was a favourite piece\nfor recitation contests. A book about Charleston published that year set the record straight, and\nthen added four words of its own. Thus is history made.\n\nThe church he saved burned anyway, in eighteen thirty-five, and the one in front of you was\nbuilt to replace it. Its steeple came a decade later.\n\nThe histories that tell this story record his reward in detail. The money. The boat. The\nnets. They do not record his name.\n",
+    "teaser": "Look up Church Street at the steeple of St. Philip's. It is not the steeple this story is about.",
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "french-quarter",
+      "st-philips",
+      "fires",
+      "slavery"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-sailor-on-the-steeple",
+        "durationS": 98
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-street-named-for-a-meeting-house",
+    "title": "The Street Named for a Meeting House",
+    "summary": "Meeting Street is named for a plain white meeting house that stood here. Every church on the site has gone since. The graves stayed.",
+    "point": {
+      "at": {
+        "lat": 32.77881,
+        "lng": -79.93121
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Circular Congregational Church and graveyard, 150 Meeting Street, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 90,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Circular Congregational Church and Parish House",
+        "publisher": "National Park Service, Travel Historic Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/circular-congregational-church-and-parish-house.htm"
+      },
+      {
+        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the White Meeting",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/06042434/"
+      },
+      {
+        "title": "Charleston, S.C. and vicinity illustrated (1901), the Circular Church",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/02003003/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look into the graveyard around the Circular Congregational Church. It is the oldest burial\nground in Charleston, and one of its monuments has stood here since the sixteen hundreds.\n\nNow think about the name of the street you are standing on.\n\nMeeting Street is named for a building that is not here. In the first years of the town,\nits dissenters, English Congregationalists, Scots and Irish Presbyterians and French\nHuguenots, put up a plain meeting house on this spot. It was painted white. People called\nit the White Meeting House, and the road in front of it took the name.\n\nSince then, this site has been through almost everything Charleston could throw at it.\nDuring the Revolution the meeting house was turned into a granary, and horses grazed\namong these graves. In eighteen-oh-six a new church went up here, round, designed by the\nCharleston-born architect Robert Mills. It gave the congregation its name. It burned in\nthe great fire of eighteen sixty-one, stood as a ruin for twenty-five years, and the\nearthquake of eighteen eighty-six finished it off.\n\nThe church in front of you was built after that, around eighteen ninety-two, and it was\nbuilt partly from the old bricks.\n\nEvery church before this one has gone. The street is still named for the first of them.\nAnd the graves have outlasted all of them.\n",
+    "teaser": "Look into the oldest graveyard in Charleston. Then look at the name of the street you are standing on.",
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "french-quarter",
+      "churches",
+      "churchyards",
+      "place-names"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-street-named-for-a-meeting-house",
+        "durationS": 90
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-tables-in-the-shed",
+    "title": "The Tables in the Shed",
+    "summary": "The only surviving building in South Carolina known to have been used as a slave auction gallery. What its front was built to look like.",
+    "point": {
+      "at": {
+        "lat": 32.77775,
+        "lng": -79.92843
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old Slave Mart, 6 Chalmers Street, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 104,
+    "minAge": 12,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old Slave Mart",
+        "publisher": "National Park Service, Travel Historic Charleston",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/old-slave-mart.htm"
+      },
+      {
+        "title": "Charleston, SC",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/charleston-sc.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the front of number six Chalmers Street. A high arch. Eight-sided pillars. A large\niron gate.\n\nIt is a handsome front, for what happened behind it.\n\nThis is the only building known to survive in South Carolina that was used as a slave\nauction gallery. For a long time, Charleston sold enslaved men, women and children in the\nopen, on the north side of the Exchange building. In eighteen fifty-six the city banned\nthose public sales.\n\nThe trade did not stop. It moved indoors and off the main streets, into sales rooms and\nyards along Chalmers, State and Queen streets.\n\nThis was one of them, known as Ryan's Mart. Behind the front stood a four-storey building\nwith a barracoon, a jail where people were held until they were sold. There was a kitchen.\nThere was a morgue.\n\nThe shed you are looking at went up in eighteen fifty-nine. Inside, the people being sold\nstood on tables three feet high and ten feet long. The tables were set lengthwise, so that\nbuyers could walk along beside them and look.\n\nSomeone thought carefully about what the buyers needed to see.\n\nSales were held here for only a few years, until the Civil War brought slavery to an end.\nHistorians estimate that nearly half of all the Africans brought to America in slavery\narrived through Charleston.\n\nIn nineteen thirty-eight a woman named Miriam Wilson bought this building and made it a\nmuseum of African American history. A room built for buyers became a room for remembering\nthe people who were sold.\n",
+    "teaser": "A high arch, eight-sided pillars and an iron gate. A handsome front, for what happened behind it.",
+    "pronunciations": [
+      {
+        "written": "barracoon",
+        "say": "bar-uh-KOON"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "french-quarter",
+      "slavery",
+      "african-american-history",
+      "antebellum"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-tables-in-the-shed",
+        "durationS": 104
+      }
+    ]
+  },
+  {
+    "id": "charleston-the-yard-named-for-a-water-tank",
+    "title": "The Yard Named for a Water Tank",
+    "summary": "The college's buildings were named for people. Its central green was named for the plumbing.",
+    "point": {
+      "at": {
+        "lat": 32.7829,
+        "lng": -79.9373
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "The Cistern Yard, College of Charleston, Charleston, South Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 60,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "College of Charleston",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/college-of-charleston.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand under the oaks and look toward the building with the columns at the end of the green. That is the college's main building, and it has a person's name. Randolph Hall. The old library on the green has a person's name too. Towell.\n\nThe green itself is called the Cistern.\n\nIn the nineteenth century, the college built an oval cistern here to hold its water supply. The name stuck to the whole yard, oaks and all.\n\nThe college is old. It was founded in seventeen seventy, and its founders included three signers of the Declaration of Independence. Its first classes met in former Revolutionary War barracks. The main building went up in eighteen twenty nine. The columns came twenty five years later.\n\nIt is the oldest municipal college in the United States, and a National Historic Landmark.\n\nAnd the heart of it is named after a water tank.\n",
+    "teaser": "Randolph Hall, Towell Library, and the Cistern.",
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "college-of-charleston",
+      "architecture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-yard-named-for-a-water-tank",
+        "durationS": 60
+      }
+    ]
+  },
+  {
+    "id": "charleston-what-the-survey-wrote-down",
+    "title": "What the Survey Wrote Down",
+    "summary": "Behind a governor's town house, the whole working yard survived, and federal surveyors measured every part of it.",
+    "point": {
+      "at": {
+        "lat": 32.7916,
+        "lng": -79.93505
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Aiken-Rhett House, Elizabeth Street, Charleston, South Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Robinson-Aiken House, 48 Elizabeth Street, Charleston (HABS SC-269), data pages",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/sc0023/"
+      },
+      {
+        "title": "Robinson-Aiken Service Building and Stable (HABS SC-275), data pages",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/sc0025/"
+      },
+      {
+        "title": "Robinson-Aiken Cow House (HABS SC-274), data pages",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/sc0022/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the long plain wing that runs back from the house along Elizabeth Street. Up at the second floor there are six blank panels with pointed tops. Windows that were never windows.\n\nThis is the back of a planter's town house. Governor William Aiken lived here. What makes the place rare is not the front. It is everything behind it.\n\nWhen federal surveyors came in the late nineteen fifties and early sixties, they found the working yard still standing. A stable with six stalls. A carriage room. A harness room. A hay loft. And in the garden, two small brick cow houses. One was nearly gone. The other had an earth floor and room for two animals.\n\nThey measured the floorboards. They noted a wrought iron lock on one door, stamped with its maker's name.\n\nUpstairs at the far end of the wing were two small rooms with fireplaces. The surveyors wrote that they appear to have been used for living purposes.\n\nThey wrote down the hinges and the locks. They did not write down who lived in those rooms.\n",
+    "teaser": "Six windows that were never windows.",
+    "pronunciations": [
+      {
+        "written": "Aiken",
+        "say": "AY-kin"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "architecture",
+      "town-houses"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-what-the-survey-wrote-down",
+        "durationS": 72
+      }
+    ]
+  },
+  {
+    "id": "charleston-where-the-tide-came-in",
+    "title": "Where the Tide Came In",
+    "summary": "Stede Bonnet and his crew were hanged at White Point in 1718 and buried at the low-water mark. The garden was laid out on top.",
+    "point": {
+      "at": {
+        "lat": 32.76992,
+        "lng": -79.93035
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "White Point Garden, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 93,
+    "minAge": 12,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The tryals of Major Stede Bonnet and other pirates (1719)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/33008758/"
+      },
+      {
+        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), The Conquest of the Pirates",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/06042434/"
+      },
+      {
+        "title": "The history of South Carolina under the proprietary government, 1670-1719 (Edward McCrady, 1897)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01010815/"
+      },
+      {
+        "title": "White Point Gardens, 2 Murray Boulevard, Charleston (HALS SC-19)",
+        "publisher": "Library of Congress, Historic American Landscapes Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/item/sc1228/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Somewhere in this garden is a small stone with a pirate's name on it. Stede Bonnet. It\nwas put up in nineteen forty-three, and it is easy to walk straight past.\n\nBonnet was not the usual kind of pirate. The old histories describe a gentleman. Educated,\nwell off, a former army major. Nobody could say why he took to the sea.\n\nIn the autumn of seventeen eighteen, ships from Charles Town caught him and brought him\nback in irons. He escaped once, in a woman's dress, and was hunted down in the sandhills\nof Sullivan's Island.\n\nThe record of the trials was printed the following year. Most of his crew were hanged in\nNovember. Bonnet followed on the tenth of December, executed, it says, at the White Point\nnear Charles Town.\n\nThat is here.\n\nThere was no garden then. The point took its name from the heaps of white oyster shell\nalong the shore. A Charleston historian, writing in nineteen-oh-six, recorded where the\npirates went afterwards. They were buried on the White Point shoal, just above the\nlow-water mark. Out on the mud, at the edge of the tide.\n\nThe city later filled the shoal in. This garden was laid out in eighteen thirty-seven, on\nmade ground, and the oaks you are standing under grew up on top of it.\n\nThey were buried where the tide came in. The city moved the tide.\n",
+    "teaser": "Somewhere in this garden is a small stone with a pirate's name on it.",
+    "pronunciations": [
+      {
+        "written": "Stede Bonnet",
+        "say": "STEED BON-it"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "battery",
+      "pirates",
+      "colonial"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-where-the-tide-came-in",
+        "durationS": 93
+      }
+    ]
+  },
+  {
+    "id": "charleston-whose-arms-on-the-roof",
+    "title": "Whose Arms on the Roof",
+    "summary": "The coat of arms on this Battery house belongs to its second owner, not the man who built it.",
+    "point": {
+      "at": {
+        "lat": 32.7717,
+        "lng": -79.92772
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Edmondston-Alston House, 21 East Battery, Charleston, South Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Charles Edmonston House, 21 East Battery Street, Charleston (HABS SC-54)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/sc0045/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Turn your back on the harbour and look across the street at number twenty-one. A big,\nthree-storey house with deep piazzas down the south side. Now look at the very top of the\nfront, at the low wall that hides the roof. There is a coat of arms up there.\n\nWhen the federal building survey wrote this house up, it called that an unusual feature.\nAs far as anyone knew, it was the only house in the city with one.\n\nThe arms are not the builder's.\n\nThe house was standing by eighteen twenty-nine. It was built by Charles Edmondston, and\nit looks straight out over the harbour.\n\nIn eighteen thirty-eight it was sold. Not by Edmondston, but by the assignees handling\nhis firm's affairs. The price was fifteen thousand five hundred dollars.\n\nThe buyer was Charles Alston. He redecorated the whole house in the Greek Revival style,\nadded a third tier to the piazzas, and put his family's arms on the parapet, on the\nfront that faces the water.\n\nThe survey ended up filing the house under three names. Edmondston, Alston, and a later\nfamily's. Only one of them is written on the roof.\n",
+    "teaser": "Turn your back on the harbour and look at the roofline of number twenty-one.",
+    "pronunciations": [
+      {
+        "written": "Edmondston",
+        "say": "ED-mund-stun"
+      },
+      {
+        "written": "Alston",
+        "say": "AWL-stun"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "battery",
+      "houses"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-whose-arms-on-the-roof",
+        "durationS": 78
+      }
+    ]
+  },
+  {
     "id": "city-hall-declaration",
     "title": "What the army did after they heard it",
     "summary": "Washington had the Declaration read to his troops here. They did not stay to discuss it.",
@@ -4931,6 +6848,2229 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "new-orleans-a-district-with-his-name",
+    "title": "A District With His Name On It",
+    "summary": "Storyville, the legal red-light district across Basin Street, was named for the man whose ordinance created it.",
+    "point": {
+      "at": {
+        "lat": 29.95801,
+        "lng": -90.07205
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Basin Street at Bienville Street, across from the site of Storyville, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Jazz Neighborhoods",
+        "publisher": "National Park Service, New Orleans Jazz National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/jazz/learn/historyculture/jazz-map.htm"
+      },
+      {
+        "title": "Restricted District at New Orleans Closed, Evening capital news, Boise, Idaho, 13 November 1917, p. 1",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn88056024/1917-11-13/ed-1/?sp=1"
+      },
+      {
+        "title": "Jelly Roll Morton interviews conducted by Alan Lomax (National Recording Registry essay)",
+        "publisher": "Library of Congress, National Recording Preservation Board",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Lomax-JellyRollMorton.pdf"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across Basin Street, away from the French Quarter.\n\nFor twenty years, the blocks over there were a legal red-light district. It operated openly from eighteen ninety-seven.\n\nThe newspapers called it Storyville, and explained the name. The district had been set up by an ordinance, and the man behind the ordinance was named Story.\n\nMusic was a sideline here, but a real one. Bands worked the dance halls and cabarets. Pete Lala's. The hundred and one Ranch. The Tuxedo Dance Hall. The Big Twenty-Five. A young pianist named Jelly Roll Morton started out playing in this neighborhood.\n\nJazz was not born here, whatever the legend says. The National Park Service is firm about that. But Storyville put the new music in front of people who might never have heard it otherwise.\n\nIt ended at midnight on the twelfth of November, nineteen seventeen. Everything closed at the stroke of twelve, at the request of the Navy Department. One wire report said more than a third of the district's two thousand women had already left the city.\n\nIn the nineteen-forties nearly every building over there was torn down for public housing.\n\nThe name outlived every one of them.\n",
+    "teaser": "The name outlived every building.",
+    "detail": "The National Park Service says only six original Storyville structures and remnants\nsurvive, among them Frank Early's Saloon. The Tango Belt, another early jazz district,\nlay just across Basin and North Rampart streets in the French Quarter.\n",
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "storyville",
+      "basin-street",
+      "jazz",
+      "music"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-a-district-with-his-name",
+        "durationS": 78
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-a-tomb-used-again",
+    "title": "A Tomb Used Again",
+    "summary": "Why New Orleans buries its dead above ground, and how one small tomb holds a family for generations.",
+    "point": {
+      "at": {
+        "lat": 29.95974,
+        "lng": -90.07135
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. Louis Cemetery No. 1, St. Louis Street side, New Orleans, Louisiana"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 10,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "New Orleans guide (New Orleans, F.F. Hansell & Bro., c1902), by James S. Zacharie, Cemeteries",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/03001137/"
+      },
+      {
+        "title": "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), The Cemeteries: St. Louis No. 1",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      },
+      {
+        "title": "Norman's New Orleans and environs (1845), Public buildings: cemeteries",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008776/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the wall around this cemetery, and how thick it is.\n\nIn the old St. Louis cemeteries, the wall was never just a fence. It was built as tombs, stacked in tiers. Visitors a century ago were told these vaults were called ovens, after the oldest tombs here, which were brick and shaped like ovens.\n\nWhy build up instead of down? A guidebook of nineteen hundred and two put it plainly. The soil is low and wet. Dig very deep, and you strike water.\n\nBut that is only half the answer. The other half is what happens inside.\n\nA family tomb usually held two vaults, with a space for bones beneath. When a vault was needed again, the law first made the family wait. A year or two, the guidebooks said. Then the slab came off, the old wooden coffin was broken up and burned, and what remained was moved down into the space below. The vault was ready again.\n\nIn these cemeteries, one guide wrote, generation after generation mingle their dust in the same crypt.\n\nEach tomb behind that wall is not one person. It is a family, folded down into one small house.\n",
+    "teaser": "The wall is not just a wall.",
+    "detail": "The 1904 Picayune guide says St. Louis No. 1 was by then closed to new tombs and opened\nonly to heirs. Not every guide agreed that the ground was too wet everywhere: an 1845\nguide notes that at the Firemen's cemetery out on the Metairie ridge, graves could be\nsunk six feet without reaching water.\n",
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "treme",
+      "cemetery",
+      "st-louis-cemetery"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-a-tomb-used-again",
+        "durationS": 78
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-an-american-house",
+    "title": "An American House",
+    "summary": "In 1819 Latrobe predicted an American town. This house is what he saw coming, and what the French Quarter made of it.",
+    "point": {
+      "at": {
+        "lat": 29.95741,
+        "lng": -90.06742
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Hermann-Grima House, 820 St. Louis Street, New Orleans, Louisiana"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Hermann-Grima House, 820 Saint Louis Street, New Orleans, Orleans Parish, LA (HABS LA-1122)",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/la0067/"
+      },
+      {
+        "title": "Vieux Carré, A Creole Neighborhood in New Orleans (Teaching with Historic Places)",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across at the front of this house. Five openings wide, evenly spaced, in pale yellow brick. Then look at the front door, set back into the wall, with slender columns on either side and a half-oval fan of glass above it.\n\nNow look at its neighbours.\n\nIn eighteen nineteen the architect Benjamin Henry Latrobe, who had worked on the Capitol in Washington, came to live in New Orleans. He was taken with the city's Creole character, and he could see what was coming. Merchants from the old United States, he wrote, had already begun to bring in the lopsided London house. In a few years, he predicted, this will be an American town.\n\nThis house is part of what he saw coming. It was built around eighteen thirty-one for Samuel Hermann, a wealthy merchant. The federal survey of it describes a plan from the northeastern United States, adapted to work as a New Orleans townhouse. The yellow brick, it has been said, came all the way from Philadelphia.\n\nLatrobe was half right. The American houses did come. But they had to fit the town the French had already laid out. Narrow, deep lots. Buildings right up to the street. Courtyards hidden behind. The Americans' favourite front yards hardly ever appeared in the Quarter. They kept the iron balconies too.\n\nLook at the door again. It is an American door.\n\nIt just had to stand where the street told it to.\n",
+    "teaser": "Look at the front door across the street, set back into the wall under a fan of glass.",
+    "pronunciations": [
+      {
+        "written": "Hermann-Grima",
+        "say": "HER-man GREE-mah"
+      },
+      {
+        "written": "Latrobe",
+        "say": "luh-TROHB"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "architecture",
+      "st-louis-street"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-an-american-house",
+        "durationS": 96
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-her-initials-in-the-iron",
+    "title": "Her Initials in the Iron",
+    "summary": "The A and P in the Pontalba balconies belong to Micaela Almonester de Pontalba, who survived being shot and came home to build.",
+    "point": {
+      "at": {
+        "lat": 29.957,
+        "lng": -90.06333
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Upper Pontalba Building, St. Peter Street, Jackson Square, New Orleans, Louisiana"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 90,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Creole families of New Orleans (1921)",
+        "publisher": "Grace King, Macmillan, 1921; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/21004871/"
+      },
+      {
+        "title": "New Orleans, the place and the people (1895)",
+        "publisher": "Grace King, Macmillan, 1895; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008773/"
+      },
+      {
+        "title": "Pontalba Buildings, 1850 House, Jackson Square, New Orleans (HABS LA-1259-A), index card and supplemental material",
+        "publisher": "Historic American Buildings Survey, National Park Service; Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/la0365/"
+      },
+      {
+        "title": "The Presbytere, New Orleans, Louisiana",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/the-presbytere-new-orleans-louisiana.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the long red brick building along this side of the square, at the cast iron railings on its balconies. Somewhere in the pattern, two letters are twisted together. An A and a P.\n\nThey belong to a woman who was supposed to be dead.\n\nMicaela Almonester was born in this city, the daughter of the rich Spaniard who paid for the cathedral. She married into a noble French family, the Pontalbas, and went to live in France.\n\nThe marriage went badly. There were lawsuits. In the end she won her independence from her husband and his family.\n\nThen, one October morning in eighteen thirty-four, at the family château, she was found on the floor of her rooms, shot several times. Her father-in-law, the old baron, was found dead in his armchair with a pistol in his hand.\n\nShe lived. She carried the bullets in her body for the rest of her life.\n\nTwelve years later she put a plan to the city. She would tear down her father's old buildings on both sides of this square, and put up something grander, if the council would play its part. The council backed out. She built them anyway. They were finished around eighteen fifty.\n\nThe A is for Almonester. The P is for Pontalba.\n\nShe kept both.\n",
+    "teaser": "Look for two letters twisted together in the iron balconies.",
+    "pronunciations": [
+      {
+        "written": "Micaela",
+        "say": "mee-kah-EH-lah"
+      },
+      {
+        "written": "Almonester",
+        "say": "al-mo-NESS-ter"
+      },
+      {
+        "written": "Pontalba",
+        "say": "pon-TAL-buh"
+      },
+      {
+        "written": "château",
+        "say": "sha-TOH"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "jackson-square",
+      "french-quarter",
+      "women",
+      "ironwork"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-her-initials-in-the-iron",
+        "durationS": 90
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-love-street",
+    "title": "Love Street",
+    "summary": "Bernard de Marigny named his new streets Love, Good Children, Piety, Desire and Craps. Most of the names are gone.",
+    "point": {
+      "at": {
+        "lat": 29.9664,
+        "lng": -90.06278
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "North Rampart Street below Esplanade Avenue, Faubourg Marigny, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 91,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [
+      {
+        "title": "Creole families of New Orleans (New York, Macmillan, 1921), by Grace King, chapter on Bernard de Marigny",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/21004871/"
+      },
+      {
+        "title": "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), street names and the new Rampart Street",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      },
+      {
+        "title": "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), North Rampart and the French Quarter beyond the Vieux Carre",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/13004346/"
+      },
+      {
+        "title": "The Picayune's guide to New Orleans (1900), Good Children street, now St. Claude",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/00001333/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the street sign. It says Rampart.\n\nBack on the old town side of Esplanade, that name makes sense. The city's defenses ran along that line. But this stretch was laid out later, on a plantation, when its owner cut his land into streets and lots in the early eighteen-hundreds. He named this one himself.\n\nHe called it Rue d'Amour. Love Street.\n\nHis name was Bernard de Marigny, and he named the whole neighborhood like a poet. Poet Street. Good Children Street. Piety. Desire. And Craps.\n\nCraps is where the stories split. Grace King, writing about the old Creole families in nineteen twenty-one, said he named it after a game he was addicted to. A guidebook from nineteen hundred and four says the street got the name because boys played the game there. Neither one gives a source. Take your pick.\n\nMarigny meant to build a Creole city that would outshine the American one growing up across Canal Street. It never came. One story says a sale of the whole faubourg fell apart in a notary's office, because his wife did not come to sign.\n\nLater the city tidied up its map. Love Street became part of Rampart. Good Children became St. Claude. Moreau became Chartres.\n\nThe pretty names, King wrote, are all that survive of his scheme. Even some of those were taken off the signs.\n",
+    "teaser": "This stretch of Rampart was called Love Street.",
+    "detail": "The 1913 Picayune guide dates the laying out of the Faubourg Marigny to 1805. The guides\ncredit the naming of Love Street to \"Mandeville de Marigny\"; Bernard de Marigny de\nMandeville is the same man. The 1904 guide notes that older residents still called this\nstretch Love Street after the city council made it part of Rampart.\n",
+    "certaintyNote": "The street names and their later renaming are documented in the 1900, 1904 and 1913 Picayune guides and Grace King's Creole Families of New Orleans (1921). Why one street was called Craps is disputed: King says Marigny named it for a game he was addicted to, the 1904 guide says boys playing the game there gave the street its name, and neither cites a source. The failed sale of the faubourg is King's retelling of an American narrator's account, and the script hedges it.",
+    "pronunciations": [
+      {
+        "written": "Marigny",
+        "say": "MAIR-uh-nee"
+      },
+      {
+        "written": "Rue d'Amour",
+        "say": "roo dah-MOOR"
+      },
+      {
+        "written": "faubourg",
+        "say": "FOH-burg"
+      },
+      {
+        "written": "Esplanade",
+        "say": "ESS-pluh-nade"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "marigny",
+      "street-names",
+      "creole"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-love-street",
+        "durationS": 91
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-named-for-empty-ground",
+    "title": "Named for Empty Ground",
+    "summary": "Esplanade Avenue, the grand street of Creole New Orleans, takes its name from the cleared ground outside a fort.",
+    "point": {
+      "at": {
+        "lat": 29.96599,
+        "lng": -90.06355
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Esplanade Avenue at North Rampart Street, New Orleans, Louisiana"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 60,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), Esplanade Avenue, from the river to Rampart Street",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/13004346/"
+      },
+      {
+        "title": "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Esplanade Avenue",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down Esplanade Avenue, toward the river. The trees, the wide middle, the old houses on both sides.\n\nA guidebook of nineteen hundred and four said this avenue was to the Creoles what St. Charles Avenue was to the Americans. Their grand residence street.\n\nThe name is older than the houses, and it is a soldier's word.\n\nRight here, where Rampart now crosses Esplanade, the Spanish governor Carondelet put up a fort in seventeen ninety-six. Fort St. Ferdinand. It was part of a ring of defenses around the town.\n\nAn esplanade is the open, cleared ground that lies outside a line of fortifications like that. Flat, bare and empty. That is what this was.\n\nThe fort was taken down early in the eighteen-hundreds, and the town spread out across the cleared ground.\n\nSo the finest address in Creole New Orleans is named for the space that was meant to stay empty.\n",
+    "teaser": "The best address in Creole New Orleans is a military word.",
+    "detail": "The 1913 Picayune guide calls Esplanade the principal residence street of the French\nQuarter and says Fort St. Ferdinand was dismantled in the early part of the nineteenth\ncentury; the Rampart Street defenses did not wholly disappear until 1820.\n",
+    "pronunciations": [
+      {
+        "written": "Esplanade",
+        "say": "ESS-pluh-nade"
+      },
+      {
+        "written": "Carondelet",
+        "say": "kuh-RON-duh-let"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "esplanade",
+      "fortifications",
+      "creole"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-named-for-empty-ground",
+        "durationS": 60
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-no-funerals-at-the-cathedral",
+    "title": "No Funerals at the Cathedral",
+    "summary": "In 1827 New Orleans fined anyone who held a funeral at the cathedral, and sent the dead here instead.",
+    "point": {
+      "at": {
+        "lat": 29.95846,
+        "lng": -90.07066
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Our Lady of Guadalupe Church, the old Mortuary Chapel, North Rampart and Conti streets, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Our Lady of Guadaloupe Church (St. Anthony of Padua, The Mortuary Chapel), 411 North Rampart Street, HABS LA-1104, written historical and descriptive data (1958)",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/la0048/"
+      },
+      {
+        "title": "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), North Rampart: the church of St. Anthony of Padua",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/13004346/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the front of this church. The plain stucco face, the open porch, the bell tower above.\n\nIt was built for one purpose. Funerals.\n\nIn the early eighteen-hundreds, Catholic funerals in New Orleans were held at the cathedral, in the middle of the old town. The city council came to fear that the custom was spreading disease, in a city where epidemics came back again and again.\n\nSo the council asked the church to build a chapel out here instead, at the back edge of town, close to the cemetery. The church bought this lot in eighteen twenty-five, for four hundred and twenty-five dollars. The chapel was finished in eighteen twenty-seven.\n\nThat same year the council made it law. A funeral at the cathedral would now cost a fifty dollar fine.\n\nSo for years, this was where the city's Catholic dead stopped on their way to the tomb.\n\nLater the chapel became a parish church. It was called the Italian church for a while, then served the city's Spanish speakers, which is how it came by the name it carries now. Our Lady of Guadalupe.\n\nThe building was enlarged, but its front was left as it was. It was made to be the last door a great many people came through.\n",
+    "teaser": "A fifty dollar fine for a funeral.",
+    "detail": "Sources differ on how long it served only the dead. The HABS report says the funeral\nordinance was struck down by the Louisiana Supreme Court in 1844, when the chapel became\nthe parish church of St. Anthony of Padua; the 1913 Picayune guide says it was in\nconstant use as a mortuary chapel until 1870. It was renamed Our Lady of Guadalupe in\n1918 and enlarged in 1952.\n",
+    "pronunciations": [
+      {
+        "written": "Guadalupe",
+        "say": "gwah-duh-LOO-pay"
+      },
+      {
+        "written": "Conti",
+        "say": "KON-tie"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "rampart-street",
+      "church",
+      "epidemics"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-no-funerals-at-the-cathedral",
+        "durationS": 85
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-arrest-that-was-planned",
+    "title": "The Arrest That Was Planned",
+    "summary": "Homer Plessy's 1892 arrest on an East Louisiana train was arranged in advance, to test Louisiana's separate car law.",
+    "point": {
+      "at": {
+        "lat": 29.96397,
+        "lng": -90.04856
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Press and Royal streets, Faubourg Marigny, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 97,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Homer Plessy",
+        "publisher": "National Park Service, Jean Lafitte National Historical Park and Preserve",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/homer-plessy.htm"
+      },
+      {
+        "title": "U.S. Reports: Plessy v. Ferguson, 163 U.S. 537 (1896)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/usrep163537/"
+      },
+      {
+        "title": "Plessy in the Making",
+        "publisher": "National Park Service, Brown v. Board of Education National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/brvb/learn/historyculture/plessy.htm"
+      },
+      {
+        "title": "Plessy and Ferguson (program announcement, 2010)",
+        "publisher": "National Park Service, Brown v. Board of Education National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/brvb/learn/news/plessyferguson.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along the railroad tracks.\n\nOn the seventh of June, eighteen ninety-two, a shoemaker named Homer Plessy bought a first-class ticket on the East Louisiana Railroad, for Covington, across the lake. He took a seat in the car for white passengers.\n\nUnder a Louisiana law two years old, that seat was not his. The law said railroads must keep separate cars by race, and under that law Plessy was Black. His own petition later told the court that no one could see it in him.\n\nThe conductor told him to move. He refused. He was arrested and taken to the parish jail.\n\nNone of it was an accident. A committee of citizens had organized to test the law in court, and Plessy volunteered. The railroad was in on the plan. The detective who arrested him had been hired ahead of time. The arrest is remembered here, by these tracks.\n\nThe case went all the way to the Supreme Court. In eighteen ninety-six it lost, seven votes to one. The ruling made separate but equal the law of the land, and it stood for almost sixty years.\n\nThe one dissenting justice wrote that the Constitution is color-blind.\n\nMore than a century later, a descendant of the judge who first ruled against Plessy and a member of the Plessy family came to this story together. They were photographed standing on the tracks where he was arrested.\n\nA Plessy and a Ferguson, side by side.\n",
+    "teaser": "Everyone knew it was going to happen.",
+    "detail": "The Comité des Citoyens formed in 1891. Plessy's trial judge was John Howard Ferguson of\nthe Orleans Parish Criminal Court. The Supreme Court heard the case on 13 April 1896 and\ndecided it on 18 May; Brown v. Board of Education overturned it in 1954. One National\nPark Service page gives the date of the arrest as 8 June; the Supreme Court record and the\nJean Lafitte park page give 7 June.\n",
+    "pronunciations": [
+      {
+        "written": "Plessy",
+        "say": "PLESS-ee"
+      },
+      {
+        "written": "Marigny",
+        "say": "MAIR-uh-nee"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "marigny",
+      "plessy",
+      "civil-rights",
+      "railroad"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-arrest-that-was-planned",
+        "durationS": 97
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-blacksmith-shop-with-no-blacksmiths",
+    "title": "The Blacksmith Shop With No Blacksmiths",
+    "summary": "Lafitte's Blacksmith Shop is an unproved legend. The documented Lafitte link is across the street, in Marie Louise Villard's house.",
+    "point": {
+      "at": {
+        "lat": 29.96097,
+        "lng": -90.06353
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Lafitte's Blacksmith Shop, Bourbon and St. Philip streets, New Orleans, Louisiana"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Jean Lafitte, A Pirate's Life",
+        "publisher": "National Park Service, Jean Lafitte National Historical Park and Preserve",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/jela/learn/historyculture/jean-lafitte-a-pirate-s-life.htm"
+      },
+      {
+        "title": "941 Bourbon Street (Cottage), New Orleans, Orleans Parish, LA (HABS LA-24)",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/la0018/"
+      },
+      {
+        "title": "The Creoles of Louisiana (1884), by George W. Cable, chapter The Pirates of Barataria",
+        "publisher": "Charles Scribner's Sons, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008769/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the small, low cottage on the corner of Bourbon and Saint Philip. Its walls are brick packed between wooden posts, the way houses here were built long ago, and in places the plaster over them has worn thin.\n\nIt is called Lafitte's Blacksmith Shop. The story goes that the smuggler Jean Lafitte and his brother Pierre ran a forge on this corner, as cover for their real business.\n\nIt is an old story. George Washington Cable printed it as fact in eighteen eighty-four. By the nineteen-thirties there was a bronze plate on the building that read Lafitte's Rendezvous, site blacksmith shop, eighteen ten.\n\nBut when federal surveyors studied the cottage in the nineteen-thirties, they found no record of who built it, or when. And the National Park Service, which tells the Lafittes' story today, says plainly that no evidence confirms the legend.\n\nWhat the records do show is across the street.\n\nOn the opposite corner stood a house bought in eighteen sixteen by Marie Louise Villard, a free woman of color and Pierre Lafitte's partner of many years. They had seven children together. The house was in her name, so the government could not seize it for the brothers' crimes. Pierre was in this neighborhood often. That, the Park Service suggests, may be how the legend found this corner.\n\nSo the Lafittes probably never shod a horse here.\n\nBut one of them had a family just over the road.\n",
+    "teaser": "Look at the little cottage on the corner of Bourbon and Saint Philip.",
+    "certaintyNote": "The blacksmith shop is a tradition in print since at least 1884; the National Park Service says no evidence confirms it. Marie Louise Villard's house across the street is documented. The script says which is which.",
+    "pronunciations": [
+      {
+        "written": "Lafitte",
+        "say": "lah-FEET"
+      },
+      {
+        "written": "Villard",
+        "say": "vee-YAR"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "lafitte",
+      "legend",
+      "bourbon-street"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-blacksmith-shop-with-no-blacksmiths",
+        "durationS": 96
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-candle-on-good-friday",
+    "title": "The Candle on Good Friday",
+    "summary": "In 1788 a chapel candle burned most of New Orleans. The old city you walk through was largely rebuilt afterwards, under Spain.",
+    "point": {
+      "at": {
+        "lat": 29.95747,
+        "lng": -90.06403
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Cabildo, St. Peter Street side, Jackson Square, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "New Orleans, the place and the people (1895)",
+        "publisher": "Grace King, Macmillan, 1895; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008773/"
+      },
+      {
+        "title": "A history of Louisiana (1905)",
+        "publisher": "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/34036146/"
+      },
+      {
+        "title": "The Cabildo, 711 Chartres Street, New Orleans (HABS LA-18-4), written historical and descriptive data",
+        "publisher": "Historic American Buildings Survey, National Park Service; Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/la0007/"
+      },
+      {
+        "title": "Vieux Carré: A Creole Neighborhood in New Orleans (Teaching with Historic Places)",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are standing beside the side wall of the Cabildo. Look at the row of arched windows along the ground floor.\n\nKeep them in mind.\n\nOn Good Friday in seventeen eighty-eight, candles were burning in the private chapel of the colony's military treasurer, a couple of blocks up Chartres Street from here. The story is that one fell against the lace on the altar.\n\nThe fire went from house to house.\n\nA correspondent for a European newspaper reported something else. He said the priests would not allow the alarm to be rung, because on Good Friday every bell must be silent.\n\nBy the end, eight hundred and fifty-six houses were gone. The church. The town hall. The guardhouse that stood right here.\n\nA few years later, another fire took much of what had been rebuilt.\n\nSo here is the thing about the French Quarter. Much of the old city you walk through was built after those fires, while Spain ruled it. A New Orleans writer in the eighteen nineties put it plainly. An ill-built French town went into the ashes. A stately Spanish city came out.\n\nNow look again at the wall beside you. When the Cabildo went up on this spot, part of the burned guardhouse wall was still standing. The builders kept it, and laid out these windows to its old rhythm.\n\nThe town hall is Spanish. Part of the wall it stands on is older than the fire.\n",
+    "teaser": "Look at the arched windows along this wall. Part of it is older than the fire.",
+    "pronunciations": [
+      {
+        "written": "Cabildo",
+        "say": "kah-BEEL-doh"
+      },
+      {
+        "written": "Chartres",
+        "say": "CHAR-ters"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "jackson-square",
+      "french-quarter",
+      "fires",
+      "spanish-colonial"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-candle-on-good-friday",
+        "durationS": 96
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-casket-girls",
+    "title": "The Casket Girls",
+    "summary": "France sent young women to marry colonists, each with a small chest. The old accounts agree on little else, and the story keeps growing.",
+    "point": {
+      "at": {
+        "lat": 29.9604,
+        "lng": -90.06058
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old Ursuline Convent, Ursulines Avenue side, New Orleans, Louisiana"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 107,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "The Creoles of Louisiana (1884), by George W. Cable",
+        "publisher": "Charles Scribner's Sons, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008769/"
+      },
+      {
+        "title": "New Orleans, the Place and the People (1895), by Grace King",
+        "publisher": "Macmillan and Co., via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008773/"
+      },
+      {
+        "title": "The Picayune's Guide to New Orleans (1904)",
+        "publisher": "The Picayune, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the convent roof, and the small windows set into it.\n\nThe nuns who lived here belong to one of the oldest stories in New Orleans. In the early years of the colony, France sent young women across the ocean to marry its colonists. Each one came with a small chest of clothes. The French called them the filles à la cassette. In English, the casket girls.\n\nThat much the old writers agree on. Almost nothing else.\n\nGeorge Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king. He says those sixty were the first of many shiploads. Grace King, eleven years later, has sixty girls too. She says they were the last.\n\nA city guide from nineteen-oh-four tells it differently again. Twenty girls, years earlier, each chosen by the Bishop of Quebec, each given a little chest as proof of her good character.\n\nCable admitted the record was slender. The Creoles, he wrote, were never careful about checking their traditions.\n\nSo the story kept growing. In recent years some tellers have added something none of the old writers ever mentioned. That the little chests carried vampires into the city, and that they are still up there, under this roof.\n\nThere is no record of that. None. It is a legend built on top of a legend.\n\nThe women were real. Their chests were real. And as far as anyone ever wrote down at the time, what was in them was clothes.\n",
+    "teaser": "Look up at the convent roof, and the small windows set into it.",
+    "certaintyNote": "The women and their chests are a colonial tradition the old accounts disagree about, and Cable himself called the record slender. The modern vampire tale has no source at all. The script says both out loud.",
+    "pronunciations": [
+      {
+        "written": "filles à la cassette",
+        "say": "fee ah lah kah-SET"
+      },
+      {
+        "written": "Quebec",
+        "say": "kay-BECK"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "ursulines",
+      "legend",
+      "women"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-casket-girls",
+        "durationS": 107
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-champion-who-stopped",
+    "title": "The Champion Who Stopped",
+    "summary": "Paul Morphy beat the best chess players in the world, came home to this house, and stopped playing. He never quite stopped watching.",
+    "point": {
+      "at": {
+        "lat": 29.95604,
+        "lng": -90.06647
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "417 Royal Street, New Orleans, Louisiana"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 103,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Obituary, Paul Morphy, New-York Tribune, 11 July 1884, page 2",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83030214/1884-07-11/ed-1/?sp=2"
+      },
+      {
+        "title": "Death of Paul Morphy, The Sun (New York), 11 July 1884, page 3",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83030272/1884-07-11/ed-1/?sp=3"
+      },
+      {
+        "title": "The Romance of New Orleans (1919)",
+        "publisher": "R. H. True and Co., via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/20006638/"
+      },
+      {
+        "title": "The Picayune's Guide to New Orleans (1904), 417 Royal Street",
+        "publisher": "The Picayune, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the iron railing on the balcony of the building across Royal Street. A writer in nineteen nineteen pointed out a monogram twined into that ironwork. It belonged to the Louisiana Bank, which put up this building in eighteen sixteen.\n\nBut the man people came here to think about was not a banker.\n\nPaul Morphy was born in New Orleans in eighteen thirty-seven, the son of a judge. When he was about ten, his father explained to him how the chess pieces move. Within two years the boy was beating the best players in the city. Before he turned thirteen, a famous Hungarian master passing through New Orleans played him three games. The boy won two, and drew the other.\n\nHe went on to Paris and London, and came home the greatest chess player in the world. The city gave him a set of chessmen in gold and silver.\n\nAnd then he stopped.\n\nIn his later years, a newspaper reported, he never played. Now and then friends would coax him to sit down at a board, and in the middle of the game he would suddenly sweep the pieces away, stand up and leave. When the master Steinitz came to New Orleans, people tried several times to bring the two of them together. Morphy would not do it.\n\nHe died in this house in July eighteen eighty-four. He was forty-seven.\n\nThe same report added one more thing. While Steinitz was playing in New Orleans, Morphy followed his games closely in the newspapers.\n\nAnd he criticised the moves.\n",
+    "teaser": "Look at the iron railing on the balcony across Royal Street.",
+    "pronunciations": [
+      {
+        "written": "Morphy",
+        "say": "MOR-fee"
+      },
+      {
+        "written": "Steinitz",
+        "say": "SHTY-nits"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "chess",
+      "royal-street"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-champion-who-stopped",
+        "durationS": 103
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-crosses-on-the-tomb",
+    "title": "The Crosses on the Tomb",
+    "summary": "Marie Laveau's 1881 obituary called her a nurse and never mentioned voodoo. The legend came later, and stayed.",
+    "point": {
+      "at": {
+        "lat": 29.9592,
+        "lng": -90.07125
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. Louis Cemetery No. 1, Basin Street gate, New Orleans, Louisiana"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 10,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Death of Marie Laveau, reprinted from New Orleans, Omaha daily bee, 22 June 1881, p. 6",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn99021999/1881-06-22/ed-1/?sp=6"
+      },
+      {
+        "title": "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Marie Laveau, the Voudoo Queen",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      },
+      {
+        "title": "Black Magic and Voodoo Still Rife in Louisiana (United Press), The daily independent, Elizabeth City, N.C., 11 February 1937, p. 8",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn91068099/1937-02-11/ed-1/?sp=8"
+      },
+      {
+        "title": "A Voudoo Queen's Grave (from the New York Sun), The morning news, Savannah, 26 June 1898, p. 20",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn86063034/1898-06-26/ed-1/?sp=20"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look through the gate. Somewhere in there is the tomb of Marie Laveau.\n\nStart with what the record says. When she died, in June of eighteen eighty-one, a New Orleans obituary was reprinted as far away as Omaha. It said she was buried at five in the evening in her family tomb in this cemetery, followed by a large crowd, the most prominent and the most humble.\n\nIt called her a nurse. In yellow fever and cholera epidemics, it said, she was always called on, and always went. She sat with condemned prisoners in their last hours.\n\nThe closest it came to anything else was one line. The ignorant, it said, credited her cures to unnatural means.\n\nIt never used the word voodoo.\n\nWithin a couple of decades, the guidebooks had a different woman. A voodoo queen, keeping a sacred serpent in a carved box in her bedroom. They give no source for any of it.\n\nThe legend outgrew the nurse. In nineteen thirty-seven, a wire story reported that the bricks of her crumbling tomb were scratched with crosses, left by people who traced one, said a prayer, and slipped away. People still come hoping for luck. That is a custom built on a legend, not a fact.\n\nThe gate is as close as this story needs to bring you. Please do not add a mark of your own.\n\nThe nurse is in the record. The queen is in the scratches.\n",
+    "teaser": "Her obituary never used the word.",
+    "detail": "An 1898 New York Sun piece, reprinted in Savannah, follows two visitors led to the tomb\nby a local woman who tells them that anything you get in a cemetery will bring you luck.\n",
+    "certaintyNote": "Marie Laveau's death, burial in this cemetery and nursing work are from her 1881 obituary. The voodoo-queen story, the serpent in the box and the idea that marking her tomb brings luck or a wish are folklore; the script says so out loud. No supernatural claim is made.",
+    "pronunciations": [
+      {
+        "written": "Marie Laveau",
+        "say": "muh-REE lah-VOH"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "treme",
+      "marie-laveau",
+      "cemetery",
+      "folklore"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-crosses-on-the-tomb",
+        "durationS": 96
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-duke-on-the-street-sign",
+    "title": "The Duke on the Street Sign",
+    "summary": "Bourbon Street was named for a French duke, not a drink. The streets around it are a family tree of the French court.",
+    "point": {
+      "at": {
+        "lat": 29.96018,
+        "lng": -90.06421
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bourbon and Dumaine streets, French Quarter, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Creoles of Louisiana (1884), by George W. Cable",
+        "publisher": "Charles Scribner's Sons, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008769/"
+      },
+      {
+        "title": "Vieux Carré, A Creole Neighborhood in New Orleans (Teaching with Historic Places), Map 3 street key",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm"
+      },
+      {
+        "title": "The Picayune's Guide to New Orleans (1904)",
+        "publisher": "The Picayune, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the two street signs on this corner. Bourbon. And Dumaine.\n\nOn this street of all streets, people tend to assume the name has something to do with what is in their glass.\n\nIt doesn't.\n\nWhen French engineers laid out this town in the seventeen-twenties, they drew a grid of streets and gave them names from the very top of French society. George Washington Cable, writing in eighteen eighty-four, listed who was being honoured. The dukes of Orleans, Chartres, Maine and Bourbon. The princes of Conti and Condé. The Count of Toulouse.\n\nSo the grid around you is a kind of family tree of the French court. Orleans Street. Chartres Street. Conti. Toulouse. And Bourbon, for the Duke of Bourbon.\n\nNow look at the other sign again. Dumaine. Say it slowly. Du Maine. On the old French plans of the city, it is written Rue du Maine. The street of the Duke of Maine.\n\nA city guide from nineteen-oh-four put it simply. All through the old French Quarter, it said, the street names suggest the city's royal descent.\n\nThe duke is still up there on the sign.\n\nEverything else on Bourbon Street came later.\n",
+    "teaser": "Look at the two street signs on this corner.",
+    "pronunciations": [
+      {
+        "written": "Dumaine",
+        "say": "doo-MAYN"
+      },
+      {
+        "written": "Condé",
+        "say": "kon-DAY"
+      },
+      {
+        "written": "Conti",
+        "say": "KON-tie"
+      },
+      {
+        "written": "Toulouse",
+        "say": "too-LOOSE"
+      },
+      {
+        "written": "Chartres",
+        "say": "CHAR-ters"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "bourbon-street",
+      "street-names"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-duke-on-the-street-sign",
+        "durationS": 78
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-emperor-never-came",
+    "title": "The Emperor Never Came",
+    "summary": "The Napoleon House was said to be meant for Napoleon after a rescue from St. Helena. The plot is a legend, and so is which house.",
+    "point": {
+      "at": {
+        "lat": 29.95588,
+        "lng": -90.0653
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Napoleon House, Chartres and St. Louis streets, New Orleans, Louisiana"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 98,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Girod House, 500-506 Chartres Street, New Orleans, Orleans Parish, LA (HABS LA-9)",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/la0011/"
+      },
+      {
+        "title": "New Orleans As It Was, Episodes of Louisiana Life (1895), by Henry C. Castellanos",
+        "publisher": "L. Graham and Son, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008770/"
+      },
+      {
+        "title": "The Picayune's Guide to New Orleans (1904), The Napoleon House",
+        "publisher": "The Picayune, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      },
+      {
+        "title": "The Romance of New Orleans (1919)",
+        "publisher": "R. H. True and Co., via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/20006638/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across at the three-storey house on the corner of Chartres and Saint Louis, with iron balconies on both street fronts and an old tile roof.\n\nIt is called the Napoleon House. The story is that it was meant for Napoleon himself.\n\nIn his last years, Napoleon was held prisoner on the island of Saint Helena. In New Orleans there were Frenchmen who still adored him. One of them was Nicholas Girod, a former mayor of the city, who lived in this house.\n\nThe story goes that Girod and his friends paid for a fast ship called the Seraphine, signed on a crew of Baratarian privateers, and planned to sail to the island, take the emperor off by night, and bring him here.\n\nThen word came that Napoleon had died, in May eighteen twenty-one. The ship never sailed.\n\nIs it true? A New Orleans writer in eighteen ninety-five said there could be no doubt the expedition was real. A federal survey in nineteen fifty-five called it a popular legend.\n\nIt is not even clear which house it is. A city guide of nineteen-oh-four gave the name Napoleon House to a different mansion altogether, near Canal Street, and expected it to be torn down that year. And the survey of nineteen fifty-five found two houses on this short stretch of Chartres Street, both going by the name.\n\nThe emperor never came to New Orleans.\n\nBut the city had more than one house ready for him.\n",
+    "teaser": "Look across at the old house on the corner, with the iron balconies.",
+    "certaintyNote": "The rescue plot is told as certain by some nineteenth-century writers and called a popular legend by the 1955 federal survey; even the house it attaches to has moved. The script says so.",
+    "pronunciations": [
+      {
+        "written": "Girod",
+        "say": "zhee-ROH"
+      },
+      {
+        "written": "Seraphine",
+        "say": "say-rah-FEEN"
+      },
+      {
+        "written": "Chartres",
+        "say": "CHAR-ters"
+      },
+      {
+        "written": "Baratarian",
+        "say": "bar-uh-TARE-ee-un"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "napoleon",
+      "legend",
+      "chartres-street"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-emperor-never-came",
+        "durationS": 98
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-file-sellers",
+    "title": "The Filé Sellers",
+    "summary": "The French Market began as goods laid out on the open levee. Into the 1900s, Choctaw women came here to sell filé for gumbo.",
+    "point": {
+      "at": {
+        "lat": 29.95765,
+        "lng": -90.06172
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "French Market, Decatur Street, New Orleans, Louisiana"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 84,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Picayune's guide to New Orleans (1904)",
+        "publisher": "The Picayune, New Orleans, 1904; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      },
+      {
+        "title": "New Orleans, the place and the people (1895)",
+        "publisher": "Grace King, Macmillan, 1895; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008773/"
+      },
+      {
+        "title": "Creole Food Ways",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/creole-food-ways.htm"
+      },
+      {
+        "title": "Norman's New Orleans and environs (1845)",
+        "publisher": "B. M. Norman, New Orleans, 1845; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008776/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Walk in under the long roof of the market and look along the line of columns.\n\nBefore there was any roof here, there was the open levee, just downriver of the old parade ground. People laid out what they had to sell on the ground. Vegetables, fruit, game, skins, herbs, baskets. Hunters and trappers. Black vendors. Native traders. In the Spanish years a butcher's shed went up, and the market grew along the river from there.\n\nOne thing kept arriving, long after the sheds went up.\n\nAt the start of the twentieth century, Choctaw women still came here twice a week from their settlement at Bayou Lacombe, across Lake Pontchartrain. They crossed the lake by steamer, walked from the lakeshore to this market, and sat with bundles of herbs, baskets, and one thing above all.\n\nDried sassafras leaves, pounded into a powder. Filé.\n\nIt was a Native food first. Creole cooks took it up to thicken their gumbo, and kept it. A guidebook from nineteen oh four says the Choctaw sellers here always found a ready sale.\n\nSo if your gumbo in this city comes with filé, that powder is a Native food, and for a long time, Choctaw women sold it right here.\n",
+    "teaser": "Before there was a roof here, there was the open levee and whatever people had to sell.",
+    "pronunciations": [
+      {
+        "written": "Filé",
+        "say": "FEE-lay"
+      },
+      {
+        "written": "Bayou Lacombe",
+        "say": "BY-oo la-KOHM"
+      },
+      {
+        "written": "Pontchartrain",
+        "say": "PONCH-er-train"
+      },
+      {
+        "written": "Choctaw",
+        "say": "CHOK-taw"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "french-market",
+      "choctaw",
+      "gumbo"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-file-sellers",
+        "durationS": 84
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-fire-in-the-kitchen",
+    "title": "The Fire in the Kitchen",
+    "summary": "In April 1834 an enslaved woman set fire to the house on this corner. It was the only way she could see to end what was being done there.",
+    "point": {
+      "at": {
+        "lat": 29.96199,
+        "lng": -90.06138
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "1140 Royal Street, corner of Governor Nicholls Street, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "New Orleans As It Was, Episodes of Louisiana Life (1895), by Henry C. Castellanos, chapter A Tale of Slavery Times",
+        "publisher": "L. Graham and Son, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008770/"
+      },
+      {
+        "title": "Retrospect of Western Travel, volume one (1838), by Harriet Martineau",
+        "publisher": "Saunders and Otley, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01027893/"
+      },
+      {
+        "title": "The Picayune's Guide to New Orleans (1904), 1140 Royal Street",
+        "publisher": "The Picayune, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across at the big house on the corner of Royal Street.\n\nOn the morning of the tenth of April, eighteen thirty-four, flames broke out of it. The fire had started in the kitchen.\n\nIt was started on purpose. A woman held captive in this house told the mayor afterwards that she had set it herself. It was, she said, the only way left to end what she and the others were suffering. The English writer Harriet Martineau, who heard the story in this city a few years later, says it was the cook, kept chained within a few yards of the kitchen fire.\n\nNeighbours and firemen ran in. They forced open doors that had always been kept locked, and behind them they found seven people in chains, starved, covered in wounds. The editor of the city newspaper, the Bee, was there. He wrote that he saw where the collars and manacles had cut into their flesh.\n\nThey were carried through the streets to the mayor's office, and their irons were struck off. At least two thousand people came to see them that day.\n\nThe woman who held them, Madame Lalaurie, never answered for it. She left in her carriage, reached the lake, and escaped by boat to Mobile and then to France. A crowd tore her house apart.\n\nNeither of the old accounts gives the name of the woman who lit that fire.\n\nWhat was being done in this house came out because she set it on fire.\n",
+    "teaser": "Look across at the house on the corner.",
+    "pronunciations": [
+      {
+        "written": "Lalaurie",
+        "say": "lah-LOH-ree"
+      },
+      {
+        "written": "Martineau",
+        "say": "MAR-tin-oh"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "slavery",
+      "royal-street"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-fire-in-the-kitchen",
+        "durationS": 100
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-flag-on-the-mint",
+    "title": "The Flag on the Mint",
+    "summary": "In April 1862 sailors raised a US flag on the Mint. William Mumford tore it down, and in June he was hanged in front of the building.",
+    "point": {
+      "at": {
+        "lat": 29.9617,
+        "lng": -90.0576
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Old U.S. Mint, Esplanade Avenue, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 12,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "General Butler in New Orleans (1864)",
+        "publisher": "James Parton, Mason Brothers, 1864; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/32008202/"
+      },
+      {
+        "title": "A history of Louisiana (1905)",
+        "publisher": "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/34036146/"
+      },
+      {
+        "title": "The Picayune's guide to New Orleans (1904)",
+        "publisher": "The Picayune, New Orleans, 1904; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the roof of the Mint, above the columns.\n\nSunday the twenty-seventh of April, eighteen sixty-two. A Union fleet had fought its way up the river, and the city had nothing left to resist it with. The mayor refused to raise the United States flag himself. So the navy sent a party ashore to raise one here.\n\nThey put it up at about eight in the morning, and went back to their ship. They left no guard. Instead, guns up in the rigging of the warship lying off the Mint were aimed at the flagstaff, with orders to fire on anyone who touched it.\n\nAt eleven, the crews gathered on deck for prayers.\n\nAbout twenty minutes in, the guns went off. Men were on the roof. They tore the flag down and got away with it.\n\nAccounts disagree about who reached it first. They agree on who ended up with it. William Mumford.\n\nWhen General Benjamin Butler took command of the city a few days later, Mumford was arrested and tried for treason by a military commission. His wife and three children knelt in front of Butler to beg for his life.\n\nOn the seventh of June, he was hanged on a scaffold built in front of the Mint, near where you are standing.\n\nButler's side called it justice. Mumford's side called it murder, and him a martyr.\n\nThe flag he pulled down had been flying for a little over three hours.\n",
+    "teaser": "Look up at the roof of the Mint. A flag flew there for about three hours.",
+    "pronunciations": [
+      {
+        "written": "Esplanade",
+        "say": "ess-pluh-NAYD"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "civil-war",
+      "esplanade"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-flag-on-the-mint",
+        "durationS": 100
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-harbor-behind-the-cemetery",
+    "title": "The Harbor Behind the Cemetery",
+    "summary": "Basin Street is named for a square of water where oyster luggers and charcoal schooners once tied up.",
+    "point": {
+      "at": {
+        "lat": 29.96045,
+        "lng": -90.0702
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Basin Street at Toulouse Street, site of the Old Basin, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 76,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Rampart Street and its vicinity: the Old Basin",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      },
+      {
+        "title": "The Picayune's guide to New Orleans (1900), the Old Basin",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/00001333/"
+      },
+      {
+        "title": "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), North Rampart from Canal to Esplanade",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/13004346/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the street sign. Basin Street.\n\nThere is no basin here now. A little over a century ago, there was.\n\nTurn the corner at St. Louis Street, a guidebook of nineteen hundred told its readers, and the Old Basin bursts upon the view. A square of water at the end of a canal, with oyster luggers and charcoal schooners tied up along its banks, unloading.\n\nThe canal ran from here out to Bayou St. John, and through the bayou boats could reach Lake Pontchartrain. A schooner could come in off the lake and finish its trip close under the old city ramparts.\n\nIt was a Spanish governor's project. The Baron de Carondelet had it dug in the seventeen-nineties, to drain the swamps behind the city and to bring trade to its back door. The digging was done by gangs of enslaved men, lent free of charge by the city's wealthy.\n\nBy nineteen hundred and four, the guidebooks noted that a railway company had bought the land along the canal, for car yards and warehouses.\n\nThe water is gone, and so are the schooners. The street kept the name.\n",
+    "teaser": "There is no basin on Basin Street.",
+    "detail": "The 1900 and 1904 Picayune guides place the Old Basin between St. Claude and North\nFranklin streets, Carondelet Walk and Toulouse, with the luggers' landing on the banks\nfrom St. Louis Street to Toulouse. The 1913 guide dates the canal and basin to 1794-1796\n(it names the governor as Claiborne, an error; the earlier guides credit Carondelet).\n",
+    "pronunciations": [
+      {
+        "written": "Carondelet",
+        "say": "kuh-RON-duh-let"
+      },
+      {
+        "written": "Pontchartrain",
+        "say": "PON-chuh-train"
+      },
+      {
+        "written": "Bayou St. John",
+        "say": "BY-oo Saint John"
+      },
+      {
+        "written": "luggers",
+        "say": "LUG-erz"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "treme",
+      "basin-street",
+      "canal",
+      "waterways"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-harbor-behind-the-cemetery",
+        "durationS": 76
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-inquisitor-who-came-back",
+    "title": "The Inquisitor Who Came Back",
+    "summary": "A Capuchin sent to set up the Inquisition was shipped out by the governor. He returned as Père Antoine, the city's beloved priest.",
+    "point": {
+      "at": {
+        "lat": 29.95834,
+        "lng": -90.06426
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. Anthony's Garden, behind St. Louis Cathedral, Royal Street, New Orleans, Louisiana"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 102,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "New Orleans, the place and the people (1895)",
+        "publisher": "Grace King, Macmillan, 1895; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008773/"
+      },
+      {
+        "title": "A history of Louisiana (1905)",
+        "publisher": "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/34036146/"
+      },
+      {
+        "title": "Norman's New Orleans and environs (1845)",
+        "publisher": "B. M. Norman, New Orleans, 1845; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008776/"
+      },
+      {
+        "title": "Presbytere, Jackson Square, New Orleans (HABS LA-18-5), written historical and descriptive data",
+        "publisher": "Historic American Buildings Survey, National Park Service; Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/la0008/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look through the railings into the garden behind the cathedral.\n\nAround seventeen eighty-nine, a Spanish Capuchin friar named Antonio de Sedella called on the governor of this colony, Esteban Miró. He showed him a commission. He had been sent to set up the Holy Office of the Inquisition in New Orleans.\n\nHis preparations were complete, he said. Some night soon, he would send for soldiers to help him make the arrests.\n\nThe governor was polite. Then he made preparations of his own.\n\nThe next night there was a heavy knocking at the friar's door. He opened it to an officer and a file of grenadiers. He thanked them for coming so promptly, and told them he did not need them yet.\n\nHe was told he was under arrest. The next day he was on a ship for Cádiz.\n\nMiró wrote to Madrid that the very word Inquisition, spoken in New Orleans, could drive people out of the colony.\n\nAnd then the friar came back.\n\nHe came back as Père Antoine, the parish priest of this cathedral, for nearly fifty years. A guidebook from eighteen forty-five says he was supposed to have married or buried nearly half the people of the place. When a church official tried to suspend him, his congregation left the cathedral and ran to his door.\n\nHe lived in a little cabin in the alley back here. He is buried at the foot of the altar.\n\nNew Orleans threw out the inquisitor. Then it kept the priest for half a century.\n",
+    "teaser": "He came to set up the Inquisition. The governor had other plans.",
+    "pronunciations": [
+      {
+        "written": "Antonio de Sedella",
+        "say": "an-TOH-nee-oh day seh-DEL-ah"
+      },
+      {
+        "written": "Esteban Miró",
+        "say": "ess-TAY-bahn mee-ROH"
+      },
+      {
+        "written": "Cádiz",
+        "say": "KAH-deeth"
+      },
+      {
+        "written": "Père Antoine",
+        "say": "pair ahn-TWAHN"
+      },
+      {
+        "written": "Capuchin",
+        "say": "KAP-yoo-chin"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "churches",
+      "spanish-colonial"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-inquisitor-who-came-back",
+        "durationS": 102
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-legislature-in-the-convent",
+    "title": "The Legislature in the Convent",
+    "summary": "The Ursuline nuns lived behind this wall until 1824. For a short time afterwards, the Louisiana legislature met inside.",
+    "point": {
+      "at": {
+        "lat": 29.96086,
+        "lng": -90.06075
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old Ursuline Convent, Chartres Street, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 84,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Picayune's Guide to New Orleans (1904), The Oldest Building in Louisiana",
+        "publisher": "The Picayune, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      },
+      {
+        "title": "Archbishopric, 1114 Chartres Street, New Orleans, Orleans Parish, LA (HABS LA-18-2)",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/la0106/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look through the gate in the wall along Chartres Street.\n\nThe building behind it is two storeys of plastered brick. Its middle section steps forward under a triangular pediment, and a steep slate roof sits over the whole thing.\n\nIt was built for the Ursuline nuns. They lived behind this wall until eighteen twenty-four, when they moved to a new convent further downriver. A city guide of nineteen-oh-four called this the oldest building in Louisiana.\n\nThen the empty convent found a tenant nobody would have predicted.\n\nIn eighteen thirty-one, the State of Louisiana leased the building from the nuns. The state legislature held its sessions inside these walls. For a while, the laws of Louisiana were argued over in a house built for nuns.\n\nIt did not last. The lease ran out, and the nuns gave the building to the archbishop of New Orleans. For most of the rest of the century, it was where the archbishops lived.\n\nThat same guide told its readers to look for one thing inside. The staircase. Each step, it said, was a single massive piece of timber, worn down by the feet of many generations.\n\nMost of those feet belonged to nuns and priests. For one short stretch, some of them belonged to politicians.\n",
+    "teaser": "Look through the gate in the wall along Chartres Street.",
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "ursulines",
+      "convent",
+      "architecture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-legislature-in-the-convent",
+        "durationS": 84
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-man-under-the-altar",
+    "title": "The Man Under the Altar",
+    "summary": "A rich Spaniard rebuilt the burned church at his own expense, asked for masses for his soul, and was buried in front of the altar.",
+    "point": {
+      "at": {
+        "lat": 29.95777,
+        "lng": -90.06345
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. Louis Cathedral, Jackson Square, New Orleans, Louisiana"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Norman's New Orleans and environs (1845)",
+        "publisher": "B. M. Norman, New Orleans, 1845; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008776/"
+      },
+      {
+        "title": "New Orleans, the place and the people (1895)",
+        "publisher": "Grace King, Macmillan, 1895; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008773/"
+      },
+      {
+        "title": "The Picayune's guide to New Orleans (1904)",
+        "publisher": "The Picayune, New Orleans, 1904; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      },
+      {
+        "title": "A history of Louisiana (1905)",
+        "publisher": "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/34036146/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the three spires on the front of the cathedral.\n\nThey are younger than they look. The front you are facing was remodelled around eighteen fifty, when steeples were raised on the old towers and the portico was added.\n\nThe church before that was paid for by one man.\n\nIn seventeen eighty-eight, fire took the old parish church along with most of the town. Don Andrés Almonester y Roxas, a Spaniard who had grown very rich in this colony, offered to build a new one at his own expense.\n\nHe asked for something in return. Masses for his soul, said for ever.\n\nA guidebook from eighteen forty-five says the bargain was being kept. Every Saturday evening, it says, at sunset, the bell tolled for the founder.\n\nHe died in seventeen ninety-eight and was buried in front of the altar. A writer in the eighteen nineties described his name, his coat of arms and his motto, cut into the stone over him.\n\nThe building has been remade around him since. The steeples are new. The portico is new.\n\nHe is still inside, under the floor, at the front.\n\nAnd by his own arrangement, someone is meant to be praying for him.\n",
+    "teaser": "Look up at the three spires. They are younger than they look.",
+    "pronunciations": [
+      {
+        "written": "Andrés Almonester y Roxas",
+        "say": "ahn-DRESS al-mo-NESS-ter ee ROH-hahs"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "jackson-square",
+      "french-quarter",
+      "churches",
+      "spanish-colonial"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-man-under-the-altar",
+        "durationS": 82
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-neutral-ground",
+    "title": "The Neutral Ground",
+    "summary": "Why New Orleans calls the middle of a street the neutral ground, starting with the strip down Canal Street.",
+    "point": {
+      "at": {
+        "lat": 29.95313,
+        "lng": -90.06893
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Canal Street neutral ground at Royal and St. Charles, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 89,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), Part III: Canal Street",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/13004346/"
+      },
+      {
+        "title": "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Chapter XI: Canal Street",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      },
+      {
+        "title": "Jazz Origins in New Orleans",
+        "publisher": "National Park Service, New Orleans Jazz National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/jazz/learn/historyculture/history_early.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the strip down the middle of Canal Street, where the streetcar tracks run.\n\nAnywhere else it would be a median. In New Orleans it is the neutral ground.\n\nStart with the street's name. Canal Street really did have a canal, of a sort. A narrow, crooked stream once ran here, and the Spanish used it as a moat in front of the city wall. When Americans began settling upriver, they filled their lots with earth dug from its banks, and it grew into a straight, deep ditch. Iron posts and chains along the edge kept people from falling in. As far as anyone knows, nothing ever sailed on it.\n\nBy eighteen thirty-eight the ditch had been filled in as far as Claiborne Street, and the car tracks were laid on the ground it left behind. The guidebooks called that ground the neutral ground.\n\nThey also called Canal Street the line between two cities. The French and Creole town downriver. The American town upriver. A guidebook of nineteen hundred and four said this street divided New Orleans into two phases of life, two styles of architecture, two forms of civilization.\n\nThe old guidebooks never stop to explain the word neutral. Maybe it did not need explaining.\n\nStand here, in the middle of the line between two cities, and decide for yourself.\n",
+    "teaser": "Neutral between what?",
+    "detail": "By 1900 the guidebooks used \"neutral ground\" for the middle of North Rampart, St. Charles\nAvenue and Elysian Fields as well. The statue of Henry Clay stood on the Canal Street\nneutral ground at this intersection from 1856 until 1900, when it was moved to Lafayette\nSquare.\n",
+    "pronunciations": [
+      {
+        "written": "Claiborne",
+        "say": "CLAY-born"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "canal-street",
+      "language",
+      "streetcar"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-neutral-ground",
+        "durationS": 89
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-noise-on-the-common",
+    "title": "The Noise on the Common",
+    "summary": "In 1819 an architect heard a sound he took for a horse mill, and found five or six hundred people dancing.",
+    "point": {
+      "at": {
+        "lat": 29.96126,
+        "lng": -90.06863
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Congo Square, Louis Armstrong Park, North Rampart Street, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 97,
+    "minAge": 10,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The journal of Latrobe; being the notes and sketches of an architect, naturalist and traveler in the United States from 1796 to 1820 (New York, D. Appleton, 1905), pp. 179-182",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/05039052/"
+      },
+      {
+        "title": "Jazz Origins in New Orleans",
+        "publisher": "National Park Service, New Orleans Jazz National Historical Park",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/jazz/learn/historyculture/history_early.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out across this open square.\n\nOne Sunday afternoon early in eighteen nineteen, an architect named Benjamin Latrobe set out from the old town for a walk along a canal. He went up St. Peter Street, toward the common ground at the back of the city, and he heard something he could not place.\n\nHe thought it was a horse mill. Horses, tramping round and round on a wooden floor.\n\nIt was people. Five or six hundred of them, he reckoned, gathered in an open space at the edge of the common. People would come to call that space Congo Square.\n\nThey stood in circles, and inside each circle was a ring of dancers, the largest not ten feet across.\n\nHe wrote down what he saw. An old man sitting astride a drum, beating it with the edge of his hand, with incredible quickness. A stringed instrument with a gourd for a body and a small carved figure of a seated man at the top of its neck, played by a man who looked eighty or ninety years old. Women answering the music in two notes. A man singing in a language that was not French.\n\nHe was told they met here every Sunday afternoon. He did not like what he heard, and his journal says so in ugly terms.\n\nThen he walked on, about a mile along the canal. He came back after sunset, near the same spot.\n\nThey were still playing.\n",
+    "teaser": "He thought it was horses on a wooden floor.",
+    "detail": "Latrobe's journals were published in 1905 as The Journal of Latrobe; the passage falls\nbetween his entries of 9 January and 8 March 1819. The National Park Service notes that\nenslaved people gathered on Sundays at a market outside the city's rampart by the\nmid-eighteenth century, and that the dancing in Congo Square ended before the Civil War.\n",
+    "pronunciations": [
+      {
+        "written": "Latrobe",
+        "say": "luh-TROBE"
+      },
+      {
+        "written": "Congo Square",
+        "say": "KONG-go Square"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "treme",
+      "congo-square",
+      "music",
+      "slavery"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-noise-on-the-common",
+        "durationS": 97
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-opera-house-that-isnt-here",
+    "title": "The Opera House That Isn't Here",
+    "summary": "The French Opera House stood here sixty years. Its 1866 company drowned on the way over, and in 1919 it burned to the ground.",
+    "point": {
+      "at": {
+        "lat": 29.95791,
+        "lng": -90.06621
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Site of the French Opera House, Bourbon and Toulouse streets, New Orleans, Louisiana"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 80,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Historic Opera House in New Orleans Burns, Evening Star (Washington), 4 December 1919, page 2",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83045462/1919-12-04/ed-1/?sp=2"
+      },
+      {
+        "title": "Famous French Opera House at New Orleans Burned, New-York Tribune, 5 December 1919, page 10",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83030214/1919-12-05/ed-1/?sp=10"
+      },
+      {
+        "title": "The Picayune's Guide to New Orleans (1904), French Opera House",
+        "publisher": "The Picayune, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand at the corner of Bourbon and Toulouse, and look for an opera house.\n\nThere isn't one. For sixty years, there was.\n\nThe French Opera House opened here in December eighteen fifty-nine. A city guide from nineteen-oh-four counted about two thousand eight hundred seats, in four tiers, and every tier had its own French name. The gallery, at the top, was popularly called le paradis. Paradise.\n\nDuring the Civil War the house went dark. In eighteen sixty-six it was ready to open again, and its new director was sailing from France with a whole company of singers, aboard a ship called the Evening Star.\n\nThe ship went down. The entire company was lost.\n\nThe house opened anyway, and kept going for another half century.\n\nThen, early on the fourth of December, nineteen nineteen, a fire started in a restaurant at the front of the building. Within hours the French Opera House had burned to the ground. Its season had opened on Armistice night, barely three weeks before. The management said it was the most successful season the house had ever had.\n\nSo look up, above the corner, into the empty air.\n\nThat is about where Paradise used to be.\n",
+    "teaser": "Stand at the corner of Bourbon and Toulouse, and look for an opera house.",
+    "pronunciations": [
+      {
+        "written": "le paradis",
+        "say": "luh pah-rah-DEE"
+      },
+      {
+        "written": "Toulouse",
+        "say": "too-LOOSE"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "opera",
+      "music",
+      "bourbon-street"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-opera-house-that-isnt-here",
+        "durationS": 80
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-priests-house",
+    "title": "The Priests' House",
+    "summary": "The Presbytère was built as a home for the cathedral's clergy. It stalled for fifteen years, and no priest ever lived in it.",
+    "point": {
+      "at": {
+        "lat": 29.95805,
+        "lng": -90.06317
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Presbytère, Jackson Square, New Orleans, Louisiana"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 86,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Presbytere, Jackson Square, New Orleans (HABS LA-18-5), written historical and descriptive data",
+        "publisher": "Historic American Buildings Survey, National Park Service; Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/la0008/"
+      },
+      {
+        "title": "The Presbytere, New Orleans, Louisiana",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/places/the-presbytere-new-orleans-louisiana.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the building to the right of the cathedral. It is a near twin of the Cabildo on the other side. Arches below, arches above.\n\nIt was built to be the priests' house. The name says so. The Presbytère.\n\nNo priest ever lived in it.\n\nThe rich Spaniard who paid for the cathedral started this building in the seventeen nineties, and got it as far as the first row of arches. Then, in seventeen ninety-eight, he died.\n\nAnd it stopped. For years it was just the ground floor, roofed over with boards and rented out.\n\nThe church wardens finally finished it in eighteen thirteen. By then New Orleans belonged to the United States. They let it to shopkeepers, and then to the courts, because the rent was useful. The parish priest went on living in a small frame house round the back.\n\nIn the nineteen thirties, workmen stripped the stucco off the walls, and found the pause written in the brickwork. At the sills of the upper windows, the bricks and the mortar change completely.\n\nLook at those upper window sills now. The join is covered again, but that line is about fifteen years of nothing.\n\nThe priests' house became a courthouse, and later a museum. It has been a lot of things.\n\nIt was never a home.\n",
+    "teaser": "It was built to be the priests' house. No priest ever lived in it.",
+    "pronunciations": [
+      {
+        "written": "Presbytère",
+        "say": "PREZ-bih-tair"
+      },
+      {
+        "written": "Cabildo",
+        "say": "kah-BEEL-doh"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "jackson-square",
+      "french-quarter",
+      "spanish-colonial",
+      "architecture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-priests-house",
+        "durationS": 86
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-river-above-the-street",
+    "title": "The River Above the Street",
+    "summary": "You walk uphill to reach the river here. At flood the Mississippi rises above the streets behind you, and its bend is the Crescent.",
+    "point": {
+      "at": {
+        "lat": 29.95661,
+        "lng": -90.06178
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Moonwalk riverfront promenade, opposite Jackson Square, New Orleans, Louisiana"
+    },
+    "category": "land",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Picayune's guide to New Orleans (1904)",
+        "publisher": "The Picayune, New Orleans, 1904; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      },
+      {
+        "title": "New Orleans, the place and the people (1895)",
+        "publisher": "Grace King, Macmillan, 1895; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008773/"
+      },
+      {
+        "title": "Vieux Carré: A Creole Neighborhood in New Orleans (Teaching with Historic Places)",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand at the rail and look at the water. Then turn round and look back at the cathedral.\n\nTo get here from the square, you walked uphill. You probably did not notice. A guidebook from nineteen oh four made the same point. The slope starts a long way back, it said, and rises so gently that you cannot feel it.\n\nThat slope is the levee. A great bank of earth between the city and the Mississippi, added to again and again as the years went on.\n\nBecause when the river floods, it rises far above the level of the streets behind you. The cathedral you are looking at sits lower than the water in front of you can reach.\n\nA New Orleans writer in the eighteen nineties described the yellow floods rising high above the land, threatening to tear the levees like cobwebs.\n\nNow look left and right along the bank. The river does not run straight past the old city. It bends around it.\n\nThe same writer said the river had shaped its banks here into the edges of the moon in its first quarter.\n\nThat is the crescent. That is why it is the Crescent City. Not a nickname somebody chose. A description of the water you are standing above.\n",
+    "teaser": "You walked uphill to get here. You probably did not notice.",
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "mississippi-river",
+      "levee",
+      "riverfront"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-river-above-the-street",
+        "durationS": 85
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-the-woman-who-never-lived-here",
+    "title": "The Woman Who Never Lived Here",
+    "summary": "Madame John's Legacy is named for a character in a George Washington Cable story. The woman who really held this ground was Elizabeth Real.",
+    "point": {
+      "at": {
+        "lat": 29.95952,
+        "lng": -90.063
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Madame John's Legacy, 632 Dumaine Street, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 118,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Madame John's Legacy, 632 Dumaine Street, New Orleans, Orleans Parish, LA (HABS LA-39, with addendum)",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/la0023/"
+      },
+      {
+        "title": "Old Creole Days (1890 edition), by George W. Cable, story 'Tite Poulette",
+        "publisher": "Charles Scribner's Sons, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04015080/"
+      },
+      {
+        "title": "The Picayune's Guide to New Orleans (1904)",
+        "publisher": "The Picayune, via the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across at the house set up high on its brick ground floor, with a long wooden gallery across the front, and a roof that sweeps down steeply and then flattens out over the gallery, like the brim of a hat.\n\nIt is called Madame John's Legacy.\n\nMadame John never lived here. She never lived anywhere.\n\nShe is a character in a story by the New Orleans writer George Washington Cable. In it, a gentleman named John, about to die, gives his house to the woman who has looked after him, and to her baby daughter. Cable describes it as a frame house with a deep front gallery, the roof running out over it. She sells it, puts the money in a bank, and the bank fails.\n\nSomewhere along the way, the story attached itself to this house. By nineteen-oh-four a city guide was pointing visitors here as the house that John left behind. The name stuck.\n\nThe real story of this ground, according to the federal survey of the building, belongs to someone else. Her name was Elizabeth Real. Her husband, a ship's captain, held this lot in the seventeen-twenties. He was killed at Natchez in seventeen twenty-nine. She married the innkeeper next door, outlived him too, and kept this property in her own hands for about fifty years.\n\nWhen she made her will in seventeen sixty-nine, she was described as ill in body because of her great age, but sound in spirit.\n\nThe house in front of you came after her. A building contract signed weeks after the great fire of seventeen eighty-eight describes a house that matches it.\n\nSo the name on this house belongs to a woman somebody made up. The ground under it belonged to one who was very real.\n",
+    "teaser": "Look at the roof sweeping down over the long front gallery.",
+    "pronunciations": [
+      {
+        "written": "Elizabeth Real",
+        "say": "Elizabeth ray-AHL"
+      },
+      {
+        "written": "Natchez",
+        "say": "NATCH-iz"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "architecture",
+      "women",
+      "literature"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-woman-who-never-lived-here",
+        "durationS": 118
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-twenty-days-of-france",
+    "title": "Twenty Days of France",
+    "summary": "In 1803 Louisiana passed from Spain to France in the Cabildo, and twenty days later from France to the United States.",
+    "point": {
+      "at": {
+        "lat": 29.95739,
+        "lng": -90.06353
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Cabildo, Jackson Square, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 94,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Cabildo, 711 Chartres Street, New Orleans (HABS LA-18-4), written historical and descriptive data",
+        "publisher": "Historic American Buildings Survey, National Park Service; Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/la0007/"
+      },
+      {
+        "title": "New Orleans, the place and the people (1895)",
+        "publisher": "Grace King, Macmillan, 1895; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01008773/"
+      },
+      {
+        "title": "A history of Louisiana (1905)",
+        "publisher": "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/34036146/"
+      },
+      {
+        "title": "Presbytere, Jackson Square, New Orleans (HABS LA-18-5), written historical and descriptive data",
+        "publisher": "Historic American Buildings Survey, National Park Service; Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/la0008/"
+      },
+      {
+        "title": "Louisiana Purchase Transfer Document",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/louisiana-purchase-transfer-document.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Face the Cabildo, the arcaded building to the left of the cathedral. Look up at the triangle above its centre arches. There is an eagle carved in it.\n\nThat eagle was not there yet on the day that matters.\n\nIn November eighteen oh three, Louisiana was still Spanish. Spain had already agreed to hand it back to France, and the city already knew that France had sold it on to the United States.\n\nOn the thirtieth of November, in the council chamber upstairs, the Spanish governor handed the colony to a French official named Laussat. Out in this square, the Spanish flag came down and the French tricolour went up.\n\nIt stayed up for twenty days.\n\nOn the twentieth of December, the American commissioners rode into the square at the head of their troops. They went up to the same building, and Laussat gave them the keys of the city. Then they all walked out onto the gallery up there to watch the flags change again.\n\nA guard of about fifty old French soldiers had kept watch over their flag for those three weeks. As it came down, they took it in their arms, and marched away with it in silence.\n\nThe eagle was carved into that triangle eighteen years later. By then, nobody needed telling whose building it was.\n",
+    "teaser": "There is an eagle over the Cabildo's arches. It was not there yet on the day that matters.",
+    "pronunciations": [
+      {
+        "written": "Cabildo",
+        "say": "kah-BEEL-doh"
+      },
+      {
+        "written": "Laussat",
+        "say": "loh-SAH"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "jackson-square",
+      "french-quarter",
+      "louisiana-purchase"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-twenty-days-of-france",
+        "durationS": 94
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-words-on-the-base",
+    "title": "Words Added Later",
+    "summary": "Jackson's statue was unveiled in 1856. The Union general who occupied the city in 1862 had the words on its base cut in.",
+    "point": {
+      "at": {
+        "lat": 29.95741,
+        "lng": -90.06297
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Andrew Jackson statue, Jackson Square, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 88,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Picayune's guide to New Orleans (1904)",
+        "publisher": "The Picayune, New Orleans, 1904; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/04005555/"
+      },
+      {
+        "title": "General Butler in New Orleans (1864)",
+        "publisher": "James Parton, Mason Brothers, 1864; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/32008202/"
+      },
+      {
+        "title": "New Orleans daily crescent, February 9, 1856: programme for the inauguration of Clark Mills' equestrian statue of Andrew Jackson",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn82015753/1856-02-09/ed-1/?sp=2"
+      },
+      {
+        "title": "The Feliciana Democrat, February 16, 1856: Inauguration of Jackson's Statue",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn88067030/1856-02-16/ed-1/?sp=3"
+      },
+      {
+        "title": "Houma Ceres, March 20, 1856: The Inauguration of the Statue",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83026391/1856-03-20/ed-1/?sp=3"
+      },
+      {
+        "title": "A history of Louisiana (1905)",
+        "publisher": "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress",
+        "retrievedAt": "2026-10-14",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/34036146/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Walk to the statue's granite base and find the line cut into it. The Union must and shall be preserved.\n\nNow look up at the man on the horse. Andrew Jackson, who defended this city against the British in eighteen fifteen.\n\nThe statue was unveiled here on the ninth of February, eighteen fifty-six. The square was packed with soldiers, families and children. People crowded the balconies of the red brick buildings on either side. When the sculptor, Clark Mills, pulled the white cover away, a salute of a hundred guns went off.\n\nThe words on the base were not there that day.\n\nSix years later, Louisiana had left the Union, and a Union fleet came up the river and took New Orleans. The general sent to govern the city was Benjamin Butler. Much of the city came to hate him.\n\nButler had that sentence cut deep into the granite under Jackson's horse. His admiring biographer said it was the motto the base had been meant to carry all along.\n\nSo the city's own hero, in the middle of the city's own square, was made to say the one thing the city least wanted to hear, in the voice of the army that had taken it.\n\nNobody ever chiselled it off.\n",
+    "teaser": "Find the line cut into the granite base. It was not there on the day the statue was unveiled.",
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "jackson-square",
+      "french-quarter",
+      "civil-war",
+      "statues"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-words-on-the-base",
+        "durationS": 88
+      }
+    ]
+  },
+  {
     "id": "news-cafe-last-ordinary-morning",
     "title": "The last ordinary hour",
     "summary": "He came here most mornings that summer, bought magazines, and walked home.",
@@ -7131,6 +11271,1603 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "savannah-a-city-for-christmas",
+    "title": "A City for Christmas",
+    "summary": "From this house, Sherman's headquarters, came the most famous Christmas present of the Civil War.",
+    "point": {
+      "at": {
+        "lat": 32.07375,
+        "lng": -81.09435
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Green-Meldrim House, Madison Square, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Green-Meldrim House, 327 Bull Street, Savannah (HABS GA-222): record and data pages",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ga0144/"
+      },
+      {
+        "title": "William T. Sherman to Abraham Lincoln, 22 December 1864 (telegram offering Savannah as a Christmas present)",
+        "publisher": "Library of Congress, Abraham Lincoln Papers",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/mal3954500/"
+      },
+      {
+        "title": "Abraham Lincoln to William T. Sherman, 26 December 1864",
+        "publisher": "Library of Congress, Abraham Lincoln Papers",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/mal3954600/"
+      },
+      {
+        "title": "Savannah",
+        "publisher": "National Park Service, Fort Pulaski National Monument",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/fopu/learn/historyculture/savannah.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the house on the corner, with the iron porches and the battlements along the roofline. It was begun in eighteen fifty-three for Charles Green, in the Gothic style, and finished in eighteen sixty-one.\n\nOn the twenty-second of December, eighteen sixty-four, it became the headquarters of General William Tecumseh Sherman. His army had marched from Atlanta to the sea, and Savannah was his.\n\nThat same day, Sherman dated a telegram to President Lincoln.\n\nIt went by way of Fort Monroe, in Virginia, and it is marked from there on the twenty-fifth. Christmas Day.\n\nIt reads, I beg to present you as a Christmas gift the City of Savannah, with one hundred and fifty heavy guns and plenty of ammunition, and also about twenty-five thousand bales of cotton.\n\nLincoln answered the day after Christmas. Many, many thanks for your Christmas gift, he wrote. He admitted that when Sherman left Atlanta for the coast, he had been anxious, if not fearful.\n\nSherman kept his headquarters in this house until the first of February.\n\nThe telegram, and a copy of the reply, are in the Library of Congress. Not many Christmas presents come with an inventory.\n",
+    "teaser": "Not many Christmas presents come with an inventory.",
+    "pronunciations": [
+      {
+        "written": "Meldrim",
+        "say": "MEL-drim"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "civil-war",
+      "squares",
+      "lincoln"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-a-city-for-christmas",
+        "durationS": 78
+      }
+    ]
+  },
+  {
+    "id": "savannah-ballast-stones",
+    "title": "Stones from somewhere else",
+    "summary": "River Street's stone is said to be ships' ballast. The record shows ballast came here; it cannot show you which stone.",
+    "point": {
+      "at": {
+        "lat": 32.0814,
+        "lng": -81.0895
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "River Street at the Abercorn ramp, Savannah, Georgia"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [
+      {
+        "title": "Factor's Warehouse, River Street West (HABS GA-2144), data pages",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/pictures/item/ga0053/"
+      },
+      {
+        "title": "The morning news (Savannah, Ga.), November 2, 1889, image 7: shipping intelligence",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn86063034/1889-11-02/ed-1/?sp=7"
+      },
+      {
+        "title": "A guide to strangers visiting Savannah for business, health, or pleasure (1881)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007696/"
+      },
+      {
+        "title": "Savannah Eastern Wharves (HAER GA-157), data pages",
+        "publisher": "Historic American Engineering Record, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/pictures/item/ga1012/"
+      },
+      {
+        "title": "The morning news (Savannah, Ga.), September 15, 1887, image 8: foreign steam tonnage loading",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn86063034/1887-09-15/ed-1/?sp=8"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down at the cobbles under your feet, and at the rough stone in the old walls along River Street.\n\nYou will hear, probably more than once today, that this stone crossed the ocean as ballast. Ships that came over light carried rock low in the hold to keep them steady, dumped it here, and loaded cotton for the voyage out.\n\nHere is what the record actually supports.\n\nShips really did arrive that way. On the second of November eighteen eighty nine, the Savannah Morning News listed a Norwegian bark up from Buenos Aires, in ballast. Another came from Brazil, in ballast. That was an ordinary day.\n\nBallast really was dumped on this waterfront. A city guide from eighteen eighty one boasted that when a railway's wharves downriver were filled in, the four quarters of the habitable globe had contributed, by way of ballast from foreign ships. When the old eastern wharves were recorded in two thousand seven, just before they were demolished, the ballast that filled them was still there.\n\nAnd when federal surveyors photographed a stone warehouse on River Street in the nineteen thirties, they wrote that its rubble stone was said to have been brought over as ballast.\n\nSaid to have been. Even then it was the story, not the receipt.\n\nSo nobody can show you which stone came from where. But the ships came in heavy with rock, and the rock had to go somewhere.\n",
+    "teaser": "Everyone will tell you this stone was ballast. Here is what the record says.",
+    "certaintyNote": "That ships arriving in ballast came up this river, and that foreign ballast was used as waterfront fill, is documented. That the stones in River Street's walls and paving are that ballast is a tradition recorded as \"said to have been\" since the 1930s; no source ties any particular stone to a ship. The script says so.",
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "riverfront",
+      "shipping",
+      "cotton"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-ballast-stones",
+        "durationS": 96
+      }
+    ]
+  },
+  {
+    "id": "savannah-city-hall-dome",
+    "title": "The dome was meant to go green",
+    "summary": "City Hall's dome was sheathed in copper and left to weather. Then the air got to it, and the city has been choosing its colour ever since.",
+    "point": {
+      "at": {
+        "lat": 32.081,
+        "lng": -81.0911
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Savannah City Hall, Bay and Bull Streets, Savannah, Georgia"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Savannah City Hall, Bay and Bull Streets (HABS GA-2165), data pages",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/pictures/item/ga0459/"
+      },
+      {
+        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/unk84031503/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the dome on City Hall.\n\nIt was not built to look like that.\n\nThis is the spot where the City Exchange stood from seventeen ninety nine. In nineteen oh four the city tore it down and started again. The new City Hall was finished at the end of nineteen oh five, and the first council met here in January nineteen oh six.\n\nThe dome rises another seventy feet above the building. It was sheathed in copper, and for many years the city simply let that copper weather on its own.\n\nThen the air got to it. In nineteen sixty six the city painted the dome to stop it deteriorating. The culprit, according to the federal survey of the building, was a local fertilizer plant.\n\nBy the early nineteen eighties it wore a protective coating, coloured to look like the weathered copper it had been designed to become all along.\n\nWhat you are looking at now came after that.\n\nIt was designed to change colour on its own. The city has been choosing its colour ever since.\n",
+    "teaser": "Look up at the dome. It was not built to look like that.",
+    "detail": "The cornerstone, laid on the eleventh of August 1904, is at the northeast corner about twenty feet above the ground below, and is easiest to see from one of the footbridges over Factors Walk. The architect was Hyman W. Witcover.",
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "architecture",
+      "civic",
+      "bay-street"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-city-hall-dome",
+        "durationS": 72
+      }
+    ]
+  },
+  {
+    "id": "savannah-cotton-exchange",
+    "title": "Built over the way down to the river",
+    "summary": "Savannah's Cotton Exchange opened in 1887 on iron pillars, over the old Drayton Street slip down to the water.",
+    "point": {
+      "at": {
+        "lat": 32.08075,
+        "lng": -81.09005
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Savannah Cotton Exchange, 100 East Bay Street, Savannah, Georgia"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Savannah Cotton Exchange, 100 East Bay Street (HABS GA-1194), data pages",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/pictures/item/ga0141/"
+      },
+      {
+        "title": "Savannah morning news, March 24, 1886, image 8: The New Cotton Exchange",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn82015137/1886-03-24/ed-1/?sp=8"
+      },
+      {
+        "title": "Savannah morning news, August 29, 1886, image 8: The New Cotton Exchange",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn82015137/1886-08-29/ed-1/?sp=8"
+      },
+      {
+        "title": "The morning news (Savannah, Ga.), September 16, 1887, image 8: Through the City",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn86063034/1887-09-16/ed-1/?sp=8"
+      },
+      {
+        "title": "The morning news (Savannah, Ga.), March 12, 1889, image 8: To Have a Park",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn86063034/1889-03-12/ed-1/?sp=8"
+      },
+      {
+        "title": "A view of Savannah's old Cotton Exchange Building was completed in 1887 during the era when Savannah ranked first as a cotton seaport on the Atlantic and second in the world",
+        "publisher": "Carol M. Highsmith Archive, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/item/2017880409/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at how you get into the Cotton Exchange. Not from the pavement. From a bridge, with iron railings, across a gap.\n\nThe building opened for business at noon on a Monday in September eighteen eighty seven, when Savannah ranked first among the cotton ports of the Atlantic coast. From Bay Street it looks like three storeys. From River Street, round the back, it is six.\n\nWhat it stands on is the interesting part.\n\nThis was the Drayton Street slip, the way down from the bluff to the river. In March eighteen eighty six the Morning News watched workmen pulling up the stones of that slip. Part of it was filled in and walled off. By August, iron pillars and girders were in place to carry the building, and the old iron footbridge across the slip had been taken down, to be put up again somewhere else.\n\nSo the Cotton Exchange is standing on iron legs, over the old way down to the water.\n",
+    "teaser": "Look at how you get in. Not from the pavement. From a bridge.",
+    "detail": "In March 1889 the Exchange's members gave three hundred and fifty dollars for a little park and a fountain on the open ground in front of the building, running out to the middle of Bay Street. The architect was William G. Preston.",
+    "pronunciations": [
+      {
+        "written": "Drayton",
+        "say": "DRAY-tun"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "cotton",
+      "architecture",
+      "bay-street"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-cotton-exchange",
+        "durationS": 66
+      }
+    ]
+  },
+  {
+    "id": "savannah-factors-walk",
+    "title": "The front door is on the top floor",
+    "summary": "The cotton factors' buildings along the bluff are entered from Bay Street by iron bridges, straight into their top floors.",
+    "point": {
+      "at": {
+        "lat": 32.0808,
+        "lng": -81.0888
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Factors Walk, East Bay Street, Savannah, Georgia"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Archibald Smith's Factor's Building, 202-206 East Bay Street (HABS GA-1195), data pages",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/pictures/item/ga0029/"
+      },
+      {
+        "title": "William Taylor Store, 204 West Bay Street (HABS GA-1196), data pages",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/pictures/item/ga0142/"
+      },
+      {
+        "title": "Old \"Factors' Row\" cotton warehouses and offices of cotton \"factors,\" or brokers on the Savannah, Georgia, waterfront",
+        "publisher": "Carol M. Highsmith Archive, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/item/2017880453/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand at the railing and look down. Between Bay Street and the row of old buildings on the river side there is a gap, and narrow iron bridges cross it.\n\nFollow one of those bridges to its door. You are walking into the top floor of the building.\n\nThis was the row of the cotton factors, the brokers of the cotton trade. One of these buildings, at the two hundred block of East Bay, went up in eighteen twenty three. When federal surveyors measured it, they described entrances on the fourth floor, a cantilevered walk, and more bridges reaching the floors below.\n\nThe offices were up here, level with the street and the merchants. The warehouse floors stacked down the face of the bluff toward the river.\n\nA stone store on the west side of Bay Street, built around eighteen sixteen, works the same way. Three storeys from Bay Street. Four from the river. Every floor but the attic opens onto a different level of the town.\n\nSo none of these buildings has one ground floor. There is the floor at the water, and the floor at the street, and an iron bridge in between.\n",
+    "teaser": "Follow one of the iron bridges to its door.",
+    "pronunciations": [
+      {
+        "written": "factors",
+        "say": "FAK-terz"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "riverfront",
+      "cotton",
+      "architecture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-factors-walk",
+        "durationS": 78
+      }
+    ]
+  },
+  {
+    "id": "savannah-first-african-baptist",
+    "title": "Bricks made after dark",
+    "summary": "First African Baptist's walls were made, by the church's recorded history, by members working at night after a full day enslaved.",
+    "point": {
+      "at": {
+        "lat": 32.08132,
+        "lng": -81.09617
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "First African Baptist Church, 23 Montgomery Street, Franklin Square, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "First African Baptist Church, 23 Montgomery Street (HABS GA-276), data pages and 2017 addendum",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/pictures/item/ga0018/"
+      },
+      {
+        "title": "The First African Baptist Church in Savannah, Georgia",
+        "publisher": "Carol M. Highsmith Archive, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/item/2017880508/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the walls of this church. Smooth, pale stucco.\n\nUnderneath it is brick. Savannah grey brick, laid four bricks deep. And the history of this building, as recorded for the federal survey, says those bricks were formed by hand at night, on the bank of the river, by members of this congregation, after they had worked a full day for the people who owned them.\n\nThey had been worshipping on this spot since the eighteen thirties, in an old wooden church bought from a white Baptist congregation that had moved to a new building. They paid for it with money earned working nights, with their owners' permission. Often, the survey notes, it was money they had been saving to buy their own freedom, or their family's.\n\nIn eighteen fifty five they pulled the wooden church down and began this one. It took four years. It cost more than ten thousand dollars, and it was paid off before the end of eighteen fifty nine, the year it was finished.\n\nIt is recorded as the first brick building in Savannah owned by African Americans.\n\nThe stucco went on in the nineteen forties. So you cannot see a single one of those bricks. They are all still there.\n",
+    "teaser": "Look at the walls. You cannot see a single brick.",
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "african-american",
+      "religion",
+      "slavery"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-first-african-baptist",
+        "durationS": 82
+      }
+    ]
+  },
+  {
+    "id": "savannah-old-harbor-light",
+    "title": "The light nobody needed",
+    "summary": "An iron beacon put up on the Bay in 1858 to guide ships up the river. By the 1930s it was out of use, and still looked after.",
+    "point": {
+      "at": {
+        "lat": 32.07931,
+        "lng": -81.08429
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old Harbor Light, Emmet Park, East Bay Street, Savannah, Georgia"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 62,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Old Harbor Beacon, Savannah (HABS GA-232), data pages",
+        "publisher": "Historic American Buildings Survey, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/pictures/item/ga0054/"
+      },
+      {
+        "title": "The morning news (Savannah, Ga.), February 22, 1900, image 8: Council proceedings, Bay street green",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn86063034/1900-02-22/ed-1/?sp=8"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the tall iron post at this end of the park, with the light at the top.\n\nThat is a lighthouse. Or it was.\n\nThe United States government put it up in eighteen fifty eight, a cast iron standard on a granite foundation, here on the Bay, as a beacon for mariners finding their way up the Savannah River.\n\nNotice where it stands. Not on a headland. Not out on the water. Up on the bluff, at the end of a city street, on what was then the Bay Street green. In nineteen hundred the city's park commission asked for money to improve that green, and suggested a name for it. Emmet Park.\n\nWhen federal surveyors came to record the light in the nineteen thirties, they noted two things about it.\n\nIt had not been used for many years.\n\nAnd it was well maintained.\n\nSomebody was looking after a light that nobody needed.\n",
+    "teaser": "It is a lighthouse. Or it was.",
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "riverfront",
+      "lighthouses",
+      "shipping"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-old-harbor-light",
+        "durationS": 62
+      }
+    ]
+  },
+  {
+    "id": "savannah-pirates-house",
+    "title": "Where Captain Flint died, if he did",
+    "summary": "Stevenson sent Captain Flint to die of rum at Savannah. By 1951, tradition had found him an upstairs room here.",
+    "point": {
+      "at": {
+        "lat": 32.0782,
+        "lng": -81.08408
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Pirates' House, 20 East Broad Street, Savannah, Georgia"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 95,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [
+      {
+        "title": "Treasure Island (Robert Louis Stevenson, 1883)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/50041964/"
+      },
+      {
+        "title": "Evening star (Washington, D.C.), February 18, 1951, image 122: This Week magazine, an old house where pirates met",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83045462/1951-02-18/ed-1/?sp=122"
+      },
+      {
+        "title": "The Pirates' House, a historic restaurant location in Savannah, Georgia, established in 1753, opened as an inn for seafarers",
+        "publisher": "Carol M. Highsmith Archive, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/item/2017880450/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This low old building calls itself the Pirates' House. Before you go in, it is worth knowing which parts of that are history, and which are a very good story.\n\nStart with the book. In Treasure Island, published in eighteen eighty three, Robert Louis Stevenson gives his pirate captain, Flint, a death but no grave. Billy Bones says Flint handed him the map at Savannah, when he lay dying. Long John Silver puts it more bluntly. Flint died of rum at Savannah.\n\nThat is all Stevenson says. He never names a house. And Flint never existed.\n\nThe house came later. In February nineteen fifty one, the food editor of a Sunday magazine in the Washington Evening Star wrote about the newly restored tavern here, in the old Trustees' Garden. Tradition has it, the article said, that the man Stevenson based Flint on died in an upstairs bedroom of the old inn. And Flint's ghost is said to haunt the area on moonless nights.\n\nThe house tells its own story too. It says it opened in seventeen fifty three as an inn for seafarers, and soon became a meeting place for pirates and sailors back from ports around the world.\n\nNone of that is proven. Not the inn's pirates, not the real man behind Flint, and certainly not the ghost.\n\nBut Stevenson did send Flint to Savannah to die. Savannah has been happy to find him a room.\n",
+    "teaser": "Stevenson gave Captain Flint a death in Savannah, but no address.",
+    "certaintyNote": "A published tradition. Captain Flint is a fictional character; Treasure Island places his death at Savannah but names no house. The upstairs-room tradition and the ghost are reported in 1951 as \"tradition\" and \"said to\"; the 1753 inn claim is the house's own account. The script says plainly that none of it is proven.",
+    "pronunciations": [
+      {
+        "written": "Stevenson",
+        "say": "STEE-ven-sun"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "pirates",
+      "literature",
+      "ghosts"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-pirates-house",
+        "durationS": 95
+      }
+    ]
+  },
+  {
+    "id": "savannah-steamship-savannah",
+    "title": "Reported on fire off Ireland",
+    "summary": "In 1819 the Savannah left this river for Liverpool, the first steamship to cross the Atlantic, and was mistaken for a burning ship.",
+    "point": {
+      "at": {
+        "lat": 32.08215,
+        "lng": -81.0923
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Savannah riverfront, River Street, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Historical record of the city of Savannah (1869), chapter VII",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007699/"
+      },
+      {
+        "title": "Savannah: Georgia's chief seaport (1884), Ocean Steam Navigation",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/87126083/"
+      },
+      {
+        "title": "Savannah: her trade, commerce and industries, 1883-4",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007698/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out at the river, and picture a sailing ship like any other, with one odd thing about her. Smoke, and a paddle wheel on each side.\n\nShe was called the Savannah. Merchants of this city paid for her, at the suggestion of a captain named Moses Rogers, and she was built in the North. In May eighteen nineteen she left this river for Liverpool.\n\nIt was cautious engineering. The iron paddle wheels were hinged, so the crew could fold them up onto the deck. She burned pitch pine, not coal, so the engine was used sparingly. Old accounts disagree about how many days it actually ran.\n\nOff Cape Clear, on the south coast of Ireland, someone saw her coming. A ship under sail, pouring out smoke. She was signalled to Liverpool as a vessel on fire, and a cutter was sent out from Cork to her relief.\n\nShe did not need relief. She went on into Liverpool, and then to Saint Petersburg, and came home to Savannah that November, by one account with not a screw, nor a bolt, nor a rope yarn parted.\n\nBy this city's proud account, she was the first steamship to cross the Atlantic.\n\nThe first people to see her do it thought she was on fire.\n",
+    "teaser": "The first people to see her cross thought she was burning.",
+    "pronunciations": [
+      {
+        "written": "Cape Clear",
+        "say": "Cape CLEER"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "riverfront",
+      "shipping",
+      "firsts"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-steamship-savannah",
+        "durationS": 85
+      }
+    ]
+  },
+  {
+    "id": "savannah-thackerays-comfortable-quarters",
+    "title": "Thackeray's Comfortable Quarters",
+    "summary": "A famous English novelist wrote home from this house, delighted with everything, including an audience too lazy to clap.",
+    "point": {
+      "at": {
+        "lat": 32.07302,
+        "lng": -81.0923
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Andrew Low House, Lafayette Square, Savannah, Georgia"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 80,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "A collection of letters of Thackeray, 1847-1855 (letter to Miss Perry, Savannah, Feast of St. Valentine)",
+        "publisher": "Library of Congress (Scribner, 1887)",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/13033924/"
+      },
+      {
+        "title": "Low House, 329 Abercorn Street, Savannah (HABS GA-210), data pages",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ga0017/"
+      },
+      {
+        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/unk84031503/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand across from the house with the stuccoed front and the iron railings round its balconies. A cotton merchant named Andrew Low built it in the eighteen forties.\n\nOn Saint Valentine's Day, one year in the eighteen fifties, a famous English novelist sat in this house and wrote a letter home.\n\nHe was William Makepeace Thackeray, the author of Vanity Fair, and he was crossing America giving lectures.\n\nHe was tired of hotels. Tired of the crowds drinking at the bar, and the tearing northern bustle. Here, he wrote, he had the most comfortable quarters he had found anywhere in the United States.\n\nHe liked the town as well. Wide streets, trees, a few cows and carriages toiling through the sandy road.\n\nAnd he was honest about the people who came to hear him. A snug little audience of three or four hundred, he wrote, far too lazy to laugh or applaud.\n\nThe last time he stayed, Low had been a widower. Now there was a pretty new wife, and a baby daughter crowing in the nursery next door.\n\nA great writer, in a fine house, describing his audience as too lazy to clap.\n\nHe was having a wonderful time.\n",
+    "teaser": "On Saint Valentine's Day, a novelist sat in this house and wrote a letter home.",
+    "detail": "The year is uncertain. The 1887 edition of the letters dates it, in brackets, to 1855; the Historic American Buildings Survey record says Thackeray was a guest in 1853 and 1856.",
+    "pronunciations": [
+      {
+        "written": "Thackeray",
+        "say": "THAK-uh-ree"
+      },
+      {
+        "written": "Abercorn",
+        "say": "AB-er-korn"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "lafayette-square",
+      "writers"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-thackerays-comfortable-quarters",
+        "durationS": 80
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-chimney-with-privies-in-its-base",
+    "title": "The Chimney with Privies in Its Base",
+    "summary": "A railroad smokestack that was also a water tank and a row of workers' privies.",
+    "point": {
+      "at": {
+        "lat": 32.0756,
+        "lng": -81.1015
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Central of Georgia Railway shops smokestack, Georgia State Railroad Museum, Savannah, Georgia"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Central of Georgia Railway, Savannah Repair Shops and Terminal Facilities (HAER GA-1), data pages",
+        "publisher": "Library of Congress, Historic American Engineering Record",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ga0356/"
+      },
+      {
+        "title": "Central of Georgia Railway, Combination Smokestack, Water Tank and Privies (HAER GA-1-F)",
+        "publisher": "Library of Congress, Historic American Engineering Record",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ga0829/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the tall, many-sided brick chimney rising over the old railroad shops.\n\nIt was built in eighteen fifty five for the Central of Georgia Railroad. A hundred and twenty three feet high, standing on a hundred and twenty piles.\n\nIt was three things at once.\n\nFirst, a chimney. Through flues under the yard it pulled the smoke from every forge and boiler in the shops.\n\nSecond, a water tank. Round its waist sits a ring of cast iron panels, made here in Savannah. Behind them was a tank of forty thousand gallons, for filling the locomotives.\n\nThird, look at the base. Between the brick buttresses there are little arched cells. Those were the workers' privies.\n\nWhen the government surveyed the shops, it said the combination of smokestack and privy appeared to be unique.\n\nThe day it was finished, the railroad's superintendent and the master bricklayer climbed to the top before the scaffolding came down, and drank a bottle of champagne up there.\n\nThe bosses toasted it from the top. Everyone else used it from the bottom.\n",
+    "teaser": "It was three things at once. Look at the base.",
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "railroads",
+      "engineering"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-chimney-with-privies-in-its-base",
+        "durationS": 70
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-church-copied-from-itself",
+    "title": "The Church Copied from Itself",
+    "summary": "The Independent Presbyterian Church burned in 1889 and was rebuilt from measurements of the building that had burned.",
+    "point": {
+      "at": {
+        "lat": 32.07672,
+        "lng": -81.09292
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Independent Presbyterian Church, Bull Street at Oglethorpe Avenue, Savannah, Georgia"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 81,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Independent Presbyterian Church, Bull and Oglethorpe Streets, Savannah (HABS GA-237): record, data pages and addendum",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ga0046/"
+      },
+      {
+        "title": "The morning news (Savannah), 7 April 1889, page 1: report of the fire",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn86063034/1889-04-07/ed-1/?sp=1"
+      },
+      {
+        "title": "Historical record of the city of Savannah (Lee and Agnew, 1869): Churches, Presbyterian",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007699/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the white steeple on the corner of Bull Street and Oglethorpe Avenue.\n\nThe Independent Presbyterian Church was dedicated in eighteen nineteen. Fifty years later, a history of the city called it one of the most elegant and spacious houses of worship in the country.\n\nOn the evening of the sixth of April, eighteen eighty-nine, a clerk in a dry goods store on Broughton Street stepped into a shop window to light the gas. A gust of wind blew the flame against something light and flammable.\n\nBy morning more than fifty buildings were gone. The Savannah Morning News described what was left of this church. Skeleton walls.\n\nWhat you are looking at went up in eighteen ninety. It was rebuilt from measured drawings of the church that burned. A copy of itself, built to its own measurements.\n\nThe congregation had reasons to be faithful to the old design. By one account from the nineteen thirties, a legacy left to the church required that its high pulpit never be changed.\n\nSo the church in front of you is about seventy years younger than it looks.\n\nThe original stood for seventy years. The copy has now stood for well over a century.\n",
+    "teaser": "This church is about seventy years younger than it looks.",
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "churches",
+      "architecture",
+      "fire"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-church-copied-from-itself",
+        "durationS": 81
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-fountain-that-kept-getting-more-parisian",
+    "title": "The Fountain That Kept Getting More Parisian",
+    "summary": "Three Savannah guidebooks described where this fountain came from. Each one made it a little more like Paris.",
+    "point": {
+      "at": {
+        "lat": 32.06935,
+        "lng": -81.0955
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Forsyth Park fountain, Savannah, Georgia"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [
+      {
+        "title": "Park fountain playing / photographed by J.N. Wilson (stereograph, Marian S. Carson Collection)",
+        "publisher": "Library of Congress, Prints and Photographs Division",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/2017659035/"
+      },
+      {
+        "title": "Savannah and its surroundings (G. A. Gregory, 1890)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007695/"
+      },
+      {
+        "title": "A sketch of Savannah, historical and topographical (1899)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007700/"
+      },
+      {
+        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/unk84031503/"
+      },
+      {
+        "title": "Fountain, Savannah, Ga. (G. N. Barnard, Photographic views of Sherman's campaign, 1866)",
+        "publisher": "Library of Congress, Prints and Photographs Division",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/2003677263/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Walk up to the edge of the basin and look at the fountain. The tiers, the figures, the water falling from one level to the next.\n\nNow ask where it came from. Savannah's own guidebooks never quite agreed.\n\nIn eighteen ninety, one said it was designed from a prize model shown at an exhibition in London, and that it was similar to the grand fountain in the Place de la Concorde, in Paris.\n\nIn eighteen ninety nine, another went further. An exact reproduction, it said, of the one in Paris.\n\nBy nineteen ten, a third guide had it modelled on Paris. Close, but no longer exact.\n\nWhat is certain is plainer. Before the fountain, the middle of this park was marked by a small wooden bridge. The fountain went in around eighteen fifty eight, and local photographers were soon selling pictures of it. After the war, a photographer who had followed Sherman's army put it in his book of the campaign.\n\nThe fountain has not changed much since. The story keeps improving.\n",
+    "teaser": "Ask where it came from. The guidebooks never quite agreed.",
+    "certaintyNote": "The fountain's date is documented, from a dated stereograph record at the Library of Congress. Its model is not settled in these sources: an 1890 guide ties it to a prize model shown in London and calls it similar to the Place de la Concorde fountain, an 1899 guide calls it an exact reproduction of the Paris fountain, and a 1910 guide says only that it was modelled on it. The script reports each claim as the guidebook's, not as fact. A widely repeated account that it was ordered from a manufacturer's catalogue could not be sourced from reachable sites and is left out.",
+    "pronunciations": [
+      {
+        "written": "Place de la Concorde",
+        "say": "PLAHSS duh lah kon-KORD"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "forsyth-park",
+      "fountains"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-fountain-that-kept-getting-more-parisian",
+        "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-gate-in-the-bull-street-wall",
+    "title": "The Gate in the Bull Street Wall",
+    "summary": "A doctor's private entrance, bricked up long ago, and a newer gate cut somewhere else.",
+    "point": {
+      "at": {
+        "lat": 32.07412,
+        "lng": -81.09396
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Sorrel-Weed House, Madison Square, Savannah, Georgia"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Sorrel-Weed House, 6 West Harris Street, Savannah (HABS GA-2140), data pages",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ga0220/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on Bull Street beside the garden wall of the big stuccoed house on the corner of Harris Street.\n\nMost people come to this house for its stories. This one is written down.\n\nThe house was built around eighteen forty by Francis Sorrel, a Frenchman. One of his sons became a doctor, and kept his office in the basement. The way in to that office was not the front door. It was a gateway in this wall, on Bull Street.\n\nLater the gateway was bricked up. In nineteen seventeen, a writer remembering the doctor said you could still make out its outline in the wall.\n\nThen in the nineteen thirties a new owner wanted a gate on Bull Street again. She had the wall opened, but in a different place, and the old opening stayed filled with brick.\n\nSo walk along it slowly, and look for a patch of brick that does not quite match. Nobody can promise it is still there. It was more than a hundred years ago.\n\nHouses keep their doors. Walls keep the ones they lost.\n",
+    "teaser": "Most people come to this house for its stories. This one is written down.",
+    "pronunciations": [
+      {
+        "written": "Sorrel",
+        "say": "SOR-ul"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "madison-square",
+      "architecture"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-gate-in-the-bull-street-wall",
+        "durationS": 72
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-gate-she-made",
+    "title": "The Gate She Made",
+    "summary": "In the garden where the Girl Scouts' founder played as a child stands an iron gate she made herself.",
+    "point": {
+      "at": {
+        "lat": 32.07697,
+        "lng": -81.09238
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Juliette Gordon Low Birthplace, Oglethorpe Avenue at Bull Street, Savannah, Georgia"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Juliette Gordon Low Birthplace, Garden, 10 East Oglethorpe Avenue, Savannah (HALS GA-4)",
+        "publisher": "Library of Congress, Historic American Landscapes Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ga1151/"
+      },
+      {
+        "title": "Wayne-Gordon House, 10 East Oglethorpe Avenue, Savannah (HABS): record and data pages",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ga0010/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This is the house where Juliette Gordon Low was born, in eighteen sixty. Her family called her Daisy. Fifty-two years later, in this city, she started the Girl Scouts.\n\nHer grandfather bought the house in eighteen thirty-one, and Gordons lived here for generations. The Girl Scouts bought it in nineteen fifty-three.\n\nIf you go into the garden, look for the iron double gate in the east wall.\n\nShe made it.\n\nNot ordered it. Designed and made it, in eighteen eighty-nine, for her own house in England, an estate called Wellesbourne. In nineteen twenty-six she brought it home to Savannah, to stand at the entrance of a small park east of the city, where many of the early Girl Scout meetings were held. In nineteen seventy-two it was moved here for safekeeping.\n\nThe garden around it is a reconstruction, laid out in the nineteen fifties from the memories of her relatives. They did not agree. One remembered circles. Another remembered dirt paths, violets, a banana tree. A photograph taken at Daisy's wedding, in eighteen eighty-six, showed paths running out from the porch.\n\nEverything else in this garden had to be remembered. The gate, she made.\n",
+    "teaser": "Everything else in the garden had to be remembered.",
+    "pronunciations": [
+      {
+        "written": "Wellesbourne",
+        "say": "WELZ-born"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "girl-scouts",
+      "women",
+      "gardens",
+      "museums"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-gate-she-made",
+        "durationS": 78
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-general-facing-south",
+    "title": "The General Facing South",
+    "summary": "Savannah's founder stands in bronze in Chippewa Square, young, armed, and looking south.",
+    "point": {
+      "at": {
+        "lat": 32.07565,
+        "lng": -81.09318
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Oglethorpe Monument, Chippewa Square, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 79,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Atlanta semi-weekly journal, 8 November 1910, page 5: Oglethorpe statue is now in position",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn86090947/1910-11-08/ed-1/?sp=5"
+      },
+      {
+        "title": "The Montgomery advertiser, 24 November 1910, page 3: statue of Oglethorpe is unveiled",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn84020645/1910-11-24/ed-1/?sp=3"
+      },
+      {
+        "title": "New-York tribune, 24 November 1910, page 7: Oglethorpe honored",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn83030214/1910-11-24/ed-1/?sp=7"
+      },
+      {
+        "title": "James Edward Oglethorpe",
+        "publisher": "National Park Service, Fort Frederica National Monument",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/fofr/learn/historyculture/james-edward-oglethorpe.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on the south side of the square and look up at the man in bronze.\n\nHe is young. Full uniform, a hand resting on his sword hilt. When the statue was unveiled in November nineteen ten, the newspapers made a point of it. Most old prints showed James Oglethorpe as an old man. The sculptor, Daniel Chester French, gave the city a soldier instead.\n\nNow look at which way he is facing.\n\nWhen the figure was hoisted onto its pedestal, a few weeks before the unveiling, the Atlanta paper noted one detail. The figure faces south.\n\nSouth, in Oglethorpe's day, was the problem. The land below Savannah was claimed by both Britain and Spain, and Georgia was meant, in part, as a military buffer against Spanish Florida. Oglethorpe built a fort town on St. Simons Island. In seventeen forty he besieged St. Augustine for thirty-eight days, and failed. Two years later he turned back a Spanish invasion of Georgia.\n\nThe papers of nineteen ten did not say whether that was the point of the pose.\n\nHe sailed for England in seventeen forty-three and never came back. He is buried at Cranham, on the edge of London.\n\nHe is still watching the southern road.\n",
+    "teaser": "Look up at the man in bronze, then look at which way he is facing.",
+    "pronunciations": [
+      {
+        "written": "Oglethorpe",
+        "say": "OH-gul-thorp"
+      },
+      {
+        "written": "St. Augustine",
+        "say": "saint AW-guh-steen"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "squares",
+      "colonial",
+      "monuments"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-general-facing-south",
+        "durationS": 79
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-general-who-went-missing",
+    "title": "The General Who Went Missing",
+    "summary": "The monument in Johnson Square stood for seventy-three years before the general it honours was laid beneath it.",
+    "point": {
+      "at": {
+        "lat": 32.07993,
+        "lng": -81.09157
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Nathanael Greene Monument, Johnson Square, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 99,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Historical record of the city of Savannah (Lee and Agnew, 1869): Burial of Major-General Greene; Monuments",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007699/"
+      },
+      {
+        "title": "The Savannah morning news, 5 March 1901, page 10: Greene's body found",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn89053684/1901-03-05/ed-1/?sp=10"
+      },
+      {
+        "title": "Evening times-Republican, 7 March 1901, page 1: Nathaniel Greene's grave discovered",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn85049554/1901-03-07/ed-1/?sp=1"
+      },
+      {
+        "title": "The Spokane press, 14 November 1902, page 3: body of Gen. Greene placed beneath monument",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn88085947/1902-11-14/ed-1/?sp=3"
+      },
+      {
+        "title": "Nathanael Greene",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/nathanael-greene.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the tall monument in the middle of Johnson Square.\n\nWhen it went up in eighteen twenty-nine, it was paid for partly by a state lottery, and it was meant to honour two Revolutionary generals at once. Nathanael Greene, and Casimir Pulaski. A city history forty years later described it as plain, without an inscription.\n\nGreene had died near Savannah in seventeen eighty-six, after what may have been sunstroke. He was buried in the old burying ground on what was then South Broad Street, with the artillery firing minute guns.\n\nAnd then Savannah lost him.\n\nFor more than a century nobody could say for certain where his body was. The stories grew. That he had been spirited away at night. That he had been sunk in a creek. That he had been carried off to Cumberland Island.\n\nIn March nineteen-oh-one, a committee sent by the Rhode Island Society of the Cincinnati opened a family vault in that old cemetery. Inside was a coffin plate. On it, the name Greene, and the date seventeen eighty-six. Beside him lay a second body, believed to be his son, George Washington Greene, who had drowned in the river as a young man.\n\nNone of the stories was true. He had been exactly where he was put.\n\nIn November nineteen-oh-two, father and son were buried again. Here, beneath the monument.\n\nFor seventy-three years, it had been his memorial with nobody under it. It just took a while for him to arrive.\n",
+    "teaser": "The monument went up first. The general arrived seventy-three years later.",
+    "pronunciations": [
+      {
+        "written": "Nathanael Greene",
+        "say": "nuh-THAN-yel GREEN"
+      },
+      {
+        "written": "Casimir Pulaski",
+        "say": "KAZ-ih-meer puh-LASS-kee"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "squares",
+      "revolution",
+      "monuments"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-general-who-went-missing",
+        "durationS": 99
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-library-on-loan",
+    "title": "The Library on Loan",
+    "summary": "Two sisters built a library in a husband's memory, and its owners lent the whole thing to the city.",
+    "point": {
+      "at": {
+        "lat": 32.07035,
+        "lng": -81.0962
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Hodgson Hall, Georgia Historical Society, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 60,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Savannah and its surroundings (G. A. Gregory, 1890)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007695/"
+      },
+      {
+        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/unk84031503/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Face the building on the corner, with the portico and a man's name on the front. W. B. Hodgson Hall.\n\nWilliam Hodgson did not build it. His widow Margaret and her sister Mary Telfair built it in his memory, in eighteen seventy six, for the Georgia Historical Society.\n\nThe Society had been collecting since eighteen thirty nine. Books, papers, anything touching the history of Georgia. By eighteen ninety it had about twenty thousand volumes.\n\nA guidebook of the time admitted the outside was plain. It was built for the convenience of a library. The inside was the part worth seeing.\n\nThen, in eighteen ninety three, the Society lent its books and this building to the city, so that Savannah could have a public library. The Society kept on collecting.\n\nA husband's name on the front. His widow's money in the walls. And for a while, the books inside belonged to everyone.\n",
+    "teaser": "The name on the front belongs to a man who did not build it.",
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "forsyth-park",
+      "libraries"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-library-on-loan",
+        "durationS": 60
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-night-the-cathedral-burned",
+    "title": "The Night the Cathedral Burned",
+    "summary": "In 1898 every fire engine in Savannah was somewhere else when the cathedral caught fire.",
+    "point": {
+      "at": {
+        "lat": 32.07325,
+        "lng": -81.09105
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Cathedral of St. John the Baptist, Lafayette Square, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 87,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The Cathedral in Ruins (The morning news, Savannah, 7 February 1898, page 8)",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn86063034/1898-02-07/ed-1/?sp=8"
+      },
+      {
+        "title": "Savannah's New Cathedral (The Savannah morning news, 28 October 1900, page 10)",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn89053684/1900-10-28/ed-1/?sp=10"
+      },
+      {
+        "title": "Dedication sermon report (The Savannah morning news, 29 October 1900, page 8)",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn89053684/1900-10-29/ed-1/?sp=8"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the two spires of the cathedral, then down the long walls beneath them.\n\nOn a Sunday night in February, eighteen ninety eight, a streetcar driver coming through this square saw fire. It was about ten minutes to eleven.\n\nThe alarm went in quickly. It did not help. Every engine in the city was down at a big fire on River Street. The hose wagons that came had almost no pressure. Firemen stood on the Harris Street sidewalk, about where you are, and their streams barely reached the first window sill.\n\nIt was three quarters of an hour before an engine arrived. By then the roof was gone.\n\nThousands of people stood around the square and watched sparks pour from the towers like fireworks. Some of the sparks burned holes in their hats and coats.\n\nThe next morning the paper said nothing remained but the four walls and parts of the two spires.\n\nThe rebuilding went to the same architect who had designed the church in the first place. He kept its lines. The spires, the towers, the tall pointed windows. Two years and eight months after the fire, the cathedral was dedicated again.\n\nSo the shape you are looking at is the shape that crowd watched burn. What is new is almost everything inside.\n",
+    "teaser": "The firemen stood on this sidewalk. Their water reached the first window sill.",
+    "detail": "The 1900 report names the architect as E. M. Baldwin of Baltimore, who drew the plans for the original building in the 1870s, and says it was a matter of economy as well as taste to preserve its spires, towers and high Gothic windows.",
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "lafayette-square",
+      "fires",
+      "churches"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-night-the-cathedral-burned",
+        "durationS": 87
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-sergeant-who-would-not-be-an-officer",
+    "title": "The Sergeant Who Would Not Be an Officer",
+    "summary": "William Jasper turned down a commission twice. Savannah made him fifteen feet tall in bronze.",
+    "point": {
+      "at": {
+        "lat": 32.0735,
+        "lng": -81.0939
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Jasper Monument, Madison Square, Savannah, Georgia"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 81,
+    "minAge": 8,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Historical record of the city of Savannah (F. D. Lee and J. L. Agnew, 1869)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007699/"
+      },
+      {
+        "title": "Savannah and its surroundings (G. A. Gregory, 1890)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007695/"
+      },
+      {
+        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/unk84031503/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the bronze soldier on top of the monument in the middle of the square. His left hand holds a battle-worn flag out at arm's length. His right hand is pressed against his side, over a bullet wound.\n\nHis name was William Jasper, a sergeant in a South Carolina regiment.\n\nSome time before he died, the British fleet bombarded Fort Moultrie, and the fort's flagstaff was shot in two. Jasper caught the flag, tied it to a sponge staff, and jumped up onto the rampart to hold it there until a new pole was found.\n\nHe was offered a commission as an officer. He turned it down. He said he could neither read nor write, and so did not think himself worthy. The governor offered it again. He refused again.\n\nOn the ninth of October, seventeen seventy nine, in the attack on the British lines at Spring Hill, Jasper was mortally wounded. He carried his regiment's colours off the field anyway.\n\nA hundred years later to the day, Savannah laid the cornerstone of this monument. When it was unveiled in eighteen eighty eight, the President came.\n\nHe refused to be made an officer. So the city made him fifteen feet tall.\n",
+    "teaser": "Look at his right hand.",
+    "pronunciations": [
+      {
+        "written": "Moultrie",
+        "say": "MOOL-tree"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "madison-square",
+      "american-revolution",
+      "monuments"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-sergeant-who-would-not-be-an-officer",
+        "durationS": 81
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-stone-beside-the-grave",
+    "title": "The Stone Beside the Grave",
+    "summary": "Tomochichi is buried somewhere in Wright Square. The stone that marks him was put where people could see it.",
+    "point": {
+      "at": {
+        "lat": 32.07783,
+        "lng": -81.09215
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Tomochichi memorial stone, Wright Square, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 101,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "The morning news (Savannah), 5 February 1899, page 8: Over Tomochichi's grave",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn86063034/1899-02-05/ed-1/?sp=8"
+      },
+      {
+        "title": "The morning news (Savannah), 24 April 1899, page 2: Is not a boulder",
+        "publisher": "Library of Congress, Chronicling America",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn86063034/1899-04-24/ed-1/?sp=2"
+      },
+      {
+        "title": "Historical record of the city of Savannah (Lee and Agnew, 1869): Burial of Tomichichi",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007699/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the big rough granite stone in the southeast corner of Wright Square.\n\nIt honours Tomochichi, the Yamacraw leader whose friendship the first colonists depended on. When he died, he had asked to be buried among the English. His body came down the river by canoe. Oglethorpe himself was one of the pall-bearers, and the militia fired three volleys as he was lowered into the ground, in this square.\n\nExactly where in this square, nobody knows.\n\nIn eighteen ninety-nine, as the Georgia Society of Colonial Dames prepared to mark the grave, the Savannah Morning News laid out the candidates. One tradition put him under the courthouse. Another, under the Gordon monument in the middle of the square. A pile of stones had once stood here, said to be over his body.\n\nThe best evidence the Dames had came from an old woman who had died a few months before, at eighty-nine. She remembered recess at a school near the square, and the children shouting, let's go play on old Tomochichi's grave. They would race to the northeast corner, in front of the Lutheran church.\n\nSo why is the stone in the southeast corner?\n\nBecause it could be seen better here. The paper said so, plainly.\n\nThe granite came from Stone Mountain, given by a quarry owner and carried free by the railroad. A few days before the dedication, the same paper pointed out that it was not, technically, a boulder.\n\nLook across to the northeast corner. He may well be over there.\n",
+    "teaser": "The children used to play on his grave. Not where the stone is.",
+    "pronunciations": [
+      {
+        "written": "Tomochichi",
+        "say": "toh-moh-CHEE-chee"
+      },
+      {
+        "written": "Yamacraw",
+        "say": "YAM-uh-craw"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "squares",
+      "colonial",
+      "native-american",
+      "monuments"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-stone-beside-the-grave",
+        "durationS": 101
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-synagogue-with-the-onion-dome",
+    "title": "The Synagogue with the Onion Dome",
+    "summary": "A building that looks like a Gothic church, for a congregation that reached Savannah five months after the first colonists.",
+    "point": {
+      "at": {
+        "lat": 32.07115,
+        "lng": -81.09435
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Congregation Mickve Israel, Monterey Square, Savannah, Georgia"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 76,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Mickve Israel Synagogue, 428 Bull Street, Savannah (HABS GA-1190), data pages",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ga0132/"
+      },
+      {
+        "title": "Historical record of the city of Savannah (F. D. Lee and J. L. Agnew, 1869)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007699/"
+      },
+      {
+        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/unk84031503/"
+      },
+      {
+        "title": "Savannah and its surroundings (G. A. Gregory, 1890)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007695/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "From the east side of the square, look at the building with the pointed windows and the tower. Buttresses down its sides. A big pointed window over the entrance. Inside, the plan is shaped like a cross, with a nave and transepts.\n\nYou would guess it was a church.\n\nNow look at the very top of the tower. An onion dome.\n\nThis is a synagogue, the home of Congregation Mickve Israel. It went up between eighteen seventy six and eighteen seventy eight.\n\nThe congregation is far older than the building. Savannah's first colonists arrived in February, seventeen thirty three. In July, a group of about forty Jewish settlers arrived straight from London, paying their own way. They brought two scrolls of the Law with them, and an Ark to keep them in.\n\nHow the congregation grew from there is not clear. In eighteen sixty nine, a historian of the city spent a long time trying to find the date it was founded, and gave up. Its written records begin in seventeen ninety, the year of its charter.\n\nThe scrolls arrived first. The paperwork caught up fifty seven years later.\n",
+    "teaser": "Pointed windows, buttresses, a tower. Now look at the very top.",
+    "pronunciations": [
+      {
+        "written": "Mickve Israel",
+        "say": "MIK-vay IZ-ray-el"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "monterey-square",
+      "architecture",
+      "jewish-history"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-synagogue-with-the-onion-dome",
+        "durationS": 76
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-vaults-on-south-broad",
+    "title": "The Vaults on South Broad",
+    "summary": "A Savannah history written four years after the Union occupation accused soldiers of breaking into these vaults.",
+    "point": {
+      "at": {
+        "lat": 32.076,
+        "lng": -81.0903
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Colonial Park Cemetery, Oglethorpe Avenue at Abercorn Street, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [
+      {
+        "title": "Historical record of the city of Savannah (Lee and Agnew, 1869): the occupation, and the old burying ground on South Broad Street",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007699/"
+      },
+      {
+        "title": "Scene from Colonial Park Cemetery in Savannah, Georgia (Carol M. Highsmith, catalogue description)",
+        "publisher": "Library of Congress, Prints and Photographs Division",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/2017880503/"
+      },
+      {
+        "title": "Colonial Park, Savannah, Chatham County, Georgia: monuments and brick vaults, formerly South Broad Street Cemetery (Carnegie Survey of the Architecture of the South)",
+        "publisher": "Library of Congress, Prints and Photographs Division",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/2017886427/"
+      },
+      {
+        "title": "Savannah",
+        "publisher": "National Park Service, Fort Pulaski National Monument",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/fopu/learn/historyculture/savannah.htm"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Walk in among the old brick vaults.\n\nThis was the town's burying ground from about seventeen fifty. First for the parish of Christ Church, then, from seventeen eighty-nine, for people of every denomination. The avenue outside was called South Broad Street then.\n\nIn December eighteen sixty-four, Sherman's army marched into Savannah.\n\nA history of the city, published in eighteen sixty-nine, makes an accusation about what followed. It says soldiers broke open the vaults in this old burying ground, searching for valuables they believed had been hidden inside. It says the same happened at Bonaventure, outside town. And it says Union earthworks were dug straight through the Catholic cemetery.\n\nThat is one account. It was written by Savannahians who had every reason to resent the occupation, and it should be heard that way.\n\nYou may hear other stories in here about what the soldiers did. This one has an advantage. Somebody wrote it down within four years, while the damage could still be seen.\n\nEvery one of these vaults was built to stay shut.\n",
+    "teaser": "Every one of these vaults was built to stay shut.",
+    "certaintyNote": "The break-ins rest on one account, the city history of 1869, written by Savannahians hostile to the occupation. No Union record was consulted. The often-told story that soldiers altered dates on the gravestones could not be sourced and is not used.",
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "cemeteries",
+      "civil-war",
+      "colonial"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-vaults-on-south-broad",
+        "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-word-in-the-basement",
+    "title": "One Word in the Survey",
+    "summary": "The 1930s survey of the Owens-Thomas House measured every curve. The people who were enslaved there got one word.",
+    "point": {
+      "at": {
+        "lat": 32.07735,
+        "lng": -81.08965
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Owens-Thomas House, Oglethorpe Square, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 74,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Richardson-Maxwell-Owen-Thomas House, 124 Abercorn Street, Savannah (HABS GA-14-9): record and significance statement",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ga0091/"
+      },
+      {
+        "title": "HABS GA-14-9 data pages, including the 1936 architectural notes",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/ga/ga0000/ga0091/data/ga0091data.pdf"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Start with the front of the house. The curved double stair. The curved porch above it. The cast-iron balcony on the side.\n\nIt was finished in eighteen nineteen, to designs by the English architect William Jay. When surveyors from the Historic American Buildings Survey came here in the nineteen thirties, this is what they wrote about. The curves. The Greek fret on the parlour ceiling. A white marble mantel, carved with women carrying baskets of fruit.\n\nThen they reached the basement. They listed a kitchen, a bakery, a wine cellar, and servants' quarters.\n\nThat was all. One word. Servants.\n\nBehind the house stands its original carriage house. The Library of Congress record for this property now describes it as containing one of the earliest intact urban slave quarters in the South. The people who lived and worked there were enslaved by the families in the big house.\n\nThe survey that measured every curve of the staircase did not write down a single one of their names.\n\nTheir rooms are still standing. The house is a museum now, and the quarters are part of it.\n",
+    "teaser": "The surveyors measured every curve of this house. Then they got to the basement.",
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "slavery",
+      "architecture",
+      "museums"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-word-in-the-basement",
+        "durationS": 74
+      }
+    ]
+  },
+  {
     "id": "savannah-twenty-two-squares",
     "title": "A city plan from 1733 that nobody has managed to undo",
     "summary": "Savannah's grid of squares was drawn before the city existed, and most of it is still there.",
@@ -7172,6 +12909,440 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/savannah-twenty-two-squares",
         "durationS": 90
+      }
+    ]
+  },
+  {
+    "id": "savannah-waving-girl",
+    "title": "Every ship, for forty-four years",
+    "summary": "Florence Martus waved at every ship entering or leaving Savannah from 1887 to 1931, a cloth by day and a lantern by night.",
+    "point": {
+      "at": {
+        "lat": 32.07993,
+        "lng": -81.08416
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Waving Girl statue, Morrell Park, River Street, Savannah, Georgia"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 86,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Florence Martus",
+        "publisher": "National Park Service, Fort Pulaski National Monument",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/florence-martus.htm"
+      },
+      {
+        "title": "\"Waving Girl\" keeps her vigil in Savannah harbor 30 years, The Washington daily news, May 5, 1923, image 5",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/resource/sn82016181/1923-05-05/ed-1/?sp=5"
+      },
+      {
+        "title": "Lovelorn salutes by \"Waving Girl\" to vessels ended, Evening star, June 1, 1931, image 22",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn83045462/1931-06-01/ed-1/?sp=22"
+      },
+      {
+        "title": "Spent her lifetime waving at sailors, Detroit evening times, May 23, 1943, image 84",
+        "publisher": "Chronicling America, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/resource/sn88063294/1943-05-23/ed-1/?sp=84"
+      },
+      {
+        "title": "Felix de Weldon's Waving Girl statue on Savannah, Georgia's, waterfront",
+        "publisher": "Carol M. Highsmith Archive, Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/item/2017880364/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the statue, waving at the river.\n\nHer name was Florence Martus. She was born in eighteen sixty eight on Cockspur Island, at the mouth of this river, the daughter of a sergeant at Fort Pulaski. As a small child she waved her handkerchief at the passing ships, and the sailors waved back.\n\nA few years later she went to live with her brother George, a lightkeeper, in a cottage on Elba Island, between here and the sea. And she kept waving. A cloth by day. A lantern by night. Every ship in. Every ship out.\n\nThe ships answered. Steamers gave three blasts of the whistle. Sailing ships dipped their flags. A reporter wrote that a letter addressed only to the Waving Girl would probably reach her from anywhere in the world.\n\nThe sailors had a story about why. A sweetheart lost at sea, they said, and she waved so that she would be the first to greet him when he came home.\n\nShe never confirmed it. In nineteen twenty three she told a reporter that the sailors were all her sweethearts.\n\nIn nineteen thirty one her brother retired, and she came ashore with him. She had been waving for forty four years.\n\nShe died in nineteen forty three. Here, she is still at it.\n",
+    "teaser": "Sailors had a story about why she waved. She did not confirm it.",
+    "detail": "The statue is by Felix de Weldon. Newspapers in 1931 and 1936 retold the lost-sweetheart story as sailors' legend; Martus and her brother declined to confirm it.",
+    "pronunciations": [
+      {
+        "written": "Martus",
+        "say": "MAR-tus"
+      },
+      {
+        "written": "Cockspur",
+        "say": "COCK-spur"
+      },
+      {
+        "written": "Pulaski",
+        "say": "puh-LAS-kee"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "riverfront",
+      "women",
+      "shipping"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-waving-girl",
+        "durationS": 86
+      }
+    ]
+  },
+  {
+    "id": "savannah-wesleys-empty-lot",
+    "title": "Wesley's Empty Lot",
+    "summary": "Christ Church claims John Wesley as one of its ministers. While he was here, there was no church on this spot.",
+    "point": {
+      "at": {
+        "lat": 32.0796,
+        "lng": -81.09098
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Christ Church, Johnson Square, Savannah, Georgia"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 94,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Historical record of the city of Savannah (Lee and Agnew, 1869): Churches, Christ Church; Arrival of Revs. John and Charles Wesley",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007699/"
+      },
+      {
+        "title": "John and Charles Wesley",
+        "publisher": "National Park Service, Fort Frederica National Monument",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/fofr/learn/historyculture/john-and-charles-wesley.htm"
+      },
+      {
+        "title": "Christ Church (Episcopal), 28 Bull Street, Savannah (HABS GA-236): record, data pages and addendum",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ga0032/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the white columns of Christ Church, facing the square.\n\nThis building went up in the eighteen thirties. A fire gutted it in eighteen ninety-seven, and it was rebuilt the year after. So none of what you are looking at was here for the most famous minister this congregation ever had.\n\nIn fact, nothing was.\n\nJohn Wesley, who would go on to found Methodism, arrived in Savannah in seventeen thirty-six as the colony's minister. This lot had been set aside for a church in the summer of seventeen thirty-three. But work did not begin until seventeen forty, and the first church was not finished until seventeen fifty. In Wesley's time, services were held in a courthouse a short walk north, near the bluff.\n\nA chronicler of the day remembered a night when a ball and public prayers were announced for the same hour. The church was full. The ballroom was so empty that the dancing could not go ahead.\n\nIt did not last. Wesley refused communion to Sophia Williamson, a woman he had courted before she married another man. Many in town thought it was spite. Facing a court case, he left Georgia in December seventeen thirty-seven, writing that he had shaken off the dust of his feet.\n\nAs far as the record shows, he never preached on this spot. The church's list of its ministers has his name on it all the same.\n",
+    "teaser": "None of what you are looking at was here for its most famous minister. Nothing was.",
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "churches",
+      "colonial",
+      "religion"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-wesleys-empty-lot",
+        "durationS": 94
+      }
+    ]
+  },
+  {
+    "id": "savannah-white-paper-in-their-hats",
+    "title": "White Paper in Their Hats",
+    "summary": "The French and American attack on Spring Hill in 1779 was planned down to the last detail. Then someone walked across with the plan.",
+    "point": {
+      "at": {
+        "lat": 32.0756,
+        "lng": -81.09935
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Spring Hill redoubt site, Battlefield Memorial Park, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 12,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Historical record of the city of Savannah (F. D. Lee and J. L. Agnew, 1869), chapter on the siege and the assault upon Spring Hill redoubt",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007699/"
+      },
+      {
+        "title": "Savannah souvenir number, Pulaski sesqui-centennial celebration (Georgia Historical Society, 1929)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ca30001435/"
+      },
+      {
+        "title": "Casimir Pulaski",
+        "publisher": "National Park Service, Fort Pulaski National Monument",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/casimir-pulaski.htm"
+      },
+      {
+        "title": "Central of Georgia Railway, Savannah Repair Shops (HAER GA-1), data pages",
+        "publisher": "Library of Congress, Historic American Engineering Record",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ga0356/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand in the park here, beside the old railroad depot. In seventeen seventy nine this ground was Spring Hill, the strongest point in the British lines around Savannah. It guarded the road to Augusta.\n\nOn the eighth of October, the French and American armies besieging the town got their orders for an attack on this spot, before dawn. Nobody was to fire until the redoubt was taken. And so that they could tell friend from enemy in the dark, every man was to wear a piece of white paper in his hat.\n\nThat night, a sergeant major of the American grenadiers slipped away to the British. He took a copy of the orders with him. The British commander moved men to this side of his line.\n\nThe columns lost their way in the dark and arrived in daylight. The British were waiting. French and American flags were planted on the redoubt, and torn down, and planted again. The fight began at daybreak. By nine o'clock it was over.\n\nThe allies had brought about four thousand nine hundred men. Around eleven hundred were killed or wounded that morning.\n\nIn eighteen thirty seven, the redoubt itself was dug down to fill the ground for the new railroad depot. Bayonets and bullets came up with the soil.\n\nThey had planned everything, down to the paper in their hats. What they could not plan for was a man walking across with the plan.\n",
+    "teaser": "Every man was to wear a piece of white paper in his hat.",
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "american-revolution",
+      "siege-of-savannah",
+      "battlefields"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-white-paper-in-their-hats",
+        "durationS": 96
+      }
+    ]
+  },
+  {
+    "id": "savannah-who-lies-under-the-pulaski-monument",
+    "title": "Who Lies Under the Pulaski Monument",
+    "summary": "The man falling from his horse on this column is certain. Whether he is buried beneath it is not.",
+    "point": {
+      "at": {
+        "lat": 32.07135,
+        "lng": -81.0949
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Pulaski Monument, Monterey Square, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 87,
+    "minAge": 12,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [
+      {
+        "title": "Casimir Pulaski",
+        "publisher": "National Park Service, Fort Pulaski National Monument",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/people/casimir-pulaski.htm"
+      },
+      {
+        "title": "Savannah and its surroundings (G. A. Gregory, 1890)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007695/"
+      },
+      {
+        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/unk84031503/"
+      },
+      {
+        "title": "Savannah souvenir number, Pulaski sesqui-centennial celebration (Georgia Historical Society, 1929)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/ca30001435/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the tall marble column in the middle of the square. Liberty stands on top, holding a flag.\n\nNow look lower down, for the carved panel of a man falling from his horse, still gripping his sword.\n\nThat is Casimir Pulaski, a Polish cavalry commander who fought for the Americans. On the ninth of October, seventeen seventy nine, he was hit by grapeshot leading an attack on the British lines around Savannah. Two days later he was dead.\n\nThis monument was finished in eighteen fifty five. What lies beneath it is a harder question.\n\nOne account says he was put aboard a ship bound for Charleston, died at sea, and was buried at sea. An officer of his who was wounded and on board the same ship said so. The Park Service still says he was reported to have been buried at sea.\n\nThe other story says he was carried to a plantation called Greenwich, died there, and was buried at night under a palmetto tree. A city guidebook in nineteen ten went further. His remains, it said, were dug up in eighteen fifty four and placed beneath this monument.\n\nPeople were arguing about it while the marble was going up.\n\nThe man falling from his horse is certain. The man beneath him is not.\n",
+    "teaser": "People were arguing about it while the marble was going up.",
+    "certaintyNote": "Where Pulaski was buried is disputed in the sources used. An 1890 guide cites a staff officer aboard the ship who said he died at sea and was buried at sea, and a 1929 Georgia Historical Society publication treats that as final; the National Park Service says he was reported to have been buried at sea. A 1910 city guide says instead that he died at the Greenwich plantation, was buried there under a palmetto, and that his remains were placed beneath this monument in 1854. The script gives both and settles neither.",
+    "pronunciations": [
+      {
+        "written": "Casimir Pulaski",
+        "say": "KAZ-ih-meer puh-LASS-kee"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "monterey-square",
+      "american-revolution",
+      "monuments"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-who-lies-under-the-pulaski-monument",
+        "durationS": 87
+      }
+    ]
+  },
+  {
+    "id": "savannah-yamacraw-bluff",
+    "title": "Somebody already lived here",
+    "summary": "Oglethorpe's colonists climbed this bluff in February 1733, and the Yamacraw came to meet them within the hour.",
+    "point": {
+      "at": {
+        "lat": 32.08137,
+        "lng": -81.09201
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Oglethorpe's bench, Yamacraw Bluff, Bay Street, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 92,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Savannah, Georgia: The Lasting Legacy of Colonial City Planning (Teaching with Historic Places)",
+        "publisher": "National Park Service",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.nps.gov/articles/savannah-georgia-the-lasting-legacy-of-colonial-city-planning-teaching-with-historic-places.htm"
+      },
+      {
+        "title": "A brief account of the establishment of the colony of Georgia, under Gen. James Oglethorpe, February 1, 1733 (1835)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/02013274/"
+      },
+      {
+        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/unk84031503/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the granite bench beside the path, just west of City Hall.\n\nIt was put here in nineteen oh six to mark the spot where, by tradition, James Oglethorpe pitched his tent under four pine trees in February seventeen thirty three. The town around you grew out from that tent.\n\nNow look north, toward the river, and think about the drop.\n\nOne of the colonists, Peter Gordon, wrote the landing down. The bluff was forty feet straight up, he said, and the sand was so loose that carrying their goods to the top would have been miserable, if Captain Scott and his men had not built them stairs.\n\nAbout an hour after they landed, they had visitors. The Yamacraw came with their chief, Tomochichi, and a trader to interpret. One of their men danced in front, white feathers on his head and rattles in his hands.\n\nThis was not empty country. Oglethorpe had come up the river weeks earlier, chosen the site, and made terms with Tomochichi before a single colonist arrived.\n\nWhen Oglethorpe wrote to London to explain his choice, he listed the height, the dry sandy soil, the fresh water and the shelter of the pines. Then he gave what he called the last and fullest proof that the place was healthy.\n\nAn Indian nation, who knew the nature of this country, had chosen it for their home.\n",
+    "teaser": "Find the granite bench, then look at the drop to the river.",
+    "detail": "The colonists' own dates are Old Style. The 1910 guide converts their landing on the first of February to the twelfth of February 1733, New Style, and the bench was set here on the twelfth of February 1906 by the Colonial Dames.",
+    "pronunciations": [
+      {
+        "written": "Yamacraw",
+        "say": "YAM-uh-craw"
+      },
+      {
+        "written": "Tomochichi",
+        "say": "TOH-moh-CHEE-chee"
+      },
+      {
+        "written": "Oglethorpe",
+        "say": "OH-gul-thorp"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "colonial",
+      "riverfront",
+      "indigenous"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-yamacraw-bluff",
+        "durationS": 92
+      }
+    ]
+  },
+  {
+    "id": "savannah-you-are-my-prisoner",
+    "title": "Sir James, You Are My Prisoner",
+    "summary": "On the ground where the Telfair Academy stands, a twenty-four-year-old arrested the royal governor of Georgia with one hand.",
+    "point": {
+      "at": {
+        "lat": 32.07893,
+        "lng": -81.095
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Telfair Academy, Telfair Square, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 89,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [
+      {
+        "title": "Historical record of the city of Savannah (Lee and Agnew, 1869): Gallant capture of Governor Wright by Major Joseph Habersham",
+        "publisher": "Library of Congress",
+        "retrievedAt": "2026-10-15",
+        "rights": "public-domain",
+        "url": "https://www.loc.gov/item/01007699/"
+      },
+      {
+        "title": "Telfair Academy of Arts and Sciences, Savannah (HABS GA-217): data pages, including the Academy's published history of the site",
+        "publisher": "Library of Congress, Historic American Buildings Survey",
+        "retrievedAt": "2026-10-15",
+        "rights": "fair-use-facts",
+        "url": "https://www.loc.gov/item/ga0221/"
+      }
+    ],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The grand house on the west side of Telfair Square is the Telfair Academy, designed by the English architect William Jay about two centuries ago. Mary Telfair left it in her will to become an academy of arts and sciences.\n\nBut the academy's own account of this ground goes back further. This, it says, was the site of Government House, home of Georgia's royal governor.\n\nIn January seventeen seventy-six, British warships were lying off Tybee. On the eighteenth, Savannah's Council of Safety voted to arrest the governor, Sir James Wright.\n\nA major named Joseph Habersham, twenty-four years old, volunteered. That evening the governor was meeting his council in his house. Habersham walked past the sentries at the door, alone. He went into the room, up to the head of the table, laid his hand on the governor's shoulder, and said, Sir James, you are my prisoner.\n\nAccording to the city's history of eighteen sixty-nine, the councillors assumed he had a large force close behind him. They fled through the doors and the windows.\n\nHe did not have a large force.\n\nWright gave his word that he would not leave town, and was kept in his own house under guard.\n\nHe kept his word for twenty-four days. Then he slipped past the sentries, ran to Bonaventure, and was rowed out to a British ship.\n",
+    "teaser": "He walked in alone, put a hand on the governor's shoulder, and the room emptied.",
+    "pronunciations": [
+      {
+        "written": "Habersham",
+        "say": "HAB-er-sham"
+      },
+      {
+        "written": "Telfair",
+        "say": "TEL-fair"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "revolution",
+      "squares",
+      "museums"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-you-are-my-prisoner",
+        "durationS": 89
       }
     ]
   },
