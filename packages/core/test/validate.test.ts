@@ -275,10 +275,6 @@ describe("rights policy", () => {
     expect(errorsOn(withRights("licensed"), "sources[0].rights")).toHaveLength(1);
   });
 
-  it("points an editor at the underlying record rather than the article reporting it", () => {
-    const issues = errorsOn(withRights("fair-use-facts"), "sources[0].rights");
-    expect(issues[0]!.message).toMatch(/public record/);
-  });
 
   describe("a legend citing the place's own account (ADR-0016)", () => {
     const legend = (overrides: Partial<Echo> = {}): Echo =>
@@ -301,15 +297,17 @@ describe("rights policy", () => {
       expect(errorsOn(echo, "sources[0].url")).toHaveLength(1);
     });
 
-    it("does not stretch to history told as fact, or to anything licensed", () => {
+    it("does not stretch to anything licensed; history told as fact takes the labelled-source rule", () => {
+      // Since James's 2026-10-15 decision, history may cite a labelled source too: no error,
+      // and a warning once approved (see "any credible source, labelled" below).
       const asHistory = legend({ category: "history", certainty: "documented" });
-      expect(errorsOn(asHistory, "sources[0].rights")).toHaveLength(1);
+      expect(errorsOn(asHistory, "sources[0].rights")).toEqual([]);
       const licensed = legend({ sources: [{ ...source(1), rights: "licensed", url: "https://example.org/x" }] });
       expect(errorsOn(licensed, "sources[0].rights")).toHaveLength(1);
     });
   });
 
-  describe("a draft citing any credible source (ADR-0016)", () => {
+  describe("any credible source, labelled (ADR-0016)", () => {
     const draft = (url?: string): Echo => ({
       ...withRights("fair-use-facts", url),
       editorial: "draft",
@@ -325,9 +323,12 @@ describe("rights policy", () => {
       expect(errorsOn(draft(), "sources[0].url")).toHaveLength(1);
     });
 
-    it("still refuses it once approved", () => {
+    it("allows it once approved too, labelled, with a warning that lists it (James, 2026-10-15)", () => {
       const approved = { ...draft("https://example.org/museum"), editorial: "approved" as const };
-      expect(errorsOn(approved, "sources[0].rights")).toHaveLength(1);
+      expect(errorsOn(approved, "sources[0].rights")).toEqual([]);
+      const warned = validateEcho(approved).filter((i) => i.field === "sources[0].rights");
+      expect(warned.map((i) => i.severity)).toEqual(["warning"]);
+      expect(warned[0]!.message).toMatch(/not clearly public domain/);
     });
   });
 
