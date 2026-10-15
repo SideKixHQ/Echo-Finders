@@ -1,0 +1,53 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Inside Madison Square, at the foot of the bronze Jasper monument in its centre. Public square.
+# Position: Overture point for the William Jasper Monument (32.07357,-81.09392), which agrees with the Overture Madison Square point at 332 Bull St (high confidence).
+id: savannah-the-sergeant-who-would-not-be-an-officer
+title: "The Sergeant Who Would Not Be an Officer"
+summary: "William Jasper turned down a commission twice. Savannah made him fifteen feet tall in bronze."
+place: "Jasper Monument, Madison Square, Savannah, Georgia"
+at: { lat: 32.07350, lng: -81.09390 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 81
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.75
+tags: [savannah, savannah-core, madison-square, american-revolution, monuments]
+teaser: "Look at his right hand."
+script: |
+  Look up at the bronze soldier on top of the monument in the middle of the square. His left hand holds a battle-worn flag out at arm's length. His right hand is pressed against his side, over a bullet wound.
+
+  His name was William Jasper, a sergeant in a South Carolina regiment.
+
+  Some time before he died, the British fleet bombarded Fort Moultrie, and the fort's flagstaff was shot in two. Jasper caught the flag, tied it to a sponge staff, and jumped up onto the rampart to hold it there until a new pole was found.
+
+  He was offered a commission as an officer. He turned it down. He said he could neither read nor write, and so did not think himself worthy. The governor offered it again. He refused again.
+
+  On the ninth of October, seventeen seventy nine, in the attack on the British lines at Spring Hill, Jasper was mortally wounded. He carried his regiment's colours off the field anyway.
+
+  A hundred years later to the day, Savannah laid the cornerstone of this monument. When it was unveiled in eighteen eighty eight, the President came.
+
+  He refused to be made an officer. So the city made him fifteen feet tall.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Historical record of the city of Savannah (F. D. Lee and J. L. Agnew, 1869)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah and its surroundings (G. A. Gregory, 1890)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007695/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Illustrated guide to Savannah (Maude Heyward, 1910)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/unk84031503/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Moultrie
+    say: MOOL-tree

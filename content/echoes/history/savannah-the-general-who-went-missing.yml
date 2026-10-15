@@ -1,0 +1,69 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Beside the Greene monument at the centre of Johnson Square, on the square's paths.
+# Position: Square centre from Overture street centrelines (midpoint of Bull at Bryan and Bull at Congress); the monument stands at the centre (medium confidence).
+id: savannah-the-general-who-went-missing
+title: "The General Who Went Missing"
+summary: "The monument in Johnson Square stood for seventy-three years before the general it honours was laid beneath it."
+place: "Nathanael Greene Monument, Johnson Square, Savannah, Georgia"
+at: { lat: 32.07993, lng: -81.09157 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 99
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, squares, revolution, monuments]
+teaser: "The monument went up first. The general arrived seventy-three years later."
+script: |
+  Look at the tall monument in the middle of Johnson Square.
+
+  When it went up in eighteen twenty-nine, it was paid for partly by a state lottery, and it was meant to honour two Revolutionary generals at once. Nathanael Greene, and Casimir Pulaski. A city history forty years later described it as plain, without an inscription.
+
+  Greene had died near Savannah in seventeen eighty-six, after what may have been sunstroke. He was buried in the old burying ground on what was then South Broad Street, with the artillery firing minute guns.
+
+  And then Savannah lost him.
+
+  For more than a century nobody could say for certain where his body was. The stories grew. That he had been spirited away at night. That he had been sunk in a creek. That he had been carried off to Cumberland Island.
+
+  In March nineteen-oh-one, a committee sent by the Rhode Island Society of the Cincinnati opened a family vault in that old cemetery. Inside was a coffin plate. On it, the name Greene, and the date seventeen eighty-six. Beside him lay a second body, believed to be his son, George Washington Greene, who had drowned in the river as a young man.
+
+  None of the stories was true. He had been exactly where he was put.
+
+  In November nineteen-oh-two, father and son were buried again. Here, beneath the monument.
+
+  For seventy-three years, it had been his memorial with nobody under it. It just took a while for him to arrive.
+editorial: draft
+factCheck: unchecked
+pronunciations:
+  - written: Nathanael Greene
+    say: nuh-THAN-yel GREEN
+  - written: Casimir Pulaski
+    say: KAZ-ih-meer puh-LASS-kee
+sources:
+  - title: "Historical record of the city of Savannah (Lee and Agnew, 1869): Burial of Major-General Greene; Monuments"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The Savannah morning news, 5 March 1901, page 10: Greene's body found"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn89053684/1901-03-05/ed-1/?sp=10
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Evening times-Republican, 7 March 1901, page 1: Nathaniel Greene's grave discovered"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn85049554/1901-03-07/ed-1/?sp=1
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The Spokane press, 14 November 1902, page 3: body of Gen. Greene placed beneath monument"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn88085947/1902-11-14/ed-1/?sp=3
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Nathanael Greene"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/nathanael-greene.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain

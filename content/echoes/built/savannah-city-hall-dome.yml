@@ -1,0 +1,51 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Bay Street sidewalk in front of City Hall at the head of Bull Street, looking up at the dome.
+# Position: Just south of the Overture "Savannah City Hall" point (2 E Bay St), on the Bay Street frontage at Bull Street (medium confidence).
+id: savannah-city-hall-dome
+title: "The dome was meant to go green"
+summary: "City Hall's dome was sheathed in copper and left to weather. Then the air got to it, and the city has been choosing its colour ever since."
+place: "Savannah City Hall, Bay and Bull Streets, Savannah, Georgia"
+at: { lat: 32.08100, lng: -81.09110 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 72
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, architecture, civic, bay-street]
+teaser: "Look up at the dome. It was not built to look like that."
+script: |
+  Look up at the dome on City Hall.
+
+  It was not built to look like that.
+
+  This is the spot where the City Exchange stood from seventeen ninety nine. In nineteen oh four the city tore it down and started again. The new City Hall was finished at the end of nineteen oh five, and the first council met here in January nineteen oh six.
+
+  The dome rises another seventy feet above the building. It was sheathed in copper, and for many years the city simply let that copper weather on its own.
+
+  Then the air got to it. In nineteen sixty six the city painted the dome to stop it deteriorating. The culprit, according to the federal survey of the building, was a local fertilizer plant.
+
+  By the early nineteen eighties it wore a protective coating, coloured to look like the weathered copper it had been designed to become all along.
+
+  What you are looking at now came after that.
+
+  It was designed to change colour on its own. The city has been choosing its colour ever since.
+detail: >-
+  The cornerstone, laid on the eleventh of August 1904, is at the northeast corner about twenty
+  feet above the ground below, and is easiest to see from one of the footbridges over Factors Walk.
+  The architect was Hyman W. Witcover.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Savannah City Hall, Bay and Bull Streets (HABS GA-2165), data pages"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/pictures/item/ga0459/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Illustrated guide to Savannah (Maude Heyward, 1910)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/unk84031503/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

@@ -1,0 +1,63 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Public path beside the granite Oglethorpe bench on the bluff, Bay Street between Bull and Whitaker, west of City Hall.
+# Position: Overture "Oglethorpe's Bench" historic-site point, consistent with the 1910 guide's "Bay street between Bull and Whitaker, to the west of the City Hall" (medium confidence).
+id: savannah-yamacraw-bluff
+title: "Somebody already lived here"
+summary: "Oglethorpe's colonists climbed this bluff in February 1733, and the Yamacraw came to meet them within the hour."
+place: "Oglethorpe's bench, Yamacraw Bluff, Bay Street, Savannah, Georgia"
+at: { lat: 32.08137, lng: -81.09201 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, colonial, riverfront, indigenous]
+teaser: "Find the granite bench, then look at the drop to the river."
+script: |
+  Find the granite bench beside the path, just west of City Hall.
+
+  It was put here in nineteen oh six to mark the spot where, by tradition, James Oglethorpe pitched his tent under four pine trees in February seventeen thirty three. The town around you grew out from that tent.
+
+  Now look north, toward the river, and think about the drop.
+
+  One of the colonists, Peter Gordon, wrote the landing down. The bluff was forty feet straight up, he said, and the sand was so loose that carrying their goods to the top would have been miserable, if Captain Scott and his men had not built them stairs.
+
+  About an hour after they landed, they had visitors. The Yamacraw came with their chief, Tomochichi, and a trader to interpret. One of their men danced in front, white feathers on his head and rattles in his hands.
+
+  This was not empty country. Oglethorpe had come up the river weeks earlier, chosen the site, and made terms with Tomochichi before a single colonist arrived.
+
+  When Oglethorpe wrote to London to explain his choice, he listed the height, the dry sandy soil, the fresh water and the shelter of the pines. Then he gave what he called the last and fullest proof that the place was healthy.
+
+  An Indian nation, who knew the nature of this country, had chosen it for their home.
+pronunciations:
+  - written: Yamacraw
+    say: YAM-uh-craw
+  - written: Tomochichi
+    say: TOH-moh-CHEE-chee
+  - written: Oglethorpe
+    say: OH-gul-thorp
+detail: >-
+  The colonists' own dates are Old Style. The 1910 guide converts their landing on the first of
+  February to the twelfth of February 1733, New Style, and the bench was set here on the twelfth
+  of February 1906 by the Colonial Dames.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Savannah, Georgia: The Lasting Legacy of Colonial City Planning (Teaching with Historic Places)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/savannah-georgia-the-lasting-legacy-of-colonial-city-planning-teaching-with-historic-places.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "A brief account of the establishment of the colony of Georgia, under Gen. James Oglethorpe, February 1, 1733 (1835)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/02013274/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Illustrated guide to Savannah (Maude Heyward, 1910)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/unk84031503/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

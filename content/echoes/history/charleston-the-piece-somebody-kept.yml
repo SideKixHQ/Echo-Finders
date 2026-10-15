@@ -1,0 +1,49 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: King Street side of Marion Square, by the fenced fragment of the Revolutionary horn work.
+# Position: West side of Marion Square, west of the HALS SC-17 centre point (32.786891, -79.935684); HALS and the 1919 guide put the horn work on the King Street side, but the fragment's exact spot is not given in any source fetched (low confidence). About 80 m from the Old Citadel echo.
+id: charleston-the-piece-somebody-kept
+title: "The Piece Somebody Kept"
+summary: "A fenced fragment on Marion Square is what is left of the fortification that guarded Charleston in 1780."
+place: "Horn work remains, Marion Square, Charleston, South Carolina"
+at: { lat: 32.78680, lng: -79.93640 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 64
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, american-revolution, fortifications, ruins]
+teaser: "The oldest thing on the square is easy to walk past."
+script: |
+  On the King Street side of this square, behind an iron fence, is a fragment of old wall. It is easy to walk past. It is the oldest thing on the square.
+
+  In seventeen fifty nine, this was the northern edge of Charleston, and the road into town came through here. To guard it, the colony built a horn work, a great fortification designed by a German engineer named Emmanuel Hesse. It covered five acres. It mounted eighteen cannon. A wide moat ran along its north side. Parts of it were built of tabby, the old coastal building material you can see in that fragment.
+
+  In seventeen eighty, a British army laid siege to Charleston, and the horn work was the city's main defence.
+
+  It was not enough. Charleston surrendered, and it was the largest American surrender until the Civil War.
+
+  Four years later, the horn work was taken down. Somebody kept this piece, and put a fence around it.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Marion Square (Citadel Green), HALS SC-17, data pages"
+    publisher: "Historic American Landscapes Survey, Library of Congress"
+    url: https://www.loc.gov/item/sc1226/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Guide to Charleston, S. C.; with brief history of the city and a map thereof (1919)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/20002718/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Christopher Gadsden"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/christopher-gadsden.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Emmanuel Hesse
+    say: eh-MAN-yoo-el HESS-eh

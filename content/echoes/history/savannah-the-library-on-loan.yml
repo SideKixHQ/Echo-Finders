@@ -1,0 +1,43 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: The Gaston Street sidewalk at Whitaker Street, at the north edge of Forsyth Park, looking at the portico of Hodgson Hall. Public sidewalk.
+# Position: Estimated from the Overture point for the Georgia Historical Society's Jepson House at 501 Whitaker St (32.07048,-81.09655) and the guides' location of Hodgson Hall at Whitaker and Gaston, fronting the park; Hodgson Hall itself is not a separate point in the places file (medium confidence).
+id: savannah-the-library-on-loan
+title: "The Library on Loan"
+summary: "Two sisters built a library in a husband's memory, and its owners lent the whole thing to the city."
+place: "Hodgson Hall, Georgia Historical Society, Savannah, Georgia"
+at: { lat: 32.07035, lng: -81.09620 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 60
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, forsyth-park, libraries]
+teaser: "The name on the front belongs to a man who did not build it."
+script: |
+  Face the building on the corner, with the portico and a man's name on the front. W. B. Hodgson Hall.
+
+  William Hodgson did not build it. His widow Margaret and her sister Mary Telfair built it in his memory, in eighteen seventy six, for the Georgia Historical Society.
+
+  The Society had been collecting since eighteen thirty nine. Books, papers, anything touching the history of Georgia. By eighteen ninety it had about twenty thousand volumes.
+
+  A guidebook of the time admitted the outside was plain. It was built for the convenience of a library. The inside was the part worth seeing.
+
+  Then, in eighteen ninety three, the Society lent its books and this building to the city, so that Savannah could have a public library. The Society kept on collecting.
+
+  A husband's name on the front. His widow's money in the walls. And for a while, the books inside belonged to everyone.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Savannah and its surroundings (G. A. Gregory, 1890)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007695/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Illustrated guide to Savannah (Maude Heyward, 1910)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/unk84031503/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

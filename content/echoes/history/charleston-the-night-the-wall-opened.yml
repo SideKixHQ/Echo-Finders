@@ -1,0 +1,60 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: South sidewalk of Magazine Street in front of the Old City Jail, just east of Franklin Street.
+# Position: HABS places the jail at the southeast corner of Magazine and Franklin; intersection from Overture road segments, matched by the Overture "Old City Jail" point at 21 Magazine St (high confidence).
+id: charleston-the-night-the-wall-opened
+title: "The Night the Wall Opened"
+summary: "The Old Jail used to be taller. On the night of the 1886 earthquake, its yard wall split, and half the prisoners walked out."
+place: "Old City Jail, 21 Magazine Street, Charleston, South Carolina"
+at: { lat: 32.77862, lng: -79.93718 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 89
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, jails, earthquake-1886, architecture]
+teaser: "Look up at the Old Jail. It used to be taller."
+script: |
+  Look up at the old jail. Heavy walls, towers, the look of a building nothing could move.
+
+  It used to be taller.
+
+  It was built in eighteen-oh-two, and for most of the century it had a fourth floor. Over
+  the eight-sided wing at the back stood a tall tower, which the records call the
+  ventilator, or the high cupola.
+
+  On the last night of August, eighteen eighty-six, an earthquake struck Charleston.
+
+  The local paper reported that the jail's walls, in some places nearly three feet thick,
+  yielded to the quivering earth like so much glass. Cracks ran from the top of the building
+  down into the foundations.
+
+  The jailer made a decision. Rather than leave his prisoners in cells that might come down
+  on them, he let them out into the jail yard.
+
+  The yard had a wall around it. The earthquake opened a gap in it.
+
+  There were sixty-nine prisoners in the jail that night. Thirty-six of them went out
+  through the gap.
+
+  Afterwards the tower was condemned and torn down, and the top floor was taken off. The
+  building you are looking at is the jail the earthquake left behind. It went on holding
+  prisoners until nineteen thirty-nine.
+
+  It still looks like nothing could get out of it. For one night, more than half of the
+  people inside proved otherwise.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Charleston County Jail, HABS No. SC-688, written historical and descriptive data (Christine Trebellas, 1994)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/sc0902/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Old Jail"
+    publisher: "National Park Service, Travel Historic Charleston"
+    url: https://www.nps.gov/places/old-jail.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain

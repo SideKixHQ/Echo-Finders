@@ -1,0 +1,64 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: Church Street just north of Queen Street, looking north up the street at the steeple and south portico of St. Philip's.
+# Position: Church Street centreline from Overture road segments, about thirty metres north of the Queen Street intersection; placed to keep forty metres or more from the Huguenot, Dock Street and churchyard echoes (medium confidence).
+id: charleston-the-sailor-on-the-steeple
+title: "The Sailor on the Steeple"
+summary: "In the fire of 1796 an enslaved man climbed the burning steeple and saved St. Philip's. A poem later credited the wrong church."
+place: "St. Philip's Church, Church Street, Charleston, South Carolina"
+at: { lat: 32.77857, lng: -79.92942 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 98
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, french-quarter, st-philips, fires, slavery]
+teaser: "Look up Church Street at the steeple of St. Philip's. It is not the steeple this story is about."
+script: |
+  Look up Church Street at the steeple of St. Philip's. The church sits right out in the
+  roadway, the way parish churches did in England, and the street has to bend around it.
+
+  This is not the steeple this story is about.
+
+  In seventeen ninety-six a great fire swept through this part of town. It destroyed the
+  French church on the corner behind you. And it reached the older St. Philip's, which stood
+  on this same spot, and set its steeple alight.
+
+  An enslaved Black man, a sailor by one account, climbed up the outside of the tower and
+  tore off the burning shingles.
+
+  It worked. The church was saved.
+
+  For this, the old accounts agree, he was given his freedom. One adds a sum of money, and a
+  fishing boat, completely fitted out with nets.
+
+  Then the story got away from him. A popular poem moved it to the other great church in
+  town, and called it How He Saved St. Michael's. By nineteen-oh-one it was a favourite piece
+  for recitation contests. A book about Charleston published that year set the record straight, and
+  then added four words of its own. Thus is history made.
+
+  The church he saved burned anyway, in eighteen thirty-five, and the one in front of you was
+  built to replace it. Its steeple came a decade later.
+
+  The histories that tell this story record his reward in detail. The money. The boat. The
+  nets. They do not record his name.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "St. Philip's Episcopal Church"
+    publisher: "National Park Service, Travel Historic Charleston"
+    url: https://www.nps.gov/places/st-philips-episcopal-church.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the fire of 1796"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/06042434/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, S.C. and vicinity illustrated (1901), St. Philip's Church"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/02003003/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

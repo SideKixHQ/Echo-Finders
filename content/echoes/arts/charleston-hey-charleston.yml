@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: Franklin Street sidewalk in front of the Old Marine Hospital, 20 Franklin Street, looking at the porches.
+# Position: Overture points for 20 Franklin St moved west onto Franklin St, which runs along the building's west front per HABS SC-13-10; about 85 m from the Old City Jail point at 21 Magazine St (medium confidence).
+id: charleston-hey-charleston
+title: "Hey Charleston"
+summary: "An orphanage paid its way with a brass band, and by many accounts gave the world a dance."
+place: "Old Marine Hospital (Jenkins Orphanage), 20 Franklin Street, Charleston, South Carolina"
+at: { lat: 32.77790, lng: -79.93770 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, music, jazz, african-american-history]
+teaser: "A boy dancing in front of a band of orphans."
+script: |
+  Look at the porch railings on this building. They were designed to look like the stone tracery around a Gothic church window. It was built in the eighteen thirties as a hospital for sailors.
+
+  From eighteen ninety five, it was home to something louder. The Jenkins Orphanage.
+
+  The Reverend Daniel Jenkins had been born enslaved, and orphaned young. In eighteen ninety one he took in four boys he found sheltering in an abandoned building. Soon there were hundreds. To pay for them, he did something unusual. He gathered up instruments, hired two local musicians as teachers, and sent the boys out as a brass band.
+
+  It worked. The band played the streets of Charleston, then New York and London. It marched in the inaugural parades of two presidents.
+
+  And it played the tunes of the Gullah people of the Sea Islands, with a small boy out front, dancing the steps. In Harlem, the pianist Willie the Lion Smith remembered, people would shout to that boy. Hey Charleston, do your Geechie dance.
+
+  James P Johnson heard the band and wrote a set of tunes in that rhythm. One of them was called The Charleston, and it went around the world.
+
+  By many accounts, the craze started here. With orphans, earning their keep.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old Marine Hospital"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/old-marine-hospital.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Fox Movietone News: Jenkins Orphanage Band (National Film Registry essay by Julie Hubbert)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/static/programs/national-film-preservation-board/documents/jenkins.pdf
+    retrievedAt: "2026-10-15"
+    rights: fair-use-facts
+  - title: "Guide to Charleston, S. C.; with brief history of the city and a map thereof (1919)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/20002718/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Geechie
+    say: GEE-chee
+  - written: Gullah
+    say: GULL-uh

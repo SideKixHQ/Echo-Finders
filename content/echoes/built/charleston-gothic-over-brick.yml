@@ -1,0 +1,57 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: East sidewalk of Archdale Street in front of the Unitarian Church and its churchyard gate.
+# Position: Archdale Street centreline from Overture road segments, offset to the east sidewalk beside the Overture point for the Unitarian Church in Charleston (4 Archdale St) (high confidence).
+id: charleston-gothic-over-brick
+title: "Gothic over Brick"
+summary: "The Unitarian Church looks medieval. Its buttresses hold nothing up, and under the stucco is a plain brick meeting house of 1787."
+place: "Unitarian Church, 4 Archdale Street, Charleston, South Carolina"
+at: { lat: 32.77856, lng: -79.93456 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, churches, architecture, gothic-revival]
+teaser: "Crenellated tower, pointed windows, buttresses. Look again at the buttresses."
+script: |
+  Look at the Unitarian Church. A tower with battlements, pointed windows, buttresses down
+  the sides. It looks like a piece of medieval England.
+
+  Look again at the buttresses.
+
+  Buttresses are supposed to hold a building up. According to the Park Service, these are
+  false. They are there for the look. Inside, the vaulted ceiling, modelled on the chapel of
+  Henry the Seventh at Westminster, is lath and plaster.
+
+  The Gothic is a costume. Underneath it is a much plainer building.
+
+  In seventeen seventy-two, work began here on a small rectangular brick church, because the
+  Independent Church over on Meeting Street had more members than it could hold. The
+  Revolution stopped the work. The church was finally finished in seventeen eighty-seven.
+
+  Then, in eighteen fifty-two, a young architect named Francis Lee was given two years to
+  remake it in the romantic taste of the day. He added the chancel at the back and the
+  four-storey tower, and he covered the old brick walls in stucco.
+
+  When the earthquake of eighteen eighty-six badly damaged it, people from across the
+  country sent money for the repairs.
+
+  So the oldest Unitarian church in the South is an eighteenth-century meeting house in a
+  nineteenth-century dream of the Middle Ages. The brick is still in there, under the
+  stucco.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Unitarian Church"
+    publisher: "National Park Service, Travel Historic Charleston"
+    url: https://www.nps.gov/places/unitarian-church.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, S.C. and vicinity illustrated (1901), the Unitarian Church on Archdale Street"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/02003003/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

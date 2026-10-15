@@ -1,0 +1,60 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: The raised High Battery promenade on East Battery, near its south end, looking out across the harbour towards Fort Sumter.
+# Position: East of the East Battery house fronts (Overture "High Battery Charleston SC", 10 E Battery) on the sea-wall walk, about 190 m east of the White Point Garden echo (medium confidence).
+id: charleston-the-audience-on-the-sea-wall
+title: "The Audience on the Sea Wall"
+summary: "When the guns opened on Fort Sumter in April 1861, Charleston came down to this wall to watch."
+place: "The High Battery sea wall, East Battery, Charleston, South Carolina"
+at: { lat: 32.77030, lng: -79.92830 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 91
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, south-of-broad, battery, civil-war, fort-sumter]
+teaser: "Look out across the harbour to the low fort near its mouth."
+script: |
+  Look out across the harbour to the low fort near its mouth. That is Fort Sumter.
+
+  At half past four in the morning on the twelfth of April, eighteen sixty-one, a mortar
+  fired from Fort Johnson, across the water. The shell arched high over the harbour and
+  burst in the air above Sumter. It was a signal. Within half an hour, every Confederate
+  battery that could reach the fort was firing at it.
+
+  And the town came out to watch.
+
+  A Charleston writer, telling it years later, says that within five minutes this Battery
+  swarmed with people. Then the houses behind you, the wharves, the rooftops. The road was
+  so jammed with carriages that boys got from the pavement to the sea wall by jumping from
+  one carriage roof to the next.
+
+  They watched all that day and into the next. Fathers, brothers and sons were out in the
+  batteries on the islands. On the second day the fort caught fire, its flag came down,
+  and the garrison agreed to leave.
+
+  The people on this wall had come to see a war begin. They did not expect to be in it.
+
+  Two summers later, Union troops took Morris Island, at the harbour mouth, and the
+  bombardment of Charleston began in earnest. The siege went on until February eighteen
+  sixty-five. The guns were pointed at the city behind you.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Battle of Fort Sumter, April 1861"
+    publisher: "National Park Service, Fort Sumter and Fort Moultrie National Historical Park"
+    url: https://www.nps.gov/articles/battle-of-fort-sumter-april-1861.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Fort Sumter"
+    publisher: "National Park Service, Fort Sumter and Fort Moultrie National Historical Park"
+    url: https://www.nps.gov/fosu/learn/historyculture/fort_sumter.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), Confederate Charleston"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/06042434/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

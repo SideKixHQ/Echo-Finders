@@ -1,0 +1,60 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: Tradd Street between Church and Meeting streets, among the old brick and stucco house fronts south of Broad.
+# Position: Tradd Street centreline interpolated between Overture 38 Tradd St and 70 Tradd St (John Robert Pringle House); no single house is the subject, so the spot is a representative street (medium confidence).
+id: charleston-bolted-together
+title: "Bolted Together"
+summary: "After the 1886 earthquake Charleston bolted its buildings back together. When the ground shook again, the iron held."
+place: "Tradd Street, south of Broad, Charleston, South Carolina"
+at: { lat: 32.77482, lng: -79.93040 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 95
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, south-of-broad, earthquake, architecture]
+teaser: "Look along the house fronts for iron on the outside of the walls."
+script: |
+  Look along the house fronts on this street for iron on the outside of the walls. A plate,
+  or the end of a bolt, up between the floors. Not every house has one. Many old buildings
+  in this city do, and a lot of them were put there because of one night.
+
+  At about ten o'clock on the thirty-first of August, eighteen eighty-six, an earthquake
+  hit Charleston. It came with no warning and a roar like nothing anyone had heard. Walls
+  and chimneys came down into the streets. Overturned lamps started fires. It was said at
+  the time that more people were killed or hurt in those few seconds than the shelling of
+  the whole Civil War siege had managed.
+
+  In the months that followed, much of the town was not so much rebuilt as bolted back
+  together. Iron bolts and iron plates went into the cracked walls.
+
+  The test came on St. Patrick's Day, eighteen eighty-seven. At ten past nine in the
+  morning there was another violent shock, with the same underground roar. The buildings
+  seemed to be thrust forward and pulled back.
+
+  A report from Charleston that day said that most of the buildings in town had been made
+  earthquake-proof by iron bolts and plates, and that without them there would have been
+  serious damage. Unrepaired cracks widened. Windows rattled. Plaster fell.
+
+  The St. Patrick's Day celebrations went ahead as planned. Somebody had done the
+  ironmongery.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Connecticut Western News, March 23, 1887, \"Charleston Again Shaken\""
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84027718/1887-03-23/ed-1/?sp=4
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Short sketch of Charleston, S.C.; how it fared in two wars and an earthquake"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/00002680/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston Community History"
+    publisher: "National Park Service, Travel Charleston"
+    url: https://www.nps.gov/articles/charleston-community-history.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain

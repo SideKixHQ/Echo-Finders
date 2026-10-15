@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Battlefield Memorial Park on Martin Luther King Jr Boulevard, beside the old Central of Georgia depot buildings that now hold the Savannah History Museum and visitor centre. Public park.
+# Position: Overture point for Revolutionary Battlefield Memorial Park (32.07559,-81.09942), just south of the Overture points for the Central of Georgia Depot and the Battlefield Park Heritage Center; the 1869 history puts the Spring Hill redoubt where the Central Railroad depot was built (medium confidence for the redoubt's exact footprint).
+id: savannah-white-paper-in-their-hats
+title: "White Paper in Their Hats"
+summary: "The French and American attack on Spring Hill in 1779 was planned down to the last detail. Then someone walked across with the plan."
+place: "Spring Hill redoubt site, Battlefield Memorial Park, Savannah, Georgia"
+at: { lat: 32.07560, lng: -81.09935 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.75
+tags: [savannah, savannah-core, american-revolution, siege-of-savannah, battlefields]
+teaser: "Every man was to wear a piece of white paper in his hat."
+script: |
+  Stand in the park here, beside the old railroad depot. In seventeen seventy nine this ground was Spring Hill, the strongest point in the British lines around Savannah. It guarded the road to Augusta.
+
+  On the eighth of October, the French and American armies besieging the town got their orders for an attack on this spot, before dawn. Nobody was to fire until the redoubt was taken. And so that they could tell friend from enemy in the dark, every man was to wear a piece of white paper in his hat.
+
+  That night, a sergeant major of the American grenadiers slipped away to the British. He took a copy of the orders with him. The British commander moved men to this side of his line.
+
+  The columns lost their way in the dark and arrived in daylight. The British were waiting. French and American flags were planted on the redoubt, and torn down, and planted again. The fight began at daybreak. By nine o'clock it was over.
+
+  The allies had brought about four thousand nine hundred men. Around eleven hundred were killed or wounded that morning.
+
+  In eighteen thirty seven, the redoubt itself was dug down to fill the ground for the new railroad depot. Bayonets and bullets came up with the soil.
+
+  They had planned everything, down to the paper in their hats. What they could not plan for was a man walking across with the plan.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Historical record of the city of Savannah (F. D. Lee and J. L. Agnew, 1869), chapter on the siege and the assault upon Spring Hill redoubt"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah souvenir number, Pulaski sesqui-centennial celebration (Georgia Historical Society, 1929)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/ca30001435/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Casimir Pulaski"
+    publisher: "National Park Service, Fort Pulaski National Monument"
+    url: https://www.nps.gov/people/casimir-pulaski.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Central of Georgia Railway, Savannah Repair Shops (HAER GA-1), data pages"
+    publisher: "Library of Congress, Historic American Engineering Record"
+    url: https://www.loc.gov/item/ga0356/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

@@ -1,0 +1,48 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Oglethorpe Avenue sidewalk in front of the Juliette Gordon Low Birthplace; the gate is in the garden's east wall, inside the museum grounds.
+# Position: HABS record coordinates and the Overture building footprint agree within 5 m; spot set on the Oglethorpe Avenue frontage (high confidence).
+id: savannah-the-gate-she-made
+title: "The Gate She Made"
+summary: "In the garden where the Girl Scouts' founder played as a child stands an iron gate she made herself."
+place: "Juliette Gordon Low Birthplace, Oglethorpe Avenue at Bull Street, Savannah, Georgia"
+at: { lat: 32.07697, lng: -81.09238 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, girl-scouts, women, gardens, museums]
+teaser: "Everything else in the garden had to be remembered."
+script: |
+  This is the house where Juliette Gordon Low was born, in eighteen sixty. Her family called her Daisy. Fifty-two years later, in this city, she started the Girl Scouts.
+
+  Her grandfather bought the house in eighteen thirty-one, and Gordons lived here for generations. The Girl Scouts bought it in nineteen fifty-three.
+
+  If you go into the garden, look for the iron double gate in the east wall.
+
+  She made it.
+
+  Not ordered it. Designed and made it, in eighteen eighty-nine, for her own house in England, an estate called Wellesbourne. In nineteen twenty-six she brought it home to Savannah, to stand at the entrance of a small park east of the city, where many of the early Girl Scout meetings were held. In nineteen seventy-two it was moved here for safekeeping.
+
+  The garden around it is a reconstruction, laid out in the nineteen fifties from the memories of her relatives. They did not agree. One remembered circles. Another remembered dirt paths, violets, a banana tree. A photograph taken at Daisy's wedding, in eighteen eighty-six, showed paths running out from the porch.
+
+  Everything else in this garden had to be remembered. The gate, she made.
+editorial: draft
+factCheck: unchecked
+pronunciations:
+  - written: Wellesbourne
+    say: WELZ-born
+sources:
+  - title: "Juliette Gordon Low Birthplace, Garden, 10 East Oglethorpe Avenue, Savannah (HALS GA-4)"
+    publisher: "Library of Congress, Historic American Landscapes Survey"
+    url: https://www.loc.gov/item/ga1151/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Wayne-Gordon House, 10 East Oglethorpe Avenue, Savannah (HABS): record and data pages"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/ga0010/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

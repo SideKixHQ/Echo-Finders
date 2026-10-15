@@ -1,0 +1,61 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: East sidewalk of Meeting Street in front of the portico of Market Hall, at the head of the market sheds.
+# Position: Meeting Street centreline at Market Street from Overture road segments, offset to the hall's side; Overture points for Market Hall (188 Meeting St) cluster here (high confidence).
+id: charleston-skulls-over-the-market
+title: "Skulls over the Market"
+summary: "Look up at the Market Hall's frieze. The skulls tell you what was sold here, and the buzzards were protected by law."
+place: "Market Hall and Sheds, Meeting and Market streets, Charleston, South Carolina"
+at: { lat: 32.78075, lng: -79.93145 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 97
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, city-market, markets, architecture, birds]
+teaser: "Look up under the roof of the Market Hall. Those shapes are skulls."
+script: |
+  Look up at the band of decoration under the roof of the Market Hall. Those shapes are
+  skulls. Bulls, and sheep.
+
+  They are an advertisement. This was a meat market.
+
+  The land was given to the city for a market in seventeen eighty-eight, and after a great
+  fire the hall and the long open sheds behind it went up in eighteen forty and forty-one.
+  Every day, meat and produce came in from the country around the town. The rules were
+  strict. Cuts and weights were regulated. Vendors had to wear clean white aprons. And to
+  keep everything fresh, whatever was left at the end of the day was thrown into the street.
+
+  Which is where the market's other workers came in.
+
+  Buzzards cleaned the streets around the market, and Charlestonians valued the service so
+  much that the birds were protected by law. People called them Charleston eagles. A
+  visiting reporter in eighteen seventy-four watched one pick the street clean, then fly up
+  to sit on the market-house roof, protected, he wrote, like any official of the city.
+
+  You may have heard that these sheds were a slave market. The record puts those sales
+  somewhere else. Charleston sold enslaved people at the Exchange, and after eighteen
+  fifty-six in private marts on Chalmers, State and Queen streets.
+
+  These sheds were built to sell beef. One of the buildings built to sell people is still
+  standing, a few blocks south of here, on Chalmers Street.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Market Hall and Sheds"
+    publisher: "National Park Service, Travel Historic Charleston"
+    url: https://www.nps.gov/places/market-hall-and-sheds.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "\"The South,\" Chicago Daily Tribune, October 19, 1874, page 3 (turkey buzzards at the Charleston market)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84031492/1874-10-19/ed-1/?sp=3
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Old Slave Mart"
+    publisher: "National Park Service, Travel Historic Charleston"
+    url: https://www.nps.gov/places/old-slave-mart.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain

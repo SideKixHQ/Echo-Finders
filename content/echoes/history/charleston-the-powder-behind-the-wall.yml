@@ -1,0 +1,72 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: The foot of Broad Street at East Bay, facing the front of the Old Exchange and Provost Dungeon across the road.
+# Position: West of Overture "Old Exchange and Provost Dungeon" (122 E Bay) at the Broad and East Bay junction, on the public side of the street (medium confidence).
+id: charleston-the-powder-behind-the-wall
+title: "The Powder Behind the Wall"
+summary: "In 1780 the Americans bricked ten thousand pounds of powder into the Exchange vaults. The British never found it."
+place: "The Old Exchange and Provost Dungeon, East Bay Street, Charleston, South Carolina"
+at: { lat: 32.77695, lng: -79.92730 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, south-of-broad, old-exchange, revolution]
+teaser: "Look at the building at the foot of Broad Street. Think about what is under it."
+script: |
+  The building at the foot of Broad Street is the Exchange. When it was finished, in
+  seventeen seventy-one, the harbour came right up to it. Everything between it and the
+  water now is filled land.
+
+  Think about what is underneath it.
+
+  In the spring of seventeen eighty a British army laid siege to Charleston. During the
+  siege the defenders moved ten thousand pounds of gunpowder out of the town's main
+  magazine, by night, and carried it down into the vaults of this building. Then they
+  bricked it in.
+
+  The city surrendered in May. The British took vast stores of powder when it fell. They
+  held Charleston for more than two years. They used the Exchange as barracks, and the
+  cellar became their military prison, the Provost. In one damp, dark room they kept
+  criminals and suspected rebels together, men and women, some held on the thinnest of
+  charges.
+
+  William Moultrie, one of the American commanders, wrote about it afterwards. The Provost,
+  he said, was right next to the powder. The British never found it. When the Americans
+  came back into the town, it was still there.
+
+  For more than two years, the British had been guarding it for them.
+pronunciations:
+  - written: Moultrie
+    say: MOOL-tree
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Exchange and Provost Building"
+    publisher: "National Park Service, Travel Charleston"
+    url: https://www.nps.gov/places/exchange-and-provost-building.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The history of South Carolina in the revolution, 1775-1780 (Edward McCrady, 1901)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01031018/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), The Siege and The Captured City"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/06042434/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The Siege of Charleston, 1780"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/siege-of-charleston-1780.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "British Evacuation of Charleston"
+    publisher: "National Park Service, Fort Sumter and Fort Moultrie National Historical Park"
+    url: https://www.nps.gov/articles/000/british-evacuation-of-charleston.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain

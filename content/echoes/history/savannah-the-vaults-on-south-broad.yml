@@ -1,0 +1,59 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Inside Colonial Park Cemetery near the entrance at Oglethorpe Avenue and Abercorn Street, among the brick vaults.
+# Position: Abercorn and Oglethorpe intersection from Overture street centrelines, set about 30 m into the cemetery's northwest corner (medium confidence).
+id: savannah-the-vaults-on-south-broad
+title: "The Vaults on South Broad"
+summary: "A Savannah history written four years after the Union occupation accused soldiers of breaking into these vaults."
+place: "Colonial Park Cemetery, Oglethorpe Avenue at Abercorn Street, Savannah, Georgia"
+at: { lat: 32.07600, lng: -81.09030 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 69
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  The break-ins rest on one account, the city history of 1869, written by Savannahians hostile
+  to the occupation. No Union record was consulted. The often-told story that soldiers altered
+  dates on the gravestones could not be sourced and is not used.
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, cemeteries, civil-war, colonial]
+teaser: "Every one of these vaults was built to stay shut."
+script: |
+  Walk in among the old brick vaults.
+
+  This was the town's burying ground from about seventeen fifty. First for the parish of Christ Church, then, from seventeen eighty-nine, for people of every denomination. The avenue outside was called South Broad Street then.
+
+  In December eighteen sixty-four, Sherman's army marched into Savannah.
+
+  A history of the city, published in eighteen sixty-nine, makes an accusation about what followed. It says soldiers broke open the vaults in this old burying ground, searching for valuables they believed had been hidden inside. It says the same happened at Bonaventure, outside town. And it says Union earthworks were dug straight through the Catholic cemetery.
+
+  That is one account. It was written by Savannahians who had every reason to resent the occupation, and it should be heard that way.
+
+  You may hear other stories in here about what the soldiers did. This one has an advantage. Somebody wrote it down within four years, while the damage could still be seen.
+
+  Every one of these vaults was built to stay shut.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Historical record of the city of Savannah (Lee and Agnew, 1869): the occupation, and the old burying ground on South Broad Street"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Scene from Colonial Park Cemetery in Savannah, Georgia (Carol M. Highsmith, catalogue description)"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/2017880503/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Colonial Park, Savannah, Chatham County, Georgia: monuments and brick vaults, formerly South Broad Street Cemetery (Carnegie Survey of the Architecture of the South)"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/2017886427/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah"
+    publisher: "National Park Service, Fort Pulaski National Monument"
+    url: https://www.nps.gov/fopu/learn/historyculture/savannah.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain

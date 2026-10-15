@@ -1,0 +1,50 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: East side of Johnson Square on Bull Street, facing the portico of Christ Church.
+# Position: Overture building footprint for Christ Episcopal Church; spot set about 20 m west of its centre, in front of the west-facing portico recorded by HABS (medium confidence).
+id: savannah-wesleys-empty-lot
+title: "Wesley's Empty Lot"
+summary: "Christ Church claims John Wesley as one of its ministers. While he was here, there was no church on this spot."
+place: "Christ Church, Johnson Square, Savannah, Georgia"
+at: { lat: 32.07960, lng: -81.09098 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 94
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, churches, colonial, religion]
+teaser: "None of what you are looking at was here for its most famous minister. Nothing was."
+script: |
+  Look at the white columns of Christ Church, facing the square.
+
+  This building went up in the eighteen thirties. A fire gutted it in eighteen ninety-seven, and it was rebuilt the year after. So none of what you are looking at was here for the most famous minister this congregation ever had.
+
+  In fact, nothing was.
+
+  John Wesley, who would go on to found Methodism, arrived in Savannah in seventeen thirty-six as the colony's minister. This lot had been set aside for a church in the summer of seventeen thirty-three. But work did not begin until seventeen forty, and the first church was not finished until seventeen fifty. In Wesley's time, services were held in a courthouse a short walk north, near the bluff.
+
+  A chronicler of the day remembered a night when a ball and public prayers were announced for the same hour. The church was full. The ballroom was so empty that the dancing could not go ahead.
+
+  It did not last. Wesley refused communion to Sophia Williamson, a woman he had courted before she married another man. Many in town thought it was spite. Facing a court case, he left Georgia in December seventeen thirty-seven, writing that he had shaken off the dust of his feet.
+
+  As far as the record shows, he never preached on this spot. The church's list of its ministers has his name on it all the same.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Historical record of the city of Savannah (Lee and Agnew, 1869): Churches, Christ Church; Arrival of Revs. John and Charles Wesley"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "John and Charles Wesley"
+    publisher: "National Park Service, Fort Frederica National Monument"
+    url: https://www.nps.gov/fofr/learn/historyculture/john-and-charles-wesley.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Christ Church (Episcopal), 28 Bull Street, Savannah (HABS GA-236): record, data pages and addendum"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/ga0032/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

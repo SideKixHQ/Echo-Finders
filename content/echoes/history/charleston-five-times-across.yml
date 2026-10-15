@@ -1,0 +1,59 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: Meeting Street sidewalk in front of the portico of St. Michael's Church, just south of Broad Street, looking up at the steeple.
+# Position: Meeting Street frontage south of the Broad and Meeting intersection, from the street grid and Overture "St. Michael's Church Cemetery"; about 60 m from the Four Corners echo (medium confidence).
+id: charleston-five-times-across
+title: "Five Times Across"
+summary: "Taken by the British, sold back, broken in 1865 and recast: St. Michael's bells have crossed the Atlantic five times."
+place: "St. Michael's Church, Meeting and Broad Streets, Charleston, South Carolina"
+at: { lat: 32.77605, lng: -79.93095 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 108
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, south-of-broad, st-michaels, bells, revolution, civil-war]
+teaser: "Look up at the white steeple of St. Michael's. The bells up there have been around."
+script: |
+  Look up at the white steeple of St. Michael's. The bells hang up there. If they are
+  ringing, listen.
+
+  A Charleston historian, writing in nineteen-oh-six, counted how many times those bells
+  had crossed the Atlantic. She made it five.
+
+  The first crossing was the obvious one. They were made in England, and imported in
+  seventeen sixty-four.
+
+  The second came at the end of the Revolution. In seventeen eighty-two the British army
+  was getting ready to leave Charleston, and an artillery officer claimed the bells as his
+  own, a perquisite of his rank. He had them taken down. The church appealed, and an order
+  came from New York to give them back. Too late. They were already on a ship to England.
+
+  The third crossing was a business deal. A merchant who had once lived in Charleston bought
+  them in England, as a speculation, and shipped them back to sell to the church. When they
+  arrived, people ran down to the wharf, hauled them to the church themselves, and swung
+  them back up into the steeple. Then the merchant died suddenly, his estate went bankrupt,
+  and nobody ever asked for payment.
+
+  The fourth and fifth came with the Civil War. The bells were sent inland to Columbia for
+  safekeeping, and in eighteen sixty-five Columbia burned. They broke in the fire. The
+  pieces were gathered up and sent back to the same English foundry that had made them.
+  The foundry still had the original moulds. The bells were recast, and came home.
+
+  By that historian's account, they ring today with the same tone they rang for the
+  birthday of King George.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "St. Michael's Episcopal Church"
+    publisher: "National Park Service, Travel Charleston"
+    url: https://www.nps.gov/places/st-michael-s-episcopal-church.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), St. Michael's bells"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/06042434/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

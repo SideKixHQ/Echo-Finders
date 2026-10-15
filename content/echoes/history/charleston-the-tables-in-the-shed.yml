@@ -1,0 +1,65 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: North sidewalk of Chalmers Street, a cobbled street, facing the arched front of the Old Slave Mart Museum at number 6.
+# Position: Overture place point for the Old Slave Mart Museum (6 Chalmers St), moved onto the Chalmers Street frontage using Overture road segments (high confidence).
+id: charleston-the-tables-in-the-shed
+title: "The Tables in the Shed"
+summary: "The only surviving building in South Carolina known to have been used as a slave auction gallery. What its front was built to look like."
+place: "Old Slave Mart, 6 Chalmers Street, Charleston, South Carolina"
+at: { lat: 32.77775, lng: -79.92843 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 104
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.75
+tags: [charleston, charleston-core, french-quarter, slavery, african-american-history, antebellum]
+teaser: "A high arch, eight-sided pillars and an iron gate. A handsome front, for what happened behind it."
+script: |
+  Look at the front of number six Chalmers Street. A high arch. Eight-sided pillars. A large
+  iron gate.
+
+  It is a handsome front, for what happened behind it.
+
+  This is the only building known to survive in South Carolina that was used as a slave
+  auction gallery. For a long time, Charleston sold enslaved men, women and children in the
+  open, on the north side of the Exchange building. In eighteen fifty-six the city banned
+  those public sales.
+
+  The trade did not stop. It moved indoors and off the main streets, into sales rooms and
+  yards along Chalmers, State and Queen streets.
+
+  This was one of them, known as Ryan's Mart. Behind the front stood a four-storey building
+  with a barracoon, a jail where people were held until they were sold. There was a kitchen.
+  There was a morgue.
+
+  The shed you are looking at went up in eighteen fifty-nine. Inside, the people being sold
+  stood on tables three feet high and ten feet long. The tables were set lengthwise, so that
+  buyers could walk along beside them and look.
+
+  Someone thought carefully about what the buyers needed to see.
+
+  Sales were held here for only a few years, until the Civil War brought slavery to an end.
+  Historians estimate that nearly half of all the Africans brought to America in slavery
+  arrived through Charleston.
+
+  In nineteen thirty-eight a woman named Miriam Wilson bought this building and made it a
+  museum of African American history. A room built for buyers became a room for remembering
+  the people who were sold.
+pronunciations:
+  - written: "barracoon"
+    say: "bar-uh-KOON"
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old Slave Mart"
+    publisher: "National Park Service, Travel Historic Charleston"
+    url: https://www.nps.gov/places/old-slave-mart.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, SC"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/charleston-sc.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain

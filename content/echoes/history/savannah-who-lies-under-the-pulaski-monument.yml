@@ -1,0 +1,67 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Inside Monterey Square, at the foot of the marble Pulaski monument in its centre. Public square.
+# Position: Overture point for the Casimir Pulaski Monument (32.07139,-81.09486), which sits at the centre of the Overture Monterey Square point on the Bull Street axis (high confidence).
+id: savannah-who-lies-under-the-pulaski-monument
+title: "Who Lies Under the Pulaski Monument"
+summary: "The man falling from his horse on this column is certain. Whether he is buried beneath it is not."
+place: "Pulaski Monument, Monterey Square, Savannah, Georgia"
+at: { lat: 32.07135, lng: -81.09490 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 87
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  Where Pulaski was buried is disputed in the sources used. An 1890 guide cites a staff
+  officer aboard the ship who said he died at sea and was buried at sea, and a 1929 Georgia
+  Historical Society publication treats that as final; the National Park Service says he was
+  reported to have been buried at sea. A 1910 city guide says instead that he died at the
+  Greenwich plantation, was buried there under a palmetto, and that his remains were placed
+  beneath this monument in 1854. The script gives both and settles neither.
+minAge: 12
+quality: 0.75
+tags: [savannah, savannah-core, monterey-square, american-revolution, monuments]
+teaser: "People were arguing about it while the marble was going up."
+script: |
+  Look up at the tall marble column in the middle of the square. Liberty stands on top, holding a flag.
+
+  Now look lower down, for the carved panel of a man falling from his horse, still gripping his sword.
+
+  That is Casimir Pulaski, a Polish cavalry commander who fought for the Americans. On the ninth of October, seventeen seventy nine, he was hit by grapeshot leading an attack on the British lines around Savannah. Two days later he was dead.
+
+  This monument was finished in eighteen fifty five. What lies beneath it is a harder question.
+
+  One account says he was put aboard a ship bound for Charleston, died at sea, and was buried at sea. An officer of his who was wounded and on board the same ship said so. The Park Service still says he was reported to have been buried at sea.
+
+  The other story says he was carried to a plantation called Greenwich, died there, and was buried at night under a palmetto tree. A city guidebook in nineteen ten went further. His remains, it said, were dug up in eighteen fifty four and placed beneath this monument.
+
+  People were arguing about it while the marble was going up.
+
+  The man falling from his horse is certain. The man beneath him is not.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Casimir Pulaski"
+    publisher: "National Park Service, Fort Pulaski National Monument"
+    url: https://www.nps.gov/people/casimir-pulaski.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah and its surroundings (G. A. Gregory, 1890)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007695/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Illustrated guide to Savannah (Maude Heyward, 1910)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/unk84031503/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah souvenir number, Pulaski sesqui-centennial celebration (Georgia Historical Society, 1929)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/ca30001435/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Casimir Pulaski
+    say: KAZ-ih-meer puh-LASS-kee

@@ -1,0 +1,47 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Emmet Park on the bluff at the east end of Bay Street, beside the iron harbor light near East Broad Street.
+# Position: Overture "Old Harbor Light" lighthouse point; Overture's Emmet Park centroid lies about 170 m west along the same green (medium confidence).
+id: savannah-old-harbor-light
+title: "The light nobody needed"
+summary: "An iron beacon put up on the Bay in 1858 to guide ships up the river. By the 1930s it was out of use, and still looked after."
+place: "Old Harbor Light, Emmet Park, East Bay Street, Savannah, Georgia"
+at: { lat: 32.07931, lng: -81.08429 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 62
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, riverfront, lighthouses, shipping]
+teaser: "It is a lighthouse. Or it was."
+script: |
+  Look at the tall iron post at this end of the park, with the light at the top.
+
+  That is a lighthouse. Or it was.
+
+  The United States government put it up in eighteen fifty eight, a cast iron standard on a granite foundation, here on the Bay, as a beacon for mariners finding their way up the Savannah River.
+
+  Notice where it stands. Not on a headland. Not out on the water. Up on the bluff, at the end of a city street, on what was then the Bay Street green. In nineteen hundred the city's park commission asked for money to improve that green, and suggested a name for it. Emmet Park.
+
+  When federal surveyors came to record the light in the nineteen thirties, they noted two things about it.
+
+  It had not been used for many years.
+
+  And it was well maintained.
+
+  Somebody was looking after a light that nobody needed.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Old Harbor Beacon, Savannah (HABS GA-232), data pages"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/pictures/item/ga0054/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The morning news (Savannah, Ga.), February 22, 1900, image 8: Council proceedings, Bay street green"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn86063034/1900-02-22/ed-1/?sp=8
+    retrievedAt: "2026-10-15"
+    rights: public-domain

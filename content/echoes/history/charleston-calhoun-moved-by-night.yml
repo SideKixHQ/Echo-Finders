@@ -1,0 +1,74 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: West sidewalk of Church Street at the gate of St. Philip's western churchyard, opposite the church, where Calhoun's sarcophagus stands.
+# Position: Church Street centreline from Overture road segments beside the Overture "St. Philip's Church" point (142 Church St), offset to the west side where the 1919 guide places the western churchyard (medium confidence).
+id: charleston-calhoun-moved-by-night
+title: "Moved by Night"
+summary: "John C. Calhoun is buried in St. Philip's western churchyard. During the war, a few men dug him up by candlelight and hid him."
+place: "St. Philip's Church western churchyard, Church Street, Charleston, South Carolina"
+at: { lat: 32.77900, lng: -79.92972 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 120
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, french-quarter, st-philips, churchyards, civil-war]
+teaser: "In the churchyard across from St. Philip's stands a stone sarcophagus. For part of the war, the grave under it was empty."
+script: |
+  Across the street from St. Philip's Church is its western churchyard. In the middle of it
+  stands a large stone sarcophagus. It holds John C. Calhoun.
+
+  Calhoun was vice president, secretary of state, and one of the most powerful politicians
+  of his age. In the Senate he led the defence of slavery, and called it a positive good. He
+  died in eighteen fifty, ten years before the war his ideas helped to bring, and he was
+  buried here after what one paper called the grandest pageant the city had ever seen.
+
+  He did not stay put.
+
+  As the war went on, it began to look as if Charleston would fall, and some in the city
+  feared what would be done to his grave. So a few men decided to move him. At night, and in
+  secret.
+
+  One of them remembered being summoned from camp in the dark. When he reached the church,
+  the coffin had already been dug up and carried inside. One candle. Two or three men
+  standing by. In complete silence they lifted it, carried it down the middle aisle and out
+  through the north door, and buried it again in another spot.
+
+  Some time after the war, it was dug up once more, quietly, and put back. Later the state
+  paid for the sarcophagus you can see.
+
+  The plain marble slab that first covered the grave, carved with just his name, was broken
+  in the earthquake of eighteen eighty-six. The church set it against the north wall of the
+  churchyard, near the place where he had lain hidden.
+
+  For a while, then, the tomb with his name on it was empty. The man who had argued the South
+  toward secession spent part of the war it led to hidden, in a secret grave beside this
+  church.
+pronunciations:
+  - written: "Calhoun"
+    say: "kal-HOON"
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "\"Charleston's Statue. Calhoun's memorable funeral 37 years ago. The reinterment during the war.\" The Morning News (Savannah), April 26, 1887, page 3"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86063034/1887-04-26/ed-1/?sp=3
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "St. Philip's Episcopal Church"
+    publisher: "National Park Service, Travel Historic Charleston"
+    url: https://www.nps.gov/places/st-philips-episcopal-church.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "John C. Calhoun"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/john-c-calhoun.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Guide to Charleston, S.C., with brief history of the city (C. Irvine Walker, 1919), St. Philip's churchyards"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/20002718/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

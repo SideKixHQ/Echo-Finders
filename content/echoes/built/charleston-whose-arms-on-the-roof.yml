@@ -1,0 +1,53 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: The High Battery sea-wall walk, across East Battery from number twenty-one, looking back at the house and its roof parapet.
+# Position: Opposite Overture "Edmondston-Alston House" (21 E Battery) on the sea-wall side of the street; about 155 m north of the Fort Sumter sea-wall echo (medium confidence).
+id: charleston-whose-arms-on-the-roof
+title: "Whose Arms on the Roof"
+summary: "The coat of arms on this Battery house belongs to its second owner, not the man who built it."
+place: "Edmondston-Alston House, 21 East Battery, Charleston, South Carolina"
+at: { lat: 32.77170, lng: -79.92772 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, south-of-broad, battery, houses]
+teaser: "Turn your back on the harbour and look at the roofline of number twenty-one."
+script: |
+  Turn your back on the harbour and look across the street at number twenty-one. A big,
+  three-storey house with deep piazzas down the south side. Now look at the very top of the
+  front, at the low wall that hides the roof. There is a coat of arms up there.
+
+  When the federal building survey wrote this house up, it called that an unusual feature.
+  As far as anyone knew, it was the only house in the city with one.
+
+  The arms are not the builder's.
+
+  The house was standing by eighteen twenty-nine. It was built by Charles Edmondston, and
+  it looks straight out over the harbour.
+
+  In eighteen thirty-eight it was sold. Not by Edmondston, but by the assignees handling
+  his firm's affairs. The price was fifteen thousand five hundred dollars.
+
+  The buyer was Charles Alston. He redecorated the whole house in the Greek Revival style,
+  added a third tier to the piazzas, and put his family's arms on the parapet, on the
+  front that faces the water.
+
+  The survey ended up filing the house under three names. Edmondston, Alston, and a later
+  family's. Only one of them is written on the roof.
+pronunciations:
+  - written: Edmondston
+    say: ED-mund-stun
+  - written: Alston
+    say: AWL-stun
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Charles Edmonston House, 21 East Battery Street, Charleston (HABS SC-54)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/sc0045/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

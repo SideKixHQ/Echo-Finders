@@ -1,0 +1,67 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: East side of East Bay Street, across from the Othniel Beale House at 99-101 East Bay, in the middle of Rainbow Row.
+# Position: Interpolated along the 79-107 East Bay frontage between Overture "Rainbow Row" (79-107 E Bay) and the 111 East Bay entries, then set on the opposite sidewalk; house-number position not surveyed (low confidence).
+id: charleston-a-strangers-initials
+title: "A Stranger's Initials"
+summary: "The first house on Rainbow Row to be rescued wears an iron balcony with someone else's initials in it."
+place: "Othniel Beale House, Rainbow Row, East Bay Street, Charleston, South Carolina"
+at: { lat: 32.77595, lng: -79.92705 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 90
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, south-of-broad, rainbow-row, preservation]
+teaser: "Find the house numbered ninety-nine and look at its iron balcony."
+script: |
+  Find the house numbered ninety-nine on this row, and look at its iron balcony. There are
+  two letters worked into the ironwork. A C and a P.
+
+  The letters have nothing to do with this house.
+
+  The house went up around seventeen forty. It was built by Othniel Beale, a wharf owner
+  who had come down from Marblehead in Massachusetts, and his wharf was right across the
+  street. He built three dwellings under one roof, kept the biggest for his family and let
+  the other two. The ground floor was for trade, split by an arched passage through to the
+  yards at the back.
+
+  By the nineteen thirties this stretch of the old waterfront had slid into dilapidation.
+
+  This was the first house on the row to be rescued. Judge Lionel Legge and his wife took it
+  on, with Susan Pringle Frost, an estate agent who had spent years saving old Charleston
+  houses one at a time. They put back the early windows. They replaced the shop fronts with
+  cargo doors. And they hung a balcony salvaged from a house on Elizabeth Street that has
+  since been demolished. The C. F. Prigge house.
+
+  They are credited with starting the revival of the whole block. It is called Rainbow Row
+  now.
+
+  The row was saved one house at a time. The first one wears a stranger's initials.
+pronunciations:
+  - written: Othniel
+    say: OTH-nee-ul
+  - written: Legge
+    say: LEG
+  - written: Prigge
+    say: PRIG-ee
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Othniel Beale House, 99-101 East Bay Street, Charleston (HABS SC-874)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/sc1143/
+    retrievedAt: "2026-10-15"
+    rights: fair-use-facts
+  - title: "95-103 East Bay Street (Rainbow Row, townhouses), Charleston (HABS SC-405)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/sc0434/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston and Preservation"
+    publisher: "National Park Service, Travel Charleston"
+    url: https://www.nps.gov/articles/charleston-and-preservation.htm
+    retrievedAt: "2026-10-15"
+    rights: fair-use-facts

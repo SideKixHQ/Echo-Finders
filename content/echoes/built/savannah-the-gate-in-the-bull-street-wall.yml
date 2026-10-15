@@ -1,0 +1,43 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: The Bull Street sidewalk beside the brick garden wall of the Sorrel-Weed House, at the corner of Bull and Harris streets on the northwest side of Madison Square. Public sidewalk; the house is a museum.
+# Position: Overture point for the Sorrel-Weed House at 6 W Harris St (32.07407,-81.09407); HABS places the house at Madison Square and Bull Street, facing south, so the spot is set on the Bull Street side just east of that point (medium confidence).
+id: savannah-the-gate-in-the-bull-street-wall
+title: "The Gate in the Bull Street Wall"
+summary: "A doctor's private entrance, bricked up long ago, and a newer gate cut somewhere else."
+place: "Sorrel-Weed House, Madison Square, Savannah, Georgia"
+at: { lat: 32.07412, lng: -81.09396 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 72
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, madison-square, architecture]
+teaser: "Most people come to this house for its stories. This one is written down."
+script: |
+  Stand on Bull Street beside the garden wall of the big stuccoed house on the corner of Harris Street.
+
+  Most people come to this house for its stories. This one is written down.
+
+  The house was built around eighteen forty by Francis Sorrel, a Frenchman. One of his sons became a doctor, and kept his office in the basement. The way in to that office was not the front door. It was a gateway in this wall, on Bull Street.
+
+  Later the gateway was bricked up. In nineteen seventeen, a writer remembering the doctor said you could still make out its outline in the wall.
+
+  Then in the nineteen thirties a new owner wanted a gate on Bull Street again. She had the wall opened, but in a different place, and the old opening stayed filled with brick.
+
+  So walk along it slowly, and look for a patch of brick that does not quite match. Nobody can promise it is still there. It was more than a hundred years ago.
+
+  Houses keep their doors. Walls keep the ones they lost.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Sorrel-Weed House, 6 West Harris Street, Savannah (HABS GA-2140), data pages"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/ga0220/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Sorrel
+    say: SOR-ul

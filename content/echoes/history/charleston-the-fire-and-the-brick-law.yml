@@ -1,0 +1,59 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: The corner of Broad and Church streets, looking south down Church Street into the old town.
+# Position: Broad and Church intersection from Overture Broad Street and Church Street address points (38-58 Broad, 104-111 Church) and the street grid (high confidence).
+id: charleston-the-fire-and-the-brick-law
+title: "The Fire and the Brick Law"
+summary: "The fire of November 1740 burned the oldest part of Charles Town. Three weeks later the colony ordered it rebuilt in brick or stone."
+place: "Broad and Church Streets, Charleston, South Carolina"
+at: { lat: 32.77675, lng: -79.92925 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, south-of-broad, fires, colonial, architecture]
+teaser: "Look down Church Street at the walls. There is a reason for what they are made of."
+script: |
+  Look south down Church Street at the walls. Brick. Stucco over brick. Stone.
+
+  That is not only taste. It is a fire, and a law.
+
+  On the afternoon of the eighteenth of November, seventeen forty, a fire broke out in
+  Charles Town. By one account it took every house from about this corner, Broad and
+  Church, down to Granville Bastion, at the water's edge, where the East Battery now
+  begins. Three hundred houses, by the count at the time, and storehouses, stables and
+  warehouses with them. This was the oldest part of town, and full of goods. The tide was
+  high that afternoon, and by one account that is the only reason the ships at the wharves
+  did not burn as well.
+
+  Parliament in London sent twenty thousand pounds.
+
+  And on the tenth of December, three weeks after the fire, the colony passed an act for
+  rebuilding the town. Every new building was to be made of brick, or stone, or both. The
+  act even fixed the price of bricks.
+
+  The town had tried a law like that once before and given it up, because bricks were
+  scarce. This time it stuck. A Charleston historian, writing in nineteen-oh-six, noted that
+  many of the small, dark brick houses between Broad and Water Street date from that time on.
+
+  You are standing at the edge of the fire. What it took was rebuilt in the only materials
+  the law would allow.
+pronunciations:
+  - written: Granville
+    say: GRAN-vil
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "The history of South Carolina under the royal government, 1719-1776 (Edward McCrady, 1899), the fire of 1740"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/99002812/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the great fire of 1740"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/06042434/
+    retrievedAt: "2026-10-15"
+    rights: public-domain

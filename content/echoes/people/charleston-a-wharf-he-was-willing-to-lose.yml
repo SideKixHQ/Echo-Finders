@@ -1,0 +1,46 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: Liberty Square, the plaza in front of the Fort Sumter visitor centre, which NPS says stands on part of Gadsden's Wharf.
+# Position: Overture "Liberty Square" point at 340 Concord St, nudged east into the plaza toward the visitor centre point; about 170 m from the Planter echo at the water's edge (medium confidence).
+id: charleston-a-wharf-he-was-willing-to-lose
+title: "A Wharf He Was Willing to Lose"
+summary: "Christopher Gadsden built a great wharf here, then argued for the trade boycott that would leave it empty."
+place: "Liberty Square, site of Gadsden's Wharf, Charleston, South Carolina"
+at: { lat: 32.79025, lng: -79.92630 }
+triggerRadiusKm: 0.05
+category: people
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, american-revolution, waterfront]
+teaser: "Brick and wood, clay and timber."
+script: |
+  The ground under this square was once part of a wharf. A big one, on the Cooper River, built by a merchant named Christopher Gadsden.
+
+  By seventeen seventy four, Gadsden owned four stores, merchant ships, two rice plantations, and a whole district of Charleston. The wharf had just been finished, at great cost. To pay for itself, it needed ships, and trade.
+
+  That year he went to Philadelphia, to the first Continental Congress. And there he argued for cutting off all trade with Britain. Others wanted South Carolina's rice and indigo left out of the boycott. Gadsden did not.
+
+  If he won, his own wharf would sit idle. He argued for it anyway.
+
+  When nervous delegates warned that the coastal towns could be shelled, Gadsden's reply was later written down like this. Our seaport towns are composed of brick and wood. If they are destroyed, we have clay and timber enough to rebuild them. But if the liberties of our country are destroyed, where shall we find the material to replace them?
+
+  He was ready to let the wharf stand empty. A piece of it is still here, under the visitor centre beside you.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Christopher Gadsden"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/christopher-gadsden.htm
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Christopher Gadsden, by E. I. Renick (Publications of the Southern History Association, 1898)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/05013227/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Gadsden
+    say: GADZ-den

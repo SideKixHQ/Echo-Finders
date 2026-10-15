@@ -1,0 +1,68 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Bay Street in front of the Cotton Exchange at the head of Drayton Street, by the fountain and the entrance bridge.
+# Position: Bay Street frontage just south of the Overture "Savannah Cotton Exchange" point, at the head of Drayton Street (medium confidence).
+id: savannah-cotton-exchange
+title: "Built over the way down to the river"
+summary: "Savannah's Cotton Exchange opened in 1887 on iron pillars, over the old Drayton Street slip down to the water."
+place: "Savannah Cotton Exchange, 100 East Bay Street, Savannah, Georgia"
+at: { lat: 32.08075, lng: -81.09005 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, cotton, architecture, bay-street]
+teaser: "Look at how you get in. Not from the pavement. From a bridge."
+script: |
+  Look at how you get into the Cotton Exchange. Not from the pavement. From a bridge, with iron railings, across a gap.
+
+  The building opened for business at noon on a Monday in September eighteen eighty seven, when Savannah ranked first among the cotton ports of the Atlantic coast. From Bay Street it looks like three storeys. From River Street, round the back, it is six.
+
+  What it stands on is the interesting part.
+
+  This was the Drayton Street slip, the way down from the bluff to the river. In March eighteen eighty six the Morning News watched workmen pulling up the stones of that slip. Part of it was filled in and walled off. By August, iron pillars and girders were in place to carry the building, and the old iron footbridge across the slip had been taken down, to be put up again somewhere else.
+
+  So the Cotton Exchange is standing on iron legs, over the old way down to the water.
+pronunciations:
+  - written: Drayton
+    say: DRAY-tun
+detail: >-
+  In March 1889 the Exchange's members gave three hundred and fifty dollars for a little park and
+  a fountain on the open ground in front of the building, running out to the middle of Bay Street.
+  The architect was William G. Preston.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "Savannah Cotton Exchange, 100 East Bay Street (HABS GA-1194), data pages"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/pictures/item/ga0141/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah morning news, March 24, 1886, image 8: The New Cotton Exchange"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn82015137/1886-03-24/ed-1/?sp=8
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah morning news, August 29, 1886, image 8: The New Cotton Exchange"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn82015137/1886-08-29/ed-1/?sp=8
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The morning news (Savannah, Ga.), September 16, 1887, image 8: Through the City"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn86063034/1887-09-16/ed-1/?sp=8
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "The morning news (Savannah, Ga.), March 12, 1889, image 8: To Have a Park"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn86063034/1889-03-12/ed-1/?sp=8
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "A view of Savannah's old Cotton Exchange Building was completed in 1887 during the era when Savannah ranked first as a cotton seaport on the Atlantic and second in the world"
+    publisher: "Carol M. Highsmith Archive, Library of Congress"
+    url: https://www.loc.gov/item/2017880409/
+    retrievedAt: "2026-10-15"
+    rights: fair-use-facts

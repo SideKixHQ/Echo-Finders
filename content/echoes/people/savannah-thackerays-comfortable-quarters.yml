@@ -1,0 +1,62 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: The Abercorn Street sidewalk in front of the Andrew Low House, on the west side of Lafayette Square, looking at the stuccoed front and iron balconies. Public sidewalk; the house is a museum.
+# Position: Overture point for the Andrew Low House at 329 Abercorn St (32.07303,-81.09242), which sits on the southwest side of Lafayette Square as the 1910 guide describes; spot nudged a few metres east onto the sidewalk (high confidence).
+id: savannah-thackerays-comfortable-quarters
+title: "Thackeray's Comfortable Quarters"
+summary: "A famous English novelist wrote home from this house, delighted with everything, including an audience too lazy to clap."
+place: "Andrew Low House, Lafayette Square, Savannah, Georgia"
+at: { lat: 32.07302, lng: -81.09230 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, lafayette-square, writers]
+teaser: "On Saint Valentine's Day, a novelist sat in this house and wrote a letter home."
+script: |
+  Stand across from the house with the stuccoed front and the iron railings round its balconies. A cotton merchant named Andrew Low built it in the eighteen forties.
+
+  On Saint Valentine's Day, one year in the eighteen fifties, a famous English novelist sat in this house and wrote a letter home.
+
+  He was William Makepeace Thackeray, the author of Vanity Fair, and he was crossing America giving lectures.
+
+  He was tired of hotels. Tired of the crowds drinking at the bar, and the tearing northern bustle. Here, he wrote, he had the most comfortable quarters he had found anywhere in the United States.
+
+  He liked the town as well. Wide streets, trees, a few cows and carriages toiling through the sandy road.
+
+  And he was honest about the people who came to hear him. A snug little audience of three or four hundred, he wrote, far too lazy to laugh or applaud.
+
+  The last time he stayed, Low had been a widower. Now there was a pretty new wife, and a baby daughter crowing in the nursery next door.
+
+  A great writer, in a fine house, describing his audience as too lazy to clap.
+
+  He was having a wonderful time.
+editorial: draft
+factCheck: unchecked
+sources:
+  - title: "A collection of letters of Thackeray, 1847-1855 (letter to Miss Perry, Savannah, Feast of St. Valentine)"
+    publisher: "Library of Congress (Scribner, 1887)"
+    url: https://www.loc.gov/item/13033924/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Low House, 329 Abercorn Street, Savannah (HABS GA-210), data pages"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/ga0017/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Illustrated guide to Savannah (Maude Heyward, 1910)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/unk84031503/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Thackeray
+    say: THAK-uh-ree
+  - written: Abercorn
+    say: AB-er-korn
+detail: >-
+  The year is uncertain. The 1887 edition of the letters dates it, in brackets, to 1855; the
+  Historic American Buildings Survey record says Thackeray was a guest in 1853 and 1856.
