@@ -18,6 +18,16 @@ missed several of these lines; where they disagree, this section wins.
 fact-checking are James's own work and are not counted as a cost. Apple's Small Business
 Program applies, so App Store purchases pay 15%.
 
+**And one correction (James, 2026-10-21):** human and manual time is now out of the cost,
+revenue and pricing model entirely, not merely "not counted in the margin". Earlier
+versions of this page carried a $40,000 to $85,000 line for editorial review of a
+5,000-echo library and called it 95% of the cost of the library. That figure was never a
+bill. It was 15 to 30 minutes an echo priced at about $33 an hour for a person who was
+never going to be hired, and quoting it made the library look two orders of magnitude
+dearer than it is. Building the content costs **35 to 57 cents an echo**, all of it machine
+time (see "One-time, to build the library"). Review hours are tracked as a schedule limit
+in `10-blockers.md`, not as money here.
+
 ### What each sale keeps
 
 | | City Pass $9.99 | All-Access $34.99/yr |
@@ -59,6 +69,12 @@ Each sale keeps about 90%. The whole business clears 80% once fixed costs are no
 about a tenth of revenue: roughly **$9,000 a month**, which is about 1,000 City Passes or
 3,100 All-Access members. Below that the per-sale margin is fine and the fixed costs
 dominate.
+
+Content sits outside that test because it is capex, not a cost of sale, and at $11 to $17
+a city it does not move the answer: a city pays for its own echoes with two City Pass
+sales. Earlier this heading was doing more work than the table under it, by reading as a
+whole-business figure while the library was excluded without a number beside it. With the
+library priced, the exclusion no longer hides anything.
 
 ### The costs that would break this, and what is done about each
 
@@ -153,39 +169,73 @@ At a million listeners this rises to roughly $150 to $250, plus the map's bandwi
 
 ## One-time, to build the library
 
-*Not counted in the margin: James writes and fact-checks the echoes himself (2026-10-09).
-Kept here for when that changes, for example a second editor or an airline's bigger
-library.*
+*James writes and fact-checks the echoes himself (2026-10-09), so **his time is not a cost
+line anywhere in this model** (James, 2026-10-21). What is left is machine cost, and it is
+small.*
 
-The numbers below are for a 5,000-echo library. Measured inputs: **805 characters and 89
-seconds per echo**, average, across the 25 written so far.
+Measured inputs, from all 325 echoes in `content/echoes/` on 2026-10-21: **998 characters
+per echo**, average. The earlier figure of 805 came from the first 25 written and
+understated it by about a quarter. Plain-language cuts are out of scope for this version
+(James, 2026-10-21), so narration below is scripts plus re-renders only.
 
 | | Amount | Cost |
 |---|---|---|
-| **ElevenLabs narration** | 6.5M characters (4.0M scripts + plain-language cuts + ~30% re-renders) | **$800 – $1,300** |
+| **ElevenLabs narration** | 6.5M characters (5.0M scripts + ~30% re-renders) | **about $1,070** |
 | **Anthropic API — drafting and fact-check pre-pass** | ~2 calls/echo, ~30k in / ~2k out each | **$700 – $1,800** |
 | **Google Places enrichment** | build-time only | $0 (inside the $200/mo credit) |
-| **Human editorial review** | 5,000 × 15–30 min | **$40,000 – $85,000** |
+| **Total, a 5,000-echo library** | | **$1,770 – $2,870** |
 
-Anthropic rates are $5/$25 per million tokens on Opus 5, $2/$10 on Sonnet 5, halved again
-through the Batch API — so the model choice moves the drafting line by about 2.5×, and it is
-the smallest line but one. ElevenLabs rates should be re-checked before committing; theirs
-move.
+That is **35 to 57 cents an echo**, all of it machine time.
 
-### The only number that matters
+ElevenLabs Pro is $99 for 600,000 credits, or **$0.165 per 1,000 characters**, checked
+against elevenlabs.io/pricing on 2026-10-21; one character is one credit on Multilingual v2
+and v3. Anthropic rates are $5/$25 per million tokens on Opus 5, $2/$10 on Sonnet 5, halved
+again through the Batch API, so the model choice moves the drafting line by about 2.5× and
+it is now the larger of the two.
 
-**Human review is 95% of the cost of the library.** It is thirty to fifty times the API and
-narration bills combined, and it is the thing that cannot be bought down by choosing a
-cheaper model.
+### What a city costs, which is the only unit that matters
 
-That makes the highest-leverage engineering work in this project not a feature. If a
-pre-check that quotes each claim beside the exact sentence in the cited source cuts review
-from twenty minutes to seven, it saves on the order of **$30,000** — and costs a few hundred
-dollars of API calls plus a week of work. Nothing else available to us returns anything like
+A city, town or park is covered at 30 approved echoes; a drive at one every 10 miles
+(`12-cities.md`).
+
+| | |
+|---|---|
+| Content cost, one city of 30 echoes | **$11 to $17** |
+| Kept per City Pass sold on the web | $8.90 |
+| **City Pass sales to pay for that city, ever** | **2** |
+
+Content is capex per city, paid once and amortised over everyone who ever buys that city,
+so the question is never "does the price cover the content" in aggregate. It is whether a
+city clears two sales. On that basis:
+
+| | Echoes | Content cost |
+|---|---|---|
+| Wilmington, NC, already drafted | 101 | **$30 to $55** |
+| The 88-place launch list | ~2,900 | **$1,000 to $1,700** |
+| A 5,000-echo library | 5,000 | **$1,770 to $2,870** |
+
+### The real constraint is hours, and hours are not priced here
+
+The library is cheap in money and expensive in attention. At 15 to 30 minutes an echo
+unassisted, the 88-place list is 725 to 1,450 hours of review, eighteen to thirty-six
+full-time weeks of one person. That is a **schedule limit, not a cost**, and it belongs in
+`10-blockers.md` rather than in this model.
+
+It is also what engineering can move. A pre-check that quotes each claim beside the exact
+sentence in its cited source cuts review from about twenty minutes to about seven. Across
+2,900 echoes that is 967 hours down to 338, a saving of roughly **sixteen full-time weeks**,
+for a few hundred dollars of API calls. Nothing else available to us returns anything like
 that.
 
-True crime runs two to three times longer per echo and needs a second reviewer, which is
-already why it is gated separately (`trueCrimeReview`). Budget it apart from the rest.
+Measured against the drafted library, the job is smaller than it sounds: a Wilmington echo
+averages **3.5 checkable sentences** with **1.4 sources already attached**, 140 of its 141
+sources carrying a working URL. Reviewing one is reading three or four sentences against a
+source that is already linked.
+
+True crime is the one genuine exception, because it needs a **named second reviewer who is
+not James**: an outside party, and therefore real money. It also runs two to three times
+longer per echo, which is why it is gated separately (`trueCrimeReview`). No price is set
+for it and none is assumed; six of Wilmington's 101 echoes need one. Budget it apart.
 
 ## Flight data, which is cheaper than it sounds
 

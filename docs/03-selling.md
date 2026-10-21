@@ -42,16 +42,23 @@ revenue.
   $2.99 about 13%: hence the floor. Apple's 30% breaks the target outright and its 15%
   leaves 5% for everything else, hence web only.
 - **Running.** About $0.001 per user per month. Effectively nothing.
-- **Content is the cost.** About $8–18 per echo today, almost all of it human review.
-- **Per city.** A 300-echo city costs about $2.5k–5.3k to produce and needs about
-  $18k–38k of sales to sit at 80%: roughly 1,800–3,800 City Passes, or the All-Access
-  equivalent.
-- **The whole library.** 5,000 echoes plus a year of running is about $42k–91k, which
-  needs about $306k–650k of sales: roughly 19,000–41,000 buyers.
+- **Content is nearly free.** About **$0.35–0.57 per echo**, all of it machine time:
+  narration and the API calls that draft and quote it. *(Corrected 2026-10-21. This bullet
+  used to read "$8–18 per echo, almost all of it human review". That was 15 to 30 minutes
+  an echo priced at about $33 an hour for a reviewer who was never going to be hired.
+  James's own time is out of the cost, revenue and pricing model. See `02-costs.md`.)*
+- **Per city.** Content is capex, paid once and amortised over everyone who ever buys that
+  city. A city at the 30-echo coverage bar (`12-cities.md`) costs **$11–17** and pays for
+  itself in **2 City Pass sales**. A rich 300-echo city costs **$105–171** and pays for
+  itself in **12–20**.
+- **The whole library.** 5,000 echoes plus a year of running is about **$2.7k–5.9k**, which
+  needs roughly **200–440 buyers** at the $13.43 blended net in `11-pricing-research.md`.
 
-80% is a scale outcome, not a day-one number, and it improves every year because the
-library is paid for once. What gets there sooner: cutting review from about 20 minutes an
-echo to 7 (the `claims` tooling), which halves every figure above; and the two below.
+80% is now a fixed-cost question, not a content one. Vercel, Sentry, Supabase, insurance
+and accounting are what have to be out-grown; the library is rounding. The `claims`
+tooling, which cuts review from about 20 minutes an echo to 7, still matters more than
+anything else here, but what it buys is **about sixteen full-time weeks** across the
+88-place launch list, not money.
 
 ## Tourism boards and airlines
 
