@@ -29,7 +29,7 @@ script: |
 
   And the heart of it is named after a water tank.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "College of Charleston"
     publisher: "National Park Service"

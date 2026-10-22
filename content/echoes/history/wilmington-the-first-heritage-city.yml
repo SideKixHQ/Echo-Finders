@@ -33,7 +33,7 @@ script: |
   used them. The title does not create the history. It asks present-day Wilmington to keep
   that history available, examined, and connected to the city that exists now.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "World War II City"
     publisher: "City of Wilmington"

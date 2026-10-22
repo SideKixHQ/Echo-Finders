@@ -34,7 +34,7 @@ script: |
   belongs to the building's history. Returning to worship did not mean that the preceding
   months had never happened.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Our history"
     publisher: "St. James Parish"

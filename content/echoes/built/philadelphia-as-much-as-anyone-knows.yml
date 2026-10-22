@@ -29,7 +29,7 @@ script: |
 
   Everything above that is exactly as much as anyone knows.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Franklin Court"
     publisher: "National Park Service, Independence National Historical Park"

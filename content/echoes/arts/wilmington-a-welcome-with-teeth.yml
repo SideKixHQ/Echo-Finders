@@ -31,7 +31,7 @@ script: |
   feel briefly strange. Here, an emblem of the region becomes a greeting you are unlikely
   to mistake for an ordinary street sign.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Discover outdoor art in wilmington nc"
     publisher: "Wilmington and Beaches Convention and Visitors Bureau"

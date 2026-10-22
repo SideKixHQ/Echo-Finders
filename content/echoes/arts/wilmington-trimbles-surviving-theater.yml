@@ -35,7 +35,7 @@ script: |
   descriptions alone cannot replace. Trimble's name may be unfamiliar, but the building
   still performs one part of his intention: making an arrival feel significant.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "About"
     publisher: "Thalian Hall"

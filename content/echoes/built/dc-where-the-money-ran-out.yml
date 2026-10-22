@@ -41,7 +41,7 @@ script: |
   When it was finished, this was the tallest building in the world. And you can still see
   exactly where it ran out of money.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "History & Culture: Washington Monument"
     publisher: "National Park Service"

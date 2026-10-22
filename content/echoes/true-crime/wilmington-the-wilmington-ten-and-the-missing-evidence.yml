@@ -33,7 +33,7 @@ script: |
   false case was challenged. The ending is correction, but correction cannot return the
   time already taken.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
   convictionStatus: exonerated

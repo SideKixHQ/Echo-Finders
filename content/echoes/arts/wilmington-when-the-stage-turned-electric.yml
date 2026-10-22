@@ -32,7 +32,7 @@ script: |
   is a place repeatedly adjusted so performance can continue. The 1909 work reminds us
   that what now looks traditional was once a substantial modern improvement.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "About"
     publisher: "Thalian Hall"

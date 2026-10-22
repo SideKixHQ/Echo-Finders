@@ -33,7 +33,7 @@ script: |
 
   Somebody was looking after a light that nobody needed.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Old Harbor Beacon, Savannah (HABS GA-232), data pages"
     publisher: "Historic American Buildings Survey, Library of Congress"

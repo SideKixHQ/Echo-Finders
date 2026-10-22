@@ -32,7 +32,7 @@ script: |
   commerce included everyday food as well as export goods. Behind the present storefronts
   lies a city that processed, stored, sold, and shipped the things people needed.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Central business district"
     publisher: "Downtown Business Alliance Wilmington"

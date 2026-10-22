@@ -32,7 +32,7 @@ script: |
   move brings a long-running collection into a new setting where Wilmington can keep
   asking how its past connects with the present.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Detail"
     publisher: "Cape Fear Museum of History and Science"

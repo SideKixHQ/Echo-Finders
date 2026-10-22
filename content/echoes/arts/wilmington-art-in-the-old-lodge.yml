@@ -32,7 +32,7 @@ script: |
   something new. The art gallery's beginnings belong here, even though the institution
   continued its journey elsewhere.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "History"
     publisher: "Cameron Art Museum"

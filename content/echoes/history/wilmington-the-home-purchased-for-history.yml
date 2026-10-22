@@ -33,7 +33,7 @@ script: |
   made those encounters possible. Its preservation connects personal memories with a
   community's responsibility to examine its past.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"

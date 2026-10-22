@@ -33,7 +33,7 @@ script: |
   demolition is needed to appreciate the stakes. The threatened future was real, and so
   was the intervention. The house stayed where its history could still be encountered.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Family timeline"
     publisher: "Burgwin-Wright House and Gardens"

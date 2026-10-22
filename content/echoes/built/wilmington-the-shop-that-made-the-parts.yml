@@ -32,7 +32,7 @@ script: |
   restores a place to that labor, reminding you that the city depended on skilled
   manufacturing behind the more dramatic scenes of transportation.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Local Historic Landmarks"
     publisher: "City of Wilmington"

@@ -32,7 +32,7 @@ script: |
   suppliers and merchants inside. A display window is the meeting point: goods become
   visible, and a passing person becomes a possible buyer.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Local Historic Landmarks"
     publisher: "City of Wilmington"

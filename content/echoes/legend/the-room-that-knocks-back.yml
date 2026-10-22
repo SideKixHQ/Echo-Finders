@@ -55,7 +55,7 @@ script: |
   The harder question is whether the explanation is somewhere nearby, hidden by the ship
   itself.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Special offers"
     publisher: "The Queen Mary"

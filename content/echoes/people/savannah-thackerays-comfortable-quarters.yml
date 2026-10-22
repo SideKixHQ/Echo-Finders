@@ -35,7 +35,7 @@ script: |
 
   He was having a wonderful time.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "A collection of letters of Thackeray, 1847-1855 (letter to Miss Perry, Savannah, Feast of St. Valentine)"
     publisher: "Library of Congress (Scribner, 1887)"

@@ -29,7 +29,7 @@ script: |
 
   The panel is a celebration of a young country's money. It names one of the places the money came from.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "First Bank of the United States"
     publisher: "National Park Service, Independence National Historical Park"

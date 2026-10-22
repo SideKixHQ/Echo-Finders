@@ -32,7 +32,7 @@ script: |
   room for practice and exchange. Later artistic careers carried that influence beyond the
   lane where some of their learning began.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "History"
     publisher: "Cameron Art Museum"

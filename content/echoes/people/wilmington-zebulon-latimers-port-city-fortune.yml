@@ -34,7 +34,7 @@ script: |
   wider story asks where that prosperity came from and whose work helped sustain the city
   around it.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"

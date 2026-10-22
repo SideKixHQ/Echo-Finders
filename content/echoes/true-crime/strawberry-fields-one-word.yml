@@ -37,7 +37,7 @@ script: |
 
   She chose which one to build.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
   convictionStatus: convicted

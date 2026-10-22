@@ -27,7 +27,7 @@ script: |
 
   The building is a hotel now. It still has the battlements.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "South Carolina State Arsenal (Old Citadel), HABS SC-184, data pages"
     publisher: "Historic American Buildings Survey, Library of Congress"

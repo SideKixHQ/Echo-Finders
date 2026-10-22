@@ -42,7 +42,7 @@ script: |
 
   The house only remembers the twenty.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Paul Revere House"
     publisher: "National Park Service, Boston National Historical Park"

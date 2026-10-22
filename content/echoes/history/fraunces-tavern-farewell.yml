@@ -27,7 +27,7 @@ script: |
 
   Six years later he was back in this city, taking an oath three streets from here.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: Fraunces Tavern and the Continental Army
     publisher: National Park Service

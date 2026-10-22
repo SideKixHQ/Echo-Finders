@@ -32,7 +32,7 @@ script: |
   and a distinctive design give the structure meaning together. Its value lies in that
   relationship, not merely in its age.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Local Historic Landmarks"
     publisher: "City of Wilmington"

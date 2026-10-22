@@ -29,7 +29,7 @@ script: |
 
   So this is a canyon named after confetti, which was named after rubbish.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: Canyon of Heroes
     publisher: Downtown Alliance

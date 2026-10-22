@@ -33,7 +33,7 @@ script: |
   parts of downtown standing and brought children inside for a different purpose. A
   building's first job does not have to be its last.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Mission and history"
     publisher: "Play Wilmington"

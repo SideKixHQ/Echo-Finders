@@ -34,7 +34,7 @@ script: |
   idea to result. The railway became important through the route that could be built, and
   the city learned to use the connection it obtained.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Wilmington and weldon railroad d 20"
     publisher: "North Carolina Department of Natural and Cultural Resources"

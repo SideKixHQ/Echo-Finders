@@ -32,7 +32,7 @@ script: |
   remembers about a structure without changing its physical age. Here, the architecture
   and the public name carry separate layers of Wilmington's civic memory.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Wilmington north carolina 1919"
     publisher: "Federal Judicial Center"

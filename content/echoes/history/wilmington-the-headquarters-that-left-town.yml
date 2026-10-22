@@ -33,7 +33,7 @@ script: |
   neighborhood that waits behind. Here, preserved objects keep the railroad visible even
   after its headquarters stopped calling Wilmington home.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "History"
     publisher: "Wilmington Railroad Museum"

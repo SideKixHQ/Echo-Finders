@@ -33,7 +33,7 @@ script: |
   never saw this building. He is lying beside the third church on this spot, in a
   graveyard that outlasted two of them.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: Trinity Church
     publisher: National Park Service

@@ -42,7 +42,7 @@ script: |
 
   But that is thirty-eight.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Design of the Korean War Veterans Memorial"
     publisher: "National Park Service"

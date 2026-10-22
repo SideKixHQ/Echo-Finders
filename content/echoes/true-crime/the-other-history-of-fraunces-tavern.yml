@@ -47,7 +47,7 @@ script: |
 
   Both histories belong to it.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
   convictionStatus: unsolved

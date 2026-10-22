@@ -32,7 +32,7 @@ script: |
   remains a meeting point. Its wartime story is measured in the people who passed through
   and the practical welcome they found here.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Museum"
     publisher: "Wilmington Community Arts"

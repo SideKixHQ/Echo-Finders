@@ -33,7 +33,7 @@ script: |
   The house represented shared family life, shaped by her place in the community as well
   as her husband's commercial career.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"

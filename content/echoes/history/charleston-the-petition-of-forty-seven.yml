@@ -29,7 +29,7 @@ script: |
 
   The petition of eighteen twenty four was turned down. Seventeen years later, it had the whole building.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Kahal Kadosh Beth Elohim Synagogue"
     publisher: "National Park Service"

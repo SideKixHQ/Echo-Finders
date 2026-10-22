@@ -31,7 +31,7 @@ script: |
   The closer to the equator, the more you get. That is most of the reason the map of the
   world's launch sites looks the way it does.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: Launch site selection and orbital mechanics
     publisher: NASA

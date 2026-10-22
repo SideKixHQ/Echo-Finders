@@ -32,7 +32,7 @@ script: |
   belonged to a wider effort of hospitality. The dance floor was one way Wilmington
   offered an evening's company.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Museum"
     publisher: "Wilmington Community Arts"

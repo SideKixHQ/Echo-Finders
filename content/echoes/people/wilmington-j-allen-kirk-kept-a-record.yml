@@ -32,7 +32,7 @@ script: |
   preserving an experience so later generations would have evidence beyond the version
   offered by those who seized power.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "J allen kirk d 122"
     publisher: "North Carolina Department of Natural and Cultural Resources"

@@ -46,7 +46,7 @@ script: |
 
   The most striking thing in this room may be something nobody can show you.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: unsolved

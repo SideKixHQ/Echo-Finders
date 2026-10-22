@@ -40,7 +40,7 @@ script: |
 
   Look under the horse again.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "General Andrew Jackson Statue"
     publisher: "National Park Service"

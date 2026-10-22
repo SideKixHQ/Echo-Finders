@@ -42,7 +42,7 @@ script: |
 
   Most buildings replace the one before them. This one swallowed it.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
     publisher: "Library of Congress"

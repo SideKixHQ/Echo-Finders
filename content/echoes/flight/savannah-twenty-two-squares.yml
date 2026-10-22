@@ -30,7 +30,7 @@ script: |
 
   Three were lost to a road scheme in the nineteen fifties. One has since been put back.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: Savannah Historic District — National Historic Landmark documentation
     publisher: National Park Service

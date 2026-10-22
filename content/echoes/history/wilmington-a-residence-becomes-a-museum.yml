@@ -35,7 +35,7 @@ script: |
   are easiest to recover. Preservation makes those questions possible; interpretation
   keeps them open.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "The museum"
     publisher: "Burgwin-Wright House and Gardens"

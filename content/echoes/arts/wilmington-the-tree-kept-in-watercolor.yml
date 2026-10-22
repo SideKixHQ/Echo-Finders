@@ -32,7 +32,7 @@ script: |
   from a living tree into paper, pigment, and preservation. An artist's decision to look
   closely became something later Wilmington visitors could still encounter.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"

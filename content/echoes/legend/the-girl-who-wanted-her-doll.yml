@@ -55,7 +55,7 @@ script: |
 
   A small act of kindness offered to someone nobody could prove was there.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "The story of annies doll"
     publisher: "The Real Mary King's Close"

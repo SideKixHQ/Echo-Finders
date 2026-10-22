@@ -33,7 +33,7 @@ script: |
   connections. This small world helps you notice relationships that can be harder to see
   when you are standing inside the real city.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Model railroads"
     publisher: "Wilmington Railroad Museum"

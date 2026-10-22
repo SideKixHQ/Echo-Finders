@@ -55,7 +55,7 @@ script: |
 
   The feeling of waiting for something is part of this story.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "easternstate.org"
     publisher: "Eastern State Penitentiary Historic Site"

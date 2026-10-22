@@ -33,7 +33,7 @@ script: |
 
   It did not crack.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: Cape Hatteras Lighthouse relocation
     publisher: National Park Service

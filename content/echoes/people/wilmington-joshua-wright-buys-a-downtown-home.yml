@@ -32,7 +32,7 @@ script: |
   Wright's arrival shows how a landmark accumulates its identity. The building survived
   one owner by becoming meaningful to another.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Family timeline"
     publisher: "Burgwin-Wright House and Gardens"

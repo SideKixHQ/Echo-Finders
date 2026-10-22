@@ -34,7 +34,7 @@ script: |
   owners. A building can preserve craftsmanship for generations while concealing the
   craftsperson. Historical research makes the person visible again.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "The people"
     publisher: "Bellamy Mansion Museum"
