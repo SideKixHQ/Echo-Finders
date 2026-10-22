@@ -48,7 +48,7 @@ script: |
 
   You cannot recover the certainty people had before the motorcade reached it.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
   convictionStatus: alleged

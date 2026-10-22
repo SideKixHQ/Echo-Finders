@@ -34,7 +34,7 @@ script: |
   sometimes means arranging a journey for things that have already finished their working
   journeys.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Museum move 2007"
     publisher: "Wilmington Railroad Museum"

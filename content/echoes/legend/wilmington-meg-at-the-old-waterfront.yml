@@ -35,7 +35,7 @@ script: |
   brings strangers together, then sends them away. Meg's story reverses that pattern: one
   waterfront character, storytellers suggest, never quite left.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Journey into the haunted depths of old wilmington"
     publisher: "Wilmington and Beaches Convention and Visitors Bureau"

@@ -33,7 +33,7 @@ script: |
   water that had shaped its economy long before visitors came here simply to enjoy the
   view.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Riverwalk"
     publisher: "City of Wilmington"

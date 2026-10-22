@@ -32,7 +32,7 @@ script: |
   leadership link its early years with the city that developed around this corner into the
   twentieth century.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "History"
     publisher: "Temple of Israel"

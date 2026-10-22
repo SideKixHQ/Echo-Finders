@@ -40,7 +40,7 @@ script: |
 
   Symbolically.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Zero Milestone"
     publisher: "National Park Service"

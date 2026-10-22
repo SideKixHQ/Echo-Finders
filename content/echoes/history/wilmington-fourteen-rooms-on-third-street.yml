@@ -33,7 +33,7 @@ script: |
   particular lives. The building gives them a setting. From outside, the first clue is
   scale: enough rooms to make a family home a small working world.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"

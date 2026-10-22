@@ -32,7 +32,7 @@ script: |
   needed to stabilize the canvas all belong to it. The object survives because later
   people keep accepting responsibility for its future.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "A new journey for ecce homo"
     publisher: "St. James Parish"

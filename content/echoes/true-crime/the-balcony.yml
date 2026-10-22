@@ -48,7 +48,7 @@ script: |
 
   Remember the reason he was in Memphis, as well as what happened here.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
   convictionStatus: convicted

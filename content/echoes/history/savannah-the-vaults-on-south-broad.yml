@@ -35,7 +35,7 @@ script: |
 
   Every one of these vaults was built to stay shut.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Historical record of the city of Savannah (Lee and Agnew, 1869): the occupation, and the old burying ground on South Broad Street"
     publisher: "Library of Congress"

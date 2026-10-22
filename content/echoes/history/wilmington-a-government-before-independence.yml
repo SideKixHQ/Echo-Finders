@@ -33,7 +33,7 @@ script: |
   resistance with the possibility of a new state government. On this site, the future was
   something people had to discuss and arrange, not merely announce.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Old courthouse d 2"
     publisher: "North Carolina Department of Natural and Cultural Resources"

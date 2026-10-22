@@ -34,7 +34,7 @@ script: |
   however, depended on skilled construction and the labor of people whose freedom was
   sharply unequal.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "The place"
     publisher: "Bellamy Mansion Museum"

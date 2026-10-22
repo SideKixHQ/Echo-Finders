@@ -33,7 +33,7 @@ script: |
   records that recurring effort. A stage can be constructed once. A theater community has
   to be made again whenever people choose to put on the next performance.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Our history"
     publisher: "Thalian Association"

@@ -41,7 +41,7 @@ script: |
 
   Either way, the circle across the street still stops halfway.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Old Post Office Tower"
     publisher: "National Park Service, National Mall and Memorial Parks"

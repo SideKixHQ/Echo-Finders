@@ -33,7 +33,7 @@ script: |
 
   Sixty-six years after the fourth flight, people landed on the moon.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: Wright Brothers National Memorial
     publisher: National Park Service

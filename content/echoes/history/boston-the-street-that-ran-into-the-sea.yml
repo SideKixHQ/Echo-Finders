@@ -42,7 +42,7 @@ script: |
 
   The road built to bring the world into Boston had just brought in an army.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
     publisher: "Library of Congress"

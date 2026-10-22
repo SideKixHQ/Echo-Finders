@@ -39,7 +39,7 @@ script: |
 
   Of everyone who ever studied on this street, he is the one who stayed.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
     publisher: "Library of Congress"

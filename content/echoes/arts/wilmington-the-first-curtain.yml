@@ -32,7 +32,7 @@ script: |
   celebrations, Wilmington had to take the simple step that makes a theater work: open the
   doors and invite people in.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Thalian hall opens wilmington"
     publisher: "North Carolina Department of Natural and Cultural Resources"

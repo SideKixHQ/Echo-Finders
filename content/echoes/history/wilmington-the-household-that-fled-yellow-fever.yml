@@ -34,7 +34,7 @@ script: |
   carefully planned new home meeting a crisis its plans could not contain. Its owners
   departed; the larger city still had to endure the outbreak.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "War and politics a house divided"
     publisher: "Bellamy Mansion Museum"

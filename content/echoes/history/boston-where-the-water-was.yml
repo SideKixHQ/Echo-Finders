@@ -45,7 +45,7 @@ script: |
 
   The most famous splash in American history happened somewhere under the ground around you.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "The Boston Tea Party in Real Time"
     publisher: "National Park Service"

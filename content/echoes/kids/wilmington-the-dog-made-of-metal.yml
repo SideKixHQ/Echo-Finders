@@ -32,7 +32,7 @@ script: |
   playful surprise, and it gives you a challenge: discover how an artist made a familiar
   creature from things that were never alive.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Discover outdoor art in wilmington nc"
     publisher: "Wilmington and Beaches Convention and Visitors Bureau"

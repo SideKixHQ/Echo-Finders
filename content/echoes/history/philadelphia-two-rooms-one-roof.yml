@@ -31,7 +31,7 @@ script: |
 
   Somebody insisted on that.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Arch Street Friends Meeting House, 330 Arch Street (HABS PA-1388), written historical and descriptive data"
     publisher: "Library of Congress, Historic American Buildings Survey"

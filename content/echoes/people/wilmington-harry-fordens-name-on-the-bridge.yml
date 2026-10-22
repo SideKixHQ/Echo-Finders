@@ -32,7 +32,7 @@ script: |
   future, not merely its old buildings. The city attached that effort to a structure
   people could continue to encounter in everyday life.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Local Historic Landmarks"
     publisher: "City of Wilmington"

@@ -31,7 +31,7 @@ script: |
   Its continued presence helps you read the complex as a working community setting, not
   simply a striking facade preserved for photographs.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Full history"
     publisher: "Brooklyn Arts Center"

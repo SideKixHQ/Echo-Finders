@@ -31,7 +31,7 @@ script: |
 
   Houses keep their doors. Walls keep the ones they lost.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Sorrel-Weed House, 6 West Harris Street, Savannah (HABS GA-2140), data pages"
     publisher: "Library of Congress, Historic American Buildings Survey"

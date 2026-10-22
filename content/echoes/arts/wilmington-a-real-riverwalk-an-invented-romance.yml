@@ -31,7 +31,7 @@ script: |
   at once: an ordinary local walkway and a remembered moment in a television story. You
   are standing in the overlap.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Famous film and tv sites"
     publisher: "Wilmington and Beaches Convention and Visitors Bureau"

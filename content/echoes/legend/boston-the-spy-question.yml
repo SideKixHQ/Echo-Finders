@@ -48,7 +48,7 @@ script: |
 
   Then decide whether the question would still work.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Faneuil Hall Virtual Tour: Grasshopper Weathervane"
     publisher: "National Park Service, Boston National Historical Park"

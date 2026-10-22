@@ -34,7 +34,7 @@ script: |
   cannot be read as one moment in 1770. Later occupants continued to shape the place they
   inherited.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Family timeline"
     publisher: "Burgwin-Wright House and Gardens"

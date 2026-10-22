@@ -33,7 +33,7 @@ script: |
   gallery gave that argument rooms and a public address, allowing an artistic ambition to
   become something visitors could actually enter.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "History"
     publisher: "Cameron Art Museum"

@@ -33,7 +33,7 @@ script: |
   These organizers made the first modest display into a commitment: the railroad might
   leave, but its Wilmington story would still have a place.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "History"
     publisher: "Wilmington Railroad Museum"

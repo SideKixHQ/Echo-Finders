@@ -41,7 +41,7 @@ script: |
 
   These two trees are the reply.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "History of the Cherry Trees"
     publisher: "National Park Service"

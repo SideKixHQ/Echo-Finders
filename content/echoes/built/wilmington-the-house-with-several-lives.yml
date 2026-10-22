@@ -31,7 +31,7 @@ script: |
   passing glance. The landmark survives as a physical meeting point for those different
   chapters, even when their occupants and furnishings have long since moved on.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Local Historic Landmarks"
     publisher: "City of Wilmington"

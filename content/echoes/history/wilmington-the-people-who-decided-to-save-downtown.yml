@@ -33,7 +33,7 @@ script: |
   explain why downtown Wilmington still offers more than a list of vanished places. Many
   of its stories retain walls, doors, and street corners you can encounter.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Headquarters"
     publisher: "Historic Wilmington Foundation"

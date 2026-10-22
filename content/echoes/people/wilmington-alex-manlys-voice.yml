@@ -32,7 +32,7 @@ script: |
   the political attack directed against him. The marker returns a name to the city's
   visible memory.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Alex manly 1866 1944 d 103"
     publisher: "North Carolina Department of Natural and Cultural Resources"

@@ -32,7 +32,7 @@ script: |
   careful movement. The achievement was not just owning lots of pieces. It was making all
   those pieces work together as one astonishing train.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Guinness world record 2011"
     publisher: "Wilmington Railroad Museum"

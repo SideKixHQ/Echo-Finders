@@ -33,7 +33,7 @@ script: |
   organizing for one another. Its walls held a community, and its continued presence gives
   that community's history a downtown address.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Local Historic Landmarks"
     publisher: "City of Wilmington"

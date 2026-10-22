@@ -33,7 +33,7 @@ script: |
   together: a person's Wilmington chapter and the document that would define his
   reputation.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "William hooper d 45"
     publisher: "North Carolina Department of Natural and Cultural Resources"

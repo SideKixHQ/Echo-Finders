@@ -32,7 +32,7 @@ script: |
   span kept those two systems connected. Its survival lets you see a practical response to
   a city built around trains as well as streets.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Local Historic Landmarks"
     publisher: "City of Wilmington"

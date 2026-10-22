@@ -34,7 +34,7 @@ script: |
   the water has come indoors, where you can stop, look closely, and ask how it reached
   this new home.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "July 4th open house"
     publisher: "Wilmington Community Arts"

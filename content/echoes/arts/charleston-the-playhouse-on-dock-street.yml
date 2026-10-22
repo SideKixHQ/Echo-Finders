@@ -42,7 +42,7 @@ script: |
 
   For a theatre, that seems about right.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Dock Street Theatre"
     publisher: "National Park Service, Travel Historic Charleston"

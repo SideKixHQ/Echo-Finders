@@ -33,7 +33,7 @@ script: |
   move on, notice its location. Remembering the starting point helps reveal the planning
   behind the crime.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: alleged

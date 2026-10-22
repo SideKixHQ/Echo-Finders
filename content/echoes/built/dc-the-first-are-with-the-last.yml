@@ -39,7 +39,7 @@ script: |
 
   And in the stone, in the middle of all of them, is you.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Frequently Asked Questions: How are the names arranged on the wall?"
     publisher: "National Park Service"

@@ -32,7 +32,7 @@ script: |
   Everything else that word now means, the piers and the postcards and the
   amusements, grew on top of a solution to a cleaning problem.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: Atlantic City Boardwalk — Historic American Engineering Record
     publisher: Library of Congress

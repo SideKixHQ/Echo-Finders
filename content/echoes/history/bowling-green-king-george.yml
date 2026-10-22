@@ -45,7 +45,7 @@ simple:
     The fence is still standing. The crowns are still gone.
 
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: Bowling Green
     publisher: NYC Parks

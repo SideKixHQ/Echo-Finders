@@ -32,7 +32,7 @@ script: |
 
   The war he had just read them into lasted another seven years.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: City Hall Park
     publisher: NYC Parks

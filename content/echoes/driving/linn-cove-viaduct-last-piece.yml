@@ -31,7 +31,7 @@ script: |
   The Parkway is four hundred and sixty-nine miles long. The last seven took a third of the
   time.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: Linn Cove Viaduct
     publisher: National Park Service

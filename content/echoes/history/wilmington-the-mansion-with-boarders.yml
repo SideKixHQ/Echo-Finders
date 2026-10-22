@@ -35,7 +35,7 @@ script: |
   account of affluent beginnings. It also includes the choices that allowed a large, aging
   building to remain useful.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"

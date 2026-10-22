@@ -32,7 +32,7 @@ script: |
   records of enslaved workers, craftspeople, and others. Her voice is valuable when heard
   as one voice among the people whose lives belonged to this place.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Ellen lina stewards of the bellamy house"
     publisher: "Bellamy Mansion Museum"

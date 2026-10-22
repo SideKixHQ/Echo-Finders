@@ -51,7 +51,7 @@ script: |
 
   Standing here, you can see how close those two settings are.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Famous ghost stories of the tower of london"
     publisher: "Historic Royal Palaces"

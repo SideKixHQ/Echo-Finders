@@ -35,7 +35,7 @@ script: |
 
   Three names for one wing. The newspaper had it right the first time.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Decatur House, 748 Jackson Place Northwest, HABS DC-16, written historical and descriptive data and 2011 addendum"
     publisher: "Library of Congress, Historic American Buildings Survey"

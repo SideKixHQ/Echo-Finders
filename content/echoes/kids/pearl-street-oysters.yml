@@ -34,7 +34,7 @@ script: |
   One more thing. The Dutch kept opening them to look for pearls. They never found a single
   one. New York oysters don't make them.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: What in the Pearl? A History of NYC's Oysters
     publisher: Downtown Alliance

@@ -34,7 +34,7 @@ script: |
   earlier period. Their story shows that outdoor space, like a house, can contain several
   kinds of work.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Gardens"
     publisher: "Burgwin-Wright House and Gardens"

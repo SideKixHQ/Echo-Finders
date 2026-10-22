@@ -33,7 +33,7 @@ script: |
   read the surface. What seems like one architectural moment may contain material from
   another. Wilmington rebuilt here without starting entirely from nothing.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Our history"
     publisher: "St. James Parish"

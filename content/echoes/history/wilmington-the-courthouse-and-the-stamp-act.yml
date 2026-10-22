@@ -33,7 +33,7 @@ script: |
   this corner helped supply one. The story belongs to a town still under British rule,
   beginning to challenge who could impose terms on its public life.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Old courthouse d 2"
     publisher: "North Carolina Department of Natural and Cultural Resources"

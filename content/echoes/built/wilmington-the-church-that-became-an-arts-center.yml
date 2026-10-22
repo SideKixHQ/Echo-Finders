@@ -32,7 +32,7 @@ script: |
   setting carries an architectural inheritance from the congregation that first raised it.
   When people gather here now, they add a chapter rather than beginning on a blank site.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Full history"
     publisher: "Brooklyn Arts Center"

@@ -42,7 +42,7 @@ script: |
 
   That is as far as anyone was ever willing to go.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "Breed's Hill versus Bunker Hill"
     publisher: "National Park Service"

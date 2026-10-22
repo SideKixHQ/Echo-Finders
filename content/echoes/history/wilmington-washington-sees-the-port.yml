@@ -31,7 +31,7 @@ script: |
   otherwise knew it through correspondence and law. Wilmington was one stop in that
   effort, and Washington left a brief written impression rather than a complete portrait.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Washingtons southern tour d 19"
     publisher: "North Carolina Department of Natural and Cultural Resources"

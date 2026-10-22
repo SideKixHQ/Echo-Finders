@@ -33,7 +33,7 @@ script: |
   the stage. The theater's long life includes those shifts: familiar walls, new operators,
   and another invitation to an audience.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "About"
     publisher: "Thalian Hall"

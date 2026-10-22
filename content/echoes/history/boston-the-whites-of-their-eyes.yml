@@ -46,7 +46,7 @@ script: |
 
   The waiting was real.
 editorial: draft
-factCheck: unchecked
+factCheck: corroborated
 sources:
   - title: "William Prescott"
     publisher: "National Park Service"

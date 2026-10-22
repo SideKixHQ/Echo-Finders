@@ -33,7 +33,7 @@ script: |
   downtown streets are still around you. A visit can make that familiar walk feel
   connected with a much larger world.
 editorial: draft
-factCheck: unchecked
+factCheck: single-source
 sources:
   - title: "Detail"
     publisher: "Cape Fear Museum of History and Science"
