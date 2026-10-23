@@ -2,34 +2,30 @@
 /**
  * Render one echo to audio with ElevenLabs.
  *
- * Run this on your own machine. Your API key never leaves it, and this script never sends
- * anything anywhere except to ElevenLabs.
+ * Run this on your own machine. Nothing is sent anywhere except to ElevenLabs.
  *
- *   export ELEVENLABS_API_KEY=...
+ *   npx -y @elevenlabs/cli@1.7.1 auth login     # once: opens a browser
  *   node scripts/render-echo.mjs content/echoes/history/bowling-green-king-george.yml
  *
  * Writes the audio next to the echo and prints a `renders:` block to paste into the file.
  *
- * It uses the `/with-timestamps` endpoint, which returns character-level timings alongside
- * the audio. That matters: transcript timings belong to a *render*, and estimating them
- * from word count drifts badly over a long echo. These are measured.
+ * Authentication goes through the ElevenLabs CLI, so there is no API key to find or
+ * store; `scripts/elevenlabs-cli.mjs` says why.
+ *
+ * It calls the same `/with-timestamps` endpoint as it always did, with the same body, and gets
+ * back the same `audio_base64` and `alignment`. That matters: transcript timings belong to
+ * a *render*, and estimating them from word count drifts badly over a long echo. These are
+ * measured.
  */
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { basename, dirname, join } from "node:path";
 import { parse as parseYaml } from "yaml";
-
-const API = "https://api.elevenlabs.io/v1/text-to-speech";
+import { callElevenLabs } from "./elevenlabs-cli.mjs";
 
 const [, , echoPath, voiceArg] = process.argv;
 if (!echoPath) {
   console.error("usage: node scripts/render-echo.mjs <echo.yml> [voiceId]");
-  process.exit(1);
-}
-
-const key = process.env.ELEVENLABS_API_KEY;
-if (!key) {
-  console.error("Set ELEVENLABS_API_KEY first. Do not paste it into a chat or commit it.");
   process.exit(1);
 }
 
@@ -88,22 +84,22 @@ const spokenText = spokenSentences.join(" ");
 
 console.log(`Rendering ${echo.id} · ${displaySentences.length} sentences · voice ${voiceId}`);
 
-const response = await fetch(`${API}/${voiceId}/with-timestamps`, {
-  method: "POST",
-  headers: { "xi-api-key": key, "content-type": "application/json" },
-  body: JSON.stringify({
-    text: spokenText,
-    model_id: "eleven_multilingual_v2",
-    voice_settings: { stability: 0.5, similarity_boost: 0.75 },
-  }),
-});
+const result = callElevenLabs(
+  ["text-to-speech", "convert_with_timestamps", "--voice-id", voiceId, "--json", "-"],
+  {
+    input: JSON.stringify({
+      text: spokenText,
+      model_id: "eleven_multilingual_v2",
+      voice_settings: { stability: 0.5, similarity_boost: 0.75 },
+    }),
+  },
+);
 
-if (!response.ok) {
-  console.error(`ElevenLabs returned ${response.status}: ${await response.text()}`);
+if (!result.audio_base64) {
+  console.error("The reply carried no audio. Response keys: " + Object.keys(result).join(", "));
   process.exit(1);
 }
 
-const result = await response.json();
 const audio = Buffer.from(result.audio_base64, "base64");
 
 const outDir = join("content", "audio", echo.id);
