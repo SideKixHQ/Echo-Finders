@@ -3,7 +3,7 @@
 # Position: South sidewalk of Walnut St in front of 10 Walnut St (Cotton Exchange, Water-Front block); county address point + OSM footprint (high confidence).
 id: wilmington-fred-in-the-storeroom
 title: "Fred in the Storeroom"
-summary: "The Cotton Exchange has the right ingredients for a ghost story: connected old buildings, changing levels, and passages where somebody…"
+summary: "A ghost tour tells of Fred, who turns up in the Cotton Exchange storerooms and is gone before he can help."
 place: "Cotton Exchange, Walnut Street entrance near 10 Walnut Street, Wilmington, North Carolina"
 at: { lat: 34.23979, lng: -77.94958 }
 triggerRadiusKm: 0.04
@@ -18,7 +18,7 @@ certaintyNote: >-
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "The Cotton Exchange has the right ingredients for a ghost story: connected old buildings, changing levels, and passages where somebody…"
+teaser: "He looked ready to help, then he was not there."
 script: |
   The Cotton Exchange has the right ingredients for a ghost story: connected old
   buildings, changing levels, and passages where somebody can disappear from view.
@@ -35,7 +35,7 @@ script: |
   pattern. From the public entrance, imagine the moment between recognizing a stranger and
   realizing there is nobody left to recognize.
 editorial: draft
-factCheck: corroborated
+factCheck: single-source
 sources:
   - title: "Haunted wilmington north carolina"
     publisher: "Drugstore Divas"

@@ -35,7 +35,7 @@ script: |
   a story. The house's real history supplies the weight; the haunting remains an
   unanswered claim. You can enjoy that uncertainty without pretending it has been solved.
 editorial: draft
-factCheck: corroborated
+factCheck: single-source
 sources:
   - title: "Burgwin wright house"
     publisher: "The Ghost Guild"

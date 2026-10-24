@@ -4,7 +4,7 @@
 # Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
 id: wilmington-the-museum-moves-with-the-rails
 title: "The Museum Moves with the Rails"
-summary: "A railroad museum has an unusual moving problem: some of its most important objects are built to travel, but cannot simply be driven…"
+summary: "When the railroad museum moved in 2007, its largest exhibits could only travel the way they were built to."
 place: "Wilmington Railroad Museum, 505 Nutt Street, Wilmington, North Carolina"
 at: { lat: 34.24171, lng: -77.95067 }
 triggerRadiusKm: 0.04
@@ -16,7 +16,7 @@ certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "A railroad museum has an unusual moving problem: some of its most important objects are built to travel, but cannot simply be driven…"
+teaser: "How do you move a locomotive two blocks?"
 script: |
   A railroad museum has an unusual moving problem: some of its most important objects are
   built to travel, but cannot simply be driven down a city street.

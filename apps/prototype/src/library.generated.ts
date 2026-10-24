@@ -10800,7 +10800,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-fred-in-the-storeroom",
     "title": "Fred in the Storeroom",
-    "summary": "The Cotton Exchange has the right ingredients for a ghost story: connected old buildings, changing levels, and passages where somebody…",
+    "summary": "A ghost tour tells of Fred, who turns up in the Cotton Exchange storerooms and is gone before he can help.",
     "point": {
       "at": {
         "lat": 34.23979,
@@ -10820,7 +10820,7 @@ export const LIBRARY: readonly Echo[] = [
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The Cotton Exchange has the right ingredients for a ghost story: connected old\nbuildings, changing levels, and passages where somebody can disappear from view.\n\nA published account of a Wilmington ghost tour tells of Fred, a tall, dark-haired\napparition associated with Paddy's Hollow. In that version, a manager encountered him in\na storage room. He seemed ready to offer help, then vanished.\n\nThe encounter is a reported legend, not a verified event. We cannot establish that the\nmanager saw a ghost, or identify an actual dead person behind the name Fred.\n\nWhat makes the story memorable is its almost ordinary beginning. A person appears in a\nworkplace and behaves like someone who belongs there. Only the ending breaks the\npattern. From the public entrance, imagine the moment between recognizing a stranger and\nrealizing there is nobody left to recognize.\n",
-    "teaser": "The Cotton Exchange has the right ingredients for a ghost story: connected old buildings, changing levels, and passages where somebody…",
+    "teaser": "He looked ready to help, then he was not there.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "tags": [
       "wilmington",
@@ -10945,7 +10945,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-harry-fordens-name-on-the-bridge",
     "title": "Harry Forden's Name on the Bridge",
-    "summary": "In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who worked to revive North Fourth Street after the…",
+    "summary": "Wilmington put Harry Forden's name on this bridge in 2007, for his work reviving North Fourth Street.",
     "point": {
       "at": {
         "lat": 34.2436,
@@ -10965,7 +10965,7 @@ export const LIBRARY: readonly Echo[] = [
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who\nworked to revive North Fourth Street after the Atlantic Coast Line's departure.\n\nThe bridge itself is older. The new name added a person's work to an existing piece of\ninfrastructure.\n\nListen at a safe public approach rather than entering railroad property below. From\nhere, the connection is visible: a crossing links streets, while a community advocate\nworks to reconnect a neighborhood with opportunity.\n\nA commemorative name can become so familiar that its meaning disappears into directions.\nThis stop restores the person behind it. Forden's public work concerned the area's\nfuture, not merely its old buildings. The city attached that effort to a structure\npeople could continue to encounter in everyday life.\n",
-    "teaser": "In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who worked to revive North Fourth Street after the…",
+    "teaser": "A name added to something already standing.",
     "tags": [
       "wilmington",
       "downtown"
@@ -11524,7 +11524,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-the-annex-behind-the-landmark",
     "title": "The Annex Behind the Landmark",
-    "summary": "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H. Sprunt in memory of his parents and the earlier congregation's founders.",
+    "summary": "William H. Sprunt gave the Memorial Hall Annex in 1910, in memory of his parents.",
     "point": {
       "at": {
         "lat": 34.2425,
@@ -11922,7 +11922,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-the-exhibition-in-a-little-lane",
     "title": "The Exhibition in a Little Lane",
-    "summary": "In 1953, Claude Howell and Gar Faulkner staged a Cottage Lane art show during the Azalea Festival, according to Cape Fear Museum's…",
+    "summary": "In 1953 two artists hung an art show down this alley during the Azalea Festival.",
     "point": {
       "at": {
         "lat": 34.23373,
@@ -11942,7 +11942,7 @@ export const LIBRARY: readonly Echo[] = [
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 1953, Claude Howell and Gar Faulkner staged a Cottage Lane art show during the Azalea\nFestival, according to Cape Fear Museum's historical account.\n\nThe setting made an exhibition part of the neighborhood rather than an event confined to\na grand gallery. Artists could bring work into a small downtown place already associated\nwith creative life.\n\nDo not enter a private courtyard to recreate the show. The public lane is enough to\nunderstand the scale.\n\nLook along the buildings and imagine the practical decision: choose a place, gather the\nwork, and invite people to see it. A local art community grows through events like that,\nwhere the audience meets artists nearby. The lane's size is part of the story. Cultural\nbeginnings do not always require a monumental address.\n",
-    "teaser": "In 1953, Claude Howell and Gar Faulkner staged a Cottage Lane art show during the Azalea Festival, according to Cape Fear Museum's…",
+    "teaser": "A gallery the width of a lane.",
     "tags": [
       "wilmington",
       "downtown"
@@ -12744,7 +12744,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-the-museum-moves-with-the-rails",
     "title": "The Museum Moves with the Rails",
-    "summary": "A railroad museum has an unusual moving problem: some of its most important objects are built to travel, but cannot simply be driven…",
+    "summary": "When the railroad museum moved in 2007, its largest exhibits could only travel the way they were built to.",
     "point": {
       "at": {
         "lat": 34.24171,
@@ -12764,7 +12764,7 @@ export const LIBRARY: readonly Echo[] = [
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "A railroad museum has an unusual moving problem: some of its most important objects are\nbuilt to travel, but cannot simply be driven down a city street.\n\nThe museum's account of its 2007 relocation records the work of moving the collection to\nits present Nutt Street setting. A new location had to accommodate artifacts and\nfull-size railroad equipment together.\n\nThis building now gives the collection a downtown home beside the city's railroad\nhistory. The move was itself another chapter in preservation, not the end of the\nprocess.\n\nLook at the scale of the outdoor equipment from the permitted visitor area. Each large\nobject represents a decision to carry difficult evidence forward. Keeping history\nsometimes means arranging a journey for things that have already finished their working\njourneys.\n",
-    "teaser": "A railroad museum has an unusual moving problem: some of its most important objects are built to travel, but cannot simply be driven…",
+    "teaser": "How do you move a locomotive two blocks?",
     "tags": [
       "wilmington",
       "downtown"
@@ -12816,7 +12816,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-the-painting-with-a-river-journey",
     "title": "The Painting with a River Journey",
-    "summary": "St. James preserves the story of Ecce Homo, a painting associated with the capture of a Spanish privateer vessel near Brunswick Town in 1748.",
+    "summary": "St. James keeps Ecce Homo, a painting said to have been taken from a Spanish privateer near Brunswick Town in 1748.",
     "point": {
       "at": {
         "lat": 34.2355,
