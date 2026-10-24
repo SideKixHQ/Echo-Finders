@@ -34,16 +34,27 @@ const MONTH =
 const CHECKABLE = new RegExp(`\\d|\\b(${COUNTING}|${ORDINAL}|${MONTH})\\b`, "i");
 
 /**
- * Titles and abbreviations that end in a full stop without ending a sentence.
+ * Prefixes whose full stop never ends a sentence.
  *
- * Without this list the splitter cut "established St. John's Art Gallery" into "established
- * St." and "John's Art Gallery", which breaks three things at once: the fragment inherits
- * the capital in "St" and so counts as a checkable claim, a real claim can never match a
- * sentence that no longer exists whole, and a reviewer is asked to find a source for the
- * word "St.". It did that 34 times across the library, 12 of them in Wilmington alone,
- * concentrated exactly where the saints are: St. James, St. John's, St. Philip's.
+ * Only prefixes belong here, and that is the whole point. An earlier version of this list
+ * held every abbreviation it could think of, case-insensitively, and joined any part
+ * ending in one to the part after it. That glued real sentences together:
+ *
+ *   "When he finally came in, the answer was no. By the traditional account, Samuel Adams
+ *    stood and said, this meeting can do nothing more to save the country."
+ *
+ * Two sentences in `boston-waiting-for-mister-rotch`, made one, because `no.` matched `No`
+ * with the `i` flag. `etc.`, `Co.`, `Inc.`, `Ltd.`, `Jr.` and `vs.` were wrong for the
+ * same reason in the other direction: they can all legitimately end a sentence, so joining
+ * on them guesses, and guesses wrong whenever a new sentence follows.
+ *
+ * What is left can only ever be followed by the thing it qualifies: a title by a name, a
+ * saint by a saint's name, `No.` by a number, `vs.` and `v.` by the other party.
+ * Matching is case-sensitive, so "St." is the
+ * saint and "no." is the word.
  */
-const ABBREVIATION = /\b(?:Mr|Mrs|Ms|Dr|St|Ste|Rev|Fr|Hon|Jr|Sr|Col|Gen|Capt|Lt|Sgt|Prof|Inc|Co|Ltd|Mt|Ft|No|vs|etc|approx|ca|al)\.$/i;
+const ABBREVIATION =
+  /\b(?:Mr|Mrs|Ms|Messrs|Dr|Prof|Rev|Fr|Hon|Col|Gen|Capt|Lt|Sgt|St|Ste|Mt|Ft|No|Nos|ca|approx|vs|v)\.$/;
 
 /**
  * Sentences, split on terminal punctuation followed by a capital or an opening quote,

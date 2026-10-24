@@ -20,6 +20,42 @@ const echo = (overrides: Partial<Echo> = {}): Echo =>
   makeEcho({ id: "fort", at: { lat: 40.7033, lng: -74.017 }, script: SCRIPT, sources: [source], ...overrides } as Parameters<typeof makeEcho>[0]);
 
 describe("sentencesOf", () => {
+  it("still ends a sentence on an abbreviation that can end one", () => {
+    // The first version of the abbreviation list was case-insensitive and held every
+    // short form it could think of, so it glued real sentences together. This is the
+    // one it broke in the library, in boston-waiting-for-mister-rotch.
+    expect(
+      sentencesOf("When he finally came in, the answer was no. By the traditional account, Samuel Adams stood."),
+    ).toEqual([
+      "When he finally came in, the answer was no.",
+      "By the traditional account, Samuel Adams stood.",
+    ]);
+    expect(sentencesOf("He collected stamps, coins, etc. Then he stopped.")).toEqual([
+      "He collected stamps, coins, etc.",
+      "Then he stopped.",
+    ]);
+    expect(sentencesOf("The company is Acme Co. It closed.")).toEqual([
+      "The company is Acme Co.",
+      "It closed.",
+    ]);
+    expect(sentencesOf("He met John Smith Jr. Then he left.")).toEqual([
+      "He met John Smith Jr.",
+      "Then he left.",
+    ]);
+  });
+
+  it("does not end a sentence on a prefix that qualifies what follows", () => {
+    expect(sentencesOf("She lived at No. 5 Market Street.")).toEqual([
+      "She lived at No. 5 Market Street.",
+    ]);
+    expect(sentencesOf("It stood here ca. 1750 by most accounts.")).toEqual([
+      "It stood here ca. 1750 by most accounts.",
+    ]);
+    expect(sentencesOf("The fixture was Celtic vs. Rangers.")).toEqual([
+      "The fixture was Celtic vs. Rangers.",
+    ]);
+  });
+
   it("does not end a sentence on an abbreviation", () => {
     // Wilmington is full of saints, and each one used to become its own "sentence".
     expect(
