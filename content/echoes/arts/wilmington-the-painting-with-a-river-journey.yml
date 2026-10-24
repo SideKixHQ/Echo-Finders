@@ -4,7 +4,7 @@
 # Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
 id: wilmington-the-painting-with-a-river-journey
 title: "The Painting with a River Journey"
-summary: "St. James preserves the story of Ecce Homo, a painting associated with the capture of a Spanish privateer vessel near Brunswick Town in 1748."
+summary: "St. James keeps Ecce Homo, a painting said to have been taken from a Spanish privateer near Brunswick Town in 1748."
 place: "St. James Episcopal Church, 25 South Third Street, Wilmington, North Carolina"
 at: { lat: 34.23550, lng: -77.94559 }
 triggerRadiusKm: 0.04

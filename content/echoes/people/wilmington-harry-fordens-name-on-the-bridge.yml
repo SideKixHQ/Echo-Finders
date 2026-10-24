@@ -3,7 +3,7 @@
 # Position: Structurae bridge 34.24381,-77.94293 (2 sources agree); point is south approach on N 6th sidewalk ~25 m south of span center. Grid puts 6th St at -77.9428 here. Note WWAY says span is between Campbell and Hanover (medium confidence).
 id: wilmington-harry-fordens-name-on-the-bridge
 title: "Harry Forden's Name on the Bridge"
-summary: "In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who worked to revive North Fourth Street after the…"
+summary: "Wilmington put Harry Forden's name on this bridge in 2007, for his work reviving North Fourth Street."
 place: "Harry Forden Bridge, North Sixth Street between Brunswick and Campbell streets, Wilmington, North Carolina"
 at: { lat: 34.24360, lng: -77.94290 }
 triggerRadiusKm: 0.04
@@ -15,7 +15,7 @@ certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who worked to revive North Fourth Street after the…"
+teaser: "A name added to something already standing."
 script: |
   In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who
   worked to revive North Fourth Street after the Atlantic Coast Line's departure.

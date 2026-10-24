@@ -3,7 +3,7 @@
 # Position: Brooklyn Arts Center (516 N 4th) geocodes 34.2422-34.2424,-77.9451/-77.9453; annex assumed east of church, viewed from Campbell St south sidewalk. Annex exact footprint/frontage not confirmed (low confidence).
 id: wilmington-the-annex-behind-the-landmark
 title: "The Annex Behind the Landmark"
-summary: "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H. Sprunt in memory of his parents and the earlier congregation's founders."
+summary: "William H. Sprunt gave the Memorial Hall Annex in 1910, in memory of his parents."
 place: "Brooklyn Arts Center Annex, behind the Fourth and Campbell church complex, Wilmington, North Carolina"
 at: { lat: 34.24250, lng: -77.94490 }
 triggerRadiusKm: 0.06
