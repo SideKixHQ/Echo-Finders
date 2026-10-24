@@ -39,7 +39,10 @@ enough to get the first few approved today.
 ### The safe path: run it on your machine
 
 `scripts/render-echo.mjs` calls ElevenLabs and writes the audio plus measured transcript
-timings. **Run it locally so your API key never leaves your computer.**
+timings. **Run it locally.** There is no API key to handle: `auth login` opens a browser
+and keeps the credential in your system keyring. An ElevenLabs key is shown once, at
+creation, and never again, so the old "export the key" route cost you a new key every
+time you lost it.
 
 ```bash
 git clone https://github.com/SideKixHQ/Echo-Finders
@@ -48,7 +51,7 @@ git checkout claude/charming-fermat-tyx9q6
 npm install
 npm run build --workspace @echofinders/core
 
-export ELEVENLABS_API_KEY=sk_...        # from elevenlabs.io → your profile → API key
+npx -y @elevenlabs/cli@1.7.1 auth login   # once: opens a browser, no key to copy
 node scripts/render-echo.mjs content/echoes/history/bowling-green-king-george.yml
 ```
 
