@@ -173,10 +173,18 @@ At a million listeners this rises to roughly $150 to $250, plus the map's bandwi
 line anywhere in this model** (James, 2026-10-21). What is left is machine cost, and it is
 small.*
 
-Measured inputs, from all 325 echoes in `content/echoes/` on 2026-10-21: **998 characters
-per echo**, average. The earlier figure of 805 came from the first 25 written and
-understated it by about a quarter. Plain-language cuts are out of scope for this version
+Measured inputs, from all 325 echoes in `content/echoes/`: **996 characters per echo**,
+average, and 323,587 for the library. That is the text as `render-echo.mjs` actually sends
+it, paragraphs collapsed and sentences rejoined with one space, which is what ElevenLabs
+bills for. The raw scripts are 1,002 per echo and 325,780 in total; the difference is
+whitespace nobody pays for. The earlier figure of 805 came from the first 25 written and
+understated it by about a fifth. Plain-language cuts are out of scope for this version
 (James, 2026-10-21), so narration below is scripts plus re-renders only.
+
+*(Re-measured 2026-10-24. This said 998, which was neither figure: it came from a
+line-by-line parser that trimmed each line, so it undercounted the raw text and
+overcounted the billable. The cost below is unchanged, because 996 against 998 moves it by
+two dollars in five thousand.)*
 
 | | Amount | Cost |
 |---|---|---|
