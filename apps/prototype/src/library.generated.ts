@@ -26,22 +26,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.95,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "African Burial Ground National Monument",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-21",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/afbg/index.htm"
-      },
-      {
-        "title": "New York — African Burial Ground National Monument",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-21",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/afamburial.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 1991 the federal government began digging foundations for an office tower at Broadway\nand Duane, and about seven metres down the crews found bone.\n\nWhat lay beneath the block was a cemetery. From the late sixteen-hundreds into the\nseventeen-nineties, free and enslaved Africans in this city had buried their dead in a\npatch of ground outside the settlement's boundary, roughly six and a half acres of it.\nLater New York built over the site and forgot. Estimates put the number of burials around\nfifteen thousand.\n\nFour hundred and nineteen men, women and children were recovered from the part that was\nexcavated. Their descendants and this city's Black community fought to stop the\nconstruction, and won. The remains were studied, then reinterred here in 2003.\n\nIt is the earliest and largest African burial ground yet found in the United States, and\nit existed partly because of a rule: from 1697, Africans were barred from the city's main\nburial ground. So they made their own, out past the edge of town.\n\nYou are standing at the edge of town.\n",
@@ -91,14 +76,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.84,
     "visibility": "landmark-visible",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Atlantic City Boardwalk — Historic American Engineering Record",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Down on your right, that pale line running along the back of the beach.\n\nBoardwalks exist everywhere now. That one is where the idea came from, and it was not\nbuilt for strolling.\n\nIn eighteen seventy the hotels and the railway on that beachfront had the same complaint:\nguests walked in off the sand and brought most of the beach with them, into the lobbies,\nonto the carpets, into the railway carriages. Sweeping it out was a full-time job.\n\nSo a conductor and a hotelier proposed a wooden walkway, laid straight onto the sand, that\npeople would use because it was easier than not using it.\n\nIt was taken up every autumn and stored for the winter.\n\nEverything else that word now means, the piers and the postcards and the\namusements, grew on top of a solution to a cleaning problem.\n",
@@ -136,29 +114,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Abiel Smith School",
-        "publisher": "National Park Service, Boston African American National Historic Site",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/boaf/learn/historyculture/abiel-smith-school.htm"
-      },
-      {
-        "title": "African Meeting House",
-        "publisher": "National Park Service, Boston African American National Historic Site",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/boaf/learn/historyculture/amh.htm"
-      },
-      {
-        "title": "The Black Struggle for Equal Education in Boston, 1787 to 1976",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/the-black-struggle-for-equal-education-in-boston-1787-to-1976.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the schoolhouse at the corner of Smith Court. It opened in eighteen thirty-five as\na public school for Black children, and it became the default school for most of the\nBlack children in the city.\n\nPart of the money came from a white businessman, Abiel Smith, who left it for the\neducation of Black children. The school was still worse than the white schools, and the\nfamilies here kept saying so.\n\nIn eighteen forty-nine, many of them took their children out. Classes moved back into the\nmeeting house next door. A father, Benjamin Roberts, sued so his daughter Sarah could go to\nthe school nearest her home. He lost.\n\nSo they went to the state. William Cooper Nell, who had been a pupil in the old African\nSchool himself, led the petitions. In eighteen fifty-five, Massachusetts outlawed\nsegregated public schools.\n\nNell lived on this court. On the first day of school that year, he watched a young\nstudent walk past this building, and heard what the boy said to it.\n\nGoodbye forever, colored school. Tomorrow we are like the other Boston boys.\n",
@@ -198,29 +154,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "African Meeting House",
-        "publisher": "National Park Service, Boston African American National Historic Site",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/boaf/learn/historyculture/amh.htm"
-      },
-      {
-        "title": "African Meeting House",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/african-meeting-house.htm"
-      },
-      {
-        "title": "Peter Faneuil: Empire of Goods, Wealth, and Enslavement",
-        "publisher": "National Park Service, Boston National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bost/learn/historyculture/peter-faneuil.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "You are in Smith Court. Look at the meeting house. It opened in eighteen-oh-six, and it is\nthe oldest Black church building still standing in the United States.\n\nLook at it as a building first. Somebody had to pay for it, and somebody had to build it.\n\nThe African Baptist Church was founded the year before, with twenty-four members. Fifteen\nof them were women. To give it a home, a man named Cato Gardner, born in Africa, went out\nand raised fifteen hundred dollars himself. Black craftsmen did most of the work.\n\nThen the building did its job. It was a church, and a school met on the first floor.\nFrederick Douglass spoke here. So did Maria Stewart. In eighteen thirty-two, William Lloyd\nGarrison founded the New England Anti-Slavery Society inside.\n\nPeople called it the Black Faneuil Hall.\n\nIt was meant as a compliment. But Faneuil Hall was the gift of one rich merchant, a man who\nbought and sold enslaved people. This hall was paid for and built by the people who sat in\nit.\n",
@@ -266,22 +200,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Beacon Hill",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/beacon-hill.htm"
-      },
-      {
-        "title": "The Evacuation of Boston, 1776",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/evacuation-of-boston-1776.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Find the tall column with the eagle on top. It stands in for something that is gone.\n\nIn sixteen thirty-five, the English settlers put up a tall wooden beacon on top of this\nhill. If danger came, an attack or an outbreak, it could warn the countryside. The hill\ntook its name from it.\n\nIn seventeen seventy-five, with colonial troops gathering across the river at Cambridge,\nGeneral Gage built a small fort up here, and had the beacon taken down. A signal to the countryside was the\nlast thing he wanted.\n\nThe British left Boston in March seventeen seventy-six. Bostonians put the beacon straight\nback up.\n\nIt lasted another thirteen years. In seventeen eighty-nine, a storm blew it down. The\neagle column, designed by Charles Bulfinch, took its place.\n\nThe hill has changed even more than the beacon. It once had three peaks. Bostonians dug\nmuch of them away to fill in land around the city.\n\nThe beacon is gone, and most of the hill is gone. Only the name stayed put.\n",
@@ -327,43 +246,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "contested",
-    "sources": [
-      {
-        "title": "Park Street Church",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/park-street-church.htm"
-      },
-      {
-        "title": "\"Brimstone Corner,\" Boston. The Universalist, September 25, 1897, page 4",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn90053049/1897-09-25/ed-1/?sp=4"
-      },
-      {
-        "title": "\"Brimstone Corner.\" New-York Tribune, December 21, 1902, page 21",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83030214/1902-12-21/ed-1/?sp=21"
-      },
-      {
-        "title": "The New York Herald, June 25, 1922, section seven, page 85 (review of a history of Park Street)",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045774/1922-06-25/ed-1/?sp=85"
-      },
-      {
-        "title": "Palestine Daily Herald, February 20, 1909, page 2 (Park Street church and Brimstone Corner)",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn86090383/1909-02-20/ed-1/?sp=2"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the spire on the corner. This is Park Street Church, and for more than a\ncentury Bostonians have called this spot Brimstone Corner.\n\nNobody quite agrees why.\n\nThe first story is about sermons. The church was founded in eighteen-oh-nine, as much of\nBoston was turning Unitarian, and its early ministers preached the old orthodox faith at\nfull heat. Newspapers around nineteen hundred said the name came from the first of them,\nEdward Dorr Griffin. One old Boston joke went like this. The Unitarians had managed to\nfreeze over hell, and this congregation broke a hole in the ice and let the flames up\nagain.\n\nThe second story is about the cellar. A Boston historian, in a book about Park Street\npublished in the early nineteen-twenties, said the sermons had nothing to do with it.\nDuring the War of eighteen twelve, he said, brimstone for making gunpowder was stored in\nthe building.\n\nBrimstone is sulphur. It goes into gunpowder, and it is what hell is supposed to smell of.\n\nSo the corner got its name from the pulpit, or from the basement. Either way, it was the\nsame smell.\n",
@@ -404,36 +287,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Boston Common",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/boston-common-ma.htm"
-      },
-      {
-        "title": "The Evacuation of Boston, 1776",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/evacuation-of-boston-1776.htm"
-      },
-      {
-        "title": "Chicago Daily Tribune, February 20, 1876, page 5 (the Old Elm on Boston Common)",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn84031492/1876-02-20/ed-1/?sp=5"
-      },
-      {
-        "title": "Cows on Boston Common, The Ely Miner, January 9, 1931, page 5",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn90059182/1931-01-09/ed-1/?sp=5"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the grass around you. For about two hundred years, this was a pasture.\n\nThe town bought the land in sixteen thirty-four, and families grazed their cattle here.\nThere were rules about it. Each family could only put so many cows on the Common, so the\ngrass would not run out.\n\nOn hot days the cows sheltered under a huge old elm. The ground around it was swampy then.\n\nIn the winter of seventeen seventy-five, the Common was taken over by something else.\nBritish soldiers dug artillery positions into it, and a garrison of about seventeen\nhundred men camped here.\n\nIn March they sailed away.\n\nThe cows stayed. They kept grazing this ground for another fifty-four years, until the\ncity banned them in eighteen thirty. The pasture fences came down six years after that.\n\nThe British army held the Common for one winter. The cows held it for two centuries.\n",
@@ -472,36 +326,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "contested",
-    "sources": [
-      {
-        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01012230/"
-      },
-      {
-        "title": "King's hand-book of Boston (1885)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01015801/"
-      },
-      {
-        "title": "Walks & talks about historic Boston (1917)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/17025471/"
-      },
-      {
-        "title": "Old South Meeting House",
-        "publisher": "National Park Service, Boston National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bost/learn/historyculture/osmh.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand on Milk Street and look across at the Old South Meeting House, the big brick church\nwith the tall steeple.\n\nBenjamin Franklin was baptized in there, as a baby, in seventeen oh six. And the story\nBoston has told for a very long time is that he was born right about where you are\nstanding, in a small wooden house that belonged to his father, a candle maker.\n\nIt was a plain house. Clapboard on the front, rough shingles on the sides, about twenty\nfeet wide on the street. It stood for over a century, and it burned down in eighteen\neleven. A newspaper office was later built on the site.\n\nTidy enough. Except for one detail.\n\nIn eighteen seventy three, the Boston historian Samuel Adams Drake pointed out that a\ncorner of Hanover Street, across town, also claimed the honour. And the witness for that\nother corner, by his account, was Franklin himself, who was said to have told a reliable\nperson he was born there.\n\nOther evidence points back here. Drake weighed the two and threw up his hands. A plague on\nboth the houses, he wrote.\n\nWhat is certain is that the boy grew up at the Hanover Street house, making tallow candles\nfor his father. What is likely is that he was born on Milk Street.\n\nSo look at the church across the road. Whichever corner he was born on, he was carried\nover there to be baptized.\n",
@@ -541,29 +366,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Boston Massacre",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/boston-massacre.htm"
-      },
-      {
-        "title": "Crispus Attucks",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/crispus-attucks.htm"
-      },
-      {
-        "title": "Granary Burying Ground",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/granary-burying-ground.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look for a stone that faces Tremont Street. It belongs to five men.\n\nOn the fifth of March, seventeen seventy, British soldiers fired into a crowd on King\nStreet. Three days later, Boston buried the dead.\n\nWitnesses said around ten thousand people followed the funeral. That was most of the town.\n\nThe procession ended here. Samuel Gray, Samuel Maverick, James Caldwell and Crispus\nAttucks went into the same plot. A week later a fifth man, Patrick Carr, was laid in with\nthem.\n\nTwo of them, Attucks and Caldwell, were sailors with no family and no home in Boston.\nBefore the funeral, their bodies lay in state at Faneuil Hall.\n\nNobody in Boston was their family. That week, the whole town was.\n",
@@ -613,22 +416,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Lewis and Harriet Hayden House",
-        "publisher": "National Park Service, Boston African American National Historic Site",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/boaf/learn/historyculture/lewis-and-harriet-hayden-house.htm"
-      },
-      {
-        "title": "Lewis and Harriet Hayden House",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/lewis-and-harriet-hayden-house.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This is sixty-six Phillips Street. It is a private home, so please look from the\nsidewalk.\n\nIn eighteen fifty it was a boarding house run by Lewis and Harriet Hayden. Both had\nescaped slavery in Kentucky. Lewis was out in the city. Harriet almost certainly ran the\nhouse. Between them it became the busiest Underground Railroad safe house in Boston.\n\nThat summer, the census found two famous guests living here. William and Ellen Craft had\nescaped from Georgia, Ellen dressed as a white slaveholder and William posing as her slave.\n\nThat autumn, under the new Fugitive Slave Law, slave catchers came to Boston looking for\nthem. It was the city's first test of the law.\n\nWhat happened next is William Craft's own account. He said that he and Lewis Hayden had a\nkeg of gunpowder under this house, with a fuse attached, ready to light if anyone tried to\ntake them. That is his word. No other record of the keg survives that we know of.\n\nNobody tried. The slave catchers gave up.\n\nAn abolitionist paper later explained why. The marshal knew that the road to hell lay over\nLewis Hayden's threshold.\n",
@@ -669,22 +457,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Burning of Charlestown",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/the-burning-of-charlestown.htm"
-      },
-      {
-        "title": "Copp's Hill Burying Ground",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/copp-s-hill-burying-ground.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look for the old stone foundations in this park. They belonged to the Great House, later the\nThree Cranes Tavern. In seventeen seventy-five this was the middle of Charlestown.\n\nThat spring, about sixteen hundred people lived here. Wooden houses, workshops, warehouses,\nnarrow streets, a ferry across to Boston.\n\nBy June, most of them had gone. The British army was shut up in Boston, the colonial army\nwas gathering outside, and Charlestown sat in between.\n\nOn the seventeenth of June, the militia dug in on the hill above the town. During the\nbattle, colonial soldiers fired on the British from the empty houses. General William Howe\nordered the town set on fire.\n\nA British general, John Burgoyne, had been directing guns from Copp's Hill, across the\nwater. He wrote that the timber church steeples were great pyramids of fire above the rest.\n\nAfterwards, more than four hundred and fifty families listed what they had lost. One man,\nWillson Chamberlain, began his list and ran out of room on the paper. He ended it with one\nline.\n\nIn short, I lost most all that I had.\n\nThe town asked Congress to pay. Congress said it lamented the distress. Nobody was ever\ncompensated.\n\nOf the town Chamberlain lost, this is what you can still see. A tavern's foundations, in a\npark.\n",
@@ -731,36 +504,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old Corner Book Store, Corner of Washington and School streets, Boston (HABS MA-325)",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ma1736/"
-      },
-      {
-        "title": "Freedom Trail Audio Described Brochure",
-        "publisher": "National Park Service, Boston National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bost/planyourvisit/freedom-trail-audio-described-brochure.htm"
-      },
-      {
-        "title": "Colonial and revolutionary landmarks of Boston (1913)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/14003283/"
-      },
-      {
-        "title": "Literary landmarks of Boston (1922)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/22012901/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Find the little brick building on the corner with the steep, two sloped roof. It is one of\nthe oldest buildings in the city, and among the taller ones around it, it looks it.\n\nBefore it was built, this ground belonged to a woman named Anne Hutchinson.\n\nShe held meetings in her house here, talking about religion. The colony's leaders judged\nher teaching dangerous. In sixteen thirty eight she was tried and banished.\n\nAt the end of the trial she asked why she was being sent away. The governor told her, say\nno more. The court knows wherefore, and is satisfied.\n\nLater, fire took the houses on this corner. The building in front of you went up in its\nplace as an apothecary's shop, and stayed one for about a hundred years.\n\nThen the booksellers moved in.\n\nBy the middle of the eighteen hundreds this was the home of Ticknor and Fields, the\nleading publisher in the country, and the writers came here with their manuscripts.\nHawthorne. Emerson. Longfellow. Harriet Beecher Stowe. Louisa May Alcott.\n\nSo on this one small corner, a woman was thrown out of the colony and told to say no more.\n\nTwo hundred years later, saying more was the whole business.\n",
@@ -800,29 +544,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Robert Gould Shaw and the 54th Regiment",
-        "publisher": "National Park Service, Boston African American National Historic Site",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/boaf/learn/historyculture/shaw.htm"
-      },
-      {
-        "title": "The Robert Gould Shaw Memorial",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/the-robert-gould-shaw-memorial.htm"
-      },
-      {
-        "title": "Robert Gould Shaw & Massachusetts 54th Regiment Memorial",
-        "publisher": "National Park Service, Saint-Gaudens National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/robert-gould-shaw-massachusetts-54th-regiment-memorial.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the soldiers in the bronze, not the man on the horse. Look at their faces.\n\nThey are not one face repeated. Some are young, some older. The features and the builds\nare different.\n\nThat was the point. The sculptor, Augustus Saint-Gaudens, was first expected to make a\nstatue of Colonel Robert Gould Shaw alone on horseback. Shaw's family objected. He had not\nbeen a great commander, they said, and it seemed pretentious. So Saint-Gaudens put him\namong his men.\n\nThe men were the Fifty-fourth Massachusetts, one of the first Black regiments of the Civil\nWar. They marched down this street, off to the war, in eighteen sixty-three. That July, in\nthe assault on Fort Wagner in South Carolina, Shaw and many of his men were killed.\n\nIn his New York studio, Saint-Gaudens hired Black men to pose, and modelled some forty\nheads. The work took him about fourteen years, longer than anything else in his career.\n\nIt was unveiled in eighteen ninety-seven, and the original inscriptions named only the\nwhite officers who fell. The names of the Black soldiers were added in the early\nnineteen-eighties.\n\nThe faces came first. The names took another eighty-five years.\n",
@@ -869,29 +591,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Summer 1812: The USS Constitution shatters the aura of British naval superiority",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/old-ironsides.htm"
-      },
-      {
-        "title": "USS Constitution",
-        "publisher": "National Park Service, Boston National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bost/learn/historyculture/ussconst.htm"
-      },
-      {
-        "title": "'Old Ironsides' in Dry Dock 1 (wayside exhibit)",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/old-ironsides-dry-dock-1-cny-wayside.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the side of the ship in front of you.\n\nIn August eighteen twelve, about seven hundred and fifty miles east of Boston, she met the\nBritish frigate Guerriere.\n\nThe Royal Navy was the most powerful in the world. The American navy had fewer than two\ndozen ships. The British captain said he would take this one in thirty minutes.\n\nHer captain, Isaac Hull, held his fire as they closed. He waited until the two ships were\nside by side. Then he fired the whole broadside.\n\nThe Guerriere was wrecked. And at some point in the fight, a British cannonball hit this\nhull and bounced off. One of the crew shouted that her sides were made of iron.\n\nThey were not. They were live oak, a wood so dense it can weigh seventy-five pounds to the\ncubic foot. It grew on the swampy islands off Georgia. The first timber cutters sent from New\nEngland fell sick within days, and enslaved men were brought in to build the roads to get it out.\n\nShe has been rebuilt again and again since. But below the waterline, a good part of her\noriginal wood is still there.\n\nThe nickname stuck. She has been Old Ironsides for more than two hundred years.\n\nShe has never been iron.\n",
@@ -939,43 +639,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "landmark-visible",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "United States Oracle and Portsmouth Advertiser, November 20, 1802, page 3",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83025545/1802-11-20/ed-1/?sp=3"
-      },
-      {
-        "title": "Paul Revere",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/paul-revere.htm"
-      },
-      {
-        "title": "New-York Tribune, April 17, 1875, page 1 (Boston letter on the gilding of the State House dome)",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83030214/1875-04-17/ed-1/?sp=1"
-      },
-      {
-        "title": "Springfield Weekly Republican, March 12, 1942, page 9",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83020847/1942-03-12/ed-1/?sp=9"
-      },
-      {
-        "title": "Massachusetts State House",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/massachusetts-state-house.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up the hill at the dome of the State House. It was not always gold.\n\nIn November eighteen-oh-two, a New Hampshire newspaper reported that the superb dome of\nthe new State House had just been coppered. The sheets, it said, were made in\nMassachusetts by Colonel Revere and son.\n\nThat is Paul Revere. After the war he went into industry, and in eighteen-oh-one he opened\na copper mill. The paper added, with some pride, that it was the only sheet copper works\nin America.\n\nSo for about seventy years the dome was the colour of copper. It was gilded in the\neighteen-seventies, and Boston argued about whether the gold was worth the money. A\nnewspaper later made a point of it. Real gold leaf, not gilt paint.\n\nThen in nineteen forty-two, with the country at war, the dome was to be painted a dull\ngrey, as an air raid precaution.\n\nRevere is remembered for one night on a horse. Look up. This was his day job.\n",
@@ -1015,50 +679,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Boston Public Garden",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/boston-public-garden.htm"
-      },
-      {
-        "title": "Mrs. Paget's Swan Boats. The Helena Independent, October 8, 1893, page 6",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83025308/1893-10-08/ed-1/?sp=6"
-      },
-      {
-        "title": "Fort Worth Gazette, October 29, 1893, page 2 (Mrs. Paget's swan boats)",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn86071158/1893-10-29/ed-1/?sp=2"
-      },
-      {
-        "title": "Shirley Temple Going for Ride. The Waterbury Democrat, August 3, 1938, page 9",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn82014085/1938-08-03/ed-1/?sp=9"
-      },
-      {
-        "title": "Whiting's Boston Letter. Springfield Weekly Republican, April 8, 1937, page 9",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83020847/1937-04-08/ed-1/?sp=9"
-      },
-      {
-        "title": "Cruel Captain! The St. Johns Herald, April 8, 1899, page 3 (from Youth's Companion)",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn94051692/1899-04-08/ed-1/?sp=3"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Watch a swan boat come round the pond. Look at the back of it. That is where the driver\nsits, pedalling as if on a bicycle, and paddle wheels push the whole thing along.\n\nThe boats began running here in eighteen seventy-seven. They were designed by a man named\nRobert Paget.\n\nSixteen years later, newspapers across the country ran a small item about who was really\nin charge. The owner and manager of the Boston swan boats, they reported, was a woman.\nMrs. Paget.\n\nShe did not stand at the landing calling for fares. She left that to a man. But she came\ndown to the landing often, studied the business, and made a very comfortable living from\nit. By then she had been running it for fourteen years.\n\nIn nineteen thirty-eight, the owner of the fleet was still a Paget, John Paget. When\nShirley Temple came to town, he made her an honorary admiral of the swan boat navy.\n\nAs for the man at the landing, one story from those years gives his whole sales pitch.\nGrown folks, ten cents. Children, five. Babies thrown in.\n",
@@ -1098,29 +719,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01012230/"
-      },
-      {
-        "title": "A brief sketch of the history of King's Chapel (1898)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/07030336/"
-      },
-      {
-        "title": "Freedom Trail Audio Described Brochure",
-        "publisher": "National Park Service, Boston National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bost/planyourvisit/freedom-trail-audio-described-brochure.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the walls of King's Chapel. Dark, rough blocks of stone.\n\nNobody quarried them. There were no quarries yet. The stone was gathered off the surface\nof the ground in Braintree, south of here, and the builders had little skill at dressing\nit. That is why it looks the way it does.\n\nNow picture this corner in the summer of seventeen forty nine.\n\nThere is already a church here. A wooden one, old and decaying. The governor lays the\ncornerstone for a new stone chapel, gives the workmen money to drink his health, and then\nwalks inside the old wooden church for a service.\n\nBecause the plan was not to pull the old church down first.\n\nThe plan was to build the new one around it.\n\nSo for nearly four years the congregation kept worshipping in a wooden church while stone\nwalls went up on every side of them. Only when the old building was too far gone did they\nmove out, and borrow somebody else's.\n\nBy the summer of seventeen fifty four the stone chapel was in use. The pulpit was carried\nover from the old church into the new one.\n\nMost buildings replace the one before them. This one swallowed it.\n",
@@ -1159,22 +758,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Paul Revere House",
-        "publisher": "National Park Service, Boston National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bost/learn/historyculture/prh.htm"
-      },
-      {
-        "title": "Paul Revere House",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/paul-revere-house.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the house at number nineteen, North Square. Everything else you can see from here\nis younger than it.\n\nIt went up around sixteen eighty. That makes it the oldest building in downtown Boston.\n\nPaul Revere bought it in seventeen seventy. He was a silversmith, a veteran and a father of\nfive. On the night of the eighteenth of April, seventeen seventy-five, he set out from this\nsquare to warn Samuel Adams and John Hancock.\n\nThe Reveres owned the house for thirty years and lived in it for about twenty. In eighteen\nhundred, he sold it.\n\nWhat came next is why it is still here.\n\nIt became a boarding house for sailors. Then a tenement, with shops on the ground floor. At\none point it was a cigar factory. At another, a bank. Nobody was preserving it. It was just\na building people kept finding a use for.\n\nBy the early nineteen hundreds it faced demolition. A great-grandson of Paul Revere bought\nit, and in April nineteen oh eight it opened as a museum.\n\nTwenty years of Reveres. A century of sailors, shopkeepers and cigar makers.\n\nThe house only remembers the twenty.\n",
@@ -1214,36 +798,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old State House",
-        "publisher": "National Park Service, Boston National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bost/learn/historyculture/osh.htm"
-      },
-      {
-        "title": "Old Massachusetts State House, 206 Washington Street, Boston (HABS MA-1246)",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ma1403/"
-      },
-      {
-        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01012230/"
-      },
-      {
-        "title": "Colonial and revolutionary landmarks of Boston (1913)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/14003283/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Find the end of the old brick State House with the balcony on it. Now look up, past the\nbalcony, to the two corners of the roof.\n\nA lion on one side. A unicorn on the other. The badge of the British king.\n\nOn the eighteenth of July, seventeen seventy six, a crowd filled the street below you to\nhear a document read aloud from that balcony. It was the Declaration of Independence, and\nBoston was hearing it for the first time.\n\nSix years earlier, soldiers had fired into a crowd on this same spot. This time the guns\nwent off in celebration.\n\nThen the crowd turned to the roof.\n\nThe lion and the unicorn came down. They were carried a little way down the street,\nheaped up with every other royal emblem that could be found in town, and burned in a\nbonfire outside a tavern.\n\nFor about a hundred years, those corners stayed bare. Then the building was restored, and\nnew figures went back up.\n\nSo the pair you are looking at never heard the Declaration. The ones that did are ash.\n\nBoston burned the king's animals to make a point. A century later, it put them back to\nmake another.\n",
@@ -1282,43 +837,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Revere's Statue: Description of the Proposed Work, The Salt Lake Herald, 30 November 1884, page 3",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn85058130/1884-11-30/ed-1/?sp=3"
-      },
-      {
-        "title": "Dallin's Paul Revere Wins at Last, Springfield Weekly Republican, 11 January 1940, page 3",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83020847/1940-01-11/ed-1/?sp=3"
-      },
-      {
-        "title": "Whiting's Boston Letter, Springfield Weekly Republican, 10 October 1940, page 9",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83020847/1940-10-10/ed-1/?sp=9"
-      },
-      {
-        "title": "Cyrus E. Dallin and the Paul Revere model, The Frontier, O'Neill, Nebraska, 18 April 1940, page 2",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/2010270509/1940-04-18/ed-1/?sp=2"
-      },
-      {
-        "title": "Paul Revere Rides Again, The Guardian, Boston, 14 September 1940, page 4",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83045863/1940-09-14/ed-1/?sp=4"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the rider. When this design was first described, it was Revere stopping for a\nmoment in the middle of his ride, to warn the people.\n\nIt won a competition in eighteen eighty-four. Ten models were entered. The winner\nwas a sculptor from Utah, twenty-three years old, who had come to Boston a few years before\nwith no money at all.\n\nThe newspapers announced the winner and got his name wrong. They called him Charles Dillon.\nHis name was Cyrus Dallin.\n\nOn the Fourth of July, eighteen eighty-five, he signed a contract for a bronze to stand in\nCopley Square. The money was supposed to come from public subscription. It never did.\n\nDallin became one of the best-known sculptors in the country. He kept asking Boston about\nhis statue. Boston kept being sympathetic.\n\nAfter more than half a century, he tried something new. He wrote a poem, in the rhythm of\nLongfellow.\n\nListen, my children, and you shall hear, of the ignoble failure of Boston to rear, the\ngreatest creation of my long career, the equestrian statue of Paul Revere.\n\nThe city found the money. In September nineteen forty, fifty-five years after the contract,\nthis statue was unveiled here. Dallin was seventy-eight.\n\nHe said it was the poem that did it. It was probably the only poem he ever wrote.\n",
@@ -1365,22 +884,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01012230/"
-      },
-      {
-        "title": "Freedom Trail Audio Described Brochure",
-        "publisher": "National Park Service, Boston National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bost/planyourvisit/freedom-trail-audio-described-brochure.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "You are on School Street. It is named after a school that is not here.\n\nFind the bronze statue of Benjamin Franklin, set back from the sidewalk. Close by, in the\nsixteen thirties, the town of Boston started its first school. The Latin School. A plain\nbuilding of one storey, big enough for about a hundred boys.\n\nNow look up the street, toward the dark stone church on the corner. That is King's Chapel.\n\nIn the seventeen forties the chapel wanted to rebuild, bigger. It needed more ground, and\npart of that ground had the schoolhouse on it. After a good deal of haggling, the church\nbuilt the school a new house on the other side of the street, and took the old site.\n\nThe town was not pleased. A local wit put it in verse. A fig for your learning, I tell you\nthe town, to make the church larger, must pull the school down.\n\nThe school moved many more times after that. It is still open, nearly four hundred years\non, just not on the street that carries its name.\n\nAs for Franklin. He started here at eight years old, and he lasted one year.\n\nOf everyone who ever studied on this street, he is the one who stayed.\n",
@@ -1420,29 +924,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old North Church",
-        "publisher": "National Park Service, Boston National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bost/learn/historyculture/onc.htm"
-      },
-      {
-        "title": "Old North Church",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/old-north-church.htm"
-      },
-      {
-        "title": "Boston, a guide book, by Edwin M. Bacon (Ginn and Company, 1909), Christ Church and the Newman house",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/33007578/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the brick tower, and the tablet on its front. It says the signal lanterns of Paul\nRevere were shown in the steeple of this church.\n\nIt does not say who carried them up.\n\nOn the night of the eighteenth of April, seventeen seventy-five, by the usual account, two\nmen let themselves in. One was John Pulling, a member of the vestry. The other was the man\nwho kept the church, its sexton. His name was Robert Newman.\n\nThey climbed to the top of the tower, the tallest structure in the town. They held two\nlanterns near the windows, briefly. Then they got out.\n\nTwo lanterns meant the British troops were crossing the river by water, heading for\nLexington and Concord.\n\nNewman lived a block up this street, on the corner of Sheafe Street. And there is one more\ndetail about that house.\n\nAt the time, British officers were quartered in it, on the Newman family.\n\nSo the signal that the army was moving went up from the tallest building in Boston. And the\nman who hung it was sharing his home with the army's officers.\n",
@@ -1489,43 +971,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old North Steeple (editorial), Evening Star, Washington, D.C., 2 September 1954, page 22",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83045462/1954-09-02/ed-1/?sp=22"
-      },
-      {
-        "title": "Hurricane topples Old North Church steeple, Evening Star, Washington, D.C., 1 September 1954, page 2",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83045462/1954-09-01/ed-1/?sp=2"
-      },
-      {
-        "title": "$10 for Steeple Fund, Evening Star, Washington, D.C., 3 September 1954, page 13",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83045462/1954-09-03/ed-1/?sp=13"
-      },
-      {
-        "title": "Church Spire Is Dedicated, The Key West Citizen, 13 October 1955, page 4",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83016244/1955-10-13/ed-1/?sp=4"
-      },
-      {
-        "title": "Boston, a guide book, by Edwin M. Bacon (Ginn and Company, 1909), Christ Church",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/33007578/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the white spire on top of the tower.\n\nIt is younger than it looks.\n\nThe first spire went up in the seventeen hundreds. A guidebook called it the most elegant\nin the town. Early in the eighteen hundreds, a gale blew it down.\n\nIts replacement was built from a model by Charles Bulfinch, the architect of the State\nHouse. That one stood for about a hundred and fifty years.\n\nThen, on the thirty-first of August, nineteen fifty-four, Hurricane Carol reached Boston.\nThe wind worked at the spire for more than an hour. It swayed, cracked, and went over into\nthe street.\n\nAn amateur photographer visiting from New York happened to catch it as it fell.\n\nWithin weeks there was a fund to put it back. Money came from well beyond Boston. A Lions\nClub in Maine voted to send ten dollars.\n\nIn October nineteen fifty-five, a new spire was dedicated here. At the ceremony it was\ndescribed as a duplicate of the spire the lanterns hung from in seventeen seventy-five.\n\nSo when you look up, you are seeing the night of the lanterns, more or less. You are just\nseeing it in a copy about seventy years old.\n",
@@ -1572,36 +1018,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Faneuil Hall Virtual Tour: Grasshopper Weathervane",
-        "publisher": "National Park Service, Boston National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bost/learn/faneuil-hall-virtual-tour.htm"
-      },
-      {
-        "title": "Faneuil Hall Audio Described Brochure",
-        "publisher": "National Park Service, Boston National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bost/planyourvisit/faneuil-hall-audio-described-brochure.htm"
-      },
-      {
-        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01012230/"
-      },
-      {
-        "title": "Walks & talks about historic Boston (1917)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/17025471/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at Faneuil Hall, at the little tower on the end nearest the harbour, and then at\nthe very tip of it. That gold shape catching the light is not an arrow, and it is not a\nrooster.\n\nIt is a grasshopper.\n\nIt is about four feet long, hammered out of copper and covered in gold, and it has been up\nthere since seventeen forty two. A craftsman named Shem Drowne made it, probably copying\nthe grasshopper on the Royal Exchange in London.\n\nIt has been knocked off by an earthquake. It has come down in a fire. In the nineteen\nseventies it was stolen, and after a week of searching it turned up hidden inside the\ntower it fell from.\n\nAnd there is a story about it that nobody has ever proved.\n\nThe story goes that during the War of Eighteen Twelve, with Boston nervous about British\nspies, a stranger could be stopped and asked one question. What is on top of Faneuil Hall?\n\nAny Bostonian would know. A spy would have to guess.\n\nThe National Park Service tells that one as a legend, and a legend is what it is.\n\nBut stand here for a minute and watch the people walking past. Count how many of them look\nup.\n\nThen decide whether the question would still work.\n",
@@ -1652,36 +1069,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Copp's Hill Burying Ground",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/copp-s-hill-burying-ground.htm"
-      },
-      {
-        "title": "Historic burial-places of Boston and vicinity, by John M. Merriam (Worcester, 1892)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/18006883/"
-      },
-      {
-        "title": "Historical sketch of Copp's Hill burying ground, with inscriptions and quaint epitaphs, by John Norton (Boston, 1921)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/22013534/"
-      },
-      {
-        "title": "Old Copp's Hill and burial ground; with historic sketches, by Edward MacDonald (Boston, 1879)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/03024090/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the slate headstones on this hill. Some of them, people will tell you, are pitted\nby British musket balls.\n\nThe story goes that redcoats used them for target practice while the army held Boston.\n\nOne stone gets named more than any other. It belongs to a merchant, Captain Daniel Malcom,\nwho died in seventeen sixty-nine.\n\nListen to what was carved on it. A true son of Liberty. A friend to the public. An enemy to\noppression. And one of the foremost in opposing the Revenue Acts on America.\n\nMalcom meant it. One night in seventeen sixty-eight, with friends carrying clubs, he\nbrought sixty casks of wine ashore from a ship down the harbour, without paying the King's\nduty.\n\nSo when the soldiers came, the story says, his stone was the one they chose.\n\nIs it true? Nobody has proved it. A history of Boston's burial grounds from eighteen\nninety-two put it carefully. Several stones here are said to bear the marks, and Malcom's\nwould seem the most likely. The park service today says only that some historians suggest\nit.\n\nBut nobody needed the soldiers to fire.\n\nThe stone had already said exactly what it thought of them.\n",
@@ -1733,29 +1121,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01012230/"
-      },
-      {
-        "title": "King's hand-book of Boston (1885)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01015801/"
-      },
-      {
-        "title": "Walks & talks about historic Boston (1917)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/17025471/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "You are on Long Wharf. Turn around and look back toward the city, straight up State\nStreet. If the view is clear, the old brick State House sits at the far end.\n\nThat straight line is the whole idea.\n\nWhen this wharf was begun, around seventeen ten, it was laid out as the main street\ncarried on into the harbour. King Street, it was called then, and the wharf was built to\nthe same width. The street simply kept going into the sea.\n\nAnd it went a long way. Close to two thousand feet. About a third of a mile, with\nwarehouses along one side nearly the whole length. A ship could tie up at the end, and a\nmerchant could step off the deck and walk one straight road to the Town House.\n\nThe landward end of the old wharf is now under solid ground. The city filled in along the\nshore and ran a new avenue across the heads of the wharves, so what you are standing on is\nonly part of the original.\n\nIt was built for cargo.\n\nOn the first of October, seventeen sixty eight, warships anchored off this wharf and put\ntwo regiments of British soldiers ashore, sent to bring an unruly town to heel. They\nmarched into town with drums beating and bayonets fixed.\n\nThe road built to bring the world into Boston had just brought in an army.\n",
@@ -1795,29 +1161,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "contested",
-    "sources": [
-      {
-        "title": "William Prescott",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/william-prescott.htm"
-      },
-      {
-        "title": "Israel Putnam",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/israel-putnam.htm"
-      },
-      {
-        "title": "Bunker Hill - Prescott Statue",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/bunker-hill-prescott-statue.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The bronze figure on these grounds is Colonel William Prescott. He is shown walking\nalong the top of an earth wall, the way witnesses said he did at dawn, while British cannon\nfired at it.\n\nPrescott commanded the earthwork on this hill. And he usually gets the credit for the most\nfamous order of the battle.\n\nDon't fire until you see the whites of their eyes.\n\nHere is the trouble. Nobody can show that he said it.\n\nSome accounts give the line to Prescott. Others give it to General Israel Putnam. The park\nservice, which looks after this hill, calls it possibly a myth.\n\nWhat the record supports is plainer. Wait. Do not waste a shot on men too far away. Fire\ntogether, on the signal.\n\nWhatever was actually shouted, officers passed it along the line. And when the British\ncame up the slope, more than fourteen hundred men fired at once.\n\nThe words may be a legend.\n\nThe waiting was real.\n",
@@ -1859,29 +1203,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Breed's Hill versus Bunker Hill",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/breeds-v-bunker-hill.htm"
-      },
-      {
-        "title": "Breed's Hill",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/breeds-hill.htm"
-      },
-      {
-        "title": "Bunker Hill Monument",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/bunker-hill-monument.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Find the plaque on the eastern wall of the lodge beside the monument. It begins with two\nwords. Breed's Hill.\n\nYou are not standing on Bunker Hill. Bunker Hill is the higher one, to the northwest. A\nchurch stands on top of it now.\n\nIn June seventeen seventy-five, the colonial officers had orders to fortify Bunker Hill.\nThey talked it over, and on the night of the sixteenth they dug in here instead. This hill\nwas lower, but it was closer to Boston and steep for anyone marching up it.\n\nAt the time, it barely had a name of its own. Some locals called it Breed's, after a family\nwhose cattle grazed here.\n\nThe battle was fought on this hill the next day, and it went into print as Bunker Hill. A\nBritish map even swapped the two hills round.\n\nThe Breeds asked for the battle to be renamed almost at once. In the seventeen nineties they\nbought land up here, and asked again. They kept asking for more than a century.\n\nIn nineteen twenty-three, the state finally gave them something. Not the battle. The plaque.\n\nRead it. Breed's Hill. Site of the Battle of Bunker Hill.\n\nThat is as far as anyone was ever willing to go.\n",
@@ -1922,36 +1244,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old South Meeting House",
-        "publisher": "National Park Service, Boston National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bost/learn/historyculture/osmh.htm"
-      },
-      {
-        "title": "The Boston Tea Party in Real Time",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/boston-tea-party-in-real-time.htm"
-      },
-      {
-        "title": "Colonial and revolutionary landmarks of Boston (1913)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/14003283/"
-      },
-      {
-        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01012230/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This is the Old South Meeting House. On the morning of the sixteenth of December,\nseventeen seventy three, nearly five thousand people crowded in. About a third of the town.\n\nThree ships full of tea were tied up at a wharf nearby. By law, the tea had to be landed\nand the tax paid by the next day. The crowd wanted the ships sent home instead.\n\nOnly the governor could let them go. And the governor was not in town. He was at his\ncountry house in Milton, ten miles away.\n\nSo the owner of one of the ships, Francis Rotch, was sent to ask him. In December. Twenty\nmiles there and back, in freezing rain.\n\nAnd everyone waited.\n\nThey waited through the morning. They broke off and came back at three. By four it was\ngetting dark, and Rotch had still not returned. Thousands of people in this building, in\nthe dusk, waiting on one man on a cold road.\n\nWhen he finally came in, the answer was no.\n\nBy the traditional account, Samuel Adams stood and said, this meeting can do nothing more\nto save the country. A war whoop went up at the doors. Men with soot on their faces were\nalready in the street, heading for the wharf.\n\nBy the end of the night, three hundred and forty two chests of tea were in the harbour.\n\nIt began as a meeting that ran out of options. Look at the doors. That is the way they\nwent.\n",
@@ -1997,36 +1290,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Six Years Later: Col. Ogden Prepares Report on Boston Molasses Flood, New Britain Herald, 16 January 1925, page 15",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn82014519/1925-01-16/ed-1/?sp=15"
-      },
-      {
-        "title": "Yankee Enemies May Have Blown Up Syrup Tank, Harrisburg Telegraph, 16 January 1919, page 12",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn85038411/1919-01-16/ed-1/?sp=12"
-      },
-      {
-        "title": "Molasses Blast, The Washington Times, 16 January 1919, page 10",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn84026749/1919-01-16/ed-1/?sp=10"
-      },
-      {
-        "title": "Explosion of Molasses, Alexandria Gazette, 16 January 1919, page 3",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn85025007/1919-01-16/ed-1/?sp=3"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look across Commercial Street, at the slope rising toward Copp's Hill.\n\nOn the fifteenth of January, nineteen nineteen, a little after noon, a steel tank stood on\nthe waterfront here. It held molasses. Close to two million gallons of it, stored for\nmaking alcohol.\n\nPeople nearby heard a muffled roar. The tank split into two great pieces, and the molasses\ncame out as a wave.\n\nIt knocked out spans of the elevated railway that ran along this street. It crushed a fire\nstation. In a city building close by, workers had been eating their lunch. On the slope\nacross the road, a small house slid down into the street.\n\nFiremen had to hose the molasses away before they could reach anyone. It was days before\nthe last of the dead were found. Twenty-one people were killed.\n\nThe next day, the company's lawyer gave a statement. The tank, he suggested, had been blown\nup from outside. Perhaps by enemies of the United States.\n\nIt took six years to answer him. A court auditor sat for eight hundred and fifty-one days\nand heard nine hundred and ten witnesses. In January nineteen twenty-five, he gave his\nfinding.\n\nHe found the company responsible.\n\nThe tank had simply not been strong enough to hold what was in it.\n",
@@ -2066,36 +1330,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Boston Tea Party in Real Time",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/boston-tea-party-in-real-time.htm"
-      },
-      {
-        "title": "Old South Meeting House",
-        "publisher": "National Park Service, Boston National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bost/learn/historyculture/osmh.htm"
-      },
-      {
-        "title": "Walks & talks about historic Boston (1917)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/17025471/"
-      },
-      {
-        "title": "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01012230/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "You are near the bottom of Pearl Street. Look around. Office towers, traffic, pavement.\nNot a drop of harbour in sight.\n\nOn the night of the sixteenth of December, seventeen seventy three, this was the edge of\nthe water.\n\nA footpath called Flounder Lane wound along the shoreline under a hill and came into this\nstreet. Opposite the end of the street stood Griffin's Wharf. And tied up at Griffin's\nWharf were three ships carrying tea.\n\nAbout a hundred and fifty men, faces darkened with soot, came down from the Old South\nMeeting House. A ten minute walk. They split into three groups and boarded the ships. They\ntold the crews to open the hatches and hand over the hoisting tackle, and promised them no\nharm.\n\nFor three hours they hauled up chests, split them open with axes, and tipped the tea over\nthe side. Three hundred and forty two chests. They were careful to take nothing else. One\npadlock was broken by accident, and it was replaced a few days later.\n\nThen they went home without a word to each other. One of them remembered it as the\nstillest night Boston had known in months.\n\nAfterwards the city kept building out into the harbour. The footpath became a street, and\nthe street became part of the waterfront avenue. The filling nearly wiped Griffin's Wharf\noff the map.\n\nThe most famous splash in American history happened somewhere under the ground around you.\n",
@@ -2135,29 +1370,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old State House",
-        "publisher": "National Park Service, Boston National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bost/learn/historyculture/osh.htm"
-      },
-      {
-        "title": "The Boston Massacre",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/boston-massacre.htm"
-      },
-      {
-        "title": "The Boston Massacre Trials",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/boston-massacre-trial.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look down. Under the balcony of the Old State House there is a circle of cobblestones set\ninto the street.\n\nIt marks a cold March night in seventeen seventy. A light snow on the ground. A lone\nBritish sentry outside the Custom House, and some local boys giving him a hard time.\n\nIt grew. Labourers, sailors, men with sticks and clubs. A captain and a small squad came to\nrescue the sentry, and the crowd closed in around them.\n\nA soldier was struck. He got up, aimed and fired. The others fired too.\n\nFive people died. By the next morning the town was calling it a massacre.\n\nAnd then came the question that decided everything. Who said fire?\n\nIf the captain gave the order, he was guilty and his men had only obeyed. If nobody did,\nthe soldiers had chosen to shoot on their own.\n\nLawyer after lawyer refused to defend them. John Adams said yes.\n\nAt the trial the witnesses contradicted each other, even about what the captain had been\nwearing. But several swore he had been standing in front of his own men when they fired.\nOne of them, a free Black man named Newton Prince, said he heard no order at all.\n\nNobody stands in front of muskets he has just told to fire. The captain was acquitted. So\nwere six of his soldiers. Two were convicted of manslaughter and branded on the thumb.\n\nYears later, Adams said this night laid the foundation of American independence. He spent\nthat autumn defending the men who fired.\n",
@@ -2197,15 +1410,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.9,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Bowling Green",
-        "publisher": "NYC Parks",
-        "retrievedAt": "2026-09-21",
-        "rights": "public-domain",
-        "url": "https://www.nycgovparks.org/parks/bowling-green/history"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This is the oldest public park in the city, and the fence around it has been here since\n1771.\n\nLook at the tops of the posts. They used to have small crowns on them.\n\nOn the ninth of July 1776, the Declaration of Independence was read aloud to Washington's\ntroops a few streets north of here. The crowd came down to this green afterwards, where a\ngilded lead statue of King George the Third sat on horseback, and pulled it down.\n\nThe lead went to Connecticut and came back as musket balls. Somebody, at some point, took\na saw to the crowns on the fence.\n\nTwo hundred and fifty years later the fence is still standing and the crowns are still\nmissing, which is a fairly direct way of making a point.\n",
@@ -2269,14 +1474,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.91,
     "visibility": "landmark-visible",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Launch site selection and orbital mechanics",
-        "publisher": "NASA",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The cape below you is where nearly everything the United States has ever launched went up.\n\nThe reason it is there and not in Nevada comes down to two things, and neither is the\nweather.\n\nThe first is the ocean. Rockets go east, and everything that falls off one on the way,\nspent stages and occasionally the whole thing, has to fall somewhere that is not a town.\nEast of that cape there is nothing but water for three thousand miles.\n\nThe second is that the Earth is already turning. At that latitude the ground is moving\neast at about nine hundred miles an hour. Launch in the same direction and you start with\nthat speed for free.\n\nThe closer to the equator, the more you get. That is most of the reason the map of the\nworld's launch sites looks the way it does.\n",
@@ -2314,15 +1512,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.82,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Canyon of Heroes",
-        "publisher": "Downtown Alliance",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain",
-        "url": "https://downtownny.com/canyon-of-heroes/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look down at the pavement.\n\nSet into it along this stretch of Broadway are thin strips of granite, each one naming a\ndate and a person. There are more than two hundred of them.\n\nEvery strip is a ticker-tape parade. The first was in 1886, for the dedication of the\nStatue of Liberty, and nobody organised it. Clerks in the offices above started throwing\nthe used tape from their stock tickers out of the windows, because they could not think\nof anything better to do.\n\nNobody has used ticker tape since the 1960s. They shred paper for it now.\n\nSo this is a canyon named after confetti, which was named after rubbish.\n",
@@ -2374,26 +1564,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.9,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Andrew Phillip Cunanan — Ten Most Wanted Fugitives case record",
-        "publisher": "Federal Bureau of Investigation",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      },
-      {
-        "title": "Incident and investigative record, 1116 Ocean Drive, 15 July 1997",
-        "publisher": "Miami Beach Police Department",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      },
-      {
-        "title": "Medical examiner's report, Gianni Versace",
-        "publisher": "Miami-Dade County Medical Examiner",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the steps in front of the gate. Not the house. The steps.\n\nAt about a quarter to nine on the morning of the fifteenth of July, nineteen ninety-seven,\nGianni Versace came back up Ocean Drive carrying his magazines and stopped here to open\nhis own front door.\n\nA man walked up behind him and fired twice. Versace was fifty. He did not get through the\ndoor.\n\nPolice identified the man who shot him as Andrew Cunanan, already on the FBI's Ten Most\nWanted list. Eight days later Cunanan was found dead on a houseboat two miles north of\nwhere you are standing. He was never tried. He left nothing behind explaining any of it,\nand no motive has ever been established.\n\nBy the time he reached Miami Beach, four other people were already dead. Jeffrey Trail.\nDavid Madson. Lee Miglin. William Reese.\n\nThis address is famous because of who died at it.\n\nNobody stands outside the other four.\n",
@@ -2452,22 +1623,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.88,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Castle Clinton National Monument — History & Culture",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-21",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/cacl/learn/historyculture/index.htm"
-      },
-      {
-        "title": "Castle Clinton National Monument",
-        "publisher": "Lower Manhattan Historical Association",
-        "retrievedAt": "2026-09-21",
-        "rights": "public-domain",
-        "url": "https://www.historiclowermanhattan.org/immigration/castle-clinton-national-monument"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The round sandstone building ahead of you was built to stop an invasion that never came.\n\nIt went up between 1808 and 1811, out on a small island off the tip of Manhattan, its\nguns pointed down the harbour at a British fleet everyone expected and nobody saw. The\nlandfill came later. So did almost everything else it has been.\n\nBecause in 1855 the fort became a door. On the first of August that year it opened as the\nEmigrant Landing Depot, the first immigration station in the United States, run by\nthe State of New York, and over the next thirty-five years something like eight million\npeople walked through it and out into the rest of their lives. Nikola Tesla came through\nhere. So did Harry Houdini, and Emma Goldman, and Joseph Pulitzer.\n\nIn 1890 the federal government took the job over, and two years later moved it to a\nbigger island further out, where the ferries go now. The fort stayed, and became other\nthings again: a beer garden, a theatre, an aquarium.\n\nEight million arrivals, and almost nobody stops here. Most people walk past it to queue\nfor the boat.\n",
@@ -2536,15 +1692,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.8,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Charging Bull",
-        "publisher": "NYC Parks",
-        "retrievedAt": "2026-09-21",
-        "rights": "public-domain",
-        "url": "https://www.nycgovparks.org/parks/bowling-green/monuments/1780"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Nobody commissioned this.\n\nIn December 1989, two years after the crash, a sculptor called Arturo Di Modica drove a\nlorry to Wall Street in the middle of the night and left three and a half tonnes of bronze\noutside the Stock Exchange. He had paid for it himself. It was, legally speaking,\nfly-tipping.\n\nThe city removed it within hours. The public objected loudly enough that it was put back a\nfew days later, here, a couple of streets from where he left it, on a temporary permit\nthat has now lasted more than thirty years.\n",
@@ -2588,29 +1736,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Othniel Beale House, 99-101 East Bay Street, Charleston (HABS SC-874)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/item/sc1143/"
-      },
-      {
-        "title": "95-103 East Bay Street (Rainbow Row, townhouses), Charleston (HABS SC-405)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/sc0434/"
-      },
-      {
-        "title": "Charleston and Preservation",
-        "publisher": "National Park Service, Travel Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "fair-use-facts",
-        "url": "https://www.nps.gov/articles/charleston-and-preservation.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Find the house numbered ninety-nine on this row, and look at its iron balcony. There are\ntwo letters worked into the ironwork. A C and a P.\n\nThe letters have nothing to do with this house.\n\nThe house went up around seventeen forty. It was built by Othniel Beale, a wharf owner\nwho had come down from Marblehead in Massachusetts, and his wharf was right across the\nstreet. He built three dwellings under one roof, kept the biggest for his family and let\nthe other two. The ground floor was for trade, split by an arched passage through to the\nyards at the back.\n\nBy the nineteen thirties this stretch of the old waterfront had slid into dilapidation.\n\nThis was the first house on the row to be rescued. Judge Lionel Legge and his wife took it\non, with Susan Pringle Frost, an estate agent who had spent years saving old Charleston\nhouses one at a time. They put back the early windows. They replaced the shop fronts with\ncargo doors. And they hung a balcony salvaged from a house on Elizabeth Street that has\nsince been demolished. The C. F. Prigge house.\n\nThey are credited with starting the revival of the whole block. It is called Rainbow Row\nnow.\n\nThe row was saved one house at a time. The first one wears a stranger's initials.\n",
@@ -2663,22 +1789,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Christopher Gadsden",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/christopher-gadsden.htm"
-      },
-      {
-        "title": "Christopher Gadsden, by E. I. Renick (Publications of the Southern History Association, 1898)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/05013227/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The ground under this square was once part of a wharf. A big one, on the Cooper River, built by a merchant named Christopher Gadsden.\n\nBy seventeen seventy four, Gadsden owned four stores, merchant ships, two rice plantations, and a whole district of Charleston. The wharf had just been finished, at great cost. To pay for itself, it needed ships, and trade.\n\nThat year he went to Philadelphia, to the first Continental Congress. And there he argued for cutting off all trade with Britain. Others wanted South Carolina's rice and indigo left out of the boycott. Gadsden did not.\n\nIf he won, his own wharf would sit idle. He argued for it anyway.\n\nWhen nervous delegates warned that the coastal towns could be shelled, Gadsden's reply was later written down like this. Our seaport towns are composed of brick and wood. If they are destroyed, we have clay and timber enough to rebuild them. But if the liberties of our country are destroyed, where shall we find the material to replace them?\n\nHe was ready to let the wharf stand empty. A piece of it is still here, under the visitor centre beside you.\n",
@@ -2722,29 +1833,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Connecticut Western News, March 23, 1887, \"Charleston Again Shaken\"",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn84027718/1887-03-23/ed-1/?sp=4"
-      },
-      {
-        "title": "Short sketch of Charleston, S.C.; how it fared in two wars and an earthquake",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/00002680/"
-      },
-      {
-        "title": "Charleston Community History",
-        "publisher": "National Park Service, Travel Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/charleston-community-history.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look along the house fronts on this street for iron on the outside of the walls. A plate,\nor the end of a bolt, up between the floors. Not every house has one. Many old buildings\nin this city do, and a lot of them were put there because of one night.\n\nAt about ten o'clock on the thirty-first of August, eighteen eighty-six, an earthquake\nhit Charleston. It came with no warning and a roar like nothing anyone had heard. Walls\nand chimneys came down into the streets. Overturned lamps started fires. It was said at\nthe time that more people were killed or hurt in those few seconds than the shelling of\nthe whole Civil War siege had managed.\n\nIn the months that followed, much of the town was not so much rebuilt as bolted back\ntogether. Iron bolts and iron plates went into the cracked walls.\n\nThe test came on St. Patrick's Day, eighteen eighty-seven. At ten past nine in the\nmorning there was another violent shock, with the same underground roar. The buildings\nseemed to be thrust forward and pulled back.\n\nA report from Charleston that day said that most of the buildings in town had been made\nearthquake-proof by iron bolts and plates, and that without them there would have been\nserious damage. Unrepaired cracks widened. Windows rattled. Plaster fell.\n\nThe St. Patrick's Day celebrations went ahead as planned. Somebody had done the\nironmongery.\n",
@@ -2783,36 +1872,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Charleston County Courthouse",
-        "publisher": "National Park Service, Travel Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/charleston-county-courthouse.htm"
-      },
-      {
-        "title": "Charleston City Hall",
-        "publisher": "National Park Service, Travel Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/charleston-city-hall.htm"
-      },
-      {
-        "title": "Charleston United States Post Office",
-        "publisher": "National Park Service, Travel Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/charleston-united-states-post-office.htm"
-      },
-      {
-        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the State House and the move to Columbia",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/06042434/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "You are standing at the crossing of Meeting and Broad. Four corners, four buildings. A\nchurch, a city hall, a federal post office and court, and a county courthouse. Charleston\ncalls this the Four Corners of the Law. The law of the church, of the city, of the nation\nand of the state.\n\nLook at the courthouse, on the north-west corner. It was not built to be a courthouse.\n\nIt went up in seventeen fifty-three as the statehouse of the colony. The royal governor's\ncouncil met upstairs. From its balcony over Meeting Street, the Declaration of\nIndependence was read aloud for the first time in South Carolina.\n\nIn seventeen eighty-eight it burned. Only the foundations, the walls and the doorways\nwere left.\n\nBy then the rest of the state wanted the capital moved to the middle of South Carolina,\nnot left out on its edge. Charleston rebuilt fast anyway, anxious to keep its place in\nthe government.\n\nBy the time the work was finished, in seventeen ninety-two, the capital was in Columbia.\n\nSo the courts moved in, and they are still there. It is the state's corner of this\ncrossing. It just never got the state back.\n",
@@ -2852,22 +1912,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Powder Magazine",
-        "publisher": "National Park Service, Travel Historic Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/powder-magazine.htm"
-      },
-      {
-        "title": "Guide to Charleston, S.C., with brief history of the city (C. Irvine Walker, 1919), the Old Powder Magazine",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/20002718/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The squat brick building with the steep tiled roof is the Powder Magazine. It went up in\nseventeen thirteen, and it is the oldest public building in South Carolina.\n\nLook at how solid it is. The walls are thirty-two inches thick, and when it was built they\nhad no windows at all.\n\nCharles Town was a small walled settlement then, at the southern edge of England's claims,\nand it expected attack, from the Spanish, the French, and pirates. The town's gunpowder\nwas kept here.\n\nIt was condemned in seventeen seventy, then filled with powder again when the Revolution\ncame. One old guide to the city says that during the British siege of seventeen eighty a\nshell landed close by, and after that it was given up as a magazine.\n\nWhich brings you to the question every powder store has to answer. What happens if it goes\noff?\n\nHere, the answer was in the roof. According to the Park Service, the timbers inside were\nbuilt so that if there were ever an explosion in the building, it would collapse in on\nitself.\n\nNot outward, into the town. Inward.\n\nLater it was a printing house, and then a livery stable. Since nineteen-oh-two it has\nbelonged to the Colonial Dames, and today it is a museum.\n\nMore than three hundred years on, it is still a building designed, if the worst came, to\nbury its own disaster.\n",
@@ -2907,36 +1952,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "\"Charleston's Statue. Calhoun's memorable funeral 37 years ago. The reinterment during the war.\" The Morning News (Savannah), April 26, 1887, page 3",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn86063034/1887-04-26/ed-1/?sp=3"
-      },
-      {
-        "title": "St. Philip's Episcopal Church",
-        "publisher": "National Park Service, Travel Historic Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/st-philips-episcopal-church.htm"
-      },
-      {
-        "title": "John C. Calhoun",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/john-c-calhoun.htm"
-      },
-      {
-        "title": "Guide to Charleston, S.C., with brief history of the city (C. Irvine Walker, 1919), St. Philip's churchyards",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/20002718/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Across the street from St. Philip's Church is its western churchyard. In the middle of it\nstands a large stone sarcophagus. It holds John C. Calhoun.\n\nCalhoun was vice president, secretary of state, and one of the most powerful politicians\nof his age. In the Senate he led the defence of slavery, and called it a positive good. He\ndied in eighteen fifty, ten years before the war his ideas helped to bring, and he was\nburied here after what one paper called the grandest pageant the city had ever seen.\n\nHe did not stay put.\n\nAs the war went on, it began to look as if Charleston would fall, and some in the city\nfeared what would be done to his grave. So a few men decided to move him. At night, and in\nsecret.\n\nOne of them remembered being summoned from camp in the dark. When he reached the church,\nthe coffin had already been dug up and carried inside. One candle. Two or three men\nstanding by. In complete silence they lifted it, carried it down the middle aisle and out\nthrough the north door, and buried it again in another spot.\n\nSome time after the war, it was dug up once more, quietly, and put back. Later the state\npaid for the sarcophagus you can see.\n\nThe plain marble slab that first covered the grave, carved with just his name, was broken\nin the earthquake of eighteen eighty-six. The church set it against the north wall of the\nchurchyard, near the place where he had lain hidden.\n\nFor a while, then, the tomb with his name on it was empty. The man who had argued the South\ntoward secession spent part of the war it led to hidden, in a secret grave beside this\nchurch.\n",
@@ -2982,22 +1998,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "St. Michael's Episcopal Church",
-        "publisher": "National Park Service, Travel Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/st-michael-s-episcopal-church.htm"
-      },
-      {
-        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), St. Michael's bells",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/06042434/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the white steeple of St. Michael's. The bells hang up there. If they are\nringing, listen.\n\nA Charleston historian, writing in nineteen-oh-six, counted how many times those bells\nhad crossed the Atlantic. She made it five.\n\nThe first crossing was the obvious one. They were made in England, and imported in\nseventeen sixty-four.\n\nThe second came at the end of the Revolution. In seventeen eighty-two the British army\nwas getting ready to leave Charleston, and an artillery officer claimed the bells as his\nown, a perquisite of his rank. He had them taken down. The church appealed, and an order\ncame from New York to give them back. Too late. They were already on a ship to England.\n\nThe third crossing was a business deal. A merchant who had once lived in Charleston bought\nthem in England, as a speculation, and shipped them back to sell to the church. When they\narrived, people ran down to the wharf, hauled them to the church themselves, and swung\nthem back up into the steeple. Then the merchant died suddenly, his estate went bankrupt,\nand nobody ever asked for payment.\n\nThe fourth and fifth came with the Civil War. The bells were sent inland to Columbia for\nsafekeeping, and in eighteen sixty-five Columbia burned. They broke in the fire. The\npieces were gathered up and sent back to the same English foundry that had made them.\nThe foundry still had the original moulds. The bells were recast, and came home.\n\nBy that historian's account, they ring today with the same tone they rang for the\nbirthday of King George.\n",
@@ -3038,22 +2039,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Unitarian Church",
-        "publisher": "National Park Service, Travel Historic Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/unitarian-church.htm"
-      },
-      {
-        "title": "Charleston, S.C. and vicinity illustrated (1901), the Unitarian Church on Archdale Street",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/02003003/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the Unitarian Church. A tower with battlements, pointed windows, buttresses down\nthe sides. It looks like a piece of medieval England.\n\nLook again at the buttresses.\n\nButtresses are supposed to hold a building up. According to the Park Service, these are\nfalse. They are there for the look. Inside, the vaulted ceiling, modelled on the chapel of\nHenry the Seventh at Westminster, is lath and plaster.\n\nThe Gothic is a costume. Underneath it is a much plainer building.\n\nIn seventeen seventy-two, work began here on a small rectangular brick church, because the\nIndependent Church over on Meeting Street had more members than it could hold. The\nRevolution stopped the work. The church was finally finished in seventeen eighty-seven.\n\nThen, in eighteen fifty-two, a young architect named Francis Lee was given two years to\nremake it in the romantic taste of the day. He added the chancel at the back and the\nfour-storey tower, and he covered the old brick walls in stucco.\n\nWhen the earthquake of eighteen eighty-six badly damaged it, people from across the\ncountry sent money for the repairs.\n\nSo the oldest Unitarian church in the South is an eighteenth-century meeting house in a\nnineteenth-century dream of the Middle Ages. The brick is still in there, under the\nstucco.\n",
@@ -3092,29 +2078,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old Marine Hospital",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/old-marine-hospital.htm"
-      },
-      {
-        "title": "Fox Movietone News: Jenkins Orphanage Band (National Film Registry essay by Julie Hubbert)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/static/programs/national-film-preservation-board/documents/jenkins.pdf"
-      },
-      {
-        "title": "Guide to Charleston, S. C.; with brief history of the city and a map thereof (1919)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/20002718/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the porch railings on this building. They were designed to look like the stone tracery around a Gothic church window. It was built in the eighteen thirties as a hospital for sailors.\n\nFrom eighteen ninety five, it was home to something louder. The Jenkins Orphanage.\n\nThe Reverend Daniel Jenkins had been born enslaved, and orphaned young. In eighteen ninety one he took in four boys he found sheltering in an abandoned building. Soon there were hundreds. To pay for them, he did something unusual. He gathered up instruments, hired two local musicians as teachers, and sent the boys out as a brass band.\n\nIt worked. The band played the streets of Charleston, then New York and London. It marched in the inaugural parades of two presidents.\n\nAnd it played the tunes of the Gullah people of the Sea Islands, with a small boy out front, dancing the steps. In Harlem, the pianist Willie the Lion Smith remembered, people would shout to that boy. Hey Charleston, do your Geechie dance.\n\nJames P Johnson heard the band and wrote a set of tunes in that rhythm. One of them was called The Charleston, and it went around the world.\n\nBy many accounts, the craze started here. With orphans, earning their keep.\n",
@@ -3163,43 +2127,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "89-91 Church Street (Houses) (Cabbage Row, Catfish Row), Charleston (HABS SC-447)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/sc0488/"
-      },
-      {
-        "title": "Evening Star (Washington, D.C.), April 15, 1928, theatre page, \"Porgy\"",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045462/1928-04-15/ed-1/?sp=53"
-      },
-      {
-        "title": "Evening Star (Washington, D.C.), April 22, 1928, amusement section, \"Porgy\"",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045462/1928-04-22/ed-1/?sp=55"
-      },
-      {
-        "title": "The Indianapolis Times, November 30, 1929, theatre page, \"Porgy\"",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn82015313/1929-11-30/ed-1/?sp=6"
-      },
-      {
-        "title": "The Washington Times, March 10, 1936, \"World of Music\"",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn84026749/1936-03-10/ed-1/?sp=9"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look across the street at numbers eighty-nine and ninety-one Church Street. The federal\nsurvey of historic buildings files them under two names. Cabbage Row. And Catfish Row.\n\nOnly one of those is a Charleston name.\n\nIn the nineteen twenties a Charleston man, DuBose Heyward, and his wife Dorothy wrote a\nplay called Porgy. It is set in a crowded courtyard of Black Charlestonians called\nCatfish Row. Its hero is a disabled beggar who gets around the city in a little cart\npulled by a goat.\n\nIt ran for a year on Broadway, then went on tour. When it reached Washington in\nnineteen twenty-eight, the Evening Star explained to its readers that the sets were\nauthentic, drawn after a visit to Charleston. And then it added a correction. The row\nitself, the paper said, is not called Catfish in Charleston. It is referred to as\nCabbage Row. Porgy himself, it said, was based on a real person.\n\nA few years later George Gershwin turned the play into an opera, Porgy and Bess. A\nWashington paper reported, perhaps generously, that he had spent his spare time for two\nyears visiting Catfish Row.\n\nHe could not have. There is no such place. It is across the street, under another name.\n",
@@ -3245,29 +2173,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "French Huguenot Church",
-        "publisher": "National Park Service, Travel Historic Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/french-huguenot-church.htm"
-      },
-      {
-        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the Proprietors' answer of 1693",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/06042434/"
-      },
-      {
-        "title": "Charleston, S.C. and vicinity illustrated (1901), the Huguenot Church in the fire of 1796",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/02003003/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The stuccoed church on this corner, with the pointed windows, is the French Huguenot\nChurch. Look closely at the decoration. Some of what looks like carved stone is iron.\n\nBut the story here is about time, and water.\n\nThe Huguenots were French Protestants who came to Carolina in the sixteen-eighties. Many\nof them settled on plantations outside the town, and the easiest road to church was the\nriver. So on Sundays they came to service by boat.\n\nA boat on these rivers moves when the tide lets it. Leave at the wrong hour and you row\nagainst it the whole way.\n\nIn sixteen ninety-three the French took their complaints to the Lords Proprietors, the men\nwho ran the colony. The answer came back with a list of protections. Their land would not\nbe taken from their children. Their marriages would be recognised. And they were not to be\nmade to begin their worship at an hour inconvenient to the tide.\n\nThe Park Service says services here were timed to the tides, for the families arriving by\nboat from the plantations.\n\nThe church that stood here in seventeen ninety-six was blown up on purpose, to stop a fire\nspreading through the neighbourhood. This one went up in the eighteen-forties. The\ncongregation is still French Calvinist, the only congregation of its kind in the\ncountry.\n\nThe river is a few streets east of you, still rising and falling twice a day. Somewhere in\na colonial record there is a promise that Sunday would wait for it.\n",
@@ -3317,29 +2223,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Market Hall and Sheds",
-        "publisher": "National Park Service, Travel Historic Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/market-hall-and-sheds.htm"
-      },
-      {
-        "title": "\"The South,\" Chicago Daily Tribune, October 19, 1874, page 3 (turkey buzzards at the Charleston market)",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn84031492/1874-10-19/ed-1/?sp=3"
-      },
-      {
-        "title": "Old Slave Mart",
-        "publisher": "National Park Service, Travel Historic Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/old-slave-mart.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the band of decoration under the roof of the Market Hall. Those shapes are\nskulls. Bulls, and sheep.\n\nThey are an advertisement. This was a meat market.\n\nThe land was given to the city for a market in seventeen eighty-eight, and after a great\nfire the hall and the long open sheds behind it went up in eighteen forty and forty-one.\nEvery day, meat and produce came in from the country around the town. The rules were\nstrict. Cuts and weights were regulated. Vendors had to wear clean white aprons. And to\nkeep everything fresh, whatever was left at the end of the day was thrown into the street.\n\nWhich is where the market's other workers came in.\n\nBuzzards cleaned the streets around the market, and Charlestonians valued the service so\nmuch that the birds were protected by law. People called them Charleston eagles. A\nvisiting reporter in eighteen seventy-four watched one pick the street clean, then fly up\nto sit on the market-house roof, protected, he wrote, like any official of the city.\n\nYou may have heard that these sheds were a slave market. The record puts those sales\nsomewhere else. Charleston sold enslaved people at the Exchange, and after eighteen\nfifty-six in private marts on Chalmers, State and Queen streets.\n\nThese sheds were built to sell beef. One of the buildings built to sell people is still\nstanding, a few blocks south of here, on Chalmers Street.\n",
@@ -3379,29 +2263,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Battle of Fort Sumter, April 1861",
-        "publisher": "National Park Service, Fort Sumter and Fort Moultrie National Historical Park",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/battle-of-fort-sumter-april-1861.htm"
-      },
-      {
-        "title": "Fort Sumter",
-        "publisher": "National Park Service, Fort Sumter and Fort Moultrie National Historical Park",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/fosu/learn/historyculture/fort_sumter.htm"
-      },
-      {
-        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), Confederate Charleston",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/06042434/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look out across the harbour to the low fort near its mouth. That is Fort Sumter.\n\nAt half past four in the morning on the twelfth of April, eighteen sixty-one, a mortar\nfired from Fort Johnson, across the water. The shell arched high over the harbour and\nburst in the air above Sumter. It was a signal. Within half an hour, every Confederate\nbattery that could reach the fort was firing at it.\n\nAnd the town came out to watch.\n\nA Charleston writer, telling it years later, says that within five minutes this Battery\nswarmed with people. Then the houses behind you, the wharves, the rooftops. The road was\nso jammed with carriages that boys got from the pavement to the sea wall by jumping from\none carriage roof to the next.\n\nThey watched all that day and into the next. Fathers, brothers and sons were out in the\nbatteries on the islands. On the second day the fort caught fire, its flag came down,\nand the garrison agreed to leave.\n\nThe people on this wall had come to see a war begin. They did not expect to be in it.\n\nTwo summers later, Union troops took Morris Island, at the harbour mouth, and the\nbombardment of Charleston began in earnest. The siege went on until February eighteen\nsixty-five. The guns were pointed at the city behind you.\n",
@@ -3441,29 +2303,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Planter",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/the-planter.htm"
-      },
-      {
-        "title": "Robert Smalls",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/robert-smalls.htm"
-      },
-      {
-        "title": "Christopher Gadsden",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/christopher-gadsden.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look out at the water. The boats to Fort Sumter leave from this wharf, and the harbour runs from here down to the open sea.\n\nAt three in the morning on the thirteenth of May, eighteen sixty two, a Confederate steamer called the Planter began to move away from a Charleston wharf. Her three white officers were ashore for the night. That was against standing orders, and it happened often.\n\nThe men left aboard were enslaved. One of them was a pilot in his early twenties named Robert Smalls.\n\nThey fired the boilers and steamed up the Cooper River to another wharf, where their wives and children were waiting aboard another boat. Sixteen people in all. Then they turned for the sea.\n\nSmalls put on the captain's coat and straw hat. He knew the signals. He was the pilot. At about a quarter past four the Planter came up to Fort Sumter, with Fort Moultrie across the channel. Smalls gave the signal. The fort let them pass.\n\nIt was not over. As they reached the Union fleet, a warship took them for an attacker and readied its guns. The crew ran a bedsheet up the mast.\n\nThe wharves they left from are gone, and nobody can point to the exact spot now. The water they crossed is in front of you.\n\nRobert Smalls went on to serve five terms in Congress. That night, all of it hung on a sheet.\n",
@@ -3502,36 +2342,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "South Carolina State Arsenal (Old Citadel), HABS SC-184, data pages",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/sc0013/"
-      },
-      {
-        "title": "Marion Square (Citadel Green), HALS SC-17, data pages",
-        "publisher": "Historic American Landscapes Survey, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/sc1226/"
-      },
-      {
-        "title": "Denmark Vesey",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/denmark-vesey.htm"
-      },
-      {
-        "title": "Guide to Charleston, S. C.; with brief history of the city and a map thereof (1919)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/20002718/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the long building on the north side of the square. Battlements along the roof. Towers at the corners. It looks like a fortress because it was meant to be one. Not against a foreign army.\n\nIn eighteen twenty two, the authorities said they had uncovered a plan by enslaved Charlestonians to rise and take the city. In the aftermath, the state built an arsenal here, with a guard of armed men to live in it and patrol the streets. When federal surveyors described the building in the nineteen fifties, they put its purpose plainly. A safeguard against slave uprisings.\n\nIn the eighteen forties the guard was disbanded. Cadets of a new state military academy moved in and took over its duties. That academy was the Citadel. For decades its cadets drilled on the grass in front of you, which was called Citadel Green.\n\nThe building kept growing. A third storey, then wings, then a fourth. In nineteen twenty two the cadets left for a new campus, and the green was renamed for Francis Marion.\n\nThe building is a hotel now. It still has the battlements.\n",
@@ -3570,22 +2381,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "contested",
-    "sources": [
-      {
-        "title": "South Carolina: Mother Emanuel AME Church",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/south-carolina-mother-emanuel-ame-church.htm"
-      },
-      {
-        "title": "Denmark Vesey",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/denmark-vesey.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the steeple. This church was built in eighteen ninety one. The congregation inside it is much older, and for about thirty years it had no legal right to meet at all.\n\nIt begins with a lottery ticket. In seventeen ninety nine, a Charleston carpenter named Denmark Vesey won fifteen hundred dollars, and used it to buy his own freedom.\n\nVesey was one of the founders of the African Church, the congregation that became this one. In eighteen twenty two, the authorities said, he was at the centre of a plan for the enslaved people of the city to rise and win their freedom.\n\nThe plan was betrayed before it began. More than a hundred people were arrested. Thirty five men were hanged, Vesey among them. And the church was destroyed. Accounts differ on whether it was burned or torn down.\n\nThe congregation rebuilt. In eighteen thirty four, all Black churches were outlawed, so they met in secret. In eighteen sixty five they organised again, openly, and took a new name. Emanuel.\n\nOn a June evening in two thousand fifteen, nine of its members were killed at Bible study in this building, and the congregation endured that too.\n\nThe building is from eighteen ninety one. The congregation has been rebuilding since eighteen twenty two.\n",
@@ -3635,22 +2431,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The history of South Carolina under the royal government, 1719-1776 (Edward McCrady, 1899), the fire of 1740",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/99002812/"
-      },
-      {
-        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the great fire of 1740",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/06042434/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look south down Church Street at the walls. Brick. Stucco over brick. Stone.\n\nThat is not only taste. It is a fire, and a law.\n\nOn the afternoon of the eighteenth of November, seventeen forty, a fire broke out in\nCharles Town. By one account it took every house from about this corner, Broad and\nChurch, down to Granville Bastion, at the water's edge, where the East Battery now\nbegins. Three hundred houses, by the count at the time, and storehouses, stables and\nwarehouses with them. This was the oldest part of town, and full of goods. The tide was\nhigh that afternoon, and by one account that is the only reason the ships at the wharves\ndid not burn as well.\n\nParliament in London sent twenty thousand pounds.\n\nAnd on the tenth of December, three weeks after the fire, the colony passed an act for\nrebuilding the town. Every new building was to be made of brick, or stone, or both. The\nact even fixed the price of bricks.\n\nThe town had tried a law like that once before and given it up, because bricks were\nscarce. This time it stuck. A Charleston historian, writing in nineteen-oh-six, noted that\nmany of the small, dark brick houses between Broad and Water Street date from that time on.\n\nYou are standing at the edge of the fire. What it took was rebuilt in the only materials\nthe law would allow.\n",
@@ -3696,22 +2477,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Cannon Park, HALS SC-15, data pages",
-        "publisher": "Historic American Landscapes Survey, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/sc1224/"
-      },
-      {
-        "title": "Guide to Charleston, S. C.; with brief history of the city and a map thereof (1919)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/20002718/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Four tall columns stand at this end of the park, holding up nothing. Look at the tops. Corinthian capitals, the kind crowned with leaves.\n\nThey were the front entrance of a great hall, built here in eighteen ninety nine for a Confederate reunion. After the reunion it was rarely used. It became a theatre, then for a while a city hospital.\n\nIn nineteen oh seven it found a lasting tenant. The Charleston Museum moved in, with its natural history collections, its workshops and its library. A city guidebook of nineteen nineteen called it the oldest museum in America, founded in seventeen seventy three. Older, the guide pointed out, than the nation.\n\nThe museum stayed for some seventy years. Then it built a new home on Meeting Street and moved out. The old hall had already been declared a fire hazard.\n\nIn nineteen eighty one, it burned to the ground.\n\nThe museum is still open, over on Meeting Street. Its old front door is here, with nothing behind it.\n",
@@ -3756,22 +2522,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Charleston County Jail, HABS No. SC-688, written historical and descriptive data (Christine Trebellas, 1994)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/sc0902/"
-      },
-      {
-        "title": "Old Jail",
-        "publisher": "National Park Service, Travel Historic Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/old-jail.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the old jail. Heavy walls, towers, the look of a building nothing could move.\n\nIt used to be taller.\n\nIt was built in eighteen-oh-two, and for most of the century it had a fourth floor. Over\nthe eight-sided wing at the back stood a tall tower, which the records call the\nventilator, or the high cupola.\n\nOn the last night of August, eighteen eighty-six, an earthquake struck Charleston.\n\nThe local paper reported that the jail's walls, in some places nearly three feet thick,\nyielded to the quivering earth like so much glass. Cracks ran from the top of the building\ndown into the foundations.\n\nThe jailer made a decision. Rather than leave his prisoners in cells that might come down\non them, he let them out into the jail yard.\n\nThe yard had a wall around it. The earthquake opened a gap in it.\n\nThere were sixty-nine prisoners in the jail that night. Thirty-six of them went out\nthrough the gap.\n\nAfterwards the tower was condemned and torn down, and the top floor was taken off. The\nbuilding you are looking at is the jail the earthquake left behind. It went on holding\nprisoners until nineteen thirty-nine.\n\nIt still looks like nothing could get out of it. For one night, more than half of the\npeople inside proved otherwise.\n",
@@ -3810,15 +2561,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Kahal Kadosh Beth Elohim Synagogue",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/kahal-kadosh-beth-elohim-synagogue.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the front of this synagogue. Tall columns, a deep porch, a heavy roof line. It was designed to look like a temple from ancient Greece.\n\nThe congregation is older than the building. It began in seventeen forty nine, and by the end of that century it was the largest Jewish community in the country.\n\nIn eighteen twenty four, forty seven members sent the trustees a petition. They asked for shorter Hebrew rituals. They asked for prayers and sermons in English. The trustees said no, and for a time the congregation split.\n\nBy eighteen thirty three, the congregation was back together, and most of it was on the petitioners' side. Then the Charleston fire of eighteen thirty eight burned the first synagogue, which stood on this spot.\n\nThis one was built to replace it in eighteen forty. When its first service was held, the year after, it was the new kind. Beth Elohim became the first Reform congregation in America, and this is now the oldest synagogue in the country in continuous use.\n\nThe petition of eighteen twenty four was turned down. Seventeen years later, it had the whole building.\n",
@@ -3867,29 +2610,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Marion Square (Citadel Green), HALS SC-17, data pages",
-        "publisher": "Historic American Landscapes Survey, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/sc1226/"
-      },
-      {
-        "title": "Guide to Charleston, S. C.; with brief history of the city and a map thereof (1919)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/20002718/"
-      },
-      {
-        "title": "Christopher Gadsden",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/christopher-gadsden.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "On the King Street side of this square, behind an iron fence, is a fragment of old wall. It is easy to walk past. It is the oldest thing on the square.\n\nIn seventeen fifty nine, this was the northern edge of Charleston, and the road into town came through here. To guard it, the colony built a horn work, a great fortification designed by a German engineer named Emmanuel Hesse. It covered five acres. It mounted eighteen cannon. A wide moat ran along its north side. Parts of it were built of tabby, the old coastal building material you can see in that fragment.\n\nIn seventeen eighty, a British army laid siege to Charleston, and the horn work was the city's main defence.\n\nIt was not enough. Charleston surrendered, and it was the largest American surrender until the Civil War.\n\nFour years later, the horn work was taken down. Somebody kept this piece, and put a fence around it.\n",
@@ -3934,29 +2655,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Dock Street Theatre",
-        "publisher": "National Park Service, Travel Historic Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/dock-street-theatre.htm"
-      },
-      {
-        "title": "Charleston Community History",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/charleston-community-history.htm"
-      },
-      {
-        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the early playhouses",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/06042434/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the iron balcony on the corner. The name on the building is the Dock Street\nTheatre.\n\nNow look at the street sign. You are standing on Queen Street.\n\nQueen Street used to be called Dock Street. And on this side of the block, in seventeen\nthirty-six, Charleston put up a building for one purpose only. Plays. It is said to have\nbeen the first building in America made for the theatre.\n\nNobody was building a monument. A history of the city written in nineteen-oh-six says the\nearly playhouses here were described as temporary, and were probably not much more than\nbarns. Planters and merchants came to watch tragedies, and Addison's Cato, and a comedy\ncalled The Recruiting Officer, put on by special request of the local militia.\n\nThe barn is long gone. The building in front of you started life around eighteen-oh-nine\nas the Planter's Hotel, where planters from up-country stayed for the horse-racing season.\nThen, in the nineteen-thirties, the city restored it as a Works Progress Administration\nproject. It built an eighteenth-century style theatre into the back of the old hotel, and\ngave the whole thing the old playhouse's name.\n\nSo America's first theatre is a story told by a hotel, about a barn, on a street that\nchanged its name.\n\nFor a theatre, that seems about right.\n",
@@ -3995,43 +2694,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Exchange and Provost Building",
-        "publisher": "National Park Service, Travel Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/exchange-and-provost-building.htm"
-      },
-      {
-        "title": "The history of South Carolina in the revolution, 1775-1780 (Edward McCrady, 1901)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01031018/"
-      },
-      {
-        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), The Siege and The Captured City",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/06042434/"
-      },
-      {
-        "title": "The Siege of Charleston, 1780",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/siege-of-charleston-1780.htm"
-      },
-      {
-        "title": "British Evacuation of Charleston",
-        "publisher": "National Park Service, Fort Sumter and Fort Moultrie National Historical Park",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/british-evacuation-of-charleston.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The building at the foot of Broad Street is the Exchange. When it was finished, in\nseventeen seventy-one, the harbour came right up to it. Everything between it and the\nwater now is filled land.\n\nThink about what is underneath it.\n\nIn the spring of seventeen eighty a British army laid siege to Charleston. During the\nsiege the defenders moved ten thousand pounds of gunpowder out of the town's main\nmagazine, by night, and carried it down into the vaults of this building. Then they\nbricked it in.\n\nThe city surrendered in May. The British took vast stores of powder when it fell. They\nheld Charleston for more than two years. They used the Exchange as barracks, and the\ncellar became their military prison, the Provost. In one damp, dark room they kept\ncriminals and suspected rebels together, men and women, some held on the thinnest of\ncharges.\n\nWilliam Moultrie, one of the American commanders, wrote about it afterwards. The Provost,\nhe said, was right next to the powder. The British never found it. When the Americans\ncame back into the town, it was still there.\n\nFor more than two years, the British had been guarding it for them.\n",
@@ -4076,29 +2739,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "St. Philip's Episcopal Church",
-        "publisher": "National Park Service, Travel Historic Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/st-philips-episcopal-church.htm"
-      },
-      {
-        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the fire of 1796",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/06042434/"
-      },
-      {
-        "title": "Charleston, S.C. and vicinity illustrated (1901), St. Philip's Church",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/02003003/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up Church Street at the steeple of St. Philip's. The church sits right out in the\nroadway, the way parish churches did in England, and the street has to bend around it.\n\nThis is not the steeple this story is about.\n\nIn seventeen ninety-six a great fire swept through this part of town. It destroyed the\nFrench church on the corner behind you. And it reached the older St. Philip's, which stood\non this same spot, and set its steeple alight.\n\nAn enslaved Black man, a sailor by one account, climbed up the outside of the tower and\ntore off the burning shingles.\n\nIt worked. The church was saved.\n\nFor this, the old accounts agree, he was given his freedom. One adds a sum of money, and a\nfishing boat, completely fitted out with nets.\n\nThen the story got away from him. A popular poem moved it to the other great church in\ntown, and called it How He Saved St. Michael's. By nineteen-oh-one it was a favourite piece\nfor recitation contests. A book about Charleston published that year set the record straight, and\nthen added four words of its own. Thus is history made.\n\nThe church he saved burned anyway, in eighteen thirty-five, and the one in front of you was\nbuilt to replace it. Its steeple came a decade later.\n\nThe histories that tell this story record his reward in detail. The money. The boat. The\nnets. They do not record his name.\n",
@@ -4138,29 +2779,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Circular Congregational Church and Parish House",
-        "publisher": "National Park Service, Travel Historic Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/circular-congregational-church-and-parish-house.htm"
-      },
-      {
-        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the White Meeting",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/06042434/"
-      },
-      {
-        "title": "Charleston, S.C. and vicinity illustrated (1901), the Circular Church",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/02003003/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look into the graveyard around the Circular Congregational Church. It is the oldest burial\nground in Charleston, and one of its monuments has stood here since the sixteen hundreds.\n\nNow think about the name of the street you are standing on.\n\nMeeting Street is named for a building that is not here. In the first years of the town,\nits dissenters, English Congregationalists, Scots and Irish Presbyterians and French\nHuguenots, put up a plain meeting house on this spot. It was painted white. People called\nit the White Meeting House, and the road in front of it took the name.\n\nSince then, this site has been through almost everything Charleston could throw at it.\nDuring the Revolution the meeting house was turned into a granary, and horses grazed\namong these graves. In eighteen-oh-six a new church went up here, round, designed by the\nCharleston-born architect Robert Mills. It gave the congregation its name. It burned in\nthe great fire of eighteen sixty-one, stood as a ruin for twenty-five years, and the\nearthquake of eighteen eighty-six finished it off.\n\nThe church in front of you was built after that, around eighteen ninety-two, and it was\nbuilt partly from the old bricks.\n\nEvery church before this one has gone. The street is still named for the first of them.\nAnd the graves have outlasted all of them.\n",
@@ -4200,22 +2819,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old Slave Mart",
-        "publisher": "National Park Service, Travel Historic Charleston",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/old-slave-mart.htm"
-      },
-      {
-        "title": "Charleston, SC",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/charleston-sc.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the front of number six Chalmers Street. A high arch. Eight-sided pillars. A large\niron gate.\n\nIt is a handsome front, for what happened behind it.\n\nThis is the only building known to survive in South Carolina that was used as a slave\nauction gallery. For a long time, Charleston sold enslaved men, women and children in the\nopen, on the north side of the Exchange building. In eighteen fifty-six the city banned\nthose public sales.\n\nThe trade did not stop. It moved indoors and off the main streets, into sales rooms and\nyards along Chalmers, State and Queen streets.\n\nThis was one of them, known as Ryan's Mart. Behind the front stood a four-storey building\nwith a barracoon, a jail where people were held until they were sold. There was a kitchen.\nThere was a morgue.\n\nThe shed you are looking at went up in eighteen fifty-nine. Inside, the people being sold\nstood on tables three feet high and ten feet long. The tables were set lengthwise, so that\nbuyers could walk along beside them and look.\n\nSomeone thought carefully about what the buyers needed to see.\n\nSales were held here for only a few years, until the Civil War brought slavery to an end.\nHistorians estimate that nearly half of all the Africans brought to America in slavery\narrived through Charleston.\n\nIn nineteen thirty-eight a woman named Miriam Wilson bought this building and made it a\nmuseum of African American history. A room built for buyers became a room for remembering\nthe people who were sold.\n",
@@ -4261,15 +2865,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "College of Charleston",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/college-of-charleston.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand under the oaks and look toward the building with the columns at the end of the green. That is the college's main building, and it has a person's name. Randolph Hall. The old library on the green has a person's name too. Towell.\n\nThe green itself is called the Cistern.\n\nIn the nineteenth century, the college built an oval cistern here to hold its water supply. The name stuck to the whole yard, oaks and all.\n\nThe college is old. It was founded in seventeen seventy, and its founders included three signers of the Declaration of Independence. Its first classes met in former Revolutionary War barracks. The main building went up in eighteen twenty nine. The columns came twenty five years later.\n\nIt is the oldest municipal college in the United States, and a National Historic Landmark.\n\nAnd the heart of it is named after a water tank.\n",
@@ -4307,29 +2903,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Robinson-Aiken House, 48 Elizabeth Street, Charleston (HABS SC-269), data pages",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/sc0023/"
-      },
-      {
-        "title": "Robinson-Aiken Service Building and Stable (HABS SC-275), data pages",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/sc0025/"
-      },
-      {
-        "title": "Robinson-Aiken Cow House (HABS SC-274), data pages",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/sc0022/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the long plain wing that runs back from the house along Elizabeth Street. Up at the second floor there are six blank panels with pointed tops. Windows that were never windows.\n\nThis is the back of a planter's town house. Governor William Aiken lived here. What makes the place rare is not the front. It is everything behind it.\n\nWhen federal surveyors came in the late nineteen fifties and early sixties, they found the working yard still standing. A stable with six stalls. A carriage room. A harness room. A hay loft. And in the garden, two small brick cow houses. One was nearly gone. The other had an earth floor and room for two animals.\n\nThey measured the floorboards. They noted a wrought iron lock on one door, stamped with its maker's name.\n\nUpstairs at the far end of the wing were two small rooms with fireplaces. The surveyors wrote that they appear to have been used for living purposes.\n\nThey wrote down the hinges and the locks. They did not write down who lived in those rooms.\n",
@@ -4373,36 +2947,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The tryals of Major Stede Bonnet and other pirates (1719)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/33008758/"
-      },
-      {
-        "title": "Charleston, the place and the people (Harriott Horry Ravenel, 1906), The Conquest of the Pirates",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/06042434/"
-      },
-      {
-        "title": "The history of South Carolina under the proprietary government, 1670-1719 (Edward McCrady, 1897)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01010815/"
-      },
-      {
-        "title": "White Point Gardens, 2 Murray Boulevard, Charleston (HALS SC-19)",
-        "publisher": "Library of Congress, Historic American Landscapes Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/item/sc1228/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Somewhere in this garden is a small stone with a pirate's name on it. Stede Bonnet. It\nwas put up in nineteen forty-three, and it is easy to walk straight past.\n\nBonnet was not the usual kind of pirate. The old histories describe a gentleman. Educated,\nwell off, a former army major. Nobody could say why he took to the sea.\n\nIn the autumn of seventeen eighteen, ships from Charles Town caught him and brought him\nback in irons. He escaped once, in a woman's dress, and was hunted down in the sandhills\nof Sullivan's Island.\n\nThe record of the trials was printed the following year. Most of his crew were hanged in\nNovember. Bonnet followed on the tenth of December, executed, it says, at the White Point\nnear Charles Town.\n\nThat is here.\n\nThere was no garden then. The point took its name from the heaps of white oyster shell\nalong the shore. A Charleston historian, writing in nineteen-oh-six, recorded where the\npirates went afterwards. They were buried on the White Point shoal, just above the\nlow-water mark. Out on the mud, at the edge of the tide.\n\nThe city later filled the shoal in. This garden was laid out in eighteen thirty-seven, on\nmade ground, and the oaks you are standing under grew up on top of it.\n\nThey were buried where the tide came in. The city moved the tide.\n",
@@ -4448,15 +2993,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Charles Edmonston House, 21 East Battery Street, Charleston (HABS SC-54)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/sc0045/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Turn your back on the harbour and look across the street at number twenty-one. A big,\nthree-storey house with deep piazzas down the south side. Now look at the very top of the\nfront, at the low wall that hides the roof. There is a coat of arms up there.\n\nWhen the federal building survey wrote this house up, it called that an unusual feature.\nAs far as anyone knew, it was the only house in the city with one.\n\nThe arms are not the builder's.\n\nThe house was standing by eighteen twenty-nine. It was built by Charles Edmondston, and\nit looks straight out over the harbour.\n\nIn eighteen thirty-eight it was sold. Not by Edmondston, but by the assignees handling\nhis firm's affairs. The price was fifteen thousand five hundred dollars.\n\nThe buyer was Charles Alston. He redecorated the whole house in the Greek Revival style,\nadded a third tier to the piazzas, and put his family's arms on the parapet, on the\nfront that faces the water.\n\nThe survey ended up filing the house under three names. Edmondston, Alston, and a later\nfamily's. Only one of them is written on the roof.\n",
@@ -4505,15 +3042,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.93,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "City Hall Park",
-        "publisher": "NYC Parks",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain",
-        "url": "https://www.nycgovparks.org/parks/city-hall-park/history"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This was not a park. It was the Common, the rough field outside town where you put the\nthings nobody wanted near them. A poorhouse. A prison. A gallows.\n\nOn the ninth of July 1776, George Washington had his army formed up on this ground, in\nsquares, and had an officer read out a document that had arrived from Philadelphia five\ndays earlier.\n\nThere is no record of the soldiers being told to do anything afterwards.\n\nWhat they did was walk down Broadway, about a mile, to the little green at the bottom of\nthe island, and pull a two-ton gilded statue of the king off its plinth.\n\nWashington was not pleased. He put out an order the next morning calling it disorderly,\nand asking that in future such matters be left to the proper authorities.\n\nThe war he had just read them into lasted another seven years.\n",
@@ -4551,21 +3080,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.85,
     "visibility": "landmark-visible",
     "certainty": "contested",
-    "sources": [
-      {
-        "title": "Craggy Gardens and the southern Appalachian balds",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/blri/"
-      },
-      {
-        "title": "Southern Appalachian grass and heath balds — origin and maintenance",
-        "publisher": "USDA Forest Service, Southern Research Station",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the tops of the ridges around you. The trees stop, and then there is grass.\n\nThat is odd. These summits are nowhere near high enough to be above the tree line.\nThere are forests on mountains twice this height. Something else is keeping them bare.\n\nThey are called balds, and after a century of argument there is still no agreed\nexplanation. Cattle grazing is the obvious one, except some were bare before the cattle.\nFire. Ice-age climate that never quite reverted. Grazing by animals that are extinct.\n\nWhat is agreed is that they are closing. Without something to keep them open, the forest\ncomes back, and it has been coming back for decades.\n\nSo the mystery is solving itself, in the least useful way.\n",
@@ -4605,20 +3120,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.92,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "People v. Chapman — conviction and sentence, New York Supreme Court, 1981",
-        "publisher": "New York State Unified Court System",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      },
-      {
-        "title": "Parole Board hearing transcripts, Mark David Chapman",
-        "publisher": "New York State Board of Parole",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look across the street, into the park. Those trees are Strawberry Fields. It is about a\nthree-minute walk, and you are going to make it in a moment.\n\nBehind you is the Dakota. John Lennon lived here with Yoko Ono and their son. Yoko Ono\nlives here still. This is not a monument, it is a building full of people's homes, so\nstay on the pavement and keep out of the archway.\n\nOn the eighth of December nineteen eighty, at around ten to eleven at night, Lennon came\nback from a recording session. He walked from the car towards that arch. A man who had\nbeen waiting near the entrance since the afternoon fired five shots, and four of them hit\nhim. Earlier the same day, Lennon had signed a record for him.\n\nThe police did not wait for an ambulance. They put him in the back of a patrol car and\ndrove him to Roosevelt Hospital, where he was pronounced dead. He was forty.\n\nThere is no marker here. There was never going to be one.\n\nCross at the lights and walk into the park.\n",
@@ -4670,36 +3172,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Story of Smithson: His Dust Soon to Be Buried in City of Washington. The Weekly Corinthian, 17 February 1904, page 10 (Chronicling America)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn87065046/1904-02-17/ed-1/?sp=10"
-      },
-      {
-        "title": "Smithsonian Institution, by Frederic J. Haskin. The Washington Herald, 10 October 1907, page 7 (Chronicling America)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045433/1907-10-10/ed-1/?sp=7"
-      },
-      {
-        "title": "Smithsonian Institution Building, HABS DC-141, index to photographs (photo 49: crypt with Smithson's sarcophagus)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/dc0231/"
-      },
-      {
-        "title": "[Coffin with the remains of James Smithson being carried out of the British cemetery at San Benigno, outside Genoa, Italy], 1904",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/2016651958/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Face the north door of the red castle.\n\nInside, close to this entrance, there is a small crypt with a sarcophagus in it. The man\nin it paid for all of this.\n\nHis name was James Smithson. He was an English scientist, born outside marriage to a\nduke, and never given a title. When he died, he left his entire fortune to the United\nStates, to found an institution in Washington under his name.\n\nHe had never been here. He never visited the country in his life.\n\nHe died in Genoa in 1829 and was buried on a hill there, in a small British cemetery.\nBy the turn of the century a stone quarry was eating the hill away.\n\nSo in 1904 one of the Smithsonian's regents, Alexander Graham Bell, went to Genoa at his\nown expense and brought the body back across the Atlantic.\n\nA Washington paper put it neatly a few years later. That voyage was the first time\nSmithson ever had personal contact with these shores.\n\nHe gave everything to a country he had never seen.\n\nHe got here seventy-five years after he died.\n",
@@ -4743,22 +3216,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Design of the Korean War Veterans Memorial",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/kowa/learn/historyculture/design.htm"
-      },
-      {
-        "title": "Features of the Korean War Veterans Memorial",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/kowa/learn/historyculture/features.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Walk beside the polished wall, and watch the soldiers in the field appear in the stone.\n\nThere are nineteen of them, out on patrol.\n\nWhen the sculptor, Frank Gaylord, first showed his clay models, there were thirty-eight\nsoldiers. They were in the middle of a mission, under fire, in every kind of pose. The\nCommission of Fine Arts liked the photographs, and worried the figures would become too\nrealistic.\n\nWhat was finally built was nineteen.\n\nThe wall beside you carries the faces of the people behind the troops. Nurses,\nchaplains, sailors, supply crews. More than two thousand four hundred photographs went\ninto it. The architects wrote that as visitors walked down beside it, the etched faces\nwould mix with the reflections of the soldiers.\n\nSo look into the granite now. Count the patrol in the field. Then count it again in the\nstone.\n\nNineteen out there. Nineteen in here.\n\nThe record does not say whether anyone planned it that way.\n\nBut that is thirty-eight.\n",
@@ -4797,36 +3255,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "General Andrew Jackson Statue",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/000/general-andrew-jackson-statue.htm"
-      },
-      {
-        "title": "Lafayette Square, HABS DC-676, written historical and descriptive data",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/dc0784/"
-      },
-      {
-        "title": "Jackson statue feature by Edward Boykin, Evening Star Pictorial Magazine, January 4, 1953, image 140",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045462/1953-01-04/ed-1/?sp=140"
-      },
-      {
-        "title": "Jackson statue and the 1853 Douglas oration, Evening Star, April 19, 1936, image 54",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045462/1936-04-19/ed-1/?sp=54"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look under the horse.\n\nAndrew Jackson's horse is rearing. Its front hooves are in the air. Fifteen tons of\nbronze, balanced on the back legs.\n\nThe man who made it, Clark Mills, was a former ornamental plasterer from South Carolina.\nHe had never seen Jackson. He had never seen an equestrian statue either.\n\nHe built a furnace near this park and cast the whole thing himself, in ten pieces. The\nhorse alone took six castings before the final one was done.\n\nTo learn how a horse rears, he bought a retired racehorse named Olympus. He taught it to\nstand on its hind legs, so that he could watch how it was done.\n\nThe statue was unveiled on the eighth of January, eighteen fifty-three. It was the first\nequestrian statue cast in the United States. Stephen Douglas gave the speech, and he\ncompared it with the famous horses of Europe. Peter the Great's horse leans on a bronze\nserpent. Wellington's has its hind legs and tail riveted to the pedestal.\n\nOf this one, Douglas said: no props. No serpents.\n\nLook under the horse again.\n",
@@ -4864,29 +3293,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Jefferson's Library (Thomas Jefferson exhibition)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/exhibits/jefferson/jefflib.html"
-      },
-      {
-        "title": "Exhibition Overview - Thomas Jefferson's Library",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/exhibits/thomas-jeffersons-library/overview.html"
-      },
-      {
-        "title": "Exhibitions (current: Thomas Jefferson's Library, Southwest Pavilion, Second Floor, ongoing)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/exhibits/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the building behind the fountain. Upstairs, on the second floor, is a room of old\nbooks arranged in a slightly strange order.\n\nIn August 1814 the British burned the Capitol, and with it the library of Congress. About\nthree thousand books.\n\nThomas Jefferson, retired at Monticello, owned the largest private collection of books in\nthe country. He offered to sell it, at whatever price Congress chose.\n\nThere were sharp debates. Some members complained that too many of the books were in\nforeign languages, or about subjects that had nothing to do with Congress. Jefferson had\nalready answered that. There was, he wrote, no subject to which a member of Congress may\nnot have occasion to refer.\n\nCongress bought them. Six thousand four hundred and eighty-seven volumes, for twenty-three\nthousand nine hundred and fifty dollars.\n\nThe price was not worked out by title, or by rarity. It was based on measurements of the\nsize of the books.\n\nOn Christmas Eve 1851, another fire in the Capitol destroyed nearly two thirds of them.\nThe room upstairs is the library rebuilt the way Jefferson arranged it, around some two\nthousand survivors.\n\nThe largest library in the world grew out of one man's bookshelves, priced by size.\n",
@@ -4925,22 +3332,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Death of a Fresco Artist, Alexandria Gazette, February 21, 1880, page 4",
-        "publisher": "Alexandria Gazette, via Library of Congress Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn85025007/1880-02-21/ed-1/?sp=4"
-      },
-      {
-        "title": "Frieze in Capitol's Rotunda Is Completed After 76 Years, Evening Star, December 11, 1953",
-        "publisher": "The Evening Star, via Library of Congress Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83045462/1953-12-11/ed-1/?sp=43"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up, to the band of painted figures that runs right round the rotunda, below the\ndome.\n\nIt is one long procession through American history, a little over eight feet high and\nabout three hundred feet around.\n\nIt was designed by Constantino Brumidi, a painter from Rome who had come to America as an\nexile, and who spent more than twenty years decorating this building. He began the band\nin 1877. He was in his seventies, working on a scaffold high above this floor.\n\nIn the autumn of 1879 he very nearly fell from it. A newspaper reported that he never\ncompletely recovered from the shock. He died the following February. He had painted six\nscenes and part of a seventh.\n\nAnother Italian, Filippo Costaggini, carried on with Brumidi's designs for eight more\nyears. When he finished, there was still a gap. About thirty feet of the circle was empty.\n\nIt stayed empty for more than sixty years.\n\nIn 1952 and 1953 a New York artist, Allyn Cox, filled it with the Civil War, the Spanish\nAmerican War and the birth of aviation. The papers announced that the frieze was complete.\n\nIt had taken seventy-six years to go once around the room. The man who started it saw six\nscenes of it.\n",
@@ -4989,22 +3381,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "How the National Archives Became Home to the US Constitution, Declaration of Independence, and Bill of Rights",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/how-the-national-archives-became-home-to-the-us-constitution-declaration-of-independence-and-bill-of-rights.htm"
-      },
-      {
-        "title": "\"The Honor of Your Company is Requested\": Lincoln's Second Inaugural Ball at the Patent Office (Teaching with Historic Places)",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/-the-honor-of-your-company-is-requested-lincoln-s-second-inaugural-ball-at-the-patent-office.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Inside the rotunda, find the Declaration of Independence, and look closely at the ink.\n\nFor most of its life this sheet was not kept in the dark. It was a display piece. For\nyears it was on show in the Patent Office, a few blocks north of here, alongside George\nWashington's camp tent. In 1876 it went to Philadelphia for the Centennial Exhibition.\nThen it came back to a cabinet in the State Department's library.\n\nIn 1894 it was taken off display, because it was fading.\n\nIt spent the next quarter of a century in storage. In 1921 it went to the Library of\nCongress. After Pearl Harbor it went to Fort Knox. In 1951 the Library tried sealing it in\na case filled with helium.\n\nOn the thirteenth of December 1952 it came here, with the Constitution, in an armored\ncarrier escorted by tanks.\n\nUnder the display cases, the Archives had built a fifty-ton safe of steel and concrete,\nwith its own elevator. Every night the documents could be lowered into a vault, out of\nthe light, and raised again in the morning.\n\nAfter more than a century of being looked at, the first thing it got in its new home was\nsomewhere to hide.\n",
@@ -5042,22 +3419,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "\"The Honor of Your Company is Requested\": Lincoln's Second Inaugural Ball at the Patent Office (Teaching with Historic Places)",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/-the-honor-of-your-company-is-requested-lincoln-s-second-inaugural-ball-at-the-patent-office.htm"
-      },
-      {
-        "title": "Patent Office Building, Bounded by 7th, 9th, F, and G Streets Northwest (HABS DC-130)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/dc0194/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the columns on the F Street front. On the sixth of March 1865, guests climbed\nto that portico for Abraham Lincoln's second inaugural ball.\n\nIt was the first time a government building had been used for one. The great hall\nupstairs was the largest empty room in the city for dancing.\n\nOne of the clerks in the building went up to look while it was being made ready. His name\nwas Walt Whitman, and he wrote down what he saw.\n\nEarlier in the war, this building had been a military hospital. Whitman remembered these\nsame rooms filled with the worst wounded of the war, brought in from Second Bull Run,\nAntietam and Fredericksburg.\n\nTonight, he wrote, beautiful women, perfumes, the violins' sweetness, the polka and the\nwaltz. Then, the amputation, the blue face, the groan, the glassy eye of the dying. And\nmany a mother's son amid strangers, passing away untended.\n\nBy midnight on the night of the ball, there were more than four thousand guests.\n\nThe building is an art museum now. Whitman saw both of its nights in the same rooms, a\nlittle over two years apart.\n",
@@ -5097,22 +3459,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Many Important Cases to Come Before Highest Tribunal Tomorrow, Evening Star, October 6, 1935, page A-25",
-        "publisher": "The Evening Star, via Library of Congress Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83045462/1935-10-06/ed-1/?sp=25"
-      },
-      {
-        "title": "Highest Court Convenes in New Home, Washington Times, October 7, 1935, page 16",
-        "publisher": "The Washington Times, via Library of Congress Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn84026749/1935-10-07/ed-1/?sp=16"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand in front of the steps and read the words cut across the front. Equal justice\nunder law.\n\nThis building opened in October 1935, and the newspapers that week noticed something odd\nabout it. It was the first building the Supreme Court had ever had for its own use. The\nCourt was a hundred and forty-six years old.\n\nUntil then it had sat across the street, inside the Capitol. Its courtroom was on one side\nof a main corridor. The room where the justices put on their robes was on the other.\n\nSo before each session, attendants stretched plush ropes across the corridor to make an\naisle. The Chief Justice met the Court's marshal in the middle. They bowed, exchanged a\nquiet greeting, and the justices followed through into court, in full view of whoever\nhappened to be passing.\n\nSightseers loved it.\n\nWhen the Court moved in here, the justices brought their old chairs with them. The papers\ncalled the chairs the only relics of the old room.\n\nThe robing room in this building sits behind bronze gates, where the public cannot go.\n\nIf the bow still happens, nobody outside gets to see it.\n",
@@ -5150,22 +3497,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "The Octagon House, The Times (Washington), April 11, 1897, image 20",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn85054468/1897-04-11/ed-1/?sp=20"
-      },
-      {
-        "title": "Octagon House",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/octagon-house.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the old brick walls of the Octagon from the Eighteenth Street side.\n\nIn April eighteen ninety-seven, a Washington newspaper said this had long been the most\nnoted of the haunted houses in the city.\n\nThis is a legend. Nothing in it has ever been proven. It is only what people said.\n\nAnd people said a great deal. Doors and windows that opened when they were shut, and shut\nwhen they were opened. A woman's shriek. The clank of sabres. Heavy footsteps. Groans and\ncries from the passage by the back stairs. And an officer who died in an upper room,\nwhose blood, the story went, could still be heard dripping from the mantelpiece.\n\nAt the time, the house stood neglected. A caretaker lived in it, rent free and unpaid,\nwith his son. They slept in the room where Dolley Madison had once held her receptions.\n\nThe reporter asked him about the ghosts. He laughed.\n\nIf there are any ghosts here, he said, I have never heard or seen them. The only ghosts\nthat haunt this house exist in people's imagination.\n\nEveryone else told stories about this house. He slept in it.\n",
@@ -5204,22 +3536,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "History of the Cherry Trees",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/subjects/cherryblossom/history-of-the-cherry-trees.htm"
-      },
-      {
-        "title": "Women Lock Selves To Cherry Trees. The Washington Times, 18 November 1938, page 6 (Chronicling America)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn84026749/1938-11-18/ed-1/?sp=6"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand on the steps of the Jefferson Memorial and look at the cherry trees along the\nshore.\n\nIn November 1938, this ground was being cleared for the building behind you. Some of the\ncherry trees were in the way.\n\nSo more than a hundred and fifty women came down to the Tidal Basin, in limousines, in\ncabs and in buses. They were leaders of the city's women's clubs and parent teacher\nassociations. Dozens of them chained and padlocked themselves to the trees. Others took\nthe shovels out of the workmen's hands and filled the holes back in. Where trees had\nalready been dug up, women sat on them.\n\nA park police sergeant, Carl Gillespie, walked over to find out what was going on.\n\nHe found himself chained to a tree.\n\nThe paper said he took it good-naturedly.\n\nThe director of the city's parks stopped the work until the White House decided what to\ndo.\n\nThe memorial was built. But part of the compromise was more cherry trees, planted along\nthis side of the basin, to frame it.\n\nThe sergeant got his chain off. The trees got this shore.\n",
@@ -5259,29 +3576,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Runaway Train Rams Station, 40 Hurt, Evening Star, January 15, 1953, page A-1",
-        "publisher": "The Evening Star, via Library of Congress Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83045462/1953-01-15/ed-1/?sp=1"
-      },
-      {
-        "title": "Station Rushes Repairs for Inauguration; Engine Still Lies in Basement, Sunday Star, January 18, 1953, page A-12",
-        "publisher": "The Evening Star, via Library of Congress Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83045462/1953-01-18/ed-1/?sp=12"
-      },
-      {
-        "title": "Union Station, 50 Massachusetts Avenue Northeast (HABS DC-139)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/dc0254/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Walk through to the great concourse behind the main hall, and look at the floor.\n\nOn the morning of the fifteenth of January 1953, the Pennsylvania Railroad's Federal\nExpress was running in from Boston, full of visitors for the presidential inauguration.\n\nBy the railroad's account, as the train came into the Washington yards, the engineer found\nthat his brakes had failed completely. He sounded the horn in short blasts. A dispatcher in\na signal tower saw the train race past and sent a warning ahead.\n\nStation staff had less than two minutes to clear the concourse.\n\nThe train ran off the end of the track at an estimated fifty miles an hour, crossed the\nplatform and smashed through the barrier. The locomotive broke through this floor and\ndropped into the basement. Clocks stopped by the impact read eight thirty-six.\n\nForty-three people were hurt.\n\nThe inauguration was days away, so the engine stayed where it was. Crews built a wooden\nfloor over the hole and surfaced it with quick-drying asphalt. According to a station\nattendant, they even spread sooty dust over it, so it would match the rest.\n\nThat week, thousands of visitors walked across this concourse with no idea that a giant\nlocomotive was lying on its side beneath their feet.\n",
@@ -5319,22 +3614,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Frequently Asked Questions: How are the names arranged on the wall?",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/vive/faqs.htm"
-      },
-      {
-        "title": "[Vietnam Veterans Memorial. Competition drawing], Maya Lin, competition entry no. 1026, catalogue record and exhibit captions",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/97505164/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand where the two walls meet, and look into the black stone.\n\nYou will see yourself, standing among the names.\n\nThe design was entry number one thousand and twenty-six, in a blind competition with\nmore than fourteen hundred entries. It began as a student project. Maya Lin was studying\narchitecture at Yale when she proposed it, in 1981.\n\nNo figures. No sculpture. Two long walls of polished black granite, angled so that one\nlines up with the Washington Monument and the other with the Lincoln Memorial.\n\nNow look at the top of the panel at the very center, on the east side. The names begin\nthere, with the earliest dead, and they run in the order people died, east along the\nwall to its far end. Then they pick up again at the far west end, and run back toward\nyou.\n\nSo the last names on the wall finish right here, beside the first.\n\nThe Park Service puts it plainly. The first are with the last.\n\nAnd in the stone, in the middle of all of them, is you.\n",
@@ -5373,22 +3653,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Lincoln Conspirators",
-        "publisher": "National Park Service, Ford's Theatre National Historic Site",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/foth/learn/historyculture/the-lincoln-conspirators.htm"
-      },
-      {
-        "title": "Johnson's Last Words on Mary Surratt",
-        "publisher": "National Park Service, Andrew Johnson National Historic Site",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/anjo/learn/historyculture/mary-surratt.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at number 604 H Street. These days it is a restaurant and karaoke bar.\n\nIn the spring of 1865 it was a boarding house, owned by a widow named Mary Surratt.\n\nHer son John was one of John Wilkes Booth's most capable conspirators. Booth and his men\noften met here, to plan the kidnapping of President Lincoln and, in the end, his murder.\nTwo of them lodged here for a while. Andrew Johnson, who became president when Lincoln\ndied, called this house the nest that hatched the egg.\n\nAfter the assassination, detectives came to arrest the people living here. While they\nwere at it, one of the conspirators, Lewis Powell, turned up at the door. He had attacked\nthe Secretary of State three days before, and had been wandering the city since. They took\nhim too.\n\nMary Surratt was tried by a military tribunal. The case against her rested mainly on one\nwitness, the man who leased her tavern in Maryland. Five of the officers who tried her\nasked the president to spare her. He refused.\n\nShe was hanged on the seventh of July 1865, the first woman executed by the federal\ngovernment. How much she knew is still argued over by historians.\n\nNear the end of his own life, Johnson is reported to have called her execution a crime.\nHe was the president who had declined to stop it.\n",
@@ -5427,29 +3692,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "History of the House",
-        "publisher": "National Park Service, Belmont-Paul Women's Equality National Monument",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bepa/learn/history-of-the-house.htm"
-      },
-      {
-        "title": "Sewall-Belmont House, 144 Constitution Avenue, Northeast (HABS DC-821)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/dc0963/"
-      },
-      {
-        "title": "Belmont-Paul Women's Equality National Monument",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/bepa/index.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Find the old brick house on the corner, tucked in beside the big Senate office building.\n\nIt is one of the oldest houses on Capitol Hill. But it is not quite the house that was\nfirst built here.\n\nThe first one went up in 1800. On the twenty-fourth of August 1814, the British army\nmarched into Washington.\n\nAccording to a claim the owner later filed with Congress, a group of Commodore Joshua\nBarney's men, retreating from the battle at Bladensburg, got into this house and shot at\nthe British troops coming up the street.\n\nThey killed several men. They also killed the horse of the British commander, General\nRobert Ross.\n\nRoss's troops set the house on fire, and it was destroyed.\n\nThe house you are looking at was rebuilt on the same spot by 1820.\n\nA little over a century later, the National Woman's Party bought it, and campaigned for\nequal rights from here, just behind the Capitol.\n\nIn the 1960s, when the Senate office building next door was going up, the house was\nthreatened again. The Woman's Party lobbied to have it protected, and won.\n\nThis time, nobody had to fire a shot.\n",
@@ -5488,29 +3731,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "position-only",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Assassination of President Garfield Stirred Capital 58 Years Ago Today, by John Clagett Proctor. Evening Star, 2 July 1939, page 22 (Chronicling America)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83045462/1939-07-02/ed-1/?sp=22"
-      },
-      {
-        "title": "James A. Garfield Papers: timeline and featured items",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/collections/james-a-garfield-papers/articles-and-essays/timeline/"
-      },
-      {
-        "title": "Assassination and Death of President James A. Garfield",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/jaga/learn/historyculture/assassination-and-death-of-president-james-a-garfield.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand on Constitution Avenue at Sixth Street and look at the gallery in front of you.\n\nA railroad station stood here once, the Baltimore and Potomac depot. This avenue was\ncalled B Street then.\n\nAt about half past nine on the morning of the second of July, 1881, President James\nGarfield came here to catch a train north. He was walking through the ladies' waiting\nroom, arm in arm with his Secretary of State, when a man named Charles Guiteau shot him\ntwice.\n\nThe doctors probed for one of the bullets and could not find it. The bulletins they put\nout were hopeful. For eighty days the president declined, from spreading infection, and\nhe died on the nineteenth of September.\n\nHe had kept a diary all his life. The entry for the first of July, the day before the\nshooting, was the last he ever wrote.\n\nThe station is gone. In 1939, as this gallery was going up, a Washington columnist noted\nthat part of the enormous building would cover the site, and that very few visitors\nwould ever remember.\n\nSomewhere under the building in front of you, there was a waiting room.\n",
@@ -5555,29 +3776,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "[Model for the Statue of Freedom]",
-        "publisher": "Library of Congress, Prints and Photographs Division",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/2023631991/"
-      },
-      {
-        "title": "U.S. Capitol, Statue of Freedom (HABS DC-38-C)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/dc1054/"
-      },
-      {
-        "title": "Sixty-Seven-Year Reign of Freedom, Evening Star, December 14, 1930",
-        "publisher": "The Evening Star, via Library of Congress Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045462/1930-12-14/ed-1/?sp=94"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up past the dome, to the bronze figure standing on the very top.\n\nShe is called Freedom. She is nineteen and a half feet tall, and she weighs about fifteen\nthousand pounds.\n\nBefore she was bronze, she was plaster. The sculptor, Thomas Crawford, made the full-size\nmodel in his studio in Rome, and died before it left. It crossed the Atlantic in six\ncrates. Here, an Italian craftsman put the pieces together so cleverly that nobody could\nsee the joints.\n\nThen it had to come apart again, to be cast. By one account, the craftsman refused to\nseparate it unless he was paid a great deal more. Only he knew where the bolts were\nhidden.\n\nThe casting had gone to Clark Mills, whose foundry stood out on the Bladensburg road.\nMills owned a man named Philip Reid.\n\nReid rigged a pulley to an iron eye in the statue's head. He strained the rope gently,\nuntil the seams showed themselves one by one. Then he found the bolts, scraped away the\nplaster, and took them out. The model came apart, ready for the foundry.\n\nIn December 1863 the last section, her head and shoulders, was raised up there to a\nsalute of thirty-five guns.\n\nThe statue is called Freedom. The man who freed her from the plaster was not free.\n",
@@ -5622,22 +3821,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Freedom Plaza",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/000/freedom-plaza.htm"
-      },
-      {
-        "title": "Pershing Park, HALS DC-63, written historical and descriptive data",
-        "publisher": "Library of Congress, Historic American Landscapes Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/dc1230/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look down. You are standing on a map.\n\nThe dark lines in the stone are streets and avenues. The curving edge is the shoreline of\nthe Potomac. Bronze plaques set into the pavement mark the places that matter.\n\nIt is the plan Pierre L'Enfant drew for this city in seventeen ninety-one. It was laid into\nthe stone of this plaza when the plaza opened in nineteen eighty.\n\nFind Pennsylvania Avenue on the map. Follow it to the Capitol at one end, and the\nPresident's house at the other.\n\nNow look up. The plaza was built so that you can see the Capitol in one direction, and\nthe White House in the other.\n\nThe map is the promise. Lift your eyes, and you are standing in the city it turned into.\n",
@@ -5681,22 +3865,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old Post Office Tower",
-        "publisher": "National Park Service, National Mall and Memorial Parks",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/nama/planyourvisit/opot.htm"
-      },
-      {
-        "title": "New Post Office Building, Twelfth Street and Pennsylvania Avenue (HABS DC-814)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/dc0948/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand on Twelfth Street and look at the two buildings facing each other.\n\nOn one side, a federal building sweeps round in a great half circle. On the other stands\nthe Old Post Office, and its tower.\n\nThe curve was supposed to be a whole circle. When the federal buildings here went up in\nthe early 1930s, a matching curve was meant to be built across the street, on the site of\nthe Old Post Office. The tower was in the way.\n\nThe old building had fallen out of fashion, and locals thought it unappealing. It faced\ndemolition in 1934, and was spared only because the Depression had swallowed the money.\n\nIn 1970 Congress approved tearing it down again. By the mid seventies there were fires and\npiles of trash inside, and metal sheets over the glass roof of the atrium.\n\nThen Nancy Hanks, who chaired the National Endowment for the Arts, testified. Old\nbuildings, she told Congress, are like old friends. People picketed. The building was\nsaved, and in 1973 it went on the National Register of Historic Places.\n\nFor forty-two years, park rangers took visitors to the top of the tower. That ended on the\nfirst of October 2025, while the building's owners decide what happens next.\n\nEither way, the circle across the street still stops halfway.\n",
@@ -5735,36 +3904,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "St. John's Church, Sixteenth and H Streets Northwest, HABS DC-19, written historical and descriptive data",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/dc0235/"
-      },
-      {
-        "title": "Lafayette Square, HABS DC-676, written historical and descriptive data",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/dc0784/"
-      },
-      {
-        "title": "Lafayette Park",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/000/lafayette-park.htm"
-      },
-      {
-        "title": "Paul Revere's House, Bill Barlow's Budget, September 20, 1905, image 7",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn92067125/1905-09-20/ed-1/?sp=7"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the tower of St. John's Church, across H Street from the park.\n\nBehind the louvres, there is a bell. It has hung there since eighteen twenty-two.\n\nThis is the church people call the Church of the Presidents. Benjamin Latrobe designed\nit, James Madison was given a pew, and every president from Madison to Lincoln came here\nto worship.\n\nThe bell carries a maker's mark. It reads, Revere, Boston, eighteen twenty-two.\n\nNot Paul Revere. By then the family foundry had passed to his son, Joseph, and this is\nhis bell.\n\nA federal survey of the church says what it is for. It rings the hours of worship. And it is\nsounded on occasions of national interest.\n\nThe father is remembered for one night of raising the alarm. The son made something that\nhas been doing it here for two hundred years.\n",
@@ -5808,29 +3948,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Other Notable Figures: Martin Luther King, Jr.",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/linc/learn/historyculture/other-notable-figures.htm"
-      },
-      {
-        "title": "\"I Have a Dream\" Speech by Dr. Martin Luther King, Jr. (August 28, 1963), National Recording Registry essay by Gregory Alan Barnes",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/IHaveADream.pdf"
-      },
-      {
-        "title": "Exterior Features: Lincoln Memorial",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/linc/learn/historyculture/exterior-features.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look down at the landing, just below the top flight of steps.\n\nOne stone here is engraved. It marks where Martin Luther King Junior stood on the\ntwenty-eighth of August, 1963.\n\nIt was late afternoon. More than a quarter of a million people were out there. Many of\nthem had come a long way by bus and by train, and they had already sat through a long\nlist of speakers.\n\nKing had a prepared text. A promissory note. A bad check, come back marked insufficient\nfunds.\n\nHe was near the end of it, telling people to go home and keep up the fight, when a voice\ncalled out from just off to the side. It was his friend, the gospel singer Mahalia\nJackson.\n\nTell them about the dream, Martin.\n\nWhat came next was not on the page. He improvised it.\n\nStand on the landing and look out the way he did, down the length of the water toward\nthe Washington Monument.\n\nThe part of that speech everyone can still recite is the part he had not planned to say.\n",
@@ -5869,43 +3987,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Shooting coverage, Evening Star, November 2, 1950, image 5",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045462/1950-11-02/ed-1/?sp=5"
-      },
-      {
-        "title": "Collazo appeal and Coffelt anniversary, Evening Star, November 9, 1951, image 8",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045462/1951-11-09/ed-1/?sp=8"
-      },
-      {
-        "title": "Plaque Honors Truman Guard Killed in Assassination Attempt, Evening Star, May 22, 1952, image 4",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045462/1952-05-22/ed-1/?sp=4"
-      },
-      {
-        "title": "Blair House, Sunday Star Magazine, Evening Star, January 13, 1957, image 155",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045462/1957-01-13/ed-1/?sp=155"
-      },
-      {
-        "title": "Walk with Mr. Truman, Evening Star, April 14, 1958, image 27",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045462/1958-04-14/ed-1/?sp=27"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Find the small bronze plaque on the fence in front of Blair House.\n\nIn the autumn of nineteen fifty, the White House was being rebuilt, and President Truman\nwas living here, across the street. On the afternoon of the first of November, he was\nresting upstairs.\n\nTwo Puerto Rican nationalists came to this house armed. One of them later admitted they\nhad expected to shoot their way in. The White House police on duty shot back.\n\nThree officers were hit. One of them, Private Leslie Coffelt, forty years old, was shot\ntwice. As he lay dying beside his post, he fired, and killed one of the attackers. The\nother was wounded and taken. The attempt on the President failed.\n\nThe plaque was dedicated in May nineteen fifty-two, and Truman came to unveil it. He said\nit commemorated an event about which he did not like to think.\n\nSix years later, he walked past here with a writer from the Evening Star. He stopped and\nread the plaque. Then he pointed.\n\nHe was in a little sentry house, Truman said, that stood right there.\n",
@@ -5943,22 +4025,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Zero Milestone",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/000/zero-milestone.htm"
-      },
-      {
-        "title": "Dedication, zero milestone, 6/4/23 (National Photo Company Collection)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/2016847638/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the small granite post here, with a bronze compass on top.\n\nWalk round to the south face and read it. Point for the measurement of distances from\nWashington on highways of the United States.\n\nThis is zero.\n\nOn the seventh of July, 1919, an army motor convoy set out from this spot to cross the\ncontinent. It was the first transcontinental military motor convoy, and it went by the\nLincoln Highway. The east face says so.\n\nThe stone was not here to see them off. Congress authorized a permanent marker the\nfollowing year, and this one was presented to the city on the fourth of June, 1923.\n\nSo the starting line arrived four years after the start.\n\nThe Park Service chooses its words carefully. It calls this, symbolically, the\nofficial starting point for highway distances from Washington.\n\nEvery highway in the country, measured from a post you can walk around in a few steps.\n\nSymbolically.\n",
@@ -5997,22 +4064,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "History of the Cherry Trees",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/subjects/cherryblossom/history-of-the-cherry-trees.htm"
-      },
-      {
-        "title": "Cherry Trees Burned. The Washington Herald, 30 January 1910, page 2 (Chronicling America)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045433/1910-01-30/ed-1/?sp=2"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Find the two old cherry trees by the large bronze plaque here.\n\nThey were planted on the twenty-seventh of March, 1912, by the First Lady, Helen Taft,\nand Viscountess Chinda, the wife of the Japanese ambassador. Only a few people watched.\nThe whole cherry blossom festival grew out of that small ceremony.\n\nBut these were not the first trees Tokyo sent.\n\nTwo years earlier, two thousand cherry trees arrived in Washington, a gift from the city\nof Tokyo. Inspectors from the Department of Agriculture found them full of insects and\nnematodes, and diseased. To protect American growers, they had to go. The President gave\nhis consent, and in January 1910 the whole gift was burned.\n\nA local paper reported that about a dozen of the buggiest trees were kept back for\nstudy, with an entomologist standing guard, armed with a butterfly net and a cyanide\nbottle.\n\nTokyo's answer was to try again. Three thousand and twenty trees this time, grafted\nfrom a famous collection along a riverbank outside the city.\n\nThe first gift was burned.\n\nThese two trees are the reply.\n",
@@ -6051,43 +4103,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "The Willard Hotel is Subject of Display in American Treasures Exhibition",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/prn-06-072/"
-      },
-      {
-        "title": "New Hampshire Gazette and Republican Union, July 31, 1849, image 2",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn84023141/1849-07-31/ed-1/?sp=2"
-      },
-      {
-        "title": "The Republic (Washington), July 12, 1852, image 2",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn82014434/1852-07-12/ed-1/?sp=2"
-      },
-      {
-        "title": "Ulysses S. Grant National Historic Site",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/ulsg/index.htm"
-      },
-      {
-        "title": "Willard Hotel, 1401-1409 Pennsylvania Avenue Northwest, HABS DC-293, written historical and descriptive data",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/dc0300/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look through the doors of the Willard, into the lobby.\n\nThere is a story about that room. The story goes that President Ulysses Grant coined a\nword here. Lobbyist. As in, someone who waits in a hotel lobby to ask a powerful man for\nsomething. Even the Library of Congress has passed it on, with the word reportedly.\n\nIt is a good story. It is a legend, and the word is older.\n\nIn July eighteen forty-nine, a newspaper in Portsmouth, New Hampshire, complained about a\nscore of indefatigable lobbyists who kept up an untiring attack on lawmakers. Three years\nlater, a Washington paper printed a speech warning that English lobbyists should be\nspurned from your halls.\n\nIn the summer of eighteen forty-nine, Ulysses Grant was a young army officer who had been\nmarried for a year.\n\nEven the lobby is younger than the story. The Willard of Grant's day was replaced at the\nturn of the century, by the building in front of you.\n\nGrant did not invent the word. It was already here, waiting for him, like everyone else in\nthe lobby.\n",
@@ -6126,29 +4142,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Decatur House, 748 Jackson Place Northwest, HABS DC-16, written historical and descriptive data and 2011 addendum",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/dc0085/"
-      },
-      {
-        "title": "The Beale Homestead, Daily Kennebec Journal, April 13, 1903, image 2",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn82014248/1903-04-13/ed-1/?sp=2"
-      },
-      {
-        "title": "Lafayette Park",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/000/lafayette-park.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the brick wing that runs back from Decatur House, along H Street.\n\nIt has been described three different ways.\n\nIn nineteen-oh-three, a newspaper story about this house put it plainly. On H Street, it\nsaid, is a long addition, formerly slave quarters.\n\nA federal survey of the building chose a gentler phrase. Grouped around the garden, it\nsays, are the original servants' quarters, stables and carriage houses.\n\nIn twenty eleven, historians began a new study of the wing. The report that came out of\nit, filed with that same federal survey, calls it the slave wing.\n\nNow turn around and look at the park. The National Park Service keeps a list of what that\nground has been used for. A race track. A graveyard. A slave market.\n\nThree names for one wing. The newspaper had it right the first time.\n",
@@ -6186,22 +4180,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Other Notable Figures: Marian Anderson",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/linc/learn/historyculture/other-notable-figures.htm"
-      },
-      {
-        "title": "NBC Radio Coverage of Marian Anderson's Recital at the Lincoln Memorial (April 9, 1939), National Recording Registry essay by Cary O'Dell",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/MarianAndersonLincolnMem.pdf"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand at the foot of the steps and look up at the statue in the doorway.\n\nOn Easter Sunday, the ninth of April 1939, a singer stood up there with Lincoln at her\nback and a row of microphones in front of her.\n\nHer name was Marian Anderson. Toscanini had said a voice like hers came along once in a\nhundred years. She had already sung at the White House.\n\nShe could not sing at Constitution Hall, which is nearby. Its owners, the Daughters of\nthe American Revolution, barred Black performers, and they would not make an exception.\nA mostly white high school turned her down as well.\n\nSo these steps were offered instead. The concert was free. About seventy-five thousand\npeople came, of every race, and NBC radio carried it live across the country.\n\nShe opened with America. My country, 'tis of thee.\n\nThe song says, of thee I sing.\n\nShe sang, to thee we sing.\n",
@@ -6241,22 +4220,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "landmark-visible",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "History & Culture: Washington Monument",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/wamo/learn/historyculture/index.htm"
-      },
-      {
-        "title": "Frequently Asked Questions: Why does the color change on the outside of the monument?",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/wamo/faqs.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the monument, about a third of the way.\n\nThere is a line. Below it the marble is one shade, and above it, another. Right at the\nline there is a narrow band of something browner.\n\nNobody designed that.\n\nThe first stones went up in 1848, paid for by a private society that never had enough\nmoney. By 1854 the society was bankrupt, and the work stopped at one hundred and\nfifty-six feet.\n\nThen it stayed that way. Through the Civil War and for more than twenty years, the\nmonument to the father of the country stood half built on the Mall.\n\nWhen the government finally took it over, the old quarry near Baltimore was no longer\navailable. The builders tried stone from Massachusetts. They had trouble with its color,\nlaid a few courses of it anyway, and then switched to a third quarry for everything above.\n\nThe stones never matched exactly, and the weather has been pulling them apart in color\never since.\n\nWhen it was finished, this was the tallest building in the world. And you can still see\nexactly where it ran out of money.\n",
@@ -6294,36 +4258,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Octagon House",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/octagon-house.htm"
-      },
-      {
-        "title": "Octagon House, 1799 New York Avenue Northwest, HABS DC-25",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/dc0195/"
-      },
-      {
-        "title": "General Andrew Jackson Statue",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/000/general-andrew-jackson-statue.htm"
-      },
-      {
-        "title": "The Octagon House, The Times (Washington), April 11, 1897, image 20",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn85054468/1897-04-11/ed-1/?sp=20"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the curved front of the Octagon, the round bay with the door at its base.\n\nAbove that door is a round room. In the winter of eighteen fifteen, it was the\nPresident's study.\n\nOn the twenty-fourth of August, eighteen fourteen, British troops had burned the White\nHouse, the Capitol and the Treasury. James and Dolley Madison fled the city. When they came\nback a few weeks later, they needed somewhere to live.\n\nThis house had come through. Its resident was the French minister, and the British most\nlikely left it alone because of the French flag he flew. The Madisons moved in on the\neighth of September.\n\nThe war went on. On the eighth of January, Andrew Jackson won the Battle of New Orleans.\n\nThen, on the seventeenth of February, in the round room above the door, Madison signed the\nTreaty of Ghent, and the War of eighteen twelve was over.\n\nNew Orleans had been fought six weeks before the war ended. And the war that burned the\nPresident out of his house ended in somebody else's.\n",
@@ -6367,29 +4302,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The White House",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/white-house.htm"
-      },
-      {
-        "title": "Other Repairs to White House Dispossessed Three Presidents, Evening Star, January 16, 1949, image 96",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045462/1949-01-16/ed-1/?sp=96"
-      },
-      {
-        "title": "British Army Receives White House Memento, Evening Star, August 22, 1952, image 8",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045462/1952-08-22/ed-1/?sp=8"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look through the fence at the north front of the White House.\n\nThere is a story about that white paint, and people have been telling it for a long time.\nIn nineteen forty-nine, a Washington newspaper printed it as plain fact.\n\nIt goes like this. On the twenty-fourth of August, eighteen fourteen, British troops set\nthe house on fire. The walls were left stained with smoke. So the house was painted white\nto hide the stains, and that is how it got its name.\n\nIt is a good story. The dates do not fit it.\n\nThe National Park Service says the house was carrying the name White House from around\neighteen eleven. That is three years before the fire.\n\nThe fire itself was real. The outer walls stood, but they were so weakened that little of\nthe original building could be kept.\n\nAnd some of the scorched wood had one more journey to make. In nineteen fifty-two, a piece\nof White House timber, still marked by the British fire, was made into a gavel. With a\nmessage of good wishes from President Truman, it was presented to a training centre of\nthe British Army, in England.\n\nThis time, they were invited to take it.\n",
@@ -6427,36 +4340,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Julia Ward Howe",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/julia-ward-howe.htm"
-      },
-      {
-        "title": "Willard Hotel, 1401-1409 Pennsylvania Avenue Northwest, HABS DC-293, written historical and descriptive data",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/dc0300/"
-      },
-      {
-        "title": "The Willard Hotel is Subject of Display in American Treasures Exhibition",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/prn-06-072/"
-      },
-      {
-        "title": "Battle Hymn of the Republic, from the February Atlantic Monthly, Worcester Daily Spy, January 27, 1862, image 1",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83021205/1862-01-27/ed-1/?sp=1"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the windows of the Willard.\n\nIn November eighteen sixty-one, Julia Ward Howe was a guest at the hotel on this corner.\nThe Civil War had begun, and she had come to Washington with her husband to see the war\neffort for themselves, and to meet President Lincoln.\n\nOne night, she woke from a dream with a poem in her head. Years later, she described what\nshe did next.\n\nWith a sudden effort, she wrote, I sprang out of bed, and found in the dimness an old\nstump of a pen. I scrawled the verses almost without looking at the paper.\n\nThe Atlantic Monthly printed them in February. People sang them to the tune of the John\nBrown song, and they still do.\n\nThe building has changed. The old Willard was replaced at the turn of the century, on the\nsame corner, under the same name.\n\nThe song has not. You probably know the first line. Mine eyes have seen the glory.\n\nShe wrote it without looking.\n",
@@ -6494,22 +4378,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.9,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Trial of John Peter Zenger",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-21",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/feha/learn/historyculture/the-trial-of-john-peter-zenger.htm"
-      },
-      {
-        "title": "Federal Hall National Memorial",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-21",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/feha/index.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand facing the columns, and know first that this is not the building.\n\nThe one that mattered was New York's City Hall, and it stood on this exact spot. Two\nthings happened in it that the country is still living inside.\n\nIn 1735 a printer named John Peter Zenger was tried here for libel. He had published\ncriticism of the royal governor in his newspaper, and under the law of the time truth was\nno defence. Printing it was the crime, whether or not it was accurate. The jury\nacquitted him anyway. It was not yet law, but it was the beginning of the argument that\nbecame a free press.\n\nFifty-four years later the same site, rebuilt as Federal Hall, was the first Capitol of\nthe United States. On the thirtieth of April 1789, George Washington stepped onto a\nbalcony above this street and took the oath as the first president, in front of a crowd\nfilling Wall Street below you.\n\nThat building was demolished in 1812. What you are looking at went up in 1842, as a\ncustoms house. The statue of Washington faces the street, roughly where the balcony was.\n",
@@ -6573,15 +4442,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.85,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Fraunces Tavern and the Continental Army",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-21",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/fraunces-tavern.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "On the fourth of December 1783, in an upstairs room of this building, George Washington\nsaid goodbye to the officers he had fought beside for eight years.\n\nThe British had sailed out of the harbour nine days earlier. The war was over, and he was\ngoing home to Virginia, believing he was finished with public life.\n\nBy the accounts that survive, he could not finish what he meant to say. He raised a glass,\nmanaged a few sentences, and then asked each man to come and take his hand. Grown soldiers\nwept. He walked out without trusting himself to speak again.\n\nSix years later he was back in this city, taking an oath three streets from here.\n",
@@ -6619,15 +4480,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.9,
     "visibility": "landmark-visible",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Cape Hatteras Lighthouse relocation",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/caha/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The hook of sand below is Cape Hatteras. The shoals run out from it for a dozen miles\nunderwater, two ocean currents meet directly over them, and the wrecks in that stretch of\nsea number in the hundreds. It has been called the Graveyard of the Atlantic since the\neighteen hundreds.\n\nWhich is why there has been a lighthouse down there since eighteen oh three, and the\ncurrent one since eighteen seventy: a hundred and ninety-eight feet of brick, the\ntallest in the country.\n\nIt was built fifteen hundred feet from the sea. By the nineteen nineties the sea was a\nhundred and twenty feet away.\n\nSo in nineteen ninety-nine they jacked up four thousand eight hundred tons of brick,\nput it on rails, and moved it. It took twenty-three days to travel twenty-nine hundred\nfeet.\n\nIt did not crack.\n",
@@ -6666,15 +4519,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.95,
     "visibility": "landmark-visible",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Wright Brothers National Memorial",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/wrbr/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look down and to your left. That thin line of sand between the sea and the sound is the\nOuter Banks.\n\nOn the seventeenth of December nineteen oh three, on the dunes down there, an aeroplane\nleft the ground under its own power with a person aboard and landed at a point higher than\nwhere it started. It was in the air for twelve seconds and it travelled a hundred and\ntwenty feet.\n\nNow look along the cabin you are sitting in.\n\nDepending on the aircraft, that entire first flight would have started and finished\nwithout leaving this fuselage. They flew three more times that day; the longest covered\neight hundred and fifty-two feet.\n\nSixty-six years after the fourth flight, people landed on the moon.\n",
@@ -6713,15 +4558,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.92,
     "visibility": "landmark-visible",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Linn Cove Viaduct",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/blri/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The road ahead curls around the side of the mountain on concrete legs.\n\nConstruction on the Blue Ridge Parkway started in nineteen thirty-five. This stretch,\nabout seven miles of it, did not open until nineteen eighty-seven.\n\nThe hold-up was the mountain. Grandfather Mountain is old, steep and unusually rich in\nrare plants, and the ordinary way to put a road across something like that is to cut a\nshelf into it and push the spoil over the side. Nobody was willing to do that here.\n\nSo they built it from the top down instead. Each segment of the viaduct was cast off-site,\ncarried out along the piece already finished, and lowered into place. Almost no heavy\nmachinery ever touched the ground underneath it.\n\nThe Parkway is four hundred and sixty-nine miles long. The last seven took a third of the\ntime.\n",
@@ -6760,21 +4597,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.86,
     "visibility": "landmark-visible",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Linville Gorge Wilderness",
-        "publisher": "USDA Forest Service",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      },
-      {
-        "title": "Blue Ridge Parkway — Linville Falls",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/blri/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Almost everything you have driven through today grew back. The southern Appalachians were\nlogged hard between about eighteen eighty and nineteen thirty, and most of what looks\nancient out there is a century old at most.\n\nThe gorge on your right is the exception.\n\nIt is around two thousand feet deep with walls to match, and the timber companies looked\nat it and could not make the arithmetic work. There was no way to get logs out that cost\nless than the logs were worth.\n\nSo it was left. Not protected, not fought over. Just skipped.\n\nIt is one of the few places in the eastern United States where you can look at a forest\nthat nobody ever got around to cutting down.\n",
@@ -6813,21 +4636,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.88,
     "visibility": "landmark-visible",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Mount Mitchell State Park",
-        "publisher": "North Carolina Division of Parks and Recreation",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      },
-      {
-        "title": "Blue Ridge Parkway — Mount Mitchell",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/blri/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Off to the left is the highest ground anywhere east of the Mississippi. Six thousand six\nhundred and eighty-four feet.\n\nIt is named after a professor called Elisha Mitchell, who measured it in the eighteen\nthirties and said it was the tallest. A former student of his said it was not, and said so\npublicly, at length.\n\nIn eighteen fifty-seven Mitchell went back up to take the measurements again and settle\nit. He did not come down. They found him days later in a pool below a waterfall.\n\nHis figures were correct, and the argument ended the way arguments do when one side stops\nbeing available.\n\nHe is buried on the summit.\n",
@@ -6866,29 +4675,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Jazz Neighborhoods",
-        "publisher": "National Park Service, New Orleans Jazz National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/jazz/learn/historyculture/jazz-map.htm"
-      },
-      {
-        "title": "Restricted District at New Orleans Closed, Evening capital news, Boise, Idaho, 13 November 1917, p. 1",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn88056024/1917-11-13/ed-1/?sp=1"
-      },
-      {
-        "title": "Jelly Roll Morton interviews conducted by Alan Lomax (National Recording Registry essay)",
-        "publisher": "Library of Congress, National Recording Preservation Board",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Lomax-JellyRollMorton.pdf"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look across Basin Street, away from the French Quarter.\n\nFor twenty years, the blocks over there were a legal red-light district. It operated openly from eighteen ninety-seven.\n\nThe newspapers called it Storyville, and explained the name. The district had been set up by an ordinance, and the man behind the ordinance was named Story.\n\nMusic was a sideline here, but a real one. Bands worked the dance halls and cabarets. Pete Lala's. The hundred and one Ranch. The Tuxedo Dance Hall. The Big Twenty-Five. A young pianist named Jelly Roll Morton started out playing in this neighborhood.\n\nJazz was not born here, whatever the legend says. The National Park Service is firm about that. But Storyville put the new music in front of people who might never have heard it otherwise.\n\nIt ended at midnight on the twelfth of November, nineteen seventeen. Everything closed at the stroke of twelve, at the request of the Navy Department. One wire report said more than a third of the district's two thousand women had already left the city.\n\nIn the nineteen-forties nearly every building over there was torn down for public housing.\n\nThe name outlived every one of them.\n",
@@ -6929,29 +4716,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "New Orleans guide (New Orleans, F.F. Hansell & Bro., c1902), by James S. Zacharie, Cemeteries",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/03001137/"
-      },
-      {
-        "title": "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), The Cemeteries: St. Louis No. 1",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      },
-      {
-        "title": "Norman's New Orleans and environs (1845), Public buildings: cemeteries",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008776/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the wall around this cemetery, and how thick it is.\n\nIn the old St. Louis cemeteries, the wall was never just a fence. It was built as tombs, stacked in tiers. Visitors a century ago were told these vaults were called ovens, after the oldest tombs here, which were brick and shaped like ovens.\n\nWhy build up instead of down? A guidebook of nineteen hundred and two put it plainly. The soil is low and wet. Dig very deep, and you strike water.\n\nBut that is only half the answer. The other half is what happens inside.\n\nA family tomb usually held two vaults, with a space for bones beneath. When a vault was needed again, the law first made the family wait. A year or two, the guidebooks said. Then the slab came off, the old wooden coffin was broken up and burned, and what remained was moved down into the space below. The vault was ready again.\n\nIn these cemeteries, one guide wrote, generation after generation mingle their dust in the same crypt.\n\nEach tomb behind that wall is not one person. It is a family, folded down into one small house.\n",
@@ -6991,22 +4756,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Hermann-Grima House, 820 Saint Louis Street, New Orleans, Orleans Parish, LA (HABS LA-1122)",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/la0067/"
-      },
-      {
-        "title": "Vieux Carré, A Creole Neighborhood in New Orleans (Teaching with Historic Places)",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look across at the front of this house. Five openings wide, evenly spaced, in pale yellow brick. Then look at the front door, set back into the wall, with slender columns on either side and a half-oval fan of glass above it.\n\nNow look at its neighbours.\n\nIn eighteen nineteen the architect Benjamin Henry Latrobe, who had worked on the Capitol in Washington, came to live in New Orleans. He was taken with the city's Creole character, and he could see what was coming. Merchants from the old United States, he wrote, had already begun to bring in the lopsided London house. In a few years, he predicted, this will be an American town.\n\nThis house is part of what he saw coming. It was built around eighteen thirty-one for Samuel Hermann, a wealthy merchant. The federal survey of it describes a plan from the northeastern United States, adapted to work as a New Orleans townhouse. The yellow brick, it has been said, came all the way from Philadelphia.\n\nLatrobe was half right. The American houses did come. But they had to fit the town the French had already laid out. Narrow, deep lots. Buildings right up to the street. Courtyards hidden behind. The Americans' favourite front yards hardly ever appeared in the Quarter. They kept the iron balconies too.\n\nLook at the door again. It is an American door.\n\nIt just had to stand where the street told it to.\n",
@@ -7055,36 +4805,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Creole families of New Orleans (1921)",
-        "publisher": "Grace King, Macmillan, 1921; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/21004871/"
-      },
-      {
-        "title": "New Orleans, the place and the people (1895)",
-        "publisher": "Grace King, Macmillan, 1895; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008773/"
-      },
-      {
-        "title": "Pontalba Buildings, 1850 House, Jackson Square, New Orleans (HABS LA-1259-A), index card and supplemental material",
-        "publisher": "Historic American Buildings Survey, National Park Service; Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/la0365/"
-      },
-      {
-        "title": "The Presbytere, New Orleans, Louisiana",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/the-presbytere-new-orleans-louisiana.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the long red brick building along this side of the square, at the cast iron railings on its balconies. Somewhere in the pattern, two letters are twisted together. An A and a P.\n\nThey belong to a woman who was supposed to be dead.\n\nMicaela Almonester was born in this city, the daughter of the rich Spaniard who paid for the cathedral. She married into a noble French family, the Pontalbas, and went to live in France.\n\nThe marriage went badly. There were lawsuits. In the end she won her independence from her husband and his family.\n\nThen, one October morning in eighteen thirty-four, at the family château, she was found on the floor of her rooms, shot several times. Her father-in-law, the old baron, was found dead in his armchair with a pistol in his hand.\n\nShe lived. She carried the bullets in her body for the rest of her life.\n\nTwelve years later she put a plan to the city. She would tear down her father's old buildings on both sides of this square, and put up something grander, if the council would play its part. The council backed out. She built them anyway. They were finished around eighteen fifty.\n\nThe A is for Almonester. The P is for Pontalba.\n\nShe kept both.\n",
@@ -7142,36 +4863,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "contested",
-    "sources": [
-      {
-        "title": "Creole families of New Orleans (New York, Macmillan, 1921), by Grace King, chapter on Bernard de Marigny",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/21004871/"
-      },
-      {
-        "title": "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), street names and the new Rampart Street",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      },
-      {
-        "title": "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), North Rampart and the French Quarter beyond the Vieux Carre",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/13004346/"
-      },
-      {
-        "title": "The Picayune's guide to New Orleans (1900), Good Children street, now St. Claude",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/00001333/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the street sign. It says Rampart.\n\nBack on the old town side of Esplanade, that name makes sense. The city's defenses ran along that line. But this stretch was laid out later, on a plantation, when its owner cut his land into streets and lots in the early eighteen-hundreds. He named this one himself.\n\nHe called it Rue d'Amour. Love Street.\n\nHis name was Bernard de Marigny, and he named the whole neighborhood like a poet. Poet Street. Good Children Street. Piety. Desire. And Craps.\n\nCraps is where the stories split. Grace King, writing about the old Creole families in nineteen twenty-one, said he named it after a game he was addicted to. A guidebook from nineteen hundred and four says the street got the name because boys played the game there. Neither one gives a source. Take your pick.\n\nMarigny meant to build a Creole city that would outshine the American one growing up across Canal Street. It never came. One story says a sale of the whole faubourg fell apart in a notary's office, because his wife did not come to sign.\n\nLater the city tidied up its map. Love Street became part of Rampart. Good Children became St. Claude. Moreau became Chartres.\n\nThe pretty names, King wrote, are all that survive of his scheme. Even some of those were taken off the signs.\n",
@@ -7230,22 +4922,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), Esplanade Avenue, from the river to Rampart Street",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/13004346/"
-      },
-      {
-        "title": "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Esplanade Avenue",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look down Esplanade Avenue, toward the river. The trees, the wide middle, the old houses on both sides.\n\nA guidebook of nineteen hundred and four said this avenue was to the Creoles what St. Charles Avenue was to the Americans. Their grand residence street.\n\nThe name is older than the houses, and it is a soldier's word.\n\nRight here, where Rampart now crosses Esplanade, the Spanish governor Carondelet put up a fort in seventeen ninety-six. Fort St. Ferdinand. It was part of a ring of defenses around the town.\n\nAn esplanade is the open, cleared ground that lies outside a line of fortifications like that. Flat, bare and empty. That is what this was.\n\nThe fort was taken down early in the eighteen-hundreds, and the town spread out across the cleared ground.\n\nSo the finest address in Creole New Orleans is named for the space that was meant to stay empty.\n",
@@ -7295,22 +4972,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Our Lady of Guadaloupe Church (St. Anthony of Padua, The Mortuary Chapel), 411 North Rampart Street, HABS LA-1104, written historical and descriptive data (1958)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/la0048/"
-      },
-      {
-        "title": "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), North Rampart: the church of St. Anthony of Padua",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/13004346/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the front of this church. The plain stucco face, the open porch, the bell tower above.\n\nIt was built for one purpose. Funerals.\n\nIn the early eighteen-hundreds, Catholic funerals in New Orleans were held at the cathedral, in the middle of the old town. The city council came to fear that the custom was spreading disease, in a city where epidemics came back again and again.\n\nSo the council asked the church to build a chapel out here instead, at the back edge of town, close to the cemetery. The church bought this lot in eighteen twenty-five, for four hundred and twenty-five dollars. The chapel was finished in eighteen twenty-seven.\n\nThat same year the council made it law. A funeral at the cathedral would now cost a fifty dollar fine.\n\nSo for years, this was where the city's Catholic dead stopped on their way to the tomb.\n\nLater the chapel became a parish church. It was called the Italian church for a while, then served the city's Spanish speakers, which is how it came by the name it carries now. Our Lady of Guadalupe.\n\nThe building was enlarged, but its front was left as it was. It was made to be the last door a great many people came through.\n",
@@ -7360,36 +5022,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Homer Plessy",
-        "publisher": "National Park Service, Jean Lafitte National Historical Park and Preserve",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/homer-plessy.htm"
-      },
-      {
-        "title": "U.S. Reports: Plessy v. Ferguson, 163 U.S. 537 (1896)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/usrep163537/"
-      },
-      {
-        "title": "Plessy in the Making",
-        "publisher": "National Park Service, Brown v. Board of Education National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/brvb/learn/historyculture/plessy.htm"
-      },
-      {
-        "title": "Plessy and Ferguson (program announcement, 2010)",
-        "publisher": "National Park Service, Brown v. Board of Education National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/brvb/learn/news/plessyferguson.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look along the railroad tracks.\n\nOn the seventh of June, eighteen ninety-two, a shoemaker named Homer Plessy bought a first-class ticket on the East Louisiana Railroad, for Covington, across the lake. He took a seat in the car for white passengers.\n\nUnder a Louisiana law two years old, that seat was not his. The law said railroads must keep separate cars by race, and under that law Plessy was Black. His own petition later told the court that no one could see it in him.\n\nThe conductor told him to move. He refused. He was arrested and taken to the parish jail.\n\nNone of it was an accident. A committee of citizens had organized to test the law in court, and Plessy volunteered. The railroad was in on the plan. The detective who arrested him had been hired ahead of time. The arrest is remembered here, by these tracks.\n\nThe case went all the way to the Supreme Court. In eighteen ninety-six it lost, seven votes to one. The ruling made separate but equal the law of the land, and it stood for almost sixty years.\n\nThe one dissenting justice wrote that the Constitution is color-blind.\n\nMore than a century later, a descendant of the judge who first ruled against Plessy and a member of the Plessy family came to this story together. They were photographed standing on the tracks where he was arrested.\n\nA Plessy and a Ferguson, side by side.\n",
@@ -7440,29 +5073,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Jean Lafitte, A Pirate's Life",
-        "publisher": "National Park Service, Jean Lafitte National Historical Park and Preserve",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/jela/learn/historyculture/jean-lafitte-a-pirate-s-life.htm"
-      },
-      {
-        "title": "941 Bourbon Street (Cottage), New Orleans, Orleans Parish, LA (HABS LA-24)",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/la0018/"
-      },
-      {
-        "title": "The Creoles of Louisiana (1884), by George W. Cable, chapter The Pirates of Barataria",
-        "publisher": "Charles Scribner's Sons, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008769/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the small, low cottage on the corner of Bourbon and Saint Philip. Its walls are brick packed between wooden posts, the way houses here were built long ago, and in places the plaster over them has worn thin.\n\nIt is called Lafitte's Blacksmith Shop. The story goes that the smuggler Jean Lafitte and his brother Pierre ran a forge on this corner, as cover for their real business.\n\nIt is an old story. George Washington Cable printed it as fact in eighteen eighty-four. By the nineteen-thirties there was a bronze plate on the building that read Lafitte's Rendezvous, site blacksmith shop, eighteen ten.\n\nBut when federal surveyors studied the cottage in the nineteen-thirties, they found no record of who built it, or when. And the National Park Service, which tells the Lafittes' story today, says plainly that no evidence confirms the legend.\n\nWhat the records do show is across the street.\n\nOn the opposite corner stood a house bought in eighteen sixteen by Marie Louise Villard, a free woman of color and Pierre Lafitte's partner of many years. They had seven children together. The house was in her name, so the government could not seize it for the brothers' crimes. Pierre was in this neighborhood often. That, the Park Service suggests, may be how the legend found this corner.\n\nSo the Lafittes probably never shod a horse here.\n\nBut one of them had a family just over the road.\n",
@@ -7513,36 +5124,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "New Orleans, the place and the people (1895)",
-        "publisher": "Grace King, Macmillan, 1895; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008773/"
-      },
-      {
-        "title": "A history of Louisiana (1905)",
-        "publisher": "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/34036146/"
-      },
-      {
-        "title": "The Cabildo, 711 Chartres Street, New Orleans (HABS LA-18-4), written historical and descriptive data",
-        "publisher": "Historic American Buildings Survey, National Park Service; Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/la0007/"
-      },
-      {
-        "title": "Vieux Carré: A Creole Neighborhood in New Orleans (Teaching with Historic Places)",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "You are standing beside the side wall of the Cabildo. Look at the row of arched windows along the ground floor.\n\nKeep them in mind.\n\nOn Good Friday in seventeen eighty-eight, candles were burning in the private chapel of the colony's military treasurer, a couple of blocks up Chartres Street from here. The story is that one fell against the lace on the altar.\n\nThe fire went from house to house.\n\nA correspondent for a European newspaper reported something else. He said the priests would not allow the alarm to be rung, because on Good Friday every bell must be silent.\n\nBy the end, eight hundred and fifty-six houses were gone. The church. The town hall. The guardhouse that stood right here.\n\nA few years later, another fire took much of what had been rebuilt.\n\nSo here is the thing about the French Quarter. Much of the old city you walk through was built after those fires, while Spain ruled it. A New Orleans writer in the eighteen nineties put it plainly. An ill-built French town went into the ashes. A stately Spanish city came out.\n\nNow look again at the wall beside you. When the Cabildo went up on this spot, part of the burned guardhouse wall was still standing. The builders kept it, and laid out these windows to its old rhythm.\n\nThe town hall is Spanish. Part of the wall it stands on is older than the fire.\n",
@@ -7592,29 +5174,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "The Creoles of Louisiana (1884), by George W. Cable",
-        "publisher": "Charles Scribner's Sons, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008769/"
-      },
-      {
-        "title": "New Orleans, the Place and the People (1895), by Grace King",
-        "publisher": "Macmillan and Co., via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008773/"
-      },
-      {
-        "title": "The Picayune's Guide to New Orleans (1904)",
-        "publisher": "The Picayune, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the convent roof, and the small windows set into it.\n\nThe nuns who lived here belong to one of the oldest stories in New Orleans. In the early years of the colony, France sent young women across the ocean to marry its colonists. Each one came with a small chest of clothes. The French called them the filles à la cassette. In English, the casket girls.\n\nThat much the old writers agree on. Almost nothing else.\n\nGeorge Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king. He says those sixty were the first of many shiploads. Grace King, eleven years later, has sixty girls too. She says they were the last.\n\nA city guide from nineteen-oh-four tells it differently again. Twenty girls, years earlier, each chosen by the Bishop of Quebec, each given a little chest as proof of her good character.\n\nCable admitted the record was slender. The Creoles, he wrote, were never careful about checking their traditions.\n\nSo the story kept growing. In recent years some tellers have added something none of the old writers ever mentioned. That the little chests carried vampires into the city, and that they are still up there, under this roof.\n\nThere is no record of that. None. It is a legend built on top of a legend.\n\nThe women were real. Their chests were real. And as far as anyone ever wrote down at the time, what was in them was clothes.\n",
@@ -7665,36 +5225,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Obituary, Paul Morphy, New-York Tribune, 11 July 1884, page 2",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83030214/1884-07-11/ed-1/?sp=2"
-      },
-      {
-        "title": "Death of Paul Morphy, The Sun (New York), 11 July 1884, page 3",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83030272/1884-07-11/ed-1/?sp=3"
-      },
-      {
-        "title": "The Romance of New Orleans (1919)",
-        "publisher": "R. H. True and Co., via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/20006638/"
-      },
-      {
-        "title": "The Picayune's Guide to New Orleans (1904), 417 Royal Street",
-        "publisher": "The Picayune, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the iron railing on the balcony of the building across Royal Street. A writer in nineteen nineteen pointed out a monogram twined into that ironwork. It belonged to the Louisiana Bank, which put up this building in eighteen sixteen.\n\nBut the man people came here to think about was not a banker.\n\nPaul Morphy was born in New Orleans in eighteen thirty-seven, the son of a judge. When he was about ten, his father explained to him how the chess pieces move. Within two years the boy was beating the best players in the city. Before he turned thirteen, a famous Hungarian master passing through New Orleans played him three games. The boy won two, and drew the other.\n\nHe went on to Paris and London, and came home the greatest chess player in the world. The city gave him a set of chessmen in gold and silver.\n\nAnd then he stopped.\n\nIn his later years, a newspaper reported, he never played. Now and then friends would coax him to sit down at a board, and in the middle of the game he would suddenly sweep the pieces away, stand up and leave. When the master Steinitz came to New Orleans, people tried several times to bring the two of them together. Morphy would not do it.\n\nHe died in this house in July eighteen eighty-four. He was forty-seven.\n\nThe same report added one more thing. While Steinitz was playing in New Orleans, Morphy followed his games closely in the newspapers.\n\nAnd he criticised the moves.\n",
@@ -7743,36 +5274,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Death of Marie Laveau, reprinted from New Orleans, Omaha daily bee, 22 June 1881, p. 6",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn99021999/1881-06-22/ed-1/?sp=6"
-      },
-      {
-        "title": "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Marie Laveau, the Voudoo Queen",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      },
-      {
-        "title": "Black Magic and Voodoo Still Rife in Louisiana (United Press), The daily independent, Elizabeth City, N.C., 11 February 1937, p. 8",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn91068099/1937-02-11/ed-1/?sp=8"
-      },
-      {
-        "title": "A Voudoo Queen's Grave (from the New York Sun), The morning news, Savannah, 26 June 1898, p. 20",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn86063034/1898-06-26/ed-1/?sp=20"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look through the gate. Somewhere in there is the tomb of Marie Laveau.\n\nStart with what the record says. When she died, in June of eighteen eighty-one, a New Orleans obituary was reprinted as far away as Omaha. It said she was buried at five in the evening in her family tomb in this cemetery, followed by a large crowd, the most prominent and the most humble.\n\nIt called her a nurse. In yellow fever and cholera epidemics, it said, she was always called on, and always went. She sat with condemned prisoners in their last hours.\n\nThe closest it came to anything else was one line. The ignorant, it said, credited her cures to unnatural means.\n\nIt never used the word voodoo.\n\nWithin a couple of decades, the guidebooks had a different woman. A voodoo queen, keeping a sacred serpent in a carved box in her bedroom. They give no source for any of it.\n\nThe legend outgrew the nurse. In nineteen thirty-seven, a wire story reported that the bricks of her crumbling tomb were scratched with crosses, left by people who traced one, said a prayer, and slipped away. People still come hoping for luck. That is a custom built on a legend, not a fact.\n\nThe gate is as close as this story needs to bring you. Please do not add a mark of your own.\n\nThe nurse is in the record. The queen is in the scratches.\n",
@@ -7820,29 +5322,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Creoles of Louisiana (1884), by George W. Cable",
-        "publisher": "Charles Scribner's Sons, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008769/"
-      },
-      {
-        "title": "Vieux Carré, A Creole Neighborhood in New Orleans (Teaching with Historic Places), Map 3 street key",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm"
-      },
-      {
-        "title": "The Picayune's Guide to New Orleans (1904)",
-        "publisher": "The Picayune, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the two street signs on this corner. Bourbon. And Dumaine.\n\nOn this street of all streets, people tend to assume the name has something to do with what is in their glass.\n\nIt doesn't.\n\nWhen French engineers laid out this town in the seventeen-twenties, they drew a grid of streets and gave them names from the very top of French society. George Washington Cable, writing in eighteen eighty-four, listed who was being honoured. The dukes of Orleans, Chartres, Maine and Bourbon. The princes of Conti and Condé. The Count of Toulouse.\n\nSo the grid around you is a kind of family tree of the French court. Orleans Street. Chartres Street. Conti. Toulouse. And Bourbon, for the Duke of Bourbon.\n\nNow look at the other sign again. Dumaine. Say it slowly. Du Maine. On the old French plans of the city, it is written Rue du Maine. The street of the Duke of Maine.\n\nA city guide from nineteen-oh-four put it simply. All through the old French Quarter, it said, the street names suggest the city's royal descent.\n\nThe duke is still up there on the sign.\n\nEverything else on Bourbon Street came later.\n",
@@ -7903,36 +5383,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Girod House, 500-506 Chartres Street, New Orleans, Orleans Parish, LA (HABS LA-9)",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/la0011/"
-      },
-      {
-        "title": "New Orleans As It Was, Episodes of Louisiana Life (1895), by Henry C. Castellanos",
-        "publisher": "L. Graham and Son, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008770/"
-      },
-      {
-        "title": "The Picayune's Guide to New Orleans (1904), The Napoleon House",
-        "publisher": "The Picayune, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      },
-      {
-        "title": "The Romance of New Orleans (1919)",
-        "publisher": "R. H. True and Co., via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/20006638/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look across at the three-storey house on the corner of Chartres and Saint Louis, with iron balconies on both street fronts and an old tile roof.\n\nIt is called the Napoleon House. The story is that it was meant for Napoleon himself.\n\nIn his last years, Napoleon was held prisoner on the island of Saint Helena. In New Orleans there were Frenchmen who still adored him. One of them was Nicholas Girod, a former mayor of the city, who lived in this house.\n\nThe story goes that Girod and his friends paid for a fast ship called the Seraphine, signed on a crew of Baratarian privateers, and planned to sail to the island, take the emperor off by night, and bring him here.\n\nThen word came that Napoleon had died, in May eighteen twenty-one. The ship never sailed.\n\nIs it true? A New Orleans writer in eighteen ninety-five said there could be no doubt the expedition was real. A federal survey in nineteen fifty-five called it a popular legend.\n\nIt is not even clear which house it is. A city guide of nineteen-oh-four gave the name Napoleon House to a different mansion altogether, near Canal Street, and expected it to be torn down that year. And the survey of nineteen fifty-five found two houses on this short stretch of Chartres Street, both going by the name.\n\nThe emperor never came to New Orleans.\n\nBut the city had more than one house ready for him.\n",
@@ -7991,36 +5442,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Picayune's guide to New Orleans (1904)",
-        "publisher": "The Picayune, New Orleans, 1904; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      },
-      {
-        "title": "New Orleans, the place and the people (1895)",
-        "publisher": "Grace King, Macmillan, 1895; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008773/"
-      },
-      {
-        "title": "Creole Food Ways",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/creole-food-ways.htm"
-      },
-      {
-        "title": "Norman's New Orleans and environs (1845)",
-        "publisher": "B. M. Norman, New Orleans, 1845; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008776/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Walk in under the long roof of the market and look along the line of columns.\n\nBefore there was any roof here, there was the open levee, just downriver of the old parade ground. People laid out what they had to sell on the ground. Vegetables, fruit, game, skins, herbs, baskets. Hunters and trappers. Black vendors. Native traders. In the Spanish years a butcher's shed went up, and the market grew along the river from there.\n\nOne thing kept arriving, long after the sheds went up.\n\nAt the start of the twentieth century, Choctaw women still came here twice a week from their settlement at Bayou Lacombe, across Lake Pontchartrain. They crossed the lake by steamer, walked from the lakeshore to this market, and sat with bundles of herbs, baskets, and one thing above all.\n\nDried sassafras leaves, pounded into a powder. Filé.\n\nIt was a Native food first. Creole cooks took it up to thicken their gumbo, and kept it. A guidebook from nineteen oh four says the Choctaw sellers here always found a ready sale.\n\nSo if your gumbo in this city comes with filé, that powder is a Native food, and for a long time, Choctaw women sold it right here.\n",
@@ -8078,29 +5500,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "New Orleans As It Was, Episodes of Louisiana Life (1895), by Henry C. Castellanos, chapter A Tale of Slavery Times",
-        "publisher": "L. Graham and Son, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008770/"
-      },
-      {
-        "title": "Retrospect of Western Travel, volume one (1838), by Harriet Martineau",
-        "publisher": "Saunders and Otley, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01027893/"
-      },
-      {
-        "title": "The Picayune's Guide to New Orleans (1904), 1140 Royal Street",
-        "publisher": "The Picayune, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look across at the big house on the corner of Royal Street.\n\nOn the morning of the tenth of April, eighteen thirty-four, flames broke out of it. The fire had started in the kitchen.\n\nIt was started on purpose. A woman held captive in this house told the mayor afterwards that she had set it herself. It was, she said, the only way left to end what she and the others were suffering. The English writer Harriet Martineau, who heard the story in this city a few years later, says it was the cook, kept chained within a few yards of the kitchen fire.\n\nNeighbours and firemen ran in. They forced open doors that had always been kept locked, and behind them they found seven people in chains, starved, covered in wounds. The editor of the city newspaper, the Bee, was there. He wrote that he saw where the collars and manacles had cut into their flesh.\n\nThey were carried through the streets to the mayor's office, and their irons were struck off. At least two thousand people came to see them that day.\n\nThe woman who held them, Madame Lalaurie, never answered for it. She left in her carriage, reached the lake, and escaped by boat to Mobile and then to France. A crowd tore her house apart.\n\nNeither of the old accounts gives the name of the woman who lit that fire.\n\nWhat was being done in this house came out because she set it on fire.\n",
@@ -8149,29 +5549,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "General Butler in New Orleans (1864)",
-        "publisher": "James Parton, Mason Brothers, 1864; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/32008202/"
-      },
-      {
-        "title": "A history of Louisiana (1905)",
-        "publisher": "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/34036146/"
-      },
-      {
-        "title": "The Picayune's guide to New Orleans (1904)",
-        "publisher": "The Picayune, New Orleans, 1904; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the roof of the Mint, above the columns.\n\nSunday the twenty-seventh of April, eighteen sixty-two. A Union fleet had fought its way up the river, and the city had nothing left to resist it with. The mayor refused to raise the United States flag himself. So the navy sent a party ashore to raise one here.\n\nThey put it up at about eight in the morning, and went back to their ship. They left no guard. Instead, guns up in the rigging of the warship lying off the Mint were aimed at the flagstaff, with orders to fire on anyone who touched it.\n\nAt eleven, the crews gathered on deck for prayers.\n\nAbout twenty minutes in, the guns went off. Men were on the roof. They tore the flag down and got away with it.\n\nAccounts disagree about who reached it first. They agree on who ended up with it. William Mumford.\n\nWhen General Benjamin Butler took command of the city a few days later, Mumford was arrested and tried for treason by a military commission. His wife and three children knelt in front of Butler to beg for his life.\n\nOn the seventh of June, he was hanged on a scaffold built in front of the Mint, near where you are standing.\n\nButler's side called it justice. Mumford's side called it murder, and him a martyr.\n\nThe flag he pulled down had been flying for a little over three hours.\n",
@@ -8216,29 +5594,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Rampart Street and its vicinity: the Old Basin",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      },
-      {
-        "title": "The Picayune's guide to New Orleans (1900), the Old Basin",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/00001333/"
-      },
-      {
-        "title": "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), North Rampart from Canal to Esplanade",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/13004346/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the street sign. Basin Street.\n\nThere is no basin here now. A little over a century ago, there was.\n\nTurn the corner at St. Louis Street, a guidebook of nineteen hundred told its readers, and the Old Basin bursts upon the view. A square of water at the end of a canal, with oyster luggers and charcoal schooners tied up along its banks, unloading.\n\nThe canal ran from here out to Bayou St. John, and through the bayou boats could reach Lake Pontchartrain. A schooner could come in off the lake and finish its trip close under the old city ramparts.\n\nIt was a Spanish governor's project. The Baron de Carondelet had it dug in the seventeen-nineties, to drain the swamps behind the city and to bring trade to its back door. The digging was done by gangs of enslaved men, lent free of charge by the city's wealthy.\n\nBy nineteen hundred and four, the guidebooks noted that a railway company had bought the land along the canal, for car yards and warehouses.\n\nThe water is gone, and so are the schooners. The street kept the name.\n",
@@ -8297,36 +5653,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "New Orleans, the place and the people (1895)",
-        "publisher": "Grace King, Macmillan, 1895; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008773/"
-      },
-      {
-        "title": "A history of Louisiana (1905)",
-        "publisher": "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/34036146/"
-      },
-      {
-        "title": "Norman's New Orleans and environs (1845)",
-        "publisher": "B. M. Norman, New Orleans, 1845; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008776/"
-      },
-      {
-        "title": "Presbytere, Jackson Square, New Orleans (HABS LA-18-5), written historical and descriptive data",
-        "publisher": "Historic American Buildings Survey, National Park Service; Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/la0008/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look through the railings into the garden behind the cathedral.\n\nAround seventeen eighty-nine, a Spanish Capuchin friar named Antonio de Sedella called on the governor of this colony, Esteban Miró. He showed him a commission. He had been sent to set up the Holy Office of the Inquisition in New Orleans.\n\nHis preparations were complete, he said. Some night soon, he would send for soldiers to help him make the arrests.\n\nThe governor was polite. Then he made preparations of his own.\n\nThe next night there was a heavy knocking at the friar's door. He opened it to an officer and a file of grenadiers. He thanked them for coming so promptly, and told them he did not need them yet.\n\nHe was told he was under arrest. The next day he was on a ship for Cádiz.\n\nMiró wrote to Madrid that the very word Inquisition, spoken in New Orleans, could drive people out of the colony.\n\nAnd then the friar came back.\n\nHe came back as Père Antoine, the parish priest of this cathedral, for nearly fifty years. A guidebook from eighteen forty-five says he was supposed to have married or buried nearly half the people of the place. When a church official tried to suspend him, his congregation left the cathedral and ran to his door.\n\nHe lived in a little cabin in the alley back here. He is buried at the foot of the altar.\n\nNew Orleans threw out the inquisitor. Then it kept the priest for half a century.\n",
@@ -8387,22 +5714,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Picayune's Guide to New Orleans (1904), The Oldest Building in Louisiana",
-        "publisher": "The Picayune, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      },
-      {
-        "title": "Archbishopric, 1114 Chartres Street, New Orleans, Orleans Parish, LA (HABS LA-18-2)",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/la0106/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look through the gate in the wall along Chartres Street.\n\nThe building behind it is two storeys of plastered brick. Its middle section steps forward under a triangular pediment, and a steep slate roof sits over the whole thing.\n\nIt was built for the Ursuline nuns. They lived behind this wall until eighteen twenty-four, when they moved to a new convent further downriver. A city guide of nineteen-oh-four called this the oldest building in Louisiana.\n\nThen the empty convent found a tenant nobody would have predicted.\n\nIn eighteen thirty-one, the State of Louisiana leased the building from the nuns. The state legislature held its sessions inside these walls. For a while, the laws of Louisiana were argued over in a house built for nuns.\n\nIt did not last. The lease ran out, and the nuns gave the building to the archbishop of New Orleans. For most of the rest of the century, it was where the archbishops lived.\n\nThat same guide told its readers to look for one thing inside. The staircase. Each step, it said, was a single massive piece of timber, worn down by the feet of many generations.\n\nMost of those feet belonged to nuns and priests. For one short stretch, some of them belonged to politicians.\n",
@@ -8442,36 +5754,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Norman's New Orleans and environs (1845)",
-        "publisher": "B. M. Norman, New Orleans, 1845; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008776/"
-      },
-      {
-        "title": "New Orleans, the place and the people (1895)",
-        "publisher": "Grace King, Macmillan, 1895; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008773/"
-      },
-      {
-        "title": "The Picayune's guide to New Orleans (1904)",
-        "publisher": "The Picayune, New Orleans, 1904; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      },
-      {
-        "title": "A history of Louisiana (1905)",
-        "publisher": "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/34036146/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the three spires on the front of the cathedral.\n\nThey are younger than they look. The front you are facing was remodelled around eighteen fifty, when steeples were raised on the old towers and the portico was added.\n\nThe church before that was paid for by one man.\n\nIn seventeen eighty-eight, fire took the old parish church along with most of the town. Don Andrés Almonester y Roxas, a Spaniard who had grown very rich in this colony, offered to build a new one at his own expense.\n\nHe asked for something in return. Masses for his soul, said for ever.\n\nA guidebook from eighteen forty-five says the bargain was being kept. Every Saturday evening, it says, at sunset, the bell tolled for the founder.\n\nHe died in seventeen ninety-eight and was buried in front of the altar. A writer in the eighteen nineties described his name, his coat of arms and his motto, cut into the stone over him.\n\nThe building has been remade around him since. The steeples are new. The portico is new.\n\nHe is still inside, under the floor, at the front.\n\nAnd by his own arrangement, someone is meant to be praying for him.\n",
@@ -8517,29 +5800,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), Part III: Canal Street",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/13004346/"
-      },
-      {
-        "title": "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Chapter XI: Canal Street",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      },
-      {
-        "title": "Jazz Origins in New Orleans",
-        "publisher": "National Park Service, New Orleans Jazz National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/jazz/learn/historyculture/history_early.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the strip down the middle of Canal Street, where the streetcar tracks run.\n\nAnywhere else it would be a median. In New Orleans it is the neutral ground.\n\nStart with the street's name. Canal Street really did have a canal, of a sort. A narrow, crooked stream once ran here, and the Spanish used it as a moat in front of the city wall. When Americans began settling upriver, they filled their lots with earth dug from its banks, and it grew into a straight, deep ditch. Iron posts and chains along the edge kept people from falling in. As far as anyone knows, nothing ever sailed on it.\n\nBy eighteen thirty-eight the ditch had been filled in as far as Claiborne Street, and the car tracks were laid on the ground it left behind. The guidebooks called that ground the neutral ground.\n\nThey also called Canal Street the line between two cities. The French and Creole town downriver. The American town upriver. A guidebook of nineteen hundred and four said this street divided New Orleans into two phases of life, two styles of architecture, two forms of civilization.\n\nThe old guidebooks never stop to explain the word neutral. Maybe it did not need explaining.\n\nStand here, in the middle of the line between two cities, and decide for yourself.\n",
@@ -8585,22 +5846,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The journal of Latrobe; being the notes and sketches of an architect, naturalist and traveler in the United States from 1796 to 1820 (New York, D. Appleton, 1905), pp. 179-182",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/05039052/"
-      },
-      {
-        "title": "Jazz Origins in New Orleans",
-        "publisher": "National Park Service, New Orleans Jazz National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/jazz/learn/historyculture/history_early.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look out across this open square.\n\nOne Sunday afternoon early in eighteen nineteen, an architect named Benjamin Latrobe set out from the old town for a walk along a canal. He went up St. Peter Street, toward the common ground at the back of the city, and he heard something he could not place.\n\nHe thought it was a horse mill. Horses, tramping round and round on a wooden floor.\n\nIt was people. Five or six hundred of them, he reckoned, gathered in an open space at the edge of the common. People would come to call that space Congo Square.\n\nThey stood in circles, and inside each circle was a ring of dancers, the largest not ten feet across.\n\nHe wrote down what he saw. An old man sitting astride a drum, beating it with the edge of his hand, with incredible quickness. A stringed instrument with a gourd for a body and a small carved figure of a seated man at the top of its neck, played by a man who looked eighty or ninety years old. Women answering the music in two notes. A man singing in a language that was not French.\n\nHe was told they met here every Sunday afternoon. He did not like what he heard, and his journal says so in ugly terms.\n\nThen he walked on, about a mile along the canal. He came back after sunset, near the same spot.\n\nThey were still playing.\n",
@@ -8651,29 +5897,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Historic Opera House in New Orleans Burns, Evening Star (Washington), 4 December 1919, page 2",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045462/1919-12-04/ed-1/?sp=2"
-      },
-      {
-        "title": "Famous French Opera House at New Orleans Burned, New-York Tribune, 5 December 1919, page 10",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83030214/1919-12-05/ed-1/?sp=10"
-      },
-      {
-        "title": "The Picayune's Guide to New Orleans (1904), French Opera House",
-        "publisher": "The Picayune, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand at the corner of Bourbon and Toulouse, and look for an opera house.\n\nThere isn't one. For sixty years, there was.\n\nThe French Opera House opened here in December eighteen fifty-nine. A city guide from nineteen-oh-four counted about two thousand eight hundred seats, in four tiers, and every tier had its own French name. The gallery, at the top, was popularly called le paradis. Paradise.\n\nDuring the Civil War the house went dark. In eighteen sixty-six it was ready to open again, and its new director was sailing from France with a whole company of singers, aboard a ship called the Evening Star.\n\nThe ship went down. The entire company was lost.\n\nThe house opened anyway, and kept going for another half century.\n\nThen, early on the fourth of December, nineteen nineteen, a fire started in a restaurant at the front of the building. Within hours the French Opera House had burned to the ground. Its season had opened on Armistice night, barely three weeks before. The management said it was the most successful season the house had ever had.\n\nSo look up, above the corner, into the empty air.\n\nThat is about where Paradise used to be.\n",
@@ -8723,22 +5947,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Presbytere, Jackson Square, New Orleans (HABS LA-18-5), written historical and descriptive data",
-        "publisher": "Historic American Buildings Survey, National Park Service; Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/la0008/"
-      },
-      {
-        "title": "The Presbytere, New Orleans, Louisiana",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/the-presbytere-new-orleans-louisiana.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the building to the right of the cathedral. It is a near twin of the Cabildo on the other side. Arches below, arches above.\n\nIt was built to be the priests' house. The name says so. The Presbytère.\n\nNo priest ever lived in it.\n\nThe rich Spaniard who paid for the cathedral started this building in the seventeen nineties, and got it as far as the first row of arches. Then, in seventeen ninety-eight, he died.\n\nAnd it stopped. For years it was just the ground floor, roofed over with boards and rented out.\n\nThe church wardens finally finished it in eighteen thirteen. By then New Orleans belonged to the United States. They let it to shopkeepers, and then to the courts, because the rent was useful. The parish priest went on living in a small frame house round the back.\n\nIn the nineteen thirties, workmen stripped the stucco off the walls, and found the pause written in the brickwork. At the sills of the upper windows, the bricks and the mortar change completely.\n\nLook at those upper window sills now. The join is covered again, but that line is about fifteen years of nothing.\n\nThe priests' house became a courthouse, and later a museum. It has been a lot of things.\n\nIt was never a home.\n",
@@ -8788,29 +5997,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Picayune's guide to New Orleans (1904)",
-        "publisher": "The Picayune, New Orleans, 1904; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      },
-      {
-        "title": "New Orleans, the place and the people (1895)",
-        "publisher": "Grace King, Macmillan, 1895; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008773/"
-      },
-      {
-        "title": "Vieux Carré: A Creole Neighborhood in New Orleans (Teaching with Historic Places)",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand at the rail and look at the water. Then turn round and look back at the cathedral.\n\nTo get here from the square, you walked uphill. You probably did not notice. A guidebook from nineteen oh four made the same point. The slope starts a long way back, it said, and rises so gently that you cannot feel it.\n\nThat slope is the levee. A great bank of earth between the city and the Mississippi, added to again and again as the years went on.\n\nBecause when the river floods, it rises far above the level of the streets behind you. The cathedral you are looking at sits lower than the water in front of you can reach.\n\nA New Orleans writer in the eighteen nineties described the yellow floods rising high above the land, threatening to tear the levees like cobwebs.\n\nNow look left and right along the bank. The river does not run straight past the old city. It bends around it.\n\nThe same writer said the river had shaped its banks here into the edges of the moon in its first quarter.\n\nThat is the crescent. That is why it is the Crescent City. Not a nickname somebody chose. A description of the water you are standing above.\n",
@@ -8849,29 +6036,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Madame John's Legacy, 632 Dumaine Street, New Orleans, Orleans Parish, LA (HABS LA-39, with addendum)",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/la0023/"
-      },
-      {
-        "title": "Old Creole Days (1890 edition), by George W. Cable, story 'Tite Poulette",
-        "publisher": "Charles Scribner's Sons, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04015080/"
-      },
-      {
-        "title": "The Picayune's Guide to New Orleans (1904)",
-        "publisher": "The Picayune, via the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look across at the house set up high on its brick ground floor, with a long wooden gallery across the front, and a roof that sweeps down steeply and then flattens out over the gallery, like the brim of a hat.\n\nIt is called Madame John's Legacy.\n\nMadame John never lived here. She never lived anywhere.\n\nShe is a character in a story by the New Orleans writer George Washington Cable. In it, a gentleman named John, about to die, gives his house to the woman who has looked after him, and to her baby daughter. Cable describes it as a frame house with a deep front gallery, the roof running out over it. She sells it, puts the money in a bank, and the bank fails.\n\nSomewhere along the way, the story attached itself to this house. By nineteen-oh-four a city guide was pointing visitors here as the house that John left behind. The name stuck.\n\nThe real story of this ground, according to the federal survey of the building, belongs to someone else. Her name was Elizabeth Real. Her husband, a ship's captain, held this lot in the seventeen-twenties. He was killed at Natchez in seventeen twenty-nine. She married the innkeeper next door, outlived him too, and kept this property in her own hands for about fifty years.\n\nWhen she made her will in seventeen sixty-nine, she was described as ill in body because of her great age, but sound in spirit.\n\nThe house in front of you came after her. A building contract signed weeks after the great fire of seventeen eighty-eight describes a house that matches it.\n\nSo the name on this house belongs to a woman somebody made up. The ground under it belonged to one who was very real.\n",
@@ -8921,43 +6086,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Cabildo, 711 Chartres Street, New Orleans (HABS LA-18-4), written historical and descriptive data",
-        "publisher": "Historic American Buildings Survey, National Park Service; Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/la0007/"
-      },
-      {
-        "title": "New Orleans, the place and the people (1895)",
-        "publisher": "Grace King, Macmillan, 1895; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01008773/"
-      },
-      {
-        "title": "A history of Louisiana (1905)",
-        "publisher": "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/34036146/"
-      },
-      {
-        "title": "Presbytere, Jackson Square, New Orleans (HABS LA-18-5), written historical and descriptive data",
-        "publisher": "Historic American Buildings Survey, National Park Service; Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/la0008/"
-      },
-      {
-        "title": "Louisiana Purchase Transfer Document",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/louisiana-purchase-transfer-document.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Face the Cabildo, the arcaded building to the left of the cathedral. Look up at the triangle above its centre arches. There is an eagle carved in it.\n\nThat eagle was not there yet on the day that matters.\n\nIn November eighteen oh three, Louisiana was still Spanish. Spain had already agreed to hand it back to France, and the city already knew that France had sold it on to the United States.\n\nOn the thirtieth of November, in the council chamber upstairs, the Spanish governor handed the colony to a French official named Laussat. Out in this square, the Spanish flag came down and the French tricolour went up.\n\nIt stayed up for twenty days.\n\nOn the twentieth of December, the American commissioners rode into the square at the head of their troops. They went up to the same building, and Laussat gave them the keys of the city. Then they all walked out onto the gallery up there to watch the flags change again.\n\nA guard of about fifty old French soldiers had kept watch over their flag for those three weeks. As it came down, they took it in their arms, and marched away with it in silence.\n\nThe eagle was carved into that triangle eighteen years later. By then, nobody needed telling whose building it was.\n",
@@ -9006,50 +6135,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Picayune's guide to New Orleans (1904)",
-        "publisher": "The Picayune, New Orleans, 1904; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/04005555/"
-      },
-      {
-        "title": "General Butler in New Orleans (1864)",
-        "publisher": "James Parton, Mason Brothers, 1864; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/32008202/"
-      },
-      {
-        "title": "New Orleans daily crescent, February 9, 1856: programme for the inauguration of Clark Mills' equestrian statue of Andrew Jackson",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn82015753/1856-02-09/ed-1/?sp=2"
-      },
-      {
-        "title": "The Feliciana Democrat, February 16, 1856: Inauguration of Jackson's Statue",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn88067030/1856-02-16/ed-1/?sp=3"
-      },
-      {
-        "title": "Houma Ceres, March 20, 1856: The Inauguration of the Statue",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83026391/1856-03-20/ed-1/?sp=3"
-      },
-      {
-        "title": "A history of Louisiana (1905)",
-        "publisher": "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/34036146/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Walk to the statue's granite base and find the line cut into it. The Union must and shall be preserved.\n\nNow look up at the man on the horse. Andrew Jackson, who defended this city against the British in eighteen fifteen.\n\nThe statue was unveiled here on the ninth of February, eighteen fifty-six. The square was packed with soldiers, families and children. People crowded the balconies of the red brick buildings on either side. When the sculptor, Clark Mills, pulled the white cover away, a salute of a hundred guns went off.\n\nThe words on the base were not there that day.\n\nSix years later, Louisiana had left the Union, and a Union fleet came up the river and took New Orleans. The general sent to govern the city was Benjamin Butler. Much of the city came to hate him.\n\nButler had that sentence cut deep into the granite under Jackson's horse. His admiring biographer said it was the motto the base had been meant to carry all along.\n\nSo the city's own hero, in the middle of the city's own square, was made to say the one thing the city least wanted to hear, in the voice of the army that had taken it.\n\nNobody ever chiselled it off.\n",
@@ -9089,26 +6175,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.85,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Andrew Phillip Cunanan — Ten Most Wanted Fugitives case record",
-        "publisher": "Federal Bureau of Investigation",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      },
-      {
-        "title": "Incident and investigative record, 1116 Ocean Drive, 15 July 1997",
-        "publisher": "Miami Beach Police Department",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      },
-      {
-        "title": "Medical examiner's report, Gianni Versace",
-        "publisher": "Miami-Dade County Medical Examiner",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "You are outside a café that has been on this corner since the middle of the eighties.\n\nIn the summer of nineteen ninety-seven a man came down here most mornings from a house\nthree blocks north. He sat outside. He bought a stack of magazines. The staff knew him by\nsight, the way staff know a regular.\n\nOn the fifteenth of July he did exactly that, and then he walked home.\n\nHis name was Gianni Versace, and this was the last ordinary hour of his life.\n\nIt is four blocks north along the beach side. About six minutes.\n\nTake it slowly. He did.\n",
@@ -9159,15 +6226,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.9,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "What in the Pearl? A History of NYC's Oysters",
-        "publisher": "Downtown Alliance",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain",
-        "url": "https://downtownny.com/news/oyster-history-downtown/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "You are standing on a street that was paved with rubbish.\n\nLook at the name. Pearl Street. The Dutch called it that because the ground here was\nwhite. Not with stone, but with oyster shells. Millions of them, crushed flat and\ntrodden down until they made a road.\n\nFour hundred years ago, the water around this island held about half of all the oysters\nin the world. Three hundred and fifty square miles of oyster beds. Some of the oysters\nwere as big as a dinner plate.\n\nThere were so many that they were cheap, so everybody ate them. Not in restaurants. From\ncarts in the street, the way you might buy a hot dog now. You ate the oyster, and you\nthrew the shell on the ground.\n\nEnough people did that, for enough years, that the shells became the street.\n\nOne more thing. The Dutch kept opening them to look for pearls. They never found a single\none. New York oysters don't make them.\n",
@@ -9206,29 +6265,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Hope Hose Company No. 6 & Fellowship Engine Company No. 29 (New Market, Head House), Second Street between Pine & Lombard Streets, Philadelphia (HABS PA-1351)",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/pa0819/"
-      },
-      {
-        "title": "Market Street, Philadelphia; the most historic highway in America, its merchants and its story, by Joseph Jackson (1918)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/18015276/"
-      },
-      {
-        "title": "Picture of Philadelphia (1835), South Second Street Market",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01010570/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look down the middle of Second Street. The road splits around a long, open shed on brick pillars. And at this end of it, facing Pine Street, stands a small building of its own.\n\nIt looks like part of the market. The federal building survey records who actually used it. Not traders. Firemen. Two companies, the Hope Hose Company number six, and the Fellowship Engine Company number twenty-nine.\n\nThe market behind it is the New Market. The first section, running south from Pine down the middle of Second, was built in seventeen forty-five, because people in this end of town complained that the old market was too far away. They did not want to cross Dock Creek to reach it.\n\nBy the eighteen thirties, a city guide called it the second market in Philadelphia, for its age and for its food, and it reached all the way to South Street.\n\nPhiladelphia's main street once had sheds like this down its middle too. So many that people stopped calling it High Street and called it Market Street, and in eighteen fifty-three the city made the name official.\n\nSix years later, the sheds on Market Street came down.\n\nSecond Street kept one. This is what Market Street used to look like.\n",
@@ -9268,29 +6305,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Christ Church",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/000/christ-church.htm"
-      },
-      {
-        "title": "Philadelphia, guide to the city (Rotary Club of Philadelphia, 1920)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/20012885/"
-      },
-      {
-        "title": "A Guide to Philadelphia (Pennsylvania Society for Promotion of Arts and Sciences, 1935)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/item/a36000831/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the steeple of Christ Church.\n\nIt went up in the seventeen fifties, and from then on it could be picked out from all over the colonial city. A Philadelphia guidebook from nineteen twenty calls it the highest point in town at the time.\n\nSteeples are expensive. A congregation usually builds one slowly, out of collections and bequests and patience.\n\nThis one was paid for with a lottery.\n\nTickets were sold to the public, and the money went into the tower and the spire. The tickets themselves came off the press in Benjamin Franklin's printing office. The same guidebook says Franklin sat on the committee that built the spire.\n\nSo when you look up at the landmark of colonial Philadelphia, you are looking at a great many losing tickets.\n",
@@ -9330,22 +6345,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Franklin Court",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/places-franklincourt.htm"
-      },
-      {
-        "title": "Visiting the Franklin Court Courtyard",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/planyourvisit/franklincourtcourtyard.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand in the courtyard and look up at the steel frame. It is the outline of a house, drawn in the air, with nothing filled in.\n\nBenjamin Franklin's house stood here. It was large for the city, and unusual, set back from Market Street in a garden court. Franklin died here in seventeen ninety. Twenty-two years later his heirs tore it down. The land had become too valuable to keep one house on it.\n\nWhen the Park Service investigated the court, archaeologists found the outline of the house and its cellar. But nobody could find enough evidence of what the house had actually looked like.\n\nSo the architects decided not to guess. They built a frame to the measurements recorded in Franklin's own property insurance, and left it empty.\n\nLook down through the viewing portals near your feet. You can see what is left of his cellar kitchen.\n\nEverything above that is exactly as much as anyone knows.\n",
@@ -9385,29 +6385,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "City Tavern",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/city-tavern.htm"
-      },
-      {
-        "title": "Independence National Historical Park has issued a Request for Proposals (RFP) to lease, operate, and maintain City Tavern",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/news/independence-national-historical-park-has-issued-a-request-for-proposals-rfp-to-lease-operate-and-maintain-city-tavern.htm"
-      },
-      {
-        "title": "Letters of Delegates to Congress: John Adams' Diary, August 29, 1774 to September 5, 1774",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/76002592_01_0001/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This is City Tavern, on the corner of Second and Walnut. Look at the brickwork. It is younger than it looks.\n\nThe tavern the founders knew was built in seventeen seventy-three and torn down in eighteen fifty-four. The Park Service built this one in nineteen seventy-five, as a copy.\n\nThe original was still new in the late summer of seventeen seventy-four, when delegates to the first Continental Congress began arriving in town, colony by colony.\n\nThey did not wait for anything official. On the first of September, John Adams wrote in his diary, all the gentlemen of the Congress who had arrived met at the new City Tavern and spent the evening together. Twenty-five had come. Virginia, North Carolina, Maryland and New York City were still on the road.\n\nFour days later they met here again, at ten in the morning, and walked up the street to choose a room.\n\nSo before the Continental Congress had a president, a secretary or a place to sit, it had a tavern. This corner.\n",
@@ -9447,29 +6425,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Dolley Todd House",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/places-dolleytoddhouse.htm"
-      },
-      {
-        "title": "Visiting the Dolley Todd House",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/planyourvisit/dolleytoddhouse.htm"
-      },
-      {
-        "title": "Life and letters of Dolly Madison (Allen C. Clark, 1914)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/14014620/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the brick house on the corner of Fourth and Walnut. It is a modest house, a lawyer's house. For two years it was home to John Todd, his young wife Dolley, and their two small sons.\n\nIn the summer of seventeen ninety-three, yellow fever came to Philadelphia. Thomas Jefferson wrote that about eleven people a day were dying, and that the doctors saw no way of stopping it.\n\nJohn Todd took Dolley and the boys out of the city, to Gray's Ferry on the Schuylkill. Then he went back. He had clients who needed him. In the city he found his own father and mother sick, and both of them died.\n\nHe came back to his wife carrying the fever. The family remembered him saying he could feel it in his veins, but he must see her once more. Within hours he was dead. The younger baby died too.\n\nDolley survived. Not long after, she married James Madison, who would become the fourth President.\n\nBut first, the city directory for seventeen ninety-four lists the family's address under a new name.\n\nDorothy Todd, widow.\n",
@@ -9519,22 +6475,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Pennsylvania Hospital, Eighth and Ninth, Pine and Spruce Streets, Philadelphia (HABS PA-1123), architectural data form and photo captions",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/pa1040/"
-      },
-      {
-        "title": "The Book of Philadelphia, by Robert Shackleton (1918), chapter XXVI, Some Benefactions, Old and New",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/19000869/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look through the iron fence on Pine Street. On the lawn there is a small statue of William Penn, and behind him a long building of brick and marble, with an eight-sided cupola on each wing.\n\nThis is Pennsylvania Hospital. Benjamin Franklin and a doctor named Thomas Bond founded it in seventeen fifty-one, and it is the oldest hospital in the United States. The east wing went up in the seventeen fifties. Franklin wrote the words for its cornerstone. Piously founded, they say, for the relief of the sick and miserable.\n\nA hospital needs money. This one took it from nearly everyone. Private citizens gave. The preacher George Whitefield sent a large sum.\n\nThen, in seventeen fifty-nine, a company of actors put on Hamlet for the hospital's benefit.\n\nThat was thought quite shocking. Plays did not have the approval of the best people, and the managers had to decide whether they could take money earned on a stage.\n\nThey decided the hospital's charter gave them no right to refuse it.\n\nHamlet brought in forty-seven pounds, two shillings and sixpence.\n\nLook at the building again. The first hospital in the country. And a small part of its bills was paid by the Prince of Denmark.\n",
@@ -9580,43 +6521,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Transcript of Benjamin Franklin, Epitaph (Benjamin Franklin: In His Own Words)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/exhibits/franklin/bf-trans61.html"
-      },
-      {
-        "title": "Epitaph (Benjamin Franklin: In His Own Words)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/exhibits/franklin/franklin-epitaph.html"
-      },
-      {
-        "title": "Life and times of Benjamin Franklin, volume 2, page 591 (James Parton, 1882), quoting the codicil to Franklin's will",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/09019866/"
-      },
-      {
-        "title": "Philadelphia, guide to the city (Rotary Club of Philadelphia, 1920)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/20012885/"
-      },
-      {
-        "title": "Christ Church Burial Ground",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/000/christ-church-burial-ground.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look through the iron bars at the corner of Fifth and Arch. In the corner of the burial ground nearest you, Benjamin Franklin and his wife Deborah lie under a plain marble slab.\n\nWhen Franklin was twenty-two, a young printer, he wrote his own epitaph. It is a joke about his trade.\n\nThe body of B. Franklin, printer, like the cover of an old book, its contents torn out, and stript of its lettering and gilding, lies here, food for worms. But the work shall not be wholly lost. For it will, as he believed, appear once more, in a new and more perfect edition, corrected and amended by the author.\n\nHe liked it enough to copy it out for friends for the rest of his life.\n\nIt is not on the stone.\n\nAt eighty-two, adding to his will, he asked for something else. A marble stone, six feet long and four feet wide, plain, with only a small moulding round the edge. Two names, Benjamin and Deborah Franklin. And a year.\n\nFor the year he wrote one, seven, eight, and then a dash.\n\nHe knew the century and the decade. Somebody else had to finish the line.\n",
@@ -9662,29 +6567,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "U.S.S. Olympia, Penn's Landing, 211 South Columbus Boulevard (HAER PA-428), written historical and descriptive data",
-        "publisher": "Library of Congress, Historic American Engineering Record",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/pa3529/"
-      },
-      {
-        "title": "Evening Star (Washington, D.C.), November 9, 1921, page 1",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045462/1921-11-09/ed-1/?sp=1"
-      },
-      {
-        "title": "Time Will Not Dim the Glory of Their Deeds: President Dwight D. Eisenhower and the Tomb of the Unknown Soldier",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/time-will-not-dim-the-glory-of-their-deeds-president-dwight-d-eisenhower-and-the-tomb-of-the-unknown-soldier.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the old cruiser at the pier, and find her stern, the back end of the ship.\n\nIn October nineteen twenty-one, the Olympia took on a coffin at Le Havre, in France. Inside was an American soldier killed in the First World War, whose name nobody would ever know. He was going home to be buried at Arlington as the Unknown Soldier.\n\nThe crew had a problem. The casket could not go below. No hatch on the ship was large enough to pass it through without tipping it on end. So it was secured on deck, at the stern, and later moved up onto the after signal bridge.\n\nNear the Azores the ship ran into a storm so violent that the captain feared she might capsize. He asked the chaplain to pray. The men off watch gathered in the mess hall, holding on to the stanchions as she rolled, and prayed that the soldier high above them would get home.\n\nHe did. On the ninth of November the Olympia came up the Potomac with her flag at half mast, and the guns along the river fired salutes as she passed.\n\nHe crossed the whole Atlantic out in the weather, rather than be carried below standing on his end.\n",
@@ -9734,29 +6617,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Free Quaker Meeting House",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/places-freequaker.htm"
-      },
-      {
-        "title": "Free Quakers Meetinghouse, 500 Arch Street, Philadelphia (HABS PA-1120)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/pa0762/"
-      },
-      {
-        "title": "Fighting Quakers, by Henry Longcope. Evening Public Ledger (Philadelphia), March 26, 1918, page 12",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83045211/1918-03-26/ed-1/?sp=12"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand on Arch Street and look up at the side of this small brick meeting house, high under the eaves. There is a stone tablet set into the wall.\n\nIt says the house was erected by general subscription, for the Free Quakers, in seventeen eighty-three. Then it gives a second date. Of the Empire, eight.\n\nQuakers do not fight. During the Revolution most Philadelphia Friends would not take up arms, pay war taxes, or swear an oath of allegiance. Some members broke with that. They served in the army, sat on the committee of safety, took seats in the legislature.\n\nThe Society of Friends disowned them. Read them out of meeting, as it was called.\n\nSo they started their own. They called themselves the Free Quakers, and people called them the Fighting Quakers. They paid for this house by subscription, and one of the people who gave was Benjamin Franklin, who was not a Quaker at all.\n\nAs for the Empire. A Philadelphia newspaper told a story about it in nineteen eighteen. When the stone was being set, someone asked one of the Free Quakers what the words meant. I tell thee, friend, he is supposed to have said, it is because our country is destined to be the great empire over all the world. That is the story. Nobody recorded the conversation at the time.\n\nAfter the war, some of the fighters made their peace with their old meetings and went back. By the eighteen thirties, services here had stopped.\n\nThey dated their building from the birth of a country. The country lasted. The congregation did not.\n",
@@ -9797,29 +6658,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "President's House Site: Enslaved People in the Washington Household",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/enslaved-people.htm"
-      },
-      {
-        "title": "The President's House Site: Presidents Washington and Adams",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/the-presidents-house-washington-and-adams.htm"
-      },
-      {
-        "title": "Visiting the President's House Site: From Enslavement to Emancipation",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/planyourvisit/presidentshousesite.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "You are standing on the site of the President's House. The building itself was demolished long ago, but its real foundations are still here to see, found by archaeologists in two thousand seven.\n\nGeorge Washington lived here from seventeen ninety to seventeen ninety-seven. His household was about thirty people. Nine of them, at one time or another, were enslaved Africans brought up from Mount Vernon. Their names are memorialized here.\n\nFind the name Ona Judge.\n\nShe was Martha Washington's personal maid, and a skilled seamstress. Pennsylvania law said that an enslaved person held in the state for six months could claim freedom. So the Washingtons kept sending the people they enslaved back to Virginia before the six months ran out.\n\nIn seventeen ninety-six, Ona Judge walked out of this house and did not come back.\n\nShe reached Portsmouth, New Hampshire, where someone recognised her. Washington, still president, wrote to the customs collector there and asked him to seize her and send her back. The collector talked with her, and declined.\n\nTwo years later Washington's nephew went north to try again. Over dinner he mentioned the plan to the governor of New Hampshire. The governor sent her a warning, and she got away again, with her child.\n\nWashington died in seventeen ninety-nine. Ona Judge lived free in New Hampshire until eighteen forty-eight.\n\nShe outlived the man who was looking for her by almost fifty years.\n",
@@ -9866,29 +6705,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "landmark-visible",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The New Public Buildings, Penn Square, Broad and Market Streets, Philadelphia (HABS PA-1530), written historical and descriptive data, prepared 16 November 1981",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/pa1054/"
-      },
-      {
-        "title": "Street-level view of Philadelphia, Pennsylvania's, iconic City Hall, above which stands perhaps the city's best-known landmark, a statue of Pennsylvania founder and Philadelphia planner William Penn",
-        "publisher": "Carol M. Highsmith Archive, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/2019689257/"
-      },
-      {
-        "title": "View of Philadelphia, Pennsylvania's, City Hall, famously topped by a statue of William Penn",
-        "publisher": "Carol M. Highsmith Archive, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/2019689061/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look straight up the tower in front of you, past the clock, to the very top. There is a man standing up there.\n\nHe is William Penn, the founder of Pennsylvania and the planner of this city. From down here he looks about life size. He is thirty-seven feet tall, and he weighs more than fifty-three thousand pounds of bronze.\n\nThe last piece to go up was his head. It was set on his shoulders on the twenty-eighth of November, eighteen ninety-four, and the statue was complete.\n\nThe tower under him rises five hundred and forty-eight feet. Until nineteen oh nine it was the highest occupied building in the United States.\n\nIn the autumn of nineteen eighty-one, historians wrote this building up for the federal survey of American architecture. They put down one plain sentence. No other building in the city exceeds its height.\n\nNow turn around, and look at the skyline to the west.\n\nCount the towers standing higher than Penn's hat.\n\nEvery one of them is younger than that sentence.\n",
@@ -9934,29 +6751,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "First Public Reading of the Declaration of Independence",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/news/first-public-reading-of-the-declaration-of-independence.htm"
-      },
-      {
-        "title": "A national treasure will be returning to Independence Hall just in time for Independence Day",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/news/a-national-treasure-will-be-returning-to-independence-hall-just-in-time-for-independence-day.htm"
-      },
-      {
-        "title": "Letters of Delegates to Congress: John Adams to Samuel Chase, July 9, 1776",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/76002592_04_0334/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Face the back of the hall. This square was the State House yard, and you are standing in it.\n\nOn the fourth of July, seventeen seventy-six, Congress approved the Declaration of Independence in there. Almost nobody out here had heard a word of it.\n\nFour days later, on the eighth, the bells of the city called people into this yard. At noon a militia colonel named John Nixon stood up on a raised stage and read the whole thing out loud. It was the first public reading of the Declaration.\n\nJohn Adams wrote about it the next day. He called the platform that awful stage, and he meant awe inspiring. Three cheers, he wrote, rended the welkin. The bells rang all day, and almost all night. Even the chimers chimed away.\n\nIn the courtroom of the State House, above the judge's bench, hung the coat of arms of King George the Third. That same day a crowd took it down and burned it.\n\nAbout nine years later a Philadelphia painter, George Rutter, made a new coat of arms for the same courtroom. The arms of Pennsylvania. It is one of the very few furnishings from that century still in the building, and it hangs in the courtroom now.\n\nThe king's arms did not last the afternoon. Pennsylvania's are still on the wall.\n",
@@ -10006,29 +6801,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Assembly Room of Independence Hall",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/places-independencehall-assemblyroom.htm"
-      },
-      {
-        "title": "Signing the Constitution",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/signing-the-constitution.htm"
-      },
-      {
-        "title": "James Madison's notes of debates in the Federal convention of 1787 (James Brown Scott, 1918)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/19000141/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the hall in front of you. On its ground floor is the room where the Constitution was signed.\n\nFor four months in the summer of seventeen eighty-seven, George Washington presided in that room from a tall wooden chair. Carved into the top of its back is a sun.\n\nIt was not an easy summer. Large states against small states. Arguments over the slave trade. More than once it looked as if the whole thing might come apart.\n\nOn the last day, the seventeenth of September, the delegates lined up to sign. While the last of them were signing, Benjamin Franklin looked at Washington's chair and said something to the men near him. James Madison wrote it down.\n\nPainters, Franklin said, had always found it hard to show the difference between a rising sun and a setting one. All through the session, in his hopes and fears, he had looked at that sun behind the president, and could not tell which it was.\n\nBut now at length, he said, I have the happiness to know that it is a rising and not a setting sun.\n\nThe chair had been made here in Philadelphia in seventeen seventy-nine, for the speaker of Pennsylvania's assembly. It went with the legislature to Harrisburg, and came back to this city in eighteen seventy-two.\n\nEarlier that day Franklin had asked every doubter in the room to doubt a little his own infallibility, and sign. Three still refused.\n\nNothing about the carving had changed. Franklin had.\n",
@@ -10074,36 +6847,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Visiting the Declaration House",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/planyourvisit/declarationhouse.htm"
-      },
-      {
-        "title": "Declaration House",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/places-declarationhouse.htm"
-      },
-      {
-        "title": "The Declaration of Independence, its history (John H. Hazelton, 1906)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/06006240/"
-      },
-      {
-        "title": "Market street, Philadelphia; the most historic highway in America (Joseph Jackson, 1918)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/18015276/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the brick house on this corner of Seventh and Market. It is not old. The house that stood here was demolished, and this one was built in nineteen seventy-five to stand in for it.\n\nIn the summer of seventeen seventy-six this corner was out near the edge of town. Thomas Jefferson rented rooms here from a young bricklayer named Graff.\n\nNearly fifty years later a Philadelphia doctor wrote to ask him exactly where he had written the Declaration of Independence. Jefferson answered from Monticello. A new brick house, three stories high, he wrote. I rented the second floor, a parlour and bedroom, ready furnished. In that parlour I wrote habitually, and in it wrote this paper particularly.\n\nHe also kept an account book that summer, and it survives. Thirty-five shillings a week for lodging. Dinners at Smith's. A straw hat. One shilling for seeing a monkey.\n\nAnd shoes for Bob. Stockings for Bob.\n\nJefferson did not come alone. With him was Robert Hemings, fourteen years old, whom he enslaved. Bob, in the account book, was almost certainly him.\n\nThe rooms are a reconstruction. The shoes for Bob are in Jefferson's own handwriting.\n",
@@ -10158,29 +6902,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "First Bank of the United States",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/places-firstbank.htm"
-      },
-      {
-        "title": "First Bank of the United States FAQs",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/firstbank-faq.htm"
-      },
-      {
-        "title": "First Bank of the United States, 120 South Third Street (HABS PA-1417)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/pa0850/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand in front of the columns on Third Street and look above the main door.\n\nThere is a carved marble panel there, and it is busier than it first appears. A baby wearing a helmet leans against a globe. One foot rests on a beehive. Beside him a horn of plenty spills out, not fruit, but coins. Behind him are tall ledgers, sailing ships and an American flag.\n\nThe baby is America. This was the Bank of the United States, and it opened in this building in seventeen ninety-seven. The whole front was designed to tell you what it was for. Even the keystone over the door is the head of Mercury, the Roman god of commerce.\n\nNow look at the globe again. One word is carved on it clearly. Africa.\n\nThe Park Service reads that word as the riches of that continent, human and mineral.\n\nThe panel is a celebration of a young country's money. It names one of the places the money came from.\n",
@@ -10220,43 +6942,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Independence Hall Tower and Steeple FAQs",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/tower-faqs.htm"
-      },
-      {
-        "title": "The Liberty Bell",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm"
-      },
-      {
-        "title": "The Liberty bell, Independence hall, Philadelphia (Charles S. Keyser, 1901)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01028082/"
-      },
-      {
-        "title": "The story of the Liberty bell (Wayne Whipple, 1910)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/10030089/"
-      },
-      {
-        "title": "The Liberty bell, its history, associations and home (E. R. Gudehus, 1915)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/16006838/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the tower on the back of the hall. The brick part is original, from the seventeen fifties. The wooden steeple on top came later.\n\nIn September, seventeen seventy-seven, a British army was closing in on Philadelphia. Before it arrived, the State House bell was taken down from up there, to keep it out of British hands. It was not the Liberty Bell yet. Nobody would call it that for almost sixty years.\n\nIt went north in a wagon, in a train of about seven hundred wagons carrying the army's heavy baggage, guarded by two hundred soldiers from Virginia and North Carolina. Through Germantown, through Bethlehem, to Allentown.\n\nA diary kept in Bethlehem that autumn has one line about it. September the twenty-ninth. The wagon which conveyed the State House bell broke down in the street, and had to be unloaded.\n\nThey got it moving again. It spent the winter in Zion's Church in Allentown, while the British held this city, and it came home in June, seventeen seventy-eight, after they had gone.\n\nThe bell got through a war without a scratch. What finally silenced it, in eighteen forty-six, was a repair job for Washington's birthday.\n",
@@ -10306,36 +6992,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Goal, in Walnut Street Philadelphia by W. Birch & Son, 1799",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/inde-goal-bethelame-walnut-st-birch-1799.htm"
-      },
-      {
-        "title": "Timeline of Early Black Philadelphia and the Nation",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/education/timeline-early-black-philadelphia-nation.htm"
-      },
-      {
-        "title": "Bethel African Methodist Episcopal Church, Philadelphia. (lithograph, 1829, catalogue description)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/item/2021670179/"
-      },
-      {
-        "title": "Picture of Philadelphia (1835)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01010570/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look across Sixth Street at the church, and at the ground it stands on.\n\nThis is Mother Bethel. The National Park Service counts this lot among the oldest pieces of land in the country continuously owned by African Americans.\n\nThe first church on it was not built here. It was dragged here.\n\nIn the seventeen nineties, Black members of Saint George's Methodist Church walked out together, rather than sit in a separate gallery made for them. A preacher named Richard Allen bought this lot so they could have a church of their own. What he had to put on it was an old blacksmith shop.\n\nIn seventeen ninety-nine an engraver named William Birch published a view of Walnut Street, with the city jail in the background. In the foreground, a team of horses is pulling a wooden shed down the street. Historians believe it is this church, on its way here.\n\nThe first meeting house was dedicated in July, seventeen ninety-four. The congregation has rebuilt on this same ground more than once since, so the building in front of you is not the shed.\n\nAllen is known to have used a blacksmith's anvil as his pulpit. The church still keeps the anvil as its emblem. It stands for self-determination.\n\nMost churches begin with a cornerstone. This one began with a forge.\n",
@@ -10381,36 +7038,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Book of Philadelphia, by Robert Shackleton (1918), chapter III, Within a Nooked Courtyard",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/19000869/"
-      },
-      {
-        "title": "Picture of Philadelphia (1835), Roman Catholic churches",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01010570/"
-      },
-      {
-        "title": "Interior View of the New Church of Saint Joseph, Philadelphia. (lithograph, circa 1840, catalogue description)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/item/2021670340/"
-      },
-      {
-        "title": "The President's House Site: Presidents Washington and Adams",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/the-presidents-house-washington-and-adams.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Walk west down Willings Alley from Third Street, between the tall walls, and look on your right for an iron gate in an archway. It leads through a building and into a paved courtyard. The church is in there.\n\nYou cannot see it from any street. That was not an accident, though nobody forced it.\n\nCatholics in early Philadelphia were tolerated, but they were looked on with suspicion. So when they built a church here, in seventeen thirty-three, they put it somewhere inconspicuous, in a court between this alley and Walnut Street. Then the city filled in close all around it.\n\nIt did not stay unnoticed. On one October day in seventeen seventy-four, two visitors came to service here. One was George Washington. In his diary he wrote only that he went to Saint Joseph's in the afternoon.\n\nThe other was John Adams, raised a Puritan, and he was shaken. He wrote to his wife about the poor wretches fingering their beads, chanting Latin, bowing and kneeling. He called it awful and affecting.\n\nThe church behind the gate today is not the one they sat in. It was rebuilt on the same spot in eighteen thirty-eight and thirty-nine.\n\nIt was built not to be noticed. The first two presidents of the United States came looking for it anyway.\n",
@@ -10456,36 +7084,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Washington Square",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/places-washingtonsquare.htm"
-      },
-      {
-        "title": "Invisible Architects, Stop 7: Washington Square",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/invisible-architects-stop-7.htm"
-      },
-      {
-        "title": "The Tomb of the Unknown Revolutionary War Soldier: Graffiti and the Legacy of the Founding Fathers",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/tomb-of-the-unknown-revolutionary-war-soldier.htm"
-      },
-      {
-        "title": "Preservation on the Memorial in Washington Square",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/000/preservation-on-the-memorial-in-washington-square.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In front of you, a bronze George Washington stands above a stone tomb, and a flame burns near his feet. Go close enough to read the lid. Beneath this stone rests a soldier of Washington's army, who died to give you liberty.\n\nOne soldier, name unknown. His remains were found in a grave nearby in nineteen fifty-six, and the memorial was dedicated the next year.\n\nHe is not alone. He is not even unusual.\n\nFor most of the seventeen hundreds this square was the city's potter's field, the burial ground for strangers and the poor. Free and enslaved Africans were buried here, and their families sometimes gathered to guard the graves from the anatomy lecturers.\n\nThen came the war. In January seventeen seventy-seven, Deborah Norris wrote to her friend Sally Wister about a shocking sight here. Large pits are dug, she wrote, and forty or fifty coffins are put in the same hole.\n\nThat April John Adams came and spent an hour among the graves. He had been told perhaps two thousand soldiers lay here. They are enough, he wrote, to make the heart of stone melt away.\n\nIn seventeen ninety-three, more than thirteen hundred victims of yellow fever filled the space that was left.\n\nLook past the tomb, at the lawns and the benches and the paths.\n\nThe memorial honours one soldier. The rest of them are under the grass.\n",
@@ -10531,29 +7130,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Visiting Old City Hall",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/planyourvisit/oldcityhall.htm"
-      },
-      {
-        "title": "Old City Hall",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/places-oldcityhall.htm"
-      },
-      {
-        "title": "The Supreme Court in United States history, volume 1 (Charles Warren, 1922)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/22011303/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the small brick building on the corner of Fifth and Chestnut. It was built as Philadelphia's city hall. Through the seventeen nineties it was also the home of the Supreme Court of the United States.\n\nToday that court decides the hardest questions in the country. When it came to Philadelphia, it had almost nothing to decide.\n\nIts first term in this city opened in February, seventeen ninety-one. A Philadelphia lawyer wrote about the day in a letter. The court opened, he said, but there was no business.\n\nSo the justices did the one thing they could, which was admit lawyers to practise before them. The local bar assumed Justice James Wilson, one of their own, would simply vouch for them. He would not. The Chief Justice ruled that one lawyer could not vouch for another. Some of the best known lawyers in the city had to go off and find certificates of good character, and come back after one o'clock.\n\nThat August the court finally called a case for argument, West against Barnes. One of the parties stood up and pointed out that the paperwork had come from the wrong clerk's office. The court agreed, and dismissed it.\n\nOne of the original justices, John Rutledge, resigned without ever sitting in a session.\n\nThe courtroom inside is furnished the way an eighteenth century courtroom would have been, and it is open to look into.\n\nThe most powerful court in the world started out by checking references.\n",
@@ -10593,29 +7170,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Liberty Bell",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm"
-      },
-      {
-        "title": "Visiting the Liberty Bell Center",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/planyourvisit/libertybellcenter.htm"
-      },
-      {
-        "title": "The Liberty bell, its history, associations and home (E. R. Gudehus, 1915)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/16006838/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Find the bell, and look at the crack.\n\nIt is wide and dark, and it may be the best known flaw in the country. Now look along its edges. They are not clean breaks. They are a row of little round scallops.\n\nNobody wrote down when the bell first cracked. The likeliest answer is the early eighteen forties, after almost ninety years of hard use. A thin split, easy to miss.\n\nIn eighteen forty-six the city wanted the bell rung for Washington's birthday. So metal workers drilled out the thin crack and widened it on purpose, to stop it spreading and to bring the tone back. Those scallops are their drill holes. The Park Service counts more than forty of them.\n\nIt did not work. A newspaper, the Public Ledger, reported that the bell had split again. The second crack runs up through the word Liberty, and nobody alive has heard this bell ring freely.\n\nBy then it had a new name. In eighteen thirty-five an abolitionist paper had called it the Liberty Bell, for the verse cast around its top. Proclaim liberty throughout all the land, unto all the inhabitants thereof. The name took years to catch on.\n\nSo the famous crack is not the damage. It is the repair.\n",
@@ -10660,43 +7215,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Carpenters' Hall",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/000/carpenters-hall.htm"
-      },
-      {
-        "title": "Letters of Delegates to Congress: James Duane's Notes of Debates, September 5, 1774",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/76002592_01_0006/"
-      },
-      {
-        "title": "Letters of Delegates to Congress: Joseph Galloway to William Franklin, September 5, 1774",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/76002592_01_0007/"
-      },
-      {
-        "title": "Letters of Delegates to Congress: John Adams' Diary, August 29, 1774 to September 5, 1774",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/76002592_01_0001/"
-      },
-      {
-        "title": "Carpenters' Company Hall, 320 Chestnut Street and Carpenters' Court (HABS PA-1398)",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/pa1131/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look down the court from Chestnut Street. At the end of it is a small brick hall with a cupola on top. It was built by a guild of carpenters, and the guild still owns it.\n\nOn the fifth of September seventeen seventy-four, the delegates to the first Continental Congress gathered in the city with a choice to make. The Speaker of the Pennsylvania Assembly, Joseph Galloway, had offered them the State House. The carpenters had offered their hall.\n\nThey walked here first, to take a look.\n\nJohn Adams wrote that the general cry was that this was a good room. One delegate, James Duane, argued that the State House ought to be preferred. It was a public building, he said, and this was a private one, and the Speaker deserved the courtesy. The question was called anyway. A great majority chose the carpenters.\n\nThat evening Galloway wrote to a friend that Congress had met at Carpenters' Hall, notwithstanding the offer of a much more proper place. He suspected it had all been settled privately, out of doors, before anyone walked over.\n\nOnly after that vote did they choose a president.\n\nThe first question the Continental Congress ever decided was where to sit. It chose the builders.\n",
@@ -10746,22 +7265,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "James Dexter Site",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/james-dexter-site.htm"
-      },
-      {
-        "title": "Excavation of James Dexter Site",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/excavation-dexter.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand on Fifth Street beside the National Constitution Center, where the buses pull in to drop people off.\n\nUnder this drop-off is the site of a small rented house. From seventeen ninety, a free Black coachman named James Oronoco Dexter lived in it with nine other people.\n\nDexter had been enslaved. On this block he was one of at least six free Black heads of household. In seventeen ninety-two he hosted the first meeting, in his own house, to arrange the building of a church. It became the African Episcopal Church of Saint Thomas, and its congregation is still active.\n\nWhen the Constitution Center was being built, the Park Service at first decided not to dig here. The drop-off would sit on top, and whatever was underneath would be left alone. People in the community disagreed. They wanted to know what was down there. So the archaeologists dug.\n\nIn the old back yard they found a barrel sunk in the ground and filled with sweepings, with nearly four thousand household objects in it. Pieces of a teapot made by English potters. A Chinese porcelain saucer. Bones from good cuts of meat, and from pig's feet.\n\nA coachman to a wealthy family was well paid. The archaeologists think the imported china let Dexter set a proper table for the people planning that church.\n\nMost of what survives from the founding years is paper. What survived of James Dexter's house was the good china, swept up in the yard.\n",
@@ -10811,36 +7315,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Market Street, Philadelphia; the most historic highway in America, its merchants and its story, by Joseph Jackson (1918)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/18015276/"
-      },
-      {
-        "title": "Reading Terminal, 11th & Arch Streets, Philadelphia (HAER PA-417), index to photographs",
-        "publisher": "Historic American Engineering Record, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/pa3514/"
-      },
-      {
-        "title": "Philadelphia & Reading Railroad, Terminal Station, 1115-1141 Market Street, Philadelphia (HABS PA-1528), index to photographs",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/pa1051/"
-      },
-      {
-        "title": "Scene inside the Reading Terminal Market in Philadelphia, Pennsylvania",
-        "publisher": "Carol M. Highsmith Archive, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/2019688706/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand outside the market doors on Twelfth Street and look up. The building keeps going, well above where a market would need a roof. That high shed was built for trains.\n\nStart a little earlier, on Market Street, round the corner. For generations, Philadelphia's main street had market sheds down its middle. In eighteen fifty-nine they were cleared away, and the traders needed somewhere new.\n\nTwo big market houses went up on the north side of Market Street, between Eleventh and Twelfth. One was the Farmers' Market, the largest market shed of its kind in the city. Beside it, at Twelfth Street, was the Franklin Market, which old housekeepers just called the Twelfth Street Market.\n\nThirty years later the Reading Railroad wanted a station in the middle of town. It ran its tracks in from Ninth and Green, raised up on an elevated line, and it chose this exact block. The Reading Terminal opened for traffic on the twentieth of January, eighteen ninety-three.\n\nSo the trains came in up there, under that great arched roof.\n\nAnd the market is still down here, underneath it.\n",
@@ -10886,29 +7361,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Kosciuszko House",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/kosciuszko-house.htm"
-      },
-      {
-        "title": "Thaddeus Kosciuszko (biography)",
-        "publisher": "National Park Service, Thaddeus Kosciuszko National Memorial",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/thko/learn/historyculture/kosciuszkobio.htm"
-      },
-      {
-        "title": "Thaddeus Kosciuszko House, 301 Pine Street, Philadelphia (HABS PA-1342)",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/pa1222/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the corner house here, at Third and Pine, and then up at its second floor.\n\nThe whole site covers two hundredths of an acre. The National Park Service calls it the smallest unit in the national park system.\n\nLate in seventeen ninety-seven, a Polish general took a cramped room up there, in Mrs. Relf's boarding house. His name was Thaddeus Kosciuszko. More than twenty years earlier he had come to America and designed fortifications for the Revolution, at Saratoga and at West Point. Then he went home to fight for Poland, was wounded, captured and imprisoned in Russia, and came back to Philadelphia a hero, still recovering.\n\nPeople climbed the stairs to see him. A Virginia congressman who pushed Congress to pay what it owed him. Chief Little Turtle of the Miami, who gave him a pipe tomahawk. And the Vice President, Thomas Jefferson, who became a close friend.\n\nUp in that room, with Jefferson's legal help, Kosciuszko worked out his will. He asked that after his death his estate be used to free as many enslaved people as possible.\n\nIn May seventeen ninety-eight he slipped out of the country in the small hours, on a ship from New Castle, Delaware. He told one person he was going. Jefferson.\n\nHe gave Thomas Jefferson two things to keep. The secret of his leaving. And the will.\n",
@@ -10959,43 +7412,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Dock Creek",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/dock-creek.htm"
-      },
-      {
-        "title": "Merchants' Exchange Building",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/places-merchantsexchange.htm"
-      },
-      {
-        "title": "Philadelphia Exchange. (lithograph, catalogue description)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/item/2021670211/"
-      },
-      {
-        "title": "Market Street, Philadelphia; the most historic highway in America, its merchants and its story, by Joseph Jackson (1918)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/18015276/"
-      },
-      {
-        "title": "The Book of Philadelphia, by Robert Shackleton (1918)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/19000869/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Every street around here runs straight, at right angles, the way William Penn liked it. Except the one you are standing on. Dock Street bends.\n\nNow look at the building beside you. Its end is not flat. It is round, a curve of stone columns with a little round lantern on top. This is the Merchants' Exchange, finished in the eighteen thirties, and its architect fitted it onto a triangle of ground between Third Street, Walnut Street, and this odd curving road.\n\nSo why does the road curve?\n\nWhen Penn first came to Philadelphia, he left the big ship out on the Delaware and went up a creek in a skiff. That creek ran here. Dock Creek. In the seventeen nineties the city covered it over, and the street took its line.\n\nBefore this building, merchants did their deals in coffee houses and taverns down by the river. This was the first large building in the city put up for doing business. Ships' cargoes changed hands in it. So did stocks. The Philadelphia Stock Exchange met here.\n\nPenn came up this line in a small boat. A hundred and fifty years later, the city's money was following it too.\n",
@@ -11035,22 +7452,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Arch Street Friends Meeting House, 330 Arch Street (HABS PA-1388), written historical and descriptive data",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/pa1087/"
-      },
-      {
-        "title": "Philadelphia, guide to the city (Rotary Club of Philadelphia, 1920)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/20012885/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the long brick meeting house. It is built in three parts, a middle section with a wing on each side, and the two wings match.\n\nThat symmetry is the whole story.\n\nQuakers held their business meetings separately, one for men and one for women. George Fox, who founded the Society of Friends, wanted it that way, so that women would take an active part. For years in Philadelphia, the two meetings gathered in separate buildings.\n\nThe push for this house is said to have come from the women. They wanted both meetings under the same roof. The women's yearly meeting moved in here in eighteen hundred and four. When the second wing was finished in eighteen eleven, the men joined them.\n\nInside are two meeting rooms, one on each side of a central hall. There was no need for a partition down the middle. Each meeting had a room of its own.\n\nIt was not equality. The women's meeting mostly dealt with marriages and help for the needy, and the men's with policy and money. But the two rooms were built to the same proportions and fitted out the same way.\n\nSomebody insisted on that.\n",
@@ -11090,29 +7492,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "A friendly guide to Philadelphia and the Wanamaker store (1926)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/27012482/"
-      },
-      {
-        "title": "John Wanamaker Store, Thirteenth & Chestnut Streets, Philadelphia (HABS PA-1692)",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/pa1340/"
-      },
-      {
-        "title": "Interior with historic organ, Wanamaker's Department Store, Philadelphia, Pennsylvania",
-        "publisher": "Carol M. Highsmith Archive, Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/2010630086/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This building was John Wanamaker's department store. In the middle of it is a hall called the Grand Court, its galleries climbing floor over floor to a dome a hundred and fifty feet up.\n\nTwo things were set in that court that were not made in Philadelphia.\n\nThe first is a bronze eagle on a granite pedestal. The bird alone weighs two and a half thousand pounds. Every feather was shaped and fitted by hand, sixteen hundred on the head, five thousand on the whole eagle. It took a crew of skilled metalworkers more than five months.\n\nThe second is the organ, filling the south end of the court. When it was brought here it took thirteen freight cars. The store's own workshop then rebuilt it and made it bigger. By nineteen twenty-six it had more than eighteen thousand pipes, and its biggest wooden pipe was so wide that two men could crawl through it side by side.\n\nThe eagle and the organ have one thing in common. Both were made for the world's fair in St. Louis, in nineteen oh four. When the fair closed, they came east, to a shop.\n\nA world's fair is built to be taken down.\n\nPhiladelphia kept two of its best pieces, and put them in a shop.\n",
@@ -11158,29 +7538,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Visiting Congress Hall",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/planyourvisit/congresshall.htm"
-      },
-      {
-        "title": "Congress Hall",
-        "publisher": "National Park Service, Independence National Historical Park",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/inde/learn/historyculture/places-congresshall.htm"
-      },
-      {
-        "title": "Congress hall (Samuel W. Pennypacker, 1895)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/02024648/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand beside the brick building on the corner of Sixth and Chestnut. This is Congress Hall. For ten years the House of Representatives met on its ground floor, and the Senate upstairs.\n\nOn the fourth of March, seventeen ninety-seven, the room downstairs was packed. The country was about to do something it had never done. Hand the presidency from one man to another.\n\nA man named John McKoy was there, and wrote down what he saw. When the word Washington went round the doorway, he said, the shout made the hall tremble. Washington crossed the floor at a quick step, as if eager to escape notice, and sat down. Thomas Jefferson came in next, the new vice president, to a smaller cheer. Then John Adams, the new president, to a smaller one again.\n\nAdams took the oath, read his address, bowed, and left to applause.\n\nThat left Washington and Jefferson standing together, and the whole room watching them in silence.\n\nWashington gestured for Jefferson to go out first. Jefferson declined. Washington asked again. Jefferson went, and Washington followed him out.\n\nHe walked in as the most famous man in the country. He walked out behind the vice president.\n",
@@ -11227,22 +7585,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "contested",
-    "sources": [
-      {
-        "title": "Did Betsey Ross design the flag of the United States of America? (Franklin Hanford, 1917)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/17010994/"
-      },
-      {
-        "title": "Birth of our nation's flag (C. H. Weisgerber, 1893), catalogue record",
-        "publisher": "Library of Congress, Prints and Photographs Division",
-        "retrievedAt": "2026-10-14",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/2004669130/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This small house on Arch Street is famous for one scene. George Washington and two gentlemen of Congress call on a young widow, an upholsterer named Betsy Ross. They show her a rough sketch of a flag. She suggests changes. She sews the first Stars and Stripes.\n\nHere is what is on record. Betsy Ross was real. Her first husband died in seventeen seventy-six, and she carried on his trade. For about fifty years she was an expert needlewoman and flag-maker. During the war she made colours for Pennsylvania's ships. After her, one of her daughters kept the flag business going.\n\nHere is what is not. The visit appears in no record of Congress, no letter, no diary and no newspaper of the time. Washington wrote a great deal, and never mentioned it.\n\nThe story was first told in public in eighteen seventy, ninety-three years after the flag was adopted. Her grandson, William Canby, read it to the Historical Society of Pennsylvania. It was, he said, what the family had heard her say.\n\nFor most people, the evidence is a picture. Washington seated in her parlour, the new flag across her lap.\n\nThat picture was printed in eighteen ninety-three. Prints of it went to people who joined a club raising money to save this house.\n",
@@ -11289,36 +7632,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Green-Meldrim House, 327 Bull Street, Savannah (HABS GA-222): record and data pages",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ga0144/"
-      },
-      {
-        "title": "William T. Sherman to Abraham Lincoln, 22 December 1864 (telegram offering Savannah as a Christmas present)",
-        "publisher": "Library of Congress, Abraham Lincoln Papers",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/mal3954500/"
-      },
-      {
-        "title": "Abraham Lincoln to William T. Sherman, 26 December 1864",
-        "publisher": "Library of Congress, Abraham Lincoln Papers",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/mal3954600/"
-      },
-      {
-        "title": "Savannah",
-        "publisher": "National Park Service, Fort Pulaski National Monument",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/fopu/learn/historyculture/savannah.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the house on the corner, with the iron porches and the battlements along the roofline. It was begun in eighteen fifty-three for Charles Green, in the Gothic style, and finished in eighteen sixty-one.\n\nOn the twenty-second of December, eighteen sixty-four, it became the headquarters of General William Tecumseh Sherman. His army had marched from Atlanta to the sea, and Savannah was his.\n\nThat same day, Sherman dated a telegram to President Lincoln.\n\nIt went by way of Fort Monroe, in Virginia, and it is marked from there on the twenty-fifth. Christmas Day.\n\nIt reads, I beg to present you as a Christmas gift the City of Savannah, with one hundred and fifty heavy guns and plenty of ammunition, and also about twenty-five thousand bales of cotton.\n\nLincoln answered the day after Christmas. Many, many thanks for your Christmas gift, he wrote. He admitted that when Sherman left Atlanta for the coast, he had been anxious, if not fearful.\n\nSherman kept his headquarters in this house until the first of February.\n\nThe telegram, and a copy of the reply, are in the Library of Congress. Not many Christmas presents come with an inventory.\n",
@@ -11363,43 +7677,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "contested",
-    "sources": [
-      {
-        "title": "Factor's Warehouse, River Street West (HABS GA-2144), data pages",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/pictures/item/ga0053/"
-      },
-      {
-        "title": "The morning news (Savannah, Ga.), November 2, 1889, image 7: shipping intelligence",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn86063034/1889-11-02/ed-1/?sp=7"
-      },
-      {
-        "title": "A guide to strangers visiting Savannah for business, health, or pleasure (1881)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007696/"
-      },
-      {
-        "title": "Savannah Eastern Wharves (HAER GA-157), data pages",
-        "publisher": "Historic American Engineering Record, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/pictures/item/ga1012/"
-      },
-      {
-        "title": "The morning news (Savannah, Ga.), September 15, 1887, image 8: foreign steam tonnage loading",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn86063034/1887-09-15/ed-1/?sp=8"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look down at the cobbles under your feet, and at the rough stone in the old walls along River Street.\n\nYou will hear, probably more than once today, that this stone crossed the ocean as ballast. Ships that came over light carried rock low in the hold to keep them steady, dumped it here, and loaded cotton for the voyage out.\n\nHere is what the record actually supports.\n\nShips really did arrive that way. On the second of November eighteen eighty nine, the Savannah Morning News listed a Norwegian bark up from Buenos Aires, in ballast. Another came from Brazil, in ballast. That was an ordinary day.\n\nBallast really was dumped on this waterfront. A city guide from eighteen eighty one boasted that when a railway's wharves downriver were filled in, the four quarters of the habitable globe had contributed, by way of ballast from foreign ships. When the old eastern wharves were recorded in two thousand seven, just before they were demolished, the ballast that filled them was still there.\n\nAnd when federal surveyors photographed a stone warehouse on River Street in the nineteen thirties, they wrote that its rubble stone was said to have been brought over as ballast.\n\nSaid to have been. Even then it was the story, not the receipt.\n\nSo nobody can show you which stone came from where. But the ships came in heavy with rock, and the rock had to go somewhere.\n",
@@ -11439,22 +7717,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Savannah City Hall, Bay and Bull Streets (HABS GA-2165), data pages",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/pictures/item/ga0459/"
-      },
-      {
-        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/unk84031503/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the dome on City Hall.\n\nIt was not built to look like that.\n\nThis is the spot where the City Exchange stood from seventeen ninety nine. In nineteen oh four the city tore it down and started again. The new City Hall was finished at the end of nineteen oh five, and the first council met here in January nineteen oh six.\n\nThe dome rises another seventy feet above the building. It was sheathed in copper, and for many years the city simply let that copper weather on its own.\n\nThen the air got to it. In nineteen sixty six the city painted the dome to stop it deteriorating. The culprit, according to the federal survey of the building, was a local fertilizer plant.\n\nBy the early nineteen eighties it wore a protective coating, coloured to look like the weathered copper it had been designed to become all along.\n\nWhat you are looking at now came after that.\n\nIt was designed to change colour on its own. The city has been choosing its colour ever since.\n",
@@ -11494,50 +7757,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Savannah Cotton Exchange, 100 East Bay Street (HABS GA-1194), data pages",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/pictures/item/ga0141/"
-      },
-      {
-        "title": "Savannah morning news, March 24, 1886, image 8: The New Cotton Exchange",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn82015137/1886-03-24/ed-1/?sp=8"
-      },
-      {
-        "title": "Savannah morning news, August 29, 1886, image 8: The New Cotton Exchange",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn82015137/1886-08-29/ed-1/?sp=8"
-      },
-      {
-        "title": "The morning news (Savannah, Ga.), September 16, 1887, image 8: Through the City",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn86063034/1887-09-16/ed-1/?sp=8"
-      },
-      {
-        "title": "The morning news (Savannah, Ga.), March 12, 1889, image 8: To Have a Park",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn86063034/1889-03-12/ed-1/?sp=8"
-      },
-      {
-        "title": "A view of Savannah's old Cotton Exchange Building was completed in 1887 during the era when Savannah ranked first as a cotton seaport on the Atlantic and second in the world",
-        "publisher": "Carol M. Highsmith Archive, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/item/2017880409/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at how you get into the Cotton Exchange. Not from the pavement. From a bridge, with iron railings, across a gap.\n\nThe building opened for business at noon on a Monday in September eighteen eighty seven, when Savannah ranked first among the cotton ports of the Atlantic coast. From Bay Street it looks like three storeys. From River Street, round the back, it is six.\n\nWhat it stands on is the interesting part.\n\nThis was the Drayton Street slip, the way down from the bluff to the river. In March eighteen eighty six the Morning News watched workmen pulling up the stones of that slip. Part of it was filled in and walled off. By August, iron pillars and girders were in place to carry the building, and the old iron footbridge across the slip had been taken down, to be put up again somewhere else.\n\nSo the Cotton Exchange is standing on iron legs, over the old way down to the water.\n",
@@ -11583,29 +7803,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Archibald Smith's Factor's Building, 202-206 East Bay Street (HABS GA-1195), data pages",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/pictures/item/ga0029/"
-      },
-      {
-        "title": "William Taylor Store, 204 West Bay Street (HABS GA-1196), data pages",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/pictures/item/ga0142/"
-      },
-      {
-        "title": "Old \"Factors' Row\" cotton warehouses and offices of cotton \"factors,\" or brokers on the Savannah, Georgia, waterfront",
-        "publisher": "Carol M. Highsmith Archive, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/item/2017880453/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand at the railing and look down. Between Bay Street and the row of old buildings on the river side there is a gap, and narrow iron bridges cross it.\n\nFollow one of those bridges to its door. You are walking into the top floor of the building.\n\nThis was the row of the cotton factors, the brokers of the cotton trade. One of these buildings, at the two hundred block of East Bay, went up in eighteen twenty three. When federal surveyors measured it, they described entrances on the fourth floor, a cantilevered walk, and more bridges reaching the floors below.\n\nThe offices were up here, level with the street and the merchants. The warehouse floors stacked down the face of the bluff toward the river.\n\nA stone store on the west side of Bay Street, built around eighteen sixteen, works the same way. Three storeys from Bay Street. Four from the river. Every floor but the attic opens onto a different level of the town.\n\nSo none of these buildings has one ground floor. There is the floor at the water, and the floor at the street, and an iron bridge in between.\n",
@@ -11650,22 +7848,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "First African Baptist Church, 23 Montgomery Street (HABS GA-276), data pages and 2017 addendum",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/pictures/item/ga0018/"
-      },
-      {
-        "title": "The First African Baptist Church in Savannah, Georgia",
-        "publisher": "Carol M. Highsmith Archive, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/item/2017880508/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the walls of this church. Smooth, pale stucco.\n\nUnderneath it is brick. Savannah grey brick, laid four bricks deep. And the history of this building, as recorded for the federal survey, says those bricks were formed by hand at night, on the bank of the river, by members of this congregation, after they had worked a full day for the people who owned them.\n\nThey had been worshipping on this spot since the eighteen thirties, in an old wooden church bought from a white Baptist congregation that had moved to a new building. They paid for it with money earned working nights, with their owners' permission. Often, the survey notes, it was money they had been saving to buy their own freedom, or their family's.\n\nIn eighteen fifty five they pulled the wooden church down and began this one. It took four years. It cost more than ten thousand dollars, and it was paid off before the end of eighteen fifty nine, the year it was finished.\n\nIt is recorded as the first brick building in Savannah owned by African Americans.\n\nThe stucco went on in the nineteen forties. So you cannot see a single one of those bricks. They are all still there.\n",
@@ -11704,22 +7887,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old Harbor Beacon, Savannah (HABS GA-232), data pages",
-        "publisher": "Historic American Buildings Survey, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/pictures/item/ga0054/"
-      },
-      {
-        "title": "The morning news (Savannah, Ga.), February 22, 1900, image 8: Council proceedings, Bay street green",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn86063034/1900-02-22/ed-1/?sp=8"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the tall iron post at this end of the park, with the light at the top.\n\nThat is a lighthouse. Or it was.\n\nThe United States government put it up in eighteen fifty eight, a cast iron standard on a granite foundation, here on the Bay, as a beacon for mariners finding their way up the Savannah River.\n\nNotice where it stands. Not on a headland. Not out on the water. Up on the bluff, at the end of a city street, on what was then the Bay Street green. In nineteen hundred the city's park commission asked for money to improve that green, and suggested a name for it. Emmet Park.\n\nWhen federal surveyors came to record the light in the nineteen thirties, they noted two things about it.\n\nIt had not been used for many years.\n\nAnd it was well maintained.\n\nSomebody was looking after a light that nobody needed.\n",
@@ -11758,29 +7926,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Treasure Island (Robert Louis Stevenson, 1883)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/50041964/"
-      },
-      {
-        "title": "Evening star (Washington, D.C.), February 18, 1951, image 122: This Week magazine, an old house where pirates met",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83045462/1951-02-18/ed-1/?sp=122"
-      },
-      {
-        "title": "The Pirates' House, a historic restaurant location in Savannah, Georgia, established in 1753, opened as an inn for seafarers",
-        "publisher": "Carol M. Highsmith Archive, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/item/2017880450/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This low old building calls itself the Pirates' House. Before you go in, it is worth knowing which parts of that are history, and which are a very good story.\n\nStart with the book. In Treasure Island, published in eighteen eighty three, Robert Louis Stevenson gives his pirate captain, Flint, a death but no grave. Billy Bones says Flint handed him the map at Savannah, when he lay dying. Long John Silver puts it more bluntly. Flint died of rum at Savannah.\n\nThat is all Stevenson says. He never names a house. And Flint never existed.\n\nThe house came later. In February nineteen fifty one, the food editor of a Sunday magazine in the Washington Evening Star wrote about the newly restored tavern here, in the old Trustees' Garden. Tradition has it, the article said, that the man Stevenson based Flint on died in an upstairs bedroom of the old inn. And Flint's ghost is said to haunt the area on moonless nights.\n\nThe house tells its own story too. It says it opened in seventeen fifty three as an inn for seafarers, and soon became a meeting place for pirates and sailors back from ports around the world.\n\nNone of that is proven. Not the inn's pirates, not the real man behind Flint, and certainly not the ghost.\n\nBut Stevenson did send Flint to Savannah to die. Savannah has been happy to find him a room.\n",
@@ -11826,29 +7972,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Historical record of the city of Savannah (1869), chapter VII",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007699/"
-      },
-      {
-        "title": "Savannah: Georgia's chief seaport (1884), Ocean Steam Navigation",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/87126083/"
-      },
-      {
-        "title": "Savannah: her trade, commerce and industries, 1883-4",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007698/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look out at the river, and picture a sailing ship like any other, with one odd thing about her. Smoke, and a paddle wheel on each side.\n\nShe was called the Savannah. Merchants of this city paid for her, at the suggestion of a captain named Moses Rogers, and she was built in the North. In May eighteen nineteen she left this river for Liverpool.\n\nIt was cautious engineering. The iron paddle wheels were hinged, so the crew could fold them up onto the deck. She burned pitch pine, not coal, so the engine was used sparingly. Old accounts disagree about how many days it actually ran.\n\nOff Cape Clear, on the south coast of Ireland, someone saw her coming. A ship under sail, pouring out smoke. She was signalled to Liverpool as a vessel on fire, and a cutter was sent out from Cork to her relief.\n\nShe did not need relief. She went on into Liverpool, and then to Saint Petersburg, and came home to Savannah that November, by one account with not a screw, nor a bolt, nor a rope yarn parted.\n\nBy this city's proud account, she was the first steamship to cross the Atlantic.\n\nThe first people to see her do it thought she was on fire.\n",
@@ -11893,29 +8017,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "A collection of letters of Thackeray, 1847-1855 (letter to Miss Perry, Savannah, Feast of St. Valentine)",
-        "publisher": "Library of Congress (Scribner, 1887)",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/13033924/"
-      },
-      {
-        "title": "Low House, 329 Abercorn Street, Savannah (HABS GA-210), data pages",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ga0017/"
-      },
-      {
-        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/unk84031503/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand across from the house with the stuccoed front and the iron railings round its balconies. A cotton merchant named Andrew Low built it in the eighteen forties.\n\nOn Saint Valentine's Day, one year in the eighteen fifties, a famous English novelist sat in this house and wrote a letter home.\n\nHe was William Makepeace Thackeray, the author of Vanity Fair, and he was crossing America giving lectures.\n\nHe was tired of hotels. Tired of the crowds drinking at the bar, and the tearing northern bustle. Here, he wrote, he had the most comfortable quarters he had found anywhere in the United States.\n\nHe liked the town as well. Wide streets, trees, a few cows and carriages toiling through the sandy road.\n\nAnd he was honest about the people who came to hear him. A snug little audience of three or four hundred, he wrote, far too lazy to laugh or applaud.\n\nThe last time he stayed, Low had been a widower. Now there was a pretty new wife, and a baby daughter crowing in the nursery next door.\n\nA great writer, in a fine house, describing his audience as too lazy to clap.\n\nHe was having a wonderful time.\n",
@@ -11964,22 +8066,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Central of Georgia Railway, Savannah Repair Shops and Terminal Facilities (HAER GA-1), data pages",
-        "publisher": "Library of Congress, Historic American Engineering Record",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ga0356/"
-      },
-      {
-        "title": "Central of Georgia Railway, Combination Smokestack, Water Tank and Privies (HAER GA-1-F)",
-        "publisher": "Library of Congress, Historic American Engineering Record",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ga0829/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Find the tall, many-sided brick chimney rising over the old railroad shops.\n\nIt was built in eighteen fifty five for the Central of Georgia Railroad. A hundred and twenty three feet high, standing on a hundred and twenty piles.\n\nIt was three things at once.\n\nFirst, a chimney. Through flues under the yard it pulled the smoke from every forge and boiler in the shops.\n\nSecond, a water tank. Round its waist sits a ring of cast iron panels, made here in Savannah. Behind them was a tank of forty thousand gallons, for filling the locomotives.\n\nThird, look at the base. Between the brick buttresses there are little arched cells. Those were the workers' privies.\n\nWhen the government surveyed the shops, it said the combination of smokestack and privy appeared to be unique.\n\nThe day it was finished, the railroad's superintendent and the master bricklayer climbed to the top before the scaffolding came down, and drank a bottle of champagne up there.\n\nThe bosses toasted it from the top. Everyone else used it from the bottom.\n",
@@ -12017,29 +8104,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Independent Presbyterian Church, Bull and Oglethorpe Streets, Savannah (HABS GA-237): record, data pages and addendum",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ga0046/"
-      },
-      {
-        "title": "The morning news (Savannah), 7 April 1889, page 1: report of the fire",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn86063034/1889-04-07/ed-1/?sp=1"
-      },
-      {
-        "title": "Historical record of the city of Savannah (Lee and Agnew, 1869): Churches, Presbyterian",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007699/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the white steeple on the corner of Bull Street and Oglethorpe Avenue.\n\nThe Independent Presbyterian Church was dedicated in eighteen nineteen. Fifty years later, a history of the city called it one of the most elegant and spacious houses of worship in the country.\n\nOn the evening of the sixth of April, eighteen eighty-nine, a clerk in a dry goods store on Broughton Street stepped into a shop window to light the gas. A gust of wind blew the flame against something light and flammable.\n\nBy morning more than fifty buildings were gone. The Savannah Morning News described what was left of this church. Skeleton walls.\n\nWhat you are looking at went up in eighteen ninety. It was rebuilt from measured drawings of the church that burned. A copy of itself, built to its own measurements.\n\nThe congregation had reasons to be faithful to the old design. By one account from the nineteen thirties, a legacy left to the church required that its high pulpit never be changed.\n\nSo the church in front of you is about seventy years younger than it looks.\n\nThe original stood for seventy years. The copy has now stood for well over a century.\n",
@@ -12078,43 +8143,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "contested",
-    "sources": [
-      {
-        "title": "Park fountain playing / photographed by J.N. Wilson (stereograph, Marian S. Carson Collection)",
-        "publisher": "Library of Congress, Prints and Photographs Division",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/2017659035/"
-      },
-      {
-        "title": "Savannah and its surroundings (G. A. Gregory, 1890)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007695/"
-      },
-      {
-        "title": "A sketch of Savannah, historical and topographical (1899)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007700/"
-      },
-      {
-        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/unk84031503/"
-      },
-      {
-        "title": "Fountain, Savannah, Ga. (G. N. Barnard, Photographic views of Sherman's campaign, 1866)",
-        "publisher": "Library of Congress, Prints and Photographs Division",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/2003677263/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Walk up to the edge of the basin and look at the fountain. The tiers, the figures, the water falling from one level to the next.\n\nNow ask where it came from. Savannah's own guidebooks never quite agreed.\n\nIn eighteen ninety, one said it was designed from a prize model shown at an exhibition in London, and that it was similar to the grand fountain in the Place de la Concorde, in Paris.\n\nIn eighteen ninety nine, another went further. An exact reproduction, it said, of the one in Paris.\n\nBy nineteen ten, a third guide had it modelled on Paris. Close, but no longer exact.\n\nWhat is certain is plainer. Before the fountain, the middle of this park was marked by a small wooden bridge. The fountain went in around eighteen fifty eight, and local photographers were soon selling pictures of it. After the war, a photographer who had followed Sherman's army put it in his book of the campaign.\n\nThe fountain has not changed much since. The story keeps improving.\n",
@@ -12159,15 +8188,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Sorrel-Weed House, 6 West Harris Street, Savannah (HABS GA-2140), data pages",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ga0220/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand on Bull Street beside the garden wall of the big stuccoed house on the corner of Harris Street.\n\nMost people come to this house for its stories. This one is written down.\n\nThe house was built around eighteen forty by Francis Sorrel, a Frenchman. One of his sons became a doctor, and kept his office in the basement. The way in to that office was not the front door. It was a gateway in this wall, on Bull Street.\n\nLater the gateway was bricked up. In nineteen seventeen, a writer remembering the doctor said you could still make out its outline in the wall.\n\nThen in the nineteen thirties a new owner wanted a gate on Bull Street again. She had the wall opened, but in a different place, and the old opening stayed filled with brick.\n\nSo walk along it slowly, and look for a patch of brick that does not quite match. Nobody can promise it is still there. It was more than a hundred years ago.\n\nHouses keep their doors. Walls keep the ones they lost.\n",
@@ -12211,22 +8232,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Juliette Gordon Low Birthplace, Garden, 10 East Oglethorpe Avenue, Savannah (HALS GA-4)",
-        "publisher": "Library of Congress, Historic American Landscapes Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ga1151/"
-      },
-      {
-        "title": "Wayne-Gordon House, 10 East Oglethorpe Avenue, Savannah (HABS): record and data pages",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ga0010/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This is the house where Juliette Gordon Low was born, in eighteen sixty. Her family called her Daisy. Fifty-two years later, in this city, she started the Girl Scouts.\n\nHer grandfather bought the house in eighteen thirty-one, and Gordons lived here for generations. The Girl Scouts bought it in nineteen fifty-three.\n\nIf you go into the garden, look for the iron double gate in the east wall.\n\nShe made it.\n\nNot ordered it. Designed and made it, in eighteen eighty-nine, for her own house in England, an estate called Wellesbourne. In nineteen twenty-six she brought it home to Savannah, to stand at the entrance of a small park east of the city, where many of the early Girl Scout meetings were held. In nineteen seventy-two it was moved here for safekeeping.\n\nThe garden around it is a reconstruction, laid out in the nineteen fifties from the memories of her relatives. They did not agree. One remembered circles. Another remembered dirt paths, violets, a banana tree. A photograph taken at Daisy's wedding, in eighteen eighty-six, showed paths running out from the porch.\n\nEverything else in this garden had to be remembered. The gate, she made.\n",
@@ -12272,36 +8278,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Atlanta semi-weekly journal, 8 November 1910, page 5: Oglethorpe statue is now in position",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn86090947/1910-11-08/ed-1/?sp=5"
-      },
-      {
-        "title": "The Montgomery advertiser, 24 November 1910, page 3: statue of Oglethorpe is unveiled",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn84020645/1910-11-24/ed-1/?sp=3"
-      },
-      {
-        "title": "New-York tribune, 24 November 1910, page 7: Oglethorpe honored",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn83030214/1910-11-24/ed-1/?sp=7"
-      },
-      {
-        "title": "James Edward Oglethorpe",
-        "publisher": "National Park Service, Fort Frederica National Monument",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/fofr/learn/historyculture/james-edward-oglethorpe.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand on the south side of the square and look up at the man in bronze.\n\nHe is young. Full uniform, a hand resting on his sword hilt. When the statue was unveiled in November nineteen ten, the newspapers made a point of it. Most old prints showed James Oglethorpe as an old man. The sculptor, Daniel Chester French, gave the city a soldier instead.\n\nNow look at which way he is facing.\n\nWhen the figure was hoisted onto its pedestal, a few weeks before the unveiling, the Atlanta paper noted one detail. The figure faces south.\n\nSouth, in Oglethorpe's day, was the problem. The land below Savannah was claimed by both Britain and Spain, and Georgia was meant, in part, as a military buffer against Spanish Florida. Oglethorpe built a fort town on St. Simons Island. In seventeen forty he besieged St. Augustine for thirty-eight days, and failed. Two years later he turned back a Spanish invasion of Georgia.\n\nThe papers of nineteen ten did not say whether that was the point of the pose.\n\nHe sailed for England in seventeen forty-three and never came back. He is buried at Cranham, on the edge of London.\n\nHe is still watching the southern road.\n",
@@ -12350,43 +8327,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Historical record of the city of Savannah (Lee and Agnew, 1869): Burial of Major-General Greene; Monuments",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007699/"
-      },
-      {
-        "title": "The Savannah morning news, 5 March 1901, page 10: Greene's body found",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn89053684/1901-03-05/ed-1/?sp=10"
-      },
-      {
-        "title": "Evening times-Republican, 7 March 1901, page 1: Nathaniel Greene's grave discovered",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn85049554/1901-03-07/ed-1/?sp=1"
-      },
-      {
-        "title": "The Spokane press, 14 November 1902, page 3: body of Gen. Greene placed beneath monument",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn88085947/1902-11-14/ed-1/?sp=3"
-      },
-      {
-        "title": "Nathanael Greene",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/nathanael-greene.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the tall monument in the middle of Johnson Square.\n\nWhen it went up in eighteen twenty-nine, it was paid for partly by a state lottery, and it was meant to honour two Revolutionary generals at once. Nathanael Greene, and Casimir Pulaski. A city history forty years later described it as plain, without an inscription.\n\nGreene had died near Savannah in seventeen eighty-six, after what may have been sunstroke. He was buried in the old burying ground on what was then South Broad Street, with the artillery firing minute guns.\n\nAnd then Savannah lost him.\n\nFor more than a century nobody could say for certain where his body was. The stories grew. That he had been spirited away at night. That he had been sunk in a creek. That he had been carried off to Cumberland Island.\n\nIn March nineteen-oh-one, a committee sent by the Rhode Island Society of the Cincinnati opened a family vault in that old cemetery. Inside was a coffin plate. On it, the name Greene, and the date seventeen eighty-six. Beside him lay a second body, believed to be his son, George Washington Greene, who had drowned in the river as a young man.\n\nNone of the stories was true. He had been exactly where he was put.\n\nIn November nineteen-oh-two, father and son were buried again. Here, beneath the monument.\n\nFor seventy-three years, it had been his memorial with nobody under it. It just took a while for him to arrive.\n",
@@ -12435,22 +8376,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Savannah and its surroundings (G. A. Gregory, 1890)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007695/"
-      },
-      {
-        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/unk84031503/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Face the building on the corner, with the portico and a man's name on the front. W. B. Hodgson Hall.\n\nWilliam Hodgson did not build it. His widow Margaret and her sister Mary Telfair built it in his memory, in eighteen seventy six, for the Georgia Historical Society.\n\nThe Society had been collecting since eighteen thirty nine. Books, papers, anything touching the history of Georgia. By eighteen ninety it had about twenty thousand volumes.\n\nA guidebook of the time admitted the outside was plain. It was built for the convenience of a library. The inside was the part worth seeing.\n\nThen, in eighteen ninety three, the Society lent its books and this building to the city, so that Savannah could have a public library. The Society kept on collecting.\n\nA husband's name on the front. His widow's money in the walls. And for a while, the books inside belonged to everyone.\n",
@@ -12488,29 +8414,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The Cathedral in Ruins (The morning news, Savannah, 7 February 1898, page 8)",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn86063034/1898-02-07/ed-1/?sp=8"
-      },
-      {
-        "title": "Savannah's New Cathedral (The Savannah morning news, 28 October 1900, page 10)",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn89053684/1900-10-28/ed-1/?sp=10"
-      },
-      {
-        "title": "Dedication sermon report (The Savannah morning news, 29 October 1900, page 8)",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn89053684/1900-10-29/ed-1/?sp=8"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the two spires of the cathedral, then down the long walls beneath them.\n\nOn a Sunday night in February, eighteen ninety eight, a streetcar driver coming through this square saw fire. It was about ten minutes to eleven.\n\nThe alarm went in quickly. It did not help. Every engine in the city was down at a big fire on River Street. The hose wagons that came had almost no pressure. Firemen stood on the Harris Street sidewalk, about where you are, and their streams barely reached the first window sill.\n\nIt was three quarters of an hour before an engine arrived. By then the roof was gone.\n\nThousands of people stood around the square and watched sparks pour from the towers like fireworks. Some of the sparks burned holes in their hats and coats.\n\nThe next morning the paper said nothing remained but the four walls and parts of the two spires.\n\nThe rebuilding went to the same architect who had designed the church in the first place. He kept its lines. The spires, the towers, the tall pointed windows. Two years and eight months after the fire, the cathedral was dedicated again.\n\nSo the shape you are looking at is the shape that crowd watched burn. What is new is almost everything inside.\n",
@@ -12550,29 +8454,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Historical record of the city of Savannah (F. D. Lee and J. L. Agnew, 1869)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007699/"
-      },
-      {
-        "title": "Savannah and its surroundings (G. A. Gregory, 1890)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007695/"
-      },
-      {
-        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/unk84031503/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the bronze soldier on top of the monument in the middle of the square. His left hand holds a battle-worn flag out at arm's length. His right hand is pressed against his side, over a bullet wound.\n\nHis name was William Jasper, a sergeant in a South Carolina regiment.\n\nSome time before he died, the British fleet bombarded Fort Moultrie, and the fort's flagstaff was shot in two. Jasper caught the flag, tied it to a sponge staff, and jumped up onto the rampart to hold it there until a new pole was found.\n\nHe was offered a commission as an officer. He turned it down. He said he could neither read nor write, and so did not think himself worthy. The governor offered it again. He refused again.\n\nOn the ninth of October, seventeen seventy nine, in the attack on the British lines at Spring Hill, Jasper was mortally wounded. He carried his regiment's colours off the field anyway.\n\nA hundred years later to the day, Savannah laid the cornerstone of this monument. When it was unveiled in eighteen eighty eight, the President came.\n\nHe refused to be made an officer. So the city made him fifteen feet tall.\n",
@@ -12617,29 +8499,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The morning news (Savannah), 5 February 1899, page 8: Over Tomochichi's grave",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn86063034/1899-02-05/ed-1/?sp=8"
-      },
-      {
-        "title": "The morning news (Savannah), 24 April 1899, page 2: Is not a boulder",
-        "publisher": "Library of Congress, Chronicling America",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn86063034/1899-04-24/ed-1/?sp=2"
-      },
-      {
-        "title": "Historical record of the city of Savannah (Lee and Agnew, 1869): Burial of Tomichichi",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007699/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Find the big rough granite stone in the southeast corner of Wright Square.\n\nIt honours Tomochichi, the Yamacraw leader whose friendship the first colonists depended on. When he died, he had asked to be buried among the English. His body came down the river by canoe. Oglethorpe himself was one of the pall-bearers, and the militia fired three volleys as he was lowered into the ground, in this square.\n\nExactly where in this square, nobody knows.\n\nIn eighteen ninety-nine, as the Georgia Society of Colonial Dames prepared to mark the grave, the Savannah Morning News laid out the candidates. One tradition put him under the courthouse. Another, under the Gordon monument in the middle of the square. A pile of stones had once stood here, said to be over his body.\n\nThe best evidence the Dames had came from an old woman who had died a few months before, at eighty-nine. She remembered recess at a school near the square, and the children shouting, let's go play on old Tomochichi's grave. They would race to the northeast corner, in front of the Lutheran church.\n\nSo why is the stone in the southeast corner?\n\nBecause it could be seen better here. The paper said so, plainly.\n\nThe granite came from Stone Mountain, given by a quarry owner and carried free by the railroad. A few days before the dedication, the same paper pointed out that it was not, technically, a boulder.\n\nLook across to the northeast corner. He may well be over there.\n",
@@ -12689,36 +8549,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Mickve Israel Synagogue, 428 Bull Street, Savannah (HABS GA-1190), data pages",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ga0132/"
-      },
-      {
-        "title": "Historical record of the city of Savannah (F. D. Lee and J. L. Agnew, 1869)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007699/"
-      },
-      {
-        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/unk84031503/"
-      },
-      {
-        "title": "Savannah and its surroundings (G. A. Gregory, 1890)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007695/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "From the east side of the square, look at the building with the pointed windows and the tower. Buttresses down its sides. A big pointed window over the entrance. Inside, the plan is shaped like a cross, with a nave and transepts.\n\nYou would guess it was a church.\n\nNow look at the very top of the tower. An onion dome.\n\nThis is a synagogue, the home of Congregation Mickve Israel. It went up between eighteen seventy six and eighteen seventy eight.\n\nThe congregation is far older than the building. Savannah's first colonists arrived in February, seventeen thirty three. In July, a group of about forty Jewish settlers arrived straight from London, paying their own way. They brought two scrolls of the Law with them, and an Ark to keep them in.\n\nHow the congregation grew from there is not clear. In eighteen sixty nine, a historian of the city spent a long time trying to find the date it was founded, and gave up. Its written records begin in seventeen ninety, the year of its charter.\n\nThe scrolls arrived first. The paperwork caught up fifty seven years later.\n",
@@ -12763,36 +8594,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "contested",
-    "sources": [
-      {
-        "title": "Historical record of the city of Savannah (Lee and Agnew, 1869): the occupation, and the old burying ground on South Broad Street",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007699/"
-      },
-      {
-        "title": "Scene from Colonial Park Cemetery in Savannah, Georgia (Carol M. Highsmith, catalogue description)",
-        "publisher": "Library of Congress, Prints and Photographs Division",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/2017880503/"
-      },
-      {
-        "title": "Colonial Park, Savannah, Chatham County, Georgia: monuments and brick vaults, formerly South Broad Street Cemetery (Carnegie Survey of the Architecture of the South)",
-        "publisher": "Library of Congress, Prints and Photographs Division",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/2017886427/"
-      },
-      {
-        "title": "Savannah",
-        "publisher": "National Park Service, Fort Pulaski National Monument",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/fopu/learn/historyculture/savannah.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Walk in among the old brick vaults.\n\nThis was the town's burying ground from about seventeen fifty. First for the parish of Christ Church, then, from seventeen eighty-nine, for people of every denomination. The avenue outside was called South Broad Street then.\n\nIn December eighteen sixty-four, Sherman's army marched into Savannah.\n\nA history of the city, published in eighteen sixty-nine, makes an accusation about what followed. It says soldiers broke open the vaults in this old burying ground, searching for valuables they believed had been hidden inside. It says the same happened at Bonaventure, outside town. And it says Union earthworks were dug straight through the Catholic cemetery.\n\nThat is one account. It was written by Savannahians who had every reason to resent the occupation, and it should be heard that way.\n\nYou may hear other stories in here about what the soldiers did. This one has an advantage. Somebody wrote it down within four years, while the damage could still be seen.\n\nEvery one of these vaults was built to stay shut.\n",
@@ -12832,22 +8634,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Richardson-Maxwell-Owen-Thomas House, 124 Abercorn Street, Savannah (HABS GA-14-9): record and significance statement",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ga0091/"
-      },
-      {
-        "title": "HABS GA-14-9 data pages, including the 1936 architectural notes",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/ga/ga0000/ga0091/data/ga0091data.pdf"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Start with the front of the house. The curved double stair. The curved porch above it. The cast-iron balcony on the side.\n\nIt was finished in eighteen nineteen, to designs by the English architect William Jay. When surveyors from the Historic American Buildings Survey came here in the nineteen thirties, this is what they wrote about. The curves. The Greek fret on the parlour ceiling. A white marble mantel, carved with women carrying baskets of fruit.\n\nThen they reached the basement. They listed a kitchen, a bakery, a wine cellar, and servants' quarters.\n\nThat was all. One word. Servants.\n\nBehind the house stands its original carriage house. The Library of Congress record for this property now describes it as containing one of the earliest intact urban slave quarters in the South. The people who lived and worked there were enslaved by the families in the big house.\n\nThe survey that measured every curve of the staircase did not write down a single one of their names.\n\nTheir rooms are still standing. The house is a museum now, and the quarters are part of it.\n",
@@ -12886,14 +8673,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.87,
     "visibility": "landmark-visible",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Savannah Historic District — National Historic Landmark documentation",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "If you can see the ground on the left, look for a pattern: a grid, interrupted at regular\nintervals by small green squares.\n\nThat layout was drawn in seventeen thirty-three, before there was a city to put it in.\nJames Oglethorpe laid out a repeating unit, a square with house lots and civic lots\naround it, and the plan was simply to keep repeating it as the place grew.\n\nTwenty-four were eventually built. Twenty-two are still there.\n\nCities almost never survive this. Street plans get widened for carts, then for trams, then\nfor cars, and the awkward bits get straightened out. Savannah's squares are exactly the\nawkward bits. They force traffic to slow down and go around.\n\nThree were lost to a road scheme in the nineteen fifties. One has since been put back.\n",
@@ -12931,43 +8711,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Florence Martus",
-        "publisher": "National Park Service, Fort Pulaski National Monument",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/florence-martus.htm"
-      },
-      {
-        "title": "\"Waving Girl\" keeps her vigil in Savannah harbor 30 years, The Washington daily news, May 5, 1923, image 5",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/resource/sn82016181/1923-05-05/ed-1/?sp=5"
-      },
-      {
-        "title": "Lovelorn salutes by \"Waving Girl\" to vessels ended, Evening star, June 1, 1931, image 22",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn83045462/1931-06-01/ed-1/?sp=22"
-      },
-      {
-        "title": "Spent her lifetime waving at sailors, Detroit evening times, May 23, 1943, image 84",
-        "publisher": "Chronicling America, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/resource/sn88063294/1943-05-23/ed-1/?sp=84"
-      },
-      {
-        "title": "Felix de Weldon's Waving Girl statue on Savannah, Georgia's, waterfront",
-        "publisher": "Carol M. Highsmith Archive, Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/item/2017880364/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the statue, waving at the river.\n\nHer name was Florence Martus. She was born in eighteen sixty eight on Cockspur Island, at the mouth of this river, the daughter of a sergeant at Fort Pulaski. As a small child she waved her handkerchief at the passing ships, and the sailors waved back.\n\nA few years later she went to live with her brother George, a lightkeeper, in a cottage on Elba Island, between here and the sea. And she kept waving. A cloth by day. A lantern by night. Every ship in. Every ship out.\n\nThe ships answered. Steamers gave three blasts of the whistle. Sailing ships dipped their flags. A reporter wrote that a letter addressed only to the Waving Girl would probably reach her from anywhere in the world.\n\nThe sailors had a story about why. A sweetheart lost at sea, they said, and she waved so that she would be the first to greet him when he came home.\n\nShe never confirmed it. In nineteen twenty three she told a reporter that the sailors were all her sweethearts.\n\nIn nineteen thirty one her brother retired, and she came ashore with him. She had been waving for forty four years.\n\nShe died in nineteen forty three. Here, she is still at it.\n",
@@ -13021,29 +8765,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Historical record of the city of Savannah (Lee and Agnew, 1869): Churches, Christ Church; Arrival of Revs. John and Charles Wesley",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007699/"
-      },
-      {
-        "title": "John and Charles Wesley",
-        "publisher": "National Park Service, Fort Frederica National Monument",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/fofr/learn/historyculture/john-and-charles-wesley.htm"
-      },
-      {
-        "title": "Christ Church (Episcopal), 28 Bull Street, Savannah (HABS GA-236): record, data pages and addendum",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ga0032/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the white columns of Christ Church, facing the square.\n\nThis building went up in the eighteen thirties. A fire gutted it in eighteen ninety-seven, and it was rebuilt the year after. So none of what you are looking at was here for the most famous minister this congregation ever had.\n\nIn fact, nothing was.\n\nJohn Wesley, who would go on to found Methodism, arrived in Savannah in seventeen thirty-six as the colony's minister. This lot had been set aside for a church in the summer of seventeen thirty-three. But work did not begin until seventeen forty, and the first church was not finished until seventeen fifty. In Wesley's time, services were held in a courthouse a short walk north, near the bluff.\n\nA chronicler of the day remembered a night when a ball and public prayers were announced for the same hour. The church was full. The ballroom was so empty that the dancing could not go ahead.\n\nIt did not last. Wesley refused communion to Sophia Williamson, a woman he had courted before she married another man. Many in town thought it was spite. Facing a court case, he left Georgia in December seventeen thirty-seven, writing that he had shaken off the dust of his feet.\n\nAs far as the record shows, he never preached on this spot. The church's list of its ministers has his name on it all the same.\n",
@@ -13082,36 +8804,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Historical record of the city of Savannah (F. D. Lee and J. L. Agnew, 1869), chapter on the siege and the assault upon Spring Hill redoubt",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007699/"
-      },
-      {
-        "title": "Savannah souvenir number, Pulaski sesqui-centennial celebration (Georgia Historical Society, 1929)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ca30001435/"
-      },
-      {
-        "title": "Casimir Pulaski",
-        "publisher": "National Park Service, Fort Pulaski National Monument",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/casimir-pulaski.htm"
-      },
-      {
-        "title": "Central of Georgia Railway, Savannah Repair Shops (HAER GA-1), data pages",
-        "publisher": "Library of Congress, Historic American Engineering Record",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ga0356/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand in the park here, beside the old railroad depot. In seventeen seventy nine this ground was Spring Hill, the strongest point in the British lines around Savannah. It guarded the road to Augusta.\n\nOn the eighth of October, the French and American armies besieging the town got their orders for an attack on this spot, before dawn. Nobody was to fire until the redoubt was taken. And so that they could tell friend from enemy in the dark, every man was to wear a piece of white paper in his hat.\n\nThat night, a sergeant major of the American grenadiers slipped away to the British. He took a copy of the orders with him. The British commander moved men to this side of his line.\n\nThe columns lost their way in the dark and arrived in daylight. The British were waiting. French and American flags were planted on the redoubt, and torn down, and planted again. The fight began at daybreak. By nine o'clock it was over.\n\nThe allies had brought about four thousand nine hundred men. Around eleven hundred were killed or wounded that morning.\n\nIn eighteen thirty seven, the redoubt itself was dug down to fill the ground for the new railroad depot. Bayonets and bullets came up with the soil.\n\nThey had planned everything, down to the paper in their hats. What they could not plan for was a man walking across with the plan.\n",
@@ -13150,36 +8843,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "contested",
-    "sources": [
-      {
-        "title": "Casimir Pulaski",
-        "publisher": "National Park Service, Fort Pulaski National Monument",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/people/casimir-pulaski.htm"
-      },
-      {
-        "title": "Savannah and its surroundings (G. A. Gregory, 1890)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007695/"
-      },
-      {
-        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/unk84031503/"
-      },
-      {
-        "title": "Savannah souvenir number, Pulaski sesqui-centennial celebration (Georgia Historical Society, 1929)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ca30001435/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the tall marble column in the middle of the square. Liberty stands on top, holding a flag.\n\nNow look lower down, for the carved panel of a man falling from his horse, still gripping his sword.\n\nThat is Casimir Pulaski, a Polish cavalry commander who fought for the Americans. On the ninth of October, seventeen seventy nine, he was hit by grapeshot leading an attack on the British lines around Savannah. Two days later he was dead.\n\nThis monument was finished in eighteen fifty five. What lies beneath it is a harder question.\n\nOne account says he was put aboard a ship bound for Charleston, died at sea, and was buried at sea. An officer of his who was wounded and on board the same ship said so. The Park Service still says he was reported to have been buried at sea.\n\nThe other story says he was carried to a plantation called Greenwich, died there, and was buried at night under a palmetto tree. A city guidebook in nineteen ten went further. His remains, it said, were dug up in eighteen fifty four and placed beneath this monument.\n\nPeople were arguing about it while the marble was going up.\n\nThe man falling from his horse is certain. The man beneath him is not.\n",
@@ -13225,29 +8889,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Savannah, Georgia: The Lasting Legacy of Colonial City Planning (Teaching with Historic Places)",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/articles/savannah-georgia-the-lasting-legacy-of-colonial-city-planning-teaching-with-historic-places.htm"
-      },
-      {
-        "title": "A brief account of the establishment of the colony of Georgia, under Gen. James Oglethorpe, February 1, 1733 (1835)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/02013274/"
-      },
-      {
-        "title": "Illustrated guide to Savannah (Maude Heyward, 1910)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/unk84031503/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Find the granite bench beside the path, just west of City Hall.\n\nIt was put here in nineteen oh six to mark the spot where, by tradition, James Oglethorpe pitched his tent under four pine trees in February seventeen thirty three. The town around you grew out from that tent.\n\nNow look north, toward the river, and think about the drop.\n\nOne of the colonists, Peter Gordon, wrote the landing down. The bluff was forty feet straight up, he said, and the sand was so loose that carrying their goods to the top would have been miserable, if Captain Scott and his men had not built them stairs.\n\nAbout an hour after they landed, they had visitors. The Yamacraw came with their chief, Tomochichi, and a trader to interpret. One of their men danced in front, white feathers on his head and rattles in his hands.\n\nThis was not empty country. Oglethorpe had come up the river weeks earlier, chosen the site, and made terms with Tomochichi before a single colonist arrived.\n\nWhen Oglethorpe wrote to London to explain his choice, he listed the height, the dry sandy soil, the fresh water and the shelter of the pines. Then he gave what he called the last and fullest proof that the place was healthy.\n\nAn Indian nation, who knew the nature of this country, had chosen it for their home.\n",
@@ -13301,22 +8943,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Historical record of the city of Savannah (Lee and Agnew, 1869): Gallant capture of Governor Wright by Major Joseph Habersham",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-15",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/01007699/"
-      },
-      {
-        "title": "Telfair Academy of Arts and Sciences, Savannah (HABS GA-217): data pages, including the Academy's published history of the site",
-        "publisher": "Library of Congress, Historic American Buildings Survey",
-        "retrievedAt": "2026-10-15",
-        "rights": "fair-use-facts",
-        "url": "https://www.loc.gov/item/ga0221/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The grand house on the west side of Telfair Square is the Telfair Academy, designed by the English architect William Jay about two centuries ago. Mary Telfair left it in her will to become an academy of arts and sciences.\n\nBut the academy's own account of this ground goes back further. This, it says, was the site of Government House, home of Georgia's royal governor.\n\nIn January seventeen seventy-six, British warships were lying off Tybee. On the eighteenth, Savannah's Council of Safety voted to arrest the governor, Sir James Wright.\n\nA major named Joseph Habersham, twenty-four years old, volunteered. That evening the governor was meeting his council in his house. Habersham walked past the sentries at the door, alone. He went into the room, up to the head of the table, laid his hand on the governor's shoulder, and said, Sir James, you are my prisoner.\n\nAccording to the city's history of eighteen sixty-nine, the councillors assumed he had a large force close behind him. They fled through the doors and the windows.\n\nHe did not have a large force.\n\nWright gave his word that he would not leave town, and was kept in his own house under guard.\n\nHe kept his word for twenty-four days. Then he slipped past the sentries, ran to Bonaventure, and was rowed out to a British ship.\n",
@@ -13365,15 +8992,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.94,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "St Paul's Chapel",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/st-paul-s-chapel.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This is the oldest public building in Manhattan still doing the thing it was built to do.\n\nIt went up in 1766, when this was the northern edge of town and the front of the chapel\nfaced the river, because that was the direction people arrived from.\n\nTen years later a fire took a quarter of the city and stopped at its churchyard.\n\nGeorge Washington came here on the day he was inaugurated, and kept coming for the two\nyears New York was the capital. His pew is still inside.\n\nOn the eleventh of September 2001, the towers came down about a hundred metres from where\nyou are standing. Every window in this chapel survived. For eight months afterwards it\nwas where the recovery workers slept and ate and had their feet seen to.\n\nA sycamore tree in the churchyard took the weight of the debris that would otherwise have\nhit the building. It did not survive. The chapel did.\n",
@@ -13432,20 +9051,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.9,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "People v. Chapman — conviction and sentence, New York Supreme Court, 1981",
-        "publisher": "New York State Unified Court System",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      },
-      {
-        "title": "Strawberry Fields — landscape and memorial record",
-        "publisher": "NYC Parks",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stop at the mosaic and look down.\n\nOne word. The mosaic was a gift from the city of Naples.\n\nTurn around. Through the trees, you can still see the Dakota. You walked it in three\nminutes.\n\nThe city named this part of the park after a song rather than after a man. Yoko Ono wanted\na landscape instead of a statue, and she wanted it dedicated to peace rather than to what\nhappened across the road.\n\nSo there are two places, three minutes apart.\n\nOne is where he died. It is unmarked, and people live there.\n\nThe other is a word on the ground, and strangers sit around it all day.\n\nShe chose which one to build.\n",
@@ -13491,29 +9097,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "About us",
-        "publisher": "National Civil Rights Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://civilrightsmuseum.org/about-us/"
-      },
-      {
-        "title": "April 4th a day of remembrance",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/malu/april-4th-a-day-of-remembrance.htm"
-      },
-      {
-        "title": "Tennessee: The Lorraine Motel",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/tennessee-the-lorraine-hotel-memphis.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the balcony.\n\nOn April 4, 1968, Martin Luther King Jr. stood there.\n\nHe had come to Memphis to support striking Black sanitation workers seeking better pay\nand safer working conditions.\n\nThe Lorraine was a place to stay while that work continued.\n\nThen King was shot.\n\nHe died that evening.\n\nPause before looking away.\n\nThis site can become so familiar through photographs that the balcony starts to feel\nlike an image rather than a place.\n\nBut it was a place.\n\nThere was a room behind him. A city around him. A campaign still underway.\n\nThe workers’ demands had not disappeared. Neither had the need for the work he was\ndoing.\n\nToday, the museum preserves this location within the larger history of civil rights.\n\nLook at the balcony once more.\n\nRemember the reason he was in Memphis, as well as what happened here.\n",
@@ -13556,22 +9140,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Ghost stories the pittee girls",
-        "publisher": "St. Augustine Lighthouse and Maritime Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.staugustinelighthouse.org/2020/03/02/ghost-stories-the-pittee-girls/"
-      },
-      {
-        "title": "Pittee descendants visit the museum",
-        "publisher": "St. Augustine Lighthouse and Maritime Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.staugustinelighthouse.org/2023/03/19/pittee-descendants-visit-the-museum/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the lighthouse.\n\nBefore the tower was completed, this was a construction site where children sometimes\nplayed.\n\nIn July 1873, children rode a cart used to transport building materials.\n\nThe cart overturned into the water.\n\nThree girls drowned, including two daughters of construction superintendent Hezekiah\nPittee. A younger sister survived.\n\nThe museum documents that tragedy.\n\nThe ghost stories came afterward.\n\nIts published accounts describe reports of unexplained footsteps and a little girl\nappearing in the keeper’s house.\n\nSome people connect those stories to the children who died.\n\nThat connection is belief, not an established fact.\n\nPause beneath the tower.\n\nA lighthouse is built to guide people away from danger.\n\nHere, a childhood accident became part of the place’s remembered history, then part of\nits folklore.\n\nThe deaths were real.\n\nThe stories of children still moving through the property remain unverified.\n\nBoth deserve to be told with care.\n",
@@ -13608,29 +9177,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Faq the assassination",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://home.nps.gov/foth/learn/historyculture/faq-the-assassination.htm"
-      },
-      {
-        "title": "Lincolns death",
-        "publisher": "Ford's Theatre",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://fords.org/lincolns-assassination/lincolns-death/"
-      },
-      {
-        "title": "The Petersen House",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/foth/the-petersen-house.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look from Ford’s Theatre to the house across the street.\n\nThat short distance became the final journey of Abraham Lincoln’s life.\n\nOn April 14, 1865, Lincoln attended a performance of Our American Cousin.\n\nActor John Wilkes Booth knew the theatre. That evening, he entered the presidential box\nand shot the president.\n\nBooth escaped from the theatre. Lincoln could not.\n\nPeople carried the wounded president across Tenth Street into the Petersen family’s\nboarding house.\n\nHe died there the following morning, April 15.\n\nLook at the crossing again.\n\nToday, it takes only a few seconds to walk from one side to the other.\n\nOn that night, people crossed it carrying the president of the United States, trying to\nfind somewhere to care for him.\n\nThe theatre marks the attack.\n\nThe house marks his death.\n\nBetween them is an ordinary city street that briefly became the center of a national\ncatastrophe.\n",
@@ -13673,29 +9220,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Theft",
-        "publisher": "Isabella Stewart Gardner Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.gardnermuseum.org/about/theft"
-      },
-      {
-        "title": "Inside the fbi podcast the isabella stewart gardner museum heist",
-        "publisher": "Federal Bureau of Investigation",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.fbi.gov/news/podcasts/inside-the-fbi-podcast-the-isabella-stewart-gardner-museum-heist"
-      },
-      {
-        "title": "Isabella Stewart Gardner Museum Heist",
-        "publisher": "Federal Bureau of Investigation",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.fbi.gov/history/cases-and-criminals/isabella-stewart-gardner-museum-heist"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the empty frames.\n\nIn most museums, an empty frame means something is being moved or restored.\n\nHere, it means something was stolen.\n\nEarly on March 18, 1990, two men dressed as police officers arrived at the Isabella\nStewart Gardner Museum. They claimed they were responding to a disturbance.\n\nA guard let them inside.\n\nThe men restrained the guards and stole thirteen works of art.\n\nAmong the missing pieces were paintings by Rembrandt and Vermeer. The thieves left\nbehind spaces that visitors would continue to see for decades.\n\nPause beside one of those spaces.\n\nA museum normally asks you to examine what is present: the brushwork, the light, the\nexpression on a face.\n\nThis room also asks you to notice what is missing.\n\nThe theft remains unresolved, and the museum continues seeking the return of its art.\n\nThose frames are waiting.\n\nThe most striking thing in this room may be something nobody can show you.\n",
@@ -13738,29 +9263,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "San diego paranormal ghost hunting",
-        "publisher": "Whaley House Museum, Save Our Heritage Organisation",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.whaleyhousesandiego.com/san-diego-paranormal-ghost-hunting/"
-      },
-      {
-        "title": "Whaley House (HABS CA-422)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ca0615/"
-      },
-      {
-        "title": "The First San Diego Courthouse",
-        "publisher": "California State Parks",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.parks.ca.gov/?page_id=30565"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the upstairs windows.\n\nOne of the Whaley House’s oldest ghost stories begins with footsteps.\n\nBefore the house was built, James Robinson, known as Yankee Jim, was executed on this\nproperty in 1852.\n\nThe Whaley family built their home here several years later.\n\nAccording to the house’s published account, family members reported heavy footsteps\nupstairs and on the staircase.\n\nThomas Whaley believed the sounds belonged to Robinson.\n\nThat is the legend’s explanation. It is not proof of a haunting.\n\nBut notice the strange overlap.\n\nA family built a home on land where a public execution had taken place. The story later\nplaced the dead man inside their everyday surroundings.\n\nNo distant cemetery. No ruined castle.\n\nJust someone walking above the rooms where people lived.\n\nLook at the windows again.\n\nThe unsettling part of this legend is how little it needs: a quiet room downstairs, and\nfootsteps where nobody should be.\n",
@@ -13797,36 +9300,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "1191",
-        "publisher": "Encyclopedia of Chicago, Chicago Historical Society",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.encyclopedia.chicagohistory.org/pages/1191.html"
-      },
-      {
-        "title": "Massacre wall",
-        "publisher": "The Mob Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://themobmuseum.org/exhibits/massacre-wall/"
-      },
-      {
-        "title": "St valentines day massacre",
-        "publisher": "The Mob Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://themobmuseum.org/case-files/the-exhibits/st-valentines-day-massacre/"
-      },
-      {
-        "title": "Al Capone",
-        "publisher": "Federal Bureau of Investigation",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.fbi.gov/history/cases-and-criminals/al-capone"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The garage is gone.\n\nOn February 14, 1929, it stood at this address.\n\nInside, seven men associated with George “Bugs” Moran’s bootlegging organization were\nlined up against a wall and shot.\n\nThe killings became known as the St. Valentine’s Day Massacre.\n\nThe crime helped define the public image of Prohibition-era Chicago: rival\norganizations, illegal alcohol, and violence reaching far beyond a private dispute.\n\nAl Capone became a leading suspect in public accounts.\n\nBut he was never convicted of this massacre, and the case remains unsolved.\n\nLook at the space where the building stood.\n\nYou cannot inspect its rooms here. Even the original bullet-marked wall was removed;\nportions are now displayed at the Mob Museum in Las Vegas.\n\nThe address survives in Chicago.\n\nThe evidence traveled.\n\nThe name became famous.\n\nBehind that name were seven deaths, and a crime whose reputation became clearer than its\ncomplete solution.\n",
@@ -13869,15 +9343,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "The story of annies doll",
-        "publisher": "The Real Mary King's Close",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.realmarykingsclose.com/experience/the-story-of-annies-doll/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This story begins with a visitor’s claim.\n\nIn the 1990s, Japanese psychic Aiko Gibo visited Mary King’s Close.\n\nAccording to the attraction’s account, she said she sensed a young girl in a room off\nAllan’s Close.\n\nThe girl, she claimed, was called Annie and was distressed because she had lost her\ndoll.\n\nGibo brought a replacement.\n\nVisitors later began leaving toys of their own.\n\nHere is the important distinction: the attraction says its researchers have not found a\nhistorical record identifying a child named Annie as the girl in this story.\n\nThe ghost’s identity is unverified.\n\nThe visitors’ response is real.\n\nPeople heard about a lonely child and wanted to offer comfort.\n\nLook around the room.\n\nSome ghost stories are built around a threat approaching from the dark.\n\nThis one is built around something missing.\n\nA child without her family.\n\nA doll that could be replaced.\n\nA small act of kindness offered to someone nobody could prove was there.\n",
@@ -13914,22 +9380,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "10 2024",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/museum-blog/archives/10-2024"
-      },
-      {
-        "title": "Bellamy Mansion (HABS NC-198)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/nc0053/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look at the windows of the main house.\n\nA longtime Bellamy volunteer described a story about a woman in grey, supposedly seen\nwandering its rooms.\n\nThe museum includes that account in its discussion of hauntings.\n\nIt also asks a revealing question: why do people so strongly want old houses to be\nhaunted?\n\nThe woman has not been established as a supernatural presence. The museum does not\nidentify her as a proven spirit of a particular resident.\n\nInstead, the story became attached to the house.\n\nLook at the windows again.\n\nFrom outside, you can see only part of each room. Reflections and shadows change what\nappears behind the glass.\n\nAn old house contains lives you cannot meet and rooms you cannot fully read from the\nstreet.\n\nThe lady in grey gives that uncertainty a human shape.\n\nBut the building’s documented history deserves attention too.\n\nThe legend is one story people tell about Bellamy.\n\nIt is not the whole story of the people who lived and worked here.\n",
@@ -13966,22 +9417,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "John dillinger",
-        "publisher": "Federal Bureau of Investigation",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.fbi.gov/history/cases-and-criminals/john-dillinger"
-      },
-      {
-        "title": "FBI Chicago History",
-        "publisher": "Federal Bureau of Investigation",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.fbi.gov/history/field-office-histories/chicago"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand outside the theatre and look at the entrance.\n\nOn July 22, 1934, John Dillinger walked through it to watch Manhattan Melodrama.\n\nHe was one of the country’s most wanted fugitives.\n\nFederal agents knew he might come here. A woman accompanying him had provided\ninformation about his plans.\n\nThey waited outside.\n\nAccording to the FBI’s account, Dillinger emerged at about ten-thirty that night. Agent\nMelvin Purvis lit a cigar to signal the others.\n\nThe FBI says Dillinger drew a pistol and ran toward a nearby alley.\n\nAgents fired. Dillinger was fatally wounded.\n\nStay on the sidewalk. There is no need to enter the alley.\n\nLook back toward the theatre doors.\n\nMovie audiences leave carrying a story that has just ended.\n\nThat night, Dillinger stepped out of a fictional gangster story and into the final\nmoments of his own.\n\nThe theatre remains. The nationwide pursuit ended just beyond it.\n",
@@ -14024,22 +9460,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Lost cove cliffs overlook",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/lost-cove-cliffs-overlook.htm"
-      },
-      {
-        "title": "Index",
-        "publisher": "Appalachian State University, Department of Physics",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dancaton.physics.appstate.edu/BML/SeeTheLights/index.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look out toward the ridges.\n\nFor more than a century, people have reported unusual lights around Brown Mountain.\n\nThe descriptions vary: bright points that appear, seem to move, then disappear.\n\nThe lights became part of Appalachian folklore, often given ghostly explanations.\n\nThe National Park Service notes that studies have linked reports to ordinary sources,\nincluding vehicle headlights.\n\nSo a distant light is not evidence of a spirit.\n\nBut distance makes certainty difficult.\n\nYou may not see the road beneath a moving light. You may not recognize the angle. Trees\ncan hide a source and reveal it again.\n\nThat uncertainty helped the legend endure.\n\nWatch from the designated overlook. There is no need to chase anything into the woods.\n\nIf you see a light, notice its direction and movement before deciding what it is.\n\nThe landscape is real.\n\nThe reports are documented.\n\nWhat people make of them is where the ghost story begins.\n",
@@ -14076,22 +9497,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Alcatraz escape",
-        "publisher": "Federal Bureau of Investigation",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.fbi.gov/history/cases-and-criminals/alcatraz-escape"
-      },
-      {
-        "title": "Alcatraz.jsp",
-        "publisher": "Federal Bureau of Prisons",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.bop.gov/about/history/alcatraz.jsp"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look into the cells.\n\nIn June 1962, the men inside needed the guards to believe they were sleeping.\n\nSo they left faces on their pillows.\n\nFrank Morris and brothers John and Clarence Anglin made dummy heads using materials that\nincluded paint and human hair.\n\nBehind the cells, they prepared an escape route. They also assembled makeshift flotation\nequipment from raincoats.\n\nOn the night of June 11, the three men disappeared from their cells.\n\nBy morning, the deception was discovered.\n\nThe faces were still in bed.\n\nThe men were gone.\n\nTheir ultimate fate has never been conclusively established. The escape does not prove\nthey survived the bay.\n\nWhen you later look toward the mainland, notice the water between here and there.\n\nThe men overcame the walls, the checks, and the locks.\n\nThe unanswered part begins beyond the island.\n\nThey left behind something that looked like sleep, and a mystery that never settled.\n",
@@ -14134,22 +9540,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Haunted colorado hot spots ghost hunters",
-        "publisher": "Colorado Tourism Office",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.colorado.com/articles/haunted-colorado-hot-spots-ghost-hunters"
-      },
-      {
-        "title": "Tours",
-        "publisher": "The Stanley Hotel",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.stanleyhotel.com/tours/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Pause somewhere the hotel allows visitors to stand.\n\nListen.\n\nThe Stanley’s ghost folklore includes children laughing in supposedly deserted hallways\nand piano music coming from an empty ballroom.\n\nThose stories appear in Colorado’s official tourism account.\n\nThey are reported experiences, not proof that the dead are making music.\n\nThe hotel is also associated with Stephen King, whose stay helped inspire The Shining.\n\nBut the fictional hotel in that novel is not a documentary account of this building.\n\nKeep the two stories separate.\n\nNow consider the sound at the center of the legend.\n\nMusic normally means somebody is nearby: a player at a piano, a guest rehearsing, a\nrecording in another room.\n\nThe story becomes unsettling when that expected person is missing.\n\nYou hear the notes.\n\nYou look for the musician.\n\nThe room appears empty.\n\nAt the Stanley, that gap between a sound and its visible source has become part of the\nhotel’s identity.\n\nThe music is reported.\n\nThe musician remains a matter of belief.\n",
@@ -14186,29 +9577,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "History",
-        "publisher": "Fraunces Tavern Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://frauncestavernmuseum.squarespace.com/history"
-      },
-      {
-        "title": "Buildings of the Department of State",
-        "publisher": "U.S. Department of State, Office of the Historian",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://history.state.gov/departmenthistory/buildings/section11"
-      },
-      {
-        "title": "Fraunces Tavern Museum Complex (HABS)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/ny1654/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This block is often associated with the American Revolution.\n\nBut its history includes a much more recent act of violence.\n\nOn January 24, 1975, a bomb exploded in the building at 101 Broad Street, part of the\nFraunces Tavern complex.\n\nFour people were killed.\n\nThe organization known as FALN claimed responsibility.\n\nThat claim belongs to the historical record. It does not establish the identity of every\nperson involved in preparing or placing the bomb.\n\nLook at the buildings together.\n\nIt is easy to imagine a historic place as belonging to one period: colonial rooms, old\npaintings, a famous farewell.\n\nPeople continued using these buildings long after that period ended.\n\nThey came here to work, meet, and eat.\n\nThe bombing became another chapter in the life of this block.\n\nStanding here, you are beside a place associated with the founding of a country and with\npeople whose lives ended almost two centuries later.\n\nBoth histories belong to it.\n",
@@ -14251,29 +9620,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "easternstate.org",
-        "publisher": "Eastern State Penitentiary Historic Site",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.easternstate.org/FAQ"
-      },
-      {
-        "title": "Audio tour",
-        "publisher": "Eastern State Penitentiary Historic Site",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://easternstate.org/audio_tour.html"
-      },
-      {
-        "title": "Eastern State Penitentiary (HABS)",
-        "publisher": "Library of Congress",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.loc.gov/item/pa1207/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Stand still for a moment.\n\nLook along the corridor, then toward the cells.\n\nEastern State’s ghost reputation includes stories of shadowy movement and something\nappearing in an otherwise empty prison.\n\nThe historic site has discussed paranormal television investigations, including\ncontroversial footage filmed in Cellblock Twelve.\n\nControversial matters.\n\nA recording that people argue about is not proof of a ghost.\n\nNow listen to the space around you.\n\nA prison changes the meaning of ordinary sounds. A footstep may suggest an approaching\nguard. A door may suggest confinement. Silence may suggest someone listening.\n\nYou do not need to imagine a particular dead prisoner.\n\nThe real people confined here already give these walls a difficult history.\n\nThe haunting stories add another question: can a place seem occupied after the people\nwho lived inside it are gone?\n\nLook down the corridor again.\n\nYou may see nothing unusual.\n\nThe feeling of waiting for something is part of this story.\n",
@@ -14310,22 +9657,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Kansas city massacre pretty boy floyd",
-        "publisher": "Federal Bureau of Investigation",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.fbi.gov/history/cases-and-criminals/kansas-city-massacre-pretty-boy-floyd"
-      },
-      {
-        "title": "100 years of kansas city history",
-        "publisher": "Union Station Kansas City",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://unionstation.org/100-years-of-kansas-city-history/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look toward the station entrance.\n\nOn June 17, 1933, officers brought a handcuffed prisoner through Union Station.\n\nHis name was Frank Nash. They were taking him back to federal prison.\n\nOutside, a car waited.\n\nAs the officers gathered around it, armed men attacked.\n\nThe apparent purpose was to free Nash.\n\nInstead, Nash and four law enforcement officers were killed.\n\nA journey that should have continued toward prison ended here, outside a railway\nstation.\n\nThe killings became known as the Kansas City Massacre.\n\nThey helped drive changes in federal law enforcement, including broader authority for\nfederal agents.\n\nLook at the people arriving and leaving now.\n\nStations are places of movement. Someone steps off a train, crosses a lobby, finds a\nride, continues home.\n\nFor five people that morning, the next part of the journey never happened.\n\nThis entrance became the boundary between an ordinary transfer and a nationally\nconsequential crime.\n",
@@ -14367,22 +9699,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Catherine howard",
-        "publisher": "Historic Royal Palaces",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.hrp.org.uk/hampton-court-palace/history-and-stories/catherine-howard/"
-      },
-      {
-        "title": "Historic hauntings at hampton court palace",
-        "publisher": "Historic Royal Palaces",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.hrp.org.uk/hampton-court-palace/history-and-stories/historic-hauntings-at-hampton-court-palace/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This corridor has a famous ghost story.\n\nAccording to the legend, Catherine Howard runs through it, crying out as she tries to\nreach Henry VIII and plead for mercy.\n\nCatherine was Henry’s fifth wife. She was executed in 1542.\n\nFor generations, people have connected her story with this gallery.\n\nBut the palace’s own historians point out a problem.\n\nHer original apartments no longer exist. Even if she had attempted the escape described\nin the legend, her route would not have passed through this corridor.\n\nSo you are standing in the setting of a ghost story, not a verified escape scene.\n\nLook along the gallery.\n\nThat correction does not erase Catherine’s death. It shows how a real tragedy can\nacquire a location, a sound, and a repeated action over time.\n\nThe legend gives her one endless attempt to reach the king.\n\nHistory does not confirm that she ever ran here.\n",
@@ -14419,22 +9736,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Famous ghost stories of the tower of london",
-        "publisher": "Historic Royal Palaces",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.hrp.org.uk/blog/famous-ghost-stories-of-the-tower-of-london/"
-      },
-      {
-        "title": "Anne Boleyn",
-        "publisher": "Historic Royal Palaces",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.hrp.org.uk/tower-of-london/history-and-stories/anne-boleyn/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look across Tower Green toward the Chapel of St Peter ad Vincula.\n\nAnne Boleyn was executed within the Tower in 1536. She was buried in that chapel.\n\nThose are historical events.\n\nOne of the Tower’s enduring legends says she returns.\n\nIn the version published by Historic Royal Palaces, her ghost moves through the grounds,\nleading a silent procession toward the chapel.\n\nNobody has established that such a procession is supernatural.\n\nBut the story’s route is meaningful.\n\nIt connects the place where a queen’s life ended with the place where her body was\nburied.\n\nNo journey out of the fortress.\n\nOnly a return through it.\n\nPause and look between the green and the chapel.\n\nThe legend imagines movement where history imposed an ending.\n\nAnne’s death is documented. Her supposed return belongs to the stories people tell about\nthis place.\n\nStanding here, you can see how close those two settings are.\n",
@@ -14471,15 +9773,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Special offers",
-        "publisher": "The Queen Mary",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.queenmary.com/special-offers.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "You are aboard a ship where movement and unfamiliar sounds can have ordinary\nexplanations.\n\nThat makes the story of stateroom B340 especially difficult to separate from its\nsurroundings.\n\nThe Queen Mary’s operator publishes reports of nighttime knocks, bathroom lights\nswitching on, faucets running, and doors opening or closing unexpectedly.\n\nThe room has become part of the ship’s ghost folklore.\n\nThose reports are not independently established evidence of spirits.\n\nStill, imagine the situation they describe.\n\nYou are inside a small cabin. You hear a knock.\n\nYou open the door.\n\nNobody is there.\n\nYou close it and return to bed.\n\nThen you hear another sound.\n\nA ship is full of compartments you cannot see into, pipes behind walls, and passages\nbeyond doors.\n\nB340’s legend lives in that uncertainty.\n\nYou know you heard something.\n\nThe harder question is whether the explanation is somewhere nearby, hidden by the ship\nitself.\n",
@@ -14516,36 +9810,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Dallas motorcade",
-        "publisher": "The Sixth Floor Museum at Dealey Plaza",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://emuseum.jfk.org/collections/37371/dallas-motorcade"
-      },
-      {
-        "title": "Chapter 1",
-        "publisher": "National Archives",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.archives.gov/research/jfk/warren-commission-report/chapter-1"
-      },
-      {
-        "title": "Warren Commission Report, Chapter 3",
-        "publisher": "National Archives",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.archives.gov/research/jfk/warren-commission-report/chapter-3.html"
-      },
-      {
-        "title": "House Select Committee on Assassinations, Summary of Findings",
-        "publisher": "National Archives",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.archives.gov/research/jfk/select-committee-report/summary.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Watch the curve of Elm Street.\n\nOn November 22, 1963, President John F. Kennedy’s motorcade passed through this plaza.\n\nPeople had gathered to see him.\n\nAt about twelve-thirty, Kennedy was shot while riding along Elm Street.\n\nHe was taken to Parkland Memorial Hospital, where he was pronounced dead.\n\nLook toward the former Texas School Book Depository.\n\nThe Warren Commission concluded that Lee Harvey Oswald fired from that building. Later\ninvestigations and decades of debate followed.\n\nThis short account does not settle every disputed question.\n\nBut the central event is documented: a president was fatally shot during a public\nmotorcade on the street beside you.\n\nNotice how compact the setting is.\n\nThe road. The windows. The sidewalks where witnesses stood.\n\nAn event that expanded into millions of pages of investigation began within this small\nstretch of city.\n\nYou can stand beside the route.\n\nYou cannot recover the certainty people had before the motorcade reached it.\n",
@@ -14588,15 +9853,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.85,
     "visibility": "landmark-visible",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Trinity Church",
-        "publisher": "National Park Service",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain",
-        "url": "https://www.nps.gov/places/trinity-church.htm"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look up at the spire.\n\nFor forty-four years that was the highest point in New York. Not the tallest church. The\ntallest anything. Ships coming into the harbour saw it before they saw the city.\n\nIt went up in 1846. Two hundred and eighty-one feet, and nothing in this city passed it\nuntil 1890.\n\nWhich means there was a stretch of time, right here, when the largest thing people in New\nYork were willing to build was somewhere to pray.\n\nWhat passed it was a newspaper office. What passed that was an insurance company. Then\nthe banks arrived, and they have not stopped.\n\nAlexander Hamilton is buried in the yard on your right. He was killed in 1804, so he\nnever saw this building. He is lying beside the third church on this spot, in a\ngraveyard that outlasted two of them.\n",
@@ -14648,20 +9905,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.9,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Investigation into the Wall Street explosion of 16 September 1920 — case file",
-        "publisher": "United States Bureau of Investigation",
-        "retrievedAt": "2026-09-28",
-        "rights": "public-domain"
-      },
-      {
-        "title": "Coroner's records, City of New York, September 1920",
-        "publisher": "New York City Municipal Archives",
-        "retrievedAt": "2026-09-28",
-        "rights": "public-domain"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Put your hand flat on the stone, about waist height. Feel the pitting.\n\nThat is not weathering. On the sixteenth of September nineteen twenty, at one minute past\nnoon, a horse-drawn cart stopped outside this building. It was carrying a hundred pounds\nof dynamite and several hundred pounds of cast iron window weights, cut into slugs.\n\nWhen it went off, the iron went sideways. Thirty-eight people were killed and hundreds\nwere hurt, most of them clerks, messengers and stenographers on their lunch break. The\nyoungest was a messenger boy of seventeen.\n\nThis was the House of Morgan, the most powerful bank in the country, and everybody\nassumed the bank was the target. The Bureau of Investigation spent three years on it. They\nquestioned anarchists, socialists and union organisers, and they never charged anybody.\nIt is still unsolved.\n\nThe bank reopened the next morning. That was the point, and it was also the decision that\nleft these marks: Morgan refused to repair the facade. A hundred years of cleaning and\nrestoration have gone past them.\n\nYou are standing where the cart stood. Everybody who works on this street walks past this\nwall, and almost nobody touches it.\n",
@@ -14718,15 +9962,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.92,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Anniversary of Wall Street",
-        "publisher": "NYC Department of Records & Information Services",
-        "retrievedAt": "2026-09-22",
-        "rights": "public-domain",
-        "url": "https://www.archives.nyc/blog/2023/3/9/anniversary-of-wall-street"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look down the street. It runs river to river, and you can very nearly see one end from the\nother.\n\nThat is not an accident. It is the width of the island, and in 1653 the Dutch decided to\nfence it off.\n\nThe governor, Peter Stuyvesant, ordered a palisade built right across here. Nine feet\nhigh, made of packed earth and fifteen-foot planks, running from the Hudson to the East\nRiver. It was meant to stop an English invasion.\n\nThe people who built it were mostly enslaved Africans, owned by the Dutch West India\nCompany.\n\nThe invasion never came. The English took the colony anyway, eleven years later, by\nsailing in and asking. And in 1699 they pulled the wall down and used the wood for\nsomething else.\n\nIt stood for forty-six years. It has been gone for more than three hundred.\n\nThe street kept the name, which means this is a street named after a thing that is not\nthere, put up by people who were never free to walk away from it.\n",
@@ -14785,15 +10021,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Gardens",
-        "publisher": "Burgwin-Wright House and Gardens",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.burgwinwrighthouse.org/gardens"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "These gardens have different parts with different jobs. The museum identifies an\norchard, a kitchen garden, a rose garden, and an area recalling the historical use of\nmedicinal herbs.\n\nPeople planted useful things as well as beautiful things. A garden could help supply a\nhousehold, while another part offered a pleasant place to look and walk.\n\nStay on the paths with your grown-up. Do not pick or taste anything; a historical garden\nis a place to explore with your eyes.\n\nTry spotting the difference between a plant grown for its shape and an area arranged for\na practical purpose. The present gardens were designed to help visitors think about an\nearlier period. Their story shows that outdoor space, like a house, can contain several\nkinds of work.\n",
@@ -14830,15 +10058,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old courthouse d 2",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2023/12/08/old-courthouse-d-2"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The old courthouse at this corner housed meetings of the Wilmington Council of Safety.\nIts members helped plan a political system to replace colonial authority.\n\nOpposition to Britain was only one part of the task. A different government would\nrequire organization: people agreeing on how public power could operate after the old\narrangements were challenged.\n\nThe building is gone, so let the intersection anchor the account rather than imagining a\nsurviving meeting room.\n\nStand safely beside the marker and look at the streets crossing here. Public life\nrequires connections as well as declarations. The council's work helped connect local\nresistance with the possibility of a new state government. On this site, the future was\nsomething people had to discuss and arrange, not merely announce.\n",
@@ -14874,15 +10094,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The place",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/the-place.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look above the columns to the small structure at the top of the mansion. Its usefulness\nwent beyond the view.\n\nBellamy's design included a belvedere that helped ventilate the house. The museum also\nnotes the deliberate placement of the kitchen to receive early daylight. The architects\nconsidered climate and daily work along with appearance.\n\nBuilt between 1859 and 1861, the house combined Greek Revival and Italianate elements.\nThose labels can sound abstract until you notice how the building meets its\nsurroundings: shade, height, openings, and the movement of air.\n\nFrom this sidewalk, let the building become a practical invention as well as an\nexpensive residence. Beauty and function shared the same plans. The comfort it offered,\nhowever, depended on skilled construction and the labor of people whose freedom was\nsharply unequal.\n",
@@ -14918,15 +10130,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Model railroads",
-        "publisher": "Wilmington Railroad Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wrrm.org/model-railroads.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The museum's big model layout takes you into the early 1950s, when steam locomotives and\ndiesel trains shared the railroad world.\n\nIts builders used coastal North Carolina history to create towns, tracks, industries,\nand moving trains. Parts of Wilmington are represented in miniature.\n\nFind a safe place beside the layout and look closely. A model is not the actual town\nshrunk by magic. People chose what to include and built the pieces to help tell a story.\n\nTry following one train with your eyes. Where does it go, and what does it pass? Then\nlook at the tiny buildings around it. The train needs the town, and the town needs\nconnections. This small world helps you notice relationships that can be harder to see\nwhen you are standing inside the real city.\n",
@@ -14963,15 +10167,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "History",
-        "publisher": "Wilmington Railroad Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wrrm.org/history.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This museum did not begin with a building full of trains. Its early effort included a\nsingle display case and a table at Riverfest.\n\nThe foundation was chartered in 1979. Hazel Morse, Gerda Wooten, and Marguerite James\nled the effort to preserve Wilmington's railroad history after the railroad's major\ndeparture.\n\nA collection needed somewhere to grow, and the work expanded from those small\nbeginnings. The current museum is the outcome, not the setting of every early exhibit.\n\nStand near its entrance and consider how easily ordinary equipment becomes disposable\nonce a company moves on. Someone has to recognize its future value before that happens.\nThese organizers made the first modest display into a commitment: the railroad might\nleave, but its Wilmington story would still have a place.\n",
@@ -15007,15 +10203,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Detail",
-        "publisher": "Cape Fear Museum of History and Science",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://capefearmuseum.com/m/newsflash/Home/Detail/1159"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Cape Fear Museum began in 1898. In August 2026, it opened a new downtown home on Grace\nStreet.\n\nThe county's opening announcement describes more than four hundred artifacts alongside\nhistory and science galleries. The move placed the museum and a new main library on the\nsame downtown block.\n\nYou are at the new building, not the museum's earlier Market Street location. Its age\nbelongs to the institution; the structure before you is a recent chapter.\n\nThat contrast is the point of the stop. Old evidence does not need an old building to\nremain valuable. It needs care, context, and people willing to examine it. The museum's\nmove brings a long-running collection into a new setting where Wilmington can keep\nasking how its past connects with the present.\n",
@@ -15051,15 +10239,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Famous film and tv sites",
-        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonandbeaches.com/things-to-do/tours-and-cruises/famous-film-and-tv-sites/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Wilmington's tourism authority identifies this riverfront area as the Dawson's Creek\nlocation of Andie and Pacey's first kiss.\n\nThe romance was fiction. The place where the scene was filmed is real, and people can\nreturn to it after the cameras and actors have gone.\n\nStand on the public Riverwalk and look at what a production gained here: water, space,\nand a city backdrop that could become part of another town's screen identity.\n\nThat transformation is part of Wilmington's arts history. Filmmaking asks a real place\nto play a role. Once the episode reaches an audience, the setting can hold two meanings\nat once: an ordinary local walkway and a remembered moment in a television story. You\nare standing in the overlap.\n",
@@ -15095,15 +10275,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The museum",
-        "publisher": "Burgwin-Wright House and Gardens",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.burgwinwrighthouse.org/the-museum"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Saving a building is only the beginning. Someone must decide what people will learn\ninside it.\n\nThe Colonial Dames acquired the Burgwin-Wright House in 1937. Its museum history\ndescribes decades of restoration and interpretation, including school visits and work on\nthe grounds.\n\nA residence built for private life gradually became a public encounter with colonial\nWilmington. Rooms, objects, jail remains, and gardens could be examined together instead\nof disappearing into separate collections.\n\nLook at the entrance. The change from home to museum altered who could cross that\nthreshold and why. Visitors now arrive to ask questions that the original owners did not\nintend the building to answer: about trade, confinement, domestic labor, and whose lives\nare easiest to recover. Preservation makes those questions possible; interpretation\nkeeps them open.\n",
@@ -15139,15 +10311,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Discover outdoor art in wilmington nc",
-        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonandbeaches.com/blog/post/discover-outdoor-art-in-wilmington-nc/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Paul Hill's Southern Hospitality takes the shape of an enormous Venus flytrap. The\ntourism authority describes the sculpture as metal and glass, about fifteen feet high.\n\nIts title creates a playful tension. Hospitality promises welcome; the plant's trap\nsuggests a very different relationship with its visitors.\n\nThe artwork does not need to move to make that joke work. Its scale changes a small,\nlocally associated plant into something that can meet your gaze on the waterfront.\n\nStand back far enough to see the silhouette. Then notice the materials: manufactured\nsurfaces representing a living organism. A public sculpture can make a familiar place\nfeel briefly strange. Here, an emblem of the region becomes a greeting you are unlikely\nto mistake for an ordinary street sign.\n",
@@ -15183,15 +10347,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Alex manly 1866 1944 d 103",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2023/12/11/alex-manly-1866-1944-d-103"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Alex Manly edited the Daily Record, Wilmington's Black-owned newspaper. In 1898, a white\nsupremacist campaign targeted his writing and made him a focus of threats.\n\nHe fled before the mob burned the newspaper's building during the coup. His departure\nwas a response to danger, not an admission that the attackers' claims were true.\n\nThis marker honors him near downtown's historic streets. The press building stood\nelsewhere, on Seventh Street.\n\nPause by his name. A newspaper editor works to make words public; a campaign of\nintimidation works to make that public voice disappear. Manly's story connects both\nacts. The paper's office was destroyed, but historical records preserve his identity and\nthe political attack directed against him. The marker returns a name to the city's\nvisible memory.\n",
@@ -15227,22 +10383,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "History",
-        "publisher": "Cameron Art Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://cameronartmuseum.org/history/"
-      },
-      {
-        "title": "Mission and history",
-        "publisher": "Play Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.playwilmington.org/mission-and-history"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge\non this block.\n\nArtists and supporters wanted Wilmington to have a place to encounter visual art. The\ninstitution grew into the museum that later moved to its present Cameron Art Museum\nlocation outside downtown.\n\nThe downtown buildings gained another use: the Children's Museum acquired the complex in\n2004. You are at the earlier art-museum setting, not Cameron Art Museum today.\n\nLook at the old buildings from Orange Street. Their cultural work has changed, but the\nimpulse remains recognizable: make spaces where people can look, learn, and try\nsomething new. The art gallery's beginnings belong here, even though the institution\ncontinued its journey elsewhere.\n",
@@ -15278,15 +10419,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Our history",
-        "publisher": "St. James Parish",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.stjamesp.org/our-history/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The present church replaced an earlier building, but some of the earlier church came\nwith it.\n\nSt. James's history says bricks from the first church were reused after its demolition\nin 1839. The new church was consecrated in 1840. It also records that the original\nbuilding had used bricks brought to the port as ship ballast.\n\nThose details turn a wall into a sequence of journeys: material arriving by water,\nserving one building, then serving another.\n\nLook from the sidewalk rather than touching or inspecting the masonry. You cannot\nidentify every brick's past by sight. The documented reuse is enough to change how you\nread the surface. What seems like one architectural moment may contain material from\nanother. Wilmington rebuilt here without starting entirely from nothing.\n",
@@ -15322,15 +10455,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "July 4th open house",
-        "publisher": "Wilmington Community Arts",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://wilmingtoncommunityarts.org/classes-and-events/july-4th-open-house/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Imagine needing to call home without a phone in your pocket. This museum has a restored\nwartime-era telephone booth with a vintage phone inside.\n\nThe booth gives you a small space where one person could stand or sit and make a call. A\npublic telephone was something you went to, rather than something that followed you\neverywhere.\n\nLook at the phone with your grown-up. It may have parts that seem unfamiliar because the\nway people placed calls has changed.\n\nThe object belongs in a building that welcomed people far from home during the Second\nWorld War. We cannot say who used this particular phone for every conversation. We can\nunderstand why a call mattered: a familiar voice could connect someone here with people\nwaiting somewhere else.\n",
@@ -15367,15 +10492,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Local Historic Landmarks",
-        "publisher": "City of Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Wilmington identifies this 1858 church as an important example of Carpenter Gothic\narchitecture with Italianate influences.\n\nThe city's account also connects it with one of Wilmington's early Black congregations.\nIts significance therefore belongs to both architectural form and community life.\n\nListen from the public sidewalk. Gothic ideas did not require stone walls and enormous\ncathedrals to become recognizable. Builders could interpret them in a smaller wooden\nstructure suited to a different setting.\n\nThe result asks you to look beyond size when deciding what counts as a landmark. A\nmodest building can carry a substantial history. Here, a continuing religious community\nand a distinctive design give the structure meaning together. Its value lies in that\nrelationship, not merely in its age.\n",
@@ -15411,15 +10528,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "History",
-        "publisher": "Cameron Art Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://cameronartmuseum.org/history/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Claude Howell helped advocate for a stronger visual-arts life in Wilmington. In 1962, he\nsupported the movement that established St. John's Art Gallery here.\n\nThe Cameron Art Museum's history records his call for the community to encounter\nimportant art from the past and present. He wanted local audiences to have wider\nopportunities to look and learn.\n\nWe do not need to reproduce his letter to understand the action behind it. Advocacy\nhelped turn a hope into an institution.\n\nLook at the earlier museum complex from Orange Street. Howell's role connected making\nart with building an audience for it. A city's cultural life depends on both. The\ngallery gave that argument rooms and a public address, allowing an artistic ambition to\nbecome something visitors could actually enter.\n",
@@ -15455,22 +10564,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old courthouse d 2",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2023/12/08/old-courthouse-d-2"
-      },
-      {
-        "title": "Cornelius harnett 1723 1781 d 1",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2023/12/08/cornelius-harnett-1723-1781-d-1"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Cornelius Harnett helped lead revolutionary political organization in the Cape Fear\nregion. The Wilmington Council of Safety met at the old courthouse on this corner.\n\nThat work involved more than opposing Britain. A new political system required people to\ndiscuss how authority would operate after the old one was challenged.\n\nThe courthouse is gone, but the site gives Harnett's role a local setting. This is an\nassociated meeting place, not a claim that his entire career unfolded at one\nintersection.\n\nStand beside the marker and consider the difference between declaring a principle and\narranging a government. Both require action. Harnett's public life connected those\ndemands, helping the region move from resistance toward new institutions. The corner\npreserves the setting of that practical political work.\n",
@@ -15506,22 +10600,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Journey into the haunted depths of old wilmington",
-        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/"
-      },
-      {
-        "title": "Central business district",
-        "publisher": "Downtown Business Alliance Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://dbawilmington.org/downtown/central-business-district/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The Cotton Exchange is described as a complex of eight interconnected historic\nbuildings. That explains why it does not behave like one purpose-built shopping center.\n\nIts present use asks visitors to move through spaces that began with different\ncommercial roles. Floors and passageways preserve some of that uneven history.\n\nStand where a public passage turns or changes level. The interesting question is not\nsimply how old the brick might be. It is how several old buildings were made useful\ntogether.\n\nThis kind of reuse keeps the city legible. You can buy something in a contemporary shop\nand still notice that the setting was shaped by an earlier port economy. The present\nactivity does not erase the past; it gives you a reason to encounter it at walking\nspeed.\n",
@@ -15557,15 +10636,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "History",
-        "publisher": "Cameron Art Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://cameronartmuseum.org/history/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Elisabeth Chant made a studio in the old Hart Wine House on Cottage Lane. There she\ntaught and influenced artists who helped shape Wilmington's visual-arts community.\n\nAmong her students were Claude Howell and Henry Jay MacMillan. The important thing at\nthis stop is the local relationship: a teacher, a working space, and people learning to\nsee and make art.\n\nStay on the public lane. The studio's history does not grant access to today's private\nproperty.\n\nThe small setting helps explain the scale of cultural beginnings. A teacher did not need\nan institution with a monumental facade to have a lasting effect. Chant's studio made\nroom for practice and exchange. Later artistic careers carried that influence beyond the\nlane where some of their learning began.\n",
@@ -15601,15 +10672,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "About",
-        "publisher": "Latimer House Museum, Lower Cape Fear Historical Society",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://latimerhouse.org/about/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St.\nJames in 1848. The house built four years later became their family residence.\n\nHer local background complicates the idea of the house as simply the achievement of a\nmerchant who arrived from elsewhere. Family relationships tied it to a city that already\nhad its own networks and histories.\n\nStand outside the home and consider what is left unnamed when a household is introduced\nonly by its male owner. A marriage and a family are not incidental to a residence's\nmeaning.\n\nElizabeth's story supplies a different connection between the building and Wilmington.\nThe house represented shared family life, shaped by her place in the community as well\nas her husband's commercial career.\n",
@@ -15645,15 +10708,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Ellen lina stewards of the bellamy house",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/museum-blog/ellen-lina-stewards-of-the-bellamy-house"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back with\nthe Tide. Her recollections became one source for understanding this household.\n\nA memoir gives us a person's perspective, not an impartial view of everyone who shared\nthe setting. Her position within the family shaped what she noticed and how she\ndescribed it.\n\nStand before the mansion and consider the reach of one life. A house built before the\nCivil War could still be remembered by a resident in the twentieth century.\n\nEllen's memories help connect those eras, but the museum's wider story also requires\nrecords of enslaved workers, craftspeople, and others. Her voice is valuable when heard\nas one voice among the people whose lives belonged to this place.\n",
@@ -15689,15 +10744,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "About",
-        "publisher": "Thalian Hall",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.thalianhall.org/about"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "John T. Ford, associated with Ford's Theatre in Washington, leased this Wilmington\ntheater from 1867 to 1871. During his tenure, it was called the Opera House.\n\nThe connection can surprise visitors who know Ford's name only through Abraham Lincoln's\nassassination. This story concerns his theatrical business in Wilmington, not a claim\nthat the Washington crime happened here.\n\nNames and management changed while the local building continued hosting entertainment.\nIts history reaches through people whose careers crossed several cities.\n\nLook at the entrance and imagine a playbill announcing the Opera House rather than\nThalian Hall. A different title could mark a different business strategy without moving\nthe stage. The theater's long life includes those shifts: familiar walls, new operators,\nand another invitation to an audience.\n",
@@ -15733,15 +10780,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "About",
-        "publisher": "Latimer House Museum, Lower Cape Fear Historical Society",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://latimerhouse.org/about/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The Latimer house was built in 1852 for Zebulon and Elizabeth Latimer. Its fourteen\nrooms offered an unusually substantial home in the growing port city.\n\nThe museum identifies the design as Italianate, with symmetry and a central-hall\narrangement. What looks like a single handsome facade held a complicated household\nbehind it.\n\nStand where you can see the windows without blocking the sidewalk. Their orderly spacing\ninvites you to read the house as a finished composition. Daily life would have been less\norderly: family responsibilities, domestic work, business pressures, and change across\ngenerations.\n\nThe museum's surviving furnishings and objects connect that exterior pattern to\nparticular lives. The building gives them a setting. From outside, the first clue is\nscale: enough rooms to make a family home a small working world.\n",
@@ -15777,22 +10816,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Haunted wilmington north carolina",
-        "publisher": "Drugstore Divas",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.drugstoredivas.net/haunted-wilmington-north-carolina/"
-      },
-      {
-        "title": "Journey into the haunted depths of old wilmington",
-        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The Cotton Exchange has the right ingredients for a ghost story: connected old\nbuildings, changing levels, and passages where somebody can disappear from view.\n\nA published account of a Wilmington ghost tour tells of Fred, a tall, dark-haired\napparition associated with Paddy's Hollow. In that version, a manager encountered him in\na storage room. He seemed ready to offer help, then vanished.\n\nThe encounter is a reported legend, not a verified event. We cannot establish that the\nmanager saw a ghost, or identify an actual dead person behind the name Fred.\n\nWhat makes the story memorable is its almost ordinary beginning. A person appears in a\nworkplace and behaves like someone who belongs there. Only the ending breaks the\npattern. From the public entrance, imagine the moment between recognizing a stranger and\nrealizing there is nobody left to recognize.\n",
@@ -15829,15 +10853,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Local Historic Landmarks",
-        "publisher": "City of Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Built in 1873, Giblem Lodge is a surviving place of Black community organization in\nWilmington. The city's landmark account emphasizes its roles as a gathering space and\nsource of support.\n\nA lodge building can be easy to overlook beside more famous mansions. Yet institutions\nlike this helped people assemble, maintain networks, and exercise independence.\n\nStay on the public sidewalk. You can recognize that history without entering an active\norganization's space.\n\nThe important architectural fact is survival in place. A building associated with\ncollective activity remains here to counter the idea that Wilmington's past belonged\nonly to prominent individual owners. This landmark preserves evidence of people\norganizing for one another. Its walls held a community, and its continued presence gives\nthat community's history a downtown address.\n",
@@ -15873,22 +10889,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Museum blog",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/museum-blog"
-      },
-      {
-        "title": "The people",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/the-people.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Guy Nixon was an enslaved member of the Bellamy household. The museum discusses a family\nrecollection of his work pumping water from the cistern to a tank high in the house.\n\nThat practical task supported the comfort of people who controlled his labor. It should\nnot be turned into a nostalgic picture of a happy household helper.\n\nLook upward from the public sidewalk. Water needed to move against gravity before it\ncould serve the rooms above. The building's conveniences relied on repeated human\neffort.\n\nNixon's story makes a system personal. A tank and a pump can sound like technical\ndetails; naming the person required to operate them changes the account. The mansion's\ndaily life depended on work, and that work took place within slavery's restrictions on\nfreedom.\n",
@@ -15924,22 +10925,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "85th anniversary celebration",
-        "publisher": "Wilmington Community Arts",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://wilmingtoncommunityarts.org/classes-and-events/85th-anniversary-celebration/"
-      },
-      {
-        "title": "Museum",
-        "publisher": "Wilmington Community Arts",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://wilmingtoncommunityarts.org/museum/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Hannah Block entertained wartime service members by singing and playing piano. The\nbuilding that carries her name preserves that connection, including a piano identified\nwith her performances.\n\nThe center was rededicated in her honor in 2006. A volunteer's contribution became part\nof the place's public identity.\n\nIf you can visit the open museum area, look at the instrument without touching it. Its\nsignificance comes from use: someone sat here to offer music and company during a\ndifficult period.\n\nBlock's story brings a large wartime account down to a human scale. An evening's\nentertainment required a person willing to provide it. The name over the door remembers\nthat practical generosity, while the preserved instrument gives it a concrete form you\ncan see.\n",
@@ -15975,15 +10961,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Local Historic Landmarks",
-        "publisher": "City of Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who\nworked to revive North Fourth Street after the Atlantic Coast Line's departure.\n\nThe bridge itself is older. The new name added a person's work to an existing piece of\ninfrastructure.\n\nListen at a safe public approach rather than entering railroad property below. From\nhere, the connection is visible: a crossing links streets, while a community advocate\nworks to reconnect a neighborhood with opportunity.\n\nA commemorative name can become so familiar that its meaning disappears into directions.\nThis stop restores the person behind it. Forden's public work concerned the area's\nfuture, not merely its old buildings. The city attached that effort to a structure\npeople could continue to encounter in everyday life.\n",
@@ -16019,15 +10997,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Our history",
-        "publisher": "St. James Parish",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.stjamesp.org/our-history/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The MacRae house was built in 1901 and designed by Henry Bacon, the architect later\nassociated with the Lincoln Memorial in Washington.\n\nSt. James acquired the house in 1955, and it serves parish offices. Its local history\ntherefore combines domestic design with a later institutional role.\n\nStand on the public sidewalk. The Washington connection is about the architect, not a\nclaim that this house was a model for the memorial.\n\nA famous commission can overshadow an architect's smaller work. This stop restores the\nsmaller scale: rooms intended for daily life rather than a national monument. Bacon's\ncareer reached both kinds of building. Downtown Wilmington retains a place where his\ndesign work met an ordinary urban household and, later, the needs of a parish.\n",
@@ -16063,15 +11033,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The people",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/the-people.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Henry Taylor was a carpenter and builder who worked on the Bellamy project. His career\ncontinued after emancipation and included other Wilmington buildings and community\nactivity.\n\nThe museum identifies him among the Black craftspeople whose skill made the mansion\npossible. The owner's surname on the building can otherwise make the builders disappear\nfrom its story.\n\nLook at the exterior from the sidewalk. Plans only become walls, floors, and finished\ndetails when people know how to execute them.\n\nTaylor's work reminds us to connect an impressive residence with the expertise it\nrequired. His name belongs in the account of this place, alongside its architect and\nowners. A building can preserve craftsmanship for generations while concealing the\ncraftsperson. Historical research makes the person visible again.\n",
@@ -16107,15 +11069,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "J allen kirk d 122",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2023/12/12/j-allen-kirk-d-122"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "J. Allen Kirk came to Wilmington as a Baptist pastor in 1897. The following year, the\ncoup forced him to seek safety.\n\nHe later published an account of the violence and his escape. That record preserves the\nperspective of a Black community leader who experienced the danger directly.\n\nHistorians disagree on some details of his route and timing. His account should be read\nas testimony, with its particular viewpoint, rather than treated as an all-seeing\ndescription of every event.\n\nListen beside the marker. Kirk survived the attempt to silence and drive out people like\nhim, then made a written record. His story demonstrates another form of resistance:\npreserving an experience so later generations would have evidence beyond the version\noffered by those who seized power.\n",
@@ -16151,22 +11105,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The place",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/the-place.html"
-      },
-      {
-        "title": "Audio 1",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/audio-1.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "James F. Post designed the Bellamy mansion with assistant architect Rufus Bunnell. Their\nwork had to turn a wealthy client's ambitions into a building that could function in\nWilmington's climate.\n\nThe museum points to deliberate choices involving daylight and ventilation. Architecture\nhere was a practical arrangement as well as a display of status.\n\nFrom the sidewalk, trace the building upward. Different parts serve different purposes,\neven when the whole facade looks like one confident gesture.\n\nPost's name gives the design a human author. The house did not simply emerge from a\nfashionable style; people made choices about proportions, rooms, and use. Those choices\nstill shape what you can see. The builders' labor then transformed the design into the\nsurviving structure before you.\n",
@@ -16202,15 +11141,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Family timeline",
-        "publisher": "Burgwin-Wright House and Gardens",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.burgwinwrighthouse.com/family-timeline"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Joshua Grainger Wright purchased this house in 1799. His family supplied the second\nsurname by which the museum is known today.\n\nWright became a judge, and the house entered a new household's history. Its earlier\nconnection with John Burgwin remained in the building even as ownership changed.\n\nStand at the corner and listen to the two names together: Burgwin and Wright. A compound\nname can compress decades into something that sounds like a single identity.\n\nThe purchase was a turning point rather than a minor footnote. A new owner meant new\nfamily routines and later adaptations, while the old jail remains stayed underneath.\nWright's arrival shows how a landmark accumulates its identity. The building survived\none owner by becoming meaningful to another.\n",
@@ -16246,22 +11177,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Burgwin wright house",
-        "publisher": "The Ghost Guild",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://theghostguild.weebly.com/burgwin-wright-house.html"
-      },
-      {
-        "title": "History",
-        "publisher": "Burgwin-Wright House and Gardens",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.burgwinwrighthouse.org/history"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The elegant house above you was built in 1770 over remains of Wilmington's earlier jail.\nThat combination has drawn more than architectural curiosity.\n\nThe Ghost Guild records a paranormal investigation here in March 2018, including a\nbedroom recording session described as an attempt to capture electronic voice phenomena.\nSuch recordings are interpreted by enthusiasts as possible voices, but they do not\nestablish that spirits exist.\n\nThere is a documented investigation and an interpretation. Those are different things.\n\nFrom the sidewalk, consider how much expectation changes listening. A creak in a new\nbuilding may pass unnoticed. The same creak above old cells can become the beginning of\na story. The house's real history supplies the weight; the haunting remains an\nunanswered claim. You can enjoy that uncertainty without pretending it has been solved.\n",
@@ -16298,15 +11214,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Journey into the haunted depths of old wilmington",
-        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This waterfront once belonged as much to sailors and taverns as to strolling visitors.\nOne of its surviving legends concerns a formidable woman known as Gallus Meg.\n\nLocal ghost-tour tradition associates her with the old Blue Post tavern and says her\npresence lingered after death. The historic tavern in this tale should not be confused\nwith another business that now uses the Blue Post name.\n\nMeg's reputation belongs to folklore. The reported haunting is not proof that a spirit\noccupies a building, and the more lurid versions should not be mistaken for a documented\ncriminal biography.\n\nStand by the public street and let the river supply the atmosphere. A working port\nbrings strangers together, then sends them away. Meg's story reverses that pattern: one\nwaterfront character, storytellers suggest, never quite left.\n",
@@ -16343,22 +11251,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "States first jewish house worship temple israel",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2016/05/12/states-first-jewish-house-worship-temple-israel"
-      },
-      {
-        "title": "History",
-        "publisher": "Temple of Israel",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://temple-of-israel.org/history/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Dedicated in 1876, Wilmington's Temple of Israel is recognized as North Carolina's first\nJewish house of worship.\n\nThe congregation describes its building as Moorish Revival, a style used by synagogues\nin Europe and the United States during that period.\n\nThe corner therefore carries two stories together: a community establishing a permanent\nworship space and a design expressing that presence publicly.\n\nRemain on the sidewalk unless the congregation has authorized a visit. Its historical\nsignificance does not change its role as an active religious site.\n\nLook at how the building addresses Market Street. It belongs to Wilmington's streetscape\nwhile retaining a distinctive identity. The milestone is not simply that construction\nfinished. A Jewish congregation secured a place where its life could continue across\ngenerations in the city.\n",
@@ -16394,22 +11287,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Robert r taylor",
-        "publisher": "MIT Black History",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://blackhistory.mit.edu/story/robert-r-taylor"
-      },
-      {
-        "title": "The people",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/the-people.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Robert Robinson Taylor was born in Wilmington and became MIT's first known Black\ngraduate, completing his degree in 1892.\n\nHis father, Henry Taylor, was a skilled builder associated with the Bellamy\nconstruction. This house therefore offers a connection to the family trade, not a claim\nthat Robert designed it.\n\nRobert's architectural career developed at Tuskegee and beyond. Education expanded the\npossibilities of work that already had a strong family foundation.\n\nFrom the sidewalk, look at the evidence of building skill around you. Then consider the\ndistance between learning a trade locally and gaining access to an institution that had\nscarcely admitted Black students. Taylor's achievement was individual, but his\nWilmington background helps prevent us from imagining that his talent began only when a\ncollege recognized it.\n",
@@ -16445,22 +11323,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Museum blog",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/museum-blog"
-      },
-      {
-        "title": "The place",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/the-place.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Rufus Bunnell assisted with the Bellamy design and kept a diary. The museum's published\nexcerpts include an 1859 Independence Day described through heat and a thunderstorm.\n\nSuch an entry brings a working person into a history often told through architectural\nlabels. He experienced Wilmington as weather, time, and daily activity while the house\nwas taking shape.\n\nThis is the construction project associated with his work. We do not need to invent his\nprivate thoughts or place every diary line on this sidewalk.\n\nLook at the mansion and remember that its finished appearance came after many unfinished\ndays. A diary preserves the scale of those days. Bunnell's records let the building's\ndesign history meet the ordinary conditions in which an architect actually lived and\nworked.\n",
@@ -16496,15 +11359,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "History",
-        "publisher": "Temple of Israel",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://temple-of-israel.org/history/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Rabbi Samuel Mendelsohn presided when Wilmington's Temple of Israel was dedicated in\n1876. His tenure continued until 1922, spanning forty-six years.\n\nThe congregation's history connects that first sermon with Jewish liberty. The new\nsynagogue supplied a permanent local setting for worship and community life.\n\nListen from the public sidewalk. A long tenure means more than one ceremonial opening:\nit includes repeated services, teaching, changes in families, and the ordinary\nresponsibilities of sustaining a congregation.\n\nMendelsohn's name helps make the building's history personal. The synagogue was not only\nconstructed; it was used and cared for by a community over time. His decades of\nleadership link its early years with the city that developed around this corner into the\ntwentieth century.\n",
@@ -16540,22 +11395,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "1898 Memorial Park",
-        "publisher": "City of Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonnc.gov/Connect-With-Us/Department-Directory/Parks-Recreation/Parks-Trails/1898-Memorial-Park"
-      },
-      {
-        "title": "Monument",
-        "publisher": "Documenting the American South, UNC Chapel Hill",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://docsouth.unc.edu/commland/monument/842/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its\nvictims. Artist Ayokunle Odeleye gave the memorial a form tied to movement and\ncollective effort.\n\nThis park is a place of remembrance. The events it commemorates happened across the\ncity, not all on this patch of ground.\n\nWalk slowly along the public path. The sculpture asks for a different pace from the\nsurrounding streets. Its repeated forms can bring separate lives into one field of\nattention without pretending the violence had a simple or settled ending.\n\nPublic art carries a responsibility here. It makes history present while leaving room\nfor reflection. The bronze survives in the open air; the work of understanding what the\ncity lost must continue among the people who visit.\n",
@@ -16591,22 +11431,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Stthomaspreservationhall.com",
-        "publisher": "St. Thomas Preservation Hall",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.stthomaspreservationhall.com/"
-      },
-      {
-        "title": "Contact",
-        "publisher": "St. Thomas Preservation Hall",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.stthomaspreservationhall.com/contact"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "St. Thomas Preservation Hall describes its building as a former Catholic church\nconstructed in 1847. Today it is used as an event venue.\n\nThe change illustrates a practical route to preservation: keep an old structure useful\nwhile allowing its role to evolve.\n\nThe original worship setting and the present venue are different chapters. Neither\nrequires us to pretend that every surface or furnishing stayed unchanged.\n\nListen from Dock Street unless you have permission to enter. A building's public history\ndoes not make a private event open to everyone.\n\nFrom outside, the survival is clear. The old structure remains part of downtown instead\nof becoming an empty lot. A new purpose supplies the reason to maintain it, while the\nname and building keep its earlier identity in view.\n",
@@ -16642,15 +11467,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Detail",
-        "publisher": "Cape Fear Museum of History and Science",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://capefearmuseum.com/m/newsflash/Home/Detail/1159"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Wilmington's new downtown museum opened in August 2026 with a sixty-seat planetarium.\nInside, a presentation can help visitors explore the sky while sitting under a roof.\n\nThe images are a way of learning, not actual stars brought indoors. Real stars are much\nfarther away than any building in the city.\n\nIf you are attending an authorized program, settle into your seat and let the\npresentation guide your eyes. What becomes easier to notice when the view is arranged\nfor learning?\n\nThe planetarium joins science with storytelling. It can help turn distant things into\nquestions you can investigate. When you leave, the real sky is still outside, and the\ndowntown streets are still around you. A visit can make that familiar walk feel\nconnected with a much larger world.\n",
@@ -16687,15 +11504,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Local Historic Landmarks",
-        "publisher": "City of Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This bridge was built in 1911 to replace a deteriorating wooden crossing above railroad\ntracks. Wilmington recognizes it as the city's surviving steel truss bridge from that\nera.\n\nThe truss makes structural work visible: connected members help carry loads across an\nopening. The form is not simply decorative.\n\nLook from a safe public approach, following any closure signs. Do not go beneath it onto\nrailway property for a better view.\n\nA bridge solves a local problem, but it also records what lay in the way. Here, streets\nhad to cross the railroad infrastructure that helped define the neighborhood. The steel\nspan kept those two systems connected. Its survival lets you see a practical response to\na city built around trains as well as streets.\n",
@@ -16731,15 +11540,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Full history",
-        "publisher": "Brooklyn Arts Center",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.brooklynartsnc.com/full-history/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H.\nSprunt in memory of his parents and the earlier congregation's founders.\n\nThe annex served functions that the main sanctuary alone could not contain. Its history\nreminds you that a community's building needs extend beyond one ceremonial room.\n\nLook from the public sidewalk and keep to authorized visitor areas. A less dramatic\nbuilding can still be central to how a place works.\n\nThe addition makes growth tangible. People who gathered in the church also needed rooms\nfor teaching, meetings, and other activities. The annex supplied that supporting space.\nIts continued presence helps you read the complex as a working community setting, not\nsimply a striking facade preserved for photographs.\n",
@@ -16775,22 +11576,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Our history",
-        "publisher": "Thalian Association",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.thalian.org/about/our-history/"
-      },
-      {
-        "title": "Hannah block historic uso history then and now",
-        "publisher": "Wilmington Community Arts",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://wilmingtoncommunityarts.org/museum/hannah-block-historic-uso-history-then-and-now/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The Thalian Association traces its beginnings to 1788, long before the theater now\ncalled Thalian Hall was built.\n\nThat order matters. Wilmington had people organizing dramatic activity before it had the\nfamous surviving stage. A building later gave the activity a landmark; it did not create\nthe interest from nothing.\n\nYou are at the association's present arts-center setting, not its original\neighteenth-century meeting place. The institution's history links these different\nlocations.\n\nPause by the entrance. Community theater depends on people agreeing to work together,\nreturn for rehearsals, and invite others to watch. The association's long history\nrecords that recurring effort. A stage can be constructed once. A theater community has\nto be made again whenever people choose to put on the next performance.\n",
@@ -16826,22 +11612,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "History",
-        "publisher": "Basilica Shrine of St. Mary",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://saintmarybasilica.org/history"
-      },
-      {
-        "title": "Marker 264877",
-        "publisher": "The Historical Marker Database",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.hmdb.org/m.asp?m=264877"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Saint Mary's church is associated with the Guastavino family's brick-and-tile vaulting\nwork. Its dedication in 1912 gave Wilmington a distinctive new religious building.\n\nThe construction method is central to its identity. Thin layers of tile and careful\ngeometry could create substantial vaulted forms.\n\nThis remains a place of worship. Begin on the public sidewalk and enter only when\nvisitor access is permitted.\n\nLook at the building as both a community's religious home and the result of specialist\ncraft. Its architectural impact depends on thousands of smaller pieces working together.\nA large interior space can feel almost effortless to a visitor; the method behind it\nrequired knowledge and precision. The landmark makes that marriage of design, material,\nand labor part of downtown's visible history.\n",
@@ -16877,22 +11648,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Audio 2",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/audio-2.html"
-      },
-      {
-        "title": "The museum",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/the-museum.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The mansion commands attention. The separate brick building behind it changes what that\nattention means.\n\nThe enslaved quarters were built in 1859, initially housing workers involved in\nconstruction and later people performing household labor. The museum opened the restored\nbuilding to visitors in 2014.\n\nThis is a surviving structure, not a theatrical reconstruction of an imagined plantation\nscene. It helps visitors examine how the household organized space, work, and control.\n\nIf you are on the authorized grounds, turn your view between the quarters and the main\nhouse. Their relationship is the story. One building advertised family wealth; the other\nsupported that wealth through coerced labor. Restoring both makes it harder to admire\nthe mansion while overlooking the people whose work kept it functioning.\n",
@@ -16928,22 +11684,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Museum move 2007",
-        "publisher": "Wilmington Railroad Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wrrm.org/museum-move---2007.html"
-      },
-      {
-        "title": "Outdoor rolling stock",
-        "publisher": "Wilmington Railroad Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wrrm.org/outdoor-rolling-stock.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 2007, the museum had to move its red caboose to a new home. The distance was short,\nbut the caboose could not simply roll there along a ready-made track.\n\nWorkers lifted its body onto one truck and carried its wheels on another. They placed\nties and rails at the new site, and the job continued into darkness.\n\nLook at the caboose from the permitted display area. A thing designed to travel can\nstill be difficult to move!\n\nThe team had to solve the problem one part at a time. Wheels, body, trucks, and rails\nall needed the right place in the plan. The caboose's short trip became a real adventure\nin cooperation, helping the museum keep a big piece of railroad history for visitors\nlike you.\n",
@@ -16980,15 +11721,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Full history",
-        "publisher": "Brooklyn Arts Center",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.brooklynartsnc.com/full-history/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Construction of St. Andrew's Presbyterian Church began here in 1888. The congregation\ndedicated the building in 1889.\n\nIts later history included other congregations, serious deterioration, and preservation\nefforts. The surviving structure became the Brooklyn Arts Center.\n\nFrom the public corner, notice that a changed purpose did not require the old building\nto disappear. Its prominent form remains part of the neighborhood while its interior\nserves new gatherings.\n\nThe building's survival is the turning point. A former church could have become only a\nhistorical photograph. Instead, restoration made another use possible. Today's arts\nsetting carries an architectural inheritance from the congregation that first raised it.\nWhen people gather here now, they add a chapter rather than beginning on a blank site.\n",
@@ -17024,15 +11757,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Our history",
-        "publisher": "St. James Parish",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.stjamesp.org/our-history/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In February 1865, Union forces entered Wilmington. St. James's church building was\nseized and used as a hospital.\n\nThe congregation's history records that the building was returned that summer, repaired,\nand used for services again in December. A space designed for worship had temporarily\nbecome a place of wartime care.\n\nThe change makes you see the church differently. Its doors and interior were practical\nresources in a city undergoing military occupation, not just symbols on a familiar\nstreet.\n\nFrom the sidewalk, consider the work required to make a building serve an urgent\npurpose, then restore it to its regular life. The hospital chapter was temporary, but it\nbelongs to the building's history. Returning to worship did not mean that the preceding\nmonths had never happened.\n",
@@ -17068,22 +11793,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "New Hanover County Historic Courthouse 51",
-        "publisher": "New Hanover County",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.nhcgov.com/Facilities/Facility/Details/New-Hanover-County-Historic-Courthouse-51"
-      },
-      {
-        "title": "New hanover county",
-        "publisher": "Courthouses.co",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://courthouses.co/us-states/n/north-carolina/new-hanover-county/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This is the late-nineteenth-century county courthouse at Third and Princess, built in\n1892 to 1893.\n\nIt is not the earlier courthouse once located at Market and Third. Keeping those places\nseparate prevents two very different periods from collapsing into one story.\n\nLook from the public sidewalk. The building's prominent scale and detailed exterior make\ngovernment visible in the streetscape. A courthouse is designed to gather public\nbusiness under an identifiable roof.\n\nIts landmark role continues even when visitors come mainly to look at the architecture.\nThe exact address matters: history happened in particular buildings, and similar names\ncan lead you to the wrong one. This stop anchors the later county institution, while the\nMarket Street marker recalls the vanished colonial courthouse a block away.\n",
@@ -17119,15 +11829,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Old courthouse d 2",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2023/12/08/old-courthouse-d-2"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "An earlier courthouse stood at this intersection. In the 1760s, it became a focus of\nresistance to Britain's Stamp Act.\n\nThe tax touched printed documents and provoked organized opposition in the Cape Fear\nregion. The state marker's history connects the courthouse with that struggle over\nimperial authority.\n\nThe building is gone, and the later county courthouse farther north is a different\nstructure. Here, the marker identifies a political setting that ordinary traffic now\ncrosses.\n\nStand safely on the sidewalk and look across the intersection. Public disagreement\nneeded places where people could assemble and make demands visible. Before independence,\nthis corner helped supply one. The story belongs to a town still under British rule,\nbeginning to challenge who could impose terms on its public life.\n",
@@ -17163,15 +11865,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Local Historic Landmarks",
-        "publisher": "City of Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This five-story commercial building dates to 1906, with a later addition. Wilmington's\nlandmark description notes the light and open space that served wholesale and retail\ntrade.\n\nThe building was designed to show goods, not merely store them. Its scale makes the\nambition visible from the street.\n\nStand clear of entrances and look upward. A downtown shop could occupy a substantial\narchitectural presence, combining business needs with a recognizable public face.\n\nNames and tenants changed, but the structure continued offering space for commerce. The\nlandmark's story connects the customer on the pavement with the larger world of\nsuppliers and merchants inside. A display window is the meeting point: goods become\nvisible, and a passing person becomes a possible buyer.\n",
@@ -17207,15 +11901,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Discover outdoor art in wilmington nc",
-        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonandbeaches.com/blog/post/discover-outdoor-art-in-wilmington-nc/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Paul Hill made a dog for Bijou Park, but this dog does not need food, water, or a nap.\nIt is a sculpture called Straining to Be.\n\nThe tourism authority describes its materials as Corten steel and found objects. Things\nmade for other purposes became part of an animal's shape.\n\nStand back and look at the outline. What makes you recognize a dog before you examine\nevery detail? Then look for the parts the artist used to suggest that shape.\n\nThe real story is a person's choice to turn material into something viewers can\nrecognize. No imaginary dog adventure is needed. The sculpture gives an ordinary park a\nplayful surprise, and it gives you a challenge: discover how an artist made a familiar\ncreature from things that were never alive.\n",
@@ -17252,22 +11938,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Sets",
-        "publisher": "Flickr",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.flickr.com/photos/capefearmuseum/sets/72157647490782635"
-      },
-      {
-        "title": "History",
-        "publisher": "Cameron Art Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://cameronartmuseum.org/history/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 1953, Claude Howell and Gar Faulkner staged a Cottage Lane art show during the Azalea\nFestival, according to Cape Fear Museum's historical account.\n\nThe setting made an exhibition part of the neighborhood rather than an event confined to\na grand gallery. Artists could bring work into a small downtown place already associated\nwith creative life.\n\nDo not enter a private courtyard to recreate the show. The public lane is enough to\nunderstand the scale.\n\nLook along the buildings and imagine the practical decision: choose a place, gather the\nwork, and invite people to see it. A local art community grows through events like that,\nwhere the audience meets artists nearby. The lane's size is part of the story. Cultural\nbeginnings do not always require a monumental address.\n",
@@ -17303,15 +11974,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Wilmington north carolina 1919",
-        "publisher": "Federal Judicial Center",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain",
-        "url": "https://www.fjc.gov/history/courthouse/wilmington-north-carolina-1919"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The Federal Judicial Center dates this Wilmington courthouse building to 1919. It was\nnamed for Alton Lennon in 1972.\n\nIts waterfront position gives it an unusually visible place in the downtown landscape.\nFederal authority occupies the same streetscape as the riverfront's shops, visitors, and\nhistoric commercial buildings.\n\nListen from the public sidewalk. Do not assume that a courthouse interior is a\nsightseeing area; any entry must follow current security and visitor rules.\n\nThe building's two dates tell different stories. One belongs to construction and\ninstitutional use, the other to later commemoration. Names can change what a city\nremembers about a structure without changing its physical age. Here, the architecture\nand the public name carry separate layers of Wilmington's civic memory.\n",
@@ -17347,15 +12010,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Thalian hall opens wilmington",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2016/10/12/thalian-hall-opens-wilmington"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "On October 12, 1858, Thalian Hall opened with a gala. Wilmington gained a theater that\nwould connect local audiences with performers traveling through the country.\n\nFor the people arriving that evening, this was a new room, not a historic landmark. The\nexpectation lay ahead: a curtain would rise, a performance would begin, and the city's\ninvestment would become an experience.\n\nStand outside the entrance. A theater's opening can be remembered as a date, but its\nreal test comes when people gather and listen together.\n\nEvery later audience added another use to the building. The first night's importance is\nthat it began the pattern. Before the reputation, restorations, and anniversary\ncelebrations, Wilmington had to take the simple step that makes a theater work: open the\ndoors and invite people in.\n",
@@ -17391,15 +12046,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "World War II City",
-        "publisher": "City of Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonnc.gov/Connect-With-Us/Community-Honors/World-War-II-City"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 2020, Wilmington became the country's first American World War II Heritage City.\n\nThe designation recognizes a community's wartime role and its work to preserve that\nhistory. It reaches beyond this building, encompassing the wider city's military,\nindustrial, and civilian contributions.\n\nThe USO makes a useful downtown place to listen because it preserves one direct part of\nthat experience: the gathering place for people in uniform and the volunteers supporting\nthem.\n\nLook at the building before you. A national designation can sound like a distant\nadministrative honor. Here, it points back to concrete local spaces and the people who\nused them. The title does not create the history. It asks present-day Wilmington to keep\nthat history available, examined, and connected to the city that exists now.\n",
@@ -17435,22 +12082,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "legend",
-    "sources": [
-      {
-        "title": "Journey into the haunted depths of old wilmington",
-        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/"
-      },
-      {
-        "title": "Our history",
-        "publisher": "St. James Parish",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.stjamesp.org/our-history/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Look toward the churchyard. Wilmington storytellers attach a particularly unsettling\nlegend to Samuel Jocelyn Junior: a dead man supposedly appeared to a friend and asked to\nbe taken out of his grave.\n\nIn the tale, the friend initially dismissed the encounter. Further appearances finally\npersuaded him to investigate. The ending suggested that Jocelyn had been buried alive.\n\nThat is the ghost story, not a verified account of a premature burial. Its power comes\nfrom an ordinary human fear: needing help when nobody believes you can still ask for it.\n\nFrom this public sidewalk, the churchyard gives the tale its setting. You do not need to\nenter, search for a particular grave, or treat a sound as evidence. Listen to the city\ncontinuing around you. The legend asks you to imagine one voice trying to reach it.\n",
@@ -17487,22 +12119,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "The property",
-        "publisher": "Burgwin-Wright House and Gardens",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.burgwinwrighthouse.org/the-property"
-      },
-      {
-        "title": "Gardens",
-        "publisher": "Burgwin-Wright House and Gardens",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.burgwinwrighthouse.org/gardens"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "These gardens may feel as old as the house. Their present design belongs to a later\nchapter.\n\nIn 1962, the museum hired landscape architect Alden Hopkins to create gardens in an\neighteenth-century style. The grounds therefore interpret a period; they are not a\ngarden preserved unchanged from 1770.\n\nThat distinction adds to the experience. The orchard, herb areas, terraces, and formal\nplanting give visitors different ways to approach the past. A useful plant tells a\ndifferent story from a decorative hedge.\n\nWalk only along the open paths. Notice where the design invites a pause and where it\ndirects your gaze. This landscape records two eras at once: the colonial world it evokes\nand the twentieth-century preservation work that chose how that world would be\npresented.\n",
@@ -17538,15 +12155,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Family timeline",
-        "publisher": "Burgwin-Wright House and Gardens",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.burgwinwrighthouse.com/family-timeline"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 1930, this house faced a future that could have removed it from Wilmington entirely.\n\nBusinessman Samuel Pryor considered taking the building apart and moving it to\nConnecticut. A gas station was proposed for the cleared site. The Colonial Dames\ncampaigned to preserve the house, and Pryor changed course, contributing money and\nsupporting the effort.\n\nThe museum's timeline records that reversal. What you see is the result of people\ntreating an old building as a shared historical resource rather than simply a valuable\ndowntown lot.\n\nStand at the corner and picture the gap its removal would have made. No imagined\ndemolition is needed to appreciate the stakes. The threatened future was real, and so\nwas the intervention. The house stayed where its history could still be encountered.\n",
@@ -17582,22 +12191,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Wilmington coup d 118",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2023/12/12/wilmington-coup-d-118"
-      },
-      {
-        "title": "Nc highway historical marker commemorate 1898 wilmington coup",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/news/press-releases/2019/10/28/nc-highway-historical-marker-commemorate-1898-wilmington-coup"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This marker identifies a place of preparation. On November 10, 1898, armed white men\nassembled at the Wilmington Light Infantry armory before marching on the Daily Record.\n\nThe violence that followed was organized around a political aim: removing Wilmington's\nlegitimately elected government and suppressing Black political power. It was not simply\nan unexpected crowd losing control.\n\nStand beside the marker and look along Market Street. The route began among familiar\ncivic buildings and ordinary city blocks. That is part of the story's difficulty.\nPolitical violence did not arrive in a landscape separate from everyday Wilmington; it\nmoved through it.\n\nThe marker now interrupts that everyday view with a record of what happened. Before you\nmove on, notice its location. Remembering the starting point helps reveal the planning\nbehind the crime.\n",
@@ -17640,29 +12234,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Wilmington coup",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2016/11/10/wilmington-coup"
-      },
-      {
-        "title": "1898 wilmington coup",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/1898-wilmington-coup"
-      },
-      {
-        "title": "About",
-        "publisher": "Thalian Hall",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.thalianhall.org/about"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This building has held both city government and a theater. In November 1898, the civic\npart of that history became a scene of forced political change.\n\nWhite supremacist leaders used violence and intimidation to overthrow Wilmington's\nelected, biracial government. Officials were compelled to resign, and Alfred Moore\nWaddell assumed the mayor's office.\n\nThe outcome was not a normal transfer of authority after an election. The state\nrecognizes the events as a coup. Black residents were killed, threatened, and driven\nfrom the city; the full death toll remains uncertain.\n\nLook at the municipal entrance from the sidewalk. Government buildings can make\nauthority appear orderly and permanent. This one asks a harder question: how was that\nauthority obtained? The architecture remained. The democratic rights of many Wilmington\nresidents did not.\n",
@@ -17705,15 +12277,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "History",
-        "publisher": "Wilmington Railroad Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wrrm.org/history.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "For decades, Wilmington was a headquarters city for the Atlantic Coast Line Railroad. In\n1960, that role moved to Jacksonville, Florida.\n\nThe museum describes a relocation of more than a thousand employees, along with\nfamilies, belongings, records, and office equipment. The railway carried away part of\nthe city's working life.\n\nThis museum is a place to understand that change, not the vanished headquarters itself.\nIts collections preserve a local industry after the institution's center of gravity\nshifted south.\n\nImagine the difference between a train departing on its regular run and a train helping\nan employer leave for good. One promises another arrival. The other changes the\nneighborhood that waits behind. Here, preserved objects keep the railroad visible even\nafter its headquarters stopped calling Wilmington home.\n",
@@ -17749,15 +12313,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "About",
-        "publisher": "Latimer House Museum, Lower Cape Fear Historical Society",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://latimerhouse.org/about/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 1963, the Lower Cape Fear Historical Society acquired the Latimer house. A family\nresidence became a place where the region's history could be studied and shared.\n\nThe society had formed in 1956. Purchasing this house gave its work a physical anchor\ndowntown, with rooms, collections, and an address people could visit.\n\nPause at the entrance. Museums often seem inevitable once their signs are in place. This\none required a choice: keep a nineteenth-century house available and give it a public\npurpose.\n\nThe transition did not freeze its meaning. Each visitor can notice different evidence,\nfrom household objects to traces of the people who worked here. The house's new role\nmade those encounters possible. Its preservation connects personal memories with a\ncommunity's responsibility to examine its past.\n",
@@ -17793,22 +12349,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "History",
-        "publisher": "Burgwin-Wright House and Gardens",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.burgwinwrighthouse.org/history"
-      },
-      {
-        "title": "Family timeline",
-        "publisher": "Burgwin-Wright House and Gardens",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.burgwinwrighthouse.com/family-timeline"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The neat doorway and Georgian proportions tell one story. The walls underneath tell\nanother.\n\nJohn Burgwin's house was built in 1770 on the remains of Wilmington's first jail, which\ndated to about 1744. Parts of the older structure became part of a merchant's\nfashionable residence.\n\nIt was a dramatic change in use. A place designed to restrict movement became a place\ndesigned to display wealth and receive guests. Yet rebuilding did not erase everything\nthat had been there before.\n\nFrom the public sidewalk, look at the house as a layered object. The oldest history may\nbe below the features that first catch your eye. An authorized visit makes that contrast\nmore tangible: beneath a domestic setting survive reminders of the town's earlier system\nof confinement.\n",
@@ -17844,15 +12385,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Local Historic Landmarks",
-        "publisher": "City of Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This Grace Street house was built in 1818. Wilmington's landmark description records\nlater uses that included a military academy, a convent, and an emergency hospital.\n\nThat sequence is more revealing than the idea of one perfectly preserved household. The\nsame building had to meet different needs as the city changed around it.\n\nStay on the public sidewalk. Its historical significance does not make a present\ninterior automatically open to visitors.\n\nLook at the facade and ask what architecture can tell you by itself. A house's shape may\nsuggest domestic life, yet records reveal institutional uses you could not guess from a\npassing glance. The landmark survives as a physical meeting point for those different\nchapters, even when their occupants and furnishings have long since moved on.\n",
@@ -17888,15 +12421,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "War and politics a house divided",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/museum-blog/war-and-politics-a-house-divided"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The Bellamy family had barely begun living in this house when Wilmington's circumstances\nchanged.\n\nDuring the yellow fever epidemic of 1862, the family left the city and took refuge at\nFloral College. A residence meant to secure status and comfort could not protect its\noccupants from the city's public-health disaster.\n\nThis house is the family's associated site, not the place to which they escaped. The\nepidemic extended far beyond one household, and leaving was not an option available\nequally to everyone.\n\nLook at the imposing exterior. It can suggest permanence, but the first years of its\ndomestic life were disrupted almost immediately. The story turns on that mismatch: a\ncarefully planned new home meeting a crisis its plans could not contain. Its owners\ndeparted; the larger city still had to endure the outbreak.\n",
@@ -17932,22 +12457,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Family timeline",
-        "publisher": "Burgwin-Wright House and Gardens",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.burgwinwrighthouse.com/family-timeline"
-      },
-      {
-        "title": "History",
-        "publisher": "Burgwin-Wright House and Gardens",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.burgwinwrighthouse.org/history"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Before this was a handsome house, it was Wilmington's jail. The museum's timeline\nrecords that its roof burned in 1768 under suspicious circumstances.\n\nSuspicious is the crucial word. The surviving account does not give us a proven culprit\nor a settled motive. Calling it a solved arson would turn a historical uncertainty into\nan accusation.\n\nThe fire nevertheless changed what happened to the property. John Burgwin subsequently\nacquired the site, and the house built in 1770 incorporated the old jail's walls.\n\nLook at the building from the public street. It can seem like a clean beginning: a\nmerchant's residence rising on a downtown corner. Underneath lies the unresolved damage\nthat made the transformation possible. This case ends with a new building, not an\nidentified offender. The physical aftermath survives more clearly than the answer.\n",
@@ -17990,22 +12500,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Family timeline",
-        "publisher": "Burgwin-Wright House and Gardens",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.burgwinwrighthouse.com/family-timeline"
-      },
-      {
-        "title": "History",
-        "publisher": "Burgwin-Wright House and Gardens",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.burgwinwrighthouse.org/history"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "A kitchen can look like a modest supporting building. Here, it carries part of the\nproperty's first life.\n\nThe museum identifies the detached kitchen as the former jailer's quarters. When the\nsite became a residence, the small structure gained a new domestic role.\n\nThat reuse matters. Wilmington's early buildings were working resources, not untouched\nmonuments. Owners adapted what already existed, and the resulting place kept traces of\nseveral purposes.\n\nIf you are on an authorized tour, let the scale of the kitchen pull your attention away\nfrom the grander house. Food preparation required heat, repeated tasks, and labor that a\npolished dining room could conceal. The building connects those ordinary demands with an\neven earlier responsibility: watching over the people confined on this corner.\n",
@@ -18041,22 +12536,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "St johns lodge d 107",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2023/12/11/st-johns-lodge-d-107"
-      },
-      {
-        "title": "Mission and history",
-        "publisher": "Play Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.playwilmington.org/mission-and-history"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The historic St. John's Lodge building dates to 1804. Its later uses included an art\nmuseum, and it now belongs to the Children's Museum complex.\n\nThis stop concerns the surviving building rather than the original purpose of every room\ninside today's museum.\n\nLook at the old structure from Orange Street. Its long life illustrates how an\ninstitution's needs can change while useful architecture remains.\n\nA lodge, an art gallery, and a children's learning space bring very different activities\nto an address. The connection is the building that could accommodate new possibilities.\nPreservation here did not mean keeping only one use forever. It meant retaining a\nsubstantial piece of downtown while finding reasons for later generations to cross its\nthreshold.\n",
@@ -18092,22 +12572,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Wilmington and weldon railroad d 20",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2023/12/08/wilmington-and-weldon-railroad-d-20"
-      },
-      {
-        "title": "History",
-        "publisher": "Wilmington Railroad Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wrrm.org/history.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 1840, Wilmington gained a connection that reached far beyond the riverfront.\n\nThe Wilmington and Weldon Railroad opened a continuous line of about 161 miles. At\ncompletion, it was regarded as the longest continuous railroad line in the world.\n\nThat achievement changed how the port could connect with inland markets. The river\nremained important, but goods and passengers had another long route into and out of the\ncity.\n\nListen beside the historical marker. Do not enter the rail corridor. The impressive part\nis not merely the distance: every mile had to function as part of one connected system.\nWilmington's story widened along those rails. The city was no longer only a place\nreached by the river; it became an endpoint in a much larger network.\n",
@@ -18143,22 +12608,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Bellamy mansion suffers fire of incendiary origin",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/museum-blog/bellamy-mansion-suffers-fire-of-incendiary-origin"
-      },
-      {
-        "title": "Audio 1",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/audio-1.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The columns still stand. That makes it easy to miss the violence committed inside this\nhouse on March 13, 1972.\n\nThe museum describes an arson attack in which gasoline was spread on floors and ignited.\nFire damaged plaster, woodwork, fixtures, and mirrors. The outside survived while the\ninterior needed extensive restoration.\n\nNo culprit or motive was established. Suggestions about political motives remain\ntheories, and this story does not identify anyone as responsible.\n\nWhat happened afterward is visible in the building's continued life. Preservation turned\na damaged, empty mansion into a place where visitors can examine the work of enslaved\nand free Black craftspeople, family history, and the restoration itself.\n\nFrom the sidewalk, hold both versions in mind: the building someone tried to destroy,\nand the building a community decided was worth keeping.\n",
@@ -18201,15 +12651,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "About",
-        "publisher": "Latimer House Museum, Lower Cape Fear Historical Society",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://latimerhouse.org/about/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "An old family home can continue by becoming something its builders never anticipated.\n\nAfter William Latimer's death in 1923, Margaret Latimer took in boarders. The museum\nrecords that artist Elisabeth Chant later rented a room here.\n\nThat shift brought additional lives into a house strongly identified with one family.\nPrivate rooms became lodgings; a formal residence gained a practical way to keep\noperating.\n\nLook at the windows from Third Street. They do not reveal which occupant belonged to\nwhich period. A mansion can conceal a boarding house in plain sight, because a changed\nuse does not always require a changed facade.\n\nThe house survived partly through adaptation. Its story is therefore more than an\naccount of affluent beginnings. It also includes the choices that allowed a large, aging\nbuilding to remain useful.\n",
@@ -18245,15 +12687,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Central business district",
-        "publisher": "Downtown Business Alliance Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://dbawilmington.org/downtown/central-business-district/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The Cotton Exchange can feel like a collection of old shops. One of its earlier chapters\ninvolved something much less leisurely: milling.\n\nDowntown's business association identifies part of the complex with a flour and hominy\nmill before later alterations and cotton-business use. The connected buildings\naccumulated different jobs rather than appearing all at once as a shopping destination.\n\nWalk through only the passages open to visitors. Notice the changes in level and\nconstruction. They make more sense when you think of separate working buildings joined\ninto a modern experience.\n\nThe name Cotton Exchange highlights one phase. Milling reminds us that waterfront\ncommerce included everyday food as well as export goods. Behind the present storefronts\nlies a city that processed, stored, sold, and shipped the things people needed.\n",
@@ -18289,22 +12723,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Bijou Park",
-        "publisher": "City of Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonnc.gov/Connect-With-Us/Department-Directory/Parks-Recreation/Parks-Trails/Bijou-Park"
-      },
-      {
-        "title": "B003837",
-        "publisher": "North Carolina Architects and Builders, NC State University Libraries",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://ncarchitects.lib.ncsu.edu/buildings/B003837"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Would you go to the movies inside a tent? Wilmington's Bijou began that way in 1906,\nwith folding chairs for its audience.\n\nLater, a permanent theater took its place. The theater itself is gone now, but this park\nremembers it, including preserved tiles from the old building.\n\nStand on the open path and imagine choosing a chair before a show. The people coming\nhere were discovering a new kind of entertainment, not visiting an old landmark.\n\nNow you can visit the place where they gathered. Look for the name Bijou among the\npreserved features, without touching them. A small piece of lettering can help a big\nstory survive. The screen disappeared, but the park keeps a reminder of Wilmington's\nearly moviegoing days right on Front Street.\n",
@@ -18341,22 +12760,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Museum move 2007",
-        "publisher": "Wilmington Railroad Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wrrm.org/museum-move---2007.html"
-      },
-      {
-        "title": "Wrrm.org",
-        "publisher": "Wilmington Railroad Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wrrm.org/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "A railroad museum has an unusual moving problem: some of its most important objects are\nbuilt to travel, but cannot simply be driven down a city street.\n\nThe museum's account of its 2007 relocation records the work of moving the collection to\nits present Nutt Street setting. A new location had to accommodate artifacts and\nfull-size railroad equipment together.\n\nThis building now gives the collection a downtown home beside the city's railroad\nhistory. The move was itself another chapter in preservation, not the end of the\nprocess.\n\nLook at the scale of the outdoor equipment from the permitted visitor area. Each large\nobject represents a decision to carry difficult evidence forward. Keeping history\nsometimes means arranging a journey for things that have already finished their working\njourneys.\n",
@@ -18392,22 +12796,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Museum",
-        "publisher": "Wilmington Community Arts",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://wilmingtoncommunityarts.org/museum/"
-      },
-      {
-        "title": "July 4th open house",
-        "publisher": "Wilmington Community Arts",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://wilmingtoncommunityarts.org/classes-and-events/july-4th-open-house/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The wartime welcome offered here had a boundary. Wilmington's USO facilities were\nsegregated.\n\nThe city's history records a separate club on Nixon Street for African American service\nmembers. Today's museum includes a tribute to the Ninth and Nixon USO, preserving a\nstory that this building alone cannot fully represent.\n\nYou are at the interpretive site, not at that other club's original address. The\ndistinction matters. A visitor who hears only about this downtown center could mistake\none part of the wartime experience for everyone's experience.\n\nIf the exhibit is open, pause before the tribute. Both clubs served people preparing for\nmilitary duty, but their separation reflected the racial restrictions of civilian\nAmerica. Remembering the welcome requires remembering who was directed to a different\ndoor.\n",
@@ -18443,15 +12832,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "A new journey for ecce homo",
-        "publisher": "St. James Parish",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.stjamesp.org/a-new-journey-for-ecce-homo/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "St. James preserves the story of Ecce Homo, a painting associated with the capture of a\nSpanish privateer vessel near Brunswick Town in 1748.\n\nThe parish's account says the salvaged painting went first to St. Philip's Church and\nlater to St. James after Brunswick Town was abandoned. Its artist remains uncertain.\n\nIn 2026, the parish reported sending the painting for conservation. This stop therefore\nconnects you with its history, not a promise that it is currently hanging inside.\n\nStand outside and consider an artwork that outlasted changes in location and care. Its\nstory is not only what it depicts. The journeys, the uncertain attribution, and the work\nneeded to stabilize the canvas all belong to it. The object survives because later\npeople keep accepting responsibility for its future.\n",
@@ -18487,15 +12868,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Discover outdoor art in wilmington nc",
-        "publisher": "Wilmington and Beaches Convention and Visitors Bureau",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonandbeaches.com/blog/post/discover-outdoor-art-in-wilmington-nc/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Dumay Gorham's Pelican places a coastal bird in sculptural form beside Port City Marina.\n\nThe marina setting changes how you encounter the work. Water, boats, and open air supply\npart of its context; the sculpture turns attention toward a bird that belongs to the\nregion's coastal imagination.\n\nYou are looking at art, not a live animal or an exact scientific diagram. Its shape\nreflects choices about what a viewer will recognize and what the material can express.\n\nUse the public viewing route and leave private docks alone. Notice the outline before\nlooking for smaller details. A sculpture can make you pause in a place built for\ndepartures and arrivals. This bird stays while the boats move, giving the waterfront a\ndifferent sort of permanent resident.\n",
@@ -18531,22 +12904,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Headquarters",
-        "publisher": "Historic Wilmington Foundation",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://historicwilmington.org/headquarters/"
-      },
-      {
-        "title": "Sixty years of historic wilmington foundation",
-        "publisher": "Historic Wilmington Foundation",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://historicwilmington.org/sixty-years-of-historic-wilmington-foundation/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Historic Wilmington Foundation began in 1966, when preservation advocates organized to\nprotect the city's historic places.\n\nDowntown survival was not automatic. Buildings could be neglected, demolished, or\ntreated as obstacles to a different kind of development. The foundation made\npreservation an ongoing community effort.\n\nThis Orange Street address is its present headquarters, an associated site rather than\nthe setting of every early campaign. From the sidewalk, look at the neighboring streets\nas a collection of individual decisions.\n\nAn old building remains because someone maintains it, finds it useful, or argues for its\nvalue. A historic district is the accumulated result. The foundation's story helps\nexplain why downtown Wilmington still offers more than a list of vanished places. Many\nof its stories retain walls, doors, and street corners you can encounter.\n",
@@ -18582,22 +12940,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Alex manly 1866 1944 d 103",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2023/12/11/alex-manly-1866-1944-d-103"
-      },
-      {
-        "title": "1898 wilmington coup",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/1898-wilmington-coup"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "An ordinary block can hold the site of an extraordinary assault. On November 10, 1898, a\nwhite supremacist mob came to the Daily Record, Wilmington's Black-owned newspaper.\n\nThe newspaper occupied Free Love Hall on this Seventh Street block. The mob invaded the\nbuilding and set it ablaze. Editor Alex Manly had already fled, anticipating the\nviolence.\n\nThis was part of the Wilmington coup, not an isolated dispute over a newspaper.\nDestroying the press attacked a community's ability to speak while armed violence spread\nthrough the city.\n\nThe original building is gone. Listen from the public sidewalk rather than entering\ntoday's property. Its absence does not make the event less specific. Here, printed words\nwere answered with fire. The record we can recover belongs to the people whose right to\npublish was attacked.\n",
@@ -18640,15 +12983,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Wilmington and weldon railroad d 20",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2023/12/08/wilmington-and-weldon-railroad-d-20"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The railroad remembered here did not begin with the name Wilmington and Weldon. It was\noriginally chartered as the Wilmington and Raleigh Railroad.\n\nIts completed route reached Weldon instead of the state capital. The later name\nreflected the connection that actually existed rather than the destination first\nimagined.\n\nThat small naming change contains a larger lesson about infrastructure. A plan on paper\nis a proposal; a working line is the result of decisions, geography, financing, and\nconstruction.\n\nLook at the name on the marker. It records the outcome, while the earlier title\npreserves the ambition. Wilmington's future was not delivered in one straight line from\nidea to result. The railway became important through the route that could be built, and\nthe city learned to use the connection it obtained.\n",
@@ -18684,15 +13019,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Local Historic Landmarks",
-        "publisher": "City of Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Wilmington Iron Works made components for the machinery that kept the port city\nfunctioning. The city's history lists products ranging from fences to parts for\nlocomotives and steamboats.\n\nThis building began as a warehouse and was later reconstructed in brick. In 2025,\nWilmington designated the former machine shop a local historic landmark.\n\nListen from the public sidewalk. A waterfront economy needs more than ships and cargo.\nEquipment wears out; parts must be produced, repaired, and fitted.\n\nThe shop's importance lies in that supporting work. Its products could leave the\nbuilding and become nearly invisible inside larger machines. The surviving structure\nrestores a place to that labor, reminding you that the city depended on skilled\nmanufacturing behind the more dramatic scenes of transportation.\n",
@@ -18728,15 +13055,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "About",
-        "publisher": "Thalian Hall",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.thalianhall.org/about"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Thalian Hall's history lists appearances by performers including Lillian Russell,\nBuffalo Bill Cody, and John Philip Sousa.\n\nThey brought different kinds of entertainment, but their presence made the same point:\nWilmington belonged to a national touring circuit. A port city could receive artistic\ntraffic as well as commercial cargo.\n\nWe do not need to invent the sound of a particular concert or borrow a famous tune. The\ndocumented appearances are enough to establish the connection.\n\nStand outside the theater and consider the practical journey behind a celebrated name.\nPerformers, equipment, schedules, and audiences had to meet here on the same date. The\nbuilding supplied the local end of that arrangement. For an evening, a touring\nreputation became something Wilmington residents could experience together.\n",
@@ -18772,15 +13091,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Guinness world record 2011",
-        "publisher": "Wilmington Railroad Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wrrm.org/guinness-world-record-2011.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In April 2011, model railroaders made a very small kind of train do something very big\ninside this convention center.\n\nThey connected thirty-one model locomotives and 1,563 cars. The train stretched more\nthan nine hundred feet and completed the run needed for a Guinness world record.\n\nThe event is over; there is no promise that the record train is waiting inside today.\nBut this is the building where it happened.\n\nLook at its size from the public sidewalk. One tiny car would be easy to hold.\nConnecting more than fifteen hundred of them created a problem of teamwork, space, and\ncareful movement. The achievement was not just owning lots of pieces. It was making all\nthose pieces work together as one astonishing train.\n",
@@ -18817,15 +13128,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "About",
-        "publisher": "Latimer House Museum, Lower Cape Fear Historical Society",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://latimerhouse.org/about/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould\nLatimer among his works.\n\nA tree that no longer survives can remain available through art. The painting records an\nartist's view, not a replacement for the actual tree or a photograph of every detail.\n\nYou are at the house associated with the artist and the collection. If the work is\navailable on your authorized visit, look first at what the artist chose to emphasize. Do\nnot assume every object in the collection is always on display.\n\nThe image gives the vanished landmark a different kind of life. Waterfront memory moved\nfrom a living tree into paper, pigment, and preservation. An artist's decision to look\nclosely became something later Wilmington visitors could still encounter.\n",
@@ -18861,15 +13164,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Museum",
-        "publisher": "Wilmington Community Arts",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://wilmingtoncommunityarts.org/museum/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The USO's wartime program included big-band dances, plays, recitals, and radio\nbroadcasts. Entertainment was part of what the building offered people far from home.\n\nThat did not make the war disappear. It gave service members a temporary change of\nrhythm: a chance to listen, move, and join a crowd for reasons other than military duty.\n\nStand in the open lobby if permitted, or listen from the sidewalk. The building helps\nyou locate the idea without pretending a particular dance is happening around you.\n\nArt can do practical work. A song or performance may help a stranger feel less isolated,\neven when the larger circumstances remain difficult. Here, organized entertainment\nbelonged to a wider effort of hospitality. The dance floor was one way Wilmington\noffered an evening's company.\n",
@@ -18905,28 +13200,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Wilmington 10 and firebombing mikes grocery",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2016/02/06/wilmington-10-and-firebombing-mikes-grocery"
-      },
-      {
-        "title": "Marker 262587",
-        "publisher": "The Historical Marker Database",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.hmdb.org/m.asp?m=262587"
-      },
-      {
-        "title": "Chavis v. North Carolina, 637 F.2d 213 (4th Cir. 1980)",
-        "publisher": "United States Court of Appeals for the Fourth Circuit",
-        "retrievedAt": "2026-10-09",
-        "rights": "public-domain"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "This block was a gathering place for students protesting unequal treatment during school\ndesegregation in 1971. Nearby, Mike's Grocery was firebombed.\n\nTen people were convicted on charges connected with the fire. Their case became known as\nthe Wilmington Ten. The evidence and prosecution were later exposed as deeply flawed,\nincluding perjured testimony.\n\nThe convictions were overturned by the federal appeals court in 1980. Governor Beverly\nPerdue issued pardons in 2012. Responsibility for the grocery arson remains unclear;\nthese ten people should not be presented as its proven perpetrators.\n\nListen beside the marker, not inside the church without permission. This true crime\nstory includes a crime committed against justice itself: people losing years while a\nfalse case was challenged. The ending is correction, but correction cannot return the\ntime already taken.\n",
@@ -18969,15 +13243,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Riverwalk",
-        "publisher": "City of Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.wilmingtonnc.gov/Connect-With-Us/Department-Directory/Parks-Recreation/Riverwalk"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The Riverwalk can feel like something the city always had. Its construction instead\nunfolded over about thirty years.\n\nWilmington marked its completion in November 2017. The city describes a route running\nfrom Nun Street toward the Isabel Holmes Bridge, linking a long stretch of downtown\nwaterfront.\n\nThat project changed how people could encounter the river. A sequence of working and\ncommercial edges became a connected public experience.\n\nPause without blocking the path. The people moving past you are using the result of many\nseparate planning and building decisions. The story is not one spectacular opening but\npersistence over time. Wilmington gradually made a continuous place to walk beside the\nwater that had shaped its economy long before visitors came here simply to enjoy the\nview.\n",
@@ -19013,15 +13279,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "July 4th open house",
-        "publisher": "Wilmington Community Arts",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://wilmingtoncommunityarts.org/classes-and-events/july-4th-open-house/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The museum lists a Liberty Bell salvaged from the Brunswick River Reserve Fleet among\nits displays.\n\nIt is not Philadelphia's famous Liberty Bell. The similar name belongs to a different\nobject with a different story.\n\nStand where you can see the display with your grown-up. Read the label before making\nguesses. That is one of the best tricks for exploring a museum: let the object surprise\nyou, then use the information nearby to learn what it really is.\n\nThis bell connects the museum with ships once gathered in the river fleet. An object can\nleave its first setting and still help us remember it. Here, something associated with\nthe water has come indoors, where you can stop, look closely, and ask how it reached\nthis new home.\n",
@@ -19058,15 +13316,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Family timeline",
-        "publisher": "Burgwin-Wright House and Gardens",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.burgwinwrighthouse.com/family-timeline"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Thomas Henry Wright inherited this house as a boy and later trained as a physician. In\n1845, he enlarged the property.\n\nThe museum's family timeline also connects him with banking and railroad leadership. A\nsingle resident's career could link domestic space with the institutions helping\nWilmington grow.\n\nLook at the house from the public corner. Its name joins two families, but even one\nfamily's occupancy included substantial change. Thomas did not receive a finished\nmuseum; he received a working residence that could be adapted.\n\nThe expansion gives his life a physical consequence here. The rooms belonged to\ndifferent decisions made at different times. His story helps explain why the building\ncannot be read as one moment in 1770. Later occupants continued to shape the place they\ninherited.\n",
@@ -19102,15 +13352,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Mission and history",
-        "publisher": "Play Wilmington",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.playwilmington.org/mission-and-history"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "The Children's Museum did not move into one brand-new building. In 2004, it bought a\ngroup of three old buildings downtown.\n\nThey included a Masonic lodge, a Greek Orthodox church, and the Cowan house. The\nbuildings had already helped people meet, worship, and live before they became part of a\nplace for learning through play.\n\nLook at the complex with your grown-up. Can you notice differences between its parts?\nYou do not have to know every architectural name to recognize that they were not all\nbuilt as one piece.\n\nThis is a true story of finding a new use for old places. The museum kept important\nparts of downtown standing and brought children inside for a different purpose. A\nbuilding's first job does not have to be its last.\n",
@@ -19147,15 +13389,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "About",
-        "publisher": "Thalian Hall",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.thalianhall.org/about"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Thalian Hall is the only surviving theater designed by John Montague Trimble, according\nto its institutional history.\n\nThat makes this building more than a local survivor. It carries physical evidence of a\ntheater architect's work after his other theaters have disappeared.\n\nThe original project joined performance with municipal functions. Art and government\nshared a substantial downtown building rather than occupying separate civic worlds.\n\nFrom outside, notice how confidently the building addresses the street. A theater begins\nits work before an audience reaches a seat: the approach, entrance, and sense of\noccasion all matter.\n\nThe surviving structure lets today's visitors encounter a design that written\ndescriptions alone cannot replace. Trimble's name may be unfamiliar, but the building\nstill performs one part of his intention: making an arrival feel significant.\n",
@@ -19191,15 +13425,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Museum",
-        "publisher": "Wilmington Community Arts",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://wilmingtoncommunityarts.org/museum/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "During the Second World War, this corner offered service members a place to spend their\nhours away from duty.\n\nThe USO club opened in December 1941. Volunteers kept it operating around the clock,\nwith recreation, assistance, and familiar comforts for visitors far from home.\n\nIts public role was built from repeated small acts: directing a newcomer, providing\nrefreshments, arranging an activity, keeping the doors available. A building can support\nwartime life without being a battlefield.\n\nPause at the entrance. The continuity is striking: a place created for gathering still\nserves community life. The current arts center has a different purpose, but the building\nremains a meeting point. Its wartime story is measured in the people who passed through\nand the practical welcome they found here.\n",
@@ -19235,15 +13461,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Washingtons southern tour d 19",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2023/12/08/washingtons-southern-tour-d-19"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 1791, President George Washington visited Wilmington during his Southern Tour.\n\nHis diary described a compact town with some good houses and recorded a disagreement\nover how accurately the census represented its population. The visit gave the first\npresident a direct encounter with the developing port.\n\nThis marker commemorates the visit; it does not prove that he stood at the exact spot\nwhere you are listening. That difference keeps the scene honest.\n\nLook along the historic streets and imagine a president trying to understand a place by\nmoving through it. A tour could connect the new federal government with communities that\notherwise knew it through correspondence and law. Wilmington was one stop in that\neffort, and Washington left a brief written impression rather than a complete portrait.\n",
@@ -19279,22 +13497,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Audio 1",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/audio-1.html"
-      },
-      {
-        "title": "War and politics a house divided",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/museum-blog/war-and-politics-a-house-divided"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 1865, the Bellamy mansion took on a job its owners had not planned.\n\nAfter Union forces entered Wilmington, military staff used the empty house as\nheadquarters. The property of a Confederate-supporting household became a place from\nwhich Union officers worked.\n\nThe change was part of a much larger upheaval. Wilmington's Confederate port economy was\ncollapsing, and emancipation was transforming the lives of the people whose labor had\nsustained households like this one.\n\nLook toward the entrance from the public sidewalk. The same rooms could serve domestic\nauthority in one period and military authority in another. Their walls did not settle\nthe conflict; occupation changed who controlled the space. A building that appears\nunified from outside can hold profoundly different histories of power within.\n",
@@ -19330,15 +13533,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "About",
-        "publisher": "Thalian Hall",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.thalianhall.org/about"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "In 1909, Thalian Hall installed electric stage lights. Its renovation also changed the\nbalconies and proscenium, the frame around the stage.\n\nThe theater was adapting to new expectations instead of preserving every feature from\nits opening. The audience's view and the performers' working conditions could change\nwhile the building continued serving the same larger purpose.\n\nIf you can enter through an authorized visit, look toward the stage opening. The frame\ntells you where to direct attention; light tells you what to notice within it.\n\nFrom outside, the story still works. A historic theater is not one unaltered machine. It\nis a place repeatedly adjusted so performance can continue. The 1909 work reminds us\nthat what now looks traditional was once a substantial modern improvement.\n",
@@ -19374,22 +13569,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "Previous",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/museum-blog/previous/2"
-      },
-      {
-        "title": "The people",
-        "publisher": "Bellamy Mansion Museum",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.bellamymansion.org/the-people.html"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "William Benjamin Gould was an enslaved plasterer hired out for work at the Bellamy site.\nThe museum records that a later renovation revealed plasterwork bearing his initials.\n\nIn 1862, Gould escaped down the Cape Fear River and entered Union naval service. He kept\na diary, leaving a record in his own words beyond the evidence of his skilled labor.\n\nThis is his documented worksite, not the location of every stage of his escape or\nservice.\n\nIf the identified plaster is available on your authorized tour, notice how small a\nsignature can be beside a large house. Initials connect a finished surface to a\nparticular person. Gould's later life changes the meaning again: the craftsperson was\nalso someone who acted to claim freedom and preserve his experience.\n",
@@ -19425,15 +13605,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "William hooper d 45",
-        "publisher": "North Carolina Department of Natural and Cultural Resources",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://www.dncr.nc.gov/blog/2023/12/08/william-hooper-d-45"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "William Hooper arrived in Wilmington in 1764 and opened a law office. Twelve years\nlater, he signed the Declaration of Independence.\n\nThat national achievement can obscure the local beginning: a young lawyer building a\ncareer in a port town. Wilmington supplied professional relationships and a political\nsetting before the Continental Congress became his larger stage.\n\nYou are at a marker honoring that connection, not standing inside a verified surviving\noffice.\n\nLook along Third Street and think about how a public life begins. The later signature\ngives Hooper a place in national memory, but the earlier years consisted of work and\ndecisions whose consequences were still unknown. The marker brings the two scales\ntogether: a person's Wilmington chapter and the document that would define his\nreputation.\n",
@@ -19469,15 +13641,7 @@ export const LIBRARY: readonly Echo[] = [
     "quality": 0.75,
     "visibility": "at-hand",
     "certainty": "documented",
-    "sources": [
-      {
-        "title": "About",
-        "publisher": "Latimer House Museum, Lower Cape Fear Historical Society",
-        "retrievedAt": "2026-10-09",
-        "rights": "fair-use-facts",
-        "url": "https://latimerhouse.org/about/"
-      }
-    ],
+    "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
     "script": "Zebulon Latimer came from Connecticut and built a career as a commission merchant in\nWilmington. His business success helped support the substantial house completed here in\n1852.\n\nThe museum also connects his wealth with investments in gas lighting and railroads. His\ndomestic surroundings belonged to a larger commercial network.\n\nThis is his residence, not the place where every business transaction occurred. The\ndistinction helps you read the house as evidence of economic results rather than the\nwhole economy itself.\n\nFrom Third Street, notice the confidence of its scale. A merchant's success could become\nbrick, rooms, and furnishings. The facade makes private prosperity visible, while the\nwider story asks where that prosperity came from and whose work helped sustain the city\naround it.\n",

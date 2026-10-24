@@ -222,6 +222,37 @@ function routesJson(list) {
   return text.replace(/"@@path(\d+)@@"/g, (_, i) => JSON.stringify(paths[Number(i)]));
 }
 
+/**
+ * What the phone is sent, which is less than what the editor keeps.
+ *
+ * James (2026-10-24): "I dont want users to see sources." Nothing ever drew them, but the
+ * whole echo record was being serialised into the bundle, so every citation was sitting in
+ * the page for anyone who opened devtools. Two fields come out here, after validation has
+ * run against the full record, so nothing is weakened by their absence:
+ *
+ *   sources   citations, for review. Emptied rather than deleted, because `Echo` requires
+ *             the field and an empty array keeps the type honest about what shipped.
+ *   claims    each checkable sentence beside its quoted passage. Reviewer scaffolding,
+ *             already optional, and the one that matters for weight: the library is 969 KB
+ *             today, and quoting all 2,433 checkable sentences would add about 587 KB of
+ *             text no listener will ever be shown, carried over a plane's wifi and counted
+ *             against the offline budgets in `modes.ts`.
+ *
+ * What stays, and why, so nobody strips it next:
+ *
+ *   certainty       `truthOf` reads it for the mark on the card, player and My Echoes.
+ *   certaintyNote   the disclosure behind that mark. Nothing draws it yet; it should.
+ *   editorial,
+ *   factCheck       kept for now. The mark reads VERIFIED_IDS rather than these, so they
+ *                   could follow, but they are two short strings and removing them means
+ *                   narrowing the exported type.
+ *   trueCrimeReview `score.ts` refuses to play a true-crime echo that has none, so its
+ *                   presence is load-bearing. Note that its `reviewedBy` is a real
+ *                   person's name and currently ships; reducing it to a presence flag
+ *                   needs a type change and is worth doing separately.
+ */
+const shipped = demo.map(({ claims, ...echo }) => ({ ...echo, sources: [] }));
+
 await mkdir(dirname(OUT), { recursive: true });
 await writeFile(
   OUT,
@@ -231,7 +262,7 @@ await writeFile(
     `// DEMO ONLY: editorial status is overridden to "approved" so the prototype has\n` +
     `// something to play. The real library in content/ is untouched and still awaiting\n` +
     `// human fact-checking. Never import this into anything that ships.\n` +
-    `export const LIBRARY: readonly Echo[] = ${JSON.stringify(demo, null, 2)} as const;\n\n` +
+    `export const LIBRARY: readonly Echo[] = ${JSON.stringify(shipped, null, 2)} as const;\n\n` +
     `export const ROUTES: readonly Route[] = ${routesJson(routes)} as const;\n\n` +
     `// What a person has really checked, as authored, before the demo override above. The\n` +
     `// "true story" mark reads this, never the overridden status (\`truth.ts\` in the engine).\n` +
