@@ -33,16 +33,19 @@ The dashboard is where the build logs and the deployment history are, and it is 
 Vercel login, so it is for you rather than for anybody you send the demo to. The address
 above is the one to open and the one to send.
 
-Two reasons it cannot be discovered rather than recorded. `vercel.json` sets
-`github: { silent: true }`, so Vercel posts no deployment status back to GitHub for anyone
-to read. And the sandbox these sessions run in is refused `*.vercel.app` by its network
-policy: a 403 on the tunnel rather than a 404, so the address could not be probed for, and
-a deploy still cannot be checked from here after a push.
+It cannot be discovered rather than recorded, because `vercel.json` sets
+`github: { silent: true }`: Vercel posts no deployment status back to GitHub for anyone to
+read, so nothing on the pull request tells you the deploy landed.
 
-Neither of those stops anything deploying: every push to `main` goes out regardless. They
-only stop this file from filling itself in, and stop a session confirming afterwards that
-the deploy was green. If that confirmation is worth having, adding `vercel.app` to the
-environment's allowed domains is what buys it.
+**A deploy can still be confirmed from a session, and should be.** The sandbox is refused
+`*.vercel.app` by its network policy, a 403 on the tunnel, so `curl` and ordinary fetches
+fail. The Vercel MCP server does not go through the container: it fetches the live site
+through the account, and works. Read `/version.json` and compare `commit` against what was
+merged.
+
+*Corrected 2026-10-24. This section used to say a deploy could not be checked from here
+at all, which was true of `curl` and false overall. Merges went unconfirmed for no reason,
+and the suggested fix, allowing `vercel.app` as a domain, was never needed.*
 
 ## Use it on a phone, not a laptop
 

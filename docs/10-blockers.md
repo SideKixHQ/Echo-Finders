@@ -46,7 +46,7 @@ decision that settled them.
 | # | Blocker | Status |
 |---|---|---|
 | 10 | **Cloud sandbox network** blocks wikimedia.org, si.edu, wikidata.org, api.elevenlabs.io: research, photos and audio. loc.gov, nypl.org and nps.gov answer (checked 2026-10-14). | James approved allowing them (2026-10-14); he adds them under the environment's Network access, Allowed domains. |
-| 11 | **Nothing can be checked on a real device from a session.** Sessions cannot reach `*.vercel.app` or a phone; every visual change needs James's eyes. | Open by nature. Screenshots plus a phone check per merge. |
+| 11 | **Nothing can be checked on a real *device* from a session.** ~~Sessions cannot reach `*.vercel.app`~~: they can, through the Vercel MCP server, which fetches the live site through the account rather than through the container (corrected 2026-10-24, `DEPLOY.md`). So a deploy is confirmable: read `/version.json` and compare the commit. What remains open is the phone itself: camera, compass and sound need James's eyes. | Half settled. Confirm every merge against `/version.json`; screenshots plus a phone check for anything visual. |
 | 12 | **Weak safety nets.** CI skipped the audits; branch protection is off; the CODEOWNERS editorial team does not exist. | Audits move into CI with Playwright as a real dependency. Branch protection and the team are GitHub settings for James. |
 | 13 | **Stale docs.** Build plan said Phase 0; ADR-0005 vs 01-services on Postgres timing; ADR-0012 says `apps/*` does not exist. | Build plan marker updated with this doc; the ADR contradictions remain. |
 | 14 | **Driving safety.** Nothing stops a driver using the screen while moving. | Open; deliberately deferred 2026-10-06. |
