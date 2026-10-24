@@ -33,14 +33,38 @@ const MONTH =
 
 const CHECKABLE = new RegExp(`\\d|\\b(${COUNTING}|${ORDINAL}|${MONTH})\\b`, "i");
 
-/** Sentences, split on terminal punctuation followed by a capital or an opening quote. */
+/**
+ * Titles and abbreviations that end in a full stop without ending a sentence.
+ *
+ * Without this list the splitter cut "established St. John's Art Gallery" into "established
+ * St." and "John's Art Gallery", which breaks three things at once: the fragment inherits
+ * the capital in "St" and so counts as a checkable claim, a real claim can never match a
+ * sentence that no longer exists whole, and a reviewer is asked to find a source for the
+ * word "St.". It did that 34 times across the library, 12 of them in Wilmington alone,
+ * concentrated exactly where the saints are: St. James, St. John's, St. Philip's.
+ */
+const ABBREVIATION = /\b(?:Mr|Mrs|Ms|Dr|St|Ste|Rev|Fr|Hon|Jr|Sr|Col|Gen|Capt|Lt|Sgt|Prof|Inc|Co|Ltd|Mt|Ft|No|vs|etc|approx|ca|al)\.$/i;
+
+/**
+ * Sentences, split on terminal punctuation followed by a capital or an opening quote,
+ * except where the full stop belongs to an abbreviation (see `ABBREVIATION`).
+ */
 export function sentencesOf(text: string): string[] {
-  return text
+  const parts = text
     .replace(/\s+/g, " ")
     .trim()
-    .split(/(?<=[.!?…])\s+(?=["“‘(]?[A-Z0-9])/)
-    .map((s) => s.trim())
-    .filter((s) => s.length > 0);
+    .split(/(?<=[.!?…])\s+(?=["“‘(]?[A-Z0-9])/);
+
+  const out: string[] = [];
+  let held = "";
+  for (const part of parts) {
+    held = held ? `${held} ${part}` : part;
+    if (ABBREVIATION.test(held)) continue;
+    out.push(held.trim());
+    held = "";
+  }
+  if (held.trim().length > 0) out.push(held.trim());
+  return out.filter((s) => s.length > 0);
 }
 
 /**

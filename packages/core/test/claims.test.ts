@@ -20,6 +20,24 @@ const echo = (overrides: Partial<Echo> = {}): Echo =>
   makeEcho({ id: "fort", at: { lat: 40.7033, lng: -74.017 }, script: SCRIPT, sources: [source], ...overrides } as Parameters<typeof makeEcho>[0]);
 
 describe("sentencesOf", () => {
+  it("does not end a sentence on an abbreviation", () => {
+    // Wilmington is full of saints, and each one used to become its own "sentence".
+    expect(
+      sentencesOf("In 1962 a community effort established St. John's Art Gallery. It moved later."),
+    ).toEqual([
+      "In 1962 a community effort established St. John's Art Gallery.",
+      "It moved later.",
+    ]);
+    expect(sentencesOf("The test came on St. Patrick's Day, 1887.")).toEqual([
+      "The test came on St. Patrick's Day, 1887.",
+    ]);
+    expect(sentencesOf("It went to Mr. Forden. Then to Dr. Bellamy.")).toEqual([
+      "It went to Mr. Forden.",
+      "Then to Dr. Bellamy.",
+    ]);
+  });
+
+
   it("splits on terminal punctuation and folds line breaks", () => {
     expect(sentencesOf(SCRIPT)).toEqual([
       "The round sandstone building ahead of you was built to stop an invasion.",
