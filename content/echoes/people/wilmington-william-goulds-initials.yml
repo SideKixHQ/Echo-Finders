@@ -33,6 +33,13 @@ script: |
   also someone who acted to claim freedom and preserve his experience.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "William Benjamin Gould was an enslaved plasterer hired out for work at the Bellamy site."
+    source: 1
+    quote: "William Benjamin Gould, an enslaved plasterer who worked at the Bellamy site around 1860-61, was 'hired out' by his enslaver, Nicholas Nixon, for the construction project."
+  - says: "In 1862, Gould escaped down the Cape Fear River and entered Union naval service."
+    source: 2
+    quote: "William, along with several other slaves, escaped to their freedom in 1862 by boat down the Cape Fear River."
 sources:
   - title: "Previous"
     publisher: "Bellamy Mansion Museum"

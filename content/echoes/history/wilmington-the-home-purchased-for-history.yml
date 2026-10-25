@@ -34,6 +34,10 @@ script: |
   community's responsibility to examine its past.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "In 1963, the Lower Cape Fear Historical Society acquired the Latimer house."
+    source: 1
+    quote: "In 1963, Herbert Jr. sold the home to the Lower Cape Fear Historical Society, Inc., which has owned and operated the home ever since."
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"

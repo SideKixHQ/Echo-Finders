@@ -33,6 +33,10 @@ script: |
   relationship, not merely in its age.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Wilmington identifies this 1858 church as an important example of Carpenter Gothic architecture with Italianate influences."
+    source: 1
+    quote: "Constructed in 1858, the Chestnut Street Presbyterian Church is a rare example of an ecclesiastical structure built in the Carpenter Gothic style with Italianate influences."
 sources:
   - title: "Local Historic Landmarks"
     publisher: "City of Wilmington"

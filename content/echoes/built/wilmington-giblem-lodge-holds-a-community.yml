@@ -34,6 +34,10 @@ script: |
   that community's history a downtown address.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Built in 1873, Giblem Lodge is a surviving place of Black community organization in Wilmington."
+    source: 1
+    quote: "Constructed in 1873, is the second oldest Prince Hall Masonic Lodge in North Carolina, and the oldest in Wilmington."
 sources:
   - title: "Local Historic Landmarks"
     publisher: "City of Wilmington"

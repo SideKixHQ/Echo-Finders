@@ -34,6 +34,10 @@ script: |
   as her husband's commercial career.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St. James in 1848."
+    source: 1
+    quote: "Zebulon Latimer married Elizabeth Savage in 1848 at St. James Episcopal Church and moved into their brand new estate in 1852."
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"

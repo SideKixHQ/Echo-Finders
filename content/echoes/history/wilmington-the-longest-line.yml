@@ -32,6 +32,10 @@ script: |
   reached by the river; it became an endpoint in a much larger network.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "In 1840, Wilmington gained a connection that reached far beyond the riverfront."
+    source: 1
+    quote: "In 1840 the longest railroad in the world opened in North Carolina, running from Wilmington in New Hanover County to Weldon in Halifax County via Goldsboro and Rocky Mount."
 sources:
   - title: "Wilmington and weldon railroad d 20"
     publisher: "North Carolina Department of Natural and Cultural Resources"

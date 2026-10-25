@@ -33,6 +33,10 @@ script: |
   threshold.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The historic St. John's Lodge building dates to 1804."
+    source: 1
+    quote: "The 1804 St. John’s Masonic Lodge building on Orange Street has been preserved as an art museum."
 sources:
   - title: "St johns lodge d 107"
     publisher: "North Carolina Department of Natural and Cultural Resources"

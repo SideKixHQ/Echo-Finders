@@ -33,6 +33,10 @@ script: |
   those pieces work together as one astonishing train.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "In April 2011, model railroaders made a very small kind of train do something very big inside this convention center."
+    source: 1
+    quote: "The Museum received the Guinness World Records(TM) certificate for this accomplishment, to be showcased with other materials and memories of the record-setting event on April 23, 2011."
 sources:
   - title: "Guinness world record 2011"
     publisher: "Wilmington Railroad Museum"

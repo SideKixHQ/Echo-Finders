@@ -40,6 +40,10 @@ trueCrimeReview:
   reviewedBy: "TODO: a named human, before this can leave draft."
   reviewedAt: "2026-10-09"
   contentWarning: "This echo describes a suspicious fire. Nobody is described as hurt."
+claims:
+  - says: "John Burgwin subsequently acquired the site, and the house built in 1770 incorporated the old jail's walls."
+    source: 2
+    quote: "The Burgwin-Wright House was built in 1770 on top of the first city jail of Wilmington, circa 1744, as a townhouse for John Burgwin to use as his seat of business and entertainment in Wilmington."
 sources:
   - title: "Family timeline"
     publisher: "Burgwin-Wright House and Gardens"

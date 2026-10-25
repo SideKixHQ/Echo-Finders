@@ -35,6 +35,10 @@ script: |
   this new home.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "The museum lists a Liberty Bell salvaged from the Brunswick River Reserve Fleet among its displays."
+    source: 1
+    quote: "Displays include memorials honoring Medal of Honor recipients Charles Murray and Billy Halyburton, a portrait of building namesake Hannah Block, WWII memorabilia, a tribute to the 9 th & Nixon USO, a Liberty Bell salvaged from the Brunswick River Reserve Fleet, and a restored WWII-era telephone booth complete with a vintage phone and Bell Telephone System posters."
 sources:
   - title: "July 4th open house"
     publisher: "Wilmington Community Arts"

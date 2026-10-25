@@ -34,6 +34,10 @@ script: |
   something people had to discuss and arrange, not merely announce.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "The old courthouse at this corner housed meetings of the Wilmington Council of Safety."
+    source: 1
+    quote: "The old courthouse was also the meeting place of the Wilmington Council of Safety."
 sources:
   - title: "Old courthouse d 2"
     publisher: "North Carolina Department of Natural and Cultural Resources"

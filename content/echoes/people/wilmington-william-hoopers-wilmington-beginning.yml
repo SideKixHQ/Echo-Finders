@@ -34,6 +34,10 @@ script: |
   reputation.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "William Hooper arrived in Wilmington in 1764 and opened a law office."
+    source: 1
+    quote: "In 1764, after finishing his education, Hooper moved to Wilmington and opened a law office."
 sources:
   - title: "William hooper d 45"
     publisher: "North Carolina Department of Natural and Cultural Resources"

@@ -36,6 +36,13 @@ script: |
   generations in the city.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Dedicated in 1876, Wilmington's Temple of Israel is recognized as North Carolina's first Jewish house of worship."
+    source: 1
+    quote: "On May 12, 1876, North Carolina’s first Jewish synagogue, the Temple of Israel, was dedicated in Wilmington."
+  - says: "The congregation describes its building as Moorish Revival, a style used by synagogues in Europe and the United States during that period."
+    source: 2
+    quote: "Begun in 1875 and completed in 1876, the beautiful Temple structure was built in the Moorish Revival architectural style of building, which was then popular for synagogues in both Europe and the United States."
 sources:
   - title: "States first jewish house worship temple israel"
     publisher: "North Carolina Department of Natural and Cultural Resources"

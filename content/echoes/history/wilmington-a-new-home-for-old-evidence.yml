@@ -33,6 +33,10 @@ script: |
   asking how its past connects with the present.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Cape Fear Museum began in 1898."
+    source: 1
+    quote: "Founded in 1898, Cape Fear Museum is the oldest history museum in North Carolina."
 sources:
   - title: "Detail"
     publisher: "Cape Fear Museum of History and Science"

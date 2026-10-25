@@ -34,6 +34,10 @@ script: |
   reputation became something Wilmington residents could experience together.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Thalian Hall's history lists appearances by performers including Lillian Russell, Buffalo Bill Cody, and John Philip Sousa."
+    source: 1
+    quote: "Some of the artists who appeared in the Hall in the 19th and early 20th centuries were Lillian Russell, Buffalo Bill Cody, John Phillip Sousa, Joseph Jefferson, Maurice Barrymore, and Sir Henry Lauder."
 sources:
   - title: "About"
     publisher: "Thalian Hall"

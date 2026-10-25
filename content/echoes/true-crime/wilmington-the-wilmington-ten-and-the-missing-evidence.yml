@@ -40,6 +40,10 @@ trueCrimeReview:
   reviewedBy: "TODO: a named human, before this can leave draft."
   reviewedAt: "2026-10-09"
   contentWarning: "This echo describes an arson and a wrongful conviction. Nothing is described in detail."
+claims:
+  - says: "Governor Beverly Perdue issued pardons in 2012."
+    source: 1
+    quote: "Governor Beverly Perdue issued them pardons in 2012."
 sources:
   - title: "Wilmington 10 and firebombing mikes grocery"
     publisher: "North Carolina Department of Natural and Cultural Resources"

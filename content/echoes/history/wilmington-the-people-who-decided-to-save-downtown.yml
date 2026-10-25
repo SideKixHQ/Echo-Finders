@@ -34,6 +34,10 @@ script: |
   of its stories retain walls, doors, and street corners you can encounter.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Historic Wilmington Foundation began in 1966, when preservation advocates organized to protect the city's historic places."
+    source: 2
+    quote: "On August 2, 1966, twelve determined Wilmington residents stepped forward to reverse the tide, signing the articles of incorporation that established the Historic Wilmington Foundation (HWF)—one of North Carolina’s earliest volunteer preservation organizations."
 sources:
   - title: "Headquarters"
     publisher: "Historic Wilmington Foundation"

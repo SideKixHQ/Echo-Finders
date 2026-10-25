@@ -34,6 +34,10 @@ script: |
   and another invitation to an audience.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Ford, associated with Ford's Theatre in Washington, leased this Wilmington theater from 1867 to 1871."
+    source: 1
+    quote: "Ford, formerly of Ford's Theatre in Washington D.C. He leased Thalian Hall from 1867-1871 and changed the name to \"The Opera House.\""
 sources:
   - title: "About"
     publisher: "Thalian Hall"

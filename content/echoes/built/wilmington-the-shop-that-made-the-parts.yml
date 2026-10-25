@@ -33,6 +33,10 @@ script: |
   manufacturing behind the more dramatic scenes of transportation.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "In 2025, Wilmington designated the former machine shop a local historic landmark."
+    source: 1
+    quote: "18, 2025 meeting, City Council officially designated the former Wilmington Iron Works Machine Shop, located at 201 South Water Street, as a local historic landmark."
 sources:
   - title: "Local Historic Landmarks"
     publisher: "City of Wilmington"

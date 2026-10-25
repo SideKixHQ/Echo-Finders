@@ -35,6 +35,10 @@ script: |
   months had never happened.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "In February 1865, Union forces entered Wilmington."
+    source: 1
+    quote: "In February 1865, during the Civil War, Union forces entered Wilmington; the church building was seized and used as a hospital."
 sources:
   - title: "Our history"
     publisher: "St. James Parish"

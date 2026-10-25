@@ -34,6 +34,10 @@ script: |
   to be made again whenever people choose to put on the next performance.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The Thalian Association traces its beginnings to 1788, long before the theater now called Thalian Hall was built."
+    source: 1
+    quote: "The Thalian Association’s claim of 1788 is the date of the creation of the production company."
 sources:
   - title: "Our history"
     publisher: "Thalian Association"

@@ -32,6 +32,10 @@ script: |
   different sort of permanent resident.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Dumay Gorham's Pelican places a coastal bird in sculptural form beside Port City Marina."
+    source: 1
+    quote: "Continue walking east to view Dumay Gorham’s “Pelican” sculpture next to the Port City Marina (10 Harnett Street)."
 sources:
   - title: "Discover outdoor art in wilmington nc"
     publisher: "Wilmington and Beaches Convention and Visitors Bureau"

@@ -35,6 +35,10 @@ script: |
   of confinement.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "John Burgwin's house was built in 1770 on the remains of Wilmington's first jail, which dated to about 1744."
+    source: 1
+    quote: "The Burgwin-Wright House was built in 1770 on top of the first city jail of Wilmington, circa 1744, as a townhouse for John Burgwin to use as his seat of business and entertainment in Wilmington."
 sources:
   - title: "History"
     publisher: "Burgwin-Wright House and Gardens"

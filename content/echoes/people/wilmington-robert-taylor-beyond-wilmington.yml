@@ -35,6 +35,10 @@ script: |
   college recognized it.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Robert Robinson Taylor was born in Wilmington and became MIT's first known Black graduate, completing his degree in 1892."
+    source: 1
+    quote: "Taylor, MIT's first black graduate, Class of 1892 Courtesy MIT Museum In September 1888, a young African American traveled from Wilmington, North Carolina to Boston, Massachusetts to sit the examination for entrance to MIT."
 sources:
   - title: "Robert r taylor"
     publisher: "MIT Black History"

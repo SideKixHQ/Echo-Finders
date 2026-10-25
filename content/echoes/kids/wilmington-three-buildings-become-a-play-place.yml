@@ -34,6 +34,10 @@ script: |
   building's first job does not have to be its last.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "They included a Masonic lodge, a Greek Orthodox church, and the Cowan house."
+    source: 1
+    quote: "The St. John's Masonic Lodge, Greek Orthodox Church, and The Cowan House are dear pieces of Downtown Wilmington's history."
 sources:
   - title: "Mission and history"
     publisher: "Play Wilmington"

@@ -36,6 +36,10 @@ script: |
   keeps them open.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "The Colonial Dames acquired the Burgwin-Wright House in 1937."
+    source: 1
+    quote: "Finally, in 1937, t he NSCDA-NC purchased the Burgwin-Wright House for $21,000, and restoration efforts began on the exterior in early 1939."
 sources:
   - title: "The museum"
     publisher: "Burgwin-Wright House and Gardens"

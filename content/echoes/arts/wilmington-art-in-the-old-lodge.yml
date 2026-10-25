@@ -33,6 +33,10 @@ script: |
   continued its journey elsewhere.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The downtown buildings gained another use: the Children's Museum acquired the complex in 2004."
+    source: 2
+    quote: "To meet the steadily growing number of visitors, in 2004 the Museum purchased the three buildings that comprised the former St. John's Museum of Art as the new site for The Children's Museum of Wilmington (CMoW)."
 sources:
   - title: "History"
     publisher: "Cameron Art Museum"

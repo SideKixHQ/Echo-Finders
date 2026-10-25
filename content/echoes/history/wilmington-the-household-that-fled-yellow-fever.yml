@@ -35,6 +35,10 @@ script: |
   departed; the larger city still had to endure the outbreak.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "During the yellow fever epidemic of 1862, the family left the city and took refuge at Floral College."
+    source: 1
+    quote: "When a yellow fever outbreak ravaged Wilmington in the summer of 1862, the Bellamy family took refuge at Floral College, a Presbyterian girls' school in North Carolina near the depot village of Shoe Heel (now Maxton)."
 sources:
   - title: "War and politics a house divided"
     publisher: "Bellamy Mansion Museum"

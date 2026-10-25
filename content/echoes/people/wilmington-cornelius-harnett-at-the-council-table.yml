@@ -33,6 +33,10 @@ script: |
   preserves the setting of that practical political work.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The Wilmington Council of Safety met at the old courthouse on this corner."
+    source: 1
+    quote: "The old courthouse was also the meeting place of the Wilmington Council of Safety."
 sources:
   - title: "Old courthouse d 2"
     publisher: "North Carolina Department of Natural and Cultural Resources"

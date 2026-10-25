@@ -33,6 +33,10 @@ script: |
   doors and invite people in.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "On October 12, 1858, Thalian Hall opened with a gala."
+    source: 1
+    quote: "On October 12, 1858, Thalian Hall in Wilmington opened with a gala celebration."
 sources:
   - title: "Thalian hall opens wilmington"
     publisher: "North Carolina Department of Natural and Cultural Resources"

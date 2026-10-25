@@ -36,6 +36,10 @@ script: |
   still performs one part of his intention: making an arrival feel significant.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Thalian Hall is the only surviving theater designed by John Montague Trimble, according to its institutional history."
+    source: 1
+    quote: "Listed on the National Register for Historic Places, Thalian Hall is the only surviving theatre designed by John Montague Trimble, one of America's foremost 19th-century theatre architects."
 sources:
   - title: "About"
     publisher: "Thalian Hall"
