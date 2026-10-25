@@ -33,6 +33,10 @@ script: |
   twentieth century.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Rabbi Samuel Mendelsohn presided when Wilmington's Temple of Israel was dedicated in 1876."
+    source: 1
+    quote: "The Temple of Israel was officially dedicated on May 12th, 1876, with Rabbi Samuel Mendelsohn presiding."
 sources:
   - title: "History"
     publisher: "Temple of Israel"

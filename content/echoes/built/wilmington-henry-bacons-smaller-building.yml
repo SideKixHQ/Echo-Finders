@@ -32,6 +32,10 @@ script: |
   design work met an ordinary urban household and, later, the needs of a parish.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "The MacRae house was built in 1901 and designed by Henry Bacon, the architect later associated with the Lincoln Memorial in Washington."
+    source: 1
+    quote: "The MacRae House, originally built in 1901, was designed by the renowned architect Henry Bacon, best known for designing the Lincoln Memorial in Washington DC."
 sources:
   - title: "Our history"
     publisher: "St. James Parish"

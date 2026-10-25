@@ -32,6 +32,10 @@ script: |
   to mistake for an ordinary street sign.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Paul Hill's Southern Hospitality takes the shape of an enormous Venus flytrap."
+    source: 1
+    quote: "Start your outdoor art stroll at the foot of Market Street until you reach the giant 15-foot high Venus flytrap sculpture made of metal-and-glass, titled “Southern Hospitality” by artist Paul Hill."
 sources:
   - title: "Discover outdoor art in wilmington nc"
     publisher: "Wilmington and Beaches Convention and Visitors Bureau"

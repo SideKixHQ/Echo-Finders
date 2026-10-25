@@ -34,6 +34,10 @@ script: |
   after its headquarters stopped calling Wilmington home.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "In 1960, that role moved to Jacksonville, Florida."
+    source: 1
+    quote: "In 1960 the ACL moved its headquarters from Wilmington to Jacksonville, FL."
 sources:
   - title: "History"
     publisher: "Wilmington Railroad Museum"

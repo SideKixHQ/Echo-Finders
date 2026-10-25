@@ -34,6 +34,10 @@ script: |
   become something visitors could actually enter.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Claude Howell helped advocate for a stronger visual-arts life in Wilmington."
+    source: 1
+    quote: "Claude Howell, who was then chair of the University of North Carolina Wilmington art department, wrote in a letter to the editor of the Wilmington Star News on January 28, 1962, “…we need to see and hear the best that is being done in the world today."
 sources:
   - title: "History"
     publisher: "Cameron Art Museum"

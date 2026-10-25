@@ -34,6 +34,10 @@ script: |
   worked.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Rufus Bunnell assisted with the Bellamy design and kept a diary."
+    source: 1
+    quote: "Entries from the diary of Rufus Bunnell, Bellamy House assistant architect, reflect the holiday mood in Wilmington just prior to the war:"
 sources:
   - title: "Museum blog"
     publisher: "Bellamy Mansion Museum"

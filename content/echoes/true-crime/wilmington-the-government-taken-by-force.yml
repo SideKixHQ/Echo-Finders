@@ -40,6 +40,10 @@ trueCrimeReview:
   reviewedBy: "TODO: a named human, before this can leave draft."
   reviewedAt: "2026-10-09"
   contentWarning: "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
+claims:
+  - says: "In November 1898, the civic part of that history became a scene of forced political change."
+    source: 1
+    quote: "On November 10, 1898, the year’s white supremacy campaign culminated with a violent political coup in Wilmington, marking the onset of the Jim Crow era of segregation in the state."
 sources:
   - title: "Wilmington coup"
     publisher: "North Carolina Department of Natural and Cultural Resources"

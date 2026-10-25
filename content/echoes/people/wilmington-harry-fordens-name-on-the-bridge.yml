@@ -33,6 +33,10 @@ script: |
   people could continue to encounter in everyday life.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who worked to revive North Fourth Street after the Atlantic Coast Line's departure."
+    source: 1
+    quote: "In 2007 the bridge was renamed in memory of Mr. Harry Forden, a local community activist who strived to revive North 4th Street after the Atlantic Coast Line Railroad left Wilmington."
 sources:
   - title: "Local Historic Landmarks"
     publisher: "City of Wilmington"

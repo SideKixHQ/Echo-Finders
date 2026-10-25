@@ -33,6 +33,10 @@ script: |
   offered by those who seized power.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Allen Kirk came to Wilmington as a Baptist pastor in 1897."
+    source: 1
+    quote: "(The church is now called Central Baptist Missionary Church and is the oldest African American church in Wilmington.) He arrived in 1897 to be Central’s pastor."
 sources:
   - title: "J allen kirk d 122"
     publisher: "North Carolina Department of Natural and Cultural Resources"

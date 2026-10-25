@@ -36,6 +36,10 @@ script: |
   realizing there is nobody left to recognize.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "A published account of a Wilmington ghost tour tells of Fred, a tall, dark-haired apparition associated with Paddy's Hollow."
+    source: 1
+    quote: "Paddy's Hollow (10 Walnut Street) is and Irish restaurant in the Cotton Exchange with a great chicken sandwich and a ghost named Fred, a tall man with long curly black hair."
 sources:
   - title: "Haunted wilmington north carolina"
     publisher: "Drugstore Divas"

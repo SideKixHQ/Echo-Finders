@@ -35,6 +35,10 @@ script: |
   door.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The city's history records a separate club on Nixon Street for African American service members."
+    source: 1
+    quote: "Along with an identical structure on Nixon Street for African-American servicemen, it opened in December 1941, the same month that the Japanese attacked Pearl Harbor."
 sources:
   - title: "Museum"
     publisher: "Wilmington Community Arts"

@@ -33,6 +33,10 @@ script: |
   beginnings do not always require a monumental address.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "In 1953, Claude Howell and Gar Faulkner staged a Cottage Lane art show during the Azalea Festival, according to Cape Fear Museum's historical account."
+    source: 1
+    quote: "In the spring of 1953, Claude Howell and his friend Gar Faulkner staged the first Cottage Lane Art show, as a part of the Azalea Festival."
 sources:
   - title: "Sets"
     publisher: "Cape Fear Museum (photostream on Flickr)"

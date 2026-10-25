@@ -33,6 +33,13 @@ script: |
   lane where some of their learning began.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Elisabeth Chant made a studio in the old Hart Wine House on Cottage Lane."
+    source: 1
+    quote: "Chant, an eccentric British artist, set up an art studio on Cottage Lane, in the Hart Wine House, where students like Claude Howell and Henry Jay MacMillan took art classes."
+  - says: "Among her students were Claude Howell and Henry Jay MacMillan."
+    source: 1
+    quote: "Chant, an eccentric British artist, set up an art studio on Cottage Lane, in the Hart Wine House, where students like Claude Howell and Henry Jay MacMillan took art classes."
 sources:
   - title: "History"
     publisher: "Cameron Art Museum"

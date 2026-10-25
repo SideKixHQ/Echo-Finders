@@ -41,6 +41,10 @@ trueCrimeReview:
   reviewedBy: "TODO: a named human, before this can leave draft."
   reviewedAt: "2026-10-09"
   contentWarning: "This echo describes an arson attack on the house. Nobody is described as hurt."
+claims:
+  - says: "That makes it easy to miss the violence committed inside this house on March 13, 1972."
+    source: 1
+    quote: "On March 13, 1972, disaster struck the Bellamy mansion."
 sources:
   - title: "Bellamy mansion suffers fire of incendiary origin"
     publisher: "Bellamy Mansion Museum"

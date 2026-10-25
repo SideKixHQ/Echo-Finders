@@ -34,6 +34,10 @@ script: |
   that history available, examined, and connected to the city that exists now.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "In 2020, Wilmington became the country's first American World War II Heritage City."
+    source: 1
+    quote: "On Sept. 2, 2020, the City of Wilmington was officially named the first World War II Heritage City in the country."
 sources:
   - title: "World War II City"
     publisher: "City of Wilmington"

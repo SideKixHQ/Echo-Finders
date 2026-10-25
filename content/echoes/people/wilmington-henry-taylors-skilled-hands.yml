@@ -35,6 +35,10 @@ script: |
   craftsperson. Historical research makes the person visible again.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Henry Taylor was a carpenter and builder who worked on the Bellamy project."
+    source: 1
+    quote: "Another carpenter on the Bellamy project was Henry Taylor."
 sources:
   - title: "The people"
     publisher: "Bellamy Mansion Museum"

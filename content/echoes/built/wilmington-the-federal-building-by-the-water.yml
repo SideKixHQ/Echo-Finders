@@ -33,6 +33,10 @@ script: |
   and the public name carry separate layers of Wilmington's civic memory.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "It was named for Alton Lennon in 1972."
+    source: 1
+    quote: "Named the Alton Lennon Federal Building in 1972"
 sources:
   - title: "Wilmington north carolina 1919"
     publisher: "Federal Judicial Center"

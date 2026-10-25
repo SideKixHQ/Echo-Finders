@@ -33,6 +33,10 @@ script: |
   closely became something later Wilmington visitors could still encounter.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould Latimer among his works."
+    source: 1
+    quote: "Among his most popular works is his 1918 depiction of the famed Dram Tree."
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"

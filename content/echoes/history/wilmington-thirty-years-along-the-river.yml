@@ -34,6 +34,13 @@ script: |
   view.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Wilmington marked its completion in November 2017."
+    source: 1
+    quote: "In honor of the completion of all 1.75 miles of the Riverwalk, 30 years in the making, November 18, 2017 was officially proclaimed \"Riverwalk Day\" (PDF, 403KB) in the City of Wilmington."
+  - says: "The city describes a route running from Nun Street toward the Isabel Holmes Bridge, linking a long stretch of downtown waterfront."
+    source: 1
+    quote: "Wilmington's Riverwalk stretches 1.75 miles along the bank of the Cape Fear River in historic downtown Wilmington, running from the foot of Nun Street on the south of historic downtown to the Isabel Holmes Bridge on the north."
 sources:
   - title: "Riverwalk"
     publisher: "City of Wilmington"

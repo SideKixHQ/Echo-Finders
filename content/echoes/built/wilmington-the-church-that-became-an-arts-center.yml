@@ -33,6 +33,10 @@ script: |
   When people gather here now, they add a chapter rather than beginning on a blank site.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Construction of St. Andrew's Presbyterian Church began here in 1888."
+    source: 1
+    quote: "Since its construction of the corner of North 4th and Campbell streets in 1888, St. Andrew’s Presbyterian Church has been a spiritual, cultural, and community center for the Brooklyn neighborhood and beyond."
 sources:
   - title: "Full history"
     publisher: "Brooklyn Arts Center"
