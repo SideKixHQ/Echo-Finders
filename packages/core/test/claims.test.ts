@@ -19,6 +19,38 @@ million people walked through it. Most people walk past it to queue for the boat
 const echo = (overrides: Partial<Echo> = {}): Echo =>
   makeEcho({ id: "fort", at: { lat: 40.7033, lng: -74.017 }, script: SCRIPT, sources: [source], ...overrides } as Parameters<typeof makeEcho>[0]);
 
+describe("isCheckable", () => {
+  it("does not treat an immersive suggestion as a claim", () => {
+    // James (2026-10-26): "Things like that are immersive suggestions." They assert
+    // nothing, so no source could ever back one, and demanding a quote for them made the
+    // echoes carrying them impossible to approve.
+    expect(isCheckable("Look at the windows from Third Street.")).toBe(false);
+    expect(isCheckable("Look at the old buildings from Orange Street.")).toBe(false);
+    expect(isCheckable("Imagine a playbill announcing the Opera House.")).toBe(false);
+    expect(isCheckable("Do not enter a private courtyard to recreate the show.")).toBe(false);
+    expect(isCheckable("Listen for the bells of St. James.")).toBe(false);
+  });
+
+  it("still checks a fact carried inside a direction", () => {
+    expect(isCheckable("Look at number 604 H Street.")).toBe(true);
+    expect(isCheckable("Stand where the 1898 mob gathered.")).toBe(true);
+    expect(
+      isCheckable("Look across the street at numbers eighty-nine and ninety-one Church Street."),
+    ).toBe(true);
+  });
+
+  it("treats a numbered street as a name rather than a count", () => {
+    // "Third Street" is a street sign, not the third of anything.
+    expect(isCheckable("Harry Forden worked to revive North Fourth Street.")).toBe(true);
+    expect(isCheckable("The building on Third Street burned in 1898.")).toBe(true);
+  });
+
+  it("still checks an ordinary assertion", () => {
+    expect(isCheckable("On October 12, 1858, Thalian Hall opened with a gala.")).toBe(true);
+    expect(isCheckable("Alex Manly edited the Daily Record.")).toBe(true);
+  });
+});
+
 describe("sentencesOf", () => {
   it("still ends a sentence on an abbreviation that can end one", () => {
     // The first version of the abbreviation list was case-insensitive and held every

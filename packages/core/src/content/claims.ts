@@ -85,9 +85,48 @@ export function sentencesOf(text: string): string[] {
  */
 const NAMED = /\s(?!I\b)[A-Z][a-z]+/;
 
-/** A sentence that makes a claim that is either right or wrong. */
+/**
+ * A direction to the listener rather than an assertion about the world.
+ *
+ * James (2026-10-26), on sentences like "Look at the windows from Third Street": "Things
+ * like that are immersive suggestions." They are the walking tour talking to you, and
+ * they say nothing that could be true or false, so there is no passage in any source that
+ * could back one. Flagging them as claims meant 115 sentences across the library each
+ * asking a reviewer to go and find a citation for an instruction, and because
+ * `claims.backing` refuses to approve an echo with an unbacked checkable sentence
+ * (`validate.ts`), the echoes carrying them could never have been approved at all.
+ *
+ * A direction only escapes if a name is the only reason it was flagged. "Look at number
+ * 604 H Street" keeps its check, because an address is either right or wrong and a
+ * listener sent to the wrong door is a real failure. So is "Stand where the 1898 mob
+ * gathered": the date is a claim however it is phrased.
+ */
+const DIRECTION =
+  /^(?:Look|Listen|Stand|Walk|Watch|Notice|Try|Imagine|Picture|Step|Turn|Face|Follow|Cross|Pause|Read|Find|Check|Consider|Keep|Stay|Give|Take|Hold|Put|Let|Start|Begin|Approach|Head|Go|Stop|Wait|Feel|Smell|Touch|Count|Trace|Scan|Glance|Peer|Observe|Do not|Don't|Never|Please)\b/;
+
+/**
+ * A sentence that makes a claim that is either right or wrong.
+ *
+ * A number, a date, a month, a counting word or a superlative always counts. A name
+ * counts too, unless the sentence is a direction to the listener and the name is the only
+ * thing in it.
+ */
+/**
+ * A numbered street is a name, not a count.
+ *
+ * "Third Street" and "North Fourth Street" tripped the ordinal rule, so "Look at the
+ * windows from Third Street" counted as a claim on the strength of a street sign. The
+ * ordinal there is doing the work of a name: nobody checks whether Third Street is the
+ * third of anything. Stripped before the number test, never from the sentence a reviewer
+ * reads.
+ */
+const NUMBERED_STREET =
+  /\b(?:First|Second|Third|Fourth|Fifth|Sixth|Seventh|Eighth|Ninth|Tenth|Eleventh|Twelfth)\s+(?:Street|Avenue|Ave|Road|Lane|Place|Court|Boulevard|Blvd|Drive|Row|Walk)\b/g;
+
 export function isCheckable(sentence: string): boolean {
-  return CHECKABLE.test(sentence) || NAMED.test(sentence);
+  if (CHECKABLE.test(sentence.replace(NUMBERED_STREET, " "))) return true;
+  if (!NAMED.test(sentence)) return false;
+  return !DIRECTION.test(sentence.trim());
 }
 
 /** Case, punctuation and spacing folded away, so a claim matches its sentence as written. */
