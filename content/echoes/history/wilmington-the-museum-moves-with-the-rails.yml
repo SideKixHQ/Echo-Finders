@@ -33,7 +33,7 @@ script: |
   object represents a decision to carry difficult evidence forward. Keeping history
   sometimes means arranging a journey for things that have already finished their working
   journeys.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The museum's account of its 2007 relocation records the work of moving the collection to its present Nutt Street setting."
