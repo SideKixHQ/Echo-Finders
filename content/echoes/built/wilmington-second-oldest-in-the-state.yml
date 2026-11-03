@@ -1,0 +1,49 @@
+# Drafted 2026-11-03 from the city's landmark register.
+# Position: the coordinate of the existing Giblem Lodge echo (high confidence, inherited),
+# nudged south as noted below.
+# Listening spot: Public sidewalk; the lodge interior is not open without authorization.
+# Shares a stop with wilmington-giblem-lodge-holds-a-community, so it sits about 7 m
+# south of that point to keep its pin tappable.
+# Format: look-below, the second for Wilmington. The existing echo at this address is
+# about what the lodge did; this is the one fact it does not carry.
+id: wilmington-second-oldest-in-the-state
+title: "Second Oldest in the State"
+summary: "Only one Prince Hall lodge in North Carolina is older than this one, and none in Wilmington."
+place: "Giblem Lodge, 19 North Eighth Street, Wilmington, North Carolina"
+at: { lat: 34.23691, lng: -77.93956 }
+triggerRadiusKm: 0.04
+category: built
+format: look-below
+durationS: 18
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Count the older ones on one finger."
+script: |
+  Look at the brick. This went up in eighteen seventy-three.
+
+  In the whole state, exactly one Prince Hall lodge is older than it. In Wilmington, none
+  is.
+
+  Stay on the pavement if someone is using the door. It is still a working lodge, not a
+  monument.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "This went up in eighteen seventy-three."
+    source: 1
+    quote: "Constructed in 1873, is the second oldest Prince Hall Masonic Lodge in North Carolina, and the oldest in Wilmington."
+  - says: "In Wilmington, none is."
+    source: 1
+    quote: "Constructed in 1873, is the second oldest Prince Hall Masonic Lodge in North Carolina, and the oldest in Wilmington."
+  - says: "In the whole state, exactly one Prince Hall lodge is older than it."
+    source: 1
+    quote: "Constructed in 1873, is the second oldest Prince Hall Masonic Lodge in North Carolina, and the oldest in Wilmington."
+sources:
+  - title: "Local Historic Landmarks"
+    publisher: "City of Wilmington"
+    url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
+    retrievedAt: "2026-11-03"
+    rights: fair-use-facts
