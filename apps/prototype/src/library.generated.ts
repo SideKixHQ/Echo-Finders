@@ -11377,6 +11377,42 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-second-oldest-in-the-state",
+    "title": "Second Oldest in the State",
+    "summary": "Only one Prince Hall lodge in North Carolina is older than this one, and none in Wilmington.",
+    "point": {
+      "at": {
+        "lat": 34.23691,
+        "lng": -77.93956
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Giblem Lodge, 19 North Eighth Street, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "look-below",
+    "durationS": 18,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the brick. This went up in eighteen seventy-three.\n\nIn the whole state, exactly one Prince Hall lodge is older than it. In Wilmington, none\nis.\n\nStay on the pavement if someone is using the door. It is still a working lodge, not a\nmonument.\n",
+    "teaser": "Count the older ones on one finger.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-second-oldest-in-the-state",
+        "durationS": 18
+      }
+    ]
+  },
+  {
     "id": "wilmington-six-paddles-for-memory",
     "title": "Six Paddles for Memory",
     "summary": "The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its victims.",
@@ -11703,6 +11739,42 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-the-ceiling-nobody-replaced",
+    "title": "The Ceiling Nobody Replaced",
+    "summary": "The stamped tin ceiling in the ground-floor showroom is the original one.",
+    "point": {
+      "at": {
+        "lat": 34.23873,
+        "lng": -77.94904
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Former Efird's and Einstein Brothers store, 272 North Front Street, Wilmington, North Carolina"
+    },
+    "category": "built",
+    "format": "look-below",
+    "durationS": 25,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up, through the window of whatever is trading on the ground floor.\n\nThis went up in nineteen oh six, five storeys of blond brick. The city's landmark register\nsays that ceiling is the original one, stamped tin, still up there on the first storey.\n\nNobody preserved it. It simply outlasted every tenant who might have torn it out.\n",
+    "teaser": "Look up before you look at the shelves.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-ceiling-nobody-replaced",
+        "durationS": 25
+      }
+    ]
+  },
+  {
     "id": "wilmington-the-church-that-became-an-arts-center",
     "title": "The Church That Became an Arts Center",
     "summary": "Construction of St. Andrew's Presbyterian Church began here in 1888.",
@@ -11807,6 +11879,41 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/wilmington-the-county-courthouse-on-third",
         "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-court-behind-the-house",
+    "title": "The Court Behind the House",
+    "summary": "A Wilmington doctor laid a tennis court in his own back garden. Althea Gibson learned on it.",
+    "point": {
+      "at": {
+        "lat": 34.23431,
+        "lng": -77.93059
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Dr. Hubert Eaton House, 1406 Orange Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "feature",
+    "durationS": 145,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "There is a tennis court behind this house.\n\nNot a club court. Not a park court. A doctor's back garden, with a full court laid in\nit.\n\nWork out what that is for.\n\nStart with the rule, because the rule is the whole story. A Black player in America\ncould not join the United States Lawn Tennis Association. So in nineteen sixteen Black\nplayers built their own: the American Tennis Association, set up to encourage and\nsupport competitive tennis among African Americans, who were not permitted to join the\nwhite association. The state's own account calls it the first professional sports\nleague for African Americans in the country.\n\nA separate league is not a door opening. It is a door staying shut, and people building\nanother house.\n\nNow the man.\n\nHubert Eaton practised medicine here. The city's landmark register calls him a prominent\nBlack doctor in Wilmington and a leader in the civil rights movement, in the city and in\nthe nation. It also calls him a passionate and accomplished tennis player.\n\nThat is what fits on a plaque. Here is what it cost.\n\nA public court can turn you away. A club can decline your application. A tournament can\nlose your entry form. There is a court in this city that none of that can happen on, and\nit is the court a man pays for himself and lays in his own back garden.\n\nSo he did. And then he taught on it.\n\nThe register is specific about one of the people he taught at his home and on that\ncourt. The state goes further and says she lived with him for a time.\n\nHer name was Althea Gibson.\n\nShe went on, in the city's own flat phrasing, to become an international, award winning\ntennis icon. The state's account says Eaton is given much credit for her development.\n\nLook at the house.\n\nIt is a house. That is the whole point of it. There is no stadium and no statue. A\ndoctor who could not change the rule built around it instead, in his own yard, at his\nown expense, and handed the result to somebody else.\n",
+    "teaser": "Work out what a private court was for.",
+    "tags": [
+      "wilmington"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-court-behind-the-house",
+        "durationS": 145
       }
     ]
   },
@@ -12918,6 +13025,42 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/wilmington-the-people-who-decided-to-save-downtown",
         "durationS": 70
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-plasterer-who-became-a-legislator",
+    "title": "The Plasterer Who Became a Legislator",
+    "summary": "A man owned by someone else finished these walls. Seven years later he was writing the state's laws.",
+    "point": {
+      "at": {
+        "lat": 34.23594,
+        "lng": -77.94298
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+    },
+    "category": "people",
+    "format": "feature",
+    "durationS": 186,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the plaster where the wall meets the ceiling. The leaves, the scrolls, the\nrun of it around the whole room. That was pressed into place wet, by hand, and it had to\nbe finished before it set. There is no going back over plaster.\n\nSome of the hands that did this work belonged to men who were owned.\n\nThe house was designed for a wealthy physician and merchant, Doctor John Bellamy. It\nwent up between eighteen fifty-nine and eighteen sixty-one, and the museum's own account\nis plain about who did the work: skilled enslaved workers and local free Black artisans.\nTwenty-two rooms. Ten thousand square feet.\n\nOne of the plasterers was a man named George Price.\n\nHold that, because the next part happens quickly.\n\nSeven years after the plaster dried, in eighteen sixty-eight, George Price was elected\nto the North Carolina state legislature, as one of three representatives for New Hanover\nCounty.\n\nThe same year, on the fourth of July, President Johnson issued an amnesty to former\nConfederates. A man was pardoned for the war he had lost, and another, who had been\nproperty while this ceiling was going up, was sent to help write the laws.\n\nThat day is worth standing in for a moment.\n\nWhite Wilmington did not come out. The town's own paper, the Daily Journal, reported it\nwith its teeth showing. The only public demonstrations, it said, were not by the whites,\nfor whom the Declaration was made, but by negro organizations of small boys and the fire\ncompanies, parading the streets, rejoicing in a new found feeling of patriotism which\nthey are incapable of analyzing.\n\nHear that again. A newspaper watching Black children march on Independence Day, and\ndeciding the problem was that they did not understand it.\n\nThey understood it.\n\nAnd then it was ordinary. For thirty years, Black Wilmingtonians served as elected\nofficials, ran businesses, worked as civil servants, led civic life, in the same streets\nyou are standing in.\n\nIt did not fade out. It was taken. In eighteen ninety-eight Democrats forcefully\ninstalled a new city government, and the coup was followed by a massacre. North Carolina\nmoved quickly to disenfranchise Black voters. The museum's account gives the aftermath a\nsingle flat sentence: it would take over sixty years and the struggle for Civil Rights\nfor freedom and equality for all to come into focus once again.\n\nLook back at the ceiling.\n\nThe plaster George Price put up is still there. It outlasted his seat in the legislature\nby more than a century.\n",
+    "teaser": "He was property when he plastered these walls.",
+    "tags": [
+      "wilmington",
+      "downtown"
+    ],
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-plasterer-who-became-a-legislator",
+        "durationS": 186
       }
     ]
   },
