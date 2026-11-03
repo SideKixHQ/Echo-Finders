@@ -33,8 +33,12 @@ script: |
   object represents a decision to carry difficult evidence forward. Keeping history
   sometimes means arranging a journey for things that have already finished their working
   journeys.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "The museum's account of its 2007 relocation records the work of moving the collection to its present Nutt Street setting."
+    source: 1
+    quote: "By April of 2007 the building was ready to accept the Museum contents but a major hurtle remained."
 sources:
   - title: "Museum move 2007"
     publisher: "Wilmington Railroad Museum"

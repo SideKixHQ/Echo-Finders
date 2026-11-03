@@ -31,9 +31,12 @@ script: |
   serves community life. The current arts center has a different purpose, but the building
   remains a meeting point. Its wartime story is measured in the people who passed through
   and the practical welcome they found here.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
+  - says: "During the Second World War, this corner offered service members a place to spend their hours away from duty."
+    source: 1
+    quote: "Service members from the Army antiaircraft artillery base at Camp Davis in Holly Ridge, the Marine training facility at Camp Lejeune in Jacksonville, the Army airborne center at Fort Bragg in Fayetteville, and many other installations came to the USO facility for dancing, recreation and entertainment."
   - says: "The USO club opened in December 1941."
     source: 1
     quote: "Along with an identical structure on Nixon Street for African-American servicemen, it opened in December 1941, the same month that the Japanese attacked Pearl Harbor."

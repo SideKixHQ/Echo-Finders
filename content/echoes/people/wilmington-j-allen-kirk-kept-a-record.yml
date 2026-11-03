@@ -31,9 +31,12 @@ script: |
   him, then made a written record. His story demonstrates another form of resistance:
   preserving an experience so later generations would have evidence beyond the version
   offered by those who seized power.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
+  - says: "That record preserves the perspective of a Black community leader who experienced the danger directly."
+    source: 1
+    quote: "As Pastor of the prominent Central Baptist Church in Wilmington, North Carolina, J. Allen Kirk was a leader in the African American community in the port city."
   - says: "Allen Kirk came to Wilmington as a Baptist pastor in 1897."
     source: 1
     quote: "(The church is now called Central Baptist Missionary Church and is the oldest African American church in Wilmington.) He arrived in 1897 to be Central’s pastor."

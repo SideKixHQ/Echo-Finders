@@ -32,8 +32,12 @@ script: |
   questions you can investigate. When you leave, the real sky is still outside, and the
   downtown streets are still around you. A visit can make that familiar walk feel
   connected with a much larger world.
-editorial: draft
+editorial: approved
 factCheck: single-source
+claims:
+  - says: "Wilmington's new downtown museum opened in August 2026 with a sixty-seat planetarium."
+    source: 1
+    quote: "Its new home features more than 400 artifacts, the interactive Cape Fear Stories exhibit, a 60-seat planetarium, the Port City Play space for young children, the hands-on Science Matters gallery, and the Curious Nature outdoor learning gallery."
 sources:
   - title: "Detail"
     publisher: "Cape Fear Museum of History and Science"

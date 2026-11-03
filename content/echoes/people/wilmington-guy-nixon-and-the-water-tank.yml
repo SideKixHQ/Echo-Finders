@@ -32,8 +32,12 @@ script: |
   details; naming the person required to operate them changes the account. The mansion's
   daily life depended on work, and that work took place within slavery's restrictions on
   freedom.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Guy Nixon was an enslaved member of the Bellamy household."
+    source: 2
+    quote: "Bellamy's household, 1860 census shown at left, included (in census order): Sarah--cook and housekeeper Rosella Bellamy Simmons--laundress Joan--wet nurse and nanny Mary Ann Nixon--housekeeper Guy Nixon--butler and coachman Caroline--Joan's daughter and Mrs."
 sources:
   - title: "Museum blog"
     publisher: "Bellamy Mansion Museum"

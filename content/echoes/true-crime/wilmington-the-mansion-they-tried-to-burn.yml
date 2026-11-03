@@ -42,6 +42,9 @@ trueCrimeReview:
   reviewedAt: "2026-10-09"
   contentWarning: "This echo describes an arson attack on the house. Nobody is described as hurt."
 claims:
+  - says: "Preservation turned a damaged, empty mansion into a place where visitors can examine the work of enslaved and free Black craftspeople, family history, and the restoration itself."
+    source: 2
+    quote: "The two architects oversaw enslaved workers, free black artisans, and white mechanics who built the mansion and outbuildings between late 1859 and early 1861."
   - says: "That makes it easy to miss the violence committed inside this house on March 13, 1972."
     source: 1
     quote: "On March 13, 1972, disaster struck the Bellamy mansion."

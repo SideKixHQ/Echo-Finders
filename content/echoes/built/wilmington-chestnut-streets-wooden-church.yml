@@ -31,9 +31,12 @@ script: |
   modest building can carry a substantial history. Here, a continuing religious community
   and a distinctive design give the structure meaning together. Its value lies in that
   relationship, not merely in its age.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
+  - says: "The city's account also connects it with one of Wilmington's early Black congregations."
+    source: 1
+    quote: "Built as a mission church by the First Presbyterian Church in 1858, the church became one of the first all black congregations in Wilmington in 1864."
   - says: "Wilmington identifies this 1858 church as an important example of Carpenter Gothic architecture with Italianate influences."
     source: 1
     quote: "Constructed in 1858, the Chestnut Street Presbyterian Church is a rare example of an ecclesiastical structure built in the Carpenter Gothic style with Italianate influences."
