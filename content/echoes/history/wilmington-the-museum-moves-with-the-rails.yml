@@ -35,6 +35,10 @@ script: |
   journeys.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The museum's account of its 2007 relocation records the work of moving the collection to its present Nutt Street setting."
+    source: 1
+    quote: "By April of 2007 the building was ready to accept the Museum contents but a major hurtle remained."
 sources:
   - title: "Museum move 2007"
     publisher: "Wilmington Railroad Museum"

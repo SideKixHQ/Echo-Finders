@@ -35,6 +35,10 @@ script: |
   sharply unequal.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Built between 1859 and 1861, the house combined Greek Revival and Italianate elements."
+    source: 1
+    quote: "Designed by architect James F. Post for the wealthy physician and merchant Dr. John D. Bellamy, the 10,000-square-foot, twenty-two room mansion was constructed primarily by skilled, enslaved workers and local, free black artisans between 1859 and 1861."
 sources:
   - title: "The place"
     publisher: "Bellamy Mansion Museum"

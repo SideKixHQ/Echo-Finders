@@ -34,6 +34,10 @@ script: |
   name and building keep its earlier identity in view.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "St. Thomas Preservation Hall describes its building as a former Catholic church constructed in 1847."
+    source: 1
+    quote: "Formerly a Catholic church, Saint Thomas Preservation Hall is a beautifully-restored 1847 -built building listed in the National Historic Register."
 sources:
   - title: "Stthomaspreservationhall.com"
     publisher: "St. Thomas Preservation Hall"

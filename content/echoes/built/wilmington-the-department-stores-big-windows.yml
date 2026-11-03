@@ -33,6 +33,10 @@ script: |
   visible, and a passing person becomes a possible buyer.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "This five-story commercial building dates to 1906, with a later addition."
+    source: 1
+    quote: "Built in 1906 with an addition in 1921 the five-story blond brick building is an outstanding example of the Renaissance Revival style in commercial architecture."
 sources:
   - title: "Local Historic Landmarks"
     publisher: "City of Wilmington"
