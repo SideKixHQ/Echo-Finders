@@ -1,4 +1,4 @@
-# Submitting to Apple — what stands in the way
+# Submitting to Apple: what stands in the way
 
 *Echo Finders is a Whatishere.com product.*
 
@@ -12,7 +12,7 @@ not be verified from here and why.
 ## The headline
 
 **There is nothing to submit.** Echo Finders has no iOS target. Not an incomplete one, not
-a stale one — none.
+a stale one, none.
 
 ```
 find . -iname "*.xcodeproj" -o -iname "*.pbxproj" -o -iname "Info.plist" \
@@ -25,21 +25,21 @@ grep -riE "capacitor|cordova|react-native|expo|tauri" package.json apps/*/packag
 This is not an oversight. It is a decision, twice stated:
 
 - **ADR-0001** (accepted 2026-09-21): "The passenger client is a **web PWA**." The reasoning
-  is about inflight delivery — seatback systems render web content in an embedded browser
+  is about inflight delivery, seatback systems render web content in an embedded browser
   and a native binary cannot be deployed there at all.
 - **`docs/00-build-plan.md`**, under *What we deliberately are NOT building yet*:
-  "Native iOS/Android apps — ADR-0001."
+  "Native iOS/Android apps, ADR-0001."
 
 So "submit to Apple" reverses an accepted ADR. CLAUDE.md says to check the ADRs before
 reversing any decision, which is what this document is for. It is not an argument against
-doing it — the App Store may well be right for a consumer launch, and `docs/10-blockers.md`
+doing it. The App Store may well be right for a consumer launch, and `docs/10-blockers.md`
 already records that James has an Apple developer account. It is a statement that the work
 has not started and that reversing ADR-0001 is a decision, not a task.
 
 There is also a second, quieter problem. ADR-0001's case for web is about **airlines**.
 Consumers-first was decided on 2026-10-14. If the consumer product is native and the
-airline product is web, that is two clients, and the ADR's consolation — "`@echofinders/core`
-is pure TypeScript and runs unchanged inside React Native" — is the thing that makes it
+airline product is web, that is two clients, and the ADR's consolation, "`@echofinders/core`
+is pure TypeScript and runs unchanged inside React Native", is the thing that makes it
 affordable. Worth deciding deliberately rather than discovering.
 
 ---
@@ -56,7 +56,7 @@ Functionality**, which says verbatim:
 > on the App Store.
 
 A thin wrapper around a web app is the textbook 4.2 rejection. Echo Finders has a real
-argument against it — camera viewfinder, compass, GPS proximity, offline audio — but the
+argument against it, camera viewfinder, compass, GPS proximity, offline audio, but the
 argument only works if those are wired to native capabilities rather than running in a
 WebView. And a WebView does not fix the problem that made native attractive in the first
 place: **screen-lock audio and background location**. A wrapped web view has the same
@@ -76,7 +76,7 @@ distribution change with no capability gain.
 
 ## Blockers, in the order they would stop a submission
 
-### Tier 1 — the app is not finished
+### Tier 1. The app is not finished
 
 | # | What | Evidence |
 |---|---|---|
@@ -95,17 +95,17 @@ A2, A4 and A5 together are a direct hit on **Guideline 2.1(a), App Completeness*
 
 Fabricated photographs and a browser-TTS stand-in voice are exactly that.
 
-### Tier 2 — legal and store metadata that does not exist
+### Tier 2. Legal and store metadata that does not exist
 
 | # | What | Evidence |
 |---|---|---|
-| B1 | **The privacy policy is an unpublished draft with a placeholder contact** (`[privacy contact address — to be set before publication]`) and is served nowhere — it exists only as `docs/privacy-policy.md`. | Guideline **5.1.1(i)** requires a privacy policy link "in the App Store Connect metadata field **and within the app** in an easily accessible manner". |
+| B1 | **The privacy policy is an unpublished draft with a placeholder contact** (`[privacy contact address, to be set before publication]`) and is served nowhere. It exists only as `docs/privacy-policy.md`. | Guideline **5.1.1(i)** requires a privacy policy link "in the App Store Connect metadata field **and within the app** in an easily accessible manner". |
 | B2 | **There is no Terms of Service or EULA.** Nothing in the repo. Apple applies its standard EULA by default, but a subscription product normally wants its own. | `grep -rliE "terms of (service\|use)\|EULA" docs/ apps/ README.md` → nothing. |
 | B3 | **There is no support contact anywhere.** No email address exists in the repository. App Store Connect requires a support URL, and Guideline 1.2 requires "published contact information". | `grep -rnoiE "<email pattern>" docs/ README.md DEPLOY.md` → nothing. |
 | B4 | **No custom domain.** The app lives at `echo-finders.vercel.app`. Allowed, but a consumer product's support and privacy URLs on a `vercel.app` subdomain reads as unfinished. | `vercel.json`. |
 | B5 | **The privacy policy has never had legal review**, and `docs/ios-permissions.md` lists that as one of two things to do before submitting. True crime ships on James's say-so (2026-10-13) with fact-checking and a disclaimer, which is a commercial decision rather than a legal opinion. | |
 
-### Tier 3 — payments, which is where the money changes
+### Tier 3. Payments, which is where the money changes
 
 **Guideline 3.1.1** is unambiguous:
 
@@ -123,7 +123,7 @@ developers to include buttons, external links, or other calls to action in their
 States storefront** apps". Two things follow.
 
 - On the US storefront an app may link out to Stripe. That is genuinely useful here,
-  because `DEPLOY.md` already records a Stripe Radar rule blocking non-US cards — the
+  because `DEPLOY.md` already records a Stripe Radar rule blocking non-US cards, the
   product is US-only today anyway.
 - It does **not** remove 3.1.1's requirement to offer IAP for unlocking content, and it
   does not permit alternative payment processing inside the app. Links must open in the
@@ -133,7 +133,7 @@ Two consequences worth costing before anything is built:
 
 1. **Pricing was approved on web-checkout economics.** $9.99 City Pass and $34.99/year
    All-Access were approved 2026-10-14 against Stripe's fees. `docs/10-blockers.md` records
-   that James "accepts the App Store's 15%" — that is the Small Business Program rate,
+   that James "accepts the App Store's 15%". That is the Small Business Program rate,
    which requires enrolment and applies below $1M/year. Worth confirming enrolment rather
    than assuming the rate.
 2. **Restore across devices does not work.** There are no accounts: the phone keeps the
@@ -143,11 +143,11 @@ Two consequences worth costing before anything is built:
    restore for free via the Apple ID, so going native actually *fixes* this rather than
    complicating it.
 
-### Tier 4 — smaller, but each one is a rejection or a credibility problem
+### Tier 4. Smaller, but each one is a rejection or a credibility problem
 
 | # | What | Evidence |
 |---|---|---|
-| D1 | **`contentWarning` is never shown to anyone.** The validator requires it and its own error message says it "must be read before the echo begins"; `parse.ts` reads it; `types.ts` carries it; no component renders it. Twenty true-crime echoes carry a warning nobody sees. What *is* shown is `CRIME_NOTE`, a generic presumption-of-innocence line — a different thing serving a different purpose. | `grep -rn "contentWarning" apps/prototype/src --include=*.tsx` → nothing outside the generated bundle. `validate.ts:453`. |
+| D1 | **`contentWarning` is never shown to anyone.** The validator requires it and its own error message says it "must be read before the echo begins"; `parse.ts` reads it; `types.ts` carries it; no component renders it. Twenty true-crime echoes carry a warning nobody sees. What *is* shown is `CRIME_NOTE`, a generic presumption-of-innocence line, a different thing serving a different purpose. | `grep -rn "contentWarning" apps/prototype/src --include=*.tsx` → nothing outside the generated bundle. `validate.ts:453`. |
 | D2 | **The analytics opt-in controls nothing.** `Privacy.tsx:174` offers a toggle; `PrivacySettings.analytics` is read by nothing. The privacy policy describes usage statistics as opt-in and anonymous. Offering a consent control for a system that does not exist is the kind of mismatch Apple's App Privacy declaration punishes. | |
 | D3 | **No crash or error reporting.** Sentry is listed in `01-services.md` and is not wired. Submitting a first native build with no crash visibility is flying blind through exactly the period you need it. | |
 | D4 | **Age rating is undecided.** Twenty true-crime echoes, `minAge` enforced in ranking (`score.ts:92`), and a kids mode. Apple's questionnaire will produce a rating; a 17+ rating would change how the kids mode reads in the listing. **Guideline 1.1.2** covers "realistic portrayals of people or animals being killed", which is worth reading against the true-crime scripts before answering the questionnaire. | |
@@ -176,7 +176,7 @@ Worth saying, because the list above is long and the app is not in bad condition
 ## Questions only James can answer
 
 1. **Is this actually a reversal of ADR-0001, or does "ready to submit" mean something
-   else** — an installable PWA, a TestFlight build, a demo? The answer changes everything
+   else**, an installable PWA, a TestFlight build, a demo? The answer changes everything
    below it.
 2. **If native: wrapper or real shell?** Route A is days and buys distribution only. Route
    B is weeks and is the only one that fixes screen-lock audio and background location.
@@ -186,17 +186,17 @@ Worth saying, because the list above is long and the app is not in bad condition
    cost.
 5. **IAP or US-storefront link-out, and is Small Business Program enrolment done?** The
    approved prices assumed Stripe's fees.
-6. **What is the legal entity and seller of record** for App Store Connect — Whatishere.com?
+6. **What is the legal entity and seller of record** for App Store Connect, Whatishere.com?
    An organisation account needs a D-U-N-S number, which can take days.
 7. **What are the support and privacy URLs, and the contact address?** Three fields that
    cannot be left blank, and none exists today.
 8. **Who is the lawyer**, for the privacy policy, the terms, and a read of the true-crime
    material against Guideline 1.1.2?
 9. **How many approved echoes is a product?** Sixteen is not. Phase 1's own exit test wants
-   60–100 on one corridor.
+   60-100 on one corridor.
 10. **Which geography ships first?** The 2026-11-04 instruction to focus on Wilmington,
     Wrightsville Beach and Carolina Beach suggests a Cape Fear regional product, which
-    would be a coherent and achievable v1 — far more so than the 88-place list in
+    would be a coherent and achievable v1, far more so than the 88-place list in
     `12-cities.md`. Today Wilmington has 105 echoes and the two beach towns have **zero**.
 
 ---
@@ -205,7 +205,7 @@ Worth saying, because the list above is long and the app is not in bad condition
 
 - **Anything on a real iPhone.** Screen lock, camera, compass and sound need James's own
   device. This is blocker #11 and it is unchanged.
-- **The Apple developer account's state** — enrolment type, Small Business Program status,
+- **The Apple developer account's state**, enrolment type, Small Business Program status,
   agreements signed. Not visible from a repository.
 - **Whether Stripe's live mode is configured.** `DEPLOY.md` records test mode only, with
   the secret key, Radar rule and tax settings still outstanding for James.
