@@ -13,6 +13,65 @@ James (`writing-echoes.md`), fact-checked against sources, and true crime carryi
 disclaimer. Each city also needs its streets and map built (`build-streets.py`,
 `build-map.py`, ADR-0019) before it is drawn properly.
 
+## The MVP: 18 places, in three tiers (James, 2026-11-05)
+
+James (2026-11-05): "wilmington, carolina beach, wrightsville beach for sure. Then NYC, DC,
+Philly, Chicago, Boston, Houston", then, after the research in `13-story-mix.md`, "go with
+San Antonio". The small towns follow his question about places like Tombstone. Everything
+else on this page waits until these are covered.
+
+Each place gets the walking mix in `13-story-mix.md` (30 echoes), leaning where its story
+does. Counts are echoes in `content/echoes/` on 2026-11-05.
+
+### Tier 1: home, and the ghost cities
+
+| # | Place | Echoes now | Lean |
+|---|---|---|---|
+| M1 | Wilmington, NC | 105 drafted, 16 approved with real audio | history and true crime (1898) |
+| M2 | Carolina Beach, NC | 0 | beach-town history, people |
+| M3 | Kure Beach and Fort Fisher, NC | 0 | military (the 1865 battle for Fort Fisher) |
+| M4 | Wrightsville Beach, NC | 0 | beach-town history, built |
+| M5 | Southport, NC | 0 | ghosts, film locations |
+| M6 | Savannah, GA | 30 drafted | ghost-heavy (1 ghost story now) |
+| M7 | Charleston, SC | 30 drafted | ghost-heavy (none now) |
+| M8 | New Orleans, LA | 30 drafted | ghost-heavy, food |
+
+### Tier 2: the big walkable cities
+
+| # | Place | Echoes now | Lean |
+|---|---|---|---|
+| M9 | New York | 16 drafted | true crime |
+| M10 | Washington, DC | 37 drafted | history, military |
+| M11 | Philadelphia | 31 drafted | history (the Revolution) |
+| M12 | Boston | 31 drafted | history, military |
+| M13 | Chicago | 2 drafted | true crime (Prohibition), built (architecture) |
+
+### Tier 3: small towns with one big story
+
+| # | Place | Echoes now | Lean |
+|---|---|---|---|
+| M14 | San Antonio, TX | 0 | military (the Alamo), ghosts |
+| M15 | Tombstone, AZ | 0 | true crime (the O.K. Corral) |
+| M16 | Salem, MA | 0 | true crime and legend (1692) |
+| M17 | St. Augustine, FL | 1 drafted | ghosts, history |
+| M18 | Gettysburg, PA | 0 | military, ghosts |
+
+**The size of the job:** 18 places at 30 approved echoes is 540. About 310 are drafted
+across them today and 16 are approved. Counting only each place's shortfall to 30, about
+310 more are still to write: 120 in the four towns around Wilmington, 149 in Tier 3, 28 in Chicago and
+14 in New York. The drafted cities also need reshaping to their mix (Savannah and Charleston
+are short of ghosts), and every drafted echo still needs James's review.
+
+**Drives and flights in the MVP:** proposed, not yet decided. One drive, Wilmington to Fort
+Fisher and Southport along US 421 and the ferry, which reuses Tier 1's echoes. The existing
+Blue Ridge Parkway drive and the JFK to Miami flight corridor stay as they are; flights wait
+for an airline buyer (James, 2026-10-14).
+
+Houston was on James's first list and was swapped for San Antonio: it has no walkable tourist
+core, and San Antonio has the Alamo and the River Walk. Houston stays below under More cities.
+
+## The full launch list
+
 Counts are echoes in `content/echoes/` on 2026-10-14, every one still a draft.
 
 ## Major cities (18)

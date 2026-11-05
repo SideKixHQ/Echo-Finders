@@ -98,6 +98,44 @@ Flex rules:
 Checked by a `content:status` line per city, not by the validator: a mix is a goal for writing,
 not a reason to refuse a true echo.
 
+## The mix by way of travel
+
+James (2026-11-05): "If its walking lets do what we decided based on research. flying and
+driving we can increase different types. probably need more kids stuff driving and flying as
+well."
+
+The 30-echo table above is the **walking** mix. A drive and a flight are different listens:
+families in the car or the cabin, a view of land rather than a doorway, and time to fill
+between places. So they lean towards land, legend and kids, and away from true crime. Drives
+and flights are counted per 20 echoes along the route, not per city.
+
+| Category | Walking (per 30) | Driving (per 20) | Flying (per 20) |
+|---|---|---|---|
+| History (incl. military) | 9 | 4 | 5 |
+| Ghosts & legend | 5 | 3 | 2 |
+| True crime | 4 | 2 | 0 |
+| People | 4 | 2 | 2 |
+| Built | 3 | 2 | 3 |
+| Arts | 2 | 1 | 1 |
+| Food & drink | 2 | 2 | 1 |
+| Land | 1 | 4 | 6 |
+| **Kids tellings, on top** | **+3 (10%)** | **+5 (25%)** | **+6 (30%)** |
+
+Why each one moves:
+- **Land** rises because it is what you can see: a river, a ridge, a coastline. From the air
+  it is most of the view.
+- **Kids** rises because a back seat or a seatback is where children are a captive audience,
+  and the hours are long.
+- **True crime** falls on a drive and goes to zero on a flight by default. On a flight the
+  airline decides (`airline admin: category restrictions`, `00-build-plan.md`); a passenger
+  can still opt in where the airline allows it.
+- **Food** holds on a drive, because a road trip stops to eat.
+- **Built** rises on a flight: bridges, dams and city grids read from 35,000 feet.
+
+Kids tellings are an audience, not a subject (`types.ts`), so the extra kids share means more
+children's versions of the land, history and legend echoes along the route, not a separate
+pile of kids-only echoes.
+
 ## Rarity: what makes an echo uncommon or rare
 
 ### What the code does today
@@ -147,7 +185,9 @@ echoes are all on the main walk. The fix then is to write echoes further out, no
 the ones we have.
 
 ## Decisions (James, 2026-11-05)
-1. **The mix:** approved, with cities free to lean crime-heavy or ghost-heavy (above).
+1. **The mix:** approved for walking, with cities free to lean crime-heavy or ghost-heavy
+   (above). Driving and flying lean towards land, legend and kids (James, 2026-11-05; the
+   table under "The mix by way of travel").
 2. **Military:** stays inside history, counted as a theme (at least 3 of a city's 9).
 3. **Rarity:** approved. Radius stops scoring; distance from the core, hours, going inside and
    a deliberately tight spot score instead.
