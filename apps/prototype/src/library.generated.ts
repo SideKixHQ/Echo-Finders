@@ -49,6 +49,7 @@ export const LIBRARY: readonly Echo[] = [
       "archaeology",
       "memorial"
     ],
+    "remoteness": 0.38,
     "renders": [
       {
         "voiceId": "wC1005J19tvhoqqC2hkf",
@@ -87,6 +88,7 @@ export const LIBRARY: readonly Echo[] = [
       "coast",
       "seaside"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -127,6 +129,7 @@ export const LIBRARY: readonly Echo[] = [
       "schools",
       "civil-rights"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -173,6 +176,7 @@ export const LIBRARY: readonly Echo[] = [
       "churches",
       "abolition"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -219,6 +223,7 @@ export const LIBRARY: readonly Echo[] = [
       "place-names",
       "bulfinch"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -260,6 +265,7 @@ export const LIBRARY: readonly Echo[] = [
       "war-of-1812",
       "place-names"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -299,6 +305,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "farming"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -339,6 +346,7 @@ export const LIBRARY: readonly Echo[] = [
       "benjamin-franklin",
       "old-south"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -389,6 +397,7 @@ export const LIBRARY: readonly Echo[] = [
       "boston-massacre",
       "burial-ground"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -430,6 +439,7 @@ export const LIBRARY: readonly Echo[] = [
       "underground-railroad",
       "abolition"
     ],
+    "remoteness": 0.15,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -477,6 +487,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "archaeology"
     ],
+    "remoteness": 0.37,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -517,6 +528,7 @@ export const LIBRARY: readonly Echo[] = [
       "publishing",
       "anne-hutchinson"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -564,6 +576,7 @@ export const LIBRARY: readonly Echo[] = [
       "sculpture",
       "54th-massachusetts"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -612,6 +625,7 @@ export const LIBRARY: readonly Echo[] = [
       "war-of-1812",
       "ships"
     ],
+    "remoteness": 0.24,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -652,6 +666,7 @@ export const LIBRARY: readonly Echo[] = [
       "paul-revere",
       "second-world-war"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -692,6 +707,7 @@ export const LIBRARY: readonly Echo[] = [
       "women",
       "family-business"
     ],
+    "remoteness": 0.21,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -731,6 +747,7 @@ export const LIBRARY: readonly Echo[] = [
       "kings-chapel",
       "architecture"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -771,6 +788,7 @@ export const LIBRARY: readonly Echo[] = [
       "paul-revere",
       "houses"
     ],
+    "remoteness": 0.1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -810,6 +828,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "old-state-house"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -857,6 +876,7 @@ export const LIBRARY: readonly Echo[] = [
       "statues",
       "sculpture"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -897,6 +917,7 @@ export const LIBRARY: readonly Echo[] = [
       "latin-school",
       "benjamin-franklin"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -944,6 +965,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "paul-revere"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -991,6 +1013,7 @@ export const LIBRARY: readonly Echo[] = [
       "storms",
       "hurricanes"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1042,6 +1065,7 @@ export const LIBRARY: readonly Echo[] = [
       "weathervane",
       "folklore"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1094,6 +1118,7 @@ export const LIBRARY: readonly Echo[] = [
       "burying-grounds",
       "revolution"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1134,6 +1159,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "long-wharf"
     ],
+    "remoteness": 0.24,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1176,6 +1202,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "quotations"
     ],
+    "remoteness": 0.47,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1217,6 +1244,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "place-names"
     ],
+    "remoteness": 0.48,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1263,6 +1291,7 @@ export const LIBRARY: readonly Echo[] = [
       "tea-party",
       "old-south"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1303,6 +1332,7 @@ export const LIBRARY: readonly Echo[] = [
       "disasters",
       "molasses-flood"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1343,6 +1373,7 @@ export const LIBRARY: readonly Echo[] = [
       "tea-party",
       "griffins-wharf"
     ],
+    "remoteness": 0.23,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1383,6 +1414,7 @@ export const LIBRARY: readonly Echo[] = [
       "boston-massacre",
       "john-adams"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1433,6 +1465,7 @@ export const LIBRARY: readonly Echo[] = [
       "durationS": 40,
       "script": "This is the oldest park in New York. The fence has been here since 1771.\n\nLook at the tops of the posts. They used to have small crowns on them.\n\nIn 1776 a crowd pulled down a statue of the king that stood here, and melted it into musket balls. Somebody also sawed the crowns off this fence.\n\nThe fence is still standing. The crowns are still gone.\n"
     },
+    "remoteness": 0,
     "archive": [
       {
         "imageKey": "archive/bowling-green-king-george",
@@ -1485,6 +1518,7 @@ export const LIBRARY: readonly Echo[] = [
       "spaceflight",
       "geography"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1523,6 +1557,7 @@ export const LIBRARY: readonly Echo[] = [
       "parades",
       "broadway"
     ],
+    "remoteness": 0,
     "archive": [
       {
         "imageKey": "archive/canyon-of-heroes",
@@ -1596,6 +1631,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-09-22",
       "contentWarning": "This echo describes a murder. No violence is described in detail."
     },
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "wC1005J19tvhoqqC2hkf",
@@ -1651,6 +1687,7 @@ export const LIBRARY: readonly Echo[] = [
       "durationS": 35,
       "script": "This round stone fort was an immigration station before Ellis Island was built.\n\nEight million people came through this one building.\n\nIf your family reached New York before 1892, this is probably the door they walked through.\n"
     },
+    "remoteness": 0.18,
     "archive": [
       {
         "imageKey": "archive/castle-clinton-eight-million",
@@ -1709,6 +1746,7 @@ export const LIBRARY: readonly Echo[] = [
       "art",
       "wall-street"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1762,6 +1800,7 @@ export const LIBRARY: readonly Echo[] = [
       "rainbow-row",
       "preservation"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1806,6 +1845,7 @@ export const LIBRARY: readonly Echo[] = [
       "american-revolution",
       "waterfront"
     ],
+    "remoteness": 0.58,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1845,6 +1885,7 @@ export const LIBRARY: readonly Echo[] = [
       "earthquake",
       "architecture"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1885,6 +1926,7 @@ export const LIBRARY: readonly Echo[] = [
       "courthouse",
       "revolution"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1925,6 +1967,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "revolutionary-war"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1971,6 +2014,7 @@ export const LIBRARY: readonly Echo[] = [
       "churchyards",
       "civil-war"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2012,6 +2056,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "civil-war"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2051,6 +2096,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "gothic-revival"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2100,6 +2146,7 @@ export const LIBRARY: readonly Echo[] = [
       "jazz",
       "african-american-history"
     ],
+    "remoteness": 0.15,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2146,6 +2193,7 @@ export const LIBRARY: readonly Echo[] = [
       "theatre",
       "opera"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2196,6 +2244,7 @@ export const LIBRARY: readonly Echo[] = [
       "churches",
       "colonial"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2236,6 +2285,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "birds"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2276,6 +2326,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "fort-sumter"
     ],
+    "remoteness": 0.27,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2315,6 +2366,7 @@ export const LIBRARY: readonly Echo[] = [
       "freedom-seekers",
       "waterfront"
     ],
+    "remoteness": 0.63,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2354,6 +2406,7 @@ export const LIBRARY: readonly Echo[] = [
       "the-citadel",
       "architecture"
     ],
+    "remoteness": 0.42,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2404,6 +2457,7 @@ export const LIBRARY: readonly Echo[] = [
       "african-american-history",
       "churches"
     ],
+    "remoteness": 0.37,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2450,6 +2504,7 @@ export const LIBRARY: readonly Echo[] = [
       "colonial",
       "architecture"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2495,6 +2550,7 @@ export const LIBRARY: readonly Echo[] = [
       "parks",
       "ruins"
     ],
+    "remoteness": 0.49,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2534,6 +2590,7 @@ export const LIBRARY: readonly Echo[] = [
       "earthquake-1886",
       "architecture"
     ],
+    "remoteness": 0.12,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2583,6 +2640,7 @@ export const LIBRARY: readonly Echo[] = [
       "religion",
       "architecture"
     ],
+    "remoteness": 0.1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2628,6 +2686,7 @@ export const LIBRARY: readonly Echo[] = [
       "fortifications",
       "ruins"
     ],
+    "remoteness": 0.41,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2667,6 +2726,7 @@ export const LIBRARY: readonly Echo[] = [
       "theatre",
       "colonial"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2712,6 +2772,7 @@ export const LIBRARY: readonly Echo[] = [
       "old-exchange",
       "revolution"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2752,6 +2813,7 @@ export const LIBRARY: readonly Echo[] = [
       "fires",
       "slavery"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2792,6 +2854,7 @@ export const LIBRARY: readonly Echo[] = [
       "churchyards",
       "place-names"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2838,6 +2901,7 @@ export const LIBRARY: readonly Echo[] = [
       "african-american-history",
       "antebellum"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2876,6 +2940,7 @@ export const LIBRARY: readonly Echo[] = [
       "college-of-charleston",
       "architecture"
     ],
+    "remoteness": 0.27,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2920,6 +2985,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "town-houses"
     ],
+    "remoteness": 0.63,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2966,6 +3032,7 @@ export const LIBRARY: readonly Echo[] = [
       "pirates",
       "colonial"
     ],
+    "remoteness": 0.27,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3015,6 +3082,7 @@ export const LIBRARY: readonly Echo[] = [
       "battery",
       "houses"
     ],
+    "remoteness": 0.21,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3053,6 +3121,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "washington"
     ],
+    "remoteness": 0.26,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3093,6 +3162,7 @@ export const LIBRARY: readonly Echo[] = [
       "appalachians",
       "ecology"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3145,6 +3215,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-09-22",
       "contentWarning": "This echo describes a murder. No violence is described in detail."
     },
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "wC1005J19tvhoqqC2hkf",
@@ -3189,6 +3260,7 @@ export const LIBRARY: readonly Echo[] = [
       "national-mall",
       "smithsonian"
     ],
+    "remoteness": 0.71,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3228,6 +3300,7 @@ export const LIBRARY: readonly Echo[] = [
       "memorials",
       "korea"
     ],
+    "remoteness": 0.74,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3266,6 +3339,7 @@ export const LIBRARY: readonly Echo[] = [
       "lafayette-square",
       "sculpture"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3305,6 +3379,7 @@ export const LIBRARY: readonly Echo[] = [
       "jefferson",
       "war-of-1812"
     ],
+    "remoteness": 0.11,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3354,6 +3429,7 @@ export const LIBRARY: readonly Echo[] = [
       "painting",
       "brumidi"
     ],
+    "remoteness": 0.17,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3392,6 +3468,7 @@ export const LIBRARY: readonly Echo[] = [
       "national-archives",
       "declaration-of-independence"
     ],
+    "remoteness": 0.68,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3432,6 +3509,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "whitman"
     ],
+    "remoteness": 0.59,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3470,6 +3548,7 @@ export const LIBRARY: readonly Echo[] = [
       "supreme-court",
       "capitol-hill"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3509,6 +3588,7 @@ export const LIBRARY: readonly Echo[] = [
       "octagon",
       "ghosts"
     ],
+    "remoteness": 0.19,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3549,6 +3629,7 @@ export const LIBRARY: readonly Echo[] = [
       "protest",
       "jefferson-memorial"
     ],
+    "remoteness": 0.94,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3587,6 +3668,7 @@ export const LIBRARY: readonly Echo[] = [
       "union-station",
       "railways"
     ],
+    "remoteness": 0.4,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3626,6 +3708,7 @@ export const LIBRARY: readonly Echo[] = [
       "memorials",
       "vietnam"
     ],
+    "remoteness": 0.59,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3665,6 +3748,7 @@ export const LIBRARY: readonly Echo[] = [
       "lincoln",
       "civil-war"
     ],
+    "remoteness": 0.68,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3704,6 +3788,7 @@ export const LIBRARY: readonly Echo[] = [
       "capitol-hill",
       "womens-rights"
     ],
+    "remoteness": 0.11,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3749,6 +3834,7 @@ export const LIBRARY: readonly Echo[] = [
       "presidents",
       "railways"
     ],
+    "remoteness": 0.64,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3794,6 +3880,7 @@ export const LIBRARY: readonly Echo[] = [
       "slavery",
       "sculpture"
     ],
+    "remoteness": 0.11,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3838,6 +3925,7 @@ export const LIBRARY: readonly Echo[] = [
       "pennsylvania-avenue",
       "lenfant"
     ],
+    "remoteness": 0.3,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3877,6 +3965,7 @@ export const LIBRARY: readonly Echo[] = [
       "preservation",
       "federal-triangle"
     ],
+    "remoteness": 0.45,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3921,6 +4010,7 @@ export const LIBRARY: readonly Echo[] = [
       "lafayette-square",
       "st-johns-church"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3960,6 +4050,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-rights",
       "lincoln-memorial"
     ],
+    "remoteness": 0.72,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -3998,6 +4089,7 @@ export const LIBRARY: readonly Echo[] = [
       "lafayette-square",
       "truman"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4037,6 +4129,7 @@ export const LIBRARY: readonly Echo[] = [
       "roads",
       "monuments"
     ],
+    "remoteness": 0.21,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4076,6 +4169,7 @@ export const LIBRARY: readonly Echo[] = [
       "cherry-blossoms",
       "japan"
     ],
+    "remoteness": 0.69,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4115,6 +4209,7 @@ export const LIBRARY: readonly Echo[] = [
       "willard",
       "words"
     ],
+    "remoteness": 0.22,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4153,6 +4248,7 @@ export const LIBRARY: readonly Echo[] = [
       "lafayette-square",
       "slavery"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4193,6 +4289,7 @@ export const LIBRARY: readonly Echo[] = [
       "music",
       "lincoln-memorial"
     ],
+    "remoteness": 0.7,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4231,6 +4328,7 @@ export const LIBRARY: readonly Echo[] = [
       "national-mall",
       "monuments"
     ],
+    "remoteness": 0.52,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4275,6 +4373,7 @@ export const LIBRARY: readonly Echo[] = [
       "octagon",
       "war-of-1812"
     ],
+    "remoteness": 0.2,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4313,6 +4412,7 @@ export const LIBRARY: readonly Echo[] = [
       "white-house",
       "war-of-1812"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4351,6 +4451,7 @@ export const LIBRARY: readonly Echo[] = [
       "willard",
       "civil-war"
     ],
+    "remoteness": 0.22,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4401,6 +4502,7 @@ export const LIBRARY: readonly Echo[] = [
       "press-freedom",
       "wall-street"
     ],
+    "remoteness": 0,
     "archive": [
       {
         "imageKey": "archive/federal-hall-two-firsts",
@@ -4453,6 +4555,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "washington"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4492,6 +4595,7 @@ export const LIBRARY: readonly Echo[] = [
       "lighthouse",
       "coastal-erosion"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4531,6 +4635,7 @@ export const LIBRARY: readonly Echo[] = [
       "aviation",
       "wright-brothers"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4570,6 +4675,7 @@ export const LIBRARY: readonly Echo[] = [
       "engineering",
       "grandfather-mountain"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4609,6 +4715,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilderness",
       "forest"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4648,6 +4755,7 @@ export const LIBRARY: readonly Echo[] = [
       "appalachians",
       "mountains"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4689,6 +4797,7 @@ export const LIBRARY: readonly Echo[] = [
       "jazz",
       "music"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4729,6 +4838,7 @@ export const LIBRARY: readonly Echo[] = [
       "cemetery",
       "st-louis-cemetery"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4778,6 +4888,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "st-louis-street"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4836,6 +4947,7 @@ export const LIBRARY: readonly Echo[] = [
       "women",
       "ironwork"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4895,6 +5007,7 @@ export const LIBRARY: readonly Echo[] = [
       "street-names",
       "creole"
     ],
+    "remoteness": 0.25,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4945,6 +5058,7 @@ export const LIBRARY: readonly Echo[] = [
       "fortifications",
       "creole"
     ],
+    "remoteness": 0.25,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -4995,6 +5109,7 @@ export const LIBRARY: readonly Echo[] = [
       "church",
       "epidemics"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5046,6 +5161,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-rights",
       "railroad"
     ],
+    "remoteness": 0.61,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5097,6 +5213,7 @@ export const LIBRARY: readonly Echo[] = [
       "legend",
       "bourbon-street"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5147,6 +5264,7 @@ export const LIBRARY: readonly Echo[] = [
       "fires",
       "spanish-colonial"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5198,6 +5316,7 @@ export const LIBRARY: readonly Echo[] = [
       "legend",
       "women"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5247,6 +5366,7 @@ export const LIBRARY: readonly Echo[] = [
       "chess",
       "royal-street"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5295,6 +5415,7 @@ export const LIBRARY: readonly Echo[] = [
       "cemetery",
       "folklore"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5356,6 +5477,7 @@ export const LIBRARY: readonly Echo[] = [
       "bourbon-street",
       "street-names"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5415,6 +5537,7 @@ export const LIBRARY: readonly Echo[] = [
       "legend",
       "chartres-street"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5473,6 +5596,7 @@ export const LIBRARY: readonly Echo[] = [
       "choctaw",
       "gumbo"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5522,6 +5646,7 @@ export const LIBRARY: readonly Echo[] = [
       "slavery",
       "royal-street"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5567,6 +5692,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "esplanade"
     ],
+    "remoteness": 0.16,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5626,6 +5752,7 @@ export const LIBRARY: readonly Echo[] = [
       "canal",
       "waterways"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5687,6 +5814,7 @@ export const LIBRARY: readonly Echo[] = [
       "churches",
       "spanish-colonial"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5727,6 +5855,7 @@ export const LIBRARY: readonly Echo[] = [
       "convent",
       "architecture"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5773,6 +5902,7 @@ export const LIBRARY: readonly Echo[] = [
       "churches",
       "spanish-colonial"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5819,6 +5949,7 @@ export const LIBRARY: readonly Echo[] = [
       "language",
       "streetcar"
     ],
+    "remoteness": 0.2,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5870,6 +6001,7 @@ export const LIBRARY: readonly Echo[] = [
       "music",
       "slavery"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5920,6 +6052,7 @@ export const LIBRARY: readonly Echo[] = [
       "music",
       "bourbon-street"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5970,6 +6103,7 @@ export const LIBRARY: readonly Echo[] = [
       "spanish-colonial",
       "architecture"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6009,6 +6143,7 @@ export const LIBRARY: readonly Echo[] = [
       "levee",
       "riverfront"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6059,6 +6194,7 @@ export const LIBRARY: readonly Echo[] = [
       "women",
       "literature"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6108,6 +6244,7 @@ export const LIBRARY: readonly Echo[] = [
       "french-quarter",
       "louisiana-purchase"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6148,6 +6285,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "statues"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6199,6 +6337,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-09-22",
       "contentWarning": "This echo describes a murder. No violence is described in detail."
     },
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "wC1005J19tvhoqqC2hkf",
@@ -6238,6 +6377,7 @@ export const LIBRARY: readonly Echo[] = [
       "food",
       "dutch"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "UrTldiIxfedDl9tlesyS",
@@ -6278,6 +6418,7 @@ export const LIBRARY: readonly Echo[] = [
       "firefighting",
       "head-house"
     ],
+    "remoteness": 0.21,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6318,6 +6459,7 @@ export const LIBRARY: readonly Echo[] = [
       "franklin",
       "lotteries"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6358,6 +6500,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "archaeology"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6398,6 +6541,7 @@ export const LIBRARY: readonly Echo[] = [
       "taverns",
       "reconstruction"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6448,6 +6592,7 @@ export const LIBRARY: readonly Echo[] = [
       "yellow-fever",
       "women"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6494,6 +6639,7 @@ export const LIBRARY: readonly Echo[] = [
       "benjamin-franklin",
       "theatre"
     ],
+    "remoteness": 0.19,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6540,6 +6686,7 @@ export const LIBRARY: readonly Echo[] = [
       "graves",
       "printing"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6590,6 +6737,7 @@ export const LIBRARY: readonly Echo[] = [
       "world-war-one",
       "ships"
     ],
+    "remoteness": 0.21,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6631,6 +6779,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "religion"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6678,6 +6827,7 @@ export const LIBRARY: readonly Echo[] = [
       "african-american-history",
       "washington"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6724,6 +6874,7 @@ export const LIBRARY: readonly Echo[] = [
       "skyline",
       "sculpture"
     ],
+    "remoteness": 0.55,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6774,6 +6925,7 @@ export const LIBRARY: readonly Echo[] = [
       "declaration-of-independence",
       "revolution"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6820,6 +6972,7 @@ export const LIBRARY: readonly Echo[] = [
       "constitution",
       "franklin"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6875,6 +7028,7 @@ export const LIBRARY: readonly Echo[] = [
       "declaration-of-independence",
       "slavery"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6915,6 +7069,7 @@ export const LIBRARY: readonly Echo[] = [
       "banking",
       "slavery"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -6965,6 +7120,7 @@ export const LIBRARY: readonly Echo[] = [
       "liberty-bell",
       "revolution"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7011,6 +7167,7 @@ export const LIBRARY: readonly Echo[] = [
       "richard-allen",
       "churches"
     ],
+    "remoteness": 0.21,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7057,6 +7214,7 @@ export const LIBRARY: readonly Echo[] = [
       "religious-liberty",
       "churches"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7103,6 +7261,7 @@ export const LIBRARY: readonly Echo[] = [
       "burial-ground",
       "yellow-fever"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7143,6 +7302,7 @@ export const LIBRARY: readonly Echo[] = [
       "supreme-court",
       "law"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7188,6 +7348,7 @@ export const LIBRARY: readonly Echo[] = [
       "liberty-bell",
       "abolition"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7238,6 +7399,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "guilds"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7288,6 +7450,7 @@ export const LIBRARY: readonly Echo[] = [
       "archaeology",
       "churches"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7334,6 +7497,7 @@ export const LIBRARY: readonly Echo[] = [
       "railroads",
       "reading-terminal"
     ],
+    "remoteness": 0.35,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7385,6 +7549,7 @@ export const LIBRARY: readonly Echo[] = [
       "jefferson",
       "national-park"
     ],
+    "remoteness": 0.17,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7425,6 +7590,7 @@ export const LIBRARY: readonly Echo[] = [
       "merchants-exchange",
       "waterways"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7465,6 +7631,7 @@ export const LIBRARY: readonly Echo[] = [
       "women",
       "architecture"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7511,6 +7678,7 @@ export const LIBRARY: readonly Echo[] = [
       "organ",
       "worlds-fair"
     ],
+    "remoteness": 0.44,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7558,6 +7726,7 @@ export const LIBRARY: readonly Echo[] = [
       "washington",
       "adams"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7605,6 +7774,7 @@ export const LIBRARY: readonly Echo[] = [
       "betsy-ross",
       "myth-and-memory"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7650,6 +7820,7 @@ export const LIBRARY: readonly Echo[] = [
       "squares",
       "lincoln"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7690,6 +7861,7 @@ export const LIBRARY: readonly Echo[] = [
       "shipping",
       "cotton"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7730,6 +7902,7 @@ export const LIBRARY: readonly Echo[] = [
       "civic",
       "bay-street"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7776,6 +7949,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "bay-street"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7821,6 +7995,7 @@ export const LIBRARY: readonly Echo[] = [
       "cotton",
       "architecture"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7860,6 +8035,7 @@ export const LIBRARY: readonly Echo[] = [
       "religion",
       "slavery"
     ],
+    "remoteness": 0.14,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7899,6 +8075,7 @@ export const LIBRARY: readonly Echo[] = [
       "lighthouses",
       "shipping"
     ],
+    "remoteness": 0.23,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7945,6 +8122,7 @@ export const LIBRARY: readonly Echo[] = [
       "literature",
       "ghosts"
     ],
+    "remoteness": 0.27,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -7990,6 +8168,7 @@ export const LIBRARY: readonly Echo[] = [
       "shipping",
       "firsts"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8039,6 +8218,7 @@ export const LIBRARY: readonly Echo[] = [
       "lafayette-square",
       "writers"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8077,6 +8257,7 @@ export const LIBRARY: readonly Echo[] = [
       "railroads",
       "engineering"
     ],
+    "remoteness": 0.35,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8116,6 +8297,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "fire"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8161,6 +8343,7 @@ export const LIBRARY: readonly Echo[] = [
       "forsyth-park",
       "fountains"
     ],
+    "remoteness": 0.11,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8205,6 +8388,7 @@ export const LIBRARY: readonly Echo[] = [
       "madison-square",
       "architecture"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8251,6 +8435,7 @@ export const LIBRARY: readonly Echo[] = [
       "gardens",
       "museums"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8300,6 +8485,7 @@ export const LIBRARY: readonly Echo[] = [
       "colonial",
       "monuments"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8349,6 +8535,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "monuments"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8387,6 +8574,7 @@ export const LIBRARY: readonly Echo[] = [
       "forsyth-park",
       "libraries"
     ],
+    "remoteness": 0.08,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8427,6 +8615,7 @@ export const LIBRARY: readonly Echo[] = [
       "fires",
       "churches"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8472,6 +8661,7 @@ export const LIBRARY: readonly Echo[] = [
       "american-revolution",
       "monuments"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8522,6 +8712,7 @@ export const LIBRARY: readonly Echo[] = [
       "native-american",
       "monuments"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8567,6 +8758,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "jewish-history"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8607,6 +8799,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "colonial"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8646,6 +8839,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "museums"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8684,6 +8878,7 @@ export const LIBRARY: readonly Echo[] = [
       "urban-planning",
       "colonial"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8738,6 +8933,7 @@ export const LIBRARY: readonly Echo[] = [
       "women",
       "shipping"
     ],
+    "remoteness": 0.22,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8777,6 +8973,7 @@ export const LIBRARY: readonly Echo[] = [
       "colonial",
       "religion"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8816,6 +9013,7 @@ export const LIBRARY: readonly Echo[] = [
       "siege-of-savannah",
       "battlefields"
     ],
+    "remoteness": 0.26,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8862,6 +9060,7 @@ export const LIBRARY: readonly Echo[] = [
       "american-revolution",
       "monuments"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8916,6 +9115,7 @@ export const LIBRARY: readonly Echo[] = [
       "riverfront",
       "indigenous"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -8965,6 +9165,7 @@ export const LIBRARY: readonly Echo[] = [
       "squares",
       "museums"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9010,6 +9211,7 @@ export const LIBRARY: readonly Echo[] = [
       "washington",
       "september-11"
     ],
+    "remoteness": 0.1,
     "archive": [
       {
         "imageKey": "archive/st-pauls-still-standing",
@@ -9070,6 +9272,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-09-22",
       "contentWarning": "This echo describes a murder. No violence is described in detail."
     },
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "wC1005J19tvhoqqC2hkf",
@@ -9113,6 +9316,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes an assassination. No violence is described in detail."
     },
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9150,6 +9354,7 @@ export const LIBRARY: readonly Echo[] = [
       "st-augustine",
       "ghosts"
     ],
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9193,6 +9398,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes an assassination. No violence is described in detail."
     },
+    "remoteness": 0.47,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9236,6 +9442,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes an armed robbery. Nobody is described as hurt."
     },
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9273,6 +9480,7 @@ export const LIBRARY: readonly Echo[] = [
       "san-diego",
       "ghosts"
     ],
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9316,6 +9524,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes the killing of seven men. No violence is described in detail."
     },
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9353,6 +9562,7 @@ export const LIBRARY: readonly Echo[] = [
       "edinburgh",
       "ghosts"
     ],
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9390,6 +9600,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "ghosts"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9433,6 +9644,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes a killing. No violence is described in detail."
     },
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9470,6 +9682,7 @@ export const LIBRARY: readonly Echo[] = [
       "blue-ridge-parkway",
       "ghosts"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9513,6 +9726,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes a prison escape. No violence is described."
     },
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9550,6 +9764,7 @@ export const LIBRARY: readonly Echo[] = [
       "estes-park",
       "ghosts"
     ],
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9593,6 +9808,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes a bombing that killed four people. No injuries are described."
     },
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9630,6 +9846,7 @@ export const LIBRARY: readonly Echo[] = [
       "philadelphia",
       "ghosts"
     ],
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9672,6 +9889,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes a shooting in which five people died. No violence is described in detail."
     },
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9709,6 +9927,7 @@ export const LIBRARY: readonly Echo[] = [
       "london",
       "ghosts"
     ],
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9746,6 +9965,7 @@ export const LIBRARY: readonly Echo[] = [
       "london",
       "ghosts"
     ],
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9783,6 +10003,7 @@ export const LIBRARY: readonly Echo[] = [
       "long-beach",
       "ghosts"
     ],
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9826,6 +10047,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes an assassination. No violence is described in detail."
     },
+    "remoteness": 1,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -9864,6 +10086,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "hamilton"
     ],
+    "remoteness": 0,
     "archive": [
       {
         "imageKey": "archive/trinity-tallest-thing",
@@ -9980,6 +10203,7 @@ export const LIBRARY: readonly Echo[] = [
       "slavery",
       "wall-street"
     ],
+    "remoteness": 0,
     "archive": [
       {
         "imageKey": "archive/wall-street-the-wall",
@@ -10031,6 +10255,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "UrTldiIxfedDl9tlesyS",
@@ -10067,6 +10292,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10103,6 +10329,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10140,6 +10367,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "UrTldiIxfedDl9tlesyS",
@@ -10176,6 +10404,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10212,6 +10441,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10248,6 +10478,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10284,6 +10515,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10320,6 +10552,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10356,6 +10589,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10392,6 +10626,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10428,6 +10663,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10465,6 +10701,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "UrTldiIxfedDl9tlesyS",
@@ -10501,6 +10738,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10537,6 +10775,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10573,6 +10812,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10609,6 +10849,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10645,6 +10886,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10681,6 +10923,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10717,6 +10960,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10753,6 +10997,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10789,6 +11034,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10826,6 +11072,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10862,6 +11109,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10898,6 +11146,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10934,6 +11183,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -10970,6 +11220,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11006,6 +11257,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11042,6 +11294,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11078,6 +11331,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11114,6 +11368,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11150,6 +11405,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11187,6 +11443,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11224,6 +11481,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11260,6 +11518,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11296,6 +11555,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11332,6 +11592,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11368,6 +11629,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11404,6 +11666,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11440,6 +11703,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0.2,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11476,6 +11740,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11513,6 +11778,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "UrTldiIxfedDl9tlesyS",
@@ -11549,6 +11815,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11585,6 +11852,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11621,6 +11889,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11657,6 +11926,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11693,6 +11963,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11730,6 +12001,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "UrTldiIxfedDl9tlesyS",
@@ -11766,6 +12038,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11802,6 +12075,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11838,6 +12112,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11874,6 +12149,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11909,6 +12185,7 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington"
     ],
+    "remoteness": 0.44,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11945,6 +12222,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11981,6 +12259,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12018,6 +12297,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "UrTldiIxfedDl9tlesyS",
@@ -12054,6 +12334,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12090,6 +12371,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12126,6 +12408,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12162,6 +12445,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12199,6 +12483,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12235,6 +12520,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12271,6 +12557,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12314,6 +12601,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
     },
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12357,6 +12645,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
     },
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12393,6 +12682,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12429,6 +12719,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12465,6 +12756,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12501,6 +12793,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12537,6 +12830,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12580,6 +12874,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes a suspicious fire. Nobody is described as hurt."
     },
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12616,6 +12911,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12652,6 +12948,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12688,6 +12985,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12731,6 +13029,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes an arson attack on the house. Nobody is described as hurt."
     },
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12767,6 +13066,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12803,6 +13103,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12840,6 +13141,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "UrTldiIxfedDl9tlesyS",
@@ -12876,6 +13178,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12912,6 +13215,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12948,6 +13252,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12984,6 +13289,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0.16,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13020,6 +13326,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13056,6 +13363,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13099,6 +13407,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
     },
+    "remoteness": 0.18,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13135,6 +13444,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13171,6 +13481,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13207,6 +13518,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13244,6 +13556,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "UrTldiIxfedDl9tlesyS",
@@ -13280,6 +13593,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13316,6 +13630,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13359,6 +13674,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-10-09",
       "contentWarning": "This echo describes an arson and a wrongful conviction. Nothing is described in detail."
     },
+    "remoteness": 0.14,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13395,6 +13711,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13432,6 +13749,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "UrTldiIxfedDl9tlesyS",
@@ -13468,6 +13786,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13505,6 +13824,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "UrTldiIxfedDl9tlesyS",
@@ -13541,6 +13861,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13577,6 +13898,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13613,6 +13935,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13649,6 +13972,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13685,6 +14009,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13721,6 +14046,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13757,6 +14083,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -13793,6 +14120,7 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",

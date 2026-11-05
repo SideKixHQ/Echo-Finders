@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { CaptureTracker, rarityOf, rarityReasons } from "../src/capture/index.js";
+import { CaptureTracker, rarityOf, rarityReasons, remotenessOf, withRemoteness } from "../src/capture/index.js";
 import type { Echo, LatLng, Position } from "../src/types.js";
 import { ADULT, CHILD, makeEcho } from "./fixtures.js";
 import type { EchoDraft } from "./fixtures.js";
@@ -367,18 +367,24 @@ describe("rarity is earned, not assigned", () => {
     expect(rarityOf(makeEcho({ id: "c", at: WALL_STREET, triggerRadiusKm: 60 }))).toBe("common");
   });
 
-  it("counts having to find the exact spot", () => {
-    expect(rarityOf(plaque())).not.toBe("common");
+  // The bug this rule replaced: the standard walking radius scored as "find the exact spot",
+  // so 318 of 329 echoes were uncommon and the tier meant nothing.
+  it("does not count the standard walking radius as difficulty", () => {
+    expect(rarityOf(plaque({ triggerRadiusKm: 0.04 }))).toBe("common");
+    expect(rarityOf(plaque({ triggerRadiusKm: 0.05 }))).toBe("common");
   });
 
-  it("counts being a long way from anywhere", () => {
-    const remote = makeEcho({
-      id: "remote",
-      at: { lat: 63.07, lng: -151.0 },
-      triggerRadiusKm: 5,
-      remoteness: 0.9,
-    });
-    expect(rarityOf(remote)).toBe("uncommon");
+  it("counts a spot made tight on purpose", () => {
+    expect(rarityOf(plaque({ triggerRadiusKm: 0.03 }))).toBe("uncommon");
+  });
+
+  it("counts having to go inside", () => {
+    expect(rarityOf(plaque({ inside: true }))).toBe("uncommon");
+  });
+
+  it("counts being off the main walk, and far off it more", () => {
+    expect(rarityOf(plaque({ remoteness: 0.2 }))).toBe("uncommon");
+    expect(rarityOf(plaque({ remoteness: 0.9 }))).toBe("rare");
   });
 
   it("stacks difficulty into something singular", () => {
@@ -396,17 +402,52 @@ describe("rarity is earned, not assigned", () => {
     const hard = makeEcho({
       id: "hard",
       at: WALL_STREET,
-      triggerRadiusKm: 0.04,
+      triggerRadiusKm: 0.03,
       remoteness: 0.95,
       hours: { fromHour: 22, toHour: 3 },
+      inside: true,
     });
     const reasons = rarityReasons(hard);
     expect(reasons).toContain("You have to find the exact spot");
     expect(reasons).toContain("Only open at certain hours");
+    expect(reasons).toContain("You have to go inside");
     expect(reasons).toContain("A long way from anywhere");
   });
 
   it("gives an ordinary echo nothing to boast about", () => {
     expect(rarityReasons(makeEcho({ id: "c", at: WALL_STREET, triggerRadiusKm: 60 }))).toEqual([]);
+    expect(rarityReasons(plaque({ triggerRadiusKm: 0.04 }))).toEqual([]);
+  });
+});
+
+describe("remoteness is measured from the main walk", () => {
+  // Five echoes within a few metres: a main walk.
+  const walk = [0, 1, 2, 3, 4].map((i) =>
+    makeEcho({ id: `walk-${i}`, at: { lat: 40.7 + i * 0.0005, lng: -74.01 }, triggerRadiusKm: 0.04 }),
+  );
+  const near = makeEcho({ id: "near", at: { lat: 40.7, lng: -74.0 }, triggerRadiusKm: 0.04 }); // ~0.85 km
+  const far = makeEcho({ id: "far", at: { lat: 40.75, lng: -74.01 }, triggerRadiusKm: 0.04 }); // ~5 km
+  const drive = makeEcho({ id: "drive", at: { lat: 41.5, lng: -75 }, triggerRadiusKm: 3 });
+
+  it("puts the crowded echoes at zero", () => {
+    const r = remotenessOf([...walk, near, far, drive]);
+    for (const e of walk) expect(r.get(e.id)).toBe(0);
+  });
+
+  it("scores the others by distance to the walk", () => {
+    const r = remotenessOf([...walk, near, far, drive]);
+    expect(r.get("near")).toBeGreaterThan(0.2);
+    expect(r.get("near")).toBeLessThan(0.75);
+    expect(r.get("far")).toBe(1);
+  });
+
+  it("leaves echoes passed by car or plane alone", () => {
+    expect(remotenessOf([...walk, drive]).get("drive")).toBe(0);
+  });
+
+  it("lets a value written in the file win", () => {
+    const pinned = makeEcho({ id: "pinned", at: { lat: 40.75, lng: -74.01 }, triggerRadiusKm: 0.04, remoteness: 0 });
+    const out = withRemoteness([...walk, pinned]);
+    expect(out.find((e) => e.id === "pinned")?.remoteness).toBe(0);
   });
 });

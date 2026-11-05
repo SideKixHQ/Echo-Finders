@@ -183,6 +183,9 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
   const archive = archivePhotos(input["archive"], fail);
   const attraction = attractionOf(input["attraction"], fail);
 
+  if (input["inside"] !== undefined && typeof input["inside"] !== "boolean") {
+    fail("inside", "must be true or false");
+  }
   const durationS = num("durationS", false) ?? NOMINAL_DURATION_S[format] ?? 90;
   const triggerRadiusKm = num("triggerRadiusKm");
   const title = str("title");
@@ -220,6 +223,7 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
     ...optional("pronunciations", pronunciationList(input["pronunciations"])),
     ...optional("remoteness", num("remoteness", false)),
     ...optional("hours", hours),
+    ...optional("inside", typeof input["inside"] === "boolean" ? input["inside"] : undefined),
     ...optional("tags", stringList(input["tags"])),
     ...optional("relatedIds", stringList(input["relatedIds"])),
     ...optional("perspectiveIds", stringList(input["perspectiveIds"])),
