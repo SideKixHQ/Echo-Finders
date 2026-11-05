@@ -1582,6 +1582,199 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "carolina-beach-a-haven-called-seabreeze",
+    "title": "A Haven Called Seabreeze",
+    "summary": "Seabreeze and Freeman Beach, built by the Freeman family, were Black resorts during the Jim Crow era.",
+    "point": {
+      "at": {
+        "lat": 34.063611,
+        "lng": -77.898611
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "Seabreeze, on Myrtle Grove Sound north of Carolina Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 49,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look around. Seabreeze does not look much like a resort now. For decades, it was exactly that.\n\nDuring the Jim Crow era, Seabreeze and Freeman Beach were havens for Black families seeking a\nday by the water. Seabreeze was established in 1922, and Freeman Beach in 1951. The same\nfamily built both, the Freemans, and both became symbols of pride and resilience.\n\nWhat ended them was slower than a law. Dredging near Freeman Beach. Development creeping in.\nAnd then the devastation of Hurricane Hazel.\n\nToday the north end of the island is Freeman Park, where people drive straight onto the sand.\n\nSome of the beach people cross for fun was once a haven.\n",
+    "teaser": "Under Jim Crow, Black families came here for the beach.",
+    "tags": [
+      "carolina-beach",
+      "african-american-history",
+      "jim-crow"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/carolina-beach-a-haven-called-seabreeze",
+        "durationS": 49
+      }
+    ]
+  },
+  {
+    "id": "carolina-beach-the-plant-that-eats-bugs",
+    "title": "The Plant That Eats Bugs",
+    "summary": "A children's telling of the Venus flytrap, which grows wild around Wilmington and in Carolina Beach State Park.",
+    "point": {
+      "at": {
+        "lat": 34.0503,
+        "lng": -77.9103
+      },
+      "triggerRadiusKm": 0.3,
+      "place": "Carolina Beach State Park, Flytrap Trail and bog garden, Carolina Beach, North Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 52,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Here is a challenge. Somewhere near this trail, there might be a plant that eats bugs.\nCan you spot it?\n\nIt is called a Venus flytrap, and it is tiny, often no bigger than a quarter. Look low, near\nthe ground, where the land is open, sunny and sandy.\n\nEach trap is a leaf that works like a little green bear trap, with tiny hairs inside. When a\nbug brushes those hairs more than once, snap! The trap shuts in less than a second. Then the\nplant slowly digests its dinner, and later the trap opens again.\n\nWild flytraps grow in only a small area around Wilmington. That makes this one of the only\nplaces on Earth where you can see them. Look all you like, but never dig them up. They belong\nhere.\n",
+    "teaser": "Somewhere near this trail, a plant might be waiting for its lunch.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "carolina-beach",
+      "carolina-beach-state-park",
+      "nature",
+      "flytrap"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/carolina-beach-the-plant-that-eats-bugs",
+        "durationS": 52
+      }
+    ]
+  },
+  {
+    "id": "carolina-beach-the-show-over-the-ocean",
+    "title": "The Show Over the Ocean",
+    "summary": "A Second World War soldier remembered watching tracer fire from Carolina Beach while his wife lived here before he shipped out.",
+    "point": {
+      "at": {
+        "lat": 34.058387,
+        "lng": -77.878467
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Carolina Beach oceanfront by the fishing pier, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 52,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Face the ocean. During the war, this beach had a view worth sitting down for.\n\nDown at Fort Fisher, anti-aircraft gunners trained six days a week. At night, searchlights\npicked out the towed targets, and tracers arched out over the ocean.\n\nOne soldier remembered marrying while he was home on furlough. His wife came down and lived\nat Carolina Beach for several months, just before his unit shipped overseas.\n\nPeople could sit down on Carolina Beach, he said, and watch the forties and fifties being shot\nout over the ocean. He meant the forty-millimeter cannon and the fifty-caliber machine guns.\n\nHe called it a really beautiful sight. A few months later, he was on his way to the real\nthing.\n",
+    "teaser": "During the war, people sat on this beach to watch the guns fire at night.",
+    "tags": [
+      "carolina-beach",
+      "world-war-ii",
+      "military"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/carolina-beach-the-show-over-the-ocean",
+        "durationS": 52
+      }
+    ]
+  },
+  {
+    "id": "carolina-beach-the-trap-that-counts",
+    "title": "The Trap That Counts",
+    "summary": "Venus flytraps grow wild only in a small band of coastal plain around Wilmington, including Carolina Beach State Park.",
+    "point": {
+      "at": {
+        "lat": 34.05,
+        "lng": -77.91
+      },
+      "triggerRadiusKm": 0.3,
+      "place": "Carolina Beach State Park, Flytrap Trail and bog garden, Carolina Beach, North Carolina"
+    },
+    "category": "land",
+    "format": "short",
+    "durationS": 50,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Slow down and look at the ground along the wetter edges of the trail. What you are\nlooking for is smaller than you expect, often no bigger than a quarter.\n\nIt is a Venus flytrap. It has one of the smallest native ranges of any plant anywhere, a slim\nband of coastal plain around Wilmington, reaching just into South Carolina.\n\nEach trap is a leaf, hinged like a tiny bear trap and lined with trigger hairs. One touch is\nnot enough. An insect has to brush those hairs more than once, and then the trap snaps shut,\nin less than a second.\n\nThe plant waits to be sure. You can too. Look, but do not dig. In North Carolina, taking a\nflytrap from the wild is a felony.\n",
+    "teaser": "The most famous plant on this coast is smaller than a quarter.",
+    "tags": [
+      "carolina-beach",
+      "carolina-beach-state-park",
+      "nature",
+      "flytrap"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/carolina-beach-the-trap-that-counts",
+        "durationS": 50
+      }
+    ]
+  },
+  {
+    "id": "carolina-beach-where-the-shag-began",
+    "title": "Where the Shag Began, Maybe",
+    "summary": "Local history buffs say the Carolina shag likely began on the Carolina Beach Boardwalk.",
+    "point": {
+      "at": {
+        "lat": 34.036667,
+        "lng": -77.896944
+      },
+      "triggerRadiusKm": 0.25,
+      "place": "Carolina Beach Boardwalk, Carolina Beach, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 49,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Listen for beach music. If any town can claim this dance, it might be this town.\n\nThe shag is danced to beach music, a laid-back kind of rhythm and blues with strong ties to\nthe Carolina coast. Local history buffs claim it is likely to have begun right here, on the\nCarolina Beach Boardwalk.\n\nLikely is doing real work in that sentence. Dances do not keep birth certificates.\n\nBut the music never left. The Carolina Beach Music Festival has run here for more than thirty\nyears, and its organizers believe it is the longest-running beach music festival still held\non the actual beach.\n\nWatch the feet. Whether or not it started here, it has never stopped here.\n",
+    "teaser": "This boardwalk claims a dance. The claim is worth hearing, carefully.",
+    "tags": [
+      "carolina-beach",
+      "music",
+      "boardwalk"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/carolina-beach-where-the-shag-began",
+        "durationS": 49
+      }
+    ]
+  },
+  {
     "id": "casa-casuarina-the-steps",
     "title": "He did not get through the door",
     "summary": "Gianni Versace was killed on these steps in 1997, coming back from breakfast.",
@@ -4529,6 +4722,209 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "fort-fisher-soldiers-who-had-never-seen-the-sea",
+    "title": "Soldiers Who Had Never Seen the Sea",
+    "summary": "Wartime trainees at Fort Fisher came from inland, had never seen a beach, and got swimming lessons and a visit from Joe Louis.",
+    "point": {
+      "at": {
+        "lat": 33.9715,
+        "lng": -77.918
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Fort Fisher, Kure Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 53,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the water and imagine you have never seen it before.\n\nMany of the men who trained here in the war came from the interior of the country, and had\nnever seen a beach. Federal Point was a shock. There was sand in everything, and mosquitoes.\nOne soldier called it a forlorn spit of sand and scrub growth, pinched between the Atlantic\nOcean and the Cape Fear River.\n\nSo the post taught them the beach. Swimming lessons. Advice on how to avoid sunburn. Beach\nsafety. More than a few refused to eat the fried clams and oysters.\n\nFor a show, they boxed. In January 1944, the boxing champion Joe Louis came to visit.\n\nThey had come to learn to shoot down aircraft. Before that, they had to learn the ocean.\n",
+    "teaser": "The army had to teach its gunners how to live on a beach.",
+    "tags": [
+      "fort-fisher",
+      "kure-beach",
+      "world-war-ii",
+      "military"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/fort-fisher-soldiers-who-had-never-seen-the-sea",
+        "durationS": 53
+      }
+    ]
+  },
+  {
+    "id": "fort-fisher-the-runway-through-the-wall",
+    "title": "The Runway Through the Wall",
+    "summary": "A Second World War firing range and airstrip destroyed much of Fort Fisher's land front.",
+    "point": {
+      "at": {
+        "lat": 33.97205,
+        "lng": -77.9174
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Fort Fisher Visitor Center beside U.S. 421, Kure Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 51,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Notice the road. U.S. 421 runs right through the sandy ruins of what was once the\nfort's land front.\n\nTraining at the Fort Fisher range began in October 1941. It became the main firing range\nfor an anti-aircraft training camp, and planes towed targets back and forth above the beach\nwhile the gunners below fired at them.\n\nThen the army built a large airstrip here. It destroyed a sizable portion of the land front\nof the old bastion, by then eighty years old.\n\nNobody pretended otherwise. Most of the trainees knew where they were, and the camp's own\nliterature celebrated the fort's past. National defense simply came first.\n\nPreservation came later, and found less to preserve.\n",
+    "teaser": "In 1941 the army came back to Fort Fisher, and built an airstrip through it.",
+    "tags": [
+      "fort-fisher",
+      "kure-beach",
+      "world-war-ii",
+      "military"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/fort-fisher-the-runway-through-the-wall",
+        "durationS": 51
+      }
+    ]
+  },
+  {
+    "id": "fort-fisher-the-same-sand-twice",
+    "title": "The Same Sand Twice",
+    "summary": "The 27th U.S. Colored Troops fought here in 1865. In 1941 the 54th Coast Artillery trained on the same ground.",
+    "point": {
+      "at": {
+        "lat": 33.9715,
+        "lng": -77.918
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Fort Fisher, the land face, Kure Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 46,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on the mounds and think about who has stood here before you.\n\nOn the fifteenth of January, 1865, more than three thousand three hundred Union infantry\nassaulted this land face. Among them were the twenty-seventh United States Colored Troops.\n\nBlack soldiers came back to the same sand in 1941. The fifty-fourth Coast Artillery was the\narmy's only Black anti-aircraft unit with the big one-five-five millimeter guns, and it\nbrought twenty-four of them here for two months of training.\n\nThe first time, they came to take this fort. The second time, they came to train on it.\n\nThe mounds were the same mounds.\n",
+    "teaser": "Black soldiers came to these mounds in 1865, and again in 1941.",
+    "tags": [
+      "fort-fisher",
+      "kure-beach",
+      "civil-war",
+      "world-war-ii",
+      "military",
+      "african-american-history"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/fort-fisher-the-same-sand-twice",
+        "durationS": 46
+      }
+    ]
+  },
+  {
+    "id": "fort-fisher-the-spy-who-tried-to-row-ashore",
+    "title": "The Spy Who Tried to Row Ashore",
+    "summary": "Rose O'Neal Greenhow drowned off Fort Fisher when her boat capsized after the blockade runner Condor ran aground.",
+    "point": {
+      "at": {
+        "lat": 33.97,
+        "lng": -77.918055
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Fort Fisher State Historic Site, facing the ocean, Kure Beach, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 51,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out at the water off this shore. In the autumn of 1864, a spy tried to reach it in a\nsmall boat.\n\nHer name was Rose O'Neal Greenhow. She was aboard the Condor, one of the fastest blockade\nrunners ever built in Britain, on the ship's maiden voyage.\n\nThe Condor ran aground, trying to avoid the wreck of another blockade runner, the Night\nHawk. Greenhow set out for Fort Fisher in the ship's boat. It capsized. She drowned on the\nfirst of October, 1864.\n\nShe is buried in Oakdale Cemetery in Wilmington. Her ship is still out there. In 2017 the\nCondor became North Carolina's first Heritage Dive Site, and divers now visit the wreck.\n\nShe never reached the shore you are standing on.\n",
+    "teaser": "In 1864 a Confederate spy set out for this shore in a small boat.",
+    "pronunciations": [
+      {
+        "written": "Greenhow",
+        "say": "GREEN-how"
+      }
+    ],
+    "tags": [
+      "fort-fisher",
+      "kure-beach",
+      "civil-war",
+      "women"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/fort-fisher-the-spy-who-tried-to-row-ashore",
+        "durationS": 51
+      }
+    ]
+  },
+  {
+    "id": "fort-fisher-what-the-sea-took",
+    "title": "What the Sea Took",
+    "summary": "Fort Fisher was built of sand to survive shellfire. Most of it was taken by the sea instead.",
+    "point": {
+      "at": {
+        "lat": 33.9717,
+        "lng": -77.9194
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Fort Fisher State Historic Site, land face mounds, Kure Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 46,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the mounds beside the trail. They are made of earth and sand, and that was the\nwhole idea.\n\nOlder forts were brick and mortar. Fort Fisher was made mostly of earth and sand, which was\nfar better at swallowing the shock of a heavy shell. The builders made it the largest\nearthwork fort in the South, with a mile of sea defense along this shore.\n\nTwo major battles were fought here, and the second one took it.\n\nBut the enemy that did the most damage never fired a shot. Approximately ten percent of\nFort Fisher still stands. Much of the rest was eroded by the ocean.\n\nIt just kept coming back, with every tide.\n",
+    "teaser": "Two battles were fought here. The ocean did more damage than either.",
+    "tags": [
+      "fort-fisher",
+      "kure-beach",
+      "civil-war",
+      "military"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/fort-fisher-what-the-sea-took",
+        "durationS": 46
+      }
+    ]
+  },
+  {
     "id": "fraunces-tavern-farewell",
     "title": "The goodbye that nobody got through",
     "summary": "Washington said farewell to his officers in an upstairs room here in December 1783.",
@@ -4644,6 +5040,52 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/kitty-hawk-shorter-than-this-plane",
         "durationS": 95
+      }
+    ]
+  },
+  {
+    "id": "kure-beach-five-shells-in-the-dark",
+    "title": "Five Shells in the Dark",
+    "summary": "The story of a U-boat that shelled the Kure Beach chemical plant in 1943 has never been confirmed.",
+    "point": {
+      "at": {
+        "lat": 33.997777,
+        "lng": -77.908055
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "Kure Beach oceanfront, North Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 58,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out to sea, after dark if you can. This is a story people here have told since the\nwar.\n\nOn the night of the fifteenth of July, 1943, the story goes, a German submarine surfaced off\nKure Beach under cover of darkness. It fired five shells at the Ethyl-Dow chemical plant,\nwhich made a key ingredient for high-octane fuel.\n\nEvery shell overshot. All of them plunged into the Cape Fear River.\n\nThe man who told it was an officer stationed at Fort Fisher. Some residents remembered the\nshipyard in Wilmington suddenly going black that night. They had been told that if its\nlights ever went out, a real raid had come.\n\nA news blackout followed, the story says, and over the years it drifted into legend. So hear\nit that way.\n\nBut five is a very specific number to invent.\n",
+    "teaser": "A German submarine, a chemical plant, and five shells that missed.",
+    "certaintyNote": "A wartime story told by an officer stationed at Fort Fisher. No hard evidence or official account confirms it; the script says so.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "pronunciations": [
+      {
+        "written": "Kure",
+        "say": "KYOOR-ee"
+      }
+    ],
+    "tags": [
+      "kure-beach",
+      "world-war-ii",
+      "military"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "speech/kure-beach-five-shells-in-the-dark",
+        "durationS": 58
       }
     ]
   },

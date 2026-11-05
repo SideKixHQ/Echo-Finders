@@ -1,0 +1,75 @@
+# Batch 1 for the MVP (docs/12-cities.md), written 2026-11-05.
+# Position: Wikidata Q2027465 (Kure Beach). The plant's exact site is not given in the source; the echo plays across the town (low confidence).
+id: kure-beach-five-shells-in-the-dark
+title: "Five Shells in the Dark"
+summary: "The story of a U-boat that shelled the Kure Beach chemical plant in 1943 has never been confirmed."
+place: "Kure Beach oceanfront, North Carolina"
+at: { lat: 33.997777, lng: -77.908055 }
+triggerRadiusKm: 0.15
+category: legend
+format: short
+durationS: 58
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A wartime story told by an officer stationed at Fort Fisher. No hard evidence or
+  official account confirms it; the script says so.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [kure-beach, world-war-ii, military]
+teaser: "A German submarine, a chemical plant, and five shells that missed."
+script: |
+  Look out to sea, after dark if you can. This is a story people here have told since the
+  war.
+
+  On the night of the fifteenth of July, 1943, the story goes, a German submarine surfaced off
+  Kure Beach under cover of darkness. It fired five shells at the Ethyl-Dow chemical plant,
+  which made a key ingredient for high-octane fuel.
+
+  Every shell overshot. All of them plunged into the Cape Fear River.
+
+  The man who told it was an officer stationed at Fort Fisher. Some residents remembered the
+  shipyard in Wilmington suddenly going black that night. They had been told that if its
+  lights ever went out, a real raid had come.
+
+  A news blackout followed, the story says, and over the years it drifted into legend. So hear
+  it that way.
+
+  But five is a very specific number to invent.
+pronunciations:
+  - written: Kure
+    say: KYOOR-ee
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "On the night of the fifteenth of July, 1943, the story goes, a German submarine surfaced off Kure Beach under cover of darkness."
+    source: 1
+    quote: "Through the years, a popular story has been told regarding a U-boat attack near Kure Beach on July 15, 1943."
+  - says: "It fired five shells at the Ethyl-Dow chemical plant, which made a key ingredient for high-octane fuel."
+    source: 1
+    quote: "a German submarine surfaced under cover of darkness and lobbed five shells at the Ethyl-Dow chemical plant."
+  - says: "All of them plunged into the Cape Fear River."
+    source: 1
+    quote: "According to the story, all of the enemy shells overshot their mark and plunged into the Cape Fear River."
+  - says: "The man who told it was an officer stationed at Fort Fisher."
+    source: 1
+    quote: "Carlton Sprague, a platoon commander in C Battery, 558th AAA Battalion, remembered that while his unit was stationed at Fort Fisher, a German submarine surfaced under cover of darkness and lobbed five shells at the Ethyl-Dow chemical plant."
+  - says: "Some residents remembered the shipyard in Wilmington suddenly going black that night."
+    source: 1
+    quote: "Some residents recalled that on the night of the supposed attack on the chemical plant, the shipyard in Wilmington suddenly went black."
+  - says: "They had been told that if its lights ever went out, a real raid had come."
+    source: 1
+    quote: "The citizens had been warned that if these lights ever went out, it meant that a real raid was at hand"
+  - says: "A news blackout followed, the story says, and over the years it drifted into legend."
+    source: 1
+    quote: "Apparently, a news blackout followed, and over the years the story has drifted into legend."
+  - says: "But five is a very specific number to invent."
+    source: 1
+    quote: "lobbed five shells at the Ethyl-Dow chemical plant."
+sources:
+  - title: "WWII at Fort Fisher"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history/wwii-fort-fisher
+    retrievedAt: "2026-11-05"
+    rights: fair-use-facts

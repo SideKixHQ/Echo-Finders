@@ -1,0 +1,56 @@
+# Batch 1 for the MVP (docs/12-cities.md), written 2026-11-05.
+# Position: Wikidata Q3364028 (Carolina Beach State Park), offset a few metres from the adult flytrap echo so both can be found. Needs a pin before approval (low confidence).
+id: carolina-beach-the-plant-that-eats-bugs
+title: "The Plant That Eats Bugs"
+summary: "A children's telling of the Venus flytrap, which grows wild around Wilmington and in Carolina Beach State Park."
+place: "Carolina Beach State Park, Flytrap Trail and bog garden, Carolina Beach, North Carolina"
+at: { lat: 34.0503, lng: -77.9103 }
+triggerRadiusKm: 0.3
+category: kids
+format: short
+durationS: 52
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [carolina-beach, carolina-beach-state-park, nature, flytrap]
+teaser: "Somewhere near this trail, a plant might be waiting for its lunch."
+script: |
+  Here is a challenge. Somewhere near this trail, there might be a plant that eats bugs.
+  Can you spot it?
+
+  It is called a Venus flytrap, and it is tiny, often no bigger than a quarter. Look low, near
+  the ground, where the land is open, sunny and sandy.
+
+  Each trap is a leaf that works like a little green bear trap, with tiny hairs inside. When a
+  bug brushes those hairs more than once, snap! The trap shuts in less than a second. Then the
+  plant slowly digests its dinner, and later the trap opens again.
+
+  Wild flytraps grow in only a small area around Wilmington. That makes this one of the only
+  places on Earth where you can see them. Look all you like, but never dig them up. They belong
+  here.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "It is called a Venus flytrap, and it is tiny, often no bigger than a quarter."
+    source: 1
+    quote: "Up close, most traps are smaller than people expect, often no bigger than a quarter."
+  - says: "When a bug brushes those hairs more than once, snap!"
+    source: 1
+    quote: "When flying insects, or even grasshoppers, brush these hairs multiple times, the trap closes."
+  - says: "The trap shuts in less than a second."
+    source: 1
+    quote: "hinged like a tiny green bear trap, snapping shut in less than a second when triggered."
+  - says: "Wild flytraps grow in only a small area around Wilmington."
+    source: 1
+    quote: "Because the Venus flytrap is native only to a roughly 75-mile radius around Wilmington and its beaches, you're in the best possible place to find them."
+  - says: "That makes this one of the only places on Earth where you can see them."
+    source: 1
+    quote: "That makes this corner of the Carolina coast one of the only places on Earth where you can reliably see Venus flytraps in the wild, with no terrarium required."
+sources:
+  - title: "Venus Flytraps in Wilmington, North Carolina"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/venus-flytrap/
+    retrievedAt: "2026-11-05"
+    rights: fair-use-facts
