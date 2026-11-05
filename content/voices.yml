@@ -66,6 +66,18 @@
 
 defaultVoiceId: IMlxLW3qgn0MWgfz7Vnh
 
+# Who reads what, by category. James, 2026-11-05: "The male voice is for ghost stories and
+# true crime. The female voice is everything else. Kids lady voice is only for kids echos."
+#
+# Ghost stories are the `legend` category (folklore, ghosts and tall tales). Every other
+# category takes `defaultVoiceId`. `npm run content:validate` fails an echo whose `voice:`
+# disagrees, so the cast cannot drift one file at a time. Set `voice:` in the file as well:
+# the render script and the stand-in read it.
+casting:
+  legend: wC1005J19tvhoqqC2hkf
+  true-crime: wC1005J19tvhoqqC2hkf
+  kids: UrTldiIxfedDl9tlesyS
+
 voices:
   - id: IMlxLW3qgn0MWgfz7Vnh
     role: Main female narrator — the default voice of the product
@@ -146,7 +158,7 @@ voices:
       series.
 
   - id: wC1005J19tvhoqqC2hkf
-    role: Male narrator — the weight in the cast
+    role: Male narrator — ghost stories and true crime
     name: TODO — the voice's name in ElevenLabs
     provider: elevenlabs
     locale: TODO — e.g. en-GB or en-US
@@ -263,51 +275,15 @@ voices:
 #
 # ── Casting the male narrator ─────────────────────────────────────────────────
 #
-# An earlier version of this file said a dedicated true-crime voice was the tempting fourth
-# and the one to resist, because a grave genre narrator makes tragedy sound like
-# entertainment — the Respect value's "avoid turning pain, tragedy or identity into
-# disposable entertainment."
+# Settled by James on 2026-11-05: **ghost stories and true crime, and nothing else.** See
+# `casting:` at the top of this file.
 #
-# That still holds against a *genre* voice. It does not hold against the one we have, whose
-# brief forbids the failure mode by name: no movie trailer, no ominous exaggeration, drawing
-# the listener closer rather than projecting at them. Restraint reads as more serious, not
-# less.
-#
-# But one half of the caution survives, and it is about *casting*, not about sound. Give a
-# voice to one category and the voice becomes the category: the listener knows a murder is
-# coming before a word is spoken, however gently it is eventually read.
-#
-# That cuts both ways, which is why it is a judgement rather than a rule.
-#
-#   Against: it turns a narrator into a genre badge, and makes the product's most careful
-#   material sound like a strand.
-#
-#   For: it is a content warning delivered through craft instead of a dialog box. True
-#   crime already carries a mandatory `contentWarning`, and hearing that this one is
-#   different is a kinder way to be told than reading it.
-#
-# The resolution is to cast him for **weight, not genre**. True crime by default, as
-# proposed — plus the echoes that are not crime and are not light. Then the voice means
-# "this one is serious", which is both more useful to a listener and more honest about the
-# library than "this one is a murder".
-#
-# As cast on 23 September 2026 — seven echoes, and each one argued rather than filtered:
-#
-#   dakota-three-minutes              a man shot in an archway
-#   strawberry-fields-one-word        its memorial, three minutes away
-#   casa-casuarina-the-steps          a man shot on his own steps
-#   news-cafe-last-ordinary-morning   the hour before it
-#   african-burial-ground             the largest known African burial ground in North
-#                                     America, found under a building site
-#   wall-street-the-wall              a palisade built mostly by people who were not free
-#   st-pauls-still-standing           what stood between the chapel and the towers
-#
-# The last three are the point. None is true crime and all three are grave, and a cast that
-# could not reach them would be a genre badge after all. Equally: Washington's farewell at
-# Fraunces Tavern is poignant and not grave; a crowd pulling down a gilded king is nearly
-# funny; twelve seconds at Kitty Hawk is wonder. Those went back to the default narrator,
-# because casting everything old and important to the grave voice is the same mistake in a
-# longer coat.
+# This replaces the cast of 23 September 2026, which gave him true crime plus three grave
+# echoes that were not crime (african-burial-ground, wall-street-the-wall,
+# st-pauls-still-standing) on the argument that he should mean "this one is serious"
+# rather than "this one is a murder". Those three are back with the default narrator. The
+# caution that argument rested on still applies to how he is directed: his brief forbids
+# the movie-trailer read by name, and a ghost story is told as a legend, not as a threat.
 #
 # Worth knowing before adding voices at all: **voice is not delivery.** The same narrator can
 # be directed — ElevenLabs stability and style settings change the read considerably. A
