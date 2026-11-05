@@ -21,7 +21,9 @@ San Antonio". The small towns follow his question about places like Tombstone. E
 else on this page waits until these are covered.
 
 Each place gets the walking mix in `13-story-mix.md` (30 echoes), leaning where its story
-does. Counts are echoes in `content/echoes/` on 2026-11-05.
+does. **The four small towns in Tier 3 are covered at 20** (James, 2026-11-05: "20 for small
+towns"), with the same mix scaled by two thirds. Counts are echoes in `content/echoes/` on
+2026-11-05.
 
 ### Tier 1: home, and the ghost cities
 
@@ -48,24 +50,28 @@ does. Counts are echoes in `content/echoes/` on 2026-11-05.
 
 ### Tier 3: small towns with one big story
 
-| # | Place | Echoes now | Lean |
-|---|---|---|---|
-| M14 | San Antonio, TX | 0 | military (the Alamo), ghosts |
-| M15 | Tombstone, AZ | 0 | true crime (the O.K. Corral) |
-| M16 | Salem, MA | 0 | true crime and legend (1692) |
-| M17 | St. Augustine, FL | 1 drafted | ghosts, history |
-| M18 | Gettysburg, PA | 0 | military, ghosts |
+| # | Place | Covered at | Echoes now | Lean |
+|---|---|---|---|---|
+| M14 | San Antonio, TX | 30 (a big city) | 0 | military (the Alamo), ghosts |
+| M15 | Tombstone, AZ | 20 | 0 | true crime (the O.K. Corral) |
+| M16 | Salem, MA | 20 | 0 | true crime and legend (1692) |
+| M17 | St. Augustine, FL | 20 | 1 drafted | ghosts, history |
+| M18 | Gettysburg, PA | 20 | 0 | military, ghosts |
 
-**The size of the job:** 18 places at 30 approved echoes is 540. About 310 are drafted
-across them today and 16 are approved. Counting only each place's shortfall to 30, about
-310 more are still to write: 120 in the four towns around Wilmington, 149 in Tier 3, 28 in Chicago and
-14 in New York. The drafted cities also need reshaping to their mix (Savannah and Charleston
+**The size of the job:** 14 places at 30 and 4 at 20 is 500 approved echoes. About 310
+are drafted across them today and 16 are approved. Counting only each place's shortfall,
+about 270 more are still to write: 120 in the four towns around Wilmington, 109 in Tier 3,
+28 in Chicago and 14 in New York. The drafted cities also need reshaping to their mix (Savannah and Charleston
 are short of ghosts), and every drafted echo still needs James's review.
 
-**Drives and flights in the MVP:** proposed, not yet decided. One drive, Wilmington to Fort
-Fisher and Southport along US 421 and the ferry, which reuses Tier 1's echoes. The existing
-Blue Ridge Parkway drive and the JFK to Miami flight corridor stay as they are; flights wait
-for an airline buyer (James, 2026-10-14).
+**The MVP drive** (James, 2026-11-05: "yes to the drive"): Wilmington to Kure Beach and
+Fort Fisher along US 421, then the Fort Fisher ferry across the Cape Fear River to Southport.
+It takes the driving mix in `13-story-mix.md` and reuses Tier 1's echoes where the road passes
+them; the stretches between towns (Monkey Junction, Snow's Cut, the river crossing) need their
+own, at one every 10 miles. Its route file and traced road (`build-route-paths.py`) come next.
+
+The existing Blue Ridge Parkway drive and the JFK to Miami flight corridor stay as they are;
+flights wait for an airline buyer (James, 2026-10-14).
 
 Houston was on James's first list and was swapped for San Antonio: it has no walkable tourist
 core, and San Antonio has the Alamo and the River Walk. Houston stays below under More cities.
