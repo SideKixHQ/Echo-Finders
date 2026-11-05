@@ -1,0 +1,62 @@
+# Batch 1 for the MVP (docs/12-cities.md), written 2026-11-05.
+# Position: Wikidata Q141896353 (Fort Fisher Visitor Center), beside U.S. 421 (high confidence).
+id: fort-fisher-the-runway-through-the-wall
+title: "The Runway Through the Wall"
+summary: "A Second World War firing range and airstrip destroyed much of Fort Fisher's land front."
+place: "Fort Fisher Visitor Center beside U.S. 421, Kure Beach, North Carolina"
+at: { lat: 33.97205, lng: -77.9174 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 51
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [fort-fisher, kure-beach, world-war-ii, military]
+teaser: "In 1941 the army came back to Fort Fisher, and built an airstrip through it."
+script: |
+  Notice the road. U.S. 421 runs right through the sandy ruins of what was once the
+  fort's land front.
+
+  Training at the Fort Fisher range began in October 1941. It became the main firing range
+  for an anti-aircraft training camp, and planes towed targets back and forth above the beach
+  while the gunners below fired at them.
+
+  Then the army built a large airstrip here. It destroyed a sizable portion of the land front
+  of the old bastion, by then eighty years old.
+
+  Nobody pretended otherwise. Most of the trainees knew where they were, and the camp's own
+  literature celebrated the fort's past. National defense simply came first.
+
+  Preservation came later, and found less to preserve.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "U.S. 421 runs right through the sandy ruins of what was once the fort's land front."
+    source: 1
+    quote: "The main highway in the area, U.S. 421, bisected the sandy ruins of the land front of historic Fort Fisher."
+  - says: "Training at the Fort Fisher range began in October 1941."
+    source: 1
+    quote: "Training at the Fort Fisher range began in October 1941."
+  - says: "It became the main firing range for an anti-aircraft training camp, and planes towed targets back and forth above the beach while the gunners below fired at them."
+    source: 1
+    quote: "Planes towing target sleeves on long cables roared back and forth above the beaches of Fort Fisher and Camp Davis's other firing ranges, while anti-aircraft gunners below pumped streams of shells at the soaring targets."
+  - says: "Then the army built a large airstrip here."
+    source: 1
+    quote: "The crowning addition to these improvements was the construction of a large airstrip at Fort Fisher"
+  - says: "It destroyed a sizable portion of the land front of the old bastion, by then eighty years old."
+    source: 1
+    quote: "an endeavor that destroyed a sizable portion of the once-formidable \"land front\" of the 80-year-old bastion."
+  - says: "Most of the trainees knew where they were, and the camp's own literature celebrated the fort's past."
+    source: 1
+    quote: "Nevertheless, most of the new trainees were aware of the area's significance, and Camp Davis's post literature highlighted Fisher's historic past."
+  - says: "National defense simply came first."
+    source: 1
+    quote: "In these unstable times, national defense took precedence over historic preservation."
+sources:
+  - title: "WWII at Fort Fisher"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history/wwii-fort-fisher
+    retrievedAt: "2026-11-05"
+    rights: fair-use-facts

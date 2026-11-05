@@ -1,0 +1,60 @@
+# Batch 1 for the MVP (docs/12-cities.md), written 2026-11-05.
+# Position: Wikidata Q3364028 (Carolina Beach State Park), a coarse park point. The Flytrap Trail needs a pin before approval (low confidence).
+id: carolina-beach-the-trap-that-counts
+title: "The Trap That Counts"
+summary: "Venus flytraps grow wild only in a small band of coastal plain around Wilmington, including Carolina Beach State Park."
+place: "Carolina Beach State Park, Flytrap Trail and bog garden, Carolina Beach, North Carolina"
+at: { lat: 34.05, lng: -77.91 }
+triggerRadiusKm: 0.3
+category: land
+format: short
+durationS: 50
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [carolina-beach, carolina-beach-state-park, nature, flytrap]
+teaser: "The most famous plant on this coast is smaller than a quarter."
+script: |
+  Slow down and look at the ground along the wetter edges of the trail. What you are
+  looking for is smaller than you expect, often no bigger than a quarter.
+
+  It is a Venus flytrap. It has one of the smallest native ranges of any plant anywhere, a slim
+  band of coastal plain around Wilmington, reaching just into South Carolina.
+
+  Each trap is a leaf, hinged like a tiny bear trap and lined with trigger hairs. One touch is
+  not enough. An insect has to brush those hairs more than once, and then the trap snaps shut,
+  in less than a second.
+
+  The plant waits to be sure. You can too. Look, but do not dig. In North Carolina, taking a
+  flytrap from the wild is a felony.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "It is a Venus flytrap."
+    source: 1
+    quote: "It looks like something straight out of science fiction, but the Venus flytrap is very real, and it's native to the Wilmington, North Carolina region, including its barrier islands."
+  - says: "What you are looking for is smaller than you expect, often no bigger than a quarter."
+    source: 1
+    quote: "Up close, most traps are smaller than people expect, often no bigger than a quarter."
+  - says: "It has one of the smallest native ranges of any plant anywhere, a slim band of coastal plain around Wilmington, reaching just into South Carolina."
+    source: 1
+    quote: "The Venus flytrap has one of the smallest native ranges of any plant anywhere: a slim band of coastal plain around Wilmington in North Carolina, stretching just into neighboring South Carolina."
+  - says: "Each trap is a leaf, hinged like a tiny bear trap and lined with trigger hairs."
+    source: 1
+    quote: "Each trap is actually a modified leaf, connected by slender stems (petioles) and hinged like a tiny green bear trap, snapping shut in less than a second when triggered."
+  - says: "One touch is not enough."
+    source: 1
+    quote: "When flying insects, or even grasshoppers, brush these hairs multiple times, the trap closes."
+  - says: "An insect has to brush those hairs more than once, and then the trap snaps shut, in less than a second."
+    source: 1
+    quote: "When flying insects, or even grasshoppers, brush these hairs multiple times, the trap closes."
+  - says: "In North Carolina, taking a flytrap from the wild is a felony."
+    source: 1
+    quote: "In North Carolina, digging up Venus flytraps from the wild is a felony."
+sources:
+  - title: "Venus Flytraps in Wilmington, North Carolina"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/venus-flytrap/
+    retrievedAt: "2026-11-05"
+    rights: fair-use-facts

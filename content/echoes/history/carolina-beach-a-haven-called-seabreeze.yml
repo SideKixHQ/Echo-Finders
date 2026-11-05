@@ -1,0 +1,62 @@
+# Batch 1 for the MVP (docs/12-cities.md), written 2026-11-05.
+# Position: Wikidata Q780154 (Sea Breeze). The resort spread along the sound; the point is the community (medium confidence).
+id: carolina-beach-a-haven-called-seabreeze
+title: "A Haven Called Seabreeze"
+summary: "Seabreeze and Freeman Beach, built by the Freeman family, were Black resorts during the Jim Crow era."
+place: "Seabreeze, on Myrtle Grove Sound north of Carolina Beach, North Carolina"
+at: { lat: 34.063611, lng: -77.898611 }
+triggerRadiusKm: 0.15
+category: history
+format: short
+durationS: 49
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [carolina-beach, african-american-history, jim-crow]
+teaser: "Under Jim Crow, Black families came here for the beach."
+script: |
+  Look around. Seabreeze does not look much like a resort now. For decades, it was exactly that.
+
+  During the Jim Crow era, Seabreeze and Freeman Beach were havens for Black families seeking a
+  day by the water. Seabreeze was established in 1922, and Freeman Beach in 1951. The same
+  family built both, the Freemans, and both became symbols of pride and resilience.
+
+  What ended them was slower than a law. Dredging near Freeman Beach. Development creeping in.
+  And then the devastation of Hurricane Hazel.
+
+  Today the north end of the island is Freeman Park, where people drive straight onto the sand.
+
+  Some of the beach people cross for fun was once a haven.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "During the Jim Crow era, Seabreeze and Freeman Beach were havens for Black families seeking a day by the water."
+    source: 1
+    quote: "During the Jim Crow era, Seabreeze and Freeman Beach were havens for Black families seeking leisure."
+  - says: "Seabreeze was established in 1922, and Freeman Beach in 1951."
+    source: 1
+    quote: "Established in 1922 and 1951, respectively, these neighboring resorts—developed by the Freeman family—became symbols of pride and resilience."
+  - says: "The same family built both, the Freemans, and both became symbols of pride and resilience."
+    source: 1
+    quote: "Established in 1922 and 1951, respectively, these neighboring resorts—developed by the Freeman family—became symbols of pride and resilience."
+  - says: "Dredging near Freeman Beach."
+    source: 1
+    quote: "Over time, dredging near Freeman Beach, encroaching development, and the devastation of Hurricane Hazel led to their decline."
+  - says: "And then the devastation of Hurricane Hazel."
+    source: 1
+    quote: "Over time, dredging near Freeman Beach, encroaching development, and the devastation of Hurricane Hazel led to their decline."
+  - says: "Today the north end of the island is Freeman Park, where people drive straight onto the sand."
+    source: 2
+    quote: "For a more spacious and adventurous experience, try Freeman Park , where you can drive directly onto the beach and set up camp for the day."
+sources:
+  - title: "Discover the Rich Heritage of the Gullah Geechee in Wilmington & Coastal North Carolina"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/discover-the-rich-heritage-of-the-gullah-geechee-in-wilmington-coastal-north-carolina/
+    retrievedAt: "2026-11-05"
+    rights: fair-use-facts
+  - title: "Carolina Beach Day Guide"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/guide-to-an-ultimate-beach-day-in-carolina-beach-north-carolina/
+    retrievedAt: "2026-11-05"
+    rights: fair-use-facts

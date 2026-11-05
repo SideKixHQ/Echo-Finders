@@ -1,0 +1,62 @@
+# Batch 1 for the MVP (docs/12-cities.md), written 2026-11-05.
+# Position: Wikidata Q7443093 (Second Battle of Fort Fisher), which places the battle at the land face (medium confidence).
+id: fort-fisher-the-same-sand-twice
+title: "The Same Sand Twice"
+summary: "The 27th U.S. Colored Troops fought here in 1865. In 1941 the 54th Coast Artillery trained on the same ground."
+place: "Fort Fisher, the land face, Kure Beach, North Carolina"
+at: { lat: 33.9715, lng: -77.918 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 46
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [fort-fisher, kure-beach, civil-war, world-war-ii, military, african-american-history]
+teaser: "Black soldiers came to these mounds in 1865, and again in 1941."
+script: |
+  Stand on the mounds and think about who has stood here before you.
+
+  On the fifteenth of January, 1865, more than three thousand three hundred Union infantry
+  assaulted this land face. Among them were the twenty-seventh United States Colored Troops.
+
+  Black soldiers came back to the same sand in 1941. The fifty-fourth Coast Artillery was the
+  army's only Black anti-aircraft unit with the big one-five-five millimeter guns, and it
+  brought twenty-four of them here for two months of training.
+
+  The first time, they came to take this fort. The second time, they came to train on it.
+
+  The mounds were the same mounds.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "On the fifteenth of January, 1865, more than three thousand three hundred Union infantry assaulted this land face."
+    source: 1
+    quote: "On the fifteenth, more than 3,300 Union infantry, including the 27th U.S. Colored Troops, assaulted the land face."
+  - says: "Among them were the twenty-seventh United States Colored Troops."
+    source: 1
+    quote: "On the fifteenth, more than 3,300 Union infantry, including the 27th U.S. Colored Troops, assaulted the land face."
+  - says: "Black soldiers came back to the same sand in 1941."
+    source: 2
+    quote: "With the arrival of the 54th Coast Artillery in 1941, black soldiers were once again in the area for military service — along the very sand mounds and beaches that once marked the Confederate stronghold."
+  - says: "The fifty-fourth Coast Artillery was the army's only Black anti-aircraft unit with the big one-five-five millimeter guns, and it brought twenty-four of them here for two months of training."
+    source: 2
+    quote: "The 54th — the army's only black 155-millimeter anti-aircraft artillery unit — brought 24 \"one-five-fives\" to Fort Fisher for their two-month training session."
+  - says: "The first time, they came to take this fort."
+    source: 1
+    quote: "On the fifteenth, more than 3,300 Union infantry, including the 27th U.S. Colored Troops, assaulted the land face. After several hours of fierce hand-to-hand combat, Federal troops captured the fort that night."
+  - says: "The second time, they came to train on it."
+    source: 2
+    quote: "The 54th — the army's only black 155-millimeter anti-aircraft artillery unit — brought 24 \"one-five-fives\" to Fort Fisher for their two-month training session."
+sources:
+  - title: "History"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history
+    retrievedAt: "2026-11-05"
+    rights: fair-use-facts
+  - title: "WWII at Fort Fisher"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history/wwii-fort-fisher
+    retrievedAt: "2026-11-05"
+    rights: fair-use-facts

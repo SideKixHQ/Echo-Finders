@@ -1,0 +1,55 @@
+# Batch 1 for the MVP (docs/12-cities.md), written 2026-11-05.
+# Position: Wikidata Q5452517 (First Battle of Fort Fisher), at the fort; the wartime post spread around it (medium confidence).
+id: fort-fisher-soldiers-who-had-never-seen-the-sea
+title: "Soldiers Who Had Never Seen the Sea"
+summary: "Wartime trainees at Fort Fisher came from inland, had never seen a beach, and got swimming lessons and a visit from Joe Louis."
+place: "Fort Fisher, Kure Beach, North Carolina"
+at: { lat: 33.9715, lng: -77.918 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 53
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [fort-fisher, kure-beach, world-war-ii, military]
+teaser: "The army had to teach its gunners how to live on a beach."
+script: |
+  Look at the water and imagine you have never seen it before.
+
+  Many of the men who trained here in the war came from the interior of the country, and had
+  never seen a beach. Federal Point was a shock. There was sand in everything, and mosquitoes.
+  One soldier called it a forlorn spit of sand and scrub growth, pinched between the Atlantic
+  Ocean and the Cape Fear River.
+
+  So the post taught them the beach. Swimming lessons. Advice on how to avoid sunburn. Beach
+  safety. More than a few refused to eat the fried clams and oysters.
+
+  For a show, they boxed. In January 1944, the boxing champion Joe Louis came to visit.
+
+  They had come to learn to shoot down aircraft. Before that, they had to learn the ocean.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Many of the men who trained here in the war came from the interior of the country, and had never seen a beach."
+    source: 1
+    quote: "Many of the post's trainees were from interior regions of the United States, and had never before seen a beach — let alone tried to live near one."
+  - says: "Federal Point was a shock."
+    source: 1
+    quote: "The harsh conditions on Federal Point had not changed in the long years since the Civil War, and trainees and other personnel were forced to coexist with the ubiquitous sand and mosquitoes"
+  - says: "One soldier called it a forlorn spit of sand and scrub growth, pinched between the Atlantic Ocean and the Cape Fear River."
+    source: 1
+    quote: "It was \"a forlorn spit of sand and scrub growth pinched between the Atlantic Ocean and the Cape Fear River,\" asserted a member of the 558th AAA Battalion"
+  - says: "More than a few refused to eat the fried clams and oysters."
+    source: 1
+    quote: "The adjustment was difficult, and more than a few soldiers balked at the notion of dining on fried clams and oysters."
+  - says: "In January 1944, the boxing champion Joe Louis came to visit."
+    source: 1
+    quote: "The fervor reached its peak in January 1944, when boxing champ Joe Louis arrived for a visit."
+sources:
+  - title: "WWII at Fort Fisher"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history/wwii-fort-fisher
+    retrievedAt: "2026-11-05"
+    rights: fair-use-facts
