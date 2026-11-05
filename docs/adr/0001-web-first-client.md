@@ -1,6 +1,6 @@
 # ADR-0001 — The passenger client is a web app, not Flutter or React Native
 
-**Status:** accepted · **Date:** 2026-09-21
+**Status:** accepted for the airline client; amended by ADR-0022 for the consumer client · **Date:** 2026-09-21
 
 ## Context
 The original spec proposed Flutter or React Native. That is the right instinct for a
@@ -17,6 +17,12 @@ consumer travel app and the wrong one for inflight entertainment.
    almost everyone.
 
 ## Decision
+> **Amended 2026-11-05 (ADR-0022).** This still holds for the airline client, which is
+> the client it was written for: a seatback can only run web. The *consumer* client is
+> now a native iOS app built with React Native, because a web app cannot wake itself
+> when you walk into a geofence with the phone in your pocket. Both are built from the
+> same engine.
+
 The passenger client is a **web PWA** built with Next.js + MapLibre GL, designed to be
 served either from our CDN (pre-flight) or from an onboard server (in-flight), and
 installable to a home screen for frequent flyers.

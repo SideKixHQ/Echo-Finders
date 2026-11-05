@@ -67,7 +67,7 @@ every claim traceable to a cited source.
 
 | Not yet | Why |
 |---|---|
-| Native iOS/Android apps | ADR-0001. A captive-portal web app is how passengers actually reach inflight software. |
+| Native Android app | ADR-0001 and ADR-0022. iOS is being built; Android comes free from the same React Native source when it earns its place, and is not promised. |
 | A headless CMS | ADR-0005. Git review gates are stricter than any CMS workflow and cost nothing. |
 | Accounts / login | Anonymous listening is the MVP. Save-for-later works via an emailed link. |
 | Live ADS-B integration | ADR-0002. The aircraft already knows where it is; and when it won't tell us, the flight plan does. |
