@@ -32,7 +32,6 @@ export const LIBRARY: readonly Echo[] = [
     "script": "In 1991 the federal government began digging foundations for an office tower at Broadway\nand Duane, and about seven metres down the crews found bone.\n\nWhat lay beneath the block was a cemetery. From the late sixteen-hundreds into the\nseventeen-nineties, free and enslaved Africans in this city had buried their dead in a\npatch of ground outside the settlement's boundary, roughly six and a half acres of it.\nLater New York built over the site and forgot. Estimates put the number of burials around\nfifteen thousand.\n\nFour hundred and nineteen men, women and children were recovered from the part that was\nexcavated. Their descendants and this city's Black community fought to stop the\nconstruction, and won. The remains were studied, then reinterred here in 2003.\n\nIt is the earliest and largest African burial ground yet found in the United States, and\nit existed partly because of a rule: from 1697, Africans were barred from the city's main\nburial ground. So they made their own, out past the edge of town.\n\nYou are standing at the edge of town.\n",
     "teaser": "Twenty-four feet below the pavement.",
     "detail": "The memorial occupies a fraction of the original site; most of the burial ground remains\nunder the surrounding streets and buildings. It was designated a National Monument in\n2006.\n",
-    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "Duane Street",
@@ -52,7 +51,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.38,
     "renders": [
       {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/african-burial-ground",
         "durationS": 110
       }
@@ -1047,6 +1046,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look up at Faneuil Hall, at the little tower on the end nearest the harbour, and then at\nthe very tip of it. That gold shape catching the light is not an arrow, and it is not a\nrooster.\n\nIt is a grasshopper.\n\nIt is about four feet long, hammered out of copper and covered in gold, and it has been up\nthere since seventeen forty two. A craftsman named Shem Drowne made it, probably copying\nthe grasshopper on the Royal Exchange in London.\n\nIt has been knocked off by an earthquake. It has come down in a fire. In the nineteen\nseventies it was stolen, and after a week of searching it turned up hidden inside the\ntower it fell from.\n\nAnd there is a story about it that nobody has ever proved.\n\nThe story goes that during the War of Eighteen Twelve, with Boston nervous about British\nspies, a stranger could be stopped and asked one question. What is on top of Faneuil Hall?\n\nAny Bostonian would know. A spy would have to guess.\n\nThe National Park Service tells that one as a legend, and a legend is what it is.\n\nBut stand here for a minute and watch the people walking past. Count how many of them look\nup.\n\nThen decide whether the question would still work.\n",
     "teaser": "Look at the very top of Faneuil Hall. That is not a rooster.",
     "certaintyNote": "The weathervane, its maker and its history are documented by the National Park Service. The spy test is a legend the Park Service itself labels as one; the script says so out loud.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "Faneuil",
@@ -1068,7 +1068,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/boston-the-spy-question",
         "durationS": 88
       }
@@ -1099,6 +1099,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look at the slate headstones on this hill. Some of them, people will tell you, are pitted\nby British musket balls.\n\nThe story goes that redcoats used them for target practice while the army held Boston.\n\nOne stone gets named more than any other. It belongs to a merchant, Captain Daniel Malcom,\nwho died in seventeen sixty-nine.\n\nListen to what was carved on it. A true son of Liberty. A friend to the public. An enemy to\noppression. And one of the foremost in opposing the Revenue Acts on America.\n\nMalcom meant it. One night in seventeen sixty-eight, with friends carrying clubs, he\nbrought sixty casks of wine ashore from a ship down the harbour, without paying the King's\nduty.\n\nSo when the soldiers came, the story says, his stone was the one they chose.\n\nIs it true? Nobody has proved it. A history of Boston's burial grounds from eighteen\nninety-two put it carefully. Several stones here are said to bear the marks, and Malcom's\nwould seem the most likely. The park service today says only that some historians suggest\nit.\n\nBut nobody needed the soldiers to fire.\n\nThe stone had already said exactly what it thought of them.\n",
     "teaser": "Some of these slate stones, people will tell you, carry British musket marks.",
     "certaintyNote": "A long-told tradition, not an established fact. The National Park Service says only that some historians suggest British soldiers used headstones here for target practice; an 1892 history says the stones are \"said to bear the marks\". The script says out loud that it is unproven. Malcom's epitaph and his wine-smuggling are documented in the 1921 sketch.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "Malcom",
@@ -1121,7 +1122,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/boston-the-stone-they-shot-at",
         "durationS": 80
       }
@@ -3582,6 +3583,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look at the old brick walls of the Octagon from the Eighteenth Street side.\n\nIn April eighteen ninety-seven, a Washington newspaper said this had long been the most\nnoted of the haunted houses in the city.\n\nThis is a legend. Nothing in it has ever been proven. It is only what people said.\n\nAnd people said a great deal. Doors and windows that opened when they were shut, and shut\nwhen they were opened. A woman's shriek. The clank of sabres. Heavy footsteps. Groans and\ncries from the passage by the back stairs. And an officer who died in an upper room,\nwhose blood, the story went, could still be heard dripping from the mantelpiece.\n\nAt the time, the house stood neglected. A caretaker lived in it, rent free and unpaid,\nwith his son. They slept in the room where Dolley Madison had once held her receptions.\n\nThe reporter asked him about the ghosts. He laughed.\n\nIf there are any ghosts here, he said, I have never heard or seen them. The only ghosts\nthat haunt this house exist in people's imagination.\n\nEveryone else told stories about this house. He slept in it.\n",
     "teaser": "Look at the old brick walls of the Octagon from the Eighteenth Street side.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven. The only source is an 1897 newspaper account of what people claimed; no supernatural claim is established, and the caretaker's denial is quoted from the same article.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "washington",
       "dc-core",
@@ -3591,7 +3593,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.19,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/dc-the-caretaker-heard-nothing",
         "durationS": 77
       }
@@ -4203,6 +4205,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look through the doors of the Willard, into the lobby.\n\nThere is a story about that room. The story goes that President Ulysses Grant coined a\nword here. Lobbyist. As in, someone who waits in a hotel lobby to ask a powerful man for\nsomething. Even the Library of Congress has passed it on, with the word reportedly.\n\nIt is a good story. It is a legend, and the word is older.\n\nIn July eighteen forty-nine, a newspaper in Portsmouth, New Hampshire, complained about a\nscore of indefatigable lobbyists who kept up an untiring attack on lawmakers. Three years\nlater, a Washington paper printed a speech warning that English lobbyists should be\nspurned from your halls.\n\nIn the summer of eighteen forty-nine, Ulysses Grant was a young army officer who had been\nmarried for a year.\n\nEven the lobby is younger than the story. The Willard of Grant's day was replaced at the\nturn of the century, by the building in front of you.\n\nGrant did not invent the word. It was already here, waiting for him, like everyone else in\nthe lobby.\n",
     "teaser": "Look through the doors of the Willard, into the lobby.",
     "certaintyNote": "A popular legend, repeated with \"reportedly\" in a 2006 Library of Congress press release. The script says out loud that it is a legend, and newspapers from 1849 and 1852 show the word in use long before Grant's presidency.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "washington",
       "dc-core",
@@ -4212,7 +4215,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.22,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/dc-the-word-was-waiting",
         "durationS": 73
       }
@@ -5195,6 +5198,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look at the small, low cottage on the corner of Bourbon and Saint Philip. Its walls are brick packed between wooden posts, the way houses here were built long ago, and in places the plaster over them has worn thin.\n\nIt is called Lafitte's Blacksmith Shop. The story goes that the smuggler Jean Lafitte and his brother Pierre ran a forge on this corner, as cover for their real business.\n\nIt is an old story. George Washington Cable printed it as fact in eighteen eighty-four. By the nineteen-thirties there was a bronze plate on the building that read Lafitte's Rendezvous, site blacksmith shop, eighteen ten.\n\nBut when federal surveyors studied the cottage in the nineteen-thirties, they found no record of who built it, or when. And the National Park Service, which tells the Lafittes' story today, says plainly that no evidence confirms the legend.\n\nWhat the records do show is across the street.\n\nOn the opposite corner stood a house bought in eighteen sixteen by Marie Louise Villard, a free woman of color and Pierre Lafitte's partner of many years. They had seven children together. The house was in her name, so the government could not seize it for the brothers' crimes. Pierre was in this neighborhood often. That, the Park Service suggests, may be how the legend found this corner.\n\nSo the Lafittes probably never shod a horse here.\n\nBut one of them had a family just over the road.\n",
     "teaser": "Look at the little cottage on the corner of Bourbon and Saint Philip.",
     "certaintyNote": "The blacksmith shop is a tradition in print since at least 1884; the National Park Service says no evidence confirms it. Marie Louise Villard's house across the street is documented. The script says which is which.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "Lafitte",
@@ -5216,7 +5220,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/new-orleans-the-blacksmith-shop-with-no-blacksmiths",
         "durationS": 96
       }
@@ -5298,6 +5302,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look up at the convent roof, and the small windows set into it.\n\nThe nuns who lived here belong to one of the oldest stories in New Orleans. In the early years of the colony, France sent young women across the ocean to marry its colonists. Each one came with a small chest of clothes. The French called them the filles à la cassette. In English, the casket girls.\n\nThat much the old writers agree on. Almost nothing else.\n\nGeorge Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king. He says those sixty were the first of many shiploads. Grace King, eleven years later, has sixty girls too. She says they were the last.\n\nA city guide from nineteen-oh-four tells it differently again. Twenty girls, years earlier, each chosen by the Bishop of Quebec, each given a little chest as proof of her good character.\n\nCable admitted the record was slender. The Creoles, he wrote, were never careful about checking their traditions.\n\nSo the story kept growing. In recent years some tellers have added something none of the old writers ever mentioned. That the little chests carried vampires into the city, and that they are still up there, under this roof.\n\nThere is no record of that. None. It is a legend built on top of a legend.\n\nThe women were real. Their chests were real. And as far as anyone ever wrote down at the time, what was in them was clothes.\n",
     "teaser": "Look up at the convent roof, and the small windows set into it.",
     "certaintyNote": "The women and their chests are a colonial tradition the old accounts disagree about, and Cable himself called the record slender. The modern vampire tale has no source at all. The script says both out loud.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "filles à la cassette",
@@ -5319,7 +5324,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/new-orleans-the-casket-girls",
         "durationS": 107
       }
@@ -5401,6 +5406,7 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "Her obituary never used the word.",
     "detail": "An 1898 New York Sun piece, reprinted in Savannah, follows two visitors led to the tomb\nby a local woman who tells them that anything you get in a cemetery will bring you luck.\n",
     "certaintyNote": "Marie Laveau's death, burial in this cemetery and nursing work are from her 1881 obituary. The voodoo-queen story, the serpent in the box and the idea that marking her tomb brings luck or a wish are folklore; the script says so out loud. No supernatural claim is made.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "Marie Laveau",
@@ -5418,7 +5424,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/new-orleans-the-crosses-on-the-tomb",
         "durationS": 96
       }
@@ -5511,6 +5517,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look across at the three-storey house on the corner of Chartres and Saint Louis, with iron balconies on both street fronts and an old tile roof.\n\nIt is called the Napoleon House. The story is that it was meant for Napoleon himself.\n\nIn his last years, Napoleon was held prisoner on the island of Saint Helena. In New Orleans there were Frenchmen who still adored him. One of them was Nicholas Girod, a former mayor of the city, who lived in this house.\n\nThe story goes that Girod and his friends paid for a fast ship called the Seraphine, signed on a crew of Baratarian privateers, and planned to sail to the island, take the emperor off by night, and bring him here.\n\nThen word came that Napoleon had died, in May eighteen twenty-one. The ship never sailed.\n\nIs it true? A New Orleans writer in eighteen ninety-five said there could be no doubt the expedition was real. A federal survey in nineteen fifty-five called it a popular legend.\n\nIt is not even clear which house it is. A city guide of nineteen-oh-four gave the name Napoleon House to a different mansion altogether, near Canal Street, and expected it to be torn down that year. And the survey of nineteen fifty-five found two houses on this short stretch of Chartres Street, both going by the name.\n\nThe emperor never came to New Orleans.\n\nBut the city had more than one house ready for him.\n",
     "teaser": "Look across at the old house on the corner, with the iron balconies.",
     "certaintyNote": "The rescue plot is told as certain by some nineteenth-century writers and called a popular legend by the 1955 federal survey; even the house it attaches to has moved. The script says so.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "Girod",
@@ -5540,7 +5547,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/new-orleans-the-emperor-never-came",
         "durationS": 98
       }
@@ -8109,6 +8116,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "This low old building calls itself the Pirates' House. Before you go in, it is worth knowing which parts of that are history, and which are a very good story.\n\nStart with the book. In Treasure Island, published in eighteen eighty three, Robert Louis Stevenson gives his pirate captain, Flint, a death but no grave. Billy Bones says Flint handed him the map at Savannah, when he lay dying. Long John Silver puts it more bluntly. Flint died of rum at Savannah.\n\nThat is all Stevenson says. He never names a house. And Flint never existed.\n\nThe house came later. In February nineteen fifty one, the food editor of a Sunday magazine in the Washington Evening Star wrote about the newly restored tavern here, in the old Trustees' Garden. Tradition has it, the article said, that the man Stevenson based Flint on died in an upstairs bedroom of the old inn. And Flint's ghost is said to haunt the area on moonless nights.\n\nThe house tells its own story too. It says it opened in seventeen fifty three as an inn for seafarers, and soon became a meeting place for pirates and sailors back from ports around the world.\n\nNone of that is proven. Not the inn's pirates, not the real man behind Flint, and certainly not the ghost.\n\nBut Stevenson did send Flint to Savannah to die. Savannah has been happy to find him a room.\n",
     "teaser": "Stevenson gave Captain Flint a death in Savannah, but no address.",
     "certaintyNote": "A published tradition. Captain Flint is a fictional character; Treasure Island places his death at Savannah but names no house. The upstairs-room tradition and the ghost are reported in 1951 as \"tradition\" and \"said to\"; the 1753 inn claim is the house's own account. The script says plainly that none of it is proven.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "Stevenson",
@@ -8125,7 +8133,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.27,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/savannah-pirates-house",
         "durationS": 95
       }
@@ -9198,7 +9206,6 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This is the oldest public building in Manhattan still doing the thing it was built to do.\n\nIt went up in 1766, when this was the northern edge of town and the front of the chapel\nfaced the river, because that was the direction people arrived from.\n\nTen years later a fire took a quarter of the city and stopped at its churchyard.\n\nGeorge Washington came here on the day he was inaugurated, and kept coming for the two\nyears New York was the capital. His pew is still inside.\n\nOn the eleventh of September 2001, the towers came down about a hundred metres from where\nyou are standing. Every window in this chapel survived. For eight months afterwards it\nwas where the recovery workers slept and ate and had their feet seen to.\n\nA sycamore tree in the churchyard took the weight of the debris that would otherwise have\nhit the building. It did not survive. The chapel did.\n",
     "teaser": "The oldest building in Manhattan still doing its job.",
-    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "sycamore",
@@ -9228,7 +9235,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/st-pauls-still-standing",
         "durationS": 100
       }
@@ -9305,6 +9312,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the balcony.\n\nOn April 4, 1968, Martin Luther King Jr. stood there.\n\nHe had come to Memphis to support striking Black sanitation workers seeking better pay\nand safer working conditions.\n\nThe Lorraine was a place to stay while that work continued.\n\nThen King was shot.\n\nHe died that evening.\n\nPause before looking away.\n\nThis site can become so familiar through photographs that the balcony starts to feel\nlike an image rather than a place.\n\nBut it was a place.\n\nThere was a room behind him. A city around him. A campaign still underway.\n\nThe workers’ demands had not disappeared. Neither had the need for the work he was\ndoing.\n\nToday, the museum preserves this location within the larger history of civil rights.\n\nLook at the balcony once more.\n\nRemember the reason he was in Memphis, as well as what happened here.\n",
     "teaser": "Look up at the balcony.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "memphis",
       "civil-rights"
@@ -9319,7 +9327,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-balcony",
         "durationS": 97
       }
@@ -9350,6 +9358,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look up at the lighthouse.\n\nBefore the tower was completed, this was a construction site where children sometimes\nplayed.\n\nIn July 1873, children rode a cart used to transport building materials.\n\nThe cart overturned into the water.\n\nThree girls drowned, including two daughters of construction superintendent Hezekiah\nPittee. A younger sister survived.\n\nThe museum documents that tragedy.\n\nThe ghost stories came afterward.\n\nIts published accounts describe reports of unexplained footsteps and a little girl\nappearing in the keeper’s house.\n\nSome people connect those stories to the children who died.\n\nThat connection is belief, not an established fact.\n\nPause beneath the tower.\n\nA lighthouse is built to guide people away from danger.\n\nHere, a childhood accident became part of the place’s remembered history, then part of\nits folklore.\n\nThe deaths were real.\n\nThe stories of children still moving through the property remain unverified.\n\nBoth deserve to be told with care.\n",
     "teaser": "Look up at the lighthouse.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "st-augustine",
       "ghosts"
@@ -9357,7 +9366,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-children-at-the-lighthouse",
         "durationS": 103
       }
@@ -9387,6 +9396,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look from Ford’s Theatre to the house across the street.\n\nThat short distance became the final journey of Abraham Lincoln’s life.\n\nOn April 14, 1865, Lincoln attended a performance of Our American Cousin.\n\nActor John Wilkes Booth knew the theatre. That evening, he entered the presidential box\nand shot the president.\n\nBooth escaped from the theatre. Lincoln could not.\n\nPeople carried the wounded president across Tenth Street into the Petersen family’s\nboarding house.\n\nHe died there the following morning, April 15.\n\nLook at the crossing again.\n\nToday, it takes only a few seconds to walk from one side to the other.\n\nOn that night, people crossed it carrying the president of the United States, trying to\nfind somewhere to care for him.\n\nThe theatre marks the attack.\n\nThe house marks his death.\n\nBetween them is an ordinary city street that briefly became the center of a national\ncatastrophe.\n",
     "teaser": "Look from Ford’s Theatre to the house across the street.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "washington",
       "lincoln"
@@ -9401,7 +9411,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.47,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-distance-across-the-street",
         "durationS": 96
       }
@@ -9431,6 +9441,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the empty frames.\n\nIn most museums, an empty frame means something is being moved or restored.\n\nHere, it means something was stolen.\n\nEarly on March 18, 1990, two men dressed as police officers arrived at the Isabella\nStewart Gardner Museum. They claimed they were responding to a disturbance.\n\nA guard let them inside.\n\nThe men restrained the guards and stole thirteen works of art.\n\nAmong the missing pieces were paintings by Rembrandt and Vermeer. The thieves left\nbehind spaces that visitors would continue to see for decades.\n\nPause beside one of those spaces.\n\nA museum normally asks you to examine what is present: the brushwork, the light, the\nexpression on a face.\n\nThis room also asks you to notice what is missing.\n\nThe theft remains unresolved, and the museum continues seeking the return of its art.\n\nThose frames are waiting.\n\nThe most striking thing in this room may be something nobody can show you.\n",
     "teaser": "Look at the empty frames.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "boston",
       "art-theft"
@@ -9445,7 +9456,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-empty-frames",
         "durationS": 100
       }
@@ -9476,6 +9487,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look at the upstairs windows.\n\nOne of the Whaley House’s oldest ghost stories begins with footsteps.\n\nBefore the house was built, James Robinson, known as Yankee Jim, was executed on this\nproperty in 1852.\n\nThe Whaley family built their home here several years later.\n\nAccording to the house’s published account, family members reported heavy footsteps\nupstairs and on the staircase.\n\nThomas Whaley believed the sounds belonged to Robinson.\n\nThat is the legend’s explanation. It is not proof of a haunting.\n\nBut notice the strange overlap.\n\nA family built a home on land where a public execution had taken place. The story later\nplaced the dead man inside their everyday surroundings.\n\nNo distant cemetery. No ruined castle.\n\nJust someone walking above the rooms where people lived.\n\nLook at the windows again.\n\nThe unsettling part of this legend is how little it needs: a quiet room downstairs, and\nfootsteps where nobody should be.\n",
     "teaser": "Look at the upstairs windows.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "san-diego",
       "ghosts"
@@ -9483,7 +9495,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-footsteps-above-the-gallows",
         "durationS": 98
       }
@@ -9513,6 +9525,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "The garage is gone.\n\nOn February 14, 1929, it stood at this address.\n\nInside, seven men associated with George “Bugs” Moran’s bootlegging organization were\nlined up against a wall and shot.\n\nThe killings became known as the St. Valentine’s Day Massacre.\n\nThe crime helped define the public image of Prohibition-era Chicago: rival\norganizations, illegal alcohol, and violence reaching far beyond a private dispute.\n\nAl Capone became a leading suspect in public accounts.\n\nBut he was never convicted of this massacre, and the case remains unsolved.\n\nLook at the space where the building stood.\n\nYou cannot inspect its rooms here. Even the original bullet-marked wall was removed;\nportions are now displayed at the Mob Museum in Las Vegas.\n\nThe address survives in Chicago.\n\nThe evidence traveled.\n\nThe name became famous.\n\nBehind that name were seven deaths, and a crime whose reputation became clearer than its\ncomplete solution.\n",
     "teaser": "The garage is gone.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "chicago",
       "prohibition"
@@ -9527,7 +9540,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-garage-that-vanished",
         "durationS": 96
       }
@@ -9558,6 +9571,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "This story begins with a visitor’s claim.\n\nIn the 1990s, Japanese psychic Aiko Gibo visited Mary King’s Close.\n\nAccording to the attraction’s account, she said she sensed a young girl in a room off\nAllan’s Close.\n\nThe girl, she claimed, was called Annie and was distressed because she had lost her\ndoll.\n\nGibo brought a replacement.\n\nVisitors later began leaving toys of their own.\n\nHere is the important distinction: the attraction says its researchers have not found a\nhistorical record identifying a child named Annie as the girl in this story.\n\nThe ghost’s identity is unverified.\n\nThe visitors’ response is real.\n\nPeople heard about a lonely child and wanted to offer comfort.\n\nLook around the room.\n\nSome ghost stories are built around a threat approaching from the dark.\n\nThis one is built around something missing.\n\nA child without her family.\n\nA doll that could be replaced.\n\nA small act of kindness offered to someone nobody could prove was there.\n",
     "teaser": "This story begins with a visitor’s claim.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "edinburgh",
       "ghosts"
@@ -9565,7 +9579,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-girl-who-wanted-her-doll",
         "durationS": 108
       }
@@ -9596,6 +9610,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look at the windows of the main house.\n\nA longtime Bellamy volunteer described a story about a woman in grey, supposedly seen\nwandering its rooms.\n\nThe museum includes that account in its discussion of hauntings.\n\nIt also asks a revealing question: why do people so strongly want old houses to be\nhaunted?\n\nThe woman has not been established as a supernatural presence. The museum does not\nidentify her as a proven spirit of a particular resident.\n\nInstead, the story became attached to the house.\n\nLook at the windows again.\n\nFrom outside, you can see only part of each room. Reflections and shadows change what\nappears behind the glass.\n\nAn old house contains lives you cannot meet and rooms you cannot fully read from the\nstreet.\n\nThe lady in grey gives that uncertainty a human shape.\n\nBut the building’s documented history deserves attention too.\n\nThe legend is one story people tell about Bellamy.\n\nIt is not the whole story of the people who lived and worked here.\n",
     "teaser": "Look at the windows of the main house.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "wilmington",
       "ghosts"
@@ -9603,7 +9618,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-lady-in-grey",
         "durationS": 105
       }
@@ -9633,6 +9648,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand outside the theatre and look at the entrance.\n\nOn July 22, 1934, John Dillinger walked through it to watch Manhattan Melodrama.\n\nHe was one of the country’s most wanted fugitives.\n\nFederal agents knew he might come here. A woman accompanying him had provided\ninformation about his plans.\n\nThey waited outside.\n\nAccording to the FBI’s account, Dillinger emerged at about ten-thirty that night. Agent\nMelvin Purvis lit a cigar to signal the others.\n\nThe FBI says Dillinger drew a pistol and ran toward a nearby alley.\n\nAgents fired. Dillinger was fatally wounded.\n\nStay on the sidewalk. There is no need to enter the alley.\n\nLook back toward the theatre doors.\n\nMovie audiences leave carrying a story that has just ended.\n\nThat night, Dillinger stepped out of a fictional gangster story and into the final\nmoments of his own.\n\nThe theatre remains. The nationwide pursuit ended just beyond it.\n",
     "teaser": "Stand outside the theatre and look at the entrance.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "chicago",
       "dillinger"
@@ -9647,7 +9663,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-last-movie",
         "durationS": 96
       }
@@ -9678,6 +9694,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look out toward the ridges.\n\nFor more than a century, people have reported unusual lights around Brown Mountain.\n\nThe descriptions vary: bright points that appear, seem to move, then disappear.\n\nThe lights became part of Appalachian folklore, often given ghostly explanations.\n\nThe National Park Service notes that studies have linked reports to ordinary sources,\nincluding vehicle headlights.\n\nSo a distant light is not evidence of a spirit.\n\nBut distance makes certainty difficult.\n\nYou may not see the road beneath a moving light. You may not recognize the angle. Trees\ncan hide a source and reveal it again.\n\nThat uncertainty helped the legend endure.\n\nWatch from the designated overlook. There is no need to chase anything into the woods.\n\nIf you see a light, notice its direction and movement before deciding what it is.\n\nThe landscape is real.\n\nThe reports are documented.\n\nWhat people make of them is where the ghost story begins.\n",
     "teaser": "Look out toward the ridges.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "blue-ridge-parkway",
       "ghosts"
@@ -9685,7 +9702,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-lights-beyond-the-ridge",
         "durationS": 100
       }
@@ -9715,6 +9732,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look into the cells.\n\nIn June 1962, the men inside needed the guards to believe they were sleeping.\n\nSo they left faces on their pillows.\n\nFrank Morris and brothers John and Clarence Anglin made dummy heads using materials that\nincluded paint and human hair.\n\nBehind the cells, they prepared an escape route. They also assembled makeshift flotation\nequipment from raincoats.\n\nOn the night of June 11, the three men disappeared from their cells.\n\nBy morning, the deception was discovered.\n\nThe faces were still in bed.\n\nThe men were gone.\n\nTheir ultimate fate has never been conclusively established. The escape does not prove\nthey survived the bay.\n\nWhen you later look toward the mainland, notice the water between here and there.\n\nThe men overcame the walls, the checks, and the locks.\n\nThe unanswered part begins beyond the island.\n\nThey left behind something that looked like sleep, and a mystery that never settled.\n",
     "teaser": "Look into the cells.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "san-francisco",
       "alcatraz"
@@ -9729,7 +9747,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-men-who-left-their-faces-behind",
         "durationS": 100
       }
@@ -9760,6 +9778,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Pause somewhere the hotel allows visitors to stand.\n\nListen.\n\nThe Stanley’s ghost folklore includes children laughing in supposedly deserted hallways\nand piano music coming from an empty ballroom.\n\nThose stories appear in Colorado’s official tourism account.\n\nThey are reported experiences, not proof that the dead are making music.\n\nThe hotel is also associated with Stephen King, whose stay helped inspire The Shining.\n\nBut the fictional hotel in that novel is not a documentary account of this building.\n\nKeep the two stories separate.\n\nNow consider the sound at the center of the legend.\n\nMusic normally means somebody is nearby: a player at a piano, a guest rehearsing, a\nrecording in another room.\n\nThe story becomes unsettling when that expected person is missing.\n\nYou hear the notes.\n\nYou look for the musician.\n\nThe room appears empty.\n\nAt the Stanley, that gap between a sound and its visible source has become part of the\nhotel’s identity.\n\nThe music is reported.\n\nThe musician remains a matter of belief.\n",
     "teaser": "Pause somewhere the hotel allows visitors to stand.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "estes-park",
       "ghosts"
@@ -9767,7 +9786,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-music-in-the-empty-room",
         "durationS": 112
       }
@@ -9797,6 +9816,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This block is often associated with the American Revolution.\n\nBut its history includes a much more recent act of violence.\n\nOn January 24, 1975, a bomb exploded in the building at 101 Broad Street, part of the\nFraunces Tavern complex.\n\nFour people were killed.\n\nThe organization known as FALN claimed responsibility.\n\nThat claim belongs to the historical record. It does not establish the identity of every\nperson involved in preparing or placing the bomb.\n\nLook at the buildings together.\n\nIt is easy to imagine a historic place as belonging to one period: colonial rooms, old\npaintings, a famous farewell.\n\nPeople continued using these buildings long after that period ended.\n\nThey came here to work, meet, and eat.\n\nThe bombing became another chapter in the life of this block.\n\nStanding here, you are beside a place associated with the founding of a country and with\npeople whose lives ended almost two centuries later.\n\nBoth histories belong to it.\n",
     "teaser": "This block is often associated with the American Revolution.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "new-york",
       "lower-manhattan"
@@ -9811,7 +9831,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-other-history-of-fraunces-tavern",
         "durationS": 101
       }
@@ -9842,6 +9862,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Stand still for a moment.\n\nLook along the corridor, then toward the cells.\n\nEastern State’s ghost reputation includes stories of shadowy movement and something\nappearing in an otherwise empty prison.\n\nThe historic site has discussed paranormal television investigations, including\ncontroversial footage filmed in Cellblock Twelve.\n\nControversial matters.\n\nA recording that people argue about is not proof of a ghost.\n\nNow listen to the space around you.\n\nA prison changes the meaning of ordinary sounds. A footstep may suggest an approaching\nguard. A door may suggest confinement. Silence may suggest someone listening.\n\nYou do not need to imagine a particular dead prisoner.\n\nThe real people confined here already give these walls a difficult history.\n\nThe haunting stories add another question: can a place seem occupied after the people\nwho lived inside it are gone?\n\nLook down the corridor again.\n\nYou may see nothing unusual.\n\nThe feeling of waiting for something is part of this story.\n",
     "teaser": "Stand still for a moment.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "philadelphia",
       "ghosts"
@@ -9849,7 +9870,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-prison-corridor",
         "durationS": 101
       }
@@ -9879,6 +9900,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look toward the station entrance.\n\nOn June 17, 1933, officers brought a handcuffed prisoner through Union Station.\n\nHis name was Frank Nash. They were taking him back to federal prison.\n\nOutside, a car waited.\n\nAs the officers gathered around it, armed men attacked.\n\nThe apparent purpose was to free Nash.\n\nInstead, Nash and four law enforcement officers were killed.\n\nA journey that should have continued toward prison ended here, outside a railway\nstation.\n\nThe killings became known as the Kansas City Massacre.\n\nThey helped drive changes in federal law enforcement, including broader authority for\nfederal agents.\n\nLook at the people arriving and leaving now.\n\nStations are places of movement. Someone steps off a train, crosses a lobby, finds a\nride, continues home.\n\nFor five people that morning, the next part of the journey never happened.\n\nThis entrance became the boundary between an ordinary transfer and a nationally\nconsequential crime.\n",
     "teaser": "Look toward the station entrance.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "kansas-city"
     ],
@@ -9892,7 +9914,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-prisoner-who-never-reached-the-prison",
         "durationS": 99
       }
@@ -9923,6 +9945,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "This corridor has a famous ghost story.\n\nAccording to the legend, Catherine Howard runs through it, crying out as she tries to\nreach Henry VIII and plead for mercy.\n\nCatherine was Henry’s fifth wife. She was executed in 1542.\n\nFor generations, people have connected her story with this gallery.\n\nBut the palace’s own historians point out a problem.\n\nHer original apartments no longer exist. Even if she had attempted the escape described\nin the legend, her route would not have passed through this corridor.\n\nSo you are standing in the setting of a ghost story, not a verified escape scene.\n\nLook along the gallery.\n\nThat correction does not erase Catherine’s death. It shows how a real tragedy can\nacquire a location, a sound, and a repeated action over time.\n\nThe legend gives her one endless attempt to reach the king.\n\nHistory does not confirm that she ever ran here.\n",
     "teaser": "This corridor has a famous ghost story.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "london",
       "ghosts"
@@ -9930,7 +9953,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-queen-in-the-wrong-corridor",
         "durationS": 93
       }
@@ -9961,6 +9984,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look across Tower Green toward the Chapel of St Peter ad Vincula.\n\nAnne Boleyn was executed within the Tower in 1536. She was buried in that chapel.\n\nThose are historical events.\n\nOne of the Tower’s enduring legends says she returns.\n\nIn the version published by Historic Royal Palaces, her ghost moves through the grounds,\nleading a silent procession toward the chapel.\n\nNobody has established that such a procession is supernatural.\n\nBut the story’s route is meaningful.\n\nIt connects the place where a queen’s life ended with the place where her body was\nburied.\n\nNo journey out of the fortress.\n\nOnly a return through it.\n\nPause and look between the green and the chapel.\n\nThe legend imagines movement where history imposed an ending.\n\nAnne’s death is documented. Her supposed return belongs to the stories people tell about\nthis place.\n\nStanding here, you can see how close those two settings are.\n",
     "teaser": "Look across Tower Green toward the Chapel of St Peter ad Vincula.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "london",
       "ghosts"
@@ -9968,7 +9992,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-queen-who-returns",
         "durationS": 99
       }
@@ -9999,6 +10023,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "You are aboard a ship where movement and unfamiliar sounds can have ordinary\nexplanations.\n\nThat makes the story of stateroom B340 especially difficult to separate from its\nsurroundings.\n\nThe Queen Mary’s operator publishes reports of nighttime knocks, bathroom lights\nswitching on, faucets running, and doors opening or closing unexpectedly.\n\nThe room has become part of the ship’s ghost folklore.\n\nThose reports are not independently established evidence of spirits.\n\nStill, imagine the situation they describe.\n\nYou are inside a small cabin. You hear a knock.\n\nYou open the door.\n\nNobody is there.\n\nYou close it and return to bed.\n\nThen you hear another sound.\n\nA ship is full of compartments you cannot see into, pipes behind walls, and passages\nbeyond doors.\n\nB340’s legend lives in that uncertainty.\n\nYou know you heard something.\n\nThe harder question is whether the explanation is somewhere nearby, hidden by the ship\nitself.\n",
     "teaser": "You are aboard a ship where movement and unfamiliar sounds can have ordinary explanations.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "long-beach",
       "ghosts"
@@ -10006,7 +10031,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-room-that-knocks-back",
         "durationS": 100
       }
@@ -10036,6 +10061,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Watch the curve of Elm Street.\n\nOn November 22, 1963, President John F. Kennedy’s motorcade passed through this plaza.\n\nPeople had gathered to see him.\n\nAt about twelve-thirty, Kennedy was shot while riding along Elm Street.\n\nHe was taken to Parkland Memorial Hospital, where he was pronounced dead.\n\nLook toward the former Texas School Book Depository.\n\nThe Warren Commission concluded that Lee Harvey Oswald fired from that building. Later\ninvestigations and decades of debate followed.\n\nThis short account does not settle every disputed question.\n\nBut the central event is documented: a president was fatally shot during a public\nmotorcade on the street beside you.\n\nNotice how compact the setting is.\n\nThe road. The windows. The sidewalks where witnesses stood.\n\nAn event that expanded into millions of pages of investigation began within this small\nstretch of city.\n\nYou can stand beside the route.\n\nYou cannot recover the certainty people had before the motorcade reached it.\n",
     "teaser": "Watch the curve of Elm Street.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "dallas",
       "kennedy"
@@ -10050,7 +10076,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-turn-onto-elm-street",
         "durationS": 101
       }
@@ -10190,7 +10216,6 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down the street. It runs river to river, and you can very nearly see one end from the\nother.\n\nThat is not an accident. It is the width of the island, and in 1653 the Dutch decided to\nfence it off.\n\nThe governor, Peter Stuyvesant, ordered a palisade built right across here. Nine feet\nhigh, made of packed earth and fifteen-foot planks, running from the Hudson to the East\nRiver. It was meant to stop an English invasion.\n\nThe people who built it were mostly enslaved Africans, owned by the Dutch West India\nCompany.\n\nThe invasion never came. The English took the colony anyway, eleven years later, by\nsailing in and asking. And in 1699 they pulled the wall down and used the wood for\nsomething else.\n\nIt stood for forty-six years. It has been gone for more than three hundred.\n\nThe street kept the name, which means this is a street named after a thing that is not\nthere, put up by people who were never free to walk away from it.\n",
     "teaser": "Look down the street. It runs river to river.",
-    "voice": "wC1005J19tvhoqqC2hkf",
     "pronunciations": [
       {
         "written": "Peter Stuyvesant",
@@ -10220,7 +10245,7 @@ export const LIBRARY: readonly Echo[] = [
     ],
     "renders": [
       {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/wall-street-the-wall",
         "durationS": 90
       }
@@ -11068,6 +11093,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "The Cotton Exchange has the right ingredients for a ghost story: connected old\nbuildings, changing levels, and passages where somebody can disappear from view.\n\nA published account of a Wilmington ghost tour tells of Fred, a tall, dark-haired\napparition associated with Paddy's Hollow. In that version, a manager encountered him in\na storage room. He seemed ready to offer help, then vanished.\n\nThe encounter is a reported legend, not a verified event. We cannot establish that the\nmanager saw a ghost, or identify an actual dead person behind the name Fred.\n\nWhat makes the story memorable is its almost ordinary beginning. A person appears in a\nworkplace and behaves like someone who belongs there. Only the ending breaks the\npattern. From the public entrance, imagine the moment between recognizing a stranger and\nrealizing there is nobody left to recognize.\n",
     "teaser": "He looked ready to help, then he was not there.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "wilmington",
       "downtown"
@@ -11075,7 +11101,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/wilmington-fred-in-the-storeroom",
         "durationS": 74
       }
@@ -11439,6 +11465,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "The elegant house above you was built in 1770 over remains of Wilmington's earlier jail.\nThat combination has drawn more than architectural curiosity.\n\nThe Ghost Guild records a paranormal investigation here in March 2018, including a\nbedroom recording session described as an attempt to capture electronic voice phenomena.\nSuch recordings are interpreted by enthusiasts as possible voices, but they do not\nestablish that spirits exist.\n\nThere is a documented investigation and an interpretation. Those are different things.\n\nFrom the sidewalk, consider how much expectation changes listening. A creak in a new\nbuilding may pass unnoticed. The same creak above old cells can become the beginning of\na story. The house's real history supplies the weight; the haunting remains an\nunanswered claim. You can enjoy that uncertainty without pretending it has been solved.\n",
     "teaser": "The elegant house above you was built in 1770 over remains of Wilmington's earlier jail.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "wilmington",
       "downtown"
@@ -11446,7 +11473,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/wilmington-listening-behind-the-jail-walls",
         "durationS": 71
       }
@@ -11477,6 +11504,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "This waterfront once belonged as much to sailors and taverns as to strolling visitors.\nOne of its surviving legends concerns a formidable woman known as Gallus Meg.\n\nLocal ghost-tour tradition associates her with the old Blue Post tavern and says her\npresence lingered after death. The historic tavern in this tale should not be confused\nwith another business that now uses the Blue Post name.\n\nMeg's reputation belongs to folklore. The reported haunting is not proof that a spirit\noccupies a building, and the more lurid versions should not be mistaken for a documented\ncriminal biography.\n\nStand by the public street and let the river supply the atmosphere. A working port\nbrings strangers together, then sends them away. Meg's story reverses that pattern: one\nwaterfront character, storytellers suggest, never quite left.\n",
     "teaser": "This waterfront once belonged as much to sailors and taverns as to strolling visitors.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "wilmington",
       "downtown"
@@ -11484,7 +11512,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/wilmington-meg-at-the-old-waterfront",
         "durationS": 70
       }
@@ -12479,6 +12507,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look toward the churchyard. Wilmington storytellers attach a particularly unsettling\nlegend to Samuel Jocelyn Junior: a dead man supposedly appeared to a friend and asked to\nbe taken out of his grave.\n\nIn the tale, the friend initially dismissed the encounter. Further appearances finally\npersuaded him to investigate. The ending suggested that Jocelyn had been buried alive.\n\nThat is the ghost story, not a verified account of a premature burial. Its power comes\nfrom an ordinary human fear: needing help when nobody believes you can still ask for it.\n\nFrom this public sidewalk, the churchyard gives the tale its setting. You do not need to\nenter, search for a particular grave, or treat a sound as evidence. Listen to the city\ncontinuing around you. The legend asks you to imagine one voice trying to reach it.\n",
     "teaser": "Look toward the churchyard.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "wilmington",
       "downtown"
@@ -12486,7 +12515,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/wilmington-the-friend-who-came-back",
         "durationS": 73
       }
@@ -12590,6 +12619,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This marker identifies a place of preparation. On November 10, 1898, armed white men\nassembled at the Wilmington Light Infantry armory before marching on the Daily Record.\n\nThe violence that followed was organized around a political aim: removing Wilmington's\nlegitimately elected government and suppressing Black political power. It was not simply\nan unexpected crowd losing control.\n\nStand beside the marker and look along Market Street. The route began among familiar\ncivic buildings and ordinary city blocks. That is part of the story's difficulty.\nPolitical violence did not arrive in a landscape separate from everyday Wilmington; it\nmoved through it.\n\nThe marker now interrupts that everyday view with a record of what happened. Before you\nmove on, notice its location. Remembering the starting point helps reveal the planning\nbehind the crime.\n",
     "teaser": "This marker identifies a place of preparation.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "wilmington",
       "downtown"
@@ -12604,7 +12634,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/wilmington-the-gathering-before-the-coup",
         "durationS": 70
       }
@@ -12634,6 +12664,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This building has held both city government and a theater. In November 1898, the civic\npart of that history became a scene of forced political change.\n\nWhite supremacist leaders used violence and intimidation to overthrow Wilmington's\nelected, biracial government. Officials were compelled to resign, and Alfred Moore\nWaddell assumed the mayor's office.\n\nThe outcome was not a normal transfer of authority after an election. The state\nrecognizes the events as a coup. Black residents were killed, threatened, and driven\nfrom the city; the full death toll remains uncertain.\n\nLook at the municipal entrance from the sidewalk. Government buildings can make\nauthority appear orderly and permanent. This one asks a harder question: how was that\nauthority obtained? The architecture remained. The democratic rights of many Wilmington\nresidents did not.\n",
     "teaser": "This building has held both city government and a theater.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "wilmington",
       "downtown"
@@ -12648,7 +12679,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/wilmington-the-government-taken-by-force",
         "durationS": 69
       }
@@ -12863,6 +12894,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Before this was a handsome house, it was Wilmington's jail. The museum's timeline\nrecords that its roof burned in 1768 under suspicious circumstances.\n\nSuspicious is the crucial word. The surviving account does not give us a proven culprit\nor a settled motive. Calling it a solved arson would turn a historical uncertainty into\nan accusation.\n\nThe fire nevertheless changed what happened to the property. John Burgwin subsequently\nacquired the site, and the house built in 1770 incorporated the old jail's walls.\n\nLook at the building from the public street. It can seem like a clean beginning: a\nmerchant's residence rising on a downtown corner. Underneath lies the unresolved damage\nthat made the transformation possible. This case ends with a new building, not an\nidentified offender. The physical aftermath survives more clearly than the answer.\n",
     "teaser": "Before this was a handsome house, it was Wilmington's jail.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "wilmington",
       "downtown"
@@ -12877,7 +12909,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/wilmington-the-jail-fire-without-an-answer",
         "durationS": 72
       }
@@ -13018,6 +13050,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "The columns still stand. That makes it easy to miss the violence committed inside this\nhouse on March 13, 1972.\n\nThe museum describes an arson attack in which gasoline was spread on floors and ignited.\nFire damaged plaster, woodwork, fixtures, and mirrors. The outside survived while the\ninterior needed extensive restoration.\n\nNo culprit or motive was established. Suggestions about political motives remain\ntheories, and this story does not identify anyone as responsible.\n\nWhat happened afterward is visible in the building's continued life. Preservation turned\na damaged, empty mansion into a place where visitors can examine the work of enslaved\nand free Black craftspeople, family history, and the restoration itself.\n\nFrom the sidewalk, hold both versions in mind: the building someone tried to destroy,\nand the building a community decided was worth keeping.\n",
     "teaser": "The columns still stand.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "wilmington",
       "downtown"
@@ -13032,7 +13065,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/wilmington-the-mansion-they-tried-to-burn",
         "durationS": 73
       }
@@ -13396,6 +13429,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "An ordinary block can hold the site of an extraordinary assault. On November 10, 1898, a\nwhite supremacist mob came to the Daily Record, Wilmington's Black-owned newspaper.\n\nThe newspaper occupied Free Love Hall on this Seventh Street block. The mob invaded the\nbuilding and set it ablaze. Editor Alex Manly had already fled, anticipating the\nviolence.\n\nThis was part of the Wilmington coup, not an isolated dispute over a newspaper.\nDestroying the press attacked a community's ability to speak while armed violence spread\nthrough the city.\n\nThe original building is gone. Listen from the public sidewalk rather than entering\ntoday's property. Its absence does not make the event less specific. Here, printed words\nwere answered with fire. The record we can recover belongs to the people whose right to\npublish was attacked.\n",
     "teaser": "An ordinary block can hold the site of an extraordinary assault.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "wilmington",
       "downtown"
@@ -13410,7 +13444,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.18,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/wilmington-the-press-that-the-mob-burned",
         "durationS": 71
       }
@@ -13663,6 +13697,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This block was a gathering place for students protesting unequal treatment during school\ndesegregation in 1971. Nearby, Mike's Grocery was firebombed.\n\nTen people were convicted on charges connected with the fire. Their case became known as\nthe Wilmington Ten. The evidence and prosecution were later exposed as deeply flawed,\nincluding perjured testimony.\n\nThe convictions were overturned by the federal appeals court in 1980. Governor Beverly\nPerdue issued pardons in 2012. Responsibility for the grocery arson remains unclear;\nthese ten people should not be presented as its proven perpetrators.\n\nListen beside the marker, not inside the church without permission. This true crime\nstory includes a crime committed against justice itself: people losing years while a\nfalse case was challenged. The ending is correction, but correction cannot return the\ntime already taken.\n",
     "teaser": "This block was a gathering place for students protesting unequal treatment during school desegregation in 1971.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
       "wilmington",
       "downtown"
@@ -13677,7 +13712,7 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.14,
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/wilmington-the-wilmington-ten-and-the-missing-evidence",
         "durationS": 70
       }
