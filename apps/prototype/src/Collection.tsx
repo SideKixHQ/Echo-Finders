@@ -203,12 +203,11 @@ export function Collection({
           Three numbers, because progress belongs on the screen you look things up on
           rather than the one you walk with.
 
-          SINGULAR will read 0 until the content earns it. `rarityOf` takes difficulty from
-          trigger radius, opening hours and remoteness, and nothing we ship is tighter than
-          60m or limited by the clock, so every echo in the library is common or uncommon.
-          Showing the zero is the honest version: the tile is not broken, the content has
-          not got there yet, and lowering the thresholds to light it up would be assigning
-          rarity rather than earning it.
+          SINGULAR is scarce on purpose. `rarityOf` takes difficulty from distance off the
+          main walk, opening hours, going inside and a spot made tight on purpose
+          (`docs/13-story-mix.md`); on 2026-11-05 that made 2 of 329 echoes singular. A
+          low number is the honest version: lowering the thresholds to light it up would be
+          assigning rarity rather than earning it.
         */}
         <div className="coll-stats">
           <span className="coll-stat">

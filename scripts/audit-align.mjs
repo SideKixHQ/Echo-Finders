@@ -63,7 +63,10 @@ const SCREENS = {
     { sel: '.synced-kicker', centre: true, whole: true },
     { sel: '.synced-say h2', centre: true, whole: true },
     { sel: '.synced-where', centre: true, whole: true },
-    { sel: '.synced-rare', centre: true, whole: true },
+    // Only on an echo with a reason to be hard (`rarityReasons`). Castle Clinton, which this
+    // audit syncs, is on the main walk and earns none since rarity stopped scoring the
+    // standard radius (docs/13-story-mix.md), so the panel is rightly absent there.
+    { sel: '.synced-rare', centre: true, whole: true, optional: true },
     { sel: '.synced-later', centre: true, whole: true },
     // The stack as a whole: as much room above the orb as below the button.
     { sel: '.synced', stack: ['.synced-orb', '.synced-later'] },
