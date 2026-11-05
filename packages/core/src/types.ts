@@ -403,6 +403,11 @@ export interface Echo {
   readonly visibility: Visibility;
   /** If set, only play between these local hours — a "see the lights" echo needs night. */
   readonly hours?: { readonly fromHour: number; readonly toHour: number };
+  /**
+   * Heard inside somewhere you have to walk into: a church, a museum, a bar, a gated
+   * cemetery. A point of rarity, because standing there takes going in (`rarityOf`).
+   */
+  readonly inside?: boolean;
 
   readonly sources: readonly Source[];
   /** Each checkable sentence of the script beside its quoted source. Required to approve. */
@@ -507,10 +512,10 @@ export interface Echo {
   readonly tags?: readonly string[];
 
   /**
-   * How far this sits from anywhere many people go, 0–1.
+   * How far this sits off the walk most people take, 0–1.
    *
-   * Computed at content build time from distance to the nearest populated place, not set
-   * by hand. It exists to make capture rarity honest: an echo is rare because standing
+   * Computed at content build time by `remotenessOf`, from distance to the city's main
+   * walk (where echoes crowd), not set by hand; a value in a content file overrides it. It exists to make capture rarity honest: an echo is rare because standing
    * there is genuinely difficult, never because a designer decided the collection needed
    * pacing.
    */

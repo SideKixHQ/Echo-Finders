@@ -10,7 +10,7 @@
 import { readdir, readFile, writeFile, mkdir, copyFile, rm } from "node:fs/promises";
 import { join, relative, dirname } from "node:path";
 import { parse as parseYaml } from "yaml";
-import { isVerified, parseEcho, validateLibrary } from "@echofinders/core";
+import { isVerified, parseEcho, validateLibrary, withRemoteness } from "@echofinders/core";
 
 const ROOT = new URL("..", import.meta.url).pathname;
 const OUT = join(ROOT, "apps", "prototype", "src", "library.generated.ts");
@@ -113,7 +113,11 @@ function demoArchive(echo) {
   };
 }
 
-const demo = echoes.map((echo) => ({
+// Remoteness is measured from the library itself (`remotenessOf`): how far each echo sits
+// off the walk most people take. Shipped with the echo so `rarityOf` needs nothing else.
+const placed = withRemoteness(echoes);
+
+const demo = placed.map((echo) => ({
   ...echo,
   editorial: "approved",
   factCheck: "corroborated",
