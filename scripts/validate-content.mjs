@@ -90,6 +90,29 @@ for (const { echo, file } of echoes) {
   }
 }
 
+/**
+ * Casting: each category is read by the voice `content/voices.yml` gives it.
+ *
+ * A rule James set (2026-11-05), not a judgement made per echo, so it is checked rather
+ * than trusted: one ghost story left in the default voice is the sort of thing nobody hears
+ * until a listener does.
+ */
+const voicesFile = parseYaml(await readFile(join(ROOT, "content", "voices.yml"), "utf8"));
+for (const { echo, file } of echoes) {
+  const want = voicesFile.casting?.[echo.category] ?? voicesFile.defaultVoiceId;
+  const have = echo.voice ?? voicesFile.defaultVoiceId;
+  if (have !== want) {
+    const name = (id) => voicesFile.voices.find((v) => v.id === id)?.role ?? id;
+    issues.push({
+      echoId: echo.id,
+      severity: "error",
+      field: "voice",
+      message: `a ${echo.category} echo is read by ${name(want)}, not ${name(have)} (content/voices.yml casting)`,
+      file,
+    });
+  }
+}
+
 const report = validateLibrary(echoes.map((e) => e.echo));
 const fileOf = new Map(echoes.map((e) => [e.echo.id, e.file]));
 issues.push(...report.issues.map((i) => ({ ...i, file: fileOf.get(i.echoId) ?? i.echoId })));
