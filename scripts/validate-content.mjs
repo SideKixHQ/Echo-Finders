@@ -13,7 +13,7 @@
  * editor, not a broken library.
  */
 
-import { readdir, readFile } from "node:fs/promises";
+import { readdir, readFile, stat } from "node:fs/promises";
 import { join, relative } from "node:path";
 import { parse as parseYaml } from "yaml";
 import { parseEcho, validateLibrary } from "@echofinders/core";
@@ -87,6 +87,31 @@ for (const { echo, file } of echoes) {
       echoId: echo.id, file, severity: "error", field,
       message: `dash in copy (house style): ${line.trim().slice(0, 72)}`,
     });
+  }
+}
+
+/**
+ * Every rendered file is in the repository, and is the file that was rendered.
+ *
+ * `@echofinders/core` does no I/O, so it can check that a render is well formed but not
+ * that its audio exists. A render pointing at a missing file is an echo that cannot play,
+ * and the library build would fail copying it; better to be told here, by name.
+ */
+for (const { echo, file } of echoes) {
+  for (const [i, render] of (echo.renders ?? []).entries()) {
+    if (!render.audioKey.startsWith("audio/")) continue;
+    const push = (message) =>
+      issues.push({ echoId: echo.id, severity: "error", field: `renders[${i}].audioKey`, message, file });
+    let bytes;
+    try {
+      bytes = (await stat(join(ROOT, "content", render.audioKey))).size;
+    } catch {
+      push(`content/${render.audioKey} is missing`);
+      continue;
+    }
+    if (render.audioBytes !== undefined && render.audioBytes !== bytes) {
+      push(`content/${render.audioKey} is ${bytes} bytes; the render records ${render.audioBytes}`);
+    }
   }
 }
 

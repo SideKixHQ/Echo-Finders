@@ -9,7 +9,7 @@ at: { lat: 34.23879, lng: -77.94904 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 64
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -43,3 +43,38 @@ sources:
     url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-department-stores-big-windows/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.4
+    audioBytes: 871070
+    transcript:
+      totalS: 54.4
+      lines:
+        - text: This five-story commercial building dates to 1906, with a later addition.
+          atS: 0
+          durationS: 5.26
+        - text: Wilmington's landmark description notes the light and open space that served wholesale and retail trade.
+          atS: 5.96
+          durationS: 6.56
+        - text: The building was designed to show goods, not merely store them.
+          atS: 13.12
+          durationS: 3.73
+        - text: Its scale makes the ambition visible from the street.
+          atS: 17.36
+          durationS: 3.13
+        - text: Stand clear of entrances and look upward.
+          atS: 21
+          durationS: 2.68
+        - text: A downtown shop could occupy a substantial architectural presence, combining business needs with a recognizable public face.
+          atS: 24.29
+          durationS: 8.07
+        - text: Names and tenants changed, but the structure continued offering space for commerce.
+          atS: 33.31
+          durationS: 4.89
+        - text: The landmark's story connects the customer on the pavement with the larger world of suppliers and merchants inside.
+          atS: 38.89
+          durationS: 7.5
+        - text: "A display window is the meeting point: goods become visible, and a passing person becomes a possible buyer."
+          atS: 47.21
+          durationS: 7.17

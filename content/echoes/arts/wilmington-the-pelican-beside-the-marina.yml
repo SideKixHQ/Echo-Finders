@@ -9,7 +9,7 @@ at: { lat: 34.24540, lng: -77.95130 }
 triggerRadiusKm: 0.09
 category: arts
 format: short
-durationS: 68
+durationS: 53
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -42,3 +42,38 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/discover-outdoor-art-in-wilmington-nc/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-pelican-beside-the-marina/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.9
+    audioBytes: 847246
+    transcript:
+      totalS: 52.9
+      lines:
+        - text: Dumay Gorham's Pelican places a coastal bird in sculptural form beside Port City Marina.
+          atS: 0
+          durationS: 6.19
+        - text: The marina setting changes how you encounter the work.
+          atS: 6.88
+          durationS: 3.17
+        - text: Water, boats, and open air supply part of its context; the sculpture turns attention toward a bird that belongs to the region's coastal imagination.
+          atS: 10.66
+          durationS: 10.1
+        - text: You are looking at art, not a live animal or an exact scientific diagram.
+          atS: 21.14
+          durationS: 5.19
+        - text: Its shape reflects choices about what a viewer will recognize and what the material can express.
+          atS: 26.93
+          durationS: 6.08
+        - text: Use the public viewing route and leave private docks alone.
+          atS: 33.53
+          durationS: 3.54
+        - text: Notice the outline before looking for smaller details.
+          atS: 37.51
+          durationS: 3.22
+        - text: A sculpture can make you pause in a place built for departures and arrivals.
+          atS: 41.33
+          durationS: 4.55
+        - text: This bird stays while the boats move, giving the waterfront a different sort of permanent resident.
+          atS: 46.32
+          durationS: 6.57

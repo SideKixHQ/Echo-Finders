@@ -10,7 +10,7 @@ at: { lat: 34.23591, lng: -77.94294 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 68
+durationS: 53
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -51,3 +51,35 @@ sources:
     url: https://www.bellamymansion.org/the-people.html
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-william-goulds-initials/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.7
+    audioBytes: 843484
+    transcript:
+      totalS: 52.7
+      lines:
+        - text: William Benjamin Gould was an enslaved plasterer hired out for work at the Bellamy site.
+          atS: 0
+          durationS: 5.49
+        - text: The museum records that a later renovation revealed plasterwork bearing his initials.
+          atS: 6.09
+          durationS: 5.18
+        - text: In 1862, Gould escaped down the Cape Fear River and entered Union naval service.
+          atS: 11.97
+          durationS: 6.07
+        - text: He kept a diary, leaving a record in his own words beyond the evidence of his skilled labor.
+          atS: 18.43
+          durationS: 5.79
+        - text: This is his documented worksite, not the location of every stage of his escape or service.
+          atS: 24.91
+          durationS: 6.06
+        - text: If the identified plaster is available on your authorized tour, notice how small a signature can be beside a large house.
+          atS: 31.67
+          durationS: 7.34
+        - text: Initials connect a finished surface to a particular person.
+          atS: 39.45
+          durationS: 3.75
+        - text: "Gould's later life changes the meaning again: the craftsperson was also someone who acted to claim freedom and preserve his experience."
+          atS: 43.9
+          durationS: 8.77

@@ -9,7 +9,7 @@ at: { lat: 34.23312, lng: -77.94710 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 67
+durationS: 57
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -49,3 +49,44 @@ sources:
     url: https://wilmingtoncommunityarts.org/museum/hannah-block-historic-uso-history-then-and-now/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-association-before-the-building/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 57.4
+    audioBytes: 918717
+    transcript:
+      totalS: 57.4
+      lines:
+        - text: The Thalian Association traces its beginnings to 1788, long before the theater now called Thalian Hall was built.
+          atS: 0
+          durationS: 8.19
+        - text: That order matters.
+          atS: 8.87
+          durationS: 1.71
+        - text: Wilmington had people organizing dramatic activity before it had the famous surviving stage.
+          atS: 11.18
+          durationS: 6.34
+        - text: A building later gave the activity a landmark; it did not create the interest from nothing.
+          atS: 18.46
+          durationS: 6.09
+        - text: You are at the association's present arts-center setting, not its original eighteenth-century meeting place.
+          atS: 25
+          durationS: 6.6
+        - text: The institution's history links these different locations.
+          atS: 31.87
+          durationS: 3.91
+        - text: Pause by the entrance.
+          atS: 36.16
+          durationS: 1.38
+        - text: Community theater depends on people agreeing to work together, return for rehearsals, and invite others to watch.
+          atS: 37.87
+          durationS: 6.92
+        - text: The association's long history records that recurring effort.
+          atS: 45.91
+          durationS: 3.56
+        - text: A stage can be constructed once.
+          atS: 49.8
+          durationS: 2.15
+        - text: A theater community has to be made again whenever people choose to put on the next performance.
+          atS: 52.27
+          durationS: 5.09

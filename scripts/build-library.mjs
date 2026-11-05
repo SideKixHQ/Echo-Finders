@@ -7,7 +7,7 @@
  * about the real library.
  */
 
-import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
+import { readdir, readFile, writeFile, mkdir, copyFile, rm } from "node:fs/promises";
 import { join, relative, dirname } from "node:path";
 import { parse as parseYaml } from "yaml";
 import { isVerified, parseEcho, validateLibrary, withRemoteness } from "@echofinders/core";
@@ -134,7 +134,10 @@ const demo = placed.map((echo) => ({
   // so the writing can be judged *spoken* rather than read, which is the only way it is
   // ever going to be experienced. The duration is the estimate from the content file and
   // will be wrong; the real figure arrives with the real render.
-  ...(echo.script
+  //
+  // A real render, where one exists, is kept as it is: `apps/prototype/src/narration.ts`
+  // plays the file and keeps the stand-in for everything else.
+  ...(echo.script && !echo.renders?.length
     ? {
         renders: [
           {
@@ -256,6 +259,28 @@ function routesJson(list) {
  *                   needs a type change and is worth doing separately.
  */
 const shipped = demo.map(({ claims, ...echo }) => ({ ...echo, sources: [] }));
+
+/**
+ * The rendered audio, copied to where the app serves it: `audio/<id>/<voice>.mp3` in a
+ * render becomes `/audio/<id>/<voice>.mp3` on the site.
+ *
+ * Copied fresh every build, so a file that left the library leaves the site too. Served
+ * from Vercel with the app, as the map is (ADR-0019), while the library is small; R2 is
+ * the plan once it is not (`01-services.md`).
+ */
+const AUDIO_OUT = join(ROOT, "apps", "prototype", "public", "audio");
+await rm(AUDIO_OUT, { recursive: true, force: true });
+let audioFiles = 0;
+for (const echo of echoes) {
+  for (const render of echo.renders ?? []) {
+    if (!render.audioKey.startsWith("audio/")) continue;
+    const to = join(ROOT, "apps", "prototype", "public", render.audioKey);
+    await mkdir(dirname(to), { recursive: true });
+    await copyFile(join(ROOT, "content", render.audioKey), to);
+    audioFiles++;
+  }
+}
+console.log(`copied ${audioFiles} rendered audio file(s) to apps/prototype/public/audio`);
 
 await mkdir(dirname(OUT), { recursive: true });
 await writeFile(

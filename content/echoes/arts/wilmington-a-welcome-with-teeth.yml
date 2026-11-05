@@ -9,7 +9,7 @@ at: { lat: 34.23530, lng: -77.94992 }
 triggerRadiusKm: 0.06
 category: arts
 format: short
-durationS: 67
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -45,3 +45,41 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/discover-outdoor-art-in-wilmington-nc/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-welcome-with-teeth/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.4
+    audioBytes: 871070
+    transcript:
+      totalS: 54.4
+      lines:
+        - text: Paul Hill's Southern Hospitality takes the shape of an enormous Venus flytrap.
+          atS: 0
+          durationS: 5.14
+        - text: The tourism authority describes the sculpture as metal and glass, about fifteen feet high.
+          atS: 5.65
+          durationS: 5.65
+        - text: Its title creates a playful tension.
+          atS: 11.75
+          durationS: 2.48
+        - text: Hospitality promises welcome; the plant's trap suggests a very different relationship with its visitors.
+          atS: 14.62
+          durationS: 6.4
+        - text: The artwork does not need to move to make that joke work.
+          atS: 21.71
+          durationS: 3.46
+        - text: Its scale changes a small, locally associated plant into something that can meet your gaze on the waterfront.
+          atS: 25.55
+          durationS: 6.83
+        - text: Stand back far enough to see the silhouette.
+          atS: 32.76
+          durationS: 2.61
+        - text: "Then notice the materials: manufactured surfaces representing a living organism."
+          atS: 35.76
+          durationS: 5.83
+        - text: A public sculpture can make a familiar place feel briefly strange.
+          atS: 42.03
+          durationS: 4.56
+        - text: Here, an emblem of the region becomes a greeting you are unlikely to mistake for an ordinary street sign.
+          atS: 47.2
+          durationS: 7.19

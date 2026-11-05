@@ -10,7 +10,7 @@ at: { lat: 34.24171, lng: -77.95067 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 51
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -50,3 +50,35 @@ sources:
     url: https://www.wrrm.org/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-museum-moves-with-the-rails/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 51.3
+    audioBytes: 822168
+    transcript:
+      totalS: 51.3
+      lines:
+        - text: "A railroad museum has an unusual moving problem: some of its most important objects are built to travel, but cannot simply be driven down a city street."
+          atS: 0
+          durationS: 9.44
+        - text: The museum's account of its 2007 relocation records the work of moving the collection to its present Nutt Street setting.
+          atS: 9.95
+          durationS: 7.65
+        - text: A new location had to accommodate artifacts and full-size railroad equipment together.
+          atS: 17.75
+          durationS: 5.27
+        - text: This building now gives the collection a downtown home beside the city's railroad history.
+          atS: 23.97
+          durationS: 4.96
+        - text: The move was itself another chapter in preservation, not the end of the process.
+          atS: 29.63
+          durationS: 5.33
+        - text: Look at the scale of the outdoor equipment from the permitted visitor area.
+          atS: 35.77
+          durationS: 3.89
+        - text: Each large object represents a decision to carry difficult evidence forward.
+          atS: 40.1
+          durationS: 4.69
+        - text: Keeping history sometimes means arranging a journey for things that have already finished their working journeys.
+          atS: 45.3
+          durationS: 6.01

@@ -9,7 +9,7 @@ at: { lat: 34.23373, lng: -77.94513 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 69
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -48,3 +48,38 @@ sources:
     url: https://cameronartmuseum.org/history/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-exhibition-in-a-little-lane/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.2
+    audioBytes: 868144
+    transcript:
+      totalS: 54.2
+      lines:
+        - text: In 1953, Claude Howell and Gar Faulkner staged a Cottage Lane art show during the Azalea Festival, according to Cape Fear Museum's historical account.
+          atS: 0
+          durationS: 10.41
+        - text: The setting made an exhibition part of the neighborhood rather than an event confined to a grand gallery.
+          atS: 10.8
+          durationS: 6.3
+        - text: Artists could bring work into a small downtown place already associated with creative life.
+          atS: 17.43
+          durationS: 6.04
+        - text: Do not enter a private courtyard to recreate the show.
+          atS: 23.85
+          durationS: 3.89
+        - text: The public lane is enough to understand the scale.
+          atS: 28.06
+          durationS: 3.12
+        - text: "Look along the buildings and imagine the practical decision: choose a place, gather the work, and invite people to see it."
+          atS: 31.51
+          durationS: 8.35
+        - text: A local art community grows through events like that, where the audience meets artists nearby.
+          atS: 40.55
+          durationS: 6.21
+        - text: The lane's size is part of the story.
+          atS: 47.01
+          durationS: 2.55
+        - text: Cultural beginnings do not always require a monumental address.
+          atS: 49.95
+          durationS: 4.25

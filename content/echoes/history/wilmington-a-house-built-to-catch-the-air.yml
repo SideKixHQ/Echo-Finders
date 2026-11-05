@@ -10,7 +10,7 @@ at: { lat: 34.23591, lng: -77.94281 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 70
+durationS: 59
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -45,3 +45,41 @@ sources:
     url: https://www.bellamymansion.org/the-place.html
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-house-built-to-catch-the-air/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 59.3
+    audioBytes: 949228
+    transcript:
+      totalS: 59.3
+      lines:
+        - text: Look above the columns to the small structure at the top of the mansion.
+          atS: 0
+          durationS: 3.94
+        - text: Its usefulness went beyond the view.
+          atS: 4.45
+          durationS: 2.26
+        - text: Bellamy's design included a belvedere that helped ventilate the house.
+          atS: 7.31
+          durationS: 4.01
+        - text: The museum also notes the deliberate placement of the kitchen to receive early daylight.
+          atS: 11.76
+          durationS: 5.17
+        - text: The architects considered climate and daily work along with appearance.
+          atS: 17.53
+          durationS: 4.44
+        - text: Built between 1859 and 1861, the house combined Greek Revival and Italianate elements.
+          atS: 22.66
+          durationS: 7.31
+        - text: "Those labels can sound abstract until you notice how the building meets its surroundings: shade, height, openings, and the movement of air."
+          atS: 30.79
+          durationS: 9.64
+        - text: From this sidewalk, let the building become a practical invention as well as an expensive residence.
+          atS: 41.24
+          durationS: 5.9
+        - text: Beauty and function shared the same plans.
+          atS: 47.83
+          durationS: 2.95
+        - text: The comfort it offered, however, depended on skilled construction and the labor of people whose freedom was sharply unequal.
+          atS: 51.39
+          durationS: 7.87

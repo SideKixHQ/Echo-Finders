@@ -10340,7 +10340,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 70,
+    "durationS": 59,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10350,18 +10350,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look above the columns to the small structure at the top of the mansion. Its usefulness\nwent beyond the view.\n\nBellamy's design included a belvedere that helped ventilate the house. The museum also\nnotes the deliberate placement of the kitchen to receive early daylight. The architects\nconsidered climate and daily work along with appearance.\n\nBuilt between 1859 and 1861, the house combined Greek Revival and Italianate elements.\nThose labels can sound abstract until you notice how the building meets its\nsurroundings: shade, height, openings, and the movement of air.\n\nFrom this sidewalk, let the building become a practical invention as well as an\nexpensive residence. Beauty and function shared the same plans. The comfort it offered,\nhowever, depended on skilled construction and the labor of people whose freedom was\nsharply unequal.\n",
     "teaser": "Look above the columns to the small structure at the top of the mansion.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-house-built-to-catch-the-air/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 59.3,
+        "audioBytes": 949228
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-house-built-to-catch-the-air",
-        "durationS": 70
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-little-town-in-the-1950s",
@@ -10563,7 +10564,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 67,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10573,18 +10574,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Paul Hill's Southern Hospitality takes the shape of an enormous Venus flytrap. The\ntourism authority describes the sculpture as metal and glass, about fifteen feet high.\n\nIts title creates a playful tension. Hospitality promises welcome; the plant's trap\nsuggests a very different relationship with its visitors.\n\nThe artwork does not need to move to make that joke work. Its scale changes a small,\nlocally associated plant into something that can meet your gaze on the waterfront.\n\nStand back far enough to see the silhouette. Then notice the materials: manufactured\nsurfaces representing a living organism. A public sculpture can make a familiar place\nfeel briefly strange. Here, an emblem of the region becomes a greeting you are unlikely\nto mistake for an ordinary street sign.\n",
     "teaser": "Paul Hill's Southern Hospitality takes the shape of an enormous Venus flytrap.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-welcome-with-teeth/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.4,
+        "audioBytes": 871070
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-welcome-with-teeth",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-alex-manlys-voice",
@@ -10749,7 +10751,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 65,
+    "durationS": 58,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10759,18 +10761,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Wilmington identifies this 1858 church as an important example of Carpenter Gothic\narchitecture with Italianate influences.\n\nThe city's account also connects it with one of Wilmington's early Black congregations.\nIts significance therefore belongs to both architectural form and community life.\n\nListen from the public sidewalk. Gothic ideas did not require stone walls and enormous\ncathedrals to become recognizable. Builders could interpret them in a smaller wooden\nstructure suited to a different setting.\n\nThe result asks you to look beyond size when deciding what counts as a landmark. A\nmodest building can carry a substantial history. Here, a continuing religious community\nand a distinctive design give the structure meaning together. Its value lies in that\nrelationship, not merely in its age.\n",
     "teaser": "Wilmington identifies this 1858 church as an important example of Carpenter Gothic architecture with Italianate influences.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-chestnut-streets-wooden-church/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 57.8,
+        "audioBytes": 926240
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-chestnut-streets-wooden-church",
-        "durationS": 65
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-claude-howell-asks-for-more-art",
@@ -10897,7 +10900,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 67,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10907,18 +10910,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Elisabeth Chant made a studio in the old Hart Wine House on Cottage Lane. There she\ntaught and influenced artists who helped shape Wilmington's visual-arts community.\n\nAmong her students were Claude Howell and Henry Jay MacMillan. The important thing at\nthis stop is the local relationship: a teacher, a working space, and people learning to\nsee and make art.\n\nStay on the public lane. The studio's history does not grant access to today's private\nproperty.\n\nThe small setting helps explain the scale of cultural beginnings. A teacher did not need\nan institution with a monumental facade to have a lasting effect. Chant's studio made\nroom for practice and exchange. Later artistic careers carried that influence beyond the\nlane where some of their learning began.\n",
     "teaser": "Elisabeth Chant made a studio in the old Hart Wine House on Cottage Lane.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-elisabeth-chant-makes-a-studio/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53,
+        "audioBytes": 849754
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-elisabeth-chant-makes-a-studio",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-elizabeth-savage-latimers-wilmington",
@@ -11158,7 +11162,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 68,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11168,18 +11172,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Guy Nixon was an enslaved member of the Bellamy household. The museum discusses a family\nrecollection of his work pumping water from the cistern to a tank high in the house.\n\nThat practical task supported the comfort of people who controlled his labor. It should\nnot be turned into a nostalgic picture of a happy household helper.\n\nLook upward from the public sidewalk. Water needed to move against gravity before it\ncould serve the rooms above. The building's conveniences relied on repeated human\neffort.\n\nNixon's story makes a system personal. A tank and a pump can sound like technical\ndetails; naming the person required to operate them changes the account. The mansion's\ndaily life depended on work, and that work took place within slavery's restrictions on\nfreedom.\n",
     "teaser": "Guy Nixon was an enslaved member of the Bellamy household.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-guy-nixon-and-the-water-tank/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53.9,
+        "audioBytes": 863546
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-guy-nixon-and-the-water-tank",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-hannah-block-at-the-piano",
@@ -11232,7 +11237,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 67,
+    "durationS": 57,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11242,18 +11247,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who\nworked to revive North Fourth Street after the Atlantic Coast Line's departure.\n\nThe bridge itself is older. The new name added a person's work to an existing piece of\ninfrastructure.\n\nListen at a safe public approach rather than entering railroad property below. From\nhere, the connection is visible: a crossing links streets, while a community advocate\nworks to reconnect a neighborhood with opportunity.\n\nA commemorative name can become so familiar that its meaning disappears into directions.\nThis stop restores the person behind it. Forden's public work concerned the area's\nfuture, not merely its old buildings. The city attached that effort to a structure\npeople could continue to encounter in everyday life.\n",
     "teaser": "A name added to something already standing.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-harry-fordens-name-on-the-bridge/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 57,
+        "audioBytes": 913701
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-harry-fordens-name-on-the-bridge",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-henry-bacons-smaller-building",
@@ -11343,7 +11349,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 68,
+    "durationS": 56,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11353,18 +11359,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "J. Allen Kirk came to Wilmington as a Baptist pastor in 1897. The following year, the\ncoup forced him to seek safety.\n\nHe later published an account of the violence and his escape. That record preserves the\nperspective of a Black community leader who experienced the danger directly.\n\nHistorians disagree on some details of his route and timing. His account should be read\nas testimony, with its particular viewpoint, rather than treated as an all-seeing\ndescription of every event.\n\nListen beside the marker. Kirk survived the attempt to silence and drive out people like\nhim, then made a written record. His story demonstrates another form of resistance:\npreserving an experience so later generations would have evidence beyond the version\noffered by those who seized power.\n",
     "teaser": "J. Allen Kirk came to Wilmington as a Baptist pastor in 1897.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-j-allen-kirk-kept-a-record/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55.8,
+        "audioBytes": 894057
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-j-allen-kirk-kept-a-record",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-james-posts-practical-design",
@@ -11754,7 +11761,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 70,
+    "durationS": 56,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11764,18 +11771,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "St. Thomas Preservation Hall describes its building as a former Catholic church\nconstructed in 1847. Today it is used as an event venue.\n\nThe change illustrates a practical route to preservation: keep an old structure useful\nwhile allowing its role to evolve.\n\nThe original worship setting and the present venue are different chapters. Neither\nrequires us to pretend that every surface or furnishing stayed unchanged.\n\nListen from Dock Street unless you have permission to enter. A building's public history\ndoes not make a private event open to everyone.\n\nFrom outside, the survival is clear. The old structure remains part of downtown instead\nof becoming an empty lot. A new purpose supplies the reason to maintain it, while the\nname and building keep its earlier identity in view.\n",
     "teaser": "St. Thomas Preservation Hall describes its building as a former Catholic church constructed in 1847.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-st-thomas-finds-another-purpose/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55.7,
+        "audioBytes": 891967
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-st-thomas-finds-another-purpose",
-        "durationS": 70
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-stars-under-a-downtown-roof",
@@ -11791,7 +11799,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "short",
-    "durationS": 69,
+    "durationS": 50,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11802,18 +11810,19 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Wilmington's new downtown museum opened in August 2026 with a sixty-seat planetarium.\nInside, a presentation can help visitors explore the sky while sitting under a roof.\n\nThe images are a way of learning, not actual stars brought indoors. Real stars are much\nfarther away than any building in the city.\n\nIf you are attending an authorized program, settle into your seat and let the\npresentation guide your eyes. What becomes easier to notice when the view is arranged\nfor learning?\n\nThe planetarium joins science with storytelling. It can help turn distant things into\nquestions you can investigate. When you leave, the real sky is still outside, and the\ndowntown streets are still around you. A visit can make that familiar walk feel\nconnected with a much larger world.\n",
     "teaser": "Wilmington's new downtown museum opened in August 2026 with a sixty-seat planetarium.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/wilmington-stars-under-a-downtown-roof/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 49.9,
+        "audioBytes": 800016
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/wilmington-stars-under-a-downtown-roof",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-steel-above-the-tracks",
@@ -11903,7 +11912,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 67,
+    "durationS": 57,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11913,18 +11922,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "The Thalian Association traces its beginnings to 1788, long before the theater now\ncalled Thalian Hall was built.\n\nThat order matters. Wilmington had people organizing dramatic activity before it had the\nfamous surviving stage. A building later gave the activity a landmark; it did not create\nthe interest from nothing.\n\nYou are at the association's present arts-center setting, not its original\neighteenth-century meeting place. The institution's history links these different\nlocations.\n\nPause by the entrance. Community theater depends on people agreeing to work together,\nreturn for rehearsals, and invite others to watch. The association's long history\nrecords that recurring effort. A stage can be constructed once. A theater community has\nto be made again whenever people choose to put on the next performance.\n",
     "teaser": "The Thalian Association traces its beginnings to 1788, long before the theater now called Thalian Hall was built.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-association-before-the-building/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 57.4,
+        "audioBytes": 918717
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-association-before-the-building",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-basilicas-brick-invention",
@@ -12273,7 +12283,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 64,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12283,18 +12293,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This five-story commercial building dates to 1906, with a later addition. Wilmington's\nlandmark description notes the light and open space that served wholesale and retail\ntrade.\n\nThe building was designed to show goods, not merely store them. Its scale makes the\nambition visible from the street.\n\nStand clear of entrances and look upward. A downtown shop could occupy a substantial\narchitectural presence, combining business needs with a recognizable public face.\n\nNames and tenants changed, but the structure continued offering space for commerce. The\nlandmark's story connects the customer on the pavement with the larger world of\nsuppliers and merchants inside. A display window is the meeting point: goods become\nvisible, and a passing person becomes a possible buyer.\n",
     "teaser": "This five-story commercial building dates to 1906, with a later addition.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-department-stores-big-windows/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.4,
+        "audioBytes": 871070
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-department-stores-big-windows",
-        "durationS": 64
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-dog-made-of-metal",
@@ -12348,7 +12359,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 69,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12358,18 +12369,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "In 1953, Claude Howell and Gar Faulkner staged a Cottage Lane art show during the Azalea\nFestival, according to Cape Fear Museum's historical account.\n\nThe setting made an exhibition part of the neighborhood rather than an event confined to\na grand gallery. Artists could bring work into a small downtown place already associated\nwith creative life.\n\nDo not enter a private courtyard to recreate the show. The public lane is enough to\nunderstand the scale.\n\nLook along the buildings and imagine the practical decision: choose a place, gather the\nwork, and invite people to see it. A local art community grows through events like that,\nwhere the audience meets artists nearby. The lane's size is part of the story. Cultural\nbeginnings do not always require a monumental address.\n",
     "teaser": "A gallery the width of a lane.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-exhibition-in-a-little-lane/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.2,
+        "audioBytes": 868144
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-exhibition-in-a-little-lane",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-federal-building-by-the-water",
@@ -13197,7 +13209,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 51,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13207,18 +13219,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "A railroad museum has an unusual moving problem: some of its most important objects are\nbuilt to travel, but cannot simply be driven down a city street.\n\nThe museum's account of its 2007 relocation records the work of moving the collection to\nits present Nutt Street setting. A new location had to accommodate artifacts and\nfull-size railroad equipment together.\n\nThis building now gives the collection a downtown home beside the city's railroad\nhistory. The move was itself another chapter in preservation, not the end of the\nprocess.\n\nLook at the scale of the outdoor equipment from the permitted visitor area. Each large\nobject represents a decision to carry difficult evidence forward. Keeping history\nsometimes means arranging a journey for things that have already finished their working\njourneys.\n",
     "teaser": "How do you move a locomotive two blocks?",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-museum-moves-with-the-rails/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 51.3,
+        "audioBytes": 822168
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-museum-moves-with-the-rails",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-other-wartime-uso",
@@ -13308,7 +13321,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 68,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13318,18 +13331,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Dumay Gorham's Pelican places a coastal bird in sculptural form beside Port City Marina.\n\nThe marina setting changes how you encounter the work. Water, boats, and open air supply\npart of its context; the sculpture turns attention toward a bird that belongs to the\nregion's coastal imagination.\n\nYou are looking at art, not a live animal or an exact scientific diagram. Its shape\nreflects choices about what a viewer will recognize and what the material can express.\n\nUse the public viewing route and leave private docks alone. Notice the outline before\nlooking for smaller details. A sculpture can make you pause in a place built for\ndepartures and arrivals. This bird stays while the boats move, giving the waterfront a\ndifferent sort of permanent resident.\n",
     "teaser": "Dumay Gorham's Pelican places a coastal bird in sculptural form beside Port City Marina.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-pelican-beside-the-marina/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52.9,
+        "audioBytes": 847246
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0.16,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-pelican-beside-the-marina",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0.16
   },
   {
     "id": "wilmington-the-people-who-decided-to-save-downtown",
@@ -13919,7 +13933,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13929,18 +13943,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "During the Second World War, this corner offered service members a place to spend their\nhours away from duty.\n\nThe USO club opened in December 1941. Volunteers kept it operating around the clock,\nwith recreation, assistance, and familiar comforts for visitors far from home.\n\nIts public role was built from repeated small acts: directing a newcomer, providing\nrefreshments, arranging an activity, keeping the doors available. A building can support\nwartime life without being a battlefield.\n\nPause at the entrance. The continuity is striking: a place created for gathering still\nserves community life. The current arts center has a different purpose, but the building\nremains a meeting point. Its wartime story is measured in the people who passed through\nand the practical welcome they found here.\n",
     "teaser": "During the Second World War, this corner offered service members a place to spend their hours away from duty.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-twenty-four-hours-at-the-uso/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.7,
+        "audioBytes": 876503
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-twenty-four-hours-at-the-uso",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-washington-sees-the-port",
@@ -14067,7 +14082,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 68,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14077,18 +14092,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "William Benjamin Gould was an enslaved plasterer hired out for work at the Bellamy site.\nThe museum records that a later renovation revealed plasterwork bearing his initials.\n\nIn 1862, Gould escaped down the Cape Fear River and entered Union naval service. He kept\na diary, leaving a record in his own words beyond the evidence of his skilled labor.\n\nThis is his documented worksite, not the location of every stage of his escape or\nservice.\n\nIf the identified plaster is available on your authorized tour, notice how small a\nsignature can be beside a large house. Initials connect a finished surface to a\nparticular person. Gould's later life changes the meaning again: the craftsperson was\nalso someone who acted to claim freedom and preserve his experience.\n",
     "teaser": "William Benjamin Gould was an enslaved plasterer hired out for work at the Bellamy site.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-william-goulds-initials/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52.7,
+        "audioBytes": 843484
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-william-goulds-initials",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-william-hoopers-wilmington-beginning",

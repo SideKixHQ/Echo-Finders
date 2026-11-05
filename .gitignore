@@ -13,5 +13,6 @@ coverage/
 .turbo
 /tmp/
 apps/*/dist/
-content/audio/
+apps/prototype/public/audio/
 align-shots/
+content/audio/**/*.render.json

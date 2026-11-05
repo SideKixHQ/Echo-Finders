@@ -9,7 +9,7 @@ at: { lat: 34.24360, lng: -77.94290 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 67
+durationS: 57
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -43,3 +43,38 @@ sources:
     url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-harry-fordens-name-on-the-bridge/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 57
+    audioBytes: 913701
+    transcript:
+      totalS: 57
+      lines:
+        - text: In 2007, Wilmington renamed this bridge for Harry Forden, a community activist who worked to revive North Fourth Street after the Atlantic Coast Line's departure.
+          atS: 0
+          durationS: 11.56
+        - text: The bridge itself is older.
+          atS: 12.52
+          durationS: 1.95
+        - text: The new name added a person's work to an existing piece of infrastructure.
+          atS: 14.98
+          durationS: 4.47
+        - text: Listen at a safe public approach rather than entering railroad property below.
+          atS: 20.05
+          durationS: 5.18
+        - text: "From here, the connection is visible: a crossing links streets, while a community advocate works to reconnect a neighborhood with opportunity."
+          atS: 25.74
+          durationS: 9.28
+        - text: A commemorative name can become so familiar that its meaning disappears into directions.
+          atS: 35.62
+          durationS: 5.6
+        - text: This stop restores the person behind it.
+          atS: 41.82
+          durationS: 2.76
+        - text: Forden's public work concerned the area's future, not merely its old buildings.
+          atS: 45.02
+          durationS: 5.53
+        - text: The city attached that effort to a structure people could continue to encounter in everyday life.
+          atS: 50.99
+          durationS: 6.04
