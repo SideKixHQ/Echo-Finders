@@ -34,7 +34,7 @@ import {
 } from "@echofinders/core";
 import { SimulatedJourney } from "./simulated-journey";
 import { EchoTone } from "./echo-tone";
-import { SpeechAudio } from "./speech-audio";
+import { Narration } from "./narration";
 import { IndexedDbCollection } from "./collection-store";
 
 export interface WalkState {
@@ -286,7 +286,7 @@ export function useJourney(
   // page, and one left open per mount is a limit reached by clicking around.
   useEffect(() => () => void toneRenderer.dispose(), [toneRenderer]);
 
-  const speech = useMemo(() => new SpeechAudio(library), [library]);
+  const speech = useMemo(() => new Narration(library), [library]);
   useEffect(() => {
     speech.setMuted(!narrate);
   }, [speech, narrate]);

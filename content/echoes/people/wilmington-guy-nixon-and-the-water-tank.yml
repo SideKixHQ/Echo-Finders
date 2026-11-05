@@ -10,7 +10,7 @@ at: { lat: 34.23599, lng: -77.94295 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 68
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -49,3 +49,41 @@ sources:
     url: https://www.bellamymansion.org/the-people.html
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-guy-nixon-and-the-water-tank/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53.9
+    audioBytes: 863546
+    transcript:
+      totalS: 53.9
+      lines:
+        - text: Guy Nixon was an enslaved member of the Bellamy household.
+          atS: 0
+          durationS: 3.88
+        - text: The museum discusses a family recollection of his work pumping water from the cistern to a tank high in the house.
+          atS: 4.39
+          durationS: 7.08
+        - text: That practical task supported the comfort of people who controlled his labor.
+          atS: 12.17
+          durationS: 4.51
+        - text: It should not be turned into a nostalgic picture of a happy household helper.
+          atS: 17.28
+          durationS: 4.57
+        - text: Look upward from the public sidewalk.
+          atS: 23.15
+          durationS: 2.18
+        - text: Water needed to move against gravity before it could serve the rooms above.
+          atS: 25.77
+          durationS: 4.53
+        - text: The building's conveniences relied on repeated human effort.
+          atS: 31.42
+          durationS: 3.84
+        - text: Nixon's story makes a system personal.
+          atS: 35.86
+          durationS: 2.8
+        - text: A tank and a pump can sound like technical details; naming the person required to operate them changes the account.
+          atS: 38.99
+          durationS: 7.64
+        - text: The mansion's daily life depended on work, and that work took place within slavery's restrictions on freedom.
+          atS: 47.14
+          durationS: 6.78

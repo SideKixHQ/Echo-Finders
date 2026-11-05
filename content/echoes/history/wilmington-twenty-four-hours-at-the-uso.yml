@@ -9,7 +9,7 @@ at: { lat: 34.23316, lng: -77.94724 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -46,3 +46,38 @@ sources:
     url: https://wilmingtoncommunityarts.org/museum/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-twenty-four-hours-at-the-uso/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.7
+    audioBytes: 876503
+    transcript:
+      totalS: 54.7
+      lines:
+        - text: During the Second World War, this corner offered service members a place to spend their hours away from duty.
+          atS: 0
+          durationS: 6.47
+        - text: The USO club opened in December 1941.
+          atS: 6.98
+          durationS: 3.78
+        - text: Volunteers kept it operating around the clock, with recreation, assistance, and familiar comforts for visitors far from home.
+          atS: 11.46
+          durationS: 7.67
+        - text: "Its public role was built from repeated small acts: directing a newcomer, providing refreshments, arranging an activity, keeping the doors available."
+          atS: 19.38
+          durationS: 9.4
+        - text: A building can support wartime life without being a battlefield.
+          atS: 29.11
+          durationS: 3.91
+        - text: Pause at the entrance.
+          atS: 34.13
+          durationS: 1.43
+        - text: "The continuity is striking: a place created for gathering still serves community life."
+          atS: 35.63
+          durationS: 6.15
+        - text: The current arts center has a different purpose, but the building remains a meeting point.
+          atS: 42.48
+          durationS: 4.96
+        - text: Its wartime story is measured in the people who passed through and the practical welcome they found here.
+          atS: 48.25
+          durationS: 6.46

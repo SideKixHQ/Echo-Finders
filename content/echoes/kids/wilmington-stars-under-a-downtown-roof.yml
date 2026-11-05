@@ -9,7 +9,7 @@ at: { lat: 34.23882, lng: -77.94690 }
 triggerRadiusKm: 0.04
 category: kids
 format: short
-durationS: 69
+durationS: 50
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -44,3 +44,41 @@ sources:
     url: https://capefearmuseum.com/m/newsflash/Home/Detail/1159
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/wilmington-stars-under-a-downtown-roof/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 49.9
+    audioBytes: 800016
+    transcript:
+      totalS: 49.9
+      lines:
+        - text: Wilmington's new downtown museum opened in August 2026 with a sixty-seat planetarium.
+          atS: 0
+          durationS: 6.18
+        - text: Inside, a presentation can help visitors explore the sky while sitting under a roof.
+          atS: 6.5
+          durationS: 4.81
+        - text: The images are a way of learning, not actual stars brought indoors.
+          atS: 11.59
+          durationS: 4.31
+        - text: Real stars are much farther away than any building in the city.
+          atS: 16.28
+          durationS: 3.8
+        - text: If you are attending an authorized program, settle into your seat and let the presentation guide your eyes.
+          atS: 20.68
+          durationS: 5.82
+        - text: What becomes easier to notice when the view is arranged for learning?
+          atS: 26.93
+          durationS: 3.68
+        - text: The planetarium joins science with storytelling.
+          atS: 31.92
+          durationS: 2.9
+        - text: It can help turn distant things into questions you can investigate.
+          atS: 35.14
+          durationS: 3.45
+        - text: When you leave, the real sky is still outside, and the downtown streets are still around you.
+          atS: 39.2
+          durationS: 5.86
+        - text: A visit can make that familiar walk feel connected with a much larger world.
+          atS: 45.57
+          durationS: 4.35

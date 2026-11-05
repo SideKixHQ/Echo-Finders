@@ -9,7 +9,7 @@ at: { lat: 34.23790, lng: -77.94020 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 65
+durationS: 58
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -46,3 +46,41 @@ sources:
     url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-chestnut-streets-wooden-church/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 57.8
+    audioBytes: 926240
+    transcript:
+      totalS: 57.8
+      lines:
+        - text: Wilmington identifies this 1858 church as an important example of Carpenter Gothic architecture with Italianate influences.
+          atS: 0
+          durationS: 9.06
+        - text: The city's account also connects it with one of Wilmington's early Black congregations.
+          atS: 9.44
+          durationS: 5.61
+        - text: Its significance therefore belongs to both architectural form and community life.
+          atS: 15.65
+          durationS: 5.72
+        - text: Listen from the public sidewalk.
+          atS: 21.82
+          durationS: 2.12
+        - text: Gothic ideas did not require stone walls and enormous cathedrals to become recognizable.
+          atS: 24.38
+          durationS: 6.26
+        - text: Builders could interpret them in a smaller wooden structure suited to a different setting.
+          atS: 31.08
+          durationS: 4.97
+        - text: The result asks you to look beyond size when deciding what counts as a landmark.
+          atS: 37
+          durationS: 5.12
+        - text: A modest building can carry a substantial history.
+          atS: 42.82
+          durationS: 3.32
+        - text: Here, a continuing religious community and a distinctive design give the structure meaning together.
+          atS: 46.74
+          durationS: 6.21
+        - text: Its value lies in that relationship, not merely in its age.
+          atS: 53.65
+          durationS: 4.17

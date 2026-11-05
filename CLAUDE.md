@@ -63,10 +63,9 @@ Never end a session with unpushed work; the workspace is wiped.
 - Dashboard: https://vercel.com/side-kix/echo-finders
 - Build is defined in `vercel.json`; see `DEPLOY.md`. Vercel posts no status back to
   GitHub (`github.silent`), so nothing on the PR tells you a deploy landed.
-- **A deploy can be checked from here.** Plain `curl` to `*.vercel.app` is blocked by the
-  network policy, but the Vercel MCP server fetches the live site through the account
-  instead of through the container, which works: read `/version.json` and compare `commit`
-  against what you merged. Do that after every merge rather than assuming.
+- **A deploy can be checked from here.** `curl https://echo-finders.vercel.app/version.json`
+  works from a session (rechecked 2026-11-05; it used to be blocked), and the Vercel MCP
+  server fetches it through the account as well: compare `commit` against what you merged. Do that after every merge rather than assuming.
   *(Corrected 2026-10-24. This used to say a deploy could not be checked from here, which
   was true of `curl` and false overall, and meant merges went unverified for no reason.)*
 
