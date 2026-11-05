@@ -6,8 +6,9 @@ James (2026-11-05): "we should set parameters for how many of which type we have
 defines uncommon or rare echos. I bet people will want true crime, history, military and
 what else... lets just double check and make sure we have the right stories."
 
-Written 2026-11-05. **This is a proposal.** The targets and the rarity rule below are for
-James to approve or change. Nothing in the code or content enforces them yet.
+Written 2026-11-05. **Decided the same day** (James): "approve the mix and rarity, keep
+military in history - i do think its ok to change the mix based on the city. Lets keep that
+in mind some cities will be crime or ghost heavy." The decisions are at the end.
 
 ## What people listen to and pay for
 
@@ -65,9 +66,9 @@ By city (echoes tagged with the city's name):
 | Washington | history 21, built 6, arts 4, people 3, legend 2, true crime 1 |
 | Philadelphia | history 18, people 5, built 5, legend 1, land 1, arts 1 |
 
-## Proposed mix: a 30-echo city
+## The mix: a 30-echo city
 
-A city is covered at 30 approved echoes (`12-cities.md`). Proposed shape for those 30:
+A city is covered at 30 approved echoes (`12-cities.md`). The shape for those 30:
 
 | Category | Per city | Share | Now | Note |
 |---|---|---|---|---|
@@ -82,9 +83,13 @@ A city is covered at 30 approved echoes (`12-cities.md`). Proposed shape for tho
 | **Total** | **30** | | | |
 | Kids | +3 | | | An audience, not a subject (`types.ts`): children's tellings on top of the 30 |
 
-Proposed flex rules:
-- Each count may move by **±2** for a city's character. New Orleans can carry 7 ghost stories;
-  Washington can carry more history. Nothing may fall to zero except land.
+Flex rules:
+- Each count may move by **±2** for a city's character without saying why. Nothing may fall
+  to zero except land.
+- **A city may lean further, on purpose.** Some are crime cities or ghost cities, and the mix
+  should say so rather than flatten them (James, 2026-11-05). New Orleans, Savannah and
+  Charleston are ghost-heavy; a city whose story is its crimes can be crime-heavy. The lean is
+  written down per city with its reason, so it reads as a decision rather than drift.
 - A **national park** inverts it: land 10, history 8, people 4, legend 4, built 2, true crime
   0 to 2.
 - A **drive** follows what is beside the road, so it gets no target. It is covered at one echo
@@ -122,7 +127,7 @@ about the place, never assigned**. A collection only means something if a rare e
 actually harder to get. So the fix is to measure real difficulty, not hand out labels or
 quotas.
 
-### Proposed rule
+### The rule (approved)
 Drop the radius as a scorer. A standard radius is the default, not a difficulty. Score what
 actually makes a place harder to reach:
 
@@ -132,7 +137,7 @@ actually makes a place harder to reach:
 | Far off it: more than 1.5 km, or outside the city entirely | +2 | Computed |
 | Only open at certain hours, days or seasons | +1 | `hours`, set when writing |
 | Inside somewhere you must enter (a church, museum, bar, cemetery with gates) | +1 | New `inside: true` field |
-| A precise spot that is genuinely hard to find (a plaque, a mark on a wall, one grave) | +1 | A radius set below the standard one on purpose, under 30 m |
+| A precise spot that is genuinely hard to find (a plaque, a mark on a wall, one grave) | +1 | A radius set below the standard one on purpose: 30 m or less |
 
 Common 0, uncommon 1, rare 2, singular 3 or more.
 
@@ -141,16 +146,12 @@ Expected shape, from the facts rather than forced: roughly **60% common, 25% unc
 echoes are all on the main walk. The fix then is to write echoes further out, not to relabel
 the ones we have.
 
-## Decisions for James
-1. **The mix:** approve the 30-echo table above, or change the numbers.
-2. **Military:** keep it inside history as a counted theme (3 of 9), or give it its own
-   category and filter chip? A category is a schema change and re-files about 50 echoes. A
-   theme needs neither.
-3. **Rarity:** approve the new scoring (drop radius; score distance from the core, hours,
-   going inside, a hard-to-find spot).
-4. **Anything missing:** sports, music and film each surfaced in competitors' category lists
-   (StoryRabbit lists Music, Film & TV and Sports). Film and music fit under arts. Sports has
-   no home today.
+## Decisions (James, 2026-11-05)
+1. **The mix:** approved, with cities free to lean crime-heavy or ghost-heavy (above).
+2. **Military:** stays inside history, counted as a theme (at least 3 of a city's 9).
+3. **Rarity:** approved. Radius stops scoring; distance from the core, hours, going inside and
+   a deliberately tight spot score instead.
+4. **Still open:** sports has no category. Film and music fit under arts.
 
 ## Sources
 - [Edison Research: True Crime now top podcast genre (Media Confidential, 2026)](https://mediaconfidential.blogspot.com/2026/09/edison-research-true-crime-now-top.html)
