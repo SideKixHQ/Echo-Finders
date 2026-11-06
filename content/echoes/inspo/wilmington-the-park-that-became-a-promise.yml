@@ -1,0 +1,50 @@
+# Inspo, film and television (from James's document) for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Overture 2026-09-23.0 address point for 1739 Burnett Boulevard, the park's address; the park is large and the wedding set's spot is not given.
+id: wilmington-the-park-that-became-a-promise
+title: "The Park That Became a Promise"
+summary: "Greenfield Park was the set of Lucas and Peyton's outdoor wedding in One Tree Hill."
+place: "Greenfield Park, Burnett Boulevard, Wilmington, North Carolina"
+at: { lat: 34.214024, lng: -77.943939 }
+triggerRadiusKm: 0.25
+category: inspo
+inspo:
+  kind: creation
+  evidence: site
+format: look-below
+durationS: 37
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, one-tree-hill, greenfield]
+teaser: "A wedding under the trees here, and a Christmas wish nearby."
+script: |
+  Look through the trees toward the water. In season six of One Tree Hill, this park was
+  transformed into the set of Lucas and Peyton's outdoor wedding.
+
+  Another production came here for something tender. In the Hallmark film
+  Christmas in Conway, a husband rallies a town to give his dying wife one last Christmas, and
+  Greenfield Park was in that story too.
+
+  Stories about promises, filmed in a public park anyone can walk into. Wilmington lends its
+  ordinary places to the moments people remember.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "In season six of One Tree Hill, this park was transformed into the set of Lucas and Peyton's outdoor wedding."
+    source: 1
+    quote: "Greenfield Park was transformed into the set of Lucas and Peyton's beautiful outdoor wedding in season six."
+  - says: "In the Hallmark film Christmas in Conway, a husband rallies a town to give his dying wife one last Christmas, and Greenfield Park was in that story too."
+    source: 2
+    quote: "This Hallmark Hall of Fame entry starred Andy Garcia as a devoted husband who rallies the community to give his terminally ill wife (Mary Louise Parker) one final Christmas to remember"
+sources:
+  - title: "One Tree Hill Tour"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/one-tree-hill-walking-tour/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+  - title: "Wilmington's Holiday Spirit Shines in Locally Made Movies and TV Shows"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/wilmingtons-holiday-spirit-shines-in-locally-made-movies-tv-shows/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts

@@ -1,0 +1,51 @@
+# Inspo, film and television (from James's document) for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Overture 2026-09-23.0 address point for 212 North Front Street.
+id: wilmington-before-streaming-this-door
+title: "Before Streaming, There Was This Door"
+summary: "212 North Front Street was Screen Play Video, where Pacey worked in Dawson's Creek."
+place: "212 North Front Street, Wilmington, North Carolina"
+at: { lat: 34.237808, lng: -77.948868 }
+triggerRadiusKm: 0.05
+category: inspo
+inspo:
+  kind: creation
+  evidence: building
+format: look-below
+durationS: 42
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, dawsons-creek, downtown]
+teaser: "Pacey's after-school job was behind this storefront."
+script: |
+  Look at the storefront at 212 North Front Street. In Dawson's Creek, this was Screen Play
+  Video, where Pacey worked after school.
+
+  A video store in a show about a boy who wanted to make films. The shelves were the point: rows
+  of other people's stories, waiting to be rented for the weekend.
+
+  During the course of the series, 128 episodes over six seasons were filmed in Wilmington and our
+  Island Beaches. It catapulted the careers of James Van Der Beek, Katie Holmes, Joshua Jackson and
+  Michelle Williams. Some of that began behind a counter in this storefront.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look at the storefront at 212 North Front Street."
+    source: 1
+    quote: "N Salo, at 212 North Front Street, is the location of \"Screen Play Video,\" where Pacey worked after school."
+  - says: "In Dawson's Creek, this was Screen Play Video, where Pacey worked after school."
+    source: 1
+    quote: "N Salo, at 212 North Front Street, is the location of \"Screen Play Video,\" where Pacey worked after school."
+  - says: "During the course of the series, 128 episodes over six seasons were filmed in Wilmington and our Island Beaches."
+    source: 1
+    quote: "During the course of the series, 128 episodes over six seasons were filmed in Wilmington and our Island Beaches."
+  - says: "It catapulted the careers of James Van Der Beek, Katie Holmes, Joshua Jackson and Michelle Williams."
+    source: 1
+    quote: "catapulting the careers of James Van Der Beek, Katie Holmes, Joshua Jackson and Michelle Williams."
+sources:
+  - title: "Dawson's Creek Locations Tour"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/dawsons-creek-locations-tour/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts

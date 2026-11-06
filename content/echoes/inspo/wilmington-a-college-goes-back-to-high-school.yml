@@ -1,0 +1,56 @@
+# Inspo, film and television (from James's document) for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Overture 2026-09-23.0 address point for 610 North Front Street (Wikidata Q6213128 agrees within 120 m).
+id: wilmington-a-college-goes-back-to-high-school
+title: "A College Building Goes Back to High School"
+summary: "The Schwartz Center's front entrance was the exterior of Tree Hill High School."
+place: "Joe and Barbara Schwartz Center, 610 North Front Street, Wilmington, North Carolina"
+at: { lat: 34.242859, lng: -77.948952 }
+triggerRadiusKm: 0.05
+category: inspo
+inspo:
+  kind: creation
+  evidence: building
+format: look-below
+durationS: 38
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, one-tree-hill, dawsons-creek, cfcc]
+teaser: "The front of Tree Hill High is a college building. Walk round the back for the gym."
+script: |
+  Look at the front entrance. On television, this was Tree Hill High School.
+
+  The Joe and Barbara Schwartz Center belongs to Cape Fear Community College. Its front was the
+  outside of the high school, and round the back is where exterior scenes of the gym were filmed.
+
+  It had another part to play. Dawson's Creek used it too, as a film festival lobby.
+
+  A real college, playing a fictional high school, for a show about growing up. For a generation
+  of viewers, this doorway was where every school day began.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Its front was the outside of the high school, and round the back is where exterior scenes of the gym were filmed."
+    source: 1
+    quote: "The front entrance of the Joe and Barbara Schwartz Center is notably the exterior of Tree Hill High School. Walk around to the back of the building to see where exterior scenes of the gym were filmed."
+  - says: "Look at the front entrance. On television, this was Tree Hill High School."
+    source: 1
+    quote: "The front entrance of the Joe and Barbara Schwartz Center is notably the exterior of Tree Hill High School."
+  - says: "The Joe and Barbara Schwartz Center belongs to Cape Fear Community College."
+    source: 2
+    quote: "The Schwartz Center on the Cape Fear Community College campus, 610 North Front Street, appeared as a film festival lobby in the show."
+  - says: "Dawson's Creek used it too, as a film festival lobby."
+    source: 2
+    quote: "The Schwartz Center on the Cape Fear Community College campus, 610 North Front Street, appeared as a film festival lobby in the show."
+sources:
+  - title: "One Tree Hill Tour"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/one-tree-hill-walking-tour/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+  - title: "Dawson's Creek Locations Tour"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/dawsons-creek-locations-tour/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts

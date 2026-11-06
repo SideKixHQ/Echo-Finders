@@ -1,0 +1,53 @@
+# Inspo, film and television (from James's document) for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Overture 2026-09-23.0 address point for 2 Ann Street.
+id: wilmington-a-restaurant-at-the-end-of-the-story
+title: "A Restaurant at the End of the Story"
+summary: "Elijah's at 2 Ann Street was Pacey's Icehouse in the Dawson's Creek finale."
+place: "Elijah's, 2 Ann Street, Wilmington, North Carolina"
+at: { lat: 34.231327, lng: -77.949242 }
+triggerRadiusKm: 0.05
+category: inspo
+inspo:
+  kind: creation
+  evidence: building
+format: look-below
+durationS: 38
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, dawsons-creek, riverwalk]
+teaser: "Dawson's Creek ended where the river bends."
+script: |
+  Look at the riverfront restaurant at the southern end of the Riverwalk. In the last episode of
+  Dawson's Creek, this was the Icehouse, Pacey's restaurant.
+
+  It was not the first Icehouse. The original stood a couple of blocks north, at 115 South Water
+  Street. When the series needed its ending, it found a new waterfront to finish on.
+
+  During the course of the series, 128 episodes over six seasons were filmed in Wilmington and our
+  Island Beaches. The story of Capeside closed here, beside a real river.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "The story of Capeside closed here, beside a real river."
+    source: 1
+    quote: "This riverfront restaurant served as the location of Pacey's \"Icehouse,\" which was seen in the show's finale."
+  - says: "It was not the first Icehouse."
+    source: 1
+    quote: "you'll find the location where the original \"Icehouse\" restaurant once stood."
+  - says: "In the last episode of Dawson's Creek, this was the Icehouse, Pacey's restaurant."
+    source: 1
+    quote: "This riverfront restaurant served as the location of Pacey's \"Icehouse,\" which was seen in the show's finale."
+  - says: "The original stood a couple of blocks north, at 115 South Water Street."
+    source: 1
+    quote: "Head north a couple of blocks to 115 South Water Street and you'll find the location where the original \"Icehouse\" restaurant once stood."
+  - says: "During the course of the series, 128 episodes over six seasons were filmed in Wilmington and our Island Beaches."
+    source: 1
+    quote: "During the course of the series, 128 episodes over six seasons were filmed in Wilmington and our Island Beaches."
+sources:
+  - title: "Dawson's Creek Locations Tour"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/dawsons-creek-locations-tour/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts

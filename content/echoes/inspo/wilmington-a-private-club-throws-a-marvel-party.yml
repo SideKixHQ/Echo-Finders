@@ -1,0 +1,50 @@
+# Inspo, film and television (from James's document) for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Overture 2026-09-23.0 address point for 206 Chestnut Street, the address in James's document.
+id: wilmington-a-private-club-throws-a-marvel-party
+title: "A Private Club Throws a Marvel Party"
+summary: "Iron Man 3 filmed a New Year's Eve party at Wilmington's Cape Fear Club."
+place: "Cape Fear Club, Chestnut Street, Wilmington, North Carolina"
+at: { lat: 34.237511, lng: -77.947357 }
+triggerRadiusKm: 0.05
+category: inspo
+inspo:
+  kind: creation
+  evidence: building
+format: look-below
+durationS: 32
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, iron-man-3, downtown]
+teaser: "Tony Stark's last solo film counted down to midnight here."
+script: |
+  Look at the Cape Fear Club from the sidewalk. It is a private club, and you will not need to go
+  in to hear this.
+
+  Iron Man 3 shot a New Year's Eve party here. It was the final solo movie of Tony Stark, played by
+  Robert Downey Jr., and it was set at Christmastime.
+
+  The same film used the North Carolina Port of Wilmington for its Iron Legion scene. A superhero
+  story counted down to midnight in a quiet building on Chestnut Street.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "A superhero story counted down to midnight in a quiet building on Chestnut Street."
+    source: 1
+    quote: "There's even a New Year's Eve party shot at Wilmington's Cape Fear Club."
+  - says: "Iron Man 3 shot a New Year's Eve party here."
+    source: 1
+    quote: "There's even a New Year's Eve party shot at Wilmington's Cape Fear Club."
+  - says: "It was the final solo movie of Tony Stark, played by Robert Downey Jr., and it was set at Christmastime."
+    source: 1
+    quote: "the final solo movie of Tony Stark (Robert Downey Jr.) was set at Christmastime."
+  - says: "The same film used the North Carolina Port of Wilmington for its Iron Legion scene."
+    source: 1
+    quote: "including the Iron Legion scene at the N.C. Port of Wilmington."
+sources:
+  - title: "Wilmington's Holiday Spirit Shines in Locally Made Movies and TV Shows"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/wilmingtons-holiday-spirit-shines-in-locally-made-movies-tv-shows/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts

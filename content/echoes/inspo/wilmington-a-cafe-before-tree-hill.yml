@@ -1,0 +1,51 @@
+# Inspo, film and television (from James's document) for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Overture 2026-09-23.0 address point for 300 North Front Street.
+id: wilmington-a-cafe-before-tree-hill
+title: "A Caf\u00e9 at the Beginning and the End"
+summary: "300 North Front Street was Karen's Cafe in the One Tree Hill pilot and Tree Hill Cafe in the final season."
+place: "300 North Front Street, Wilmington, North Carolina"
+at: { lat: 34.23896, lng: -77.949013 }
+triggerRadiusKm: 0.05
+category: inspo
+inspo:
+  kind: creation
+  evidence: building
+format: look-below
+durationS: 34
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, one-tree-hill, downtown]
+teaser: "The first episode and the last both came back to this corner."
+script: |
+  Look at the corner storefront. Today it is a pizza place.
+
+  In the pilot episode of One Tree Hill, this building stood in as Karen's Cafe. Nine seasons
+  later, in the show's final season, it came back as Tree Hill Cafe.
+
+  Most locations in a long series come and go. This building bookended the whole story.
+
+  Between 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area.
+  The beginning and the end of all of them met at this corner.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In the pilot episode of One Tree Hill, this building stood in as Karen's Cafe."
+    source: 1
+    quote: "The building at 300 North Front St. stood in as \"Karen's Cafe\" in the pilot episode and also \"Tree Hill Cafe\" in the show's final season."
+  - says: "Nine seasons later, in the show's final season, it came back as Tree Hill Cafe."
+    source: 1
+    quote: "The building at 300 North Front St. stood in as \"Karen's Cafe\" in the pilot episode and also \"Tree Hill Cafe\" in the show's final season."
+  - says: "Today it is a pizza place."
+    source: 1
+    quote: "This local pizza joint stood in as \"Karen's Cafe\" in the pilot episode"
+  - says: "Between 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area."
+    source: 1
+    quote: "Between 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area."
+sources:
+  - title: "One Tree Hill Tour"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/one-tree-hill-walking-tour/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts

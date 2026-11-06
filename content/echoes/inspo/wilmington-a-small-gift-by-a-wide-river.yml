@@ -1,0 +1,51 @@
+# Inspo, film and television (from James's document) for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: The Riverwalk at the foot of Dock Street, west of the Overture point for 7 Dock St. The source places the bench at the base of Dock Street, not at a point (area).
+id: wilmington-a-small-gift-by-a-wide-river
+title: "A Small Gift Beside a Wide River"
+summary: "Near the foot of Dock Street on the Riverwalk is the 'Naley Bench' from One Tree Hill."
+place: "Wilmington Riverwalk, near the foot of Dock Street, Wilmington, North Carolina"
+at: { lat: 34.2342, lng: -77.9499 }
+triggerRadiusKm: 0.06
+category: inspo
+inspo:
+  kind: creation
+  evidence: site
+format: look-below
+durationS: 35
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, one-tree-hill, riverwalk]
+teaser: "A Cracker Jack bracelet, and a bench fans still come looking for."
+script: |
+  Look along the Riverwalk, near the foot of Dock Street and the old J.W. Brooks building.
+
+  Somewhere along here is the bench fans call the Naley Bench. It is where Nathan gave Haley a
+  bracelet out of a box of Cracker Jack.
+
+  A wide river, and a very small gift. That is why people remember it.
+
+  Fans still come to recreate the scene. The ice cream shop nearby sells replica bracelets, and
+  you can buy the Cracker Jack yourself. A prize from a snack box became a souvenir.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look along the Riverwalk, near the foot of Dock Street and the old J.W. Brooks building."
+    source: 1
+    quote: "At the base of Dock Street along Water Street near the historic J.W. Brooks building"
+  - says: "Somewhere along here is the bench fans call the Naley Bench."
+    source: 1
+    quote: "you'll find the famous \"Naley Bench\" where Nathan gave Haley the Cracker Jack bracelet."
+  - says: "It is where Nathan gave Haley a bracelet out of a box of Cracker Jack."
+    source: 1
+    quote: "you'll find the famous \"Naley Bench\" where Nathan gave Haley the Cracker Jack bracelet."
+  - says: "The ice cream shop nearby sells replica bracelets, and you can buy the Cracker Jack yourself."
+    source: 1
+    quote: "Purchase a replica bracelet from nearby Riverwalk Scoop Shack and grab a box of Cracker Jack to recreate this famous scene along the Riverwalk."
+sources:
+  - title: "One Tree Hill Tour"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/one-tree-hill-walking-tour/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
