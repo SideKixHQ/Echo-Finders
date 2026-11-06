@@ -14,6 +14,8 @@ visibility: at-hand
 certainty: documented
 minAge: 0
 quality: 0.75
+# Rarity (docs/13-story-mix.md): the listening spot is inside; see the header.
+inside: true
 tags: [washington, dc-core, union-station, railways]
 teaser: "Walk through to the concourse behind the main hall, and look at the floor."
 script: |
