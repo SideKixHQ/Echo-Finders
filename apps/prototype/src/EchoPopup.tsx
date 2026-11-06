@@ -59,6 +59,11 @@ export interface EchoPopupProps {
    * silently ignored on an echo with no plate, which is most of them today (ADR-0006).
    */
   readonly onCamera?: (echo: Echo) => void;
+  /**
+   * "Something wrong with this story?" Opens the feedback form set to a wrong fact and
+   * tagged with this echo (`Feedback.tsx`). Absent when the build has nowhere to send it.
+   */
+  readonly onReport?: (echo: Echo) => void;
   readonly onClose: () => void;
 }
 
@@ -107,6 +112,7 @@ export function EchoPopup({
   inRoutes = 0,
   onPlay,
   onCamera,
+  onReport,
   onClose,
 }: EchoPopupProps) {
   const metres = distanceKm === null ? null : distanceKm * 1000;
@@ -302,6 +308,16 @@ export function EchoPopup({
           </button>
         )}
       </div>
+
+      {/*
+        Last and quiet: a library that promises it is verified owes the listener a way to
+        say when it is not, at the moment they notice, without leaving the story.
+      */}
+      {onReport && (
+        <button className="pop-report" onClick={() => onReport(echo)} aria-haspopup="dialog">
+          Something wrong with this story?
+        </button>
+      )}
     </div>
   );
 }

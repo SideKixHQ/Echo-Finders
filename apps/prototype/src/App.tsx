@@ -8,6 +8,8 @@ import { RouteMap, type PinState } from "./RouteMap";
 import { Collection } from "./Collection";
 import { IndexedDbCollection } from "./collection-store";
 import { Privacy } from "./Privacy";
+import { ReportEcho } from "./Feedback";
+import { feedbackAvailable } from "./feedback";
 import { readSettings, saveSettings } from "./settings-store";
 import { Nav, type Tab } from "./Nav";
 import { Plan } from "./Plan";
@@ -1541,6 +1543,8 @@ export function App() {
   const [routes, setRoutes] = useState<readonly SavedRoute[]>(readRoutes);
   useEffect(() => writeRoutes(routes), [routes]);
   const [routePicker, setRoutePicker] = useState<Echo | null>(null);
+  /** The echo whose "Something wrong with this story?" is open (`ReportEcho`). */
+  const [reporting, setReporting] = useState<Echo | null>(null);
   const [deletedRoute, setDeletedRoute] = useState<{ route: SavedRoute; index: number } | null>(null);
   const [echoesView, setEchoesView] = useState<"echoes" | "routes">("echoes");
   const ordered = (ids: readonly string[]) => {
@@ -2129,7 +2133,7 @@ export function App() {
                 already doing: everything the sheet's nearby card carried is here, plus the
                 plate and the rule about how close you have to get.
               */}
-              {selectedEcho && !routePicker ? (
+              {selectedEcho && !routePicker && !reporting ? (
                 <EchoPopup
                   echo={selectedEcho.echo}
                   distanceKm={selectedEcho.distanceKm}
@@ -2187,9 +2191,18 @@ export function App() {
                     now from 35,000 feet.
                   */
                   {...(selfDirected ? { onCamera: setCamera } : {})}
+                  {...(feedbackAvailable(import.meta.env.VITE_SENTRY_DSN) ? { onReport: setReporting } : {})}
                   onClose={() => setSelectedId(null)}
                 />
               ) : null}
+              {reporting && (
+                <ReportEcho
+                  echo={reporting}
+                  dsn={import.meta.env.VITE_SENTRY_DSN}
+                  release={__BUILD_COMMIT__}
+                  onClose={() => setReporting(null)}
+                />
+              )}
               {routePicker && (
                 <AddToRoute
                   echo={routePicker}

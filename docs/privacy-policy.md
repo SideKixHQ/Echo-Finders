@@ -69,7 +69,8 @@ five reports per visit. They go to our error-tracking service, Sentry, and are u
 fix the app.
 
 ### Feedback you send us
-**Only when you press Send**, in **Settings → Tell us → Send feedback**.
+**Only when you press Send**, in **Settings → Tell us → Send feedback**, or from a story's
+card under **Something wrong with this story?**, which also says which story it is about.
 **What is sent:** what you wrote, which kind of feedback you chose, the version of the app
 and the page you were on. Your email address only if you type it in, so that we can reply.
 **What is not:** where you are, what you have found, or anything else about you. It goes to
