@@ -36,6 +36,14 @@ export interface Feedback {
   readonly kind: FeedbackKind;
   readonly message: string;
   readonly email?: string;
+  /**
+   * The echo it is about, when it was sent from that echo's card ("Something wrong with
+   * this story?"). Tagged by id so every report on one echo can be found together, and
+   * named in the message so the inbox list says which story without opening it.
+   */
+  readonly echo?: { readonly id: string; readonly title: string };
+  /** Where in the app it was sent from. */
+  readonly source?: "settings" | "echo-card";
 }
 
 /** Feedback can be sent from this build only when Sentry is configured for it. */
@@ -76,14 +84,14 @@ export function feedbackEnvelope(
     level: "info",
     release,
     environment: "production",
-    tags: { kind: feedback.kind },
+    tags: { kind: feedback.kind, ...(feedback.echo ? { echo: feedback.echo.id } : {}) },
     contexts: {
       feedback: {
         // The kind leads the message so it reads in the inbox list, where tags do not show.
-        message: `[${FEEDBACK_KINDS[feedback.kind]}] ${feedback.message.trim().slice(0, MAX_MESSAGE)}`,
+        message: `[${FEEDBACK_KINDS[feedback.kind]}${feedback.echo ? ` · ${feedback.echo.title}` : ""}] ${feedback.message.trim().slice(0, MAX_MESSAGE)}`,
         ...(email ? { contact_email: email } : {}),
         url: path.replace(/[?#].*$/, ""),
-        source: "settings",
+        source: feedback.source ?? "settings",
       },
     },
   };
