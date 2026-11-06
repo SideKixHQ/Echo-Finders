@@ -11156,6 +11156,133 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-a-bookshop-plays-a-bookshop",
+    "title": "A Bookshop Plays a Bookshop",
+    "summary": "Papercut Books stood in for the Whale of a Tale Bookshop in The Summer I Turned Pretty.",
+    "point": {
+      "at": {
+        "lat": 34.235283,
+        "lng": -77.94722
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Papercut Books, downtown Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 31,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the bookshop window. In The Summer I Turned Pretty, this shop played the Whale of a\nTale Bookshop.\n\nThere is a neat loop in that. The series began as a novel, and when it needed a bookshop in its\nfictional beach town, it found a real independent one here.\n\nInside, you can buy a copy of The Summer I Turned Pretty. The book became a show, the show\nborrowed a bookshop, and the bookshop now sells the book.\n",
+    "teaser": "A story that began as a book came back to a bookshop.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "the-summer-i-turned-pretty",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-bookshop-plays-a-bookshop",
+        "durationS": 31
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-cafe-before-tree-hill",
+    "title": "A Café at the Beginning and the End",
+    "summary": "300 North Front Street was Karen's Cafe in the One Tree Hill pilot and Tree Hill Cafe in the final season.",
+    "point": {
+      "at": {
+        "lat": 34.23896,
+        "lng": -77.949013
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "300 North Front Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 34,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the corner storefront. Today it is a pizza place.\n\nIn the pilot episode of One Tree Hill, this building stood in as Karen's Cafe. Nine seasons\nlater, in the show's final season, it came back as Tree Hill Cafe.\n\nMost locations in a long series come and go. This building bookended the whole story.\n\nBetween 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area.\nThe beginning and the end of all of them met at this corner.\n",
+    "teaser": "The first episode and the last both came back to this corner.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "one-tree-hill",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-cafe-before-tree-hill",
+        "durationS": 34
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-college-goes-back-to-high-school",
+    "title": "A College Building Goes Back to High School",
+    "summary": "The Schwartz Center's front entrance was the exterior of Tree Hill High School.",
+    "point": {
+      "at": {
+        "lat": 34.242859,
+        "lng": -77.948952
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Joe and Barbara Schwartz Center, 610 North Front Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 38,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the front entrance. On television, this was Tree Hill High School.\n\nThe Joe and Barbara Schwartz Center belongs to Cape Fear Community College. Its front was the\noutside of the high school, and round the back is where exterior scenes of the gym were filmed.\n\nIt had another part to play. Dawson's Creek used it too, as a film festival lobby.\n\nA real college, playing a fictional high school, for a show about growing up. For a generation\nof viewers, this doorway was where every school day began.\n",
+    "teaser": "The front of Tree Hill High is a college building. Walk round the back for the gym.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "one-tree-hill",
+      "dawsons-creek",
+      "cfcc"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-college-goes-back-to-high-school",
+        "durationS": 38
+      }
+    ]
+  },
+  {
     "id": "wilmington-a-garden-with-different-jobs",
     "title": "A Garden with Different Jobs",
     "summary": "These gardens have different parts with different jobs.",
@@ -11194,6 +11321,48 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-a-goodbye-in-a-living-garden",
+    "title": "A Goodbye in a Living Garden",
+    "summary": "The Ability Garden at the New Hanover County Arboretum is where Jen said goodbye in the Dawson's Creek finale.",
+    "point": {
+      "at": {
+        "lat": 34.210537,
+        "lng": -77.835495
+      },
+      "triggerRadiusKm": 0.12,
+      "place": "New Hanover County Arboretum, 6206 Oleander Drive, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 34,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look for the Ability Garden. In the final episode of Dawson's Creek, this is where Jen said her\ngoodbye.\n\nOf all the places the series could have chosen for its saddest scene, it chose a garden: a\nplace that is always in the middle of something growing, ending and coming back.\n\nDuring the course of the series, 128 episodes over six seasons were filmed in Wilmington and our\nIsland Beaches. The show's hardest farewell was filmed among the plants.\n",
+    "teaser": "The last goodbye of Dawson's Creek was filmed in a garden.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "site"
+    },
+    "tags": [
+      "film",
+      "dawsons-creek",
+      "garden"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-goodbye-in-a-living-garden",
+        "durationS": 34
+      }
+    ]
+  },
+  {
     "id": "wilmington-a-government-before-independence",
     "title": "A Government Before Independence",
     "summary": "The old courthouse at this corner housed meetings of the Wilmington Council of Safety.",
@@ -11227,6 +11396,48 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/wilmington-a-government-before-independence",
         "durationS": 67
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-heart-to-heart-over-pizza",
+    "title": "A Heart-to-Heart Over Pizza",
+    "summary": "Benny's Big Time Pizzeria is where Belly and Steven talk over pizza in The Summer I Turned Pretty.",
+    "point": {
+      "at": {
+        "lat": 34.21637,
+        "lng": -77.944901
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Benny's Big Time Pizzeria, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 29,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the pizzeria. In The Summer I Turned Pretty, this is where Belly and her brother Steven\nshare a heart-to-heart over pizza.\n\nFans who want the full television moment ask for a table near the cheese grater mural in the\nback.\n\nA brother and a sister, a slice each, saying the thing that is hard to say. The show filmed\nit in a working restaurant, where anyone can order the same pizza.\n",
+    "teaser": "Look for the cheese grater mural. That is the table.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "the-summer-i-turned-pretty",
+      "south-front"
+    ],
+    "remoteness": 0.74,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-heart-to-heart-over-pizza",
+        "durationS": 29
       }
     ]
   },
@@ -11307,6 +11518,49 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-a-memory-borrowed-from-the-cotton-exchange",
+    "title": "A Childhood Memory Borrowed From Wilmington",
+    "summary": "The Cotton Exchange was the backdrop for young Belly and Conrad in The Summer I Turned Pretty, and a Dawson's Creek location.",
+    "point": {
+      "at": {
+        "lat": 34.2395,
+        "lng": -77.9493
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "The Cotton Exchange, North Front Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 33,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the old brick buildings of the Cotton Exchange, now full of local shops.\n\nIn season three of The Summer I Turned Pretty, this was the backdrop for young Belly and Conrad:\na memory, filmed in real brick. Long before that, Dawson's Creek filmed in the courtyard and the\nparking lot here.\n\nTeenage television keeps coming back to this courtyard. When a story needs to look back at\nchildhood, it helps to film somewhere that already feels old.\n",
+    "teaser": "Young Belly and Conrad, and Dawson's Creek before them.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "the-summer-i-turned-pretty",
+      "dawsons-creek",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-memory-borrowed-from-the-cotton-exchange",
+        "durationS": 33
+      }
+    ]
+  },
+  {
     "id": "wilmington-a-museum-begins-with-one-case",
     "title": "A Museum Begins with One Case",
     "summary": "This museum did not begin with a building full of trains.",
@@ -11381,6 +11635,48 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-a-private-club-throws-a-marvel-party",
+    "title": "A Private Club Throws a Marvel Party",
+    "summary": "Iron Man 3 filmed a New Year's Eve party at Wilmington's Cape Fear Club.",
+    "point": {
+      "at": {
+        "lat": 34.237511,
+        "lng": -77.947357
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Cape Fear Club, Chestnut Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 32,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the Cape Fear Club from the sidewalk. It is a private club, and you will not need to go\nin to hear this.\n\nIron Man 3 shot a New Year's Eve party here. It was the final solo movie of Tony Stark, played by\nRobert Downey Jr., and it was set at Christmastime.\n\nThe same film used the North Carolina Port of Wilmington for its Iron Legion scene. A superhero\nstory counted down to midnight in a quiet building on Chestnut Street.\n",
+    "teaser": "Tony Stark's last solo film counted down to midnight here.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "iron-man-3",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-private-club-throws-a-marvel-party",
+        "durationS": 32
+      }
+    ]
+  },
+  {
     "id": "wilmington-a-real-riverwalk-an-invented-romance",
     "title": "A Real Riverwalk, an Invented Romance",
     "summary": "Wilmington's tourism authority identifies this riverfront area as the Dawson's Creek location of Andie and Pacey's first kiss.",
@@ -11451,6 +11747,174 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/wilmington-a-residence-becomes-a-museum",
         "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-restaurant-at-the-end-of-the-story",
+    "title": "A Restaurant at the End of the Story",
+    "summary": "Elijah's at 2 Ann Street was Pacey's Icehouse in the Dawson's Creek finale.",
+    "point": {
+      "at": {
+        "lat": 34.231327,
+        "lng": -77.949242
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Elijah's, 2 Ann Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 38,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the riverfront restaurant at the southern end of the Riverwalk. In the last episode of\nDawson's Creek, this was the Icehouse, Pacey's restaurant.\n\nIt was not the first Icehouse. The original stood a couple of blocks north, at 115 South Water\nStreet. When the series needed its ending, it found a new waterfront to finish on.\n\nDuring the course of the series, 128 episodes over six seasons were filmed in Wilmington and our\nIsland Beaches. The story of Capeside closed here, beside a real river.\n",
+    "teaser": "Dawson's Creek ended where the river bends.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "dawsons-creek",
+      "riverwalk"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-restaurant-at-the-end-of-the-story",
+        "durationS": 38
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-small-gift-by-a-wide-river",
+    "title": "A Small Gift Beside a Wide River",
+    "summary": "Near the foot of Dock Street on the Riverwalk is the 'Naley Bench' from One Tree Hill.",
+    "point": {
+      "at": {
+        "lat": 34.2342,
+        "lng": -77.9499
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Wilmington Riverwalk, near the foot of Dock Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 35,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along the Riverwalk, near the foot of Dock Street and the old J.W. Brooks building.\n\nSomewhere along here is the bench fans call the Naley Bench. It is where Nathan gave Haley a\nbracelet out of a box of Cracker Jack.\n\nA wide river, and a very small gift. That is why people remember it.\n\nFans still come to recreate the scene. The ice cream shop nearby sells replica bracelets, and\nyou can buy the Cracker Jack yourself. A prize from a snack box became a souvenir.\n",
+    "teaser": "A Cracker Jack bracelet, and a bench fans still come looking for.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "site"
+    },
+    "tags": [
+      "film",
+      "one-tree-hill",
+      "riverwalk"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-small-gift-by-a-wide-river",
+        "durationS": 35
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-table-at-circa-1922",
+    "title": "A Table With Things Left Unsaid",
+    "summary": "Circa 1922 is where Conrad and Jeremiah meet their father in The Summer I Turned Pretty.",
+    "point": {
+      "at": {
+        "lat": 34.235664,
+        "lng": -77.948624
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Circa 1922, North Front Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 32,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the restaurant. In The Summer I Turned Pretty, Conrad and Jeremiah meet their dad here\nfor a meal.\n\nA restaurant scene is a writer's favorite pressure: nobody can leave before the food arrives, and\neverybody has to be polite in public. Whatever the brothers left unsaid, they left it at a table here.\n\nThe restaurant is known for its seasonal American cooking. On screen, it served a family\nsomething harder to swallow.\n",
+    "teaser": "Two brothers meet their father for a meal.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "the-summer-i-turned-pretty",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-table-at-circa-1922",
+        "durationS": 32
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-warehouse-with-a-second-life",
+    "title": "A Warehouse With a Second Life",
+    "summary": "1121 South Front Street was TRIC, the One Tree Hill nightclub, and now runs tours.",
+    "point": {
+      "at": {
+        "lat": 34.220554,
+        "lng": -77.946777
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "1121 South Front Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 40,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the building in front of you. On screen, it was TRIC.\n\nTRIC was the nightclub at the heart of One Tree Hill, and this is where it was filmed. The show\nended, and the building did not go back to being anonymous.\n\nToday it runs TRIC Tours. Visitors walk through at their own pace and take photos with replica\nprops from the characters' rooms and the record label.\n\nBetween 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area. Here,\nthe set outlived the show and became a place people travel to.\n",
+    "teaser": "The show's nightclub is still here, and you can still go in.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "one-tree-hill",
+      "south-front"
+    ],
+    "remoteness": 0.51,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-warehouse-with-a-second-life",
+        "durationS": 40
       }
     ]
   },
@@ -11567,6 +12031,48 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-before-streaming-this-door",
+    "title": "Before Streaming, There Was This Door",
+    "summary": "212 North Front Street was Screen Play Video, where Pacey worked in Dawson's Creek.",
+    "point": {
+      "at": {
+        "lat": 34.237808,
+        "lng": -77.948868
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "212 North Front Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 42,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the storefront at 212 North Front Street. In Dawson's Creek, this was Screen Play\nVideo, where Pacey worked after school.\n\nA video store in a show about a boy who wanted to make films. The shelves were the point: rows\nof other people's stories, waiting to be rented for the weekend.\n\nDuring the course of the series, 128 episodes over six seasons were filmed in Wilmington and our\nIsland Beaches. It catapulted the careers of James Van Der Beek, Katie Holmes, Joshua Jackson and\nMichelle Williams. Some of that began behind a counter in this storefront.\n",
+    "teaser": "Pacey's after-school job was behind this storefront.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "dawsons-creek",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-before-streaming-this-door",
+        "durationS": 42
+      }
+    ]
+  },
+  {
     "id": "wilmington-bricks-that-crossed-two-churches",
     "title": "Bricks That Crossed Two Churches",
     "summary": "The present church replaced an earlier building, but some of the earlier church came with it.",
@@ -11638,6 +12144,48 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "UrTldiIxfedDl9tlesyS",
         "audioKey": "speech/wilmington-calling-home-before-a-pocket-phone",
         "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-capeside-high-was-a-university",
+    "title": "Capeside High Was a University",
+    "summary": "UNCW doubled as the Capeside High School campus in Dawson's Creek; Alderman Hall is its best-known building.",
+    "point": {
+      "at": {
+        "lat": 34.226688,
+        "lng": -77.877945
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Alderman Hall, UNC Wilmington, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 41,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at Alderman Hall. Fans of Dawson's Creek know it as Capeside High.\n\nThe University of North Carolina Wilmington doubled as the Capeside High School campus, and\nAlderman Hall is one of the most recognizable buildings in the show.\n\nReal students have walked these paths toward real degrees, while fictional teenagers walked them\ntoward fictional exams. During the course of the series, 128 episodes over six seasons were filmed\nin Wilmington and our Island Beaches. For a while, this campus ran on lectures and on fiction at the same time.\n",
+    "teaser": "Dawson's Creek went to high school at UNCW.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "dawsons-creek",
+      "uncw"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-capeside-high-was-a-university",
+        "durationS": 41
       }
     ]
   },
@@ -12467,6 +13015,49 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-one-parish-many-screen-worlds",
+    "title": "One Parish, Many Screen Worlds",
+    "summary": "St. James Parish has been a filming location from Idlewild to Sleepy Hollow and Words on Bathroom Walls.",
+    "point": {
+      "at": {
+        "lat": 34.235325,
+        "lng": -77.945763
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "St. James Parish, 25 South Third Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 36,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the old church and its grounds. They have been on screen since One Tree Hill began.\n\nSt. James lists the productions itself. One Tree Hill filmed here, and its school served as\nJamie's preschool. Sleepy Hollow filmed here. Words on Bathroom Walls filmed on the front lawn,\nand in two of the parish halls. Idlewild came in 2006, and The Supremes at Earl's All-You-Can-Eat\nin 2022.\n\nThose stories all needed somewhere that felt like it had been here a long time. This parish\nhad.\n",
+    "teaser": "A church that has been on screen for twenty years.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "site"
+    },
+    "tags": [
+      "film",
+      "one-tree-hill",
+      "sleepy-hollow",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-one-parish-many-screen-worlds",
+        "durationS": 36
+      }
+    ]
+  },
+  {
     "id": "wilmington-robert-taylor-beyond-wilmington",
     "title": "Robert Taylor Beyond Wilmington",
     "summary": "Robert Robinson Taylor was born in Wilmington and became MIT's first known Black graduate, completing his degree in 1892.",
@@ -12879,6 +13470,90 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-the-beach-tournament-off-the-beach",
+    "title": "The Beach Tournament That Wasn't on the Beach",
+    "summary": "The Season 1 volleyball tournament in The Summer I Turned Pretty was filmed at Capt'n Bill's sand courts, not on a beach.",
+    "point": {
+      "at": {
+        "lat": 34.241154,
+        "lng": -77.891647
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Capt'n Bill's Backyard Grill, Market Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 33,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the sand courts. On screen, the season one volleyball tournament in The Summer I\nTurned Pretty looked like the beach.\n\nIt was not filmed on the beach. It was filmed here, at a local hangout in Midtown with sand\ncourts of its own.\n\nThat is the trick of a location: the sand is real, the sea is implied. Wilmington is often\nnicknamed Wilmywood, and this is the kind of craft that earned it. Cousins Beach is partly a\nbackyard in Midtown.\n",
+    "teaser": "Cousins Beach played volleyball miles from the sea.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "site"
+    },
+    "tags": [
+      "film",
+      "the-summer-i-turned-pretty",
+      "midtown"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-beach-tournament-off-the-beach",
+        "durationS": 33
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-bridge-before-the-story",
+    "title": "The Bridge Before the Story",
+    "summary": "The Harry Forden Bridge is the one-lane truss bridge from the opening of One Tree Hill.",
+    "point": {
+      "at": {
+        "lat": 34.2437,
+        "lng": -77.9431
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Harry Forden Bridge, North Sixth Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 41,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the steel trusses over the street. Fans call this the One Tree Hill Bridge.\n\nIt is a one-lane metal truss bridge, and for the first four seasons it opened the show: Chad\nMichael Murray in a gray hoodie, bouncing a basketball across it.\n\nThat was the first thing viewers saw of a town called Tree Hill. The town was\nfictional. The bridge was real, and it is in front of you.\n\nBetween 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area.\nEach of them depended on real places standing in for imaginary ones.\n",
+    "teaser": "A boy, a basketball and this bridge. Four seasons began here.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "one-tree-hill",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-bridge-before-the-story",
+        "durationS": 41
+      }
+    ]
+  },
+  {
     "id": "wilmington-the-building-behind-the-mansion",
     "title": "The Building Behind the Mansion",
     "summary": "The mansion commands attention.",
@@ -12987,6 +13662,48 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/wilmington-the-ceiling-nobody-replaced",
         "durationS": 25
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-church-of-the-television-weddings",
+    "title": "The Church of Television Weddings",
+    "summary": "Grace United Methodist Church was the One Tree Hill wedding church, for weddings held and not held.",
+    "point": {
+      "at": {
+        "lat": 34.239353,
+        "lng": -77.944908
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Grace United Methodist Church, 401 Grace Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 38,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the church doors. On television, they opened on a wedding.\n\nBrooke and Julian were married here. But this church also held two weddings that never\nhappened: Lucas and Lindsey were supposed to marry here, and so were Keith and Jules.\n\nA writer who needs a wedding can choose whether it goes ahead. A real church, with a congregation\nof its own, played both endings.\n\nBetween 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area.\nSome of its turning points came at this door.\n",
+    "teaser": "One wedding happened here. Two others were supposed to.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "one-tree-hill",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-church-of-the-television-weddings",
+        "durationS": 38
       }
     ]
   },
@@ -14213,6 +14930,48 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-the-park-that-became-a-promise",
+    "title": "The Park That Became a Promise",
+    "summary": "Greenfield Park was the set of Lucas and Peyton's outdoor wedding in One Tree Hill.",
+    "point": {
+      "at": {
+        "lat": 34.214024,
+        "lng": -77.943939
+      },
+      "triggerRadiusKm": 0.25,
+      "place": "Greenfield Park, Burnett Boulevard, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 37,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look through the trees toward the water. In season six of One Tree Hill, this park was\ntransformed into the set of Lucas and Peyton's outdoor wedding.\n\nAnother production came here for something tender. In the Hallmark film\nChristmas in Conway, a husband rallies a town to give his dying wife one last Christmas, and\nGreenfield Park was in that story too.\n\nStories about promises, filmed in a public park anyone can walk into. Wilmington lends its\nordinary places to the moments people remember.\n",
+    "teaser": "A wedding under the trees here, and a Christmas wish nearby.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "site"
+    },
+    "tags": [
+      "film",
+      "one-tree-hill",
+      "greenfield"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-park-that-became-a-promise",
+        "durationS": 37
+      }
+    ]
+  },
+  {
     "id": "wilmington-the-pelican-beside-the-marina",
     "title": "The Pelican Beside the Marina",
     "summary": "Dumay Gorham's Pelican places a coastal bird in sculptural form beside Port City Marina.",
@@ -14481,6 +15240,49 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-the-theatre-inside-the-tv-town",
+    "title": "The Theatre Inside the Television Town",
+    "summary": "Thalian Hall was the Rialto Theatre in Dawson's Creek and Tree Hill's town hall steps in One Tree Hill.",
+    "point": {
+      "at": {
+        "lat": 34.237225,
+        "lng": -77.945625
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Thalian Hall, 310 Chestnut Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 34,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the front steps and the columns of Thalian Hall.\n\nFictional towns keep borrowing this building. For Dawson's Creek, its interior became the Rialto\nTheatre in Capeside. For One Tree Hill, the front steps and Corinthian columns frequently stood\nin as the steps of Tree Hill's town hall.\n\nA real theatre became the civic heart of places that never existed. The building did not have to change at all. The cameras just\npointed at it and gave it a new name.\n",
+    "teaser": "Two fictional towns borrowed this building: one its steps, one its stage.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "dawsons-creek",
+      "one-tree-hill",
+      "theatre"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-theatre-inside-the-tv-town",
+        "durationS": 34
+      }
+    ]
+  },
+  {
     "id": "wilmington-the-tiny-train-with-a-huge-record",
     "title": "The Tiny Train with a Huge Record",
     "summary": "In April 2011, model railroaders made a very small kind of train do something very big inside this convention center.",
@@ -14552,6 +15354,49 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/wilmington-the-tree-kept-in-watercolor",
         "durationS": 68
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-tv-bar-that-became-a-real-bar",
+    "title": "When the Television Bar Became a Real Bar",
+    "summary": "Hell's Kitchen began as a temporary Dawson's Creek set and became a real bar of the same name.",
+    "point": {
+      "at": {
+        "lat": 34.236412,
+        "lng": -77.948074
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Hell's Kitchen, 118 Princess Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 39,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the sign: Hell's Kitchen. It was not built to be a bar. It was built to be filmed.\n\nFor Dawson's Creek, this was a temporary set. When the show wrapped, the bar was sold with its\ncontents to a local restaurateur, who turned it into a real bar with the same name.\n\nThen the fiction came back for it. One Tree Hill filmed its Swinging Donkey Bar scenes here, and\nThe Summer I Turned Pretty turned it into a lounge.\n\nA set that was meant to be taken down became a place with regulars, and the shows kept finding it.\n",
+    "teaser": "It was built as a set. Then somebody bought it, contents and all.",
+    "inspo": {
+      "kind": "connection",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "dawsons-creek",
+      "one-tree-hill",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-tv-bar-that-became-a-real-bar",
+        "durationS": 39
       }
     ]
   },
@@ -14784,6 +15629,49 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "UrTldiIxfedDl9tlesyS",
         "audioKey": "speech/wilmington-three-buildings-become-a-play-place",
         "durationS": 69
+      }
+    ]
+  },
+  {
+    "id": "wilmington-three-shows-one-arcade",
+    "title": "Three Shows, One Arcade",
+    "summary": "Jungle Rapids appears in One Tree Hill, Dawson's Creek and The Summer I Turned Pretty.",
+    "point": {
+      "at": {
+        "lat": 34.207424,
+        "lng": -77.863106
+      },
+      "triggerRadiusKm": 0.12,
+      "place": "Jungle Rapids Family Fun Park, 5320 Oleander Drive, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 31,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the arcade and the mini golf. Fictional towns keep coming here to play.\n\nDawson's Creek filmed scenes in the arcade and the Big Splash Cafe and Pizzeria. So did One Tree\nHill, along with the miniature golf course. Years later, The Summer I Turned Pretty filmed its\narcade and go-kart scenes here.\n\nOn screen they were different towns. Off screen, their teenagers all had the same favorite\nafternoon out.\n",
+    "teaser": "Tree Hill, Capeside and Cousins all came here to play.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "site"
+    },
+    "tags": [
+      "film",
+      "one-tree-hill",
+      "dawsons-creek",
+      "the-summer-i-turned-pretty"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-three-shows-one-arcade",
+        "durationS": 31
       }
     ]
   },
