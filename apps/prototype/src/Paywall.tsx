@@ -32,7 +32,7 @@
 import { useState } from "react";
 import { FREE_ECHO_LIMIT, PLANS, type City, type Echo } from "@echofinders/core";
 
-export type Plan = "city" | "allAccess";
+export type Plan = "week" | "city" | "allAccess";
 
 export interface PaywallProps {
   /**
@@ -48,6 +48,12 @@ export interface PaywallProps {
   readonly heardCount: number;
   /** All-Access already running: the City Pass would add nothing, and buying adds a year. */
   readonly allAccessRunning?: boolean;
+  /**
+   * What the City Pass costs this listener, in minor units: less than the list price when a
+   * Week Pass for this city is still running, which counts towards it (`cityPassPriceMinor`).
+   * Then the Week Pass is not offered again; the upgrade is.
+   */
+  readonly cityPassMinor?: number;
   readonly onBuy: (plan: Plan) => void;
   readonly onClose: () => void;
 }
@@ -58,11 +64,22 @@ const CITIES_WHERE_ALL_ACCESS_WINS =
 
 const COUNT_WORDS = ["", "one", "two", "three", "four", "five", "six", "seven", "eight"];
 
-export function Paywall({ echo, city: here, heardCount, allAccessRunning = false, onBuy, onClose }: PaywallProps) {
+export function Paywall({
+  echo,
+  city: here,
+  heardCount,
+  allAccessRunning = false,
+  cityPassMinor = PLANS.city.amountMinor,
+  onBuy,
+  onClose,
+}: PaywallProps) {
   const city = allAccessRunning ? null : here;
-  // The City Pass first when there is one: the visitor on a short trip is most people here.
+  const weekRunning = cityPassMinor < PLANS.city.amountMinor;
+  const cityPrice = weekRunning ? `$${(cityPassMinor / 100).toFixed(2)}` : PLANS.city.price;
+  // The City Pass first when there is one, between the cheaper way in and the better deal
+  // from a few cities up; the Week Pass is one tap away for the weekend visitor.
   const [plan, setPlan] = useState<Plan>(city ? "city" : "allAccess");
-  const chosen = city && plan === "city" ? "city" : "allAccess";
+  const chosen: Plan = city && (plan === "city" || (plan === "week" && !weekRunning)) ? plan : "allAccess";
   const wins = COUNT_WORDS[CITIES_WHERE_ALL_ACCESS_WINS] ?? String(CITIES_WHERE_ALL_ACCESS_WINS);
 
   return (
@@ -101,11 +118,44 @@ export function Paywall({ echo, city: here, heardCount, allAccessRunning = false
         )}
 
         {/*
-          Real radio buttons, so a screen reader hears "1 of 2, selected" and arrow keys
+          Real radio buttons, so a screen reader hears "1 of 3, selected" and arrow keys
           move between them. The whole card is the label, so the whole card is the target.
+
+          Only the chosen plan says what it is. Three cards each with their sentence ran
+          134px past an iPhone in Safari (audit-align, paywall); name and price on every card
+          and one description under the one you are looking at is the same information, and
+          the screen still fits without scrolling.
         */}
         <fieldset className="paywall-plans">
           <legend className="sr-only">Choose a plan</legend>
+          {/*
+            The Week Pass (James, 2026-11-06): the beach weekend, at a price nobody has to
+            think about. Not offered to someone whose week is already running; for them the
+            City Pass below shows what is left to pay.
+          */}
+          {city && !weekRunning && (
+            <label className={`paywall-plan${chosen === "week" ? " on" : ""}`}>
+              <input
+                type="radio"
+                name="plan"
+                value="week"
+                checked={chosen === "week"}
+                onChange={() => setPlan("week")}
+              />
+              <span className="paywall-plan-head">
+                <span className="paywall-plan-name">{PLANS.week.name}</span>
+                <span className="paywall-plan-price">
+                  {PLANS.week.price} <small>{PLANS.week.per}</small>
+                </span>
+              </span>
+              {chosen === "week" && (
+                <span className="paywall-plan-what">
+                  Every echo in {city.name} for the next seven days. Nothing to renew, and it
+                  counts towards the City Pass if you want it for good.
+                </span>
+              )}
+            </label>
+          )}
           {city && (
             <label className={`paywall-plan${chosen === "city" ? " on" : ""}`}>
               <input
@@ -118,13 +168,15 @@ export function Paywall({ echo, city: here, heardCount, allAccessRunning = false
               <span className="paywall-plan-head">
                 <span className="paywall-plan-name">{city.name} {PLANS.city.name}</span>
                 <span className="paywall-plan-price">
-                  {PLANS.city.price} <small>{PLANS.city.per}</small>
+                  {cityPrice} <small>{weekRunning ? "your week counted" : PLANS.city.per}</small>
                 </span>
               </span>
-              <span className="paywall-plan-what">
-                Every echo in {city.name}, for good, including the ones we add later. Nothing
-                to renew.
-              </span>
+              {chosen === "city" && (
+                <span className="paywall-plan-what">
+                  Every echo in {city.name}, for good, including the ones we add later. Nothing
+                  to renew.
+                </span>
+              )}
             </label>
           )}
           <label className={`paywall-plan${chosen === "allAccess" ? " on" : ""}`}>
@@ -141,9 +193,11 @@ export function Paywall({ echo, city: here, heardCount, allAccessRunning = false
                 {PLANS.allAccess.price} <small>{PLANS.allAccess.per}</small>
               </span>
             </span>
-            <span className="paywall-plan-what">
-              Every city, every road trip, every flight. Renews each year; cancel any time.
-            </span>
+            {chosen === "allAccess" && (
+              <span className="paywall-plan-what">
+                Every city, every road trip, every flight. Renews each year; cancel any time.
+              </span>
+            )}
           </label>
         </fieldset>
 
@@ -158,8 +212,10 @@ export function Paywall({ echo, city: here, heardCount, allAccessRunning = false
         </p>
 
         <button className="paywall-buy" onClick={() => onBuy(chosen)}>
-          {chosen === "city"
-            ? `Get the ${PLANS.city.name} · ${PLANS.city.price}`
+          {chosen === "week"
+            ? `Get the ${PLANS.week.name} · ${PLANS.week.price}`
+            : chosen === "city"
+            ? `Get the ${PLANS.city.name} · ${cityPrice}`
             : allAccessRunning
               ? `Add a year · ${PLANS.allAccess.price}`
               : `Start All-Access · ${PLANS.allAccess.price} ${PLANS.allAccess.per}`}

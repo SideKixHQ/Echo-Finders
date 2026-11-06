@@ -1,13 +1,45 @@
 /**
- * POST /api/checkout  { plan: "city" | "allAccess", cityId?, customerId? }  ->  { url }
+ * POST /api/checkout  { plan: "week" | "city" | "allAccess", cityId?, customerId? }  ->  { url }
  *
  * Opens a Stripe Checkout page. A City Pass is a one-off payment that remembers its city;
  * All-Access is a yearly subscription. Stripe's page takes the card, so no card details
  * ever touch this app. Afterwards Stripe sends the listener back with a session id, which
  * `/api/entitlement` turns into what they now own.
  */
-import { CITIES } from "@echofinders/core";
+import { CITIES, PLANS, cityPassPriceMinor, type City } from "@echofinders/core";
 import { configured, failure, isCustomerId, reply, stripe } from "./_stripe.js";
+import { lookup } from "./_lookup.js";
+
+/**
+ * A one-off price written into the session rather than a price id from the dashboard.
+ *
+ * Used for the Week Pass and for a City Pass bought by someone whose Week Pass is still
+ * running, who pays the difference (`cityPassPriceMinor`). Both amounts come from `PLANS`,
+ * so the number on the screen and the number charged are the same constant, and nothing
+ * new has to be set up in Stripe for either.
+ */
+function inlinePrice(amountMinor: number, name: string): Record<string, string | number> {
+  return {
+    "line_items[0][price_data][currency]": "usd",
+    "line_items[0][price_data][unit_amount]": amountMinor,
+    "line_items[0][price_data][product_data][name]": name,
+    "line_items[0][quantity]": 1,
+  };
+}
+
+function oneOff(plan: "city-pass" | "week-pass", city: City, customer: string | undefined, origin: string) {
+  return {
+    mode: "payment",
+    "metadata[plan]": plan,
+    "metadata[city]": city.id,
+    "payment_intent_data[metadata][plan]": plan,
+    "payment_intent_data[metadata][city]": city.id,
+    ...(customer ? { customer } : { customer_creation: "always" }),
+    ...taxAndAddress(customer),
+    success_url: `${origin}/?checkout=success&session_id={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${origin}/?checkout=cancelled`,
+  };
+}
 
 /**
  * The same on both plans. A billing address is always asked for: it is what sales tax is
@@ -33,21 +65,28 @@ export async function POST(request: Request): Promise<Response> {
   const customer = isCustomerId(body.customerId) ? body.customerId : undefined;
 
   try {
+    if (body.plan === "week") {
+      const city = CITIES.find((c) => c.id === body.cityId);
+      if (!city) return reply(400, { error: "That is not a city with a Week Pass." });
+      const session = await stripe<{ url: string }>("POST", "/checkout/sessions", {
+        ...inlinePrice(PLANS.week.amountMinor, `${city.name} ${PLANS.week.name}`),
+        ...oneOff("week-pass", city, customer, origin),
+      });
+      return reply(200, { url: session.url });
+    }
     if (body.plan === "city") {
       const city = CITIES.find((c) => c.id === body.cityId);
       if (!city) return reply(400, { error: "That is not a city with a City Pass." });
+      // A Week Pass still running counts towards it. Checked against Stripe, not the phone's
+      // word for it: the discount is only given to a customer Stripe says paid for the week.
+      const owed = customer ? cityPassPriceMinor(await lookup(customer), city.id, Date.now()) : PLANS.city.amountMinor;
+      const price =
+        owed < PLANS.city.amountMinor
+          ? inlinePrice(owed, `${city.name} ${PLANS.city.name} (your Week Pass counted)`)
+          : { "line_items[0][price]": process.env.STRIPE_PRICE_CITY_PASS, "line_items[0][quantity]": 1 };
       const session = await stripe<{ url: string }>("POST", "/checkout/sessions", {
-        mode: "payment",
-        "line_items[0][price]": process.env.STRIPE_PRICE_CITY_PASS,
-        "line_items[0][quantity]": 1,
-        "metadata[plan]": "city-pass",
-        "metadata[city]": city.id,
-        "payment_intent_data[metadata][plan]": "city-pass",
-        "payment_intent_data[metadata][city]": city.id,
-        ...(customer ? { customer } : { customer_creation: "always" }),
-        ...taxAndAddress(customer),
-        success_url: `${origin}/?checkout=success&session_id={CHECKOUT_SESSION_ID}`,
-        cancel_url: `${origin}/?checkout=cancelled`,
+        ...price,
+        ...oneOff("city-pass", city, customer, origin),
       });
       return reply(200, { url: session.url });
     }

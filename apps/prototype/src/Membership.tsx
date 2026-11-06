@@ -75,7 +75,7 @@ export function MembershipPanel({
           <strong>Membership options</strong>
           <small>
             {membership.plan === "free"
-              ? "A City Pass, or All-Access for every city, road trip and flight."
+              ? "A Week Pass, a City Pass, or All-Access for every city, road trip and flight."
               : "See the plans, or add a year of All-Access."}
           </small>
         </span>
@@ -191,6 +191,13 @@ function describe(membership: Membership, freeLeft: number): { name: string; det
       return {
         name: `${names} City Pass`,
         detail: `Every echo in ${names}, for good. Bought once: nothing to renew or cancel.`,
+      };
+    }
+    case "week-pass": {
+      const names = cityNames([membership.city]);
+      return {
+        name: `${names} Week Pass`,
+        detail: `Every echo in ${names} until ${day(membership.until)}. Want it for good? The City Pass counts what you paid.`,
       };
     }
     case "all-access": {

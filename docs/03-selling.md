@@ -9,23 +9,31 @@ got lost: it survives here rather than in a chat log.
 ## The model
 
 **Proposed 7 Oct 2026, waiting for James's sign-off.** The evidence is in
-`11-pricing-research.md`. The paywall in the prototype shows these two offers; nothing
-charges money yet.
+`11-pricing-research.md`, plus the Week Pass (James, 2026-11-06). The paywall in the
+prototype shows these three offers; nothing charges money yet.
 
 | | |
 |---|---|
 | Free | 10 echoes (proposed: 10 per city; the app counts 10 in total for now) |
+| Week Pass | **$3.99 for 7 days** from purchase. One city. Counts towards its City Pass while it runs ($6.00 more) |
 | City Pass | **$9.99 once.** One city, for good, including echoes added there later |
 | All-Access | **$34.99 a year.** Every city, road trip and flight. Renews; cancel any time |
 | Checkout | Web only (Stripe, with Apple Pay and Google Pay). No App Store purchases |
-| Floor | Nothing sold under $4.99, and no lifetime plan at launch |
+| Floor | No lifetime plan at launch. The old $4.99 floor gave way to the Week Pass (James, 2026-11-06): a beach weekend at an impulse price, with the City Pass at 2.5 times it still the better buy for a longer stay |
 
 The $6.99 lifetime unlock is retired. It priced under every comparable product (single
 audio tours sell at $8–15; Autio, the closest analogue, at $35.99 a year) and earned
 nothing when the second city launched. Anyone who bought it keeps everything.
 
 An echo outside every city (a parkway, a flight path) has no City Pass; only All-Access
-opens it. Cities are a centre and a radius in `packages/core/src/entitlement/entitlement.ts`.
+opens it. Cities are a centre and a radius in `packages/core/src/entitlement/entitlement.ts`:
+New York, and the Cape Fear Coast (James, 2026-11-06), one pass for Wilmington,
+Wrightsville, Carolina Beach, Kure Beach, Fort Fisher, Southport, Oak Island and Topsail,
+42km from downtown Wilmington.
+
+The Week Pass and the upgrade are priced in the code (`PLANS`), sent to Stripe as one-off
+prices, so nothing new is set up in the Stripe dashboard for them. The City Pass and
+All-Access still use the dashboard prices (`DEPLOY.md`, Payments).
 
 The shape is still the right one for this product: an echo costs an hour to research,
 verify and write, and then serves thousands of people for almost nothing. Produce once,
@@ -103,7 +111,7 @@ usually makes this hard.
 | | |
 |---|---|
 | Pricing model | proposed, above. The prototype paywall offers both plans; nothing is charged |
-| Paywall / free-tier split | built in the prototype: 10 free, then City Pass or All-Access |
+| Paywall / free-tier split | built in the prototype: 10 free, then Week Pass, City Pass or All-Access |
 | Accounts or identity | none |
 | Entitlements | none |
 | Stripe | not integrated |

@@ -1,9 +1,10 @@
 /**
  * Who has paid, and what that buys.
  *
- * The model is written down in `docs/03-selling.md`: ten echoes free, then a City Pass
- * (one city, bought once, for good) or All-Access (everywhere, by the year). This file is
- * the engine's half of that, and it is deliberately the only place the rule lives.
+ * The model is written down in `docs/03-selling.md`: ten echoes free, then a Week Pass
+ * (one city, seven days), a City Pass (one city, bought once, for good) or All-Access
+ * (everywhere, by the year). This file is the engine's half of that, and it is deliberately
+ * the only place the rule lives.
  *
  * **THE COUNTER IS ON HEARING, NOT ON FINDING.** That is the one real decision here and it
  * is worth stating plainly, because the doc says "10 echoes" without saying ten of what.
@@ -65,6 +66,13 @@ export interface City {
 /** The cities a pass can be bought for. New cities are one line here. */
 export const CITIES: readonly City[] = [
   { id: "new-york", name: "New York", centre: { lat: 40.7128, lng: -74.006 }, radiusKm: 40 },
+  /*
+   * The MVP region, as one pass (James, 2026-11-06): Wilmington, Wrightsville, Carolina
+   * Beach, Kure Beach, Fort Fisher, the ferry, Southport, Oak Island and Topsail, all within
+   * 42km of downtown. One purchase covers a whole beach trip and the MVP drive; a visitor to
+   * the coast does not think of Southport as a different place to buy.
+   */
+  { id: "cape-fear", name: "Cape Fear Coast", centre: { lat: 34.2357, lng: -77.9452 }, radiusKm: 42 },
 ];
 
 /** The city this point is in, or null on the road and in the air. */
@@ -90,6 +98,14 @@ export interface Entitlement {
   readonly purchasedAt?: number;
   /** City ids with a City Pass. Permanent: a City Pass never expires. */
   readonly cities?: readonly string[];
+  /**
+   * Week Passes: one city each, open until `until` (epoch ms), seven days from purchase.
+   *
+   * From purchase, not from the first story (James, 2026-11-06): the offer only appears
+   * after the free ten, so it is bought mid-trip, and Stripe, the only record, knows when
+   * it was paid for and nothing about when anyone pressed play.
+   */
+  readonly weekPasses?: readonly WeekPass[];
   /** All-Access is paid through this time, epoch ms. Renewal moves it on a year. */
   readonly allAccessUntil?: number;
   /**
@@ -100,6 +116,11 @@ export interface Entitlement {
    * delivering part of one.
    */
   readonly renews?: boolean;
+}
+
+export interface WeekPass {
+  readonly city: string;
+  readonly until: number;
 }
 
 /** Nobody has paid yet. The state every listener starts in. */
@@ -119,9 +140,32 @@ export function hasEverything(entitlement: Entitlement, nowMs: number): boolean 
  */
 export function covers(entitlement: Entitlement, at: LatLng | undefined, nowMs: number): boolean {
   if (hasEverything(entitlement, nowMs)) return true;
-  if (!at || !entitlement.cities?.length) return false;
+  if (!at) return false;
   const city = cityAt(at);
-  return city !== null && entitlement.cities.includes(city.id);
+  if (city === null) return false;
+  return Boolean(entitlement.cities?.includes(city.id)) || weekPassUntil(entitlement, city.id, nowMs) > nowMs;
+}
+
+/**
+ * When the live Week Pass for this city ends, or 0 when there is none. The latest wins,
+ * so a second week bought on day six runs on from the first.
+ */
+export function weekPassUntil(entitlement: Entitlement, cityId: string, nowMs: number): number {
+  const until = Math.max(0, ...(entitlement.weekPasses ?? []).filter((w) => w.city === cityId).map((w) => w.until));
+  return until > nowMs ? until : 0;
+}
+
+/**
+ * What a City Pass costs this listener for this city, in minor units.
+ *
+ * A live Week Pass counts towards it (James, 2026-11-06): whoever bought the week and
+ * decides they want the city for good pays the difference, $6.00, not $9.99 on top. It is
+ * the thing that makes the cheap pass safe to buy, because "I should have bought the other
+ * one" stops being true.
+ */
+export function cityPassPriceMinor(entitlement: Entitlement, cityId: string, nowMs: number): number {
+  const credit = weekPassUntil(entitlement, cityId, nowMs) > 0 ? PLANS.week.amountMinor : 0;
+  return PLANS.city.amountMinor - credit;
 }
 
 /**
@@ -171,13 +215,25 @@ export function mayHearAnother(
  * written into a button somewhere is a price that ends up differing from the one Stripe
  * charges. The real charge is defined in Stripe; this is what we promise.
  *
- * Two offers, from `docs/11-pricing-research.md` and the margin sums in `docs/03-selling.md`:
- * a City Pass for the visitor on a two-day trip, bought once with nothing to cancel, and
+ * Three offers. A Week Pass for the beach weekend (James, 2026-11-06): low enough to say yes
+ * to without thinking, and at two and a half times its price the City Pass still reads as
+ * the better buy for anyone staying longer or coming back. Then, from
+ * `docs/11-pricing-research.md` and the margin sums in `docs/03-selling.md`, a City Pass
+ * for the visitor who wants the city for good, bought once with nothing to cancel, and
  * All-Access for the traveller who will cross several cities, a road trip and a flight in
  * a year. The $6.99 lifetime unlock is retired: it priced under every comparable product
  * and earned nothing from the second city onwards.
  */
 export const PLANS = {
+  week: {
+    id: "week-pass",
+    name: "Week Pass",
+    amountMinor: 399,
+    currency: "USD",
+    price: "$3.99",
+    /** For a beach weekend: seven days in one city, bought once, nothing to cancel. */
+    per: "for 7 days",
+  },
   city: {
     id: "city-pass",
     name: "City Pass",
@@ -197,6 +253,9 @@ export const PLANS = {
   },
 } as const;
 
+/** How long a Week Pass lasts, from purchase. */
+export const WEEK_PASS_TERM_MS = 7 * 24 * 60 * 60 * 1000;
+
 /** How long one payment for All-Access lasts. */
 export const ALL_ACCESS_TERM_MS = 365 * 24 * 60 * 60 * 1000;
 
@@ -212,6 +271,7 @@ export type Membership =
   | { readonly plan: "free" }
   | { readonly plan: "lifetime" }
   | { readonly plan: "city-pass"; readonly cities: readonly string[] }
+  | { readonly plan: "week-pass"; readonly city: string; readonly until: number }
   | {
       readonly plan: "all-access";
       readonly until: number;
@@ -227,6 +287,8 @@ export function membershipOf(entitlement: Entitlement, nowMs: number): Membershi
     return { plan: "all-access", until, renews: entitlement.renews !== false, cities };
   }
   if (cities.length > 0) return { plan: "city-pass", cities };
+  const week = [...(entitlement.weekPasses ?? [])].filter((w) => w.until > nowMs).sort((a, b) => b.until - a.until)[0];
+  if (week) return { plan: "week-pass", city: week.city, until: week.until };
   return { plan: "free" };
 }
 

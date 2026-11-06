@@ -38,7 +38,7 @@ import { Ribbon } from "./Ribbon";
 import { EchoBar, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
-import { buyAllAccess, buyCityPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
+import { buyAllAccess, buyCityPass, buyWeekPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
 import { MembershipPanel } from "./Membership";
 import { ReactionCard, faceOf } from "./ReactionCard";
 import { react, readReactions, type Reactions } from "./reaction-store";
@@ -75,6 +75,7 @@ import {
   cityAt,
   freeEchoesLeft,
   membershipOf,
+  cityPassPriceMinor,
   type Entitlement,
   distanceKm,
   effectiveRadiusKm,
@@ -456,13 +457,20 @@ export function App() {
     };
   }, []);
   /** Buy for real when payments are on; otherwise record it on this device, as before. */
-  const buy = (plan: "city" | "allAccess", cityId: string | undefined, local: () => void) => {
+  const buy = (plan: "week" | "city" | "allAccess", cityId: string | undefined, local: () => void) => {
     if (!paymentsOn) return local();
     setPaymentError(null);
-    startCheckout(plan === "city" && cityId ? "city" : "allAccess", cityId).catch((e: Error) =>
+    startCheckout(plan !== "allAccess" && cityId ? plan : "allAccess", cityId).catch((e: Error) =>
       setPaymentError(e.message),
     );
   };
+  /** The same purchase recorded on this device, for when payments are not switched on. */
+  const boughtHere = (plan: "week" | "city" | "allAccess", cityId: string | undefined): Entitlement =>
+    plan === "week" && cityId
+      ? buyWeekPass(entitlement, cityId)
+      : plan === "city" && cityId
+        ? buyCityPass(entitlement, cityId)
+        : buyAllAccess(entitlement);
   const [paywallFor, setPaywallFor] = useState<Echo | null>(null);
   /** Settings › Membership options: the plans, with nobody stopped mid-walk. */
   const [optionsOpen, setOptionsOpen] = useState(false);
@@ -2645,13 +2653,14 @@ export function App() {
             city={state.position ? cityAt(state.position.at) : null}
             heardCount={heardIds.length}
             allAccessRunning={membershipOf(entitlement, Date.now()).plan === "all-access"}
+            {...(state.position && cityAt(state.position.at)
+              ? { cityPassMinor: cityPassPriceMinor(entitlement, cityAt(state.position.at)!.id, Date.now()) }
+              : {})}
             onBuy={(plan) => {
               // Stripe when payments are on; otherwise recorded on this device, nothing charged.
               const city = state.position ? cityAt(state.position.at) : null;
               buy(plan, city?.id, () => {
-                setEntitlement(
-                  plan === "city" && city ? buyCityPass(entitlement, city.id) : buyAllAccess(entitlement),
-                );
+                setEntitlement(boughtHere(plan, city?.id));
                 setOptionsOpen(false);
               });
             }}
@@ -2671,11 +2680,7 @@ export function App() {
               */
               const city = cityAt(paywallFor.point.at);
               buy(plan, city?.id, () => {
-                setEntitlement(
-                  plan === "city" && city
-                    ? buyCityPass(entitlement, city.id)
-                    : buyAllAccess(entitlement),
-                );
+                setEntitlement(boughtHere(plan, city?.id));
                 setPaywallFor(null);
                 setPlayAfterBuying(paywallFor);
               });
