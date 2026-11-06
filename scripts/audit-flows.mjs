@@ -117,7 +117,8 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await kinds.click();
   await p.waitForTimeout(400);
   const sheet = p.locator('#kind-box');
-  check('Kinds: tapping it shows all of them at once, just below', (await sheet.locator('.chip').count()) === 9);
+  // All, and nine kinds: Inspo joined the row on 2026-11-06 (`categories.tsx`, CHIP_GROUPS).
+  check('Kinds: tapping it shows all of them at once, just below', (await sheet.locator('.chip').count()) === 10);
   await sheet.getByRole('button', { name: 'Ghosts' }).click();
   await p.waitForTimeout(300);
   check('Kinds: picking keeps it open, to pick more', await visible(sheet));
@@ -273,7 +274,8 @@ async function arrive() {
     check('Filter: a filter button on My Echoes', await visible(filter));
     await filter.click();
     await p.waitForTimeout(400);
-    check('Filter: shows every kind at once', (await p.locator('#coll-filter .chip').count()) === 9);
+    // All, and nine kinds, Inspo included (`categories.tsx`, CHIP_GROUPS).
+    check('Filter: shows every kind at once', (await p.locator('#coll-filter .chip').count()) === 10);
     await p.locator('#coll-filter').getByRole('button', { name: /Ghosts/ }).click();
     await p.waitForTimeout(400);
     check('Filter: a kind you have none of hides the rest and says so',
