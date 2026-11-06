@@ -10,7 +10,7 @@
  * (`featureAvailability`) rather than being written twice.
  */
 
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import {
   capabilitiesImpliedBy,
   featureAvailability,
@@ -18,6 +18,7 @@ import {
   type FeatureId,
   type PrivacySettings,
 } from "@echofinders/core";
+import { errorReportsAllowed, setErrorReportsAllowed } from "./error-report";
 
 interface Props {
   readonly settings: PrivacySettings;
@@ -73,6 +74,9 @@ export function Privacy({
   // below are the real ones rather than a hand-written list that drifts.
   const granted = [...capabilitiesImpliedBy(settings)] as Capability[];
   const features = featureAvailability([...granted, "haptics"]);
+  // Kept by error-report.ts itself, not in PrivacySettings: it has to be readable before
+  // the app renders, which is when reporting starts.
+  const [errorReports, setErrorReports] = useState(errorReportsAllowed);
 
   return (
     <div className="screen-body">
@@ -173,6 +177,17 @@ export function Privacy({
         cost="Off by default, like everything here that is for our benefit rather than yours."
         on={settings.analytics}
         onToggle={() => onChange({ ...settings, analytics: !settings.analytics })}
+      />
+
+      <Toggle
+        label="Send error reports"
+        detail="When something breaks, what broke and in which version. Never where you are."
+        cost="Off by default. Turn on and a crash on your phone is one we can fix."
+        on={errorReports}
+        onToggle={() => {
+          setErrorReportsAllowed(!errorReports);
+          setErrorReports(!errorReports);
+        }}
       />
 
       <section className="panel">
