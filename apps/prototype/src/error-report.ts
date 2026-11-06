@@ -10,9 +10,13 @@
  * do what this does in a page: catch uncaught errors and unhandled promise rejections and
  * post each one to Sentry's ingest endpoint.
  *
- * Off unless `VITE_SENTRY_DSN` is set in Vercel. A Sentry DSN is designed to be public (it
- * only allows sending events), but it still lives in the environment, not the repository,
- * so turning reporting on or off is a setting rather than a deploy of new code.
+ * Where reports go: `SENTRY_DSN` below. A Sentry DSN is designed to be public: it only
+ * allows sending events, never reading them, and once reporting is on it ships inside the
+ * app every visitor downloads anyway. So it lives in the code as the default (James,
+ * 2026-11-06, after the Vercel setting proved hard to reach), and `VITE_SENTRY_DSN` in
+ * Vercel still wins when it is set, or turns everything off when set to `off`. The other
+ * off switch needs no deploy at all: disable the key in Sentry (Project Settings › Client
+ * Keys), and every report and feedback is refused at Sentry's end.
  *
  * And off unless the listener turns it on (James, 2026-11-06: "make error reports opt-in").
  * Settings › Privacy has the switch, next to usage statistics, and like that one it starts
@@ -29,6 +33,17 @@
  */
 
 const MAX_EVENTS = 5;
+
+/** The sidekix/echo-finders project's public client key. Not a secret: see above. */
+const DEFAULT_SENTRY_DSN =
+  "https://4b373a29f88fb36a61a5629cf5984c9f@o4512386079195137.ingest.us.sentry.io/4512386104033280";
+
+/**
+ * The DSN this build sends to, for error reports and feedback alike. Vercel's
+ * `VITE_SENTRY_DSN` overrides the default; `off` there switches both off.
+ */
+export const SENTRY_DSN: string | undefined =
+  import.meta.env.VITE_SENTRY_DSN === "off" ? undefined : import.meta.env.VITE_SENTRY_DSN || DEFAULT_SENTRY_DSN;
 
 /** The listener's choice. Kept on the phone, like every other setting. */
 const CONSENT_KEY = "echo-finders:error-reports";

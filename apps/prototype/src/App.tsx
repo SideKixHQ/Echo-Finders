@@ -10,6 +10,7 @@ import { IndexedDbCollection } from "./collection-store";
 import { Privacy } from "./Privacy";
 import { ReportEcho } from "./Feedback";
 import { feedbackAvailable } from "./feedback";
+import { SENTRY_DSN } from "./error-report";
 import { readSettings, saveSettings } from "./settings-store";
 import { Nav, type Tab } from "./Nav";
 import { Plan } from "./Plan";
@@ -2191,14 +2192,14 @@ export function App() {
                     now from 35,000 feet.
                   */
                   {...(selfDirected ? { onCamera: setCamera } : {})}
-                  {...(feedbackAvailable(import.meta.env.VITE_SENTRY_DSN) ? { onReport: setReporting } : {})}
+                  {...(feedbackAvailable(SENTRY_DSN) ? { onReport: setReporting } : {})}
                   onClose={() => setSelectedId(null)}
                 />
               ) : null}
               {reporting && (
                 <ReportEcho
                   echo={reporting}
-                  dsn={import.meta.env.VITE_SENTRY_DSN}
+                  dsn={SENTRY_DSN}
                   release={__BUILD_COMMIT__}
                   onClose={() => setReporting(null)}
                 />
