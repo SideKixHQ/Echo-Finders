@@ -17,6 +17,8 @@ certaintyNote: >-
   no supernatural claim is established.
 minAge: 0
 quality: 0.75
+# Rarity (docs/13-story-mix.md): the listening spot is inside; see the header.
+inside: true
 voice: wC1005J19tvhoqqC2hkf
 tags: [london, ghosts]
 teaser: "Look across Tower Green toward the Chapel of St Peter ad Vincula."

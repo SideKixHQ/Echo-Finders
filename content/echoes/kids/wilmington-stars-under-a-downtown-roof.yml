@@ -14,6 +14,8 @@ visibility: at-hand
 certainty: documented
 minAge: 0
 quality: 0.75
+# Rarity (docs/13-story-mix.md): the listening spot is inside; see the header.
+inside: true
 voice: UrTldiIxfedDl9tlesyS
 tags: [wilmington, downtown]
 teaser: "Wilmington's new downtown museum opened in August 2026 with a sixty-seat planetarium."
