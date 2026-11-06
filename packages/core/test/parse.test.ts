@@ -417,3 +417,43 @@ describe("opening hours", () => {
     expect(echo && rarityOf(echo)).toBe("rare");
   });
 });
+
+describe("inspo: where something people know began", () => {
+  const inspo = (evidence: string, script = "A story about a room.") => ({
+    ...minimal(),
+    category: "inspo",
+    script,
+    inspo: { kind: "creation", evidence },
+  });
+
+  it("reads the kind and the place evidence", () => {
+    const { echo, issues } = parseEcho(inspo("building"));
+    expect(issues.filter((i) => i.severity === "error")).toEqual([]);
+    expect(echo!.inspo).toEqual({ kind: "creation", evidence: "building" });
+  });
+
+  it("refuses an inspo echo that does not say how sure the place is", () => {
+    expect(errorFields({ ...minimal(), category: "inspo" })).toContain("inspo");
+  });
+
+  it("refuses a kind or an evidence it does not know", () => {
+    expect(errorFields({ ...inspo("building"), inspo: { kind: "vibes", evidence: "building" } })).toContain("inspo.kind");
+    expect(errorFields(inspo("probably"))).toContain("inspo.evidence");
+  });
+
+  it("refuses 'this exact spot' unless the evidence is exact", () => {
+    for (const words of ["Stand on this exact spot.", "It was written right here.", "In this room, he finished it.", "Where you are standing, she sang."]) {
+      expect(errorFields(inspo("building", words))).toContain("script");
+      expect(errorFields(inspo("exact", words))).not.toContain("script");
+    }
+  });
+
+  it("lets a building say 'in this building' and an area say 'these streets'", () => {
+    expect(errorFields(inspo("building", "It was written in this building."))).not.toContain("script");
+    expect(errorFields(inspo("area", "Somewhere on these streets, he practised."))).not.toContain("script");
+  });
+
+  it("keeps the inspo block to inspo echoes", () => {
+    expect(errorFields({ ...minimal(), inspo: { kind: "first", evidence: "exact" } })).toContain("inspo");
+  });
+});

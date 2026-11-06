@@ -73,6 +73,7 @@ const NOTE: Record<EchoCategory, number> = {
   arts: 261.63, // C4
   "food-drink": 293.66, // D4
   kids: 329.63, // E4
+  inspo: 392.0, // G4, the next note of the same pentatonic: still a chord with all the rest
 };
 
 /**
@@ -92,6 +93,7 @@ const WAVE: Record<EchoCategory, OscillatorType> = {
   arts: "triangle",
   "food-drink": "sine",
   kids: "triangle",
+  inspo: "triangle",
 };
 
 /** Beyond this nothing hums. Past it a tone is not guidance, it is a rumour. */

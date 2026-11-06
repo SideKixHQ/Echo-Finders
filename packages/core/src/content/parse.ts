@@ -20,9 +20,12 @@ import type {
   Pronunciation,
   Source,
   Claim,
+  InspoKind,
+  InspoLink,
+  PlaceEvidence,
   TrueCrimeReview,
 } from "../types.js";
-import { ECHO_CATEGORIES, NOMINAL_DURATION_S } from "../types.js";
+import { ECHO_CATEGORIES, INSPO_KINDS, NOMINAL_DURATION_S, PLACE_EVIDENCE } from "../types.js";
 import type { ValidationIssue } from "./validate.js";
 
 export interface ParseResult {
@@ -186,6 +189,7 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
   if (input["inside"] !== undefined && typeof input["inside"] !== "boolean") {
     fail("inside", "must be true or false");
   }
+  const inspo = inspoLinkOf(input, category ?? "", fail);
   const durationS = num("durationS", false) ?? NOMINAL_DURATION_S[format] ?? 90;
   const triggerRadiusKm = num("triggerRadiusKm");
   const title = str("title");
@@ -224,6 +228,7 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
     ...optional("remoteness", num("remoteness", false)),
     ...optional("hours", hours),
     ...optional("inside", typeof input["inside"] === "boolean" ? input["inside"] : undefined),
+    ...optional("inspo", inspo),
     ...optional("tags", stringList(input["tags"])),
     ...optional("relatedIds", stringList(input["relatedIds"])),
     ...optional("perspectiveIds", stringList(input["perspectiveIds"])),
@@ -515,4 +520,51 @@ function stringList(value: unknown): string[] | undefined {
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+/**
+ * Words that put the listener on the very spot. Only an echo whose evidence is `exact` may
+ * say them (`PlaceEvidence`). Matched on the script as spoken, case-insensitively.
+ */
+export const EXACT_PLACE_PHRASES: readonly RegExp[] = [
+  /\bthis exact\b/i,
+  /\bexact (spot|place|room|doorway|corner)\b/i,
+  /\bright here\b/i,
+  /\bthis very\b/i,
+  /\bin this (very )?room\b/i,
+  /\bon this (very )?spot\b/i,
+  /\bwhere you(?:'re| are) standing\b/i,
+];
+
+/** The script's words that claim the exact spot, if any. */
+export function exactPlaceClaims(script: string): string[] {
+  return EXACT_PLACE_PHRASES.flatMap((re) => script.match(re)?.[0] ?? []);
+}
+
+function inspoLinkOf(
+  input: Record<string, unknown>,
+  category: string,
+  fail: (field: string, why: string) => void,
+): InspoLink | undefined {
+  const raw = input["inspo"];
+  if (raw === undefined) {
+    if (category === "inspo") fail("inspo", "an inspo echo must say its kind and its place evidence");
+    return undefined;
+  }
+  if (typeof raw !== "object" || raw === null) {
+    fail("inspo", "must be { kind, evidence }");
+    return undefined;
+  }
+  const r = raw as Record<string, unknown>;
+  const kind = r["kind"];
+  const evidence = r["evidence"];
+  if (!(INSPO_KINDS as readonly unknown[]).includes(kind)) fail("inspo.kind", `must be one of ${INSPO_KINDS.join(", ")}`);
+  if (!(PLACE_EVIDENCE as readonly unknown[]).includes(evidence)) fail("inspo.evidence", `must be one of ${PLACE_EVIDENCE.join(", ")}`);
+  if (category !== "inspo") fail("inspo", "only an inspo echo carries an inspo link");
+  const script = typeof input["script"] === "string" ? input["script"] : "";
+  const claims = exactPlaceClaims(script);
+  if (evidence !== "exact" && claims.length) {
+    fail("script", `says "${claims[0]}", but the place evidence is "${String(evidence)}"; only exact evidence may claim the very spot`);
+  }
+  return { kind: kind as InspoKind, evidence: evidence as PlaceEvidence };
 }

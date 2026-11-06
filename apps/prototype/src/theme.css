@@ -128,6 +128,7 @@
      interface aqua. */
   --cat-built: #7fb4ff;
   --cat-land: #7fd4c1;
+  --cat-inspo: #d7f75b;
 
   --stage: #07080c;
   --rgb-hair: 216, 220, 229;
@@ -260,6 +261,7 @@
   /* Same gap on the light scheme: this was a slate that read as "no category". */
   --cat-built: #1d57b0;
   --cat-land: #1a5e51;
+  --cat-inspo: #556100;
 
 }
 
@@ -559,6 +561,7 @@ body {
 .cat-legend { --cat: var(--cat-legend); color: var(--cat); }
 .cat-kids { --cat: var(--cat-kids); color: var(--cat); }
 .cat-arts { --cat: var(--cat-arts); color: var(--cat); }
+.cat-inspo { --cat: var(--cat-inspo); color: var(--cat); }
 .cat-people { --cat: var(--cat-people); color: var(--cat); }
 .cat-food-drink { --cat: var(--cat-food-drink); color: var(--cat); }
 .cat-built { --cat: var(--cat-built); color: var(--cat); }
@@ -1718,6 +1721,7 @@ body {
   --cat-people: #ffd98a;
   --cat-built: #d8dce5;
   --cat-land: #7fd4c1;
+  --cat-inspo: #d7f75b;
   --muted: #aeb5c2;
 }
 /* The tray below it is a light surface again, so it takes the theme's own muted grey. */

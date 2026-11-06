@@ -42,6 +42,24 @@ sources:
 Omit `editorial` and `factCheck` and the file is a draft whose facts nobody has checked,
 which is the honest default.
 
+## Inspo: say how sure the place is
+
+An `inspo` echo (where something people know began, `docs/13-story-mix.md`) carries one more
+block, and `content:validate` refuses one without it:
+
+```yaml
+category: inspo
+inspo:
+  kind: creation        # first | inspiration | turning-point | connection | before-fame | creation
+  evidence: building    # exact | building | site | area
+```
+
+`evidence` is what the source supports, not what would sound best: `exact` (a source puts it
+at this spot or room), `building` (in this building, room unknown), `site` (this landscape,
+beach or view), `area` (associated with the neighbourhood). Only `exact` may say "this exact
+spot", "right here", "this very", "in this room" or "where you are standing"; the check refuses
+those words in any other inspo script.
+
 ## Claims: each checkable sentence beside its quote
 
 Every sentence with a number, a date, a counting word, a superlative or a name is a claim
