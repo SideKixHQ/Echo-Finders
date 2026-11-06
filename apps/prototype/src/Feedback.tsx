@@ -33,8 +33,10 @@ interface FormProps {
   readonly onCancel: () => void;
 }
 
-export function FeedbackForm({ dsn, release, initialKind = "broken", echo, onCancel }: FormProps) {
-  const [kind, setKind] = useState<FeedbackKind>(initialKind);
+export function FeedbackForm({ dsn, release, initialKind, echo, onCancel }: FormProps) {
+  // Nothing chosen unless the place it was opened from knows (the echo card's report link
+  // does: it is a wrong fact). A default is an answer most people never change.
+  const [kind, setKind] = useState<FeedbackKind | undefined>(initialKind);
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
@@ -42,7 +44,7 @@ export function FeedbackForm({ dsn, release, initialKind = "broken", echo, onCan
   const send = async () => {
     setStatus("sending");
     const ok = await sendFeedback(dsn, release, {
-      kind,
+      ...(kind ? { kind } : {}),
       message,
       email,
       ...(echo ? { echo: { id: echo.id, title: echo.title }, source: "echo-card" as const } : {}),
