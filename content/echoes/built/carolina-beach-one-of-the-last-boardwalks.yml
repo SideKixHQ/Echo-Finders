@@ -1,0 +1,55 @@
+# Batch 2 for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Wikidata Q1044392 (Carolina Beach, the town), nudged so it does not sit on the shag echo. The boardwalk needs a pin before approval (low confidence).
+id: carolina-beach-one-of-the-last-boardwalks
+title: "One of the Last Boardwalks"
+summary: "The Carolina Beach Boardwalk is one of the last vintage seaside boardwalks in the country."
+place: "Carolina Beach Boardwalk, Carolina Beach, North Carolina"
+at: { lat: 34.0362, lng: -77.8962 }
+triggerRadiusKm: 0.2
+category: built
+format: look-below
+durationS: 34
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [carolina-beach, boardwalk]
+teaser: "The kind of boardwalk most beach towns tore up years ago."
+script: |
+  Walk out onto the boardwalk and look both ways.
+
+  What you are on is rare now. The tourism bureau calls it one of the last vintage seaside
+  boardwalks in the country. It still has the arcade, and the legendary donuts.
+
+  Look out at the ocean too. The restaurant down there is built on the remnants of the old
+  Center Pier.
+
+  On summer Thursdays, fireworks go up over the beach right in front of you.
+
+  Nothing here is trying to be new. That is the whole point.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "The tourism bureau calls it one of the last vintage seaside boardwalks in the country."
+    source: 1
+    quote: "Just a five-minute stroll away is the iconic Carolina Beach Boardwalk , one of the last vintage seaside boardwalks in the country."
+  - says: "It still has the arcade, and the legendary donuts."
+    source: 2
+    quote: "It's central, close to parking and steps away from shops, arcade, restaurants and treats—like the legendary Britt's Donuts ."
+  - says: "The restaurant down there is built on the remnants of the old Center Pier."
+    source: 2
+    quote: "This casual coastal restaurant is built on the remnants of the old Center Pier and boasts incredible views of the Atlantic Ocean."
+  - says: "On summer Thursdays, fireworks go up over the beach right in front of you."
+    source: 2
+    quote: "Watch the evening fireworks that take place every Thursday night at 9 p.m. during the summer season."
+sources:
+  - title: "Carolina Beach Trip Guide"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/the-perfect-3-day-itinerary-in-carolina-beach-nc/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+  - title: "Carolina Beach Day Guide"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/guide-to-an-ultimate-beach-day-in-carolina-beach-north-carolina/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts

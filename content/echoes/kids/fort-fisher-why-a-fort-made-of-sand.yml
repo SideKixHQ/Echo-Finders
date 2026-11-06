@@ -1,0 +1,59 @@
+# Batch 2 for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Wikidata Q256931 (Fort Fisher), a few metres off so it does not sit on top of the adult echoes (medium confidence).
+id: fort-fisher-why-a-fort-made-of-sand
+title: "Why Build a Fort Out of Sand?"
+summary: "A children's telling of why Fort Fisher was built of sand instead of brick."
+place: "Fort Fisher, the land face, Kure Beach, North Carolina"
+at: { lat: 33.9719, lng: -77.9192 }
+triggerRadiusKm: 0.06
+category: kids
+format: short
+durationS: 45
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [fort-fisher, kure-beach, civil-war]
+teaser: "A castle of sand, built for real cannonballs."
+script: |
+  Have you ever built a sandcastle? This whole fort was a giant one, built for real.
+
+  Most old forts were made of brick. But when a cannonball hits brick, the brick can crack and
+  break. Sand is different. It soaks up the shock, like catching a ball in a pillow.
+
+  So the builders piled sand into huge mounds, each one about as tall as a three-story house.
+  They made it the biggest fort of its kind in the whole South.
+
+  Here is the surprising part. The cannons never knocked most of it down. The ocean did, wave
+  after wave. Only about a tenth of the fort is left. Can you find the mounds that survived?
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "This whole fort was a giant one, built for real."
+    source: 1
+    quote: "Fort Fisher was made mostly of earth and sand"
+  - says: "Most old forts were made of brick."
+    source: 1
+    quote: "Unlike older fortifications built of brick and mortar, Fort Fisher was made mostly of earth and sand, which was ideal for absorbing the shock of heavy explosives."
+  - says: "It soaks up the shock, like catching a ball in a pillow."
+    source: 1
+    quote: "Fort Fisher was made mostly of earth and sand, which was ideal for absorbing the shock of heavy explosives."
+  - says: "So the builders piled sand into huge mounds, each one about as tall as a three-story house."
+    source: 1
+    quote: "Each mound was 32 feet high with interior rooms used as bombproofs or powder magazines and connected by underground passageways."
+  - says: "They made it the biggest fort of its kind in the whole South."
+    source: 1
+    quote: "constructed what was to become the largest and most important earthwork fort in the South"
+  - says: "The ocean did, wave after wave."
+    source: 1
+    quote: "Today only a few of the mounds remain, since much of the fort has been eroded by the ocean."
+  - says: "Only about a tenth of the fort is left."
+    source: 1
+    quote: "Approximately ten percent of Fort Fisher still stands along with a restored palisade fence."
+sources:
+  - title: "History"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
