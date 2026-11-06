@@ -43,6 +43,46 @@
    "file": "canaveral-free-speed.json"
   },
   {
+   "area": "carolina-beach-a-haven-called-seabreeze",
+   "bbox": [
+    -77.91162,
+    34.05283,
+    -77.8856,
+    34.07439
+   ],
+   "file": "carolina-beach-a-haven-called-seabreeze.json"
+  },
+  {
+   "area": "carolina-beach-one-of-the-last-boardwalks",
+   "bbox": [
+    -77.90995,
+    34.02542,
+    -77.88319,
+    34.04745
+   ],
+   "file": "carolina-beach-one-of-the-last-boardwalks.json"
+  },
+  {
+   "area": "carolina-beach-the-plant-that-eats-bugs",
+   "bbox": [
+    -77.92331,
+    34.03922,
+    -77.89699,
+    34.06108
+   ],
+   "file": "carolina-beach-the-plant-that-eats-bugs.json"
+  },
+  {
+   "area": "carolina-beach-the-show-over-the-ocean",
+   "bbox": [
+    -77.89148,
+    34.04761,
+    -77.86546,
+    34.06917
+   ],
+   "file": "carolina-beach-the-show-over-the-ocean.json"
+  },
+  {
    "area": "casa-casuarina-the-steps",
    "bbox": [
     -80.142,
@@ -93,6 +133,16 @@
    "file": "dc-a-country-he-never-saw.json"
   },
   {
+   "area": "fort-fisher-it-amounted-to-nothing",
+   "bbox": [
+    -77.95411,
+    33.94839,
+    -77.9044,
+    33.98288
+   ],
+   "file": "fort-fisher-it-amounted-to-nothing.json"
+  },
+  {
    "area": "hatteras-moved-the-lighthouse",
    "bbox": [
     -75.542,
@@ -111,6 +161,16 @@
     36.02538
    ],
    "file": "kitty-hawk-shorter-than-this-plane.json"
+  },
+  {
+   "area": "kure-beach-five-shells-in-the-dark",
+   "bbox": [
+    -77.92106,
+    33.987,
+    -77.89505,
+    34.00856
+   ],
+   "file": "kure-beach-five-shells-in-the-dark.json"
   },
   {
    "area": "linn-cove-viaduct-last-piece",
@@ -237,7 +297,7 @@
    "bbox": [
     -77.96434,
     34.21882,
-    -77.92652,
+    -77.91755,
     34.25878
    ],
    "file": "the-lady-in-grey.json"

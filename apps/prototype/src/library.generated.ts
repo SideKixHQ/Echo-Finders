@@ -5043,6 +5043,15 @@ export const LIBRARY: readonly Echo[] = [
       "slavery",
       "african-american-history"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-03747v.jpg",
+        "credit": "T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-cwpb-03747, 1865), https://www.loc.gov/item/2018671553/",
+        "rights": "public-domain",
+        "year": 1865,
+        "caption": "The first traverse at the northwest end, the entrance to the fort"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -5082,6 +5091,15 @@ export const LIBRARY: readonly Echo[] = [
       "kure-beach",
       "civil-war",
       "military"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-04081v.jpg",
+        "credit": "T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-cwpb-04081, 1865), https://www.loc.gov/item/2018672347/",
+        "rights": "public-domain",
+        "year": 1865,
+        "caption": "Battery Lamb, the Mound, seen from the south"
+      }
     ],
     "remoteness": 0.55
   },
@@ -5205,6 +5223,15 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "african-american-history"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-35261v.jpg",
+        "credit": "T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-ppmsca-35261, 1865), https://www.loc.gov/item/2013649002/",
+        "rights": "public-domain",
+        "year": 1865,
+        "caption": "View on the land face"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -5291,6 +5318,15 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "military"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-04057v.jpg",
+        "credit": "T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-cwpb-04057, 1865), https://www.loc.gov/item/2018672151/",
+        "rights": "public-domain",
+        "year": 1865,
+        "caption": "The land face and its palisade"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -5330,6 +5366,15 @@ export const LIBRARY: readonly Echo[] = [
       "fort-fisher",
       "kure-beach",
       "civil-war"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-04057v.jpg",
+        "credit": "T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-cwpb-04057, 1865), https://www.loc.gov/item/2018672151/",
+        "rights": "public-domain",
+        "year": 1865,
+        "caption": "The land face and its palisade"
+      }
     ],
     "remoteness": 0
   },

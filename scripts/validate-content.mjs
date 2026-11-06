@@ -116,6 +116,21 @@ for (const { echo, file } of echoes) {
 }
 
 /**
+ * Every archive photograph named by an echo is in the repository, for the same reason as
+ * its audio: a plate pointing at a missing file is a blank frame in the viewfinder.
+ */
+for (const { echo, file } of echoes) {
+  for (const [i, photo] of (echo.archive ?? []).entries()) {
+    if (!photo.imageKey.startsWith("archive/")) continue;
+    try {
+      await stat(join(ROOT, "content", photo.imageKey));
+    } catch {
+      issues.push({ echoId: echo.id, severity: "error", field: `archive[${i}].imageKey`, message: `content/${photo.imageKey} is missing`, file });
+    }
+  }
+}
+
+/**
  * Casting: each category is read by the voice `content/voices.yml` gives it.
  *
  * A rule James set (2026-11-05), not a judgement made per echo, so it is checked rather

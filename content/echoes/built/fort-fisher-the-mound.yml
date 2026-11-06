@@ -92,3 +92,9 @@ renders:
         - text: The light was for them.
           atS: 43.26
           durationS: 1.6
+archive:
+  - imageKey: archive/loc-04081v.jpg
+    year: 1865
+    caption: Battery Lamb, the Mound, seen from the south
+    credit: T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-cwpb-04081, 1865), https://www.loc.gov/item/2018672347/
+    rights: public-domain
