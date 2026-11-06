@@ -59,6 +59,14 @@ are deleted at the same moment; the collection remains.
 ### Usage statistics
 **Default:** off. Opt-in only. Anonymous and aggregate — which features are used, not by whom.
 
+### Error reports
+**Why:** when something breaks on your phone, we need to know what broke to fix it.
+**What is sent:** the error message, where in the app's code it happened, which version of the
+app you have, the page you were on (without anything after the "?") and your browser's type.
+**What is not:** where you are, what you have found, or anything that identifies you. At most
+five reports per visit. They go to our error-tracking service, Sentry, and are used only to
+fix the app.
+
 ### Microphone, contacts, photos, health, advertising identifiers
 **We do not collect these and do not ask for them.**
 
