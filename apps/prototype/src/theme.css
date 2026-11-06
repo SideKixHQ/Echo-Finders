@@ -5130,7 +5130,7 @@ body.seat { padding: 0; display: block; }
 .feedback-done { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; }
 .feedback-done strong { font-size: 13.5px; font-weight: 500; color: var(--aqua-ink); }
 
-/* The echo card's "Something wrong?" (EchoPopup.tsx), at the end of the true-story line.
+/* The echo card's "Not right?" (EchoPopup.tsx), at the end of the true-story line.
    Small to look at, a 44px thumb to hit, like the chips. */
 .pop-truth { align-items: center; flex-wrap: wrap; column-gap: 12px; }
 .pop-report {

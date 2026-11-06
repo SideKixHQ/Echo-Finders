@@ -198,7 +198,10 @@ export function EchoPopup({
           Beside the claim it answers. A library that promises it is verified owes the
           listener a way to say when it is not, at the moment they notice, without leaving
           the story. On this line rather than its own: it costs the card no height, which on
-          an SE it does not have (audit-align, popup).
+          an SE it does not have (audit-align, popup). "Not right?" rather than "Something
+          wrong?" because it fits beside the longest mark ("True story · not yet verified",
+          210px of a 309px line on an SE) without wrapping; screen readers hear the whole
+          question from aria-label.
         */}
         {onReport && (
           <button
@@ -207,7 +210,7 @@ export function EchoPopup({
             aria-haspopup="dialog"
             aria-label="Something wrong with this story?"
           >
-            Something wrong?
+            Not right?
           </button>
         )}
       </span>
