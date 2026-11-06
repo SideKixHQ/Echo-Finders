@@ -183,6 +183,10 @@ Each report carries the error, its stack, the page path without its query string
 commit and the browser's user agent: no position, no collection, no identifiers. At most five
 per session. `docs/privacy-policy.md` says the same.
 
+The same DSN turns on **feedback**: Settings › Tell us › Send feedback appears only when it is
+set, and what listeners send lands in Sentry under **User Feedback** (`feedback.ts`). Turn on
+email alerts for new feedback there, or it will sit unread.
+
 Setting the DSN is not enough on its own: reports are **opt-in** (James, 2026-11-06). A phone
 sends nothing until its owner turns on Settings › Privacy › Send error reports, so expect
 few reports, and turn it on yourself on your own phone when testing.

@@ -68,6 +68,13 @@ app you have, the page you were on (without anything after the "?") and your bro
 five reports per visit. They go to our error-tracking service, Sentry, and are used only to
 fix the app.
 
+### Feedback you send us
+**Only when you press Send**, in **Settings → Tell us → Send feedback**.
+**What is sent:** what you wrote, which kind of feedback you chose, the version of the app
+and the page you were on. Your email address only if you type it in, so that we can reply.
+**What is not:** where you are, what you have found, or anything else about you. It goes to
+the same service as error reports, Sentry, and is read by us to fix and improve the app.
+
 ### Microphone, contacts, photos, health, advertising identifiers
 **We do not collect these and do not ask for them.**
 

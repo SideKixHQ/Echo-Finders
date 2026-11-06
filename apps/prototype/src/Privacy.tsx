@@ -19,6 +19,8 @@ import {
   type PrivacySettings,
 } from "@echofinders/core";
 import { errorReportsAllowed, setErrorReportsAllowed } from "./error-report";
+import { Feedback } from "./Feedback";
+import { feedbackAvailable } from "./feedback";
 
 interface Props {
   readonly settings: PrivacySettings;
@@ -226,6 +228,14 @@ export function Privacy({
           </small>
         </button>
       </section>
+
+      {/*
+        Feedback, last before the build stamp, which travels with it. Only when this build
+        has somewhere to send it (`feedback.ts`).
+      */}
+      {feedbackAvailable(import.meta.env.VITE_SENTRY_DSN) && (
+        <Feedback dsn={import.meta.env.VITE_SENTRY_DSN} release={__BUILD_COMMIT__} />
+      )}
 
       {/*
         Which build this is.
