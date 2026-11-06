@@ -8,7 +8,7 @@ at: { lat: 33.97, lng: -77.918055 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 38
+durationS: 42
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -22,8 +22,8 @@ script: |
   More than five hundred African Americans, both enslaved and free, worked with Confederate
   soldiers to build this fort. At times, as many as a thousand men were digging at once.
 
-  Many of them were enslaved, made to build defenses for the Confederacy with their own
-  hands.
+  For the enslaved among them, there was no choice in it. Perhaps five hundred enslaved
+  laborers worked here under the new commander alone.
 
   When you read that Fort Fisher was the largest earthwork fort in the South, remember who
   moved the earth.
@@ -39,7 +39,7 @@ claims:
   - says: "At times, as many as a thousand men were digging at once."
     source: 1
     quote: "occasionally as many as one thousand men were working, although maintaining adequate labor was difficult."
-  - says: "Many of them were enslaved, made to build defenses for the Confederacy with their own hands."
+  - says: "Perhaps five hundred enslaved laborers worked here under the new commander alone."
     source: 2
     quote: "Soon the garrison, and perhaps as many as 500 enslaved laborers, were hard at work on conforming the works at Fort Fisher to Col. Lamb's own design."
   - says: "When you read that Fort Fisher was the largest earthwork fort in the South, remember who moved the earth."
