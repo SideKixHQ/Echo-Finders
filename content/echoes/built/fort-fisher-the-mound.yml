@@ -1,0 +1,59 @@
+# Batch 2 for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Wikidata Q136031996 (North Carolina Aquarium at Fort Fisher), the nearest sourced point to the south end of the sea face. Needs a pin on the Mound before approval (low confidence).
+id: fort-fisher-the-mound
+title: "The Mound"
+summary: "The Mound Battery at the south end of Fort Fisher rose forty-three feet and flashed signal lights to blockade runners."
+place: "Mound Battery site, south end of Fort Fisher's sea face, Kure Beach, North Carolina"
+at: { lat: 33.9626, lng: -77.9261 }
+triggerRadiusKm: 0.15
+category: built
+format: short
+durationS: 50
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [fort-fisher, kure-beach, civil-war, military]
+teaser: "The tallest thing on this beach was built with a steam engine and a scaffold."
+script: |
+  At the far end of the fort's sea face stood its landmark, a battery forty-three feet high,
+  known as the Mound.
+
+  It was built in the spring of 1863, and not by shovel alone. A steam engine on an inclined
+  railway hauled sand to the top of a scaffold, and hundreds of men dumped it from there until
+  the mound took shape.
+
+  Because it could be seen from so far out, it became a lighthouse of sorts. Signal lights on
+  the Mound talked to incoming blockade runners.
+
+  When Jefferson Davis visited in 1863, he rode up to the top. The guns of the sea face fired a
+  twenty-one gun presidential salute.
+
+  The ships it guided in were smuggling the war's supplies. The light was for them.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "At the far end of the fort's sea face stood its landmark, a battery forty-three feet high, known as the Mound."
+    source: 1
+    quote: "The terminus of the Sea Face was the gigantic Battery Lamb, more commonly known as the Mound Battery."
+  - says: "It was built in the spring of 1863, and not by shovel alone."
+    source: 1
+    quote: "This 43-foot-high battery was constructed in the spring of 1863 using a steam engine on an inclined railway to haul sand to the top of a scaffold."
+  - says: "A steam engine on an inclined railway hauled sand to the top of a scaffold, and hundreds of men dumped it from there until the mound took shape."
+    source: 1
+    quote: "Hundreds of men were employed in dumping the sand from the top of the scaffold to form the giant mound."
+  - says: "Signal lights on the Mound talked to incoming blockade runners."
+    source: 1
+    quote: "Because of its high visibility Lamb installed signal lights on the Mound to communicate with incoming blockade-runners."
+  - says: "When Jefferson Davis visited in 1863, he rode up to the top."
+    source: 1
+    quote: "Davis arrived by boat at the tip of Federal Point and rode on horseback to the Mound Battery."
+  - says: "The guns of the sea face fired a twenty-one gun presidential salute."
+    source: 1
+    quote: "\"As soon as he reached the top,\" wrote Lamb, \"the sea-face guns being manned for the purpose, gave him the Presidential salute of twenty-one guns."
+sources:
+  - title: "The Fort"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history/fort
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts

@@ -1620,6 +1620,119 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "carolina-beach-one-of-the-last-boardwalks",
+    "title": "One of the Last Boardwalks",
+    "summary": "The Carolina Beach Boardwalk is one of the last vintage seaside boardwalks in the country.",
+    "point": {
+      "at": {
+        "lat": 34.0362,
+        "lng": -77.8962
+      },
+      "triggerRadiusKm": 0.2,
+      "place": "Carolina Beach Boardwalk, Carolina Beach, North Carolina"
+    },
+    "category": "built",
+    "format": "look-below",
+    "durationS": 34,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Walk out onto the boardwalk and look both ways.\n\nWhat you are on is rare now. The tourism bureau calls it one of the last vintage seaside\nboardwalks in the country. It still has the arcade, and the legendary donuts.\n\nLook out at the ocean too. The restaurant down there is built on the remnants of the old\nCenter Pier.\n\nOn summer Thursdays, fireworks go up over the beach right in front of you.\n\nNothing here is trying to be new. That is the whole point.\n",
+    "teaser": "The kind of boardwalk most beach towns tore up years ago.",
+    "tags": [
+      "carolina-beach",
+      "boardwalk"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/carolina-beach-one-of-the-last-boardwalks",
+        "durationS": 34
+      }
+    ]
+  },
+  {
+    "id": "carolina-beach-the-boat-to-the-beach",
+    "title": "The Boat to the Beach",
+    "summary": "In 1899 visitors reached Carolina Beach on Captain John W. Harper's steamer Wilmington, thirteen miles down the Cape Fear.",
+    "point": {
+      "at": {
+        "lat": 34.036667,
+        "lng": -77.896944
+      },
+      "triggerRadiusKm": 0.25,
+      "place": "Carolina Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 49,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Think about how you got here. In 1899, the answer was a boat.\n\nThat summer, a newspaper described the trip. The steamer left Wilmington and made the run down\nthe river to the pier, a distance of thirteen miles, in less than an hour.\n\nHer name was the Wilmington, and she plied between Wilmington, Carolina Beach and Southport. Her\ncaptain and owner, John W. Harper, liked to point out the sights on the way down: the old\nwrecks, the colonial plantations, the rice fields.\n\nPeople from the city and from up-country came by the thousands every summer, to eat fish, take\na surf bath, and catch the sea breeze.\n\nIn 1899, the river was the way to the beach.\n",
+    "teaser": "In 1899 you did not drive to Carolina Beach. You took the steamer.",
+    "tags": [
+      "carolina-beach",
+      "steamer",
+      "nineteenth-century"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/carolina-beach-the-boat-to-the-beach",
+        "durationS": 49
+      }
+    ]
+  },
+  {
+    "id": "carolina-beach-the-editors-and-the-dance",
+    "title": "The Editors and the Dance",
+    "summary": "At the 1899 Press Association meeting at Carolina Beach, one editor objected to a dance being held in the association's name.",
+    "point": {
+      "at": {
+        "lat": 34.0365,
+        "lng": -77.8965
+      },
+      "triggerRadiusKm": 0.25,
+      "place": "Carolina Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 52,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In July 1899, the newspaper editors of North Carolina held their convention right here.\n\nBy most accounts they had a fine time. The accommodations, one admitted, were not what they\nexpected. The place was crowded to overflowing. They loved the surf anyway.\n\nBut one editor went home with a grievance. A dance had been held in the association's honor,\nand he objected. He believed very few editors in the state cared a thrip for dancing.\n\nHis real worry was the ministers among them. They did not believe in dancing, he wrote, and\nshould be spared the humiliation of seeing their names printed beside the words music,\ndancing and refreshments.\n\nNobody recorded whether the ministers danced.\n",
+    "teaser": "In 1899 the state's newspaper editors met here. One of them had a complaint.",
+    "tags": [
+      "carolina-beach",
+      "nineteenth-century",
+      "newspapers"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/carolina-beach-the-editors-and-the-dance",
+        "durationS": 52
+      }
+    ]
+  },
+  {
     "id": "carolina-beach-the-plant-that-eats-bugs",
     "title": "The Plant That Eats Bugs",
     "summary": "A children's telling of the Venus flytrap, which grows wild around Wilmington and in Carolina Beach State Park.",
@@ -4722,6 +4835,124 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "fort-fisher-it-amounted-to-nothing",
+    "title": "It Amounted to Nothing",
+    "summary": "Colonel William Lamb arrived in 1862 to a fort of scattered batteries, and set out to build one that could take any fire the navy had.",
+    "point": {
+      "at": {
+        "lat": 33.9717,
+        "lng": -77.9194
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Fort Fisher, the land face, Kure Beach, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 48,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Picture this place in July 1862, before most of what you can see was here.\n\nThat month the fort got its final commander, Colonel William Lamb. Before dusk on the day he\narrived, he had thoroughly inspected the works. He found only seventeen guns of respectable\ncalibre. As a defence against a Federal fleet, he wrote, the works amounted to nothing.\n\nSo he decided to build something else. A work of such magnitude, in his words, that it could\nwithstand the heaviest fire of any guns in the American navy.\n\nHe spent the next two and a half years doing it. Most of the mounds you are looking at are\nhis answer to his own first afternoon here.\n",
+    "teaser": "The new commander inspected the fort before dusk on his first day. He was not impressed.",
+    "tags": [
+      "fort-fisher",
+      "kure-beach",
+      "civil-war",
+      "military"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/fort-fisher-it-amounted-to-nothing",
+        "durationS": 48
+      }
+    ]
+  },
+  {
+    "id": "fort-fisher-medals-never-handed-over",
+    "title": "Medals Never Handed Over",
+    "summary": "Seventy-two soldiers, sailors and Marines received the Medal of Honor for Fort Fisher, and five medals were never presented.",
+    "point": {
+      "at": {
+        "lat": 33.9721,
+        "lng": -77.9176
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Fort Fisher Visitor Center, Kure Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "look-below",
+    "durationS": 35,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand by the visitor center and count to seventy-two.\n\nThat is how many soldiers, sailors and Marines received the Medal of Honor for what they did\nat Fort Fisher, between June 1864 and January 1865.\n\nFor the hundred and fifty-first anniversary of the battle, the site put five of those medals\non display, on loan from the Navy. None of the five had ever been presented to the man who\nearned it.\n\nThey were made, and kept. The hands they were for never held them.\n",
+    "teaser": "Seventy-two Medals of Honor were earned here. Some were never given to the men.",
+    "tags": [
+      "fort-fisher",
+      "kure-beach",
+      "civil-war",
+      "military"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/fort-fisher-medals-never-handed-over",
+        "durationS": 35
+      }
+    ]
+  },
+  {
+    "id": "fort-fisher-more-important-than-richmond",
+    "title": "More Important Than Richmond",
+    "summary": "After Mobile fell in 1864, Wilmington was the Confederacy's last major seaport, and Fort Fisher guarded it.",
+    "point": {
+      "at": {
+        "lat": 33.97205,
+        "lng": -77.9174
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Fort Fisher Visitor Center, Kure Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 46,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look toward the river. Everything this fort did was about what came up it.\n\nIn August 1864, Union warships sealed the port of Mobile, Alabama. That left Wilmington as the\nlast major Southern seaport open to the outside world, and this fort was its front door.\n\nThe Secretary of the Navy, Gideon Welles, said it plainly. Closing Wilmington, he wrote, was\nmore important, practically, than the capture of Richmond.\n\nBy 1865, the supply line through Wilmington was the last one still feeding Robert E. Lee's\narmy in Virginia.\n\nIn the Navy's eyes, the war's most famous city was not its most important target. This sand was.\n",
+    "teaser": "In 1864 the Navy said closing this port mattered more than taking the Confederate capital.",
+    "tags": [
+      "fort-fisher",
+      "kure-beach",
+      "civil-war",
+      "military",
+      "blockade-runners"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/fort-fisher-more-important-than-richmond",
+        "durationS": 46
+      }
+    ]
+  },
+  {
     "id": "fort-fisher-soldiers-who-had-never-seen-the-sea",
     "title": "Soldiers Who Had Never Seen the Sea",
     "summary": "Wartime trainees at Fort Fisher came from inland, had never seen a beach, and got swimming lessons and a visit from Joe Louis.",
@@ -4757,6 +4988,124 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/fort-fisher-soldiers-who-had-never-seen-the-sea",
         "durationS": 53
+      }
+    ]
+  },
+  {
+    "id": "fort-fisher-the-hands-that-built-it",
+    "title": "The Hands That Built It",
+    "summary": "More than five hundred African Americans, enslaved and free, worked alongside soldiers to build Fort Fisher.",
+    "point": {
+      "at": {
+        "lat": 33.97,
+        "lng": -77.918055
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Fort Fisher, the land face, Kure Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 43,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the height of these mounds. Each one on the land face rose about thirty-two feet.\nEvery bit of it was sand, moved by people.\n\nMore than five hundred African Americans, both enslaved and free, worked with Confederate\nsoldiers to build this fort. At times, as many as a thousand men were digging at once.\n\nFor the enslaved among them, there was no choice in it. Under the fort's last commander,\nperhaps as many as five hundred of the workers were enslaved.\n\nWhen you read that Fort Fisher was the largest earthwork fort in the South, remember who\nmoved the earth.\n",
+    "teaser": "Every mound here was moved by hand, and many of the hands were not free.",
+    "tags": [
+      "fort-fisher",
+      "kure-beach",
+      "civil-war",
+      "slavery",
+      "african-american-history"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/fort-fisher-the-hands-that-built-it",
+        "durationS": 43
+      }
+    ]
+  },
+  {
+    "id": "fort-fisher-the-mound",
+    "title": "The Mound",
+    "summary": "The Mound Battery at the south end of Fort Fisher rose forty-three feet and flashed signal lights to blockade runners.",
+    "point": {
+      "at": {
+        "lat": 33.9626,
+        "lng": -77.9261
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "Mound Battery site, south end of Fort Fisher's sea face, Kure Beach, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 50,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "At the far end of the fort's sea face stood its landmark, a battery forty-three feet high,\nknown as the Mound.\n\nIt was built in the spring of 1863, and not by shovel alone. A steam engine on an inclined\nrailway hauled sand to the top of a scaffold, and hundreds of men dumped it from there until\nthe mound took shape.\n\nBecause it could be seen from so far out, it became a lighthouse of sorts. Signal lights on\nthe Mound talked to incoming blockade runners.\n\nWhen Jefferson Davis visited in 1863, he rode up to the top. The guns of the sea face fired a\ntwenty-one gun presidential salute.\n\nThe ships it guided in were smuggling the war's supplies. The light was for them.\n",
+    "teaser": "The tallest thing on this beach was built with a steam engine and a scaffold.",
+    "tags": [
+      "fort-fisher",
+      "kure-beach",
+      "civil-war",
+      "military"
+    ],
+    "remoteness": 0.55,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/fort-fisher-the-mound",
+        "durationS": 50
+      }
+    ]
+  },
+  {
+    "id": "fort-fisher-the-pilots-in-the-pines",
+    "title": "The Pilots in the Pines",
+    "summary": "During the Civil War, river pilots climbed ladders in the pines on Federal Point to spot incoming blockade runners.",
+    "point": {
+      "at": {
+        "lat": 33.959166,
+        "lng": -77.941111
+      },
+      "triggerRadiusKm": 0.2,
+      "place": "Federal Point, near Fort Fisher, Kure Beach, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 46,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the tallest trees you can see, and picture a ladder leaning against one, all\nthe way to the top.\n\nIn 1861, soldiers arriving on Federal Point noticed long ladders stretching to the highest\nreaches of the tall pines. The locals explained. River pilots climbed them with a spy glass\nto watch the ocean for incoming blockade runners.\n\nWhen a pilot got the signal, he hurried down to his small boat, went out to the ship, and\nguided it to the mouth of the river and on up to Wilmington.\n\nThe Confederacy's last great supply line began, some nights, with a man at the top of a pine\ntree, waiting to see a ship.\n",
+    "teaser": "Long ladders ran up the tallest pines here. Somebody was watching the sea.",
+    "tags": [
+      "fort-fisher",
+      "kure-beach",
+      "civil-war",
+      "blockade-runners"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/fort-fisher-the-pilots-in-the-pines",
+        "durationS": 46
       }
     ]
   },
@@ -4921,6 +5270,45 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/fort-fisher-what-the-sea-took",
         "durationS": 46
+      }
+    ]
+  },
+  {
+    "id": "fort-fisher-why-a-fort-made-of-sand",
+    "title": "Why Build a Fort Out of Sand?",
+    "summary": "A children's telling of why Fort Fisher was built of sand instead of brick.",
+    "point": {
+      "at": {
+        "lat": 33.9719,
+        "lng": -77.9192
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Fort Fisher, the land face, Kure Beach, North Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 45,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Have you ever built a sandcastle? This whole fort was a giant one, built for real.\n\nMost old forts were made of brick. But when a cannonball hits brick, the brick can crack and\nbreak. Sand is different. It soaks up the shock, like catching a ball in a pillow.\n\nSo the builders piled sand into huge mounds, each one about as tall as a three-story house.\nThey made it the biggest fort of its kind in the whole South.\n\nHere is the surprising part. The cannons never knocked most of it down. The ocean did, wave\nafter wave. Only about a tenth of the fort is left. Can you find the mounds that survived?\n",
+    "teaser": "A castle of sand, built for real cannonballs.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "fort-fisher",
+      "kure-beach",
+      "civil-war"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/fort-fisher-why-a-fort-made-of-sand",
+        "durationS": 45
       }
     ]
   },

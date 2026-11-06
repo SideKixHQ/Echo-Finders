@@ -1,0 +1,67 @@
+# Batch 2 for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Wikidata Q256931 (Fort Fisher), the fort as a whole (medium confidence).
+id: fort-fisher-it-amounted-to-nothing
+title: "It Amounted to Nothing"
+summary: "Colonel William Lamb arrived in 1862 to a fort of scattered batteries, and set out to build one that could take any fire the navy had."
+place: "Fort Fisher, the land face, Kure Beach, North Carolina"
+at: { lat: 33.9717, lng: -77.9194 }
+triggerRadiusKm: 0.06
+category: people
+format: short
+durationS: 48
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [fort-fisher, kure-beach, civil-war, military]
+teaser: "The new commander inspected the fort before dusk on his first day. He was not impressed."
+script: |
+  Picture this place in July 1862, before most of what you can see was here.
+
+  That month the fort got its final commander, Colonel William Lamb. Before dusk on the day he
+  arrived, he had thoroughly inspected the works. He found only seventeen guns of respectable
+  calibre. As a defence against a Federal fleet, he wrote, the works amounted to nothing.
+
+  So he decided to build something else. A work of such magnitude, in his words, that it could
+  withstand the heaviest fire of any guns in the American navy.
+
+  He spent the next two and a half years doing it. Most of the mounds you are looking at are
+  his answer to his own first afternoon here.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Picture this place in July 1862, before most of what you can see was here."
+    source: 2
+    quote: "Until the arrival of Col. William Lamb in July 1862, Fort Fisher was little more than several sand batteries mounting fewer than two dozen guns."
+  - says: "That month the fort got its final commander, Colonel William Lamb."
+    source: 1
+    quote: "Finally, in July, the fort received its final commander."
+  - says: "Before dusk on the day he arrived, he had thoroughly inspected the works."
+    source: 1
+    quote: "Before dusk on the day that Col. William Lamb arrived he had \"thoroughly inspected the works.\""
+  - says: "He found only seventeen guns of respectable calibre."
+    source: 1
+    quote: "noting that there were only 17 guns \"of respectable calibre\""
+  - says: "As a defence against a Federal fleet, he wrote, the works amounted to nothing."
+    source: 1
+    quote: "\"as a defence [sic] of New Inlet against a Federal fleet, our works amounted to nothing.\""
+  - says: "A work of such magnitude, in his words, that it could withstand the heaviest fire of any guns in the American navy."
+    source: 1
+    quote: "\"I determined at once to build a work of such magnitude that it could withstand the heaviest fire of any guns in the American navy.\" — Col. William Lamb, Commander of Fort Fisher"
+  - says: "He spent the next two and a half years doing it."
+    source: 2
+    quote: "By January 1865, Fort Fisher embraced one mile of sea defense and one-third of a mile of land defense."
+  - says: "Most of the mounds you are looking at are his answer to his own first afternoon here."
+    source: 2
+    quote: "Under Colonel Lamb's direction and design, which was greatly influenced by the Malakoff Tower (a Crimean War fortification) in Sebastopol, Russia, expansion of the fortress began."
+sources:
+  - title: "The Fort"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history/fort
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+  - title: "History"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts

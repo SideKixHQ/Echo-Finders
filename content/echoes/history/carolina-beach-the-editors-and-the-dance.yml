@@ -1,0 +1,58 @@
+# Batch 2 for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Wikidata Q1044392 (Carolina Beach). The 1899 club houses are not located in the source (low confidence).
+id: carolina-beach-the-editors-and-the-dance
+title: "The Editors and the Dance"
+summary: "At the 1899 Press Association meeting at Carolina Beach, one editor objected to a dance being held in the association's name."
+place: "Carolina Beach, North Carolina"
+at: { lat: 34.0365, lng: -77.8965 }
+triggerRadiusKm: 0.25
+category: history
+format: short
+durationS: 52
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [carolina-beach, nineteenth-century, newspapers]
+teaser: "In 1899 the state's newspaper editors met here. One of them had a complaint."
+script: |
+  In July 1899, the newspaper editors of North Carolina held their convention right here.
+
+  By most accounts they had a fine time. The accommodations, one admitted, were not what they
+  expected. The place was crowded to overflowing. They loved the surf anyway.
+
+  But one editor went home with a grievance. A dance had been held in the association's honor,
+  and he objected. He believed very few editors in the state cared a thrip for dancing.
+
+  His real worry was the ministers among them. They did not believe in dancing, he wrote, and
+  should be spared the humiliation of seeing their names printed beside the words music,
+  dancing and refreshments.
+
+  Nobody recorded whether the ministers danced.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "But one editor went home with a grievance."
+    source: 1
+    quote: "which we deem sufficient grounds for our protest"
+  - says: "In July 1899, the newspaper editors of North Carolina held their convention right here."
+    source: 1
+    quote: "The twenty-seventh annual session of the North Carolina Press Association, Association, July 12th and 13th, at Carolina Beach"
+  - says: "The accommodations, one admitted, were not what they expected."
+    source: 1
+    quote: "The accommodations at Carolina Beach were not what we expected the place was crowded to overflowing."
+  - says: "The place was crowded to overflowing."
+    source: 1
+    quote: "The accommodations at Carolina Beach were not what we expected the place was crowded to overflowing."
+  - says: "He believed very few editors in the state cared a thrip for dancing."
+    source: 1
+    quote: "We believe there Is a very small number of editors in this state who care a thrip for dancing"
+  - says: "They did not believe in dancing, he wrote, and should be spared the humiliation of seeing their names printed beside the words music, dancing and refreshments."
+    source: 1
+    quote: "they should be spared the humiliation of having their names published in the proceedings"
+sources:
+  - title: "The Semi-Weekly Messenger (Wilmington, N.C.), July 28, 1899, page 6: The Press Convention"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn91068367/1899-07-28/ed-1/?sp=6
+    retrievedAt: "2026-11-06"
+    rights: public-domain

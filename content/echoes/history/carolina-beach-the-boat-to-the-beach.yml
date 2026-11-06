@@ -1,0 +1,61 @@
+# Batch 2 for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Wikidata Q1044392 (Carolina Beach). The 1899 steamer pier was on the river side; its spot is not in the source (low confidence).
+id: carolina-beach-the-boat-to-the-beach
+title: "The Boat to the Beach"
+summary: "In 1899 visitors reached Carolina Beach on Captain John W. Harper's steamer Wilmington, thirteen miles down the Cape Fear."
+place: "Carolina Beach, North Carolina"
+at: { lat: 34.036667, lng: -77.896944 }
+triggerRadiusKm: 0.25
+category: history
+format: short
+durationS: 49
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [carolina-beach, steamer, nineteenth-century]
+teaser: "In 1899 you did not drive to Carolina Beach. You took the steamer."
+script: |
+  Think about how you got here. In 1899, the answer was a boat.
+
+  That summer, a newspaper described the trip. The steamer left Wilmington and made the run down
+  the river to the pier, a distance of thirteen miles, in less than an hour.
+
+  Her name was the Wilmington, and she plied between Wilmington, Carolina Beach and Southport. Her
+  captain and owner, John W. Harper, liked to point out the sights on the way down: the old
+  wrecks, the colonial plantations, the rice fields.
+
+  People from the city and from up-country came by the thousands every summer, to eat fish, take
+  a surf bath, and catch the sea breeze.
+
+  In 1899, the river was the way to the beach.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In 1899, the answer was a boat."
+    source: 1
+    quote: "took the 7:30 boat for Carolina Beach."
+  - says: "In 1899, the river was the way to the beach."
+    source: 1
+    quote: "The boat makes the trip down the river to the pier, a distance of thirteen miles, in less than an hour."
+  - says: "That summer, a newspaper described the trip."
+    source: 1
+    quote: "The twenty-seventh annual session of the North Carolina Press Association, Association, July 12th and 13th, at Carolina Beach, was a pleasant and profitable occasion"
+  - says: "The steamer left Wilmington and made the run down the river to the pier, a distance of thirteen miles, in less than an hour."
+    source: 1
+    quote: "The boat makes the trip down the river to the pier, a distance of thirteen miles, in less than an hour."
+  - says: "Her name was the Wilmington, and she plied between Wilmington, Carolina Beach and Southport."
+    source: 1
+    quote: "His boat, the Wilmington, plies between Wilmington, Carolina Beach and Southport"
+  - says: "Her captain and owner, John W. Harper, liked to point out the sights on the way down: the old wrecks, the colonial plantations, the rice fields."
+    source: 1
+    quote: "the places of interest, the old wrecks, colonial plantations, rice fields, etc."
+  - says: "People from the city and from up-country came by the thousands every summer, to eat fish, take a surf bath, and catch the sea breeze."
+    source: 1
+    quote: "every summer to eat fish, enjoy a surf bath and the most refreshing sea breezes."
+sources:
+  - title: "The Semi-Weekly Messenger (Wilmington, N.C.), July 28, 1899, page 6: The Press Convention"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn91068367/1899-07-28/ed-1/?sp=6
+    retrievedAt: "2026-11-06"
+    rights: public-domain

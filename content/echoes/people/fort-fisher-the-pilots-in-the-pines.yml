@@ -1,0 +1,54 @@
+# Batch 2 for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Wikidata Q34865535 (Federal Point). The source places the ladders on Federal Point without a spot (low confidence).
+id: fort-fisher-the-pilots-in-the-pines
+title: "The Pilots in the Pines"
+summary: "During the Civil War, river pilots climbed ladders in the pines on Federal Point to spot incoming blockade runners."
+place: "Federal Point, near Fort Fisher, Kure Beach, North Carolina"
+at: { lat: 33.959166, lng: -77.941111 }
+triggerRadiusKm: 0.2
+category: people
+format: short
+durationS: 46
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [fort-fisher, kure-beach, civil-war, blockade-runners]
+teaser: "Long ladders ran up the tallest pines here. Somebody was watching the sea."
+script: |
+  Look up at the tallest trees you can see, and picture a ladder leaning against one, all
+  the way to the top.
+
+  In 1861, soldiers arriving on Federal Point noticed long ladders stretching to the highest
+  reaches of the tall pines. The locals explained. River pilots climbed them with a spy glass
+  to watch the ocean for incoming blockade runners.
+
+  When a pilot got the signal, he hurried down to his small boat, went out to the ship, and
+  guided it to the mouth of the river and on up to Wilmington.
+
+  The Confederacy's last great supply line began, some nights, with a man at the top of a pine
+  tree, waiting to see a ship.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look up at the tallest trees you can see, and picture a ladder leaning against one, all the way to the top."
+    source: 1
+    quote: "The newcomers gazed with curiosity at the long ladders which were occasionally seen stretching to the highest reaches of the tall pines."
+  - says: "In 1861, soldiers arriving on Federal Point noticed long ladders stretching to the highest reaches of the tall pines."
+    source: 1
+    quote: "The newcomers gazed with curiosity at the long ladders which were occasionally seen stretching to the highest reaches of the tall pines."
+  - says: "River pilots climbed them with a spy glass to watch the ocean for incoming blockade runners."
+    source: 1
+    quote: "They were told by locals that the ladders were used by river pilots, who would scan the ocean with a \"spy glass\" for incoming blockade-runners."
+  - says: "When a pilot got the signal, he hurried down to his small boat, went out to the ship, and guided it to the mouth of the river and on up to Wilmington."
+    source: 1
+    quote: "Having received the proper signal, the pilot would hurry down to his small boat and \"hasten to the vessel and convey it to the mouth of the river and on up to Wilmington.\""
+  - says: "The Confederacy's last great supply line began, some nights, with a man at the top of a pine tree, waiting to see a ship."
+    source: 1
+    quote: "the pilot would hurry down to his small boat and \"hasten to the vessel and convey it to the mouth of the river and on up to Wilmington.\""
+sources:
+  - title: "The Fort"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history/fort
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
