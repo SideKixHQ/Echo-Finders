@@ -5005,7 +5005,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 42,
+    "durationS": 43,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5013,7 +5013,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the height of these mounds. Each one on the land face rose about thirty-two feet.\nEvery bit of it was sand, moved by people.\n\nMore than five hundred African Americans, both enslaved and free, worked with Confederate\nsoldiers to build this fort. At times, as many as a thousand men were digging at once.\n\nFor the enslaved among them, there was no choice in it. Perhaps five hundred enslaved\nlaborers worked here under the new commander alone.\n\nWhen you read that Fort Fisher was the largest earthwork fort in the South, remember who\nmoved the earth.\n",
+    "script": "Look at the height of these mounds. Each one on the land face rose about thirty-two feet.\nEvery bit of it was sand, moved by people.\n\nMore than five hundred African Americans, both enslaved and free, worked with Confederate\nsoldiers to build this fort. At times, as many as a thousand men were digging at once.\n\nFor the enslaved among them, there was no choice in it. Under the fort's last commander,\nperhaps as many as five hundred of the workers were enslaved.\n\nWhen you read that Fort Fisher was the largest earthwork fort in the South, remember who\nmoved the earth.\n",
     "teaser": "Every mound here was moved by hand, and many of the hands were not free.",
     "tags": [
       "fort-fisher",
@@ -5027,7 +5027,7 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/fort-fisher-the-hands-that-built-it",
-        "durationS": 42
+        "durationS": 43
       }
     ]
   },
