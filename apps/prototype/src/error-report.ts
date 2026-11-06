@@ -14,6 +14,11 @@
  * only allows sending events), but it still lives in the environment, not the repository,
  * so turning reporting on or off is a setting rather than a deploy of new code.
  *
+ * And off unless the listener turns it on (James, 2026-11-06: "make error reports opt-in").
+ * Settings › Privacy has the switch, next to usage statistics, and like that one it starts
+ * off: it is for our benefit rather than theirs. The choice is read at the moment of each
+ * error, not once at start, so turning it on or off takes effect without a reload.
+ *
  * Privacy (`docs/privacy-policy.md`): an event carries the error, its stack, the page path
  * without its query string, the build's commit and the browser's user agent. Nothing else:
  * no position, no collection, no identifiers, no IP address stored (`sendDefaultPii` is off
@@ -24,6 +29,28 @@
  */
 
 const MAX_EVENTS = 5;
+
+/** The listener's choice. Kept on the phone, like every other setting. */
+const CONSENT_KEY = "echo-finders:error-reports";
+
+/** Has the listener agreed to send error reports? No, unless they said yes. */
+export function errorReportsAllowed(): boolean {
+  try {
+    return localStorage.getItem(CONSENT_KEY) === "on";
+  } catch {
+    // Blocked storage (a private window) reads as no: never send on a choice we cannot see.
+    return false;
+  }
+}
+
+export function setErrorReportsAllowed(on: boolean): void {
+  try {
+    if (on) localStorage.setItem(CONSENT_KEY, "on");
+    else localStorage.removeItem(CONSENT_KEY);
+  } catch {
+    /* Blocked storage: the switch cannot stick, and errorReportsAllowed() stays no. */
+  }
+}
 
 interface Dsn {
   readonly endpoint: string;
@@ -93,7 +120,8 @@ export function eventFor(error: unknown, release: string, path: string): Record<
 
 /**
  * Start reporting. Call once, before the app renders. Does nothing when no DSN is set or
- * the page is not running in a browser.
+ * the page is not running in a browser, and sends nothing while the listener has not
+ * turned error reports on.
  */
 export function startErrorReporting(dsnValue: string | undefined, release: string): void {
   const dsn = parseDsn(dsnValue);
@@ -101,7 +129,7 @@ export function startErrorReporting(dsnValue: string | undefined, release: strin
   let sent = 0;
 
   const send = (error: unknown) => {
-    if (sent >= MAX_EVENTS) return;
+    if (sent >= MAX_EVENTS || !errorReportsAllowed()) return;
     sent++;
     const body = JSON.stringify(eventFor(error, release, window.location.pathname));
     const url = `${dsn.endpoint}?sentry_version=7&sentry_key=${encodeURIComponent(dsn.key)}`;

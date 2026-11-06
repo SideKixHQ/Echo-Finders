@@ -60,6 +60,7 @@ are deleted at the same moment; the collection remains.
 **Default:** off. Opt-in only. Anonymous and aggregate — which features are used, not by whom.
 
 ### Error reports
+**Only if you turn them on.** Off by default, in **Settings → Privacy → Send error reports**.
 **Why:** when something breaks on your phone, we need to know what broke to fix it.
 **What is sent:** the error message, where in the app's code it happened, which version of the
 app you have, the page you were on (without anything after the "?") and your browser's type.
@@ -106,6 +107,7 @@ Everything below is in **Settings → Privacy**, and none of it requires contact
 | Hands-free walking | Turns background location on or off. Immediate. |
 | Remember where I stood | Turns precise position recording on or off, and deletes existing positions when switched off. |
 | Keep my collection | Turn off to stop recording found echoes entirely. |
+| Send error reports | Off by default. Turn on to send us what broke when something breaks. Takes effect immediately. |
 | Export my data | A plain JSON file with everything we hold. Yours to keep. |
 | Delete my positions | Removes every standing position, keeps your collection. |
 | Delete everything | Removes the lot. |
