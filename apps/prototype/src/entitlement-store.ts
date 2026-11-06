@@ -26,7 +26,7 @@
  * browser, and the paywall says so out loud rather than implying a receipt exists.
  */
 
-import { ALL_ACCESS_TERM_MS, FREE, withRenewal, type Entitlement } from "@echofinders/core";
+import { ALL_ACCESS_TERM_MS, FREE, WEEK_PASS_TERM_MS, weekPassUntil, withRenewal, type Entitlement, type WeekPass } from "@echofinders/core";
 
 const KEY = "echo-finders:entitlement";
 
@@ -51,10 +51,17 @@ export function readEntitlement(): Entitlement {
         ? parsed.cities.filter((c): c is string => typeof c === "string")
         : [];
       const until = typeof parsed.allAccessUntil === "number" ? parsed.allAccessUntil : undefined;
+      const weekPasses = Array.isArray(parsed.weekPasses)
+        ? parsed.weekPasses.filter(
+            (w): w is WeekPass =>
+              typeof w === "object" && w !== null && typeof (w as WeekPass).city === "string" && typeof (w as WeekPass).until === "number",
+          )
+        : [];
       return {
         kind: "passes",
         ...at,
         ...(cities.length ? { cities } : {}),
+        ...(weekPasses.length ? { weekPasses } : {}),
         ...(until !== undefined ? { allAccessUntil: until } : {}),
         // Only an explicit false: anything unreadable keeps renewing, as it was bought to.
         ...(until !== undefined && parsed.renews === false ? { renews: false } : {}),
@@ -118,6 +125,15 @@ export function buyCityPass(
  * Record a year of All-Access, added on to any time still left. Buying it is choosing it
  * again, so a renewal cancelled earlier is back on.
  */
+/** Seven days in one city, from now. A second week bought before the first ends runs on from it. */
+export function buyWeekPass(current: Entitlement, cityId: string, at: number = Date.now()): Entitlement {
+  if (current.kind === "unlocked") return current;
+  const base = asPasses(current, at);
+  const from = Math.max(at, weekPassUntil(base, cityId, at));
+  const weekPasses = [...(base.weekPasses ?? []).filter((w) => w.city !== cityId), { city: cityId, until: from + WEEK_PASS_TERM_MS }];
+  return save({ ...base, weekPasses });
+}
+
 export function buyAllAccess(current: Entitlement, at: number = Date.now()): Entitlement {
   if (current.kind === "unlocked") return current;
   const base = asPasses(current, at);

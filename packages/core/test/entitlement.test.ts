@@ -19,6 +19,9 @@ import {
   PLANS,
   membershipOf,
   withRenewal,
+  WEEK_PASS_TERM_MS,
+  cityPassPriceMinor,
+  weekPassUntil,
   type Entitlement,
 } from "../src/entitlement/entitlement.js";
 import type { Echo, ListenerProfile } from "../src/types.js";
@@ -231,5 +234,49 @@ describe("membership, as Settings shows it", () => {
     const pass: Entitlement = { kind: "passes", cities: ["new-york"] };
     expect(withRenewal(pass, false)).toBe(pass);
     expect(withRenewal(FREE, false)).toBe(FREE);
+  });
+});
+
+describe("the Week Pass and the Cape Fear coast", () => {
+  const NOW = 1_800_000_000_000;
+  const DOWNTOWN = { lat: 34.2357, lng: -77.9452 };
+  const SOUTHPORT = { lat: 33.9244, lng: -78.0206 };
+  const OAK_ISLAND = { lat: 33.9135, lng: -78.1617 };
+  const MYRTLE_BEACH = { lat: 33.6891, lng: -78.8867 };
+  const WEEK: Entitlement = { kind: "passes", purchasedAt: NOW, weekPasses: [{ city: "cape-fear", until: NOW + WEEK_PASS_TERM_MS }] };
+  const spent = listener(heardIds(FREE_ECHO_LIMIT));
+
+  it("costs $3.99 for seven days", () => {
+    expect(PLANS.week.amountMinor).toBe(399);
+    expect(WEEK_PASS_TERM_MS).toBe(7 * 24 * 60 * 60 * 1000);
+  });
+
+  it("is one pass for Wilmington, the beaches, Southport and Oak Island, and not Myrtle Beach", () => {
+    for (const at of [DOWNTOWN, SOUTHPORT, OAK_ISLAND]) expect(cityAt(at)?.id).toBe("cape-fear");
+    expect(cityAt(MYRTLE_BEACH)).toBeNull();
+  });
+
+  it("opens the city for seven days, then stops", () => {
+    expect(mayHearAnother(WEEK, spent, "new", SOUTHPORT, NOW + 6 * 86_400_000)).toBe(true);
+    expect(mayHearAnother(WEEK, spent, "new", SOUTHPORT, NOW + WEEK_PASS_TERM_MS + 1)).toBe(false);
+    expect(mayHearAnother(WEEK, spent, "new", MYRTLE_BEACH, NOW)).toBe(false);
+  });
+
+  it("shows in Settings while it runs, and gives way to a City Pass", () => {
+    expect(membershipOf(WEEK, NOW)).toEqual({ plan: "week-pass", city: "cape-fear", until: NOW + WEEK_PASS_TERM_MS });
+    expect(membershipOf(WEEK, NOW + WEEK_PASS_TERM_MS + 1)).toEqual({ plan: "free" });
+    expect(membershipOf({ ...WEEK, cities: ["cape-fear"] }, NOW).plan).toBe("city-pass");
+  });
+
+  it("counts towards the City Pass while it runs, and only for its own city", () => {
+    expect(cityPassPriceMinor(WEEK, "cape-fear", NOW)).toBe(600);
+    expect(cityPassPriceMinor(WEEK, "new-york", NOW)).toBe(999);
+    expect(cityPassPriceMinor(WEEK, "cape-fear", NOW + WEEK_PASS_TERM_MS + 1)).toBe(999);
+    expect(cityPassPriceMinor(FREE, "cape-fear", NOW)).toBe(999);
+  });
+
+  it("knows when the latest week for a city ends", () => {
+    expect(weekPassUntil(WEEK, "cape-fear", NOW)).toBe(NOW + WEEK_PASS_TERM_MS);
+    expect(weekPassUntil(WEEK, "cape-fear", NOW + WEEK_PASS_TERM_MS)).toBe(0);
   });
 });

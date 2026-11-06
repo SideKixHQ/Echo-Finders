@@ -58,6 +58,22 @@ describe("what a customer owns, from Stripe's records", () => {
     expect(e).toEqual({ kind: "passes", purchasedAt: 5000, allAccessUntil: end * 1000, renews: false });
   });
 
+  it("reads a paid Week Pass as seven days from the moment it was paid for", () => {
+    const e = entitlementFrom([{ payment_status: "paid", created: 1000, metadata: { plan: "week-pass", city: "cape-fear" } }], []);
+    expect(e).toEqual({ kind: "passes", purchasedAt: 1_000_000, weekPasses: [{ city: "cape-fear", until: 1_000_000 + 7 * DAY * 1000 }] });
+  });
+
+  it("runs a second week on from the first when it was bought before the first ended", () => {
+    const e = entitlementFrom(
+      [
+        { payment_status: "paid", created: 1000, metadata: { plan: "week-pass", city: "cape-fear" } },
+        { payment_status: "paid", created: 1000 + 6 * DAY, metadata: { plan: "week-pass", city: "cape-fear" } },
+      ],
+      [],
+    );
+    expect(e.weekPasses).toEqual([{ city: "cape-fear", until: 1_000_000 + 14 * DAY * 1000 }]);
+  });
+
   it("does not count a cancelled subscription", () => {
     expect(entitlementFrom([], [{ status: "canceled", created: 5, current_period_end: 9, cancel_at_period_end: false }])).toEqual({ kind: "free" });
   });
@@ -89,6 +105,47 @@ describe("checkout", () => {
     expect(body.get("metadata[city]")).toBe("new-york");
     expect(body.get("customer_creation")).toBe("always");
     expect(body.get("success_url")).toBe("https://echo-finders.vercel.app/?checkout=success&session_id={CHECKOUT_SESSION_ID}");
+  });
+
+  it("opens a $3.99 Week Pass payment for the city, priced from PLANS", async () => {
+    answers.push({ url: "https://checkout.stripe.com/c/w" });
+    const res = await checkout(post("/api/checkout", { plan: "week", cityId: "cape-fear" }));
+    expect(await res.json()).toEqual({ url: "https://checkout.stripe.com/c/w" });
+    const { body } = sent[0]!;
+    expect(body.get("mode")).toBe("payment");
+    expect(body.get("line_items[0][price_data][unit_amount]")).toBe("399");
+    expect(body.get("line_items[0][price_data][currency]")).toBe("usd");
+    expect(body.get("line_items[0][price_data][product_data][name]")).toBe("Cape Fear Coast Week Pass");
+    expect(body.get("metadata[plan]")).toBe("week-pass");
+    expect(body.get("metadata[city]")).toBe("cape-fear");
+  });
+
+  it("refuses a Week Pass for somewhere that is not a city", async () => {
+    expect((await checkout(post("/api/checkout", { plan: "week", cityId: "atlantis" }))).status).toBe(400);
+  });
+
+  it("charges the difference for a City Pass when Stripe says a Week Pass is still running", async () => {
+    const paidJustNow = Math.floor(Date.now() / 1000) - 3600;
+    answers.push({ data: [{ payment_status: "paid", created: paidJustNow, metadata: { plan: "week-pass", city: "cape-fear" } }] });
+    answers.push({ data: [] });
+    answers.push({ url: "https://checkout.stripe.com/c/u" });
+    await checkout(post("/api/checkout", { plan: "city", cityId: "cape-fear", customerId: "cus_123" }));
+    const { body } = sent[2]!;
+    expect(body.get("line_items[0][price_data][unit_amount]")).toBe("600");
+    expect(body.get("line_items[0][price]")).toBeNull();
+    expect(body.get("metadata[plan]")).toBe("city-pass");
+    expect(body.get("customer")).toBe("cus_123");
+  });
+
+  it("charges the full City Pass once the week has run out", async () => {
+    const longAgo = Math.floor(Date.now() / 1000) - 8 * DAY;
+    answers.push({ data: [{ payment_status: "paid", created: longAgo, metadata: { plan: "week-pass", city: "cape-fear" } }] });
+    answers.push({ data: [] });
+    answers.push({ url: "https://checkout.stripe.com/c/f" });
+    await checkout(post("/api/checkout", { plan: "city", cityId: "cape-fear", customerId: "cus_123" }));
+    const { body } = sent[2]!;
+    expect(body.get("line_items[0][price]")).toBe("price_city");
+    expect(body.get("line_items[0][price_data][unit_amount]")).toBeNull();
   });
 
   it("opens All-Access as a yearly subscription, for the customer already known", async () => {

@@ -60,7 +60,7 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 /** Off to Stripe's checkout page. The page leaves, so this only returns if it fails. */
-export async function startCheckout(plan: "city" | "allAccess", cityId?: string): Promise<void> {
+export async function startCheckout(plan: "week" | "city" | "allAccess", cityId?: string): Promise<void> {
   const { url } = await call<{ url: string }>("/api/checkout", {
     method: "POST",
     body: JSON.stringify({ plan, cityId, customerId: customerId() ?? undefined }),
