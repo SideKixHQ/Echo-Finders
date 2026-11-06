@@ -194,6 +194,22 @@ export function EchoPopup({
       <h3>{echo.title}</h3>
       <span className="pop-truth">
         <TruthMark echo={echo} />
+        {/*
+          Beside the claim it answers. A library that promises it is verified owes the
+          listener a way to say when it is not, at the moment they notice, without leaving
+          the story. On this line rather than its own: it costs the card no height, which on
+          an SE it does not have (audit-align, popup).
+        */}
+        {onReport && (
+          <button
+            className="pop-report"
+            onClick={() => onReport(echo)}
+            aria-haspopup="dialog"
+            aria-label="Something wrong with this story?"
+          >
+            Something wrong?
+          </button>
+        )}
       </span>
 
       <p className="pop-where">
@@ -309,15 +325,6 @@ export function EchoPopup({
         )}
       </div>
 
-      {/*
-        Last and quiet: a library that promises it is verified owes the listener a way to
-        say when it is not, at the moment they notice, without leaving the story.
-      */}
-      {onReport && (
-        <button className="pop-report" onClick={() => onReport(echo)} aria-haspopup="dialog">
-          Something wrong with this story?
-        </button>
-      )}
     </div>
   );
 }
