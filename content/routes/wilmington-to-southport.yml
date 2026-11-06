@@ -1,0 +1,39 @@
+# The MVP drive (James, 2026-11-05: "yes to the drive"; docs/12-cities.md).
+#
+# Down Pleasure Island from Wilmington on U.S. 421, through Carolina Beach and Kure Beach to
+# Fort Fisher, then across the mouth of the Cape Fear on the Fort Fisher to Southport ferry.
+# It reuses the Tier 1 echoes the road passes; the stretches between towns need their own,
+# at one every ten miles (12-cities.md).
+#
+# The ferry is part of the drive, not a gap in it: `build-route-paths.py` follows ferry
+# crossings as well as roads, so the traced line crosses the river where the boat does.
+#
+# Positions are Wikidata items: Wilmington is the Cotton Exchange point already in the
+# library, Carolina Beach Q1044392, Kure Beach Q2027465, Fort Fisher Q256931, Southport
+# Q629993.
+id: wilmington-to-southport
+mode: driving
+name: "Wilmington to Southport, by Fort Fisher and the ferry"
+# The road the line on the map follows between waypoints (`scripts/build-route-paths.py`).
+follows: Carolina Beach Road
+
+origin:
+  name: Wilmington, North Carolina
+  at: { lat: 34.23979, lng: -77.94958 }
+  timeZone: America/New_York
+
+destination:
+  name: Southport, North Carolina
+  at: { lat: 33.924444, lng: -78.020556 }
+  timeZone: America/New_York
+
+# The traced path is 45.5 km including the crossing, with stops at Carolina Beach and the
+# fort and the wait for the boat. An estimate: an afternoon, not a commute.
+durationS: 10800
+
+waypoints:
+  - { name: Wilmington, at: { lat: 34.23979, lng: -77.94958 } }
+  - { name: Carolina Beach, at: { lat: 34.036667, lng: -77.896944 }, dwellS: 900 }
+  - { name: Kure Beach, at: { lat: 33.997777, lng: -77.908055 } }
+  - { name: Fort Fisher, at: { lat: 33.9717, lng: -77.9194 }, dwellS: 1800 }
+  - { name: Southport, at: { lat: 33.924444, lng: -78.020556 } }
