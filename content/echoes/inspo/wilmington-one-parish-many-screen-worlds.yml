@@ -1,0 +1,65 @@
+# Inspo, film and television (from James's document) for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Overture 2026-09-23.0 address point for 25 South 3rd Street (Wikidata Q7588491 agrees).
+id: wilmington-one-parish-many-screen-worlds
+title: "One Parish, Many Screen Worlds"
+summary: "St. James Parish has been a filming location from Idlewild to Sleepy Hollow and Words on Bathroom Walls."
+place: "St. James Parish, 25 South Third Street, Wilmington, North Carolina"
+at: { lat: 34.235325, lng: -77.945763 }
+triggerRadiusKm: 0.06
+category: inspo
+inspo:
+  kind: creation
+  evidence: site
+format: look-below
+durationS: 36
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, one-tree-hill, sleepy-hollow, downtown]
+teaser: "A church that has been on screen for twenty years."
+script: |
+  Look at the old church and its grounds. They have been on screen since One Tree Hill began.
+
+  St. James lists the productions itself. One Tree Hill filmed here, and its school served as
+  Jamie's preschool. Sleepy Hollow filmed here. Words on Bathroom Walls filmed on the front lawn,
+  and in two of the parish halls. Idlewild came in 2006, and The Supremes at Earl's All-You-Can-Eat
+  in 2022.
+
+  Those stories all needed somewhere that felt like it had been here a long time. This parish
+  had.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "St. James lists the productions itself."
+    source: 1
+    quote: "Wilmington's unique history with the film industry has led to St. James and Mt. Lebanon Chapel being featured in several tv shows and feature films!"
+  - says: "They have been on screen since One Tree Hill began."
+    source: 1
+    quote: "One Tree Hill (2003-2012) – Filmed at both St. James and Mt. Lebanon Chapel"
+  - says: "One Tree Hill filmed here"
+    source: 1
+    quote: "One Tree Hill (2003-2012) – Filmed at both St. James and Mt. Lebanon Chapel"
+  - says: "its school served as Jamie's preschool."
+    source: 2
+    quote: "The school at St. James Episcopal Church served as Jamie's preschool on the show."
+  - says: "Sleepy Hollow filmed here."
+    source: 1
+    quote: "Sleepy Hollow (2013-14) Filmed at both St. James and Mt. Lebanon Chapel"
+  - says: "Words on Bathroom Walls filmed on the front lawn, and in two of the parish halls."
+    source: 1
+    quote: "Words on Bathroom Walls (2018) – Filmed at St. James Parish on the front lawn, in Perry Hall, and Milton Hall"
+  - says: "Idlewild came in 2006, and The Supremes at Earl's All-You-Can-Eat in 2022."
+    source: 1
+    quote: "Idlewild (2006) – Filmed at St. James Parish"
+sources:
+  - title: "Filmed at St. James Parish"
+    publisher: "St. James Parish"
+    url: https://www.stjamesp.org/filmed-at-st-james-parish-st-james-episcopal-church/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+  - title: "One Tree Hill Tour"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/one-tree-hill-walking-tour/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
