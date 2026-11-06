@@ -8,7 +8,7 @@ at: { lat: 34.0503, lng: -77.9103 }
 triggerRadiusKm: 0.3
 category: kids
 format: short
-durationS: 52
+durationS: 48
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   Wild flytraps grow in only a small area around Wilmington. That makes this one of the only
   places on Earth where you can see them. Look all you like, but never dig them up. They belong
   here.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "It is called a Venus flytrap, and it is tiny, often no bigger than a quarter."
@@ -54,3 +54,50 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/venus-flytrap/
     retrievedAt: "2026-11-05"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/carolina-beach-the-plant-that-eats-bugs/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 47.6
+    audioBytes: 763236
+    transcript:
+      totalS: 47.6
+      lines:
+        - text: Here is a challenge.
+          atS: 0
+          durationS: 1.09
+        - text: Somewhere near this trail, there might be a plant that eats bugs.
+          atS: 1.53
+          durationS: 3.59
+        - text: Can you spot it?
+          atS: 5.45
+          durationS: 0.93
+        - text: It is called a Venus flytrap, and it is tiny, often no bigger than a quarter.
+          atS: 6.76
+          durationS: 5.27
+        - text: Look low, near the ground, where the land is open, sunny and sandy.
+          atS: 12.41
+          durationS: 4.67
+        - text: Each trap is a leaf that works like a little green bear trap, with tiny hairs inside.
+          atS: 17.52
+          durationS: 5.57
+        - text: When a bug brushes those hairs more than once, snap!
+          atS: 23.53
+          durationS: 3.53
+        - text: The trap shuts in less than a second.
+          atS: 27.76
+          durationS: 2.15
+        - text: Then the plant slowly digests its dinner, and later the trap opens again.
+          atS: 30.42
+          durationS: 4.85
+        - text: Wild flytraps grow in only a small area around Wilmington.
+          atS: 35.71
+          durationS: 3.78
+        - text: That makes this one of the only places on Earth where you can see them.
+          atS: 39.82
+          durationS: 3.27
+        - text: Look all you like, but never dig them up.
+          atS: 43.61
+          durationS: 2.45
+        - text: They belong here.
+          atS: 46.44
+          durationS: 1.21

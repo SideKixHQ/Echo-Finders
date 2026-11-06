@@ -8,7 +8,7 @@ at: { lat: 33.9719, lng: -77.9192 }
 triggerRadiusKm: 0.06
 category: kids
 format: short
-durationS: 45
+durationS: 41
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   Here is the surprising part. The cannons never knocked most of it down. The ocean did, wave
   after wave. Only about a tenth of the fort is left. Can you find the mounds that survived?
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "This whole fort was a giant one, built for real."
@@ -57,3 +57,50 @@ sources:
     url: https://historicsites.nc.gov/all-sites/fort-fisher/history
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/fort-fisher-why-a-fort-made-of-sand/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 41.1
+    audioBytes: 657910
+    transcript:
+      totalS: 41.1
+      lines:
+        - text: Have you ever built a sandcastle?
+          atS: 0
+          durationS: 2.17
+        - text: This whole fort was a giant one, built for real.
+          atS: 2.61
+          durationS: 3.26
+        - text: Most old forts were made of brick.
+          atS: 6.2
+          durationS: 1.97
+        - text: But when a cannonball hits brick, the brick can crack and break.
+          atS: 8.5
+          durationS: 3.75
+        - text: Sand is different.
+          atS: 12.69
+          durationS: 1.13
+        - text: It soaks up the shock, like catching a ball in a pillow.
+          atS: 14.03
+          durationS: 3.32
+        - text: So the builders piled sand into huge mounds, each one about as tall as a three-story house.
+          atS: 17.79
+          durationS: 5.84
+        - text: They made it the biggest fort of its kind in the whole South.
+          atS: 24.01
+          durationS: 3.39
+        - text: Here is the surprising part.
+          atS: 27.78
+          durationS: 1.8
+        - text: The cannons never knocked most of it down.
+          atS: 30.02
+          durationS: 2.41
+        - text: The ocean did, wave after wave.
+          atS: 32.76
+          durationS: 2.62
+        - text: Only about a tenth of the fort is left.
+          atS: 35.83
+          durationS: 2.31
+        - text: Can you find the mounds that survived?
+          atS: 38.58
+          durationS: 2.47

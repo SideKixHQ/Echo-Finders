@@ -8,7 +8,7 @@ at: { lat: 34.0365, lng: -77.8965 }
 triggerRadiusKm: 0.25
 category: history
 format: short
-durationS: 52
+durationS: 46
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
   dancing and refreshments.
 
   Nobody recorded whether the ministers danced.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "But one editor went home with a grievance."
@@ -56,3 +56,44 @@ sources:
     url: https://www.loc.gov/resource/sn91068367/1899-07-28/ed-1/?sp=6
     retrievedAt: "2026-11-06"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/carolina-beach-the-editors-and-the-dance/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 46.2
+    audioBytes: 740248
+    transcript:
+      totalS: 46.2
+      lines:
+        - text: In July 1899, the newspaper editors of North Carolina held their convention right here.
+          atS: 0
+          durationS: 6.25
+        - text: By most accounts they had a fine time.
+          atS: 7.06
+          durationS: 2.5
+        - text: The accommodations, one admitted, were not what they expected.
+          atS: 9.83
+          durationS: 3.74
+        - text: The place was crowded to overflowing.
+          atS: 14.08
+          durationS: 2.08
+        - text: They loved the surf anyway.
+          atS: 16.37
+          durationS: 1.75
+        - text: But one editor went home with a grievance.
+          atS: 18.56
+          durationS: 2.53
+        - text: A dance had been held in the association's honor, and he objected.
+          atS: 21.34
+          durationS: 4.15
+        - text: He believed very few editors in the state cared a thrip for dancing.
+          atS: 26.09
+          durationS: 3.9
+        - text: His real worry was the ministers among them.
+          atS: 30.59
+          durationS: 2.4
+        - text: They did not believe in dancing, he wrote, and should be spared the humiliation of seeing their names printed beside the words music, dancing and refreshments.
+          atS: 33.24
+          durationS: 9.86
+        - text: Nobody recorded whether the ministers danced.
+          atS: 43.61
+          durationS: 2.6

@@ -8,12 +8,11 @@ at: { lat: 33.997777, lng: -77.908055 }
 triggerRadiusKm: 0.15
 category: legend
 format: short
-durationS: 58
+durationS: 50
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A wartime story told by an officer stationed at Fort Fisher. No hard evidence or
-  official account confirms it; the script says so.
+  A wartime story told by an officer stationed at Fort Fisher. No hard evidence or official account confirms it; the script says so.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -40,7 +39,7 @@ script: |
 pronunciations:
   - written: Kure
     say: KYOOR-ee
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "On the night of the fifteenth of July, 1943, the story goes, a German submarine surfaced off Kure Beach under cover of darkness."
@@ -73,3 +72,47 @@ sources:
     url: https://historicsites.nc.gov/all-sites/fort-fisher/history/wwii-fort-fisher
     retrievedAt: "2026-11-05"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/kure-beach-five-shells-in-the-dark/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 49.9
+    audioBytes: 799181
+    transcript:
+      totalS: 49.9
+      lines:
+        - text: Look out to sea, after dark if you can.
+          atS: 0
+          durationS: 2.57
+        - text: This is a story people here have told since the war.
+          atS: 3.08
+          durationS: 2.79
+        - text: On the night of the fifteenth of July, 1943, the story goes, a German submarine surfaced off Kure Beach under cover of darkness.
+          atS: 6.47
+          durationS: 8.38
+        - text: It fired five shells at the Ethyl-Dow chemical plant, which made a key ingredient for high-octane fuel.
+          atS: 15.17
+          durationS: 6.03
+        - text: Every shell overshot.
+          atS: 21.37
+          durationS: 1.52
+        - text: All of them plunged into the Cape Fear River.
+          atS: 23.17
+          durationS: 2.64
+        - text: The man who told it was an officer stationed at Fort Fisher.
+          atS: 26.5
+          durationS: 3.43
+        - text: Some residents remembered the shipyard in Wilmington suddenly going black that night.
+          atS: 30.37
+          durationS: 4.56
+        - text: They had been told that if its lights ever went out, a real raid had come.
+          atS: 35.32
+          durationS: 3.96
+        - text: A news blackout followed, the story says, and over the years it drifted into legend.
+          atS: 39.72
+          durationS: 5.32
+        - text: So hear it that way.
+          atS: 45.42
+          durationS: 1.2
+        - text: But five is a very specific number to invent.
+          atS: 46.94
+          durationS: 2.94

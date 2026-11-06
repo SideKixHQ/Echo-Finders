@@ -33,7 +33,7 @@ script: |
 pronunciations:
   - written: Greenhow
     say: GREEN-how
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In the autumn of 1864, a spy tried to reach it in a small boat."
@@ -66,3 +66,47 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/diving-into-history/
     retrievedAt: "2026-11-05"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fort-fisher-the-spy-who-tried-to-row-ashore/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 50.5
+    audioBytes: 809630
+    transcript:
+      totalS: 50.5
+      lines:
+        - text: Look out at the water off this shore.
+          atS: 0
+          durationS: 2.15
+        - text: In the autumn of 1864, a spy tried to reach it in a small boat.
+          atS: 2.66
+          durationS: 4.97
+        - text: Her name was Rose O'Neal Greenhow.
+          atS: 8.01
+          durationS: 2.97
+        - text: She was aboard the Condor, one of the fastest blockade runners ever built in Britain, on the ship's maiden voyage.
+          atS: 11.42
+          durationS: 6.8
+        - text: The Condor ran aground, trying to avoid the wreck of another blockade runner, the Night Hawk.
+          atS: 18.83
+          durationS: 5.77
+        - text: Greenhow set out for Fort Fisher in the ship's boat.
+          atS: 25.11
+          durationS: 3.07
+        - text: It capsized.
+          atS: 28.62
+          durationS: 1.25
+        - text: She drowned on the first of October, 1864.
+          atS: 30.38
+          durationS: 3.66
+        - text: She is buried in Oakdale Cemetery in Wilmington.
+          atS: 34.55
+          durationS: 2.81
+        - text: Her ship is still out there.
+          atS: 37.69
+          durationS: 1.59
+        - text: In 2017 the Condor became North Carolina's first Heritage Dive Site, and divers now visit the wreck.
+          atS: 40.39
+          durationS: 7.41
+        - text: She never reached the shore you are standing on.
+          atS: 48.18
+          durationS: 2.34

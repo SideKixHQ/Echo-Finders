@@ -1595,7 +1595,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 49,
+    "durationS": 47,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1605,19 +1605,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look around. Seabreeze does not look much like a resort now. For decades, it was exactly that.\n\nDuring the Jim Crow era, Seabreeze and Freeman Beach were havens for Black families seeking a\nday by the water. Seabreeze was established in 1922, and Freeman Beach in 1951. The same\nfamily built both, the Freemans, and both became symbols of pride and resilience.\n\nWhat ended them was slower than a law. Dredging near Freeman Beach. Development creeping in.\nAnd then the devastation of Hurricane Hazel.\n\nToday the north end of the island is Freeman Park, where people drive straight onto the sand.\n\nSome of the beach people cross for fun was once a haven.\n",
     "teaser": "Under Jim Crow, Black families came here for the beach.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/carolina-beach-a-haven-called-seabreeze/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 46.9,
+        "audioBytes": 751533
+      }
+    ],
     "tags": [
       "carolina-beach",
       "african-american-history",
       "jim-crow"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/carolina-beach-a-haven-called-seabreeze",
-        "durationS": 49
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "carolina-beach-one-of-the-last-boardwalks",
@@ -1633,7 +1634,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "look-below",
-    "durationS": 34,
+    "durationS": 32,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1643,18 +1644,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Walk out onto the boardwalk and look both ways.\n\nWhat you are on is rare now. The tourism bureau calls it one of the last vintage seaside\nboardwalks in the country. It still has the arcade, and the legendary donuts.\n\nLook out at the ocean too. The restaurant down there is built on the remnants of the old\nCenter Pier.\n\nOn summer Thursdays, fireworks go up over the beach right in front of you.\n\nNothing here is trying to be new. That is the whole point.\n",
     "teaser": "The kind of boardwalk most beach towns tore up years ago.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/carolina-beach-one-of-the-last-boardwalks/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 32.1,
+        "audioBytes": 514550
+      }
+    ],
     "tags": [
       "carolina-beach",
       "boardwalk"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/carolina-beach-one-of-the-last-boardwalks",
-        "durationS": 34
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "carolina-beach-the-boat-to-the-beach",
@@ -1670,7 +1672,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 49,
+    "durationS": 48,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1680,19 +1682,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Think about how you got here. In 1899, the answer was a boat.\n\nThat summer, a newspaper described the trip. The steamer left Wilmington and made the run down\nthe river to the pier, a distance of thirteen miles, in less than an hour.\n\nHer name was the Wilmington, and she plied between Wilmington, Carolina Beach and Southport. Her\ncaptain and owner, John W. Harper, liked to point out the sights on the way down: the old\nwrecks, the colonial plantations, the rice fields.\n\nPeople from the city and from up-country came by the thousands every summer, to eat fish, take\na surf bath, and catch the sea breeze.\n\nIn 1899, the river was the way to the beach.\n",
     "teaser": "In 1899 you did not drive to Carolina Beach. You took the steamer.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/carolina-beach-the-boat-to-the-beach/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 47.7,
+        "audioBytes": 764908
+      }
+    ],
     "tags": [
       "carolina-beach",
       "steamer",
       "nineteenth-century"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/carolina-beach-the-boat-to-the-beach",
-        "durationS": 49
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "carolina-beach-the-editors-and-the-dance",
@@ -1708,7 +1711,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 52,
+    "durationS": 46,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1718,19 +1721,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "In July 1899, the newspaper editors of North Carolina held their convention right here.\n\nBy most accounts they had a fine time. The accommodations, one admitted, were not what they\nexpected. The place was crowded to overflowing. They loved the surf anyway.\n\nBut one editor went home with a grievance. A dance had been held in the association's honor,\nand he objected. He believed very few editors in the state cared a thrip for dancing.\n\nHis real worry was the ministers among them. They did not believe in dancing, he wrote, and\nshould be spared the humiliation of seeing their names printed beside the words music,\ndancing and refreshments.\n\nNobody recorded whether the ministers danced.\n",
     "teaser": "In 1899 the state's newspaper editors met here. One of them had a complaint.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/carolina-beach-the-editors-and-the-dance/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 46.2,
+        "audioBytes": 740248
+      }
+    ],
     "tags": [
       "carolina-beach",
       "nineteenth-century",
       "newspapers"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/carolina-beach-the-editors-and-the-dance",
-        "durationS": 52
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "carolina-beach-the-plant-that-eats-bugs",
@@ -1746,7 +1750,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "short",
-    "durationS": 52,
+    "durationS": 48,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1757,20 +1761,21 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Here is a challenge. Somewhere near this trail, there might be a plant that eats bugs.\nCan you spot it?\n\nIt is called a Venus flytrap, and it is tiny, often no bigger than a quarter. Look low, near\nthe ground, where the land is open, sunny and sandy.\n\nEach trap is a leaf that works like a little green bear trap, with tiny hairs inside. When a\nbug brushes those hairs more than once, snap! The trap shuts in less than a second. Then the\nplant slowly digests its dinner, and later the trap opens again.\n\nWild flytraps grow in only a small area around Wilmington. That makes this one of the only\nplaces on Earth where you can see them. Look all you like, but never dig them up. They belong\nhere.\n",
     "teaser": "Somewhere near this trail, a plant might be waiting for its lunch.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/carolina-beach-the-plant-that-eats-bugs/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 47.6,
+        "audioBytes": 763236
+      }
+    ],
     "tags": [
       "carolina-beach",
       "carolina-beach-state-park",
       "nature",
       "flytrap"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/carolina-beach-the-plant-that-eats-bugs",
-        "durationS": 52
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "carolina-beach-the-show-over-the-ocean",
@@ -1786,7 +1791,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 52,
+    "durationS": 47,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1796,19 +1801,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Face the ocean. During the war, this beach had a view worth sitting down for.\n\nDown at Fort Fisher, anti-aircraft gunners trained six days a week. At night, searchlights\npicked out the towed targets, and tracers arched out over the ocean.\n\nOne soldier remembered marrying while he was home on furlough. His wife came down and lived\nat Carolina Beach for several months, just before his unit shipped overseas.\n\nPeople could sit down on Carolina Beach, he said, and watch the forties and fifties being shot\nout over the ocean. He meant the forty-millimeter cannon and the fifty-caliber machine guns.\n\nHe called it a really beautiful sight. A few months later, he was on his way to the real\nthing.\n",
     "teaser": "During the war, people sat on this beach to watch the guns fire at night.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/carolina-beach-the-show-over-the-ocean/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 47.3,
+        "audioBytes": 758221
+      }
+    ],
     "tags": [
       "carolina-beach",
       "world-war-ii",
       "military"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/carolina-beach-the-show-over-the-ocean",
-        "durationS": 52
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "carolina-beach-the-trap-that-counts",
@@ -1824,7 +1830,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "land",
     "format": "short",
-    "durationS": 50,
+    "durationS": 48,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1834,20 +1840,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Slow down and look at the ground along the wetter edges of the trail. What you are\nlooking for is smaller than you expect, often no bigger than a quarter.\n\nIt is a Venus flytrap. It has one of the smallest native ranges of any plant anywhere, a slim\nband of coastal plain around Wilmington, reaching just into South Carolina.\n\nEach trap is a leaf, hinged like a tiny bear trap and lined with trigger hairs. One touch is\nnot enough. An insect has to brush those hairs more than once, and then the trap snaps shut,\nin less than a second.\n\nThe plant waits to be sure. You can too. Look, but do not dig. In North Carolina, taking a\nflytrap from the wild is a felony.\n",
     "teaser": "The most famous plant on this coast is smaller than a quarter.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/carolina-beach-the-trap-that-counts/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 48.1,
+        "audioBytes": 770759
+      }
+    ],
     "tags": [
       "carolina-beach",
       "carolina-beach-state-park",
       "nature",
       "flytrap"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/carolina-beach-the-trap-that-counts",
-        "durationS": 50
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "carolina-beach-where-the-shag-began",
@@ -1863,7 +1870,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 49,
+    "durationS": 46,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1873,19 +1880,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Listen for beach music. If any town can claim this dance, it might be this town.\n\nThe shag is danced to beach music, a laid-back kind of rhythm and blues with strong ties to\nthe Carolina coast. Local history buffs claim it is likely to have begun right here, on the\nCarolina Beach Boardwalk.\n\nLikely is doing real work in that sentence. Dances do not keep birth certificates.\n\nBut the music never left. The Carolina Beach Music Festival has run here for more than thirty\nyears, and its organizers believe it is the longest-running beach music festival still held\non the actual beach.\n\nWatch the feet. Whether or not it started here, it has never stopped here.\n",
     "teaser": "This boardwalk claims a dance. The claim is worth hearing, carefully.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/carolina-beach-where-the-shag-began/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 46,
+        "audioBytes": 737323
+      }
+    ],
     "tags": [
       "carolina-beach",
       "music",
       "boardwalk"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/carolina-beach-where-the-shag-began",
-        "durationS": 49
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "casa-casuarina-the-steps",
@@ -4848,7 +4856,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 48,
+    "durationS": 43,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4858,20 +4866,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Picture this place in July 1862, before most of what you can see was here.\n\nThat month the fort got its final commander, Colonel William Lamb. Before dusk on the day he\narrived, he had thoroughly inspected the works. He found only seventeen guns of respectable\ncalibre. As a defence against a Federal fleet, he wrote, the works amounted to nothing.\n\nSo he decided to build something else. A work of such magnitude, in his words, that it could\nwithstand the heaviest fire of any guns in the American navy.\n\nHe spent the next two and a half years doing it. Most of the mounds you are looking at are\nhis answer to his own first afternoon here.\n",
     "teaser": "The new commander inspected the fort before dusk on his first day. He was not impressed.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fort-fisher-it-amounted-to-nothing/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 42.8,
+        "audioBytes": 685496
+      }
+    ],
     "tags": [
       "fort-fisher",
       "kure-beach",
       "civil-war",
       "military"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fort-fisher-it-amounted-to-nothing",
-        "durationS": 48
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "fort-fisher-medals-never-handed-over",
@@ -4887,7 +4896,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "look-below",
-    "durationS": 35,
+    "durationS": 32,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4897,20 +4906,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand by the visitor center and count to seventy-two.\n\nThat is how many soldiers, sailors and Marines received the Medal of Honor for what they did\nat Fort Fisher, between June 1864 and January 1865.\n\nFor the hundred and fifty-first anniversary of the battle, the site put five of those medals\non display, on loan from the Navy. None of the five had ever been presented to the man who\nearned it.\n\nThey were made, and kept. The hands they were for never held them.\n",
     "teaser": "Seventy-two Medals of Honor were earned here. Some were never given to the men.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fort-fisher-medals-never-handed-over/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 32.2,
+        "audioBytes": 516640
+      }
+    ],
     "tags": [
       "fort-fisher",
       "kure-beach",
       "civil-war",
       "military"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fort-fisher-medals-never-handed-over",
-        "durationS": 35
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "fort-fisher-more-important-than-richmond",
@@ -4926,7 +4936,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 46,
+    "durationS": 48,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4936,6 +4946,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look toward the river. Everything this fort did was about what came up it.\n\nIn August 1864, Union warships sealed the port of Mobile, Alabama. That left Wilmington as the\nlast major Southern seaport open to the outside world, and this fort was its front door.\n\nThe Secretary of the Navy, Gideon Welles, said it plainly. Closing Wilmington, he wrote, was\nmore important, practically, than the capture of Richmond.\n\nBy 1865, the supply line through Wilmington was the last one still feeding Robert E. Lee's\narmy in Virginia.\n\nIn the Navy's eyes, the war's most famous city was not its most important target. This sand was.\n",
     "teaser": "In 1864 the Navy said closing this port mattered more than taking the Confederate capital.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fort-fisher-more-important-than-richmond/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 48.3,
+        "audioBytes": 773267
+      }
+    ],
     "tags": [
       "fort-fisher",
       "kure-beach",
@@ -4943,14 +4961,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "blockade-runners"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fort-fisher-more-important-than-richmond",
-        "durationS": 46
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "fort-fisher-soldiers-who-had-never-seen-the-sea",
@@ -4966,7 +4977,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 53,
+    "durationS": 51,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4976,20 +4987,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the water and imagine you have never seen it before.\n\nMany of the men who trained here in the war came from the interior of the country, and had\nnever seen a beach. Federal Point was a shock. There was sand in everything, and mosquitoes.\nOne soldier called it a forlorn spit of sand and scrub growth, pinched between the Atlantic\nOcean and the Cape Fear River.\n\nSo the post taught them the beach. Swimming lessons. Advice on how to avoid sunburn. Beach\nsafety. More than a few refused to eat the fried clams and oysters.\n\nFor a show, they boxed. In January 1944, the boxing champion Joe Louis came to visit.\n\nThey had come to learn to shoot down aircraft. Before that, they had to learn the ocean.\n",
     "teaser": "The army had to teach its gunners how to live on a beach.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fort-fisher-soldiers-who-had-never-seen-the-sea/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 50.8,
+        "audioBytes": 813809
+      }
+    ],
     "tags": [
       "fort-fisher",
       "kure-beach",
       "world-war-ii",
       "military"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fort-fisher-soldiers-who-had-never-seen-the-sea",
-        "durationS": 53
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "fort-fisher-the-hands-that-built-it",
@@ -5005,7 +5017,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 43,
+    "durationS": 39,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5015,6 +5027,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the height of these mounds. Each one on the land face rose about thirty-two feet.\nEvery bit of it was sand, moved by people.\n\nMore than five hundred African Americans, both enslaved and free, worked with Confederate\nsoldiers to build this fort. At times, as many as a thousand men were digging at once.\n\nFor the enslaved among them, there was no choice in it. Under the fort's last commander,\nperhaps as many as five hundred of the workers were enslaved.\n\nWhen you read that Fort Fisher was the largest earthwork fort in the South, remember who\nmoved the earth.\n",
     "teaser": "Every mound here was moved by hand, and many of the hands were not free.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fort-fisher-the-hands-that-built-it/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 38.5,
+        "audioBytes": 616114
+      }
+    ],
     "tags": [
       "fort-fisher",
       "kure-beach",
@@ -5022,14 +5042,7 @@ export const LIBRARY: readonly Echo[] = [
       "slavery",
       "african-american-history"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fort-fisher-the-hands-that-built-it",
-        "durationS": 43
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "fort-fisher-the-mound",
@@ -5045,7 +5058,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 50,
+    "durationS": 45,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5055,20 +5068,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "At the far end of the fort's sea face stood its landmark, a battery forty-three feet high,\nknown as the Mound.\n\nIt was built in the spring of 1863, and not by shovel alone. A steam engine on an inclined\nrailway hauled sand to the top of a scaffold, and hundreds of men dumped it from there until\nthe mound took shape.\n\nBecause it could be seen from so far out, it became a lighthouse of sorts. Signal lights on\nthe Mound talked to incoming blockade runners.\n\nWhen Jefferson Davis visited in 1863, he rode up to the top. The guns of the sea face fired a\ntwenty-one gun presidential salute.\n\nThe ships it guided in were smuggling the war's supplies. The light was for them.\n",
     "teaser": "The tallest thing on this beach was built with a steam engine and a scaffold.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fort-fisher-the-mound/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 44.9,
+        "audioBytes": 718932
+      }
+    ],
     "tags": [
       "fort-fisher",
       "kure-beach",
       "civil-war",
       "military"
     ],
-    "remoteness": 0.55,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fort-fisher-the-mound",
-        "durationS": 50
-      }
-    ]
+    "remoteness": 0.55
   },
   {
     "id": "fort-fisher-the-pilots-in-the-pines",
@@ -5084,7 +5098,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 46,
+    "durationS": 40,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5094,20 +5108,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the tallest trees you can see, and picture a ladder leaning against one, all\nthe way to the top.\n\nIn 1861, soldiers arriving on Federal Point noticed long ladders stretching to the highest\nreaches of the tall pines. The locals explained. River pilots climbed them with a spy glass\nto watch the ocean for incoming blockade runners.\n\nWhen a pilot got the signal, he hurried down to his small boat, went out to the ship, and\nguided it to the mouth of the river and on up to Wilmington.\n\nThe Confederacy's last great supply line began, some nights, with a man at the top of a pine\ntree, waiting to see a ship.\n",
     "teaser": "Long ladders ran up the tallest pines here. Somebody was watching the sea.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fort-fisher-the-pilots-in-the-pines/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 40,
+        "audioBytes": 641610
+      }
+    ],
     "tags": [
       "fort-fisher",
       "kure-beach",
       "civil-war",
       "blockade-runners"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fort-fisher-the-pilots-in-the-pines",
-        "durationS": 46
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "fort-fisher-the-runway-through-the-wall",
@@ -5133,20 +5148,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Notice the road. U.S. 421 runs right through the sandy ruins of what was once the\nfort's land front.\n\nTraining at the Fort Fisher range began in October 1941. It became the main firing range\nfor an anti-aircraft training camp, and planes towed targets back and forth above the beach\nwhile the gunners below fired at them.\n\nThen the army built a large airstrip here. It destroyed a sizable portion of the land front\nof the old bastion, by then eighty years old.\n\nNobody pretended otherwise. Most of the trainees knew where they were, and the camp's own\nliterature celebrated the fort's past. National defense simply came first.\n\nPreservation came later, and found less to preserve.\n",
     "teaser": "In 1941 the army came back to Fort Fisher, and built an airstrip through it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fort-fisher-the-runway-through-the-wall/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 51,
+        "audioBytes": 816735
+      }
+    ],
     "tags": [
       "fort-fisher",
       "kure-beach",
       "world-war-ii",
       "military"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fort-fisher-the-runway-through-the-wall",
-        "durationS": 51
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "fort-fisher-the-same-sand-twice",
@@ -5162,7 +5178,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 46,
+    "durationS": 41,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5172,6 +5188,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand on the mounds and think about who has stood here before you.\n\nOn the fifteenth of January, 1865, more than three thousand three hundred Union infantry\nassaulted this land face. Among them were the twenty-seventh United States Colored Troops.\n\nBlack soldiers came back to the same sand in 1941. The fifty-fourth Coast Artillery was the\narmy's only Black anti-aircraft unit with the big one-five-five millimeter guns, and it\nbrought twenty-four of them here for two months of training.\n\nThe first time, they came to take this fort. The second time, they came to train on it.\n\nThe mounds were the same mounds.\n",
     "teaser": "Black soldiers came to these mounds in 1865, and again in 1941.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fort-fisher-the-same-sand-twice/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 40.8,
+        "audioBytes": 654149
+      }
+    ],
     "tags": [
       "fort-fisher",
       "kure-beach",
@@ -5180,14 +5204,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "african-american-history"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fort-fisher-the-same-sand-twice",
-        "durationS": 46
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "fort-fisher-the-spy-who-tried-to-row-ashore",
@@ -5213,6 +5230,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look out at the water off this shore. In the autumn of 1864, a spy tried to reach it in a\nsmall boat.\n\nHer name was Rose O'Neal Greenhow. She was aboard the Condor, one of the fastest blockade\nrunners ever built in Britain, on the ship's maiden voyage.\n\nThe Condor ran aground, trying to avoid the wreck of another blockade runner, the Night\nHawk. Greenhow set out for Fort Fisher in the ship's boat. It capsized. She drowned on the\nfirst of October, 1864.\n\nShe is buried in Oakdale Cemetery in Wilmington. Her ship is still out there. In 2017 the\nCondor became North Carolina's first Heritage Dive Site, and divers now visit the wreck.\n\nShe never reached the shore you are standing on.\n",
     "teaser": "In 1864 a Confederate spy set out for this shore in a small boat.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fort-fisher-the-spy-who-tried-to-row-ashore/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 50.5,
+        "audioBytes": 809630
+      }
+    ],
     "pronunciations": [
       {
         "written": "Greenhow",
@@ -5225,14 +5250,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "women"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fort-fisher-the-spy-who-tried-to-row-ashore",
-        "durationS": 51
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "fort-fisher-what-the-sea-took",
@@ -5248,7 +5266,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 46,
+    "durationS": 41,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5258,20 +5276,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the mounds beside the trail. They are made of earth and sand, and that was the\nwhole idea.\n\nOlder forts were brick and mortar. Fort Fisher was made mostly of earth and sand, which was\nfar better at swallowing the shock of a heavy shell. The builders made it the largest\nearthwork fort in the South, with a mile of sea defense along this shore.\n\nTwo major battles were fought here, and the second one took it.\n\nBut the enemy that did the most damage never fired a shot. Approximately ten percent of\nFort Fisher still stands. Much of the rest was eroded by the ocean.\n\nIt just kept coming back, with every tide.\n",
     "teaser": "Two battles were fought here. The ocean did more damage than either.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fort-fisher-what-the-sea-took/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 41.3,
+        "audioBytes": 662508
+      }
+    ],
     "tags": [
       "fort-fisher",
       "kure-beach",
       "civil-war",
       "military"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fort-fisher-what-the-sea-took",
-        "durationS": 46
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "fort-fisher-why-a-fort-made-of-sand",
@@ -5287,7 +5306,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "short",
-    "durationS": 45,
+    "durationS": 41,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5298,19 +5317,20 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Have you ever built a sandcastle? This whole fort was a giant one, built for real.\n\nMost old forts were made of brick. But when a cannonball hits brick, the brick can crack and\nbreak. Sand is different. It soaks up the shock, like catching a ball in a pillow.\n\nSo the builders piled sand into huge mounds, each one about as tall as a three-story house.\nThey made it the biggest fort of its kind in the whole South.\n\nHere is the surprising part. The cannons never knocked most of it down. The ocean did, wave\nafter wave. Only about a tenth of the fort is left. Can you find the mounds that survived?\n",
     "teaser": "A castle of sand, built for real cannonballs.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/fort-fisher-why-a-fort-made-of-sand/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 41.1,
+        "audioBytes": 657910
+      }
+    ],
     "tags": [
       "fort-fisher",
       "kure-beach",
       "civil-war"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/fort-fisher-why-a-fort-made-of-sand",
-        "durationS": 45
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "fraunces-tavern-farewell",
@@ -5445,7 +5465,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 58,
+    "durationS": 50,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5457,6 +5477,14 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "A German submarine, a chemical plant, and five shells that missed.",
     "certaintyNote": "A wartime story told by an officer stationed at Fort Fisher. No hard evidence or official account confirms it; the script says so.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/kure-beach-five-shells-in-the-dark/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 49.9,
+        "audioBytes": 799181
+      }
+    ],
     "pronunciations": [
       {
         "written": "Kure",
@@ -5468,14 +5496,7 @@ export const LIBRARY: readonly Echo[] = [
       "world-war-ii",
       "military"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/kure-beach-five-shells-in-the-dark",
-        "durationS": 58
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "linn-cove-viaduct-last-piece",
@@ -15361,4 +15382,4 @@ export const ROUTES: readonly Route[] = [
 
 // What a person has really checked, as authored, before the demo override above. The
 // "true story" mark reads this, never the overridden status (`truth.ts` in the engine).
-export const VERIFIED_IDS: ReadonlySet<string> = new Set(["wilmington-a-house-built-to-catch-the-air","wilmington-a-welcome-with-teeth","wilmington-chestnut-streets-wooden-church","wilmington-elisabeth-chant-makes-a-studio","wilmington-guy-nixon-and-the-water-tank","wilmington-harry-fordens-name-on-the-bridge","wilmington-j-allen-kirk-kept-a-record","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-the-association-before-the-building","wilmington-the-department-stores-big-windows","wilmington-the-exhibition-in-a-little-lane","wilmington-the-museum-moves-with-the-rails","wilmington-the-pelican-beside-the-marina","wilmington-twenty-four-hours-at-the-uso","wilmington-william-goulds-initials"]);
+export const VERIFIED_IDS: ReadonlySet<string> = new Set(["carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","kure-beach-five-shells-in-the-dark","wilmington-a-house-built-to-catch-the-air","wilmington-a-welcome-with-teeth","wilmington-chestnut-streets-wooden-church","wilmington-elisabeth-chant-makes-a-studio","wilmington-guy-nixon-and-the-water-tank","wilmington-harry-fordens-name-on-the-bridge","wilmington-j-allen-kirk-kept-a-record","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-the-association-before-the-building","wilmington-the-department-stores-big-windows","wilmington-the-exhibition-in-a-little-lane","wilmington-the-museum-moves-with-the-rails","wilmington-the-pelican-beside-the-marina","wilmington-twenty-four-hours-at-the-uso","wilmington-william-goulds-initials"]);

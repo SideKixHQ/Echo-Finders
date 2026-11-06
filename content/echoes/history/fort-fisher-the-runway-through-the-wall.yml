@@ -30,7 +30,7 @@ script: |
   literature celebrated the fort's past. National defense simply came first.
 
   Preservation came later, and found less to preserve.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "U.S. 421 runs right through the sandy ruins of what was once the fort's land front."
@@ -60,3 +60,44 @@ sources:
     url: https://historicsites.nc.gov/all-sites/fort-fisher/history/wwii-fort-fisher
     retrievedAt: "2026-11-05"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fort-fisher-the-runway-through-the-wall/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 51
+    audioBytes: 816735
+    transcript:
+      totalS: 51
+      lines:
+        - text: Notice the road.
+          atS: 0
+          durationS: 1.36
+        - text: U.S.
+          atS: 1.96
+          durationS: 0.46
+        - text: 421 runs right through the sandy ruins of what was once the fort's land front.
+          atS: 2.45
+          durationS: 5.32
+        - text: Training at the Fort Fisher range began in October 1941.
+          atS: 8.88
+          durationS: 4.42
+        - text: It became the main firing range for an anti-aircraft training camp, and planes towed targets back and forth above the beach while the gunners below fired at them.
+          atS: 14
+          durationS: 10.09
+        - text: Then the army built a large airstrip here.
+          atS: 24.9
+          durationS: 2.54
+        - text: It destroyed a sizable portion of the land front of the old bastion, by then eighty years old.
+          atS: 28.05
+          durationS: 5.89
+        - text: Nobody pretended otherwise.
+          atS: 34.63
+          durationS: 2.07
+        - text: Most of the trainees knew where they were, and the camp's own literature celebrated the fort's past.
+          atS: 37.14
+          durationS: 5.98
+        - text: National defense simply came first.
+          atS: 43.82
+          durationS: 2.46
+        - text: Preservation came later, and found less to preserve.
+          atS: 46.6
+          durationS: 4.39

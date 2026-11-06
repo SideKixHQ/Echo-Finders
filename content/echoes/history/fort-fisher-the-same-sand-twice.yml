@@ -8,7 +8,7 @@ at: { lat: 33.9715, lng: -77.918 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 46
+durationS: 41
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   The first time, they came to take this fort. The second time, they came to train on it.
 
   The mounds were the same mounds.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "On the fifteenth of January, 1865, more than three thousand three hundred Union infantry assaulted this land face."
@@ -60,3 +60,35 @@ sources:
     url: https://historicsites.nc.gov/all-sites/fort-fisher/history/wwii-fort-fisher
     retrievedAt: "2026-11-05"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fort-fisher-the-same-sand-twice/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 40.8
+    audioBytes: 654149
+    transcript:
+      totalS: 40.8
+      lines:
+        - text: Stand on the mounds and think about who has stood here before you.
+          atS: 0
+          durationS: 3.27
+        - text: On the fifteenth of January, 1865, more than three thousand three hundred Union infantry assaulted this land face.
+          atS: 3.55
+          durationS: 7.67
+        - text: Among them were the twenty-seventh United States Colored Troops.
+          atS: 11.61
+          durationS: 3.59
+        - text: Black soldiers came back to the same sand in 1941.
+          atS: 15.64
+          durationS: 3.75
+        - text: The fifty-fourth Coast Artillery was the army's only Black anti-aircraft unit with the big one-five-five millimeter guns, and it brought twenty-four of them here for two months of training.
+          atS: 19.83
+          durationS: 11.6
+        - text: The first time, they came to take this fort.
+          atS: 32.03
+          durationS: 2.68
+        - text: The second time, they came to train on it.
+          atS: 35.22
+          durationS: 2.78
+        - text: The mounds were the same mounds.
+          atS: 38.6
+          durationS: 2.22

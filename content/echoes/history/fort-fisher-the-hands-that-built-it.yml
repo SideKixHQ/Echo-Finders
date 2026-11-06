@@ -8,7 +8,7 @@ at: { lat: 33.97, lng: -77.918055 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 43
+durationS: 39
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   When you read that Fort Fisher was the largest earthwork fort in the South, remember who
   moved the earth.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Each one on the land face rose about thirty-two feet."
@@ -56,3 +56,35 @@ sources:
     url: https://historicsites.nc.gov/all-sites/fort-fisher/history/fort
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fort-fisher-the-hands-that-built-it/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 38.5
+    audioBytes: 616114
+    transcript:
+      totalS: 38.5
+      lines:
+        - text: Look at the height of these mounds.
+          atS: 0
+          durationS: 1.83
+        - text: Each one on the land face rose about thirty-two feet.
+          atS: 2.35
+          durationS: 3.75
+        - text: Every bit of it was sand, moved by people.
+          atS: 6.54
+          durationS: 2.74
+        - text: More than five hundred African Americans, both enslaved and free, worked with Confederate soldiers to build this fort.
+          atS: 9.88
+          durationS: 7.45
+        - text: At times, as many as a thousand men were digging at once.
+          atS: 17.94
+          durationS: 3.79
+        - text: For the enslaved among them, there was no choice in it.
+          atS: 22
+          durationS: 3.25
+        - text: Under the fort's last commander, perhaps as many as five hundred of the workers were enslaved.
+          atS: 25.86
+          durationS: 5.32
+        - text: When you read that Fort Fisher was the largest earthwork fort in the South, remember who moved the earth.
+          atS: 31.68
+          durationS: 6.77

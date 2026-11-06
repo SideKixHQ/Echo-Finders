@@ -8,7 +8,7 @@ at: { lat: 33.97205, lng: -77.9174 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 46
+durationS: 48
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   army in Virginia.
 
   In the Navy's eyes, the war's most famous city was not its most important target. This sand was.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In the Navy's eyes, the war's most famous city was not its most important target."
@@ -60,3 +60,41 @@ sources:
     url: https://historicsites.nc.gov/all-sites/fort-fisher/history
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fort-fisher-more-important-than-richmond/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 48.3
+    audioBytes: 773267
+    transcript:
+      totalS: 48.3
+      lines:
+        - text: Look toward the river.
+          atS: 0
+          durationS: 1.64
+        - text: Everything this fort did was about what came up it.
+          atS: 2.44
+          durationS: 3.22
+        - text: In August 1864, Union warships sealed the port of Mobile, Alabama.
+          atS: 6.35
+          durationS: 5.78
+        - text: That left Wilmington as the last major Southern seaport open to the outside world, and this fort was its front door.
+          atS: 12.46
+          durationS: 7.65
+        - text: The Secretary of the Navy, Gideon Welles, said it plainly.
+          atS: 21.22
+          durationS: 3.84
+        - text: Closing Wilmington, he wrote, was more important, practically, than the capture of Richmond.
+          atS: 25.74
+          durationS: 5.93
+        - text: By 1865, the supply line through Wilmington was the last one still feeding Robert E.
+          atS: 32.93
+          durationS: 5.43
+        - text: Lee's army in Virginia.
+          atS: 38.38
+          durationS: 1.6
+        - text: In the Navy's eyes, the war's most famous city was not its most important target.
+          atS: 40.5
+          durationS: 5.72
+        - text: This sand was.
+          atS: 46.82
+          durationS: 1.43
