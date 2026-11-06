@@ -14,6 +14,8 @@ visibility: at-hand
 certainty: documented
 minAge: 0
 quality: 0.75
+# Open daily 7 am to 10 pm, year round (nps.gov presidentshousesite.htm, 2026-11-06).
+hours: { fromHour: 7, toHour: 22 }
 tags: [philadelphia, philadelphia-core, independence-mall, presidents-house, slavery, african-american-history, washington]
 teaser: "Find the name Ona Judge."
 script: |

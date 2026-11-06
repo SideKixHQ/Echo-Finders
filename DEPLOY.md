@@ -166,6 +166,23 @@ app reads what was bought from Stripe directly when it comes back from checkout.
 
 The secret key lives only in Vercel. It is never in the repository and never in the app.
 
+## Error reports (Sentry)
+
+Built and switched off. When something breaks on a listener's phone, the app can send the
+error and its stack to Sentry, so it can be fixed without the phone (`error-report.ts`). Until
+the setting below exists nothing is sent.
+
+1. **In Sentry** (the free tier is enough), create a project, platform **Browser JavaScript**,
+   and copy its **DSN** (`https://<key>@o….ingest.sentry.io/<project>`). A DSN only allows
+   sending events, so it is safe in a web page, but it belongs in Vercel, not in the repo.
+2. **In Vercel**, Project → Settings → Environment Variables, add `VITE_SENTRY_DSN` with that
+   value for Production, then redeploy. It is read at build time, so a redeploy is what turns
+   it on, and removing it and redeploying turns it off.
+
+Each report carries the error, its stack, the page path without its query string, the build's
+commit and the browser's user agent: no position, no collection, no identifiers. At most five
+per session. `docs/privacy-policy.md` says the same.
+
 ## What is most useful to hear from you
 
 Not bugs — I can find those. The things only you can answer:

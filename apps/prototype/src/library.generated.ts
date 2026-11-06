@@ -3978,6 +3978,7 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Walk through to the great concourse behind the main hall, and look at the floor.\n\nOn the morning of the fifteenth of January 1953, the Pennsylvania Railroad's Federal\nExpress was running in from Boston, full of visitors for the presidential inauguration.\n\nBy the railroad's account, as the train came into the Washington yards, the engineer found\nthat his brakes had failed completely. He sounded the horn in short blasts. A dispatcher in\na signal tower saw the train race past and sent a warning ahead.\n\nStation staff had less than two minutes to clear the concourse.\n\nThe train ran off the end of the track at an estimated fifty miles an hour, crossed the\nplatform and smashed through the barrier. The locomotive broke through this floor and\ndropped into the basement. Clocks stopped by the impact read eight thirty-six.\n\nForty-three people were hurt.\n\nThe inauguration was days away, so the engine stayed where it was. Crews built a wooden\nfloor over the hole and surfaced it with quick-drying asphalt. According to a station\nattendant, they even spread sooty dust over it, so it would match the rest.\n\nThat week, thousands of visitors walked across this concourse with no idea that a giant\nlocomotive was lying on its side beneath their feet.\n",
     "teaser": "Walk through to the concourse behind the main hall, and look at the floor.",
+    "inside": true,
     "tags": [
       "washington",
       "dc-core",
@@ -5042,6 +5043,15 @@ export const LIBRARY: readonly Echo[] = [
       "slavery",
       "african-american-history"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-03747v.jpg",
+        "credit": "T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-cwpb-03747, 1865), https://www.loc.gov/item/2018671553/",
+        "rights": "public-domain",
+        "year": 1865,
+        "caption": "The first traverse at the northwest end, the entrance to the fort"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -5081,6 +5091,15 @@ export const LIBRARY: readonly Echo[] = [
       "kure-beach",
       "civil-war",
       "military"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-04081v.jpg",
+        "credit": "T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-cwpb-04081, 1865), https://www.loc.gov/item/2018672347/",
+        "rights": "public-domain",
+        "year": 1865,
+        "caption": "Battery Lamb, the Mound, seen from the south"
+      }
     ],
     "remoteness": 0.55
   },
@@ -5204,6 +5223,15 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "african-american-history"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-35261v.jpg",
+        "credit": "T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-ppmsca-35261, 1865), https://www.loc.gov/item/2013649002/",
+        "rights": "public-domain",
+        "year": 1865,
+        "caption": "View on the land face"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -5290,6 +5318,15 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "military"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-04057v.jpg",
+        "credit": "T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-cwpb-04057, 1865), https://www.loc.gov/item/2018672151/",
+        "rights": "public-domain",
+        "year": 1865,
+        "caption": "The land face and its palisade"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -5329,6 +5366,15 @@ export const LIBRARY: readonly Echo[] = [
       "fort-fisher",
       "kure-beach",
       "civil-war"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-04057v.jpg",
+        "credit": "T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-cwpb-04057, 1865), https://www.loc.gov/item/2018672151/",
+        "rights": "public-domain",
+        "year": 1865,
+        "caption": "The land face and its palisade"
+      }
     ],
     "remoteness": 0
   },
@@ -7676,6 +7722,10 @@ export const LIBRARY: readonly Echo[] = [
         "say": "OH-nuh JUDJ"
       }
     ],
+    "hours": {
+      "fromHour": 7,
+      "toHour": 22
+    },
     "tags": [
       "philadelphia",
       "philadelphia-core",
@@ -10584,6 +10634,7 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look into the cells.\n\nIn June 1962, the men inside needed the guards to believe they were sleeping.\n\nSo they left faces on their pillows.\n\nFrank Morris and brothers John and Clarence Anglin made dummy heads using materials that\nincluded paint and human hair.\n\nBehind the cells, they prepared an escape route. They also assembled makeshift flotation\nequipment from raincoats.\n\nOn the night of June 11, the three men disappeared from their cells.\n\nBy morning, the deception was discovered.\n\nThe faces were still in bed.\n\nThe men were gone.\n\nTheir ultimate fate has never been conclusively established. The escape does not prove\nthey survived the bay.\n\nWhen you later look toward the mainland, notice the water between here and there.\n\nThe men overcame the walls, the checks, and the locks.\n\nThe unanswered part begins beyond the island.\n\nThey left behind something that looked like sleep, and a mystery that never settled.\n",
     "teaser": "Look into the cells.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "inside": true,
     "tags": [
       "san-francisco",
       "alcatraz"
@@ -10714,6 +10765,7 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "Stand still for a moment.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "inside": true,
     "tags": [
       "philadelphia",
       "ghosts"
@@ -10836,6 +10888,7 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "Look across Tower Green toward the Chapel of St Peter ad Vincula.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "inside": true,
     "tags": [
       "london",
       "ghosts"
@@ -12669,6 +12722,7 @@ export const LIBRARY: readonly Echo[] = [
         "audioBytes": 800016
       }
     ],
+    "inside": true,
     "tags": [
       "wilmington",
       "downtown"

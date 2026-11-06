@@ -14,6 +14,8 @@ visibility: at-hand
 certainty: documented
 minAge: 16
 quality: 0.75
+# Rarity (docs/13-story-mix.md): the listening spot is inside; see the header.
+inside: true
 voice: wC1005J19tvhoqqC2hkf
 tags: [san-francisco, alcatraz]
 teaser: "Look into the cells."
