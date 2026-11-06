@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { PRIVACY_DEFAULTS, holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
+import { holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
 import { LIBRARY, ROUTES } from "./library.generated";
 import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
@@ -8,6 +8,7 @@ import { RouteMap, type PinState } from "./RouteMap";
 import { Collection } from "./Collection";
 import { IndexedDbCollection } from "./collection-store";
 import { Privacy } from "./Privacy";
+import { readSettings, saveSettings } from "./settings-store";
 import { Nav, type Tab } from "./Nav";
 import { Plan } from "./Plan";
 import { RouteRibbon, left } from "./RouteRibbon";
@@ -235,8 +236,11 @@ export function App() {
   }, []);
   const [narrate, setNarrate] = useState(true);
   const [paused, setPaused] = useState(false);
-  const [privacy, setPrivacy] = useState<PrivacySettings>(PRIVACY_DEFAULTS);
-  const [theme, setTheme] = useState<"dark" | "light">("dark");
+  // Read once, before the first render, so a reload never flashes the defaults
+  // (`settings-store.ts`). Saved below whenever any of the three changes.
+  const [savedSettings] = useState(readSettings);
+  const [privacy, setPrivacy] = useState<PrivacySettings>(savedSettings.privacy);
+  const [theme, setTheme] = useState<"dark" | "light">(savedSettings.theme);
 
   // Set on the document rather than a wrapper, so the variables cascade to everything
   // including the portal-less fixed elements.
@@ -277,7 +281,8 @@ export function App() {
   const [packageOpen, setPackageOpen] = useState(false);
   /** Whether this journey has actually been taken onto the device. */
   const [downloaded, setDownloaded] = useState(false);
-  const [simple, setSimple] = useState(false);
+  // Kids mode brings the plain-language cut with it (`setKidsMode`), on a reload too.
+  const [simple, setSimple] = useState(savedSettings.kids);
   /**
    * Kids mode, for the whole app rather than for a list.
    *
@@ -286,7 +291,10 @@ export function App() {
    * considers eight is a listener who wants the shorter telling, and making them find a
    * second switch for it would be a strange thing to ask of a parent.
    */
-  const [kids, setKids] = useState(false);
+  const [kids, setKids] = useState(savedSettings.kids);
+  useEffect(() => {
+    saveSettings({ privacy, kids, theme });
+  }, [privacy, kids, theme]);
   const [rate, setRate] = useState(1);
 
   /**
