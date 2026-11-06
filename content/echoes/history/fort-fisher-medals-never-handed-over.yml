@@ -8,7 +8,7 @@ at: { lat: 33.9721, lng: -77.9176 }
 triggerRadiusKm: 0.06
 category: history
 format: look-below
-durationS: 35
+durationS: 32
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -26,7 +26,7 @@ script: |
   earned it.
 
   They were made, and kept. The hands they were for never held them.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Stand by the visitor center and count to seventy-two."
@@ -47,3 +47,29 @@ sources:
     url: https://www.wilmingtonandbeaches.com/articles/post/fort-fishers-151st-anniversary-commemoration-pays-tribute-to-medal-of-honor-recipients/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fort-fisher-medals-never-handed-over/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 32.2
+    audioBytes: 516640
+    transcript:
+      totalS: 32.2
+      lines:
+        - text: Stand by the visitor center and count to seventy-two.
+          atS: 0
+          durationS: 3.29
+        - text: That is how many soldiers, sailors and Marines received the Medal of Honor for what they did at Fort Fisher, between June 1864 and January 1865.
+          atS: 3.46
+          durationS: 10.47
+        - text: For the hundred and fifty-first anniversary of the battle, the site put five of those medals on display, on loan from the Navy.
+          atS: 14.74
+          durationS: 7.85
+        - text: None of the five had ever been presented to the man who earned it.
+          atS: 23.1
+          durationS: 3.49
+        - text: They were made, and kept.
+          atS: 26.98
+          durationS: 1.79
+        - text: The hands they were for never held them.
+          atS: 29.21
+          durationS: 3.02

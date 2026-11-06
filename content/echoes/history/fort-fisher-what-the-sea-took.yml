@@ -8,7 +8,7 @@ at: { lat: 33.9717, lng: -77.9194 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 46
+durationS: 41
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
   Fort Fisher still stands. Much of the rest was eroded by the ocean.
 
   It just kept coming back, with every tide.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Older forts were brick and mortar."
@@ -56,3 +56,41 @@ sources:
     url: https://historicsites.nc.gov/all-sites/fort-fisher/history
     retrievedAt: "2026-11-05"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fort-fisher-what-the-sea-took/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 41.3
+    audioBytes: 662508
+    transcript:
+      totalS: 41.3
+      lines:
+        - text: Look at the mounds beside the trail.
+          atS: 0
+          durationS: 1.87
+        - text: They are made of earth and sand, and that was the whole idea.
+          atS: 1.93
+          durationS: 3.25
+        - text: Older forts were brick and mortar.
+          atS: 6.13
+          durationS: 1.99
+        - text: Fort Fisher was made mostly of earth and sand, which was far better at swallowing the shock of a heavy shell.
+          atS: 9.07
+          durationS: 6.27
+        - text: The builders made it the largest earthwork fort in the South, with a mile of sea defense along this shore.
+          atS: 16.29
+          durationS: 6.32
+        - text: Two major battles were fought here, and the second one took it.
+          atS: 23.05
+          durationS: 3.27
+        - text: But the enemy that did the most damage never fired a shot.
+          atS: 26.64
+          durationS: 3.3
+        - text: Approximately ten percent of Fort Fisher still stands.
+          atS: 30.32
+          durationS: 3.38
+        - text: Much of the rest was eroded by the ocean.
+          atS: 34.03
+          durationS: 2.74
+        - text: It just kept coming back, with every tide.
+          atS: 37.21
+          durationS: 4.12

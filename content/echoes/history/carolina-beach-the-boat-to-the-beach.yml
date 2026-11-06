@@ -8,7 +8,7 @@ at: { lat: 34.036667, lng: -77.896944 }
 triggerRadiusKm: 0.25
 category: history
 format: short
-durationS: 49
+durationS: 48
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
   a surf bath, and catch the sea breeze.
 
   In 1899, the river was the way to the beach.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In 1899, the answer was a boat."
@@ -59,3 +59,38 @@ sources:
     url: https://www.loc.gov/resource/sn91068367/1899-07-28/ed-1/?sp=6
     retrievedAt: "2026-11-06"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/carolina-beach-the-boat-to-the-beach/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 47.7
+    audioBytes: 764908
+    transcript:
+      totalS: 47.7
+      lines:
+        - text: Think about how you got here.
+          atS: 0
+          durationS: 1.37
+        - text: In 1899, the answer was a boat.
+          atS: 2.07
+          durationS: 3.22
+        - text: That summer, a newspaper described the trip.
+          atS: 5.98
+          durationS: 2.83
+        - text: The steamer left Wilmington and made the run down the river to the pier, a distance of thirteen miles, in less than an hour.
+          atS: 9.25
+          durationS: 6.98
+        - text: Her name was the Wilmington, and she plied between Wilmington, Carolina Beach and Southport.
+          atS: 16.83
+          durationS: 5.86
+        - text: Her captain and owner, John W.
+          atS: 23.39
+          durationS: 2.18
+        - text: "Harper, liked to point out the sights on the way down: the old wrecks, the colonial plantations, the rice fields."
+          atS: 25.6
+          durationS: 7.62
+        - text: People from the city and from up-country came by the thousands every summer, to eat fish, take a surf bath, and catch the sea breeze.
+          atS: 33.82
+          durationS: 9.02
+        - text: In 1899, the river was the way to the beach.
+          atS: 44.14
+          durationS: 3.6

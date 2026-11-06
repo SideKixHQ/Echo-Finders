@@ -8,7 +8,7 @@ at: { lat: 33.9626, lng: -77.9261 }
 triggerRadiusKm: 0.15
 category: built
 format: short
-durationS: 50
+durationS: 45
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   twenty-one gun presidential salute.
 
   The ships it guided in were smuggling the war's supplies. The light was for them.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "At the far end of the fort's sea face stood its landmark, a battery forty-three feet high, known as the Mound."
@@ -57,3 +57,38 @@ sources:
     url: https://historicsites.nc.gov/all-sites/fort-fisher/history/fort
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fort-fisher-the-mound/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 44.9
+    audioBytes: 718932
+    transcript:
+      totalS: 44.9
+      lines:
+        - text: At the far end of the fort's sea face stood its landmark, a battery forty-three feet high, known as the Mound.
+          atS: 0
+          durationS: 6.58
+        - text: It was built in the spring of 1863, and not by shovel alone.
+          atS: 7.09
+          durationS: 4.25
+        - text: A steam engine on an inclined railway hauled sand to the top of a scaffold, and hundreds of men dumped it from there until the mound took shape.
+          atS: 11.73
+          durationS: 8.51
+        - text: Because it could be seen from so far out, it became a lighthouse of sorts.
+          atS: 20.75
+          durationS: 4.35
+        - text: Signal lights on the Mound talked to incoming blockade runners.
+          atS: 25.61
+          durationS: 3.6
+        - text: When Jefferson Davis visited in 1863, he rode up to the top.
+          atS: 29.81
+          durationS: 4.56
+        - text: The guns of the sea face fired a twenty-one gun presidential salute.
+          atS: 34.82
+          durationS: 4.48
+        - text: The ships it guided in were smuggling the war's supplies.
+          atS: 39.68
+          durationS: 3.3
+        - text: The light was for them.
+          atS: 43.26
+          durationS: 1.6

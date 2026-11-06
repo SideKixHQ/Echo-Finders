@@ -8,7 +8,7 @@ at: { lat: 34.063611, lng: -77.898611 }
 triggerRadiusKm: 0.15
 category: history
 format: short
-durationS: 49
+durationS: 47
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   Today the north end of the island is Freeman Park, where people drive straight onto the sand.
 
   Some of the beach people cross for fun was once a haven.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "During the Jim Crow era, Seabreeze and Freeman Beach were havens for Black families seeking a day by the water."
@@ -60,3 +60,47 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/guide-to-an-ultimate-beach-day-in-carolina-beach-north-carolina/
     retrievedAt: "2026-11-05"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/carolina-beach-a-haven-called-seabreeze/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 46.9
+    audioBytes: 751533
+    transcript:
+      totalS: 46.9
+      lines:
+        - text: Look around.
+          atS: 0
+          durationS: 0.88
+        - text: Seabreeze does not look much like a resort now.
+          atS: 1.16
+          durationS: 2.73
+        - text: For decades, it was exactly that.
+          atS: 4.27
+          durationS: 2.23
+        - text: During the Jim Crow era, Seabreeze and Freeman Beach were havens for Black families seeking a day by the water.
+          atS: 7.11
+          durationS: 6.58
+        - text: Seabreeze was established in 1922, and Freeman Beach in 1951.
+          atS: 14.13
+          durationS: 5.27
+        - text: The same family built both, the Freemans, and both became symbols of pride and resilience.
+          atS: 20.1
+          durationS: 5.79
+        - text: What ended them was slower than a law.
+          atS: 26.49
+          durationS: 2.14
+        - text: Dredging near Freeman Beach.
+          atS: 28.95
+          durationS: 1.89
+        - text: Development creeping in.
+          atS: 31.02
+          durationS: 1.6
+        - text: And then the devastation of Hurricane Hazel.
+          atS: 33.01
+          durationS: 2.69
+        - text: Today the north end of the island is Freeman Park, where people drive straight onto the sand.
+          atS: 36.65
+          durationS: 5.33
+        - text: Some of the beach people cross for fun was once a haven.
+          atS: 42.79
+          durationS: 4.11

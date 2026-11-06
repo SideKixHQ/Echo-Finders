@@ -8,7 +8,7 @@ at: { lat: 33.959166, lng: -77.941111 }
 triggerRadiusKm: 0.2
 category: people
 format: short
-durationS: 46
+durationS: 40
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
 
   The Confederacy's last great supply line began, some nights, with a man at the top of a pine
   tree, waiting to see a ship.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look up at the tallest trees you can see, and picture a ladder leaning against one, all the way to the top."
@@ -52,3 +52,29 @@ sources:
     url: https://historicsites.nc.gov/all-sites/fort-fisher/history/fort
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fort-fisher-the-pilots-in-the-pines/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 40
+    audioBytes: 641610
+    transcript:
+      totalS: 40
+      lines:
+        - text: Look up at the tallest trees you can see, and picture a ladder leaning against one, all the way to the top.
+          atS: 0
+          durationS: 5.8
+        - text: In 1861, soldiers arriving on Federal Point noticed long ladders stretching to the highest reaches of the tall pines.
+          atS: 6.19
+          durationS: 8.3
+        - text: The locals explained.
+          atS: 14.87
+          durationS: 1.49
+        - text: River pilots climbed them with a spy glass to watch the ocean for incoming blockade runners.
+          atS: 16.8
+          durationS: 5.56
+        - text: When a pilot got the signal, he hurried down to his small boat, went out to the ship, and guided it to the mouth of the river and on up to Wilmington.
+          atS: 22.8
+          durationS: 8.96
+        - text: The Confederacy's last great supply line began, some nights, with a man at the top of a pine tree, waiting to see a ship.
+          atS: 32.72
+          durationS: 7.31

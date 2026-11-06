@@ -8,7 +8,7 @@ at: { lat: 33.9715, lng: -77.918 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 53
+durationS: 51
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
   For a show, they boxed. In January 1944, the boxing champion Joe Louis came to visit.
 
   They had come to learn to shoot down aircraft. Before that, they had to learn the ocean.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Many of the men who trained here in the war came from the interior of the country, and had never seen a beach."
@@ -53,3 +53,53 @@ sources:
     url: https://historicsites.nc.gov/all-sites/fort-fisher/history/wwii-fort-fisher
     retrievedAt: "2026-11-05"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fort-fisher-soldiers-who-had-never-seen-the-sea/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 50.8
+    audioBytes: 813809
+    transcript:
+      totalS: 50.8
+      lines:
+        - text: Look at the water and imagine you have never seen it before.
+          atS: 0
+          durationS: 3.88
+        - text: Many of the men who trained here in the war came from the interior of the country, and had never seen a beach.
+          atS: 4.83
+          durationS: 6.04
+        - text: Federal Point was a shock.
+          atS: 11.47
+          durationS: 1.79
+        - text: There was sand in everything, and mosquitoes.
+          atS: 13.7
+          durationS: 2.7
+        - text: One soldier called it a forlorn spit of sand and scrub growth, pinched between the Atlantic Ocean and the Cape Fear River.
+          atS: 16.91
+          durationS: 7.15
+        - text: So the post taught them the beach.
+          atS: 24.58
+          durationS: 1.88
+        - text: Swimming lessons.
+          atS: 27.06
+          durationS: 1.2
+        - text: Advice on how to avoid sunburn.
+          atS: 28.64
+          durationS: 2.18
+        - text: Beach safety.
+          atS: 31.21
+          durationS: 1.14
+        - text: More than a few refused to eat the fried clams and oysters.
+          atS: 32.79
+          durationS: 3.54
+        - text: For a show, they boxed.
+          atS: 36.93
+          durationS: 2.02
+        - text: In January 1944, the boxing champion Joe Louis came to visit.
+          atS: 39.55
+          durationS: 5.09
+        - text: They had come to learn to shoot down aircraft.
+          atS: 45.02
+          durationS: 2.58
+        - text: Before that, they had to learn the ocean.
+          atS: 47.98
+          durationS: 2.82
