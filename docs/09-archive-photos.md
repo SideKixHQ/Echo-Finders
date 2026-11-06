@@ -41,3 +41,27 @@ What to expect:
 3. Replace the drawn plates: delete `archive-plate.ts` and render `<img src={resolve(photo.imageKey)}>`,
    and stop `scripts/build-library.mjs` stamping the demo credit.
 4. The "now" half needs a photograph from the same spot. Taking those on a walk is the cheapest route.
+
+## Fort Fisher: cleared and in use (2026-11-06)
+
+The first real plates in the app. Each item page was opened and its rights line read: all say
+**"No known restrictions on publication."** All are Timothy H. O'Sullivan's photographs of the
+captured fort, January 1865, Library of Congress Prints and Photographs Division. Files are the
+1024px service JPEGs, trimmed a few percent at the edges to lose the glass-plate damage, in
+`content/archive/`.
+
+| Echo | Photograph | Item |
+|---|---|---|
+| fort-fisher-the-mound | Battery Lamb looking from the south (the Mound) | https://www.loc.gov/item/2018672347/ |
+| fort-fisher-what-the-sea-took, fort-fisher-why-a-fort-made-of-sand | View on land face (with the palisade) | https://www.loc.gov/item/2018672151/ |
+| fort-fisher-the-same-sand-twice | View on land face, part 1 | https://www.loc.gov/item/2013649002/ |
+| fort-fisher-the-hands-that-built-it | First traverse, northwest end, the entrance to the fort | https://www.loc.gov/item/2018671553/ |
+
+Not used: "Battery Lamb on sea front" (https://www.loc.gov/item/2018672292/, too damaged), the
+album print of the first three traverses (https://www.loc.gov/item/2007685816/, needs cropping
+out of its mount) and Battery Buchanan (https://www.loc.gov/item/2018671571/, a stereo pair, and
+no echo is about it yet). More of the 1865 series is at https://www.loc.gov/photos/?q=fort+fisher.
+
+Vantage and bearing are not set: the series does not record where the camera stood, and a
+guessed bearing sends someone confidently the wrong way. Standing at the mounds and matching the
+skyline would fix it.

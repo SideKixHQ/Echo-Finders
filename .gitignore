@@ -14,5 +14,6 @@ coverage/
 /tmp/
 apps/*/dist/
 apps/prototype/public/audio/
+apps/prototype/public/archive/
 align-shots/
 content/audio/**/*.render.json

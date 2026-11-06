@@ -166,6 +166,7 @@ export function EchoPopup({
             <span className="mono">
               {photo.year ? `Photographed here, ${photo.year}` : "Photographed here"}
             </span>
+            <small className="pop-plate-credit">{plateCredit(photo.credit)}</small>
             <span className="pop-plate-cam" aria-hidden="true">
               <svg viewBox="0 0 24 24">
                 <path d="M4 8h3l1.6-2.2h6.8L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
@@ -180,6 +181,7 @@ export function EchoPopup({
             <span className="mono">
               {photo.year ? `Photographed here, ${photo.year}` : "Photographed here"}
             </span>
+            <small className="pop-plate-credit">{plateCredit(photo.credit)}</small>
           </div>
         ))}
 
@@ -317,4 +319,19 @@ function away(metres: number | null): string {
   // makes somebody stop believing either number.
   if (metres < 950) return `About ${Math.round(metres / 50) * 50}m away`;
   return `${(metres / 1000).toFixed(1)}km away`;
+}
+
+/**
+ * The photograph's credit, short enough for a corner of the plate.
+ *
+ * An archive image is shown with its credit or not at all (`parse.ts`), and the card is
+ * where most people see it, so the credit is on the photograph itself rather than only in
+ * the Then & Now viewfinder. The link at the end of a credit is for a reviewer, not for a
+ * phone screen, so it is dropped here; the viewfinder still shows the whole line.
+ */
+export function plateCredit(credit: string): string {
+  return credit
+    .replace(/,?\s*https?:\/\/\S+\s*$/, "")
+    .replace(/\s*\([^)]*\)\s*$/, "")
+    .trim();
 }
