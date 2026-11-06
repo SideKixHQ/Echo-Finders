@@ -22,6 +22,7 @@ export const FACT_CATEGORIES: readonly EchoCategory[] = [
   "land",
   "food-drink",
   "arts",
+  "inspo",
 ];
 
 /**

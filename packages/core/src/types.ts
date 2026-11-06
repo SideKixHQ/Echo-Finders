@@ -100,6 +100,19 @@ export const ECHO_CATEGORIES = [
    * here with anything filed under it.
    */
   "kids",
+  /**
+   * Inspo: where something people know began (James, 2026-11-06).
+   *
+   * The first performance, the place that inspired the song, the room the book was written
+   * in, the decision that changed a life, the set that became a famous town. Its spine is
+   * always the same three steps: what you can see now, what happened here, what it became.
+   * That spine is what separates it from `people` or `arts`: a plaque about who lived here
+   * is people; the room where the book got written is inspo.
+   *
+   * Every inspo echo says how strongly the place is tied to the story (`InspoLink`), and a
+   * script may only say "this exact spot" when the evidence is exact (`parse.ts`).
+   */
+  "inspo",
 ] as const;
 
 export type EchoCategory = (typeof ECHO_CATEGORIES)[number];
@@ -408,6 +421,8 @@ export interface Echo {
    * cemetery. A point of rarity, because standing there takes going in (`rarityOf`).
    */
   readonly inside?: boolean;
+  /** For `inspo` echoes, and required there: what kind of beginning, and how sure the place is. */
+  readonly inspo?: InspoLink;
 
   readonly sources: readonly Source[];
   /** Each checkable sentence of the script beside its quoted source. Required to approve. */
@@ -802,4 +817,46 @@ export interface Playlist {
   readonly totalAudioS: number;
   readonly routeDurationS: number;
   readonly mode: TravelMode;
+}
+
+/** The six kinds of inspo story (James, 2026-11-06). */
+export const INSPO_KINDS = [
+  /** Where someone tested an invention, performed publicly, opened their first business. */
+  "first",
+  /** A place, encounter or experience that inspired a book, song, film or creation. */
+  "inspiration",
+  /** Where someone made a decision that changed their life or work. */
+  "turning-point",
+  /** How something that happened here led to something people recognise today. */
+  "connection",
+  /** Where an artist practised or a founder struggled before anyone knew their name. */
+  "before-fame",
+  /** Where a work was actually written, recorded, designed, built or filmed. */
+  "creation",
+] as const;
+export type InspoKind = (typeof INSPO_KINDS)[number];
+
+/**
+ * How strongly the place is tied to the story, from the evidence, not from the wish.
+ *
+ * "Written in this building", "inspired by this landscape", "first performed here" and
+ * "associated with this neighbourhood" are four different claims, and most travel content
+ * blurs them. Only `exact` lets a script say "this exact spot", "right here" or "in this
+ * room"; the content check refuses those words otherwise.
+ */
+export const PLACE_EVIDENCE = [
+  /** A source puts it at this spot, room or doorway. */
+  "exact",
+  /** In this building, room or part unknown. */
+  "building",
+  /** This landscape, beach, park or view: the place itself, not a point in it. */
+  "site",
+  /** Associated with the neighbourhood or area; no source fixes it closer. */
+  "area",
+] as const;
+export type PlaceEvidence = (typeof PLACE_EVIDENCE)[number];
+
+export interface InspoLink {
+  readonly kind: InspoKind;
+  readonly evidence: PlaceEvidence;
 }

@@ -57,7 +57,7 @@ export interface WalkState {
  * and has to be chosen rather than defaulted into.
  */
 export const LISTENER: ListenerProfile = {
-  categories: ["history", "food-drink", "people", "built", "land", "arts", "legend", "kids"],
+  categories: ["history", "food-drink", "people", "built", "land", "arts", "legend", "kids", "inspo"],
   age: 35,
   density: "immersive",
 };

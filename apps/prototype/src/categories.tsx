@@ -32,6 +32,8 @@ export const CATEGORY_LABEL: Record<EchoCategory, string> = {
   // Two engine categories, one chip. See CHIP_GROUPS.
   built: "Landmarks",
   land: "Landmarks",
+  // James's word (2026-11-06), short enough for a chip: where something people know began.
+  inspo: "Inspo",
 };
 
 /**
@@ -60,6 +62,7 @@ export const CHIP_GROUPS: readonly ChipGroup[] = [
   { id: "true-crime", label: "True Crime", face: "true-crime", categories: ["true-crime"] },
   { id: "ghosts", label: "Ghosts", face: "legend", categories: ["legend"] },
   { id: "kids", label: "Kids", face: "kids", categories: ["kids"] },
+  { id: "inspo", label: "Inspo", face: "inspo", categories: ["inspo"] },
   { id: "arts", label: "Arts & music", face: "arts", categories: ["arts"] },
   { id: "people", label: "People", face: "people", categories: ["people"] },
   { id: "food", label: "Food & drink", face: "food-drink", categories: ["food-drink"] },
@@ -77,6 +80,7 @@ export const CHIP_GROUPS: readonly ChipGroup[] = [
 export const CATEGORY_ORDER: readonly EchoCategory[] = [
   "history",
   "true-crime",
+  "inspo",
   "arts",
   "kids",
   "legend",
@@ -121,6 +125,16 @@ export const CATEGORY_ICON: Record<EchoCategory, ReactNode> = {
     <>
       <path d="M6 21V10a6 6 0 0 1 12 0v11l-3-2-3 2-3-2-3 2z" />
       <path d="M10 10h.01M14 10h.01" />
+    </>
+  ),
+  /*
+   * A light bulb, for the idea. Inspo is the category about where something began, and the
+   * bulb is the one picture everybody already reads as "this is where it clicked".
+   */
+  inspo: (
+    <>
+      <path d="M9.5 18h5M10.5 21h3" />
+      <path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.3 1.1 2.2h5c0-.9.4-1.6 1.1-2.2A6 6 0 0 0 12 3z" />
     </>
   ),
   "true-crime": (

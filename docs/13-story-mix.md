@@ -75,9 +75,10 @@ A city is covered at 30 approved echoes (`12-cities.md`). The shape for those 30
 | History | 9 | 30% | 43% | At least 3 of the 9 military (battle, fort, war, occupation) |
 | Ghosts & legend | 5 | 17% | 7% | Told as legend, male narrator |
 | True crime | 4 | 13% | 6% | Opt-in; each needs a public record |
-| People | 4 | 13% | 13% | |
-| Built | 3 | 10% | 17% | Strongest when it carries a story, not a style |
-| Arts (music, film, painting, books) | 2 | 7% | 8% | Film locations count here |
+| People | 3 | 10% | 13% | |
+| Inspo | 3 | 10% | 0% | Where something people know began; film locations count here (below) |
+| Built | 2 | 7% | 17% | Strongest when it carries a story, not a style |
+| Arts (music, film, painting, books) | 1 | 3% | 8% | The work itself; where it began is Inspo |
 | Food & drink | 2 | 7% | 1% | What was eaten and drunk here, and what still is |
 | Land | 1 | 3% | 2% | More in parks and on drives, fewer in cities |
 | **Total** | **30** | | | |
@@ -111,12 +112,13 @@ and flights are counted per 20 echoes along the route, not per city.
 
 | Category | Walking (per 30) | Driving (per 20) | Flying (per 20) |
 |---|---|---|---|
-| History (incl. military) | 9 | 4 | 5 |
+| History (incl. military) | 9 | 3 | 4 |
 | Ghosts & legend | 5 | 3 | 2 |
 | True crime | 4 | 2 | 0 |
-| People | 4 | 2 | 2 |
-| Built | 3 | 2 | 3 |
-| Arts | 2 | 1 | 1 |
+| People | 3 | 1 | 2 |
+| Inspo | 3 | 2 | 1 |
+| Built | 2 | 2 | 3 |
+| Arts | 1 | 1 | 1 |
 | Food & drink | 2 | 2 | 1 |
 | Land | 1 | 4 | 6 |
 | **Kids tellings, on top** | **+3 (10%)** | **+5 (25%)** | **+6 (30%)** |
@@ -135,6 +137,26 @@ Why each one moves:
 Kids tellings are an audience, not a subject (`types.ts`), so the extra kids share means more
 children's versions of the land, history and legend echoes along the route, not a separate
 pile of kids-only echoes.
+
+## Inspo (James, 2026-11-06)
+
+"Like see the first ever X, or this is the exact spot where so and so wrote this book."
+Where something people know began: the first performance, the place that inspired the song,
+the room the book was written in, the decision that changed a life, the street that became a
+famous town on screen. Its spine is always **what you can see now, what happened here, what it
+became**, which is what separates it from People (who lived here) and Arts (the work itself).
+
+Its share is a **proposal** for James to adjust: 3 of 30 walking (10%), taken from People,
+Built and Arts, which it overlaps most; 2 of 20 on a drive, where "the view that inspired the
+song" works from the road; 1 of 20 on a flight. Film locations move here from Arts.
+
+Six kinds (`INSPO_KINDS`): the first, the inspiration, the turning point, the unexpected
+connection, before the fame, and the place of creation. And every inspo echo declares its
+**place evidence** (`PLACE_EVIDENCE`): exact, building, site or area. Only exact evidence may
+say "this exact spot", "right here" or "in this room"; `content:validate` refuses those words
+otherwise. "Written in this building", "inspired by this landscape", "first performed here" and
+"associated with this neighbourhood" are four different claims, and the product only makes the
+one its source supports.
 
 ## Rarity: what makes an echo uncommon or rare
 
