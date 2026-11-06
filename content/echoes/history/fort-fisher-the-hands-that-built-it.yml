@@ -88,3 +88,9 @@ renders:
         - text: When you read that Fort Fisher was the largest earthwork fort in the South, remember who moved the earth.
           atS: 31.68
           durationS: 6.77
+archive:
+  - imageKey: archive/loc-03747v.jpg
+    year: 1865
+    caption: The first traverse at the northwest end, the entrance to the fort
+    credit: T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-cwpb-03747, 1865), https://www.loc.gov/item/2018671553/
+    rights: public-domain

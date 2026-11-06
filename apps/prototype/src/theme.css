@@ -3928,6 +3928,12 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   /* One label in a 56px strip: the caption and "Then & now" overlapped at this height. */
   .pop-plate span:not(.pop-plate-cam) { display: none; }
 }
+/* The credit, on the photograph, top left: the "Then & now" badge holds the top right. */
+.pop-plate .pop-plate-credit {
+  position: absolute; left: 9px; top: 8px; max-width: 58%; line-height: 1.25;
+  padding: 3px 6px; border-radius: 5px; font-size: 9px; color: #fff;
+  background: rgba(0, 0, 0, 0.6); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
 .pop-plate span {
   position: absolute; left: 9px; bottom: 8px; line-height: 1.2;
   padding: 4px 8px; border-radius: 6px; font-size: 11px; letter-spacing: 0.1em;

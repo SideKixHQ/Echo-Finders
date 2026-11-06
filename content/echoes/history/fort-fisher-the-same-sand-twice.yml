@@ -92,3 +92,9 @@ renders:
         - text: The mounds were the same mounds.
           atS: 38.6
           durationS: 2.22
+archive:
+  - imageKey: archive/loc-35261v.jpg
+    year: 1865
+    caption: View on the land face
+    credit: T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-ppmsca-35261, 1865), https://www.loc.gov/item/2013649002/
+    rights: public-domain

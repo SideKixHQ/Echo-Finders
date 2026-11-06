@@ -41,6 +41,10 @@ export type Plate = "then" | "now";
 const CACHE = new Map<string, string>();
 
 export function platePng(imageKey: string, plate: Plate): string {
+  // A real photograph, where one has been cleared (`content/archive/`, copied to the site by
+  // `build-library.mjs`). Only the "then" half: the "now" half is the listener's own camera,
+  // or the drawn stand-in where there is no camera, until somebody photographs the spot.
+  if (plate === "then" && imageKey.startsWith("archive/")) return `${import.meta.env.BASE_URL}${imageKey}`;
   const key = `${plate}:${imageKey}`;
   const hit = CACHE.get(key);
   if (hit) return hit;

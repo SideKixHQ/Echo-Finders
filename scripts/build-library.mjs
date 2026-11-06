@@ -282,6 +282,25 @@ for (const echo of echoes) {
 }
 console.log(`copied ${audioFiles} rendered audio file(s) to apps/prototype/public/audio`);
 
+/**
+ * Archive photographs, the same way: `archive/<file>` in an echo's `archive` list is
+ * `content/archive/<file>` here and `/archive/<file>` on the site. Only real files under
+ * `archive/` are copied; the drawn demo plates (`demoArchive`) have no file.
+ */
+const ARCHIVE_OUT = join(ROOT, "apps", "prototype", "public", "archive");
+await rm(ARCHIVE_OUT, { recursive: true, force: true });
+const archiveFiles = new Set();
+for (const echo of echoes) {
+  for (const photo of echo.archive ?? []) {
+    if (!photo.imageKey.startsWith("archive/") || archiveFiles.has(photo.imageKey)) continue;
+    const to = join(ROOT, "apps", "prototype", "public", photo.imageKey);
+    await mkdir(dirname(to), { recursive: true });
+    await copyFile(join(ROOT, "content", photo.imageKey), to);
+    archiveFiles.add(photo.imageKey);
+  }
+}
+console.log(`copied ${archiveFiles.size} archive photograph(s) to apps/prototype/public/archive`);
+
 await mkdir(dirname(OUT), { recursive: true });
 await writeFile(
   OUT,

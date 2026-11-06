@@ -94,3 +94,9 @@ renders:
         - text: It just kept coming back, with every tide.
           atS: 37.21
           durationS: 4.12
+archive:
+  - imageKey: archive/loc-04057v.jpg
+    year: 1865
+    caption: The land face and its palisade
+    credit: T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-cwpb-04057, 1865), https://www.loc.gov/item/2018672151/
+    rights: public-domain
