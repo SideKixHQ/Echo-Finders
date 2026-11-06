@@ -75,7 +75,12 @@ def graph(box):
         for g in groups:
             for row in f.read_row_group(g, columns=COLUMNS).to_pylist():
                 b = row["bbox"]
-                if row["subtype"] != "road" or (row["class"] or "unknown") not in DRIVABLE:
+                # Ferries are part of a drive: Overture keeps them as `water` segments,
+                # joined to the road network at their terminals, so a crossing such as
+                # Fort Fisher to Southport routes across the river where the boat goes
+                # rather than the long way round by road.
+                ferry = row["subtype"] == "water"
+                if not ferry and (row["subtype"] != "road" or (row["class"] or "unknown") not in DRIVABLE):
                     continue
                 if b["xmax"] >= box[0] and b["xmin"] <= box[2] and b["ymax"] >= box[1] and b["ymin"] <= box[3]:
                     rows.append(row)
