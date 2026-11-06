@@ -194,6 +194,25 @@ export function EchoPopup({
       <h3>{echo.title}</h3>
       <span className="pop-truth">
         <TruthMark echo={echo} />
+        {/*
+          Beside the claim it answers. A library that promises it is verified owes the
+          listener a way to say when it is not, at the moment they notice, without leaving
+          the story. On this line rather than its own: it costs the card no height, which on
+          an SE it does not have (audit-align, popup). "Not right?" rather than "Something
+          wrong?" because it fits beside the longest mark ("True story · not yet verified",
+          210px of a 309px line on an SE) without wrapping; screen readers hear the whole
+          question from aria-label.
+        */}
+        {onReport && (
+          <button
+            className="pop-report"
+            onClick={() => onReport(echo)}
+            aria-haspopup="dialog"
+            aria-label="Something wrong with this story?"
+          >
+            Not right?
+          </button>
+        )}
       </span>
 
       <p className="pop-where">
@@ -309,15 +328,6 @@ export function EchoPopup({
         )}
       </div>
 
-      {/*
-        Last and quiet: a library that promises it is verified owes the listener a way to
-        say when it is not, at the moment they notice, without leaving the story.
-      */}
-      {onReport && (
-        <button className="pop-report" onClick={() => onReport(echo)} aria-haspopup="dialog">
-          Something wrong with this story?
-        </button>
-      )}
     </div>
   );
 }

@@ -168,26 +168,28 @@ The secret key lives only in Vercel. It is never in the repository and never in 
 
 ## Error reports (Sentry)
 
-Built and switched off. When something breaks on a listener's phone, the app can send the
-error and its stack to Sentry, so it can be fixed without the phone (`error-report.ts`). Until
-the setting below exists nothing is sent.
+**On.** When something breaks on a listener's phone, the app can send the error and its stack
+to Sentry, so it can be fixed without the phone (`error-report.ts`). Sentry project:
+`sidekix/echo-finders` (https://sidekix.sentry.io).
 
-1. **In Sentry** (the free tier is enough), create a project, platform **Browser JavaScript**,
-   and copy its **DSN** (`https://<key>@o….ingest.sentry.io/<project>`). A DSN only allows
-   sending events, so it is safe in a web page, but it belongs in Vercel, not in the repo.
-2. **In Vercel**, Project → Settings → Environment Variables, add `VITE_SENTRY_DSN` with that
-   value for Production, then redeploy. It is read at build time, so a redeploy is what turns
-   it on, and removing it and redeploying turns it off.
+**The DSN is in the code** (`DEFAULT_SENTRY_DSN` in `error-report.ts`), not in Vercel (James,
+2026-11-06). A DSN is public by design: it only allows sending events, and it ships in the
+page anyway. Nothing to set up. To change or stop it:
+
+- **Stop everything now, no deploy:** Sentry → Project Settings → Client Keys → disable the
+  key. Reports and feedback are refused at Sentry's end.
+- **Point at another project:** set `VITE_SENTRY_DSN` in Vercel (Production) and redeploy; it
+  overrides the code. Set it to `off` to switch reporting and feedback off from the build.
 
 Each report carries the error, its stack, the page path without its query string, the build's
 commit and the browser's user agent: no position, no collection, no identifiers. At most five
 per session. `docs/privacy-policy.md` says the same.
 
-The same DSN turns on **feedback**: Settings › Tell us › Send feedback appears only when it is
-set, and what listeners send lands in Sentry under **User Feedback** (`feedback.ts`). Turn on
+The same DSN carries **feedback**: Settings › Tell us › Send feedback, and "Something wrong
+with this story?" on every echo card. What listeners send lands in Sentry under **User Feedback** (`feedback.ts`). Turn on
 email alerts for new feedback there, or it will sit unread.
 
-Setting the DSN is not enough on its own: reports are **opt-in** (James, 2026-11-06). A phone
+Error reports are **opt-in** (James, 2026-11-06). A phone
 sends nothing until its owner turns on Settings › Privacy › Send error reports, so expect
 few reports, and turn it on yourself on your own phone when testing.
 
