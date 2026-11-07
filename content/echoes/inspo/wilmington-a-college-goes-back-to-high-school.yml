@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 38
+durationS: 35
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
 
   A real college, playing a fictional high school, for a show about growing up. For a generation
   of viewers, this doorway was where every school day began.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Its front was the outside of the high school, and round the back is where exterior scenes of the gym were filmed."
@@ -54,3 +54,35 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/dawsons-creek-locations-tour/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-college-goes-back-to-high-school/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 34.7
+    audioBytes: 555928
+    transcript:
+      totalS: 34.7
+      lines:
+        - text: Look at the front entrance.
+          atS: 0
+          durationS: 1.61
+        - text: On television, this was Tree Hill High School.
+          atS: 1.86
+          durationS: 2.7
+        - text: The Joe and Barbara Schwartz Center belongs to Cape Fear Community College.
+          atS: 5
+          durationS: 4.32
+        - text: Its front was the outside of the high school, and round the back is where exterior scenes of the gym were filmed.
+          atS: 9.83
+          durationS: 6.34
+        - text: It had another part to play.
+          atS: 16.61
+          durationS: 1.87
+        - text: Dawson's Creek used it too, as a film festival lobby.
+          atS: 19.18
+          durationS: 3.88
+        - text: A real college, playing a fictional high school, for a show about growing up.
+          atS: 23.66
+          durationS: 4.73
+        - text: For a generation of viewers, this doorway was where every school day began.
+          atS: 29.2
+          durationS: 5.49

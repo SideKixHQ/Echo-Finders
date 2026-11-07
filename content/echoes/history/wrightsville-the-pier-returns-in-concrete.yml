@@ -8,7 +8,7 @@ at: { lat: 34.2143, lng: -77.7888 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 52
+durationS: 50
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
 
   On the right side before the T, one piling has its date etched into the concrete, and how many feet
   it goes down into the sand.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "This pier began in the 1930s as the Atlantic View Pier."
@@ -75,3 +75,41 @@ sources:
     url: https://johnniemercersfishingpier.com/fun-facts-about-johnnie-mercers-pier/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-the-pier-returns-in-concrete/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 49.7
+    audioBytes: 796255
+    transcript:
+      totalS: 49.7
+      lines:
+        - text: Look at the pier's concrete pilings.
+          atS: 0
+          durationS: 2.24
+        - text: This pier began in the 1930s as the Atlantic View Pier.
+          atS: 2.52
+          durationS: 4.01
+        - text: In 1939 it was sold to Johnnie Mercer, who renamed it after himself.
+          atS: 6.91
+          durationS: 5
+        - text: He was not the famous songwriter.
+          atS: 12.35
+          durationS: 1.93
+        - text: It was wooden, and the storms kept coming.
+          atS: 14.45
+          durationS: 2.61
+        - text: It was rebuilt after Hurricane Hazel in 1954.
+          atS: 17.34
+          durationS: 3.63
+        - text: In 1996, Hurricanes Bertha and Fran devastated it.
+          atS: 21.42
+          durationS: 4.28
+        - text: Work on a concrete pier began in 1999, and it reopened in 2001, the first concrete pier on the North Carolina coast.
+          atS: 26.14
+          durationS: 8.29
+        - text: It reaches twelve hundred feet over the Atlantic, built to withstand winds of up to two hundred miles an hour.
+          atS: 34.88
+          durationS: 6.21
+        - text: On the right side before the T, one piling has its date etched into the concrete, and how many feet it goes down into the sand.
+          atS: 41.9
+          durationS: 7.79

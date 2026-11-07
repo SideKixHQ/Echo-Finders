@@ -8,7 +8,7 @@ at: { lat: 34.1867, lng: -77.811 }
 triggerRadiusKm: 0.15
 category: land
 format: short
-durationS: 54
+durationS: 52
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   From March 1 to September 15, postings protect the places where birds are building nests, laying
   eggs and raising chicks. So stay outside the signs and watch from here. If a bird starts calling
   loudly, it is telling you to back away.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Audubon calls the south end of Wrightsville Beach its busiest nesting site."
@@ -65,3 +65,41 @@ sources:
     url: https://www.townofwrightsvillebeach.com/DocumentCenter/View/8766/Letter-Size-WB-Map-Brochure-2024-3252024?bidId=
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-the-sand-is-already-occupied/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.4
+    audioBytes: 840141
+    transcript:
+      totalS: 52.4
+      lines:
+        - text: Look south along the sand toward the posted signs and the rope.
+          atS: 0
+          durationS: 3.73
+        - text: It can look empty.
+          atS: 4.11
+          durationS: 1.16
+        - text: In nesting season, it usually isn't.
+          atS: 5.71
+          durationS: 2.44
+        - text: Audubon calls the south end of Wrightsville Beach its busiest nesting site.
+          atS: 8.75
+          durationS: 4.66
+        - text: Colonies of Least Terns and Black Skimmers nest here, and skimmers have been nesting on this beach since 2009.
+          atS: 14.11
+          durationS: 7.31
+        - text: These birds nest directly on the sand, and their nests are often difficult to see.
+          atS: 22.02
+          durationS: 5.14
+        - text: Even a brief disturbance can make the adults leave, exposing eggs and chicks to heat and predators.
+          atS: 27.86
+          durationS: 6.14
+        - text: From March 1 to September 15, postings protect the places where birds are building nests, laying eggs and raising chicks.
+          atS: 35.31
+          durationS: 8.06
+        - text: So stay outside the signs and watch from here.
+          atS: 44.31
+          durationS: 3.37
+        - text: If a bird starts calling loudly, it is telling you to back away.
+          atS: 48.38
+          durationS: 4.05

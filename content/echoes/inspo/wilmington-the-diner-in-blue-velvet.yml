@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 37
+durationS: 35
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   The film was strange and unsettling, and it became a cult classic that still brings fans from
   all over the world to Wilmington. Some of them come to this corner, for a meal where a diner
   scene was once made.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In David Lynch's Blue Velvet, this was Arlene's Diner."
@@ -54,3 +54,29 @@ sources:
     url: https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/wilmingtonnc/Wilmington_Film_and_TV_Location_Guide_1b6bc72d-2881-4fd5-b656-0344de2b7a24.pdf
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-diner-in-blue-velvet/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 34.8
+    audioBytes: 558436
+    transcript:
+      totalS: 34.8
+      lines:
+        - text: Look at the restaurant on the corner.
+          atS: 0
+          durationS: 1.92
+        - text: In David Lynch's Blue Velvet, this was Arlene's Diner.
+          atS: 2.09
+          durationS: 3.47
+        - text: "Blue Velvet came out in 1986 and used Wilmington all over: the police station, a high school, Market and Front streets, and this diner."
+          atS: 6.17
+          durationS: 10.17
+        - text: Today it is Savorez, serving Latin American inspired food.
+          atS: 16.78
+          durationS: 4.83
+        - text: The film was strange and unsettling, and it became a cult classic that still brings fans from all over the world to Wilmington.
+          atS: 22.21
+          durationS: 7.49
+        - text: Some of them come to this corner, for a meal where a diner scene was once made.
+          atS: 30.21
+          durationS: 4.62

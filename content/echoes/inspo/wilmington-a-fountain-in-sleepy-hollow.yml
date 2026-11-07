@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: site
 format: look-below
-durationS: 31
+durationS: 27
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   Cars pass this fountain every day. On screen, it was the backdrop for a supernatural mystery,
   which is a lot to ask of a fountain in traffic.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at the fountain where Fifth Avenue meets Market Street."
@@ -45,3 +45,26 @@ sources:
     url: https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/wilmingtonnc/Wilmington_Film_and_TV_Location_Guide_1b6bc72d-2881-4fd5-b656-0344de2b7a24.pdf
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-fountain-in-sleepy-hollow/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 27.1
+    audioBytes: 435138
+    transcript:
+      totalS: 27.1
+      lines:
+        - text: Look at the fountain where Fifth Avenue meets Market Street.
+          atS: 0
+          durationS: 3.26
+        - text: In Sleepy Hollow, this is where Ichabod and Abbie meet the lost boy, in an episode called John Doe.
+          atS: 3.87
+          durationS: 6
+        - text: "The same corner has served other productions too: We're the Millers filmed at the building across the street."
+          atS: 10.47
+          durationS: 5.99
+        - text: Cars pass this fountain every day.
+          atS: 16.79
+          durationS: 2.57
+        - text: On screen, it was the backdrop for a supernatural mystery, which is a lot to ask of a fountain in traffic.
+          atS: 19.8
+          durationS: 7.33

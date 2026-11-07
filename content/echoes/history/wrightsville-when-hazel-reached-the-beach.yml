@@ -8,7 +8,7 @@ at: { lat: 34.21668, lng: -77.80317 }
 triggerRadiusKm: 0.05
 category: history
 format: look-below
-durationS: 44
+durationS: 41
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -26,7 +26,7 @@ script: |
 
   Hurricane Florence is measured on the post now too. The museum's advice is simple: come and stand
   next to it, and see how massive the storm surge is.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look for the hurricane post in the museum's side yard."
@@ -61,3 +61,35 @@ sources:
     url: https://wbmuseumofhistory.com/signs-of-the-the-times-loop-walkers-and-runners-can-learn-about-wrighstville-beach-history-this-weekend/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-when-hazel-reached-the-beach/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 41.2
+    audioBytes: 660000
+    transcript:
+      totalS: 41.2
+      lines:
+        - text: Look for the hurricane post in the museum's side yard.
+          atS: 0
+          durationS: 3.19
+        - text: It measures storms against people.
+          atS: 3.4
+          durationS: 2.08
+        - text: On October 15, 1954, Hurricane Hazel made landfall near the North Carolina and South Carolina border as a Category Four hurricane.
+          atS: 6.43
+          durationS: 10
+        - text: It arrived with the full moon of October, the highest tide of the year.
+          atS: 16.81
+          durationS: 4.24
+        - text: At Wrightsville Beach, Hazel damaged five hundred and thirty homes and destroyed eighty-nine.
+          atS: 21.49
+          durationS: 5.82
+        - text: The museum gives its storm surge here as twelve feet.
+          atS: 27.75
+          durationS: 3.33
+        - text: Hurricane Florence is measured on the post now too.
+          atS: 31.52
+          durationS: 3.09
+        - text: "The museum's advice is simple: come and stand next to it, and see how massive the storm surge is."
+          atS: 34.78
+          durationS: 6.41

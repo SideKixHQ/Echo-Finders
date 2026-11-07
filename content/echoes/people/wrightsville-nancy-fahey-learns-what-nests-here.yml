@@ -8,7 +8,7 @@ at: { lat: 34.2078, lng: -77.7938 }
 triggerRadiusKm: 0.12
 category: people
 format: short
-durationS: 55
+durationS: 51
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   nest at night, so the volunteers look for tracks at dawn.
 
   A nest found that way is roped off, and watched every day until it hatches.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Sea turtles often nest on Wrightsville Beach, and for years Nancy Fahey had no idea."
@@ -74,3 +74,41 @@ sources:
     url: https://www.townofwrightsvillebeach.com/DocumentCenter/View/8766/Letter-Size-WB-Map-Brochure-2024-3252024?bidId=
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-nancy-fahey-learns-what-nests-here/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 51.4
+    audioBytes: 823422
+    transcript:
+      totalS: 51.4
+      lines:
+        - text: Look at the sand between the dunes and the water.
+          atS: 0
+          durationS: 3.12
+        - text: Sea turtles often nest on Wrightsville Beach, and for years Nancy Fahey had no idea.
+          atS: 3.63
+          durationS: 6.25
+        - text: She had lived on the North Carolina coast for more than ten years when she learned about the Wrightsville Beach Sea Turtle Project, then recently founded.
+          atS: 10.32
+          durationS: 8.32
+        - text: She could not wait to get involved.
+          atS: 19.25
+          durationS: 2.1
+        - text: She began volunteering in 1995.
+          atS: 22.05
+          durationS: 3.24
+        - text: By the end of her first summer, she was hooked.
+          atS: 25.98
+          durationS: 2.41
+        - text: Since 2004 she has led the project as its president and volunteer coordinator.
+          atS: 28.91
+          durationS: 5.29
+        - text: Every day from May through August, its volunteers walk the length of the beach, looking for signs of nesting.
+          atS: 35.15
+          durationS: 6.35
+        - text: Turtles nest at night, so the volunteers look for tracks at dawn.
+          atS: 42.02
+          durationS: 3.99
+        - text: A nest found that way is roped off, and watched every day until it hatches.
+          atS: 46.71
+          durationS: 4.7

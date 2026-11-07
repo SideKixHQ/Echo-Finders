@@ -8,7 +8,7 @@ at: { lat: 34.21681, lng: -77.81259 }
 triggerRadiusKm: 0.06
 category: history
 format: look-below
-durationS: 45
+durationS: 43
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   chemical plant there.
 
   Today the boats on this water are mostly out for fun. Then, they were looking for submarines.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "During the Second World War, this was the county's main Coast Guard patrol base."
@@ -57,3 +57,38 @@ sources:
     url: https://home.nps.gov/articles/000/-h-our-history-lesson-the-armed-forces-presence-on-the-wwii-home-front-in-wilmington-nc.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-a-patrol-base-beside-the-water/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 42.9
+    audioBytes: 687585
+    transcript:
+      totalS: 42.9
+      lines:
+        - text: Look past the restaurant to the water of the Intracoastal Waterway.
+          atS: 0
+          durationS: 4.05
+        - text: During the Second World War, this was the county's main Coast Guard patrol base.
+          atS: 5
+          durationS: 4.77
+        - text: The wartime heritage guide puts it at today's 4 Marina Street, where Bluewater Grill is now.
+          atS: 10.38
+          durationS: 6.22
+        - text: The Coast Guard patrolled from bases at Wrightsville Beach, Southport and Wilmington.
+          atS: 17.41
+          durationS: 5.14
+        - text: Barges kept to the inland waterway to avoid German U-boats.
+          atS: 23.37
+          durationS: 3.8
+        - text: The danger was real.
+          atS: 27.77
+          durationS: 1.53
+        - text: In July 1943, people in a cottage at Kure Beach watched a U-boat attack the chemical plant there.
+          atS: 29.91
+          durationS: 6.43
+        - text: Today the boats on this water are mostly out for fun.
+          atS: 36.72
+          durationS: 3.3
+        - text: Then, they were looking for submarines.
+          atS: 40.53
+          durationS: 2.38

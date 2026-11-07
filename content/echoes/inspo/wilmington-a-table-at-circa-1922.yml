@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 32
+durationS: 28
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   The restaurant is known for its seasonal American cooking. On screen, it served a family
   something harder to swallow.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In The Summer I Turned Pretty, Conrad and Jeremiah meet their dad here for a meal."
@@ -42,3 +42,29 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/the-summer-i-turned-pretty-a-wilmington-guide-to-cousins-beach/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-table-at-circa-1922/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 28.2
+    audioBytes: 452692
+    transcript:
+      totalS: 28.2
+      lines:
+        - text: Look at the restaurant.
+          atS: 0
+          durationS: 1.36
+        - text: In The Summer I Turned Pretty, Conrad and Jeremiah meet their dad here for a meal.
+          atS: 2.47
+          durationS: 4.91
+        - text: "A restaurant scene is a writer's favorite pressure: nobody can leave before the food arrives, and everybody has to be polite in public."
+          atS: 7.77
+          durationS: 8.25
+        - text: Whatever the brothers left unsaid, they left it at a table here.
+          atS: 16.63
+          durationS: 3.65
+        - text: The restaurant is known for its seasonal American cooking.
+          atS: 20.97
+          durationS: 3.04
+        - text: On screen, it served a family something harder to swallow.
+          atS: 24.45
+          durationS: 3.79

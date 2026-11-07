@@ -8,7 +8,7 @@ at: { lat: 34.21668, lng: -77.80317 }
 triggerRadiusKm: 0.05
 category: built
 format: short
-durationS: 49
+durationS: 47
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
 
   The centerpiece is a twelve foot model of the beach around 1910. Look closely and you will find
   this cottage in it, back in its original location.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Myers Cottage once stood at 124 South Lumina Avenue."
@@ -63,3 +63,35 @@ sources:
     url: https://wbmuseumofhistory.com/current-exhibits/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-the-cottage-that-became-a-museum/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 47.3
+    audioBytes: 758221
+    transcript:
+      totalS: 47.3
+      lines:
+        - text: Look at the cottage in front of you.
+          atS: 0
+          durationS: 1.61
+        - text: It was built as a summer home, and it did not start out on this street.
+          atS: 1.82
+          durationS: 3.84
+        - text: Myers Cottage once stood at 124 South Lumina Avenue.
+          atS: 6.27
+          durationS: 4.79
+        - text: It stayed in the family until 1954, and in 1995 it was donated and moved here to house the Wrightsville Beach Museum.
+          atS: 11.51
+          durationS: 8.57
+        - text: "Inside, the rooms show how a typical summer cottage was lived in: a bedroom, a bathroom and a kitchen, with furnishings of the time."
+          atS: 21.19
+          durationS: 8.99
+        - text: The icebox was kept out on the porch, and the trolley brought ice from Wilmington to keep it cold.
+          atS: 30.78
+          durationS: 6.06
+        - text: The centerpiece is a twelve foot model of the beach around 1910.
+          atS: 37.53
+          durationS: 4.13
+        - text: Look closely and you will find this cottage in it, back in its original location.
+          atS: 42.27
+          durationS: 5.05

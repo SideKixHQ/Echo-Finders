@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: site
 format: look-below
-durationS: 37
+durationS: 34
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
 
   Stories about promises, filmed in a public park anyone can walk into. Wilmington lends its
   ordinary places to the moments people remember.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In season six of One Tree Hill, this park was transformed into the set of Lucas and Peyton's outdoor wedding."
@@ -48,3 +48,29 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/wilmingtons-holiday-spirit-shines-in-locally-made-movies-tv-shows/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-park-that-became-a-promise/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 34.4
+    audioBytes: 550913
+    transcript:
+      totalS: 34.4
+      lines:
+        - text: Look through the trees toward the water.
+          atS: 0
+          durationS: 2.32
+        - text: In season six of One Tree Hill, this park was transformed into the set of Lucas and Peyton's outdoor wedding.
+          atS: 2.93
+          durationS: 6.8
+        - text: Another production came here for something tender.
+          atS: 10.43
+          durationS: 2.76
+        - text: In the Hallmark film Christmas in Conway, a husband rallies a town to give his dying wife one last Christmas, and Greenfield Park was in that story too.
+          atS: 14
+          durationS: 10.04
+        - text: Stories about promises, filmed in a public park anyone can walk into.
+          atS: 24.74
+          durationS: 4.67
+        - text: Wilmington lends its ordinary places to the moments people remember.
+          atS: 30.01
+          durationS: 4.35

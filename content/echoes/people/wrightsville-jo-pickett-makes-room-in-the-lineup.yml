@@ -8,7 +8,7 @@ at: { lat: 34.1937, lng: -77.8046 }
 triggerRadiusKm: 0.15
 category: people
 format: short
-durationS: 54
+durationS: 52
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
 
   Ask why she still teaches, and she goes back to her own first wave. That's the moment, she says.
   And that's why I still want to teach.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the surf breaks near Crystal Pier."
@@ -78,3 +78,44 @@ sources:
     url: https://crystalsouthsurfcommunity.com/our-team/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-jo-pickett-makes-room-in-the-lineup/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52
+    audioBytes: 832617
+    transcript:
+      totalS: 52
+      lines:
+        - text: Look at the surf breaks near Crystal Pier.
+          atS: 0
+          durationS: 2.36
+        - text: Jo Pickett calls this her favorite surf spot.
+          atS: 2.74
+          durationS: 2.89
+        - text: She is a former U.S.
+          atS: 6.07
+          durationS: 1.3
+        - text: national short board champion, and she taught herself to surf.
+          atS: 7.42
+          durationS: 3.89
+        - text: Here she started Crystal South Surf Camp, which has offered surf instruction since 1996.
+          atS: 11.69
+          durationS: 5.74
+        - text: This beach is also home to the Wahine Classic, an all-female surf contest she runs, for everyone from Teenie Wahines to seniors.
+          atS: 18.54
+          durationS: 8.71
+        - text: It grew out of the East Coast Wahine Championships, founded in 1997 as the first all-female surf event on the East Coast.
+          atS: 28.06
+          durationS: 7.67
+        - text: After it shut down in 2011, Pickett and her friends relaunched it in 2013.
+          atS: 36.34
+          durationS: 5.24
+        - text: Ask why she still teaches, and she goes back to her own first wave.
+          atS: 42.27
+          durationS: 4.09
+        - text: That's the moment, she says.
+          atS: 47.17
+          durationS: 2.25
+        - text: And that's why I still want to teach.
+          atS: 49.81
+          durationS: 2.16

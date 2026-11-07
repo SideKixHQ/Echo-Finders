@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 38
+durationS: 39
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
 
   Between 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area.
   Some of its turning points came at this door.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Brooke and Julian were married here."
@@ -47,3 +47,35 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/one-tree-hill-walking-tour/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-church-of-the-television-weddings/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 38.6
+    audioBytes: 618622
+    transcript:
+      totalS: 38.6
+      lines:
+        - text: Look at the church doors.
+          atS: 0
+          durationS: 1.52
+        - text: On television, they opened on a wedding.
+          atS: 1.85
+          durationS: 2.25
+        - text: Brooke and Julian were married here.
+          atS: 4.48
+          durationS: 2.14
+        - text: "But this church also held two weddings that never happened: Lucas and Lindsey were supposed to marry here, and so were Keith and Jules."
+          atS: 7.13
+          durationS: 8.93
+        - text: A writer who needs a wedding can choose whether it goes ahead.
+          atS: 16.44
+          durationS: 3.46
+        - text: A real church, with a congregation of its own, played both endings.
+          atS: 20.5
+          durationS: 4.57
+        - text: Between 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area.
+          atS: 25.89
+          durationS: 9.01
+        - text: Some of its turning points came at this door.
+          atS: 35.71
+          durationS: 2.88

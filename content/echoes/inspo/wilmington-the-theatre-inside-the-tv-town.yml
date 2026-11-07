@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 34
+durationS: 32
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   A real theatre became the civic heart of places that never existed. The building did not have to change at all. The cameras just
   pointed at it and gave it a new name.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "For Dawson's Creek, its interior became the Rialto Theatre in Capeside."
@@ -47,3 +47,32 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/one-tree-hill-walking-tour/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-theatre-inside-the-tv-town/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 32.4
+    audioBytes: 519566
+    transcript:
+      totalS: 32.4
+      lines:
+        - text: Look at the front steps and the columns of Thalian Hall.
+          atS: 0
+          durationS: 3.33
+        - text: Fictional towns keep borrowing this building.
+          atS: 3.54
+          durationS: 2.71
+        - text: For Dawson's Creek, its interior became the Rialto Theatre in Capeside.
+          atS: 6.63
+          durationS: 5.06
+        - text: For One Tree Hill, the front steps and Corinthian columns frequently stood in as the steps of Tree Hill's town hall.
+          atS: 12.5
+          durationS: 7.7
+        - text: A real theatre became the civic heart of places that never existed.
+          atS: 21.32
+          durationS: 4.28
+        - text: The building did not have to change at all.
+          atS: 26.2
+          durationS: 2.32
+        - text: The cameras just pointed at it and gave it a new name.
+          atS: 28.91
+          durationS: 3.51

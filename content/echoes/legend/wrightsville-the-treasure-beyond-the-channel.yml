@@ -8,12 +8,11 @@ at: { lat: 34.20832, lng: -77.79659 }
 triggerRadiusKm: 0.08
 category: legend
 format: look-below
-durationS: 46
+durationS: 38
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A published local legend. No record or find confirms that Captain Kidd buried anything
-  on Money Island; the script says so out loud.
+  A published local legend. No record or find confirms that Captain Kidd buried anything on Money Island; the script says so out loud.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -31,7 +30,7 @@ script: |
 
   So the island kept its name, and nothing else. It works like a treasure map made of a single word, passed from
   neighbor to neighbor, promising more than anyone ever dug up.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Beyond what you can see from this park is a small island with a big name: Money Island."
@@ -60,3 +59,35 @@ sources:
     url: https://omny.fm/shows/cape-fear-unearthed/the-lost-treasure-of-money-island
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/wrightsville-the-treasure-beyond-the-channel/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 38.4
+    audioBytes: 614861
+    transcript:
+      totalS: 38.4
+      lines:
+        - text: Look out across the channel, toward the marsh and the mainland.
+          atS: 0
+          durationS: 3.27
+        - text: "Beyond what you can see from this park is a small island with a big name: Money Island."
+          atS: 3.42
+          durationS: 5.38
+        - text: What follows is a legend, and it has never been proven.
+          atS: 9.08
+          durationS: 3.7
+        - text: The story says that in 1699, Captain William Kidd stood supervising while workmen buried two iron chests full of gold and silver on the island.
+          atS: 13.22
+          durationS: 9.43
+        - text: Locals have spent hundreds of years searching for those chests.
+          atS: 23.09
+          durationS: 3.45
+        - text: None have ever been found.
+          atS: 26.71
+          durationS: 1.45
+        - text: So the island kept its name, and nothing else.
+          atS: 28.49
+          durationS: 2.78
+        - text: It works like a treasure map made of a single word, passed from neighbor to neighbor, promising more than anyone ever dug up.
+          atS: 31.59
+          durationS: 6.77

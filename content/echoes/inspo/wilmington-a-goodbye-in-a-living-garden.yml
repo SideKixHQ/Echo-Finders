@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: site
 format: look-below
-durationS: 34
+durationS: 30
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   During the course of the series, 128 episodes over six seasons were filmed in Wilmington and our
   Island Beaches. The show's hardest farewell was filmed among the plants.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look for the Ability Garden. In the final episode of Dawson's Creek, this is where Jen said her goodbye."
@@ -42,3 +42,26 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/dawsons-creek-locations-tour/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-goodbye-in-a-living-garden/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 29.9
+    audioBytes: 479024
+    transcript:
+      totalS: 29.9
+      lines:
+        - text: Look for the Ability Garden.
+          atS: 0
+          durationS: 1.97
+        - text: In the final episode of Dawson's Creek, this is where Jen said her goodbye.
+          atS: 2.67
+          durationS: 4.48
+        - text: "Of all the places the series could have chosen for its saddest scene, it chose a garden: a place that is always in the middle of something growing, ending and coming back."
+          atS: 7.66
+          durationS: 10.4
+        - text: During the course of the series, 128 episodes over six seasons were filmed in Wilmington and our Island Beaches.
+          atS: 18.67
+          durationS: 6.93
+        - text: The show's hardest farewell was filmed among the plants.
+          atS: 26.41
+          durationS: 3.45

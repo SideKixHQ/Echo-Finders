@@ -8,7 +8,7 @@ at: { lat: 34.21545, lng: -77.79055 }
 triggerRadiusKm: 0.1
 category: history
 format: short
-durationS: 53
+durationS: 45
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
   came onto the island by trolley or by boat. So the firefighters loaded an engine onto the trolley.
 
   It made the crossing. Then, off the tracks at last, it got stuck in the sand.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In 1934, the Great Fire burned through here."
@@ -70,3 +70,44 @@ sources:
     url: https://historicwrightsvillebeach.wordpress.com/points-on-the-tour-2/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-the-fire-engine-that-came-by-trolley/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 45
+    audioBytes: 721022
+    transcript:
+      totalS: 45
+      lines:
+        - text: Look down North Lumina Avenue, along the north end of the island.
+          atS: 0
+          durationS: 3.91
+        - text: In 1934, the Great Fire burned through here.
+          atS: 4.24
+          durationS: 3.33
+        - text: It is thought to have started in the Kitty Cottage, from a careless cigarette or an electric iron.
+          atS: 8.08
+          durationS: 5.33
+        - text: A brisk westerly wind drove it, then a gale shifted to the south southwest and pushed it into the Oceanic Hotel.
+          atS: 14.01
+          durationS: 7.04
+        - text: In less than three hours, a third of the beach was gone.
+          atS: 21.65
+          durationS: 2.91
+        - text: The town counts a hundred and three buildings destroyed.
+          atS: 25.01
+          durationS: 3.12
+        - text: Wilmington's fire department was called.
+          atS: 28.57
+          durationS: 2.25
+        - text: But there was no automobile bridge yet, and everything came onto the island by trolley or by boat.
+          atS: 31.15
+          durationS: 5.27
+        - text: So the firefighters loaded an engine onto the trolley.
+          atS: 36.75
+          durationS: 2.8
+        - text: It made the crossing.
+          atS: 39.79
+          durationS: 1.23
+        - text: Then, off the tracks at last, it got stuck in the sand.
+          atS: 41.53
+          durationS: 3.47

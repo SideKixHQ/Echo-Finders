@@ -27,7 +27,7 @@ script: |
 
   Across the street, at 124 South Lumina Avenue, stood the Myers Cottage. In 1995 it was moved away
   to house the Wrightsville Beach Museum. Its neighbor across the road stayed put.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The James Cottage was built in 1900 for Dr. W.D. James of Hamlet."
@@ -59,3 +59,44 @@ sources:
     url: https://wbmuseumofhistory.com/current-exhibits/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-a-porch-from-an-earlier-beach/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 42.9
+    audioBytes: 686750
+    transcript:
+      totalS: 42.9
+      lines:
+        - text: Look at the cottage from the sidewalk; it is a private home.
+          atS: 0
+          durationS: 3.25
+        - text: The James Cottage was built in 1900 for Dr.
+          atS: 3.58
+          durationS: 2.79
+        - text: W.D.
+          atS: 6.38
+          durationS: 0.58
+        - text: James of Hamlet.
+          atS: 7.01
+          durationS: 1.24
+        - text: "It is a summer cottage design: one story, a triple gable roof and a deep porch."
+          atS: 8.64
+          durationS: 5.83
+        - text: The hip roof along the street was the servants' quarters.
+          atS: 14.85
+          durationS: 3.03
+        - text: On this beach, the porch was where summer happened.
+          atS: 18.39
+          durationS: 3.1
+        - text: Meals were often eaten outdoors on the porch, to catch the cool summer breezes.
+          atS: 22.09
+          durationS: 5.05
+        - text: Across the street, at 124 South Lumina Avenue, stood the Myers Cottage.
+          atS: 27.75
+          durationS: 6.23
+        - text: In 1995 it was moved away to house the Wrightsville Beach Museum.
+          atS: 34.59
+          durationS: 5.09
+        - text: Its neighbor across the road stayed put.
+          atS: 40.27
+          durationS: 2.59

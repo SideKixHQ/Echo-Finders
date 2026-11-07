@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: site
 format: look-below
-durationS: 36
+durationS: 37
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
 
   Those stories all needed somewhere that felt like it had been here a long time. This parish
   had.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "St. James lists the productions itself."
@@ -63,3 +63,41 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/one-tree-hill-walking-tour/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-one-parish-many-screen-worlds/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 36.8
+    audioBytes: 590201
+    transcript:
+      totalS: 36.8
+      lines:
+        - text: Look at the old church and its grounds.
+          atS: 0
+          durationS: 2.42
+        - text: They have been on screen since One Tree Hill began.
+          atS: 2.93
+          durationS: 2.96
+        - text: St.
+          atS: 6.58
+          durationS: 0.25
+        - text: James lists the productions itself.
+          atS: 6.86
+          durationS: 2.33
+        - text: One Tree Hill filmed here, and its school served as Jamie's preschool.
+          atS: 9.8
+          durationS: 4.06
+        - text: Sleepy Hollow filmed here.
+          atS: 14.47
+          durationS: 1.81
+        - text: Words on Bathroom Walls filmed on the front lawn, and in two of the parish halls.
+          atS: 16.72
+          durationS: 5.2
+        - text: Idlewild came in 2006, and The Supremes at Earl's All-You-Can-Eat in 2022.
+          atS: 22.73
+          durationS: 6.34
+        - text: Those stories all needed somewhere that felt like it had been here a long time.
+          atS: 29.88
+          durationS: 4.4
+        - text: This parish had.
+          atS: 34.8
+          durationS: 2.03

@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 33
+durationS: 32
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   Teenage television keeps coming back to this courtyard. When a story needs to look back at
   childhood, it helps to film somewhere that already feels old.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the old brick buildings of the Cotton Exchange, now full of local shops."
@@ -50,3 +50,26 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/dawsons-creek-locations-tour/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-memory-borrowed-from-the-cotton-exchange/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 32.1
+    audioBytes: 514550
+    transcript:
+      totalS: 32.1
+      lines:
+        - text: Look at the old brick buildings of the Cotton Exchange, now full of local shops.
+          atS: 0
+          durationS: 5.07
+        - text: "In season three of The Summer I Turned Pretty, this was the backdrop for young Belly and Conrad: a memory, filmed in real brick."
+          atS: 5.89
+          durationS: 8.64
+        - text: Long before that, Dawson's Creek filmed in the courtyard and the parking lot here.
+          atS: 15.34
+          durationS: 5
+        - text: Teenage television keeps coming back to this courtyard.
+          atS: 21.04
+          durationS: 3.22
+        - text: When a story needs to look back at childhood, it helps to film somewhere that already feels old.
+          atS: 25.07
+          durationS: 7.02

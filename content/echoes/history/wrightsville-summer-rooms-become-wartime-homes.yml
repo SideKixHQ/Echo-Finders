@@ -8,7 +8,7 @@ at: { lat: 34.19658, lng: -77.80443 }
 triggerRadiusKm: 0.05
 category: history
 format: look-below
-durationS: 46
+durationS: 45
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -26,7 +26,7 @@ script: |
 
   The inn still rents small apartments, one or two rooms each, with their own kitchenettes. That is
   the same offer it made to a crowded island at war: not a holiday, a place to live.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It dates from the early 1900s."
@@ -57,3 +57,35 @@ sources:
     url: https://www.carolinatempleislandinn.com/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-summer-rooms-become-wartime-homes/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 44.6
+    audioBytes: 715171
+    transcript:
+      totalS: 44.6
+      lines:
+        - text: Look across Waynick Boulevard at the Carolina Temple, and stay on the sidewalk.
+          atS: 0
+          durationS: 4.97
+        - text: It dates from the early 1900s.
+          atS: 5.41
+          durationS: 2.54
+        - text: During the Second World War it was a popular guest home, and the wartime heritage guide calls it Wrightsville Beach's oldest continuously operating business.
+          atS: 8.9
+          durationS: 9.58
+        - text: The war filled this island.
+          atS: 19.3
+          durationS: 1.82
+        - text: The town grew from two hundred and fifty-two residents in 1941 to fifteen hundred in 1945.
+          atS: 21.4
+          durationS: 7.16
+        - text: All of them needed somewhere to sleep.
+          atS: 29.26
+          durationS: 2.45
+        - text: The inn still rents small apartments, one or two rooms each, with their own kitchenettes.
+          atS: 32.22
+          durationS: 5.65
+        - text: "That is the same offer it made to a crowded island at war: not a holiday, a place to live."
+          atS: 38.48
+          durationS: 6.15

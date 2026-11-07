@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 32
+durationS: 29
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   The same film used the North Carolina Port of Wilmington for its Iron Legion scene. A superhero
   story counted down to midnight in a quiet building on Chestnut Street.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "A superhero story counted down to midnight in a quiet building on Chestnut Street."
@@ -48,3 +48,29 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/wilmingtons-holiday-spirit-shines-in-locally-made-movies-tv-shows/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-private-club-throws-a-marvel-party/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 28.9
+    audioBytes: 463977
+    transcript:
+      totalS: 28.9
+      lines:
+        - text: Look at the Cape Fear Club from the sidewalk.
+          atS: 0
+          durationS: 2.26
+        - text: It is a private club, and you will not need to go in to hear this.
+          atS: 2.38
+          durationS: 3.82
+        - text: Iron Man 3 shot a New Year's Eve party here.
+          atS: 7.01
+          durationS: 3.17
+        - text: It was the final solo movie of Tony Stark, played by Robert Downey Jr., and it was set at Christmastime.
+          atS: 10.79
+          durationS: 6.86
+        - text: The same film used the North Carolina Port of Wilmington for its Iron Legion scene.
+          atS: 18.09
+          durationS: 4.95
+        - text: A superhero story counted down to midnight in a quiet building on Chestnut Street.
+          atS: 23.64
+          durationS: 5.29

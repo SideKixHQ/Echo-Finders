@@ -11,7 +11,7 @@ inspo:
   kind: connection
   evidence: building
 format: look-below
-durationS: 39
+durationS: 37
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   The Summer I Turned Pretty turned it into a lounge.
 
   A set that was meant to be taken down became a place with regulars, and the shows kept finding it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "For Dawson's Creek, this was a temporary set."
@@ -59,3 +59,35 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/the-summer-i-turned-pretty-a-wilmington-guide-to-cousins-beach/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-tv-bar-that-became-a-real-bar/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 36.5
+    audioBytes: 585185
+    transcript:
+      totalS: 36.5
+      lines:
+        - text: "Look at the sign: Hell's Kitchen."
+          atS: 0
+          durationS: 2.61
+        - text: It was not built to be a bar.
+          atS: 3.12
+          durationS: 1.82
+        - text: It was built to be filmed.
+          atS: 5.33
+          durationS: 1.58
+        - text: For Dawson's Creek, this was a temporary set.
+          atS: 7.72
+          durationS: 3.05
+        - text: When the show wrapped, the bar was sold with its contents to a local restaurateur, who turned it into a real bar with the same name.
+          atS: 11.16
+          durationS: 7.79
+        - text: Then the fiction came back for it.
+          atS: 20.06
+          durationS: 2.32
+        - text: One Tree Hill filmed its Swinging Donkey Bar scenes here, and The Summer I Turned Pretty turned it into a lounge.
+          atS: 23.5
+          durationS: 6.58
+        - text: A set that was meant to be taken down became a place with regulars, and the shows kept finding it.
+          atS: 31.03
+          durationS: 5.47

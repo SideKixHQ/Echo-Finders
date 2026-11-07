@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 38
+durationS: 37
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   During the course of the series, 128 episodes over six seasons were filmed in Wilmington and our
   Island Beaches. The story of Capeside closed here, beside a real river.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The story of Capeside closed here, beside a real river."
@@ -51,3 +51,32 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/dawsons-creek-locations-tour/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-restaurant-at-the-end-of-the-story/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 36.8
+    audioBytes: 590201
+    transcript:
+      totalS: 36.8
+      lines:
+        - text: Look at the riverfront restaurant at the southern end of the Riverwalk.
+          atS: 0
+          durationS: 3.81
+        - text: In the last episode of Dawson's Creek, this was the Icehouse, Pacey's restaurant.
+          atS: 4.62
+          durationS: 5.43
+        - text: It was not the first Icehouse.
+          atS: 10.66
+          durationS: 1.77
+        - text: The original stood a couple of blocks north, at 115 South Water Street.
+          atS: 12.63
+          durationS: 5.42
+        - text: When the series needed its ending, it found a new waterfront to finish on.
+          atS: 18.75
+          durationS: 4.49
+        - text: During the course of the series, 128 episodes over six seasons were filmed in Wilmington and our Island Beaches.
+          atS: 24.06
+          durationS: 7.94
+        - text: The story of Capeside closed here, beside a real river.
+          atS: 32.69
+          durationS: 4.13

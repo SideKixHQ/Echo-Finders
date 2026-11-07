@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 38
+durationS: 37
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   The romance was invented. The art was real, and it was already here. Film crews borrow museums
   for the same reason people go on dates in them: something interesting to look at while you decide
   how you feel.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "For a Nicholas Sparks film, it played itself"
@@ -51,3 +51,32 @@ sources:
     url: https://wilmtv.com/production/the-longest-ride-2015
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-real-art-in-a-film-romance/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 37.1
+    audioBytes: 594798
+    transcript:
+      totalS: 37.1
+      lines:
+        - text: Look at the museum.
+          atS: 0
+          durationS: 1.31
+        - text: "For a Nicholas Sparks film, it played itself: a place to fall for somebody in front of art."
+          atS: 1.49
+          durationS: 5.67
+        - text: The Longest Ride shot its museum scene here over three days.
+          atS: 8.45
+          durationS: 4.24
+        - text: Britt Robertson, Scott Eastwood and Gloria Reuben mingled under an exhibit by James Grashow made of dozens of cardboard monkeys.
+          atS: 12.97
+          durationS: 8.29
+        - text: The romance was invented.
+          atS: 22.37
+          durationS: 1.67
+        - text: The art was real, and it was already here.
+          atS: 24.65
+          durationS: 2.82
+        - text: "Film crews borrow museums for the same reason people go on dates in them: something interesting to look at while you decide how you feel."
+          atS: 28.28
+          durationS: 8.82

@@ -8,7 +8,7 @@ at: { lat: 34.21453, lng: -77.80414 }
 triggerRadiusKm: 0.15
 category: history
 format: short
-durationS: 57
+durationS: 52
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
   The plant closed in 1984, when funding for research ended, and the town took over the complex.
 
   The town's trucks now park where engineers once tried to freeze the ocean into something you could drink.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "They stand where the federal government once tried to turn seawater into drinking water."
@@ -66,3 +66,41 @@ sources:
     url: https://files.nc.gov/ncdeq/Coastal%20Management/documents/PDF/Land%20Use%20Plans/WrightsvilleBeachCAMALUP_Cert4APR2019.pdf
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-fresh-water-beside-the-sea/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 51.8
+    audioBytes: 830110
+    transcript:
+      totalS: 51.8
+      lines:
+        - text: Look at the municipal buildings around you.
+          atS: 0
+          durationS: 2.25
+        - text: They stand where the federal government once tried to turn seawater into drinking water.
+          atS: 2.58
+          durationS: 4.97
+        - text: The Office of Saline Water ran its Wrightsville Beach Test Facility here.
+          atS: 8.36
+          durationS: 4.49
+        - text: The station concentrated on the freezing process of desalination.
+          atS: 13.23
+          durationS: 4.07
+        - text: The idea is simple.
+          atS: 17.52
+          durationS: 1.41
+        - text: Freeze salt water, and the ice crystals come out fresher than the brine around them.
+          atS: 19.36
+          durationS: 4.73
+        - text: The hard part was the crystals.
+          atS: 24.53
+          durationS: 2.02
+        - text: A later federal report says the ones grown here were tiny, about one tenth the size engineers wanted, and washing the salt off them was too expensive.
+          atS: 26.83
+          durationS: 9.89
+        - text: The plant closed in 1984, when funding for research ended, and the town took over the complex.
+          atS: 38.02
+          durationS: 7.02
+        - text: The town's trucks now park where engineers once tried to freeze the ocean into something you could drink.
+          atS: 45.74
+          durationS: 6.08

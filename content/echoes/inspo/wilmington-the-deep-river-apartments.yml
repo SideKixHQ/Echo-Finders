@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 37
+durationS: 31
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
 
   It is one of Wilmington's few brownstones, which is part of why it photographs like a city
   somewhere else. Fans of the film still come here from all over the world.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In Blue Velvet, it was the Deep River Apartments, home of the singer Dorothy Vallens."
@@ -49,3 +49,29 @@ sources:
     url: https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/wilmingtonnc/Wilmington_Film_and_TV_Location_Guide_1b6bc72d-2881-4fd5-b656-0344de2b7a24.pdf
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-deep-river-apartments/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 30.8
+    audioBytes: 494488
+    transcript:
+      totalS: 30.8
+      lines:
+        - text: Look across at the brownstone on the corner, from this side of the street.
+          atS: 0
+          durationS: 3.56
+        - text: People live here, so this story is for the sidewalk.
+          atS: 3.95
+          durationS: 2.91
+        - text: In Blue Velvet, it was the Deep River Apartments, home of the singer Dorothy Vallens.
+          atS: 7.56
+          durationS: 5.33
+        - text: The outside of the building carries much of the film's mood, and its fire escapes appear in key scenes near the end.
+          atS: 13.49
+          durationS: 6.35
+        - text: It is one of Wilmington's few brownstones, which is part of why it photographs like a city somewhere else.
+          atS: 20.35
+          durationS: 6.08
+        - text: Fans of the film still come here from all over the world.
+          atS: 27.25
+          durationS: 3.59

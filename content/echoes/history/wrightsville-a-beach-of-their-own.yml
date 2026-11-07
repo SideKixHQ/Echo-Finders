@@ -8,7 +8,7 @@ at: { lat: 34.23474, lng: -77.77583 }
 triggerRadiusKm: 0.15
 category: history
 format: short
-durationS: 53
+durationS: 51
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
 
   It was never rebuilt. The National Park Service now lists Shell Island Resort in its study of African
   American outdoor recreation.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In the 1920s, this was Shell Island, then a separate island, and it was the premier resort for African Americans."
@@ -78,3 +78,41 @@ sources:
     url: https://www.nps.gov/subjects/nationalhistoriclandmarks/upload/African-American-Outdoor-Recreation-National-Historic-Landmark-Theme-Study.pdf
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-a-beach-of-their-own/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 50.6
+    audioBytes: 810047
+    transcript:
+      totalS: 50.6
+      lines:
+        - text: Look north along the sand toward the end of the island.
+          atS: 0
+          durationS: 3.39
+        - text: In the 1920s, this was Shell Island, then a separate island, and it was the premier resort for African Americans.
+          atS: 4.2
+          durationS: 7.17
+        - text: Its backers pictured a mirror of Wrightsville Beach, a National Negro Playground.
+          atS: 12.07
+          durationS: 5.36
+        - text: It had hotels, cottages, bath halls and a dance pavilion.
+          atS: 17.95
+          durationS: 3.75
+        - text: Visitors came from fifty cities in ten states, because a resort like this was so unusual at the time.
+          atS: 22.21
+          durationS: 6
+        - text: It was open for only three summers.
+          atS: 28.72
+          durationS: 2.21
+        - text: In June 1926, a fire started in a dining room, and within half an hour the pavilion was in ruins.
+          atS: 32.23
+          durationS: 6.69
+        - text: Only five buildings escaped.
+          atS: 39.13
+          durationS: 1.9
+        - text: It was never rebuilt.
+          atS: 41.31
+          durationS: 1.49
+        - text: The National Park Service now lists Shell Island Resort in its study of African American outdoor recreation.
+          atS: 43.23
+          durationS: 7.34
