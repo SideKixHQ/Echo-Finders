@@ -364,7 +364,7 @@ describe("true crime — sources and how a case is told", () => {
     expect(errorsOn(trueCrime({ sources: [source(1)] }), "sources")).toHaveLength(1);
   });
 
-  const alleged = { ...REVIEW, convictionStatus: "alleged" as const };
+  const alleged = { ...REVIEW, convictionStatus: "alleged" as const, involvesLivingPeople: true };
 
   it("refuses to approve an unproven case told as fact", () => {
     const asFact = trueCrime({ trueCrimeReview: alleged, script: "He set the fire that night and walked away." });
@@ -381,6 +381,12 @@ describe("true crime — sources and how a case is told", () => {
     ]) {
       expect(errorsOn(trueCrime({ trueCrimeReview: alleged, script }), "script")).toEqual([]);
     }
+  });
+
+  it("leaves a case whose accused died untried to be told as history", () => {
+    // Booth, Oswald: never convicted, and nobody says "allegedly" about them.
+    const dead = { ...alleged, involvesLivingPeople: false };
+    expect(errorsOn(trueCrime({ trueCrimeReview: dead, script: "He shot the president from the window." }), "script")).toEqual([]);
   });
 
   it("lets a draft be worded later", () => {

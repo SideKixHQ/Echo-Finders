@@ -96,7 +96,7 @@ capacity is squarely exposed.
   the court accurately" is the strongest position we can be in. Repeating a retelling has no
   such protection, which is why the next two rules carry the weight.
 - **What was not proven is told as unproven.** A convicted case may be stated as fact. An
-  `alleged` case must say whose claim it is ("police said", "was charged with",
+  `alleged` case about someone still alive must say whose claim it is ("police said", "was charged with",
   "allegedly"), and an `exonerated` case must say aloud that the conviction did not stand.
   CI refuses to approve either otherwise. `unsolved` cases name no culprit.
 - **Three sources minimum** where a living person was not convicted.

@@ -454,12 +454,16 @@ function validateTrueCrime(echo: Echo): ValidationIssue[] {
     error("trueCrimeReview.contentWarning", "must be read before the echo begins");
   }
 
-  // Told as what it is. A case nobody was convicted of must say whose claim it is, and an
-  // exoneration must say so aloud, so a listener never hears an accusation as a fact.
-  // Checked at approval, on the words actually spoken.
+  // Told as what it is. An accusation against someone alive who was never convicted must
+  // say whose claim it is, and an exoneration must say so aloud, so a listener never hears
+  // an accusation as a fact. Checked at approval, on the words actually spoken.
+  //
+  // Living people only for the first: that is where the legal risk is (the dead cannot be
+  // defamed in the US), and cases like Booth or Oswald, who died before any trial, are
+  // settled history that nobody tells as "allegedly".
   const script = echo.script ?? "";
   if (echo.editorial === "approved" && script.trim().length > 0) {
-    if (review.convictionStatus === "alleged" && !ATTRIBUTED.test(script)) {
+    if (review.convictionStatus === "alleged" && review.involvesLivingPeople && !ATTRIBUTED.test(script)) {
       error(
         "script",
         'an "alleged" case must be told as alleged: say whose claim it is ("police said", "was charged with", "allegedly")',

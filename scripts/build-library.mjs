@@ -174,7 +174,9 @@ const report = validateLibrary(demo);
 const approvalOnly = (i) =>
   i.field === "claims.backing" ||
   /^sources\[\d+\]\.rights$/.test(i.field) ||
-  (i.field === "sources" && /public record/.test(i.message));
+  (i.field === "sources" && /public record/.test(i.message)) ||
+  // How an unproven case is worded is checked at approval, on the script as written.
+  (i.field === "script" && /told as alleged|exoneration must be said/.test(i.message));
 const blocking = report.issues.filter((i) => i.severity === "error" && !approvalOnly(i));
 if (blocking.length > 0) {
   console.error("library has errors; run npm run content:validate");
