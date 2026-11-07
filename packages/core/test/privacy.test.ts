@@ -51,7 +51,8 @@ describe("defaults are cautious", () => {
   });
 
   it("leaves everything that serves us rather than the listener off", () => {
-    expect(PRIVACY_DEFAULTS.analytics).toBe(false);
+    // Anonymous counts are on by default (James, 2026-11-07); everything else for our benefit is off.
+    expect(PRIVACY_DEFAULTS.analytics).toBe(true);
     expect(PRIVACY_DEFAULTS.personalisedSponsorship).toBe(false);
   });
 

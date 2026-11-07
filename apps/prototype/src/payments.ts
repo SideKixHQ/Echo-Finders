@@ -13,6 +13,7 @@
  */
 
 import type { Entitlement } from "@echofinders/core";
+import { count } from "./analytics";
 import { storeEntitlement } from "./entitlement-store";
 
 const CUSTOMER = "echo-finders:customer";
@@ -61,6 +62,7 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
 
 /** Off to Stripe's checkout page. The page leaves, so this only returns if it fails. */
 export async function startCheckout(plan: "week" | "city" | "allAccess", cityId?: string): Promise<void> {
+  count({ name: "Checkout started", plan, city: cityId ?? "none" });
   const { url } = await call<{ url: string }>("/api/checkout", {
     method: "POST",
     body: JSON.stringify({ plan, cityId, customerId: customerId() ?? undefined }),
@@ -84,6 +86,7 @@ export async function finishCheckout(): Promise<Entitlement | null> {
       `/api/entitlement?session_id=${encodeURIComponent(sessionId)}`,
     );
     rememberCustomer(back.customerId);
+    count({ name: "Purchase completed", plan: back.entitlement.kind });
     return storeEntitlement(back.entitlement);
   }
   // Back from the card page, where renewal may have been changed: read it again.
