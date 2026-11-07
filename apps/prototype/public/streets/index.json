@@ -295,8 +295,8 @@
   {
    "area": "the-lady-in-grey",
    "bbox": [
-    -77.96434,
-    34.21882,
+    -77.96504,
+    34.20324,
     -77.91755,
     34.25878
    ],
@@ -391,6 +391,76 @@
     32.78983
    ],
    "file": "the-turn-onto-elm-street.json"
+  },
+  {
+   "area": "wilmington-a-goodbye-in-a-living-garden",
+   "bbox": [
+    -77.84853,
+    34.19976,
+    -77.82246,
+    34.22132
+   ],
+   "file": "wilmington-a-goodbye-in-a-living-garden.json"
+  },
+  {
+   "area": "wilmington-capeside-high-was-a-university",
+   "bbox": [
+    -77.89098,
+    34.21591,
+    -77.86491,
+    34.23747
+   ],
+   "file": "wilmington-capeside-high-was-a-university.json"
+  },
+  {
+   "area": "wilmington-real-art-in-a-film-romance",
+   "bbox": [
+    -77.92876,
+    34.1734,
+    -77.90269,
+    34.19496
+   ],
+   "file": "wilmington-real-art-in-a-film-romance.json"
+  },
+  {
+   "area": "wilmington-the-beach-tournament-off-the-beach",
+   "bbox": [
+    -77.90469,
+    34.23037,
+    -77.87861,
+    34.25193
+   ],
+   "file": "wilmington-the-beach-tournament-off-the-beach.json"
+  },
+  {
+   "area": "wilmington-three-shows-one-arcade",
+   "bbox": [
+    -77.87614,
+    34.19664,
+    -77.85007,
+    34.2182
+   ],
+   "file": "wilmington-three-shows-one-arcade.json"
+  },
+  {
+   "area": "wrightsville-a-beach-memory-in-a-sandwich",
+   "bbox": [
+    -77.82562,
+    34.17592,
+    -77.77577,
+    34.22759
+   ],
+   "file": "wrightsville-a-beach-memory-in-a-sandwich.json"
+  },
+  {
+   "area": "wrightsville-a-beach-of-their-own",
+   "bbox": [
+    -77.78887,
+    34.22396,
+    -77.76279,
+    34.24552
+   ],
+   "file": "wrightsville-a-beach-of-their-own.json"
   }
  ]
 }
