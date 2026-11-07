@@ -87,11 +87,18 @@ capacity is squarely exposed.
 - Recent events still under investigation.
 
 ### Our controls
-- **True crime requires at least one primary public record** — a court filing, coroner's
-  report or government archive — not two retellings. This is not merely a quality rule: it
-  is what puts us inside **fair report privilege**, which protects a fair and substantially
-  accurate report of an official proceeding. The protection is never "somebody said it
-  first"; it is "a court said it, and we reported the court accurately."
+- **Two reputable sources minimum** — established news, a documentary or broadcast, a
+  court record or a government archive. *(Changed 2026-11-07, James. This used to demand a
+  primary public record for every case, which held back cases already told at length on
+  network news and in documentaries, and failed whenever an archive refused us.)* A public
+  record is still the best source when there is one: **fair report privilege** protects a
+  fair and accurate report of an official proceeding, and "a court said it, and we reported
+  the court accurately" is the strongest position we can be in. Repeating a retelling has no
+  such protection, which is why the next two rules carry the weight.
+- **What was not proven is told as unproven.** A convicted case may be stated as fact. An
+  `alleged` case must say whose claim it is ("police said", "was charged with",
+  "allegedly"), and an `exonerated` case must say aloud that the conviction did not stand.
+  CI refuses to approve either otherwise. `unsolved` cases name no culprit.
 - **Three sources minimum** where a living person was not convicted.
 - `convictionStatus` is a required field — `convicted`, `alleged`, `unsolved`, `exonerated`.
   The distinction between "was convicted of" and "was accused of" is the difference between
@@ -273,7 +280,8 @@ Not policy that lives in a document nobody reads. CI fails the build on each of 
 | Rule | Where |
 |---|---|
 | Public-domain / CC-BY sources only | `MVP_POLICY` |
-| True crime needs a primary public record | `validateTrueCrime` |
+| True crime needs two reputable sources | `validateTrueCrime` |
+| Unproven cases are told as alleged; exonerations said aloud | `validateTrueCrime` |
 | Three sources for a living unconvicted person | `validateTrueCrime` |
 | Conviction status stated explicitly | `TrueCrimeReview` |
 | A named human reviewer | `TrueCrimeReview.reviewedBy` |
