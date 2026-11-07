@@ -9,7 +9,7 @@ at: { lat: 34.23710, lng: -77.94598 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 69
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -33,7 +33,7 @@ script: |
   authority appear orderly and permanent. This building asks a harder question: how was
   that authority obtained? The architecture remained. The democratic rights of many
   Wilmington residents did not.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
@@ -101,3 +101,47 @@ sources:
     url: https://www.dncr.nc.gov/blog/2023/12/12/wilmington-coup-d-118
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/wilmington-the-government-taken-by-force/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 54.5
+    audioBytes: 873577
+    transcript:
+      totalS: 54.5
+      lines:
+        - text: This building has held both city government and a theater.
+          atS: 0
+          durationS: 3.1
+        - text: In November 1898, the civic part of that history became a scene of forced political change.
+          atS: 3.42
+          durationS: 5.56
+        - text: White supremacists seized Wilmington's government by force, removing its legally elected mayor and city council.
+          atS: 9.37
+          durationS: 6.43
+        - text: Officials were compelled to resign, and Alfred Moore Waddell assumed the mayor's office.
+          atS: 16.31
+          durationS: 4.93
+        - text: The outcome was not a normal transfer of authority after an election.
+          atS: 21.69
+          durationS: 3.54
+        - text: The state recognizes the events as a coup.
+          atS: 25.38
+          durationS: 2.6
+        - text: Black residents were killed and terrorized, and many fled the city; the full death toll remains uncertain.
+          atS: 28.58
+          durationS: 7.05
+        - text: Look at the municipal entrance from the sidewalk.
+          atS: 36.14
+          durationS: 2.62
+        - text: Government buildings can make authority appear orderly and permanent.
+          atS: 39.21
+          durationS: 4.28
+        - text: "This building asks a harder question: how was that authority obtained?"
+          atS: 44.09
+          durationS: 4.49
+        - text: The architecture remained.
+          atS: 49.03
+          durationS: 1.53
+        - text: The democratic rights of many Wilmington residents did not.
+          atS: 50.8
+          durationS: 3.72

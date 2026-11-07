@@ -9,7 +9,7 @@ at: { lat: 34.23580, lng: -77.94435 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 70
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -33,7 +33,7 @@ script: |
   The marker now interrupts that everyday view with a record of what happened. Before you
   move on, notice its location. Remembering the starting point helps reveal the planning
   behind the coup.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
@@ -79,3 +79,44 @@ sources:
     url: https://www.dncr.nc.gov/1898-wilmington-coup
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/wilmington-the-gathering-before-the-coup/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 54.1
+    audioBytes: 866890
+    transcript:
+      totalS: 54.1
+      lines:
+        - text: This marker identifies a place of preparation.
+          atS: 0
+          durationS: 3.01
+        - text: On November 10, 1898, about 500 white men assembled at the Wilmington Light Infantry armory before marching on the Daily Record.
+          atS: 3.39
+          durationS: 9.04
+        - text: "The violence that followed served a political aim: forcing out the Republicans and Populists then in power in Wilmington, and restricting Black voting."
+          atS: 12.76
+          durationS: 9.27
+        - text: It was not simply an unexpected crowd losing control.
+          atS: 22.46
+          durationS: 3.17
+        - text: Stand beside the marker and look along Market Street.
+          atS: 26.02
+          durationS: 2.81
+        - text: The route began among familiar civic buildings and ordinary city blocks.
+          atS: 29.15
+          durationS: 4.46
+        - text: That is part of the story's difficulty.
+          atS: 34.12
+          durationS: 2.13
+        - text: Political violence did not arrive in a landscape separate from everyday Wilmington; it moved through it.
+          atS: 36.63
+          durationS: 6.16
+        - text: The marker now interrupts that everyday view with a record of what happened.
+          atS: 43.4
+          durationS: 4.06
+        - text: Before you move on, notice its location.
+          atS: 47.58
+          durationS: 2.4
+        - text: Remembering the starting point helps reveal the planning behind the coup.
+          atS: 50.19
+          durationS: 3.91

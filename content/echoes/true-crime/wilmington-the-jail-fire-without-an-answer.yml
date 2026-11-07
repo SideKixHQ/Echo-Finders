@@ -10,7 +10,7 @@ at: { lat: 34.23540, lng: -77.94636 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 72
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -33,7 +33,7 @@ script: |
   merchant's residence rising on a downtown corner. Underneath lies the unresolved damage
   that made the transformation possible. This case ends with a new building, not an
   identified offender. The physical aftermath survives more clearly than the answer.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
@@ -71,3 +71,47 @@ sources:
     url: https://www.burgwinwrighthouse.org/history
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/wilmington-the-jail-fire-without-an-answer/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 53.8
+    audioBytes: 862292
+    transcript:
+      totalS: 53.8
+      lines:
+        - text: Before this was a handsome house, it was Wilmington's jail.
+          atS: 0
+          durationS: 3.54
+        - text: The museum's timeline records that its roof burned in 1768 under suspicious circumstances.
+          atS: 3.87
+          durationS: 6.4
+        - text: Suspicious is the crucial word.
+          atS: 10.59
+          durationS: 2.21
+        - text: The surviving account does not give us a proven culprit or a settled motive.
+          atS: 13.18
+          durationS: 4.3
+        - text: Calling it a solved arson would turn a historical uncertainty into an accusation.
+          atS: 17.65
+          durationS: 4.57
+        - text: The fire nevertheless changed what happened to the property.
+          atS: 22.46
+          durationS: 2.96
+        - text: John Burgwin subsequently acquired the site, and the house built in 1770 incorporated the old jail's walls.
+          atS: 25.64
+          durationS: 7.06
+        - text: Look at the building from the public street.
+          atS: 33.02
+          durationS: 2.17
+        - text: "It can seem like a clean beginning: a merchant's residence rising on a downtown corner."
+          atS: 35.57
+          durationS: 5.34
+        - text: Underneath lies the unresolved damage that made the transformation possible.
+          atS: 41.24
+          durationS: 4.69
+        - text: This case ends with a new building, not an identified offender.
+          atS: 46.31
+          durationS: 3.59
+        - text: The physical aftermath survives more clearly than the answer.
+          atS: 50.23
+          durationS: 3.6

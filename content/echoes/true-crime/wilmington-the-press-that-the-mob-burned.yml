@@ -9,7 +9,7 @@ at: { lat: 34.23038, lng: -77.94008 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 71
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -21,8 +21,8 @@ script: |
   An ordinary block can hold the site of an extraordinary assault. On November 10, 1898, a
   white supremacist mob came to the Daily Record, Wilmington's Black-owned newspaper.
 
-  The newspaper's office was in Free Love Hall, on Seventh Street between Nun and Church
-  streets. The mob invaded the building, and a fire broke out that consumed its top floor.
+  The newspaper's office was in Free Love Hall, between Nun and Church streets. The mob
+  invaded the building, and a fire broke out that consumed its top floor.
   Editor Alex Manly had already fled the city, expecting violence.
 
   This was part of the Wilmington coup, not an isolated dispute over a newspaper.
@@ -33,7 +33,7 @@ script: |
   today's property. Its absence does not make the event less specific. Here, printed words
   were answered with fire. The record we can recover belongs to the people whose right to
   publish was attacked.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
@@ -51,7 +51,7 @@ claims:
   - says: "the Daily Record, Wilmington's Black-owned newspaper."
     source: 1
     quote: "What had particularly incensed Waddell and others was the publication in August of an editorial in the Daily Record, a local black-owned newspaper."
-  - says: "The newspaper's office was in Free Love Hall, on Seventh Street between Nun and Church streets."
+  - says: "The newspaper's office was in Free Love Hall, between Nun and Church streets."
     source: 1
     quote: "Waddell took on the task of leading them to the Daily Record office in Free Love Hall four blocks south of Seventh Street between Nun and Church Streets."
   - says: "The mob invaded the building, and a fire broke out that consumed its top floor."
@@ -80,3 +80,47 @@ sources:
     url: https://www.dncr.nc.gov/1898-wilmington-coup
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/wilmington-the-press-that-the-mob-burned/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 54.1
+    audioBytes: 867308
+    transcript:
+      totalS: 54.1
+      lines:
+        - text: An ordinary block can hold the site of an extraordinary assault.
+          atS: 0
+          durationS: 4.03
+        - text: On November 10, 1898, a white supremacist mob came to the Daily Record, Wilmington's Black-owned newspaper.
+          atS: 4.84
+          durationS: 7.69
+        - text: The newspaper's office was in Free Love Hall, between Nun and Church streets.
+          atS: 13.34
+          durationS: 4.46
+        - text: The mob invaded the building, and a fire broke out that consumed its top floor.
+          atS: 17.97
+          durationS: 4.27
+        - text: Editor Alex Manly had already fled the city, expecting violence.
+          atS: 22.49
+          durationS: 4.09
+        - text: This was part of the Wilmington coup, not an isolated dispute over a newspaper.
+          atS: 26.82
+          durationS: 4.75
+        - text: Destroying the press attacked a community's ability to speak while armed violence spread through the city.
+          atS: 31.78
+          durationS: 5.75
+        - text: The original building is gone.
+          atS: 37.7
+          durationS: 1.65
+        - text: Listen from the public sidewalk rather than entering today's property.
+          atS: 39.59
+          durationS: 3.73
+        - text: Its absence does not make the event less specific.
+          atS: 43.47
+          durationS: 2.95
+        - text: Here, printed words were answered with fire.
+          atS: 46.66
+          durationS: 2.57
+        - text: The record we can recover belongs to the people whose right to publish was attacked.
+          atS: 49.4
+          durationS: 4.75
