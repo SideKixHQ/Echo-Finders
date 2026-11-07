@@ -1,0 +1,51 @@
+# Inspo, film and television (from James's document, second set) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Across Market Street from the Overture point for 420 West Market Street (Carolina Apartments): a residential building, so the pin sits on the opposite sidewalk.
+id: wilmington-the-deep-river-apartments
+title: "An Apartment Building Becomes a Fictional Address"
+summary: "The Carolina Apartments building played the Deep River Apartments in Blue Velvet; its fire escapes appear near the end of the film."
+place: "Carolina Apartments, Market Street at Fifth Avenue, Wilmington, North Carolina"
+at: { lat: 34.2358, lng: -77.9443 }
+triggerRadiusKm: 0.08
+category: inspo
+inspo:
+  kind: creation
+  evidence: building
+format: look-below
+durationS: 37
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, blue-velvet, downtown]
+teaser: "Blue Velvet's Deep River Apartments. Look from across the street."
+script: |
+  Look across at the brownstone on the corner, from this side of the street. People live
+  here, so this story is for the sidewalk.
+
+  In Blue Velvet, it was the Deep River Apartments, home of the singer Dorothy Vallens. The
+  outside of the building carries much of the film's mood, and its fire escapes appear in key
+  scenes near the end.
+
+  It is one of Wilmington's few brownstones, which is part of why it photographs like a city
+  somewhere else. Fans of the film still come here from all over the world.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In Blue Velvet, it was the Deep River Apartments, home of the singer Dorothy Vallens."
+    source: 1
+    quote: "The building's incarnation as the Deep River Apartments, the home of blue lady Dorothy Vallens (Isabella Rossellini), attracts fans of this cult classic from all over the world."
+  - says: "The outside of the building carries much of the film's mood, and its fire escapes appear in key scenes near the end."
+    source: 1
+    quote: "the building's fire escapes are featured in key scenes near the end of \"Blue Velvet,\""
+  - says: "It is one of Wilmington's few brownstones"
+    source: 1
+    quote: "One of Wilmington's few brownstones"
+  - says: "Fans of the film still come here from all over the world."
+    source: 1
+    quote: "attracts fans of this cult classic from all over the world."
+sources:
+  - title: "Top Wilmington & Beaches Film and TV Locations"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/wilmingtonnc/Wilmington_Film_and_TV_Location_Guide_1b6bc72d-2881-4fd5-b656-0344de2b7a24.pdf
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
