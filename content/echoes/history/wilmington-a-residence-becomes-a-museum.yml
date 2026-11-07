@@ -10,7 +10,7 @@ at: { lat: 34.23550, lng: -77.94645 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 69
+durationS: 62
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   not intend the building to answer: about trade, confinement, domestic labor, and whose
   lives are easiest to recover. Preservation makes those questions possible;
   interpretation keeps them open.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The Colonial Dames acquired the Burgwin-Wright House in 1937."
@@ -60,3 +60,41 @@ sources:
     url: https://www.burgwinwrighthouse.org/history
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-residence-becomes-a-museum/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 62
+    audioBytes: 992278
+    transcript:
+      totalS: 62
+      lines:
+        - text: Saving a building is just the beginning.
+          atS: 0
+          durationS: 2.59
+        - text: Someone must decide what people will learn inside it.
+          atS: 2.91
+          durationS: 3.3
+        - text: The Colonial Dames acquired the Burgwin-Wright House in 1937.
+          atS: 7.33
+          durationS: 4.45
+        - text: Its museum history describes decades of restoration and interpretation, including school visits and work on the grounds.
+          atS: 12.72
+          durationS: 7.81
+        - text: A residence built for private life gradually became a public encounter with colonial Wilmington.
+          atS: 20.86
+          durationS: 5.89
+        - text: Rooms, objects, jail remains, and gardens could be examined together instead of disappearing into separate collections.
+          atS: 27.07
+          durationS: 7.87
+        - text: Look at the entrance.
+          atS: 35.55
+          durationS: 1.28
+        - text: The change from home to museum altered who could cross that threshold and why.
+          atS: 37.34
+          durationS: 4.89
+        - text: "Visitors now arrive to ask questions that the original owners did not intend the building to answer: about trade, confinement, domestic labor, and whose lives are easiest to recover."
+          atS: 42.92
+          durationS: 12.52
+        - text: Preservation makes those questions possible; interpretation keeps them open.
+          atS: 56.39
+          durationS: 5.56

@@ -14,7 +14,7 @@ at: { lat: 34.23691, lng: -77.93956 }
 triggerRadiusKm: 0.04
 category: built
 format: look-below
-durationS: 18
+durationS: 20
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
 
   Stay on the pavement if someone is using the door. It is still a working lodge, not a
   monument.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Its cornerstone was laid in eighteen seventy-one."
@@ -52,3 +52,29 @@ sources:
     url: https://www.bellamymansion.org/museum-blog/war-and-politics-a-house-divided
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-second-oldest-in-the-state/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 20.1
+    audioBytes: 322707
+    transcript:
+      totalS: 20.1
+      lines:
+        - text: Look at the building.
+          atS: 0
+          durationS: 1.18
+        - text: Its cornerstone was laid in eighteen seventy-one.
+          atS: 1.3
+          durationS: 3.19
+        - text: In the whole state, exactly one Black Masonic lodge is older than it.
+          atS: 4.93
+          durationS: 4.68
+        - text: In Wilmington, none is.
+          atS: 10.22
+          durationS: 1.98
+        - text: Stay on the pavement if someone is using the door.
+          atS: 12.9
+          durationS: 2.81
+        - text: It is still a working lodge, not a monument.
+          atS: 16.09
+          durationS: 4.02

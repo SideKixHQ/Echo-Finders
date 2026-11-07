@@ -9,7 +9,7 @@ at: { lat: 34.24445, lng: -77.94706 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 52
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   is not merely the distance: every mile had to function as part of a connected system.
   Wilmington's story widened along those rails. The city was no longer only a place
   reached by the river; it became an endpoint in a much larger network.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In 1840, Wilmington gained a connection that reached far beyond the riverfront."
@@ -62,3 +62,41 @@ sources:
     url: https://www.wrrm.org/history.html
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-longest-line/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.2
+    audioBytes: 835543
+    transcript:
+      totalS: 52.2
+      lines:
+        - text: In 1840, Wilmington gained a connection that reached far beyond the riverfront.
+          atS: 0
+          durationS: 5.04
+        - text: The Wilmington and Weldon Railroad opened a continuous line of about 161 miles.
+          atS: 5.48
+          durationS: 6.46
+        - text: At completion, it was regarded as the longest continuous railroad line in the world.
+          atS: 12.32
+          durationS: 5.24
+        - text: That achievement changed how the port could connect with inland markets.
+          atS: 17.94
+          durationS: 4.27
+        - text: The river remained important, but goods and passengers had another long route into and out of the city.
+          atS: 22.65
+          durationS: 6.26
+        - text: Listen beside the historical marker.
+          atS: 29.61
+          durationS: 2.32
+        - text: Do not enter the rail corridor.
+          atS: 32.31
+          durationS: 2.16
+        - text: "The impressive part is not merely the distance: every mile had to function as part of a connected system."
+          atS: 35.58
+          durationS: 6.07
+        - text: Wilmington's story widened along those rails.
+          atS: 42.26
+          durationS: 2.79
+        - text: The city was no longer only a place reached by the river; it became an endpoint in a much larger network.
+          atS: 45.37
+          durationS: 6.78

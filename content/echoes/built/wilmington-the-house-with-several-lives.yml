@@ -9,7 +9,7 @@ at: { lat: 34.23903, lng: -77.94559 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 68
+durationS: 61
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
   from a passing glance. The landmark survives as a physical meeting point for those
   different chapters, even when their occupants and furnishings have long since moved
   on.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "This Grace Street house dates to about 1818."
@@ -48,3 +48,38 @@ sources:
     url: https://historicwilmington.org/places-hwf-saved/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-house-with-several-lives/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 60.6
+    audioBytes: 970544
+    transcript:
+      totalS: 60.6
+      lines:
+        - text: This Grace Street house dates to about 1818.
+          atS: 0
+          durationS: 3.63
+        - text: "The Historic Wilmington Foundation lists it as the Lazarus-Hill-Divine House, with three dates attached: about 1818, 1854, and 1885."
+          atS: 3.96
+          durationS: 11.08
+        - text: Those dates are more revealing than the idea of a single, perfectly preserved moment.
+          atS: 15.64
+          durationS: 5.38
+        - text: Each marks a chapter in the life of a building that stayed in use as the city changed around it.
+          atS: 22.13
+          durationS: 5.71
+        - text: Stay on the public sidewalk.
+          atS: 28.54
+          durationS: 1.89
+        - text: Its historical significance does not make a present interior automatically open to visitors.
+          atS: 31.13
+          durationS: 5.89
+        - text: Look at the facade and ask what architecture can tell you by itself.
+          atS: 37.62
+          durationS: 4.41
+        - text: A house's shape can suggest a single period, yet records point to later chapters you could not guess from a passing glance.
+          atS: 42.73
+          durationS: 8.18
+        - text: The landmark survives as a physical meeting point for those different chapters, even when their occupants and furnishings have long since moved on.
+          atS: 51.72
+          durationS: 8.88

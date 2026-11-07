@@ -9,7 +9,7 @@ at: { lat: 34.23688, lng: -77.94600 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 68
+durationS: 57
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   gives him a place in national memory, but the earlier years consisted of work and
   decisions whose consequences were still unknown. The marker brings both scales
   together: a person's local chapter and the document that would define his reputation.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "William Hooper arrived in Wilmington in 1764 and opened a law office."
@@ -56,3 +56,35 @@ sources:
     url: https://www.dncr.nc.gov/blog/2023/12/08/william-hooper-d-45
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-william-hoopers-wilmington-beginning/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 56.8
+    audioBytes: 909940
+    transcript:
+      totalS: 56.8
+      lines:
+        - text: William Hooper arrived in Wilmington in 1764 and opened a law office.
+          atS: 0
+          durationS: 5.28
+        - text: Twelve years later, he signed the Declaration of Independence.
+          atS: 5.72
+          durationS: 3.6
+        - text: "That national achievement can obscure the local beginning: a young lawyer building a career in a port town."
+          atS: 9.71
+          durationS: 6.48
+        - text: "Wilmington supplied professional relationships and a political setting: he represented New Hanover County in the Assembly before the Continental Congress became his larger stage."
+          atS: 16.7
+          durationS: 11
+        - text: You are at a marker honoring that connection, not standing inside a verified surviving office.
+          atS: 28.39
+          durationS: 5.92
+        - text: Look along Third Street and think about how a public life begins.
+          atS: 34.91
+          durationS: 4.01
+        - text: The later signature gives him a place in national memory, but the earlier years consisted of work and decisions whose consequences were still unknown.
+          atS: 39.61
+          durationS: 9.32
+        - text: "The marker brings both scales together: a person's local chapter and the document that would define his reputation."
+          atS: 49.75
+          durationS: 7.05

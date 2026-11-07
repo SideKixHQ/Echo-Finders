@@ -10,7 +10,7 @@ at: { lat: 34.23312, lng: -77.94720 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 67
+durationS: 53
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   If the exhibit is open, pause before the tribute. Both clubs served people in uniform,
   but they were kept apart by race. Remembering the welcome requires remembering who was
   directed to a different door.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Wilmington's USO facilities were segregated."
@@ -58,3 +58,41 @@ sources:
     url: https://wilmingtoncommunityarts.org/classes-and-events/july-4th-open-house/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-other-wartime-uso/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.9
+    audioBytes: 847246
+    transcript:
+      totalS: 52.9
+      lines:
+        - text: The wartime welcome offered here had a boundary.
+          atS: 0
+          durationS: 2.93
+        - text: Wilmington's USO facilities were segregated.
+          atS: 3.44
+          durationS: 3.24
+        - text: The museum's history records a separate club on Nixon Street for African American service members.
+          atS: 7.37
+          durationS: 5.78
+        - text: Today's museum includes a tribute to the Ninth and Nixon USO, preserving a story that this building alone cannot fully represent.
+          atS: 13.85
+          durationS: 8.54
+        - text: You are at the interpretive site, not at that other club's original address.
+          atS: 22.84
+          durationS: 4.77
+        - text: The distinction matters.
+          atS: 28.05
+          durationS: 1.6
+        - text: A visitor who hears about this downtown center alone could mistake a single part of the wartime experience for everyone's experience.
+          atS: 29.98
+          durationS: 8.13
+        - text: If the exhibit is open, pause before the tribute.
+          atS: 38.55
+          durationS: 3.35
+        - text: Both clubs served people in uniform, but they were kept apart by race.
+          atS: 42.6
+          durationS: 4.83
+        - text: Remembering the welcome requires remembering who was directed to a different door.
+          atS: 48.12
+          durationS: 4.77

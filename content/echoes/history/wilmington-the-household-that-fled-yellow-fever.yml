@@ -10,7 +10,7 @@ at: { lat: 34.23599, lng: -77.94279 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 71
+durationS: 59
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
   was disrupted almost immediately. The story turns on that mismatch: a carefully planned
   new home meeting a crisis its plans could not contain. Its owners departed; the larger
   city still had to endure the outbreak.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The Bellamy house went up between 1859 and 1861, and soon afterward Wilmington's circumstances changed."
@@ -48,3 +48,38 @@ sources:
     url: https://www.bellamymansion.org/museum-blog/war-and-politics-a-house-divided
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-household-that-fled-yellow-fever/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 59.3
+    audioBytes: 949228
+    transcript:
+      totalS: 59.3
+      lines:
+        - text: The Bellamy house went up between 1859 and 1861, and soon afterward Wilmington's circumstances changed.
+          atS: 0
+          durationS: 8.54
+        - text: During the yellow fever epidemic of 1862, the family left the city and took refuge at Floral College.
+          atS: 9.24
+          durationS: 7.35
+        - text: A residence meant to secure status and comfort could not protect its occupants from the city's public-health disaster.
+          atS: 17.4
+          durationS: 7.13
+        - text: This house is the family's associated site, not the place to which they escaped.
+          atS: 25.14
+          durationS: 5.44
+        - text: The epidemic extended far beyond a single household, and leaving was not an option available equally to everyone.
+          atS: 30.91
+          durationS: 7.19
+        - text: Look at the imposing exterior.
+          atS: 38.42
+          durationS: 1.99
+        - text: It can suggest permanence, but its early domestic life was disrupted almost immediately.
+          atS: 40.58
+          durationS: 6.11
+        - text: "The story turns on that mismatch: a carefully planned new home meeting a crisis its plans could not contain."
+          atS: 47.13
+          durationS: 7.09
+        - text: Its owners departed; the larger city still had to endure the outbreak.
+          atS: 54.73
+          durationS: 4.53

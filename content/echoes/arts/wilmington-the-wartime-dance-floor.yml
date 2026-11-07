@@ -10,7 +10,7 @@ at: { lat: 34.23320, lng: -77.94718 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 68
+durationS: 56
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   even when the larger circumstances remain difficult. Here, organized entertainment
   belonged to a wider effort of hospitality. The dance floor was one way Wilmington
   offered an evening's company.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The USO's wartime program included big-band dances, plays, recitals, and radio broadcasts."
@@ -46,3 +46,41 @@ sources:
     url: https://wilmingtoncommunityarts.org/museum/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-wartime-dance-floor/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55.5
+    audioBytes: 889878
+    transcript:
+      totalS: 55.5
+      lines:
+        - text: The USO's wartime program included big-band dances, plays, recitals, and radio broadcasts.
+          atS: 0
+          durationS: 7.81
+        - text: Entertainment was part of what the building offered people far from home.
+          atS: 8.42
+          durationS: 4.01
+        - text: That did not make the war disappear.
+          atS: 13.23
+          durationS: 2.18
+        - text: "It gave service members a temporary change of rhythm: a chance to listen, move, and join a crowd for reasons other than military duty."
+          atS: 16.02
+          durationS: 8.63
+        - text: Stand in the open lobby if permitted, or listen from the sidewalk.
+          atS: 25.34
+          durationS: 3.85
+        - text: The building helps you locate the idea without pretending a particular dance is happening around you.
+          atS: 29.52
+          durationS: 5.54
+        - text: Art can do practical work.
+          atS: 35.57
+          durationS: 1.87
+        - text: A song or performance can help a stranger feel less isolated, even when the larger circumstances remain difficult.
+          atS: 37.95
+          durationS: 7.55
+        - text: Here, organized entertainment belonged to a wider effort of hospitality.
+          atS: 46.1
+          durationS: 5.21
+        - text: The dance floor was one way Wilmington offered an evening's company.
+          atS: 51.64
+          durationS: 3.9

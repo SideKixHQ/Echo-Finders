@@ -10,7 +10,7 @@ at: { lat: 34.23542, lng: -77.94561 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
   purpose, then restore it to its regular life. The hospital chapter was temporary, but it
   belongs to the building's history. Returning to worship did not mean that the preceding
   months had never happened.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In February 1865, Union forces entered Wilmington."
@@ -51,3 +51,41 @@ sources:
     url: https://www.stjamesp.org/our-history/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-church-used-as-a-hospital/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53.9
+    audioBytes: 863546
+    transcript:
+      totalS: 53.9
+      lines:
+        - text: In February 1865, Union forces entered Wilmington.
+          atS: 0
+          durationS: 4.56
+        - text: St.
+          atS: 5
+          durationS: 0.26
+        - text: James's church building was seized and used as a hospital.
+          atS: 5.29
+          durationS: 3.39
+        - text: The congregation's history records that the building was returned that summer, repaired, and used for services again in December.
+          atS: 9.07
+          durationS: 7.55
+        - text: A space designed for worship had temporarily become a place of wartime care.
+          atS: 17.57
+          durationS: 4.73
+        - text: The change makes you see the church differently.
+          atS: 23.41
+          durationS: 2.57
+        - text: Its doors and interior were practical resources in a city undergoing military occupation, not just symbols on a familiar street.
+          atS: 26.78
+          durationS: 8.2
+        - text: From the sidewalk, consider the work required to make a building serve an urgent purpose, then restore it to its regular life.
+          atS: 35.79
+          durationS: 8.36
+        - text: The hospital chapter was temporary, but it belongs to the building's history.
+          atS: 44.85
+          durationS: 4.37
+        - text: Returning to worship did not mean that the preceding months had never happened.
+          atS: 49.73
+          durationS: 4.19

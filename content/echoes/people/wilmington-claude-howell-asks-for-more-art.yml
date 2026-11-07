@@ -10,7 +10,7 @@ at: { lat: 34.23264, lng: -77.94756 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 68
+durationS: 58
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
   art with building an audience for it. A city's cultural life depends on both. The
   gallery gave that argument rooms and a public address, allowing an artistic ambition to
   become something visitors could actually enter.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Claude Howell helped advocate for a stronger visual-arts life in Wilmington."
@@ -57,3 +57,44 @@ sources:
     url: https://cameronartmuseum.org/history/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-claude-howell-asks-for-more-art/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 58.4
+    audioBytes: 935853
+    transcript:
+      totalS: 58.4
+      lines:
+        - text: Claude Howell helped advocate for a stronger visual-arts life in Wilmington.
+          atS: 0
+          durationS: 5.06
+        - text: In 1962, he wrote to the local paper, and he was part of the community movement that founded St.
+          atS: 5.67
+          durationS: 6.64
+        - text: John's Art Gallery here.
+          atS: 12.34
+          durationS: 1.63
+        - text: The Cameron Art Museum's history records his call for the community to encounter important art from the past and present.
+          atS: 14.78
+          durationS: 7.62
+        - text: He wanted local audiences to have wider opportunities to look and learn.
+          atS: 23.09
+          durationS: 4.92
+        - text: We do not need to reproduce his letter to understand the action behind it.
+          atS: 28.71
+          durationS: 4.15
+        - text: Advocacy helped turn a hope into an institution.
+          atS: 33.67
+          durationS: 3.22
+        - text: Look at the earlier museum complex from Orange Street.
+          atS: 37.49
+          durationS: 3.27
+        - text: Howell's role connected making art with building an audience for it.
+          atS: 41.37
+          durationS: 4.1
+        - text: A city's cultural life depends on both.
+          atS: 46.16
+          durationS: 2.76
+        - text: The gallery gave that argument rooms and a public address, allowing an artistic ambition to become something visitors could actually enter.
+          atS: 49.62
+          durationS: 8.8

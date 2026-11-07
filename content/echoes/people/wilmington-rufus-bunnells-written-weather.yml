@@ -10,7 +10,7 @@ at: { lat: 34.23587, lng: -77.94281 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 67
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
   unfinished days. A diary preserves the scale of those days. Bunnell's records let the
   building's design history meet the ordinary conditions in which an architect actually
   lived and worked.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Rufus Bunnell assisted with the Bellamy design and kept a diary."
@@ -59,3 +59,38 @@ sources:
     url: https://www.bellamymansion.org/the-place.html
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-rufus-bunnells-written-weather/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.2
+    audioBytes: 868144
+    transcript:
+      totalS: 54.2
+      lines:
+        - text: Rufus Bunnell assisted with the Bellamy design and kept a diary.
+          atS: 0
+          durationS: 4.13
+        - text: The museum's published excerpts include an 1859 Independence Day described through heat and a thunderstorm.
+          atS: 4.83
+          durationS: 8.13
+        - text: Such an entry brings a working person into a history often told through architectural labels.
+          atS: 13.65
+          durationS: 5.9
+        - text: He experienced Wilmington as weather, time, and daily activity while the house was taking shape.
+          atS: 19.93
+          durationS: 6.35
+        - text: This is the construction project associated with his work.
+          atS: 26.98
+          durationS: 3.45
+        - text: We do not need to invent his private thoughts or place every diary line on this sidewalk.
+          atS: 30.94
+          durationS: 5.04
+        - text: Look at the mansion and remember that its finished appearance came after many unfinished days.
+          atS: 36.49
+          durationS: 5.58
+        - text: A diary preserves the scale of those days.
+          atS: 42.68
+          durationS: 2.96
+        - text: Bunnell's records let the building's design history meet the ordinary conditions in which an architect actually lived and worked.
+          atS: 46.34
+          durationS: 7.86

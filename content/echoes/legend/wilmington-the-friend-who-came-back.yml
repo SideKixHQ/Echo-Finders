@@ -9,12 +9,11 @@ at: { lat: 34.23546, lng: -77.94565 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 71
+durationS: 53
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A published legend. The script says out loud that the haunting is reported, not proven;
-  no supernatural claim is established.
+  A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -34,7 +33,7 @@ script: |
   From this public sidewalk, the churchyard gives the tale its setting. You do not need to
   enter, search for a particular grave, or treat a sound as evidence. Listen to the city
   continuing around you. The legend asks you to imagine a single voice trying to reach it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Wilmington storytellers attach a particularly unsettling legend to Samuel Jocelyn Junior"
@@ -60,3 +59,41 @@ sources:
     url: https://www.stjamesp.org/our-history/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/wilmington-the-friend-who-came-back/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 52.8
+    audioBytes: 845156
+    transcript:
+      totalS: 52.8
+      lines:
+        - text: Look toward the churchyard.
+          atS: 0
+          durationS: 1.49
+        - text: "Wilmington storytellers attach a particularly unsettling legend to Samuel Jocelyn Junior: a dead man supposedly appeared to a friend and asked to be taken out of his grave."
+          atS: 1.66
+          durationS: 10.24
+        - text: In the tale, the friend did not believe it and waited three days before visiting the grave.
+          atS: 12.34
+          durationS: 4.99
+        - text: The ending suggested that Jocelyn had been buried alive.
+          atS: 18.03
+          durationS: 3.15
+        - text: That is the ghost story, not a verified account of a premature burial.
+          atS: 21.69
+          durationS: 4.66
+        - text: "Its power comes from an ordinary human fear: needing help when nobody believes you can still ask for it."
+          atS: 26.95
+          durationS: 6.93
+        - text: From this public sidewalk, the churchyard gives the tale its setting.
+          atS: 35.18
+          durationS: 4.07
+        - text: You do not need to enter, search for a particular grave, or treat a sound as evidence.
+          atS: 39.95
+          durationS: 5.34
+        - text: Listen to the city continuing around you.
+          atS: 45.99
+          durationS: 2.37
+        - text: The legend asks you to imagine a single voice trying to reach it.
+          atS: 48.8
+          durationS: 3.96

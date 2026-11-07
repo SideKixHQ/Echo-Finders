@@ -10,7 +10,7 @@ at: { lat: 34.23547, lng: -77.94572 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   identify every brick's past by sight. The documented reuse is enough to change how you
   read the surface. What seems like a single architectural moment can contain material
   from an earlier building. Wilmington rebuilt here without starting entirely from nothing.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "St. James's history says bricks from the first church were reused after its demolition in 1839."
@@ -50,3 +50,44 @@ sources:
     url: https://www.stjamesp.org/our-history/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-bricks-that-crossed-two-churches/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55.3
+    audioBytes: 885280
+    transcript:
+      totalS: 55.3
+      lines:
+        - text: The present church replaced an earlier building, but some of the earlier church came with it.
+          atS: 0
+          durationS: 5.27
+        - text: St.
+          atS: 6.08
+          durationS: 0.26
+        - text: James's history says bricks from the first church were reused after its demolition in 1839.
+          atS: 6.36
+          durationS: 6.63
+        - text: The new church was consecrated in 1840.
+          atS: 13.69
+          durationS: 3.05
+        - text: It also records that the original building had used bricks brought to the port as ship ballast.
+          atS: 17.34
+          durationS: 5.36
+        - text: "Those details turn a wall into a sequence of journeys: material arriving by water, serving a building, then serving another."
+          atS: 23.31
+          durationS: 8.54
+        - text: Look from the sidewalk rather than touching or inspecting the masonry.
+          atS: 32.55
+          durationS: 4.07
+        - text: You cannot identify every brick's past by sight.
+          atS: 37.07
+          durationS: 3.44
+        - text: The documented reuse is enough to change how you read the surface.
+          atS: 40.95
+          durationS: 3.97
+        - text: What seems like a single architectural moment can contain material from an earlier building.
+          atS: 45.36
+          durationS: 5.6
+        - text: Wilmington rebuilt here without starting entirely from nothing.
+          atS: 51.28
+          durationS: 3.98

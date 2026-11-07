@@ -9,7 +9,7 @@ at: { lat: 34.23697, lng: -77.93956 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 68
+durationS: 66
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   solely to prominent individual owners. This landmark preserves evidence of people
   organizing for each other. Its walls held a community, and its continued presence gives
   that community's history a downtown address.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Giblem Lodge's cornerstone was laid in 1871, and it survives as a place of Black community organization in Wilmington."
@@ -61,3 +61,44 @@ sources:
     url: https://files.nc.gov/ncdcr/nr/NH2548.pdf
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-giblem-lodge-holds-a-community/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66
+    audioBytes: 1057061
+    transcript:
+      totalS: 66
+      lines:
+        - text: Giblem Lodge's cornerstone was laid in 1871, and it survives as a place of Black community organization in Wilmington.
+          atS: 0
+          durationS: 8.17
+        - text: The Historic Wilmington Foundation describes it as a community hub and meeting hall.
+          atS: 8.68
+          durationS: 5.24
+        - text: Wilmington's City Council has given it local landmark status.
+          atS: 14.36
+          durationS: 3.91
+        - text: A lodge building can be easy to overlook beside more famous mansions.
+          atS: 18.52
+          durationS: 4.45
+        - text: Yet institutions like this helped people assemble, maintain networks, and exercise independence.
+          atS: 23.21
+          durationS: 7.24
+        - text: Stay on the public sidewalk.
+          atS: 31.41
+          durationS: 1.85
+        - text: You can recognize that history without entering an active organization's space.
+          atS: 33.53
+          durationS: 4.9
+        - text: The important architectural fact is survival in place.
+          atS: 38.75
+          durationS: 3.86
+        - text: A building associated with collective activity remains here to counter the idea that Wilmington's past belonged solely to prominent individual owners.
+          atS: 42.93
+          durationS: 10.04
+        - text: This landmark preserves evidence of people organizing for each other.
+          atS: 53.93
+          durationS: 4.2
+        - text: Its walls held a community, and its continued presence gives that community's history a downtown address.
+          atS: 58.83
+          durationS: 7.16

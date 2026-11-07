@@ -10,7 +10,7 @@ at: { lat: 34.23314, lng: -77.94715 }
 triggerRadiusKm: 0.04
 category: kids
 format: short
-durationS: 68
+durationS: 48
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
   leave its old setting and still help us remember it. Here, something associated with
   the water has come indoors, where you can stop, look closely, and ask how it reached
   this new home.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The museum lists a Liberty Bell salvaged from the Brunswick River Reserve Fleet among its displays."
@@ -45,3 +45,38 @@ sources:
     url: https://wilmingtoncommunityarts.org/classes-and-events/july-4th-open-house/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/wilmington-this-liberty-bell-came-from-the-river-fleet/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 48.2
+    audioBytes: 771595
+    transcript:
+      totalS: 48.2
+      lines:
+        - text: The museum lists a Liberty Bell salvaged from the Brunswick River Reserve Fleet among its displays.
+          atS: 0
+          durationS: 6.44
+        - text: It is not the famous cracked bell from history books.
+          atS: 6.88
+          durationS: 2.91
+        - text: The similar name belongs to a different object with a different story.
+          atS: 10.12
+          durationS: 4.27
+        - text: Stand where you can see the display with your grown-up.
+          atS: 15
+          durationS: 2.93
+        - text: Read the label before making guesses.
+          atS: 18.25
+          durationS: 2.22
+        - text: "That is a great trick for exploring a museum: let the object surprise you, then use the information nearby to learn what it really is."
+          atS: 21.07
+          durationS: 8.06
+        - text: This bell connects the museum with ships once gathered in the river fleet.
+          atS: 29.73
+          durationS: 4.16
+        - text: An object can leave its old setting and still help us remember it.
+          atS: 34.33
+          durationS: 3.87
+        - text: Here, something associated with the water has come indoors, where you can stop, look closely, and ask how it reached this new home.
+          atS: 38.64
+          durationS: 9.52

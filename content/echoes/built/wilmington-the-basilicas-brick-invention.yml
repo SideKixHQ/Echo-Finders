@@ -9,7 +9,7 @@ at: { lat: 34.23188, lng: -77.94360 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 66
+durationS: 58
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   A large interior space can feel almost effortless to a visitor; the method behind it
   required knowledge and precision. The landmark makes that marriage of design, material,
   and labor part of downtown's visible history.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Saint Mary's church is known for elaborate brickwork by Rafael Guastavino and his son."
@@ -47,3 +47,41 @@ sources:
     url: https://files.nc.gov/ncdcr/nr/NH2548.pdf
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-basilicas-brick-invention/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 57.6
+    audioBytes: 923314
+    transcript:
+      totalS: 57.6
+      lines:
+        - text: Saint Mary's church is known for elaborate brickwork by Rafael Guastavino and his son.
+          atS: 0
+          durationS: 5.54
+        - text: The National Register dates the church to 1912, when it gave Wilmington a distinctive new religious building.
+          atS: 6.35
+          durationS: 7.1
+        - text: The construction method is central to its identity.
+          atS: 14.15
+          durationS: 3.13
+        - text: Careful geometry and skilled masonry could create substantial forms.
+          atS: 17.98
+          durationS: 4.86
+        - text: This remains a place of worship.
+          atS: 23.29
+          durationS: 1.83
+        - text: Begin on the public sidewalk and go inside when visitor access is permitted.
+          atS: 25.63
+          durationS: 5.02
+        - text: Look at the building as both a community's religious home and the result of specialist craft.
+          atS: 31.25
+          durationS: 5.53
+        - text: Its architectural impact depends on many smaller pieces working together.
+          atS: 37.48
+          durationS: 4.54
+        - text: A large interior space can feel almost effortless to a visitor; the method behind it required knowledge and precision.
+          atS: 42.46
+          durationS: 7.99
+        - text: The landmark makes that marriage of design, material, and labor part of downtown's visible history.
+          atS: 51.14
+          durationS: 6.49

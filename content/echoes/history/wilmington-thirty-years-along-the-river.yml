@@ -9,7 +9,7 @@ at: { lat: 34.23545, lng: -77.94992 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 53
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   but persistence over time. Wilmington gradually made a continuous place to walk beside
   the water that had shaped its economy long before visitors came here simply to enjoy the
   view.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The Riverwalk can feel like something the city always had."
@@ -57,3 +57,38 @@ sources:
     url: https://www.wilmingtonandbeaches.com/articles/post/wilmington-riverwalk-voted-as-2-best-riverwalk-in-usa-today-10best-readers-choice-award-contest/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-thirty-years-along-the-river/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.9
+    audioBytes: 847246
+    transcript:
+      totalS: 52.9
+      lines:
+        - text: The Riverwalk can feel like something the city always had.
+          atS: 0
+          durationS: 3.38
+        - text: The visitors bureau says it was developed in the early 1980s.
+          atS: 4.08
+          durationS: 3.83
+        - text: Today it stretches nearly two miles, from Nun Street to the Isabel Holmes Bridge, linking a long stretch of downtown waterfront.
+          atS: 8.35
+          durationS: 8.49
+        - text: That project changed how people could encounter the river.
+          atS: 17.65
+          durationS: 3.31
+        - text: A sequence of working and commercial edges became a connected public experience.
+          atS: 21.65
+          durationS: 5.11
+        - text: Pause without blocking the path.
+          atS: 27.36
+          durationS: 2.02
+        - text: The people moving past you are using the result of many separate planning and building decisions.
+          atS: 29.99
+          durationS: 5.76
+        - text: The story is not a single spectacular opening but persistence over time.
+          atS: 36.56
+          durationS: 5.16
+        - text: Wilmington gradually made a continuous place to walk beside the water that had shaped its economy long before visitors came here simply to enjoy the view.
+          atS: 42.83
+          durationS: 10.07

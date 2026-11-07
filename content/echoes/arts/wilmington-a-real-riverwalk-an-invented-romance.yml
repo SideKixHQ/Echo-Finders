@@ -9,7 +9,7 @@ at: { lat: 34.23590, lng: -77.94998 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 66
+durationS: 50
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   to play a role. Once the episode reaches an audience, the setting can hold a double
   meaning: an ordinary local walkway and a remembered moment in a television story. You
   are standing in the overlap.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Wilmington's tourism authority identifies this riverfront area as the Dawson's Creek location of Andie and Pacey's first kiss."
@@ -42,3 +42,35 @@ sources:
     url: https://www.wilmingtonandbeaches.com/things-to-do/tours-and-cruises/famous-film-and-tv-sites/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-real-riverwalk-an-invented-romance/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 50.4
+    audioBytes: 807122
+    transcript:
+      totalS: 50.4
+      lines:
+        - text: Wilmington's tourism authority identifies this riverfront area as the Dawson's Creek location of Andie and Pacey's first kiss.
+          atS: 0
+          durationS: 8.85
+        - text: The romance was fiction.
+          atS: 9.96
+          durationS: 1.5
+        - text: The place where the scene was filmed is real, and people can return to it after the cameras and actors have gone.
+          atS: 12.06
+          durationS: 6.36
+        - text: "Stand on the public Riverwalk and look at what a production gained here: water, space, and a city backdrop that could become part of another town's screen identity."
+          atS: 18.94
+          durationS: 10.22
+        - text: That transformation is part of the city's arts history.
+          atS: 29.66
+          durationS: 3.48
+        - text: Filmmaking asks a real place to play a role.
+          atS: 33.84
+          durationS: 2.95
+        - text: "Once the episode reaches an audience, the setting can hold a double meaning: an ordinary local walkway and a remembered moment in a television story."
+          atS: 37.23
+          durationS: 9.68
+        - text: You are standing in the overlap.
+          atS: 47.61
+          durationS: 2.77

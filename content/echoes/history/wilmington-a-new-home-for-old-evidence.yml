@@ -9,7 +9,7 @@ at: { lat: 34.23882, lng: -77.94690 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 53
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   remain valuable. It needs care, context, and people willing to examine it. The museum's
   move brings a long-running collection into a new setting where the city can keep asking
   how its past connects with the present.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Cape Fear Museum began in 1898."
@@ -55,3 +55,41 @@ sources:
     url: https://capefearmuseum.com/m/newsflash/Home/Detail/1159
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-new-home-for-old-evidence/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.9
+    audioBytes: 847246
+    transcript:
+      totalS: 52.9
+      lines:
+        - text: Cape Fear Museum began in 1898.
+          atS: 0
+          durationS: 3
+        - text: In August 2026, it opened a new downtown home on Grace Street.
+          atS: 3.32
+          durationS: 4.98
+        - text: The county's opening announcement describes more than four hundred artifacts alongside history and science galleries.
+          atS: 8.74
+          durationS: 7.15
+        - text: The move placed the museum and a new main library on the same downtown block.
+          atS: 16.59
+          durationS: 4.69
+        - text: You are at the new building, not one of the museum's earlier homes.
+          atS: 21.66
+          durationS: 4.76
+        - text: Its age belongs to the institution; the structure before you is a recent chapter.
+          atS: 26.86
+          durationS: 5.42
+        - text: That contrast is the point of the stop.
+          atS: 32.8
+          durationS: 2.48
+        - text: Old evidence does not need an old building to remain valuable.
+          atS: 35.89
+          durationS: 3.74
+        - text: It needs care, context, and people willing to examine it.
+          atS: 40.01
+          durationS: 3.73
+        - text: The museum's move brings a long-running collection into a new setting where the city can keep asking how its past connects with the present.
+          atS: 44.43
+          durationS: 8.46

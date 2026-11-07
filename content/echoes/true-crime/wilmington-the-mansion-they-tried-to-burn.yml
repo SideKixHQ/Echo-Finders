@@ -39,8 +39,8 @@ factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: unsolved
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-07"
+  reviewedAt: "2026-11-07"
   contentWarning: "This echo describes an arson attack on the house. Nobody is described as hurt."
 claims:
   - says: "Preservation turned a damaged, empty mansion into a place where visitors can examine the work of enslaved and free Black craftspeople, family history, and the restoration itself."

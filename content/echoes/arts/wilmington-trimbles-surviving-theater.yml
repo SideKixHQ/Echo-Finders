@@ -10,7 +10,7 @@ at: { lat: 34.23769, lng: -77.94564 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 71
+durationS: 60
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   The surviving structure lets today's visitors encounter a design that written
   descriptions alone cannot replace. The architect's name might be unfamiliar, but the
   building still performs part of his intention: making an arrival feel significant.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Thalian Hall is the only surviving theater designed by John Montague Trimble, according to its institutional history."
@@ -49,3 +49,38 @@ sources:
     url: https://www.thalianhall.org/about
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-trimbles-surviving-theater/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 60.4
+    audioBytes: 967618
+    transcript:
+      totalS: 60.4
+      lines:
+        - text: Thalian Hall is the only surviving theater designed by John Montague Trimble, according to its institutional history.
+          atS: 0
+          durationS: 8.13
+        - text: That makes this building more than a local survivor.
+          atS: 8.51
+          durationS: 3.41
+        - text: It carries physical evidence of a theater architect's work after his other theaters have disappeared.
+          atS: 12.43
+          durationS: 6.29
+        - text: The original project joined performance with municipal functions.
+          atS: 19.17
+          durationS: 3.81
+        - text: Art and government shared a substantial downtown building rather than occupying separate civic worlds.
+          atS: 23.67
+          durationS: 6.36
+        - text: From outside, notice how confidently the building addresses the street.
+          atS: 30.64
+          durationS: 4.01
+        - text: "A theater begins its work before an audience reaches a seat: the approach, entrance, and sense of occasion all matter."
+          atS: 34.85
+          durationS: 8.37
+        - text: The surviving structure lets today's visitors encounter a design that written descriptions alone cannot replace.
+          atS: 43.61
+          durationS: 7.07
+        - text: "The architect's name might be unfamiliar, but the building still performs part of his intention: making an arrival feel significant."
+          atS: 51.28
+          durationS: 9.14

@@ -9,12 +9,11 @@ at: { lat: 34.23420, lng: -77.94950 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 61
+durationS: 47
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A published legend. The script says out loud that the haunting is reported, not proven;
-  no supernatural claim is established.
+  A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -34,7 +33,7 @@ script: |
   Stand by the public street and let the river supply the atmosphere. A working port
   brings strangers together, then sends them away. Meg's story reverses that pattern:
   one waterfront character, storytellers suggest, never quite left.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "This waterfront once belonged as much to sailors and taverns as to strolling visitors."
@@ -55,3 +54,35 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/wilmington-meg-at-the-old-waterfront/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 46.6
+    audioBytes: 746936
+    transcript:
+      totalS: 46.6
+      lines:
+        - text: This waterfront once belonged as much to sailors and taverns as to strolling visitors.
+          atS: 0
+          durationS: 4.95
+        - text: One of its surviving legends concerns a formidable woman known as Gallus Meg.
+          atS: 5.64
+          durationS: 4.41
+        - text: Local ghost-tour tradition associates her with the old Blue Post tavern and says her presence lingered after death.
+          atS: 10.49
+          durationS: 6.75
+        - text: Meg's reputation belongs to folklore.
+          atS: 17.94
+          durationS: 2.46
+        - text: The reported haunting is not proof that a spirit occupies a building, and the more lurid versions should not be mistaken for a documented criminal biography.
+          atS: 21.09
+          durationS: 9.17
+        - text: Stand by the public street and let the river supply the atmosphere.
+          atS: 30.71
+          durationS: 3.48
+        - text: A working port brings strangers together, then sends them away.
+          atS: 34.8
+          durationS: 3.88
+        - text: "Meg's story reverses that pattern: one waterfront character, storytellers suggest, never quite left."
+          atS: 39.18
+          durationS: 7.44

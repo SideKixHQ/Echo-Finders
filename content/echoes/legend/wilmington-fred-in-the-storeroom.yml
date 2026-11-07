@@ -9,12 +9,11 @@ at: { lat: 34.23979, lng: -77.94958 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 74
+durationS: 56
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A published legend. The script says out loud that the haunting is reported, not proven;
-  no supernatural claim is established.
+  A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -35,7 +34,7 @@ script: |
   workplace and behaves like someone who belongs there. The ending alone breaks the
   pattern. From the public entrance, imagine the moment between recognizing a stranger and
   realizing there is nobody left to recognize.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "A published account of Wilmington ghost stories tells of Fred, a tall, dark-haired apparition associated with Paddy's Hollow."
@@ -58,3 +57,41 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/wilmington-fred-in-the-storeroom/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 56.1
+    audioBytes: 899491
+    transcript:
+      totalS: 56.1
+      lines:
+        - text: "This old shopping complex has the right ingredients for a ghost story: connected buildings, stairs, and passages where somebody can disappear from view."
+          atS: 0
+          durationS: 8.39
+        - text: A published account of Wilmington ghost stories tells of Fred, a tall, dark-haired apparition associated with Paddy's Hollow.
+          atS: 9.09
+          durationS: 7.19
+        - text: In that version, a manager encountered him in a storage room.
+          atS: 16.88
+          durationS: 3.45
+        - text: He seemed ready to offer help, then vanished.
+          atS: 20.77
+          durationS: 2.94
+        - text: The encounter is a reported legend, not a verified event.
+          atS: 24.31
+          durationS: 3.52
+        - text: We cannot establish that the manager saw a ghost, or identify an actual dead person behind the name.
+          atS: 28.53
+          durationS: 6.35
+        - text: What makes the story memorable is its almost ordinary beginning.
+          atS: 35.83
+          durationS: 4.09
+        - text: A person appears in a workplace and behaves like someone who belongs there.
+          atS: 40.36
+          durationS: 4.63
+        - text: The ending alone breaks the pattern.
+          atS: 45.37
+          durationS: 2.23
+        - text: From the public entrance, imagine the moment between recognizing a stranger and realizing there is nobody left to recognize.
+          atS: 48.55
+          durationS: 7.59

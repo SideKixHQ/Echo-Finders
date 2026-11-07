@@ -10,7 +10,7 @@ at: { lat: 34.24163, lng: -77.95062 }
 triggerRadiusKm: 0.04
 category: kids
 format: short
-durationS: 68
+durationS: 49
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
   all needed the right place in the plan. The caboose's short trip became a real adventure
   in cooperation, helping the museum keep a big piece of railroad history for visitors
   like you.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In 2007, the museum had to move its red caboose to a new home."
@@ -65,3 +65,41 @@ sources:
     url: https://www.wrrm.org/outdoor-rolling-stock.html
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/wilmington-the-cabooses-very-short-journey/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 48.5
+    audioBytes: 777447
+    transcript:
+      totalS: 48.5
+      lines:
+        - text: In 2007, the museum had to move its red caboose to a new home.
+          atS: 0
+          durationS: 4.46
+        - text: The trip was short, just across a fifty foot parking lot.
+          atS: 4.84
+          durationS: 3.6
+        - text: But there was no track at the new home, so the caboose could not simply roll there.
+          atS: 8.77
+          durationS: 4.57
+        - text: Workers lifted its body onto one truck and carried its wheels on another.
+          atS: 13.66
+          durationS: 4.35
+        - text: They placed ties and rails at the new site, and the job continued into darkness.
+          atS: 18.62
+          durationS: 4.66
+        - text: Look at the caboose from the permitted display area.
+          atS: 23.88
+          durationS: 2.9
+        - text: A thing designed to travel can still be difficult to move!
+          atS: 27.39
+          durationS: 3.24
+        - text: The team had to solve the problem a piece at a time.
+          atS: 31.14
+          durationS: 2.97
+        - text: Wheels, body, trucks, and rails all needed the right place in the plan.
+          atS: 34.35
+          durationS: 4.84
+        - text: The caboose's short trip became a real adventure in cooperation, helping the museum keep a big piece of railroad history for visitors like you.
+          atS: 39.8
+          durationS: 8.73

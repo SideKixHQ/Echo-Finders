@@ -9,7 +9,7 @@ at: { lat: 34.23950, lng: -77.94933 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 60
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   The trade faded. Textile mills in the Piedmont used more of the cotton at home,
   and World War One closed the German market. Behind the present storefronts lies a city
   that stored, sold, and shipped what the world wanted.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "At this address, a National Register survey lists a two-story brick building of 1919 and 1920, designed by Henry Bonitz for Alexander Sprunt's company."
@@ -64,3 +64,41 @@ sources:
     url: https://dbawilmington.org/downtown/central-business-district/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-mill-inside-the-shopping-district/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 60
+    audioBytes: 961767
+    transcript:
+      totalS: 60
+      lines:
+        - text: These buildings can feel like a collection of old shops.
+          atS: 0
+          durationS: 3.42
+        - text: Their name points to the trade that once ran this waterfront.
+          atS: 3.81
+          durationS: 3.36
+        - text: At this address, a National Register survey lists a two-story brick building of 1919 and 1920, designed by Henry Bonitz for Alexander Sprunt's company.
+          atS: 8.46
+          durationS: 11.26
+        - text: Led by Alexander Sprunt and Son, Wilmington's cotton export trade served Bremen, Liverpool and other European cities.
+          atS: 20.42
+          durationS: 7.54
+        - text: By 1915 the port handled one fifth of the cotton crop of North and South Carolina.
+          atS: 28.4
+          durationS: 5.88
+        - text: Keep to the passages open to visitors.
+          atS: 35.23
+          durationS: 2.8
+        - text: Next door, a storefront was taken out to make an open-air entry into the complex.
+          atS: 39.32
+          durationS: 5.28
+        - text: The trade faded.
+          atS: 45.12
+          durationS: 1.38
+        - text: Textile mills in the Piedmont used more of the cotton at home, and World War One closed the German market.
+          atS: 46.94
+          durationS: 6.58
+        - text: Behind the present storefronts lies a city that stored, sold, and shipped what the world wanted.
+          atS: 53.85
+          durationS: 6.2

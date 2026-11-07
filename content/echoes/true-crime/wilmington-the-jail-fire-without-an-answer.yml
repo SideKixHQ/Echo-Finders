@@ -38,8 +38,8 @@ factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: unsolved
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-07"
+  reviewedAt: "2026-11-07"
   contentWarning: "This echo describes a suspicious fire. Nobody is described as hurt."
 claims:
   - says: "Before this was a handsome house, it was Wilmington's jail."

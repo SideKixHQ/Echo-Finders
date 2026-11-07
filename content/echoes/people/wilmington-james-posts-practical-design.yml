@@ -10,7 +10,7 @@ at: { lat: 34.23603, lng: -77.94281 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 66
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   fashionable style; people made choices about proportions, rooms, and use. Those choices
   still shape what you can see. The builders' labor then transformed the design into the
   surviving structure before you.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "James Post designed the Bellamy mansion with his assistant architect, Rufus Bunnell."
@@ -64,3 +64,41 @@ sources:
     url: https://www.bellamymansion.org/audio-1.html
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-james-posts-practical-design/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55.2
+    audioBytes: 884444
+    transcript:
+      totalS: 55.2
+      lines:
+        - text: James Post designed the Bellamy mansion with his assistant architect, Rufus Bunnell.
+          atS: 0
+          durationS: 5.43
+        - text: Their work had to turn a wealthy client's ambitions into a building that could function in Wilmington's climate.
+          atS: 6.04
+          durationS: 6.63
+        - text: The museum points to deliberate choices involving daylight and ventilation.
+          atS: 13.36
+          durationS: 4.48
+        - text: Architecture here was a practical arrangement as well as a display of status.
+          atS: 18.36
+          durationS: 4.48
+        - text: From the sidewalk, trace the building upward.
+          atS: 23.08
+          durationS: 2.72
+        - text: Different parts serve different purposes, even when the whole facade looks like a single confident gesture.
+          atS: 26.12
+          durationS: 6.54
+        - text: Post's name gives the design a human author.
+          atS: 33.75
+          durationS: 3.3
+        - text: The house did not simply emerge from a fashionable style; people made choices about proportions, rooms, and use.
+          atS: 37.85
+          durationS: 8.14
+        - text: Those choices still shape what you can see.
+          atS: 46.67
+          durationS: 2.86
+        - text: The builders' labor then transformed the design into the surviving structure before you.
+          atS: 49.91
+          durationS: 5.31

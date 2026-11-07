@@ -10,7 +10,7 @@ at: { lat: 34.23774, lng: -77.94575 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 67
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   From outside, the story still works. A historic theater is not an unaltered machine.
   It is a place repeatedly adjusted so performance can continue. The 1909 work reminds
   us that what now looks traditional was once a substantial modern improvement.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In 1909, Thalian Hall installed electric stage lights."
@@ -49,3 +49,41 @@ sources:
     url: https://www.thalianhall.org/about
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-when-the-stage-turned-electric/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.4
+    audioBytes: 871070
+    transcript:
+      totalS: 54.4
+      lines:
+        - text: In 1909, Thalian Hall installed electric stage lights.
+          atS: 0
+          durationS: 4.64
+        - text: Its renovation also changed the balconies and proscenium, the frame around the stage.
+          atS: 5.08
+          durationS: 5.11
+        - text: The theater was adapting to new expectations instead of preserving every feature from its opening.
+          atS: 10.8
+          durationS: 5.75
+        - text: The audience's view and the performers' working conditions could change while the building continued serving the same larger purpose.
+          atS: 17.15
+          durationS: 7.5
+        - text: If you can enter through an authorized visit, look toward the stage opening.
+          atS: 25.46
+          durationS: 4.11
+        - text: The frame tells you where to direct attention; light tells you what to notice within it.
+          atS: 30.27
+          durationS: 5.35
+        - text: From outside, the story still works.
+          atS: 36
+          durationS: 2.84
+        - text: A historic theater is not an unaltered machine.
+          atS: 39.17
+          durationS: 3.48
+        - text: It is a place repeatedly adjusted so performance can continue.
+          atS: 43.04
+          durationS: 4.06
+        - text: The 1909 work reminds us that what now looks traditional was once a substantial modern improvement.
+          atS: 47.54
+          durationS: 6.84

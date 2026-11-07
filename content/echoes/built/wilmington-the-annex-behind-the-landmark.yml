@@ -9,7 +9,7 @@ at: { lat: 34.24250, lng: -77.94490 }
 triggerRadiusKm: 0.06
 category: built
 format: short
-durationS: 67
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   rooms for teaching, meetings, and other activities. The annex supplied that supporting
   space. Its continued presence helps you read the complex as a working community
   setting, not simply a striking facade preserved for photographs.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H. Sprunt in memory of his parents and the earlier congregation's founders."
@@ -46,3 +46,41 @@ sources:
     url: https://www.brooklynartsnc.com/full-history/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-annex-behind-the-landmark/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.4
+    audioBytes: 871070
+    transcript:
+      totalS: 54.4
+      lines:
+        - text: The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H.
+          atS: 0
+          durationS: 6.36
+        - text: Sprunt in memory of his parents and the earlier congregation's founders.
+          atS: 6.4
+          durationS: 4.57
+        - text: The annex served functions that the main sanctuary alone could not contain.
+          atS: 11.3
+          durationS: 4.73
+        - text: Its history reminds you that a community's building needs extend beyond a single ceremonial room.
+          atS: 16.46
+          durationS: 6.22
+        - text: Look from the public sidewalk and keep to authorized visitor areas.
+          atS: 23.2
+          durationS: 3.95
+        - text: A less dramatic building can still be central to how a place works.
+          atS: 27.75
+          durationS: 4.3
+        - text: The addition makes growth tangible.
+          atS: 32.48
+          durationS: 2.4
+        - text: People who gathered in the church also needed rooms for teaching, meetings, and other activities.
+          atS: 35.59
+          durationS: 5.95
+        - text: The annex supplied that supporting space.
+          atS: 42.14
+          durationS: 2.7
+        - text: Its continued presence helps you read the complex as a working community setting, not simply a striking facade preserved for photographs.
+          atS: 45.66
+          durationS: 8.72

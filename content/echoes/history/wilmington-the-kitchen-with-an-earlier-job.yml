@@ -10,7 +10,7 @@ at: { lat: 34.23548, lng: -77.94634 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 67
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   from the grander house. Food preparation required heat, repeated tasks, and labor that a
   polished dining room could conceal. The building connects those ordinary demands with an
   even earlier responsibility: watching over the people confined on this corner.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Here, it carries part of the property's first life."
@@ -52,3 +52,41 @@ sources:
     url: https://www.burgwinwrighthouse.org/the-property
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-kitchen-with-an-earlier-job/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.3
+    audioBytes: 870234
+    transcript:
+      totalS: 54.3
+      lines:
+        - text: A kitchen can look like a modest supporting building.
+          atS: 0
+          durationS: 3.08
+        - text: Here, it carries part of the property's first life.
+          atS: 3.35
+          durationS: 2.81
+        - text: The museum identifies the detached kitchen as the former jailer's quarters.
+          atS: 6.55
+          durationS: 4.55
+        - text: When the site became a residence, the small structure gained a new domestic role.
+          atS: 11.48
+          durationS: 4.88
+        - text: That reuse matters.
+          atS: 16.68
+          durationS: 1.73
+        - text: Wilmington's early buildings were working resources, not untouched monuments.
+          atS: 18.85
+          durationS: 5.17
+        - text: Owners adapted what already existed, and the resulting place kept traces of several purposes.
+          atS: 24.62
+          durationS: 6.86
+        - text: If you are on an authorized tour, let the scale of the kitchen pull your attention away from the grander house.
+          atS: 32.44
+          durationS: 6.56
+        - text: Food preparation required heat, repeated tasks, and labor that a polished dining room could conceal.
+          atS: 39.51
+          durationS: 6.45
+        - text: "The building connects those ordinary demands with an even earlier responsibility: watching over the people confined on this corner."
+          atS: 46.91
+          durationS: 7.42

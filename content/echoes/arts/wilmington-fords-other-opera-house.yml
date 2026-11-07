@@ -10,7 +10,7 @@ at: { lat: 34.23766, lng: -77.94570 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 66
+durationS: 59
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   Thalian Hall. A different title could mark a different business strategy without moving
   the stage. The theater's long life includes those shifts: familiar walls, new operators,
   and another invitation to an audience.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Ford, associated with Ford's Theatre in Washington, leased this Wilmington theater from 1867 to 1871."
@@ -55,3 +55,41 @@ sources:
     url: https://www.nps.gov/foth/learn/historyculture/index.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-fords-other-opera-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 59
+    audioBytes: 944630
+    transcript:
+      totalS: 59
+      lines:
+        - text: John T.
+          atS: 0
+          durationS: 0.57
+        - text: Ford, associated with Ford's Theatre in Washington, leased this Wilmington theater from 1867 to 1871.
+          atS: 0.6
+          durationS: 9.15
+        - text: During his tenure, it was called the Opera House.
+          atS: 10.36
+          durationS: 3.06
+        - text: The connection can surprise visitors who know Ford's name only through Abraham Lincoln's assassination.
+          atS: 13.75
+          durationS: 6.04
+        - text: This story concerns his theater business here, not a claim that the crime in the capital happened in this building.
+          atS: 21.08
+          durationS: 7.05
+        - text: Names and management changed while the local building continued hosting entertainment.
+          atS: 29.08
+          durationS: 5.1
+        - text: Its history reaches through people whose careers crossed several cities.
+          atS: 34.88
+          durationS: 4.34
+        - text: Look at the entrance and imagine a playbill announcing the Opera House rather than Thalian Hall.
+          atS: 40.03
+          durationS: 5.58
+        - text: A different title could mark a different business strategy without moving the stage.
+          atS: 46.31
+          durationS: 4.63
+        - text: "The theater's long life includes those shifts: familiar walls, new operators, and another invitation to an audience."
+          atS: 51.33
+          durationS: 7.65

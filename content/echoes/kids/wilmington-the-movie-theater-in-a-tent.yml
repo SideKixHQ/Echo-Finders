@@ -9,7 +9,7 @@ at: { lat: 34.23807, lng: -77.94930 }
 triggerRadiusKm: 0.04
 category: kids
 format: short
-durationS: 58
+durationS: 45
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
 
   A small piece of tile can help a big story survive. The theater disappeared, but the
   park keeps its name right on Front Street.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Long ago, a theater called the Bijou stood on Front Street."
@@ -74,3 +74,47 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/discover-outdoor-art-in-wilmington-nc/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/wilmington-the-movie-theater-in-a-tent/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 45
+    audioBytes: 721022
+    transcript:
+      totalS: 45
+      lines:
+        - text: Long ago, a theater called the Bijou stood on Front Street.
+          atS: 0
+          durationS: 3.56
+        - text: The building is gone now, but this little park still carries its name.
+          atS: 4.17
+          durationS: 4
+        - text: People who study old buildings wrote down a six-sided tile panel set in the sidewalk here.
+          atS: 8.68
+          durationS: 5.12
+        - text: It marked the theater's front door.
+          atS: 14.31
+          durationS: 1.81
+        - text: Stand on the open path and imagine people lining up for a show.
+          atS: 16.64
+          durationS: 3.96
+        - text: They could not guess their theater would someday become a park.
+          atS: 20.98
+          durationS: 3.3
+        - text: Now look around for a dog on a leash.
+          atS: 24.72
+          durationS: 2.25
+        - text: It is not a real dog.
+          atS: 27.3
+          durationS: 1.47
+        - text: It is made of steel and found objects.
+          atS: 29.09
+          durationS: 2.86
+        - text: Artist Paul Hill made it, and it is called Straining to Be.
+          atS: 32.28
+          durationS: 4.13
+        - text: A small piece of tile can help a big story survive.
+          atS: 36.79
+          durationS: 3.37
+        - text: The theater disappeared, but the park keeps its name right on Front Street.
+          atS: 40.54
+          durationS: 4.46

@@ -9,7 +9,7 @@ at: { lat: 34.23515, lng: -77.94660 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 68
+durationS: 56
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   directs your gaze. This landscape records two eras at once: the colonial world it evokes
   and the twentieth-century preservation work that chose how that world would be
   presented.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In 1962, the museum hired landscape architect Alden Hopkins to create gardens in an eighteenth-century style."
@@ -58,3 +58,41 @@ sources:
     url: https://www.burgwinwrighthouse.org/gardens
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-garden-that-was-designed-later/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 56.3
+    audioBytes: 901581
+    transcript:
+      totalS: 56.3
+      lines:
+        - text: These gardens can feel as old as the house.
+          atS: 0
+          durationS: 2.84
+        - text: Their present design belongs to a later chapter.
+          atS: 3.54
+          durationS: 3.24
+        - text: In 1962, the museum hired landscape architect Alden Hopkins to create gardens in an eighteenth-century style.
+          atS: 7.48
+          durationS: 8.17
+        - text: The grounds therefore interpret a period; they are not a garden preserved unchanged from 1770.
+          atS: 16.25
+          durationS: 6.51
+        - text: That distinction adds to the experience.
+          atS: 23.15
+          durationS: 2.87
+        - text: The orchard, herb areas, terraces, and formal planting give visitors different ways to approach the past.
+          atS: 26.53
+          durationS: 7.23
+        - text: A useful plant tells a different story from a decorative hedge.
+          atS: 34.15
+          durationS: 3.9
+        - text: Keep to the open paths.
+          atS: 38.37
+          durationS: 1.65
+        - text: Notice where the design invites a pause and where it directs your gaze.
+          atS: 40.4
+          durationS: 4.64
+        - text: "This landscape records two eras at once: the colonial world it evokes and the twentieth-century preservation work that chose how that world would be presented."
+          atS: 45.37
+          durationS: 10.91

@@ -9,7 +9,7 @@ at: { lat: 34.23355, lng: -77.94605 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 69
+durationS: 58
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   The museum's surviving furnishings and objects connect that exterior pattern to
   particular lives. The building gives them a setting. From outside, the first clue is
   scale: enough rooms to make a family home a small working world.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The Latimer house was built in 1852"
@@ -59,3 +59,41 @@ sources:
     url: https://latimerhouse.org/about/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-fourteen-rooms-on-third-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 57.6
+    audioBytes: 923314
+    transcript:
+      totalS: 57.6
+      lines:
+        - text: The Latimer house was built in 1852 for Zebulon and Elizabeth Latimer.
+          atS: 0
+          durationS: 4.87
+        - text: Its fourteen rooms made a substantial home in the growing port city.
+          atS: 5.47
+          durationS: 4.12
+        - text: The museum identifies the design as Italianate, with symmetry and a central-hall arrangement.
+          atS: 10.29
+          durationS: 5.91
+        - text: What looks like a single handsome facade held a complicated household behind it.
+          atS: 16.8
+          durationS: 5.13
+        - text: Stand where you can see the windows without blocking the sidewalk.
+          atS: 22.63
+          durationS: 3.34
+        - text: Their orderly spacing invites you to read the house as a finished composition.
+          atS: 26.48
+          durationS: 4.46
+        - text: "Daily life would have been less orderly: family responsibilities, domestic work, business pressures, and change across generations."
+          atS: 31.75
+          durationS: 8.28
+        - text: The museum's surviving furnishings and objects connect that exterior pattern to particular lives.
+          atS: 40.63
+          durationS: 6.37
+        - text: The building gives them a setting.
+          atS: 47.45
+          durationS: 2.04
+        - text: "From outside, the first clue is scale: enough rooms to make a family home a small working world."
+          atS: 49.94
+          durationS: 7.7

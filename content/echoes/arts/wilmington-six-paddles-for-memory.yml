@@ -9,7 +9,7 @@ at: { lat: 34.24800, lng: -77.94725 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 68
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   Public art carries a responsibility here. It makes history present while leaving room
   for reflection. The bronze survives in the open air; the work of understanding what the
   city lost must continue among the people who visit.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its victims."
@@ -55,3 +55,41 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/discover-outdoor-art-in-wilmington-nc/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-six-paddles-for-memory/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55.4
+    audioBytes: 886952
+    transcript:
+      totalS: 55.4
+      lines:
+        - text: The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its victims.
+          atS: 0
+          durationS: 6.58
+        - text: Artist Ayokunle Odeleye designed it, and it was dedicated in November 2008.
+          atS: 7.19
+          durationS: 5.85
+        - text: This park is a place of remembrance.
+          atS: 13.85
+          durationS: 2.35
+        - text: The events it commemorates happened across the city, not all on this patch of ground.
+          atS: 16.8
+          durationS: 5
+        - text: Walk slowly along the public path.
+          atS: 22.13
+          durationS: 2.58
+        - text: The sculpture asks for a different pace from the surrounding streets.
+          atS: 25.15
+          durationS: 4.19
+        - text: Its repeated forms can bring separate lives into a single field of attention without pretending the violence had a simple or settled ending.
+          atS: 29.78
+          durationS: 8.99
+        - text: Public art carries a responsibility here.
+          atS: 39.58
+          durationS: 3.03
+        - text: It makes history present while leaving room for reflection.
+          atS: 43.31
+          durationS: 3.45
+        - text: The bronze survives in the open air; the work of understanding what the city lost must continue among the people who visit.
+          atS: 47.45
+          durationS: 7.91

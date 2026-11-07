@@ -10,7 +10,7 @@ at: { lat: 34.23317, lng: -77.94731 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 52
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   administrative honor. Here, it points back to concrete local spaces and the people who
   used them. The title does not create the history. It asks the city today to keep that
   history available, examined, and connected to the present.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In 2020, Wilmington became the country's first American World War II Heritage City."
@@ -55,3 +55,38 @@ sources:
     url: https://www.nps.gov/places/wilmington-north-carolina-american-world-war-ii-heritage-city.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-first-heritage-city/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 51.9
+    audioBytes: 830945
+    transcript:
+      totalS: 51.9
+      lines:
+        - text: In 2020, Wilmington became the country's first American World War II Heritage City.
+          atS: 0
+          durationS: 6.26
+        - text: The designation recognizes a community's wartime role and its work to preserve that history.
+          atS: 6.7
+          durationS: 6.23
+        - text: It reaches beyond this building, encompassing the wider city's military, industrial, and civilian contributions.
+          atS: 13.44
+          durationS: 6.86
+        - text: "The USO makes a useful downtown place to listen because it preserves a direct part of that experience: the gathering place for people in uniform and the volunteers supporting them."
+          atS: 21
+          durationS: 10.31
+        - text: Look at the building before you.
+          atS: 32.61
+          durationS: 1.52
+        - text: A national designation can sound like a distant administrative honor.
+          atS: 34.64
+          durationS: 3.79
+        - text: Here, it points back to concrete local spaces and the people who used them.
+          atS: 38.81
+          durationS: 4.27
+        - text: The title does not create the history.
+          atS: 43.69
+          durationS: 2.24
+        - text: It asks the city today to keep that history available, examined, and connected to the present.
+          atS: 46.31
+          durationS: 5.56

@@ -10,7 +10,7 @@ at: { lat: 34.23361, lng: -77.94610 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 68
+durationS: 52
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   Her story supplies a different connection between the building and the city. The house
   represented shared family life, shaped by her place in the community as well as her
   husband's commercial career.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St. James in 1848."
@@ -53,3 +53,38 @@ sources:
     url: https://latimerhouse.org/about/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-elizabeth-savage-latimers-wilmington/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 51.5
+    audioBytes: 825930
+    transcript:
+      totalS: 51.5
+      lines:
+        - text: Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St.
+          atS: 0
+          durationS: 4.98
+        - text: James in 1848.
+          atS: 5
+          durationS: 2
+        - text: The house built four years later became their family residence.
+          atS: 7.44
+          durationS: 3.39
+        - text: Her local background complicates the idea of the house as simply the achievement of a merchant who arrived from elsewhere.
+          atS: 11.34
+          durationS: 6.77
+        - text: Family relationships tied it to a city that already had its own networks and histories.
+          atS: 18.81
+          durationS: 5.38
+        - text: Stand outside the home and consider what is left unnamed when a household is introduced by its male owner alone.
+          atS: 25.14
+          durationS: 7.07
+        - text: A marriage and a family are not incidental to a residence's meaning.
+          atS: 33.16
+          durationS: 4.19
+        - text: Her story supplies a different connection between the building and the city.
+          atS: 38.65
+          durationS: 4.15
+        - text: The house represented shared family life, shaped by her place in the community as well as her husband's commercial career.
+          atS: 43.75
+          durationS: 7.8

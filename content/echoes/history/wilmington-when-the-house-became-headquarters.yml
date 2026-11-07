@@ -10,7 +10,7 @@ at: { lat: 34.23588, lng: -77.94287 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 67
+durationS: 58
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   authority in peacetime and military authority in war. Their walls did not settle the
   conflict; occupation changed who controlled the space. A building that appears unified
   from outside can hold profoundly different histories of power within.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In 1865, the Bellamy mansion took on a job its owners had not planned."
@@ -64,3 +64,44 @@ sources:
     url: https://www.bellamymansion.org/museum-blog/war-and-politics-a-house-divided
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-when-the-house-became-headquarters/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 57.9
+    audioBytes: 927076
+    transcript:
+      totalS: 57.9
+      lines:
+        - text: In 1865, the Bellamy mansion took on a job its owners had not planned.
+          atS: 0
+          durationS: 5.43
+        - text: After Union forces entered Wilmington, military staff used the empty house as headquarters.
+          atS: 6.13
+          durationS: 5.78
+        - text: The property of a household that backed secession became a place from which Union officers worked.
+          atS: 12.42
+          durationS: 5.47
+        - text: The change was part of a much larger upheaval.
+          atS: 18.33
+          durationS: 2.64
+        - text: The federal government seized all of Dr.
+          atS: 21.14
+          durationS: 2.43
+        - text: Bellamy's property.
+          atS: 23.59
+          durationS: 1.23
+        - text: He had enslaved 115 people, and emancipation was transforming the lives of the people whose labor had sustained households like this one.
+          atS: 25.21
+          durationS: 9.09
+        - text: Look toward the entrance from the public sidewalk.
+          atS: 35.25
+          durationS: 2.88
+        - text: The same rooms could serve domestic authority in peacetime and military authority in war.
+          atS: 38.64
+          durationS: 5.76
+        - text: Their walls did not settle the conflict; occupation changed who controlled the space.
+          atS: 45
+          durationS: 5.5
+        - text: A building that appears unified from outside can hold profoundly different histories of power within.
+          atS: 51.01
+          durationS: 6.85

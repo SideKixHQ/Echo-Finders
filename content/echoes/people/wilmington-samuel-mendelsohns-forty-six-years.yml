@@ -9,7 +9,7 @@ at: { lat: 34.23552, lng: -77.94440 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 65
+durationS: 59
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   simply constructed; it was used and cared for by a community over time. His decades of
   leadership link its early years with the city that developed around this corner into the
   twentieth century.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Rabbi Samuel Mendelsohn presided when Wilmington's Temple of Israel was dedicated in 1876."
@@ -49,3 +49,38 @@ sources:
     url: https://temple-of-israel.org/history/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-samuel-mendelsohns-forty-six-years/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 58.7
+    audioBytes: 940451
+    transcript:
+      totalS: 58.7
+      lines:
+        - text: Rabbi Samuel Mendelsohn presided when Wilmington's Temple of Israel was dedicated in 1876.
+          atS: 0
+          durationS: 6.46
+        - text: His tenure continued until 1922, spanning forty-six years.
+          atS: 6.9
+          durationS: 4.88
+        - text: The congregation's history connects that first sermon with Jewish liberty.
+          atS: 12.72
+          durationS: 4.27
+        - text: The new synagogue supplied a permanent local setting for worship and community life.
+          atS: 17.44
+          durationS: 5.28
+        - text: Listen from the public sidewalk.
+          atS: 23.84
+          durationS: 2.03
+        - text: "A long tenure means more than a ceremonial opening: it includes repeated services, teaching, changes in families, and the ordinary responsibilities of sustaining a congregation."
+          atS: 26.47
+          durationS: 13.19
+        - text: Mendelsohn's name helps make the building's history personal.
+          atS: 40.36
+          durationS: 3.7
+        - text: The synagogue was not simply constructed; it was used and cared for by a community over time.
+          atS: 45.36
+          durationS: 6.26
+        - text: His decades of leadership link its early years with the city that developed around this corner into the twentieth century.
+          atS: 52.13
+          durationS: 6.57

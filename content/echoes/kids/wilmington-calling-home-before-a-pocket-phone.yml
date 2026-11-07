@@ -10,7 +10,7 @@ at: { lat: 34.23322, lng: -77.94729 }
 triggerRadiusKm: 0.04
 category: kids
 format: short
-durationS: 68
+durationS: 44
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
   World War. We cannot say who used this particular phone for every conversation. We can
   understand why a call mattered: a familiar voice could connect someone here with people
   waiting somewhere else.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "This museum has a restored wartime-era telephone booth with a vintage phone inside."
@@ -48,3 +48,38 @@ sources:
     url: https://wilmingtoncommunityarts.org/classes-and-events/july-4th-open-house/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/wilmington-calling-home-before-a-pocket-phone/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 43.7
+    audioBytes: 699706
+    transcript:
+      totalS: 43.7
+      lines:
+        - text: Imagine needing to call home without a phone in your pocket.
+          atS: 0
+          durationS: 2.98
+        - text: This museum has a restored wartime-era telephone booth with a vintage phone inside.
+          atS: 3.31
+          durationS: 5.08
+        - text: The booth gives you a small space where a person could stand or sit and make a call.
+          atS: 8.78
+          durationS: 4.48
+        - text: A public telephone was something you went to, rather than something that followed you everywhere.
+          atS: 13.64
+          durationS: 5.11
+        - text: Look at the phone with your grown-up.
+          atS: 19.13
+          durationS: 1.78
+        - text: Some of its parts might look strange to you, because the way people make calls has changed.
+          atS: 21.29
+          durationS: 4.96
+        - text: The object belongs in a building that welcomed people far from home during the Second World War.
+          atS: 26.63
+          durationS: 5.11
+        - text: We cannot say who used this particular phone for every conversation.
+          atS: 32.18
+          durationS: 4.08
+        - text: "We can understand why a call mattered: a familiar voice could connect someone here with people waiting somewhere else."
+          atS: 36.58
+          durationS: 7.07

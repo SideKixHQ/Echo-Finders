@@ -9,7 +9,7 @@ at: { lat: 34.24360, lng: -77.94290 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 67
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   had to cross the railroad infrastructure that helped define the neighborhood. The span
   let street and rail pass each other without meeting. Its survival lets you see a
   practical response to a city built around trains as well as streets.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "This one-lane truss bridge carries Sixth Street over a railroad cut."
@@ -62,3 +62,41 @@ sources:
     url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-steel-above-the-tracks/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.6
+    audioBytes: 874831
+    transcript:
+      totalS: 54.6
+      lines:
+        - text: This one-lane truss bridge carries Sixth Street over a railroad cut.
+          atS: 0
+          durationS: 4.46
+        - text: A National Register survey of downtown Wilmington dates it to 1910 and describes an iron automobile bridge, 145 feet long, set on concrete abutments.
+          atS: 5.41
+          durationS: 10.51
+        - text: "The truss makes structural work visible: connected members help carry loads across an opening."
+          atS: 17.03
+          durationS: 5.46
+        - text: The form is not simply decorative.
+          atS: 22.81
+          durationS: 2.09
+        - text: Look from a safe public approach, following any closure signs.
+          atS: 25.23
+          durationS: 3.91
+        - text: Do not go beneath it onto railway property for a better view.
+          atS: 29.58
+          durationS: 3.35
+        - text: A bridge solves a local problem, but it also records what lay in the way.
+          atS: 33.54
+          durationS: 4.39
+        - text: Here, streets had to cross the railroad infrastructure that helped define the neighborhood.
+          atS: 38.53
+          durationS: 4.98
+        - text: The span let street and rail pass each other without meeting.
+          atS: 44.02
+          durationS: 3.76
+        - text: Its survival lets you see a practical response to a city built around trains as well as streets.
+          atS: 48.39
+          durationS: 6.22

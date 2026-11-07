@@ -10,7 +10,7 @@ at: { lat: 34.24166, lng: -77.95056 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   once a company moves on. Someone has to recognize its future value before that happens.
   These organizers turned a modest display into a commitment: the railroad could leave,
   but its story here would still have a place.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Its early effort included a single display case and a table at Riverfest."
@@ -53,3 +53,41 @@ sources:
     url: https://www.wrrm.org/history.html
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-museum-begins-with-one-case/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55.4
+    audioBytes: 887370
+    transcript:
+      totalS: 55.4
+      lines:
+        - text: This museum did not begin with a building full of trains.
+          atS: 0
+          durationS: 3.5
+        - text: Its early effort included a single display case and a table at Riverfest.
+          atS: 3.74
+          durationS: 4.9
+        - text: The foundation was chartered in 1979.
+          atS: 8.96
+          durationS: 3.19
+        - text: Hazel Morse, Gerda Wooten, and Marguerite James led the effort.
+          atS: 12.48
+          durationS: 5.04
+        - text: The railroad had left Wilmington, and they wanted to keep its history alive here.
+          atS: 17.84
+          durationS: 4.62
+        - text: A collection needed somewhere to grow, and the work expanded from those small beginnings.
+          atS: 23.16
+          durationS: 5.12
+        - text: The current museum is the outcome, not the setting of every early exhibit.
+          atS: 29.58
+          durationS: 4.89
+        - text: Stand near its entrance and consider how easily ordinary equipment becomes disposable once a company moves on.
+          atS: 34.79
+          durationS: 7.14
+        - text: Someone has to recognize its future value before that happens.
+          atS: 42.45
+          durationS: 4.02
+        - text: "These organizers turned a modest display into a commitment: the railroad could leave, but its story here would still have a place."
+          atS: 46.97
+          durationS: 8.43

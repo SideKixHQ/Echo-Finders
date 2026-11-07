@@ -9,7 +9,7 @@ at: { lat: 34.23445, lng: -77.94610 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   moving through it. A tour could connect the new federal government with communities that
   otherwise knew it through correspondence and law. Wilmington was one stop in that
   effort, and Washington left a brief written impression rather than a complete portrait.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In April 1791, President George Washington reached Wilmington on his Southern Tour."
@@ -51,3 +51,38 @@ sources:
     url: https://www.dncr.nc.gov/blog/2023/12/08/washingtons-southern-tour-d-19
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-washington-sees-the-port/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54
+    audioBytes: 865218
+    transcript:
+      totalS: 54
+      lines:
+        - text: In April 1791, President George Washington reached Wilmington on his Southern Tour.
+          atS: 0
+          durationS: 5.43
+        - text: His journal described a compact town with some good houses, and a census count of about a thousand people.
+          atS: 5.94
+          durationS: 6.78
+        - text: Many locals felt that count was too low.
+          atS: 13.42
+          durationS: 2.61
+        - text: The visit brought the president face to face with the coastal port.
+          atS: 16.64
+          durationS: 3.73
+        - text: This marker commemorates the visit; it does not prove that he stood at the exact spot where you are listening.
+          atS: 21.06
+          durationS: 6.85
+        - text: That difference keeps the scene honest.
+          atS: 28.51
+          durationS: 2.72
+        - text: Look along the historic streets and imagine a president trying to understand a place by moving through it.
+          atS: 32.04
+          durationS: 6.32
+        - text: A tour could connect the new federal government with communities that otherwise knew it through correspondence and law.
+          atS: 39.31
+          durationS: 6.55
+        - text: Wilmington was one stop in that effort, and Washington left a brief written impression rather than a complete portrait.
+          atS: 46.81
+          durationS: 7.2

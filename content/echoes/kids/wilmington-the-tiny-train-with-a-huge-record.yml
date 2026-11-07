@@ -9,7 +9,7 @@ at: { lat: 34.24265, lng: -77.95040 }
 triggerRadiusKm: 0.04
 category: kids
 format: short
-durationS: 67
+durationS: 49
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   Connecting more than fifteen hundred of them created a problem of teamwork, space, and
   careful movement. The achievement was not just owning lots of pieces. It was making
   all those pieces work together as a single astonishing train.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In April 2011, model railroaders made a very small kind of train do something very big inside this convention center."
@@ -55,3 +55,41 @@ sources:
     url: https://www.wrrm.org/guinness-world-record-2011.html
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/wilmington-the-tiny-train-with-a-huge-record/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 49.1
+    audioBytes: 787060
+    transcript:
+      totalS: 49.1
+      lines:
+        - text: In April 2011, model railroaders made a very small kind of train do something very big inside this convention center.
+          atS: 0
+          durationS: 8.44
+        - text: They connected thirty-one model locomotives and 1,563 cars.
+          atS: 8.88
+          durationS: 5.27
+        - text: The train stretched more than nine hundred feet and completed the run needed for a Guinness world record.
+          atS: 14.66
+          durationS: 5.61
+        - text: The event is over; there is no promise that the record train is waiting inside today.
+          atS: 20.78
+          durationS: 4.89
+        - text: But this is the building where it happened.
+          atS: 26.18
+          durationS: 1.95
+        - text: Look at its size from the public sidewalk.
+          atS: 28.73
+          durationS: 2.44
+        - text: A tiny car would be easy to hold.
+          atS: 31.61
+          durationS: 2.3
+        - text: Connecting more than fifteen hundred of them created a problem of teamwork, space, and careful movement.
+          atS: 34.19
+          durationS: 6.42
+        - text: The achievement was not just owning lots of pieces.
+          atS: 41.05
+          durationS: 2.93
+        - text: It was making all those pieces work together as a single astonishing train.
+          atS: 44.26
+          durationS: 4.88

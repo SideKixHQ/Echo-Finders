@@ -10,7 +10,7 @@ at: { lat: 34.23545, lng: -77.94647 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
   sit below the features that catch your eye. An authorized visit makes that contrast
   more tangible: beneath a domestic setting survive reminders of the town's earlier
   system of confinement.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The neat doorway and Georgian proportions tell a story."
@@ -64,3 +64,41 @@ sources:
     url: https://www.burgwinwrighthouse.org/gardens
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-house-above-the-cells/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53.8
+    audioBytes: 862292
+    transcript:
+      totalS: 53.8
+      lines:
+        - text: The neat doorway and Georgian proportions tell a story.
+          atS: 0
+          durationS: 3.46
+        - text: The walls underneath tell another.
+          atS: 3.9
+          durationS: 2.39
+        - text: John Burgwin's house was built in 1770 on the remains of Wilmington's first jail, which dated to about 1744.
+          atS: 7.59
+          durationS: 8.48
+        - text: Parts of the older structure became part of a merchant's fashionable residence.
+          atS: 16.58
+          durationS: 4.32
+        - text: It was a dramatic change in use.
+          atS: 21.34
+          durationS: 2.05
+        - text: A place designed to restrict movement became a place designed to display wealth and receive guests.
+          atS: 23.84
+          durationS: 6.05
+        - text: Yet rebuilding did not erase everything that had been there before.
+          atS: 30.27
+          durationS: 3.89
+        - text: From the public sidewalk, look at the house as a layered object.
+          atS: 35.27
+          durationS: 4.06
+        - text: The older history can sit below the features that catch your eye.
+          atS: 39.94
+          durationS: 3.76
+        - text: "An authorized visit makes that contrast more tangible: beneath a domestic setting survive reminders of the town's earlier system of confinement."
+          atS: 44.3
+          durationS: 9.52

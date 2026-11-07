@@ -38,8 +38,8 @@ factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: alleged
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-07"
+  reviewedAt: "2026-11-07"
   contentWarning: "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
 claims:
   - says: "This building has held both city government and a theater."

@@ -9,7 +9,7 @@ at: { lat: 34.24225, lng: -77.94505 }
 triggerRadiusKm: 0.06
 category: built
 format: short
-durationS: 65
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   historical photograph. Instead, restoration made another use possible. Today's arts
   setting carries an architectural inheritance from the congregation that first raised it.
   When people gather here now, they add a chapter rather than beginning on a blank site.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Construction of St. Andrew's Presbyterian Church began here in 1888."
@@ -61,3 +61,47 @@ sources:
     url: https://www.brooklynartsnc.com/full-history/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-church-that-became-an-arts-center/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.4
+    audioBytes: 871070
+    transcript:
+      totalS: 54.4
+      lines:
+        - text: Construction of St.
+          atS: 0
+          durationS: 1.13
+        - text: Andrew's Presbyterian Church began here in 1888.
+          atS: 1.16
+          durationS: 3.98
+        - text: The congregation dedicated the building in 1889.
+          atS: 5.65
+          durationS: 3.6
+        - text: Its later history included other congregations, serious deterioration, and preservation efforts.
+          atS: 9.76
+          durationS: 6.21
+        - text: The surviving structure became the Brooklyn Arts Center.
+          atS: 16.42
+          durationS: 3.3
+        - text: From the public corner, notice that a changed purpose did not require the old building to disappear.
+          atS: 20.53
+          durationS: 5.69
+        - text: Its prominent form remains part of the neighborhood while its interior serves new gatherings.
+          atS: 26.91
+          durationS: 5.24
+        - text: The building's survival is the turning point.
+          atS: 33.26
+          durationS: 2.46
+        - text: A former church could have become only a historical photograph.
+          atS: 36.05
+          durationS: 3.63
+        - text: Instead, restoration made another use possible.
+          atS: 39.93
+          durationS: 3.38
+        - text: Today's arts setting carries an architectural inheritance from the congregation that first raised it.
+          atS: 43.63
+          durationS: 5.65
+        - text: When people gather here now, they add a chapter rather than beginning on a blank site.
+          atS: 49.73
+          durationS: 4.66

@@ -10,7 +10,7 @@ at: { lat: 34.23946, lng: -77.94929 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 69
+durationS: 51
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   and still notice that the setting was shaped by an earlier port economy. The present
   activity does not erase the past; it gives you a reason to encounter it at walking
   speed.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The Cotton Exchange is eight restored buildings joined by open-air courtyards."
@@ -52,3 +52,41 @@ sources:
     url: https://www.wwaytv3.com/?p=2214621
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-eight-buildings-one-new-use/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 50.5
+    audioBytes: 808794
+    transcript:
+      totalS: 50.5
+      lines:
+        - text: The Cotton Exchange is eight restored buildings joined by open-air courtyards.
+          atS: 0
+          durationS: 4.89
+        - text: That explains why it does not behave like a purpose-built shopping center.
+          atS: 5.33
+          durationS: 4.25
+        - text: Its present use asks visitors to move through spaces that began with different commercial roles.
+          atS: 10.02
+          durationS: 5.76
+        - text: Floors and passageways preserve some of that uneven history.
+          atS: 16.16
+          durationS: 3.7
+        - text: Stand where a public passage turns or changes level.
+          atS: 20.31
+          durationS: 3.26
+        - text: The interesting question is not simply how old the brick might be.
+          atS: 24.17
+          durationS: 3.79
+        - text: It is how several old buildings were made useful together.
+          atS: 28.34
+          durationS: 3.55
+        - text: This kind of reuse keeps the city legible.
+          atS: 32.4
+          durationS: 2.86
+        - text: You can buy something in a contemporary shop and still notice that the setting was shaped by an earlier port economy.
+          atS: 35.86
+          durationS: 6.86
+        - text: The present activity does not erase the past; it gives you a reason to encounter it at walking speed.
+          atS: 43.54
+          durationS: 6.94

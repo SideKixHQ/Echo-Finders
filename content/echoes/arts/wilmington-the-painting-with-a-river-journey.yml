@@ -10,7 +10,7 @@ at: { lat: 34.23550, lng: -77.94559 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 69
+durationS: 57
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   story is more than what it depicts. The journeys, the uncertain attribution, and the work
   needed to stabilize the canvas all belong to it. The object survives because later
   people keep accepting responsibility for its future.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "St. James preserves the story of Ecce Homo"
@@ -58,3 +58,47 @@ sources:
     url: https://www.stjamesp.org/a-new-journey-for-ecce-homo/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-painting-with-a-river-journey/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 56.6
+    audioBytes: 907014
+    transcript:
+      totalS: 56.6
+      lines:
+        - text: St.
+          atS: 0
+          durationS: 0.28
+        - text: James preserves the story of Ecce Homo, a painting associated with the capture of a Spanish privateer vessel near Brunswick Town in 1748.
+          atS: 0.31
+          durationS: 9.38
+        - text: The parish's account says the salvaged painting went first to St.
+          atS: 10.3
+          durationS: 3.65
+        - text: Philip's Church and later to St.
+          atS: 13.97
+          durationS: 2
+        - text: James after Brunswick Town was abandoned.
+          atS: 16
+          durationS: 2.83
+        - text: Its artist remains uncertain.
+          atS: 19.53
+          durationS: 2.13
+        - text: The parish has reported sending the painting to Durham for conservation.
+          atS: 22.47
+          durationS: 4.06
+        - text: This stop therefore connects you with its history, not a promise that it is currently hanging inside.
+          atS: 27.34
+          durationS: 6.26
+        - text: Stand outside and consider an artwork that outlasted changes in location and care.
+          atS: 34.55
+          durationS: 5.75
+        - text: Its story is more than what it depicts.
+          atS: 40.99
+          durationS: 2.5
+        - text: The journeys, the uncertain attribution, and the work needed to stabilize the canvas all belong to it.
+          atS: 43.82
+          durationS: 6.73
+        - text: The object survives because later people keep accepting responsibility for its future.
+          atS: 51.25
+          durationS: 5.36

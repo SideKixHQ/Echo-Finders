@@ -9,7 +9,7 @@ at: { lat: 34.23098, lng: -77.94077 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 70
+durationS: 61
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -33,13 +33,13 @@ script: |
   story includes a crime committed against justice itself: people losing years while a
   false case was challenged. The ending is correction, but correction cannot return the
   time already taken.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
   convictionStatus: exonerated
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-07"
+  reviewedAt: "2026-11-07"
   contentWarning: "This echo describes an arson and a wrongful conviction. Nothing is described in detail."
 claims:
   - says: "In 1971, students protesting unequal treatment during school desegregation made a local church their headquarters."
@@ -81,3 +81,44 @@ sources:
     publisher: "United States Court of Appeals for the Fourth Circuit"
     retrievedAt: "2026-10-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/wilmington-the-wilmington-ten-and-the-missing-evidence/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 60.5
+    audioBytes: 968454
+    transcript:
+      totalS: 60.5
+      lines:
+        - text: In 1971, students protesting unequal treatment during school desegregation made a local church their headquarters.
+          atS: 0
+          durationS: 7.66
+        - text: In February 1971, Mike's Grocery was firebombed.
+          atS: 8.47
+          durationS: 4.05
+        - text: Ten people were convicted on charges connected with the fire.
+          atS: 12.97
+          durationS: 3.39
+        - text: Their case became known as the Wilmington Ten.
+          atS: 16.87
+          durationS: 2.72
+        - text: The evidence and prosecution were later exposed as deeply flawed, including perjured testimony.
+          atS: 20.03
+          durationS: 5.82
+        - text: The convictions were overturned by the federal appeals court in 1980.
+          atS: 26.29
+          durationS: 4.39
+        - text: Governor Beverly Perdue issued pardons in 2012.
+          atS: 31.28
+          durationS: 3.66
+        - text: Responsibility for the grocery arson remains unclear; these ten people should not be presented as its proven perpetrators.
+          atS: 35.38
+          durationS: 7.47
+        - text: Listen beside the marker, not inside the church without permission.
+          atS: 43.28
+          durationS: 3.9
+        - text: "This true crime story includes a crime committed against justice itself: people losing years while a false case was challenged."
+          atS: 47.69
+          durationS: 7.36
+        - text: The ending is correction, but correction cannot return the time already taken.
+          atS: 55.38
+          durationS: 5.09

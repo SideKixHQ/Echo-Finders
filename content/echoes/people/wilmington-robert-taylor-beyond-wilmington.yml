@@ -10,7 +10,7 @@ at: { lat: 34.23601, lng: -77.94290 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 68
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   distance between learning a trade locally and becoming the first Black graduate of a
   distant institution. His achievement was individual, but his hometown background helps
   prevent us from imagining that his talent began just when a college recognized it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Robert Robinson Taylor was born in Wilmington"
@@ -72,3 +72,35 @@ sources:
     url: https://www.bellamymansion.org/museum-blog/war-and-politics-a-house-divided
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-robert-taylor-beyond-wilmington/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53.9
+    audioBytes: 863128
+    transcript:
+      totalS: 53.9
+      lines:
+        - text: Robert Robinson Taylor was born in Wilmington and became MIT's first known Black graduate, completing his degree in 1892.
+          atS: 0
+          durationS: 8.52
+        - text: His father, Henry Taylor, worked on the Bellamy construction as an enslaved carpenter.
+          atS: 9.22
+          durationS: 5.29
+        - text: This house therefore offers a connection to the family trade; it is not a building the son designed.
+          atS: 15.12
+          durationS: 6.3
+        - text: Robert went on to design buildings for the Tuskegee Institute campus.
+          atS: 22.23
+          durationS: 4.41
+        - text: Education expanded the possibilities of work that already had a strong family foundation.
+          atS: 27.46
+          durationS: 5.82
+        - text: From the sidewalk, look at the evidence of building skill around you.
+          atS: 33.66
+          durationS: 3.78
+        - text: Then consider the distance between learning a trade locally and becoming the first Black graduate of a distant institution.
+          atS: 37.88
+          durationS: 7
+        - text: His achievement was individual, but his hometown background helps prevent us from imagining that his talent began just when a college recognized it.
+          atS: 45.27
+          durationS: 8.6
