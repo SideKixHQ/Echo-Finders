@@ -7,6 +7,11 @@ import HomePage from '@/pages/Home';
 import PartnerPage from '@/pages/Partners';
 import NotFoundPage from '@/pages/NotFound';
 import './globals.css';
+import { inject } from '@vercel/analytics';
+
+// Anonymous visit counts for the website: no cookies, nothing that identifies a visitor.
+// Recorded once Web Analytics is enabled on the Vercel project (DEPLOY.md, Analytics).
+inject({ framework: 'vite' });
 
 createRoot(document.getElementById('app')!).render(
   <StrictMode>

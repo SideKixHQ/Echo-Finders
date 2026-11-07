@@ -57,7 +57,13 @@ losing your collection.
 are deleted at the same moment; the collection remains.
 
 ### Usage statistics
-**Default:** off. Opt-in only. Anonymous and aggregate — which features are used, not by whom.
+**On unless you turn it off**, in **Settings → Privacy → Anonymous usage statistics**.
+**What is counted:** visits, and a few moments in the app: a story played or its paywall
+shown (with the story's category), a checkout started (with the pass and the city) and a
+purchase completed (with the pass). Counted by Vercel Web Analytics.
+**What is not:** who you are, where you are, or what you have found. No cookies are set,
+your IP address is not stored, and the page address is sent without anything after the
+"?". The website counts visits the same way.
 
 ### Error reports
 **Only if you turn them on.** Off by default, in **Settings → Privacy → Send error reports**.
@@ -115,6 +121,7 @@ Everything below is in **Settings → Privacy**, and none of it requires contact
 | Hands-free walking | Turns background location on or off. Immediate. |
 | Remember where I stood | Turns precise position recording on or off, and deletes existing positions when switched off. |
 | Keep my collection | Turn off to stop recording found echoes entirely. |
+| Anonymous usage statistics | On by default. Turn off and nothing more is counted, at once. |
 | Send error reports | Off by default. Turn on to send us what broke when something breaks. Takes effect immediately. |
 | Export my data | A plain JSON file with everything we hold. Yours to keep. |
 | Delete my positions | Removes every standing position, keeps your collection. |

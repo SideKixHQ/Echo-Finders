@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
+import { count } from "./analytics";
 import { LIBRARY, ROUTES } from "./library.generated";
 import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
@@ -713,9 +714,11 @@ export function App() {
   const playOrAsk = useCallback(
     (echo: Echo) => {
       if (!mayStart(echo)) {
+        count({ name: "Paywall shown", category: echo.category });
         setPaywallFor(echo);
         return;
       }
+      count({ name: "Echo played", category: echo.category });
       session.play(echo);
     },
     [mayStart, session],

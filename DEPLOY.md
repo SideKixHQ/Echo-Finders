@@ -186,6 +186,22 @@ app reads what was bought from Stripe directly when it comes back from checkout.
 
 The secret key lives only in Vercel. It is never in the repository and never in the app.
 
+## Analytics (Vercel Web Analytics)
+
+Anonymous counts, on both the app and the website: visits, plus four app events (`Echo
+played` and `Paywall shown`, by category; `Checkout started`, by plan and city; `Purchase
+completed`, by plan). No cookies, no IP stored, nothing that identifies a person; the
+address is sent without its query string (`apps/prototype/src/analytics.ts`).
+
+- **On by default in the app** (James, 2026-11-07), off with Settings › Privacy ›
+  Anonymous usage statistics. A phone that saved its settings before this change keeps
+  the "off" it saved.
+- **Turn it on in Vercel, once per project** (`echo-finders` and `echo-finders-site`):
+  the project → **Analytics** tab → **Enable**. Until then the script is not served and
+  nothing is counted.
+- Visits are counted on every plan. The four app events are Vercel "custom events", which
+  need a Pro plan; on Hobby they are dropped and only visits show.
+
 ## Error reports (Sentry)
 
 **On.** When something breaks on a listener's phone, the app can send the error and its stack
