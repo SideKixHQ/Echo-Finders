@@ -209,6 +209,10 @@ export function Privacy({
 
       <section className="panel panel-danger">
         <h3>Your data</h3>
+        <a className="danger-row policy-row" href="https://echofinders.com/privacy" target="_blank" rel="noreferrer">
+          <span>Privacy policy</span>
+          <small>What we collect, why, and how to turn each part off.</small>
+        </a>
         <button className="danger-row" onClick={() => onDelete("positions")}>
           <span>Delete my positions</span>
           <small>Removes every saved standing position. Keeps your collection.</small>

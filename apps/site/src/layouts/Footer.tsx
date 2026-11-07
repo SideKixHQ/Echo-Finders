@@ -29,6 +29,7 @@ const columns = [
       { to: '/#cape-fear', label: 'Where we begin' },
       { to: '/partners', label: 'Work with us' },
       { to: 'mailto:hello@echofinders.com', label: 'Contact' },
+      { to: '/privacy', label: 'Privacy policy' },
     ],
   },
 ];

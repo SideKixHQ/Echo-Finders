@@ -1,7 +1,7 @@
 # Echo Finders — Privacy Policy
 
-**Draft for legal review. Not yet published.**
-Last updated: 21 September 2026 · Echo Finders is a Whatishere.com product.
+Last updated: 7 November 2026 · Echo Finders is a Whatishere.com product.
+Questions: [hello@echofinders.com](mailto:hello@echofinders.com)
 
 ---
 
@@ -14,8 +14,7 @@ happened where you are standing. That is the only thing it needs.
 - **We do not record where you stood unless you turn that on.** It is off when you install.
 - **You can switch off hands-free walking whenever you like**, and everything else keeps
   working.
-- **You can export everything, and delete everything, at any time, from Settings.** Deleted
-  means gone, not hidden.
+- **You can delete everything at any time, from Settings.** Deleted means gone, not hidden.
 - **We do not sell your data.** Not to advertisers, not to airlines, not to anyone.
 
 The rest of this document explains each of those properly.
@@ -33,7 +32,7 @@ The rest of this document explains each of those properly.
 point of walking mode. You should be looking at the street, not at a phone.
 **Default:** off. You are asked the first time you start a hands-free walk, never before.
 **If you say no:** echoes still open — you just keep the app on screen while you walk.
-**Turning it off later:** Settings → Privacy → Hands-free walking. Takes effect immediately.
+**Turning it off later:** Settings → Privacy → Hands-free. Takes effect immediately.
 Nothing you have already found is lost.
 
 ### Your collection — which echoes you found, and when
@@ -82,6 +81,16 @@ and the page you were on. Your email address only if you type it in, so that we 
 **What is not:** where you are, what you have found, or anything else about you. It goes to
 the same service as error reports, Sentry, and is read by us to fix and improve the app.
 
+### When you buy a pass
+**Payments are handled by Stripe.** You type your card details and email address on
+Stripe's own checkout page; we never see or store your card number. Stripe's privacy policy
+covers what it holds (stripe.com/privacy).
+**What we keep:** Stripe tells us which pass you bought, for which city, and when, so the app
+can unlock it. Your phone keeps a Stripe customer number so **Restore purchases** can find
+your pass again. We do not have an account for you; Stripe's record of the purchase is the
+record.
+**Refunds and cancelling** are done through Stripe's page, from Settings, or by writing to us.
+
 ### Microphone, contacts, photos, health, advertising identifiers
 **We do not collect these and do not ask for them.**
 
@@ -89,15 +98,14 @@ the same service as error reports, Sentry, and is read by us to fix and improve 
 
 ## Advertising
 
-Some echoes are sponsored, and every one of them says so out loud before it plays.
+**There is no advertising in Echo Finders today**, and no sponsored stories. If we add
+sponsored stories later, we will update this policy first, and these rules will hold:
 
-- Sponsored placements are chosen by **where the route goes**, not by who you are. We do not
+- Every sponsored story says so out loud before it plays.
+- Sponsored stories are chosen by **where the route goes**, not by who you are. We do not
   build advertising profiles.
-- **We never show sponsored content to anyone under 13**, and never inside kids mode,
-  whatever the advertiser is willing to pay.
+- **No sponsored content reaches anyone under 13**, and none plays in kids mode.
 - Advertisers receive counts. They never receive anything identifying you.
-- You can turn location-based sponsorship off in Settings; you will see general placements
-  instead.
 
 ---
 
@@ -118,12 +126,11 @@ Everything below is in **Settings → Privacy**, and none of it requires contact
 
 | Control | What it does |
 |---|---|
-| Hands-free walking | Turns background location on or off. Immediate. |
+| Hands-free | Turns background location on or off. Immediate. |
 | Remember where I stood | Turns precise position recording on or off, and deletes existing positions when switched off. |
 | Keep my collection | Turn off to stop recording found echoes entirely. |
 | Anonymous usage statistics | On by default. Turn off and nothing more is counted, at once. |
 | Send error reports | Off by default. Turn on to send us what broke when something breaks. Takes effect immediately. |
-| Export my data | A plain JSON file with everything we hold. Yours to keep. |
 | Delete my positions | Removes every standing position, keeps your collection. |
 | Delete everything | Removes the lot. |
 
@@ -140,7 +147,8 @@ Echo Finders is for all ages, and kids mode exists so a child can use it safely.
 - Kids mode excludes true crime and any content rated above their age.
 - **No sponsored content reaches anyone under 13**, in any mode.
 - We do not knowingly collect personal information from children. There is no account, no
-  profile and no advertising identifier to collect.
+  profile and no advertising identifier to collect. A child should not buy a pass without a
+  parent; Stripe's checkout asks for an email address and a card.
 
 Parents and guardians set the age and the categories. Those settings are on the device and
 are not sent anywhere.
@@ -149,8 +157,10 @@ are not sent anywhere.
 
 ## Your rights
 
-Wherever you live, you can see everything we hold, take a copy, and delete it — using the
-controls above, without asking us and without waiting.
+Wherever you live, you can delete what is on your phone using the controls above, without
+asking us and without waiting. For anything held elsewhere (a purchase at Stripe, a feedback
+message you sent) write to [hello@echofinders.com](mailto:hello@echofinders.com) and we will
+send you a copy or delete it.
 
 If you are in the UK, EU or EEA: our lawful basis for processing location is **consent**,
 which you give by granting the permission and withdraw by revoking it or by switching the
@@ -169,4 +179,4 @@ before the change takes effect, not afterwards.
 
 ## Contact
 
-[privacy contact address — to be set before publication]
+[hello@echofinders.com](mailto:hello@echofinders.com)
