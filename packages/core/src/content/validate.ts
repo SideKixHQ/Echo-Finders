@@ -410,8 +410,6 @@ function validateTrueCrime(echo: Echo): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const error = (field: string, message: string) =>
     issues.push({ echoId: echo.id, severity: "error", field, message });
-  const warn = (field: string, message: string) =>
-    issues.push({ echoId: echo.id, severity: "warning", field, message });
 
   const review = echo.trueCrimeReview;
   if (!review) {
