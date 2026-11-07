@@ -14,6 +14,19 @@ export interface PaidSession {
   readonly payment_status: string;
   readonly created: number;
   readonly metadata?: Record<string, string> | null;
+  /**
+   * Expanded to its latest charge by `lookup`. A refund is recorded on the charge, not the
+   * session: a fully refunded purchase still has `payment_status: "paid"`.
+   */
+  readonly payment_intent?: string | { readonly latest_charge?: string | { readonly refunded?: boolean } | null } | null;
+}
+
+/** Paid, and not since refunded in full. A partial refund keeps the pass. */
+function stillPaid(s: PaidSession): boolean {
+  if (s.payment_status !== "paid") return false;
+  const intent = s.payment_intent;
+  const charge = intent && typeof intent === "object" ? intent.latest_charge : null;
+  return !(charge && typeof charge === "object" && charge.refunded === true);
 }
 
 /** The few fields of a Subscription this reads. */
@@ -32,9 +45,9 @@ export function entitlementFrom(
   sessions: readonly PaidSession[],
   subscriptions: readonly Subscription[],
 ): Entitlement {
-  const passes = sessions.filter((s) => s.payment_status === "paid" && s.metadata?.plan === "city-pass" && s.metadata.city);
+  const passes = sessions.filter((s) => stillPaid(s) && s.metadata?.plan === "city-pass" && s.metadata.city);
   const cities = [...new Set(passes.map((s) => s.metadata!.city!))].sort();
-  const weeks = sessions.filter((s) => s.payment_status === "paid" && s.metadata?.plan === "week-pass" && s.metadata.city);
+  const weeks = sessions.filter((s) => stillPaid(s) && s.metadata?.plan === "week-pass" && s.metadata.city);
   // The latest week per city; one bought before the previous ended runs on from it.
   const weekPasses: WeekPass[] = [];
   for (const city of [...new Set(weeks.map((s) => s.metadata!.city!))].sort()) {

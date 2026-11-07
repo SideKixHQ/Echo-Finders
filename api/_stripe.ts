@@ -18,6 +18,13 @@ export interface StripeEnv {
   readonly STRIPE_SECRET_KEY?: string | undefined;
   readonly STRIPE_PRICE_CITY_PASS?: string | undefined;
   readonly STRIPE_PRICE_ALL_ACCESS?: string | undefined;
+  /**
+   * Optional. The Week Pass ($3.99) and the City Pass bought while a week runs ($6.00) as
+   * real Stripe prices, so they show as products in Stripe's reports. Without them the
+   * checkout sends the amounts from `PLANS` as one-off prices, which charges the same.
+   */
+  readonly STRIPE_PRICE_WEEK_PASS?: string | undefined;
+  readonly STRIPE_PRICE_CITY_UPGRADE?: string | undefined;
 }
 
 /** Are payments switched on? All three values, or none of it. */

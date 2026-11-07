@@ -69,7 +69,9 @@ export async function POST(request: Request): Promise<Response> {
       const city = CITIES.find((c) => c.id === body.cityId);
       if (!city) return reply(400, { error: "That is not a city with a Week Pass." });
       const session = await stripe<{ url: string }>("POST", "/checkout/sessions", {
-        ...inlinePrice(PLANS.week.amountMinor, `${city.name} ${PLANS.week.name}`),
+        ...(process.env.STRIPE_PRICE_WEEK_PASS
+          ? { "line_items[0][price]": process.env.STRIPE_PRICE_WEEK_PASS, "line_items[0][quantity]": 1 }
+          : inlinePrice(PLANS.week.amountMinor, `${city.name} ${PLANS.week.name}`)),
         ...oneOff("week-pass", city, customer, origin),
       });
       return reply(200, { url: session.url });
@@ -80,10 +82,13 @@ export async function POST(request: Request): Promise<Response> {
       // A Week Pass still running counts towards it. Checked against Stripe, not the phone's
       // word for it: the discount is only given to a customer Stripe says paid for the week.
       const owed = customer ? cityPassPriceMinor(await lookup(customer), city.id, Date.now()) : PLANS.city.amountMinor;
+      const upgrade = owed < PLANS.city.amountMinor;
       const price =
-        owed < PLANS.city.amountMinor
-          ? inlinePrice(owed, `${city.name} ${PLANS.city.name} (your Week Pass counted)`)
-          : { "line_items[0][price]": process.env.STRIPE_PRICE_CITY_PASS, "line_items[0][quantity]": 1 };
+        upgrade && process.env.STRIPE_PRICE_CITY_UPGRADE && owed === PLANS.city.amountMinor - PLANS.week.amountMinor
+          ? { "line_items[0][price]": process.env.STRIPE_PRICE_CITY_UPGRADE, "line_items[0][quantity]": 1 }
+          : upgrade
+            ? inlinePrice(owed, `${city.name} ${PLANS.city.name} (your Week Pass counted)`)
+            : { "line_items[0][price]": process.env.STRIPE_PRICE_CITY_PASS, "line_items[0][quantity]": 1 };
       const session = await stripe<{ url: string }>("POST", "/checkout/sessions", {
         ...price,
         ...oneOff("city-pass", city, customer, origin),
