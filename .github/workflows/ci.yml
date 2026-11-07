@@ -7,7 +7,7 @@ on:
 
 jobs:
   verify:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -24,7 +24,7 @@ jobs:
   # used to run only when somebody remembered to. They render the built app in Chromium, so
   # they are slower and live in their own job.
   audits:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
@@ -57,7 +57,7 @@ jobs:
   # with alignment and flows added they took the audits job past its 40 minutes. They run
   # alongside it instead, so both finish sooner and neither is cut off.
   journeys:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
