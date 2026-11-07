@@ -1,0 +1,53 @@
+# Inspo, film and television (from James's document, second set) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Overture 2026-09-23.0 address point for 100 South 3rd Street (Wikidata Q111888893 agrees). A working inn: heard from the sidewalk.
+id: wilmington-the-inn-that-travels-in-time
+title: "The House That Helped a Film Travel Through Time"
+summary: "The Graystone hosted The Longest Ride's 1940s party, Sleepy Hollow's horseman and many other productions."
+place: "The Graystone, 100 South Third Street, Wilmington, North Carolina"
+at: { lat: 34.234104, lng: -77.946312 }
+triggerRadiusKm: 0.05
+category: inspo
+inspo:
+  kind: creation
+  evidence: building
+format: look-below
+durationS: 36
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, the-longest-ride, sleepy-hollow, downtown]
+teaser: "A 1940s party, a headless horseman, and guests who never knew."
+script: |
+  Look at the Graystone from the sidewalk. Guests stay here, so this story is for the sidewalk.
+
+  It is one of Wilmington's most popular places to film. In The Longest Ride, the main characters
+  danced at a 1940s party set here. In Sleepy Hollow, its grand dining room was where the Headless
+  Horseman took the heads of four Masons, and horses were filmed outside.
+
+  A real house is stuck in its own century. On film, the Graystone has been a 1940s
+  ballroom and a haunted present day.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "On film, the Graystone has been a 1940s ballroom and a haunted present day."
+    source: 1
+    quote: "Main characters cut a rug at a 1940's era party set at the Graystone."
+  - says: "It is one of Wilmington's most popular places to film."
+    source: 1
+    quote: "It's a Cinderella Story for one of Wilmington's most popular locales for feature films and TV series."
+  - says: "In The Longest Ride, the main characters danced at a 1940s party set here."
+    source: 1
+    quote: "Main characters cut a rug at a 1940's era party set at the Graystone."
+  - says: "In Sleepy Hollow, its grand dining room was where the Headless Horseman took the heads of four Masons, and horses were filmed outside."
+    source: 1
+    quote: "serves as the site of a riveting moment in which the Headless Horseman beheads the four Masons. Exterior horse scenes also took place here"
+  - says: "Look at the Graystone from the sidewalk."
+    source: 1
+    quote: "Graystone 100 S 3rd St."
+sources:
+  - title: "Top Wilmington & Beaches Film and TV Locations"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/wilmingtonnc/Wilmington_Film_and_TV_Location_Guide_1b6bc72d-2881-4fd5-b656-0344de2b7a24.pdf
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

@@ -11156,6 +11156,50 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-a-bar-takes-a-road-trip",
+    "title": "A Wilmington Bar Takes a Road Trip",
+    "summary": "Blue Post Billiards played a Louisville barbecue joint in Tammy, and has turned up in One Tree Hill and Sleepy Hollow.",
+    "point": {
+      "at": {
+        "lat": 34.234631,
+        "lng": -77.949478
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Blue Post Billiards, 15 South Water Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 40,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the door of Blue Post Billiards. You have to be over twenty-one to go in, but the\nmovies have been coming here for years.\n\nIn the film Tammy, it played a barbecue joint in Louisville, Kentucky, where Melissa McCarthy's\nTammy and her grandmother, played by Susan Sarandon, try to pick up men. A local bluegrass band,\nBig Al Hall and Possum Creek, played in the scene.\n\nOne Tree Hill sent Lucas and Brooke here on their first tattoo date, and Sleepy Hollow used the\nalley outside. This pool hall keeps being cast as somewhere else.\n",
+    "teaser": "In Tammy, this bar was in Kentucky.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "tammy",
+      "one-tree-hill",
+      "sleepy-hollow",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-bar-takes-a-road-trip",
+        "durationS": 40
+      }
+    ]
+  },
+  {
     "id": "wilmington-a-bookshop-plays-a-bookshop",
     "title": "A Bookshop Plays a Bookshop",
     "summary": "Papercut Books stood in for the Whale of a Tale Bookshop in The Summer I Turned Pretty.",
@@ -11279,6 +11323,48 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/wilmington-a-college-goes-back-to-high-school",
         "durationS": 38
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-fountain-in-sleepy-hollow",
+    "title": "An Ordinary Intersection Enters a Supernatural Story",
+    "summary": "At the Kenan Memorial Fountain, Ichabod and Abbie meet the lost boy in Sleepy Hollow's episode John Doe.",
+    "point": {
+      "at": {
+        "lat": 34.2357,
+        "lng": -77.944
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Kenan Memorial Fountain, Fifth Avenue and Market Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 31,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the fountain where Fifth Avenue meets Market Street.\n\nIn Sleepy Hollow, this is where Ichabod and Abbie meet the lost boy, in an episode called John\nDoe. The same corner has served other productions too: We're the Millers filmed at the building\nacross the street.\n\nCars pass this fountain every day. On screen, it was the backdrop for a supernatural mystery,\nwhich is a lot to ask of a fountain in traffic.\n",
+    "teaser": "Ichabod and Abbie met a lost boy at this fountain.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "site"
+    },
+    "tags": [
+      "film",
+      "sleepy-hollow",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-fountain-in-sleepy-hollow",
+        "durationS": 31
       }
     ]
   },
@@ -11598,6 +11684,49 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-a-museum-plays-an-art-school",
+    "title": "A Museum Plays an Art School",
+    "summary": "The Bellamy Mansion played the Savannah College of Art and Design in One Tree Hill, and its kitchen was in Sleepy Hollow.",
+    "point": {
+      "at": {
+        "lat": 34.236073,
+        "lng": -77.943008
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 39,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the columns of the Bellamy Mansion. It is a museum of history and the design arts,\nand that is exactly why a television show borrowed it.\n\nIn a 2006 episode of One Tree Hill, Peyton and Jake had a scene here, and the mansion was called\nthe Savannah College of Art and Design. A museum of design played a school of design.\n\nIt was not done with fiction. Years later, its kitchen appeared in Sleepy Hollow, in an episode\ncalled Sin Eater. A house built before the Civil War keeps being cast as somewhere else.\n",
+    "teaser": "One Tree Hill sent Peyton to art school. It sent her here.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "one-tree-hill",
+      "sleepy-hollow",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-museum-plays-an-art-school",
+        "durationS": 39
+      }
+    ]
+  },
+  {
     "id": "wilmington-a-new-home-for-old-evidence",
     "title": "A New Home for Old Evidence",
     "summary": "Cape Fear Museum began in 1898.",
@@ -11831,6 +11960,48 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/wilmington-a-small-gift-by-a-wide-river",
         "durationS": 35
+      }
+    ]
+  },
+  {
+    "id": "wilmington-a-superhero-above-the-river",
+    "title": "A Superhero Sequence Above a Real River",
+    "summary": "Iron Man 3 filmed a stunt with actors on cables between the Wilmington Convention Center and the Isabel Holmes Bridge.",
+    "point": {
+      "at": {
+        "lat": 34.2415,
+        "lng": -77.952
+      },
+      "triggerRadiusKm": 0.12,
+      "place": "Wilmington Riverwalk by the Convention Center, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 34,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along the river, from the Convention Center toward the Isabel Holmes Bridge.\n\nFor Iron Man 3, actors could be seen hanging from cables and flying overhead, filming a stunt\nbetween the Convention Center and the bridge.\n\nPeople walking here that day saw the trick before the effect: real people on real wires above a\nreal river. The finished film became the top grossing film of 2013, and part of it was made in\nthe air above this stretch of the Cape Fear.\n",
+    "teaser": "Actors flew on cables between here and the bridge.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "site"
+    },
+    "tags": [
+      "film",
+      "iron-man-3",
+      "riverwalk"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-a-superhero-above-the-river",
+        "durationS": 34
       }
     ]
   },
@@ -13058,6 +13229,49 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-real-art-in-a-film-romance",
+    "title": "Real Art Inside a Fictional Romance",
+    "summary": "The Longest Ride filmed its museum scene at the Cameron Art Museum, under a James Grashow installation of cardboard monkeys.",
+    "point": {
+      "at": {
+        "lat": 34.184181,
+        "lng": -77.915726
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Cameron Art Museum, 3201 South 17th Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 38,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the museum. For a Nicholas Sparks film, it played itself: a place to fall for\nsomebody in front of art.\n\nThe Longest Ride shot its museum scene here over three days. Britt Robertson, Scott Eastwood and\nGloria Reuben mingled under an exhibit by James Grashow made of dozens of cardboard monkeys.\n\nThe romance was invented. The art was real, and it was already here. Film crews borrow museums\nfor the same reason people go on dates in them: something interesting to look at while you decide\nhow you feel.\n",
+    "teaser": "The Longest Ride's museum date, under a room of cardboard monkeys.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "the-longest-ride",
+      "nicholas-sparks",
+      "museum"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-real-art-in-a-film-romance",
+        "durationS": 38
+      }
+    ]
+  },
+  {
     "id": "wilmington-robert-taylor-beyond-wilmington",
     "title": "Robert Taylor Beyond Wilmington",
     "summary": "Robert Robinson Taylor was born in Wilmington and became MIT's first known Black graduate, completing his degree in 1892.",
@@ -13892,6 +14106,90 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "wilmington-the-courthouse-sheriffs-office",
+    "title": "A Courthouse With a Television Identity",
+    "summary": "The Historic New Hanover County Courthouse was the Sleepy Hollow Sheriff's Department, seen throughout the series.",
+    "point": {
+      "at": {
+        "lat": 34.2365,
+        "lng": -77.945206
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Historic New Hanover County Courthouse, 316 Princess Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 28,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the old courthouse. In Sleepy Hollow, this was the Sleepy Hollow Sheriff's\nDepartment, the show's most iconic location. Its outside appears all through the series.\n\nIt has played other parts. For Dawson's Creek, its interior was the Capeside train station.\n\nA building made for real trials became the headquarters of a fictional fight against the\nsupernatural.\n",
+    "teaser": "Sleepy Hollow's Sheriff's Department, and the show's most famous building.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "sleepy-hollow",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-courthouse-sheriffs-office",
+        "durationS": 28
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-deep-river-apartments",
+    "title": "An Apartment Building Becomes a Fictional Address",
+    "summary": "The Carolina Apartments building played the Deep River Apartments in Blue Velvet; its fire escapes appear near the end of the film.",
+    "point": {
+      "at": {
+        "lat": 34.2358,
+        "lng": -77.9443
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Carolina Apartments, Market Street at Fifth Avenue, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 37,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across at the brownstone on the corner, from this side of the street. People live\nhere, so this story is for the sidewalk.\n\nIn Blue Velvet, it was the Deep River Apartments, home of the singer Dorothy Vallens. The\noutside of the building carries much of the film's mood, and its fire escapes appear in key\nscenes near the end.\n\nIt is one of Wilmington's few brownstones, which is part of why it photographs like a city\nsomewhere else. Fans of the film still come here from all over the world.\n",
+    "teaser": "Blue Velvet's Deep River Apartments. Look from across the street.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "blue-velvet",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-deep-river-apartments",
+        "durationS": 37
+      }
+    ]
+  },
+  {
     "id": "wilmington-the-department-stores-big-windows",
     "title": "The Department Store's Big Windows",
     "summary": "This five-story commercial building dates to 1906, with a later addition.",
@@ -13928,6 +14226,48 @@ export const LIBRARY: readonly Echo[] = [
       "downtown"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "wilmington-the-diner-in-blue-velvet",
+    "title": "The Diner Inside a David Lynch Film",
+    "summary": "Arlene's Diner in David Lynch's Blue Velvet was filmed in Wilmington; the building is now the restaurant Savorez.",
+    "point": {
+      "at": {
+        "lat": 34.23777,
+        "lng": -77.944778
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Savorez, Chestnut Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 37,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the restaurant on the corner. In David Lynch's Blue Velvet, this was Arlene's Diner.\n\nBlue Velvet came out in 1986 and used Wilmington all over: the police station, a high school,\nMarket and Front streets, and this diner. Today it is Savorez, serving Latin American inspired\nfood.\n\nThe film was strange and unsettling, and it became a cult classic that still brings fans from\nall over the world to Wilmington. Some of them come to this corner, for a meal where a diner\nscene was once made.\n",
+    "teaser": "Arlene's Diner served coffee in Blue Velvet. It still serves food.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "blue-velvet",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-diner-in-blue-velvet",
+        "durationS": 37
+      }
+    ]
   },
   {
     "id": "wilmington-the-dog-made-of-metal",
@@ -14501,6 +14841,49 @@ export const LIBRARY: readonly Echo[] = [
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/wilmington-the-household-that-fled-yellow-fever",
         "durationS": 71
+      }
+    ]
+  },
+  {
+    "id": "wilmington-the-inn-that-travels-in-time",
+    "title": "The House That Helped a Film Travel Through Time",
+    "summary": "The Graystone hosted The Longest Ride's 1940s party, Sleepy Hollow's horseman and many other productions.",
+    "point": {
+      "at": {
+        "lat": 34.234104,
+        "lng": -77.946312
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "The Graystone, 100 South Third Street, Wilmington, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 36,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the Graystone from the sidewalk. Guests stay here, so this story is for the sidewalk.\n\nIt is one of Wilmington's most popular places to film. In The Longest Ride, the main characters\ndanced at a 1940s party set here. In Sleepy Hollow, its grand dining room was where the Headless\nHorseman took the heads of four Masons, and horses were filmed outside.\n\nA real house is stuck in its own century. On film, the Graystone has been a 1940s\nballroom and a haunted present day.\n",
+    "teaser": "A 1940s party, a headless horseman, and guests who never knew.",
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "film",
+      "the-longest-ride",
+      "sleepy-hollow",
+      "downtown"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wilmington-the-inn-that-travels-in-time",
+        "durationS": 36
       }
     ]
   },
