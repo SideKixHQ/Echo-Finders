@@ -8,7 +8,7 @@ at: { lat: 34.1944, lng: -77.8053 }
 triggerRadiusKm: 0.08
 category: kids
 format: look-below
-durationS: 40
+durationS: 34
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
 
   Lumina was taken down in 1973. Now close your eyes and switch it back on. How many lights can you
   count?
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It was called Lumina, and it opened in 1905."
@@ -63,3 +63,41 @@ sources:
     url: https://www.dncr.nc.gov/blog/2016/06/03/lumina-storied-beacon-wrightsville-beach
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/wrightsville-the-building-made-bright/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 34.3
+    audioBytes: 550077
+    transcript:
+      totalS: 34.3
+      lines:
+        - text: Stay beside your grownup on the sidewalk and look around.
+          atS: 0
+          durationS: 2.84
+        - text: Near here, long ago, stood a building that glowed.
+          atS: 3.29
+          durationS: 3.09
+        - text: It was called Lumina, and it opened in 1905.
+          atS: 6.82
+          durationS: 3.31
+        - text: More than a thousand light bulbs lit it up.
+          atS: 10.63
+          durationS: 2.36
+        - text: It was so bright that ships could find their way by it, and people nicknamed it The Palace of Light.
+          atS: 13.27
+          durationS: 5.55
+        - text: People went bowling downstairs and danced in a ballroom upstairs.
+          atS: 19.14
+          durationS: 3.49
+        - text: They even watched movies on a big screen out over the waves!
+          atS: 22.85
+          durationS: 3.25
+        - text: Lumina was taken down in 1973.
+          atS: 26.54
+          durationS: 2.87
+        - text: Now close your eyes and switch it back on.
+          atS: 29.69
+          durationS: 2.62
+        - text: How many lights can you count?
+          atS: 32.63
+          durationS: 1.68

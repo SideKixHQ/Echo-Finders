@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: site
 format: look-below
-durationS: 35
+durationS: 32
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
 
   Fans still come to recreate the scene. The ice cream shop nearby sells replica bracelets, and
   you can buy the Cracker Jack yourself. A prize from a snack box became a souvenir.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look along the Riverwalk, near the foot of Dock Street and the old J.W. Brooks building."
@@ -49,3 +49,38 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/one-tree-hill-walking-tour/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-small-gift-by-a-wide-river/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 31.5
+    audioBytes: 504937
+    transcript:
+      totalS: 31.5
+      lines:
+        - text: Look along the Riverwalk, near the foot of Dock Street and the old J.W.
+          atS: 0
+          durationS: 3.48
+        - text: Brooks building.
+          atS: 3.51
+          durationS: 1.05
+        - text: Somewhere along here is the bench fans call the Naley Bench.
+          atS: 4.93
+          durationS: 3.4
+        - text: It is where Nathan gave Haley a bracelet out of a box of Cracker Jack.
+          atS: 8.72
+          durationS: 4.18
+        - text: A wide river, and a very small gift.
+          atS: 13.18
+          durationS: 3.05
+        - text: That is why people remember it.
+          atS: 16.51
+          durationS: 1.9
+        - text: Fans still come to recreate the scene.
+          atS: 18.85
+          durationS: 2.81
+        - text: The ice cream shop nearby sells replica bracelets, and you can buy the Cracker Jack yourself.
+          atS: 22.27
+          durationS: 5.93
+        - text: A prize from a snack box became a souvenir.
+          atS: 28.58
+          durationS: 2.9

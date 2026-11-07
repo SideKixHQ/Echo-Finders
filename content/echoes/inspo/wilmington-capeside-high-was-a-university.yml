@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 41
+durationS: 39
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
   Real students have walked these paths toward real degrees, while fictional teenagers walked them
   toward fictional exams. During the course of the series, 128 episodes over six seasons were filmed
   in Wilmington and our Island Beaches. For a while, this campus ran on lectures and on fiction at the same time.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Fans of Dawson's Creek know it as Capeside High."
@@ -45,3 +45,29 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/dawsons-creek-locations-tour/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-capeside-high-was-a-university/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 38.8
+    audioBytes: 621548
+    transcript:
+      totalS: 38.8
+      lines:
+        - text: Look at Alderman Hall.
+          atS: 0
+          durationS: 1.51
+        - text: Fans of Dawson's Creek know it as Capeside High.
+          atS: 2.02
+          durationS: 3.49
+        - text: The University of North Carolina Wilmington doubled as the Capeside High School campus, and Alderman Hall is one of the most recognizable buildings in the show.
+          atS: 6.47
+          durationS: 9.86
+        - text: Real students have walked these paths toward real degrees, while fictional teenagers walked them toward fictional exams.
+          atS: 17.44
+          durationS: 7.32
+        - text: During the course of the series, 128 episodes over six seasons were filmed in Wilmington and our Island Beaches.
+          atS: 25.58
+          durationS: 7.87
+        - text: For a while, this campus ran on lectures and on fiction at the same time.
+          atS: 34.26
+          durationS: 4.52

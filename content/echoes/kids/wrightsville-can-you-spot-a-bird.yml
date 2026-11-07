@@ -8,7 +8,7 @@ at: { lat: 34.1869, lng: -77.8107 }
 triggerRadiusKm: 0.15
 category: kids
 format: look-below
-durationS: 42
+durationS: 38
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
 
   The best bird detectives don't go looking for nests. They stay back and watch. If a bird
   calls loudly at you, step back together.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Some birds lay their eggs right on this beach."
@@ -61,3 +61,47 @@ sources:
     url: https://www.townofwrightsvillebeach.com/609/Coastal-Wildlife-Protection
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/wrightsville-can-you-spot-a-bird/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 38.4
+    audioBytes: 615696
+    transcript:
+      totalS: 38.4
+      lines:
+        - text: Here is a beach challenge.
+          atS: 0
+          durationS: 1.66
+        - text: Keep your feet still, beside your grownup, outside every rope and sign.
+          atS: 2.04
+          durationS: 4.9
+        - text: Look at the sand, then the sky.
+          atS: 7.38
+          durationS: 2.33
+        - text: Can you see a bird standing, flying, or carrying a fish?
+          atS: 10.04
+          durationS: 4.26
+        - text: Some birds lay their eggs right on this beach.
+          atS: 14.81
+          durationS: 2.55
+        - text: They scratch a little hollow in the sand, called a scrape.
+          atS: 17.69
+          durationS: 3
+        - text: A scrape only counts as a nest once it has eggs in it.
+          atS: 21.07
+          durationS: 3.03
+        - text: Nests are very hard to see.
+          atS: 24.43
+          durationS: 1.83
+        - text: So an empty looking patch might be somebody's nursery.
+          atS: 26.7
+          durationS: 3.12
+        - text: The best bird detectives don't go looking for nests.
+          atS: 30.15
+          durationS: 3.04
+        - text: They stay back and watch.
+          atS: 33.44
+          durationS: 1.44
+        - text: If a bird calls loudly at you, step back together.
+          atS: 35.2
+          durationS: 3.2

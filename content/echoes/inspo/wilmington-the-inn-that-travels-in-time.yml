@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 36
+durationS: 34
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   A real house is stuck in its own century. On film, the Graystone has been a 1940s
   ballroom and a haunted present day.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "On film, the Graystone has been a 1940s ballroom and a haunted present day."
@@ -51,3 +51,32 @@ sources:
     url: https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/wilmingtonnc/Wilmington_Film_and_TV_Location_Guide_1b6bc72d-2881-4fd5-b656-0344de2b7a24.pdf
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-inn-that-travels-in-time/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 34.3
+    audioBytes: 550077
+    transcript:
+      totalS: 34.3
+      lines:
+        - text: Look at the Graystone from the sidewalk.
+          atS: 0
+          durationS: 2.36
+        - text: Guests stay here, so this story is for the sidewalk.
+          atS: 2.8
+          durationS: 3.9
+        - text: It is one of Wilmington's most popular places to film.
+          atS: 7.21
+          durationS: 3.13
+        - text: In The Longest Ride, the main characters danced at a 1940s party set here.
+          atS: 10.67
+          durationS: 5.26
+        - text: In Sleepy Hollow, its grand dining room was where the Headless Horseman took the heads of four Masons, and horses were filmed outside.
+          atS: 16.53
+          durationS: 8.11
+        - text: A real house is stuck in its own century.
+          atS: 25.25
+          durationS: 2.87
+        - text: On film, the Graystone has been a 1940s ballroom and a haunted present day.
+          atS: 28.93
+          durationS: 5.39

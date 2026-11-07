@@ -8,7 +8,7 @@ at: { lat: 34.1944, lng: -77.8053 }
 triggerRadiusKm: 0.1
 category: arts
 format: short
-durationS: 54
+durationS: 53
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
 
   The pavilion was condemned in 1972 and demolished in 1973. On a summer evening here, picture the
   lights coming on along this shore, bright enough to steer a ship by.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look along South Lumina Avenue."
@@ -72,3 +72,44 @@ sources:
     url: https://library.uncw.edu/archives_special/lumina-palace-light
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-an-evening-at-lumina/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.8
+    audioBytes: 846828
+    transcript:
+      totalS: 52.8
+      lines:
+        - text: Look along South Lumina Avenue.
+          atS: 0
+          durationS: 2.19
+        - text: Near here stood Lumina, the pavilion people called the Palace of Light.
+          atS: 2.52
+          durationS: 4.14
+        - text: It opened on June 3, 1905, near the end of the electric trolley line.
+          atS: 7.17
+          durationS: 5.05
+        - text: Its builder, Hugh MacRae, owned the local electric utility, and over a thousand incandescent bulbs lit it up.
+          atS: 12.61
+          durationS: 7.51
+        - text: He hoped the glow would get more people using electricity.
+          atS: 20.82
+          durationS: 3.18
+        - text: Ships could navigate by it.
+          atS: 24.44
+          durationS: 1.77
+        - text: The second level was a dance floor with a band shell for the orchestra.
+          atS: 27.02
+          durationS: 3.89
+        - text: Above it, a promenade fifteen feet wide looked down on the dancers.
+          atS: 31.86
+          durationS: 4.67
+        - text: All three levels were for white visitors only.
+          atS: 36.97
+          durationS: 2.86
+        - text: The pavilion was condemned in 1972 and demolished in 1973.
+          atS: 40.26
+          durationS: 5.22
+        - text: On a summer evening here, picture the lights coming on along this shore, bright enough to steer a ship by.
+          atS: 46.09
+          durationS: 6.76

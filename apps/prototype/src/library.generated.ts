@@ -11169,7 +11169,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 40,
+    "durationS": 35,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11179,6 +11179,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the door of Blue Post Billiards. You have to be over twenty-one to go in, but the\nmovies have been coming here for years.\n\nIn the film Tammy, it played a barbecue joint in Louisville, Kentucky, where Melissa McCarthy's\nTammy and her grandmother, played by Susan Sarandon, try to pick up men. A local bluegrass band,\nBig Al Hall and Possum Creek, played in the scene.\n\nOne Tree Hill sent Lucas and Brooke here on their first tattoo date, and Sleepy Hollow used the\nalley outside. This pool hall keeps being cast as somewhere else.\n",
     "teaser": "In Tammy, this bar was in Kentucky.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-bar-takes-a-road-trip/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 35.3,
+        "audioBytes": 566377
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -11190,14 +11198,7 @@ export const LIBRARY: readonly Echo[] = [
       "sleepy-hollow",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-bar-takes-a-road-trip",
-        "durationS": 40
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-bookshop-plays-a-bookshop",
@@ -11213,7 +11214,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 31,
+    "durationS": 30,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11223,6 +11224,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the bookshop window. In The Summer I Turned Pretty, this shop played the Whale of a\nTale Bookshop.\n\nThere is a neat loop in that. The series began as a novel, and when it needed a bookshop in its\nfictional beach town, it found a real independent one here.\n\nInside, you can buy a copy of The Summer I Turned Pretty. The book became a show, the show\nborrowed a bookshop, and the bookshop now sells the book.\n",
     "teaser": "A story that began as a book came back to a bookshop.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-bookshop-plays-a-bookshop/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 30.3,
+        "audioBytes": 485711
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -11232,14 +11241,7 @@ export const LIBRARY: readonly Echo[] = [
       "the-summer-i-turned-pretty",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-bookshop-plays-a-bookshop",
-        "durationS": 31
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-cafe-before-tree-hill",
@@ -11255,7 +11257,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 34,
+    "durationS": 36,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11265,6 +11267,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the corner storefront. Today it is a pizza place.\n\nIn the pilot episode of One Tree Hill, this building stood in as Karen's Cafe. Nine seasons\nlater, in the show's final season, it came back as Tree Hill Cafe.\n\nMost locations in a long series come and go. This building bookended the whole story.\n\nBetween 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area.\nThe beginning and the end of all of them met at this corner.\n",
     "teaser": "The first episode and the last both came back to this corner.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-cafe-before-tree-hill/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 35.5,
+        "audioBytes": 568885
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -11274,14 +11284,7 @@ export const LIBRARY: readonly Echo[] = [
       "one-tree-hill",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-cafe-before-tree-hill",
-        "durationS": 34
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-college-goes-back-to-high-school",
@@ -11297,7 +11300,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 38,
+    "durationS": 35,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11307,6 +11310,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the front entrance. On television, this was Tree Hill High School.\n\nThe Joe and Barbara Schwartz Center belongs to Cape Fear Community College. Its front was the\noutside of the high school, and round the back is where exterior scenes of the gym were filmed.\n\nIt had another part to play. Dawson's Creek used it too, as a film festival lobby.\n\nA real college, playing a fictional high school, for a show about growing up. For a generation\nof viewers, this doorway was where every school day began.\n",
     "teaser": "The front of Tree Hill High is a college building. Walk round the back for the gym.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-college-goes-back-to-high-school/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 34.7,
+        "audioBytes": 555928
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -11317,14 +11328,7 @@ export const LIBRARY: readonly Echo[] = [
       "dawsons-creek",
       "cfcc"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-college-goes-back-to-high-school",
-        "durationS": 38
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-fountain-in-sleepy-hollow",
@@ -11340,7 +11344,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 31,
+    "durationS": 27,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11350,6 +11354,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the fountain where Fifth Avenue meets Market Street.\n\nIn Sleepy Hollow, this is where Ichabod and Abbie meet the lost boy, in an episode called John\nDoe. The same corner has served other productions too: We're the Millers filmed at the building\nacross the street.\n\nCars pass this fountain every day. On screen, it was the backdrop for a supernatural mystery,\nwhich is a lot to ask of a fountain in traffic.\n",
     "teaser": "Ichabod and Abbie met a lost boy at this fountain.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-fountain-in-sleepy-hollow/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 27.1,
+        "audioBytes": 435138
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "site"
@@ -11359,14 +11371,7 @@ export const LIBRARY: readonly Echo[] = [
       "sleepy-hollow",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-fountain-in-sleepy-hollow",
-        "durationS": 31
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-garden-with-different-jobs",
@@ -11420,7 +11425,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 34,
+    "durationS": 30,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11430,6 +11435,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look for the Ability Garden. In the final episode of Dawson's Creek, this is where Jen said her\ngoodbye.\n\nOf all the places the series could have chosen for its saddest scene, it chose a garden: a\nplace that is always in the middle of something growing, ending and coming back.\n\nDuring the course of the series, 128 episodes over six seasons were filmed in Wilmington and our\nIsland Beaches. The show's hardest farewell was filmed among the plants.\n",
     "teaser": "The last goodbye of Dawson's Creek was filmed in a garden.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-goodbye-in-a-living-garden/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 29.9,
+        "audioBytes": 479024
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "site"
@@ -11439,14 +11452,7 @@ export const LIBRARY: readonly Echo[] = [
       "dawsons-creek",
       "garden"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-goodbye-in-a-living-garden",
-        "durationS": 34
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "wilmington-a-government-before-independence",
@@ -11499,7 +11505,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 29,
+    "durationS": 27,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11509,6 +11515,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the pizzeria. In The Summer I Turned Pretty, this is where Belly and her brother Steven\nshare a heart-to-heart over pizza.\n\nFans who want the full television moment ask for a table near the cheese grater mural in the\nback.\n\nA brother and a sister, a slice each, saying the thing that is hard to say. The show filmed\nit in a working restaurant, where anyone can order the same pizza.\n",
     "teaser": "Look for the cheese grater mural. That is the table.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-heart-to-heart-over-pizza/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 26.8,
+        "audioBytes": 430541
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -11518,14 +11532,7 @@ export const LIBRARY: readonly Echo[] = [
       "the-summer-i-turned-pretty",
       "south-front"
     ],
-    "remoteness": 0.74,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-heart-to-heart-over-pizza",
-        "durationS": 29
-      }
-    ]
+    "remoteness": 0.74
   },
   {
     "id": "wilmington-a-house-built-to-catch-the-air",
@@ -11617,7 +11624,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 33,
+    "durationS": 32,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11627,6 +11634,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the old brick buildings of the Cotton Exchange, now full of local shops.\n\nIn season three of The Summer I Turned Pretty, this was the backdrop for young Belly and Conrad:\na memory, filmed in real brick. Long before that, Dawson's Creek filmed in the courtyard and the\nparking lot here.\n\nTeenage television keeps coming back to this courtyard. When a story needs to look back at\nchildhood, it helps to film somewhere that already feels old.\n",
     "teaser": "Young Belly and Conrad, and Dawson's Creek before them.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-memory-borrowed-from-the-cotton-exchange/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 32.1,
+        "audioBytes": 514550
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -11637,14 +11652,7 @@ export const LIBRARY: readonly Echo[] = [
       "dawsons-creek",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-memory-borrowed-from-the-cotton-exchange",
-        "durationS": 33
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-museum-begins-with-one-case",
@@ -11697,7 +11705,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 39,
+    "durationS": 37,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11707,6 +11715,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the columns of the Bellamy Mansion. It is a museum of history and the design arts,\nand that is exactly why a television show borrowed it.\n\nIn a 2006 episode of One Tree Hill, Peyton and Jake had a scene here, and the mansion was called\nthe Savannah College of Art and Design. A museum of design played a school of design.\n\nIt was not done with fiction. Years later, its kitchen appeared in Sleepy Hollow, in an episode\ncalled Sin Eater. A house built before the Civil War keeps being cast as somewhere else.\n",
     "teaser": "One Tree Hill sent Peyton to art school. It sent her here.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-museum-plays-an-art-school/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 36.8,
+        "audioBytes": 590201
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -11717,14 +11733,7 @@ export const LIBRARY: readonly Echo[] = [
       "sleepy-hollow",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-museum-plays-an-art-school",
-        "durationS": 39
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-new-home-for-old-evidence",
@@ -11777,7 +11786,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 32,
+    "durationS": 29,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11787,6 +11796,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the Cape Fear Club from the sidewalk. It is a private club, and you will not need to go\nin to hear this.\n\nIron Man 3 shot a New Year's Eve party here. It was the final solo movie of Tony Stark, played by\nRobert Downey Jr., and it was set at Christmastime.\n\nThe same film used the North Carolina Port of Wilmington for its Iron Legion scene. A superhero\nstory counted down to midnight in a quiet building on Chestnut Street.\n",
     "teaser": "Tony Stark's last solo film counted down to midnight here.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-private-club-throws-a-marvel-party/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 28.9,
+        "audioBytes": 463977
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -11796,14 +11813,7 @@ export const LIBRARY: readonly Echo[] = [
       "iron-man-3",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-private-club-throws-a-marvel-party",
-        "durationS": 32
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-real-riverwalk-an-invented-romance",
@@ -11893,7 +11903,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 38,
+    "durationS": 37,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11903,6 +11913,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the riverfront restaurant at the southern end of the Riverwalk. In the last episode of\nDawson's Creek, this was the Icehouse, Pacey's restaurant.\n\nIt was not the first Icehouse. The original stood a couple of blocks north, at 115 South Water\nStreet. When the series needed its ending, it found a new waterfront to finish on.\n\nDuring the course of the series, 128 episodes over six seasons were filmed in Wilmington and our\nIsland Beaches. The story of Capeside closed here, beside a real river.\n",
     "teaser": "Dawson's Creek ended where the river bends.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-restaurant-at-the-end-of-the-story/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 36.8,
+        "audioBytes": 590201
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -11912,14 +11930,7 @@ export const LIBRARY: readonly Echo[] = [
       "dawsons-creek",
       "riverwalk"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-restaurant-at-the-end-of-the-story",
-        "durationS": 38
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-small-gift-by-a-wide-river",
@@ -11935,7 +11946,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 35,
+    "durationS": 32,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11945,6 +11956,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look along the Riverwalk, near the foot of Dock Street and the old J.W. Brooks building.\n\nSomewhere along here is the bench fans call the Naley Bench. It is where Nathan gave Haley a\nbracelet out of a box of Cracker Jack.\n\nA wide river, and a very small gift. That is why people remember it.\n\nFans still come to recreate the scene. The ice cream shop nearby sells replica bracelets, and\nyou can buy the Cracker Jack yourself. A prize from a snack box became a souvenir.\n",
     "teaser": "A Cracker Jack bracelet, and a bench fans still come looking for.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-small-gift-by-a-wide-river/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 31.5,
+        "audioBytes": 504937
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "site"
@@ -11954,14 +11973,7 @@ export const LIBRARY: readonly Echo[] = [
       "one-tree-hill",
       "riverwalk"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-small-gift-by-a-wide-river",
-        "durationS": 35
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-superhero-above-the-river",
@@ -11977,7 +11989,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 34,
+    "durationS": 31,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11987,6 +11999,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look along the river, from the Convention Center toward the Isabel Holmes Bridge.\n\nFor Iron Man 3, actors could be seen hanging from cables and flying overhead, filming a stunt\nbetween the Convention Center and the bridge.\n\nPeople walking here that day saw the trick before the effect: real people on real wires above a\nreal river. The finished film became the top grossing film of 2013, and part of it was made in\nthe air above this stretch of the Cape Fear.\n",
     "teaser": "Actors flew on cables between here and the bridge.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-superhero-above-the-river/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 31.3,
+        "audioBytes": 502430
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "site"
@@ -11996,14 +12016,7 @@ export const LIBRARY: readonly Echo[] = [
       "iron-man-3",
       "riverwalk"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-superhero-above-the-river",
-        "durationS": 34
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-table-at-circa-1922",
@@ -12019,7 +12032,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 32,
+    "durationS": 28,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12029,6 +12042,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the restaurant. In The Summer I Turned Pretty, Conrad and Jeremiah meet their dad here\nfor a meal.\n\nA restaurant scene is a writer's favorite pressure: nobody can leave before the food arrives, and\neverybody has to be polite in public. Whatever the brothers left unsaid, they left it at a table here.\n\nThe restaurant is known for its seasonal American cooking. On screen, it served a family\nsomething harder to swallow.\n",
     "teaser": "Two brothers meet their father for a meal.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-table-at-circa-1922/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 28.2,
+        "audioBytes": 452692
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -12038,14 +12059,7 @@ export const LIBRARY: readonly Echo[] = [
       "the-summer-i-turned-pretty",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-table-at-circa-1922",
-        "durationS": 32
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-warehouse-with-a-second-life",
@@ -12061,7 +12075,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 40,
+    "durationS": 36,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12071,6 +12085,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the building in front of you. On screen, it was TRIC.\n\nTRIC was the nightclub at the heart of One Tree Hill, and this is where it was filmed. The show\nended, and the building did not go back to being anonymous.\n\nToday it runs TRIC Tours. Visitors walk through at their own pace and take photos with replica\nprops from the characters' rooms and the record label.\n\nBetween 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area. Here,\nthe set outlived the show and became a place people travel to.\n",
     "teaser": "The show's nightclub is still here, and you can still go in.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-warehouse-with-a-second-life/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 35.8,
+        "audioBytes": 573901
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -12080,14 +12102,7 @@ export const LIBRARY: readonly Echo[] = [
       "one-tree-hill",
       "south-front"
     ],
-    "remoteness": 0.51,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-warehouse-with-a-second-life",
-        "durationS": 40
-      }
-    ]
+    "remoteness": 0.51
   },
   {
     "id": "wilmington-a-welcome-with-teeth",
@@ -12215,7 +12230,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 42,
+    "durationS": 40,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12225,6 +12240,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the storefront at 212 North Front Street. In Dawson's Creek, this was Screen Play\nVideo, where Pacey worked after school.\n\nA video store in a show about a boy who wanted to make films. The shelves were the point: rows\nof other people's stories, waiting to be rented for the weekend.\n\nDuring the course of the series, 128 episodes over six seasons were filmed in Wilmington and our\nIsland Beaches. It catapulted the careers of James Van Der Beek, Katie Holmes, Joshua Jackson and\nMichelle Williams. Some of that began behind a counter in this storefront.\n",
     "teaser": "Pacey's after-school job was behind this storefront.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-before-streaming-this-door/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 40.1,
+        "audioBytes": 642864
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -12234,14 +12257,7 @@ export const LIBRARY: readonly Echo[] = [
       "dawsons-creek",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-before-streaming-this-door",
-        "durationS": 42
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-bricks-that-crossed-two-churches",
@@ -12332,7 +12348,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 41,
+    "durationS": 39,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12342,6 +12358,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at Alderman Hall. Fans of Dawson's Creek know it as Capeside High.\n\nThe University of North Carolina Wilmington doubled as the Capeside High School campus, and\nAlderman Hall is one of the most recognizable buildings in the show.\n\nReal students have walked these paths toward real degrees, while fictional teenagers walked them\ntoward fictional exams. During the course of the series, 128 episodes over six seasons were filmed\nin Wilmington and our Island Beaches. For a while, this campus ran on lectures and on fiction at the same time.\n",
     "teaser": "Dawson's Creek went to high school at UNCW.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-capeside-high-was-a-university/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 38.8,
+        "audioBytes": 621548
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -12351,14 +12375,7 @@ export const LIBRARY: readonly Echo[] = [
       "dawsons-creek",
       "uncw"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-capeside-high-was-a-university",
-        "durationS": 41
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "wilmington-chestnut-streets-wooden-church",
@@ -13199,7 +13216,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 36,
+    "durationS": 37,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13209,6 +13226,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the old church and its grounds. They have been on screen since One Tree Hill began.\n\nSt. James lists the productions itself. One Tree Hill filmed here, and its school served as\nJamie's preschool. Sleepy Hollow filmed here. Words on Bathroom Walls filmed on the front lawn,\nand in two of the parish halls. Idlewild came in 2006, and The Supremes at Earl's All-You-Can-Eat\nin 2022.\n\nThose stories all needed somewhere that felt like it had been here a long time. This parish\nhad.\n",
     "teaser": "A church that has been on screen for twenty years.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-one-parish-many-screen-worlds/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 36.8,
+        "audioBytes": 590201
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "site"
@@ -13219,14 +13244,7 @@ export const LIBRARY: readonly Echo[] = [
       "sleepy-hollow",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-one-parish-many-screen-worlds",
-        "durationS": 36
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-real-art-in-a-film-romance",
@@ -13242,7 +13260,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 38,
+    "durationS": 37,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13252,6 +13270,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the museum. For a Nicholas Sparks film, it played itself: a place to fall for\nsomebody in front of art.\n\nThe Longest Ride shot its museum scene here over three days. Britt Robertson, Scott Eastwood and\nGloria Reuben mingled under an exhibit by James Grashow made of dozens of cardboard monkeys.\n\nThe romance was invented. The art was real, and it was already here. Film crews borrow museums\nfor the same reason people go on dates in them: something interesting to look at while you decide\nhow you feel.\n",
     "teaser": "The Longest Ride's museum date, under a room of cardboard monkeys.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-real-art-in-a-film-romance/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 37.1,
+        "audioBytes": 594798
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -13262,14 +13288,7 @@ export const LIBRARY: readonly Echo[] = [
       "nicholas-sparks",
       "museum"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-real-art-in-a-film-romance",
-        "durationS": 38
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "wilmington-robert-taylor-beyond-wilmington",
@@ -13697,7 +13716,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 33,
+    "durationS": 32,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13707,6 +13726,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the sand courts. On screen, the season one volleyball tournament in The Summer I\nTurned Pretty looked like the beach.\n\nIt was not filmed on the beach. It was filmed here, at a local hangout in Midtown with sand\ncourts of its own.\n\nThat is the trick of a location: the sand is real, the sea is implied. Wilmington is often\nnicknamed Wilmywood, and this is the kind of craft that earned it. Cousins Beach is partly a\nbackyard in Midtown.\n",
     "teaser": "Cousins Beach played volleyball miles from the sea.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-beach-tournament-off-the-beach/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 31.6,
+        "audioBytes": 507027
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "site"
@@ -13716,14 +13743,7 @@ export const LIBRARY: readonly Echo[] = [
       "the-summer-i-turned-pretty",
       "midtown"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-beach-tournament-off-the-beach",
-        "durationS": 33
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "wilmington-the-bridge-before-the-story",
@@ -13739,7 +13759,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 41,
+    "durationS": 39,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13749,6 +13769,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the steel trusses over the street. Fans call this the One Tree Hill Bridge.\n\nIt is a one-lane metal truss bridge, and for the first four seasons it opened the show: Chad\nMichael Murray in a gray hoodie, bouncing a basketball across it.\n\nThat was the first thing viewers saw of a town called Tree Hill. The town was\nfictional. The bridge was real, and it is in front of you.\n\nBetween 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area.\nEach of them depended on real places standing in for imaginary ones.\n",
     "teaser": "A boy, a basketball and this bridge. Four seasons began here.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-bridge-before-the-story/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 39.3,
+        "audioBytes": 630325
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -13758,14 +13786,7 @@ export const LIBRARY: readonly Echo[] = [
       "one-tree-hill",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-bridge-before-the-story",
-        "durationS": 41
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-building-behind-the-mansion",
@@ -13893,7 +13914,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 38,
+    "durationS": 39,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13903,6 +13924,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the church doors. On television, they opened on a wedding.\n\nBrooke and Julian were married here. But this church also held two weddings that never\nhappened: Lucas and Lindsey were supposed to marry here, and so were Keith and Jules.\n\nA writer who needs a wedding can choose whether it goes ahead. A real church, with a congregation\nof its own, played both endings.\n\nBetween 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area.\nSome of its turning points came at this door.\n",
     "teaser": "One wedding happened here. Two others were supposed to.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-church-of-the-television-weddings/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 38.6,
+        "audioBytes": 618622
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -13912,14 +13941,7 @@ export const LIBRARY: readonly Echo[] = [
       "one-tree-hill",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-church-of-the-television-weddings",
-        "durationS": 38
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-church-that-became-an-arts-center",
@@ -14119,7 +14141,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 28,
+    "durationS": 24,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14129,6 +14151,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the old courthouse. In Sleepy Hollow, this was the Sleepy Hollow Sheriff's\nDepartment, the show's most iconic location. Its outside appears all through the series.\n\nIt has played other parts. For Dawson's Creek, its interior was the Capeside train station.\n\nA building made for real trials became the headquarters of a fictional fight against the\nsupernatural.\n",
     "teaser": "Sleepy Hollow's Sheriff's Department, and the show's most famous building.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-courthouse-sheriffs-office/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 23.7,
+        "audioBytes": 379967
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -14138,14 +14168,7 @@ export const LIBRARY: readonly Echo[] = [
       "sleepy-hollow",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-courthouse-sheriffs-office",
-        "durationS": 28
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-deep-river-apartments",
@@ -14161,7 +14184,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 37,
+    "durationS": 31,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14171,6 +14194,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look across at the brownstone on the corner, from this side of the street. People live\nhere, so this story is for the sidewalk.\n\nIn Blue Velvet, it was the Deep River Apartments, home of the singer Dorothy Vallens. The\noutside of the building carries much of the film's mood, and its fire escapes appear in key\nscenes near the end.\n\nIt is one of Wilmington's few brownstones, which is part of why it photographs like a city\nsomewhere else. Fans of the film still come here from all over the world.\n",
     "teaser": "Blue Velvet's Deep River Apartments. Look from across the street.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-deep-river-apartments/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 30.8,
+        "audioBytes": 494488
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -14180,14 +14211,7 @@ export const LIBRARY: readonly Echo[] = [
       "blue-velvet",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-deep-river-apartments",
-        "durationS": 37
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-department-stores-big-windows",
@@ -14241,7 +14265,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 37,
+    "durationS": 35,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14251,6 +14275,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the restaurant on the corner. In David Lynch's Blue Velvet, this was Arlene's Diner.\n\nBlue Velvet came out in 1986 and used Wilmington all over: the police station, a high school,\nMarket and Front streets, and this diner. Today it is Savorez, serving Latin American inspired\nfood.\n\nThe film was strange and unsettling, and it became a cult classic that still brings fans from\nall over the world to Wilmington. Some of them come to this corner, for a meal where a diner\nscene was once made.\n",
     "teaser": "Arlene's Diner served coffee in Blue Velvet. It still serves food.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-diner-in-blue-velvet/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 34.8,
+        "audioBytes": 558436
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -14260,14 +14292,7 @@ export const LIBRARY: readonly Echo[] = [
       "blue-velvet",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-diner-in-blue-velvet",
-        "durationS": 37
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-dog-made-of-metal",
@@ -14858,7 +14883,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 36,
+    "durationS": 34,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14868,6 +14893,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the Graystone from the sidewalk. Guests stay here, so this story is for the sidewalk.\n\nIt is one of Wilmington's most popular places to film. In The Longest Ride, the main characters\ndanced at a 1940s party set here. In Sleepy Hollow, its grand dining room was where the Headless\nHorseman took the heads of four Masons, and horses were filmed outside.\n\nA real house is stuck in its own century. On film, the Graystone has been a 1940s\nballroom and a haunted present day.\n",
     "teaser": "A 1940s party, a headless horseman, and guests who never knew.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-inn-that-travels-in-time/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 34.3,
+        "audioBytes": 550077
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -14878,14 +14911,7 @@ export const LIBRARY: readonly Echo[] = [
       "sleepy-hollow",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-inn-that-travels-in-time",
-        "durationS": 36
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-jail-fire-without-an-answer",
@@ -15326,7 +15352,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 37,
+    "durationS": 34,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15336,6 +15362,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look through the trees toward the water. In season six of One Tree Hill, this park was\ntransformed into the set of Lucas and Peyton's outdoor wedding.\n\nAnother production came here for something tender. In the Hallmark film\nChristmas in Conway, a husband rallies a town to give his dying wife one last Christmas, and\nGreenfield Park was in that story too.\n\nStories about promises, filmed in a public park anyone can walk into. Wilmington lends its\nordinary places to the moments people remember.\n",
     "teaser": "A wedding under the trees here, and a Christmas wish nearby.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-park-that-became-a-promise/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 34.4,
+        "audioBytes": 550913
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "site"
@@ -15345,14 +15379,7 @@ export const LIBRARY: readonly Echo[] = [
       "one-tree-hill",
       "greenfield"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-park-that-became-a-promise",
-        "durationS": 37
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-pelican-beside-the-marina",
@@ -15636,7 +15663,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 34,
+    "durationS": 32,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15646,6 +15673,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the front steps and the columns of Thalian Hall.\n\nFictional towns keep borrowing this building. For Dawson's Creek, its interior became the Rialto\nTheatre in Capeside. For One Tree Hill, the front steps and Corinthian columns frequently stood\nin as the steps of Tree Hill's town hall.\n\nA real theatre became the civic heart of places that never existed. The building did not have to change at all. The cameras just\npointed at it and gave it a new name.\n",
     "teaser": "Two fictional towns borrowed this building: one its steps, one its stage.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-theatre-inside-the-tv-town/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 32.4,
+        "audioBytes": 519566
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -15656,14 +15691,7 @@ export const LIBRARY: readonly Echo[] = [
       "one-tree-hill",
       "theatre"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-theatre-inside-the-tv-town",
-        "durationS": 34
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-tiny-train-with-a-huge-record",
@@ -15754,7 +15782,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 39,
+    "durationS": 37,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15764,6 +15792,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the sign: Hell's Kitchen. It was not built to be a bar. It was built to be filmed.\n\nFor Dawson's Creek, this was a temporary set. When the show wrapped, the bar was sold with its\ncontents to a local restaurateur, who turned it into a real bar with the same name.\n\nThen the fiction came back for it. One Tree Hill filmed its Swinging Donkey Bar scenes here, and\nThe Summer I Turned Pretty turned it into a lounge.\n\nA set that was meant to be taken down became a place with regulars, and the shows kept finding it.\n",
     "teaser": "It was built as a set. Then somebody bought it, contents and all.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-tv-bar-that-became-a-real-bar/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 36.5,
+        "audioBytes": 585185
+      }
+    ],
     "inspo": {
       "kind": "connection",
       "evidence": "building"
@@ -15774,14 +15810,7 @@ export const LIBRARY: readonly Echo[] = [
       "one-tree-hill",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-tv-bar-that-became-a-real-bar",
-        "durationS": 39
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-wartime-dance-floor",
@@ -16029,7 +16058,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "look-below",
-    "durationS": 31,
+    "durationS": 30,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16039,6 +16068,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the arcade and the mini golf. Fictional towns keep coming here to play.\n\nDawson's Creek filmed scenes in the arcade and the Big Splash Cafe and Pizzeria. So did One Tree\nHill, along with the miniature golf course. Years later, The Summer I Turned Pretty filmed its\narcade and go-kart scenes here.\n\nOn screen they were different towns. Off screen, their teenagers all had the same favorite\nafternoon out.\n",
     "teaser": "Tree Hill, Capeside and Cousins all came here to play.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-three-shows-one-arcade/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 30,
+        "audioBytes": 481114
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "site"
@@ -16049,14 +16086,7 @@ export const LIBRARY: readonly Echo[] = [
       "dawsons-creek",
       "the-summer-i-turned-pretty"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-three-shows-one-arcade",
-        "durationS": 31
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "wilmington-trimbles-surviving-theater",
@@ -16370,7 +16400,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "food-drink",
     "format": "short",
-    "durationS": 52,
+    "durationS": 48,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16380,19 +16410,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the grocery at 32 North Lumina Avenue. Its name is older than the building.\n\nRoberts traces its roots to Roberts Grocery in Wrightsville Beach in 1919. One magazine calls the\norigin story near-mythical, and it goes like this. On his doctor's advice, a Lebanese immigrant\nnamed Charles S. Robier moved here from New York City and opened a grocery. Because locals\ncouldn't pronounce his last name, he called it Roberts.\n\nAfter damage from Hurricane Hazel in 1954, the store moved to a smaller location across the street.\n\nIts chicken salad later became a staple of supermarket deli coolers across the state. The name that\ntraveled with it was the easy version a grocer picked for his neighbors.\n",
     "teaser": "A grocer's name that locals found easier to say.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-a-beach-memory-in-a-sandwich/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 48.4,
+        "audioBytes": 776193
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "food",
       "hurricane-hazel"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-a-beach-memory-in-a-sandwich",
-        "durationS": 52
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-a-beach-of-their-own",
@@ -16408,7 +16439,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 53,
+    "durationS": 51,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16418,20 +16449,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look north along the sand toward the end of the island.\n\nIn the 1920s, this was Shell Island, then a separate island, and it was the premier resort for\nAfrican Americans. Its backers pictured a mirror of Wrightsville Beach, a National Negro Playground.\n\nIt had hotels, cottages, bath halls and a dance pavilion. Visitors came from fifty cities in ten\nstates, because a resort like this was so unusual at the time.\n\nIt was open for only three summers. In June 1926, a fire started in a dining room, and within half\nan hour the pavilion was in ruins. Only five buildings escaped.\n\nIt was never rebuilt. The National Park Service now lists Shell Island Resort in its study of African\nAmerican outdoor recreation.\n",
     "teaser": "For three summers, this end of the island had a resort built for Black visitors.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-a-beach-of-their-own/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 50.6,
+        "audioBytes": 810047
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "shell-island",
       "black-history",
       "segregation"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-a-beach-of-their-own",
-        "durationS": 53
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "wrightsville-a-challenge-on-the-boardwalk",
@@ -16447,7 +16479,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 52,
+    "durationS": 50,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16457,20 +16489,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look along South Lumina Avenue toward where Lumina Pavilion once stood.\n\nIn 1943, Assistant Police Chief Brooks was patrolling the boardwalk around the pavilion when he was\nshot by a soldier assigned to Wrightsville Beach.\n\nThe war had crowded this island. The town grew from two hundred and fifty-two residents to fifteen\nhundred, policed by two full-time officers in winter and three in summer. Lumina's outside lights\nwere off for the blackout, and more and more soldiers came looking for fun.\n\nThe town's own history calls the circumstances unclear. The belief is that Brooks failed to identify\nhimself after the soldier challenged him.\n\nHe made a full recovery, and went back on duty.\n",
     "teaser": "A wartime boardwalk in the blackout, a soldier's challenge, and a shot in the dark.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-a-challenge-on-the-boardwalk/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 49.7,
+        "audioBytes": 796673
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "world-war-ii",
       "police",
       "lumina"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-a-challenge-on-the-boardwalk",
-        "durationS": 52
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-a-movie-after-the-beach",
@@ -16486,7 +16519,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 52,
+    "durationS": 47,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16496,19 +16529,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the building at 38 North Lumina Avenue. It began as the Crest Theatre.\n\nThe Crest opened for the summer season in 1946. A different movie played every day, so visitors\nstaying a week could come back daily when the weather turned. It showed current American films and\nforeign films by directors like Federico Fellini, and the popcorn was beloved by all.\n\nThe town's timeline says the movies ran every summer until 1973. Then the Crest became a concert\nstage for local bands and touring rock acts. It grew so popular, and so loud, that in 1981 it was\nsold to the town.\n\nToday it is a restaurant and bar. A room built for rainy afternoons ended its show business days\ntoo noisy for its neighbors.\n",
     "teaser": "A new film every day for rainy weeks, then rock bands loud enough to end it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-a-movie-after-the-beach/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 46.9,
+        "audioBytes": 750697
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "cinema",
       "music"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-a-movie-after-the-beach",
-        "durationS": 52
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-a-patrol-base-beside-the-water",
@@ -16524,7 +16558,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "look-below",
-    "durationS": 45,
+    "durationS": 43,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16534,20 +16568,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look past the restaurant to the water of the Intracoastal Waterway.\n\nDuring the Second World War, this was the county's main Coast Guard patrol base. The wartime\nheritage guide puts it at today's 4 Marina Street, where Bluewater Grill is now.\n\nThe Coast Guard patrolled from bases at Wrightsville Beach, Southport and Wilmington. Barges kept\nto the inland waterway to avoid German U-boats.\n\nThe danger was real. In July 1943, people in a cottage at Kure Beach watched a U-boat attack the\nchemical plant there.\n\nToday the boats on this water are mostly out for fun. Then, they were looking for submarines.\n",
     "teaser": "In the Second World War, the boats tied up here were hunting for submarines.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-a-patrol-base-beside-the-water/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 42.9,
+        "audioBytes": 687585
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "world-war-ii",
       "coast-guard",
       "waterway"
     ],
-    "remoteness": 0.87,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-a-patrol-base-beside-the-water",
-        "durationS": 45
-      }
-    ]
+    "remoteness": 0.87
   },
   {
     "id": "wrightsville-a-porch-from-an-earlier-beach",
@@ -16573,20 +16608,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the cottage from the sidewalk; it is a private home. The James Cottage was built in\n1900 for Dr. W.D. James of Hamlet.\n\nIt is a summer cottage design: one story, a triple gable roof and a deep porch. The hip roof along\nthe street was the servants' quarters.\n\nOn this beach, the porch was where summer happened. Meals were often eaten outdoors on the porch,\nto catch the cool summer breezes.\n\nAcross the street, at 124 South Lumina Avenue, stood the Myers Cottage. In 1995 it was moved away\nto house the Wrightsville Beach Museum. Its neighbor across the road stayed put.\n",
     "teaser": "A deep porch built for summer breezes, and the neighbor that moved away.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-a-porch-from-an-earlier-beach/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 42.9,
+        "audioBytes": 686750
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "cottage",
       "architecture",
       "private-property"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-a-porch-from-an-earlier-beach",
-        "durationS": 43
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-a-summer-church-stays-for-winter",
@@ -16602,7 +16638,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "look-below",
-    "durationS": 46,
+    "durationS": 45,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16612,20 +16648,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the church on the corner of West Fayetteville Street and North Lumina Avenue.\n\nLittle Chapel began in 1907 as a summer mission at the Lumina, a joint venture of two downtown\nWilmington churches, First Presbyterian and St. James Episcopal. For its first few decades, it\nwelcomed preachers for the summer season only.\n\nThen the war came. Wrightsville Beach grew from two hundred and fifty-two residents in 1941 to\nfifteen hundred in 1945, and after the war it became more of a year-round community.\n\nA summer church now needed a winter. In 1952 the congregation opened its sanctuary here, on this\ncorner.\n",
     "teaser": "For decades this congregation only met in summer. Then the war changed the island.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-a-summer-church-stays-for-winter/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 45,
+        "audioBytes": 721022
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "church",
       "world-war-ii",
       "home-front"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-a-summer-church-stays-for-winter",
-        "durationS": 46
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-an-evening-at-lumina",
@@ -16641,7 +16678,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 54,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16651,20 +16688,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look along South Lumina Avenue. Near here stood Lumina, the pavilion people called the Palace\nof Light.\n\nIt opened on June 3, 1905, near the end of the electric trolley line. Its builder, Hugh MacRae,\nowned the local electric utility, and over a thousand incandescent bulbs lit it up. He hoped the\nglow would get more people using electricity. Ships could navigate by it.\n\nThe second level was a dance floor with a band shell for the orchestra. Above it, a promenade\nfifteen feet wide looked down on the dancers. All three levels were for white visitors only.\n\nThe pavilion was condemned in 1972 and demolished in 1973. On a summer evening here, picture the\nlights coming on along this shore, bright enough to steer a ship by.\n",
     "teaser": "A ballroom lit so brightly that ships could steer by it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-an-evening-at-lumina/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52.8,
+        "audioBytes": 846828
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "lumina",
       "music",
       "dance"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-an-evening-at-lumina",
-        "durationS": 54
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-can-you-spot-a-bird",
@@ -16680,7 +16718,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "look-below",
-    "durationS": 42,
+    "durationS": 38,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16691,19 +16729,20 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Here is a beach challenge. Keep your feet still, beside your grownup, outside\nevery rope and sign.\n\nLook at the sand, then the sky. Can you see a bird standing, flying, or carrying a fish?\n\nSome birds lay their eggs right on this beach. They scratch a little hollow in the sand, called a\nscrape. A scrape only counts as a nest once it has eggs in it.\n\nNests are very hard to see. So an empty looking patch might be somebody's nursery.\n\nThe best bird detectives don't go looking for nests. They stay back and watch. If a bird\ncalls loudly at you, step back together.\n",
     "teaser": "A bird detective challenge where you never move your feet.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/wrightsville-can-you-spot-a-bird/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 38.4,
+        "audioBytes": 615696
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "birds",
       "wildlife"
     ],
-    "remoteness": 0.47,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/wrightsville-can-you-spot-a-bird",
-        "durationS": 42
-      }
-    ]
+    "remoteness": 0.47
   },
   {
     "id": "wrightsville-fresh-water-beside-the-sea",
@@ -16719,7 +16758,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 57,
+    "durationS": 52,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16729,19 +16768,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the municipal buildings around you. They stand where the federal government once\ntried to turn seawater into drinking water.\n\nThe Office of Saline Water ran its Wrightsville Beach Test Facility here. The station concentrated\non the freezing process of desalination.\n\nThe idea is simple. Freeze salt water, and the ice crystals come out fresher than the brine around\nthem. The hard part was the crystals. A later federal report says the ones grown here were tiny,\nabout one tenth the size engineers wanted, and washing the salt off them was too expensive.\n\nThe plant closed in 1984, when funding for research ended, and the town took over the complex.\n\nThe town's trucks now park where engineers once tried to freeze the ocean into something you could drink.\n",
     "teaser": "The town's work yards stand where engineers tried to freeze the ocean into drinking water.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-fresh-water-beside-the-sea/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 51.8,
+        "audioBytes": 830110
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "science",
       "harbor-island"
     ],
-    "remoteness": 0.49,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-fresh-water-beside-the-sea",
-        "durationS": 57
-      }
-    ]
+    "remoteness": 0.49
   },
   {
     "id": "wrightsville-jo-pickett-makes-room-in-the-lineup",
@@ -16757,7 +16797,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 54,
+    "durationS": 52,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16767,19 +16807,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the surf breaks near Crystal Pier. Jo Pickett calls this her favorite surf spot.\n\nShe is a former U.S. national short board champion, and she taught herself to surf. Here she\nstarted Crystal South Surf Camp, which has offered surf instruction since 1996.\n\nThis beach is also home to the Wahine Classic, an all-female surf contest she runs, for everyone\nfrom Teenie Wahines to seniors. It grew out of the East Coast Wahine Championships, founded in 1997\nas the first all-female surf event on the East Coast. After it shut down in 2011, Pickett and her\nfriends relaunched it in 2013.\n\nAsk why she still teaches, and she goes back to her own first wave. That's the moment, she says.\nAnd that's why I still want to teach.\n",
     "teaser": "A champion who taught herself, and the women's contest she brought back.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-jo-pickett-makes-room-in-the-lineup/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52,
+        "audioBytes": 832617
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "surfing",
       "women"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-jo-pickett-makes-room-in-the-lineup",
-        "durationS": 54
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-letters-after-the-trolley",
@@ -16795,7 +16836,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "look-below",
-    "durationS": 46,
+    "durationS": 47,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16805,20 +16846,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the small building at 94 South Lumina Avenue, and keep the service window clear.\n\nIt stands about where Station One of the old trolley line used to be. Until a drawbridge was\nfinished in 1935, you got around this beach on foot or by trolley.\n\nThen the building changed jobs. Known as the Jennings Building, it became the first Wrightsville\nBeach post office, opening in November 1941.\n\nIn 1976 it became the first Trolly Stop, and the original store was named Station 1. It is a local\nhistorical landmark now.\n\nA trolley stop, a post office, a hot dog stand. This building has always been somewhere people\nstop.\n",
     "teaser": "A trolley stop, then a post office, then hot dogs. Same small building.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-letters-after-the-trolley/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 47.3,
+        "audioBytes": 757385
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "trolley",
       "post-office",
       "landmark"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-letters-after-the-trolley",
-        "durationS": 46
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-nancy-fahey-learns-what-nests-here",
@@ -16834,7 +16876,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 55,
+    "durationS": 51,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16844,19 +16886,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the sand between the dunes and the water. Sea turtles often nest on Wrightsville Beach,\nand for years Nancy Fahey had no idea.\n\nShe had lived on the North Carolina coast for more than ten years when she learned about the\nWrightsville Beach Sea Turtle Project, then recently founded. She could not wait to get involved. She began volunteering in 1995. By the end of her\nfirst summer, she was hooked.\n\nSince 2004 she has led the project as its president and volunteer coordinator. Every day from May\nthrough August, its volunteers walk the length of the beach, looking for signs of nesting. Turtles\nnest at night, so the volunteers look for tracks at dawn.\n\nA nest found that way is roped off, and watched every day until it hatches.\n",
     "teaser": "She had lived on this coast for ten years before she found out who else used the beach.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-nancy-fahey-learns-what-nests-here/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 51.4,
+        "audioBytes": 823422
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "sea-turtles",
       "conservation"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-nancy-fahey-learns-what-nests-here",
-        "durationS": 55
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-summer-rooms-become-wartime-homes",
@@ -16872,7 +16915,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "look-below",
-    "durationS": 46,
+    "durationS": 45,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16882,20 +16925,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look across Waynick Boulevard at the Carolina Temple, and stay on the sidewalk.\n\nIt dates from the early 1900s. During the Second World War it was a popular guest home, and the\nwartime heritage guide calls it Wrightsville Beach's oldest continuously operating business.\n\nThe war filled this island. The town grew from two hundred and fifty-two residents in 1941 to\nfifteen hundred in 1945. All of them needed somewhere to sleep.\n\nThe inn still rents small apartments, one or two rooms each, with their own kitchenettes. That is\nthe same offer it made to a crowded island at war: not a holiday, a place to live.\n",
     "teaser": "The war filled this island, and this guest house kept handing out keys.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-summer-rooms-become-wartime-homes/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 44.6,
+        "audioBytes": 715171
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "world-war-ii",
       "lodging",
       "home-front"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-summer-rooms-become-wartime-homes",
-        "durationS": 46
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-the-beach-car-stops-running",
@@ -16921,19 +16965,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look along Lumina Avenue at the traffic, then picture the street without it.\n\nFrom 1888, a railway ran eleven miles from downtown Wilmington to this beach. It began with steam,\nand in 1902 the line was electrified. People called the trolleys the beach cars.\n\nThen the roads improved. Drivers could reach the beach at their own convenience, and fewer people\nrode.\n\nOn April 26, 1940, the Wilmington News carried the headline: Beach cars to end run here today. At\nmidnight, buses took over, and the rails were taken up.\n\nOf twenty stops on the line, one passenger station survives, a small concrete shelter in Wilmington's\nAudubon neighborhood. In 1984 a neighbor wrote to the paper, begging the city to save it before the\nwrecking ball came.\n",
     "teaser": "For fifty years you came here by rail. Then one April night, the buses took over.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-the-beach-car-stops-running/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.7,
+        "audioBytes": 876503
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "trolley",
       "transport"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-the-beach-car-stops-running",
-        "durationS": 55
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-the-building-made-bright",
@@ -16949,7 +16994,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "look-below",
-    "durationS": 40,
+    "durationS": 34,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16960,18 +17005,19 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Stay beside your grownup on the sidewalk and look around. Near here, long ago, stood a building\nthat glowed.\n\nIt was called Lumina, and it opened in 1905. More than a thousand light bulbs lit it up. It was so\nbright that ships could find their way by it, and people nicknamed it The Palace of Light.\n\nPeople went bowling downstairs and danced in a ballroom upstairs. They even watched movies on a\nbig screen out over the waves!\n\nLumina was taken down in 1973. Now close your eyes and switch it back on. How many lights can you\ncount?\n",
     "teaser": "A building so bright that ships could steer by it.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/wrightsville-the-building-made-bright/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 34.3,
+        "audioBytes": 550077
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "lumina"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/wrightsville-the-building-made-bright",
-        "durationS": 40
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-the-cottage-that-became-a-museum",
@@ -16987,7 +17033,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 49,
+    "durationS": 47,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16997,20 +17043,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the cottage in front of you. It was built as a summer home, and it did not start out on\nthis street.\n\nMyers Cottage once stood at 124 South Lumina Avenue. It stayed in the family until 1954, and in\n1995 it was donated and moved here to house the Wrightsville Beach Museum.\n\nInside, the rooms show how a typical summer cottage was lived in: a bedroom, a bathroom and a\nkitchen, with furnishings of the time. The icebox was kept out on the porch, and the trolley\nbrought ice from Wilmington to keep it cold.\n\nThe centerpiece is a twelve foot model of the beach around 1910. Look closely and you will find\nthis cottage in it, back in its original location.\n",
     "teaser": "It was moved here from near the ocean. Inside, a model shows it back where it started.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-the-cottage-that-became-a-museum/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 47.3,
+        "audioBytes": 758221
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "museum",
       "cottage",
       "historic-square"
     ],
-    "remoteness": 0.53,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-the-cottage-that-became-a-museum",
-        "durationS": 49
-      }
-    ]
+    "remoteness": 0.53
   },
   {
     "id": "wrightsville-the-fire-engine-that-came-by-trolley",
@@ -17026,7 +17073,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 53,
+    "durationS": 45,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17036,20 +17083,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down North Lumina Avenue, along the north end of the island.\n\nIn 1934, the Great Fire burned through here. It is thought to have started in the Kitty Cottage,\nfrom a careless cigarette or an electric iron.\n\nA brisk westerly wind drove it, then a gale shifted to the south southwest and pushed it into the\nOceanic Hotel. In less than three hours, a third of the beach was gone. The town counts a hundred\nand three buildings destroyed.\n\nWilmington's fire department was called. But there was no automobile bridge yet, and everything\ncame onto the island by trolley or by boat. So the firefighters loaded an engine onto the trolley.\n\nIt made the crossing. Then, off the tracks at last, it got stuck in the sand.\n",
     "teaser": "The beach was burning, and the only way to bring a fire engine was by rail.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-the-fire-engine-that-came-by-trolley/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 45,
+        "audioBytes": 721022
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "fire",
       "trolley",
       "oceanic-hotel"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-the-fire-engine-that-came-by-trolley",
-        "durationS": 53
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-the-hot-dog-with-a-place-name",
@@ -17065,7 +17113,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "food-drink",
     "format": "look-below",
-    "durationS": 41,
+    "durationS": 38,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17075,19 +17123,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the little shop at 94 South Lumina Avenue. The name on its sign points at something\nyou can no longer see.\n\nTrolly Stop opened in 1976 under another name, Station 1. It was called that because it stood at\nthe first stop of the trolley line that connected downtown Wilmington to the south end of the\nbeach.\n\nBy then the line had been gone for a long time. Its last journey took place in late April of 1940.\n\nSo the stand was named for a stop where no trolley had pulled up in a generation. The cars\nstopped running. The stop kept its name.\n",
     "teaser": "A hot dog stand named for a ride that had already stopped running.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-the-hot-dog-with-a-place-name/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 38.3,
+        "audioBytes": 620712
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "trolley",
       "food"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-the-hot-dog-with-a-place-name",
-        "durationS": 41
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-the-pier-returns-in-concrete",
@@ -17103,7 +17152,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 52,
+    "durationS": 50,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17113,20 +17162,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the pier's concrete pilings.\n\nThis pier began in the 1930s as the Atlantic View Pier. In 1939 it was sold to Johnnie Mercer, who\nrenamed it after himself. He was not the famous songwriter.\n\nIt was wooden, and the storms kept coming. It was rebuilt after Hurricane Hazel in 1954. In 1996,\nHurricanes Bertha and Fran devastated it.\n\nWork on a concrete pier began in 1999, and it reopened in 2001, the first concrete pier on the North\nCarolina coast. It reaches twelve hundred feet over the Atlantic, built to withstand winds of up to\ntwo hundred miles an hour.\n\nOn the right side before the T, one piling has its date etched into the concrete, and how many feet\nit goes down into the sand.\n",
     "teaser": "Two hurricanes took the wooden pier. What came back was built for two hundred mile an hour winds.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-the-pier-returns-in-concrete/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 49.7,
+        "audioBytes": 796255
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "pier",
       "hurricanes",
       "fishing"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-the-pier-returns-in-concrete",
-        "durationS": 52
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-the-sand-is-already-occupied",
@@ -17142,7 +17192,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "land",
     "format": "short",
-    "durationS": 54,
+    "durationS": 52,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17152,20 +17202,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look south along the sand toward the posted signs and the rope. It can look empty. In nesting\nseason, it usually isn't.\n\nAudubon calls the south end of Wrightsville Beach its busiest nesting site. Colonies of Least\nTerns and Black Skimmers nest here, and skimmers have been nesting on this beach since 2009.\n\nThese birds nest directly on the sand, and their nests are often difficult to see. Even a brief\ndisturbance can make the adults leave, exposing eggs and chicks to heat and predators.\n\nFrom March 1 to September 15, postings protect the places where birds are building nests, laying\neggs and raising chicks. So stay outside the signs and watch from here. If a bird starts calling\nloudly, it is telling you to back away.\n",
     "teaser": "An empty stretch of beach that is, in season, a nursery.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-the-sand-is-already-occupied/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52.4,
+        "audioBytes": 840141
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "birds",
       "nesting",
       "wildlife"
     ],
-    "remoteness": 0.49,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-the-sand-is-already-occupied",
-        "durationS": 54
-      }
-    ]
+    "remoteness": 0.49
   },
   {
     "id": "wrightsville-the-surfer-who-wrote-for-advice",
@@ -17181,7 +17232,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "short",
-    "durationS": 55,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17191,6 +17242,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look past the houses toward the beach. Surfing in this state began with a letter.\n\nIn August 1909, Collier's Weekly ran an article urging readers to try surfing. Wrightsville Beach\nnative Burke Haywood Bridgers read it and wrote to the author with questions about surfboards.\n\nHis letter was published in April 1910. During the past summer, he wrote, we tried the sport to a\nvery considerable extent, but without great results. The best rides were by small boys under 100\npounds. Their boards were cut from juniper, a cedar boat builders favor.\n\nNo one can claim a first in East Coast surfing. But the surfing on this beach in the early 1900s is\nthe earliest documented in North Carolina. It began with a man admitting what he did not know.\n",
     "teaser": "North Carolina surfing starts with a letter asking for help.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-the-surfer-who-wrote-for-advice/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53.9,
+        "audioBytes": 863128
+      }
+    ],
     "inspo": {
       "kind": "first",
       "evidence": "area"
@@ -17200,14 +17259,7 @@ export const LIBRARY: readonly Echo[] = [
       "surfing",
       "marker"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-the-surfer-who-wrote-for-advice",
-        "durationS": 55
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-the-tracks-that-morning-walkers-read",
@@ -17223,7 +17275,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "land",
     "format": "short",
-    "durationS": 51,
+    "durationS": 48,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17233,19 +17285,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the open sand between the dunes and the water. Overnight, something might have crossed it.\n\nSea turtles nest at night, so volunteers with the Wrightsville Beach Sea Turtle Project check for\ntheir tracks in the sand at dawn. Every day between May 1 and August 31, they walk the length of\nthe beach looking for signs of nesting.\n\nWhen they find a nest, it is roped off as a federally protected area. Then they watch it daily\nuntil it hatches, about 45 to 70 days later.\n\nIf you see a roped nest, leave it alone. If you see a turtle, stay quiet, keep your distance and\nkeep lights off it. By the time most of us reach the beach, the morning walkers have already read\nthe night.\n",
     "teaser": "Sea turtles come ashore in the dark. Volunteers read their tracks at dawn.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-the-tracks-that-morning-walkers-read/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 47.7,
+        "audioBytes": 764908
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "sea-turtles",
       "wildlife"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-the-tracks-that-morning-walkers-read",
-        "durationS": 51
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-the-treasure-beyond-the-channel",
@@ -17261,7 +17314,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "look-below",
-    "durationS": 46,
+    "durationS": 38,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17273,20 +17326,21 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "Two iron chests, a famous pirate, and an island named for what nobody found.",
     "certaintyNote": "A published local legend. No record or find confirms that Captain Kidd buried anything on Money Island; the script says so out loud.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/wrightsville-the-treasure-beyond-the-channel/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 38.4,
+        "audioBytes": 614861
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "pirates",
       "legend",
       "waterfront"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/wrightsville-the-treasure-beyond-the-channel",
-        "durationS": 46
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-when-hazel-reached-the-beach",
@@ -17302,7 +17356,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "look-below",
-    "durationS": 44,
+    "durationS": 41,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17312,20 +17366,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look for the hurricane post in the museum's side yard. It measures storms against people.\n\nOn October 15, 1954, Hurricane Hazel made landfall near the North Carolina and South Carolina border\nas a Category Four hurricane. It arrived with the full moon of October, the highest tide of the year.\n\nAt Wrightsville Beach, Hazel damaged five hundred and thirty homes and destroyed eighty-nine. The\nmuseum gives its storm surge here as twelve feet.\n\nHurricane Florence is measured on the post now too. The museum's advice is simple: come and stand\nnext to it, and see how massive the storm surge is.\n",
     "teaser": "A post in the museum yard measures storms against you.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wrightsville-when-hazel-reached-the-beach/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 41.2,
+        "audioBytes": 660000
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "hurricane-hazel",
       "storms",
       "museum"
     ],
-    "remoteness": 0.53,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wrightsville-when-hazel-reached-the-beach",
-        "durationS": 44
-      }
-    ]
+    "remoteness": 0.53
   },
   {
     "id": "wrightsville-your-ticket-to-the-beach",
@@ -17341,7 +17396,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "look-below",
-    "durationS": 43,
+    "durationS": 41,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17352,18 +17407,19 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Pretend you're holding a ticket to the beach. Stay beside your grownup, well back from the curb,\nand look along the street.\n\nLong ago, families rode a trolley car all the way here from Wilmington. The line was nine miles\nlong, with twenty stops along the way.\n\nImagine climbing off with towels, lunches and maybe a very large hat. What would you bring?\n\nThe trolley ran for nearly forty years. Its very last trip was in April of 1940. After that, the\nrails were taken up.\n\nIf your ride home was the trolley, you watched the clock. Miss the car home, and\nit was a very long walk!\n",
     "teaser": "Long ago, the ride to the beach was a trolley.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/wrightsville-your-ticket-to-the-beach/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 41,
+        "audioBytes": 656238
+      }
+    ],
     "tags": [
       "wrightsville-beach",
       "trolley"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/wrightsville-your-ticket-to-the-beach",
-        "durationS": 43
-      }
-    ]
+    "remoteness": 0
   }
 ] as const;
 
@@ -17779,4 +17835,4 @@ export const ROUTES: readonly Route[] = [
 
 // What a person has really checked, as authored, before the demo override above. The
 // "true story" mark reads this, never the overridden status (`truth.ts` in the engine).
-export const VERIFIED_IDS: ReadonlySet<string> = new Set(["carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","kure-beach-five-shells-in-the-dark","wilmington-a-house-built-to-catch-the-air","wilmington-a-welcome-with-teeth","wilmington-chestnut-streets-wooden-church","wilmington-elisabeth-chant-makes-a-studio","wilmington-guy-nixon-and-the-water-tank","wilmington-harry-fordens-name-on-the-bridge","wilmington-j-allen-kirk-kept-a-record","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-the-association-before-the-building","wilmington-the-department-stores-big-windows","wilmington-the-exhibition-in-a-little-lane","wilmington-the-museum-moves-with-the-rails","wilmington-the-pelican-beside-the-marina","wilmington-twenty-four-hours-at-the-uso","wilmington-william-goulds-initials"]);
+export const VERIFIED_IDS: ReadonlySet<string> = new Set(["carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","kure-beach-five-shells-in-the-dark","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-goodbye-in-a-living-garden","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-plays-an-art-school","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-before-streaming-this-door","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-elisabeth-chant-makes-a-studio","wilmington-guy-nixon-and-the-water-tank","wilmington-harry-fordens-name-on-the-bridge","wilmington-j-allen-kirk-kept-a-record","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-the-association-before-the-building","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-church-of-the-television-weddings","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-exhibition-in-a-little-lane","wilmington-the-inn-that-travels-in-time","wilmington-the-museum-moves-with-the-rails","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-three-shows-one-arcade","wilmington-twenty-four-hours-at-the-uso","wilmington-william-goulds-initials","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);

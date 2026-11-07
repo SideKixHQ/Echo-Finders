@@ -8,7 +8,7 @@ at: { lat: 34.20921, lng: -77.79488 }
 triggerRadiusKm: 0.05
 category: arts
 format: short
-durationS: 52
+durationS: 47
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
 
   Today it is a restaurant and bar. A room built for rainy afternoons ended its show business days
   too noisy for its neighbors.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the building at 38 North Lumina Avenue."
@@ -72,3 +72,41 @@ sources:
     url: https://historicwrightsvillebeach.wordpress.com/points-on-the-tour-2/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-a-movie-after-the-beach/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 46.9
+    audioBytes: 750697
+    transcript:
+      totalS: 46.9
+      lines:
+        - text: Look at the building at 38 North Lumina Avenue.
+          atS: 0
+          durationS: 2.96
+        - text: It began as the Crest Theatre.
+          atS: 3.2
+          durationS: 2.06
+        - text: The Crest opened for the summer season in 1946.
+          atS: 5.96
+          durationS: 3.46
+        - text: A different movie played every day, so visitors staying a week could come back daily when the weather turned.
+          atS: 9.63
+          durationS: 5.62
+        - text: It showed current American films and foreign films by directors like Federico Fellini, and the popcorn was beloved by all.
+          atS: 15.69
+          durationS: 6.88
+        - text: The town's timeline says the movies ran every summer until 1973.
+          atS: 22.89
+          durationS: 4.69
+        - text: Then the Crest became a concert stage for local bands and touring rock acts.
+          atS: 27.97
+          durationS: 4.37
+        - text: It grew so popular, and so loud, that in 1981 it was sold to the town.
+          atS: 33.03
+          durationS: 4.74
+        - text: Today it is a restaurant and bar.
+          atS: 38.58
+          durationS: 2.29
+        - text: A room built for rainy afternoons ended its show business days too noisy for its neighbors.
+          atS: 41.47
+          durationS: 5.39

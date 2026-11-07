@@ -8,7 +8,7 @@ at: { lat: 34.2077, lng: -77.7942 }
 triggerRadiusKm: 0.1
 category: land
 format: short
-durationS: 51
+durationS: 48
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   If you see a roped nest, leave it alone. If you see a turtle, stay quiet, keep your distance and
   keep lights off it. By the time most of us reach the beach, the morning walkers have already read
   the night.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Sea turtles nest at night, so volunteers with the Wrightsville Beach Sea Turtle Project check for their tracks in the sand at dawn."
@@ -60,3 +60,38 @@ sources:
     url: https://www.townofwrightsvillebeach.com/609/Coastal-Wildlife-Protection
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-the-tracks-that-morning-walkers-read/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 47.7
+    audioBytes: 764908
+    transcript:
+      totalS: 47.7
+      lines:
+        - text: Look at the open sand between the dunes and the water.
+          atS: 0
+          durationS: 3.29
+        - text: Overnight, something might have crossed it.
+          atS: 3.73
+          durationS: 2.35
+        - text: Sea turtles nest at night, so volunteers with the Wrightsville Beach Sea Turtle Project check for their tracks in the sand at dawn.
+          atS: 6.77
+          durationS: 7.71
+        - text: Every day between May 1 and August 31, they walk the length of the beach looking for signs of nesting.
+          atS: 15.08
+          durationS: 6.43
+        - text: When they find a nest, it is roped off as a federally protected area.
+          atS: 22.12
+          durationS: 4.42
+        - text: Then they watch it daily until it hatches, about 45 to 70 days later.
+          atS: 27.35
+          durationS: 5.19
+        - text: If you see a roped nest, leave it alone.
+          atS: 33.15
+          durationS: 2.96
+        - text: If you see a turtle, stay quiet, keep your distance and keep lights off it.
+          atS: 36.55
+          durationS: 5.42
+        - text: By the time most of us reach the beach, the morning walkers have already read the night.
+          atS: 42.92
+          durationS: 4.82

@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: site
 format: look-below
-durationS: 34
+durationS: 31
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
   People walking here that day saw the trick before the effect: real people on real wires above a
   real river. The finished film became the top grossing film of 2013, and part of it was made in
   the air above this stretch of the Cape Fear.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "For Iron Man 3, actors could be seen hanging from cables and flying overhead, filming a stunt between the Convention Center and the bridge."
@@ -48,3 +48,23 @@ sources:
     url: https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/wilmingtonnc/Wilmington_Film_and_TV_Location_Guide_1b6bc72d-2881-4fd5-b656-0344de2b7a24.pdf
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-superhero-above-the-river/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 31.3
+    audioBytes: 502430
+    transcript:
+      totalS: 31.3
+      lines:
+        - text: Look along the river, from the Convention Center toward the Isabel Holmes Bridge.
+          atS: 0
+          durationS: 4.85
+        - text: For Iron Man 3, actors could be seen hanging from cables and flying overhead, filming a stunt between the Convention Center and the bridge.
+          atS: 5.67
+          durationS: 9.36
+        - text: "People walking here that day saw the trick before the effect: real people on real wires above a real river."
+          atS: 15.97
+          durationS: 7.14
+        - text: The finished film became the top grossing film of 2013, and part of it was made in the air above this stretch of the Cape Fear.
+          atS: 23.44
+          durationS: 7.91

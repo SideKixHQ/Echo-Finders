@@ -8,7 +8,7 @@ at: { lat: 34.20908, lng: -77.79501 }
 triggerRadiusKm: 0.05
 category: food-drink
 format: short
-durationS: 52
+durationS: 48
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   Its chicken salad later became a staple of supermarket deli coolers across the state. The name that
   traveled with it was the easy version a grocer picked for his neighbors.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the grocery at 32 North Lumina Avenue."
@@ -70,3 +70,41 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/guide-to-an-ultimate-beach-day-in-wrightsville-beach-north-carolina/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-a-beach-memory-in-a-sandwich/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 48.4
+    audioBytes: 776193
+    transcript:
+      totalS: 48.4
+      lines:
+        - text: Look at the grocery at 32 North Lumina Avenue.
+          atS: 0
+          durationS: 3.52
+        - text: Its name is older than the building.
+          atS: 3.9
+          durationS: 2.08
+        - text: Roberts traces its roots to Roberts Grocery in Wrightsville Beach in 1919.
+          atS: 6.3
+          durationS: 5.84
+        - text: One magazine calls the origin story near-mythical, and it goes like this.
+          atS: 12.75
+          durationS: 5.03
+        - text: On his doctor's advice, a Lebanese immigrant named Charles S.
+          atS: 18.1
+          durationS: 3.94
+        - text: Robier moved here from New York City and opened a grocery.
+          atS: 22.08
+          durationS: 3.96
+        - text: Because locals couldn't pronounce his last name, he called it Roberts.
+          atS: 26.55
+          durationS: 4.48
+        - text: After damage from Hurricane Hazel in 1954, the store moved to a smaller location across the street.
+          atS: 31.73
+          durationS: 6.4
+        - text: Its chicken salad later became a staple of supermarket deli coolers across the state.
+          atS: 38.3
+          durationS: 5.15
+        - text: The name that traveled with it was the easy version a grocer picked for his neighbors.
+          atS: 43.73
+          durationS: 4.7

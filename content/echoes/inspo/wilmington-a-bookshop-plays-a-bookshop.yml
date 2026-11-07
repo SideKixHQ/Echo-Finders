@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 31
+durationS: 30
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   Inside, you can buy a copy of The Summer I Turned Pretty. The book became a show, the show
   borrowed a bookshop, and the bookshop now sells the book.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In The Summer I Turned Pretty, this shop played the Whale of a Tale Bookshop."
@@ -45,3 +45,29 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/the-summer-i-turned-pretty-a-wilmington-guide-to-cousins-beach/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-bookshop-plays-a-bookshop/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 30.3
+    audioBytes: 485711
+    transcript:
+      totalS: 30.3
+      lines:
+        - text: Look at the bookshop window.
+          atS: 0
+          durationS: 1.79
+        - text: In The Summer I Turned Pretty, this shop played the Whale of a Tale Bookshop.
+          atS: 3.09
+          durationS: 4.7
+        - text: There is a neat loop in that.
+          atS: 8.23
+          durationS: 1.74
+        - text: The series began as a novel, and when it needed a bookshop in its fictional beach town, it found a real independent one here.
+          atS: 10.67
+          durationS: 7.95
+        - text: Inside, you can buy a copy of The Summer I Turned Pretty.
+          atS: 19.32
+          durationS: 4.19
+        - text: The book became a show, the show borrowed a bookshop, and the bookshop now sells the book.
+          atS: 24.46
+          durationS: 5.82

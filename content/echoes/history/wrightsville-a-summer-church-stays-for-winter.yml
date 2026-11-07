@@ -8,7 +8,7 @@ at: { lat: 34.21343, lng: -77.79243 }
 triggerRadiusKm: 0.05
 category: history
 format: look-below
-durationS: 46
+durationS: 45
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   A summer church now needed a winter. In 1952 the congregation opened its sanctuary here, on this
   corner.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Little Chapel began in 1907 as a summer mission at the Lumina, a joint venture of two downtown Wilmington churches, First Presbyterian and St. James Episcopal."
@@ -56,3 +56,35 @@ sources:
     url: https://www.townofwrightsvillebeach.com/255/History-of-the-Police-Department
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-a-summer-church-stays-for-winter/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 45
+    audioBytes: 721022
+    transcript:
+      totalS: 45
+      lines:
+        - text: Look at the church on the corner of West Fayetteville Street and North Lumina Avenue.
+          atS: 0
+          durationS: 4.54
+        - text: Little Chapel began in 1907 as a summer mission at the Lumina, a joint venture of two downtown Wilmington churches, First Presbyterian and St.
+          atS: 5.49
+          durationS: 10.08
+        - text: James Episcopal.
+          atS: 15.59
+          durationS: 1.17
+        - text: For its first few decades, it welcomed preachers for the summer season only.
+          atS: 17.72
+          durationS: 4.69
+        - text: Then the war came.
+          atS: 23.2
+          durationS: 1.43
+        - text: Wrightsville Beach grew from two hundred and fifty-two residents in 1941 to fifteen hundred in 1945, and after the war it became more of a year-round community.
+          atS: 25.3
+          durationS: 11.39
+        - text: A summer church now needed a winter.
+          atS: 37.07
+          durationS: 2.32
+        - text: In 1952 the congregation opened its sanctuary here, on this corner.
+          atS: 40
+          durationS: 5

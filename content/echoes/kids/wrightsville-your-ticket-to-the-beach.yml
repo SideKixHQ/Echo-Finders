@@ -8,7 +8,7 @@ at: { lat: 34.21485, lng: -77.7907 }
 triggerRadiusKm: 0.05
 category: kids
 format: look-below
-durationS: 43
+durationS: 41
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
 
   If your ride home was the trolley, you watched the clock. Miss the car home, and
   it was a very long walk!
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Long ago, families rode a trolley car all the way here from Wilmington."
@@ -59,3 +59,44 @@ sources:
     url: https://files.nc.gov/ncdcr/nr/NH1240.pdf
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/wrightsville-your-ticket-to-the-beach/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 41
+    audioBytes: 656238
+    transcript:
+      totalS: 41
+      lines:
+        - text: Pretend you're holding a ticket to the beach.
+          atS: 0
+          durationS: 2.17
+        - text: Stay beside your grownup, well back from the curb, and look along the street.
+          atS: 2.55
+          durationS: 4.04
+        - text: Long ago, families rode a trolley car all the way here from Wilmington.
+          atS: 7.11
+          durationS: 4.54
+        - text: The line was nine miles long, with twenty stops along the way.
+          atS: 12.03
+          durationS: 4.14
+        - text: Imagine climbing off with towels, lunches and maybe a very large hat.
+          atS: 16.61
+          durationS: 5.22
+        - text: What would you bring?
+          atS: 22.16
+          durationS: 0.94
+        - text: The trolley ran for nearly forty years.
+          atS: 23.55
+          durationS: 2.76
+        - text: Its very last trip was in April of 1940.
+          atS: 26.63
+          durationS: 3.63
+        - text: After that, the rails were taken up.
+          atS: 30.78
+          durationS: 2.23
+        - text: If your ride home was the trolley, you watched the clock.
+          atS: 33.45
+          durationS: 3.24
+        - text: Miss the car home, and it was a very long walk!
+          atS: 37.38
+          durationS: 3.58

@@ -8,7 +8,7 @@ at: { lat: 34.20765, lng: -77.79611 }
 triggerRadiusKm: 0.05
 category: history
 format: look-below
-durationS: 46
+durationS: 47
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
 
   A trolley stop, a post office, a hot dog stand. This building has always been somewhere people
   stop.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the small building at 94 South Lumina Avenue, and keep the service window clear."
@@ -64,3 +64,38 @@ sources:
     url: https://historicwrightsvillebeach.wordpress.com/points-on-the-tour-2/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-letters-after-the-trolley/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 47.3
+    audioBytes: 757385
+    transcript:
+      totalS: 47.3
+      lines:
+        - text: Look at the small building at 94 South Lumina Avenue, and keep the service window clear.
+          atS: 0
+          durationS: 5.84
+        - text: It stands about where Station One of the old trolley line used to be.
+          atS: 6.28
+          durationS: 4.45
+        - text: Until a drawbridge was finished in 1935, you got around this beach on foot or by trolley.
+          atS: 11.33
+          durationS: 6.39
+        - text: Then the building changed jobs.
+          atS: 18.16
+          durationS: 1.96
+        - text: Known as the Jennings Building, it became the first Wrightsville Beach post office, opening in November 1941.
+          atS: 20.56
+          durationS: 7.54
+        - text: In 1976 it became the first Trolly Stop, and the original store was named Station 1.
+          atS: 28.79
+          durationS: 6.63
+        - text: It is a local historical landmark now.
+          atS: 36.23
+          durationS: 2.59
+        - text: A trolley stop, a post office, a hot dog stand.
+          atS: 39.43
+          durationS: 3.63
+        - text: This building has always been somewhere people stop.
+          atS: 44.18
+          durationS: 3.1

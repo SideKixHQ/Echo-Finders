@@ -8,7 +8,7 @@ at: { lat: 34.20765, lng: -77.79611 }
 triggerRadiusKm: 0.05
 category: food-drink
 format: look-below
-durationS: 41
+durationS: 38
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   So the stand was named for a stop where no trolley had pulled up in a generation. The cars
   stopped running. The stop kept its name.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the little shop at 94 South Lumina Avenue."
@@ -61,3 +61,38 @@ sources:
     url: https://www.wwaytv3.com/history-with-hud-the-last-remaining-trolley-station-from-a-once-busy-wilmington-line/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-the-hot-dog-with-a-place-name/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 38.3
+    audioBytes: 620712
+    transcript:
+      totalS: 38.3
+      lines:
+        - text: Look at the little shop at 94 South Lumina Avenue.
+          atS: 0
+          durationS: 3.59
+        - text: The name on its sign points at something you can no longer see.
+          atS: 4.03
+          durationS: 3.75
+        - text: Trolly Stop opened in 1976 under another name, Station 1.
+          atS: 8.73
+          durationS: 5.21
+        - text: It was called that because it stood at the first stop of the trolley line that connected downtown Wilmington to the south end of the beach.
+          atS: 14.55
+          durationS: 7.09
+        - text: By then the line had been gone for a long time.
+          atS: 22.59
+          durationS: 3.16
+        - text: Its last journey took place in late April of 1940.
+          atS: 26.19
+          durationS: 3.8
+        - text: So the stand was named for a stop where no trolley had pulled up in a generation.
+          atS: 30.5
+          durationS: 4.57
+        - text: The cars stopped running.
+          atS: 35.14
+          durationS: 1.37
+        - text: The stop kept its name.
+          atS: 36.6
+          durationS: 1.66

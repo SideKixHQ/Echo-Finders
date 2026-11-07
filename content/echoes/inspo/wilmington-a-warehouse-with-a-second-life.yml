@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 40
+durationS: 36
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
 
   Between 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area. Here,
   the set outlived the show and became a place people travel to.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "TRIC was the nightclub at the heart of One Tree Hill, and this is where it was filmed."
@@ -50,3 +50,35 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/one-tree-hill-walking-tour/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-warehouse-with-a-second-life/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 35.8
+    audioBytes: 573901
+    transcript:
+      totalS: 35.8
+      lines:
+        - text: Look at the building in front of you.
+          atS: 0
+          durationS: 1.65
+        - text: On screen, it was TRIC.
+          atS: 1.68
+          durationS: 1.65
+        - text: TRIC was the nightclub at the heart of One Tree Hill, and this is where it was filmed.
+          atS: 3.54
+          durationS: 4.92
+        - text: The show ended, and the building did not go back to being anonymous.
+          atS: 8.79
+          durationS: 3.98
+        - text: Today it runs TRIC Tours.
+          atS: 13.05
+          durationS: 2.15
+        - text: Visitors walk through at their own pace and take photos with replica props from the characters' rooms and the record label.
+          atS: 15.44
+          durationS: 6.68
+        - text: Between 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area.
+          atS: 22.5
+          durationS: 8.61
+        - text: Here, the set outlived the show and became a place people travel to.
+          atS: 31.44
+          durationS: 4.36

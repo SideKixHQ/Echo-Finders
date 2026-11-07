@@ -11,7 +11,7 @@ inspo:
   kind: first
   evidence: area
 format: short
-durationS: 55
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
 
   No one can claim a first in East Coast surfing. But the surfing on this beach in the early 1900s is
   the earliest documented in North Carolina. It began with a man admitting what he did not know.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In August 1909, Collier's Weekly ran an article urging readers to try surfing."
@@ -63,3 +63,44 @@ sources:
     url: https://www.dncr.nc.gov/blog/2023/12/12/pioneer-east-coast-surfing-d-116
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-the-surfer-who-wrote-for-advice/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53.9
+    audioBytes: 863128
+    transcript:
+      totalS: 53.9
+      lines:
+        - text: Look past the houses toward the beach.
+          atS: 0
+          durationS: 2.47
+        - text: Surfing in this state began with a letter.
+          atS: 3.59
+          durationS: 2.73
+        - text: In August 1909, Collier's Weekly ran an article urging readers to try surfing.
+          atS: 6.83
+          durationS: 6.49
+        - text: Wrightsville Beach native Burke Haywood Bridgers read it and wrote to the author with questions about surfboards.
+          atS: 14.01
+          durationS: 6.9
+        - text: His letter was published in April 1910.
+          atS: 21.29
+          durationS: 2.73
+        - text: During the past summer, he wrote, we tried the sport to a very considerable extent, but without great results.
+          atS: 24.53
+          durationS: 7
+        - text: The best rides were by small boys under 100 pounds.
+          atS: 32.04
+          durationS: 3.59
+        - text: Their boards were cut from juniper, a cedar boat builders favor.
+          atS: 36.01
+          durationS: 3.81
+        - text: No one can claim a first in East Coast surfing.
+          atS: 40.33
+          durationS: 3.18
+        - text: But the surfing on this beach in the early 1900s is the earliest documented in North Carolina.
+          atS: 43.9
+          durationS: 6.04
+        - text: It began with a man admitting what he did not know.
+          atS: 50.89
+          durationS: 2.98

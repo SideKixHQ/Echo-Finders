@@ -30,7 +30,7 @@ script: |
   Of twenty stops on the line, one passenger station survives, a small concrete shelter in Wilmington's
   Audubon neighborhood. In 1984 a neighbor wrote to the paper, begging the city to save it before the
   wrecking ball came.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "From 1888, a railway ran"
@@ -66,3 +66,41 @@ sources:
     url: https://files.nc.gov/ncdcr/nr/NH1240.pdf
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-the-beach-car-stops-running/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.7
+    audioBytes: 876503
+    transcript:
+      totalS: 54.7
+      lines:
+        - text: Look along Lumina Avenue at the traffic, then picture the street without it.
+          atS: 0
+          durationS: 4.37
+        - text: From 1888, a railway ran eleven miles from downtown Wilmington to this beach.
+          atS: 4.97
+          durationS: 5.33
+        - text: It began with steam, and in 1902 the line was electrified.
+          atS: 10.99
+          durationS: 4.33
+        - text: People called the trolleys the beach cars.
+          atS: 15.84
+          durationS: 2.24
+        - text: Then the roads improved.
+          atS: 18.77
+          durationS: 1.39
+        - text: Drivers could reach the beach at their own convenience, and fewer people rode.
+          atS: 20.74
+          durationS: 4.05
+        - text: "On April 26, 1940, the Wilmington News carried the headline: Beach cars to end run here today."
+          atS: 26.02
+          durationS: 7.92
+        - text: At midnight, buses took over, and the rails were taken up.
+          atS: 34.7
+          durationS: 3.65
+        - text: Of twenty stops on the line, one passenger station survives, a small concrete shelter in Wilmington's Audubon neighborhood.
+          atS: 39.16
+          durationS: 7.66
+        - text: In 1984 a neighbor wrote to the paper, begging the city to save it before the wrecking ball came.
+          atS: 48.12
+          durationS: 6.58

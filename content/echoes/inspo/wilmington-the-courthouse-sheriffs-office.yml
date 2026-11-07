@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 28
+durationS: 24
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -26,7 +26,7 @@ script: |
 
   A building made for real trials became the headquarters of a fictional fight against the
   supernatural.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In Sleepy Hollow, this was the Sleepy Hollow Sheriff's Department, the show's most iconic location."
@@ -49,3 +49,29 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/dawsons-creek-locations-tour/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-courthouse-sheriffs-office/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 23.7
+    audioBytes: 379967
+    transcript:
+      totalS: 23.7
+      lines:
+        - text: Look at the old courthouse.
+          atS: 0
+          durationS: 1.54
+        - text: In Sleepy Hollow, this was the Sleepy Hollow Sheriff's Department, the show's most iconic location.
+          atS: 1.99
+          durationS: 6.03
+        - text: Its outside appears all through the series.
+          atS: 8.45
+          durationS: 2.25
+        - text: It has played other parts.
+          atS: 10.91
+          durationS: 1.53
+        - text: For Dawson's Creek, its interior was the Capeside train station.
+          atS: 13.05
+          durationS: 4.19
+        - text: A building made for real trials became the headquarters of a fictional fight against the supernatural.
+          atS: 17.68
+          durationS: 6

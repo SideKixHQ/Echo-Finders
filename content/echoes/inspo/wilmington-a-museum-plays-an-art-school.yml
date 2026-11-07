@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 39
+durationS: 37
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   It was not done with fiction. Years later, its kitchen appeared in Sleepy Hollow, in an episode
   called Sin Eater. A house built before the Civil War keeps being cast as somewhere else.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look up at the columns of the Bellamy Mansion."
@@ -51,3 +51,32 @@ sources:
     url: https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/wilmingtonnc/Wilmington_Film_and_TV_Location_Guide_1b6bc72d-2881-4fd5-b656-0344de2b7a24.pdf
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-museum-plays-an-art-school/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 36.8
+    audioBytes: 590201
+    transcript:
+      totalS: 36.8
+      lines:
+        - text: Look up at the columns of the Bellamy Mansion.
+          atS: 0
+          durationS: 2.58
+        - text: It is a museum of history and the design arts, and that is exactly why a television show borrowed it.
+          atS: 2.73
+          durationS: 6.06
+        - text: In a 2006 episode of One Tree Hill, Peyton and Jake had a scene here, and the mansion was called the Savannah College of Art and Design.
+          atS: 9.9
+          durationS: 9.46
+        - text: A museum of design played a school of design.
+          atS: 19.97
+          durationS: 2.87
+        - text: It was not done with fiction.
+          atS: 23.35
+          durationS: 2
+        - text: Years later, its kitchen appeared in Sleepy Hollow, in an episode called Sin Eater.
+          atS: 26.64
+          durationS: 5.5
+        - text: A house built before the Civil War keeps being cast as somewhere else.
+          atS: 32.75
+          durationS: 4.07

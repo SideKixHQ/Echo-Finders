@@ -8,7 +8,7 @@ at: { lat: 34.1947, lng: -77.8054 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 52
+durationS: 50
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
   himself after the soldier challenged him.
 
   He made a full recovery, and went back on duty.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In 1943, Assistant Police Chief Brooks was patrolling the boardwalk around the pavilion when he was shot by a soldier assigned to Wrightsville Beach."
@@ -67,3 +67,35 @@ sources:
     url: https://historicwrightsvillebeach.wordpress.com/points-on-the-tour-2/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-a-challenge-on-the-boardwalk/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 49.7
+    audioBytes: 796673
+    transcript:
+      totalS: 49.7
+      lines:
+        - text: Look along South Lumina Avenue toward where Lumina Pavilion once stood.
+          atS: 0
+          durationS: 4.4
+        - text: In 1943, Assistant Police Chief Brooks was patrolling the boardwalk around the pavilion when he was shot by a soldier assigned to Wrightsville Beach.
+          atS: 5.51
+          durationS: 10.17
+        - text: The war had crowded this island.
+          atS: 16.98
+          durationS: 2.07
+        - text: The town grew from two hundred and fifty-two residents to fifteen hundred, policed by two full-time officers in winter and three in summer.
+          atS: 19.33
+          durationS: 8.94
+        - text: Lumina's outside lights were off for the blackout, and more and more soldiers came looking for fun.
+          atS: 28.97
+          durationS: 6.05
+        - text: The town's own history calls the circumstances unclear.
+          atS: 36.32
+          durationS: 3.82
+        - text: The belief is that Brooks failed to identify himself after the soldier challenged him.
+          atS: 40.74
+          durationS: 5.07
+        - text: He made a full recovery, and went back on duty.
+          atS: 46.51
+          durationS: 3.23

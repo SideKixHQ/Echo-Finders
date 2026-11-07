@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: building
 format: look-below
-durationS: 40
+durationS: 35
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
 
   One Tree Hill sent Lucas and Brooke here on their first tattoo date, and Sleepy Hollow used the
   alley outside. This pool hall keeps being cast as somewhere else.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In the film Tammy, it played a barbecue joint in Louisville, Kentucky, where Melissa McCarthy's Tammy and her grandmother, played by Susan Sarandon, try to pick up men."
@@ -60,3 +60,29 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/one-tree-hill-walking-tour/
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-bar-takes-a-road-trip/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 35.3
+    audioBytes: 566377
+    transcript:
+      totalS: 35.3
+      lines:
+        - text: Look at the door of Blue Post Billiards.
+          atS: 0
+          durationS: 2.39
+        - text: You have to be over twenty-one to go in, but the movies have been coming here for years.
+          atS: 2.63
+          durationS: 4.92
+        - text: In the film Tammy, it played a barbecue joint in Louisville, Kentucky, where Melissa McCarthy's Tammy and her grandmother, played by Susan Sarandon, try to pick up men.
+          atS: 8.16
+          durationS: 10.34
+        - text: A local bluegrass band, Big Al Hall and Possum Creek, played in the scene.
+          atS: 19.11
+          durationS: 4.92
+        - text: One Tree Hill sent Lucas and Brooke here on their first tattoo date, and Sleepy Hollow used the alley outside.
+          atS: 24.73
+          durationS: 6.95
+        - text: This pool hall keeps being cast as somewhere else.
+          atS: 32.38
+          durationS: 2.96

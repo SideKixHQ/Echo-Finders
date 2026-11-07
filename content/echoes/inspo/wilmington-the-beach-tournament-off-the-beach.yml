@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: site
 format: look-below
-durationS: 33
+durationS: 32
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   That is the trick of a location: the sand is real, the sea is implied. Wilmington is often
   nicknamed Wilmywood, and this is the kind of craft that earned it. Cousins Beach is partly a
   backyard in Midtown.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Cousins Beach is partly a backyard in Midtown."
@@ -49,3 +49,32 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/the-summer-i-turned-pretty-a-wilmington-guide-to-cousins-beach/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-beach-tournament-off-the-beach/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 31.6
+    audioBytes: 507027
+    transcript:
+      totalS: 31.6
+      lines:
+        - text: Look at the sand courts.
+          atS: 0
+          durationS: 1.67
+        - text: On screen, the season one volleyball tournament in The Summer I Turned Pretty looked like the beach.
+          atS: 1.85
+          durationS: 5.65
+        - text: It was not filmed on the beach.
+          atS: 8.1
+          durationS: 1.71
+        - text: It was filmed here, at a local hangout in Midtown with sand courts of its own.
+          atS: 9.98
+          durationS: 5.15
+        - text: "That is the trick of a location: the sand is real, the sea is implied."
+          atS: 15.95
+          durationS: 5.85
+        - text: Wilmington is often nicknamed Wilmywood, and this is the kind of craft that earned it.
+          atS: 22.31
+          durationS: 5.25
+        - text: Cousins Beach is partly a backyard in Midtown.
+          atS: 28.38
+          durationS: 3.25

@@ -11,7 +11,7 @@ inspo:
   kind: creation
   evidence: site
 format: look-below
-durationS: 31
+durationS: 30
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   On screen they were different towns. Off screen, their teenagers all had the same favorite
   afternoon out.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Dawson's Creek filmed scenes in the arcade and the Big Splash Cafe and Pizzeria."
@@ -55,3 +55,32 @@ sources:
     url: https://www.wilmingtonandbeaches.com/blog/post/the-summer-i-turned-pretty-a-wilmington-guide-to-cousins-beach/
     retrievedAt: "2026-11-06"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-three-shows-one-arcade/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 30
+    audioBytes: 481114
+    transcript:
+      totalS: 30
+      lines:
+        - text: Look at the arcade and the mini golf.
+          atS: 0
+          durationS: 2.07
+        - text: Fictional towns keep coming here to play.
+          atS: 2.67
+          durationS: 2.61
+        - text: Dawson's Creek filmed scenes in the arcade and the Big Splash Cafe and Pizzeria.
+          atS: 5.79
+          durationS: 4.96
+        - text: So did One Tree Hill, along with the miniature golf course.
+          atS: 11.19
+          durationS: 3.58
+        - text: Years later, The Summer I Turned Pretty filmed its arcade and go-kart scenes here.
+          atS: 16.07
+          durationS: 5.68
+        - text: On screen they were different towns.
+          atS: 22.35
+          durationS: 2.54
+        - text: Off screen, their teenagers all had the same favorite afternoon out.
+          atS: 25.4
+          durationS: 4.6
