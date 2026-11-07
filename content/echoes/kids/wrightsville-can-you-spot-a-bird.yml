@@ -1,0 +1,63 @@
+# Wrightsville Beach, batch C (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Beach Access 43 (1000 South Lumina Avenue), extrapolated from Overture points 901 to 917 South Lumina Avenue, a few metres off the WB028 pin; kids version of WB028 (The Sand Is Already Occupied); landward of and outside the posted nesting area, radius 0.15 km (low to medium confidence).
+id: wrightsville-can-you-spot-a-bird
+title: "Can You Spot a Bird Without Getting Closer?"
+summary: "A children's telling of the beach-nesting birds at the south end of Wrightsville Beach. Pairs with The Sand Is Already Occupied."
+place: "Beach Access 43, 1000 South Lumina Avenue, Wrightsville Beach, North Carolina"
+at: { lat: 34.1869, lng: -77.8107 }
+triggerRadiusKm: 0.15
+category: kids
+format: look-below
+durationS: 42
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [wrightsville-beach, birds, wildlife]
+teaser: "A bird detective challenge where you never move your feet."
+script: |
+  Here is a beach challenge. Keep your feet still, beside your grownup, outside
+  every rope and sign.
+
+  Look at the sand, then the sky. Can you see a bird standing, flying, or carrying a fish?
+
+  Some birds lay their eggs right on this beach. They scratch a little hollow in the sand, called a
+  scrape. A scrape only counts as a nest once it has eggs in it.
+
+  Nests are very hard to see. So an empty looking patch might be somebody's nursery.
+
+  The best bird detectives don't go looking for nests. They stay back and watch. If a bird
+  calls loudly at you, step back together.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Some birds lay their eggs right on this beach."
+    source: 2
+    quote: "These birds nest directly on the sand, making their eggs and chicks especially vulnerable to disturbance."
+  - says: "They scratch a little hollow in the sand, called a scrape."
+    source: 1
+    quote: "beach-nesting birds may practice making scrapes in the sand during courtship"
+  - says: "A scrape only counts as a nest once it has eggs in it."
+    source: 1
+    quote: "scrapes are only considered \"nests\" once they have eggs in them!"
+  - says: "Nests are very hard to see."
+    source: 2
+    quote: "Because nests are often difficult to see"
+  - says: "Can you see a bird standing, flying, or carrying a fish?"
+    source: 1
+    quote: "Courtship activities have begun and fish presentations have been observed and photographed!"
+  - says: "If a bird calls loudly at you, step back together."
+    source: 2
+    quote: "Give birds plenty of space if they appear agitated or are calling loudly"
+sources:
+  - title: "They're Back!"
+    publisher: "Wrightsville Beach Bird Stewards"
+    url: https://wbbirdsteward.blogspot.com/2024/04/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Coastal Wildlife Protection"
+    publisher: "Town of Wrightsville Beach"
+    url: https://www.townofwrightsvillebeach.com/609/Coastal-Wildlife-Protection
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

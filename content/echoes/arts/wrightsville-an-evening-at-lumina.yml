@@ -1,0 +1,74 @@
+# Wrightsville Beach (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Interpolated between Overture points 627 and 650 South Lumina Avenue for the tour's 636 South Lumina address; 0.1 km radius (medium: the pavilion footprint is gone)
+id: wrightsville-an-evening-at-lumina
+title: "An Evening at Lumina"
+summary: "Lumina, the 'Palace of Light', opened in 1905 at the end of the trolley line, and was demolished in 1973."
+place: "Former Lumina Pavilion site, South Lumina Avenue, Wrightsville Beach, North Carolina"
+at: { lat: 34.1944, lng: -77.8053 }
+triggerRadiusKm: 0.1
+category: arts
+format: short
+durationS: 54
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, lumina, music, dance]
+teaser: "A ballroom lit so brightly that ships could steer by it."
+script: |
+  Look along South Lumina Avenue. Near here stood Lumina, the pavilion people called the Palace
+  of Light.
+
+  It opened on June 3, 1905, near the end of the electric trolley line. Its builder, Hugh MacRae,
+  owned the local electric utility, and over a thousand incandescent bulbs lit it up. He hoped the
+  glow would get more people using electricity. Ships could navigate by it.
+
+  The second level was a dance floor with a band shell for the orchestra. Above it, a promenade
+  fifteen feet wide looked down on the dancers. All three levels were for white visitors only.
+
+  The pavilion was condemned in 1972 and demolished in 1973. On a summer evening here, picture the
+  lights coming on along this shore, bright enough to steer a ship by.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look along South Lumina Avenue."
+    source: 2
+    quote: "The pavilion was located near what is now the Sandpeddler Inn & Suites on S. Lumina Avenue."
+  - says: "Near here stood Lumina, the pavilion people called the Palace of Light."
+    source: 2
+    quote: "It did allow ships to navigate by it and was soon nicknamed \"The Palace of Light.\""
+  - says: "It opened on June 3, 1905, near the end of the electric trolley line."
+    source: 1
+    quote: "On June 3, 1905, Lumina, a pavilion on Wrightsville Beach known as the \"Fun Spot of the South\" opened for the first time."
+  - says: "Its builder, Hugh MacRae, owned the local electric utility, and over a thousand incandescent bulbs lit it up."
+    source: 2
+    quote: "over a thousand incandescent bulbs lit up the new entertainment pavilion. Built by Hugh MacRae , owner of the local electric utility"
+  - says: "He hoped the glow would get more people using electricity."
+    source: 2
+    quote: "he hoped its brightness would encourage more people to use electricity."
+  - says: "Ships could navigate by it."
+    source: 2
+    quote: "It did allow ships to navigate by it"
+  - says: "The second level was a dance floor with a band shell for the orchestra."
+    source: 1
+    quote: "The second level was primarily a dance floor with a balcony and band shell for the orchestra and a restaurant."
+  - says: "Above it, a promenade fifteen feet wide looked down on the dancers."
+    source: 1
+    quote: "The third floor housed a 15-foot-wide promenade overlooking the dance floor."
+  - says: "All three levels were for white visitors only."
+    source: 2
+    quote: "Lumina had three levels of recreational activities for white leisure-seekers"
+  - says: "The pavilion was condemned in 1972 and demolished in 1973."
+    source: 2
+    quote: "until it was finally condemned in 1972 and later demolished in 1973."
+sources:
+  - title: "Lumina, Storied Beacon at Wrightsville Beach"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2016/06/03/lumina-storied-beacon-wrightsville-beach
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Lumina: The Palace of Light"
+    publisher: "UNCW Library, Center for Southeast North Carolina Archives and History"
+    url: https://library.uncw.edu/archives_special/lumina-palace-light
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

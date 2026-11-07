@@ -1,0 +1,62 @@
+# Wrightsville Beach, batch C (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Beach Access 29 at Stone Street: just east of the Overture point for 15 Stone Street, toward the ocean end of the access; radius 0.1 km, on open public beach, not on a dune or nest (medium confidence).
+id: wrightsville-the-tracks-that-morning-walkers-read
+title: "The Tracks That Morning Walkers Read"
+summary: "Wrightsville Beach Sea Turtle Project volunteers walk the beach every morning in nesting season, reading the night's tracks."
+place: "Ocean end of Beach Access 29, Stone Street, Wrightsville Beach, North Carolina"
+at: { lat: 34.2077, lng: -77.7942 }
+triggerRadiusKm: 0.1
+category: land
+format: short
+durationS: 51
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, sea-turtles, wildlife]
+teaser: "Sea turtles come ashore in the dark. Volunteers read their tracks at dawn."
+script: |
+  Look at the open sand between the dunes and the water. Overnight, something might have crossed it.
+
+  Sea turtles nest at night, so volunteers with the Wrightsville Beach Sea Turtle Project check for
+  their tracks in the sand at dawn. Every day between May 1 and August 31, they walk the length of
+  the beach looking for signs of nesting.
+
+  When they find a nest, it is roped off as a federally protected area. Then they watch it daily
+  until it hatches, about 45 to 70 days later.
+
+  If you see a roped nest, leave it alone. If you see a turtle, stay quiet, keep your distance and
+  keep lights off it. By the time most of us reach the beach, the morning walkers have already read
+  the night.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Sea turtles nest at night, so volunteers with the Wrightsville Beach Sea Turtle Project check for their tracks in the sand at dawn."
+    source: 1
+    quote: "Sea turtles nest at night, so volunteers check for their tracks in the sand at dawn."
+  - says: "Every day between May 1 and August 31, they walk the length of the beach looking for signs of nesting."
+    source: 1
+    quote: "Every day between May 1 and August 31, sea turtle nesting season locally, our volunteers walk the length of Wrightsville Beach, looking for signs of sea turtle nesting activity."
+  - says: "When they find a nest, it is roped off as a federally protected area."
+    source: 1
+    quote: "When a nest is located, it is roped off to designate it as a federally protected area."
+  - says: "Then they watch it daily until it hatches, about 45 to 70 days later."
+    source: 1
+    quote: "Volunteers then monitor it daily until it hatches, approximately 45-70 days later."
+  - says: "If you see a turtle, stay quiet, keep your distance and keep lights off it."
+    source: 2
+    quote: "If you encounter a nesting sea turtle, remain quiet, keep your distance, and avoid shining lights on the animal."
+  - says: "If you see a roped nest, leave it alone."
+    source: 2
+    quote: "Do not touch or interfere with the turtle or nest."
+sources:
+  - title: "About Us"
+    publisher: "Wrightsville Beach Sea Turtle Project"
+    url: https://wbstp.org/about/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Coastal Wildlife Protection"
+    publisher: "Town of Wrightsville Beach"
+    url: https://www.townofwrightsvillebeach.com/609/Coastal-Wildlife-Protection
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

@@ -1,0 +1,59 @@
+# Wrightsville Beach, batch A (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Overture address point 4 Marina Street, the site the WWII heritage guide gives for the patrol base (high confidence for the address).
+id: wrightsville-a-patrol-base-beside-the-water
+title: "A Patrol Base Beside the Water"
+summary: "The site at 4 Marina Street was New Hanover County's main Coast Guard patrol base in the Second World War."
+place: "4 Marina Street, Harbor Island, Wrightsville Beach, North Carolina"
+at: { lat: 34.21681, lng: -77.81259 }
+triggerRadiusKm: 0.06
+category: history
+format: look-below
+durationS: 45
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, world-war-ii, coast-guard, waterway]
+teaser: "In the Second World War, the boats tied up here were hunting for submarines."
+script: |
+  Look past the restaurant to the water of the Intracoastal Waterway.
+
+  During the Second World War, this was the county's main Coast Guard patrol base. The wartime
+  heritage guide puts it at today's 4 Marina Street, where Bluewater Grill is now.
+
+  The Coast Guard patrolled from bases at Wrightsville Beach, Southport and Wilmington. Barges kept
+  to the inland waterway to avoid German U-boats.
+
+  The danger was real. In July 1943, people in a cottage at Kure Beach watched a U-boat attack the
+  chemical plant there.
+
+  Today the boats on this water are mostly out for fun. Then, they were looking for submarines.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "During the Second World War, this was the county's main Coast Guard patrol base."
+    source: 1
+    quote: "This site marks the county's main US Coast Guard patrol base"
+  - says: "The wartime heritage guide puts it at today's 4 Marina Street, where Bluewater Grill is now."
+    source: 1
+    quote: "(Bluewater Grill location – 4 Marina Street)"
+  - says: "The Coast Guard patrolled from bases at Wrightsville Beach, Southport and Wilmington."
+    source: 2
+    quote: "The Coast Guard was patrolling with bases at Wrightsville Beach, Southport, and Wilmington."
+  - says: "Barges kept to the inland waterway to avoid German U-boats."
+    source: 1
+    quote: "inland barge shipping avoiding U-boats."
+  - says: "In July 1943, people in a cottage at Kure Beach watched a U-boat attack the chemical plant there."
+    source: 1
+    quote: "Residents of the Gregory cottage witnessed the German U-boat attack on the Ethyl-Down Chemical plant in July 1943."
+sources:
+  - title: "World War II Heritage Guide of Wilmington and Southeastern North Carolina"
+    publisher: "World War II Wilmington Home Front Heritage Coalition"
+    url: https://wilburjones.com/wp-content/uploads/2021/12/WWII_NHCounty_Guide_v3.pdf
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "(H)our History Lesson: The Armed Forces Presence on the WWII Home Front in Wilmington, NC"
+    publisher: "National Park Service"
+    url: https://home.nps.gov/articles/000/-h-our-history-lesson-the-armed-forces-presence-on-the-wwii-home-front-in-wilmington-nc.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain

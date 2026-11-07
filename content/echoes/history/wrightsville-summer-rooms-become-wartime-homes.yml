@@ -1,0 +1,59 @@
+# Wrightsville Beach, batch A (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Overture address point 550 Waynick Boulevard (Carolina Temple). Listen from the public sidewalk (high confidence).
+id: wrightsville-summer-rooms-become-wartime-homes
+title: "Summer Rooms Become Wartime Homes"
+summary: "Carolina Temple was a popular guest home in the Second World War, and is called the beach's oldest running business."
+place: "Carolina Temple Island Inn, 550 Waynick Boulevard, Wrightsville Beach, North Carolina"
+at: { lat: 34.19658, lng: -77.80443 }
+triggerRadiusKm: 0.05
+category: history
+format: look-below
+durationS: 46
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, world-war-ii, lodging, home-front]
+teaser: "The war filled this island, and this guest house kept handing out keys."
+script: |
+  Look across Waynick Boulevard at the Carolina Temple, and stay on the sidewalk.
+
+  It dates from the early 1900s. During the Second World War it was a popular guest home, and the
+  wartime heritage guide calls it Wrightsville Beach's oldest continuously operating business.
+
+  The war filled this island. The town grew from two hundred and fifty-two residents in 1941 to
+  fifteen hundred in 1945. All of them needed somewhere to sleep.
+
+  The inn still rents small apartments, one or two rooms each, with their own kitchenettes. That is
+  the same offer it made to a crowded island at war: not a holiday, a place to live.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "It dates from the early 1900s."
+    source: 1
+    quote: "Carolina Temple Apartments (early 1900s)"
+  - says: "During the Second World War it was a popular guest home, and the wartime heritage guide calls it Wrightsville Beach's oldest continuously operating business."
+    source: 1
+    quote: "A popular guest home during the war, this is Wrightsville Beach's oldest continuously operating business."
+  - says: "The town grew from two hundred and fifty-two residents in 1941 to fifteen hundred in 1945."
+    source: 2
+    quote: "During World War II, the Town of Wrightsville beach grew from 252 residents in 1941 to 1500 residents in 1945."
+  - says: "The inn still rents small apartments, one or two rooms each, with their own kitchenettes."
+    source: 3
+    quote: "The apartments are not large but they are beautifully maintained, and are either one or two room air conditioned suites with private baths, ceiling fans and fully equipped kitchenettes."
+sources:
+  - title: "World War II Heritage Guide of Wilmington and Southeastern North Carolina"
+    publisher: "World War II Wilmington Home Front Heritage Coalition"
+    url: https://wilburjones.com/wp-content/uploads/2021/12/WWII_NHCounty_Guide_v3.pdf
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "History of the Police Department"
+    publisher: "Town of Wrightsville Beach"
+    url: https://www.townofwrightsvillebeach.com/255/History-of-the-Police-Department
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Carolina Temple Island Inn"
+    publisher: "Carolina Temple Island Inn"
+    url: https://www.carolinatempleislandinn.com/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

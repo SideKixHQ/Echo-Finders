@@ -1,0 +1,76 @@
+# Wrightsville Beach (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Ocean end of Stone Street (public access 29), extrapolated east from the Overture point for 15 Stone Street; 0.12 km radius (medium, approximate)
+id: wrightsville-nancy-fahey-learns-what-nests-here
+title: "Nancy Fahey Learns What Nests Here"
+summary: "Nancy Fahey began volunteering with the Wrightsville Beach Sea Turtle Project in 1995 and has led it since 2004."
+place: "Stone Street beach access (public access 29), Wrightsville Beach, North Carolina"
+at: { lat: 34.2078, lng: -77.7938 }
+triggerRadiusKm: 0.12
+category: people
+format: short
+durationS: 55
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, sea-turtles, conservation]
+teaser: "She had lived on this coast for ten years before she found out who else used the beach."
+script: |
+  Look at the sand between the dunes and the water. Sea turtles often nest on Wrightsville Beach,
+  and for years Nancy Fahey had no idea.
+
+  She had lived on the North Carolina coast for more than ten years when she learned about the
+  Wrightsville Beach Sea Turtle Project, then recently founded. She could not wait to get involved. She began volunteering in 1995. By the end of her
+  first summer, she was hooked.
+
+  Since 2004 she has led the project as its president and volunteer coordinator. Every day from May
+  through August, its volunteers walk the length of the beach, looking for signs of nesting. Turtles
+  nest at night, so the volunteers look for tracks at dawn.
+
+  A nest found that way is roped off, and watched every day until it hatches.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Sea turtles often nest on Wrightsville Beach, and for years Nancy Fahey had no idea."
+    source: 3
+    quote: "Sea turtles often nest on Wrightsville Beach."
+  - says: "Sea turtles often nest on Wrightsville Beach, and for years Nancy Fahey had no idea."
+    source: 1
+    quote: "She never knew sea turtles nested on our beach and could not wait to get involved."
+  - says: "She had lived on the North Carolina coast for more than ten years when she learned about the Wrightsville Beach Sea Turtle Project, then recently founded."
+    source: 1
+    quote: "After living on the N.C. coast for more than 10 years, Nancy learned about the recently founded WBSTP."
+  - says: "She began volunteering in 1995."
+    source: 1
+    quote: "began volunteering with the WBSTP in 1995."
+  - says: "By the end of her first summer, she was hooked."
+    source: 1
+    quote: "At the end of her first summer of volunteering, she was hooked."
+  - says: "Since 2004 she has led the project as its president and volunteer coordinator."
+    source: 2
+    quote: "Current president/volunteer coordinator (since 2004): Nancy Fahey"
+  - says: "Every day from May through August, its volunteers walk the length of the beach, looking for signs of nesting."
+    source: 2
+    quote: "Every day between May 1 and August 31, sea turtle nesting season locally, our volunteers walk the length of Wrightsville Beach, looking for signs of sea turtle nesting activity."
+  - says: "Turtles nest at night, so the volunteers look for tracks at dawn."
+    source: 2
+    quote: "Sea turtles nest at night, so volunteers check for their tracks in the sand at dawn."
+  - says: "A nest found that way is roped off, and watched every day until it hatches."
+    source: 2
+    quote: "When a nest is located, it is roped off to designate it as a federally protected area. Volunteers then monitor it daily until it hatches"
+sources:
+  - title: "Nancy Fahey"
+    publisher: "Wrightsville Beach Sea Turtle Project"
+    url: https://wbstp.org/about/nancy-fahey/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "About Us"
+    publisher: "Wrightsville Beach Sea Turtle Project"
+    url: https://wbstp.org/about/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Wrightsville Beach Map Brochure 2024"
+    publisher: "Town of Wrightsville Beach"
+    url: https://www.townofwrightsvillebeach.com/DocumentCenter/View/8766/Letter-Size-WB-Map-Brochure-2024-3252024?bidId=
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

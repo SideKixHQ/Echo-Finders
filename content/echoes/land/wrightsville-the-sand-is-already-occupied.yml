@@ -1,0 +1,67 @@
+# Wrightsville Beach, batch C (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Beach Access 43 (1000 South Lumina Avenue, per the town access map), extrapolated south from Overture points 901 to 917 South Lumina Avenue because Overture has no 1000; pinned at the street end of the access, landward of the beach and outside the South End Bird Sanctuary postings, radius 0.15 km (low to medium confidence).
+id: wrightsville-the-sand-is-already-occupied
+title: "The Sand Is Already Occupied"
+summary: "The south end of Wrightsville Beach is Audubon North Carolina's busiest nesting site, home to colonies of Least Terns and Black Skimmers."
+place: "South end, Beach Access 43, 1000 South Lumina Avenue, Wrightsville Beach, North Carolina"
+at: { lat: 34.1867, lng: -77.811 }
+triggerRadiusKm: 0.15
+category: land
+format: short
+durationS: 54
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, birds, nesting, wildlife]
+teaser: "An empty stretch of beach that is, in season, a nursery."
+script: |
+  Look south along the sand toward the posted signs and the rope. It can look empty. In nesting
+  season, it usually isn't.
+
+  Audubon calls the south end of Wrightsville Beach its busiest nesting site. Colonies of Least
+  Terns and Black Skimmers nest here, and skimmers have been nesting on this beach since 2009.
+
+  These birds nest directly on the sand, and their nests are often difficult to see. Even a brief
+  disturbance can make the adults leave, exposing eggs and chicks to heat and predators.
+
+  From March 1 to September 15, postings protect the places where birds are building nests, laying
+  eggs and raising chicks. So stay outside the signs and watch from here. If a bird starts calling
+  loudly, it is telling you to back away.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Audubon calls the south end of Wrightsville Beach its busiest nesting site."
+    source: 1
+    quote: "the south end of Wrightsville Beach is our busiest nesting site."
+  - says: "Colonies of Least Terns and Black Skimmers nest here, and skimmers have been nesting on this beach since 2009."
+    source: 1
+    quote: "this sanctuary hosts colonies of Least Terns and Black Skimmers. Skimmers have been nesting on the beach since 2009"
+  - says: "These birds nest directly on the sand, and their nests are often difficult to see."
+    source: 2
+    quote: "These birds nest directly on the sand, making their eggs and chicks especially vulnerable to disturbance."
+  - says: "Even a brief disturbance can make the adults leave, exposing eggs and chicks to heat and predators."
+    source: 2
+    quote: "Even a brief disturbance can cause adult birds to leave their nests, exposing eggs and chicks to heat, predators, or other dangers."
+  - says: "From March 1 to September 15, postings protect the places where birds are building nests, laying eggs and raising chicks."
+    source: 1
+    quote: "From March 1 to September 15, postings protect areas of the beach and coast where birds are building nests, laying eggs, and raising chicks."
+  - says: "If a bird starts calling loudly, it is telling you to back away."
+    source: 2
+    quote: "Give birds plenty of space if they appear agitated or are calling loudly"
+sources:
+  - title: "'Tis the Season for Baby Birds"
+    publisher: "Audubon North Carolina"
+    url: https://www.audubon.org/north-carolina/news/tis-season-baby-birds
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Coastal Wildlife Protection"
+    publisher: "Town of Wrightsville Beach"
+    url: https://www.townofwrightsvillebeach.com/609/Coastal-Wildlife-Protection
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Wrightsville Beach map brochure 2024"
+    publisher: "Town of Wrightsville Beach"
+    url: https://www.townofwrightsvillebeach.com/DocumentCenter/View/8766/Letter-Size-WB-Map-Brochure-2024-3252024?bidId=
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

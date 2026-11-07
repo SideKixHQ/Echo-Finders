@@ -1,0 +1,68 @@
+# Wrightsville Beach, batch A (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Intersection of North Lumina Avenue and Salisbury Street: average of Overture address points 1101 and 1102 North Lumina Avenue, 4 West Salisbury and 11 East Salisbury. A route viewpoint; no station is claimed here (medium confidence).
+id: wrightsville-the-beach-car-stops-running
+title: "The Beach Car Stops Running"
+summary: "The Wilmington to Wrightsville Beach trolley line ran from 1888 until April 26, 1940, when buses replaced the beach cars."
+place: "North Lumina Avenue at Salisbury Street, Wrightsville Beach, North Carolina"
+at: { lat: 34.21515, lng: -77.7906 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 55
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, trolley, transport]
+teaser: "For fifty years you came here by rail. Then one April night, the buses took over."
+script: |
+  Look along Lumina Avenue at the traffic, then picture the street without it.
+
+  From 1888, a railway ran eleven miles from downtown Wilmington to this beach. It began with steam,
+  and in 1902 the line was electrified. People called the trolleys the beach cars.
+
+  Then the roads improved. Drivers could reach the beach at their own convenience, and fewer people
+  rode.
+
+  On April 26, 1940, the Wilmington News carried the headline: Beach cars to end run here today. At
+  midnight, buses took over, and the rails were taken up.
+
+  Of twenty stops on the line, one passenger station survives, a small concrete shelter in Wilmington's
+  Audubon neighborhood. In 1984 a neighbor wrote to the paper, begging the city to save it before the
+  wrecking ball came.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "From 1888, a railway ran"
+    source: 1
+    quote: "The Wrightsville Beach trolley line, first opened in 1888 as a steam operated system"
+  - says: "eleven miles from downtown Wilmington to this beach"
+    source: 1
+    quote: "to the Hammocks and Wrightsville Beach eleven miles to the southeast of the downtown station."
+  - says: "It began with steam, and in 1902 the line was electrified."
+    source: 1
+    quote: "The system was electrified in 1902"
+  - says: "People called the trolleys the beach cars."
+    source: 1
+    quote: "Effective at midnight the Tide Water Power Company will discontinue its inter-urban trolley service to Wrightsville Beach, supplanting the \"beach cars\" with a complete, modern bus service."
+  - says: "Drivers could reach the beach at their own convenience, and fewer people rode."
+    source: 1
+    quote: "road improvements throughout the area attracted more and more automobilists who could reach the beach at their convenience on Wrightsville Turnpike"
+  - says: "On April 26, 1940, the Wilmington News carried the headline: Beach cars to end run here today."
+    source: 1
+    quote: "Wilmington News, April 26, 1940: \"Beach cars to end run here today - Buses to supplant line to Wrightsville Beach tomorrow"
+  - says: "At midnight, buses took over, and the rails were taken up."
+    source: 1
+    quote: "Effective at midnight the Tide Water Power Company will discontinue its inter-urban trolley service to Wrightsville Beach"
+  - says: "Of twenty stops on the line, one passenger station survives, a small concrete shelter in Wilmington's Audubon neighborhood."
+    source: 1
+    quote: "this is the only surviving passenger station of twenty stops on the electric trolley line between Wilmington and Wrightsville Beach."
+  - says: "In 1984 a neighbor wrote to the paper, begging the city to save it before the wrecking ball came."
+    source: 1
+    quote: "In 1984, J.F. Newber, Jr., an Audubon resident, stated in a letter to the editor of the Wilmington Star that he was concerned"
+sources:
+  - title: "Audubon Trolley Station, National Register of Historic Places nomination"
+    publisher: "North Carolina State Historic Preservation Office"
+    url: https://files.nc.gov/ncdcr/nr/NH1240.pdf
+    retrievedAt: "2026-11-07"
+    rights: public-domain
