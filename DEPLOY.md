@@ -213,6 +213,25 @@ Error reports are **opt-in** (James, 2026-11-06). A phone
 sends nothing until its owner turns on Settings › Privacy › Send error reports, so expect
 few reports, and turn it on yourself on your own phone when testing.
 
+## The website (echofinders.com)
+
+The marketing site is `apps/site` (`@echofinders/site`): React 18, Vite, Tailwind, two pages
+(Home and Partners). It began as James's Airo draft and was brought into the repo on
+2026-11-07. Every word and photo is in `apps/site/src/content.ts`; prices there must match
+`PLANS` in `packages/core/src/entitlement/entitlement.ts`.
+
+It is its own Vercel project, `echo-finders-site`, with root directory `apps/site`. Merging to
+`main` deploys both the app and the site. The domain `echofinders.com` is registered at
+GoDaddy; its DNS points at Vercel (an `A` record for the apex and a `CNAME` for `www`, values
+as shown in the Vercel project's Domains page).
+
+- Photos are Unsplash images loaded from images.unsplash.com, except History, which is a
+  public-domain Library of Congress plate of Fort Fisher (`public/fort-fisher.jpg`).
+- "Get the app" opens the web app at https://echo-finders.vercel.app/.
+- The partner form opens the visitor's email app, addressed to `partners@echofinders.com`;
+  contact links use `hello@echofinders.com`. Both addresses must exist.
+- Terms and refund policy links go in the footer once those pages are published (#122).
+
 ## What is most useful to hear from you
 
 Not bugs — I can find those. The things only you can answer:
