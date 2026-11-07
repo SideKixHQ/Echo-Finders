@@ -33,7 +33,12 @@ export const FEEDBACK_KINDS: Readonly<Record<FeedbackKind, string>> = {
 export const MAX_MESSAGE = 2000;
 
 export interface Feedback {
-  readonly kind: FeedbackKind;
+  /**
+   * What it is about, when the sender said. Optional (James, 2026-11-06): the form used to
+   * start on "Something's not working", and the first real message, "This is great", was
+   * filed as a bug because nobody changes a default. Better uncategorised than wrong.
+   */
+  readonly kind?: FeedbackKind;
   readonly message: string;
   readonly email?: string;
   /**
@@ -84,11 +89,11 @@ export function feedbackEnvelope(
     level: "info",
     release,
     environment: "production",
-    tags: { kind: feedback.kind, ...(feedback.echo ? { echo: feedback.echo.id } : {}) },
+    tags: { kind: feedback.kind ?? "unsorted", ...(feedback.echo ? { echo: feedback.echo.id } : {}) },
     contexts: {
       feedback: {
         // The kind leads the message so it reads in the inbox list, where tags do not show.
-        message: `[${FEEDBACK_KINDS[feedback.kind]}${feedback.echo ? ` · ${feedback.echo.title}` : ""}] ${feedback.message.trim().slice(0, MAX_MESSAGE)}`,
+        message: `${label(feedback)}${feedback.message.trim().slice(0, MAX_MESSAGE)}`,
         ...(email ? { contact_email: email } : {}),
         url: path.replace(/[?#].*$/, ""),
         source: feedback.source ?? "settings",
@@ -118,4 +123,11 @@ export async function sendFeedback(
   } catch {
     return false;
   }
+}
+
+/** "[A story got something wrong · Title] ", "[An idea] ", "[About: Title] " or nothing. */
+function label(feedback: Feedback): string {
+  const { kind, echo } = feedback;
+  if (kind) return `[${FEEDBACK_KINDS[kind]}${echo ? ` · ${echo.title}` : ""}] `;
+  return echo ? `[About: ${echo.title}] ` : "";
 }
