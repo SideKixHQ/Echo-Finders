@@ -10,7 +10,7 @@ at: { lat: 34.23351, lng: -77.94601 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 73
+durationS: 72
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -23,8 +23,8 @@ script: |
   After William Latimer's death in 1923, Margaret Latimer took in boarders. The museum
   records that artist Elisabeth Chant later rented a room here.
 
-  That shift brought additional lives into a house strongly identified with one family.
-  Private rooms became lodgings; a formal residence gained a practical way to keep
+  That shift brought additional lives into a house strongly identified with a single
+  family. Private rooms became lodgings; a formal residence gained a practical way to keep
   operating.
 
   Look at the windows from Third Street. They do not reveal which occupant belonged to
@@ -36,9 +36,16 @@ script: |
   building to remain useful.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "After William Latimer's death in 1923, Margaret Latimer took in boarders."
+    source: 1
+    quote: "They had an addition built onto the rear of the house in 1922 to accommodate a modern kitchen. Upon William ‘s death the following year, Margaret converted the guest rooms and began to take in boarders to supplement her income."
+  - says: "The museum records that artist Elisabeth Chant later rented a room here."
+    source: 1
+    quote: "By 1930, Chant was renting a room at the Latimer House"
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"
     url: https://latimerhouse.org/about/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

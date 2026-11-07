@@ -4,7 +4,7 @@
 # Shares a stop with other echoes, so it sits 6m off the spot to keep its pin tappable.
 id: wilmington-eight-buildings-one-new-use
 title: "Eight Buildings, One New Use"
-summary: "The Cotton Exchange is described as a complex of eight interconnected historic buildings."
+summary: "The Cotton Exchange is eight restored buildings joined by open-air courtyards."
 place: "Cotton Exchange, 321 North Front Street, Wilmington, North Carolina"
 at: { lat: 34.23946, lng: -77.94929 }
 triggerRadiusKm: 0.04
@@ -16,10 +16,10 @@ certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "The Cotton Exchange is described as a complex of eight interconnected historic buildings."
+teaser: "The Cotton Exchange is eight restored buildings joined by open-air courtyards."
 script: |
-  The Cotton Exchange is described as a complex of eight interconnected historic
-  buildings. That explains why it does not behave like one purpose-built shopping center.
+  The Cotton Exchange is eight restored buildings joined by open-air courtyards. That
+  explains why it does not behave like a purpose-built shopping center.
 
   Its present use asks visitors to move through spaces that began with different
   commercial roles. Floors and passageways preserve some of that uneven history.
@@ -34,14 +34,21 @@ script: |
   speed.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The Cotton Exchange is eight restored buildings joined by open-air courtyards."
+    source: 1
+    quote: "Cotton Exchange’s eight restored buildings with 30 specialty shops and restaurants connected by open-air courtyards"
+  - says: "The Cotton Exchange is eight restored buildings"
+    source: 2
+    quote: "But the eight building fixture which houses the Jolly fellow each year was nearly torn down more than half a century ago."
 sources:
-  - title: "Journey into the haunted depths of old wilmington"
+  - title: "Shopping in Wilmington"
     publisher: "Wilmington and Beaches Convention and Visitors Bureau"
-    url: https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/
-    retrievedAt: "2026-10-09"
+    url: https://www.wilmingtonandbeaches.com/things-to-do/shopping/
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
-  - title: "Central business district"
-    publisher: "Downtown Business Alliance Wilmington"
-    url: https://dbawilmington.org/downtown/central-business-district/
-    retrievedAt: "2026-10-09"
+  - title: "History with 'Hud': How the Cotton Exchange survived demolition to become a Wilmington favorite"
+    publisher: "WWAY News"
+    url: https://www.wwaytv3.com/?p=2214621
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

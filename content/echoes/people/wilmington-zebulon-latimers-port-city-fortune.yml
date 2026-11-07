@@ -19,25 +19,44 @@ tags: [wilmington, downtown]
 teaser: "Zebulon Latimer came from Connecticut and built a career as a commission merchant in Wilmington."
 script: |
   Zebulon Latimer came from Connecticut and built a career as a commission merchant in
-  Wilmington. His business success helped support the substantial house completed here in
-  1852.
+  Wilmington. His business success helped support the substantial house completed here
+  in 1852.
 
-  The museum also connects his wealth with investments in gas lighting and railroads. His
-  domestic surroundings belonged to a larger commercial network.
+  The museum also connects his wealth with investments in gas, light, and railroad
+  companies. His domestic surroundings belonged to a larger commercial network.
 
   This is his residence, not the place where every business transaction occurred. The
   distinction helps you read the house as evidence of economic results rather than the
   whole economy itself.
 
-  From Third Street, notice the confidence of its scale. A merchant's success could become
-  brick, rooms, and furnishings. The facade makes private prosperity visible, while the
-  wider story asks where that prosperity came from and whose work helped sustain the city
-  around it.
+  Notice the confidence of its scale from the sidewalk. A merchant's success could
+  become brick, rooms, and furnishings. The facade makes private prosperity visible,
+  while the wider story asks where that prosperity came from and whose work helped
+  sustain the city around it.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Zebulon Latimer came from Connecticut and built a career as a commission merchant in Wilmington."
+    source: 1
+    quote: "Zebulon Latimer (1810-1881) was born and raised in a middle class family in Middlesex County, Connecticut. As a young man, he moved to North Carolina to pursue business ventures and found success in Wilmington."
+  - says: "built a career as a commission merchant in Wilmington"
+    source: 1
+    quote: "He operated a storefront on Market Street as a commission merchant."
+  - says: "His business success helped support the substantial house completed here in 1852."
+    source: 1
+    quote: "Zebulon Latimer married Elizabeth Savage in 1848 at St. James Episcopal Church and moved into their brand new estate in 1852."
+  - says: "The museum also connects his wealth with investments in gas, light, and railroad companies."
+    source: 1
+    quote: "Key investments in gas, light, and railroad companies helped earn much of their wealth."
+  - says: "This is his residence, not the place where every business transaction occurred."
+    source: 1
+    quote: "He operated a storefront on Market Street as a commission merchant."
+  - says: "wider story asks where that prosperity came from and whose work helped sustain the city"
+    source: 1
+    quote: "Also located on the grounds are the Latimer House enslaved quarters, restored after a major preservation effort in the 1970s."
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"
     url: https://latimerhouse.org/about/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

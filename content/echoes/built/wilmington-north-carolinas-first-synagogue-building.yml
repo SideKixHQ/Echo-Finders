@@ -43,14 +43,23 @@ claims:
   - says: "The congregation describes its building as Moorish Revival, a style used by synagogues in Europe and the United States during that period."
     source: 2
     quote: "Begun in 1875 and completed in 1876, the beautiful Temple structure was built in the Moorish Revival architectural style of building, which was then popular for synagogues in both Europe and the United States."
+  - says: "a community establishing a permanent worship space"
+    source: 1
+    quote: "About 40 families came together in 1872 to set plans for the long-awaited synagogue."
+  - says: "It belongs to Wilmington's streetscape while retaining a distinctive identity."
+    source: 1
+    quote: "Samuel Sloan of Philadelphia was retained as the architect and plans were developed for a distinctive building in the Moorish Revival style."
+  - says: "A Jewish congregation secured a place where its life could continue across generations in the city."
+    source: 2
+    quote: "Today the Temple is one of fewer than thirty Jewish congregations to endure in its original nineteenth century structure."
 sources:
   - title: "States first jewish house worship temple israel"
     publisher: "North Carolina Department of Natural and Cultural Resources"
     url: https://www.dncr.nc.gov/blog/2016/05/12/states-first-jewish-house-worship-temple-israel
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "History"
     publisher: "Temple of Israel"
     url: https://temple-of-israel.org/history/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

@@ -22,22 +22,34 @@ script: |
 
   That national achievement can obscure the local beginning: a young lawyer building a
   career in a port town. Wilmington supplied professional relationships and a political
-  setting before the Continental Congress became his larger stage.
+  setting: he represented New Hanover County in the Assembly before the Continental
+  Congress became his larger stage.
 
   You are at a marker honoring that connection, not standing inside a verified surviving
   office.
 
   Look along Third Street and think about how a public life begins. The later signature
-  gives Hooper a place in national memory, but the earlier years consisted of work and
-  decisions whose consequences were still unknown. The marker brings the two scales
-  together: a person's Wilmington chapter and the document that would define his
-  reputation.
+  gives him a place in national memory, but the earlier years consisted of work and
+  decisions whose consequences were still unknown. The marker brings both scales
+  together: a person's local chapter and the document that would define his reputation.
 editorial: draft
 factCheck: single-source
 claims:
   - says: "William Hooper arrived in Wilmington in 1764 and opened a law office."
     source: 1
     quote: "In 1764, after finishing his education, Hooper moved to Wilmington and opened a law office."
+  - says: "Twelve years later, he signed the Declaration of Independence."
+    source: 1
+    quote: "In May 1776, Hooper joined John Penn and Hewes at the Third Continental Congress. With Hewes, Hooper served on the Marine Committee, and although absent when the Declaration of Independence was voted on, signed his name to the document on August 2."
+  - says: "he represented New Hanover County in the Assembly"
+    source: 1
+    quote: "He returned to the Assembly in December 1773 as New Hanover County’s representative along with John Ashe."
+  - says: "before the Continental Congress became his larger stage."
+    source: 1
+    quote: "At the First Provincial Congress in North Carolina in August 1774, Hooper was elected as one of the colony’s first three delegates to the Continental Congress along with Richard Caswell and Joseph Hewes."
+  - says: "You are at a marker honoring that connection"
+    source: 1
+    quote: "Location: Third Street at Princess Street in Wilmington"
 sources:
   - title: "William hooper d 45"
     publisher: "North Carolina Department of Natural and Cultural Resources"

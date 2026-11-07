@@ -23,12 +23,12 @@ script: |
   The congregation's history connects that first sermon with Jewish liberty. The new
   synagogue supplied a permanent local setting for worship and community life.
 
-  Listen from the public sidewalk. A long tenure means more than one ceremonial opening:
+  Listen from the public sidewalk. A long tenure means more than a ceremonial opening:
   it includes repeated services, teaching, changes in families, and the ordinary
   responsibilities of sustaining a congregation.
 
-  Mendelsohn's name helps make the building's history personal. The synagogue was not only
-  constructed; it was used and cared for by a community over time. His decades of
+  Mendelsohn's name helps make the building's history personal. The synagogue was not
+  simply constructed; it was used and cared for by a community over time. His decades of
   leadership link its early years with the city that developed around this corner into the
   twentieth century.
 editorial: draft
@@ -37,6 +37,12 @@ claims:
   - says: "Rabbi Samuel Mendelsohn presided when Wilmington's Temple of Israel was dedicated in 1876."
     source: 1
     quote: "The Temple of Israel was officially dedicated on May 12th, 1876, with Rabbi Samuel Mendelsohn presiding."
+  - says: "His tenure continued until 1922, spanning forty-six years."
+    source: 1
+    quote: "His tenure spanned a remarkable forty-six years (1876-1922)."
+  - says: "The congregation's history connects that first sermon with Jewish liberty."
+    source: 1
+    quote: "In his initial sermon, he spoke about Jewish liberty, which had been slowly won through the ages."
 sources:
   - title: "History"
     publisher: "Temple of Israel"

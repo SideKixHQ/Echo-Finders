@@ -26,8 +26,8 @@ script: |
   possible. The owner's surname on the building can otherwise make the builders disappear
   from its story.
 
-  Look at the exterior from the sidewalk. Plans only become walls, floors, and finished
-  details when people know how to execute them.
+  Look at the exterior from the sidewalk. A plan does not become walls, floors, and
+  finished details until people know how to execute it.
 
   Taylor's work reminds us to connect an impressive residence with the expertise it
   required. His name belongs in the account of this place, alongside its architect and
@@ -39,9 +39,24 @@ claims:
   - says: "Henry Taylor was a carpenter and builder who worked on the Bellamy project."
     source: 1
     quote: "Another carpenter on the Bellamy project was Henry Taylor."
+  - says: "Henry Taylor was a carpenter and builder"
+    source: 1
+    quote: "Taylor was a successful carpenter-builder and businessman both prior to the end of the Civil War and after."
+  - says: "His career continued after emancipation"
+    source: 1
+    quote: "After emancipation, Taylor ran a grocery store as well as continuing with carpentry."
+  - says: "included other Wilmington buildings"
+    source: 1
+    quote: "His later projects included the Hemenway School and the first black Masonic lodge in Wilmington--Giblem Masonic Lodge."
+  - says: "and community activity"
+    source: 1
+    quote: "He was also a founding member of the Chestnut Street Presbyterian Church and active in local politics."
+  - says: "The museum identifies him among the Black craftspeople whose skill made the mansion possible."
+    source: 1
+    quote: "Dr. John D. Bellamy hired Northern-born architects to design his Wilmington townhome while he contracted enslaved craftsmen and hired free black artisans to execute those plans."
 sources:
   - title: "The people"
     publisher: "Bellamy Mansion Museum"
     url: https://www.bellamymansion.org/the-people.html
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

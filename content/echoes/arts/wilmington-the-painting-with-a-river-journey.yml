@@ -24,15 +24,34 @@ script: |
   The parish's account says the salvaged painting went first to St. Philip's Church and
   later to St. James after Brunswick Town was abandoned. Its artist remains uncertain.
 
-  In 2026, the parish reported sending the painting for conservation. This stop therefore
-  connects you with its history, not a promise that it is currently hanging inside.
+  The parish has reported sending the painting to Durham for conservation. This stop
+  therefore connects you with its history, not a promise that it is currently hanging inside.
 
   Stand outside and consider an artwork that outlasted changes in location and care. Its
-  story is not only what it depicts. The journeys, the uncertain attribution, and the work
+  story is more than what it depicts. The journeys, the uncertain attribution, and the work
   needed to stabilize the canvas all belong to it. The object survives because later
   people keep accepting responsibility for its future.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "St. James preserves the story of Ecce Homo"
+    source: 1
+    quote: "Behind oft-closed doors near the baptismal font in the St. James sanctuary is a painting, Ecce Homo (Behold The Man), which was hung in what is believed to be its original frame."
+  - says: "a Spanish privateer vessel near Brunswick Town in 1748"
+    source: 1
+    quote: "In September 1748, Spanish privateers seeking to capitalize on the minimal defenses of the Carolina coastline sailed up the Cape Fear River, aiming to prey on the British colonial settlement there. The people of Brunswick Town fought back and drove off the privateers, but not before one of the vessels, La Fortuna, was set aflame and captured."
+  - says: "the salvaged painting went first to St. Philip's Church"
+    source: 1
+    quote: "The colonial assembly voted to present the painting to St. Philip’s Church in Brunswick Town."
+  - says: "later to St. James after Brunswick Town was abandoned"
+    source: 1
+    quote: "When Brunswick Town was abandoned following the American Revolution, the painting was brought to St. James."
+  - says: "Its artist remains uncertain."
+    source: 1
+    quote: "Some believe the painting may have been the work of 16th-century Spanish artist Francisco Pacheco."
+  - says: "The parish has reported sending the painting to Durham for conservation."
+    source: 1
+    quote: "In late April, Ecce Homo made the trip to Durham, NC, where it is currently under the care of Ruth Cox of Ruth Cox Painting Conservation, Inc."
 sources:
   - title: "A new journey for ecce homo"
     publisher: "St. James Parish"

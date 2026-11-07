@@ -9,7 +9,7 @@ at: { lat: 34.23420, lng: -77.94950 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 70
+durationS: 61
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -25,21 +25,33 @@ script: |
   One of its surviving legends concerns a formidable woman known as Gallus Meg.
 
   Local ghost-tour tradition associates her with the old Blue Post tavern and says her
-  presence lingered after death. The historic tavern in this tale should not be confused
-  with another business that now uses the Blue Post name.
+  presence lingered after death.
 
   Meg's reputation belongs to folklore. The reported haunting is not proof that a spirit
-  occupies a building, and the more lurid versions should not be mistaken for a documented
-  criminal biography.
+  occupies a building, and the more lurid versions should not be mistaken for a
+  documented criminal biography.
 
   Stand by the public street and let the river supply the atmosphere. A working port
-  brings strangers together, then sends them away. Meg's story reverses that pattern: one
-  waterfront character, storytellers suggest, never quite left.
+  brings strangers together, then sends them away. Meg's story reverses that pattern:
+  one waterfront character, storytellers suggest, never quite left.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "This waterfront once belonged as much to sailors and taverns as to strolling visitors."
+    source: 1
+    quote: "In the early 18th century, Wilmington was a notoriously rough and rowdy seaport – a far cry from the city's current reputation as a welcoming cultural hub."
+  - says: "One of its surviving legends concerns a formidable woman known as Gallus Meg."
+    source: 1
+    quote: "In the early 18th century, the bar became infamous for its red-headed bartender, Gallus Meg, who ruled the Blue Post with an iron fist and fearsome reputation that ensured no troublemaker went unpunished."
+  - says: "Local ghost-tour tradition associates her with the old Blue Post tavern and says her presence lingered after death."
+    source: 1
+    quote: "Today, her ghostly presence is said to roam the area, a piece of lore you'll uncover during a Haunted Pub Crawl ."
+  - says: "Meg's story reverses that pattern: one waterfront character, storytellers suggest, never quite left."
+    source: 1
+    quote: "perhaps even catch a glimpse of its most infamous bartender, still keeping order from beyond the grave."
 sources:
   - title: "Journey into the haunted depths of old wilmington"
     publisher: "Wilmington and Beaches Convention and Visitors Bureau"
     url: https://www.wilmingtonandbeaches.com/blog/post/journey-into-the-haunted-depths-of-old-wilmington/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

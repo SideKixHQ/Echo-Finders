@@ -21,12 +21,12 @@ script: |
   Thomas Henry Wright inherited this house as a boy and later trained as a physician. In
   1845, he enlarged the property.
 
-  The museum's family timeline also connects him with banking and railroad leadership. A
-  single resident's career could link domestic space with the institutions helping
-  Wilmington grow.
+  The museum's family timeline also connects him with banking and railroad leadership. He
+  was among the first directors of the Wilmington and Weldon Railroad and, from 1847,
+  president of the Bank of Cape Fear.
 
-  Look at the house from the public corner. Its name joins two families, but even one
-  family's occupancy included substantial change. Thomas did not receive a finished
+  Look at the house from the public corner. Its hyphenated name joins families, but even a
+  single family's occupancy included substantial change. Thomas did not receive a finished
   museum; he received a working residence that could be adapted.
 
   The expansion gives his life a physical consequence here. The rooms belonged to
@@ -35,9 +35,22 @@ script: |
   inherited.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Thomas Henry Wright inherited this house as a boy and later trained as a physician."
+    source: 1
+    quote: "Joshua’s 11-year-old son, Thomas Henry Wright, inherits the house and continues to live here with his mother and younger siblings. After graduating from the University of North Carolina in 1820, Thomas receives his doctorate in medicine from Columbia University"
+  - says: "In 1845, he enlarged the property."
+    source: 1
+    quote: "Thomas is responsible for the 1845 enlargement and restoration of the house"
+  - says: "He was among the first directors of the Wilmington and Weldon Railroad and, from 1847, president of the Bank of Cape Fear."
+    source: 1
+    quote: "he becomes one of the first directors of the Wilmington and Weldon Railroad, and from 1847 until his death in 1861, Thomas serves as President of the Bank of Cape Fear."
+  - says: "His story helps explain why the building cannot be read as one moment in 1770."
+    source: 1
+    quote: "1770-1775 The Burgwin-Wright House is built as a townhouse for John Burgwin"
 sources:
   - title: "Family timeline"
     publisher: "Burgwin-Wright House and Gardens"
     url: https://www.burgwinwrighthouse.com/family-timeline
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

@@ -3,7 +3,7 @@
 # Position: Garden lies behind (south of) the house on the SW corner of 3rd & Market; estimated from grid, no direct garden coordinate. (low confidence).
 id: wilmington-the-garden-that-was-designed-later
 title: "The Garden That Was Designed Later"
-summary: "These gardens may feel as old as the house."
+summary: "These gardens can feel as old as the house."
 place: "Burgwin-Wright House gardens, 224 Market Street, Wilmington, North Carolina"
 at: { lat: 34.23515, lng: -77.94660 }
 triggerRadiusKm: 0.06
@@ -15,9 +15,9 @@ certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "These gardens may feel as old as the house."
+teaser: "These gardens can feel as old as the house."
 script: |
-  These gardens may feel as old as the house. Their present design belongs to a later
+  These gardens can feel as old as the house. Their present design belongs to a later
   chapter.
 
   In 1962, the museum hired landscape architect Alden Hopkins to create gardens in an
@@ -28,7 +28,7 @@ script: |
   planting give visitors different ways to approach the past. A useful plant tells a
   different story from a decorative hedge.
 
-  Walk only along the open paths. Notice where the design invites a pause and where it
+  Keep to the open paths. Notice where the design invites a pause and where it
   directs your gaze. This landscape records two eras at once: the colonial world it evokes
   and the twentieth-century preservation work that chose how that world would be
   presented.
@@ -38,14 +38,23 @@ claims:
   - says: "In 1962, the museum hired landscape architect Alden Hopkins to create gardens in an eighteenth-century style."
     source: 1
     quote: "In 1962, the NSCDA-NC hired Alden Hopkins, a renowned landscape architect from colonial Williamsburg, to create an 18th century style garden on the grounds."
+  - says: "landscape architect Alden Hopkins"
+    source: 2
+    quote: "Two of Colonial Williamsburg’s renowned landscape architects, Alden Hopkins and Donald H. Parker"
+  - says: "they are not a garden preserved unchanged from 1770"
+    source: 1
+    quote: "The Burgwin-Wright House and Gardens occupy the original 1744 city jail lot where John Burgwin, a prominent merchant, planter, and Treasurer of the Colony, built his residence in 1770."
+  - says: "This landscape records two eras at once: the colonial world it evokes and the twentieth-century preservation work that chose how that world would be presented."
+    source: 1
+    quote: "In 1962, the NSCDA-NC hired Alden Hopkins, a renowned landscape architect from colonial Williamsburg, to create an 18th century style garden on the grounds."
 sources:
   - title: "The property"
     publisher: "Burgwin-Wright House and Gardens"
     url: https://www.burgwinwrighthouse.org/the-property
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "Gardens"
     publisher: "Burgwin-Wright House and Gardens"
     url: https://www.burgwinwrighthouse.org/gardens
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

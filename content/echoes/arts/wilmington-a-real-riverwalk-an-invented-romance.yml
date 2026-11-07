@@ -26,15 +26,19 @@ script: |
   Stand on the public Riverwalk and look at what a production gained here: water, space,
   and a city backdrop that could become part of another town's screen identity.
 
-  That transformation is part of Wilmington's arts history. Filmmaking asks a real place
-  to play a role. Once the episode reaches an audience, the setting can hold two meanings
-  at once: an ordinary local walkway and a remembered moment in a television story. You
+  That transformation is part of the city's arts history. Filmmaking asks a real place
+  to play a role. Once the episode reaches an audience, the setting can hold a double
+  meaning: an ordinary local walkway and a remembered moment in a television story. You
   are standing in the overlap.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Wilmington's tourism authority identifies this riverfront area as the Dawson's Creek location of Andie and Pacey's first kiss."
+    source: 1
+    quote: "Or, spot multiple sites along the Wilmington Riverwalk like where Andie and Pacey's first kissed across from the Alton Lennon Federal Courthouse, located at the foot of Market Street and Water Street."
 sources:
   - title: "Famous film and tv sites"
     publisher: "Wilmington and Beaches Convention and Visitors Bureau"
     url: https://www.wilmingtonandbeaches.com/things-to-do/tours-and-cruises/famous-film-and-tv-sites/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

@@ -35,6 +35,16 @@ script: |
   can see.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Hannah Block entertained wartime service members by singing and playing piano."
+    source: 1
+    quote: "Listed on the National Register of Historic Places, the building was rededicated in 2006 in honor of Hannah Block, a longtime Wilmington civic leader and WWII USO volunteer who entertained troops by singing and playing piano."
+  - says: "The building that carries her name preserves that connection, including a piano identified with her performances."
+    source: 2
+    quote: "The very piano that she played is on display in the Hannah Block Historic USO Museum portion of the Community Arts Center in Wilmington, NC."
+  - says: "The center was rededicated in her honor in 2006."
+    source: 1
+    quote: "Listed on the National Register of Historic Places, the building was rededicated in 2006 in honor of Hannah Block, a longtime Wilmington civic leader and WWII USO volunteer who entertained troops by singing and playing piano."
 sources:
   - title: "85th anniversary celebration"
     publisher: "Wilmington Community Arts"

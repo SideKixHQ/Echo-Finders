@@ -19,7 +19,8 @@ tags: [wilmington, downtown]
 teaser: "Claude Howell helped advocate for a stronger visual-arts life in Wilmington."
 script: |
   Claude Howell helped advocate for a stronger visual-arts life in Wilmington. In 1962, he
-  supported the movement that established St. John's Art Gallery here.
+  wrote to the local paper, and he was part of the community movement that founded St.
+  John's Art Gallery here.
 
   The Cameron Art Museum's history records his call for the community to encounter
   important art from the past and present. He wanted local audiences to have wider
@@ -38,9 +39,21 @@ claims:
   - says: "Claude Howell helped advocate for a stronger visual-arts life in Wilmington."
     source: 1
     quote: "Claude Howell, who was then chair of the University of North Carolina Wilmington art department, wrote in a letter to the editor of the Wilmington Star News on January 28, 1962, “…we need to see and hear the best that is being done in the world today."
+  - says: "In 1962, he wrote to the local paper"
+    source: 1
+    quote: "Claude Howell, who was then chair of the University of North Carolina Wilmington art department, wrote in a letter to the editor of the Wilmington Star News on January 28, 1962, “…we need to see and hear the best that is being done in the world today."
+  - says: "he was part of the community movement that founded St. John's Art Gallery here"
+    source: 1
+    quote: "Forty years after Chant’s arrival, at least three of her students and colleagues, Claude Howell, Hester Donnelly, and Peggy Hall, were part of the community movement that founded St. John’s Art Gallery in the oldest Masonic Lodge in the state."
+  - says: "The Cameron Art Museum's history records his call for the community to encounter important art from the past and present."
+    source: 1
+    quote: "We need to raise our standards in the visual arts by showing the best art of the past, as well as what is being produced today."
+  - says: "Howell's role connected making art with building an audience for it."
+    source: 1
+    quote: "Chant, an eccentric British artist, set up an art studio on Cottage Lane, in the Hart Wine House, where students like Claude Howell and Henry Jay MacMillan took art classes."
 sources:
   - title: "History"
     publisher: "Cameron Art Museum"
     url: https://cameronartmuseum.org/history/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

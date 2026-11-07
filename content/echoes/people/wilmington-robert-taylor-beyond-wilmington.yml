@@ -21,24 +21,41 @@ script: |
   Robert Robinson Taylor was born in Wilmington and became MIT's first known Black
   graduate, completing his degree in 1892.
 
-  His father, Henry Taylor, was a skilled builder associated with the Bellamy
-  construction. This house therefore offers a connection to the family trade, not a claim
-  that Robert designed it.
+  His father, Henry Taylor, worked on the Bellamy construction as an enslaved carpenter.
+  This house therefore offers a connection to the family trade; it is not a building the
+  son designed.
 
-  Robert's architectural career developed at Tuskegee and beyond. Education expanded the
-  possibilities of work that already had a strong family foundation.
+  Robert went on to design buildings for the Tuskegee Institute campus. Education
+  expanded the possibilities of work that already had a strong family foundation.
 
   From the sidewalk, look at the evidence of building skill around you. Then consider the
-  distance between learning a trade locally and gaining access to an institution that had
-  scarcely admitted Black students. Taylor's achievement was individual, but his
-  Wilmington background helps prevent us from imagining that his talent began only when a
-  college recognized it.
+  distance between learning a trade locally and becoming the first Black graduate of a
+  distant institution. His achievement was individual, but his hometown background helps
+  prevent us from imagining that his talent began just when a college recognized it.
 editorial: draft
 factCheck: corroborated
 claims:
-  - says: "Robert Robinson Taylor was born in Wilmington and became MIT's first known Black graduate, completing his degree in 1892."
+  - says: "Robert Robinson Taylor was born in Wilmington"
     source: 1
-    quote: "Taylor, MIT's first black graduate, Class of 1892 Courtesy MIT Museum In September 1888, a young African American traveled from Wilmington, North Carolina to Boston, Massachusetts to sit the examination for entrance to MIT."
+    quote: "Born on June 8, 1868 in Wilmington, North Carolina, Robert Taylor came from a relatively privileged family background."
+  - says: "became MIT's first known Black graduate, completing his degree in 1892."
+    source: 1
+    quote: "Taylor, MIT's first black graduate, Class of 1892"
+  - says: "His father, Henry Taylor, worked on the Bellamy construction as an enslaved carpenter."
+    source: 3
+    quote: "Henry Taylor's perspective was as an enslaved carpenter working on construction of the Bellamy site."
+  - says: "His father, Henry Taylor"
+    source: 2
+    quote: "Their son, Robert R. Taylor, was the first black graduate of M.I.T. and the first accredited black architect in the United States."
+  - says: "Robert went on to design buildings for the Tuskegee Institute campus."
+    source: 1
+    quote: "MIT's first black graduate, nation's first accredited African-American architect, designer of Tuskegee Institute campus buildings prior to 1932"
+  - says: "Then consider the distance between learning a trade locally and becoming the first Black graduate of a distant institution."
+    source: 1
+    quote: "Taylor, MIT's first black graduate, Class of 1892"
+  - says: "Then consider the distance between learning a trade locally and becoming the first Black graduate of a distant institution."
+    source: 1
+    quote: "In September 1888, a young African American traveled from Wilmington, North Carolina to Boston, Massachusetts to sit the examination for entrance to MIT."
 sources:
   - title: "Robert r taylor"
     publisher: "MIT Black History"
@@ -49,4 +66,9 @@ sources:
     publisher: "Bellamy Mansion Museum"
     url: https://www.bellamymansion.org/the-people.html
     retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "War and Politics: A House Divided"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/museum-blog/war-and-politics-a-house-divided
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

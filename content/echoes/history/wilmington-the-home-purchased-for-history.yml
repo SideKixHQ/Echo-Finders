@@ -21,12 +21,12 @@ script: |
   In 1963, the Lower Cape Fear Historical Society acquired the Latimer house. A family
   residence became a place where the region's history could be studied and shared.
 
-  The society had formed in 1956. Purchasing this house gave its work a physical anchor
-  downtown, with rooms, collections, and an address people could visit.
+  The society had been at work since 1956. Purchasing this house gave its work a physical
+  anchor downtown, with rooms, collections, and an address people could visit.
 
   Pause at the entrance. Museums often seem inevitable once their signs are in place. This
-  one required a choice: keep a nineteenth-century house available and give it a public
-  purpose.
+  museum required a choice: keep a nineteenth-century house available and give it a
+  public purpose.
 
   The transition did not freeze its meaning. Each visitor can notice different evidence,
   from household objects to traces of the people who worked here. The house's new role
@@ -38,6 +38,9 @@ claims:
   - says: "In 1963, the Lower Cape Fear Historical Society acquired the Latimer house."
     source: 1
     quote: "In 1963, Herbert Jr. sold the home to the Lower Cape Fear Historical Society, Inc., which has owned and operated the home ever since."
+  - says: "The society had been at work since 1956."
+    source: 1
+    quote: "The Lower Cape Fear Historical Society, Inc. (LCFHS) is a 501(c)3 non-profit organization committed to the preservation and promotion of the history of the Lower Cape Fear region since 1956."
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"

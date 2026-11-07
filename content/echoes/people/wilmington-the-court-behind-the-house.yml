@@ -1,3 +1,7 @@
+# 2026-11-07 fact-check: the City of Wilmington landmarks page (source 1) refused this
+# session (Access Denied). Most facts are re-sourced to the state and WWAY; the one claim
+# still resting on source 1 (that he trained Gibson at his home and on his private court)
+# is as copied on 2026-11-03 and was NOT re-verified.
 # Drafted 2026-11-03 from the city's landmark register and the state's highway-marker
 # essay for the Algonquin Tennis Club, which carries the Eaton and Gibson connection and
 # the rule that explains the court.
@@ -46,9 +50,9 @@ script: |
 
   Now the man.
 
-  Hubert Eaton practised medicine here. The city's landmark register calls him a prominent
-  Black doctor in Wilmington and a leader in the civil rights movement, in the city and in
-  the nation. It also calls him a passionate and accomplished tennis player.
+  Hubert Eaton lived here, and he was a doctor. For years he led the fight to desegregate
+  this county's schools, the city's municipal golf course and the YMCA. He was also an
+  avid tennis player.
 
   That is what fits on a plaque. Here is what it cost.
 
@@ -63,8 +67,8 @@ script: |
 
   Her name was Althea Gibson.
 
-  She went on, in the city's own flat phrasing, to become an international, award winning
-  tennis icon. The state's account says Eaton is given much credit for her development.
+  She went on to win Wimbledon, and to become the first African American woman to win a
+  Grand Slam title. The state's account says Eaton is given much credit for her development.
 
   Look at the house.
 
@@ -82,31 +86,37 @@ claims:
     quote: "The American Tennis Association (ATA) was established in 1916 to encourage and support competitive tennis among African Americans, who were not permitted to join the white United States Lawn Tennis Association."
   - says: "The state's own account calls it the first professional sports league for African Americans in the country."
     source: 2
-    quote: "It was the nation's first professional sports league for African Americans."
-  - says: "Hubert Eaton practised medicine here."
-    source: 1
-    quote: "The Dr. Hubert Eaton House was the home of Dr. Hubert Eaton, a prominent black doctor in Wilmington, was a leader in the Civil Rights movement of Wilmington, North Carolina, and the nation."
-  - says: "The city's landmark register calls him a prominent Black doctor in Wilmington and a leader in the civil rights movement, in the city and in the nation."
-    source: 1
-    quote: "The Dr. Hubert Eaton House was the home of Dr. Hubert Eaton, a prominent black doctor in Wilmington, was a leader in the Civil Rights movement of Wilmington, North Carolina, and the nation."
-  - says: "It also calls him a passionate and accomplished tennis player."
-    source: 1
-    quote: "Dr. Eaton was also a passionate and accomplished tennis player."
+    quote: "It was the nation’s first professional sports league for African Americans."
+  - says: "Hubert Eaton lived here"
+    source: 3
+    quote: "The house Dr. Hubert Eaton lived in, 1406 Orange Street, is now a local Historic Landmark."
+  - says: "and he was a doctor"
+    source: 4
+    quote: "While his occupation was a physician, Dr. Eaton tirelessly led efforts related to civil rights for many years, including the desegregation of New Hanover County Schools, UNCW, the City of Wilmington’s Municipal Golf Course and YMCA."
+  - says: "For years he led the fight to desegregate this county's schools, the city's municipal golf course and the YMCA."
+    source: 4
+    quote: "While his occupation was a physician, Dr. Eaton tirelessly led efforts related to civil rights for many years, including the desegregation of New Hanover County Schools, UNCW, the City of Wilmington’s Municipal Golf Course and YMCA."
+  - says: "He was also an avid tennis player."
+    source: 4
+    quote: "In addition to his work in civil rights, Dr. Eaton was an avid tennis player who mentored International Tennis Hall of Famer and former Wimbledon champion Althea Gibson."
   - says: "The register is specific about one of the people he taught at his home and on that court."
     source: 1
     quote: "He used his success and passion to train and educate Althea Gibson at his home and on his private tennis court."
   - says: "The state goes further and says she lived with him for a time."
     source: 2
-    quote: "Dr. Hubert Eaton of Wilmington, with whom Gibson lived for a time, is given much credit for the development of the women's tennis star."
+    quote: "Dr. Hubert Eaton of Wilmington, with whom Gibson lived for a time, is given much credit for the development of the women’s tennis star."
   - says: "Her name was Althea Gibson."
-    source: 1
-    quote: "He used his success and passion to train and educate Althea Gibson at his home and on his private tennis court."
-  - says: "She went on, in the city's own flat phrasing, to become an international, award winning tennis icon."
-    source: 1
-    quote: "Ms. Gibson went on to become an international, award-winning tennis icon."
+    source: 3
+    quote: "A national championship winner in tennis, Eaton was the coach and mentor of Althea Gibson, the first African-American woman to win a Grand Slam title."
+  - says: "She went on to win Wimbledon"
+    source: 4
+    quote: "In addition to his work in civil rights, Dr. Eaton was an avid tennis player who mentored International Tennis Hall of Famer and former Wimbledon champion Althea Gibson."
+  - says: "to become the first African American woman to win a Grand Slam title"
+    source: 3
+    quote: "A national championship winner in tennis, Eaton was the coach and mentor of Althea Gibson, the first African-American woman to win a Grand Slam title."
   - says: "The state's account says Eaton is given much credit for her development."
     source: 2
-    quote: "Dr. Hubert Eaton of Wilmington, with whom Gibson lived for a time, is given much credit for the development of the women's tennis star."
+    quote: "Dr. Hubert Eaton of Wilmington, with whom Gibson lived for a time, is given much credit for the development of the women’s tennis star."
 sources:
   - title: "Local Historic Landmarks"
     publisher: "City of Wilmington"
@@ -116,5 +126,15 @@ sources:
   - title: "Algonquin Tennis Club (G-138)"
     publisher: "North Carolina Department of Natural and Cultural Resources"
     url: https://www.dncr.nc.gov/blog/2023/12/20/algonquin-tennis-club-g-138
-    retrievedAt: "2026-11-03"
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Dr. Hubert Eaton's house recognized as local Historic Landmark"
+    publisher: "WWAY News"
+    url: https://www.wwaytv3.com/?p=1850312
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Dr. Hubert Eaton honored with NC Civil Rights Trail Plaque in Wilmington"
+    publisher: "WWAY News"
+    url: https://www.wwaytv3.com/?p=1753509
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

@@ -3,7 +3,7 @@
 # Position: North sidewalk of Nun St in front of Gregory Congregational (609 Nun; address point + OSM footprint agree). Marker itself not located; assumed in front of church (medium confidence).
 id: wilmington-the-wilmington-ten-and-the-missing-evidence
 title: "The Wilmington Ten and the Missing Evidence"
-summary: "This block was a gathering place for students protesting unequal treatment during school desegregation in 1971."
+summary: "In 1971, students protesting unequal treatment in desegregating schools made a Wilmington church their headquarters."
 place: "Wilmington Ten marker near Gregory Congregational Church, 609 Nun Street, Wilmington, North Carolina"
 at: { lat: 34.23098, lng: -77.94077 }
 triggerRadiusKm: 0.04
@@ -16,14 +16,14 @@ minAge: 16
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
 tags: [wilmington, downtown]
-teaser: "This block was a gathering place for students protesting unequal treatment during school desegregation in 1971."
+teaser: "In 1971, students protesting unequal treatment in desegregating schools made a Wilmington church their headquarters."
 script: |
-  This block was a gathering place for students protesting unequal treatment during school
-  desegregation in 1971. Nearby, Mike's Grocery was firebombed.
+  In 1971, students protesting unequal treatment during school desegregation made a
+  local church their headquarters. In February 1971, Mike's Grocery was firebombed.
 
-  Ten people were convicted on charges connected with the fire. Their case became known as
-  the Wilmington Ten. The evidence and prosecution were later exposed as deeply flawed,
-  including perjured testimony.
+  Ten people were convicted on charges connected with the fire. Their case became known
+  as the Wilmington Ten. The evidence and prosecution were later exposed as deeply
+  flawed, including perjured testimony.
 
   The convictions were overturned by the federal appeals court in 1980. Governor Beverly
   Perdue issued pardons in 2012. Responsibility for the grocery arson remains unclear;
@@ -42,14 +42,35 @@ trueCrimeReview:
   reviewedAt: "2026-10-09"
   contentWarning: "This echo describes an arson and a wrongful conviction. Nothing is described in detail."
 claims:
+  - says: "In 1971, students protesting unequal treatment during school desegregation made a local church their headquarters."
+    source: 1
+    quote: "Demanding fairer treatment and a Black studies curriculum, Black high school students, led by civil rights activist Ben Chavis, began a boycott of classes in late January 1971. The protesters established headquarters at a local church, which became the epicenter of violence after the school board rejected their demands."
+  - says: "In February 1971, Mike's Grocery was firebombed."
+    source: 1
+    quote: "On February 6, 1971, Mike's Grocery, a mom-and-pop store in Wilmington, was firebombed and burned."
+  - says: "Ten people were convicted on charges connected with the fire."
+    source: 1
+    quote: "About a year later local and state authorities, intent on punishing Chavis, arrested him, eight Black high school students and a White anti-poverty worker on charges related to the arson at Mike's. Despite the lack of real evidence tying them to the arson, the prosecutor secured guilty verdicts by using perjured testimony and illegally excluding African Americans from the jury."
+  - says: "Their case became known as the Wilmington Ten."
+    source: 1
+    quote: "The case garnered national press attention, and in 1976, Amnesty International became involved in an effort to free the Wilmington 10."
+  - says: "The evidence and prosecution were later exposed as deeply flawed, including perjured testimony."
+    source: 1
+    quote: "Key witnesses recanted their testimony in the late 1970s and investigatory pieces by 60 Minutes, the New York Times and others suggested evidence had been fabricated."
+  - says: "The convictions were overturned by the federal appeals court in 1980."
+    source: 1
+    quote: "The convictions of the Wilmington 10 were ultimately overturned by the U.S. Court of Appeals for the Fourth Circuit in 1980."
   - says: "Governor Beverly Perdue issued pardons in 2012."
     source: 1
     quote: "Governor Beverly Perdue issued them pardons in 2012."
+  - says: "Responsibility for the grocery arson remains unclear; these ten people should not be presented as its proven perpetrators."
+    source: 1
+    quote: "It's unclear who was responsible for the arson, which came after a week of increasing racial tension and violence over the desegregation of the city's high schools."
 sources:
   - title: "Wilmington 10 and firebombing mikes grocery"
     publisher: "North Carolina Department of Natural and Cultural Resources"
     url: https://www.dncr.nc.gov/blog/2016/02/06/wilmington-10-and-firebombing-mikes-grocery
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "Marker 262587"
     publisher: "The Historical Marker Database"

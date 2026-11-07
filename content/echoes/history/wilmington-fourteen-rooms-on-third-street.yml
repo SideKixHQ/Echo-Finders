@@ -18,7 +18,7 @@ tags: [wilmington, downtown]
 teaser: "The Latimer house was built in 1852 for Zebulon and Elizabeth Latimer."
 script: |
   The Latimer house was built in 1852 for Zebulon and Elizabeth Latimer. Its fourteen
-  rooms offered an unusually substantial home in the growing port city.
+  rooms made a substantial home in the growing port city.
 
   The museum identifies the design as Italianate, with symmetry and a central-hall
   arrangement. What looks like a single handsome facade held a complicated household
@@ -34,9 +34,28 @@ script: |
   scale: enough rooms to make a family home a small working world.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "The Latimer house was built in 1852"
+    source: 1
+    quote: "Built in 1852, the Latimer House preserves the past as a museum of upper-class family and life in the 19th century Cape Fear region."
+  - says: "for Zebulon and Elizabeth Latimer"
+    source: 1
+    quote: "The house was constructed for Zebulon Latimer and his wife, Elizabeth Savage, and their growing family."
+  - says: "Its fourteen rooms made a substantial home in the growing port city."
+    source: 1
+    quote: "The Latimer House features 14 rooms"
+  - says: "The museum identifies the design as Italianate, with symmetry and a central-hall arrangement."
+    source: 1
+    quote: "Constructed in the Italianate Revival style, the four-story house design stresses symmetry, with a central hallway and uniform layouts on each floor."
+  - says: "The museum's surviving furnishings and objects connect that exterior pattern to particular lives."
+    source: 1
+    quote: "Within the walls of Latimer, LCFHS has been instrumental in sharing a comprehensive collection of over 600 artifacts and an extensive archive and library with the community."
+  - says: "From outside, the first clue is scale: enough rooms to make a family home a small working world."
+    source: 1
+    quote: "The Latimer House features 14 rooms"
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"
     url: https://latimerhouse.org/about/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

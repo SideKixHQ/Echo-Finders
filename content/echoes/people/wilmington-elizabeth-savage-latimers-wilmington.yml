@@ -26,18 +26,27 @@ script: |
   had its own networks and histories.
 
   Stand outside the home and consider what is left unnamed when a household is introduced
-  only by its male owner. A marriage and a family are not incidental to a residence's
+  by its male owner alone. A marriage and a family are not incidental to a residence's
   meaning.
 
-  Elizabeth's story supplies a different connection between the building and Wilmington.
-  The house represented shared family life, shaped by her place in the community as well
-  as her husband's commercial career.
+  Her story supplies a different connection between the building and the city. The house
+  represented shared family life, shaped by her place in the community as well as her
+  husband's commercial career.
 editorial: draft
 factCheck: single-source
 claims:
   - says: "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St. James in 1848."
     source: 1
     quote: "Zebulon Latimer married Elizabeth Savage in 1848 at St. James Episcopal Church and moved into their brand new estate in 1852."
+  - says: "Elizabeth Savage was born into a Wilmington family"
+    source: 1
+    quote: "Elizabeth Savage Latimer (1819-1904), a Wilmington native, was born into the wealthy and prominent Savage family that also traced its roots to Connecticut."
+  - says: "The house built four years later became their family residence."
+    source: 1
+    quote: "Zebulon Latimer married Elizabeth Savage in 1848 at St. James Episcopal Church and moved into their brand new estate in 1852."
+  - says: "Her local background complicates the idea of the house as simply the achievement of a merchant who arrived from elsewhere."
+    source: 1
+    quote: "Zebulon Latimer (1810-1881) was born and raised in a middle class family in Middlesex County, Connecticut. As a young man, he moved to North Carolina to pursue business ventures and found success in Wilmington. He operated a storefront on Market Street as a commission merchant."
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"

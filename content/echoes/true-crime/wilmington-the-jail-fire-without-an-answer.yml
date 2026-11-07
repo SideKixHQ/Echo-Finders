@@ -42,17 +42,32 @@ trueCrimeReview:
   reviewedAt: "2026-10-09"
   contentWarning: "This echo describes a suspicious fire. Nobody is described as hurt."
 claims:
+  - says: "Before this was a handsome house, it was Wilmington's jail."
+    source: 1
+    quote: "The property and ballast stone buildings are operated as the first city jail (gaol) of Wilmington."
+  - says: "The museum's timeline records that its roof burned in 1768 under suspicious circumstances."
+    source: 1
+    quote: "The roof of the jail burned in 1768 under “suspicious circumstances,” leading the city to launch an investigation."
+  - says: "The fire nevertheless changed what happened to the property."
+    source: 1
+    quote: "John Burgwin offers to purchase the property in return for the jail’s relocation to the outskirts of town."
+  - says: "John Burgwin subsequently acquired the site"
+    source: 1
+    quote: "John Burgwin offers to purchase the property in return for the jail’s relocation to the outskirts of town."
   - says: "John Burgwin subsequently acquired the site, and the house built in 1770 incorporated the old jail's walls."
     source: 2
     quote: "The Burgwin-Wright House was built in 1770 on top of the first city jail of Wilmington, circa 1744, as a townhouse for John Burgwin to use as his seat of business and entertainment in Wilmington."
+  - says: "the house built in 1770 incorporated the old jail's walls"
+    source: 1
+    quote: "The Burgwin-Wright House is built as a townhouse for John Burgwin, using the ballast stone walls of the jail as a foundation for the house, and the jailer’s quarters as a detached kitchen."
 sources:
   - title: "Family timeline"
     publisher: "Burgwin-Wright House and Gardens"
     url: https://www.burgwinwrighthouse.com/family-timeline
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "History"
     publisher: "Burgwin-Wright House and Gardens"
     url: https://www.burgwinwrighthouse.org/history
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

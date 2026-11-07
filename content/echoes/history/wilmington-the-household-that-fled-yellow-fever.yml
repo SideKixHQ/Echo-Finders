@@ -4,7 +4,7 @@
 # Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
 id: wilmington-the-household-that-fled-yellow-fever
 title: "The Household That Fled Yellow Fever"
-summary: "The Bellamy family had barely begun living in this house when Wilmington's circumstances changed."
+summary: "The Bellamy house went up between 1859 and 1861, and soon afterward Wilmington's circumstances changed."
 place: "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
 at: { lat: 34.23599, lng: -77.94279 }
 triggerRadiusKm: 0.04
@@ -16,26 +16,29 @@ certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "The Bellamy family had barely begun living in this house when Wilmington's circumstances changed."
+teaser: "The Bellamy house went up between 1859 and 1861, and soon afterward Wilmington's circumstances changed."
 script: |
-  The Bellamy family had barely begun living in this house when Wilmington's circumstances
-  changed.
+  The Bellamy house went up between 1859 and 1861, and soon afterward Wilmington's
+  circumstances changed.
 
   During the yellow fever epidemic of 1862, the family left the city and took refuge at
   Floral College. A residence meant to secure status and comfort could not protect its
   occupants from the city's public-health disaster.
 
   This house is the family's associated site, not the place to which they escaped. The
-  epidemic extended far beyond one household, and leaving was not an option available
+  epidemic extended far beyond a single household, and leaving was not an option available
   equally to everyone.
 
-  Look at the imposing exterior. It can suggest permanence, but the first years of its
-  domestic life were disrupted almost immediately. The story turns on that mismatch: a
-  carefully planned new home meeting a crisis its plans could not contain. Its owners
-  departed; the larger city still had to endure the outbreak.
+  Look at the imposing exterior. It can suggest permanence, but its early domestic life
+  was disrupted almost immediately. The story turns on that mismatch: a carefully planned
+  new home meeting a crisis its plans could not contain. Its owners departed; the larger
+  city still had to endure the outbreak.
 editorial: draft
 factCheck: single-source
 claims:
+  - says: "The Bellamy house went up between 1859 and 1861, and soon afterward Wilmington's circumstances changed."
+    source: 1
+    quote: "In the context of the Bellamy family and those constructing the home site in Wilmington between 1859 and 1861, the onrushing war and its politics were closely entwined."
   - says: "During the yellow fever epidemic of 1862, the family left the city and took refuge at Floral College."
     source: 1
     quote: "When a yellow fever outbreak ravaged Wilmington in the summer of 1862, the Bellamy family took refuge at Floral College, a Presbyterian girls' school in North Carolina near the depot village of Shoe Heel (now Maxton)."

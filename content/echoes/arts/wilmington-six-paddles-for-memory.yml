@@ -18,14 +18,13 @@ tags: [wilmington, downtown]
 teaser: "The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its victims."
 script: |
   The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its
-  victims. Artist Ayokunle Odeleye gave the memorial a form tied to movement and
-  collective effort.
+  victims. Artist Ayokunle Odeleye designed it, and it was dedicated in November 2008.
 
   This park is a place of remembrance. The events it commemorates happened across the
   city, not all on this patch of ground.
 
   Walk slowly along the public path. The sculpture asks for a different pace from the
-  surrounding streets. Its repeated forms can bring separate lives into one field of
+  surrounding streets. Its repeated forms can bring separate lives into a single field of
   attention without pretending the violence had a simple or settled ending.
 
   Public art carries a responsibility here. It makes history present while leaving room
@@ -33,6 +32,13 @@ script: |
   city lost must continue among the people who visit.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its victims."
+    source: 3
+    quote: "the monument consists of six cast-bronze paddles, 16 feet high with inlays. The monument’s inscription commemorates a coup d’état that took place on November 10, 1898, during which prominent white citizens of Wilmington overthrew the legally elected biracial government of the city."
+  - says: "Artist Ayokunle Odeleye designed it, and it was dedicated in November 2008."
+    source: 3
+    quote: "Continue east to the corner of North 3rd and Davis Streets to view the 1898 Memorial Park and Monument designed by Ayokunle Odeleye. Dedicated on November 8, 2008"
 sources:
   - title: "1898 Memorial Park"
     publisher: "City of Wilmington"
@@ -43,4 +49,9 @@ sources:
     publisher: "Documenting the American South, UNC Chapel Hill"
     url: https://docsouth.unc.edu/commland/monument/842/
     retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Discover Outdoor Art in Wilmington, NC"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/discover-outdoor-art-in-wilmington-nc/
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

@@ -30,14 +30,27 @@ script: |
   construction.
 
   Look at the name on the marker. It records the outcome, while the earlier title
-  preserves the ambition. Wilmington's future was not delivered in one straight line from
+  preserves the ambition. The city's future was not delivered in a straight line from
   idea to result. The railway became important through the route that could be built, and
   the city learned to use the connection it obtained.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "The railroad remembered here did not begin with the name Wilmington and Weldon."
+    source: 1
+    quote: "The Wilmington and Raleigh Railroad was officially renamed the Wilmington and Weldon Railroad in 1855."
+  - says: "It was originally chartered as the Wilmington and Raleigh Railroad."
+    source: 1
+    quote: "The Wilmington and Raleigh Railroad was originally chartered to connect the state’s largest port city, Wilmington, with the capitol city, Raleigh, but the track was rerouted to Weldon instead of Raleigh."
+  - says: "Its completed route reached Weldon instead of the state capital."
+    source: 1
+    quote: "The Wilmington and Raleigh Railroad was originally chartered to connect the state’s largest port city, Wilmington, with the capitol city, Raleigh, but the track was rerouted to Weldon instead of Raleigh."
+  - says: "The later name reflected the connection that actually existed rather than the destination first imagined."
+    source: 1
+    quote: "The Wilmington and Raleigh Railroad was officially renamed the Wilmington and Weldon Railroad in 1855."
 sources:
   - title: "Wilmington and weldon railroad d 20"
     publisher: "North Carolina Department of Natural and Cultural Resources"
     url: https://www.dncr.nc.gov/blog/2023/12/08/wilmington-and-weldon-railroad-d-20
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

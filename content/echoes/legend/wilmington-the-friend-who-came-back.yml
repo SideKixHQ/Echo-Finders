@@ -9,7 +9,7 @@ at: { lat: 34.23546, lng: -77.94565 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 73
+durationS: 71
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -25,17 +25,30 @@ script: |
   legend to Samuel Jocelyn Junior: a dead man supposedly appeared to a friend and asked to
   be taken out of his grave.
 
-  In the tale, the friend initially dismissed the encounter. Further appearances finally
-  persuaded him to investigate. The ending suggested that Jocelyn had been buried alive.
+  In the tale, the friend did not believe it and waited three days before visiting the
+  grave. The ending suggested that Jocelyn had been buried alive.
 
   That is the ghost story, not a verified account of a premature burial. Its power comes
   from an ordinary human fear: needing help when nobody believes you can still ask for it.
 
   From this public sidewalk, the churchyard gives the tale its setting. You do not need to
   enter, search for a particular grave, or treat a sound as evidence. Listen to the city
-  continuing around you. The legend asks you to imagine one voice trying to reach it.
+  continuing around you. The legend asks you to imagine a single voice trying to reach it.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Wilmington storytellers attach a particularly unsettling legend to Samuel Jocelyn Junior"
+    source: 1
+    quote: "Market Street’s St. James Parish serves as the final resting place for Samuel Jocelyn Jr., who, in a fit of rage, rode off on horseback and was later found lying in a shallow swamp."
+  - says: "a dead man supposedly appeared to a friend and asked to be taken out of his grave"
+    source: 1
+    quote: "While his loved ones mourned his supposed death, Samuel appeared to one of his friends, Sandy, pleading for his body to be exhumed."
+  - says: "In the tale, the friend did not believe it and waited three days before visiting the grave."
+    source: 1
+    quote: "In disbelief, Sandy waited three days before visiting his friend’s gravesite, only to discover Samuel had been buried alive."
+  - says: "The ending suggested that Jocelyn had been buried alive."
+    source: 1
+    quote: "In disbelief, Sandy waited three days before visiting his friend’s gravesite, only to discover Samuel had been buried alive."
 sources:
   - title: "Journey into the haunted depths of old wilmington"
     publisher: "Wilmington and Beaches Convention and Visitors Bureau"

@@ -26,14 +26,24 @@ script: |
   building had used bricks brought to the port as ship ballast.
 
   Those details turn a wall into a sequence of journeys: material arriving by water,
-  serving one building, then serving another.
+  serving a building, then serving another.
 
   Look from the sidewalk rather than touching or inspecting the masonry. You cannot
   identify every brick's past by sight. The documented reuse is enough to change how you
-  read the surface. What seems like one architectural moment may contain material from
-  another. Wilmington rebuilt here without starting entirely from nothing.
+  read the surface. What seems like a single architectural moment can contain material
+  from an earlier building. Wilmington rebuilt here without starting entirely from nothing.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "St. James's history says bricks from the first church were reused after its demolition in 1839."
+    source: 1
+    quote: "In March 1839, the old church building was demolished to make way for a new building. Bricks from the first church building were used for construction of the present church."
+  - says: "The new church was consecrated in 1840."
+    source: 1
+    quote: "Present St. James Parish was completed and consecrated on March 29, 1840."
+  - says: "It also records that the original building had used bricks brought to the port as ship ballast."
+    source: 1
+    quote: "The modest church structure, built with bricks which had been used for ballast brought by ships to the port of Wilmington, was eventually completed in 1770."
 sources:
   - title: "Our history"
     publisher: "St. James Parish"

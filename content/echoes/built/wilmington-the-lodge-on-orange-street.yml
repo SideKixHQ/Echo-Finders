@@ -28,7 +28,7 @@ script: |
 
   A lodge, an art gallery, and a children's learning space bring very different activities
   to an address. The connection is the building that could accommodate new possibilities.
-  Preservation here did not mean keeping only one use forever. It meant retaining a
+  Preservation here did not mean freezing its use forever. It meant retaining a
   substantial piece of downtown while finding reasons for later generations to cross its
   threshold.
 editorial: draft
@@ -37,6 +37,9 @@ claims:
   - says: "The historic St. John's Lodge building dates to 1804."
     source: 1
     quote: "The 1804 St. John’s Masonic Lodge building on Orange Street has been preserved as an art museum."
+  - says: "Its later uses included an art museum, and it now belongs to the Children's Museum complex."
+    source: 2
+    quote: "in 2004 the Museum purchased the three buildings that comprised the former St. John's Museum of Art as the new site for The Children's Museum of Wilmington (CMoW)."
 sources:
   - title: "St johns lodge d 107"
     publisher: "North Carolina Department of Natural and Cultural Resources"

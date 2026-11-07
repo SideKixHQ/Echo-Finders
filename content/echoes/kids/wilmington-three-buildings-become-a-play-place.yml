@@ -26,21 +26,27 @@ script: |
   place for learning through play.
 
   Look at the complex with your grown-up. Can you notice differences between its parts?
-  You do not have to know every architectural name to recognize that they were not all
-  built as one piece.
+  You do not have to know every building word to see that they were not all built
+  together.
 
   This is a true story of finding a new use for old places. The museum kept important
   parts of downtown standing and brought children inside for a different purpose. A
-  building's first job does not have to be its last.
+  building can start out doing a job and later do something new.
 editorial: draft
 factCheck: single-source
 claims:
   - says: "They included a Masonic lodge, a Greek Orthodox church, and the Cowan house."
     source: 1
     quote: "The St. John's Masonic Lodge, Greek Orthodox Church, and The Cowan House are dear pieces of Downtown Wilmington's history."
+  - says: "The Children's Museum did not move into one brand-new building."
+    source: 1
+    quote: "in 2004 the Museum purchased the three buildings that comprised the former St. John's Museum of Art as the new site for The Children's Museum of Wilmington (CMoW)."
+  - says: "In 2004, it bought a group of three old buildings downtown."
+    source: 1
+    quote: "in 2004 the Museum purchased the three buildings that comprised the former St. John's Museum of Art as the new site for The Children's Museum of Wilmington (CMoW)."
 sources:
   - title: "Mission and history"
     publisher: "Play Wilmington"
     url: https://www.playwilmington.org/mission-and-history
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

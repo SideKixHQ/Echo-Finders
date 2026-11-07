@@ -21,9 +21,9 @@ script: |
   An ordinary block can hold the site of an extraordinary assault. On November 10, 1898, a
   white supremacist mob came to the Daily Record, Wilmington's Black-owned newspaper.
 
-  The newspaper occupied Free Love Hall on this Seventh Street block. The mob invaded the
-  building and set it ablaze. Editor Alex Manly had already fled, anticipating the
-  violence.
+  The newspaper's office was in Free Love Hall, on Seventh Street between Nun and Church
+  streets. The mob invaded the building, and a fire broke out that consumed its top floor.
+  Editor Alex Manly had already fled the city, expecting violence.
 
   This was part of the Wilmington coup, not an isolated dispute over a newspaper.
   Destroying the press attacked a community's ability to speak while armed violence spread
@@ -41,6 +41,34 @@ trueCrimeReview:
   reviewedBy: "TODO: a named human, before this can leave draft."
   reviewedAt: "2026-10-09"
   contentWarning: "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
+claims:
+  - says: "On November 10, 1898, a white supremacist mob came to the Daily Record, Wilmington's Black-owned newspaper."
+    source: 2
+    quote: "The events of November 10, 1898, in Wilmington were a turning point in North Carolina history. By force, a white mob seized the reins of government in the port city and, in so doing, destroyed the local black-owned newspaper office and terrorized the African American community."
+  - says: "On November 10, 1898, a white supremacist mob came to the Daily Record, Wilmington's Black-owned newspaper."
+    source: 1
+    quote: "More certain is the fact that the event marked the climax of the white supremacy campaign of 1898 and a turning point in the state’s history."
+  - says: "the Daily Record, Wilmington's Black-owned newspaper."
+    source: 1
+    quote: "What had particularly incensed Waddell and others was the publication in August of an editorial in the Daily Record, a local black-owned newspaper."
+  - says: "The newspaper's office was in Free Love Hall, on Seventh Street between Nun and Church streets."
+    source: 1
+    quote: "Waddell took on the task of leading them to the Daily Record office in Free Love Hall four blocks south of Seventh Street between Nun and Church Streets."
+  - says: "The mob invaded the building, and a fire broke out that consumed its top floor."
+    source: 2
+    quote: "The mob invaded the building, a fire broke out, and the top floor of the building was consumed."
+  - says: "Editor Alex Manly had already fled the city, expecting violence."
+    source: 1
+    quote: "Manly, in the meantime, had fled the city, as had numerous other blacks in expectation of violence."
+  - says: "Editor Alex Manly"
+    source: 1
+    quote: "Alex Manly (1866-1944), the editor"
+  - says: "This was part of the Wilmington coup, not an isolated dispute over a newspaper."
+    source: 1
+    quote: "What is traditionally termed a “race riot” has also been called a massacre, rebellion, revolt, race war, and coup d’etat. The peculiar circumstances of the Wilmington events, involving the removal of the legally elected mayor and city council and installation of revolt leader Alfred Moore Waddell, make this last term an apt one."
+  - says: "Destroying the press attacked a community's ability to speak while armed violence spread through the city."
+    source: 2
+    quote: "Within hours violence had spread to other parts of the city."
 sources:
   - title: "Alex manly 1866 1944 d 103"
     publisher: "North Carolina Department of Natural and Cultural Resources"

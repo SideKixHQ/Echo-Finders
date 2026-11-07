@@ -28,12 +28,22 @@ script: |
   Find a safe place beside the layout and look closely. A model is not the actual town
   shrunk by magic. People chose what to include and built the pieces to help tell a story.
 
-  Try following one train with your eyes. Where does it go, and what does it pass? Then
+  Try following a train with your eyes. Where does it go, and what does it pass? Then
   look at the tiny buildings around it. The train needs the town, and the town needs
   connections. This small world helps you notice relationships that can be harder to see
   when you are standing inside the real city.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "The museum's big model layout takes you into the early 1950s, when steam locomotives and diesel trains shared the railroad world."
+    source: 1
+    quote: "Based on images and history of railroading in the coastal areas of North Carolina, the model is set in the transition years between steam and diesel early in the 1950s."
+  - says: "Its builders used coastal North Carolina history to create towns, tracks, industries, and moving trains."
+    source: 1
+    quote: "Double mainline tracks carry passenger and freight trains, sawmills and lumber yards are served by a branch line, trolleys are operating in the re-creations of Wilson and Wilmington, and shuttles haul loads to a powerhouse or switchyards."
+  - says: "Parts of Wilmington are represented in miniature."
+    source: 1
+    quote: "Scenic highlight: Re-creation of ACL Wilmington freight and passenger terminal area and surrounding buildings as they were in the 1950s"
 sources:
   - title: "Model railroads"
     publisher: "Wilmington Railroad Museum"

@@ -32,14 +32,17 @@ script: |
   occasion all matter.
 
   The surviving structure lets today's visitors encounter a design that written
-  descriptions alone cannot replace. Trimble's name may be unfamiliar, but the building
-  still performs one part of his intention: making an arrival feel significant.
+  descriptions alone cannot replace. The architect's name might be unfamiliar, but the
+  building still performs part of his intention: making an arrival feel significant.
 editorial: draft
 factCheck: single-source
 claims:
   - says: "Thalian Hall is the only surviving theater designed by John Montague Trimble, according to its institutional history."
     source: 1
     quote: "Listed on the National Register for Historic Places, Thalian Hall is the only surviving theatre designed by John Montague Trimble, one of America's foremost 19th-century theatre architects."
+  - says: "The original project joined performance with municipal functions."
+    source: 1
+    quote: "The new building housed the town government, the library, as well as an \"Opera House\", seating 1,000 people, which was 10% of the population of the Town."
 sources:
   - title: "About"
     publisher: "Thalian Hall"

@@ -34,9 +34,33 @@ script: |
   was the intervention. The house stayed where its history could still be encountered.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "In 1930, this house faced a future that could have removed it from Wilmington entirely."
+    source: 1
+    quote: "Initially, New York businessman, Samuel Pryor, plans to purchase the home, dismantle it, and relocate it to Connecticut, leaving the land to Standard Oil, for a gas station."
+  - says: "Businessman Samuel Pryor considered taking the building apart and moving it to Connecticut."
+    source: 1
+    quote: "Initially, New York businessman, Samuel Pryor, plans to purchase the home, dismantle it, and relocate it to Connecticut, leaving the land to Standard Oil, for a gas station."
+  - says: "A gas station was proposed for the cleared site."
+    source: 2
+    quote: "In 1930, the house was in disrepair and the property was put up for sale. Standard Oil immediately took interest in the lot for a gas station."
+  - says: "The Colonial Dames campaigned to preserve the house"
+    source: 1
+    quote: "Upon hearing the news, The National Society of the Colonial Dames of America in the State of North Carolina (NSCDA-NC), begin a movement to preserve the colonial landmark by raising money to purchase the property."
+  - says: "Pryor changed course, contributing money and supporting the effort"
+    source: 1
+    quote: "When Mr. Pryor hears about the Colonial Dames’ efforts, he has a change of heart. Abandoning his own plans, he contributes $250 to the North Carolina Dames and speaks with bank officials on their behalf."
+  - says: "The house stayed where its history could still be encountered."
+    source: 2
+    quote: "However, the community and the NSCDA-NC campaigned for seven years and ultimately purchased the house in 1937, thus saving one of the oldest structures in Wilmington."
 sources:
   - title: "Family timeline"
     publisher: "Burgwin-Wright House and Gardens"
     url: https://www.burgwinwrighthouse.com/family-timeline
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "History: A Brief Overview"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.org/history
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

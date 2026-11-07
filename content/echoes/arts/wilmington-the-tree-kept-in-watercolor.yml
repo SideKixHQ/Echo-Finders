@@ -4,7 +4,7 @@
 # Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
 id: wilmington-the-tree-kept-in-watercolor
 title: "The Tree Kept in Watercolor"
-summary: "The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould Latimer among his works."
+summary: "The Latimer museum counts Henry Gould Latimer's 1918 depiction of Wilmington's Dram Tree among his most popular works."
 place: "Latimer House, 126 South Third Street, Wilmington, North Carolina"
 at: { lat: 34.23359, lng: -77.94599 }
 triggerRadiusKm: 0.04
@@ -16,30 +16,36 @@ certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould Latimer among his works."
+teaser: "The Latimer museum counts Henry Gould Latimer's 1918 depiction of Wilmington's Dram Tree among his most popular works."
 script: |
-  The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould
-  Latimer among his works.
+  The Latimer museum counts Henry Gould Latimer's 1918 depiction of Wilmington's Dram Tree
+  among his most popular works. Latimer trained as an artist and painted in watercolor.
 
-  A tree that no longer survives can remain available through art. The painting records an
-  artist's view, not a replacement for the actual tree or a photograph of every detail.
+  A tree can remain available through art. The picture records an artist's view, not a
+  replacement for the actual tree or a photograph of every detail.
 
   You are at the house associated with the artist and the collection. If the work is
-  available on your authorized visit, look first at what the artist chose to emphasize. Do
+  available on your authorized visit, look at what the artist chose to emphasize. Do
   not assume every object in the collection is always on display.
 
-  The image gives the vanished landmark a different kind of life. Waterfront memory moved
-  from a living tree into paper, pigment, and preservation. An artist's decision to look
-  closely became something later Wilmington visitors could still encounter.
+  The image gives the landmark a different kind of life. Memory of the tree moved into
+  pigment and preservation. An artist's decision to look closely became something later
+  Wilmington visitors could still encounter.
 editorial: draft
 factCheck: single-source
 claims:
-  - says: "The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould Latimer among his works."
+  - says: "The Latimer museum counts Henry Gould Latimer's 1918 depiction of Wilmington's Dram Tree among his most popular works."
     source: 1
     quote: "Among his most popular works is his 1918 depiction of the famed Dram Tree."
+  - says: "Latimer trained as an artist and painted in watercolor."
+    source: 1
+    quote: "Their eldest, Henry Gould Latimer (1845–1929), was trained as an artist and his watercolor paintings are on display at the Latimer House today."
+  - says: "An artist's decision to look closely became something later Wilmington visitors could still encounter."
+    source: 1
+    quote: "Their eldest, Henry Gould Latimer (1845–1929), was trained as an artist and his watercolor paintings are on display at the Latimer House today."
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"
     url: https://latimerhouse.org/about/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

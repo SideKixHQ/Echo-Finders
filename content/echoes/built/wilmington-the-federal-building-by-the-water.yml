@@ -27,16 +27,22 @@ script: |
   Listen from the public sidewalk. Do not assume that a courthouse interior is a
   sightseeing area; any entry must follow current security and visitor rules.
 
-  The building's two dates tell different stories. One belongs to construction and
-  institutional use, the other to later commemoration. Names can change what a city
-  remembers about a structure without changing its physical age. Here, the architecture
-  and the public name carry separate layers of Wilmington's civic memory.
+  The building's dates tell different stories. The earlier belongs to the federal court
+  that has sat here, the later to commemoration. Names can change what a city remembers
+  about a structure without changing its physical age. Here, the architecture and the
+  public name carry separate layers of the city's civic memory.
 editorial: draft
 factCheck: single-source
 claims:
+  - says: "The Federal Judicial Center dates this Wilmington courthouse building to 1919."
+    source: 1
+    quote: "Wilmington, North Carolina (1919) Named the Alton Lennon Federal Building in 1972"
   - says: "It was named for Alton Lennon in 1972."
     source: 1
     quote: "Named the Alton Lennon Federal Building in 1972"
+  - says: "The earlier belongs to the federal court that has sat here, the later to commemoration."
+    source: 1
+    quote: "U.S. District Court for the Eastern District of North Carolina (1919-present)"
 sources:
   - title: "Wilmington north carolina 1919"
     publisher: "Federal Judicial Center"

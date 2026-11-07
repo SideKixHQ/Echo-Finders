@@ -30,9 +30,10 @@ script: |
   establish that spirits exist.
 
   There is a documented investigation and an interpretation. Those are different things.
+  The haunting is a legend, and it has not been proven.
 
-  From the sidewalk, consider how much expectation changes listening. A creak in a new
-  building may pass unnoticed. The same creak above old cells can become the beginning of
+  From the sidewalk, consider how much expectation changes listening. In a new building, a
+  creak might pass unnoticed. The same creak above old cells can become the beginning of
   a story. The house's real history supplies the weight; the haunting remains an
   unanswered claim. You can enjoy that uncertainty without pretending it has been solved.
 editorial: draft
@@ -41,6 +42,12 @@ claims:
   - says: "The elegant house above you was built in 1770 over remains of Wilmington's earlier jail."
     source: 2
     quote: "The Burgwin-Wright House was built in 1770 on top of the first city jail of Wilmington, circa 1744, as a townhouse for John Burgwin to use as his seat of business and entertainment in Wilmington."
+  - says: "The Ghost Guild records a paranormal investigation here in March 2018"
+    source: 1
+    quote: "Investigations at this location: Saturday, March 24th, 2018"
+  - says: "including a bedroom recording session described as an attempt to capture electronic voice phenomena."
+    source: 1
+    quote: "EVP Session in the Master Bedroom of the Burgwin-Wright House"
 sources:
   - title: "Burgwin wright house"
     publisher: "The Ghost Guild"

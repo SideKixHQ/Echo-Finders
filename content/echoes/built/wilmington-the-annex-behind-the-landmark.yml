@@ -17,24 +17,32 @@ quality: 0.75
 tags: [wilmington, downtown]
 teaser: "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H. Sprunt in memory of his parents and the earlier congregation's founders."
 script: |
-  The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H.
-  Sprunt in memory of his parents and the earlier congregation's founders.
+  The church complex expanded in 1910 with the Memorial Hall Annex, donated by William
+  H. Sprunt in memory of his parents and the earlier congregation's founders.
 
-  The annex served functions that the main sanctuary alone could not contain. Its history
-  reminds you that a community's building needs extend beyond one ceremonial room.
+  The annex served functions that the main sanctuary alone could not contain. Its
+  history reminds you that a community's building needs extend beyond a single
+  ceremonial room.
 
   Look from the public sidewalk and keep to authorized visitor areas. A less dramatic
   building can still be central to how a place works.
 
-  The addition makes growth tangible. People who gathered in the church also needed rooms
-  for teaching, meetings, and other activities. The annex supplied that supporting space.
-  Its continued presence helps you read the complex as a working community setting, not
-  simply a striking facade preserved for photographs.
+  The addition makes growth tangible. People who gathered in the church also needed
+  rooms for teaching, meetings, and other activities. The annex supplied that supporting
+  space. Its continued presence helps you read the complex as a working community
+  setting, not simply a striking facade preserved for photographs.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H. Sprunt in memory of his parents and the earlier congregation's founders."
+    source: 1
+    quote: "The Fourth Street church grew in 1910, when additions to the Sunday School behind the sanctuary were completed. The Memorial Hall Annex, as it was called, was donated by William H. Sprunt, in loving memory of his parents—Alexander Sprunt and Jane Dalziel Sprunt—and the founding charter members of the original Second Presbyterian Church."
+  - says: "People who gathered in the church also needed rooms for teaching, meetings, and other activities."
+    source: 1
+    quote: "Located behind the main church building, The Annex held national conferences for the Pentecostal Church."
 sources:
   - title: "Full history"
     publisher: "Brooklyn Arts Center"
     url: https://www.brooklynartsnc.com/full-history/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

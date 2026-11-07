@@ -34,14 +34,21 @@ script: |
   even earlier responsibility: watching over the people confined on this corner.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Here, it carries part of the property's first life."
+    source: 2
+    quote: "From 1744 to 1768, the property was the location of the city jail."
+  - says: "The museum identifies the detached kitchen as the former jailer's quarters."
+    source: 1
+    quote: "using the ballast stone walls of the jail as a foundation for the house, and the jailer’s quarters as a detached kitchen"
 sources:
   - title: "Family timeline"
     publisher: "Burgwin-Wright House and Gardens"
     url: https://www.burgwinwrighthouse.com/family-timeline
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
-  - title: "History"
+  - title: "The property"
     publisher: "Burgwin-Wright House and Gardens"
-    url: https://www.burgwinwrighthouse.org/history
-    retrievedAt: "2026-10-09"
+    url: https://www.burgwinwrighthouse.org/the-property
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

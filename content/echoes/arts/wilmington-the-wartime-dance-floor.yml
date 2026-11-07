@@ -27,15 +27,22 @@ script: |
   Stand in the open lobby if permitted, or listen from the sidewalk. The building helps
   you locate the idea without pretending a particular dance is happening around you.
 
-  Art can do practical work. A song or performance may help a stranger feel less isolated,
+  Art can do practical work. A song or performance can help a stranger feel less isolated,
   even when the larger circumstances remain difficult. Here, organized entertainment
   belonged to a wider effort of hospitality. The dance floor was one way Wilmington
   offered an evening's company.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "The USO's wartime program included big-band dances, plays, recitals, and radio broadcasts."
+    source: 1
+    quote: "Typical events included big band dances, plays, music recitals, art exhibits, hobby shows, guest lectures, wedding receptions, and weekly radio broadcasts."
+  - says: "The dance floor was one way Wilmington offered an evening's company."
+    source: 1
+    quote: "Hundreds of thousands of armed forces personnel that trained in the Wilmington area during World War II made the USO Center, located at the corner of Second and Orange Streets in downtown Wilmington, their principal off-duty destination."
 sources:
   - title: "Museum"
     publisher: "Wilmington Community Arts"
     url: https://wilmingtoncommunityarts.org/museum/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

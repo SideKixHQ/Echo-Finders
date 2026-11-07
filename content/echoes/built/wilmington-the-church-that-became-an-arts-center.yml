@@ -36,10 +36,28 @@ factCheck: single-source
 claims:
   - says: "Construction of St. Andrew's Presbyterian Church began here in 1888."
     source: 1
+    quote: "On October 1, 1888, ground was broken and construction began on the new church."
+  - says: "Construction of St. Andrew's Presbyterian Church began here"
+    source: 1
     quote: "Since its construction of the corner of North 4th and Campbell streets in 1888, St. Andrew’s Presbyterian Church has been a spiritual, cultural, and community center for the Brooklyn neighborhood and beyond."
+  - says: "The congregation dedicated the building in 1889."
+    source: 1
+    quote: "St. Andrew’s Presbyterian Church was dedicated on June 9, 1889."
+  - says: "Its later history included other congregations, serious deterioration, and preservation efforts."
+    source: 1
+    quote: "Because of extensive roof damage, the members retreated into the Annex behind the church."
+  - says: "The surviving structure became the Brooklyn Arts Center."
+    source: 1
+    quote: "Nathans was able to purchase the property and create the Brooklyn Arts Center at St. Andrew’s."
+  - says: "A former church could have become only a historical photograph."
+    source: 1
+    quote: "Due to the increasingly poor conditions, city officials deemed the structure unsound."
+  - says: "Today's arts setting carries an architectural inheritance from the congregation that first raised it."
+    source: 1
+    quote: "Nathans and others worked to renovate the church, keeping it as close to its original appearance as possible."
 sources:
   - title: "Full history"
     publisher: "Brooklyn Arts Center"
     url: https://www.brooklynartsnc.com/full-history/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

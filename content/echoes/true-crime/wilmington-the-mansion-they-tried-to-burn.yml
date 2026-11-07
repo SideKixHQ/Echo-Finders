@@ -49,14 +49,26 @@ claims:
   - says: "That makes it easy to miss the violence committed inside this house on March 13, 1972."
     source: 1
     quote: "On March 13, 1972, disaster struck the Bellamy mansion."
+  - says: "The museum describes an arson attack in which gasoline was spread on floors and ignited."
+    source: 1
+    quote: "Arsonists poured gasoline on the floors and set fire to the house."
+  - says: "Fire damaged plaster, woodwork, fixtures, and mirrors."
+    source: 1
+    quote: "Plaster had fallen and broken in many rooms, wood was charred and some destroyed, and fixtures and mirrors were damaged."
+  - says: "The outside survived while the interior needed extensive restoration."
+    source: 1
+    quote: "Still intact on the outside, the mansion stood fire-damaged and empty at the heart of the city of Wilmington."
+  - says: "No culprit or motive was established."
+    source: 1
+    quote: "Although no culprits or motives were ever determined, the best theory behind the 1972 fire at the Bellamy Mansion is that it was political in nature."
 sources:
   - title: "Bellamy mansion suffers fire of incendiary origin"
     publisher: "Bellamy Mansion Museum"
     url: https://www.bellamymansion.org/museum-blog/bellamy-mansion-suffers-fire-of-incendiary-origin
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "Audio 1"
     publisher: "Bellamy Mansion Museum"
     url: https://www.bellamymansion.org/audio-1.html
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

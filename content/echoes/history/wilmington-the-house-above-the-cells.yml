@@ -4,7 +4,7 @@
 # Shares a stop with other echoes, so it sits 7m off the spot to keep its pin tappable.
 id: wilmington-the-house-above-the-cells
 title: "The House Above the Cells"
-summary: "The neat doorway and Georgian proportions tell one story."
+summary: "The neat doorway and Georgian proportions tell a story."
 place: "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
 at: { lat: 34.23545, lng: -77.94647 }
 triggerRadiusKm: 0.04
@@ -16,37 +16,51 @@ certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "The neat doorway and Georgian proportions tell one story."
+teaser: "The neat doorway and Georgian proportions tell a story."
 script: |
-  The neat doorway and Georgian proportions tell one story. The walls underneath tell
+  The neat doorway and Georgian proportions tell a story. The walls underneath tell
   another.
 
-  John Burgwin's house was built in 1770 on the remains of Wilmington's first jail, which
-  dated to about 1744. Parts of the older structure became part of a merchant's
+  John Burgwin's house was built in 1770 on the remains of Wilmington's first jail,
+  which dated to about 1744. Parts of the older structure became part of a merchant's
   fashionable residence.
 
   It was a dramatic change in use. A place designed to restrict movement became a place
   designed to display wealth and receive guests. Yet rebuilding did not erase everything
   that had been there before.
 
-  From the public sidewalk, look at the house as a layered object. The oldest history may
-  be below the features that first catch your eye. An authorized visit makes that contrast
-  more tangible: beneath a domestic setting survive reminders of the town's earlier system
-  of confinement.
+  From the public sidewalk, look at the house as a layered object. The older history can
+  sit below the features that catch your eye. An authorized visit makes that contrast
+  more tangible: beneath a domestic setting survive reminders of the town's earlier
+  system of confinement.
 editorial: draft
 factCheck: corroborated
 claims:
+  - says: "The neat doorway and Georgian proportions tell a story."
+    source: 3
+    quote: "The beautiful colonial-style gardens of the Burgwin-Wright House complement the fine Georgian residence."
   - says: "John Burgwin's house was built in 1770 on the remains of Wilmington's first jail, which dated to about 1744."
     source: 1
     quote: "The Burgwin-Wright House was built in 1770 on top of the first city jail of Wilmington, circa 1744, as a townhouse for John Burgwin to use as his seat of business and entertainment in Wilmington."
+  - says: "Parts of the older structure became part of a merchant's fashionable residence."
+    source: 2
+    quote: "The Burgwin-Wright House is built as a townhouse for John Burgwin, using the ballast stone walls of the jail as a foundation for the house, and the jailer's quarters as a detached kitchen."
+  - says: "beneath a domestic setting survive reminders of the town's earlier system of confinement"
+    source: 1
+    quote: "The former city jail now hosts a meeting space, exhibit hall, and gift shop."
 sources:
   - title: "History"
     publisher: "Burgwin-Wright House and Gardens"
     url: https://www.burgwinwrighthouse.org/history
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "Family timeline"
     publisher: "Burgwin-Wright House and Gardens"
     url: https://www.burgwinwrighthouse.com/family-timeline
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Gardens"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.org/gardens
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

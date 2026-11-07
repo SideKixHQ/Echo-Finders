@@ -9,7 +9,7 @@ at: { lat: 34.23573, lng: -77.94595 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 67
+durationS: 58
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -20,23 +20,37 @@ script: |
   An earlier courthouse stood at this intersection. In the 1760s, it became a focus of
   resistance to Britain's Stamp Act.
 
-  The tax touched printed documents and provoked organized opposition in the Cape Fear
-  region. The state marker's history connects the courthouse with that struggle over
-  imperial authority.
+  The tax touched printed documents and provoked angry crowds in Wilmington. The state
+  marker's history connects the courthouse with that struggle over imperial authority.
 
-  The building is gone, and the later county courthouse farther north is a different
-  structure. Here, the marker identifies a political setting that ordinary traffic now
-  crosses.
+  The building is gone. Here, the marker identifies a political setting that ordinary
+  traffic now crosses.
 
   Stand safely on the sidewalk and look across the intersection. Public disagreement
-  needed places where people could assemble and make demands visible. Before independence,
-  this corner helped supply one. The story belongs to a town still under British rule,
+  needed places where people could assemble and make demands visible. Before
+  independence, this corner was such a place. The story belongs to a colonial town,
   beginning to challenge who could impose terms on its public life.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "An earlier courthouse stood at this intersection."
+    source: 1
+    quote: "Location: US 17 Business (Market Street) at Third Street in Wilmington"
+  - says: "In the 1760s, it became a focus of resistance to Britain's Stamp Act."
+    source: 1
+    quote: "the crowd escorted Houston to the courthouse where he officially resigned his position. Afterwards, the crowd placed him in a chair and paraded him around the courthouse in wild celebration, later returning to his residence in town to continue the revelry."
+  - says: "The tax touched printed documents and provoked angry crowds in Wilmington."
+    source: 1
+    quote: "The law placed a tax on most forms of paper in the colonies, including newspapers, letters, pamphlets, and wills."
+  - says: "The state marker's history connects the courthouse with that struggle over imperial authority."
+    source: 1
+    quote: "a historical marker near the old courthouse site reminds residents and tourists that Wilmington was, at times, a hotbed of resistance."
+  - says: "Before independence, this corner was such a place."
+    source: 1
+    quote: "The old courthouse was also the meeting place of the Wilmington Council of Safety."
 sources:
   - title: "Old courthouse d 2"
     publisher: "North Carolina Department of Natural and Cultural Resources"
     url: https://www.dncr.nc.gov/blog/2023/12/08/old-courthouse-d-2
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

@@ -27,7 +27,7 @@ script: |
   city.
 
   Listen beside the historical marker. Do not enter the rail corridor. The impressive part
-  is not merely the distance: every mile had to function as part of one connected system.
+  is not merely the distance: every mile had to function as part of a connected system.
   Wilmington's story widened along those rails. The city was no longer only a place
   reached by the river; it became an endpoint in a much larger network.
 editorial: draft
@@ -36,14 +36,29 @@ claims:
   - says: "In 1840, Wilmington gained a connection that reached far beyond the riverfront."
     source: 1
     quote: "In 1840 the longest railroad in the world opened in North Carolina, running from Wilmington in New Hanover County to Weldon in Halifax County via Goldsboro and Rocky Mount."
+  - says: "The Wilmington and Weldon Railroad opened a continuous line of about 161 miles."
+    source: 2
+    quote: "In 1840 the Wilmington & Weldon Railroad was completed and was the longest continuous rail line in the world at 161 miles long."
+  - says: "At completion, it was regarded as the longest continuous railroad line in the world."
+    source: 2
+    quote: "In 1840 the Wilmington & Weldon Railroad was completed and was the longest continuous rail line in the world at 161 miles long."
+  - says: "That achievement changed how the port could connect with inland markets."
+    source: 1
+    quote: "the founders of the Wilmington and Raleigh Railroad hoped to capitalize on the plentiful industry and agriculture of the Roanoke River valley and points north."
+  - says: "The impressive part is not merely the distance: every mile had to function as part of a connected system."
+    source: 1
+    quote: "Construction began on the Wilmington and Weldon line, as it had become popularly known, in 1836."
+  - says: "The city was no longer only a place reached by the river; it became an endpoint in a much larger network."
+    source: 1
+    quote: "Weldon became a railroad hub for eastern North Carolina, providing access to areas throughout North Carolina and Virginia."
 sources:
   - title: "Wilmington and weldon railroad d 20"
     publisher: "North Carolina Department of Natural and Cultural Resources"
     url: https://www.dncr.nc.gov/blog/2023/12/08/wilmington-and-weldon-railroad-d-20
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "History"
     publisher: "Wilmington Railroad Museum"
     url: https://www.wrrm.org/history.html
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

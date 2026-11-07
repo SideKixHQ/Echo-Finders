@@ -24,23 +24,34 @@ script: |
   history. It reaches beyond this building, encompassing the wider city's military,
   industrial, and civilian contributions.
 
-  The USO makes a useful downtown place to listen because it preserves one direct part of
+  The USO makes a useful downtown place to listen because it preserves a direct part of
   that experience: the gathering place for people in uniform and the volunteers supporting
   them.
 
   Look at the building before you. A national designation can sound like a distant
   administrative honor. Here, it points back to concrete local spaces and the people who
-  used them. The title does not create the history. It asks present-day Wilmington to keep
-  that history available, examined, and connected to the city that exists now.
+  used them. The title does not create the history. It asks the city today to keep that
+  history available, examined, and connected to the present.
 editorial: draft
-factCheck: single-source
+factCheck: corroborated
 claims:
   - says: "In 2020, Wilmington became the country's first American World War II Heritage City."
     source: 1
-    quote: "On Sept. 2, 2020, the City of Wilmington was officially named the first World War II Heritage City in the country."
+    quote: "On Sept. 2, 2020, to commemorate 75 years since the war ended, Wilmington became the first city in the country to be designated as a ‘‘World War II Heritage City’’ by the U.S. Secretary of the Interior."
+  - says: "In 2020, Wilmington became the country's first American World War II Heritage City."
+    source: 2
+    quote: "In September 2020, Wilmington, North Carolina was designated an American World War II Heritage City."
+  - says: "The USO makes a useful downtown place to listen because it preserves a direct part of that experience"
+    source: 1
+    quote: "From the Battleship NORTH CAROLINA (a WWII memorial credited with 15 battle stars) and Hannah Block Historic USO Building with its WWII homefront heritage lobby display in downtown Wilmington"
 sources:
-  - title: "World War II City"
-    publisher: "City of Wilmington"
-    url: https://www.wilmingtonnc.gov/Connect-With-Us/Community-Honors/World-War-II-City
-    retrievedAt: "2026-10-09"
+  - title: "WWII Heritage City"
+    publisher: "Wilmington Community Arts"
+    url: https://wilmingtoncommunityarts.org/museum/wwii-heritage-city/
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+  - title: "Wilmington, North Carolina: American World War II Heritage City"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/wilmington-north-carolina-american-world-war-ii-heritage-city.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain

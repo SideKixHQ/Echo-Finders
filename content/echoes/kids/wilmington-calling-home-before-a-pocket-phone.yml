@@ -22,12 +22,12 @@ script: |
   Imagine needing to call home without a phone in your pocket. This museum has a restored
   wartime-era telephone booth with a vintage phone inside.
 
-  The booth gives you a small space where one person could stand or sit and make a call. A
+  The booth gives you a small space where a person could stand or sit and make a call. A
   public telephone was something you went to, rather than something that followed you
   everywhere.
 
-  Look at the phone with your grown-up. It may have parts that seem unfamiliar because the
-  way people placed calls has changed.
+  Look at the phone with your grown-up. Some of its parts might look strange to you,
+  because the way people make calls has changed.
 
   The object belongs in a building that welcomed people far from home during the Second
   World War. We cannot say who used this particular phone for every conversation. We can
@@ -35,9 +35,16 @@ script: |
   waiting somewhere else.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "This museum has a restored wartime-era telephone booth with a vintage phone inside."
+    source: 1
+    quote: "a restored WWII-era telephone booth complete with a vintage phone and Bell Telephone System posters"
+  - says: "The object belongs in a building that welcomed people far from home during the Second World War."
+    source: 1
+    quote: "During World War II, the facility operated 24 hours a day, seven days a week, welcoming thousands of servicemen."
 sources:
   - title: "July 4th open house"
     publisher: "Wilmington Community Arts"
     url: https://wilmingtoncommunityarts.org/classes-and-events/july-4th-open-house/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

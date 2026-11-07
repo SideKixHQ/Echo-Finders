@@ -28,14 +28,24 @@ script: |
   If you can enter through an authorized visit, look toward the stage opening. The frame
   tells you where to direct attention; light tells you what to notice within it.
 
-  From outside, the story still works. A historic theater is not one unaltered machine. It
-  is a place repeatedly adjusted so performance can continue. The 1909 work reminds us
-  that what now looks traditional was once a substantial modern improvement.
+  From outside, the story still works. A historic theater is not an unaltered machine.
+  It is a place repeatedly adjusted so performance can continue. The 1909 work reminds
+  us that what now looks traditional was once a substantial modern improvement.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "In 1909, Thalian Hall installed electric stage lights."
+    source: 1
+    quote: "In 1909, the side balconies were removed, the ornate proscenium arch and electric stage lights were installed."
+  - says: "Its renovation also changed the balconies and proscenium, the frame around the stage."
+    source: 1
+    quote: "In 1909, the side balconies were removed, the ornate proscenium arch and electric stage lights were installed."
+  - says: "The 1909 work reminds us"
+    source: 1
+    quote: "In 1909, the side balconies were removed, the ornate proscenium arch and electric stage lights were installed."
 sources:
   - title: "About"
     publisher: "Thalian Hall"
     url: https://www.thalianhall.org/about
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

@@ -4,7 +4,7 @@
 # Shares a stop with other echoes, so it sits 8m off the spot to keep its pin tappable.
 id: wilmington-a-residence-becomes-a-museum
 title: "A Residence Becomes a Museum"
-summary: "Saving a building is only the beginning."
+summary: "Saving a building is just the beginning."
 place: "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
 at: { lat: 34.23550, lng: -77.94645 }
 triggerRadiusKm: 0.04
@@ -16,33 +16,47 @@ certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "Saving a building is only the beginning."
+teaser: "Saving a building is just the beginning."
 script: |
-  Saving a building is only the beginning. Someone must decide what people will learn
+  Saving a building is just the beginning. Someone must decide what people will learn
   inside it.
 
   The Colonial Dames acquired the Burgwin-Wright House in 1937. Its museum history
-  describes decades of restoration and interpretation, including school visits and work on
-  the grounds.
+  describes decades of restoration and interpretation, including school visits and work
+  on the grounds.
 
   A residence built for private life gradually became a public encounter with colonial
-  Wilmington. Rooms, objects, jail remains, and gardens could be examined together instead
-  of disappearing into separate collections.
+  Wilmington. Rooms, objects, jail remains, and gardens could be examined together
+  instead of disappearing into separate collections.
 
   Look at the entrance. The change from home to museum altered who could cross that
-  threshold and why. Visitors now arrive to ask questions that the original owners did not
-  intend the building to answer: about trade, confinement, domestic labor, and whose lives
-  are easiest to recover. Preservation makes those questions possible; interpretation
-  keeps them open.
+  threshold and why. Visitors now arrive to ask questions that the original owners did
+  not intend the building to answer: about trade, confinement, domestic labor, and whose
+  lives are easiest to recover. Preservation makes those questions possible;
+  interpretation keeps them open.
 editorial: draft
 factCheck: single-source
 claims:
   - says: "The Colonial Dames acquired the Burgwin-Wright House in 1937."
+    source: 2
+    quote: "However, the community and the NSCDA-NC campaigned for seven years and ultimately purchased the house in 1937, thus saving one of the oldest structures in Wilmington."
+  - says: "Its museum history describes decades of restoration and interpretation, including school visits and work on the grounds."
     source: 1
-    quote: "Finally, in 1937, t he NSCDA-NC purchased the Burgwin-Wright House for $21,000, and restoration efforts began on the exterior in early 1939."
+    quote: "In 1952, a relationship is forged with the public school system, and since every 4th grader in the county tours the house, free of charge."
+  - says: "A residence built for private life gradually became a public encounter with colonial Wilmington."
+    source: 1
+    quote: "On March 30, 1951, the Burgwin-Wright House opened to the public as a museum while work on the grounds and in the house continued."
+  - says: "Rooms, objects, jail remains, and gardens could be examined together"
+    source: 1
+    quote: "Exhibits by University of North Carolina at Wilmington (UNCW) history interns are installed in the exhibit hall on the 1744 city jail, the infamous Wilmington tunnels, and the history of the restoration of the house."
 sources:
   - title: "The museum"
     publisher: "Burgwin-Wright House and Gardens"
     url: https://www.burgwinwrighthouse.org/the-museum
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "History: A Brief Overview"
+    publisher: "Burgwin-Wright House and Gardens"
+    url: https://www.burgwinwrighthouse.org/history
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

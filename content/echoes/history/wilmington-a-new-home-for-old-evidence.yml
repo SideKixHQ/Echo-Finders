@@ -24,22 +24,34 @@ script: |
   history and science galleries. The move placed the museum and a new main library on the
   same downtown block.
 
-  You are at the new building, not the museum's earlier Market Street location. Its age
-  belongs to the institution; the structure before you is a recent chapter.
+  You are at the new building, not one of the museum's earlier homes. Its age belongs to
+  the institution; the structure before you is a recent chapter.
 
   That contrast is the point of the stop. Old evidence does not need an old building to
   remain valuable. It needs care, context, and people willing to examine it. The museum's
-  move brings a long-running collection into a new setting where Wilmington can keep
-  asking how its past connects with the present.
+  move brings a long-running collection into a new setting where the city can keep asking
+  how its past connects with the present.
 editorial: draft
 factCheck: single-source
 claims:
   - says: "Cape Fear Museum began in 1898."
     source: 1
     quote: "Founded in 1898, Cape Fear Museum is the oldest history museum in North Carolina."
+  - says: "In August 2026, it opened a new downtown home on Grace Street."
+    source: 1
+    quote: "Posted on August 17, 2026 NEW HANOVER COUNTY, NC – New Hanover County leaders cut the ribbon Monday on the new Cape Fear Museum of History and Science at 230 Grace Street, completing the county's investment in the Grace District in downtown Wilmington. The museum officially opens to the public on Tuesday, August 18."
+  - says: "The county's opening announcement describes more than four hundred artifacts alongside history and science galleries."
+    source: 1
+    quote: "Its new home features more than 400 artifacts, the interactive Cape Fear Stories exhibit, a 60-seat planetarium, the Port City Play space for young children, the hands-on Science Matters gallery, and the Curious Nature outdoor learning gallery."
+  - says: "The move placed the museum and a new main library on the same downtown block."
+    source: 1
+    quote: "placed a new Main Library and a new museum on a single downtown block"
+  - says: "You are at the new building, not one of the museum's earlier homes."
+    source: 1
+    quote: "New Hanover County leaders cut the ribbon Monday on the new Cape Fear Museum of History and Science at 230 Grace Street"
 sources:
-  - title: "Detail"
-    publisher: "Cape Fear Museum of History and Science"
+  - title: "New Hanover County cuts ribbon on the new Cape Fear Museum; doors open August 18"
+    publisher: "New Hanover County"
     url: https://capefearmuseum.com/m/newsflash/Home/Detail/1159
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
