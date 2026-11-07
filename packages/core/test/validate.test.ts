@@ -347,34 +347,58 @@ describe("rights policy", () => {
   });
 });
 
-describe("true crime — primary records", () => {
-  it("tells a draft without a public record, and stops it at approval", () => {
-    const museum: Source = { ...source(1), rights: "fair-use-facts", url: "https://example.org/1" };
-    const sources = [museum, { ...museum, title: "Source 2" }];
-    const draft = trueCrime({ sources, editorial: "draft", factCheck: "unchecked" });
-    const warned = validateEcho(draft).filter((i) => i.field === "sources");
-    expect(warned.map((i) => i.severity)).toEqual(["warning"]);
-    expect(errorsOn(trueCrime({ sources }), "sources")).toHaveLength(1);
-  });
-
-  it("demands a public record, not just two retellings", () => {
-    // Secondary sources repeat each other's errors; a chain of retellings is how an echo
-    // ends up asserting a conviction that never happened.
-    const retellings = trueCrime({
+describe("true crime — sources and how a case is told", () => {
+  it("approves on two reputable sources, with no public record among them", () => {
+    // James, 2026-11-07: cases already told by established news and documentaries are
+    // publishable on that reporting.
+    const reported = trueCrime({
       sources: [
-        { ...source(1), rights: "cc-by", url: "https://example.org/1" },
-        { ...source(2), rights: "cc-by", url: "https://example.org/2" },
+        { ...source(1), rights: "fair-use-facts", url: "https://example.org/1" },
+        { ...source(2), rights: "fair-use-facts", url: "https://example.org/2" },
       ],
     });
-    const issues = errorsOn(retellings, "sources");
-    expect(issues).toHaveLength(1);
-    expect(issues[0]!.message).toMatch(/public record/);
+    expect(allErrors(reported)).toEqual([]);
   });
 
-  it("is satisfied by one court or archive source alongside a secondary one", () => {
-    const grounded = trueCrime({
-      sources: [source(1), { ...source(2), rights: "cc-by", url: "https://example.org/2" }],
-    });
-    expect(allErrors(grounded)).toEqual([]);
+  it("still wants two sources", () => {
+    expect(errorsOn(trueCrime({ sources: [source(1)] }), "sources")).toHaveLength(1);
+  });
+
+  const alleged = { ...REVIEW, convictionStatus: "alleged" as const, involvesLivingPeople: true };
+
+  it("refuses to approve an unproven case told as fact", () => {
+    const asFact = trueCrime({ trueCrimeReview: alleged, script: "He set the fire that night and walked away." });
+    const issues = errorsOn(asFact, "script");
+    expect(issues).toHaveLength(1);
+    expect(issues[0]!.message).toMatch(/told as alleged/);
+  });
+
+  it("approves the same case told as alleged", () => {
+    for (const script of [
+      "Police said he set the fire that night.",
+      "He was charged with setting the fire, and never tried.",
+      "He allegedly set the fire that night.",
+    ]) {
+      expect(errorsOn(trueCrime({ trueCrimeReview: alleged, script }), "script")).toEqual([]);
+    }
+  });
+
+  it("leaves a case whose accused died untried to be told as history", () => {
+    // Booth, Oswald: never convicted, and nobody says "allegedly" about them.
+    const dead = { ...alleged, involvesLivingPeople: false };
+    expect(errorsOn(trueCrime({ trueCrimeReview: dead, script: "He shot the president from the window." }), "script")).toEqual([]);
+  });
+
+  it("lets a draft be worded later", () => {
+    const draft = trueCrime({ trueCrimeReview: alleged, script: "He set the fire.", editorial: "draft" });
+    expect(errorsOn(draft, "script")).toEqual([]);
+  });
+
+  it("makes an exoneration say so", () => {
+    const exonerated = { ...REVIEW, convictionStatus: "exonerated" as const };
+    expect(errorsOn(trueCrime({ trueCrimeReview: exonerated, script: "Ten were sent to prison." }), "script")).toHaveLength(1);
+    expect(
+      errorsOn(trueCrime({ trueCrimeReview: exonerated, script: "Ten were sent to prison; the convictions were overturned." }), "script"),
+    ).toEqual([]);
   });
 });
