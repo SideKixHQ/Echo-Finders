@@ -1,0 +1,58 @@
+# Wrightsville Beach, batch A (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Overture address point 2 West Fayetteville Street (Little Chapel on the Boardwalk), at North Lumina Avenue (high confidence).
+id: wrightsville-a-summer-church-stays-for-winter
+title: "A Summer Church Stays for Winter"
+summary: "Little Chapel on the Boardwalk began in 1907 as a summer mission and opened its year-round sanctuary on this corner in 1952."
+place: "Little Chapel on the Boardwalk, 2 West Fayetteville Street, Wrightsville Beach, North Carolina"
+at: { lat: 34.21343, lng: -77.79243 }
+triggerRadiusKm: 0.05
+category: history
+format: look-below
+durationS: 46
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, church, world-war-ii, home-front]
+teaser: "For decades this congregation only met in summer. Then the war changed the island."
+script: |
+  Look at the church on the corner of West Fayetteville Street and North Lumina Avenue.
+
+  Little Chapel began in 1907 as a summer mission at the Lumina, a joint venture of two downtown
+  Wilmington churches, First Presbyterian and St. James Episcopal. For its first few decades, it
+  welcomed preachers for the summer season only.
+
+  Then the war came. Wrightsville Beach grew from two hundred and fifty-two residents in 1941 to
+  fifteen hundred in 1945, and after the war it became more of a year-round community.
+
+  A summer church now needed a winter. In 1952 the congregation opened its sanctuary here, on this
+  corner.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Little Chapel began in 1907 as a summer mission at the Lumina, a joint venture of two downtown Wilmington churches, First Presbyterian and St. James Episcopal."
+    source: 1
+    quote: "Little Chapel began as a summer mission outpost in 1907— as a summer worshipping community at the Lumina. The congregation formed as a joint venture between First Presbyterian Church of Wilmington and St. James Episcopal Church downtown."
+  - says: "For its first few decades, it welcomed preachers for the summer season only."
+    source: 1
+    quote: "For the first few decades, we welcomed preachers for the summer season"
+  - says: "Wrightsville Beach grew from two hundred and fifty-two residents in 1941 to fifteen hundred in 1945, and after the war it became more of a year-round community."
+    source: 2
+    quote: "During World War II, the Town of Wrightsville beach grew from 252 residents in 1941 to 1500 residents in 1945."
+  - says: "A summer church now needed a winter."
+    source: 1
+    quote: "after World War II as Wrightsville Beach became more of a year-round community, we identified a need for church services year-round."
+  - says: "In 1952 the congregation opened its sanctuary here, on this corner."
+    source: 1
+    quote: "In 1952, we opened our sanctuary at our current site on the corner of W. Fayetteville S. and N. Lumina Ave."
+sources:
+  - title: "Little Chapel: A Historic Summer Mission Outpost"
+    publisher: "Little Chapel on the Boardwalk"
+    url: https://littlechapel.org/little-chapel-history
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "History of the Police Department"
+    publisher: "Town of Wrightsville Beach"
+    url: https://www.townofwrightsvillebeach.com/255/History-of-the-Police-Department
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

@@ -1,0 +1,61 @@
+# Wrightsville Beach, batch C (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: North Lumina Avenue at East Salisbury Street, between Overture points 1001/1002 North Lumina Avenue and 11-21 East Salisbury Street; kids version of WB001 (The Beach Car Stops Running); listening spot is the sidewalk well back from the curb (medium-high confidence).
+id: wrightsville-your-ticket-to-the-beach
+title: "Your Ticket to the Beach"
+summary: "A children's telling of the trolley that carried beachgoers from Wilmington until 1940."
+place: "North Lumina Avenue at East Salisbury Street, Wrightsville Beach, North Carolina"
+at: { lat: 34.21485, lng: -77.7907 }
+triggerRadiusKm: 0.05
+category: kids
+format: look-below
+durationS: 43
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [wrightsville-beach, trolley]
+teaser: "Long ago, the ride to the beach was a trolley."
+script: |
+  Pretend you're holding a ticket to the beach. Stay beside your grownup, well back from the curb,
+  and look along the street.
+
+  Long ago, families rode a trolley car all the way here from Wilmington. The line was nine miles
+  long, with twenty stops along the way.
+
+  Imagine climbing off with towels, lunches and maybe a very large hat. What would you bring?
+
+  The trolley ran for nearly forty years. Its very last trip was in April of 1940. After that, the
+  rails were taken up.
+
+  If your ride home was the trolley, you watched the clock. Miss the car home, and
+  it was a very long walk!
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Long ago, families rode a trolley car all the way here from Wilmington."
+    source: 1
+    quote: "Getting between Wilmington and Wrightsville Beach is a simple journey by car today. But in the early half of the 20th century, there was another more popular option for beachgoers looking to get out of the city and onto the sand."
+  - says: "The line was nine miles long, with twenty stops along the way."
+    source: 1
+    quote: "Twenty stops dotted the nine-mile line with all but one being lost to time."
+  - says: "The trolley ran for nearly forty years."
+    source: 1
+    quote: "ran for nearly four decades until the last journey took place in late April of 1940."
+  - says: "Its very last trip was in April of 1940."
+    source: 1
+    quote: "ran for nearly four decades until the last journey took place in late April of 1940."
+  - says: "After that, the rails were taken up."
+    source: 2
+    quote: "The rails were taken up in subsequent years"
+sources:
+  - title: "History with 'Hud': The last remaining trolley station from a once busy Wilmington line"
+    publisher: "WWAY"
+    url: https://www.wwaytv3.com/history-with-hud-the-last-remaining-trolley-station-from-a-once-busy-wilmington-line/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Audubon Trolley Station, National Register of Historic Places nomination"
+    publisher: "North Carolina State Historic Preservation Office"
+    url: https://files.nc.gov/ncdcr/nr/NH1240.pdf
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

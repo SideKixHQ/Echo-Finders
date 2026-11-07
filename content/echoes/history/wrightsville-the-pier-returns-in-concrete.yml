@@ -1,0 +1,77 @@
+# Wrightsville Beach, batch A (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Beach end of Johnnie Mercers Pier (23 East Salisbury Street, not in Overture): nudged seaward from Overture point 21 East Salisbury Street (medium confidence).
+id: wrightsville-the-pier-returns-in-concrete
+title: "The Pier Returns in Concrete"
+summary: "Johnnie Mercers Pier, wooden since the 1930s, was devastated in 1996 and reopened in concrete in 2001."
+place: "Johnnie Mercers Fishing Pier, 23 East Salisbury Street, Wrightsville Beach, North Carolina"
+at: { lat: 34.2143, lng: -77.7888 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 52
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, pier, hurricanes, fishing]
+teaser: "Two hurricanes took the wooden pier. What came back was built for two hundred mile an hour winds."
+script: |
+  Look at the pier's concrete pilings.
+
+  This pier began in the 1930s as the Atlantic View Pier. In 1939 it was sold to Johnnie Mercer, who
+  renamed it after himself. He was not the famous songwriter.
+
+  It was wooden, and the storms kept coming. It was rebuilt after Hurricane Hazel in 1954. In 1996,
+  Hurricanes Bertha and Fran devastated it.
+
+  Work on a concrete pier began in 1999, and it reopened in 2001, the first concrete pier on the North
+  Carolina coast. It reaches twelve hundred feet over the Atlantic, built to withstand winds of up to
+  two hundred miles an hour.
+
+  On the right side before the T, one piling has its date etched into the concrete, and how many feet
+  it goes down into the sand.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "This pier began in the 1930s as the Atlantic View Pier."
+    source: 1
+    quote: "The pier was originally called the Atlantic View pier and was built in the 1930's"
+  - says: "In 1939 it was sold to Johnnie Mercer, who renamed it after himself."
+    source: 1
+    quote: "who sold it to Johnnie Mercer in 1939."
+  - says: "who renamed it after himself"
+    source: 1
+    quote: "Johnnie Mercer was an avid fisherman and renamed the pier after himself."
+  - says: "He was not the famous songwriter."
+    source: 1
+    quote: "(He was not the famed singer/songwriter)"
+  - says: "It was rebuilt after Hurricane Hazel in 1954."
+    source: 1
+    quote: "The pier was rebuilt after Hurricane Hazel in 1954."
+  - says: "In 1996, Hurricanes Bertha and Fran devastated it."
+    source: 1
+    quote: "Hurricane Fran and Bertha in 1996 were the two storms that devastated the wooden Johnnie Mercers Pier."
+  - says: "Work on a concrete pier began in 1999, and it reopened in 2001, the first concrete pier on the North Carolina coast."
+    source: 1
+    quote: "Johnnie Mercers is the first concrete pier along the NC coastline."
+  - says: "Work on a concrete pier began in 1999"
+    source: 1
+    quote: "construction began in 1999."
+  - says: "it reopened in 2001"
+    source: 1
+    quote: "The new Johnnie Mercers Pier reopened in 2001."
+  - says: "It reaches twelve hundred feet over the Atlantic, built to withstand winds of up to two hundred miles an hour."
+    source: 1
+    quote: "The pier extends 1200 feet our over the Atlantic Ocean."
+  - says: "built to withstand winds of up to two hundred miles an hour"
+    source: 1
+    quote: "The pier was built to be able to withstand up to 200 MPH winds."
+  - says: "On the right side before the T, one piling has its date etched into the concrete, and how many feet it goes down into the sand."
+    source: 1
+    quote: "Very visible on one piling in particular along the right side before the \"T\"."
+sources:
+  - title: "Fun Facts About Johnnie Mercers Pier"
+    publisher: "Johnnie Mercers Fishing Pier"
+    url: https://johnniemercersfishingpier.com/fun-facts-about-johnnie-mercers-pier/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

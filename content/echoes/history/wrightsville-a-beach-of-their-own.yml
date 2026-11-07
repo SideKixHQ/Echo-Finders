@@ -1,0 +1,80 @@
+# Wrightsville Beach, batch A (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Overture address point 2698 North Lumina Avenue (public Beach Access 2, per the town map). The 1920s resort footprint is not pinpointed; district viewpoint at the north end (low confidence).
+id: wrightsville-a-beach-of-their-own
+title: "A Beach of Their Own"
+summary: "Shell Island, then a separate island, was a resort for Black visitors open between 1923 and 1926, until a fire ended it."
+place: "North end of Wrightsville Beach, near public Beach Access 2, 2698 North Lumina Avenue, Wrightsville Beach, North Carolina"
+at: { lat: 34.23474, lng: -77.77583 }
+triggerRadiusKm: 0.15
+category: history
+format: short
+durationS: 53
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, shell-island, black-history, segregation]
+teaser: "For three summers, this end of the island had a resort built for Black visitors."
+script: |
+  Look north along the sand toward the end of the island.
+
+  In the 1920s, this was Shell Island, then a separate island, and it was the premier resort for
+  African Americans. Its backers pictured a mirror of Wrightsville Beach, a National Negro Playground.
+
+  It had hotels, cottages, bath halls and a dance pavilion. Visitors came from fifty cities in ten
+  states, because a resort like this was so unusual at the time.
+
+  It was open for only three summers. In June 1926, a fire started in a dining room, and within half
+  an hour the pavilion was in ruins. Only five buildings escaped.
+
+  It was never rebuilt. The National Park Service now lists Shell Island Resort in its study of African
+  American outdoor recreation.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "In the 1920s, this was Shell Island, then a separate island, and it was the premier resort for African Americans."
+    source: 2
+    quote: "In the 1920s, Shell Island was the premier resort for African Americans"
+  - says: "then a separate island"
+    source: 1
+    quote: "on what was then a separate island."
+  - says: "Its backers pictured a mirror of Wrightsville Beach, a National Negro Playground."
+    source: 1
+    quote: "Between 1917 – 1926, efforts were made to develop what envisioned as a \"mirror of Wrightsville Beach\" or \"National Negro Playground\""
+  - says: "It had hotels, cottages, bath halls and a dance pavilion."
+    source: 2
+    quote: "with hotels, private cottages, bath halls, concessions and a dance pavilion."
+  - says: "Visitors came from fifty cities in ten states, because a resort like this was so unusual at the time."
+    source: 2
+    quote: "Visitors would travel from 50 cities in 10 different states because the resort was so unusual at the time."
+  - says: "It was open for only three summers."
+    source: 1
+    quote: "The resort was only open for three summers between 1923 and 1926"
+  - says: "In June 1926, a fire started in a dining room, and within half an hour the pavilion was in ruins."
+    source: 2
+    quote: "In June of 1926, a fire started in a dining room and, within a half hour, left the pavilion in ruins."
+  - says: "Only five buildings escaped."
+    source: 2
+    quote: "Only five buildings escaped the blaze because of strong southerly winds and a lack of resources."
+  - says: "It was never rebuilt."
+    source: 2
+    quote: "the resort was never rebuilt."
+  - says: "The National Park Service now lists Shell Island Resort in its study of African American outdoor recreation."
+    source: 3
+    quote: "Shell Island Resort, ocean 1923-1926 Wrightsville Beach"
+sources:
+  - title: "I Was Here: The Wrightsville Beach Museum Mailbox at Shell Island"
+    publisher: "Wrightsville Beach Museum of History"
+    url: https://wbmuseumofhistory.com/events/i-was-here-the-wrightsville-beach-museum-mailbox-at-shell-island/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "History of the Fire Department"
+    publisher: "Town of Wrightsville Beach"
+    url: https://www.townofwrightsvillebeach.com/253/History-of-the-Fire-Department
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "African American Outdoor Recreation National Historic Landmark Theme Study"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/subjects/nationalhistoriclandmarks/upload/African-American-Outdoor-Recreation-National-Historic-Landmark-Theme-Study.pdf
+    retrievedAt: "2026-11-07"
+    rights: public-domain

@@ -1,0 +1,68 @@
+# Wrightsville Beach (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Overture address point, 2 Bob Sawyer Drive (municipal complex on the former test-station site); 0.15 km area radius (medium: the station's exact footprint is not identified)
+id: wrightsville-fresh-water-beside-the-sea
+title: "Fresh Water Beside the Sea"
+summary: "The town's municipal complex stands where a federal station once tested turning seawater into fresh water."
+place: "Municipal complex, Bob Sawyer Drive, Wrightsville Beach, North Carolina"
+at: { lat: 34.21453, lng: -77.80414 }
+triggerRadiusKm: 0.15
+category: history
+format: short
+durationS: 57
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, science, harbor-island]
+teaser: "The town's work yards stand where engineers tried to freeze the ocean into drinking water."
+script: |
+  Look at the municipal buildings around you. They stand where the federal government once
+  tried to turn seawater into drinking water.
+
+  The Office of Saline Water ran its Wrightsville Beach Test Facility here. The station concentrated
+  on the freezing process of desalination.
+
+  The idea is simple. Freeze salt water, and the ice crystals come out fresher than the brine around
+  them. The hard part was the crystals. A later federal report says the ones grown here were tiny,
+  about one tenth the size engineers wanted, and washing the salt off them was too expensive.
+
+  The plant closed in 1984, when funding for research ended, and the town took over the complex.
+
+  The town's trucks now park where engineers once tried to freeze the ocean into something you could drink.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "They stand where the federal government once tried to turn seawater into drinking water."
+    source: 3
+    quote: "The construction of the Federal Desalination Plant, which is located in what is now the Municipal Complex"
+  - says: "The Office of Saline Water ran its Wrightsville Beach Test Facility here."
+    source: 2
+    quote: "processes developed by the Office of Saline Water (OSW) at its Wrightsville Beach Test Facility in North Carolina during the 1960 and 1970 decades."
+  - says: "The station concentrated on the freezing process of desalination."
+    source: 1
+    quote: "The station on Wrightsville Beach concentrated on the freezing process of desalination."
+  - says: "about one tenth the size engineers wanted"
+    source: 2
+    quote: "Work performed at Wrightsville Beach suffered from small crystal size on the order of 40 microns, or one-tenth the desired size."
+  - says: "washing the salt off them was too expensive"
+    source: 2
+    quote: "resulted in a high economic penalty to wash the"
+  - says: "The plant closed in 1984, when funding for research ended, and the town took over the complex."
+    source: 1
+    quote: "The plant was closed in 1984 when funding for research ended. The complex was taken over by the Wrightsville Beach Town Municipal Complex."
+sources:
+  - title: "Points on the Tour"
+    publisher: "Historic Wrightsville Beach (historicwrightsvillebeach.com)"
+    url: https://historicwrightsvillebeach.wordpress.com/points-on-the-tour-2/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Clathrate Desalination Plant: Preliminary Research Study (Water Treatment Technology Program Report No. 5)"
+    publisher: "U.S. Department of the Interior, Bureau of Reclamation"
+    url: https://www.usbr.gov/research/dwpr/reportpdfs/report005.pdf
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+  - title: "Wrightsville Beach CAMA Land Use Plan"
+    publisher: "Town of Wrightsville Beach / NC Division of Coastal Management"
+    url: https://files.nc.gov/ncdeq/Coastal%20Management/documents/PDF/Land%20Use%20Plans/WrightsvilleBeachCAMALUP_Cert4APR2019.pdf
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

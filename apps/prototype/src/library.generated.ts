@@ -16355,6 +16355,1015 @@ export const LIBRARY: readonly Echo[] = [
         "durationS": 66
       }
     ]
+  },
+  {
+    "id": "wrightsville-a-beach-memory-in-a-sandwich",
+    "title": "A Beach Memory in a Sandwich",
+    "summary": "Roberts Grocery traces its roots to 1919 and a grocer named Charles S. Robier; the store moved across the street after Hurricane Hazel.",
+    "point": {
+      "at": {
+        "lat": 34.20908,
+        "lng": -77.79501
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "32 North Lumina Avenue, Wrightsville Beach, North Carolina"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 52,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the grocery at 32 North Lumina Avenue. Its name is older than the building.\n\nRoberts traces its roots to Roberts Grocery in Wrightsville Beach in 1919. One magazine calls the\norigin story near-mythical, and it goes like this. On his doctor's advice, a Lebanese immigrant\nnamed Charles S. Robier moved here from New York City and opened a grocery. Because locals\ncouldn't pronounce his last name, he called it Roberts.\n\nAfter damage from Hurricane Hazel in 1954, the store moved to a smaller location across the street.\n\nIts chicken salad later became a staple of supermarket deli coolers across the state. The name that\ntraveled with it was the easy version a grocer picked for his neighbors.\n",
+    "teaser": "A grocer's name that locals found easier to say.",
+    "tags": [
+      "wrightsville-beach",
+      "food",
+      "hurricane-hazel"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-a-beach-memory-in-a-sandwich",
+        "durationS": 52
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-a-beach-of-their-own",
+    "title": "A Beach of Their Own",
+    "summary": "Shell Island, then a separate island, was a resort for Black visitors open between 1923 and 1926, until a fire ended it.",
+    "point": {
+      "at": {
+        "lat": 34.23474,
+        "lng": -77.77583
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "North end of Wrightsville Beach, near public Beach Access 2, 2698 North Lumina Avenue, Wrightsville Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 53,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look north along the sand toward the end of the island.\n\nIn the 1920s, this was Shell Island, then a separate island, and it was the premier resort for\nAfrican Americans. Its backers pictured a mirror of Wrightsville Beach, a National Negro Playground.\n\nIt had hotels, cottages, bath halls and a dance pavilion. Visitors came from fifty cities in ten\nstates, because a resort like this was so unusual at the time.\n\nIt was open for only three summers. In June 1926, a fire started in a dining room, and within half\nan hour the pavilion was in ruins. Only five buildings escaped.\n\nIt was never rebuilt. The National Park Service now lists Shell Island Resort in its study of African\nAmerican outdoor recreation.\n",
+    "teaser": "For three summers, this end of the island had a resort built for Black visitors.",
+    "tags": [
+      "wrightsville-beach",
+      "shell-island",
+      "black-history",
+      "segregation"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-a-beach-of-their-own",
+        "durationS": 53
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-a-challenge-on-the-boardwalk",
+    "title": "A Challenge on the Boardwalk",
+    "summary": "In 1943 Assistant Police Chief Brooks was shot by a soldier while patrolling the boardwalk around Lumina Pavilion. He recovered.",
+    "point": {
+      "at": {
+        "lat": 34.1947,
+        "lng": -77.8054
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Former Lumina Pavilion site, near 636 South Lumina Avenue, Wrightsville Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 52,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along South Lumina Avenue toward where Lumina Pavilion once stood.\n\nIn 1943, Assistant Police Chief Brooks was patrolling the boardwalk around the pavilion when he was\nshot by a soldier assigned to Wrightsville Beach.\n\nThe war had crowded this island. The town grew from two hundred and fifty-two residents to fifteen\nhundred, policed by two full-time officers in winter and three in summer. Lumina's outside lights\nwere off for the blackout, and more and more soldiers came looking for fun.\n\nThe town's own history calls the circumstances unclear. The belief is that Brooks failed to identify\nhimself after the soldier challenged him.\n\nHe made a full recovery, and went back on duty.\n",
+    "teaser": "A wartime boardwalk in the blackout, a soldier's challenge, and a shot in the dark.",
+    "tags": [
+      "wrightsville-beach",
+      "world-war-ii",
+      "police",
+      "lumina"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-a-challenge-on-the-boardwalk",
+        "durationS": 52
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-a-movie-after-the-beach",
+    "title": "A Movie After the Beach",
+    "summary": "The Crest Theatre at 38 North Lumina Avenue opened in 1946, showed a different film every day each summer, and later became a concert stage.",
+    "point": {
+      "at": {
+        "lat": 34.20921,
+        "lng": -77.79488
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Former Crest Theatre, 38 North Lumina Avenue, Wrightsville Beach, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 52,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the building at 38 North Lumina Avenue. It began as the Crest Theatre.\n\nThe Crest opened for the summer season in 1946. A different movie played every day, so visitors\nstaying a week could come back daily when the weather turned. It showed current American films and\nforeign films by directors like Federico Fellini, and the popcorn was beloved by all.\n\nThe town's timeline says the movies ran every summer until 1973. Then the Crest became a concert\nstage for local bands and touring rock acts. It grew so popular, and so loud, that in 1981 it was\nsold to the town.\n\nToday it is a restaurant and bar. A room built for rainy afternoons ended its show business days\ntoo noisy for its neighbors.\n",
+    "teaser": "A new film every day for rainy weeks, then rock bands loud enough to end it.",
+    "tags": [
+      "wrightsville-beach",
+      "cinema",
+      "music"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-a-movie-after-the-beach",
+        "durationS": 52
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-a-patrol-base-beside-the-water",
+    "title": "A Patrol Base Beside the Water",
+    "summary": "The site at 4 Marina Street was New Hanover County's main Coast Guard patrol base in the Second World War.",
+    "point": {
+      "at": {
+        "lat": 34.21681,
+        "lng": -77.81259
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "4 Marina Street, Harbor Island, Wrightsville Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "look-below",
+    "durationS": 45,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look past the restaurant to the water of the Intracoastal Waterway.\n\nDuring the Second World War, this was the county's main Coast Guard patrol base. The wartime\nheritage guide puts it at today's 4 Marina Street, where Bluewater Grill is now.\n\nThe Coast Guard patrolled from bases at Wrightsville Beach, Southport and Wilmington. Barges kept\nto the inland waterway to avoid German U-boats.\n\nThe danger was real. In July 1943, people in a cottage at Kure Beach watched a U-boat attack the\nchemical plant there.\n\nToday the boats on this water are mostly out for fun. Then, they were looking for submarines.\n",
+    "teaser": "In the Second World War, the boats tied up here were hunting for submarines.",
+    "tags": [
+      "wrightsville-beach",
+      "world-war-ii",
+      "coast-guard",
+      "waterway"
+    ],
+    "remoteness": 0.87,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-a-patrol-base-beside-the-water",
+        "durationS": 45
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-a-porch-from-an-earlier-beach",
+    "title": "A Porch From an Earlier Beach",
+    "summary": "The James Cottage at 123 South Lumina Avenue was built in 1900 as a one-story summer cottage with a triple gable roof and a deep porch.",
+    "point": {
+      "at": {
+        "lat": 34.20559,
+        "lng": -77.79663
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "James Cottage, 123 South Lumina Avenue, Wrightsville Beach, North Carolina"
+    },
+    "category": "built",
+    "format": "look-below",
+    "durationS": 43,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the cottage from the sidewalk; it is a private home. The James Cottage was built in\n1900 for Dr. W.D. James of Hamlet.\n\nIt is a summer cottage design: one story, a triple gable roof and a deep porch. The hip roof along\nthe street was the servants' quarters.\n\nOn this beach, the porch was where summer happened. Meals were often eaten outdoors on the porch,\nto catch the cool summer breezes.\n\nAcross the street, at 124 South Lumina Avenue, stood the Myers Cottage. In 1995 it was moved away\nto house the Wrightsville Beach Museum. Its neighbor across the road stayed put.\n",
+    "teaser": "A deep porch built for summer breezes, and the neighbor that moved away.",
+    "tags": [
+      "wrightsville-beach",
+      "cottage",
+      "architecture",
+      "private-property"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-a-porch-from-an-earlier-beach",
+        "durationS": 43
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-a-summer-church-stays-for-winter",
+    "title": "A Summer Church Stays for Winter",
+    "summary": "Little Chapel on the Boardwalk began in 1907 as a summer mission and opened its year-round sanctuary on this corner in 1952.",
+    "point": {
+      "at": {
+        "lat": 34.21343,
+        "lng": -77.79243
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Little Chapel on the Boardwalk, 2 West Fayetteville Street, Wrightsville Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "look-below",
+    "durationS": 46,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the church on the corner of West Fayetteville Street and North Lumina Avenue.\n\nLittle Chapel began in 1907 as a summer mission at the Lumina, a joint venture of two downtown\nWilmington churches, First Presbyterian and St. James Episcopal. For its first few decades, it\nwelcomed preachers for the summer season only.\n\nThen the war came. Wrightsville Beach grew from two hundred and fifty-two residents in 1941 to\nfifteen hundred in 1945, and after the war it became more of a year-round community.\n\nA summer church now needed a winter. In 1952 the congregation opened its sanctuary here, on this\ncorner.\n",
+    "teaser": "For decades this congregation only met in summer. Then the war changed the island.",
+    "tags": [
+      "wrightsville-beach",
+      "church",
+      "world-war-ii",
+      "home-front"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-a-summer-church-stays-for-winter",
+        "durationS": 46
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-an-evening-at-lumina",
+    "title": "An Evening at Lumina",
+    "summary": "Lumina, the 'Palace of Light', opened in 1905 at the end of the trolley line, and was demolished in 1973.",
+    "point": {
+      "at": {
+        "lat": 34.1944,
+        "lng": -77.8053
+      },
+      "triggerRadiusKm": 0.1,
+      "place": "Former Lumina Pavilion site, South Lumina Avenue, Wrightsville Beach, North Carolina"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 54,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along South Lumina Avenue. Near here stood Lumina, the pavilion people called the Palace\nof Light.\n\nIt opened on June 3, 1905, near the end of the electric trolley line. Its builder, Hugh MacRae,\nowned the local electric utility, and over a thousand incandescent bulbs lit it up. He hoped the\nglow would get more people using electricity. Ships could navigate by it.\n\nThe second level was a dance floor with a band shell for the orchestra. Above it, a promenade\nfifteen feet wide looked down on the dancers. All three levels were for white visitors only.\n\nThe pavilion was condemned in 1972 and demolished in 1973. On a summer evening here, picture the\nlights coming on along this shore, bright enough to steer a ship by.\n",
+    "teaser": "A ballroom lit so brightly that ships could steer by it.",
+    "tags": [
+      "wrightsville-beach",
+      "lumina",
+      "music",
+      "dance"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-an-evening-at-lumina",
+        "durationS": 54
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-can-you-spot-a-bird",
+    "title": "Can You Spot a Bird Without Getting Closer?",
+    "summary": "A children's telling of the beach-nesting birds at the south end of Wrightsville Beach. Pairs with The Sand Is Already Occupied.",
+    "point": {
+      "at": {
+        "lat": 34.1869,
+        "lng": -77.8107
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "Beach Access 43, 1000 South Lumina Avenue, Wrightsville Beach, North Carolina"
+    },
+    "category": "kids",
+    "format": "look-below",
+    "durationS": 42,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Here is a beach challenge. Keep your feet still, beside your grownup, outside\nevery rope and sign.\n\nLook at the sand, then the sky. Can you see a bird standing, flying, or carrying a fish?\n\nSome birds lay their eggs right on this beach. They scratch a little hollow in the sand, called a\nscrape. A scrape only counts as a nest once it has eggs in it.\n\nNests are very hard to see. So an empty looking patch might be somebody's nursery.\n\nThe best bird detectives don't go looking for nests. They stay back and watch. If a bird\ncalls loudly at you, step back together.\n",
+    "teaser": "A bird detective challenge where you never move your feet.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "wrightsville-beach",
+      "birds",
+      "wildlife"
+    ],
+    "remoteness": 0.47,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/wrightsville-can-you-spot-a-bird",
+        "durationS": 42
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-fresh-water-beside-the-sea",
+    "title": "Fresh Water Beside the Sea",
+    "summary": "The town's municipal complex stands where a federal station once tested turning seawater into fresh water.",
+    "point": {
+      "at": {
+        "lat": 34.21453,
+        "lng": -77.80414
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "Municipal complex, Bob Sawyer Drive, Wrightsville Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 57,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the municipal buildings around you. They stand where the federal government once\ntried to turn seawater into drinking water.\n\nThe Office of Saline Water ran its Wrightsville Beach Test Facility here. The station concentrated\non the freezing process of desalination.\n\nThe idea is simple. Freeze salt water, and the ice crystals come out fresher than the brine around\nthem. The hard part was the crystals. A later federal report says the ones grown here were tiny,\nabout one tenth the size engineers wanted, and washing the salt off them was too expensive.\n\nThe plant closed in 1984, when funding for research ended, and the town took over the complex.\n\nThe town's trucks now park where engineers once tried to freeze the ocean into something you could drink.\n",
+    "teaser": "The town's work yards stand where engineers tried to freeze the ocean into drinking water.",
+    "tags": [
+      "wrightsville-beach",
+      "science",
+      "harbor-island"
+    ],
+    "remoteness": 0.49,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-fresh-water-beside-the-sea",
+        "durationS": 57
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-jo-pickett-makes-room-in-the-lineup",
+    "title": "Jo Pickett Makes Room in the Lineup",
+    "summary": "Surfer and coach Jo Pickett started Crystal South Surf Camp at Wrightsville Beach and helped relaunch its all-female Wahine Classic in 2013.",
+    "point": {
+      "at": {
+        "lat": 34.1937,
+        "lng": -77.8046
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "Beach near Crystal Pier, 703 South Lumina Avenue, Wrightsville Beach, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 54,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the surf breaks near Crystal Pier. Jo Pickett calls this her favorite surf spot.\n\nShe is a former U.S. national short board champion, and she taught herself to surf. Here she\nstarted Crystal South Surf Camp, which has offered surf instruction since 1996.\n\nThis beach is also home to the Wahine Classic, an all-female surf contest she runs, for everyone\nfrom Teenie Wahines to seniors. It grew out of the East Coast Wahine Championships, founded in 1997\nas the first all-female surf event on the East Coast. After it shut down in 2011, Pickett and her\nfriends relaunched it in 2013.\n\nAsk why she still teaches, and she goes back to her own first wave. That's the moment, she says.\nAnd that's why I still want to teach.\n",
+    "teaser": "A champion who taught herself, and the women's contest she brought back.",
+    "tags": [
+      "wrightsville-beach",
+      "surfing",
+      "women"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-jo-pickett-makes-room-in-the-lineup",
+        "durationS": 54
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-letters-after-the-trolley",
+    "title": "Letters After the Trolley",
+    "summary": "94 South Lumina stood at the trolley's Station One, became the beach's first post office, and is now the Trolly Stop.",
+    "point": {
+      "at": {
+        "lat": 34.20765,
+        "lng": -77.79611
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Trolly Stop, 94 South Lumina Avenue, Wrightsville Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "look-below",
+    "durationS": 46,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the small building at 94 South Lumina Avenue, and keep the service window clear.\n\nIt stands about where Station One of the old trolley line used to be. Until a drawbridge was\nfinished in 1935, you got around this beach on foot or by trolley.\n\nThen the building changed jobs. Known as the Jennings Building, it became the first Wrightsville\nBeach post office, opening in November 1941.\n\nIn 1976 it became the first Trolly Stop, and the original store was named Station 1. It is a local\nhistorical landmark now.\n\nA trolley stop, a post office, a hot dog stand. This building has always been somewhere people\nstop.\n",
+    "teaser": "A trolley stop, then a post office, then hot dogs. Same small building.",
+    "tags": [
+      "wrightsville-beach",
+      "trolley",
+      "post-office",
+      "landmark"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-letters-after-the-trolley",
+        "durationS": 46
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-nancy-fahey-learns-what-nests-here",
+    "title": "Nancy Fahey Learns What Nests Here",
+    "summary": "Nancy Fahey began volunteering with the Wrightsville Beach Sea Turtle Project in 1995 and has led it since 2004.",
+    "point": {
+      "at": {
+        "lat": 34.2078,
+        "lng": -77.7938
+      },
+      "triggerRadiusKm": 0.12,
+      "place": "Stone Street beach access (public access 29), Wrightsville Beach, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 55,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the sand between the dunes and the water. Sea turtles often nest on Wrightsville Beach,\nand for years Nancy Fahey had no idea.\n\nShe had lived on the North Carolina coast for more than ten years when she learned about the\nWrightsville Beach Sea Turtle Project, then recently founded. She could not wait to get involved. She began volunteering in 1995. By the end of her\nfirst summer, she was hooked.\n\nSince 2004 she has led the project as its president and volunteer coordinator. Every day from May\nthrough August, its volunteers walk the length of the beach, looking for signs of nesting. Turtles\nnest at night, so the volunteers look for tracks at dawn.\n\nA nest found that way is roped off, and watched every day until it hatches.\n",
+    "teaser": "She had lived on this coast for ten years before she found out who else used the beach.",
+    "tags": [
+      "wrightsville-beach",
+      "sea-turtles",
+      "conservation"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-nancy-fahey-learns-what-nests-here",
+        "durationS": 55
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-summer-rooms-become-wartime-homes",
+    "title": "Summer Rooms Become Wartime Homes",
+    "summary": "Carolina Temple was a popular guest home in the Second World War, and is called the beach's oldest running business.",
+    "point": {
+      "at": {
+        "lat": 34.19658,
+        "lng": -77.80443
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Carolina Temple Island Inn, 550 Waynick Boulevard, Wrightsville Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "look-below",
+    "durationS": 46,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across Waynick Boulevard at the Carolina Temple, and stay on the sidewalk.\n\nIt dates from the early 1900s. During the Second World War it was a popular guest home, and the\nwartime heritage guide calls it Wrightsville Beach's oldest continuously operating business.\n\nThe war filled this island. The town grew from two hundred and fifty-two residents in 1941 to\nfifteen hundred in 1945. All of them needed somewhere to sleep.\n\nThe inn still rents small apartments, one or two rooms each, with their own kitchenettes. That is\nthe same offer it made to a crowded island at war: not a holiday, a place to live.\n",
+    "teaser": "The war filled this island, and this guest house kept handing out keys.",
+    "tags": [
+      "wrightsville-beach",
+      "world-war-ii",
+      "lodging",
+      "home-front"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-summer-rooms-become-wartime-homes",
+        "durationS": 46
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-the-beach-car-stops-running",
+    "title": "The Beach Car Stops Running",
+    "summary": "The Wilmington to Wrightsville Beach trolley line ran from 1888 until April 26, 1940, when buses replaced the beach cars.",
+    "point": {
+      "at": {
+        "lat": 34.21515,
+        "lng": -77.7906
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "North Lumina Avenue at Salisbury Street, Wrightsville Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 55,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along Lumina Avenue at the traffic, then picture the street without it.\n\nFrom 1888, a railway ran eleven miles from downtown Wilmington to this beach. It began with steam,\nand in 1902 the line was electrified. People called the trolleys the beach cars.\n\nThen the roads improved. Drivers could reach the beach at their own convenience, and fewer people\nrode.\n\nOn April 26, 1940, the Wilmington News carried the headline: Beach cars to end run here today. At\nmidnight, buses took over, and the rails were taken up.\n\nOf twenty stops on the line, one passenger station survives, a small concrete shelter in Wilmington's\nAudubon neighborhood. In 1984 a neighbor wrote to the paper, begging the city to save it before the\nwrecking ball came.\n",
+    "teaser": "For fifty years you came here by rail. Then one April night, the buses took over.",
+    "tags": [
+      "wrightsville-beach",
+      "trolley",
+      "transport"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-the-beach-car-stops-running",
+        "durationS": 55
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-the-building-made-bright",
+    "title": "The Building Made Bright",
+    "summary": "A children's telling of Lumina, the 1905 pavilion called the Palace of Light. Pairs with An Evening at Lumina.",
+    "point": {
+      "at": {
+        "lat": 34.1944,
+        "lng": -77.8053
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Former Lumina site, near 636 South Lumina Avenue, Wrightsville Beach, North Carolina"
+    },
+    "category": "kids",
+    "format": "look-below",
+    "durationS": 40,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stay beside your grownup on the sidewalk and look around. Near here, long ago, stood a building\nthat glowed.\n\nIt was called Lumina, and it opened in 1905. More than a thousand light bulbs lit it up. It was so\nbright that ships could find their way by it, and people nicknamed it The Palace of Light.\n\nPeople went bowling downstairs and danced in a ballroom upstairs. They even watched movies on a\nbig screen out over the waves!\n\nLumina was taken down in 1973. Now close your eyes and switch it back on. How many lights can you\ncount?\n",
+    "teaser": "A building so bright that ships could steer by it.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "wrightsville-beach",
+      "lumina"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/wrightsville-the-building-made-bright",
+        "durationS": 40
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-the-cottage-that-became-a-museum",
+    "title": "The Cottage That Became a Museum",
+    "summary": "Myers Cottage, a summer cottage moved from South Lumina Avenue in 1995, now houses the Wrightsville Beach Museum of History.",
+    "point": {
+      "at": {
+        "lat": 34.21668,
+        "lng": -77.80317
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Myers Cottage, Wrightsville Beach Museum of History, 303 West Salisbury Street, Wrightsville Beach, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 49,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the cottage in front of you. It was built as a summer home, and it did not start out on\nthis street.\n\nMyers Cottage once stood at 124 South Lumina Avenue. It stayed in the family until 1954, and in\n1995 it was donated and moved here to house the Wrightsville Beach Museum.\n\nInside, the rooms show how a typical summer cottage was lived in: a bedroom, a bathroom and a\nkitchen, with furnishings of the time. The icebox was kept out on the porch, and the trolley\nbrought ice from Wilmington to keep it cold.\n\nThe centerpiece is a twelve foot model of the beach around 1910. Look closely and you will find\nthis cottage in it, back in its original location.\n",
+    "teaser": "It was moved here from near the ocean. Inside, a model shows it back where it started.",
+    "tags": [
+      "wrightsville-beach",
+      "museum",
+      "cottage",
+      "historic-square"
+    ],
+    "remoteness": 0.53,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-the-cottage-that-became-a-museum",
+        "durationS": 49
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-the-fire-engine-that-came-by-trolley",
+    "title": "The Fire Engine That Came by Trolley",
+    "summary": "In the Great Fire of 1934, with no automobile bridge to the island, Wilmington sent a fire engine to Wrightsville Beach on the trolley.",
+    "point": {
+      "at": {
+        "lat": 34.21545,
+        "lng": -77.79055
+      },
+      "triggerRadiusKm": 0.1,
+      "place": "North Lumina Avenue near Salisbury Street, Wrightsville Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 53,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down North Lumina Avenue, along the north end of the island.\n\nIn 1934, the Great Fire burned through here. It is thought to have started in the Kitty Cottage,\nfrom a careless cigarette or an electric iron.\n\nA brisk westerly wind drove it, then a gale shifted to the south southwest and pushed it into the\nOceanic Hotel. In less than three hours, a third of the beach was gone. The town counts a hundred\nand three buildings destroyed.\n\nWilmington's fire department was called. But there was no automobile bridge yet, and everything\ncame onto the island by trolley or by boat. So the firefighters loaded an engine onto the trolley.\n\nIt made the crossing. Then, off the tracks at last, it got stuck in the sand.\n",
+    "teaser": "The beach was burning, and the only way to bring a fire engine was by rail.",
+    "tags": [
+      "wrightsville-beach",
+      "fire",
+      "trolley",
+      "oceanic-hotel"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-the-fire-engine-that-came-by-trolley",
+        "durationS": 53
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-the-hot-dog-with-a-place-name",
+    "title": "The Hot Dog With a Place Name",
+    "summary": "Trolly Stop opened in 1976 as Station 1, named for a stop on the trolley line that last ran in 1940.",
+    "point": {
+      "at": {
+        "lat": 34.20765,
+        "lng": -77.79611
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "94 South Lumina Avenue, Wrightsville Beach, North Carolina"
+    },
+    "category": "food-drink",
+    "format": "look-below",
+    "durationS": 41,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the little shop at 94 South Lumina Avenue. The name on its sign points at something\nyou can no longer see.\n\nTrolly Stop opened in 1976 under another name, Station 1. It was called that because it stood at\nthe first stop of the trolley line that connected downtown Wilmington to the south end of the\nbeach.\n\nBy then the line had been gone for a long time. Its last journey took place in late April of 1940.\n\nSo the stand was named for a stop where no trolley had pulled up in a generation. The cars\nstopped running. The stop kept its name.\n",
+    "teaser": "A hot dog stand named for a ride that had already stopped running.",
+    "tags": [
+      "wrightsville-beach",
+      "trolley",
+      "food"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-the-hot-dog-with-a-place-name",
+        "durationS": 41
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-the-pier-returns-in-concrete",
+    "title": "The Pier Returns in Concrete",
+    "summary": "Johnnie Mercers Pier, wooden since the 1930s, was devastated in 1996 and reopened in concrete in 2001.",
+    "point": {
+      "at": {
+        "lat": 34.2143,
+        "lng": -77.7888
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Johnnie Mercers Fishing Pier, 23 East Salisbury Street, Wrightsville Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 52,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the pier's concrete pilings.\n\nThis pier began in the 1930s as the Atlantic View Pier. In 1939 it was sold to Johnnie Mercer, who\nrenamed it after himself. He was not the famous songwriter.\n\nIt was wooden, and the storms kept coming. It was rebuilt after Hurricane Hazel in 1954. In 1996,\nHurricanes Bertha and Fran devastated it.\n\nWork on a concrete pier began in 1999, and it reopened in 2001, the first concrete pier on the North\nCarolina coast. It reaches twelve hundred feet over the Atlantic, built to withstand winds of up to\ntwo hundred miles an hour.\n\nOn the right side before the T, one piling has its date etched into the concrete, and how many feet\nit goes down into the sand.\n",
+    "teaser": "Two hurricanes took the wooden pier. What came back was built for two hundred mile an hour winds.",
+    "tags": [
+      "wrightsville-beach",
+      "pier",
+      "hurricanes",
+      "fishing"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-the-pier-returns-in-concrete",
+        "durationS": 52
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-the-sand-is-already-occupied",
+    "title": "The Sand Is Already Occupied",
+    "summary": "The south end of Wrightsville Beach is Audubon North Carolina's busiest nesting site, home to colonies of Least Terns and Black Skimmers.",
+    "point": {
+      "at": {
+        "lat": 34.1867,
+        "lng": -77.811
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "South end, Beach Access 43, 1000 South Lumina Avenue, Wrightsville Beach, North Carolina"
+    },
+    "category": "land",
+    "format": "short",
+    "durationS": 54,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look south along the sand toward the posted signs and the rope. It can look empty. In nesting\nseason, it usually isn't.\n\nAudubon calls the south end of Wrightsville Beach its busiest nesting site. Colonies of Least\nTerns and Black Skimmers nest here, and skimmers have been nesting on this beach since 2009.\n\nThese birds nest directly on the sand, and their nests are often difficult to see. Even a brief\ndisturbance can make the adults leave, exposing eggs and chicks to heat and predators.\n\nFrom March 1 to September 15, postings protect the places where birds are building nests, laying\neggs and raising chicks. So stay outside the signs and watch from here. If a bird starts calling\nloudly, it is telling you to back away.\n",
+    "teaser": "An empty stretch of beach that is, in season, a nursery.",
+    "tags": [
+      "wrightsville-beach",
+      "birds",
+      "nesting",
+      "wildlife"
+    ],
+    "remoteness": 0.49,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-the-sand-is-already-occupied",
+        "durationS": 54
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-the-surfer-who-wrote-for-advice",
+    "title": "The Surfer Who Wrote for Advice",
+    "summary": "Burke Haywood Bridgers's 1910 letter to Collier's describes Wrightsville Beach surfing, the earliest documented in North Carolina.",
+    "point": {
+      "at": {
+        "lat": 34.1995,
+        "lng": -77.8024
+      },
+      "triggerRadiusKm": 0.3,
+      "place": "Pioneer East Coast Surfing marker, Waynick Boulevard at Bridgers Street, Wrightsville Beach, North Carolina"
+    },
+    "category": "inspo",
+    "format": "short",
+    "durationS": 55,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look past the houses toward the beach. Surfing in this state began with a letter.\n\nIn August 1909, Collier's Weekly ran an article urging readers to try surfing. Wrightsville Beach\nnative Burke Haywood Bridgers read it and wrote to the author with questions about surfboards.\n\nHis letter was published in April 1910. During the past summer, he wrote, we tried the sport to a\nvery considerable extent, but without great results. The best rides were by small boys under 100\npounds. Their boards were cut from juniper, a cedar boat builders favor.\n\nNo one can claim a first in East Coast surfing. But the surfing on this beach in the early 1900s is\nthe earliest documented in North Carolina. It began with a man admitting what he did not know.\n",
+    "teaser": "North Carolina surfing starts with a letter asking for help.",
+    "inspo": {
+      "kind": "first",
+      "evidence": "area"
+    },
+    "tags": [
+      "wrightsville-beach",
+      "surfing",
+      "marker"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-the-surfer-who-wrote-for-advice",
+        "durationS": 55
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-the-tracks-that-morning-walkers-read",
+    "title": "The Tracks That Morning Walkers Read",
+    "summary": "Wrightsville Beach Sea Turtle Project volunteers walk the beach every morning in nesting season, reading the night's tracks.",
+    "point": {
+      "at": {
+        "lat": 34.2077,
+        "lng": -77.7942
+      },
+      "triggerRadiusKm": 0.1,
+      "place": "Ocean end of Beach Access 29, Stone Street, Wrightsville Beach, North Carolina"
+    },
+    "category": "land",
+    "format": "short",
+    "durationS": 51,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the open sand between the dunes and the water. Overnight, something might have crossed it.\n\nSea turtles nest at night, so volunteers with the Wrightsville Beach Sea Turtle Project check for\ntheir tracks in the sand at dawn. Every day between May 1 and August 31, they walk the length of\nthe beach looking for signs of nesting.\n\nWhen they find a nest, it is roped off as a federally protected area. Then they watch it daily\nuntil it hatches, about 45 to 70 days later.\n\nIf you see a roped nest, leave it alone. If you see a turtle, stay quiet, keep your distance and\nkeep lights off it. By the time most of us reach the beach, the morning walkers have already read\nthe night.\n",
+    "teaser": "Sea turtles come ashore in the dark. Volunteers read their tracks at dawn.",
+    "tags": [
+      "wrightsville-beach",
+      "sea-turtles",
+      "wildlife"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-the-tracks-that-morning-walkers-read",
+        "durationS": 51
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-the-treasure-beyond-the-channel",
+    "title": "The Treasure Beyond the Channel",
+    "summary": "Legend says Captain Kidd buried two chests of gold and silver on Money Island in 1699. None has been found.",
+    "point": {
+      "at": {
+        "lat": 34.20832,
+        "lng": -77.79659
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Wynn Plaza Waterfront Park, 2 Waynick Boulevard, Wrightsville Beach, North Carolina"
+    },
+    "category": "legend",
+    "format": "look-below",
+    "durationS": 46,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out across the channel, toward the marsh and the mainland. Beyond what you can see from\nthis park is a small island with a big name: Money Island.\n\nWhat follows is a legend, and it has never been proven. The story says that in 1699, Captain\nWilliam Kidd stood supervising while workmen buried two iron chests full of gold and silver on the\nisland.\n\nLocals have spent hundreds of years searching for those chests. None have ever been found.\n\nSo the island kept its name, and nothing else. It works like a treasure map made of a single word, passed from\nneighbor to neighbor, promising more than anyone ever dug up.\n",
+    "teaser": "Two iron chests, a famous pirate, and an island named for what nobody found.",
+    "certaintyNote": "A published local legend. No record or find confirms that Captain Kidd buried anything on Money Island; the script says so out loud.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "tags": [
+      "wrightsville-beach",
+      "pirates",
+      "legend",
+      "waterfront"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "speech/wrightsville-the-treasure-beyond-the-channel",
+        "durationS": 46
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-when-hazel-reached-the-beach",
+    "title": "When Hazel Reached the Beach",
+    "summary": "Hurricane Hazel struck on October 15, 1954, damaging 530 homes at Wrightsville Beach; the museum's hurricane post measures storm surge.",
+    "point": {
+      "at": {
+        "lat": 34.21668,
+        "lng": -77.80317
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Wrightsville Beach Museum of History, 303 West Salisbury Street, Wrightsville Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "look-below",
+    "durationS": 44,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look for the hurricane post in the museum's side yard. It measures storms against people.\n\nOn October 15, 1954, Hurricane Hazel made landfall near the North Carolina and South Carolina border\nas a Category Four hurricane. It arrived with the full moon of October, the highest tide of the year.\n\nAt Wrightsville Beach, Hazel damaged five hundred and thirty homes and destroyed eighty-nine. The\nmuseum gives its storm surge here as twelve feet.\n\nHurricane Florence is measured on the post now too. The museum's advice is simple: come and stand\nnext to it, and see how massive the storm surge is.\n",
+    "teaser": "A post in the museum yard measures storms against you.",
+    "tags": [
+      "wrightsville-beach",
+      "hurricane-hazel",
+      "storms",
+      "museum"
+    ],
+    "remoteness": 0.53,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/wrightsville-when-hazel-reached-the-beach",
+        "durationS": 44
+      }
+    ]
+  },
+  {
+    "id": "wrightsville-your-ticket-to-the-beach",
+    "title": "Your Ticket to the Beach",
+    "summary": "A children's telling of the trolley that carried beachgoers from Wilmington until 1940.",
+    "point": {
+      "at": {
+        "lat": 34.21485,
+        "lng": -77.7907
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "North Lumina Avenue at East Salisbury Street, Wrightsville Beach, North Carolina"
+    },
+    "category": "kids",
+    "format": "look-below",
+    "durationS": 43,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Pretend you're holding a ticket to the beach. Stay beside your grownup, well back from the curb,\nand look along the street.\n\nLong ago, families rode a trolley car all the way here from Wilmington. The line was nine miles\nlong, with twenty stops along the way.\n\nImagine climbing off with towels, lunches and maybe a very large hat. What would you bring?\n\nThe trolley ran for nearly forty years. Its very last trip was in April of 1940. After that, the\nrails were taken up.\n\nIf your ride home was the trolley, you watched the clock. Miss the car home, and\nit was a very long walk!\n",
+    "teaser": "Long ago, the ride to the beach was a trolley.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "wrightsville-beach",
+      "trolley"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/wrightsville-your-ticket-to-the-beach",
+        "durationS": 43
+      }
+    ]
   }
 ] as const;
 

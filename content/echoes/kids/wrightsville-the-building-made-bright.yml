@@ -1,0 +1,65 @@
+# Wrightsville Beach, batch C (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Near 636 South Lumina Avenue (James's location), interpolated between Overture points 627 and 645 South Lumina Avenue; UNCW places the pavilion near what is now the Sandpeddler Inn on S. Lumina Avenue, exact footprint not pinned; kids version of WB024 (An Evening at Lumina); public sidewalk only, the site is private residences (medium-low confidence).
+id: wrightsville-the-building-made-bright
+title: "The Building Made Bright"
+summary: "A children's telling of Lumina, the 1905 pavilion called the Palace of Light. Pairs with An Evening at Lumina."
+place: "Former Lumina site, near 636 South Lumina Avenue, Wrightsville Beach, North Carolina"
+at: { lat: 34.1944, lng: -77.8053 }
+triggerRadiusKm: 0.08
+category: kids
+format: look-below
+durationS: 40
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [wrightsville-beach, lumina]
+teaser: "A building so bright that ships could steer by it."
+script: |
+  Stay beside your grownup on the sidewalk and look around. Near here, long ago, stood a building
+  that glowed.
+
+  It was called Lumina, and it opened in 1905. More than a thousand light bulbs lit it up. It was so
+  bright that ships could find their way by it, and people nicknamed it The Palace of Light.
+
+  People went bowling downstairs and danced in a ballroom upstairs. They even watched movies on a
+  big screen out over the waves!
+
+  Lumina was taken down in 1973. Now close your eyes and switch it back on. How many lights can you
+  count?
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "It was called Lumina, and it opened in 1905."
+    source: 1
+    quote: "When Lumina opened near the end of the Wrightsville Beach electric trolley line in 1905"
+  - says: "More than a thousand light bulbs lit it up."
+    source: 1
+    quote: "over a thousand incandescent bulbs lit up the new entertainment pavilion."
+  - says: "It was so bright that ships could find their way by it, and people nicknamed it The Palace of Light."
+    source: 1
+    quote: "It did allow ships to navigate by it and was soon nicknamed \"The Palace of Light.\""
+  - says: "People went bowling downstairs and danced in a ballroom upstairs."
+    source: 1
+    quote: "like bowling at the ground floor lanes, dancing in the second-floor ballroom"
+  - says: "They even watched movies on a big screen out over the waves!"
+    source: 2
+    quote: "a screen was erected on tall pilings on the beach alongside the pavilion"
+  - says: "Lumina was taken down in 1973."
+    source: 1
+    quote: "until it was finally condemned in 1972 and later demolished in 1973."
+  - says: "Near here, long ago, stood a building that glowed."
+    source: 1
+    quote: "The pavilion was located near what is now the Sandpeddler Inn & Suites on S. Lumina Avenue."
+sources:
+  - title: "Lumina: The Palace of Light"
+    publisher: "The Center for Southeast North Carolina Archives and History at UNCW Library"
+    url: https://library.uncw.edu/archives_special/lumina-palace-light
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Lumina, Storied Beacon at Wrightsville Beach"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2016/06/03/lumina-storied-beacon-wrightsville-beach
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

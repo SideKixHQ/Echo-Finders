@@ -1,0 +1,66 @@
+# Wrightsville Beach, batch A (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Overture address point 94 South Lumina Avenue (Trolly Stop, the Jennings Building) (high confidence).
+id: wrightsville-letters-after-the-trolley
+title: "Letters After the Trolley"
+summary: "94 South Lumina stood at the trolley's Station One, became the beach's first post office, and is now the Trolly Stop."
+place: "Trolly Stop, 94 South Lumina Avenue, Wrightsville Beach, North Carolina"
+at: { lat: 34.20765, lng: -77.79611 }
+triggerRadiusKm: 0.05
+category: history
+format: look-below
+durationS: 46
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, trolley, post-office, landmark]
+teaser: "A trolley stop, then a post office, then hot dogs. Same small building."
+script: |
+  Look at the small building at 94 South Lumina Avenue, and keep the service window clear.
+
+  It stands about where Station One of the old trolley line used to be. Until a drawbridge was
+  finished in 1935, you got around this beach on foot or by trolley.
+
+  Then the building changed jobs. Known as the Jennings Building, it became the first Wrightsville
+  Beach post office, opening in November 1941.
+
+  In 1976 it became the first Trolly Stop, and the original store was named Station 1. It is a local
+  historical landmark now.
+
+  A trolley stop, a post office, a hot dog stand. This building has always been somewhere people
+  stop.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the small building at 94 South Lumina Avenue, and keep the service window clear."
+    source: 1
+    quote: "opened the very first Trolly Stop at 94 South Lumina in Wrightsville Beach."
+  - says: "It stands about where Station One of the old trolley line used to be."
+    source: 2
+    quote: "It is located about where Station One of the old downtown trolley line used to be located."
+  - says: "Until a drawbridge was finished in 1935, you got around this beach on foot or by trolley."
+    source: 1
+    quote: "Until the completion of a drawbridge in 1935, the only way to get in and around Wrightsville Beach was by walking or riding the trolley line."
+  - says: "Known as the Jennings Building, it became the first Wrightsville Beach post office, opening in November 1941."
+    source: 1
+    quote: "The building, then known as the Jennings Building, was converted from the trolley station to the first Wrightsville Beach U.S. Post Office, which opened in November 1941."
+  - says: "In 1976 it became the first Trolly Stop, and the original store was named Station 1."
+    source: 1
+    quote: "The original store was called Station 1, as it was located on the first stop of the historic trolley line"
+  - says: "In 1976 it became the first Trolly Stop"
+    source: 2
+    quote: "The Trolley Stop was opened in 1976"
+  - says: "It is a local historical landmark now."
+    source: 1
+    quote: "It has since been designated a Local Historical Landmark"
+sources:
+  - title: "Our Story"
+    publisher: "Trolly Stop Hot Dogs"
+    url: https://trollystophotdogs.com/our-story/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Points on the Tour"
+    publisher: "Historic Wrightsville Beach"
+    url: https://historicwrightsvillebeach.wordpress.com/points-on-the-tour-2/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

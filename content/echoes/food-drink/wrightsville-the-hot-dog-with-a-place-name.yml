@@ -1,0 +1,63 @@
+# Wrightsville Beach, batch C (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Overture address point for 94 South Lumina Avenue, the address Trolly Stop gives for itself; listening spot is the public sidewalk outside (high confidence).
+id: wrightsville-the-hot-dog-with-a-place-name
+title: "The Hot Dog With a Place Name"
+summary: "Trolly Stop opened in 1976 as Station 1, named for a stop on the trolley line that last ran in 1940."
+place: "94 South Lumina Avenue, Wrightsville Beach, North Carolina"
+at: { lat: 34.20765, lng: -77.79611 }
+triggerRadiusKm: 0.05
+category: food-drink
+format: look-below
+durationS: 41
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, trolley, food]
+teaser: "A hot dog stand named for a ride that had already stopped running."
+script: |
+  Look at the little shop at 94 South Lumina Avenue. The name on its sign points at something
+  you can no longer see.
+
+  Trolly Stop opened in 1976 under another name, Station 1. It was called that because it stood at
+  the first stop of the trolley line that connected downtown Wilmington to the south end of the
+  beach.
+
+  By then the line had been gone for a long time. Its last journey took place in late April of 1940.
+
+  So the stand was named for a stop where no trolley had pulled up in a generation. The cars
+  stopped running. The stop kept its name.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the little shop at 94 South Lumina Avenue."
+    source: 2
+    quote: "94 South Lumina Avenue Wrightsville Beach, NC 28480"
+  - says: "Trolly Stop opened in 1976 under another name, Station 1."
+    source: 1
+    quote: "Trolly Stop: This iconic hot dog spot opened in 1976 originally as \"Station 1.\""
+  - says: "It was called that because it stood at the first stop of the trolley line that connected downtown Wilmington to the south end of the beach."
+    source: 1
+    quote: "It was called Station 1 because it was at the first stop of the trolley line that connected downtown Wilmington to the south end of the beach."
+  - says: "Its last journey took place in late April of 1940."
+    source: 3
+    quote: "ran for nearly four decades until the last journey took place in late April of 1940."
+  - says: "By then the line had been gone for a long time."
+    source: 3
+    quote: "ran for nearly four decades until the last journey took place in late April of 1940."
+sources:
+  - title: "Guide To An Ultimate Beach Day in Wrightsville Beach, North Carolina"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/guide-to-an-ultimate-beach-day-in-wrightsville-beach-north-carolina/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Trolly Stop Hot Dogs"
+    publisher: "Trolly Stop"
+    url: https://trollystophotdogs.com/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "History with 'Hud': The last remaining trolley station from a once busy Wilmington line"
+    publisher: "WWAY"
+    url: https://www.wwaytv3.com/history-with-hud-the-last-remaining-trolley-station-from-a-once-busy-wilmington-line/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

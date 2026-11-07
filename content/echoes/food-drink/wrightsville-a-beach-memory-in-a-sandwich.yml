@@ -1,0 +1,72 @@
+# Wrightsville Beach, batch C (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Overture address point for 32 North Lumina Avenue, the Roberts Grocery address given by Our State; listening spot is the public sidewalk outside (high confidence).
+id: wrightsville-a-beach-memory-in-a-sandwich
+title: "A Beach Memory in a Sandwich"
+summary: "Roberts Grocery traces its roots to 1919 and a grocer named Charles S. Robier; the store moved across the street after Hurricane Hazel."
+place: "32 North Lumina Avenue, Wrightsville Beach, North Carolina"
+at: { lat: 34.20908, lng: -77.79501 }
+triggerRadiusKm: 0.05
+category: food-drink
+format: short
+durationS: 52
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, food, hurricane-hazel]
+teaser: "A grocer's name that locals found easier to say."
+script: |
+  Look at the grocery at 32 North Lumina Avenue. Its name is older than the building.
+
+  Roberts traces its roots to Roberts Grocery in Wrightsville Beach in 1919. One magazine calls the
+  origin story near-mythical, and it goes like this. On his doctor's advice, a Lebanese immigrant
+  named Charles S. Robier moved here from New York City and opened a grocery. Because locals
+  couldn't pronounce his last name, he called it Roberts.
+
+  After damage from Hurricane Hazel in 1954, the store moved to a smaller location across the street.
+
+  Its chicken salad later became a staple of supermarket deli coolers across the state. The name that
+  traveled with it was the easy version a grocer picked for his neighbors.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the grocery at 32 North Lumina Avenue."
+    source: 1
+    quote: "Roberts Grocery 32 North Lumina Avenue Wrightsville Beach, NC 28480"
+  - says: "Its name is older than the building."
+    source: 1
+    quote: "After sustaining damage from Hurricane Hazel in 1954, it moved to a smaller location across the street."
+  - says: "Roberts traces its roots to Roberts Grocery in Wrightsville Beach in 1919."
+    source: 2
+    quote: "Roberts traces its roots to Roberts Grocery in Wrightsville Beach in 1919."
+  - says: "One magazine calls the origin story near-mythical"
+    source: 1
+    quote: "Roberts chicken salad is legendary, with a near-mythical origin story to match."
+  - says: "On his doctor's advice, a Lebanese immigrant named Charles S. Robier moved here from New York City and opened a grocery."
+    source: 1
+    quote: "on the advice of his doctor, a Lebanese immigrant named Charles S. Robier moved to Wrightsville Beach from New York City."
+  - says: "Because locals couldn't pronounce his last name, he called it Roberts."
+    source: 1
+    quote: "Because locals couldn't pronounce his last name, he called it Roberts."
+  - says: "After damage from Hurricane Hazel in 1954, the store moved to a smaller location across the street."
+    source: 1
+    quote: "After sustaining damage from Hurricane Hazel in 1954, it moved to a smaller location across the street."
+  - says: "Its chicken salad later became a staple of supermarket deli coolers across the state."
+    source: 1
+    quote: "Roberts chicken salad has been a staple of Harris Teeter deli coolers for a decade now."
+sources:
+  - title: "Chicken Salad at Robert's Grocery"
+    publisher: "Our State"
+    url: https://www.ourstate.com/essential-north-carolina-grocery-list-chicken-salad/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Our Wrightsville Beach Story"
+    publisher: "Roberts Chicken Salad"
+    url: https://www.robertschickensalad.com/our-story
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Guide To An Ultimate Beach Day in Wrightsville Beach, North Carolina"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/guide-to-an-ultimate-beach-day-in-wrightsville-beach-north-carolina/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

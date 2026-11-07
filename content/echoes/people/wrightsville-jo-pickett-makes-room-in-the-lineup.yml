@@ -1,0 +1,80 @@
+# Wrightsville Beach (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Beach just north of Crystal Pier, offset east from the Overture point for 703 South Lumina Avenue toward the sand; 0.15 km radius (medium, approximate)
+id: wrightsville-jo-pickett-makes-room-in-the-lineup
+title: "Jo Pickett Makes Room in the Lineup"
+summary: "Surfer and coach Jo Pickett started Crystal South Surf Camp at Wrightsville Beach and helped relaunch its all-female Wahine Classic in 2013."
+place: "Beach near Crystal Pier, 703 South Lumina Avenue, Wrightsville Beach, North Carolina"
+at: { lat: 34.1937, lng: -77.8046 }
+triggerRadiusKm: 0.15
+category: people
+format: short
+durationS: 54
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, surfing, women]
+teaser: "A champion who taught herself, and the women's contest she brought back."
+script: |
+  Look at the surf breaks near Crystal Pier. Jo Pickett calls this her favorite surf spot.
+
+  She is a former U.S. national short board champion, and she taught herself to surf. Here she
+  started Crystal South Surf Camp, which has offered surf instruction since 1996.
+
+  This beach is also home to the Wahine Classic, an all-female surf contest she runs, for everyone
+  from Teenie Wahines to seniors. It grew out of the East Coast Wahine Championships, founded in 1997
+  as the first all-female surf event on the East Coast. After it shut down in 2011, Pickett and her
+  friends relaunched it in 2013.
+
+  Ask why she still teaches, and she goes back to her own first wave. That's the moment, she says.
+  And that's why I still want to teach.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the surf breaks near Crystal Pier."
+    source: 1
+    quote: "she steps onto the sand at her favorite surf spot, a series of breaks near Crystal Pier."
+  - says: "Jo Pickett calls this her favorite surf spot."
+    source: 1
+    quote: "she steps onto the sand at her favorite surf spot, a series of breaks near Crystal Pier."
+  - says: "She is a former U.S. national short board champion"
+    source: 1
+    quote: "The former U.S. national short board champion"
+  - says: "she taught herself to surf"
+    source: 1
+    quote: "Jo taught herself to surf and recalls the joy of catching that first wave"
+  - says: "Here she started Crystal South Surf Camp"
+    source: 1
+    quote: "Here, she started Crystal South Surf Camp"
+  - says: "which has offered surf instruction since 1996"
+    source: 2
+    quote: "Providing surf instruction since 1996"
+  - says: "This beach is also home to the Wahine Classic, an all-female surf contest she runs, for everyone from Teenie Wahines to seniors."
+    source: 1
+    quote: "It's also the location of the Wahine Classic Surfing Competition — Teenie Wahines to seniors — an all-female, amateur/pro surf contest, which she runs."
+  - says: "It grew out of the East Coast Wahine Championships, founded in 1997 as the first all-female surf event on the East Coast."
+    source: 1
+    quote: "Championships was founded in 1997 by a fellow surfer as the first all-female surf event on the East Coast."
+  - says: "After it shut down in 2011, Pickett and her friends relaunched it in 2013."
+    source: 1
+    quote: "After it shut down in 2011, Pickett and her friends stepped forward to relaunch it in 2013"
+  - says: "Ask why she still teaches, and she goes back to her own first wave."
+    source: 1
+    quote: "Jo taught herself to surf and recalls the joy of catching that first wave"
+  - says: "That's the moment, she says."
+    source: 1
+    quote: "That's the moment. And that's why I still want to teach."
+  - says: "And that's why I still want to teach."
+    source: 1
+    quote: "That's the moment. And that's why I still want to teach."
+sources:
+  - title: "Gidget Grown Up: Jo Pickett"
+    publisher: "Our State"
+    url: https://www.ourstate.com/gidget-grown-up-jo-pickett/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Our Team"
+    publisher: "Crystal South Surf Community"
+    url: https://crystalsouthsurfcommunity.com/our-team/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

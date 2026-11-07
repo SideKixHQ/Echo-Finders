@@ -1,0 +1,69 @@
+# Wrightsville Beach, batch A (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Interpolated for 636 South Lumina Avenue (former Lumina Pavilion site per Historic Wrightsville Beach) between Overture points 622, 627, 645 and 650 South Lumina Avenue. Vicinity of the pavilion, not the shooting spot (medium confidence).
+id: wrightsville-a-challenge-on-the-boardwalk
+title: "A Challenge on the Boardwalk"
+summary: "In 1943 Assistant Police Chief Brooks was shot by a soldier while patrolling the boardwalk around Lumina Pavilion. He recovered."
+place: "Former Lumina Pavilion site, near 636 South Lumina Avenue, Wrightsville Beach, North Carolina"
+at: { lat: 34.1947, lng: -77.8054 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 52
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, world-war-ii, police, lumina]
+teaser: "A wartime boardwalk in the blackout, a soldier's challenge, and a shot in the dark."
+script: |
+  Look along South Lumina Avenue toward where Lumina Pavilion once stood.
+
+  In 1943, Assistant Police Chief Brooks was patrolling the boardwalk around the pavilion when he was
+  shot by a soldier assigned to Wrightsville Beach.
+
+  The war had crowded this island. The town grew from two hundred and fifty-two residents to fifteen
+  hundred, policed by two full-time officers in winter and three in summer. Lumina's outside lights
+  were off for the blackout, and more and more soldiers came looking for fun.
+
+  The town's own history calls the circumstances unclear. The belief is that Brooks failed to identify
+  himself after the soldier challenged him.
+
+  He made a full recovery, and went back on duty.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "In 1943, Assistant Police Chief Brooks was patrolling the boardwalk around the pavilion when he was shot by a soldier assigned to Wrightsville Beach."
+    source: 1
+    quote: "In 1943, while patrolling the boardwalk around the Lumina Pavilion, Assistant Police Chief Brooks was shot by a soldier that was assigned to Wrightsville Beach during the World War II."
+  - says: "The town grew from two hundred and fifty-two residents to fifteen hundred, policed by two full-time officers in winter and three in summer."
+    source: 1
+    quote: "During World War II, the Town of Wrightsville beach grew from 252 residents in 1941 to 1500 residents in 1945."
+  - says: "policed by two full-time officers in winter and three in summer"
+    source: 1
+    quote: "As a result the police force developed into two full time officers in the winter months and three full time officers in the summer months."
+  - says: "Lumina's outside lights were off for the blackout, and more and more soldiers came looking for fun."
+    source: 2
+    quote: "World War Two also damped Lumina's spirit by requiring all her outside lights to be off at night in order to comply with the black out."
+  - says: "more and more soldiers came looking for fun"
+    source: 2
+    quote: "Instead, more and more soldiers came to Lumina looking for fun."
+  - says: "The town's own history calls the circumstances unclear."
+    source: 1
+    quote: "The circumstances surrounding the shooting are unclear"
+  - says: "The belief is that Brooks failed to identify himself after the soldier challenged him."
+    source: 1
+    quote: "it is believed that Brooks failed to identify himself after being verbally challenged by the soldier."
+  - says: "He made a full recovery, and went back on duty."
+    source: 1
+    quote: "Assistant Chief Brooks fully recovered from his injuries and returned to service."
+sources:
+  - title: "History of the Police Department"
+    publisher: "Town of Wrightsville Beach"
+    url: https://www.townofwrightsvillebeach.com/255/History-of-the-Police-Department
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Points on the Tour"
+    publisher: "Historic Wrightsville Beach"
+    url: https://historicwrightsvillebeach.wordpress.com/points-on-the-tour-2/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts

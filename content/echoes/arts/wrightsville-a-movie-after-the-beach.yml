@@ -1,0 +1,74 @@
+# Wrightsville Beach (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Overture address point, 38 North Lumina Avenue (high)
+id: wrightsville-a-movie-after-the-beach
+title: "A Movie After the Beach"
+summary: "The Crest Theatre at 38 North Lumina Avenue opened in 1946, showed a different film every day each summer, and later became a concert stage."
+place: "Former Crest Theatre, 38 North Lumina Avenue, Wrightsville Beach, North Carolina"
+at: { lat: 34.20921, lng: -77.79488 }
+triggerRadiusKm: 0.05
+category: arts
+format: short
+durationS: 52
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, cinema, music]
+teaser: "A new film every day for rainy weeks, then rock bands loud enough to end it."
+script: |
+  Look at the building at 38 North Lumina Avenue. It began as the Crest Theatre.
+
+  The Crest opened for the summer season in 1946. A different movie played every day, so visitors
+  staying a week could come back daily when the weather turned. It showed current American films and
+  foreign films by directors like Federico Fellini, and the popcorn was beloved by all.
+
+  The town's timeline says the movies ran every summer until 1973. Then the Crest became a concert
+  stage for local bands and touring rock acts. It grew so popular, and so loud, that in 1981 it was
+  sold to the town.
+
+  Today it is a restaurant and bar. A room built for rainy afternoons ended its show business days
+  too noisy for its neighbors.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the building at 38 North Lumina Avenue."
+    source: 2
+    quote: "Crest Movie Theater – 38 N Lumina Ave"
+  - says: "It began as the Crest Theatre."
+    source: 2
+    quote: "is housed in the old Crest Movie Theater building."
+  - says: "The Crest opened for the summer season in 1946."
+    source: 1
+    quote: "1946 CREST Theatre opened for the summer season."
+  - says: "A different movie played every day, so visitors staying a week could come back daily when the weather turned."
+    source: 1
+    quote: "A different movie played every day so visitors for the week could attend daily in case of inclement weather."
+  - says: "It showed current American films and foreign films by directors like Federico Fellini, and the popcorn was beloved by all."
+    source: 2
+    quote: "The theater showed current American films as well as foreign films by well-known directors like Federico Fellini."
+  - says: "The town's timeline says the movies ran every summer until 1973."
+    source: 1
+    quote: "It operated every summer until 1973."
+  - says: "Then the Crest became a concert stage for local bands and touring rock acts."
+    source: 2
+    quote: "In 1973 the Crest Theater was turned into a concert stage, hosting local bands and traveling rock n roll acts."
+  - says: "It grew so popular, and so loud, that in 1981 it was sold to the town."
+    source: 2
+    quote: "The Crest was so popular that it became too noisy, so in 1981 it was sold to the town of Wrightsville Beach"
+  - says: "Today it is a restaurant and bar."
+    source: 2
+    quote: "restaurant and bar currently resides in the old Crest building."
+  - says: "A room built for rainy afternoons ended its show business days too noisy for its neighbors."
+    source: 2
+    quote: "The Crest was so popular that it became too noisy"
+sources:
+  - title: "Wrightsville Beach CAMA Land Use Plan"
+    publisher: "Town of Wrightsville Beach / NC Division of Coastal Management"
+    url: https://files.nc.gov/ncdeq/Coastal%20Management/documents/PDF/Land%20Use%20Plans/WrightsvilleBeachCAMALUP_Cert4APR2019.pdf
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Points on the Tour"
+    publisher: "Historic Wrightsville Beach (historicwrightsvillebeach.com)"
+    url: https://historicwrightsvillebeach.wordpress.com/points-on-the-tour-2/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
