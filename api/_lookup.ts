@@ -5,7 +5,13 @@ import { entitlementFrom, type PaidSession, type Subscription } from "./_entitle
 
 export async function lookup(customerId: string): Promise<Entitlement> {
   const [sessions, subscriptions] = await Promise.all([
-    stripe<{ data: PaidSession[] }>("GET", "/checkout/sessions", { customer: customerId, limit: 100 }),
+    // The charge behind each session, because a refund lives there: Stripe leaves a refunded
+    // session marked "paid" (`entitlementFrom`).
+    stripe<{ data: PaidSession[] }>("GET", "/checkout/sessions", {
+      customer: customerId,
+      limit: 100,
+      "expand[]": "data.payment_intent.latest_charge",
+    }),
     stripe<{ data: Subscription[] }>("GET", "/subscriptions", { customer: customerId, status: "all", limit: 100 }),
   ]);
   return entitlementFrom(sessions.data, subscriptions.data);
