@@ -4,6 +4,9 @@
 # REVIEW FLAG: research found no source tying a "lady in grey" to the Bellamy. Ghost listings
 # describe a Victorian woman near the nursery (usually said to be Ellen Bellamy), handprints and
 # a man in black. Find the source of "lady in grey" or rework the echo before approval.
+# RESOLVED 2026-11-07: the museum's own October 2024 blog post ("Haunted by Hauntings") has a
+# longtime volunteer's "lady in grey" story; claims below quote it. The script already credits
+# the volunteer, not the museum, with the story.
 id: the-lady-in-grey
 title: "The Lady in Grey"
 summary: "Look at the windows of the main house."
@@ -12,12 +15,11 @@ at: { lat: 34.23595, lng: -77.94295 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 105
+durationS: 61
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A published legend. The script says out loud that the haunting is reported, not proven;
-  no supernatural claim is established.
+  A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -41,7 +43,7 @@ script: |
 
   Look at the windows again.
 
-  From outside, you can see only part of each room. Reflections and shadows change what
+  From outside, you can see just part of each room. Reflections and shadows change what
   appears behind the glass.
 
   An old house contains lives you cannot meet and rooms you cannot fully read from the
@@ -54,16 +56,80 @@ script: |
   The legend is one story people tell about Bellamy.
 
   It is not the whole story of the people who lived and worked here.
-editorial: draft
-factCheck: corroborated
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "A longtime Bellamy volunteer described a story about a woman in grey, supposedly seen wandering its rooms."
+    source: 1
+    quote: "One longtime Bellamy volunteer who has been involved with the site since before it was even a museum has his own “lady in grey” story about a forlorn ghost he claims many used to see wandering the rooms in the main house."
+  - says: "The museum includes that account in its discussion of hauntings."
+    source: 1
+    quote: "One longtime Bellamy volunteer who has been involved with the site since before it was even a museum has his own “lady in grey” story about a forlorn ghost he claims many used to see wandering the rooms in the main house."
+  - says: "why do people so strongly want old houses to be haunted?"
+    source: 1
+    quote: "The question is why do so many people not only assume the site is haunted but desire it to be haunted…almost need it to be haunted?"
+  - says: "The museum does not identify her as a proven spirit of a particular resident."
+    source: 1
+    quote: "At the Bellamy Museum we often answer that question with an identity affirming, “if you believe ghosts are here, then they are, and if you do not, they are not.”"
+  - says: "The legend is one story people tell about Bellamy."
+    source: 1
+    quote: "At the Bellamy Museum we often answer that question with an identity affirming, “if you believe ghosts are here, then they are, and if you do not, they are not.”"
 sources:
-  - title: "10 2024"
+  - title: "Haunted by Hauntings: Ghosts and the Modern Museum Visitor (blog archive, October 2024)"
     publisher: "Bellamy Mansion Museum"
     url: https://www.bellamymansion.org/museum-blog/archives/10-2024
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
-  - title: "Bellamy Mansion (HABS NC-198)"
-    publisher: "Library of Congress"
-    url: https://www.loc.gov/item/nc0053/
-    retrievedAt: "2026-10-09"
-    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-lady-in-grey/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 61.3
+    audioBytes: 980993
+    transcript:
+      totalS: 61.3
+      lines:
+        - text: Look at the windows of the main house.
+          atS: 0
+          durationS: 1.93
+        - text: A longtime Bellamy volunteer described a story about a woman in grey, supposedly seen wandering its rooms.
+          atS: 2.53
+          durationS: 6.73
+        - text: The museum includes that account in its discussion of hauntings.
+          atS: 9.65
+          durationS: 3.66
+        - text: "It also asks a revealing question: why do people so strongly want old houses to be haunted?"
+          atS: 13.82
+          durationS: 6.22
+        - text: The woman has not been established as a supernatural presence.
+          atS: 20.74
+          durationS: 3.58
+        - text: The museum does not identify her as a proven spirit of a particular resident.
+          atS: 24.82
+          durationS: 4.64
+        - text: Instead, the story became attached to the house.
+          atS: 29.91
+          durationS: 2.98
+        - text: Look at the windows again.
+          atS: 33.1
+          durationS: 1.22
+        - text: From outside, you can see just part of each room.
+          atS: 34.49
+          durationS: 2.5
+        - text: Reflections and shadows change what appears behind the glass.
+          atS: 37.2
+          durationS: 3.33
+        - text: An old house contains lives you cannot meet and rooms you cannot fully read from the street.
+          atS: 40.74
+          durationS: 5.05
+        - text: The lady in grey gives that uncertainty a human shape.
+          atS: 46.49
+          durationS: 3.04
+        - text: But the building’s documented history deserves attention too.
+          atS: 50.13
+          durationS: 3.4
+        - text: The legend is one story people tell about Bellamy.
+          atS: 54.23
+          durationS: 3.18
+        - text: It is not the whole story of the people who lived and worked here.
+          atS: 57.92
+          durationS: 3.33

@@ -18,11 +18,11 @@ voice: wC1005J19tvhoqqC2hkf
 tags: [wilmington, downtown]
 teaser: "This marker identifies a place of preparation."
 script: |
-  This marker identifies a place of preparation. On November 10, 1898, armed white men
+  This marker identifies a place of preparation. On November 10, 1898, about 500 white men
   assembled at the Wilmington Light Infantry armory before marching on the Daily Record.
 
-  The violence that followed was organized around a political aim: removing Wilmington's
-  legitimately elected government and suppressing Black political power. It was not simply
+  The violence that followed served a political aim: forcing out the Republicans and
+  Populists then in power in Wilmington, and restricting Black voting. It was not simply
   an unexpected crowd losing control.
 
   Stand beside the marker and look along Market Street. The route began among familiar
@@ -32,15 +32,37 @@ script: |
 
   The marker now interrupts that everyday view with a record of what happened. Before you
   move on, notice its location. Remembering the starting point helps reveal the planning
-  behind the crime.
+  behind the coup.
 editorial: draft
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: alleged
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-07"
+  reviewedAt: "2026-11-07"
   contentWarning: "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
+claims:
+  - says: "On November 10, 1898, about 500 white men assembled at the Wilmington Light Infantry armory before marching on the Daily Record."
+    source: 1
+    quote: "At 8:00 A.M. two days later about 500 white men assembled at the armory of the Wilmington Light Infantry and, after several others declined, Waddell took on the task of leading them to the Daily Record office in Free Love Hall four blocks south of Seventh Street between Nun and Church Streets."
+  - says: "On November 10, 1898, about 500 white men assembled at the Wilmington Light Infantry armory"
+    source: 2
+    quote: "About 500 men gathered at the armory of the Wilmington Light Infantry on Nov. 10 and Waddell took on the task of leading them to the “Daily Record” office."
+  - says: "On November 10, 1898"
+    source: 3
+    quote: "The events of November 10, 1898, in Wilmington were a turning point in North Carolina history."
+  - says: "forcing out the Republicans and Populists then in power in Wilmington"
+    source: 1
+    quote: "Alfred Moore Waddell, a former Confederate officer and U.S. Congressman, in the days preceding the election of 1898 called for the removal of the Republicans and Populists then in power in Wilmington"
+  - says: "and restricting Black voting"
+    source: 1
+    quote: "Restriction on black voting followed soon thereon marking the onset of the Jim Crow era of segregation."
+  - says: "Political violence did not arrive in a landscape separate from everyday Wilmington; it moved through it."
+    source: 1
+    quote: "Within hours violence had spread to other parts of the city."
+  - says: "It was not simply an unexpected crowd losing control."
+    source: 3
+    quote: "By force, a white mob seized the reins of government in the port city and, in so doing, destroyed the local black-owned newspaper office and terrorized the African American community."
 sources:
   - title: "Wilmington coup d 118"
     publisher: "North Carolina Department of Natural and Cultural Resources"
@@ -51,4 +73,9 @@ sources:
     publisher: "North Carolina Department of Natural and Cultural Resources"
     url: https://www.dncr.nc.gov/news/press-releases/2019/10/28/nc-highway-historical-marker-commemorate-1898-wilmington-coup
     retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "1898 Wilmington Coup"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/1898-wilmington-coup
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts

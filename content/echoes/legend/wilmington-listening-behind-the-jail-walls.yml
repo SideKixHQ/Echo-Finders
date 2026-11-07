@@ -9,12 +9,11 @@ at: { lat: 34.23544, lng: -77.94640 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 71
+durationS: 61
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A published legend. The script says out loud that the haunting is reported, not proven;
-  no supernatural claim is established.
+  A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -30,17 +29,24 @@ script: |
   establish that spirits exist.
 
   There is a documented investigation and an interpretation. Those are different things.
+  The haunting is a legend, and it has not been proven.
 
-  From the sidewalk, consider how much expectation changes listening. A creak in a new
-  building may pass unnoticed. The same creak above old cells can become the beginning of
+  From the sidewalk, consider how much expectation changes listening. In a new building, a
+  creak might pass unnoticed. The same creak above old cells can become the beginning of
   a story. The house's real history supplies the weight; the haunting remains an
   unanswered claim. You can enjoy that uncertainty without pretending it has been solved.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The elegant house above you was built in 1770 over remains of Wilmington's earlier jail."
     source: 2
     quote: "The Burgwin-Wright House was built in 1770 on top of the first city jail of Wilmington, circa 1744, as a townhouse for John Burgwin to use as his seat of business and entertainment in Wilmington."
+  - says: "The Ghost Guild records a paranormal investigation here in March 2018"
+    source: 1
+    quote: "Investigations at this location: Saturday, March 24th, 2018"
+  - says: "including a bedroom recording session described as an attempt to capture electronic voice phenomena."
+    source: 1
+    quote: "EVP Session in the Master Bedroom of the Burgwin-Wright House"
 sources:
   - title: "Burgwin wright house"
     publisher: "The Ghost Guild"
@@ -52,3 +58,47 @@ sources:
     url: https://www.burgwinwrighthouse.org/history
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/wilmington-listening-behind-the-jail-walls/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 61.1
+    audioBytes: 978067
+    transcript:
+      totalS: 61.1
+      lines:
+        - text: The elegant house above you was built in 1770 over remains of Wilmington's earlier jail.
+          atS: 0
+          durationS: 5.74
+        - text: That combination has drawn more than architectural curiosity.
+          atS: 6.18
+          durationS: 3.68
+        - text: The Ghost Guild records a paranormal investigation here in March 2018, including a bedroom recording session described as an attempt to capture electronic voice phenomena.
+          atS: 10.24
+          durationS: 10.5
+        - text: Such recordings are interpreted by enthusiasts as possible voices, but they do not establish that spirits exist.
+          atS: 21.34
+          durationS: 7.48
+        - text: There is a documented investigation and an interpretation.
+          atS: 29.33
+          durationS: 3.8
+        - text: Those are different things.
+          atS: 33.45
+          durationS: 1.49
+        - text: The haunting is a legend, and it has not been proven.
+          atS: 35.26
+          durationS: 3.2
+        - text: From the sidewalk, consider how much expectation changes listening.
+          atS: 38.79
+          durationS: 4.48
+        - text: In a new building, a creak might pass unnoticed.
+          atS: 43.52
+          durationS: 3.16
+        - text: The same creak above old cells can become the beginning of a story.
+          atS: 47
+          durationS: 3.9
+        - text: The house's real history supplies the weight; the haunting remains an unanswered claim.
+          atS: 51.22
+          durationS: 5.5
+        - text: You can enjoy that uncertainty without pretending it has been solved.
+          atS: 57.05
+          durationS: 4.02

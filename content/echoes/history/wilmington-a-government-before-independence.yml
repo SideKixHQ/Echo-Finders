@@ -10,7 +10,7 @@ at: { lat: 34.23569, lng: -77.94591 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 67
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,15 +32,59 @@ script: |
   requires connections as well as declarations. The council's work helped connect local
   resistance with the possibility of a new state government. On this site, the future was
   something people had to discuss and arrange, not merely announce.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The old courthouse at this corner housed meetings of the Wilmington Council of Safety."
     source: 1
     quote: "The old courthouse was also the meeting place of the Wilmington Council of Safety."
+  - says: "Its members helped plan a political system to replace colonial authority."
+    source: 1
+    quote: "Comprised of community representatives, the councils planned a new administrative network to replace the colonial system, once independence was realized."
+  - says: "Opposition to Britain was only one part of the task."
+    source: 1
+    quote: "Governed by patriot Cornelius Harnett (1723-1781), the meetings in eastern North Carolina convened at the old courthouse in Wilmington where members planned a new state government, one first recognized in the Halifax Resolves of 1776."
+  - says: "The council's work helped connect local resistance with the possibility of a new state government."
+    source: 1
+    quote: "Governed by patriot Cornelius Harnett (1723-1781), the meetings in eastern North Carolina convened at the old courthouse in Wilmington where members planned a new state government, one first recognized in the Halifax Resolves of 1776."
 sources:
   - title: "Old courthouse d 2"
     publisher: "North Carolina Department of Natural and Cultural Resources"
     url: https://www.dncr.nc.gov/blog/2023/12/08/old-courthouse-d-2
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-government-before-independence/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.1
+    audioBytes: 867308
+    transcript:
+      totalS: 54.1
+      lines:
+        - text: The old courthouse at this corner housed meetings of the Wilmington Council of Safety.
+          atS: 0
+          durationS: 5.4
+        - text: Its members helped plan a political system to replace colonial authority.
+          atS: 6
+          durationS: 4.67
+        - text: Opposition to Britain was only one part of the task.
+          atS: 11.62
+          durationS: 3.54
+        - text: "A different government would require organization: people agreeing on how public power could operate after the old arrangements were challenged."
+          atS: 15.86
+          durationS: 8.58
+        - text: The building is gone, so let the intersection anchor the account rather than imagining a surviving meeting room.
+          atS: 24.76
+          durationS: 6.35
+        - text: Stand safely beside the marker and look at the streets crossing here.
+          atS: 31.5
+          durationS: 4.05
+        - text: Public life requires connections as well as declarations.
+          atS: 35.93
+          durationS: 3.7
+        - text: The council's work helped connect local resistance with the possibility of a new state government.
+          atS: 40.24
+          durationS: 5.98
+        - text: On this site, the future was something people had to discuss and arrange, not merely announce.
+          atS: 47.52
+          durationS: 6.63

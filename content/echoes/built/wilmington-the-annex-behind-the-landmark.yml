@@ -9,7 +9,7 @@ at: { lat: 34.24250, lng: -77.94490 }
 triggerRadiusKm: 0.06
 category: built
 format: short
-durationS: 67
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -17,24 +17,70 @@ quality: 0.75
 tags: [wilmington, downtown]
 teaser: "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H. Sprunt in memory of his parents and the earlier congregation's founders."
 script: |
-  The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H.
-  Sprunt in memory of his parents and the earlier congregation's founders.
+  The church complex expanded in 1910 with the Memorial Hall Annex, donated by William
+  H. Sprunt in memory of his parents and the earlier congregation's founders.
 
-  The annex served functions that the main sanctuary alone could not contain. Its history
-  reminds you that a community's building needs extend beyond one ceremonial room.
+  The annex served functions that the main sanctuary alone could not contain. Its
+  history reminds you that a community's building needs extend beyond a single
+  ceremonial room.
 
   Look from the public sidewalk and keep to authorized visitor areas. A less dramatic
   building can still be central to how a place works.
 
-  The addition makes growth tangible. People who gathered in the church also needed rooms
-  for teaching, meetings, and other activities. The annex supplied that supporting space.
-  Its continued presence helps you read the complex as a working community setting, not
-  simply a striking facade preserved for photographs.
-editorial: draft
+  The addition makes growth tangible. People who gathered in the church also needed
+  rooms for teaching, meetings, and other activities. The annex supplied that supporting
+  space. Its continued presence helps you read the complex as a working community
+  setting, not simply a striking facade preserved for photographs.
+editorial: approved
 factCheck: single-source
+claims:
+  - says: "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H. Sprunt in memory of his parents and the earlier congregation's founders."
+    source: 1
+    quote: "The Fourth Street church grew in 1910, when additions to the Sunday School behind the sanctuary were completed. The Memorial Hall Annex, as it was called, was donated by William H. Sprunt, in loving memory of his parents—Alexander Sprunt and Jane Dalziel Sprunt—and the founding charter members of the original Second Presbyterian Church."
+  - says: "People who gathered in the church also needed rooms for teaching, meetings, and other activities."
+    source: 1
+    quote: "Located behind the main church building, The Annex held national conferences for the Pentecostal Church."
 sources:
   - title: "Full history"
     publisher: "Brooklyn Arts Center"
     url: https://www.brooklynartsnc.com/full-history/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-annex-behind-the-landmark/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.4
+    audioBytes: 871070
+    transcript:
+      totalS: 54.4
+      lines:
+        - text: The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H.
+          atS: 0
+          durationS: 6.36
+        - text: Sprunt in memory of his parents and the earlier congregation's founders.
+          atS: 6.4
+          durationS: 4.57
+        - text: The annex served functions that the main sanctuary alone could not contain.
+          atS: 11.3
+          durationS: 4.73
+        - text: Its history reminds you that a community's building needs extend beyond a single ceremonial room.
+          atS: 16.46
+          durationS: 6.22
+        - text: Look from the public sidewalk and keep to authorized visitor areas.
+          atS: 23.2
+          durationS: 3.95
+        - text: A less dramatic building can still be central to how a place works.
+          atS: 27.75
+          durationS: 4.3
+        - text: The addition makes growth tangible.
+          atS: 32.48
+          durationS: 2.4
+        - text: People who gathered in the church also needed rooms for teaching, meetings, and other activities.
+          atS: 35.59
+          durationS: 5.95
+        - text: The annex supplied that supporting space.
+          atS: 42.14
+          durationS: 2.7
+        - text: Its continued presence helps you read the complex as a working community setting, not simply a striking facade preserved for photographs.
+          atS: 45.66
+          durationS: 8.72

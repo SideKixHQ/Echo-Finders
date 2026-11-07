@@ -2,14 +2,14 @@
 # Listening spot: Public Riverwalk at Market Street; keep the walking route clear.
 # Position: Riverwalk at the foot of Market; Market Street Landing dock listed 34 14.124N 77 57.004W (34.23540,-77.95007). (high confidence).
 id: wilmington-thirty-years-along-the-river
-title: "Thirty Years Along the River"
+title: "The Long Walk Beside the River"
 summary: "The Riverwalk can feel like something the city always had."
 place: "Wilmington Riverwalk near Market Street, Wilmington, North Carolina"
 at: { lat: 34.23545, lng: -77.94992 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 53
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -17,33 +17,78 @@ quality: 0.75
 tags: [wilmington, downtown]
 teaser: "The Riverwalk can feel like something the city always had."
 script: |
-  The Riverwalk can feel like something the city always had. Its construction instead
-  unfolded over about thirty years.
+  The Riverwalk can feel like something the city always had. The visitors bureau says it
+  was developed in the early 1980s.
 
-  Wilmington marked its completion in November 2017. The city describes a route running
-  from Nun Street toward the Isabel Holmes Bridge, linking a long stretch of downtown
-  waterfront.
+  Today it stretches nearly two miles, from Nun Street to the Isabel Holmes Bridge,
+  linking a long stretch of downtown waterfront.
 
   That project changed how people could encounter the river. A sequence of working and
   commercial edges became a connected public experience.
 
   Pause without blocking the path. The people moving past you are using the result of many
-  separate planning and building decisions. The story is not one spectacular opening but
-  persistence over time. Wilmington gradually made a continuous place to walk beside the
-  water that had shaped its economy long before visitors came here simply to enjoy the
+  separate planning and building decisions. The story is not a single spectacular opening
+  but persistence over time. Wilmington gradually made a continuous place to walk beside
+  the water that had shaped its economy long before visitors came here simply to enjoy the
   view.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
-  - says: "Wilmington marked its completion in November 2017."
+  - says: "The Riverwalk can feel like something the city always had."
     source: 1
-    quote: "In honor of the completion of all 1.75 miles of the Riverwalk, 30 years in the making, November 18, 2017 was officially proclaimed \"Riverwalk Day\" (PDF, 403KB) in the City of Wilmington."
-  - says: "The city describes a route running from Nun Street toward the Isabel Holmes Bridge, linking a long stretch of downtown waterfront."
+    quote: "Developed in the early 1980s, the Riverwalk features a number of excellent restaurants, along with a vibrant collection of sculptures and murals by local artists, including a 15-foot-tall Venus flytrap sculpture."
+  - says: "The visitors bureau says it was developed in the early 1980s."
     source: 1
-    quote: "Wilmington's Riverwalk stretches 1.75 miles along the bank of the Cape Fear River in historic downtown Wilmington, running from the foot of Nun Street on the south of historic downtown to the Isabel Holmes Bridge on the north."
+    quote: "Developed in the early 1980s, the Riverwalk features a number of excellent restaurants, along with a vibrant collection of sculptures and murals by local artists, including a 15-foot-tall Venus flytrap sculpture."
+  - says: "Today it stretches nearly two miles, from Nun Street to the Isabel Holmes Bridge, linking a long stretch of downtown waterfront."
+    source: 1
+    quote: "Stretching nearly two miles from Nun Street to the Isabella Holmes Bridge, Historic Downtown Wilmington's Riverwalk winds along the picturesque Cape Fear River and features local boutiques, markets, cafes, art galleries and scenic cruises just steps off the walkway."
+  - says: "Wilmington gradually made a continuous place to walk beside the water that had shaped its economy long before visitors came here simply to enjoy the view."
+    source: 2
+    quote: "The City of Wilmington’s investment in the Riverwalk has transformed it into one of our destination’s key attractors"
 sources:
-  - title: "Riverwalk"
-    publisher: "City of Wilmington"
-    url: https://www.wilmingtonnc.gov/Connect-With-Us/Department-Directory/Parks-Recreation/Riverwalk
-    retrievedAt: "2026-10-09"
+  - title: "Guide to Historic Downtown Wilmington’s Riverwalk"
+    publisher: "Wilmington and Beaches Convention & Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/guide-to-historic-downtown-wilmingtons-riverwalk/
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+  - title: "Wilmington Riverwalk Voted as #2 Best Riverwalk in USA TODAY 10Best Readers’ Choice Award Contest"
+    publisher: "Wilmington and Beaches Convention & Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/articles/post/wilmington-riverwalk-voted-as-2-best-riverwalk-in-usa-today-10best-readers-choice-award-contest/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-thirty-years-along-the-river/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.9
+    audioBytes: 847246
+    transcript:
+      totalS: 52.9
+      lines:
+        - text: The Riverwalk can feel like something the city always had.
+          atS: 0
+          durationS: 3.38
+        - text: The visitors bureau says it was developed in the early 1980s.
+          atS: 4.08
+          durationS: 3.83
+        - text: Today it stretches nearly two miles, from Nun Street to the Isabel Holmes Bridge, linking a long stretch of downtown waterfront.
+          atS: 8.35
+          durationS: 8.49
+        - text: That project changed how people could encounter the river.
+          atS: 17.65
+          durationS: 3.31
+        - text: A sequence of working and commercial edges became a connected public experience.
+          atS: 21.65
+          durationS: 5.11
+        - text: Pause without blocking the path.
+          atS: 27.36
+          durationS: 2.02
+        - text: The people moving past you are using the result of many separate planning and building decisions.
+          atS: 29.99
+          durationS: 5.76
+        - text: The story is not a single spectacular opening but persistence over time.
+          atS: 36.56
+          durationS: 5.16
+        - text: Wilmington gradually made a continuous place to walk beside the water that had shaped its economy long before visitors came here simply to enjoy the view.
+          atS: 42.83
+          durationS: 10.07

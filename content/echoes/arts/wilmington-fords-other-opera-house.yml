@@ -10,7 +10,7 @@ at: { lat: 34.23766, lng: -77.94570 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 67
+durationS: 59
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -22,8 +22,8 @@ script: |
   theater from 1867 to 1871. During his tenure, it was called the Opera House.
 
   The connection can surprise visitors who know Ford's name only through Abraham Lincoln's
-  assassination. This story concerns his theatrical business in Wilmington, not a claim
-  that the Washington crime happened here.
+  assassination. This story concerns his theater business here, not a claim that the
+  crime in the capital happened in this building.
 
   Names and management changed while the local building continued hosting entertainment.
   Its history reaches through people whose careers crossed several cities.
@@ -32,15 +32,64 @@ script: |
   Thalian Hall. A different title could mark a different business strategy without moving
   the stage. The theater's long life includes those shifts: familiar walls, new operators,
   and another invitation to an audience.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Ford, associated with Ford's Theatre in Washington, leased this Wilmington theater from 1867 to 1871."
     source: 1
-    quote: "Ford, formerly of Ford's Theatre in Washington D.C. He leased Thalian Hall from 1867-1871 and changed the name to \"The Opera House.\""
+    quote: "John T. Ford, formerly of Ford's Theatre in Washington D.C. He leased Thalian Hall from 1867-1871 and changed the name to \"The Opera House.\""
+  - says: "During his tenure, it was called the Opera House."
+    source: 1
+    quote: "He leased Thalian Hall from 1867-1871 and changed the name to \"The Opera House.\""
+  - says: "The connection can surprise visitors who know Ford's name only through Abraham Lincoln's assassination."
+    source: 2
+    quote: "Fords Theatre National Historic Site preserves the sites of the assassination of Abraham Lincoln on the night of April 14, 1865, the Star Saloon, and the Petersen House (the House Where Lincoln Died)."
 sources:
   - title: "About"
     publisher: "Thalian Hall"
     url: https://www.thalianhall.org/about
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+  - title: "History & Culture, Ford's Theatre National Historic Site"
+    publisher: "U.S. National Park Service"
+    url: https://www.nps.gov/foth/learn/historyculture/index.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-fords-other-opera-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 59
+    audioBytes: 944630
+    transcript:
+      totalS: 59
+      lines:
+        - text: John T.
+          atS: 0
+          durationS: 0.57
+        - text: Ford, associated with Ford's Theatre in Washington, leased this Wilmington theater from 1867 to 1871.
+          atS: 0.6
+          durationS: 9.15
+        - text: During his tenure, it was called the Opera House.
+          atS: 10.36
+          durationS: 3.06
+        - text: The connection can surprise visitors who know Ford's name only through Abraham Lincoln's assassination.
+          atS: 13.75
+          durationS: 6.04
+        - text: This story concerns his theater business here, not a claim that the crime in the capital happened in this building.
+          atS: 21.08
+          durationS: 7.05
+        - text: Names and management changed while the local building continued hosting entertainment.
+          atS: 29.08
+          durationS: 5.1
+        - text: Its history reaches through people whose careers crossed several cities.
+          atS: 34.88
+          durationS: 4.34
+        - text: Look at the entrance and imagine a playbill announcing the Opera House rather than Thalian Hall.
+          atS: 40.03
+          durationS: 5.58
+        - text: A different title could mark a different business strategy without moving the stage.
+          atS: 46.31
+          durationS: 4.63
+        - text: "The theater's long life includes those shifts: familiar walls, new operators, and another invitation to an audience."
+          atS: 51.33
+          durationS: 7.65

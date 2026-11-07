@@ -9,7 +9,7 @@ at: { lat: 34.24170, lng: -77.95060 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 58
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,18 +29,62 @@ script: |
   shifted south.
 
   Imagine the difference between a train departing on its regular run and a train helping
-  an employer leave for good. One promises another arrival. The other changes the
-  neighborhood that waits behind. Here, preserved objects keep the railroad visible even
-  after its headquarters stopped calling Wilmington home.
-editorial: draft
+  an employer leave for good. A regular run promises another arrival. A departing
+  headquarters changes the neighborhood that waits behind. Here, preserved objects keep
+  the railroad visible even after its headquarters stopped calling this city home.
+editorial: approved
 factCheck: single-source
 claims:
+  - says: "For decades, Wilmington was a headquarters city for the Atlantic Coast Line Railroad."
+    source: 1
+    quote: "Near the turn of the 20th century several railroads up and down the eastern seaboard, including the Wilmington & Weldon, merged to become the Atlantic Coast Line Railroad. The ACL company headquarters was located here in Wilmington."
   - says: "In 1960, that role moved to Jacksonville, Florida."
     source: 1
     quote: "In 1960 the ACL moved its headquarters from Wilmington to Jacksonville, FL."
+  - says: "The museum describes a relocation of more than a thousand employees, along with families, belongings, records, and office equipment."
+    source: 1
+    quote: "The railroad moved over 1,000 employees, their families, their belongings, and the company files and office equipment more than 450 miles by rail."
 sources:
   - title: "History"
     publisher: "Wilmington Railroad Museum"
     url: https://www.wrrm.org/history.html
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-headquarters-that-left-town/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 57.7
+    audioBytes: 924568
+    transcript:
+      totalS: 57.7
+      lines:
+        - text: For decades, Wilmington was a headquarters city for the Atlantic Coast Line Railroad.
+          atS: 0
+          durationS: 5.02
+        - text: In 1960, that role moved to Jacksonville, Florida.
+          atS: 5.46
+          durationS: 3.88
+        - text: The museum describes a relocation of more than a thousand employees, along with families, belongings, records, and office equipment.
+          atS: 9.72
+          durationS: 8.49
+        - text: The railway carried away part of the city's working life.
+          atS: 18.81
+          durationS: 3.38
+        - text: This museum is a place to understand that change, not the vanished headquarters itself.
+          atS: 22.79
+          durationS: 5.47
+        - text: Its collections preserve a local industry after the institution's center of gravity shifted south.
+          atS: 28.77
+          durationS: 6.08
+        - text: Imagine the difference between a train departing on its regular run and a train helping an employer leave for good.
+          atS: 35.66
+          durationS: 6.49
+        - text: A regular run promises another arrival.
+          atS: 42.97
+          durationS: 2.62
+        - text: A departing headquarters changes the neighborhood that waits behind.
+          atS: 46.2
+          durationS: 3.86
+        - text: Here, preserved objects keep the railroad visible even after its headquarters stopped calling this city home.
+          atS: 50.65
+          durationS: 7.07

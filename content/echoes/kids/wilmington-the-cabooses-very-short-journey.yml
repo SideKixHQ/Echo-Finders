@@ -10,7 +10,7 @@ at: { lat: 34.24163, lng: -77.95062 }
 triggerRadiusKm: 0.04
 category: kids
 format: short
-durationS: 68
+durationS: 49
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -19,8 +19,9 @@ voice: UrTldiIxfedDl9tlesyS
 tags: [wilmington, downtown]
 teaser: "In 2007, the museum had to move its red caboose to a new home."
 script: |
-  In 2007, the museum had to move its red caboose to a new home. The distance was short,
-  but the caboose could not simply roll there along a ready-made track.
+  In 2007, the museum had to move its red caboose to a new home. The trip was short, just
+  across a fifty foot parking lot. But there was no track at the new home, so the caboose
+  could not simply roll there.
 
   Workers lifted its body onto one truck and carried its wheels on another. They placed
   ties and rails at the new site, and the job continued into darkness.
@@ -28,20 +29,77 @@ script: |
   Look at the caboose from the permitted display area. A thing designed to travel can
   still be difficult to move!
 
-  The team had to solve the problem one part at a time. Wheels, body, trucks, and rails
+  The team had to solve the problem a piece at a time. Wheels, body, trucks, and rails
   all needed the right place in the plan. The caboose's short trip became a real adventure
   in cooperation, helping the museum keep a big piece of railroad history for visitors
   like you.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "In 2007, the museum had to move its red caboose to a new home."
+    source: 1
+    quote: "By April of 2007 the building was ready to accept the Museum contents but a major hurtle remained."
+  - says: "the museum had to move its red caboose"
+    source: 2
+    quote: "You will be able to climb aboard a real steam engine and wander through a red caboose!"
+  - says: "The trip was short, just across a fifty foot parking lot."
+    source: 1
+    quote: "In the following sequence of photographs you can see some of the effort that was necessary to move these safely across the 50 foot parking lot that separated our old home from the new."
+  - says: "But there was no track at the new home, so the caboose could not simply roll there."
+    source: 1
+    quote: "There was no track available at the new home so ties were placed and rail installed to support the caboose."
+  - says: "Workers lifted its body onto one truck and carried its wheels on another."
+    source: 1
+    quote: "The caboose was moved by lifting the body onto a flatbed truck and the trucks (wheels) onto another truck, then driving them to their new location."
+  - says: "They placed ties and rails at the new site, and the job continued into darkness."
+    source: 1
+    quote: "This move took longer than expected and you will see in the photographs the move was completed in the dark."
 sources:
   - title: "Museum move 2007"
     publisher: "Wilmington Railroad Museum"
     url: https://www.wrrm.org/museum-move---2007.html
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "Outdoor rolling stock"
     publisher: "Wilmington Railroad Museum"
     url: https://www.wrrm.org/outdoor-rolling-stock.html
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/wilmington-the-cabooses-very-short-journey/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 48.5
+    audioBytes: 777447
+    transcript:
+      totalS: 48.5
+      lines:
+        - text: In 2007, the museum had to move its red caboose to a new home.
+          atS: 0
+          durationS: 4.46
+        - text: The trip was short, just across a fifty foot parking lot.
+          atS: 4.84
+          durationS: 3.6
+        - text: But there was no track at the new home, so the caboose could not simply roll there.
+          atS: 8.77
+          durationS: 4.57
+        - text: Workers lifted its body onto one truck and carried its wheels on another.
+          atS: 13.66
+          durationS: 4.35
+        - text: They placed ties and rails at the new site, and the job continued into darkness.
+          atS: 18.62
+          durationS: 4.66
+        - text: Look at the caboose from the permitted display area.
+          atS: 23.88
+          durationS: 2.9
+        - text: A thing designed to travel can still be difficult to move!
+          atS: 27.39
+          durationS: 3.24
+        - text: The team had to solve the problem a piece at a time.
+          atS: 31.14
+          durationS: 2.97
+        - text: Wheels, body, trucks, and rails all needed the right place in the plan.
+          atS: 34.35
+          durationS: 4.84
+        - text: The caboose's short trip became a real adventure in cooperation, helping the museum keep a big piece of railroad history for visitors like you.
+          atS: 39.8
+          durationS: 8.73

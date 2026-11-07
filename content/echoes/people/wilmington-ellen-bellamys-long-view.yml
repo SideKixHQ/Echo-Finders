@@ -10,7 +10,7 @@ at: { lat: 34.23598, lng: -77.94274 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 68
+durationS: 52
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -18,24 +18,82 @@ quality: 0.75
 tags: [wilmington, downtown]
 teaser: "Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back with the Tide."
 script: |
-  Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back with
-  the Tide. Her recollections became one source for understanding this household.
+  Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back
+  with the Tide. Her recollections became a source for understanding this household.
 
   A memoir gives us a person's perspective, not an impartial view of everyone who shared
   the setting. Her position within the family shaped what she noticed and how she
   described it.
 
-  Stand before the mansion and consider the reach of one life. A house built before the
-  Civil War could still be remembered by a resident in the twentieth century.
+  Stand before the mansion and consider the reach of a single life. A house built before
+  the Civil War could still be remembered by a resident in the twentieth century.
 
   Ellen's memories help connect those eras, but the museum's wider story also requires
-  records of enslaved workers, craftspeople, and others. Her voice is valuable when heard
-  as one voice among the people whose lives belonged to this place.
-editorial: draft
+  records of enslaved workers, craftspeople, and others. Her voice is valuable when
+  heard as a voice among the people whose lives belonged to this place.
+editorial: approved
 factCheck: single-source
+claims:
+  - says: "Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back with the Tide."
+    source: 1
+    quote: "In 1946, Ellen Douglass Bellamy passed away at the age of 94. Her memoir, published as Back with the Tide, was a reminiscence on her childhood."
+  - says: "Her recollections became a source for understanding this household."
+    source: 3
+    quote: "After the war, the Bellamy boys were sent to their respective schools except the two baby brothers [Chesley, born 1859 and Robert, born 1861], according to Ellen."
+  - says: "A house built before the Civil War could still be remembered by a resident in the twentieth century."
+    source: 1
+    quote: "She never married and lived at 503 Market from 1861 to 1946."
+  - says: "A house built before the Civil War"
+    source: 2
+    quote: "the 10,000-square-foot, twenty-two room mansion was constructed primarily by skilled, enslaved workers and local, free black artisans between 1859 and 1861."
+  - says: "the museum's wider story also requires records of enslaved workers, craftspeople, and others"
+    source: 2
+    quote: "the 10,000-square-foot, twenty-two room mansion was constructed primarily by skilled, enslaved workers and local, free black artisans between 1859 and 1861."
 sources:
   - title: "Ellen lina stewards of the bellamy house"
     publisher: "Bellamy Mansion Museum"
     url: https://www.bellamymansion.org/museum-blog/ellen-lina-stewards-of-the-bellamy-house
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+  - title: "The Place"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/the-place.html
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Museum blog"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/museum-blog
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-ellen-bellamys-long-view/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 51.9
+    audioBytes: 830945
+    transcript:
+      totalS: 51.9
+      lines:
+        - text: Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back with the Tide.
+          atS: 0
+          durationS: 7.22
+        - text: Her recollections became a source for understanding this household.
+          atS: 7.83
+          durationS: 3.55
+        - text: A memoir gives us a person's perspective, not an impartial view of everyone who shared the setting.
+          atS: 11.98
+          durationS: 5.7
+        - text: Her position within the family shaped what she noticed and how she described it.
+          atS: 18.29
+          durationS: 4.7
+        - text: Stand before the mansion and consider the reach of a single life.
+          atS: 23.68
+          durationS: 4.27
+        - text: A house built before the Civil War could still be remembered by a resident in the twentieth century.
+          atS: 29.07
+          durationS: 5.53
+        - text: Ellen's memories help connect those eras, but the museum's wider story also requires records of enslaved workers, craftspeople, and others.
+          atS: 35.29
+          durationS: 10.28
+        - text: Her voice is valuable when heard as a voice among the people whose lives belonged to this place.
+          atS: 46.17
+          durationS: 5.7

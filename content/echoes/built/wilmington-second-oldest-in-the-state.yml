@@ -8,13 +8,13 @@
 # about what the lodge did; this is the one fact it does not carry.
 id: wilmington-second-oldest-in-the-state
 title: "Second Oldest in the State"
-summary: "Only one Prince Hall lodge in North Carolina is older than this one, and none in Wilmington."
+summary: "Only one Black Masonic lodge in North Carolina is older than this one, and none in Wilmington."
 place: "Giblem Lodge, 19 North Eighth Street, Wilmington, North Carolina"
 at: { lat: 34.23691, lng: -77.93956 }
 triggerRadiusKm: 0.04
 category: built
 format: look-below
-durationS: 18
+durationS: 20
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -22,28 +22,59 @@ quality: 0.75
 tags: [wilmington, downtown]
 teaser: "Count the older ones on one finger."
 script: |
-  Look at the brick. This went up in eighteen seventy-three.
+  Look at the building. Its cornerstone was laid in eighteen seventy-one.
 
-  In the whole state, exactly one Prince Hall lodge is older than it. In Wilmington, none
+  In the whole state, exactly one Black Masonic lodge is older than it. In Wilmington, none
   is.
 
   Stay on the pavement if someone is using the door. It is still a working lodge, not a
   monument.
-editorial: draft
-factCheck: single-source
+editorial: approved
+factCheck: corroborated
 claims:
-  - says: "This went up in eighteen seventy-three."
+  - says: "Its cornerstone was laid in eighteen seventy-one."
     source: 1
-    quote: "Constructed in 1873, is the second oldest Prince Hall Masonic Lodge in North Carolina, and the oldest in Wilmington."
+    quote: "The cornerstone of Giblem Lodge was laid in 1871."
+  - says: "In the whole state, exactly one Black Masonic lodge is older than it."
+    source: 1
+    quote: "Giblem Lodge is the second-oldest Black Masonic Temple in the state"
   - says: "In Wilmington, none is."
-    source: 1
-    quote: "Constructed in 1873, is the second oldest Prince Hall Masonic Lodge in North Carolina, and the oldest in Wilmington."
-  - says: "In the whole state, exactly one Prince Hall lodge is older than it."
-    source: 1
-    quote: "Constructed in 1873, is the second oldest Prince Hall Masonic Lodge in North Carolina, and the oldest in Wilmington."
+    source: 2
+    quote: "Giblem Masonic Lodge (c. 1871), the first lodge for Blacks in the city and second oldest in the state"
 sources:
-  - title: "Local Historic Landmarks"
-    publisher: "City of Wilmington"
-    url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
-    retrievedAt: "2026-11-03"
+  - title: "Giblem Lodge"
+    publisher: "Historic Wilmington Foundation"
+    url: https://historicwilmington.org/giblem-lodge/
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+  - title: "War and Politics: A House Divided"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/museum-blog/war-and-politics-a-house-divided
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-second-oldest-in-the-state/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 20.1
+    audioBytes: 322707
+    transcript:
+      totalS: 20.1
+      lines:
+        - text: Look at the building.
+          atS: 0
+          durationS: 1.18
+        - text: Its cornerstone was laid in eighteen seventy-one.
+          atS: 1.3
+          durationS: 3.19
+        - text: In the whole state, exactly one Black Masonic lodge is older than it.
+          atS: 4.93
+          durationS: 4.68
+        - text: In Wilmington, none is.
+          atS: 10.22
+          durationS: 1.98
+        - text: Stay on the pavement if someone is using the door.
+          atS: 12.9
+          durationS: 2.81
+        - text: It is still a working lodge, not a monument.
+          atS: 16.09
+          durationS: 4.02

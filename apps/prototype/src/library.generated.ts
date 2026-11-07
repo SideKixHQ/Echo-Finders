@@ -10500,7 +10500,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 105,
+    "durationS": 61,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10508,22 +10508,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the windows of the main house.\n\nA longtime Bellamy volunteer described a story about a woman in grey, supposedly seen\nwandering its rooms.\n\nThe museum includes that account in its discussion of hauntings.\n\nIt also asks a revealing question: why do people so strongly want old houses to be\nhaunted?\n\nThe woman has not been established as a supernatural presence. The museum does not\nidentify her as a proven spirit of a particular resident.\n\nInstead, the story became attached to the house.\n\nLook at the windows again.\n\nFrom outside, you can see only part of each room. Reflections and shadows change what\nappears behind the glass.\n\nAn old house contains lives you cannot meet and rooms you cannot fully read from the\nstreet.\n\nThe lady in grey gives that uncertainty a human shape.\n\nBut the building’s documented history deserves attention too.\n\nThe legend is one story people tell about Bellamy.\n\nIt is not the whole story of the people who lived and worked here.\n",
+    "script": "Look at the windows of the main house.\n\nA longtime Bellamy volunteer described a story about a woman in grey, supposedly seen\nwandering its rooms.\n\nThe museum includes that account in its discussion of hauntings.\n\nIt also asks a revealing question: why do people so strongly want old houses to be\nhaunted?\n\nThe woman has not been established as a supernatural presence. The museum does not\nidentify her as a proven spirit of a particular resident.\n\nInstead, the story became attached to the house.\n\nLook at the windows again.\n\nFrom outside, you can see just part of each room. Reflections and shadows change what\nappears behind the glass.\n\nAn old house contains lives you cannot meet and rooms you cannot fully read from the\nstreet.\n\nThe lady in grey gives that uncertainty a human shape.\n\nBut the building’s documented history deserves attention too.\n\nThe legend is one story people tell about Bellamy.\n\nIt is not the whole story of the people who lived and worked here.\n",
     "teaser": "Look at the windows of the main house.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-lady-in-grey/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 61.3,
+        "audioBytes": 980993
+      }
+    ],
     "tags": [
       "wilmington",
       "ghosts"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-lady-in-grey",
-        "durationS": 105
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "the-last-movie",
@@ -11387,7 +11388,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "short",
-    "durationS": 68,
+    "durationS": 47,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11395,21 +11396,22 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "These gardens have different parts with different jobs. The museum identifies an\norchard, a kitchen garden, a rose garden, and an area recalling the historical use of\nmedicinal herbs.\n\nPeople planted useful things as well as beautiful things. A garden could help supply a\nhousehold, while another part offered a pleasant place to look and walk.\n\nStay on the paths with your grown-up. Do not pick or taste anything; a historical garden\nis a place to explore with your eyes.\n\nTry spotting the difference between a plant grown for its shape and an area arranged for\na practical purpose. The present gardens were designed to help visitors think about an\nearlier period. Their story shows that outdoor space, like a house, can contain several\nkinds of work.\n",
+    "script": "These gardens have different parts with different jobs. The museum identifies an\norchard, a kitchen garden, a rose garden, and an area recalling the historical use of\nmedicinal herbs.\n\nPeople planted useful things as well as beautiful things. A garden could help supply a\nhousehold, while another part offered a pleasant place to look and walk.\n\nStay on the paths with your grown-up. Do not pick or taste anything; a historical\ngarden is a place to explore with your eyes.\n\nTry spotting the difference between a plant grown for its shape and an area arranged\nfor a practical purpose. The present gardens were designed to help visitors think\nabout an earlier period. Their story shows that outdoor space, like a house, can\ncontain several kinds of work.\n",
     "teaser": "These gardens have different parts with different jobs.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/wilmington-a-garden-with-different-jobs/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 46.8,
+        "audioBytes": 749443
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/wilmington-a-garden-with-different-jobs",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-goodbye-in-a-living-garden",
@@ -11468,7 +11470,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 67,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11478,18 +11480,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "The old courthouse at this corner housed meetings of the Wilmington Council of Safety.\nIts members helped plan a political system to replace colonial authority.\n\nOpposition to Britain was only one part of the task. A different government would\nrequire organization: people agreeing on how public power could operate after the old\narrangements were challenged.\n\nThe building is gone, so let the intersection anchor the account rather than imagining a\nsurviving meeting room.\n\nStand safely beside the marker and look at the streets crossing here. Public life\nrequires connections as well as declarations. The council's work helped connect local\nresistance with the possibility of a new state government. On this site, the future was\nsomething people had to discuss and arrange, not merely announce.\n",
     "teaser": "The old courthouse at this corner housed meetings of the Wilmington Council of Safety.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-government-before-independence/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.1,
+        "audioBytes": 867308
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-government-before-independence",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-heart-to-heart-over-pizza",
@@ -11586,7 +11589,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "short",
-    "durationS": 71,
+    "durationS": 49,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11594,21 +11597,22 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The museum's big model layout takes you into the early 1950s, when steam locomotives and\ndiesel trains shared the railroad world.\n\nIts builders used coastal North Carolina history to create towns, tracks, industries,\nand moving trains. Parts of Wilmington are represented in miniature.\n\nFind a safe place beside the layout and look closely. A model is not the actual town\nshrunk by magic. People chose what to include and built the pieces to help tell a story.\n\nTry following one train with your eyes. Where does it go, and what does it pass? Then\nlook at the tiny buildings around it. The train needs the town, and the town needs\nconnections. This small world helps you notice relationships that can be harder to see\nwhen you are standing inside the real city.\n",
+    "script": "The museum's big model layout takes you into the early 1950s, when steam locomotives and\ndiesel trains shared the railroad world.\n\nIts builders used coastal North Carolina history to create towns, tracks, industries,\nand moving trains. Parts of Wilmington are represented in miniature.\n\nFind a safe place beside the layout and look closely. A model is not the actual town\nshrunk by magic. People chose what to include and built the pieces to help tell a story.\n\nTry following a train with your eyes. Where does it go, and what does it pass? Then\nlook at the tiny buildings around it. The train needs the town, and the town needs\nconnections. This small world helps you notice relationships that can be harder to see\nwhen you are standing inside the real city.\n",
     "teaser": "The museum's big model layout takes you into the early 1950s, when steam locomotives and diesel trains shared the railroad world.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/wilmington-a-little-town-in-the-1950s/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 49.1,
+        "audioBytes": 787060
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/wilmington-a-little-town-in-the-1950s",
-        "durationS": 71
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-memory-borrowed-from-the-cotton-exchange",
@@ -11668,7 +11672,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11676,20 +11680,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This museum did not begin with a building full of trains. Its early effort included a\nsingle display case and a table at Riverfest.\n\nThe foundation was chartered in 1979. Hazel Morse, Gerda Wooten, and Marguerite James\nled the effort to preserve Wilmington's railroad history after the railroad's major\ndeparture.\n\nA collection needed somewhere to grow, and the work expanded from those small\nbeginnings. The current museum is the outcome, not the setting of every early exhibit.\n\nStand near its entrance and consider how easily ordinary equipment becomes disposable\nonce a company moves on. Someone has to recognize its future value before that happens.\nThese organizers made the first modest display into a commitment: the railroad might\nleave, but its Wilmington story would still have a place.\n",
+    "script": "This museum did not begin with a building full of trains. Its early effort included a\nsingle display case and a table at Riverfest.\n\nThe foundation was chartered in 1979. Hazel Morse, Gerda Wooten, and Marguerite James\nled the effort. The railroad had left Wilmington, and they wanted to keep its history\nalive here.\n\nA collection needed somewhere to grow, and the work expanded from those small\nbeginnings. The current museum is the outcome, not the setting of every early exhibit.\n\nStand near its entrance and consider how easily ordinary equipment becomes disposable\nonce a company moves on. Someone has to recognize its future value before that happens.\nThese organizers turned a modest display into a commitment: the railroad could leave,\nbut its story here would still have a place.\n",
     "teaser": "This museum did not begin with a building full of trains.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-museum-begins-with-one-case/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55.4,
+        "audioBytes": 887370
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-museum-begins-with-one-case",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-museum-plays-an-art-school",
@@ -11749,7 +11754,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11757,20 +11762,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Cape Fear Museum began in 1898. In August 2026, it opened a new downtown home on Grace\nStreet.\n\nThe county's opening announcement describes more than four hundred artifacts alongside\nhistory and science galleries. The move placed the museum and a new main library on the\nsame downtown block.\n\nYou are at the new building, not the museum's earlier Market Street location. Its age\nbelongs to the institution; the structure before you is a recent chapter.\n\nThat contrast is the point of the stop. Old evidence does not need an old building to\nremain valuable. It needs care, context, and people willing to examine it. The museum's\nmove brings a long-running collection into a new setting where Wilmington can keep\nasking how its past connects with the present.\n",
+    "script": "Cape Fear Museum began in 1898. In August 2026, it opened a new downtown home on Grace\nStreet.\n\nThe county's opening announcement describes more than four hundred artifacts alongside\nhistory and science galleries. The move placed the museum and a new main library on the\nsame downtown block.\n\nYou are at the new building, not one of the museum's earlier homes. Its age belongs to\nthe institution; the structure before you is a recent chapter.\n\nThat contrast is the point of the stop. Old evidence does not need an old building to\nremain valuable. It needs care, context, and people willing to examine it. The museum's\nmove brings a long-running collection into a new setting where the city can keep asking\nhow its past connects with the present.\n",
     "teaser": "Cape Fear Museum began in 1898.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-new-home-for-old-evidence/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52.9,
+        "audioBytes": 847246
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-new-home-for-old-evidence",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-private-club-throws-a-marvel-party",
@@ -11829,7 +11835,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 66,
+    "durationS": 50,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11837,25 +11843,26 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Wilmington's tourism authority identifies this riverfront area as the Dawson's Creek\nlocation of Andie and Pacey's first kiss.\n\nThe romance was fiction. The place where the scene was filmed is real, and people can\nreturn to it after the cameras and actors have gone.\n\nStand on the public Riverwalk and look at what a production gained here: water, space,\nand a city backdrop that could become part of another town's screen identity.\n\nThat transformation is part of Wilmington's arts history. Filmmaking asks a real place\nto play a role. Once the episode reaches an audience, the setting can hold two meanings\nat once: an ordinary local walkway and a remembered moment in a television story. You\nare standing in the overlap.\n",
+    "script": "Wilmington's tourism authority identifies this riverfront area as the Dawson's Creek\nlocation of Andie and Pacey's first kiss.\n\nThe romance was fiction. The place where the scene was filmed is real, and people can\nreturn to it after the cameras and actors have gone.\n\nStand on the public Riverwalk and look at what a production gained here: water, space,\nand a city backdrop that could become part of another town's screen identity.\n\nThat transformation is part of the city's arts history. Filmmaking asks a real place\nto play a role. Once the episode reaches an audience, the setting can hold a double\nmeaning: an ordinary local walkway and a remembered moment in a television story. You\nare standing in the overlap.\n",
     "teaser": "Wilmington's tourism authority identifies this riverfront area as the Dawson's Creek location of Andie and Pacey's first kiss.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-real-riverwalk-an-invented-romance/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 50.4,
+        "audioBytes": 807122
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-real-riverwalk-an-invented-romance",
-        "durationS": 66
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-residence-becomes-a-museum",
     "title": "A Residence Becomes a Museum",
-    "summary": "Saving a building is only the beginning.",
+    "summary": "Saving a building is just the beginning.",
     "point": {
       "at": {
         "lat": 34.2355,
@@ -11866,7 +11873,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 69,
+    "durationS": 62,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11874,20 +11881,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Saving a building is only the beginning. Someone must decide what people will learn\ninside it.\n\nThe Colonial Dames acquired the Burgwin-Wright House in 1937. Its museum history\ndescribes decades of restoration and interpretation, including school visits and work on\nthe grounds.\n\nA residence built for private life gradually became a public encounter with colonial\nWilmington. Rooms, objects, jail remains, and gardens could be examined together instead\nof disappearing into separate collections.\n\nLook at the entrance. The change from home to museum altered who could cross that\nthreshold and why. Visitors now arrive to ask questions that the original owners did not\nintend the building to answer: about trade, confinement, domestic labor, and whose lives\nare easiest to recover. Preservation makes those questions possible; interpretation\nkeeps them open.\n",
-    "teaser": "Saving a building is only the beginning.",
+    "script": "Saving a building is just the beginning. Someone must decide what people will learn\ninside it.\n\nThe Colonial Dames acquired the Burgwin-Wright House in 1937. Its museum history\ndescribes decades of restoration and interpretation, including school visits and work\non the grounds.\n\nA residence built for private life gradually became a public encounter with colonial\nWilmington. Rooms, objects, jail remains, and gardens could be examined together\ninstead of disappearing into separate collections.\n\nLook at the entrance. The change from home to museum altered who could cross that\nthreshold and why. Visitors now arrive to ask questions that the original owners did\nnot intend the building to answer: about trade, confinement, domestic labor, and whose\nlives are easiest to recover. Preservation makes those questions possible;\ninterpretation keeps them open.\n",
+    "teaser": "Saving a building is just the beginning.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-a-residence-becomes-a-museum/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 62,
+        "audioBytes": 992278
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-a-residence-becomes-a-museum",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-restaurant-at-the-end-of-the-story",
@@ -12156,7 +12164,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 68,
+    "durationS": 62,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12164,25 +12172,26 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Alex Manly edited the Daily Record, Wilmington's Black-owned newspaper. In 1898, a white\nsupremacist campaign targeted his writing and made him a focus of threats.\n\nHe fled before the mob burned the newspaper's building during the coup. His departure\nwas a response to danger, not an admission that the attackers' claims were true.\n\nThis marker honors him near downtown's historic streets. The press building stood\nelsewhere, on Seventh Street.\n\nPause by his name. A newspaper editor works to make words public; a campaign of\nintimidation works to make that public voice disappear. Manly's story connects both\nacts. The paper's office was destroyed, but historical records preserve his identity and\nthe political attack directed against him. The marker returns a name to the city's\nvisible memory.\n",
+    "script": "Alex Manly edited the Daily Record, Wilmington's Black-owned newspaper. In 1898, the\nwhite supremacy campaign seized on an editorial he wrote and used it to inflame racial\ntensions.\n\nHe had already fled the city when a mob broke into the newspaper's office and fire\nconsumed its top floor during the coup. His departure\nwas a response to danger, not an admission that the attackers' claims were true.\n\nThis marker honors him near downtown's historic streets. The newspaper's office, in Free\nLove Hall, stood elsewhere in the city.\n\nPause by his name. A newspaper editor works to make words public; a campaign of\nintimidation works to make that public voice disappear. Manly's story connects both\nacts. The paper's office was destroyed, but historical records preserve his identity and\nthe political attack directed against him. The marker returns a name to the city's\nvisible memory.\n",
     "teaser": "Alex Manly edited the Daily Record, Wilmington's Black-owned newspaper.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-alex-manlys-voice/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 62.2,
+        "audioBytes": 996039
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-alex-manlys-voice",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-art-in-the-old-lodge",
     "title": "Art in the Old Lodge",
-    "summary": "In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge on this block.",
+    "summary": "A community movement founded St. John's Art Gallery here, in the oldest Masonic lodge in the state.",
     "point": {
       "at": {
         "lat": 34.23268,
@@ -12193,7 +12202,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 64,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12201,20 +12210,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge\non this block.\n\nArtists and supporters wanted Wilmington to have a place to encounter visual art. The\ninstitution grew into the museum that later moved to its present Cameron Art Museum\nlocation outside downtown.\n\nThe downtown buildings gained another use: the Children's Museum acquired the complex in\n2004. You are at the earlier art-museum setting, not Cameron Art Museum today.\n\nLook at the old buildings from Orange Street. Their cultural work has changed, but the\nimpulse remains recognizable: make spaces where people can look, learn, and try\nsomething new. The art gallery's beginnings belong here, even though the institution\ncontinued its journey elsewhere.\n",
-    "teaser": "In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge on this block.",
+    "script": "Forty years after the painter Elisabeth Chant arrived in Wilmington, a community movement\nfounded St. John's Art Gallery here, in the oldest Masonic lodge in the state.\n\nArtists and supporters wanted Wilmington to have a place to encounter visual art. The\ninstitution grew into the museum that later moved to its present Cameron Art Museum\nlocation outside downtown.\n\nThe downtown buildings gained another use: the Children's Museum acquired the complex in\n2004. You are at the earlier art-museum setting, not Cameron Art Museum today.\n\nLook at the old buildings from Orange Street. Their cultural work has changed, but the\nimpulse remains recognizable: make spaces where people can look, learn, and try\nsomething new. The art gallery's beginnings belong here, even though the institution\ncontinued its journey elsewhere.\n",
+    "teaser": "A community movement founded St. John's Art Gallery here, in the oldest Masonic lodge in the state.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-art-in-the-old-lodge/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.7,
+        "audioBytes": 876503
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-art-in-the-old-lodge",
-        "durationS": 64
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-before-streaming-this-door",
@@ -12273,7 +12283,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12281,20 +12291,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The present church replaced an earlier building, but some of the earlier church came\nwith it.\n\nSt. James's history says bricks from the first church were reused after its demolition\nin 1839. The new church was consecrated in 1840. It also records that the original\nbuilding had used bricks brought to the port as ship ballast.\n\nThose details turn a wall into a sequence of journeys: material arriving by water,\nserving one building, then serving another.\n\nLook from the sidewalk rather than touching or inspecting the masonry. You cannot\nidentify every brick's past by sight. The documented reuse is enough to change how you\nread the surface. What seems like one architectural moment may contain material from\nanother. Wilmington rebuilt here without starting entirely from nothing.\n",
+    "script": "The present church replaced an earlier building, but some of the earlier church came\nwith it.\n\nSt. James's history says bricks from the first church were reused after its demolition\nin 1839. The new church was consecrated in 1840. It also records that the original\nbuilding had used bricks brought to the port as ship ballast.\n\nThose details turn a wall into a sequence of journeys: material arriving by water,\nserving a building, then serving another.\n\nLook from the sidewalk rather than touching or inspecting the masonry. You cannot\nidentify every brick's past by sight. The documented reuse is enough to change how you\nread the surface. What seems like a single architectural moment can contain material\nfrom an earlier building. Wilmington rebuilt here without starting entirely from nothing.\n",
     "teaser": "The present church replaced an earlier building, but some of the earlier church came with it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-bricks-that-crossed-two-churches/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55.3,
+        "audioBytes": 885280
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-bricks-that-crossed-two-churches",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-calling-home-before-a-pocket-phone",
@@ -12310,7 +12321,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "short",
-    "durationS": 68,
+    "durationS": 44,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12318,21 +12329,22 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Imagine needing to call home without a phone in your pocket. This museum has a restored\nwartime-era telephone booth with a vintage phone inside.\n\nThe booth gives you a small space where one person could stand or sit and make a call. A\npublic telephone was something you went to, rather than something that followed you\neverywhere.\n\nLook at the phone with your grown-up. It may have parts that seem unfamiliar because the\nway people placed calls has changed.\n\nThe object belongs in a building that welcomed people far from home during the Second\nWorld War. We cannot say who used this particular phone for every conversation. We can\nunderstand why a call mattered: a familiar voice could connect someone here with people\nwaiting somewhere else.\n",
+    "script": "Imagine needing to call home without a phone in your pocket. This museum has a restored\nwartime-era telephone booth with a vintage phone inside.\n\nThe booth gives you a small space where a person could stand or sit and make a call. A\npublic telephone was something you went to, rather than something that followed you\neverywhere.\n\nLook at the phone with your grown-up. Some of its parts might look strange to you,\nbecause the way people make calls has changed.\n\nThe object belongs in a building that welcomed people far from home during the Second\nWorld War. We cannot say who used this particular phone for every conversation. We can\nunderstand why a call mattered: a familiar voice could connect someone here with people\nwaiting somewhere else.\n",
     "teaser": "Imagine needing to call home without a phone in your pocket.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/wilmington-calling-home-before-a-pocket-phone/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 43.7,
+        "audioBytes": 699706
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/wilmington-calling-home-before-a-pocket-phone",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-capeside-high-was-a-university",
@@ -12429,7 +12441,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 68,
+    "durationS": 58,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12437,20 +12449,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Claude Howell helped advocate for a stronger visual-arts life in Wilmington. In 1962, he\nsupported the movement that established St. John's Art Gallery here.\n\nThe Cameron Art Museum's history records his call for the community to encounter\nimportant art from the past and present. He wanted local audiences to have wider\nopportunities to look and learn.\n\nWe do not need to reproduce his letter to understand the action behind it. Advocacy\nhelped turn a hope into an institution.\n\nLook at the earlier museum complex from Orange Street. Howell's role connected making\nart with building an audience for it. A city's cultural life depends on both. The\ngallery gave that argument rooms and a public address, allowing an artistic ambition to\nbecome something visitors could actually enter.\n",
+    "script": "Claude Howell helped advocate for a stronger visual-arts life in Wilmington. In 1962, he\nwrote to the local paper, and he was part of the community movement that founded St.\nJohn's Art Gallery here.\n\nThe Cameron Art Museum's history records his call for the community to encounter\nimportant art from the past and present. He wanted local audiences to have wider\nopportunities to look and learn.\n\nWe do not need to reproduce his letter to understand the action behind it. Advocacy\nhelped turn a hope into an institution.\n\nLook at the earlier museum complex from Orange Street. Howell's role connected making\nart with building an audience for it. A city's cultural life depends on both. The\ngallery gave that argument rooms and a public address, allowing an artistic ambition to\nbecome something visitors could actually enter.\n",
     "teaser": "Claude Howell helped advocate for a stronger visual-arts life in Wilmington.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-claude-howell-asks-for-more-art/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 58.4,
+        "audioBytes": 935853
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-claude-howell-asks-for-more-art",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-cornelius-harnett-at-the-council-table",
@@ -12466,7 +12479,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 67,
+    "durationS": 59,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12474,25 +12487,26 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Cornelius Harnett helped lead revolutionary political organization in the Cape Fear\nregion. The Wilmington Council of Safety met at the old courthouse on this corner.\n\nThat work involved more than opposing Britain. A new political system required people to\ndiscuss how authority would operate after the old one was challenged.\n\nThe courthouse is gone, but the site gives Harnett's role a local setting. This is an\nassociated meeting place, not a claim that his entire career unfolded at one\nintersection.\n\nStand beside the marker and consider the difference between declaring a principle and\narranging a government. Both require action. Harnett's public life connected those\ndemands, helping the region move from resistance toward new institutions. The corner\npreserves the setting of that practical political work.\n",
+    "script": "Cornelius Harnett helped lead revolutionary political organization in the Cape Fear\nregion. The Wilmington Council of Safety met at the old courthouse on this corner.\n\nThat work involved more than opposing Britain. A new political system required people to\ndiscuss how authority would operate after the old order was challenged.\n\nThe courthouse is gone, but the site gives Harnett's role a local setting. This is an\nassociated meeting place, not a claim that his entire career unfolded at a single\nintersection.\n\nStand beside the marker and consider the difference between declaring a principle and\narranging a government. Both require action. Harnett's public life connected those\ndemands, helping the region move from resistance toward new institutions. The corner\npreserves the setting of that practical political work.\n",
     "teaser": "Cornelius Harnett helped lead revolutionary political organization in the Cape Fear region.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-cornelius-harnett-at-the-council-table/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 59,
+        "audioBytes": 945466
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-cornelius-harnett-at-the-council-table",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-eight-buildings-one-new-use",
     "title": "Eight Buildings, One New Use",
-    "summary": "The Cotton Exchange is described as a complex of eight interconnected historic buildings.",
+    "summary": "The Cotton Exchange is eight restored buildings joined by open-air courtyards.",
     "point": {
       "at": {
         "lat": 34.23946,
@@ -12503,7 +12517,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 69,
+    "durationS": 51,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12511,20 +12525,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The Cotton Exchange is described as a complex of eight interconnected historic\nbuildings. That explains why it does not behave like one purpose-built shopping center.\n\nIts present use asks visitors to move through spaces that began with different\ncommercial roles. Floors and passageways preserve some of that uneven history.\n\nStand where a public passage turns or changes level. The interesting question is not\nsimply how old the brick might be. It is how several old buildings were made useful\ntogether.\n\nThis kind of reuse keeps the city legible. You can buy something in a contemporary shop\nand still notice that the setting was shaped by an earlier port economy. The present\nactivity does not erase the past; it gives you a reason to encounter it at walking\nspeed.\n",
-    "teaser": "The Cotton Exchange is described as a complex of eight interconnected historic buildings.",
+    "script": "The Cotton Exchange is eight restored buildings joined by open-air courtyards. That\nexplains why it does not behave like a purpose-built shopping center.\n\nIts present use asks visitors to move through spaces that began with different\ncommercial roles. Floors and passageways preserve some of that uneven history.\n\nStand where a public passage turns or changes level. The interesting question is not\nsimply how old the brick might be. It is how several old buildings were made useful\ntogether.\n\nThis kind of reuse keeps the city legible. You can buy something in a contemporary shop\nand still notice that the setting was shaped by an earlier port economy. The present\nactivity does not erase the past; it gives you a reason to encounter it at walking\nspeed.\n",
+    "teaser": "The Cotton Exchange is eight restored buildings joined by open-air courtyards.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-eight-buildings-one-new-use/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 50.5,
+        "audioBytes": 808794
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-eight-buildings-one-new-use",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-elisabeth-chant-makes-a-studio",
@@ -12578,7 +12593,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 68,
+    "durationS": 52,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12586,20 +12601,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St.\nJames in 1848. The house built four years later became their family residence.\n\nHer local background complicates the idea of the house as simply the achievement of a\nmerchant who arrived from elsewhere. Family relationships tied it to a city that already\nhad its own networks and histories.\n\nStand outside the home and consider what is left unnamed when a household is introduced\nonly by its male owner. A marriage and a family are not incidental to a residence's\nmeaning.\n\nElizabeth's story supplies a different connection between the building and Wilmington.\nThe house represented shared family life, shaped by her place in the community as well\nas her husband's commercial career.\n",
+    "script": "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St.\nJames in 1848. The house built four years later became their family residence.\n\nHer local background complicates the idea of the house as simply the achievement of a\nmerchant who arrived from elsewhere. Family relationships tied it to a city that already\nhad its own networks and histories.\n\nStand outside the home and consider what is left unnamed when a household is introduced\nby its male owner alone. A marriage and a family are not incidental to a residence's\nmeaning.\n\nHer story supplies a different connection between the building and the city. The house\nrepresented shared family life, shaped by her place in the community as well as her\nhusband's commercial career.\n",
     "teaser": "Elizabeth Savage was born into a Wilmington family and married Zebulon Latimer at St. James in 1848.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-elizabeth-savage-latimers-wilmington/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 51.5,
+        "audioBytes": 825930
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-elizabeth-savage-latimers-wilmington",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-ellen-bellamys-long-view",
@@ -12615,7 +12631,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 68,
+    "durationS": 52,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12623,20 +12639,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back with\nthe Tide. Her recollections became one source for understanding this household.\n\nA memoir gives us a person's perspective, not an impartial view of everyone who shared\nthe setting. Her position within the family shaped what she noticed and how she\ndescribed it.\n\nStand before the mansion and consider the reach of one life. A house built before the\nCivil War could still be remembered by a resident in the twentieth century.\n\nEllen's memories help connect those eras, but the museum's wider story also requires\nrecords of enslaved workers, craftspeople, and others. Her voice is valuable when heard\nas one voice among the people whose lives belonged to this place.\n",
+    "script": "Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back\nwith the Tide. Her recollections became a source for understanding this household.\n\nA memoir gives us a person's perspective, not an impartial view of everyone who shared\nthe setting. Her position within the family shaped what she noticed and how she\ndescribed it.\n\nStand before the mansion and consider the reach of a single life. A house built before\nthe Civil War could still be remembered by a resident in the twentieth century.\n\nEllen's memories help connect those eras, but the museum's wider story also requires\nrecords of enslaved workers, craftspeople, and others. Her voice is valuable when\nheard as a voice among the people whose lives belonged to this place.\n",
     "teaser": "Ellen Bellamy lived into 1946 and left a memoir of her childhood, published as Back with the Tide.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-ellen-bellamys-long-view/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 51.9,
+        "audioBytes": 830945
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-ellen-bellamys-long-view",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-fords-other-opera-house",
@@ -12652,7 +12669,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 67,
+    "durationS": 59,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12660,20 +12677,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "John T. Ford, associated with Ford's Theatre in Washington, leased this Wilmington\ntheater from 1867 to 1871. During his tenure, it was called the Opera House.\n\nThe connection can surprise visitors who know Ford's name only through Abraham Lincoln's\nassassination. This story concerns his theatrical business in Wilmington, not a claim\nthat the Washington crime happened here.\n\nNames and management changed while the local building continued hosting entertainment.\nIts history reaches through people whose careers crossed several cities.\n\nLook at the entrance and imagine a playbill announcing the Opera House rather than\nThalian Hall. A different title could mark a different business strategy without moving\nthe stage. The theater's long life includes those shifts: familiar walls, new operators,\nand another invitation to an audience.\n",
+    "script": "John T. Ford, associated with Ford's Theatre in Washington, leased this Wilmington\ntheater from 1867 to 1871. During his tenure, it was called the Opera House.\n\nThe connection can surprise visitors who know Ford's name only through Abraham Lincoln's\nassassination. This story concerns his theater business here, not a claim that the\ncrime in the capital happened in this building.\n\nNames and management changed while the local building continued hosting entertainment.\nIts history reaches through people whose careers crossed several cities.\n\nLook at the entrance and imagine a playbill announcing the Opera House rather than\nThalian Hall. A different title could mark a different business strategy without moving\nthe stage. The theater's long life includes those shifts: familiar walls, new operators,\nand another invitation to an audience.\n",
     "teaser": "John T. Ford, associated with Ford's Theatre in Washington, leased this Wilmington theater from 1867 to 1871.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-fords-other-opera-house/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 59,
+        "audioBytes": 944630
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-fords-other-opera-house",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-fourteen-rooms-on-third-street",
@@ -12689,7 +12707,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 69,
+    "durationS": 58,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12697,25 +12715,26 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The Latimer house was built in 1852 for Zebulon and Elizabeth Latimer. Its fourteen\nrooms offered an unusually substantial home in the growing port city.\n\nThe museum identifies the design as Italianate, with symmetry and a central-hall\narrangement. What looks like a single handsome facade held a complicated household\nbehind it.\n\nStand where you can see the windows without blocking the sidewalk. Their orderly spacing\ninvites you to read the house as a finished composition. Daily life would have been less\norderly: family responsibilities, domestic work, business pressures, and change across\ngenerations.\n\nThe museum's surviving furnishings and objects connect that exterior pattern to\nparticular lives. The building gives them a setting. From outside, the first clue is\nscale: enough rooms to make a family home a small working world.\n",
+    "script": "The Latimer house was built in 1852 for Zebulon and Elizabeth Latimer. Its fourteen\nrooms made a substantial home in the growing port city.\n\nThe museum identifies the design as Italianate, with symmetry and a central-hall\narrangement. What looks like a single handsome facade held a complicated household\nbehind it.\n\nStand where you can see the windows without blocking the sidewalk. Their orderly spacing\ninvites you to read the house as a finished composition. Daily life would have been less\norderly: family responsibilities, domestic work, business pressures, and change across\ngenerations.\n\nThe museum's surviving furnishings and objects connect that exterior pattern to\nparticular lives. The building gives them a setting. From outside, the first clue is\nscale: enough rooms to make a family home a small working world.\n",
     "teaser": "The Latimer house was built in 1852 for Zebulon and Elizabeth Latimer.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-fourteen-rooms-on-third-street/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 57.6,
+        "audioBytes": 923314
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-fourteen-rooms-on-third-street",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-fred-in-the-storeroom",
     "title": "Fred in the Storeroom",
-    "summary": "A ghost tour tells of Fred, who turns up in the Cotton Exchange storerooms and is gone before he can help.",
+    "summary": "A Wilmington ghost story tells of Fred, who turns up in a Cotton Exchange storeroom and is gone before he can help.",
     "point": {
       "at": {
         "lat": 34.23979,
@@ -12726,7 +12745,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 74,
+    "durationS": 56,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12734,27 +12753,28 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The Cotton Exchange has the right ingredients for a ghost story: connected old\nbuildings, changing levels, and passages where somebody can disappear from view.\n\nA published account of a Wilmington ghost tour tells of Fred, a tall, dark-haired\napparition associated with Paddy's Hollow. In that version, a manager encountered him in\na storage room. He seemed ready to offer help, then vanished.\n\nThe encounter is a reported legend, not a verified event. We cannot establish that the\nmanager saw a ghost, or identify an actual dead person behind the name Fred.\n\nWhat makes the story memorable is its almost ordinary beginning. A person appears in a\nworkplace and behaves like someone who belongs there. Only the ending breaks the\npattern. From the public entrance, imagine the moment between recognizing a stranger and\nrealizing there is nobody left to recognize.\n",
+    "script": "This old shopping complex has the right ingredients for a ghost story: connected\nbuildings, stairs, and passages where somebody can disappear from view.\n\nA published account of Wilmington ghost stories tells of Fred, a tall, dark-haired\napparition associated with Paddy's Hollow. In that version, a manager encountered him in\na storage room. He seemed ready to offer help, then vanished.\n\nThe encounter is a reported legend, not a verified event. We cannot establish that the\nmanager saw a ghost, or identify an actual dead person behind the name.\n\nWhat makes the story memorable is its almost ordinary beginning. A person appears in a\nworkplace and behaves like someone who belongs there. The ending alone breaks the\npattern. From the public entrance, imagine the moment between recognizing a stranger and\nrealizing there is nobody left to recognize.\n",
     "teaser": "He looked ready to help, then he was not there.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/wilmington-fred-in-the-storeroom/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 56.1,
+        "audioBytes": 899491
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/wilmington-fred-in-the-storeroom",
-        "durationS": 74
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-giblem-lodge-holds-a-community",
     "title": "Giblem Lodge Holds a Community",
-    "summary": "Built in 1873, Giblem Lodge is a surviving place of Black community organization in Wilmington.",
+    "summary": "Giblem Lodge's cornerstone was laid in 1871, and it survives as a place of Black community organization in Wilmington.",
     "point": {
       "at": {
         "lat": 34.23697,
@@ -12765,7 +12785,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 68,
+    "durationS": 66,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12773,20 +12793,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Built in 1873, Giblem Lodge is a surviving place of Black community organization in\nWilmington. The city's landmark account emphasizes its roles as a gathering space and\nsource of support.\n\nA lodge building can be easy to overlook beside more famous mansions. Yet institutions\nlike this helped people assemble, maintain networks, and exercise independence.\n\nStay on the public sidewalk. You can recognize that history without entering an active\norganization's space.\n\nThe important architectural fact is survival in place. A building associated with\ncollective activity remains here to counter the idea that Wilmington's past belonged\nonly to prominent individual owners. This landmark preserves evidence of people\norganizing for one another. Its walls held a community, and its continued presence gives\nthat community's history a downtown address.\n",
-    "teaser": "Built in 1873, Giblem Lodge is a surviving place of Black community organization in Wilmington.",
+    "script": "Giblem Lodge's cornerstone was laid in 1871, and it survives as a place of Black community\norganization in Wilmington. The Historic Wilmington Foundation describes it as a\ncommunity hub and meeting hall. Wilmington's City Council has given it local landmark status.\n\nA lodge building can be easy to overlook beside more famous mansions. Yet institutions\nlike this helped people assemble, maintain networks, and exercise independence.\n\nStay on the public sidewalk. You can recognize that history without entering an active\norganization's space.\n\nThe important architectural fact is survival in place. A building associated with\ncollective activity remains here to counter the idea that Wilmington's past belonged\nsolely to prominent individual owners. This landmark preserves evidence of people\norganizing for each other. Its walls held a community, and its continued presence gives\nthat community's history a downtown address.\n",
+    "teaser": "Giblem Lodge's cornerstone was laid in 1871, and it survives as a place of Black community organization in Wilmington.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-giblem-lodge-holds-a-community/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 66,
+        "audioBytes": 1057061
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-giblem-lodge-holds-a-community",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-guy-nixon-and-the-water-tank",
@@ -12840,7 +12861,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 66,
+    "durationS": 52,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12850,18 +12871,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Hannah Block entertained wartime service members by singing and playing piano. The\nbuilding that carries her name preserves that connection, including a piano identified\nwith her performances.\n\nThe center was rededicated in her honor in 2006. A volunteer's contribution became part\nof the place's public identity.\n\nIf you can visit the open museum area, look at the instrument without touching it. Its\nsignificance comes from use: someone sat here to offer music and company during a\ndifficult period.\n\nBlock's story brings a large wartime account down to a human scale. An evening's\nentertainment required a person willing to provide it. The name over the door remembers\nthat practical generosity, while the preserved instrument gives it a concrete form you\ncan see.\n",
     "teaser": "Hannah Block entertained wartime service members by singing and playing piano.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-hannah-block-at-the-piano/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52.3,
+        "audioBytes": 838469
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-hannah-block-at-the-piano",
-        "durationS": 66
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-harry-fordens-name-on-the-bridge",
@@ -12915,7 +12937,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 67,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12923,20 +12945,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The MacRae house was built in 1901 and designed by Henry Bacon, the architect later\nassociated with the Lincoln Memorial in Washington.\n\nSt. James acquired the house in 1955, and it serves parish offices. Its local history\ntherefore combines domestic design with a later institutional role.\n\nStand on the public sidewalk. The Washington connection is about the architect, not a\nclaim that this house was a model for the memorial.\n\nA famous commission can overshadow an architect's smaller work. This stop restores the\nsmaller scale: rooms intended for daily life rather than a national monument. Bacon's\ncareer reached both kinds of building. Downtown Wilmington retains a place where his\ndesign work met an ordinary urban household and, later, the needs of a parish.\n",
+    "script": "The MacRae house was built in 1901 and designed by Henry Bacon, the architect later\nassociated with the Lincoln Memorial in Washington.\n\nSt. James acquired the house in 1955, and it serves parish offices. Its local history\ntherefore combines domestic design with a later institutional role.\n\nStand on the public sidewalk. The link to the memorial is about the architect, not a\nclaim that this house was a model for it.\n\nA famous commission can overshadow an architect's smaller work. This stop restores the\nsmaller scale: rooms intended for daily life rather than a national monument. Bacon's\ncareer reached both kinds of building. Downtown still has a place where his\ndesign work met an ordinary urban household and, later, the needs of a parish.\n",
     "teaser": "The MacRae house was built in 1901 and designed by Henry Bacon, the architect later associated with the Lincoln Memorial in Washington.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-henry-bacons-smaller-building/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53.5,
+        "audioBytes": 863128
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-henry-bacons-smaller-building",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-henry-taylors-skilled-hands",
@@ -12952,7 +12975,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 67,
+    "durationS": 57,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12960,20 +12983,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Henry Taylor was a carpenter and builder who worked on the Bellamy project. His career\ncontinued after emancipation and included other Wilmington buildings and community\nactivity.\n\nThe museum identifies him among the Black craftspeople whose skill made the mansion\npossible. The owner's surname on the building can otherwise make the builders disappear\nfrom its story.\n\nLook at the exterior from the sidewalk. Plans only become walls, floors, and finished\ndetails when people know how to execute them.\n\nTaylor's work reminds us to connect an impressive residence with the expertise it\nrequired. His name belongs in the account of this place, alongside its architect and\nowners. A building can preserve craftsmanship for generations while concealing the\ncraftsperson. Historical research makes the person visible again.\n",
+    "script": "Henry Taylor was a carpenter and builder who worked on the Bellamy project. His career\ncontinued after emancipation and included other Wilmington buildings and community\nactivity.\n\nThe museum identifies him among the Black craftspeople whose skill made the mansion\npossible. The owner's surname on the building can otherwise make the builders disappear\nfrom its story.\n\nLook at the exterior from the sidewalk. A plan does not become walls, floors, and\nfinished details until people know how to execute it.\n\nTaylor's work reminds us to connect an impressive residence with the expertise it\nrequired. His name belongs in the account of this place, alongside its architect and\nowners. A building can preserve craftsmanship for generations while concealing the\ncraftsperson. Historical research makes the person visible again.\n",
     "teaser": "Henry Taylor was a carpenter and builder who worked on the Bellamy project.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-henry-taylors-skilled-hands/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 56.7,
+        "audioBytes": 907432
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-henry-taylors-skilled-hands",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-j-allen-kirk-kept-a-record",
@@ -13027,7 +13051,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 66,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13035,20 +13059,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "James F. Post designed the Bellamy mansion with assistant architect Rufus Bunnell. Their\nwork had to turn a wealthy client's ambitions into a building that could function in\nWilmington's climate.\n\nThe museum points to deliberate choices involving daylight and ventilation. Architecture\nhere was a practical arrangement as well as a display of status.\n\nFrom the sidewalk, trace the building upward. Different parts serve different purposes,\neven when the whole facade looks like one confident gesture.\n\nPost's name gives the design a human author. The house did not simply emerge from a\nfashionable style; people made choices about proportions, rooms, and use. Those choices\nstill shape what you can see. The builders' labor then transformed the design into the\nsurviving structure before you.\n",
+    "script": "James Post designed the Bellamy mansion with his assistant architect, Rufus Bunnell. Their\nwork had to turn a wealthy client's ambitions into a building that could function in\nWilmington's climate.\n\nThe museum points to deliberate choices involving daylight and ventilation. Architecture\nhere was a practical arrangement as well as a display of status.\n\nFrom the sidewalk, trace the building upward. Different parts serve different purposes,\neven when the whole facade looks like a single confident gesture.\n\nPost's name gives the design a human author. The house did not simply emerge from a\nfashionable style; people made choices about proportions, rooms, and use. Those choices\nstill shape what you can see. The builders' labor then transformed the design into the\nsurviving structure before you.\n",
     "teaser": "James F. Post designed the Bellamy mansion with assistant architect Rufus Bunnell.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-james-posts-practical-design/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55.2,
+        "audioBytes": 884444
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-james-posts-practical-design",
-        "durationS": 66
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-joshua-wright-buys-a-downtown-home",
@@ -13064,7 +13089,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 66,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13072,20 +13097,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Joshua Grainger Wright purchased this house in 1799. His family supplied the second\nsurname by which the museum is known today.\n\nWright became a judge, and the house entered a new household's history. Its earlier\nconnection with John Burgwin remained in the building even as ownership changed.\n\nStand at the corner and listen to the two names together: Burgwin and Wright. A compound\nname can compress decades into something that sounds like a single identity.\n\nThe purchase was a turning point rather than a minor footnote. A new owner meant new\nfamily routines and later adaptations, while the old jail remains stayed underneath.\nWright's arrival shows how a landmark accumulates its identity. The building survived\none owner by becoming meaningful to another.\n",
+    "script": "Joshua Grainger Wright purchased this house in 1799. His family gave the museum the\nname it carries after the hyphen.\n\nWright became a judge, and the house entered a new household's history. Its earlier\nconnection with John Burgwin remained in the building even as ownership changed.\n\nStand at the corner and listen to the names together: Burgwin and Wright. A compound\nname can compress decades into something that sounds like a single identity.\n\nThe purchase was a turning point rather than a minor footnote. A new owner meant new\nfamily routines and later adaptations, while the old jail remains stayed underneath.\nWright's arrival shows how a landmark accumulates its identity. The building passed\nfrom its builder to a new family and took on meaning for them too.\n",
     "teaser": "Joshua Grainger Wright purchased this house in 1799.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-joshua-wright-buys-a-downtown-home/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52.6,
+        "audioBytes": 843066
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-joshua-wright-buys-a-downtown-home",
-        "durationS": 66
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-listening-behind-the-jail-walls",
@@ -13101,7 +13127,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 71,
+    "durationS": 61,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13109,22 +13135,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The elegant house above you was built in 1770 over remains of Wilmington's earlier jail.\nThat combination has drawn more than architectural curiosity.\n\nThe Ghost Guild records a paranormal investigation here in March 2018, including a\nbedroom recording session described as an attempt to capture electronic voice phenomena.\nSuch recordings are interpreted by enthusiasts as possible voices, but they do not\nestablish that spirits exist.\n\nThere is a documented investigation and an interpretation. Those are different things.\n\nFrom the sidewalk, consider how much expectation changes listening. A creak in a new\nbuilding may pass unnoticed. The same creak above old cells can become the beginning of\na story. The house's real history supplies the weight; the haunting remains an\nunanswered claim. You can enjoy that uncertainty without pretending it has been solved.\n",
+    "script": "The elegant house above you was built in 1770 over remains of Wilmington's earlier jail.\nThat combination has drawn more than architectural curiosity.\n\nThe Ghost Guild records a paranormal investigation here in March 2018, including a\nbedroom recording session described as an attempt to capture electronic voice phenomena.\nSuch recordings are interpreted by enthusiasts as possible voices, but they do not\nestablish that spirits exist.\n\nThere is a documented investigation and an interpretation. Those are different things.\nThe haunting is a legend, and it has not been proven.\n\nFrom the sidewalk, consider how much expectation changes listening. In a new building, a\ncreak might pass unnoticed. The same creak above old cells can become the beginning of\na story. The house's real history supplies the weight; the haunting remains an\nunanswered claim. You can enjoy that uncertainty without pretending it has been solved.\n",
     "teaser": "The elegant house above you was built in 1770 over remains of Wilmington's earlier jail.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/wilmington-listening-behind-the-jail-walls/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 61.1,
+        "audioBytes": 978067
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/wilmington-listening-behind-the-jail-walls",
-        "durationS": 71
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-meg-at-the-old-waterfront",
@@ -13140,7 +13167,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 70,
+    "durationS": 47,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13148,22 +13175,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This waterfront once belonged as much to sailors and taverns as to strolling visitors.\nOne of its surviving legends concerns a formidable woman known as Gallus Meg.\n\nLocal ghost-tour tradition associates her with the old Blue Post tavern and says her\npresence lingered after death. The historic tavern in this tale should not be confused\nwith another business that now uses the Blue Post name.\n\nMeg's reputation belongs to folklore. The reported haunting is not proof that a spirit\noccupies a building, and the more lurid versions should not be mistaken for a documented\ncriminal biography.\n\nStand by the public street and let the river supply the atmosphere. A working port\nbrings strangers together, then sends them away. Meg's story reverses that pattern: one\nwaterfront character, storytellers suggest, never quite left.\n",
+    "script": "This waterfront once belonged as much to sailors and taverns as to strolling visitors.\nOne of its surviving legends concerns a formidable woman known as Gallus Meg.\n\nLocal ghost-tour tradition associates her with the old Blue Post tavern and says her\npresence lingered after death.\n\nMeg's reputation belongs to folklore. The reported haunting is not proof that a spirit\noccupies a building, and the more lurid versions should not be mistaken for a\ndocumented criminal biography.\n\nStand by the public street and let the river supply the atmosphere. A working port\nbrings strangers together, then sends them away. Meg's story reverses that pattern:\none waterfront character, storytellers suggest, never quite left.\n",
     "teaser": "This waterfront once belonged as much to sailors and taverns as to strolling visitors.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/wilmington-meg-at-the-old-waterfront/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 46.6,
+        "audioBytes": 746936
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/wilmington-meg-at-the-old-waterfront",
-        "durationS": 70
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-north-carolinas-first-synagogue-building",
@@ -13179,7 +13207,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 70,
+    "durationS": 58,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13189,18 +13217,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Dedicated in 1876, Wilmington's Temple of Israel is recognized as North Carolina's first\nJewish house of worship.\n\nThe congregation describes its building as Moorish Revival, a style used by synagogues\nin Europe and the United States during that period.\n\nThe corner therefore carries two stories together: a community establishing a permanent\nworship space and a design expressing that presence publicly.\n\nRemain on the sidewalk unless the congregation has authorized a visit. Its historical\nsignificance does not change its role as an active religious site.\n\nLook at how the building addresses Market Street. It belongs to Wilmington's streetscape\nwhile retaining a distinctive identity. The milestone is not simply that construction\nfinished. A Jewish congregation secured a place where its life could continue across\ngenerations in the city.\n",
     "teaser": "Dedicated in 1876, Wilmington's Temple of Israel is recognized as North Carolina's first Jewish house of worship.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-north-carolinas-first-synagogue-building/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 58.2,
+        "audioBytes": 932927
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-north-carolinas-first-synagogue-building",
-        "durationS": 70
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-one-parish-many-screen-worlds",
@@ -13304,7 +13333,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 68,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13312,20 +13341,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Robert Robinson Taylor was born in Wilmington and became MIT's first known Black\ngraduate, completing his degree in 1892.\n\nHis father, Henry Taylor, was a skilled builder associated with the Bellamy\nconstruction. This house therefore offers a connection to the family trade, not a claim\nthat Robert designed it.\n\nRobert's architectural career developed at Tuskegee and beyond. Education expanded the\npossibilities of work that already had a strong family foundation.\n\nFrom the sidewalk, look at the evidence of building skill around you. Then consider the\ndistance between learning a trade locally and gaining access to an institution that had\nscarcely admitted Black students. Taylor's achievement was individual, but his\nWilmington background helps prevent us from imagining that his talent began only when a\ncollege recognized it.\n",
+    "script": "Robert Robinson Taylor was born in Wilmington and became MIT's first known Black\ngraduate, completing his degree in 1892.\n\nHis father, Henry Taylor, worked on the Bellamy construction as an enslaved carpenter.\nThis house therefore offers a connection to the family trade; it is not a building the\nson designed.\n\nRobert went on to design buildings for the Tuskegee Institute campus. Education\nexpanded the possibilities of work that already had a strong family foundation.\n\nFrom the sidewalk, look at the evidence of building skill around you. Then consider the\ndistance between learning a trade locally and becoming the first Black graduate of a\ndistant institution. His achievement was individual, but his hometown background helps\nprevent us from imagining that his talent began just when a college recognized it.\n",
     "teaser": "Robert Robinson Taylor was born in Wilmington and became MIT's first known Black graduate, completing his degree in 1892.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-robert-taylor-beyond-wilmington/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53.9,
+        "audioBytes": 863128
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-robert-taylor-beyond-wilmington",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-rufus-bunnells-written-weather",
@@ -13341,7 +13371,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 67,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13349,20 +13379,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Rufus Bunnell assisted with the Bellamy design and kept a diary. The museum's published\nexcerpts include an 1859 Independence Day described through heat and a thunderstorm.\n\nSuch an entry brings a working person into a history often told through architectural\nlabels. He experienced Wilmington as weather, time, and daily activity while the house\nwas taking shape.\n\nThis is the construction project associated with his work. We do not need to invent his\nprivate thoughts or place every diary line on this sidewalk.\n\nLook at the mansion and remember that its finished appearance came after many unfinished\ndays. A diary preserves the scale of those days. Bunnell's records let the building's\ndesign history meet the ordinary conditions in which an architect actually lived and\nworked.\n",
+    "script": "Rufus Bunnell assisted with the Bellamy design and kept a diary. The museum's\npublished excerpts include an 1859 Independence Day described through heat and a\nthunderstorm.\n\nSuch an entry brings a working person into a history often told through architectural\nlabels. He experienced Wilmington as weather, time, and daily activity while the house\nwas taking shape.\n\nThis is the construction project associated with his work. We do not need to invent\nhis private thoughts or place every diary line on this sidewalk.\n\nLook at the mansion and remember that its finished appearance came after many\nunfinished days. A diary preserves the scale of those days. Bunnell's records let the\nbuilding's design history meet the ordinary conditions in which an architect actually\nlived and worked.\n",
     "teaser": "Rufus Bunnell assisted with the Bellamy design and kept a diary.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-rufus-bunnells-written-weather/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.2,
+        "audioBytes": 868144
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-rufus-bunnells-written-weather",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-samuel-mendelsohns-forty-six-years",
@@ -13378,7 +13409,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 65,
+    "durationS": 59,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13386,25 +13417,26 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Rabbi Samuel Mendelsohn presided when Wilmington's Temple of Israel was dedicated in\n1876. His tenure continued until 1922, spanning forty-six years.\n\nThe congregation's history connects that first sermon with Jewish liberty. The new\nsynagogue supplied a permanent local setting for worship and community life.\n\nListen from the public sidewalk. A long tenure means more than one ceremonial opening:\nit includes repeated services, teaching, changes in families, and the ordinary\nresponsibilities of sustaining a congregation.\n\nMendelsohn's name helps make the building's history personal. The synagogue was not only\nconstructed; it was used and cared for by a community over time. His decades of\nleadership link its early years with the city that developed around this corner into the\ntwentieth century.\n",
+    "script": "Rabbi Samuel Mendelsohn presided when Wilmington's Temple of Israel was dedicated in\n1876. His tenure continued until 1922, spanning forty-six years.\n\nThe congregation's history connects that first sermon with Jewish liberty. The new\nsynagogue supplied a permanent local setting for worship and community life.\n\nListen from the public sidewalk. A long tenure means more than a ceremonial opening:\nit includes repeated services, teaching, changes in families, and the ordinary\nresponsibilities of sustaining a congregation.\n\nMendelsohn's name helps make the building's history personal. The synagogue was not\nsimply constructed; it was used and cared for by a community over time. His decades of\nleadership link its early years with the city that developed around this corner into the\ntwentieth century.\n",
     "teaser": "Rabbi Samuel Mendelsohn presided when Wilmington's Temple of Israel was dedicated in 1876.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-samuel-mendelsohns-forty-six-years/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 58.7,
+        "audioBytes": 940451
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-samuel-mendelsohns-forty-six-years",
-        "durationS": 65
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-second-oldest-in-the-state",
     "title": "Second Oldest in the State",
-    "summary": "Only one Prince Hall lodge in North Carolina is older than this one, and none in Wilmington.",
+    "summary": "Only one Black Masonic lodge in North Carolina is older than this one, and none in Wilmington.",
     "point": {
       "at": {
         "lat": 34.23691,
@@ -13415,7 +13447,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "look-below",
-    "durationS": 18,
+    "durationS": 20,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13423,20 +13455,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the brick. This went up in eighteen seventy-three.\n\nIn the whole state, exactly one Prince Hall lodge is older than it. In Wilmington, none\nis.\n\nStay on the pavement if someone is using the door. It is still a working lodge, not a\nmonument.\n",
+    "script": "Look at the building. Its cornerstone was laid in eighteen seventy-one.\n\nIn the whole state, exactly one Black Masonic lodge is older than it. In Wilmington, none\nis.\n\nStay on the pavement if someone is using the door. It is still a working lodge, not a\nmonument.\n",
     "teaser": "Count the older ones on one finger.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-second-oldest-in-the-state/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 20.1,
+        "audioBytes": 322707
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-second-oldest-in-the-state",
-        "durationS": 18
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-six-paddles-for-memory",
@@ -13452,7 +13485,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 68,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13460,20 +13493,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its\nvictims. Artist Ayokunle Odeleye gave the memorial a form tied to movement and\ncollective effort.\n\nThis park is a place of remembrance. The events it commemorates happened across the\ncity, not all on this patch of ground.\n\nWalk slowly along the public path. The sculpture asks for a different pace from the\nsurrounding streets. Its repeated forms can bring separate lives into one field of\nattention without pretending the violence had a simple or settled ending.\n\nPublic art carries a responsibility here. It makes history present while leaving room\nfor reflection. The bronze survives in the open air; the work of understanding what the\ncity lost must continue among the people who visit.\n",
+    "script": "The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its\nvictims. Artist Ayokunle Odeleye designed it, and it was dedicated in November 2008.\n\nThis park is a place of remembrance. The events it commemorates happened across the\ncity, not all on this patch of ground.\n\nWalk slowly along the public path. The sculpture asks for a different pace from the\nsurrounding streets. Its repeated forms can bring separate lives into a single field of\nattention without pretending the violence had a simple or settled ending.\n\nPublic art carries a responsibility here. It makes history present while leaving room\nfor reflection. The bronze survives in the open air; the work of understanding what the\ncity lost must continue among the people who visit.\n",
     "teaser": "The 1898 memorial uses six tall bronze paddles to remember Wilmington's coup and its victims.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-six-paddles-for-memory/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55.4,
+        "audioBytes": 886952
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0.2,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-six-paddles-for-memory",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0.2
   },
   {
     "id": "wilmington-st-thomas-finds-another-purpose",
@@ -13555,8 +13589,8 @@ export const LIBRARY: readonly Echo[] = [
   },
   {
     "id": "wilmington-steel-above-the-tracks",
-    "title": "Steel Above the Tracks",
-    "summary": "This bridge was built in 1911 to replace a deteriorating wooden crossing above railroad tracks.",
+    "title": "Iron Above the Tracks",
+    "summary": "A one-lane iron truss bridge from 1910 carries Sixth Street over Wilmington's railroad cut.",
     "point": {
       "at": {
         "lat": 34.2436,
@@ -13567,7 +13601,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 67,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13575,20 +13609,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This bridge was built in 1911 to replace a deteriorating wooden crossing above railroad\ntracks. Wilmington recognizes it as the city's surviving steel truss bridge from that\nera.\n\nThe truss makes structural work visible: connected members help carry loads across an\nopening. The form is not simply decorative.\n\nLook from a safe public approach, following any closure signs. Do not go beneath it onto\nrailway property for a better view.\n\nA bridge solves a local problem, but it also records what lay in the way. Here, streets\nhad to cross the railroad infrastructure that helped define the neighborhood. The steel\nspan kept those two systems connected. Its survival lets you see a practical response to\na city built around trains as well as streets.\n",
-    "teaser": "This bridge was built in 1911 to replace a deteriorating wooden crossing above railroad tracks.",
+    "script": "This one-lane truss bridge carries Sixth Street over a railroad cut. A National Register\nsurvey of downtown Wilmington dates it to 1910 and describes an iron automobile bridge,\n145 feet long, set on concrete abutments.\n\nThe truss makes structural work visible: connected members help carry loads across an\nopening. The form is not simply decorative.\n\nLook from a safe public approach, following any closure signs. Do not go beneath it onto\nrailway property for a better view.\n\nA bridge solves a local problem, but it also records what lay in the way. Here, streets\nhad to cross the railroad infrastructure that helped define the neighborhood. The span\nlet street and rail pass each other without meeting. Its survival lets you see a\npractical response to a city built around trains as well as streets.\n",
+    "teaser": "A one-lane iron truss bridge from 1910 carries Sixth Street over Wilmington's railroad cut.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-steel-above-the-tracks/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.6,
+        "audioBytes": 874831
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-steel-above-the-tracks",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-annex-behind-the-landmark",
@@ -13604,7 +13639,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 67,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13612,20 +13647,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H.\nSprunt in memory of his parents and the earlier congregation's founders.\n\nThe annex served functions that the main sanctuary alone could not contain. Its history\nreminds you that a community's building needs extend beyond one ceremonial room.\n\nLook from the public sidewalk and keep to authorized visitor areas. A less dramatic\nbuilding can still be central to how a place works.\n\nThe addition makes growth tangible. People who gathered in the church also needed rooms\nfor teaching, meetings, and other activities. The annex supplied that supporting space.\nIts continued presence helps you read the complex as a working community setting, not\nsimply a striking facade preserved for photographs.\n",
+    "script": "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William\nH. Sprunt in memory of his parents and the earlier congregation's founders.\n\nThe annex served functions that the main sanctuary alone could not contain. Its\nhistory reminds you that a community's building needs extend beyond a single\nceremonial room.\n\nLook from the public sidewalk and keep to authorized visitor areas. A less dramatic\nbuilding can still be central to how a place works.\n\nThe addition makes growth tangible. People who gathered in the church also needed\nrooms for teaching, meetings, and other activities. The annex supplied that supporting\nspace. Its continued presence helps you read the complex as a working community\nsetting, not simply a striking facade preserved for photographs.\n",
     "teaser": "The church complex expanded in 1910 with the Memorial Hall Annex, donated by William H. Sprunt in memory of his parents and the earlier congregation's founders.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-annex-behind-the-landmark/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.4,
+        "audioBytes": 871070
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-annex-behind-the-landmark",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-association-before-the-building",
@@ -13668,7 +13704,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wilmington-the-basilicas-brick-invention",
     "title": "The Basilica's Brick Invention",
-    "summary": "Saint Mary's church is associated with the Guastavino family's brick-and-tile vaulting work.",
+    "summary": "Saint Mary's church is known for elaborate brickwork by Rafael Guastavino and his son.",
     "point": {
       "at": {
         "lat": 34.23188,
@@ -13679,7 +13715,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 67,
+    "durationS": 58,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13687,20 +13723,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Saint Mary's church is associated with the Guastavino family's brick-and-tile vaulting\nwork. Its dedication in 1912 gave Wilmington a distinctive new religious building.\n\nThe construction method is central to its identity. Thin layers of tile and careful\ngeometry could create substantial vaulted forms.\n\nThis remains a place of worship. Begin on the public sidewalk and enter only when\nvisitor access is permitted.\n\nLook at the building as both a community's religious home and the result of specialist\ncraft. Its architectural impact depends on thousands of smaller pieces working together.\nA large interior space can feel almost effortless to a visitor; the method behind it\nrequired knowledge and precision. The landmark makes that marriage of design, material,\nand labor part of downtown's visible history.\n",
-    "teaser": "Saint Mary's church is associated with the Guastavino family's brick-and-tile vaulting work.",
+    "script": "Saint Mary's church is known for elaborate brickwork by Rafael Guastavino and his son.\nThe National Register dates the church to 1912, when it gave Wilmington a distinctive\nnew religious building.\n\nThe construction method is central to its identity. Careful geometry and skilled\nmasonry could create substantial forms.\n\nThis remains a place of worship. Begin on the public sidewalk and go inside when\nvisitor access is permitted.\n\nLook at the building as both a community's religious home and the result of specialist\ncraft. Its architectural impact depends on many smaller pieces working together.\nA large interior space can feel almost effortless to a visitor; the method behind it\nrequired knowledge and precision. The landmark makes that marriage of design, material,\nand labor part of downtown's visible history.\n",
+    "teaser": "Saint Mary's church is known for elaborate brickwork by Rafael Guastavino and his son.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-basilicas-brick-invention/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 57.6,
+        "audioBytes": 923314
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-basilicas-brick-invention",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-beach-tournament-off-the-beach",
@@ -13802,7 +13839,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 67,
+    "durationS": 62,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13810,20 +13847,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The mansion commands attention. The separate brick building behind it changes what that\nattention means.\n\nThe enslaved quarters were built in 1859, initially housing workers involved in\nconstruction and later people performing household labor. The museum opened the restored\nbuilding to visitors in 2014.\n\nThis is a surviving structure, not a theatrical reconstruction of an imagined plantation\nscene. It helps visitors examine how the household organized space, work, and control.\n\nIf you are on the authorized grounds, turn your view between the quarters and the main\nhouse. Their relationship is the story. One building advertised family wealth; the other\nsupported that wealth through coerced labor. Restoring both makes it harder to admire\nthe mansion while overlooking the people whose work kept it functioning.\n",
+    "script": "The mansion commands attention. The separate brick building behind it changes what that\nattention means.\n\nThe enslaved quarters were finished first, in 1859, to house some of the enslaved\nworkers building the mansion. Later, three enslaved women, a cook, a laundress and a\nnanny, lived here with five girls. The museum opened the restored building to visitors\nin 2014.\n\nThis is a surviving structure, not a theatrical reconstruction of an imagined plantation\nscene. It helps visitors examine how the household organized space, work, and control.\n\nIf you are on the authorized grounds, turn your view between the quarters and the main\nhouse. Their relationship is the story. The mansion advertised family wealth; the\nquarters supported that wealth through coerced labor. Restoring both makes it harder to\nadmire the mansion while overlooking the people whose work kept it functioning.\n",
     "teaser": "The mansion commands attention.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-building-behind-the-mansion/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 62,
+        "audioBytes": 993950
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-building-behind-the-mansion",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-cabooses-very-short-journey",
@@ -13839,7 +13877,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "short",
-    "durationS": 68,
+    "durationS": 49,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13847,21 +13885,22 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "In 2007, the museum had to move its red caboose to a new home. The distance was short,\nbut the caboose could not simply roll there along a ready-made track.\n\nWorkers lifted its body onto one truck and carried its wheels on another. They placed\nties and rails at the new site, and the job continued into darkness.\n\nLook at the caboose from the permitted display area. A thing designed to travel can\nstill be difficult to move!\n\nThe team had to solve the problem one part at a time. Wheels, body, trucks, and rails\nall needed the right place in the plan. The caboose's short trip became a real adventure\nin cooperation, helping the museum keep a big piece of railroad history for visitors\nlike you.\n",
+    "script": "In 2007, the museum had to move its red caboose to a new home. The trip was short, just\nacross a fifty foot parking lot. But there was no track at the new home, so the caboose\ncould not simply roll there.\n\nWorkers lifted its body onto one truck and carried its wheels on another. They placed\nties and rails at the new site, and the job continued into darkness.\n\nLook at the caboose from the permitted display area. A thing designed to travel can\nstill be difficult to move!\n\nThe team had to solve the problem a piece at a time. Wheels, body, trucks, and rails\nall needed the right place in the plan. The caboose's short trip became a real adventure\nin cooperation, helping the museum keep a big piece of railroad history for visitors\nlike you.\n",
     "teaser": "In 2007, the museum had to move its red caboose to a new home.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/wilmington-the-cabooses-very-short-journey/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 48.5,
+        "audioBytes": 777447
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/wilmington-the-cabooses-very-short-journey",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-ceiling-nobody-replaced",
@@ -13877,7 +13916,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "look-below",
-    "durationS": 25,
+    "durationS": 23,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13887,18 +13926,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up, through the window of whatever is trading on the ground floor.\n\nThis went up in nineteen oh six, five storeys of blond brick. The city's landmark register\nsays that ceiling is the original one, stamped tin, still up there on the first storey.\n\nNobody preserved it. It simply outlasted every tenant who might have torn it out.\n",
     "teaser": "Look up before you look at the shelves.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-ceiling-nobody-replaced/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 22.8,
+        "audioBytes": 365339
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-ceiling-nobody-replaced",
-        "durationS": 25
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-church-of-the-television-weddings",
@@ -13957,7 +13997,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 65,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13967,18 +14007,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Construction of St. Andrew's Presbyterian Church began here in 1888. The congregation\ndedicated the building in 1889.\n\nIts later history included other congregations, serious deterioration, and preservation\nefforts. The surviving structure became the Brooklyn Arts Center.\n\nFrom the public corner, notice that a changed purpose did not require the old building\nto disappear. Its prominent form remains part of the neighborhood while its interior\nserves new gatherings.\n\nThe building's survival is the turning point. A former church could have become only a\nhistorical photograph. Instead, restoration made another use possible. Today's arts\nsetting carries an architectural inheritance from the congregation that first raised it.\nWhen people gather here now, they add a chapter rather than beginning on a blank site.\n",
     "teaser": "Construction of St. Andrew's Presbyterian Church began here in 1888.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-church-that-became-an-arts-center/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.4,
+        "audioBytes": 871070
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-church-that-became-an-arts-center",
-        "durationS": 65
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-church-used-as-a-hospital",
@@ -13994,7 +14035,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14004,18 +14045,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "In February 1865, Union forces entered Wilmington. St. James's church building was\nseized and used as a hospital.\n\nThe congregation's history records that the building was returned that summer, repaired,\nand used for services again in December. A space designed for worship had temporarily\nbecome a place of wartime care.\n\nThe change makes you see the church differently. Its doors and interior were practical\nresources in a city undergoing military occupation, not just symbols on a familiar\nstreet.\n\nFrom the sidewalk, consider the work required to make a building serve an urgent\npurpose, then restore it to its regular life. The hospital chapter was temporary, but it\nbelongs to the building's history. Returning to worship did not mean that the preceding\nmonths had never happened.\n",
     "teaser": "In February 1865, Union forces entered Wilmington.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-church-used-as-a-hospital/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53.9,
+        "audioBytes": 863546
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-church-used-as-a-hospital",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-county-courthouse-on-third",
@@ -14031,7 +14073,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 67,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14039,20 +14081,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This is the late-nineteenth-century county courthouse at Third and Princess, built in\n1892 to 1893.\n\nIt is not the earlier courthouse once located at Market and Third. Keeping those places\nseparate prevents two very different periods from collapsing into one story.\n\nLook from the public sidewalk. The building's prominent scale and detailed exterior make\ngovernment visible in the streetscape. A courthouse is designed to gather public\nbusiness under an identifiable roof.\n\nIts landmark role continues even when visitors come mainly to look at the architecture.\nThe exact address matters: history happened in particular buildings, and similar names\ncan lead you to the wrong one. This stop anchors the later county institution, while the\nMarket Street marker recalls the vanished colonial courthouse a block away.\n",
+    "script": "This is the late-nineteenth-century county courthouse at Third and Princess, built in\n1892 to 1893.\n\nIt is not the earlier courthouse once located at Market and Third. Keeping those places\nseparate stops very different periods from collapsing into a single story.\n\nLook from the public sidewalk. The building's prominent scale and detailed exterior make\ngovernment visible in the streetscape. A courthouse is designed to gather public\nbusiness under an identifiable roof.\n\nIts landmark role continues even when visitors come mainly to look at the architecture.\nThe exact address matters: history happened in particular buildings, and similar names\ncan lead you to the wrong door. This stop anchors the later county institution, while the\nmarker at Market and Third recalls the vanished colonial courthouse.\n",
     "teaser": "This is the late-nineteenth-century county courthouse at Third and Princess, built in 1892 to 1893.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-county-courthouse-on-third/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.2,
+        "audioBytes": 868144
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-county-courthouse-on-third",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-court-behind-the-house",
@@ -14068,7 +14111,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "feature",
-    "durationS": 145,
+    "durationS": 131,
     "minAge": 0,
     "quality": 0.8,
     "visibility": "at-hand",
@@ -14076,19 +14119,20 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "There is a tennis court behind this house.\n\nNot a club court. Not a park court. A doctor's back garden, with a full court laid in\nit.\n\nWork out what that is for.\n\nStart with the rule, because the rule is the whole story. A Black player in America\ncould not join the United States Lawn Tennis Association. So in nineteen sixteen Black\nplayers built their own: the American Tennis Association, set up to encourage and\nsupport competitive tennis among African Americans, who were not permitted to join the\nwhite association. The state's own account calls it the first professional sports\nleague for African Americans in the country.\n\nA separate league is not a door opening. It is a door staying shut, and people building\nanother house.\n\nNow the man.\n\nHubert Eaton practised medicine here. The city's landmark register calls him a prominent\nBlack doctor in Wilmington and a leader in the civil rights movement, in the city and in\nthe nation. It also calls him a passionate and accomplished tennis player.\n\nThat is what fits on a plaque. Here is what it cost.\n\nA public court can turn you away. A club can decline your application. A tournament can\nlose your entry form. There is a court in this city that none of that can happen on, and\nit is the court a man pays for himself and lays in his own back garden.\n\nSo he did. And then he taught on it.\n\nThe register is specific about one of the people he taught at his home and on that\ncourt. The state goes further and says she lived with him for a time.\n\nHer name was Althea Gibson.\n\nShe went on, in the city's own flat phrasing, to become an international, award winning\ntennis icon. The state's account says Eaton is given much credit for her development.\n\nLook at the house.\n\nIt is a house. That is the whole point of it. There is no stadium and no statue. A\ndoctor who could not change the rule built around it instead, in his own yard, at his\nown expense, and handed the result to somebody else.\n",
+    "script": "There is a tennis court behind this house.\n\nNot a club court. Not a park court. A doctor's back garden, with a full court laid in\nit.\n\nWork out what that is for.\n\nStart with the rule, because the rule is the whole story. A Black player in America\ncould not join the United States Lawn Tennis Association. So in nineteen sixteen Black\nplayers built their own: the American Tennis Association, set up to encourage and\nsupport competitive tennis among African Americans, who were not permitted to join the\nwhite association. The state's own account calls it the first professional sports\nleague for African Americans in the country.\n\nA separate league is not a door opening. It is a door staying shut, and people building\nanother house.\n\nNow the man.\n\nHubert Eaton lived here, and he was a doctor. For years he led the fight to desegregate\nthis county's schools, the city's municipal golf course and the YMCA. He was also an\navid tennis player.\n\nThat is what fits on a plaque. Here is what it cost.\n\nA public court can turn you away. A club can decline your application. A tournament can\nlose your entry form. There is a court in this city that none of that can happen on, and\nit is the court a man pays for himself and lays in his own back garden.\n\nSo he did. And then he taught on it.\n\nThe register is specific about one of the people he taught at his home and on that\ncourt. The state goes further and says she lived with him for a time.\n\nHer name was Althea Gibson.\n\nShe went on to win Wimbledon, and to become the first African American woman to win a\nGrand Slam title. The state's account says Eaton is given much credit for her development.\n\nLook at the house.\n\nIt is a house. That is the whole point of it. There is no stadium and no statue. A\ndoctor who could not change the rule built around it instead, in his own yard, at his\nown expense, and handed the result to somebody else.\n",
     "teaser": "Work out what a private court was for.",
-    "tags": [
-      "wilmington"
-    ],
-    "remoteness": 0.44,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-court-behind-the-house",
-        "durationS": 145
+        "audioKey": "audio/wilmington-the-court-behind-the-house/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 130.8,
+        "audioBytes": 2094018
       }
-    ]
+    ],
+    "tags": [
+      "wilmington"
+    ],
+    "remoteness": 0.44
   },
   {
     "id": "wilmington-the-courthouse-and-the-stamp-act",
@@ -14104,7 +14148,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 67,
+    "durationS": 50,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14112,20 +14156,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "An earlier courthouse stood at this intersection. In the 1760s, it became a focus of\nresistance to Britain's Stamp Act.\n\nThe tax touched printed documents and provoked organized opposition in the Cape Fear\nregion. The state marker's history connects the courthouse with that struggle over\nimperial authority.\n\nThe building is gone, and the later county courthouse farther north is a different\nstructure. Here, the marker identifies a political setting that ordinary traffic now\ncrosses.\n\nStand safely on the sidewalk and look across the intersection. Public disagreement\nneeded places where people could assemble and make demands visible. Before independence,\nthis corner helped supply one. The story belongs to a town still under British rule,\nbeginning to challenge who could impose terms on its public life.\n",
+    "script": "An earlier courthouse stood at this intersection. In the 1760s, it became a focus of\nresistance to Britain's Stamp Act.\n\nThe tax touched printed documents and provoked angry crowds in Wilmington. The state\nmarker's history connects the courthouse with that struggle over imperial authority.\n\nThe building is gone. Here, the marker identifies a political setting that ordinary\ntraffic now crosses.\n\nStand safely on the sidewalk and look across the intersection. Public disagreement\nneeded places where people could assemble and make demands visible. Before\nindependence, this corner was such a place. The story belongs to a colonial town,\nbeginning to challenge who could impose terms on its public life.\n",
     "teaser": "An earlier courthouse stood at this intersection.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-courthouse-and-the-stamp-act/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 50,
+        "audioBytes": 800434
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-courthouse-and-the-stamp-act",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-courthouse-sheriffs-office",
@@ -14308,7 +14353,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "short",
-    "durationS": 70,
+    "durationS": 52,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14316,21 +14361,22 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Paul Hill made a dog for Bijou Park, but this dog does not need food, water, or a nap.\nIt is a sculpture called Straining to Be.\n\nThe tourism authority describes its materials as Corten steel and found objects. Things\nmade for other purposes became part of an animal's shape.\n\nStand back and look at the outline. What makes you recognize a dog before you examine\nevery detail? Then look for the parts the artist used to suggest that shape.\n\nThe real story is a person's choice to turn material into something viewers can\nrecognize. No imaginary dog adventure is needed. The sculpture gives an ordinary park a\nplayful surprise, and it gives you a challenge: discover how an artist made a familiar\ncreature from things that were never alive.\n",
+    "script": "Paul Hill made a dog for Bijou Park, but this dog does not need food, water, or a nap.\nIt is a sculpture called Straining to Be.\n\nThe visitors bureau describes its materials as Corten steel and found objects. Things\nmade for other purposes became part of an animal's shape.\n\nStand back and look at the outline. What makes you recognize a dog before you examine\nevery detail? Then look for the parts the artist used to suggest that shape.\n\nThe real story is a person's choice to turn material into something viewers can\nrecognize. No imaginary dog adventure is needed. The sculpture gives an ordinary park a\nplayful surprise, and it gives you a challenge: discover how an artist made a familiar\ncreature from things that were never alive.\n",
     "teaser": "Paul Hill made a dog for Bijou Park, but this dog does not need food, water, or a nap.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/wilmington-the-dog-made-of-metal/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 52.2,
+        "audioBytes": 836797
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/wilmington-the-dog-made-of-metal",
-        "durationS": 70
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-exhibition-in-a-little-lane",
@@ -14384,7 +14430,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 65,
+    "durationS": 57,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14392,20 +14438,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The Federal Judicial Center dates this Wilmington courthouse building to 1919. It was\nnamed for Alton Lennon in 1972.\n\nIts waterfront position gives it an unusually visible place in the downtown landscape.\nFederal authority occupies the same streetscape as the riverfront's shops, visitors, and\nhistoric commercial buildings.\n\nListen from the public sidewalk. Do not assume that a courthouse interior is a\nsightseeing area; any entry must follow current security and visitor rules.\n\nThe building's two dates tell different stories. One belongs to construction and\ninstitutional use, the other to later commemoration. Names can change what a city\nremembers about a structure without changing its physical age. Here, the architecture\nand the public name carry separate layers of Wilmington's civic memory.\n",
+    "script": "The Federal Judicial Center dates this Wilmington courthouse building to 1919. It was\nnamed for Alton Lennon in 1972.\n\nIts waterfront position gives it an unusually visible place in the downtown landscape.\nFederal authority occupies the same streetscape as the riverfront's shops, visitors, and\nhistoric commercial buildings.\n\nListen from the public sidewalk. Do not assume that a courthouse interior is a\nsightseeing area; any entry must follow current security and visitor rules.\n\nThe building's dates tell different stories. The earlier belongs to the federal court\nthat has sat here, the later to commemoration. Names can change what a city remembers\nabout a structure without changing its physical age. Here, the architecture and the\npublic name carry separate layers of the city's civic memory.\n",
     "teaser": "The Federal Judicial Center dates this Wilmington courthouse building to 1919.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-federal-building-by-the-water/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 56.6,
+        "audioBytes": 907014
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-federal-building-by-the-water",
-        "durationS": 65
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-first-curtain",
@@ -14421,7 +14468,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 69,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14429,20 +14476,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "On October 12, 1858, Thalian Hall opened with a gala. Wilmington gained a theater that\nwould connect local audiences with performers traveling through the country.\n\nFor the people arriving that evening, this was a new room, not a historic landmark. The\nexpectation lay ahead: a curtain would rise, a performance would begin, and the city's\ninvestment would become an experience.\n\nStand outside the entrance. A theater's opening can be remembered as a date, but its\nreal test comes when people gather and listen together.\n\nEvery later audience added another use to the building. The first night's importance is\nthat it began the pattern. Before the reputation, restorations, and anniversary\ncelebrations, Wilmington had to take the simple step that makes a theater work: open the\ndoors and invite people in.\n",
+    "script": "On October 12, 1858, Thalian Hall opened with a gala. Wilmington gained a theater that\nwould connect local audiences with performers traveling through the country.\n\nFor the people arriving that evening, this was a new room, not a historic landmark.\nThe expectation lay ahead: a curtain would rise, a performance would begin, and the\ncity's investment would become an experience.\n\nStand outside the entrance. A theater's opening can be remembered as a date, but its\nreal test comes when people gather and listen together.\n\nEvery later audience added another use to the building. That opening night began the\npattern. Before the reputation, restorations, and anniversary celebrations, the town\nhad to take the simple step that makes a theater work: open the doors and invite\npeople in.\n",
     "teaser": "On October 12, 1858, Thalian Hall opened with a gala.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-first-curtain/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.7,
+        "audioBytes": 875667
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-first-curtain",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-first-heritage-city",
@@ -14458,7 +14506,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 52,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14466,20 +14514,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "In 2020, Wilmington became the country's first American World War II Heritage City.\n\nThe designation recognizes a community's wartime role and its work to preserve that\nhistory. It reaches beyond this building, encompassing the wider city's military,\nindustrial, and civilian contributions.\n\nThe USO makes a useful downtown place to listen because it preserves one direct part of\nthat experience: the gathering place for people in uniform and the volunteers supporting\nthem.\n\nLook at the building before you. A national designation can sound like a distant\nadministrative honor. Here, it points back to concrete local spaces and the people who\nused them. The title does not create the history. It asks present-day Wilmington to keep\nthat history available, examined, and connected to the city that exists now.\n",
+    "script": "In 2020, Wilmington became the country's first American World War II Heritage City.\n\nThe designation recognizes a community's wartime role and its work to preserve that\nhistory. It reaches beyond this building, encompassing the wider city's military,\nindustrial, and civilian contributions.\n\nThe USO makes a useful downtown place to listen because it preserves a direct part of\nthat experience: the gathering place for people in uniform and the volunteers supporting\nthem.\n\nLook at the building before you. A national designation can sound like a distant\nadministrative honor. Here, it points back to concrete local spaces and the people who\nused them. The title does not create the history. It asks the city today to keep that\nhistory available, examined, and connected to the present.\n",
     "teaser": "In 2020, Wilmington became the country's first American World War II Heritage City.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-first-heritage-city/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 51.9,
+        "audioBytes": 830945
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-first-heritage-city",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-friend-who-came-back",
@@ -14495,7 +14544,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 73,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14503,27 +14552,28 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look toward the churchyard. Wilmington storytellers attach a particularly unsettling\nlegend to Samuel Jocelyn Junior: a dead man supposedly appeared to a friend and asked to\nbe taken out of his grave.\n\nIn the tale, the friend initially dismissed the encounter. Further appearances finally\npersuaded him to investigate. The ending suggested that Jocelyn had been buried alive.\n\nThat is the ghost story, not a verified account of a premature burial. Its power comes\nfrom an ordinary human fear: needing help when nobody believes you can still ask for it.\n\nFrom this public sidewalk, the churchyard gives the tale its setting. You do not need to\nenter, search for a particular grave, or treat a sound as evidence. Listen to the city\ncontinuing around you. The legend asks you to imagine one voice trying to reach it.\n",
+    "script": "Look toward the churchyard. Wilmington storytellers attach a particularly unsettling\nlegend to Samuel Jocelyn Junior: a dead man supposedly appeared to a friend and asked to\nbe taken out of his grave.\n\nIn the tale, the friend did not believe it and waited three days before visiting the\ngrave. The ending suggested that Jocelyn had been buried alive.\n\nThat is the ghost story, not a verified account of a premature burial. Its power comes\nfrom an ordinary human fear: needing help when nobody believes you can still ask for it.\n\nFrom this public sidewalk, the churchyard gives the tale its setting. You do not need to\nenter, search for a particular grave, or treat a sound as evidence. Listen to the city\ncontinuing around you. The legend asks you to imagine a single voice trying to reach it.\n",
     "teaser": "Look toward the churchyard.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/wilmington-the-friend-who-came-back/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 52.8,
+        "audioBytes": 845156
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/wilmington-the-friend-who-came-back",
-        "durationS": 73
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-garden-that-was-designed-later",
     "title": "The Garden That Was Designed Later",
-    "summary": "These gardens may feel as old as the house.",
+    "summary": "These gardens can feel as old as the house.",
     "point": {
       "at": {
         "lat": 34.23515,
@@ -14534,7 +14584,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 56,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14542,20 +14592,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "These gardens may feel as old as the house. Their present design belongs to a later\nchapter.\n\nIn 1962, the museum hired landscape architect Alden Hopkins to create gardens in an\neighteenth-century style. The grounds therefore interpret a period; they are not a\ngarden preserved unchanged from 1770.\n\nThat distinction adds to the experience. The orchard, herb areas, terraces, and formal\nplanting give visitors different ways to approach the past. A useful plant tells a\ndifferent story from a decorative hedge.\n\nWalk only along the open paths. Notice where the design invites a pause and where it\ndirects your gaze. This landscape records two eras at once: the colonial world it evokes\nand the twentieth-century preservation work that chose how that world would be\npresented.\n",
-    "teaser": "These gardens may feel as old as the house.",
+    "script": "These gardens can feel as old as the house. Their present design belongs to a later\nchapter.\n\nIn 1962, the museum hired landscape architect Alden Hopkins to create gardens in an\neighteenth-century style. The grounds therefore interpret a period; they are not a\ngarden preserved unchanged from 1770.\n\nThat distinction adds to the experience. The orchard, herb areas, terraces, and formal\nplanting give visitors different ways to approach the past. A useful plant tells a\ndifferent story from a decorative hedge.\n\nKeep to the open paths. Notice where the design invites a pause and where it\ndirects your gaze. This landscape records two eras at once: the colonial world it evokes\nand the twentieth-century preservation work that chose how that world would be\npresented.\n",
+    "teaser": "These gardens can feel as old as the house.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-garden-that-was-designed-later/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 56.3,
+        "audioBytes": 901581
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-garden-that-was-designed-later",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-gas-station-that-never-came",
@@ -14571,7 +14622,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14581,18 +14632,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "In 1930, this house faced a future that could have removed it from Wilmington entirely.\n\nBusinessman Samuel Pryor considered taking the building apart and moving it to\nConnecticut. A gas station was proposed for the cleared site. The Colonial Dames\ncampaigned to preserve the house, and Pryor changed course, contributing money and\nsupporting the effort.\n\nThe museum's timeline records that reversal. What you see is the result of people\ntreating an old building as a shared historical resource rather than simply a valuable\ndowntown lot.\n\nStand at the corner and picture the gap its removal would have made. No imagined\ndemolition is needed to appreciate the stakes. The threatened future was real, and so\nwas the intervention. The house stayed where its history could still be encountered.\n",
     "teaser": "In 1930, this house faced a future that could have removed it from Wilmington entirely.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-gas-station-that-never-came/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.2,
+        "audioBytes": 868980
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-gas-station-that-never-came",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-gathering-before-the-coup",
@@ -14616,7 +14668,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This marker identifies a place of preparation. On November 10, 1898, armed white men\nassembled at the Wilmington Light Infantry armory before marching on the Daily Record.\n\nThe violence that followed was organized around a political aim: removing Wilmington's\nlegitimately elected government and suppressing Black political power. It was not simply\nan unexpected crowd losing control.\n\nStand beside the marker and look along Market Street. The route began among familiar\ncivic buildings and ordinary city blocks. That is part of the story's difficulty.\nPolitical violence did not arrive in a landscape separate from everyday Wilmington; it\nmoved through it.\n\nThe marker now interrupts that everyday view with a record of what happened. Before you\nmove on, notice its location. Remembering the starting point helps reveal the planning\nbehind the crime.\n",
+    "script": "This marker identifies a place of preparation. On November 10, 1898, about 500 white men\nassembled at the Wilmington Light Infantry armory before marching on the Daily Record.\n\nThe violence that followed served a political aim: forcing out the Republicans and\nPopulists then in power in Wilmington, and restricting Black voting. It was not simply\nan unexpected crowd losing control.\n\nStand beside the marker and look along Market Street. The route began among familiar\ncivic buildings and ordinary city blocks. That is part of the story's difficulty.\nPolitical violence did not arrive in a landscape separate from everyday Wilmington; it\nmoved through it.\n\nThe marker now interrupts that everyday view with a record of what happened. Before you\nmove on, notice its location. Remembering the starting point helps reveal the planning\nbehind the coup.\n",
     "teaser": "This marker identifies a place of preparation.",
     "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
@@ -14626,8 +14678,8 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": false,
       "convictionStatus": "alleged",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-07",
+      "reviewedAt": "2026-11-07",
       "contentWarning": "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
     },
     "remoteness": 0,
@@ -14661,7 +14713,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This building has held both city government and a theater. In November 1898, the civic\npart of that history became a scene of forced political change.\n\nWhite supremacist leaders used violence and intimidation to overthrow Wilmington's\nelected, biracial government. Officials were compelled to resign, and Alfred Moore\nWaddell assumed the mayor's office.\n\nThe outcome was not a normal transfer of authority after an election. The state\nrecognizes the events as a coup. Black residents were killed, threatened, and driven\nfrom the city; the full death toll remains uncertain.\n\nLook at the municipal entrance from the sidewalk. Government buildings can make\nauthority appear orderly and permanent. This one asks a harder question: how was that\nauthority obtained? The architecture remained. The democratic rights of many Wilmington\nresidents did not.\n",
+    "script": "This building has held both city government and a theater. In November 1898, the civic\npart of that history became a scene of forced political change.\n\nWhite supremacists seized Wilmington's government by force, removing its legally elected\nmayor and city council. Officials were compelled to resign, and Alfred Moore Waddell\nassumed the mayor's office.\n\nThe outcome was not a normal transfer of authority after an election. The state\nrecognizes the events as a coup. Black residents were killed and terrorized, and many\nfled the city; the full death toll remains uncertain.\n\nLook at the municipal entrance from the sidewalk. Government buildings can make\nauthority appear orderly and permanent. This building asks a harder question: how was\nthat authority obtained? The architecture remained. The democratic rights of many\nWilmington residents did not.\n",
     "teaser": "This building has held both city government and a theater.",
     "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
@@ -14671,8 +14723,8 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": false,
       "convictionStatus": "alleged",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-07",
+      "reviewedAt": "2026-11-07",
       "contentWarning": "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
     },
     "remoteness": 0,
@@ -14698,7 +14750,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 58,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14706,20 +14758,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "For decades, Wilmington was a headquarters city for the Atlantic Coast Line Railroad. In\n1960, that role moved to Jacksonville, Florida.\n\nThe museum describes a relocation of more than a thousand employees, along with\nfamilies, belongings, records, and office equipment. The railway carried away part of\nthe city's working life.\n\nThis museum is a place to understand that change, not the vanished headquarters itself.\nIts collections preserve a local industry after the institution's center of gravity\nshifted south.\n\nImagine the difference between a train departing on its regular run and a train helping\nan employer leave for good. One promises another arrival. The other changes the\nneighborhood that waits behind. Here, preserved objects keep the railroad visible even\nafter its headquarters stopped calling Wilmington home.\n",
+    "script": "For decades, Wilmington was a headquarters city for the Atlantic Coast Line Railroad. In\n1960, that role moved to Jacksonville, Florida.\n\nThe museum describes a relocation of more than a thousand employees, along with\nfamilies, belongings, records, and office equipment. The railway carried away part of\nthe city's working life.\n\nThis museum is a place to understand that change, not the vanished headquarters itself.\nIts collections preserve a local industry after the institution's center of gravity\nshifted south.\n\nImagine the difference between a train departing on its regular run and a train helping\nan employer leave for good. A regular run promises another arrival. A departing\nheadquarters changes the neighborhood that waits behind. Here, preserved objects keep\nthe railroad visible even after its headquarters stopped calling this city home.\n",
     "teaser": "For decades, Wilmington was a headquarters city for the Atlantic Coast Line Railroad.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-headquarters-that-left-town/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 57.7,
+        "audioBytes": 924568
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-headquarters-that-left-town",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-home-purchased-for-history",
@@ -14735,7 +14788,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 59,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14743,25 +14796,26 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "In 1963, the Lower Cape Fear Historical Society acquired the Latimer house. A family\nresidence became a place where the region's history could be studied and shared.\n\nThe society had formed in 1956. Purchasing this house gave its work a physical anchor\ndowntown, with rooms, collections, and an address people could visit.\n\nPause at the entrance. Museums often seem inevitable once their signs are in place. This\none required a choice: keep a nineteenth-century house available and give it a public\npurpose.\n\nThe transition did not freeze its meaning. Each visitor can notice different evidence,\nfrom household objects to traces of the people who worked here. The house's new role\nmade those encounters possible. Its preservation connects personal memories with a\ncommunity's responsibility to examine its past.\n",
+    "script": "In 1963, the Lower Cape Fear Historical Society acquired the Latimer house. A family\nresidence became a place where the region's history could be studied and shared.\n\nThe society had been at work since 1956. Purchasing this house gave its work a physical\nanchor downtown, with rooms, collections, and an address people could visit.\n\nPause at the entrance. Museums often seem inevitable once their signs are in place. This\nmuseum required a choice: keep a nineteenth-century house available and give it a\npublic purpose.\n\nThe transition did not freeze its meaning. Each visitor can notice different evidence,\nfrom household objects to traces of the people who worked here. The house's new role\nmade those encounters possible. Its preservation connects personal memories with a\ncommunity's responsibility to examine its past.\n",
     "teaser": "In 1963, the Lower Cape Fear Historical Society acquired the Latimer house.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-home-purchased-for-history/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 58.6,
+        "audioBytes": 938779
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-home-purchased-for-history",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-house-above-the-cells",
     "title": "The House Above the Cells",
-    "summary": "The neat doorway and Georgian proportions tell one story.",
+    "summary": "The neat doorway and Georgian proportions tell a story.",
     "point": {
       "at": {
         "lat": 34.23545,
@@ -14772,7 +14826,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14780,25 +14834,26 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The neat doorway and Georgian proportions tell one story. The walls underneath tell\nanother.\n\nJohn Burgwin's house was built in 1770 on the remains of Wilmington's first jail, which\ndated to about 1744. Parts of the older structure became part of a merchant's\nfashionable residence.\n\nIt was a dramatic change in use. A place designed to restrict movement became a place\ndesigned to display wealth and receive guests. Yet rebuilding did not erase everything\nthat had been there before.\n\nFrom the public sidewalk, look at the house as a layered object. The oldest history may\nbe below the features that first catch your eye. An authorized visit makes that contrast\nmore tangible: beneath a domestic setting survive reminders of the town's earlier system\nof confinement.\n",
-    "teaser": "The neat doorway and Georgian proportions tell one story.",
+    "script": "The neat doorway and Georgian proportions tell a story. The walls underneath tell\nanother.\n\nJohn Burgwin's house was built in 1770 on the remains of Wilmington's first jail,\nwhich dated to about 1744. Parts of the older structure became part of a merchant's\nfashionable residence.\n\nIt was a dramatic change in use. A place designed to restrict movement became a place\ndesigned to display wealth and receive guests. Yet rebuilding did not erase everything\nthat had been there before.\n\nFrom the public sidewalk, look at the house as a layered object. The older history can\nsit below the features that catch your eye. An authorized visit makes that contrast\nmore tangible: beneath a domestic setting survive reminders of the town's earlier\nsystem of confinement.\n",
+    "teaser": "The neat doorway and Georgian proportions tell a story.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-house-above-the-cells/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53.8,
+        "audioBytes": 862292
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-house-above-the-cells",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-house-with-several-lives",
     "title": "The House with Several Lives",
-    "summary": "This Grace Street house was built in 1818.",
+    "summary": "This Grace Street house dates to about 1818, with later dates of 1854 and 1885.",
     "point": {
       "at": {
         "lat": 34.23903,
@@ -14809,7 +14864,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 68,
+    "durationS": 61,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14817,25 +14872,26 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This Grace Street house was built in 1818. Wilmington's landmark description records\nlater uses that included a military academy, a convent, and an emergency hospital.\n\nThat sequence is more revealing than the idea of one perfectly preserved household. The\nsame building had to meet different needs as the city changed around it.\n\nStay on the public sidewalk. Its historical significance does not make a present\ninterior automatically open to visitors.\n\nLook at the facade and ask what architecture can tell you by itself. A house's shape may\nsuggest domestic life, yet records reveal institutional uses you could not guess from a\npassing glance. The landmark survives as a physical meeting point for those different\nchapters, even when their occupants and furnishings have long since moved on.\n",
-    "teaser": "This Grace Street house was built in 1818.",
+    "script": "This Grace Street house dates to about 1818. The Historic Wilmington Foundation lists\nit as the Lazarus-Hill-Divine House, with three dates attached: about 1818, 1854, and\n1885.\n\nThose dates are more revealing than the idea of a single, perfectly preserved moment.\nEach marks a chapter in the life of a building that stayed in use as the city changed\naround it.\n\nStay on the public sidewalk. Its historical significance does not make a present\ninterior automatically open to visitors.\n\nLook at the facade and ask what architecture can tell you by itself. A house's shape\ncan suggest a single period, yet records point to later chapters you could not guess\nfrom a passing glance. The landmark survives as a physical meeting point for those\ndifferent chapters, even when their occupants and furnishings have long since moved\non.\n",
+    "teaser": "This Grace Street house dates to about 1818, with later dates of 1854 and 1885.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-house-with-several-lives/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 60.6,
+        "audioBytes": 970544
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-house-with-several-lives",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-household-that-fled-yellow-fever",
     "title": "The Household That Fled Yellow Fever",
-    "summary": "The Bellamy family had barely begun living in this house when Wilmington's circumstances changed.",
+    "summary": "The Bellamy house went up between 1859 and 1861, and soon afterward Wilmington's circumstances changed.",
     "point": {
       "at": {
         "lat": 34.23599,
@@ -14846,7 +14902,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 71,
+    "durationS": 59,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14854,20 +14910,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The Bellamy family had barely begun living in this house when Wilmington's circumstances\nchanged.\n\nDuring the yellow fever epidemic of 1862, the family left the city and took refuge at\nFloral College. A residence meant to secure status and comfort could not protect its\noccupants from the city's public-health disaster.\n\nThis house is the family's associated site, not the place to which they escaped. The\nepidemic extended far beyond one household, and leaving was not an option available\nequally to everyone.\n\nLook at the imposing exterior. It can suggest permanence, but the first years of its\ndomestic life were disrupted almost immediately. The story turns on that mismatch: a\ncarefully planned new home meeting a crisis its plans could not contain. Its owners\ndeparted; the larger city still had to endure the outbreak.\n",
-    "teaser": "The Bellamy family had barely begun living in this house when Wilmington's circumstances changed.",
+    "script": "The Bellamy house went up between 1859 and 1861, and soon afterward Wilmington's\ncircumstances changed.\n\nDuring the yellow fever epidemic of 1862, the family left the city and took refuge at\nFloral College. A residence meant to secure status and comfort could not protect its\noccupants from the city's public-health disaster.\n\nThis house is the family's associated site, not the place to which they escaped. The\nepidemic extended far beyond a single household, and leaving was not an option available\nequally to everyone.\n\nLook at the imposing exterior. It can suggest permanence, but its early domestic life\nwas disrupted almost immediately. The story turns on that mismatch: a carefully planned\nnew home meeting a crisis its plans could not contain. Its owners departed; the larger\ncity still had to endure the outbreak.\n",
+    "teaser": "The Bellamy house went up between 1859 and 1861, and soon afterward Wilmington's circumstances changed.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-household-that-fled-yellow-fever/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 59.3,
+        "audioBytes": 949228
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-household-that-fled-yellow-fever",
-        "durationS": 71
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-inn-that-travels-in-time",
@@ -14945,8 +15002,8 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": false,
       "convictionStatus": "unsolved",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-07",
+      "reviewedAt": "2026-11-07",
       "contentWarning": "This echo describes a suspicious fire. Nobody is described as hurt."
     },
     "remoteness": 0,
@@ -14972,7 +15029,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 67,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14982,18 +15039,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "A kitchen can look like a modest supporting building. Here, it carries part of the\nproperty's first life.\n\nThe museum identifies the detached kitchen as the former jailer's quarters. When the\nsite became a residence, the small structure gained a new domestic role.\n\nThat reuse matters. Wilmington's early buildings were working resources, not untouched\nmonuments. Owners adapted what already existed, and the resulting place kept traces of\nseveral purposes.\n\nIf you are on an authorized tour, let the scale of the kitchen pull your attention away\nfrom the grander house. Food preparation required heat, repeated tasks, and labor that a\npolished dining room could conceal. The building connects those ordinary demands with an\neven earlier responsibility: watching over the people confined on this corner.\n",
     "teaser": "A kitchen can look like a modest supporting building.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-kitchen-with-an-earlier-job/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.3,
+        "audioBytes": 870234
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-kitchen-with-an-earlier-job",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-lodge-on-orange-street",
@@ -15009,7 +15067,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 65,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15017,20 +15075,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The historic St. John's Lodge building dates to 1804. Its later uses included an art\nmuseum, and it now belongs to the Children's Museum complex.\n\nThis stop concerns the surviving building rather than the original purpose of every room\ninside today's museum.\n\nLook at the old structure from Orange Street. Its long life illustrates how an\ninstitution's needs can change while useful architecture remains.\n\nA lodge, an art gallery, and a children's learning space bring very different activities\nto an address. The connection is the building that could accommodate new possibilities.\nPreservation here did not mean keeping only one use forever. It meant retaining a\nsubstantial piece of downtown while finding reasons for later generations to cross its\nthreshold.\n",
+    "script": "The historic St. John's Lodge building dates to 1804. Its later uses included an art\nmuseum, and it now belongs to the Children's Museum complex.\n\nThis stop concerns the surviving building rather than the original purpose of every room\ninside today's museum.\n\nLook at the old structure from Orange Street. Its long life illustrates how an\ninstitution's needs can change while useful architecture remains.\n\nA lodge, an art gallery, and a children's learning space bring very different activities\nto an address. The connection is the building that could accommodate new possibilities.\nPreservation here did not mean freezing its use forever. It meant retaining a\nsubstantial piece of downtown while finding reasons for later generations to cross its\nthreshold.\n",
     "teaser": "The historic St. John's Lodge building dates to 1804.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-lodge-on-orange-street/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53.2,
+        "audioBytes": 851843
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-lodge-on-orange-street",
-        "durationS": 65
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-longest-line",
@@ -15046,7 +15105,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 52,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15054,20 +15113,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "In 1840, Wilmington gained a connection that reached far beyond the riverfront.\n\nThe Wilmington and Weldon Railroad opened a continuous line of about 161 miles. At\ncompletion, it was regarded as the longest continuous railroad line in the world.\n\nThat achievement changed how the port could connect with inland markets. The river\nremained important, but goods and passengers had another long route into and out of the\ncity.\n\nListen beside the historical marker. Do not enter the rail corridor. The impressive part\nis not merely the distance: every mile had to function as part of one connected system.\nWilmington's story widened along those rails. The city was no longer only a place\nreached by the river; it became an endpoint in a much larger network.\n",
+    "script": "In 1840, Wilmington gained a connection that reached far beyond the riverfront.\n\nThe Wilmington and Weldon Railroad opened a continuous line of about 161 miles. At\ncompletion, it was regarded as the longest continuous railroad line in the world.\n\nThat achievement changed how the port could connect with inland markets. The river\nremained important, but goods and passengers had another long route into and out of the\ncity.\n\nListen beside the historical marker. Do not enter the rail corridor. The impressive part\nis not merely the distance: every mile had to function as part of a connected system.\nWilmington's story widened along those rails. The city was no longer only a place\nreached by the river; it became an endpoint in a much larger network.\n",
     "teaser": "In 1840, Wilmington gained a connection that reached far beyond the riverfront.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-longest-line/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52.2,
+        "audioBytes": 835543
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-longest-line",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-mansion-they-tried-to-burn",
@@ -15101,8 +15161,8 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": false,
       "convictionStatus": "unsolved",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-07",
+      "reviewedAt": "2026-11-07",
       "contentWarning": "This echo describes an arson attack on the house. Nobody is described as hurt."
     },
     "remoteness": 0,
@@ -15128,7 +15188,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 73,
+    "durationS": 57,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15136,25 +15196,26 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "An old family home can continue by becoming something its builders never anticipated.\n\nAfter William Latimer's death in 1923, Margaret Latimer took in boarders. The museum\nrecords that artist Elisabeth Chant later rented a room here.\n\nThat shift brought additional lives into a house strongly identified with one family.\nPrivate rooms became lodgings; a formal residence gained a practical way to keep\noperating.\n\nLook at the windows from Third Street. They do not reveal which occupant belonged to\nwhich period. A mansion can conceal a boarding house in plain sight, because a changed\nuse does not always require a changed facade.\n\nThe house survived partly through adaptation. Its story is therefore more than an\naccount of affluent beginnings. It also includes the choices that allowed a large, aging\nbuilding to remain useful.\n",
+    "script": "An old family home can continue by becoming something its builders never anticipated.\n\nAfter William Latimer's death in 1923, Margaret Latimer took in boarders. The museum\nrecords that artist Elisabeth Chant later rented a room here.\n\nThat shift brought additional lives into a house strongly identified with a single\nfamily. Private rooms became lodgings; a formal residence gained a practical way to keep\noperating.\n\nLook at the windows from Third Street. They do not reveal which occupant belonged to\nwhich period. A mansion can conceal a boarding house in plain sight, because a changed\nuse does not always require a changed facade.\n\nThe house survived partly through adaptation. Its story is therefore more than an\naccount of affluent beginnings. It also includes the choices that allowed a large, aging\nbuilding to remain useful.\n",
     "teaser": "An old family home can continue by becoming something its builders never anticipated.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-mansion-with-boarders/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 57,
+        "audioBytes": 913701
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-mansion-with-boarders",
-        "durationS": 73
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-mill-inside-the-shopping-district",
-    "title": "The Mill Inside the Shopping District",
-    "summary": "The Cotton Exchange can feel like a collection of old shops.",
+    "title": "Cotton Behind the Shopfronts",
+    "summary": "The Cotton Exchange's shops sit in buildings tied to the cotton trade that once made this port a world market.",
     "point": {
       "at": {
         "lat": 34.2395,
@@ -15165,7 +15226,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 60,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15173,25 +15234,26 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The Cotton Exchange can feel like a collection of old shops. One of its earlier chapters\ninvolved something much less leisurely: milling.\n\nDowntown's business association identifies part of the complex with a flour and hominy\nmill before later alterations and cotton-business use. The connected buildings\naccumulated different jobs rather than appearing all at once as a shopping destination.\n\nWalk through only the passages open to visitors. Notice the changes in level and\nconstruction. They make more sense when you think of separate working buildings joined\ninto a modern experience.\n\nThe name Cotton Exchange highlights one phase. Milling reminds us that waterfront\ncommerce included everyday food as well as export goods. Behind the present storefronts\nlies a city that processed, stored, sold, and shipped the things people needed.\n",
-    "teaser": "The Cotton Exchange can feel like a collection of old shops.",
+    "script": "These buildings can feel like a collection of old shops. Their name points to the trade\nthat once ran this waterfront.\n\nAt this address, a National Register survey lists a two-story brick building of 1919 and\n1920, designed by Henry Bonitz for Alexander Sprunt's company. Led by Alexander Sprunt\nand Son, Wilmington's cotton export trade served Bremen, Liverpool and other European\ncities. By 1915 the port handled one fifth of the cotton crop of North and South\nCarolina.\n\nKeep to the passages open to visitors. Next door, a storefront was taken out to make an\nopen-air entry into the complex.\n\nThe trade faded. Textile mills in the Piedmont used more of the cotton at home,\nand World War One closed the German market. Behind the present storefronts lies a city\nthat stored, sold, and shipped what the world wanted.\n",
+    "teaser": "These shops sit in buildings tied to the cotton trade that once made this port a world market.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-mill-inside-the-shopping-district/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 60,
+        "audioBytes": 961767
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-mill-inside-the-shopping-district",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-movie-theater-in-a-tent",
-    "title": "The Movie Theater in a Tent",
-    "summary": "Would you go to the movies inside a tent?",
+    "title": "The Theater That Left Its Name",
+    "summary": "A theater called the Bijou once stood on Front Street. Can you find what it left behind?",
     "point": {
       "at": {
         "lat": 34.23807,
@@ -15202,7 +15264,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "short",
-    "durationS": 68,
+    "durationS": 45,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15210,21 +15272,22 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Would you go to the movies inside a tent? Wilmington's Bijou began that way in 1906,\nwith folding chairs for its audience.\n\nLater, a permanent theater took its place. The theater itself is gone now, but this park\nremembers it, including preserved tiles from the old building.\n\nStand on the open path and imagine choosing a chair before a show. The people coming\nhere were discovering a new kind of entertainment, not visiting an old landmark.\n\nNow you can visit the place where they gathered. Look for the name Bijou among the\npreserved features, without touching them. A small piece of lettering can help a big\nstory survive. The screen disappeared, but the park keeps a reminder of Wilmington's\nearly moviegoing days right on Front Street.\n",
-    "teaser": "Would you go to the movies inside a tent?",
+    "script": "Long ago, a theater called the Bijou stood on Front Street. The building is gone now,\nbut this little park still carries its name.\n\nPeople who study old buildings wrote down a six-sided tile panel set in the sidewalk\nhere. It marked the theater's front door.\n\nStand on the open path and imagine people lining up for a show. They could not guess\ntheir theater would someday become a park.\n\nNow look around for a dog on a leash. It is not a real dog. It is made of steel and\nfound objects. Artist Paul Hill made it, and it is called Straining to Be.\n\nA small piece of tile can help a big story survive. The theater disappeared, but the\npark keeps its name right on Front Street.\n",
+    "teaser": "A theater called the Bijou once stood on Front Street. Can you find what it left behind?",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/wilmington-the-movie-theater-in-a-tent/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 45,
+        "audioBytes": 721022
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/wilmington-the-movie-theater-in-a-tent",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-museum-moves-with-the-rails",
@@ -15278,7 +15341,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 67,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15286,20 +15349,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The wartime welcome offered here had a boundary. Wilmington's USO facilities were\nsegregated.\n\nThe city's history records a separate club on Nixon Street for African American service\nmembers. Today's museum includes a tribute to the Ninth and Nixon USO, preserving a\nstory that this building alone cannot fully represent.\n\nYou are at the interpretive site, not at that other club's original address. The\ndistinction matters. A visitor who hears only about this downtown center could mistake\none part of the wartime experience for everyone's experience.\n\nIf the exhibit is open, pause before the tribute. Both clubs served people preparing for\nmilitary duty, but their separation reflected the racial restrictions of civilian\nAmerica. Remembering the welcome requires remembering who was directed to a different\ndoor.\n",
+    "script": "The wartime welcome offered here had a boundary. Wilmington's USO facilities were\nsegregated.\n\nThe museum's history records a separate club on Nixon Street for African American\nservice members. Today's museum includes a tribute to the Ninth and Nixon USO,\npreserving a story that this building alone cannot fully represent.\n\nYou are at the interpretive site, not at that other club's original address. The\ndistinction matters. A visitor who hears about this downtown center alone could\nmistake a single part of the wartime experience for everyone's experience.\n\nIf the exhibit is open, pause before the tribute. Both clubs served people in uniform,\nbut they were kept apart by race. Remembering the welcome requires remembering who was\ndirected to a different door.\n",
     "teaser": "The wartime welcome offered here had a boundary.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-other-wartime-uso/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52.9,
+        "audioBytes": 847246
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-other-wartime-uso",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-painting-with-a-river-journey",
@@ -15315,7 +15379,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 69,
+    "durationS": 57,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15323,20 +15387,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "St. James preserves the story of Ecce Homo, a painting associated with the capture of a\nSpanish privateer vessel near Brunswick Town in 1748.\n\nThe parish's account says the salvaged painting went first to St. Philip's Church and\nlater to St. James after Brunswick Town was abandoned. Its artist remains uncertain.\n\nIn 2026, the parish reported sending the painting for conservation. This stop therefore\nconnects you with its history, not a promise that it is currently hanging inside.\n\nStand outside and consider an artwork that outlasted changes in location and care. Its\nstory is not only what it depicts. The journeys, the uncertain attribution, and the work\nneeded to stabilize the canvas all belong to it. The object survives because later\npeople keep accepting responsibility for its future.\n",
+    "script": "St. James preserves the story of Ecce Homo, a painting associated with the capture of a\nSpanish privateer vessel near Brunswick Town in 1748.\n\nThe parish's account says the salvaged painting went first to St. Philip's Church and\nlater to St. James after Brunswick Town was abandoned. Its artist remains uncertain.\n\nThe parish has reported sending the painting to Durham for conservation. This stop\ntherefore connects you with its history, not a promise that it is currently hanging inside.\n\nStand outside and consider an artwork that outlasted changes in location and care. Its\nstory is more than what it depicts. The journeys, the uncertain attribution, and the work\nneeded to stabilize the canvas all belong to it. The object survives because later\npeople keep accepting responsibility for its future.\n",
     "teaser": "St. James preserves the story of Ecce Homo, a painting associated with the capture of a Spanish privateer vessel near Brunswick Town in 1748.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-painting-with-a-river-journey/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 56.6,
+        "audioBytes": 907014
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-painting-with-a-river-journey",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-park-that-became-a-promise",
@@ -15433,7 +15498,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 70,
+    "durationS": 63,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15443,18 +15508,19 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Historic Wilmington Foundation began in 1966, when preservation advocates organized to\nprotect the city's historic places.\n\nDowntown survival was not automatic. Buildings could be neglected, demolished, or\ntreated as obstacles to a different kind of development. The foundation made\npreservation an ongoing community effort.\n\nThis Orange Street address is its present headquarters, an associated site rather than\nthe setting of every early campaign. From the sidewalk, look at the neighboring streets\nas a collection of individual decisions.\n\nAn old building remains because someone maintains it, finds it useful, or argues for its\nvalue. A historic district is the accumulated result. The foundation's story helps\nexplain why downtown Wilmington still offers more than a list of vanished places. Many\nof its stories retain walls, doors, and street corners you can encounter.\n",
     "teaser": "Historic Wilmington Foundation began in 1966, when preservation advocates organized to protect the city's historic places.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-people-who-decided-to-save-downtown/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 62.9,
+        "audioBytes": 1007324
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-people-who-decided-to-save-downtown",
-        "durationS": 70
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-plasterer-who-became-a-legislator",
@@ -15470,7 +15536,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "feature",
-    "durationS": 186,
+    "durationS": 165,
     "minAge": 0,
     "quality": 0.8,
     "visibility": "at-hand",
@@ -15478,20 +15544,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the plaster where the wall meets the ceiling. The leaves, the scrolls, the\nrun of it around the whole room. That was pressed into place wet, by hand, and it had to\nbe finished before it set. There is no going back over plaster.\n\nSome of the hands that did this work belonged to men who were owned.\n\nThe house was designed for a wealthy physician and merchant, Doctor John Bellamy. It\nwent up between eighteen fifty-nine and eighteen sixty-one, and the museum's own account\nis plain about who did the work: skilled enslaved workers and local free Black artisans.\nTwenty-two rooms. Ten thousand square feet.\n\nOne of the plasterers was a man named George Price.\n\nHold that, because the next part happens quickly.\n\nSeven years after the plaster dried, in eighteen sixty-eight, George Price was elected\nto the North Carolina state legislature, as one of three representatives for New Hanover\nCounty.\n\nThe same year, on the fourth of July, President Johnson issued an amnesty to former\nConfederates. A man was pardoned for the war he had lost, and another, who had been\nproperty while this ceiling was going up, was sent to help write the laws.\n\nThat day is worth standing in for a moment.\n\nWhite Wilmington did not come out. The town's own paper, the Daily Journal, reported it\nwith its teeth showing. The only public demonstrations, it said, were not by the whites,\nfor whom the Declaration was made, but by negro organizations of small boys and the fire\ncompanies, parading the streets, rejoicing in a new found feeling of patriotism which\nthey are incapable of analyzing.\n\nHear that again. A newspaper watching Black children march on Independence Day, and\ndeciding the problem was that they did not understand it.\n\nThey understood it.\n\nAnd then it was ordinary. For thirty years, Black Wilmingtonians served as elected\nofficials, ran businesses, worked as civil servants, led civic life, in the same streets\nyou are standing in.\n\nIt did not fade out. It was taken. In eighteen ninety-eight Democrats forcefully\ninstalled a new city government, and the coup was followed by a massacre. North Carolina\nmoved quickly to disenfranchise Black voters. The museum's account gives the aftermath a\nsingle flat sentence: it would take over sixty years and the struggle for Civil Rights\nfor freedom and equality for all to come into focus once again.\n\nLook back at the ceiling.\n\nThe plaster George Price put up is still there. It outlasted his seat in the legislature\nby more than a century.\n",
+    "script": "Look at the plastered walls around you. Plaster goes on wet, by hand, and it has to be\nfinished before it sets. There is no going back over plaster.\n\nSome of the hands that did this work belonged to men who were owned.\n\nThe house was designed for a wealthy physician and merchant, Doctor John Bellamy. It\nwent up between eighteen fifty-nine and eighteen sixty-one, and the museum's own account\nis plain about who did the work: skilled enslaved workers and local free Black artisans.\nTwenty-two rooms. Ten thousand square feet.\n\nOne of the plasterers was a man named George Price.\n\nHold that, because the next part happens quickly.\n\nSeven years after the plaster dried, in eighteen sixty-eight, George Price was elected\nto the North Carolina state legislature, as one of three representatives for New Hanover\nCounty.\n\nThe same year, on the fourth of July, President Johnson issued an amnesty to former\nConfederates. A man was pardoned for the war he had lost, and another, who had been\nproperty while this ceiling was going up, was sent to help write the laws.\n\nThat day is worth standing in for a moment.\n\nWhite Wilmington did not come out. The town's own paper, the Daily Journal, reported it\nwith its teeth showing. The only public demonstrations, it said, were not by the whites,\nfor whom the Declaration was made, but by negro organizations of small boys and the fire\ncompanies, parading the streets, rejoicing in a new found feeling of patriotism which\nthey are incapable of analyzing.\n\nHear that again. A newspaper watching Black children march on Independence Day, and\ndeciding the problem was that they did not understand it.\n\nThey understood it.\n\nAnd then it was ordinary. For thirty years, Black Wilmingtonians served as elected\nofficials, ran businesses, worked as civil servants, led civic life, in the same streets\nyou are standing in.\n\nIt did not fade out. It was taken. In eighteen ninety-eight Democrats forcefully\ninstalled a new city government, and the coup was followed by a massacre. North Carolina\nmoved quickly to disenfranchise Black voters. The museum's account gives the aftermath a\nsingle flat sentence: it would take over sixty years and the struggle for Civil Rights\nfor freedom and equality for all to come into focus once again.\n\nLook back at the walls.\n\nThe house George Price helped finish is still standing. It has outlasted his seat in the\nlegislature by more than a century.\n",
     "teaser": "He was property when he plastered these walls.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-plasterer-who-became-a-legislator/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 164.8,
+        "audioBytes": 2638201
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-plasterer-who-became-a-legislator",
-        "durationS": 186
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-press-that-the-mob-burned",
@@ -15515,7 +15582,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "An ordinary block can hold the site of an extraordinary assault. On November 10, 1898, a\nwhite supremacist mob came to the Daily Record, Wilmington's Black-owned newspaper.\n\nThe newspaper occupied Free Love Hall on this Seventh Street block. The mob invaded the\nbuilding and set it ablaze. Editor Alex Manly had already fled, anticipating the\nviolence.\n\nThis was part of the Wilmington coup, not an isolated dispute over a newspaper.\nDestroying the press attacked a community's ability to speak while armed violence spread\nthrough the city.\n\nThe original building is gone. Listen from the public sidewalk rather than entering\ntoday's property. Its absence does not make the event less specific. Here, printed words\nwere answered with fire. The record we can recover belongs to the people whose right to\npublish was attacked.\n",
+    "script": "An ordinary block can hold the site of an extraordinary assault. On November 10, 1898, a\nwhite supremacist mob came to the Daily Record, Wilmington's Black-owned newspaper.\n\nThe newspaper's office was in Free Love Hall, on Seventh Street between Nun and Church\nstreets. The mob invaded the building, and a fire broke out that consumed its top floor.\nEditor Alex Manly had already fled the city, expecting violence.\n\nThis was part of the Wilmington coup, not an isolated dispute over a newspaper.\nDestroying the press attacked a community's ability to speak while armed violence spread\nthrough the city.\n\nThe original building is gone. Listen from the public sidewalk rather than entering\ntoday's property. Its absence does not make the event less specific. Here, printed words\nwere answered with fire. The record we can recover belongs to the people whose right to\npublish was attacked.\n",
     "teaser": "An ordinary block can hold the site of an extraordinary assault.",
     "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
@@ -15525,8 +15592,8 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": false,
       "convictionStatus": "alleged",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-07",
+      "reviewedAt": "2026-11-07",
       "contentWarning": "This echo describes racial violence and the overthrow of an elected government. No violence is described in detail."
     },
     "remoteness": 0.18,
@@ -15552,7 +15619,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 69,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15560,25 +15627,26 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The railroad remembered here did not begin with the name Wilmington and Weldon. It was\noriginally chartered as the Wilmington and Raleigh Railroad.\n\nIts completed route reached Weldon instead of the state capital. The later name\nreflected the connection that actually existed rather than the destination first\nimagined.\n\nThat small naming change contains a larger lesson about infrastructure. A plan on paper\nis a proposal; a working line is the result of decisions, geography, financing, and\nconstruction.\n\nLook at the name on the marker. It records the outcome, while the earlier title\npreserves the ambition. Wilmington's future was not delivered in one straight line from\nidea to result. The railway became important through the route that could be built, and\nthe city learned to use the connection it obtained.\n",
+    "script": "The railroad remembered here did not begin with the name Wilmington and Weldon. It was\noriginally chartered as the Wilmington and Raleigh Railroad.\n\nIts completed route reached Weldon instead of the state capital. The later name\nreflected the connection that actually existed rather than the destination first\nimagined.\n\nThat small naming change contains a larger lesson about infrastructure. A plan on paper\nis a proposal; a working line is the result of decisions, geography, financing, and\nconstruction.\n\nLook at the name on the marker. It records the outcome, while the earlier title\npreserves the ambition. The city's future was not delivered in a straight line from\nidea to result. The railway became important through the route that could be built, and\nthe city learned to use the connection it obtained.\n",
     "teaser": "The railroad remembered here did not begin with the name Wilmington and Weldon.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-railroad-called-raleigh/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.9,
+        "audioBytes": 879429
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-railroad-called-raleigh",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-shop-that-made-the-parts",
     "title": "The Shop That Made the Parts",
-    "summary": "Wilmington Iron Works made components for the machinery that kept the port city functioning.",
+    "summary": "Wilmington Iron Works made custom metal goods, from fences to engines, for the city's industries.",
     "point": {
       "at": {
         "lat": 34.23262,
@@ -15589,7 +15657,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 66,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15597,20 +15665,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Wilmington Iron Works made components for the machinery that kept the port city\nfunctioning. The city's history lists products ranging from fences to parts for\nlocomotives and steamboats.\n\nThis building began as a warehouse and was later reconstructed in brick. In 2025,\nWilmington designated the former machine shop a local historic landmark.\n\nListen from the public sidewalk. A waterfront economy needs more than ships and cargo.\nEquipment wears out; parts must be produced, repaired, and fitted.\n\nThe shop's importance lies in that supporting work. Its products could leave the\nbuilding and become nearly invisible inside larger machines. The surviving structure\nrestores a place to that labor, reminding you that the city depended on skilled\nmanufacturing behind the more dramatic scenes of transportation.\n",
-    "teaser": "Wilmington Iron Works made components for the machinery that kept the port city functioning.",
+    "script": "Wilmington Iron Works made custom metal goods for many kinds of industry in the port\ncity. Its products ranged from doors and fences to engines, boilers, locomotives and\nsteamboats.\n\nThis building began as a warehouse and was later reconstructed in brick. In 2025, the\ncity council voted to make the former machine shop a local historic landmark.\n\nListen from the public sidewalk. A waterfront economy needs more than ships and cargo.\nEquipment wears out; parts must be produced, repaired, and fitted.\n\nThe shop's importance lies in that supporting work. Its products could leave the\nbuilding and become nearly invisible inside larger machines. The surviving structure\nrestores a place to that labor, reminding you that the city depended on skilled\nmanufacturing behind the more dramatic scenes of transportation.\n",
+    "teaser": "Wilmington Iron Works made custom metal goods, from fences to engines, for the city's industries.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-shop-that-made-the-parts/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54,
+        "audioBytes": 864382
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-shop-that-made-the-parts",
-        "durationS": 66
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-stars-came-through-wilmington",
@@ -15626,7 +15695,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 67,
+    "durationS": 45,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15634,20 +15703,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Thalian Hall's history lists appearances by performers including Lillian Russell,\nBuffalo Bill Cody, and John Philip Sousa.\n\nThey brought different kinds of entertainment, but their presence made the same point:\nWilmington belonged to a national touring circuit. A port city could receive artistic\ntraffic as well as commercial cargo.\n\nWe do not need to invent the sound of a particular concert or borrow a famous tune. The\ndocumented appearances are enough to establish the connection.\n\nStand outside the theater and consider the practical journey behind a celebrated name.\nPerformers, equipment, schedules, and audiences had to meet here on the same date. The\nbuilding supplied the local end of that arrangement. For an evening, a touring\nreputation became something Wilmington residents could experience together.\n",
+    "script": "Thalian Hall's history lists appearances by performers including Lillian Russell,\nBuffalo Bill Cody, and John Philip Sousa.\n\nThey brought different kinds of entertainment, but their presence made the same point:\nWilmington belonged to a national touring circuit. A port city could receive artistic\ntraffic as well as commercial cargo.\n\nStand outside the theater and consider the practical journey behind a celebrated name.\nPerformers, equipment, schedules, and audiences had to meet here on the same date. The\nbuilding supplied the local end of that arrangement. For an evening, a touring\nreputation became something local residents could experience together.\n",
     "teaser": "Thalian Hall's history lists appearances by performers including Lillian Russell, Buffalo Bill Cody, and John Philip Sousa.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-stars-came-through-wilmington/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 45.3,
+        "audioBytes": 726456
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-stars-came-through-wilmington",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-theatre-inside-the-tv-town",
@@ -15707,7 +15777,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "short",
-    "durationS": 67,
+    "durationS": 49,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15715,26 +15785,27 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "In April 2011, model railroaders made a very small kind of train do something very big\ninside this convention center.\n\nThey connected thirty-one model locomotives and 1,563 cars. The train stretched more\nthan nine hundred feet and completed the run needed for a Guinness world record.\n\nThe event is over; there is no promise that the record train is waiting inside today.\nBut this is the building where it happened.\n\nLook at its size from the public sidewalk. One tiny car would be easy to hold.\nConnecting more than fifteen hundred of them created a problem of teamwork, space, and\ncareful movement. The achievement was not just owning lots of pieces. It was making all\nthose pieces work together as one astonishing train.\n",
+    "script": "In April 2011, model railroaders made a very small kind of train do something very big\ninside this convention center.\n\nThey connected thirty-one model locomotives and 1,563 cars. The train stretched more\nthan nine hundred feet and completed the run needed for a Guinness world record.\n\nThe event is over; there is no promise that the record train is waiting inside today.\nBut this is the building where it happened.\n\nLook at its size from the public sidewalk. A tiny car would be easy to hold.\nConnecting more than fifteen hundred of them created a problem of teamwork, space, and\ncareful movement. The achievement was not just owning lots of pieces. It was making\nall those pieces work together as a single astonishing train.\n",
     "teaser": "In April 2011, model railroaders made a very small kind of train do something very big inside this convention center.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/wilmington-the-tiny-train-with-a-huge-record/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 49.1,
+        "audioBytes": 787060
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/wilmington-the-tiny-train-with-a-huge-record",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-tree-kept-in-watercolor",
     "title": "The Tree Kept in Watercolor",
-    "summary": "The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould Latimer among his works.",
+    "summary": "The Latimer museum counts Henry Gould Latimer's 1918 depiction of Wilmington's Dram Tree among his most popular works.",
     "point": {
       "at": {
         "lat": 34.23359,
@@ -15745,7 +15816,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 68,
+    "durationS": 52,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15753,20 +15824,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould\nLatimer among his works.\n\nA tree that no longer survives can remain available through art. The painting records an\nartist's view, not a replacement for the actual tree or a photograph of every detail.\n\nYou are at the house associated with the artist and the collection. If the work is\navailable on your authorized visit, look first at what the artist chose to emphasize. Do\nnot assume every object in the collection is always on display.\n\nThe image gives the vanished landmark a different kind of life. Waterfront memory moved\nfrom a living tree into paper, pigment, and preservation. An artist's decision to look\nclosely became something later Wilmington visitors could still encounter.\n",
-    "teaser": "The Latimer museum identifies a 1918 watercolor of Wilmington's Dram Tree by Henry Gould Latimer among his works.",
+    "script": "The Latimer museum counts Henry Gould Latimer's 1918 depiction of Wilmington's Dram Tree\namong his most popular works. Latimer trained as an artist and painted in watercolor.\n\nA tree can remain available through art. The picture records an artist's view, not a\nreplacement for the actual tree or a photograph of every detail.\n\nYou are at the house associated with the artist and the collection. If the work is\navailable on your authorized visit, look at what the artist chose to emphasize. Do\nnot assume every object in the collection is always on display.\n\nThe image gives the landmark a different kind of life. Memory of the tree moved into\npigment and preservation. An artist's decision to look closely became something later\nWilmington visitors could still encounter.\n",
+    "teaser": "The Latimer museum counts Henry Gould Latimer's 1918 depiction of Wilmington's Dram Tree among his most popular works.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-tree-kept-in-watercolor/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 51.8,
+        "audioBytes": 829692
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-tree-kept-in-watercolor",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-tv-bar-that-became-a-real-bar",
@@ -15826,7 +15898,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 68,
+    "durationS": 56,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15834,25 +15906,26 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The USO's wartime program included big-band dances, plays, recitals, and radio\nbroadcasts. Entertainment was part of what the building offered people far from home.\n\nThat did not make the war disappear. It gave service members a temporary change of\nrhythm: a chance to listen, move, and join a crowd for reasons other than military duty.\n\nStand in the open lobby if permitted, or listen from the sidewalk. The building helps\nyou locate the idea without pretending a particular dance is happening around you.\n\nArt can do practical work. A song or performance may help a stranger feel less isolated,\neven when the larger circumstances remain difficult. Here, organized entertainment\nbelonged to a wider effort of hospitality. The dance floor was one way Wilmington\noffered an evening's company.\n",
+    "script": "The USO's wartime program included big-band dances, plays, recitals, and radio\nbroadcasts. Entertainment was part of what the building offered people far from home.\n\nThat did not make the war disappear. It gave service members a temporary change of\nrhythm: a chance to listen, move, and join a crowd for reasons other than military duty.\n\nStand in the open lobby if permitted, or listen from the sidewalk. The building helps\nyou locate the idea without pretending a particular dance is happening around you.\n\nArt can do practical work. A song or performance can help a stranger feel less isolated,\neven when the larger circumstances remain difficult. Here, organized entertainment\nbelonged to a wider effort of hospitality. The dance floor was one way Wilmington\noffered an evening's company.\n",
     "teaser": "The USO's wartime program included big-band dances, plays, recitals, and radio broadcasts.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-the-wartime-dance-floor/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55.5,
+        "audioBytes": 889878
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-the-wartime-dance-floor",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-the-wilmington-ten-and-the-missing-evidence",
     "title": "The Wilmington Ten and the Missing Evidence",
-    "summary": "This block was a gathering place for students protesting unequal treatment during school desegregation in 1971.",
+    "summary": "In 1971, students protesting unequal treatment in desegregating schools made a Wilmington church their headquarters.",
     "point": {
       "at": {
         "lat": 34.23098,
@@ -15863,7 +15936,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "true-crime",
     "format": "short",
-    "durationS": 70,
+    "durationS": 61,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15871,9 +15944,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This block was a gathering place for students protesting unequal treatment during school\ndesegregation in 1971. Nearby, Mike's Grocery was firebombed.\n\nTen people were convicted on charges connected with the fire. Their case became known as\nthe Wilmington Ten. The evidence and prosecution were later exposed as deeply flawed,\nincluding perjured testimony.\n\nThe convictions were overturned by the federal appeals court in 1980. Governor Beverly\nPerdue issued pardons in 2012. Responsibility for the grocery arson remains unclear;\nthese ten people should not be presented as its proven perpetrators.\n\nListen beside the marker, not inside the church without permission. This true crime\nstory includes a crime committed against justice itself: people losing years while a\nfalse case was challenged. The ending is correction, but correction cannot return the\ntime already taken.\n",
-    "teaser": "This block was a gathering place for students protesting unequal treatment during school desegregation in 1971.",
+    "script": "In 1971, students protesting unequal treatment during school desegregation made a\nlocal church their headquarters. In February 1971, Mike's Grocery was firebombed.\n\nTen people were convicted on charges connected with the fire. Their case became known\nas the Wilmington Ten. The evidence and prosecution were later exposed as deeply\nflawed, including perjured testimony.\n\nThe convictions were overturned by the federal appeals court in 1980. Governor Beverly\nPerdue issued pardons in 2012. Responsibility for the grocery arson remains unclear;\nthese ten people should not be presented as its proven perpetrators.\n\nListen beside the marker, not inside the church without permission. This true crime\nstory includes a crime committed against justice itself: people losing years while a\nfalse case was challenged. The ending is correction, but correction cannot return the\ntime already taken.\n",
+    "teaser": "In 1971, students protesting unequal treatment in desegregating schools made a Wilmington church their headquarters.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/wilmington-the-wilmington-ten-and-the-missing-evidence/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 60.5,
+        "audioBytes": 968454
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
@@ -15881,22 +15962,15 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": true,
       "convictionStatus": "exonerated",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-07",
+      "reviewedAt": "2026-11-07",
       "contentWarning": "This echo describes an arson and a wrongful conviction. Nothing is described in detail."
     },
-    "remoteness": 0.14,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/wilmington-the-wilmington-ten-and-the-missing-evidence",
-        "durationS": 70
-      }
-    ]
+    "remoteness": 0.14
   },
   {
     "id": "wilmington-thirty-years-along-the-river",
-    "title": "Thirty Years Along the River",
+    "title": "The Long Walk Beside the River",
     "summary": "The Riverwalk can feel like something the city always had.",
     "point": {
       "at": {
@@ -15908,7 +15982,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15916,20 +15990,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The Riverwalk can feel like something the city always had. Its construction instead\nunfolded over about thirty years.\n\nWilmington marked its completion in November 2017. The city describes a route running\nfrom Nun Street toward the Isabel Holmes Bridge, linking a long stretch of downtown\nwaterfront.\n\nThat project changed how people could encounter the river. A sequence of working and\ncommercial edges became a connected public experience.\n\nPause without blocking the path. The people moving past you are using the result of many\nseparate planning and building decisions. The story is not one spectacular opening but\npersistence over time. Wilmington gradually made a continuous place to walk beside the\nwater that had shaped its economy long before visitors came here simply to enjoy the\nview.\n",
+    "script": "The Riverwalk can feel like something the city always had. The visitors bureau says it\nwas developed in the early 1980s.\n\nToday it stretches nearly two miles, from Nun Street to the Isabel Holmes Bridge,\nlinking a long stretch of downtown waterfront.\n\nThat project changed how people could encounter the river. A sequence of working and\ncommercial edges became a connected public experience.\n\nPause without blocking the path. The people moving past you are using the result of many\nseparate planning and building decisions. The story is not a single spectacular opening\nbut persistence over time. Wilmington gradually made a continuous place to walk beside\nthe water that had shaped its economy long before visitors came here simply to enjoy the\nview.\n",
     "teaser": "The Riverwalk can feel like something the city always had.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-thirty-years-along-the-river/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52.9,
+        "audioBytes": 847246
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-thirty-years-along-the-river",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-this-liberty-bell-came-from-the-river-fleet",
@@ -15945,7 +16020,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "short",
-    "durationS": 68,
+    "durationS": 48,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15953,21 +16028,22 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The museum lists a Liberty Bell salvaged from the Brunswick River Reserve Fleet among\nits displays.\n\nIt is not Philadelphia's famous Liberty Bell. The similar name belongs to a different\nobject with a different story.\n\nStand where you can see the display with your grown-up. Read the label before making\nguesses. That is one of the best tricks for exploring a museum: let the object surprise\nyou, then use the information nearby to learn what it really is.\n\nThis bell connects the museum with ships once gathered in the river fleet. An object can\nleave its first setting and still help us remember it. Here, something associated with\nthe water has come indoors, where you can stop, look closely, and ask how it reached\nthis new home.\n",
+    "script": "The museum lists a Liberty Bell salvaged from the Brunswick River Reserve Fleet among\nits displays.\n\nIt is not the famous cracked bell from history books. The similar name belongs to a\ndifferent object with a different story.\n\nStand where you can see the display with your grown-up. Read the label before making\nguesses. That is a great trick for exploring a museum: let the object surprise\nyou, then use the information nearby to learn what it really is.\n\nThis bell connects the museum with ships once gathered in the river fleet. An object can\nleave its old setting and still help us remember it. Here, something associated with\nthe water has come indoors, where you can stop, look closely, and ask how it reached\nthis new home.\n",
     "teaser": "The museum lists a Liberty Bell salvaged from the Brunswick River Reserve Fleet among its displays.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/wilmington-this-liberty-bell-came-from-the-river-fleet/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 48.2,
+        "audioBytes": 771595
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/wilmington-this-liberty-bell-came-from-the-river-fleet",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-thomas-wright-changes-the-house",
@@ -15983,7 +16059,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 68,
+    "durationS": 61,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15991,20 +16067,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Thomas Henry Wright inherited this house as a boy and later trained as a physician. In\n1845, he enlarged the property.\n\nThe museum's family timeline also connects him with banking and railroad leadership. A\nsingle resident's career could link domestic space with the institutions helping\nWilmington grow.\n\nLook at the house from the public corner. Its name joins two families, but even one\nfamily's occupancy included substantial change. Thomas did not receive a finished\nmuseum; he received a working residence that could be adapted.\n\nThe expansion gives his life a physical consequence here. The rooms belonged to\ndifferent decisions made at different times. His story helps explain why the building\ncannot be read as one moment in 1770. Later occupants continued to shape the place they\ninherited.\n",
+    "script": "Thomas Henry Wright inherited this house as a boy and later trained as a physician. In\n1845, he enlarged the property.\n\nThe museum's family timeline also connects him with banking and railroad leadership. He\nwas among the first directors of the Wilmington and Weldon Railroad and, from 1847,\npresident of the Bank of Cape Fear.\n\nLook at the house from the public corner. Its hyphenated name joins families, but even a\nsingle family's occupancy included substantial change. Thomas did not receive a finished\nmuseum; he received a working residence that could be adapted.\n\nThe expansion gives his life a physical consequence here. The rooms belonged to\ndifferent decisions made at different times. His story helps explain why the building\ncannot be read as one moment in 1770. Later occupants continued to shape the place they\ninherited.\n",
     "teaser": "Thomas Henry Wright inherited this house as a boy and later trained as a physician.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-thomas-wright-changes-the-house/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 60.8,
+        "audioBytes": 973887
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-thomas-wright-changes-the-house",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-three-buildings-become-a-play-place",
@@ -16020,7 +16097,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "short",
-    "durationS": 69,
+    "durationS": 50,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16028,21 +16105,22 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The Children's Museum did not move into one brand-new building. In 2004, it bought a\ngroup of three old buildings downtown.\n\nThey included a Masonic lodge, a Greek Orthodox church, and the Cowan house. The\nbuildings had already helped people meet, worship, and live before they became part of a\nplace for learning through play.\n\nLook at the complex with your grown-up. Can you notice differences between its parts?\nYou do not have to know every architectural name to recognize that they were not all\nbuilt as one piece.\n\nThis is a true story of finding a new use for old places. The museum kept important\nparts of downtown standing and brought children inside for a different purpose. A\nbuilding's first job does not have to be its last.\n",
+    "script": "The Children's Museum did not move into one brand-new building. In 2004, it bought a\ngroup of three old buildings downtown.\n\nThey included a Masonic lodge, a Greek Orthodox church, and the Cowan house. The\nbuildings had already helped people meet, worship, and live before they became part of a\nplace for learning through play.\n\nLook at the complex with your grown-up. Can you notice differences between its parts?\nYou do not have to know every building word to see that they were not all built\ntogether.\n\nThis is a true story of finding a new use for old places. The museum kept important\nparts of downtown standing and brought children inside for a different purpose. A\nbuilding can start out doing a job and later do something new.\n",
     "teaser": "The Children's Museum did not move into one brand-new building.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/wilmington-three-buildings-become-a-play-place/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 49.7,
+        "audioBytes": 796255
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/wilmington-three-buildings-become-a-play-place",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-three-shows-one-arcade",
@@ -16102,7 +16180,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 71,
+    "durationS": 60,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16110,20 +16188,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Thalian Hall is the only surviving theater designed by John Montague Trimble, according\nto its institutional history.\n\nThat makes this building more than a local survivor. It carries physical evidence of a\ntheater architect's work after his other theaters have disappeared.\n\nThe original project joined performance with municipal functions. Art and government\nshared a substantial downtown building rather than occupying separate civic worlds.\n\nFrom outside, notice how confidently the building addresses the street. A theater begins\nits work before an audience reaches a seat: the approach, entrance, and sense of\noccasion all matter.\n\nThe surviving structure lets today's visitors encounter a design that written\ndescriptions alone cannot replace. Trimble's name may be unfamiliar, but the building\nstill performs one part of his intention: making an arrival feel significant.\n",
+    "script": "Thalian Hall is the only surviving theater designed by John Montague Trimble, according\nto its institutional history.\n\nThat makes this building more than a local survivor. It carries physical evidence of a\ntheater architect's work after his other theaters have disappeared.\n\nThe original project joined performance with municipal functions. Art and government\nshared a substantial downtown building rather than occupying separate civic worlds.\n\nFrom outside, notice how confidently the building addresses the street. A theater begins\nits work before an audience reaches a seat: the approach, entrance, and sense of\noccasion all matter.\n\nThe surviving structure lets today's visitors encounter a design that written\ndescriptions alone cannot replace. The architect's name might be unfamiliar, but the\nbuilding still performs part of his intention: making an arrival feel significant.\n",
     "teaser": "Thalian Hall is the only surviving theater designed by John Montague Trimble, according to its institutional history.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-trimbles-surviving-theater/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 60.4,
+        "audioBytes": 967618
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-trimbles-surviving-theater",
-        "durationS": 71
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-twenty-four-hours-at-the-uso",
@@ -16177,7 +16256,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16185,20 +16264,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "In 1791, President George Washington visited Wilmington during his Southern Tour.\n\nHis diary described a compact town with some good houses and recorded a disagreement\nover how accurately the census represented its population. The visit gave the first\npresident a direct encounter with the developing port.\n\nThis marker commemorates the visit; it does not prove that he stood at the exact spot\nwhere you are listening. That difference keeps the scene honest.\n\nLook along the historic streets and imagine a president trying to understand a place by\nmoving through it. A tour could connect the new federal government with communities that\notherwise knew it through correspondence and law. Wilmington was one stop in that\neffort, and Washington left a brief written impression rather than a complete portrait.\n",
+    "script": "In April 1791, President George Washington reached Wilmington on his Southern Tour.\n\nHis journal described a compact town with some good houses, and a census count of about\na thousand people. Many locals felt that count was too low. The visit brought the\npresident face to face with the coastal port.\n\nThis marker commemorates the visit; it does not prove that he stood at the exact spot\nwhere you are listening. That difference keeps the scene honest.\n\nLook along the historic streets and imagine a president trying to understand a place by\nmoving through it. A tour could connect the new federal government with communities that\notherwise knew it through correspondence and law. Wilmington was one stop in that\neffort, and Washington left a brief written impression rather than a complete portrait.\n",
     "teaser": "In 1791, President George Washington visited Wilmington during his Southern Tour.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-washington-sees-the-port/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54,
+        "audioBytes": 865218
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-washington-sees-the-port",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-when-the-house-became-headquarters",
@@ -16214,7 +16294,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 67,
+    "durationS": 58,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16222,20 +16302,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "In 1865, the Bellamy mansion took on a job its owners had not planned.\n\nAfter Union forces entered Wilmington, military staff used the empty house as\nheadquarters. The property of a Confederate-supporting household became a place from\nwhich Union officers worked.\n\nThe change was part of a much larger upheaval. Wilmington's Confederate port economy was\ncollapsing, and emancipation was transforming the lives of the people whose labor had\nsustained households like this one.\n\nLook toward the entrance from the public sidewalk. The same rooms could serve domestic\nauthority in one period and military authority in another. Their walls did not settle\nthe conflict; occupation changed who controlled the space. A building that appears\nunified from outside can hold profoundly different histories of power within.\n",
+    "script": "In 1865, the Bellamy mansion took on a job its owners had not planned.\n\nAfter Union forces entered Wilmington, military staff used the empty house as\nheadquarters. The property of a household that backed secession became a place from\nwhich Union officers worked.\n\nThe change was part of a much larger upheaval. The federal government seized all of Dr.\nBellamy's property. He had enslaved 115 people, and emancipation was transforming the\nlives of the people whose labor had sustained households like this one.\n\nLook toward the entrance from the public sidewalk. The same rooms could serve domestic\nauthority in peacetime and military authority in war. Their walls did not settle the\nconflict; occupation changed who controlled the space. A building that appears unified\nfrom outside can hold profoundly different histories of power within.\n",
     "teaser": "In 1865, the Bellamy mansion took on a job its owners had not planned.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-when-the-house-became-headquarters/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 57.9,
+        "audioBytes": 927076
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-when-the-house-became-headquarters",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-when-the-stage-turned-electric",
@@ -16251,7 +16332,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 67,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16259,20 +16340,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "In 1909, Thalian Hall installed electric stage lights. Its renovation also changed the\nbalconies and proscenium, the frame around the stage.\n\nThe theater was adapting to new expectations instead of preserving every feature from\nits opening. The audience's view and the performers' working conditions could change\nwhile the building continued serving the same larger purpose.\n\nIf you can enter through an authorized visit, look toward the stage opening. The frame\ntells you where to direct attention; light tells you what to notice within it.\n\nFrom outside, the story still works. A historic theater is not one unaltered machine. It\nis a place repeatedly adjusted so performance can continue. The 1909 work reminds us\nthat what now looks traditional was once a substantial modern improvement.\n",
+    "script": "In 1909, Thalian Hall installed electric stage lights. Its renovation also changed the\nbalconies and proscenium, the frame around the stage.\n\nThe theater was adapting to new expectations instead of preserving every feature from\nits opening. The audience's view and the performers' working conditions could change\nwhile the building continued serving the same larger purpose.\n\nIf you can enter through an authorized visit, look toward the stage opening. The frame\ntells you where to direct attention; light tells you what to notice within it.\n\nFrom outside, the story still works. A historic theater is not an unaltered machine.\nIt is a place repeatedly adjusted so performance can continue. The 1909 work reminds\nus that what now looks traditional was once a substantial modern improvement.\n",
     "teaser": "In 1909, Thalian Hall installed electric stage lights.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-when-the-stage-turned-electric/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.4,
+        "audioBytes": 871070
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-when-the-stage-turned-electric",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-william-goulds-initials",
@@ -16326,7 +16408,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 68,
+    "durationS": 57,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16334,20 +16416,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "William Hooper arrived in Wilmington in 1764 and opened a law office. Twelve years\nlater, he signed the Declaration of Independence.\n\nThat national achievement can obscure the local beginning: a young lawyer building a\ncareer in a port town. Wilmington supplied professional relationships and a political\nsetting before the Continental Congress became his larger stage.\n\nYou are at a marker honoring that connection, not standing inside a verified surviving\noffice.\n\nLook along Third Street and think about how a public life begins. The later signature\ngives Hooper a place in national memory, but the earlier years consisted of work and\ndecisions whose consequences were still unknown. The marker brings the two scales\ntogether: a person's Wilmington chapter and the document that would define his\nreputation.\n",
+    "script": "William Hooper arrived in Wilmington in 1764 and opened a law office. Twelve years\nlater, he signed the Declaration of Independence.\n\nThat national achievement can obscure the local beginning: a young lawyer building a\ncareer in a port town. Wilmington supplied professional relationships and a political\nsetting: he represented New Hanover County in the Assembly before the Continental\nCongress became his larger stage.\n\nYou are at a marker honoring that connection, not standing inside a verified surviving\noffice.\n\nLook along Third Street and think about how a public life begins. The later signature\ngives him a place in national memory, but the earlier years consisted of work and\ndecisions whose consequences were still unknown. The marker brings both scales\ntogether: a person's local chapter and the document that would define his reputation.\n",
     "teaser": "William Hooper arrived in Wilmington in 1764 and opened a law office.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-william-hoopers-wilmington-beginning/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 56.8,
+        "audioBytes": 909940
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-william-hoopers-wilmington-beginning",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-zebulon-latimers-port-city-fortune",
@@ -16363,7 +16446,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 66,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16371,20 +16454,21 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Zebulon Latimer came from Connecticut and built a career as a commission merchant in\nWilmington. His business success helped support the substantial house completed here in\n1852.\n\nThe museum also connects his wealth with investments in gas lighting and railroads. His\ndomestic surroundings belonged to a larger commercial network.\n\nThis is his residence, not the place where every business transaction occurred. The\ndistinction helps you read the house as evidence of economic results rather than the\nwhole economy itself.\n\nFrom Third Street, notice the confidence of its scale. A merchant's success could become\nbrick, rooms, and furnishings. The facade makes private prosperity visible, while the\nwider story asks where that prosperity came from and whose work helped sustain the city\naround it.\n",
+    "script": "Zebulon Latimer came from Connecticut and built a career as a commission merchant in\nWilmington. His business success helped support the substantial house completed here\nin 1852.\n\nThe museum also connects his wealth with investments in gas, light, and railroad\ncompanies. His domestic surroundings belonged to a larger commercial network.\n\nThis is his residence, not the place where every business transaction occurred. The\ndistinction helps you read the house as evidence of economic results rather than the\nwhole economy itself.\n\nNotice the confidence of its scale from the sidewalk. A merchant's success could\nbecome brick, rooms, and furnishings. The facade makes private prosperity visible,\nwhile the wider story asks where that prosperity came from and whose work helped\nsustain the city around it.\n",
     "teaser": "Zebulon Latimer came from Connecticut and built a career as a commission merchant in Wilmington.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wilmington-zebulon-latimers-port-city-fortune/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53.4,
+        "audioBytes": 855605
+      }
+    ],
     "tags": [
       "wilmington",
       "downtown"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wilmington-zebulon-latimers-port-city-fortune",
-        "durationS": 66
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wrightsville-a-beach-memory-in-a-sandwich",
@@ -17835,4 +17919,4 @@ export const ROUTES: readonly Route[] = [
 
 // What a person has really checked, as authored, before the demo override above. The
 // "true story" mark reads this, never the overridden status (`truth.ts` in the engine).
-export const VERIFIED_IDS: ReadonlySet<string> = new Set(["carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","kure-beach-five-shells-in-the-dark","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-goodbye-in-a-living-garden","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-plays-an-art-school","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-before-streaming-this-door","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-elisabeth-chant-makes-a-studio","wilmington-guy-nixon-and-the-water-tank","wilmington-harry-fordens-name-on-the-bridge","wilmington-j-allen-kirk-kept-a-record","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-the-association-before-the-building","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-church-of-the-television-weddings","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-exhibition-in-a-little-lane","wilmington-the-inn-that-travels-in-time","wilmington-the-museum-moves-with-the-rails","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-three-shows-one-arcade","wilmington-twenty-four-hours-at-the-uso","wilmington-william-goulds-initials","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);
+export const VERIFIED_IDS: ReadonlySet<string> = new Set(["carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","kure-beach-five-shells-in-the-dark","the-lady-in-grey","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);

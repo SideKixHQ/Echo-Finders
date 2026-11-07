@@ -10,7 +10,7 @@ at: { lat: 34.23351, lng: -77.94601 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 73
+durationS: 57
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -23,8 +23,8 @@ script: |
   After William Latimer's death in 1923, Margaret Latimer took in boarders. The museum
   records that artist Elisabeth Chant later rented a room here.
 
-  That shift brought additional lives into a house strongly identified with one family.
-  Private rooms became lodgings; a formal residence gained a practical way to keep
+  That shift brought additional lives into a house strongly identified with a single
+  family. Private rooms became lodgings; a formal residence gained a practical way to keep
   operating.
 
   Look at the windows from Third Street. They do not reveal which occupant belonged to
@@ -34,11 +34,59 @@ script: |
   The house survived partly through adaptation. Its story is therefore more than an
   account of affluent beginnings. It also includes the choices that allowed a large, aging
   building to remain useful.
-editorial: draft
+editorial: approved
 factCheck: single-source
+claims:
+  - says: "After William Latimer's death in 1923, Margaret Latimer took in boarders."
+    source: 1
+    quote: "They had an addition built onto the rear of the house in 1922 to accommodate a modern kitchen. Upon William ‘s death the following year, Margaret converted the guest rooms and began to take in boarders to supplement her income."
+  - says: "The museum records that artist Elisabeth Chant later rented a room here."
+    source: 1
+    quote: "By 1930, Chant was renting a room at the Latimer House"
 sources:
   - title: "About"
     publisher: "Latimer House Museum, Lower Cape Fear Historical Society"
     url: https://latimerhouse.org/about/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-mansion-with-boarders/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 57
+    audioBytes: 913701
+    transcript:
+      totalS: 57
+      lines:
+        - text: An old family home can continue by becoming something its builders never anticipated.
+          atS: 0
+          durationS: 5.27
+        - text: After William Latimer's death in 1923, Margaret Latimer took in boarders.
+          atS: 6.22
+          durationS: 4.74
+        - text: The museum records that artist Elisabeth Chant later rented a room here.
+          atS: 11.77
+          durationS: 4.57
+        - text: That shift brought additional lives into a house strongly identified with a single family.
+          atS: 17.3
+          durationS: 5.22
+        - text: Private rooms became lodgings; a formal residence gained a practical way to keep operating.
+          atS: 23.03
+          durationS: 5.92
+        - text: Look at the windows from Third Street.
+          atS: 30.26
+          durationS: 1.9
+        - text: They do not reveal which occupant belonged to which period.
+          atS: 32.48
+          durationS: 3.33
+        - text: A mansion can conceal a boarding house in plain sight, because a changed use does not always require a changed facade.
+          atS: 36.14
+          durationS: 7.31
+        - text: The house survived partly through adaptation.
+          atS: 43.97
+          durationS: 2.86
+        - text: Its story is therefore more than an account of affluent beginnings.
+          atS: 47.77
+          durationS: 3.98
+        - text: It also includes the choices that allowed a large, aging building to remain useful.
+          atS: 51.97
+          durationS: 5.06

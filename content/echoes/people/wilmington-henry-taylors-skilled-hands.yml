@@ -10,7 +10,7 @@ at: { lat: 34.23593, lng: -77.94276 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 67
+durationS: 57
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -26,22 +26,75 @@ script: |
   possible. The owner's surname on the building can otherwise make the builders disappear
   from its story.
 
-  Look at the exterior from the sidewalk. Plans only become walls, floors, and finished
-  details when people know how to execute them.
+  Look at the exterior from the sidewalk. A plan does not become walls, floors, and
+  finished details until people know how to execute it.
 
   Taylor's work reminds us to connect an impressive residence with the expertise it
   required. His name belongs in the account of this place, alongside its architect and
   owners. A building can preserve craftsmanship for generations while concealing the
   craftsperson. Historical research makes the person visible again.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Henry Taylor was a carpenter and builder who worked on the Bellamy project."
     source: 1
     quote: "Another carpenter on the Bellamy project was Henry Taylor."
+  - says: "Henry Taylor was a carpenter and builder"
+    source: 1
+    quote: "Taylor was a successful carpenter-builder and businessman both prior to the end of the Civil War and after."
+  - says: "His career continued after emancipation"
+    source: 1
+    quote: "After emancipation, Taylor ran a grocery store as well as continuing with carpentry."
+  - says: "included other Wilmington buildings"
+    source: 1
+    quote: "His later projects included the Hemenway School and the first black Masonic lodge in Wilmington--Giblem Masonic Lodge."
+  - says: "and community activity"
+    source: 1
+    quote: "He was also a founding member of the Chestnut Street Presbyterian Church and active in local politics."
+  - says: "The museum identifies him among the Black craftspeople whose skill made the mansion possible."
+    source: 1
+    quote: "Dr. John D. Bellamy hired Northern-born architects to design his Wilmington townhome while he contracted enslaved craftsmen and hired free black artisans to execute those plans."
 sources:
   - title: "The people"
     publisher: "Bellamy Mansion Museum"
     url: https://www.bellamymansion.org/the-people.html
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-henry-taylors-skilled-hands/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 56.7
+    audioBytes: 907432
+    transcript:
+      totalS: 56.7
+      lines:
+        - text: Henry Taylor was a carpenter and builder who worked on the Bellamy project.
+          atS: 0
+          durationS: 4.55
+        - text: His career continued after emancipation and included other Wilmington buildings and community activity.
+          atS: 5.06
+          durationS: 6.48
+        - text: The museum identifies him among the Black craftspeople whose skill made the mansion possible.
+          atS: 11.98
+          durationS: 6.06
+        - text: The owner's surname on the building can otherwise make the builders disappear from its story.
+          atS: 19.16
+          durationS: 5.28
+        - text: Look at the exterior from the sidewalk.
+          atS: 25.39
+          durationS: 2.45
+        - text: A plan does not become walls, floors, and finished details until people know how to execute it.
+          atS: 28.28
+          durationS: 6.7
+        - text: Taylor's work reminds us to connect an impressive residence with the expertise it required.
+          atS: 35.36
+          durationS: 5.85
+        - text: His name belongs in the account of this place, alongside its architect and owners.
+          atS: 41.73
+          durationS: 5.46
+        - text: A building can preserve craftsmanship for generations while concealing the craftsperson.
+          atS: 47.69
+          durationS: 5.22
+        - text: Historical research makes the person visible again.
+          atS: 53.43
+          durationS: 3.23

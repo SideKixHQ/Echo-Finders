@@ -10,7 +10,7 @@ at: { lat: 34.24166, lng: -77.95056 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -22,21 +22,72 @@ script: |
   single display case and a table at Riverfest.
 
   The foundation was chartered in 1979. Hazel Morse, Gerda Wooten, and Marguerite James
-  led the effort to preserve Wilmington's railroad history after the railroad's major
-  departure.
+  led the effort. The railroad had left Wilmington, and they wanted to keep its history
+  alive here.
 
   A collection needed somewhere to grow, and the work expanded from those small
   beginnings. The current museum is the outcome, not the setting of every early exhibit.
 
   Stand near its entrance and consider how easily ordinary equipment becomes disposable
   once a company moves on. Someone has to recognize its future value before that happens.
-  These organizers made the first modest display into a commitment: the railroad might
-  leave, but its Wilmington story would still have a place.
-editorial: draft
+  These organizers turned a modest display into a commitment: the railroad could leave,
+  but its story here would still have a place.
+editorial: approved
 factCheck: single-source
+claims:
+  - says: "Its early effort included a single display case and a table at Riverfest."
+    source: 1
+    quote: "the museum grew quickly, from a single exhibit case in the Dudley Mansion and a table at Riverfest, to the museum we are today."
+  - says: "The foundation was chartered in 1979."
+    source: 1
+    quote: "On May 1st, 1979, the Wilmington Railroad Museum Foundation was chartered and received official articles of incorporation from the State of North Carolina."
+  - says: "Hazel Morse, Gerda Wooten, and Marguerite James led the effort."
+    source: 1
+    quote: "Led by three women, Hazel K. Morse, Gerda Wooten, and Marguerite James, the museum grew quickly"
+  - says: "The railroad had left Wilmington, and they wanted to keep its history alive here."
+    source: 1
+    quote: "The railroad left Wilmington, and these women felt the need to keep the history of the railroad in Wilmington alive."
 sources:
   - title: "History"
     publisher: "Wilmington Railroad Museum"
     url: https://www.wrrm.org/history.html
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-museum-begins-with-one-case/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55.4
+    audioBytes: 887370
+    transcript:
+      totalS: 55.4
+      lines:
+        - text: This museum did not begin with a building full of trains.
+          atS: 0
+          durationS: 3.5
+        - text: Its early effort included a single display case and a table at Riverfest.
+          atS: 3.74
+          durationS: 4.9
+        - text: The foundation was chartered in 1979.
+          atS: 8.96
+          durationS: 3.19
+        - text: Hazel Morse, Gerda Wooten, and Marguerite James led the effort.
+          atS: 12.48
+          durationS: 5.04
+        - text: The railroad had left Wilmington, and they wanted to keep its history alive here.
+          atS: 17.84
+          durationS: 4.62
+        - text: A collection needed somewhere to grow, and the work expanded from those small beginnings.
+          atS: 23.16
+          durationS: 5.12
+        - text: The current museum is the outcome, not the setting of every early exhibit.
+          atS: 29.58
+          durationS: 4.89
+        - text: Stand near its entrance and consider how easily ordinary equipment becomes disposable once a company moves on.
+          atS: 34.79
+          durationS: 7.14
+        - text: Someone has to recognize its future value before that happens.
+          atS: 42.45
+          durationS: 4.02
+        - text: "These organizers turned a modest display into a commitment: the railroad could leave, but its story here would still have a place."
+          atS: 46.97
+          durationS: 8.43
