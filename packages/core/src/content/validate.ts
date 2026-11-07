@@ -399,12 +399,17 @@ export function validateEcho(echo: Echo, policy: ContentPolicy = MVP_POLICY): Va
  * publication, and a child hearing a murder echo is the single fastest way to lose an
  * airline contract.
  */
+/** Words that put an unproven accusation in someone's mouth, or mark it as unproven. */
+const ATTRIBUTED =
+  /\b(alleg\w*|accus\w*|charged|indicted|suspect\w*|according to|police said|prosecutors?|investigators|never convicted|never charged|not convicted)\b/i;
+
+/** Words that say aloud that a conviction did not stand. */
+const EXONERATED = /\b(exonerat\w*|overturn\w*|acquitt\w*|pardon\w*|vacated|cleared)\b/i;
+
 function validateTrueCrime(echo: Echo): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const error = (field: string, message: string) =>
     issues.push({ echoId: echo.id, severity: "error", field, message });
-  const warn = (field: string, message: string) =>
-    issues.push({ echoId: echo.id, severity: "warning", field, message });
 
   const review = echo.trueCrimeReview;
   if (!review) {
@@ -415,18 +420,13 @@ function validateTrueCrime(echo: Echo): ValidationIssue[] {
   if (echo.sources.length < 2) {
     error("sources", "true crime requires at least two independent credible sources");
   }
-  // At least one source must be the primary record itself — a court filing, a coroner's
-  // report, a government archive — rather than someone else's account of it. Secondary
-  // sources repeat each other's errors, and a chain of retellings is how an echo ends up
-  // asserting a conviction that never happened.
-  // A draft may still be gathering its record (ADR-0016); it is told so, and cannot be
-  // approved without one.
-  if (!echo.sources.some((source) => source.rights === "public-domain")) {
-    (echo.editorial === "approved" ? error : warn)(
-      "sources",
-      "true crime needs at least one public record (court, coroner, government archive) as a primary source",
-    );
-  }
+  // Two reputable sources are enough; a public record is no longer required (James,
+  // 2026-11-07). The earlier rule demanded a court filing or government archive, which
+  // blocked cases already told at length by established news and documentaries, and put
+  // the original record out of reach whenever an archive refused us. What protects us now
+  // is how a case is told, checked below: what was proven is stated as fact, and what was
+  // not is attributed and called alleged. A public record is still the best source when
+  // there is one (docs/protection-policy.md).
   // Scoped to publication, as its own message always said it was.
   //
   // Unscoped, this fired on every true-crime *draft* — which is the state the pipeline
@@ -452,6 +452,26 @@ function validateTrueCrime(echo: Echo): ValidationIssue[] {
   }
   if (review.contentWarning.trim().length === 0) {
     error("trueCrimeReview.contentWarning", "must be read before the echo begins");
+  }
+
+  // Told as what it is. An accusation against someone alive who was never convicted must
+  // say whose claim it is, and an exoneration must say so aloud, so a listener never hears
+  // an accusation as a fact. Checked at approval, on the words actually spoken.
+  //
+  // Living people only for the first: that is where the legal risk is (the dead cannot be
+  // defamed in the US), and cases like Booth or Oswald, who died before any trial, are
+  // settled history that nobody tells as "allegedly".
+  const script = echo.script ?? "";
+  if (echo.editorial === "approved" && script.trim().length > 0) {
+    if (review.convictionStatus === "alleged" && review.involvesLivingPeople && !ATTRIBUTED.test(script)) {
+      error(
+        "script",
+        'an "alleged" case must be told as alleged: say whose claim it is ("police said", "was charged with", "allegedly")',
+      );
+    }
+    if (review.convictionStatus === "exonerated" && !EXONERATED.test(script)) {
+      error("script", "an exoneration must be said aloud (exonerated, overturned, acquitted, pardoned)");
+    }
   }
 
   // An echo about someone alive and not convicted is the highest-risk thing we publish.
