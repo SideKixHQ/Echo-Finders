@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router';
 import Layout from '@/layouts/Layout';
 import HomePage from '@/pages/Home';
 import PartnerPage from '@/pages/Partners';
+import PrivacyPage from '@/pages/Privacy';
 import NotFoundPage from '@/pages/NotFound';
 import './globals.css';
 import { inject } from '@vercel/analytics';
@@ -20,6 +21,7 @@ createRoot(document.getElementById('app')!).render(
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/partners" element={<PartnerPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

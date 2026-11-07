@@ -1509,6 +1509,9 @@ body {
 .danger-row:last-child { border-bottom: 0; }
 .danger-row span { font-size: 13px; color: var(--magenta-ink); }
 .danger-row small { font-size: 11px; color: var(--muted); line-height: 1.5; }
+/* The policy, in the same list as the delete rows but not one of them: no warning colour. */
+.policy-row { text-decoration: none; }
+.policy-row span { color: inherit; }
 
 /* ── The camera: then and now ─────────────────────────────────────────────────
    A full takeover, above the nav. Somebody holding a phone up in the street is
