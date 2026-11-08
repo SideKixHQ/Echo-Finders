@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
+import { testPositionFrom } from "./test-position";
 import { count } from "./analytics";
 import { LIBRARY, ROUTES } from "./library.generated";
 import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
@@ -98,6 +99,10 @@ const EMPTY_CATS: ReadonlySet<EchoCategory> = new Set();
  */
 const dev =
   typeof location !== "undefined" && new URLSearchParams(location.search).has("dev");
+
+/** Standing somewhere for testing, from `?at=` (`test-position.ts`), or null. */
+const TEST_POSITION =
+  typeof location !== "undefined" ? testPositionFrom(location.search, LIBRARY) : null;
 
 /** The library by id, for turning stored records from other journeys back into echoes. */
 const LIBRARY_BY_ID: ReadonlyMap<string, Echo> = new Map(LIBRARY.map((e) => [e.id, e]));
@@ -219,7 +224,7 @@ export function App() {
    * a granted watch should survive switching journeys, and asking twice is how a
    * permission gets refused.
    */
-  const gps = useMemo(() => new BrowserLocation(), []);
+  const gps = useMemo(() => new BrowserLocation(TEST_POSITION?.at ?? null), []);
   /*
    * The sonar, on unless the listener turned it off, and remembered: somebody who muted it
    * on their walk yesterday does not want it pinging at them when the app opens today.
@@ -563,7 +568,8 @@ export function App() {
     if (!onboarded) return;
     let live = true;
     void BrowserLocation.status().then((status) => {
-      if (live && status === "granted") void gps.start();
+      // A test position (`?at=`) asks the browser nothing, so it starts as if granted.
+      if (live && (status === "granted" || gps.pinned)) void gps.start();
     });
     return () => {
       live = false;
@@ -1661,6 +1667,12 @@ export function App() {
     <div className="stage">
       <div className={seat ? "phone seat" : "phone"}>
         <div className={selfDirected ? "screen" : "screen stack-noguide"}>
+          {TEST_POSITION && (
+            <div className="test-position" role="status">
+              Test position: {TEST_POSITION.label}. Take <span className="mono">?at=</span> off the
+              address to use your real location.
+            </div>
+          )}
           <div className="statusbar">
             <span className="mono">10:42</span>
             <span className="mono dim">{MODE_PHRASE[route.mode] ?? route.mode}</span>
