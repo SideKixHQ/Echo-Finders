@@ -413,6 +413,62 @@ function toPath(s: Shape): string {
 }
 const r2 = (n: number | undefined) => (n ?? 0).toFixed(2);
 
+/* ── a little life, while it talks ───────────────────────────────────────── */
+
+/**
+ * Blinks and glances, at random, only while an echo is playing.
+ *
+ * James (2026-11-08): "can our cute little play/pause button guy blink his eyes every now
+ * and again and look left and right, but only randomly while an echo is playing?" A blink
+ * every few seconds, now and then a double one, and every so often a look to one side and
+ * back. Timers rather than an animation loop, so a creature that is not talking costs
+ * nothing, and none of it under reduced motion.
+ */
+function useLife(active: boolean): { readonly blink: boolean; readonly look: number } {
+  const [blink, setBlink] = useState(false);
+  const [look, setLook] = useState(0);
+  useEffect(() => {
+    setBlink(false);
+    setLook(0);
+    if (!active) return;
+    if (typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const timers = new Set<ReturnType<typeof setTimeout>>();
+    const later = (ms: number, fn: () => void) => {
+      const t = setTimeout(() => {
+        timers.delete(t);
+        fn();
+      }, ms);
+      timers.add(t);
+    };
+    const between = (lo: number, hi: number) => lo + Math.random() * (hi - lo);
+    const blinkOnce = (then?: () => void) => {
+      setBlink(true);
+      later(130, () => {
+        setBlink(false);
+        then?.();
+      });
+    };
+    const nextBlink = () =>
+      later(between(2200, 5800), () =>
+        blinkOnce(() => (Math.random() < 0.2 ? later(170, () => blinkOnce(nextBlink)) : nextBlink())),
+      );
+    const nextLook = () =>
+      later(between(3500, 8500), () => {
+        setLook(Math.random() < 0.5 ? -1 : 1);
+        later(between(700, 1500), () => {
+          setLook(0);
+          nextLook();
+        });
+      });
+    nextBlink();
+    nextLook();
+    return () => {
+      for (const t of timers) clearTimeout(t);
+    };
+  }, [active]);
+  return { blink, look };
+}
+
 /* ── the creature ────────────────────────────────────────────────────────── */
 
 function EchoCharacterInner({ face, r, uid, gazeDeg = 0, detail }: EchoCharacterProps) {
@@ -432,6 +488,7 @@ function EchoCharacterInner({ face, r, uid, gazeDeg = 0, detail }: EchoCharacter
    * is exactly what the reference's own three quarter pose does, so the gaze now does a
    * small version of the same thing.
    */
+  const life = useLife(face === "playing");
   const swing = Math.max(-1, Math.min(1, gazeDeg / 30));
   const shift = swing * 16;
   const squash = 1 - Math.abs(swing) * 0.12;
@@ -562,8 +619,13 @@ function EchoCharacterInner({ face, r, uid, gazeDeg = 0, detail }: EchoCharacter
         */}
         <circle cx={centreX(left)} cy={centreY(left)} r={31} fill={`url(#ecEye-${uid})`} />
         <circle cx={centreX(right)} cy={centreY(right)} r={29} fill={`url(#ecEye-${uid})`} />
-        <path d={toPath(left)} fill={skin.eye} />
-        <path d={toPath(right)} fill={skin.eye} />
+        <g
+          className={life.blink ? "echo-char-life blink" : "echo-char-life"}
+          style={{ transform: `translateX(${life.look * 9}px)` }}
+        >
+          <path d={toPath(left)} fill={skin.eye} />
+          <path d={toPath(right)} fill={skin.eye} />
+        </g>
       </g>
 
       {/*
