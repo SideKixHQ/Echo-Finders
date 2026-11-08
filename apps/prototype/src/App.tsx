@@ -1,5 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
+import { claimOwnerFromAddress, ownerMode, setOwnerMode } from "./owner";
+import { testPositionFrom } from "./test-position";
+import { count } from "./analytics";
 import { LIBRARY, ROUTES } from "./library.generated";
 import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
@@ -97,6 +100,10 @@ const EMPTY_CATS: ReadonlySet<EchoCategory> = new Set();
  */
 const dev =
   typeof location !== "undefined" && new URLSearchParams(location.search).has("dev");
+
+/** Standing somewhere for testing, from `?at=` (`test-position.ts`), or null. */
+const TEST_POSITION =
+  typeof location !== "undefined" ? testPositionFrom(location.search, LIBRARY) : null;
 
 /** The library by id, for turning stored records from other journeys back into echoes. */
 const LIBRARY_BY_ID: ReadonlyMap<string, Echo> = new Map(LIBRARY.map((e) => [e.id, e]));
@@ -218,7 +225,7 @@ export function App() {
    * a granted watch should survive switching journeys, and asking twice is how a
    * permission gets refused.
    */
-  const gps = useMemo(() => new BrowserLocation(), []);
+  const gps = useMemo(() => new BrowserLocation(TEST_POSITION?.at ?? null), []);
   /*
    * The sonar, on unless the listener turned it off, and remembered: somebody who muted it
    * on their walk yesterday does not want it pinging at them when the app opens today.
@@ -245,6 +252,11 @@ export function App() {
   const [savedSettings] = useState(readSettings);
   const [privacy, setPrivacy] = useState<PrivacySettings>(savedSettings.privacy);
   const [theme, setTheme] = useState<"dark" | "light">(savedSettings.theme);
+  /** Owner mode, from a private link (`owner.ts`): everything open, on this phone only. */
+  const [owner, setOwner] = useState(ownerMode);
+  useEffect(() => {
+    void claimOwnerFromAddress().then(setOwner);
+  }, []);
 
   // Set on the document rather than a wrapper, so the variables cascade to everything
   // including the portal-less fixed elements.
@@ -562,7 +574,8 @@ export function App() {
     if (!onboarded) return;
     let live = true;
     void BrowserLocation.status().then((status) => {
-      if (live && status === "granted") void gps.start();
+      // A test position (`?at=`) asks the browser nothing, so it starts as if granted.
+      if (live && (status === "granted" || gps.pinned)) void gps.start();
     });
     return () => {
       live = false;
@@ -669,10 +682,12 @@ export function App() {
    */
   const mayStart = useCallback(
     (echo: Echo) => {
+      // Owner mode: everything is open (`owner.ts`).
+      if (owner) return true;
       const profile = { ...listenerFor(kids, optIns), heardEchoIds: [...heardIds] };
       return mayHearAnother(entitlement, profile, echo.id, echo.point.at, Date.now());
     },
-    [entitlement, kids, optIns, heardIds],
+    [entitlement, kids, optIns, heardIds, owner],
   );
   const mayStartRef = useRef(mayStart);
   mayStartRef.current = mayStart;
@@ -713,9 +728,11 @@ export function App() {
   const playOrAsk = useCallback(
     (echo: Echo) => {
       if (!mayStart(echo)) {
+        count({ name: "Paywall shown", category: echo.category });
         setPaywallFor(echo);
         return;
       }
+      count({ name: "Echo played", category: echo.category });
       session.play(echo);
     },
     [mayStart, session],
@@ -1658,6 +1675,12 @@ export function App() {
     <div className="stage">
       <div className={seat ? "phone seat" : "phone"}>
         <div className={selfDirected ? "screen" : "screen stack-noguide"}>
+          {TEST_POSITION && (
+            <div className="test-position" role="status">
+              Test position: {TEST_POSITION.label}. Take <span className="mono">?at=</span> off the
+              address to use your real location.
+            </div>
+          )}
           <div className="statusbar">
             <span className="mono">10:42</span>
             <span className="mono dim">{MODE_PHRASE[route.mode] ?? route.mode}</span>
@@ -2144,6 +2167,7 @@ export function App() {
               */}
               {selectedEcho && !routePicker && !reporting ? (
                 <EchoPopup
+                  anywhere={owner}
                   echo={selectedEcho.echo}
                   distanceKm={selectedEcho.distanceKm}
                   state={stateOf(selectedEcho.echo.id)}
@@ -2328,6 +2352,11 @@ export function App() {
               onKids={setKidsMode}
               theme={theme}
               onTheme={setTheme}
+              owner={owner}
+              onOwnerOff={() => {
+                setOwnerMode(false);
+                setOwner(false);
+              }}
               membership={
                 <MembershipPanel
                   membership={membershipOf(entitlement, Date.now())}
@@ -2443,6 +2472,7 @@ export function App() {
 
           {onboarded && packageOpen && (
             <Preflight
+              here={state.position?.at ?? null}
               routes={ROUTES}
               counts={corridorCounts}
               library={LIBRARY}

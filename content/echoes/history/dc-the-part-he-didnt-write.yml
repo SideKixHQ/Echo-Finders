@@ -9,7 +9,7 @@ at: { lat: 38.88927, lng: -77.04968 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 72
+durationS: 65
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -19,7 +19,7 @@ teaser: "Look down at the landing, just below the top flight of steps."
 script: |
   Look down at the landing, just below the top flight of steps.
 
-  One stone here is engraved. It marks where Martin Luther King Junior stood on the
+  One stone here marks a place. It marks where Martin Luther King Junior stood on the
   twenty-eighth of August, 1963.
 
   It was late afternoon. More than a quarter of a million people were out there. Many of
@@ -30,8 +30,7 @@ script: |
   funds.
 
   He was near the end of it, telling people to go home and keep up the fight, when a voice
-  called out from just off to the side. It was his friend, the gospel singer Mahalia
-  Jackson.
+  called out from just off to the side. It was his good friend, Mahalia Jackson.
 
   Tell them about the dream, Martin.
 
@@ -41,21 +40,108 @@ script: |
   the Washington Monument.
 
   The part of that speech everyone can still recite is the part he had not planned to say.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "One stone here marks a place."
+    source: 1
+    quote: "A stone on the landing below the white marble steps leading to the Lincoln Memorial marks the location of this landmark speech."
+  - says: "It marks where Martin Luther King Junior stood on the twenty-eighth of August, 1963."
+    source: 1
+    quote: "His devotion to equality and human rights brought King to the steps of the Lincoln Memorial on August 28, 1963 for the March on Washington for Jobs and Freedom"
+  - says: "It was late afternoon."
+    source: 2
+    quote: "It was late afternoon, on a warm August day, as Martin Luther King, Jr. stood before a crowd of more than 250,000 onlookers at the March on Washington"
+  - says: "More than a quarter of a million people were out there."
+    source: 2
+    quote: "stood before a crowd of more than 250,000 onlookers at the March on Washington"
+  - says: "Many of them had come a long way by bus and by train, and they had already sat through a long list of speakers."
+    source: 2
+    quote: "Many who gathered in the crowd that day were tired from the long train and bus rides that brought them from the Deep South and places out west. Others were simply exhausted from the long list of speakers that preceded Dr. King."
+  - says: "A bad check, come back marked insufficient funds."
+    source: 2
+    quote: "provided a “bad check” that had come back marked “insufficient funds.”"
+  - says: "He was near the end of it, telling people to go home and keep up the fight, when a voice called out from just off to the side."
+    source: 2
+    quote: "As Dr. King was encouraging his cohorts to return to their communities to continue the fight for equality, he heard a voice from just offstage."
+  - says: "It was his good friend, Mahalia Jackson."
+    source: 2
+    quote: "It was his good friend, Mahalia Jackson, who shouted out: “Tell them about the dream, Martin!”"
+  - says: "Tell them about the dream, Martin."
+    source: 2
+    quote: "It was his good friend, Mahalia Jackson, who shouted out: “Tell them about the dream, Martin!”"
+  - says: "He improvised it."
+    source: 2
+    quote: "He provided an improvisational account of an America free of racial intolerance."
 sources:
   - title: "Other Notable Figures: Martin Luther King, Jr."
     publisher: "National Park Service"
     url: https://www.nps.gov/linc/learn/historyculture/other-notable-figures.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "\"I Have a Dream\" Speech by Dr. Martin Luther King, Jr. (August 28, 1963), National Recording Registry essay by Gregory Alan Barnes"
     publisher: "Library of Congress"
     url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/IHaveADream.pdf
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "Exterior Features: Lincoln Memorial"
     publisher: "National Park Service"
     url: https://www.nps.gov/linc/learn/historyculture/exterior-features.htm
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-part-he-didnt-write/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 65.3
+    audioBytes: 1046612
+    transcript:
+      totalS: 65.3
+      lines:
+        - text: Look down at the landing, just below the top flight of steps.
+          atS: 0
+          durationS: 3.45
+        - text: One stone here marks a place.
+          atS: 4.05
+          durationS: 2.04
+        - text: It marks where Martin Luther King Junior stood on the twenty-eighth of August, 1963.
+          atS: 6.79
+          durationS: 5.58
+        - text: It was late afternoon.
+          atS: 13.68
+          durationS: 1.49
+        - text: More than a quarter of a million people were out there.
+          atS: 15.67
+          durationS: 2.62
+        - text: Many of them had come a long way by bus and by train, and they had already sat through a long list of speakers.
+          atS: 18.99
+          durationS: 5.72
+        - text: King had a prepared text.
+          atS: 25.83
+          durationS: 1.87
+        - text: A promissory note.
+          atS: 28.14
+          durationS: 1.32
+        - text: A bad check, come back marked insufficient funds.
+          atS: 30.16
+          durationS: 3.44
+        - text: He was near the end of it, telling people to go home and keep up the fight, when a voice called out from just off to the side.
+          atS: 34.41
+          durationS: 7.06
+        - text: It was his good friend, Mahalia Jackson.
+          atS: 42.28
+          durationS: 2.68
+        - text: Tell them about the dream, Martin.
+          atS: 45.78
+          durationS: 1.79
+        - text: What came next was not on the page.
+          atS: 48.38
+          durationS: 2.32
+        - text: He improvised it.
+          atS: 51.08
+          durationS: 1.24
+        - text: Stand on the landing and look out the way he did, down the length of the water toward the Washington Monument.
+          atS: 52.93
+          durationS: 6.34
+        - text: The part of that speech everyone can still recite is the part he had not planned to say.
+          atS: 59.97
+          durationS: 5.38

@@ -9,7 +9,7 @@ at: { lat: 38.89620, lng: -77.04165 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 72
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -23,43 +23,131 @@ script: |
   President's study.
 
   On the twenty-fourth of August, eighteen fourteen, British troops had burned the White
-  House, the Capitol and the Treasury. James and Dolley Madison fled the city. When they came
-  back a few weeks later, they needed somewhere to live.
+  House, the Capitol and other public buildings. James and Dolley Madison fled the city.
+  When they came back a few weeks later, they needed somewhere to live.
 
   This house had come through. Its resident was the French minister, and the British most
   likely left it alone because of the French flag he flew. The Madisons moved in on the
   eighth of September.
 
-  The war went on. On the eighth of January, Andrew Jackson won the Battle of New Orleans.
+  The war went on. On the eighth of January, Andrew Jackson's troops fought the Battle of
+  New Orleans.
 
-  Then, on the seventeenth of February, in the round room above the door, Madison signed the
-  Treaty of Ghent, and the War of eighteen twelve was over.
+  Then, on the seventeenth of February, in the round room above the door, the Treaty of
+  Ghent was signed, and the War of eighteen twelve was over.
 
-  New Orleans had been fought six weeks before the war ended. And the war that burned the
+  New Orleans had been fought before the war was over. And the war that burned the
   President out of his house ended in somebody else's.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 pronunciations:
   - written: Ghent
     say: GENT
+claims:
+  - says: "Above that door is a round room."
+    source: 4
+    quote: "The circular room just above the vestibule was hisoffice."
+  - says: "In the winter of eighteen fifteen, it was the President's study."
+    source: 1
+    quote: "The President used the adjoining circular tower room as a study and at least some of the time as a meeting place for his Cabinet. This was where the Treaty of Ghent was signed on February 17, 1815"
+  - says: "On the twenty-fourth of August, eighteen fourteen, British troops had burned the White House, the Capitol and other public buildings."
+    source: 1
+    quote: "On August 24, 1814, an invading British army set fire to the White House, Capitol, and other public Washington, D.C. buildings"
+  - says: "James and Dolley Madison fled the city."
+    source: 1
+    quote: "President James Madison and First Lady Dolley Madison fled the attack, seeking safety in Leesburg, Virginia, and later Brookeville, Maryland."
+  - says: "When they came back a few weeks later, they needed somewhere to live."
+    source: 1
+    quote: "Upon their return to Washington a few weeks later, with the White House destroyed, the First Family needed another place to stay."
+  - says: "Its resident was the French minister, and the British most likely left it alone because of the French flag he flew."
+    source: 1
+    quote: "likely spared from British flames because of the tricolor flag its resident, French Minister Louis Serrurier, flew."
+  - says: "The Madisons moved in on the eighth of September."
+    source: 1
+    quote: "becoming the temporary White House when they moved in on September 8, 1814."
+  - says: "On the eighth of January, Andrew Jackson's troops fought the Battle of New Orleans."
+    source: 3
+    quote: "as he appeared while reviewing his troops at the Battle of New Orleans, Louisiana, on January 8, 1815."
+  - says: "Then, on the seventeenth of February, in the round room above the door, the Treaty of Ghent was signed, and the War of eighteen twelve was over."
+    source: 1
+    quote: "This was where the Treaty of Ghent was signed on February 17, 1815 before being sent to Congress for ratification, ending the War of 1812."
+  - says: "Then, on the seventeenth of February, in the round room above the door, the Treaty of Ghent was signed, and the War of eighteen twelve was over."
+    source: 2
+    quote: "Treaty of Ghent signed in circular room on second floor."
+  - says: "New Orleans had been fought before the war was over."
+    source: 3
+    quote: "as he appeared while reviewing his troops at the Battle of New Orleans, Louisiana, on January 8, 1815."
+  - says: "And the war that burned the President out of his house ended in somebody else's."
+    source: 1
+    quote: "Upon their return to Washington a few weeks later, with the White House destroyed, the First Family needed another place to stay."
 sources:
   - title: "Octagon House"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/octagon-house.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Octagon House, 1799 New York Avenue Northwest, HABS DC-25"
     publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/dc0195/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc0100/dc0195/data/dc0195data.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "General Andrew Jackson Statue"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/000/general-andrew-jackson-statue.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "The Octagon House, The Times (Washington), April 11, 1897, image 20"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn85054468/1897-04-11/ed-1/?sp=20
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-where-the-war-ended/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.7
+    audioBytes: 1100947
+    transcript:
+      totalS: 68.7
+      lines:
+        - text: Look at the curved front of the Octagon, the round bay with the door at its base.
+          atS: 0
+          durationS: 5.06
+        - text: Above that door is a round room.
+          atS: 5.76
+          durationS: 2.17
+        - text: In the winter of eighteen fifteen, it was the President's study.
+          atS: 8.74
+          durationS: 3.76
+        - text: On the twenty-fourth of August, eighteen fourteen, British troops had burned the White House, the Capitol and other public buildings.
+          atS: 13.46
+          durationS: 8.05
+        - text: James and Dolley Madison fled the city.
+          atS: 22.11
+          durationS: 2.79
+        - text: When they came back a few weeks later, they needed somewhere to live.
+          atS: 25.59
+          durationS: 4.16
+        - text: This house had come through.
+          atS: 30.44
+          durationS: 1.84
+        - text: Its resident was the French minister, and the British most likely left it alone because of the French flag he flew.
+          atS: 32.97
+          durationS: 6.37
+        - text: The Madisons moved in on the eighth of September.
+          atS: 40.16
+          durationS: 2.84
+        - text: The war went on.
+          atS: 43.51
+          durationS: 1.3
+        - text: On the eighth of January, Andrew Jackson's troops fought the Battle of New Orleans.
+          atS: 45.42
+          durationS: 4.98
+        - text: Then, on the seventeenth of February, in the round room above the door, the Treaty of Ghent was signed, and the War of eighteen twelve was over.
+          atS: 51
+          durationS: 8.61
+        - text: New Orleans had been fought before the war was over.
+          atS: 60.73
+          durationS: 3.05
+        - text: And the war that burned the President out of his house ended in somebody else's.
+          atS: 64.11
+          durationS: 4.62

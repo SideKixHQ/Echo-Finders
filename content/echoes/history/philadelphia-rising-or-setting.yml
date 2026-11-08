@@ -9,7 +9,7 @@ at: { lat: 39.94925, lng: -75.14975 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 100
+durationS: 96
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -17,11 +17,11 @@ quality: 0.75
 tags: [philadelphia, philadelphia-core, independence-mall, independence-hall, constitution, franklin]
 teaser: "Painters, he said, could never tell a rising sun from a setting one."
 script: |
-  Look at the hall in front of you. On its ground floor is the room where the Constitution was signed.
+  Look at the hall in front of you. Inside is the room where the Constitution was signed.
 
-  For four months in the summer of seventeen eighty-seven, George Washington presided in that room from a tall wooden chair. Carved into the top of its back is a sun.
+  For four months in the summer of seventeen eighty-seven, George Washington presided in that room from a chair. Carved into the top of its back is a sun.
 
-  It was not an easy summer. Large states against small states. Arguments over the slave trade. More than once it looked as if the whole thing might come apart.
+  It was not an easy summer. Large states against small states. Arguments over the slave trade.
 
   On the last day, the seventeenth of September, the delegates lined up to sign. While the last of them were signing, Benjamin Franklin looked at Washington's chair and said something to the men near him. James Madison wrote it down.
 
@@ -37,8 +37,54 @@ script: |
 pronunciations:
   - written: infallibility
     say: in-fal-ih-BIL-ih-tee
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Inside is the room where the Constitution was signed."
+    source: 1
+    quote: "As the men signed the Constitution, Franklin said that he had the great happiness to know it was a rising and not a setting sun."
+  - says: "For four months in the summer of seventeen eighty-seven"
+    source: 1
+    quote: "In four months, they created the U.S. Constitution"
+  - says: "George Washington presided in that room from a chair."
+    source: 1
+    quote: "Benjamin Franklin looked at the chair where Washington was seated as the presiding officer."
+  - says: "Carved into the top of its back is a sun."
+    source: 1
+    quote: "Carved into the chair's crest rail is a sun, a liberty pole and a liberty cap."
+  - says: "Large states against small states. Arguments over the slave trade."
+    source: 1
+    quote: "The debates of the Constitutional or Federal Convention were heated at times, over issues like the power balance between large states and small states as well as the slave trade."
+  - says: "On the last day, the seventeenth of September, the delegates lined up to sign."
+    source: 2
+    quote: "\"Done in convention, by the unanimous consent of the states present the 17th of September &c - In witness whereof we have hereunto subscribed our names.\""
+  - says: "While the last of them were signing, Benjamin Franklin looked at Washington's chair and said something to the men near him."
+    source: 3
+    quote: "Whilst the last members were signing it,” Mr. Madison says, “ Doct? Franklin looking towards the President’s Chair"
+  - says: "James Madison wrote it down."
+    source: 2
+    quote: "James Madison notes that while the last members were signing, Dr. Franklin observed he had often looked upon the President's chair with its painted sun and wondered whether it was rising or setting."
+  - says: "Painters, Franklin said, had always found it hard to show the difference between a rising sun and a setting one."
+    source: 3
+    quote: "observed to a few members near him, that Painters had found it difficult to distinguish in their art a rising from a setting sun."
+  - says: "All through the session, in his hopes and fears, he had looked at that sun behind the president, and could not tell which it was."
+    source: 3
+    quote: "the vicissitudes of my hopes and fears as to its issue, looked at that behind the President without being able to tell whether it was rising -or setting"
+  - says: "But now at length, he said, I have the happiness to know that it is a rising and not a setting sun."
+    source: 2
+    quote: "\" …But now at length I have the happiness to know that it is a rising and not a setting Sun.\""
+  - says: "The chair had been made here in Philadelphia in seventeen seventy-nine, for the speaker of Pennsylvania's assembly."
+    source: 1
+    quote: "The Rising Sun chair was made in Philadelphia by John Folwell in 1779 to be the chair for the speaker of Pennsylvania's legislature."
+  - says: "It went with the legislature to Harrisburg, and came back to this city in eighteen seventy-two."
+    source: 1
+    quote: "The Assembly speaker used this chair in Harrisburg until the 1840's. The state returned it to the city of Philadelphia in 1872 for the upcoming (1876) Centennial celebration."
+  - says: "Earlier that day Franklin had asked every doubter in the room to doubt a little his own infallibility, and sign."
+    source: 2
+    quote: "I cannot help expressing a wish that every member of the Convention who may still have objections to it, would with me, on this occasion doubt a little his own infallibility - and to make manifest our unanimity and put his name to this instrument."
+  - says: "Three still refused."
+    source: 2
+    quote: "Along with Randolph and Gerry, Mason, even with his signing language added, did not sign."
 sources:
   - title: "Assembly Room of Independence Hall"
     publisher: "National Park Service, Independence National Historical Park"
@@ -55,3 +101,68 @@ sources:
     url: https://www.loc.gov/item/19000141/
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-rising-or-setting/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 95.5
+    audioBytes: 1529355
+    transcript:
+      totalS: 95.5
+      lines:
+        - text: Look at the hall in front of you.
+          atS: 0
+          durationS: 1.75
+        - text: Inside is the room where the Constitution was signed.
+          atS: 2.14
+          durationS: 3.33
+        - text: For four months in the summer of seventeen eighty-seven, George Washington presided in that room from a chair.
+          atS: 5.98
+          durationS: 6.56
+        - text: Carved into the top of its back is a sun.
+          atS: 13.05
+          durationS: 2.79
+        - text: It was not an easy summer.
+          atS: 16.28
+          durationS: 1.67
+        - text: Large states against small states.
+          atS: 18.46
+          durationS: 2.36
+        - text: Arguments over the slave trade.
+          atS: 21.26
+          durationS: 2.09
+        - text: On the last day, the seventeenth of September, the delegates lined up to sign.
+          atS: 23.79
+          durationS: 5.39
+        - text: While the last of them were signing, Benjamin Franklin looked at Washington's chair and said something to the men near him.
+          atS: 29.69
+          durationS: 6.75
+        - text: James Madison wrote it down.
+          atS: 37.24
+          durationS: 2.05
+        - text: Painters, Franklin said, had always found it hard to show the difference between a rising sun and a setting one.
+          atS: 40.41
+          durationS: 7.56
+        - text: All through the session, in his hopes and fears, he had looked at that sun behind the president, and could not tell which it was.
+          atS: 49.09
+          durationS: 8.23
+        - text: But now at length, he said, I have the happiness to know that it is a rising and not a setting sun.
+          atS: 58.13
+          durationS: 7.88
+        - text: The chair had been made here in Philadelphia in seventeen seventy-nine, for the speaker of Pennsylvania's assembly.
+          atS: 67.31
+          durationS: 6.53
+        - text: It went with the legislature to Harrisburg, and came back to this city in eighteen seventy-two.
+          atS: 74.65
+          durationS: 5.55
+        - text: Earlier that day Franklin had asked every doubter in the room to doubt a little his own infallibility, and sign.
+          atS: 81.5
+          durationS: 6.91
+        - text: Three still refused.
+          atS: 89.36
+          durationS: 1.42
+        - text: Nothing about the carving had changed.
+          atS: 91.38
+          durationS: 2.29
+        - text: Franklin had.
+          atS: 94.27
+          durationS: 1.25

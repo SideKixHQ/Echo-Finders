@@ -9,7 +9,7 @@ at: { lat: 38.89665, lng: -77.03215 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 68
+durationS: 62
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,29 +35,97 @@ script: |
   The building has changed. The old Willard was replaced at the turn of the century, on the
   same corner, under the same name.
 
-  The song has not. You probably know the first line. Mine eyes have seen the glory.
+  The song has not. You probably know how it begins. Mine eyes have seen the glory.
 
   She wrote it without looking.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "In November eighteen sixty-one, Julia Ward Howe was a guest at the hotel on this corner."
+    source: 2
+    quote: "Julia Ward Howe, a guest in 1861, wrote the \"Battle Hymn of the Republic\""
+  - says: "In November eighteen sixty-one"
+    source: 1
+    quote: "When the Civil War began, the Howes visited Washington, D.C. in November 1861 to assess the war effort and meet with President Abraham Lincoln."
+  - says: "The Civil War had begun, and she had come to Washington with her husband to see the war effort for themselves, and to meet President Lincoln."
+    source: 1
+    quote: "When the Civil War began, the Howes visited Washington, D.C. in November 1861 to assess the war effort and meet with President Abraham Lincoln."
+  - says: "One night, she woke from a dream with a poem in her head."
+    source: 1
+    quote: "During that trip, Howe awoke from a dream with a poem in mind."
+  - says: "With a sudden effort, she wrote, I sprang out of bed, and found in the dimness an old stump of a pen."
+    source: 1
+    quote: "\"So, with a sudden effort, I sprang out of bed, and found in the dimness an old stump of a pen... I scrawled the verses almost without looking at the paper.\""
+  - says: "The Atlantic Monthly printed them in February."
+    source: 1
+    quote: "She published that poem, \"The Battle Hymn of the Republic,\" in the February 1862 edition of the Atlantic Monthly ."
+  - says: "People sang them to the tune of the John Brown song, and they still do."
+    source: 1
+    quote: "It is often sung to the same tune as the \" John Brown Song \" and \"Say Brother Will You Meet Us.\""
+  - says: "The old Willard was replaced at the turn of the century, on the same corner, under the same name."
+    source: 2
+    quote: "The NEW WILLARD HOTEL was designed at the turn of this century by Henry J. Hardenbergh, one of the country's most noted hotel architects. It replaced the earlier \"Willard Hotel\""
 sources:
   - title: "Julia Ward Howe"
     publisher: "National Park Service"
     url: https://www.nps.gov/people/julia-ward-howe.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
-  - title: "Willard Hotel, 1401-1409 Pennsylvania Avenue Northwest, HABS DC-293, written historical and descriptive data"
+  - title: "The New Willard Hotel, 1401-1409 Pennsylvania Avenue Northwest, HABS DC-293, written historical and descriptive data"
     publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/dc0300/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc0300/dc0300/data/dc0300data.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain
-  - title: "The Willard Hotel is Subject of Display in American Treasures Exhibition"
-    publisher: "Library of Congress"
-    url: https://www.loc.gov/item/prn-06-072/
-    retrievedAt: "2026-10-14"
-    rights: public-domain
-  - title: "Battle Hymn of the Republic, from the February Atlantic Monthly, Worcester Daily Spy, January 27, 1862, image 1"
-    publisher: "Library of Congress, Chronicling America"
-    url: https://www.loc.gov/resource/sn83021205/1862-01-27/ed-1/?sp=1
-    retrievedAt: "2026-10-14"
-    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-written-in-the-dark/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 61.9
+    audioBytes: 991442
+    transcript:
+      totalS: 61.9
+      lines:
+        - text: Look up at the windows of the Willard.
+          atS: 0
+          durationS: 2.22
+        - text: In November eighteen sixty-one, Julia Ward Howe was a guest at the hotel on this corner.
+          atS: 2.6
+          durationS: 5.97
+        - text: The Civil War had begun, and she had come to Washington with her husband to see the war effort for themselves, and to meet President Lincoln.
+          atS: 9.08
+          durationS: 7.85
+        - text: One night, she woke from a dream with a poem in her head.
+          atS: 17.74
+          durationS: 3.03
+        - text: Years later, she described what she did next.
+          atS: 21.37
+          durationS: 3.34
+        - text: With a sudden effort, she wrote, I sprang out of bed, and found in the dimness an old stump of a pen.
+          atS: 25.16
+          durationS: 6.95
+        - text: I scrawled the verses almost without looking at the paper.
+          atS: 32.72
+          durationS: 3.22
+        - text: The Atlantic Monthly printed them in February.
+          atS: 36.37
+          durationS: 2.69
+        - text: People sang them to the tune of the John Brown song, and they still do.
+          atS: 39.45
+          durationS: 4.04
+        - text: The building has changed.
+          atS: 44.09
+          durationS: 1.36
+        - text: The old Willard was replaced at the turn of the century, on the same corner, under the same name.
+          atS: 45.89
+          durationS: 5.67
+        - text: The song has not.
+          atS: 52.26
+          durationS: 1.35
+        - text: You probably know how it begins.
+          atS: 54.21
+          durationS: 2.03
+        - text: Mine eyes have seen the glory.
+          atS: 56.84
+          durationS: 1.96
+        - text: She wrote it without looking.
+          atS: 59.41
+          durationS: 2.5

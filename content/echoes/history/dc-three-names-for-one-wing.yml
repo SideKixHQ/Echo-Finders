@@ -9,7 +9,7 @@ at: { lat: 38.90020, lng: -77.03870 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 57
+durationS: 60
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -19,36 +19,114 @@ teaser: "Look at the brick wing that runs back from Decatur House along H Street
 script: |
   Look at the brick wing that runs back from Decatur House, along H Street.
 
-  It has been described three different ways.
+  It has been described in different ways.
 
   In nineteen-oh-three, a newspaper story about this house put it plainly. On H Street, it
-  said, is a long addition, formerly slave quarters.
+  said, is a long, low addition, formerly slave quarters.
 
   A federal survey of the building chose a gentler phrase. Grouped around the garden, it
   says, are the original servants' quarters, stables and carriage houses.
 
   In twenty eleven, historians began a new study of the wing. The report that came out of
-  it, filed with that same federal survey, calls it the slave wing.
+  it, filed with that same federal survey, calls it the slave and service wing.
 
   Now turn around and look at the park. The National Park Service keeps a list of what that
   ground has been used for. A race track. A graveyard. A slave market.
 
-  Three names for one wing. The newspaper had it right the first time.
-editorial: draft
+  Different names, the same wing. The newspaper had it right the first time.
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "In nineteen-oh-three, a newspaper story about this house put it plainly."
+    source: 2
+    quote: "On H street is a long, low addition one story in height formerly slave quarters."
+  - says: "On H Street, it said, is a long, low addition, formerly slave quarters."
+    source: 2
+    quote: "On H street is a long, low addition one story in height formerly slave quarters."
+  - says: "Grouped around the garden, it says, are the original servants' quarters, stables and carriage houses."
+    source: 1
+    quote: "Grouped around the garden are the original servants' quarters, stables and carriage houses."
+  - says: "In twenty eleven, historians began a new study of the wing."
+    source: 1
+    quote: "the investigation and re-interpretation of the slave/service wing of the Decatur House that began in summer 2011."
+  - says: "The report that came out of it, filed with that same federal survey, calls it the slave and service wing."
+    source: 1
+    quote: "the investigation and re-interpretation of the slave/service wing of the Decatur House that began in summer 2011."
+  - says: "The National Park Service keeps a list of what that ground has been used for."
+    source: 3
+    quote: "The land that comprises Lafayette Park had been used as a race track, a showplace for caged animals, a graveyard, a slave market, and an encampment for soldiers"
+  - says: "A race track. A graveyard. A slave market."
+    source: 3
+    quote: "The land that comprises Lafayette Park had been used as a race track, a showplace for caged animals, a graveyard, a slave market, and an encampment for soldiers"
+  - says: "The newspaper had it right the first time."
+    source: 2
+    quote: "On H street is a long, low addition one story in height formerly slave quarters."
 sources:
   - title: "Decatur House, 748 Jackson Place Northwest, HABS DC-16, written historical and descriptive data and 2011 addendum"
     publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/dc0085/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc0000/dc0085/data/dc0085data.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "The Beale Homestead, Daily Kennebec Journal, April 13, 1903, image 2"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn82014248/1903-04-13/ed-1/?sp=2
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Lafayette Park"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/000/lafayette-park.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-three-names-for-one-wing/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 59.9
+    audioBytes: 958841
+    transcript:
+      totalS: 59.9
+      lines:
+        - text: Look at the brick wing that runs back from Decatur House, along H Street.
+          atS: 0
+          durationS: 4.61
+        - text: It has been described in different ways.
+          atS: 4.93
+          durationS: 2.46
+        - text: In nineteen-oh-three, a newspaper story about this house put it plainly.
+          atS: 7.78
+          durationS: 4.62
+        - text: On H Street, it said, is a long, low addition, formerly slave quarters.
+          atS: 12.84
+          durationS: 5.51
+        - text: A federal survey of the building chose a gentler phrase.
+          atS: 19.05
+          durationS: 3.51
+        - text: Grouped around the garden, it says, are the original servants' quarters, stables and carriage houses.
+          atS: 22.94
+          durationS: 7.69
+        - text: In twenty eleven, historians began a new study of the wing.
+          atS: 31.32
+          durationS: 4.1
+        - text: The report that came out of it, filed with that same federal survey, calls it the slave and service wing.
+          atS: 35.86
+          durationS: 6.79
+        - text: Now turn around and look at the park.
+          atS: 43.16
+          durationS: 2.02
+        - text: The National Park Service keeps a list of what that ground has been used for.
+          atS: 45.63
+          durationS: 4.48
+        - text: A race track.
+          atS: 50.43
+          durationS: 0.95
+        - text: A graveyard.
+          atS: 51.59
+          durationS: 0.99
+        - text: A slave market.
+          atS: 52.79
+          durationS: 1.28
+        - text: Different names, the same wing.
+          atS: 54.51
+          durationS: 2.37
+        - text: The newspaper had it right the first time.
+          atS: 57.32
+          durationS: 2.54

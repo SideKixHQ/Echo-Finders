@@ -44,6 +44,9 @@ interface Props {
   readonly kids: boolean;
   readonly onKids: (on: boolean) => void;
   readonly theme: "dark" | "light";
+  /** Owner mode is on (`owner.ts`), with the way to turn it off. */
+  readonly owner?: boolean;
+  readonly onOwnerOff?: () => void;
   readonly onTheme: (theme: "dark" | "light") => void;
   /** Settings › Membership, first: what you have is the first thing anybody looks for here. */
   readonly membership?: ReactNode;
@@ -70,6 +73,8 @@ export function Privacy({
   onKids,
   theme,
   onTheme,
+  owner = false,
+  onOwnerOff,
   membership,
 }: Props) {
   // What the app would actually be granted, given these settings. Shown so the fallbacks
@@ -175,8 +180,8 @@ export function Privacy({
 
       <Toggle
         label="Anonymous usage statistics"
-        detail="Which features get used. Never who used them."
-        cost="Off by default, like everything here that is for our benefit rather than yours."
+        detail="How many people visit and play stories. Never who, and never where you are."
+        cost="On unless you turn it off. No cookies, nothing that identifies you."
         on={settings.analytics}
         onToggle={() => onChange({ ...settings, analytics: !settings.analytics })}
       />
@@ -207,8 +212,22 @@ export function Privacy({
         </ul>
       </section>
 
+      {owner && onOwnerOff && (
+        <section className="panel">
+          <h3>Owner mode</h3>
+          <button className="danger-row policy-row" onClick={onOwnerOff}>
+            <span>On: every echo unlocked, and playable from anywhere</span>
+            <small>Only on this phone. Tap to turn it off; your owner link turns it back on.</small>
+          </button>
+        </section>
+      )}
+
       <section className="panel panel-danger">
         <h3>Your data</h3>
+        <a className="danger-row policy-row" href="https://echofinders.com/privacy" target="_blank" rel="noreferrer">
+          <span>Privacy policy</span>
+          <small>What we collect, why, and how to turn each part off.</small>
+        </a>
         <button className="danger-row" onClick={() => onDelete("positions")}>
           <span>Delete my positions</span>
           <small>Removes every saved standing position. Keeps your collection.</small>

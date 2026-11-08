@@ -74,7 +74,7 @@ A city is covered at 30 approved echoes (`12-cities.md`). The shape for those 30
 |---|---|---|---|---|
 | History | 9 | 30% | 43% | At least 3 of the 9 military (battle, fort, war, occupation) |
 | Ghosts & legend | 5 | 17% | 7% | Told as legend, male narrator |
-| True crime | 4 | 13% | 6% | Opt-in; each needs a public record |
+| True crime | 4 | 13% | 6% | Opt-in; two reputable sources, unproven told as alleged |
 | People | 3 | 10% | 13% | |
 | Inspo | 3 | 10% | 0% | Where something people know began; film locations count here (below) |
 | Built | 2 | 7% | 17% | Strongest when it carries a story, not a style |

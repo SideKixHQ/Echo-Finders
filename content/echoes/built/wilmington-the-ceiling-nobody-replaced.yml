@@ -1,3 +1,6 @@
+# 2026-11-07 fact-check: the City of Wilmington landmarks page (the only source) refused
+# this session (Access Denied), and no other reachable source carries the 1906 date, the
+# blond brick or the tin ceiling. Quotes below are as copied on 2026-11-03, NOT re-verified.
 # Drafted 2026-11-03 from the city's landmark register.
 # Position: the coordinate of the approved echo at this address
 # (wilmington-the-department-stores-big-windows), nudged south as noted below (medium
@@ -18,7 +21,7 @@ at: { lat: 34.23873, lng: -77.94904 }
 triggerRadiusKm: 0.04
 category: built
 format: look-below
-durationS: 25
+durationS: 23
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +35,7 @@ script: |
   says that ceiling is the original one, stamped tin, still up there on the first storey.
 
   Nobody preserved it. It simply outlasted every tenant who might have torn it out.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "This went up in nineteen oh six, five storeys of blond brick."
@@ -47,3 +50,26 @@ sources:
     url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
     retrievedAt: "2026-11-03"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-ceiling-nobody-replaced/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 22.8
+    audioBytes: 365339
+    transcript:
+      totalS: 22.8
+      lines:
+        - text: Look up, through the window of whatever is trading on the ground floor.
+          atS: 0
+          durationS: 3.9
+        - text: This went up in nineteen oh six, five storeys of blond brick.
+          atS: 4.23
+          durationS: 4.46
+        - text: The city's landmark register says that ceiling is the original one, stamped tin, still up there on the first storey.
+          atS: 9.29
+          durationS: 7.58
+        - text: Nobody preserved it.
+          atS: 17.38
+          durationS: 1.39
+        - text: It simply outlasted every tenant who might have torn it out.
+          atS: 19.16
+          durationS: 3.6

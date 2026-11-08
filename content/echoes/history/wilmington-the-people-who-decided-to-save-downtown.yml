@@ -9,7 +9,7 @@ at: { lat: 34.23307, lng: -77.94656 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 70
+durationS: 63
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,12 +32,18 @@ script: |
   value. A historic district is the accumulated result. The foundation's story helps
   explain why downtown Wilmington still offers more than a list of vanished places. Many
   of its stories retain walls, doors, and street corners you can encounter.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Historic Wilmington Foundation began in 1966, when preservation advocates organized to protect the city's historic places."
     source: 2
     quote: "On August 2, 1966, twelve determined Wilmington residents stepped forward to reverse the tide, signing the articles of incorporation that established the Historic Wilmington Foundation (HWF)—one of North Carolina’s earliest volunteer preservation organizations."
+  - says: "This Orange Street address is its present headquarters, an associated site rather than the setting of every early campaign."
+    source: 1
+    quote: "Thanks in part to an anonymous donation, HWF purchased the William E. Worth House at 211 Orange Street for its headquarters."
+  - says: "The foundation's story helps explain why downtown Wilmington still offers more than a list of vanished places."
+    source: 2
+    quote: "Today, partly because of the six-decade-long alliance between HWF, its donors, and the local community, Wilmington boasts one of the largest historic districts in the United States, spanning more than 230 blocks of historic homes, churches, warehouses, and landmarks."
 sources:
   - title: "Headquarters"
     publisher: "Historic Wilmington Foundation"
@@ -49,3 +55,41 @@ sources:
     url: https://historicwilmington.org/sixty-years-of-historic-wilmington-foundation/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-people-who-decided-to-save-downtown/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 62.9
+    audioBytes: 1007324
+    transcript:
+      totalS: 62.9
+      lines:
+        - text: Historic Wilmington Foundation began in 1966, when preservation advocates organized to protect the city's historic places.
+          atS: 0
+          durationS: 8.93
+        - text: Downtown survival was not automatic.
+          atS: 9.63
+          durationS: 2.68
+        - text: Buildings could be neglected, demolished, or treated as obstacles to a different kind of development.
+          atS: 12.75
+          durationS: 6.29
+        - text: The foundation made preservation an ongoing community effort.
+          atS: 19.74
+          durationS: 4.19
+        - text: This Orange Street address is its present headquarters, an associated site rather than the setting of every early campaign.
+          atS: 24.74
+          durationS: 7.73
+        - text: From the sidewalk, look at the neighboring streets as a collection of individual decisions.
+          atS: 33.59
+          durationS: 5.11
+        - text: An old building remains because someone maintains it, finds it useful, or argues for its value.
+          atS: 39.3
+          durationS: 6.45
+        - text: A historic district is the accumulated result.
+          atS: 46.36
+          durationS: 3.3
+        - text: The foundation's story helps explain why downtown Wilmington still offers more than a list of vanished places.
+          atS: 50.26
+          durationS: 6.92
+        - text: Many of its stories retain walls, doors, and street corners you can encounter.
+          atS: 57.62
+          durationS: 5.26

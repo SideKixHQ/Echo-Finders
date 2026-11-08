@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 229 51% 8%;
+    --foreground: 0 0% 96%;
+    --card: 229 51% 8%;
+    --card-foreground: 0 0% 96%;
+    --primary: 200 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 230 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 202 61% 15%;
+    --muted-foreground: 228 51% 63%;
+    --accent: 20 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    /* Echo-gold — the brand's yellow echo glow (waypoint pins). */
+    --echo-gold: 38 79% 57%;
+    --border: 229 41% 28%;
+    --input: 229 41% 28%;
+    --ring: 200 100% 50%;
+
+    --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: 'Fraunces', Georgia, serif;
+    --font-serif: ui-serif, Georgia, 'Times New Roman', serif;
+    --font-mono: ui-monospace, 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+
+    --radius: 0.5rem;
+    --radius-button: calc(var(--radius) - 2px);
+
+    /* Spacing scale used by p-base, py-xxl, mt-lg, etc. */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-base: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-xxl: 4rem;
+    --space-xxxl: 6rem;
+
+    --width-content: 72rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Long-form documents (the privacy policy), rendered from Markdown. */
+@layer components {
+  .policy { color: hsl(var(--muted-foreground)); line-height: 1.7; }
+  .policy h1 { font-family: var(--font-heading); color: hsl(var(--foreground)); font-size: 2.25rem; line-height: 1.15; margin-bottom: 1rem; }
+  .policy h2 { font-family: var(--font-heading); color: hsl(var(--foreground)); font-size: 1.6rem; margin: 2.5rem 0 0.75rem; }
+  .policy h3 { color: hsl(var(--foreground)); font-weight: 600; font-size: 1.1rem; margin: 1.75rem 0 0.5rem; }
+  .policy p, .policy ul { margin: 0.75rem 0; }
+  .policy ul { list-style: disc; padding-left: 1.25rem; }
+  .policy li { margin: 0.35rem 0; }
+  .policy strong { color: hsl(var(--foreground)); }
+  .policy a { color: hsl(var(--primary)); text-decoration: underline; }
+  .policy hr { border-color: hsl(var(--border)); margin: 2.5rem 0; }
+  .policy table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.95rem; display: block; overflow-x: auto; }
+  .policy th, .policy td { border-bottom: 1px solid hsl(var(--border)); padding: 0.6rem 0.75rem; text-align: left; vertical-align: top; }
+  .policy th { color: hsl(var(--foreground)); }
+}

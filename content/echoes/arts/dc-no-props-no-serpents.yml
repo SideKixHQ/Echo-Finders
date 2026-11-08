@@ -2,14 +2,14 @@
 # Listening spot: Path beside the Jackson statue at the centre of Lafayette Square.
 # Position: A few metres south of Overture's General Andrew Jackson Statue entry (38.89957, -77.03659), on the White House axis at the centre of the square, as the NPS page describes (high confidence).
 id: dc-no-props-no-serpents
-title: "No Props, No Serpents"
+title: "Never Seen One"
 summary: "The Jackson statue was cast by a man who had never seen an equestrian statue. Look at what holds it up."
 place: "Andrew Jackson statue, Lafayette Square, Washington, D.C."
 at: { lat: 38.89950, lng: -77.03660 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 73
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -22,43 +22,103 @@ script: |
   Andrew Jackson's horse is rearing. Its front hooves are in the air. Fifteen tons of
   bronze, balanced on the back legs.
 
-  The man who made it, Clark Mills, was a former ornamental plasterer from South Carolina.
-  He had never seen Jackson. He had never seen an equestrian statue either.
+  The man who made it, Clark Mills, was a self-taught sculptor. He had never seen an
+  equestrian statue.
 
-  He built a furnace near this park and cast the whole thing himself, in ten pieces. The
-  horse alone took six castings before the final one was done.
+  He built a studio and a furnace near this park, and cast the whole thing in ten pieces,
+  four for the horse and six for Jackson. The horse alone took six castings before the
+  final one was done, in December 1852.
 
-  To learn how a horse rears, he bought a retired racehorse named Olympus. He taught it to
-  stand on its hind legs, so that he could watch how it was done.
+  The statue was unveiled on the eighth of January, eighteen fifty-three, the thirty-eighth
+  anniversary of the Battle of New Orleans. A cheering crowd of fifteen thousand followed
+  Mills along Pennsylvania Avenue to the ceremony.
 
-  The statue was unveiled on the eighth of January, eighteen fifty-three. It was the first
-  equestrian statue cast in the United States. Stephen Douglas gave the speech, and he
-  compared it with the famous horses of Europe. Peter the Great's horse leans on a bronze
-  serpent. Wellington's has its hind legs and tail riveted to the pedestal.
-
-  Of this one, Douglas said: no props. No serpents.
+  It was the first equestrian statue cast in the United States, made by a man who had
+  never seen one.
 
   Look under the horse again.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Andrew Jackson's horse is rearing."
+    source: 2
+    quote: "It portrays Jackson on a rearing horse with his hat raised as he reviewed his troops at the battle of New Orleans."
+  - says: "Fifteen tons of bronze, balanced on the back legs."
+    source: 2
+    quote: "The 9'-tall, 12'-wide, and 15-ton bronze was the first equestrian statue cast in the United States. It portrays Jackson on a rearing horse"
+  - says: "The man who made it, Clark Mills, was a self-taught sculptor. He had never seen an equestrian statue."
+    source: 2
+    quote: "The Jackson statue was designed by self-taught sculptor Clark Mills, who had never before seen an equestrian statue."
+  - says: "He built a studio and a furnace near this park, and cast the whole thing in ten pieces, four for the horse and six for Jackson."
+    source: 1
+    quote: "The sculptor Clark Mills erected a studio and furnace near the proposed site in 1849. He had to make six castings of the horse before the final casting was completed in December, 1852. The entire statue was cast in ten pieces, four of the horse and six of Jackson, for a total weight of 15 tons."
+  - says: "The horse alone took six castings before the final one was done, in December 1852."
+    source: 1
+    quote: "He had to make six castings of the horse before the final casting was completed in December, 1852."
+  - says: "The statue was unveiled on the eighth of January, eighteen fifty-three, the thirty-eighth anniversary of the Battle of New Orleans."
+    source: 1
+    quote: "The statue, the first in the park, was dedicated on January 8, 1853, on the thirty-eighth anniversary of the Battle of New Orleans."
+  - says: "A cheering crowd of fifteen thousand followed Mills along Pennsylvania Avenue to the ceremony."
+    source: 2
+    quote: "When it was dedicated January 8, 1853, a cheering throng of 15,000 accompanied Mills along Pennsylvania Avenue to the elaborate unveiling ceremony."
+  - says: "It was the first equestrian statue cast in the United States, made by a man who had never seen one."
+    source: 2
+    quote: "was the first equestrian statue cast in the United States."
+  - says: "made by a man who had never seen one"
+    source: 2
+    quote: "The Jackson statue was designed by self-taught sculptor Clark Mills, who had never before seen an equestrian statue."
 sources:
   - title: "General Andrew Jackson Statue"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/000/general-andrew-jackson-statue.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Lafayette Square, HABS DC-676, written historical and descriptive data"
     publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/dc0784/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc0700/dc0784/data/dc0784data.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain
-  - title: "Jackson statue feature by Edward Boykin, Evening Star Pictorial Magazine, January 4, 1953, image 140"
-    publisher: "Library of Congress, Chronicling America"
-    url: https://www.loc.gov/resource/sn83045462/1953-01-04/ed-1/?sp=140
-    retrievedAt: "2026-10-14"
-    rights: public-domain
-  - title: "Jackson statue and the 1853 Douglas oration, Evening Star, April 19, 1936, image 54"
-    publisher: "Library of Congress, Chronicling America"
-    url: https://www.loc.gov/resource/sn83045462/1936-04-19/ed-1/?sp=54
-    retrievedAt: "2026-10-14"
-    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-no-props-no-serpents/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55
+    audioBytes: 881518
+    transcript:
+      totalS: 55
+      lines:
+        - text: Look under the horse.
+          atS: 0
+          durationS: 1.52
+        - text: Andrew Jackson's horse is rearing.
+          atS: 1.85
+          durationS: 2.19
+        - text: Its front hooves are in the air.
+          atS: 4.32
+          durationS: 1.85
+        - text: Fifteen tons of bronze, balanced on the back legs.
+          atS: 6.44
+          durationS: 3.32
+        - text: The man who made it, Clark Mills, was a self-taught sculptor.
+          atS: 10.21
+          durationS: 4.1
+        - text: He had never seen an equestrian statue.
+          atS: 14.63
+          durationS: 2.59
+        - text: He built a studio and a furnace near this park, and cast the whole thing in ten pieces, four for the horse and six for Jackson.
+          atS: 17.66
+          durationS: 8.35
+        - text: The horse alone took six castings before the final one was done, in December 1852.
+          atS: 26.52
+          durationS: 6.21
+        - text: The statue was unveiled on the eighth of January, eighteen fifty-three, the thirty-eighth anniversary of the Battle of New Orleans.
+          atS: 33.17
+          durationS: 7.29
+        - text: A cheering crowd of fifteen thousand followed Mills along Pennsylvania Avenue to the ceremony.
+          atS: 41.06
+          durationS: 5.34
+        - text: It was the first equestrian statue cast in the United States, made by a man who had never seen one.
+          atS: 46.92
+          durationS: 5.8
+        - text: Look under the horse again.
+          atS: 53.42
+          durationS: 1.61

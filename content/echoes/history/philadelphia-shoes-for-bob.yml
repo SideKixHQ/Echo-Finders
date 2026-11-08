@@ -9,7 +9,7 @@ at: { lat: 39.95068, lng: -75.15212 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 78
+durationS: 77
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -21,13 +21,13 @@ script: |
 
   In the summer of seventeen seventy-six this corner was out near the edge of town. Thomas Jefferson rented rooms here from a young bricklayer named Graff.
 
-  Nearly fifty years later a Philadelphia doctor wrote to ask him exactly where he had written the Declaration of Independence. Jefferson answered from Monticello. A new brick house, three stories high, he wrote. I rented the second floor, a parlour and bedroom, ready furnished. In that parlour I wrote habitually, and in it wrote this paper particularly.
+  Nearly fifty years later a Philadelphia doctor wrote to ask him exactly where he had written the Declaration of Independence. Jefferson answered from Monticello. A new brick house, three stories high, he wrote. I rented the second floor, a parlor and bedroom, ready furnished. In that parlor I wrote habitually, and in it wrote that paper particularly.
 
   He also kept an account book that summer, and it survives. Thirty-five shillings a week for lodging. Dinners at Smith's. A straw hat. One shilling for seeing a monkey.
 
   And shoes for Bob. Stockings for Bob.
 
-  Jefferson did not come alone. With him was Robert Hemings, fourteen years old, whom he enslaved. Bob, in the account book, was almost certainly him.
+  Jefferson did not come alone. With him was Robert Hemings, fourteen years old, whom he enslaved. The account book never says who Bob was.
 
   The rooms are a reconstruction. The shoes for Bob are in Jefferson's own handwriting.
 pronunciations:
@@ -37,8 +37,69 @@ pronunciations:
     say: HEM-ingz
   - written: Graff
     say: GRAF
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Look at the brick house on this corner of Seventh and Market."
+    source: 3
+    quote: "the house at the southwest corner of Market and Seventh streets"
+  - says: "The house that stood here was demolished, and this one was built in nineteen seventy-five to stand in for it."
+    source: 1
+    quote: "The house was later demolished, and then reconstructed in 1975."
+  - says: "In the summer of seventeen seventy-six this corner was out near the edge of town."
+    source: 1
+    quote: "Jefferson, along with his 14 year old enslaved valet Robert Hemmings, stayed at this location—then on the outskirts of the city—while drafting the Declaration of Independence."
+  - says: "Thomas Jefferson rented rooms here from a young bricklayer named Graff."
+    source: 4
+    quote: "The proprietor, Gratz (Graff), was a young man, son of a German, and then newly married. I think he was a bricklayer"
+  - says: "Nearly fifty years later a Philadelphia doctor wrote to ask him exactly where he had written the Declaration of Independence."
+    source: 3
+    quote: "as early as September 8, 1825, Dr. James Mease of Philadelphia wrote to Jefferson himself and inquired"
+  - says: "Jefferson answered from Monticello."
+    source: 3
+    quote: "Jefferson, who was then at Monticello, replied"
+  - says: "A new brick house, three stories high, he wrote."
+    source: 4
+    quote: "new brick house, three stories high, of which I rented the second floor"
+  - says: "I rented the second floor, a parlor and bedroom, ready furnished."
+    source: 4
+    quote: "of which I rented the second floor, con- sisting of a parlor and bedroom ready furnished."
+  - says: "In that parlor I wrote habitually, and in it wrote that paper particularly."
+    source: 4
+    quote: "In that parlor I wrote habitually, and in it wrote that paper particularly."
+  - says: "He also kept an account book that summer, and it survives."
+    source: 3
+    quote: "is shown by what is known as his “Account Book”."
+  - says: "The account book never says who Bob was."
+    source: 3
+    quote: "pd for shoes for Bob, 8/"
+  - says: "Thirty-five shillings a week for lodging."
+    source: 3
+    quote: "pd Graaf one week’s lodging 35/"
+  - says: "Dinners at Smith's."
+    source: 3
+    quote: "pd dinner at Smith’s 6/"
+  - says: "A straw hat."
+    source: 3
+    quote: "pd for a straw hat 10/"
+  - says: "One shilling for seeing a monkey."
+    source: 3
+    quote: "pd for seeing a monkey 1/"
+  - says: "And shoes for Bob."
+    source: 3
+    quote: "pd for shoes for Bob, 8/"
+  - says: "Stockings for Bob."
+    source: 3
+    quote: "pa for stockings for Bob. 7/"
+  - says: "Jefferson did not come alone."
+    source: 1
+    quote: "Jefferson, along with his 14 year old enslaved valet Robert Hemmings, stayed at this location"
+  - says: "With him was Robert Hemings, fourteen years old, whom he enslaved."
+    source: 2
+    quote: "Attending to him was his 14-year-old enslaved servant, Robert Hemmings."
+  - says: "The shoes for Bob are in Jefferson's own handwriting."
+    source: 3
+    quote: "the entries, in Jefferson’s own hand, being on pages left blank for the purpose."
 sources:
   - title: "Visiting the Declaration House"
     publisher: "National Park Service, Independence National Historical Park"
@@ -60,3 +121,77 @@ sources:
     url: https://www.loc.gov/item/18015276/
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-shoes-for-bob/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77.1
+    audioBytes: 1234694
+    transcript:
+      totalS: 77.1
+      lines:
+        - text: Look at the brick house on this corner of Seventh and Market.
+          atS: 0
+          durationS: 3.5
+        - text: It is not old.
+          atS: 3.82
+          durationS: 1.18
+        - text: The house that stood here was demolished, and this one was built in nineteen seventy-five to stand in for it.
+          atS: 5.33
+          durationS: 6.27
+        - text: In the summer of seventeen seventy-six this corner was out near the edge of town.
+          atS: 12.29
+          durationS: 5.02
+        - text: Thomas Jefferson rented rooms here from a young bricklayer named Graff.
+          atS: 17.91
+          durationS: 4.4
+        - text: Nearly fifty years later a Philadelphia doctor wrote to ask him exactly where he had written the Declaration of Independence.
+          atS: 22.82
+          durationS: 7.72
+        - text: Jefferson answered from Monticello.
+          atS: 31.24
+          durationS: 2.5
+        - text: A new brick house, three stories high, he wrote.
+          atS: 34.25
+          durationS: 3.47
+        - text: I rented the second floor, a parlor and bedroom, ready furnished.
+          atS: 38.33
+          durationS: 4.64
+        - text: In that parlor I wrote habitually, and in it wrote that paper particularly.
+          atS: 43.57
+          durationS: 4.5
+        - text: He also kept an account book that summer, and it survives.
+          atS: 48.52
+          durationS: 3.69
+        - text: Thirty-five shillings a week for lodging.
+          atS: 52.59
+          durationS: 2.22
+        - text: Dinners at Smith's.
+          atS: 55.19
+          durationS: 1.21
+        - text: A straw hat.
+          atS: 56.58
+          durationS: 1.03
+        - text: One shilling for seeing a monkey.
+          atS: 57.85
+          durationS: 1.85
+        - text: And shoes for Bob.
+          atS: 59.87
+          durationS: 1.17
+        - text: Stockings for Bob.
+          atS: 61.32
+          durationS: 1.17
+        - text: Jefferson did not come alone.
+          atS: 63.1
+          durationS: 1.6
+        - text: With him was Robert Hemings, fourteen years old, whom he enslaved.
+          atS: 65.03
+          durationS: 3.98
+        - text: The account book never says who Bob was.
+          atS: 69.45
+          durationS: 2.3
+        - text: The rooms are a reconstruction.
+          atS: 72.08
+          durationS: 1.73
+        - text: The shoes for Bob are in Jefferson's own handwriting.
+          atS: 74.05
+          durationS: 3.04

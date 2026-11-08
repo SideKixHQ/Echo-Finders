@@ -27,6 +27,9 @@ function inlinePrice(amountMinor: number, name: string): Record<string, string |
   };
 }
 
+/** The label on every Echo Finders payment in the shared Stripe account. */
+const APP = "echo-finders";
+
 function oneOff(plan: "city-pass" | "week-pass", city: City, customer: string | undefined, origin: string) {
   return {
     mode: "payment",
@@ -34,6 +37,11 @@ function oneOff(plan: "city-pass" | "week-pass", city: City, customer: string | 
     "metadata[city]": city.id,
     "payment_intent_data[metadata][plan]": plan,
     "payment_intent_data[metadata][city]": city.id,
+    // Which app took the money. The Stripe account is shared with SideKix (2026-11-08), so
+    // anything that has to find Echo Finders' own payments or subscriptions, such as the
+    // All-Access renewal reminder, finds them by this label.
+    "payment_intent_data[metadata][app]": APP,
+    "metadata[app]": APP,
     ...(customer ? { customer } : { customer_creation: "always" }),
     ...taxAndAddress(customer),
     success_url: `${origin}/?checkout=success&session_id={CHECKOUT_SESSION_ID}`,
@@ -69,7 +77,9 @@ export async function POST(request: Request): Promise<Response> {
       const city = CITIES.find((c) => c.id === body.cityId);
       if (!city) return reply(400, { error: "That is not a city with a Week Pass." });
       const session = await stripe<{ url: string }>("POST", "/checkout/sessions", {
-        ...inlinePrice(PLANS.week.amountMinor, `${city.name} ${PLANS.week.name}`),
+        ...(process.env.STRIPE_PRICE_WEEK_PASS
+          ? { "line_items[0][price]": process.env.STRIPE_PRICE_WEEK_PASS, "line_items[0][quantity]": 1 }
+          : inlinePrice(PLANS.week.amountMinor, `${city.name} ${PLANS.week.name}`)),
         ...oneOff("week-pass", city, customer, origin),
       });
       return reply(200, { url: session.url });
@@ -80,10 +90,13 @@ export async function POST(request: Request): Promise<Response> {
       // A Week Pass still running counts towards it. Checked against Stripe, not the phone's
       // word for it: the discount is only given to a customer Stripe says paid for the week.
       const owed = customer ? cityPassPriceMinor(await lookup(customer), city.id, Date.now()) : PLANS.city.amountMinor;
+      const upgrade = owed < PLANS.city.amountMinor;
       const price =
-        owed < PLANS.city.amountMinor
-          ? inlinePrice(owed, `${city.name} ${PLANS.city.name} (your Week Pass counted)`)
-          : { "line_items[0][price]": process.env.STRIPE_PRICE_CITY_PASS, "line_items[0][quantity]": 1 };
+        upgrade && process.env.STRIPE_PRICE_CITY_UPGRADE && owed === PLANS.city.amountMinor - PLANS.week.amountMinor
+          ? { "line_items[0][price]": process.env.STRIPE_PRICE_CITY_UPGRADE, "line_items[0][quantity]": 1 }
+          : upgrade
+            ? inlinePrice(owed, `${city.name} ${PLANS.city.name} (your Week Pass counted)`)
+            : { "line_items[0][price]": process.env.STRIPE_PRICE_CITY_PASS, "line_items[0][quantity]": 1 };
       const session = await stripe<{ url: string }>("POST", "/checkout/sessions", {
         ...price,
         ...oneOff("city-pass", city, customer, origin),
@@ -97,6 +110,8 @@ export async function POST(request: Request): Promise<Response> {
         "line_items[0][quantity]": 1,
         "metadata[plan]": "all-access",
         "subscription_data[metadata][plan]": "all-access",
+        "subscription_data[metadata][app]": APP,
+        "metadata[app]": APP,
         ...(customer ? { customer } : {}),
         ...taxAndAddress(customer),
         success_url: `${origin}/?checkout=success&session_id={CHECKOUT_SESSION_ID}`,

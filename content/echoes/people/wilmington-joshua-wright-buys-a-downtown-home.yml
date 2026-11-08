@@ -10,7 +10,7 @@ at: { lat: 34.23540, lng: -77.94649 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 66
+durationS: 53
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -18,24 +18,75 @@ quality: 0.75
 tags: [wilmington, downtown]
 teaser: "Joshua Grainger Wright purchased this house in 1799."
 script: |
-  Joshua Grainger Wright purchased this house in 1799. His family supplied the second
-  surname by which the museum is known today.
+  Joshua Grainger Wright purchased this house in 1799. His family gave the museum the
+  name it carries after the hyphen.
 
   Wright became a judge, and the house entered a new household's history. Its earlier
   connection with John Burgwin remained in the building even as ownership changed.
 
-  Stand at the corner and listen to the two names together: Burgwin and Wright. A compound
+  Stand at the corner and listen to the names together: Burgwin and Wright. A compound
   name can compress decades into something that sounds like a single identity.
 
   The purchase was a turning point rather than a minor footnote. A new owner meant new
   family routines and later adaptations, while the old jail remains stayed underneath.
-  Wright's arrival shows how a landmark accumulates its identity. The building survived
-  one owner by becoming meaningful to another.
-editorial: draft
+  Wright's arrival shows how a landmark accumulates its identity. The building passed
+  from its builder to a new family and took on meaning for them too.
+editorial: approved
 factCheck: single-source
+claims:
+  - says: "Joshua Grainger Wright purchased this house in 1799."
+    source: 1
+    quote: "1799 After his stepfather, mother, and older brother pass away in quick succession, 33-year-old Joshua Grainger Wright purchases the house from John Burgwin"
+  - says: "Wright became a judge, and the house entered a new household's history."
+    source: 1
+    quote: "Joshua serves as a member of the North Carolina General Assembly from 1792 to 1809, and later in life becomes a Superior Court judge"
+  - says: "Its earlier connection with John Burgwin remained in the building even as ownership changed."
+    source: 1
+    quote: "The Burgwin-Wright House is built as a townhouse for John Burgwin, using the ballast stone walls of the jail as a foundation for the house"
+  - says: "A new owner meant new family routines and later adaptations, while the old jail remains stayed underneath."
+    source: 1
+    quote: "The Burgwin-Wright House is built as a townhouse for John Burgwin, using the ballast stone walls of the jail as a foundation for the house, and the jailer’s quarters as a detached kitchen."
 sources:
   - title: "Family timeline"
     publisher: "Burgwin-Wright House and Gardens"
     url: https://www.burgwinwrighthouse.com/family-timeline
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-joshua-wright-buys-a-downtown-home/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.6
+    audioBytes: 843066
+    transcript:
+      totalS: 52.6
+      lines:
+        - text: Joshua Grainger Wright purchased this house in 1799.
+          atS: 0
+          durationS: 3.95
+        - text: His family gave the museum the name it carries after the hyphen.
+          atS: 4.33
+          durationS: 3.56
+        - text: Wright became a judge, and the house entered a new household's history.
+          atS: 8.22
+          durationS: 4.04
+        - text: Its earlier connection with John Burgwin remained in the building even as ownership changed.
+          atS: 12.86
+          durationS: 5.24
+        - text: "Stand at the corner and listen to the names together: Burgwin and Wright."
+          atS: 18.7
+          durationS: 4.91
+        - text: A compound name can compress decades into something that sounds like a single identity.
+          atS: 24.31
+          durationS: 5.82
+        - text: The purchase was a turning point rather than a minor footnote.
+          atS: 31.08
+          durationS: 3.79
+        - text: A new owner meant new family routines and later adaptations, while the old jail remains stayed underneath.
+          atS: 35.31
+          durationS: 7.56
+        - text: Wright's arrival shows how a landmark accumulates its identity.
+          atS: 43.38
+          durationS: 4.15
+        - text: The building passed from its builder to a new family and took on meaning for them too.
+          atS: 48.22
+          durationS: 4.4

@@ -10,7 +10,7 @@ at: { lat: 34.23264, lng: -77.94756 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 68
+durationS: 58
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -19,7 +19,8 @@ tags: [wilmington, downtown]
 teaser: "Claude Howell helped advocate for a stronger visual-arts life in Wilmington."
 script: |
   Claude Howell helped advocate for a stronger visual-arts life in Wilmington. In 1962, he
-  supported the movement that established St. John's Art Gallery here.
+  wrote to the local paper, and he was part of the community movement that founded St.
+  John's Art Gallery here.
 
   The Cameron Art Museum's history records his call for the community to encounter
   important art from the past and present. He wanted local audiences to have wider
@@ -32,15 +33,68 @@ script: |
   art with building an audience for it. A city's cultural life depends on both. The
   gallery gave that argument rooms and a public address, allowing an artistic ambition to
   become something visitors could actually enter.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Claude Howell helped advocate for a stronger visual-arts life in Wilmington."
     source: 1
     quote: "Claude Howell, who was then chair of the University of North Carolina Wilmington art department, wrote in a letter to the editor of the Wilmington Star News on January 28, 1962, “…we need to see and hear the best that is being done in the world today."
+  - says: "In 1962, he wrote to the local paper"
+    source: 1
+    quote: "Claude Howell, who was then chair of the University of North Carolina Wilmington art department, wrote in a letter to the editor of the Wilmington Star News on January 28, 1962, “…we need to see and hear the best that is being done in the world today."
+  - says: "he was part of the community movement that founded St. John's Art Gallery here"
+    source: 1
+    quote: "Forty years after Chant’s arrival, at least three of her students and colleagues, Claude Howell, Hester Donnelly, and Peggy Hall, were part of the community movement that founded St. John’s Art Gallery in the oldest Masonic Lodge in the state."
+  - says: "The Cameron Art Museum's history records his call for the community to encounter important art from the past and present."
+    source: 1
+    quote: "We need to raise our standards in the visual arts by showing the best art of the past, as well as what is being produced today."
+  - says: "Howell's role connected making art with building an audience for it."
+    source: 1
+    quote: "Chant, an eccentric British artist, set up an art studio on Cottage Lane, in the Hart Wine House, where students like Claude Howell and Henry Jay MacMillan took art classes."
 sources:
   - title: "History"
     publisher: "Cameron Art Museum"
     url: https://cameronartmuseum.org/history/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-claude-howell-asks-for-more-art/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 58.4
+    audioBytes: 935853
+    transcript:
+      totalS: 58.4
+      lines:
+        - text: Claude Howell helped advocate for a stronger visual-arts life in Wilmington.
+          atS: 0
+          durationS: 5.06
+        - text: In 1962, he wrote to the local paper, and he was part of the community movement that founded St.
+          atS: 5.67
+          durationS: 6.64
+        - text: John's Art Gallery here.
+          atS: 12.34
+          durationS: 1.63
+        - text: The Cameron Art Museum's history records his call for the community to encounter important art from the past and present.
+          atS: 14.78
+          durationS: 7.62
+        - text: He wanted local audiences to have wider opportunities to look and learn.
+          atS: 23.09
+          durationS: 4.92
+        - text: We do not need to reproduce his letter to understand the action behind it.
+          atS: 28.71
+          durationS: 4.15
+        - text: Advocacy helped turn a hope into an institution.
+          atS: 33.67
+          durationS: 3.22
+        - text: Look at the earlier museum complex from Orange Street.
+          atS: 37.49
+          durationS: 3.27
+        - text: Howell's role connected making art with building an audience for it.
+          atS: 41.37
+          durationS: 4.1
+        - text: A city's cultural life depends on both.
+          atS: 46.16
+          durationS: 2.76
+        - text: The gallery gave that argument rooms and a public address, allowing an artistic ambition to become something visitors could actually enter.
+          atS: 49.62
+          durationS: 8.8

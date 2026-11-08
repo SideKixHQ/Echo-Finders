@@ -9,7 +9,7 @@ at: { lat: 38.89728, lng: -77.02300 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 77
+durationS: 72
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,18 +36,110 @@ script: |
 
   By midnight on the night of the ball, there were more than four thousand guests.
 
-  The building is an art museum now. Whitman saw both of its nights in the same rooms, a
-  little over two years apart.
-editorial: draft
+  The building is an art museum now. Whitman saw both of its lives, in the same rooms.
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "On the sixth of March 1865, guests climbed to that portico for Abraham Lincoln's second inaugural ball."
+    source: 1
+    quote: "Upon arrival, guests made their way up the great stairway to the entrance on the south portico (porch)."
+  - says: "On the sixth of March 1865"
+    source: 1
+    quote: "On the evening of March 6, 1865, the Patent Office building was the site of President Abraham Lincoln’s second inaugural ball."
+  - says: "It was the first time a government building had been used for one."
+    source: 1
+    quote: "This was the first time that a government building was used for such an occasion."
+  - says: "The great hall upstairs was the largest empty room in the city for dancing."
+    source: 1
+    quote: "The large empty hall on the top floor of Patent Office Building’s nearly finished north wing was the largest vacant space available for dancing in the city at the time."
+  - says: "One of the clerks in the building went up to look while it was being made ready."
+    source: 1
+    quote: "The great American poet Walt Whitman worked as a clerk in the Bureau of Indian Affairs in the Patent Office Building. He was eager to inspect the halls being prepared for the inaugural festivities and recorded the following passage:"
+  - says: "His name was Walt Whitman, and he wrote down what he saw."
+    source: 1
+    quote: "The great American poet Walt Whitman worked as a clerk in the Bureau of Indian Affairs in the Patent Office Building. He was eager to inspect the halls being prepared for the inaugural festivities and recorded the following passage:"
+  - says: "Earlier in the war, this building had been a military hospital."
+    source: 1
+    quote: "During the Civil War, it became a military hospital and barracks."
+  - says: "Whitman remembered these same rooms filled with the worst wounded of the war, brought in from Second Bull Run, Antietam and Fredericksburg."
+    source: 1
+    quote: "I could not help thinking, what a different scene they presented to my view since, fill’d with a crowded mass of the worst wounded of the war, brought in from second Bull Run, Antietam, and Fredericksburgh."
+  - says: "Tonight, he wrote, beautiful women, perfumes, the violins' sweetness, the polka and the waltz."
+    source: 1
+    quote: "To-night, beautiful women, perfumes, the violins’ sweetness, the polka and the waltz;"
+  - says: "Then, the amputation, the blue face, the groan, the glassy eye of the dying."
+    source: 1
+    quote: "then the amputation, the blue face, the groan, the glassy eye of the dying, the clotted rag, the odor of wounds and blood, and many a mother’s son amid strangers, passing away untended."
+  - says: "And many a mother's son amid strangers, passing away untended."
+    source: 1
+    quote: "and many a mother’s son amid strangers, passing away untended."
+  - says: "By midnight on the night of the ball, there were more than four thousand guests."
+    source: 1
+    quote: "By midnight there were more than 4,000 guests."
+  - says: "The building is an art museum now."
+    source: 1
+    quote: "The building houses two Smithsonian Institution museums: the Smithsonian American Art Museum and the National Portrait Gallery."
+  - says: "Whitman saw both of its lives, in the same rooms."
+    source: 1
+    quote: "I have been up to look at the dance and supper rooms, for the inauguration ball, at the Patent office; and I could not help thinking, what a different scene they presented to my view since, fill’d with a crowded mass of the worst wounded of the war"
 sources:
   - title: "\"The Honor of Your Company is Requested\": Lincoln's Second Inaugural Ball at the Patent Office (Teaching with Historic Places)"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/-the-honor-of-your-company-is-requested-lincoln-s-second-inaugural-ball-at-the-patent-office.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Patent Office Building, Bounded by 7th, 9th, F, and G Streets Northwest (HABS DC-130)"
     publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/dc0194/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc0100/dc0194/data/dc0194data.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-ballroom-ward/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72.3
+    audioBytes: 1157790
+    transcript:
+      totalS: 72.3
+      lines:
+        - text: Look up at the columns on the F Street front.
+          atS: 0
+          durationS: 2.63
+        - text: On the sixth of March 1865, guests climbed to that portico for Abraham Lincoln's second inaugural ball.
+          atS: 3.94
+          durationS: 7.38
+        - text: It was the first time a government building had been used for one.
+          atS: 11.92
+          durationS: 3.4
+        - text: The great hall upstairs was the largest empty room in the city for dancing.
+          atS: 16.28
+          durationS: 4.32
+        - text: One of the clerks in the building went up to look while it was being made ready.
+          atS: 21.04
+          durationS: 3.77
+        - text: His name was Walt Whitman, and he wrote down what he saw.
+          atS: 25.14
+          durationS: 3.67
+        - text: Earlier in the war, this building had been a military hospital.
+          atS: 29.76
+          durationS: 3.21
+        - text: Whitman remembered these same rooms filled with the worst wounded of the war, brought in from Second Bull Run, Antietam and Fredericksburg.
+          atS: 33.58
+          durationS: 8.52
+        - text: Tonight, he wrote, beautiful women, perfumes, the violins' sweetness, the polka and the waltz.
+          atS: 42.42
+          durationS: 7.06
+        - text: Then, the amputation, the blue face, the groan, the glassy eye of the dying.
+          atS: 49.73
+          durationS: 5.94
+        - text: And many a mother's son amid strangers, passing away untended.
+          atS: 55.99
+          durationS: 4.85
+        - text: By midnight on the night of the ball, there were more than four thousand guests.
+          atS: 61.8
+          durationS: 4.41
+        - text: The building is an art museum now.
+          atS: 66.59
+          durationS: 2.02
+        - text: Whitman saw both of its lives, in the same rooms.
+          atS: 69
+          durationS: 3.31

@@ -75,10 +75,15 @@ Worth knowing before you judge it, so you spend your attention on the right thin
 | **Standing in** | The archive photographs. Drawn, and labelled as such in their own credit line. |
 | **Real, near echoes** | The basemap: built from Overture's open data around every echo area (below). Between areas the map is the plain navy field. |
 
-## Two things in the URL
+## Four things in the URL
 
 - `?speed=2` slows the simulation, so the twelve-second capture ring is watchable.
 - `?start=0.4` drops you four-tenths of the way along, to skip to a busier stretch.
+- `?at=<echo id>` or `?at=<lat>,<lng>` stands you there instead of where the phone is, to
+  hear an echo and use the player from anywhere (James, 2026-11-08). An amber banner says
+  so. Everything else is real, purchases included. For example
+  `https://echo-finders.vercel.app/?at=wilmington-ellen-bellamys-long-view`.
+- `?owner=<code>` turns on owner mode on that phone (below, "Owner mode").
 
 ## The map
 
@@ -122,12 +127,15 @@ SIL Open Font Licence). The credit under the map reads *© OpenStreetMap · Over
 
 ## Payments (Stripe)
 
-Built and switched off. The app asks `/api/config` whether payments are on, and until all
-three settings below exist the answer is no: every purchase is recorded on the phone and
-nothing is charged, exactly as before. Turning payments on is these steps, not a deploy.
+**On, in test mode (2026-11-07).** The app asks `/api/config` whether payments are on; until
+the three required settings below exist the answer is no, every purchase is recorded on the
+phone and nothing is charged. Turning payments on is these steps, not a deploy.
 
-1. **In Stripe** (start in **test mode**, the toggle top right), create two products:
-   - **City Pass**: a one-off price, $9.99 (or whatever price you settle on).
+1. **In Stripe** (start in **test mode**, the toggle top right), create three products and
+   one extra price:
+   - **Week Pass**: a one-off price, $3.99.
+   - **City Pass**: a one-off price, $9.99, and a second one-off price of $6.00 for a City
+     Pass bought while a Week Pass is running (`docs/03-selling.md`).
    - **All-Access**: a recurring yearly price, $34.99.
    Copy each price's id (`price_…`).
 2. **In Stripe**, Settings → Billing → Customer portal: turn on *update payment method*,
@@ -137,6 +145,12 @@ nothing is charged, exactly as before. Turning payments on is these steps, not a
        STRIPE_SECRET_KEY        sk_test_…  (sk_live_… when going live)
        STRIPE_PRICE_CITY_PASS   price_…    (the City Pass price)
        STRIPE_PRICE_ALL_ACCESS  price_…    (the All-Access price)
+       STRIPE_PRICE_WEEK_PASS   price_…    (optional: the Week Pass price)
+       STRIPE_PRICE_CITY_UPGRADE price_…   (optional: the $6.00 City Pass price)
+
+   The last two are optional: without them the checkout sends $3.99 and $6.00 from `PLANS`
+   as one-off prices, which charges the same, but the sales then don't show under those
+   products in Stripe's reports.
 
    Then redeploy (Deployments → the latest → Redeploy) so the functions pick them up.
 4. **US only (2026-10-09).** In Stripe, Radar → Rules, add **Block if `:card_country: !=
@@ -153,11 +167,22 @@ nothing is charged, exactly as before. Turning payments on is these steps, not a
 
 To go live, repeat 1 to 5 in live mode with the live key and live price ids.
 
-**Done in test mode (2026-10-09):** both products exist in the Stripe sandbox (*Echo Finders
-City Pass* `price_1UOliPIsk2G8juHsveyHcC5X`, *Echo Finders All-Access*
-`price_1UOliRIsk2G8juHsxx1UHAoC`), the customer portal is configured, and both price ids
-are set in Vercel, labelled TEST MODE. Left for James: the test secret key, the Radar rule
-and the tax settings.
+**Done in test mode:** the products exist in the Stripe sandbox:
+
+| Product | Price id |
+|---|---|
+| Echo Finders City Pass, $9.99 (2026-10-09) | `price_1UOliPIsk2G8juHsveyHcC5X` |
+| Echo Finders All-Access, $34.99 a year (2026-10-09) | `price_1UOliRIsk2G8juHsxx1UHAoC` |
+| Echo Finders Week Pass, $3.99 (2026-11-07) | `price_1UZCRHIsk2G8juHswinYXO8o` |
+| City Pass with a Week Pass counted, $6.00 (2026-11-07) | `price_1UZCRHIsk2G8juHselastC9M` |
+
+The customer portal is configured (card updates, receipts, cancel at period end), and
+cards, Apple Pay, Google Pay and Link are on (checked 2026-11-07). The live site's checkout
+answers with test sessions (`cs_test_…`): only Stripe's test cards work. **Left for James to
+go live:** activate the Stripe account (business details and bank), then repeat steps 1 to 5
+in live mode, with the live key and live price ids in Vercel; the Radar rule; the tax
+settings; and Stripe's renewal reminder email (Settings → Billing → Subscriptions and
+emails) for All-Access.
 
 What it does not do yet, on purpose: there are no accounts, so Stripe is the record of who
 paid, and the phone keeps the Stripe customer id. Restore works on the phone that bought; a
@@ -165,6 +190,31 @@ second phone waits for accounts (`docs/03-selling.md`). No webhook is needed for
 app reads what was bought from Stripe directly when it comes back from checkout.
 
 The secret key lives only in Vercel. It is never in the repository and never in the app.
+
+## Owner mode
+
+James's own phone, with every echo unlocked and playable from anywhere (2026-11-08).
+Open `https://echo-finders.vercel.app/?owner=<code>` once on the phone: the app checks the
+code with `/api/owner` against `OWNER_CODE` (Vercel, Production, sensitive) and marks that
+phone; the code is taken off the address straight away. Settings › Privacy › Owner mode
+turns it off. To change the code, change `OWNER_CODE` in Vercel and redeploy: old links
+stop working, phones already marked stay marked until turned off.
+
+## Analytics (Vercel Web Analytics)
+
+Anonymous counts, on both the app and the website: visits, plus four app events (`Echo
+played` and `Paywall shown`, by category; `Checkout started`, by plan and city; `Purchase
+completed`, by plan). No cookies, no IP stored, nothing that identifies a person; the
+address is sent without its query string (`apps/prototype/src/analytics.ts`).
+
+- **On by default in the app** (James, 2026-11-07), off with Settings › Privacy ›
+  Anonymous usage statistics. A phone that saved its settings before this change keeps
+  the "off" it saved.
+- **Turn it on in Vercel, once per project** (`echo-finders` and `echo-finders-site`):
+  the project → **Analytics** tab → **Enable**. Until then the script is not served and
+  nothing is counted.
+- Visits are counted on every plan. The four app events are Vercel "custom events", which
+  need a Pro plan; on Hobby they are dropped and only visits show.
 
 ## Error reports (Sentry)
 
@@ -192,6 +242,25 @@ email alerts for new feedback there, or it will sit unread.
 Error reports are **opt-in** (James, 2026-11-06). A phone
 sends nothing until its owner turns on Settings › Privacy › Send error reports, so expect
 few reports, and turn it on yourself on your own phone when testing.
+
+## The website (echofinders.com)
+
+The marketing site is `apps/site` (`@echofinders/site`): React 18, Vite, Tailwind, two pages
+(Home and Partners). It began as James's Airo draft and was brought into the repo on
+2026-11-07. Every word and photo is in `apps/site/src/content.ts`; prices there must match
+`PLANS` in `packages/core/src/entitlement/entitlement.ts`.
+
+It is its own Vercel project, `echo-finders-site`, with root directory `apps/site`. Merging to
+`main` deploys both the app and the site. The domain `echofinders.com` is registered at
+GoDaddy; its DNS points at Vercel (an `A` record for the apex and a `CNAME` for `www`, values
+as shown in the Vercel project's Domains page).
+
+- Photos are Unsplash images loaded from images.unsplash.com, except History, which is a
+  public-domain Library of Congress plate of Fort Fisher (`public/fort-fisher.jpg`).
+- "Get the app" opens the web app at https://echo-finders.vercel.app/.
+- The partner form opens the visitor's email app, addressed to `partners@echofinders.com`;
+  contact links use `hello@echofinders.com`. Both addresses must exist.
+- Terms and refund policy links go in the footer once those pages are published (#122).
 
 ## What is most useful to hear from you
 

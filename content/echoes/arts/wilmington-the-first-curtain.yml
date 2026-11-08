@@ -9,7 +9,7 @@ at: { lat: 34.23773, lng: -77.94568 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 69
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -20,26 +20,72 @@ script: |
   On October 12, 1858, Thalian Hall opened with a gala. Wilmington gained a theater that
   would connect local audiences with performers traveling through the country.
 
-  For the people arriving that evening, this was a new room, not a historic landmark. The
-  expectation lay ahead: a curtain would rise, a performance would begin, and the city's
-  investment would become an experience.
+  For the people arriving that evening, this was a new room, not a historic landmark.
+  The expectation lay ahead: a curtain would rise, a performance would begin, and the
+  city's investment would become an experience.
 
   Stand outside the entrance. A theater's opening can be remembered as a date, but its
   real test comes when people gather and listen together.
 
-  Every later audience added another use to the building. The first night's importance is
-  that it began the pattern. Before the reputation, restorations, and anniversary
-  celebrations, Wilmington had to take the simple step that makes a theater work: open the
-  doors and invite people in.
-editorial: draft
+  Every later audience added another use to the building. That opening night began the
+  pattern. Before the reputation, restorations, and anniversary celebrations, the town
+  had to take the simple step that makes a theater work: open the doors and invite
+  people in.
+editorial: approved
 factCheck: single-source
 claims:
   - says: "On October 12, 1858, Thalian Hall opened with a gala."
     source: 1
     quote: "On October 12, 1858, Thalian Hall in Wilmington opened with a gala celebration."
+  - says: "Wilmington gained a theater that would connect local audiences with performers traveling through the country."
+    source: 2
+    quote: "With the building of Thalian Hall, Wilmington became a major stop for national touring artists."
+  - says: "Before the reputation, restorations, and anniversary celebrations"
+    source: 1
+    quote: "The most recent restoration occurred in 1990."
 sources:
   - title: "Thalian hall opens wilmington"
     publisher: "North Carolina Department of Natural and Cultural Resources"
     url: https://www.dncr.nc.gov/blog/2016/10/12/thalian-hall-opens-wilmington
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+  - title: "Our History"
+    publisher: "Thalian Hall Center for the Performing Arts"
+    url: https://www.thalianhall.org/about
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-first-curtain/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.7
+    audioBytes: 875667
+    transcript:
+      totalS: 54.7
+      lines:
+        - text: On October 12, 1858, Thalian Hall opened with a gala.
+          atS: 0
+          durationS: 5.02
+        - text: Wilmington gained a theater that would connect local audiences with performers traveling through the country.
+          atS: 5.4
+          durationS: 5.87
+        - text: For the people arriving that evening, this was a new room, not a historic landmark.
+          atS: 11.88
+          durationS: 5.34
+        - text: "The expectation lay ahead: a curtain would rise, a performance would begin, and the city's investment would become an experience."
+          atS: 17.82
+          durationS: 7.99
+        - text: Stand outside the entrance.
+          atS: 26.41
+          durationS: 1.98
+        - text: A theater's opening can be remembered as a date, but its real test comes when people gather and listen together.
+          atS: 28.78
+          durationS: 6.51
+        - text: Every later audience added another use to the building.
+          atS: 36.11
+          durationS: 3.08
+        - text: That opening night began the pattern.
+          atS: 40.14
+          durationS: 2.32
+        - text: "Before the reputation, restorations, and anniversary celebrations, the town had to take the simple step that makes a theater work: open the doors and invite people in."
+          atS: 43.41
+          durationS: 11.25

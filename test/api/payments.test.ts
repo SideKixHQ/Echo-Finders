@@ -74,6 +74,29 @@ describe("what a customer owns, from Stripe's records", () => {
     expect(e.weekPasses).toEqual([{ city: "cape-fear", until: 1_000_000 + 14 * DAY * 1000 }]);
   });
 
+  it("takes a refunded pass away, and keeps one that was only partly refunded", () => {
+    const refunded = { latest_charge: { refunded: true } };
+    const partly = { latest_charge: { refunded: false } };
+    const e = entitlementFrom(
+      [
+        { payment_status: "paid", created: 100, metadata: { plan: "city-pass", city: "nyc" }, payment_intent: refunded },
+        { payment_status: "paid", created: 200, metadata: { plan: "city-pass", city: "cape-fear" }, payment_intent: partly },
+        { payment_status: "paid", created: 300, metadata: { plan: "week-pass", city: "cape-fear" }, payment_intent: refunded },
+      ],
+      [],
+    );
+    expect(e.cities).toEqual(["cape-fear"]);
+    expect(e.weekPasses).toBeUndefined();
+  });
+
+  it("is free again when the only purchase was refunded", () => {
+    const e = entitlementFrom(
+      [{ payment_status: "paid", created: 100, metadata: { plan: "city-pass", city: "nyc" }, payment_intent: { latest_charge: { refunded: true } } }],
+      [],
+    );
+    expect(e).toEqual({ kind: "free" });
+  });
+
   it("does not count a cancelled subscription", () => {
     expect(entitlementFrom([], [{ status: "canceled", created: 5, current_period_end: 9, cancel_at_period_end: false }])).toEqual({ kind: "free" });
   });
@@ -117,7 +140,32 @@ describe("checkout", () => {
     expect(body.get("line_items[0][price_data][currency]")).toBe("usd");
     expect(body.get("line_items[0][price_data][product_data][name]")).toBe("Cape Fear Coast Week Pass");
     expect(body.get("metadata[plan]")).toBe("week-pass");
+    // Labelled, so a Radar rule can single Echo Finders out of the shared Stripe account.
+    expect(body.get("payment_intent_data[metadata][app]")).toBe("echo-finders");
     expect(body.get("metadata[city]")).toBe("cape-fear");
+  });
+
+  it("uses the Week Pass's own Stripe price when one is set", async () => {
+    vi.stubEnv("STRIPE_PRICE_WEEK_PASS", "price_week");
+    answers.push({ url: "https://checkout.stripe.com/c/w2" });
+    await checkout(post("/api/checkout", { plan: "week", cityId: "cape-fear" }));
+    const { body } = sent[0]!;
+    expect(body.get("line_items[0][price]")).toBe("price_week");
+    expect(body.get("line_items[0][price_data][unit_amount]")).toBeNull();
+    expect(body.get("metadata[plan]")).toBe("week-pass");
+  });
+
+  it("uses the upgrade's own Stripe price when one is set and the week is running", async () => {
+    vi.stubEnv("STRIPE_PRICE_CITY_UPGRADE", "price_upgrade");
+    const paidJustNow = Math.floor(Date.now() / 1000) - 3600;
+    answers.push({ data: [{ payment_status: "paid", created: paidJustNow, metadata: { plan: "week-pass", city: "cape-fear" } }] });
+    answers.push({ data: [] });
+    answers.push({ url: "https://checkout.stripe.com/c/u2" });
+    await checkout(post("/api/checkout", { plan: "city", cityId: "cape-fear", customerId: "cus_123" }));
+    expect(sent[0]!.body.get("expand[]")).toBe("data.payment_intent.latest_charge");
+    const { body } = sent[2]!;
+    expect(body.get("line_items[0][price]")).toBe("price_upgrade");
+    expect(body.get("metadata[plan]")).toBe("city-pass");
   });
 
   it("refuses a Week Pass for somewhere that is not a city", async () => {
@@ -155,6 +203,7 @@ describe("checkout", () => {
     expect(body.get("mode")).toBe("subscription");
     expect(body.get("line_items[0][price]")).toBe("price_all");
     expect(body.get("customer")).toBe("cus_123");
+    expect(body.get("subscription_data[metadata][app]")).toBe("echo-finders");
   });
 
   it("always asks for a billing address, and adds sales tax only when switched on", async () => {

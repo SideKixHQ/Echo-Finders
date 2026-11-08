@@ -10,7 +10,7 @@ at: { lat: 34.23548, lng: -77.94436 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 70
+durationS: 58
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   while retaining a distinctive identity. The milestone is not simply that construction
   finished. A Jewish congregation secured a place where its life could continue across
   generations in the city.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Dedicated in 1876, Wilmington's Temple of Israel is recognized as North Carolina's first Jewish house of worship."
@@ -43,14 +43,58 @@ claims:
   - says: "The congregation describes its building as Moorish Revival, a style used by synagogues in Europe and the United States during that period."
     source: 2
     quote: "Begun in 1875 and completed in 1876, the beautiful Temple structure was built in the Moorish Revival architectural style of building, which was then popular for synagogues in both Europe and the United States."
+  - says: "a community establishing a permanent worship space"
+    source: 1
+    quote: "About 40 families came together in 1872 to set plans for the long-awaited synagogue."
+  - says: "It belongs to Wilmington's streetscape while retaining a distinctive identity."
+    source: 1
+    quote: "Samuel Sloan of Philadelphia was retained as the architect and plans were developed for a distinctive building in the Moorish Revival style."
+  - says: "A Jewish congregation secured a place where its life could continue across generations in the city."
+    source: 2
+    quote: "Today the Temple is one of fewer than thirty Jewish congregations to endure in its original nineteenth century structure."
 sources:
   - title: "States first jewish house worship temple israel"
     publisher: "North Carolina Department of Natural and Cultural Resources"
     url: https://www.dncr.nc.gov/blog/2016/05/12/states-first-jewish-house-worship-temple-israel
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "History"
     publisher: "Temple of Israel"
     url: https://temple-of-israel.org/history/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-north-carolinas-first-synagogue-building/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 58.2
+    audioBytes: 932927
+    transcript:
+      totalS: 58.2
+      lines:
+        - text: Dedicated in 1876, Wilmington's Temple of Israel is recognized as North Carolina's first Jewish house of worship.
+          atS: 0
+          durationS: 8.22
+        - text: The congregation describes its building as Moorish Revival, a style used by synagogues in Europe and the United States during that period.
+          atS: 8.73
+          durationS: 8.61
+        - text: "The corner therefore carries two stories together: a community establishing a permanent worship space and a design expressing that presence publicly."
+          atS: 18.04
+          durationS: 10.02
+        - text: Remain on the sidewalk unless the congregation has authorized a visit.
+          atS: 28.87
+          durationS: 4.23
+        - text: Its historical significance does not change its role as an active religious site.
+          atS: 34.05
+          durationS: 5.09
+        - text: Look at how the building addresses Market Street.
+          atS: 40.25
+          durationS: 2.63
+        - text: It belongs to Wilmington's streetscape while retaining a distinctive identity.
+          atS: 43.58
+          durationS: 4.47
+        - text: The milestone is not simply that construction finished.
+          atS: 48.75
+          durationS: 3.09
+        - text: A Jewish congregation secured a place where its life could continue across generations in the city.
+          atS: 52.44
+          durationS: 5.79

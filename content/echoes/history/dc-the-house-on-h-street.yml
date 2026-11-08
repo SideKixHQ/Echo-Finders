@@ -9,7 +9,7 @@ at: { lat: 38.89962, lng: -77.02041 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 92
+durationS: 88
 visibility: at-hand
 certainty: documented
 minAge: 12
@@ -40,16 +40,139 @@ script: |
 
   Near the end of his own life, Johnson is reported to have called her execution a crime.
   He was the president who had declined to stop it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Look at number 604 H Street."
+    source: 1
+    quote: "The Surratt boarding house still stands today at 604 H Street NW, Washington DC. It is currently in use as a Chinese restaurant and karaoke bar."
+  - says: "These days it is a restaurant and karaoke bar."
+    source: 1
+    quote: "It is currently in use as a Chinese restaurant and karaoke bar."
+  - says: "In the spring of 1865 it was a boarding house, owned by a widow named Mary Surratt."
+    source: 1
+    quote: "Mary Surratt was a Confederate sympathizer and widower in 1865. Her son, John Surratt, Jr., was a key member of John Wilkes Booth's conspiracy. Mrs. Surratt owned two important properties: a tavern in Maryland and a boarding house in downtown Washington, DC."
+  - says: "Her son John was one of John Wilkes Booth's most capable conspirators."
+    source: 1
+    quote: "John Surratt was one of Booth's most valuable and capable conspirators."
+  - says: "Booth and his men often met here, to plan the kidnapping of President Lincoln and, in the end, his murder."
+    source: 1
+    quote: "Booth and his conspirators often met at the boarding house to plan the kidnapping, and eventually the assassination, of Abraham Lincoln."
+  - says: "Two of them lodged here for a while."
+    source: 1
+    quote: "Both Lewis Powell and George Atzerodt also boarded there briefly."
+  - says: "Andrew Johnson, who became president when Lincoln died, called this house the nest that hatched the egg."
+    source: 1
+    quote: "President Andrew Johnson called Mrs. Surratt's boarding house “the nest that hatched the egg.”"
+  - says: "After the assassination, detectives came to arrest the people living here."
+    source: 1
+    quote: "When he arrived, detectives were arresting the occupants of the boarding house, and he was taken into custody as well."
+  - says: "While they were at it, one of the conspirators, Lewis Powell, turned up at the door."
+    source: 1
+    quote: "He wandered the streets of Washington for three days before returning to the Surratt boarding house. When he arrived, detectives were arresting the occupants of the boarding house, and he was taken into custody as well."
+  - says: "He had attacked the Secretary of State three days before, and had been wandering the city since."
+    source: 1
+    quote: "When Booth turned to murder, he assigned Powell to kill Secretary of State William Seward. Powell entered the Secretary's home in Lafayette Square and stabbed Seward and others in the house. After fleeing the Seward home, he found that he was alone and lost. He wandered the streets of Washington for three days before returning to the Surratt boarding house."
+  - says: "Mary Surratt was tried by a military tribunal."
+    source: 1
+    quote: "The remaining eight were charged in the conspiracy and tried by a military tribunal."
+  - says: "The case against her rested mainly on one witness, the man who leased her tavern in Maryland."
+    source: 1
+    quote: "They met John M. Lloyd, who was leasing the tavern from Mrs. Surratt."
+  - says: "The case against her rested mainly on one witness, the man who leased her tavern in Maryland."
+    source: 1
+    quote: "Due mainly to Lloyd's testimony, she received the death sentence for conspiring to assassinate Abraham Lincoln."
+  - says: "Five of the officers who tried her asked the president to spare her."
+    source: 1
+    quote: "Five members of the military tribunal asked that President Johnson grant her clemency on account of her age and sex. Johnson denied their request."
+  - says: "She was hanged on the seventh of July 1865, the first woman executed by the federal government."
+    source: 1
+    quote: "Mary Surratt died by hanging on July 7, 1865. She was the first woman executed by the federal government in the United States."
+  - says: "How much she knew is still argued over by historians."
+    source: 1
+    quote: "Her guilt or innocence, and the appropriateness of her death sentence, has been much debated by historians."
+  - says: "Near the end of his own life, Johnson is reported to have called her execution a crime."
+    source: 2
+    quote: "The article contains information regarding Johnson's thoughts on Mary Surratt just three days before he died"
+  - says: "Near the end of his own life, Johnson is reported to have called her execution a crime."
+    source: 2
+    quote: "'The execution of Mrs. Surrat [sic] was a crime of passion without justice or reason."
+  - says: "He was the president who had declined to stop it."
+    source: 1
+    quote: "Johnson denied their request."
 sources:
   - title: "The Lincoln Conspirators"
     publisher: "National Park Service, Ford's Theatre National Historic Site"
     url: https://www.nps.gov/foth/learn/historyculture/the-lincoln-conspirators.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Johnson's Last Words on Mary Surratt"
     publisher: "National Park Service, Andrew Johnson National Historic Site"
     url: https://www.nps.gov/anjo/learn/historyculture/mary-surratt.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-house-on-h-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 87.8
+    audioBytes: 1405221
+    transcript:
+      totalS: 87.8
+      lines:
+        - text: Look at number 604 H Street.
+          atS: 0
+          durationS: 2.43
+        - text: These days it is a restaurant and karaoke bar.
+          atS: 3.03
+          durationS: 2.88
+        - text: In the spring of 1865 it was a boarding house, owned by a widow named Mary Surratt.
+          atS: 6.35
+          durationS: 5.97
+        - text: Her son John was one of John Wilkes Booth's most capable conspirators.
+          atS: 12.83
+          durationS: 4.27
+        - text: Booth and his men often met here, to plan the kidnapping of President Lincoln and, in the end, his murder.
+          atS: 17.7
+          durationS: 6.5
+        - text: Two of them lodged here for a while.
+          atS: 24.9
+          durationS: 2.1
+        - text: Andrew Johnson, who became president when Lincoln died, called this house the nest that hatched the egg.
+          atS: 27.52
+          durationS: 6.74
+        - text: After the assassination, detectives came to arrest the people living here.
+          atS: 35.07
+          durationS: 4.32
+        - text: While they were at it, one of the conspirators, Lewis Powell, turned up at the door.
+          atS: 39.83
+          durationS: 4.99
+        - text: He had attacked the Secretary of State three days before, and had been wandering the city since.
+          atS: 45.43
+          durationS: 5.52
+        - text: They took him too.
+          atS: 51.55
+          durationS: 1.27
+        - text: Mary Surratt was tried by a military tribunal.
+          atS: 53.93
+          durationS: 2.97
+        - text: The case against her rested mainly on one witness, the man who leased her tavern in Maryland.
+          atS: 57.34
+          durationS: 5.66
+        - text: Five of the officers who tried her asked the president to spare her.
+          atS: 63.6
+          durationS: 3.58
+        - text: He refused.
+          atS: 67.42
+          durationS: 1.01
+        - text: She was hanged on the seventh of July 1865, the first woman executed by the federal government.
+          atS: 69.03
+          durationS: 6.06
+        - text: How much she knew is still argued over by historians.
+          atS: 75.6
+          durationS: 3.3
+        - text: Near the end of his own life, Johnson is reported to have called her execution a crime.
+          atS: 79.6
+          durationS: 5.05
+        - text: He was the president who had declined to stop it.
+          atS: 84.97
+          durationS: 2.8

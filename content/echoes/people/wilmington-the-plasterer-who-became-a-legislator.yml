@@ -20,7 +20,7 @@ at: { lat: 34.23594, lng: -77.94298 }
 triggerRadiusKm: 0.04
 category: people
 format: feature
-durationS: 186
+durationS: 165
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,9 +28,8 @@ quality: 0.8
 tags: [wilmington, downtown]
 teaser: "He was property when he plastered these walls."
 script: |
-  Look up at the plaster where the wall meets the ceiling. The leaves, the scrolls, the
-  run of it around the whole room. That was pressed into place wet, by hand, and it had to
-  be finished before it set. There is no going back over plaster.
+  Look at the plastered walls around you. Plaster goes on wet, by hand, and it has to be
+  finished before it sets. There is no going back over plaster.
 
   Some of the hands that did this work belonged to men who were owned.
 
@@ -74,11 +73,11 @@ script: |
   single flat sentence: it would take over sixty years and the struggle for Civil Rights
   for freedom and equality for all to come into focus once again.
 
-  Look back at the ceiling.
+  Look back at the walls.
 
-  The plaster George Price put up is still there. It outlasted his seat in the legislature
-  by more than a century.
-editorial: draft
+  The house George Price helped finish is still standing. It has outlasted his seat in the
+  legislature by more than a century.
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The house was designed for a wealthy physician and merchant, Doctor John Bellamy."
@@ -101,19 +100,19 @@ claims:
     quote: "George W. Price, Jr., formerly enslaved plasterer of the Bellamy Mansion site, was elected to the state legislature as one of three New Hanover County representatives."
   - says: "The same year, on the fourth of July, President Johnson issued an amnesty to former Confederates."
     source: 2
-    quote: "Even President Johnson's proclamation of amnesty to all former Confederates, except those under indictment, ironically made on July 4th, 1868, failed to ease much Southern resentment of the holiday."
+    quote: "Even President Johnson’s proclamation of amnesty to all former Confederates, except those under indictment, ironically made on July 4th, 1868, failed to ease much Southern resentment of the holiday."
   - says: "White Wilmington did not come out."
     source: 2
-    quote: "In 1868, Wilmington's Daily Journal reported, \"The only public demonstrations observable were participated in, not by the whites, for whom the Declaration was made, but by negro organizations of small boys and the fire companies parading the streets to some extent, rejoicing in a new found feeling of patriotism which they are incapable of analyzing.\""
+    quote: "In 1868, Wilmington’s Daily Journal reported, “The only public demonstrations observable were participated in, not by the whites, for whom the Declaration was made, but by negro organizations of small boys and the fire companies parading the streets to some extent, rejoicing in a new found feeling of patriotism which they are incapable of analyzing.\""
   - says: "The town's own paper, the Daily Journal, reported it with its teeth showing."
     source: 2
-    quote: "In 1868, Wilmington's Daily Journal reported, \"The only public demonstrations observable were participated in, not by the whites, for whom the Declaration was made, but by negro organizations of small boys and the fire companies parading the streets to some extent, rejoicing in a new found feeling of patriotism which they are incapable of analyzing.\""
+    quote: "In 1868, Wilmington’s Daily Journal reported, “The only public demonstrations observable were participated in, not by the whites, for whom the Declaration was made, but by negro organizations of small boys and the fire companies parading the streets to some extent, rejoicing in a new found feeling of patriotism which they are incapable of analyzing.\""
   - says: "The only public demonstrations, it said, were not by the whites, for whom the Declaration was made, but by negro organizations of small boys and the fire companies, parading the streets, rejoicing in a new found feeling of patriotism which they are incapable of analyzing."
     source: 2
-    quote: "In 1868, Wilmington's Daily Journal reported, \"The only public demonstrations observable were participated in, not by the whites, for whom the Declaration was made, but by negro organizations of small boys and the fire companies parading the streets to some extent, rejoicing in a new found feeling of patriotism which they are incapable of analyzing.\""
+    quote: "In 1868, Wilmington’s Daily Journal reported, “The only public demonstrations observable were participated in, not by the whites, for whom the Declaration was made, but by negro organizations of small boys and the fire companies parading the streets to some extent, rejoicing in a new found feeling of patriotism which they are incapable of analyzing.\""
   - says: "A newspaper watching Black children march on Independence Day, and deciding the problem was that they did not understand it."
     source: 2
-    quote: "In 1868, Wilmington's Daily Journal reported, \"The only public demonstrations observable were participated in, not by the whites, for whom the Declaration was made, but by negro organizations of small boys and the fire companies parading the streets to some extent, rejoicing in a new found feeling of patriotism which they are incapable of analyzing.\""
+    quote: "In 1868, Wilmington’s Daily Journal reported, “The only public demonstrations observable were participated in, not by the whites, for whom the Declaration was made, but by negro organizations of small boys and the fire companies parading the streets to some extent, rejoicing in a new found feeling of patriotism which they are incapable of analyzing.\""
   - says: "For thirty years, Black Wilmingtonians served as elected officials, ran businesses, worked as civil servants, led civic life, in the same streets you are standing in."
     source: 2
     quote: "The black community would work alongside whites as elected officials, business owners, civil servants, and civic leaders until the 1898 Wilmington Coup and Massacre restored power to white Southern Democrats."
@@ -126,17 +125,118 @@ claims:
   - says: "The museum's account gives the aftermath a single flat sentence: it would take over sixty years and the struggle for Civil Rights for freedom and equality for all to come into focus once again."
     source: 2
     quote: "It would take over sixty years and the struggle for Civil Rights for freedom and equality for all to come into focus once again."
-  - says: "The plaster George Price put up is still there."
+  - says: "The house George Price helped finish is still standing."
+    source: 1
+    quote: "Today, guests can explore the mansion from basement to belvedere as the entire mansion is accessible on self-guided and guided tours of the site."
+  - says: "Some of the hands that did this work belonged to men who were owned."
     source: 2
     quote: "George W. Price, Jr., formerly enslaved plasterer of the Bellamy Mansion site, was elected to the state legislature as one of three New Hanover County representatives."
 sources:
   - title: "The Place"
     publisher: "Bellamy Mansion Museum"
     url: https://www.bellamymansion.org/the-place.html
-    retrievedAt: "2026-11-03"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "Museum Blog"
     publisher: "Bellamy Mansion Museum"
     url: https://www.bellamymansion.org/museum-blog
-    retrievedAt: "2026-11-03"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-plasterer-who-became-a-legislator/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 164.8
+    audioBytes: 2638201
+    transcript:
+      totalS: 164.8
+      lines:
+        - text: Look at the plastered walls around you.
+          atS: 0
+          durationS: 2.25
+        - text: Plaster goes on wet, by hand, and it has to be finished before it sets.
+          atS: 2.95
+          durationS: 5.45
+        - text: There is no going back over plaster.
+          atS: 8.84
+          durationS: 2.31
+        - text: Some of the hands that did this work belonged to men who were owned.
+          atS: 11.84
+          durationS: 3.97
+        - text: The house was designed for a wealthy physician and merchant, Doctor John Bellamy.
+          atS: 16.25
+          durationS: 4.9
+        - text: "It went up between eighteen fifty-nine and eighteen sixty-one, and the museum's own account is plain about who did the work: skilled enslaved workers and local free Black artisans."
+          atS: 21.66
+          durationS: 11.63
+        - text: Twenty-two rooms.
+          atS: 34.11
+          durationS: 1.28
+        - text: Ten thousand square feet.
+          atS: 35.54
+          durationS: 1.75
+        - text: One of the plasterers was a man named George Price.
+          atS: 37.99
+          durationS: 3.41
+        - text: Hold that, because the next part happens quickly.
+          atS: 42.21
+          durationS: 2.84
+        - text: Seven years after the plaster dried, in eighteen sixty-eight, George Price was elected to the North Carolina state legislature, as one of three representatives for New Hanover County.
+          atS: 46.36
+          durationS: 11.53
+        - text: The same year, on the fourth of July, President Johnson issued an amnesty to former Confederates.
+          atS: 58.7
+          durationS: 6.28
+        - text: A man was pardoned for the war he had lost, and another, who had been property while this ceiling was going up, was sent to help write the laws.
+          atS: 65.68
+          durationS: 8.94
+        - text: That day is worth standing in for a moment.
+          atS: 75.57
+          durationS: 2.43
+        - text: White Wilmington did not come out.
+          atS: 78.69
+          durationS: 2
+        - text: The town's own paper, the Daily Journal, reported it with its teeth showing.
+          atS: 81.13
+          durationS: 5.11
+        - text: The only public demonstrations, it said, were not by the whites, for whom the Declaration was made, but by negro organizations of small boys and the fire companies, parading the streets, rejoicing in a new found feeling of patriotism which they are incapable of analyzing.
+          atS: 86.84
+          durationS: 17.7
+        - text: Hear that again.
+          atS: 105.15
+          durationS: 1.1
+        - text: A newspaper watching Black children march on Independence Day, and deciding the problem was that they did not understand it.
+          atS: 106.69
+          durationS: 7.72
+        - text: They understood it.
+          atS: 114.59
+          durationS: 1.09
+        - text: And then it was ordinary.
+          atS: 116.01
+          durationS: 1.46
+        - text: For thirty years, Black Wilmingtonians served as elected officials, ran businesses, worked as civil servants, led civic life, in the same streets you are standing in.
+          atS: 117.79
+          durationS: 10.04
+        - text: It did not fade out.
+          atS: 128.08
+          durationS: 1.31
+        - text: It was taken.
+          atS: 129.64
+          durationS: 1.01
+        - text: In eighteen ninety-eight Democrats forcefully installed a new city government, and the coup was followed by a massacre.
+          atS: 131.25
+          durationS: 7.16
+        - text: North Carolina moved quickly to disenfranchise Black voters.
+          atS: 139.11
+          durationS: 3.65
+        - text: "The museum's account gives the aftermath a single flat sentence: it would take over sixty years and the struggle for Civil Rights for freedom and equality for all to come into focus once again."
+          atS: 143.27
+          durationS: 11.63
+        - text: Look back at the walls.
+          atS: 156.01
+          durationS: 1.38
+        - text: The house George Price helped finish is still standing.
+          atS: 157.78
+          durationS: 2.84
+        - text: It has outlasted his seat in the legislature by more than a century.
+          atS: 160.9
+          durationS: 3.91

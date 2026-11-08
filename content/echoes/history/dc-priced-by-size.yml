@@ -20,11 +20,11 @@ script: |
   Look at the building behind the fountain. Upstairs, on the second floor, is a room of old
   books arranged in a slightly strange order.
 
-  In August 1814 the British burned the Capitol, and with it the library of Congress. About
-  three thousand books.
+  In 1814 the British burned the Capitol, and with it the library of Congress. About three
+  thousand books.
 
-  Thomas Jefferson, retired at Monticello, owned the largest private collection of books in
-  the country. He offered to sell it, at whatever price Congress chose.
+  Thomas Jefferson, at Monticello, owned the largest private collection of books in the
+  country. He offered to sell it, at whatever price Congress chose.
 
   There were sharp debates. Some members complained that too many of the books were in
   foreign languages, or about subjects that had nothing to do with Congress. Jefferson had
@@ -42,21 +42,126 @@ script: |
   thousand survivors.
 
   The largest library in the world grew out of one man's bookshelves, priced by size.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Upstairs, on the second floor, is a room of old books arranged in a slightly strange order."
+    source: 3
+    quote: "Southwest Pavilion, Second Floor, Thomas Jefferson Building"
+  - says: "In 1814 the British burned the Capitol, and with it the library of Congress."
+    source: 2
+    quote: "By 1814, when the British burned the Capitol and with it the Congressional Library"
+  - says: "About three thousand books."
+    source: 1
+    quote: "On learning of the burning of the Capitol and the loss of the 3,000-volume Library of Congress"
+  - says: "Thomas Jefferson, at Monticello, owned the largest private collection of books in the country."
+    source: 2
+    quote: "Jefferson acquired thousands of books for his library at Monticello. By 1814, when the British burned the Capitol and with it the Congressional Library, Thomas Jefferson had acquired the largest personal collection of books in the United States."
+  - says: "He offered to sell it, at whatever price Congress chose."
+    source: 1
+    quote: "Jefferson promised to accept any price set by Congress"
+  - says: "There were sharp debates."
+    source: 1
+    quote: "Some sharp debates occurred in Congress about the wisdom of purchasing Jefferson's library"
+  - says: "Some members complained that too many of the books were in foreign languages, or about subjects that had nothing to do with Congress."
+    source: 1
+    quote: "Some congressmen were particularly concerned that there were large numbers of books in foreign languages and about subjects not believed germane for the use of Congress."
+  - says: "Jefferson had already answered that."
+    source: 1
+    quote: "Jefferson had anticipated such concerns in his September 21, 1814, letter written to Samuel H. Smith"
+  - says: "There was, he wrote, no subject to which a member of Congress may not have occasion to refer."
+    source: 1
+    quote: "there is in fact no subject to which a member of Congress may not have occasion to refer."
+  - says: "Congress bought them."
+    source: 2
+    quote: "After some controversy, Congress purchased his library for $23,950 in 1815."
+  - says: "Six thousand four hundred and eighty-seven volumes, for twenty-three thousand nine hundred and fifty dollars."
+    source: 1
+    quote: "Jefferson was paid $23,950 for 6487 volumes based on measurements of the sizes of the books."
+  - says: "It was based on measurements of the size of the books."
+    source: 1
+    quote: "Jefferson was paid $23,950 for 6487 volumes based on measurements of the sizes of the books."
+  - says: "On Christmas Eve 1851, another fire in the Capitol destroyed nearly two thirds of them."
+    source: 2
+    quote: "a second fire on Christmas Eve of 1851 destroyed nearly two thirds of the 6,487 volumes Congress had purchased from Jefferson"
+  - says: "The room upstairs is the library rebuilt the way Jefferson arranged it, around some two thousand survivors."
+    source: 2
+    quote: "Included in this re-creation are 2,000 volumes from the original Jefferson Collection—survivors of fire and time."
+  - says: "The largest library in the world grew out of one man's bookshelves, priced by size."
+    source: 2
+    quote: "the Jefferson books remain the core from which the present collections of the Library of Congress—the world’s largest library—developed."
 sources:
   - title: "Jefferson's Library (Thomas Jefferson exhibition)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/exhibits/jefferson/jefflib.html
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Exhibition Overview - Thomas Jefferson's Library"
     publisher: "Library of Congress"
     url: https://www.loc.gov/exhibits/thomas-jeffersons-library/overview.html
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Exhibitions (current: Thomas Jefferson's Library, Southwest Pavilion, Second Floor, ongoing)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/exhibits/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-priced-by-size/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 82.2
+    audioBytes: 1317032
+    transcript:
+      totalS: 82.2
+      lines:
+        - text: Look at the building behind the fountain.
+          atS: 0
+          durationS: 2.16
+        - text: Upstairs, on the second floor, is a room of old books arranged in a slightly strange order.
+          atS: 2.67
+          durationS: 6.17
+        - text: In 1814 the British burned the Capitol, and with it the library of Congress.
+          atS: 9.35
+          durationS: 5.18
+        - text: About three thousand books.
+          atS: 15.13
+          durationS: 1.97
+        - text: Thomas Jefferson, at Monticello, owned the largest private collection of books in the country.
+          atS: 17.43
+          durationS: 5.21
+        - text: He offered to sell it, at whatever price Congress chose.
+          atS: 22.96
+          durationS: 3.39
+        - text: There were sharp debates.
+          atS: 27.17
+          durationS: 1.51
+        - text: Some members complained that too many of the books were in foreign languages, or about subjects that had nothing to do with Congress.
+          atS: 28.92
+          durationS: 6.91
+        - text: Jefferson had already answered that.
+          atS: 36.34
+          durationS: 2.04
+        - text: There was, he wrote, no subject to which a member of Congress may not have occasion to refer.
+          atS: 38.77
+          durationS: 6
+        - text: Congress bought them.
+          atS: 45.28
+          durationS: 1.41
+        - text: Six thousand four hundred and eighty-seven volumes, for twenty-three thousand nine hundred and fifty dollars.
+          atS: 47.12
+          durationS: 7.08
+        - text: The price was not worked out by title, or by rarity.
+          atS: 54.81
+          durationS: 3.76
+        - text: It was based on measurements of the size of the books.
+          atS: 59.08
+          durationS: 2.98
+        - text: On Christmas Eve 1851, another fire in the Capitol destroyed nearly two thirds of them.
+          atS: 63.02
+          durationS: 6.35
+        - text: The room upstairs is the library rebuilt the way Jefferson arranged it, around some two thousand survivors.
+          atS: 70.18
+          durationS: 6.29
+        - text: The largest library in the world grew out of one man's bookshelves, priced by size.
+          atS: 76.92
+          durationS: 5.33

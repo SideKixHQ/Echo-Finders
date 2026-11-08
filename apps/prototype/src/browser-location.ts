@@ -28,7 +28,7 @@
  * rather than showing an empty map.
  */
 
-import type { LocationSource, Position } from "@echofinders/core";
+import type { LatLng, LocationSource, Position } from "@echofinders/core";
 
 export type LocationState =
   /** Not asked yet. The honest starting point. */
@@ -40,6 +40,19 @@ export type LocationState =
   | { readonly kind: "denied"; readonly why: string };
 
 export class BrowserLocation implements LocationSource {
+  /**
+   * A test position, instead of the device's (`?at=` on the address, `test-position.ts`).
+   *
+   * James (2026-11-08): "I need to hear it and view the player and test the player", from
+   * somewhere that is not Wilmington. Echoes open only where they happened, so testing
+   * the player meant travelling. With a pin, `start()` asks the browser for nothing and
+   * reports the pinned spot as a live fix every two seconds, which is what the capture
+   * ring needs to fill; everything after that (the free ten, the paywall, the player) is
+   * the real app.
+   */
+  constructor(readonly pinned: LatLng | null = null) {}
+  private pinTimer: ReturnType<typeof setInterval> | null = null;
+
   private readonly listeners = new Set<(p: Position) => void>();
   private watchId: number | null = null;
   private last: Position | null = null;
@@ -69,6 +82,7 @@ export class BrowserLocation implements LocationSource {
    * so a button can show a spinner and then the answer.
    */
   async start(): Promise<LocationState> {
+    if (this.pinned) return this.startPinned(this.pinned);
     // Already watching, unless the last answer was a refusal: then "try again" has to
     // actually try again, after the listener changed the setting.
     if (this.watchId !== null && this.state.kind !== "denied") return this.state;
@@ -156,7 +170,22 @@ export class BrowserLocation implements LocationSource {
     return () => void this.listeners.delete(onFix);
   }
 
+  private startPinned(at: LatLng): LocationState {
+    if (this.pinTimer !== null) return this.state;
+    const fix = () => {
+      const position: Position = { at, accuracyM: 5, timestamp: Date.now(), source: "device-gnss" };
+      this.last = position;
+      this.set({ kind: "live", position });
+      for (const listener of this.listeners) listener(position);
+    };
+    fix();
+    this.pinTimer = setInterval(fix, 2_000);
+    return this.state;
+  }
+
   stop(): void {
+    if (this.pinTimer !== null) clearInterval(this.pinTimer);
+    this.pinTimer = null;
     if (this.watchId !== null && this.available) navigator.geolocation.clearWatch(this.watchId);
     this.watchId = null;
     this.listeners.clear();

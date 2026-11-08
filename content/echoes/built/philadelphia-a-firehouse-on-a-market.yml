@@ -3,13 +3,13 @@
 # Position: Overture "The Shambles" (39.94276, -75.14531, 2nd St & Pine St) and "Head House Square" (39.94213, -75.14532); spot set at the Pine Street end, about 25 m north of the shed's listed point (high confidence).
 id: philadelphia-a-firehouse-on-a-market
 title: "A Firehouse on a Market"
-summary: "The little building at the end of the Second Street market shed housed firemen, not traders."
+summary: "The little building at the end of the Second Street market shed is filed in the federal survey under two fire companies."
 place: "Head House and the New Market shed, Second and Pine streets, Philadelphia, Pennsylvania"
 at: { lat: 39.94300, lng: -75.14533 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 84
+durationS: 80
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -19,7 +19,7 @@ teaser: "A market in the middle of the road, with a firehouse on the end."
 script: |
   Look down the middle of Second Street. The road splits around a long, open shed on brick pillars. And at this end of it, facing Pine Street, stands a small building of its own.
 
-  It looks like part of the market. The federal building survey records who actually used it. Not traders. Firemen. Two companies, the Hope Hose Company number six, and the Fellowship Engine Company number twenty-nine.
+  It looks like part of the market. But the federal building survey does not file it under the market first. It files it under two fire companies: the Hope Hose Company number six, and the Fellowship Engine Company number twenty-nine.
 
   The market behind it is the New Market. The first section, running south from Pine down the middle of Second, was built in seventeen forty-five, because people in this end of town complained that the old market was too far away. They did not want to cross Dock Creek to reach it.
 
@@ -30,8 +30,57 @@ script: |
   Six years later, the sheds on Market Street came down.
 
   Second Street kept one. This is what Market Street used to look like.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Look down the middle of Second Street."
+    source: 2
+    quote: "the first section, that south from Pine street in the middle of Second, was built in 1745."
+  - says: "And at this end of it, facing Pine Street, stands a small building of its own."
+    source: 1
+    quote: "Hope Hose Company No. 6 & Fellowship Engine Company No. 29, Second Street between Pine & Lombard Streets, Philadelphia, Philadelphia County, PA"
+  - says: "But the federal building survey does not file it under the market first."
+    source: 1
+    quote: "Hope Hose Company No. 6 & Fellowship Engine Company No. 29, Second Street between Pine & Lombard Streets"
+  - says: "It files it under two fire companies: the Hope Hose Company number six, and the Fellowship Engine Company number twenty-nine."
+    source: 1
+    quote: "Hope Hose Company No. 6 & Fellowship Engine Company No. 29"
+  - says: "The market behind it is the New Market."
+    source: 2
+    quote: "But the New Market, as it was called, was arranged for and the first section, that south from Pine street in the middle of Second, was built in 1745."
+  - says: "The first section, running south from Pine down the middle of Second, was built in seventeen forty-five"
+    source: 2
+    quote: "the first section, that south from Pine street in the middle of Second, was built in 1745."
+  - says: "because people in this end of town complained that the old market was too far away"
+    source: 2
+    quote: "the residents in the southern part of the city began to complain that the distance to the market was too great"
+  - says: "They did not want to cross Dock Creek to reach it."
+    source: 2
+    quote: "they did not like the idea of being compelled to cross Dock creek, which occupied the line of the present Dock street."
+  - says: "a city guide called it the second market in Philadelphia, for its age and for its food"
+    source: 3
+    quote: "This is the second market in Philadelphia as re- spects its antiquity, and its supply of provisions."
+  - says: "it reached all the way to South Street"
+    source: 3
+    quote: "It is situated in South Second street, and extends from Pine to South street."
+  - says: "Philadelphia's main street once had sheds like this down its middle too."
+    source: 3
+    quote: "With the ~ increase of population this market has gradually been extended westward, until now it reaches from Front to Eighth street."
+  - says: "So many that people stopped calling it High Street and called it Market Street"
+    source: 2
+    quote: "caused the inhabitants to refer to the latter as Market street"
+  - says: "in eighteen fifty-three the city made the name official"
+    source: 2
+    quote: "In 1853, the year before the consolidation of the city, the name of the street was officially changed to conform with usage."
+  - says: "Six years later, the sheds on Market Street came down."
+    source: 2
+    quote: "This remained as an interesting ornament to the old market shed until all were finally removed in 1859."
+  - says: "Second Street kept one."
+    source: 1
+    quote: "Hope Hose Company No. 6 & Fellowship Engine Company No. 29, Second Street between Pine & Lombard Streets"
+  - says: "This is what Market Street used to look like."
+    source: 3
+    quote: "A row of wooden stalls was some time afterwards placed in Market street, between Front and Second streets."
 sources:
   - title: "Hope Hose Company No. 6 & Fellowship Engine Company No. 29 (New Market, Head House), Second Street between Pine & Lombard Streets, Philadelphia (HABS PA-1351)"
     publisher: "Historic American Buildings Survey, Library of Congress"
@@ -48,3 +97,56 @@ sources:
     url: https://www.loc.gov/item/01010570/
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-a-firehouse-on-a-market/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.2
+    audioBytes: 1283595
+    transcript:
+      totalS: 80.2
+      lines:
+        - text: Look down the middle of Second Street.
+          atS: 0
+          durationS: 1.96
+        - text: The road splits around a long, open shed on brick pillars.
+          atS: 2.4
+          durationS: 4.04
+        - text: And at this end of it, facing Pine Street, stands a small building of its own.
+          atS: 6.83
+          durationS: 5.39
+        - text: It looks like part of the market.
+          atS: 12.6
+          durationS: 2.02
+        - text: But the federal building survey does not file it under the market first.
+          atS: 15.13
+          durationS: 4.07
+        - text: "It files it under two fire companies: the Hope Hose Company number six, and the Fellowship Engine Company number twenty-nine."
+          atS: 19.45
+          durationS: 8.07
+        - text: The market behind it is the New Market.
+          atS: 27.9
+          durationS: 2.69
+        - text: The first section, running south from Pine down the middle of Second, was built in seventeen forty-five, because people in this end of town complained that the old market was too far away.
+          atS: 31.03
+          durationS: 11.1
+        - text: They did not want to cross Dock Creek to reach it.
+          atS: 42.74
+          durationS: 3.01
+        - text: By the eighteen thirties, a city guide called it the second market in Philadelphia, for its age and for its food, and it reached all the way to South Street.
+          atS: 46.55
+          durationS: 9.39
+        - text: Philadelphia's main street once had sheds like this down its middle too.
+          atS: 56.55
+          durationS: 4.2
+        - text: So many that people stopped calling it High Street and called it Market Street, and in eighteen fifty-three the city made the name official.
+          atS: 61.36
+          durationS: 8.1
+        - text: Six years later, the sheds on Market Street came down.
+          atS: 70.41
+          durationS: 3.8
+        - text: Second Street kept one.
+          atS: 74.91
+          durationS: 1.82
+        - text: This is what Market Street used to look like.
+          atS: 77.33
+          durationS: 2.82

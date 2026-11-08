@@ -3,22 +3,22 @@
 # Position: Directory geocodes 34.23274,-77.94750 (several agree within 20 m); HMDB Hogg-Anderson 110 Orange 34.23277,-77.94777; south Orange St sidewalk between Front and 2nd (medium confidence).
 id: wilmington-art-in-the-old-lodge
 title: "Art in the Old Lodge"
-summary: "In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge on this block."
+summary: "A community movement founded St. John's Art Gallery here, in the oldest Masonic lodge in the state."
 place: "Former St. John's Art Museum complex, now Children's Museum, 116 Orange Street, Wilmington, North Carolina"
 at: { lat: 34.23268, lng: -77.94760 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 64
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge on this block."
+teaser: "A community movement founded St. John's Art Gallery here, in the oldest Masonic lodge in the state."
 script: |
-  In 1962, a community effort established St. John's Art Gallery in the old Masonic lodge
-  on this block.
+  Forty years after the painter Elisabeth Chant arrived in Wilmington, a community movement
+  founded St. John's Art Gallery here, in the oldest Masonic lodge in the state.
 
   Artists and supporters wanted Wilmington to have a place to encounter visual art. The
   institution grew into the museum that later moved to its present Cameron Art Museum
@@ -31,20 +31,73 @@ script: |
   impulse remains recognizable: make spaces where people can look, learn, and try
   something new. The art gallery's beginnings belong here, even though the institution
   continued its journey elsewhere.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
+  - says: "Forty years after the painter Elisabeth Chant arrived in Wilmington, a community movement founded St. John's Art Gallery here, in the oldest Masonic lodge in the state."
+    source: 1
+    quote: "Forty years after Chant’s arrival, at least three of her students and colleagues, Claude Howell, Hester Donnelly, and Peggy Hall, were part of the community movement that founded St. John’s Art Gallery in the oldest Masonic Lodge in the state."
+  - says: "the painter Elisabeth Chant arrived in Wilmington"
+    source: 1
+    quote: "Elisabeth Chant, long auburn hair coiled around her head, arrived in Wilmington in late 1922 carrying a trunk of belongings and art supplies."
+  - says: "Artists and supporters wanted Wilmington to have a place to encounter visual art."
+    source: 1
+    quote: "The best way in which this can be done is for Wilmington to establish a community gallery or museum, not so much for the purpose of buying a permanent collection, but for the express purpose of exhibiting traveling shows of first rate painting and sculpture."
+  - says: "The institution grew into the museum that later moved"
+    source: 1
+    quote: "In 1997, the community of St. John’s found itself at a crossroads – it had outgrown the cluster of historic buildings in downtown Wilmington and now started a capital campaign to build a new modern art museum."
+  - says: "its present Cameron Art Museum location outside downtown"
+    source: 1
+    quote: "The museum was named Louise Wells Cameron Art Museum in her memory."
   - says: "The downtown buildings gained another use: the Children's Museum acquired the complex in 2004."
     source: 2
     quote: "To meet the steadily growing number of visitors, in 2004 the Museum purchased the three buildings that comprised the former St. John's Museum of Art as the new site for The Children's Museum of Wilmington (CMoW)."
+  - says: "You are at the earlier art-museum setting, not Cameron Art Museum today."
+    source: 2
+    quote: "The St. John's Masonic Lodge, Greek Orthodox Church, and The Cowan House are dear pieces of Downtown Wilmington's history. They are preserved today as CMoW's new home."
 sources:
   - title: "History"
     publisher: "Cameron Art Museum"
     url: https://cameronartmuseum.org/history/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "Mission and history"
     publisher: "Play Wilmington"
     url: https://www.playwilmington.org/mission-and-history
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-art-in-the-old-lodge/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.7
+    audioBytes: 876503
+    transcript:
+      totalS: 54.7
+      lines:
+        - text: Forty years after the painter Elisabeth Chant arrived in Wilmington, a community movement founded St.
+          atS: 0
+          durationS: 6.04
+        - text: John's Art Gallery here, in the oldest Masonic lodge in the state.
+          atS: 6.06
+          durationS: 4.33
+        - text: Artists and supporters wanted Wilmington to have a place to encounter visual art.
+          atS: 11.34
+          durationS: 4.84
+        - text: The institution grew into the museum that later moved to its present Cameron Art Museum location outside downtown.
+          atS: 16.7
+          durationS: 6.8
+        - text: "The downtown buildings gained another use: the Children's Museum acquired the complex in 2004."
+          atS: 24.01
+          durationS: 6.7
+        - text: You are at the earlier art-museum setting, not Cameron Art Museum today.
+          atS: 31.31
+          durationS: 4.85
+        - text: Look at the old buildings from Orange Street.
+          atS: 36.61
+          durationS: 2.26
+        - text: "Their cultural work has changed, but the impulse remains recognizable: make spaces where people can look, learn, and try something new."
+          atS: 39.12
+          durationS: 9.14
+        - text: The art gallery's beginnings belong here, even though the institution continued its journey elsewhere.
+          atS: 48.69
+          durationS: 6.01

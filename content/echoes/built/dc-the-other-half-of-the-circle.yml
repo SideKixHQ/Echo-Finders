@@ -9,7 +9,7 @@ at: { lat: 38.89400, lng: -77.02830 }
 triggerRadiusKm: 0.05
 category: built
 format: short
-durationS: 88
+durationS: 75
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -22,34 +22,118 @@ script: |
   On one side, a federal building sweeps round in a great half circle. On the other stands
   the Old Post Office, and its tower.
 
-  The curve was supposed to be a whole circle. When the federal buildings here went up in
-  the early 1930s, a matching curve was meant to be built across the street, on the site of
-  the Old Post Office. The tower was in the way.
+  The curve was supposed to be a whole circle, modelled on the Place Vendome in Paris. When
+  the federal buildings here went up, around 1930, a matching curve was meant to be built
+  across the street, on the site of the Old Post Office. The tower was in the way.
 
-  The old building had fallen out of fashion, and locals thought it unappealing. It faced
-  demolition in 1934, and was spared only because the Depression had swallowed the money.
+  The planners simply expected the old building to be demolished. Some walls of the new
+  building next to it were faced in plain red brick instead of limestone, because nobody
+  thought they would be seen for long.
 
-  In 1970 Congress approved tearing it down again. By the mid seventies there were fires and
-  piles of trash inside, and metal sheets over the glass roof of the atrium.
+  The Great Depression saved it the first time. As late as the 1960s, a study still called
+  for razing everything except the three hundred and fifteen foot clock tower.
 
-  Then Nancy Hanks, who chaired the National Endowment for the Arts, testified. Old
-  buildings, she told Congress, are like old friends. People picketed. The building was
-  saved, and in 1973 it went on the National Register of Historic Places.
+  This time a preservation campaign called Don't Tear It Down stepped in. The building
+  became a landmark, and the plan to finish the circle was stopped.
 
-  For forty-two years, park rangers took visitors to the top of the tower. That ended on the
-  first of October 2025, while the building's owners decide what happens next.
+  On the Old Post Office side, only a short stretch of the curve was ever built.
 
-  Either way, the circle across the street still stops halfway.
-editorial: draft
+  So the circle across the street still stops halfway.
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Stand on Twelfth Street and look at the two buildings facing each other."
+    source: 1
+    quote: "to balance the circular arcade of the \"New\" Post Office Building across 12th Street."
+  - says: "On one side, a federal building sweeps round in a great half circle."
+    source: 1
+    quote: "with a portion of the 12th Street fa~de curved to form a hemicycle -- the eastern half of a circular plaza or \"Great Circle\" -- modeled after the Place Vend6me in Paris -- to balance the circular arcade of the \"New\" Post Office Building across 12th Street."
+  - says: "On the other stands the Old Post Office, and its tower."
+    source: 1
+    quote: "the anachronistic Old Post Office Building gobbles the northwest corner of the site originally intended for completion of the Internal Revenue Service Building."
+  - says: "The curve was supposed to be a whole circle, modelled on the Place Vendome in Paris."
+    source: 1
+    quote: "the eastern half of a circular plaza or \"Great Circle\" -- modeled after the Place Vend6me in Paris"
+  - says: "When the federal buildings here went up, around 1930, a matching curve was meant to be built across the street, on the site of the Old Post Office."
+    source: 1
+    quote: "The main section of the IRS Building, fronting on Constitution Avenue, was opened in 1930, with the expectation that the 1899 Richardsonian Romanesque \"Old\" Post Office Building, in the northwest portion of the parcel, would be demolished to make way for completion of the semicircular IRS addition."
+  - says: "The tower was in the way."
+    source: 1
+    quote: "the anachronistic Old Post Office Building gobbles the northwest corner of the site originally intended for completion of the Internal Revenue Service Building."
+  - says: "The planners simply expected the old building to be demolished."
+    source: 1
+    quote: "with the expectation that the 1899 Richardsonian Romanesque \"Old\" Post Office Building, in the northwest portion of the parcel, would be demolished"
+  - says: "Some walls of the new building next to it were faced in plain red brick instead of limestone, because nobody thought they would be seen for long."
+    source: 1
+    quote: "The north side of the original IRS Building and the western ends of its extention corridors were faced with unadorned red brick, rather than Indiana limestone, anticipating demolition of the Old Post Office Building and completion of Simon's plan."
+  - says: "The Great Depression saved it the first time."
+    source: 1
+    quote: "Earlier, the economic pressures of the Great Depression had saved the 1899 post office structure."
+  - says: "As late as the 1960s, a study still called for razing everything except the three hundred and fifteen foot clock tower."
+    source: 1
+    quote: "As late as the 1960s, a feasibilitystudy on the completion of the Federal Triangle, by architect John Carl Warnecke, called for razing the Old Post Office -- except for its distinctive 315-foot clock tower"
+  - says: "This time a preservation campaign called Don't Tear It Down stepped in."
+    source: 1
+    quote: "This time, a preservationist campaign -dubbed \"Don't Tear It Down\" -- intervened to save it anew."
+  - says: "The building became a landmark, and the plan to finish the circle was stopped."
+    source: 1
+    quote: "The Old Post Office Building received Landmark status, and the planned completion of the Internal Revenue Service Building was halted."
+  - says: "On the Old Post Office side, only a short stretch of the curve was ever built."
+    source: 1
+    quote: "Only one-quarter of the IRS Building's circular arcade was ever built"
 sources:
-  - title: "Old Post Office Tower"
-    publisher: "National Park Service, National Mall and Memorial Parks"
-    url: https://www.nps.gov/nama/planyourvisit/opot.htm
-    retrievedAt: "2026-10-14"
-    rights: public-domain
-  - title: "New Post Office Building, Twelfth Street and Pennsylvania Avenue (HABS DC-814)"
+  - title: "Internal Revenue Service Headquarters Building (IRS Building), HABS DC-657, written historical and descriptive data"
     publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/dc0948/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc0700/dc0747/data/dc0747data.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-other-half-of-the-circle/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.1
+    audioBytes: 1202511
+    transcript:
+      totalS: 75.1
+      lines:
+        - text: Stand on Twelfth Street and look at the two buildings facing each other.
+          atS: 0
+          durationS: 3.97
+        - text: On one side, a federal building sweeps round in a great half circle.
+          atS: 4.78
+          durationS: 4.38
+        - text: On the other stands the Old Post Office, and its tower.
+          atS: 9.67
+          durationS: 3.74
+        - text: The curve was supposed to be a whole circle, modelled on the Place Vendome in Paris.
+          atS: 14.22
+          durationS: 5.21
+        - text: When the federal buildings here went up, around 1930, a matching curve was meant to be built across the street, on the site of the Old Post Office.
+          atS: 20.13
+          durationS: 9.14
+        - text: The tower was in the way.
+          atS: 29.65
+          durationS: 1.59
+        - text: The planners simply expected the old building to be demolished.
+          atS: 31.63
+          durationS: 3.36
+        - text: Some walls of the new building next to it were faced in plain red brick instead of limestone, because nobody thought they would be seen for long.
+          atS: 35.22
+          durationS: 8.17
+        - text: The Great Depression saved it the first time.
+          atS: 44.35
+          durationS: 2.59
+        - text: As late as the 1960s, a study still called for razing everything except the three hundred and fifteen foot clock tower.
+          atS: 47.45
+          durationS: 7.67
+        - text: This time a preservation campaign called Don't Tear It Down stepped in.
+          atS: 55.94
+          durationS: 4.61
+        - text: The building became a landmark, and the plan to finish the circle was stopped.
+          atS: 61.24
+          durationS: 4.53
+        - text: On the Old Post Office side, only a short stretch of the curve was ever built.
+          atS: 66.37
+          durationS: 4.7
+        - text: So the circle across the street still stops halfway.
+          atS: 71.68
+          durationS: 3.41

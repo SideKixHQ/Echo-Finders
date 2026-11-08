@@ -1,28 +1,30 @@
+# 2026-11-07: the City of Wilmington landmarks page refused this session (Access Denied), so
+# the facts are re-sourced to WWAY's report of the council vote, which carries the city's text.
 # From W081 of James's Downtown Wilmington collection (2026-10-09).
 # Listening spot: Public Water Street sidewalk; current business interior requires authorized admission.
 # Position: HMDB Wilmington Iron Works Machine Shop marker at Orange & S Water, 201 S Water (34.23272,-77.94905); Water St sidewalk just south of Orange (high confidence).
 id: wilmington-the-shop-that-made-the-parts
 title: "The Shop That Made the Parts"
-summary: "Wilmington Iron Works made components for the machinery that kept the port city functioning."
+summary: "Wilmington Iron Works made custom metal goods, from fences to engines, for the city's industries."
 place: "Former Wilmington Iron Works Machine Shop, 201 South Water Street, Wilmington, North Carolina"
 at: { lat: 34.23262, lng: -77.94912 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 66
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
 quality: 0.75
 tags: [wilmington, downtown]
-teaser: "Wilmington Iron Works made components for the machinery that kept the port city functioning."
+teaser: "Wilmington Iron Works made custom metal goods, from fences to engines, for the city's industries."
 script: |
-  Wilmington Iron Works made components for the machinery that kept the port city
-  functioning. The city's history lists products ranging from fences to parts for
-  locomotives and steamboats.
+  Wilmington Iron Works made custom metal goods for many kinds of industry in the port
+  city. Its products ranged from doors and fences to engines, boilers, locomotives and
+  steamboats.
 
-  This building began as a warehouse and was later reconstructed in brick. In 2025,
-  Wilmington designated the former machine shop a local historic landmark.
+  This building began as a warehouse and was later reconstructed in brick. In 2025, the
+  city council voted to make the former machine shop a local historic landmark.
 
   Listen from the public sidewalk. A waterfront economy needs more than ships and cargo.
   Equipment wears out; parts must be produced, repaired, and fitted.
@@ -31,15 +33,68 @@ script: |
   building and become nearly invisible inside larger machines. The surviving structure
   restores a place to that labor, reminding you that the city depended on skilled
   manufacturing behind the more dramatic scenes of transportation.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
-  - says: "In 2025, Wilmington designated the former machine shop a local historic landmark."
+  - says: "Wilmington Iron Works made custom metal goods for many kinds of industry in the port city."
     source: 1
-    quote: "18, 2025 meeting, City Council officially designated the former Wilmington Iron Works Machine Shop, located at 201 South Water Street, as a local historic landmark."
+    quote: "For all of these needs across a wide spectrum of commercial uses, Wilmington Iron Works fabricated custom metal goods."
+  - says: "Its products ranged from doors and fences to engines, boilers, locomotives and steamboats."
+    source: 1
+    quote: "fabricating a wide range of iron goods to serve various industries, including doors and fences, gears, engines, boilers, and saws, as well as large locomotives and steamboats."
+  - says: "This building began as a warehouse"
+    source: 1
+    quote: "The Property began its life as a naval stores warehouse in the 19th century."
+  - says: "was later reconstructed in brick"
+    source: 1
+    quote: "the Sanborn maps show that the frame Machine Shop was converted to a brick building on the same footprint"
+  - says: "In 2025"
+    source: 1
+    quote: "November 18, 2025"
+  - says: "the city council voted to make the former machine shop a local historic landmark"
+    source: 1
+    quote: "Wilmington City Council approved an ordinance designating the Wilmington Iron Works Building at 201 South Water Street as a Local Historic Landmark."
 sources:
-  - title: "Local Historic Landmarks"
-    publisher: "City of Wilmington"
-    url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
-    retrievedAt: "2026-10-09"
+  - title: "Wilmington City Council approves 'bizarre' new landmark"
+    publisher: "WWAY News"
+    url: https://www.wwaytv3.com/?p=3975938
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-shop-that-made-the-parts/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54
+    audioBytes: 864382
+    transcript:
+      totalS: 54
+      lines:
+        - text: Wilmington Iron Works made custom metal goods for many kinds of industry in the port city.
+          atS: 0
+          durationS: 5.04
+        - text: Its products ranged from doors and fences to engines, boilers, locomotives and steamboats.
+          atS: 5.55
+          durationS: 6.09
+        - text: This building began as a warehouse and was later reconstructed in brick.
+          atS: 12.25
+          durationS: 4.28
+        - text: In 2025, the city council voted to make the former machine shop a local historic landmark.
+          atS: 17.04
+          durationS: 6.63
+        - text: Listen from the public sidewalk.
+          atS: 24.37
+          durationS: 1.86
+        - text: A waterfront economy needs more than ships and cargo.
+          atS: 26.55
+          durationS: 3.32
+        - text: Equipment wears out; parts must be produced, repaired, and fitted.
+          atS: 30.2
+          durationS: 4.83
+        - text: The shop's importance lies in that supporting work.
+          atS: 35.47
+          durationS: 2.96
+        - text: Its products could leave the building and become nearly invisible inside larger machines.
+          atS: 38.81
+          durationS: 4.83
+        - text: The surviving structure restores a place to that labor, reminding you that the city depended on skilled manufacturing behind the more dramatic scenes of transportation.
+          atS: 44.02
+          durationS: 9.94

@@ -9,7 +9,7 @@ at: { lat: 39.95345, lng: -75.15955 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 74
+durationS: 72
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -17,9 +17,9 @@ quality: 0.75
 tags: [philadelphia, philadelphia-core, center-city, markets, railroads, reading-terminal]
 teaser: "The roof above this market was built to hold trains."
 script: |
-  Stand outside the market doors on Twelfth Street and look up. The building keeps going, well above where a market would need a roof. That high shed was built for trains.
+  Stand outside the market doors and look up. The building keeps going, well above where a market would need a roof. That high shed was built for trains.
 
-  Start a little earlier, on Market Street, round the corner. For generations, Philadelphia's main street had market sheds down its middle. In eighteen fifty-nine they were cleared away, and the traders needed somewhere new.
+  Start a little earlier, on Market Street, a block to the south. For generations, Philadelphia's main street had market sheds down its middle. In eighteen fifty-nine they were cleared away, and the traders needed somewhere new.
 
   Two big market houses went up on the north side of Market Street, between Eleventh and Twelfth. One was the Farmers' Market, the largest market shed of its kind in the city. Beside it, at Twelfth Street, was the Franklin Market, which old housekeepers just called the Twelfth Street Market.
 
@@ -31,26 +31,113 @@ script: |
 pronunciations:
   - written: Reading
     say: RED-ing
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "That high shed was built for trains."
+    source: 4
+    quote: "The enclosed public market opened in 1893 under the elevated train shed of the Reading Railroad Company"
+  - says: "Start a little earlier, on Market Street, a block to the south."
+    source: 1
+    quote: "two large market houses were erected on the north side of Market street between Eleventh and Twelfth."
+  - says: "For generations, Philadelphia's main street had market sheds down its middle."
+    source: 1
+    quote: "owing to the removal of the sheds in the middle of the street"
+  - says: "In eighteen fifty-nine they were cleared away, and the traders needed somewhere new."
+    source: 1
+    quote: "In 1859 and 1860, when there was a general movement throughout the city, or at least in the central part of it, toward the erection of new and modern markets, owing to the removal of the sheds in the middle of the street"
+  - says: "Two big market houses went up on the north side of Market Street, between Eleventh and Twelfth."
+    source: 1
+    quote: "two large market houses were erected on the north side of Market street between Eleventh and Twelfth."
+  - says: "One was the Farmers' Market, the largest market shed of its kind in the city."
+    source: 1
+    quote: "This was called the Farmers’ Market, and was regarded as the finest, as it was the largest market shed of its kind in the city."
+  - says: "Beside it, at Twelfth Street, was the Franklin Market, which old housekeepers just called the Twelfth Street Market."
+    source: 1
+    quote: "Next to this, at the corner of Twelfth street, was erected the Franklin Market, but it always was referred to by old housekeepers as the Twelfth Street Market."
+  - says: "Thirty years later the Reading Railroad wanted a station in the middle of town."
+    source: 1
+    quote: "About 1890 the long-expected move of the Reading Railroad to a more central site for its station was arranged"
+  - says: "It ran its tracks in from Ninth and Green, raised up on an elevated line, and it chose this exact block."
+    source: 1
+    quote: "providing to run its lines from Ninth and Green streets down to Twelfth and Market streets."
+  - says: "It ran its tracks in from Ninth and Green, raised up on an elevated line, and it chose this exact block."
+    source: 1
+    quote: "Finally the company received the necessary permission by ordinance, and the work of elevating the Reading began."
+  - says: "The Reading Terminal opened for traffic on the twentieth of January, eighteen ninety-three."
+    source: 1
+    quote: "The Reading Terminal was finally built, and was first opened for traffic on January 20, 1893."
+  - says: "And the market is still down here, underneath it."
+    source: 4
+    quote: "the ground floor and basement levels of the Reading Terminal's former train shed were remodeled for the market"
 sources:
   - title: "Market Street, Philadelphia; the most historic highway in America, its merchants and its story, by Joseph Jackson (1918)"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/18015276/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/marketstreetphil00jacks/marketstreetphil00jacks.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Reading Terminal, 11th & Arch Streets, Philadelphia (HAER PA-417), index to photographs"
     publisher: "Historic American Engineering Record, Library of Congress"
     url: https://www.loc.gov/item/pa3514/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Philadelphia & Reading Railroad, Terminal Station, 1115-1141 Market Street, Philadelphia (HABS PA-1528), index to photographs"
     publisher: "Historic American Buildings Survey, Library of Congress"
     url: https://www.loc.gov/item/pa1051/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Scene inside the Reading Terminal Market in Philadelphia, Pennsylvania"
     publisher: "Carol M. Highsmith Archive, Library of Congress"
     url: https://www.loc.gov/item/2019688706/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-market-under-the-trains/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72.2
+    audioBytes: 1155700
+    transcript:
+      totalS: 72.2
+      lines:
+        - text: Stand outside the market doors and look up.
+          atS: 0
+          durationS: 2.54
+        - text: The building keeps going, well above where a market would need a roof.
+          atS: 2.82
+          durationS: 3.88
+        - text: That high shed was built for trains.
+          atS: 7.14
+          durationS: 2.18
+        - text: Start a little earlier, on Market Street, a block to the south.
+          atS: 9.76
+          durationS: 3.96
+        - text: For generations, Philadelphia's main street had market sheds down its middle.
+          atS: 14.42
+          durationS: 4.98
+        - text: In eighteen fifty-nine they were cleared away, and the traders needed somewhere new.
+          atS: 20
+          durationS: 5
+        - text: Two big market houses went up on the north side of Market Street, between Eleventh and Twelfth.
+          atS: 25.82
+          durationS: 6.02
+        - text: One was the Farmers' Market, the largest market shed of its kind in the city.
+          atS: 32.8
+          durationS: 5.07
+        - text: Beside it, at Twelfth Street, was the Franklin Market, which old housekeepers just called the Twelfth Street Market.
+          atS: 38.68
+          durationS: 7.25
+        - text: Thirty years later the Reading Railroad wanted a station in the middle of town.
+          atS: 47.04
+          durationS: 4.5
+        - text: It ran its tracks in from Ninth and Green, raised up on an elevated line, and it chose this exact block.
+          atS: 51.99
+          durationS: 6.84
+        - text: The Reading Terminal opened for traffic on the twentieth of January, eighteen ninety-three.
+          atS: 59.64
+          durationS: 5.19
+        - text: So the trains came in up there, under that great arched roof.
+          atS: 65.16
+          durationS: 3.64
+        - text: And the market is still down here, underneath it.
+          atS: 69.04
+          durationS: 3.12

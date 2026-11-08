@@ -10,7 +10,7 @@ at: { lat: 34.23777, lng: -77.94562 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 67
+durationS: 45
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -25,22 +25,51 @@ script: |
   Wilmington belonged to a national touring circuit. A port city could receive artistic
   traffic as well as commercial cargo.
 
-  We do not need to invent the sound of a particular concert or borrow a famous tune. The
-  documented appearances are enough to establish the connection.
-
   Stand outside the theater and consider the practical journey behind a celebrated name.
   Performers, equipment, schedules, and audiences had to meet here on the same date. The
   building supplied the local end of that arrangement. For an evening, a touring
-  reputation became something Wilmington residents could experience together.
-editorial: draft
+  reputation became something local residents could experience together.
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Thalian Hall's history lists appearances by performers including Lillian Russell, Buffalo Bill Cody, and John Philip Sousa."
     source: 1
     quote: "Some of the artists who appeared in the Hall in the 19th and early 20th centuries were Lillian Russell, Buffalo Bill Cody, John Phillip Sousa, Joseph Jefferson, Maurice Barrymore, and Sir Henry Lauder."
+  - says: "Wilmington belonged to a national touring circuit."
+    source: 1
+    quote: "With the building of Thalian Hall, Wilmington became a major stop for national touring artists."
 sources:
   - title: "About"
     publisher: "Thalian Hall"
     url: https://www.thalianhall.org/about
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-stars-came-through-wilmington/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 45.3
+    audioBytes: 726456
+    transcript:
+      totalS: 45.3
+      lines:
+        - text: Thalian Hall's history lists appearances by performers including Lillian Russell, Buffalo Bill Cody, and John Philip Sousa.
+          atS: 0
+          durationS: 8.31
+        - text: "They brought different kinds of entertainment, but their presence made the same point: Wilmington belonged to a national touring circuit."
+          atS: 9.01
+          durationS: 8.16
+        - text: A port city could receive artistic traffic as well as commercial cargo.
+          atS: 17.5
+          durationS: 4.98
+        - text: Stand outside the theater and consider the practical journey behind a celebrated name.
+          atS: 22.92
+          durationS: 5.33
+        - text: Performers, equipment, schedules, and audiences had to meet here on the same date.
+          atS: 28.69
+          durationS: 6.23
+        - text: The building supplied the local end of that arrangement.
+          atS: 36.04
+          durationS: 3.05
+        - text: For an evening, a touring reputation became something local residents could experience together.
+          atS: 39.53
+          durationS: 5.79

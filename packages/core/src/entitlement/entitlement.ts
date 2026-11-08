@@ -73,6 +73,15 @@ export const CITIES: readonly City[] = [
    * the coast does not think of Southport as a different place to buy.
    */
   { id: "cape-fear", name: "Cape Fear Coast", centre: { lat: 34.2357, lng: -77.9452 }, radiusKm: 42 },
+  /*
+   * Washington and Philadelphia (James, 2026-11-08, with their first approved echoes). Every
+   * echo in each is within 3km of the centre, but a pass is for the visit, not the
+   * downtown: 25km takes in Arlington, Alexandria and Mount Vernon's road in, and the whole
+   * of Philadelphia from Germantown to the airport, while staying well clear of Baltimore
+   * (55km) and Wilmington, Delaware (45km).
+   */
+  { id: "washington-dc", name: "Washington, DC", centre: { lat: 38.8895, lng: -77.0353 }, radiusKm: 25 },
+  { id: "philadelphia", name: "Philadelphia", centre: { lat: 39.9526, lng: -75.1635 }, radiusKm: 25 },
 ];
 
 /** The city this point is in, or null on the road and in the air. */

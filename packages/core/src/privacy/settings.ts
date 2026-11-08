@@ -46,7 +46,12 @@ export interface PrivacySettings {
    */
   readonly recordPrecisePlaces: boolean;
 
-  /** Anonymous usage statistics. Opt-in, like everything that is for our benefit. */
+  /**
+   * Anonymous usage statistics: visit and play counts, no cookies, nothing that identifies
+   * anyone. **On by default** (James, 2026-11-07), the one exception to the rule below: a
+   * count of nobody in particular takes nothing about the listener, and an opt-in count is
+   * a count of almost nobody. The switch is in Settings and takes effect at once.
+   */
   readonly analytics: boolean;
 
   /** Let sponsorship be chosen by where the listener is, rather than shown to everyone. */
@@ -64,7 +69,7 @@ export const PRIVACY_DEFAULTS: PrivacySettings = {
   handsFree: false,
   keepCollection: true,
   recordPrecisePlaces: false,
-  analytics: false,
+  analytics: true,
   personalisedSponsorship: false,
 };
 

@@ -10,7 +10,7 @@ at: { lat: 34.23312, lng: -77.94720 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 67
+durationS: 53
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -21,32 +21,78 @@ script: |
   The wartime welcome offered here had a boundary. Wilmington's USO facilities were
   segregated.
 
-  The city's history records a separate club on Nixon Street for African American service
-  members. Today's museum includes a tribute to the Ninth and Nixon USO, preserving a
-  story that this building alone cannot fully represent.
+  The museum's history records a separate club on Nixon Street for African American
+  service members. Today's museum includes a tribute to the Ninth and Nixon USO,
+  preserving a story that this building alone cannot fully represent.
 
   You are at the interpretive site, not at that other club's original address. The
-  distinction matters. A visitor who hears only about this downtown center could mistake
-  one part of the wartime experience for everyone's experience.
+  distinction matters. A visitor who hears about this downtown center alone could
+  mistake a single part of the wartime experience for everyone's experience.
 
-  If the exhibit is open, pause before the tribute. Both clubs served people preparing for
-  military duty, but their separation reflected the racial restrictions of civilian
-  America. Remembering the welcome requires remembering who was directed to a different
-  door.
-editorial: draft
+  If the exhibit is open, pause before the tribute. Both clubs served people in uniform,
+  but they were kept apart by race. Remembering the welcome requires remembering who was
+  directed to a different door.
+editorial: approved
 factCheck: corroborated
 claims:
-  - says: "The city's history records a separate club on Nixon Street for African American service members."
+  - says: "Wilmington's USO facilities were segregated."
+    source: 1
+    quote: "Along with an identical structure on Nixon Street for African-American servicemen, it opened in December 1941, the same month that the Japanese attacked Pearl Harbor."
+  - says: "The museum's history records a separate club on Nixon Street for African American service members."
+    source: 1
+    quote: "Along with an identical structure on Nixon Street for African-American servicemen, it opened in December 1941, the same month that the Japanese attacked Pearl Harbor."
+  - says: "Today's museum includes a tribute to the Ninth and Nixon USO"
+    source: 2
+    quote: "Displays include memorials honoring Medal of Honor recipients Charles Murray and Billy Halyburton, a portrait of building namesake Hannah Block, WWII memorabilia, a tribute to the 9th & Nixon USO"
+  - says: "Both clubs served people in uniform, but they were kept apart by race."
     source: 1
     quote: "Along with an identical structure on Nixon Street for African-American servicemen, it opened in December 1941, the same month that the Japanese attacked Pearl Harbor."
 sources:
   - title: "Museum"
     publisher: "Wilmington Community Arts"
     url: https://wilmingtoncommunityarts.org/museum/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "July 4th open house"
     publisher: "Wilmington Community Arts"
     url: https://wilmingtoncommunityarts.org/classes-and-events/july-4th-open-house/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-other-wartime-uso/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.9
+    audioBytes: 847246
+    transcript:
+      totalS: 52.9
+      lines:
+        - text: The wartime welcome offered here had a boundary.
+          atS: 0
+          durationS: 2.93
+        - text: Wilmington's USO facilities were segregated.
+          atS: 3.44
+          durationS: 3.24
+        - text: The museum's history records a separate club on Nixon Street for African American service members.
+          atS: 7.37
+          durationS: 5.78
+        - text: Today's museum includes a tribute to the Ninth and Nixon USO, preserving a story that this building alone cannot fully represent.
+          atS: 13.85
+          durationS: 8.54
+        - text: You are at the interpretive site, not at that other club's original address.
+          atS: 22.84
+          durationS: 4.77
+        - text: The distinction matters.
+          atS: 28.05
+          durationS: 1.6
+        - text: A visitor who hears about this downtown center alone could mistake a single part of the wartime experience for everyone's experience.
+          atS: 29.98
+          durationS: 8.13
+        - text: If the exhibit is open, pause before the tribute.
+          atS: 38.55
+          durationS: 3.35
+        - text: Both clubs served people in uniform, but they were kept apart by race.
+          atS: 42.6
+          durationS: 4.83
+        - text: Remembering the welcome requires remembering who was directed to a different door.
+          atS: 48.12
+          durationS: 4.77

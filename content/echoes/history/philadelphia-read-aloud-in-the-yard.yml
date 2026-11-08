@@ -3,13 +3,13 @@
 # Position: Overture "Independence Square" (39.94825, -75.15016); spot placed about 40 m south-west of that point, in the old State House Yard, to keep 60 m from the tower echo (medium confidence).
 id: philadelphia-read-aloud-in-the-yard
 title: "Read Aloud in the Yard"
-summary: "The Declaration was first read to the public in this yard on 8 July 1776. The king's coat of arms did not last the afternoon."
+summary: "The Declaration was first read to the public in this yard on 8 July 1776. Then the king's coat of arms came down."
 place: "Independence Square, the old State House Yard, Philadelphia, Pennsylvania"
 at: { lat: 39.94795, lng: -75.15045 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 89
+durationS: 86
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -21,22 +21,77 @@ script: |
 
   On the fourth of July, seventeen seventy-six, Congress approved the Declaration of Independence in there. Almost nobody out here had heard a word of it.
 
-  Four days later, on the eighth, the bells of the city called people into this yard. At noon a militia colonel named John Nixon stood up on a raised stage and read the whole thing out loud. It was the first public reading of the Declaration.
+  Four days later, on the eighth, the bells of the city called people into this yard. At noon a colonel named John Nixon stood up on a raised stage and read the whole thing out loud. It was the first public reading of the Declaration.
 
   John Adams wrote about it the next day. He called the platform that awful stage, and he meant awe inspiring. Three cheers, he wrote, rended the welkin. The bells rang all day, and almost all night. Even the chimers chimed away.
 
-  In the courtroom of the State House, above the judge's bench, hung the coat of arms of King George the Third. That same day a crowd took it down and burned it.
+  In the courtroom of the State House, above the judge's bench, hung the coat of arms of King George the Third. After the reading, a crowd took it down and burned it.
 
-  About nine years later a Philadelphia painter, George Rutter, made a new coat of arms for the same courtroom. The arms of Pennsylvania. It is one of the very few furnishings from that century still in the building, and it hangs in the courtroom now.
+  About nine years later a painter named George Rutter made a new coat of arms for the same courtroom. The arms of Pennsylvania. It is one of the very few furnishings from that century still in the building, and it hangs in the courtroom now.
 
-  The king's arms did not last the afternoon. Pennsylvania's are still on the wall.
+  The king's arms came down and burned. Pennsylvania's are still on the wall.
 pronunciations:
   - written: welkin
     say: WEL-kin
   - written: Rutter
     say: RUT-er
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "This square was the State House yard, and you are standing in it."
+    source: 1
+    quote: "the citizens of Philadelphia were summoned to the State House Yard by the bells of the city."
+  - says: "On the fourth of July, seventeen seventy-six, Congress approved the Declaration of Independence in there."
+    source: 1
+    quote: "On July 4, 1776, the Second Continental Congress voted to approve the Declaration of Independence inside the Pennsylvania State House (now Independence Hall)."
+  - says: "Four days later, on the eighth, the bells of the city called people into this yard."
+    source: 1
+    quote: "Four days later, on July 8, 1776, the citizens of Philadelphia were summoned to the State House Yard by the bells of the city."
+  - says: "At noon a colonel named John Nixon"
+    source: 1
+    quote: "At noon, Colonel John Nixon publicly read the Declaration of Independence for the first time."
+  - says: "stood up on a raised stage and read the whole thing out loud"
+    source: 3
+    quote: "The Declaration was yesterday published and proclaimed from that awfull Stage in the State house yard"
+  - says: "It was the first public reading of the Declaration."
+    source: 1
+    quote: "At noon, Colonel John Nixon publicly read the Declaration of Independence for the first time."
+  - says: "John Adams wrote about it the next day."
+    source: 3
+    quote: "John Adams to Samuel Chase Dear sir. Philadelphia July 9. 1776"
+  - says: "He called the platform that awful stage"
+    source: 3
+    quote: "proclaimed from that awfull Stage in the State house yard"
+  - says: "Three cheers, he wrote, rended the welkin."
+    source: 3
+    quote: "Three cheers rended the Welkin."
+  - says: "The bells rang all day, and almost all night."
+    source: 3
+    quote: "The Bells rung all Day, and almost all night."
+  - says: "Even the chimers chimed away."
+    source: 3
+    quote: "Even the Chimers Chimed away."
+  - says: "In the courtroom of the State House, above the judge's bench, hung the coat of arms of King George the Third."
+    source: 2
+    quote: "Hanging in the courtroom of Pennsylvania State House, now known as Independence Hall, the painting replaced the coat of arms of King George III. The British coat of arms, which previously sat above the judge’s bench"
+  - says: "After the reading, a crowd took it down and burned it."
+    source: 2
+    quote: "had been taken down and burned by a mob following the first public reading of the Declaration of Independence on July 8, 1776."
+  - says: "About nine years later a painter named George Rutter made a new coat of arms for the same courtroom."
+    source: 2
+    quote: "The Pennsylvania Coat of Arms painting was created around 1785 by George Rutter and features an early version of the Pennsylvania State Coat of Arms."
+  - says: "The arms of Pennsylvania."
+    source: 2
+    quote: "features an early version of the Pennsylvania State Coat of Arms"
+  - says: "It is one of the very few furnishings from that century still in the building"
+    source: 2
+    quote: "this special item in the park’s museum collection is one of the few 18th century furnishings of Independence Hall."
+  - says: "it hangs in the courtroom now"
+    source: 2
+    quote: "this national treasure will once again hang on the courtroom wall of Independence Hall as a silent sentry to history."
+  - says: "Pennsylvania's are still on the wall."
+    source: 2
+    quote: "this national treasure will once again hang on the courtroom wall of Independence Hall"
 sources:
   - title: "First Public Reading of the Declaration of Independence"
     publisher: "National Park Service, Independence National Historical Park"
@@ -53,3 +108,68 @@ sources:
     url: https://www.loc.gov/item/76002592_04_0334/
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-read-aloud-in-the-yard/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 85.5
+    audioBytes: 1369695
+    transcript:
+      totalS: 85.5
+      lines:
+        - text: Face the back of the hall.
+          atS: 0
+          durationS: 1.53
+        - text: This square was the State House yard, and you are standing in it.
+          atS: 2.04
+          durationS: 3.59
+        - text: On the fourth of July, seventeen seventy-six, Congress approved the Declaration of Independence in there.
+          atS: 6.14
+          durationS: 6.97
+        - text: Almost nobody out here had heard a word of it.
+          atS: 13.8
+          durationS: 2.72
+        - text: Four days later, on the eighth, the bells of the city called people into this yard.
+          atS: 17.13
+          durationS: 5.43
+        - text: At noon a colonel named John Nixon stood up on a raised stage and read the whole thing out loud.
+          atS: 23.37
+          durationS: 6.54
+        - text: It was the first public reading of the Declaration.
+          atS: 30.35
+          durationS: 3.09
+        - text: John Adams wrote about it the next day.
+          atS: 34.04
+          durationS: 2.39
+        - text: He called the platform that awful stage, and he meant awe inspiring.
+          atS: 36.87
+          durationS: 4.57
+        - text: Three cheers, he wrote, rended the welkin.
+          atS: 41.96
+          durationS: 3.33
+        - text: The bells rang all day, and almost all night.
+          atS: 45.8
+          durationS: 3.38
+        - text: Even the chimers chimed away.
+          atS: 49.51
+          durationS: 2.13
+        - text: In the courtroom of the State House, above the judge's bench, hung the coat of arms of King George the Third.
+          atS: 52.74
+          durationS: 6.27
+        - text: After the reading, a crowd took it down and burned it.
+          atS: 59.97
+          durationS: 3.85
+        - text: About nine years later a painter named George Rutter made a new coat of arms for the same courtroom.
+          atS: 64.94
+          durationS: 6.23
+        - text: The arms of Pennsylvania.
+          atS: 71.68
+          durationS: 1.72
+        - text: It is one of the very few furnishings from that century still in the building, and it hangs in the courtroom now.
+          atS: 73.84
+          durationS: 6.14
+        - text: The king's arms came down and burned.
+          atS: 80.68
+          durationS: 2.36
+        - text: Pennsylvania's are still on the wall.
+          atS: 83.48
+          durationS: 2.07

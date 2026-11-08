@@ -21,9 +21,9 @@ script: |
 
   On the fourth of March, seventeen ninety-seven, the room downstairs was packed. The country was about to do something it had never done. Hand the presidency from one man to another.
 
-  A man named John McKoy was there, and wrote down what he saw. When the word Washington went round the doorway, he said, the shout made the hall tremble. Washington crossed the floor at a quick step, as if eager to escape notice, and sat down. Thomas Jefferson came in next, the new vice president, to a smaller cheer. Then John Adams, the new president, to a smaller one again.
+  A man named John McKoy was there, and wrote down what he saw. When the word Washington was heard at the door, he said, the shout made the hall tremble. Washington crossed the floor at a quick step, as if eager to escape notice, and sat down. Thomas Jefferson came in next, the new vice president, to a smaller cheer. Then John Adams, the new president, to a smaller one again.
 
-  Adams took the oath, read his address, bowed, and left to applause.
+  Adams read his address, took the oath, bowed, and left to applause.
 
   That left Washington and Jefferson standing together, and the whole room watching them in silence.
 
@@ -33,21 +33,141 @@ script: |
 pronunciations:
   - written: McKoy
     say: muh-KOY
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Hand the presidency from one man to another."
+    source: 3
+    quote: "John Adams, the second President of the United States, was inaugurated here on the 4th of March, 1797."
+  - says: "Stand beside the brick building on the corner of Sixth and Chestnut."
+    source: 1
+    quote: "Congress Hall is located on Independence Square, at 6th and Chestnut Streets."
+  - says: "This is Congress Hall."
+    source: 1
+    quote: "Congress Hall is located on Independence Square, at 6th and Chestnut Streets."
+  - says: "For ten years the House of Representatives met on its ground floor, and the Senate upstairs."
+    source: 2
+    quote: "The U.S. Senate met on the second floor of Congress Hall, while the House of Representatives sat in the larger room below."
+  - says: "For ten years the House of Representatives met on its ground floor, and the Senate upstairs."
+    source: 1
+    quote: "Congress Hall was home to the U.S. Congress from 1790 to 1800"
+  - says: "On the fourth of March, seventeen ninety-seven, the room downstairs was packed."
+    source: 3
+    quote: "John Adams, the second President of the United States, was inaugurated here on the 4th of March, 1797."
+  - says: "A man named John McKoy was there, and wrote down what he saw."
+    source: 3
+    quote: "John McKoy, who was present, wrote a description of the scene for Poulson’s Dazly Advertiser."
+  - says: "When the word Washington was heard at the door, he said, the shout made the hall tremble."
+    source: 3
+    quote: "the attention of the audience was roused by the word ‘Washington,’ near the door of the entrance."
+  - says: "When the word Washington was heard at the door, he said, the shout made the hall tremble."
+    source: 3
+    quote: "feeling which made the hall tremble."
+  - says: "Washington crossed the floor at a quick step, as if eager to escape notice, and sat down."
+    source: 3
+    quote: "He entered in the midst and crossed the floor at a quick step, as if eager to escape notice, and seated himself quickly on his chair"
+  - says: "Thomas Jefferson came in next, the new vice president, to a smaller cheer."
+    source: 3
+    quote: "when the word ‘Jefferson,’ at the entrance door, again electrified the audience into another explosion of feeling similar to the first, but abated in"
+  - says: "Then John Adams, the new president, to a smaller one again."
+    source: 3
+    quote: "again produced an explosion of feeling similar to those that had preceded, but again diminished by repetition in its force and energy."
+  - says: "Adams read his address, took the oath, bowed, and left to applause."
+    source: 3
+    quote: "Adams made a short speech, and then, going down to the table at which the judges were sitting, took the oath of office administered to him by the Chief Justice, Oliver Ellsworth."
+  - says: "Adams read his address, took the oath, bowed, and left to applause."
+    source: 3
+    quote: "he descended from the chair and passed out with acclamation."
+  - says: "That left Washington and Jefferson standing together, and the whole room watching them in silence."
+    source: 3
+    quote: "Washington and Jefferson remained standing together, and the bulk of the audience watching their movements in cautious silence."
+  - says: "Washington gestured for Jefferson to go out first."
+    source: 3
+    quote: "with a graceful motion of the hand, Washington invited the Vice-President, Jefferson, to pass on before him, which was declined by Mr. Jefferson."
+  - says: "Washington asked again."
+    source: 3
+    quote: "After a pause, an invitation to proceed was repeated by Washington"
+  - says: "Jefferson went, and Washington followed him out."
+    source: 3
+    quote: "the Vice-President passed on towards the door and Washington after him."
 sources:
   - title: "Visiting Congress Hall"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/planyourvisit/congresshall.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Congress Hall"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/learn/historyculture/places-congresshall.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Congress hall (Samuel W. Pennypacker, 1895)"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/02024648/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/congresshall00penn/congresshall00penn.text.txt
+    retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-washington-left-last/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 79
+    audioBytes: 1265623
+    transcript:
+      totalS: 79
+      lines:
+        - text: Stand beside the brick building on the corner of Sixth and Chestnut.
+          atS: 0
+          durationS: 4.24
+        - text: This is Congress Hall.
+          atS: 4.56
+          durationS: 1.88
+        - text: For ten years the House of Representatives met on its ground floor, and the Senate upstairs.
+          atS: 7.26
+          durationS: 5.99
+        - text: On the fourth of March, seventeen ninety-seven, the room downstairs was packed.
+          atS: 14.2
+          durationS: 5.14
+        - text: The country was about to do something it had never done.
+          atS: 19.73
+          durationS: 3.3
+        - text: Hand the presidency from one man to another.
+          atS: 23.46
+          durationS: 2.78
+        - text: A man named John McKoy was there, and wrote down what he saw.
+          atS: 26.93
+          durationS: 4.75
+        - text: When the word Washington was heard at the door, he said, the shout made the hall tremble.
+          atS: 32.13
+          durationS: 4.95
+        - text: Washington crossed the floor at a quick step, as if eager to escape notice, and sat down.
+          atS: 37.35
+          durationS: 5.46
+        - text: Thomas Jefferson came in next, the new vice president, to a smaller cheer.
+          atS: 43.13
+          durationS: 4.51
+        - text: Then John Adams, the new president, to a smaller one again.
+          atS: 48.02
+          durationS: 3.4
+        - text: Adams read his address, took the oath, bowed, and left to applause.
+          atS: 52.02
+          durationS: 4.47
+        - text: That left Washington and Jefferson standing together, and the whole room watching them in silence.
+          atS: 57.61
+          durationS: 5.29
+        - text: Washington gestured for Jefferson to go out first.
+          atS: 63.51
+          durationS: 2.84
+        - text: Jefferson declined.
+          atS: 66.79
+          durationS: 1.23
+        - text: Washington asked again.
+          atS: 68.3
+          durationS: 1.5
+        - text: Jefferson went, and Washington followed him out.
+          atS: 70.18
+          durationS: 2.93
+        - text: He walked in as the most famous man in the country.
+          atS: 73.49
+          durationS: 2.88
+        - text: He walked out behind the vice president.
+          atS: 76.65
+          durationS: 2.39
