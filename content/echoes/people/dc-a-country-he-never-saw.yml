@@ -43,7 +43,7 @@ script: |
 pronunciations:
   - written: Genoa
     say: JEN-oh-uh
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Inside, there is a small crypt with a sarcophagus in it."

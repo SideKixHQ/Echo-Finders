@@ -9,7 +9,7 @@ at: { lat: 39.95262, lng: -75.14868 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 107
+durationS: 103
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   After the war, some of the fighters made their peace with their old meetings and went back. By the eighteen thirties, services here had stopped.
 
   They dated their building from the birth of a country. The country lasted. The congregation did not.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Stand on Arch Street and look up at the side of this small brick meeting house, high under the eaves."
@@ -111,3 +111,83 @@ sources:
     url: https://www.loc.gov/resource/sn83045211/1918-03-26/ed-1/?sp=12
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-of-the-empire-eight/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 103.1
+    audioBytes: 1649727
+    transcript:
+      totalS: 103.1
+      lines:
+        - text: Stand on Arch Street and look up at the side of this small brick meeting house, high under the eaves.
+          atS: 0
+          durationS: 5.77
+        - text: There is a stone tablet set into the wall.
+          atS: 6.21
+          durationS: 2.53
+        - text: It says the house was erected by general subscription, for the Free Quakers, in seventeen eighty-three.
+          atS: 9.25
+          durationS: 6.14
+        - text: Then it gives a second date.
+          atS: 15.84
+          durationS: 1.96
+        - text: Of the Empire, eight.
+          atS: 18.18
+          durationS: 2.01
+        - text: Quakers do not fight.
+          atS: 20.63
+          durationS: 1.57
+        - text: During the Revolution most Philadelphia Friends would not take up arms, pay war taxes, or swear an oath of allegiance.
+          atS: 22.71
+          durationS: 7.62
+        - text: Some members broke with that.
+          atS: 30.77
+          durationS: 1.68
+        - text: They served in the army, sat on the committee of safety, took seats in the legislature.
+          atS: 32.73
+          durationS: 5.43
+        - text: The Society of Friends disowned them.
+          atS: 38.6
+          durationS: 2.39
+        - text: Read them out of meeting, as it was called.
+          atS: 41.38
+          durationS: 2.58
+        - text: So they started their own.
+          atS: 44.56
+          durationS: 1.5
+        - text: They called themselves the Free Quakers, and people called them the Fighting Quakers.
+          atS: 46.27
+          durationS: 5.32
+        - text: They paid for this house by subscription, and one of the people who gave was Benjamin Franklin, who was not a Quaker at all.
+          atS: 52.19
+          durationS: 6.93
+        - text: As for the Empire.
+          atS: 59.63
+          durationS: 1.24
+        - text: A Philadelphia newspaper told a story about it in nineteen eighteen.
+          atS: 61.82
+          durationS: 4.06
+        - text: When the stone was being set, someone asked one of the Free Quakers what the words meant.
+          atS: 66.49
+          durationS: 5.41
+        - text: I tell thee, friend, he is supposed to have said, it is because our country is destined to be the great empire over all the world.
+          atS: 72.6
+          durationS: 8.45
+        - text: That is the story, as the newspaper told it, well over a century later.
+          atS: 81.22
+          durationS: 5.34
+        - text: After the war, some of the fighters made their peace with their old meetings and went back.
+          atS: 86.81
+          durationS: 5.19
+        - text: By the eighteen thirties, services here had stopped.
+          atS: 92.51
+          durationS: 3.45
+        - text: They dated their building from the birth of a country.
+          atS: 96.4
+          durationS: 2.8
+        - text: The country lasted.
+          atS: 99.47
+          durationS: 1.39
+        - text: The congregation did not.
+          atS: 101.19
+          durationS: 1.86

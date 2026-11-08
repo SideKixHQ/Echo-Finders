@@ -31,7 +31,7 @@ script: |
 pronunciations:
   - written: Reading
     say: RED-ing
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "That high shed was built for trains."

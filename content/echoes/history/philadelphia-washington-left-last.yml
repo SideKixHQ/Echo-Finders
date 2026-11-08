@@ -33,7 +33,7 @@ script: |
 pronunciations:
   - written: McKoy
     say: muh-KOY
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Hand the presidency from one man to another."

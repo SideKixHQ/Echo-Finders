@@ -9,7 +9,7 @@ at: { lat: 38.89890, lng: -77.03848 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 78
+durationS: 72
 visibility: at-hand
 certainty: documented
 minAge: 12
@@ -38,7 +38,7 @@ script: |
   read the plaque. Then he pointed.
 
   He was in a little sentry house, Truman said, that stood right there.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Find the small bronze plaque on the fence in front of Blair House."
@@ -121,3 +121,62 @@ sources:
     url: https://www.loc.gov/resource/sn83045462/1958-04-14/ed-1/?sp=27
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-plaque-on-the-fence/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72
+    audioBytes: 1153610
+    transcript:
+      totalS: 72
+      lines:
+        - text: Find the small bronze plaque on the fence in front of Blair House.
+          atS: 0
+          durationS: 3.97
+        - text: In the autumn of nineteen fifty, the White House was being rebuilt, and President Truman was living here, across the street.
+          atS: 4.57
+          durationS: 7.4
+        - text: On the afternoon of the first of November, he was resting upstairs.
+          atS: 12.48
+          durationS: 3.95
+        - text: Two Puerto Rican nationalists came to this house armed.
+          atS: 16.87
+          durationS: 3.56
+        - text: One of them was later quoted as admitting they had expected to shoot their way in.
+          atS: 20.87
+          durationS: 4.66
+        - text: The White House police on duty shot back.
+          atS: 26.13
+          durationS: 2.67
+        - text: Private Leslie Coffelt was forty years old.
+          atS: 29.41
+          durationS: 2.96
+        - text: As he lay dying beside his post from two bullet wounds, he fired, and killed one of the attackers.
+          atS: 32.81
+          durationS: 6.29
+        - text: Two other officers were hit, and recovered.
+          atS: 39.7
+          durationS: 2.71
+        - text: The other attacker was wounded and taken.
+          atS: 42.85
+          durationS: 2.57
+        - text: They never got through the door.
+          atS: 45.74
+          durationS: 1.65
+        - text: The plaque was dedicated in May nineteen fifty-two, by Truman himself.
+          atS: 47.99
+          durationS: 4.81
+        - text: He said it commemorated an event about which he did not like to think.
+          atS: 53.41
+          durationS: 4.17
+        - text: Six years later, he walked past here with a writer from the Evening Star.
+          atS: 58.39
+          durationS: 4.52
+        - text: He stopped and read the plaque.
+          atS: 63.51
+          durationS: 2.02
+        - text: Then he pointed.
+          atS: 65.85
+          durationS: 1.06
+        - text: He was in a little sentry house, Truman said, that stood right there.
+          atS: 67.51
+          durationS: 4.52

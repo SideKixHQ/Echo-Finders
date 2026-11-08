@@ -9,7 +9,7 @@ at: { lat: 39.94985, lng: -75.14665 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 63
+durationS: 65
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   Look down through the viewing portals near your feet. You can see what is left of his cellar kitchen.
 
   Everything above that is exactly as much as anyone knows.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Benjamin Franklin's house stood here."
@@ -69,3 +69,53 @@ sources:
     url: https://www.nps.gov/inde/planyourvisit/franklincourtcourtyard.htm
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-as-much-as-anyone-knows/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 65
+    audioBytes: 1040761
+    transcript:
+      totalS: 65
+      lines:
+        - text: Stand in the courtyard and look up at the steel frame.
+          atS: 0
+          durationS: 3.5
+        - text: It is the outline of a house, drawn in the air, with nothing filled in.
+          atS: 3.88
+          durationS: 4.74
+        - text: Benjamin Franklin's house stood here.
+          atS: 9.91
+          durationS: 2.36
+        - text: It was large for the city, and unusual, set back from Market Street in a garden court.
+          atS: 13.08
+          durationS: 5.5
+        - text: Franklin died here in seventeen ninety.
+          atS: 19.89
+          durationS: 2.39
+        - text: Twenty-two years later his heirs tore it down.
+          atS: 22.98
+          durationS: 3.16
+        - text: The land had become too valuable to keep one house on it.
+          atS: 26.64
+          durationS: 3.27
+        - text: When the Park Service investigated the court, archaeologists found the outline of the house and its cellar.
+          atS: 31.03
+          durationS: 6.13
+        - text: But nobody could find enough evidence of what the house had actually looked like.
+          atS: 37.86
+          durationS: 4.81
+        - text: So the architects decided not to guess.
+          atS: 43.48
+          durationS: 2.82
+        - text: They built a frame to the measurements recorded in Franklin's own property insurance, and left it empty.
+          atS: 47.11
+          durationS: 6.29
+        - text: Look down through the viewing portals near your feet.
+          atS: 54.36
+          durationS: 2.76
+        - text: You can see what is left of his cellar kitchen.
+          atS: 57.56
+          durationS: 2.51
+        - text: Everything above that is exactly as much as anyone knows.
+          atS: 60.67
+          durationS: 4.3

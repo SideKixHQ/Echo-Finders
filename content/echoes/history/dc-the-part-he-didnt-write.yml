@@ -9,7 +9,7 @@ at: { lat: 38.88927, lng: -77.04968 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 69
+durationS: 65
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -40,7 +40,7 @@ script: |
   the Washington Monument.
 
   The part of that speech everyone can still recite is the part he had not planned to say.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "One stone here marks a place."
@@ -89,3 +89,59 @@ sources:
     url: https://www.nps.gov/linc/learn/historyculture/exterior-features.htm
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-part-he-didnt-write/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 65.3
+    audioBytes: 1046612
+    transcript:
+      totalS: 65.3
+      lines:
+        - text: Look down at the landing, just below the top flight of steps.
+          atS: 0
+          durationS: 3.45
+        - text: One stone here marks a place.
+          atS: 4.05
+          durationS: 2.04
+        - text: It marks where Martin Luther King Junior stood on the twenty-eighth of August, 1963.
+          atS: 6.79
+          durationS: 5.58
+        - text: It was late afternoon.
+          atS: 13.68
+          durationS: 1.49
+        - text: More than a quarter of a million people were out there.
+          atS: 15.67
+          durationS: 2.62
+        - text: Many of them had come a long way by bus and by train, and they had already sat through a long list of speakers.
+          atS: 18.99
+          durationS: 5.72
+        - text: King had a prepared text.
+          atS: 25.83
+          durationS: 1.87
+        - text: A promissory note.
+          atS: 28.14
+          durationS: 1.32
+        - text: A bad check, come back marked insufficient funds.
+          atS: 30.16
+          durationS: 3.44
+        - text: He was near the end of it, telling people to go home and keep up the fight, when a voice called out from just off to the side.
+          atS: 34.41
+          durationS: 7.06
+        - text: It was his good friend, Mahalia Jackson.
+          atS: 42.28
+          durationS: 2.68
+        - text: Tell them about the dream, Martin.
+          atS: 45.78
+          durationS: 1.79
+        - text: What came next was not on the page.
+          atS: 48.38
+          durationS: 2.32
+        - text: He improvised it.
+          atS: 51.08
+          durationS: 1.24
+        - text: Stand on the landing and look out the way he did, down the length of the water toward the Washington Monument.
+          atS: 52.93
+          durationS: 6.34
+        - text: The part of that speech everyone can still recite is the part he had not planned to say.
+          atS: 59.97
+          durationS: 5.38

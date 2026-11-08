@@ -9,7 +9,7 @@ at: { lat: 39.94705, lng: -75.14405 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 68
+durationS: 64
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   Four days later they met here again, at ten in the morning, and walked up the street to choose a room.
 
   So before the Continental Congress had a president, a secretary or a place to sit, it had a tavern. This corner.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "This is City Tavern, on the corner of Second and Walnut."
@@ -77,3 +77,50 @@ sources:
     url: https://www.loc.gov/item/76002592_01_0001/
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-congress-started-at-the-tavern/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 63.9
+    audioBytes: 1022789
+    transcript:
+      totalS: 63.9
+      lines:
+        - text: This is City Tavern, on the corner of Second and Walnut.
+          atS: 0
+          durationS: 3.29
+        - text: Look at the brickwork.
+          atS: 3.67
+          durationS: 1.15
+        - text: It is younger than it looks.
+          atS: 4.99
+          durationS: 1.58
+        - text: The tavern the founders knew was built in seventeen seventy-three and torn down in eighteen fifty-four.
+          atS: 7.08
+          durationS: 5.63
+        - text: The Park Service built this one in nineteen seventy-five, as a copy.
+          atS: 13.32
+          durationS: 4.33
+        - text: The original was still new in the late summer of seventeen seventy-four, when delegates to the first Continental Congress began arriving in town, colony by colony.
+          atS: 18.34
+          durationS: 10.31
+        - text: They did not wait for anything official.
+          atS: 29.77
+          durationS: 2.3
+        - text: On the first of September, John Adams wrote in his diary, all the gentlemen of the Congress who had arrived met at the new City Tavern and spent the evening together.
+          atS: 32.67
+          durationS: 9.44
+        - text: Twenty-five had come.
+          atS: 42.71
+          durationS: 1.56
+        - text: Virginia, North Carolina, Maryland and New York City were still on the road.
+          atS: 44.78
+          durationS: 4.72
+        - text: Four days later they met here again, at ten in the morning, and walked up the street to choose a room.
+          atS: 49.83
+          durationS: 5.91
+        - text: So before the Continental Congress had a president, a secretary or a place to sit, it had a tavern.
+          atS: 56.18
+          durationS: 6.16
+        - text: This corner.
+          atS: 62.79
+          durationS: 1.07

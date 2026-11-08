@@ -9,7 +9,7 @@ at: { lat: 39.94803, lng: -75.14615 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 66
+durationS: 64
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   The Park Service reads that word as the riches of that continent, human and mineral.
 
   The panel is a celebration of a young country's money. It names one of the places the money came from.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Stand in front of the columns on Third Street and look above the main door."
@@ -83,3 +83,59 @@ sources:
     url: https://www.loc.gov/item/pa0850/
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-baby-over-the-bank-door/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 63.5
+    audioBytes: 1017355
+    transcript:
+      totalS: 63.5
+      lines:
+        - text: Stand in front of the columns on Third Street and look above the main door.
+          atS: 0
+          durationS: 4.11
+        - text: There is a carved marble panel there, and it is busier than it first appears.
+          atS: 4.62
+          durationS: 4.69
+        - text: A baby wearing a helmet leans against a globe.
+          atS: 9.91
+          durationS: 2.96
+        - text: One foot rests on a beehive.
+          atS: 13.39
+          durationS: 2.21
+        - text: Beside him a horn of plenty spills out, not fruit, but coins.
+          atS: 16.03
+          durationS: 5.26
+        - text: Behind him are tall ledgers, sailing ships and an American flag.
+          atS: 21.73
+          durationS: 4.57
+        - text: The baby is America.
+          atS: 26.75
+          durationS: 1.53
+        - text: This was the Bank of the United States, and it opened in this building in seventeen ninety-seven.
+          atS: 28.72
+          durationS: 5.87
+        - text: The whole front was designed to tell you what it was for.
+          atS: 34.98
+          durationS: 3.01
+        - text: Even the keystone over the door is the head of Mercury, the Roman god of commerce.
+          atS: 38.43
+          durationS: 4.93
+        - text: Now look at the globe again.
+          atS: 43.8
+          durationS: 1.64
+        - text: One word is carved on it clearly.
+          atS: 45.83
+          durationS: 2.25
+        - text: Africa.
+          atS: 48.46
+          durationS: 0.81
+        - text: The Park Service reads that word as the riches of that continent, human and mineral.
+          atS: 50.23
+          durationS: 6.09
+        - text: The panel is a celebration of a young country's money.
+          atS: 56.83
+          durationS: 3.39
+        - text: It names one of the places the money came from.
+          atS: 60.73
+          durationS: 2.8

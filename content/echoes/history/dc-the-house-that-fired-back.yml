@@ -9,7 +9,7 @@ at: { lat: 38.89220, lng: -77.00375 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 80
+durationS: 68
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -43,7 +43,7 @@ script: |
   threatened again. The Woman's Party lobbied to have it protected, and won.
 
   This time, nobody had to fire a shot.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It is one of the oldest houses in Washington."
@@ -104,3 +104,53 @@ sources:
     url: https://www.nps.gov/bepa/index.htm
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-house-that-fired-back/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.1
+    audioBytes: 1090498
+    transcript:
+      totalS: 68.1
+      lines:
+        - text: Find the old brick house on the corner, tucked in beside the big Senate office building.
+          atS: 0
+          durationS: 4.74
+        - text: It is one of the oldest houses in Washington.
+          atS: 5.12
+          durationS: 2.47
+        - text: But it is not quite the house that was first built here.
+          atS: 7.98
+          durationS: 2.95
+        - text: The first one went up in 1800.
+          atS: 11.31
+          durationS: 2.37
+        - text: On the twenty-fourth of August 1814, the British army invaded Washington.
+          atS: 14.79
+          durationS: 5.12
+        - text: According to a claim the owner later filed with Congress, a group of Commodore Joshua Barney's men, retreating from the battle at Bladensburg, got into this house and shot at the British troops coming up the street.
+          atS: 20.35
+          durationS: 12.09
+        - text: They killed several men.
+          atS: 32.59
+          durationS: 1.32
+        - text: They also killed the horse of the British commander, General Ross.
+          atS: 33.99
+          durationS: 3.7
+        - text: Ross's troops set the house on fire, and it was destroyed.
+          atS: 38.14
+          durationS: 3.51
+        - text: The house you are looking at was rebuilt on the same spot by 1820.
+          atS: 42.25
+          durationS: 4.17
+        - text: A little over a century later, the National Woman's Party bought it, and campaigned for equal rights from here, just behind the Capitol.
+          atS: 46.93
+          durationS: 7.92
+        - text: In the 1960s, when the Senate office building next door was going up, the house was threatened again.
+          atS: 55.66
+          durationS: 5.66
+        - text: The Woman's Party lobbied to have it protected, and won.
+          atS: 61.49
+          durationS: 3.32
+        - text: This time, nobody had to fire a shot.
+          atS: 65.19
+          durationS: 2.89

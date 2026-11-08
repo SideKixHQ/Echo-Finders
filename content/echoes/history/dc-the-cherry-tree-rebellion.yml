@@ -9,7 +9,7 @@ at: { lat: 38.88195, lng: -77.03651 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 75
+durationS: 70
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -41,7 +41,7 @@ script: |
   this side of the basin, to frame it.
 
   The women lost the memorial. The trees got this shore.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Stand on the steps of the Jefferson Memorial and look at the cherry trees along the shore."
@@ -91,3 +91,62 @@ sources:
     url: https://www.nps.gov/subjects/cherryblossom/history-of-the-cherry-trees.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-cherry-tree-rebellion/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.6
+    audioBytes: 1114322
+    transcript:
+      totalS: 69.6
+      lines:
+        - text: Stand on the steps of the Jefferson Memorial and look at the cherry trees along the shore.
+          atS: 0
+          durationS: 5.04
+        - text: In November 1938, this ground was about to be cleared for the building behind you.
+          atS: 6.34
+          durationS: 5.27
+        - text: Some of the cherry trees were in the way.
+          atS: 12.72
+          durationS: 2.09
+        - text: On the seventeenth, more than eighty women marched to the White House with a petition to save the trees.
+          atS: 15.32
+          durationS: 5.86
+        - text: When the President's secretary came out to take it, they chanted a poem at him.
+          atS: 21.89
+          durationS: 4.46
+        - text: Trees, by Joyce Kilmer.
+          atS: 27.16
+          durationS: 2.37
+        - text: The next morning, about a hundred and fifty women came down to the Tidal Basin.
+          atS: 30.64
+          durationS: 4.45
+        - text: They wrestled the shovels away from the workmen.
+          atS: 35.41
+          durationS: 2.54
+        - text: They chained themselves to the trees.
+          atS: 38.28
+          durationS: 2.03
+        - text: And they chained a park police sergeant to the trees as well.
+          atS: 40.59
+          durationS: 3.39
+        - text: The work stopped, for a while.
+          atS: 44.58
+          durationS: 2.08
+        - text: President Roosevelt called it a flimflam game, and threatened to have the women transplanted along with the trees.
+          atS: 47.1
+          durationS: 6.11
+        - text: The women withdrew, and construction began the next month.
+          atS: 53.65
+          durationS: 3.49
+        - text: The memorial was built.
+          atS: 57.42
+          durationS: 1.61
+        - text: But part of the compromise was more cherry trees, planted along this side of the basin, to frame it.
+          atS: 59.48
+          durationS: 5.87
+        - text: The women lost the memorial.
+          atS: 65.96
+          durationS: 1.68
+        - text: The trees got this shore.
+          atS: 67.97
+          durationS: 1.6

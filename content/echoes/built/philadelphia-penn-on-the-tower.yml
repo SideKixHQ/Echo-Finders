@@ -9,7 +9,7 @@ at: { lat: 39.95255, lng: -75.16475 }
 triggerRadiusKm: 0.06
 category: built
 format: short
-durationS: 69
+durationS: 62
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -35,7 +35,7 @@ script: |
 pronunciations:
   - written: Dilworth Park
     say: DIL-wurth Park
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "He is William Penn, the founder of Pennsylvania and the planner of this city."
@@ -84,3 +84,53 @@ sources:
     url: https://www.loc.gov/item/2019689061/
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-penn-on-the-tower/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 62.3
+    audioBytes: 997293
+    transcript:
+      totalS: 62.3
+      lines:
+        - text: Look straight up the tower in front of you, past the clock, to the very top.
+          atS: 0
+          durationS: 4.2
+        - text: There is a man standing up there.
+          atS: 4.38
+          durationS: 1.88
+        - text: He is William Penn, the founder of Pennsylvania and the planner of this city.
+          atS: 6.47
+          durationS: 4.61
+        - text: From down here he looks about life size.
+          atS: 11.4
+          durationS: 2.75
+        - text: He is thirty-seven feet tall, and he weighs more than fifty-three thousand pounds of bronze.
+          atS: 14.4
+          durationS: 5.63
+        - text: The last piece to go up was his head.
+          atS: 20.31
+          durationS: 2.4
+        - text: It was set on his shoulders on the twenty-eighth of November, eighteen ninety-four, and the statue was complete.
+          atS: 22.99
+          durationS: 6.72
+        - text: The tower under him rises five hundred and forty-eight feet.
+          atS: 30.04
+          durationS: 3.65
+        - text: Until nineteen oh nine it was the highest occupied building in the United States.
+          atS: 34.01
+          durationS: 4.93
+        - text: In the autumn of nineteen eighty-one, historians wrote this building up for the federal survey of American architecture.
+          atS: 39.27
+          durationS: 7
+        - text: They wrote that no other building in the city exceeds its height.
+          atS: 46.96
+          durationS: 3.91
+        - text: Now turn around, and look at the skyline to the west.
+          atS: 51.48
+          durationS: 3.74
+        - text: Count the towers standing higher than Penn's hat.
+          atS: 55.91
+          durationS: 3.05
+        - text: All of them went up after that was written.
+          atS: 59.66
+          durationS: 2.61

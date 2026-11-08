@@ -9,7 +9,7 @@ at: { lat: 38.88762, lng: -77.04760 }
 triggerRadiusKm: 0.05
 category: built
 format: short
-durationS: 66
+durationS: 70
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -41,7 +41,7 @@ script: |
   The record does not say whether anyone planned it that way.
 
   But that is thirty-eight.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "There are nineteen of them, out on patrol."
@@ -88,3 +88,62 @@ sources:
     url: https://www.nps.gov/kowa/learn/historyculture/features.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-nineteen-in-the-stone/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.9
+    audioBytes: 1120173
+    transcript:
+      totalS: 69.9
+      lines:
+        - text: Walk beside the polished wall, and watch the soldiers in the field appear in the stone.
+          atS: 0
+          durationS: 5.12
+        - text: There are nineteen of them, out on patrol.
+          atS: 5.5
+          durationS: 2.72
+        - text: When the sculptor, Frank Gaylord, first showed his clay models, there were thirty-eight soldiers.
+          atS: 9.03
+          durationS: 6.65
+        - text: They were in the middle of a mission, under fire, in every kind of pose.
+          atS: 16.13
+          durationS: 4.56
+        - text: The Commission of Fine Arts liked the photographs, and worried the figures would become too realistic.
+          atS: 21.99
+          durationS: 5.97
+        - text: What was finally built was nineteen.
+          atS: 28.56
+          durationS: 2.44
+        - text: The wall beside you carries the faces of the people behind the troops.
+          atS: 31.51
+          durationS: 4.2
+        - text: Nurses, chaplains, sailors, supply crews.
+          atS: 35.96
+          durationS: 3.47
+        - text: More than two thousand four hundred photographs went into it.
+          atS: 39.94
+          durationS: 3.78
+        - text: The architects wrote that as visitors walked down beside it, the etched faces would mix with the reflections of the soldiers.
+          atS: 44.33
+          durationS: 7.71
+        - text: So look into the granite now.
+          atS: 52.64
+          durationS: 1.88
+        - text: Count the patrol in the field.
+          atS: 54.9
+          durationS: 2.16
+        - text: Then count it again in the stone.
+          atS: 57.57
+          durationS: 2.18
+        - text: Nineteen out there.
+          atS: 60.36
+          durationS: 1.37
+        - text: Nineteen in here.
+          atS: 62.11
+          durationS: 1.48
+        - text: The record does not say whether anyone planned it that way.
+          atS: 64.28
+          durationS: 3.04
+        - text: But that is thirty-eight.
+          atS: 67.77
+          durationS: 2.17

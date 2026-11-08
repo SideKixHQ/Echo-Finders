@@ -9,7 +9,7 @@ at: { lat: 38.89962, lng: -77.02041 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 92
+durationS: 88
 visibility: at-hand
 certainty: documented
 minAge: 12
@@ -40,7 +40,7 @@ script: |
 
   Near the end of his own life, Johnson is reported to have called her execution a crime.
   He was the president who had declined to stop it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at number 604 H Street."
@@ -111,3 +111,68 @@ sources:
     url: https://www.nps.gov/anjo/learn/historyculture/mary-surratt.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-house-on-h-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 87.8
+    audioBytes: 1405221
+    transcript:
+      totalS: 87.8
+      lines:
+        - text: Look at number 604 H Street.
+          atS: 0
+          durationS: 2.43
+        - text: These days it is a restaurant and karaoke bar.
+          atS: 3.03
+          durationS: 2.88
+        - text: In the spring of 1865 it was a boarding house, owned by a widow named Mary Surratt.
+          atS: 6.35
+          durationS: 5.97
+        - text: Her son John was one of John Wilkes Booth's most capable conspirators.
+          atS: 12.83
+          durationS: 4.27
+        - text: Booth and his men often met here, to plan the kidnapping of President Lincoln and, in the end, his murder.
+          atS: 17.7
+          durationS: 6.5
+        - text: Two of them lodged here for a while.
+          atS: 24.9
+          durationS: 2.1
+        - text: Andrew Johnson, who became president when Lincoln died, called this house the nest that hatched the egg.
+          atS: 27.52
+          durationS: 6.74
+        - text: After the assassination, detectives came to arrest the people living here.
+          atS: 35.07
+          durationS: 4.32
+        - text: While they were at it, one of the conspirators, Lewis Powell, turned up at the door.
+          atS: 39.83
+          durationS: 4.99
+        - text: He had attacked the Secretary of State three days before, and had been wandering the city since.
+          atS: 45.43
+          durationS: 5.52
+        - text: They took him too.
+          atS: 51.55
+          durationS: 1.27
+        - text: Mary Surratt was tried by a military tribunal.
+          atS: 53.93
+          durationS: 2.97
+        - text: The case against her rested mainly on one witness, the man who leased her tavern in Maryland.
+          atS: 57.34
+          durationS: 5.66
+        - text: Five of the officers who tried her asked the president to spare her.
+          atS: 63.6
+          durationS: 3.58
+        - text: He refused.
+          atS: 67.42
+          durationS: 1.01
+        - text: She was hanged on the seventh of July 1865, the first woman executed by the federal government.
+          atS: 69.03
+          durationS: 6.06
+        - text: How much she knew is still argued over by historians.
+          atS: 75.6
+          durationS: 3.3
+        - text: Near the end of his own life, Johnson is reported to have called her execution a crime.
+          atS: 79.6
+          durationS: 5.05
+        - text: He was the president who had declined to stop it.
+          atS: 84.97
+          durationS: 2.8

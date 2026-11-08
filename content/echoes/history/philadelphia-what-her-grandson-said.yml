@@ -37,7 +37,7 @@ script: |
 pronunciations:
   - written: Canby
     say: KAN-bee
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "This small house on Arch Street is famous for one scene."

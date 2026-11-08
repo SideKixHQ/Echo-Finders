@@ -37,7 +37,7 @@ script: |
 pronunciations:
   - written: stript
     say: stripped
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look through the iron bars at the corner of Fifth and Arch."

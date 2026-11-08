@@ -9,7 +9,7 @@ at: { lat: 38.89588, lng: -77.03085 }
 triggerRadiusKm: 0.06
 category: built
 format: short
-durationS: 52
+durationS: 48
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   the White House in the other.
 
   The map is the promise. Lift your eyes, and you are standing in the city it turned into.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 pronunciations:
   - written: L'Enfant
@@ -68,3 +68,50 @@ sources:
     url: https://www.nps.gov/places/000/freedom-plaza.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-map-underfoot/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 47.9
+    audioBytes: 767834
+    transcript:
+      totalS: 47.9
+      lines:
+        - text: Look down.
+          atS: 0
+          durationS: 0.86
+        - text: You are standing on a map.
+          atS: 1.3
+          durationS: 1.43
+        - text: The dark lines in the stone are streets and avenues.
+          atS: 3.54
+          durationS: 3.45
+        - text: The curving edge is the shoreline of the Potomac.
+          atS: 7.31
+          durationS: 3.12
+        - text: Bronze plaques set into the pavement mark the places that matter.
+          atS: 11.04
+          durationS: 4.14
+        - text: It is the plan Pierre L'Enfant drew for this city in seventeen ninety-one.
+          atS: 15.79
+          durationS: 4.95
+        - text: It was laid into the stone of this plaza when the plaza opened in nineteen eighty.
+          atS: 21.18
+          durationS: 5.1
+        - text: Find Pennsylvania Avenue on the map.
+          atS: 26.88
+          durationS: 2.46
+        - text: Follow it to the Capitol at one end, and the President's house at the other.
+          atS: 29.72
+          durationS: 3.9
+        - text: Now look up.
+          atS: 34.23
+          durationS: 1.05
+        - text: The plaza was built so that you can see the Capitol in one direction, and the White House in the other.
+          atS: 35.65
+          durationS: 5.41
+        - text: The map is the promise.
+          atS: 41.67
+          durationS: 1.58
+        - text: Lift your eyes, and you are standing in the city it turned into.
+          atS: 43.85
+          durationS: 4.08

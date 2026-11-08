@@ -3598,7 +3598,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 66,
+    "durationS": 70,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3608,6 +3608,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Walk beside the polished wall, and watch the soldiers in the field appear in the stone.\n\nThere are nineteen of them, out on patrol.\n\nWhen the sculptor, Frank Gaylord, first showed his clay models, there were thirty-eight\nsoldiers. They were in the middle of a mission, under fire, in every kind of pose. The\nCommission of Fine Arts liked the photographs, and worried the figures would become too\nrealistic.\n\nWhat was finally built was nineteen.\n\nThe wall beside you carries the faces of the people behind the troops. Nurses,\nchaplains, sailors, supply crews. More than two thousand four hundred photographs went\ninto it. The architects wrote that as visitors walked down beside it, the etched faces\nwould mix with the reflections of the soldiers.\n\nSo look into the granite now. Count the patrol in the field. Then count it again in the\nstone.\n\nNineteen out there. Nineteen in here.\n\nThe record does not say whether anyone planned it that way.\n\nBut that is thirty-eight.\n",
     "teaser": "Walk beside the polished wall, and watch the soldiers in the field appear in the stone.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-nineteen-in-the-stone/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 69.9,
+        "audioBytes": 1120173
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
@@ -3615,14 +3623,7 @@ export const LIBRARY: readonly Echo[] = [
       "memorials",
       "korea"
     ],
-    "remoteness": 0.74,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-nineteen-in-the-stone",
-        "durationS": 66
-      }
-    ]
+    "remoteness": 0.74
   },
   {
     "id": "dc-no-props-no-serpents",
@@ -3638,7 +3639,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 61,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3648,20 +3649,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look under the horse.\n\nAndrew Jackson's horse is rearing. Its front hooves are in the air. Fifteen tons of\nbronze, balanced on the back legs.\n\nThe man who made it, Clark Mills, was a self-taught sculptor. He had never seen an\nequestrian statue.\n\nHe built a studio and a furnace near this park, and cast the whole thing in ten pieces,\nfour for the horse and six for Jackson. The horse alone took six castings before the\nfinal one was done, in December 1852.\n\nThe statue was unveiled on the eighth of January, eighteen fifty-three, the thirty-eighth\nanniversary of the Battle of New Orleans. A cheering crowd of fifteen thousand followed\nMills along Pennsylvania Avenue to the ceremony.\n\nIt was the first equestrian statue cast in the United States, made by a man who had\nnever seen one.\n\nLook under the horse again.\n",
     "teaser": "Look under the horse.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-no-props-no-serpents/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55,
+        "audioBytes": 881518
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
       "lafayette-square",
       "sculpture"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-no-props-no-serpents",
-        "durationS": 61
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "dc-priced-by-size",
@@ -3687,6 +3689,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the building behind the fountain. Upstairs, on the second floor, is a room of old\nbooks arranged in a slightly strange order.\n\nIn 1814 the British burned the Capitol, and with it the library of Congress. About three\nthousand books.\n\nThomas Jefferson, at Monticello, owned the largest private collection of books in the\ncountry. He offered to sell it, at whatever price Congress chose.\n\nThere were sharp debates. Some members complained that too many of the books were in\nforeign languages, or about subjects that had nothing to do with Congress. Jefferson had\nalready answered that. There was, he wrote, no subject to which a member of Congress may\nnot have occasion to refer.\n\nCongress bought them. Six thousand four hundred and eighty-seven volumes, for twenty-three\nthousand nine hundred and fifty dollars.\n\nThe price was not worked out by title, or by rarity. It was based on measurements of the\nsize of the books.\n\nOn Christmas Eve 1851, another fire in the Capitol destroyed nearly two thirds of them.\nThe room upstairs is the library rebuilt the way Jefferson arranged it, around some two\nthousand survivors.\n\nThe largest library in the world grew out of one man's bookshelves, priced by size.\n",
     "teaser": "Upstairs in this building is a room of old books in a slightly strange order.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-priced-by-size/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 82.2,
+        "audioBytes": 1317032
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
@@ -3694,14 +3704,7 @@ export const LIBRARY: readonly Echo[] = [
       "jefferson",
       "war-of-1812"
     ],
-    "remoteness": 0.11,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-priced-by-size",
-        "durationS": 82
-      }
-    ]
+    "remoteness": 0.11
   },
   {
     "id": "dc-seventy-six-years-round",
@@ -3767,7 +3770,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 82,
+    "durationS": 75,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3777,20 +3780,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Inside the rotunda, find the Declaration of Independence, and look closely at the ink.\n\nFor most of its life this sheet was not kept in the dark. It was a display piece. For\nyears it was on show in the Patent Office, a few blocks north of here, alongside George\nWashington's camp tent. In 1876 it went to Philadelphia for the Centennial Exhibition.\nThen it came back to a cabinet in the State Department's library.\n\nIn 1894 it was taken off display, because it was fading.\n\nIt spent the next quarter of a century in storage. In 1921 it went to the Library of\nCongress. After Pearl Harbor it went to Fort Knox. In 1951 the Library tried sealing it in\na case filled with helium.\n\nOn the thirteenth of December 1952 it came here, with the Constitution, in an armored\ncarrier escorted by tanks.\n\nUnder the display cases, the Archives had built a fifty-ton safe of steel and concrete,\nwith its own elevator. Every night the documents could be lowered into a vault, out of\nthe light, and raised again in the morning.\n\nAfter more than a century of being looked at, the first thing it got in its new home was\nsomewhere to hide.\n",
     "teaser": "Find the Declaration of Independence, and look closely at the ink.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-somewhere-to-hide/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.7,
+        "audioBytes": 1196660
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
       "national-archives",
       "declaration-of-independence"
     ],
-    "remoteness": 0.68,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-somewhere-to-hide",
-        "durationS": 82
-      }
-    ]
+    "remoteness": 0.68
   },
   {
     "id": "dc-the-ballroom-ward",
@@ -3806,7 +3810,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 77,
+    "durationS": 72,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3816,6 +3820,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the columns on the F Street front. On the sixth of March 1865, guests climbed\nto that portico for Abraham Lincoln's second inaugural ball.\n\nIt was the first time a government building had been used for one. The great hall\nupstairs was the largest empty room in the city for dancing.\n\nOne of the clerks in the building went up to look while it was being made ready. His name\nwas Walt Whitman, and he wrote down what he saw.\n\nEarlier in the war, this building had been a military hospital. Whitman remembered these\nsame rooms filled with the worst wounded of the war, brought in from Second Bull Run,\nAntietam and Fredericksburg.\n\nTonight, he wrote, beautiful women, perfumes, the violins' sweetness, the polka and the\nwaltz. Then, the amputation, the blue face, the groan, the glassy eye of the dying. And\nmany a mother's son amid strangers, passing away untended.\n\nBy midnight on the night of the ball, there were more than four thousand guests.\n\nThe building is an art museum now. Whitman saw both of its lives, in the same rooms.\n",
     "teaser": "Look up at the columns on the F Street front.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-ballroom-ward/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 72.3,
+        "audioBytes": 1157790
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
@@ -3824,14 +3836,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "whitman"
     ],
-    "remoteness": 0.59,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-the-ballroom-ward",
-        "durationS": 77
-      }
-    ]
+    "remoteness": 0.59
   },
   {
     "id": "dc-the-bow-in-the-corridor",
@@ -3927,7 +3932,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 75,
+    "durationS": 70,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3937,6 +3942,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand on the steps of the Jefferson Memorial and look at the cherry trees along the\nshore.\n\nIn November 1938, this ground was about to be cleared for the building behind you. Some\nof the cherry trees were in the way.\n\nOn the seventeenth, more than eighty women marched to the White House with a petition to\nsave the trees. When the President's secretary came out to take it, they chanted a poem\nat him. Trees, by Joyce Kilmer.\n\nThe next morning, about a hundred and fifty women came down to the Tidal Basin. They\nwrestled the shovels away from the workmen. They chained themselves to the trees. And\nthey chained a park police sergeant to the trees as well.\n\nThe work stopped, for a while.\n\nPresident Roosevelt called it a flimflam game, and threatened to have the women\ntransplanted along with the trees. The women withdrew, and construction began the next\nmonth.\n\nThe memorial was built. But part of the compromise was more cherry trees, planted along\nthis side of the basin, to frame it.\n\nThe women lost the memorial. The trees got this shore.\n",
     "teaser": "Stand on the steps of the Jefferson Memorial and look at the cherry trees along the shore.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-cherry-tree-rebellion/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 69.6,
+        "audioBytes": 1114322
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
@@ -3945,14 +3958,7 @@ export const LIBRARY: readonly Echo[] = [
       "protest",
       "jefferson-memorial"
     ],
-    "remoteness": 0.94,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-the-cherry-tree-rebellion",
-        "durationS": 75
-      }
-    ]
+    "remoteness": 0.94
   },
   {
     "id": "dc-the-engine-under-the-floor",
@@ -4008,7 +4014,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 72,
+    "durationS": 64,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4018,6 +4024,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand where the two walls meet, and look into the black stone.\n\nYou will see yourself, standing among the names.\n\nThe design was chosen in a competition with more than fourteen hundred entries. In May\n1981 it was announced that the winner was Maya Lin, a twenty-one-year-old architecture\nstudent at Yale.\n\nNo figures. No sculpture. Two long walls of polished black granite, angled so that one\nlines up with the Washington Monument and the other with the Lincoln Memorial.\n\nNow look at the top of the panel at the very center, on the east side. The names begin\nthere, with the earliest dead, and they run in the order people died, east along the\nwall to its far end. Then they pick up again at the far west end, and run back toward\nyou.\n\nSo the last names on the wall finish right here, beside the first.\n\nThe Park Service puts it plainly. The first are with the last.\n\nAnd in the stone, in the middle of all of them, is you.\n",
     "teaser": "Stand where the two walls meet, and look into the black stone.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-first-are-with-the-last/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 64.4,
+        "audioBytes": 1031566
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
@@ -4025,14 +4039,7 @@ export const LIBRARY: readonly Echo[] = [
       "memorials",
       "vietnam"
     ],
-    "remoteness": 0.59,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-the-first-are-with-the-last",
-        "durationS": 72
-      }
-    ]
+    "remoteness": 0.59
   },
   {
     "id": "dc-the-house-on-h-street",
@@ -4048,7 +4055,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 92,
+    "durationS": 88,
     "minAge": 12,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4058,6 +4065,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at number 604 H Street. These days it is a restaurant and karaoke bar.\n\nIn the spring of 1865 it was a boarding house, owned by a widow named Mary Surratt.\n\nHer son John was one of John Wilkes Booth's most capable conspirators. Booth and his men\noften met here, to plan the kidnapping of President Lincoln and, in the end, his murder.\nTwo of them lodged here for a while. Andrew Johnson, who became president when Lincoln\ndied, called this house the nest that hatched the egg.\n\nAfter the assassination, detectives came to arrest the people living here. While they\nwere at it, one of the conspirators, Lewis Powell, turned up at the door. He had attacked\nthe Secretary of State three days before, and had been wandering the city since. They took\nhim too.\n\nMary Surratt was tried by a military tribunal. The case against her rested mainly on one\nwitness, the man who leased her tavern in Maryland. Five of the officers who tried her\nasked the president to spare her. He refused.\n\nShe was hanged on the seventh of July 1865, the first woman executed by the federal\ngovernment. How much she knew is still argued over by historians.\n\nNear the end of his own life, Johnson is reported to have called her execution a crime.\nHe was the president who had declined to stop it.\n",
     "teaser": "Look at number 604 H Street. The ground floor is a restaurant and karaoke bar.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-house-on-h-street/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 87.8,
+        "audioBytes": 1405221
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
@@ -4065,14 +4080,7 @@ export const LIBRARY: readonly Echo[] = [
       "lincoln",
       "civil-war"
     ],
-    "remoteness": 0.68,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-the-house-on-h-street",
-        "durationS": 92
-      }
-    ]
+    "remoteness": 0.68
   },
   {
     "id": "dc-the-house-that-fired-back",
@@ -4088,7 +4096,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 80,
+    "durationS": 68,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4098,6 +4106,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Find the old brick house on the corner, tucked in beside the big Senate office building.\n\nIt is one of the oldest houses in Washington. But it is not quite the house that was\nfirst built here.\n\nThe first one went up in 1800. On the twenty-fourth of August 1814, the British army\ninvaded Washington.\n\nAccording to a claim the owner later filed with Congress, a group of Commodore Joshua\nBarney's men, retreating from the battle at Bladensburg, got into this house and shot at\nthe British troops coming up the street.\n\nThey killed several men. They also killed the horse of the British commander, General\nRoss.\n\nRoss's troops set the house on fire, and it was destroyed.\n\nThe house you are looking at was rebuilt on the same spot by 1820.\n\nA little over a century later, the National Woman's Party bought it, and campaigned for\nequal rights from here, just behind the Capitol.\n\nIn the 1960s, when the Senate office building next door was going up, the house was\nthreatened again. The Woman's Party lobbied to have it protected, and won.\n\nThis time, nobody had to fire a shot.\n",
     "teaser": "Find the old brick house on the corner, beside the big Senate office building.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-house-that-fired-back/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 68.1,
+        "audioBytes": 1090498
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
@@ -4105,14 +4121,7 @@ export const LIBRARY: readonly Echo[] = [
       "capitol-hill",
       "womens-rights"
     ],
-    "remoteness": 0.11,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-the-house-that-fired-back",
-        "durationS": 80
-      }
-    ]
+    "remoteness": 0.11
   },
   {
     "id": "dc-the-ladies-waiting-room",
@@ -4128,7 +4137,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 80,
+    "durationS": 71,
     "minAge": 12,
     "quality": 0.75,
     "visibility": "position-only",
@@ -4138,6 +4147,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand on Constitution Avenue at Sixth Street and look at the gallery in front of you.\n\nA railroad station stood here once, the Baltimore and Potomac depot. This avenue was\ncalled B Street then.\n\nAt about half past nine on the morning of the second of July, 1881, President James\nGarfield came here to catch a train north. He was walking through the ladies' waiting\nroom, arm in arm with his Secretary of State, when a man named Charles Guiteau shot him\ntwice.\n\nThe doctors probed for one of the bullets and could not find it. The country waited on\nevery bulletin from his doctors. He lived for eighty days. Poor medical treatment led to\nhis death on the nineteenth of September.\n\nHe was a faithful diarist. The entry for the first of July, the day before the shooting,\nwas the last he ever wrote.\n\nThe station is gone. In 1939, as this gallery was going up, a Washington columnist noted\nthat part of the enormous building would cover the site, and that very few visitors\nwould ever remember.\n\nSomewhere under the building in front of you, there was a waiting room.\n",
     "teaser": "Stand on Constitution Avenue at Sixth Street and look at the gallery in front of you.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-ladies-waiting-room/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 71.4,
+        "audioBytes": 1143997
+      }
+    ],
     "pronunciations": [
       {
         "written": "Guiteau",
@@ -4151,14 +4168,7 @@ export const LIBRARY: readonly Echo[] = [
       "presidents",
       "railways"
     ],
-    "remoteness": 0.64,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-the-ladies-waiting-room",
-        "durationS": 80
-      }
-    ]
+    "remoteness": 0.64
   },
   {
     "id": "dc-the-man-who-found-the-bolts",
@@ -4220,7 +4230,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 52,
+    "durationS": 48,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4230,6 +4240,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down. You are standing on a map.\n\nThe dark lines in the stone are streets and avenues. The curving edge is the shoreline of\nthe Potomac. Bronze plaques set into the pavement mark the places that matter.\n\nIt is the plan Pierre L'Enfant drew for this city in seventeen ninety-one. It was laid into\nthe stone of this plaza when the plaza opened in nineteen eighty.\n\nFind Pennsylvania Avenue on the map. Follow it to the Capitol at one end, and the\nPresident's house at the other.\n\nNow look up. The plaza was built so that you can see the Capitol in one direction, and\nthe White House in the other.\n\nThe map is the promise. Lift your eyes, and you are standing in the city it turned into.\n",
     "teaser": "Look down. You are standing on a map.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-map-underfoot/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 47.9,
+        "audioBytes": 767834
+      }
+    ],
     "pronunciations": [
       {
         "written": "L'Enfant",
@@ -4242,14 +4260,7 @@ export const LIBRARY: readonly Echo[] = [
       "pennsylvania-avenue",
       "lenfant"
     ],
-    "remoteness": 0.3,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-the-map-underfoot",
-        "durationS": 52
-      }
-    ]
+    "remoteness": 0.3
   },
   {
     "id": "dc-the-other-half-of-the-circle",
@@ -4265,7 +4276,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 88,
+    "durationS": 75,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4275,6 +4286,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand on Twelfth Street and look at the two buildings facing each other.\n\nOn one side, a federal building sweeps round in a great half circle. On the other stands\nthe Old Post Office, and its tower.\n\nThe curve was supposed to be a whole circle, modelled on the Place Vendome in Paris. When\nthe federal buildings here went up, around 1930, a matching curve was meant to be built\nacross the street, on the site of the Old Post Office. The tower was in the way.\n\nThe planners simply expected the old building to be demolished. Some walls of the new\nbuilding next to it were faced in plain red brick instead of limestone, because nobody\nthought they would be seen for long.\n\nThe Great Depression saved it the first time. As late as the 1960s, a study still called\nfor razing everything except the three hundred and fifteen foot clock tower.\n\nThis time a preservation campaign called Don't Tear It Down stepped in. The building\nbecame a landmark, and the plan to finish the circle was stopped.\n\nOn the Old Post Office side, only a short stretch of the curve was ever built.\n\nSo the circle across the street still stops halfway.\n",
     "teaser": "Stand on Twelfth Street and look at the two buildings facing each other.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-other-half-of-the-circle/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 75.1,
+        "audioBytes": 1202511
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
@@ -4282,14 +4301,7 @@ export const LIBRARY: readonly Echo[] = [
       "preservation",
       "federal-triangle"
     ],
-    "remoteness": 0.45,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-the-other-half-of-the-circle",
-        "durationS": 88
-      }
-    ]
+    "remoteness": 0.45
   },
   {
     "id": "dc-the-other-revere",
@@ -4305,7 +4317,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 63,
+    "durationS": 59,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4315,6 +4327,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the tower of St. John's Church, across H Street from the park.\n\nUp in that tower, there is a bell. It went up when the tower was added, between eighteen\ntwenty and eighteen twenty-two.\n\nThis is the church people call the Church of the Presidents. Benjamin Latrobe designed\nit. James Madison was given a pew, and he and the next five presidents worshipped here\nregularly.\n\nThe bell carries a maker's mark. It reads, Revere, Boston, eighteen twenty-two.\n\nNot Paul Revere. By then the family foundry had passed to his son, Joseph, and this is\nhis bell.\n\nA federal survey of the church says what it is for. It rings the hours of worship. And it is\nsounded on occasions of national interest.\n\nThe father is remembered for one night of raising the alarm. The son made something that\nhas been doing it here for two hundred years.\n",
     "teaser": "Look up at the tower of St. John's Church.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-other-revere/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 59.4,
+        "audioBytes": 951318
+      }
+    ],
     "pronunciations": [
       {
         "written": "Latrobe",
@@ -4327,14 +4347,7 @@ export const LIBRARY: readonly Echo[] = [
       "lafayette-square",
       "st-johns-church"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-the-other-revere",
-        "durationS": 63
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "dc-the-part-he-didnt-write",
@@ -4350,7 +4363,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 69,
+    "durationS": 65,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4360,6 +4373,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down at the landing, just below the top flight of steps.\n\nOne stone here marks a place. It marks where Martin Luther King Junior stood on the\ntwenty-eighth of August, 1963.\n\nIt was late afternoon. More than a quarter of a million people were out there. Many of\nthem had come a long way by bus and by train, and they had already sat through a long\nlist of speakers.\n\nKing had a prepared text. A promissory note. A bad check, come back marked insufficient\nfunds.\n\nHe was near the end of it, telling people to go home and keep up the fight, when a voice\ncalled out from just off to the side. It was his good friend, Mahalia Jackson.\n\nTell them about the dream, Martin.\n\nWhat came next was not on the page. He improvised it.\n\nStand on the landing and look out the way he did, down the length of the water toward\nthe Washington Monument.\n\nThe part of that speech everyone can still recite is the part he had not planned to say.\n",
     "teaser": "Look down at the landing, just below the top flight of steps.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-part-he-didnt-write/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 65.3,
+        "audioBytes": 1046612
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
@@ -4367,14 +4388,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-rights",
       "lincoln-memorial"
     ],
-    "remoteness": 0.72,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-the-part-he-didnt-write",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0.72
   },
   {
     "id": "dc-the-plaque-on-the-fence",
@@ -4390,7 +4404,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 78,
+    "durationS": 72,
     "minAge": 12,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4400,20 +4414,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Find the small bronze plaque on the fence in front of Blair House.\n\nIn the autumn of nineteen fifty, the White House was being rebuilt, and President Truman\nwas living here, across the street. On the afternoon of the first of November, he was\nresting upstairs.\n\nTwo Puerto Rican nationalists came to this house armed. One of them was later quoted as\nadmitting they had expected to shoot their way in. The White House police on duty shot\nback.\n\nPrivate Leslie Coffelt was forty years old. As he lay dying beside his post from two\nbullet wounds, he fired, and killed one of the attackers. Two other officers were hit,\nand recovered. The other attacker was wounded and taken. They never got through the door.\n\nThe plaque was dedicated in May nineteen fifty-two, by Truman himself. He said it\ncommemorated an event about which he did not like to think.\n\nSix years later, he walked past here with a writer from the Evening Star. He stopped and\nread the plaque. Then he pointed.\n\nHe was in a little sentry house, Truman said, that stood right there.\n",
     "teaser": "Find the small bronze plaque on the fence in front of Blair House.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-plaque-on-the-fence/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 72,
+        "audioBytes": 1153610
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
       "lafayette-square",
       "truman"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-the-plaque-on-the-fence",
-        "durationS": 78
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "dc-the-starting-line-came-later",
@@ -4429,7 +4444,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 64,
+    "durationS": 61,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4439,6 +4454,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the small granite post here, with a bronze compass on top.\n\nWalk round to the south face and read it. Point for the measurement of distances from\nWashington on highways of the United States.\n\nThis is zero.\n\nOn the seventh of July, 1919, an army motor convoy set out from this spot to cross the\ncontinent. It was the first transcontinental military motor convoy, and it went by the\nLincoln Highway. The east face says so.\n\nThe stone was not here to see them off. Congress authorized a permanent marker the\nfollowing year, and this one was presented to the city on the fourth of June, 1923.\n\nSo the starting line arrived four years after the start.\n\nThe Park Service chooses its words carefully. It calls this, symbolically, the\nofficial starting point for highway distances from Washington.\n\nEvery highway in the country, measured from a post you can walk around in a few steps.\n\nSymbolically.\n",
     "teaser": "Look at the small granite post here, with a bronze compass on top.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-starting-line-came-later/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 61.1,
+        "audioBytes": 978067
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
@@ -4446,14 +4469,7 @@ export const LIBRARY: readonly Echo[] = [
       "roads",
       "monuments"
     ],
-    "remoteness": 0.21,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-the-starting-line-came-later",
-        "durationS": 64
-      }
-    ]
+    "remoteness": 0.21
   },
   {
     "id": "dc-the-trees-that-came-second",
@@ -4469,7 +4485,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 79,
+    "durationS": 74,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4479,6 +4495,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Find the two old cherry trees by the large bronze plaque here.\n\nThey were planted on the twenty-seventh of March, 1912, by the First Lady, Helen Taft,\nand Viscountess Chinda, the wife of the Japanese ambassador. Only a few people watched.\nThe whole cherry blossom festival grew out of that small ceremony.\n\nBut these were not the first trees Tokyo sent.\n\nTwo years earlier, two thousand cherry trees had arrived in Washington, a first gift from\nJapan. Inspectors from the Department of Agriculture found them full of insects and\nnematodes, and diseased. To protect American growers, they had to go. The President gave\nhis consent, and in January 1910 the whole gift was burned.\n\nA local paper reported that about a dozen of the buggiest trees were kept back for\nstudy, with an entomologist standing guard, armed with a butterfly net and a cyanide\nbottle.\n\nTokyo's answer was to try again. Three thousand and twenty trees this time, grafted\nfrom a famous collection along a riverbank outside the city.\n\nThe first gift was burned.\n\nThese two trees are the reply.\n",
     "teaser": "Find the two old cherry trees by the large bronze plaque here.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-trees-that-came-second/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.3,
+        "audioBytes": 1189136
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
@@ -4486,14 +4510,7 @@ export const LIBRARY: readonly Echo[] = [
       "cherry-blossoms",
       "japan"
     ],
-    "remoteness": 0.69,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-the-trees-that-came-second",
-        "durationS": 79
-      }
-    ]
+    "remoteness": 0.69
   },
   {
     "id": "dc-the-word-was-waiting",
@@ -4550,7 +4567,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 62,
+    "durationS": 60,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4560,20 +4577,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the brick wing that runs back from Decatur House, along H Street.\n\nIt has been described in different ways.\n\nIn nineteen-oh-three, a newspaper story about this house put it plainly. On H Street, it\nsaid, is a long, low addition, formerly slave quarters.\n\nA federal survey of the building chose a gentler phrase. Grouped around the garden, it\nsays, are the original servants' quarters, stables and carriage houses.\n\nIn twenty eleven, historians began a new study of the wing. The report that came out of\nit, filed with that same federal survey, calls it the slave and service wing.\n\nNow turn around and look at the park. The National Park Service keeps a list of what that\nground has been used for. A race track. A graveyard. A slave market.\n\nDifferent names, the same wing. The newspaper had it right the first time.\n",
     "teaser": "Look at the brick wing that runs back from Decatur House along H Street.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-three-names-for-one-wing/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 59.9,
+        "audioBytes": 958841
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
       "lafayette-square",
       "slavery"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-three-names-for-one-wing",
-        "durationS": 62
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "dc-to-thee-we-sing",
@@ -4589,7 +4607,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 63,
+    "durationS": 60,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4599,6 +4617,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand at the foot of the steps and look up at the statue in the doorway.\n\nOn Easter Sunday, the ninth of April 1939, a singer stood up there with Lincoln at her\nback and a row of microphones in front of her.\n\nHer name was Marian Anderson. Toscanini had said a voice like hers came along once in a\nhundred years. She had already sung at the White House.\n\nShe could not sing at Constitution Hall, which is nearby. Its owners, the Daughters of\nthe American Revolution, barred Black performers, and they would not make an exception.\nA mostly white high school turned her down as well.\n\nSo these steps were offered instead. The concert was free. About seventy-five thousand\npeople came, of every race, and NBC radio carried it live across the country.\n\nShe opened with America. My country, 'tis of thee.\n\nThe song says, of thee I sing.\n\nShe sang, to thee we sing.\n",
     "teaser": "Stand at the foot of the steps and look up at the statue in the doorway.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-to-thee-we-sing/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 60,
+        "audioBytes": 960931
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
@@ -4607,14 +4633,7 @@ export const LIBRARY: readonly Echo[] = [
       "music",
       "lincoln-memorial"
     ],
-    "remoteness": 0.7,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-to-thee-we-sing",
-        "durationS": 63
-      }
-    ]
+    "remoteness": 0.7
   },
   {
     "id": "dc-where-the-money-ran-out",
@@ -4630,7 +4649,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 76,
+    "durationS": 72,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "landmark-visible",
@@ -4640,20 +4659,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the monument, about a third of the way.\n\nThere is a line. Below it the marble is one shade, and above it, another. Right at the\nline there is a narrow band of something browner.\n\nNobody designed that.\n\nThe first stones went up in 1848, paid for by a private society that never had enough\nmoney. By 1854 the society was bankrupt, and the work stopped at one hundred and\nfifty-six feet.\n\nThen it stayed that way. Through the Civil War and for more than twenty years, the\nmonument to the father of the country stood half built on the Mall.\n\nWhen the government finally took it over, the old quarry near Baltimore was no longer\navailable. The builders tried stone from Massachusetts. They had trouble with its color,\nlaid a few courses of it anyway, and then switched to a third quarry for everything above.\n\nThe stones never matched exactly, and the weather has been pulling them apart in color\never since.\n\nWhen it was finished, this was the tallest building in the world. And you can still see\nexactly where it ran out of money.\n",
     "teaser": "Look up at the monument, about a third of the way.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-where-the-money-ran-out/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 72.2,
+        "audioBytes": 1155700
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
       "national-mall",
       "monuments"
     ],
-    "remoteness": 0.52,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-where-the-money-ran-out",
-        "durationS": 76
-      }
-    ]
+    "remoteness": 0.52
   },
   {
     "id": "dc-where-the-war-ended",
@@ -4669,7 +4689,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 75,
+    "durationS": 69,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4679,6 +4699,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the curved front of the Octagon, the round bay with the door at its base.\n\nAbove that door is a round room. In the winter of eighteen fifteen, it was the\nPresident's study.\n\nOn the twenty-fourth of August, eighteen fourteen, British troops had burned the White\nHouse, the Capitol and other public buildings. James and Dolley Madison fled the city.\nWhen they came back a few weeks later, they needed somewhere to live.\n\nThis house had come through. Its resident was the French minister, and the British most\nlikely left it alone because of the French flag he flew. The Madisons moved in on the\neighth of September.\n\nThe war went on. On the eighth of January, Andrew Jackson's troops fought the Battle of\nNew Orleans.\n\nThen, on the seventeenth of February, in the round room above the door, the Treaty of\nGhent was signed, and the War of eighteen twelve was over.\n\nNew Orleans had been fought before the war was over. And the war that burned the\nPresident out of his house ended in somebody else's.\n",
     "teaser": "Look at the curved front of the Octagon, and the window above the door.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-where-the-war-ended/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 68.7,
+        "audioBytes": 1100947
+      }
+    ],
     "pronunciations": [
       {
         "written": "Ghent",
@@ -4691,14 +4719,7 @@ export const LIBRARY: readonly Echo[] = [
       "octagon",
       "war-of-1812"
     ],
-    "remoteness": 0.2,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-where-the-war-ended",
-        "durationS": 75
-      }
-    ]
+    "remoteness": 0.2
   },
   {
     "id": "dc-white-before-the-fire",
@@ -4714,7 +4735,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 83,
+    "durationS": 73,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4724,20 +4745,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look through the fence at the north front of the White House.\n\nThere is a story about that white paint, and people have been telling it for a long time.\nIn nineteen forty-nine, a Washington newspaper printed it as plain fact.\n\nIt goes like this. On the twenty-fourth of August, eighteen fourteen, British troops set\nthe house on fire. The walls were left stained with smoke. So the house was painted white\nto hide the stains, and that is how it got its name.\n\nIt is a good story. The dates do not fit it.\n\nThe National Park Service says the house was carrying the name White House from around\neighteen eleven. That is three years before the fire.\n\nThe fire itself was real. The outer walls stood, but they were so weakened that little of\nthe original building could be kept.\n\nAnd some of the scorched wood had one more journey to make. In nineteen fifty-two, a piece\nof White House wood, slightly scorched by the British fire, was presented to a British\nArmy training centre in England, in the form of a gavel. It came with a message of good\nwishes from President Truman.\n\nThis time, they were invited to take it.\n",
     "teaser": "Look through the fence at the north front of the White House.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-white-before-the-fire/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 73.2,
+        "audioBytes": 1172000
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
       "white-house",
       "war-of-1812"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-white-before-the-fire",
-        "durationS": 83
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "dc-written-in-the-dark",
@@ -4753,7 +4775,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 68,
+    "durationS": 62,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4763,20 +4785,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the windows of the Willard.\n\nIn November eighteen sixty-one, Julia Ward Howe was a guest at the hotel on this corner.\nThe Civil War had begun, and she had come to Washington with her husband to see the war\neffort for themselves, and to meet President Lincoln.\n\nOne night, she woke from a dream with a poem in her head. Years later, she described what\nshe did next.\n\nWith a sudden effort, she wrote, I sprang out of bed, and found in the dimness an old\nstump of a pen. I scrawled the verses almost without looking at the paper.\n\nThe Atlantic Monthly printed them in February. People sang them to the tune of the John\nBrown song, and they still do.\n\nThe building has changed. The old Willard was replaced at the turn of the century, on the\nsame corner, under the same name.\n\nThe song has not. You probably know how it begins. Mine eyes have seen the glory.\n\nShe wrote it without looking.\n",
     "teaser": "Look up at the windows of the Willard.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-written-in-the-dark/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 61.9,
+        "audioBytes": 991442
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
       "willard",
       "civil-war"
     ],
-    "remoteness": 0.22,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-written-in-the-dark",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0.22
   },
   {
     "id": "federal-hall-two-firsts",
@@ -7304,7 +7327,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 84,
+    "durationS": 80,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7314,6 +7337,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down the middle of Second Street. The road splits around a long, open shed on brick pillars. And at this end of it, facing Pine Street, stands a small building of its own.\n\nIt looks like part of the market. But the federal building survey does not file it under the market first. It files it under two fire companies: the Hope Hose Company number six, and the Fellowship Engine Company number twenty-nine.\n\nThe market behind it is the New Market. The first section, running south from Pine down the middle of Second, was built in seventeen forty-five, because people in this end of town complained that the old market was too far away. They did not want to cross Dock Creek to reach it.\n\nBy the eighteen thirties, a city guide called it the second market in Philadelphia, for its age and for its food, and it reached all the way to South Street.\n\nPhiladelphia's main street once had sheds like this down its middle too. So many that people stopped calling it High Street and called it Market Street, and in eighteen fifty-three the city made the name official.\n\nSix years later, the sheds on Market Street came down.\n\nSecond Street kept one. This is what Market Street used to look like.\n",
     "teaser": "A market in the middle of the road, with a firehouse on the end.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-a-firehouse-on-a-market/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 80.2,
+        "audioBytes": 1283595
+      }
+    ],
     "tags": [
       "philadelphia",
       "philadelphia-core",
@@ -7322,14 +7353,7 @@ export const LIBRARY: readonly Echo[] = [
       "firefighting",
       "head-house"
     ],
-    "remoteness": 0.21,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-a-firehouse-on-a-market",
-        "durationS": 84
-      }
-    ]
+    "remoteness": 0.21
   },
   {
     "id": "philadelphia-a-steeple-paid-by-lottery",
@@ -7345,7 +7369,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 52,
+    "durationS": 48,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7355,6 +7379,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the steeple of Christ Church.\n\nIt went up in the seventeen fifties, and from then on it could be picked out from all over the colonial city. A Philadelphia guidebook from nineteen twenty calls it the highest point in town at the time.\n\nSteeples are expensive. A congregation usually builds a steeple slowly, out of collections and bequests and patience.\n\nThis one was paid for with a lottery.\n\nTickets were sold to the public, and the money went into the tower and the spire. The tickets themselves came off the press in Benjamin Franklin's printing office. The same guidebook says Franklin sat on the committee that built the spire.\n\nSo when you look up at the landmark of colonial Philadelphia, you are looking at a great many losing tickets.\n",
     "teaser": "Look up at the steeple. It was paid for by gamblers.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-a-steeple-paid-by-lottery/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 48.4,
+        "audioBytes": 775357
+      }
+    ],
     "tags": [
       "philadelphia",
       "philadelphia-core",
@@ -7363,14 +7395,7 @@ export const LIBRARY: readonly Echo[] = [
       "franklin",
       "lotteries"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-a-steeple-paid-by-lottery",
-        "durationS": 52
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-as-much-as-anyone-knows",
@@ -7386,7 +7411,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 63,
+    "durationS": 65,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7396,6 +7421,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand in the courtyard and look up at the steel frame. It is the outline of a house, drawn in the air, with nothing filled in.\n\nBenjamin Franklin's house stood here. It was large for the city, and unusual, set back from Market Street in a garden court. Franklin died here in seventeen ninety. Twenty-two years later his heirs tore it down. The land had become too valuable to keep one house on it.\n\nWhen the Park Service investigated the court, archaeologists found the outline of the house and its cellar. But nobody could find enough evidence of what the house had actually looked like.\n\nSo the architects decided not to guess. They built a frame to the measurements recorded in Franklin's own property insurance, and left it empty.\n\nLook down through the viewing portals near your feet. You can see what is left of his cellar kitchen.\n\nEverything above that is exactly as much as anyone knows.\n",
     "teaser": "Look up at the steel frame. It is a house with nothing filled in.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-as-much-as-anyone-knows/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 65,
+        "audioBytes": 1040761
+      }
+    ],
     "tags": [
       "philadelphia",
       "philadelphia-core",
@@ -7404,14 +7437,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "archaeology"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-as-much-as-anyone-knows",
-        "durationS": 63
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-congress-started-at-the-tavern",
@@ -7427,7 +7453,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 64,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7437,6 +7463,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This is City Tavern, on the corner of Second and Walnut. Look at the brickwork. It is younger than it looks.\n\nThe tavern the founders knew was built in seventeen seventy-three and torn down in eighteen fifty-four. The Park Service built this one in nineteen seventy-five, as a copy.\n\nThe original was still new in the late summer of seventeen seventy-four, when delegates to the first Continental Congress began arriving in town, colony by colony.\n\nThey did not wait for anything official. On the first of September, John Adams wrote in his diary, all the gentlemen of the Congress who had arrived met at the new City Tavern and spent the evening together. Twenty-five had come. Virginia, North Carolina, Maryland and New York City were still on the road.\n\nFour days later they met here again, at ten in the morning, and walked up the street to choose a room.\n\nSo before the Continental Congress had a president, a secretary or a place to sit, it had a tavern. This corner.\n",
     "teaser": "Look at the brickwork. It is younger than it looks.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-congress-started-at-the-tavern/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 63.9,
+        "audioBytes": 1022789
+      }
+    ],
     "tags": [
       "philadelphia",
       "philadelphia-core",
@@ -7445,14 +7479,7 @@ export const LIBRARY: readonly Echo[] = [
       "taverns",
       "reconstruction"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-congress-started-at-the-tavern",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-dorothy-todd-widow",
@@ -7519,7 +7546,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 82,
+    "durationS": 81,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7529,6 +7556,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look through the iron fence on Pine Street. On the lawn there is a statue of William Penn, and behind him a long building of brick and marble, with an eight-sided cupola on each wing.\n\nThis is Pennsylvania Hospital. Benjamin Franklin and a doctor named Thomas Bond founded it in seventeen fifty-one, and it is the oldest hospital in the United States. The east wing went up in the seventeen fifties. Franklin wrote the words for its cornerstone. Piously founded, they say, for the relief of the sick and miserable.\n\nA hospital needs money. This one took it from nearly everyone. Private citizens gave. The preacher George Whitefield sent a large sum.\n\nThen, in seventeen fifty-nine, a company of actors put on Hamlet for the hospital's benefit.\n\nThat was thought quite shocking. Plays did not have the approval of the best people, and someone had to decide whether the hospital could take money earned on a stage.\n\nThey decided the hospital's charter gave them no right to refuse it.\n\nHamlet brought in forty-seven pounds, two shillings and sixpence.\n\nLook at the building again. The first hospital in the country. And a small part of its bills was paid by the Prince of Denmark.\n",
     "teaser": "The country's first hospital, and part of the bill was paid by the Prince of Denmark.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-hamlet-paid-for-the-hospital/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 81.2,
+        "audioBytes": 1300732
+      }
+    ],
     "pronunciations": [
       {
         "written": "George Whitefield",
@@ -7543,14 +7578,7 @@ export const LIBRARY: readonly Echo[] = [
       "benjamin-franklin",
       "theatre"
     ],
-    "remoteness": 0.19,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-hamlet-paid-for-the-hospital",
-        "durationS": 82
-      }
-    ]
+    "remoteness": 0.19
   },
   {
     "id": "philadelphia-he-left-the-year-blank",
@@ -7613,7 +7641,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 84,
+    "durationS": 70,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7623,6 +7651,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the old cruiser at the pier, and find her stern, the back end of the ship.\n\nIn October nineteen twenty-one, the Olympia took on a coffin at Le Havre, in France. Inside was an American soldier killed in the First World War, whose name nobody would ever know. He was going home to be buried at Arlington as the Unknown Soldier.\n\nThe crew had a problem. The casket could not go below. No hatch on the ship was large enough to pass it through without tipping it on end. So it was secured on deck, at the stern, and later moved up onto the after signal bridge.\n\nNear the Azores the ship ran into a storm so violent that the captain feared she might capsize. He asked the chaplain to pray. The men off watch gathered in the mess hall, holding on to the stanchions as she rolled, and prayed that the soldier high above them would get home.\n\nHe did. On the ninth of November the Olympia came up the Potomac with her flag at half mast, and the guns along the river fired salutes as she passed.\n\nHe crossed the whole Atlantic out in the weather, rather than be carried below standing on his end.\n",
     "teaser": "Find the back end of the ship. That is where he rode.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-no-hatch-wide-enough/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 70.2,
+        "audioBytes": 1124353
+      }
+    ],
     "pronunciations": [
       {
         "written": "Le Havre",
@@ -7641,14 +7677,7 @@ export const LIBRARY: readonly Echo[] = [
       "world-war-one",
       "ships"
     ],
-    "remoteness": 0.21,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-no-hatch-wide-enough",
-        "durationS": 84
-      }
-    ]
+    "remoteness": 0.21
   },
   {
     "id": "philadelphia-of-the-empire-eight",
@@ -7664,7 +7693,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 107,
+    "durationS": 103,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7674,6 +7703,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand on Arch Street and look up at the side of this small brick meeting house, high under the eaves. There is a stone tablet set into the wall.\n\nIt says the house was erected by general subscription, for the Free Quakers, in seventeen eighty-three. Then it gives a second date. Of the Empire, eight.\n\nQuakers do not fight. During the Revolution most Philadelphia Friends would not take up arms, pay war taxes, or swear an oath of allegiance. Some members broke with that. They served in the army, sat on the committee of safety, took seats in the legislature.\n\nThe Society of Friends disowned them. Read them out of meeting, as it was called.\n\nSo they started their own. They called themselves the Free Quakers, and people called them the Fighting Quakers. They paid for this house by subscription, and one of the people who gave was Benjamin Franklin, who was not a Quaker at all.\n\nAs for the Empire. A Philadelphia newspaper told a story about it in nineteen eighteen. When the stone was being set, someone asked one of the Free Quakers what the words meant. I tell thee, friend, he is supposed to have said, it is because our country is destined to be the great empire over all the world. That is the story, as the newspaper told it, well over a century later.\n\nAfter the war, some of the fighters made their peace with their old meetings and went back. By the eighteen thirties, services here had stopped.\n\nThey dated their building from the birth of a country. The country lasted. The congregation did not.\n",
     "teaser": "Look up under the eaves. The building gives two dates.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-of-the-empire-eight/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 103.1,
+        "audioBytes": 1649727
+      }
+    ],
     "tags": [
       "philadelphia",
       "philadelphia-core",
@@ -7683,14 +7720,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "religion"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-of-the-empire-eight",
-        "durationS": 107
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-ona-judge-walked-out",
@@ -7758,7 +7788,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 69,
+    "durationS": 62,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "landmark-visible",
@@ -7768,6 +7798,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look straight up the tower in front of you, past the clock, to the very top. There is a man standing up there.\n\nHe is William Penn, the founder of Pennsylvania and the planner of this city. From down here he looks about life size. He is thirty-seven feet tall, and he weighs more than fifty-three thousand pounds of bronze.\n\nThe last piece to go up was his head. It was set on his shoulders on the twenty-eighth of November, eighteen ninety-four, and the statue was complete.\n\nThe tower under him rises five hundred and forty-eight feet. Until nineteen oh nine it was the highest occupied building in the United States.\n\nIn the autumn of nineteen eighty-one, historians wrote this building up for the federal survey of American architecture. They wrote that no other building in the city exceeds its height.\n\nNow turn around, and look at the skyline to the west.\n\nCount the towers standing higher than Penn's hat.\n\nAll of them went up after that was written.\n",
     "teaser": "Look all the way up the tower. There is a man standing on top.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-penn-on-the-tower/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 62.3,
+        "audioBytes": 997293
+      }
+    ],
     "pronunciations": [
       {
         "written": "Dilworth Park",
@@ -7782,14 +7820,7 @@ export const LIBRARY: readonly Echo[] = [
       "skyline",
       "sculpture"
     ],
-    "remoteness": 0.55,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-penn-on-the-tower",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0.55
   },
   {
     "id": "philadelphia-read-aloud-in-the-yard",
@@ -7805,7 +7836,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 89,
+    "durationS": 86,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7815,6 +7846,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Face the back of the hall. This square was the State House yard, and you are standing in it.\n\nOn the fourth of July, seventeen seventy-six, Congress approved the Declaration of Independence in there. Almost nobody out here had heard a word of it.\n\nFour days later, on the eighth, the bells of the city called people into this yard. At noon a colonel named John Nixon stood up on a raised stage and read the whole thing out loud. It was the first public reading of the Declaration.\n\nJohn Adams wrote about it the next day. He called the platform that awful stage, and he meant awe inspiring. Three cheers, he wrote, rended the welkin. The bells rang all day, and almost all night. Even the chimers chimed away.\n\nIn the courtroom of the State House, above the judge's bench, hung the coat of arms of King George the Third. After the reading, a crowd took it down and burned it.\n\nAbout nine years later a painter named George Rutter made a new coat of arms for the same courtroom. The arms of Pennsylvania. It is one of the very few furnishings from that century still in the building, and it hangs in the courtroom now.\n\nThe king's arms came down and burned. Pennsylvania's are still on the wall.\n",
     "teaser": "Almost nobody out here had heard a word of it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-read-aloud-in-the-yard/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 85.5,
+        "audioBytes": 1369695
+      }
+    ],
     "pronunciations": [
       {
         "written": "welkin",
@@ -7833,14 +7872,7 @@ export const LIBRARY: readonly Echo[] = [
       "declaration-of-independence",
       "revolution"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-read-aloud-in-the-yard",
-        "durationS": 89
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-rising-or-setting",
@@ -7959,7 +7991,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 66,
+    "durationS": 64,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7969,6 +8001,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand in front of the columns on Third Street and look above the main door.\n\nThere is a carved marble panel there, and it is busier than it first appears. A baby wearing a helmet leans against a globe. One foot rests on a beehive. Beside him a horn of plenty spills out, not fruit, but coins. Behind him are tall ledgers, sailing ships and an American flag.\n\nThe baby is America. This was the Bank of the United States, and it opened in this building in seventeen ninety-seven. The whole front was designed to tell you what it was for. Even the keystone over the door is the head of Mercury, the Roman god of commerce.\n\nNow look at the globe again. One word is carved on it clearly. Africa.\n\nThe Park Service reads that word as the riches of that continent, human and mineral.\n\nThe panel is a celebration of a young country's money. It names one of the places the money came from.\n",
     "teaser": "Look above the main door. There is a baby in a helmet.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-the-baby-over-the-bank-door/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 63.5,
+        "audioBytes": 1017355
+      }
+    ],
     "tags": [
       "philadelphia",
       "philadelphia-core",
@@ -7977,14 +8017,7 @@ export const LIBRARY: readonly Echo[] = [
       "banking",
       "slavery"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-the-baby-over-the-bank-door",
-        "durationS": 66
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-the-bell-went-to-allentown",
@@ -8562,7 +8595,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 86,
+    "durationS": 79,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8572,6 +8605,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This building was John Wanamaker's department store. In the middle of it is a hall called the Grand Court, its galleries climbing floor over floor to a dome a hundred and fifty feet up.\n\nTwo things were set in that court that were not made in Philadelphia.\n\nThe first is a bronze eagle on a granite pedestal. The bird alone weighs two and a half thousand pounds. Every feather was shaped and fitted by hand, sixteen hundred on the head, five thousand on the whole eagle. It took a crew of skilled metalworkers more than five months.\n\nThe second is the organ, filling the south end of the court. When it was brought here it took thirteen freight cars. The store's own workshop then rebuilt it and made it bigger. By nineteen twenty-six it had more than eighteen thousand pipes, and its biggest wooden pipe was so wide that two men could crawl through it side by side.\n\nThe eagle and the organ have one thing in common. Both were made for the world's fair in St. Louis, in nineteen oh four. When the fair closed, they came east, to a shop.\n\nA world's fair is built to be taken down.\n\nPhiladelphia kept two of its best pieces, and put them in a shop.\n",
     "teaser": "A world's fair is built to be taken down. Philadelphia kept two pieces.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-two-things-from-st-louis/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 79.4,
+        "audioBytes": 1271474
+      }
+    ],
     "pronunciations": [
       {
         "written": "Wanamaker",
@@ -8586,14 +8627,7 @@ export const LIBRARY: readonly Echo[] = [
       "organ",
       "worlds-fair"
     ],
-    "remoteness": 0.44,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-two-things-from-st-louis",
-        "durationS": 86
-      }
-    ]
+    "remoteness": 0.44
   },
   {
     "id": "philadelphia-washington-left-last",
@@ -10305,8 +10339,8 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": false,
       "convictionStatus": "alleged",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-08",
+      "reviewedAt": "2026-11-08",
       "contentWarning": "This echo describes an assassination. No violence is described in detail."
     },
     "remoteness": 0.47,
@@ -17924,4 +17958,4 @@ export const ROUTES: readonly Route[] = [
 
 // What a person has really checked, as authored, before the demo override above. The
 // "true story" mark reads this, never the overridden status (`truth.ts` in the engine).
-export const VERIFIED_IDS: ReadonlySet<string> = new Set(["carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","kure-beach-five-shells-in-the-dark","the-lady-in-grey","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-gathering-before-the-coup","wilmington-the-government-taken-by-force","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-jail-fire-without-an-answer","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-they-tried-to-burn","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-press-that-the-mob-burned","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);
+export const VERIFIED_IDS: ReadonlySet<string> = new Set(["carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","dc-a-country-he-never-saw","dc-nineteen-in-the-stone","dc-no-props-no-serpents","dc-priced-by-size","dc-somewhere-to-hide","dc-the-ballroom-ward","dc-the-caretaker-heard-nothing","dc-the-cherry-tree-rebellion","dc-the-first-are-with-the-last","dc-the-house-on-h-street","dc-the-house-that-fired-back","dc-the-ladies-waiting-room","dc-the-man-who-found-the-bolts","dc-the-map-underfoot","dc-the-other-half-of-the-circle","dc-the-other-revere","dc-the-part-he-didnt-write","dc-the-plaque-on-the-fence","dc-the-starting-line-came-later","dc-the-trees-that-came-second","dc-the-word-was-waiting","dc-three-names-for-one-wing","dc-to-thee-we-sing","dc-where-the-money-ran-out","dc-where-the-war-ended","dc-white-before-the-fire","dc-written-in-the-dark","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","kure-beach-five-shells-in-the-dark","philadelphia-a-firehouse-on-a-market","philadelphia-a-steeple-paid-by-lottery","philadelphia-as-much-as-anyone-knows","philadelphia-congress-started-at-the-tavern","philadelphia-dorothy-todd-widow","philadelphia-hamlet-paid-for-the-hospital","philadelphia-he-left-the-year-blank","philadelphia-no-hatch-wide-enough","philadelphia-of-the-empire-eight","philadelphia-ona-judge-walked-out","philadelphia-penn-on-the-tower","philadelphia-read-aloud-in-the-yard","philadelphia-rising-or-setting","philadelphia-shoes-for-bob","philadelphia-the-baby-over-the-bank-door","philadelphia-the-bell-went-to-allentown","philadelphia-the-church-that-came-on-a-cart","philadelphia-the-church-you-have-to-find","philadelphia-the-congregation-of-the-dead","philadelphia-the-court-with-no-cases","philadelphia-the-crack-is-the-repair","philadelphia-the-first-vote-was-the-room","philadelphia-the-good-china","philadelphia-the-market-under-the-trains","philadelphia-the-room-upstairs","philadelphia-the-street-that-was-a-creek","philadelphia-two-rooms-one-roof","philadelphia-two-things-from-st-louis","philadelphia-washington-left-last","philadelphia-what-her-grandson-said","the-distance-across-the-street","the-lady-in-grey","the-prison-corridor","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-gathering-before-the-coup","wilmington-the-government-taken-by-force","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-jail-fire-without-an-answer","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-they-tried-to-burn","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-press-that-the-mob-burned","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);

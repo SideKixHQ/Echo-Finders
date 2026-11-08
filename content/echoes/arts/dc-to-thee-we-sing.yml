@@ -9,7 +9,7 @@ at: { lat: 38.88929, lng: -77.04888 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 63
+durationS: 60
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -37,7 +37,7 @@ script: |
   The song says, of thee I sing.
 
   She sang, to thee we sing.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "On Easter Sunday, the ninth of April 1939, a singer stood up there with Lincoln at her back and a row of microphones in front of her."
@@ -90,3 +90,56 @@ sources:
     url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/MarianAndersonLincolnMem.pdf
     retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-to-thee-we-sing/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 60
+    audioBytes: 960931
+    transcript:
+      totalS: 60
+      lines:
+        - text: Stand at the foot of the steps and look up at the statue in the doorway.
+          atS: 0
+          durationS: 3.71
+        - text: On Easter Sunday, the ninth of April 1939, a singer stood up there with Lincoln at her back and a row of microphones in front of her.
+          atS: 4.41
+          durationS: 8.25
+        - text: Her name was Marian Anderson.
+          atS: 13.05
+          durationS: 2.24
+        - text: Toscanini had said a voice like hers came along once in a hundred years.
+          atS: 15.99
+          durationS: 4.75
+        - text: She had already sung at the White House.
+          atS: 21.25
+          durationS: 2.32
+        - text: She could not sing at Constitution Hall, which is nearby.
+          atS: 24.01
+          durationS: 3.76
+        - text: Its owners, the Daughters of the American Revolution, barred Black performers, and they would not make an exception.
+          atS: 28.21
+          durationS: 7.08
+        - text: A mostly white high school turned her down as well.
+          atS: 35.8
+          durationS: 2.93
+        - text: So these steps were offered instead.
+          atS: 39.06
+          durationS: 1.96
+        - text: The concert was free.
+          atS: 41.34
+          durationS: 1.33
+        - text: About seventy-five thousand people came, of every race, and NBC radio carried it live across the country.
+          atS: 43.06
+          durationS: 7.27
+        - text: She opened with America.
+          atS: 50.65
+          durationS: 1.67
+        - text: My country, 'tis of thee.
+          atS: 52.77
+          durationS: 2.04
+        - text: The song says, of thee I sing.
+          atS: 54.98
+          durationS: 2.43
+        - text: She sang, to thee we sing.
+          atS: 57.62
+          durationS: 2.38

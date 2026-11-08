@@ -9,7 +9,7 @@ at: { lat: 38.89240, lng: -77.02305 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 82
+durationS: 75
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -39,7 +39,7 @@ script: |
 
   After more than a century of being looked at, the first thing it got in its new home was
   somewhere to hide.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Inside the rotunda, find the Declaration of Independence, and look closely at the ink."
@@ -92,3 +92,56 @@ sources:
     url: https://www.nps.gov/articles/-the-honor-of-your-company-is-requested-lincoln-s-second-inaugural-ball-at-the-patent-office.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-somewhere-to-hide/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.7
+    audioBytes: 1196660
+    transcript:
+      totalS: 74.7
+      lines:
+        - text: Inside the rotunda, find the Declaration of Independence, and look closely at the ink.
+          atS: 0
+          durationS: 5.16
+        - text: For most of its life this sheet was not kept in the dark.
+          atS: 5.76
+          durationS: 3.11
+        - text: It was a display piece.
+          atS: 9.2
+          durationS: 1.46
+        - text: For years it was on show in the Patent Office, a few blocks north of here, alongside George Washington's camp tent.
+          atS: 11.04
+          durationS: 6.83
+        - text: In 1876 it went to Philadelphia for the Centennial Exhibition.
+          atS: 18.38
+          durationS: 4.39
+        - text: Then it came back to a cabinet in the State Department's library.
+          atS: 23.15
+          durationS: 3.5
+        - text: In 1894 it was taken off display, because it was fading.
+          atS: 27.16
+          durationS: 3.8
+        - text: It spent the next quarter of a century in storage.
+          atS: 31.28
+          durationS: 2.8
+        - text: In 1921 it went to the Library of Congress.
+          atS: 34.52
+          durationS: 3.23
+        - text: After Pearl Harbor it went to Fort Knox.
+          atS: 38.13
+          durationS: 2.67
+        - text: In 1951 the Library tried sealing it in a case filled with helium.
+          atS: 41.24
+          durationS: 4.68
+        - text: On the thirteenth of December 1952 it came here, with the Constitution, in an armored carrier escorted by tanks.
+          atS: 46.3
+          durationS: 7.73
+        - text: Under the display cases, the Archives had built a fifty-ton safe of steel and concrete, with its own elevator.
+          atS: 54.73
+          durationS: 7.14
+        - text: Every night the documents could be lowered into a vault, out of the light, and raised again in the morning.
+          atS: 62.57
+          durationS: 5.53
+        - text: After more than a century of being looked at, the first thing it got in its new home was somewhere to hide.
+          atS: 68.79
+          durationS: 5.93

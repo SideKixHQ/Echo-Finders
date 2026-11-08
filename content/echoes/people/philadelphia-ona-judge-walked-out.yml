@@ -39,7 +39,7 @@ script: |
 pronunciations:
   - written: Ona Judge
     say: OH-nuh JUDJ
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "You are standing on the site of the President's House."

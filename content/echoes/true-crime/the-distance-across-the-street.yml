@@ -47,13 +47,13 @@ script: |
 
   Between them is an ordinary city street that briefly became the center of a national
   catastrophe.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: alleged
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-08"
+  reviewedAt: "2026-11-08"
   contentWarning: "This echo describes an assassination. No violence is described in detail."
 claims:
   - says: "That short distance became the final journey of Abraham Lincoln’s life."

@@ -33,7 +33,7 @@ script: |
 pronunciations:
   - written: Willings Alley
     say: WILL-ingz AL-ee
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Walk west down Willings Alley from Third Street"

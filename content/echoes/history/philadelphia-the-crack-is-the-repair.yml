@@ -33,7 +33,7 @@ script: |
 pronunciations:
   - written: thereof
     say: thair-OV
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Nobody wrote down when the bell first cracked."

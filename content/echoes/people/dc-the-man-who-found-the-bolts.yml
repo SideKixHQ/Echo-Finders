@@ -45,7 +45,7 @@ script: |
 pronunciations:
   - written: Reid
     say: REED
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "She is called Freedom."

@@ -9,7 +9,7 @@ at: { lat: 38.89950, lng: -77.03660 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 61
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -37,7 +37,7 @@ script: |
   never seen one.
 
   Look under the horse again.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Andrew Jackson's horse is rearing."
@@ -78,3 +78,47 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc0700/dc0784/data/dc0784data.pdf
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-no-props-no-serpents/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55
+    audioBytes: 881518
+    transcript:
+      totalS: 55
+      lines:
+        - text: Look under the horse.
+          atS: 0
+          durationS: 1.52
+        - text: Andrew Jackson's horse is rearing.
+          atS: 1.85
+          durationS: 2.19
+        - text: Its front hooves are in the air.
+          atS: 4.32
+          durationS: 1.85
+        - text: Fifteen tons of bronze, balanced on the back legs.
+          atS: 6.44
+          durationS: 3.32
+        - text: The man who made it, Clark Mills, was a self-taught sculptor.
+          atS: 10.21
+          durationS: 4.1
+        - text: He had never seen an equestrian statue.
+          atS: 14.63
+          durationS: 2.59
+        - text: He built a studio and a furnace near this park, and cast the whole thing in ten pieces, four for the horse and six for Jackson.
+          atS: 17.66
+          durationS: 8.35
+        - text: The horse alone took six castings before the final one was done, in December 1852.
+          atS: 26.52
+          durationS: 6.21
+        - text: The statue was unveiled on the eighth of January, eighteen fifty-three, the thirty-eighth anniversary of the Battle of New Orleans.
+          atS: 33.17
+          durationS: 7.29
+        - text: A cheering crowd of fifteen thousand followed Mills along Pennsylvania Avenue to the ceremony.
+          atS: 41.06
+          durationS: 5.34
+        - text: It was the first equestrian statue cast in the United States, made by a man who had never seen one.
+          atS: 46.92
+          durationS: 5.8
+        - text: Look under the horse again.
+          atS: 53.42
+          durationS: 1.61

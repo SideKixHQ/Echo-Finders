@@ -9,7 +9,7 @@ at: { lat: 38.89218, lng: -77.01990 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 80
+durationS: 71
 visibility: position-only
 certainty: documented
 minAge: 12
@@ -42,7 +42,7 @@ script: |
 pronunciations:
   - written: Guiteau
     say: gih-TOH
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "A railroad station stood here once, the Baltimore and Potomac depot."
@@ -105,3 +105,53 @@ sources:
     url: https://www.nps.gov/nama/learn/news/unveiling-of-president-garfield-assassination-waysides.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-ladies-waiting-room/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.4
+    audioBytes: 1143997
+    transcript:
+      totalS: 71.4
+      lines:
+        - text: Stand on Constitution Avenue at Sixth Street and look at the gallery in front of you.
+          atS: 0
+          durationS: 4.56
+        - text: A railroad station stood here once, the Baltimore and Potomac depot.
+          atS: 5.51
+          durationS: 4.57
+        - text: This avenue was called B Street then.
+          atS: 10.79
+          durationS: 2.24
+        - text: At about half past nine on the morning of the second of July, 1881, President James Garfield came here to catch a train north.
+          atS: 14.14
+          durationS: 7.8
+        - text: He was walking through the ladies' waiting room, arm in arm with his Secretary of State, when a man named Charles Guiteau shot him twice.
+          atS: 22.38
+          durationS: 7.69
+        - text: The doctors probed for one of the bullets and could not find it.
+          atS: 30.58
+          durationS: 3.33
+        - text: The country waited on every bulletin from his doctors.
+          atS: 34.42
+          durationS: 3.3
+        - text: He lived for eighty days.
+          atS: 38.16
+          durationS: 1.79
+        - text: Poor medical treatment led to his death on the nineteenth of September.
+          atS: 40.46
+          durationS: 3.82
+        - text: He was a faithful diarist.
+          atS: 44.72
+          durationS: 1.85
+        - text: The entry for the first of July, the day before the shooting, was the last he ever wrote.
+          atS: 46.89
+          durationS: 5.7
+        - text: The station is gone.
+          atS: 53.03
+          durationS: 1.5
+        - text: In 1939, as this gallery was going up, a Washington columnist noted that part of the enormous building would cover the site, and that very few visitors would ever remember.
+          atS: 54.97
+          durationS: 11.15
+        - text: Somewhere under the building in front of you, there was a waiting room.
+          atS: 67.42
+          durationS: 4

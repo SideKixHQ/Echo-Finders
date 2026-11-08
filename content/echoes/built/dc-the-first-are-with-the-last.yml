@@ -9,7 +9,7 @@ at: { lat: 38.89117, lng: -77.04785 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 72
+durationS: 64
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -38,7 +38,7 @@ script: |
   The Park Service puts it plainly. The first are with the last.
 
   And in the stone, in the middle of all of them, is you.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Stand where the two walls meet, and look into the black stone."
@@ -87,3 +87,53 @@ sources:
     url: https://www.nps.gov/vive/learn/historyculture/vvmoverview.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-first-are-with-the-last/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 64.4
+    audioBytes: 1031566
+    transcript:
+      totalS: 64.4
+      lines:
+        - text: Stand where the two walls meet, and look into the black stone.
+          atS: 0
+          durationS: 4.03
+        - text: You will see yourself, standing among the names.
+          atS: 4.63
+          durationS: 2.91
+        - text: The design was chosen in a competition with more than fourteen hundred entries.
+          atS: 8.5
+          durationS: 4.71
+        - text: In May 1981 it was announced that the winner was Maya Lin, a twenty-one-year-old architecture student at Yale.
+          atS: 13.91
+          durationS: 7.74
+        - text: No figures.
+          atS: 22.26
+          durationS: 0.91
+        - text: No sculpture.
+          atS: 23.49
+          durationS: 1
+        - text: Two long walls of polished black granite, angled so that one lines up with the Washington Monument and the other with the Lincoln Memorial.
+          atS: 25.09
+          durationS: 8.45
+        - text: Now look at the top of the panel at the very center, on the east side.
+          atS: 34.15
+          durationS: 4.2
+        - text: The names begin there, with the earliest dead, and they run in the order people died, east along the wall to its far end.
+          atS: 38.79
+          durationS: 7.57
+        - text: Then they pick up again at the far west end, and run back toward you.
+          atS: 46.87
+          durationS: 4.06
+        - text: So the last names on the wall finish right here, beside the first.
+          atS: 51.38
+          durationS: 3.85
+        - text: The Park Service puts it plainly.
+          atS: 55.74
+          durationS: 2.05
+        - text: The first are with the last.
+          atS: 58.4
+          durationS: 2.03
+        - text: And in the stone, in the middle of all of them, is you.
+          atS: 60.76
+          durationS: 3.66

@@ -9,7 +9,7 @@ at: { lat: 38.90025, lng: -77.03612 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 63
+durationS: 59
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,7 +36,7 @@ script: |
 
   The father is remembered for one night of raising the alarm. The son made something that
   has been doing it here for two hundred years.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 pronunciations:
   - written: Latrobe
@@ -94,3 +94,59 @@ sources:
     url: https://www.nps.gov/people/paul-revere.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-other-revere/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 59.4
+    audioBytes: 951318
+    transcript:
+      totalS: 59.4
+      lines:
+        - text: Look up at the tower of St.
+          atS: 0
+          durationS: 1.36
+        - text: John's Church, across H Street from the park.
+          atS: 1.38
+          durationS: 2.73
+        - text: Up in that tower, there is a bell.
+          atS: 4.71
+          durationS: 2.03
+        - text: It went up when the tower was added, between eighteen twenty and eighteen twenty-two.
+          atS: 7.35
+          durationS: 5.52
+        - text: This is the church people call the Church of the Presidents.
+          atS: 13.47
+          durationS: 3.18
+        - text: Benjamin Latrobe designed it.
+          atS: 17.03
+          durationS: 2.61
+        - text: James Madison was given a pew, and he and the next five presidents worshipped here regularly.
+          atS: 19.97
+          durationS: 5.49
+        - text: The bell carries a maker's mark.
+          atS: 26.06
+          durationS: 2.02
+        - text: It reads, Revere, Boston, eighteen twenty-two.
+          atS: 28.12
+          durationS: 4.35
+        - text: Not Paul Revere.
+          atS: 32.98
+          durationS: 1.44
+        - text: By then the family foundry had passed to his son, Joseph, and this is his bell.
+          atS: 35.03
+          durationS: 5.25
+        - text: A federal survey of the church says what it is for.
+          atS: 40.97
+          durationS: 3.16
+        - text: It rings the hours of worship.
+          atS: 44.73
+          durationS: 2.02
+        - text: And it is sounded on occasions of national interest.
+          atS: 47.26
+          durationS: 3.16
+        - text: The father is remembered for one night of raising the alarm.
+          atS: 50.93
+          durationS: 3.55
+        - text: The son made something that has been doing it here for two hundred years.
+          atS: 55
+          durationS: 4.4

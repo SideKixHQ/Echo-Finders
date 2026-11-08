@@ -35,7 +35,7 @@ script: |
 pronunciations:
   - written: Bethel
     say: BETH-ul
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look across Sixth Street at the church, and at the ground it stands on."

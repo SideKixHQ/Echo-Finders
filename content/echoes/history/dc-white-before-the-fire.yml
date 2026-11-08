@@ -9,7 +9,7 @@ at: { lat: 38.89880, lng: -77.03655 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 83
+durationS: 73
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -40,7 +40,7 @@ script: |
   wishes from President Truman.
 
   This time, they were invited to take it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In nineteen forty-nine, a Washington newspaper printed it as plain fact."
@@ -86,3 +86,62 @@ sources:
     url: https://www.loc.gov/resource/sn83045462/1952-08-22/ed-1/?sp=8
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-white-before-the-fire/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.2
+    audioBytes: 1172000
+    transcript:
+      totalS: 73.2
+      lines:
+        - text: Look through the fence at the north front of the White House.
+          atS: 0
+          durationS: 2.91
+        - text: There is a story about that white paint, and people have been telling it for a long time.
+          atS: 3.3
+          durationS: 4.63
+        - text: In nineteen forty-nine, a Washington newspaper printed it as plain fact.
+          atS: 8.63
+          durationS: 4.73
+        - text: It goes like this.
+          atS: 13.68
+          durationS: 1.32
+        - text: On the twenty-fourth of August, eighteen fourteen, British troops set the house on fire.
+          atS: 15.7
+          durationS: 5.33
+        - text: The walls were left stained with smoke.
+          atS: 21.54
+          durationS: 2.36
+        - text: So the house was painted white to hide the stains, and that is how it got its name.
+          atS: 24.14
+          durationS: 5.27
+        - text: It is a good story.
+          atS: 29.92
+          durationS: 1.29
+        - text: The dates do not fit it.
+          atS: 31.65
+          durationS: 1.87
+        - text: The National Park Service says the house was carrying the name White House from around eighteen eleven.
+          atS: 34.22
+          durationS: 6.09
+        - text: That is three years before the fire.
+          atS: 40.75
+          durationS: 2.3
+        - text: The fire itself was real.
+          atS: 43.38
+          durationS: 2.07
+        - text: The outer walls stood, but they were so weakened that little of the original building could be kept.
+          atS: 45.77
+          durationS: 5.64
+        - text: And some of the scorched wood had one more journey to make.
+          atS: 51.92
+          durationS: 3.47
+        - text: In nineteen fifty-two, a piece of White House wood, slightly scorched by the British fire, was presented to a British Army training centre in England, in the form of a gavel.
+          atS: 55.9
+          durationS: 10.59
+        - text: It came with a message of good wishes from President Truman.
+          atS: 67.09
+          durationS: 3.19
+        - text: This time, they were invited to take it.
+          atS: 70.73
+          durationS: 2.46

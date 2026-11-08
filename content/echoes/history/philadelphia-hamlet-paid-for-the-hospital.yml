@@ -9,7 +9,7 @@ at: { lat: 39.94448, lng: -75.15570 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 82
+durationS: 81
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,7 +35,7 @@ script: |
 pronunciations:
   - written: George Whitefield
     say: JORJ WIT-feeld
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look through the iron fence on Pine Street."
@@ -100,3 +100,68 @@ sources:
     url: https://www.loc.gov/item/19000869/
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-hamlet-paid-for-the-hospital/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.2
+    audioBytes: 1300732
+    transcript:
+      totalS: 81.2
+      lines:
+        - text: Look through the iron fence on Pine Street.
+          atS: 0
+          durationS: 2.72
+        - text: On the lawn there is a statue of William Penn, and behind him a long building of brick and marble, with an eight-sided cupola on each wing.
+          atS: 3.53
+          durationS: 9.24
+        - text: This is Pennsylvania Hospital.
+          atS: 13.21
+          durationS: 2.02
+        - text: Benjamin Franklin and a doctor named Thomas Bond founded it in seventeen fifty-one, and it is the oldest hospital in the United States.
+          atS: 15.74
+          durationS: 8.73
+        - text: The east wing went up in the seventeen fifties.
+          atS: 24.91
+          durationS: 2.82
+        - text: Franklin wrote the words for its cornerstone.
+          atS: 28.06
+          durationS: 2.64
+        - text: Piously founded, they say, for the relief of the sick and miserable.
+          atS: 30.94
+          durationS: 4.2
+        - text: A hospital needs money.
+          atS: 35.84
+          durationS: 1.67
+        - text: This one took it from nearly everyone.
+          atS: 37.95
+          durationS: 2.11
+        - text: Private citizens gave.
+          atS: 40.58
+          durationS: 1.68
+        - text: The preacher George Whitefield sent a large sum.
+          atS: 42.59
+          durationS: 3.88
+        - text: Then, in seventeen fifty-nine, a company of actors put on Hamlet for the hospital's benefit.
+          atS: 46.85
+          durationS: 5.74
+        - text: That was thought quite shocking.
+          atS: 53.28
+          durationS: 1.93
+        - text: Plays did not have the approval of the best people, and someone had to decide whether the hospital could take money earned on a stage.
+          atS: 56.02
+          durationS: 7.78
+        - text: They decided the hospital's charter gave them no right to refuse it.
+          atS: 64.31
+          durationS: 4.16
+        - text: Hamlet brought in forty-seven pounds, two shillings and sixpence.
+          atS: 68.79
+          durationS: 4.3
+        - text: Look at the building again.
+          atS: 73.47
+          durationS: 1.27
+        - text: The first hospital in the country.
+          atS: 75.06
+          durationS: 1.91
+        - text: And a small part of its bills was paid by the Prince of Denmark.
+          atS: 77.22
+          durationS: 4.01

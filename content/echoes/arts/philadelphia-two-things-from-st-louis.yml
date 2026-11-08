@@ -9,7 +9,7 @@ at: { lat: 39.95190, lng: -75.16235 }
 triggerRadiusKm: 0.05
 category: arts
 format: short
-durationS: 86
+durationS: 79
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
 pronunciations:
   - written: Wanamaker
     say: WAH-nuh-may-ker
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "This building was John Wanamaker's department store."
@@ -100,3 +100,62 @@ sources:
     url: https://www.loc.gov/item/2010630086/
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-two-things-from-st-louis/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 79.4
+    audioBytes: 1271474
+    transcript:
+      totalS: 79.4
+      lines:
+        - text: This building was John Wanamaker's department store.
+          atS: 0
+          durationS: 3.35
+        - text: In the middle of it is a hall called the Grand Court, its galleries climbing floor over floor to a dome a hundred and fifty feet up.
+          atS: 3.87
+          durationS: 8.06
+        - text: Two things were set in that court that were not made in Philadelphia.
+          atS: 12.37
+          durationS: 3.65
+        - text: The first is a bronze eagle on a granite pedestal.
+          atS: 16.82
+          durationS: 3.05
+        - text: The bird alone weighs two and a half thousand pounds.
+          atS: 20.69
+          durationS: 3.36
+        - text: Every feather was shaped and fitted by hand, sixteen hundred on the head, five thousand on the whole eagle.
+          atS: 24.74
+          durationS: 7.26
+        - text: It took a crew of skilled metalworkers more than five months.
+          atS: 32.81
+          durationS: 3.73
+        - text: The second is the organ, filling the south end of the court.
+          atS: 37.14
+          durationS: 3.8
+        - text: When it was brought here it took thirteen freight cars.
+          atS: 41.63
+          durationS: 2.89
+        - text: The store's own workshop then rebuilt it and made it bigger.
+          atS: 45.03
+          durationS: 3.39
+        - text: By nineteen twenty-six it had more than eighteen thousand pipes, and its biggest wooden pipe was so wide that two men could crawl through it side by side.
+          atS: 48.94
+          durationS: 9.81
+        - text: The eagle and the organ have one thing in common.
+          atS: 59.35
+          durationS: 2.77
+        - text: Both were made for the world's fair in St.
+          atS: 62.45
+          durationS: 2.35
+        - text: Louis, in nineteen oh four.
+          atS: 64.82
+          durationS: 2.34
+        - text: When the fair closed, they came east, to a shop.
+          atS: 67.77
+          durationS: 3.41
+        - text: A world's fair is built to be taken down.
+          atS: 71.56
+          durationS: 2.93
+        - text: Philadelphia kept two of its best pieces, and put them in a shop.
+          atS: 75
+          durationS: 4.41

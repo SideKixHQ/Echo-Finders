@@ -9,7 +9,7 @@ at: { lat: 38.88669, lng: -77.04122 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 79
+durationS: 74
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -40,7 +40,7 @@ script: |
   The first gift was burned.
 
   These two trees are the reply.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Find the two old cherry trees by the large bronze plaque here."
@@ -102,3 +102,53 @@ sources:
     url: https://www.loc.gov/resource/sn83045433/1910-01-30/ed-1/?sp=2
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-trees-that-came-second/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.3
+    audioBytes: 1189136
+    transcript:
+      totalS: 74.3
+      lines:
+        - text: Find the two old cherry trees by the large bronze plaque here.
+          atS: 0
+          durationS: 3.74
+        - text: They were planted on the twenty-seventh of March, 1912, by the First Lady, Helen Taft, and Viscountess Chinda, the wife of the Japanese ambassador.
+          atS: 4.34
+          durationS: 11.16
+        - text: Only a few people watched.
+          atS: 16.8
+          durationS: 1.79
+        - text: The whole cherry blossom festival grew out of that small ceremony.
+          atS: 19.03
+          durationS: 3.93
+        - text: But these were not the first trees Tokyo sent.
+          atS: 23.34
+          durationS: 2.84
+        - text: Two years earlier, two thousand cherry trees had arrived in Washington, a first gift from Japan.
+          atS: 26.78
+          durationS: 6.18
+        - text: Inspectors from the Department of Agriculture found them full of insects and nematodes, and diseased.
+          atS: 33.56
+          durationS: 5.7
+        - text: To protect American growers, they had to go.
+          atS: 39.59
+          durationS: 2.77
+        - text: The President gave his consent, and in January 1910 the whole gift was burned.
+          atS: 43.32
+          durationS: 5.68
+        - text: A local paper reported that about a dozen of the buggiest trees were kept back for study, with an entomologist standing guard, armed with a butterfly net and a cyanide bottle.
+          atS: 49.81
+          durationS: 10.11
+        - text: Tokyo's answer was to try again.
+          atS: 60.87
+          durationS: 2.21
+        - text: Three thousand and twenty trees this time, grafted from a famous collection along a riverbank outside the city.
+          atS: 63.77
+          durationS: 6.21
+        - text: The first gift was burned.
+          atS: 70.31
+          durationS: 1.71
+        - text: These two trees are the reply.
+          atS: 72.34
+          durationS: 1.92

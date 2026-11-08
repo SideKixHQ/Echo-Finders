@@ -9,7 +9,7 @@ at: { lat: 39.94300, lng: -75.14533 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 84
+durationS: 80
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   Six years later, the sheds on Market Street came down.
 
   Second Street kept one. This is what Market Street used to look like.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look down the middle of Second Street."
@@ -97,3 +97,56 @@ sources:
     url: https://www.loc.gov/item/01010570/
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-a-firehouse-on-a-market/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.2
+    audioBytes: 1283595
+    transcript:
+      totalS: 80.2
+      lines:
+        - text: Look down the middle of Second Street.
+          atS: 0
+          durationS: 1.96
+        - text: The road splits around a long, open shed on brick pillars.
+          atS: 2.4
+          durationS: 4.04
+        - text: And at this end of it, facing Pine Street, stands a small building of its own.
+          atS: 6.83
+          durationS: 5.39
+        - text: It looks like part of the market.
+          atS: 12.6
+          durationS: 2.02
+        - text: But the federal building survey does not file it under the market first.
+          atS: 15.13
+          durationS: 4.07
+        - text: "It files it under two fire companies: the Hope Hose Company number six, and the Fellowship Engine Company number twenty-nine."
+          atS: 19.45
+          durationS: 8.07
+        - text: The market behind it is the New Market.
+          atS: 27.9
+          durationS: 2.69
+        - text: The first section, running south from Pine down the middle of Second, was built in seventeen forty-five, because people in this end of town complained that the old market was too far away.
+          atS: 31.03
+          durationS: 11.1
+        - text: They did not want to cross Dock Creek to reach it.
+          atS: 42.74
+          durationS: 3.01
+        - text: By the eighteen thirties, a city guide called it the second market in Philadelphia, for its age and for its food, and it reached all the way to South Street.
+          atS: 46.55
+          durationS: 9.39
+        - text: Philadelphia's main street once had sheds like this down its middle too.
+          atS: 56.55
+          durationS: 4.2
+        - text: So many that people stopped calling it High Street and called it Market Street, and in eighteen fifty-three the city made the name official.
+          atS: 61.36
+          durationS: 8.1
+        - text: Six years later, the sheds on Market Street came down.
+          atS: 70.41
+          durationS: 3.8
+        - text: Second Street kept one.
+          atS: 74.91
+          durationS: 1.82
+        - text: This is what Market Street used to look like.
+          atS: 77.33
+          durationS: 2.82

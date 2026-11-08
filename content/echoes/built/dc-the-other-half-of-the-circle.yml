@@ -9,7 +9,7 @@ at: { lat: 38.89400, lng: -77.02830 }
 triggerRadiusKm: 0.05
 category: built
 format: short
-durationS: 88
+durationS: 75
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -39,7 +39,7 @@ script: |
   On the Old Post Office side, only a short stretch of the curve was ever built.
 
   So the circle across the street still stops halfway.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Stand on Twelfth Street and look at the two buildings facing each other."
@@ -87,3 +87,53 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc0700/dc0747/data/dc0747data.pdf
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-other-half-of-the-circle/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.1
+    audioBytes: 1202511
+    transcript:
+      totalS: 75.1
+      lines:
+        - text: Stand on Twelfth Street and look at the two buildings facing each other.
+          atS: 0
+          durationS: 3.97
+        - text: On one side, a federal building sweeps round in a great half circle.
+          atS: 4.78
+          durationS: 4.38
+        - text: On the other stands the Old Post Office, and its tower.
+          atS: 9.67
+          durationS: 3.74
+        - text: The curve was supposed to be a whole circle, modelled on the Place Vendome in Paris.
+          atS: 14.22
+          durationS: 5.21
+        - text: When the federal buildings here went up, around 1930, a matching curve was meant to be built across the street, on the site of the Old Post Office.
+          atS: 20.13
+          durationS: 9.14
+        - text: The tower was in the way.
+          atS: 29.65
+          durationS: 1.59
+        - text: The planners simply expected the old building to be demolished.
+          atS: 31.63
+          durationS: 3.36
+        - text: Some walls of the new building next to it were faced in plain red brick instead of limestone, because nobody thought they would be seen for long.
+          atS: 35.22
+          durationS: 8.17
+        - text: The Great Depression saved it the first time.
+          atS: 44.35
+          durationS: 2.59
+        - text: As late as the 1960s, a study still called for razing everything except the three hundred and fifteen foot clock tower.
+          atS: 47.45
+          durationS: 7.67
+        - text: This time a preservation campaign called Don't Tear It Down stepped in.
+          atS: 55.94
+          durationS: 4.61
+        - text: The building became a landmark, and the plan to finish the circle was stopped.
+          atS: 61.24
+          durationS: 4.53
+        - text: On the Old Post Office side, only a short stretch of the curve was ever built.
+          atS: 66.37
+          durationS: 4.7
+        - text: So the circle across the street still stops halfway.
+          atS: 71.68
+          durationS: 3.41
