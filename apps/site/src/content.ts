@@ -213,7 +213,7 @@ export const home = {
         body: 'Every region, every Echo, as new places open. Renews yearly; cancel any time.',
       },
     ],
-    region: 'Now open: the Cape Fear Coast — Wilmington, Wrightsville Beach, Carolina Beach, Kure Beach, Fort Fisher, Southport, Oak Island, and Topsail.',
+    region: 'Now open: the Cape Fear Coast (Wilmington, Wrightsville Beach, Carolina Beach, Kure Beach, Fort Fisher, Southport, Oak Island, and Topsail), Washington, DC, and Philadelphia. Each region is its own pass.',
     note: 'Prices in US dollars. Payments by Stripe.',
     cta: 'Start listening free',
   },

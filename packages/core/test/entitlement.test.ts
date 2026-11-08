@@ -109,6 +109,14 @@ describe("the two plans", () => {
     expect(cityAt(BLUE_RIDGE)).toBeNull();
   });
 
+  it("sells passes in Washington and Philadelphia, and keeps their neighbours out", () => {
+    expect(cityAt({ lat: 38.8977, lng: -77.0365 })?.id).toBe("washington-dc"); // the White House
+    expect(cityAt({ lat: 38.8048, lng: -77.0469 })?.id).toBe("washington-dc"); // Old Town Alexandria
+    expect(cityAt({ lat: 39.9496, lng: -75.1503 })?.id).toBe("philadelphia"); // Independence Hall
+    expect(cityAt({ lat: 39.2904, lng: -76.6122 })).toBeNull(); // Baltimore
+    expect(cityAt({ lat: 39.7391, lng: -75.5398 })).toBeNull(); // Wilmington, Delaware
+  });
+
   it("opens every echo in the city a City Pass was bought for, and only there", () => {
     expect(mayHearAnother(NEW_YORK, spent, "new", BATTERY, NOW)).toBe(true);
     expect(mayHearAnother(NEW_YORK, spent, "new", BLUE_RIDGE, NOW)).toBe(false);
