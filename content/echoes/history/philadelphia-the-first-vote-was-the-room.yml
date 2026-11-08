@@ -9,7 +9,7 @@ at: { lat: 39.94845, lng: -75.14725 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 83
+durationS: 82
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -109,3 +109,62 @@ sources:
     url: https://www.loc.gov/item/pa1131/
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-first-vote-was-the-room/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.7
+    audioBytes: 1314106
+    transcript:
+      totalS: 81.7
+      lines:
+        - text: Look down the court from Chestnut Street.
+          atS: 0
+          durationS: 2.31
+        - text: At the end of it is a small brick hall with a cupola on top.
+          atS: 2.75
+          durationS: 3.88
+        - text: It was built by a guild of carpenters, and the guild still owns it.
+          atS: 7.07
+          durationS: 4.38
+        - text: On the fifth of September seventeen seventy-four, the delegates to the first Continental Congress gathered in the city with a choice to make.
+          atS: 12.4
+          durationS: 7.56
+        - text: The Speaker of the Pennsylvania Assembly, Joseph Galloway, had offered them the State House.
+          atS: 21.07
+          durationS: 5.61
+        - text: The carpenters had offered their hall.
+          atS: 27.19
+          durationS: 2.14
+        - text: They walked here first, to take a look.
+          atS: 29.77
+          durationS: 2.41
+        - text: John Adams wrote that the general cry was that this was a good room.
+          atS: 33.3
+          durationS: 3.7
+        - text: One delegate, James Duane, argued that if the State House was just as convenient, it ought to be preferred.
+          atS: 37.6
+          durationS: 8.02
+        - text: It was a public building, he said, and this was a private one, and the Speaker deserved the courtesy.
+          atS: 46.07
+          durationS: 5.83
+        - text: The question was called anyway.
+          atS: 52.17
+          durationS: 2.05
+        - text: A great majority chose the carpenters.
+          atS: 54.4
+          durationS: 2.72
+        - text: That same day Galloway wrote to William Franklin that Congress had met at Carpenters' Hall, notwithstanding the offer of a much more proper place.
+          atS: 57.45
+          durationS: 8.44
+        - text: He suspected it had all been settled privately, out of doors, before anyone walked over.
+          atS: 66.49
+          durationS: 5.68
+        - text: Only after that vote did they choose a president.
+          atS: 72.86
+          durationS: 2.84
+        - text: The Continental Congress began by deciding where to sit.
+          atS: 76.41
+          durationS: 3.37
+        - text: It chose the builders.
+          atS: 80.16
+          durationS: 1.58

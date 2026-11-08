@@ -9,7 +9,7 @@ at: { lat: 39.94935, lng: -75.15030 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 84
+durationS: 82
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -91,3 +91,74 @@ sources:
     url: https://www.loc.gov/item/16006838/
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-crack-is-the-repair/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.9
+    audioBytes: 1311181
+    transcript:
+      totalS: 81.9
+      lines:
+        - text: Find the bell, and look at the crack.
+          atS: 0
+          durationS: 2.13
+        - text: It is wide and dark, and it could be the best known flaw in the country.
+          atS: 2.3
+          durationS: 4.07
+        - text: Now look along its edges.
+          atS: 6.58
+          durationS: 1.57
+        - text: They are not clean breaks.
+          atS: 8.28
+          durationS: 1.61
+        - text: They are a row of little round scallops.
+          atS: 10.07
+          durationS: 2.46
+        - text: Nobody wrote down when the bell first cracked.
+          atS: 12.77
+          durationS: 2.47
+        - text: The likeliest answer is the early eighteen forties, after almost ninety years of hard use.
+          atS: 15.39
+          durationS: 5.86
+        - text: A thin split, easy to miss.
+          atS: 21.35
+          durationS: 2.18
+        - text: In eighteen forty-six the city decided to repair the bell before Washington's birthday.
+          atS: 23.78
+          durationS: 5.07
+        - text: So metal workers drilled out the thin crack and widened it on purpose, to stop it spreading and to bring the tone back.
+          atS: 29.03
+          durationS: 7.34
+        - text: Those scallops are their drill holes.
+          atS: 36.8
+          durationS: 2.46
+        - text: The Park Service counts more than forty of them.
+          atS: 39.78
+          durationS: 2.65
+        - text: It did not work.
+          atS: 43.12
+          durationS: 1.16
+        - text: A newspaper, the Public Ledger, reported that the bell had split again.
+          atS: 45.09
+          durationS: 4.86
+        - text: The second crack runs up through the word Liberty, and nobody alive has heard this bell ring freely.
+          atS: 50.66
+          durationS: 6.88
+        - text: By then it had a new name.
+          atS: 58.49
+          durationS: 2.04
+        - text: In eighteen thirty-five an abolitionist paper had called it the Liberty Bell, for the verse cast around its top.
+          atS: 61.05
+          durationS: 7.36
+        - text: Proclaim liberty throughout all the land, unto all the inhabitants thereof.
+          atS: 69.22
+          durationS: 4.98
+        - text: The name took years to catch on.
+          atS: 75.01
+          durationS: 2.12
+        - text: So the famous crack is not the damage.
+          atS: 77.65
+          durationS: 2.61
+        - text: It is the repair.
+          atS: 80.64
+          durationS: 1.23

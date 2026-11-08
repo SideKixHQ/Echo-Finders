@@ -3553,7 +3553,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 73,
+    "durationS": 74,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3563,6 +3563,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Face the north door of the red castle.\n\nInside, there is a small crypt with a sarcophagus in it. The man buried there paid for\nall of this.\n\nHis name was James Smithson. He was an English scientist, the natural son of a duke, and\nhe was never given a title. When he died, he left his entire fortune to the United\nStates, to found an institution in Washington under his name.\n\nHe had never been here. He never visited the country in his life.\n\nHe died in Genoa in 1829 and was buried on a hill there, in a small British cemetery.\nBy the turn of the century a stone quarry was eating the hill away.\n\nSo in 1904 one of the Smithsonian's regents, Alexander Graham Bell, went to Genoa at his\nown expense and brought the body back across the Atlantic.\n\nA Washington paper put it neatly a few years later. That voyage was the first time\nSmithson ever had personal contact with these shores.\n\nHe gave everything to a country he had never seen.\n\nHe got here seventy-five years after he died.\n",
     "teaser": "Face the north door of the red castle.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-a-country-he-never-saw/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.3,
+        "audioBytes": 1190808
+      }
+    ],
     "pronunciations": [
       {
         "written": "Genoa",
@@ -3575,14 +3583,7 @@ export const LIBRARY: readonly Echo[] = [
       "national-mall",
       "smithsonian"
     ],
-    "remoteness": 0.71,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-a-country-he-never-saw",
-        "durationS": 73
-      }
-    ]
+    "remoteness": 0.71
   },
   {
     "id": "dc-nineteen-in-the-stone",
@@ -3891,7 +3892,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 80,
+    "durationS": 65,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3903,20 +3904,21 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "Look at the old brick walls of the Octagon from the Eighteenth Street side.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven. The only source is an 1897 newspaper account of what people claimed; no supernatural claim is established, and the caretaker's denial is quoted from the same article.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/dc-the-caretaker-heard-nothing/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 65.3,
+        "audioBytes": 1045776
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
       "octagon",
       "ghosts"
     ],
-    "remoteness": 0.19,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/dc-the-caretaker-heard-nothing",
-        "durationS": 80
-      }
-    ]
+    "remoteness": 0.19
   },
   {
     "id": "dc-the-cherry-tree-rebellion",
@@ -4194,6 +4196,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up past the dome, to the bronze figure standing on the very top.\n\nShe is called Freedom. She is nineteen and a half feet tall, and she weighs about fifteen\nthousand pounds.\n\nBefore she was bronze, she was plaster. The sculptor, Thomas Crawford, made the plaster\nmodel in his studio in Rome, and died before it left. It crossed the Atlantic in six\ncrates. Here, an Italian craftsman put the pieces together so cleverly that nobody could\nsee the joints.\n\nThen it had to come apart again, to be cast. By one account, the craftsman refused to\nseparate it unless he was paid a great deal more. Only he knew where the bolts were\nhidden.\n\nThe casting had gone to Clark Mills, whose foundry stood out on the Bladensburg road.\nMills owned a man named Philip Reid.\n\nReid rigged a pulley to an iron eye in the statue's head. He strained the rope gently,\nuntil the seams showed themselves one by one. Then he found the bolts, scraped away the\nplaster, and took them out. The model came apart, ready for the foundry.\n\nIn December 1863 the last section, her head and shoulders, was raised up there to a\nsalute of thirty-five guns.\n\nThe statue is called Freedom. The man who freed her from the plaster was not free.\n",
     "teaser": "Look up past the dome, to the bronze figure on the very top.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-man-who-found-the-bolts/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 89.6,
+        "audioBytes": 1434478
+      }
+    ],
     "pronunciations": [
       {
         "written": "Reid",
@@ -4207,14 +4217,7 @@ export const LIBRARY: readonly Echo[] = [
       "slavery",
       "sculpture"
     ],
-    "remoteness": 0.11,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/dc-the-man-who-found-the-bolts",
-        "durationS": 90
-      }
-    ]
+    "remoteness": 0.11
   },
   {
     "id": "dc-the-map-underfoot",
@@ -4526,7 +4529,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 73,
+    "durationS": 66,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4538,20 +4541,21 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "Look through the doors of the Willard, into the lobby.",
     "certaintyNote": "A popular legend, repeated with \"reportedly\" in a 2006 Library of Congress press release. The script says out loud that it is a legend, and newspapers from 1849 and 1852 show the word in use long before Grant's presidency.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/dc-the-word-was-waiting/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 66,
+        "audioBytes": 1057479
+      }
+    ],
     "tags": [
       "washington",
       "dc-core",
       "willard",
       "words"
     ],
-    "remoteness": 0.22,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/dc-the-word-was-waiting",
-        "durationS": 73
-      }
-    ]
+    "remoteness": 0.22
   },
   {
     "id": "dc-three-names-for-one-wing",
@@ -7495,7 +7499,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 74,
+    "durationS": 69,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7505,6 +7509,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the brick house on the corner of Fourth and Walnut. It is a modest house, a lawyer's house. For two years it was home to John Todd, his young wife Dolley, and their two small sons.\n\nIn seventeen ninety-three, yellow fever came to Philadelphia. Thomas Jefferson wrote that about eleven people a day were dying, and that the doctors saw no way of stopping it.\n\nJohn Todd took Dolley and the boys out of the city, to Gray's Ferry on the Schuylkill. Then he went back. He had clients who needed him. In the city he found his own father and mother sick, and both of them died.\n\nHe came back to his wife carrying the fever. The family remembered him saying he could feel it in his veins, but he must see her once more. Within hours he was dead. The younger baby died too.\n\nDolley survived. Not long after, she married James Madison, who would become the fourth President.\n\nBut first, the city directory for seventeen ninety-four lists the family's address under a new name.\n\nDorothy Todd, widow.\n",
     "teaser": "Look at the corner house. The directory changed its name in a year.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-dorothy-todd-widow/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 69,
+        "audioBytes": 1105127
+      }
+    ],
     "pronunciations": [
       {
         "written": "Dolley",
@@ -7523,14 +7535,7 @@ export const LIBRARY: readonly Echo[] = [
       "yellow-fever",
       "women"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-dorothy-todd-widow",
-        "durationS": 74
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-hamlet-paid-for-the-hospital",
@@ -7604,6 +7609,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look through the iron bars at the corner of Fifth and Arch. In the corner of the burial ground nearest you is Benjamin Franklin's grave, under a plain marble slab.\n\nWhen Franklin was twenty-two, a young printer, he wrote his own epitaph. It is a joke about his trade.\n\nThe body of B. Franklin, printer, like the cover of an old book, its contents torn out, and stript of its lettering and gilding, lies here, food for worms. But the work shall not be wholly lost. For it will, as he believed, appear once more, in a new and more perfect edition, corrected and amended by the author.\n\nHe liked it enough to copy it out for friends at various times in his life.\n\nIt is not on the stone.\n\nNear the end of his life, adding to his will, he asked for something else. To be buried beside his wife, under a marble stone, six feet long and four feet wide, plain, with only a small moulding round the edge. Their names, and a year.\n\nFor the year he wrote one, seven, eight, and then a dash.\n\nHe thought he knew the century and the decade. He died in April, seventeen ninety.\n\nSomebody else had to finish the line.\n",
     "teaser": "He wrote a famous epitaph for himself. It is not on the stone.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-he-left-the-year-blank/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 78.8,
+        "audioBytes": 1261443
+      }
+    ],
     "pronunciations": [
       {
         "written": "stript",
@@ -7618,14 +7631,7 @@ export const LIBRARY: readonly Echo[] = [
       "graves",
       "printing"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-he-left-the-year-blank",
-        "durationS": 79
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-no-hatch-wide-enough",
@@ -7736,7 +7742,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 94,
+    "durationS": 98,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7746,6 +7752,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "You are standing on the site of the President's House. The building itself was demolished long ago, but its real foundations are still here to see, found by archaeologists in two thousand seven.\n\nGeorge Washington lived here from seventeen ninety to seventeen ninety-seven. His household was about thirty people. Nine of them, at one time or another, were enslaved Africans brought up from Mount Vernon. Their names are memorialized here.\n\nFind the name Ona Judge.\n\nShe was Martha Washington's personal maid, and a skilled seamstress. Pennsylvania law said that an enslaved person held in the state for six months could take steps toward freedom. So Washington kept rotating the people he enslaved out of Pennsylvania before the six months ran out.\n\nIn seventeen ninety-six, Ona Judge walked out of this house and did not come back.\n\nShe reached Portsmouth, New Hampshire, where someone recognised her. Washington, still president, wrote to the customs collector there and asked him to seize her and send her back. The collector talked with her, and declined.\n\nTwo years later Washington's nephew went north to try again. Over dinner he mentioned the plan to the governor of New Hampshire. The governor sent her a warning, and she got away again, with her child.\n\nWashington died in seventeen ninety-nine. Ona Judge lived free in New Hampshire until eighteen forty-eight.\n\nShe outlived the man who was looking for her by almost fifty years.\n",
     "teaser": "Find the name Ona Judge.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-ona-judge-walked-out/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 98.4,
+        "audioBytes": 1575749
+      }
+    ],
     "pronunciations": [
       {
         "written": "Ona Judge",
@@ -7765,14 +7779,7 @@ export const LIBRARY: readonly Echo[] = [
       "african-american-history",
       "washington"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-ona-judge-walked-out",
-        "durationS": 94
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-penn-on-the-tower",
@@ -7888,7 +7895,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 100,
+    "durationS": 96,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7898,6 +7905,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the hall in front of you. Inside is the room where the Constitution was signed.\n\nFor four months in the summer of seventeen eighty-seven, George Washington presided in that room from a chair. Carved into the top of its back is a sun.\n\nIt was not an easy summer. Large states against small states. Arguments over the slave trade.\n\nOn the last day, the seventeenth of September, the delegates lined up to sign. While the last of them were signing, Benjamin Franklin looked at Washington's chair and said something to the men near him. James Madison wrote it down.\n\nPainters, Franklin said, had always found it hard to show the difference between a rising sun and a setting one. All through the session, in his hopes and fears, he had looked at that sun behind the president, and could not tell which it was.\n\nBut now at length, he said, I have the happiness to know that it is a rising and not a setting sun.\n\nThe chair had been made here in Philadelphia in seventeen seventy-nine, for the speaker of Pennsylvania's assembly. It went with the legislature to Harrisburg, and came back to this city in eighteen seventy-two.\n\nEarlier that day Franklin had asked every doubter in the room to doubt a little his own infallibility, and sign. Three still refused.\n\nNothing about the carving had changed. Franklin had.\n",
     "teaser": "Painters, he said, could never tell a rising sun from a setting one.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-rising-or-setting/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 95.5,
+        "audioBytes": 1529355
+      }
+    ],
     "pronunciations": [
       {
         "written": "infallibility",
@@ -7912,14 +7927,7 @@ export const LIBRARY: readonly Echo[] = [
       "constitution",
       "franklin"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-rising-or-setting",
-        "durationS": 100
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-shoes-for-bob",
@@ -7935,7 +7943,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 78,
+    "durationS": 77,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7945,6 +7953,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the brick house on this corner of Seventh and Market. It is not old. The house that stood here was demolished, and this one was built in nineteen seventy-five to stand in for it.\n\nIn the summer of seventeen seventy-six this corner was out near the edge of town. Thomas Jefferson rented rooms here from a young bricklayer named Graff.\n\nNearly fifty years later a Philadelphia doctor wrote to ask him exactly where he had written the Declaration of Independence. Jefferson answered from Monticello. A new brick house, three stories high, he wrote. I rented the second floor, a parlor and bedroom, ready furnished. In that parlor I wrote habitually, and in it wrote that paper particularly.\n\nHe also kept an account book that summer, and it survives. Thirty-five shillings a week for lodging. Dinners at Smith's. A straw hat. One shilling for seeing a monkey.\n\nAnd shoes for Bob. Stockings for Bob.\n\nJefferson did not come alone. With him was Robert Hemings, fourteen years old, whom he enslaved. The account book never says who Bob was.\n\nThe rooms are a reconstruction. The shoes for Bob are in Jefferson's own handwriting.\n",
     "teaser": "A straw hat. A monkey. Shoes for Bob.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-shoes-for-bob/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 77.1,
+        "audioBytes": 1234694
+      }
+    ],
     "pronunciations": [
       {
         "written": "Monticello",
@@ -7968,14 +7984,7 @@ export const LIBRARY: readonly Echo[] = [
       "declaration-of-independence",
       "slavery"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-shoes-for-bob",
-        "durationS": 78
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-the-baby-over-the-bank-door",
@@ -8033,7 +8042,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 79,
+    "durationS": 78,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8043,6 +8052,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the tower on the back of the hall. The brick part is original, from the seventeen fifties. The wooden steeple on top came later.\n\nIn September, seventeen seventy-seven, a British army was closing in on Philadelphia. Before it arrived, the State House bell was taken down from up there, to keep it out of British hands. It was not the Liberty Bell yet. Nobody would call it that for almost sixty years.\n\nIt went north in a wagon, in a train of about seven hundred wagons carrying the army's heavy baggage, guarded by two hundred soldiers from Virginia and North Carolina. Through Germantown, through Bethlehem, to Allentown.\n\nA diary kept in Bethlehem that autumn has one line about it. September the twenty-ninth. The wagon which conveyed the State House bell broke down in the street, and had to be unloaded.\n\nThey got it moving again. It spent the winter in Zion's Church in Allentown, while the British held this city, and it came home in June, seventeen seventy-eight, after they had gone.\n\nThe bell got through the war. What finally silenced it, in eighteen forty-six, was a repair job for Washington's birthday.\n",
     "teaser": "The wagon carrying the bell broke down in the street.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-the-bell-went-to-allentown/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 78.3,
+        "audioBytes": 1254756
+      }
+    ],
     "pronunciations": [
       {
         "written": "Allentown",
@@ -8061,14 +8078,7 @@ export const LIBRARY: readonly Echo[] = [
       "liberty-bell",
       "revolution"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-the-bell-went-to-allentown",
-        "durationS": 79
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-the-church-that-came-on-a-cart",
@@ -8084,7 +8094,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 88,
+    "durationS": 83,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8094,6 +8104,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look across Sixth Street at the church, and at the ground it stands on.\n\nThis is Mother Bethel. The National Park Service counts this lot among the oldest plots of land continuously owned by an African American.\n\nThe first church on it was not built here. It was dragged here.\n\nIn the seventeen nineties, Black members of Saint George's Methodist Church walked out together, rather than sit in a separate gallery made for them. A preacher named Richard Allen bought this lot so they could have a church of their own. What he had to put on it was an old blacksmith shop.\n\nIn seventeen ninety-nine the engravers Birch and Son published a view of Walnut Street, with the city jail in the background. In the foreground, a team of horses is pulling a wooden shed down the street. Historians believe it is this church, on its way here.\n\nThe first meeting house was dedicated in July, seventeen ninety-four. The congregation has rebuilt on this same ground more than once since, so the building in front of you is not the shed.\n\nAllen is known to have used a blacksmith's anvil as his pulpit. The church still keeps the anvil as its emblem. It stands for self-determination.\n\nMost churches begin with a cornerstone. This one began with a forge.\n",
     "teaser": "Most churches begin with a cornerstone. This one began with a forge.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-the-church-that-came-on-a-cart/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 82.9,
+        "audioBytes": 1327481
+      }
+    ],
     "pronunciations": [
       {
         "written": "Bethel",
@@ -8108,14 +8126,7 @@ export const LIBRARY: readonly Echo[] = [
       "richard-allen",
       "churches"
     ],
-    "remoteness": 0.21,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-the-church-that-came-on-a-cart",
-        "durationS": 88
-      }
-    ]
+    "remoteness": 0.21
   },
   {
     "id": "philadelphia-the-church-you-have-to-find",
@@ -8141,6 +8152,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Walk west down Willings Alley from Third Street, between the tall walls, and look on your right for an iron gate in an archway. It leads through a building and into a paved courtyard. The church is in there.\n\nYou cannot see it from any street. That was not an accident, though nobody forced it.\n\nCatholics in early Philadelphia were tolerated, but they were looked on with suspicion. So when they built a church here, in seventeen thirty-three, they put it somewhere inconspicuous, in a court between this alley and Walnut Street. Then the city filled in close all around it.\n\nIt did not stay unnoticed. On one October day in seventeen seventy-four, two visitors came to service here. One was George Washington. In his diary he wrote only that he went to Saint Joseph's in the afternoon.\n\nThe other was John Adams, raised a Puritan, and he was shaken. He wrote to his wife about the poor wretches fingering their beads, chanting Latin, bowing and kneeling. He called it awful and affecting.\n\nThe church behind the gate today is not the one they sat in. It was rebuilt on the same spot in eighteen thirty-eight and thirty-nine.\n\nIt was built not to be noticed. The first two presidents of the United States came looking for it anyway.\n",
     "teaser": "You cannot see this church from any street. That was the idea.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-the-church-you-have-to-find/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 86.5,
+        "audioBytes": 1385159
+      }
+    ],
     "pronunciations": [
       {
         "written": "Willings Alley",
@@ -8155,14 +8174,7 @@ export const LIBRARY: readonly Echo[] = [
       "religious-liberty",
       "churches"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-the-church-you-have-to-find",
-        "durationS": 87
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-the-congregation-of-the-dead",
@@ -8178,7 +8190,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 92,
+    "durationS": 96,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8188,6 +8200,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "In front of you, a bronze George Washington stands above a stone tomb, and a flame burns near his feet. Go close enough to read the lid. Beneath this stone rests the soldier of Washington's army, who died to give you liberty.\n\nOne soldier, name unknown. His remains were found in a grave nearby in nineteen fifty-six, and the memorial was dedicated the next year.\n\nHe is not alone. He is not even unusual.\n\nFor most of the seventeen hundreds this square was the city's potter's field, the burial ground for strangers and the poor. Free and enslaved Africans were buried here, and their families sometimes gathered to guard the graves from the anatomy lecturers.\n\nThen came the war. In January seventeen seventy-seven, Deborah Norris wrote to her friend Sally Wister about a shocking sight here. Large pits are dug, she wrote, and forty or fifty coffins are put in the same hole.\n\nThat April John Adams came and spent an hour among the graves. He had been told perhaps two thousand soldiers lay here. They are enough, he wrote, to make the heart of stone melt away.\n\nIn seventeen ninety-three, more than thirteen hundred victims of yellow fever filled the space that was left.\n\nLook past the tomb, at the lawns and the benches and the paths.\n\nThe memorial honours one soldier. The rest of them are under the grass.\n",
     "teaser": "The memorial honours one soldier. The rest are under the grass.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-the-congregation-of-the-dead/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 96,
+        "audioBytes": 1536878
+      }
+    ],
     "pronunciations": [
       {
         "written": "Sally Wister",
@@ -8202,14 +8222,7 @@ export const LIBRARY: readonly Echo[] = [
       "burial-ground",
       "yellow-fever"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-the-congregation-of-the-dead",
-        "durationS": 92
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-the-court-with-no-cases",
@@ -8225,7 +8238,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 99,
+    "durationS": 91,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8235,6 +8248,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the small brick building on the corner of Fifth and Chestnut. It was built as Philadelphia's city hall. Through the seventeen nineties it was also the home of the Supreme Court of the United States.\n\nToday that court decides the hardest questions in the country. When it came to Philadelphia, it had almost nothing to decide.\n\nIts first term in this city opened in February, seventeen ninety-one. A letter written at the time describes the day. The court opened, it said, but there was no business.\n\nSo the justices did the one thing they could, which was admit lawyers to practise before them. The local bar assumed Justice James Wilson, one of their own, would simply vouch for them. He would not. The Chief Justice said the court would not accept one lawyer vouching for another. Some of the best known lawyers in the city had to go off and find certificates of good character, and come back after one o'clock.\n\nThat August the court finally called a case for argument, West against Barnes. One of the parties stood up and pointed out that the paperwork had come from the wrong clerk's office. The court agreed, and dismissed it.\n\nOne of the original justices, John Rutledge, resigned without ever sitting in a session.\n\nThe courtroom inside is furnished the way an eighteenth century courtroom would have been, and it is open to look into.\n\nThe most powerful court in the world started out by checking references.\n",
     "teaser": "The court opened, but there was no business.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-the-court-with-no-cases/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 90.9,
+        "audioBytes": 1455794
+      }
+    ],
     "tags": [
       "philadelphia",
       "philadelphia-core",
@@ -8243,14 +8264,7 @@ export const LIBRARY: readonly Echo[] = [
       "supreme-court",
       "law"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-the-court-with-no-cases",
-        "durationS": 99
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-the-crack-is-the-repair",
@@ -8266,7 +8280,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 84,
+    "durationS": 82,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8276,6 +8290,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Find the bell, and look at the crack.\n\nIt is wide and dark, and it could be the best known flaw in the country. Now look along its edges. They are not clean breaks. They are a row of little round scallops.\n\nNobody wrote down when the bell first cracked. The likeliest answer is the early eighteen forties, after almost ninety years of hard use. A thin split, easy to miss.\n\nIn eighteen forty-six the city decided to repair the bell before Washington's birthday. So metal workers drilled out the thin crack and widened it on purpose, to stop it spreading and to bring the tone back. Those scallops are their drill holes. The Park Service counts more than forty of them.\n\nIt did not work. A newspaper, the Public Ledger, reported that the bell had split again. The second crack runs up through the word Liberty, and nobody alive has heard this bell ring freely.\n\nBy then it had a new name. In eighteen thirty-five an abolitionist paper had called it the Liberty Bell, for the verse cast around its top. Proclaim liberty throughout all the land, unto all the inhabitants thereof. The name took years to catch on.\n\nSo the famous crack is not the damage. It is the repair.\n",
     "teaser": "Look along the edges of the crack. They are not clean breaks.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-the-crack-is-the-repair/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 81.9,
+        "audioBytes": 1311181
+      }
+    ],
     "pronunciations": [
       {
         "written": "thereof",
@@ -8289,14 +8311,7 @@ export const LIBRARY: readonly Echo[] = [
       "liberty-bell",
       "abolition"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-the-crack-is-the-repair",
-        "durationS": 84
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-the-first-vote-was-the-room",
@@ -8312,7 +8327,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 83,
+    "durationS": 82,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8322,6 +8337,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down the court from Chestnut Street. At the end of it is a small brick hall with a cupola on top. It was built by a guild of carpenters, and the guild still owns it.\n\nOn the fifth of September seventeen seventy-four, the delegates to the first Continental Congress gathered in the city with a choice to make. The Speaker of the Pennsylvania Assembly, Joseph Galloway, had offered them the State House. The carpenters had offered their hall.\n\nThey walked here first, to take a look.\n\nJohn Adams wrote that the general cry was that this was a good room. One delegate, James Duane, argued that if the State House was just as convenient, it ought to be preferred. It was a public building, he said, and this was a private one, and the Speaker deserved the courtesy. The question was called anyway. A great majority chose the carpenters.\n\nThat same day Galloway wrote to William Franklin that Congress had met at Carpenters' Hall, notwithstanding the offer of a much more proper place. He suspected it had all been settled privately, out of doors, before anyone walked over.\n\nOnly after that vote did they choose a president.\n\nThe Continental Congress began by deciding where to sit. It chose the builders.\n",
     "teaser": "Before it chose a president, the Continental Congress chose a room.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-the-first-vote-was-the-room/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 81.7,
+        "audioBytes": 1314106
+      }
+    ],
     "pronunciations": [
       {
         "written": "Galloway",
@@ -8340,14 +8363,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "guilds"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-the-first-vote-was-the-room",
-        "durationS": 83
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-the-good-china",
@@ -8363,7 +8379,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 99,
+    "durationS": 102,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8373,6 +8389,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand on Fifth Street beside the National Constitution Center, where the buses pull in to drop people off.\n\nUnder this drop-off is the site of a small rented house. From seventeen ninety, a free Black coachman named James Oronoco Dexter lived in it with nine other people.\n\nDexter had been enslaved. On this block he was one of at least six free Black heads of household. In seventeen ninety-two he hosted the first meeting, in his own house, to arrange the building of a church. It became the African Episcopal Church of Saint Thomas, and its congregation is still active.\n\nWhen the Constitution Center was being built, the Park Service at first decided not to dig here. The drop-off would sit on top, and whatever was underneath would be left alone. People in the community disagreed. They wanted to know what was down there. So the archaeologists dug.\n\nIn the old back yard they found a barrel sunk in the ground and filled with sweepings, with nearly four thousand household objects in it. Pieces of a teapot made by English potters. A Chinese porcelain saucer. Bones from good cuts of meat, and from pig's feet.\n\nA coachman to a wealthy family was well paid. The archaeologists think the imported china let Dexter set a proper table for the people planning that church.\n\nMost of what survives from the founding years is paper. What survived of James Dexter's house was the good china, swept up in the yard.\n",
     "teaser": "You are standing at a bus drop-off. Underneath it is a back yard.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-the-good-china/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 101.7,
+        "audioBytes": 1628412
+      }
+    ],
     "pronunciations": [
       {
         "written": "Oronoco",
@@ -8391,14 +8415,7 @@ export const LIBRARY: readonly Echo[] = [
       "archaeology",
       "churches"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-the-good-china",
-        "durationS": 99
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-the-market-under-the-trains",
@@ -8414,7 +8431,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 74,
+    "durationS": 72,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8424,6 +8441,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand outside the market doors and look up. The building keeps going, well above where a market would need a roof. That high shed was built for trains.\n\nStart a little earlier, on Market Street, a block to the south. For generations, Philadelphia's main street had market sheds down its middle. In eighteen fifty-nine they were cleared away, and the traders needed somewhere new.\n\nTwo big market houses went up on the north side of Market Street, between Eleventh and Twelfth. One was the Farmers' Market, the largest market shed of its kind in the city. Beside it, at Twelfth Street, was the Franklin Market, which old housekeepers just called the Twelfth Street Market.\n\nThirty years later the Reading Railroad wanted a station in the middle of town. It ran its tracks in from Ninth and Green, raised up on an elevated line, and it chose this exact block. The Reading Terminal opened for traffic on the twentieth of January, eighteen ninety-three.\n\nSo the trains came in up there, under that great arched roof.\n\nAnd the market is still down here, underneath it.\n",
     "teaser": "The roof above this market was built to hold trains.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-the-market-under-the-trains/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 72.2,
+        "audioBytes": 1155700
+      }
+    ],
     "pronunciations": [
       {
         "written": "Reading",
@@ -8438,14 +8463,7 @@ export const LIBRARY: readonly Echo[] = [
       "railroads",
       "reading-terminal"
     ],
-    "remoteness": 0.35,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-the-market-under-the-trains",
-        "durationS": 74
-      }
-    ]
+    "remoteness": 0.35
   },
   {
     "id": "philadelphia-the-room-upstairs",
@@ -8461,7 +8479,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 91,
+    "durationS": 89,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8471,6 +8489,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the corner house here, at Third and Pine, and then up at its second floor.\n\nThe whole site covers two hundredths of an acre. The National Park Service calls it the smallest unit in the national park system.\n\nLate in seventeen ninety-seven, a Polish general took a cramped room up there, in Mrs. Relf's boarding house. His name was Thaddeus Kosciuszko. More than twenty years earlier he had come to America and designed fortifications for the Revolution, at Saratoga and at West Point. Then he went home to fight for Poland, was wounded, captured and imprisoned in Russia, and came back to Philadelphia a hero, still recovering.\n\nPeople climbed the stairs to see him. A Virginia congressman who pushed Congress to pay what it owed him. Chief Little Turtle of the Miami, who gave him a pipe tomahawk. And the Vice President, Thomas Jefferson, who became a close friend.\n\nWhile he lived here, with Jefferson's legal help, Kosciuszko worked out his will. He asked that after his death his estate be used to free as many enslaved people as possible.\n\nIn May seventeen ninety-eight he slipped out of the country in the small hours, on a ship from New Castle, Delaware. He told one person he was going. Jefferson.\n\nHe trusted Thomas Jefferson with two things. The secret of his leaving. And the will.\n",
     "teaser": "The smallest unit of the National Park System, and a will written upstairs.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-the-room-upstairs/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 88.9,
+        "audioBytes": 1424030
+      }
+    ],
     "pronunciations": [
       {
         "written": "Thaddeus Kosciuszko",
@@ -8490,14 +8516,7 @@ export const LIBRARY: readonly Echo[] = [
       "jefferson",
       "national-park"
     ],
-    "remoteness": 0.17,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-the-room-upstairs",
-        "durationS": 91
-      }
-    ]
+    "remoteness": 0.17
   },
   {
     "id": "philadelphia-the-street-that-was-a-creek",
@@ -8513,7 +8532,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "land",
     "format": "short",
-    "durationS": 80,
+    "durationS": 76,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8523,6 +8542,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Every street around here runs straight, at right angles, the way William Penn liked it. Except the street you are standing on. Dock Street bends.\n\nNow look at the building beside you. Its end is not flat. It is round, a curve of stone columns with a little round lantern on top. This is the Merchants' Exchange, finished in the eighteen thirties, and its architect fitted it onto a triangle of ground between Third Street, Walnut Street, and this odd curving road.\n\nSo why does the road curve?\n\nWhen Penn first came to Philadelphia, he left the big ship out on the Delaware and went up a creek in a skiff. That creek ran here. Dock Creek. In the seventeen nineties the city covered it over, and the street took its line.\n\nBefore this building, merchants did their deals in coffee houses and taverns down by the river. This was the first large building in the city put up for doing business. Ships' cargoes changed hands in it. So did stocks. The Philadelphia Stock Exchange met here.\n\nPenn came up this line in a small boat. Generations later, the city's money was following it too.\n",
     "teaser": "Every street here runs straight. Except this one.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-the-street-that-was-a-creek/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 75.9,
+        "audioBytes": 1215050
+      }
+    ],
     "tags": [
       "philadelphia",
       "philadelphia-core",
@@ -8531,14 +8558,7 @@ export const LIBRARY: readonly Echo[] = [
       "merchants-exchange",
       "waterways"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-the-street-that-was-a-creek",
-        "durationS": 80
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-two-rooms-one-roof",
@@ -8554,7 +8574,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 79,
+    "durationS": 76,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8564,6 +8584,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the long brick meeting house. It is built in three parts, a middle section with a wing on each side, and the two wings match.\n\nThat symmetry is the whole story.\n\nQuakers held their business meetings separately, one for men and one for women. George Fox, who founded the Society of Friends, wanted it that way, so that women would take an active part. For years in Philadelphia, the two meetings gathered in separate buildings.\n\nThe push for this house is said to have come from the women. They wanted both meetings under the same roof. The women's yearly meeting moved in here in eighteen hundred and four. When the second wing was finished in eighteen eleven, the men joined them.\n\nInside are two meeting rooms, one on each side of a central hall. There was no need for a partition down the middle. Each meeting had a room of its own.\n\nIt was not equality. The women's meeting mostly dealt with marriages and help for the needy, and the men's with policy and money. But the two rooms were built to the same proportions and fitted out the same way.\n\nSomebody insisted on that.\n",
     "teaser": "Look at the two wings. They match for a reason.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-two-rooms-one-roof/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 75.5,
+        "audioBytes": 1208363
+      }
+    ],
     "tags": [
       "philadelphia",
       "philadelphia-core",
@@ -8572,14 +8600,7 @@ export const LIBRARY: readonly Echo[] = [
       "women",
       "architecture"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-two-rooms-one-roof",
-        "durationS": 79
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-two-things-from-st-louis",
@@ -8653,6 +8674,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand beside the brick building on the corner of Sixth and Chestnut. This is Congress Hall. For ten years the House of Representatives met on its ground floor, and the Senate upstairs.\n\nOn the fourth of March, seventeen ninety-seven, the room downstairs was packed. The country was about to do something it had never done. Hand the presidency from one man to another.\n\nA man named John McKoy was there, and wrote down what he saw. When the word Washington was heard at the door, he said, the shout made the hall tremble. Washington crossed the floor at a quick step, as if eager to escape notice, and sat down. Thomas Jefferson came in next, the new vice president, to a smaller cheer. Then John Adams, the new president, to a smaller one again.\n\nAdams read his address, took the oath, bowed, and left to applause.\n\nThat left Washington and Jefferson standing together, and the whole room watching them in silence.\n\nWashington gestured for Jefferson to go out first. Jefferson declined. Washington asked again. Jefferson went, and Washington followed him out.\n\nHe walked in as the most famous man in the country. He walked out behind the vice president.\n",
     "teaser": "Two men at a door, and a whole room watching to see who would go first.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-washington-left-last/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 79,
+        "audioBytes": 1265623
+      }
+    ],
     "pronunciations": [
       {
         "written": "McKoy",
@@ -8668,14 +8697,7 @@ export const LIBRARY: readonly Echo[] = [
       "washington",
       "adams"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-washington-left-last",
-        "durationS": 79
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-what-her-grandson-said",
@@ -8691,7 +8713,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 86,
+    "durationS": 87,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8702,6 +8724,14 @@ export const LIBRARY: readonly Echo[] = [
     "script": "This small house on Arch Street is famous for one scene. George Washington and two gentlemen of Congress call on a young widow, an upholsterer named Betsy Ross. They show her a rough sketch of a flag. She suggests changes. She sews the first Stars and Stripes.\n\nHere is what is on record. Betsy Ross was real. Her first husband died in seventeen seventy-six, and she carried on his trade. For about fifty years she was an expert needlewoman and flag-maker. During the war she made state colours for ships and gun batteries. After her, one of her daughters kept the flag business going.\n\nHere is what is not. The visit appears in no record of Congress, no letter, no diary and no newspaper of the time. Washington wrote a great deal, and never mentioned it.\n\nThe story was first told in public in eighteen seventy, ninety-three years after the flag was adopted. Her grandson, William Canby, read it to the Historical Society of Pennsylvania. It was, he said, what the family had heard her say.\n\nFor most people, the evidence is a picture. Washington seated in her parlour, the new flag across her lap.\n\nThat picture was printed in eighteen ninety-three. Prints of it went to people who joined a club raising money to save this house.\n",
     "teaser": "Everyone knows the scene in this house. Nobody wrote it down for ninety-three years.",
     "certaintyNote": "Betsy Ross's work as an upholsterer and flag-maker is on record. The visit from Washington, Robert Morris and George Ross, and her part in the first Stars and Stripes, rest on family tradition first made public by her grandson William Canby in 1870; no record of Congress, letter, diary or newspaper of 1776 or 1777 mentions it, as Franklin Hanford set out in 1917. The script says so plainly.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-what-her-grandson-said/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 86.6,
+        "audioBytes": 1385995
+      }
+    ],
     "pronunciations": [
       {
         "written": "Canby",
@@ -8716,14 +8746,7 @@ export const LIBRARY: readonly Echo[] = [
       "betsy-ross",
       "myth-and-memory"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/philadelphia-what-her-grandson-said",
-        "durationS": 86
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-a-city-for-christmas",
@@ -10321,7 +10344,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "true-crime",
     "format": "short",
-    "durationS": 64,
+    "durationS": 52,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10332,6 +10355,14 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look from Ford’s Theatre to the house across the street.\n\nThat short distance became the final journey of Abraham Lincoln’s life.\n\nOn April 14, 1865, Lincoln attended a performance of Our American Cousin.\n\nJohn Wilkes Booth was a famous actor. That evening, he entered the presidential box\nand shot the president.\n\nBooth escaped from the theatre. Lincoln could not.\n\nPeople carried the wounded president across Tenth Street into the Petersen family’s\nboarding house.\n\nHe died there the following morning, April 15.\n\nLook at the crossing again.\n\nToday, it is a short walk across.\n\nOn that night, people crossed it carrying the president of the United States, trying to\nfind somewhere to care for him.\n\nThe theatre marks the attack.\n\nThe house marks his death.\n\nBetween them is an ordinary city street that briefly became the center of a national\ncatastrophe.\n",
     "teaser": "Look from Ford’s Theatre to the house across the street.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-distance-across-the-street/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 51.6,
+        "audioBytes": 826766
+      }
+    ],
     "tags": [
       "washington",
       "lincoln"
@@ -10343,14 +10374,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-11-08",
       "contentWarning": "This echo describes an assassination. No violence is described in detail."
     },
-    "remoteness": 0.47,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-distance-across-the-street",
-        "durationS": 64
-      }
-    ]
+    "remoteness": 0.47
   },
   {
     "id": "the-empty-frames",
@@ -10788,7 +10812,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 101,
+    "durationS": 64,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10800,19 +10824,20 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "Stand still for a moment.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-prison-corridor/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 64.2,
+        "audioBytes": 1028640
+      }
+    ],
     "inside": true,
     "tags": [
       "philadelphia",
       "ghosts"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-prison-corridor",
-        "durationS": 101
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "the-prisoner-who-never-reached-the-prison",

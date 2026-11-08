@@ -9,7 +9,7 @@ at: { lat: 39.94835, lng: -75.14995 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 79
+durationS: 78
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -107,3 +107,59 @@ sources:
     url: https://www.loc.gov/item/16006838/
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-bell-went-to-allentown/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 78.3
+    audioBytes: 1254756
+    transcript:
+      totalS: 78.3
+      lines:
+        - text: Look up at the tower on the back of the hall.
+          atS: 0
+          durationS: 2.36
+        - text: The brick part is original, from the seventeen fifties.
+          atS: 2.74
+          durationS: 3.52
+        - text: The wooden steeple on top came later.
+          atS: 6.58
+          durationS: 2.45
+        - text: In September, seventeen seventy-seven, a British army was closing in on Philadelphia.
+          atS: 9.73
+          durationS: 6.15
+        - text: Before it arrived, the State House bell was taken down from up there, to keep it out of British hands.
+          atS: 16.39
+          durationS: 6.19
+        - text: It was not the Liberty Bell yet.
+          atS: 23.09
+          durationS: 1.94
+        - text: Nobody would call it that for almost sixty years.
+          atS: 25.73
+          durationS: 3.02
+        - text: It went north in a wagon, in a train of about seven hundred wagons carrying the army's heavy baggage, guarded by two hundred soldiers from Virginia and North Carolina.
+          atS: 29.26
+          durationS: 10.48
+        - text: Through Germantown, through Bethlehem, to Allentown.
+          atS: 40.12
+          durationS: 3.98
+        - text: A diary kept in Bethlehem that autumn has one line about it.
+          atS: 44.8
+          durationS: 4.37
+        - text: September the twenty-ninth.
+          atS: 49.68
+          durationS: 1.87
+        - text: The wagon which conveyed the State House bell broke down in the street, and had to be unloaded.
+          atS: 52.36
+          durationS: 5.86
+        - text: They got it moving again.
+          atS: 58.5
+          durationS: 1.46
+        - text: It spent the winter in Zion's Church in Allentown, while the British held this city, and it came home in June, seventeen seventy-eight, after they had gone.
+          atS: 60.57
+          durationS: 9.54
+        - text: The bell got through the war.
+          atS: 70.55
+          durationS: 1.45
+        - text: What finally silenced it, in eighteen forty-six, was a repair job for Washington's birthday.
+          atS: 72.61
+          durationS: 5.73

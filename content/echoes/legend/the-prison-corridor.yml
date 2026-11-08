@@ -14,12 +14,11 @@ at: { lat: 39.96765, lng: -75.17265 }
 triggerRadiusKm: 0.06
 category: legend
 format: short
-durationS: 101
+durationS: 64
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A published legend. The script says out loud that the haunting is reported, not proven;
-  no supernatural claim is established.
+  A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.
 minAge: 0
 quality: 0.75
 # Rarity (docs/13-story-mix.md): the listening spot is inside; see the header.
@@ -92,3 +91,71 @@ sources:
     url: https://www.loc.gov/item/pa1207/
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-prison-corridor/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 64.2
+    audioBytes: 1028640
+    transcript:
+      totalS: 64.2
+      lines:
+        - text: Stand still for a moment.
+          atS: 0
+          durationS: 1.36
+        - text: Look along the corridor, then toward the cells.
+          atS: 1.6
+          durationS: 2.52
+        - text: Eastern State’s ghost stories tell of shadowy figures darting from cell to cell.
+          atS: 4.56
+          durationS: 4.47
+        - text: The site’s own audio tour asks the question straight out.
+          atS: 9.15
+          durationS: 3.29
+        - text: Is this place haunted?
+          atS: 12.61
+          durationS: 1.27
+        - text: Who knows?
+          atS: 13.99
+          durationS: 0.81
+        - text: Some visitors say they have sensed something here.
+          atS: 15.13
+          durationS: 2.62
+        - text: "That is all it is: a story people tell."
+          atS: 18.08
+          durationS: 2.77
+        - text: Nobody has proved a ghost, and the site does not allow paranormal investigations.
+          atS: 21.36
+          durationS: 5.07
+        - text: Now listen to the space around you.
+          atS: 27.04
+          durationS: 1.71
+        - text: A prison changes the meaning of ordinary sounds.
+          atS: 29.13
+          durationS: 3.03
+        - text: A footstep might suggest an approaching guard.
+          atS: 32.48
+          durationS: 2.62
+        - text: A door might suggest confinement.
+          atS: 35.19
+          durationS: 1.95
+        - text: Silence might suggest someone listening.
+          atS: 37.47
+          durationS: 2.18
+        - text: You do not need to imagine a particular dead prisoner.
+          atS: 39.93
+          durationS: 2.9
+        - text: What is certain is that real suffering happened behind these walls, for more than a hundred and forty years.
+          atS: 43.15
+          durationS: 6.33
+        - text: "The haunting stories add another question: can a place seem occupied after the people who lived inside it are gone?"
+          atS: 49.92
+          durationS: 6.69
+        - text: Look down the corridor again.
+          atS: 57.31
+          durationS: 1.71
+        - text: You might see nothing unusual.
+          atS: 59.34
+          durationS: 1.61
+        - text: The feeling of waiting for something is part of this story.
+          atS: 61.16
+          durationS: 3.06

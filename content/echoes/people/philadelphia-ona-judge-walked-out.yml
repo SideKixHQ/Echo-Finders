@@ -9,7 +9,7 @@ at: { lat: 39.95045, lng: -75.15010 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 94
+durationS: 98
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -121,3 +121,71 @@ sources:
     url: https://www.nps.gov/inde/planyourvisit/presidentshousesite.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-ona-judge-walked-out/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 98.4
+    audioBytes: 1575749
+    transcript:
+      totalS: 98.4
+      lines:
+        - text: You are standing on the site of the President's House.
+          atS: 0
+          durationS: 2.94
+        - text: The building itself was demolished long ago, but its real foundations are still here to see, found by archaeologists in two thousand seven.
+          atS: 3.26
+          durationS: 9.02
+        - text: George Washington lived here from seventeen ninety to seventeen ninety-seven.
+          atS: 12.89
+          durationS: 4.66
+        - text: His household was about thirty people.
+          atS: 17.87
+          durationS: 2.22
+        - text: Nine of them, at one time or another, were enslaved Africans brought up from Mount Vernon.
+          atS: 20.33
+          durationS: 5.29
+        - text: Their names are memorialized here.
+          atS: 25.95
+          durationS: 2.04
+        - text: Find the name Ona Judge.
+          atS: 28.32
+          durationS: 2.67
+        - text: She was Martha Washington's personal maid, and a skilled seamstress.
+          atS: 31.59
+          durationS: 4.1
+        - text: Pennsylvania law said that an enslaved person held in the state for six months could take steps toward freedom.
+          atS: 36.38
+          durationS: 6.69
+        - text: So Washington kept rotating the people he enslaved out of Pennsylvania before the six months ran out.
+          atS: 43.68
+          durationS: 6.21
+        - text: In seventeen ninety-six, Ona Judge walked out of this house and did not come back.
+          atS: 50.84
+          durationS: 6.51
+        - text: She reached Portsmouth, New Hampshire, where someone recognised her.
+          atS: 57.96
+          durationS: 3.75
+        - text: Washington, still president, wrote to the customs collector there and asked him to seize her and send her back.
+          atS: 62.31
+          durationS: 6.11
+        - text: The collector talked with her, and declined.
+          atS: 69.02
+          durationS: 2.48
+        - text: Two years later Washington's nephew went north to try again.
+          atS: 72.32
+          durationS: 3.91
+        - text: Over dinner he mentioned the plan to the governor of New Hampshire.
+          atS: 76.83
+          durationS: 3.32
+        - text: The governor sent her a warning, and she got away again, with her child.
+          atS: 80.6
+          durationS: 3.91
+        - text: Washington died in seventeen ninety-nine.
+          atS: 85.02
+          durationS: 2.74
+        - text: Ona Judge lived free in New Hampshire until eighteen forty-eight.
+          atS: 88.46
+          durationS: 4.38
+        - text: She outlived the man who was looking for her by almost fifty years.
+          atS: 93.27
+          durationS: 5.13

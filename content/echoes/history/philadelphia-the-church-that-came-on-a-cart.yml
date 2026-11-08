@@ -9,7 +9,7 @@ at: { lat: 39.94330, lng: -75.15200 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 88
+durationS: 83
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -107,3 +107,65 @@ sources:
     url: https://www.loc.gov/item/01010570/
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-church-that-came-on-a-cart/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 82.9
+    audioBytes: 1327481
+    transcript:
+      totalS: 82.9
+      lines:
+        - text: Look across Sixth Street at the church, and at the ground it stands on.
+          atS: 0
+          durationS: 3.97
+        - text: This is Mother Bethel.
+          atS: 4.67
+          durationS: 1.52
+        - text: The National Park Service counts this lot among the oldest plots of land continuously owned by an African American.
+          atS: 6.88
+          durationS: 6.84
+        - text: The first church on it was not built here.
+          atS: 14.23
+          durationS: 2.4
+        - text: It was dragged here.
+          atS: 17.08
+          durationS: 1.3
+        - text: In the seventeen nineties, Black members of Saint George's Methodist Church walked out together, rather than sit in a separate gallery made for them.
+          atS: 19.49
+          durationS: 8.7
+        - text: A preacher named Richard Allen bought this lot so they could have a church of their own.
+          atS: 28.79
+          durationS: 4.2
+        - text: What he had to put on it was an old blacksmith shop.
+          atS: 34.11
+          durationS: 3.45
+        - text: In seventeen ninety-nine the engravers Birch and Son published a view of Walnut Street, with the city jail in the background.
+          atS: 38.67
+          durationS: 7.98
+        - text: In the foreground, a team of horses is pulling a wooden shed down the street.
+          atS: 47.34
+          durationS: 4.26
+        - text: Historians believe it is this church, on its way here.
+          atS: 52.12
+          durationS: 3.56
+        - text: The first meeting house was dedicated in July, seventeen ninety-four.
+          atS: 56.49
+          durationS: 4.45
+        - text: The congregation has rebuilt on this same ground more than once since, so the building in front of you is not the shed.
+          atS: 61.45
+          durationS: 6.44
+        - text: Allen is known to have used a blacksmith's anvil as his pulpit.
+          atS: 68.33
+          durationS: 3.83
+        - text: The church still keeps the anvil as its emblem.
+          atS: 72.49
+          durationS: 2.65
+        - text: It stands for self-determination.
+          atS: 75.38
+          durationS: 2.06
+        - text: Most churches begin with a cornerstone.
+          atS: 78.39
+          durationS: 2.09
+        - text: This one began with a forge.
+          atS: 81.08
+          durationS: 1.81

@@ -9,7 +9,7 @@ at: { lat: 39.95212, lng: -75.14620 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 79
+durationS: 76
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -80,3 +80,62 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/philadelphiaguid00nitz/philadelphiaguid00nitz.text.txt
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-two-rooms-one-roof/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.5
+    audioBytes: 1208363
+    transcript:
+      totalS: 75.5
+      lines:
+        - text: Look at the long brick meeting house.
+          atS: 0
+          durationS: 2.32
+        - text: It is built in three parts, a middle section with a wing on each side, and the two wings match.
+          atS: 2.65
+          durationS: 6.42
+        - text: That symmetry is the whole story.
+          atS: 9.58
+          durationS: 2.33
+        - text: Quakers held their business meetings separately, one for men and one for women.
+          atS: 12.61
+          durationS: 4.85
+        - text: George Fox, who founded the Society of Friends, wanted it that way, so that women would take an active part.
+          atS: 18.07
+          durationS: 6.9
+        - text: For years in Philadelphia, the two meetings gathered in separate buildings.
+          atS: 26.26
+          durationS: 4.92
+        - text: The push for this house is said to have come from the women.
+          atS: 32
+          durationS: 3.38
+        - text: They wanted both meetings under the same roof.
+          atS: 35.98
+          durationS: 2.83
+        - text: The women's yearly meeting moved in here in eighteen hundred and four.
+          atS: 39.42
+          durationS: 4.33
+        - text: When the second wing was finished in eighteen eleven, the men joined them.
+          atS: 44.35
+          durationS: 4.32
+        - text: Inside are two meeting rooms, one on each side of a central hall.
+          atS: 49.48
+          durationS: 4.44
+        - text: There was no need for a partition down the middle.
+          atS: 54.52
+          durationS: 2.52
+        - text: Each meeting had a room of its own.
+          atS: 57.64
+          durationS: 2.15
+        - text: It was not equality.
+          atS: 60.23
+          durationS: 1.42
+        - text: The women's meeting mostly dealt with marriages and help for the needy, and the men's with policy and money.
+          atS: 62.16
+          durationS: 5.98
+        - text: But the two rooms were built to the same proportions and fitted out the same way.
+          atS: 68.58
+          durationS: 4.54
+        - text: Somebody insisted on that.
+          atS: 73.5
+          durationS: 1.96
