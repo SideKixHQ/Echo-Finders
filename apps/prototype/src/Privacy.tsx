@@ -228,6 +228,14 @@ export function Privacy({
           <span>Privacy policy</span>
           <small>What we collect, why, and how to turn each part off.</small>
         </a>
+        <a className="danger-row policy-row" href="https://echofinders.com/terms" target="_blank" rel="noreferrer">
+          <span>Terms of service</span>
+          <small>Passes, renewals, safety and accuracy, in plain words.</small>
+        </a>
+        <a className="danger-row policy-row" href="https://echofinders.com/refunds" target="_blank" rel="noreferrer">
+          <span>Refund policy</span>
+          <small>When we refund a pass, and how to ask.</small>
+        </a>
         <button className="danger-row" onClick={() => onDelete("positions")}>
           <span>Delete my positions</span>
           <small>Removes every saved standing position. Keeps your collection.</small>

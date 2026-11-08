@@ -229,9 +229,17 @@ export function Paywall({
           kind of thing that turns a customer into a refund and a review. It goes under the
           button in plain words, before the money moves rather than after.
         */}
+        {/*
+          The terms sit in the same line, in reach before the money moves (what auto-renewal
+          laws expect). A line of their own made the paywall 23px taller than an iPhone in
+          Safari, and its last button was cut off (audit:align, 2026-11-08).
+        */}
         <p className="paywall-small">
-          Kept on this device for now. Accounts are coming, and your purchase will move
-          with you when they land.
+          Kept on this device until accounts arrive.{" "}
+          {chosen === "allAccess" ? "Renews yearly until you cancel in Settings. " : ""}
+          <a href="https://echofinders.com/terms" target="_blank" rel="noreferrer">Terms</a>
+          {" · "}
+          <a href="https://echofinders.com/refunds" target="_blank" rel="noreferrer">Refunds</a>
         </p>
 
         <button className="paywall-later" onClick={onClose}>

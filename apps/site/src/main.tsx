@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router';
 import Layout from '@/layouts/Layout';
 import HomePage from '@/pages/Home';
 import PartnerPage from '@/pages/Partners';
-import PrivacyPage from '@/pages/Privacy';
+import PolicyPage from '@/pages/Policy';
 import NotFoundPage from '@/pages/NotFound';
 import '@echofinders/echo/echo.css';
 import './globals.css';
@@ -22,7 +22,9 @@ createRoot(document.getElementById('app')!).render(
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/partners" element={<PartnerPage />} />
-          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/privacy" element={<PolicyPage which="privacy" />} />
+          <Route path="/terms" element={<PolicyPage which="terms" />} />
+          <Route path="/refunds" element={<PolicyPage which="refunds" />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
