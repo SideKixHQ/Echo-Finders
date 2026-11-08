@@ -1,0 +1,100 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: Keziah Park, a small public park at South Lord Street and West Moore Street; stand on the path by the tree, do not climb it.
+# Position: Intersection of S Lord St and W Moore St from Overture points (S Lord St 106, W Moore St 202 and 205); the park's corner placement is from search listings, not a fetched source (medium confidence, check on site).
+id: southport-the-bent-oak
+title: "The Bent Oak"
+summary: "A legend says Native people bent Keziah Park's live oak as a sapling to mark a trail. It is thought to be 800 years old."
+place: "Indian Trail Tree, Keziah Park, Lord Street at Moore Street, Southport, North Carolina"
+at: { lat: 33.9179, lng: -78.02085 }
+triggerRadiusKm: 0.05
+category: legend
+format: short
+durationS: 39
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The bending of the tree by Native people is a local legend, quoted as such by Our State. The script says out loud that it cannot be proven. The age is an estimate.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [southport, keziah-park, live-oak, trees, native-american]
+teaser: "An old oak here grows in the shape of an upside down U. There is a story about who bent it."
+script: |
+  Look for the old live oak in this little park. It grows in the shape of an upside down U.
+
+  It is called the Indian Trail Tree, and it is estimated to be about eight hundred years old.
+
+  What follows is a legend. Nobody can prove it, and it might not be true.
+
+  The story is that when the tree was a sapling, Native people bent it over, and it took root in the ground again.
+
+  Bent like that, it marked their trail down to the fishing spots.
+
+  A local gallery owner told Our State magazine it is a neat place to go and think about how old this little area really is.
+
+  Whatever bent it, the tree kept the shape. Eight hundred years is a long time to hold a pose somebody else gave you.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It grows in the shape of an upside down U."
+    source: 1
+    quote: "so it’s formed in the shape of an upside-down U"
+  - says: "It is called the Indian Trail Tree, and it is estimated to be about eight hundred years old."
+    source: 1
+    quote: "The centerpiece of this small downtown park is the Indian Trail Tree, estimated to be about 800-years-old."
+  - says: "The story is that when the tree was a sapling, Native people bent it over, and it took root in the ground again."
+    source: 1
+    quote: "Legend has it that when the tree was a sapling, the Indians bent it, and it took root in the ground again"
+  - says: "Bent like that, it marked their trail down to the fishing spots."
+    source: 1
+    quote: "It marked their trails down to the fishing spots."
+  - says: "A local gallery owner told Our State magazine it is a neat place to go and think about how old this little area really is."
+    source: 1
+    quote: "It’s a neat place to go and think about how old this little area really is."
+  - says: "Eight hundred years is a long time to hold a pose somebody else gave you."
+    source: 1
+    quote: "The centerpiece of this small downtown park is the Indian Trail Tree, estimated to be about 800-years-old."
+sources:
+  - title: "A Guide to Downtown Southport"
+    publisher: "Our State"
+    url: https://www.ourstate.com/a-guide-to-downtown-southport/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/southport-the-bent-oak/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 38.8
+    audioBytes: 621548
+    transcript:
+      totalS: 38.8
+      lines:
+        - text: Look for the old live oak in this little park.
+          atS: 0
+          durationS: 2.51
+        - text: It grows in the shape of an upside down U.
+          atS: 2.79
+          durationS: 2.37
+        - text: It is called the Indian Trail Tree, and it is estimated to be about eight hundred years old.
+          atS: 5.27
+          durationS: 4.91
+        - text: What follows is a legend.
+          atS: 10.46
+          durationS: 1.57
+        - text: Nobody can prove it, and it might not be true.
+          atS: 12.12
+          durationS: 2.58
+        - text: The story is that when the tree was a sapling, Native people bent it over, and it took root in the ground again.
+          atS: 14.94
+          durationS: 5.9
+        - text: Bent like that, it marked their trail down to the fishing spots.
+          atS: 21.16
+          durationS: 3.58
+        - text: A local gallery owner told Our State magazine it is a neat place to go and think about how old this little area really is.
+          atS: 24.98
+          durationS: 6.88
+        - text: Whatever bent it, the tree kept the shape.
+          atS: 32.11
+          durationS: 2.39
+        - text: Eight hundred years is a long time to hold a pose somebody else gave you.
+          atS: 34.83
+          durationS: 3.95

@@ -1,0 +1,127 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: The public beach at the east end of Bald Head Island, near Cape Fear point and the start of Frying Pan Shoals.
+# Position: South end of Station House Way (Overture point 100, 33.84396, -77.96208), moved onto the beach near Cape Fear point (low-medium confidence; a beach echo with a wide radius).
+id: bald-head-the-woman-on-the-shore
+title: "The Woman on the Shore"
+summary: "A Bald Head Island legend says Theodosia Burr's lost ship came to grief on the shoals here, and that her spirit walks this shore."
+place: "Beach near Cape Fear point, Bald Head Island, North Carolina"
+at: { lat: 33.8442, lng: -77.9618 }
+triggerRadiusKm: 0.15
+category: legend
+format: short
+durationS: 54
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A local legend about a real disappearance. The script says aloud that the Cape Fear ending and the ghost are legend, not proven; what happened to Theodosia Burr Alston is unknown.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [bald-head-island, ghost, theodosia-burr, frying-pan-shoals]
+teaser: "Aaron Burr's daughter sailed in 1812 and vanished. A story here says she never left this beach."
+script: |
+  This is a legend. Nobody has proven any of it, and you should hear it that way.
+
+  In the last days of 1812, Theodosia Burr Alston, the daughter of Aaron Burr, boarded a small vessel called the Patriot to sail to her father in New York. The ship left Georgetown, South Carolina, and was never seen again.
+
+  That much is history. What happened to her is still a mystery.
+
+  One story known to many people around here says the Patriot ran aground on the shoals off this island, out past the point. Pirates raided the ship, the story goes, and killed everyone aboard except Theodosia, who was taken for ransom.
+
+  And her spirit, people say, still walks this shore, searching for a way to escape. Some tellers add three headless pirates, chasing behind her.
+
+  There is no record of a wreck here. But if you walk this beach at dusk, you are walking where the legend puts her.
+pronunciations:
+  - written: Theodosia
+    say: thee-oh-DOH-sha
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In the last days of 1812, Theodosia Burr Alston, the daughter of Aaron Burr, boarded a small vessel called the Patriot to sail to her father in New York."
+    source: 1
+    quote: "On December 31, 1812, Theodosia boarded a small vessel called the Patriot."
+  - says: "to sail to her father in New York"
+    source: 1
+    quote: "Theodosia decided to set sail for New York to be with her father."
+  - says: "The ship left Georgetown, South Carolina, and was never seen again."
+    source: 1
+    quote: "The ship departed Georgetown into the open sea, never to be seen again."
+  - says: "What happened to her is still a mystery."
+    source: 1
+    quote: "Theodosia's disappearance remains a mystery to this day."
+  - says: "One story known to many people around here says the Patriot ran aground on the shoals off this island, out past the point."
+    source: 1
+    quote: "Stories claim Theodosia's boat sank off the coast of Smith Island, now known as Bald Head Island. The legend goes the ship ran aground on the shoals of the Cape Fear region"
+  - says: "Pirates raided the ship, the story goes, and killed everyone aboard except Theodosia, who was taken for ransom."
+    source: 1
+    quote: "pirates raided the distressed ship, killing everyone aboard except Theodosia, who was taken captive for ransom."
+  - says: "And her spirit, people say, still walks this shore, searching for a way to escape."
+    source: 1
+    quote: "her spirit is said to manifest along Bald Head Island's shore, still frantically searching for a way to escape."
+  - says: "And her spirit, people say, still walks this shore"
+    source: 2
+    quote: "The ghost of Theodosia Burr Alston, Aaron Burr's daughter, thought to have drowned off Frying Pan Shoals and now treading the sodden beaches of Bald Head Island."
+  - says: "Some tellers add three headless pirates, chasing behind her."
+    source: 1
+    quote: "Alternate reports say the three headless pirates can be seen chasing behind her"
+  - says: "There is no record of a wreck here."
+    source: 1
+    quote: "Some believe the ship she was on sank in a storm far off the coast. Others think she was killed by pirates."
+  - says: "That much is history."
+    source: 1
+    quote: "The ship departed Georgetown into the open sea, never to be seen again."
+sources:
+  - title: "History with 'Hud': Cape Fear's possible connection to Theodosia Burr, daughter of Aaron Burr"
+    publisher: "WWAY TV3"
+    url: https://www.wwaytv3.com/history-with-hud-cape-fears-possible-connection-to-theodosia-burr-daughter-of-aaron-burr/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "The Witching Hour"
+    publisher: "Our State"
+    url: https://www.ourstate.com/the-witching-hour/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/bald-head-the-woman-on-the-shore/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 53.7
+    audioBytes: 860203
+    transcript:
+      totalS: 53.7
+      lines:
+        - text: This is a legend.
+          atS: 0
+          durationS: 1.08
+        - text: Nobody has proven any of it, and you should hear it that way.
+          atS: 1.52
+          durationS: 3.37
+        - text: In the last days of 1812, Theodosia Burr Alston, the daughter of Aaron Burr, boarded a small vessel called the Patriot to sail to her father in New York.
+          atS: 5.49
+          durationS: 9.79
+        - text: The ship left Georgetown, South Carolina, and was never seen again.
+          atS: 15.88
+          durationS: 3.76
+        - text: That much is history.
+          atS: 20.16
+          durationS: 1.29
+        - text: What happened to her is still a mystery.
+          atS: 21.83
+          durationS: 1.91
+        - text: One story known to many people around here says the Patriot ran aground on the shoals off this island, out past the point.
+          atS: 24.13
+          durationS: 6.84
+        - text: Pirates raided the ship, the story goes, and killed everyone aboard except Theodosia, who was taken for ransom.
+          atS: 31.41
+          durationS: 6.83
+        - text: And her spirit, people say, still walks this shore, searching for a way to escape.
+          atS: 38.51
+          durationS: 4.71
+        - text: Some tellers add three headless pirates, chasing behind her.
+          atS: 43.66
+          durationS: 3.4
+        - text: There is no record of a wreck here.
+          atS: 47.31
+          durationS: 1.74
+        - text: But if you walk this beach at dusk, you are walking where the legend puts her.
+          atS: 49.2
+          durationS: 4.48

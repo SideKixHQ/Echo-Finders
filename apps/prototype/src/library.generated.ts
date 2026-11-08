@@ -97,6 +97,223 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "bald-head-captain-charlie-lit-both",
+    "title": "Captain Charlie Lit Both",
+    "summary": "Charlie Swan lit the Cape Fear Lighthouse in 1903 and kept it thirty years. In 1958 he switched on the Oak Island light that replaced it.",
+    "point": {
+      "at": {
+        "lat": 33.846,
+        "lng": -77.9668
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Captain Charlie's cottages, Cape Fear Lighthouse Complex, Bald Head Island, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 56,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Three cottages stand together here on the dunes. They are known as Captain Charlie's, after the lighthouse keeper who lived in one of them.\n\nIn 1903 a new steel lighthouse went up nearby. Charlie Swan was its first head keeper, and he had the honor of lighting the lamp for the first time.\n\nHe kept it for thirty years, until he retired in 1933. He and his two assistants lived in these three houses, and they were the only people living on the island. When the wooden rails of the supply tram rotted, Captain Charlie bought a horse and cart.\n\nIn 1958 the Coast Guard put up a new lighthouse across the river on Oak Island, and took his old tower down.\n\nOn the fifteenth of May, 1958, the man who threw the switch to light the new one was the former keeper of the old one. Captain Charlie.\n\nHe lit the first lamp here. And he switched on the light that replaced it.\n",
+    "teaser": "He lit the first lamp here. Fifty-five years later he switched on the light that replaced it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/bald-head-captain-charlie-lit-both/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55.7,
+        "audioBytes": 891967
+      }
+    ],
+    "tags": [
+      "bald-head-island",
+      "cape-fear-lighthouse",
+      "lighthouse-keeper",
+      "oak-island-lighthouse"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "bald-head-the-builder-who-lost-money",
+    "title": "The Builder Who Lost Money",
+    "summary": "Daniel Way built Old Baldy in 1817 on a low bid, counting on reusing old bricks. It cost him, and his name is still over the door.",
+    "point": {
+      "at": {
+        "lat": 33.8734,
+        "lng": -78.0006
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Old Baldy (Bald Head Island Lighthouse), Bald Head Island, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 50,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look above the door of the lighthouse, on its west side. There is a stone tablet. It reads, R. Cochran, Founder. A. D. 1817. D. S. Way, Builder.\n\nDaniel Way won the contract in July 1816. His terms were much lower than anyone else's.\n\nHe had a plan. The first lighthouse here had been wrecked. He would salvage its brick, and he expected the new tower to stand close to the old one.\n\nBoth hopes went unrealized. The old brick was not the best quality. And the new lighthouse went up a mile west of the old one, too far to haul the brick that could be saved.\n\nWay lost money on the project.\n\nBut the tower he built is the oldest lighthouse standing in North Carolina. Two hundred years on, his name is still over the door.\n",
+    "teaser": "Above the door is the name of the man who built this lighthouse, and lost money doing it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/bald-head-the-builder-who-lost-money/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 50.2,
+        "audioBytes": 805032
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Cochran",
+        "say": "KOCK-run"
+      }
+    ],
+    "tags": [
+      "bald-head-island",
+      "old-baldy",
+      "lighthouse"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "bald-head-the-prisms-coming-home",
+    "title": "The Prisms Coming Home",
+    "summary": "The Cape Fear Lighthouse lens was sold off prism by prism in 1958. The Old Baldy Foundation is gathering the pieces back.",
+    "point": {
+      "at": {
+        "lat": 33.8731,
+        "lng": -78.0002
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Smith Island Museum of History, keepers' cottage beside Old Baldy, Bald Head Island, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 62,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Inside this cottage beside Old Baldy is a replica of a great lighthouse lens. The real one is still being collected, one piece at a time.\n\nIt crowned the Cape Fear Lighthouse, a steel tower that stood on this island for more than half a century. Then in 1958 the Oak Island Lighthouse was built, and the Cape Fear tower was demolished.\n\nThe contractor had the sense to save the lens. It ended up in a Wilmington antiques shop, and the hundreds of glass prisms were sold off, one by one.\n\nThey scattered. Some became paperweights. Others were found beneath a bed. One person used a big bull's eye panel as a coffee table, until the sun came through it and burned a hole in the carpet.\n\nThe Old Baldy Foundation is putting the lens back together, and asking people to bring the pieces home. It still needs about two thirds of them.\n\nIf someone you know has a heavy wedge of old glass on a desk, it might be part of a lighthouse.\n",
+    "teaser": "Some of these lighthouse prisms spent decades as paperweights.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/bald-head-the-prisms-coming-home/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 62.1,
+        "audioBytes": 994367
+      }
+    ],
+    "tags": [
+      "bald-head-island",
+      "old-baldy",
+      "lighthouse",
+      "cape-fear-lighthouse",
+      "museum"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "bald-head-the-swim-to-southport",
+    "title": "The Swim to Southport",
+    "summary": "Island lore says a daughter of keeper Captain Charlie Swan read the tides, swam from Bald Head to Southport, and won a bet.",
+    "point": {
+      "at": {
+        "lat": 33.8768,
+        "lng": -78.0008
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Bald Head Island harbor and ferry landing, Bald Head Island, North Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 53,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across the river to Southport. That is a long way to swim.\n\nThis is lore, not record. Nobody has proven it.\n\nCaptain Charlie Swan kept the Cape Fear Lighthouse, at the far end of this island, and his children grew up here. There were deer to chase, and alligators to be chased by.\n\nThe story goes that one of Captain Charlie's daughters bet her brothers she could swim from the island all the way to Southport. They did not believe her.\n\nShe had spent a lot of time with her father. She had studied the tides and currents of the Cape Fear River. And she knew that if she swam at low tide, the sandbars would be out of the water, and she could use them.\n\nIn the story, she made it. Her brothers had to pay up.\n\nPlease do not try it. Just look at the water for a moment, the way she would have. She read the river first.\n",
+    "teaser": "A keeper's daughter bet her brothers she could swim to Southport.",
+    "certaintyNote": "Family lore published by Our State; no record confirms the swim. The script says aloud that it is lore, not proven, and tells listeners not to try it.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/bald-head-the-swim-to-southport/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 53.1,
+        "audioBytes": 851007
+      }
+    ],
+    "tags": [
+      "bald-head-island",
+      "southport",
+      "cape-fear-river",
+      "lighthouse-keeper",
+      "folklore"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "bald-head-the-woman-on-the-shore",
+    "title": "The Woman on the Shore",
+    "summary": "A Bald Head Island legend says Theodosia Burr's lost ship came to grief on the shoals here, and that her spirit walks this shore.",
+    "point": {
+      "at": {
+        "lat": 33.8442,
+        "lng": -77.9618
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "Beach near Cape Fear point, Bald Head Island, North Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 54,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This is a legend. Nobody has proven any of it, and you should hear it that way.\n\nIn the last days of 1812, Theodosia Burr Alston, the daughter of Aaron Burr, boarded a small vessel called the Patriot to sail to her father in New York. The ship left Georgetown, South Carolina, and was never seen again.\n\nThat much is history. What happened to her is still a mystery.\n\nOne story known to many people around here says the Patriot ran aground on the shoals off this island, out past the point. Pirates raided the ship, the story goes, and killed everyone aboard except Theodosia, who was taken for ransom.\n\nAnd her spirit, people say, still walks this shore, searching for a way to escape. Some tellers add three headless pirates, chasing behind her.\n\nThere is no record of a wreck here. But if you walk this beach at dusk, you are walking where the legend puts her.\n",
+    "teaser": "Aaron Burr's daughter sailed in 1812 and vanished. A story here says she never left this beach.",
+    "certaintyNote": "A local legend about a real disappearance. The script says aloud that the Cape Fear ending and the ghost are legend, not proven; what happened to Theodosia Burr Alston is unknown.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/bald-head-the-woman-on-the-shore/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 53.7,
+        "audioBytes": 860203
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Theodosia",
+        "say": "thee-oh-DOH-sha"
+      }
+    ],
+    "tags": [
+      "bald-head-island",
+      "ghost",
+      "theodosia-burr",
+      "frying-pan-shoals"
+    ],
+    "remoteness": 1
+  },
+  {
     "id": "boston-abiel-smith-school-goodbye",
     "title": "Goodbye Forever",
     "summary": "Black families boycotted this segregated school until Massachusetts outlawed school segregation in 1855.",
@@ -2024,6 +2241,259 @@ export const LIBRARY: readonly Echo[] = [
         "durationS": 95
       }
     ]
+  },
+  {
+    "id": "caswell-beach-a-hat-from-a-helicopter",
+    "title": "A Hat From a Helicopter",
+    "summary": "A children's telling of the Oak Island Lighthouse: a lantern set on top by helicopters, and ladders instead of stairs.",
+    "point": {
+      "at": {
+        "lat": 33.8925,
+        "lng": -78.0356
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Oak Island Lighthouse, 300A Caswell Beach Road, Caswell Beach, North Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 46,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look all the way up to the very top of the lighthouse. See the little room with windows, where the light lives? A helicopter put it there.\n\nTwo Marine Corps helicopters lifted that top piece and held it up in the air over the tower. The wind was strong, so they had to wiggle it around. Then they lowered it into place, and a builder fastened it down.\n\nInside, there is something different too. Most old lighthouses have a twisty spiral staircase. This one has ladders, like on a ship. One hundred and thirty-four steps, all the way up.\n\nAnd the lights up top get so hot that workers have to wear protective clothing in the light room.\n\nA helicopter for a hat, and ladders for stairs. This lighthouse does things its own way.\n",
+    "teaser": "How do you put the top on a lighthouse? You fly it there.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/caswell-beach-a-hat-from-a-helicopter/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 46,
+        "audioBytes": 737323
+      }
+    ],
+    "tags": [
+      "caswell-beach",
+      "oak-island",
+      "lighthouse",
+      "oak-island-lighthouse"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "caswell-beach-a-lighthouse-poured-in-a-week",
+    "title": "A Lighthouse Poured in a Week",
+    "summary": "The Oak Island Lighthouse's stripes are cast into its concrete, and its walls were poured nonstop for a week in 1957.",
+    "point": {
+      "at": {
+        "lat": 33.8928,
+        "lng": -78.0352
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Oak Island Lighthouse, 300A Caswell Beach Road, Caswell Beach, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the stripes on the lighthouse. Grey at the bottom, white in the middle, black at the top. None of it is paint.\n\nThe colors are cast into the concrete. The bottom forty feet is the natural grey of the cement. The middle fifty feet was poured with white cement mixed with white quartz. The top was mixed with a black coloring agent.\n\nIn 1957 the Coast Guard asked for bids on two designs. One was a steel frame. The other was a concrete silo tower. Nobody bid on the steel one.\n\nThe builders used a system developed in Sweden. Steel forms were jacked slowly up the tower while concrete was poured into them.\n\nThe pour began on a Monday morning and did not stop. A mixing plant on the site ran round the clock for six days. The forms climbed from eight inches to a foot an hour.\n\nBy the following Monday, the walls stood one hundred and forty-eight feet high.\n\nThe last lighthouse built in North Carolina went up in a week, and it wears its colors all the way through.\n",
+    "teaser": "Look at the stripes. None of them is paint.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/caswell-beach-a-lighthouse-poured-in-a-week/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 69.7,
+        "audioBytes": 1115576
+      }
+    ],
+    "tags": [
+      "caswell-beach",
+      "oak-island",
+      "lighthouse",
+      "oak-island-lighthouse",
+      "engineering"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "caswell-beach-the-long-day-of-dunbar-davis",
+    "title": "The Long Day of Dunbar Davis",
+    "summary": "In August 1893, Oak Island Life Saving Station keeper Dunbar Davis and a volunteer crew rescued five schooners in one day.",
+    "point": {
+      "at": {
+        "lat": 33.8922,
+        "lng": -78.0342
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Former Oak Island Life Saving Station, Caswell Beach Road, Caswell Beach, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 60,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Across the road, among the beach cottages, look for a house with a small tower on its roof. That tower was a lookout.\n\nThis was the Oak Island Life Saving Station, built in 1889. Around 1938 it was sold, and moved across the road to be a beach cottage. It is a private home, so look from here.\n\nFrom the tower, one man kept watch while a second man patrolled the beach.\n\nIn August 1893, a hurricane came ashore at Charleston. The regular crew of surfmen did not report for duty until the first of September. So the keeper, Dunbar Davis, made his rescues with volunteers.\n\nThat day, they rescued five schooners.\n\nThe coastal historian David Stick called it the long day of Dunbar Davis.\n\nDavis kept this station from 1891 to 1915. The tower he watched from is still up there, on a summer house.\n",
+    "teaser": "The little tower on that roof was a lookout. In 1893 its keeper had one very long day.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/caswell-beach-the-long-day-of-dunbar-davis/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 60,
+        "audioBytes": 960513
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Dunbar",
+        "say": "DUN-bar"
+      }
+    ],
+    "tags": [
+      "caswell-beach",
+      "oak-island",
+      "life-saving-service",
+      "rescue",
+      "frying-pan-shoals"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "caswell-beach-the-night-caswell-blew-up",
+    "title": "The Night Caswell Blew Up",
+    "summary": "In January 1865 the Confederates abandoning Fort Caswell blew up its powder magazines. A witness compared it to a volcano.",
+    "point": {
+      "at": {
+        "lat": 33.8914,
+        "lng": -78.0285
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Fort Caswell gate, end of Caswell Beach Road, Caswell Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 81,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Beyond this gate is Fort Caswell. The property is a church retreat now, private land, so this story is one to hear from the road.\n\nAcross the river, Fort Fisher fell to Union forces on the fifteenth of January, 1865. The troops here were ordered to abandon this fort and destroy its ammunition.\n\nOn the seventeenth of January, they blew up the powder magazines.\n\nA newspaper reported being woken at two in the morning by an explosion that shook its office to its foundation.\n\nA witness across the water, at what is now Southport, saw a vivid flash of light travel toward the fort. Then, he wrote, it was as if a mighty volcano had sprung its blazing contents from the sea into the sky. The roar smashed the glass in his house.\n\nThe blast destroyed the entire southeast face of the fort.\n\nThe following day, Union forces walked into the abandoned fort and took it.\n\nHere is the strange part. The guns of this fort often fought Union warships, all through the war, and yet not a single soldier was killed in action here.\n\nThe worst damage Fort Caswell ever took, its own side did.\n",
+    "teaser": "The worst damage this fort ever took, its own side did.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/caswell-beach-the-night-caswell-blew-up/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 81.3,
+        "audioBytes": 1301567
+      }
+    ],
+    "tags": [
+      "caswell-beach",
+      "oak-island",
+      "fort-caswell",
+      "civil-war",
+      "military"
+    ],
+    "remoteness": 0.27
+  },
+  {
+    "id": "caswell-beach-the-second-brightest-light",
+    "title": "The Second Brightest Light in the World",
+    "summary": "When it was lit in 1958, the Oak Island Lighthouse used Second World War spotlight reflectors and was the world's second brightest light.",
+    "point": {
+      "at": {
+        "lat": 33.8919,
+        "lng": -78.0357
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Oak Island Lighthouse dune boardwalk and observation deck, Caswell Beach Road, Caswell Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "From this deck, look back across the road at the top of the lighthouse. The light up there is not one lamp behind a glass lens, like the old towers. It is banks of lamps and reflectors.\n\nWhen it was switched on in 1958, the bottom bank held thirty-six inch reflectors with two thousand five hundred watt mercury bulbs. The reflectors were adapted from aircraft spotlights used in the Second World War.\n\nThe Coast Guard engineers knew it would have to be one of the brightest lights in the world. The tower stands four miles farther inland than the old Cape Fear light it replaced, and it still had to reach farther out to sea.\n\nIt did. Its glow carried more than thirty nautical miles, to the end of Frying Pan Shoals.\n\nFor a few years it was the brightest lighthouse in the United States, and the second brightest in the world. Only a lighthouse on an island off France was brighter.\n\nThen the mercury bulbs turned out too expensive and difficult to keep. In 1962 a new lighthouse at Sullivan's Island, in South Carolina, took the American title.\n\nThe light still flashes four times every ten seconds. Wait for dark, and count.\n",
+    "teaser": "For a few years, only one lighthouse on Earth outshone this one.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/caswell-beach-the-second-brightest-light/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 78,
+        "audioBytes": 1248487
+      }
+    ],
+    "tags": [
+      "caswell-beach",
+      "oak-island",
+      "lighthouse",
+      "oak-island-lighthouse",
+      "world-war-ii"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "caswell-beach-yachts-on-submarine-watch",
+    "title": "Yachts on Submarine Watch",
+    "summary": "In the Second World War, Fort Caswell monitored German submarines, and private yachts patrolled Frying Pan Shoals for the Navy.",
+    "point": {
+      "at": {
+        "lat": 33.891,
+        "lng": -78.0352
+      },
+      "triggerRadiusKm": 0.12,
+      "place": "Caswell Beach, public beach near the Oak Island Lighthouse, Caswell Beach, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 54,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out to sea, and then east, past the point at the end of this beach. Out there, under the water, Frying Pan Shoals runs a long way out from Bald Head Island.\n\nIn November 1941, one month before Pearl Harbor, the Navy bought Fort Caswell, at the end of this road, for seventy-five thousand dollars.\n\nThe buildings were painted camouflage green. Blackout curtains went into the windows.\n\nDuring the war, Fort Caswell was one of four bases in the country where German submarines were monitored.\n\nThe Navy was short of vessels. So six boats went out from here to patrol around Frying Pan Shoals, looking for the submarines. All six were private yachts, doing Navy work.\n\nPicture one of them from this beach. Somebody's pleasure boat, out past the breakers, hunting a submarine.\n",
+    "teaser": "In the Second World War, the Navy hunted submarines off this beach in borrowed yachts.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/caswell-beach-yachts-on-submarine-watch/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.1,
+        "audioBytes": 866890
+      }
+    ],
+    "tags": [
+      "caswell-beach",
+      "oak-island",
+      "fort-caswell",
+      "world-war-ii",
+      "military",
+      "frying-pan-shoals"
+    ],
+    "remoteness": 0
   },
   {
     "id": "charging-bull-illegal",
@@ -7278,6 +7748,126 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "oak-island-five-left-standing",
+    "title": "Five Left Standing",
+    "summary": "Hurricane Hazel's surge in October 1954 swept away 352 of the 357 buildings on Long Beach, today's Oak Island.",
+    "point": {
+      "at": {
+        "lat": 33.9122,
+        "lng": -78.073
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Hurricane Hazel historical marker, Country Club Drive (NC 133) at Yaupon Way, Oak Island, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 52,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the state highway marker beside the road here. It is for a storm.\n\nOn the fifteenth of October, 1954, Hurricane Hazel came ashore in southern Brunswick County, on a full moon high tide.\n\nThis beach was a town called Long Beach then. A storm surge of seventeen feet swept across the island.\n\nThere were three hundred and fifty-seven buildings on the island. The surge took three hundred and fifty-two of them.\n\nGrass covered sand dunes, ten to twenty feet high, simply disappeared.\n\nThe marker calls it the greatest coastal flood in North Carolina's recorded history. Hazel is still the storm every hurricane here is measured against.\n\nFive buildings were left standing. Count the houses on this one street, and you will already have counted more than survived.\n",
+    "teaser": "In 1954 this beach had three hundred and fifty-seven buildings. One morning it had five.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/oak-island-five-left-standing/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 51.5,
+        "audioBytes": 825930
+      }
+    ],
+    "tags": [
+      "oak-island",
+      "long-beach",
+      "hurricane-hazel",
+      "storms"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "oak-island-how-oak-island-became-an-island",
+    "title": "How Oak Island Became an Island",
+    "summary": "Oak Island was cut off from the mainland in the 1930s, when the Intracoastal Waterway was finished.",
+    "point": {
+      "at": {
+        "lat": 33.9245,
+        "lng": -78.1396
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Intracoastal Waterway shore along East Yacht Drive, Oak Island, North Carolina"
+    },
+    "category": "land",
+    "format": "short",
+    "durationS": 44,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the water on this side of the island, the quiet side. It is the Intracoastal Waterway, and it is the reason you are standing on an island at all.\n\nOak Island was not always an island. This twelve mile strip of land was cut off from the rest of Brunswick County in the 1930s, when the waterway was finished.\n\nA swing bridge was put in to bring people across. In 1971 a barge hit it and destroyed it.\n\nA high rise bridge opened in 1975, and a second one in 2010. Two ways in, and both of them cross this channel.\n\nOn the beach side, you face the ocean. On this side, you are looking at the water that made the island.\n",
+    "teaser": "The water on this side of the island has not always been here.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/oak-island-how-oak-island-became-an-island/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 44.1,
+        "audioBytes": 706812
+      }
+    ],
+    "tags": [
+      "oak-island",
+      "intracoastal-waterway",
+      "bridges"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "oak-island-the-fence-on-the-dune",
+    "title": "The Fence on the Dune",
+    "summary": "Loggerhead sea turtles nest on Oak Island's beach, and volunteers fence each nest and help the hatchlings reach the sea.",
+    "point": {
+      "at": {
+        "lat": 33.9127,
+        "lng": -78.147
+      },
+      "triggerRadiusKm": 0.12,
+      "place": "Beach beside Ocean Crest Pier, East Beach Drive, Oak Island, North Carolina"
+    },
+    "category": "land",
+    "format": "short",
+    "durationS": 53,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In summer, look along the beach near this pier for a small square of fencing with a sign on it. That is a sea turtle nest.\n\nA loggerhead laid her eggs near this pier one night, and went back to the ocean. Volunteers from the Oak Island Sea Turtle Protection Program fenced off the nest and put up signs, asking people to give the eggs some space.\n\nThe eggs take a little less than two months to hatch. That nest was about a hundred yards from the water, so the volunteers planned to help the young turtles make their way to the ocean.\n\nIt is a busy beach for turtles. In 2023 the program recorded one hundred and thirty-three nests, the third highest on record. In 2024 the first sea turtle nest in all of North Carolina was found on this island.\n\nGive the fence room. Somebody under that sand has a long walk ahead.\n",
+    "teaser": "That little fenced square on the beach is somebody's nursery.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/oak-island-the-fence-on-the-dune/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52.5,
+        "audioBytes": 841394
+      }
+    ],
+    "tags": [
+      "oak-island",
+      "sea-turtles",
+      "loggerhead",
+      "nature",
+      "ocean-crest-pier"
+    ],
+    "remoteness": 1
+  },
+  {
     "id": "pearl-street-oysters",
     "title": "A street paved with rubbish",
     "summary": "Pearl Street is white underneath because people threw their lunch on the ground.",
@@ -10139,6 +10729,858 @@ export const LIBRARY: readonly Echo[] = [
         "durationS": 89
       }
     ]
+  },
+  {
+    "id": "southport-a-fish-house-plays-a-fish-shack",
+    "title": "A Fish House Plays a Fish Shack",
+    "summary": "The American Fish Company bar on the point played Ivan's Fish Shack in Safe Haven. Before it was a bar, it was a fish house.",
+    "point": {
+      "at": {
+        "lat": 33.91575,
+        "lng": -78.0228
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "American Fish Company, Yacht Basin Drive, Southport, North Carolina"
+    },
+    "category": "inspo",
+    "format": "short",
+    "durationS": 47,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look for the bar on the point, where the Intracoastal Waterway meets the Cape Fear River.\n\nIn the film Safe Haven, this was Ivan's Fish Shack.\n\nBefore it was a bar, it was a fish house.\n\nSafe Haven starred Julianne Hough and Josh Duhamel, and the town saw an immense increase in tourism around its release.\n\nThe bar has had other parts too, in Weekend at Bernie's, I Know What You Did Last Summer and The Three Lives of Karen.\n\nIt is known as the best place to watch the sunset in Southport. When the phones come out, the manager says, it is usually for the sunset, or for the dolphins going by.\n\nA fish house that played a fish shack. Typecast, and happy about it.\n",
+    "teaser": "In Safe Haven, the bar on this point was Ivan's Fish Shack. It used to be a real fish house.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-a-fish-house-plays-a-fish-shack/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 46.8,
+        "audioBytes": 749443
+      }
+    ],
+    "inspo": {
+      "kind": "creation",
+      "evidence": "site"
+    },
+    "tags": [
+      "southport",
+      "film",
+      "safe-haven",
+      "yacht-basin",
+      "sunset"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-a-wretched-little-place",
+    "title": "A Wretched Little Place",
+    "summary": "In 1775 the last royal governor fled to Fort Johnston, then to a warship offshore. Days later the fort was burned.",
+    "point": {
+      "at": {
+        "lat": 33.9179,
+        "lng": -78.01715
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Fort Johnston Garrison House, 203 East Bay Street, Southport, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the brick house with the two-story porch. It is all that is left of a fort, and the fort before this one was burned to the ground.\n\nIn May 1775, Josiah Martin, the last royal governor of North Carolina, fled his own palace under cover of darkness. He came from New Bern to this fort, at the mouth of the Cape Fear River, where English warships lay at anchor.\n\nHe was not impressed. He described the fort as a wretched little place.\n\nThen he heard that the Wilmington Committee of Safety planned to attack the fort and seize him. So the governor of the colony moved out to sea, onto a warship called the Cruizer.\n\nIt was a wise move. Five days later the militia, in his own words, wantonly in the dead hour of night set on fire and reduced to ashes the houses and buildings within the fort.\n\nIt was the first active violence against the British in North Carolina.\n\nThe new federal government rebuilt the fort after the Revolution. This house, the officers' quarters, is the only building of it still standing.\n\nAs for the governor, the Cruizer stayed his headquarters through the summer and fall. The last royal governor of North Carolina ended up running the colony from a boat.\n",
+    "teaser": "The last royal governor of North Carolina came here to hide. He did not like it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-a-wretched-little-place/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 84.8,
+        "audioBytes": 1357156
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Cruizer",
+        "say": "CRUISE-er"
+      }
+    ],
+    "tags": [
+      "southport",
+      "fort-johnston",
+      "revolution",
+      "military",
+      "josiah-martin"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-carved-in-imperishable-stone",
+    "title": "Carved in Imperishable Stone",
+    "summary": "After ten river pilots were lost at sea in the 1870s, Smithville raised a monument to them in its burying ground.",
+    "point": {
+      "at": {
+        "lat": 33.92005,
+        "lng": -78.0152
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Pilots' monument, Old Smithville Burying Ground, East Moore Street at North Rhett Street, Southport, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 49,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look among the graves under these oaks for the pilots' monument. It was put up for river pilots lost at sea.\n\nRiver pilots brought ships in from the Atlantic to the ports along this river since before there were any towns here.\n\nIn the 1870s, ten of them were lost at sea.\n\nThe loss was terrible for Smithville, as this town was called then, and for Wilmington.\n\nSmithville had grown up around the fort by the river, and the fort's commander held several nights of entertainment to raise money for a monument. One was needed, he said, so that those who live after us may find the virtues and gallant deeds of their ancestors carved in the imperishable stone.\n\nIt still stands, a memorial to every pilot lost.\n\nHe was writing for people he would never meet. You are one of them.\n",
+    "teaser": "Ten men from this small town went out to meet ships and did not come back.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-carved-in-imperishable-stone/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 48.8,
+        "audioBytes": 781208
+      }
+    ],
+    "tags": [
+      "southport",
+      "river-pilots",
+      "cemetery",
+      "smithville",
+      "maritime"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-croaker-queen",
+    "title": "Croaker Queen",
+    "summary": "The Amuzu Theatre was where Sarah Michelle Gellar's character was crowned Croaker Queen in I Know What You Did Last Summer.",
+    "point": {
+      "at": {
+        "lat": 33.9187,
+        "lng": -78.01955
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Amuzu Theatre, North Howe Street between Moore Street and Nash Street, Southport, North Carolina"
+    },
+    "category": "inspo",
+    "format": "short",
+    "durationS": 35,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the old theatre across the street. It was built in 1918, and it is still in use.\n\nIn the 1997 slasher film I Know What You Did Last Summer, this is where the town beauty pageant was held.\n\nOn its stage, Sarah Michelle Gellar's character was crowned Croaker Queen.\n\nMuch of the film was shot in Southport, taking advantage of the town's waterfront.\n\nThe theatre has been on the big screen in other films too, among them Crimes of the Heart and The Secret Life of Bees.\n\nA croaker is a fish. In this town, for one night, it was a crown.\n",
+    "teaser": "A horror film crowned its beauty queen on this stage.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-croaker-queen/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 35.3,
+        "audioBytes": 566377
+      }
+    ],
+    "inspo": {
+      "kind": "creation",
+      "evidence": "site"
+    },
+    "tags": [
+      "southport",
+      "film",
+      "i-know-what-you-did-last-summer",
+      "theatre"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-one-floor-below-the-cells",
+    "title": "One Floor Below the Cells",
+    "summary": "Southport's 1904 county jail housed prisoners upstairs and the jailer and his family in two tiny rooms below.",
+    "point": {
+      "at": {
+        "lat": 33.9208,
+        "lng": -78.0159
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old Brunswick County Jail, Nash Street at Rhett Street, Southport, North Carolina"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 51,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the two-story brick building on this corner. It was the county jail from 1904 until 1971.\n\nIt cost a little less than seven thousand dollars, after several earlier wooden jails were destroyed by hurricanes and fires.\n\nThe cells were upstairs. Each had four bunks, a commode and a wash basin.\n\nDownstairs, in two tiny rooms, lived the jailer, with his family.\n\nIt could hold eleven prisoners, but it usually held two or three, in for short stays and minor offenses.\n\nThrough every summer it was a jail, it never had working air conditioning.\n\nToday it is a museum. You can step into the original cells and read the graffiti the prisoners left on the walls.\n\nFor the jailer's children, home was one floor below the cells.\n",
+    "teaser": "The county jail had prisoners upstairs and a family living downstairs.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-one-floor-below-the-cells/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 51.2,
+        "audioBytes": 820078
+      }
+    ],
+    "tags": [
+      "southport",
+      "jail",
+      "museum",
+      "brunswick-county"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-pay-on-your-way-out",
+    "title": "Pay on Your Way Out",
+    "summary": "At Provision Company on the yacht basin, you take a drink from the cooler and pay on your way out. It has worked since 1993.",
+    "point": {
+      "at": {
+        "lat": 33.91645,
+        "lng": -78.02305
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Provision Company, Yacht Basin Drive, Southport, North Carolina"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 54,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Somewhere along this basin is a restaurant that runs on trust.\n\nGrab whatever you like, the owner tells his guests, with a wave at a self serve cooler of cold drinks. Pay when you're done.\n\nIt is not a gimmick. The place is Provision Company, Pro Co to the locals, and it opened in 1993 in a weathered waterfront building that had once been a wholesale fish house.\n\nThe founder had come here from the British Virgin Islands in the early nineties. The honor system grew out of a simple belief. If you give people the chance to be honest, they will be honest.\n\nThe thing to order, since the first day, has been Thee Special, with steamed shrimp, a crab cake and corn. The covered deck looks out over the Old Yacht Basin.\n\nMore than thirty years on, people are still settling up on their way out.\n",
+    "teaser": "One restaurant on this basin has run on the honor system for more than thirty years.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-pay-on-your-way-out/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53.5,
+        "audioBytes": 856859
+      }
+    ],
+    "tags": [
+      "southport",
+      "seafood",
+      "restaurant",
+      "yacht-basin",
+      "shrimp"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-red-over-white",
+    "title": "Red Over White",
+    "summary": "A children's telling of the Southport weather tower, which warned sailors of storms with flags by day and lights by night.",
+    "point": {
+      "at": {
+        "lat": 33.9176,
+        "lng": -78.01805
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Weather tower site, Fort Johnston Garrison Lawn, South Davis Street at East Bay Street, Southport, North Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 49,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Here is a puzzle from the days before phones. Imagine you are a sailor out on that river, and a big storm is on its way. How could anybody on land warn you?\n\nThey used a tall tower, right here by the water, and they used flags.\n\nWhen a strong wind called a gale was coming, two red flags went up.\n\nBut at night, you cannot see a flag. So the tower had lights too. Each tower had three of them, two red and one white.\n\nA red light over a white light meant the same as the two red flags. Gale coming. Head for safety.\n\nA lady named Jessie Taylor raised the flags here for more than sixty years.\n\nSo if you were a sailor, you kept one eye on this corner. Red over white meant it was time to go home.\n",
+    "teaser": "Before phones, how did anyone tell a sailor a storm was coming?",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/southport-red-over-white/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 48.9,
+        "audioBytes": 783298
+      }
+    ],
+    "tags": [
+      "southport",
+      "fort-johnston",
+      "weather",
+      "kids"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-the-bent-oak",
+    "title": "The Bent Oak",
+    "summary": "A legend says Native people bent Keziah Park's live oak as a sapling to mark a trail. It is thought to be 800 years old.",
+    "point": {
+      "at": {
+        "lat": 33.9179,
+        "lng": -78.02085
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Indian Trail Tree, Keziah Park, Lord Street at Moore Street, Southport, North Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 39,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look for the old live oak in this little park. It grows in the shape of an upside down U.\n\nIt is called the Indian Trail Tree, and it is estimated to be about eight hundred years old.\n\nWhat follows is a legend. Nobody can prove it, and it might not be true.\n\nThe story is that when the tree was a sapling, Native people bent it over, and it took root in the ground again.\n\nBent like that, it marked their trail down to the fishing spots.\n\nA local gallery owner told Our State magazine it is a neat place to go and think about how old this little area really is.\n\nWhatever bent it, the tree kept the shape. Eight hundred years is a long time to hold a pose somebody else gave you.\n",
+    "teaser": "An old oak here grows in the shape of an upside down U. There is a story about who bent it.",
+    "certaintyNote": "The bending of the tree by Native people is a local legend, quoted as such by Our State. The script says out loud that it cannot be proven. The age is an estimate.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/southport-the-bent-oak/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 38.8,
+        "audioBytes": 621548
+      }
+    ],
+    "tags": [
+      "southport",
+      "keziah-park",
+      "live-oak",
+      "trees",
+      "native-american"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-the-city-of-the-south-atlantic",
+    "title": "The City of the South Atlantic",
+    "summary": "In 1887 Smithville renamed itself Southport, sure it would be the great seaport of the South. The railroad came too late.",
+    "point": {
+      "at": {
+        "lat": 33.9179,
+        "lng": -78.0234
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Southport waterfront at the Old Yacht Basin, Yacht Basin Drive, Southport, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 60,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out past the boats to the river. In the 1880s, people here were sure this water would make them the next great city of the South.\n\nIn 1887 the village of Smithville was renamed Southport, in eager anticipation of the day it would emerge as the great seaport of the southeast.\n\nThe river had been dredged and an inlet closed off, and for the first time in two hundred years North Carolina had an easily reached deep water harbor.\n\nIt would be, one booster wrote, the city of the South Atlantic.\n\nMoney came from Boston, Fort Wayne and Chicago. Land prices began to soar. Dozens of new houses went up all over town.\n\nAll it needed was a railroad. The schemes to get one fizzled.\n\nWhen the railroad finally arrived in 1911, with great fanfare, the opportunity had passed.\n\nThe town kept the name anyway. Southport. A name for a city that never came.\n",
+    "teaser": "This town changed its name for a future that never turned up.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-the-city-of-the-south-atlantic/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 60.3,
+        "audioBytes": 966364
+      }
+    ],
+    "tags": [
+      "southport",
+      "smithville",
+      "waterfront",
+      "railroad",
+      "boom"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-the-festival-of-free-men",
+    "title": "The Festival of Free Men",
+    "summary": "Southport's Fourth of July began in the 1790s as the Festival of Free Men, with cannon at daybreak. In 1973 the barge blew.",
+    "point": {
+      "at": {
+        "lat": 33.91965,
+        "lng": -78.01965
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "North Howe Street, downtown Southport, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 74,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Picture this street lined with people on the Fourth of July. This town has been throwing that party for more than two hundred years.\n\nIt began in the 1790s, and back then it was called the Festival of Free Men. Ships in the harbor fired their cannons at daybreak, and on through the day, toasting the young nation.\n\nBy 1795 the old fort by the river had been patched up enough for the town to meet there, for its first documented Fourth of July.\n\nDuring the Civil War, the party shrank to a thirteen gun salute.\n\nBy 1925 there was a greased pole with a purse on top, swimming contests and a greased pig run. In 1964 a parade arrived, and thousands came downtown to watch it.\n\nIn the 1970s somebody organized a shrimp boat race. The boats were slow and kept blowing their engines, and the race was dropped after three years.\n\nThe worst night was in 1973. The fireworks were on a barge in the river, and they all went off at once. Volunteers jumped overboard, some of them unable to swim. Everyone survived.\n\nSince then, the fireworks have stayed in the sky.\n",
+    "teaser": "This town has thrown a Fourth of July party since the 1790s. One year the fireworks went off all at once.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-the-festival-of-free-men/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.3,
+        "audioBytes": 1189972
+      }
+    ],
+    "tags": [
+      "southport",
+      "fourth-of-july",
+      "festival",
+      "fireworks"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-the-gentleman-giant",
+    "title": "The Gentleman Giant",
+    "summary": "Elias Gore, a Southport fisherman nearly eight feet tall, was known as the gentleman giant. Children waited to see him.",
+    "point": {
+      "at": {
+        "lat": 33.9171,
+        "lng": -78.01895
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Southport waterfront at Bay Street and Howe Street, Southport, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Picture the boats coming in to this waterfront, and children waiting in the park for the men to come up the street. They were waiting for one man.\n\nHis name was Elias Gore, and in the early twentieth century he was known as the gentleman giant of Southport.\n\nHe was a fisherman. Reports put him at somewhere from seven foot eight to seven foot eleven, around four hundred pounds, with size sixteen shoes.\n\nPeople called him Nehi.\n\nIt was said he could haul in a full net of fish by himself, a job that usually took several men.\n\nHis daughter grew up on the stories. His hands were so big, she said, he could pick the children up by their heads, and they all wanted the rides.\n\nFor all his size, he was known for his gentle spirit, and for being kind to people of every size.\n\nHe died in 1944, at thirty eight, and he is buried in the John N Smith Cemetery, the only African American cemetery in town.\n\nThe best ride on this waterfront was a fisherman's hand.\n",
+    "teaser": "When the boats came in, the children of this town waited to see one fisherman walk up the street.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-the-gentleman-giant/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 66.6,
+        "audioBytes": 1066674
+      }
+    ],
+    "tags": [
+      "southport",
+      "fishermen",
+      "waterfront",
+      "african-american"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-the-harp-that-kept-playing",
+    "title": "The Harp That Kept Playing",
+    "summary": "A Southport ghost story: a young harpist at the Brunswick Inn drowned in 1882, and his harp joined the band that night.",
+    "point": {
+      "at": {
+        "lat": 33.9184,
+        "lng": -78.0158
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Brunswick Inn, East Bay Street at Atlantic Avenue, Southport, North Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 61,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the big house on the corner across the street. It was built in 1859, and by the 1880s it was a resort hotel. In summer it was known for its weekend music and dances.\n\nWhat follows is a legend. Nobody has proven any of the strange part.\n\nThe story goes that in 1882, a young musician from Italy named Antonio Caseletta came to this coast looking for work, and got a job playing the harp in the hotel band. One telling makes him nineteen.\n\nOne night he went sailing with the other musicians. He fell overboard and drowned.\n\nHe was buried a few blocks from here, in the Old Smithville Burying Ground.\n\nAccording to the legend, the band played that night without him, and left his chair and his harp empty. When they began, the sound of a harp joined in. There was nobody at it.\n\nSome people say they can still hear it, in the halls of the hotel.\n\nMost ghost stories want something. This ghost just wants to finish the set.\n",
+    "teaser": "The band left his chair empty that night. The harp played anyway, or so the story goes.",
+    "certaintyNote": "A published ghost story. The script says out loud that it is a legend, not proven; the drowning and burial are reported by the same tellers and are not independently confirmed here.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/southport-the-harp-that-kept-playing/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 60.8,
+        "audioBytes": 974305
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Caseletta",
+        "say": "kah-zeh-LET-tah"
+      }
+    ],
+    "tags": [
+      "southport",
+      "ghost",
+      "brunswick-inn",
+      "music"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-the-last-cupola",
+    "title": "The Last Cupola",
+    "summary": "A Civil War blockade runner from Southport built a house on Bay Street after the war, with the last cupola in town.",
+    "point": {
+      "at": {
+        "lat": 33.917,
+        "lng": -78.02125
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "T. M. Thompson House, north side of West Bay Street between Caswell Avenue and Lord Street, Southport, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 49,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along this side of the street for a house with a small cupola on the roof.\n\nWhen the town's historic houses were surveyed, it was the last cupola left on any house in Southport.\n\nIt was built by a blockade runner.\n\nIn the Civil War, Union warships sat off the mouth of the Cape Fear River to cut the Confederacy's trade. Many of this town's river pilots volunteered to run ships past them.\n\nThey were admired for it. And all too often, the runner lost his ship, his life, or both.\n\nThomas Thompson was one of the few pilots from here who made a success of it. Shortly after the war, he built this house.\n\nMost of the pilots who tried it lost their ships, their lives, or both.\n\nHe got a house, with a little lookout on top.\n",
+    "teaser": "Most of the pilots who ran the blockade lost everything. One of them built a house.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-the-last-cupola/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 48.6,
+        "audioBytes": 778283
+      }
+    ],
+    "tags": [
+      "southport",
+      "civil-war",
+      "blockade-runners",
+      "river-pilots",
+      "military"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-the-old-man-and-the-boy",
+    "title": "The Old Man and the Boy",
+    "summary": "Robert Ruark spent his boyhood at his grandfather's house on Lord Street, the root of his 1957 book The Old Man and the Boy.",
+    "point": {
+      "at": {
+        "lat": 33.91885,
+        "lng": -78.0211
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Adkins-Ruark House, west side of North Lord Street between Moore Street and Nash Street, Southport, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 56,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along the west side of Lord Street on this block for a two-story house with bay windows and a pair of porches.\n\nA river pilot named E H Adkins had it built in 1890. His grandson was Robert Ruark.\n\nRuark grew up in Wilmington, but as a boy he spent much of his time here, at his grandfather's house on Lord Street.\n\nHe became a popular journalist and author. Many of his books were about Africa.\n\nBut the one people kept coming back to was about this town. In 1957 he published The Old Man and the Boy, an account of his boyhood years around Southport. It was a bestseller.\n\nThe scholar Richard Walser listed it as one of five North Carolina books likely still to be read in a hundred years.\n\nRuark died in 1965. The boy in the book is still walking around this town.\n",
+    "teaser": "A bestselling author spent his boyhood on this block, and wrote the book people still read about it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-the-old-man-and-the-boy/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 56.2,
+        "audioBytes": 900745
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Ruark",
+        "say": "ROO-ark"
+      }
+    ],
+    "tags": [
+      "southport",
+      "robert-ruark",
+      "writers",
+      "books"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-the-reporter-who-could-not-hear",
+    "title": "The Reporter Who Could Not Hear",
+    "summary": "W. B. Keziah, who was completely deaf, founded the State Port Pilot and interviewed people in sign language and on paper.",
+    "point": {
+      "at": {
+        "lat": 33.918,
+        "lng": -78.01858
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The State Port Pilot office, East Moore Street, Southport, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along Moore Street for the newspaper office, and the small white frame building next door. The small one is where the paper used to be made.\n\nThe paper is the State Port Pilot. Its founder, W B Keziah, was completely deaf.\n\nIn 1928 he was a reporter in Whiteville, more than sixty miles inland, when he decided to start his own paper on the coast.\n\nAt first it was printed in Whiteville and trucked into Southport every day.\n\nHe could not keep up the payments, and he lost his paper. The new owners hired him back as a reporter.\n\nThen the new editor was sent overseas with the Navy in the Second World War, and Keziah was made editor again.\n\nHe did his interviews in sign language, and with a paper tablet he carried with him everywhere. His column was called Our Roving Reporter.\n\nAlong the way, he taught a good many people around here a bit of sign language.\n\nThe paper still comes out every Wednesday. It was built by a man who never heard a word anyone told him, and wrote down all of it.\n",
+    "teaser": "This town's newspaper was built by a reporter who could not hear a word of his interviews.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-the-reporter-who-could-not-hear/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 66,
+        "audioBytes": 1057479
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Keziah",
+        "say": "keh-ZY-ah"
+      }
+    ],
+    "tags": [
+      "southport",
+      "newspaper",
+      "deaf",
+      "state-port-pilot"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-the-reverends-church",
+    "title": "The Reverend's Church",
+    "summary": "Trinity United Methodist Church, built 1888 to 1890, was the church of Jamie's father in the film A Walk to Remember.",
+    "point": {
+      "at": {
+        "lat": 33.92025,
+        "lng": -78.0177
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Trinity United Methodist Church, East Nash Street between Howe Street and Atlantic Avenue, Southport, North Carolina"
+    },
+    "category": "inspo",
+    "format": "look-below",
+    "durationS": 32,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the white church with the squat bell tower on its roof. It was built between 1888 and 1890, by local carpenters, and inside it is polished Carolina pine.\n\nIn the film A Walk to Remember, Jamie's father was the reverend at this church.\n\nIt has turned up in several other films and television shows since.\n\nOn screen, it belonged to a fictional preacher. Off screen, it has been this town's church for well over a century.\n",
+    "teaser": "In A Walk to Remember, Jamie's father preached here.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-the-reverends-church/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 31.5,
+        "audioBytes": 504937
+      }
+    ],
+    "inspo": {
+      "kind": "creation",
+      "evidence": "site"
+    },
+    "tags": [
+      "southport",
+      "film",
+      "a-walk-to-remember",
+      "church"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-the-station-in-the-river",
+    "title": "The Station in the River",
+    "summary": "For decades ships stopped at a quarantine station in the river off Southport, to be searched for disease and fumigated.",
+    "point": {
+      "at": {
+        "lat": 33.9188,
+        "lng": -78.0147
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Quarantine Office site, south side of East Bay Street between Atlantic Avenue and Rhett Street, Southport, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out at the river. For decades, ships coming in from abroad had to stop out there before they were allowed any further.\n\nIn August 1862, yellow fever reached Wilmington. It is believed to have arrived on a steamship from the Bahamas. Six hundred and fifty four people died.\n\nSo a quarantine station was built near this town, out on the river. The one built in 1895 had ten buildings, on a foundation above the water.\n\nEvery ship tied up at its six hundred foot dock. Anyone found to be sick had to stay on the platform, which had its own hospital.\n\nThe ships were sprayed with sulfur from pressurized hoses, and only then went on upriver.\n\nNear this corner, on the river side of Bay Street, a small office ran the station's routine affairs from the shore.\n\nNew ways of controlling disease came in 1937, and the station was left to fall apart. Fire took many of its buildings in 1951. Hurricane Hazel took the rest in 1954.\n\nAll that was left was a concrete base that once held up a water tower. Today it is lit at night, so boats can see it.\n",
+    "teaser": "Every ship coming upriver once had to stop out there and prove nobody aboard was sick.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-the-station-in-the-river/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 77.6,
+        "audioBytes": 1241799
+      }
+    ],
+    "tags": [
+      "southport",
+      "quarantine",
+      "yellow-fever",
+      "maritime",
+      "waterfront"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-the-watch-on-the-river",
+    "title": "The Watch on the River",
+    "summary": "From the pilots' tower on Bay Street a watchman spotted ships at the river mouth and sent a pilot out to bring them in.",
+    "point": {
+      "at": {
+        "lat": 33.91665,
+        "lng": -78.01975
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "River Pilots Tower, West Bay Street between Howe Street and Lord Street, Southport, North Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 58,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the steel tower on the river side of the street. It is a lookout, and for most of this town's life, what the watchman saw from up there was the town's living.\n\nShips coming in from the ocean had to get past dangerous shoals at the mouth of the river. The men who took them through, and on up to the port of Wilmington, were the river pilots of this town.\n\nIf a man here was not a pilot, he was most likely a pilot's apprentice or a seaman.\n\nWhen a ship was seen nearing the mouth of the Cape Fear River, the tower watchman sent a pilot boat out to bring her in.\n\nThe first tower was wooden, eighty feet tall. This steel one replaced it in the 1940s.\n\nThe building at its foot is still a dispatch site for the river pilots.\n\nFrom 2013 to 2015 it had a second job, on television, as the radio station in Under the Dome.\n\nThe rest of the time, it has been watching for ships.\n",
+    "teaser": "For most of its life, this town lived on what one lookout could see.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-the-watch-on-the-river/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 57.7,
+        "audioBytes": 923732
+      }
+    ],
+    "tags": [
+      "southport",
+      "river-pilots",
+      "waterfront",
+      "maritime",
+      "under-the-dome"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-the-woman-who-raised-the-flags",
+    "title": "The Woman Who Raised the Flags",
+    "summary": "Jessie Stevens Taylor flew the storm flags here for sixty years. Her Hazel warnings are credited with saving hundreds.",
+    "point": {
+      "at": {
+        "lat": 33.91765,
+        "lng": -78.01795
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Weather tower site, Fort Johnston Garrison Lawn, South Davis Street at East Bay Street, Southport, North Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 64,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at this corner of the lawn by the river. A weather tower stood here from 1901, one of a chain the Weather Bureau put up along the east coast to warn ships of hurricanes.\n\nIt came down on a stormy night in February 2020, twisted by the wind. The town raised the money for an exact copy.\n\nThe tower spoke in flags. Two red pennants meant gale force winds. At night, a red light over a white light said the same thing.\n\nFor more than sixty years, the person raising those flags here was a volunteer, Jessie Stevens Taylor.\n\nIn October 1954, Hurricane Hazel came ashore in southern Brunswick County as a Category 4 storm. Taylor was seventy five years old. Her warnings are credited with saving the lives of hundreds of people.\n\nPresident Dwight Eisenhower sent her a commendation.\n\nNineteen people died in North Carolina in that storm. None of them died in Southport.\n",
+    "teaser": "For sixty years, one volunteer decided when this town should be afraid of the weather.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-the-woman-who-raised-the-flags/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 63.7,
+        "audioBytes": 1019863
+      }
+    ],
+    "tags": [
+      "southport",
+      "fort-johnston",
+      "hurricane-hazel",
+      "weather",
+      "women"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "southport-worse-than-hazel",
+    "title": "Worse Than Hazel",
+    "summary": "Hurricane Helene never made landfall in 1958, yet the damage in Southport was reported as worse than Hazel's.",
+    "point": {
+      "at": {
+        "lat": 33.91665,
+        "lng": -78.0206
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "West Bay Street waterfront between Lord Street and Howe Street, Southport, North Carolina"
+    },
+    "category": "land",
+    "format": "short",
+    "durationS": 60,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the buildings on the water side of this street. In 1954, Hurricane Hazel destroyed most of the commercial buildings on the south side of Bay Street.\n\nHazel became the benchmark hurricane for an entire generation. It is the storm people here measure the others by.\n\nFour years later, in September 1958, Hurricane Helene came up the coast with winds estimated at a hundred and thirty miles an hour.\n\nIt never made landfall. The eye stayed about twenty miles offshore.\n\nThe next day, an Associated Press report said the damage in Southport was worse than anything seen in Hazel.\n\nEvery house was said to have been damaged. A number of buildings caved in, their roofs lifted and tossed about like paper. More than half of the town's pier was carried away.\n\nAnd Helene came through near low tide.\n\nIt missed by twenty miles, at low tide, and it was still worse than Hazel.\n",
+    "teaser": "Everyone here measures storms by Hazel. Four years later, one did more damage and never even came ashore.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/southport-worse-than-hazel/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 60.2,
+        "audioBytes": 963856
+      }
+    ],
+    "tags": [
+      "southport",
+      "hurricane-hazel",
+      "hurricane-helene",
+      "weather",
+      "waterfront"
+    ],
+    "remoteness": 0
   },
   {
     "id": "st-pauls-still-standing",
@@ -17983,4 +19425,4 @@ export const ROUTES: readonly Route[] = [
 
 // What a person has really checked, as authored, before the demo override above. The
 // "true story" mark reads this, never the overridden status (`truth.ts` in the engine).
-export const VERIFIED_IDS: ReadonlySet<string> = new Set(["carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","dc-a-country-he-never-saw","dc-nineteen-in-the-stone","dc-no-props-no-serpents","dc-priced-by-size","dc-somewhere-to-hide","dc-the-ballroom-ward","dc-the-caretaker-heard-nothing","dc-the-cherry-tree-rebellion","dc-the-first-are-with-the-last","dc-the-house-on-h-street","dc-the-house-that-fired-back","dc-the-ladies-waiting-room","dc-the-man-who-found-the-bolts","dc-the-map-underfoot","dc-the-other-half-of-the-circle","dc-the-other-revere","dc-the-part-he-didnt-write","dc-the-plaque-on-the-fence","dc-the-starting-line-came-later","dc-the-trees-that-came-second","dc-the-word-was-waiting","dc-three-names-for-one-wing","dc-to-thee-we-sing","dc-where-the-money-ran-out","dc-where-the-war-ended","dc-white-before-the-fire","dc-written-in-the-dark","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","kure-beach-five-shells-in-the-dark","philadelphia-a-firehouse-on-a-market","philadelphia-a-steeple-paid-by-lottery","philadelphia-as-much-as-anyone-knows","philadelphia-congress-started-at-the-tavern","philadelphia-dorothy-todd-widow","philadelphia-hamlet-paid-for-the-hospital","philadelphia-he-left-the-year-blank","philadelphia-no-hatch-wide-enough","philadelphia-of-the-empire-eight","philadelphia-ona-judge-walked-out","philadelphia-penn-on-the-tower","philadelphia-read-aloud-in-the-yard","philadelphia-rising-or-setting","philadelphia-shoes-for-bob","philadelphia-the-baby-over-the-bank-door","philadelphia-the-bell-went-to-allentown","philadelphia-the-church-that-came-on-a-cart","philadelphia-the-church-you-have-to-find","philadelphia-the-congregation-of-the-dead","philadelphia-the-court-with-no-cases","philadelphia-the-crack-is-the-repair","philadelphia-the-first-vote-was-the-room","philadelphia-the-good-china","philadelphia-the-market-under-the-trains","philadelphia-the-room-upstairs","philadelphia-the-street-that-was-a-creek","philadelphia-two-rooms-one-roof","philadelphia-two-things-from-st-louis","philadelphia-washington-left-last","philadelphia-what-her-grandson-said","the-distance-across-the-street","the-lady-in-grey","the-prison-corridor","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-gathering-before-the-coup","wilmington-the-government-taken-by-force","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-jail-fire-without-an-answer","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-they-tried-to-burn","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-press-that-the-mob-burned","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);
+export const VERIFIED_IDS: ReadonlySet<string> = new Set(["bald-head-captain-charlie-lit-both","bald-head-the-builder-who-lost-money","bald-head-the-prisms-coming-home","bald-head-the-swim-to-southport","bald-head-the-woman-on-the-shore","carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","caswell-beach-a-hat-from-a-helicopter","caswell-beach-a-lighthouse-poured-in-a-week","caswell-beach-the-long-day-of-dunbar-davis","caswell-beach-the-night-caswell-blew-up","caswell-beach-the-second-brightest-light","caswell-beach-yachts-on-submarine-watch","dc-a-country-he-never-saw","dc-nineteen-in-the-stone","dc-no-props-no-serpents","dc-priced-by-size","dc-somewhere-to-hide","dc-the-ballroom-ward","dc-the-caretaker-heard-nothing","dc-the-cherry-tree-rebellion","dc-the-first-are-with-the-last","dc-the-house-on-h-street","dc-the-house-that-fired-back","dc-the-ladies-waiting-room","dc-the-man-who-found-the-bolts","dc-the-map-underfoot","dc-the-other-half-of-the-circle","dc-the-other-revere","dc-the-part-he-didnt-write","dc-the-plaque-on-the-fence","dc-the-starting-line-came-later","dc-the-trees-that-came-second","dc-the-word-was-waiting","dc-three-names-for-one-wing","dc-to-thee-we-sing","dc-where-the-money-ran-out","dc-where-the-war-ended","dc-white-before-the-fire","dc-written-in-the-dark","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","kure-beach-five-shells-in-the-dark","oak-island-five-left-standing","oak-island-how-oak-island-became-an-island","oak-island-the-fence-on-the-dune","philadelphia-a-firehouse-on-a-market","philadelphia-a-steeple-paid-by-lottery","philadelphia-as-much-as-anyone-knows","philadelphia-congress-started-at-the-tavern","philadelphia-dorothy-todd-widow","philadelphia-hamlet-paid-for-the-hospital","philadelphia-he-left-the-year-blank","philadelphia-no-hatch-wide-enough","philadelphia-of-the-empire-eight","philadelphia-ona-judge-walked-out","philadelphia-penn-on-the-tower","philadelphia-read-aloud-in-the-yard","philadelphia-rising-or-setting","philadelphia-shoes-for-bob","philadelphia-the-baby-over-the-bank-door","philadelphia-the-bell-went-to-allentown","philadelphia-the-church-that-came-on-a-cart","philadelphia-the-church-you-have-to-find","philadelphia-the-congregation-of-the-dead","philadelphia-the-court-with-no-cases","philadelphia-the-crack-is-the-repair","philadelphia-the-first-vote-was-the-room","philadelphia-the-good-china","philadelphia-the-market-under-the-trains","philadelphia-the-room-upstairs","philadelphia-the-street-that-was-a-creek","philadelphia-two-rooms-one-roof","philadelphia-two-things-from-st-louis","philadelphia-washington-left-last","philadelphia-what-her-grandson-said","southport-a-fish-house-plays-a-fish-shack","southport-a-wretched-little-place","southport-carved-in-imperishable-stone","southport-croaker-queen","southport-one-floor-below-the-cells","southport-pay-on-your-way-out","southport-red-over-white","southport-the-bent-oak","southport-the-city-of-the-south-atlantic","southport-the-festival-of-free-men","southport-the-gentleman-giant","southport-the-harp-that-kept-playing","southport-the-last-cupola","southport-the-old-man-and-the-boy","southport-the-reporter-who-could-not-hear","southport-the-reverends-church","southport-the-station-in-the-river","southport-the-watch-on-the-river","southport-the-woman-who-raised-the-flags","southport-worse-than-hazel","the-distance-across-the-street","the-lady-in-grey","the-prison-corridor","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-gathering-before-the-coup","wilmington-the-government-taken-by-force","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-jail-fire-without-an-answer","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-they-tried-to-burn","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-press-that-the-mob-burned","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);

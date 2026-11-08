@@ -69,10 +69,14 @@ export const CITIES: readonly City[] = [
   /*
    * The MVP region, as one pass (James, 2026-11-06): Wilmington, Wrightsville, Carolina
    * Beach, Kure Beach, Fort Fisher, the ferry, Southport, Oak Island and Topsail, all within
-   * 42km of downtown. One purchase covers a whole beach trip and the MVP drive; a visitor to
+   * 46km of downtown. One purchase covers a whole beach trip and the MVP drive; a visitor to
    * the coast does not think of Southport as a different place to buy.
+   *
+   * 46km, not 42: Bald Head Island's Cape Fear point, where the Theodosia Burr legend and
+   * Captain Charlie's cottages are, is 43.6km out (2026-11-08, with the first Southport and
+   * Oak Island echoes). It reaches Surf City and stops short of Holden Beach (49km).
    */
-  { id: "cape-fear", name: "Cape Fear Coast", centre: { lat: 34.2357, lng: -77.9452 }, radiusKm: 42 },
+  { id: "cape-fear", name: "Cape Fear Coast", centre: { lat: 34.2357, lng: -77.9452 }, radiusKm: 46 },
   /*
    * Washington and Philadelphia (James, 2026-11-08, with their first approved echoes). Every
    * echo in each is within 3km of the centre, but a pass is for the visit, not the

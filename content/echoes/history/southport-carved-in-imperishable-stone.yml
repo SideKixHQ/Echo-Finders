@@ -1,0 +1,111 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: Sidewalk at the corner of East Moore Street and North Rhett Street, at the edge of the Old Smithville Burying Ground (a public cemetery; be respectful).
+# Position: Intersection of E Moore St and N Rhett St from Overture address points (E Moore St 319 and 320, S Rhett St 106, N Rhett St 109); the nomination places the graveyard on the north side of Moore east of Rhett (medium confidence).
+id: southport-carved-in-imperishable-stone
+title: "Carved in Imperishable Stone"
+summary: "After ten river pilots were lost at sea in the 1870s, Smithville raised a monument to them in its burying ground."
+place: "Pilots' monument, Old Smithville Burying Ground, East Moore Street at North Rhett Street, Southport, North Carolina"
+at: { lat: 33.92005, lng: -78.0152 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 49
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [southport, river-pilots, cemetery, smithville, maritime]
+teaser: "Ten men from this small town went out to meet ships and did not come back."
+script: |
+  Look among the graves under these oaks for the pilots' monument. It was put up for river pilots lost at sea.
+
+  River pilots brought ships in from the Atlantic to the ports along this river since before there were any towns here.
+
+  In the 1870s, ten of them were lost at sea.
+
+  The loss was terrible for Smithville, as this town was called then, and for Wilmington.
+
+  Smithville had grown up around the fort by the river, and the fort's commander held several nights of entertainment to raise money for a monument. One was needed, he said, so that those who live after us may find the virtues and gallant deeds of their ancestors carved in the imperishable stone.
+
+  It still stands, a memorial to every pilot lost.
+
+  He was writing for people he would never meet. You are one of them.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "River pilots brought ships in from the Atlantic to the ports along this river since before there were any towns here."
+    source: 1
+    quote: "They have brought ships safely from the Atlantic ocean to ports along the river since before there were established towns in the area."
+  - says: "In the 1870s, ten of them were lost at sea."
+    source: 1
+    quote: "In the 1870s ten pilots were lost at sea."
+  - says: "The loss was terrible for Smithville, as this town was called then, and for Wilmington."
+    source: 1
+    quote: "The terrible loss to Smithville and Wilmington led to a monument at the Smithville Burying Ground that stands today as a memorial to all lost pilots."
+  - says: "as this town was called then"
+    source: 2
+    quote: "began construction in Smithville (now Southport) in 1748"
+  - says: "Smithville had grown up around the fort by the river, and the fort's commander held several nights of entertainment to raise money for a monument."
+    source: 1
+    quote: "Smithville was built around a military fort at the mouth of the Cape Fear river. The commander held several nights of entertainment as fundraisers for the monument."
+  - says: "One was needed, he said, so that those who live after us may find the virtues and gallant deeds of their ancestors carved in the imperishable stone."
+    source: 1
+    quote: "He said at the time that a monument was needed that “those who live after us may find the virtues and gallant deeds of their ancestors carved in the imperishable stone.”"
+  - says: "It still stands, a memorial to every pilot lost."
+    source: 1
+    quote: "a monument at the Smithville Burying Ground that stands today as a memorial to all lost pilots."
+  - says: "Look among the graves under these oaks for the pilots' monument."
+    source: 1
+    quote: "The event on Saturday is free and will feature descendants of pilots, current pilots, entertainment, and a wreath laying at the pilot’s monument."
+  - says: "You are one of them."
+    source: 1
+    quote: "“those who live after us may find the virtues and gallant deeds of their ancestors carved in the imperishable stone.”"
+sources:
+  - title: "Ceremony of Remembrance for the Lost Pilots of Smithville planned Saturday"
+    publisher: "WWAY TV3"
+    url: https://www.wwaytv3.com/ceremony-of-remembrance-for-the-lost-pilots-of-smithville-planned-saturday/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "History with 'Hud': How several forts protected the Cape Fear for centuries"
+    publisher: "WWAY TV3"
+    url: https://www.wwaytv3.com/history-with-hud-how-several-forts-protected-the-cape-fear-for-centuries/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-carved-in-imperishable-stone/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 48.8
+    audioBytes: 781208
+    transcript:
+      totalS: 48.8
+      lines:
+        - text: Look among the graves under these oaks for the pilots' monument.
+          atS: 0
+          durationS: 3.29
+        - text: It was put up for river pilots lost at sea.
+          atS: 3.46
+          durationS: 2.62
+        - text: River pilots brought ships in from the Atlantic to the ports along this river since before there were any towns here.
+          atS: 6.47
+          durationS: 6.52
+        - text: In the 1870s, ten of them were lost at sea.
+          atS: 13.5
+          durationS: 3.24
+        - text: The loss was terrible for Smithville, as this town was called then, and for Wilmington.
+          atS: 17.34
+          durationS: 4.93
+        - text: Smithville had grown up around the fort by the river, and the fort's commander held several nights of entertainment to raise money for a monument.
+          atS: 23.09
+          durationS: 7.41
+        - text: One was needed, he said, so that those who live after us may find the virtues and gallant deeds of their ancestors carved in the imperishable stone.
+          atS: 31.1
+          durationS: 8.68
+        - text: It still stands, a memorial to every pilot lost.
+          atS: 40.6
+          durationS: 3.75
+        - text: He was writing for people he would never meet.
+          atS: 45.05
+          durationS: 2.11
+        - text: You are one of them.
+          atS: 47.67
+          durationS: 1.09

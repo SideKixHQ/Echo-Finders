@@ -1,0 +1,145 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: The public harbor walk by the Bald Head Island ferry landing, looking across the river to Southport.
+# Position: Bald Head harbor village between the Overture points on Marina Wynd (33.8753 to 33.8763, -78.0016 to -78.0004) and Keelson Row (33.8757 to 33.8780, -77.9999 to -77.9985), placed at the harbor's west side by the ferry landing (low-medium confidence).
+id: bald-head-the-swim-to-southport
+title: "The Swim to Southport"
+summary: "Island lore says a daughter of keeper Captain Charlie Swan read the tides, swam from Bald Head to Southport, and won a bet."
+place: "Bald Head Island harbor and ferry landing, Bald Head Island, North Carolina"
+at: { lat: 33.8768, lng: -78.0008 }
+triggerRadiusKm: 0.08
+category: legend
+format: short
+durationS: 53
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  Family lore published by Our State; no record confirms the swim. The script says aloud that it is lore, not proven, and tells listeners not to try it.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [bald-head-island, southport, cape-fear-river, lighthouse-keeper, folklore]
+teaser: "A keeper's daughter bet her brothers she could swim to Southport."
+script: |
+  Look across the river to Southport. That is a long way to swim.
+
+  This is lore, not record. Nobody has proven it.
+
+  Captain Charlie Swan kept the Cape Fear Lighthouse, at the far end of this island, and his children grew up here. There were deer to chase, and alligators to be chased by.
+
+  The story goes that one of Captain Charlie's daughters bet her brothers she could swim from the island all the way to Southport. They did not believe her.
+
+  She had spent a lot of time with her father. She had studied the tides and currents of the Cape Fear River. And she knew that if she swam at low tide, the sandbars would be out of the water, and she could use them.
+
+  In the story, she made it. Her brothers had to pay up.
+
+  Please do not try it. Just look at the water for a moment, the way she would have. She read the river first.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Captain Charlie Swan kept the Cape Fear Lighthouse, at the far end of this island, and his children grew up here."
+    source: 1
+    quote: "Living out here before modern day conveniences arrived was work, but it was fun, too, especially for Captain Charlie's children, who spent much of their time growing up in an untamed, natural playground."
+  - says: "Captain Charlie Swan kept the Cape Fear Lighthouse"
+    source: 1
+    quote: "named after the Cape Fear Lighthouse keeper who occupied them alongside his family and assistants from 1903 to 1933."
+  - says: "There were deer to chase, and alligators to be chased by."
+    source: 1
+    quote: "There were deer to chase and alligators to be chased by."
+  - says: "The story goes that one of Captain Charlie's daughters bet her brothers she could swim from the island all the way to Southport."
+    source: 1
+    quote: "One bit of lore even exists that one of Captain Charlie's daughters bet her skeptical brothers that she could swim all the way from the island to Southport."
+  - says: "They did not believe her."
+    source: 1
+    quote: "bet her skeptical brothers"
+  - says: "She had spent a lot of time with her father."
+    source: 1
+    quote: "Having spent lots of time with her father"
+  - says: "She had studied the tides and currents of the Cape Fear River."
+    source: 1
+    quote: "she studied the tides and currents of the Cape Fear River enough to know that if she swam at low tide, she could use the exposed sandbars to her advantage."
+  - says: "And she knew that if she swam at low tide, the sandbars would be out of the water, and she could use them."
+    source: 1
+    quote: "if she swam at low tide, she could use the exposed sandbars to her advantage."
+  - says: "In the story, she made it."
+    source: 1
+    quote: "She succeeded, and they had to pay up."
+  - says: "Her brothers had to pay up."
+    source: 1
+    quote: "She succeeded, and they had to pay up."
+  - says: "Look across the river to Southport."
+    source: 1
+    quote: "Away from the lights of Southport"
+  - says: "This is lore, not record."
+    source: 1
+    quote: "One bit of lore even exists"
+  - says: "Please do not try it."
+    source: 1
+    quote: "One bit of lore even exists"
+  - says: "Just look at the water for a moment, the way she would have."
+    source: 1
+    quote: "she studied the tides and currents of the Cape Fear River"
+  - says: "She read the river first."
+    source: 1
+    quote: "she studied the tides and currents of the Cape Fear River"
+sources:
+  - title: "Homeplace: Captain Charlie's Cottages"
+    publisher: "Our State"
+    url: https://www.ourstate.com/captain-charlies-cottages/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/bald-head-the-swim-to-southport/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 53.1
+    audioBytes: 851007
+    transcript:
+      totalS: 53.1
+      lines:
+        - text: Look across the river to Southport.
+          atS: 0
+          durationS: 1.94
+        - text: That is a long way to swim.
+          atS: 2.26
+          durationS: 1.63
+        - text: This is lore, not record.
+          atS: 4.33
+          durationS: 1.85
+        - text: Nobody has proven it.
+          atS: 6.69
+          durationS: 1.23
+        - text: Captain Charlie Swan kept the Cape Fear Lighthouse, at the far end of this island, and his children grew up here.
+          atS: 8.36
+          durationS: 6.19
+        - text: There were deer to chase, and alligators to be chased by.
+          atS: 14.93
+          durationS: 3.34
+        - text: The story goes that one of Captain Charlie's daughters bet her brothers she could swim from the island all the way to Southport.
+          atS: 18.71
+          durationS: 6.94
+        - text: They did not believe her.
+          atS: 26.04
+          durationS: 1.49
+        - text: She had spent a lot of time with her father.
+          atS: 27.97
+          durationS: 2.41
+        - text: She had studied the tides and currents of the Cape Fear River.
+          atS: 30.77
+          durationS: 3.3
+        - text: And she knew that if she swam at low tide, the sandbars would be out of the water, and she could use them.
+          atS: 34.5
+          durationS: 6
+        - text: In the story, she made it.
+          atS: 41.11
+          durationS: 2.3
+        - text: Her brothers had to pay up.
+          atS: 44.01
+          durationS: 1.56
+        - text: Please do not try it.
+          atS: 46.01
+          durationS: 1.32
+        - text: Just look at the water for a moment, the way she would have.
+          atS: 47.84
+          durationS: 3.18
+        - text: She read the river first.
+          atS: 51.63
+          durationS: 1.5

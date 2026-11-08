@@ -1,0 +1,111 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: Beside the public gravel parking lot at the Oak Island Lighthouse, looking up at the lantern room.
+# Position: Oak Island Lighthouse NR UTM point converted and datum-shifted to 33.8928, -78.0352; placed about 40 m southwest at the gravel lot so it does not sit on the adult echo (medium confidence).
+id: caswell-beach-a-hat-from-a-helicopter
+title: "A Hat From a Helicopter"
+summary: "A children's telling of the Oak Island Lighthouse: a lantern set on top by helicopters, and ladders instead of stairs."
+place: "Oak Island Lighthouse, 300A Caswell Beach Road, Caswell Beach, North Carolina"
+at: { lat: 33.8925, lng: -78.0356 }
+triggerRadiusKm: 0.05
+category: kids
+format: short
+durationS: 46
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [caswell-beach, oak-island, lighthouse, oak-island-lighthouse]
+teaser: "How do you put the top on a lighthouse? You fly it there."
+script: |
+  Look all the way up to the very top of the lighthouse. See the little room with windows, where the light lives? A helicopter put it there.
+
+  Two Marine Corps helicopters lifted that top piece and held it up in the air over the tower. The wind was strong, so they had to wiggle it around. Then they lowered it into place, and a builder fastened it down.
+
+  Inside, there is something different too. Most old lighthouses have a twisty spiral staircase. This one has ladders, like on a ship. One hundred and thirty-four steps, all the way up.
+
+  And the lights up top get so hot that workers have to wear protective clothing in the light room.
+
+  A helicopter for a hat, and ladders for stairs. This lighthouse does things its own way.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Two Marine Corps helicopters lifted that top piece and held it up in the air over the tower."
+    source: 1
+    quote: "The lantern housing was placed on top of the structure by two helicopters loaned to the Coast Guard by the United States Marine Corps."
+  - says: "The wind was strong, so they had to wiggle it around."
+    source: 1
+    quote: "After some jockeying necessitated by high winds, the assembly was lowered into place and secured by construction worker W. T. Dennis"
+  - says: "Then they lowered it into place, and a builder fastened it down."
+    source: 1
+    quote: "the assembly was lowered into place and secured by construction worker W. T. Dennis"
+  - says: "Most old lighthouses have a twisty spiral staircase."
+    source: 1
+    quote: "Unlike traditional lighthouses, Oak Island Lighthouse does not include a spiral staircase."
+  - says: "This one has ladders, like on a ship."
+    source: 1
+    quote: "The gallery level is reached by mounting a series of interior ships ladders with eight landings and a total of 134 steps."
+  - says: "One hundred and thirty-four steps, all the way up."
+    source: 1
+    quote: "a total of 134 steps"
+  - says: "And the lights up top get so hot that workers have to wear protective clothing in the light room."
+    source: 2
+    quote: "The light produces so much heat that workers have to wear protective clothing when working in the beacon room."
+sources:
+  - title: "Oak Island Lighthouse, National Register of Historic Places Registration Form"
+    publisher: "North Carolina State Historic Preservation Office (National Register of Historic Places nomination)"
+    url: https://files.nc.gov/ncdcr/nr/BW0260.pdf
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Lighthouse Traveling Trunk, Cape Lookout National Seashore"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/teachers/classrooms/upload/Lighthouse-Traveling-Trunk_revised-2022_508_rev2.pdf
+    retrievedAt: "2026-11-08"
+    rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/caswell-beach-a-hat-from-a-helicopter/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 46
+    audioBytes: 737323
+    transcript:
+      totalS: 46
+      lines:
+        - text: Look all the way up to the very top of the lighthouse.
+          atS: 0
+          durationS: 3.1
+        - text: See the little room with windows, where the light lives?
+          atS: 3.27
+          durationS: 2.86
+        - text: A helicopter put it there.
+          atS: 6.3
+          durationS: 1.63
+        - text: Two Marine Corps helicopters lifted that top piece and held it up in the air over the tower.
+          atS: 8.26
+          durationS: 5.49
+        - text: The wind was strong, so they had to wiggle it around.
+          atS: 14.07
+          durationS: 3.34
+        - text: Then they lowered it into place, and a builder fastened it down.
+          atS: 17.74
+          durationS: 3.71
+        - text: Inside, there is something different too.
+          atS: 21.9
+          durationS: 2.68
+        - text: Most old lighthouses have a twisty spiral staircase.
+          atS: 25.09
+          durationS: 3.3
+        - text: This one has ladders, like on a ship.
+          atS: 28.71
+          durationS: 2.23
+        - text: One hundred and thirty-four steps, all the way up.
+          atS: 31.45
+          durationS: 2.69
+        - text: And the lights up top get so hot that workers have to wear protective clothing in the light room.
+          atS: 34.39
+          durationS: 5.12
+        - text: A helicopter for a hat, and ladders for stairs.
+          atS: 39.95
+          durationS: 3.09
+        - text: This lighthouse does things its own way.
+          atS: 43.48
+          durationS: 2.54

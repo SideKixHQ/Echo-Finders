@@ -1,0 +1,96 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: A public waterway access along East Yacht Drive, facing the Intracoastal Waterway and the mainland.
+# Position: Overture address point 2001 East Yacht Drive (33.92430, -78.13960), moved about 20 m toward the waterway; Oak Island's public waterway accesses are along this street (medium-low confidence that a numbered access is exactly here).
+id: oak-island-how-oak-island-became-an-island
+title: "How Oak Island Became an Island"
+summary: "Oak Island was cut off from the mainland in the 1930s, when the Intracoastal Waterway was finished."
+place: "Intracoastal Waterway shore along East Yacht Drive, Oak Island, North Carolina"
+at: { lat: 33.9245, lng: -78.1396 }
+triggerRadiusKm: 0.08
+category: land
+format: short
+durationS: 44
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [oak-island, intracoastal-waterway, bridges]
+teaser: "The water on this side of the island has not always been here."
+script: |
+  Look at the water on this side of the island, the quiet side. It is the Intracoastal Waterway, and it is the reason you are standing on an island at all.
+
+  Oak Island was not always an island. This twelve mile strip of land was cut off from the rest of Brunswick County in the 1930s, when the waterway was finished.
+
+  A swing bridge was put in to bring people across. In 1971 a barge hit it and destroyed it.
+
+  A high rise bridge opened in 1975, and a second one in 2010. Two ways in, and both of them cross this channel.
+
+  On the beach side, you face the ocean. On this side, you are looking at the water that made the island.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It is the Intracoastal Waterway, and it is the reason you are standing on an island at all."
+    source: 1
+    quote: "The 12-mile strip of land was disconnected from the rest of Brunswick County in the 1930s with the completion of the Intracoastal Waterway."
+  - says: "Oak Island was not always an island."
+    source: 1
+    quote: "But Oak Island wasn't always an island."
+  - says: "This twelve mile strip of land was cut off from the rest of Brunswick County in the 1930s, when the waterway was finished."
+    source: 1
+    quote: "The 12-mile strip of land was disconnected from the rest of Brunswick County in the 1930s with the completion of the Intracoastal Waterway."
+  - says: "In 1971 a barge hit it and destroyed it."
+    source: 1
+    quote: "A swing bridge was installed to allow easy access on to the island, but it was destroyed by a barge strike in 1971."
+  - says: "A swing bridge was put in to bring people across."
+    source: 1
+    quote: "A swing bridge was installed to allow easy access on to the island"
+  - says: "A high rise bridge opened in 1975, and a second one in 2010."
+    source: 1
+    quote: "A high rise replacement began to be built and opened to traffic in 1975, with a second high rise structure completed in 2010"
+  - says: "Two ways in, and both of them cross this channel."
+    source: 1
+    quote: "allowing for two ways into town."
+sources:
+  - title: "History with 'Hud': How three Cape Fear beach towns exploded into popular tourist destinations"
+    publisher: "WWAY TV3"
+    url: https://www.wwaytv3.com/history-with-hud-how-three-cape-fear-beach-towns-exploded-into-popular-tourist-destinations/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/oak-island-how-oak-island-became-an-island/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 44.1
+    audioBytes: 706812
+    transcript:
+      totalS: 44.1
+      lines:
+        - text: Look at the water on this side of the island, the quiet side.
+          atS: 0
+          durationS: 3.89
+        - text: It is the Intracoastal Waterway, and it is the reason you are standing on an island at all.
+          atS: 4.4
+          durationS: 5.27
+        - text: Oak Island was not always an island.
+          atS: 10.37
+          durationS: 2.12
+        - text: This twelve mile strip of land was cut off from the rest of Brunswick County in the 1930s, when the waterway was finished.
+          atS: 12.88
+          durationS: 7.44
+        - text: A swing bridge was put in to bring people across.
+          atS: 20.56
+          durationS: 3.2
+        - text: In 1971 a barge hit it and destroyed it.
+          atS: 24.09
+          durationS: 3.74
+        - text: A high rise bridge opened in 1975, and a second one in 2010.
+          atS: 28.15
+          durationS: 5.4
+        - text: Two ways in, and both of them cross this channel.
+          atS: 33.83
+          durationS: 3.2
+        - text: On the beach side, you face the ocean.
+          atS: 37.42
+          durationS: 2.58
+        - text: On this side, you are looking at the water that made the island.
+          atS: 40.44
+          durationS: 3.68

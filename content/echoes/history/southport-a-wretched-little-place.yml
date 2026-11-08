@@ -1,0 +1,151 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: East Bay Street sidewalk in front of the Garrison House, a little east of Davis Street; the house and lawn are city property, view from the street.
+# Position: Overture address point for 203 E Bay St (33.917988, -78.017426), nudged onto the Bay Street sidewalk; the NC marker for Fort Johnston and for Josiah Martin both stand on Bay Street (high confidence).
+id: southport-a-wretched-little-place
+title: "A Wretched Little Place"
+summary: "In 1775 the last royal governor fled to Fort Johnston, then to a warship offshore. Days later the fort was burned."
+place: "Fort Johnston Garrison House, 203 East Bay Street, Southport, North Carolina"
+at: { lat: 33.9179, lng: -78.01715 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [southport, fort-johnston, revolution, military, josiah-martin]
+teaser: "The last royal governor of North Carolina came here to hide. He did not like it."
+script: |
+  Look at the brick house with the two-story porch. It is all that is left of a fort, and the fort before this one was burned to the ground.
+
+  In May 1775, Josiah Martin, the last royal governor of North Carolina, fled his own palace under cover of darkness. He came from New Bern to this fort, at the mouth of the Cape Fear River, where English warships lay at anchor.
+
+  He was not impressed. He described the fort as a wretched little place.
+
+  Then he heard that the Wilmington Committee of Safety planned to attack the fort and seize him. So the governor of the colony moved out to sea, onto a warship called the Cruizer.
+
+  It was a wise move. Five days later the militia, in his own words, wantonly in the dead hour of night set on fire and reduced to ashes the houses and buildings within the fort.
+
+  It was the first active violence against the British in North Carolina.
+
+  The new federal government rebuilt the fort after the Revolution. This house, the officers' quarters, is the only building of it still standing.
+
+  As for the governor, the Cruizer stayed his headquarters through the summer and fall. The last royal governor of North Carolina ended up running the colony from a boat.
+pronunciations:
+  - written: Cruizer
+    say: CRUISE-er
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In May 1775, Josiah Martin, the last royal governor of North Carolina, fled his own palace under cover of darkness."
+    source: 1
+    quote: "On May 24, 1775 , Josiah Martin, the last royal governor of North Carolina, fled Tryon Palace under cover of darkness."
+  - says: "He came from New Bern to this fort, at the mouth of the Cape Fear River, where English warships lay at anchor."
+    source: 1
+    quote: "Martin went from New Bern to Fort Johnston , at the mouth of the Cape Fear River, where several English warships lay at anchor."
+  - says: "He described the fort as a wretched little place."
+    source: 1
+    quote: "He described the fort as “a wretched little place.”"
+  - says: "Then he heard that the Wilmington Committee of Safety planned to attack the fort and seize him."
+    source: 1
+    quote: "Receiving reports that the Wilmington Committee of Safety planned to attack the fort and seize him, Martin took refuge on the HMS Cruizer that was resting offshore."
+  - says: "So the governor of the colony moved out to sea, onto a warship called the Cruizer."
+    source: 1
+    quote: "Martin took refuge on the HMS Cruizer that was resting offshore."
+  - says: "Five days later the militia, in his own words, wantonly in the dead hour of night set on fire and reduced to ashes the houses and buildings within the fort."
+    source: 1
+    quote: "It was a wise move, since five days later, the militia, in Martin’s words, “wantonly in the dead hour of night set on fire and reduced to ashes the houses and buildings within the Fort.”"
+  - says: "It is all that is left of a fort"
+    source: 2
+    quote: "Today, all that remains of the fort are the officers’ quarters."
+  - says: "the fort before this one was burned to the ground"
+    source: 2
+    quote: "a group of Whigs, led by John Ashe and Cornelius Harnett, seized Fort Johnston in July 1775 and burned it to the ground."
+  - says: "It was the first active violence against the British in North Carolina."
+    source: 2
+    quote: "The torching marked the first active violence against the British in North Carolina."
+  - says: "The new federal government rebuilt the fort after the Revolution."
+    source: 2
+    quote: "Between 1794 and 1809, the new federal government rebuilt Fort Johnston."
+  - says: "This house, the officers' quarters, is the only building of it still standing."
+    source: 2
+    quote: "Today, all that remains of the fort are the officers’ quarters."
+  - says: "Look at the brick house with the two-story porch."
+    source: 3
+    quote: "The earlier entrance portico was replaced with a two-story pedimented portico supported by four square columns."
+  - says: "As for the governor, the Cruizer stayed his headquarters through the summer and fall."
+    source: 1
+    quote: "would remain Martin’s headquarters through the summer and fall."
+  - says: "The last royal governor of North Carolina ended up running the colony from a boat."
+    source: 1
+    quote: "From aboard the ship, on August 8, he issued his “Fiery Proclamation,” denouncing the safety committees."
+sources:
+  - title: "Last Royal Governor Ruled from Offshore (This Day in North Carolina History)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2016/05/24/last-royal-governor-ruled-offshore
+    retrievedAt: "2026-11-08"
+    rights: public-domain
+  - title: "Fort Johnston (D-11)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/08/fort-johnston-d-11
+    retrievedAt: "2026-11-08"
+    rights: public-domain
+  - title: "Fort Johnston, National Register of Historic Places Registration Form"
+    publisher: "North Carolina State Historic Preservation Office"
+    url: https://files.nc.gov/ncdcr/nr/BW0004.pdf
+    retrievedAt: "2026-11-08"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-a-wretched-little-place/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 84.8
+    audioBytes: 1357156
+    transcript:
+      totalS: 84.8
+      lines:
+        - text: Look at the brick house with the two-story porch.
+          atS: 0
+          durationS: 2.93
+        - text: It is all that is left of a fort, and the fort before this one was burned to the ground.
+          atS: 3.88
+          durationS: 5.1
+        - text: In May 1775, Josiah Martin, the last royal governor of North Carolina, fled his own palace under cover of darkness.
+          atS: 10.28
+          durationS: 9.68
+        - text: He came from New Bern to this fort, at the mouth of the Cape Fear River, where English warships lay at anchor.
+          atS: 20.77
+          durationS: 6.95
+        - text: He was not impressed.
+          atS: 28.54
+          durationS: 1.36
+        - text: He described the fort as a wretched little place.
+          atS: 30.41
+          durationS: 2.83
+        - text: Then he heard that the Wilmington Committee of Safety planned to attack the fort and seize him.
+          atS: 33.84
+          durationS: 5.65
+        - text: So the governor of the colony moved out to sea, onto a warship called the Cruizer.
+          atS: 40.61
+          durationS: 5.11
+        - text: It was a wise move.
+          atS: 46.32
+          durationS: 1.41
+        - text: Five days later the militia, in his own words, wantonly in the dead hour of night set on fire and reduced to ashes the houses and buildings within the fort.
+          atS: 48.33
+          durationS: 10.74
+        - text: It was the first active violence against the British in North Carolina.
+          atS: 59.67
+          durationS: 4.12
+        - text: The new federal government rebuilt the fort after the Revolution.
+          atS: 64.12
+          durationS: 4.09
+        - text: This house, the officers' quarters, is the only building of it still standing.
+          atS: 68.65
+          durationS: 4.82
+        - text: As for the governor, the Cruizer stayed his headquarters through the summer and fall.
+          atS: 73.91
+          durationS: 5.1
+        - text: The last royal governor of North Carolina ended up running the colony from a boat.
+          atS: 79.45
+          durationS: 5.31

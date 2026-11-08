@@ -1,0 +1,123 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: North end of Yacht Basin Drive, looking out over the basin toward the river (public street).
+# Position: Overture address point for Yacht Basin Dr 90 (33.917782, -78.023544), nudged onto the street at the north end of the basin (medium confidence).
+id: southport-the-city-of-the-south-atlantic
+title: "The City of the South Atlantic"
+summary: "In 1887 Smithville renamed itself Southport, sure it would be the great seaport of the South. The railroad came too late."
+place: "Southport waterfront at the Old Yacht Basin, Yacht Basin Drive, Southport, North Carolina"
+at: { lat: 33.9179, lng: -78.0234 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 60
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [southport, smithville, waterfront, railroad, boom]
+teaser: "This town changed its name for a future that never turned up."
+script: |
+  Look out past the boats to the river. In the 1880s, people here were sure this water would make them the next great city of the South.
+
+  In 1887 the village of Smithville was renamed Southport, in eager anticipation of the day it would emerge as the great seaport of the southeast.
+
+  The river had been dredged and an inlet closed off, and for the first time in two hundred years North Carolina had an easily reached deep water harbor.
+
+  It would be, one booster wrote, the city of the South Atlantic.
+
+  Money came from Boston, Fort Wayne and Chicago. Land prices began to soar. Dozens of new houses went up all over town.
+
+  All it needed was a railroad. The schemes to get one fizzled.
+
+  When the railroad finally arrived in 1911, with great fanfare, the opportunity had passed.
+
+  The town kept the name anyway. Southport. A name for a city that never came.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In 1887 the village of Smithville was renamed Southport, in eager anticipation of the day it would emerge as the great seaport of the southeast."
+    source: 1
+    quote: "In 1887 the small coastal village of Smithville was rechristened Southport in eager anticipation of the day when it would emerge as the great seaport of the southeast."
+  - says: "In the 1880s, people here were sure this water would make them the next great city of the South."
+    source: 1
+    quote: "The allure of building another Chicago or Atlanta attracted money and men to Southport."
+  - says: "The river had been dredged and an inlet closed off, and for the first time in two hundred years North Carolina had an easily reached deep water harbor."
+    source: 1
+    quote: "For the first time in two hundred years, North Carolina had an easily accessible deep water harbor."
+  - says: "It would be, one booster wrote, the city of the South Atlantic."
+    source: 1
+    quote: "strangest of all will be its future history, if it becomes not the city of the South Atlantic"
+  - says: "Money came from Boston, Fort Wayne and Chicago."
+    source: 1
+    quote: "Wealthy outsiders from Boston, Fort Wayne and Chicago descended upon the town to buy up land and to speculate in new commercial ventures."
+  - says: "Dozens of new houses went up all over town."
+    source: 1
+    quote: "Dozens of new houses were going up all over town."
+  - says: "All it needed was a railroad."
+    source: 1
+    quote: "What Southport needed, then, was a railroad line"
+  - says: "The schemes to get one fizzled."
+    source: 1
+    quote: "But nothing of substance ever developed; the schemes fizzled."
+  - says: "When the railroad finally arrived in 1911, with great fanfare, the opportunity had passed."
+    source: 1
+    quote: "Although the railroad finally arrived in 1911 with great fanfare, the opportunity had passed."
+  - says: "A name for a city that never came."
+    source: 1
+    quote: "There was the growing realization that Southport would never become anything more than a pleasant little coastal village."
+sources:
+  - title: "Southport Historic District, National Register of Historic Places Inventory-Nomination Form"
+    publisher: "North Carolina State Historic Preservation Office"
+    url: https://files.nc.gov/ncdcr/nr/BW0008.pdf
+    retrievedAt: "2026-11-08"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-the-city-of-the-south-atlantic/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 60.3
+    audioBytes: 966364
+    transcript:
+      totalS: 60.3
+      lines:
+        - text: Look out past the boats to the river.
+          atS: 0
+          durationS: 1.94
+        - text: In the 1880s, people here were sure this water would make them the next great city of the South.
+          atS: 2.26
+          durationS: 5.81
+        - text: In 1887 the village of Smithville was renamed Southport, in eager anticipation of the day it would emerge as the great seaport of the southeast.
+          atS: 8.45
+          durationS: 9.66
+        - text: The river had been dredged and an inlet closed off, and for the first time in two hundred years North Carolina had an easily reached deep water harbor.
+          atS: 18.81
+          durationS: 9.53
+        - text: It would be, one booster wrote, the city of the South Atlantic.
+          atS: 29.04
+          durationS: 4.09
+        - text: Money came from Boston, Fort Wayne and Chicago.
+          atS: 33.37
+          durationS: 3.31
+        - text: Land prices began to soar.
+          atS: 37
+          durationS: 1.9
+        - text: Dozens of new houses went up all over town.
+          atS: 39.15
+          durationS: 2.94
+        - text: All it needed was a railroad.
+          atS: 42.41
+          durationS: 2
+        - text: The schemes to get one fizzled.
+          atS: 44.62
+          durationS: 1.82
+        - text: When the railroad finally arrived in 1911, with great fanfare, the opportunity had passed.
+          atS: 46.77
+          durationS: 6.09
+        - text: The town kept the name anyway.
+          atS: 53.67
+          durationS: 1.64
+        - text: Southport.
+          atS: 56.12
+          durationS: 0.96
+        - text: A name for a city that never came.
+          atS: 57.78
+          durationS: 2.54

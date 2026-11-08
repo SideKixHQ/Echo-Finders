@@ -1,0 +1,108 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: East sidewalk of North Howe Street across from the Amuzu Theatre, between Moore and Nash Streets.
+# Position: Overture address point for N Howe St 111 (33.918739, -78.019753), the theatre's address as commonly listed; the nomination puts the 1918 Amuzu on the west side of Howe between Moore and Nash. Listener across the street (medium confidence).
+id: southport-croaker-queen
+title: "Croaker Queen"
+summary: "The Amuzu Theatre was where Sarah Michelle Gellar's character was crowned Croaker Queen in I Know What You Did Last Summer."
+place: "Amuzu Theatre, North Howe Street between Moore Street and Nash Street, Southport, North Carolina"
+at: { lat: 33.9187, lng: -78.01955 }
+triggerRadiusKm: 0.04
+category: inspo
+inspo:
+  kind: creation
+  evidence: site
+format: short
+durationS: 35
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [southport, film, i-know-what-you-did-last-summer, theatre]
+teaser: "A horror film crowned its beauty queen on this stage."
+script: |
+  Look at the old theatre across the street. It was built in 1918, and it is still in use.
+
+  In the 1997 slasher film I Know What You Did Last Summer, this is where the town beauty pageant was held.
+
+  On its stage, Sarah Michelle Gellar's character was crowned Croaker Queen.
+
+  Much of the film was shot in Southport, taking advantage of the town's waterfront.
+
+  The theatre has been on the big screen in other films too, among them Crimes of the Heart and The Secret Life of Bees.
+
+  A croaker is a fish. In this town, for one night, it was a crown.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "It was built in 1918, and it is still in use."
+    source: 2
+    quote: "Built in 1918, this historic theater has served as a cinema and a live theater venue."
+  - says: "and it is still in use"
+    source: 1
+    quote: "is held in the historic and still-in-use Amuzu Theatre"
+  - says: "In the 1997 slasher film I Know What You Did Last Summer, this is where the town beauty pageant was held."
+    source: 1
+    quote: "Released in 1997, this famed slasher film with a hook-wielding killer is loosely based on a 1973 novel by the same name."
+  - says: "this is where the town beauty pageant was held"
+    source: 1
+    quote: "And the film’s beauty pageant, where Sarah Michelle Gellar’s character was crowned Croaker Queen, is held in the historic and still-in-use Amuzu Theatre ."
+  - says: "On its stage, Sarah Michelle Gellar's character was crowned Croaker Queen."
+    source: 3
+    quote: "See where Helen (Sarah Michelle Gellar) was crowned Croaker Queen"
+  - says: "Much of the film was shot in Southport, taking advantage of the town's waterfront."
+    source: 1
+    quote: "Much of the film was shot in Southport , taking advantage of the town’s waterfront location."
+  - says: "The theatre has been on the big screen in other films too, among them Crimes of the Heart and The Secret Life of Bees."
+    source: 2
+    quote: "It has been on the big screen in Crimes of the Heart , I Know What You Did Last Summer , and The Secret Life of Bees ."
+  - says: "In this town, for one night, it was a crown."
+    source: 1
+    quote: "where Sarah Michelle Gellar’s character was crowned Croaker Queen"
+sources:
+  - title: "From Screen to Scream: Horror Film Sites and Haunts in North Carolina"
+    publisher: "Visit NC"
+    url: https://www.visitnc.com/list/screen-scream-horror-film-sites-and-haunts-north-carolina
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "A Guide to Downtown Southport"
+    publisher: "Our State"
+    url: https://www.ourstate.com/a-guide-to-downtown-southport/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Take a Totally '90s Film Tour of North Carolina"
+    publisher: "Visit NC"
+    url: https://www.visitnc.com/list/take-totally-90s-film-tour-north-carolina
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-croaker-queen/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 35.3
+    audioBytes: 566377
+    transcript:
+      totalS: 35.3
+      lines:
+        - text: Look at the old theatre across the street.
+          atS: 0
+          durationS: 2.04
+        - text: It was built in 1918, and it is still in use.
+          atS: 2.08
+          durationS: 3.29
+        - text: In the 1997 slasher film I Know What You Did Last Summer, this is where the town beauty pageant was held.
+          atS: 5.75
+          durationS: 6.43
+        - text: On its stage, Sarah Michelle Gellar's character was crowned Croaker Queen.
+          atS: 12.56
+          durationS: 4.35
+        - text: Much of the film was shot in Southport, taking advantage of the town's waterfront.
+          atS: 17.36
+          durationS: 4.9
+        - text: The theatre has been on the big screen in other films too, among them Crimes of the Heart and The Secret Life of Bees.
+          atS: 22.7
+          durationS: 7.21
+        - text: A croaker is a fish.
+          atS: 30.08
+          durationS: 1.57
+        - text: In this town, for one night, it was a crown.
+          atS: 32.03
+          durationS: 3.31

@@ -1,0 +1,113 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: West Bay Street sidewalk at the River Pilots Tower, on the river side between Howe and Lord Streets; the tower is a working pilots' dispatch site, view from the street.
+# Position: South side of W Bay St between Howe and Lord, where the National Register nomination lists the River Pilots Tower; estimated from Overture points for W Bay St 101 to 111 (medium confidence, check against the tower on site).
+id: southport-the-watch-on-the-river
+title: "The Watch on the River"
+summary: "From the pilots' tower on Bay Street a watchman spotted ships at the river mouth and sent a pilot out to bring them in."
+place: "River Pilots Tower, West Bay Street between Howe Street and Lord Street, Southport, North Carolina"
+at: { lat: 33.91665, lng: -78.01975 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 58
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [southport, river-pilots, waterfront, maritime, under-the-dome]
+teaser: "For most of its life, this town lived on what one lookout could see."
+script: |
+  Look up at the steel tower on the river side of the street. It is a lookout, and for most of this town's life, what the watchman saw from up there was the town's living.
+
+  Ships coming in from the ocean had to get past dangerous shoals at the mouth of the river. The men who took them through, and on up to the port of Wilmington, were the river pilots of this town.
+
+  If a man here was not a pilot, he was most likely a pilot's apprentice or a seaman.
+
+  When a ship was seen nearing the mouth of the Cape Fear River, the tower watchman sent a pilot boat out to bring her in.
+
+  The first tower was wooden, eighty feet tall. This steel one replaced it in the 1940s.
+
+  The building at its foot is still a dispatch site for the river pilots.
+
+  From 2013 to 2015 it had a second job, on television, as the radio station in Under the Dome.
+
+  The rest of the time, it has been watching for ships.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "The men who took them through, and on up to the port of Wilmington, were the river pilots of this town."
+    source: 1
+    quote: "guided by Southport pilots past dangerous shoals at the mouth of the river to the port of Wilmington"
+  - says: "Ships coming in from the ocean had to get past dangerous shoals at the mouth of the river."
+    source: 1
+    quote: "guided by Southport pilots past dangerous shoals at the mouth of the river to the port of Wilmington"
+  - says: "If a man here was not a pilot, he was most likely a pilot's apprentice or a seaman."
+    source: 1
+    quote: "If a man was not a pilot, then he was either a pilot apprentice or seaman."
+  - says: "When a ship was seen nearing the mouth of the Cape Fear River, the tower watchman sent a pilot boat out to bring her in."
+    source: 1
+    quote: "When a ship was observed nearing the mouth of the Cape Fear River, the tower watchman would dispatch a pilot boat to aid the incoming ship"
+  - says: "The first tower was wooden, eighty feet tall."
+    source: 2
+    quote: "The Southport pilot tower was originally an 80-foot wooden structure used for more than 250 years as a watch point to help guide ships into the Port of Wilmington."
+  - says: "This steel one replaced it in the 1940s."
+    source: 2
+    quote: "It was replaced by a metal tower in the 1940s to ensure survival of the structure"
+  - says: "The building at its foot is still a dispatch site for the river pilots."
+    source: 2
+    quote: "The lower portion of the steel tower and two-story frame building below it still serve as a dispatch site for local river pilots."
+  - says: "From 2013 to 2015 it had a second job, on television, as the radio station in Under the Dome."
+    source: 2
+    quote: "it’s even appeared in locally-filmed TV shows, like standing is as radio station for ‘Under the Dome’ from 2013 through 2015."
+sources:
+  - title: "Southport Historic District, National Register of Historic Places Inventory-Nomination Form"
+    publisher: "North Carolina State Historic Preservation Office"
+    url: https://files.nc.gov/ncdcr/nr/BW0008.pdf
+    retrievedAt: "2026-11-08"
+    rights: public-domain
+  - title: "History with 'Hud': The evolving role of Southport's pilot tower"
+    publisher: "WWAY TV3"
+    url: https://www.wwaytv3.com/history-with-hud-the-evolving-role-of-southports-pilot-tower/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-the-watch-on-the-river/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 57.7
+    audioBytes: 923732
+    transcript:
+      totalS: 57.7
+      lines:
+        - text: Look up at the steel tower on the river side of the street.
+          atS: 0
+          durationS: 3.3
+        - text: It is a lookout, and for most of this town's life, what the watchman saw from up there was the town's living.
+          atS: 3.62
+          durationS: 6.85
+        - text: Ships coming in from the ocean had to get past dangerous shoals at the mouth of the river.
+          atS: 10.91
+          durationS: 4.87
+        - text: The men who took them through, and on up to the port of Wilmington, were the river pilots of this town.
+          atS: 16.1
+          durationS: 5.54
+        - text: If a man here was not a pilot, he was most likely a pilot's apprentice or a seaman.
+          atS: 22.25
+          durationS: 5.4
+        - text: When a ship was seen nearing the mouth of the Cape Fear River, the tower watchman sent a pilot boat out to bring her in.
+          atS: 28.34
+          durationS: 6.78
+        - text: The first tower was wooden, eighty feet tall.
+          atS: 35.5
+          durationS: 3.22
+        - text: This steel one replaced it in the 1940s.
+          atS: 39.1
+          durationS: 2.8
+        - text: The building at its foot is still a dispatch site for the river pilots.
+          atS: 42.6
+          durationS: 3.74
+        - text: From 2013 to 2015 it had a second job, on television, as the radio station in Under the Dome.
+          atS: 46.78
+          durationS: 7.64
+        - text: The rest of the time, it has been watching for ships.
+          atS: 54.86
+          durationS: 2.82

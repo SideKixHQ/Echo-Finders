@@ -1,0 +1,144 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: Public end of Caswell Beach Road at the Fort Caswell gate. The fort is private land (a Baptist retreat); do not enter.
+# Position: Overture address points for 100 Caswell Beach Road (the Fort Caswell property, the NR nomination's street address) run east from about -78.028; the gate end of the public road is placed at the westernmost of them, nudged onto the road (medium-low confidence; check on a map before approval).
+id: caswell-beach-the-night-caswell-blew-up
+title: "The Night Caswell Blew Up"
+summary: "In January 1865 the Confederates abandoning Fort Caswell blew up its powder magazines. A witness compared it to a volcano."
+place: "Fort Caswell gate, end of Caswell Beach Road, Caswell Beach, North Carolina"
+at: { lat: 33.8914, lng: -78.0285 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 81
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [caswell-beach, oak-island, fort-caswell, civil-war, military]
+teaser: "The worst damage this fort ever took, its own side did."
+script: |
+  Beyond this gate is Fort Caswell. The property is a church retreat now, private land, so this story is one to hear from the road.
+
+  Across the river, Fort Fisher fell to Union forces on the fifteenth of January, 1865. The troops here were ordered to abandon this fort and destroy its ammunition.
+
+  On the seventeenth of January, they blew up the powder magazines.
+
+  A newspaper reported being woken at two in the morning by an explosion that shook its office to its foundation.
+
+  A witness across the water, at what is now Southport, saw a vivid flash of light travel toward the fort. Then, he wrote, it was as if a mighty volcano had sprung its blazing contents from the sea into the sky. The roar smashed the glass in his house.
+
+  The blast destroyed the entire southeast face of the fort.
+
+  The following day, Union forces walked into the abandoned fort and took it.
+
+  Here is the strange part. The guns of this fort often fought Union warships, all through the war, and yet not a single soldier was killed in action here.
+
+  The worst damage Fort Caswell ever took, its own side did.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Beyond this gate is Fort Caswell."
+    source: 3
+    quote: "street & number 100 Caswell Beach Road"
+  - says: "The property is a church retreat now, private land, so this story is one to hear from the road."
+    source: 1
+    quote: "Today the property is a retreat and conference center for the Baptist State Convention."
+  - says: "Across the river, Fort Fisher fell to Union forces on the fifteenth of January, 1865."
+    source: 3
+    quote: "Fort Fisher, which guarded the northern mouth of the Cape Fear River, fell to Union forces on January 15, 1865"
+  - says: "The troops here were ordered to abandon this fort and destroy its ammunition."
+    source: 3
+    quote: "Commanders ordered troops at Fort Caswell to abandon the site and destroy its ammunition."
+  - says: "On the seventeenth of January, they blew up the powder magazines."
+    source: 1
+    quote: "On January 17, 1865, Fort Caswell was abandoned as Confederates retreating from Fort Fisher detonated the fort's powder magazines."
+  - says: "A newspaper reported being woken at two in the morning by an explosion that shook its office to its foundation."
+    source: 1
+    quote: "We were aroused from our slumbers at 2 o'clock yesterday morning by an explosion, which shook our office to its foundation."
+  - says: "A witness across the water, at what is now Southport, saw a vivid flash of light travel toward the fort."
+    source: 1
+    quote: "Another witness recorded from his position at what's now Southport: As I looked, a vivid flash of light shot through the darkness and traveled with lightning rapidity, toward the fort"
+  - says: "Then, he wrote, it was as if a mighty volcano had sprung its blazing contents from the sea into the sky."
+    source: 1
+    quote: "as if a mighty volcano had sprung its blazing contents from the sea into the sky"
+  - says: "The roar smashed the glass in his house."
+    source: 1
+    quote: "accompanied by a roar and a jar that smashed the glass in our house like a wave of an earthquake"
+  - says: "The blast destroyed the entire southeast face of the fort."
+    source: 1
+    quote: "The explosion destroyed the entire southeast face of the fort and damaged the western face."
+  - says: "The following day, Union forces walked into the abandoned fort and took it."
+    source: 2
+    quote: "The following day, Union forces seized the abandoned position"
+  - says: "The guns of this fort often fought Union warships, all through the war, and yet not a single soldier was killed in action here."
+    source: 2
+    quote: "Although never directly attacked, the fort's guns often engaged Union warships on blockading duty. Yet despite continual occupation throughout the entire conflict, not a single soldier was killed in action at the fort"
+  - says: "The worst damage Fort Caswell ever took, its own side did."
+    source: 1
+    quote: "Fort Caswell was abandoned as Confederates retreating from Fort Fisher detonated the fort's powder magazines."
+sources:
+  - title: "Massive Explosions Rock Fort Caswell, 1865"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://dncr.nc.gov/blog/2016/01/17/massive-explosions-rock-fort-caswell-1865
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Fort Caswell (D-8)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://dncr.nc.gov/blog/2023/12/08/fort-caswell-d-8
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Fort Caswell Historic District, National Register of Historic Places Registration Form"
+    publisher: "North Carolina State Historic Preservation Office (National Register of Historic Places nomination)"
+    url: https://files.nc.gov/ncdcr/nr/BW0230.pdf
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/caswell-beach-the-night-caswell-blew-up/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.3
+    audioBytes: 1301567
+    transcript:
+      totalS: 81.3
+      lines:
+        - text: Beyond this gate is Fort Caswell.
+          atS: 0
+          durationS: 2.74
+        - text: The property is a church retreat now, private land, so this story is one to hear from the road.
+          atS: 4.04
+          durationS: 5.9
+        - text: Across the river, Fort Fisher fell to Union forces on the fifteenth of January, 1865.
+          atS: 11.24
+          durationS: 6.83
+        - text: The troops here were ordered to abandon this fort and destroy its ammunition.
+          atS: 18.88
+          durationS: 5.2
+        - text: On the seventeenth of January, they blew up the powder magazines.
+          atS: 25.03
+          durationS: 4.16
+        - text: A newspaper reported being woken at two in the morning by an explosion that shook its office to its foundation.
+          atS: 29.88
+          durationS: 6.65
+        - text: A witness across the water, at what is now Southport, saw a vivid flash of light travel toward the fort.
+          atS: 37.49
+          durationS: 6.44
+        - text: Then, he wrote, it was as if a mighty volcano had sprung its blazing contents from the sea into the sky.
+          atS: 44.54
+          durationS: 7.33
+        - text: The roar smashed the glass in his house.
+          atS: 52.98
+          durationS: 2.45
+        - text: The blast destroyed the entire southeast face of the fort.
+          atS: 55.75
+          durationS: 3.58
+        - text: The following day, Union forces walked into the abandoned fort and took it.
+          atS: 59.77
+          durationS: 4.74
+        - text: Here is the strange part.
+          atS: 65.11
+          durationS: 1.81
+        - text: The guns of this fort often fought Union warships, all through the war, and yet not a single soldier was killed in action here.
+          atS: 67.3
+          durationS: 7.78
+        - text: The worst damage Fort Caswell ever took, its own side did.
+          atS: 75.89
+          durationS: 5.38

@@ -1,0 +1,118 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: Yacht Basin Drive outside Provision Company, overlooking the Old Yacht Basin (public street).
+# Position: Overture address point for Yacht Basin Dr 130 (33.916286, -78.023056), the restaurant's address as commonly listed; Our State says its deck overlooks the Old Yacht Basin (medium confidence).
+id: southport-pay-on-your-way-out
+title: "Pay on Your Way Out"
+summary: "At Provision Company on the yacht basin, you take a drink from the cooler and pay on your way out. It has worked since 1993."
+place: "Provision Company, Yacht Basin Drive, Southport, North Carolina"
+at: { lat: 33.91645, lng: -78.02305 }
+triggerRadiusKm: 0.04
+category: food-drink
+format: short
+durationS: 54
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [southport, seafood, restaurant, yacht-basin, shrimp]
+teaser: "One restaurant on this basin has run on the honor system for more than thirty years."
+script: |
+  Somewhere along this basin is a restaurant that runs on trust.
+
+  Grab whatever you like, the owner tells his guests, with a wave at a self serve cooler of cold drinks. Pay when you're done.
+
+  It is not a gimmick. The place is Provision Company, Pro Co to the locals, and it opened in 1993 in a weathered waterfront building that had once been a wholesale fish house.
+
+  The founder had come here from the British Virgin Islands in the early nineties. The honor system grew out of a simple belief. If you give people the chance to be honest, they will be honest.
+
+  The thing to order, since the first day, has been Thee Special, with steamed shrimp, a crab cake and corn. The covered deck looks out over the Old Yacht Basin.
+
+  More than thirty years on, people are still settling up on their way out.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Grab whatever you like, the owner tells his guests, with a wave at a self serve cooler of cold drinks."
+    source: 1
+    quote: "“Grab whatever you like,” he says with a casual wave toward the self-serve cooler stocked with chilled bottled drinks."
+  - says: "Pay when you're done."
+    source: 1
+    quote: "“Pay when you’re done.”"
+  - says: "The place is Provision Company, Pro Co to the locals, and it opened in 1993 in a weathered waterfront building that had once been a wholesale fish house."
+    source: 1
+    quote: "she saw potential in a weathered waterfront building that had once served as a wholesale fish house for the local community."
+  - says: "Pro Co to the locals, and it opened in 1993"
+    source: 1
+    quote: "transforming the space into what would become Provision Company — called “Pro Co” by locals — in 1993."
+  - says: "The founder had come here from the British Virgin Islands in the early nineties."
+    source: 1
+    quote: "arrived in Southport from the British Virgin Islands in the early ’90s"
+  - says: "The honor system grew out of a simple belief."
+    source: 1
+    quote: "the “honor system”— where customers grab a drink and pay on their way out — grew out of a simple belief"
+  - says: "If you give people the chance to be honest, they will be honest."
+    source: 1
+    quote: "“If you give people the chance to be honest, they will be honest,”"
+  - says: "The thing to order, since the first day, has been Thee Special, with steamed shrimp, a crab cake and corn."
+    source: 1
+    quote: "“Thee Special” has been a year-round crowd favorite since the first day the doors opened."
+  - says: "with steamed shrimp, a crab cake and corn"
+    source: 1
+    quote: "Many regulars order “Thee Special” with steamed shrimp, a crab cake, and corn"
+  - says: "The covered deck looks out over the Old Yacht Basin."
+    source: 2
+    quote: "The covered outdoor dining area overlooks the Old Yacht Basin and the Intracoastal Waterway"
+  - says: "More than thirty years on, people are still settling up on their way out."
+    source: 1
+    quote: "a philosophy of trust that has been at the heart of the Southport restaurant for more than three decades."
+sources:
+  - title: "A Seafood Guide to Southport's Waterfront"
+    publisher: "Our State"
+    url: https://www.ourstate.com/a-waterfront-seafood-guide-to-southport/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Around Town: Southport"
+    publisher: "Our State"
+    url: https://www.ourstate.com/around-town-southport-north-carolina/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-pay-on-your-way-out/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53.5
+    audioBytes: 856859
+    transcript:
+      totalS: 53.5
+      lines:
+        - text: Somewhere along this basin is a restaurant that runs on trust.
+          atS: 0
+          durationS: 3.74
+        - text: Grab whatever you like, the owner tells his guests, with a wave at a self serve cooler of cold drinks.
+          atS: 4.18
+          durationS: 6.2
+        - text: Pay when you're done.
+          atS: 10.7
+          durationS: 1.36
+        - text: It is not a gimmick.
+          atS: 12.45
+          durationS: 1.24
+        - text: The place is Provision Company, Pro Co to the locals, and it opened in 1993 in a weathered waterfront building that had once been a wholesale fish house.
+          atS: 13.86
+          durationS: 10.28
+        - text: The founder had come here from the British Virgin Islands in the early nineties.
+          atS: 24.74
+          durationS: 4.42
+        - text: The honor system grew out of a simple belief.
+          atS: 29.44
+          durationS: 2.82
+        - text: If you give people the chance to be honest, they will be honest.
+          atS: 32.96
+          durationS: 3.77
+        - text: The thing to order, since the first day, has been Thee Special, with steamed shrimp, a crab cake and corn.
+          atS: 37.85
+          durationS: 6.81
+        - text: The covered deck looks out over the Old Yacht Basin.
+          atS: 45.62
+          durationS: 3.19
+        - text: More than thirty years on, people are still settling up on their way out.
+          atS: 49.41
+          durationS: 4.09

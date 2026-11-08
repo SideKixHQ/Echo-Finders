@@ -1,0 +1,157 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: The grounds at the foot of Old Baldy, facing the entrance on the tower's west side.
+# Position: Placed among the Overture points on Lighthouse Wynd (101 to 111, 33.8728 to 33.8737, -78.0006 to -77.9995), the street named for the tower; consistent with Old Baldy's published position (medium confidence).
+id: bald-head-the-builder-who-lost-money
+title: "The Builder Who Lost Money"
+summary: "Daniel Way built Old Baldy in 1817 on a low bid, counting on reusing old bricks. It cost him, and his name is still over the door."
+place: "Old Baldy (Bald Head Island Lighthouse), Bald Head Island, North Carolina"
+at: { lat: 33.8734, lng: -78.0006 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 50
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [bald-head-island, old-baldy, lighthouse]
+teaser: "Above the door is the name of the man who built this lighthouse, and lost money doing it."
+script: |
+  Look above the door of the lighthouse, on its west side. There is a stone tablet. It reads, R. Cochran, Founder. A. D. 1817. D. S. Way, Builder.
+
+  Daniel Way won the contract in July 1816. His terms were much lower than anyone else's.
+
+  He had a plan. The first lighthouse here had been wrecked. He would salvage its brick, and he expected the new tower to stand close to the old one.
+
+  Both hopes went unrealized. The old brick was not the best quality. And the new lighthouse went up a mile west of the old one, too far to haul the brick that could be saved.
+
+  Way lost money on the project.
+
+  But the tower he built is the oldest lighthouse standing in North Carolina. Two hundred years on, his name is still over the door.
+pronunciations:
+  - written: Cochran
+    say: KOCK-run
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look above the door of the lighthouse, on its west side."
+    source: 1
+    quote: "Three sandstone steps lead to the lighthouse entrance, located on the western face of the structure."
+  - says: "There is a stone tablet."
+    source: 1
+    quote: "A stone tablet bears the legend"
+  - says: "It reads, R. Cochran, Founder. A. D. 1817. D. S. Way, Builder."
+    source: 1
+    quote: "Cochran/Founder/ A. D 1817/ D. S Way, Builder."
+  - says: "Daniel Way won the contract in July 1816."
+    source: 2
+    quote: "Daniel Way accepted the contract in July 1816 and finished the new lighthouse the following year."
+  - says: "His terms were much lower than anyone else's."
+    source: 1
+    quote: "terms were much lower than those received from other quarters"
+  - says: "The first lighthouse here had been wrecked."
+    source: 1
+    quote: "During the war years of 1812-1815, this first lighthouse was \"wrecked,"
+  - says: "He would salvage its brick, and he expected the new tower to stand close to the old one."
+    source: 1
+    quote: "hope of good salvageable brick from the old lighthouse and the proximity of the new tower to the old."
+  - says: "Both hopes went unrealized."
+    source: 1
+    quote: "Both hopes went unrealized"
+  - says: "The old brick was not the best quality."
+    source: 1
+    quote: "for the brick was not the best quality"
+  - says: "And the new lighthouse went up a mile west of the old one, too far to haul the brick that could be saved."
+    source: 1
+    quote: "making transportation of the salvageable brick to the ne'tv site almost impossible."
+  - says: "Way lost money on the project."
+    source: 1
+    quote: "Way lost money on the project, but the tower he constructed has withstood the 158 years to become the oldest lighthouse standing in North Carolina."
+  - says: "But the tower he built is the oldest lighthouse standing in North Carolina."
+    source: 1
+    quote: "Way lost money on the project, but the tower he constructed has withstood the 158 years to become the oldest lighthouse standing in North Carolina."
+  - says: "Two hundred years on, his name is still over the door."
+    source: 1
+    quote: "Centered above the door"
+sources:
+  - title: "Bald Head Island Lighthouse, National Register of Historic Places Inventory Nomination Form"
+    publisher: "North Carolina State Historic Preservation Office (National Register of Historic Places nomination)"
+    url: https://files.nc.gov/ncdcr/nr/BW0001.pdf
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Bald Head Lighthouse (D-66)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/index%2Ephp/blog/2023/12/11/bald-head-lighthouse-d-66
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/bald-head-the-builder-who-lost-money/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 50.2
+    audioBytes: 805032
+    transcript:
+      totalS: 50.2
+      lines:
+        - text: Look above the door of the lighthouse, on its west side.
+          atS: 0
+          durationS: 2.45
+        - text: There is a stone tablet.
+          atS: 2.84
+          durationS: 1.43
+        - text: It reads, R.
+          atS: 4.46
+          durationS: 1.51
+        - text: Cochran, Founder.
+          atS: 6.15
+          durationS: 1.78
+        - text: A.
+          atS: 8.27
+          durationS: 0.44
+        - text: D.
+          atS: 9
+          durationS: 0.41
+        - text: "1817."
+          atS: 9.59
+          durationS: 1.13
+        - text: D.
+          atS: 11.01
+          durationS: 0.37
+        - text: S.
+          atS: 11.49
+          durationS: 0.21
+        - text: Way, Builder.
+          atS: 11.75
+          durationS: 1.21
+        - text: Daniel Way won the contract in July 1816.
+          atS: 13.8
+          durationS: 3.16
+        - text: His terms were much lower than anyone else's.
+          atS: 17.58
+          durationS: 2.3
+        - text: He had a plan.
+          atS: 20.21
+          durationS: 0.86
+        - text: The first lighthouse here had been wrecked.
+          atS: 21.52
+          durationS: 2.05
+        - text: He would salvage its brick, and he expected the new tower to stand close to the old one.
+          atS: 23.86
+          durationS: 4.64
+        - text: Both hopes went unrealized.
+          atS: 29.45
+          durationS: 1.73
+        - text: The old brick was not the best quality.
+          atS: 31.43
+          durationS: 2.24
+        - text: And the new lighthouse went up a mile west of the old one, too far to haul the brick that could be saved.
+          atS: 33.84
+          durationS: 5.5
+        - text: Way lost money on the project.
+          atS: 40.16
+          durationS: 1.86
+        - text: But the tower he built is the oldest lighthouse standing in North Carolina.
+          atS: 42.3
+          durationS: 4.33
+        - text: Two hundred years on, his name is still over the door.
+          atS: 47.14
+          durationS: 3.11

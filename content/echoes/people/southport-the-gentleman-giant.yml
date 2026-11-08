@@ -1,0 +1,116 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: The corner of Bay Street and Howe Street at the downtown waterfront (public sidewalk).
+# Position: Intersection of Bay St and Howe St from Overture points (E Bay St 105, W Bay St 101, S Howe St 117); the source says only that the boats came in on the downtown waterfront (medium confidence, a representative spot).
+id: southport-the-gentleman-giant
+title: "The Gentleman Giant"
+summary: "Elias Gore, a Southport fisherman nearly eight feet tall, was known as the gentleman giant. Children waited to see him."
+place: "Southport waterfront at Bay Street and Howe Street, Southport, North Carolina"
+at: { lat: 33.9171, lng: -78.01895 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [southport, fishermen, waterfront, african-american]
+teaser: "When the boats came in, the children of this town waited to see one fisherman walk up the street."
+script: |
+  Picture the boats coming in to this waterfront, and children waiting in the park for the men to come up the street. They were waiting for one man.
+
+  His name was Elias Gore, and in the early twentieth century he was known as the gentleman giant of Southport.
+
+  He was a fisherman. Reports put him at somewhere from seven foot eight to seven foot eleven, around four hundred pounds, with size sixteen shoes.
+
+  People called him Nehi.
+
+  It was said he could haul in a full net of fish by himself, a job that usually took several men.
+
+  His daughter grew up on the stories. His hands were so big, she said, he could pick the children up by their heads, and they all wanted the rides.
+
+  For all his size, he was known for his gentle spirit, and for being kind to people of every size.
+
+  He died in 1944, at thirty eight, and he is buried in the John N Smith Cemetery, the only African American cemetery in town.
+
+  The best ride on this waterfront was a fisherman's hand.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Picture the boats coming in to this waterfront, and children waiting in the park for the men to come up the street."
+    source: 1
+    quote: "When they would come in on the water front downtown, the children would be in the park waiting for the men to come up the street so they could get to look at my father"
+  - says: "They were waiting for one man."
+    source: 1
+    quote: "so they could get to look at my father"
+  - says: "His name was Elias Gore, and in the early twentieth century he was known as the gentleman giant of Southport."
+    source: 1
+    quote: "That’s the case with Elias Gore, known in the early 20th century as “the gentleman giant” of Southport."
+  - says: "Reports put him at somewhere from seven foot eight to seven foot eleven, around four hundred pounds, with size sixteen shoes."
+    source: 1
+    quote: "Gore was a fisherman who stood well over seven feet tall (reports range him from 7’8″ to 7’11”) and weighed around 400 pounds, with a shoe size of 16."
+  - says: "People called him Nehi."
+    source: 1
+    quote: "Affectionately known as “Nehi,” Gore worked for the Driller-Shipbuilding Company."
+  - says: "It was said he could haul in a full net of fish by himself, a job that usually took several men."
+    source: 1
+    quote: "Gore was so strong it was said he could pull in a net full of fish by himself, something that usually took several men to accomplish."
+  - says: "His hands were so big, she said, he could pick the children up by their heads, and they all wanted the rides."
+    source: 1
+    quote: "His hands were so big he could take his hand and pick the children up by their heads, and they wanted to get the rides"
+  - says: "For all his size, he was known for his gentle spirit, and for being kind to people of every size."
+    source: 1
+    quote: "Despite his intimidating stature, Gore was known for his gentle spirit, being kind to people of all sizes."
+  - says: "He died in 1944, at thirty eight, and he is buried in the John N Smith Cemetery, the only African American cemetery in town."
+    source: 1
+    quote: "Gore died in 1944 at the age of 38 and was buried in the second oldest cemetery, and the only African American cemetery, in Southport, the John N Smith Cemetery"
+sources:
+  - title: "History with 'Hud': Remembering Southport's 'gentleman giant' fisherman, who stood nearly 8 feet tall"
+    publisher: "WWAY TV3"
+    url: https://www.wwaytv3.com/history-with-hud-remembering-southports-gentleman-giant-fisherman-who-stood-nearly-8-feet-tall/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-the-gentleman-giant/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.6
+    audioBytes: 1066674
+    transcript:
+      totalS: 66.6
+      lines:
+        - text: Picture the boats coming in to this waterfront, and children waiting in the park for the men to come up the street.
+          atS: 0
+          durationS: 6.66
+        - text: They were waiting for one man.
+          atS: 7.36
+          durationS: 1.86
+        - text: His name was Elias Gore, and in the early twentieth century he was known as the gentleman giant of Southport.
+          atS: 9.82
+          durationS: 7.93
+        - text: He was a fisherman.
+          atS: 18.36
+          durationS: 1.16
+        - text: Reports put him at somewhere from seven foot eight to seven foot eleven, around four hundred pounds, with size sixteen shoes.
+          atS: 20.03
+          durationS: 8.14
+        - text: People called him Nehi.
+          atS: 28.77
+          durationS: 1.85
+        - text: It was said he could haul in a full net of fish by himself, a job that usually took several men.
+          atS: 31.06
+          durationS: 5.91
+        - text: His daughter grew up on the stories.
+          atS: 37.35
+          durationS: 2.04
+        - text: His hands were so big, she said, he could pick the children up by their heads, and they all wanted the rides.
+          atS: 39.54
+          durationS: 6.21
+        - text: For all his size, he was known for his gentle spirit, and for being kind to people of every size.
+          atS: 46.2
+          durationS: 6.47
+        - text: He died in 1944, at thirty eight, and he is buried in the John N Smith Cemetery, the only African American cemetery in town.
+          atS: 53.78
+          durationS: 8.93
+        - text: The best ride on this waterfront was a fisherman's hand.
+          atS: 63.4
+          durationS: 3.19
