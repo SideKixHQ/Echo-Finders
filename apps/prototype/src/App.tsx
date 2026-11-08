@@ -2458,6 +2458,7 @@ export function App() {
 
           {onboarded && packageOpen && (
             <Preflight
+              here={state.position?.at ?? null}
               routes={ROUTES}
               counts={corridorCounts}
               library={LIBRARY}
