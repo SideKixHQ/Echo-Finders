@@ -9,7 +9,7 @@ at: { lat: 39.94728, lng: -75.14775 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 74
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -102,3 +102,62 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/lifelettersofdol01clar/lifelettersofdol01clar.text.txt
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-dorothy-todd-widow/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69
+    audioBytes: 1105127
+    transcript:
+      totalS: 69
+      lines:
+        - text: Look at the brick house on the corner of Fourth and Walnut.
+          atS: 0
+          durationS: 2.88
+        - text: It is a modest house, a lawyer's house.
+          atS: 3.2
+          durationS: 2.64
+        - text: For two years it was home to John Todd, his young wife Dolley, and their two small sons.
+          atS: 6.28
+          durationS: 5.68
+        - text: In seventeen ninety-three, yellow fever came to Philadelphia.
+          atS: 12.47
+          durationS: 3.68
+        - text: Thomas Jefferson wrote that about eleven people a day were dying, and that the doctors saw no way of stopping it.
+          atS: 16.53
+          durationS: 6.26
+        - text: John Todd took Dolley and the boys out of the city, to Gray's Ferry on the Schuylkill.
+          atS: 23.23
+          durationS: 5.5
+        - text: Then he went back.
+          atS: 29.25
+          durationS: 1.06
+        - text: He had clients who needed him.
+          atS: 30.91
+          durationS: 1.66
+        - text: In the city he found his own father and mother sick, and both of them died.
+          atS: 33.26
+          durationS: 4.21
+        - text: He came back to his wife carrying the fever.
+          atS: 38.43
+          durationS: 2.47
+        - text: The family remembered him saying he could feel it in his veins, but he must see her once more.
+          atS: 41.41
+          durationS: 5.57
+        - text: Within hours he was dead.
+          atS: 47.8
+          durationS: 2.03
+        - text: The younger baby died too.
+          atS: 50.9
+          durationS: 1.74
+        - text: Dolley survived.
+          atS: 53.31
+          durationS: 1.28
+        - text: Not long after, she married James Madison, who would become the fourth President.
+          atS: 55.26
+          durationS: 4.73
+        - text: But first, the city directory for seventeen ninety-four lists the family's address under a new name.
+          atS: 60.35
+          durationS: 6.21
+        - text: Dorothy Todd, widow.
+          atS: 67.07
+          durationS: 1.94

@@ -99,3 +99,62 @@ sources:
     url: https://www.nps.gov/places/000/christ-church-burial-ground.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-he-left-the-year-blank/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 78.8
+    audioBytes: 1261443
+    transcript:
+      totalS: 78.8
+      lines:
+        - text: Look through the iron bars at the corner of Fifth and Arch.
+          atS: 0
+          durationS: 3.6
+        - text: In the corner of the burial ground nearest you is Benjamin Franklin's grave, under a plain marble slab.
+          atS: 4.3
+          durationS: 6.49
+        - text: When Franklin was twenty-two, a young printer, he wrote his own epitaph.
+          atS: 11.9
+          durationS: 4.85
+        - text: It is a joke about his trade.
+          atS: 17.45
+          durationS: 2.01
+        - text: The body of B.
+          atS: 19.9
+          durationS: 0.94
+        - text: Franklin, printer, like the cover of an old book, its contents torn out, and stript of its lettering and gilding, lies here, food for worms.
+          atS: 20.88
+          durationS: 9.75
+        - text: But the work shall not be wholly lost.
+          atS: 31.14
+          durationS: 2.23
+        - text: For it will, as he believed, appear once more, in a new and more perfect edition, corrected and amended by the author.
+          atS: 33.75
+          durationS: 7.42
+        - text: He liked it enough to copy it out for friends at various times in his life.
+          atS: 41.87
+          durationS: 4.19
+        - text: It is not on the stone.
+          atS: 46.23
+          durationS: 1.42
+        - text: Near the end of his life, adding to his will, he asked for something else.
+          atS: 48.09
+          durationS: 4.56
+        - text: To be buried beside his wife, under a marble stone, six feet long and four feet wide, plain, with only a small moulding round the edge.
+          atS: 52.98
+          durationS: 9.94
+        - text: Their names, and a year.
+          atS: 63.24
+          durationS: 2.01
+        - text: For the year he wrote one, seven, eight, and then a dash.
+          atS: 65.69
+          durationS: 4.15
+        - text: He thought he knew the century and the decade.
+          atS: 70.16
+          durationS: 2.53
+        - text: He died in April, seventeen ninety.
+          atS: 73.13
+          durationS: 2.35
+        - text: Somebody else had to finish the line.
+          atS: 75.8
+          durationS: 2.96

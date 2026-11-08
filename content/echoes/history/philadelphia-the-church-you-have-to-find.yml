@@ -105,3 +105,68 @@ sources:
     url: https://www.nps.gov/inde/learn/historyculture/the-presidents-house-washington-and-adams.htm
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-church-you-have-to-find/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 86.5
+    audioBytes: 1385159
+    transcript:
+      totalS: 86.5
+      lines:
+        - text: Walk west down Willings Alley from Third Street, between the tall walls, and look on your right for an iron gate in an archway.
+          atS: 0
+          durationS: 8.87
+        - text: It leads through a building and into a paved courtyard.
+          atS: 9.38
+          durationS: 3.38
+        - text: The church is in there.
+          atS: 13.14
+          durationS: 1.29
+        - text: You cannot see it from any street.
+          atS: 14.68
+          durationS: 2.15
+        - text: That was not an accident, though nobody forced it.
+          atS: 17.15
+          durationS: 2.88
+        - text: Catholics in early Philadelphia were tolerated, but they were looked on with suspicion.
+          atS: 20.47
+          durationS: 5.16
+        - text: So when they built a church here, in seventeen thirty-three, they put it somewhere inconspicuous, in a court between this alley and Walnut Street.
+          atS: 26.06
+          durationS: 9.16
+        - text: Then the city filled in close all around it.
+          atS: 35.83
+          durationS: 3.02
+        - text: It did not stay unnoticed.
+          atS: 39.45
+          durationS: 1.93
+        - text: On one October day in seventeen seventy-four, two visitors came to service here.
+          atS: 42.49
+          durationS: 5.21
+        - text: One was George Washington.
+          atS: 48.22
+          durationS: 1.7
+        - text: In his diary he wrote only that he went to Saint Joseph's in the afternoon.
+          atS: 50.52
+          durationS: 4.42
+        - text: The other was John Adams, raised a Puritan, and he was shaken.
+          atS: 55.54
+          durationS: 4.55
+        - text: He wrote to his wife about the poor wretches fingering their beads, chanting Latin, bowing and kneeling.
+          atS: 60.91
+          durationS: 6.39
+        - text: He called it awful and affecting.
+          atS: 67.8
+          durationS: 2.45
+        - text: The church behind the gate today is not the one they sat in.
+          atS: 71.07
+          durationS: 3.49
+        - text: It was rebuilt on the same spot in eighteen thirty-eight and thirty-nine.
+          atS: 75.07
+          durationS: 4.28
+        - text: It was built not to be noticed.
+          atS: 79.87
+          durationS: 1.87
+        - text: The first two presidents of the United States came looking for it anyway.
+          atS: 82.34
+          durationS: 4.18

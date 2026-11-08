@@ -9,7 +9,7 @@ at: { lat: 38.88912, lng: -77.02600 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 73
+durationS: 74
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -109,3 +109,56 @@ sources:
     url: https://www.loc.gov/item/2016651958/
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-a-country-he-never-saw/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.3
+    audioBytes: 1190808
+    transcript:
+      totalS: 74.3
+      lines:
+        - text: Face the north door of the red castle.
+          atS: 0
+          durationS: 2.71
+        - text: Inside, there is a small crypt with a sarcophagus in it.
+          atS: 3.3
+          durationS: 3.91
+        - text: The man buried there paid for all of this.
+          atS: 7.8
+          durationS: 2.71
+        - text: His name was James Smithson.
+          atS: 11.09
+          durationS: 2.48
+        - text: He was an English scientist, the natural son of a duke, and he was never given a title.
+          atS: 14.07
+          durationS: 5.7
+        - text: When he died, he left his entire fortune to the United States, to found an institution in Washington under his name.
+          atS: 20.36
+          durationS: 7.54
+        - text: He had never been here.
+          atS: 28.5
+          durationS: 1.43
+        - text: He never visited the country in his life.
+          atS: 30.53
+          durationS: 2.9
+        - text: He died in Genoa in 1829 and was buried on a hill there, in a small British cemetery.
+          atS: 34.55
+          durationS: 6.56
+        - text: By the turn of the century a stone quarry was eating the hill away.
+          atS: 41.81
+          durationS: 3.97
+        - text: So in 1904 one of the Smithsonian's regents, Alexander Graham Bell, went to Genoa at his own expense and brought the body back across the Atlantic.
+          atS: 46.47
+          durationS: 10.54
+        - text: A Washington paper put it neatly a few years later.
+          atS: 57.46
+          durationS: 3.29
+        - text: That voyage was the first time Smithson ever had personal contact with these shores.
+          atS: 61.44
+          durationS: 5.26
+        - text: He gave everything to a country he had never seen.
+          atS: 67.21
+          durationS: 3.04
+        - text: He got here seventy-five years after he died.
+          atS: 71.2
+          durationS: 3.15

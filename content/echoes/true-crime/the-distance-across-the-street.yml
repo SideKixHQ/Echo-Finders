@@ -9,7 +9,7 @@ at: { lat: 38.89668, lng: -77.02596 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 64
+durationS: 52
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -132,3 +132,56 @@ sources:
     url: https://www.loc.gov/resource/sn83045462/1865-04-15/ed-1/?sp=2
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-distance-across-the-street/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 51.6
+    audioBytes: 826766
+    transcript:
+      totalS: 51.6
+      lines:
+        - text: Look from Ford’s Theatre to the house across the street.
+          atS: 0
+          durationS: 3.18
+        - text: That short distance became the final journey of Abraham Lincoln’s life.
+          atS: 3.42
+          durationS: 4.25
+        - text: On April 14, 1865, Lincoln attended a performance of Our American Cousin.
+          atS: 8.19
+          durationS: 5.55
+        - text: John Wilkes Booth was a famous actor.
+          atS: 13.94
+          durationS: 2.37
+        - text: That evening, he entered the presidential box and shot the president.
+          atS: 16.52
+          durationS: 3.81
+        - text: Booth escaped from the theatre.
+          atS: 20.48
+          durationS: 1.68
+        - text: Lincoln could not.
+          atS: 22.28
+          durationS: 1.17
+        - text: People carried the wounded president across Tenth Street into the Petersen family’s boarding house.
+          atS: 23.63
+          durationS: 4.95
+        - text: He died there the following morning, April 15.
+          atS: 28.72
+          durationS: 2.96
+        - text: Look at the crossing again.
+          atS: 31.89
+          durationS: 1.37
+        - text: Today, it is a short walk across.
+          atS: 33.35
+          durationS: 2.39
+        - text: On that night, people crossed it carrying the president of the United States, trying to find somewhere to care for him.
+          atS: 35.86
+          durationS: 6.37
+        - text: The theatre marks the attack.
+          atS: 42.41
+          durationS: 1.64
+        - text: The house marks his death.
+          atS: 44.16
+          durationS: 1.63
+        - text: Between them is an ordinary city street that briefly became the center of a national catastrophe.
+          atS: 46.11
+          durationS: 5.48

@@ -9,13 +9,11 @@ at: { lat: 38.89648, lng: -77.04170 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 80
+durationS: 65
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A published legend. The script says out loud that the haunting is reported, not proven.
-  The only source is an 1897 newspaper account of what people claimed; no supernatural
-  claim is established, and the caretaker's denial is quoted from the same article.
+  A published legend. The script says out loud that the haunting is reported, not proven. The only source is an 1897 newspaper account of what people claimed; no supernatural claim is established, and the caretaker's denial is quoted from the same article.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -84,3 +82,74 @@ sources:
     url: https://www.nps.gov/places/octagon-house.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/dc-the-caretaker-heard-nothing/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 65.3
+    audioBytes: 1045776
+    transcript:
+      totalS: 65.3
+      lines:
+        - text: Look at the old brick walls of the Octagon from the Eighteenth Street side.
+          atS: 0
+          durationS: 3.94
+        - text: In April eighteen ninety-seven, a Washington newspaper said this had long been the most noted of the haunted houses in the city.
+          atS: 4.18
+          durationS: 6.93
+        - text: This is a legend.
+          atS: 11.19
+          durationS: 0.96
+        - text: Nothing in it has ever been proven.
+          atS: 12.23
+          durationS: 1.79
+        - text: It is just what people said.
+          atS: 14.19
+          durationS: 1.72
+        - text: And people said a great deal.
+          atS: 16.15
+          durationS: 1.65
+        - text: Doors and windows that opened when they were shut, and shut when they were opened.
+          atS: 18.04
+          durationS: 4.63
+        - text: A woman's shriek.
+          atS: 23.06
+          durationS: 1.18
+        - text: The clank of sabres.
+          atS: 24.42
+          durationS: 1.3
+        - text: Heavy footsteps.
+          atS: 25.84
+          durationS: 1.14
+        - text: Groans and cries from the passage by the back stairs.
+          atS: 27.19
+          durationS: 3.11
+        - text: And an officer who died in an upper room, whose blood, the story went, could still be heard dripping from the mantelpiece.
+          atS: 30.55
+          durationS: 6.98
+        - text: At the time, the house stood neglected.
+          atS: 37.8
+          durationS: 2.55
+        - text: A caretaker lived in it, rent free and unpaid, with his son.
+          atS: 40.6
+          durationS: 4.13
+        - text: They slept in the room where Dolley Madison had once held her receptions.
+          atS: 45.12
+          durationS: 3.98
+        - text: The reporter asked him about the ghosts.
+          atS: 49.42
+          durationS: 2.2
+        - text: He laughed.
+          atS: 51.86
+          durationS: 0.81
+        - text: If there are any ghosts here, he said, I have never heard or seen them.
+          atS: 53.06
+          durationS: 4.13
+        - text: The only ghosts that haunt this house exist in people's imagination.
+          atS: 57.57
+          durationS: 3.72
+        - text: Everyone else told stories about this house.
+          atS: 61.73
+          durationS: 2.29
+        - text: He slept in it.
+          atS: 64.17
+          durationS: 1.13

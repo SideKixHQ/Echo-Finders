@@ -115,3 +115,68 @@ sources:
     url: https://www.loc.gov/resource/sn83045462/1930-12-14/ed-1/?sp=94
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-man-who-found-the-bolts/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 89.6
+    audioBytes: 1434478
+    transcript:
+      totalS: 89.6
+      lines:
+        - text: Look up past the dome, to the bronze figure standing on the very top.
+          atS: 0
+          durationS: 4.35
+        - text: She is called Freedom.
+          atS: 4.87
+          durationS: 1.76
+        - text: She is nineteen and a half feet tall, and she weighs about fifteen thousand pounds.
+          atS: 7.23
+          durationS: 5.21
+        - text: Before she was bronze, she was plaster.
+          atS: 13.05
+          durationS: 2.61
+        - text: The sculptor, Thomas Crawford, made the plaster model in his studio in Rome, and died before it left.
+          atS: 16.17
+          durationS: 6.88
+        - text: It crossed the Atlantic in six crates.
+          atS: 23.5
+          durationS: 2.66
+        - text: Here, an Italian craftsman put the pieces together so cleverly that nobody could see the joints.
+          atS: 26.6
+          durationS: 6.15
+        - text: Then it had to come apart again, to be cast.
+          atS: 33.26
+          durationS: 3.33
+        - text: By one account, the craftsman refused to separate it unless he was paid a great deal more.
+          atS: 37.41
+          durationS: 5.46
+        - text: Only he knew where the bolts were hidden.
+          atS: 43.47
+          durationS: 2.1
+        - text: The casting had gone to Clark Mills, whose foundry stood out on the Bladensburg road.
+          atS: 46.38
+          durationS: 5.2
+        - text: Mills owned a man named Philip Reid.
+          atS: 52.19
+          durationS: 2.65
+        - text: Reid rigged a pulley to an iron eye in the statue's head.
+          atS: 55.44
+          durationS: 3.63
+        - text: He strained the rope gently, until the seams showed themselves one by one.
+          atS: 59.51
+          durationS: 4.98
+        - text: Then he found the bolts, scraped away the plaster, and took them out.
+          atS: 65.1
+          durationS: 4.82
+        - text: The model came apart, ready for the foundry.
+          atS: 70.61
+          durationS: 3.09
+        - text: In December 1863 the last section, her head and shoulders, was raised up there to a salute of thirty-five guns.
+          atS: 74.4
+          durationS: 8.41
+        - text: The statue is called Freedom.
+          atS: 83.24
+          durationS: 2.24
+        - text: The man who freed her from the plaster was not free.
+          atS: 86.18
+          durationS: 3.4
