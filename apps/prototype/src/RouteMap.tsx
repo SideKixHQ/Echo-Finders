@@ -23,7 +23,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { CATEGORY_ICON, CATEGORY_LABEL } from "./categories";
-import { EchoCharacter, characterFor } from "./Echo";
+import { EchoCharacter, characterFor } from "@echofinders/echo";
 import { ClusterDot, FAN_GAP, GROUP_PX } from "./PinCluster";
 import { TILE_ATTRIBUTION, TILE_URL, VECTOR_ATTRIBUTION, VECTOR_TILES_URL, planTiles, toWorld, type TilePlan } from "./tiles";
 import type { GeoJSONSource, Map as MapLibre } from "maplibre-gl";

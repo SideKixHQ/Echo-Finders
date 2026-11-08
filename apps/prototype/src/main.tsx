@@ -9,6 +9,7 @@ import "@fontsource/sora/500.css";
 import "@fontsource/sora/600.css";
 import "@fontsource/space-grotesk/400.css";
 import "@fontsource/space-grotesk/500.css";
+import "@echofinders/echo/echo.css";
 import "./theme.css";
 
 // Sends nothing until the listener turns on Settings › Privacy › Send error reports

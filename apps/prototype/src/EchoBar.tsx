@@ -50,7 +50,7 @@
 import { useRef } from "react";
 import { presetFor, rarityOf, type Echo, type Guidance, type TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
-import { EchoCharacter, type EchoFace } from "./Echo";
+import { EchoCharacter, type EchoFace } from "@echofinders/echo";
 import type { PinState } from "./RouteMap";
 
 export interface EchoBarItem {

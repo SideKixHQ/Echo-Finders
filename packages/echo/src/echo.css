@@ -1,0 +1,37 @@
+/*
+ * The echo character's styles, shared by the app and the website (packages/echo).
+ * Colour settling, the satellites' drift, and the blinks and glances while it talks.
+ */
+.echo-char-body, .echo-char-rim, .echo-char-glow, .echo-char-speck {
+  transition: fill 0.34s linear, stroke 0.34s linear, opacity 0.34s linear;
+}
+.echo-char-shine { fill: #fffdf4; opacity: 0.9; pointer-events: none; }
+.echo-char-shine-2 { opacity: 0.7; }
+/*
+ * The satellites drift, very slightly and out of phase with each other.
+ *
+ * Two pixels over six seconds. Enough that the thing looks alive when you stop and look
+ * at it, small enough that it never competes with the singular pin's own pulse — which
+ * is the one piece of motion on the map that is allowed to mean something.
+ */
+@keyframes echoSatDrift {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(0.8%, -1.4%); }
+}
+.echo-char-sat { animation: echoSatDrift 6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .echo-char-sat { animation: none; }
+  .echo-char-body, .echo-char-rim, .echo-char-glow, .echo-char-speck { transition: none; }
+}
+
+/* The echo's blinks and glances while it talks (Echo.tsx, useLife). The lids close from
+   the middle of each eye, and a glance slides the pair across the face and back. */
+.echo-char-life {
+  transform-box: fill-box; transform-origin: 50% 50%;
+  transition: transform 220ms ease-out;
+}
+.echo-char-life path { transform-box: fill-box; transform-origin: 50% 50%; transition: transform 70ms ease-in; }
+.echo-char-life.blink path { transform: scaleY(0.08); }
+@media (prefers-reduced-motion: reduce) {
+  .echo-char-life, .echo-char-life path { transition: none; }
+}
