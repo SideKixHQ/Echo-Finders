@@ -369,3 +369,72 @@ export const partner = {
     email: 'partners@echofinders.com',
   },
 };
+
+/**
+ * The home page, "Follow the echo" (James, 2026-11-08; plan in the PR).
+ *
+ * The idea it is built on, in James's words: "standing in a moment, live right where
+ * something happened before you", and "syncing with an echo, a reverberation of
+ * something that happened before". So the page is a small version of the app: the echo
+ * is paused, it notices you, you sync, it plays.
+ */
+export const follow = {
+  hero: {
+    line1: 'Something happened right here.',
+    line2: "It's still echoing.",
+    sub: 'Echo Finders plays the stories of a place when you stand where they happened.',
+    cta: 'Start listening free',
+    hint: 'Scroll to find one',
+  },
+  notices: {
+    kicker: 'Walk up to it',
+    title: 'Get close, and the echo notices you.',
+    body: 'Every echo waits at the spot where its story happened. Come near and it turns to face you.',
+  },
+  sync: {
+    kicker: 'Sync',
+    title: 'Stand there a moment, and you sync.',
+    body: 'Then it plays, right where it happened. Try one now.',
+    tap: 'Tap to hear it',
+    playing: 'Playing',
+    again: 'Hear it again',
+    pause: 'Pause',
+    resume: 'Keep listening',
+  },
+  // The echo the page plays. Any approved echo with a recording will do; swap all four.
+  sample: {
+    title: "William Gould's Initials",
+    place: 'Bellamy Mansion Museum, Wilmington, North Carolina',
+    src: '/echo/william-goulds-initials.mp3',
+    lines: [
+      { at: 0, text: 'William Benjamin Gould was an enslaved plasterer hired out for work at the Bellamy site.' },
+      { at: 6.09, text: 'The museum records that a later renovation revealed plasterwork bearing his initials.' },
+      { at: 11.97, text: 'In 1862, Gould escaped down the Cape Fear River and entered Union naval service.' },
+      { at: 18.43, text: 'He kept a diary, leaving a record in his own words beyond the evidence of his skilled labor.' },
+      { at: 24.91, text: 'This is his documented worksite, not the location of every stage of his escape or service.' },
+      { at: 31.67, text: 'If the identified plaster is available on your authorized tour, notice how small a signature can be beside a large house.' },
+      { at: 39.45, text: 'Initials connect a finished surface to a particular person.' },
+      { at: 43.9, text: "Gould's later life changes the meaning again: the craftsperson was also someone who acted to claim freedom and preserve his experience." },
+    ],
+  },
+  where: {
+    kicker: 'Where',
+    title: 'Echoing now in three places.',
+    places: [
+      { name: 'Cape Fear Coast', detail: 'Wilmington, Wrightsville Beach, Carolina Beach, Kure Beach and Fort Fisher' },
+      { name: 'Washington, DC', detail: 'The National Mall, Capitol Hill, Lafayette Square and Ford\'s Theatre' },
+      { name: 'Philadelphia', detail: 'Old City, Society Hill, Independence Mall and City Hall' },
+    ],
+  },
+  kinds: {
+    kicker: 'What you hear',
+    line: 'True history, the people who lived it, legends told as legends, and true crime only if you ask for it.',
+    chips: ['History', 'People', 'Built', 'Land', 'Food & Drink', 'Arts', 'Inspo', 'Legends', 'True Crime'],
+  },
+  go: {
+    title: 'Go stand somewhere.',
+    sub: 'The echo is waiting.',
+    cta: 'Open Echo Finders',
+    partners: 'For towns, museums and partners',
+  },
+};
