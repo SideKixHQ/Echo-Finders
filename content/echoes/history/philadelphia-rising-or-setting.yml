@@ -9,7 +9,7 @@ at: { lat: 39.94925, lng: -75.14975 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 100
+durationS: 96
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -101,3 +101,68 @@ sources:
     url: https://www.loc.gov/item/19000141/
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-rising-or-setting/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 95.5
+    audioBytes: 1529355
+    transcript:
+      totalS: 95.5
+      lines:
+        - text: Look at the hall in front of you.
+          atS: 0
+          durationS: 1.75
+        - text: Inside is the room where the Constitution was signed.
+          atS: 2.14
+          durationS: 3.33
+        - text: For four months in the summer of seventeen eighty-seven, George Washington presided in that room from a chair.
+          atS: 5.98
+          durationS: 6.56
+        - text: Carved into the top of its back is a sun.
+          atS: 13.05
+          durationS: 2.79
+        - text: It was not an easy summer.
+          atS: 16.28
+          durationS: 1.67
+        - text: Large states against small states.
+          atS: 18.46
+          durationS: 2.36
+        - text: Arguments over the slave trade.
+          atS: 21.26
+          durationS: 2.09
+        - text: On the last day, the seventeenth of September, the delegates lined up to sign.
+          atS: 23.79
+          durationS: 5.39
+        - text: While the last of them were signing, Benjamin Franklin looked at Washington's chair and said something to the men near him.
+          atS: 29.69
+          durationS: 6.75
+        - text: James Madison wrote it down.
+          atS: 37.24
+          durationS: 2.05
+        - text: Painters, Franklin said, had always found it hard to show the difference between a rising sun and a setting one.
+          atS: 40.41
+          durationS: 7.56
+        - text: All through the session, in his hopes and fears, he had looked at that sun behind the president, and could not tell which it was.
+          atS: 49.09
+          durationS: 8.23
+        - text: But now at length, he said, I have the happiness to know that it is a rising and not a setting sun.
+          atS: 58.13
+          durationS: 7.88
+        - text: The chair had been made here in Philadelphia in seventeen seventy-nine, for the speaker of Pennsylvania's assembly.
+          atS: 67.31
+          durationS: 6.53
+        - text: It went with the legislature to Harrisburg, and came back to this city in eighteen seventy-two.
+          atS: 74.65
+          durationS: 5.55
+        - text: Earlier that day Franklin had asked every doubter in the room to doubt a little his own infallibility, and sign.
+          atS: 81.5
+          durationS: 6.91
+        - text: Three still refused.
+          atS: 89.36
+          durationS: 1.42
+        - text: Nothing about the carving had changed.
+          atS: 91.38
+          durationS: 2.29
+        - text: Franklin had.
+          atS: 94.27
+          durationS: 1.25

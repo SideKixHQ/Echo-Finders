@@ -9,7 +9,7 @@ at: { lat: 39.94905, lng: -75.14930 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 99
+durationS: 91
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -105,3 +105,68 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/supremecourtinun01warr/supremecourtinun01warr.text.txt
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-court-with-no-cases/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 90.9
+    audioBytes: 1455794
+    transcript:
+      totalS: 90.9
+      lines:
+        - text: Look at the small brick building on the corner of Fifth and Chestnut.
+          atS: 0
+          durationS: 3.68
+        - text: It was built as Philadelphia's city hall.
+          atS: 3.71
+          durationS: 2.59
+        - text: Through the seventeen nineties it was also the home of the Supreme Court of the United States.
+          atS: 6.46
+          durationS: 5.4
+        - text: Today that court decides the hardest questions in the country.
+          atS: 11.94
+          durationS: 3.73
+        - text: When it came to Philadelphia, it had almost nothing to decide.
+          atS: 15.9
+          durationS: 3.89
+        - text: Its first term in this city opened in February, seventeen ninety-one.
+          atS: 20.31
+          durationS: 4.2
+        - text: A letter written at the time describes the day.
+          atS: 24.89
+          durationS: 3.03
+        - text: The court opened, it said, but there was no business.
+          atS: 28.3
+          durationS: 3.4
+        - text: So the justices did the one thing they could, which was admit lawyers to practise before them.
+          atS: 32.15
+          durationS: 5.07
+        - text: The local bar assumed Justice James Wilson, one of their own, would simply vouch for them.
+          atS: 37.83
+          durationS: 5.5
+        - text: He would not.
+          atS: 43.77
+          durationS: 0.95
+        - text: The Chief Justice said the court would not accept one lawyer vouching for another.
+          atS: 45.53
+          durationS: 3.92
+        - text: Some of the best known lawyers in the city had to go off and find certificates of good character, and come back after one o'clock.
+          atS: 50.27
+          durationS: 6.59
+        - text: That August the court finally called a case for argument, West against Barnes.
+          atS: 57.68
+          durationS: 5.13
+        - text: One of the parties stood up and pointed out that the paperwork had come from the wrong clerk's office.
+          atS: 63.32
+          durationS: 4.97
+        - text: The court agreed, and dismissed it.
+          atS: 68.73
+          durationS: 2.5
+        - text: One of the original justices, John Rutledge, resigned without ever sitting in a session.
+          atS: 72.18
+          durationS: 5.42
+        - text: The courtroom inside is furnished the way an eighteenth century courtroom would have been, and it is open to look into.
+          atS: 78.3
+          durationS: 6.83
+        - text: The most powerful court in the world started out by checking references.
+          atS: 86.42
+          durationS: 4.51

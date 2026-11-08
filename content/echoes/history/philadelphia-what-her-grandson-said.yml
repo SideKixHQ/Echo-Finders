@@ -9,15 +9,11 @@ at: { lat: 39.95235, lng: -75.14467 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 86
+durationS: 87
 visibility: at-hand
 certainty: contested
 certaintyNote: >-
-  Betsy Ross's work as an upholsterer and flag-maker is on record. The visit from
-  Washington, Robert Morris and George Ross, and her part in the first Stars and Stripes,
-  rest on family tradition first made public by her grandson William Canby in 1870; no
-  record of Congress, letter, diary or newspaper of 1776 or 1777 mentions it, as Franklin
-  Hanford set out in 1917. The script says so plainly.
+  Betsy Ross's work as an upholsterer and flag-maker is on record. The visit from Washington, Robert Morris and George Ross, and her part in the first Stars and Stripes, rest on family tradition first made public by her grandson William Canby in 1870; no record of Congress, letter, diary or newspaper of 1776 or 1777 mentions it, as Franklin Hanford set out in 1917. The script says so plainly.
 minAge: 0
 quality: 0.75
 tags: [philadelphia, philadelphia-core, old-city, flag, betsy-ross, myth-and-memory]
@@ -108,3 +104,74 @@ sources:
     url: https://www.loc.gov/item/2004669130/
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-what-her-grandson-said/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 86.6
+    audioBytes: 1385995
+    transcript:
+      totalS: 86.6
+      lines:
+        - text: This small house on Arch Street is famous for one scene.
+          atS: 0
+          durationS: 3.32
+        - text: George Washington and two gentlemen of Congress call on a young widow, an upholsterer named Betsy Ross.
+          atS: 3.76
+          durationS: 6.22
+        - text: They show her a rough sketch of a flag.
+          atS: 10.37
+          durationS: 2.19
+        - text: She suggests changes.
+          atS: 12.81
+          durationS: 1.45
+        - text: She sews the first Stars and Stripes.
+          atS: 14.58
+          durationS: 2.41
+        - text: Here is what is on record.
+          atS: 17.27
+          durationS: 1.71
+        - text: Betsy Ross was real.
+          atS: 19.42
+          durationS: 1.67
+        - text: Her first husband died in seventeen seventy-six, and she carried on his trade.
+          atS: 21.79
+          durationS: 5.21
+        - text: For about fifty years she was an expert needlewoman and flag-maker.
+          atS: 27.39
+          durationS: 4.41
+        - text: During the war she made state colours for ships and gun batteries.
+          atS: 32.12
+          durationS: 3.9
+        - text: After her, one of her daughters kept the flag business going.
+          atS: 36.54
+          durationS: 3.31
+        - text: Here is what is not.
+          atS: 40.17
+          durationS: 1.51
+        - text: The visit appears in no record of Congress, no letter, no diary and no newspaper of the time.
+          atS: 42.06
+          durationS: 6.46
+        - text: Washington wrote a great deal, and never mentioned it.
+          atS: 49.21
+          durationS: 3.2
+        - text: The story was first told in public in eighteen seventy, ninety-three years after the flag was adopted.
+          atS: 53.12
+          durationS: 6.11
+        - text: Her grandson, William Canby, read it to the Historical Society of Pennsylvania.
+          atS: 59.83
+          durationS: 5.21
+        - text: It was, he said, what the family had heard her say.
+          atS: 65.48
+          durationS: 3.37
+        - text: For most people, the evidence is a picture.
+          atS: 69.54
+          durationS: 2.84
+        - text: Washington seated in her parlour, the new flag across her lap.
+          atS: 73.69
+          durationS: 4.2
+        - text: That picture was printed in eighteen ninety-three.
+          atS: 78.49
+          durationS: 3.01
+        - text: Prints of it went to people who joined a club raising money to save this house.
+          atS: 82.01
+          durationS: 4.55

@@ -1,0 +1,17 @@
+{
+  "name": "@echofinders/echo",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The echo character, drawn in code: one creature for the app and the website.",
+  "exports": {
+    ".": "./src/index.ts",
+    "./echo.css": "./src/echo.css"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

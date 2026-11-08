@@ -9,7 +9,7 @@ at: { lat: 39.94740, lng: -75.14565 }
 triggerRadiusKm: 0.04
 category: land
 format: short
-durationS: 80
+durationS: 76
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -99,3 +99,68 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/bookofphiladelph00shac/bookofphiladelph00shac.text.txt
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-street-that-was-a-creek/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.9
+    audioBytes: 1215050
+    transcript:
+      totalS: 75.9
+      lines:
+        - text: Every street around here runs straight, at right angles, the way William Penn liked it.
+          atS: 0
+          durationS: 5.56
+        - text: Except the street you are standing on.
+          atS: 5.84
+          durationS: 1.97
+        - text: Dock Street bends.
+          atS: 8.32
+          durationS: 1.4
+        - text: Now look at the building beside you.
+          atS: 9.94
+          durationS: 1.8
+        - text: Its end is not flat.
+          atS: 11.91
+          durationS: 1.46
+        - text: It is round, a curve of stone columns with a little round lantern on top.
+          atS: 13.43
+          durationS: 4.48
+        - text: This is the Merchants' Exchange, finished in the eighteen thirties, and its architect fitted it onto a triangle of ground between Third Street, Walnut Street, and this odd curving road.
+          atS: 18.43
+          durationS: 11.62
+        - text: So why does the road curve?
+          atS: 30.65
+          durationS: 2.14
+        - text: When Penn first came to Philadelphia, he left the big ship out on the Delaware and went up a creek in a skiff.
+          atS: 33.74
+          durationS: 6.15
+        - text: That creek ran here.
+          atS: 40.33
+          durationS: 1.63
+        - text: Dock Creek.
+          atS: 42.28
+          durationS: 1.08
+        - text: In the seventeen nineties the city covered it over, and the street took its line.
+          atS: 44.31
+          durationS: 4.91
+        - text: Before this building, merchants did their deals in coffee houses and taverns down by the river.
+          atS: 50.18
+          durationS: 5.75
+        - text: This was the first large building in the city put up for doing business.
+          atS: 56.44
+          durationS: 4.1
+        - text: Ships' cargoes changed hands in it.
+          atS: 61.14
+          durationS: 2.39
+        - text: So did stocks.
+          atS: 63.91
+          durationS: 1.2
+        - text: The Philadelphia Stock Exchange met here.
+          atS: 65.55
+          durationS: 2.7
+        - text: Penn came up this line in a small boat.
+          atS: 68.95
+          durationS: 2.64
+        - text: Generations later, the city's money was following it too.
+          atS: 72.19
+          durationS: 3.69

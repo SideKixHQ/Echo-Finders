@@ -9,7 +9,7 @@ at: { lat: 39.95345, lng: -75.15955 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 74
+durationS: 72
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -91,3 +91,53 @@ sources:
     url: https://www.loc.gov/item/2019688706/
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-market-under-the-trains/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72.2
+    audioBytes: 1155700
+    transcript:
+      totalS: 72.2
+      lines:
+        - text: Stand outside the market doors and look up.
+          atS: 0
+          durationS: 2.54
+        - text: The building keeps going, well above where a market would need a roof.
+          atS: 2.82
+          durationS: 3.88
+        - text: That high shed was built for trains.
+          atS: 7.14
+          durationS: 2.18
+        - text: Start a little earlier, on Market Street, a block to the south.
+          atS: 9.76
+          durationS: 3.96
+        - text: For generations, Philadelphia's main street had market sheds down its middle.
+          atS: 14.42
+          durationS: 4.98
+        - text: In eighteen fifty-nine they were cleared away, and the traders needed somewhere new.
+          atS: 20
+          durationS: 5
+        - text: Two big market houses went up on the north side of Market Street, between Eleventh and Twelfth.
+          atS: 25.82
+          durationS: 6.02
+        - text: One was the Farmers' Market, the largest market shed of its kind in the city.
+          atS: 32.8
+          durationS: 5.07
+        - text: Beside it, at Twelfth Street, was the Franklin Market, which old housekeepers just called the Twelfth Street Market.
+          atS: 38.68
+          durationS: 7.25
+        - text: Thirty years later the Reading Railroad wanted a station in the middle of town.
+          atS: 47.04
+          durationS: 4.5
+        - text: It ran its tracks in from Ninth and Green, raised up on an elevated line, and it chose this exact block.
+          atS: 51.99
+          durationS: 6.84
+        - text: The Reading Terminal opened for traffic on the twentieth of January, eighteen ninety-three.
+          atS: 59.64
+          durationS: 5.19
+        - text: So the trains came in up there, under that great arched roof.
+          atS: 65.16
+          durationS: 3.64
+        - text: And the market is still down here, underneath it.
+          atS: 69.04
+          durationS: 3.12

@@ -9,7 +9,7 @@ at: { lat: 39.95360, lng: -75.14850 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 99
+durationS: 102
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -109,3 +109,71 @@ sources:
     url: https://www.nps.gov/inde/learn/historyculture/excavation-dexter.htm
     retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-good-china/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 101.7
+    audioBytes: 1628412
+    transcript:
+      totalS: 101.7
+      lines:
+        - text: Stand on Fifth Street beside the National Constitution Center, where the buses pull in to drop people off.
+          atS: 0
+          durationS: 6.77
+        - text: Under this drop-off is the site of a small rented house.
+          atS: 7.46
+          durationS: 3.45
+        - text: From seventeen ninety, a free Black coachman named James Oronoco Dexter lived in it with nine other people.
+          atS: 11.52
+          durationS: 8.36
+        - text: Dexter had been enslaved.
+          atS: 20.99
+          durationS: 1.94
+        - text: On this block he was one of at least six free Black heads of household.
+          atS: 23.53
+          durationS: 4.55
+        - text: In seventeen ninety-two he hosted the first meeting, in his own house, to arrange the building of a church.
+          atS: 28.78
+          durationS: 6.54
+        - text: It became the African Episcopal Church of Saint Thomas, and its congregation is still active.
+          atS: 35.64
+          durationS: 6.26
+        - text: When the Constitution Center was being built, the Park Service at first decided not to dig here.
+          atS: 42.71
+          durationS: 5.86
+        - text: The drop-off would sit on top, and whatever was underneath would be left alone.
+          atS: 49.09
+          durationS: 4.62
+        - text: People in the community disagreed.
+          atS: 54.82
+          durationS: 1.97
+        - text: They wanted to know what was down there.
+          atS: 57.24
+          durationS: 2.08
+        - text: So the archaeologists dug.
+          atS: 60.27
+          durationS: 1.85
+        - text: In the old back yard they found a barrel sunk in the ground and filled with sweepings, with nearly four thousand household objects in it.
+          atS: 62.62
+          durationS: 7.95
+        - text: Pieces of a teapot made by English potters.
+          atS: 71.27
+          durationS: 2.66
+        - text: A Chinese porcelain saucer.
+          atS: 74.44
+          durationS: 2.14
+        - text: Bones from good cuts of meat, and from pig's feet.
+          atS: 77.28
+          durationS: 3.45
+        - text: A coachman to a wealthy family was well paid.
+          atS: 81.42
+          durationS: 2.87
+        - text: The archaeologists think the imported china let Dexter set a proper table for the people planning that church.
+          atS: 84.8
+          durationS: 6.55
+        - text: Most of what survives from the founding years is paper.
+          atS: 92.16
+          durationS: 3.56
+        - text: What survived of James Dexter's house was the good china, swept up in the yard.
+          atS: 96.33
+          durationS: 5.38
