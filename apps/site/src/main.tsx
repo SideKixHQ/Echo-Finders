@@ -7,6 +7,7 @@ import HomePage from '@/pages/Home';
 import PartnerPage from '@/pages/Partners';
 import PrivacyPage from '@/pages/Privacy';
 import NotFoundPage from '@/pages/NotFound';
+import '@echofinders/echo/echo.css';
 import './globals.css';
 import { inject } from '@vercel/analytics';
 

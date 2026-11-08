@@ -82,3 +82,21 @@
   .policy th, .policy td { border-bottom: 1px solid hsl(var(--border)); padding: 0.6rem 0.75rem; text-align: left; vertical-align: top; }
   .policy th { color: hsl(var(--foreground)); }
 }
+
+/* The echo on the home page (Home.tsx). It breathes while it waits, and when it is ready
+   to be pressed it wears the app's ring. Nothing moves under reduced motion. */
+@layer components {
+  .echo-breathe { animation: echo-breathe 4.8s ease-in-out infinite; }
+  @keyframes echo-breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.035); } }
+  .echo-press { position: relative; transition: transform 160ms ease; }
+  .echo-press:active { transform: scale(0.96); }
+  .echo-press:focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: 8px; }
+  .echo-press-armed::after {
+    content: ''; position: absolute; inset: 6%; border-radius: 9999px;
+    border: 2px solid hsl(var(--primary) / 0.7); animation: echo-ring 2.4s ease-in-out infinite;
+  }
+  @keyframes echo-ring { 0%, 100% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.12); opacity: 0.2; } }
+  @media (prefers-reduced-motion: reduce) {
+    .echo-breathe, .echo-press-armed::after { animation: none; }
+  }
+}
