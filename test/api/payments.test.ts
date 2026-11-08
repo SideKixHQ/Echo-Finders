@@ -140,6 +140,8 @@ describe("checkout", () => {
     expect(body.get("line_items[0][price_data][currency]")).toBe("usd");
     expect(body.get("line_items[0][price_data][product_data][name]")).toBe("Cape Fear Coast Week Pass");
     expect(body.get("metadata[plan]")).toBe("week-pass");
+    // Labelled, so a Radar rule can single Echo Finders out of the shared Stripe account.
+    expect(body.get("payment_intent_data[metadata][app]")).toBe("echo-finders");
     expect(body.get("metadata[city]")).toBe("cape-fear");
   });
 
@@ -201,6 +203,7 @@ describe("checkout", () => {
     expect(body.get("mode")).toBe("subscription");
     expect(body.get("line_items[0][price]")).toBe("price_all");
     expect(body.get("customer")).toBe("cus_123");
+    expect(body.get("subscription_data[metadata][app]")).toBe("echo-finders");
   });
 
   it("always asks for a billing address, and adds sales tax only when switched on", async () => {
