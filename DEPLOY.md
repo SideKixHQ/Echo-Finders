@@ -186,6 +186,15 @@ app reads what was bought from Stripe directly when it comes back from checkout.
 
 The secret key lives only in Vercel. It is never in the repository and never in the app.
 
+## Owner mode
+
+James's own phone, with every echo unlocked and playable from anywhere (2026-11-08).
+Open `https://echo-finders.vercel.app/?owner=<code>` once on the phone: the app checks the
+code with `/api/owner` against `OWNER_CODE` (Vercel, Production, sensitive) and marks that
+phone; the code is taken off the address straight away. Settings › Privacy › Owner mode
+turns it off. To change the code, change `OWNER_CODE` in Vercel and redeploy: old links
+stop working, phones already marked stay marked until turned off.
+
 ## Analytics (Vercel Web Analytics)
 
 Anonymous counts, on both the app and the website: visits, plus four app events (`Echo
