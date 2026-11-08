@@ -21,7 +21,7 @@
  */
 
 import { useEffect, useMemo, useState } from "react";
-import { buildEchoJourney, type Echo, type Route } from "@echofinders/core";
+import { buildEchoJourney, distanceKm, type Echo, type LatLng, type Route } from "@echofinders/core";
 import { MODE_ICON } from "./travel";
 import { AIRPORTS, searchAirports, type Airport } from "./airports";
 import { buildFlight } from "./build-flight";
@@ -65,7 +65,18 @@ export interface PreflightProps {
   /** Free roam: no route, just what is around you. Only meaningful on foot and driving. */
   readonly roaming: boolean;
   readonly onRoam: (roaming: boolean) => void;
+  /**
+   * Where the listener is, if known, so the routes offered are ones they could take.
+   *
+   * James (2026-11-08), on this screen from Wilmington: "it seems confusing to me". It
+   * offered walks in Manhattan and Miami to somebody standing in North Carolina, because
+   * every route in the library was listed wherever you were.
+   */
+  readonly here?: LatLng | null;
 }
+
+/** A route is offered when it starts or passes this close to you. */
+const NEARBY_ROUTE_KM = 60;
 
 export function Preflight({
   routes,
@@ -81,6 +92,7 @@ export function Preflight({
   onTravel,
   roaming,
   onRoam,
+  here = null,
 }: PreflightProps) {
   const [picked, setPicked] = useState<Route>(current);
   const returning = foundCount > 0;
@@ -115,8 +127,17 @@ export function Preflight({
 
   /** The journeys worth offering for the way they are travelling. */
   const forTravel = useMemo(
-    () => routes.filter((route) => route.mode === (travel === "flight" ? "flight" : travel)),
-    [routes, travel],
+    () =>
+      routes.filter(
+        (route) =>
+          route.mode === (travel === "flight" ? "flight" : travel) &&
+          // On the ground, only routes you could start from here. Unknown position shows
+          // them all rather than none; a flight is chosen by airport, wherever you are.
+          (travel === "flight" ||
+            !here ||
+            route.waypoints.some((w) => distanceKm(here, w.at) <= NEARBY_ROUTE_KM)),
+      ),
+    [routes, travel, here],
   );
 
   /*
@@ -150,6 +171,13 @@ export function Preflight({
   // panel still offering the walk — and "Find my route" would put you straight back on it.
   useEffect(() => setPicked(current), [current]);
 
+  // No route here to follow, so the only journey on the ground is around you: say so, rather
+  // than leave a route from another city selected behind a hidden choice.
+  const nothingNearby = travel !== "flight" && forTravel.length === 0;
+  useEffect(() => {
+    if (nothingNearby && !roaming) onRoam(true);
+  }, [nothingNearby, roaming, onRoam]);
+
   return (
     <div className="preflight">
       <div className="pf-body">
@@ -177,10 +205,16 @@ export function Preflight({
           </>
         ) : (
           <>
-            <h2>Download your journey before you go</h2>
+            {/*
+              What the app does, before what to download. "Download your journey before you
+              go" and airplane mode are true of a flight and puzzling on a street corner
+              (James, 2026-11-08), so the offline line is now said only when flying.
+            */}
+            <h2>Hear what happened right where you are</h2>
             <p>
-              Pick where you are going, choose the echoes you want, and Echo Finders runs in
-              airplane mode the whole way.
+              {travel === "flight"
+                ? "Pick your airports before you board. The journey downloads, and Echo Finders runs in airplane mode the whole way."
+                : "Choose how you are getting around and press start. Stories play as you reach the places they happened."}
             </p>
           </>
         )}
@@ -276,7 +310,7 @@ export function Preflight({
           Free roam, where it means anything. A flight is somebody else's route and the door
           is locked, so there is nothing to roam.
         */}
-        {travel !== "flight" && (
+        {travel !== "flight" && forTravel.length > 0 && (
           <button
             className={roaming ? "pf-pick pf-roam on" : "pf-pick pf-roam"}
             onClick={() => onRoam(true)}
@@ -294,7 +328,7 @@ export function Preflight({
           The one thing on the screen that says what you have chosen was contradicting the
           choice, which reads exactly like the button not working.
         */}
-        <div className="pf-field">
+        {!roaming && <div className="pf-field">
           <span className="pf-code">
             {roaming ? ROAM_CODE[travel] : awaitingPair ? "Where to?" : code(picked)}
           </span>
@@ -305,7 +339,7 @@ export function Preflight({
                 ? "Pick both airports and the route builds itself."
                 : `${picked.name ?? picked.id} · ${total} ${total === 1 ? "echo" : "echoes"}`}
           </span>
-        </div>
+        </div>}
 
         {/*
           What you are actually carrying.
@@ -340,8 +374,7 @@ export function Preflight({
           */}
           <span className="pf-pkg-text">
             {journey.echoes.length} {journey.echoes.length === 1 ? "echo" : "echoes"} ·{" "}
-            {megabytes(journey.totalBytes)} of {megabytes(journey.budgetBytes)} · ships
-            inside the app for now, so there is nothing to download yet
+            {megabytes(journey.totalBytes)} · works without signal
           </span>
           {journey.droppedCount > 0 && (
             <span className="pf-pkg-drop">
@@ -350,6 +383,9 @@ export function Preflight({
           )}
         </div>}
 
+        {choosing && forTravel.length > 0 && travel !== "flight" && (
+          <p className="pf-or">Or follow a route near you</p>
+        )}
         {choosing && forTravel.length > 0 && (
           <div className="pf-picks">
             {forTravel.map((route) => (
