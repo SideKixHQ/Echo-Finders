@@ -9,7 +9,7 @@ at: { lat: 33.891, lng: -78.0352 }
 triggerRadiusKm: 0.12
 category: history
 format: short
-durationS: 58
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   The Navy was short of vessels. So six boats went out from here to patrol around Frying Pan Shoals, looking for the submarines. All six were private yachts, doing Navy work.
 
   Picture one of them from this beach. Somebody's pleasure boat, out past the breakers, hunting a submarine.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Out there, under the water, Frying Pan Shoals runs a long way out from Bald Head Island."
@@ -69,3 +69,44 @@ sources:
     url: https://www.ourstate.com/the-cape-fear-lighthouses-prism-project/
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/caswell-beach-yachts-on-submarine-watch/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.1
+    audioBytes: 866890
+    transcript:
+      totalS: 54.1
+      lines:
+        - text: Look out to sea, and then east, past the point at the end of this beach.
+          atS: 0
+          durationS: 4.56
+        - text: Out there, under the water, Frying Pan Shoals runs a long way out from Bald Head Island.
+          atS: 5.38
+          durationS: 5.27
+        - text: In November 1941, one month before Pearl Harbor, the Navy bought Fort Caswell, at the end of this road, for seventy-five thousand dollars.
+          atS: 11.34
+          durationS: 8.93
+        - text: The buildings were painted camouflage green.
+          atS: 20.71
+          durationS: 2.87
+        - text: Blackout curtains went into the windows.
+          atS: 24.02
+          durationS: 2.45
+        - text: During the war, Fort Caswell was one of four bases in the country where German submarines were monitored.
+          atS: 27.42
+          durationS: 6.28
+        - text: The Navy was short of vessels.
+          atS: 34.31
+          durationS: 1.9
+        - text: So six boats went out from here to patrol around Frying Pan Shoals, looking for the submarines.
+          atS: 36.39
+          durationS: 6.28
+        - text: All six were private yachts, doing Navy work.
+          atS: 43.18
+          durationS: 3.33
+        - text: Picture one of them from this beach.
+          atS: 46.95
+          durationS: 1.97
+        - text: Somebody's pleasure boat, out past the breakers, hunting a submarine.
+          atS: 49.31
+          durationS: 4.79

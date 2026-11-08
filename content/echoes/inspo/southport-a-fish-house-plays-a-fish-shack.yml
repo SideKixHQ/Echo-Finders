@@ -12,7 +12,7 @@ inspo:
   kind: creation
   evidence: site
 format: short
-durationS: 50
+durationS: 47
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
   It is known as the best place to watch the sunset in Southport. When the phones come out, the manager says, it is usually for the sunset, or for the dolphins going by.
 
   A fish house that played a fish shack. Typecast, and happy about it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look for the bar on the point, where the Intracoastal Waterway meets the Cape Fear River."
@@ -78,3 +78,38 @@ sources:
     url: https://www.ourstate.com/film-locations-in-north-carolina-2/
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-a-fish-house-plays-a-fish-shack/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 46.8
+    audioBytes: 749443
+    transcript:
+      totalS: 46.8
+      lines:
+        - text: Look for the bar on the point, where the Intracoastal Waterway meets the Cape Fear River.
+          atS: 0
+          durationS: 5.36
+        - text: In the film Safe Haven, this was Ivan's Fish Shack.
+          atS: 6.32
+          durationS: 3.9
+        - text: Before it was a bar, it was a fish house.
+          atS: 10.54
+          durationS: 2.62
+        - text: Safe Haven starred Julianne Hough and Josh Duhamel, and the town saw an immense increase in tourism around its release.
+          atS: 13.68
+          durationS: 7.98
+        - text: The bar has had other parts too, in Weekend at Bernie's, I Know What You Did Last Summer and The Three Lives of Karen.
+          atS: 22.47
+          durationS: 7
+        - text: It is known as the best place to watch the sunset in Southport.
+          atS: 30.28
+          durationS: 3.7
+        - text: When the phones come out, the manager says, it is usually for the sunset, or for the dolphins going by.
+          atS: 34.59
+          durationS: 6.42
+        - text: A fish house that played a fish shack.
+          atS: 41.52
+          durationS: 2.26
+        - text: Typecast, and happy about it.
+          atS: 44.22
+          durationS: 2.54

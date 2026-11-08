@@ -9,7 +9,7 @@ at: { lat: 33.9208, lng: -78.0159 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 54
+durationS: 51
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   Today it is a museum. You can step into the original cells and read the graffiti the prisoners left on the walls.
 
   For the jailer's children, home was one floor below the cells.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It was the county jail from 1904 until 1971."
@@ -84,3 +84,44 @@ sources:
     url: https://www.ourstate.com/around-town-southport-north-carolina/
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-one-floor-below-the-cells/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 51.2
+    audioBytes: 820078
+    transcript:
+      totalS: 51.2
+      lines:
+        - text: Look at the two-story brick building on this corner.
+          atS: 0
+          durationS: 2.79
+        - text: It was the county jail from 1904 until 1971.
+          atS: 3.11
+          durationS: 4.4
+        - text: It cost a little less than seven thousand dollars, after several earlier wooden jails were destroyed by hurricanes and fires.
+          atS: 8.02
+          durationS: 7.24
+        - text: The cells were upstairs.
+          atS: 15.87
+          durationS: 1.73
+        - text: Each had four bunks, a commode and a wash basin.
+          atS: 17.98
+          durationS: 3.33
+        - text: Downstairs, in two tiny rooms, lived the jailer, with his family.
+          atS: 21.92
+          durationS: 4.84
+        - text: It could hold eleven prisoners, but it usually held two or three, in for short stays and minor offenses.
+          atS: 27.36
+          durationS: 6.96
+        - text: Through every summer it was a jail, it never had working air conditioning.
+          atS: 34.83
+          durationS: 4.08
+        - text: Today it is a museum.
+          atS: 39.42
+          durationS: 1.66
+        - text: You can step into the original cells and read the graffiti the prisoners left on the walls.
+          atS: 41.59
+          durationS: 4.9
+        - text: For the jailer's children, home was one floor below the cells.
+          atS: 47.3
+          durationS: 3.88

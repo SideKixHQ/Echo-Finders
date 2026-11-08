@@ -9,7 +9,7 @@ at: { lat: 33.8919, lng: -78.0357 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 84
+durationS: 78
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   Then the mercury bulbs turned out too expensive and difficult to keep. In 1962 a new lighthouse at Sullivan's Island, in South Carolina, took the American title.
 
   The light still flashes four times every ten seconds. Wait for dark, and count.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The light up there is not one lamp behind a glass lens, like the old towers."
@@ -83,3 +83,56 @@ sources:
     url: https://www.nps.gov/teachers/classrooms/upload/Lighthouse-Traveling-Trunk_revised-2022_508_rev2.pdf
     retrievedAt: "2026-11-08"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/caswell-beach-the-second-brightest-light/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 78
+    audioBytes: 1248487
+    transcript:
+      totalS: 78
+      lines:
+        - text: From this deck, look back across the road at the top of the lighthouse.
+          atS: 0
+          durationS: 3.82
+        - text: The light up there is not one lamp behind a glass lens, like the old towers.
+          atS: 3.99
+          durationS: 5.1
+        - text: It is banks of lamps and reflectors.
+          atS: 9.6
+          durationS: 2.6
+        - text: When it was switched on in 1958, the bottom bank held thirty-six inch reflectors with two thousand five hundred watt mercury bulbs.
+          atS: 12.71
+          durationS: 8.77
+        - text: The reflectors were adapted from aircraft spotlights used in the Second World War.
+          atS: 21.76
+          durationS: 4.86
+        - text: The Coast Guard engineers knew it would have to be one of the brightest lights in the world.
+          atS: 26.83
+          durationS: 4.73
+        - text: The tower stands four miles farther inland than the old Cape Fear light it replaced, and it still had to reach farther out to sea.
+          atS: 32.51
+          durationS: 7.77
+        - text: It did.
+          atS: 41.23
+          durationS: 0.77
+        - text: Its glow carried more than thirty nautical miles, to the end of Frying Pan Shoals.
+          atS: 42.44
+          durationS: 5.03
+        - text: For a few years it was the brightest lighthouse in the United States, and the second brightest in the world.
+          atS: 48.27
+          durationS: 6.2
+        - text: Only a lighthouse on an island off France was brighter.
+          atS: 55.29
+          durationS: 3.4
+        - text: Then the mercury bulbs turned out too expensive and difficult to keep.
+          atS: 59.29
+          durationS: 4.49
+        - text: In 1962 a new lighthouse at Sullivan's Island, in South Carolina, took the American title.
+          atS: 64.3
+          durationS: 6.76
+        - text: The light still flashes four times every ten seconds.
+          atS: 71.44
+          durationS: 3.7
+        - text: Wait for dark, and count.
+          atS: 75.74
+          durationS: 2.23

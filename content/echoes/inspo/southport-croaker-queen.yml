@@ -12,7 +12,7 @@ inspo:
   kind: creation
   evidence: site
 format: short
-durationS: 40
+durationS: 35
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   The theatre has been on the big screen in other films too, among them Crimes of the Heart and The Secret Life of Bees.
 
   A croaker is a fish. In this town, for one night, it was a crown.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It was built in 1918, and it is still in use."
@@ -74,3 +74,35 @@ sources:
     url: https://www.visitnc.com/list/take-totally-90s-film-tour-north-carolina
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-croaker-queen/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 35.3
+    audioBytes: 566377
+    transcript:
+      totalS: 35.3
+      lines:
+        - text: Look at the old theatre across the street.
+          atS: 0
+          durationS: 2.04
+        - text: It was built in 1918, and it is still in use.
+          atS: 2.08
+          durationS: 3.29
+        - text: In the 1997 slasher film I Know What You Did Last Summer, this is where the town beauty pageant was held.
+          atS: 5.75
+          durationS: 6.43
+        - text: On its stage, Sarah Michelle Gellar's character was crowned Croaker Queen.
+          atS: 12.56
+          durationS: 4.35
+        - text: Much of the film was shot in Southport, taking advantage of the town's waterfront.
+          atS: 17.36
+          durationS: 4.9
+        - text: The theatre has been on the big screen in other films too, among them Crimes of the Heart and The Secret Life of Bees.
+          atS: 22.7
+          durationS: 7.21
+        - text: A croaker is a fish.
+          atS: 30.08
+          durationS: 1.57
+        - text: In this town, for one night, it was a crown.
+          atS: 32.03
+          durationS: 3.31

@@ -32,7 +32,7 @@ script: |
   New ways of controlling disease came in 1937, and the station was left to fall apart. Fire took many of its buildings in 1951. Hurricane Hazel took the rest in 1954.
 
   All that was left was a concrete base that once held up a water tower. Today it is lit at night, so boats can see it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "For decades, ships coming in from abroad had to stop out there before they were allowed any further."
@@ -88,3 +88,59 @@ sources:
     url: https://files.nc.gov/ncdcr/nr/BW0008.pdf
     retrievedAt: "2026-11-08"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-the-station-in-the-river/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77.6
+    audioBytes: 1241799
+    transcript:
+      totalS: 77.6
+      lines:
+        - text: Look out at the river.
+          atS: 0
+          durationS: 1.35
+        - text: For decades, ships coming in from abroad had to stop out there before they were allowed any further.
+          atS: 1.56
+          durationS: 5.85
+        - text: In August 1862, yellow fever reached Wilmington.
+          atS: 8.22
+          durationS: 4.32
+        - text: It is believed to have arrived on a steamship from the Bahamas.
+          atS: 12.98
+          durationS: 3.7
+        - text: Six hundred and fifty four people died.
+          atS: 17.29
+          durationS: 2.58
+        - text: So a quarantine station was built near this town, out on the river.
+          atS: 20.38
+          durationS: 3.93
+        - text: The one built in 1895 had ten buildings, on a foundation above the water.
+          atS: 24.81
+          durationS: 5.32
+        - text: Every ship tied up at its six hundred foot dock.
+          atS: 30.73
+          durationS: 3.18
+        - text: Anyone found to be sick had to stay on the platform, which had its own hospital.
+          atS: 34.42
+          durationS: 4.97
+        - text: The ships were sprayed with sulfur from pressurized hoses, and only then went on upriver.
+          atS: 40
+          durationS: 5.94
+        - text: Near this corner, on the river side of Bay Street, a small office ran the station's routine affairs from the shore.
+          atS: 46.55
+          durationS: 6.99
+        - text: New ways of controlling disease came in 1937, and the station was left to fall apart.
+          atS: 54.23
+          durationS: 6.24
+        - text: Fire took many of its buildings in 1951.
+          atS: 61.27
+          durationS: 3.19
+        - text: Hurricane Hazel took the rest in 1954.
+          atS: 64.97
+          durationS: 3.33
+        - text: All that was left was a concrete base that once held up a water tower.
+          atS: 69
+          durationS: 4.13
+        - text: Today it is lit at night, so boats can see it.
+          atS: 73.83
+          durationS: 3.73

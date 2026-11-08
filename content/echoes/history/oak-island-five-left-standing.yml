@@ -9,7 +9,7 @@ at: { lat: 33.9122, lng: -78.073 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 57
+durationS: 52
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   The marker calls it the greatest coastal flood in North Carolina's recorded history. Hazel is still the storm every hurricane here is measured against.
 
   Five buildings were left standing. Count the houses on this one street, and you will already have counted more than survived.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Find the state highway marker beside the road here."
@@ -85,3 +85,47 @@ sources:
     url: https://www.wwaytv3.com/history-with-hud-how-three-cape-fear-beach-towns-exploded-into-popular-tourist-destinations/
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/oak-island-five-left-standing/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 51.5
+    audioBytes: 825930
+    transcript:
+      totalS: 51.5
+      lines:
+        - text: Find the state highway marker beside the road here.
+          atS: 0
+          durationS: 3.15
+        - text: It is for a storm.
+          atS: 3.35
+          durationS: 1.29
+        - text: On the fifteenth of October, 1954, Hurricane Hazel came ashore in southern Brunswick County, on a full moon high tide.
+          atS: 5.34
+          durationS: 8.6
+        - text: This beach was a town called Long Beach then.
+          atS: 14.55
+          durationS: 2.72
+        - text: A storm surge of seventeen feet swept across the island.
+          atS: 17.51
+          durationS: 3.36
+        - text: There were three hundred and fifty-seven buildings on the island.
+          atS: 21.19
+          durationS: 3.1
+        - text: The surge took three hundred and fifty-two of them.
+          atS: 24.53
+          durationS: 2.79
+        - text: Grass covered sand dunes, ten to twenty feet high, simply disappeared.
+          atS: 27.7
+          durationS: 4.96
+        - text: The marker calls it the greatest coastal flood in North Carolina's recorded history.
+          atS: 33.47
+          durationS: 5.2
+        - text: Hazel is still the storm every hurricane here is measured against.
+          atS: 39.37
+          durationS: 3.82
+        - text: Five buildings were left standing.
+          atS: 43.79
+          durationS: 2.21
+        - text: Count the houses on this one street, and you will already have counted more than survived.
+          atS: 46.44
+          durationS: 5.11

@@ -9,7 +9,7 @@ at: { lat: 33.91885, lng: -78.0211 }
 triggerRadiusKm: 0.05
 category: people
 format: short
-durationS: 58
+durationS: 56
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
 pronunciations:
   - written: Ruark
     say: ROO-ark
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look along the west side of Lord Street on this block for a two-story house with bay windows and a pair of porches."
@@ -83,3 +83,47 @@ sources:
     url: https://www.dncr.nc.gov/blog/2023/12/11/robert-ruark-1915-1965-d-93
     retrievedAt: "2026-11-08"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-the-old-man-and-the-boy/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 56.2
+    audioBytes: 900745
+    transcript:
+      totalS: 56.2
+      lines:
+        - text: Look along the west side of Lord Street on this block for a two-story house with bay windows and a pair of porches.
+          atS: 0
+          durationS: 7.12
+        - text: A river pilot named E H Adkins had it built in 1890.
+          atS: 7.56
+          durationS: 4.83
+        - text: His grandson was Robert Ruark.
+          atS: 12.83
+          durationS: 2.45
+        - text: Ruark grew up in Wilmington, but as a boy he spent much of his time here, at his grandfather's house on Lord Street.
+          atS: 15.88
+          durationS: 7.54
+        - text: He became a popular journalist and author.
+          atS: 23.8
+          durationS: 2.78
+        - text: Many of his books were about Africa.
+          atS: 27.02
+          durationS: 2.01
+        - text: But the one people kept coming back to was about this town.
+          atS: 29.3
+          durationS: 3.5
+        - text: In 1957 he published The Old Man and the Boy, an account of his boyhood years around Southport.
+          atS: 33.31
+          durationS: 6.78
+        - text: It was a bestseller.
+          atS: 40.53
+          durationS: 1.43
+        - text: The scholar Richard Walser listed it as one of five North Carolina books likely still to be read in a hundred years.
+          atS: 42.34
+          durationS: 6.98
+        - text: Ruark died in 1965.
+          atS: 50.43
+          durationS: 2.71
+        - text: The boy in the book is still walking around this town.
+          atS: 53.38
+          durationS: 2.86

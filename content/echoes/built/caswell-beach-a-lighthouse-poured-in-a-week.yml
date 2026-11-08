@@ -9,7 +9,7 @@ at: { lat: 33.8928, lng: -78.0352 }
 triggerRadiusKm: 0.05
 category: built
 format: short
-durationS: 73
+durationS: 70
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   By the following Monday, the walls stood one hundred and forty-eight feet high.
 
   The last lighthouse built in North Carolina went up in a week, and it wears its colors all the way through.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Grey at the bottom, white in the middle, black at the top."
@@ -95,3 +95,65 @@ sources:
     url: https://www.nps.gov/teachers/classrooms/upload/Lighthouse-Traveling-Trunk_revised-2022_508_rev2.pdf
     retrievedAt: "2026-11-08"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/caswell-beach-a-lighthouse-poured-in-a-week/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.7
+    audioBytes: 1115576
+    transcript:
+      totalS: 69.7
+      lines:
+        - text: Look at the stripes on the lighthouse.
+          atS: 0
+          durationS: 2.13
+        - text: Grey at the bottom, white in the middle, black at the top.
+          atS: 2.63
+          durationS: 4.09
+        - text: None of it is paint.
+          atS: 7.54
+          durationS: 1.28
+        - text: The colors are cast into the concrete.
+          atS: 9.2
+          durationS: 2.46
+        - text: The bottom forty feet is the natural grey of the cement.
+          atS: 12.1
+          durationS: 3.64
+        - text: The middle fifty feet was poured with white cement mixed with white quartz.
+          atS: 16.25
+          durationS: 4.66
+        - text: The top was mixed with a black coloring agent.
+          atS: 21.41
+          durationS: 2.98
+        - text: In 1957 the Coast Guard asked for bids on two designs.
+          atS: 24.9
+          durationS: 4.41
+        - text: One was a steel frame.
+          atS: 29.81
+          durationS: 1.55
+        - text: The other was a concrete silo tower.
+          atS: 31.57
+          durationS: 2.37
+        - text: Nobody bid on the steel one.
+          atS: 34.45
+          durationS: 1.78
+        - text: The builders used a system developed in Sweden.
+          atS: 37.16
+          durationS: 2.77
+        - text: Steel forms were jacked slowly up the tower while concrete was poured into them.
+          atS: 40.32
+          durationS: 4.77
+        - text: The pour began on a Monday morning and did not stop.
+          atS: 46.21
+          durationS: 3.32
+        - text: A mixing plant on the site ran round the clock for six days.
+          atS: 49.97
+          durationS: 3.77
+        - text: The forms climbed from eight inches to a foot an hour.
+          atS: 54.13
+          durationS: 3.23
+        - text: By the following Monday, the walls stood one hundred and forty-eight feet high.
+          atS: 57.86
+          durationS: 4.71
+        - text: The last lighthouse built in North Carolina went up in a week, and it wears its colors all the way through.
+          atS: 63.27
+          durationS: 6.39

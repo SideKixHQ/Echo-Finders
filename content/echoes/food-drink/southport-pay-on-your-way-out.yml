@@ -9,7 +9,7 @@ at: { lat: 33.91645, lng: -78.02305 }
 triggerRadiusKm: 0.04
 category: food-drink
 format: short
-durationS: 59
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   The thing to order, since the first day, has been Thee Special, with steamed shrimp, a crab cake and corn. The covered deck looks out over the Old Yacht Basin.
 
   More than thirty years on, people are still settling up on their way out.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Grab whatever you like, the owner tells his guests, with a wave at a self serve cooler of cold drinks."
@@ -75,3 +75,44 @@ sources:
     url: https://www.ourstate.com/around-town-southport-north-carolina/
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-pay-on-your-way-out/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53.5
+    audioBytes: 856859
+    transcript:
+      totalS: 53.5
+      lines:
+        - text: Somewhere along this basin is a restaurant that runs on trust.
+          atS: 0
+          durationS: 3.74
+        - text: Grab whatever you like, the owner tells his guests, with a wave at a self serve cooler of cold drinks.
+          atS: 4.18
+          durationS: 6.2
+        - text: Pay when you're done.
+          atS: 10.7
+          durationS: 1.36
+        - text: It is not a gimmick.
+          atS: 12.45
+          durationS: 1.24
+        - text: The place is Provision Company, Pro Co to the locals, and it opened in 1993 in a weathered waterfront building that had once been a wholesale fish house.
+          atS: 13.86
+          durationS: 10.28
+        - text: The founder had come here from the British Virgin Islands in the early nineties.
+          atS: 24.74
+          durationS: 4.42
+        - text: The honor system grew out of a simple belief.
+          atS: 29.44
+          durationS: 2.82
+        - text: If you give people the chance to be honest, they will be honest.
+          atS: 32.96
+          durationS: 3.77
+        - text: The thing to order, since the first day, has been Thee Special, with steamed shrimp, a crab cake and corn.
+          atS: 37.85
+          durationS: 6.81
+        - text: The covered deck looks out over the Old Yacht Basin.
+          atS: 45.62
+          durationS: 3.19
+        - text: More than thirty years on, people are still settling up on their way out.
+          atS: 49.41
+          durationS: 4.09

@@ -9,7 +9,7 @@ at: { lat: 33.8734, lng: -78.0006 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 54
+durationS: 50
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
 pronunciations:
   - written: Cochran
     say: KOCK-run
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look above the door of the lighthouse, on its west side."
@@ -84,3 +84,74 @@ sources:
     url: https://www.dncr.nc.gov/index%2Ephp/blog/2023/12/11/bald-head-lighthouse-d-66
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/bald-head-the-builder-who-lost-money/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 50.2
+    audioBytes: 805032
+    transcript:
+      totalS: 50.2
+      lines:
+        - text: Look above the door of the lighthouse, on its west side.
+          atS: 0
+          durationS: 2.45
+        - text: There is a stone tablet.
+          atS: 2.84
+          durationS: 1.43
+        - text: It reads, R.
+          atS: 4.46
+          durationS: 1.51
+        - text: Cochran, Founder.
+          atS: 6.15
+          durationS: 1.78
+        - text: A.
+          atS: 8.27
+          durationS: 0.44
+        - text: D.
+          atS: 9
+          durationS: 0.41
+        - text: "1817."
+          atS: 9.59
+          durationS: 1.13
+        - text: D.
+          atS: 11.01
+          durationS: 0.37
+        - text: S.
+          atS: 11.49
+          durationS: 0.21
+        - text: Way, Builder.
+          atS: 11.75
+          durationS: 1.21
+        - text: Daniel Way won the contract in July 1816.
+          atS: 13.8
+          durationS: 3.16
+        - text: His terms were much lower than anyone else's.
+          atS: 17.58
+          durationS: 2.3
+        - text: He had a plan.
+          atS: 20.21
+          durationS: 0.86
+        - text: The first lighthouse here had been wrecked.
+          atS: 21.52
+          durationS: 2.05
+        - text: He would salvage its brick, and he expected the new tower to stand close to the old one.
+          atS: 23.86
+          durationS: 4.64
+        - text: Both hopes went unrealized.
+          atS: 29.45
+          durationS: 1.73
+        - text: The old brick was not the best quality.
+          atS: 31.43
+          durationS: 2.24
+        - text: And the new lighthouse went up a mile west of the old one, too far to haul the brick that could be saved.
+          atS: 33.84
+          durationS: 5.5
+        - text: Way lost money on the project.
+          atS: 40.16
+          durationS: 1.86
+        - text: But the tower he built is the oldest lighthouse standing in North Carolina.
+          atS: 42.3
+          durationS: 4.33
+        - text: Two hundred years on, his name is still over the door.
+          atS: 47.14
+          durationS: 3.11

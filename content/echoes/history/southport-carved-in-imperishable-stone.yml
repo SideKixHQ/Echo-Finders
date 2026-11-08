@@ -9,7 +9,7 @@ at: { lat: 33.92005, lng: -78.0152 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 58
+durationS: 49
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   It still stands, a memorial to every pilot lost.
 
   He was writing for people he would never meet. You are one of them.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "River pilots brought ships in from the Atlantic to the ports along this river since before there were any towns here."
@@ -71,3 +71,41 @@ sources:
     url: https://www.wwaytv3.com/history-with-hud-how-several-forts-protected-the-cape-fear-for-centuries/
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-carved-in-imperishable-stone/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 48.8
+    audioBytes: 781208
+    transcript:
+      totalS: 48.8
+      lines:
+        - text: Look among the graves under these oaks for the pilots' monument.
+          atS: 0
+          durationS: 3.29
+        - text: It was put up for river pilots lost at sea.
+          atS: 3.46
+          durationS: 2.62
+        - text: River pilots brought ships in from the Atlantic to the ports along this river since before there were any towns here.
+          atS: 6.47
+          durationS: 6.52
+        - text: In the 1870s, ten of them were lost at sea.
+          atS: 13.5
+          durationS: 3.24
+        - text: The loss was terrible for Smithville, as this town was called then, and for Wilmington.
+          atS: 17.34
+          durationS: 4.93
+        - text: Smithville had grown up around the fort by the river, and the fort's commander held several nights of entertainment to raise money for a monument.
+          atS: 23.09
+          durationS: 7.41
+        - text: One was needed, he said, so that those who live after us may find the virtues and gallant deeds of their ancestors carved in the imperishable stone.
+          atS: 31.1
+          durationS: 8.68
+        - text: It still stands, a memorial to every pilot lost.
+          atS: 40.6
+          durationS: 3.75
+        - text: He was writing for people he would never meet.
+          atS: 45.05
+          durationS: 2.11
+        - text: You are one of them.
+          atS: 47.67
+          durationS: 1.09

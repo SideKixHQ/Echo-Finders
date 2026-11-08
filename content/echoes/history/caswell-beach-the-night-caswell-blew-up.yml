@@ -9,7 +9,7 @@ at: { lat: 33.8914, lng: -78.0285 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 80
+durationS: 81
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   Here is the strange part. The guns of this fort often fought Union warships, all through the war, and yet not a single soldier was killed in action here.
 
   The worst damage Fort Caswell ever took, its own side did.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Beyond this gate is Fort Caswell."
@@ -92,3 +92,53 @@ sources:
     url: https://files.nc.gov/ncdcr/nr/BW0230.pdf
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/caswell-beach-the-night-caswell-blew-up/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.3
+    audioBytes: 1301567
+    transcript:
+      totalS: 81.3
+      lines:
+        - text: Beyond this gate is Fort Caswell.
+          atS: 0
+          durationS: 2.74
+        - text: The property is a church retreat now, private land, so this story is one to hear from the road.
+          atS: 4.04
+          durationS: 5.9
+        - text: Across the river, Fort Fisher fell to Union forces on the fifteenth of January, 1865.
+          atS: 11.24
+          durationS: 6.83
+        - text: The troops here were ordered to abandon this fort and destroy its ammunition.
+          atS: 18.88
+          durationS: 5.2
+        - text: On the seventeenth of January, they blew up the powder magazines.
+          atS: 25.03
+          durationS: 4.16
+        - text: A newspaper reported being woken at two in the morning by an explosion that shook its office to its foundation.
+          atS: 29.88
+          durationS: 6.65
+        - text: A witness across the water, at what is now Southport, saw a vivid flash of light travel toward the fort.
+          atS: 37.49
+          durationS: 6.44
+        - text: Then, he wrote, it was as if a mighty volcano had sprung its blazing contents from the sea into the sky.
+          atS: 44.54
+          durationS: 7.33
+        - text: The roar smashed the glass in his house.
+          atS: 52.98
+          durationS: 2.45
+        - text: The blast destroyed the entire southeast face of the fort.
+          atS: 55.75
+          durationS: 3.58
+        - text: The following day, Union forces walked into the abandoned fort and took it.
+          atS: 59.77
+          durationS: 4.74
+        - text: Here is the strange part.
+          atS: 65.11
+          durationS: 1.81
+        - text: The guns of this fort often fought Union warships, all through the war, and yet not a single soldier was killed in action here.
+          atS: 67.3
+          durationS: 7.78
+        - text: The worst damage Fort Caswell ever took, its own side did.
+          atS: 75.89
+          durationS: 5.38

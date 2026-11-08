@@ -9,7 +9,7 @@ at: { lat: 33.9176, lng: -78.01805 }
 triggerRadiusKm: 0.04
 category: kids
 format: short
-durationS: 52
+durationS: 49
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   A lady named Jessie Taylor raised the flags here for more than sixty years.
 
   So if you were a sailor, you kept one eye on this corner. Red over white meant it was time to go home.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "When a strong wind called a gale was coming, two red flags went up."
@@ -55,3 +55,53 @@ sources:
     url: https://www.wwaytv3.com/history-with-hud-how-the-southport-weather-tower-helped-save-lives-during-storms/
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/southport-red-over-white/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 48.9
+    audioBytes: 783298
+    transcript:
+      totalS: 48.9
+      lines:
+        - text: Here is a puzzle from the days before phones.
+          atS: 0
+          durationS: 2.74
+        - text: Imagine you are a sailor out on that river, and a big storm is on its way.
+          atS: 3.06
+          durationS: 4.33
+        - text: How could anybody on land warn you?
+          atS: 7.72
+          durationS: 2.19
+        - text: They used a tall tower, right here by the water, and they used flags.
+          atS: 10.36
+          durationS: 4.27
+        - text: When a strong wind called a gale was coming, two red flags went up.
+          atS: 15.07
+          durationS: 4.27
+        - text: But at night, you cannot see a flag.
+          atS: 19.67
+          durationS: 2.48
+        - text: So the tower had lights too.
+          atS: 22.48
+          durationS: 1.73
+        - text: Each tower had three of them, two red and one white.
+          atS: 24.53
+          durationS: 3.55
+        - text: A red light over a white light meant the same as the two red flags.
+          atS: 28.41
+          durationS: 3.87
+        - text: Gale coming.
+          atS: 32.66
+          durationS: 0.93
+        - text: Head for safety.
+          atS: 34.03
+          durationS: 1.21
+        - text: A lady named Jessie Taylor raised the flags here for more than sixty years.
+          atS: 36.05
+          durationS: 4.8
+        - text: So if you were a sailor, you kept one eye on this corner.
+          atS: 41.23
+          durationS: 3.95
+        - text: Red over white meant it was time to go home.
+          atS: 45.87
+          durationS: 3.03

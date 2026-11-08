@@ -9,7 +9,7 @@ at: { lat: 33.9245, lng: -78.1396 }
 triggerRadiusKm: 0.08
 category: land
 format: short
-durationS: 47
+durationS: 44
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -26,7 +26,7 @@ script: |
   A high rise bridge opened in 1975, and a second one in 2010. Two ways in, and both of them cross this channel.
 
   On the beach side, you face the ocean. On this side, you are looking at the water that made the island.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "It is the Intracoastal Waterway, and it is the reason you are standing on an island at all."
@@ -56,3 +56,41 @@ sources:
     url: https://www.wwaytv3.com/history-with-hud-how-three-cape-fear-beach-towns-exploded-into-popular-tourist-destinations/
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/oak-island-how-oak-island-became-an-island/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 44.1
+    audioBytes: 706812
+    transcript:
+      totalS: 44.1
+      lines:
+        - text: Look at the water on this side of the island, the quiet side.
+          atS: 0
+          durationS: 3.89
+        - text: It is the Intracoastal Waterway, and it is the reason you are standing on an island at all.
+          atS: 4.4
+          durationS: 5.27
+        - text: Oak Island was not always an island.
+          atS: 10.37
+          durationS: 2.12
+        - text: This twelve mile strip of land was cut off from the rest of Brunswick County in the 1930s, when the waterway was finished.
+          atS: 12.88
+          durationS: 7.44
+        - text: A swing bridge was put in to bring people across.
+          atS: 20.56
+          durationS: 3.2
+        - text: In 1971 a barge hit it and destroyed it.
+          atS: 24.09
+          durationS: 3.74
+        - text: A high rise bridge opened in 1975, and a second one in 2010.
+          atS: 28.15
+          durationS: 5.4
+        - text: Two ways in, and both of them cross this channel.
+          atS: 33.83
+          durationS: 3.2
+        - text: On the beach side, you face the ocean.
+          atS: 37.42
+          durationS: 2.58
+        - text: On this side, you are looking at the water that made the island.
+          atS: 40.44
+          durationS: 3.68

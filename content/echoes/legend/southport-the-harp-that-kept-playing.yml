@@ -9,7 +9,7 @@ at: { lat: 33.9184, lng: -78.0158 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 69
+durationS: 61
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -38,7 +38,7 @@ script: |
 pronunciations:
   - written: Caseletta
     say: kah-zeh-LET-tah
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It was built in 1859, and by the 1880s it was a resort hotel."
@@ -90,3 +90,59 @@ sources:
     url: https://files.nc.gov/ncdcr/nr/BW0008.pdf
     retrievedAt: "2026-11-08"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/southport-the-harp-that-kept-playing/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 60.8
+    audioBytes: 974305
+    transcript:
+      totalS: 60.8
+      lines:
+        - text: Look at the big house on the corner across the street.
+          atS: 0
+          durationS: 2.47
+        - text: It was built in 1859, and by the 1880s it was a resort hotel.
+          atS: 2.75
+          durationS: 4.75
+        - text: In summer it was known for its weekend music and dances.
+          atS: 7.88
+          durationS: 3.33
+        - text: What follows is a legend.
+          atS: 11.54
+          durationS: 1.65
+        - text: Nobody has proven any of the strange part.
+          atS: 13.51
+          durationS: 2.38
+        - text: The story goes that in 1882, a young musician from Italy named Antonio Caseletta came to this coast looking for work, and got a job playing the harp in the hotel band.
+          atS: 16.41
+          durationS: 10.55
+        - text: One telling makes him nineteen.
+          atS: 27.47
+          durationS: 2.07
+        - text: One night he went sailing with the other musicians.
+          atS: 29.92
+          durationS: 2.64
+        - text: He fell overboard and drowned.
+          atS: 32.99
+          durationS: 1.9
+        - text: He was buried a few blocks from here, in the Old Smithville Burying Ground.
+          atS: 35.22
+          durationS: 4.37
+        - text: According to the legend, the band played that night without him, and left his chair and his harp empty.
+          atS: 40.03
+          durationS: 6.05
+        - text: When they began, the sound of a harp joined in.
+          atS: 46.4
+          durationS: 3.12
+        - text: There was nobody at it.
+          atS: 49.97
+          durationS: 1.3
+        - text: Some people say they can still hear it, in the halls of the hotel.
+          atS: 51.59
+          durationS: 3.7
+        - text: Most ghost stories want something.
+          atS: 55.74
+          durationS: 2.13
+        - text: This ghost just wants to finish the set.
+          atS: 58.25
+          durationS: 2.59

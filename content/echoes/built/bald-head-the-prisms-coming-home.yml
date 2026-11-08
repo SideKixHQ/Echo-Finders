@@ -9,7 +9,7 @@ at: { lat: 33.8731, lng: -78.0002 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 69
+durationS: 62
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   The Old Baldy Foundation is putting the lens back together, and asking people to bring the pieces home. It still needs about two thirds of them.
 
   If someone you know has a heavy wedge of old glass on a desk, it might be part of a lighthouse.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Inside this cottage beside Old Baldy is a replica of a great lighthouse lens."
@@ -86,3 +86,50 @@ sources:
     url: https://files.nc.gov/ncdcr/nr/BW0003.pdf
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/bald-head-the-prisms-coming-home/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 62.1
+    audioBytes: 994367
+    transcript:
+      totalS: 62.1
+      lines:
+        - text: Inside this cottage beside Old Baldy is a replica of a great lighthouse lens.
+          atS: 0
+          durationS: 4.79
+        - text: The real one is still being collected, one piece at a time.
+          atS: 5.4
+          durationS: 3.35
+        - text: It crowned the Cape Fear Lighthouse, a steel tower that stood on this island for more than half a century.
+          atS: 9.45
+          durationS: 6.11
+        - text: Then in 1958 the Oak Island Lighthouse was built, and the Cape Fear tower was demolished.
+          atS: 16.07
+          durationS: 5.73
+        - text: The contractor had the sense to save the lens.
+          atS: 22.25
+          durationS: 2.57
+        - text: It ended up in a Wilmington antiques shop, and the hundreds of glass prisms were sold off, one by one.
+          atS: 25.25
+          durationS: 6.03
+        - text: They scattered.
+          atS: 31.6
+          durationS: 1.07
+        - text: Some became paperweights.
+          atS: 32.99
+          durationS: 1.7
+        - text: Others were found beneath a bed.
+          atS: 35.02
+          durationS: 1.93
+        - text: One person used a big bull's eye panel as a coffee table, until the sun came through it and burned a hole in the carpet.
+          atS: 37.38
+          durationS: 8.08
+        - text: The Old Baldy Foundation is putting the lens back together, and asking people to bring the pieces home.
+          atS: 46.28
+          durationS: 6.08
+        - text: It still needs about two thirds of them.
+          atS: 52.69
+          durationS: 2.4
+        - text: If someone you know has a heavy wedge of old glass on a desk, it might be part of a lighthouse.
+          atS: 55.79
+          durationS: 6.3

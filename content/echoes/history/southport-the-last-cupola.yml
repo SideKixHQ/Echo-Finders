@@ -9,7 +9,7 @@ at: { lat: 33.917, lng: -78.02125 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 54
+durationS: 49
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   Most of the pilots who tried it lost their ships, their lives, or both.
 
   He got a house, with a little lookout on top.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "When the town's historic houses were surveyed, it was the last cupola left on any house in Southport."
@@ -73,3 +73,44 @@ sources:
     url: https://www.wwaytv3.com/history-with-hud-how-several-forts-protected-the-cape-fear-for-centuries/
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-the-last-cupola/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 48.6
+    audioBytes: 778283
+    transcript:
+      totalS: 48.6
+      lines:
+        - text: Look along this side of the street for a house with a small cupola on the roof.
+          atS: 0
+          durationS: 4.18
+        - text: When the town's historic houses were surveyed, it was the last cupola left on any house in Southport.
+          atS: 4.69
+          durationS: 5.8
+        - text: It was built by a blockade runner.
+          atS: 11.01
+          durationS: 1.99
+        - text: In the Civil War, Union warships sat off the mouth of the Cape Fear River to cut the Confederacy's trade.
+          atS: 13.69
+          durationS: 6.23
+        - text: Many of this town's river pilots volunteered to run ships past them.
+          atS: 20.73
+          durationS: 3.87
+        - text: They were admired for it.
+          atS: 24.93
+          durationS: 1.49
+        - text: And all too often, the runner lost his ship, his life, or both.
+          atS: 26.85
+          durationS: 4.46
+        - text: Thomas Thompson was one of the few pilots from here who made a success of it.
+          atS: 31.91
+          durationS: 4.1
+        - text: Shortly after the war, he built this house.
+          atS: 36.71
+          durationS: 2.86
+        - text: Most of the pilots who tried it lost their ships, their lives, or both.
+          atS: 39.95
+          durationS: 4.9
+        - text: He got a house, with a little lookout on top.
+          atS: 45.29
+          durationS: 3.29

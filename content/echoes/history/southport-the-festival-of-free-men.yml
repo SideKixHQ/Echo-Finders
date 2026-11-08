@@ -9,7 +9,7 @@ at: { lat: 33.91965, lng: -78.01965 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 79
+durationS: 74
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   The worst night was in 1973. The fireworks were on a barge in the river, and they all went off at once. Volunteers jumped overboard, some of them unable to swim. Everyone survived.
 
   Since then, the fireworks have stayed in the sky.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Picture this street lined with people on the Fourth of July."
@@ -91,3 +91,56 @@ sources:
     url: https://www.wwaytv3.com/history-with-hud-how-several-forts-protected-the-cape-fear-for-centuries/
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-the-festival-of-free-men/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.3
+    audioBytes: 1189972
+    transcript:
+      totalS: 74.3
+      lines:
+        - text: Picture this street lined with people on the Fourth of July.
+          atS: 0
+          durationS: 3.34
+        - text: This town has been throwing that party for more than two hundred years.
+          atS: 4.04
+          durationS: 3.89
+        - text: It began in the 1790s, and back then it was called the Festival of Free Men.
+          atS: 9.04
+          durationS: 5.53
+        - text: Ships in the harbor fired their cannons at daybreak, and on through the day, toasting the young nation.
+          atS: 15.38
+          durationS: 6.13
+        - text: By 1795 the old fort by the river had been patched up enough for the town to meet there, for its first documented Fourth of July.
+          atS: 22.21
+          durationS: 8.94
+        - text: During the Civil War, the party shrank to a thirteen gun salute.
+          atS: 32.1
+          durationS: 4.26
+        - text: By 1925 there was a greased pole with a purse on top, swimming contests and a greased pig run.
+          atS: 36.8
+          durationS: 6.55
+        - text: In 1964 a parade arrived, and thousands came downtown to watch it.
+          atS: 43.79
+          durationS: 5.12
+        - text: In the 1970s somebody organized a shrimp boat race.
+          atS: 49.52
+          durationS: 3.65
+        - text: The boats were slow and kept blowing their engines, and the race was dropped after three years.
+          atS: 53.55
+          durationS: 5.06
+        - text: The worst night was in 1973.
+          atS: 59.42
+          durationS: 2.68
+        - text: The fireworks were on a barge in the river, and they all went off at once.
+          atS: 62.54
+          durationS: 3.65
+        - text: Volunteers jumped overboard, some of them unable to swim.
+          atS: 66.51
+          durationS: 3.24
+        - text: Everyone survived.
+          atS: 70
+          durationS: 1.25
+        - text: Since then, the fireworks have stayed in the sky.
+          atS: 71.58
+          durationS: 2.73

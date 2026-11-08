@@ -27,7 +27,7 @@ script: |
   It has turned up in several other films and television shows since.
 
   On screen, it belonged to a fictional preacher. Off screen, it has been this town's church for well over a century.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the white church with the squat bell tower on its roof."
@@ -62,3 +62,29 @@ sources:
     url: https://files.nc.gov/ncdcr/nr/BW0008.pdf
     retrievedAt: "2026-11-08"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-the-reverends-church/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 31.5
+    audioBytes: 504937
+    transcript:
+      totalS: 31.5
+      lines:
+        - text: Look at the white church with the squat bell tower on its roof.
+          atS: 0
+          durationS: 3.59
+        - text: It was built between 1888 and 1890, by local carpenters, and inside it is polished Carolina pine.
+          atS: 4.1
+          durationS: 8.37
+        - text: In the film A Walk to Remember, Jamie's father was the reverend at this church.
+          atS: 13.77
+          durationS: 4.76
+        - text: It has turned up in several other films and television shows since.
+          atS: 18.97
+          durationS: 3.96
+        - text: On screen, it belonged to a fictional preacher.
+          atS: 23.53
+          durationS: 2.96
+        - text: Off screen, it has been this town's church for well over a century.
+          atS: 27.19
+          durationS: 4.3

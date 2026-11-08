@@ -9,7 +9,7 @@ at: { lat: 33.9171, lng: -78.01895 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 71
+durationS: 67
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   He died in 1944, at thirty eight, and he is buried in the John N Smith Cemetery, the only African American cemetery in town.
 
   The best ride on this waterfront was a fisherman's hand.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Picture the boats coming in to this waterfront, and children waiting in the park for the men to come up the street."
@@ -70,3 +70,47 @@ sources:
     url: https://www.wwaytv3.com/history-with-hud-remembering-southports-gentleman-giant-fisherman-who-stood-nearly-8-feet-tall/
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-the-gentleman-giant/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.6
+    audioBytes: 1066674
+    transcript:
+      totalS: 66.6
+      lines:
+        - text: Picture the boats coming in to this waterfront, and children waiting in the park for the men to come up the street.
+          atS: 0
+          durationS: 6.66
+        - text: They were waiting for one man.
+          atS: 7.36
+          durationS: 1.86
+        - text: His name was Elias Gore, and in the early twentieth century he was known as the gentleman giant of Southport.
+          atS: 9.82
+          durationS: 7.93
+        - text: He was a fisherman.
+          atS: 18.36
+          durationS: 1.16
+        - text: Reports put him at somewhere from seven foot eight to seven foot eleven, around four hundred pounds, with size sixteen shoes.
+          atS: 20.03
+          durationS: 8.14
+        - text: People called him Nehi.
+          atS: 28.77
+          durationS: 1.85
+        - text: It was said he could haul in a full net of fish by himself, a job that usually took several men.
+          atS: 31.06
+          durationS: 5.91
+        - text: His daughter grew up on the stories.
+          atS: 37.35
+          durationS: 2.04
+        - text: His hands were so big, she said, he could pick the children up by their heads, and they all wanted the rides.
+          atS: 39.54
+          durationS: 6.21
+        - text: For all his size, he was known for his gentle spirit, and for being kind to people of every size.
+          atS: 46.2
+          durationS: 6.47
+        - text: He died in 1944, at thirty eight, and he is buried in the John N Smith Cemetery, the only African American cemetery in town.
+          atS: 53.78
+          durationS: 8.93
+        - text: The best ride on this waterfront was a fisherman's hand.
+          atS: 63.4
+          durationS: 3.19

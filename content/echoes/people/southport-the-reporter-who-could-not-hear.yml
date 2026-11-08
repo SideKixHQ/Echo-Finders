@@ -9,7 +9,7 @@ at: { lat: 33.918, lng: -78.01858 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 74
+durationS: 66
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -37,7 +37,7 @@ script: |
 pronunciations:
   - written: Keziah
     say: keh-ZY-ah
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look along Moore Street for the newspaper office, and the small white frame building next door."
@@ -85,3 +85,53 @@ sources:
     url: https://www.wwaytv3.com/history-with-hud-how-a-deaf-newspaper-reporter-left-mark-still-seen-in-southport/
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-the-reporter-who-could-not-hear/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66
+    audioBytes: 1057479
+    transcript:
+      totalS: 66
+      lines:
+        - text: Look along Moore Street for the newspaper office, and the small white frame building next door.
+          atS: 0
+          durationS: 5.36
+        - text: The small one is where the paper used to be made.
+          atS: 6.18
+          durationS: 2.4
+        - text: The paper is the State Port Pilot.
+          atS: 9.02
+          durationS: 2.17
+        - text: Its founder, W B Keziah, was completely deaf.
+          atS: 11.7
+          durationS: 4.26
+        - text: In 1928 he was a reporter in Whiteville, more than sixty miles inland, when he decided to start his own paper on the coast.
+          atS: 16.57
+          durationS: 7.96
+        - text: At first it was printed in Whiteville and trucked into Southport every day.
+          atS: 25.04
+          durationS: 4.39
+        - text: He could not keep up the payments, and he lost his paper.
+          atS: 29.87
+          durationS: 3.09
+        - text: The new owners hired him back as a reporter.
+          atS: 33.56
+          durationS: 2.55
+        - text: Then the new editor was sent overseas with the Navy in the Second World War, and Keziah was made editor again.
+          atS: 36.63
+          durationS: 6.49
+        - text: He did his interviews in sign language, and with a paper tablet he carried with him everywhere.
+          atS: 43.5
+          durationS: 5.35
+        - text: His column was called Our Roving Reporter.
+          atS: 49.97
+          durationS: 2.95
+        - text: Along the way, he taught a good many people around here a bit of sign language.
+          atS: 53.43
+          durationS: 4.12
+        - text: The paper still comes out every Wednesday.
+          atS: 58.06
+          durationS: 2.23
+        - text: It was built by a man who never heard a word anyone told him, and wrote down all of it.
+          atS: 60.62
+          durationS: 5.42

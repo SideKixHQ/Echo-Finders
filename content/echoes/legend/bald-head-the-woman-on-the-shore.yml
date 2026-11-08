@@ -9,7 +9,7 @@ at: { lat: 33.8442, lng: -77.9618 }
 triggerRadiusKm: 0.15
 category: legend
 format: short
-durationS: 65
+durationS: 54
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -34,7 +34,7 @@ script: |
 pronunciations:
   - written: Theodosia
     say: thee-oh-DOH-sha
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In the last days of 1812, Theodosia Burr Alston, the daughter of Aaron Burr, boarded a small vessel called the Patriot to sail to her father in New York."
@@ -81,3 +81,47 @@ sources:
     url: https://www.ourstate.com/the-witching-hour/
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/bald-head-the-woman-on-the-shore/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 53.7
+    audioBytes: 860203
+    transcript:
+      totalS: 53.7
+      lines:
+        - text: This is a legend.
+          atS: 0
+          durationS: 1.08
+        - text: Nobody has proven any of it, and you should hear it that way.
+          atS: 1.52
+          durationS: 3.37
+        - text: In the last days of 1812, Theodosia Burr Alston, the daughter of Aaron Burr, boarded a small vessel called the Patriot to sail to her father in New York.
+          atS: 5.49
+          durationS: 9.79
+        - text: The ship left Georgetown, South Carolina, and was never seen again.
+          atS: 15.88
+          durationS: 3.76
+        - text: That much is history.
+          atS: 20.16
+          durationS: 1.29
+        - text: What happened to her is still a mystery.
+          atS: 21.83
+          durationS: 1.91
+        - text: One story known to many people around here says the Patriot ran aground on the shoals off this island, out past the point.
+          atS: 24.13
+          durationS: 6.84
+        - text: Pirates raided the ship, the story goes, and killed everyone aboard except Theodosia, who was taken for ransom.
+          atS: 31.41
+          durationS: 6.83
+        - text: And her spirit, people say, still walks this shore, searching for a way to escape.
+          atS: 38.51
+          durationS: 4.71
+        - text: Some tellers add three headless pirates, chasing behind her.
+          atS: 43.66
+          durationS: 3.4
+        - text: There is no record of a wreck here.
+          atS: 47.31
+          durationS: 1.74
+        - text: But if you walk this beach at dusk, you are walking where the legend puts her.
+          atS: 49.2
+          durationS: 4.48

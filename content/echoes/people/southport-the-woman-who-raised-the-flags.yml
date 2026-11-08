@@ -9,7 +9,7 @@ at: { lat: 33.91765, lng: -78.01795 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 65
+durationS: 64
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   President Dwight Eisenhower sent her a commendation.
 
   Nineteen people died in North Carolina in that storm. None of them died in Southport.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "A weather tower stood here from 1901, one of a chain the Weather Bureau put up along the east coast to warn ships of hurricanes."
@@ -88,3 +88,53 @@ sources:
     url: https://www.dncr.nc.gov/blog/2023/12/11/hurricane-hazel-d-109
     retrievedAt: "2026-11-08"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-the-woman-who-raised-the-flags/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 63.7
+    audioBytes: 1019863
+    transcript:
+      totalS: 63.7
+      lines:
+        - text: Look at this corner of the lawn by the river.
+          atS: 0
+          durationS: 2.46
+        - text: A weather tower stood here from 1901, one of a chain the Weather Bureau put up along the east coast to warn ships of hurricanes.
+          atS: 3.41
+          durationS: 7.79
+        - text: It came down on a stormy night in February 2020, twisted by the wind.
+          atS: 11.81
+          durationS: 4.91
+        - text: The town raised the money for an exact copy.
+          atS: 17.16
+          durationS: 2.61
+        - text: The tower spoke in flags.
+          atS: 20.1
+          durationS: 1.81
+        - text: Two red pennants meant gale force winds.
+          atS: 22.23
+          durationS: 3.04
+        - text: At night, a red light over a white light said the same thing.
+          atS: 25.66
+          durationS: 4.11
+        - text: For more than sixty years, the person raising those flags here was a volunteer, Jessie Stevens Taylor.
+          atS: 30.09
+          durationS: 7.11
+        - text: In October 1954, Hurricane Hazel came ashore in southern Brunswick County as a Category 4 storm.
+          atS: 37.64
+          durationS: 7.6
+        - text: Taylor was seventy five years old.
+          atS: 45.85
+          durationS: 2.18
+        - text: Her warnings are credited with saving the lives of hundreds of people.
+          atS: 48.47
+          durationS: 4.23
+        - text: President Dwight Eisenhower sent her a commendation.
+          atS: 53.39
+          durationS: 3.26
+        - text: Nineteen people died in North Carolina in that storm.
+          atS: 57.35
+          durationS: 3.54
+        - text: None of them died in Southport.
+          atS: 61.5
+          durationS: 2.17

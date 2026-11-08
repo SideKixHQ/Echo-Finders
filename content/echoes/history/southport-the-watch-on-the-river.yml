@@ -9,7 +9,7 @@ at: { lat: 33.91665, lng: -78.01975 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 66
+durationS: 58
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   From 2013 to 2015 it had a second job, on television, as the radio station in Under the Dome.
 
   The rest of the time, it has been watching for ships.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The men who took them through, and on up to the port of Wilmington, were the river pilots of this town."
@@ -70,3 +70,44 @@ sources:
     url: https://www.wwaytv3.com/history-with-hud-the-evolving-role-of-southports-pilot-tower/
     retrievedAt: "2026-11-08"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-the-watch-on-the-river/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 57.7
+    audioBytes: 923732
+    transcript:
+      totalS: 57.7
+      lines:
+        - text: Look up at the steel tower on the river side of the street.
+          atS: 0
+          durationS: 3.3
+        - text: It is a lookout, and for most of this town's life, what the watchman saw from up there was the town's living.
+          atS: 3.62
+          durationS: 6.85
+        - text: Ships coming in from the ocean had to get past dangerous shoals at the mouth of the river.
+          atS: 10.91
+          durationS: 4.87
+        - text: The men who took them through, and on up to the port of Wilmington, were the river pilots of this town.
+          atS: 16.1
+          durationS: 5.54
+        - text: If a man here was not a pilot, he was most likely a pilot's apprentice or a seaman.
+          atS: 22.25
+          durationS: 5.4
+        - text: When a ship was seen nearing the mouth of the Cape Fear River, the tower watchman sent a pilot boat out to bring her in.
+          atS: 28.34
+          durationS: 6.78
+        - text: The first tower was wooden, eighty feet tall.
+          atS: 35.5
+          durationS: 3.22
+        - text: This steel one replaced it in the 1940s.
+          atS: 39.1
+          durationS: 2.8
+        - text: The building at its foot is still a dispatch site for the river pilots.
+          atS: 42.6
+          durationS: 3.74
+        - text: From 2013 to 2015 it had a second job, on television, as the radio station in Under the Dome.
+          atS: 46.78
+          durationS: 7.64
+        - text: The rest of the time, it has been watching for ships.
+          atS: 54.86
+          durationS: 2.82

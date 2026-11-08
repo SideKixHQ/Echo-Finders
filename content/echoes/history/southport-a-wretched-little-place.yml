@@ -9,7 +9,7 @@ at: { lat: 33.9179, lng: -78.01715 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 89
+durationS: 85
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,7 +35,7 @@ script: |
 pronunciations:
   - written: Cruizer
     say: CRUISE-er
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In May 1775, Josiah Martin, the last royal governor of North Carolina, fled his own palace under cover of darkness."
@@ -96,3 +96,56 @@ sources:
     url: https://files.nc.gov/ncdcr/nr/BW0004.pdf
     retrievedAt: "2026-11-08"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-a-wretched-little-place/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 84.8
+    audioBytes: 1357156
+    transcript:
+      totalS: 84.8
+      lines:
+        - text: Look at the brick house with the two-story porch.
+          atS: 0
+          durationS: 2.93
+        - text: It is all that is left of a fort, and the fort before this one was burned to the ground.
+          atS: 3.88
+          durationS: 5.1
+        - text: In May 1775, Josiah Martin, the last royal governor of North Carolina, fled his own palace under cover of darkness.
+          atS: 10.28
+          durationS: 9.68
+        - text: He came from New Bern to this fort, at the mouth of the Cape Fear River, where English warships lay at anchor.
+          atS: 20.77
+          durationS: 6.95
+        - text: He was not impressed.
+          atS: 28.54
+          durationS: 1.36
+        - text: He described the fort as a wretched little place.
+          atS: 30.41
+          durationS: 2.83
+        - text: Then he heard that the Wilmington Committee of Safety planned to attack the fort and seize him.
+          atS: 33.84
+          durationS: 5.65
+        - text: So the governor of the colony moved out to sea, onto a warship called the Cruizer.
+          atS: 40.61
+          durationS: 5.11
+        - text: It was a wise move.
+          atS: 46.32
+          durationS: 1.41
+        - text: Five days later the militia, in his own words, wantonly in the dead hour of night set on fire and reduced to ashes the houses and buildings within the fort.
+          atS: 48.33
+          durationS: 10.74
+        - text: It was the first active violence against the British in North Carolina.
+          atS: 59.67
+          durationS: 4.12
+        - text: The new federal government rebuilt the fort after the Revolution.
+          atS: 64.12
+          durationS: 4.09
+        - text: This house, the officers' quarters, is the only building of it still standing.
+          atS: 68.65
+          durationS: 4.82
+        - text: As for the governor, the Cruizer stayed his headquarters through the summer and fall.
+          atS: 73.91
+          durationS: 5.1
+        - text: The last royal governor of North Carolina ended up running the colony from a boat.
+          atS: 79.45
+          durationS: 5.31
