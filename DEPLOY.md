@@ -75,10 +75,14 @@ Worth knowing before you judge it, so you spend your attention on the right thin
 | **Standing in** | The archive photographs. Drawn, and labelled as such in their own credit line. |
 | **Real, near echoes** | The basemap: built from Overture's open data around every echo area (below). Between areas the map is the plain navy field. |
 
-## Two things in the URL
+## Three things in the URL
 
 - `?speed=2` slows the simulation, so the twelve-second capture ring is watchable.
 - `?start=0.4` drops you four-tenths of the way along, to skip to a busier stretch.
+- `?at=<echo id>` or `?at=<lat>,<lng>` stands you there instead of where the phone is, to
+  hear an echo and use the player from anywhere (James, 2026-11-08). An amber banner says
+  so. Everything else is real, purchases included. For example
+  `https://echo-finders.vercel.app/?at=wilmington-ellen-bellamys-long-view`.
 
 ## The map
 
