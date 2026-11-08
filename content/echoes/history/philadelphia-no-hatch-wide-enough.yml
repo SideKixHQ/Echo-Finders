@@ -9,7 +9,7 @@ at: { lat: 39.94400, lng: -75.14110 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 84
+durationS: 70
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,8 +33,45 @@ pronunciations:
     say: luh HAH-vruh
   - written: Azores
     say: AY-zorz
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "In October nineteen twenty-one, the Olympia took on a coffin at Le Havre, in France."
+    source: 1
+    quote: "Her last major mission started on October 25, 1921 when she embarked the body of the Unknown Soldier at Le Harve, France."
+  - says: "Inside was an American soldier killed in the First World War, whose name nobody would ever know."
+    source: 3
+    quote: "Inside the caisson rested the remains of an American soldier whose name and identity would never be known. He was a casualty of the Great War, one of hundreds of thousands who gave his life on the Western Front during 1918."
+  - says: "He was going home to be buried at Arlington as the Unknown Soldier."
+    source: 3
+    quote: "in late 1920 the United States established a special tomb in Arlington National Cemetery for one unknown soldier whose burial was to represent all unknown servicemen."
+  - says: "No hatch on the ship was large enough to pass it through without tipping it on end."
+    source: 1
+    quote: "The casket remained topside because no hatch was large enough to pass the casket through \"with dignity\", that is, without upending it."
+  - says: "So it was secured on deck, at the stern, and later moved up onto the after signal bridge."
+    source: 1
+    quote: "While at Le Harve the casket had been secured to the deck at Olympia's stern. Rough weather was a possibility and the casket was moved to the elevated after signal bridge."
+  - says: "Near the Azores the ship ran into a storm so violent that the captain feared she might capsize."
+    source: 1
+    quote: "Nearing the Azores, Olympia passed through so violent a storm, that Captain Erskine was concerned that the ship might capsize."
+  - says: "He asked the chaplain to pray."
+    source: 1
+    quote: "He asked Lieutenant Edward A. Duff, Chaplin to pray for the ship's safety."
+  - says: "The men off watch gathered in the mess hall, holding on to the stanchions as she rolled"
+    source: 1
+    quote: "The chaplin and members of the crew off watch assembled in the mess hall, clinging to stanchions as the ship tossed about."
+  - says: "prayed that the soldier high above them would get home"
+    source: 1
+    quote: "Together they prayed that the Unknown Soldier, high above them on the after weather deck, would safely be returned to his homeland."
+  - says: "On the ninth of November the Olympia came up the Potomac"
+    source: 2
+    quote: "With salutes from warships and land batteries marking her progress, the U. S. S. Olympia, bearing the body of an unknown American soldier, was in Potomac waters today"
+  - says: "with her flag at half mast, and the guns along the river fired salutes as she passed"
+    source: 2
+    quote: "As she steams slowly up the river the guns of Fort Washington will roar the national salute of twenty-one guns to her half-masted flag."
+  - says: "He crossed the whole Atlantic out in the weather, rather than be carried below standing on his end."
+    source: 1
+    quote: "The casket remained topside because no hatch was large enough to pass the casket through \"with dignity\", that is, without upending it."
 sources:
   - title: "U.S.S. Olympia, Penn's Landing, 211 South Columbus Boulevard (HAER PA-428), written historical and descriptive data"
     publisher: "Library of Congress, Historic American Engineering Record"
@@ -51,3 +88,53 @@ sources:
     url: https://www.nps.gov/articles/000/time-will-not-dim-the-glory-of-their-deeds-president-dwight-d-eisenhower-and-the-tomb-of-the-unknown-soldier.htm
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-no-hatch-wide-enough/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 70.2
+    audioBytes: 1124353
+    transcript:
+      totalS: 70.2
+      lines:
+        - text: Look at the old cruiser at the pier, and find her stern, the back end of the ship.
+          atS: 0
+          durationS: 4.77
+        - text: In October nineteen twenty-one, the Olympia took on a coffin at Le Havre, in France.
+          atS: 5.58
+          durationS: 6.1
+        - text: Inside was an American soldier killed in the First World War, whose name nobody would ever know.
+          atS: 12.19
+          durationS: 5.98
+        - text: He was going home to be buried at Arlington as the Unknown Soldier.
+          atS: 18.45
+          durationS: 3.71
+        - text: The crew had a problem.
+          atS: 22.49
+          durationS: 1.22
+        - text: The casket could not go below.
+          atS: 23.82
+          durationS: 1.82
+        - text: No hatch on the ship was large enough to pass it through without tipping it on end.
+          atS: 25.89
+          durationS: 4.14
+        - text: So it was secured on deck, at the stern, and later moved up onto the after signal bridge.
+          atS: 30.31
+          durationS: 5.4
+        - text: Near the Azores the ship ran into a storm so violent that the captain feared she might capsize.
+          atS: 36.32
+          durationS: 5.7
+        - text: He asked the chaplain to pray.
+          atS: 42.83
+          durationS: 1.7
+        - text: The men off watch gathered in the mess hall, holding on to the stanchions as she rolled, and prayed that the soldier high above them would get home.
+          atS: 45.22
+          durationS: 7.92
+        - text: He did.
+          atS: 53.58
+          durationS: 0.69
+        - text: On the ninth of November the Olympia came up the Potomac with her flag at half mast, and the guns along the river fired salutes as she passed.
+          atS: 54.96
+          durationS: 8.77
+        - text: He crossed the whole Atlantic out in the weather, rather than be carried below standing on his end.
+          atS: 64.42
+          durationS: 5.79

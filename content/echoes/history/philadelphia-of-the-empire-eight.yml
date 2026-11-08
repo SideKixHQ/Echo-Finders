@@ -9,7 +9,7 @@ at: { lat: 39.95262, lng: -75.14868 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 107
+durationS: 103
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,13 +27,74 @@ script: |
 
   So they started their own. They called themselves the Free Quakers, and people called them the Fighting Quakers. They paid for this house by subscription, and one of the people who gave was Benjamin Franklin, who was not a Quaker at all.
 
-  As for the Empire. A Philadelphia newspaper told a story about it in nineteen eighteen. When the stone was being set, someone asked one of the Free Quakers what the words meant. I tell thee, friend, he is supposed to have said, it is because our country is destined to be the great empire over all the world. That is the story. Nobody recorded the conversation at the time.
+  As for the Empire. A Philadelphia newspaper told a story about it in nineteen eighteen. When the stone was being set, someone asked one of the Free Quakers what the words meant. I tell thee, friend, he is supposed to have said, it is because our country is destined to be the great empire over all the world. That is the story, as the newspaper told it, well over a century later.
 
   After the war, some of the fighters made their peace with their old meetings and went back. By the eighteen thirties, services here had stopped.
 
   They dated their building from the birth of a country. The country lasted. The congregation did not.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Stand on Arch Street and look up at the side of this small brick meeting house, high under the eaves."
+    source: 3
+    quote: "All that remains to denote the purpose for which the building was erected Is a narble tablet, set on the Arch street facade high up under tho eaves."
+  - says: "There is a stone tablet set into the wall."
+    source: 3
+    quote: "a narble tablet, set on the Arch street facade high up under tho eaves"
+  - says: "It says the house was erected by general subscription, for the Free Quakers"
+    source: 3
+    quote: "For the Free Quakers Erected by General Subscription A. D. 178i, of the Empire 8"
+  - says: "in seventeen eighty-three"
+    source: 1
+    quote: "The Free Quakers came together and established their own place of worship here in 1783"
+  - says: "Then it gives a second date."
+    source: 3
+    quote: "For the Free Quakers Erected by General Subscription A. D. 178i, of the Empire 8"
+  - says: "Of the Empire, eight."
+    source: 3
+    quote: "of the Empire 8"
+  - says: "During the Revolution most Philadelphia Friends would not take up arms, pay war taxes, or swear an oath of allegiance."
+    source: 1
+    quote: "As pacifists, the Friends would not take up arms, pay war taxes, or take an oath of allegiance."
+  - says: "They served in the army, sat on the committee of safety, took seats in the legislature."
+    source: 3
+    quote: "they served directly In the armies on the American tide, appeared on the committee of public safety and were seated in the Legislature."
+  - says: "The Society of Friends disowned them."
+    source: 2
+    quote: "group of dissenting Free Quakers who were expelled from the Religious Society of Friends for participation in the American Revolution."
+  - says: "Read them out of meeting, as it was called."
+    source: 1
+    quote: "after having been disowned or \"read out of meeting\" by the mainstream Friends."
+  - says: "They called themselves the Free Quakers"
+    source: 1
+    quote: "A group calling themselves \"Free\" Quakers supported the the Revolution"
+  - says: "people called them the Fighting Quakers"
+    source: 3
+    quote: "who afterward became known as l\"tec, or Fighting Quakers.\""
+  - says: "They paid for this house by subscription, and one of the people who gave was Benjamin Franklin"
+    source: 3
+    quote: "subscriptions for the building fund prospered, Benjamin Franklin, whose body now Hep within the shadow of tho building, In the graveyard on tho opposite corner, w ts a contributor."
+  - says: "who was not a Quaker at all"
+    source: 3
+    quote: "Neither he nor George Washington was a Friend, yet both aided the movement."
+  - says: "As for the Empire."
+    source: 3
+    quote: "one of vthe Free Quakers was asked why tho words \"In the Year ot tho Emplro 8\" were Inserted."
+  - says: "A Philadelphia newspaper told a story about it in nineteen eighteen."
+    source: 3
+    quote: "When the wall was nearly finished and this stone was being placed one of vthe Free Quakers was asked why tho words"
+  - says: "When the stone was being set, someone asked one of the Free Quakers what the words meant."
+    source: 3
+    quote: "When the wall was nearly finished and this stone was being placed one of vthe Free Quakers was asked why tho words \"In the Year ot tho Emplro 8\" were Inserted."
+  - says: "I tell thee, friend, he is supposed to have said, it is because our country is destined to be the great empire over all the world."
+    source: 3
+    quote: "\"I tell thee, friend,\" was the answer, \"It is because our country Is destined to be the great empire over an tno world.\""
+  - says: "After the war, some of the fighters made their peace with their old meetings and went back."
+    source: 3
+    quote: "some of the Revolutionary soldiers \"made acknowledgment' to their meetings and were received back Into membership"
+  - says: "By the eighteen thirties, services here had stopped."
+    source: 1
+    quote: "by the mid 1830s services stopped and the building no longer served as a place of worship."
 sources:
   - title: "Free Quaker Meeting House"
     publisher: "National Park Service, Independence National Historical Park"
@@ -50,3 +111,83 @@ sources:
     url: https://www.loc.gov/resource/sn83045211/1918-03-26/ed-1/?sp=12
     retrievedAt: "2026-10-14"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-of-the-empire-eight/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 103.1
+    audioBytes: 1649727
+    transcript:
+      totalS: 103.1
+      lines:
+        - text: Stand on Arch Street and look up at the side of this small brick meeting house, high under the eaves.
+          atS: 0
+          durationS: 5.77
+        - text: There is a stone tablet set into the wall.
+          atS: 6.21
+          durationS: 2.53
+        - text: It says the house was erected by general subscription, for the Free Quakers, in seventeen eighty-three.
+          atS: 9.25
+          durationS: 6.14
+        - text: Then it gives a second date.
+          atS: 15.84
+          durationS: 1.96
+        - text: Of the Empire, eight.
+          atS: 18.18
+          durationS: 2.01
+        - text: Quakers do not fight.
+          atS: 20.63
+          durationS: 1.57
+        - text: During the Revolution most Philadelphia Friends would not take up arms, pay war taxes, or swear an oath of allegiance.
+          atS: 22.71
+          durationS: 7.62
+        - text: Some members broke with that.
+          atS: 30.77
+          durationS: 1.68
+        - text: They served in the army, sat on the committee of safety, took seats in the legislature.
+          atS: 32.73
+          durationS: 5.43
+        - text: The Society of Friends disowned them.
+          atS: 38.6
+          durationS: 2.39
+        - text: Read them out of meeting, as it was called.
+          atS: 41.38
+          durationS: 2.58
+        - text: So they started their own.
+          atS: 44.56
+          durationS: 1.5
+        - text: They called themselves the Free Quakers, and people called them the Fighting Quakers.
+          atS: 46.27
+          durationS: 5.32
+        - text: They paid for this house by subscription, and one of the people who gave was Benjamin Franklin, who was not a Quaker at all.
+          atS: 52.19
+          durationS: 6.93
+        - text: As for the Empire.
+          atS: 59.63
+          durationS: 1.24
+        - text: A Philadelphia newspaper told a story about it in nineteen eighteen.
+          atS: 61.82
+          durationS: 4.06
+        - text: When the stone was being set, someone asked one of the Free Quakers what the words meant.
+          atS: 66.49
+          durationS: 5.41
+        - text: I tell thee, friend, he is supposed to have said, it is because our country is destined to be the great empire over all the world.
+          atS: 72.6
+          durationS: 8.45
+        - text: That is the story, as the newspaper told it, well over a century later.
+          atS: 81.22
+          durationS: 5.34
+        - text: After the war, some of the fighters made their peace with their old meetings and went back.
+          atS: 86.81
+          durationS: 5.19
+        - text: By the eighteen thirties, services here had stopped.
+          atS: 92.51
+          durationS: 3.45
+        - text: They dated their building from the birth of a country.
+          atS: 96.4
+          durationS: 2.8
+        - text: The country lasted.
+          atS: 99.47
+          durationS: 1.39
+        - text: The congregation did not.
+          atS: 101.19
+          durationS: 1.86

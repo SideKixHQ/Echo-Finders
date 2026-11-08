@@ -19,7 +19,7 @@ teaser: "Look at the corner house. The directory changed its name in a year."
 script: |
   Look at the brick house on the corner of Fourth and Walnut. It is a modest house, a lawyer's house. For two years it was home to John Todd, his young wife Dolley, and their two small sons.
 
-  In the summer of seventeen ninety-three, yellow fever came to Philadelphia. Thomas Jefferson wrote that about eleven people a day were dying, and that the doctors saw no way of stopping it.
+  In seventeen ninety-three, yellow fever came to Philadelphia. Thomas Jefferson wrote that about eleven people a day were dying, and that the doctors saw no way of stopping it.
 
   John Todd took Dolley and the boys out of the city, to Gray's Ferry on the Schuylkill. Then he went back. He had clients who needed him. In the city he found his own father and mother sick, and both of them died.
 
@@ -35,21 +35,70 @@ pronunciations:
     say: DOL-ee
   - written: Schuylkill
     say: SKOO-kul
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Look at the brick house on the corner of Fourth and Walnut."
+    source: 1
+    quote: "Located at on the northeast corner of 4th and Walnut Streets, the Todd House was built in 1775."
+  - says: "It is a modest house, a lawyer's house."
+    source: 2
+    quote: "lived in this modest Philadelphia home with her first husband, John Todd."
+  - says: "For two years it was home to John Todd, his young wife Dolley, and their two small sons."
+    source: 1
+    quote: "Lawyer John Todd and his wife Dolley Payne Todd lived in the home from 1791-1793 with their family."
+  - says: "For two years it was home to John Todd, his young wife Dolley, and their two small sons."
+    source: 3
+    quote: "Mr. Todd removed his wife, at the time in a critical condition, and the two sons to Gray’s Ferry"
+  - says: "In seventeen ninety-three, yellow fever came to Philadelphia."
+    source: 1
+    quote: "John Todd died during the 1793 yellow fever epidemic."
+  - says: "Thomas Jefferson wrote that about eleven people a day were dying, and that the doctors saw no way of stopping it."
+    source: 3
+    quote: "This last week about 11. a day have died, consequently, from known data about 33, a day are taken, and there are about 330. patients under it. They are much scattered through the town, and it is the opinion of the physicians that there is no possibility of stopping it."
+  - says: "John Todd took Dolley and the boys out of the city, to Gray's Ferry on the Schuylkill."
+    source: 3
+    quote: "Mr. Todd removed his wife, at the time in a critical condition, and the two sons to Gray’s Ferry, a rural pleasure place on the Schuylkill’s banks."
+  - says: "He had clients who needed him."
+    source: 3
+    quote: "He, in the city, did for his clients what required immediate doing"
+  - says: "In the city he found his own father and mother sick, and both of them died."
+    source: 3
+    quote: "in the city, he found his father and mother victims of the epidemic. Both parents died"
+  - says: "He came back to his wife carrying the fever."
+    source: 3
+    quote: "Mr. Todd on his return bore with him the dread dis- ease."
+  - says: "The family remembered him saying he could feel it in his veins, but he must see her once more."
+    source: 3
+    quote: "I feel the fever in my veins, but I must see her once more."
+  - says: "Within hours he was dead."
+    source: 3
+    quote: "In a few hours he was dead"
+  - says: "The younger baby died too."
+    source: 3
+    quote: "The younger child died and Dolly recovered."
+  - says: "Not long after, she married James Madison, who would become the fourth President."
+    source: 1
+    quote: "Following her husband's death, Dolley Todd married James Madison, later to become the fourth President of the United States."
+  - says: "But first, the city directory for seventeen ninety-four lists the family's address under a new name."
+    source: 3
+    quote: "1793. John Todd, jun. Esq. attorney at law 51 So Fourth St. 1794. Dorothy Todd, widow, 51 So. Fourth St."
+  - says: "Dorothy Todd, widow."
+    source: 3
+    quote: "1794. Dorothy Todd, widow, 51 So. Fourth St."
 sources:
   - title: "The Dolley Todd House"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/learn/historyculture/places-dolleytoddhouse.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Visiting the Dolley Todd House"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/planyourvisit/dolleytoddhouse.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Life and letters of Dolly Madison (Allen C. Clark, 1914)"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/14014620/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/lifelettersofdol01clar/lifelettersofdol01clar.text.txt
+    retrievedAt: "2026-11-07"
     rights: public-domain

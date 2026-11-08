@@ -4,6 +4,8 @@
 # REVIEW FLAG: easternstate.org links Cellblock 12 only to a 1999 film shoot and stays neutral
 # on hauntings; the Cellblock 12 ghost detail comes from NPR's reporting and ghost-tour lore.
 # Check the script's "the historic site has discussed" line against the source before approval.
+# Resolved 2026-11-07: the Cellblock Twelve line is cut. easternstate.org ties Cellblock 12 only to
+# the 1999 Return to Paradise shoot; the script now quotes the site's own audio tour and FAQ instead.
 id: the-prison-corridor
 title: "The Prison Corridor"
 summary: "Stand still for a moment."
@@ -30,48 +32,63 @@ script: |
 
   Look along the corridor, then toward the cells.
 
-  Eastern State’s ghost reputation includes stories of shadowy movement and something
-  appearing in an otherwise empty prison.
+  Eastern State’s ghost stories tell of shadowy figures darting from cell to cell.
 
-  The historic site has discussed paranormal television investigations, including
-  controversial footage filmed in Cellblock Twelve.
+  The site’s own audio tour asks the question straight out. Is this place haunted? Who
+  knows? Some visitors say they have sensed something here.
 
-  Controversial matters.
-
-  A recording that people argue about is not proof of a ghost.
+  That is all it is: a story people tell. Nobody has proved a ghost, and the site does
+  not allow paranormal investigations.
 
   Now listen to the space around you.
 
-  A prison changes the meaning of ordinary sounds. A footstep may suggest an approaching
-  guard. A door may suggest confinement. Silence may suggest someone listening.
+  A prison changes the meaning of ordinary sounds. A footstep might suggest an approaching
+  guard. A door might suggest confinement. Silence might suggest someone listening.
 
   You do not need to imagine a particular dead prisoner.
 
-  The real people confined here already give these walls a difficult history.
+  What is certain is that real suffering happened behind these walls, for more than a
+  hundred and forty years.
 
   The haunting stories add another question: can a place seem occupied after the people
   who lived inside it are gone?
 
   Look down the corridor again.
 
-  You may see nothing unusual.
+  You might see nothing unusual.
 
   The feeling of waiting for something is part of this story.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Eastern State’s ghost stories tell of shadowy figures darting from cell to cell."
+    source: 2
+    quote: "I had heard the standard ghost stories, about shadowy figures darting from cell to cell"
+  - says: "The site’s own audio tour asks the question straight out."
+    source: 2
+    quote: "Is this place haunted? Who knows?"
+  - says: "Some visitors say they have sensed something here."
+    source: 2
+    quote: "Some visitors have said that they \"sensed something\" while visiting Eastern State."
+  - says: "Nobody has proved a ghost, and the site does not allow paranormal investigations."
+    source: 1
+    quote: "Paranormal investigations (including the use of EVP recorders or other pieces of paranormal investigation equipment) are not permitted at Eastern State Penitentiary Historic Site."
+  - says: "What is certain is that real suffering happened behind these walls, for more than a hundred and forty years."
+    source: 2
+    quote: "What we know is that enormous suffering occurred behind these walls for over 140 years."
 sources:
   - title: "easternstate.org"
     publisher: "Eastern State Penitentiary Historic Site"
     url: https://www.easternstate.org/FAQ
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "Audio tour"
     publisher: "Eastern State Penitentiary Historic Site"
     url: https://easternstate.org/audio_tour.html
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "Eastern State Penitentiary (HABS)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/pa1207/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: public-domain

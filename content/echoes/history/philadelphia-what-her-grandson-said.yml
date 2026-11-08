@@ -25,7 +25,7 @@ teaser: "Everyone knows the scene in this house. Nobody wrote it down for ninety
 script: |
   This small house on Arch Street is famous for one scene. George Washington and two gentlemen of Congress call on a young widow, an upholsterer named Betsy Ross. They show her a rough sketch of a flag. She suggests changes. She sews the first Stars and Stripes.
 
-  Here is what is on record. Betsy Ross was real. Her first husband died in seventeen seventy-six, and she carried on his trade. For about fifty years she was an expert needlewoman and flag-maker. During the war she made colours for Pennsylvania's ships. After her, one of her daughters kept the flag business going.
+  Here is what is on record. Betsy Ross was real. Her first husband died in seventeen seventy-six, and she carried on his trade. For about fifty years she was an expert needlewoman and flag-maker. During the war she made state colours for ships and gun batteries. After her, one of her daughters kept the flag business going.
 
   Here is what is not. The visit appears in no record of Congress, no letter, no diary and no newspaper of the time. Washington wrote a great deal, and never mentioned it.
 
@@ -37,16 +37,74 @@ script: |
 pronunciations:
   - written: Canby
     say: KAN-bee
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "This small house on Arch Street is famous for one scene."
+    source: 2
+    quote: "was made by Betsy Ross in 1776 at 239 Arch Street, Philadelphia in the room represented in this picture."
+  - says: "George Washington and two gentlemen of Congress call on a young widow, an upholsterer named Betsy Ross."
+    source: 2
+    quote: "The Committee, Robert Morris and Hon. George Ross, accompanied by General George Washington called upon this Celebrated Woman and together with her suggestions produced our beautiful Emblem of Liberty."
+  - says: "They show her a rough sketch of a flag."
+    source: 1
+    quote: "she suggestedsome changes in the sketch shown her bythe committee."
+  - says: "She sews the first Stars and Stripes."
+    source: 1
+    quote: "It was during her widowhood that Betsey Ross is said to have made the first Stars and Stripes."
+  - says: "Betsy Ross was real."
+    source: 1
+    quote: "Betsey or Elizabeth Griscom was the fifth daughter of Samuel and Rebecca"
+  - says: "Her first husband died in seventeen seventy-six, and she carried on his trade."
+    source: 1
+    quote: "received an injury from the effects of which he died in January, 1776."
+  - says: "Her first husband died in seventeen seventy-six, and she carried on his trade."
+    source: 1
+    quote: "first husband was an upholsterer. She continued his business"
+  - says: "For about fifty years she was an expert needlewoman and flag-maker."
+    source: 1
+    quote: "She continued his business and for fifty years was an expert needlewoman, lace-maker and flag-maker."
+  - says: "During the war she made state colours for ships and gun batteries."
+    source: 1
+    quote: "did make State colors for vessels and batteries prior to June 14, 1777"
+  - says: "After her, one of her daughters kept the flag business going."
+    source: 1
+    quote: "After her death, Mrs. Clarissa Wilson, one of her daughters,"
+  - says: "The visit appears in no record of Congress, no letter, no diary and no newspaper of the time."
+    source: 1
+    quote: "the records of Congress being silent on the subject"
+  - says: "The visit appears in no record of Congress, no letter, no diary and no newspaper of the time."
+    source: 1
+    quote: "delphia, issued at that time, did not chronicle any portion of the story as told by Mr. Canby"
+  - says: "Washington wrote a great deal, and never mentioned it."
+    source: 1
+    quote: "Washington made no note of a visit to Mrs. Ross’ house, although he was a voluminous letter-writer and kept most detailed diaries"
+  - says: "The story was first told in public in eighteen seventy, ninety-three years after the flag was adopted."
+    source: 1
+    quote: "no mention of Mrs. Ross occurs in any history of our country or in any of the many biographies of Washington, prior to 1870, ninety-three years after the flag was adopted."
+  - says: "Her grandson, William Canby, read it to the Historical Society of Pennsylvania."
+    source: 1
+    quote: "Mr. Wm. J. Canby of Philadelphia, read before the Historical Society of Pennsylvania, a paper on the history of the American flag"
+  - says: "It was, he said, what the family had heard her say."
+    source: 1
+    quote: "The Betsey Ross legend has grown up since 1870 entirely from her grandson’s statement as to what he and other descendants had heard her"
+  - says: "Washington seated in her parlour, the new flag across her lap."
+    source: 2
+    quote: "Print shows an interior scene with General George Washington seated on the left with Robert Morris, and standing, the Honorable George Ross, and with Betsy Ross seated on the right holding \"our Nation's Flag.\""
+  - says: "That picture was printed in eighteen ninety-three."
+    source: 2
+    quote: "N. Y. : H.A. Thomas & Wylie Lith. Co., N.Y., [1893]"
+  - says: "Prints of it went to people who joined a club raising money to save this house."
+    source: 2
+    quote: "This print was created as a souvenir for people forming a fund-raising club to save the Betsy Ross House in Philadelphia."
 sources:
   - title: "Did Betsey Ross design the flag of the United States of America? (Franklin Hanford, 1917)"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/17010994/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/didbetsyrossdesi00hanf/didbetsyrossdesi00hanf.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Birth of our nation's flag (C. H. Weisgerber, 1893), catalogue record"
     publisher: "Library of Congress, Prints and Photographs Division"
     url: https://www.loc.gov/item/2004669130/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain

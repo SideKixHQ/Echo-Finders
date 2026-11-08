@@ -17,11 +17,11 @@ quality: 0.75
 tags: [philadelphia, philadelphia-core, independence-mall, independence-hall, constitution, franklin]
 teaser: "Painters, he said, could never tell a rising sun from a setting one."
 script: |
-  Look at the hall in front of you. On its ground floor is the room where the Constitution was signed.
+  Look at the hall in front of you. Inside is the room where the Constitution was signed.
 
-  For four months in the summer of seventeen eighty-seven, George Washington presided in that room from a tall wooden chair. Carved into the top of its back is a sun.
+  For four months in the summer of seventeen eighty-seven, George Washington presided in that room from a chair. Carved into the top of its back is a sun.
 
-  It was not an easy summer. Large states against small states. Arguments over the slave trade. More than once it looked as if the whole thing might come apart.
+  It was not an easy summer. Large states against small states. Arguments over the slave trade.
 
   On the last day, the seventeenth of September, the delegates lined up to sign. While the last of them were signing, Benjamin Franklin looked at Washington's chair and said something to the men near him. James Madison wrote it down.
 
@@ -37,8 +37,54 @@ script: |
 pronunciations:
   - written: infallibility
     say: in-fal-ih-BIL-ih-tee
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Inside is the room where the Constitution was signed."
+    source: 1
+    quote: "As the men signed the Constitution, Franklin said that he had the great happiness to know it was a rising and not a setting sun."
+  - says: "For four months in the summer of seventeen eighty-seven"
+    source: 1
+    quote: "In four months, they created the U.S. Constitution"
+  - says: "George Washington presided in that room from a chair."
+    source: 1
+    quote: "Benjamin Franklin looked at the chair where Washington was seated as the presiding officer."
+  - says: "Carved into the top of its back is a sun."
+    source: 1
+    quote: "Carved into the chair's crest rail is a sun, a liberty pole and a liberty cap."
+  - says: "Large states against small states. Arguments over the slave trade."
+    source: 1
+    quote: "The debates of the Constitutional or Federal Convention were heated at times, over issues like the power balance between large states and small states as well as the slave trade."
+  - says: "On the last day, the seventeenth of September, the delegates lined up to sign."
+    source: 2
+    quote: "\"Done in convention, by the unanimous consent of the states present the 17th of September &c - In witness whereof we have hereunto subscribed our names.\""
+  - says: "While the last of them were signing, Benjamin Franklin looked at Washington's chair and said something to the men near him."
+    source: 3
+    quote: "Whilst the last members were signing it,” Mr. Madison says, “ Doct? Franklin looking towards the President’s Chair"
+  - says: "James Madison wrote it down."
+    source: 2
+    quote: "James Madison notes that while the last members were signing, Dr. Franklin observed he had often looked upon the President's chair with its painted sun and wondered whether it was rising or setting."
+  - says: "Painters, Franklin said, had always found it hard to show the difference between a rising sun and a setting one."
+    source: 3
+    quote: "observed to a few members near him, that Painters had found it difficult to distinguish in their art a rising from a setting sun."
+  - says: "All through the session, in his hopes and fears, he had looked at that sun behind the president, and could not tell which it was."
+    source: 3
+    quote: "the vicissitudes of my hopes and fears as to its issue, looked at that behind the President without being able to tell whether it was rising -or setting"
+  - says: "But now at length, he said, I have the happiness to know that it is a rising and not a setting sun."
+    source: 2
+    quote: "\" …But now at length I have the happiness to know that it is a rising and not a setting Sun.\""
+  - says: "The chair had been made here in Philadelphia in seventeen seventy-nine, for the speaker of Pennsylvania's assembly."
+    source: 1
+    quote: "The Rising Sun chair was made in Philadelphia by John Folwell in 1779 to be the chair for the speaker of Pennsylvania's legislature."
+  - says: "It went with the legislature to Harrisburg, and came back to this city in eighteen seventy-two."
+    source: 1
+    quote: "The Assembly speaker used this chair in Harrisburg until the 1840's. The state returned it to the city of Philadelphia in 1872 for the upcoming (1876) Centennial celebration."
+  - says: "Earlier that day Franklin had asked every doubter in the room to doubt a little his own infallibility, and sign."
+    source: 2
+    quote: "I cannot help expressing a wish that every member of the Convention who may still have objections to it, would with me, on this occasion doubt a little his own infallibility - and to make manifest our unanimity and put his name to this instrument."
+  - says: "Three still refused."
+    source: 2
+    quote: "Along with Randolph and Gerry, Mason, even with his signing language added, did not sign."
 sources:
   - title: "Assembly Room of Independence Hall"
     publisher: "National Park Service, Independence National Historical Park"

@@ -9,7 +9,7 @@ at: { lat: 38.89890, lng: -77.03848 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 73
+durationS: 72
 visibility: at-hand
 certainty: documented
 minAge: 12
@@ -23,45 +23,160 @@ script: |
   was living here, across the street. On the afternoon of the first of November, he was
   resting upstairs.
 
-  Two Puerto Rican nationalists came to this house armed. One of them later admitted they
-  had expected to shoot their way in. The White House police on duty shot back.
+  Two Puerto Rican nationalists came to this house armed. One of them was later quoted as
+  admitting they had expected to shoot their way in. The White House police on duty shot
+  back.
 
-  Three officers were hit. One of them, Private Leslie Coffelt, forty years old, was shot
-  twice. As he lay dying beside his post, he fired, and killed one of the attackers. The
-  other was wounded and taken. The attempt on the President failed.
+  Private Leslie Coffelt was forty years old. As he lay dying beside his post from two
+  bullet wounds, he fired, and killed one of the attackers. Two other officers were hit,
+  and recovered. The other attacker was wounded and taken. They never got through the door.
 
-  The plaque was dedicated in May nineteen fifty-two, and Truman came to unveil it. He said
-  it commemorated an event about which he did not like to think.
+  The plaque was dedicated in May nineteen fifty-two, by Truman himself. He said it
+  commemorated an event about which he did not like to think.
 
   Six years later, he walked past here with a writer from the Evening Star. He stopped and
   read the plaque. Then he pointed.
 
   He was in a little sentry house, Truman said, that stood right there.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Find the small bronze plaque on the fence in front of Blair House."
+    source: 4
+    quote: "Leslie Coffelt, a White House guard, died defending his Chief, and a bronze plaque on the fence com memorates his heroism."
+  - says: "In the autumn of nineteen fifty, the White House was being rebuilt, and President Truman was living here, across the street."
+    source: 4
+    quote: "later when the Trumans lived there while the Executive Mansion was being rebuilt. On a balmy day in November, 1950, as President Truman rested in the upstairs front bedroom, an assassin attempted to enter the house to shoot him."
+  - says: "On the afternoon of the first of November, he was resting upstairs."
+    source: 2
+    quote: "Collazo’s version of what he had in mind when he went to the Blair House on the afternoon of November 1. 1950."
+  - says: "On the afternoon of the first of November, he was resting upstairs."
+    source: 4
+    quote: "as President Truman rested in the upstairs front bedroom"
+  - says: "On the afternoon of the first of November, he was resting upstairs."
+    source: 1
+    quote: "When the shooting broke out about 2:15 p.m. yesterday, Mr. Truman was napping in his bed room."
+  - says: "Two Puerto Rican nationalists came to this house armed."
+    source: 3
+    quote: "who was killed there on November 1, 1950, when two Puerto Rican Nation alists made an abortive attempt on the life of President Truman."
+  - says: "One of them was later quoted as admitting they had expected to shoot their way in."
+    source: 2
+    quote: "Collazo was quoted as freely admitting the two expected to shoot their way into the Blair House to assassinate the Presi dent."
+  - says: "The White House police on duty shot back."
+    source: 1
+    quote: "one of the four police men who shot it out with the assailants died last night."
+  - says: "Private Leslie Coffelt was forty years old."
+    source: 1
+    quote: "He was Pvt. Leslie Coffelt, 40, of 1915 North Wayne street, Arlington"
+  - says: "As he lay dying beside his post from two bullet wounds, he fired, and killed one of the attackers."
+    source: 2
+    quote: "Torresola was shot to death by White House Policeman Leslie Coffelt, 40. A fatal bullet was fired into Torresola’s head while the policeman lay dying be side his post from two bullet wounds inflicted by Torresola."
+  - says: "Two other officers were hit, and recovered."
+    source: 2
+    quote: "Two other White House policemen, hit in the exchange of fire, have since recovered"
+  - says: "The other attacker was wounded and taken."
+    source: 2
+    quote: "Collazo was wounded slightly in the chest as Torresola was shot to death by White House Policeman Leslie Coffelt, 40."
+  - says: "They never got through the door."
+    source: 1
+    quote: "Had the conspirators gained access to Blair House, the success of their mission doubtless would have died with the"
+  - says: "The plaque was dedicated in May nineteen fifty-two, by Truman himself."
+    source: 3
+    quote: "“Dedicated May 21, 1952, by President Harry S. Truman.”"
+  - says: "He said it commemorated an event about which he did not like to think."
+    source: 3
+    quote: "In a brief talk Mr. Truman said the tribute “commemorates an event about which I do not like to think.”"
+  - says: "Six years later, he walked past here with a writer from the Evening Star."
+    source: 5
+    quote: "There we turned to the right and parsed before Blair House while Mr. Truman read the plaque commemo rating Pvt. Lesley Coffelt of the White House Police Force"
+  - says: "He stopped and read the plaque."
+    source: 5
+    quote: "There we turned to the right and parsed before Blair House while Mr. Truman read the plaque commemo rating Pvt. Lesley Coffelt of the White House Police Force"
+  - says: "He was in a little sentry house, Truman said, that stood right there."
+    source: 5
+    quote: "He was in a little sentry house that stood right there,” said Mr. Truman pointing."
 sources:
   - title: "Shooting coverage, Evening Star, November 2, 1950, image 5"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83045462/1950-11-02/ed-1/?sp=5
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Collazo appeal and Coffelt anniversary, Evening Star, November 9, 1951, image 8"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83045462/1951-11-09/ed-1/?sp=8
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Plaque Honors Truman Guard Killed in Assassination Attempt, Evening Star, May 22, 1952, image 4"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83045462/1952-05-22/ed-1/?sp=4
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Blair House, Sunday Star Magazine, Evening Star, January 13, 1957, image 155"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83045462/1957-01-13/ed-1/?sp=155
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Walk with Mr. Truman, Evening Star, April 14, 1958, image 27"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83045462/1958-04-14/ed-1/?sp=27
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-plaque-on-the-fence/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72
+    audioBytes: 1153610
+    transcript:
+      totalS: 72
+      lines:
+        - text: Find the small bronze plaque on the fence in front of Blair House.
+          atS: 0
+          durationS: 3.97
+        - text: In the autumn of nineteen fifty, the White House was being rebuilt, and President Truman was living here, across the street.
+          atS: 4.57
+          durationS: 7.4
+        - text: On the afternoon of the first of November, he was resting upstairs.
+          atS: 12.48
+          durationS: 3.95
+        - text: Two Puerto Rican nationalists came to this house armed.
+          atS: 16.87
+          durationS: 3.56
+        - text: One of them was later quoted as admitting they had expected to shoot their way in.
+          atS: 20.87
+          durationS: 4.66
+        - text: The White House police on duty shot back.
+          atS: 26.13
+          durationS: 2.67
+        - text: Private Leslie Coffelt was forty years old.
+          atS: 29.41
+          durationS: 2.96
+        - text: As he lay dying beside his post from two bullet wounds, he fired, and killed one of the attackers.
+          atS: 32.81
+          durationS: 6.29
+        - text: Two other officers were hit, and recovered.
+          atS: 39.7
+          durationS: 2.71
+        - text: The other attacker was wounded and taken.
+          atS: 42.85
+          durationS: 2.57
+        - text: They never got through the door.
+          atS: 45.74
+          durationS: 1.65
+        - text: The plaque was dedicated in May nineteen fifty-two, by Truman himself.
+          atS: 47.99
+          durationS: 4.81
+        - text: He said it commemorated an event about which he did not like to think.
+          atS: 53.41
+          durationS: 4.17
+        - text: Six years later, he walked past here with a writer from the Evening Star.
+          atS: 58.39
+          durationS: 4.52
+        - text: He stopped and read the plaque.
+          atS: 63.51
+          durationS: 2.02
+        - text: Then he pointed.
+          atS: 65.85
+          durationS: 1.06
+        - text: He was in a little sentry house, Truman said, that stood right there.
+          atS: 67.51
+          durationS: 4.52

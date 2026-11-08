@@ -33,8 +33,57 @@ script: |
 pronunciations:
   - written: Willings Alley
     say: WILL-ingz AL-ee
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Walk west down Willings Alley from Third Street"
+    source: 1
+    quote: "south on Third Street, past Walnut Street, to Willing’s Alley"
+  - says: "between the tall walls, and look on your right for an iron gate in an archway"
+    source: 1
+    quote: "between tall warehouses, and you come to an iron-gated archway, on your right, which leads you through a building and into a nooked courtyard"
+  - says: "It leads through a building and into a paved courtyard."
+    source: 1
+    quote: "which leads you through a building and into a nooked courtyard"
+  - says: "That was not an accident, though nobody forced it."
+    source: 1
+    quote: "although they did not try to hide their place of worship, they put it m an inconspicuous locality"
+  - says: "Catholics in early Philadelphia were tolerated, but they were looked on with suspicion."
+    source: 1
+    quote: "The Catholics, although tolerated in this city in early days, were looked upon even here with some- what of suspicious dislike"
+  - says: "So when they built a church here, in seventeen thirty-three, they put it somewhere inconspicuous, in a court between this alley and Walnut Street."
+    source: 2
+    quote: "St Joseph's, in a court between Willing’s alley and Walnut street, was built in 1733"
+  - says: "Then the city filled in close all around it."
+    source: 1
+    quote: "the church, through the close-build- ing-up of the city round about, has become positively obscure in its seclusion."
+  - says: "On one October day in seventeen seventy-four, two visitors came to service here."
+    source: 1
+    quote: "on an October day of 1774 both Washington and John Adams risked criticism by attending service in this old church still standing here."
+  - says: "One was George Washington."
+    source: 1
+    quote: "both Washington and John Adams risked criticism by attending service in this old church"
+  - says: "In his diary he wrote only that he went to Saint Joseph's in the afternoon."
+    source: 1
+    quote: "Washington quietly enters in his diary ‘‘Went to St. Joseph’s in the afternoon’’"
+  - says: "The other was John Adams, raised a Puritan, and he was shaken."
+    source: 1
+    quote: "John Adams, fresh from the outlook of Puritanism, was frankly shocked, and poured out his feelings in a letter to his wife."
+  - says: "He wrote to his wife about the poor wretches fingering their beads, chanting Latin, bowing and kneeling."
+    source: 1
+    quote: "‘‘the poor wretches, fingering their beads, chanting Latin not a word of which they understood, crossing themselves, bowing and kneeling"
+  - says: "He called it awful and affecting."
+    source: 1
+    quote: "were, as he put it, ‘‘awful and affecting.’’"
+  - says: "It was rebuilt on the same spot in eighteen thirty-eight and thirty-nine."
+    source: 3
+    quote: "Saint Joseph's Church, built 1838--39 after the designs of master designer and parishioner John Darragh, and located at 321-327 Willings Alley in Philadelphia."
+  - says: "The church behind the gate today is not the one they sat in."
+    source: 3
+    quote: "Saint Joseph's Church, built 1838--39 after the designs of master designer and parishioner John Darragh"
+  - says: "The first two presidents of the United States came looking for it anyway."
+    source: 4
+    quote: "The President's House Site: Presidents Washington and Adams"
 sources:
   - title: "The Book of Philadelphia, by Robert Shackleton (1918), chapter III, Within a Nooked Courtyard"
     publisher: "Library of Congress"

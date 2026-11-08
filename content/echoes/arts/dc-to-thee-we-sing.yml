@@ -9,7 +9,7 @@ at: { lat: 38.88929, lng: -77.04888 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 63
+durationS: 60
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -37,16 +37,109 @@ script: |
   The song says, of thee I sing.
 
   She sang, to thee we sing.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "On Easter Sunday, the ninth of April 1939, a singer stood up there with Lincoln at her back and a row of microphones in front of her."
+    source: 2
+    quote: "As she took to the impromptu stage, the imposing statue of Lincoln, the Great Emancipator, was plainly visible behind her. Anderson stood before a phalanx of microphones"
+  - says: "On Easter Sunday, the ninth of April 1939"
+    source: 2
+    quote: "The concert was scheduled for Easter Sunday, April 9, 1939."
+  - says: "Her name was Marian Anderson."
+    source: 1
+    quote: "The well-known opera singer performed at the Lincoln Memorial for a 1939 Easter Sunday concert"
+  - says: "Toscanini had said a voice like hers came along once in a hundred years."
+    source: 2
+    quote: "Arturo Toscanini stated of Anderson’s three-octave range, “What I have heard today one is privileged to hear only once in a hundred years.”"
+  - says: "She had already sung at the White House."
+    source: 2
+    quote: "In 1936, Anderson sang at the White House at the invitation of the President and Mrs. Roosevelt."
+  - says: "She could not sing at Constitution Hall, which is nearby."
+    source: 1
+    quote: "after the Daughters of the American Revolution denied her the opportunity to perform at nearby Constitution Hall because of her race"
+  - says: "Its owners, the Daughters of the American Revolution, barred Black performers, and they would not make an exception."
+    source: 2
+    quote: "even though University officials knew that the theater had a long-standing policy of barring African-American performers from its stage. Howard had hoped that, based upon Ms. Anderson’s fame and notoriety, a one-time waiver would be granted. But the Hall’s booking manager, Fred E. Hand, declined."
+  - says: "A mostly white high school turned her down as well."
+    source: 2
+    quote: "Central High, a predominately white school, also refused Ms. Anderson."
+  - says: "The concert was free."
+    source: 2
+    quote: "They formed the idea of a free concert to be held on the steps of the Capitol’s Lincoln Memorial"
+  - says: "About seventy-five thousand people came, of every race"
+    source: 2
+    quote: "an estimate 75,000 people, of all races, had gathered on the mall to see Anderson perform."
+  - says: "NBC radio carried it live across the country"
+    source: 2
+    quote: "her program would be broadcast, in its entirety, nationwide by NBC Radio."
+  - says: "She opened with America."
+    source: 2
+    quote: "Anderson began her performance with “America,” its time-honored lyrics altered slightly for that day, from “Of thee I sing” to “To thee we sing.”"
+  - says: "She sang, to thee we sing."
+    source: 2
+    quote: "Anderson began her performance with “America,” its time-honored lyrics altered slightly for that day, from “Of thee I sing” to “To thee we sing.”"
 sources:
   - title: "Other Notable Figures: Marian Anderson"
     publisher: "National Park Service"
     url: https://www.nps.gov/linc/learn/historyculture/other-notable-figures.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "NBC Radio Coverage of Marian Anderson's Recital at the Lincoln Memorial (April 9, 1939), National Recording Registry essay by Cary O'Dell"
     publisher: "Library of Congress"
     url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/MarianAndersonLincolnMem.pdf
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-to-thee-we-sing/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 60
+    audioBytes: 960931
+    transcript:
+      totalS: 60
+      lines:
+        - text: Stand at the foot of the steps and look up at the statue in the doorway.
+          atS: 0
+          durationS: 3.71
+        - text: On Easter Sunday, the ninth of April 1939, a singer stood up there with Lincoln at her back and a row of microphones in front of her.
+          atS: 4.41
+          durationS: 8.25
+        - text: Her name was Marian Anderson.
+          atS: 13.05
+          durationS: 2.24
+        - text: Toscanini had said a voice like hers came along once in a hundred years.
+          atS: 15.99
+          durationS: 4.75
+        - text: She had already sung at the White House.
+          atS: 21.25
+          durationS: 2.32
+        - text: She could not sing at Constitution Hall, which is nearby.
+          atS: 24.01
+          durationS: 3.76
+        - text: Its owners, the Daughters of the American Revolution, barred Black performers, and they would not make an exception.
+          atS: 28.21
+          durationS: 7.08
+        - text: A mostly white high school turned her down as well.
+          atS: 35.8
+          durationS: 2.93
+        - text: So these steps were offered instead.
+          atS: 39.06
+          durationS: 1.96
+        - text: The concert was free.
+          atS: 41.34
+          durationS: 1.33
+        - text: About seventy-five thousand people came, of every race, and NBC radio carried it live across the country.
+          atS: 43.06
+          durationS: 7.27
+        - text: She opened with America.
+          atS: 50.65
+          durationS: 1.67
+        - text: My country, 'tis of thee.
+          atS: 52.77
+          durationS: 2.04
+        - text: The song says, of thee I sing.
+          atS: 54.98
+          durationS: 2.43
+        - text: She sang, to thee we sing.
+          atS: 57.62
+          durationS: 2.38

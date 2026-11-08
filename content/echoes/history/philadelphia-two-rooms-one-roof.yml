@@ -30,16 +30,53 @@ script: |
   It was not equality. The women's meeting mostly dealt with marriages and help for the needy, and the men's with policy and money. But the two rooms were built to the same proportions and fitted out the same way.
 
   Somebody insisted on that.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "It is built in three parts, a middle section with a wing on each side, and the two wings match."
+    source: 1
+    quote: "Arch Street Meeting House is a symmetrically balanced, three-part structure built of bricks laid up in Flemish bond."
+  - says: "Quakers held their business meetings separately, one for men and one for women."
+    source: 1
+    quote: "Because of the separate meeting rooms for men and women Friends, there is no need for a partition."
+  - says: "George Fox, who founded the Society of Friends, wanted it that way, so that women would take an active part."
+    source: 1
+    quote: "George Fox, who founded the Society of Friends in England during the 1650s, advocated separate meetings for men and women as a means of insuring active participation by women in Quaker proceedings."
+  - says: "For years in Philadelphia, the two meetings gathered in separate buildings."
+    source: 1
+    quote: "who wanted to discontinue the practice of gathering in separate meeting houses for the business meetings."
+  - says: "The push for this house is said to have come from the women."
+    source: 1
+    quote: "The impetus for the construction of the Arch Street Meeting House is said to have come from the women of the yearly meeting"
+  - says: "They wanted both meetings under the same roof."
+    source: 1
+    quote: "who wanted a structure that could accommodate the men's and women's yearly meetings under the same roof"
+  - says: "The women's yearly meeting moved in here in eighteen hundred and four."
+    source: 1
+    quote: "In 1804, the east wing and center section of the present Arch Street Meeting House was erected according to a design developed by Quaker carpenter and architect Owen Biddle. The annual session of the women's yearly meeting was held here."
+  - says: "When the second wing was finished in eighteen eleven, the men joined them."
+    source: 1
+    quote: "The present-day west wing was added in 1811, at which time the men's meeting was moved into the east section and the women moved to the newly completed western section."
+  - says: "Inside are two meeting rooms, one on each side of a central hall."
+    source: 1
+    quote: "The completed meeting house at Arch Street contained a central hall and committee room flanked by identical meeting rooms."
+  - says: "There was no need for a partition down the middle."
+    source: 1
+    quote: "there is no need for a partition."
+  - says: "The women's meeting mostly dealt with marriages and help for the needy, and the men's with policy and money."
+    source: 1
+    quote: "In practice, the women's business meeting dealt primarily with social concerns such as marriage and aid to the needy while the men's meeting considered issues of policy and finance."
+  - says: "But the two rooms were built to the same proportions and fitted out the same way."
+    source: 1
+    quote: "the two-cell meeting house that contains equally proportioned and fitted rooms for men's and women's meetings for business."
 sources:
   - title: "Arch Street Friends Meeting House, 330 Arch Street (HABS PA-1388), written historical and descriptive data"
     publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/pa1087/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/pa/pa1000/pa1087/data/pa1087data.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Philadelphia, guide to the city (Rotary Club of Philadelphia, 1920)"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/20012885/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/philadelphiaguid00nitz/philadelphiaguid00nitz.text.txt
+    retrievedAt: "2026-11-07"
     rights: public-domain

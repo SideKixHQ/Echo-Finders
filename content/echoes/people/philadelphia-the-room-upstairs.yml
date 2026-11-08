@@ -25,31 +25,86 @@ script: |
 
   People climbed the stairs to see him. A Virginia congressman who pushed Congress to pay what it owed him. Chief Little Turtle of the Miami, who gave him a pipe tomahawk. And the Vice President, Thomas Jefferson, who became a close friend.
 
-  Up in that room, with Jefferson's legal help, Kosciuszko worked out his will. He asked that after his death his estate be used to free as many enslaved people as possible.
+  While he lived here, with Jefferson's legal help, Kosciuszko worked out his will. He asked that after his death his estate be used to free as many enslaved people as possible.
 
   In May seventeen ninety-eight he slipped out of the country in the small hours, on a ship from New Castle, Delaware. He told one person he was going. Jefferson.
 
-  He gave Thomas Jefferson two things to keep. The secret of his leaving. And the will.
+  He trusted Thomas Jefferson with two things. The secret of his leaving. And the will.
 pronunciations:
   - written: Thaddeus Kosciuszko
     say: THAD-ee-us kosh-CHOOSH-koh
   - written: Relf
     say: RELF
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Look at the corner house here, at Third and Pine, and then up at its second floor."
+    source: 1
+    quote: "The site is located at 3rd and Pine Streets"
+  - says: "Look at the corner house here, at Third and Pine, and then up at its second floor."
+    source: 1
+    quote: "On the second floor, visitors can watch a short film and then see the furnished room that Kosciuszko stayed in."
+  - says: "The whole site covers two hundredths of an acre."
+    source: 1
+    quote: "At .02 acres, the Kosciuszko House is the smallest unit in the U.S. National Park system."
+  - says: "The National Park Service calls it the smallest unit in the national park system."
+    source: 1
+    quote: "At .02 acres, the Kosciuszko House is the smallest unit in the U.S. National Park system."
+  - says: "Late in seventeen ninety-seven, a Polish general took a cramped room up there, in Mrs. Relf's boarding house."
+    source: 2
+    quote: "After arriving at Mrs. Relf’s boarding house (located at 3rd and Pine Streets) in late November or early December 1797, a steady stream of notable visitors began to trickle into Kościuszko's humble and cramped second-floor room."
+  - says: "His name was Thaddeus Kosciuszko."
+    source: 1
+    quote: "Polish general, military engineer, and revolutionary Thaddeus Kosciuszko lived in this house in 1797 and 1798."
+  - says: "More than twenty years earlier he had come to America and designed fortifications for the Revolution, at Saratoga and at West Point."
+    source: 2
+    quote: "Late in August 1776, Thaddeus Kościuszko stepped off a ship and onto the docks in Philadelphia, Pennsylvania."
+  - says: "More than twenty years earlier he had come to America and designed fortifications for the Revolution, at Saratoga and at West Point."
+    source: 1
+    quote: "designing successful fortifications at Saratoga and West Point."
+  - says: "Then he went home to fight for Poland, was wounded, captured and imprisoned in Russia, and came back to Philadelphia a hero, still recovering."
+    source: 2
+    quote: "Kościuszko himself was badly wounded and captured. He was taken to St. Petersburg where he was imprisoned in the Peter and Paul Fortress"
+  - says: "Then he went home to fight for Poland, was wounded, captured and imprisoned in Russia, and came back to Philadelphia a hero, still recovering."
+    source: 1
+    quote: "He returned to the United States a hero, and stayed in Philadelphia as he recovered from his wounds."
+  - says: "A Virginia congressman who pushed Congress to pay what it owed him."
+    source: 2
+    quote: "Such guests included Virginia congressman John Dawson, who pushed Congress to pay Kościuszko what it owed him for his Revolutionary War service"
+  - says: "Chief Little Turtle of the Miami, who gave him a pipe tomahawk."
+    source: 2
+    quote: "Chief Little Turtle (or Michikinikwa) of the Miami people also visited Kościuszko, and presented the general with an ornate peace pipe-tomahawk."
+  - says: "And the Vice President, Thomas Jefferson, who became a close friend."
+    source: 2
+    quote: "During his second stay in Philadelphia, Kosciuszko became close friends with Vice President Thomas Jefferson."
+  - says: "While he lived here, with Jefferson's legal help, Kosciuszko worked out his will."
+    source: 2
+    quote: "So close, in fact, that Kościuszko worked out his will with Jefferson’s legal help."
+  - says: "He asked that after his death his estate be used to free as many enslaved people as possible."
+    source: 2
+    quote: "the general requested that following his death, his estate be used to free as many slaves as possible."
+  - says: "In May seventeen ninety-eight he slipped out of the country in the small hours, on a ship from New Castle, Delaware."
+    source: 2
+    quote: "In the wee hours of the morning on May 5, 1798, Thaddeus Kościuszko boarded a ship in New Castle, Delaware, to return to Europe."
+  - says: "He told one person he was going."
+    source: 2
+    quote: "when he made plans to slip out of the country unnoticed, the vice president was the only person he told."
+  - says: "He trusted Thomas Jefferson with two things."
+    source: 2
+    quote: "Kościuszko trusted Jefferson so deeply, that when he made plans to slip out of the country unnoticed, the vice president was the only person he told."
 sources:
   - title: "The Kosciuszko House"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/kosciuszko-house.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Thaddeus Kosciuszko (biography)"
     publisher: "National Park Service, Thaddeus Kosciuszko National Memorial"
     url: https://www.nps.gov/thko/learn/historyculture/kosciuszkobio.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Thaddeus Kosciuszko House, 301 Pine Street, Philadelphia (HABS PA-1342)"
     publisher: "Historic American Buildings Survey, Library of Congress"
     url: https://www.loc.gov/item/pa1222/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain

@@ -9,7 +9,7 @@ at: { lat: 38.89668, lng: -77.02596 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 96
+durationS: 64
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -24,7 +24,7 @@ script: |
 
   On April 14, 1865, Lincoln attended a performance of Our American Cousin.
 
-  Actor John Wilkes Booth knew the theatre. That evening, he entered the presidential box
+  John Wilkes Booth was a famous actor. That evening, he entered the presidential box
   and shot the president.
 
   Booth escaped from the theatre. Lincoln could not.
@@ -36,7 +36,7 @@ script: |
 
   Look at the crossing again.
 
-  Today, it takes only a few seconds to walk from one side to the other.
+  Today, it is a short walk across.
 
   On that night, people crossed it carrying the president of the United States, trying to
   find somewhere to care for him.
@@ -47,27 +47,88 @@ script: |
 
   Between them is an ordinary city street that briefly became the center of a national
   catastrophe.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: alleged
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-08"
+  reviewedAt: "2026-11-08"
   contentWarning: "This echo describes an assassination. No violence is described in detail."
+claims:
+  - says: "That short distance became the final journey of Abraham Lincoln’s life."
+    source: 2
+    quote: "After John Wilkes Booth shot President Abraham Lincoln, soldiers carried Lincoln from Ford’s Theatre and across Tenth Street, so that he could pass his last moments peacefully, surrounded by those who knew him best."
+  - says: "On April 14, 1865, Lincoln attended a performance of Our American Cousin."
+    source: 1
+    quote: "Playbill for the April 14, 1865 performance of Our American Cousin at Ford's Theatre. Lincoln was watching this play when he was assassinated."
+  - says: "John Wilkes Booth was a famous actor."
+    source: 1
+    quote: "On April 14th, 1865, famous actor and Confederate sympathizer John Wilkes Booth assassinated President Abraham Lincoln at Ford's Theatre."
+  - says: "That evening, he entered the presidential box and shot the president."
+    source: 1
+    quote: "Booth shot President Lincoln in the back of the head with a .44 Derringer pistol during a performance of the play Our American Cousin ."
+  - says: "That evening, he entered the presidential box and shot the president."
+    source: 4
+    quote: "Booth shot President Lincoln in the back of the head during the play at about 10:15 pm."
+  - says: "That evening, he entered the presidential box and shot the president."
+    source: 2
+    quote: "After John Wilkes Booth shot President Abraham Lincoln"
+  - says: "That evening, he entered the presidential box and shot the president."
+    source: 5
+    quote: "the President, while sitting in bis private box with Mrs. Lincoln, Miss Harris, and Maj. Rathbun, was shot by an assassin who scd denly entered the box."
+  - says: "Booth escaped from the theatre."
+    source: 4
+    quote: "Booth escaped the theatre, heading on the run for the next twelve days with his fellow conspirator David Herold."
+  - says: "Booth escaped from the theatre."
+    source: 5
+    quote: "The assassin then leaped npon the stage, brandishing a iarge dagger or knife, and made his escape by the rear of the theater."
+  - says: "Booth escaped from the theatre."
+    source: 6
+    quote: "all of which fixes the assassination apon J. Wilkes Booth."
+  - says: "People carried the wounded president across Tenth Street into the Petersen family’s boarding house."
+    source: 2
+    quote: "soldiers carried Lincoln from Ford’s Theatre and across Tenth Street, so that he could pass his last moments peacefully, surrounded by those who knew him best. He died in the Petersen family’s boarding house at 7:22 a.m. on April 15, 1865."
+  - says: "People carried the wounded president across Tenth Street into the Petersen family’s boarding house."
+    source: 1
+    quote: "Dr. Leale and several men carried the unconscious Lincoln to the Petersen Boarding House, across the street from the theatre."
+  - says: "He died there the following morning, April 15."
+    source: 3
+    quote: "The 16th President of the United States passed away at 7:22 am, April 15, 1865."
+  - says: "He died there the following morning, April 15."
+    source: 2
+    quote: "He died in the Petersen family’s boarding house at 7:22 a.m. on April 15, 1865."
+  - says: "On that night, people crossed it carrying the president of the United States, trying to find somewhere to care for him."
+    source: 1
+    quote: "He made the decision to have the president carried to the closest available bed."
 sources:
   - title: "Faq the assassination"
     publisher: "National Park Service"
     url: https://home.nps.gov/foth/learn/historyculture/faq-the-assassination.htm
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Lincolns death"
     publisher: "Ford's Theatre"
     url: https://fords.org/lincolns-assassination/lincolns-death/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
     rights: fair-use-facts
   - title: "The Petersen House"
     publisher: "National Park Service"
     url: https://www.nps.gov/foth/the-petersen-house.htm
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+  - title: "Conspirators (the Lincoln conspirators)"
+    publisher: "National Park Service, Ford's Theatre National Historic Site"
+    url: https://www.nps.gov/foth/learn/historyculture/the-lincoln-conspirators.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+  - title: "Despatches from Secretary Stanton, War Department, April 15, 1865, printed in the Evening Star, April 15, 1865, image 1"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1865-04-15/ed-1/?sp=1
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+  - title: "J. Wilkes Booth the Assassin, Evening Star, April 15, 1865, image 2"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1865-04-15/ed-1/?sp=2
+    retrievedAt: "2026-11-07"
     rights: public-domain

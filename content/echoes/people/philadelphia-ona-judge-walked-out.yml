@@ -25,7 +25,7 @@ script: |
 
   Find the name Ona Judge.
 
-  She was Martha Washington's personal maid, and a skilled seamstress. Pennsylvania law said that an enslaved person held in the state for six months could claim freedom. So the Washingtons kept sending the people they enslaved back to Virginia before the six months ran out.
+  She was Martha Washington's personal maid, and a skilled seamstress. Pennsylvania law said that an enslaved person held in the state for six months could take steps toward freedom. So Washington kept rotating the people he enslaved out of Pennsylvania before the six months ran out.
 
   In seventeen ninety-six, Ona Judge walked out of this house and did not come back.
 
@@ -39,21 +39,85 @@ script: |
 pronunciations:
   - written: Ona Judge
     say: OH-nuh JUDJ
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "You are standing on the site of the President's House."
+    source: 3
+    quote: "The President's House Site is located at the corner of 6th and Market Streets."
+  - says: "The building itself was demolished long ago, but its real foundations are still here to see, found by archaeologists in two thousand seven."
+    source: 3
+    quote: "Today, you can see the original foundation of the President’s House, discovered by archeologists working on the site in 2007."
+  - says: "George Washington lived here from seventeen ninety to seventeen ninety-seven."
+    source: 2
+    quote: "George Washington moved into the President's House in November 1790, calling the elegant, three-story brick mansion the \"best single house in the city,\" and remained in residence until March 1797."
+  - says: "His household was about thirty people."
+    source: 2
+    quote: "Washington brought with him a household that consisted of about thirty people"
+  - says: "Nine of them, at one time or another, were enslaved Africans brought up from Mount Vernon."
+    source: 2
+    quote: "and a total of nine enslaved Africans."
+  - says: "Nine of them, at one time or another, were enslaved Africans brought up from Mount Vernon."
+    source: 2
+    quote: "the slaves brought from Mt. Vernon"
+  - says: "Their names are memorialized here."
+    source: 3
+    quote: "nine slaves (whose names are memorialized on the wall nearby)"
+  - says: "Find the name Ona Judge."
+    source: 1
+    quote: "Ona/Oney Judge was, like her mother, a talented seamstress."
+  - says: "She was Martha Washington's personal maid, and a skilled seamstress."
+    source: 1
+    quote: "Ona/Oney Judge was, like her mother, a talented seamstress. She became Martha Washington's personal maid as a teenager."
+  - says: "Pennsylvania law said that an enslaved person held in the state for six months could take steps toward freedom."
+    source: 2
+    quote: "Under the Gradual Abolition Law of 1780, citizens from other states were permitted to live in Pennsylvania with their slaves for a period of up to six months. The law also provided that any enslaved people residing here continuously for that length of time could take steps to obtain their own freedom."
+  - says: "So Washington kept rotating the people he enslaved out of Pennsylvania before the six months ran out."
+    source: 2
+    quote: "Washington regularly rotated them out of Pennsylvania before the six-month deadline."
+  - says: "In seventeen ninety-six, Ona Judge walked out of this house and did not come back."
+    source: 1
+    quote: "In 1796, Judge escaped to New Hampshire"
+  - says: "She reached Portsmouth, New Hampshire, where someone recognised her."
+    source: 1
+    quote: "He found out where she was when a friend of Martha Washington's granddaughter happened to encounter Judge in Portsmouth, New Hampshire."
+  - says: "Washington, still president, wrote to the customs collector there and asked him to seize her and send her back."
+    source: 1
+    quote: "Washington wrote to the collector of customs in Portsmouth, requesting that he apprehend Judge and send her back."
+  - says: "The collector talked with her, and declined."
+    source: 1
+    quote: "The New Hampshire official, after speaking with Judge, declined to do so."
+  - says: "Two years later Washington's nephew went north to try again."
+    source: 1
+    quote: "Two years later, Washington asked his secretary and nephew, Burwell Bassett, Jr., to seize Judge and her child, born since her escape."
+  - says: "Over dinner he mentioned the plan to the governor of New Hampshire."
+    source: 1
+    quote: "Bassett confided his intentions to John Langdon, the governor of New Hampshire, while dining with him"
+  - says: "The governor sent her a warning, and she got away again, with her child."
+    source: 1
+    quote: "but Langdon sent a warning to Judge. She escaped yet again and fled the town with her child."
+  - says: "Washington died in seventeen ninety-nine."
+    source: 2
+    quote: "after Washington died in December 1799"
+  - says: "Ona Judge lived free in New Hampshire until eighteen forty-eight."
+    source: 1
+    quote: "In 1796, Judge escaped to New Hampshire, where she lived until her 1848 death."
+  - says: "She outlived the man who was looking for her by almost fifty years."
+    source: 1
+    quote: "where she lived until her 1848 death."
 sources:
   - title: "President's House Site: Enslaved People in the Washington Household"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/learn/historyculture/enslaved-people.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "The President's House Site: Presidents Washington and Adams"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/learn/historyculture/the-presidents-house-washington-and-adams.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Visiting the President's House Site: From Enslavement to Emancipation"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/planyourvisit/presidentshousesite.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain

@@ -9,7 +9,7 @@ at: { lat: 38.89648, lng: -77.04170 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 77
+durationS: 80
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -27,7 +27,7 @@ script: |
   In April eighteen ninety-seven, a Washington newspaper said this had long been the most
   noted of the haunted houses in the city.
 
-  This is a legend. Nothing in it has ever been proven. It is only what people said.
+  This is a legend. Nothing in it has ever been proven. It is just what people said.
 
   And people said a great deal. Doors and windows that opened when they were shut, and shut
   when they were opened. A woman's shriek. The clank of sabres. Heavy footsteps. Groans and
@@ -43,16 +43,44 @@ script: |
   that haunt this house exist in people's imagination.
 
   Everyone else told stories about this house. He slept in it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "In April eighteen ninety-seven, a Washington newspaper said this had long been the most noted of the haunted houses in the city."
+    source: 1
+    quote: "It has long been the most noted of the haunted lesidences of Washington."
+  - says: "Doors and windows that opened when they were shut, and shut when they were opened."
+    source: 1
+    quote: "Doors and windows which open when closed, and close when opened, shrieks in a woman's voice, the clanking of sabies, and heavy footfalls arc grew some features of \"these traditions"
+  - says: "Groans and cries from the passage by the back stairs."
+    source: 1
+    quote: "Dark stories are told ot the groans and cries which emanate from the passage wlilcli con tains this stairway"
+  - says: "And an officer who died in an upper room, whose blood, the story went, could still be heard dripping from the mantelpiece."
+    source: 1
+    quote: "There is also a tiadition that a gallant officer whether American or British is not suited cut his throat in one of the upper Tooms, and that ghostly blood drops may be heard falling from the mantel piece on which he leaned while his lire ebbed away."
+  - says: "A caretaker lived in it, rent free and unpaid, with his son."
+    source: 1
+    quote: "paying no rent, and receiving no pay for his services as custodian."
+  - says: "They slept in the room where Dolley Madison had once held her receptions."
+    source: 1
+    quote: "The room in which Dolly Madison held her official receptions and danced tlie minuet is now the kitchen, dlning-ioorji and bed chamber of the cnietnker and his son."
+  - says: "He laughed."
+    source: 1
+    quote: "\"If theie are any ghosts here, I've never heard or seen them,\" he laughingly declares."
+  - says: "If there are any ghosts here, he said, I have never heard or seen them."
+    source: 1
+    quote: "\"If theie are any ghosts here, I've never heard or seen them,\" he laughingly declares."
+  - says: "The only ghosts that haunt this house exist in people's imagination."
+    source: 1
+    quote: "\"The only ghosts that haunt tfils house exists in people's Imagination.\""
 sources:
   - title: "The Octagon House, The Times (Washington), April 11, 1897, image 20"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn85054468/1897-04-11/ed-1/?sp=20
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Octagon House"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/octagon-house.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain

@@ -19,11 +19,11 @@ teaser: "Look along the edges of the crack. They are not clean breaks."
 script: |
   Find the bell, and look at the crack.
 
-  It is wide and dark, and it may be the best known flaw in the country. Now look along its edges. They are not clean breaks. They are a row of little round scallops.
+  It is wide and dark, and it could be the best known flaw in the country. Now look along its edges. They are not clean breaks. They are a row of little round scallops.
 
   Nobody wrote down when the bell first cracked. The likeliest answer is the early eighteen forties, after almost ninety years of hard use. A thin split, easy to miss.
 
-  In eighteen forty-six the city wanted the bell rung for Washington's birthday. So metal workers drilled out the thin crack and widened it on purpose, to stop it spreading and to bring the tone back. Those scallops are their drill holes. The Park Service counts more than forty of them.
+  In eighteen forty-six the city decided to repair the bell before Washington's birthday. So metal workers drilled out the thin crack and widened it on purpose, to stop it spreading and to bring the tone back. Those scallops are their drill holes. The Park Service counts more than forty of them.
 
   It did not work. A newspaper, the Public Ledger, reported that the bell had split again. The second crack runs up through the word Liberty, and nobody alive has heard this bell ring freely.
 
@@ -33,21 +33,61 @@ script: |
 pronunciations:
   - written: thereof
     say: thair-OV
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Nobody wrote down when the bell first cracked."
+    source: 1
+    quote: "No one recorded when or why the Liberty Bell first cracked"
+  - says: "The likeliest answer is the early eighteen forties, after almost ninety years of hard use."
+    source: 1
+    quote: "the most likely explanation is that a narrow split developed in the early 1840s after nearly 90 years of hard use."
+  - says: "In eighteen forty-six the city decided to repair the bell before Washington's birthday."
+    source: 1
+    quote: "In 1846, when the city decided to repair the bell prior to George Washington's birthday holiday (February 23)"
+  - says: "So metal workers drilled out the thin crack and widened it on purpose, to stop it spreading and to bring the tone back."
+    source: 1
+    quote: "metal workers widened the thin crack to prevent its farther spread and restore the tone of the bell using a technique called \"stop drilling\"."
+  - says: "Those scallops are their drill holes."
+    source: 1
+    quote: "Look carefully and you'll see over 40 drill bit marks in that wide \"crack\"."
+  - says: "The Park Service counts more than forty of them."
+    source: 1
+    quote: "Look carefully and you'll see over 40 drill bit marks in that wide \"crack\"."
+  - says: "It did not work."
+    source: 1
+    quote: "But, the repair was not successful."
+  - says: "A newspaper, the Public Ledger, reported that the bell had split again."
+    source: 1
+    quote: "The Public Ledger newspaper reported that the repair failed when another fissure developed."
+  - says: "The second crack runs up through the word Liberty, and nobody alive has heard this bell ring freely."
+    source: 1
+    quote: "This second crack, running from the abbreviation for \"Philadelphia\" up through the word \"Liberty\", silenced the bell forever. No one living today has heard the bell ring freely with its clapper"
+  - says: "In eighteen thirty-five an abolitionist paper had called it the Liberty Bell, for the verse cast around its top."
+    source: 1
+    quote: "The Anti-Slavery Record, an abolitionist publication, first referred to the bell as the Liberty Bell in 1835"
+  - says: "Proclaim liberty throughout all the land, unto all the inhabitants thereof."
+    source: 1
+    quote: "The Liberty Bell's inscription is from the Bible (King James version): \"Proclaim Liberty Throughout All the Land Unto All the Inhabitants thereof.\""
+  - says: "The name took years to catch on."
+    source: 1
+    quote: "but that name was not widely adopted until years later."
+  - says: "So the famous crack is not the damage."
+    source: 1
+    quote: "The wide \"crack\" in the Liberty Bell is actually the repair job!"
 sources:
   - title: "The Liberty Bell"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Visiting the Liberty Bell Center"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/planyourvisit/libertybellcenter.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "The Liberty bell, its history, associations and home (E. R. Gudehus, 1915)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/16006838/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain

@@ -23,8 +23,8 @@ script: |
   It is one long procession through American history, a little over eight feet high and
   about three hundred feet around.
 
-  It was designed by Constantino Brumidi, a painter from Rome who had come to America as an
-  exile, and who spent more than twenty years decorating this building. He began the band
+  It was designed by Constantino Brumidi, an Italian-born painter who spent twenty-five
+  years decorating this building. He began the band
   in 1877. He was in his seventies, working on a scaffold high above this floor.
 
   In the autumn of 1879 he very nearly fell from it. A newspaper reported that he never
@@ -48,6 +48,10 @@ pronunciations:
     say: koss-tah-JEE-nee
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "It was designed by Constantino Brumidi, an Italian-born painter who spent twenty-five years decorating this building."
+    source: 3
+    quote: "Italian-born fresco painter Constantino Brumidi (1805-1880) spent twenty-five years decorating walls and ceilings of committee rooms, offices, and corridors, as well as the rotunda's frieze and canopy painting."
 sources:
   - title: "Death of a Fresco Artist, Alexandria Gazette, February 21, 1880, page 4"
     publisher: "Alexandria Gazette, via Library of Congress Chronicling America"
@@ -59,3 +63,8 @@ sources:
     url: https://www.loc.gov/resource/sn83045462/1953-12-11/ed-1/?sp=43
     retrievedAt: "2026-10-14"
     rights: fair-use-facts
+  - title: "Freedom Triumphant in War and Peace: The Capitol Extended (Temple of Liberty: Building the Capitol for a New Nation)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/exhibits/uscapitol/s5.html
+    retrievedAt: "2026-11-07"
+    rights: public-domain

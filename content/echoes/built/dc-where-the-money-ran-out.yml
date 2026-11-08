@@ -9,7 +9,7 @@ at: { lat: 38.88949, lng: -77.03462 }
 triggerRadiusKm: 0.08
 category: built
 format: short
-durationS: 76
+durationS: 72
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -40,16 +40,109 @@ script: |
 
   When it was finished, this was the tallest building in the world. And you can still see
   exactly where it ran out of money.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Look up at the monument, about a third of the way."
+    source: 1
+    quote: "still recognizable by the naked eye today as a brown-streaked beltline one-third of the way up the monument"
+  - says: "There is a line. Below it the marble is one shade, and above it, another."
+    source: 2
+    quote: "time, wind, rain, and erosion have caused the marble sections to weather differently, thereby producing the difference in color."
+  - says: "Right at the line there is a narrow band of something browner."
+    source: 1
+    quote: "still recognizable by the naked eye today as a brown-streaked beltline one-third of the way up the monument"
+  - says: "The first stones went up in 1848, paid for by a private society that never had enough money."
+    source: 1
+    quote: "Despite difficulties raising funds, construction began on the Washington Monument in 1848."
+  - says: "paid for by a private society"
+    source: 1
+    quote: "In 1833, the Washington National Monument Society, a private organization, formed to fund and build a monument to the first president"
+  - says: "By 1854 the society was bankrupt, and the work stopped at one hundred and fifty-six feet."
+    source: 1
+    quote: "By 1854, the monument had reached a height of 156 feet above ground, but a turn of events stalled construction."
+  - says: "By 1854 the society was bankrupt"
+    source: 1
+    quote: "drove the Society to bankruptcy by 1854. Without funds, work on the monument slowed to a halt."
+  - says: "Through the Civil War and for more than twenty years, the monument to the father of the country stood half built on the Mall."
+    source: 1
+    quote: "For more than two decades, the monument stood only partly finished, doing more to embarrass the nation than to honor its most important Founding Father. Congressional attempts to support the Washington National Monument Society failed as attentions turned toward the sectional crisis, then civil war."
+  - says: "When the government finally took it over, the old quarry near Baltimore was no longer available."
+    source: 1
+    quote: "The trouble was that the quarry near Baltimore used for the initial construction was no longer available after so many years."
+  - says: "The builders tried stone from Massachusetts."
+    source: 1
+    quote: "Seeking a suitable match, the builders turned to a quarry in Massachusetts."
+  - says: "They had trouble with its color, laid a few courses of it anyway, and then switched to a third quarry for everything above."
+    source: 1
+    quote: "However, problems quickly emerged with the quality and color of the stone, and the irregularity of deliveries. After adding several courses of this stone from Massachusetts, still recognizable by the naked eye today as a brown-streaked beltline one-third of the way up the monument, the builders turned to a third quarry near Baltimore that proved more favorable, and used that stone for the upper two-thirds of the structure."
+  - says: "The stones never matched exactly, and the weather has been pulling them apart in color ever since."
+    source: 1
+    quote: "The stone never matched exactly, and the three slightly different colors from the three quarries are distinguishable today."
+  - says: "When it was finished, this was the tallest building in the world."
+    source: 1
+    quote: "When completed, the Washington Monument was the tallest building in the world at 555 feet, 5-1/8 inches."
 sources:
   - title: "History & Culture: Washington Monument"
     publisher: "National Park Service"
     url: https://www.nps.gov/wamo/learn/historyculture/index.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Frequently Asked Questions: Why does the color change on the outside of the monument?"
     publisher: "National Park Service"
     url: https://www.nps.gov/wamo/faqs.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-where-the-money-ran-out/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72.2
+    audioBytes: 1155700
+    transcript:
+      totalS: 72.2
+      lines:
+        - text: Look up at the monument, about a third of the way.
+          atS: 0
+          durationS: 2.67
+        - text: There is a line.
+          atS: 3.11
+          durationS: 1.15
+        - text: Below it the marble is one shade, and above it, another.
+          atS: 4.64
+          durationS: 3.96
+        - text: Right at the line there is a narrow band of something browner.
+          atS: 9.04
+          durationS: 3.26
+        - text: Nobody designed that.
+          atS: 12.75
+          durationS: 1.47
+        - text: The first stones went up in 1848, paid for by a private society that never had enough money.
+          atS: 14.61
+          durationS: 6.63
+        - text: By 1854 the society was bankrupt, and the work stopped at one hundred and fifty-six feet.
+          atS: 21.75
+          durationS: 6.87
+        - text: Then it stayed that way.
+          atS: 29.22
+          durationS: 1.76
+        - text: Through the Civil War and for more than twenty years, the monument to the father of the country stood half built on the Mall.
+          atS: 31.8
+          durationS: 7.55
+        - text: When the government finally took it over, the old quarry near Baltimore was no longer available.
+          atS: 40.65
+          durationS: 5.62
+        - text: The builders tried stone from Massachusetts.
+          atS: 47.22
+          durationS: 2.84
+        - text: They had trouble with its color, laid a few courses of it anyway, and then switched to a third quarry for everything above.
+          atS: 50.57
+          durationS: 7.3
+        - text: The stones never matched exactly, and the weather has been pulling them apart in color ever since.
+          atS: 58.57
+          durationS: 5.7
+        - text: When it was finished, this was the tallest building in the world.
+          atS: 64.97
+          durationS: 3.5
+        - text: And you can still see exactly where it ran out of money.
+          atS: 68.91
+          durationS: 3.26
