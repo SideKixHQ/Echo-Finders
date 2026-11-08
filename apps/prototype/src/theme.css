@@ -2835,27 +2835,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  * What is left here is the slow stuff: the colour settling between states, and the
  * satellites drifting. Both are decoration and both belong in a stylesheet.
  */
-.echo-char-body, .echo-char-rim, .echo-char-glow, .echo-char-speck {
-  transition: fill 0.34s linear, stroke 0.34s linear, opacity 0.34s linear;
-}
-.echo-char-shine { fill: #fffdf4; opacity: 0.9; pointer-events: none; }
-.echo-char-shine-2 { opacity: 0.7; }
-/*
- * The satellites drift, very slightly and out of phase with each other.
- *
- * Two pixels over six seconds. Enough that the thing looks alive when you stop and look
- * at it, small enough that it never competes with the singular pin's own pulse — which
- * is the one piece of motion on the map that is allowed to mean something.
- */
-@keyframes echoSatDrift {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(0.8%, -1.4%); }
-}
-.echo-char-sat { animation: echoSatDrift 6s ease-in-out infinite; }
-@media (prefers-reduced-motion: reduce) {
-  .echo-char-sat { animation: none; }
-  .echo-char-body, .echo-char-rim, .echo-char-glow, .echo-char-speck { transition: none; }
-}
+/* The echo character's own styles live with it: packages/echo/src/echo.css. */
 
 .pin-halo { pointer-events: none; }
 .pin-halo-uncommon { fill: url(#rarityUncommon); }
@@ -5156,18 +5136,6 @@ body.seat { padding: 0; display: block; }
   width: max(100%, 44px); height: max(100%, 44px);
 }
 .report-body { margin-top: 14px; }
-
-/* The echo's blinks and glances while it talks (Echo.tsx, useLife). The lids close from
-   the middle of each eye, and a glance slides the pair across the face and back. */
-.echo-char-life {
-  transform-box: fill-box; transform-origin: 50% 50%;
-  transition: transform 220ms ease-out;
-}
-.echo-char-life path { transform-box: fill-box; transform-origin: 50% 50%; transition: transform 70ms ease-in; }
-.echo-char-life.blink path { transform: scaleY(0.08); }
-@media (prefers-reduced-motion: reduce) {
-  .echo-char-life, .echo-char-life path { transition: none; }
-}
 
 /* The journey sheet's routes, introduced as the alternative to just starting (Preflight). */
 .pf-or {

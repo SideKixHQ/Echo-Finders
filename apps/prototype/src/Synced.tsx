@@ -26,7 +26,7 @@
 import { useEffect, useState } from "react";
 import { rarityReasons, type CaptureEvent } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
-import { EchoCharacter } from "./Echo";
+import { EchoCharacter } from "@echofinders/echo";
 
 const RARITY_LABEL: Record<string, string> = {
   common: "Synced",

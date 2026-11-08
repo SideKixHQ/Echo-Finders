@@ -52,7 +52,7 @@
 import { useCallback, useRef, useState } from "react";
 import { rarityOf, type Echo } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
-import { EchoCharacter } from "./Echo";
+import { EchoCharacter } from "@echofinders/echo";
 import { VOICE_LABEL } from "./voices";
 import type { Rating } from "./ratings";
 import { platePng } from "./archive-plate";
