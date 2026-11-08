@@ -65,6 +65,8 @@ export interface EchoPopupProps {
    */
   readonly onReport?: (echo: Echo) => void;
   readonly onClose: () => void;
+  /** Owner mode (`owner.ts`): Play on every card, wherever the listener is. */
+  readonly anywhere?: boolean;
 }
 
 /**
@@ -114,6 +116,7 @@ export function EchoPopup({
   onCamera,
   onReport,
   onClose,
+  anywhere = false,
 }: EchoPopupProps) {
   const metres = distanceKm === null ? null : distanceKm * 1000;
   const synced = state === "captured" || state === "heard";
@@ -227,7 +230,7 @@ export function EchoPopup({
         is a sentence, because "you are 300 metres away" is information and a greyed-out
         play button is a small insult.
       */}
-      {synced ? (
+      {synced || anywhere ? (
         <button className="pop-go" onClick={() => onPlay(echo)}>
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M8 5v14l11-7z" />

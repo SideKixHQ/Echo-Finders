@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
+import { claimOwnerFromAddress, ownerMode, setOwnerMode } from "./owner";
 import { testPositionFrom } from "./test-position";
 import { count } from "./analytics";
 import { LIBRARY, ROUTES } from "./library.generated";
@@ -251,6 +252,11 @@ export function App() {
   const [savedSettings] = useState(readSettings);
   const [privacy, setPrivacy] = useState<PrivacySettings>(savedSettings.privacy);
   const [theme, setTheme] = useState<"dark" | "light">(savedSettings.theme);
+  /** Owner mode, from a private link (`owner.ts`): everything open, on this phone only. */
+  const [owner, setOwner] = useState(ownerMode);
+  useEffect(() => {
+    void claimOwnerFromAddress().then(setOwner);
+  }, []);
 
   // Set on the document rather than a wrapper, so the variables cascade to everything
   // including the portal-less fixed elements.
@@ -676,10 +682,12 @@ export function App() {
    */
   const mayStart = useCallback(
     (echo: Echo) => {
+      // Owner mode: everything is open (`owner.ts`).
+      if (owner) return true;
       const profile = { ...listenerFor(kids, optIns), heardEchoIds: [...heardIds] };
       return mayHearAnother(entitlement, profile, echo.id, echo.point.at, Date.now());
     },
-    [entitlement, kids, optIns, heardIds],
+    [entitlement, kids, optIns, heardIds, owner],
   );
   const mayStartRef = useRef(mayStart);
   mayStartRef.current = mayStart;
@@ -2159,6 +2167,7 @@ export function App() {
               */}
               {selectedEcho && !routePicker && !reporting ? (
                 <EchoPopup
+                  anywhere={owner}
                   echo={selectedEcho.echo}
                   distanceKm={selectedEcho.distanceKm}
                   state={stateOf(selectedEcho.echo.id)}
@@ -2343,6 +2352,11 @@ export function App() {
               onKids={setKidsMode}
               theme={theme}
               onTheme={setTheme}
+              owner={owner}
+              onOwnerOff={() => {
+                setOwnerMode(false);
+                setOwner(false);
+              }}
               membership={
                 <MembershipPanel
                   membership={membershipOf(entitlement, Date.now())}
