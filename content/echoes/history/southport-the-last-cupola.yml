@@ -1,0 +1,75 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: North sidewalk of West Bay Street between Caswell Avenue and Lord Street, looking at the houses on that side; private homes, view from the sidewalk only.
+# Position: Mid-block on the north side of W Bay St between Caswell and Lord, where the nomination lists the Thompson House; Overture points W Bay St 202 to 216 (medium confidence for the block, the exact house not pinned).
+id: southport-the-last-cupola
+title: "The Last Cupola"
+summary: "A Civil War blockade runner from Southport built a house on Bay Street after the war, with the last cupola in town."
+place: "T. M. Thompson House, north side of West Bay Street between Caswell Avenue and Lord Street, Southport, North Carolina"
+at: { lat: 33.917, lng: -78.02125 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 54
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [southport, civil-war, blockade-runners, river-pilots, military]
+teaser: "Most of the pilots who ran the blockade lost everything. One of them built a house."
+script: |
+  Look along this side of the street for a house with a small cupola on the roof.
+
+  When the town's historic houses were surveyed, it was the last cupola left on any house in Southport.
+
+  It was built by a blockade runner.
+
+  In the Civil War, Union warships sat off the mouth of the Cape Fear River to cut the Confederacy's trade. Many of this town's river pilots volunteered to run ships past them.
+
+  They were admired for it. And all too often, the runner lost his ship, his life, or both.
+
+  Thomas Thompson was one of the few pilots from here who made a success of it. Shortly after the war, he built this house.
+
+  Most of the pilots who tried it lost their ships, their lives, or both.
+
+  He got a house, with a little lookout on top.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "When the town's historic houses were surveyed, it was the last cupola left on any house in Southport."
+    source: 1
+    quote: "The house features the last cupola to be found in a Southport dwelling."
+  - says: "It was built by a blockade runner."
+    source: 1
+    quote: "Blockade-runner Thomas M. Thompson built this two-story frame dwelling shortly after the Civil War."
+  - says: "In the Civil War, Union warships sat off the mouth of the Cape Fear River to cut the Confederacy's trade."
+    source: 2
+    quote: "While its guns occasionally fired on Union warships in the ocean blockading the Cape Fear entrance, it was never officially attacked."
+  - says: "Many of this town's river pilots volunteered to run ships past them."
+    source: 1
+    quote: "During the war, many river pilots volunteered their services to the Confederacy as blockade runners."
+  - says: "They were admired for it."
+    source: 1
+    quote: "The intrepid courage of the blockade runner was admired"
+  - says: "And all too often, the runner lost his ship, his life, or both."
+    source: 1
+    quote: "all too often, he lost either his ship, his life or both."
+  - says: "Thomas Thompson was one of the few pilots from here who made a success of it."
+    source: 1
+    quote: "Thompson was one of the few Southport native pilots to make a success out of this activity during the war."
+  - says: "Shortly after the war, he built this house."
+    source: 1
+    quote: "Blockade-runner Thomas M. Thompson built this two-story frame dwelling shortly after the Civil War."
+  - says: "Most of the pilots who tried it lost their ships, their lives, or both."
+    source: 1
+    quote: "Most Southport pilots lost either their ships, their lives, or both."
+sources:
+  - title: "Southport Historic District, National Register of Historic Places Inventory-Nomination Form"
+    publisher: "North Carolina State Historic Preservation Office"
+    url: https://files.nc.gov/ncdcr/nr/BW0008.pdf
+    retrievedAt: "2026-11-08"
+    rights: public-domain
+  - title: "History with 'Hud': How several forts protected the Cape Fear for centuries"
+    publisher: "WWAY TV3"
+    url: https://www.wwaytv3.com/history-with-hud-how-several-forts-protected-the-cape-fear-for-centuries/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts

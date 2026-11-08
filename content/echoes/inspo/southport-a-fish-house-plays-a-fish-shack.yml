@@ -1,0 +1,80 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: Southern end of Yacht Basin Drive by the American Fish Company, at the point where the waterway meets the river (public street).
+# Position: Overture address point for Yacht Basin Dr 150 (33.915722, -78.022873), the bar's address as commonly listed and the southern end of the basin; Our State places it on the point (medium confidence).
+id: southport-a-fish-house-plays-a-fish-shack
+title: "A Fish House Plays a Fish Shack"
+summary: "The American Fish Company bar on the point played Ivan's Fish Shack in Safe Haven. Before it was a bar, it was a fish house."
+place: "American Fish Company, Yacht Basin Drive, Southport, North Carolina"
+at: { lat: 33.91575, lng: -78.0228 }
+triggerRadiusKm: 0.04
+category: inspo
+inspo:
+  kind: creation
+  evidence: site
+format: short
+durationS: 50
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [southport, film, safe-haven, yacht-basin, sunset]
+teaser: "In Safe Haven, the bar on this point was Ivan's Fish Shack. It used to be a real fish house."
+script: |
+  Look for the bar on the point, where the Intracoastal Waterway meets the Cape Fear River.
+
+  In the film Safe Haven, this was Ivan's Fish Shack.
+
+  Before it was a bar, it was a fish house.
+
+  Safe Haven starred Julianne Hough and Josh Duhamel, and the town saw an immense increase in tourism around its release.
+
+  The bar has had other parts too, in Weekend at Bernie's, I Know What You Did Last Summer and The Three Lives of Karen.
+
+  It is known as the best place to watch the sunset in Southport. When the phones come out, the manager says, it is usually for the sunset, or for the dolphins going by.
+
+  A fish house that played a fish shack. Typecast, and happy about it.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look for the bar on the point, where the Intracoastal Waterway meets the Cape Fear River."
+    source: 2
+    quote: "Perched on the edge of Southport, overlooking the point where the Intracoastal Waterway meets the Cape Fear River, American Fish Company has one of the best views in Southport."
+  - says: "In the film Safe Haven, this was Ivan's Fish Shack."
+    source: 1
+    quote: "This waterfront bar was Ivan’s Fish Shack in the movie Safe Haven ."
+  - says: "Before it was a bar, it was a fish house."
+    source: 3
+    quote: "Formerly a fish house, American Fish Company now offers a waterfront pub with views"
+  - says: "Safe Haven starred Julianne Hough and Josh Duhamel, and the town saw an immense increase in tourism around its release."
+    source: 4
+    quote: "The town of Southport saw an immense increase in tourism leading up to and following the release of Safe Haven , a feature film starring Julianne Hough and Josh Duhamel."
+  - says: "The bar has had other parts too, in Weekend at Bernie's, I Know What You Did Last Summer and The Three Lives of Karen."
+    source: 1
+    quote: "it has also appeared in Weekend at Bernie’s , I Know What You Did Last Summer , and The Three Lives of Karen ."
+  - says: "It is known as the best place to watch the sunset in Southport."
+    source: 1
+    quote: "Known as “the best place to watch the sunset in Southport,”"
+  - says: "When the phones come out, the manager says, it is usually for the sunset, or for the dolphins going by."
+    source: 3
+    quote: "If you walk into American Fish Company, you won’t see everyone glued to their phones, and if they are, they’re capturing pictures of the sunset, or the dolphins and porpoises that swim by all the time."
+sources:
+  - title: "A Guide to Downtown Southport"
+    publisher: "Our State"
+    url: https://www.ourstate.com/a-guide-to-downtown-southport/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Around Town: Southport"
+    publisher: "Our State"
+    url: https://www.ourstate.com/around-town-southport-north-carolina/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "A Seafood Guide to Southport's Waterfront"
+    publisher: "Our State"
+    url: https://www.ourstate.com/a-waterfront-seafood-guide-to-southport/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "The 5 Most Recognizable Film Locations in North Carolina"
+    publisher: "Our State"
+    url: https://www.ourstate.com/film-locations-in-north-carolina-2/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts

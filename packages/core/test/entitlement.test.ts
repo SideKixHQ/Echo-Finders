@@ -250,6 +250,8 @@ describe("the Week Pass and the Cape Fear coast", () => {
   const DOWNTOWN = { lat: 34.2357, lng: -77.9452 };
   const SOUTHPORT = { lat: 33.9244, lng: -78.0206 };
   const OAK_ISLAND = { lat: 33.9135, lng: -78.1617 };
+  // Cape Fear point on Bald Head Island, the furthest echo from downtown (43.6km).
+  const BALD_HEAD = { lat: 33.8442, lng: -77.9618 };
   const MYRTLE_BEACH = { lat: 33.6891, lng: -78.8867 };
   const WEEK: Entitlement = { kind: "passes", purchasedAt: NOW, weekPasses: [{ city: "cape-fear", until: NOW + WEEK_PASS_TERM_MS }] };
   const spent = listener(heardIds(FREE_ECHO_LIMIT));
@@ -259,8 +261,8 @@ describe("the Week Pass and the Cape Fear coast", () => {
     expect(WEEK_PASS_TERM_MS).toBe(7 * 24 * 60 * 60 * 1000);
   });
 
-  it("is one pass for Wilmington, the beaches, Southport and Oak Island, and not Myrtle Beach", () => {
-    for (const at of [DOWNTOWN, SOUTHPORT, OAK_ISLAND]) expect(cityAt(at)?.id).toBe("cape-fear");
+  it("is one pass for Wilmington, the beaches, Southport, Oak Island and Bald Head, and not Myrtle Beach", () => {
+    for (const at of [DOWNTOWN, SOUTHPORT, OAK_ISLAND, BALD_HEAD]) expect(cityAt(at)?.id).toBe("cape-fear");
     expect(cityAt(MYRTLE_BEACH)).toBeNull();
   });
 

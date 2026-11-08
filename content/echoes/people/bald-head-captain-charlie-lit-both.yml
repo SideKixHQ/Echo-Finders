@@ -1,0 +1,82 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: The public way by Captain Charlie's three cottages near Cape Fear point. The cottages are rentals: look from the road or the beach.
+# Position: Overture address points on Captain Charlies Trail (1 to 3, 33.8456 to 33.8460, -77.9666 to -77.9671), the lane named for the keepers' cottages (medium confidence that the cottages are these points).
+id: bald-head-captain-charlie-lit-both
+title: "Captain Charlie Lit Both"
+summary: "Charlie Swan lit the Cape Fear Lighthouse in 1903 and kept it thirty years. In 1958 he switched on the Oak Island light that replaced it."
+place: "Captain Charlie's cottages, Cape Fear Lighthouse Complex, Bald Head Island, North Carolina"
+at: { lat: 33.846, lng: -77.9668 }
+triggerRadiusKm: 0.08
+category: people
+format: short
+durationS: 65
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [bald-head-island, cape-fear-lighthouse, lighthouse-keeper, oak-island-lighthouse]
+teaser: "He lit the first lamp here. Fifty-five years later he switched on the light that replaced it."
+script: |
+  Three cottages stand together here on the dunes. They are known as Captain Charlie's, after the lighthouse keeper who lived in one of them.
+
+  In 1903 a new steel lighthouse went up nearby. Charlie Swan was its first head keeper, and he had the honor of lighting the lamp for the first time.
+
+  He kept it for thirty years, until he retired in 1933. He and his two assistants lived in these three houses, and they were the only people living on the island. When the wooden rails of the supply tram rotted, Captain Charlie bought a horse and cart.
+
+  In 1958 the Coast Guard put up a new lighthouse across the river on Oak Island, and took his old tower down.
+
+  On the fifteenth of May, 1958, the man who threw the switch to light the new one was the former keeper of the old one. Captain Charlie.
+
+  He lit the first lamp here. And he switched on the light that replaced it.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Three cottages stand together here on the dunes."
+    source: 3
+    quote: "there are three little cottages perched proudly on the dunes of Bald Head Island"
+  - says: "They are known as Captain Charlie's, after the lighthouse keeper who lived in one of them."
+    source: 1
+    quote: "are locally known as ''Cap 'n Charlie's\" for the long association with Captain Charlie Swan"
+  - says: "In 1903 a new steel lighthouse went up nearby."
+    source: 1
+    quote: "The Cape Fear Lighthouse Complex was built in 1903 on Smith Island."
+  - says: "Charlie Swan was its first head keeper, and he had the honor of lighting the lamp for the first time."
+    source: 1
+    quote: "Swan was the first head keeper of the lighthou$e and had the honor of lighting the lamp for the first ti~e."
+  - says: "He kept it for thirty years, until he retired in 1933."
+    source: 1
+    quote: "Swan was in charge of the complex for thirty years, until his retirement in 1933."
+  - says: "He and his two assistants lived in these three houses, and they were the only people living on the island."
+    source: 1
+    quote: "The occupants of these three houses were the only inhabitants of the island."
+  - says: "When the wooden rails of the supply tram rotted, Captain Charlie bought a horse and cart."
+    source: 1
+    quote: "Eventually the wooden rails rotted and Cap'n Charlie bought"
+  - says: "In 1958 the Coast Guard put up a new lighthouse across the river on Oak Island, and took his old tower down."
+    source: 2
+    quote: "The Cape Fear tower was taken down so that it would not confuse mariners seeking its replacement on Oak Island"
+  - says: "On the fifteenth of May, 1958, the man who threw the switch to light the new one was the former keeper of the old one."
+    source: 2
+    quote: "The former keeper for the Cape Fear tower, Captain Charles Swann, threw the switch that activated the Oak Island Lighthouse on May 15, 1958"
+  - says: "Captain Charlie."
+    source: 2
+    quote: "Captain Charles Swann, threw the switch that activated the Oak Island Lighthouse"
+  - says: "He lit the first lamp here."
+    source: 1
+    quote: "had the honor of lighting the lamp for the first ti~e."
+sources:
+  - title: "Cape Fear Lighthouse Complex, National Register of Historic Places Inventory Nomination Form"
+    publisher: "North Carolina State Historic Preservation Office (National Register of Historic Places nomination)"
+    url: https://files.nc.gov/ncdcr/nr/BW0003.pdf
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Oak Island Lighthouse, National Register of Historic Places Registration Form"
+    publisher: "North Carolina State Historic Preservation Office (National Register of Historic Places nomination)"
+    url: https://files.nc.gov/ncdcr/nr/BW0260.pdf
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Homeplace: Captain Charlie's Cottages"
+    publisher: "Our State"
+    url: https://www.ourstate.com/captain-charlies-cottages/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts

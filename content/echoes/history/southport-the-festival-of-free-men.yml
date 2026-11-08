@@ -1,0 +1,93 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: North Howe Street sidewalk near Nash Street, on the downtown main street.
+# Position: N Howe St near Nash St from Overture points (N Howe St 200 and 201); the source says only that the parade brings crowds downtown to line the streets, so this is a representative downtown spot (medium confidence).
+id: southport-the-festival-of-free-men
+title: "The Festival of Free Men"
+summary: "Southport's Fourth of July began in the 1790s as the Festival of Free Men, with cannon at daybreak. In 1973 the barge blew."
+place: "North Howe Street, downtown Southport, North Carolina"
+at: { lat: 33.91965, lng: -78.01965 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [southport, fourth-of-july, festival, fireworks]
+teaser: "This town has thrown a Fourth of July party since the 1790s. One year the fireworks went off all at once."
+script: |
+  Picture this street lined with people on the Fourth of July. This town has been throwing that party for more than two hundred years.
+
+  It began in the 1790s, and back then it was called the Festival of Free Men. Ships in the harbor fired their cannons at daybreak, and on through the day, toasting the young nation.
+
+  By 1795 the old fort by the river had been patched up enough for the town to meet there, for its first documented Fourth of July.
+
+  During the Civil War, the party shrank to a thirteen gun salute.
+
+  By 1925 there was a greased pole with a purse on top, swimming contests and a greased pig run. In 1964 a parade arrived, and thousands came downtown to watch it.
+
+  In the 1970s somebody organized a shrimp boat race. The boats were slow and kept blowing their engines, and the race was dropped after three years.
+
+  The worst night was in 1973. The fireworks were on a barge in the river, and they all went off at once. Volunteers jumped overboard, some of them unable to swim. Everyone survived.
+
+  Since then, the fireworks have stayed in the sky.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Picture this street lined with people on the Fourth of July."
+    source: 1
+    quote: "A parade arrived in 1964, bringing thousands of people downtown to line the streets and wave to participants."
+  - says: "This town has been throwing that party for more than two hundred years."
+    source: 1
+    quote: "The popular NC 4th of July celebration in Southport has been commemorating the occasion for nearly as long."
+  - says: "It began in the 1790s, and back then it was called the Festival of Free Men."
+    source: 1
+    quote: "The annual local event began in the 1790s, known back then as the ‘Festival of Free Men’."
+  - says: "Ships in the harbor fired their cannons at daybreak, and on through the day, toasting the young nation."
+    source: 1
+    quote: "Ships in the harbor would shoot their cannons at daybreak and throughout the day, toasting the young nation’s independence."
+  - says: "By 1795 the old fort by the river had been patched up enough for the town to meet there, for its first documented Fourth of July."
+    source: 2
+    quote: "By 1795 enough work had been done to allow Southport’s citizens to use it as a meeting place for their first documented Fourth of July celebration."
+  - says: "During the Civil War, the party shrank to a thirteen gun salute."
+    source: 1
+    quote: "Organizers temporarily trimmed the event lineup from 1862 through 1865, with only a 13-gun salute being held to mark the historic day."
+  - says: "By 1925 there was a greased pole with a purse on top, swimming contests and a greased pig run."
+    source: 1
+    quote: "By 1925 the fun included a competition involving a greased pole with a purse on top, swimming contests and a greased pig run."
+  - says: "In 1964 a parade arrived, and thousands came downtown to watch it."
+    source: 1
+    quote: "A parade arrived in 1964, bringing thousands of people downtown to line the streets and wave to participants."
+  - says: "In the 1970s somebody organized a shrimp boat race."
+    source: 1
+    quote: "a shrimp boat race was organized in the 1970s."
+  - says: "The boats were slow and kept blowing their engines, and the race was dropped after three years."
+    source: 1
+    quote: "But their slow speed and tendency to blow engines quickly eliminated the event after just three years."
+  - says: "The worst night was in 1973."
+    source: 1
+    quote: "The fireworks display is one of the most highly-anticipated events of the entire festival, but it didn’t go well in 1973."
+  - says: "The fireworks were on a barge in the river, and they all went off at once."
+    source: 1
+    quote: "A barge on the river housing the fireworks saw them all explode at one"
+  - says: "Volunteers jumped overboard, some of them unable to swim."
+    source: 1
+    quote: "causing volunteers to jump overboard, with some not knowing how to swim."
+  - says: "Everyone survived."
+    source: 1
+    quote: "Thankfully, everyone survived and the festival’s fireworks have gone smoothly since."
+  - says: "Since then, the fireworks have stayed in the sky."
+    source: 1
+    quote: "Thankfully, everyone survived and the festival’s fireworks have gone smoothly since."
+sources:
+  - title: "History with 'Hud': The 200-year story behind the NC 4th of July Festival in Southport"
+    publisher: "WWAY TV3"
+    url: https://www.wwaytv3.com/history-with-hud-the-200-year-story-behind-the-nc-4th-of-july-festival-in-southport/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "History with 'Hud': How several forts protected the Cape Fear for centuries"
+    publisher: "WWAY TV3"
+    url: https://www.wwaytv3.com/history-with-hud-how-several-forts-protected-the-cape-fear-for-centuries/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts

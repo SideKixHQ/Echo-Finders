@@ -1,0 +1,92 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: Bay Street sidewalk on the river side, across from the Brunswick Inn at the corner of Atlantic Avenue; the inn is private, view from the street.
+# Position: Overture address point for 301 E Bay St (33.918659, -78.015404), the inn at Bay and Atlantic per WWAY; listener placed across Bay Street on the river side (medium confidence).
+id: southport-the-harp-that-kept-playing
+title: "The Harp That Kept Playing"
+summary: "A Southport ghost story: a young harpist at the Brunswick Inn drowned in 1882, and his harp joined the band that night."
+place: "Brunswick Inn, East Bay Street at Atlantic Avenue, Southport, North Carolina"
+at: { lat: 33.9184, lng: -78.0158 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 69
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published ghost story. The script says out loud that it is a legend, not proven; the drowning and burial are reported by the same tellers and are not independently confirmed here.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [southport, ghost, brunswick-inn, music]
+teaser: "The band left his chair empty that night. The harp played anyway, or so the story goes."
+script: |
+  Look at the big house on the corner across the street. It was built in 1859, and by the 1880s it was a resort hotel. In summer it was known for its weekend music and dances.
+
+  What follows is a legend. Nobody has proven any of the strange part.
+
+  The story goes that in 1882, a young musician from Italy named Antonio Caseletta came to this coast looking for work, and got a job playing the harp in the hotel band. One telling makes him nineteen.
+
+  One night he went sailing with the other musicians. He fell overboard and drowned.
+
+  He was buried a few blocks from here, in the Old Smithville Burying Ground.
+
+  According to the legend, the band played that night without him, and left his chair and his harp empty. When they began, the sound of a harp joined in. There was nobody at it.
+
+  Some people say they can still hear it, in the halls of the hotel.
+
+  Most ghost stories want something. This ghost just wants to finish the set.
+pronunciations:
+  - written: Caseletta
+    say: kah-zeh-LET-tah
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "It was built in 1859, and by the 1880s it was a resort hotel."
+    source: 3
+    quote: "In the early 1880's the residence was converted into a resort hotel."
+  - says: "It was built in 1859"
+    source: 1
+    quote: "The hotel was built in 1859"
+  - says: "In summer it was known for its weekend music and dances."
+    source: 1
+    quote: "in the summer months it was well known to locals and visitors alike for it’s weekend music and dances."
+  - says: "The story goes that in 1882, a young musician from Italy named Antonio Caseletta came to this coast looking for work, and got a job playing the harp in the hotel band."
+    source: 1
+    quote: "As the story goes, Antonio Caseletta came to the North Carolina coast from Italy in 1882. Caseletta was looking for work as a musician and got a job playing the harp at the Brunswick Inn."
+  - says: "One telling makes him nineteen."
+    source: 2
+    quote: "was a 19-year-old harpist working at the Brunswick Inn who drowned in 1882."
+  - says: "One night he went sailing with the other musicians."
+    source: 1
+    quote: "One night, he went sailing with the other musicians from the hotel."
+  - says: "He fell overboard and drowned."
+    source: 1
+    quote: "Caseletta fell overboard and drowned."
+  - says: "He was buried a few blocks from here, in the Old Smithville Burying Ground."
+    source: 1
+    quote: "His body was taken from the water and buried at the Old Smithville Burying Ground, where it remains to this day."
+  - says: "According to the legend, the band played that night without him, and left his chair and his harp empty."
+    source: 1
+    quote: "According to the legend, on the night of his death, the band decided to play their performance without him and left his chair and unmanned harp empty in his honor."
+  - says: "When they began, the sound of a harp joined in."
+    source: 1
+    quote: "To everyone’s surprise, the sounds of the harp joined the band when they began to play, although it’s player was nowhere to be seen."
+  - says: "Some people say they can still hear it, in the halls of the hotel."
+    source: 1
+    quote: "Some still say they can hear the beautiful sounds of the harp echoing through the halls of the hotel."
+sources:
+  - title: "#TBT: The Brunswick Inn's Phantom Harpist"
+    publisher: "WWAY TV3"
+    url: https://www.wwaytv3.com/tbt-the-brunswick-inns-phantom-harpist/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "7 Spooky Activities to Chill Your Bones This Fall"
+    publisher: "Our State"
+    url: https://www.ourstate.com/7-spooky-activities-to-chill-your-bones-this-fall/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Southport Historic District, National Register of Historic Places Inventory-Nomination Form"
+    publisher: "North Carolina State Historic Preservation Office"
+    url: https://files.nc.gov/ncdcr/nr/BW0008.pdf
+    retrievedAt: "2026-11-08"
+    rights: public-domain

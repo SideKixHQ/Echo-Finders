@@ -1,0 +1,90 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: East Bay Street sidewalk on the river side near Rhett Street, looking out at the river; the old Quarantine Office is now a private home.
+# Position: E Bay St near S Rhett St from Overture points (E Bay St 310 to 318, S Rhett St 106); the nomination lists the Quarantine Office on the south side of Bay between Atlantic and Rhett (medium confidence).
+id: southport-the-station-in-the-river
+title: "The Station in the River"
+summary: "For decades ships stopped at a quarantine station in the river off Southport, to be searched for disease and fumigated."
+place: "Quarantine Office site, south side of East Bay Street between Atlantic Avenue and Rhett Street, Southport, North Carolina"
+at: { lat: 33.9188, lng: -78.0147 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [southport, quarantine, yellow-fever, maritime, waterfront]
+teaser: "Every ship coming upriver once had to stop out there and prove nobody aboard was sick."
+script: |
+  Look out at the river. For decades, ships coming in from abroad had to stop out there before they were allowed any further.
+
+  In August 1862, yellow fever reached Wilmington. It is believed to have arrived on a steamship from the Bahamas. Six hundred and fifty four people died.
+
+  So a quarantine station was built near this town, out on the river. The one built in 1895 had ten buildings, on a foundation above the water.
+
+  Every ship tied up at its six hundred foot dock. Anyone found to be sick had to stay on the platform, which had its own hospital.
+
+  The ships were sprayed with sulfur from pressurized hoses, and only then went on upriver.
+
+  Near this corner, on the river side of Bay Street, a small office ran the station's routine affairs from the shore.
+
+  New ways of controlling disease came in 1937, and the station was left to fall apart. Fire took many of its buildings in 1951. Hurricane Hazel took the rest in 1954.
+
+  All that was left was a concrete base that once held up a water tower. Today it is lit at night, so boats can see it.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "For decades, ships coming in from abroad had to stop out there before they were allowed any further."
+    source: 2
+    quote: "that had visited foreign ports, a U. S. quarantine station was established after the Civil War and located on pilings in the middle of the Cape"
+  - says: "In August 1862, yellow fever reached Wilmington."
+    source: 1
+    quote: "In August of 1862, a Yellow Fever outbreak struck the Port City, killing residents by the dozen."
+  - says: "It is believed to have arrived on a steamship from the Bahamas."
+    source: 1
+    quote: "It’s believed the feared and highly contagious disease arrived aboard the steamship ‘Kate’ which floated into Wilmington from the Bahamas"
+  - says: "Six hundred and fifty four people died."
+    source: 1
+    quote: "With a total of 654 people dying from the Yellow Fever epidemic"
+  - says: "The one built in 1895 had ten buildings, on a foundation above the water."
+    source: 1
+    quote: "a new, 10 building Quarantine Station was constructed in 1895 on a foundation above the Cape Fear River."
+  - says: "Every ship tied up at its six hundred foot dock."
+    source: 1
+    quote: "Each ship would tie up to the 600-foot dock at the Quarantine Station, being inspected for sick passengers."
+  - says: "Anyone found to be sick had to stay on the platform, which had its own hospital."
+    source: 1
+    quote: "People who were found to have a disease were forced to stay on the platform, which had a contagious hospital."
+  - says: "The ships were sprayed with sulfur from pressurized hoses, and only then went on upriver."
+    source: 1
+    quote: "Ships were disinfected with sulfur from pressurized hoses before being allowed to continue with the remaining non-sick passengers upriver into the Port City."
+  - says: "Near this corner, on the river side of Bay Street, a small office ran the station's routine affairs from the shore."
+    source: 2
+    quote: "Around the turn of the century a two story building was erected on this site in Southport to maintain the routine affairs of the quarantine station."
+  - says: "New ways of controlling disease came in 1937, and the station was left to fall apart."
+    source: 1
+    quote: "The station was operated under the same standards for decades until 1937 when new methods of disease control were introduced."
+  - says: "Fire took many of its buildings in 1951."
+    source: 1
+    quote: "Fire destroyed many of the buildings in 1951, with Hurricane Hazel wiping the rest away in 1954."
+  - says: "Hurricane Hazel took the rest in 1954."
+    source: 1
+    quote: "Fire destroyed many of the buildings in 1951, with Hurricane Hazel wiping the rest away in 1954."
+  - says: "All that was left was a concrete base that once held up a water tower."
+    source: 1
+    quote: "The only remaining piece of the once-vital Quarantine Station was a large concrete foundation base which once held up a 12,000 gallon water tower."
+  - says: "Today it is lit at night, so boats can see it."
+    source: 1
+    quote: "Instead, the base was illuminated with lights to make it easier to spot."
+sources:
+  - title: "History with 'Hud': How a quarantine station near Southport helped block deadly diseases from Wilmington"
+    publisher: "WWAY TV3"
+    url: https://www.wwaytv3.com/history-with-hud-how-a-quarantine-station-near-southport-helped-block-deadly-diseases-from-wilmington/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Southport Historic District, National Register of Historic Places Inventory-Nomination Form"
+    publisher: "North Carolina State Historic Preservation Office"
+    url: https://files.nc.gov/ncdcr/nr/BW0008.pdf
+    retrievedAt: "2026-11-08"
+    rights: public-domain

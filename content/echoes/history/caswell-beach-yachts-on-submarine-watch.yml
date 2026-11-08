@@ -1,0 +1,71 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: The public beach at the end of the town's dune boardwalk opposite the Oak Island Lighthouse, facing the sea and the mouth of the river.
+# Position: Oak Island Lighthouse NR UTM point (17 774190 3754010, NAD27) converted and shifted about 200 m north for the datum, then moved south across the road onto the beach parcel the town owns (medium confidence).
+id: caswell-beach-yachts-on-submarine-watch
+title: "Yachts on Submarine Watch"
+summary: "In the Second World War, Fort Caswell monitored German submarines, and private yachts patrolled Frying Pan Shoals for the Navy."
+place: "Caswell Beach, public beach near the Oak Island Lighthouse, Caswell Beach, North Carolina"
+at: { lat: 33.891, lng: -78.0352 }
+triggerRadiusKm: 0.12
+category: history
+format: short
+durationS: 58
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [caswell-beach, oak-island, fort-caswell, world-war-ii, military, frying-pan-shoals]
+teaser: "In the Second World War, the Navy hunted submarines off this beach in borrowed yachts."
+script: |
+  Look out to sea, and then east, past the point at the end of this beach. Out there, under the water, Frying Pan Shoals runs a long way out from Bald Head Island.
+
+  In November 1941, one month before Pearl Harbor, the Navy bought Fort Caswell, at the end of this road, for seventy-five thousand dollars.
+
+  The buildings were painted camouflage green. Blackout curtains went into the windows.
+
+  During the war, Fort Caswell was one of four bases in the country where German submarines were monitored.
+
+  The Navy was short of vessels. So six boats went out from here to patrol around Frying Pan Shoals, looking for the submarines. All six were private yachts, doing Navy work.
+
+  Picture one of them from this beach. Somebody's pleasure boat, out past the breakers, hunting a submarine.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Out there, under the water, Frying Pan Shoals runs a long way out from Bald Head Island."
+    source: 2
+    quote: "The underwater ridge, made of sand and silt disgorged from the Cape Fear River, extends 18 miles from southeastern Bald Head Island."
+  - says: "In November 1941, one month before Pearl Harbor, the Navy bought Fort Caswell, at the end of this road, for seventy-five thousand dollars."
+    source: 1
+    quote: "on November 17, 1941, the United States Navy purchased the 248-acre complex from the Caswell Carolina Corporation for $75,000; the transaction occurred one month before Japan's attack on Pearl Harbor."
+  - says: "The buildings were painted camouflage green."
+    source: 1
+    quote: "After all the buildings were painted a camouflage green, blackout curtains installed in their windows"
+  - says: "Blackout curtains went into the windows."
+    source: 1
+    quote: "blackout curtains installed in their windows"
+  - says: "During the war, Fort Caswell was one of four bases in the country where German submarines were monitored."
+    source: 1
+    quote: "During World War II, Fort Caswell served as one of four bases nationwide where the activities of German submarines were monitored."
+  - says: "The Navy was short of vessels."
+    source: 1
+    quote: "because of the military's lack of vessels"
+  - says: "So six boats went out from here to patrol around Frying Pan Shoals, looking for the submarines."
+    source: 1
+    quote: "At Fort Caswell, six boats, all private yachts doing Navy work because of the military's lack of vessels, patrolled around Frying Pan Shoals looking for the submarines."
+  - says: "Picture one of them from this beach."
+    source: 1
+    quote: "patrolled around Frying Pan Shoals looking for the submarines."
+  - says: "All six were private yachts, doing Navy work."
+    source: 1
+    quote: "six boats, all private yachts doing Navy work"
+sources:
+  - title: "Fort Caswell Historic District, National Register of Historic Places Registration Form"
+    publisher: "North Carolina State Historic Preservation Office (National Register of Historic Places nomination)"
+    url: https://files.nc.gov/ncdcr/nr/BW0230.pdf
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Restoring the Cape Fear Lighthouse's Prism"
+    publisher: "Our State"
+    url: https://www.ourstate.com/the-cape-fear-lighthouses-prism-project/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts

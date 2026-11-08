@@ -1,0 +1,85 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: The town's public dune boardwalk and observation deck on the beach side of Caswell Beach Road, opposite the lighthouse.
+# Position: Oak Island Lighthouse NR UTM point converted and datum-shifted to 33.8928, -78.0352; the deck is placed about 100 m south-southwest across the road, on the beach parcel the town owns (medium confidence).
+id: caswell-beach-the-second-brightest-light
+title: "The Second Brightest Light in the World"
+summary: "When it was lit in 1958, the Oak Island Lighthouse used Second World War spotlight reflectors and was the world's second brightest light."
+place: "Oak Island Lighthouse dune boardwalk and observation deck, Caswell Beach Road, Caswell Beach, North Carolina"
+at: { lat: 33.8919, lng: -78.0357 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 84
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [caswell-beach, oak-island, lighthouse, oak-island-lighthouse, world-war-ii]
+teaser: "For a few years, only one lighthouse on Earth outshone this one."
+script: |
+  From this deck, look back across the road at the top of the lighthouse. The light up there is not one lamp behind a glass lens, like the old towers. It is banks of lamps and reflectors.
+
+  When it was switched on in 1958, the bottom bank held thirty-six inch reflectors with two thousand five hundred watt mercury bulbs. The reflectors were adapted from aircraft spotlights used in the Second World War.
+
+  The Coast Guard engineers knew it would have to be one of the brightest lights in the world. The tower stands four miles farther inland than the old Cape Fear light it replaced, and it still had to reach farther out to sea.
+
+  It did. Its glow carried more than thirty nautical miles, to the end of Frying Pan Shoals.
+
+  For a few years it was the brightest lighthouse in the United States, and the second brightest in the world. Only a lighthouse on an island off France was brighter.
+
+  Then the mercury bulbs turned out too expensive and difficult to keep. In 1962 a new lighthouse at Sullivan's Island, in South Carolina, took the American title.
+
+  The light still flashes four times every ten seconds. Wait for dark, and count.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "The light up there is not one lamp behind a glass lens, like the old towers."
+    source: 1
+    quote: "Unlike older lighthouses that used a single lamp and lens to refract the light, the Oak Island Lighthouse used multiple bulbs and mirrors, or reflector lenses."
+  - says: "It is banks of lamps and reflectors."
+    source: 1
+    quote: "Unlike older lighthouses that used a single lamp and lens to refract the light, the Oak Island Lighthouse used multiple bulbs and mirrors, or reflector lenses."
+  - says: "When it was switched on in 1958, the bottom bank held thirty-six inch reflectors with two thousand five hundred watt mercury bulbs."
+    source: 1
+    quote: "When the lighthouse was activated in 1958, the bottom bank contained the larger thirty-six-inch reflectors that housed 2500-watt mercury bulbs."
+  - says: "The reflectors were adapted from aircraft spotlights used in the Second World War."
+    source: 1
+    quote: "These reflectors with their housings were adapted from aircraft spotlights used during World War II."
+  - says: "The Coast Guard engineers knew it would have to be one of the brightest lights in the world."
+    source: 1
+    quote: "The engineers realized that the new lighthouse would have to be one of the brightest in the world to meet these specifications."
+  - says: "The tower stands four miles farther inland than the old Cape Fear light it replaced, and it still had to reach farther out to sea."
+    source: 1
+    quote: "The Oak Island Lighthouse was going to be located four miles farther inland than the Cape Fear tower, requiring a light that could both meet and exceed the fixed range of visibility of the Cape Fear tower"
+  - says: "Its glow carried more than thirty nautical miles, to the end of Frying Pan Shoals."
+    source: 1
+    quote: "In actuality, the glow of the light was visible over thirty nautical miles to the end of the Frying Pan Shoals."
+  - says: "For a few years it was the brightest lighthouse in the United States, and the second brightest in the world."
+    source: 1
+    quote: "Until the construction of the Sullivan's Island, South Carolina, Lighthouse in 1962, the Oak Island Lighthouse was the brightest lighthouse in the United States and the second brightest in the world"
+  - says: "Only a lighthouse on an island off France was brighter."
+    source: 1
+    quote: "the Oak Island light was the second brightest in the world, second only to the Creac'h Lighthouse on France's Isle d'Ouessant."
+  - says: "Then the mercury bulbs turned out too expensive and difficult to keep."
+    source: 1
+    quote: "The original mercury bulbs in the lighthouse were too expensive and difficult to maintain."
+  - says: "In 1962 a new lighthouse at Sullivan's Island, in South Carolina, took the American title."
+    source: 1
+    quote: "Until the construction of the Sullivan's Island, South Carolina, Lighthouse in 1962, the Oak Island Lighthouse was the brightest lighthouse in the United States"
+  - says: "The light still flashes four times every ten seconds."
+    source: 1
+    quote: "The characteristic flashing pattern for the lights is four one-second flashes every ten seconds."
+  - says: "When it was switched on in 1958"
+    source: 2
+    quote: "This lighthouse went into service on May 15, 1958. The beacon in the tower is the second strongest in the world."
+sources:
+  - title: "Oak Island Lighthouse, National Register of Historic Places Registration Form"
+    publisher: "North Carolina State Historic Preservation Office (National Register of Historic Places nomination)"
+    url: https://files.nc.gov/ncdcr/nr/BW0260.pdf
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Lighthouse Traveling Trunk, Cape Lookout National Seashore"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/teachers/classrooms/upload/Lighthouse-Traveling-Trunk_revised-2022_508_rev2.pdf
+    retrievedAt: "2026-11-08"
+    rights: public-domain
