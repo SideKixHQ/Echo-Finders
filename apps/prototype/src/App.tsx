@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
-import { claimOwnerFromAddress, ownerMode, setOwnerMode } from "./owner";
+import { accessRole, claimOwnerFromAddress, setOwnerMode, type AccessRole } from "./owner";
 import { testPositionFrom } from "./test-position";
 import { count } from "./analytics";
 import { LIBRARY, ROUTES } from "./library.generated";
@@ -252,10 +252,14 @@ export function App() {
   const [savedSettings] = useState(readSettings);
   const [privacy, setPrivacy] = useState<PrivacySettings>(savedSettings.privacy);
   const [theme, setTheme] = useState<"dark" | "light">(savedSettings.theme);
-  /** Owner mode, from a private link (`owner.ts`): everything open, on this phone only. */
-  const [owner, setOwner] = useState(ownerMode);
+  /**
+   * Owner or tester mode, from a private link (`owner.ts`): everything open, on this phone
+   * only. Both open the same things; the role only changes what Settings calls it.
+   */
+  const [role, setRole] = useState<AccessRole | null>(accessRole);
+  const owner = role !== null;
   useEffect(() => {
-    void claimOwnerFromAddress().then(setOwner);
+    void claimOwnerFromAddress().then(setRole);
   }, []);
 
   // Set on the document rather than a wrapper, so the variables cascade to everything
@@ -2353,9 +2357,10 @@ export function App() {
               theme={theme}
               onTheme={setTheme}
               owner={owner}
+              tester={role === "tester"}
               onOwnerOff={() => {
                 setOwnerMode(false);
-                setOwner(false);
+                setRole(null);
               }}
               membership={
                 <MembershipPanel
