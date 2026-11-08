@@ -30,6 +30,8 @@ const columns = [
       { to: '/partners', label: 'Work with us' },
       { to: 'mailto:hello@echofinders.com', label: 'Contact' },
       { to: '/privacy', label: 'Privacy policy' },
+      { to: '/terms', label: 'Terms of service' },
+      { to: '/refunds', label: 'Refund policy' },
     ],
   },
 ];

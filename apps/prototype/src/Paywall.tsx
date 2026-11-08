@@ -233,6 +233,13 @@ export function Paywall({
           Kept on this device for now. Accounts are coming, and your purchase will move
           with you when they land.
         </p>
+        {/* The terms, in reach before the money moves: what auto-renewal laws expect. */}
+        <p className="paywall-small">
+          {chosen === "allAccess" ? "Renews yearly until you cancel in Settings. " : ""}
+          <a href="https://echofinders.com/terms" target="_blank" rel="noreferrer">Terms</a>
+          {" · "}
+          <a href="https://echofinders.com/refunds" target="_blank" rel="noreferrer">Refunds</a>
+        </p>
 
         <button className="paywall-later" onClick={onClose}>
           {echo ? "Not now" : "Close"}

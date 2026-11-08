@@ -3782,6 +3782,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .paywall-small {
   margin: 10px 0 0; font-size: 11.5px; line-height: 1.5; color: var(--muted);
 }
+.paywall-small a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 .paywall-later {
   margin-top: 14px; min-height: 44px; width: 100%; cursor: pointer;
   font: inherit; font-size: 14px; color: var(--cool);

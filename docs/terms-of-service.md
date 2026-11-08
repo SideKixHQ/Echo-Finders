@@ -1,11 +1,10 @@
 # Echo Finders — Terms of Service
 
-**Draft for legal review. Not yet published.**
-Last updated: 7 November 2026 · Echo Finders is a Whatishere.com product, operated by
-[legal entity name and state of organisation — to be set before publication] ("we", "us").
+Last updated: 8 November 2026 · Echo Finders is a Whatishere.com product, operated by
+Character Limit LLC, a North Carolina limited liability company ("we", "us").
 
 These terms are the agreement between you and us when you use Echo Finders, at
-echo-finders.vercel.app or any address we move it to. Using the app means you accept them.
+echo-finders.vercel.app, echofinders.com or any address we move it to. Using the app means you accept them.
 They are written to be read; where something matters, it is said plainly.
 
 ---
@@ -76,7 +75,7 @@ bought, and a renewal price change is told to you before the renewal (below).
 
 ### Who takes your payment
 Payments are processed by Stripe. Your card details go to Stripe, never to us. Stripe's own
-terms apply to the payment. We currently sell only to cards issued in the United States.
+terms apply to the payment. Echo Finders is offered to people in the United States.
 
 ### Where your purchase lives
 There are no accounts yet. When you buy, your device remembers it, and Stripe keeps the record
@@ -91,8 +90,8 @@ All-Access is a subscription. **It renews every year at the then-current price, 
 card you used, until you cancel.** You can cancel at any time in **Settings → Membership →
 Cancel All-Access**, or from the card page Stripe provides (Settings → Payment card). Cancelling
 stops the next renewal; you keep All-Access until the end of the year you have already paid
-for. We will tell you before a renewal at a higher price. [Renewal reminder: Stripe can email a
-reminder before each annual renewal; to be switched on before publication.]
+for. We will email you a reminder before each annual renewal, and tell you before a renewal at a
+higher price.
 
 ### Regions
 A Week Pass or City Pass covers one city or region, defined by a distance from its centre (the
@@ -150,7 +149,8 @@ is used on your device, your collection stays on your device, and we do not sell
 
 We may change, add or remove features, stories and cities. If we stop offering a city you hold a
 City Pass for, or stop offering Echo Finders altogether, we will give you notice in the app and
-[a pro-rated refund of an All-Access year you have paid for and cannot use / to be confirmed].
+a pro-rated refund of any part of a paid All-Access year you can no longer use, and of a City
+Pass for a city we stop offering.
 
 If these terms change in a way that matters, we will tell you in the app before the change takes
 effect. If you keep using Echo Finders after that, the new terms apply.
@@ -174,21 +174,11 @@ cannot be limited by law, or takes away rights you have as a consumer where you 
 
 ## 11. Law and disputes
 
-These terms are governed by the laws of [the State of North Carolina / to be confirmed], without
-regard to conflict-of-laws rules. [Dispute resolution: courts of, or small claims, or
-arbitration / for the lawyer.] Before taking any formal step, please contact us: most problems
-are fixed fastest that way.
+These terms are governed by the laws of the State of North Carolina, without regard to
+conflict-of-laws rules. Any dispute goes to the state or federal courts in North Carolina, except
+that either of us may bring a claim in small claims court where it qualifies. Before taking any
+formal step, please contact us: most problems are fixed fastest that way.
 
 ## 12. Contact
 
-[contact address — to be set before publication, shared with the Privacy Policy]
-
----
-
-### For the lawyer (not part of the published text)
-- Entity name, state, governing law and the dispute clause are placeholders.
-- All-Access auto-renewal: written to the plain-disclosure pattern state automatic-renewal laws
-  expect (clear terms before purchase, easy online cancellation). The checkout page should link
-  these terms; the renewal reminder email is a Stripe setting James must switch on.
-- Section 8's pro-rated refund on discontinuation is a proposal, not yet a decision.
-- Sales are US-only (Stripe Radar rule), so EU/UK distance-selling rules are not addressed.
+Character Limit LLC, North Carolina · hello@echofinders.com

@@ -1,7 +1,6 @@
 # Echo Finders — Refund Policy
 
-**Draft for legal review. Not yet published.**
-Last updated: 7 November 2026 · Part of the [Terms of Service](terms-of-service.md).
+Last updated: 8 November 2026 · Part of the [Terms of Service](terms-of-service.md).
 
 We would rather refund you than keep money for something that did not work for you. This page
 says when we refund, how to ask, and how long it takes.
@@ -57,7 +56,7 @@ is not a condition of the refund.
 
 ## How to ask
 
-Contact us at [contact address — to be set before publication] with:
+Email hello@echofinders.com with:
 - the email address on your Stripe receipt, or the receipt itself; and
 - which purchase you want refunded.
 
@@ -66,7 +65,7 @@ provides.
 
 ## What happens next
 
-We reply within [2 business days]. Refunds go back to the card you paid with, through Stripe.
+We reply within 5 to 7 business days. Refunds go back to the card you paid with, through Stripe.
 Banks usually show the refund within 5 to 10 business days. A refunded pass stops working on
 your device the next time the app checks your purchases.
 
@@ -80,20 +79,3 @@ paid for is paused while the dispute is open.
 
 We may change this policy for future purchases. A change never applies to a purchase you have
 already made under the earlier policy.
-
----
-
-### For James (not part of the published text)
-These windows are proposals: 48 hours for the Week Pass (it only lasts 7 days), 14 days for the
-City Pass and All-Access, 30 days for anything that did not work, one goodwill refund per pass
-type. They are deliberately based on time, not on how many stories were heard: listening is
-recorded only on the listener's phone, so a rule based on usage could not be checked. Reply time
-and the contact address are placeholders. Refunds are issued from the Stripe dashboard
-(Payments → the charge → Refund).
-
-**Not true yet, and needed before publishing "it stops working":** a refund does not currently
-take a Week Pass or City Pass away. `api/_entitlement.ts` counts any Checkout Session with
-`payment_status: "paid"`, and Stripe leaves a refunded session marked paid; the refund lives on
-its payment intent. The fix is small: have `/api/entitlement` read each session's payment
-intent and skip one whose charge is refunded. A refunded *and cancelled* All-Access subscription
-already stops, because the subscription itself ends.
