@@ -346,6 +346,10 @@ export function useJourney(
     session.setAutoPlay(autoPlay);
   }, [session, autoPlay]);
 
+  // Safari would not start a recording without a tap. Pause, so the player shows Play and
+  // the listener's tap on it starts the real voice — not the robot stand-in (narration.ts).
+  useEffect(() => speech.blocked(() => session.pause()), [speech, session]);
+
   useEffect(() => {
     session.setAutoPlayOnly(chosen ? [...chosen] : undefined);
   }, [session, chosen]);

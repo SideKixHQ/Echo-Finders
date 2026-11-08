@@ -9,10 +9,16 @@
  *   audio/<id>/<voice>.mp3   a render from `scripts/render-echo.mjs`, played from the file
  *   speech/<id>              the stand-in, spoken by `SpeechAudio`
  *
- * And it falls back to the stand-in, rather than going quiet, whenever the file cannot play:
- * the listener asked for the simple telling and that has no render of its own, the file is
- * missing, or the browser refused to start it (a headless one, or autoplay with no tap
- * behind it). A queue that waits for an `ended` that never comes is a walk that stops.
+ * It falls back to the stand-in, rather than going quiet, when the file cannot play: the
+ * listener asked for the simple telling and that has no render of its own, or the file is
+ * missing or broken. A queue that waits for an `ended` that never comes is a walk that stops.
+ *
+ * It does not fall back when the browser merely refused to start the file without a tap
+ * (Safari's autoplay rule, `NotAllowedError`). The recording is there and is what the
+ * listener chose; swapping in the robot voice made James think his voices had been
+ * replaced (2026-11-08). Instead it reports `blocked`, keeps the file loaded, and the
+ * journey pauses so the player shows Play. The tap on Play is the gesture Safari wanted,
+ * and `resume()` starts the real file from it.
  *
  * One `<audio>` element for the whole session, reused. iOS lets an element that has played
  * once from a tap play again later without one; a fresh element per echo would need a tap
@@ -25,6 +31,7 @@ import { SpeechAudio } from "./speech-audio";
 export class Narration implements AudioSink {
   private readonly speech: SpeechAudio;
   private readonly handlers = new Set<() => void>();
+  private readonly blockedHandlers = new Set<() => void>();
   /** Which echo each rendered file belongs to, for the fallback and the simple cut. */
   private readonly byFile: ReadonlyMap<string, Echo>;
   private element: HTMLAudioElement | null = null;
@@ -108,6 +115,11 @@ export class Narration implements AudioSink {
       // A pause or stop before playback began rejects with AbortError. That is the
       // listener, not a failure, and must not start the stand-in talking over them.
       if (error instanceof DOMException && error.name === "AbortError") return;
+      // Refused for want of a tap: wait for one, in the real voice.
+      if (error instanceof DOMException && error.name === "NotAllowedError") {
+        if (this.currentFile === audioKey) for (const handler of this.blockedHandlers) handler();
+        return;
+      }
       fallBack();
     });
   }
@@ -146,6 +158,12 @@ export class Narration implements AudioSink {
   ended(handler: () => void) {
     this.handlers.add(handler);
     return () => void this.handlers.delete(handler);
+  }
+
+  /** The browser would not start a recording without a tap. The file stays ready to resume. */
+  blocked(handler: () => void) {
+    this.blockedHandlers.add(handler);
+    return () => void this.blockedHandlers.delete(handler);
   }
 
   /** Stop the file without reporting an end: a stop is not a finish. */
