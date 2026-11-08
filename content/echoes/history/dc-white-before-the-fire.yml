@@ -9,7 +9,7 @@ at: { lat: 38.89880, lng: -77.03655 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 82
+durationS: 83
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,26 +35,54 @@ script: |
   the original building could be kept.
 
   And some of the scorched wood had one more journey to make. In nineteen fifty-two, a piece
-  of White House timber, still marked by the British fire, was made into a gavel. With a
-  message of good wishes from President Truman, it was presented to a training centre of
-  the British Army, in England.
+  of White House wood, slightly scorched by the British fire, was presented to a British
+  Army training centre in England, in the form of a gavel. It came with a message of good
+  wishes from President Truman.
 
   This time, they were invited to take it.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "In nineteen forty-nine, a Washington newspaper printed it as plain fact."
+    source: 2
+    quote: "In the course of the repairs the White House walls were first painted white to hide the smoke stains left by the British. Hence arose the now familiar designation, “the White House.”"
+  - says: "On the twenty-fourth of August, eighteen fourteen, British troops set the house on fire."
+    source: 1
+    quote: "an invading British army torched the White House, Capitol Building and Treasury on August 24, 1814"
+  - says: "So the house was painted white to hide the stains, and that is how it got its name."
+    source: 2
+    quote: "In the course of the repairs the White House walls were first painted white to hide the smoke stains left by the British. Hence arose the now familiar designation, “the White House.”"
+  - says: "The National Park Service says the house was carrying the name White House from around eighteen eleven."
+    source: 1
+    quote: "Although it didn’t bear the name \"White House\" until around 1811"
+  - says: "That is three years before the fire."
+    source: 1
+    quote: "Although it didn’t bear the name \"White House\" until around 1811"
+  - says: "The outer walls stood, but they were so weakened that little of the original building could be kept."
+    source: 1
+    quote: "Although the exterior walls stood following the attack, weakened by the fire, little of the original structure would remain intact."
+  - says: "And some of the scorched wood had one more journey to make."
+    source: 3
+    quote: "A piece of wood from the United States White House, slightly scorched by the British when they burned the place in 1814, was presented yesterday in the form of a gavel to the British Army training center here."
+  - says: "In nineteen fifty-two, a piece of White House wood, slightly scorched by the British fire, was presented to a British Army training centre in England, in the form of a gavel."
+    source: 3
+    quote: "DEVIZES, England, Aug. 22. A piece of wood from the United States White House, slightly scorched by the British when they burned the place in 1814, was presented yesterday in the form of a gavel to the British Army training center here."
+  - says: "It came with a message of good wishes from President Truman."
+    source: 3
+    quote: "presented the gavel, once part of President' Truman’s collection, to the Royal Army Pay Corps Training Center. The President accompanied the gift with a message of good wishes."
 sources:
   - title: "The White House"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/white-house.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Other Repairs to White House Dispossessed Three Presidents, Evening Star, January 16, 1949, image 96"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83045462/1949-01-16/ed-1/?sp=96
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "British Army Receives White House Memento, Evening Star, August 22, 1952, image 8"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83045462/1952-08-22/ed-1/?sp=8
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain

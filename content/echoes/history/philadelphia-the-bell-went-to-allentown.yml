@@ -27,7 +27,7 @@ script: |
 
   They got it moving again. It spent the winter in Zion's Church in Allentown, while the British held this city, and it came home in June, seventeen seventy-eight, after they had gone.
 
-  The bell got through a war without a scratch. What finally silenced it, in eighteen forty-six, was a repair job for Washington's birthday.
+  The bell got through the war. What finally silenced it, in eighteen forty-six, was a repair job for Washington's birthday.
 pronunciations:
   - written: Allentown
     say: AL-en-town
@@ -35,6 +35,52 @@ pronunciations:
     say: ZY-unz
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The brick part is original, from the seventeen fifties."
+    source: 1
+    quote: "The bottom brick part is the tower. It dates to 1750-1753."
+  - says: "The wooden steeple on top came later."
+    source: 1
+    quote: "The current steeple (wooden part) dates to 1828."
+  - says: "In September, seventeen seventy-seven, a British army was closing in on Philadelphia."
+    source: 4
+    quote: "in September, 1777, just before the battle of Germantown, the Bell was taken down from the belfry over the State House, now called Independence Hall"
+  - says: "Before it arrived, the State House bell was taken down from up there"
+    source: 4
+    quote: "the Bell was taken down from the belfry over the State House, now called Independence Hall"
+  - says: "to keep it out of British hands"
+    source: 3
+    quote: "The first journey of the Bell from the State House was for its preservation."
+  - says: "It was not the Liberty Bell yet."
+    source: 2
+    quote: "The Anti-Slavery Record, an abolitionist publication, first referred to the bell as the Liberty Bell in 1835, but that name was not widely adopted until years later."
+  - says: "Nobody would call it that for almost sixty years."
+    source: 2
+    quote: "first referred to the bell as the Liberty Bell in 1835"
+  - says: "in a train of about seven hundred wagons carrying the army's heavy baggage, guarded by two hundred soldiers from Virginia and North Carolina"
+    source: 3
+    quote: "The Bell was conveyed with the whole heavy baggage of the Army in a continuous train of 700 wagons guarded by two hundred North Carolina and Virginia soldiers, to Allentown."
+  - says: "Through Germantown, through Bethlehem, to Allentown."
+    source: 4
+    quote: "to Allentown, Pa., by way of Germantown and Bethlehem."
+  - says: "A diary kept in Bethlehem that autumn has one line about it."
+    source: 4
+    quote: "The wagon on which it was conveyed broke down in Bethlehem on September 29th."
+  - says: "September the twenty-ninth."
+    source: 3
+    quote: "“September 29, the wagon which conveyed the State House Bell broke down in the street and had to be unloaded.”"
+  - says: "The wagon which conveyed the State House bell broke down in the street, and had to be unloaded."
+    source: 3
+    quote: "“September 29, the wagon which conveyed the State House Bell broke down in the street and had to be unloaded.”"
+  - says: "It spent the winter in Zion's Church in Allentown"
+    source: 3
+    quote: "While in Allentown it was in the Zion’s Church."
+  - says: "it came home in June, seventeen seventy-eight, after they had gone"
+    source: 3
+    quote: "The Bell was away from the City from 18th September, 1777, to June 27, 1778."
+  - says: "What finally silenced it, in eighteen forty-six, was a repair job for Washington's birthday."
+    source: 2
+    quote: "In 1846, when the city decided to repair the bell prior to George Washington's birthday holiday (February 23), metal workers widened the thin crack"
 sources:
   - title: "Independence Hall Tower and Steeple FAQs"
     publisher: "National Park Service, Independence National Historical Park"

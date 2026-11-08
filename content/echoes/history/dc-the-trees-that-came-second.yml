@@ -9,7 +9,7 @@ at: { lat: 38.88669, lng: -77.04122 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 72
+durationS: 79
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -25,8 +25,8 @@ script: |
 
   But these were not the first trees Tokyo sent.
 
-  Two years earlier, two thousand cherry trees arrived in Washington, a gift from the city
-  of Tokyo. Inspectors from the Department of Agriculture found them full of insects and
+  Two years earlier, two thousand cherry trees had arrived in Washington, a first gift from
+  Japan. Inspectors from the Department of Agriculture found them full of insects and
   nematodes, and diseased. To protect American growers, they had to go. The President gave
   his consent, and in January 1910 the whole gift was burned.
 
@@ -42,14 +42,63 @@ script: |
   These two trees are the reply.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Find the two old cherry trees by the large bronze plaque here."
+    source: 1
+    quote: "These two original trees still stand several hundred yards west of the John Paul Jones Memorial, located at the terminus of 17th Street, SW. Situated near the bases of the trees is a large bronze plaque which commemorates the occasion."
+  - says: "They were planted on the twenty-seventh of March, 1912, by the First Lady, Helen Taft, and Viscountess Chinda, the wife of the Japanese ambassador."
+    source: 1
+    quote: "March 27, 1912 : Helen Herron Taft and the Viscountess Chinda, wife of the Japanese Ambassador, planted two Yoshino cherry trees on the northern bank of the Tidal Basin"
+  - says: "Only a few people watched."
+    source: 1
+    quote: "Washington DC's renowned National Cherry Blossom Festival grew from this simple ceremony, witnessed by just a few persons."
+  - says: "The whole cherry blossom festival grew out of that small ceremony."
+    source: 1
+    quote: "Washington DC's renowned National Cherry Blossom Festival grew from this simple ceremony, witnessed by just a few persons."
+  - says: "But these were not the first trees Tokyo sent."
+    source: 1
+    quote: "Tokyo Mayor Yukio Ozaki and others suggested a second donation be made, and the Tokyo City Council authorized this plan."
+  - says: "Two years earlier, two thousand cherry trees had arrived in Washington, a first gift from Japan."
+    source: 1
+    quote: "January 6, 1910 : The two thousand trees arrived in Washington, D.C."
+  - says: "Two years earlier, two thousand cherry trees had arrived in Washington, a first gift from Japan."
+    source: 2
+    quote: "Two thousand young cherry trees, the gift of the Japanese government to the city of Washington"
+  - says: "Inspectors from the Department of Agriculture found them full of insects and nematodes, and diseased."
+    source: 1
+    quote: "an inspection team from the Department of Agriculture discovered that the trees were infested with insects and nematodes, and were diseased."
+  - says: "To protect American growers, they had to go."
+    source: 1
+    quote: "To protect American growers, the department concluded that the trees must be destroyed."
+  - says: "The President gave his consent, and in January 1910 the whole gift was burned."
+    source: 1
+    quote: "January 28, 1910 : President William Howard Taft granted his consent to burn the trees."
+  - says: "The President gave his consent, and in January 1910 the whole gift was burned."
+    source: 2
+    quote: "Two thousand young cherry trees, the gift of the Japanese government to the city of Washington, were reduced to ashes at the propagating gardens of the Department of Agriculture yesterday"
+  - says: "A local paper reported that about a dozen of the buggiest trees were kept back for study, with an entomologist standing guard, armed with a butterfly net and a cyanide bottle."
+    source: 1
+    quote: "January 29, 1910 : a newspaper article in the Evening Star mentions that \"about a dozen\" of the \"buggiest trees\" were saved for further study, and \"planted out in the experimental plot of the bureau, and there will be an expert entomologist with a dark lantern, and a butterfly net, cyanide bottle and other lethal weapons placed on guard over the trees, to see what sort of bugs develop.\""
+  - says: "Tokyo's answer was to try again."
+    source: 1
+    quote: "Tokyo Mayor Yukio Ozaki and others suggested a second donation be made, and the Tokyo City Council authorized this plan."
+  - says: "Three thousand and twenty trees this time, grafted from a famous collection along a riverbank outside the city."
+    source: 1
+    quote: "The number of trees had now increased to 3,020. The scions for these trees were taken in December 1910 from the famous collection along the bank of the Arakawa River in Adachi Ward, a suburb of Tokyo"
+  - says: "The first gift was burned."
+    source: 2
+    quote: "CHERRY TREES BURNED. Japanese Gift Destroyed Because of Damage by Insects"
+  - says: "These two trees are the reply."
+    source: 1
+    quote: "Helen Herron Taft and the Viscountess Chinda, wife of the Japanese Ambassador, planted two Yoshino cherry trees on the northern bank of the Tidal Basin"
 sources:
   - title: "History of the Cherry Trees"
     publisher: "National Park Service"
     url: https://www.nps.gov/subjects/cherryblossom/history-of-the-cherry-trees.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Cherry Trees Burned. The Washington Herald, 30 January 1910, page 2 (Chronicling America)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/resource/sn83045433/1910-01-30/ed-1/?sp=2
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain

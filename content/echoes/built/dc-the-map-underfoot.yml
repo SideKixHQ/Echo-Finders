@@ -37,14 +37,34 @@ factCheck: corroborated
 pronunciations:
   - written: L'Enfant
     say: lahn-FAHN
+claims:
+  - says: "The dark lines in the stone are streets and avenues."
+    source: 1
+    quote: "Streets, avenues, and the Potomac shoreline are marked in black granite"
+  - says: "The curving edge is the shoreline of the Potomac."
+    source: 1
+    quote: "Streets, avenues, and the Potomac shoreline are marked in black granite"
+  - says: "Bronze plaques set into the pavement mark the places that matter."
+    source: 1
+    quote: "Bronze plaques set into the pavement highlight key sites and historical references"
+  - says: "It is the plan Pierre L'Enfant drew for this city in seventeen ninety-one."
+    source: 1
+    quote: "Its most striking feature is its broad granite and marble surface inlaid with a giant, map-like representation of Pierre L’Enfant’s 1791 plan for the city of Washington."
+  - says: "It was laid into the stone of this plaza when the plaza opened in nineteen eighty."
+    source: 1
+    quote: "Completed in 1980 and originally named Western Plaza"
+  - says: "Find Pennsylvania Avenue on the map."
+    source: 1
+    quote: "Freedom Plaza, located along Pennsylvania Avenue NW between 13th and 14th Streets"
+  - says: "Follow it to the Capitol at one end, and the President's house at the other."
+    source: 1
+    quote: "frame views toward the U.S. Capitol in one direction and the White House in the other"
+  - says: "The plaza was built so that you can see the Capitol in one direction, and the White House in the other."
+    source: 1
+    quote: "Freedom Plaza includes raised terraces, low stone seating walls, and planters that frame views toward the U.S. Capitol in one direction and the White House in the other."
 sources:
   - title: "Freedom Plaza"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/000/freedom-plaza.htm
-    retrievedAt: "2026-10-14"
-    rights: public-domain
-  - title: "Pershing Park, HALS DC-63, written historical and descriptive data"
-    publisher: "Library of Congress, Historic American Landscapes Survey"
-    url: https://www.loc.gov/item/dc1230/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain

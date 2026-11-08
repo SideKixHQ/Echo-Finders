@@ -9,7 +9,7 @@ at: { lat: 38.90025, lng: -77.03612 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 57
+durationS: 63
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -19,11 +19,12 @@ teaser: "Look up at the tower of St. John's Church."
 script: |
   Look up at the tower of St. John's Church, across H Street from the park.
 
-  Behind the louvres, there is a bell. It has hung there since eighteen twenty-two.
+  Up in that tower, there is a bell. It went up when the tower was added, between eighteen
+  twenty and eighteen twenty-two.
 
   This is the church people call the Church of the Presidents. Benjamin Latrobe designed
-  it, James Madison was given a pew, and every president from Madison to Lincoln came here
-  to worship.
+  it. James Madison was given a pew, and he and the next five presidents worshipped here
+  regularly.
 
   The bell carries a maker's mark. It reads, Revere, Boston, eighteen twenty-two.
 
@@ -40,24 +41,56 @@ factCheck: corroborated
 pronunciations:
   - written: Latrobe
     say: luh-TROHB
+claims:
+  - says: "Look up at the tower of St. John's Church, across H Street from the park."
+    source: 2
+    quote: "The park has a rich history with St. John's Church, often referred to as the \"Church of the Presidents.\""
+  - says: "It went up when the tower was added, between eighteen twenty and eighteen twenty-two."
+    source: 1
+    quote: "The bell, installed in the tower at this time, is marked \"Revere Boston 1822\""
+  - says: "between eighteen twenty and eighteen twenty-two"
+    source: 1
+    quote: "a. Period 1820-1822. In a public meeting in July 1820 the pew holders decided that it was expedient to enlarge the church"
+  - says: "This is the church people call the Church of the Presidents."
+    source: 1
+    quote: "Since that time it has been known as \"the Church of the Presidents\""
+  - says: "Benjamin Latrobe designed it."
+    source: 1
+    quote: "The central dome and transepts have been modified little from the original work of Benjamin H. Latrobe"
+  - says: "James Madison was given a pew, and he and the next five presidents worshipped here regularly."
+    source: 1
+    quote: "Soon after its opening a pew was assigned to the family of President James Madison, and he and the next five presidents attended regularly."
+  - says: "It reads, Revere, Boston, eighteen twenty-two."
+    source: 1
+    quote: "The bell, installed in the tower at this time, is marked \"Revere Boston 1822\", and was cast in the foundry of Joseph w. Revere, son, who succeeded Paul Revere."
+  - says: "Not Paul Revere."
+    source: 1
+    quote: "was cast in the foundry of Joseph w. Revere, son, who succeeded Paul Revere."
+  - says: "By then the family foundry had passed to his son, Joseph, and this is his bell."
+    source: 1
+    quote: "was cast in the foundry of Joseph w. Revere, son, who succeeded Paul Revere."
+  - says: "It rings the hours of worship. And it is sounded on occasions of national interest."
+    source: 1
+    quote: "its excellent, clear tone announces the hours of daily and Sunday worship, and it is sounded on occasions of national interest"
+  - says: "The son made something that has been doing it here for two hundred years."
+    source: 1
+    quote: "The bell, installed in the tower at this time, is marked \"Revere Boston 1822\""
+  - says: "The father is remembered for one night of raising the alarm."
+    source: 3
+    quote: "Revere's April 18-19, 1775, ride to Lexington was an intelligence mission directed by Boston's Revolutionary leader Dr. Joseph Warren"
 sources:
   - title: "St. John's Church, Sixteenth and H Streets Northwest, HABS DC-19, written historical and descriptive data"
     publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/dc0235/
-    retrievedAt: "2026-10-14"
-    rights: public-domain
-  - title: "Lafayette Square, HABS DC-676, written historical and descriptive data"
-    publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/dc0784/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc0200/dc0235/data/dc0235data.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Lafayette Park"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/000/lafayette-park.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
-  - title: "Paul Revere's House, Bill Barlow's Budget, September 20, 1905, image 7"
-    publisher: "Library of Congress, Chronicling America"
-    url: https://www.loc.gov/resource/sn92067125/1905-09-20/ed-1/?sp=7
-    retrievedAt: "2026-10-14"
+  - title: "Paul Revere"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/paul-revere.htm
+    retrievedAt: "2026-11-07"
     rights: public-domain

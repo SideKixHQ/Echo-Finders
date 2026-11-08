@@ -37,14 +37,75 @@ pronunciations:
     say: DEX-ter
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Stand on Fifth Street beside the National Constitution Center, where the buses pull in to drop people off."
+    source: 1
+    quote: "The site is located directly adjacent to the NCC's location in Independence National Historical Park. Today a portion of the bus drop off area for the NCC covers the site."
+  - says: "Under this drop-off is the site of a small rented house."
+    source: 1
+    quote: "Dexter lived with nine other people in a small rented house on North 5th Street"
+  - says: "From seventeen ninety, a free Black coachman named James Oronoco Dexter lived in it with nine other people."
+    source: 1
+    quote: "From 1790 to 1798, Dexter lived with nine other people in a small rented house on North 5th Street, halfway between Arch and Race Streets."
+  - says: "From seventeen ninety, a free Black coachman named James Oronoco Dexter lived in it with nine other people."
+    source: 1
+    quote: "James Oronoco Dexter was a free African American who lived at 84 North Fifth Street"
+  - says: "Dexter had been enslaved."
+    source: 1
+    quote: "A coachman and former slave"
+  - says: "On this block he was one of at least six free Black heads of household."
+    source: 1
+    quote: "Dexter was one of at least six, free, black heads-of-households who lived on the block where the National Constitution Center (NCC) sits today."
+  - says: "In seventeen ninety-two he hosted the first meeting, in his own house, to arrange the building of a church."
+    source: 1
+    quote: "In 1792, Dexter hosted the first meeting in his home to arrange for the church's construction."
+  - says: "It became the African Episcopal Church of Saint Thomas, and its congregation is still active."
+    source: 1
+    quote: "Dexter was one of the founding members of the (still active) African Episcopal Church of St. Thomas."
+  - says: "When the Constitution Center was being built, the Park Service at first decided not to dig here."
+    source: 1
+    quote: "Initially the NPS concluded that excavation of the James Dexter site was not warranted since surface construction would not destroy the archeological resources."
+  - says: "The drop-off would sit on top, and whatever was underneath would be left alone."
+    source: 1
+    quote: "The NPS worked with the NCC to ensure that the design for the new facility would avoid impacts to the site so that any surviving archeological or architectural remains could be preserved in-place."
+  - says: "People in the community disagreed."
+    source: 1
+    quote: "when members of the community disagreed with the park's decision"
+  - says: "So the archaeologists dug."
+    source: 1
+    quote: "it was agreed that excavation of the site was warranted and even necessary."
+  - says: "In the old back yard they found a barrel sunk in the ground and filled with sweepings, with nearly four thousand household objects in it."
+    source: 2
+    quote: "The pit contained nearly 4,000 household objects."
+  - says: "In the old back yard they found a barrel sunk in the ground and filled with sweepings, with nearly four thousand household objects in it."
+    source: 2
+    quote: "Archeologists proposed that the material in the pit accumulated as a result of periodic sweeping, a common African practice, of a dirt yard behind Dexter's house."
+  - says: "Pieces of a teapot made by English potters."
+    source: 1
+    quote: "Clouded, or Whieldon, teapot fragments were recovered during the Dexter site excavation. Whieldon-ware was widely produced by English potters beginning in the mid-18th century."
+  - says: "A Chinese porcelain saucer."
+    source: 2
+    quote: "While the saucer in the photograph would have been in the lower price range of Chinese porcelain"
+  - says: "Bones from good cuts of meat, and from pig's feet."
+    source: 2
+    quote: "A significant portion of the bones represented more costly kinds of cuts of meat. In addition to the evidence of high end cuts of meat, archeologists also found pig's feet bones"
+  - says: "A coachman to a wealthy family was well paid."
+    source: 2
+    quote: "As a coachman to a wealthy Philadelphia family, Dexter would have been well paid"
+  - says: "The archaeologists think the imported china let Dexter set a proper table for the people planning that church."
+    source: 2
+    quote: "This would have allowed him to host meetings of the church building community and to serve refreshments on a table set in style suitable for the dignity of the occasion."
+  - says: "What survived of James Dexter's house was the good china, swept up in the yard."
+    source: 2
+    quote: "Dexter's household used a range of tableware from inexpensive common vessels to costly imported teaware."
 sources:
   - title: "James Dexter Site"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/learn/historyculture/james-dexter-site.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Excavation of James Dexter Site"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/learn/historyculture/excavation-dexter.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain

@@ -30,6 +30,43 @@ script: |
   The panel is a celebration of a young country's money. It names one of the places the money came from.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Stand in front of the columns on Third Street and look above the main door."
+    source: 1
+    quote: "it moved into a magnificent new home on South Third Street six years later"
+  - says: "There is a carved marble panel there, and it is busier than it first appears."
+    source: 1
+    quote: "The carved marble panel above celebrates the new nation's firm financial footing"
+  - says: "A baby wearing a helmet leans against a globe."
+    source: 1
+    quote: "a baby (America) wearing a helmet like Mercury's leans against a globe (the international economy)"
+  - says: "One foot rests on a beehive."
+    source: 2
+    quote: "His foot rests on a beehive, the symbol for industriousness."
+  - says: "Beside him a horn of plenty spills out, not fruit, but coins."
+    source: 1
+    quote: "Next to the globe is a cornucopia (rich harvest) that spills out coins instead of fruit."
+  - says: "Behind him are tall ledgers, sailing ships and an American flag."
+    source: 1
+    quote: "Behind the baby are tall books (knowledge) that are financial ledgers. Behind the books are sailing ships (maritime wealth) and an American flag."
+  - says: "The baby is America."
+    source: 2
+    quote: "Baby - America wearing a helmet like the Mercury, the Roman god of commerce."
+  - says: "This was the Bank of the United States, and it opened in this building in seventeen ninety-seven."
+    source: 2
+    quote: "Two years later, on July 24, 1797, the Bank opened for business."
+  - says: "Even the keystone over the door is the head of Mercury, the Roman god of commerce."
+    source: 1
+    quote: "The main entrance door's arch has a marble keystone with the head of Mercury, ancient Roman god of commerce."
+  - says: "One word is carved on it clearly."
+    source: 1
+    quote: "leans against a globe (the international economy) that shows \"Africa\" clearly labeled"
+  - says: "The Park Service reads that word as the riches of that continent, human and mineral."
+    source: 1
+    quote: "(the human and mineral riches of that continent)"
+  - says: "It names one of the places the money came from."
+    source: 1
+    quote: "that shows \"Africa\" clearly labeled (the human and mineral riches of that continent)"
 sources:
   - title: "First Bank of the United States"
     publisher: "National Park Service, Independence National Historical Park"

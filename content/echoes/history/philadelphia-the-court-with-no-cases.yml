@@ -21,9 +21,9 @@ script: |
 
   Today that court decides the hardest questions in the country. When it came to Philadelphia, it had almost nothing to decide.
 
-  Its first term in this city opened in February, seventeen ninety-one. A Philadelphia lawyer wrote about the day in a letter. The court opened, he said, but there was no business.
+  Its first term in this city opened in February, seventeen ninety-one. A letter written at the time describes the day. The court opened, it said, but there was no business.
 
-  So the justices did the one thing they could, which was admit lawyers to practise before them. The local bar assumed Justice James Wilson, one of their own, would simply vouch for them. He would not. The Chief Justice ruled that one lawyer could not vouch for another. Some of the best known lawyers in the city had to go off and find certificates of good character, and come back after one o'clock.
+  So the justices did the one thing they could, which was admit lawyers to practise before them. The local bar assumed Justice James Wilson, one of their own, would simply vouch for them. He would not. The Chief Justice said the court would not accept one lawyer vouching for another. Some of the best known lawyers in the city had to go off and find certificates of good character, and come back after one o'clock.
 
   That August the court finally called a case for argument, West against Barnes. One of the parties stood up and pointed out that the paperwork had come from the wrong clerk's office. The court agreed, and dismissed it.
 
@@ -34,19 +34,74 @@ script: |
   The most powerful court in the world started out by checking references.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Look at the small brick building on the corner of Fifth and Chestnut."
+    source: 1
+    quote: "Old City Hall is located at the corner of 5th and Chestnut Streets."
+  - says: "It was built as Philadelphia's city hall."
+    source: 3
+    quote: "at the new City Hall which stood east of Independence Hall."
+  - says: "Through the seventeen nineties it was also the home of the Supreme Court of the United States."
+    source: 2
+    quote: "The Supreme Court of the United States sat here from 1791 to 1800."
+  - says: "When it came to Philadelphia, it had almost nothing to decide."
+    source: 3
+    quote: "While it thus appears that during these first three years of its existence the Court had practically no business to transact"
+  - says: "Its first term in this city opened in February, seventeen ninety-one."
+    source: 3
+    quote: "The next Term of the Court was held in Philadelphia in February, 1791, at the new City Hall which stood east of Independence Hall."
+  - says: "A letter written at the time describes the day."
+    source: 3
+    quote: "The flurry which ensued was vividly depicted in a letter written at the time."
+  - says: "The court opened, it said, but there was no business."
+    source: 3
+    quote: "The Court opened but there was no business."
+  - says: "So the justices did the one thing they could, which was admit lawyers to practise before them."
+    source: 3
+    quote: "Again the docket pre- sented no cases for argument; but the session was enlivened by a singular episode in connection with the large number of lawyers who presented themselves for admission to practice."
+  - says: "The local bar assumed Justice James Wilson, one of their own, would simply vouch for them."
+    source: 3
+    quote: "The local Bar had apparently assumed that, since Judge Wilson himself was a Phil- adelphia lawyer and knew them all personally, no insistence would be made by the Court upon the production of certificates of character."
+  - says: "He would not."
+    source: 3
+    quote: "Judge Wilson was unwilling to vouch for them"
+  - says: "The Chief Justice said the court would not accept one lawyer vouching for another."
+    source: 3
+    quote: "the Chief Justice stated that the Court had decided not to accept the voucher of one lawyer for another."
+  - says: "Some of the best known lawyers in the city had to go off and find certificates of good character, and come back after one o'clock."
+    source: 3
+    quote: "The Court then adjourned till one o’clock, when, the proper certificates having been provided, all who applied were admitted."
+  - says: "That August the court finally called a case for argument, West against Barnes."
+    source: 3
+    quote: "At the August Term in 1791, Samuel Bayard was appointed Clerk in place of Tucker, and five counsel- ors were qualified.2 On the second day of the Term, the case of West v. Barnes, 2 Dallas, 401, was called for argument"
+  - says: "One of the parties stood up and pointed out that the paperwork had come from the wrong clerk's office."
+    source: 3
+    quote: "the writ of error having issued from the office of the Clerk of the Circuit Court and not from the office of the Clerk of the Supreme Court."
+  - says: "The court agreed, and dismissed it."
+    source: 3
+    quote: "The Court dismissed the case on this ground."
+  - says: "One of the original justices, John Rutledge, resigned without ever sitting in a session."
+    source: 3
+    quote: "John Rutledge of South Carolina, who had never attended a session of the Court and had only served on Circuit"
+  - says: "One of the original justices, John Rutledge, resigned without ever sitting in a session."
+    source: 3
+    quote: "one of his first ap- pointees on the Court, who had early resigned to accept an appointment as Chief Justice of his State."
+  - says: "The courtroom inside is furnished the way an eighteenth century courtroom would have been, and it is open to look into."
+    source: 1
+    quote: "The Supreme Court chamber features a typical 18th century courtroom furnished with artifacts from the time period."
 sources:
   - title: "Visiting Old City Hall"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/planyourvisit/oldcityhall.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Old City Hall"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/learn/historyculture/places-oldcityhall.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "The Supreme Court in United States history, volume 1 (Charles Warren, 1922)"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/22011303/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/supremecourtinun01warr/supremecourtinun01warr.text.txt
+    retrievedAt: "2026-11-07"
     rights: public-domain

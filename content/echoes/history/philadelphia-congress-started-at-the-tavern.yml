@@ -30,6 +30,37 @@ script: |
   So before the Continental Congress had a president, a secretary or a place to sit, it had a tavern. This corner.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "This is City Tavern, on the corner of Second and Walnut."
+    source: 1
+    quote: "It is located at 2nd and Walnut Streets."
+  - says: "The tavern the founders knew was built in seventeen seventy-three and torn down in eighteen fifty-four."
+    source: 2
+    quote: "Originally built in 1773 and razed in 1854, the National Park Service built a replica of the building in 1975 as a working tavern."
+  - says: "The Park Service built this one in nineteen seventy-five, as a copy."
+    source: 2
+    quote: "the National Park Service built a replica of the building in 1975 as a working tavern"
+  - says: "The original was still new in the late summer of seventeen seventy-four, when delegates to the first Continental Congress began arriving in town"
+    source: 3
+    quote: "met at Smiths the new City Tavern and spent the Evening together"
+  - says: "On the first of September, John Adams wrote in his diary"
+    source: 3
+    quote: "1774 Septr. 1. Thursday."
+  - says: "all the gentlemen of the Congress who had arrived met at the new City Tavern and spent the evening together"
+    source: 3
+    quote: "In the Evening all the Gentlemen of the Congress who were ar¬ rived in Town, met at Smiths the new City Tavern and spent the Evening together."
+  - says: "Twenty-five had come."
+    source: 3
+    quote: "25 Members were come."
+  - says: "Virginia, North Carolina, Maryland and New York City were still on the road."
+    source: 3
+    quote: "Virginia, N. Carolina, Maryland, and the City of N. York were not arrived."
+  - says: "Four days later they met here again, at ten in the morning, and walked up the street to choose a room."
+    source: 3
+    quote: "Septr. 5. Monday. At Ten, The Delegates all met at the City Tavern, 6 and walked to the Carpenters Hall, where they took a View of the Room"
+  - says: "So before the Continental Congress had a president, a secretary or a place to sit, it had a tavern."
+    source: 2
+    quote: "The original City Tavern was a favorite meeting place of the Founding Fathers and unofficial meeting site for the First Continental Congress."
 sources:
   - title: "City Tavern"
     publisher: "National Park Service"

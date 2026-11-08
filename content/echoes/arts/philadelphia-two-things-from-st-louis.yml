@@ -35,6 +35,55 @@ pronunciations:
     say: WAH-nuh-may-ker
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "This building was John Wanamaker's department store."
+    source: 3
+    quote: "The current occupant of the former Wanamaker's Department Store is Macy's Center City."
+  - says: "a dome a hundred and fifty feet up"
+    source: 1
+    quote: "The architecture of the Court is Ionic and Corinthian, its dome rising 150 feet above a series of Italian and Greek"
+  - says: "Two things were set in that court that were not made in Philadelphia."
+    source: 1
+    quote: "Originally made for the Louisiana Purchase Exposition (St. Louis, 1904) it was purchased by the Wanamaker Store at the close of the Exposition."
+  - says: "The first is a bronze eagle on a granite pedestal."
+    source: 1
+    quote: "Weight of eagle, 2500 pounds; of granite pedestal, 4500 pounds."
+  - says: "The bird alone weighs two and a half thousand pounds."
+    source: 1
+    quote: "Weight of eagle, 2500 pounds"
+  - says: "Every feather was shaped and fitted by hand"
+    source: 1
+    quote: "Every individual feather on the head and body was modeled and fitted in place by hand"
+  - says: "sixteen hundred on the head, five thousand on the whole eagle"
+    source: 1
+    quote: "There are 1600 feathers on the head alone, and s000'on the whole eagle."
+  - says: "It took a crew of skilled metalworkers more than five months."
+    source: 1
+    quote: "more than five months of labor by a large number of highly skilled craftsmen"
+  - says: "The second is the organ, filling the south end of the court."
+    source: 1
+    quote: "The organ proper is built on the Grand Court, the first floor above the Main Floor, at the south end of the Court"
+  - says: "When it was brought here it took thirteen freight cars."
+    source: 1
+    quote: "Thirteen freight cars were needed to transport it"
+  - says: "The store's own workshop then rebuilt it and made it bigger."
+    source: 1
+    quote: "The organ as rebuilt for this Store in the Wanamaker organ shop is over 80 per cent. larger than originally."
+  - says: "By nineteen twenty-six it had more than eighteen thousand pipes"
+    source: 1
+    quote: "The number of pipes is 18,195, including percussion stops"
+  - says: "its biggest wooden pipe was so wide that two men could crawl through it side by side"
+    source: 1
+    quote: "The largest pipe is of wood, 32 feet long, 27 inches wide, and 32 inches deep in the middle, and weighs 1,735 pounds. It is so large that two men can crawl through it, side by side, on their hands and knees."
+  - says: "The eagle and the organ have one thing in common."
+    source: 1
+    quote: "Originally erected at the St. Louis Exposition in 1904, it was brought from there to the Wanamaker Store."
+  - says: "Both were made for the world's fair in St. Louis, in nineteen oh four."
+    source: 1
+    quote: "Originally made for the Louisiana Purchase Exposition (St. Louis, 1904)"
+  - says: "Philadelphia kept two of its best pieces, and put them in a shop."
+    source: 1
+    quote: "it was purchased by the Wanamaker Store at the close of the Exposition"
 sources:
   - title: "A friendly guide to Philadelphia and the Wanamaker store (1926)"
     publisher: "Library of Congress"

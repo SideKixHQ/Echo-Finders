@@ -21,9 +21,9 @@ script: |
 
   You will see yourself, standing among the names.
 
-  The design was entry number one thousand and twenty-six, in a blind competition with
-  more than fourteen hundred entries. It began as a student project. Maya Lin was studying
-  architecture at Yale when she proposed it, in 1981.
+  The design was chosen in a competition with more than fourteen hundred entries. In May
+  1981 it was announced that the winner was Maya Lin, a twenty-one-year-old architecture
+  student at Yale.
 
   No figures. No sculpture. Two long walls of polished black granite, angled so that one
   lines up with the Washington Monument and the other with the Lincoln Memorial.
@@ -40,14 +40,50 @@ script: |
   And in the stone, in the middle of all of them, is you.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Stand where the two walls meet, and look into the black stone."
+    source: 3
+    quote: "The central element of Lin's memorial is the shiny black granite wall in a wide V shape"
+  - says: "You will see yourself, standing among the names."
+    source: 3
+    quote: "The faces of visitors are reflected in the walls bearing the etched names of the 58,318 men and women who died in combat or are listed as missing in action (MIA)."
+  - says: "The design was chosen in a competition with more than fourteen hundred entries."
+    source: 2
+    quote: "Take a look at a few of the 1,421 designs by other finalists in the Library of Congress"
+  - says: "In May 1981 it was announced that the winner was Maya Lin, a twenty-one-year-old architecture student at Yale."
+    source: 2
+    quote: "On May 1, 1981 it was announced that 21-year-old Yale architecture student Maya Lin had won the competition."
+  - says: "Two long walls of polished black granite, angled so that one lines up with the Washington Monument and the other with the Lincoln Memorial."
+    source: 3
+    quote: "The central element of Lin's memorial is the shiny black granite wall in a wide V shape, with one \"arm\" directed toward the Lincoln Memorial and the other toward the Washington Monument."
+  - says: "Now look at the top of the panel at the very center, on the east side."
+    source: 1
+    quote: "The first names appear at the center of the wall at the top of panel 1E."
+  - says: "The names begin there, with the earliest dead, and they run in the order people died, east along the wall to its far end."
+    source: 1
+    quote: "The names are arranged chronologically by date of casualty. The first names appear at the center of the wall at the top of panel 1E. The panels are filled like pages of a journal listing the men and women's names as they fell."
+  - says: "Then they pick up again at the far west end, and run back toward you."
+    source: 1
+    quote: "Upon reaching the farthest east end of the memorial at panel 70E, the pattern continues from the far west end of the memorial at panel 70W, continuing back to the center at panel 1W."
+  - says: "So the last names on the wall finish right here, beside the first."
+    source: 1
+    quote: "In this manner, the memorial evokes a theme of closure or completion; the first are with the last."
+  - says: "The Park Service puts it plainly. The first are with the last."
+    source: 1
+    quote: "In this manner, the memorial evokes a theme of closure or completion; the first are with the last."
 sources:
   - title: "Frequently Asked Questions: How are the names arranged on the wall?"
     publisher: "National Park Service"
     url: https://www.nps.gov/vive/faqs.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
-  - title: "[Vietnam Veterans Memorial. Competition drawing], Maya Lin, competition entry no. 1026, catalogue record and exhibit captions"
-    publisher: "Library of Congress"
-    url: https://www.loc.gov/item/97505164/
-    retrievedAt: "2026-10-14"
+  - title: "Maya Lin: Designing the Vietnam Veterans Memorial: Student Activity"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/teachers/classrooms/maya-lin-designing-the-vietnam-veterans-memorial-student-activity.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+  - title: "Vietnam Veterans Memorial"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/vive/learn/historyculture/vvmoverview.htm
+    retrievedAt: "2026-11-07"
     rights: public-domain

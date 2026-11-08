@@ -17,7 +17,7 @@ quality: 0.75
 tags: [philadelphia, philadelphia-core, washington-square, revolution, burial-ground, yellow-fever]
 teaser: "The memorial honours one soldier. The rest are under the grass."
 script: |
-  In front of you, a bronze George Washington stands above a stone tomb, and a flame burns near his feet. Go close enough to read the lid. Beneath this stone rests a soldier of Washington's army, who died to give you liberty.
+  In front of you, a bronze George Washington stands above a stone tomb, and a flame burns near his feet. Go close enough to read the lid. Beneath this stone rests the soldier of Washington's army, who died to give you liberty.
 
   One soldier, name unknown. His remains were found in a grave nearby in nineteen fifty-six, and the memorial was dedicated the next year.
 
@@ -39,24 +39,70 @@ pronunciations:
     say: SAL-ee WIS-ter
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "In front of you, a bronze George Washington stands above a stone tomb, and a flame burns near his feet."
+    source: 4
+    quote: "The memorial includes a bronze statue of George Washington, a limestone wall featuring epitaphs to the fallen, and a tomb"
+  - says: "In front of you, a bronze George Washington stands above a stone tomb, and a flame burns near his feet."
+    source: 3
+    quote: "A propane-fueled eternal flame was dedicated in 1976 for the bicentennial."
+  - says: "Beneath this stone rests the soldier of Washington's army, who died to give you liberty."
+    source: 3
+    quote: "The lid of the sarcophagus is inscribed with the words, \"Beneath this stone rests the soldier of Washington's army, who died to give you liberty.\""
+  - says: "One soldier, name unknown."
+    source: 1
+    quote: "This memorial contains the remains of an unknown Revolutionary War soldier who perished in the fight for independence."
+  - says: "His remains were found in a grave nearby in nineteen fifty-six, and the memorial was dedicated the next year."
+    source: 2
+    quote: "In 1957 the city dedicated this memorial to the unknown soldiers of the American Revolution. It includes the remains of a soldier discovered in a nearby grave in 1956."
+  - says: "For most of the seventeen hundreds this square was the city's potter's field, the burial ground for strangers and the poor."
+    source: 1
+    quote: "William Penn patented this square in 1706 as a Potter’s Field, or a public graveyard for the poor. Free and enslaved Africans were interred here alongside suicide victims, those unaffiliated with a church, and strangers to the city."
+  - says: "Free and enslaved Africans were buried here, and their families sometimes gathered to guard the graves from the anatomy lecturers."
+    source: 1
+    quote: "Free and enslaved Africans socialized here prior to the American Revolution, sometimes gathering to protect the remains of their loved ones from being exhumed for dissection in Dr. William Shippen’s anatomy lectures."
+  - says: "In January seventeen seventy-seven, Deborah Norris wrote to her friend Sally Wister about a shocking sight here."
+    source: 2
+    quote: "On January 27, 1777, Deborah Norris wrote to her friend Sally Wister of a “shocking sight.”"
+  - says: "Large pits are dug, she wrote, and forty or fifty coffins are put in the same hole."
+    source: 2
+    quote: "Large pits are dug in the Negroes burying ground [Washington Square], and forty or fifty [soldiers’] coffins are put in the same hole."
+  - says: "That April John Adams came and spent an hour among the graves."
+    source: 2
+    quote: "John Adams, a member of the Continental Congress meeting in Independence Hall, visited the Square in April 1777. He spent an hour “in congregation of the dead.”"
+  - says: "He had been told perhaps two thousand soldiers lay here."
+    source: 2
+    quote: "The graves of the soldiers, perhaps two thousand he had been told, “are enough to make the heart of stone melt away.”"
+  - says: "They are enough, he wrote, to make the heart of stone melt away."
+    source: 2
+    quote: "“are enough to make the heart of stone melt away.”"
+  - says: "In seventeen ninety-three, more than thirteen hundred victims of yellow fever filled the space that was left."
+    source: 1
+    quote: "Victims of the yellow fever epidemic, numbering more than 1300, filled the remaining space in the burial ground in 1793."
+  - says: "The memorial honours one soldier."
+    source: 1
+    quote: "This memorial contains the remains of an unknown Revolutionary War soldier"
+  - says: "The rest of them are under the grass."
+    source: 4
+    quote: "a tomb that represents thousands of fallen Revolutionary War soldiers whose bodies were laid to rest in the square."
 sources:
   - title: "Washington Square"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/learn/historyculture/places-washingtonsquare.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Invisible Architects, Stop 7: Washington Square"
     publisher: "National Park Service, Independence National Historical Park"
     url: https://www.nps.gov/inde/learn/historyculture/invisible-architects-stop-7.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "The Tomb of the Unknown Revolutionary War Soldier: Graffiti and the Legacy of the Founding Fathers"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/000/tomb-of-the-unknown-revolutionary-war-soldier.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Preservation on the Memorial in Washington Square"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/000/preservation-on-the-memorial-in-washington-square.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain

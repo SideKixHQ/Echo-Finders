@@ -41,14 +41,45 @@ script: |
   Symbolically.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Look at the small granite post here, with a bronze compass on top."
+    source: 1
+    quote: "This four-foot-high shaft of pink granite stands on the north and south meridian of the District of Columbia."
+  - says: "Point for the measurement of distances from Washington on highways of the United States."
+    source: 1
+    quote: "Point for the Measurement of Distances from Washington on Highways of the United States"
+  - says: "On the seventh of July, 1919, an army motor convoy set out from this spot to cross the continent."
+    source: 1
+    quote: "On July 7, 1919, the first transcontinental military motor convoy, destined from San Francisco, California, started from this spot."
+  - says: "It was the first transcontinental military motor convoy, and it went by the Lincoln Highway."
+    source: 1
+    quote: "On July 7, 1919, the first transcontinental military motor convoy, destined from San Francisco, California, started from this spot."
+  - says: "It was the first transcontinental military motor convoy, and it went by the Lincoln Highway."
+    source: 1
+    quote: "Starting Point of First Transcontinental Motor Convoy Over the Lincoln Highway VII JVL MCMXIX"
+  - says: "The east face says so."
+    source: 1
+    quote: "East side Starting Point of First Transcontinental Motor Convoy Over the Lincoln Highway"
+  - says: "Congress authorized a permanent marker the following year, and this one was presented to the city on the fourth of June, 1923."
+    source: 1
+    quote: "On June 5, 1920, Congress authorized the erection of a permanent monument here, and the Lee Highway Association presented it as a gift to the city on June 4, 1923."
+  - says: "So the starting line arrived four years after the start."
+    source: 1
+    quote: "On July 7, 1919, the first transcontinental military motor convoy, destined from San Francisco, California, started from this spot. On June 5, 1920, Congress authorized the erection of a permanent monument here, and the Lee Highway Association presented it as a gift to the city on June 4, 1923."
+  - says: "The Park Service chooses its words carefully."
+    source: 1
+    quote: "It is symbolically the official starting point for measurement of highway distances from Washington, DC."
+  - says: "It calls this, symbolically, the official starting point for highway distances from Washington."
+    source: 1
+    quote: "It is symbolically the official starting point for measurement of highway distances from Washington, DC."
 sources:
   - title: "Zero Milestone"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/000/zero-milestone.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Dedication, zero milestone, 6/4/23 (National Photo Company Collection)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/2016847638/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain

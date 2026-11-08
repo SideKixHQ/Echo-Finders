@@ -19,13 +19,13 @@ teaser: "Most churches begin with a cornerstone. This one began with a forge."
 script: |
   Look across Sixth Street at the church, and at the ground it stands on.
 
-  This is Mother Bethel. The National Park Service counts this lot among the oldest pieces of land in the country continuously owned by African Americans.
+  This is Mother Bethel. The National Park Service counts this lot among the oldest plots of land continuously owned by an African American.
 
   The first church on it was not built here. It was dragged here.
 
   In the seventeen nineties, Black members of Saint George's Methodist Church walked out together, rather than sit in a separate gallery made for them. A preacher named Richard Allen bought this lot so they could have a church of their own. What he had to put on it was an old blacksmith shop.
 
-  In seventeen ninety-nine an engraver named William Birch published a view of Walnut Street, with the city jail in the background. In the foreground, a team of horses is pulling a wooden shed down the street. Historians believe it is this church, on its way here.
+  In seventeen ninety-nine the engravers Birch and Son published a view of Walnut Street, with the city jail in the background. In the foreground, a team of horses is pulling a wooden shed down the street. Historians believe it is this church, on its way here.
 
   The first meeting house was dedicated in July, seventeen ninety-four. The congregation has rebuilt on this same ground more than once since, so the building in front of you is not the shed.
 
@@ -37,6 +37,55 @@ pronunciations:
     say: BETH-ul
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Look across Sixth Street at the church, and at the ground it stands on."
+    source: 1
+    quote: "a plot of land purchased by Reverend Richard Allen for the purposes of establishing Bethel AME Church at Sixth and Lombard Streets."
+  - says: "This is Mother Bethel."
+    source: 3
+    quote: "Known as \"Mother Bethel,\" the church was founded in the 1790s by free Blacks who broke away from Saint George's Methodist Episcopal Church, where they faced racial discrimination."
+  - says: "The National Park Service counts this lot among the oldest plots of land continuously owned by an African American."
+    source: 1
+    quote: "It sits on one of the oldest plots of land continuosly owned by an African American person."
+  - says: "The first church on it was not built here."
+    source: 1
+    quote: "A team of horses pulling a wooden shed, an old blacksmith shop, and believed to be the first edifice for the Bethel African Methodist Episcopal Church, is featured prominently in the foreground of the engraving."
+  - says: "In the seventeen nineties, Black members of Saint George's Methodist Church walked out together, rather than sit in a separate gallery made for them."
+    source: 2
+    quote: "after Black people left St. George's Methodist Church en masse after refusing to sit in a separate newly created area for Black parishioners on the balcony."
+  - says: "A preacher named Richard Allen bought this lot so they could have a church of their own."
+    source: 1
+    quote: "a plot of land purchased by Reverend Richard Allen for the purposes of establishing Bethel AME Church"
+  - says: "What he had to put on it was an old blacksmith shop."
+    source: 1
+    quote: "A team of horses pulling a wooden shed, an old blacksmith shop"
+  - says: "In seventeen ninety-nine the engravers Birch and Son published a view of Walnut Street, with the city jail in the background."
+    source: 1
+    quote: "This is a 1799 engraving titled for the Goal, or Walnut Street Jail, at Sixth and Walnut Streets designed by Philadelphia architect Richard Smith , in the background of the image."
+  - says: "the engravers Birch and Son"
+    source: 1
+    quote: "Drawn & Engraved by W. Birch & Son"
+  - says: "In the foreground, a team of horses is pulling a wooden shed down the street."
+    source: 1
+    quote: "A team of horses pulling a wooden shed, an old blacksmith shop, and believed to be the first edifice for the Bethel African Methodist Episcopal Church, is featured prominently in the foreground of the engraving."
+  - says: "Historians believe it is this church, on its way here."
+    source: 1
+    quote: "The group was headed to the building’s new location"
+  - says: "The first meeting house was dedicated in July, seventeen ninety-four."
+    source: 3
+    quote: "The church's first building was dedicated in July 1794."
+  - says: "The congregation has rebuilt on this same ground more than once since"
+    source: 3
+    quote: "The larger building shown here was built in 1805, and stood until 1841 when a third building was erected on the same site."
+  - says: "This one began with a forge."
+    source: 1
+    quote: "A team of horses pulling a wooden shed, an old blacksmith shop"
+  - says: "Allen is known to have used a blacksmith's anvil as his pulpit."
+    source: 1
+    quote: "Just as Allen was known to have utilized an anvil, the tool of a blacksmith, as a pulpit when he established the church"
+  - says: "The church still keeps the anvil as its emblem. It stands for self-determination."
+    source: 1
+    quote: "today the church continues to utilize the anvil as a representative icon of self-determination."
 sources:
   - title: "Goal, in Walnut Street Philadelphia by W. Birch & Son, 1799"
     publisher: "National Park Service, Independence National Historical Park"

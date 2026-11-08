@@ -20,38 +20,74 @@ script: |
   Stand on the steps of the Jefferson Memorial and look at the cherry trees along the
   shore.
 
-  In November 1938, this ground was being cleared for the building behind you. Some of the
-  cherry trees were in the way.
+  In November 1938, this ground was about to be cleared for the building behind you. Some
+  of the cherry trees were in the way.
 
-  So more than a hundred and fifty women came down to the Tidal Basin, in limousines, in
-  cabs and in buses. They were leaders of the city's women's clubs and parent teacher
-  associations. Dozens of them chained and padlocked themselves to the trees. Others took
-  the shovels out of the workmen's hands and filled the holes back in. Where trees had
-  already been dug up, women sat on them.
+  On the seventeenth, more than eighty women marched to the White House with a petition to
+  save the trees. When the President's secretary came out to take it, they chanted a poem
+  at him. Trees, by Joyce Kilmer.
 
-  A park police sergeant, Carl Gillespie, walked over to find out what was going on.
+  The next morning, about a hundred and fifty women came down to the Tidal Basin. They
+  wrestled the shovels away from the workmen. They chained themselves to the trees. And
+  they chained a park police sergeant to the trees as well.
 
-  He found himself chained to a tree.
+  The work stopped, for a while.
 
-  The paper said he took it good-naturedly.
-
-  The director of the city's parks stopped the work until the White House decided what to
-  do.
+  President Roosevelt called it a flimflam game, and threatened to have the women
+  transplanted along with the trees. The women withdrew, and construction began the next
+  month.
 
   The memorial was built. But part of the compromise was more cherry trees, planted along
   this side of the basin, to frame it.
 
-  The sergeant got his chain off. The trees got this shore.
+  The women lost the memorial. The trees got this shore.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Stand on the steps of the Jefferson Memorial and look at the cherry trees along the shore."
+    source: 2
+    quote: "A compromise was reached wherein more trees would be planted along the south side of the Tidal Basin to frame the memorial."
+  - says: "In November 1938, this ground was about to be cleared for the building behind you."
+    source: 1
+    quote: "\"The Cherry Tree Rebellion\" of November 1938 was the final battle in a prolonged campaign to prevent construction of the Thomas Jefferson Memorial in Washington, DC."
+  - says: "Some of the cherry trees were in the way."
+    source: 1
+    quote: "when a National Park Service press conference on November 10, 1938, suggested \"approximately 600 trees of various kinds\" would be \" involved\" in order to build the memorial, opposition once more roared to life."
+  - says: "On the seventeenth, more than eighty women marched to the White House with a petition to save the trees."
+    source: 1
+    quote: "Following the meeting, more than 80 women marched to the White House to present FDR with a petition to save the trees."
+  - says: "When the President's secretary came out to take it, they chanted a poem at him."
+    source: 1
+    quote: "However, when presidential secretary, Marvin McIntyre, emerged instead to accept the petition, he was treated to a chorus of angry women chanting the Joyce Kilmer poem \"Trees.\""
+  - says: "Trees, by Joyce Kilmer."
+    source: 1
+    quote: "he was treated to a chorus of angry women chanting the Joyce Kilmer poem \"Trees.\""
+  - says: "The next morning, about a hundred and fifty women came down to the Tidal Basin."
+    source: 1
+    quote: "The following morning, Friday, November 18, a small army of approximately 150 women arrived at the future construction site."
+  - says: "They wrestled the shovels away from the workmen. They chained themselves to the trees. And they chained a park police sergeant to the trees as well."
+    source: 1
+    quote: "The protesters quickly disrupted the efforts of the Civilian Conservation Corps workers attempting to transplant the trees, by wrestling away shovels and symbolically chaining themselves - and a U.S. Park Police sergeant - to the trees, leading to a temporary suspension of work."
+  - says: "The work stopped, for a while."
+    source: 1
+    quote: "leading to a temporary suspension of work."
+  - says: "President Roosevelt called it a flimflam game, and threatened to have the women transplanted along with the trees."
+    source: 1
+    quote: "Meanwhile, President Roosevelt at his morning press conference suggested \" It is one of the most interesting cases ... of a flimflam game being started by the owner of a paper\" and threatened to have the women transplanted along with the trees."
+  - says: "The women withdrew, and construction began the next month."
+    source: 1
+    quote: "Upon learning of the president's refusal to back down, the women retreated. However, that evening \"Cissy\" Patterson would blast FDR with a front-page editorial taking the president to task for fibbing about the number of trees that would have to be destroyed. Construction would begin the following month with President Roosevelt attending a simple ceremony."
+  - says: "But part of the compromise was more cherry trees, planted along this side of the basin, to frame it."
+    source: 2
+    quote: "A compromise was reached wherein more trees would be planted along the south side of the Tidal Basin to frame the memorial."
 sources:
+  - title: "The Cherry Tree Rebellion"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/the-cherry-tree-rebellion.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain
   - title: "History of the Cherry Trees"
     publisher: "National Park Service"
     url: https://www.nps.gov/subjects/cherryblossom/history-of-the-cherry-trees.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
-  - title: "Women Lock Selves To Cherry Trees. The Washington Times, 18 November 1938, page 6 (Chronicling America)"
-    publisher: "Library of Congress"
-    url: https://www.loc.gov/resource/sn84026749/1938-11-18/ed-1/?sp=6
-    retrievedAt: "2026-10-14"
-    rights: fair-use-facts

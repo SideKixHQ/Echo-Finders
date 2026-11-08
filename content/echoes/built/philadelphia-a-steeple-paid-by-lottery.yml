@@ -21,7 +21,7 @@ script: |
 
   It went up in the seventeen fifties, and from then on it could be picked out from all over the colonial city. A Philadelphia guidebook from nineteen twenty calls it the highest point in town at the time.
 
-  Steeples are expensive. A congregation usually builds one slowly, out of collections and bequests and patience.
+  Steeples are expensive. A congregation usually builds a steeple slowly, out of collections and bequests and patience.
 
   This one was paid for with a lottery.
 
@@ -30,6 +30,28 @@ script: |
   So when you look up at the landmark of colonial Philadelphia, you are looking at a great many losing tickets.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Look up at the steeple of Christ Church."
+    source: 1
+    quote: "See the historic church or just stroll the grounds and gaze upward at the steeple."
+  - says: "It went up in the seventeen fifties, and from then on it could be picked out from all over the colonial city."
+    source: 1
+    quote: "The steeple - added in 1754 and funded through the sale of lottery tickets printed in Benjamin Franklin's printing office - was easily recognizable from all of colonial Philadelphia."
+  - says: "A Philadelphia guidebook from nineteen twenty calls it the highest point in town at the time."
+    source: 2
+    quote: "then the highest point in Philadelphia"
+  - says: "This one was paid for with a lottery."
+    source: 1
+    quote: "funded through the sale of lottery tickets"
+  - says: "The tickets themselves came off the press in Benjamin Franklin's printing office."
+    source: 1
+    quote: "lottery tickets printed in Benjamin Franklin's printing office"
+  - says: "The same guidebook says Franklin sat on the committee that built the spire."
+    source: 2
+    quote: "Franklin was a member <«f the committee which built the spire"
+  - says: "you are looking at a great many losing tickets"
+    source: 1
+    quote: "was easily recognizable from all of colonial Philadelphia"
 sources:
   - title: "Christ Church"
     publisher: "National Park Service"

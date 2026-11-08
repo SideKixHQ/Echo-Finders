@@ -17,7 +17,7 @@ quality: 0.75
 tags: [philadelphia, philadelphia-core, society-hill, medicine, benjamin-franklin, theatre]
 teaser: "The country's first hospital, and part of the bill was paid by the Prince of Denmark."
 script: |
-  Look through the iron fence on Pine Street. On the lawn there is a small statue of William Penn, and behind him a long building of brick and marble, with an eight-sided cupola on each wing.
+  Look through the iron fence on Pine Street. On the lawn there is a statue of William Penn, and behind him a long building of brick and marble, with an eight-sided cupola on each wing.
 
   This is Pennsylvania Hospital. Benjamin Franklin and a doctor named Thomas Bond founded it in seventeen fifty-one, and it is the oldest hospital in the United States. The east wing went up in the seventeen fifties. Franklin wrote the words for its cornerstone. Piously founded, they say, for the relief of the sick and miserable.
 
@@ -25,7 +25,7 @@ script: |
 
   Then, in seventeen fifty-nine, a company of actors put on Hamlet for the hospital's benefit.
 
-  That was thought quite shocking. Plays did not have the approval of the best people, and the managers had to decide whether they could take money earned on a stage.
+  That was thought quite shocking. Plays did not have the approval of the best people, and someone had to decide whether the hospital could take money earned on a stage.
 
   They decided the hospital's charter gave them no right to refuse it.
 
@@ -37,6 +37,58 @@ pronunciations:
     say: JORJ WIT-feeld
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Look through the iron fence on Pine Street."
+    source: 2
+    quote: "It faces on Pine Street, between Eighth and Ninth."
+  - says: "On the lawn there is a statue of William Penn"
+    source: 1
+    quote: "SOUTH FACADE, CENTRAL BLOCK, WITH STATUE OF WILLIAM PENN IN FOREGROUND"
+  - says: "a long building of brick and marble, with an eight-sided cupola on each wing"
+    source: 1
+    quote: "gable and hipped roofs with octagonal cupolas on wings"
+  - says: "This is Pennsylvania Hospital."
+    source: 1
+    quote: "Founded in 1751 by Benjamin Franklin and Dr. Thomas Bond, Pennsylvania Hospital is the earliest established hospital in the United States"
+  - says: "Benjamin Franklin and a doctor named Thomas Bond founded it in seventeen fifty-one, and it is the oldest hospital in the United States."
+    source: 1
+    quote: "Founded in 1751 by Benjamin Franklin and Dr. Thomas Bond, Pennsylvania Hospital is the earliest established hospital in the United States"
+  - says: "The east wing went up in the seventeen fifties."
+    source: 1
+    quote: "East wing 1755-57"
+  - says: "Franklin wrote the words for its cornerstone."
+    source: 2
+    quote: "as may still be read on the cornerstone, the inscription having been com- posed by Franklin"
+  - says: "Piously founded, they say, for the relief of the sick and miserable."
+    source: 2
+    quote: "the hospital was ‘‘piously founded for the relief of the sick and the miserable.’’"
+  - says: "Private citizens gave."
+    source: 2
+    quote: "Individuals freely gave money for it"
+  - says: "This one took it from nearly everyone."
+    source: 2
+    quote: "Individuals freely gave money for it; Whitefield sent a considerable sum; the British Parliament turned over to it some funds unclaimed by a land company."
+  - says: "The preacher George Whitefield sent a large sum."
+    source: 2
+    quote: "Whitefield sent a considerable sum"
+  - says: "Then, in seventeen fifty-nine, a company of actors put on Hamlet for the hospital's benefit."
+    source: 2
+    quote: "In 1759 some players gave ‘‘Hamlet’’ for the benefit of the hospital; which was deemed quite shocking"
+  - says: "Plays did not have the approval of the best people"
+    source: 2
+    quote: "plays not having received the ap- proval of the ‘‘best people’’"
+  - says: "They decided the hospital's charter gave them no right to refuse it."
+    source: 2
+    quote: "it was decided that the hospital charter gave no right to refuse money"
+  - says: "Hamlet brought in forty-seven pounds, two shillings and sixpence."
+    source: 2
+    quote: "the condemned ‘‘Hamlet’’ enriched the treasury by precisely forty-seven pounds, two shill- ings and sixpence."
+  - says: "The first hospital in the country."
+    source: 1
+    quote: "Pennsylvania Hospital is the earliest established hospital in the United States"
+  - says: "And a small part of its bills was paid by the Prince of Denmark."
+    source: 2
+    quote: "In 1759 some players gave ‘‘Hamlet’’ for the benefit of the hospital"
 sources:
   - title: "Pennsylvania Hospital, Eighth and Ninth, Pine and Spruce Streets, Philadelphia (HABS PA-1123), architectural data form and photo captions"
     publisher: "Historic American Buildings Survey, Library of Congress"

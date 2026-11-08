@@ -30,6 +30,34 @@ script: |
   Everything above that is exactly as much as anyone knows.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Benjamin Franklin's house stood here."
+    source: 2
+    quote: "Benjamin Franklin's home sat in this courtyard"
+  - says: "It was large for the city, and unusual, set back from Market Street in a garden court."
+    source: 1
+    quote: "The Franklin family house was large for the 18th-century city, and unusual because it sat within a garden court, away from Market Street."
+  - says: "Franklin died here in seventeen ninety."
+    source: 1
+    quote: "Franklin died here in 1790; the house was torn down 22 years later."
+  - says: "Twenty-two years later his heirs tore it down."
+    source: 1
+    quote: "By 1812, the land had so increased in value that the Bache heirs decided to tear down the house"
+  - says: "The land had become too valuable to keep one house on it."
+    source: 1
+    quote: "By 1812, the land had so increased in value that the Bache heirs decided to tear down the house and rebuild Franklin Court with rental row houses."
+  - says: "When the Park Service investigated the court, archaeologists found the outline of the house and its cellar."
+    source: 1
+    quote: "After the National Park Service began a closer investigation of the courtyard, archeologists located the outline and basement features of the Franklin's house."
+  - says: "But nobody could find enough evidence of what the house had actually looked like."
+    source: 1
+    quote: "As evidence of the building’s original design was incomplete, they decided to create a representational design."
+  - says: "They built a frame to the measurements recorded in Franklin's own property insurance, and left it empty."
+    source: 1
+    quote: "designed space frames following dimensions recorded in Benjamin Franklin’s property insurance"
+  - says: "You can see what is left of his cellar kitchen."
+    source: 1
+    quote: "Viewing portals provide visitors with a glimpse of the original cellar kitchen to the Franklin mansion."
 sources:
   - title: "Franklin Court"
     publisher: "National Park Service, Independence National Historical Park"

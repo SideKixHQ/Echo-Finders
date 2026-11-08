@@ -43,14 +43,48 @@ script: |
   But that is thirty-eight.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "There are nineteen of them, out on patrol."
+    source: 2
+    quote: "The 19 sculptures of servicemen by Frank Gaylord depict a patrol in the Korean War."
+  - says: "When the sculptor, Frank Gaylord, first showed his clay models, there were thirty-eight soldiers."
+    source: 1
+    quote: "A sculptor, Frank Gaylord, had also been selected, and by late 1990 had already produced clay maquettes of thirty-eight soldiers."
+  - says: "They were in the middle of a mission, under fire, in every kind of pose."
+    source: 1
+    quote: "these soldiers were seen to be on a mission, encountering enemy fire, and they were portrayed in a great variety of poses."
+  - says: "The Commission of Fine Arts liked the photographs, and worried the figures would become too realistic."
+    source: 1
+    quote: "They were impressed by the photography of the clay maquettes that Mr. Gaylord presented but concerned that they would become too realistic as they were developed."
+  - says: "What was finally built was nineteen."
+    source: 2
+    quote: "The 19 sculptures of servicemen by Frank Gaylord depict a patrol in the Korean War."
+  - says: "The wall beside you carries the faces of the people behind the troops."
+    source: 1
+    quote: "At the south edge of the clearing is a polished granite memorial wall etched with hundreds of faces of those who supported the troops: the Airmen, Nurses, Chaplains, Artillerymen, Sailors, Tank Drivers, Supply Personnel, and others."
+  - says: "More than two thousand four hundred photographs went into it."
+    source: 2
+    quote: "More than 2,400 photographs of Korean War service members draw attention to the unit of effort by all who served."
+  - says: "The architects wrote that as visitors walked down beside it, the etched faces would mix with the reflections of the soldiers."
+    source: 1
+    quote: "As the visitor descends, the etched faces of the support forces mix with those of the ground troops, who are now reflected in the polished granite."
+  - says: "Nineteen out there."
+    source: 2
+    quote: "The 19 sculptures of servicemen by Frank Gaylord depict a patrol in the Korean War."
+  - says: "Nineteen in here."
+    source: 1
+    quote: "As the visitor descends, the etched faces of the support forces mix with those of the ground troops, who are now reflected in the polished granite."
+  - says: "But that is thirty-eight."
+    source: 1
+    quote: "A sculptor, Frank Gaylord, had also been selected, and by late 1990 had already produced clay maquettes of thirty-eight soldiers."
 sources:
   - title: "Design of the Korean War Veterans Memorial"
     publisher: "National Park Service"
     url: https://www.nps.gov/kowa/learn/historyculture/design.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Features of the Korean War Veterans Memorial"
     publisher: "National Park Service"
     url: https://www.nps.gov/kowa/learn/historyculture/features.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain

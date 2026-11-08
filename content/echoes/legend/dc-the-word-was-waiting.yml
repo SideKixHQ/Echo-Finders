@@ -45,29 +45,51 @@ script: |
   the lobby.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The story goes that President Ulysses Grant coined a word here."
+    source: 1
+    quote: "where President Ulysses S. Grant reportedly coined the term “lobbyist,”"
+  - says: "Even the Library of Congress has passed it on, with the word reportedly."
+    source: 1
+    quote: "where President Ulysses S. Grant reportedly coined the term “lobbyist,”"
+  - says: "In July eighteen forty-nine, a newspaper in Portsmouth, New Hampshire, complained about a score of indefatigable lobbyists who kept up an untiring attack on lawmakers."
+    source: 2
+    quote: "a score of indefatigable lobbyists, who kept up an untiring attack upon the members"
+  - says: "In July eighteen forty-nine, a newspaper in Portsmouth, New Hampshire, complained about a score of indefatigable lobbyists who kept up an untiring attack on lawmakers."
+    source: 2
+    quote: "As to the sentiment in Portsmouth in ‘reference to the matter"
+  - says: "Three years later, a Washington paper printed a speech warning that English lobbyists should be spurned from your halls."
+    source: 3
+    quote: "English lobbyists should be spurned from your Halls."
+  - says: "In the summer of eighteen forty-nine, Ulysses Grant was a young army officer who had been married for a year."
+    source: 4
+    quote: "As Grant was away fighting in the Mexican American war for nearly four years. In 1848 however, Grant returned to St. Louis and married Julia"
+  - says: "The Willard of Grant's day was replaced at the turn of the century, by the building in front of you."
+    source: 5
+    quote: "The NEW WILLARD HOTEL was designed at the turn of this century by Henry J. Hardenbergh, one of the country's most noted hotel architects. It replaced the earlier \"Willard Hotel\" which had been built c.1.833."
 sources:
   - title: "The Willard Hotel is Subject of Display in American Treasures Exhibition"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/prn-06-072/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "New Hampshire Gazette and Republican Union, July 31, 1849, image 2"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn84023141/1849-07-31/ed-1/?sp=2
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "The Republic (Washington), July 12, 1852, image 2"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn82014434/1852-07-12/ed-1/?sp=2
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Ulysses S. Grant National Historic Site"
     publisher: "National Park Service"
     url: https://www.nps.gov/ulsg/index.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Willard Hotel, 1401-1409 Pennsylvania Avenue Northwest, HABS DC-293, written historical and descriptive data"
     publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/dc0300/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc0300/dc0300/data/dc0300data.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain

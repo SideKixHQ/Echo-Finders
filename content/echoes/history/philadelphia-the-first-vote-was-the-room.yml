@@ -15,7 +15,7 @@ certainty: documented
 minAge: 0
 quality: 0.75
 tags: [philadelphia, philadelphia-core, old-city, continental-congress, revolution, guilds]
-teaser: "The first question the Continental Congress voted on was where to sit."
+teaser: "Before it chose a president, the Continental Congress chose a room."
 script: |
   Look down the court from Chestnut Street. At the end of it is a small brick hall with a cupola on top. It was built by a guild of carpenters, and the guild still owns it.
 
@@ -23,13 +23,13 @@ script: |
 
   They walked here first, to take a look.
 
-  John Adams wrote that the general cry was that this was a good room. One delegate, James Duane, argued that the State House ought to be preferred. It was a public building, he said, and this was a private one, and the Speaker deserved the courtesy. The question was called anyway. A great majority chose the carpenters.
+  John Adams wrote that the general cry was that this was a good room. One delegate, James Duane, argued that if the State House was just as convenient, it ought to be preferred. It was a public building, he said, and this was a private one, and the Speaker deserved the courtesy. The question was called anyway. A great majority chose the carpenters.
 
-  That evening Galloway wrote to a friend that Congress had met at Carpenters' Hall, notwithstanding the offer of a much more proper place. He suspected it had all been settled privately, out of doors, before anyone walked over.
+  That same day Galloway wrote to William Franklin that Congress had met at Carpenters' Hall, notwithstanding the offer of a much more proper place. He suspected it had all been settled privately, out of doors, before anyone walked over.
 
   Only after that vote did they choose a president.
 
-  The first question the Continental Congress ever decided was where to sit. It chose the builders.
+  The Continental Congress began by deciding where to sit. It chose the builders.
 pronunciations:
   - written: Galloway
     say: GAL-oh-way
@@ -37,29 +37,75 @@ pronunciations:
     say: doo-AYN
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Look down the court from Chestnut Street."
+    source: 1
+    quote: "The building sits at the end of an alley visible from Chestnut Street, between 3rd and 4th Streets."
+  - says: "It was built by a guild of carpenters, and the guild still owns it."
+    source: 1
+    quote: "This building is still owned and operated by the Carpenters' Company"
+  - says: "It was built by a guild of carpenters, and the guild still owns it."
+    source: 1
+    quote: "Carpenters' Hall, home to the Carpenters' Company trade guild"
+  - says: "On the fifth of September seventeen seventy-four, the delegates to the first Continental Congress gathered in the city with a choice to make."
+    source: 4
+    quote: "Septr. 5. Monday. At Ten, The Delegates all met at the City Tavern"
+  - says: "The Speaker of the Pennsylvania Assembly, Joseph Galloway, had offered them the State House."
+    source: 4
+    quote: "the Pennsylvania State House, which was offered by Speaker Joseph Galloway"
+  - says: "The carpenters had offered their hall."
+    source: 2
+    quote: "the Carpenters the use of their Hall"
+  - says: "They walked here first, to take a look."
+    source: 2
+    quote: "It was agreed to take a View of each. We proceeded to the Carpenter’s hall."
+  - says: "John Adams wrote that the general cry was that this was a good room."
+    source: 4
+    quote: "The General Cry was, that this was a good Room"
+  - says: "One delegate, James Duane, argued that if the State House was just as convenient, it ought to be preferred."
+    source: 2
+    quote: "I observed that if the State house was equally convenient it ought to be preferred"
+  - says: "It was a public building, he said, and this was a private one, and the Speaker deserved the courtesy."
+    source: 2
+    quote: "And besides as it was tenderd by the Speaker it seemed to be a piece of respect which was due to him"
+  - says: "A great majority chose the carpenters."
+    source: 2
+    quote: "a great Majority fixed upon the Carpenters hall."
+  - says: "That same day Galloway wrote to William Franklin that Congress had met at Carpenters' Hall, notwithstanding the offer of a much more proper place."
+    source: 3
+    quote: "The Congress this Day met at Carpenter’s Hall, notwithstanding the Offer of the Assembly-Room a much more proper Place."
+  - says: "He suspected it had all been settled privately, out of doors, before anyone walked over."
+    source: 3
+    quote: "Both of these Measures, it seems, were privately settled by an Interest made out of Doors."
+  - says: "Only after that vote did they choose a president."
+    source: 2
+    quote: "The Names of the Members were then called over; After which Mr Lynch proposed that we shoud elect a President or Chairman"
+  - says: "The Continental Congress began by deciding where to sit."
+    source: 4
+    quote: "and the Question was put, whether We were satisfyed with this Room, and it passed in the Affirmative."
 sources:
   - title: "Carpenters' Hall"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/000/carpenters-hall.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Letters of Delegates to Congress: James Duane's Notes of Debates, September 5, 1774"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/76002592_01_0006/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/service/ll/lldelegates/76/00/25/92/_0/1_/00/06/76002592_01_0006/76002592_01_0006.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Letters of Delegates to Congress: Joseph Galloway to William Franklin, September 5, 1774"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/76002592_01_0007/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/service/ll/lldelegates/76/00/25/92/_0/1_/00/07/76002592_01_0007/76002592_01_0007.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Letters of Delegates to Congress: John Adams' Diary, August 29, 1774 to September 5, 1774"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/76002592_01_0001/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/service/ll/lldelegates/76/00/25/92/_0/1_/00/01/76002592_01_0001/76002592_01_0001.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Carpenters' Company Hall, 320 Chestnut Street and Carpenters' Court (HABS PA-1398)"
     publisher: "Library of Congress, Historic American Buildings Survey"
     url: https://www.loc.gov/item/pa1131/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain

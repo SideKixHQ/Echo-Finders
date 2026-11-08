@@ -36,18 +36,60 @@ script: |
 
   By midnight on the night of the ball, there were more than four thousand guests.
 
-  The building is an art museum now. Whitman saw both of its nights in the same rooms, a
-  little over two years apart.
+  The building is an art museum now. Whitman saw both of its lives, in the same rooms.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "On the sixth of March 1865, guests climbed to that portico for Abraham Lincoln's second inaugural ball."
+    source: 1
+    quote: "Upon arrival, guests made their way up the great stairway to the entrance on the south portico (porch)."
+  - says: "On the sixth of March 1865"
+    source: 1
+    quote: "On the evening of March 6, 1865, the Patent Office building was the site of President Abraham Lincoln’s second inaugural ball."
+  - says: "It was the first time a government building had been used for one."
+    source: 1
+    quote: "This was the first time that a government building was used for such an occasion."
+  - says: "The great hall upstairs was the largest empty room in the city for dancing."
+    source: 1
+    quote: "The large empty hall on the top floor of Patent Office Building’s nearly finished north wing was the largest vacant space available for dancing in the city at the time."
+  - says: "One of the clerks in the building went up to look while it was being made ready."
+    source: 1
+    quote: "The great American poet Walt Whitman worked as a clerk in the Bureau of Indian Affairs in the Patent Office Building. He was eager to inspect the halls being prepared for the inaugural festivities and recorded the following passage:"
+  - says: "His name was Walt Whitman, and he wrote down what he saw."
+    source: 1
+    quote: "The great American poet Walt Whitman worked as a clerk in the Bureau of Indian Affairs in the Patent Office Building. He was eager to inspect the halls being prepared for the inaugural festivities and recorded the following passage:"
+  - says: "Earlier in the war, this building had been a military hospital."
+    source: 1
+    quote: "During the Civil War, it became a military hospital and barracks."
+  - says: "Whitman remembered these same rooms filled with the worst wounded of the war, brought in from Second Bull Run, Antietam and Fredericksburg."
+    source: 1
+    quote: "I could not help thinking, what a different scene they presented to my view since, fill’d with a crowded mass of the worst wounded of the war, brought in from second Bull Run, Antietam, and Fredericksburgh."
+  - says: "Tonight, he wrote, beautiful women, perfumes, the violins' sweetness, the polka and the waltz."
+    source: 1
+    quote: "To-night, beautiful women, perfumes, the violins’ sweetness, the polka and the waltz;"
+  - says: "Then, the amputation, the blue face, the groan, the glassy eye of the dying."
+    source: 1
+    quote: "then the amputation, the blue face, the groan, the glassy eye of the dying, the clotted rag, the odor of wounds and blood, and many a mother’s son amid strangers, passing away untended."
+  - says: "And many a mother's son amid strangers, passing away untended."
+    source: 1
+    quote: "and many a mother’s son amid strangers, passing away untended."
+  - says: "By midnight on the night of the ball, there were more than four thousand guests."
+    source: 1
+    quote: "By midnight there were more than 4,000 guests."
+  - says: "The building is an art museum now."
+    source: 1
+    quote: "The building houses two Smithsonian Institution museums: the Smithsonian American Art Museum and the National Portrait Gallery."
+  - says: "Whitman saw both of its lives, in the same rooms."
+    source: 1
+    quote: "I have been up to look at the dance and supper rooms, for the inauguration ball, at the Patent office; and I could not help thinking, what a different scene they presented to my view since, fill’d with a crowded mass of the worst wounded of the war"
 sources:
   - title: "\"The Honor of Your Company is Requested\": Lincoln's Second Inaugural Ball at the Patent Office (Teaching with Historic Places)"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/-the-honor-of-your-company-is-requested-lincoln-s-second-inaugural-ball-at-the-patent-office.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-07"
     rights: public-domain
   - title: "Patent Office Building, Bounded by 7th, 9th, F, and G Streets Northwest (HABS DC-130)"
     publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/dc0194/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc0100/dc0194/data/dc0194data.pdf
+    retrievedAt: "2026-11-07"
     rights: public-domain
