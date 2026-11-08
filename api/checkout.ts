@@ -27,6 +27,9 @@ function inlinePrice(amountMinor: number, name: string): Record<string, string |
   };
 }
 
+/** The label on every Echo Finders payment in the shared Stripe account. */
+const APP = "echo-finders";
+
 function oneOff(plan: "city-pass" | "week-pass", city: City, customer: string | undefined, origin: string) {
   return {
     mode: "payment",
@@ -34,6 +37,11 @@ function oneOff(plan: "city-pass" | "week-pass", city: City, customer: string | 
     "metadata[city]": city.id,
     "payment_intent_data[metadata][plan]": plan,
     "payment_intent_data[metadata][city]": city.id,
+    // Which app took the money. The Stripe account is shared with SideKix (2026-11-08), so
+    // anything that has to find Echo Finders' own payments or subscriptions, such as the
+    // All-Access renewal reminder, finds them by this label.
+    "payment_intent_data[metadata][app]": APP,
+    "metadata[app]": APP,
     ...(customer ? { customer } : { customer_creation: "always" }),
     ...taxAndAddress(customer),
     success_url: `${origin}/?checkout=success&session_id={CHECKOUT_SESSION_ID}`,
@@ -102,6 +110,8 @@ export async function POST(request: Request): Promise<Response> {
         "line_items[0][quantity]": 1,
         "metadata[plan]": "all-access",
         "subscription_data[metadata][plan]": "all-access",
+        "subscription_data[metadata][app]": APP,
+        "metadata[app]": APP,
         ...(customer ? { customer } : {}),
         ...taxAndAddress(customer),
         success_url: `${origin}/?checkout=success&session_id={CHECKOUT_SESSION_ID}`,
