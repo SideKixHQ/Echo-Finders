@@ -3553,7 +3553,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 75,
+    "durationS": 73,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3561,7 +3561,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Face the north door of the red castle.\n\nInside, close to this entrance, there is a small crypt with a sarcophagus in it. The man\nin it paid for all of this.\n\nHis name was James Smithson. He was an English scientist, born outside marriage to a\nduke, and never given a title. When he died, he left his entire fortune to the United\nStates, to found an institution in Washington under his name.\n\nHe had never been here. He never visited the country in his life.\n\nHe died in Genoa in 1829 and was buried on a hill there, in a small British cemetery.\nBy the turn of the century a stone quarry was eating the hill away.\n\nSo in 1904 one of the Smithsonian's regents, Alexander Graham Bell, went to Genoa at his\nown expense and brought the body back across the Atlantic.\n\nA Washington paper put it neatly a few years later. That voyage was the first time\nSmithson ever had personal contact with these shores.\n\nHe gave everything to a country he had never seen.\n\nHe got here seventy-five years after he died.\n",
+    "script": "Face the north door of the red castle.\n\nInside, there is a small crypt with a sarcophagus in it. The man buried there paid for\nall of this.\n\nHis name was James Smithson. He was an English scientist, the natural son of a duke, and\nhe was never given a title. When he died, he left his entire fortune to the United\nStates, to found an institution in Washington under his name.\n\nHe had never been here. He never visited the country in his life.\n\nHe died in Genoa in 1829 and was buried on a hill there, in a small British cemetery.\nBy the turn of the century a stone quarry was eating the hill away.\n\nSo in 1904 one of the Smithsonian's regents, Alexander Graham Bell, went to Genoa at his\nown expense and brought the body back across the Atlantic.\n\nA Washington paper put it neatly a few years later. That voyage was the first time\nSmithson ever had personal contact with these shores.\n\nHe gave everything to a country he had never seen.\n\nHe got here seventy-five years after he died.\n",
     "teaser": "Face the north door of the red castle.",
     "pronunciations": [
       {
@@ -3580,7 +3580,7 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/dc-a-country-he-never-saw",
-        "durationS": 75
+        "durationS": 73
       }
     ]
   },
@@ -3626,7 +3626,7 @@ export const LIBRARY: readonly Echo[] = [
   },
   {
     "id": "dc-no-props-no-serpents",
-    "title": "No Props, No Serpents",
+    "title": "Never Seen One",
     "summary": "The Jackson statue was cast by a man who had never seen an equestrian statue. Look at what holds it up.",
     "point": {
       "at": {
@@ -3638,7 +3638,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 73,
+    "durationS": 61,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3646,7 +3646,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look under the horse.\n\nAndrew Jackson's horse is rearing. Its front hooves are in the air. Fifteen tons of\nbronze, balanced on the back legs.\n\nThe man who made it, Clark Mills, was a former ornamental plasterer from South Carolina.\nHe had never seen Jackson. He had never seen an equestrian statue either.\n\nHe built a furnace near this park and cast the whole thing himself, in ten pieces. The\nhorse alone took six castings before the final one was done.\n\nTo learn how a horse rears, he bought a retired racehorse named Olympus. He taught it to\nstand on its hind legs, so that he could watch how it was done.\n\nThe statue was unveiled on the eighth of January, eighteen fifty-three. It was the first\nequestrian statue cast in the United States. Stephen Douglas gave the speech, and he\ncompared it with the famous horses of Europe. Peter the Great's horse leans on a bronze\nserpent. Wellington's has its hind legs and tail riveted to the pedestal.\n\nOf this one, Douglas said: no props. No serpents.\n\nLook under the horse again.\n",
+    "script": "Look under the horse.\n\nAndrew Jackson's horse is rearing. Its front hooves are in the air. Fifteen tons of\nbronze, balanced on the back legs.\n\nThe man who made it, Clark Mills, was a self-taught sculptor. He had never seen an\nequestrian statue.\n\nHe built a studio and a furnace near this park, and cast the whole thing in ten pieces,\nfour for the horse and six for Jackson. The horse alone took six castings before the\nfinal one was done, in December 1852.\n\nThe statue was unveiled on the eighth of January, eighteen fifty-three, the thirty-eighth\nanniversary of the Battle of New Orleans. A cheering crowd of fifteen thousand followed\nMills along Pennsylvania Avenue to the ceremony.\n\nIt was the first equestrian statue cast in the United States, made by a man who had\nnever seen one.\n\nLook under the horse again.\n",
     "teaser": "Look under the horse.",
     "tags": [
       "washington",
@@ -3659,7 +3659,7 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/dc-no-props-no-serpents",
-        "durationS": 73
+        "durationS": 61
       }
     ]
   },
@@ -3685,7 +3685,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the building behind the fountain. Upstairs, on the second floor, is a room of old\nbooks arranged in a slightly strange order.\n\nIn August 1814 the British burned the Capitol, and with it the library of Congress. About\nthree thousand books.\n\nThomas Jefferson, retired at Monticello, owned the largest private collection of books in\nthe country. He offered to sell it, at whatever price Congress chose.\n\nThere were sharp debates. Some members complained that too many of the books were in\nforeign languages, or about subjects that had nothing to do with Congress. Jefferson had\nalready answered that. There was, he wrote, no subject to which a member of Congress may\nnot have occasion to refer.\n\nCongress bought them. Six thousand four hundred and eighty-seven volumes, for twenty-three\nthousand nine hundred and fifty dollars.\n\nThe price was not worked out by title, or by rarity. It was based on measurements of the\nsize of the books.\n\nOn Christmas Eve 1851, another fire in the Capitol destroyed nearly two thirds of them.\nThe room upstairs is the library rebuilt the way Jefferson arranged it, around some two\nthousand survivors.\n\nThe largest library in the world grew out of one man's bookshelves, priced by size.\n",
+    "script": "Look at the building behind the fountain. Upstairs, on the second floor, is a room of old\nbooks arranged in a slightly strange order.\n\nIn 1814 the British burned the Capitol, and with it the library of Congress. About three\nthousand books.\n\nThomas Jefferson, at Monticello, owned the largest private collection of books in the\ncountry. He offered to sell it, at whatever price Congress chose.\n\nThere were sharp debates. Some members complained that too many of the books were in\nforeign languages, or about subjects that had nothing to do with Congress. Jefferson had\nalready answered that. There was, he wrote, no subject to which a member of Congress may\nnot have occasion to refer.\n\nCongress bought them. Six thousand four hundred and eighty-seven volumes, for twenty-three\nthousand nine hundred and fifty dollars.\n\nThe price was not worked out by title, or by rarity. It was based on measurements of the\nsize of the books.\n\nOn Christmas Eve 1851, another fire in the Capitol destroyed nearly two thirds of them.\nThe room upstairs is the library rebuilt the way Jefferson arranged it, around some two\nthousand survivors.\n\nThe largest library in the world grew out of one man's bookshelves, priced by size.\n",
     "teaser": "Upstairs in this building is a room of old books in a slightly strange order.",
     "tags": [
       "washington",
@@ -3725,7 +3725,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up, to the band of painted figures that runs right round the rotunda, below the\ndome.\n\nIt is one long procession through American history, a little over eight feet high and\nabout three hundred feet around.\n\nIt was designed by Constantino Brumidi, a painter from Rome who had come to America as an\nexile, and who spent more than twenty years decorating this building. He began the band\nin 1877. He was in his seventies, working on a scaffold high above this floor.\n\nIn the autumn of 1879 he very nearly fell from it. A newspaper reported that he never\ncompletely recovered from the shock. He died the following February. He had painted six\nscenes and part of a seventh.\n\nAnother Italian, Filippo Costaggini, carried on with Brumidi's designs for eight more\nyears. When he finished, there was still a gap. About thirty feet of the circle was empty.\n\nIt stayed empty for more than sixty years.\n\nIn 1952 and 1953 a New York artist, Allyn Cox, filled it with the Civil War, the Spanish\nAmerican War and the birth of aviation. The papers announced that the frieze was complete.\n\nIt had taken seventy-six years to go once around the room. The man who started it saw six\nscenes of it.\n",
+    "script": "Look up, to the band of painted figures that runs right round the rotunda, below the\ndome.\n\nIt is one long procession through American history, a little over eight feet high and\nabout three hundred feet around.\n\nIt was designed by Constantino Brumidi, an Italian-born painter who spent twenty-five\nyears decorating this building. He began the band\nin 1877. He was in his seventies, working on a scaffold high above this floor.\n\nIn the autumn of 1879 he very nearly fell from it. A newspaper reported that he never\ncompletely recovered from the shock. He died the following February. He had painted six\nscenes and part of a seventh.\n\nAnother Italian, Filippo Costaggini, carried on with Brumidi's designs for eight more\nyears. When he finished, there was still a gap. About thirty feet of the circle was empty.\n\nIt stayed empty for more than sixty years.\n\nIn 1952 and 1953 a New York artist, Allyn Cox, filled it with the Civil War, the Spanish\nAmerican War and the birth of aviation. The papers announced that the frieze was complete.\n\nIt had taken seventy-six years to go once around the room. The man who started it saw six\nscenes of it.\n",
     "teaser": "Look up to the band of painted figures that runs right round the rotunda.",
     "pronunciations": [
       {
@@ -3814,7 +3814,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the columns on the F Street front. On the sixth of March 1865, guests climbed\nto that portico for Abraham Lincoln's second inaugural ball.\n\nIt was the first time a government building had been used for one. The great hall\nupstairs was the largest empty room in the city for dancing.\n\nOne of the clerks in the building went up to look while it was being made ready. His name\nwas Walt Whitman, and he wrote down what he saw.\n\nEarlier in the war, this building had been a military hospital. Whitman remembered these\nsame rooms filled with the worst wounded of the war, brought in from Second Bull Run,\nAntietam and Fredericksburg.\n\nTonight, he wrote, beautiful women, perfumes, the violins' sweetness, the polka and the\nwaltz. Then, the amputation, the blue face, the groan, the glassy eye of the dying. And\nmany a mother's son amid strangers, passing away untended.\n\nBy midnight on the night of the ball, there were more than four thousand guests.\n\nThe building is an art museum now. Whitman saw both of its nights in the same rooms, a\nlittle over two years apart.\n",
+    "script": "Look up at the columns on the F Street front. On the sixth of March 1865, guests climbed\nto that portico for Abraham Lincoln's second inaugural ball.\n\nIt was the first time a government building had been used for one. The great hall\nupstairs was the largest empty room in the city for dancing.\n\nOne of the clerks in the building went up to look while it was being made ready. His name\nwas Walt Whitman, and he wrote down what he saw.\n\nEarlier in the war, this building had been a military hospital. Whitman remembered these\nsame rooms filled with the worst wounded of the war, brought in from Second Bull Run,\nAntietam and Fredericksburg.\n\nTonight, he wrote, beautiful women, perfumes, the violins' sweetness, the polka and the\nwaltz. Then, the amputation, the blue face, the groan, the glassy eye of the dying. And\nmany a mother's son amid strangers, passing away untended.\n\nBy midnight on the night of the ball, there were more than four thousand guests.\n\nThe building is an art museum now. Whitman saw both of its lives, in the same rooms.\n",
     "teaser": "Look up at the columns on the F Street front.",
     "tags": [
       "washington",
@@ -3886,7 +3886,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 77,
+    "durationS": 80,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3894,7 +3894,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the old brick walls of the Octagon from the Eighteenth Street side.\n\nIn April eighteen ninety-seven, a Washington newspaper said this had long been the most\nnoted of the haunted houses in the city.\n\nThis is a legend. Nothing in it has ever been proven. It is only what people said.\n\nAnd people said a great deal. Doors and windows that opened when they were shut, and shut\nwhen they were opened. A woman's shriek. The clank of sabres. Heavy footsteps. Groans and\ncries from the passage by the back stairs. And an officer who died in an upper room,\nwhose blood, the story went, could still be heard dripping from the mantelpiece.\n\nAt the time, the house stood neglected. A caretaker lived in it, rent free and unpaid,\nwith his son. They slept in the room where Dolley Madison had once held her receptions.\n\nThe reporter asked him about the ghosts. He laughed.\n\nIf there are any ghosts here, he said, I have never heard or seen them. The only ghosts\nthat haunt this house exist in people's imagination.\n\nEveryone else told stories about this house. He slept in it.\n",
+    "script": "Look at the old brick walls of the Octagon from the Eighteenth Street side.\n\nIn April eighteen ninety-seven, a Washington newspaper said this had long been the most\nnoted of the haunted houses in the city.\n\nThis is a legend. Nothing in it has ever been proven. It is just what people said.\n\nAnd people said a great deal. Doors and windows that opened when they were shut, and shut\nwhen they were opened. A woman's shriek. The clank of sabres. Heavy footsteps. Groans and\ncries from the passage by the back stairs. And an officer who died in an upper room,\nwhose blood, the story went, could still be heard dripping from the mantelpiece.\n\nAt the time, the house stood neglected. A caretaker lived in it, rent free and unpaid,\nwith his son. They slept in the room where Dolley Madison had once held her receptions.\n\nThe reporter asked him about the ghosts. He laughed.\n\nIf there are any ghosts here, he said, I have never heard or seen them. The only ghosts\nthat haunt this house exist in people's imagination.\n\nEveryone else told stories about this house. He slept in it.\n",
     "teaser": "Look at the old brick walls of the Octagon from the Eighteenth Street side.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven. The only source is an 1897 newspaper account of what people claimed; no supernatural claim is established, and the caretaker's denial is quoted from the same article.",
     "voice": "wC1005J19tvhoqqC2hkf",
@@ -3909,7 +3909,7 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/dc-the-caretaker-heard-nothing",
-        "durationS": 77
+        "durationS": 80
       }
     ]
   },
@@ -3935,7 +3935,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand on the steps of the Jefferson Memorial and look at the cherry trees along the\nshore.\n\nIn November 1938, this ground was being cleared for the building behind you. Some of the\ncherry trees were in the way.\n\nSo more than a hundred and fifty women came down to the Tidal Basin, in limousines, in\ncabs and in buses. They were leaders of the city's women's clubs and parent teacher\nassociations. Dozens of them chained and padlocked themselves to the trees. Others took\nthe shovels out of the workmen's hands and filled the holes back in. Where trees had\nalready been dug up, women sat on them.\n\nA park police sergeant, Carl Gillespie, walked over to find out what was going on.\n\nHe found himself chained to a tree.\n\nThe paper said he took it good-naturedly.\n\nThe director of the city's parks stopped the work until the White House decided what to\ndo.\n\nThe memorial was built. But part of the compromise was more cherry trees, planted along\nthis side of the basin, to frame it.\n\nThe sergeant got his chain off. The trees got this shore.\n",
+    "script": "Stand on the steps of the Jefferson Memorial and look at the cherry trees along the\nshore.\n\nIn November 1938, this ground was about to be cleared for the building behind you. Some\nof the cherry trees were in the way.\n\nOn the seventeenth, more than eighty women marched to the White House with a petition to\nsave the trees. When the President's secretary came out to take it, they chanted a poem\nat him. Trees, by Joyce Kilmer.\n\nThe next morning, about a hundred and fifty women came down to the Tidal Basin. They\nwrestled the shovels away from the workmen. They chained themselves to the trees. And\nthey chained a park police sergeant to the trees as well.\n\nThe work stopped, for a while.\n\nPresident Roosevelt called it a flimflam game, and threatened to have the women\ntransplanted along with the trees. The women withdrew, and construction began the next\nmonth.\n\nThe memorial was built. But part of the compromise was more cherry trees, planted along\nthis side of the basin, to frame it.\n\nThe women lost the memorial. The trees got this shore.\n",
     "teaser": "Stand on the steps of the Jefferson Memorial and look at the cherry trees along the shore.",
     "tags": [
       "washington",
@@ -4016,7 +4016,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand where the two walls meet, and look into the black stone.\n\nYou will see yourself, standing among the names.\n\nThe design was entry number one thousand and twenty-six, in a blind competition with\nmore than fourteen hundred entries. It began as a student project. Maya Lin was studying\narchitecture at Yale when she proposed it, in 1981.\n\nNo figures. No sculpture. Two long walls of polished black granite, angled so that one\nlines up with the Washington Monument and the other with the Lincoln Memorial.\n\nNow look at the top of the panel at the very center, on the east side. The names begin\nthere, with the earliest dead, and they run in the order people died, east along the\nwall to its far end. Then they pick up again at the far west end, and run back toward\nyou.\n\nSo the last names on the wall finish right here, beside the first.\n\nThe Park Service puts it plainly. The first are with the last.\n\nAnd in the stone, in the middle of all of them, is you.\n",
+    "script": "Stand where the two walls meet, and look into the black stone.\n\nYou will see yourself, standing among the names.\n\nThe design was chosen in a competition with more than fourteen hundred entries. In May\n1981 it was announced that the winner was Maya Lin, a twenty-one-year-old architecture\nstudent at Yale.\n\nNo figures. No sculpture. Two long walls of polished black granite, angled so that one\nlines up with the Washington Monument and the other with the Lincoln Memorial.\n\nNow look at the top of the panel at the very center, on the east side. The names begin\nthere, with the earliest dead, and they run in the order people died, east along the\nwall to its far end. Then they pick up again at the far west end, and run back toward\nyou.\n\nSo the last names on the wall finish right here, beside the first.\n\nThe Park Service puts it plainly. The first are with the last.\n\nAnd in the stone, in the middle of all of them, is you.\n",
     "teaser": "Stand where the two walls meet, and look into the black stone.",
     "tags": [
       "washington",
@@ -4088,7 +4088,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 78,
+    "durationS": 80,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4096,7 +4096,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Find the old brick house on the corner, tucked in beside the big Senate office building.\n\nIt is one of the oldest houses on Capitol Hill. But it is not quite the house that was\nfirst built here.\n\nThe first one went up in 1800. On the twenty-fourth of August 1814, the British army\nmarched into Washington.\n\nAccording to a claim the owner later filed with Congress, a group of Commodore Joshua\nBarney's men, retreating from the battle at Bladensburg, got into this house and shot at\nthe British troops coming up the street.\n\nThey killed several men. They also killed the horse of the British commander, General\nRobert Ross.\n\nRoss's troops set the house on fire, and it was destroyed.\n\nThe house you are looking at was rebuilt on the same spot by 1820.\n\nA little over a century later, the National Woman's Party bought it, and campaigned for\nequal rights from here, just behind the Capitol.\n\nIn the 1960s, when the Senate office building next door was going up, the house was\nthreatened again. The Woman's Party lobbied to have it protected, and won.\n\nThis time, nobody had to fire a shot.\n",
+    "script": "Find the old brick house on the corner, tucked in beside the big Senate office building.\n\nIt is one of the oldest houses in Washington. But it is not quite the house that was\nfirst built here.\n\nThe first one went up in 1800. On the twenty-fourth of August 1814, the British army\ninvaded Washington.\n\nAccording to a claim the owner later filed with Congress, a group of Commodore Joshua\nBarney's men, retreating from the battle at Bladensburg, got into this house and shot at\nthe British troops coming up the street.\n\nThey killed several men. They also killed the horse of the British commander, General\nRoss.\n\nRoss's troops set the house on fire, and it was destroyed.\n\nThe house you are looking at was rebuilt on the same spot by 1820.\n\nA little over a century later, the National Woman's Party bought it, and campaigned for\nequal rights from here, just behind the Capitol.\n\nIn the 1960s, when the Senate office building next door was going up, the house was\nthreatened again. The Woman's Party lobbied to have it protected, and won.\n\nThis time, nobody had to fire a shot.\n",
     "teaser": "Find the old brick house on the corner, beside the big Senate office building.",
     "tags": [
       "washington",
@@ -4110,14 +4110,14 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/dc-the-house-that-fired-back",
-        "durationS": 78
+        "durationS": 80
       }
     ]
   },
   {
     "id": "dc-the-ladies-waiting-room",
     "title": "The Ladies' Waiting Room",
-    "summary": "President Garfield was shot in a railroad depot that stood here in 1881; part of the National Gallery of Art now covers the site.",
+    "summary": "President Garfield was shot in a railroad depot here in 1881; part of the National Gallery of Art now covers the site.",
     "point": {
       "at": {
         "lat": 38.89218,
@@ -4128,7 +4128,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 77,
+    "durationS": 80,
     "minAge": 12,
     "quality": 0.75,
     "visibility": "position-only",
@@ -4136,7 +4136,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand on Constitution Avenue at Sixth Street and look at the gallery in front of you.\n\nA railroad station stood here once, the Baltimore and Potomac depot. This avenue was\ncalled B Street then.\n\nAt about half past nine on the morning of the second of July, 1881, President James\nGarfield came here to catch a train north. He was walking through the ladies' waiting\nroom, arm in arm with his Secretary of State, when a man named Charles Guiteau shot him\ntwice.\n\nThe doctors probed for one of the bullets and could not find it. The bulletins they put\nout were hopeful. For eighty days the president declined, from spreading infection, and\nhe died on the nineteenth of September.\n\nHe had kept a diary all his life. The entry for the first of July, the day before the\nshooting, was the last he ever wrote.\n\nThe station is gone. In 1939, as this gallery was going up, a Washington columnist noted\nthat part of the enormous building would cover the site, and that very few visitors\nwould ever remember.\n\nSomewhere under the building in front of you, there was a waiting room.\n",
+    "script": "Stand on Constitution Avenue at Sixth Street and look at the gallery in front of you.\n\nA railroad station stood here once, the Baltimore and Potomac depot. This avenue was\ncalled B Street then.\n\nAt about half past nine on the morning of the second of July, 1881, President James\nGarfield came here to catch a train north. He was walking through the ladies' waiting\nroom, arm in arm with his Secretary of State, when a man named Charles Guiteau shot him\ntwice.\n\nThe doctors probed for one of the bullets and could not find it. The country waited on\nevery bulletin from his doctors. He lived for eighty days. Poor medical treatment led to\nhis death on the nineteenth of September.\n\nHe was a faithful diarist. The entry for the first of July, the day before the shooting,\nwas the last he ever wrote.\n\nThe station is gone. In 1939, as this gallery was going up, a Washington columnist noted\nthat part of the enormous building would cover the site, and that very few visitors\nwould ever remember.\n\nSomewhere under the building in front of you, there was a waiting room.\n",
     "teaser": "Stand on Constitution Avenue at Sixth Street and look at the gallery in front of you.",
     "pronunciations": [
       {
@@ -4156,7 +4156,7 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/dc-the-ladies-waiting-room",
-        "durationS": 77
+        "durationS": 80
       }
     ]
   },
@@ -4174,7 +4174,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 88,
+    "durationS": 90,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4182,7 +4182,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up past the dome, to the bronze figure standing on the very top.\n\nShe is called Freedom. She is nineteen and a half feet tall, and she weighs about fifteen\nthousand pounds.\n\nBefore she was bronze, she was plaster. The sculptor, Thomas Crawford, made the full-size\nmodel in his studio in Rome, and died before it left. It crossed the Atlantic in six\ncrates. Here, an Italian craftsman put the pieces together so cleverly that nobody could\nsee the joints.\n\nThen it had to come apart again, to be cast. By one account, the craftsman refused to\nseparate it unless he was paid a great deal more. Only he knew where the bolts were\nhidden.\n\nThe casting had gone to Clark Mills, whose foundry stood out on the Bladensburg road.\nMills owned a man named Philip Reid.\n\nReid rigged a pulley to an iron eye in the statue's head. He strained the rope gently,\nuntil the seams showed themselves one by one. Then he found the bolts, scraped away the\nplaster, and took them out. The model came apart, ready for the foundry.\n\nIn December 1863 the last section, her head and shoulders, was raised up there to a\nsalute of thirty-five guns.\n\nThe statue is called Freedom. The man who freed her from the plaster was not free.\n",
+    "script": "Look up past the dome, to the bronze figure standing on the very top.\n\nShe is called Freedom. She is nineteen and a half feet tall, and she weighs about fifteen\nthousand pounds.\n\nBefore she was bronze, she was plaster. The sculptor, Thomas Crawford, made the plaster\nmodel in his studio in Rome, and died before it left. It crossed the Atlantic in six\ncrates. Here, an Italian craftsman put the pieces together so cleverly that nobody could\nsee the joints.\n\nThen it had to come apart again, to be cast. By one account, the craftsman refused to\nseparate it unless he was paid a great deal more. Only he knew where the bolts were\nhidden.\n\nThe casting had gone to Clark Mills, whose foundry stood out on the Bladensburg road.\nMills owned a man named Philip Reid.\n\nReid rigged a pulley to an iron eye in the statue's head. He strained the rope gently,\nuntil the seams showed themselves one by one. Then he found the bolts, scraped away the\nplaster, and took them out. The model came apart, ready for the foundry.\n\nIn December 1863 the last section, her head and shoulders, was raised up there to a\nsalute of thirty-five guns.\n\nThe statue is called Freedom. The man who freed her from the plaster was not free.\n",
     "teaser": "Look up past the dome, to the bronze figure on the very top.",
     "pronunciations": [
       {
@@ -4202,7 +4202,7 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/dc-the-man-who-found-the-bolts",
-        "durationS": 88
+        "durationS": 90
       }
     ]
   },
@@ -4273,7 +4273,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand on Twelfth Street and look at the two buildings facing each other.\n\nOn one side, a federal building sweeps round in a great half circle. On the other stands\nthe Old Post Office, and its tower.\n\nThe curve was supposed to be a whole circle. When the federal buildings here went up in\nthe early 1930s, a matching curve was meant to be built across the street, on the site of\nthe Old Post Office. The tower was in the way.\n\nThe old building had fallen out of fashion, and locals thought it unappealing. It faced\ndemolition in 1934, and was spared only because the Depression had swallowed the money.\n\nIn 1970 Congress approved tearing it down again. By the mid seventies there were fires and\npiles of trash inside, and metal sheets over the glass roof of the atrium.\n\nThen Nancy Hanks, who chaired the National Endowment for the Arts, testified. Old\nbuildings, she told Congress, are like old friends. People picketed. The building was\nsaved, and in 1973 it went on the National Register of Historic Places.\n\nFor forty-two years, park rangers took visitors to the top of the tower. That ended on the\nfirst of October 2025, while the building's owners decide what happens next.\n\nEither way, the circle across the street still stops halfway.\n",
+    "script": "Stand on Twelfth Street and look at the two buildings facing each other.\n\nOn one side, a federal building sweeps round in a great half circle. On the other stands\nthe Old Post Office, and its tower.\n\nThe curve was supposed to be a whole circle, modelled on the Place Vendome in Paris. When\nthe federal buildings here went up, around 1930, a matching curve was meant to be built\nacross the street, on the site of the Old Post Office. The tower was in the way.\n\nThe planners simply expected the old building to be demolished. Some walls of the new\nbuilding next to it were faced in plain red brick instead of limestone, because nobody\nthought they would be seen for long.\n\nThe Great Depression saved it the first time. As late as the 1960s, a study still called\nfor razing everything except the three hundred and fifteen foot clock tower.\n\nThis time a preservation campaign called Don't Tear It Down stepped in. The building\nbecame a landmark, and the plan to finish the circle was stopped.\n\nOn the Old Post Office side, only a short stretch of the curve was ever built.\n\nSo the circle across the street still stops halfway.\n",
     "teaser": "Stand on Twelfth Street and look at the two buildings facing each other.",
     "tags": [
       "washington",
@@ -4305,7 +4305,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 57,
+    "durationS": 63,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4313,7 +4313,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the tower of St. John's Church, across H Street from the park.\n\nBehind the louvres, there is a bell. It has hung there since eighteen twenty-two.\n\nThis is the church people call the Church of the Presidents. Benjamin Latrobe designed\nit, James Madison was given a pew, and every president from Madison to Lincoln came here\nto worship.\n\nThe bell carries a maker's mark. It reads, Revere, Boston, eighteen twenty-two.\n\nNot Paul Revere. By then the family foundry had passed to his son, Joseph, and this is\nhis bell.\n\nA federal survey of the church says what it is for. It rings the hours of worship. And it is\nsounded on occasions of national interest.\n\nThe father is remembered for one night of raising the alarm. The son made something that\nhas been doing it here for two hundred years.\n",
+    "script": "Look up at the tower of St. John's Church, across H Street from the park.\n\nUp in that tower, there is a bell. It went up when the tower was added, between eighteen\ntwenty and eighteen twenty-two.\n\nThis is the church people call the Church of the Presidents. Benjamin Latrobe designed\nit. James Madison was given a pew, and he and the next five presidents worshipped here\nregularly.\n\nThe bell carries a maker's mark. It reads, Revere, Boston, eighteen twenty-two.\n\nNot Paul Revere. By then the family foundry had passed to his son, Joseph, and this is\nhis bell.\n\nA federal survey of the church says what it is for. It rings the hours of worship. And it is\nsounded on occasions of national interest.\n\nThe father is remembered for one night of raising the alarm. The son made something that\nhas been doing it here for two hundred years.\n",
     "teaser": "Look up at the tower of St. John's Church.",
     "pronunciations": [
       {
@@ -4332,7 +4332,7 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/dc-the-other-revere",
-        "durationS": 57
+        "durationS": 63
       }
     ]
   },
@@ -4350,7 +4350,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 72,
+    "durationS": 69,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4358,7 +4358,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look down at the landing, just below the top flight of steps.\n\nOne stone here is engraved. It marks where Martin Luther King Junior stood on the\ntwenty-eighth of August, 1963.\n\nIt was late afternoon. More than a quarter of a million people were out there. Many of\nthem had come a long way by bus and by train, and they had already sat through a long\nlist of speakers.\n\nKing had a prepared text. A promissory note. A bad check, come back marked insufficient\nfunds.\n\nHe was near the end of it, telling people to go home and keep up the fight, when a voice\ncalled out from just off to the side. It was his friend, the gospel singer Mahalia\nJackson.\n\nTell them about the dream, Martin.\n\nWhat came next was not on the page. He improvised it.\n\nStand on the landing and look out the way he did, down the length of the water toward\nthe Washington Monument.\n\nThe part of that speech everyone can still recite is the part he had not planned to say.\n",
+    "script": "Look down at the landing, just below the top flight of steps.\n\nOne stone here marks a place. It marks where Martin Luther King Junior stood on the\ntwenty-eighth of August, 1963.\n\nIt was late afternoon. More than a quarter of a million people were out there. Many of\nthem had come a long way by bus and by train, and they had already sat through a long\nlist of speakers.\n\nKing had a prepared text. A promissory note. A bad check, come back marked insufficient\nfunds.\n\nHe was near the end of it, telling people to go home and keep up the fight, when a voice\ncalled out from just off to the side. It was his good friend, Mahalia Jackson.\n\nTell them about the dream, Martin.\n\nWhat came next was not on the page. He improvised it.\n\nStand on the landing and look out the way he did, down the length of the water toward\nthe Washington Monument.\n\nThe part of that speech everyone can still recite is the part he had not planned to say.\n",
     "teaser": "Look down at the landing, just below the top flight of steps.",
     "tags": [
       "washington",
@@ -4372,7 +4372,7 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/dc-the-part-he-didnt-write",
-        "durationS": 72
+        "durationS": 69
       }
     ]
   },
@@ -4390,7 +4390,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 73,
+    "durationS": 78,
     "minAge": 12,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4398,7 +4398,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Find the small bronze plaque on the fence in front of Blair House.\n\nIn the autumn of nineteen fifty, the White House was being rebuilt, and President Truman\nwas living here, across the street. On the afternoon of the first of November, he was\nresting upstairs.\n\nTwo Puerto Rican nationalists came to this house armed. One of them later admitted they\nhad expected to shoot their way in. The White House police on duty shot back.\n\nThree officers were hit. One of them, Private Leslie Coffelt, forty years old, was shot\ntwice. As he lay dying beside his post, he fired, and killed one of the attackers. The\nother was wounded and taken. The attempt on the President failed.\n\nThe plaque was dedicated in May nineteen fifty-two, and Truman came to unveil it. He said\nit commemorated an event about which he did not like to think.\n\nSix years later, he walked past here with a writer from the Evening Star. He stopped and\nread the plaque. Then he pointed.\n\nHe was in a little sentry house, Truman said, that stood right there.\n",
+    "script": "Find the small bronze plaque on the fence in front of Blair House.\n\nIn the autumn of nineteen fifty, the White House was being rebuilt, and President Truman\nwas living here, across the street. On the afternoon of the first of November, he was\nresting upstairs.\n\nTwo Puerto Rican nationalists came to this house armed. One of them was later quoted as\nadmitting they had expected to shoot their way in. The White House police on duty shot\nback.\n\nPrivate Leslie Coffelt was forty years old. As he lay dying beside his post from two\nbullet wounds, he fired, and killed one of the attackers. Two other officers were hit,\nand recovered. The other attacker was wounded and taken. They never got through the door.\n\nThe plaque was dedicated in May nineteen fifty-two, by Truman himself. He said it\ncommemorated an event about which he did not like to think.\n\nSix years later, he walked past here with a writer from the Evening Star. He stopped and\nread the plaque. Then he pointed.\n\nHe was in a little sentry house, Truman said, that stood right there.\n",
     "teaser": "Find the small bronze plaque on the fence in front of Blair House.",
     "tags": [
       "washington",
@@ -4411,7 +4411,7 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/dc-the-plaque-on-the-fence",
-        "durationS": 73
+        "durationS": 78
       }
     ]
   },
@@ -4469,7 +4469,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 72,
+    "durationS": 79,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4477,7 +4477,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Find the two old cherry trees by the large bronze plaque here.\n\nThey were planted on the twenty-seventh of March, 1912, by the First Lady, Helen Taft,\nand Viscountess Chinda, the wife of the Japanese ambassador. Only a few people watched.\nThe whole cherry blossom festival grew out of that small ceremony.\n\nBut these were not the first trees Tokyo sent.\n\nTwo years earlier, two thousand cherry trees arrived in Washington, a gift from the city\nof Tokyo. Inspectors from the Department of Agriculture found them full of insects and\nnematodes, and diseased. To protect American growers, they had to go. The President gave\nhis consent, and in January 1910 the whole gift was burned.\n\nA local paper reported that about a dozen of the buggiest trees were kept back for\nstudy, with an entomologist standing guard, armed with a butterfly net and a cyanide\nbottle.\n\nTokyo's answer was to try again. Three thousand and twenty trees this time, grafted\nfrom a famous collection along a riverbank outside the city.\n\nThe first gift was burned.\n\nThese two trees are the reply.\n",
+    "script": "Find the two old cherry trees by the large bronze plaque here.\n\nThey were planted on the twenty-seventh of March, 1912, by the First Lady, Helen Taft,\nand Viscountess Chinda, the wife of the Japanese ambassador. Only a few people watched.\nThe whole cherry blossom festival grew out of that small ceremony.\n\nBut these were not the first trees Tokyo sent.\n\nTwo years earlier, two thousand cherry trees had arrived in Washington, a first gift from\nJapan. Inspectors from the Department of Agriculture found them full of insects and\nnematodes, and diseased. To protect American growers, they had to go. The President gave\nhis consent, and in January 1910 the whole gift was burned.\n\nA local paper reported that about a dozen of the buggiest trees were kept back for\nstudy, with an entomologist standing guard, armed with a butterfly net and a cyanide\nbottle.\n\nTokyo's answer was to try again. Three thousand and twenty trees this time, grafted\nfrom a famous collection along a riverbank outside the city.\n\nThe first gift was burned.\n\nThese two trees are the reply.\n",
     "teaser": "Find the two old cherry trees by the large bronze plaque here.",
     "tags": [
       "washington",
@@ -4491,7 +4491,7 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/dc-the-trees-that-came-second",
-        "durationS": 72
+        "durationS": 79
       }
     ]
   },
@@ -4550,7 +4550,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 57,
+    "durationS": 62,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4558,7 +4558,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the brick wing that runs back from Decatur House, along H Street.\n\nIt has been described three different ways.\n\nIn nineteen-oh-three, a newspaper story about this house put it plainly. On H Street, it\nsaid, is a long addition, formerly slave quarters.\n\nA federal survey of the building chose a gentler phrase. Grouped around the garden, it\nsays, are the original servants' quarters, stables and carriage houses.\n\nIn twenty eleven, historians began a new study of the wing. The report that came out of\nit, filed with that same federal survey, calls it the slave wing.\n\nNow turn around and look at the park. The National Park Service keeps a list of what that\nground has been used for. A race track. A graveyard. A slave market.\n\nThree names for one wing. The newspaper had it right the first time.\n",
+    "script": "Look at the brick wing that runs back from Decatur House, along H Street.\n\nIt has been described in different ways.\n\nIn nineteen-oh-three, a newspaper story about this house put it plainly. On H Street, it\nsaid, is a long, low addition, formerly slave quarters.\n\nA federal survey of the building chose a gentler phrase. Grouped around the garden, it\nsays, are the original servants' quarters, stables and carriage houses.\n\nIn twenty eleven, historians began a new study of the wing. The report that came out of\nit, filed with that same federal survey, calls it the slave and service wing.\n\nNow turn around and look at the park. The National Park Service keeps a list of what that\nground has been used for. A race track. A graveyard. A slave market.\n\nDifferent names, the same wing. The newspaper had it right the first time.\n",
     "teaser": "Look at the brick wing that runs back from Decatur House along H Street.",
     "tags": [
       "washington",
@@ -4571,7 +4571,7 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/dc-three-names-for-one-wing",
-        "durationS": 57
+        "durationS": 62
       }
     ]
   },
@@ -4669,7 +4669,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 72,
+    "durationS": 75,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4677,7 +4677,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the curved front of the Octagon, the round bay with the door at its base.\n\nAbove that door is a round room. In the winter of eighteen fifteen, it was the\nPresident's study.\n\nOn the twenty-fourth of August, eighteen fourteen, British troops had burned the White\nHouse, the Capitol and the Treasury. James and Dolley Madison fled the city. When they came\nback a few weeks later, they needed somewhere to live.\n\nThis house had come through. Its resident was the French minister, and the British most\nlikely left it alone because of the French flag he flew. The Madisons moved in on the\neighth of September.\n\nThe war went on. On the eighth of January, Andrew Jackson won the Battle of New Orleans.\n\nThen, on the seventeenth of February, in the round room above the door, Madison signed the\nTreaty of Ghent, and the War of eighteen twelve was over.\n\nNew Orleans had been fought six weeks before the war ended. And the war that burned the\nPresident out of his house ended in somebody else's.\n",
+    "script": "Look at the curved front of the Octagon, the round bay with the door at its base.\n\nAbove that door is a round room. In the winter of eighteen fifteen, it was the\nPresident's study.\n\nOn the twenty-fourth of August, eighteen fourteen, British troops had burned the White\nHouse, the Capitol and other public buildings. James and Dolley Madison fled the city.\nWhen they came back a few weeks later, they needed somewhere to live.\n\nThis house had come through. Its resident was the French minister, and the British most\nlikely left it alone because of the French flag he flew. The Madisons moved in on the\neighth of September.\n\nThe war went on. On the eighth of January, Andrew Jackson's troops fought the Battle of\nNew Orleans.\n\nThen, on the seventeenth of February, in the round room above the door, the Treaty of\nGhent was signed, and the War of eighteen twelve was over.\n\nNew Orleans had been fought before the war was over. And the war that burned the\nPresident out of his house ended in somebody else's.\n",
     "teaser": "Look at the curved front of the Octagon, and the window above the door.",
     "pronunciations": [
       {
@@ -4696,7 +4696,7 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/dc-where-the-war-ended",
-        "durationS": 72
+        "durationS": 75
       }
     ]
   },
@@ -4714,7 +4714,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 82,
+    "durationS": 83,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4722,7 +4722,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look through the fence at the north front of the White House.\n\nThere is a story about that white paint, and people have been telling it for a long time.\nIn nineteen forty-nine, a Washington newspaper printed it as plain fact.\n\nIt goes like this. On the twenty-fourth of August, eighteen fourteen, British troops set\nthe house on fire. The walls were left stained with smoke. So the house was painted white\nto hide the stains, and that is how it got its name.\n\nIt is a good story. The dates do not fit it.\n\nThe National Park Service says the house was carrying the name White House from around\neighteen eleven. That is three years before the fire.\n\nThe fire itself was real. The outer walls stood, but they were so weakened that little of\nthe original building could be kept.\n\nAnd some of the scorched wood had one more journey to make. In nineteen fifty-two, a piece\nof White House timber, still marked by the British fire, was made into a gavel. With a\nmessage of good wishes from President Truman, it was presented to a training centre of\nthe British Army, in England.\n\nThis time, they were invited to take it.\n",
+    "script": "Look through the fence at the north front of the White House.\n\nThere is a story about that white paint, and people have been telling it for a long time.\nIn nineteen forty-nine, a Washington newspaper printed it as plain fact.\n\nIt goes like this. On the twenty-fourth of August, eighteen fourteen, British troops set\nthe house on fire. The walls were left stained with smoke. So the house was painted white\nto hide the stains, and that is how it got its name.\n\nIt is a good story. The dates do not fit it.\n\nThe National Park Service says the house was carrying the name White House from around\neighteen eleven. That is three years before the fire.\n\nThe fire itself was real. The outer walls stood, but they were so weakened that little of\nthe original building could be kept.\n\nAnd some of the scorched wood had one more journey to make. In nineteen fifty-two, a piece\nof White House wood, slightly scorched by the British fire, was presented to a British\nArmy training centre in England, in the form of a gavel. It came with a message of good\nwishes from President Truman.\n\nThis time, they were invited to take it.\n",
     "teaser": "Look through the fence at the north front of the White House.",
     "tags": [
       "washington",
@@ -4735,7 +4735,7 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "speech/dc-white-before-the-fire",
-        "durationS": 82
+        "durationS": 83
       }
     ]
   },
@@ -4761,7 +4761,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the windows of the Willard.\n\nIn November eighteen sixty-one, Julia Ward Howe was a guest at the hotel on this corner.\nThe Civil War had begun, and she had come to Washington with her husband to see the war\neffort for themselves, and to meet President Lincoln.\n\nOne night, she woke from a dream with a poem in her head. Years later, she described what\nshe did next.\n\nWith a sudden effort, she wrote, I sprang out of bed, and found in the dimness an old\nstump of a pen. I scrawled the verses almost without looking at the paper.\n\nThe Atlantic Monthly printed them in February. People sang them to the tune of the John\nBrown song, and they still do.\n\nThe building has changed. The old Willard was replaced at the turn of the century, on the\nsame corner, under the same name.\n\nThe song has not. You probably know the first line. Mine eyes have seen the glory.\n\nShe wrote it without looking.\n",
+    "script": "Look up at the windows of the Willard.\n\nIn November eighteen sixty-one, Julia Ward Howe was a guest at the hotel on this corner.\nThe Civil War had begun, and she had come to Washington with her husband to see the war\neffort for themselves, and to meet President Lincoln.\n\nOne night, she woke from a dream with a poem in her head. Years later, she described what\nshe did next.\n\nWith a sudden effort, she wrote, I sprang out of bed, and found in the dimness an old\nstump of a pen. I scrawled the verses almost without looking at the paper.\n\nThe Atlantic Monthly printed them in February. People sang them to the tune of the John\nBrown song, and they still do.\n\nThe building has changed. The old Willard was replaced at the turn of the century, on the\nsame corner, under the same name.\n\nThe song has not. You probably know how it begins. Mine eyes have seen the glory.\n\nShe wrote it without looking.\n",
     "teaser": "Look up at the windows of the Willard.",
     "tags": [
       "washington",
@@ -7293,7 +7293,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "philadelphia-a-firehouse-on-a-market",
     "title": "A Firehouse on a Market",
-    "summary": "The little building at the end of the Second Street market shed housed firemen, not traders.",
+    "summary": "The little building at the end of the Second Street market shed is filed in the federal survey under two fire companies.",
     "point": {
       "at": {
         "lat": 39.943,
@@ -7312,7 +7312,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look down the middle of Second Street. The road splits around a long, open shed on brick pillars. And at this end of it, facing Pine Street, stands a small building of its own.\n\nIt looks like part of the market. The federal building survey records who actually used it. Not traders. Firemen. Two companies, the Hope Hose Company number six, and the Fellowship Engine Company number twenty-nine.\n\nThe market behind it is the New Market. The first section, running south from Pine down the middle of Second, was built in seventeen forty-five, because people in this end of town complained that the old market was too far away. They did not want to cross Dock Creek to reach it.\n\nBy the eighteen thirties, a city guide called it the second market in Philadelphia, for its age and for its food, and it reached all the way to South Street.\n\nPhiladelphia's main street once had sheds like this down its middle too. So many that people stopped calling it High Street and called it Market Street, and in eighteen fifty-three the city made the name official.\n\nSix years later, the sheds on Market Street came down.\n\nSecond Street kept one. This is what Market Street used to look like.\n",
+    "script": "Look down the middle of Second Street. The road splits around a long, open shed on brick pillars. And at this end of it, facing Pine Street, stands a small building of its own.\n\nIt looks like part of the market. But the federal building survey does not file it under the market first. It files it under two fire companies: the Hope Hose Company number six, and the Fellowship Engine Company number twenty-nine.\n\nThe market behind it is the New Market. The first section, running south from Pine down the middle of Second, was built in seventeen forty-five, because people in this end of town complained that the old market was too far away. They did not want to cross Dock Creek to reach it.\n\nBy the eighteen thirties, a city guide called it the second market in Philadelphia, for its age and for its food, and it reached all the way to South Street.\n\nPhiladelphia's main street once had sheds like this down its middle too. So many that people stopped calling it High Street and called it Market Street, and in eighteen fifty-three the city made the name official.\n\nSix years later, the sheds on Market Street came down.\n\nSecond Street kept one. This is what Market Street used to look like.\n",
     "teaser": "A market in the middle of the road, with a firehouse on the end.",
     "tags": [
       "philadelphia",
@@ -7353,7 +7353,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the steeple of Christ Church.\n\nIt went up in the seventeen fifties, and from then on it could be picked out from all over the colonial city. A Philadelphia guidebook from nineteen twenty calls it the highest point in town at the time.\n\nSteeples are expensive. A congregation usually builds one slowly, out of collections and bequests and patience.\n\nThis one was paid for with a lottery.\n\nTickets were sold to the public, and the money went into the tower and the spire. The tickets themselves came off the press in Benjamin Franklin's printing office. The same guidebook says Franklin sat on the committee that built the spire.\n\nSo when you look up at the landmark of colonial Philadelphia, you are looking at a great many losing tickets.\n",
+    "script": "Look up at the steeple of Christ Church.\n\nIt went up in the seventeen fifties, and from then on it could be picked out from all over the colonial city. A Philadelphia guidebook from nineteen twenty calls it the highest point in town at the time.\n\nSteeples are expensive. A congregation usually builds a steeple slowly, out of collections and bequests and patience.\n\nThis one was paid for with a lottery.\n\nTickets were sold to the public, and the money went into the tower and the spire. The tickets themselves came off the press in Benjamin Franklin's printing office. The same guidebook says Franklin sat on the committee that built the spire.\n\nSo when you look up at the landmark of colonial Philadelphia, you are looking at a great many losing tickets.\n",
     "teaser": "Look up at the steeple. It was paid for by gamblers.",
     "tags": [
       "philadelphia",
@@ -7476,7 +7476,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the brick house on the corner of Fourth and Walnut. It is a modest house, a lawyer's house. For two years it was home to John Todd, his young wife Dolley, and their two small sons.\n\nIn the summer of seventeen ninety-three, yellow fever came to Philadelphia. Thomas Jefferson wrote that about eleven people a day were dying, and that the doctors saw no way of stopping it.\n\nJohn Todd took Dolley and the boys out of the city, to Gray's Ferry on the Schuylkill. Then he went back. He had clients who needed him. In the city he found his own father and mother sick, and both of them died.\n\nHe came back to his wife carrying the fever. The family remembered him saying he could feel it in his veins, but he must see her once more. Within hours he was dead. The younger baby died too.\n\nDolley survived. Not long after, she married James Madison, who would become the fourth President.\n\nBut first, the city directory for seventeen ninety-four lists the family's address under a new name.\n\nDorothy Todd, widow.\n",
+    "script": "Look at the brick house on the corner of Fourth and Walnut. It is a modest house, a lawyer's house. For two years it was home to John Todd, his young wife Dolley, and their two small sons.\n\nIn seventeen ninety-three, yellow fever came to Philadelphia. Thomas Jefferson wrote that about eleven people a day were dying, and that the doctors saw no way of stopping it.\n\nJohn Todd took Dolley and the boys out of the city, to Gray's Ferry on the Schuylkill. Then he went back. He had clients who needed him. In the city he found his own father and mother sick, and both of them died.\n\nHe came back to his wife carrying the fever. The family remembered him saying he could feel it in his veins, but he must see her once more. Within hours he was dead. The younger baby died too.\n\nDolley survived. Not long after, she married James Madison, who would become the fourth President.\n\nBut first, the city directory for seventeen ninety-four lists the family's address under a new name.\n\nDorothy Todd, widow.\n",
     "teaser": "Look at the corner house. The directory changed its name in a year.",
     "pronunciations": [
       {
@@ -7527,7 +7527,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look through the iron fence on Pine Street. On the lawn there is a small statue of William Penn, and behind him a long building of brick and marble, with an eight-sided cupola on each wing.\n\nThis is Pennsylvania Hospital. Benjamin Franklin and a doctor named Thomas Bond founded it in seventeen fifty-one, and it is the oldest hospital in the United States. The east wing went up in the seventeen fifties. Franklin wrote the words for its cornerstone. Piously founded, they say, for the relief of the sick and miserable.\n\nA hospital needs money. This one took it from nearly everyone. Private citizens gave. The preacher George Whitefield sent a large sum.\n\nThen, in seventeen fifty-nine, a company of actors put on Hamlet for the hospital's benefit.\n\nThat was thought quite shocking. Plays did not have the approval of the best people, and the managers had to decide whether they could take money earned on a stage.\n\nThey decided the hospital's charter gave them no right to refuse it.\n\nHamlet brought in forty-seven pounds, two shillings and sixpence.\n\nLook at the building again. The first hospital in the country. And a small part of its bills was paid by the Prince of Denmark.\n",
+    "script": "Look through the iron fence on Pine Street. On the lawn there is a statue of William Penn, and behind him a long building of brick and marble, with an eight-sided cupola on each wing.\n\nThis is Pennsylvania Hospital. Benjamin Franklin and a doctor named Thomas Bond founded it in seventeen fifty-one, and it is the oldest hospital in the United States. The east wing went up in the seventeen fifties. Franklin wrote the words for its cornerstone. Piously founded, they say, for the relief of the sick and miserable.\n\nA hospital needs money. This one took it from nearly everyone. Private citizens gave. The preacher George Whitefield sent a large sum.\n\nThen, in seventeen fifty-nine, a company of actors put on Hamlet for the hospital's benefit.\n\nThat was thought quite shocking. Plays did not have the approval of the best people, and someone had to decide whether the hospital could take money earned on a stage.\n\nThey decided the hospital's charter gave them no right to refuse it.\n\nHamlet brought in forty-seven pounds, two shillings and sixpence.\n\nLook at the building again. The first hospital in the country. And a small part of its bills was paid by the Prince of Denmark.\n",
     "teaser": "The country's first hospital, and part of the bill was paid by the Prince of Denmark.",
     "pronunciations": [
       {
@@ -7555,7 +7555,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "philadelphia-he-left-the-year-blank",
     "title": "He Left the Year Blank",
-    "summary": "At twenty-two Franklin wrote himself a witty epitaph. At eighty-two he asked for a plain stone, and left the last number of the year blank.",
+    "summary": "At twenty-two Franklin wrote himself a witty epitaph. Late in life he asked for a plain stone, and left the year unfinished.",
     "point": {
       "at": {
         "lat": 39.95215,
@@ -7574,7 +7574,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look through the iron bars at the corner of Fifth and Arch. In the corner of the burial ground nearest you, Benjamin Franklin and his wife Deborah lie under a plain marble slab.\n\nWhen Franklin was twenty-two, a young printer, he wrote his own epitaph. It is a joke about his trade.\n\nThe body of B. Franklin, printer, like the cover of an old book, its contents torn out, and stript of its lettering and gilding, lies here, food for worms. But the work shall not be wholly lost. For it will, as he believed, appear once more, in a new and more perfect edition, corrected and amended by the author.\n\nHe liked it enough to copy it out for friends for the rest of his life.\n\nIt is not on the stone.\n\nAt eighty-two, adding to his will, he asked for something else. A marble stone, six feet long and four feet wide, plain, with only a small moulding round the edge. Two names, Benjamin and Deborah Franklin. And a year.\n\nFor the year he wrote one, seven, eight, and then a dash.\n\nHe knew the century and the decade. Somebody else had to finish the line.\n",
+    "script": "Look through the iron bars at the corner of Fifth and Arch. In the corner of the burial ground nearest you is Benjamin Franklin's grave, under a plain marble slab.\n\nWhen Franklin was twenty-two, a young printer, he wrote his own epitaph. It is a joke about his trade.\n\nThe body of B. Franklin, printer, like the cover of an old book, its contents torn out, and stript of its lettering and gilding, lies here, food for worms. But the work shall not be wholly lost. For it will, as he believed, appear once more, in a new and more perfect edition, corrected and amended by the author.\n\nHe liked it enough to copy it out for friends at various times in his life.\n\nIt is not on the stone.\n\nNear the end of his life, adding to his will, he asked for something else. To be buried beside his wife, under a marble stone, six feet long and four feet wide, plain, with only a small moulding round the edge. Their names, and a year.\n\nFor the year he wrote one, seven, eight, and then a dash.\n\nHe thought he knew the century and the decade. He died in April, seventeen ninety.\n\nSomebody else had to finish the line.\n",
     "teaser": "He wrote a famous epitaph for himself. It is not on the stone.",
     "pronunciations": [
       {
@@ -7672,7 +7672,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand on Arch Street and look up at the side of this small brick meeting house, high under the eaves. There is a stone tablet set into the wall.\n\nIt says the house was erected by general subscription, for the Free Quakers, in seventeen eighty-three. Then it gives a second date. Of the Empire, eight.\n\nQuakers do not fight. During the Revolution most Philadelphia Friends would not take up arms, pay war taxes, or swear an oath of allegiance. Some members broke with that. They served in the army, sat on the committee of safety, took seats in the legislature.\n\nThe Society of Friends disowned them. Read them out of meeting, as it was called.\n\nSo they started their own. They called themselves the Free Quakers, and people called them the Fighting Quakers. They paid for this house by subscription, and one of the people who gave was Benjamin Franklin, who was not a Quaker at all.\n\nAs for the Empire. A Philadelphia newspaper told a story about it in nineteen eighteen. When the stone was being set, someone asked one of the Free Quakers what the words meant. I tell thee, friend, he is supposed to have said, it is because our country is destined to be the great empire over all the world. That is the story. Nobody recorded the conversation at the time.\n\nAfter the war, some of the fighters made their peace with their old meetings and went back. By the eighteen thirties, services here had stopped.\n\nThey dated their building from the birth of a country. The country lasted. The congregation did not.\n",
+    "script": "Stand on Arch Street and look up at the side of this small brick meeting house, high under the eaves. There is a stone tablet set into the wall.\n\nIt says the house was erected by general subscription, for the Free Quakers, in seventeen eighty-three. Then it gives a second date. Of the Empire, eight.\n\nQuakers do not fight. During the Revolution most Philadelphia Friends would not take up arms, pay war taxes, or swear an oath of allegiance. Some members broke with that. They served in the army, sat on the committee of safety, took seats in the legislature.\n\nThe Society of Friends disowned them. Read them out of meeting, as it was called.\n\nSo they started their own. They called themselves the Free Quakers, and people called them the Fighting Quakers. They paid for this house by subscription, and one of the people who gave was Benjamin Franklin, who was not a Quaker at all.\n\nAs for the Empire. A Philadelphia newspaper told a story about it in nineteen eighteen. When the stone was being set, someone asked one of the Free Quakers what the words meant. I tell thee, friend, he is supposed to have said, it is because our country is destined to be the great empire over all the world. That is the story, as the newspaper told it, well over a century later.\n\nAfter the war, some of the fighters made their peace with their old meetings and went back. By the eighteen thirties, services here had stopped.\n\nThey dated their building from the birth of a country. The country lasted. The congregation did not.\n",
     "teaser": "Look up under the eaves. The building gives two dates.",
     "tags": [
       "philadelphia",
@@ -7714,7 +7714,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "You are standing on the site of the President's House. The building itself was demolished long ago, but its real foundations are still here to see, found by archaeologists in two thousand seven.\n\nGeorge Washington lived here from seventeen ninety to seventeen ninety-seven. His household was about thirty people. Nine of them, at one time or another, were enslaved Africans brought up from Mount Vernon. Their names are memorialized here.\n\nFind the name Ona Judge.\n\nShe was Martha Washington's personal maid, and a skilled seamstress. Pennsylvania law said that an enslaved person held in the state for six months could claim freedom. So the Washingtons kept sending the people they enslaved back to Virginia before the six months ran out.\n\nIn seventeen ninety-six, Ona Judge walked out of this house and did not come back.\n\nShe reached Portsmouth, New Hampshire, where someone recognised her. Washington, still president, wrote to the customs collector there and asked him to seize her and send her back. The collector talked with her, and declined.\n\nTwo years later Washington's nephew went north to try again. Over dinner he mentioned the plan to the governor of New Hampshire. The governor sent her a warning, and she got away again, with her child.\n\nWashington died in seventeen ninety-nine. Ona Judge lived free in New Hampshire until eighteen forty-eight.\n\nShe outlived the man who was looking for her by almost fifty years.\n",
+    "script": "You are standing on the site of the President's House. The building itself was demolished long ago, but its real foundations are still here to see, found by archaeologists in two thousand seven.\n\nGeorge Washington lived here from seventeen ninety to seventeen ninety-seven. His household was about thirty people. Nine of them, at one time or another, were enslaved Africans brought up from Mount Vernon. Their names are memorialized here.\n\nFind the name Ona Judge.\n\nShe was Martha Washington's personal maid, and a skilled seamstress. Pennsylvania law said that an enslaved person held in the state for six months could take steps toward freedom. So Washington kept rotating the people he enslaved out of Pennsylvania before the six months ran out.\n\nIn seventeen ninety-six, Ona Judge walked out of this house and did not come back.\n\nShe reached Portsmouth, New Hampshire, where someone recognised her. Washington, still president, wrote to the customs collector there and asked him to seize her and send her back. The collector talked with her, and declined.\n\nTwo years later Washington's nephew went north to try again. Over dinner he mentioned the plan to the governor of New Hampshire. The governor sent her a warning, and she got away again, with her child.\n\nWashington died in seventeen ninety-nine. Ona Judge lived free in New Hampshire until eighteen forty-eight.\n\nShe outlived the man who was looking for her by almost fifty years.\n",
     "teaser": "Find the name Ona Judge.",
     "pronunciations": [
       {
@@ -7766,7 +7766,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look straight up the tower in front of you, past the clock, to the very top. There is a man standing up there.\n\nHe is William Penn, the founder of Pennsylvania and the planner of this city. From down here he looks about life size. He is thirty-seven feet tall, and he weighs more than fifty-three thousand pounds of bronze.\n\nThe last piece to go up was his head. It was set on his shoulders on the twenty-eighth of November, eighteen ninety-four, and the statue was complete.\n\nThe tower under him rises five hundred and forty-eight feet. Until nineteen oh nine it was the highest occupied building in the United States.\n\nIn the autumn of nineteen eighty-one, historians wrote this building up for the federal survey of American architecture. They put down one plain sentence. No other building in the city exceeds its height.\n\nNow turn around, and look at the skyline to the west.\n\nCount the towers standing higher than Penn's hat.\n\nEvery one of them is younger than that sentence.\n",
+    "script": "Look straight up the tower in front of you, past the clock, to the very top. There is a man standing up there.\n\nHe is William Penn, the founder of Pennsylvania and the planner of this city. From down here he looks about life size. He is thirty-seven feet tall, and he weighs more than fifty-three thousand pounds of bronze.\n\nThe last piece to go up was his head. It was set on his shoulders on the twenty-eighth of November, eighteen ninety-four, and the statue was complete.\n\nThe tower under him rises five hundred and forty-eight feet. Until nineteen oh nine it was the highest occupied building in the United States.\n\nIn the autumn of nineteen eighty-one, historians wrote this building up for the federal survey of American architecture. They wrote that no other building in the city exceeds its height.\n\nNow turn around, and look at the skyline to the west.\n\nCount the towers standing higher than Penn's hat.\n\nAll of them went up after that was written.\n",
     "teaser": "Look all the way up the tower. There is a man standing on top.",
     "pronunciations": [
       {
@@ -7794,7 +7794,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "philadelphia-read-aloud-in-the-yard",
     "title": "Read Aloud in the Yard",
-    "summary": "The Declaration was first read to the public in this yard on 8 July 1776. The king's coat of arms did not last the afternoon.",
+    "summary": "The Declaration was first read to the public in this yard on 8 July 1776. Then the king's coat of arms came down.",
     "point": {
       "at": {
         "lat": 39.94795,
@@ -7813,7 +7813,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Face the back of the hall. This square was the State House yard, and you are standing in it.\n\nOn the fourth of July, seventeen seventy-six, Congress approved the Declaration of Independence in there. Almost nobody out here had heard a word of it.\n\nFour days later, on the eighth, the bells of the city called people into this yard. At noon a militia colonel named John Nixon stood up on a raised stage and read the whole thing out loud. It was the first public reading of the Declaration.\n\nJohn Adams wrote about it the next day. He called the platform that awful stage, and he meant awe inspiring. Three cheers, he wrote, rended the welkin. The bells rang all day, and almost all night. Even the chimers chimed away.\n\nIn the courtroom of the State House, above the judge's bench, hung the coat of arms of King George the Third. That same day a crowd took it down and burned it.\n\nAbout nine years later a Philadelphia painter, George Rutter, made a new coat of arms for the same courtroom. The arms of Pennsylvania. It is one of the very few furnishings from that century still in the building, and it hangs in the courtroom now.\n\nThe king's arms did not last the afternoon. Pennsylvania's are still on the wall.\n",
+    "script": "Face the back of the hall. This square was the State House yard, and you are standing in it.\n\nOn the fourth of July, seventeen seventy-six, Congress approved the Declaration of Independence in there. Almost nobody out here had heard a word of it.\n\nFour days later, on the eighth, the bells of the city called people into this yard. At noon a colonel named John Nixon stood up on a raised stage and read the whole thing out loud. It was the first public reading of the Declaration.\n\nJohn Adams wrote about it the next day. He called the platform that awful stage, and he meant awe inspiring. Three cheers, he wrote, rended the welkin. The bells rang all day, and almost all night. Even the chimers chimed away.\n\nIn the courtroom of the State House, above the judge's bench, hung the coat of arms of King George the Third. After the reading, a crowd took it down and burned it.\n\nAbout nine years later a painter named George Rutter made a new coat of arms for the same courtroom. The arms of Pennsylvania. It is one of the very few furnishings from that century still in the building, and it hangs in the courtroom now.\n\nThe king's arms came down and burned. Pennsylvania's are still on the wall.\n",
     "teaser": "Almost nobody out here had heard a word of it.",
     "pronunciations": [
       {
@@ -7864,7 +7864,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the hall in front of you. On its ground floor is the room where the Constitution was signed.\n\nFor four months in the summer of seventeen eighty-seven, George Washington presided in that room from a tall wooden chair. Carved into the top of its back is a sun.\n\nIt was not an easy summer. Large states against small states. Arguments over the slave trade. More than once it looked as if the whole thing might come apart.\n\nOn the last day, the seventeenth of September, the delegates lined up to sign. While the last of them were signing, Benjamin Franklin looked at Washington's chair and said something to the men near him. James Madison wrote it down.\n\nPainters, Franklin said, had always found it hard to show the difference between a rising sun and a setting one. All through the session, in his hopes and fears, he had looked at that sun behind the president, and could not tell which it was.\n\nBut now at length, he said, I have the happiness to know that it is a rising and not a setting sun.\n\nThe chair had been made here in Philadelphia in seventeen seventy-nine, for the speaker of Pennsylvania's assembly. It went with the legislature to Harrisburg, and came back to this city in eighteen seventy-two.\n\nEarlier that day Franklin had asked every doubter in the room to doubt a little his own infallibility, and sign. Three still refused.\n\nNothing about the carving had changed. Franklin had.\n",
+    "script": "Look at the hall in front of you. Inside is the room where the Constitution was signed.\n\nFor four months in the summer of seventeen eighty-seven, George Washington presided in that room from a chair. Carved into the top of its back is a sun.\n\nIt was not an easy summer. Large states against small states. Arguments over the slave trade.\n\nOn the last day, the seventeenth of September, the delegates lined up to sign. While the last of them were signing, Benjamin Franklin looked at Washington's chair and said something to the men near him. James Madison wrote it down.\n\nPainters, Franklin said, had always found it hard to show the difference between a rising sun and a setting one. All through the session, in his hopes and fears, he had looked at that sun behind the president, and could not tell which it was.\n\nBut now at length, he said, I have the happiness to know that it is a rising and not a setting sun.\n\nThe chair had been made here in Philadelphia in seventeen seventy-nine, for the speaker of Pennsylvania's assembly. It went with the legislature to Harrisburg, and came back to this city in eighteen seventy-two.\n\nEarlier that day Franklin had asked every doubter in the room to doubt a little his own infallibility, and sign. Three still refused.\n\nNothing about the carving had changed. Franklin had.\n",
     "teaser": "Painters, he said, could never tell a rising sun from a setting one.",
     "pronunciations": [
       {
@@ -7911,7 +7911,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the brick house on this corner of Seventh and Market. It is not old. The house that stood here was demolished, and this one was built in nineteen seventy-five to stand in for it.\n\nIn the summer of seventeen seventy-six this corner was out near the edge of town. Thomas Jefferson rented rooms here from a young bricklayer named Graff.\n\nNearly fifty years later a Philadelphia doctor wrote to ask him exactly where he had written the Declaration of Independence. Jefferson answered from Monticello. A new brick house, three stories high, he wrote. I rented the second floor, a parlour and bedroom, ready furnished. In that parlour I wrote habitually, and in it wrote this paper particularly.\n\nHe also kept an account book that summer, and it survives. Thirty-five shillings a week for lodging. Dinners at Smith's. A straw hat. One shilling for seeing a monkey.\n\nAnd shoes for Bob. Stockings for Bob.\n\nJefferson did not come alone. With him was Robert Hemings, fourteen years old, whom he enslaved. Bob, in the account book, was almost certainly him.\n\nThe rooms are a reconstruction. The shoes for Bob are in Jefferson's own handwriting.\n",
+    "script": "Look at the brick house on this corner of Seventh and Market. It is not old. The house that stood here was demolished, and this one was built in nineteen seventy-five to stand in for it.\n\nIn the summer of seventeen seventy-six this corner was out near the edge of town. Thomas Jefferson rented rooms here from a young bricklayer named Graff.\n\nNearly fifty years later a Philadelphia doctor wrote to ask him exactly where he had written the Declaration of Independence. Jefferson answered from Monticello. A new brick house, three stories high, he wrote. I rented the second floor, a parlor and bedroom, ready furnished. In that parlor I wrote habitually, and in it wrote that paper particularly.\n\nHe also kept an account book that summer, and it survives. Thirty-five shillings a week for lodging. Dinners at Smith's. A straw hat. One shilling for seeing a monkey.\n\nAnd shoes for Bob. Stockings for Bob.\n\nJefferson did not come alone. With him was Robert Hemings, fourteen years old, whom he enslaved. The account book never says who Bob was.\n\nThe rooms are a reconstruction. The shoes for Bob are in Jefferson's own handwriting.\n",
     "teaser": "A straw hat. A monkey. Shoes for Bob.",
     "pronunciations": [
       {
@@ -8008,7 +8008,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the tower on the back of the hall. The brick part is original, from the seventeen fifties. The wooden steeple on top came later.\n\nIn September, seventeen seventy-seven, a British army was closing in on Philadelphia. Before it arrived, the State House bell was taken down from up there, to keep it out of British hands. It was not the Liberty Bell yet. Nobody would call it that for almost sixty years.\n\nIt went north in a wagon, in a train of about seven hundred wagons carrying the army's heavy baggage, guarded by two hundred soldiers from Virginia and North Carolina. Through Germantown, through Bethlehem, to Allentown.\n\nA diary kept in Bethlehem that autumn has one line about it. September the twenty-ninth. The wagon which conveyed the State House bell broke down in the street, and had to be unloaded.\n\nThey got it moving again. It spent the winter in Zion's Church in Allentown, while the British held this city, and it came home in June, seventeen seventy-eight, after they had gone.\n\nThe bell got through a war without a scratch. What finally silenced it, in eighteen forty-six, was a repair job for Washington's birthday.\n",
+    "script": "Look up at the tower on the back of the hall. The brick part is original, from the seventeen fifties. The wooden steeple on top came later.\n\nIn September, seventeen seventy-seven, a British army was closing in on Philadelphia. Before it arrived, the State House bell was taken down from up there, to keep it out of British hands. It was not the Liberty Bell yet. Nobody would call it that for almost sixty years.\n\nIt went north in a wagon, in a train of about seven hundred wagons carrying the army's heavy baggage, guarded by two hundred soldiers from Virginia and North Carolina. Through Germantown, through Bethlehem, to Allentown.\n\nA diary kept in Bethlehem that autumn has one line about it. September the twenty-ninth. The wagon which conveyed the State House bell broke down in the street, and had to be unloaded.\n\nThey got it moving again. It spent the winter in Zion's Church in Allentown, while the British held this city, and it came home in June, seventeen seventy-eight, after they had gone.\n\nThe bell got through the war. What finally silenced it, in eighteen forty-six, was a repair job for Washington's birthday.\n",
     "teaser": "The wagon carrying the bell broke down in the street.",
     "pronunciations": [
       {
@@ -8059,7 +8059,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look across Sixth Street at the church, and at the ground it stands on.\n\nThis is Mother Bethel. The National Park Service counts this lot among the oldest pieces of land in the country continuously owned by African Americans.\n\nThe first church on it was not built here. It was dragged here.\n\nIn the seventeen nineties, Black members of Saint George's Methodist Church walked out together, rather than sit in a separate gallery made for them. A preacher named Richard Allen bought this lot so they could have a church of their own. What he had to put on it was an old blacksmith shop.\n\nIn seventeen ninety-nine an engraver named William Birch published a view of Walnut Street, with the city jail in the background. In the foreground, a team of horses is pulling a wooden shed down the street. Historians believe it is this church, on its way here.\n\nThe first meeting house was dedicated in July, seventeen ninety-four. The congregation has rebuilt on this same ground more than once since, so the building in front of you is not the shed.\n\nAllen is known to have used a blacksmith's anvil as his pulpit. The church still keeps the anvil as its emblem. It stands for self-determination.\n\nMost churches begin with a cornerstone. This one began with a forge.\n",
+    "script": "Look across Sixth Street at the church, and at the ground it stands on.\n\nThis is Mother Bethel. The National Park Service counts this lot among the oldest plots of land continuously owned by an African American.\n\nThe first church on it was not built here. It was dragged here.\n\nIn the seventeen nineties, Black members of Saint George's Methodist Church walked out together, rather than sit in a separate gallery made for them. A preacher named Richard Allen bought this lot so they could have a church of their own. What he had to put on it was an old blacksmith shop.\n\nIn seventeen ninety-nine the engravers Birch and Son published a view of Walnut Street, with the city jail in the background. In the foreground, a team of horses is pulling a wooden shed down the street. Historians believe it is this church, on its way here.\n\nThe first meeting house was dedicated in July, seventeen ninety-four. The congregation has rebuilt on this same ground more than once since, so the building in front of you is not the shed.\n\nAllen is known to have used a blacksmith's anvil as his pulpit. The church still keeps the anvil as its emblem. It stands for self-determination.\n\nMost churches begin with a cornerstone. This one began with a forge.\n",
     "teaser": "Most churches begin with a cornerstone. This one began with a forge.",
     "pronunciations": [
       {
@@ -8153,7 +8153,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "In front of you, a bronze George Washington stands above a stone tomb, and a flame burns near his feet. Go close enough to read the lid. Beneath this stone rests a soldier of Washington's army, who died to give you liberty.\n\nOne soldier, name unknown. His remains were found in a grave nearby in nineteen fifty-six, and the memorial was dedicated the next year.\n\nHe is not alone. He is not even unusual.\n\nFor most of the seventeen hundreds this square was the city's potter's field, the burial ground for strangers and the poor. Free and enslaved Africans were buried here, and their families sometimes gathered to guard the graves from the anatomy lecturers.\n\nThen came the war. In January seventeen seventy-seven, Deborah Norris wrote to her friend Sally Wister about a shocking sight here. Large pits are dug, she wrote, and forty or fifty coffins are put in the same hole.\n\nThat April John Adams came and spent an hour among the graves. He had been told perhaps two thousand soldiers lay here. They are enough, he wrote, to make the heart of stone melt away.\n\nIn seventeen ninety-three, more than thirteen hundred victims of yellow fever filled the space that was left.\n\nLook past the tomb, at the lawns and the benches and the paths.\n\nThe memorial honours one soldier. The rest of them are under the grass.\n",
+    "script": "In front of you, a bronze George Washington stands above a stone tomb, and a flame burns near his feet. Go close enough to read the lid. Beneath this stone rests the soldier of Washington's army, who died to give you liberty.\n\nOne soldier, name unknown. His remains were found in a grave nearby in nineteen fifty-six, and the memorial was dedicated the next year.\n\nHe is not alone. He is not even unusual.\n\nFor most of the seventeen hundreds this square was the city's potter's field, the burial ground for strangers and the poor. Free and enslaved Africans were buried here, and their families sometimes gathered to guard the graves from the anatomy lecturers.\n\nThen came the war. In January seventeen seventy-seven, Deborah Norris wrote to her friend Sally Wister about a shocking sight here. Large pits are dug, she wrote, and forty or fifty coffins are put in the same hole.\n\nThat April John Adams came and spent an hour among the graves. He had been told perhaps two thousand soldiers lay here. They are enough, he wrote, to make the heart of stone melt away.\n\nIn seventeen ninety-three, more than thirteen hundred victims of yellow fever filled the space that was left.\n\nLook past the tomb, at the lawns and the benches and the paths.\n\nThe memorial honours one soldier. The rest of them are under the grass.\n",
     "teaser": "The memorial honours one soldier. The rest are under the grass.",
     "pronunciations": [
       {
@@ -8200,7 +8200,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the small brick building on the corner of Fifth and Chestnut. It was built as Philadelphia's city hall. Through the seventeen nineties it was also the home of the Supreme Court of the United States.\n\nToday that court decides the hardest questions in the country. When it came to Philadelphia, it had almost nothing to decide.\n\nIts first term in this city opened in February, seventeen ninety-one. A Philadelphia lawyer wrote about the day in a letter. The court opened, he said, but there was no business.\n\nSo the justices did the one thing they could, which was admit lawyers to practise before them. The local bar assumed Justice James Wilson, one of their own, would simply vouch for them. He would not. The Chief Justice ruled that one lawyer could not vouch for another. Some of the best known lawyers in the city had to go off and find certificates of good character, and come back after one o'clock.\n\nThat August the court finally called a case for argument, West against Barnes. One of the parties stood up and pointed out that the paperwork had come from the wrong clerk's office. The court agreed, and dismissed it.\n\nOne of the original justices, John Rutledge, resigned without ever sitting in a session.\n\nThe courtroom inside is furnished the way an eighteenth century courtroom would have been, and it is open to look into.\n\nThe most powerful court in the world started out by checking references.\n",
+    "script": "Look at the small brick building on the corner of Fifth and Chestnut. It was built as Philadelphia's city hall. Through the seventeen nineties it was also the home of the Supreme Court of the United States.\n\nToday that court decides the hardest questions in the country. When it came to Philadelphia, it had almost nothing to decide.\n\nIts first term in this city opened in February, seventeen ninety-one. A letter written at the time describes the day. The court opened, it said, but there was no business.\n\nSo the justices did the one thing they could, which was admit lawyers to practise before them. The local bar assumed Justice James Wilson, one of their own, would simply vouch for them. He would not. The Chief Justice said the court would not accept one lawyer vouching for another. Some of the best known lawyers in the city had to go off and find certificates of good character, and come back after one o'clock.\n\nThat August the court finally called a case for argument, West against Barnes. One of the parties stood up and pointed out that the paperwork had come from the wrong clerk's office. The court agreed, and dismissed it.\n\nOne of the original justices, John Rutledge, resigned without ever sitting in a session.\n\nThe courtroom inside is furnished the way an eighteenth century courtroom would have been, and it is open to look into.\n\nThe most powerful court in the world started out by checking references.\n",
     "teaser": "The court opened, but there was no business.",
     "tags": [
       "philadelphia",
@@ -8241,7 +8241,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Find the bell, and look at the crack.\n\nIt is wide and dark, and it may be the best known flaw in the country. Now look along its edges. They are not clean breaks. They are a row of little round scallops.\n\nNobody wrote down when the bell first cracked. The likeliest answer is the early eighteen forties, after almost ninety years of hard use. A thin split, easy to miss.\n\nIn eighteen forty-six the city wanted the bell rung for Washington's birthday. So metal workers drilled out the thin crack and widened it on purpose, to stop it spreading and to bring the tone back. Those scallops are their drill holes. The Park Service counts more than forty of them.\n\nIt did not work. A newspaper, the Public Ledger, reported that the bell had split again. The second crack runs up through the word Liberty, and nobody alive has heard this bell ring freely.\n\nBy then it had a new name. In eighteen thirty-five an abolitionist paper had called it the Liberty Bell, for the verse cast around its top. Proclaim liberty throughout all the land, unto all the inhabitants thereof. The name took years to catch on.\n\nSo the famous crack is not the damage. It is the repair.\n",
+    "script": "Find the bell, and look at the crack.\n\nIt is wide and dark, and it could be the best known flaw in the country. Now look along its edges. They are not clean breaks. They are a row of little round scallops.\n\nNobody wrote down when the bell first cracked. The likeliest answer is the early eighteen forties, after almost ninety years of hard use. A thin split, easy to miss.\n\nIn eighteen forty-six the city decided to repair the bell before Washington's birthday. So metal workers drilled out the thin crack and widened it on purpose, to stop it spreading and to bring the tone back. Those scallops are their drill holes. The Park Service counts more than forty of them.\n\nIt did not work. A newspaper, the Public Ledger, reported that the bell had split again. The second crack runs up through the word Liberty, and nobody alive has heard this bell ring freely.\n\nBy then it had a new name. In eighteen thirty-five an abolitionist paper had called it the Liberty Bell, for the verse cast around its top. Proclaim liberty throughout all the land, unto all the inhabitants thereof. The name took years to catch on.\n\nSo the famous crack is not the damage. It is the repair.\n",
     "teaser": "Look along the edges of the crack. They are not clean breaks.",
     "pronunciations": [
       {
@@ -8287,8 +8287,8 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look down the court from Chestnut Street. At the end of it is a small brick hall with a cupola on top. It was built by a guild of carpenters, and the guild still owns it.\n\nOn the fifth of September seventeen seventy-four, the delegates to the first Continental Congress gathered in the city with a choice to make. The Speaker of the Pennsylvania Assembly, Joseph Galloway, had offered them the State House. The carpenters had offered their hall.\n\nThey walked here first, to take a look.\n\nJohn Adams wrote that the general cry was that this was a good room. One delegate, James Duane, argued that the State House ought to be preferred. It was a public building, he said, and this was a private one, and the Speaker deserved the courtesy. The question was called anyway. A great majority chose the carpenters.\n\nThat evening Galloway wrote to a friend that Congress had met at Carpenters' Hall, notwithstanding the offer of a much more proper place. He suspected it had all been settled privately, out of doors, before anyone walked over.\n\nOnly after that vote did they choose a president.\n\nThe first question the Continental Congress ever decided was where to sit. It chose the builders.\n",
-    "teaser": "The first question the Continental Congress voted on was where to sit.",
+    "script": "Look down the court from Chestnut Street. At the end of it is a small brick hall with a cupola on top. It was built by a guild of carpenters, and the guild still owns it.\n\nOn the fifth of September seventeen seventy-four, the delegates to the first Continental Congress gathered in the city with a choice to make. The Speaker of the Pennsylvania Assembly, Joseph Galloway, had offered them the State House. The carpenters had offered their hall.\n\nThey walked here first, to take a look.\n\nJohn Adams wrote that the general cry was that this was a good room. One delegate, James Duane, argued that if the State House was just as convenient, it ought to be preferred. It was a public building, he said, and this was a private one, and the Speaker deserved the courtesy. The question was called anyway. A great majority chose the carpenters.\n\nThat same day Galloway wrote to William Franklin that Congress had met at Carpenters' Hall, notwithstanding the offer of a much more proper place. He suspected it had all been settled privately, out of doors, before anyone walked over.\n\nOnly after that vote did they choose a president.\n\nThe Continental Congress began by deciding where to sit. It chose the builders.\n",
+    "teaser": "Before it chose a president, the Continental Congress chose a room.",
     "pronunciations": [
       {
         "written": "Galloway",
@@ -8389,7 +8389,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand outside the market doors on Twelfth Street and look up. The building keeps going, well above where a market would need a roof. That high shed was built for trains.\n\nStart a little earlier, on Market Street, round the corner. For generations, Philadelphia's main street had market sheds down its middle. In eighteen fifty-nine they were cleared away, and the traders needed somewhere new.\n\nTwo big market houses went up on the north side of Market Street, between Eleventh and Twelfth. One was the Farmers' Market, the largest market shed of its kind in the city. Beside it, at Twelfth Street, was the Franklin Market, which old housekeepers just called the Twelfth Street Market.\n\nThirty years later the Reading Railroad wanted a station in the middle of town. It ran its tracks in from Ninth and Green, raised up on an elevated line, and it chose this exact block. The Reading Terminal opened for traffic on the twentieth of January, eighteen ninety-three.\n\nSo the trains came in up there, under that great arched roof.\n\nAnd the market is still down here, underneath it.\n",
+    "script": "Stand outside the market doors and look up. The building keeps going, well above where a market would need a roof. That high shed was built for trains.\n\nStart a little earlier, on Market Street, a block to the south. For generations, Philadelphia's main street had market sheds down its middle. In eighteen fifty-nine they were cleared away, and the traders needed somewhere new.\n\nTwo big market houses went up on the north side of Market Street, between Eleventh and Twelfth. One was the Farmers' Market, the largest market shed of its kind in the city. Beside it, at Twelfth Street, was the Franklin Market, which old housekeepers just called the Twelfth Street Market.\n\nThirty years later the Reading Railroad wanted a station in the middle of town. It ran its tracks in from Ninth and Green, raised up on an elevated line, and it chose this exact block. The Reading Terminal opened for traffic on the twentieth of January, eighteen ninety-three.\n\nSo the trains came in up there, under that great arched roof.\n\nAnd the market is still down here, underneath it.\n",
     "teaser": "The roof above this market was built to hold trains.",
     "pronunciations": [
       {
@@ -8436,7 +8436,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the corner house here, at Third and Pine, and then up at its second floor.\n\nThe whole site covers two hundredths of an acre. The National Park Service calls it the smallest unit in the national park system.\n\nLate in seventeen ninety-seven, a Polish general took a cramped room up there, in Mrs. Relf's boarding house. His name was Thaddeus Kosciuszko. More than twenty years earlier he had come to America and designed fortifications for the Revolution, at Saratoga and at West Point. Then he went home to fight for Poland, was wounded, captured and imprisoned in Russia, and came back to Philadelphia a hero, still recovering.\n\nPeople climbed the stairs to see him. A Virginia congressman who pushed Congress to pay what it owed him. Chief Little Turtle of the Miami, who gave him a pipe tomahawk. And the Vice President, Thomas Jefferson, who became a close friend.\n\nUp in that room, with Jefferson's legal help, Kosciuszko worked out his will. He asked that after his death his estate be used to free as many enslaved people as possible.\n\nIn May seventeen ninety-eight he slipped out of the country in the small hours, on a ship from New Castle, Delaware. He told one person he was going. Jefferson.\n\nHe gave Thomas Jefferson two things to keep. The secret of his leaving. And the will.\n",
+    "script": "Look at the corner house here, at Third and Pine, and then up at its second floor.\n\nThe whole site covers two hundredths of an acre. The National Park Service calls it the smallest unit in the national park system.\n\nLate in seventeen ninety-seven, a Polish general took a cramped room up there, in Mrs. Relf's boarding house. His name was Thaddeus Kosciuszko. More than twenty years earlier he had come to America and designed fortifications for the Revolution, at Saratoga and at West Point. Then he went home to fight for Poland, was wounded, captured and imprisoned in Russia, and came back to Philadelphia a hero, still recovering.\n\nPeople climbed the stairs to see him. A Virginia congressman who pushed Congress to pay what it owed him. Chief Little Turtle of the Miami, who gave him a pipe tomahawk. And the Vice President, Thomas Jefferson, who became a close friend.\n\nWhile he lived here, with Jefferson's legal help, Kosciuszko worked out his will. He asked that after his death his estate be used to free as many enslaved people as possible.\n\nIn May seventeen ninety-eight he slipped out of the country in the small hours, on a ship from New Castle, Delaware. He told one person he was going. Jefferson.\n\nHe trusted Thomas Jefferson with two things. The secret of his leaving. And the will.\n",
     "teaser": "The smallest unit of the National Park System, and a will written upstairs.",
     "pronunciations": [
       {
@@ -8488,7 +8488,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Every street around here runs straight, at right angles, the way William Penn liked it. Except the one you are standing on. Dock Street bends.\n\nNow look at the building beside you. Its end is not flat. It is round, a curve of stone columns with a little round lantern on top. This is the Merchants' Exchange, finished in the eighteen thirties, and its architect fitted it onto a triangle of ground between Third Street, Walnut Street, and this odd curving road.\n\nSo why does the road curve?\n\nWhen Penn first came to Philadelphia, he left the big ship out on the Delaware and went up a creek in a skiff. That creek ran here. Dock Creek. In the seventeen nineties the city covered it over, and the street took its line.\n\nBefore this building, merchants did their deals in coffee houses and taverns down by the river. This was the first large building in the city put up for doing business. Ships' cargoes changed hands in it. So did stocks. The Philadelphia Stock Exchange met here.\n\nPenn came up this line in a small boat. A hundred and fifty years later, the city's money was following it too.\n",
+    "script": "Every street around here runs straight, at right angles, the way William Penn liked it. Except the street you are standing on. Dock Street bends.\n\nNow look at the building beside you. Its end is not flat. It is round, a curve of stone columns with a little round lantern on top. This is the Merchants' Exchange, finished in the eighteen thirties, and its architect fitted it onto a triangle of ground between Third Street, Walnut Street, and this odd curving road.\n\nSo why does the road curve?\n\nWhen Penn first came to Philadelphia, he left the big ship out on the Delaware and went up a creek in a skiff. That creek ran here. Dock Creek. In the seventeen nineties the city covered it over, and the street took its line.\n\nBefore this building, merchants did their deals in coffee houses and taverns down by the river. This was the first large building in the city put up for doing business. Ships' cargoes changed hands in it. So did stocks. The Philadelphia Stock Exchange met here.\n\nPenn came up this line in a small boat. Generations later, the city's money was following it too.\n",
     "teaser": "Every street here runs straight. Except this one.",
     "tags": [
       "philadelphia",
@@ -8617,7 +8617,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand beside the brick building on the corner of Sixth and Chestnut. This is Congress Hall. For ten years the House of Representatives met on its ground floor, and the Senate upstairs.\n\nOn the fourth of March, seventeen ninety-seven, the room downstairs was packed. The country was about to do something it had never done. Hand the presidency from one man to another.\n\nA man named John McKoy was there, and wrote down what he saw. When the word Washington went round the doorway, he said, the shout made the hall tremble. Washington crossed the floor at a quick step, as if eager to escape notice, and sat down. Thomas Jefferson came in next, the new vice president, to a smaller cheer. Then John Adams, the new president, to a smaller one again.\n\nAdams took the oath, read his address, bowed, and left to applause.\n\nThat left Washington and Jefferson standing together, and the whole room watching them in silence.\n\nWashington gestured for Jefferson to go out first. Jefferson declined. Washington asked again. Jefferson went, and Washington followed him out.\n\nHe walked in as the most famous man in the country. He walked out behind the vice president.\n",
+    "script": "Stand beside the brick building on the corner of Sixth and Chestnut. This is Congress Hall. For ten years the House of Representatives met on its ground floor, and the Senate upstairs.\n\nOn the fourth of March, seventeen ninety-seven, the room downstairs was packed. The country was about to do something it had never done. Hand the presidency from one man to another.\n\nA man named John McKoy was there, and wrote down what he saw. When the word Washington was heard at the door, he said, the shout made the hall tremble. Washington crossed the floor at a quick step, as if eager to escape notice, and sat down. Thomas Jefferson came in next, the new vice president, to a smaller cheer. Then John Adams, the new president, to a smaller one again.\n\nAdams read his address, took the oath, bowed, and left to applause.\n\nThat left Washington and Jefferson standing together, and the whole room watching them in silence.\n\nWashington gestured for Jefferson to go out first. Jefferson declined. Washington asked again. Jefferson went, and Washington followed him out.\n\nHe walked in as the most famous man in the country. He walked out behind the vice president.\n",
     "teaser": "Two men at a door, and a whole room watching to see who would go first.",
     "pronunciations": [
       {
@@ -8665,7 +8665,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This small house on Arch Street is famous for one scene. George Washington and two gentlemen of Congress call on a young widow, an upholsterer named Betsy Ross. They show her a rough sketch of a flag. She suggests changes. She sews the first Stars and Stripes.\n\nHere is what is on record. Betsy Ross was real. Her first husband died in seventeen seventy-six, and she carried on his trade. For about fifty years she was an expert needlewoman and flag-maker. During the war she made colours for Pennsylvania's ships. After her, one of her daughters kept the flag business going.\n\nHere is what is not. The visit appears in no record of Congress, no letter, no diary and no newspaper of the time. Washington wrote a great deal, and never mentioned it.\n\nThe story was first told in public in eighteen seventy, ninety-three years after the flag was adopted. Her grandson, William Canby, read it to the Historical Society of Pennsylvania. It was, he said, what the family had heard her say.\n\nFor most people, the evidence is a picture. Washington seated in her parlour, the new flag across her lap.\n\nThat picture was printed in eighteen ninety-three. Prints of it went to people who joined a club raising money to save this house.\n",
+    "script": "This small house on Arch Street is famous for one scene. George Washington and two gentlemen of Congress call on a young widow, an upholsterer named Betsy Ross. They show her a rough sketch of a flag. She suggests changes. She sews the first Stars and Stripes.\n\nHere is what is on record. Betsy Ross was real. Her first husband died in seventeen seventy-six, and she carried on his trade. For about fifty years she was an expert needlewoman and flag-maker. During the war she made state colours for ships and gun batteries. After her, one of her daughters kept the flag business going.\n\nHere is what is not. The visit appears in no record of Congress, no letter, no diary and no newspaper of the time. Washington wrote a great deal, and never mentioned it.\n\nThe story was first told in public in eighteen seventy, ninety-three years after the flag was adopted. Her grandson, William Canby, read it to the Historical Society of Pennsylvania. It was, he said, what the family had heard her say.\n\nFor most people, the evidence is a picture. Washington seated in her parlour, the new flag across her lap.\n\nThat picture was printed in eighteen ninety-three. Prints of it went to people who joined a club raising money to save this house.\n",
     "teaser": "Everyone knows the scene in this house. Nobody wrote it down for ninety-three years.",
     "certaintyNote": "Betsy Ross's work as an upholsterer and flag-maker is on record. The visit from Washington, Robert Morris and George Ross, and her part in the first Stars and Stripes, rest on family tradition first made public by her grandson William Canby in 1870; no record of Congress, letter, diary or newspaper of 1776 or 1777 mentions it, as Franklin Hanford set out in 1917. The script says so plainly.",
     "pronunciations": [
@@ -10287,7 +10287,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "true-crime",
     "format": "short",
-    "durationS": 96,
+    "durationS": 64,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10295,7 +10295,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look from Ford’s Theatre to the house across the street.\n\nThat short distance became the final journey of Abraham Lincoln’s life.\n\nOn April 14, 1865, Lincoln attended a performance of Our American Cousin.\n\nActor John Wilkes Booth knew the theatre. That evening, he entered the presidential box\nand shot the president.\n\nBooth escaped from the theatre. Lincoln could not.\n\nPeople carried the wounded president across Tenth Street into the Petersen family’s\nboarding house.\n\nHe died there the following morning, April 15.\n\nLook at the crossing again.\n\nToday, it takes only a few seconds to walk from one side to the other.\n\nOn that night, people crossed it carrying the president of the United States, trying to\nfind somewhere to care for him.\n\nThe theatre marks the attack.\n\nThe house marks his death.\n\nBetween them is an ordinary city street that briefly became the center of a national\ncatastrophe.\n",
+    "script": "Look from Ford’s Theatre to the house across the street.\n\nThat short distance became the final journey of Abraham Lincoln’s life.\n\nOn April 14, 1865, Lincoln attended a performance of Our American Cousin.\n\nJohn Wilkes Booth was a famous actor. That evening, he entered the presidential box\nand shot the president.\n\nBooth escaped from the theatre. Lincoln could not.\n\nPeople carried the wounded president across Tenth Street into the Petersen family’s\nboarding house.\n\nHe died there the following morning, April 15.\n\nLook at the crossing again.\n\nToday, it is a short walk across.\n\nOn that night, people crossed it carrying the president of the United States, trying to\nfind somewhere to care for him.\n\nThe theatre marks the attack.\n\nThe house marks his death.\n\nBetween them is an ordinary city street that briefly became the center of a national\ncatastrophe.\n",
     "teaser": "Look from Ford’s Theatre to the house across the street.",
     "voice": "wC1005J19tvhoqqC2hkf",
     "tags": [
@@ -10314,7 +10314,7 @@ export const LIBRARY: readonly Echo[] = [
       {
         "voiceId": "wC1005J19tvhoqqC2hkf",
         "audioKey": "speech/the-distance-across-the-street",
-        "durationS": 96
+        "durationS": 64
       }
     ]
   },
@@ -10762,7 +10762,7 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand still for a moment.\n\nLook along the corridor, then toward the cells.\n\nEastern State’s ghost reputation includes stories of shadowy movement and something\nappearing in an otherwise empty prison.\n\nThe historic site has discussed paranormal television investigations, including\ncontroversial footage filmed in Cellblock Twelve.\n\nControversial matters.\n\nA recording that people argue about is not proof of a ghost.\n\nNow listen to the space around you.\n\nA prison changes the meaning of ordinary sounds. A footstep may suggest an approaching\nguard. A door may suggest confinement. Silence may suggest someone listening.\n\nYou do not need to imagine a particular dead prisoner.\n\nThe real people confined here already give these walls a difficult history.\n\nThe haunting stories add another question: can a place seem occupied after the people\nwho lived inside it are gone?\n\nLook down the corridor again.\n\nYou may see nothing unusual.\n\nThe feeling of waiting for something is part of this story.\n",
+    "script": "Stand still for a moment.\n\nLook along the corridor, then toward the cells.\n\nEastern State’s ghost stories tell of shadowy figures darting from cell to cell.\n\nThe site’s own audio tour asks the question straight out. Is this place haunted? Who\nknows? Some visitors say they have sensed something here.\n\nThat is all it is: a story people tell. Nobody has proved a ghost, and the site does\nnot allow paranormal investigations.\n\nNow listen to the space around you.\n\nA prison changes the meaning of ordinary sounds. A footstep might suggest an approaching\nguard. A door might suggest confinement. Silence might suggest someone listening.\n\nYou do not need to imagine a particular dead prisoner.\n\nWhat is certain is that real suffering happened behind these walls, for more than a\nhundred and forty years.\n\nThe haunting stories add another question: can a place seem occupied after the people\nwho lived inside it are gone?\n\nLook down the corridor again.\n\nYou might see nothing unusual.\n\nThe feeling of waiting for something is part of this story.\n",
     "teaser": "Stand still for a moment.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "voice": "wC1005J19tvhoqqC2hkf",
