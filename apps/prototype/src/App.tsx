@@ -107,6 +107,18 @@ const TEST_POSITION =
 
 /** The library by id, for turning stored records from other journeys back into echoes. */
 const LIBRARY_BY_ID: ReadonlyMap<string, Echo> = new Map(LIBRARY.map((e) => [e.id, e]));
+
+/**
+ * The headphones check in onboarding: a real recording in the real narrator's voice.
+ *
+ * It used to play LIBRARY[0], an unrecorded New York demo, so the volume check was the
+ * browser's robot voice, it went through the journey (counting as one of the free ten and
+ * leaving an echo "playing" on the map) and nothing stopped it when the step was left
+ * (James, 2026-11-08). Now it is a file played straight through the narrator, outside the
+ * journey, and onboarding stops it on the way out.
+ */
+const TEST_LINE: string | null =
+  LIBRARY.flatMap((e) => e.renders ?? []).find((r) => r.audioKey.startsWith("audio/"))?.audioKey ?? null;
 /** How far from a searched place its echoes are shown. */
 const LOOK_RADIUS_KM = 25;
 /** Exploring, "everything around me" reaches this far: a city centre and its edges. */
@@ -2449,7 +2461,8 @@ export function App() {
               }
               /* The real narrator, saying a real line, through whatever the listener has
                  in their ears. A volume set against silence is not set. */
-              onTestLine={() => playOrAsk(LIBRARY[0]!)}
+              onTestLine={() => (TEST_LINE ? speech.play(TEST_LINE) : playOrAsk(LIBRARY[0]!))}
+              onStopTest={() => speech.stop()}
               routes={ROUTES}
               onFlight={(routeId) => {
                 const found = routeId ? ROUTES.find((r) => r.id === routeId) : undefined;
