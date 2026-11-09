@@ -105,6 +105,7 @@ export function Arrival({
               `I walked ${route.name ?? route.id} and heard ${heard.length} ${
                 heard.length === 1 ? "story" : "stories"
               } along the way, on Echo Finders.`,
+              window.location.origin,
             )
           }
         >

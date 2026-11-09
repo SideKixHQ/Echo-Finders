@@ -3,6 +3,7 @@ import { holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettin
 import { accessRole, claimOwnerFromAddress, setOwnerMode, type AccessRole } from "./owner";
 import { testPositionFrom } from "./test-position";
 import { count } from "./analytics";
+import { takeSharedEcho } from "./share";
 import { LIBRARY, ROUTES } from "./library.generated";
 import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
@@ -109,6 +110,12 @@ const TEST_POSITION =
 
 /** The library by id, for turning stored records from other journeys back into echoes. */
 const LIBRARY_BY_ID: ReadonlyMap<string, Echo> = new Map(LIBRARY.map((e) => [e.id, e]));
+
+/**
+ * The echo a shared link opened (`share.ts`), read once when the app loads. Not in state:
+ * reading it takes it off the address, and a state initialiser can run twice.
+ */
+const SHARED_ECHO = takeSharedEcho((id) => LIBRARY_BY_ID.has(id));
 
 /**
  * The headphones check in onboarding: a real recording in the real narrator's voice.
@@ -531,6 +538,30 @@ export function App() {
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [tab, setTab] = useState<Tab>("map");
   /**
+   * The echo somebody sent this phone a link to (`?echo=`, `share.ts`), or null.
+   *
+   * Its card opens on the map, looking at its place, once onboarding is out of the way, and it plays without a
+   * pass: a story a friend sent is the best introduction the app will get, and asking for
+   * money before it has been heard throws that away. Kids mode still applies, so a link
+   * to a story kids mode hides does not open it.
+   */
+  const gift = SHARED_ECHO;
+  useEffect(() => {
+    if (!gift || !onboarded) return;
+    const echo = LIBRARY_BY_ID.get(gift);
+    if (!echo) return;
+    if (!checkEligibility(echo, { profile: listenerFor(kids, optIns), playAtMs: Date.now() }).eligible) return;
+    count({ name: "Shared echo opened", category: echo.category });
+    setTab("map");
+    // Look at where it happened, which is almost never where the link was opened: with no
+    // location yet the map would otherwise be "Where are you?" with nothing to show.
+    setLookAt({ label: echo.point.place, detail: "", at: echo.point.at });
+    setPan({ x: 0, y: 0 });
+    setSelectedId(gift);
+    // Once: deliberately not re-run when settings change, or closing the card would not stick.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gift, onboarded]);
+  /**
    * The echo the camera is pointed at, or null for closed.
    *
    * Held here rather than inside the sheet because the viewfinder covers the whole screen
@@ -702,10 +733,12 @@ export function App() {
     (echo: Echo) => {
       // Owner mode: everything is open (`owner.ts`).
       if (owner) return true;
+      // The story a shared link opened plays without a pass (`gift`, above).
+      if (echo.id === gift) return true;
       const profile = { ...listenerFor(kids, optIns), heardEchoIds: [...heardIds] };
       return mayHearAnother(entitlement, profile, echo.id, echo.point.at, Date.now());
     },
-    [entitlement, kids, optIns, heardIds, owner],
+    [entitlement, kids, optIns, heardIds, owner, gift],
   );
   const mayStartRef = useRef(mayStart);
   mayStartRef.current = mayStart;
@@ -2187,7 +2220,7 @@ export function App() {
               */}
               {selectedEcho && !routePicker && !reporting ? (
                 <EchoPopup
-                  anywhere={owner}
+                  anywhere={owner || selectedEcho.echo.id === gift}
                   echo={selectedEcho.echo}
                   distanceKm={selectedEcho.distanceKm}
                   state={stateOf(selectedEcho.echo.id)}

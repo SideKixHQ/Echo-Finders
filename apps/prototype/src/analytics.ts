@@ -46,6 +46,7 @@ export function startAnalytics(): void {
 export type AppEvent =
   | { readonly name: "Echo played"; readonly category: string }
   | { readonly name: "Paywall shown"; readonly category: string }
+  | { readonly name: "Shared echo opened"; readonly category: string }
   | { readonly name: "Checkout started"; readonly plan: string; readonly city: string }
   | { readonly name: "Purchase completed"; readonly plan: string };
 

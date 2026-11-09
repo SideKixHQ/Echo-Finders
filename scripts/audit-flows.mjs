@@ -215,6 +215,41 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── A shared link ───────────────────────────────────────────────────────────────
+// `?echo=<id>`, from the card's Share. Somebody new, with no location and no pass, should
+// come out of onboarding looking at that story's place with its card open and a Play
+// button on it (James, 2026-11-09).
+{
+  const ctx = await browser.newContext({
+    viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
+    ignoreHTTPSErrors: true, permissions: [],
+  });
+  await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  const p = await ctx.newPage();
+  p.setDefaultTimeout(6000);
+  p.on('pageerror', (e) => errors.push(e.message));
+  await p.goto(`http://127.0.0.1:${PORT}/?echo=wilmington-the-first-curtain`, { waitUntil: 'domcontentloaded' });
+  await p.waitForTimeout(800);
+  for (let i = 0; i < 9 && await p.locator('.onb').count(); i++) {
+    const start = p.getByRole('button', { name: /Start looking/ });
+    const allow = p.getByRole('button', { name: /Allow location/ });
+    if (await start.count()) await start.click();
+    else if (await allow.count()) { await allow.click(); await p.waitForTimeout(1500); }
+    else {
+      const all = p.locator('.onb-all');
+      if (await all.count() && await all.isEnabled()) await all.click();
+      await p.locator('.onb-go').first().click();
+    }
+    await p.waitForTimeout(400);
+  }
+  await p.waitForTimeout(2000);
+  const card = p.locator('.pop');
+  check('Shared link: opens the story\'s card', await visible(card) && /The First Curtain/.test(await card.innerText()));
+  check('Shared link: takes the id off the address', !new URL(p.url()).searchParams.has('echo'));
+  check('Shared link: Play, though nobody is there', await visible(card.getByRole('button', { name: 'Play', exact: true })));
+  await ctx.close();
+}
+
 // ── The trip sheet ──────────────────────────────────────────────────────────────
 {
   const { ctx, p } = await freshApp();
