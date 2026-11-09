@@ -30,13 +30,13 @@ export default function PartnerInquiryForm() {
     const data = new FormData(e.currentTarget);
     const get = (k: string) => String(data.get(k) ?? '').trim();
 
-    const subject = `Partner inquiry — ${get('organization') || get('name')}`;
+    const subject = `Partner inquiry: ${get('organization') || get('name')}`;
     const body = [
       `Name: ${get('name')}`,
       `Email: ${get('email')}`,
       `Organization: ${get('organization')}`,
       `Organization type: ${get('orgType')}`,
-      `Interested in: ${get('interest') || '—'}`,
+      `Interested in: ${get('interest') || 'not given'}`,
       '',
       get('message'),
     ].join('\n');

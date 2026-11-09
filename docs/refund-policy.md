@@ -1,4 +1,4 @@
-# Echo Finders — Refund Policy
+# Echo Finders Refund Policy
 
 Last updated: 8 November 2026 · Part of the [Terms of Service](terms-of-service.md).
 

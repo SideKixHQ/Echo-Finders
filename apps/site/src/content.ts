@@ -30,7 +30,7 @@ export const home = {
     titleLine1: 'Stand where it happened.',
     titleAccent: 'Hear the Echo.',
     subtitle:
-      'Short, location-triggered stories — called Echoes — that reveal the people, mysteries, and moments that give a place its character, playing right where you stand.',
+      'Short, location-triggered stories, called Echoes, that reveal the people, mysteries, and moments that give a place its character, playing right where you stand.',
     primaryCta: 'Get the app',
     secondaryCta: 'Partner with us',
     scrollHint: 'Scroll to begin the walk',
@@ -46,7 +46,7 @@ export const home = {
         index: '01',
         timestamp: '0:00',
         title: 'Stand somewhere',
-        body: 'A street corner. An old theater. A quiet stretch of beach. Echo Finders knows where you are — and what happened right there.',
+        body: 'A street corner. An old theater. A quiet stretch of beach. Echo Finders knows where you are, and what happened right there.',
       },
       {
         id: 'step-2',
@@ -60,7 +60,7 @@ export const home = {
         index: '03',
         timestamp: '1:07',
         title: 'Hear the story',
-        body: 'Most Echoes run about a minute. The people, events, and mysteries of this exact spot — researched, sourced, and told where they belong.',
+        body: 'Most Echoes run about a minute. The people, events, and mysteries of this exact spot: researched, sourced, and told where they belong.',
       },
     ],
   },
@@ -145,7 +145,7 @@ export const home = {
     ],
   },
   mapMock: {
-    title: 'Downtown Wilmington — tonight',
+    title: 'Downtown Wilmington, tonight',
     nowPlaying: 'Now playing',
     nowPlayingTitle: "Ellen Bellamy's Long View",
     nowPlayingTime: '1:08',
@@ -163,7 +163,7 @@ export const home = {
         id: 'feat-map',
         title: 'Discover on the map',
         detail: 'MAP VIEW',
-        body: 'Echoes appear as living pins across a dark, quiet cartography of the town — the closer you stand, the louder they get.',
+        body: 'Echoes appear as living pins across a dark, quiet cartography of the town. The closer you stand, the louder they get.',
       },
       {
         id: 'feat-interests',
@@ -175,7 +175,7 @@ export const home = {
         id: 'feat-web',
         title: 'Nothing to install',
         detail: 'IN YOUR BROWSER',
-        body: 'Open it on your phone and start walking. Add it to your home screen if you like — no app store, no account to begin.',
+        body: 'Open it on your phone and start walking. Add it to your home screen if you like. No app store, no account to begin.',
       },
       {
         id: 'feat-kids',
@@ -221,7 +221,7 @@ export const home = {
     kicker: 'For partners',
     title: 'Bring the stories of your place to life.',
     body: [
-      "Echo Finders works with municipalities, tourism organizations, museums, historians, and local businesses to put a community's stories where they happened — in visitors' ears and residents' routines.",
+      "Echo Finders works with municipalities, tourism organizations, museums, historians, and local businesses to put a community's stories where they happened: in visitors' ears and residents' routines.",
       'Together we build destination collections that give people a reason to linger one more block, one more hour, one more day.',
     ],
     audiences: 'Municipalities · Tourism organizations · Museums · Historians · Local businesses',
@@ -229,7 +229,7 @@ export const home = {
       { id: 'offer-collections', name: 'Destination collections', body: 'Curated Echoes that turn a stroll into an itinerary.' },
       { id: 'offer-passes', name: 'Paid destination passes', body: 'Premium collections that fund the work and keep the free map generous.' },
       { id: 'offer-distribution', name: 'Partner distribution', body: 'Your stories, delivered through the app, your channels, and your visitor centers.' },
-      { id: 'offer-sponsorships', name: 'Labeled sponsorships', body: 'Support that is always clearly labeled — never woven into the story itself.' },
+      { id: 'offer-sponsorships', name: 'Labeled sponsorships', body: 'Support that is always clearly labeled, and never woven into the story itself.' },
     ],
     integrity: 'The integrity promise: the stories stay honest. Sponsorship never rewrites history.',
     cta: 'Partner with us',
@@ -238,10 +238,10 @@ export const home = {
     kicker: 'Where we begin',
     title: 'Starting in the Cape Fear region.',
     body: [
-      "From the riverwalk to the battleship, from haunted alleys to salt marsh sunsets — we're building destination collections and local partnerships that make exploration around Wilmington more meaningful.",
+      "From the riverwalk to the battleship, from haunted alleys to salt marsh sunsets, we're building destination collections and local partnerships that make exploration around Wilmington more meaningful.",
       'One Echo at a time, the map grows.',
     ],
-    mapping: 'Now mapping — Wilmington · Wrightsville Beach · Carolina Beach · Southport',
+    mapping: 'Now mapping: Wilmington · Wrightsville Beach · Carolina Beach · Southport',
     coordinates: 'Cape Fear River · Wilmington, North Carolina',
   },
   closing: {
@@ -260,7 +260,7 @@ export const partner = {
     titleLine1: 'Bring the stories of',
     accent: 'your place to life.',
     subtitle:
-      "Echo Finders turns a community's stories into location-triggered audio walks — destination collections that give people a reason to linger one more block, one more hour, one more day.",
+      "Echo Finders turns a community's stories into location-triggered audio walks: destination collections that give people a reason to linger one more block, one more hour, one more day.",
     cta: 'Start a partnership',
     coordinates: '34.2257° N · 77.9447° W',
   },
@@ -268,12 +268,12 @@ export const partner = {
     kicker: 'Who we partner with',
     title: 'Built for the keepers of place.',
     intro:
-      "The people and institutions who already hold a place's stories — we help them carry those stories to everyone who walks through.",
+      "The people and institutions who already hold a place's stories. We help them carry those stories to everyone who walks through.",
     audiences: [
       {
         id: 'aud-municipalities',
         title: 'Municipalities',
-        body: 'Give visitors a reason to explore beyond the obvious stops — and give residents a new way to know their own city.',
+        body: 'Give visitors a reason to explore beyond the obvious stops, and give residents a new way to know their own city.',
       },
       {
         id: 'aud-tourism',
@@ -283,7 +283,7 @@ export const partner = {
       {
         id: 'aud-museums',
         title: 'Museums',
-        body: 'Take the collection beyond your walls — a museum trail that starts at the front door and ends three blocks from it.',
+        body: 'Take the collection beyond your walls: a museum trail that starts at the front door and ends three blocks from it.',
       },
       {
         id: 'aud-historians',
@@ -293,26 +293,26 @@ export const partner = {
       {
         id: 'aud-businesses',
         title: 'Local businesses',
-        body: "Be the echo. If your business keeps a story — a recipe, a ghost, a hundred-year habit — we'll help it travel.",
+        body: "Be the echo. If your business keeps a story, like a recipe, a ghost or a hundred-year habit, we'll help it travel.",
       },
     ],
   },
   offerings: {
     kicker: 'How we work together',
     title: 'Ways to partner.',
-    intro: 'Four ways to work with us — start with one, or combine them into a destination program.',
+    intro: 'Four ways to work with us. Start with one, or combine them into a destination program.',
     items: [
       {
         id: 'offer-collections',
         detail: '01',
         title: 'Destination collections',
-        body: 'Curated Echoes that turn a stroll into an itinerary. We map, research, and record the stories of your streets, landmarks, and hidden corners — then publish them where they happened.',
+        body: 'Curated Echoes that turn a stroll into an itinerary. We map, research, and record the stories of your streets, landmarks, and hidden corners, then publish them where they happened.',
       },
       {
         id: 'offer-passes',
         detail: '02',
         title: 'Paid destination passes',
-        body: "Premium collections that fund the work and keep the free map generous. Visitors buy a pass to unlock a destination's full collection — you share in the revenue.",
+        body: "Premium collections that fund the work and keep the free map generous. Visitors buy a pass to unlock a destination's full collection, and you share in the revenue.",
       },
       {
         id: 'offer-distribution',
@@ -324,7 +324,7 @@ export const partner = {
         id: 'offer-sponsorships',
         detail: '04',
         title: 'Labeled sponsorships',
-        body: 'Support the map, get the credit. Sponsorships are always clearly labeled — never woven into the story itself. The integrity promise below is non-negotiable.',
+        body: 'Support the map, get the credit. Sponsorships are always clearly labeled, and never woven into the story itself. The integrity promise below is non-negotiable.',
       },
     ],
   },
@@ -335,7 +335,7 @@ export const partner = {
         id: 'process-1',
         index: '01',
         title: 'Map it',
-        body: 'We walk your destination together — streets, landmarks, overlooked corners — and agree on the story threads worth recording.',
+        body: 'We walk your destination together, through streets, landmarks and overlooked corners, and agree on the story threads worth recording.',
       },
       {
         id: 'process-2',
@@ -355,7 +355,7 @@ export const partner = {
     kicker: 'The integrity promise',
     title: 'Support that is always labeled.',
     body: [
-      'Every Echo stands on its own as honest storytelling. Sponsors make more of them possible — and get their name on the collection page, the launch materials, and the partner map. Never in the story.',
+      'Every Echo stands on its own as honest storytelling. Sponsors make more of them possible, and get their name on the collection page, the launch materials, and the partner map. Never in the story.',
       'A sponsored collection reads exactly like an independent one: researched locally, written for the ear, and anchored to the place where it happened.',
     ],
     promise: 'The stories stay honest. Sponsorship never rewrites history.',
@@ -364,7 +364,7 @@ export const partner = {
     kicker: 'Partner inquiry',
     title: 'Start the conversation.',
     intro:
-      "Tell us a little about your place and what you're imagining. We review every inquiry personally and reply within a few days — usually with questions, occasionally with a site visit.",
+      "Tell us a little about your place and what you're imagining. We review every inquiry personally and reply within a few days, usually with questions, occasionally with a site visit.",
     note: 'Prefer email? Write to partners@echofinders.com and the same conversation starts.',
     email: 'partners@echofinders.com',
   },

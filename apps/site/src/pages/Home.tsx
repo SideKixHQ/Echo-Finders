@@ -16,7 +16,7 @@ import { usePageHead } from '@/lib/head';
  * drift into two different creatures.
  */
 export default function HomePage() {
-  usePageHead("Echo Finders — Something happened right here. It's still echoing.", 'https://echofinders.com/');
+  usePageHead("Echo Finders · Something happened right here. It's still echoing.", 'https://echofinders.com/');
   return (
     <main>
       <Hero />

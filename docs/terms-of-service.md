@@ -1,4 +1,4 @@
-# Echo Finders — Terms of Service
+# Echo Finders Terms of Service
 
 Last updated: 8 November 2026 · Echo Finders is a Whatishere.com product, operated by
 Character Limit LLC, a North Carolina limited liability company ("we", "us").
