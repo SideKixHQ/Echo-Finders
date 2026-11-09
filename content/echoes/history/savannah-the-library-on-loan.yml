@@ -9,7 +9,7 @@ at: { lat: 32.07035, lng: -81.09620 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 60
+durationS: 61
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,8 +28,42 @@ script: |
   Then, in eighteen ninety three, the Society lent its books and this building to the city, so that Savannah could have a public library. The Society kept on collecting.
 
   A husband's name on the front. His widow's money in the walls. And for a while, the books inside belonged to everyone.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Hodgson Hall."
+    source: 1
+    quote: "The frieze of the portico bears, in relief, the inscription, ““W. B. Hodgson Hall.”"
+  - says: "William Hodgson did not build it."
+    source: 1
+    quote: "was erected by Mrs. Margaret T. Hodgson and Miss Mary Telfair, the widow and sister-in-law of William B. Hodgson, in his memory."
+  - says: "His widow Margaret and her sister Mary Telfair built it in his memory, in eighteen seventy six"
+    source: 2
+    quote: "The present building, Hodgson Hall, was erected in 1876 by Mrs. Margaret Telfair Hodgson and Miss Mary Telfair as a memorial to William Brown Hodg- son, the husband of the former."
+  - says: "for the Georgia Historical Society"
+    source: 1
+    quote: "Hodgson Hall, the library building, at Whitaker and Gaston strects, fronting the park,"
+  - says: "The Society had been collecting since eighteen thirty nine."
+    source: 2
+    quote: "The Georgia Historical Society was organized in 1839 for the purpose of collecting, preserving and publishing historical matter pertaining to Georgia and American his-"
+  - says: "Books, papers, anything touching the history of Georgia."
+    source: 1
+    quote: "for the purpose of collecting, preserving, and diffusing informa- tion relating to the State of Georgia in particular,"
+  - says: "By eighteen ninety it had about twenty thousand volumes."
+    source: 1
+    quote: "Its library, numbering 20,000 volumes, is one of the finest col- lections in the South."
+  - says: "A guidebook of the time admitted the outside was plain."
+    source: 1
+    quote: "The exterior of the building is plain, its architecture being adapted to the con- venience and comfort of the library."
+  - says: "The inside was the part worth seeing."
+    source: 1
+    quote: "If the exterior is plain, the interior of the library hall is strikingly attractive."
+  - says: "Then, in eighteen ninety three, the Society lent its books and this building to the city, so that Savannah could have a public library."
+    source: 2
+    quote: "In 1893 the Georgia Historical Society loaned its books and building to the city, for the purpose -of having a Public > Library,"
+  - says: "The Society kept on collecting."
+    source: 2
+    quote: "the Society continuing its original work of collecting his- torical matter."
 sources:
   - title: "Savannah and its surroundings (G. A. Gregory, 1890)"
     publisher: "Library of Congress"
@@ -41,3 +75,62 @@ sources:
     url: https://www.loc.gov/item/unk84031503/
     retrievedAt: "2026-10-15"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-library-on-loan/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 61
+    audioBytes: 977231
+    transcript:
+      totalS: 61
+      lines:
+        - text: Face the building on the corner, with the portico and a man's name on the front.
+          atS: 0
+          durationS: 4.69
+        - text: W.
+          atS: 4.9
+          durationS: 0.41
+        - text: B.
+          atS: 5.34
+          durationS: 0.36
+        - text: Hodgson Hall.
+          atS: 5.72
+          durationS: 1.08
+        - text: William Hodgson did not build it.
+          atS: 7.41
+          durationS: 2.31
+        - text: His widow Margaret and her sister Mary Telfair built it in his memory, in eighteen seventy six, for the Georgia Historical Society.
+          atS: 10.32
+          durationS: 8.8
+        - text: The Society had been collecting since eighteen thirty nine.
+          atS: 19.5
+          durationS: 3.65
+        - text: Books, papers, anything touching the history of Georgia.
+          atS: 23.43
+          durationS: 4.28
+        - text: By eighteen ninety it had about twenty thousand volumes.
+          atS: 28.1
+          durationS: 4.39
+        - text: A guidebook of the time admitted the outside was plain.
+          atS: 32.87
+          durationS: 3.47
+        - text: It was built for the convenience of a library.
+          atS: 36.51
+          durationS: 2.74
+        - text: The inside was the part worth seeing.
+          atS: 39.76
+          durationS: 2.5
+        - text: Then, in eighteen ninety three, the Society lent its books and this building to the city, so that Savannah could have a public library.
+          atS: 42.7
+          durationS: 8.36
+        - text: The Society kept on collecting.
+          atS: 51.34
+          durationS: 1.97
+        - text: A husband's name on the front.
+          atS: 53.49
+          durationS: 1.68
+        - text: His widow's money in the walls.
+          atS: 55.41
+          durationS: 1.89
+        - text: And for a while, the books inside belonged to everyone.
+          atS: 57.48
+          durationS: 3.54

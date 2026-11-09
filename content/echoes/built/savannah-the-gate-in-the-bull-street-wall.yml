@@ -9,29 +9,63 @@ at: { lat: 32.07412, lng: -81.09396 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 72
+durationS: 64
 visibility: at-hand
 certainty: documented
 minAge: 0
 quality: 0.75
 tags: [savannah, savannah-core, madison-square, architecture]
-teaser: "Most people come to this house for its stories. This one is written down."
+teaser: "Most people come to this house for its stories. This story is written down."
 script: |
   Stand on Bull Street beside the garden wall of the big stuccoed house on the corner of Harris Street.
 
-  Most people come to this house for its stories. This one is written down.
+  Most people come to this house for its stories. This story is written down.
 
   The house was built around eighteen forty by Francis Sorrel, a Frenchman. One of his sons became a doctor, and kept his office in the basement. The way in to that office was not the front door. It was a gateway in this wall, on Bull Street.
 
   Later the gateway was bricked up. In nineteen seventeen, a writer remembering the doctor said you could still make out its outline in the wall.
 
-  Then in the nineteen thirties a new owner wanted a gate on Bull Street again. She had the wall opened, but in a different place, and the old opening stayed filled with brick.
+  Then a later owner wanted a gate on Bull Street again. She had the wall opened, but in a different place, and the old opening stayed filled with brick.
 
   So walk along it slowly, and look for a patch of brick that does not quite match. Nobody can promise it is still there. It was more than a hundred years ago.
 
   Houses keep their doors. Walls keep the ones they lost.
-editorial: draft
+editorial: approved
 factCheck: single-source
+claims:
+  - says: "The house was built around eighteen forty by Francis Sorrel, a Frenchman."
+    source: 1
+    quote: "Sate of Erection: Approximately 1840 or earlier."
+  - says: "by Francis Sorrel, a Frenchman"
+    source: 1
+    quote: "Built by Francis Sorrel, a Frenchman."
+  - says: "One of his sons became a doctor, and kept his office in the basement."
+    source: 1
+    quote: "occupied as his office, rooms in the basement of the old Sorrel (now W£tHd) Mansion on the corner of Bull & Harris Streets,"
+  - says: "One of his sons became a doctor"
+    source: 1
+    quote: "Dr. Sorrel was the son of Mr. Francis Sorrel,"
+  - says: "It was a gateway in this wall, on Bull Street."
+    source: 1
+    quote: "the entrance to which was by a gateway in the brick wall on Bull Street,"
+  - says: "Later the gateway was bricked up."
+    source: 1
+    quote: "which encloses the premises, since bricked up, but the outlines of which are still discernable."
+  - says: "In nineteen seventeen, a writer remembering the doctor said you could still make out its outline in the wall."
+    source: 1
+    quote: "In Georgia Historical Quarterly Vol. I, page 36, (1917), the follow- ing quotation by W.W. Marshall in an article entitled, \"The Late Dr» Brands Sorrel.\""
+  - says: "you could still make out its outline in the wall"
+    source: 1
+    quote: "since bricked up, but the outlines of which are still discernable."
+  - says: "Then a later owner wanted a gate on Bull Street again."
+    source: 1
+    quote: "The present wrought iron gate was placed in the Bull Street wall by Mrs. Brantley who bought the house a few years ago."
+  - says: "She had the wall opened, but in a different place, and the old opening stayed filled with brick."
+    source: 1
+    quote: "She had the wall opened for the purpose at a different place from the former opening, which has been filled in with brick."
+  - says: "It was more than a hundred years ago."
+    source: 1
+    quote: "(1917)"
 sources:
   - title: "Sorrel-Weed House, 6 West Harris Street, Savannah (HABS GA-2140), data pages"
     publisher: "Library of Congress, Historic American Buildings Survey"
@@ -41,3 +75,59 @@ sources:
 pronunciations:
   - written: Sorrel
     say: SOR-ul
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-gate-in-the-bull-street-wall/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 64.2
+    audioBytes: 1028640
+    transcript:
+      totalS: 64.2
+      lines:
+        - text: Stand on Bull Street beside the garden wall of the big stuccoed house on the corner of Harris Street.
+          atS: 0
+          durationS: 5.63
+        - text: Most people come to this house for its stories.
+          atS: 6.07
+          durationS: 2.47
+        - text: This story is written down.
+          atS: 8.87
+          durationS: 1.7
+        - text: The house was built around eighteen forty by Francis Sorrel, a Frenchman.
+          atS: 11.01
+          durationS: 5.23
+        - text: One of his sons became a doctor, and kept his office in the basement.
+          atS: 16.74
+          durationS: 3.61
+        - text: The way in to that office was not the front door.
+          atS: 20.96
+          durationS: 3.15
+        - text: It was a gateway in this wall, on Bull Street.
+          atS: 24.54
+          durationS: 3.32
+        - text: Later the gateway was bricked up.
+          atS: 28.3
+          durationS: 2.32
+        - text: In nineteen seventeen, a writer remembering the doctor said you could still make out its outline in the wall.
+          atS: 31.58
+          durationS: 6.3
+        - text: Then a later owner wanted a gate on Bull Street again.
+          atS: 38.58
+          durationS: 3.31
+        - text: She had the wall opened, but in a different place, and the old opening stayed filled with brick.
+          atS: 42.7
+          durationS: 5.6
+        - text: So walk along it slowly, and look for a patch of brick that does not quite match.
+          atS: 48.9
+          durationS: 4.9
+        - text: Nobody can promise it is still there.
+          atS: 54.5
+          durationS: 2.09
+        - text: It was more than a hundred years ago.
+          atS: 56.91
+          durationS: 2.17
+        - text: Houses keep their doors.
+          atS: 59.52
+          durationS: 1.79
+        - text: Walls keep the ones they lost.
+          atS: 61.64
+          durationS: 2.59

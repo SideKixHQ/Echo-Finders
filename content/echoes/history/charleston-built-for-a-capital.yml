@@ -9,7 +9,7 @@ at: { lat: 32.77662, lng: -79.93120 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 79
+durationS: 76
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -24,41 +24,144 @@ script: |
 
   Look at the courthouse, on the north-west corner. It was not built to be a courthouse.
 
-  It went up in seventeen fifty-three as the statehouse of the colony. The royal governor's
-  council met upstairs. From its balcony over Meeting Street, the Declaration of
+  It went up in seventeen fifty-three as the statehouse of the colony. The Royal Governor's council met upstairs. From its balcony over Meeting Street, the Declaration of
   Independence was read aloud for the first time in South Carolina.
 
   In seventeen eighty-eight it burned. Only the foundations, the walls and the doorways
   were left.
 
-  By then the rest of the state wanted the capital moved to the middle of South Carolina,
-  not left out on its edge. Charleston rebuilt fast anyway, anxious to keep its place in
+  The rest of the state had asked for the capital to be moved to the middle of South Carolina, not left out on its edge. Charleston rebuilt fast anyway, anxious to keep its place in
   the government.
 
   By the time the work was finished, in seventeen ninety-two, the capital was in Columbia.
 
   So the courts moved in, and they are still there. It is the state's corner of this
   crossing. It just never got the state back.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "You are standing at the crossing of Meeting and Broad."
+    source: 3
+    quote: "the intersection of Meeting and Broad Streets"
+  - says: "Four corners, four buildings."
+    source: 2
+    quote: "the four buildings surrounding it reflect four arms of law--ecclesiastical, state, federal and City Hall's municipal law."
+  - says: "A church, a city hall, a federal post office and court, and a county courthouse."
+    source: 3
+    quote: "The Post Office and Courthouse is the most modern building at the intersection of Meeting and Broad Streets"
+  - says: "Charleston calls this the Four Corners of the Law."
+    source: 2
+    quote: "This central intersection is now called \"Four Corners of the Law,\" as the four buildings surrounding it reflect four arms of law--ecclesiastical, state, federal and City Hall's municipal law."
+  - says: "The law of the church, of the city, of the nation and of the state."
+    source: 3
+    quote: "the buildings that surround it reflect ecclesiastical, municipal, state, and federal law"
+  - says: "It went up in seventeen fifty-three as the statehouse of the colony."
+    source: 1
+    quote: "First built in 1753 as the provincial capitol for the colony of South Carolina"
+  - says: "The Royal Governor's council met upstairs."
+    source: 1
+    quote: "the Commons House of Assembly and the Royal Governor's Council Chamber met on the second floor."
+  - says: "From its balcony over Meeting Street, the Declaration of Independence was read aloud for the first time in South Carolina."
+    source: 1
+    quote: "From the second story balcony overlooking Meeting Street, great affairs of state were announced to the public, including the first reading of the Declaration of Independence in South Carolina."
+  - says: "In seventeen eighty-eight it burned."
+    source: 1
+    quote: "The original building burned during the Constitutional Ratification Convention of 1788"
+  - says: "Only the foundations, the walls and the doorways were left."
+    source: 1
+    quote: "leaving only the foundation, walls and doorways."
+  - says: "The rest of the state had asked for the capital to be moved to the middle of South Carolina, not left out on its edge."
+    source: 4
+    quote: "Now they asked their reward; let the capital be in the centre of the State, equally accessible to all, not on its extreme edge."
+  - says: "Charleston rebuilt fast anyway, anxious to keep its place in the government."
+    source: 1
+    quote: "Anxious to retain their position in the new state government, Charlestonians quickly began reconstruction of the building"
+  - says: "By the time the work was finished, in seventeen ninety-two, the capital was in Columbia."
+    source: 1
+    quote: "By the time of its completion in 1792, Columbia was firmly established as the capital city"
+  - says: "So the courts moved in, and they are still there."
+    source: 1
+    quote: "and still houses court and county government functions."
 sources:
   - title: "Charleston County Courthouse"
     publisher: "National Park Service, Travel Charleston"
     url: https://www.nps.gov/places/charleston-county-courthouse.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Charleston City Hall"
     publisher: "National Park Service, Travel Charleston"
     url: https://www.nps.gov/places/charleston-city-hall.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Charleston United States Post Office"
     publisher: "National Park Service, Travel Charleston"
     url: https://www.nps.gov/places/charleston-united-states-post-office.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the State House and the move to Columbia"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/06042434/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-built-for-a-capital/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 76.1
+    audioBytes: 1218812
+    transcript:
+      totalS: 76.1
+      lines:
+        - text: You are standing at the crossing of Meeting and Broad.
+          atS: 0
+          durationS: 3.34
+        - text: Four corners, four buildings.
+          atS: 3.76
+          durationS: 2.33
+        - text: A church, a city hall, a federal post office and court, and a county courthouse.
+          atS: 6.4
+          durationS: 6.37
+        - text: Charleston calls this the Four Corners of the Law.
+          atS: 13.43
+          durationS: 3.18
+        - text: The law of the church, of the city, of the nation and of the state.
+          atS: 17.1
+          durationS: 5.18
+        - text: Look at the courthouse, on the north-west corner.
+          atS: 23.23
+          durationS: 3.04
+        - text: It was not built to be a courthouse.
+          atS: 27.09
+          durationS: 2
+        - text: It went up in seventeen fifty-three as the statehouse of the colony.
+          atS: 29.41
+          durationS: 4.09
+        - text: The Royal Governor's council met upstairs.
+          atS: 34.19
+          durationS: 2.73
+        - text: From its balcony over Meeting Street, the Declaration of Independence was read aloud for the first time in South Carolina.
+          atS: 37.24
+          durationS: 6.55
+        - text: In seventeen eighty-eight it burned.
+          atS: 44.18
+          durationS: 2.52
+        - text: Only the foundations, the walls and the doorways were left.
+          atS: 47.08
+          durationS: 3.54
+        - text: The rest of the state had asked for the capital to be moved to the middle of South Carolina, not left out on its edge.
+          atS: 50.95
+          durationS: 6.2
+        - text: Charleston rebuilt fast anyway, anxious to keep its place in the government.
+          atS: 57.75
+          durationS: 4.9
+        - text: By the time the work was finished, in seventeen ninety-two, the capital was in Columbia.
+          atS: 63.25
+          durationS: 4.7
+        - text: So the courts moved in, and they are still there.
+          atS: 68.13
+          durationS: 2.61
+        - text: It is the state's corner of this crossing.
+          atS: 71.02
+          durationS: 2.43
+        - text: It just never got the state back.
+          atS: 73.83
+          durationS: 2.29

@@ -9,7 +9,7 @@ at: { lat: 32.08215, lng: -81.09230 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 85
+durationS: 77
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -17,13 +17,13 @@ quality: 0.75
 tags: [savannah, savannah-core, riverfront, shipping, firsts]
 teaser: "The first people to see her cross thought she was burning."
 script: |
-  Look out at the river, and picture a sailing ship like any other, with one odd thing about her. Smoke, and a paddle wheel on each side.
+  Look out at the river, and picture a sailing ship like any other, with something odd about her. Smoke, and a paddle wheel on each side.
 
   She was called the Savannah. Merchants of this city paid for her, at the suggestion of a captain named Moses Rogers, and she was built in the North. In May eighteen nineteen she left this river for Liverpool.
 
   It was cautious engineering. The iron paddle wheels were hinged, so the crew could fold them up onto the deck. She burned pitch pine, not coal, so the engine was used sparingly. Old accounts disagree about how many days it actually ran.
 
-  Off Cape Clear, on the south coast of Ireland, someone saw her coming. A ship under sail, pouring out smoke. She was signalled to Liverpool as a vessel on fire, and a cutter was sent out from Cork to her relief.
+  Off Cape Clear, someone saw her coming. A ship under sail, pouring out smoke. She was signalled to Liverpool as a vessel on fire, and a cutter was sent out from Cork to her relief.
 
   She did not need relief. She went on into Liverpool, and then to Saint Petersburg, and came home to Savannah that November, by one account with not a screw, nor a bolt, nor a rope yarn parted.
 
@@ -33,8 +33,48 @@ script: |
 pronunciations:
   - written: Cape Clear
     say: Cape CLEER
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "She was called the Savannah."
+    source: 2
+    quote: "The. vessel completed, was very properly named the SAVANNAH,"
+  - says: "Merchants of this city paid for her, at the suggestion of a captain named Moses Rogers"
+    source: 2
+    quote: "leading merchants of the City of Savannah, at the suggestion of Captain Moses Rogers, had constructed a steamer for plying between Savannah and Liverpool."
+  - says: "she was built in the North"
+    source: 1
+    quote: "It was built North and named Savannah."
+  - says: "In May eighteen nineteen she left this river for Liverpool."
+    source: 3
+    quote: "She left Savannah in May for Liverpool, and afterwards proceeded to St. Petersburg."
+  - says: "The iron paddle wheels were hinged, so the crew could fold them up onto the deck."
+    source: 2
+    quote: "which enabled the ship’s crew to fold the wheels over on the deck. This was done by means of a derrick, the shaft being hinged."
+  - says: "She burned pitch pine, not coal, so the engine was used sparingly."
+    source: 2
+    quote: "pitch pine was used as fuel, coal not having come into use on steamers. In consequence of having to econo- mize in’ fuel,"
+  - says: "Old accounts disagree about how many days it actually ran."
+    source: 1
+    quote: "accomplishing the voyage in twenty-two days, the sails being used only eight days."
+  - says: "Off Cape Clear, someone saw her coming."
+    source: 1
+    quote: "When the Savannah arrived off Cape Clear she was signalled to Liverpool as a vessel on fire,"
+  - says: "She was signalled to Liverpool as a vessel on fire, and a cutter was sent out from Cork to her relief."
+    source: 1
+    quote: "she was signalled to Liverpool as a vessel on fire, and a cutter was sent from Cork to her relief."
+  - says: "She went on into Liverpool, and then to Saint Petersburg, and came home to Savannah that November"
+    source: 2
+    quote: "after which she sailed for St. Petersburg, where Captain Rogers and his noyel craft were received with every mark of admiration and respect."
+  - says: "came home to Savannah that November, by one account with not a screw, nor a bolt, nor a rope yarn parted"
+    source: 2
+    quote: "on the 20th November, 1819, after a passage of fifty- three days, she steamed safely into the port, whose name she bore, “with neither a screw, nor bolt, nor rope-yarn parted,”"
+  - says: "By this city's proud account, she was the first steamship to cross the Atlantic."
+    source: 3
+    quote: "was the first steamship built in the United States, and the first that ever crossed the Atlantic."
+  - says: "The first people to see her do it thought she was on fire."
+    source: 1
+    quote: "she was signalled to Liverpool as a vessel on fire,"
 sources:
   - title: "Historical record of the city of Savannah (1869), chapter VII"
     publisher: "Library of Congress"
@@ -51,3 +91,59 @@ sources:
     url: https://www.loc.gov/item/01007698/
     retrievedAt: "2026-10-15"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-steamship-savannah/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77.1
+    audioBytes: 1235112
+    transcript:
+      totalS: 77.1
+      lines:
+        - text: Look out at the river, and picture a sailing ship like any other, with something odd about her.
+          atS: 0
+          durationS: 5.47
+        - text: Smoke, and a paddle wheel on each side.
+          atS: 5.98
+          durationS: 2.64
+        - text: She was called the Savannah.
+          atS: 9.31
+          durationS: 1.51
+        - text: Merchants of this city paid for her, at the suggestion of a captain named Moses Rogers, and she was built in the North.
+          atS: 11.63
+          durationS: 7.39
+        - text: In May eighteen nineteen she left this river for Liverpool.
+          atS: 19.98
+          durationS: 3.5
+        - text: It was cautious engineering.
+          atS: 23.99
+          durationS: 1.91
+        - text: The iron paddle wheels were hinged, so the crew could fold them up onto the deck.
+          atS: 26.6
+          durationS: 4.78
+        - text: She burned pitch pine, not coal, so the engine was used sparingly.
+          atS: 31.98
+          durationS: 4.91
+        - text: Old accounts disagree about how many days it actually ran.
+          atS: 37.28
+          durationS: 3.84
+        - text: Off Cape Clear, someone saw her coming.
+          atS: 41.73
+          durationS: 2.93
+        - text: A ship under sail, pouring out smoke.
+          atS: 45.03
+          durationS: 2.68
+        - text: She was signalled to Liverpool as a vessel on fire, and a cutter was sent out from Cork to her relief.
+          atS: 48.23
+          durationS: 6.1
+        - text: She did not need relief.
+          atS: 54.93
+          durationS: 1.56
+        - text: She went on into Liverpool, and then to Saint Petersburg, and came home to Savannah that November, by one account with not a screw, nor a bolt, nor a rope yarn parted.
+          atS: 56.81
+          durationS: 11.18
+        - text: By this city's proud account, she was the first steamship to cross the Atlantic.
+          atS: 68.5
+          durationS: 4.85
+        - text: The first people to see her do it thought she was on fire.
+          atS: 73.68
+          durationS: 3.46

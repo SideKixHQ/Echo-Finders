@@ -115,3 +115,11 @@ spreadsheet** — one afternoon rendering the Lower Manhattan walk both ways.
    whether the airline's contract indemnifies us or we indemnify them. Get this in front
    of a lawyer before the first true-crime echo ships, not after. ADR-0006's
    primary-record rule reduces but does not remove this exposure.
+
+## Reading what listeners send (2026-11-09)
+
+Feedback and suggestions both land in Sentry's **User Feedback** inbox. Suggestions carry
+`source: suggest` and a `kind` tag: `story` and `place` are research leads for editorial
+(checked from scratch, ADR-0013), `mine` is the waiting list for Firsthand recording.
+**Read it once a week**, and answer anyone who left an email and whose suggestion we use:
+the form promises a reply only to those who left one.

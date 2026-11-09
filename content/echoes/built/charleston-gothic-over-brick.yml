@@ -9,7 +9,7 @@ at: { lat: 32.77856, lng: -79.93456 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 85
+durationS: 84
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -18,7 +18,7 @@ tags: [charleston, charleston-core, churches, architecture, gothic-revival]
 teaser: "Crenellated tower, pointed windows, buttresses. Look again at the buttresses."
 script: |
   Look at the Unitarian Church. A tower with battlements, pointed windows, buttresses down
-  the sides. It looks like a piece of medieval England.
+  the sides. It looks like a piece of Gothic England.
 
   Look again at the buttresses.
 
@@ -28,9 +28,7 @@ script: |
 
   The Gothic is a costume. Underneath it is a much plainer building.
 
-  In seventeen seventy-two, work began here on a small rectangular brick church, because the
-  Independent Church over on Meeting Street had more members than it could hold. The
-  Revolution stopped the work. The church was finally finished in seventeen eighty-seven.
+  In seventeen seventy-two, work began here on a small rectangular brick church, because the Independent Church, now the Circular Church, had more members than it could hold. The Revolution interrupted the work. The church was finally finished in seventeen eighty-seven.
 
   Then, in eighteen fifty-two, a young architect named Francis Lee was given two years to
   remake it in the romantic taste of the day. He added the chancel at the back and the
@@ -42,16 +40,127 @@ script: |
   So the oldest Unitarian church in the South is an eighteenth-century meeting house in a
   nineteenth-century dream of the Middle Ages. The brick is still in there, under the
   stucco.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "It looks like a piece of Gothic England."
+    source: 1
+    quote: "This vaulting is modeled on the that of Henry VII chapel at Westminster in London, England."
+  - says: "It looks like a piece of Gothic England."
+    source: 1
+    quote: "The remodeled church exhibited typical Gothic features such as the crenellated tower, arched windows, stained glass panels, and Tudor arch entrance."
+  - says: "According to the Park Service, these are false."
+    source: 1
+    quote: "On the exterior, false buttresses are used for visual effect rather than as structural supports"
+  - says: "Inside, the vaulted ceiling, modelled on the chapel of Henry the Seventh at Westminster, is lath and plaster."
+    source: 1
+    quote: "as is the interior vaulting, made of lath and plaster. This vaulting is modeled on the that of Henry VII chapel at Westminster in London, England."
+  - says: "The Gothic is a costume."
+    source: 1
+    quote: "Architect Francis D. Lee is responsible for the 19th-century Gothic Revival additions to the building."
+  - says: "In seventeen seventy-two, work began here on a small rectangular brick church, because the Independent Church, now the Circular Church, had more members than it could hold."
+    source: 1
+    quote: "In colonial Charleston, members of the Circular Congregational Church (then known as the Independent Church) were so numerous the need arose to build a second church building. Construction began at this Archdale site in 1772"
+  - says: "The Revolution interrupted the work."
+    source: 1
+    quote: "but was temporarily interrupted by the Revolutionary War."
+  - says: "The church was finally finished in seventeen eighty-seven."
+    source: 1
+    quote: "The small rectangular brick church was finally completed in 1787."
+  - says: "The church was finally finished in seventeen eighty-seven."
+    source: 2
+    quote: "It was opened for worship October 25, 1787."
+  - says: "Then, in eighteen fifty-two, a young architect named Francis Lee was given two years to remake it in the romantic taste of the day."
+    source: 2
+    quote: "In 1852 it was decided to remodel the church. The plan of a young architect, F. D. Lee, was adopted"
+  - says: "Then, in eighteen fifty-two, a young architect named Francis Lee was given two years to remake it in the romantic taste of the day."
+    source: 2
+    quote: "Two years were given to the completion of the church."
+  - says: "Then, in eighteen fifty-two, a young architect named Francis Lee was given two years to remake it in the romantic taste of the day."
+    source: 1
+    quote: "the romantic and picturesque were dominant not only in literature but also in building design."
+  - says: "He added the chancel at the back and the four-storey tower, and he covered the old brick walls in stucco."
+    source: 1
+    quote: "In 1852 his two-year renovation of the church began, which included the addition of the rear chancel, a four-story tower and stucco to the original brick walls."
+  - says: "When the earthquake of eighteen eighty-six badly damaged it, people from across the country sent money for the repairs."
+    source: 1
+    quote: "When the building suffered significant damage in the earthquake of 1886, people across the country sent donations to fund repairs."
+  - says: "So the oldest Unitarian church in the South is an eighteenth-century meeting house in a nineteenth-century dream of the Middle Ages."
+    source: 1
+    quote: "is the oldest Unitarian church in the South."
+  - says: "So the oldest Unitarian church in the South is an eighteenth-century meeting house in a nineteenth-century dream of the Middle Ages."
+    source: 1
+    quote: "Architect Francis D. Lee is responsible for the 19th-century Gothic Revival additions to the building."
 sources:
   - title: "Unitarian Church"
     publisher: "National Park Service, Travel Historic Charleston"
     url: https://www.nps.gov/places/unitarian-church.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Charleston, S.C. and vicinity illustrated (1901), the Unitarian Church on Archdale Street"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/02003003/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdc/02003003/02003003.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-gothic-over-brick/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 84
+    audioBytes: 1344617
+    transcript:
+      totalS: 84
+      lines:
+        - text: Look at the Unitarian Church.
+          atS: 0
+          durationS: 2.07
+        - text: A tower with battlements, pointed windows, buttresses down the sides.
+          atS: 2.35
+          durationS: 4.75
+        - text: It looks like a piece of Gothic England.
+          atS: 7.42
+          durationS: 2.32
+        - text: Look again at the buttresses.
+          atS: 10.25
+          durationS: 1.88
+        - text: Buttresses are supposed to hold a building up.
+          atS: 12.46
+          durationS: 2.74
+        - text: According to the Park Service, these are false.
+          atS: 15.58
+          durationS: 3.08
+        - text: They are there for the look.
+          atS: 18.83
+          durationS: 1.51
+        - text: Inside, the vaulted ceiling, modelled on the chapel of Henry the Seventh at Westminster, is lath and plaster.
+          atS: 20.72
+          durationS: 6.71
+        - text: The Gothic is a costume.
+          atS: 27.88
+          durationS: 1.53
+        - text: Underneath it is a much plainer building.
+          atS: 29.65
+          durationS: 2.57
+        - text: In seventeen seventy-two, work began here on a small rectangular brick church, because the Independent Church, now the Circular Church, had more members than it could hold.
+          atS: 32.5
+          durationS: 10.47
+        - text: The Revolution interrupted the work.
+          atS: 43.48
+          durationS: 2.24
+        - text: The church was finally finished in seventeen eighty-seven.
+          atS: 45.81
+          durationS: 3.19
+        - text: Then, in eighteen fifty-two, a young architect named Francis Lee was given two years to remake it in the romantic taste of the day.
+          atS: 49.45
+          durationS: 8.41
+        - text: He added the chancel at the back and the four-storey tower, and he covered the old brick walls in stucco.
+          atS: 58.46
+          durationS: 6.05
+        - text: When the earthquake of eighteen eighty-six badly damaged it, people from across the country sent money for the repairs.
+          atS: 64.83
+          durationS: 7.27
+        - text: So the oldest Unitarian church in the South is an eighteenth-century meeting house in a nineteenth-century dream of the Middle Ages.
+          atS: 72.61
+          durationS: 7.78
+        - text: The brick is still in there, under the stucco.
+          atS: 81.2
+          durationS: 2.76

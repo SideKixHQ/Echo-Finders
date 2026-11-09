@@ -64,6 +64,8 @@ export interface EchoPopupProps {
    * tagged with this echo (`Feedback.tsx`). Absent when the build has nowhere to send it.
    */
   readonly onReport?: (echo: Echo) => void;
+  /** "Know more about this place?": opens the suggestion sheet for this echo's spot. */
+  readonly onSuggest?: (echo: Echo) => void;
   readonly onClose: () => void;
   /** Owner mode (`owner.ts`): Play on every card, wherever the listener is. */
   readonly anywhere?: boolean;
@@ -115,6 +117,7 @@ export function EchoPopup({
   onPlay,
   onCamera,
   onReport,
+  onSuggest,
   onClose,
   anywhere = false,
 }: EchoPopupProps) {
@@ -331,6 +334,16 @@ export function EchoPopup({
         )}
       </div>
 
+      {/*
+        The other half of "Not right?": not that the story is wrong, but that there is more
+        to tell. Last and small, under the actions, because it is an invitation, not a
+        choice the card is asking for.
+      */}
+      {onSuggest && (
+        <button className="pop-suggest" onClick={() => onSuggest(echo)} aria-haspopup="dialog">
+          Know more about this place?
+        </button>
+      )}
     </div>
   );
 }

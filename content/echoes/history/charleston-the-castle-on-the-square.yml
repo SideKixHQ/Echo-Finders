@@ -9,7 +9,7 @@ at: { lat: 32.78735, lng: -79.93580 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 75
+durationS: 73
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -19,33 +19,150 @@ teaser: "It looks like a fortress because it was one."
 script: |
   Look at the long building on the north side of the square. Battlements along the roof. Towers at the corners. It looks like a fortress because it was meant to be one. Not against a foreign army.
 
-  In eighteen twenty two, the authorities said they had uncovered a plan by enslaved Charlestonians to rise and take the city. In the aftermath, the state built an arsenal here, with a guard of armed men to live in it and patrol the streets. When federal surveyors described the building in the nineteen fifties, they put its purpose plainly. A safeguard against slave uprisings.
+  In eighteen twenty two, the authorities said they had uncovered a plan by enslaved Charlestonians to rise and take the city. In the aftermath, the state built an arsenal here, to house a guard of armed men who patrolled the city. When federal surveyors described the building in the nineteen fifties, they put its purpose plainly. A safeguard against slave uprisings.
 
-  In the eighteen forties the guard was disbanded. Cadets of a new state military academy moved in and took over its duties. That academy was the Citadel. For decades its cadets drilled on the grass in front of you, which was called Citadel Green.
+  In the eighteen forties, cadets of a new state military academy moved in. That academy was the Citadel. For decades its cadets drilled and paraded on the grass in front of you, which was called Citadel Green.
 
-  The building kept growing. A third storey, then wings, then a fourth. In nineteen twenty two the cadets left for a new campus, and the green was renamed for Francis Marion.
+  The building kept growing. A third storey, then wings, then a fourth. In nineteen twenty two the academy left the building, and after it moved away the green was renamed for Francis Marion.
 
   The building is a hotel now. It still has the battlements.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Look at the long building on the north side of the square."
+    source: 1
+    quote: "SOUTH CAROLINA STATE ARSENAL (\"OLD CITADEL\") Address: North side of Marion Square"
+  - says: "Towers at the corners."
+    source: 1
+    quote: "This has projecting three-story towers at the corners"
+  - says: "It looks like a fortress because it was meant to be one."
+    source: 1
+    quote: "An interesting example of military architecture"
+  - says: "In eighteen twenty two, the authorities said they had uncovered a plan by enslaved Charlestonians to rise and take the city."
+    source: 3
+    quote: "allegedly planned an enslaved insurrection to coincide with Bastille Day in Charleston, South Carolina in 1822."
+  - says: "In eighteen twenty two, the authorities said they had uncovered a plan by enslaved Charlestonians to rise and take the city."
+    source: 3
+    quote: "His plans called for his followers to execute the white enslavers, liberate the city of Charleston"
+  - says: "In the aftermath, the state built an arsenal here, to house a guard of armed men who patrolled the city."
+    source: 2
+    quote: "Built, in part, to house a garrison of militia troops who patrolled the city following discovery of Denmark Vessey’s plotted slave revolt in 1822"
+  - says: "In the aftermath, the state built an arsenal here, to house a guard of armed men who patrolled the city."
+    source: 3
+    quote: "Funds were appropriated to support a Municipal Guard of 150 men and the construction of \"a Citadel\" to house them and weapons."
+  - says: "When federal surveyors described the building in the nineteen fifties, they put its purpose plainly."
+    source: 1
+    quote: "Prepared by Beatrice St. J. Ravenel Architectural Historian Charleston July 1958"
+  - says: "A safeguard against slave uprisings."
+    source: 1
+    quote: "This early nineteenth-century building was intended of Significance: as a safeguard against slave uprisings"
+  - says: "In the eighteen forties, cadets of a new state military academy moved in."
+    source: 3
+    quote: "In 1843, the structure became home to the cadets of the South Carolina Military Academy."
+  - says: "That academy was the Citadel."
+    source: 1
+    quote: "Home of the South Carolina Military Academy (The Citadel)"
+  - says: "For decades its cadets drilled and paraded on the grass in front of you, which was called Citadel Green."
+    source: 2
+    quote: "Cadet drills and parade continued in Citadel Green"
+  - says: "The building kept growing."
+    source: 1
+    quote: "Third story added, 1849; wings added to center building, 1854"
+  - says: "A third storey, then wings, then a fourth."
+    source: 1
+    quote: "Third story added, 1849; wings added to center building, 1854"
+  - says: "A third storey, then wings, then a fourth."
+    source: 1
+    quote: "Fourth story added, 1910"
+  - says: "In nineteen twenty two the academy left the building, and after it moved away the green was renamed for Francis Marion."
+    source: 1
+    quote: "1843-1922"
+  - says: "In nineteen twenty two the academy left the building, and after it moved away the green was renamed for Francis Marion."
+    source: 2
+    quote: "Following the closure of the Citadel’s downtown location, Citadel Green was renamed Marion Square."
+  - says: "In nineteen twenty two the academy left the building, and after it moved away the green was renamed for Francis Marion."
+    source: 2
+    quote: "Marion Square is named in honor of Francis Marion, Revolutionary War general"
+  - says: "The building is a hotel now."
+    source: 2
+    quote: "Now a hotel, the historic buildings that once housed the Citadel visually frame the northern edge of the square."
 sources:
   - title: "South Carolina State Arsenal (Old Citadel), HABS SC-184, data pages"
     publisher: "Historic American Buildings Survey, Library of Congress"
-    url: https://www.loc.gov/item/sc0013/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc0000/sc0013/data/sc0013data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Marion Square (Citadel Green), HALS SC-17, data pages"
     publisher: "Historic American Landscapes Survey, Library of Congress"
-    url: https://www.loc.gov/item/sc1226/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc1200/sc1226/data/sc1226data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Denmark Vesey"
     publisher: "National Park Service"
     url: https://www.nps.gov/people/denmark-vesey.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Guide to Charleston, S. C.; with brief history of the city and a map thereof (1919)"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/20002718/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/guidetocharlesto00walk/guidetocharlesto00walk.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-castle-on-the-square/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72.5
+    audioBytes: 1161551
+    transcript:
+      totalS: 72.5
+      lines:
+        - text: Look at the long building on the north side of the square.
+          atS: 0
+          durationS: 3.18
+        - text: Battlements along the roof.
+          atS: 3.42
+          durationS: 1.65
+        - text: Towers at the corners.
+          atS: 5.32
+          durationS: 1.56
+        - text: It looks like a fortress because it was meant to be one.
+          atS: 7.38
+          durationS: 3.41
+        - text: Not against a foreign army.
+          atS: 11.08
+          durationS: 2.08
+        - text: In eighteen twenty two, the authorities said they had uncovered a plan by enslaved Charlestonians to rise and take the city.
+          atS: 14.45
+          durationS: 7.69
+        - text: In the aftermath, the state built an arsenal here, to house a guard of armed men who patrolled the city.
+          atS: 22.52
+          durationS: 6.86
+        - text: When federal surveyors described the building in the nineteen fifties, they put its purpose plainly.
+          atS: 29.99
+          durationS: 5.68
+        - text: A safeguard against slave uprisings.
+          atS: 35.99
+          durationS: 2.83
+        - text: In the eighteen forties, cadets of a new state military academy moved in.
+          atS: 39.52
+          durationS: 4.8
+        - text: That academy was the Citadel.
+          atS: 44.76
+          durationS: 2.05
+        - text: For decades its cadets drilled and paraded on the grass in front of you, which was called Citadel Green.
+          atS: 47.2
+          durationS: 6.74
+        - text: The building kept growing.
+          atS: 54.45
+          durationS: 1.44
+        - text: A third storey, then wings, then a fourth.
+          atS: 56.22
+          durationS: 3.18
+        - text: In nineteen twenty two the academy left the building, and after it moved away the green was renamed for Francis Marion.
+          atS: 59.91
+          durationS: 7.29
+        - text: The building is a hotel now.
+          atS: 68.01
+          durationS: 1.66
+        - text: It still has the battlements.
+          atS: 70.18
+          durationS: 2.36

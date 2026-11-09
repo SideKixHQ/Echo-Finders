@@ -9,7 +9,7 @@ at: { lat: 32.79025, lng: -79.92630 }
 triggerRadiusKm: 0.05
 category: people
 format: short
-durationS: 78
+durationS: 76
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -17,9 +17,9 @@ quality: 0.75
 tags: [charleston, charleston-core, american-revolution, waterfront]
 teaser: "Brick and wood, clay and timber."
 script: |
-  The ground under this square was once part of a wharf. A big one, on the Cooper River, built by a merchant named Christopher Gadsden.
+  Part of this waterfront was once a wharf. A big one, on the Cooper River, built by a merchant named Christopher Gadsden.
 
-  By seventeen seventy four, Gadsden owned four stores, merchant ships, two rice plantations, and a whole district of Charleston. The wharf had just been finished, at great cost. To pay for itself, it needed ships, and trade.
+  By seventeen seventy four, Gadsden owned four stores, several merchant ships, two rice plantations, and a whole district of Charleston. The wharf had just been finished, at great cost. To pay for itself, it needed ships, and trade.
 
   That year he went to Philadelphia, to the first Continental Congress. And there he argued for cutting off all trade with Britain. Others wanted South Carolina's rice and indigo left out of the boycott. Gadsden did not.
 
@@ -27,20 +27,131 @@ script: |
 
   When nervous delegates warned that the coastal towns could be shelled, Gadsden's reply was later written down like this. Our seaport towns are composed of brick and wood. If they are destroyed, we have clay and timber enough to rebuild them. But if the liberties of our country are destroyed, where shall we find the material to replace them?
 
-  He was ready to let the wharf stand empty. A piece of it is still here, under the visitor centre beside you.
-editorial: draft
+  He was ready to let the wharf stand empty. Part of it is now the site of the visitor centre beside you.
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "A big one, on the Cooper River, built by a merchant named Christopher Gadsden."
+    source: 1
+    quote: "a large wharf on the Cooper River."
+  - says: "A big one, on the Cooper River, built by a merchant named Christopher Gadsden."
+    source: 1
+    quote: "Gadsden started one of the most profitable mercantile careers in the Carolinas."
+  - says: "By seventeen seventy four, Gadsden owned four stores, several merchant ships, two rice plantations, and a whole district of Charleston."
+    source: 1
+    quote: "By 1774, he owned four stores, several merchant vessels, two rice plantations, a residential district in Charleston called Gadsdenboro, and a large wharf on the Cooper River."
+  - says: "The wharf had just been finished, at great cost."
+    source: 2
+    quote: "He had just finished a large wharf in Charleston at great cost"
+  - says: "To pay for itself, it needed ships, and trade."
+    source: 2
+    quote: "his hope of reimbursement would be dashed to the ground if trade were suspended"
+  - says: "That year he went to Philadelphia, to the first Continental Congress."
+    source: 2
+    quote: "They chose representatives to the Congress at Philadelphia. Christopher Gadsden, Thomas Lynch and Edward Rutledge"
+  - says: "That year he went to Philadelphia, to the first Continental Congress."
+    source: 1
+    quote: "Gadsden’s influence and dedication earned him election to the First Continental Congress"
+  - says: "And there he argued for cutting off all trade with Britain."
+    source: 2
+    quote: "this did not deter him from urging a complete severance of all commercial rela- tions with Great Britain."
+  - says: "Others wanted South Carolina's rice and indigo left out of the boycott."
+    source: 2
+    quote: "withstood his asso- ciates who wished in the interests of South Carolina to except rice and indigo from the general non-exportation agreement."
+  - says: "Gadsden did not."
+    source: 2
+    quote: "withstood his asso- ciates"
+  - says: "If he won, his own wharf would sit idle."
+    source: 2
+    quote: "his hope of reimbursement would be dashed to the ground if trade were suspended"
+  - says: "When nervous delegates warned that the coastal towns could be shelled, Gadsden's reply was later written down like this."
+    source: 2
+    quote: "‘Timid members had mentioned the alarming dangers to which our coast cities were subjected."
+  - says: "Our seaport towns are composed of brick and wood."
+    source: 2
+    quote: "“Our seaport towns, Mr. President,” replied Gadsden, “are composed of brick and wood;"
+  - says: "If they are destroyed, we have clay and timber enough to rebuild them."
+    source: 2
+    quote: "if they are destroyed we have clay and timber enough to rebuild them."
+  - says: "But if the liberties of our country are destroyed, where shall we find the material to replace them?"
+    source: 2
+    quote: "But if the liberties of our country are destroyed where shall we find the material to replace them."
+  - says: "He was ready to let the wharf stand empty."
+    source: 2
+    quote: "but this did not deter him"
+  - says: "Part of it is now the site of the visitor centre beside you."
+    source: 1
+    quote: "A portion of Gadsden’s Wharf is now the site of the Liberty Square Visitor Education Center, a ferry departure location for Fort Sumter."
 sources:
   - title: "Christopher Gadsden"
     publisher: "National Park Service"
     url: https://www.nps.gov/people/christopher-gadsden.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Christopher Gadsden, by E. I. Renick (Publications of the Southern History Association, 1898)"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/05013227/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/christophergadsd00reni/christophergadsd00reni.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
 pronunciations:
   - written: Gadsden
     say: GADZ-den
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-a-wharf-he-was-willing-to-lose/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 76
+    audioBytes: 1217558
+    transcript:
+      totalS: 76
+      lines:
+        - text: Part of this waterfront was once a wharf.
+          atS: 0
+          durationS: 2.6
+        - text: A big one, on the Cooper River, built by a merchant named Christopher Gadsden.
+          atS: 2.93
+          durationS: 4.6
+        - text: By seventeen seventy four, Gadsden owned four stores, several merchant ships, two rice plantations, and a whole district of Charleston.
+          atS: 8.22
+          durationS: 8.87
+        - text: The wharf had just been finished, at great cost.
+          atS: 17.53
+          durationS: 3.16
+        - text: To pay for itself, it needed ships, and trade.
+          atS: 21.01
+          durationS: 3.74
+        - text: That year he went to Philadelphia, to the first Continental Congress.
+          atS: 25.7
+          durationS: 4.42
+        - text: And there he argued for cutting off all trade with Britain.
+          atS: 30.57
+          durationS: 3.19
+        - text: Others wanted South Carolina's rice and indigo left out of the boycott.
+          atS: 34.71
+          durationS: 4.31
+        - text: Gadsden did not.
+          atS: 39.53
+          durationS: 1.48
+        - text: If he won, his own wharf would sit idle.
+          atS: 41.28
+          durationS: 2.9
+        - text: He argued for it anyway.
+          atS: 44.79
+          durationS: 1.55
+        - text: When nervous delegates warned that the coastal towns could be shelled, Gadsden's reply was later written down like this.
+          atS: 46.85
+          durationS: 6.85
+        - text: Our seaport towns are composed of brick and wood.
+          atS: 54.81
+          durationS: 3.12
+        - text: If they are destroyed, we have clay and timber enough to rebuild them.
+          atS: 58.63
+          durationS: 3.95
+        - text: But if the liberties of our country are destroyed, where shall we find the material to replace them?
+          atS: 63.53
+          durationS: 5.14
+        - text: He was ready to let the wharf stand empty.
+          atS: 69.37
+          durationS: 2.61
+        - text: Part of it is now the site of the visitor centre beside you.
+          atS: 72.68
+          durationS: 3.34

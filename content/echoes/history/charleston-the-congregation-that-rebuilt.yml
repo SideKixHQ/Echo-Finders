@@ -9,14 +9,11 @@ at: { lat: 32.78728, lng: -79.93302 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 86
+durationS: 85
 visibility: at-hand
 certainty: contested
 certaintyNote: >-
-  The two NPS pages differ on the 1822 plot. The church page gives 313 arrested and says the
-  church was burned; the Denmark Vesey page gives 131 arrested and charged, 67 convicted,
-  calls the plot alleged, and says white Charlestonians tore the church down. Both give 35
-  executed. The script hedges the arrests, the plan and the destruction.
+  The two NPS pages differ on the 1822 plot. The church page gives 313 arrested and says the church was burned; the Denmark Vesey page gives 131 arrested and charged, 67 convicted, calls the plot alleged, and says white Charlestonians tore the church down. Both give 35 executed. The script hedges the arrests, the plan and the destruction.
 minAge: 12
 quality: 0.75
 tags: [charleston, charleston-core, denmark-vesey, african-american-history, churches]
@@ -32,24 +29,156 @@ script: |
 
   The congregation rebuilt. In eighteen thirty four, all Black churches were outlawed, so they met in secret. In eighteen sixty five they organised again, openly, and took a new name. Emanuel.
 
-  On a June evening in two thousand fifteen, nine of its members were killed at Bible study in this building, and the congregation endured that too.
+  On a June evening in two thousand fifteen, nine people were killed at Bible study in this building, and the congregation endured that too.
 
   The building is from eighteen ninety one. The congregation has been rebuilding since eighteen twenty two.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "This church was built in eighteen ninety one."
+    source: 1
+    quote: "is a Gothic Revival style church built in 1891."
+  - says: "The congregation inside it is much older, and for about thirty years it had no legal right to meet at all."
+    source: 1
+    quote: "Worship services continued after the church was rebuilt until 1834 when all-Black churches were outlawed. The congregation subsequently met in secret until 1865"
+  - says: "It begins with a lottery ticket."
+    source: 1
+    quote: "when he was able to purchase his freedom with a winning lottery ticket worth $1500."
+  - says: "In seventeen ninety nine, a Charleston carpenter named Denmark Vesey won fifteen hundred dollars, and used it to buy his own freedom."
+    source: 2
+    quote: "After winning a $1,500 lottery in 1799, Vesey purchased his freedom and set up a carpentry shop in Charleston"
+  - says: "Vesey was one of the founders of the African Church, the congregation that became this one."
+    source: 1
+    quote: "led by Denmark Vesey, one of the church's founders."
+  - says: "Vesey was one of the founders of the African Church, the congregation that became this one."
+    source: 2
+    quote: "worshiped at the African Church, the AME congregation which became Mother Emanuel after the Civil War."
+  - says: "In eighteen twenty two, the authorities said, he was at the centre of a plan for the enslaved people of the city to rise and win their freedom."
+    source: 1
+    quote: "In 1822 the church was investigated for its involvement with a planned uprising of enslaved Africans led by Denmark Vesey"
+  - says: "In eighteen twenty two, the authorities said, he was at the centre of a plan for the enslaved people of the city to rise and win their freedom."
+    source: 1
+    quote: "he formulated a plan to win freedom for the enslaved people of the city."
+  - says: "The plan was betrayed before it began."
+    source: 2
+    quote: "Two of the slaves involved leaked details of the plot before it could be implemented."
+  - says: "More than a hundred people were arrested."
+    source: 2
+    quote: "Out of 131 men arrested and charged with conspiracy, 67 were convicted and 35 were hanged, including Vesey."
+  - says: "More than a hundred people were arrested."
+    source: 1
+    quote: "Three hundred and thirteen alleged participants were arrested, and 35 (including Vesey) were executed."
+  - says: "Thirty five men were hanged, Vesey among them."
+    source: 2
+    quote: "35 were hanged, including Vesey."
+  - says: "And the church was destroyed."
+    source: 1
+    quote: "During the Vesey controversy, the AME church was burned."
+  - says: "Accounts differ on whether it was burned or torn down."
+    source: 1
+    quote: "During the Vesey controversy, the AME church was burned."
+  - says: "Accounts differ on whether it was burned or torn down."
+    source: 2
+    quote: "In the aftermath of the execution, white Charlestonians tore down the church"
+  - says: "The congregation rebuilt."
+    source: 1
+    quote: "Worship services continued after the church was rebuilt"
+  - says: "In eighteen thirty four, all Black churches were outlawed, so they met in secret."
+    source: 1
+    quote: "until 1834 when all-Black churches were outlawed. The congregation subsequently met in secret"
+  - says: "In eighteen sixty five they organised again, openly, and took a new name."
+    source: 1
+    quote: "until 1865 when it was formally reorganized, and the name Emanuel was adopted."
+  - says: "Emanuel."
+    source: 1
+    quote: "the name Emanuel was adopted."
+  - says: "On a June evening in two thousand fifteen, nine people were killed at Bible study in this building, and the congregation endured that too."
+    source: 1
+    quote: "On the evening of June 17, 2015, a man opened fire on a Bible study group inside the church. The shooting left six women and three men dead"
+  - says: "The building is from eighteen ninety one."
+    source: 1
+    quote: "built in 1891."
+  - says: "The congregation has been rebuilding since eighteen twenty two."
+    source: 1
+    quote: "During the Vesey controversy, the AME church was burned. Worship services continued after the church was rebuilt"
 sources:
   - title: "South Carolina: Mother Emanuel AME Church"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/south-carolina-mother-emanuel-ame-church.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Denmark Vesey"
     publisher: "National Park Service"
     url: https://www.nps.gov/people/denmark-vesey.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
 pronunciations:
   - written: Denmark Vesey
     say: DEN-mark VEE-zee
   - written: Calhoun Street
     say: kal-HOON Street
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-congregation-that-rebuilt/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 84.9
+    audioBytes: 1360082
+    transcript:
+      totalS: 84.9
+      lines:
+        - text: Look up at the steeple.
+          atS: 0
+          durationS: 1.32
+        - text: This church was built in eighteen ninety one.
+          atS: 1.5
+          durationS: 2.74
+        - text: The congregation inside it is much older, and for about thirty years it had no legal right to meet at all.
+          atS: 4.62
+          durationS: 6.48
+        - text: It begins with a lottery ticket.
+          atS: 11.42
+          durationS: 1.95
+        - text: In seventeen ninety nine, a Charleston carpenter named Denmark Vesey won fifteen hundred dollars, and used it to buy his own freedom.
+          atS: 13.76
+          durationS: 9.01
+        - text: Vesey was one of the founders of the African Church, the congregation that became this one.
+          atS: 23.88
+          durationS: 5.26
+        - text: In eighteen twenty two, the authorities said, he was at the centre of a plan for the enslaved people of the city to rise and win their freedom.
+          atS: 30.09
+          durationS: 8.87
+        - text: The plan was betrayed before it began.
+          atS: 39.24
+          durationS: 2.88
+        - text: More than a hundred people were arrested.
+          atS: 42.45
+          durationS: 2.41
+        - text: Thirty five men were hanged, Vesey among them.
+          atS: 45.19
+          durationS: 3.26
+        - text: And the church was destroyed.
+          atS: 48.69
+          durationS: 1.81
+        - text: Accounts differ on whether it was burned or torn down.
+          atS: 51.01
+          durationS: 3.2
+        - text: The congregation rebuilt.
+          atS: 54.73
+          durationS: 1.92
+        - text: In eighteen thirty four, all Black churches were outlawed, so they met in secret.
+          atS: 57.16
+          durationS: 5.28
+        - text: In eighteen sixty five they organised again, openly, and took a new name.
+          atS: 62.82
+          durationS: 4.92
+        - text: Emanuel.
+          atS: 68.19
+          durationS: 0.93
+        - text: On a June evening in two thousand fifteen, nine people were killed at Bible study in this building, and the congregation endured that too.
+          atS: 69.93
+          durationS: 8.64
+        - text: The building is from eighteen ninety one.
+          atS: 79.17
+          durationS: 1.95
+        - text: The congregation has been rebuilding since eighteen twenty two.
+          atS: 81.27
+          durationS: 3.67
