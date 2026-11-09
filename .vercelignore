@@ -8,3 +8,5 @@ docs/*
 !docs/refund-policy.md
 scripts/render-echo.mjs
 scripts/voice-info.mjs
+# The iPhone app is built by Expo (EAS), not Vercel.
+apps/ios/
