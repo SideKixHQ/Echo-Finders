@@ -110,6 +110,11 @@ export interface RailProps {
    */
   readonly onCity?: () => void;
   readonly onRoseView?: () => void;
+  /**
+   * "Know a story here?" (James, 2026-11-09: "add it to the echo card and the map").
+   * Last in the column: the map's own controls come first, and this one is an invitation.
+   */
+  readonly onSuggest?: () => void;
 }
 
 function RailInner({
@@ -125,6 +130,7 @@ function RailInner({
   roseBackLabel,
   onCity,
   onRoseView,
+  onSuggest,
 }: RailProps) {
   return (
     <div className="rail">
@@ -280,6 +286,16 @@ function RailInner({
         This also buys the map back a fab's worth of column, which is the whole reason the
         column had to learn to wrap into two on a short phone.
       */}
+
+      {/* Know a story here? A speech bubble with a plus: something to add, said aloud. */}
+      {onSuggest && (
+        <button className="fab fab-suggest" onClick={onSuggest} aria-haspopup="dialog" aria-label="Know a story here?">
+          <svg viewBox="0 0 24 24">
+            <path d="M20 12.5a7.5 7.5 0 0 1-11 6.6L4 20.5l1.4-4.6A7.5 7.5 0 1 1 20 12.5z" />
+            <path d="M12.5 9v7M9 12.5h7" />
+          </svg>
+        </button>
+      )}
     </div>
   );
 }

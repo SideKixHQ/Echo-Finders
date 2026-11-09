@@ -18,6 +18,7 @@
  */
 
 import { useState } from "react";
+import type { Echo } from "@echofinders/core";
 import { MAX_MESSAGE, SUGGEST_KINDS, sendFeedback, type SuggestKind, type SuggestedSpot } from "./feedback";
 
 type Status = "idle" | "sending" | "sent" | "failed";
@@ -40,9 +41,18 @@ function here(): Promise<SuggestedSpot> {
   });
 }
 
-export function SuggestForm({ dsn, release, onCancel }: { readonly dsn: string | undefined; readonly release: string; readonly onCancel: () => void }) {
-  const [kind, setKind] = useState<SuggestKind | undefined>(undefined);
-  const [place, setPlace] = useState("");
+interface FormProps {
+  readonly dsn: string | undefined;
+  readonly release: string;
+  readonly onCancel: () => void;
+  readonly initialKind?: SuggestKind;
+  /** The echo whose card it was opened from: its place is filled in and the story tagged. */
+  readonly echo?: Echo;
+}
+
+export function SuggestForm({ dsn, release, onCancel, initialKind, echo }: FormProps) {
+  const [kind, setKind] = useState<SuggestKind | undefined>(initialKind);
+  const [place, setPlace] = useState(echo ? echo.point.place : "");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
   const [at, setAt] = useState<SuggestedSpot | undefined>(undefined);
@@ -73,12 +83,13 @@ export function SuggestForm({ dsn, release, onCancel }: { readonly dsn: string |
       email,
       place,
       ...(at ? { at } : {}),
+      ...(echo ? { echo: { id: echo.id, title: echo.title } } : {}),
       source: "suggest",
     });
     setStatus(ok ? "sent" : "failed");
     if (ok) {
       setMessage("");
-      setPlace("");
+      setPlace(echo ? echo.point.place : "");
       setEmail("");
       setAt(undefined);
       setLocating("off");
@@ -89,8 +100,8 @@ export function SuggestForm({ dsn, release, onCancel }: { readonly dsn: string |
     return (
       <div className="feedback-done" role="status">
         <strong>{kind === "mine" ? "Thank you. We'll let you know when you can record it." : "Thank you. We'll look into it."}</strong>
-        <button className="feedback-link" onClick={() => setStatus("idle")}>
-          Suggest another
+        <button className="feedback-link" onClick={echo ? onCancel : () => setStatus("idle")}>
+          {echo ? "Done" : "Suggest another"}
         </button>
       </div>
     );
@@ -185,5 +196,42 @@ export function Suggest({ dsn, release }: { readonly dsn: string | undefined; re
         </button>
       )}
     </section>
+  );
+}
+
+/**
+ * The same form in a sheet, from the map's rail ("Know a story here?") or from an echo's
+ * card ("Know more about this place?"), where the place is already filled in. A story is
+ * remembered at the spot, so the ask belongs where the listener is looking at that spot,
+ * not three taps away in Settings (James, 2026-11-09: "add it to the echo card and the map").
+ */
+export function SuggestSheet({
+  dsn,
+  release,
+  echo,
+  onClose,
+}: {
+  readonly dsn: string | undefined;
+  readonly release: string;
+  readonly echo?: Echo;
+  readonly onClose: () => void;
+}) {
+  return (
+    <div className="atr feedback" role="dialog" aria-label="Know a story?">
+      <div className="atr-head">
+        <div className="atr-what">
+          <h2>{echo ? "Know more about this place?" : "Know a story here?"}</h2>
+          <p>{echo ? echo.point.place.split(",")[0] : "A story, a place, or something that happened to you"}</p>
+        </div>
+        <button className="pw-close" onClick={onClose} aria-label="Close">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+      <div className="report-body">
+        <SuggestForm dsn={dsn} release={release} onCancel={onClose} {...(echo ? { initialKind: "story" as const, echo } : {})} />
+      </div>
+    </div>
   );
 }

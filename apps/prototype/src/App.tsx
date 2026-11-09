@@ -12,6 +12,7 @@ import { Collection } from "./Collection";
 import { IndexedDbCollection } from "./collection-store";
 import { Privacy } from "./Privacy";
 import { ReportEcho } from "./Feedback";
+import { SuggestSheet } from "./Suggest";
 import { feedbackAvailable } from "./feedback";
 import { SENTRY_DSN } from "./error-report";
 import { readSettings, saveSettings } from "./settings-store";
@@ -1588,6 +1589,9 @@ export function App() {
   const [routePicker, setRoutePicker] = useState<Echo | null>(null);
   /** The echo whose "Something wrong with this story?" is open (`ReportEcho`). */
   const [reporting, setReporting] = useState<Echo | null>(null);
+  /** "Know a story?" open from the map (true) or from an echo's card (that echo). */
+  const [suggesting, setSuggesting] = useState<Echo | true | null>(null);
+  const openSuggest = useCallback(() => setSuggesting(true), []);
   const [deletedRoute, setDeletedRoute] = useState<{ route: SavedRoute; index: number } | null>(null);
   const [echoesView, setEchoesView] = useState<"echoes" | "routes">("echoes");
   const ordered = (ids: readonly string[]) => {
@@ -2141,6 +2145,8 @@ export function App() {
                    nothing at 500 knots. Carried modes never had it and still do not. */
                 {...(onFoot ? { humming, onHum: setHumming } : {})}
                 {...(selfDirected ? { sonar: sound, onSonar: setSound } : {})}
+                /* On the ground only: from a seat at 35,000 feet there is no "here". */
+                {...(selfDirected && feedbackAvailable(SENTRY_DSN) ? { onSuggest: openSuggest } : {})}
                 overview={overview}
                 /*
                   Recentre is the way back from a drag, and it has to work even when the
@@ -2241,10 +2247,18 @@ export function App() {
                     now from 35,000 feet.
                   */
                   {...(selfDirected ? { onCamera: setCamera } : {})}
-                  {...(feedbackAvailable(SENTRY_DSN) ? { onReport: setReporting } : {})}
+                  {...(feedbackAvailable(SENTRY_DSN) ? { onReport: setReporting, onSuggest: setSuggesting } : {})}
                   onClose={() => setSelectedId(null)}
                 />
               ) : null}
+              {suggesting && (
+                <SuggestSheet
+                  dsn={SENTRY_DSN}
+                  release={__BUILD_COMMIT__}
+                  {...(suggesting === true ? {} : { echo: suggesting })}
+                  onClose={() => setSuggesting(null)}
+                />
+              )}
               {reporting && (
                 <ReportEcho
                   echo={reporting}

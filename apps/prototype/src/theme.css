@@ -5149,6 +5149,15 @@ body.seat { padding: 0; display: block; }
   font-size: 13px; color: var(--muted); cursor: pointer;
 }
 .suggest-here input { width: 20px; height: 20px; accent-color: var(--aqua); flex: none; }
+/* The echo card's "Know more about this place?" (EchoPopup.tsx): small to look at, a 44px
+   thumb to hit, centred under the actions like a footnote. */
+.pop-suggest {
+  display: block; margin: 2px auto -8px; min-height: 44px; padding: 0 8px;
+  background: none; border: 0; cursor: pointer; font: inherit; font-size: 12.5px;
+  color: var(--muted); text-decoration: underline; text-underline-offset: 3px;
+  text-decoration-color: var(--line-2);
+}
+.pop-suggest:hover, .pop-suggest:focus-visible { color: var(--aqua-ink); }
 
 /* The echo card's "Not right?" (EchoPopup.tsx), at the end of the true-story line.
    Small to look at, a 44px thumb to hit, like the chips. */
