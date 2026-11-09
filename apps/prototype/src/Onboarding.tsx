@@ -24,7 +24,7 @@
  * `CAPABILITY_NEEDS` and arrive after the listener has said they want to walk around here.
  */
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MODE_ICON } from "./travel";
 import { lookupFlight } from "./flights";
 import { CAPABILITY_NEEDS, type EchoCategory, type TravelMode } from "@echofinders/core";
@@ -43,6 +43,8 @@ export interface OnboardingProps {
   readonly onAllCats: () => void;
   /** Hear the narrator, so a volume can be set before anybody is out in the street. */
   readonly onTestLine: () => void;
+  /** Stop the test line. Called when the listener leaves the headphones step, however. */
+  readonly onStopTest: () => void;
   /**
    * Done. `roaming` true means free roam from here; false means they picked a journey.
    * `mode` is how they are travelling, which decides what syncing an echo even means.
@@ -113,6 +115,7 @@ export function Onboarding({
   onToggleCats,
   onAllCats,
   onTestLine,
+  onStopTest,
   onDone,
   routes,
   onFlight,
@@ -136,6 +139,20 @@ export function Onboarding({
   const drives = routes.filter((route) => route.mode === "driving");
   const matched = lookupFlight(flight);
   const matchedRoute = matched ? routes.find((r) => r.id === matched) : undefined;
+
+  /*
+   * The test line is a real echo through the real player, so it kept talking after the
+   * listener moved on, into the map and on (James, 2026-11-08: "it doesnt stop playing
+   * even when i leave the screen"). Leaving the headphones step any way at all, Continue,
+   * Back, Skip, stops it.
+   */
+  const onHeadphones = (roaming && step === 4) || (!roaming && step === 5);
+  const stopTest = useRef(onStopTest);
+  stopTest.current = onStopTest;
+  useEffect(() => {
+    if (!onHeadphones) return;
+    return () => stopTest.current();
+  }, [onHeadphones]);
 
   const next = () => setStep((s) => Math.min(lastStep(roaming), s + 1));
   const back = () => setStep((s) => Math.max(0, s - 1));
@@ -472,7 +489,7 @@ export function Onboarding({
           </>
         )}
 
-        {((roaming && step === 4) || (!roaming && step === 5)) && (
+        {onHeadphones && (
           <>
             <h2>Check your headphones</h2>
             <p className="onb-lead">
