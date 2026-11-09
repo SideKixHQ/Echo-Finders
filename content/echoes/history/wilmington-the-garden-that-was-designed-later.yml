@@ -96,3 +96,9 @@ renders:
         - text: "This landscape records two eras at once: the colonial world it evokes and the twentieth-century preservation work that chose how that world would be presented."
           atS: 45.37
           durationS: 10.91
+archive:
+  - imageKey: archive/loc-csas-02934.jpg
+    year: 1935
+    caption: "Burgwin-Wright House garden wall, before the 1962 garden"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2729, between 1935 and 1938), https://www.loc.gov/item/2017888666/"
+    rights: public-domain

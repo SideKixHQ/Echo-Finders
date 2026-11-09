@@ -12912,6 +12912,15 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02933.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2728, between 1935 and 1938), https://www.loc.gov/item/2017888665/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "Burgwin-Wright House garden gate in the brick lattice wall"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -13073,6 +13082,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02919.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2714, between 1935 and 1938), https://www.loc.gov/item/2017888651/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "The Bellamy house from the corner, belvedere on the roof"
+      }
     ],
     "remoteness": 0
   },
@@ -13239,6 +13257,15 @@ export const LIBRARY: readonly Echo[] = [
       "sleepy-hollow",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02920.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2715, between 1935 and 1938), https://www.loc.gov/item/2017888652/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "The Bellamy house columns and portico from the street"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -13395,6 +13422,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02923.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2718, between 1935 and 1938), https://www.loc.gov/item/2017888655/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "Burgwin-Wright House front steps and double porch"
+      }
     ],
     "remoteness": 0
   },
@@ -13806,6 +13842,15 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02950.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2744, 1938), https://www.loc.gov/item/2017888682/",
+        "rights": "public-domain",
+        "year": 1938,
+        "caption": "St. James Church, its tower and front, from the street"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -14154,6 +14199,15 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02920.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2715, between 1935 and 1938), https://www.loc.gov/item/2017888652/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "The Bellamy house front, the home Ellen Bellamy remembered"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -14191,6 +14245,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-habs-nc0364-102480.jpg",
+        "credit": "William J. Boney Jr., Historic American Buildings Survey, Library of Congress, Prints and Photographs (HABS NC,65-WILM,4--5, 1961), https://www.loc.gov/pictures/item/nc0364.photos.102480p/",
+        "rights": "public-domain",
+        "year": 1961,
+        "caption": "Inside Thalian Hall: the curving balconies"
+      }
     ],
     "remoteness": 0
   },
@@ -14498,6 +14561,15 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02922.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2717, between 1935 and 1938), https://www.loc.gov/item/2017888654/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "The carved front doorway of the Bellamy house"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -14574,6 +14646,15 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02919.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2714, between 1935 and 1938), https://www.loc.gov/item/2017888651/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "The Bellamy house from Market Street, belvedere on the roof"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -14611,6 +14692,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02927.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2722, between 1935 and 1938), https://www.loc.gov/item/2017888659/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "Burgwin-Wright House front door at the top of the steps"
+      }
     ],
     "remoteness": 0
   },
@@ -14652,6 +14742,15 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02925.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2720, between 1935 and 1938), https://www.loc.gov/item/2017888657/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "Burgwin-Wright House porches above the stone base"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -14691,6 +14790,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-pan-6a15338.jpg",
+        "credit": "Haines Photo Co., Library of Congress, Prints and Photographs (PAN US GEOG - North Carolina no. 5, 1918), https://www.loc.gov/item/2007662492/",
+        "rights": "public-domain",
+        "year": 1918,
+        "caption": "Steamers and warehouses on the Wilmington waterfront"
+      }
     ],
     "remoteness": 0
   },
@@ -14773,6 +14881,15 @@ export const LIBRARY: readonly Echo[] = [
       "one-tree-hill",
       "sleepy-hollow",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02951.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2744-A, 1938), https://www.loc.gov/item/2017888683/",
+        "rights": "public-domain",
+        "year": 1938,
+        "caption": "St. James Church and its grounds from the street"
+      }
     ],
     "remoteness": 0
   },
@@ -14893,6 +15010,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02921.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2716, between 1935 and 1938), https://www.loc.gov/item/2017888653/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "The Bellamy house front: columns, balconies and gate"
+      }
     ],
     "remoteness": 0
   },
@@ -15558,6 +15684,15 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02951.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2744-A, 1938), https://www.loc.gov/item/2017888683/",
+        "rights": "public-domain",
+        "year": 1938,
+        "caption": "St. James Church, the tower and front, from the street"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -15595,6 +15730,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-pcrd-1a11273.jpg",
+        "credit": "The Rotograph Co. postcard, Library of Congress, Prints and Photographs (PCRD 1 - North Carolina - Wilmington, no. 2, 1905), https://www.loc.gov/item/2025673108/",
+        "rights": "public-domain",
+        "year": 1905,
+        "caption": "The county courthouse at Third and Princess, clock tower"
+      }
     ],
     "remoteness": 0
   },
@@ -15713,6 +15857,15 @@ export const LIBRARY: readonly Echo[] = [
       "film",
       "sleepy-hollow",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-pcrd-1a11273.jpg",
+        "credit": "The Rotograph Co. postcard, Library of Congress, Prints and Photographs (PCRD 1 - North Carolina - Wilmington, no. 2, 1905), https://www.loc.gov/item/2025673108/",
+        "rights": "public-domain",
+        "year": 1905,
+        "caption": "The county courthouse and its clock tower on Third Street"
+      }
     ],
     "remoteness": 0
   },
@@ -15991,6 +16144,15 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-habs-nc0364-102479.jpg",
+        "credit": "William J. Boney Jr., Historic American Buildings Survey, Library of Congress, Prints and Photographs (HABS NC,65-WILM,4--4, 1961), https://www.loc.gov/pictures/item/nc0364.photos.102479p/",
+        "rights": "public-domain",
+        "year": 1961,
+        "caption": "The Thalian Hall entrance on the side of the building"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -16107,6 +16269,15 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02934.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2729, between 1935 and 1938), https://www.loc.gov/item/2017888666/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "Burgwin-Wright House garden wall, before the 1962 garden"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -16144,6 +16315,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02924.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2719, between 1935 and 1938), https://www.loc.gov/item/2017888656/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "Burgwin-Wright House front, a few years after it was saved"
+      }
     ],
     "remoteness": 0
   },
@@ -16229,6 +16409,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-pcrd-1a11276.jpg",
+        "credit": "The Rotograph Co. postcard, Library of Congress, Prints and Photographs (PCRD 1 - North Carolina - Wilmington, no. 5, 1905), https://www.loc.gov/item/2025673111/",
+        "rights": "public-domain",
+        "year": 1905,
+        "caption": "City Hall on Third Street, seven years after 1898"
+      }
     ],
     "trueCrimeReview": {
       "involvesLivingPeople": false,
@@ -16351,6 +16540,15 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02925.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2720, between 1935 and 1938), https://www.loc.gov/item/2017888657/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "Burgwin-Wright House side porches above its stone ground floor"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -16426,6 +16624,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02919.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2714, between 1935 and 1938), https://www.loc.gov/item/2017888651/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "The Bellamy house behind its garden, seen from the corner"
+      }
     ],
     "remoteness": 0
   },
@@ -16509,6 +16716,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02925.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2720, between 1935 and 1938), https://www.loc.gov/item/2017888657/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "Burgwin-Wright House side, with its stone ground floor"
+      }
     ],
     "trueCrimeReview": {
       "involvesLivingPeople": false,
@@ -16669,6 +16885,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02921.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2716, between 1935 and 1938), https://www.loc.gov/item/2017888653/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "The Bellamy house front steps, balconies and iron gate"
+      }
     ],
     "trueCrimeReview": {
       "involvesLivingPeople": false,
@@ -16905,6 +17130,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02952.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2745, 1938), https://www.loc.gov/item/2017888684/",
+        "rights": "public-domain",
+        "year": 1938,
+        "caption": "St. James Church side entrance below the tower"
+      }
     ],
     "remoteness": 0
   },
@@ -17223,6 +17457,15 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-habs-nc0364-102482.jpg",
+        "credit": "William J. Boney Jr., Historic American Buildings Survey, Library of Congress, Prints and Photographs (HABS NC,65-WILM,4--7, 1961), https://www.loc.gov/pictures/item/nc0364.photos.102482p/",
+        "rights": "public-domain",
+        "year": 1961,
+        "caption": "Inside Thalian Hall: the stage and proscenium"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -17266,6 +17509,15 @@ export const LIBRARY: readonly Echo[] = [
       "dawsons-creek",
       "one-tree-hill",
       "theatre"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-habs-nc0364-102476.jpg",
+        "credit": "William J. Boney Jr., Historic American Buildings Survey, Library of Congress, Prints and Photographs (HABS NC,65-WILM,4--1, 1961), https://www.loc.gov/pictures/item/nc0364.photos.102476p/",
+        "rights": "public-domain",
+        "year": 1961,
+        "caption": "City Hall-Thalian Hall front steps and columns, Third Street"
+      }
     ],
     "remoteness": 0
   },
@@ -17510,6 +17762,15 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-pan-6a15338.jpg",
+        "credit": "Haines Photo Co., Library of Congress, Prints and Photographs (PAN US GEOG - North Carolina no. 5, 1918), https://www.loc.gov/item/2007662492/",
+        "rights": "public-domain",
+        "year": 1918,
+        "caption": "Wilmington's working waterfront seen across the Cape Fear"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -17586,6 +17847,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02924.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2719, between 1935 and 1938), https://www.loc.gov/item/2017888656/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "Burgwin-Wright House front steps and double porch"
+      }
     ],
     "remoteness": 0
   },
@@ -17708,6 +17978,15 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-habs-nc0364-102477.jpg",
+        "credit": "William J. Boney Jr., Historic American Buildings Survey, Library of Congress, Prints and Photographs (HABS NC,65-WILM,4--2, 1961), https://www.loc.gov/pictures/item/nc0364.photos.102477p/",
+        "rights": "public-domain",
+        "year": 1961,
+        "caption": "City Hall-Thalian Hall, front and side from Third Street"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -17822,6 +18101,15 @@ export const LIBRARY: readonly Echo[] = [
       "wilmington",
       "downtown"
     ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-csas-02920.jpg",
+        "credit": "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2715, between 1935 and 1938), https://www.loc.gov/item/2017888652/",
+        "rights": "public-domain",
+        "year": 1935,
+        "caption": "The Bellamy house portico and iron fence on Market Street"
+      }
+    ],
     "remoteness": 0
   },
   {
@@ -17859,6 +18147,15 @@ export const LIBRARY: readonly Echo[] = [
     "tags": [
       "wilmington",
       "downtown"
+    ],
+    "archive": [
+      {
+        "imageKey": "archive/loc-habs-nc0364-102482.jpg",
+        "credit": "William J. Boney Jr., Historic American Buildings Survey, Library of Congress, Prints and Photographs (HABS NC,65-WILM,4--7, 1961), https://www.loc.gov/pictures/item/nc0364.photos.102482p/",
+        "rights": "public-domain",
+        "year": 1961,
+        "caption": "Inside Thalian Hall: the proscenium framing the stage"
+      }
     ],
     "remoteness": 0
   },

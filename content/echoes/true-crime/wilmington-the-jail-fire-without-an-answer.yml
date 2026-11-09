@@ -115,3 +115,9 @@ renders:
         - text: The physical aftermath survives more clearly than the answer.
           atS: 50.23
           durationS: 3.6
+archive:
+  - imageKey: archive/loc-csas-02925.jpg
+    year: 1935
+    caption: "Burgwin-Wright House side, with its stone ground floor"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2720, between 1935 and 1938), https://www.loc.gov/item/2017888657/"
+    rights: public-domain

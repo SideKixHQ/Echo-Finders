@@ -105,3 +105,9 @@ renders:
         - text: A building that appears unified from outside can hold profoundly different histories of power within.
           atS: 51.01
           durationS: 6.85
+archive:
+  - imageKey: archive/loc-csas-02920.jpg
+    year: 1935
+    caption: "The Bellamy house portico and iron fence on Market Street"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2715, between 1935 and 1938), https://www.loc.gov/item/2017888652/"
+    rights: public-domain

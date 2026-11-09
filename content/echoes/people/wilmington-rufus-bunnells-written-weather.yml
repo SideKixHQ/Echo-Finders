@@ -94,3 +94,9 @@ renders:
         - text: Bunnell's records let the building's design history meet the ordinary conditions in which an architect actually lived and worked.
           atS: 46.34
           durationS: 7.86
+archive:
+  - imageKey: archive/loc-csas-02921.jpg
+    year: 1935
+    caption: "The Bellamy house front: columns, balconies and gate"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2716, between 1935 and 1938), https://www.loc.gov/item/2017888653/"
+    rights: public-domain

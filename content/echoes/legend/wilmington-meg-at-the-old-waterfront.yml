@@ -86,3 +86,9 @@ renders:
         - text: "Meg's story reverses that pattern: one waterfront character, storytellers suggest, never quite left."
           atS: 39.18
           durationS: 7.44
+archive:
+  - imageKey: archive/loc-pan-6a15338.jpg
+    year: 1918
+    caption: "Steamers and warehouses on the Wilmington waterfront"
+    credit: "Haines Photo Co., Library of Congress, Prints and Photographs (PAN US GEOG - North Carolina no. 5, 1918), https://www.loc.gov/item/2007662492/"
+    rights: public-domain

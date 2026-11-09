@@ -89,3 +89,9 @@ renders:
         - text: "Before the reputation, restorations, and anniversary celebrations, the town had to take the simple step that makes a theater work: open the doors and invite people in."
           atS: 43.41
           durationS: 11.25
+archive:
+  - imageKey: archive/loc-habs-nc0364-102479.jpg
+    year: 1961
+    caption: "The Thalian Hall entrance on the side of the building"
+    credit: "William J. Boney Jr., Historic American Buildings Survey, Library of Congress, Prints and Photographs (HABS NC,65-WILM,4--4, 1961), https://www.loc.gov/pictures/item/nc0364.photos.102479p/"
+    rights: public-domain

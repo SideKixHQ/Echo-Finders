@@ -145,3 +145,9 @@ renders:
         - text: The democratic rights of many Wilmington residents did not.
           atS: 50.8
           durationS: 3.72
+archive:
+  - imageKey: archive/loc-pcrd-1a11276.jpg
+    year: 1905
+    caption: "City Hall on Third Street, seven years after 1898"
+    credit: "The Rotograph Co. postcard, Library of Congress, Prints and Photographs (PCRD 1 - North Carolina - Wilmington, no. 5, 1905), https://www.loc.gov/item/2025673111/"
+    rights: public-domain

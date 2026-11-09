@@ -87,3 +87,9 @@ renders:
         - text: The 1909 work reminds us that what now looks traditional was once a substantial modern improvement.
           atS: 47.54
           durationS: 6.84
+archive:
+  - imageKey: archive/loc-habs-nc0364-102482.jpg
+    year: 1961
+    caption: "Inside Thalian Hall: the proscenium framing the stage"
+    credit: "William J. Boney Jr., Historic American Buildings Survey, Library of Congress, Prints and Photographs (HABS NC,65-WILM,4--7, 1961), https://www.loc.gov/pictures/item/nc0364.photos.102482p/"
+    rights: public-domain
