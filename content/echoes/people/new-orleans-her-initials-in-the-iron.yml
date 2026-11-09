@@ -9,7 +9,7 @@ at: { lat: 29.957, lng: -90.06333 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 90
+durationS: 80
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
 
   She lived. She carried the bullets in her body for the rest of her life.
 
-  Twelve years later she put a plan to the city. She would tear down her father's old buildings on both sides of this square, and put up something grander, if the council would play its part. The council backed out. She built them anyway. They were finished around eighteen fifty.
+  Twelve years later she put a plan to the city. She would tear down the old buildings on both sides of this square, and put up something grander, if the council would play its part. The council backed out. She built them anyway. They were finished around eighteen fifty.
 
   The A is for Almonester. The P is for Pontalba.
 
@@ -43,26 +43,134 @@ pronunciations:
     say: pon-TAL-buh
   - written: château
     say: sha-TOH
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Somewhere in the pattern, two letters are twisted together."
+    source: 1
+    quote: "elegance of the tendril-like iron work, which displays the interlaced initials of the families of Almonaster and Pontalba."
+  - says: "An A and a P."
+    source: 1
+    quote: "which displays the interlaced initials of the families of Almonaster and Pontalba."
+  - says: "Micaela Almonester was born in this city, the daughter of the rich Spaniard who paid for the cathedral."
+    source: 2
+    quote: "Heaven sent a child to Don Andres, a daughter, who was christened, in the grand new Cathedral, Micaela Leonarda Antonia."
+  - says: "Micaela Almonester was born in this city, the daughter of the rich Spaniard who paid for the cathedral."
+    source: 1
+    quote: "the donor of the Cathedral"
+  - says: "She married into a noble French family, the Pontalbas, and went to live in France."
+    source: 2
+    quote: "her hand was bestowed upon young Joseph Xavier Celestin Delfair de Pontalba, son of the Baron de Pon- talba"
+  - says: "She married into a noble French family, the Pontalbas, and went to live in France."
+    source: 2
+    quote: "the young couple proceeded immediately to Paris"
+  - says: "Then, one October morning in eighteen thirty-four, at the family château, she was found on the floor of her rooms, shot several times."
+    source: 1
+    quote: "at Mont l’Evéque, on an October morning in 1834, Madame de Pontalba was discovered on the floor of her apartment, weltering in her blood, and apparently in a dying condition, her body torn with pistol shots."
+  - says: "Her father-in-law, the old baron, was found dead in his armchair with a pistol in his hand."
+    source: 1
+    quote: "The old Baron was found dead, sitting upright in a great armchair in his apartment, a pistol in his hand!"
+  - says: "Twelve years later she put a plan to the city."
+    source: 1
+    quote: "In 1846, through her agent, she communicated to the Council of the Municipality her desire to aid in the embellish- ment of her native city"
+  - says: "They were finished around eighteen fifty."
+    source: 1
+    quote: "They were finished in 1850"
+  - says: "The A is for Almonester."
+    source: 1
+    quote: "the interlaced initials of the families of Almonaster and Pontalba."
+  - says: "The P is for Pontalba."
+    source: 4
+    quote: "still bears the interwoven ‘‘A. P.”” monogram of the united noble houses of Almonaster and Pontalba."
 sources:
   - title: "Creole families of New Orleans (1921)"
     publisher: "Grace King, Macmillan, 1921; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/21004871/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/creolefamiliesof00king/creolefamiliesof00king.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "New Orleans, the place and the people (1895)"
     publisher: "Grace King, Macmillan, 1895; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/01008773/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansplacep00kin/neworleansplacep00kin.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Pontalba Buildings, 1850 House, Jackson Square, New Orleans (HABS LA-1259-A), index card and supplemental material"
     publisher: "Historic American Buildings Survey, National Park Service; Library of Congress"
-    url: https://www.loc.gov/item/la0365/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0300/la0365/data/la0365data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Presbytere, New Orleans, Louisiana"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/the-presbytere-new-orleans-louisiana.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-her-initials-in-the-iron/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 79.6
+    audioBytes: 1275236
+    transcript:
+      totalS: 79.6
+      lines:
+        - text: Look up at the long red brick building along this side of the square, at the cast iron railings on its balconies.
+          atS: 0
+          durationS: 6.47
+        - text: Somewhere in the pattern, two letters are twisted together.
+          atS: 6.98
+          durationS: 3.13
+        - text: An A and a P.
+          atS: 10.26
+          durationS: 1.51
+        - text: They belong to a woman who was supposed to be dead.
+          atS: 12.38
+          durationS: 2.71
+        - text: Micaela Almonester was born in this city, the daughter of the rich Spaniard who paid for the cathedral.
+          atS: 15.78
+          durationS: 7.59
+        - text: She married into a noble French family, the Pontalbas, and went to live in France.
+          atS: 24.07
+          durationS: 5.42
+        - text: The marriage went badly.
+          atS: 30.09
+          durationS: 1.4
+        - text: There were lawsuits.
+          atS: 31.65
+          durationS: 1.28
+        - text: In the end she won her independence from her husband and his family.
+          atS: 33.37
+          durationS: 3.9
+        - text: Then, one October morning in eighteen thirty-four, at the family château, she was found on the floor of her rooms, shot several times.
+          atS: 38.08
+          durationS: 8.43
+        - text: Her father-in-law, the old baron, was found dead in his armchair with a pistol in his hand.
+          atS: 46.83
+          durationS: 5.36
+        - text: She lived.
+          atS: 52.8
+          durationS: 0.87
+        - text: She carried the bullets in her body for the rest of her life.
+          atS: 54.37
+          durationS: 3.01
+        - text: Twelve years later she put a plan to the city.
+          atS: 58.49
+          durationS: 2.8
+        - text: She would tear down the old buildings on both sides of this square, and put up something grander, if the council would play its part.
+          atS: 61.89
+          durationS: 6.55
+        - text: The council backed out.
+          atS: 69.55
+          durationS: 1.45
+        - text: She built them anyway.
+          atS: 71.33
+          durationS: 1.15
+        - text: They were finished around eighteen fifty.
+          atS: 72.54
+          durationS: 2.04
+        - text: The A is for Almonester.
+          atS: 74.91
+          durationS: 1.81
+        - text: The P is for Pontalba.
+          atS: 76.75
+          durationS: 1.5
+        - text: She kept both.
+          atS: 78.53
+          durationS: 1.12

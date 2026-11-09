@@ -9,7 +9,7 @@ at: { lat: 29.95313, lng: -90.06893 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 89
+durationS: 85
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -25,34 +25,148 @@ script: |
 
   By eighteen thirty-eight the ditch had been filled in as far as Claiborne Street, and the car tracks were laid on the ground it left behind. The guidebooks called that ground the neutral ground.
 
-  They also called Canal Street the line between two cities. The French and Creole town downriver. The American town upriver. A guidebook of nineteen hundred and four said this street divided New Orleans into two phases of life, two styles of architecture, two forms of civilization.
+  They also called Canal Street the line between the French and American sections of the city. The French and Creole town downriver. The American town upriver. A guidebook of nineteen hundred and four said this street divided New Orleans into two phases of life, two styles of architecture, two forms of civilization.
 
   The old guidebooks never stop to explain the word neutral. Maybe it did not need explaining.
 
-  Stand here, in the middle of the line between two cities, and decide for yourself.
+  Stand here, in the middle of that line, and decide for yourself.
 detail: |
   By 1900 the guidebooks used "neutral ground" for the middle of North Rampart, St. Charles
   Avenue and Elysian Fields as well. The statue of Henry Clay stood on the Canal Street
-  neutral ground at this intersection from 1856 until 1900, when it was moved to Lafayette
-  Square.
+  neutral ground at this intersection until shortly before 1904, when it was moved to
+  Lafayette Square.
 pronunciations:
   - written: Claiborne
     say: CLAY-born
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Look at the strip down the middle of Canal Street, where the streetcar tracks run."
+    source: 2
+    quote: "the ‘‘esplanade” or ‘neutral ground” along which so many car lines now center, was raised."
+  - says: "In New Orleans it is the neutral ground."
+    source: 2
+    quote: "the ‘‘esplanade” or ‘neutral ground” along which so many car lines now center, was raised."
+  - says: "Canal Street really did have a canal, of a sort."
+    source: 1
+    quote: "The name of Canal was of com- paratively late origin."
+  - says: "Canal Street really did have a canal, of a sort."
+    source: 1
+    quote: "The stream was made to drain the adjacent land, but though thus canalized"
+  - says: "A narrow, crooked stream once ran here, and the Spanish used it as a moat in front of the city wall."
+    source: 1
+    quote: "A narrow, crooked little stream flowed through the “terre commune”"
+  - says: "A narrow, crooked stream once ran here, and the Spanish used it as a moat in front of the city wall."
+    source: 1
+    quote: "as a sort of moat in front of his wall, or palisade, along the southern limit of the city."
+  - says: "A narrow, crooked stream once ran here, and the Spanish used it as a moat in front of the city wall."
+    source: 2
+    quote: "the Spanish Governor of colonial days, Baron de Carondelet"
+  - says: "When Americans began settling upriver, they filled their lots with earth dug from its banks, and it grew into a straight, deep ditch."
+    source: 1
+    quote: "when the Americans began to settle in the Fabourg Ste. Marie, property along what is now Canal street acquired value. It was necessary to fill the lots in order to make them dry and habitable, and in accomplishing this object, earth was taken from the banks"
+  - says: "When Americans began settling upriver, they filled their lots with earth dug from its banks, and it grew into a straight, deep ditch."
+    source: 1
+    quote: "thus became wider and deeper. At the same time its meandering channel was straightened."
+  - says: "Iron posts and chains along the edge kept people from falling in."
+    source: 1
+    quote: "iron chains suspended from these supports gave some protection from the danger of falling into the water."
+  - says: "As far as anyone knows, nothing ever sailed on it."
+    source: 1
+    quote: "it was apparently never used for navigation."
+  - says: "By eighteen thirty-eight the ditch had been filled in as far as Claiborne Street, and the car tracks were laid on the ground it left behind."
+    source: 1
+    quote: "By 1838 the canal was filled up as far as Claiborne street and the car-tracks were placed upon the neutral ground thus created."
+  - says: "They also called Canal Street the line between the French and American sections of the city."
+    source: 2
+    quote: "the line of demarkation between the French and American sections"
+  - says: "The French and Creole town downriver."
+    source: 3
+    quote: "the Creoles and Americans, the former liv- Ing mostly below Canal street, and the latter above. Canal. street seems to be the dividing line"
+  - says: "The American town upriver."
+    source: 3
+    quote: "the Creoles and Americans, the former liv- Ing mostly below Canal street, and the latter above."
+  - says: "A guidebook of nineteen hundred and four said this street divided New Orleans into two phases of life, two styles of architecture, two forms of civilization."
+    source: 2
+    quote: "It divides New Orleans into two separate and distinct phases of life, two epochs of history, two styles of architecture, two modes of thought and two distinct forms of civilization."
+  - says: "A guidebook of nineteen hundred and four said this street divided New Orleans into two phases of life, two styles of architecture, two forms of civilization."
+    source: 2
+    quote: "Copyright 1904 by"
 sources:
   - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), Part III: Canal Street"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/13004346/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse/picayunesguideto00unse.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Chapter XI: Canal Street"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
-  - title: "Jazz Origins in New Orleans"
-    publisher: "National Park Service, New Orleans Jazz National Historical Park"
-    url: https://www.nps.gov/jazz/learn/historyculture/history_early.htm
-    retrievedAt: "2026-10-14"
+  - title: "New Orleans guide (New Orleans, F.F. Hansell & Bro., c1902), by James S. Zacharie"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansguidew00zach/neworleansguidew00zach.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-neutral-ground/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 85.2
+    audioBytes: 1364679
+    transcript:
+      totalS: 85.2
+      lines:
+        - text: Look at the strip down the middle of Canal Street, where the streetcar tracks run.
+          atS: 0
+          durationS: 4.04
+        - text: Anywhere else it would be a median.
+          atS: 4.37
+          durationS: 2.05
+        - text: In New Orleans it is the neutral ground.
+          atS: 6.93
+          durationS: 2.53
+        - text: Start with the street's name.
+          atS: 9.9
+          durationS: 1.57
+        - text: Canal Street really did have a canal, of a sort.
+          atS: 11.98
+          durationS: 3.13
+        - text: A narrow, crooked stream once ran here, and the Spanish used it as a moat in front of the city wall.
+          atS: 15.56
+          durationS: 6.19
+        - text: When Americans began settling upriver, they filled their lots with earth dug from its banks, and it grew into a straight, deep ditch.
+          atS: 22.35
+          durationS: 8.3
+        - text: Iron posts and chains along the edge kept people from falling in.
+          atS: 31.09
+          durationS: 4.04
+        - text: As far as anyone knows, nothing ever sailed on it.
+          atS: 35.51
+          durationS: 3.54
+        - text: By eighteen thirty-eight the ditch had been filled in as far as Claiborne Street, and the car tracks were laid on the ground it left behind.
+          atS: 39.87
+          durationS: 8.24
+        - text: The guidebooks called that ground the neutral ground.
+          atS: 48.55
+          durationS: 3.08
+        - text: They also called Canal Street the line between the French and American sections of the city.
+          atS: 51.95
+          durationS: 5.86
+        - text: The French and Creole town downriver.
+          atS: 58.33
+          durationS: 2.62
+        - text: The American town upriver.
+          atS: 61.34
+          durationS: 2.1
+        - text: A guidebook of nineteen hundred and four said this street divided New Orleans into two phases of life, two styles of architecture, two forms of civilization.
+          atS: 63.76
+          durationS: 10.25
+        - text: The old guidebooks never stop to explain the word neutral.
+          atS: 74.52
+          durationS: 3.84
+        - text: Maybe it did not need explaining.
+          atS: 78.81
+          durationS: 2.02
+        - text: Stand here, in the middle of that line, and decide for yourself.
+          atS: 81.21
+          durationS: 4.01

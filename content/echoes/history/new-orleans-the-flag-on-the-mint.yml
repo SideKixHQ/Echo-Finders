@@ -9,7 +9,7 @@ at: { lat: 29.9617, lng: -90.0576 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 100
+durationS: 85
 visibility: at-hand
 certainty: documented
 minAge: 12
@@ -29,31 +29,166 @@ script: |
 
   Accounts disagree about who reached it first. They agree on who ended up with it. William Mumford.
 
-  When General Benjamin Butler took command of the city a few days later, Mumford was arrested and tried for treason by a military commission. His wife and three children knelt in front of Butler to beg for his life.
+  When General Benjamin Butler took command of the city, Mumford was arrested and tried for treason by a military commission.   On the seventh of June, he was hanged from a beam fixed between the two middle columns of the Mint's front porch, near where you are standing.
 
-  On the seventh of June, he was hanged on a scaffold built in front of the Mint, near where you are standing.
-
-  Butler's side called it justice. Mumford's side called it murder, and him a martyr.
+  Butler's biographer wrote that his life was justly forfeited. A Louisiana school history later called the hanging unjust and cruel.
 
   The flag he pulled down had been flying for a little over three hours.
 pronunciations:
   - written: Esplanade
     say: ess-pluh-NAYD
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Sunday the twenty-seventh of April, eighteen sixty-two."
+    source: 1
+    quote: "April 27th, Sunday.—An eventful day; to one unhappy man, a fatal day."
+  - says: "Sunday the twenty-seventh of April, eighteen sixty-two."
+    source: 1
+    quote: "“New Orzeans, June 5, 1862."
+  - says: "A Union fleet had fought its way up the river, and the city had nothing left to resist it with."
+    source: 1
+    quote: "I know still less how to surrender an undefended place, held, as this is, at the mercy of your gunners and your mortars."
+  - says: "The mayor refused to raise the United States flag himself."
+    source: 1
+    quote: "As to hoisting any flag not of our own adoption and allegiance"
+  - says: "The mayor refused to raise the United States flag himself."
+    source: 1
+    quote: "Don’t ask us to do your flag-raising."
+  - says: "So the navy sent a party ashore to raise one here."
+    source: 1
+    quote: "Captain Morris, of the Pensacola, the ship that lay off the Mint, was ordered to send a party ashore, and hoist the flag of the United States upon that edifice."
+  - says: "They put it up at about eight in the morning, and went back to their ship."
+    source: 1
+    quote: "At eight im the morn- ing, the stars and stripes floated over it once more."
+  - says: "Instead, guns up in the rigging of the warship lying off the Mint were aimed at the flagstaff, with orders to fire on anyone who touched it."
+    source: 1
+    quote: "Without leaving a guard to protect it, he returned to his ship, and the howitzers in the main- top of the Pensacola, loaded with grape, were aimed at the flag- staff, and the guard ordered to fire the moment any one should attempt to haul down the flag."
+  - says: "At eleven, the crews gathered on deck for prayers."
+    source: 1
+    quote: "At eleven o’clock, the crews of all the ships were assembled on deck for prayers"
+  - says: "About twenty minutes in, the guns went off."
+    source: 1
+    quote: "The solemn service proceeded for twenty minutes"
+  - says: "About twenty minutes in, the guns went off."
+    source: 1
+    quote: "A discharge from the howitzers ov erhead, startled the crew"
+  - says: "Accounts disagree about who reached it first."
+    source: 1
+    quote: "W. B. Mumford, who cut it loose from the flag-staff amid the shower of grape"
+  - says: "Accounts disagree about who reached it first."
+    source: 2
+    quote: "Adolphe Harper was the first to reach the flag. He and his companions handed it over to Mumford, who dragged it through the streets in triumph."
+  - says: "William Mumford."
+    source: 1
+    quote: "William B. Mumford, a citizen of New Orleans"
+  - says: "When General Benjamin Butler took command of the city, Mumford was arrested and tried for treason by a military commission."
+    source: 2
+    quote: "When Butler took command of the city he had Mumford arrested, tried"
+  - says: "When General Benjamin Butler took command of the city, Mumford was arrested and tried for treason by a military commission."
+    source: 1
+    quote: "having been convict ed before the military commission of treason"
+  - says: "On the seventh of June, he was hanged from a beam fixed between the two middle columns of the Mint's front porch, near where you are standing."
+    source: 4
+    quote: "On June 7, 1862, William Mumford was hanged from a wooden beam temporarily adjusted between the two central columns of the front porch."
+  - says: "Butler's biographer wrote that his life was justly forfeited."
+    source: 1
+    quote: "His life was justly forfeited to the United States"
+  - says: "A Louisiana school history later called the hanging unjust and cruel."
+    source: 2
+    quote: "the execution of Mumford was unjust and cruel"
+  - says: "The flag he pulled down had been flying for a little over three hours."
+    source: 1
+    quote: "At eight im the morn- ing, the stars and stripes floated over it once more."
+  - says: "The flag he pulled down had been flying for a little over three hours."
+    source: 1
+    quote: "The solemn service proceeded for twenty minutes"
 sources:
   - title: "General Butler in New Orleans (1864)"
     publisher: "James Parton, Mason Brothers, 1864; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/32008202/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/generalbutlerinn02part/generalbutlerinn02part.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "A history of Louisiana (1905)"
     publisher: "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/34036146/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/historyoflouisia00king/historyoflouisia00king.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's guide to New Orleans (1904)"
     publisher: "The Picayune, New Orleans, 1904; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), the Mint"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse/picayunesguideto00unse.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-flag-on-the-mint/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 85.2
+    audioBytes: 1363843
+    transcript:
+      totalS: 85.2
+      lines:
+        - text: Look up at the roof of the Mint, above the columns.
+          atS: 0
+          durationS: 3.27
+        - text: Sunday the twenty-seventh of April, eighteen sixty-two.
+          atS: 3.79
+          durationS: 3.75
+        - text: A Union fleet had fought its way up the river, and the city had nothing left to resist it with.
+          atS: 8.35
+          durationS: 5.39
+        - text: The mayor refused to raise the United States flag himself.
+          atS: 14.43
+          durationS: 3.41
+        - text: So the navy sent a party ashore to raise one here.
+          atS: 18.8
+          durationS: 3.24
+        - text: They put it up at about eight in the morning, and went back to their ship.
+          atS: 22.48
+          durationS: 3.61
+        - text: They left no guard.
+          atS: 26.6
+          durationS: 1.29
+        - text: Instead, guns up in the rigging of the warship lying off the Mint were aimed at the flagstaff, with orders to fire on anyone who touched it.
+          atS: 28.4
+          durationS: 7.85
+        - text: At eleven, the crews gathered on deck for prayers.
+          atS: 36.76
+          durationS: 3.16
+        - text: About twenty minutes in, the guns went off.
+          atS: 40.3
+          durationS: 2.8
+        - text: Men were on the roof.
+          atS: 43.48
+          durationS: 1.24
+        - text: They tore the flag down and got away with it.
+          atS: 44.84
+          durationS: 2.43
+        - text: Accounts disagree about who reached it first.
+          atS: 47.71
+          durationS: 2.7
+        - text: They agree on who ended up with it.
+          atS: 50.49
+          durationS: 2.14
+        - text: William Mumford.
+          atS: 53.74
+          durationS: 1.13
+        - text: When General Benjamin Butler took command of the city, Mumford was arrested and tried for treason by a military commission.
+          atS: 55.98
+          durationS: 7.03
+        - text: On the seventh of June, he was hanged from a beam fixed between the two middle columns of the Mint's front porch, near where you are standing.
+          atS: 63.53
+          durationS: 7.78
+        - text: Butler's biographer wrote that his life was justly forfeited.
+          atS: 72.12
+          durationS: 3.67
+        - text: A Louisiana school history later called the hanging unjust and cruel.
+          atS: 76.3
+          durationS: 4.27
+        - text: The flag he pulled down had been flying for a little over three hours.
+          atS: 81.08
+          durationS: 4.09

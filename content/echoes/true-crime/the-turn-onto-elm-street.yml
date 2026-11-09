@@ -9,7 +9,7 @@ at: { lat: 32.77905, lng: -96.80890 }
 triggerRadiusKm: 0.05
 category: true-crime
 format: short
-durationS: 101
+durationS: 88
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -20,60 +20,170 @@ teaser: "Watch the curve of Elm Street."
 script: |
   Watch the curve of Elm Street.
 
-  On November 22, 1963, President John F. Kennedy’s motorcade passed through this plaza.
+  On November 22, 1963, President John F. Kennedy's motorcade turned here, off Houston Street and onto Elm.
 
-  People had gathered to see him.
+  People had gathered to see him. He waved to the crowd outside the Texas School Book Depository as he passed it.
 
-  At about twelve-thirty, Kennedy was shot while riding along Elm Street.
+  The clock on top of that building said twelve thirty. Seconds later, shots rang out, and Kennedy was hit while riding along Elm Street.
 
-  He was taken to Parkland Memorial Hospital, where he was pronounced dead.
+  He was taken to Parkland Memorial Hospital, where he was pronounced dead at one o'clock.
 
   Look toward the former Texas School Book Depository.
 
-  The Warren Commission concluded that Lee Harvey Oswald fired from that building. Later
-  investigations and decades of debate followed.
+  According to the Warren Commission, the shots were fired from a sixth floor window of that building, and they were fired by Lee Harvey Oswald. Oswald never stood trial. He was shot dead two days later, in the basement of the Dallas police building. Years afterwards, a committee of the House of Representatives agreed that Oswald fired, but concluded that the President was probably assassinated as a result of a conspiracy.
 
   This short account does not settle every disputed question.
 
-  But the central event is documented: a president was fatally shot during a public
-  motorcade on the street beside you.
+  But the central event is documented: a president was fatally shot during a public motorcade on the street beside you.
 
   Notice how compact the setting is.
 
   The road. The windows. The sidewalks where witnesses stood.
 
-  An event that expanded into millions of pages of investigation began within this small
-  stretch of city.
+  An event that has been investigated ever since began within this small stretch of city.
 
   You can stand beside the route.
 
   You cannot recover the certainty people had before the motorcade reached it.
-editorial: draft
+
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
   convictionStatus: alleged
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-09"
+  reviewedAt: "2026-11-09"
   contentWarning: "This echo describes an assassination. No violence is described in detail."
+claims:
+  - says: "On November 22, 1963, President John F. Kennedy's motorcade turned here, off Houston Street and onto Elm."
+    source: 1
+    quote: "At the extreme west end of Main Street the motorcade turned right on Houston Street and proceeded north for one block in order to make a left turn on Elm Street"
+  - says: "On November 22, 1963, President John F. Kennedy"
+    source: 3
+    quote: "Findings of the Select Committee on Assassinations in the Assassination of President John F. Kennedy in Dallas, Tex., November 22, 1963"
+  - says: "He waved to the crowd outside the Texas School Book Depository as he passed it."
+    source: 1
+    quote: "The front of the Texas School Book Depository was now on the President's right, and he waved to the crowd assembled there as he passed the building."
+  - says: "The clock on top of that building said twelve thirty."
+    source: 1
+    quote: "noticed that the clock atop the building indicated 12:30 p.m."
+  - says: "Seconds later, shots rang out, and Kennedy was hit while riding along Elm Street."
+    source: 1
+    quote: "Seconds later shots resounded in rapid succession."
+  - says: "He was taken to Parkland Memorial Hospital, where he was pronounced dead at one o'clock."
+    source: 1
+    quote: "the President's car proceeded at high speed to Parkland Memorial Hospital, 4 miles away."
+  - says: "pronounced dead at one o'clock"
+    source: 1
+    quote: "At l p.m., after all heart activity ceased and the Last Rites were administered by a priest, President Kennedy was pronounced dead."
+  - says: "Look toward the former Texas School Book Depository."
+    source: 1
+    quote: "a seven-story, orange brick warehouse and office building, the Texas School Book Depository"
+  - says: "According to the Warren Commission, the shots were fired from a sixth floor window of that building"
+    source: 2
+    quote: "the Commission has concluded that the shots which killed President Kennedy and wounded Governor Connally were fired from the sixth-floor window at the southeast corner of the Texas School Book Depository Building."
+  - says: "and they were fired by Lee Harvey Oswald"
+    source: 1
+    quote: "The shots which killed President Kennedy and wounded Governor Connally were fired by Lee Harvey Oswald."
+  - says: "Oswald never stood trial."
+    source: 1
+    quote: "The Commission has reached the following conclusions concerning the killing of Oswald by Jack Ruby on November 24, 1963"
+  - says: "He was shot dead two days later, in the basement of the Dallas police building."
+    source: 1
+    quote: "Ruby entered the basement of the Dallas Police Department shortly after 11:17 a.m. and killed Lee Harvey Oswald at 11:21 a.m."
+  - says: "Years afterwards, a committee of the House of Representatives agreed that Oswald fired, but concluded that the President was probably assassinated as a result of a conspiracy."
+    source: 3
+    quote: "Lee Harvey Oswald fired three shots at President John F. Kennedy."
+  - says: "concluded that the President was probably assassinated as a result of a conspiracy"
+    source: 3
+    quote: "The committee believes, on the basis of the evidence available to it, that President John F. Kennedy was probably assassinated as a result of a conspiracy."
 sources:
-  - title: "Dallas motorcade"
-    publisher: "The Sixth Floor Museum at Dealey Plaza"
-    url: https://emuseum.jfk.org/collections/37371/dallas-motorcade
-    retrievedAt: "2026-10-09"
-    rights: fair-use-facts
-  - title: "Chapter 1"
+  - title: "Report of the President's Commission on the Assassination of President Kennedy, Chapter 1: Summary and Conclusions"
     publisher: "National Archives"
     url: https://www.archives.gov/research/jfk/warren-commission-report/chapter-1
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: public-domain
-  - title: "Warren Commission Report, Chapter 3"
+  - title: "Report of the President's Commission on the Assassination of President Kennedy, Chapter 3: The Shots from the Texas School Book Depository"
     publisher: "National Archives"
     url: https://www.archives.gov/research/jfk/warren-commission-report/chapter-3.html
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: public-domain
-  - title: "House Select Committee on Assassinations, Summary of Findings"
+  - title: "Report of the Select Committee on Assassinations: Summary of Findings and Recommendations"
     publisher: "National Archives"
     url: https://www.archives.gov/research/jfk/select-committee-report/summary.html
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-turn-onto-elm-street/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 88.3
+    audioBytes: 1414416
+    transcript:
+      totalS: 88.3
+      lines:
+        - text: Watch the curve of Elm Street.
+          atS: 0
+          durationS: 1.9
+        - text: On November 22, 1963, President John F.
+          atS: 2.72
+          durationS: 3.74
+        - text: Kennedy's motorcade turned here, off Houston Street and onto Elm.
+          atS: 6.48
+          durationS: 4.12
+        - text: People had gathered to see him.
+          atS: 11.11
+          durationS: 1.68
+        - text: He waved to the crowd outside the Texas School Book Depository as he passed it.
+          atS: 13.23
+          durationS: 4.55
+        - text: The clock on top of that building said twelve thirty.
+          atS: 18.23
+          durationS: 3.04
+        - text: Seconds later, shots rang out, and Kennedy was hit while riding along Elm Street.
+          atS: 21.78
+          durationS: 4.52
+        - text: He was taken to Parkland Memorial Hospital, where he was pronounced dead at one o'clock.
+          atS: 26.62
+          durationS: 4.74
+        - text: Look toward the former Texas School Book Depository.
+          atS: 31.8
+          durationS: 3.01
+        - text: According to the Warren Commission, the shots were fired from a sixth floor window of that building, and they were fired by Lee Harvey Oswald.
+          atS: 34.93
+          durationS: 6.72
+        - text: Oswald never stood trial.
+          atS: 41.77
+          durationS: 1.95
+        - text: He was shot dead two days later, in the basement of the Dallas police building.
+          atS: 43.87
+          durationS: 4.09
+        - text: Years afterwards, a committee of the House of Representatives agreed that Oswald fired, but concluded that the President was probably assassinated as a result of a conspiracy.
+          atS: 48.17
+          durationS: 9.71
+        - text: This short account does not settle every disputed question.
+          atS: 58.2
+          durationS: 3.33
+        - text: "But the central event is documented: a president was fatally shot during a public motorcade on the street beside you."
+          atS: 61.78
+          durationS: 7.15
+        - text: Notice how compact the setting is.
+          atS: 69.37
+          durationS: 2.14
+        - text: The road.
+          atS: 71.83
+          durationS: 0.74
+        - text: The windows.
+          atS: 72.78
+          durationS: 0.87
+        - text: The sidewalks where witnesses stood.
+          atS: 73.86
+          durationS: 2.24
+        - text: An event that has been investigated ever since began within this small stretch of city.
+          atS: 76.35
+          durationS: 5.28
+        - text: You can stand beside the route.
+          atS: 82.01
+          durationS: 1.83
+        - text: You cannot recover the certainty people had before the motorcade reached it.
+          atS: 84.17
+          durationS: 4.16

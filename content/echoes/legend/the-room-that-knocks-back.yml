@@ -9,12 +9,11 @@ at: { lat: 33.75306, lng: -118.18972 }
 triggerRadiusKm: 0.15
 category: legend
 format: short
-durationS: 100
+durationS: 66
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A published legend. The script says out loud that the haunting is reported, not proven;
-  no supernatural claim is established.
+  A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -30,7 +29,7 @@ script: |
   The Queen Mary’s operator publishes reports of nighttime knocks, bathroom lights
   switching on, faucets running, and doors opening or closing unexpectedly.
 
-  The room has become part of the ship’s ghost folklore.
+  The room has become part of the ship’s ghost folklore. It is a legend.
 
   Those reports are not independently established evidence of spirits.
 
@@ -55,11 +54,83 @@ script: |
 
   The harder question is whether the explanation is somewhere nearby, hidden by the ship
   itself.
-editorial: draft
+editorial: approved
 factCheck: single-source
+claims:
+  - says: "That makes the story of stateroom B340 especially difficult to separate from its surroundings."
+    source: 1
+    quote: "Stateroom B340 has a large volume of recorded paranormal activity with many stories of haunted encounters noted in the ship’s logs"
+  - says: "The Queen Mary’s operator publishes reports of nighttime knocks, bathroom lights switching on, faucets running, and doors opening or closing unexpectedly."
+    source: 1
+    quote: "including reports of knocks on the door in the middle of the night, bathroom lights turning on by themselves, the sink faucet turning on and off on its own, and unexplained closing and opening of bathroom doors"
+  - says: "The room has become part of the ship’s ghost folklore."
+    source: 1
+    quote: "This new room category complements our existing B340 Paranormal Suite experience, giving guests another immersive way to connect with the legends and history that make the Queen Mary unlike any other destination."
+  - says: "B340’s legend lives in that uncertainty."
+    source: 1
+    quote: "Stateroom B340 has a large volume of recorded paranormal activity"
 sources:
-  - title: "Special offers"
+  - title: "Specials & Packages: B340 Suite"
     publisher: "The Queen Mary"
     url: https://www.queenmary.com/special-offers.htm
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-room-that-knocks-back/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 65.6
+    audioBytes: 1050792
+    transcript:
+      totalS: 65.6
+      lines:
+        - text: You are aboard a ship where movement and unfamiliar sounds can have ordinary explanations.
+          atS: 0
+          durationS: 5.41
+        - text: That makes the story of stateroom B340 especially difficult to separate from its surroundings.
+          atS: 5.74
+          durationS: 6.01
+        - text: The Queen Mary’s operator publishes reports of nighttime knocks, bathroom lights switching on, faucets running, and doors opening or closing unexpectedly.
+          atS: 12.07
+          durationS: 10.28
+        - text: The room has become part of the ship’s ghost folklore.
+          atS: 23.05
+          durationS: 3.2
+        - text: It is a legend.
+          atS: 26.85
+          durationS: 1.13
+        - text: Those reports are not independently established evidence of spirits.
+          atS: 28.79
+          durationS: 4.08
+        - text: Still, imagine the situation they describe.
+          atS: 33.38
+          durationS: 3.07
+        - text: You are inside a small cabin.
+          atS: 36.95
+          durationS: 1.82
+        - text: You hear a knock.
+          atS: 39.1
+          durationS: 1.03
+        - text: You open the door.
+          atS: 40.38
+          durationS: 1.12
+        - text: Nobody is there.
+          atS: 41.94
+          durationS: 1.11
+        - text: You close it and return to bed.
+          atS: 43.38
+          durationS: 2.34
+        - text: Then you hear another sound.
+          atS: 46.16
+          durationS: 1.58
+        - text: A ship is full of compartments you cannot see into, pipes behind walls, and passages beyond doors.
+          atS: 48.12
+          durationS: 6.37
+        - text: B340’s legend lives in that uncertainty.
+          atS: 54.74
+          durationS: 3.24
+        - text: You know you heard something.
+          atS: 58.36
+          durationS: 1.43
+        - text: The harder question is whether the explanation is somewhere nearby, hidden by the ship itself.
+          atS: 60.07
+          durationS: 5.55

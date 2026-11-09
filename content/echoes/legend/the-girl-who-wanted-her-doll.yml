@@ -9,12 +9,11 @@ at: { lat: 55.94995, lng: -3.19049 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 108
+durationS: 64
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A published legend. The script says out loud that the haunting is reported, not proven;
-  no supernatural claim is established.
+  A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -38,7 +37,7 @@ script: |
   Here is the important distinction: the attraction says its researchers have not found a
   historical record identifying a child named Annie as the girl in this story.
 
-  The ghost’s identity is unverified.
+  The ghost is a legend, and its identity is unverified.
 
   The visitors’ response is real.
 
@@ -48,18 +47,99 @@ script: |
 
   Some ghost stories are built around a threat approaching from the dark.
 
-  This one is built around something missing.
+  This story is built around something missing.
 
   A child without her family.
 
   A doll that could be replaced.
 
   A small act of kindness offered to someone nobody could prove was there.
-editorial: draft
+editorial: approved
 factCheck: single-source
+claims:
+  - says: "In the 1990s, Japanese psychic Aiko Gibo visited Mary King’s Close."
+    source: 1
+    quote: "The story of Annie’s doll begins in the 1990s. The renowned Japanese psychic, Aiko Gibo, came to visit The Real Mary King’s Close"
+  - says: "According to the attraction’s account, she said she sensed a young girl in a room off Allan’s Close."
+    source: 1
+    quote: "When it came to stepping inside a room off Allan’s Close , she could barely enter the 17th-century room"
+  - says: "she said she sensed a young girl"
+    source: 1
+    quote: "there is a child beside me, her little hand is clutching my trouser leg."
+  - says: "The girl, she claimed, was called Annie and was distressed because she had lost her doll."
+    source: 1
+    quote: "Her name was Annie, she had lost her favourite doll and was heartbroken."
+  - says: "Gibo brought a replacement."
+    source: 1
+    quote: "Gibo purchased a doll from a local Royal Mile shop and returned to the little girl."
+  - says: "Visitors later began leaving toys of their own."
+    source: 1
+    quote: "Ever since Gibo left the first doll, a growing number of people from all over the world have brought Annie dolls, toys, and jewellery."
+  - says: "the attraction says its researchers have not found a historical record identifying a child named Annie as the girl in this story"
+    source: 1
+    quote: "Although we haven’t found a reference to a child named Annie in the history books, it doesn’t mean she didn’t exist."
+  - says: "People heard about a lonely child and wanted to offer comfort."
+    source: 1
+    quote: "It’s turned into an extraordinary phenomenon, even with first responders leaving their badges as a mark of respect."
 sources:
-  - title: "The story of annies doll"
+  - title: "The Story of Annie's Doll"
     publisher: "The Real Mary King's Close"
     url: https://www.realmarykingsclose.com/experience/the-story-of-annies-doll/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-girl-who-wanted-her-doll/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 64.4
+    audioBytes: 1031566
+    transcript:
+      totalS: 64.4
+      lines:
+        - text: This story begins with a visitor’s claim.
+          atS: 0
+          durationS: 2.46
+        - text: In the 1990s, Japanese psychic Aiko Gibo visited Mary King’s Close.
+          atS: 2.97
+          durationS: 5.46
+        - text: According to the attraction’s account, she said she sensed a young girl in a room off Allan’s Close.
+          atS: 8.81
+          durationS: 5.49
+        - text: The girl, she claimed, was called Annie and was distressed because she had lost her doll.
+          atS: 14.81
+          durationS: 4.81
+        - text: Gibo brought a replacement.
+          atS: 20.32
+          durationS: 1.57
+        - text: Visitors later began leaving toys of their own.
+          atS: 22.33
+          durationS: 2.89
+        - text: "Here is the important distinction: the attraction says its researchers have not found a historical record identifying a child named Annie as the girl in this story."
+          atS: 25.82
+          durationS: 10.22
+        - text: The ghost is a legend, and its identity is unverified.
+          atS: 36.36
+          durationS: 3.87
+        - text: The visitors’ response is real.
+          atS: 40.51
+          durationS: 2.26
+        - text: People heard about a lonely child and wanted to offer comfort.
+          atS: 43.47
+          durationS: 3.53
+        - text: Look around the room.
+          atS: 47.81
+          durationS: 1.08
+        - text: Some ghost stories are built around a threat approaching from the dark.
+          atS: 49.4
+          durationS: 3.58
+        - text: This story is built around something missing.
+          atS: 53.49
+          durationS: 2.33
+        - text: A child without her family.
+          atS: 56.33
+          durationS: 1.66
+        - text: A doll that could be replaced.
+          atS: 58.43
+          durationS: 1.72
+        - text: A small act of kindness offered to someone nobody could prove was there.
+          atS: 60.59
+          durationS: 3.82

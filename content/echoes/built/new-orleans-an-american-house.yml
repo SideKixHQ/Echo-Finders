@@ -9,7 +9,7 @@ at: { lat: 29.95741, lng: -90.06742 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 96
+durationS: 91
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -25,7 +25,7 @@ script: |
 
   This house is part of what he saw coming. It was built around eighteen thirty-one for Samuel Hermann, a wealthy merchant. The federal survey of it describes a plan from the northeastern United States, adapted to work as a New Orleans townhouse. The yellow brick, it has been said, came all the way from Philadelphia.
 
-  Latrobe was half right. The American houses did come. But they had to fit the town the French had already laid out. Narrow, deep lots. Buildings right up to the street. Courtyards hidden behind. The Americans' favourite front yards hardly ever appeared in the Quarter. They kept the iron balconies too.
+  Latrobe was half right. The American houses did come. But much of the Creole look survived, and the newcomers had to fit the tight blocks the French had laid out. Buildings crowding each other and the narrow streets. Courtyards hidden behind. Iron balconies over the sidewalk.
 
   Look at the door again. It is an American door.
 
@@ -35,16 +35,148 @@ pronunciations:
     say: HER-man GREE-mah
   - written: Latrobe
     say: luh-TROHB
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Five openings wide, evenly spaced, in pale yellow brick."
+    source: 1
+    quote: "Five-bay front."
+  - says: "Five openings wide, evenly spaced, in pale yellow brick."
+    source: 1
+    quote: "Wall construction: Yellow brick."
+  - says: "Then look at the front door, set back into the wall, with slender columns on either side and a half-oval fan of glass above it."
+    source: 1
+    quote: "Recessed entrance stoop with granite steps on front"
+  - says: "Then look at the front door, set back into the wall, with slender columns on either side and a half-oval fan of glass above it."
+    source: 1
+    quote: "The door and sidelights are framed with slender Ionic columns"
+  - says: "Then look at the front door, set back into the wall, with slender columns on either side and a half-oval fan of glass above it."
+    source: 1
+    quote: "above the architrave is an elliptical fanlight"
+  - says: "In eighteen nineteen the architect Benjamin Henry Latrobe, who had worked on the Capitol in Washington, came to live in New Orleans."
+    source: 2
+    quote: "The noted American architect Benjamin Henry Latrobe (architect of the U.S. Capitol) took up residence in New Orleans in 1819."
+  - says: "He was taken with the city's Creole character, and he could see what was coming."
+    source: 2
+    quote: "When he arrived he was greatly impressed by the Creole character of the city, but noted regretfully the beginnings of an American influence"
+  - says: "Merchants from the old United States, he wrote, had already begun to bring in the lopsided London house."
+    source: 2
+    quote: "‘The merchants from the old United States who are daily gaining ground on the manners, the habits, the opinions, and the domestic arrangements of the French, have already begun to introduce the lop-sided London house.’"
+  - says: "In a few years, he predicted, this will be an American town."
+    source: 2
+    quote: "Latrobe predicted: ‘In a few years, therefore, this will be an American town."
+  - says: "It was built around eighteen thirty-one for Samuel Hermann, a wealthy merchant."
+    source: 1
+    quote: "which indicates that 11 wm. Brend, builder\" built a structure for Samuel Herman for $15,205.00"
+  - says: "It was built around eighteen thirty-one for Samuel Hermann, a wealthy merchant."
+    source: 1
+    quote: "The published sources indicated in the bibliography give various dates between 1823 and 1831 as the date of erection."
+  - says: "It was built around eighteen thirty-one for Samuel Hermann, a wealthy merchant."
+    source: 1
+    quote: "a wealth;y commission merchant"
+  - says: "The federal survey of it describes a plan from the northeastern United States, adapted to work as a New Orleans townhouse."
+    source: 1
+    quote: "Federal period house plan of the northeastern United States adapted to function as a New Orleans I townhouse."
+  - says: "The yellow brick, it has been said, came all the way from Philadelphia."
+    source: 1
+    quote: "was constructed of yellow brick from Philadelphia."
+  - says: "Latrobe was half right."
+    source: 2
+    quote: "While American influences are evident, much of the Creole influence has survived, and the Vieux Carré has a balanced character."
+  - says: "The American houses did come."
+    source: 2
+    quote: "The building in Photo 7 shows the American influence"
+  - says: "But much of the Creole look survived, and the newcomers had to fit the tight blocks the French had laid out."
+    source: 2
+    quote: "Explain that the Vieux Carré’s tight block pattern did not allow space for them."
+  - says: "But much of the Creole look survived, and the newcomers had to fit the tight blocks the French had laid out."
+    source: 2
+    quote: "much of the Creole influence has survived"
+  - says: "Iron balconies over the sidewalk."
+    source: 2
+    quote: "Cast-iron and wrought-iron balconies overhang the sidewalks"
+  - says: "It is an American door."
+    source: 1
+    quote: "Federal period house plan of the northeastern United States"
 sources:
   - title: "Hermann-Grima House, 820 Saint Louis Street, New Orleans, Orleans Parish, LA (HABS LA-1122)"
     publisher: "Historic American Buildings Survey, Library of Congress"
-    url: https://www.loc.gov/item/la0067/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0067/data/la0067data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Vieux Carré, A Creole Neighborhood in New Orleans (Teaching with Historic Places)"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-an-american-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 90.8
+    audioBytes: 1454541
+    transcript:
+      totalS: 90.8
+      lines:
+        - text: Look across at the front of this house.
+          atS: 0
+          durationS: 2.18
+        - text: Five openings wide, evenly spaced, in pale yellow brick.
+          atS: 2.51
+          durationS: 4.42
+        - text: Then look at the front door, set back into the wall, with slender columns on either side and a half-oval fan of glass above it.
+          atS: 7.37
+          durationS: 8.35
+        - text: Now look at its neighbours.
+          atS: 16.32
+          durationS: 1.87
+        - text: In eighteen nineteen the architect Benjamin Henry Latrobe, who had worked on the Capitol in Washington, came to live in New Orleans.
+          atS: 18.7
+          durationS: 8.04
+        - text: He was taken with the city's Creole character, and he could see what was coming.
+          atS: 27.35
+          durationS: 4.42
+        - text: Merchants from the old United States, he wrote, had already begun to bring in the lopsided London house.
+          atS: 32.47
+          durationS: 5.92
+        - text: In a few years, he predicted, this will be an American town.
+          atS: 38.91
+          durationS: 3.85
+        - text: This house is part of what he saw coming.
+          atS: 43.27
+          durationS: 2.18
+        - text: It was built around eighteen thirty-one for Samuel Hermann, a wealthy merchant.
+          atS: 46.06
+          durationS: 5.12
+        - text: The federal survey of it describes a plan from the northeastern United States, adapted to work as a New Orleans townhouse.
+          atS: 51.62
+          durationS: 7.66
+        - text: The yellow brick, it has been said, came all the way from Philadelphia.
+          atS: 59.79
+          durationS: 4.1
+        - text: Latrobe was half right.
+          atS: 64.49
+          durationS: 1.82
+        - text: The American houses did come.
+          atS: 66.64
+          durationS: 2.02
+        - text: But much of the Creole look survived, and the newcomers had to fit the tight blocks the French had laid out.
+          atS: 69.27
+          durationS: 6.35
+        - text: Buildings crowding each other and the narrow streets.
+          atS: 76.13
+          durationS: 3.15
+        - text: Courtyards hidden behind.
+          atS: 79.66
+          durationS: 1.81
+        - text: Iron balconies over the sidewalk.
+          atS: 81.68
+          durationS: 2.21
+        - text: Look at the door again.
+          atS: 84.32
+          durationS: 1.23
+        - text: It is an American door.
+          atS: 85.94
+          durationS: 1.52
+        - text: It just had to stand where the street told it to.
+          atS: 87.78
+          durationS: 3.05

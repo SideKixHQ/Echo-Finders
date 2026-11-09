@@ -7,7 +7,7 @@ triggerRadiusKm: 50
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: built
 format: short
-durationS: 100
+durationS: 64
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -15,28 +15,95 @@ quality: 0.9
 tags: [north-carolina, outer-banks, lighthouse, coastal-erosion]
 teaser: The cape below you is the reason that stretch of sea is called the Graveyard of the Atlantic.
 script: |
-  The hook of sand below is Cape Hatteras. The shoals run out from it for a dozen miles
-  underwater, two ocean currents meet directly over them, and the wrecks in that stretch of
-  sea number in the hundreds. It has been called the Graveyard of the Atlantic since the
-  eighteen hundreds.
+  The hook of sand below is Cape Hatteras. The Diamond Shoals run out from it as much as ten miles underwater, the Gulf Stream meets the Labrador Current over them, and together they earned this stretch of sea its name: the Graveyard of the Atlantic.
 
-  Which is why there has been a lighthouse down there since eighteen oh three, and the
-  current one since eighteen seventy: a hundred and ninety-eight feet of brick, the
-  tallest in the country.
+  Which is why there has been a lighthouse down there since eighteen oh three, and the current one since eighteen seventy: brick, two hundred and eight feet from the foundation to the top of the lantern, the tallest brick light tower in the country.
 
-  It was built fifteen hundred feet from the sea. By the nineteen nineties the sea was a
-  hundred and twenty feet away.
+  When it was finished it stood fifteen hundred feet from the sea. By nineteen seventy the sea was a hundred and twenty feet away.
 
-  So in nineteen ninety-nine they jacked up four thousand eight hundred tons of brick,
-  put it on rails, and moved it. It took twenty-three days to travel twenty-nine hundred
-  feet.
+  So in nineteen ninety nine they jacked up four thousand eight hundred and thirty tons of brick, put it on rails, and pushed it two thousand nine hundred feet to the southwest. It set off on the seventeenth of June and was set down on its new foundation on the ninth of July.
 
-  It did not crack.
-editorial: draft
-factCheck: single-source
+  That November the light came back on.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "The hook of sand below is Cape Hatteras."
+    source: 1
+    quote: "The Diamond Shoals which extend up to ten miles out from Cape Hatteras"
+  - says: "The Diamond Shoals run out from it as much as ten miles underwater, the Gulf Stream meets the Labrador Current over them, and together they earned this stretch of sea its name: the Graveyard of the Atlantic."
+    source: 1
+    quote: "The Diamond Shoals which extend up to ten miles out from Cape Hatteras, coupled with the Gulf Stream currents, earned this area its reputation as the \"graveyard of the Atlantic.\""
+  - says: "the Gulf Stream meets the Labrador Current over them"
+    source: 2
+    quote: "sentinel of the perilous Diamond Shoals, where the Gulf Stream meets the Labrador Current"
+  - says: "Which is why there has been a lighthouse down there since eighteen oh three, and the current one since eighteen seventy"
+    source: 1
+    quote: "A lighthouse was first established here in 1803, heightened in 1853. It was replaced with the current lighthouse in 1869-70."
+  - says: "two hundred and eight feet from the foundation to the top of the lantern"
+    source: 1
+    quote: "The tower rises 208 '-O\" from the bottom of the foundation to the peak of the lantern."
+  - says: "the tallest brick light tower in the country"
+    source: 1
+    quote: "is the tallest brick light tower in the United States"
+  - says: "When it was finished it stood fifteen hundred feet from the sea."
+    source: 2
+    quote: "When completed in 1870, the Cape Hatteras lighthouse was located a safe 1,500 feet from the ocean."
+  - says: "By nineteen seventy the sea was a hundred and twenty feet away."
+    source: 2
+    quote: "By 1970, this process, which has caused the gradual westward migration of the Outer Banks for at least the past 10,000 years, left the lighthouse just 120 feet from the ocean’s edge"
+  - says: "So in nineteen ninety nine they jacked up four thousand eight hundred and thirty tons of brick, put it on rails, and pushed it two thousand nine hundred feet to the southwest."
+    source: 2
+    quote: "the concept of moving the 4,830 ton structure consisted of lifting it off its foundation, transferring the load to a transport system"
+  - says: "pushed it two thousand nine hundred feet to the southwest"
+    source: 2
+    quote: "the tower moved along to its new location 2,900 feet to the southwest on steel mats starting on June 17, 1999. Steel track beams became rails"
+  - says: "It set off on the seventeenth of June and was set down on its new foundation on the ninth of July."
+    source: 2
+    quote: "On July 9, 1999 the lighthouse was carefully placed onto its new foundation"
+  - says: "That November the light came back on."
+    source: 2
+    quote: "resumed its duties on November 13, 1999"
 sources:
-  - title: Cape Hatteras Lighthouse relocation
-    publisher: National Park Service
-    url: https://www.nps.gov/caha/
-    retrievedAt: "2026-09-22"
+  - title: "Cape Hatteras Lighthouse (HABS NC-357), written historical and descriptive data"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/nc0432/
+    retrievedAt: "2026-11-09"
     rights: public-domain
+  - title: "Moving the Cape Hatteras Lighthouse"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/caha/learn/historyculture/movingthelighthouse.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/hatteras-moved-the-lighthouse/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 64.3
+    audioBytes: 1029476
+    transcript:
+      totalS: 64.3
+      lines:
+        - text: The hook of sand below is Cape Hatteras.
+          atS: 0
+          durationS: 2.84
+        - text: "The Diamond Shoals run out from it as much as ten miles underwater, the Gulf Stream meets the Labrador Current over them, and together they earned this stretch of sea its name: the Graveyard of the Atlantic."
+          atS: 3.96
+          durationS: 12.61
+        - text: "Which is why there has been a lighthouse down there since eighteen oh three, and the current one since eighteen seventy: brick, two hundred and eight feet from the foundation to the top of the lantern, the tallest brick light tower in the country."
+          atS: 16.78
+          durationS: 14.94
+        - text: When it was finished it stood fifteen hundred feet from the sea.
+          atS: 32.83
+          durationS: 3.88
+        - text: By nineteen seventy the sea was a hundred and twenty feet away.
+          atS: 37.41
+          durationS: 4.03
+        - text: So in nineteen ninety nine they jacked up four thousand eight hundred and thirty tons of brick, put it on rails, and pushed it two thousand nine hundred feet to the southwest.
+          atS: 42.25
+          durationS: 11.17
+        - text: It set off on the seventeenth of June and was set down on its new foundation on the ninth of July.
+          atS: 54.12
+          durationS: 6.97
+        - text: That November the light came back on.
+          atS: 61.78
+          durationS: 2.5

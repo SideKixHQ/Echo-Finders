@@ -9,7 +9,7 @@ at: { lat: 42.36001, lng: -71.06545 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 70
+durationS: 66
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -20,7 +20,7 @@ script: |
   You are in Smith Court. Look at the meeting house. It opened in eighteen-oh-six, and it is
   the oldest Black church building still standing in the United States.
 
-  Look at it as a building first. Somebody had to pay for it, and somebody had to build it.
+  Look at it as a building for a moment. Somebody had to pay for it, and somebody had to build it.
 
   The African Baptist Church was founded the year before, with twenty-four members. Fifteen
   of them were women. To give it a home, a man named Cato Gardner, born in Africa, went out
@@ -38,21 +38,134 @@ script: |
 pronunciations:
   - written: Faneuil
     say: FAN-yul
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "You are in Smith Court."
+    source: 2
+    quote: "Location: 8 Smith Court"
+  - says: "It opened in eighteen-oh-six, and it is the oldest Black church building still standing in the United States."
+    source: 2
+    quote: "The African Meeting House opened in 1806 and is the oldest surviving Black church structure in the nation."
+  - says: "It opened in eighteen-oh-six, and it is the oldest Black church building still standing in the United States."
+    source: 1
+    quote: "Built in 1806, the African Meeting House served as the African Baptist Church of Boston"
+  - says: "The African Baptist Church was founded the year before, with twenty-four members."
+    source: 1
+    quote: "Officially constituted on 8 August 1805 with twenty-four members, including fifteen women"
+  - says: "Fifteen of them were women."
+    source: 1
+    quote: "with twenty-four members, including fifteen women"
+  - says: "To give it a home, a man named Cato Gardner, born in Africa, went out and raised fifteen hundred dollars himself."
+    source: 1
+    quote: "Cato Gardner, a native African, led the fundraising effort by personally raising $1,500."
+  - says: "Black craftsmen did most of the work."
+    source: 1
+    quote: "African American craftsmen provided most of the labor."
+  - says: "It was a church, and a school met on the first floor."
+    source: 1
+    quote: "The African School held classes in a room on the first floor of the meeting house from 1808 until 1835"
+  - says: "Frederick Douglass spoke here."
+    source: 1
+    quote: "Sarah Grimke, and Frederick Douglass all spoke at the meeting house."
+  - says: "So did Maria Stewart."
+    source: 1
+    quote: "Abolitionists including William Lloyd Garrison , Maria Stewart"
+  - says: "William Lloyd Garrison founded the New England Anti-Slavery Society inside."
+    source: 1
+    quote: "In 1832 William Lloyd Garrison founded the New England Anti-Slavery Society here."
+  - says: "People called it the Black Faneuil Hall."
+    source: 2
+    quote: "Widely known as the \"Black Faneuil Hall,\""
+  - says: "But Faneuil Hall was the gift of one rich merchant, a man who bought and sold enslaved people."
+    source: 4
+    quote: "Peter Faneuil built his wealth from the Transatlantic trade empire, which included the trafficking of enslaved people"
+  - says: "But Faneuil Hall was the gift of one rich merchant, a man who bought and sold enslaved people."
+    source: 4
+    quote: "In 1740, Faneuil offered the town a donation to fund the construction of a permanent central marketplace and meeting hall"
+  - says: "This hall was paid for and built by the people who sat in it."
+    source: 2
+    quote: "Built by a small but powerful free African American community"
 sources:
   - title: "African Meeting House"
     publisher: "National Park Service, Boston African American National Historic Site"
     url: https://www.nps.gov/boaf/learn/historyculture/amh.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "African Meeting House"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/african-meeting-house.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Peter Faneuil: Empire of Goods, Wealth, and Enslavement"
     publisher: "National Park Service, Boston National Historical Park"
     url: https://www.nps.gov/bost/learn/historyculture/peter-faneuil.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+  - title: "Faneuil Hall Virtual Tour"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/learn/faneuil-hall-virtual-tour.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-african-meeting-house-built-by-its-people/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.3
+    audioBytes: 1062077
+    transcript:
+      totalS: 66.3
+      lines:
+        - text: You are in Smith Court.
+          atS: 0
+          durationS: 1.36
+        - text: Look at the meeting house.
+          atS: 1.38
+          durationS: 1.21
+        - text: It opened in eighteen-oh-six, and it is the oldest Black church building still standing in the United States.
+          atS: 2.71
+          durationS: 6.19
+        - text: Look at it as a building for a moment.
+          atS: 9.17
+          durationS: 2.02
+        - text: Somebody had to pay for it, and somebody had to build it.
+          atS: 11.4
+          durationS: 3.06
+        - text: The African Baptist Church was founded the year before, with twenty-four members.
+          atS: 14.68
+          durationS: 4.76
+        - text: Fifteen of them were women.
+          atS: 19.76
+          durationS: 1.49
+        - text: To give it a home, a man named Cato Gardner, born in Africa, went out and raised fifteen hundred dollars himself.
+          atS: 21.69
+          durationS: 7.55
+        - text: Black craftsmen did most of the work.
+          atS: 29.68
+          durationS: 2.29
+        - text: Then the building did its job.
+          atS: 32.17
+          durationS: 1.7
+        - text: It was a church, and a school met on the first floor.
+          atS: 34.31
+          durationS: 3.22
+        - text: Frederick Douglass spoke here.
+          atS: 38.13
+          durationS: 1.92
+        - text: So did Maria Stewart.
+          atS: 40.48
+          durationS: 1.63
+        - text: In eighteen thirty-two, William Lloyd Garrison founded the New England Anti-Slavery Society inside.
+          atS: 43.06
+          durationS: 6.56
+        - text: People called it the Black Faneuil Hall.
+          atS: 50.06
+          durationS: 2.67
+        - text: It was meant as a compliment.
+          atS: 53.24
+          durationS: 1.53
+        - text: But Faneuil Hall was the gift of one rich merchant, a man who bought and sold enslaved people.
+          atS: 55.22
+          durationS: 6.52
+        - text: This hall was paid for and built by the people who sat in it.
+          atS: 62.44
+          durationS: 3.88

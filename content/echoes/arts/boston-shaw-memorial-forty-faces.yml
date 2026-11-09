@@ -9,7 +9,7 @@ at: { lat: 42.35760, lng: -71.06350 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 79
+durationS: 81
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -42,21 +42,138 @@ script: |
 pronunciations:
   - written: Saint-Gaudens
     say: saint GAW-dens
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "They are not one face repeated."
+    source: 3
+    quote: "In this high relief composition, he featured a range of facial features, physical builds, and ages."
+  - says: "Some are young, some older."
+    source: 3
+    quote: "he featured a range of facial features, physical builds, and ages."
+  - says: "The sculptor, Augustus Saint-Gaudens, was first expected to make a statue of Colonel Robert Gould Shaw alone on horseback."
+    source: 2
+    quote: "Finally, in August 1882, the committee commissioned sculptor Augustus Saint-Gaudens to create an equestrian statue to commemorate Col. Shaw."
+  - says: "Shaw's family objected."
+    source: 2
+    quote: "the Shaw family objected on the ground that, although Shaw was of a noble type, as noble as any, still he had not been a great commander"
+  - says: "He had not been a great commander, they said, and it seemed pretentious."
+    source: 2
+    quote: "still he had not been a great commander, and only men of the highest rank should be so honored. In fact, it seemed pretentious."
+  - says: "So Saint-Gaudens put him among his men."
+    source: 2
+    quote: "I fell upon a plan of associating him directly with his troops in a bas-relief, and thereby reducing his importance."
+  - says: "The men were the Fifty-fourth Massachusetts, one of the first Black regiments of the Civil War."
+    source: 1
+    quote: "commemorates one of the first Black regiments of the American Civil War."
+  - says: "They marched down this street, off to the war, in eighteen sixty-three."
+    source: 1
+    quote: "this monument depicts the 54 th Regiment as they marched down Beacon Street off for war in 1863."
+  - says: "That July, in the assault on Fort Wagner in South Carolina, Shaw and many of his men were killed."
+    source: 1
+    quote: "assault on Fort Wagner, South Carolina on July 18, 1863, in which Shaw and many of his men died"
+  - says: "In his New York studio, Saint-Gaudens hired Black men to pose, and modelled some forty heads."
+    source: 1
+    quote: "In his studio in New York, he hired forty men to serve as models for the soldiers' faces."
+  - says: "In his New York studio, Saint-Gaudens hired Black men to pose, and modelled some forty heads."
+    source: 3
+    quote: "Saint-Gaudens modeled about 40 different heads after hiring African American men to pose."
+  - says: "The work took him about fourteen years, longer than anything else in his career."
+    source: 2
+    quote: "Sculptor Augustus Saint-Gaudens spent 14 years of his life developing the work—longer than any other of his career"
+  - says: "It was unveiled in eighteen ninety-seven, and the original inscriptions named only the white officers who fell."
+    source: 2
+    quote: "local and national leaders dedicated the Memorial on May 31, 1897."
+  - says: "It was unveiled in eighteen ninety-seven, and the original inscriptions named only the white officers who fell."
+    source: 2
+    quote: "the original names included only the white officers."
+  - says: "The names of the Black soldiers were added in the early nineteen-eighties."
+    source: 2
+    quote: "This later became rectified in the early 1980s."
+  - says: "The faces came first."
+    source: 2
+    quote: "In all, Saint-Gaudens created some 40 models of heads to use as studies."
+  - says: "The names took another eighty-five years."
+    source: 2
+    quote: "This later became rectified in the early 1980s."
 sources:
   - title: "Robert Gould Shaw and the 54th Regiment"
     publisher: "National Park Service, Boston African American National Historic Site"
     url: https://www.nps.gov/boaf/learn/historyculture/shaw.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Robert Gould Shaw Memorial"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/the-robert-gould-shaw-memorial.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Robert Gould Shaw & Massachusetts 54th Regiment Memorial"
     publisher: "National Park Service, Saint-Gaudens National Historical Park"
     url: https://www.nps.gov/places/robert-gould-shaw-massachusetts-54th-regiment-memorial.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-shaw-memorial-forty-faces/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.6
+    audioBytes: 1291118
+    transcript:
+      totalS: 80.6
+      lines:
+        - text: Look at the soldiers in the bronze, not the man on the horse.
+          atS: 0
+          durationS: 3.75
+        - text: Look at their faces.
+          atS: 4.08
+          durationS: 1.33
+        - text: They are not one face repeated.
+          atS: 6.01
+          durationS: 2.12
+        - text: Some are young, some older.
+          atS: 8.52
+          durationS: 2.1
+        - text: The features and the builds are different.
+          atS: 11.13
+          durationS: 2
+        - text: That was the point.
+          atS: 13.25
+          durationS: 1.14
+        - text: The sculptor, Augustus Saint-Gaudens, was first expected to make a statue of Colonel Robert Gould Shaw alone on horseback.
+          atS: 14.99
+          durationS: 8.46
+        - text: Shaw's family objected.
+          atS: 24.27
+          durationS: 1.56
+        - text: He had not been a great commander, they said, and it seemed pretentious.
+          atS: 26.15
+          durationS: 4.4
+        - text: So Saint-Gaudens put him among his men.
+          atS: 30.99
+          durationS: 2.64
+        - text: The men were the Fifty-fourth Massachusetts, one of the first Black regiments of the Civil War.
+          atS: 34.44
+          durationS: 5.69
+        - text: They marched down this street, off to the war, in eighteen sixty-three.
+          atS: 40.73
+          durationS: 4.35
+        - text: That July, in the assault on Fort Wagner in South Carolina, Shaw and many of his men were killed.
+          atS: 45.59
+          durationS: 6.1
+        - text: In his New York studio, Saint-Gaudens hired Black men to pose, and modelled some forty heads.
+          atS: 52.38
+          durationS: 6.11
+        - text: The work took him about fourteen years, longer than anything else in his career.
+          atS: 59.3
+          durationS: 4.57
+        - text: It was unveiled in eighteen ninety-seven, and the original inscriptions named only the white officers who fell.
+          atS: 64.32
+          durationS: 7.04
+        - text: The names of the Black soldiers were added in the early nineteen-eighties.
+          atS: 71.74
+          durationS: 3.98
+        - text: The faces came first.
+          atS: 75.97
+          durationS: 1.79
+        - text: The names took another eighty-five years.
+          atS: 78.08
+          durationS: 2.54

@@ -9,7 +9,7 @@ at: { lat: 42.36623, lng: -71.05462 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 75
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -42,21 +42,131 @@ script: |
 pronunciations:
   - written: Sheafe Street
     say: SHEEF Street
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "It says the signal lanterns of Paul Revere were shown in the steeple of this church."
+    source: 4
+    quote: "A tablet was placed on the front of Christ Church in 1878, bearing the following inscription : — THE SIGNAL LANTERNS OF PAUL REVERE DISPLAYED IN THE STEEPLE OF THIS CHURCH APRIL 18 1775"
+  - says: "It does not say who carried them up."
+    source: 4
+    quote: "THE SIGNAL LANTERNS OF PAUL REVERE DISPLAYED IN THE STEEPLE OF THIS CHURCH APRIL 18 1775 WARNED THE COUNTRY OF THE MARCH OF THE BRITISH TROOPS TO LEXINGTON AND CONCORD."
+  - says: "On the night of the eighteenth of April, seventeen seventy-five, by the usual account, two men let themselves in."
+    source: 2
+    quote: "On the night of April 18, 1775, it is believed that sexton Robert Newman and vestryman John Pulling hung two lanterns in the steeple"
+  - says: "On the night of the eighteenth of April, seventeen seventy-five, by the usual account, two men let themselves in."
+    source: 1
+    quote: "On the evening of April 18, 1775, Robert Newman and John Pulling quietly entered Old North"
+  - says: "One was John Pulling, a member of the vestry."
+    source: 2
+    quote: "vestryman John Pulling"
+  - says: "The other was the man who kept the church, its sexton."
+    source: 2
+    quote: "sexton Robert Newman"
+  - says: "His name was Robert Newman."
+    source: 2
+    quote: "sexton Robert Newman"
+  - says: "They climbed to the top of the tower, the tallest structure in the town."
+    source: 1
+    quote: "carefully climbed to the top of the church's bell tower."
+  - says: "They climbed to the top of the tower, the tallest structure in the town."
+    source: 1
+    quote: "This signal, from the tallest structure in the town of Boston"
+  - says: "They held two lanterns near the windows, briefly."
+    source: 1
+    quote: "They briefly hung two lanterns near the windows and made their escape."
+  - says: "Two lanterns meant the British troops were crossing the river by water, heading for Lexington and Concord."
+    source: 1
+    quote: "served as an early warning that a detachment of the British Army was crossing the Charles River and heading west towards the towns of Lexington and Concord."
+  - says: "Newman lived a block up this street, on the corner of Sheafe Street."
+    source: 3
+    quote: "A block above, at the comer of Salem and Sheafe streets, is the site of the home of Robert Newman."
+  - says: "And there is one more detail about that house."
+    source: 3
+    quote: "is the site of the home of Robert Newman."
+  - says: "At the time, British officers were quartered in it, on the Newman family."
+    source: 3
+    quote: "At the time British officers were quartered in this house upon the Newman family."
+  - says: "So the signal that the army was moving went up from the tallest building in Boston."
+    source: 1
+    quote: "This signal, from the tallest structure in the town of Boston"
+  - says: "And the man who hung it was sharing his home with the army's officers."
+    source: 3
+    quote: "He was the sexton of Christ Church in 1775 who, according to the tradition that its steeple was the place of the Revere signals, hung them out"
 sources:
   - title: "Old North Church"
     publisher: "National Park Service, Boston National Historical Park"
     url: https://www.nps.gov/bost/learn/historyculture/onc.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Old North Church"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/old-north-church.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
-  - title: "Boston, a guide book, by Edwin M. Bacon (Ginn and Company, 1909), Christ Church and the Newman house"
+  - title: "Boston, a guide book, by Edwin M. Bacon (revised edition, 1908)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/33007578/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+  - title: "King's hand-book of Boston (1885)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01015801/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-the-sextons-lodgers/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.5
+    audioBytes: 1096350
+    transcript:
+      totalS: 68.5
+      lines:
+        - text: Look at the brick tower, and the tablet on its front.
+          atS: 0
+          durationS: 3.11
+        - text: It says the signal lanterns of Paul Revere were shown in the steeple of this church.
+          atS: 3.5
+          durationS: 4.83
+        - text: It does not say who carried them up.
+          atS: 8.93
+          durationS: 2.1
+        - text: On the night of the eighteenth of April, seventeen seventy-five, by the usual account, two men let themselves in.
+          atS: 12.14
+          durationS: 6.98
+        - text: One was John Pulling, a member of the vestry.
+          atS: 19.73
+          durationS: 3.2
+        - text: The other was the man who kept the church, its sexton.
+          atS: 23.37
+          durationS: 3.79
+        - text: His name was Robert Newman.
+          atS: 27.67
+          durationS: 2
+        - text: They climbed to the top of the tower, the tallest structure in the town.
+          atS: 30.96
+          durationS: 3.88
+        - text: They held two lanterns near the windows, briefly.
+          atS: 35.28
+          durationS: 3.03
+        - text: Then they got out.
+          atS: 38.75
+          durationS: 1.43
+        - text: Two lanterns meant the British troops were crossing the river by water, heading for Lexington and Concord.
+          atS: 40.79
+          durationS: 5.96
+        - text: Newman lived a block up this street, on the corner of Sheafe Street.
+          atS: 47.18
+          durationS: 3.6
+        - text: And there is one more detail about that house.
+          atS: 51.22
+          durationS: 2.45
+        - text: At the time, British officers were quartered in it, on the Newman family.
+          atS: 54.18
+          durationS: 4.33
+        - text: So the signal that the army was moving went up from the tallest building in Boston.
+          atS: 59.02
+          durationS: 4.78
+        - text: And the man who hung it was sharing his home with the army's officers.
+          atS: 64.32
+          durationS: 4.13

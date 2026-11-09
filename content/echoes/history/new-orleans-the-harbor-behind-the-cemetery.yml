@@ -9,7 +9,7 @@ at: { lat: 29.96045, lng: -90.07020 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 76
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -21,13 +21,13 @@ script: |
 
   There is no basin here now. A little over a century ago, there was.
 
-  Turn the corner at St. Louis Street, a guidebook of nineteen hundred told its readers, and the Old Basin bursts upon the view. A square of water at the end of a canal, with oyster luggers and charcoal schooners tied up along its banks, unloading.
+  Turn the corner at St. Louis Street, an old city guide told its readers, and the Old Basin bursts upon the view. A square of water at the end of a canal, with oyster luggers and charcoal schooners tied up along its banks, unloading.
 
   The canal ran from here out to Bayou St. John, and through the bayou boats could reach Lake Pontchartrain. A schooner could come in off the lake and finish its trip close under the old city ramparts.
 
-  It was a Spanish governor's project. The Baron de Carondelet had it dug in the seventeen-nineties, to drain the swamps behind the city and to bring trade to its back door. The digging was done by gangs of enslaved men, lent free of charge by the city's wealthy.
+  It was a Spanish governor's project. The Baron de Carondelet had it dug in the seventeen-nineties, to drain the swamps behind the city and to bring trade to its back door. The digging was done by a large force of enslaved men, borrowed from their owners in town and country.
 
-  By nineteen hundred and four, the guidebooks noted that a railway company had bought the land along the canal, for car yards and warehouses.
+  By nineteen hundred and four, the guidebooks noted that a railway company had taken over the land along the canal, for car yards and warehouses.
 
   The water is gone, and so are the schooners. The street kept the name.
 detail: |
@@ -44,21 +44,116 @@ pronunciations:
     say: BY-oo Saint John
   - written: luggers
     say: LUG-erz
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Basin Street."
+    source: 1
+    quote: "extending from. Basin Street about twelve or fifteen squares along the Canal."
+  - says: "Turn the corner at St. Louis Street, an old city guide told its readers, and the Old Basin bursts upon the view."
+    source: 2
+    quote: "The tourist passes from these an- cient cemeteries into St. Louis street, and at the corner of North Basin the quaint “Old Basin.”’ with its curious freight of oyster lug- gers and charcoal schooners, discharg- ing their cargoes, bursts upon the view."
+  - says: "The canal ran from here out to Bayou St. John, and through the bayou boats could reach Lake Pontchartrain."
+    source: 1
+    quote: "The ‘Carondelet Canal” extends from the Old Basin southwest to the Bayou St. John"
+  - says: "The canal ran from here out to Bayou St. John, and through the bayou boats could reach Lake Pontchartrain."
+    source: 1
+    quote: "The canal empties at Hagan Avenue into the Bayou St. John, by which access may be had.to Lake Pontchartrain at Spanish Fort."
+  - says: "It was a Spanish governor's project."
+    source: 1
+    quote: "The Basin is the terminus of the Caron- delet Canal, which was the monumental work of the administration of the Spanish Governor of colonial days, Baron de Carondelet."
+  - says: "The Baron de Carondelet had it dug in the seventeen-nineties, to drain the swamps behind the city and to bring trade to its back door."
+    source: 4
+    quote: "in 1794-96 the practical Carondelet gath- ered a large force of slaves, borrowed from their town and country owners, and dug with pick and shovel in the reeking black soil just beyond the rear fortifications of the town, the “Old Basin” and canal that still bear his name."
+  - says: "The Baron de Carondelet had it dug in the seventeen-nineties, to drain the swamps behind the city and to bring trade to its back door."
+    source: 1
+    quote: "The canal was dug by orders of Carondelet for the purpose of draining the vast swamps in the rear of the city."
+  - says: "The Baron de Carondelet had it dug in the seventeen-nineties, to drain the swamps behind the city and to bring trade to its back door."
+    source: 1
+    quote: "close to the city “ramparts” he would greatly facilitate the commerce of New Orleans."
+  - says: "By nineteen hundred and four, the guidebooks noted that a railway company had taken over the land along the canal, for car yards and warehouses."
+    source: 1
+    quote: "The New Orleans Terminal Railway, organized to build terminal rail- way accomodations, that will be used by other roads, recently came into possession of an extensive area of ground in the rear of the City along the Old Basin Canal"
+  - says: "By nineteen hundred and four, the guidebooks noted that a railway company had taken over the land along the canal, for car yards and warehouses."
+    source: 1
+    quote: "The Railway Company expects to erect here its car yards and warehouses"
+  - says: "By nineteen hundred and four, the guidebooks noted that a railway company had taken over the land along the canal, for car yards and warehouses."
+    source: 1
+    quote: "Copyright 1904 by"
 sources:
   - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Rampart Street and its vicinity: the Old Basin"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's guide to New Orleans (1900), the Old Basin"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/00001333/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse_0/picayunesguideto00unse_0.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), North Rampart from Canal to Esplanade"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/13004346/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse/picayunesguideto00unse.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
+  - title: "The Creoles of Louisiana (1884), by George W. Cable"
+    publisher: "Charles Scribner's Sons, via the Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/creolesoflouisia01cabl/creolesoflouisia01cabl.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-harbor-behind-the-cemetery/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.7
+    audioBytes: 1100111
+    transcript:
+      totalS: 68.7
+      lines:
+        - text: Look at the street sign.
+          atS: 0
+          durationS: 1.33
+        - text: Basin Street.
+          atS: 1.54
+          durationS: 1.03
+        - text: There is no basin here now.
+          atS: 2.9
+          durationS: 1.56
+        - text: A little over a century ago, there was.
+          atS: 4.78
+          durationS: 2.58
+        - text: Turn the corner at St.
+          atS: 8.06
+          durationS: 1.1
+        - text: Louis Street, an old city guide told its readers, and the Old Basin bursts upon the view.
+          atS: 9.18
+          durationS: 5.41
+        - text: A square of water at the end of a canal, with oyster luggers and charcoal schooners tied up along its banks, unloading.
+          atS: 14.98
+          durationS: 7.6
+        - text: The canal ran from here out to Bayou St.
+          atS: 23.7
+          durationS: 2.32
+        - text: John, and through the bayou boats could reach Lake Pontchartrain.
+          atS: 26.04
+          durationS: 4.26
+        - text: A schooner could come in off the lake and finish its trip close under the old city ramparts.
+          atS: 31
+          durationS: 4.91
+        - text: It was a Spanish governor's project.
+          atS: 36.61
+          durationS: 2.07
+        - text: The Baron de Carondelet had it dug in the seventeen-nineties, to drain the swamps behind the city and to bring trade to its back door.
+          atS: 39.49
+          durationS: 8.13
+        - text: The digging was done by a large force of enslaved men, borrowed from their owners in town and country.
+          atS: 48.05
+          durationS: 6.32
+        - text: By nineteen hundred and four, the guidebooks noted that a railway company had taken over the land along the canal, for car yards and warehouses.
+          atS: 54.97
+          durationS: 8.61
+        - text: The water is gone, and so are the schooners.
+          atS: 64.03
+          durationS: 2.56
+        - text: The street kept the name.
+          atS: 66.91
+          durationS: 1.78

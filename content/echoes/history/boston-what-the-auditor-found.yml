@@ -9,7 +9,7 @@ at: { lat: 42.36833, lng: -71.05576 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 85
+durationS: 80
 visibility: at-hand
 certainty: documented
 minAge: 12
@@ -43,26 +43,167 @@ script: |
   He found the company responsible.
 
   The tank had simply not been strong enough to hold what was in it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Look across Commercial Street, at the slope rising toward Copp's Hill."
+    source: 2
+    quote: "A small dwelling on Copps Hills terrace slid into the street"
+  - says: "On the fifteenth of January, nineteen nineteen, a little after noon, a steel tank stood on the waterfront here."
+    source: 1
+    quote: "The accident occurred on January 15, 1919."
+  - says: "On the fifteenth of January, nineteen nineteen, a little after noon, a steel tank stood on the waterfront here."
+    source: 4
+    quote: "the explosion occurred during the noon hour"
+  - says: "On the fifteenth of January, nineteen nineteen, a little after noon, a steel tank stood on the waterfront here."
+    source: 2
+    quote: "the explosion of a huge tank of molasses on the watdr front off Cemmerclal street"
+  - says: "Close to two million gallons of it, stored for making alcohol."
+    source: 1
+    quote: "molasses tank of the United mates Industrial Alcohol company and the pouring forth of 1,800,000 gallons"
+  - says: "Close to two million gallons of it, stored for making alcohol."
+    source: 3
+    quote: "who knew that we were engaged during the war In the manufacture of alcohol"
+  - says: "People nearby heard a muffled roar."
+    source: 3
+    quote: "A muffled roar was- the first warn ing that the tank had exploded."
+  - says: "The tank split into two great pieces, and the molasses came out as a wave."
+    source: 3
+    quote: "big receptacle then broke into two) great segments or steel wnicn were impelled In opposite directions."
+  - says: "It knocked out spans of the elevated railway that ran along this street."
+    source: 2
+    quote: "crashed against the elevated structure of the Boston Klevated Railway in Commercial street, three spuns"
+  - says: "It crushed a fire station."
+    source: 3
+    quote: "A Are station was crushed."
+  - says: "In a city building close by, workers had been eating their lunch."
+    source: 3
+    quote: "In a city building near by a group of city employes were eating their lunch."
+  - says: "On the slope across the road, a small house slid down into the street."
+    source: 2
+    quote: "A small dwelling on Copps Hills terrace slid into the street, apparently sucked down by the receding tide of molasses."
+  - says: "Firemen had to hose the molasses away before they could reach anyone."
+    source: 4
+    quote: "firemen were forced ;.o turn streams of water on the mass before any progress could be made."
+  - says: "It was days before the last of the dead were found."
+    source: 1
+    quote: "It was days before the last of the bodies was reclaimed trom the waste"
+  - says: "Twenty-one people were killed."
+    source: 1
+    quote: "with the resulting loss of 21 Uvea"
+  - says: "The next day, the company's lawyer gave a statement."
+    source: 2
+    quote: "Harry F. R. Dolan, attorney for the Purity Distilling Company, Issued the following statement"
+  - says: "Perhaps by enemies of the United States."
+    source: 2
+    quote: "It is possible the tank may have been broken by enemies of the United States"
+  - says: "The tank, he suggested, had been blown up from outside."
+    source: 2
+    quote: "company assumes that the tank was broken by something which acted upon it from the outside."
+  - says: "It took six years to answer him."
+    source: 1
+    quote: "Six years to a day trom tbe collapse"
+  - says: "A court auditor sat for eight hundred and fifty-one days and heard nine hundred and ten witnesses."
+    source: 1
+    quote: "In 851 days of actual sitting he took the testimony of 910 witnesses"
+  - says: "In January nineteen twenty-five, he gave his finding."
+    source: 1
+    quote: "Colonel Hugh W. Ogden yesterday returned to the clerk of the supreme court his findings of damages as auditor."
+  - says: "He found the company responsible."
+    source: 1
+    quote: "He found the defendant company responsible for the collapse of the tank"
+  - says: "The tank had simply not been strong enough to hold what was in it."
+    source: 1
+    quote: "since It was not structurally string enough to withstand the pressure of the molasses It contained"
 sources:
   - title: "Six Years Later: Col. Ogden Prepares Report on Boston Molasses Flood, New Britain Herald, 16 January 1925, page 15"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn82014519/1925-01-16/ed-1/?sp=15
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Yankee Enemies May Have Blown Up Syrup Tank, Harrisburg Telegraph, 16 January 1919, page 12"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn85038411/1919-01-16/ed-1/?sp=12
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Molasses Blast, The Washington Times, 16 January 1919, page 10"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn84026749/1919-01-16/ed-1/?sp=10
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Explosion of Molasses, Alexandria Gazette, 16 January 1919, page 3"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn85025007/1919-01-16/ed-1/?sp=3
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-what-the-auditor-found/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.4
+    audioBytes: 1291118
+    transcript:
+      totalS: 80.4
+      lines:
+        - text: Look across Commercial Street, at the slope rising toward Copp's Hill.
+          atS: 0
+          durationS: 4.19
+        - text: On the fifteenth of January, nineteen nineteen, a little after noon, a steel tank stood on the waterfront here.
+          atS: 4.52
+          durationS: 7.15
+        - text: It held molasses.
+          atS: 12.11
+          durationS: 1.63
+        - text: Close to two million gallons of it, stored for making alcohol.
+          atS: 13.98
+          durationS: 3.77
+        - text: People nearby heard a muffled roar.
+          atS: 18.26
+          durationS: 2.17
+        - text: The tank split into two great pieces, and the molasses came out as a wave.
+          atS: 20.87
+          durationS: 4.75
+        - text: It knocked out spans of the elevated railway that ran along this street.
+          atS: 26.01
+          durationS: 3.99
+        - text: It crushed a fire station.
+          atS: 30.44
+          durationS: 1.68
+        - text: In a city building close by, workers had been eating their lunch.
+          atS: 32.51
+          durationS: 3.83
+        - text: On the slope across the road, a small house slid down into the street.
+          atS: 37.03
+          durationS: 4.2
+        - text: Firemen had to hose the molasses away before they could reach anyone.
+          atS: 41.84
+          durationS: 3.61
+        - text: It was days before the last of the dead were found.
+          atS: 45.89
+          durationS: 2.86
+        - text: Twenty-one people were killed.
+          atS: 49.13
+          durationS: 1.86
+        - text: The next day, the company's lawyer gave a statement.
+          atS: 51.94
+          durationS: 3.06
+        - text: The tank, he suggested, had been blown up from outside.
+          atS: 55.52
+          durationS: 3.35
+        - text: Perhaps by enemies of the United States.
+          atS: 59.38
+          durationS: 2.58
+        - text: It took six years to answer him.
+          atS: 62.34
+          durationS: 2.04
+        - text: A court auditor sat for eight hundred and fifty-one days and heard nine hundred and ten witnesses.
+          atS: 64.99
+          durationS: 6.02
+        - text: In January nineteen twenty-five, he gave his finding.
+          atS: 71.46
+          durationS: 3.05
+        - text: He found the company responsible.
+          atS: 74.76
+          durationS: 1.83
+        - text: The tank had simply not been strong enough to hold what was in it.
+          atS: 76.92
+          durationS: 3.52

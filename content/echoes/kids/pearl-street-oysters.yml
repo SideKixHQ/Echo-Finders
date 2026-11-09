@@ -1,12 +1,12 @@
 id: pearl-street-oysters
 title: A street paved with rubbish
-summary: Pearl Street is white underneath because people threw their lunch on the ground.
+summary: "Pearl Street is named after heaps of oyster shells, and was once paved with them."
 place: Pearl Street, Manhattan
 at: { lat: 40.70380, lng: -74.01120 }
 triggerRadiusKm: 0.09
 category: kids
 format: short
-durationS: 85
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -15,29 +15,113 @@ voice: UrTldiIxfedDl9tlesyS
 tags: [new-york, oysters, food, dutch]
 teaser: Why is it called Pearl Street?
 script: |
-  You are standing on a street that was paved with rubbish.
+  You are standing on a street named after a rubbish heap.
 
-  Look at the name. Pearl Street. The Dutch called it that because the ground here was
-  white. Not with stone, but with oyster shells. Millions of them, crushed flat and
-  trodden down until they made a road.
+  Look at the name. Pearl Street. The Dutch called it Paerlstraat, and it was named after a shell midden. That is a giant pile of oyster shells that people had thrown away. Later, the street itself was paved with oyster shells.
 
-  Four hundred years ago, the water around this island held about half of all the oysters
-  in the world. Three hundred and fifty square miles of oyster beds. Some of the oysters
-  were as big as a dinner plate.
+  Oysters have lived in the water around this island for about ten thousand years. The Lenape people, who lived here first, ate so many that they left huge piles of shells all over the area.
 
-  There were so many that they were cheap, so everybody ate them. Not in restaurants. From
-  carts in the street, the way you might buy a hot dog now. You ate the oyster, and you
-  threw the shell on the ground.
+  When New York grew, oysters were cheap, so everybody ate them. Not just in restaurants. Oyster carts lined the streets, the way you might buy a hot dog now.
 
-  Enough people did that, for enough years, that the shells became the street.
+  By 1880 the city was farming about seven hundred million oysters.
 
-  One more thing. The Dutch kept opening them to look for pearls. They never found a single
-  one. New York oysters don't make them.
-editorial: draft
+  And there is something else. The Dutch were disappointed with these oysters at first, because they do not make pearls. So, despite its name, Pearl Street was never about pearls.
+
+editorial: approved
 factCheck: single-source
+claims:
+  - says: "Pearl Street."
+    source: 1
+    quote: "Paerlstraat, today’s Pearl Street, was named after one of the many shell middens that could be found in the area."
+  - says: "The Dutch called it Paerlstraat, and it was named after a shell midden."
+    source: 1
+    quote: "Paerlstraat, today’s Pearl Street, was named after one of the many shell middens that could be found in the area."
+  - says: "That is a giant pile of oyster shells that people had thrown away."
+    source: 1
+    quote: "they left behind massive piles of shells , known as middens, throughout the region"
+  - says: "Later, the street itself was paved with oyster shells."
+    source: 1
+    quote: "The street itself would later be paved with oyster shells."
+  - says: "Oysters have lived in the water around this island for about ten thousand years."
+    source: 1
+    quote: "These tough-shelled bivalve mollusks have lived here for roughly 10,000 years"
+  - says: "The Lenape people, who lived here first, ate so many that they left huge piles of shells all over the area."
+    source: 1
+    quote: "The Lenape consumed the mollusks in such abundance that they left behind massive piles of shells , known as middens, throughout the region."
+  - says: "When New York grew, oysters were cheap, so everybody ate them."
+    source: 1
+    quote: "Colonial New Yorkers continued to feast on the cheap and accessible mollusks"
+  - says: "Not just in restaurants."
+    source: 1
+    quote: "Oyster carts lined the city’s streets, and eateries known as oyster cellars sprang up"
+  - says: "Oyster carts lined the streets, the way you might buy a hot dog now."
+    source: 1
+    quote: "Oyster carts lined the city’s streets"
+  - says: "By 1880 the city was farming about seven hundred million oysters."
+    source: 1
+    quote: "By 1880, the city farmed about 700 million oysters, making New York the world’s oyster capital."
+  - says: "The Dutch were disappointed with these oysters at first, because they do not make pearls."
+    source: 1
+    quote: "the Dutch were initially disappointed in the Eastern oyster’s inability to reproduce pearls"
+  - says: "So, despite its name, Pearl Street was never about pearls."
+    source: 1
+    quote: "the Dutch were initially disappointed in the Eastern oyster’s inability to reproduce pearls"
 sources:
-  - title: What in the Pearl? A History of NYC's Oysters
-    publisher: Downtown Alliance
+  - title: "What in the Pearl? A History of NYC's Oysters"
+    publisher: "Downtown Alliance"
     url: https://downtownny.com/news/oyster-history-downtown/
-    retrievedAt: "2026-09-22"
-    rights: public-domain
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/pearl-street-oysters/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 55.1
+    audioBytes: 882354
+    transcript:
+      totalS: 55.1
+      lines:
+        - text: You are standing on a street named after a rubbish heap.
+          atS: 0
+          durationS: 3.15
+        - text: Look at the name.
+          atS: 3.47
+          durationS: 0.85
+        - text: Pearl Street.
+          atS: 4.6
+          durationS: 0.91
+        - text: The Dutch called it Paerlstraat, and it was named after a shell midden.
+          atS: 5.83
+          durationS: 4.08
+        - text: That is a giant pile of oyster shells that people had thrown away.
+          atS: 10.34
+          durationS: 3.77
+        - text: Later, the street itself was paved with oyster shells.
+          atS: 14.56
+          durationS: 3.21
+        - text: Oysters have lived in the water around this island for about ten thousand years.
+          atS: 18.09
+          durationS: 4.11
+        - text: The Lenape people, who lived here first, ate so many that they left huge piles of shells all over the area.
+          atS: 22.37
+          durationS: 6.5
+        - text: When New York grew, oysters were cheap, so everybody ate them.
+          atS: 29.2
+          durationS: 3.59
+        - text: Not just in restaurants.
+          atS: 33.17
+          durationS: 1.44
+        - text: Oyster carts lined the streets, the way you might buy a hot dog now.
+          atS: 34.93
+          durationS: 4.26
+        - text: By 1880 the city was farming about seven hundred million oysters.
+          atS: 39.71
+          durationS: 4.39
+        - text: And there is something else.
+          atS: 44.48
+          durationS: 1.32
+        - text: The Dutch were disappointed with these oysters at first, because they do not make pearls.
+          atS: 46.13
+          durationS: 4.47
+        - text: So, despite its name, Pearl Street was never about pearls.
+          atS: 50.92
+          durationS: 4.16

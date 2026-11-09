@@ -11,7 +11,7 @@ at: { lat: 41.92040, lng: -87.63800 }
 triggerRadiusKm: 0.06
 category: true-crime
 format: short
-durationS: 96
+durationS: 67
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -32,14 +32,14 @@ script: |
   The crime helped define the public image of Prohibition-era Chicago: rival
   organizations, illegal alcohol, and violence reaching far beyond a private dispute.
 
-  Al Capone became a leading suspect in public accounts.
+  Al Capone's Chicago Outfit was widely suspected of ordering it.
 
-  But he was never convicted of this massacre, and the case remains unsolved.
+  But Capone was never charged with this massacre, nobody was ever prosecuted for it, and the case remains unsolved.
 
   Look at the space where the building stood.
 
-  You cannot inspect its rooms here. Even the original bullet-marked wall was removed;
-  portions are now displayed at the Mob Museum in Las Vegas.
+  You cannot inspect its rooms here. When the garage was due to be demolished in 1967, the
+  bricks of the wall were saved; some are now displayed at the Mob Museum in Las Vegas.
 
   The address survives in Chicago.
 
@@ -49,32 +49,106 @@ script: |
 
   Behind that name were seven deaths, and a crime whose reputation became clearer than its
   complete solution.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: unsolved
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-09"
+  reviewedAt: "2026-11-09"
   contentWarning: "This echo describes the killing of seven men. No violence is described in detail."
+claims:
+  - says: "On February 14, 1929, it stood at this address."
+    source: 1
+    quote: "On February 14, 1929, seven members and associates of George “Bugs” Moran’s bootlegging gang were lined up against a wall and shot dead inside the garage at 2122 North Clark Street."
+  - says: "Inside, seven men associated with George “Bugs” Moran’s bootlegging organization were lined up against a wall and shot."
+    source: 1
+    quote: "seven members and associates of George “Bugs” Moran’s bootlegging gang were lined up against a wall and shot dead inside the garage"
+  - says: "The killings became known as the St. Valentine’s Day Massacre."
+    source: 1
+    quote: "A commercial garage on the north side of Chicago was the setting for the most horrific shooting in Mob history, the St. Valentine’s Day Massacre."
+  - says: "The crime helped define the public image of Prohibition-era Chicago: rival organizations, illegal alcohol, and violence reaching far beyond a private dispute."
+    source: 1
+    quote: "News of the Massacre made headlines across the country and served as a wake-up to many Americans about the extent of organized crime’s power and violence."
+  - says: "Al Capone's Chicago Outfit was widely suspected of ordering it."
+    source: 1
+    quote: "Al Capone’s Chicago Outfit was widely suspected of ordering the hit, but no one was ever prosecuted."
+  - says: "But Capone was never charged with this massacre, nobody was ever prosecuted for it, and the case remains unsolved."
+    source: 2
+    quote: "While Al Capone is widely suspected of having ordered this massacre on Bugs Moran’s gang, he was never charged with the crime."
+  - says: "the case remains unsolved"
+    source: 2
+    quote: "The St. Valentine’s Day Massacre of 1929 – a mystery still unsolved – is the story of seven men, gunned down in a Chicago warehouse."
+  - says: "When the garage was due to be demolished in 1967, the bricks of the wall were saved; some are now displayed at the Mob Museum in Las Vegas."
+    source: 1
+    quote: "When the garage was slated for demolition in 1967, entrepreneur George Patey recovered the bricks from the wall. Three hundred of those bricks are on display here."
+  - says: "The address survives in Chicago."
+    source: 1
+    quote: "The Massacre took place at 2122 N. Clark Street in the S-M-C Cartage Company, a garage where Bugs Moran’s men hung out."
+  - says: "Behind that name were seven deaths"
+    source: 2
+    quote: "is the story of seven men, gunned down in a Chicago warehouse"
 sources:
-  - title: "1191"
-    publisher: "Encyclopedia of Chicago, Chicago Historical Society"
-    url: https://www.encyclopedia.chicagohistory.org/pages/1191.html
-    retrievedAt: "2026-10-09"
-    rights: fair-use-facts
-  - title: "Massacre wall"
+  - title: "St. Valentine's Day Massacre Wall"
     publisher: "The Mob Museum"
     url: https://themobmuseum.org/exhibits/massacre-wall/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
-  - title: "St valentines day massacre"
+  - title: "St. Valentine's Day Massacre"
     publisher: "The Mob Museum"
     url: https://themobmuseum.org/case-files/the-exhibits/st-valentines-day-massacre/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
-  - title: "Al Capone"
-    publisher: "Federal Bureau of Investigation"
-    url: https://www.fbi.gov/history/cases-and-criminals/al-capone
-    retrievedAt: "2026-10-09"
-    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-garage-that-vanished/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 67
+    audioBytes: 1073362
+    transcript:
+      totalS: 67
+      lines:
+        - text: The garage is gone.
+          atS: 0
+          durationS: 1.42
+        - text: On February 14, 1929, it stood at this address.
+          atS: 2.02
+          durationS: 4.2
+        - text: Inside, seven men associated with George “Bugs” Moran’s bootlegging organization were lined up against a wall and shot.
+          atS: 6.5
+          durationS: 7.5
+        - text: The killings became known as the St.
+          atS: 14.33
+          durationS: 1.85
+        - text: Valentine’s Day Massacre.
+          atS: 16.2
+          durationS: 1.65
+        - text: "The crime helped define the public image of Prohibition-era Chicago: rival organizations, illegal alcohol, and violence reaching far beyond a private dispute."
+          atS: 18.17
+          durationS: 10.02
+        - text: Al Capone's Chicago Outfit was widely suspected of ordering it.
+          atS: 28.51
+          durationS: 3.92
+        - text: But Capone was never charged with this massacre, nobody was ever prosecuted for it, and the case remains unsolved.
+          atS: 32.59
+          durationS: 7.38
+        - text: Look at the space where the building stood.
+          atS: 40.48
+          durationS: 2.05
+        - text: You cannot inspect its rooms here.
+          atS: 42.69
+          durationS: 2.09
+        - text: When the garage was due to be demolished in 1967, the bricks of the wall were saved; some are now displayed at the Mob Museum in Las Vegas.
+          atS: 45.1
+          durationS: 9.26
+        - text: The address survives in Chicago.
+          atS: 54.69
+          durationS: 2.16
+        - text: The evidence traveled.
+          atS: 57
+          durationS: 1.41
+        - text: The name became famous.
+          atS: 58.73
+          durationS: 1.47
+        - text: Behind that name were seven deaths, and a crime whose reputation became clearer than its complete solution.
+          atS: 60.59
+          durationS: 6.42

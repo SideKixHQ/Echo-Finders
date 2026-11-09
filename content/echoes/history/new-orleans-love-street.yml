@@ -9,16 +9,11 @@ at: { lat: 29.96640, lng: -90.06278 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 91
+durationS: 87
 visibility: at-hand
 certainty: contested
 certaintyNote: >-
-  The street names and their later renaming are documented in the 1900, 1904 and 1913
-  Picayune guides and Grace King's Creole Families of New Orleans (1921). Why one street
-  was called Craps is disputed: King says Marigny named it for a game he was addicted to,
-  the 1904 guide says boys playing the game there gave the street its name, and neither
-  cites a source. The failed sale of the faubourg is King's retelling of an American
-  narrator's account, and the script hedges it.
+  The street names and their later renaming are documented in the 1900 and 1904 Picayune guides and Grace King's Creole Families of New Orleans (1921). Why one street was called Craps is disputed: King says Marigny named it for a game he was addicted to, the 1904 guide says boys playing the game there gave the street its name, and neither cites a source. The failed sale of the faubourg is King's retelling of an American narrator's account, and the script hedges it.
 minAge: 0
 quality: 0.75
 tags: [new-orleans, new-orleans-core, marigny, street-names, creole]
@@ -26,21 +21,21 @@ teaser: "This stretch of Rampart was called Love Street."
 script: |
   Look at the street sign. It says Rampart.
 
-  Back on the old town side of Esplanade, that name makes sense. The city's defenses ran along that line. But this stretch was laid out later, on a plantation, when its owner cut his land into streets and lots in the early eighteen-hundreds. He named this one himself.
+  Back on the old town side of Esplanade, that name makes sense. The city's defenses ran along that line. But this stretch was laid out many years after the city was founded, when the owner of a plantation here cut his land into streets and lots. He named this street himself.
 
   He called it Rue d'Amour. Love Street.
 
   His name was Bernard de Marigny, and he named the whole neighborhood like a poet. Poet Street. Good Children Street. Piety. Desire. And Craps.
 
-  Craps is where the stories split. Grace King, writing about the old Creole families in nineteen twenty-one, said he named it after a game he was addicted to. A guidebook from nineteen hundred and four says the street got the name because boys played the game there. Neither one gives a source. Take your pick.
+  Craps is where the stories split. Grace King, writing about the old Creole families in nineteen twenty-one, said he named it after a game he was addicted to. A guidebook from nineteen hundred and four says the street got the name because boys played the game there. Neither gives a source. Take your pick.
 
-  Marigny meant to build a Creole city that would outshine the American one growing up across Canal Street. It never came. One story says a sale of the whole faubourg fell apart in a notary's office, because his wife did not come to sign.
+  Marigny meant to build a Creole city that would outshine the American one. It never came. One story says a sale of the whole faubourg fell apart in a notary's office, because his wife did not come to sign.
 
   Later the city tidied up its map. Love Street became part of Rampart. Good Children became St. Claude. Moreau became Chartres.
 
   The pretty names, King wrote, are all that survive of his scheme. Even some of those were taken off the signs.
 detail: |
-  The 1913 Picayune guide dates the laying out of the Faubourg Marigny to 1805. The guides
+  The 1900 and 1904 Picayune guides
   credit the naming of Love Street to "Mandeville de Marigny"; Bernard de Marigny de
   Mandeville is the same man. The 1904 guide notes that older residents still called this
   stretch Love Street after the city council made it part of Rampart.
@@ -53,26 +48,177 @@ pronunciations:
     say: FOH-burg
   - written: Esplanade
     say: ESS-pluh-nade
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "It says Rampart."
+    source: 2
+    quote: "begins the new “‘Rampart”’ Street, laid out many years after the foundation of. New Orleans, by Mandeville de Marigny"
+  - says: "Back on the old town side of Esplanade, that name makes sense."
+    source: 2
+    quote: "Rampart, so-called be- cause being the city limit on the west, ramparts were erected all along the line."
+  - says: "Back on the old town side of Esplanade, that name makes sense."
+    source: 2
+    quote: "as the visitor completes the tour of ancient Rampart Street, just at the intersection of the Rue Esplanade"
+  - says: "He called it Rue d'Amour."
+    source: 3
+    quote: "It was called by him the “Rue d’Amour,” or Love street."
+  - says: "Love Street."
+    source: 3
+    quote: "It was called by him the “Rue d’Amour,” or Love street."
+  - says: "His name was Bernard de Marigny, and he named the whole neighborhood like a poet."
+    source: 1
+    quote: "The great Marigny property was cut into streets to which he himself gave the pretty names Poet, Love, Good Children"
+  - says: "Poet Street."
+    source: 1
+    quote: "he himself gave the pretty names Poet, Love, Good Children, Port, Moreau, Piety"
+  - says: "Good Children Street."
+    source: 1
+    quote: "he himself gave the pretty names Poet, Love, Good Children, Port, Moreau, Piety"
+  - says: "And Craps."
+    source: 1
+    quote: "Craps (from the game of cards to which he was"
+  - says: "Grace King, writing about the old Creole families in nineteen twenty-one, said he named it after a game he was addicted to."
+    source: 1
+    quote: "Craps (from the game of cards to which he was 46 OLD FAMILIES OF NEW ORLEANS addicted)"
+  - says: "Grace King, writing about the old Creole families in nineteen twenty-one, said he named it after a game he was addicted to."
+    source: 1
+    quote: "PUBLISHED MARCH, 1921"
+  - says: "A guidebook from nineteen hundred and four says the street got the name because boys played the game there."
+    source: 2
+    quote: "bad boys played ‘“‘Craps” and gave the name of the game to the adjoining street"
+  - says: "A guidebook from nineteen hundred and four says the street got the name because boys played the game there."
+    source: 2
+    quote: "Copyright 1904 by"
+  - says: "Marigny meant to build a Creole city that would outshine the American one."
+    source: 1
+    quote: "make a Creole city of it that would outshine forever the American one"
+  - says: "One story says a sale of the whole faubourg fell apart in a notary's office, because his wife did not come to sign."
+    source: 1
+    quote: "in another version of the affair that comes down to us"
+  - says: "One story says a sale of the whole faubourg fell apart in a notary's office, because his wife did not come to sign."
+    source: 1
+    quote: "office to sign the deed of transfer, Madame de Marigny failed to put in an appearance, and as her signature was necessary"
+  - says: "Love Street became part of Rampart."
+    source: 2
+    quote: "and to simplify the arrangement of the city map, Love was made a cons tinuation of Rampart Street."
+  - says: "Good Children became St. Claude."
+    source: 3
+    quote: "extending back from the levee to Good Children street, now St. Claude."
+  - says: "Moreau became Chartres."
+    source: 3
+    quote: "into the ancient Moreau (now Chartres) street of the old Faubourg Marigny."
+  - says: "The pretty names, King wrote, are all that survive of his scheme."
+    source: 1
+    quote: "The pretty names are all that survive of his scheme"
 sources:
   - title: "Creole families of New Orleans (New York, Macmillan, 1921), by Grace King, chapter on Bernard de Marigny"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/21004871/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/creolefamiliesof00king/creolefamiliesof00king.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), street names and the new Rampart Street"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
-    rights: public-domain
-  - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), North Rampart and the French Quarter beyond the Vieux Carre"
-    publisher: "Library of Congress"
-    url: https://www.loc.gov/item/13004346/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's guide to New Orleans (1900), Good Children street, now St. Claude"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/00001333/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse_0/picayunesguideto00unse_0.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-love-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 86.7
+    audioBytes: 1388503
+    transcript:
+      totalS: 86.7
+      lines:
+        - text: Look at the street sign.
+          atS: 0
+          durationS: 1.3
+        - text: It says Rampart.
+          atS: 1.45
+          durationS: 1.94
+        - text: Back on the old town side of Esplanade, that name makes sense.
+          atS: 4.09
+          durationS: 5.29
+        - text: The city's defenses ran along that line.
+          atS: 9.89
+          durationS: 2.46
+        - text: But this stretch was laid out many years after the city was founded, when the owner of a plantation here cut his land into streets and lots.
+          atS: 12.86
+          durationS: 8.37
+        - text: He named this street himself.
+          atS: 21.62
+          durationS: 1.89
+        - text: He called it Rue d'Amour.
+          atS: 23.89
+          durationS: 1.86
+        - text: Love Street.
+          atS: 26.08
+          durationS: 0.95
+        - text: His name was Bernard de Marigny, and he named the whole neighborhood like a poet.
+          atS: 27.35
+          durationS: 4.77
+        - text: Poet Street.
+          atS: 32.45
+          durationS: 0.92
+        - text: Good Children Street.
+          atS: 33.52
+          durationS: 1.23
+        - text: Piety.
+          atS: 34.96
+          durationS: 0.84
+        - text: Desire.
+          atS: 35.94
+          durationS: 0.75
+        - text: And Craps.
+          atS: 36.81
+          durationS: 1.11
+        - text: Craps is where the stories split.
+          atS: 38.53
+          durationS: 2.4
+        - text: Grace King, writing about the old Creole families in nineteen twenty-one, said he named it after a game he was addicted to.
+          atS: 41.54
+          durationS: 7.44
+        - text: A guidebook from nineteen hundred and four says the street got the name because boys played the game there.
+          atS: 49.49
+          durationS: 5.53
+        - text: Neither gives a source.
+          atS: 55.13
+          durationS: 1.36
+        - text: Take your pick.
+          atS: 56.54
+          durationS: 0.82
+        - text: Marigny meant to build a Creole city that would outshine the American one.
+          atS: 57.45
+          durationS: 4.18
+        - text: It never came.
+          atS: 61.68
+          durationS: 0.96
+        - text: One story says a sale of the whole faubourg fell apart in a notary's office, because his wife did not come to sign.
+          atS: 62.86
+          durationS: 7.28
+        - text: Later the city tidied up its map.
+          atS: 70.52
+          durationS: 2.33
+        - text: Love Street became part of Rampart.
+          atS: 73.18
+          durationS: 2.38
+        - text: Good Children became St.
+          atS: 75.73
+          durationS: 1.39
+        - text: Claude.
+          atS: 77.16
+          durationS: 0.59
+        - text: Moreau became Chartres.
+          atS: 77.93
+          durationS: 1.63
+        - text: The pretty names, King wrote, are all that survive of his scheme.
+          atS: 79.94
+          durationS: 3.63
+        - text: Even some of those were taken off the signs.
+          atS: 83.95
+          durationS: 2.75
