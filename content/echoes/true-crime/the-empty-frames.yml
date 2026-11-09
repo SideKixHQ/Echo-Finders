@@ -9,7 +9,7 @@ at: { lat: 42.33822, lng: -71.09921 }
 triggerRadiusKm: 0.06
 category: true-crime
 format: short
-durationS: 77
+durationS: 67
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -29,12 +29,12 @@ script: |
   Early on March 18, 1990, two men in police uniforms rang the intercom at the Isabella
   Stewart Gardner Museum. They said they were responding to a disturbance.
 
-  The guard on duty broke protocol and let them inside.
+  The guard on duty let them inside.
 
   The men restrained the guards and stole thirteen works of art.
 
-  Among the missing pieces were paintings by Rembrandt and Vermeer. The thieves cut two
-  Rembrandts from their frames, and left the frame of a Manet behind.
+  Among the missing pieces were paintings by Rembrandt and Vermeer. The thieves cut
+  Rembrandt's only seascape from its frame, and left the frame of a Manet behind.
 
   Pause beside an empty frame.
 
@@ -48,8 +48,8 @@ script: |
   Those frames are waiting.
 
   The most striking thing in this room might be something nobody can show you.
-editorial: draft
-factCheck: single-source
+editorial: approved
+factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: unsolved
@@ -66,9 +66,12 @@ claims:
   - says: "They said they were responding to a disturbance."
     source: 1
     quote: "stated they were responding to a disturbance"
-  - says: "The guard on duty broke protocol and let them inside."
+  - says: "The guard on duty let them inside."
     source: 1
     quote: "The guard on duty broke protocol and allowed them through the employee entrance."
+  - says: "The guard on duty let them inside."
+    source: 3
+    quote: "let the two men in the Palace Road entrance"
   - says: "The men restrained the guards and stole thirteen works of art."
     source: 1
     quote: "He and a second security guard were led to the basement of the Museum where they were restrained."
@@ -78,12 +81,49 @@ claims:
   - says: "Among the missing pieces were paintings by Rembrandt and Vermeer."
     source: 1
     quote: "They cut Rembrandt’s Christ in the Storm on the Sea of Galilee and A Lady and Gentleman in Black from their frames; removed Vermeer’s Concert"
-  - says: "The thieves cut two Rembrandts from their frames, and left the frame of a Manet behind."
+  - says: "The thieves cut Rembrandt's only seascape from its frame, and left the frame of a Manet behind."
+    source: 1
+    quote: "They cut Rembrandt’s Christ in the Storm on the Sea of Galilee"
+  - says: "The thieves cut Rembrandt's only seascape from its frame, and left the frame of a Manet behind."
     source: 1
     quote: "They also stole Manet’s Chez Tortoni from the Blue Room on the Museum’s first floor, leaving its frame behind as well."
+  - says: "The thieves cut Rembrandt's only seascape from its frame, and left the frame of a Manet behind."
+    source: 3
+    quote: 'When thieves slashed "Christ In The Storm On The Sea Of Galilee" from its frame'
+  - says: "Rembrandt's only seascape"
+    source: 3
+    quote: "It was Rembrandt's only seascape."
+  - says: "left the frame of a Manet behind"
+    source: 4
+    quote: 'He removed "Chez Tortoni" from its frame and placed the empty frame on the security director’s chair'
+
   - says: "The theft remains unresolved, and the museum continues seeking the return of its art."
     source: 1
     quote: "remains unsolved, although the Museum’s commitment to recovering the stolen works has never diminished"
+  - says: "Early on March 18, 1990, two men in police uniforms rang the intercom at the Isabella Stewart Gardner Museum."
+    source: 3
+    quote: "In the early hours of March 18, 1990, the city of Boston was still celebrating St. Patrick's Day. Two thieves dressed up in police uniforms and, at 1:24 a.m., simply rang the bell."
+  - says: "They said they were responding to a disturbance."
+    source: 3
+    quote: "And when the fake cops told the museum guard on duty that they were responding to a disturbance, it seemed plausible"
+  - says: "The men restrained the guards and stole thirteen works of art."
+    source: 3
+    quote: "Then the would-be police officers handcuffed the two guards, and tied them up in the basement of the museum."
+  - says: "stole thirteen works of art"
+    source: 3
+    quote: "two thieves stole 13 irreplaceable artworks from the Boston institution"
+  - says: "Among the missing pieces were paintings by Rembrandt and Vermeer."
+    source: 3
+    quote: "There, they took all four Rembrandts off the walls"
+  - says: "Among the missing pieces were paintings by Rembrandt and Vermeer."
+    source: 3
+    quote: "The thieves also took Vermeer's"
+  - says: "The theft remains unresolved, and the museum continues seeking the return of its art."
+    source: 3
+    quote: "the still unsolved robbery of 13 artworks from the Isabella Stewart Gardner Museum"
+  - says: "the museum continues seeking the return of its art"
+    source: 3
+    quote: "not one of these stolen works has come back, not even after the museum doubled the reward from $5 to $10 million"
 sources:
   - title: "Theft"
     publisher: "Isabella Stewart Gardner Museum"
@@ -95,3 +135,69 @@ sources:
     url: https://www.loc.gov/item/ma1748/
     retrievedAt: "2026-11-09"
     rights: public-domain
+  - title: "Episode 1: '81 Minutes' (Last Seen)"
+    publisher: "WBUR and The Boston Globe"
+    url: https://www.wbur.org/lastseen/2018/09/16/eighty-one-minutes
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Episode 2: 'Inside Job?' (Last Seen)"
+    publisher: "WBUR and The Boston Globe"
+    url: https://www.wbur.org/lastseen/2018/09/24/inside-job
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-empty-frames/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 66.7
+    audioBytes: 1068764
+    transcript:
+      totalS: 66.7
+      lines:
+        - text: Look at the empty frames.
+          atS: 0
+          durationS: 1.51
+        - text: In most museums, an empty frame means something is being moved or restored.
+          atS: 1.72
+          durationS: 4.47
+        - text: Here, it means something was stolen.
+          atS: 6.43
+          durationS: 2.45
+        - text: Isabella Stewart Gardner built this place after 1898, as her house and her museum.
+          atS: 9.48
+          durationS: 5.54
+        - text: Early on March 18, 1990, two men in police uniforms rang the intercom at the Isabella Stewart Gardner Museum.
+          atS: 15.63
+          durationS: 7.5
+        - text: They said they were responding to a disturbance.
+          atS: 23.51
+          durationS: 2.36
+        - text: The guard on duty let them inside.
+          atS: 26.25
+          durationS: 2.09
+        - text: The men restrained the guards and stole thirteen works of art.
+          atS: 28.66
+          durationS: 3.44
+        - text: Among the missing pieces were paintings by Rembrandt and Vermeer.
+          atS: 32.43
+          durationS: 3.59
+        - text: The thieves cut Rembrandt's only seascape from its frame, and left the frame of a Manet behind.
+          atS: 36.4
+          durationS: 5.95
+        - text: Pause beside an empty frame.
+          atS: 42.62
+          durationS: 2.11
+        - text: "A museum normally asks you to examine what is present: the brushwork, the light, the expression on a face."
+          atS: 45.12
+          durationS: 7.01
+        - text: This room also asks you to notice what is missing.
+          atS: 52.64
+          durationS: 2.88
+        - text: The theft remains unresolved, and the museum continues seeking the return of its art.
+          atS: 55.84
+          durationS: 5.05
+        - text: Those frames are waiting.
+          atS: 61.28
+          durationS: 1.4
+        - text: The most striking thing in this room might be something nobody can show you.
+          atS: 62.92
+          durationS: 3.81
