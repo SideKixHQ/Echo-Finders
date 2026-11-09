@@ -32,8 +32,9 @@ this session, so the podcast rankings come from press coverage of them.
 1. **History stays the backbone**, but it is over-weighted. The appetite is for history
    with a hook: a battle, a crime, a ghost, a person.
 2. **True crime is the biggest demand and our hardest supply.** It is opt-in, every echo needs
-   a court, coroner or government record (`validate.ts`), and it carries a disclaimer. Worth
-   the effort, but it cannot be most of a city.
+   two independent reputable sources and is told by its conviction status, and it carries a
+   disclaimer. Worth the effort, but it cannot be most of a city. How to do it every time:
+   `14-true-crime.md`.
 3. **Ghosts are under-supplied exactly where they sell best.** Savannah has one, Charleston
    none.
 4. **Military is wanted, and we already have it, filed under history.** 54 echoes carry a war

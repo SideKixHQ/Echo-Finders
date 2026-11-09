@@ -23,7 +23,8 @@ for what gets served; it is built from here (ADR-0005).
    when a living person was not convicted, an explicit conviction status, a named
    reviewer and a content warning. What was not proven is told as unproven: an alleged
    case says whose claim it is, an exoneration says so aloud. A public record is the best
-   source when there is one. `validateLibrary` enforces all of it in CI.
+   source when there is one. `validateLibrary` enforces all of it in CI. The method,
+   sources and wording: `docs/14-true-crime.md`.
 5. Wikipedia is for finding subjects and their original sources. It is not itself a
    source, and its prose is never the basis for a script.
 
