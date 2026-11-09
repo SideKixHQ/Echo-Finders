@@ -1,0 +1,123 @@
+# Drafted by Claude Code (2026-11-09) for Saint Paul, Minnesota.
+# Listening spot: Trail in the sanctuary, a city park, with a view across the pond to the cave entrance.
+# Position: NPS Wakan Tipi page gives the sanctuary at 44.939155, -93.046364; the cave mouth is visible across the pond (high confidence).
+id: saint-paul-the-spirit-house
+title: "The Spirit House"
+summary: "Wakan Tipi, a cave sacred to the Dakota, was carved with figures in 1766. Railroads cut away much of it. The mouth is still there."
+place: "Wakan Tipi Nature Sanctuary, 265 Commercial Street, Saint Paul, Minnesota"
+at: { lat: 44.93916, lng: -93.04636 }
+triggerRadiusKm: 0.12
+category: history
+format: short
+durationS: 53
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [saint-paul, wakan-tipi, dakota, mississippi]
+teaser: "Across the pond is the mouth of a cave the Dakota call the Spirit House."
+script: |
+  Look across the pond to the foot of the sandstone bluff. That dark opening is a cave.
+
+  The Dakota call it Wakan Tipi, the Spirit House. It was a significant place for Native Americans.
+
+  When the explorer Jonathan Carver stopped here in late 1766, he described the inside as covered with figures cut into the soft stone.
+
+  Later visitors did not describe them. The soft sandstone, running water and falling ceilings may have worn them away.
+
+  Then the railroads came. They cut back the bluff to make room for tracks, and destroyed much of the cave.
+
+  By the late 1880s this ground was an industrial area and a rail yard. It became a city park in 2005.
+
+  The figures are gone. The cave is still there, behind the water, closed.
+pronunciations:
+  - written: "Wakan Tipi"
+    say: "wah-KAHN tee-PEE"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The Dakota call it Wakan Tipi, the Spirit House."
+    source: 1
+    quote: "(Spirit House), a cave, is located in the sandstone bluff that rims the north edge of the park."
+  - says: "It was a significant place for Native Americans."
+    source: 1
+    quote: "was a significant site for Native Americans."
+  - says: "When the explorer Jonathan Carver stopped here in late 1766, he described the inside as covered with figures cut into the soft stone."
+    source: 1
+    quote: "When Jonathan Carver stopped here in late 1766, he described the cave's interior as having many incised figures cut into the soft stone."
+  - says: "Later visitors did not describe them."
+    source: 1
+    quote: "Later visitors to the cave, however, didn't describe these same markings"
+  - says: "The soft sandstone, running water and falling ceilings may have worn them away."
+    source: 1
+    quote: "soft sandstone, flowing water, and ceiling collapses may have eroded or destroyed them."
+  - says: "They cut back the bluff to make room for tracks, and destroyed much of the cave."
+    source: 2
+    quote: "They cut back Daytons Bluff to make more room for tracks, destroying much of Carver's Cave."
+  - says: "By the late 1880s this ground was an industrial area and a rail yard."
+    source: 1
+    quote: "In the late 1880s, railroads snaked their way into the area following the easy grades of the flat floodplains and the future park became an industrial area and rail yard."
+  - says: "It became a city park in 2005."
+    source: 1
+    quote: "until being made a Saint Paul park in 2005."
+  - says: "The cave is still there, behind the water, closed."
+    source: 1
+    quote: "The cave still exists, but access isn't possible."
+sources:
+  - title: "Wakan Tipi Nature Sanctuary (formerly Bruce Vento)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/miss/planyourvisit/wakan-tipi-sanctuary.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "River of History, Chapter 7"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/miss/learn/historyculture/river-of-history-chapter-7.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/saint-paul-the-spirit-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53.3
+    audioBytes: 853933
+    transcript:
+      totalS: 53.3
+      lines:
+        - text: Look across the pond to the foot of the sandstone bluff.
+          atS: 0
+          durationS: 3.06
+        - text: That dark opening is a cave.
+          atS: 3.39
+          durationS: 2.23
+        - text: The Dakota call it Wakan Tipi, the Spirit House.
+          atS: 6.13
+          durationS: 3.89
+        - text: It was a significant place for Native Americans.
+          atS: 10.72
+          durationS: 3.14
+        - text: When the explorer Jonathan Carver stopped here in late 1766, he described the inside as covered with figures cut into the soft stone.
+          atS: 14.36
+          durationS: 8.56
+        - text: Later visitors did not describe them.
+          atS: 23.36
+          durationS: 2.17
+        - text: The soft sandstone, running water and falling ceilings may have worn them away.
+          atS: 25.74
+          durationS: 5.1
+        - text: Then the railroads came.
+          atS: 31.44
+          durationS: 1.36
+        - text: They cut back the bluff to make room for tracks, and destroyed much of the cave.
+          atS: 33.12
+          durationS: 4.73
+        - text: By the late 1880s this ground was an industrial area and a rail yard.
+          atS: 38.55
+          durationS: 5
+        - text: It became a city park in 2005.
+          atS: 44.25
+          durationS: 2.89
+        - text: The figures are gone.
+          atS: 47.83
+          durationS: 1.13
+        - text: The cave is still there, behind the water, closed.
+          atS: 49.66
+          durationS: 3.66

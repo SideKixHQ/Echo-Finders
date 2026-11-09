@@ -1,0 +1,139 @@
+# Drafted by Claude Code (2026-11-09) for Pawhuska, Oklahoma.
+# Listening spot: Public street below the Osage Agency buildings on Agency Hill.
+# Position: Wikidata Q138946408 (Osage Agency) 36.6658, -96.34064 (medium confidence).
+id: pawhuska-guardian-of-his-own-children
+title: "Guardian of His Own Children"
+summary: "A federal register of Osage guardians lists Ernest Burkhart as guardian of his children while he was part of a plot against their family."
+place: "Osage Agency, Agency Hill, Pawhuska, Oklahoma"
+at: { lat: 36.6658, lng: -96.34064 }
+triggerRadiusKm: 0.08
+category: true-crime
+format: short
+durationS: 58
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [pawhuska, osage, osage-murders, reign-of-terror]
+teaser: "A government ledger named the guardian of two Osage children. It was their father."
+script: |
+  Look up the hill at the old agency buildings.
+
+  In the early nineteen twenties the federal government decided which Osage were unfit to control their own money.
+
+  Those it judged incompetent were given guardians.
+
+  Guardians often used the system, in the writer David Grann's words, to swindle the very people they were supposedly protecting.
+
+  The National Archives keeps a handwritten ledger of those guardians, the Register of Guardians, from 1919 to 1924.
+
+  Mollie Burkhart was Osage. She and her family were victims of William Hale, who planned the killing of several Osage people to inherit their oil rights and money.
+
+  Hale brought in his nephew, Ernest Burkhart, to help.
+
+  Ernest had married Mollie. He was later arrested for his part in the deaths of her family.
+
+  Now open the register at their children. The guardian listed for them is Ernest.
+
+  The system meant to protect the children's money put it in their father's hands.
+pronunciations:
+  - written: "Osage"
+    say: "OH-sayj"
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-09"
+  reviewedAt: "2026-11-09"
+  contentWarning: "This echo concerns a series of murders in the 1920s. No violence is described."
+claims:
+  - says: "In the early nineteen twenties the federal government decided which Osage were unfit to control their own money."
+    source: 1
+    quote: "The register lists guardians of Osage Indians who were deemed unfit to have control of their own money."
+  - says: "Those it judged incompetent were given guardians."
+    source: 2
+    quote: "guardians were \"assigned to any American Indians whom the Department of the Interior deemed 'incompetent.'\""
+  - says: "Guardians often used the system, in the writer David Grann's words, to swindle the very people they were supposedly protecting."
+    source: 2
+    quote: "Guardians often used the system to their own advantage \"to swindle the very people they were ostensibly protecting.\""
+  - says: "The National Archives keeps a handwritten ledger of those guardians, the Register of Guardians, from 1919 to 1924."
+    source: 2
+    quote: "the Register of Guardians, 1919–1924,\" said Michael Wright, Director of Archival Operations at the National Archives at Fort Worth. \"The ledger is a handwritten record of the names of guardians of minor and 'incompetent' Osages.\""
+  - says: "Mollie Burkhart was Osage."
+    source: 1
+    quote: "Mollie Burkhart, an Osage, and her family were victims of William K. Hale"
+  - says: "She and her family were victims of William Hale, who planned the killing of several Osage people to inherit their oil rights and money."
+    source: 1
+    quote: "Mollie Burkhart, an Osage, and her family were victims of William K. Hale, who masterminded the killing of several Osage Indians in order to inherit headrights (oil rights) and money."
+  - says: "Hale brought in his nephew, Ernest Burkhart, to help."
+    source: 1
+    quote: "Hale solicited his nephew Ernest Burkhart to help carry out his crimes."
+  - says: "Ernest had married Mollie."
+    source: 1
+    quote: "Ernest and Mollie married, but he was eventually arrested for his involvement in the death of her family members."
+  - says: "He was later arrested for his part in the deaths of her family."
+    source: 1
+    quote: "he was eventually arrested for his involvement in the death of her family members."
+  - says: "The guardian listed for them is Ernest."
+    source: 1
+    quote: "In the register, Ernest is listed as the guardian for their children, Elizabeth Ernestine and James William Burkhart."
+sources:
+  - title: "Records Pertaining to the Osage Indian Murders, Register of Guardians"
+    publisher: "National Archives at Fort Worth"
+    url: https://www.archives.gov/fort-worth/highlights/register-of-guardians
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "National Archives Records Lay Foundation for Book and Major Motion Picture"
+    publisher: "National Archives and Records Administration"
+    url: https://www.archives.gov/news/articles/killers-flower-moon-nara-sources
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/pawhuska-guardian-of-his-own-children/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 58
+    audioBytes: 928330
+    transcript:
+      totalS: 58
+      lines:
+        - text: Look up the hill at the old agency buildings.
+          atS: 0
+          durationS: 2.48
+        - text: In the early nineteen twenties the federal government decided which Osage were unfit to control their own money.
+          atS: 2.66
+          durationS: 6.94
+        - text: Those it judged incompetent were given guardians.
+          atS: 9.88
+          durationS: 2.8
+        - text: Guardians often used the system, in the writer David Grann's words, to swindle the very people they were supposedly protecting.
+          atS: 12.79
+          durationS: 6.91
+        - text: The National Archives keeps a handwritten ledger of those guardians, the Register of Guardians, from 1919 to 1924.
+          atS: 20.03
+          durationS: 7.81
+        - text: Mollie Burkhart was Osage.
+          atS: 28.45
+          durationS: 2.31
+        - text: She and her family were victims of William Hale, who planned the killing of several Osage people to inherit their oil rights and money.
+          atS: 31.27
+          durationS: 8
+        - text: Hale brought in his nephew, Ernest Burkhart, to help.
+          atS: 39.87
+          durationS: 3.29
+        - text: Ernest had married Mollie.
+          atS: 43.85
+          durationS: 1.37
+        - text: He was later arrested for his part in the deaths of her family.
+          atS: 45.5
+          durationS: 3.46
+        - text: Now open the register at their children.
+          atS: 49.11
+          durationS: 2.09
+        - text: The guardian listed for them is Ernest.
+          atS: 51.37
+          durationS: 2.24
+        - text: The system meant to protect the children's money put it in their father's hands.
+          atS: 53.73
+          durationS: 4.23

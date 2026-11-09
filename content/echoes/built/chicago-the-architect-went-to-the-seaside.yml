@@ -1,0 +1,155 @@
+# Drafted by Claude Code (2026-11-09) for Chicago, Illinois.
+# Listening spot: The public sidewalk at Dearborn Street and Jackson Boulevard, looking up at the dark brick walls.
+# Position: Wikidata Q1199833 (Monadnock Building, 41.878008, -87.629444); HABS gives the southwest corner of Dearborn and Jackson; the listener stands on the public sidewalk (high confidence).
+id: chicago-the-architect-went-to-the-seaside
+title: "The Architect Went to the Seaside"
+summary: "While John Root was away for two weeks, Daniel Burnham had the Monadnock drawn as a plain brick box. Its walls are six feet thick."
+place: "Monadnock Building, 53 West Jackson Boulevard at Dearborn Street, Chicago, Illinois"
+at: { lat: 41.87801, lng: -87.62944 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [chicago, loop, architecture, monadnock, burnham-and-root]
+teaser: "This building has no ornament at all, because of a two-week holiday."
+script: |
+  Look up at the dark brick walls of the Monadnock. There is not a single ornament on them. That was not the plan.
+
+  The architects were Burnham and Root. The man who controlled the investment kept urging them toward extreme simplicity, and rejected one or two of John Root's sketches as too ornate.
+
+  Then Root went away. A fortnight at the seashore.
+
+  While he was gone, Daniel Burnham ordered one of the draughtsmen to draw a straight-up-and-down, uncompromising, unornamented front.
+
+  When Root came back, he was indignant at this brick box. Gradually, though, he threw himself into it. He said he would throw the thing up without a single ornament.
+
+  What went up was sixteen stories. The walls carry the building themselves, and at their base they are six feet thick. Root called it Jumbo. It was the last of the tall buildings to show walls of solid masonry.
+
+  It was so heavy that it sank. By 1948 it had settled twenty inches.
+
+  One of the plainest famous buildings in America, and it started with an architect taking a holiday.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The architects were Burnham and Root."
+    source: 1
+    quote: "Architect: Burnham and Root."
+  - says: "The man who controlled the investment kept urging them toward extreme simplicity, and rejected one or two of John Root's sketches as too ornate."
+    source: 1
+    quote: "Mr. Aldis, who controlled the investment, kept urging upon his architects extreme simplicity, rejecting one or two of Root's sketches as too ornate."
+  - says: "Then Root went away."
+    source: 1
+    quote: "During Root's absence of a fortnight at the seashore"
+  - says: "A fortnight at the seashore."
+    source: 1
+    quote: "During Root's absence of a fortnight at the seashore"
+  - says: "While he was gone, Daniel Burnham ordered one of the draughtsmen to draw a straight-up-and-down, uncompromising, unornamented front."
+    source: 1
+    quote: "Mr. Burnham ordered from one of the draughtsmen a design of a straight-up-and-down, uncompromising, unornamented facade."
+  - says: "When Root came back, he was indignant at this brick box."
+    source: 1
+    quote: "When Root returned, he was indignant at first over this project of a brick box."
+  - says: "Gradually, though, he threw himself into it."
+    source: 1
+    quote: "Gradually, however, he threw himself into the spirit of the thing"
+  - says: "He said he would throw the thing up without a single ornament."
+    source: 1
+    quote: "'throw the thing up without a single ornament."
+  - says: "There is not a single ornament on them."
+    source: 2
+    quote: "Restrained use of brick, soaring massive walls, omission of ornamental forms, unite in a building simple yet majestic."
+  - says: "What went up was sixteen stories."
+    source: 1
+    quote: "The building has one basement, 16 stories, and a 17th story attic"
+  - says: "The walls carry the building themselves, and at their base they are six feet thick."
+    source: 1
+    quote: "The bearing walls are 6 feet thick at their base"
+  - says: "Root called it Jumbo."
+    source: 1
+    quote: "The Monadnock--'Jumbo', Root used to call it"
+  - says: "It was the last of the tall buildings to show walls of solid masonry."
+    source: 1
+    quote: "was the last of the tall buildings to show walls of solid masonry."
+  - says: "By 1948 it had settled twenty inches."
+    source: 1
+    quote: "the total settlement in 1948 was 20 inches."
+  - says: "One of the plainest famous buildings in America, and it started with an architect taking a holiday."
+    source: 2
+    quote: "the highest wall-bearing structure in Chicago. Restrained use of brick, soaring massive walls, omission of ornamental forms"
+sources:
+  - title: "Monadnock Block, HABS IL-1027, written historical and descriptive data"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/il/il0000/il0049/data/il0049data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Monadnock Block, 53 West Jackson Boulevard (HABS IL-1027)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/il0049/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/chicago-the-architect-went-to-the-seaside/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.1
+    audioBytes: 1187047
+    transcript:
+      totalS: 74.1
+      lines:
+        - text: Look up at the dark brick walls of the Monadnock.
+          atS: 0
+          durationS: 2.88
+        - text: There is not a single ornament on them.
+          atS: 3.09
+          durationS: 2.14
+        - text: That was not the plan.
+          atS: 5.55
+          durationS: 1.56
+        - text: The architects were Burnham and Root.
+          atS: 7.8
+          durationS: 2.32
+        - text: The man who controlled the investment kept urging them toward extreme simplicity, and rejected one or two of John Root's sketches as too ornate.
+          atS: 10.45
+          durationS: 9.06
+        - text: Then Root went away.
+          atS: 20.2
+          durationS: 1.78
+        - text: A fortnight at the seashore.
+          atS: 22.42
+          durationS: 1.82
+        - text: While he was gone, Daniel Burnham ordered one of the draughtsmen to draw a straight-up-and-down, uncompromising, unornamented front.
+          atS: 24.85
+          durationS: 7.77
+        - text: When Root came back, he was indignant at this brick box.
+          atS: 33.56
+          durationS: 3.74
+        - text: Gradually, though, he threw himself into it.
+          atS: 37.81
+          durationS: 2.87
+        - text: He said he would throw the thing up without a single ornament.
+          atS: 41.06
+          durationS: 3.56
+        - text: What went up was sixteen stories.
+          atS: 45.33
+          durationS: 2.75
+        - text: The walls carry the building themselves, and at their base they are six feet thick.
+          atS: 48.59
+          durationS: 4.52
+        - text: Root called it Jumbo.
+          atS: 53.55
+          durationS: 1.73
+        - text: It was the last of the tall buildings to show walls of solid masonry.
+          atS: 55.72
+          durationS: 4.26
+        - text: It was so heavy that it sank.
+          atS: 60.36
+          durationS: 2.14
+        - text: By 1948 it had settled twenty inches.
+          atS: 63.45
+          durationS: 3.56
+        - text: One of the plainest famous buildings in America, and it started with an architect taking a holiday.
+          atS: 67.71
+          durationS: 6.41

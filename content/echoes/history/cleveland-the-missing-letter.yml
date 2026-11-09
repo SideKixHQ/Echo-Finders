@@ -1,0 +1,102 @@
+# Drafted by Claude Code (2026-11-09) for Cleveland, Ohio.
+# Listening spot: Settlers Landing park by the Ohio historical marker for Moses Cleaveland's capitol town.
+# Position: Wikidata Q112605163 (Ohio historical marker 39-18, Moses Cleaveland's Capitol Town) 41.4966, -81.701317 (high confidence for the marker).
+id: cleveland-the-missing-letter
+title: "The Missing Letter"
+summary: "Surveyors founded Cleaveland here in 1796. In 1831 a newspaper dropped the first 'a' to fit its masthead."
+place: "Settlers Landing, near the mouth of the Cuyahoga River, Cleveland, Ohio"
+at: { lat: 41.4966, lng: -81.70132 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 43
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [cleveland, cuyahoga, founding]
+teaser: "This city is named after a man, minus one letter a newspaper could not fit."
+script: |
+  Look down at the river.
+
+  On the twenty-second of July, 1796, a party of surveyors working for General Moses Cleaveland arrived at the mouth of the Cuyahoga.
+
+  They believed it was an ideal place for a new town, and named it for him.
+
+  His land company had three and a half million acres to sell.
+
+  The town did not grow much until the Erie Canal was finished in 1825.
+
+  Then, in 1831, a newspaper had a problem. The Cleveland Advertiser dropped the first a from the name, to shorten its masthead.
+
+  From then on, the town was Cleveland.
+
+  The founder's name lost a letter, to save room on a newspaper.
+pronunciations:
+  - written: "Cuyahoga"
+    say: "ky-uh-HOH-guh"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "On the twenty-second of July, 1796, a party of surveyors working for General Moses Cleaveland arrived at the mouth of the Cuyahoga."
+    source: 1
+    quote: "On July 22 , 1796, a party of surveyors commissioned by General Moses Cleaveland arrived at the mouth of the Cuyahoga River"
+  - says: "They believed it was an ideal place for a new town, and named it for him."
+    source: 1
+    quote: "believing it to be an ideal location for a new town—Cleaveland, Ohio."
+  - says: "His land company had three and a half million acres to sell."
+    source: 1
+    quote: "to speed the sale of the 3.5 million acres that the land company had reserved"
+  - says: "The town did not grow much until the Erie Canal was finished in 1825."
+    source: 1
+    quote: "the town did not grow substantially until the Erie Canal was completed in 1825."
+  - says: "Then, in 1831, a newspaper had a problem."
+    source: 1
+    quote: "In 1831, the Cleveland Advertiser dropped the first \"a\" in the city's name to reduce the length of the newspaper's masthead."
+  - says: "The Cleveland Advertiser dropped the first a from the name, to shorten its masthead."
+    source: 1
+    quote: "the Cleveland Advertiser dropped the first \"a\" in the city's name to reduce the length of the newspaper's masthead."
+  - says: "From then on, the town was Cleveland."
+    source: 1
+    quote: "From then on, the community was known as Cleveland."
+sources:
+  - title: "Today in History - July 22: Cleveland, Ohio"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/today-in-history/july-22/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/cleveland-the-missing-letter/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 42.8
+    audioBytes: 686332
+    transcript:
+      totalS: 42.8
+      lines:
+        - text: Look down at the river.
+          atS: 0
+          durationS: 1.31
+        - text: On the twenty-second of July, 1796, a party of surveyors working for General Moses Cleaveland arrived at the mouth of the Cuyahoga.
+          atS: 2.61
+          durationS: 8.52
+        - text: They believed it was an ideal place for a new town, and named it for him.
+          atS: 11.83
+          durationS: 4.16
+        - text: His land company had three and a half million acres to sell.
+          atS: 16.8
+          durationS: 3.74
+        - text: The town did not grow much until the Erie Canal was finished in 1825.
+          atS: 21.14
+          durationS: 4.82
+        - text: Then, in 1831, a newspaper had a problem.
+          atS: 26.91
+          durationS: 3.55
+        - text: The Cleveland Advertiser dropped the first a from the name, to shorten its masthead.
+          atS: 30.91
+          durationS: 5.06
+        - text: From then on, the town was Cleveland.
+          atS: 36.66
+          durationS: 2.23
+        - text: The founder's name lost a letter, to save room on a newspaper.
+          atS: 39.28
+          durationS: 3.54

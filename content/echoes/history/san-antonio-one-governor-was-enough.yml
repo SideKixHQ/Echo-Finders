@@ -1,0 +1,136 @@
+# Drafted by Claude Code (2026-11-09) for San Antonio, Texas.
+# Listening spot: The public sidewalk on Military Plaza, Plaza de Armas, in front of the low whitewashed building.
+# Position: Wikidata Q6564718 (Spanish Governor's Palace, 29.42469563, -98.49588526); listener on the plaza sidewalk in front (high confidence).
+id: san-antonio-one-governor-was-enough
+title: "One Governor Was Enough"
+summary: "The Spanish Governor's Palace was a presidio captain's house. One interim governor lived there; a preservationist gave it its grand name."
+place: "Spanish Governor's Palace, 105 Plaza de Armas, San Antonio, Texas"
+at: { lat: 29.4247, lng: -98.49589 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [san-antonio, military-plaza, spanish-colonial, presidio, preservation]
+teaser: "The Spanish Governor's Palace housed exactly one acting governor, and was named a century later."
+script: |
+  Look at the low, plain building. Its name calls it a palace. It is really a captain's house.
+
+  In the 1730s, the commander of the Spanish fort here, Captain José de Urrutia, built himself a home and office. It was known as the Captain's House, and it housed the garrison's commanders into the early 1800s.
+
+  In 1804, Juan Ignacio Pérez bought it. In July 1816, the Spanish Crown appointed him interim governor of Texas.
+
+  Only one acting governor ever lived here. But that was enough.
+
+  By the late 1800s the house was falling apart, and was used as a shop. It looked as if it might be torn down. Then the preservationist Adina De Zavala began calling it the Spanish Governor's Palace. The name stuck. The city bought the building in 1929, and restored it.
+
+  Architectural historians now think the restored building is bigger than it was in Spanish times.
+
+  One governor, one good name, and a house that grew a little when it was saved.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It is really a captain's house."
+    source: 1
+    quote: "This structure, known as the “Captain’s House,” housed the garrison’s commanders into the early 1800s."
+  - says: "In the 1730s, the commander of the Spanish fort here, Captain José de Urrutia, built himself a home and office."
+    source: 1
+    quote: "In the 1730s, presidio captain José de Urrutia built living and office space on the presidio grounds."
+  - says: "It was known as the Captain's House, and it housed the garrison's commanders into the early 1800s."
+    source: 1
+    quote: "This structure, known as the “Captain’s House,” housed the garrison’s commanders into the early 1800s."
+  - says: "In 1804, Juan Ignacio Pérez bought it."
+    source: 1
+    quote: "By 1804 when Juan Ignacio Pérez purchased the house"
+  - says: "In July 1816, the Spanish Crown appointed him interim governor of Texas."
+    source: 1
+    quote: "In July 1816, the Spanish Crown appointed Pérez interim governor of Texas."
+  - says: "Only one acting governor ever lived here."
+    source: 1
+    quote: "Only one acting governor ever lived there, but that was enough to inspire a preservationist to name the building the “Spanish Governor’s Palace” in the early 20 th century."
+  - says: "By the late 1800s the house was falling apart, and was used as a shop."
+    source: 1
+    quote: "Several floods and general neglect led to the deterioration of the residence, and what remained of the house was turned into a commercial space."
+  - says: "It looked as if it might be torn down."
+    source: 1
+    quote: "For a time, it looked as though all of the structure might be demolished."
+  - says: "Then the preservationist Adina De Zavala began calling it the Spanish Governor's Palace."
+    source: 1
+    quote: "As part of her advocacy, she began referring to the former Captain’s House as the Spanish Governor’s Palace."
+  - says: "Adina De Zavala"
+    source: 1
+    quote: "historic preservationist Adina Emilia De Zavala began an effort save what was left of the nearby Alamo compound."
+  - says: "The city bought the building in 1929, and restored it."
+    source: 1
+    quote: "the San Antonio municipal government purchased the building in 1929 and began a restoration effort."
+  - says: "Architectural historians now think the restored building is bigger than it was in Spanish times."
+    source: 1
+    quote: "architectural historians today believe that the restored building is bigger than it was during the Spanish colonial era."
+  - says: "One governor, one good name, and a house that grew a little when it was saved."
+    source: 1
+    quote: "Only one acting governor ever lived there"
+sources:
+  - title: "Spanish Governor's Palace"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/spanish-governor-s-palace.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-antonio-one-governor-was-enough/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 67.8
+    audioBytes: 1085901
+    transcript:
+      totalS: 67.8
+      lines:
+        - text: Look at the low, plain building.
+          atS: 0
+          durationS: 2.09
+        - text: Its name calls it a palace.
+          atS: 2.42
+          durationS: 1.92
+        - text: It is really a captain's house.
+          atS: 4.71
+          durationS: 2.18
+        - text: In the 1730s, the commander of the Spanish fort here, Captain José de Urrutia, built himself a home and office.
+          atS: 7.5
+          durationS: 7.36
+        - text: It was known as the Captain's House, and it housed the garrison's commanders into the early 1800s.
+          atS: 15.3
+          durationS: 5.98
+        - text: In 1804, Juan Ignacio Pérez bought it.
+          atS: 21.61
+          durationS: 3.92
+        - text: In July 1816, the Spanish Crown appointed him interim governor of Texas.
+          atS: 26.23
+          durationS: 5.42
+        - text: Only one acting governor ever lived here.
+          atS: 32.25
+          durationS: 2.62
+        - text: But that was enough.
+          atS: 35.15
+          durationS: 1.24
+        - text: By the late 1800s the house was falling apart, and was used as a shop.
+          atS: 36.84
+          durationS: 4.7
+        - text: It looked as if it might be torn down.
+          atS: 41.87
+          durationS: 2.03
+        - text: Then the preservationist Adina De Zavala began calling it the Spanish Governor's Palace.
+          atS: 44.34
+          durationS: 5.58
+        - text: The name stuck.
+          atS: 50.25
+          durationS: 1.17
+        - text: The city bought the building in 1929, and restored it.
+          atS: 51.74
+          durationS: 4.11
+        - text: Architectural historians now think the restored building is bigger than it was in Spanish times.
+          atS: 56.67
+          durationS: 5.39
+        - text: One governor, one good name, and a house that grew a little when it was saved.
+          atS: 62.56
+          durationS: 5.24

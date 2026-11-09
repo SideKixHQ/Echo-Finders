@@ -1,0 +1,143 @@
+# Drafted by Claude Code (2026-11-09) for Santa Fe, New Mexico.
+# Listening spot: The west sidewalk of Old Santa Fe Trail, across from La Fonda, at the bronze plaque set in the adobe wall.
+# Position: NPS: the plaque is on the west side of Old Santa Fe Trail across from La Fonda; placed from Wikidata Q22060896 (La Fonda, 35.68665, -105.937804) across the street to the south-west. The plaque itself was not geocoded (low-medium confidence).
+id: santa-fe-the-end-of-the-trail
+title: "The End of the Trail"
+summary: "For almost sixty years the Santa Fe Trail ran from Missouri to this plaza. A 1905 plaque on Old Santa Fe Trail marks its route."
+place: "Santa Fe Trail plaque, Old Santa Fe Trail across from La Fonda, Santa Fe, New Mexico"
+at: { lat: 35.6863, lng: -105.9382 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [santa-fe, santa-fe-trail, plaza, old-west]
+teaser: "A bronze plaque in an adobe wall marks the end of an eight hundred mile road."
+script: |
+  Look for a bronze plaque set at eye level in the adobe wall, on the west side of this street. Above the words, oxen pull a wagon.
+
+  It reads, This marks the route of the Santa Fe Trail, Kansas City to Santa Fe, 1822 to 1880.
+
+  In 1821 Mexico won its independence, and opened trade with the United States. The new trail ran eight hundred miles, from Independence, Missouri, to the plaza just up the street.
+
+  Almost overnight, the plaza became the hub of a vast network. One account from 1837 lists what filled it. All kinds of vehicles. Teamsters, camp cooks, roustabouts. Horses, mules, burros, pigs, and goats.
+
+  Wagons were unloaded. Traders put up temporary booths. Everything was loaded, unloaded, bought and sold.
+
+  Then in 1880 the railroad arrived, and that was the end of the trail.
+
+  The wagons are long gone. The street you are standing on still carries the trail's name.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Look for a bronze plaque set at eye level in the adobe wall, on the west side of this street."
+    source: 1
+    quote: "1905 cast bronze plaque is set at eye level in an exterior adobe stucco wall on the west side of Old Santa Fe Trail, across from the La Fonda hotel."
+  - says: "Above the words, oxen pull a wagon."
+    source: 1
+    quote: "There is also an image of oxen pulling a wagon above the text."
+  - says: "It reads, This marks the route of the Santa Fe Trail, Kansas City to Santa Fe, 1822 to 1880."
+    source: 1
+    quote: "Plaque reads, \"This marks the route of the Santa Fe Trail, Kansas City to Santa Fe, 1822-1880.\""
+  - says: "In 1821 Mexico won its independence, and opened trade with the United States."
+    source: 2
+    quote: "The plaza's next major change came in 1821, when newly-independent Mexico opened trade with the United States via the Santa Fe Trail."
+  - says: "The new trail ran eight hundred miles, from Independence, Missouri, to the plaza just up the street."
+    source: 3
+    quote: "the new 800-mile Santa Fe Trail. Stretching from the plaza to Independence, Missouri"
+  - says: "Almost overnight, the plaza became the hub of a vast network."
+    source: 2
+    quote: "Almost overnight, the plaza became the hub of a vast network"
+  - says: "One account from 1837 lists what filled it."
+    source: 2
+    quote: "An 1837 account of the plaza mentions \"all kinds of vehicles,\" plus \"teamsters, camp cooks, roustabouts, horses, mules, burros, pigs, and goats.\""
+  - says: "Teamsters, camp cooks, roustabouts."
+    source: 2
+    quote: "\"teamsters, camp cooks, roustabouts, horses, mules, burros, pigs, and goats.\""
+  - says: "Wagons were unloaded."
+    source: 2
+    quote: "People, animals, wagons, and trade goods—all fresh off the trail—dominated the space."
+  - says: "Traders put up temporary booths."
+    source: 3
+    quote: "trail merchants erected temporary trade booths"
+  - says: "Everything was loaded, unloaded, bought and sold."
+    source: 3
+    quote: "the plaza became a hectic hub of loading, unloading, buying and selling."
+  - says: "Then in 1880 the railroad arrived, and that was the end of the trail."
+    source: 2
+    quote: "The Atchison, Topeka, & Santa Fe Railroad arrived in 1880, signaling the demise of the Santa Fe Trail."
+sources:
+  - title: "Santa Fe Trail Plaque, Old Santa Fe Trail"
+    publisher: "National Park Service, National Trails"
+    url: https://www.nps.gov/places/santa-fe-trail-plaque-old-santa-fe-trail.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Santa Fe Plaza"
+    publisher: "National Park Service, National Trails"
+    url: https://www.nps.gov/places/santa-fe-plaza.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "New Mexico: Santa Fe Plaza"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/new-mexico-santa-fe-plaza.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/santa-fe-the-end-of-the-trail/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.7
+    audioBytes: 1068764
+    transcript:
+      totalS: 66.7
+      lines:
+        - text: Look for a bronze plaque set at eye level in the adobe wall, on the west side of this street.
+          atS: 0
+          durationS: 5.25
+        - text: Above the words, oxen pull a wagon.
+          atS: 5.69
+          durationS: 2.87
+        - text: It reads, This marks the route of the Santa Fe Trail, Kansas City to Santa Fe, 1822 to 1880.
+          atS: 8.94
+          durationS: 8.71
+        - text: In 1821 Mexico won its independence, and opened trade with the United States.
+          atS: 18.09
+          durationS: 5.57
+        - text: The new trail ran eight hundred miles, from Independence, Missouri, to the plaza just up the street.
+          atS: 24.17
+          durationS: 6.28
+        - text: Almost overnight, the plaza became the hub of a vast network.
+          atS: 30.96
+          durationS: 4.26
+        - text: One account from 1837 lists what filled it.
+          atS: 35.67
+          durationS: 3.32
+        - text: All kinds of vehicles.
+          atS: 39.27
+          durationS: 1.5
+        - text: Teamsters, camp cooks, roustabouts.
+          atS: 40.91
+          durationS: 2.59
+        - text: Horses, mules, burros, pigs, and goats.
+          atS: 43.68
+          durationS: 3.03
+        - text: Wagons were unloaded.
+          atS: 47.03
+          durationS: 1.37
+        - text: Traders put up temporary booths.
+          atS: 48.58
+          durationS: 2.02
+        - text: Everything was loaded, unloaded, bought and sold.
+          atS: 50.88
+          durationS: 3.6
+        - text: Then in 1880 the railroad arrived, and that was the end of the trail.
+          atS: 54.92
+          durationS: 5.24
+        - text: The wagons are long gone.
+          atS: 60.59
+          durationS: 1.8
+        - text: The street you are standing on still carries the trail's name.
+          atS: 63.09
+          durationS: 3.65

@@ -1,0 +1,165 @@
+# Drafted by Claude Code (2026-11-09) for Jerome, Arizona.
+# Listening spot: The Main Street sidewalk in the middle of town, looking down over the old business district. The railroad yards the men left from are not located precisely.
+# Position: Wikidata Q985248 (Jerome, 34.748889, -112.113889), the town centre on Main Street. The 1917 railroad yards were not located from a reachable source (low-medium confidence; a town-wide story).
+id: jerome-sixty-seven-men-in-cattle-cars
+title: "Sixty-Seven Men in Cattle Cars"
+summary: "On 10 July 1917 armed miners and citizens rounded up 67 IWW strikers in Jerome and shipped them out of town in two cattle cars."
+place: "Main Street, Jerome, Arizona"
+at: { lat: 34.7489, lng: -112.1139 }
+triggerRadiusKm: 0.1
+category: history
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [jerome, mining, labor, iww, 1917, old-west]
+teaser: "On a July morning in 1917, this town rounded up the strikers and shipped them out by rail."
+script: |
+  This town has a long memory for trouble. Here is a day of it.
+
+  On the morning of the tenth of July, 1917, hundreds of miners and other citizens, all armed, went through Jerome on what they called a drive. The object, the paper said, was cleaning up the town.
+
+  They were after the Wobblies, the Metal Miners' branch of the Industrial Workers of the World, who had called a strike in the copper district. The miners' own international union had repudiated it. City officials called the strikers undesirables.
+
+  Sixty-seven men were put into two cattle cars. They were given drinking water, but nothing to eat. Fifty armed citizens went along, to make sure they did not come back.
+
+  The mayor stood in the railroad yards and watched the cars disappear in the distance. As the train pulled out, several of the men shouted back at the crowd. We'll come back.
+
+  At Jerome Junction, twenty-seven miles away, armed men from Prescott were waiting, among them some of the most prominent businessmen of that city. Most of the strikers were sent on north by freight train, toward Needles.
+
+  The next morning, a newspaper headline put it plainly. Sixty-seven Wobblies, shipped from Jerome in cattle cars.
+pronunciations:
+  - written: Wobblies
+    say: WOB-leez
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "On the morning of the tenth of July, 1917, hundreds of miners and other citizens, all armed, went through Jerome on what they called a drive."
+    source: 1
+    quote: "JEROME, July 10."
+  - says: "On the morning of the tenth of July, 1917, hundreds of miners and other citizens, all armed, went through Jerome on what they called a drive."
+    source: 1
+    quote: "Deportation of the men came after a \"drive\" this morning in which hun dreds of miners and other citizens, all armed, participated"
+  - says: "The object, the paper said, was cleaning up the town."
+    source: 1
+    quote: "participated with the object of \"cleaning up\" the town."
+  - says: "They were after the Wobblies, the Metal Miners' branch of the Industrial Workers of the World, who had called a strike in the copper district."
+    source: 1
+    quote: "the Metal Miners' branch of the Industrial Workers of the World, which was repudiated"
+  - says: "The miners' own international union had repudiated it."
+    source: 1
+    quote: "the Metal Miners' branch of the Industrial Workers of the World, which was repudiated by the Inter- national"
+  - says: "City officials called the strikers undesirables."
+    source: 1
+    quote: "All of the men were considered by Jerome city officials to be \"undesirables,\""
+  - says: "Sixty-seven men were put into two cattle cars."
+    source: 2
+    quote: "67 \"Wobblies\" Are Shipped From Jerome In Cattle' Cars"
+  - says: "Sixty-seven men were put into two cattle cars."
+    source: 1
+    quote: "watched two cattle cars loaded with men disappear in the distance. There were 67 men in the cars"
+  - says: "They were given drinking water, but nothing to eat."
+    source: 1
+    quote: "drinking water, but nothing to eat."
+  - says: "Fifty armed citizens went along, to make sure they did not come back."
+    source: 2
+    quote: "and 50 armed citizens"
+  - says: "The mayor stood in the railroad yards and watched the cars disappear in the distance."
+    source: 1
+    quote: "END, SAYS MAYOR"
+  - says: "The mayor stood in the railroad yards and watched the cars disappear in the distance."
+    source: 1
+    quote: "stood in the railroad yards and watched two cattle cars loaded with men disappear in the distance."
+  - says: "As the train pulled out, several of the men shouted back at the crowd."
+    source: 1
+    quote: "As the train pulled out several shouted"
+  - says: "We'll come back."
+    source: 1
+    quote: "at the citizens \"we'll come back.\""
+  - says: "At Jerome Junction, twenty-seven miles away, armed men from Prescott were waiting, among them some of the most prominent businessmen of that city."
+    source: 1
+    quote: "Junction, 27 miles away."
+  - says: "At Jerome Junction, twenty-seven miles away, armed men from Prescott were waiting, among them some of the most prominent businessmen of that city."
+    source: 1
+    quote: "comprising some of the most prominent business men of the city"
+  - says: "At Jerome Junction, twenty-seven miles away, armed men from Prescott were waiting, among them some of the most prominent businessmen of that city."
+    source: 1
+    quote: "to Jerome Junction in time to meet the train bearing the deported strikers."
+  - says: "Most of the strikers were sent on north by freight train, toward Needles."
+    source: 1
+    quote: "were sent north on a freight train, with Needles"
+  - says: "Sixty-seven Wobblies, shipped from Jerome in cattle cars."
+    source: 2
+    quote: "67 \"Wobblies\" Are Shipped From Jerome In Cattle' Cars"
+sources:
+  - title: "Arizona Republican (Phoenix), July 11, 1917, page 1"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84020558/1917-07-11/ed-1/?sp=1
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Bisbee Daily Review, July 11, 1917, page 1"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84024827/1917-07-11/ed-1/?sp=1
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/jerome-sixty-seven-men-in-cattle-cars/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 82.2
+    audioBytes: 1317032
+    transcript:
+      totalS: 82.2
+      lines:
+        - text: This town has a long memory for trouble.
+          atS: 0
+          durationS: 2.63
+        - text: Here is a day of it.
+          atS: 2.96
+          durationS: 1.6
+        - text: On the morning of the tenth of July, 1917, hundreds of miners and other citizens, all armed, went through Jerome on what they called a drive.
+          atS: 4.89
+          durationS: 9.81
+        - text: The object, the paper said, was cleaning up the town.
+          atS: 15.02
+          durationS: 3.61
+        - text: They were after the Wobblies, the Metal Miners' branch of the Industrial Workers of the World, who had called a strike in the copper district.
+          atS: 18.96
+          durationS: 7.93
+        - text: The miners' own international union had repudiated it.
+          atS: 27.21
+          durationS: 3.65
+        - text: City officials called the strikers undesirables.
+          atS: 31.3
+          durationS: 3.44
+        - text: Sixty-seven men were put into two cattle cars.
+          atS: 35.43
+          durationS: 3.08
+        - text: They were given drinking water, but nothing to eat.
+          atS: 38.84
+          durationS: 2.76
+        - text: Fifty armed citizens went along, to make sure they did not come back.
+          atS: 41.92
+          durationS: 4.25
+        - text: The mayor stood in the railroad yards and watched the cars disappear in the distance.
+          atS: 46.78
+          durationS: 5.05
+        - text: As the train pulled out, several of the men shouted back at the crowd.
+          atS: 52.64
+          durationS: 4.04
+        - text: We'll come back.
+          atS: 56.92
+          durationS: 1.03
+        - text: At Jerome Junction, twenty-seven miles away, armed men from Prescott were waiting, among them some of the most prominent businessmen of that city.
+          atS: 58.65
+          durationS: 8.76
+        - text: Most of the strikers were sent on north by freight train, toward Needles.
+          atS: 68.1
+          durationS: 4.23
+        - text: The next morning, a newspaper headline put it plainly.
+          atS: 73.14
+          durationS: 3.5
+        - text: Sixty-seven Wobblies, shipped from Jerome in cattle cars.
+          atS: 77.24
+          durationS: 5

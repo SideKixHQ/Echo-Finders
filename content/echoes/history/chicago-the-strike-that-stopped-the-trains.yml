@@ -1,0 +1,148 @@
+# Drafted by Claude Code (2026-11-09) for Chicago, Illinois.
+# Listening spot: The public sidewalk at 111th Street and Cottage Grove Avenue, between the clock tower building and the Hotel Florence.
+# Position: NPS gives the clock tower at the northeast corner of 111th Street and Cottage Grove Avenue, directly north of the Hotel Florence; placed at that corner from the street grid, with Wikidata Q7259479 (Pullman National Historical Park, 41.697222, -87.609444) as a cross-check (low-medium confidence; check on a map).
+id: chicago-the-strike-that-stopped-the-trains
+title: "The Strike That Stopped the Trains"
+summary: "In 1894 Pullman workers struck, the union boycotted Pullman cars nationwide, and federal troops broke it. Guardsmen camped at the hotel."
+place: "Pullman Administration Clock Tower Building, 111th Street and Cottage Grove Avenue, Chicago, Illinois"
+at: { lat: 41.6926, lng: -87.6083 }
+triggerRadiusKm: 0.1
+category: history
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [chicago, pullman, labor, strike, railroads]
+teaser: "A strike at this factory stopped trains across the whole country."
+script: |
+  Look at the clock tower. It was the Pullman Company's administration building, the center of a factory and of a whole company town, built for the workers who made Pullman's sleeping cars.
+
+  On the eleventh of May, 1894, the workers here went on strike.
+
+  The company tried to wait them out. So their union, the American Railway Union, went national. Its members would refuse to handle Pullman cars. Because Pullman cars were in such wide use, the boycott crippled rail traffic across the country.
+
+  The railroads answered by hitching Pullman cars to mail cars. Holding up the United States mail gave the federal government its opening. Thousands of U.S. marshals and Army troops were sent in. National Guard troops were stationed at the Hotel Florence, the company hotel just south of this tower.
+
+  Fighting at rail yards around Chicago left dozens dead. The boycott dissolved in the middle of July, and the union was defeated.
+
+  George Pullman never seemed to doubt his model town. When he died in 1897, tons of steel and concrete were placed over his casket, so that labor radicals could not get at the grave.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It was the Pullman Company's administration building, the center of a factory and of a whole company town, built for the workers who made Pullman's sleeping cars."
+    source: 2
+    quote: "Built in 1880, the Administration Clock Tower Building formed the central mass of a monumental structure seven hundred feet long. As the manufacturing center of Pullman"
+  - says: "On the eleventh of May, 1894, the workers here went on strike."
+    source: 1
+    quote: "a strike broke out at the Pullman factories on May 11,1894."
+  - says: "The company tried to wait them out."
+    source: 1
+    quote: "The Pullman Company continued to resist any concessions in negotiations with the strikers, trying to wait them out."
+  - says: "So their union, the American Railway Union, went national."
+    source: 1
+    quote: "So the ARU decided to take a truly injurious action against the Pullman Company on a national scale"
+  - says: "American Railway Union"
+    source: 1
+    quote: "The American Railway Union (ARU) had formed in June 1893 in Chicago"
+  - says: "Its members would refuse to handle Pullman cars."
+    source: 1
+    quote: "a boycott of the handling of Pullman cars by all ARU workers."
+  - says: "Because Pullman cars were in such wide use, the boycott crippled rail traffic across the country."
+    source: 1
+    quote: "Because Pullman cars were in such wide use, the boycott crippled rail traffic nationwide."
+  - says: "The railroads answered by hitching Pullman cars to mail cars."
+    source: 1
+    quote: "encouraging Pullman cars to be hitched to mail cars to disrupt delivery."
+  - says: "Holding up the United States mail gave the federal government its opening."
+    source: 1
+    quote: "It was through disruption of the United States mail that the federal government was given an opening for intervention into the boycott and strike."
+  - says: "Thousands of U.S. marshals and Army troops were sent in."
+    source: 1
+    quote: "thousands of U.S. marshals and U.S. Army troops were deployed"
+  - says: "National Guard troops were stationed at the Hotel Florence, the company hotel just south of this tower."
+    source: 1
+    quote: "National Guard troops at the Hotel Florence in 1894."
+  - says: "the company hotel just south of this tower"
+    source: 2
+    quote: "directly north of the Hotel Florence."
+  - says: "Fighting at rail yards around Chicago left dozens dead."
+    source: 1
+    quote: "Fighting between the military and workers at rail yards in the Chicago area left dozens dead and more wounded."
+  - says: "The boycott dissolved in the middle of July, and the union was defeated."
+    source: 1
+    quote: "The boycott dissolved in mid-July, and the ARU was defeated."
+  - says: "George Pullman never seemed to doubt his model town."
+    source: 1
+    quote: "If George Pullman entertained any doubts about the wisdom of continuing the company town experiment, they were not reflected in his actions."
+  - says: "When he died in 1897, tons of steel and concrete were placed over his casket, so that labor radicals could not get at the grave."
+    source: 1
+    quote: "until his death in 1897. Tons of steel and concrete were placed over his casket to prevent labor radicals from desecrating the grave."
+sources:
+  - title: "The Pullman Story Part 2, Pullman National Historical Park"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/pull/learn/historyculture/the-pullman-story-part-2.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Administration-Clock Tower Building"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/administration-clock-tower-building.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/chicago-the-strike-that-stopped-the-trains/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.1
+    audioBytes: 1203347
+    transcript:
+      totalS: 75.1
+      lines:
+        - text: Look at the clock tower.
+          atS: 0
+          durationS: 1.37
+        - text: It was the Pullman Company's administration building, the center of a factory and of a whole company town, built for the workers who made Pullman's sleeping cars.
+          atS: 1.54
+          durationS: 9.51
+        - text: On the eleventh of May, 1894, the workers here went on strike.
+          atS: 11.75
+          durationS: 4.47
+        - text: The company tried to wait them out.
+          atS: 16.66
+          durationS: 1.88
+        - text: So their union, the American Railway Union, went national.
+          atS: 18.62
+          durationS: 3.89
+        - text: Its members would refuse to handle Pullman cars.
+          atS: 22.95
+          durationS: 3.08
+        - text: Because Pullman cars were in such wide use, the boycott crippled rail traffic across the country.
+          atS: 26.41
+          durationS: 6.28
+        - text: The railroads answered by hitching Pullman cars to mail cars.
+          atS: 33.3
+          durationS: 3.88
+        - text: Holding up the United States mail gave the federal government its opening.
+          atS: 37.87
+          durationS: 4.05
+        - text: Thousands of U.S.
+          atS: 42.53
+          durationS: 1.2
+        - text: marshals and Army troops were sent in.
+          atS: 43.76
+          durationS: 2.59
+        - text: National Guard troops were stationed at the Hotel Florence, the company hotel just south of this tower.
+          atS: 47.3
+          durationS: 6.09
+        - text: Fighting at rail yards around Chicago left dozens dead.
+          atS: 53.91
+          durationS: 3.75
+        - text: The boycott dissolved in the middle of July, and the union was defeated.
+          atS: 58.26
+          durationS: 4.27
+        - text: George Pullman never seemed to doubt his model town.
+          atS: 63.23
+          durationS: 2.93
+        - text: When he died in 1897, tons of steel and concrete were placed over his casket, so that labor radicals could not get at the grave.
+          atS: 66.59
+          durationS: 8.55

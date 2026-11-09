@@ -1,0 +1,110 @@
+# Drafted by Claude Code (2026-11-09) for San Antonio, Texas.
+# Listening spot: Alamo Plaza, the public square in front of the church, looking at the curved top of the facade.
+# Position: Wikidata Q2636724 (Alamo Mission, 29.425833, -98.486111) and Q34808261 (Alamo Plaza, 29.4258311, -98.4867118); listener on the plaza in front of the church facade (high confidence).
+id: san-antonio-the-army-gave-it-the-hump
+title: "The Army Gave It the Hump"
+summary: "The curved top of the Alamo church, the shape on every postcard, was added in 1849 when the US Army used the Alamo as a depot."
+place: "The Alamo church, Alamo Plaza, San Antonio, Texas"
+at: { lat: 29.4259, lng: -98.4865 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 53
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [san-antonio, alamo, architecture, military, world-heritage]
+teaser: "The most famous outline in Texas was added by an army quartermaster."
+script: |
+  Look at the top of the church front. That curved top is its familiar shaped gable, the outline people picture. The defenders in 1836 never saw it.
+
+  After the battle, the Alamo was badly damaged. When Texas joined the United States, the U.S. Army moved in and used it as a quartermaster depot.
+
+  On the first of January, 1850, the Army leased the buildings, for a hundred and fifty dollars a month, to use as storehouses.
+
+  And it was apparently in 1849 that the church was rebuilt with its familiar shaped gable. The design is credited to John Fries, a local builder, working under the Army's quartermaster in San Antonio.
+
+  So the most famous silhouette in Texas was added by an army supply office, to tidy up a warehouse.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "That curved top is its familiar shaped gable"
+    source: 1
+    quote: "reconstructed with its familiar shaped gable or fractable."
+  - says: "The defenders in 1836 never saw it."
+    source: 1
+    quote: "It was apparently in 1849 that the Alamo church was reconstructed with its familiar shaped gable or fractable."
+  - says: "After the battle, the Alamo was badly damaged."
+    source: 2
+    quote: "The battle left the Alamo severely damaged."
+  - says: "When Texas joined the United States, the U.S. Army moved in and used it as a quartermaster depot."
+    source: 2
+    quote: "Following the admittance of Texas into the United States in 1845, the U.S. Army used the Alamo as a Quartermaster Depot until 1877"
+  - says: "On the first of January, 1850, the Army leased the buildings, for a hundred and fifty dollars a month, to use as storehouses."
+    source: 1
+    quote: "On January 1, 1850, the Alamo buildings were leased from Bishop Odin by Major E. B. Babbitt"
+  - says: "for a hundred and fifty dollars a month"
+    source: 1
+    quote: "$150 rental per month"
+  - says: "to use as storehouses"
+    source: 1
+    quote: "to use as storehouses for the Department's Quartermaster's Depot."
+  - says: "And it was apparently in 1849 that the church was rebuilt with its familiar shaped gable."
+    source: 1
+    quote: "It was apparently in 1849 that the Alamo church was reconstructed with its familiar shaped gable or fractable."
+  - says: "The design is credited to John Fries, a local builder, working under the Army's quartermaster in San Antonio."
+    source: 1
+    quote: "John Fries, a local architect, builder, and contractor, is credited with the design and execution of the 1849 reconstruction; the work was done under the authority granted by Congress to Brevet Major Edwin B. Babbitt, then United States Army Quartermaster in San Antonio."
+  - says: "So the most famous silhouette in Texas was added by an army supply office, to tidy up a warehouse."
+    source: 1
+    quote: "At present the whole establishment is occupied by the United states Quartermaster's Department."
+sources:
+  - title: "Mission San Antonio de Valero (The Alamo), HABS TX-318, written historical and descriptive data"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx0000/tx0035/data/tx0035data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Mission San Antonio de Valero 3rd Site, The Alamo"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/mission-san-antonio-de-valero-3rd-site-the-alamo.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-antonio-the-army-gave-it-the-hump/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53
+    audioBytes: 848918
+    transcript:
+      totalS: 53
+      lines:
+        - text: Look at the top of the church front.
+          atS: 0
+          durationS: 2
+        - text: That curved top is its familiar shaped gable, the outline people picture.
+          atS: 2.38
+          durationS: 4.64
+        - text: The defenders in 1836 never saw it.
+          atS: 7.3
+          durationS: 3.95
+        - text: After the battle, the Alamo was badly damaged.
+          atS: 12.55
+          durationS: 3.32
+        - text: When Texas joined the United States, the U.S.
+          atS: 16.31
+          durationS: 2.62
+        - text: Army moved in and used it as a quartermaster depot.
+          atS: 18.96
+          durationS: 3.46
+        - text: On the first of January, 1850, the Army leased the buildings, for a hundred and fifty dollars a month, to use as storehouses.
+          atS: 23.02
+          durationS: 8.22
+        - text: And it was apparently in 1849 that the church was rebuilt with its familiar shaped gable.
+          atS: 31.63
+          durationS: 6.37
+        - text: The design is credited to John Fries, a local builder, working under the Army's quartermaster in San Antonio.
+          atS: 38.7
+          durationS: 6.79
+        - text: So the most famous silhouette in Texas was added by an army supply office, to tidy up a warehouse.
+          atS: 46.19
+          durationS: 6.8

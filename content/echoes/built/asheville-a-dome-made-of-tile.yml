@@ -1,0 +1,165 @@
+# Drafted by Claude Code (2026-11-09) for Asheville, North Carolina.
+# Listening spot: The Haywood Street sidewalk in front of the Basilica of Saint Lawrence, looking up at the dome.
+# Position: Wikidata Q4867387 (Basilica of St. Lawrence, 35.5972, -82.5562), nudged onto the Haywood Street side (medium confidence).
+id: asheville-a-dome-made-of-tile
+title: "A Dome Made of Tile"
+summary: "Rafael Guastavino, master of thin tile vaults, designed Saint Lawrence in Asheville in tile from floor to dome, and is entombed there."
+place: "Basilica of Saint Lawrence, Haywood Street, Asheville, North Carolina"
+at: { lat: 35.597, lng: -82.556 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [asheville, guastavino, architecture, saint-lawrence]
+teaser: "The man who built vaults for New York's subway came to these mountains and built his own church."
+script: |
+  Look up at the dome of the church of Saint Lawrence. It is made of tile.
+
+  Thin ceramic tile, mortared together in layers. It is a traditional Mediterranean way of building. The man who brought it to America, and made it modern, was born in Valencia, Spain. His name was Rafael Guastavino.
+
+  His vaults were lightweight, fireproof and fast to build. His company helped build more than one thousand buildings. The Boston Public Library. The New York City subway. And in 1894, the vaulted ceilings at George Vanderbilt's Biltmore Estate, here in Asheville.
+
+  Then he did something unusual. In 1895 he bought land near Black Mountain, and built an estate he called Rhododendron.
+
+  And for this church, he went back to being the architect himself. He designed it, built it, helped pay for it, and supplied the materials. Tile, from the floor to the elliptical dome. It was his culminating work.
+
+  Guastavino died in 1908. He was entombed here, at Saint Lawrence.
+
+  The builder never left his dome.
+pronunciations:
+  - written: Guastavino
+    say: gwahs-tah-VEE-noh
+  - written: Valencia
+    say: vuh-LEN-see-uh
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Look up at the dome of the church of Saint Lawrence."
+    source: 1
+    quote: "utilizing cohesive tile construction from floor to elliptical dome."
+  - says: "Thin ceramic tile, mortared together in layers."
+    source: 1
+    quote: "In cohesive construction, thin ceramic tile is mortared together in layers"
+  - says: "It is a traditional Mediterranean way of building."
+    source: 1
+    quote: "Drawing on a traditional Mediterranean technique of building with thin mortared tile"
+  - says: "The man who brought it to America, and made it modern, was born in Valencia, Spain."
+    source: 1
+    quote: "was born in Valencia, Spain in 1842"
+  - says: "His name was Rafael Guastavino."
+    source: 1
+    quote: "Rafael Guastavino, Sr. (Rafael Guastavino y Moreno) was born in Valencia, Spain in 1842"
+  - says: "His vaults were lightweight, fireproof and fast to build."
+    source: 1
+    quote: "Guastavino designed and supervised the construction of vaults and domes that were strong, lightweight, fast to build, fireproof"
+  - says: "His company helped build more than one thousand buildings."
+    source: 1
+    quote: "contributing to the construction of more than one thousand buildings in the United States and abroad."
+  - says: "The Boston Public Library."
+    source: 1
+    quote: "Guastavino's cooperation with McKim, Mead and White on the Boston Public Library"
+  - says: "The New York City subway."
+    source: 1
+    quote: "public works projects such as the New York City subway and the Queensboro Bridge."
+  - says: "And in 1894, the vaulted ceilings at George Vanderbilt's Biltmore Estate, here in Asheville."
+    source: 1
+    quote: "involve Guastavino in finish work at George Vanderbilt's Biltmore Estate in Asheville, North Carolina, in 1894."
+  - says: "In 1895 he bought land near Black Mountain, and built an estate he called Rhododendron."
+    source: 1
+    quote: "Guastavino purchased land in eastern Buncombe County near Black Mountain in 1895"
+  - says: "In 1895 he bought land near Black Mountain, and built an estate he called Rhododendron."
+    source: 1
+    quote: "and called the estate \"Rhododendron.\""
+  - says: "He designed it, built it, helped pay for it, and supplied the materials."
+    source: 1
+    quote: "Returning to role of architect (as well as functioning as contractor, primary funder, and supplier), Guastavino designed Saint Lawrence"
+  - says: "Tile, from the floor to the elliptical dome."
+    source: 1
+    quote: "utilizing cohesive tile construction from floor to elliptical dome."
+  - says: "It was his culminating work."
+    source: 1
+    quote: "Guastavino's involvement with the Church of Saint Lawrence in Asheville, his culminating architectural work."
+  - says: "Guastavino died in 1908."
+    source: 1
+    quote: "Guastavino died at \"Rhododendron\" in 1908 and was entombed at Saint Lawrence Church."
+  - says: "He was entombed here, at Saint Lawrence."
+    source: 1
+    quote: "Guastavino died at \"Rhododendron\" in 1908 and was entombed at Saint Lawrence Church."
+sources:
+  - title: "Rafael Guastavino 1842-1908 (P-98)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2024/01/23/rafael-guastavino-1842-1908-p-98
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/asheville-a-dome-made-of-tile/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.4
+    audioBytes: 1192062
+    transcript:
+      totalS: 74.4
+      lines:
+        - text: Look up at the dome of the church of Saint Lawrence.
+          atS: 0
+          durationS: 2.45
+        - text: It is made of tile.
+          atS: 2.69
+          durationS: 1.23
+        - text: Thin ceramic tile, mortared together in layers.
+          atS: 4.25
+          durationS: 3.38
+        - text: It is a traditional Mediterranean way of building.
+          atS: 8.23
+          durationS: 2.82
+        - text: The man who brought it to America, and made it modern, was born in Valencia, Spain.
+          atS: 11.75
+          durationS: 6.13
+        - text: His name was Rafael Guastavino.
+          atS: 18.58
+          durationS: 3.11
+        - text: His vaults were lightweight, fireproof and fast to build.
+          atS: 22.29
+          durationS: 3.66
+        - text: His company helped build more than one thousand buildings.
+          atS: 26.39
+          durationS: 3.37
+        - text: The Boston Public Library.
+          atS: 30.08
+          durationS: 1.7
+        - text: The New York City subway.
+          atS: 31.9
+          durationS: 1.6
+        - text: And in 1894, the vaulted ceilings at George Vanderbilt's Biltmore Estate, here in Asheville.
+          atS: 33.83
+          durationS: 6.48
+        - text: Then he did something unusual.
+          atS: 41.12
+          durationS: 1.84
+        - text: In 1895 he bought land near Black Mountain, and built an estate he called Rhododendron.
+          atS: 43.34
+          durationS: 6.73
+        - text: And for this church, he went back to being the architect himself.
+          atS: 50.58
+          durationS: 3.81
+        - text: He designed it, built it, helped pay for it, and supplied the materials.
+          atS: 54.72
+          durationS: 4.85
+        - text: Tile, from the floor to the elliptical dome.
+          atS: 59.85
+          durationS: 2.97
+        - text: It was his culminating work.
+          atS: 63.06
+          durationS: 1.82
+        - text: Guastavino died in 1908.
+          atS: 65.84
+          durationS: 3.05
+        - text: He was entombed here, at Saint Lawrence.
+          atS: 69.4
+          durationS: 2.46
+        - text: The builder never left his dome.
+          atS: 72.56
+          durationS: 1.88

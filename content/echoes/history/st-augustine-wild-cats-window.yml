@@ -1,0 +1,166 @@
+# Drafted by Claude Code (2026-11-09) for St. Augustine, Florida.
+# Listening spot: The fort's public lawn outside the southwest bastion, looking at the southwest corner of the walls.
+# Position: Wikidata Q101094405 fort point (29.89778, -81.31139) moved about 75 m to the lawn outside the southwest bastion (medium confidence).
+id: st-augustine-wild-cats-window
+title: "Wild Cat's Window"
+summary: "In November 1837 the Seminole leader Wild Cat escaped from this fort with other prisoners. How they got out is still debated."
+place: "Castillo de San Marcos, grounds outside the southwest corner, St. Augustine, Florida"
+at: { lat: 29.89735, lng: -81.31205 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 77
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [st-augustine, castillo-de-san-marcos, seminole, osceola, military]
+teaser: "In 1837 twenty Seminole prisoners got out of this fort. Nobody agrees how."
+script: |
+  Look at the southwest corner of the fort. In the autumn of 1837, the rooms on this side held prisoners.
+
+  They were Seminole leaders, warriors and their families. They had come to a parley under a white flag of truce, and been surrounded and taken. Over two hundred and thirty of them were brought here. Among them was the war leader Osceola, already very ill.
+
+  Another was Coacoochee, called Wild Cat.
+
+  On the night of the twenty-ninth of November, Wild Cat led an escape. Army records say the prisoners climbed out of a window in a room in the southwest corner. Twenty of them got away.
+
+  Wild Cat told it differently. He said he climbed out of a window, but only he and one other man escaped. Some historians doubt anyone could get through windows that size.
+
+  No one truly knows what happened that night.
+
+  What is known is what came after. Wild Cat went back to the war, and led many victories. Most members of the Seminole Tribe of Florida today trace their heritage to those twenty prisoners.
+
+  The war ended without a treaty. The Seminoles still call themselves the Unconquered People.
+pronunciations:
+  - written: Coacoochee
+    say: koh-uh-KOO-chee
+  - written: Osceola
+    say: oss-ee-OH-luh
+  - written: Seminole
+    say: SEM-ih-nole
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In the autumn of 1837, the rooms on this side held prisoners."
+    source: 1
+    quote: "During their confinement, they were kept in the rooms on the west side and southwest corner of the fort."
+  - says: "They were Seminole leaders, warriors and their families."
+    source: 1
+    quote: "Seminole leaders, warriors, and their families gathered at Fort Peyton, seven miles south of St. Augustine, for an intended negotiation."
+  - says: "They had come to a parley under a white flag of truce, and been surrounded and taken."
+    source: 1
+    quote: "The group approached the fort, under a white flag of truce, and as they proceeded towards the fort, they were surrounded by soldiers and taken as prisoners."
+  - says: "Over two hundred and thirty of them were brought here."
+    source: 1
+    quote: "Over 230 prisoners were eventually brought to St. Augustine and imprisoned inside Fort Marion, as the Castillo was known at the time."
+  - says: "Among them was the war leader Osceola, already very ill."
+    source: 1
+    quote: "Unfortunately, Osceola was very ill during his imprisonment"
+  - says: "Another was Coacoochee, called Wild Cat."
+    source: 1
+    quote: "Another well-known prisoner at Fort Marion was Coacoochee, or Wild Cat."
+  - says: "On the night of the twenty-ninth of November, Wild Cat led an escape."
+    source: 1
+    quote: "On the night of November 29, 1837, he led a daring escape from the fort."
+  - says: "Army records say the prisoners climbed out of a window in a room in the southwest corner."
+    source: 1
+    quote: "According to US Army records, the prisoners escaped by climbing out of a window in a room in the southwest corner of the fort."
+  - says: "Twenty of them got away."
+    source: 1
+    quote: "On that night, 20 prisoners somehow made their escape to freedom"
+  - says: "Wild Cat told it differently."
+    source: 1
+    quote: "Wild Cat, who later told his version of the story to an author and reporter"
+  - says: "He said he climbed out of a window, but only he and one other man escaped."
+    source: 1
+    quote: "also claimed that he climbed out of a window of the fort, but he claimed that only he and one other man escaped."
+  - says: "Some historians doubt anyone could get through windows that size."
+    source: 1
+    quote: "Some contemporary historians debate that such an escape would not be feasible due to the size of the aforementioned windows in the walls."
+  - says: "No one truly knows what happened that night."
+    source: 1
+    quote: "no one truly knows what happened that night."
+  - says: "Wild Cat went back to the war, and led many victories."
+    source: 1
+    quote: "After Wild Cat escaped from Fort Marion, he continued to fight with Seminole forces and led many victories in battle."
+  - says: "Most members of the Seminole Tribe of Florida today trace their heritage to those twenty prisoners."
+    source: 1
+    quote: "Even today, most members of the Seminole Tribe of Florida trace their heritage back to those 20 prisoners who escaped."
+  - says: "The war ended without a treaty."
+    source: 1
+    quote: "but there was never an official treaty ending the conflict."
+  - says: "The Seminoles still call themselves the Unconquered People."
+    source: 1
+    quote: "To this day, the Seminoles still call themselves the Unconquered People."
+sources:
+  - title: "Seminole Incarceration"
+    publisher: "National Park Service, Castillo de San Marcos National Monument"
+    url: https://www.nps.gov/casa/learn/historyculture/seminole-incarceration.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/st-augustine-wild-cats-window/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 76.8
+    audioBytes: 1230096
+    transcript:
+      totalS: 76.8
+      lines:
+        - text: Look at the southwest corner of the fort.
+          atS: 0
+          durationS: 2.22
+        - text: In the autumn of 1837, the rooms on this side held prisoners.
+          atS: 2.39
+          durationS: 4.07
+        - text: They were Seminole leaders, warriors and their families.
+          atS: 6.79
+          durationS: 4.23
+        - text: They had come to a parley under a white flag of truce, and been surrounded and taken.
+          atS: 11.4
+          durationS: 4.75
+        - text: Over two hundred and thirty of them were brought here.
+          atS: 16.59
+          durationS: 2.83
+        - text: Among them was the war leader Osceola, already very ill.
+          atS: 20.03
+          durationS: 5.73
+        - text: Another was Coacoochee, called Wild Cat.
+          atS: 26.27
+          durationS: 4.31
+        - text: On the night of the twenty-ninth of November, Wild Cat led an escape.
+          atS: 31.02
+          durationS: 4.13
+        - text: Army records say the prisoners climbed out of a window in a room in the southwest corner.
+          atS: 35.6
+          durationS: 4.78
+        - text: Twenty of them got away.
+          atS: 40.66
+          durationS: 1.52
+        - text: Wild Cat told it differently.
+          atS: 42.42
+          durationS: 1.89
+        - text: He said he climbed out of a window, but only he and one other man escaped.
+          atS: 44.76
+          durationS: 4.02
+        - text: Some historians doubt anyone could get through windows that size.
+          atS: 49.21
+          durationS: 3.58
+        - text: No one truly knows what happened that night.
+          atS: 53.17
+          durationS: 2.57
+        - text: What is known is what came after.
+          atS: 56.06
+          durationS: 2.4
+        - text: Wild Cat went back to the war, and led many victories.
+          atS: 59.58
+          durationS: 3.64
+        - text: Most members of the Seminole Tribe of Florida today trace their heritage to those twenty prisoners.
+          atS: 63.67
+          durationS: 6.28
+        - text: The war ended without a treaty.
+          atS: 70.27
+          durationS: 2.16
+        - text: The Seminoles still call themselves the Unconquered People.
+          atS: 72.76
+          durationS: 4.05

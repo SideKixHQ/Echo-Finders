@@ -1,0 +1,99 @@
+# Drafted by Claude Code (2026-11-09) for Salem, Massachusetts.
+# Listening spot: Landward end of Derby Wharf by Derby Street, on the public wharf trail.
+# Position: Landward end of Derby Wharf opposite the Custom House, about 600 m from Wikidata Q5261523 (Derby Wharf Light) at the far end (medium confidence).
+id: salem-a-wharf-built-on-mud
+title: "A Wharf Built on Mud"
+summary: "Derby Wharf grew to 2,045 feet. Its oldest section was timbers laid on the mud flats at low tide and filled with stones."
+place: "Derby Wharf, Salem Maritime National Historical Park, Salem, Massachusetts"
+at: { lat: 42.5204, lng: -70.8869 }
+triggerRadiusKm: 0.06
+category: built
+format: short
+durationS: 56
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [salem, salem-maritime, derby-wharf, waterfront]
+teaser: "The oldest part of this wharf was built at low tide, on the mud."
+script: |
+  Look down at the edge of this wharf. The stone is not where it started.
+
+  Richard Derby and his son Elias Hasket Derby began building it in 1762.
+
+  As their trade grew, they kept making it longer. By 1806 it reached two thousand and forty-five feet into Salem Harbor.
+
+  At one time nearly twenty buildings stood on it, among them the counting house that ran Elias Hasket Derby's trading empire.
+
+  In 1992 an archaeological dig showed how it was made.
+
+  The 1762 section was built by laying timbers on the mud flats at low tide, then filling between the timber walls with dirt and stones.
+
+  The granite blocks came later, in the nineteenth century.
+
+  Under the stone, a merchant's ambition, packed into the mud by hand between the tides.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Richard Derby and his son Elias Hasket Derby began building it in 1762."
+    source: 1
+    quote: "Richard Derby and his son Elias Hasket Derby began construction of Derby Wharf in 1762."
+  - says: "By 1806 it reached two thousand and forty-five feet into Salem Harbor."
+    source: 1
+    quote: "In 1806, it reached its current length extending 2,045 feet into the Salem Harbor."
+  - says: "At one time nearly twenty buildings stood on it, among them the counting house that ran Elias Hasket Derby's trading empire."
+    source: 1
+    quote: "At one time, Derby Wharf was home to nearly twenty structures, including Elias Hasket Derby's counting house - the headquarters of his international trading empire."
+  - says: "In 1992 an archaeological dig showed how it was made."
+    source: 1
+    quote: "In 1992, an archeological dig revealed how some of Salem's wharves were constructed."
+  - says: "The 1762 section was built by laying timbers on the mud flats at low tide, then filling between the timber walls with dirt and stones."
+    source: 1
+    quote: "The 1762 section of Derby Wharf was built by laying timbers on the mud flats at low tide, and then filling between the timber walls with dirt and stones."
+  - says: "The granite blocks came later, in the nineteenth century."
+    source: 1
+    quote: "Later in the 19th century, the wharf was encased with large granite blocks."
+sources:
+  - title: "Derby Wharf"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/derby-wharf.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/salem-a-wharf-built-on-mud/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55.7
+    audioBytes: 892803
+    transcript:
+      totalS: 55.7
+      lines:
+        - text: Look down at the edge of this wharf.
+          atS: 0
+          durationS: 2.08
+        - text: The stone is not where it started.
+          atS: 2.4
+          durationS: 2.32
+        - text: Richard Derby and his son Elias Hasket Derby began building it in 1762.
+          atS: 5.17
+          durationS: 5.65
+        - text: As their trade grew, they kept making it longer.
+          atS: 11.2
+          durationS: 3.02
+        - text: By 1806 it reached two thousand and forty-five feet into Salem Harbor.
+          atS: 14.92
+          durationS: 5.38
+        - text: At one time nearly twenty buildings stood on it, among them the counting house that ran Elias Hasket Derby's trading empire.
+          atS: 20.9
+          durationS: 8.44
+        - text: In 1992 an archaeological dig showed how it was made.
+          atS: 30.15
+          durationS: 4.18
+        - text: The 1762 section was built by laying timbers on the mud flats at low tide, then filling between the timber walls with dirt and stones.
+          atS: 34.84
+          durationS: 10.08
+        - text: The granite blocks came later, in the nineteenth century.
+          atS: 45.62
+          durationS: 3.53
+        - text: Under the stone, a merchant's ambition, packed into the mud by hand between the tides.
+          atS: 49.59
+          durationS: 6.14

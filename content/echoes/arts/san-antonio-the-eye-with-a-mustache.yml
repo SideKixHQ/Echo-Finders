@@ -1,0 +1,138 @@
+# Drafted by Claude Code (2026-11-09) for San Antonio, Texas.
+# Listening spot: The public mission grounds and convento rooms at Mission Concepcion; the library ceiling is inside the convento.
+# Position: Wikidata Q2312403 (Mission Concepcion, 29.39069104, -98.4901422); the convento adjoins the church (high confidence for the mission).
+id: san-antonio-the-eye-with-a-mustache
+title: "The Eye with a Mustache"
+summary: "A ceiling fresco at Mission Concepcion was called the Eye of God. Conservators in 1988 found a second eye, a mustache and a goatee."
+place: "Mission Concepcion, 807 Mission Road, San Antonio, Texas"
+at: { lat: 29.39069, lng: -98.49014 }
+triggerRadiusKm: 0.06
+category: arts
+format: short
+durationS: 65
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [san-antonio, missions, concepcion, fresco, world-heritage, art]
+teaser: "For decades people called it the Eye of God. Then the cleaners found a goatee."
+script: |
+  Look at the church walls. They are weathered and pale now, but they were once covered in colorful designs, inside and out.
+
+  The paint was made with lime and water, and possibly goat's milk. Mission artisans painted it into wet plaster, quickly, before the plaster dried.
+
+  Inside the convento, the priest's residence, the library has the best known fresco of all, on the ceiling. A sunburst with an eye.
+
+  For decades, only one eye and a few rays could be seen. Legends called it the Eye of God. The All Seeing Eye.
+
+  In 1988, conservators began removing two hundred and fifty years of dirt and plaster that did not belong there. To the surprise of many, they found a second eye. Then a mustache. Then a goatee.
+
+  Historians now think it was not a religious symbol at all, but a Spanish medallion. A face.
+
+  So the Eye of God turned out to have a beard. It is still up there, looking down at whoever comes in.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "They are weathered and pale now, but they were once covered in colorful designs, inside and out."
+    source: 2
+    quote: "Colorful geometric designs covered the church inside and out."
+  - says: "The paint was made with lime and water, and possibly goat's milk."
+    source: 1
+    quote: "The paints used on the mission churches contained limestone and water and possibly goat’s milk as binders!"
+  - says: "Mission artisans painted it into wet plaster, quickly, before the plaster dried."
+    source: 1
+    quote: "the mission artisans swiftly but carefully applied paint between these “guide” lines before the plaster dried."
+  - says: "Inside the convento, the priest's residence, the library has the best known fresco of all, on the ceiling."
+    source: 2
+    quote: "the most famous being the “Eye of God” located on the ceiling in the library of the convento."
+  - says: "For decades, only one eye and a few rays could be seen."
+    source: 1
+    quote: "For decades, the only visible portions had been one eye and several rays."
+  - says: "Legends called it the Eye of God."
+    source: 1
+    quote: "Legends labeled it the “Eye of God” or “All Seeing Eye.”"
+  - says: "The All Seeing Eye."
+    source: 1
+    quote: "Legends labeled it the “Eye of God” or “All Seeing Eye.”"
+  - says: "In 1988, conservators began removing two hundred and fifty years of dirt and plaster that did not belong there."
+    source: 1
+    quote: "When the park undertook to preserve the library frescos in 1988, an international renowned crew of art conservators tediously removed 250 years’ worth of dirt and nonoriginal plaster."
+  - says: "To the surprise of many, they found a second eye."
+    source: 1
+    quote: "To the surprise of many, the second eye, a mustache, and goatee were revealed on the ceiling sunburst!"
+  - says: "Historians now think it was not a religious symbol at all, but a Spanish medallion."
+    source: 1
+    quote: "historians now believe this was not a religious symbol, but rather a Spanish medallion."
+  - says: "So the Eye of God turned out to have a beard."
+    source: 1
+    quote: "With the appearance of the facial hair, historians now believe this was not a religious symbol"
+sources:
+  - title: "Mission Frescos, San Antonio Missions National Historical Park"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/saan/planyourvisit/frescos.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Mission Concepcion"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/mission-concepcion.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-antonio-the-eye-with-a-mustache/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 64.7
+    audioBytes: 1036163
+    transcript:
+      totalS: 64.7
+      lines:
+        - text: Look at the church walls.
+          atS: 0
+          durationS: 1.38
+        - text: They are weathered and pale now, but they were once covered in colorful designs, inside and out.
+          atS: 1.76
+          durationS: 6.2
+        - text: The paint was made with lime and water, and possibly goat's milk.
+          atS: 8.41
+          durationS: 4.02
+        - text: Mission artisans painted it into wet plaster, quickly, before the plaster dried.
+          atS: 12.93
+          durationS: 5.14
+        - text: Inside the convento, the priest's residence, the library has the best known fresco of all, on the ceiling.
+          atS: 18.65
+          durationS: 6.55
+        - text: A sunburst with an eye.
+          atS: 25.57
+          durationS: 1.71
+        - text: For decades, only one eye and a few rays could be seen.
+          atS: 27.93
+          durationS: 3.88
+        - text: Legends called it the Eye of God.
+          atS: 32.23
+          durationS: 2.34
+        - text: The All Seeing Eye.
+          atS: 34.85
+          durationS: 1.43
+        - text: In 1988, conservators began removing two hundred and fifty years of dirt and plaster that did not belong there.
+          atS: 36.66
+          durationS: 7.15
+        - text: To the surprise of many, they found a second eye.
+          atS: 44.26
+          durationS: 3
+        - text: Then a mustache.
+          atS: 47.58
+          durationS: 1.19
+        - text: Then a goatee.
+          atS: 49.01
+          durationS: 1.06
+        - text: Historians now think it was not a religious symbol at all, but a Spanish medallion.
+          atS: 50.57
+          durationS: 5.5
+        - text: A face.
+          atS: 56.52
+          durationS: 0.92
+        - text: So the Eye of God turned out to have a beard.
+          atS: 58.13
+          durationS: 2.72
+        - text: It is still up there, looking down at whoever comes in.
+          atS: 61.36
+          durationS: 3.33

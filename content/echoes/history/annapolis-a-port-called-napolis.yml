@@ -1,0 +1,113 @@
+# Drafted by Claude Code (2026-11-09) for Annapolis, Maryland.
+# Listening spot: Public waterfront at the head of City Dock, where the Haley memorial plaques stand.
+# Position: Approximate head of City Dock by Market Space, from general knowledge of the waterfront; no Wikidata coordinate retrieved (medium-low confidence).
+id: annapolis-a-port-called-napolis
+title: "A Port Called Napolis"
+summary: "Alex Haley knew only that his ancestor landed at a port called Napolis. It is believed Kunta Kinte arrived here in 1767."
+place: "Annapolis City Dock, Annapolis, Maryland"
+at: { lat: 38.9777, lng: -76.486 }
+triggerRadiusKm: 0.07
+category: history
+format: short
+durationS: 46
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [annapolis, city-dock, kunta-kinte, alex-haley, slavery]
+teaser: "Alex Haley had one word to go on. It was the name of this harbor, misspelled."
+script: |
+  Look along this waterfront for the plaque.
+
+  When Alex Haley was researching Roots, he had one clue to where his ancestor had come ashore. A port called Napolis.
+
+  He guessed it meant Annapolis, and he was right.
+
+  On the twenty-ninth of September, 1767, a ship carrying about one hundred and forty enslaved men and women arrived here.
+
+  Among the men who had put money into that cargo was Daniel of St. Thomas Jenifer, who would later sit in the convention that wrote the Constitution.
+
+  It is believed that one of the people on that ship was Kunta Kinte. Believed, not proven.
+
+  A family's history came down to a single word, Napolis, and a good guess.
+pronunciations:
+  - written: "Kunta Kinte"
+    say: "KUN-tah KIN-tay"
+  - written: "Jenifer"
+    say: "JEN-i-fer"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look along this waterfront for the plaque."
+    source: 1
+    quote: "There's now a plaque at the waterfront there to commemorate that."
+  - says: "When Alex Haley was researching Roots, he had one clue to where his ancestor had come ashore."
+    source: 1
+    quote: "Alex Haley, when he did his Roots research at the Maryland State Archives, he only knew that Kunta Kinte had arrived at a port called \"Napolis,\" which he correctly assumed was Annapolis."
+  - says: "A port called Napolis."
+    source: 1
+    quote: "Kunta Kinte had arrived at a port called \"Napolis,\""
+  - says: "He guessed it meant Annapolis, and he was right."
+    source: 1
+    quote: "which he correctly assumed was Annapolis."
+  - says: "On the twenty-ninth of September, 1767, a ship carrying about one hundred and forty enslaved men and women arrived here."
+    source: 2
+    quote: "He invested in a shipload of about 140 enslaved men and women that arrived in Annapolis, Maryland on September 29, 1767."
+  - says: "Among the men who had put money into that cargo was Daniel of St. Thomas Jenifer, who would later sit in the convention that wrote the Constitution."
+    source: 2
+    quote: "Daniel of St. Thomas Jenifer arrived in Philadelphia on June 2, 1787, one of the oldest delegates present."
+  - says: "It is believed that one of the people on that ship was Kunta Kinte."
+    source: 2
+    quote: "It is believed that one of the enslaved was Kunta Kinte, whose life was featured in the book Roots by Alex Haley."
+  - says: "A family's history came down to a single word, Napolis, and a good guess."
+    source: 1
+    quote: "he only knew that Kunta Kinte had arrived at a port called \"Napolis,\" which he correctly assumed was Annapolis."
+sources:
+  - title: "Oral history interview with Rick Blondo"
+    publisher: "National Archives and Records Administration"
+    url: https://www.archives.gov/files/about/history/rick-blondo-oral-history-final.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Daniel of St. Thomas Jenifer"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/daniel-of-st-thomas-jenifer.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/annapolis-a-port-called-napolis/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 45.6
+    audioBytes: 729799
+    transcript:
+      totalS: 45.6
+      lines:
+        - text: Look along this waterfront for the plaque.
+          atS: 0
+          durationS: 2.31
+        - text: When Alex Haley was researching Roots, he had one clue to where his ancestor had come ashore.
+          atS: 2.75
+          durationS: 5.82
+        - text: A port called Napolis.
+          atS: 9.27
+          durationS: 1.8
+        - text: He guessed it meant Annapolis, and he was right.
+          atS: 11.57
+          durationS: 2.88
+        - text: On the twenty-ninth of September, 1767, a ship carrying about one hundred and forty enslaved men and women arrived here.
+          atS: 14.9
+          durationS: 7.91
+        - text: Among the men who had put money into that cargo was Daniel of St.
+          atS: 23.24
+          durationS: 4.05
+        - text: Thomas Jenifer, who would later sit in the convention that wrote the Constitution.
+          atS: 27.32
+          durationS: 5.2
+        - text: It is believed that one of the people on that ship was Kunta Kinte.
+          atS: 32.96
+          durationS: 3.83
+        - text: Believed, not proven.
+          atS: 37.23
+          durationS: 1.94
+        - text: A family's history came down to a single word, Napolis, and a good guess.
+          atS: 39.87
+          durationS: 5.69

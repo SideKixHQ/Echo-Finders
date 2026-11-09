@@ -1,0 +1,145 @@
+# Drafted by Claude Code (2026-11-09) for Santa Fe, New Mexico.
+# Listening spot: Anywhere on the Santa Fe Plaza; the middle of the square is best.
+# Position: Wikidata Q7419548 (Santa Fe Plaza, 35.6875, -105.938056) (high confidence).
+id: santa-fe-when-the-plaza-was-a-pueblo
+title: "When the Plaza Was a Pueblo"
+summary: "After the 1680 Pueblo Revolt drove the Spanish out, the Pueblo people held Santa Fe for 12 years and rebuilt the plaza as a pueblo."
+place: "Santa Fe Plaza, Santa Fe, New Mexico"
+at: { lat: 35.6875, lng: -105.93806 }
+triggerRadiusKm: 0.07
+category: history
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [santa-fe, pueblo-revolt, military, plaza, tewa]
+teaser: "For twelve years, this Spanish plaza was a multistory pueblo with two kivas."
+script: |
+  Stand in the plaza and look around. Shops, trees, benches. Now picture a fortress of adobe, several stories high.
+
+  The Spanish laid out this plaza in the spring of 1610, at a place the local Tewa people called Ogaponge. Over at the shells by the water. The Spanish forced the Pueblo people to labor for them, and insisted that they convert.
+
+  In 1680 the Pueblos rose up. Spanish colonists took refuge in the government buildings on this plaza, and the rebels laid siege to them. The Spanish fled four hundred miles south, on foot, to El Paso.
+
+  For the next twelve years, the Pueblo people held Santa Fe. And they rebuilt the plaza for themselves. They turned it into one large multistory pueblo, arranged around two central squares, each with a kiva.
+
+  In 1692, the Spanish came back. The pueblo is long gone.
+
+  But for twelve years, the oldest capital city in the United States belonged to the people the Spanish had come to rule.
+pronunciations:
+  - written: Ogaponge
+    say: oh-gah-POHN-geh
+  - written: Tewa
+    say: TAY-wah
+  - written: kiva
+    say: KEE-vah
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The Spanish laid out this plaza in the spring of 1610, at a place the local Tewa people called Ogaponge."
+    source: 1
+    quote: "In the spring of 1610, Governor Pedro de Peralta laid out the city of Santa Fe around a central plaza, located at a place local Tewa residents called ogaponge"
+  - says: "Over at the shells by the water."
+    source: 1
+    quote: "(\"over at the shells by the water\")"
+  - says: "The Spanish forced the Pueblo people to labor for them, and insisted that they convert."
+    source: 3
+    quote: "After years of enduring Spain's encomienda system of forced labor and the insistence of Catholic conversion, the Puebloan People revolted against Spanish rule."
+  - says: "In 1680 the Pueblos rose up."
+    source: 3
+    quote: "Analco and Santa Fe suddenly stopped growing when the Great Pueblo Revolt of 1680 erupted."
+  - says: "Spanish colonists took refuge in the government buildings on this plaza, and the rebels laid siege to them."
+    source: 1
+    quote: "During the 1680 Pueblo Revolt, Spanish colonists took refuge inside the casas reales (government buildings) on the plaza."
+  - says: "Spanish colonists took refuge in the government buildings on this plaza, and the rebels laid siege to them."
+    source: 1
+    quote: "in the same place where rebellious Puebloans laid siege to Spaniards over 160 years earlier."
+  - says: "The Spanish fled four hundred miles south, on foot, to El Paso."
+    source: 2
+    quote: "which forced Spaniards and their allies to flee Santa Fe on foot 400 miles south along El Camino Real to El Paso del Norte"
+  - says: "For the next twelve years, the Pueblo people held Santa Fe."
+    source: 3
+    quote: "The Puebloans held Santa Fe for 12 years."
+  - says: "They turned it into one large multistory pueblo, arranged around two central squares, each with a kiva."
+    source: 1
+    quote: "they turned the plaza into one large multistory pueblo, arranged around two central squares—each with a kiva."
+  - says: "In 1692, the Spanish came back."
+    source: 3
+    quote: "In 1692, led by Diego de Vargas, the Spanish returned to re-occupy Santa Fe."
+  - says: "But for twelve years, the oldest capital city in the United States belonged to the people the Spanish had come to rule."
+    source: 1
+    quote: "Santa Fe is the oldest capital city in the US, founded in 1610"
+  - says: "But for twelve years, the oldest capital city in the United States belonged to the people the Spanish had come to rule."
+    source: 1
+    quote: "The victorious Pueblo rebels expelled Spaniards for 12 years"
+sources:
+  - title: "Santa Fe Plaza"
+    publisher: "National Park Service, National Trails"
+    url: https://www.nps.gov/places/santa-fe-plaza.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "New Mexico: Santa Fe Plaza"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/new-mexico-santa-fe-plaza.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Barrio de Analco Historic District, Santa Fe, New Mexico"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/barrio-de-analco-historic-district-santa-fe-new-mexico.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/santa-fe-when-the-plaza-was-a-pueblo/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.9
+    audioBytes: 1103873
+    transcript:
+      totalS: 68.9
+      lines:
+        - text: Stand in the plaza and look around.
+          atS: 0
+          durationS: 1.94
+        - text: Shops, trees, benches.
+          atS: 2.11
+          durationS: 1.82
+        - text: Now picture a fortress of adobe, several stories high.
+          atS: 4.21
+          durationS: 3.67
+        - text: The Spanish laid out this plaza in the spring of 1610, at a place the local Tewa people called Ogaponge.
+          atS: 8.21
+          durationS: 8.13
+        - text: Over at the shells by the water.
+          atS: 16.85
+          durationS: 2
+        - text: The Spanish forced the Pueblo people to labor for them, and insisted that they convert.
+          atS: 19.45
+          durationS: 4.99
+        - text: In 1680 the Pueblos rose up.
+          atS: 24.95
+          durationS: 2.44
+        - text: Spanish colonists took refuge in the government buildings on this plaza, and the rebels laid siege to them.
+          atS: 27.9
+          durationS: 5.95
+        - text: The Spanish fled four hundred miles south, on foot, to El Paso.
+          atS: 34.28
+          durationS: 4.49
+        - text: For the next twelve years, the Pueblo people held Santa Fe.
+          atS: 39.29
+          durationS: 3.7
+        - text: And they rebuilt the plaza for themselves.
+          atS: 43.32
+          durationS: 2.51
+        - text: They turned it into one large multistory pueblo, arranged around two central squares, each with a kiva.
+          atS: 46.64
+          durationS: 8.16
+        - text: In 1692, the Spanish came back.
+          atS: 55.61
+          durationS: 3.42
+        - text: The pueblo is long gone.
+          atS: 59.48
+          durationS: 1.74
+        - text: But for twelve years, the oldest capital city in the United States belonged to the people the Spanish had come to rule.
+          atS: 61.73
+          durationS: 7.19

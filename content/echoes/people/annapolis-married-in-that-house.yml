@@ -1,0 +1,119 @@
+# Drafted by Claude Code (2026-11-09) for Annapolis, Maryland.
+# Listening spot: Public sidewalk on Maryland Avenue opposite the Chase-Lloyd House; the house is private.
+# Position: Wikidata Q5087071 (Chase-Lloyd House) 38.9811, -76.4892, on the Maryland Avenue frontage (high confidence).
+id: annapolis-married-in-that-house
+title: "Married in That House"
+summary: "Francis Scott Key, who wrote the words of The Star-Spangled Banner, was married in the Chase-Lloyd House."
+place: "Chase-Lloyd House, Maryland Avenue, Annapolis, Maryland"
+at: { lat: 38.98105, lng: -76.48925 }
+triggerRadiusKm: 0.05
+category: people
+format: short
+durationS: 46
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [annapolis, maryland-avenue, francis-scott-key, war-of-1812]
+teaser: "The man who wrote the national anthem got married across the street."
+script: |
+  Look at the big brick house on Maryland Avenue. It was built by Samuel Chase, who signed the Declaration of Independence.
+
+  A young man who went to school here in Annapolis, at St. John's College, was married in that house. His name was Francis Scott Key.
+
+  In September 1814 he was a young lawyer, held under guard on a ship in Baltimore harbor by the British navy.
+
+  Through the night he watched the British bomb Fort McHenry with rockets.
+
+  At dawn he found the American flag still flying over the fort, tattered but intact.
+
+  He wrote the words to The Star-Spangled Banner. Congress made it the national anthem in 1931.
+
+  The anthem was written by a man who got married in that house.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "It was built by Samuel Chase, who signed the Declaration of Independence."
+    source: 1
+    quote: "the Chase-Lloyd House, built by a Maryland signer of the Declaration of Independence, Samuel Chase."
+  - says: "A young man who went to school here in Annapolis, at St. John's College, was married in that house."
+    source: 2
+    quote: "Francis Scott Key attended school at St. John's College and was married at Chase-Lloyd House."
+  - says: "His name was Francis Scott Key."
+    source: 2
+    quote: "Francis Scott Key attended school at St. John's College and was married at Chase-Lloyd House."
+  - says: "In September 1814 he was a young lawyer, held under guard on a ship in Baltimore harbor by the British navy."
+    source: 3
+    quote: "As the evening of September 13, 1814, approached, Francis Scott Key, a young lawyer, was detained in Baltimore harbor under guard by the British navy."
+  - says: "Through the night he watched the British bomb Fort McHenry with rockets."
+    source: 3
+    quote: "Throughout the night and into the early hours of the next morning, Key watched as the British bombed nearby Fort McHenry with military rockets."
+  - says: "At dawn he found the American flag still flying over the fort, tattered but intact."
+    source: 3
+    quote: "As dawn broke, he was amazed to find not the Union Jack, but rather the American flag flying above the fort, tattered but intact."
+  - says: "He wrote the words to The Star-Spangled Banner."
+    source: 3
+    quote: "Key's experience during the bombardment of Fort McHenry inspired him to pen the words to \"The Star-Spangled Banner\""
+  - says: "Congress made it the national anthem in 1931."
+    source: 3
+    quote: "Congress officially recognized it in 1931."
+  - says: "Look at the big brick house on Maryland Avenue."
+    source: 1
+    quote: "Maryland Avenue is one of the oldest commercial streets in Maryland."
+sources:
+  - title: "Maryland Avenue"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/maryland-avenue.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Annapolis - Star-Spangled Banner National Historic Trail"
+    publisher: "National Park Service"
+    url: https://home.nps.gov/stsp/learn/historyculture/annapolis.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Today in History - September 13: The Star-Spangled Banner"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/today-in-history/september-13/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/annapolis-married-in-that-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 45.7
+    audioBytes: 731471
+    transcript:
+      totalS: 45.7
+      lines:
+        - text: Look at the big brick house on Maryland Avenue.
+          atS: 0
+          durationS: 2.74
+        - text: It was built by Samuel Chase, who signed the Declaration of Independence.
+          atS: 2.91
+          durationS: 4.31
+        - text: A young man who went to school here in Annapolis, at St.
+          atS: 7.66
+          durationS: 3.03
+        - text: John's College, was married in that house.
+          atS: 10.72
+          durationS: 2.52
+        - text: His name was Francis Scott Key.
+          atS: 13.56
+          durationS: 2.28
+        - text: In September 1814 he was a young lawyer, held under guard on a ship in Baltimore harbor by the British navy.
+          atS: 16.53
+          durationS: 7.21
+        - text: Through the night he watched the British bomb Fort McHenry with rockets.
+          atS: 24.55
+          durationS: 3.96
+        - text: At dawn he found the American flag still flying over the fort, tattered but intact.
+          atS: 29.21
+          durationS: 5.21
+        - text: He wrote the words to The Star-Spangled Banner.
+          atS: 35.03
+          durationS: 2.68
+        - text: Congress made it the national anthem in 1931.
+          atS: 38.22
+          durationS: 3.37
+        - text: The anthem was written by a man who got married in that house.
+          atS: 42.1
+          durationS: 3.55

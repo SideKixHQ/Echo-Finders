@@ -1,0 +1,132 @@
+# Drafted by Claude Code (2026-11-09) for San Francisco, California.
+# Listening spot: The public sidewalk on Point Lobos Avenue by the Cliff House, looking north over the Sutro Baths ruins and the rocks.
+# Position: Wikidata Q863464 (Cliff House, 37.7784, -122.514) and Q3505806 (Sutro Baths, 37.78, -122.51361); listener placed on the Point Lobos Avenue sidewalk between them (medium confidence).
+id: san-francisco-forty-two-tons-of-powder
+title: "Forty-Two Tons of Powder"
+summary: "In 1887 an abandoned schooner carrying 42 tons of black powder ran aground by the Cliff House, and then it exploded."
+place: "Sutro Baths ruins below the Cliff House, Point Lobos Avenue, San Francisco, California"
+at: { lat: 37.7787, lng: -122.5137 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [san-francisco, lands-end, cliff-house, sutro-baths, shipwreck]
+teaser: "A wrecked ship with nobody aboard turned out to be the dangerous kind."
+script: |
+  Look north from here, down at the ruins of Sutro Baths and the rocks around them.
+
+  In January 1887, a schooner called the Parallel left the Golden Gate headed for Astoria, Oregon. Her cargo included forty-two tons of black powder.
+
+  The ship fought head winds and a strong tide for two days. Then the captain ordered the crew to abandon ship near the rocks at Point Lobos. The nine men made it safely to Sausalito.
+
+  The empty schooner grounded near the Cliff House, right there, at the future site of Sutro Baths.
+
+  Rescuers from the Life-Saving Station found no crew on board. They posted watchmen and went to bed. Nobody knew what was in the hold.
+
+  At twelve thirty-four in the morning, after hours of being tossed against the rocks, the powder went off. It demolished the ship, damaged the Cliff House, and sent debris over a mile in all directions.
+
+  The next morning, according to the papers, more than fifty thousand people came out to look.
+
+  A wreck with nobody on it. It was still the most dangerous thing on this shore that night.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In January 1887, a schooner called the Parallel left the Golden Gate headed for Astoria, Oregon."
+    source: 1
+    quote: "On 13 January 1887 Parallel left the Golden Gate headed for Astoria, Oregon"
+  - says: "Her cargo included forty-two tons of black powder."
+    source: 1
+    quote: "with a cargo that included 42 tons of black powder."
+  - says: "The ship fought head winds and a strong tide for two days."
+    source: 1
+    quote: "The ship fought against head winds and a strong tide for two days"
+  - says: "Then the captain ordered the crew to abandon ship near the rocks at Point Lobos."
+    source: 1
+    quote: "Captain Miller ordered the crew to abandon ship near the rocks at Point Lobos."
+  - says: "The nine men made it safely to Sausalito."
+    source: 1
+    quote: "The nine men made it safely to Sausalito"
+  - says: "The empty schooner grounded near the Cliff House, right there, at the future site of Sutro Baths."
+    source: 1
+    quote: "Parallel grounded near the Cliff House at the future site of Sutro Baths."
+  - says: "Rescuers from the Life-Saving Station found no crew on board."
+    source: 1
+    quote: "Rescuers from the Life-Saving Station found no crew on board."
+  - says: "They posted watchmen and went to bed."
+    source: 1
+    quote: "They posted watchmen and retired for the night"
+  - says: "Nobody knew what was in the hold."
+    source: 1
+    quote: "unaware of the ship’s explosive cargo."
+  - says: "At twelve thirty-four in the morning, after hours of being tossed against the rocks, the powder went off."
+    source: 1
+    quote: "At 12:34 a.m. on January 16 after hours of being tossed against the rocks, the explosives detonated"
+  - says: "It demolished the ship, damaged the Cliff House, and sent debris over a mile in all directions."
+    source: 1
+    quote: "demolishing the ship, damaging the Cliff House, and sending debris over one mile in all directions."
+  - says: "The next morning, according to the papers, more than fifty thousand people came out to look."
+    source: 1
+    quote: "According to local newspapers, the next morning more than 50,000 people gathered to view the scene of destruction."
+sources:
+  - title: "Vestiges of Shipwrecks, Golden Gate National Recreation Area"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/goga/learn/historyculture/vestiges-shipwrecks.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-forty-two-tons-of-powder/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.7
+    audioBytes: 1179523
+    transcript:
+      totalS: 73.7
+      lines:
+        - text: Look north from here, down at the ruins of Sutro Baths and the rocks around them.
+          atS: 0
+          durationS: 4.67
+        - text: In January 1887, a schooner called the Parallel left the Golden Gate headed for Astoria, Oregon.
+          atS: 5.62
+          durationS: 6.97
+        - text: Her cargo included forty-two tons of black powder.
+          atS: 13.1
+          durationS: 3.6
+        - text: The ship fought head winds and a strong tide for two days.
+          atS: 17.21
+          durationS: 3.76
+        - text: Then the captain ordered the crew to abandon ship near the rocks at Point Lobos.
+          atS: 21.48
+          durationS: 4.71
+        - text: The nine men made it safely to Sausalito.
+          atS: 26.8
+          durationS: 2.74
+        - text: The empty schooner grounded near the Cliff House, right there, at the future site of Sutro Baths.
+          atS: 29.92
+          durationS: 5.92
+        - text: Rescuers from the Life-Saving Station found no crew on board.
+          atS: 36.54
+          durationS: 3.81
+        - text: They posted watchmen and went to bed.
+          atS: 40.95
+          durationS: 2.36
+        - text: Nobody knew what was in the hold.
+          atS: 43.91
+          durationS: 2.1
+        - text: At twelve thirty-four in the morning, after hours of being tossed against the rocks, the powder went off.
+          atS: 46.61
+          durationS: 6.27
+        - text: It demolished the ship, damaged the Cliff House, and sent debris over a mile in all directions.
+          atS: 53.49
+          durationS: 6.67
+        - text: The next morning, according to the papers, more than fifty thousand people came out to look.
+          atS: 61.28
+          durationS: 5.62
+        - text: A wreck with nobody on it.
+          atS: 67.5
+          durationS: 1.68
+        - text: It was still the most dangerous thing on this shore that night.
+          atS: 70
+          durationS: 3.66

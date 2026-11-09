@@ -1,0 +1,145 @@
+# Drafted by Claude Code (2026-11-09) for Nashville.
+# Listening spot: Capitol grounds on the south side, on the public paths.
+# Position: Wikidata Q2570396 (Tennessee State Capitol) moved about 45 m south so it does not sit on top of the north-portico echo; the source places the state supreme court in the capitol building, not a particular room (medium confidence).
+id: nashville-she-bit-the-conductor
+title: "She Bit the Conductor"
+summary: "Ida B. Wells sued a railroad for throwing her out of the ladies' car and won. The state supreme court, sitting here, overturned it."
+place: "Tennessee State Capitol, south side, Nashville, Tennessee"
+at: { lat: 36.1654, lng: -86.7842 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 50
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [nashville, capitol, ida-b-wells, civil-rights, railroads]
+teaser: "Before she was a famous journalist, Ida B. Wells lost a case in this building."
+script: |
+  Look up at the capitol. For decades the state supreme court sat inside it. One of the cases it heard was brought by a young teacher named Ida B. Wells.
+
+  She was riding a train out of Memphis. The crew told her to leave the ladies' car and move to a car where a drunk man sat and other men were smoking.
+
+  She refused.
+
+  When the conductor tried to drag her out of her seat, she fastened her teeth in the back of his hand.
+
+  It took him and two white passengers to remove her.
+
+  She sued the railroad, and she won. Five hundred dollars.
+
+  Then the Tennessee Supreme Court overturned it.
+
+  After that, she began writing. She became one of the most important journalists in the country, and led a crusade against lynching.
+
+  She lost here. It did not slow her down.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "For decades the state supreme court sat inside it."
+    source: 1
+    quote: "The Tennessee Supreme Court assembled in the State Capitol building until the state Supreme Court building opened in December 1937."
+  - says: "One of the cases it heard was brought by a young teacher named Ida B. Wells."
+    source: 1
+    quote: "Wells sued the railroad and won a $500 settlement from the circuit court. In 1885, the state Supreme Court overturned the ruling."
+  - says: "One of the cases it heard was brought by a young teacher named Ida B. Wells."
+    source: 1
+    quote: "In 1883, Wells traveled on the Chesapeake, Ohio, & Southwestern Railroad between Memphis and Woodstock, where she worked as a teacher."
+  - says: "She was riding a train out of Memphis."
+    source: 2
+    quote: "While on a train ride from Memphis to Nashville in May 1884"
+  - says: "The crew told her to leave the ladies' car and move to a car where a drunk man sat and other men were smoking."
+    source: 1
+    quote: "the train’s conductor asked her to leave the ladies’ car and move to an integrated car, where a “drunken white man” was seated and men were smoking."
+  - says: "She refused."
+    source: 1
+    quote: "When Wells refused, the conductor and two white passengers forcibly removed her."
+  - says: "When the conductor tried to drag her out of her seat, she fastened her teeth in the back of his hand."
+    source: 1
+    quote: "“tried to drag me out of the seat…I fastened my teeth in the back of his hand.”"
+  - says: "It took him and two white passengers to remove her."
+    source: 1
+    quote: "When Wells refused, the conductor and two white passengers forcibly removed her."
+  - says: "She sued the railroad, and she won."
+    source: 1
+    quote: "Wells sued the railroad and won a $500 settlement from the circuit court."
+  - says: "Five hundred dollars."
+    source: 1
+    quote: "Wells sued the railroad and won a $500 settlement from the circuit court."
+  - says: "Then the Tennessee Supreme Court overturned it."
+    source: 2
+    quote: "The decision was overturned by the Tennessee Supreme Court."
+  - says: "After that, she began writing."
+    source: 2
+    quote: "Following this incident, Wells began writing about issues of race and politics in the South."
+  - says: "She became one of the most important journalists in the country, and led a crusade against lynching."
+    source: 2
+    quote: "African-American journalist and activist who led an anti-lynching crusade in the United States in the 1890s."
+sources:
+  - title: "Places of Ida B. Wells-Barnett"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/places-of-ida-b-wells.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Ida B. Wells"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/idabwells.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-she-bit-the-conductor/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 49.5
+    audioBytes: 792493
+    transcript:
+      totalS: 49.5
+      lines:
+        - text: Look up at the capitol.
+          atS: 0
+          durationS: 1.36
+        - text: For decades the state supreme court sat inside it.
+          atS: 2.17
+          durationS: 3.19
+        - text: One of the cases it heard was brought by a young teacher named Ida B.
+          atS: 5.69
+          durationS: 3.99
+        - text: Wells.
+          atS: 9.71
+          durationS: 0.67
+        - text: She was riding a train out of Memphis.
+          atS: 10.76
+          durationS: 2.39
+        - text: The crew told her to leave the ladies' car and move to a car where a drunk man sat and other men were smoking.
+          atS: 13.6
+          durationS: 6.18
+        - text: She refused.
+          atS: 20.1
+          durationS: 1.02
+        - text: When the conductor tried to drag her out of her seat, she fastened her teeth in the back of his hand.
+          atS: 21.4
+          durationS: 5.2
+        - text: It took him and two white passengers to remove her.
+          atS: 26.88
+          durationS: 2.88
+        - text: She sued the railroad, and she won.
+          atS: 30.14
+          durationS: 2.24
+        - text: Five hundred dollars.
+          atS: 32.82
+          durationS: 1.28
+        - text: Then the Tennessee Supreme Court overturned it.
+          atS: 34.91
+          durationS: 2.77
+        - text: After that, she began writing.
+          atS: 38.2
+          durationS: 2.16
+        - text: She became one of the most important journalists in the country, and led a crusade against lynching.
+          atS: 40.87
+          durationS: 5.19
+        - text: She lost here.
+          atS: 46.38
+          durationS: 0.99
+        - text: It did not slow her down.
+          atS: 47.54
+          durationS: 1.91

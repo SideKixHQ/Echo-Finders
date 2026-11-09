@@ -1,0 +1,92 @@
+# Drafted by Claude Code (2026-11-09) for Newport, Rhode Island.
+# Listening spot: Washington Square, the public green in front of the Colony House.
+# Position: Approximate centre of Washington Square, Newport, from general knowledge of the square's layout; no Wikidata coordinate was returned for the Colony House (medium-low confidence).
+id: newport-a-year-of-waiting
+title: "A Year of Waiting"
+summary: "Rochambeau's French army camped in and around Newport for nearly a year before the march that ended at Yorktown."
+place: "Washington Square and the Colony House, Newport, Rhode Island"
+at: { lat: 41.4901, lng: -71.3126 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 45
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [newport, washington-square, rochambeau, revolution, military]
+teaser: "A French army landed here, and then it waited for nearly a year."
+script: |
+  Look around this square. The Colony House at the top of it is among the places that remember a French army.
+
+  In July 1780 French forces under the comte de Rochambeau arrived in Newport, to support the American cause.
+
+  Then they waited. For nearly a year, French troops were camped in and around Newport, working out strategy with George Washington and the Continental Army.
+
+  In June 1781 Rochambeau's army began its march out of Rhode Island to join the Americans.
+
+  The campaign that march began ended in victory at Yorktown.
+
+  The road to Yorktown started with a long wait in this town.
+pronunciations:
+  - written: "Rochambeau"
+    say: "roh-sham-BOH"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The Colony House at the top of it is among the places that remember a French army."
+    source: 1
+    quote: "The Colony House"
+  - says: "In July 1780 French forces under the comte de Rochambeau arrived in Newport, to support the American cause."
+    source: 1
+    quote: "In July 1780, French forces under the command of General Jean-Baptiste Donatien de Vimeur, comte de Rochambeau, arrived in Newport, Rhode Island, to support the American cause."
+  - says: "For nearly a year, French troops were camped in and around Newport, working out strategy with George Washington and the Continental Army."
+    source: 1
+    quote: "For nearly a year, French troops were encamped in and around Newport while coordinating strategy with General George Washington and the Continental Army."
+  - says: "In June 1781 Rochambeau's army began its march out of Rhode Island to join the Americans."
+    source: 1
+    quote: "In June 1781, Rochambeau's army began its march from Rhode Island to join American forces"
+  - says: "The campaign that march began ended in victory at Yorktown."
+    source: 1
+    quote: "beginning the allied campaign that ultimately led to victory at Yorktown."
+  - says: "The road to Yorktown started with a long wait in this town."
+    source: 1
+    quote: "beginning the allied campaign that ultimately led to victory at Yorktown."
+sources:
+  - title: "Rhode Island - Nearby Attractions, Washington-Rochambeau Revolutionary Route National Historic Trail"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/waro/planyourvisit/rhodeisland-nearby-attractions.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/newport-a-year-of-waiting/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 44.7
+    audioBytes: 716007
+    transcript:
+      totalS: 44.7
+      lines:
+        - text: Look around this square.
+          atS: 0
+          durationS: 1.63
+        - text: The Colony House at the top of it is among the places that remember a French army.
+          atS: 1.95
+          durationS: 5.18
+        - text: In July 1780 French forces under the comte de Rochambeau arrived in Newport, to support the American cause.
+          atS: 7.94
+          durationS: 8.37
+        - text: Then they waited.
+          atS: 17.26
+          durationS: 1.05
+        - text: For nearly a year, French troops were camped in and around Newport, working out strategy with George Washington and the Continental Army.
+          atS: 19.26
+          durationS: 8.27
+        - text: In June 1781 Rochambeau's army began its march out of Rhode Island to join the Americans.
+          atS: 28.34
+          durationS: 7.34
+        - text: The campaign that march began ended in victory at Yorktown.
+          atS: 36.37
+          durationS: 3.94
+        - text: The road to Yorktown started with a long wait in this town.
+          atS: 41.01
+          durationS: 3.67

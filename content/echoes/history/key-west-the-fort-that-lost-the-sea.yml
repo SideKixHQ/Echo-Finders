@@ -1,0 +1,130 @@
+# Drafted by Claude Code (2026-11-09) for Key West, Florida.
+# Listening spot: Inside Fort Zachary Taylor Historic State Park (entry fee), outside the fort's sally port on the north side.
+# Position: Wikidata Q1438835 (Fort Zachary Taylor, 24.5475, -81.81), nudged north toward the sally port (medium confidence).
+id: key-west-the-fort-that-lost-the-sea
+title: "The Fort That Lost the Sea"
+summary: "Fort Taylor was built 440 yards offshore and held Key West for the Union. Sometime between 1891 and 1939 it became landlocked."
+place: "Fort Zachary Taylor Historic State Park, Key West, Florida"
+at: { lat: 24.5477, lng: -81.81 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [key-west, fort-zachary-taylor, civil-war, military, hurricane]
+teaser: "This fort was built out in the water. Then, at some point nobody wrote down, the water left."
+script: |
+  Stand by the fort and look around. Grass, trees, a parking lot. The sea is somewhere beyond them.
+
+  When this fort was built, it stood in the water. The site was in about ten feet of water at high tide, some four hundred and forty yards from shore. A wooden drawbridge seven hundred and twenty feet long connected it to the island.
+
+  Work began in 1845. Yellow fever kept driving the workers away. Hurricanes kept knocking things down. On the eleventh of October, 1846, a hurricane destroyed everything built so far except the cistern, the smithy and the stable, and four workmen drowned.
+
+  They kept going. By 1861 the fort was close to completion, just in time for the Civil War. It was garrisoned all through the war, and Key West stayed in Union hands.
+
+  Then, slowly, it lost the sea. In 1898 the top two tiers were taken off. And sometime between 1891 and 1939, the fort became landlocked.
+
+  Nobody wrote down the day the water left.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The site was in about ten feet of water at high tide, some four hundred and forty yards from shore."
+    source: 1
+    quote: "water at high tide approximately 440 yards from shore."
+  - says: "A wooden drawbridge seven hundred and twenty feet long connected it to the island."
+    source: 1
+    quote: "A wooden drawbridge 720' long connected the fort to the mainland."
+  - says: "Work began in 1845."
+    source: 1
+    quote: "By November of that year construction of temporary buildings and a wharf of yellow pine was begun."
+  - says: "Yellow fever kept driving the workers away."
+    source: 1
+    quote: "interrupted by epidemics of yellow fever which caused periodic withdrawals of personnel and hurricanes which brought death and destruction."
+  - says: "On the eleventh of October, 1846, a hurricane destroyed everything built so far except the cistern, the smithy and the stable, and four workmen drowned."
+    source: 1
+    quote: "On October 11, 1846, a hurricane destroyed all the public works constructed up to that time except the cistern, smithy, and stable, and caused the death of four workmen, who were drowned."
+  - says: "By 1861 the fort was close to completion, just in time for the Civil War."
+    source: 1
+    quote: "By 1861, however, the main fort seems to have been close to completion- It was first occupied at that time and continued to be garrisoned throughout the Civil War."
+  - says: "It was garrisoned all through the war, and Key West stayed in Union hands."
+    source: 2
+    quote: "held by Union forces throughout the Civil War"
+  - says: "In 1898 the top two tiers were taken off."
+    source: 1
+    quote: "In 1898 the top two tiers of the fort were removed"
+  - says: "And sometime between 1891 and 1939, the fort became landlocked."
+    source: 1
+    quote: "Sometime between 1891 and 1939 the Sort became landlocked."
+sources:
+  - title: "Fort Taylor, HABS FL-283"
+    publisher: "Library of Congress, Historic American Buildings Survey / Historic American Engineering Record"
+    url: https://www.loc.gov/item/fl0135/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Tift & Company, Ships Chandlery & Icehouse, HABS FL-176"
+    publisher: "Library of Congress, Historic American Buildings Survey / Historic American Engineering Record"
+    url: https://www.loc.gov/item/fl0148/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-the-fort-that-lost-the-sea/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.9
+    audioBytes: 1183285
+    transcript:
+      totalS: 73.9
+      lines:
+        - text: Stand by the fort and look around.
+          atS: 0
+          durationS: 2.23
+        - text: Grass, trees, a parking lot.
+          atS: 2.74
+          durationS: 3.15
+        - text: The sea is somewhere beyond them.
+          atS: 6.49
+          durationS: 1.92
+        - text: When this fort was built, it stood in the water.
+          atS: 8.92
+          durationS: 2.71
+        - text: The site was in about ten feet of water at high tide, some four hundred and forty yards from shore.
+          atS: 12.32
+          durationS: 6.18
+        - text: A wooden drawbridge seven hundred and twenty feet long connected it to the island.
+          atS: 19.1
+          durationS: 4.41
+        - text: Work began in 1845.
+          atS: 24.11
+          durationS: 2.31
+        - text: Yellow fever kept driving the workers away.
+          atS: 26.75
+          durationS: 2.64
+        - text: Hurricanes kept knocking things down.
+          atS: 29.71
+          durationS: 2.25
+        - text: On the eleventh of October, 1846, a hurricane destroyed everything built so far except the cistern, the smithy and the stable, and four workmen drowned.
+          atS: 33.26
+          durationS: 10.41
+        - text: They kept going.
+          atS: 44.06
+          durationS: 1.07
+        - text: By 1861 the fort was close to completion, just in time for the Civil War.
+          atS: 45.64
+          durationS: 5.68
+        - text: It was garrisoned all through the war, and Key West stayed in Union hands.
+          atS: 51.76
+          durationS: 4.63
+        - text: Then, slowly, it lost the sea.
+          atS: 56.99
+          durationS: 3.08
+        - text: In 1898 the top two tiers were taken off.
+          atS: 61.02
+          durationS: 3.45
+        - text: And sometime between 1891 and 1939, the fort became landlocked.
+          atS: 64.98
+          durationS: 5.77
+        - text: Nobody wrote down the day the water left.
+          atS: 71.45
+          durationS: 2.44

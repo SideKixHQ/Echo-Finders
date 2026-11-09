@@ -1,0 +1,122 @@
+# Drafted by Claude Code (2026-11-09) for Cleveland, Ohio.
+# Listening spot: Outside the Garfield Memorial in Lake View Cemetery, open to visitors.
+# Position: Approximate position of the Garfield Memorial on its hill in Lake View Cemetery, from general knowledge; Wikidata Q1494202 has no coordinate (medium-low confidence).
+id: cleveland-no-more-protection
+title: "No More Protection"
+summary: "President Garfield, shot in 1881 after four months in office, lies in a 180-foot memorial in Lake View Cemetery."
+place: "James A. Garfield Memorial, Lake View Cemetery, Cleveland, Ohio"
+at: { lat: 41.5105, lng: -81.5913 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 51
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [cleveland, lake-view-cemetery, garfield, presidents]
+teaser: "The biggest tomb of its day holds a president who wanted no guards."
+script: |
+  Look up at the tower. It is Berea sandstone, and it stands a hundred and eighty feet tall.
+
+  James Garfield, the twentieth president, is buried here.
+
+  He had been in office only four months when he was shot. It was the second of July, 1881, in a Washington railway station.
+
+  In those days presidents had no guards around them. Americans believed a president should be open to everyone.
+
+  For eighty days the country read every bulletin from his doctors. He died on the nineteenth of September.
+
+  His monument here was one of the biggest and most elaborate mausoleums of its time.
+
+  Go downstairs and you can see his casket, and his wife Lucretia's, on full display.
+
+  The biggest tomb of its day holds a man who said he needed no more protection than the average American.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It is Berea sandstone, and it stands a hundred and eighty feet tall."
+    source: 1
+    quote: "The masoleum was constructed of Berea Sandstone and stands 180 feet tall."
+  - says: "James Garfield, the twentieth president, is buried here."
+    source: 1
+    quote: "James A. Garfield is interred at Lake View Cemetery in Cleveland, Ohio."
+  - says: "He had been in office only four months when he was shot. It was the second of July, 1881, in a Washington railway station."
+    source: 2
+    quote: "On July 2, 1881, President Garfield became the second president to be shot. Walking through Washington, D.C.'s Baltimore & Potomac train station"
+  - says: "Americans believed a president should be open to everyone."
+    source: 2
+    quote: "Americans believed the President should be accessible to everyone."
+  - says: "For eighty days the country read every bulletin from his doctors."
+    source: 2
+    quote: "For 80 days, from the shooting on July 2 to his death on September 19, the public read every newspaper and waited for each bulletin from the President's doctors"
+  - says: "He died on the nineteenth of September."
+    source: 2
+    quote: "For 80 days, from the shooting on July 2 to his death on September 19"
+  - says: "His monument here was one of the biggest and most elaborate mausoleums of its time."
+    source: 2
+    quote: "His monument at Lake View Cemetery in Cleveland, Ohio was one of the biggest and most elaborate mausoleums of its time."
+  - says: "Go downstairs and you can see his casket, and his wife Lucretia's, on full display."
+    source: 1
+    quote: "Visitors can see his and First Lady Lucretia casket's on full display downstairs."
+  - says: "The biggest tomb of its day holds a man who said he needed no more protection than the average American."
+    source: 2
+    quote: "argued that he needed no more protection than the average American."
+  - says: "In those days presidents had no guards around them."
+    source: 2
+    quote: "In 1881, Presidents did not have guards surrounding them or security escorts when traveling."
+sources:
+  - title: "Nearby Attractions - James A Garfield National Historic Site"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/jaga/planyourvisit/nearbyattractions.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Mourning President Garfield"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/mourning-president-garfield.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/cleveland-no-more-protection/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 50.7
+    audioBytes: 812555
+    transcript:
+      totalS: 50.7
+      lines:
+        - text: Look up at the tower.
+          atS: 0
+          durationS: 1.37
+        - text: It is Berea sandstone, and it stands a hundred and eighty feet tall.
+          atS: 1.52
+          durationS: 4.64
+        - text: James Garfield, the twentieth president, is buried here.
+          atS: 6.61
+          durationS: 3.77
+        - text: He had been in office only four months when he was shot.
+          atS: 10.7
+          durationS: 3.17
+        - text: It was the second of July, 1881, in a Washington railway station.
+          atS: 14.2
+          durationS: 4.49
+        - text: In those days presidents had no guards around them.
+          atS: 19.2
+          durationS: 3.04
+        - text: Americans believed a president should be open to everyone.
+          atS: 22.63
+          durationS: 3.51
+        - text: For eighty days the country read every bulletin from his doctors.
+          atS: 26.57
+          durationS: 3.87
+        - text: He died on the nineteenth of September.
+          atS: 30.77
+          durationS: 2.17
+        - text: His monument here was one of the biggest and most elaborate mausoleums of its time.
+          atS: 33.22
+          durationS: 4.85
+        - text: Go downstairs and you can see his casket, and his wife Lucretia's, on full display.
+          atS: 38.88
+          durationS: 5.36
+        - text: The biggest tomb of its day holds a man who said he needed no more protection than the average American.
+          atS: 44.69
+          durationS: 6.03

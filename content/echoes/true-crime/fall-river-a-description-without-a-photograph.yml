@@ -1,0 +1,134 @@
+# Drafted by Claude Code (2026-11-09) for Fall River, Massachusetts.
+# Listening spot: Public sidewalk across the street from the house, which is a private business.
+# Position: Wikidata Q19864342 (Lizzie Borden House) 41.6989, -71.1562, moved to the opposite sidewalk (medium confidence).
+id: fall-river-a-description-without-a-photograph
+title: "A Description Without a Photograph"
+summary: "In 1890 Lizzie Borden described herself on a passport form. Two years later she was tried for murder and acquitted."
+place: "Lizzie Borden House, Second Street, Fall River, Massachusetts"
+at: { lat: 41.6989, lng: -71.156 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 42
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [fall-river, lizzie-borden, 1892]
+teaser: "Two years before the trial, she described her own face on a passport form."
+script: |
+  This house is famous for a crime. Before that, here is how its best known resident once described herself.
+
+  In June 1890 a woman from Fall River signed a passport application, to sail for Europe.
+
+  Passports did not need photographs then. So she wrote a description instead.
+
+  Five feet three inches tall. Grey eyes. Light brown hair. And a full face.
+
+  Her name was Lizzie Borden.
+
+  Two years later she was arrested and tried for the murder of her father, Andrew, and her stepmother, Abby.
+
+  A jury acquitted her.
+
+  Her name lives on anyway, in the rhyme about forty whacks.
+
+  A jury cleared her. The rhyme never has.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: exonerated
+  reviewedBy: "James (owner), approved 2026-11-09"
+  reviewedAt: "2026-11-09"
+  contentWarning: "This echo concerns a double murder. No violence is described."
+claims:
+  - says: "In June 1890 a woman from Fall River signed a passport application, to sail for Europe."
+    source: 1
+    quote: "Lizzie's passport application for this trip, signed by her on June 4, 1890, is in the National Archives."
+  - says: "Passports did not need photographs then."
+    source: 1
+    quote: "Photographs were not required for passports until the end of 1914"
+  - says: "Five feet three inches tall."
+    source: 1
+    quote: "Lizzie declared that she is five feet, three inches tall with grey eyes, light brown hair, and a \"full\" face."
+  - says: "Her name was Lizzie Borden."
+    source: 1
+    quote: "A month before her 30th birthday, Lizzie Borden of Fall River, Massachusetts, sailed for Europe."
+  - says: "Two years later she was arrested and tried for the murder of her father, Andrew, and her stepmother, Abby."
+    source: 1
+    quote: "Two years later, Lizzie Borden became nationally famous for her arrest and trial for the murder of her father, Andrew, and her stepmother, Abby."
+  - says: "A jury acquitted her."
+    source: 2
+    quote: "The Borden murder trial--A scene in the court-room before the acquittal"
+  - says: "Her name lives on anyway, in the rhyme about forty whacks."
+    source: 1
+    quote: "She was acquitted of murdering them with a hatchet, but her name lives on in American folklore as the woman who dealt \"forty whacks.\""
+  - says: "A jury cleared her."
+    source: 1
+    quote: "She was acquitted of murdering them with a hatchet"
+sources:
+  - title: "Lizzie Borden took a . . . trip (Prologue, Fall 2010)"
+    publisher: "National Archives and Records Administration"
+    url: https://www.archives.gov/publications/prologue/2010/fall/passport-application-lizzie-borden
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Borden murder trial: a scene in the court-room before the acquittal (Frank Leslie's illustrated newspaper, 1893)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/99403183/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/fall-river-a-description-without-a-photograph/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 42.3
+    audioBytes: 677972
+    transcript:
+      totalS: 42.3
+      lines:
+        - text: This house is famous for a crime.
+          atS: 0
+          durationS: 2.24
+        - text: Before that, here is how its best known resident once described herself.
+          atS: 2.75
+          durationS: 4.1
+        - text: In June 1890 a woman from Fall River signed a passport application, to sail for Europe.
+          atS: 7.36
+          durationS: 5.94
+        - text: Passports did not need photographs then.
+          atS: 13.63
+          durationS: 2.31
+        - text: So she wrote a description instead.
+          atS: 16.11
+          durationS: 1.93
+        - text: Five feet three inches tall.
+          atS: 18.43
+          durationS: 1.9
+        - text: Grey eyes.
+          atS: 20.54
+          durationS: 0.99
+        - text: Light brown hair.
+          atS: 21.77
+          durationS: 1.17
+        - text: And a full face.
+          atS: 23
+          durationS: 1.27
+        - text: Her name was Lizzie Borden.
+          atS: 24.51
+          durationS: 1.73
+        - text: Two years later she was arrested and tried for the murder of her father, Andrew, and her stepmother, Abby.
+          atS: 26.93
+          durationS: 6.04
+        - text: A jury acquitted her.
+          atS: 33.58
+          durationS: 1.38
+        - text: Her name lives on anyway, in the rhyme about forty whacks.
+          atS: 35.17
+          durationS: 3.88
+        - text: A jury cleared her.
+          atS: 39.37
+          durationS: 1.21
+        - text: The rhyme never has.
+          atS: 40.85
+          durationS: 1.45

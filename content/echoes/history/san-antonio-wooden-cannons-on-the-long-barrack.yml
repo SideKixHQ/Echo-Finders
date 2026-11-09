@@ -1,0 +1,141 @@
+# Drafted by Claude Code (2026-11-09) for San Antonio, Texas.
+# Listening spot: Alamo Plaza, the public square, looking at the long two-story stone building north of the church.
+# Position: Wikidata Q2636724 (Alamo Mission, 29.425833, -98.486111), moved about 50 m north along the plaza to face the Long Barrack, which stands north of the church (medium confidence).
+id: san-antonio-wooden-cannons-on-the-long-barrack
+title: "Wooden Cannons on the Long Barrack"
+summary: "The Long Barrack, where the Alamo's defenders made their final stand, was later a store with wooden towers and fake wooden cannons."
+place: "The Long Barrack, Alamo Plaza, San Antonio, Texas"
+at: { lat: 29.4263, lng: -98.4864 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [san-antonio, alamo, texas-revolution, military, world-heritage]
+teaser: "The building of the Alamo's last stand spent decades as a store dressed up as a castle."
+script: |
+  Look at the long stone building beside the church. This is the Long Barrack, the oldest building at the Alamo. It was first a two-story convent for the mission's priests.
+
+  In 1836 it was the site of the defenders' final stand against Santa Anna's army. After a thirteen-day siege, Mexican troops killed all of the roughly one hundred and eighty-nine defenders.
+
+  Forty-one years later, in 1877, the convent was sold to a San Antonio merchant, Honore Grenet, for nineteen thousand dollars.
+
+  He built a wooden two-story gallery across the front, and gave it a medieval look. A crenellated top. Three octagonal wooden towers. Gun ports, and wooden cannons.
+
+  After he died, a wholesale grocery firm bought it and used the old convent as a storehouse.
+
+  It was not until 1912 that the governor had the wooden front stripped away.
+
+  The place where the Alamo's defenders made their last stand spent decades pretending to be a castle, guarded by cannons made of wood.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "This is the Long Barrack, the oldest building at the Alamo."
+    source: 1
+    quote: "the Long Barrack, the oldest building at the site dating back to 1724"
+  - says: "It was first a two-story convent for the mission's priests."
+    source: 1
+    quote: "Originally a two-story convent that served as the quarters and offices of Spanish missionaries"
+  - says: "In 1836 it was the site of the defenders' final stand against Santa Anna's army."
+    source: 1
+    quote: "it was also the site of the Alamo’s defenders final stand against Santa Anna’s army in 1836."
+  - says: "After a thirteen-day siege, Mexican troops killed all of the roughly one hundred and eighty-nine defenders."
+    source: 1
+    quote: "After a 13-day siege, the Battle of the Alamo ended on March 6, 1836, when Mexican troops killed all of the fort’s approximately 189 defenders."
+  - says: "Forty-one years later, in 1877, the convent was sold to a San Antonio merchant, Honore Grenet, for nineteen thousand dollars."
+    source: 2
+    quote: "On November 30, 1877, Bishop Anthony D. Pellicer sold that part of the Alamo complex known as the \"convent building\" to Grenet for the sum of $19,000."
+  - says: "a San Antonio merchant, Honore Grenet"
+    source: 2
+    quote: "Late in 1877 Honore Grenet, a San Antonio merchant, purchased the Alamo property"
+  - says: "He built a wooden two-story gallery across the front, and gave it a medieval look."
+    source: 2
+    quote: "a wooden two-story gallery across the long east elevation"
+  - says: "and gave it a medieval look"
+    source: 2
+    quote: "Ihe medieval style of the whole affair was completed by three octagonal wooden towers"
+  - says: "Three octagonal wooden towers."
+    source: 2
+    quote: "three octagonal wooden towers"
+  - says: "A crenellated top."
+    source: 2
+    quote: "was terminated by a crenellated top."
+  - says: "Gun ports, and wooden cannons."
+    source: 2
+    quote: "gun ports and wooden facisimile cannons"
+  - says: "The place where the Alamo's defenders made their last stand spent decades pretending to be a castle, guarded by cannons made of wood."
+    source: 2
+    quote: "gun ports and wooden facisimile cannons"
+  - says: "After he died, a wholesale grocery firm bought it and used the old convent as a storehouse."
+    source: 2
+    quote: "Hugo and Schmeltzer remained in business in the Grenet building utilizing the old convent as a storehouse"
+  - says: "a wholesale grocery firm"
+    source: 2
+    quote: "founded their wholesale grocery firm in 1871."
+  - says: "It was not until 1912 that the governor had the wooden front stripped away."
+    source: 2
+    quote: "Shortly thereafter the Governor had the wooden facade that Grenet erected stripped away as the first step in restoring the building."
+  - says: "1912"
+    source: 2
+    quote: "the governor then on March 4, 1912, reverted the custody of the Alamo to the State."
+sources:
+  - title: "Mission San Antonio de Valero 3rd Site, The Alamo"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/mission-san-antonio-de-valero-3rd-site-the-alamo.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Mission San Antonio de Valero (The Alamo), HABS TX-318, written historical and descriptive data"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx0000/tx0035/data/tx0035data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-antonio-wooden-cannons-on-the-long-barrack/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.1
+    audioBytes: 1105963
+    transcript:
+      totalS: 69.1
+      lines:
+        - text: Look at the long stone building beside the church.
+          atS: 0
+          durationS: 2.82
+        - text: This is the Long Barrack, the oldest building at the Alamo.
+          atS: 3.15
+          durationS: 3.69
+        - text: It was first a two-story convent for the mission's priests.
+          atS: 7.12
+          durationS: 3.48
+        - text: In 1836 it was the site of the defenders' final stand against Santa Anna's army.
+          atS: 10.93
+          durationS: 5.85
+        - text: After a thirteen-day siege, Mexican troops killed all of the roughly one hundred and eighty-nine defenders.
+          atS: 18.08
+          durationS: 6.43
+        - text: Forty-one years later, in 1877, the convent was sold to a San Antonio merchant, Honore Grenet, for nineteen thousand dollars.
+          atS: 25.11
+          durationS: 9.76
+        - text: He built a wooden two-story gallery across the front, and gave it a medieval look.
+          atS: 35.57
+          durationS: 4.98
+        - text: A crenellated top.
+          atS: 41.16
+          durationS: 1.48
+        - text: Three octagonal wooden towers.
+          atS: 43.07
+          durationS: 2.18
+        - text: Gun ports, and wooden cannons.
+          atS: 45.47
+          durationS: 2.02
+        - text: After he died, a wholesale grocery firm bought it and used the old convent as a storehouse.
+          atS: 48.09
+          durationS: 6.26
+        - text: It was not until 1912 that the governor had the wooden front stripped away.
+          atS: 55.04
+          durationS: 4.92
+        - text: The place where the Alamo's defenders made their last stand spent decades pretending to be a castle, guarded by cannons made of wood.
+          atS: 60.78
+          durationS: 8.28

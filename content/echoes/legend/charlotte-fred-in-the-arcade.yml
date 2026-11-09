@@ -1,0 +1,145 @@
+# Drafted by Claude Code (2026-11-09) for Charlotte.
+# Listening spot: Inside the public walkway of Latta Arcade, between South Tryon and South Church Streets, during opening hours.
+# Position: Wikidata Q6497023 (Latta Arcade) (high confidence).
+id: charlotte-fred-in-the-arcade
+title: "Fred in the Arcade"
+summary: "Tenants of Latta Arcade report footsteps when they are alone, and have named their ghost Fred. A legend, not proven."
+place: "Latta Arcade, 320 South Tryon Street, Charlotte, North Carolina"
+at: { lat: 35.22556, lng: -80.84583 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 63
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A reported ghost story from the arcade's former property manager, published by Our State. The script says out loud that it cannot be proven; no supernatural claim is made as fact.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [charlotte, uptown, ghost, latta-arcade]
+teaser: "People who work in this old arcade say they hear footsteps when nobody else is here."
+script: |
+  Step in under the skylights.
+
+  This arcade was built in 1914 for an industrialist named Edward Dilworth Latta. He wanted something like the covered arcades of London and Paris.
+
+  People have been cutting through it ever since, on the quickest way between South Tryon and South Church Streets.
+
+  What follows is a ghost story. It is told by the people who work here, and nobody can prove it.
+
+  Employees and tenants say they have heard footsteps in the building at times when they were sure they were alone.
+
+  They have given the walker a name. They call him Fred. And they believe, or hope, that he keeps the building safe.
+
+  A local paranormal group says it heard a voice in one of the shops here. It said, she won't listen to me.
+
+  And one tenant says that late one night she promised out loud to take care of the place. The glass of water on her desk cracked.
+
+  Footsteps in an arcade are not strange. This one has been full of them for more than a century. It is only the footsteps with nobody attached that get a name.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "This arcade was built in 1914 for an industrialist named Edward Dilworth Latta."
+    source: 2
+    quote: "When industrialist Edward Dilworth Latta commissioned architect William Peeps to design the corridor in 1914"
+  - says: "He wanted something like the covered arcades of London and Paris."
+    source: 2
+    quote: "he envisioned a place like the arcades popular in London and Paris"
+  - says: "People have been cutting through it ever since, on the quickest way between South Tryon and South Church Streets."
+    source: 2
+    quote: "Or maybe they’re simply cutting through on the quickest route between South Tryon and South Church streets."
+  - says: "Employees and tenants say they have heard footsteps in the building at times when they were sure they were alone."
+    source: 1
+    quote: "Several employees and tenants have reported hearing footsteps in the building when they’ve been there alone."
+  - says: "They call him Fred."
+    source: 1
+    quote: "They’ve named their ghost Fred and believe — hope? — he keeps the building safe."
+  - says: "And they believe, or hope, that he keeps the building safe."
+    source: 1
+    quote: "They’ve named their ghost Fred and believe — hope? — he keeps the building safe."
+  - says: "A local paranormal group says it heard a voice in one of the shops here."
+    source: 1
+    quote: "Members of the Charlotte Area Paranormal Society claim to have heard a voice say, “She won’t listen to me” inside Gather Flower Studio."
+  - says: "And one tenant says that late one night she promised out loud to take care of the place."
+    source: 1
+    quote: "One night, she said aloud: “I promise I’ll take care of the place.”"
+  - says: "The glass of water on her desk cracked."
+    source: 1
+    quote: "In that moment, she says, a glass of water on her desk cracked."
+  - says: "It is only the footsteps with nobody attached that get a name."
+    source: 1
+    quote: "Several employees and tenants have reported hearing footsteps in the building when they’ve been there alone. They’ve named their ghost Fred"
+  - says: "This one has been full of them for more than a century."
+    source: 2
+    quote: "commissioned architect William Peeps to design the corridor in 1914"
+sources:
+  - title: "What to See & Do at Charlotte's Latta Arcade"
+    publisher: "Our State"
+    url: https://www.ourstate.com/charlottes-latta-arcade-guide/
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Streets With a Story: Charlotte's Latta Arcade"
+    publisher: "Our State"
+    url: https://www.ourstate.com/charlottes-latta-arcade/
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/charlotte-fred-in-the-arcade/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 62.5
+    audioBytes: 1001055
+    transcript:
+      totalS: 62.5
+      lines:
+        - text: Step in under the skylights.
+          atS: 0
+          durationS: 1.8
+        - text: This arcade was built in 1914 for an industrialist named Edward Dilworth Latta.
+          atS: 3.1
+          durationS: 5.36
+        - text: He wanted something like the covered arcades of London and Paris.
+          atS: 9.07
+          durationS: 3.48
+        - text: People have been cutting through it ever since, on the quickest way between South Tryon and South Church Streets.
+          atS: 13.25
+          durationS: 5.97
+        - text: What follows is a ghost story.
+          atS: 19.91
+          durationS: 2.39
+        - text: It is told by the people who work here, and nobody can prove it.
+          atS: 22.69
+          durationS: 3.56
+        - text: Employees and tenants say they have heard footsteps in the building at times when they were sure they were alone.
+          atS: 26.69
+          durationS: 5.63
+        - text: They have given the walker a name.
+          atS: 32.93
+          durationS: 1.63
+        - text: They call him Fred.
+          atS: 34.73
+          durationS: 1.18
+        - text: And they believe, or hope, that he keeps the building safe.
+          atS: 36.12
+          durationS: 3.54
+        - text: A local paranormal group says it heard a voice in one of the shops here.
+          atS: 39.98
+          durationS: 3.92
+        - text: It said, she won't listen to me.
+          atS: 44.03
+          durationS: 1.96
+        - text: And one tenant says that late one night she promised out loud to take care of the place.
+          atS: 46.1
+          durationS: 4.71
+        - text: The glass of water on her desk cracked.
+          atS: 50.99
+          durationS: 2.38
+        - text: Footsteps in an arcade are not strange.
+          atS: 53.62
+          durationS: 2.56
+        - text: This one has been full of them for more than a century.
+          atS: 56.33
+          durationS: 2.77
+        - text: It is only the footsteps with nobody attached that get a name.
+          atS: 59.18
+          durationS: 3.33

@@ -1,0 +1,108 @@
+# Drafted by Claude Code (2026-11-09) for Key West, Florida.
+# Listening spot: Inside the Key West Cemetery (city-owned, open by day), at the fenced Maine memorial near the Margaret Street entrance.
+# Position: Wikidata Q14685822 (Key West Cemetery, 24.5564, -81.7951) moved toward the Margaret Street side, where HABS FL-191 puts the memorial; the memorial itself was not geocoded (low-medium confidence).
+id: key-west-the-sailor-with-the-oar
+title: "The Sailor With the Oar"
+summary: "The Key West Cemetery memorial to the USS Maine holds the tombs of victims of the 1898 explosion that helped start the Spanish American War."
+place: "USS Maine memorial, Key West Cemetery near the Margaret Street entrance, Key West, Florida"
+at: { lat: 24.5556, lng: -81.7968 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 48
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [key-west, uss-maine, spanish-american-war, military, cemetery]
+teaser: "Inside an iron fence in the cemetery, a sailor holds an oar and looks into the distance."
+script: |
+  Find the iron fence near the Margaret Street entrance. In the middle stands a sailor, gazing into the distance and holding an oar.
+
+  On the fifteenth of February, 1898, the battleship Maine blew up in Havana Harbor. It was the most dramatic of the incidents that led to the Spanish American War.
+
+  Inside this fence are tombs of the victims. Union veterans and the citizens of Key West put up the memorial that same year.
+
+  Look at the gates. Capstans. Anchors. Crossed sabres. An eagle on a shield. Even the cement walks are inlaid with anchors and stars, painted blue.
+
+  And the sailor in the middle, still gazing into the distance, as if waiting for a ship.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Find the iron fence near the Margaret Street entrance."
+    source: 1
+    quote: "Key West Cemetery near Margaret Street entrance"
+  - says: "In the middle stands a sailor, gazing into the distance and holding an oar."
+    source: 1
+    quote: "Sculpture of sailor gazing into the distance and holding an oar."
+  - says: "On the fifteenth of February, 1898, the battleship Maine blew up in Havana Harbor."
+    source: 1
+    quote: "It commemorates the men who died when the Battleship Maine blew up in Havana Harbor on February 15, 1898, the most dramatic in a series of incidents which precipitated the Spanish American War."
+  - says: "It was the most dramatic of the incidents that led to the Spanish American War."
+    source: 1
+    quote: "the most dramatic in a series of incidents which precipitated the Spanish American War."
+  - says: "Inside this fence are tombs of the victims."
+    source: 1
+    quote: "This memorial consists of the tombs of the victims, a sculptural centerpiece and an elaborate iron fence and gate"
+  - says: "Union veterans and the citizens of Key West put up the memorial that same year."
+    source: 1
+    quote: "The memorial was erected in 1898 by the Encampment Union Veterans Legion, Washington, District of Columbia, and by the citizens of Key West."
+  - says: "Look at the gates."
+    source: 1
+    quote: "wrought iron gates have decorated panels embosed with capstans, anchors"
+  - says: "Even the cement walks are inlaid with anchors and stars, painted blue."
+    source: 1
+    quote: "Cement walks are inlaid with anchor and star motif painted blue."
+sources:
+  - title: "Memorial to the U. S. Battleship Maine, Key West Cemetery, HABS FL-191"
+    publisher: "Library of Congress, Historic American Buildings Survey / Historic American Engineering Record"
+    url: https://www.loc.gov/item/fl0141/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-the-sailor-with-the-oar/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 48.1
+    audioBytes: 769923
+    transcript:
+      totalS: 48.1
+      lines:
+        - text: Find the iron fence near the Margaret Street entrance.
+          atS: 0
+          durationS: 3.45
+        - text: In the middle stands a sailor, gazing into the distance and holding an oar.
+          atS: 3.96
+          durationS: 4.72
+        - text: On the fifteenth of February, 1898, the battleship Maine blew up in Havana Harbor.
+          atS: 9.98
+          durationS: 5.85
+        - text: It was the most dramatic of the incidents that led to the Spanish American War.
+          atS: 16.44
+          durationS: 4.34
+        - text: Inside this fence are tombs of the victims.
+          atS: 21.59
+          durationS: 2.97
+        - text: Union veterans and the citizens of Key West put up the memorial that same year.
+          atS: 25.26
+          durationS: 4.83
+        - text: Look at the gates.
+          atS: 30.79
+          durationS: 1.08
+        - text: Capstans.
+          atS: 32.11
+          durationS: 0.99
+        - text: Anchors.
+          atS: 33.34
+          durationS: 0.71
+        - text: Crossed sabres.
+          atS: 34.17
+          durationS: 1.24
+        - text: An eagle on a shield.
+          atS: 35.59
+          durationS: 1.44
+        - text: Even the cement walks are inlaid with anchors and stars, painted blue.
+          atS: 37.63
+          durationS: 4.57
+        - text: And the sailor in the middle, still gazing into the distance, as if waiting for a ship.
+          atS: 42.64
+          durationS: 5.42

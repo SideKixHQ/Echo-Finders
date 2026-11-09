@@ -1,0 +1,145 @@
+# Drafted by Claude Code (2026-11-09) for Saint Paul, Minnesota.
+# Listening spot: The bike path on the bluff above Shepard Road, at the historical marker.
+# Position: NPS Fountain Cave page gives the marker at 44.923457, -93.122789 on the bluff path (high confidence).
+id: saint-paul-almost-pigs-eye
+title: "Almost Pig's Eye"
+summary: "Saint Paul's first building site was a cave mouth below here, home to a whiskey seller called Pig's Eye. A priest renamed the town."
+place: "Fountain Cave historical marker, Shepard Road bluff path, Saint Paul, Minnesota"
+at: { lat: 44.92346, lng: -93.12279 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 59
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [saint-paul, fountain-cave, mississippi, founding]
+teaser: "The city's first resident at this spot was a whiskey seller called Pig's Eye."
+script: |
+  Below this path, under the road, is a cave you cannot see.
+
+  The Dakota knew it as In-yan Ti-pi. It was the first building site of what became Saint Paul.
+
+  In 1838 a man of dubious reputation, who sold alcohol to Native Americans and to soldiers from Fort Snelling, built a cabin at the mouth of the cave.
+
+  His name was Pierre Parrant. Everybody called him Pig's Eye.
+
+  Two years later the army at Fort Snelling threw him out.
+
+  The cluster of cabins downstream went by two names. The Great Marsh, or, after its best known inhabitant, Pig's Eye.
+
+  Then a Catholic priest, Father Lucien Galtier, built a chapel on the bluff and named it for Saint Paul.
+
+  The name stuck.
+
+  The cave did not. Its entrance was buried in 1960, when Shepard Road was built.
+
+  The city came within a priest of being called Pig's Eye.
+pronunciations:
+  - written: "Parrant"
+    say: "pa-RAHN"
+  - written: "Galtier"
+    say: "GAL-tee-ay"
+  - written: "In-yan Ti-pi"
+    say: "in-YAHN tee-PEE"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The Dakota knew it as In-yan Ti-pi."
+    source: 1
+    quote: "Long known to the local Dakota as IN-YAN TI-PI, Fountain Cave was the first building site for what was to become the city of St. Paul."
+  - says: "It was the first building site of what became Saint Paul."
+    source: 1
+    quote: "Fountain Cave was the first building site for what was to become the city of St. Paul."
+  - says: "In 1838 a man of dubious reputation, who sold alcohol to Native Americans and to soldiers from Fort Snelling, built a cabin at the mouth of the cave."
+    source: 1
+    quote: "Pierre (Pig's Eye) Parrant, a person of dubious reputation that sold alchol to both Native Americans and to soldiers from the nearby Fort Snelling, built a cabin at the mouth of the cave in 1838"
+  - says: "His name was Pierre Parrant."
+    source: 1
+    quote: "Pierre (Pig's Eye) Parrant"
+  - says: "Everybody called him Pig's Eye."
+    source: 2
+    quote: "Pierre \"Pig's Eye\" Parrant, a popular whiskey seller."
+  - says: "Two years later the army at Fort Snelling threw him out."
+    source: 1
+    quote: "but was evicted two years later by the military authorities at Fort Snelling."
+  - says: "The cluster of cabins downstream went by two names."
+    source: 2
+    quote: "This collection of domiciles was alternatively named for its topography (\"Grand Marais\" or Great Marsh) or for its best known inhabitant"
+  - says: "The Great Marsh, or, after its best known inhabitant, Pig's Eye."
+    source: 2
+    quote: "This collection of domiciles was alternatively named for its topography (\"Grand Marais\" or Great Marsh) or for its best known inhabitant, Pierre \"Pig's Eye\" Parrant, a popular whiskey seller."
+  - says: "Then a Catholic priest, Father Lucien Galtier, built a chapel on the bluff and named it for Saint Paul."
+    source: 2
+    quote: "Father Lucien Galtier, a Catholic priest who had been sent from the Diocese of Dubuque to minister to the fur traders and growing community in the vicinity of Mendota, established a chapel on the bluff and named it for Saint Paul."
+  - says: "The name stuck."
+    source: 2
+    quote: "The name stuck"
+  - says: "Its entrance was buried in 1960, when Shepard Road was built."
+    source: 1
+    quote: "Finally, in 1960, the cave's entrance was buried during the construction of Shepard Road."
+  - says: "The city came within a priest of being called Pig's Eye."
+    source: 2
+    quote: "for its best known inhabitant, Pierre \"Pig's Eye\" Parrant"
+sources:
+  - title: "Fountain Cave - Mississippi National River & Recreation Area"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/miss/planyourvisit/founcave.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "River of History, Chapter 8"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/miss/learn/historyculture/river-of-history-chapter-8.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/saint-paul-almost-pigs-eye/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 58.6
+    audioBytes: 938779
+    transcript:
+      totalS: 58.6
+      lines:
+        - text: Below this path, under the road, is a cave you cannot see.
+          atS: 0
+          durationS: 4.18
+        - text: The Dakota knew it as In-yan Ti-pi.
+          atS: 4.78
+          durationS: 2.88
+        - text: It was the first building site of what became Saint Paul.
+          atS: 8.36
+          durationS: 3.24
+        - text: In 1838 a man of dubious reputation, who sold alcohol to Native Americans and to soldiers from Fort Snelling, built a cabin at the mouth of the cave.
+          atS: 12.2
+          durationS: 10.33
+        - text: His name was Pierre Parrant.
+          atS: 22.92
+          durationS: 2.03
+        - text: Everybody called him Pig's Eye.
+          atS: 25.76
+          durationS: 1.97
+        - text: Two years later the army at Fort Snelling threw him out.
+          atS: 28.43
+          durationS: 3.54
+        - text: The cluster of cabins downstream went by two names.
+          atS: 32.3
+          durationS: 3.42
+        - text: The Great Marsh, or, after its best known inhabitant, Pig's Eye.
+          atS: 36.05
+          durationS: 4.35
+        - text: Then a Catholic priest, Father Lucien Galtier, built a chapel on the bluff and named it for Saint Paul.
+          atS: 40.79
+          durationS: 6.38
+        - text: The name stuck.
+          atS: 47.5
+          durationS: 1.2
+        - text: The cave did not.
+          atS: 48.9
+          durationS: 1.28
+        - text: Its entrance was buried in 1960, when Shepard Road was built.
+          atS: 50.56
+          durationS: 4.25
+        - text: The city came within a priest of being called Pig's Eye.
+          atS: 55.19
+          durationS: 3.41

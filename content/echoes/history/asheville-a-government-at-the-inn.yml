@@ -1,0 +1,102 @@
+# Drafted by Claude Code (2026-11-09) for Asheville, North Carolina.
+# Listening spot: The front drive and entrance terrace of the Grove Park Inn (a working hotel; public areas only).
+# Position: Wikidata Q5611436 (The Omni Grove Park Inn, 35.620556, -82.542222) (medium confidence; a large building, so a wide radius).
+id: asheville-a-government-at-the-inn
+title: "A Government at the Inn"
+summary: "The Grove Park Inn opened in 1913. Its guests included FDR, Fitzgerald, and Manuel Quezon, who ran a government in exile here."
+place: "The Omni Grove Park Inn, Macon Avenue, Asheville, North Carolina"
+at: { lat: 35.6206, lng: -82.5421 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 52
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [asheville, grove-park-inn, philippines, world-war-ii]
+teaser: "This stone hotel went up in less than a year. Decades later, a whole country's government moved in."
+script: |
+  Look at the great stone hotel on the side of Sunset Mountain. It went up in less than a year. Four hundred laborers and twenty Italian stonemasons, working ten-hour days.
+
+  It opened on the twelfth of July, 1913. The Secretary of State, William Jennings Bryan, gave the opening address, and said the inn was built for the ages.
+
+  The guests over the years included President Franklin Roosevelt, and the writer F. Scott Fitzgerald.
+
+  And a guest who brought a whole government with him. Manuel Quezon, the exiled president of the Philippines, set up the headquarters of a government in exile for the Philippines, here at the inn.
+
+  A nation's government, run for a while from a resort in the mountains of North Carolina.
+pronunciations:
+  - written: Quezon
+    say: KAY-sohn
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Look at the great stone hotel on the side of Sunset Mountain."
+    source: 1
+    quote: "the Grove Park Inn opened on Sunset Mountain near Asheville."
+  - says: "It went up in less than a year."
+    source: 1
+    quote: "Construction on the building with its original 156 guest rooms took less than a year"
+  - says: "Four hundred laborers and twenty Italian stonemasons, working ten-hour days."
+    source: 1
+    quote: "the large crew of 400 laborers and 20 Italian stonemasons who worked 10-hour days"
+  - says: "It opened on the twelfth of July, 1913."
+    source: 1
+    quote: "On July 12, 1913 , the Grove Park Inn opened on Sunset Mountain near Asheville."
+  - says: "The Secretary of State, William Jennings Bryan, gave the opening address, and said the inn was built for the ages."
+    source: 1
+    quote: "Secretary of State William Jennings Bryan delivered an opening address officially welcoming guests and indicating that the inn was \"built for the ages.\""
+  - says: "The guests over the years included President Franklin Roosevelt, and the writer F. Scott Fitzgerald."
+    source: 1
+    quote: "including President Franklin D. Roosevelt, writer F. Scott Fitzgerald"
+  - says: "Manuel Quezon, the exiled president of the Philippines, set up the headquarters of a government in exile for the Philippines, here at the inn."
+    source: 1
+    quote: "exiled Philippine president Manuel L. Quezon, who established the headquarters of a government-in-exile for the Philippines at the inn."
+  - says: "A nation's government, run for a while from a resort in the mountains of North Carolina."
+    source: 1
+    quote: "who established the headquarters of a government-in-exile for the Philippines at the inn."
+sources:
+  - title: "The Grove Park Inn and Its Host of Prominent Guests"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2016/07/12/grove-park-inn-and-its-host-prominent-guests
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/asheville-a-government-at-the-inn/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.2
+    audioBytes: 835543
+    transcript:
+      totalS: 52.2
+      lines:
+        - text: Look at the great stone hotel on the side of Sunset Mountain.
+          atS: 0
+          durationS: 3.58
+        - text: It went up in less than a year.
+          atS: 4.09
+          durationS: 1.61
+        - text: Four hundred laborers and twenty Italian stonemasons, working ten-hour days.
+          atS: 6.21
+          durationS: 5.6
+        - text: It opened on the twelfth of July, 1913.
+          atS: 12.41
+          durationS: 3.2
+        - text: The Secretary of State, William Jennings Bryan, gave the opening address, and said the inn was built for the ages.
+          atS: 16.22
+          durationS: 7.44
+        - text: The guests over the years included President Franklin Roosevelt, and the writer F.
+          atS: 24.1
+          durationS: 5.77
+        - text: Scott Fitzgerald.
+          atS: 29.9
+          durationS: 1.47
+        - text: And a guest who brought a whole government with him.
+          atS: 32.18
+          durationS: 2.9
+        - text: Manuel Quezon, the exiled president of the Philippines, set up the headquarters of a government in exile for the Philippines, here at the inn.
+          atS: 36.04
+          durationS: 9.74
+        - text: A nation's government, run for a while from a resort in the mountains of North Carolina.
+          atS: 46.73
+          durationS: 5.42

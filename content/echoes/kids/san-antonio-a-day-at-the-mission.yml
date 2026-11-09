@@ -1,0 +1,134 @@
+# Drafted by Claude Code (2026-11-09) for San Antonio, Texas.
+# Listening spot: The public mission grounds inside the walls of Mission San Jose, near the rooms built into the wall.
+# Position: Wikidata Q6878730 (Mission San Jose, 29.36203832, -98.47978299), moved about 50 m northwest inside the walled grounds so it does not sit on the Rose Window echo (medium confidence).
+id: san-antonio-a-day-at-the-mission
+title: "A Day at the Mission"
+summary: "A children's telling of daily life at Mission San Jose: church bells, corn porridge, goat stew, fishing in the ditch, and stories at night."
+place: "Mission San Jose, 6701 San Jose Drive, San Antonio, Texas"
+at: { lat: 29.3623, lng: -98.4802 }
+triggerRadiusKm: 0.06
+category: kids
+format: short
+durationS: 62
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+voice: UrTldiIxfedDl9tlesyS
+tags: [san-antonio, missions, san-jose, world-heritage, kids]
+teaser: "Bells for waking, bells for lunch, and fishing in the water ditch."
+script: |
+  Look around this big square inside the mission walls. Families lived here, in their own quarters. Three hundred and fifty people once lived in eighty-four little two-room apartments.
+
+  Their day was planned from start to finish, and bells told everyone what to do. The church bells rang three times a day.
+
+  After the sunrise church service, breakfast was corn porridge called atole, and dried meat called charque.
+
+  Then the men and boys went to work in the fields. The women and girls cooked, swept the dirt floors, and got wool ready for spinning. They even went fishing in the irrigation ditch outside the walls.
+
+  At noon the bells rang again. Lunch was the biggest meal. Maybe a bowl of goat stew, with fresh tortillas. After lunch came a long rest, called a siesta.
+
+  And in the evening there was singing, games, dancing and stories.
+
+  Then at sunrise, the bells started the whole day over again.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Three hundred and fifty people once lived in eighty-four little two-room apartments."
+    source: 1
+    quote: "At that time there were 350 Indians residing in 84 two-room apartments."
+  - says: "Their day was planned from start to finish, and bells told everyone what to do."
+    source: 1
+    quote: "The neophytes’ new roles and duties in the mission were very regimented."
+  - says: "The church bells rang three times a day."
+    source: 1
+    quote: "Church bells called them to worship three times a day."
+  - says: "After the sunrise church service, breakfast was corn porridge called atole, and dried meat called charque."
+    source: 1
+    quote: "Following sunrise mass, families returned to their quarters for corn atole (mush) and charque (jerky)."
+  - says: "Then the men and boys went to work in the fields."
+    source: 1
+    quote: "After breakfast, the men and boys worked in the labores (fields)"
+  - says: "The women and girls cooked, swept the dirt floors, and got wool ready for spinning."
+    source: 1
+    quote: "The women and girls prepared food, swept the dirt floors, carded wool, and fished in the irrigation ditch outside the walls"
+  - says: "They even went fishing in the irrigation ditch outside the walls."
+    source: 1
+    quote: "fished in the irrigation ditch outside the walls"
+  - says: "At noon the bells rang again."
+    source: 1
+    quote: "The bells rang out at noon, calling everyone back to the church for prayers."
+  - says: "Lunch was the biggest meal."
+    source: 1
+    quote: "The main meal of the day was lunch, perhaps a bowl of goat stew and fresh baked tortillas."
+  - says: "Maybe a bowl of goat stew, with fresh tortillas."
+    source: 1
+    quote: "perhaps a bowl of goat stew and fresh baked tortillas."
+  - says: "After lunch came a long rest, called a siesta."
+    source: 1
+    quote: "The afternoon siesta followed the meal and most activity subsided for several hours."
+  - says: "And in the evening there was singing, games, dancing and stories."
+    source: 1
+    quote: "After dinner, recreational time for singing, games, dances, storytelling, and drama filled the evening."
+  - says: "Then at sunrise, the bells started the whole day over again."
+    source: 1
+    quote: "The next work day began at sunrise to start the regimented routine all over again."
+sources:
+  - title: "Mission San Jose, San Antonio Missions National Historical Park"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/saan/planyourvisit/sanjose.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/san-antonio-a-day-at-the-mission/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 62.3
+    audioBytes: 998129
+    transcript:
+      totalS: 62.3
+      lines:
+        - text: Look around this big square inside the mission walls.
+          atS: 0
+          durationS: 3.11
+        - text: Families lived here, in their own quarters.
+          atS: 3.39
+          durationS: 2.47
+        - text: Three hundred and fifty people once lived in eighty-four little two-room apartments.
+          atS: 6.3
+          durationS: 4.9
+        - text: Their day was planned from start to finish, and bells told everyone what to do.
+          atS: 11.64
+          durationS: 4.6
+        - text: The church bells rang three times a day.
+          atS: 17.05
+          durationS: 2.61
+        - text: After the sunrise church service, breakfast was corn porridge called atole, and dried meat called charque.
+          atS: 20.11
+          durationS: 7.13
+        - text: Then the men and boys went to work in the fields.
+          atS: 27.68
+          durationS: 2.6
+        - text: The women and girls cooked, swept the dirt floors, and got wool ready for spinning.
+          atS: 30.6
+          durationS: 5.1
+        - text: They even went fishing in the irrigation ditch outside the walls.
+          atS: 36.08
+          durationS: 3.68
+        - text: At noon the bells rang again.
+          atS: 40.21
+          durationS: 2.16
+        - text: Lunch was the biggest meal.
+          atS: 42.88
+          durationS: 1.85
+        - text: Maybe a bowl of goat stew, with fresh tortillas.
+          atS: 45.1
+          durationS: 3.22
+        - text: After lunch came a long rest, called a siesta.
+          atS: 49.27
+          durationS: 3.23
+        - text: And in the evening there was singing, games, dancing and stories.
+          atS: 52.94
+          durationS: 4.32
+        - text: Then at sunrise, the bells started the whole day over again.
+          atS: 57.77
+          durationS: 4.55

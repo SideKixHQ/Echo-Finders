@@ -1,0 +1,144 @@
+# Drafted by Claude Code (2026-11-09) for Jerome, Arizona.
+# Listening spot: A Main Street pull-off or sidewalk with a view down Cleopatra Hill to the Verde Valley.
+# Position: Main Street near Wikidata Q124516520 (Sliding Jail, 34.7507, -112.1146), where the street looks out over the Verde Valley; placed by hand (low-medium confidence; a town-wide story).
+id: jerome-a-ghost-town-on-purpose
+title: "A Ghost Town on Purpose"
+summary: "Jerome peaked at 10,000 to 15,000 people in the 1920s. After the mine closed in 1953, the few who stayed sold it as a historic ghost town."
+place: "Main Street overlook, Jerome, Arizona"
+at: { lat: 34.7505, lng: -112.1148 }
+triggerRadiusKm: 0.1
+category: history
+format: short
+durationS: 73
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [jerome, ghost-town, mining, copper, old-west]
+teaser: "When the mine closed, the few dozen people left decided to sell the one thing they still had."
+script: |
+  Look out over the Verde Valley, then back up at this town, clinging to Cleopatra Hill.
+
+  Jerome grew from a settlement of tents into a roaring mining community. For a while it was known as the wickedest town in the west. It was once the fourth largest city in the Arizona Territory.
+
+  In the 1920s, when the copper mines were at their richest, more than ten thousand people lived here. Some counts say fifteen thousand.
+
+  The town lived by the price of copper. The Second World War pushed demand up. After the war, demand slowed. In 1953 the signature mine closed.
+
+  That left somewhere between fifty and a hundred hardy souls. And they had an idea. If they could not sell copper anymore, they would sell the town itself. They promoted Jerome as a historic ghost town.
+
+  It worked. By 2010 the full-time population was four hundred and forty-four, and the town fills with tourists many days of the year.
+
+  A ghost town, on purpose. The ghosts were the business plan.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Look out over the Verde Valley, then back up at this town, clinging to Cleopatra Hill."
+    source: 2
+    quote: "on Cleopatra Hill overlooking the Verde Valley"
+  - says: "Jerome grew from a settlement of tents into a roaring mining community."
+    source: 1
+    quote: "Jerome grew from a settlement of tents to a roaring mining community in the late 19th Century."
+  - says: "For a while it was known as the wickedest town in the west."
+    source: 1
+    quote: "Once known as the wickedest town in the west"
+  - says: "It was once the fourth largest city in the Arizona Territory."
+    source: 1
+    quote: "Jerome was once the fourth largest city in the Arizona Territory."
+  - says: "In the 1920s, when the copper mines were at their richest, more than ten thousand people lived here."
+    source: 2
+    quote: "In the heyday of its rich copper mines in the 1920s, more than 10,000 people found a place to live there."
+  - says: "Some counts say fifteen thousand."
+    source: 1
+    quote: "The population peaked at 15,000 in the 1920's."
+  - says: "The Second World War pushed demand up."
+    source: 1
+    quote: "World War II brought increased demand for copper, but after the war, demand slowed."
+  - says: "After the war, demand slowed."
+    source: 1
+    quote: "but after the war, demand slowed."
+  - says: "In 1953 the signature mine closed."
+    source: 1
+    quote: "Dependent on the copper market, the signature mine closed in 1953."
+  - says: "That left somewhere between fifty and a hundred hardy souls."
+    source: 1
+    quote: "The remaining 50 to 100 hardy souls promoted the town as a historic ghost town."
+  - says: "They promoted Jerome as a historic ghost town."
+    source: 1
+    quote: "The remaining 50 to 100 hardy souls promoted the town as a historic ghost town."
+  - says: "By 2010 the full-time population was four hundred and forty-four, and the town fills with tourists many days of the year."
+    source: 2
+    quote: "By 2010, the fulltime population was 444, but it fills with tourists many days of the year."
+sources:
+  - title: "The Little Daisy Mine headframe in the once-prosperous copper-mining town of Jerome, Arizona (Carol M. Highsmith Archive, catalog record)"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/2018703309/
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "An unusual start to the main shopping street in the old mining boomtown of Jerome (Carol M. Highsmith Archive, catalog record)"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/2018701771/
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/jerome-a-ghost-town-on-purpose/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72.6
+    audioBytes: 1163223
+    transcript:
+      totalS: 72.6
+      lines:
+        - text: Look out over the Verde Valley, then back up at this town, clinging to Cleopatra Hill.
+          atS: 0
+          durationS: 5.32
+        - text: Jerome grew from a settlement of tents into a roaring mining community.
+          atS: 5.92
+          durationS: 4.45
+        - text: For a while it was known as the wickedest town in the west.
+          atS: 11.18
+          durationS: 3.4
+        - text: It was once the fourth largest city in the Arizona Territory.
+          atS: 15.53
+          durationS: 3.96
+        - text: In the 1920s, when the copper mines were at their richest, more than ten thousand people lived here.
+          atS: 20.3
+          durationS: 6.41
+        - text: Some counts say fifteen thousand.
+          atS: 27.41
+          durationS: 2.63
+        - text: The town lived by the price of copper.
+          atS: 30.56
+          durationS: 2.3
+        - text: The Second World War pushed demand up.
+          atS: 33.46
+          durationS: 2.55
+        - text: After the war, demand slowed.
+          atS: 36.19
+          durationS: 2.58
+        - text: In 1953 the signature mine closed.
+          atS: 39.58
+          durationS: 3.04
+        - text: That left somewhere between fifty and a hundred hardy souls.
+          atS: 42.9
+          durationS: 3.78
+        - text: And they had an idea.
+          atS: 47.07
+          durationS: 1.4
+        - text: If they could not sell copper anymore, they would sell the town itself.
+          atS: 48.8
+          durationS: 3.84
+        - text: They promoted Jerome as a historic ghost town.
+          atS: 53.15
+          durationS: 3.31
+        - text: It worked.
+          atS: 56.97
+          durationS: 0.89
+        - text: By 2010 the full-time population was four hundred and forty-four, and the town fills with tourists many days of the year.
+          atS: 58.47
+          durationS: 8.6
+        - text: A ghost town, on purpose.
+          atS: 67.67
+          durationS: 2.19
+        - text: The ghosts were the business plan.
+          atS: 70.68
+          durationS: 1.95

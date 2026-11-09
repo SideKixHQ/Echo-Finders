@@ -1,0 +1,128 @@
+# Drafted by Claude Code (2026-11-09) for Salem, Massachusetts.
+# Listening spot: Public sidewalk on Essex Street in front of the house.
+# Position: Approximate Essex Street frontage near the Derby Street end, from the park's published address; no coordinate service returned this house (medium-low confidence).
+id: salem-a-life-in-one-house
+title: "A Life in One House"
+summary: "Sarah Narbonne was born in this 1675 house and lived in it her whole life, dying at 101 in 1895."
+place: "Narbonne House, 71 Essex Street, Salem Maritime National Historical Park, Salem, Massachusetts"
+at: { lat: 42.52205, lng: -70.8879 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 56
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [salem, salem-maritime, narbonne-house]
+teaser: "She was born in this house and lived in it for a hundred and one years."
+script: |
+  Look at the plain house with the steep pointed roof. The taller part is the original, built in 1675 for a butcher named Thomas Ives.
+
+  It still has its original peaked roof and its original brick chimney.
+
+  The Park Service calls it a witness house to the witch trials of 1692.
+
+  But it is named for Sarah Narbonne. Her grandfather bought it in 1780.
+
+  Sarah was born in it, and lived in it for her entire life. That life stretched nearly the length of the nineteenth century.
+
+  She died in 1895, at the age of a hundred and one. Her unmarried daughter Mary lived on here until 1905.
+
+  The house has not been restored to any single moment. It is kept as a study house, to show how it changed.
+
+  Nearly three hundred years of people living in it, and two hundred of those years were one family.
+pronunciations:
+  - written: "Narbonne"
+    say: "nar-BONN"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The taller part is the original, built in 1675 for a butcher named Thomas Ives."
+    source: 1
+    quote: "The Narbonne House was built in 1675 for butcher Thomas Ives."
+  - says: "It still has its original peaked roof and its original brick chimney."
+    source: 1
+    quote: "It still has its original pointed, or peaked, roof and its original brick chimney."
+  - says: "The Park Service calls it a witness house to the witch trials of 1692."
+    source: 2
+    quote: "Visit this \"witness house\" to the 1692 witch trials"
+  - says: "But it is named for Sarah Narbonne."
+    source: 1
+    quote: "The house is named after Sarah Narbonne"
+  - says: "Her grandfather bought it in 1780."
+    source: 1
+    quote: "whose grandfather Jonathan Andrews purchased the house in 1780."
+  - says: "Sarah was born in it, and lived in it for her entire life."
+    source: 1
+    quote: "Sarah was born in the Narbonne house, and lived there for her entire life, which stretched nearly the length of the 19th century."
+  - says: "She died in 1895, at the age of a hundred and one."
+    source: 1
+    quote: "She died in 1895 at the age of 101"
+  - says: "Her unmarried daughter Mary lived on here until 1905."
+    source: 1
+    quote: "her unmarried daughter Mary continued to live in the house until her death in 1905."
+  - says: "The house has not been restored to any single moment."
+    source: 1
+    quote: "the Narbonne House has not been restored to one time period."
+  - says: "Nearly three hundred years of people living in it, and two hundred of those years were one family."
+    source: 1
+    quote: "its history of nearly 300 years of continued occupation, 200 years of which are members of one family."
+sources:
+  - title: "Narbonne House"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/narbonne-house.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Places - Salem Maritime National Historical Park"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/sama/learn/historyculture/places.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/salem-a-life-in-one-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55.7
+    audioBytes: 891967
+    transcript:
+      totalS: 55.7
+      lines:
+        - text: Look at the plain house with the steep pointed roof.
+          atS: 0
+          durationS: 3.01
+        - text: The taller part is the original, built in 1675 for a butcher named Thomas Ives.
+          atS: 3.7
+          durationS: 6.59
+        - text: It still has its original peaked roof and its original brick chimney.
+          atS: 10.81
+          durationS: 4.09
+        - text: The Park Service calls it a witness house to the witch trials of 1692.
+          atS: 15.59
+          durationS: 4.87
+        - text: But it is named for Sarah Narbonne.
+          atS: 20.63
+          durationS: 2.3
+        - text: Her grandfather bought it in 1780.
+          atS: 23.21
+          durationS: 2.72
+        - text: Sarah was born in it, and lived in it for her entire life.
+          atS: 26.2
+          durationS: 3.8
+        - text: That life stretched nearly the length of the nineteenth century.
+          atS: 30.24
+          durationS: 3.6
+        - text: She died in 1895, at the age of a hundred and one.
+          atS: 34.17
+          durationS: 3.6
+        - text: Her unmarried daughter Mary lived on here until 1905.
+          atS: 38.09
+          durationS: 4.12
+        - text: The house has not been restored to any single moment.
+          atS: 42.6
+          durationS: 3.32
+        - text: It is kept as a study house, to show how it changed.
+          atS: 46.2
+          durationS: 3.34
+        - text: Nearly three hundred years of people living in it, and two hundred of those years were one family.
+          atS: 49.75
+          durationS: 5.93

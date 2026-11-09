@@ -1,0 +1,193 @@
+# Drafted by Claude Code (2026-11-09) for Nashville.
+# Listening spot: Sidewalk at Sixth Avenue North and Union Street, outside the hotel, facing the capitol hill.
+# Position: Wikidata Q2589991 (Hermitage Hotel) (high confidence); listener on the public sidewalk.
+id: nashville-yellow-roses-and-red
+title: "Yellow Roses and Red"
+summary: "In 1920 both sides of the suffrage fight set up in the Hermitage Hotel. Tennessee ratified when Harry Burn obeyed his mother."
+place: "Hermitage Hotel, Sixth Avenue North at Union Street, Nashville, Tennessee"
+at: { lat: 36.16373, lng: -86.78234 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 87
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [nashville, downtown, suffrage, 19th-amendment, hermitage-hotel]
+teaser: "In the summer of 1920, the vote for half the country was fought out in this hotel lobby."
+script: |
+  This hotel stands across the street from the state capitol. In the summer of 1920, it was the headquarters of a war.
+
+  Thirty-five states had ratified the amendment giving women the vote. One more was needed. Tennessee looked like the best, and maybe the only, hope.
+
+  Both sides moved in here. Carrie Chapman Catt, who led the national suffrage campaign, took Suite 309. The leader of the anti-suffrage side took rooms too.
+
+  Suffragists wore yellow roses in their lapels. Their opponents wore red.
+
+  The lobby became known as the third house of the legislature.
+
+  Up on the eighth floor, anti-suffrage lobbyists ran a suite as a speakeasy, in defiance of Prohibition. The whiskey was free for legislators. People called it the Jack Daniel's Suite.
+
+  The Senate passed the amendment. In the House, the vote deadlocked.
+
+  Then a twenty-four year old representative, Harry Burn, changed his vote to aye. He had a letter in his pocket from his mother. Don't forget to be a good boy, she wrote, and help Mrs. Catt.
+
+  Back here at the hotel, Catt heard singing coming closer. She looked out and saw people in yellow running down the hill with the news.
+
+  Thirty-six states. And the last vote came from a son who did what his mother told him.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "This hotel stands across the street from the state capitol."
+    source: 1
+    quote: "Located across the street from the state capitol building"
+  - says: "In the summer of 1920, it was the headquarters of a war."
+    source: 1
+    quote: "Most notably, the final drama of the 19th Amendment ratification fight played out here during the summer of 1920."
+  - says: "Thirty-five states had ratified the amendment giving women the vote."
+    source: 1
+    quote: "By August of 1920, thirty-five states had ratified the women’s suffrage amendment."
+  - says: "One more was needed."
+    source: 1
+    quote: "One more was needed for it to become law."
+  - says: "Tennessee looked like the best, and maybe the only, hope."
+    source: 1
+    quote: "Tennessee looked like suffragists’ best (and possibly only) hope."
+  - says: "Carrie Chapman Catt, who led the national suffrage campaign, took Suite 309."
+    source: 1
+    quote: "Carrie Chapman Catt , the president of the National American Woman Suffrage Association (NAWSA), moved into Suite 309."
+  - says: "The leader of the anti-suffrage side took rooms too."
+    source: 1
+    quote: "Josephine Pearson, leader of the anti-suffrage forces in Tennessee, also took rooms."
+  - says: "Suffragists wore yellow roses in their lapels."
+    source: 1
+    quote: "“Suffs” wore yellow roses, the symbol of the movement , in their lapels. “Antis” sported red ones."
+  - says: "Their opponents wore red."
+    source: 1
+    quote: "“Antis” sported red ones."
+  - says: "The lobby became known as the third house of the legislature."
+    source: 1
+    quote: "The hotel lobby became known as the “third house” of the nearby legislature."
+  - says: "Up on the eighth floor, anti-suffrage lobbyists ran a suite as a speakeasy, in defiance of Prohibition."
+    source: 1
+    quote: "Anti-suffrage lobbyists booked a suite on the eighth floor. In defiance of Prohibition, they were operating it as the hotel’s speakeasy."
+  - says: "The whiskey was free for legislators."
+    source: 1
+    quote: "The lobbyists poured free whiskey and bourbon for pro- and anti-suffrage legislators."
+  - says: "People called it the Jack Daniel's Suite."
+    source: 1
+    quote: "Soon the rooms earned the nickname of \"Jack Daniel's Suite.\""
+  - says: "The Senate passed the amendment."
+    source: 1
+    quote: "By August 18, the Tennessee Senate had passed the amendment, but the House still had to vote on it."
+  - says: "In the House, the vote deadlocked."
+    source: 1
+    quote: "At first, the vote deadlocked."
+  - says: "Then a twenty-four year old representative, Harry Burn, changed his vote to aye."
+    source: 1
+    quote: "24-year-old representative Harry Burn changed his vote to “aye.”"
+  - says: "He had a letter in his pocket from his mother."
+    source: 1
+    quote: "It turned out he had a letter in his pocket from his mother, Febb Burn."
+  - says: "Don't forget to be a good boy, she wrote, and help Mrs. Catt."
+    source: 1
+    quote: "“Don’t forget to be a good boy and help Mrs. Catt.”"
+  - says: "Back here at the hotel, Catt heard singing coming closer."
+    source: 1
+    quote: "Back at the Hermitage, Carrie Chapman Catt heard singing and cheering coming closer."
+  - says: "She looked out and saw people in yellow running down the hill with the news."
+    source: 1
+    quote: "She looked out the window and saw a stream of figures—wearing yellow for suffrage—running down the hill to give her the news."
+  - says: "Thirty-six states."
+    source: 1
+    quote: "The 19th Amendment was ratified by 36 states."
+  - says: "And the last vote came from a son who did what his mother told him."
+    source: 1
+    quote: "Burn decided to listen to his mother."
+sources:
+  - title: "Hermitage Hotel"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/hermitage-hotel.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-yellow-roses-and-red/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 86.8
+    audioBytes: 1390593
+    transcript:
+      totalS: 86.8
+      lines:
+        - text: This hotel stands across the street from the state capitol.
+          atS: 0
+          durationS: 3.22
+        - text: In the summer of 1920, it was the headquarters of a war.
+          atS: 3.82
+          durationS: 3.63
+        - text: Thirty-five states had ratified the amendment giving women the vote.
+          atS: 7.89
+          durationS: 3.87
+        - text: One more was needed.
+          atS: 12.27
+          durationS: 1.43
+        - text: Tennessee looked like the best, and maybe the only, hope.
+          atS: 14.14
+          durationS: 3.65
+        - text: Both sides moved in here.
+          atS: 18.29
+          durationS: 1.82
+        - text: Carrie Chapman Catt, who led the national suffrage campaign, took Suite 309.
+          atS: 20.79
+          durationS: 5.77
+        - text: The leader of the anti-suffrage side took rooms too.
+          atS: 27.16
+          durationS: 3.22
+        - text: Suffragists wore yellow roses in their lapels.
+          atS: 30.96
+          durationS: 3.3
+        - text: Their opponents wore red.
+          atS: 34.65
+          durationS: 1.72
+        - text: The lobby became known as the third house of the legislature.
+          atS: 36.75
+          durationS: 3.49
+        - text: Up on the eighth floor, anti-suffrage lobbyists ran a suite as a speakeasy, in defiance of Prohibition.
+          atS: 40.68
+          durationS: 6.44
+        - text: The whiskey was free for legislators.
+          atS: 47.73
+          durationS: 2.33
+        - text: People called it the Jack Daniel's Suite.
+          atS: 50.57
+          durationS: 2.33
+        - text: The Senate passed the amendment.
+          atS: 53.51
+          durationS: 1.78
+        - text: In the House, the vote deadlocked.
+          atS: 55.73
+          durationS: 2.3
+        - text: Then a twenty-four year old representative, Harry Burn, changed his vote to aye.
+          atS: 58.41
+          durationS: 5.25
+        - text: He had a letter in his pocket from his mother.
+          atS: 64.26
+          durationS: 2.4
+        - text: Don't forget to be a good boy, she wrote, and help Mrs.
+          atS: 67.36
+          durationS: 3.37
+        - text: Catt.
+          atS: 70.76
+          durationS: 0.58
+        - text: Back here at the hotel, Catt heard singing coming closer.
+          atS: 72.64
+          durationS: 3.47
+        - text: She looked out and saw people in yellow running down the hill with the news.
+          atS: 76.63
+          durationS: 3.95
+        - text: Thirty-six states.
+          atS: 81.08
+          durationS: 1.54
+        - text: And the last vote came from a son who did what his mother told him.
+          atS: 82.84
+          durationS: 4.01

@@ -1,0 +1,141 @@
+# Drafted by Claude Code (2026-11-09) for Charlotte.
+# Listening spot: West Trade Street sidewalk in front of the Charles R. Jonas Federal Building, at Mint Street.
+# Position: West Trade Street at Mint Street; the NR nomination bounds the federal building by West Trade, Mint and West Fourth Streets. Point estimated from the street grid, not a fetched coordinate (medium-low confidence, check on a map).
+id: charlotte-the-mint-that-moved
+title: "The Mint That Moved"
+summary: "Charlotte's gold mint stood on this block until the 1930s, when citizens paid to take it down and rebuild it as an art museum."
+place: "Charles R. Jonas Federal Building, West Trade Street at Mint Street, Charlotte, North Carolina"
+at: { lat: 35.22895, lng: -80.8461 }
+triggerRadiusKm: 0.06
+category: built
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charlotte, uptown, gold, mint, museum]
+teaser: "Mint Street is still here. The mint is not."
+script: |
+  This federal building stands on the site of Charlotte's branch of the United States Mint. The street beside it is still called Mint Street.
+
+  For years, gold from the mines around Charlotte went all the way to Philadelphia to be made into coins.
+
+  So much came in that Congress opened a branch here. It started work in December 1837, and it only ever made gold coins.
+
+  It was designed by William Strickland, one of the best known architects in the country.
+
+  By the 1930s the government wanted this block for a bigger post office, and the mint was in the way. In 1932 it faced demolition.
+
+  Instead, a group of citizens led by Mary Myers Dwelle paid to take it apart and rebuild it in the Eastover neighborhood.
+
+  It opened again on the first of June, 1936, a century after it was first dedicated. This time it was an art museum, the first in North Carolina.
+
+  It is still there, on Randolph Road.
+
+  So the coins came from here, and the building that made them went to live somewhere quieter.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "This federal building stands on the site of Charlotte's branch of the United States Mint."
+    source: 1
+    quote: "is significant due to its loca- tion on the site of the first branch of the U. S. Mint built in 1836."
+  - says: "The street beside it is still called Mint Street."
+    source: 2
+    quote: "Congress opened new mints in Charlotte (on, wait for it, Mint Street)"
+  - says: "For years, gold from the mines around Charlotte went all the way to Philadelphia to be made into coins."
+    source: 2
+    quote: "At first, it went to Philadelphia"
+  - says: "So much came in that Congress opened a branch here."
+    source: 2
+    quote: "the U.S. Mint couldn’t keep up. Hence, Congress opened new mints in Charlotte"
+  - says: "It started work in December 1837, and it only ever made gold coins."
+    source: 2
+    quote: "which opened on December 4, 1837."
+  - says: "It started work in December 1837, and it only ever made gold coins."
+    source: 3
+    quote: "the Charlotte mint only produced gold currency."
+  - says: "It was designed by William Strickland, one of the best known architects in the country."
+    source: 3
+    quote: "Architect William Strickland designed the mint in the Federal style"
+  - says: "By the 1930s the government wanted this block for a bigger post office, and the mint was in the way."
+    source: 3
+    quote: "When the expansion of a post office threatened the mint"
+  - says: "In 1932 it faced demolition."
+    source: 1
+    quote: "In 1932, the mint was threatened with the possibility of being demolished."
+  - says: "Instead, a group of citizens led by Mary Myers Dwelle paid to take it apart and rebuild it in the Eastover neighborhood."
+    source: 3
+    quote: "Charlotte patron Mary Myers Dwelle led a group of citizens in financing the meticulous relocation of the mint to the exclusive Eastover area"
+  - says: "It opened again on the first of June, 1936, a century after it was first dedicated."
+    source: 3
+    quote: "It opened on June 1, 1936, a century after its original dedication, as part of the Mint Museum of Art."
+  - says: "This time it was an art museum, the first in North Carolina."
+    source: 1
+    quote: "where it was converted into North Carolina's first museum of art."
+  - says: "It is still there, on Randolph Road."
+    source: 2
+    quote: "It was eventually moved from its location Uptown to its current home on Randolph Road, where it serves as a branch of the Mint Museum of Art."
+sources:
+  - title: "Charles R. Jonas Federal Building, National Register of Historic Places Inventory Nomination Form"
+    publisher: "North Carolina State Historic Preservation Office (National Register of Historic Places nomination)"
+    url: https://files.nc.gov/historic-preservation/nr/MK0012.pdf
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Our Stint With the Mint"
+    publisher: "Our State"
+    url: https://www.ourstate.com/our-stint-with-the-mint/
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Branch U.S. Mint (L-5)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2024/01/11/branch-us-mint-l-5
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charlotte-the-mint-that-moved/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.1
+    audioBytes: 1105963
+    transcript:
+      totalS: 69.1
+      lines:
+        - text: This federal building stands on the site of Charlotte's branch of the United States Mint.
+          atS: 0
+          durationS: 4.95
+        - text: The street beside it is still called Mint Street.
+          atS: 5.39
+          durationS: 3.3
+        - text: For years, gold from the mines around Charlotte went all the way to Philadelphia to be made into coins.
+          atS: 9.07
+          durationS: 6.23
+        - text: So much came in that Congress opened a branch here.
+          atS: 15.74
+          durationS: 3.33
+        - text: It started work in December 1837, and it only ever made gold coins.
+          atS: 19.46
+          durationS: 5.87
+        - text: It was designed by William Strickland, one of the best known architects in the country.
+          atS: 25.77
+          durationS: 5.24
+        - text: By the 1930s the government wanted this block for a bigger post office, and the mint was in the way.
+          atS: 31.52
+          durationS: 6.65
+        - text: In 1932 it faced demolition.
+          atS: 39.13
+          durationS: 2.64
+        - text: Instead, a group of citizens led by Mary Myers Dwelle paid to take it apart and rebuild it in the Eastover neighborhood.
+          atS: 42.15
+          durationS: 7.35
+        - text: It opened again on the first of June, 1936, a century after it was first dedicated.
+          atS: 49.94
+          durationS: 6.19
+        - text: This time it was an art museum, the first in North Carolina.
+          atS: 56.56
+          durationS: 3.74
+        - text: It is still there, on Randolph Road.
+          atS: 60.63
+          durationS: 2.48
+        - text: So the coins came from here, and the building that made them went to live somewhere quieter.
+          atS: 63.55
+          durationS: 5.5

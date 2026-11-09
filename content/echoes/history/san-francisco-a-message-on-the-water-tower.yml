@@ -1,0 +1,144 @@
+# Drafted by Claude Code (2026-11-09) for San Francisco, California.
+# Listening spot: Anywhere on Alcatraz's public paths with the water tower in view; the island is reached only by the park's ferry.
+# Position: Wikidata Q131354 (Alcatraz Island, 37.8267199, -122.4228329); the water tower is on the island and visible from most of it, so the island point with a wide radius (medium-low confidence for the tower itself).
+id: san-francisco-a-message-on-the-water-tower
+title: "A Message on the Water Tower"
+summary: "During the 1969 to 1971 occupation of Alcatraz, American Indians painted a message on its water tower. It was repainted in 2012."
+place: "Water tower, Alcatraz Island, San Francisco, California"
+at: { lat: 37.82672, lng: -122.42298 }
+triggerRadiusKm: 0.15
+category: history
+format: short
+durationS: 66
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [san-francisco, alcatraz, native-american, red-power, civil-rights]
+teaser: "The graffiti on this tower was restored on purpose, by the people who painted it."
+script: |
+  Find the water tower, and read what is painted on it.
+
+  It went up in 1940, when this island was a federal prison. There was no fresh water source here, so every drop came by boat, twice a week. The tank held two hundred and fifty thousand gallons.
+
+  From 1969 to 1971, American Indians occupied Alcatraz. Nineteen months, the longest occupation of federal land in the country's history.
+
+  The water tower is one of the most visible landmarks in San Francisco Bay, so it was an ideal place for a message to the world. Standing on each other's shoulders, they painted the letters.
+
+  Peace and freedom. Welcome. Home of the free. Indian land.
+
+  The occupation is credited with launching a national American Indian civil rights movement.
+
+  When the National Park Service restored the water tower in 2012, it did not paint the words out. It invited the original occupiers and their families back, to paint them again.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It went up in 1940, when this island was a federal prison."
+    source: 1
+    quote: "Installed in 1940, the water tower stored 250,000 gallons"
+  - says: "when this island was a federal prison"
+    source: 1
+    quote: "When the US military transferred Alcatraz to the Federal Bureau of Prisons (BOP) in 1934"
+  - says: "There was no fresh water source here, so every drop came by boat, twice a week."
+    source: 1
+    quote: "With no fresh water source on the island"
+  - says: "so every drop came by boat, twice a week"
+    source: 1
+    quote: "of fresh water brought by boat twice weekly."
+  - says: "The tank held two hundred and fifty thousand gallons."
+    source: 1
+    quote: "the water tower stored 250,000 gallons"
+  - says: "From 1969 to 1971, American Indians occupied Alcatraz."
+    source: 2
+    quote: "In 1964, and again in 1969-1971, American Indian activists laid claim to Alcatraz Island."
+  - says: "Nineteen months, the longest occupation of federal land in the country's history."
+    source: 1
+    quote: "The 19-month protest from 1969 to 1971 became the longest occupation of Federal land in the US history"
+  - says: "The water tower is one of the most visible landmarks in San Francisco Bay, so it was an ideal place for a message to the world."
+    source: 1
+    quote: "The Alcatraz water tower is one of the most visible landmarks in San Francisco Bay. As such, it was an ideal place for American Indians who occupied the island to broadcast their message"
+  - says: "Standing on each other's shoulders, they painted the letters."
+    source: 1
+    quote: "Standing on each other’s shoulders to paint the letters"
+  - says: "Peace and freedom."
+    source: 1
+    quote: "Peace and freedom welcome – home of the free – Indian Land"
+  - says: "Home of the free."
+    source: 1
+    quote: "Peace and freedom welcome – home of the free – Indian Land"
+  - says: "Indian land."
+    source: 1
+    quote: "Peace and freedom welcome – home of the free – Indian Land"
+  - says: "The occupation is credited with launching a national American Indian civil rights movement."
+    source: 1
+    quote: "is credited with launching a national American Indian civil rights movement."
+  - says: "When the National Park Service restored the water tower in 2012, it did not paint the words out."
+    source: 1
+    quote: "When the National Park Service (NPS) restored the water tower in 2012, original occupiers and family members were invited to repaint the historic message."
+  - says: "It invited the original occupiers and their families back, to paint them again."
+    source: 1
+    quote: "original occupiers and family members were invited to repaint the historic message."
+sources:
+  - title: "12 - Water Tower (Alcatraz wayside)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/12-water-tower.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Native American Occupations of Alcatraz"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/alca/occupations.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-a-message-on-the-water-tower/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.2
+    audioBytes: 1060823
+    transcript:
+      totalS: 66.2
+      lines:
+        - text: Find the water tower, and read what is painted on it.
+          atS: 0
+          durationS: 3.25
+        - text: It went up in 1940, when this island was a federal prison.
+          atS: 3.53
+          durationS: 4.05
+        - text: There was no fresh water source here, so every drop came by boat, twice a week.
+          atS: 8.02
+          durationS: 5.32
+        - text: The tank held two hundred and fifty thousand gallons.
+          atS: 13.72
+          durationS: 3.41
+        - text: From 1969 to 1971, American Indians occupied Alcatraz.
+          atS: 17.46
+          durationS: 5.77
+        - text: Nineteen months, the longest occupation of federal land in the country's history.
+          atS: 23.74
+          durationS: 5.22
+        - text: The water tower is one of the most visible landmarks in San Francisco Bay, so it was an ideal place for a message to the world.
+          atS: 29.66
+          durationS: 7.75
+        - text: Standing on each other's shoulders, they painted the letters.
+          atS: 37.74
+          durationS: 3.6
+        - text: Peace and freedom.
+          atS: 41.73
+          durationS: 1.6
+        - text: Welcome.
+          atS: 43.65
+          durationS: 0.72
+        - text: Home of the free.
+          atS: 44.7
+          durationS: 1.43
+        - text: Indian land.
+          atS: 46.45
+          durationS: 1.16
+        - text: The occupation is credited with launching a national American Indian civil rights movement.
+          atS: 48.42
+          durationS: 5.22
+        - text: When the National Park Service restored the water tower in 2012, it did not paint the words out.
+          atS: 54.16
+          durationS: 6.4
+        - text: It invited the original occupiers and their families back, to paint them again.
+          atS: 61.07
+          durationS: 5.16

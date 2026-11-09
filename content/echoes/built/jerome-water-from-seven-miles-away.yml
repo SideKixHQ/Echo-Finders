@@ -1,0 +1,126 @@
+# Drafted by Claude Code (2026-11-09) for Jerome, Arizona.
+# Listening spot: A safe pull-off on Highway 89A about two miles southwest of Jerome, where the old pipe runs above the road and crosses a gulch on a flume. For passengers and pull-offs, not drivers.
+# Position: HAER AZ-91: original riveted pipe 'along U.S. Highway 89 Alternative about 2 miles southwest of Jerome'. Placed by measuring about 3 km southwest of Wikidata Q985248 (Jerome) toward the highway; the pipe and flume were not located on a map (low confidence; a drive echo with a wide radius, check before approval).
+id: jerome-water-from-seven-miles-away
+title: "Water From Seven Miles Away"
+summary: "Around 1900 Jerome's mining company piped spring water from up to seven miles away. Some of the old riveted pipe is still by the road."
+place: "Highway 89A, about two miles southwest of Jerome, Arizona"
+at: { lat: 34.73, lng: -112.135 }
+triggerRadiusKm: 0.4
+category: built
+format: short
+durationS: 62
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [jerome, water, mining, united-verde, drive]
+teaser: "Jerome sat on a fortune in copper and had no water. Look above the road for what fixed that."
+script: |
+  If you are on Highway 89 Alternate, about two miles southwest of Jerome, watch the hillside above the road. You may spot an old steel pipe, riveted together, that crosses a gulch on a flume.
+
+  Jerome sat over one of the richest deposits of copper ore in the Southwest. What it did not have was water.
+
+  At first, it was most likely hauled up by water wagon. Then, around 1900, the United Verde company built what was probably the first real water works in town. It tapped springs in the mountains above. By 1915, the farthest of them was seven miles away.
+
+  The pipe was riveted steel, made in the company's own shops. It carried the water to a row of wooden tanks on the side of the mountain. From there, gravity did the rest. Down to the mines, and down to the kitchens.
+
+  Very little of that first system is left. The wooden tanks were replaced with steel ones long ago. But a little of the old pipe is still out here, above the road.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "If you are on Highway 89 Alternate, about two miles southwest of Jerome, watch the hillside above the road."
+    source: 1
+    quote: "steel pipe may be seen along U.S. Highway 89 Alternative about 2 miles southwest of Jerome."
+  - says: "You may spot an old steel pipe, riveted together, that crosses a gulch on a flume."
+    source: 1
+    quote: "The pipe is above the present road and then crosses under it to an old flume that carries the pipe across a gulch."
+  - says: "Jerome sat over one of the richest deposits of copper ore in the Southwest."
+    source: 1
+    quote: "was over one of the richest deposits of copper ore in the Southwest."
+  - says: "At first, it was most likely hauled up by water wagon."
+    source: 1
+    quote: "It is likely that water was hauled to the town by water wagons."
+  - says: "Then, around 1900, the United Verde company built what was probably the first real water works in town."
+    source: 1
+    quote: "built what was probably the first real water works in the town."
+  - says: "It tapped springs in the mountains above."
+    source: 1
+    quote: "The original water works system for Jerome, built about 1900, took water from a series of springs in the mountains above the town."
+  - says: "By 1915, the farthest of them was seven miles away."
+    source: 1
+    quote: "In 1915 the furthest spring was 7 miles away."
+  - says: "The pipe was riveted steel, made in the company's own shops."
+    source: 1
+    quote: "The water was conducted to the town in a pipeline made of riveted steel in the shops of the United Verde Company"
+  - says: "It carried the water to a row of wooden tanks on the side of the mountain."
+    source: 1
+    quote: "The pipeline led to a series of wooden tanks on the side of the mountain."
+  - says: "From there, gravity did the rest."
+    source: 1
+    quote: "Water was distributed by gravity to consumers and mining operations below."
+  - says: "Very little of that first system is left."
+    source: 1
+    quote: "Very little of the ca. 1900 water supply system is extant."
+  - says: "The wooden tanks were replaced with steel ones long ago."
+    source: 1
+    quote: "have been replaced by steel water tanks."
+sources:
+  - title: "Jerome Water Supply System, HAER AZ-91"
+    publisher: "Library of Congress, Historic American Buildings Survey / Historic American Engineering Record"
+    url: https://www.loc.gov/item/az0629/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/jerome-water-from-seven-miles-away/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 61.7
+    audioBytes: 987680
+    transcript:
+      totalS: 61.7
+      lines:
+        - text: If you are on Highway 89 Alternate, about two miles southwest of Jerome, watch the hillside above the road.
+          atS: 0
+          durationS: 7.54
+        - text: You may spot an old steel pipe, riveted together, that crosses a gulch on a flume.
+          atS: 7.98
+          durationS: 5.26
+        - text: Jerome sat over one of the richest deposits of copper ore in the Southwest.
+          atS: 13.93
+          durationS: 4.78
+        - text: What it did not have was water.
+          atS: 19.23
+          durationS: 1.85
+        - text: At first, it was most likely hauled up by water wagon.
+          atS: 21.51
+          durationS: 3.24
+        - text: Then, around 1900, the United Verde company built what was probably the first real water works in town.
+          atS: 25.14
+          durationS: 6.99
+        - text: It tapped springs in the mountains above.
+          atS: 32.57
+          durationS: 2.34
+        - text: By 1915, the farthest of them was seven miles away.
+          atS: 35.35
+          durationS: 3.36
+        - text: The pipe was riveted steel, made in the company's own shops.
+          atS: 39.09
+          durationS: 3.61
+        - text: It carried the water to a row of wooden tanks on the side of the mountain.
+          atS: 43.03
+          durationS: 3.78
+        - text: From there, gravity did the rest.
+          atS: 47.25
+          durationS: 1.86
+        - text: Down to the mines, and down to the kitchens.
+          atS: 49.17
+          durationS: 2.43
+        - text: Very little of that first system is left.
+          atS: 51.77
+          durationS: 2.32
+        - text: The wooden tanks were replaced with steel ones long ago.
+          atS: 54.47
+          durationS: 3.27
+        - text: But a little of the old pipe is still out here, above the road.
+          atS: 57.96
+          durationS: 3.71

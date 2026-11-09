@@ -1,0 +1,142 @@
+# Drafted by Claude Code (2026-11-09) for Charlotte.
+# Listening spot: Public sidewalk outside the Dowd House historic site on Monument Street; the house is a park property.
+# Position: Wikidata Q49484081 (Dowd House Historic Site), a park in the old Camp Greene grounds (high confidence for the house; the listener stays on the street side).
+id: charlotte-a-city-of-tents
+title: "A City of Tents"
+summary: "Camp Greene trained more than 60,000 soldiers for the First World War, when Charlotte had about 34,000 people. A farmhouse survives."
+place: "Dowd House, Camp Greene, Monument Street, Charlotte, North Carolina"
+at: { lat: 35.22583, lng: -80.88194 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charlotte, west-charlotte, world-war-i, military, camp-greene]
+teaser: "In 1917 an army camp grew up out here that was bigger than Charlotte itself."
+script: |
+  This old farmhouse is one of the few things left of a city made of tents.
+
+  In 1917, with the country going to war, the Army built a training camp out here, three miles west of downtown. It took six weeks to put up.
+
+  It was named Camp Greene, after Nathanael Greene, the general who forced the British out of the Carolinas in the Revolution.
+
+  It grew to six thousand acres of forest and cotton fields, bought from families like the Dowds, who lived in this house.
+
+  Recruits dug five miles of trenches into the red soil, to practice the kind of fighting going on in Europe.
+
+  At its peak, more than sixty thousand soldiers lived here. In 1910, the whole of Charlotte had about thirty-four thousand people.
+
+  The first winter, rain and snow turned the camp into a red quagmire.
+
+  When the armistice came, on the eleventh of November 1918, the camp was already disappearing. Tents came down, trenches were filled in, and the land went back to civilian use.
+
+  A city of sixty thousand came and went. The Dowd family's farmhouse stayed.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "This old farmhouse is one of the few things left of a city made of tents."
+    source: 1
+    quote: "The only camp remnants that survive are the Dowd family’s farmhouse"
+  - says: "This old farmhouse is one of the few things left of a city made of tents."
+    source: 1
+    quote: "a village of Army-issued canvas tents"
+  - says: "In 1917, with the country going to war, the Army built a training camp out here, three miles west of downtown."
+    source: 1
+    quote: "which in 1917 springs up three miles west of the city’s core."
+  - says: "It took six weeks to put up."
+    source: 1
+    quote: "The camp takes just six weeks to erect"
+  - says: "It was named Camp Greene, after Nathanael Greene, the general who forced the British out of the Carolinas in the Revolution."
+    source: 1
+    quote: "the camp is named for Nathanael Greene, the Continental Army major general who forced the British out of the Carolinas during the Revolutionary War."
+  - says: "It grew to six thousand acres of forest and cotton fields, bought from families like the Dowds, who lived in this house."
+    source: 1
+    quote: "Its 2,500 acres of forest and cotton fields, bought from families like James Dowd, are eventually expanded to 6,000 acres"
+  - says: "It grew to six thousand acres of forest and cotton fields, bought from families like the Dowds, who lived in this house."
+    source: 2
+    quote: "6,000 acres, 1917-1919."
+  - says: "Recruits dug five miles of trenches into the red soil, to practice the kind of fighting going on in Europe."
+    source: 1
+    quote: "There is plenty of room to dig five miles of trenches, to simulate the preferred method of ground combat in Europe. Shovels tear into the red soil"
+  - says: "At its peak, more than sixty thousand soldiers lived here."
+    source: 1
+    quote: "At its peak, more than 60,000 soldiers live on base."
+  - says: "In 1910, the whole of Charlotte had about thirty-four thousand people."
+    source: 1
+    quote: "According to the 1910 census, 34,000 people called Charlotte home."
+  - says: "The first winter, rain and snow turned the camp into a red quagmire."
+    source: 1
+    quote: "in the first winter at Camp Greene, when heavy rains and snow make passage especially treacherous for men, beasts, and machines that struggle to navigate the red quagmire."
+  - says: "When the armistice came, on the eleventh of November 1918, the camp was already disappearing."
+    source: 1
+    quote: "When the armistice ends hostilities on November 11, 1918, Camp Greene is already in the process of disappearing."
+  - says: "Tents came down, trenches were filled in, and the land went back to civilian use."
+    source: 1
+    quote: "tents and barracks are being removed, trenches filled, and stables torn down as the land returns to civilian use."
+  - says: "A city of sixty thousand came and went."
+    source: 1
+    quote: "At its peak, more than 60,000 soldiers live on base."
+  - says: "The Dowd family's farmhouse stayed."
+    source: 1
+    quote: "The only camp remnants that survive are the Dowd family’s farmhouse"
+sources:
+  - title: "Camp Greene: Charlotte, N.C."
+    publisher: "Our State"
+    url: https://www.ourstate.com/camp-greene/
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Guide to North Carolina Highway Historical Markers, August 2026 Edition"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/nc-historical-markers-guide-summer-2026/open
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charlotte-a-city-of-tents/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.8
+    audioBytes: 1070436
+    transcript:
+      totalS: 66.8
+      lines:
+        - text: This old farmhouse is one of the few things left of a city made of tents.
+          atS: 0
+          durationS: 4.04
+        - text: In 1917, with the country going to war, the Army built a training camp out here, three miles west of downtown.
+          atS: 4.55
+          durationS: 7.04
+        - text: It took six weeks to put up.
+          atS: 11.97
+          durationS: 1.74
+        - text: It was named Camp Greene, after Nathanael Greene, the general who forced the British out of the Carolinas in the Revolution.
+          atS: 14.1
+          durationS: 7.13
+        - text: It grew to six thousand acres of forest and cotton fields, bought from families like the Dowds, who lived in this house.
+          atS: 21.47
+          durationS: 7.12
+        - text: Recruits dug five miles of trenches into the red soil, to practice the kind of fighting going on in Europe.
+          atS: 28.76
+          durationS: 6.29
+        - text: At its peak, more than sixty thousand soldiers lived here.
+          atS: 35.43
+          durationS: 3.49
+        - text: In 1910, the whole of Charlotte had about thirty-four thousand people.
+          atS: 39.44
+          durationS: 4.31
+        - text: The first winter, rain and snow turned the camp into a red quagmire.
+          atS: 44.19
+          durationS: 4.83
+        - text: When the armistice came, on the eleventh of November 1918, the camp was already disappearing.
+          atS: 49.62
+          durationS: 6.36
+        - text: Tents came down, trenches were filled in, and the land went back to civilian use.
+          atS: 56.42
+          durationS: 5.3
+        - text: A city of sixty thousand came and went.
+          atS: 61.97
+          durationS: 2.3
+        - text: The Dowd family's farmhouse stayed.
+          atS: 64.48
+          durationS: 2.34

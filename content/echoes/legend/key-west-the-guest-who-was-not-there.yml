@@ -1,0 +1,143 @@
+# Drafted by Claude Code (2026-11-09) for Key West, Florida.
+# Listening spot: The Whitehead Street sidewalk in front of the Audubon House and gardens (a museum).
+# Position: Wikidata Q4820237 (Audubon House and Tropical Gardens, 24.5583, -81.8061), nudged east onto the Whitehead Street sidewalk (medium confidence).
+id: key-west-the-guest-who-was-not-there
+title: "The Guest Who Was Not There"
+summary: "Local legend says Audubon stayed in the Audubon House in 1832. Its builder did not own the land until 1844."
+place: "Audubon House (John Geiger House), 205 Whitehead Street, Key West, Florida"
+at: { lat: 24.5583, lng: -81.8059 }
+triggerRadiusKm: 0.05
+category: legend
+format: short
+durationS: 67
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A local legend that the documentary record contradicts. The script says aloud that it is a legend, not proven, and gives the survey's evidence against it.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [key-west, audubon, legend, wreckers]
+teaser: "This house is named for a famous visitor. The deed books say he almost certainly never stayed in it."
+script: |
+  This is a legend. It has never been proven. It is also a story about what happens when someone checks the paperwork.
+
+  The house in front of you is known as the Audubon House. Local legend holds that John James Audubon, the great painter of birds, visited this house in 1832, when he came to the Florida Keys to paint.
+
+  It is a lovely story. A federal survey of historic buildings went to the deed books to look for it.
+
+  The house was built by Captain John Geiger, one of the best known pilots and wrecking masters of old Key West. Probably in the 1850s. And Geiger did not get this property until 1844.
+
+  Long after Audubon had come and gone. So it is highly unlikely, the survey concluded, that Audubon stayed in Geiger's house.
+
+  But in 1831 there was another house on this lot. A one-story frame dwelling, occupied by a doctor named Strobel. And Audubon does mention Doctor Strobel in his account of Key West.
+
+  It is possible that Audubon stayed there.
+
+  So the legend could have the right place, and just the wrong house.
+pronunciations:
+  - written: Audubon
+    say: AW-duh-bon
+  - written: Strobel
+    say: STROH-bul
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The house in front of you is known as the Audubon House."
+    source: 1
+    quote: "JOHN GEIGER HOUSE (Audubon House)"
+  - says: "Local legend holds that John James Audubon, the great painter of birds, visited this house in 1832, when he came to the Florida Keys to paint."
+    source: 1
+    quote: "Local legend holds that John James Audubon visited this house in 1832 when he came to the Florida Keys to paint local birds."
+  - says: "The house was built by Captain John Geiger, one of the best known pilots and wrecking masters of old Key West."
+    source: 1
+    quote: "built by one of the best known of Key West's pilots and wrecking masters, Captain John Geiger."
+  - says: "Probably in the 1850s."
+    source: 1
+    quote: "Not known, but probably in the 1850s."
+  - says: "And Geiger did not get this property until 1844."
+    source: 1
+    quote: "Since Geiger did not acquire the property until 1844 it is highly unlikely that Audubon stayed in his house."
+  - says: "Long after Audubon had come and gone."
+    source: 1
+    quote: "Since Geiger did not acquire the property until 1844 it is highly unlikely that Audubon stayed in his house."
+  - says: "So it is highly unlikely, the survey concluded, that Audubon stayed in Geiger's house."
+    source: 1
+    quote: "it is highly unlikely that Audubon stayed in his house."
+  - says: "But in 1831 there was another house on this lot."
+    source: 1
+    quote: "In 1831 the property contained a one-story frame dwelling occupied by Dr. B.B. Strobel"
+  - says: "A one-story frame dwelling, occupied by a doctor named Strobel."
+    source: 1
+    quote: "In 1831 the property contained a one-story frame dwelling occupied by Dr. B.B. Strobel"
+  - says: "And Audubon does mention Doctor Strobel in his account of Key West."
+    source: 1
+    quote: "is mentioned by Audubon in his account of his visit to Key West."
+  - says: "It is possible that Audubon stayed there."
+    source: 1
+    quote: "It is possible that Audubon stayed there."
+sources:
+  - title: "John Geiger House (Audubon House), HABS FL-177"
+    publisher: "Library of Congress, Historic American Buildings Survey / Historic American Engineering Record"
+    url: https://www.loc.gov/item/fl0137/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/key-west-the-guest-who-was-not-there/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 67.1
+    audioBytes: 1074198
+    transcript:
+      totalS: 67.1
+      lines:
+        - text: This is a legend.
+          atS: 0
+          durationS: 1.36
+        - text: It has never been proven.
+          atS: 1.74
+          durationS: 1.52
+        - text: It is also a story about what happens when someone checks the paperwork.
+          atS: 3.77
+          durationS: 3.85
+        - text: The house in front of you is known as the Audubon House.
+          atS: 8.07
+          durationS: 3.46
+        - text: Local legend holds that John James Audubon, the great painter of birds, visited this house in 1832, when he came to the Florida Keys to paint.
+          atS: 12.04
+          durationS: 9.89
+        - text: It is a lovely story.
+          atS: 22.37
+          durationS: 1.34
+        - text: A federal survey of historic buildings went to the deed books to look for it.
+          atS: 24.22
+          durationS: 3.81
+        - text: The house was built by Captain John Geiger, one of the best known pilots and wrecking masters of old Key West.
+          atS: 28.54
+          durationS: 6.23
+        - text: Probably in the 1850s.
+          atS: 34.98
+          durationS: 1.68
+        - text: And Geiger did not get this property until 1844.
+          atS: 37.17
+          durationS: 3.27
+        - text: Long after Audubon had come and gone.
+          atS: 40.83
+          durationS: 2.55
+        - text: So it is highly unlikely, the survey concluded, that Audubon stayed in Geiger's house.
+          atS: 43.9
+          durationS: 5.13
+        - text: But in 1831 there was another house on this lot.
+          atS: 49.24
+          durationS: 2.96
+        - text: A one-story frame dwelling, occupied by a doctor named Strobel.
+          atS: 52.27
+          durationS: 4.25
+        - text: And Audubon does mention Doctor Strobel in his account of Key West.
+          atS: 56.63
+          durationS: 4.35
+        - text: It is possible that Audubon stayed there.
+          atS: 61.16
+          durationS: 2.48
+        - text: So the legend could have the right place, and just the wrong house.
+          atS: 63.85
+          durationS: 3.2

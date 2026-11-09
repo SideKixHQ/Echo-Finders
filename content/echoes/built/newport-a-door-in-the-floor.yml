@@ -1,0 +1,65 @@
+# Drafted by Claude Code (2026-11-09) for Newport, Rhode Island.
+# Listening spot: Corner of Touro and Division Streets, public sidewalk, looking at the synagogue's plain brick front.
+# Position: Offset about 40 m from Wikidata Q1355822 (Touro Synagogue) toward the Division Street corner given in HABS RI-278 (medium confidence).
+id: newport-a-door-in-the-floor
+title: "A Door in the Floor"
+summary: "Under the reading desk of Touro Synagogue is a trap door to an escape hatch and a tunnel to Barney Street."
+place: "Touro Synagogue, 85 Touro Street, Newport, Rhode Island"
+at: { lat: 41.48925, lng: -71.3123 }
+triggerRadiusKm: 0.05
+category: built
+format: look-below
+durationS: 20
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [newport, touro-synagogue, architecture]
+teaser: "The plainest front on the street hides a way out under the floor."
+script: |
+  From the street this synagogue has a severe, plain face.
+
+  Inside, in the floor of the raised reading desk, there is a trap door. The building survey records that it leads to an escape hatch and a tunnel to Barney Street.
+
+  Nobody walking past would know. The plainest front on the street keeps a way out under its floor.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "From the street this synagogue has a severe, plain face."
+    source: 1
+    quote: "Although it presents a most severe facade to the street"
+  - says: "The building survey records that it leads to an escape hatch and a tunnel to Barney Street."
+    source: 1
+    quote: "trap door leading to an escape hatch and tunnel to Barney Street is located in the floor of the bema."
+  - says: "Inside, in the floor of the raised reading desk, there is a trap door."
+    source: 1
+    quote: "trap door leading to an escape hatch and tunnel to Barney Street is located in the floor of the bema."
+sources:
+  - title: "Touro Synagogue, Congregation Jeshuat Israel (HABS No. RI-278), written historical and descriptive data"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/ri/ri0000/ri0083/data/ri0083data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/newport-a-door-in-the-floor/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 20.3
+    audioBytes: 326469
+    transcript:
+      totalS: 20.3
+      lines:
+        - text: From the street this synagogue has a severe, plain face.
+          atS: 0
+          durationS: 3.48
+        - text: Inside, in the floor of the raised reading desk, there is a trap door.
+          atS: 3.81
+          durationS: 4.39
+        - text: The building survey records that it leads to an escape hatch and a tunnel to Barney Street.
+          atS: 8.58
+          durationS: 4.95
+        - text: Nobody walking past would know.
+          atS: 13.85
+          durationS: 1.94
+        - text: The plainest front on the street keeps a way out under its floor.
+          atS: 16.49
+          durationS: 3.86

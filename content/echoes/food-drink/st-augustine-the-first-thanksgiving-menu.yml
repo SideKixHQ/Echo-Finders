@@ -1,0 +1,145 @@
+# Drafted by Claude Code (2026-11-09) for St. Augustine, Florida.
+# Listening spot: The Mission Nombre de Dios grounds, open to visitors, within sight of the great cross on the landing site; or the San Marco Avenue sidewalk at the entrance.
+# Position: Wikidata Q7048486 (Nombre de Dios, 29.90508, -81.31606); the cross stands nearer the water, inside a 100 m radius (medium confidence).
+id: st-augustine-the-first-thanksgiving-menu
+title: "The First Thanksgiving Menu"
+summary: "When the Spanish landed in 1565 they held a Mass and then a meal with the Seloy people. It was most likely cocido, a pork and chickpea stew."
+place: "Mission Nombre de Dios, landing site cross, St. Augustine, Florida"
+at: { lat: 29.90508, lng: -81.31606 }
+triggerRadiusKm: 0.1
+category: food-drink
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [st-augustine, nombre-de-dios, thanksgiving, 1565, food]
+teaser: "Fifty-six years before Plymouth, there was a thanksgiving dinner here. It was probably stew."
+script: |
+  Look for the great cross by the water. It marks the place where the Spanish came ashore and founded St. Augustine, on the eighth of September, 1565.
+
+  The first thing they did was hold a Mass of thanksgiving. Then came dinner. Pedro Menéndez laid out a meal, and invited the people who already lived here, the Seloy.
+
+  So what was on the table?
+
+  Nobody wrote down the menu. But from what the five Spanish ships were carrying, historians can make a good guess. Cocido. A stew of salted pork and garbanzo beans, with plenty of garlic. Hard sea biscuits. Red wine.
+
+  If the Seloy brought food of their own, there may have been turkey, venison, gopher tortoise, mullet, corn, beans and squash.
+
+  That was fifty-six years before the Pilgrims sat down at Plymouth.
+
+  It never became the national holiday. The British won the continent, and their harvest festival won the calendar.
+
+  But in the first permanent European settlement in North America, the first thanksgiving dinner was probably pork and chickpea stew.
+pronunciations:
+  - written: Cocido
+    say: koh-SEE-doh
+  - written: Seloy
+    say: seh-LOY
+  - written: Menéndez
+    say: meh-NEN-dez
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It marks the place where the Spanish came ashore and founded St. Augustine, on the eighth of September, 1565."
+    source: 1
+    quote: "This event is commemorated today by a 250 foot cross which stands on the original landing site."
+  - says: "It marks the place where the Spanish came ashore and founded St. Augustine, on the eighth of September, 1565."
+    source: 1
+    quote: "On September 8, 1565, Pedro Menéndez de Avilés and 800 Spanish settlers founded the city of St. Augustine in Spanish La Florida."
+  - says: "The first thing they did was hold a Mass of thanksgiving."
+    source: 1
+    quote: "As soon as they were ashore, the landing party celebrated a Mass of Thanksgiving."
+  - says: "Pedro Menéndez laid out a meal, and invited the people who already lived here, the Seloy."
+    source: 1
+    quote: "Afterward, Menéndez laid out a meal to which he invited as guests the native Seloy tribe who occupied the site."
+  - says: "But from what the five Spanish ships were carrying, historians can make a good guess."
+    source: 1
+    quote: "From our knowledge of what the Spaniards had on board their five ships, we can surmise that it was cocido"
+  - says: "A stew of salted pork and garbanzo beans, with plenty of garlic."
+    source: 1
+    quote: "cocido, a stew made from salted pork and garbanzo beans, laced with garlic seasoning, and accompanied by hard sea biscuits and red wine."
+  - says: "If the Seloy brought food of their own, there may have been turkey, venison, gopher tortoise, mullet, corn, beans and squash."
+    source: 1
+    quote: "If the Seloy contributed to the meal from their own food stores, then the menu could have included turkey, venison, gopher tortoise, mullet, drum, sea catfish, maize (corn), beans, and squash."
+  - says: "That was fifty-six years before the Pilgrims sat down at Plymouth."
+    source: 1
+    quote: "The thanksgiving at St. Augustine was celebrated 56 years before the Puritan Pilgrim thanksgiving at Plymouth Plantation"
+  - says: "It never became the national holiday."
+    source: 1
+    quote: "but it did not become the origin of a national annual tradition."
+  - says: "The British won the continent, and their harvest festival won the calendar."
+    source: 1
+    quote: "British forces won out over those of Spain and France for mastery over the continent. Thus, British observances, such as the annual reenactment of the Pilgrims' harvest festival in 1621, became a national practice."
+  - says: "But in the first permanent European settlement in North America, the first thanksgiving dinner was probably pork and chickpea stew."
+    source: 1
+    quote: "This was the first community act of religion and thanksgiving in the first permanent European settlement in North America."
+sources:
+  - title: "The First Thanksgiving"
+    publisher: "National Park Service, Castillo de San Marcos National Monument"
+    url: https://www.nps.gov/casa/learn/historyculture/the-first-thanksgiving.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/st-augustine-the-first-thanksgiving-menu/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.8
+    audioBytes: 1101365
+    transcript:
+      totalS: 68.8
+      lines:
+        - text: Look for the great cross by the water.
+          atS: 0
+          durationS: 2.23
+        - text: It marks the place where the Spanish came ashore and founded St.
+          atS: 2.93
+          durationS: 3.59
+        - text: Augustine, on the eighth of September, 1565.
+          atS: 6.54
+          durationS: 3.61
+        - text: The first thing they did was hold a Mass of thanksgiving.
+          atS: 10.84
+          durationS: 2.94
+        - text: Then came dinner.
+          atS: 14.11
+          durationS: 1.01
+        - text: Pedro Menéndez laid out a meal, and invited the people who already lived here, the Seloy.
+          atS: 15.72
+          durationS: 5.99
+        - text: So what was on the table?
+          atS: 21.99
+          durationS: 1.43
+        - text: Nobody wrote down the menu.
+          atS: 23.7
+          durationS: 1.67
+        - text: But from what the five Spanish ships were carrying, historians can make a good guess.
+          atS: 25.69
+          durationS: 4.91
+        - text: Cocido.
+          atS: 30.93
+          durationS: 1.99
+        - text: A stew of salted pork and garbanzo beans, with plenty of garlic.
+          atS: 33.3
+          durationS: 4.53
+        - text: Hard sea biscuits.
+          atS: 38
+          durationS: 1.31
+        - text: Red wine.
+          atS: 39.48
+          durationS: 0.82
+        - text: If the Seloy brought food of their own, there may have been turkey, venison, gopher tortoise, mullet, corn, beans and squash.
+          atS: 40.42
+          durationS: 8.53
+        - text: That was fifty-six years before the Pilgrims sat down at Plymouth.
+          atS: 49.4
+          durationS: 3.82
+        - text: It never became the national holiday.
+          atS: 53.92
+          durationS: 2.04
+        - text: The British won the continent, and their harvest festival won the calendar.
+          atS: 56.17
+          durationS: 4.4
+        - text: But in the first permanent European settlement in North America, the first thanksgiving dinner was probably pork and chickpea stew.
+          atS: 61.27
+          durationS: 7.51
