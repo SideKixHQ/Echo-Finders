@@ -13,7 +13,7 @@
  * unchanged either way, because it reads lines and offsets rather than the estimate.
  */
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Echo } from "@echofinders/core";
 import { splitScript } from "./transcript-lines";
 
@@ -31,12 +31,41 @@ export function Transcript({ echo, simple, progress, onSeek }: TranscriptProps) 
   const lines = useMemo(() => splitScript(script), [script]);
 
   const current = lines.findIndex((l) => progress >= l.from && progress < l.to);
+
+  /*
+   * Follow along (James, 2026-11-09: "When im reading along the words dont scroll down and
+   * follow. i have to keep scrolling my self"). The line being spoken is kept a third of
+   * the way down the panel, scrolling the panel only, never the page. A hand on the list
+   * wins: touching or scrolling it pauses the follow for a few seconds, so somebody can
+   * read ahead or back without being dragged to the narrator.
+   */
+  const box = useRef<HTMLDivElement | null>(null);
+  const handsOnUntil = useRef(0);
+  const holdOff = () => {
+    handsOnUntil.current = Date.now() + 4000;
+  };
+  useEffect(() => {
+    const panel = box.current;
+    if (!panel || current < 0 || query.trim() || Date.now() < handsOnUntil.current) return;
+    const line = panel.querySelector<HTMLElement>(".tline-on");
+    if (!line) return;
+    const target = line.offsetTop - panel.clientHeight / 3;
+    if (Math.abs(panel.scrollTop - target) < 8) return;
+    const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    panel.scrollTo({ top: Math.max(0, target), behavior: reduce ? "auto" : "smooth" });
+  }, [current, query]);
   const matching = query.trim()
     ? lines.filter((l) => l.text.toLowerCase().includes(query.trim().toLowerCase()))
     : lines;
 
   return (
-    <div className="transcript">
+    <div
+      className="transcript"
+      ref={box}
+      onWheel={holdOff}
+      onTouchMove={holdOff}
+      onKeyDown={holdOff}
+    >
       <label className="tsearch">
         <svg viewBox="0 0 24 24">
           <circle cx="11" cy="11" r="7" />

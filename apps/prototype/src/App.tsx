@@ -2892,14 +2892,14 @@ export function App() {
         <p>
           Which is what <b>Plan</b> is for. Sit down before you set off, look at everything
           the route passes, pick a few, and switch on "play these as I reach them". Auto-play
-          without that step is an imposition — twelve echoes is forty minutes of narration,
+          without that step is an imposition: twelve echoes is forty minutes of narration,
           and handing somebody all of it because they once tapped a switch is how a product
           becomes something people turn off. Choosing first makes the same switch an
           agreement about a known quantity, which is why the running total is at the top.
         </p>
         <p>
           Nothing ever interrupts: the next starts only when the last has finished. Echoes
-          you did not pick still open and still join your collection — they simply do not
+          you did not pick still open and still join your collection. They simply do not
           talk. And <b>Coming up</b> on the map offers the next couple with their lead times,
           which matters most in the air, where you cannot go to an echo and choosing what to
           hear before it goes past is the whole interaction.
@@ -2917,7 +2917,7 @@ export function App() {
           <p>
             No guidance bar and no sound here, which is the point. Guidance answers{" "}
             <i>which way should I go</i>, and a passenger cannot divert an aircraft towards a
-            good story. The engine still computes proximity — the map wants it — it simply
+            good story. The engine still computes proximity, because the map wants it; it simply
             stops telling your body about it. A car gets the full cue, because a navigator
             can say "turn left here".
           </p>
@@ -2925,13 +2925,13 @@ export function App() {
         <p>
           <b>It talks.</b> Nothing has been through ElevenLabs yet, so the narration is your
           browser reading the actual script aloud. It is flat and its timing is not the real
-          timing — but the words are the real words, which is the only way to judge writing
+          timing, but the words are the real words, which is the only way to judge writing
           that is heard rather than read. When the real renders land, this file is replaced
           by twenty lines around an <code>&lt;audio&gt;</code> element and nothing else
           changes.
         </p>
         <p>
-          Two echoes capturing at once is the normal case, not the edge one — the stops on
+          Two echoes capturing at once is the normal case, not the edge one. The stops on
           this route exist so a listener can collect both the King George statue and the
           Charging Bull at Bowling Green. One plays, the other waits, and neither talks over
           the other. Walk far enough while something waits and it gives up: capturing and

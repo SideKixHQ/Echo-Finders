@@ -561,7 +561,7 @@ export function Ribbon({
           onClick={() => {
             void shareText(
               echo.title,
-              `${echo.title} — ${echo.point.place}. ${echo.teaser ?? echo.summary}`,
+              `${echo.title}, ${echo.point.place}. ${echo.teaser ?? echo.summary}`,
             );
           }}
         >

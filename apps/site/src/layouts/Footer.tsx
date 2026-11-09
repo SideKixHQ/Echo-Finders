@@ -72,7 +72,7 @@ export default function Footer() {
               </ul>
               {col.title === 'Company' && (
                 <p className="mt-lg text-xs leading-relaxed text-muted-foreground">
-                  Starting in the Cape Fear region —
+                  Starting in the Cape Fear region:
                   <br />
                   Wilmington, North Carolina.
                 </p>

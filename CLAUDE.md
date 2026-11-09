@@ -26,6 +26,11 @@ Asked to do something, do it end to end: branch, fix, run the gate, push, open t
 Ask only when a decision is genuinely his. Show the work, not a description of it:
 before/after screenshots for anything visual, and what was not verified. One change per PR.
 
+**No dashes in anything a user reads** (James, 2026-11-09): no em or en dashes, and no
+hyphen standing in for one, in the app, the website, the published policies or any echo.
+Use a full stop, a comma, a colon or "to". Hyphenated words (All-Access) are fine.
+`npm run audit:dashes` enforces it in the gate.
+
 ## Keep in view
 
 `docs/10-blockers.md`: what will get in the way. Solve as we go; when work touches one, say so
