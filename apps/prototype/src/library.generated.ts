@@ -25801,6 +25801,7 @@ export const ROUTES: readonly Route[] = [
     "id": "blue-ridge-parkway",
     "mode": "driving",
     "name": "Blue Ridge Parkway: Asheville to Boone",
+    "area": "Blue Ridge Parkway",
     "origin": {
       "name": "Asheville, North Carolina",
       "at": {
@@ -25879,6 +25880,7 @@ export const ROUTES: readonly Route[] = [
     "id": "central-park-west-lennon",
     "mode": "walking",
     "name": "Central Park West: three minutes apart",
+    "area": "New York",
     "origin": {
       "name": "The Dakota, 1 West 72nd Street",
       "at": {
@@ -26010,6 +26012,7 @@ export const ROUTES: readonly Route[] = [
     "id": "lower-manhattan-walk",
     "mode": "walking",
     "name": "Lower Manhattan: the Battery to the African Burial Ground",
+    "area": "New York",
     "origin": {
       "name": "Battery Park",
       "at": {
@@ -26105,6 +26108,7 @@ export const ROUTES: readonly Route[] = [
     "id": "ocean-drive-versace",
     "mode": "walking",
     "name": "Ocean Drive: the walk home",
+    "area": "Miami Beach",
     "origin": {
       "name": "News Café, 800 Ocean Drive",
       "at": {
@@ -26145,6 +26149,7 @@ export const ROUTES: readonly Route[] = [
     "id": "wilmington-1898-walk",
     "mode": "walking",
     "name": "1898: the coup and how Wilmington remembers it",
+    "area": "Wilmington",
     "origin": {
       "name": "Alex Manly marker",
       "at": {
@@ -26269,6 +26274,7 @@ export const ROUTES: readonly Route[] = [
     "id": "wilmington-old-town-walk",
     "mode": "walking",
     "name": "Old Wilmington: the river to the Bellamy Mansion",
+    "area": "Wilmington",
     "origin": {
       "name": "Riverwalk at Market Street",
       "at": {
@@ -26371,6 +26377,7 @@ export const ROUTES: readonly Route[] = [
     "id": "wilmington-stage-and-screen-walk",
     "mode": "walking",
     "name": "Stage and screen: Front Street to Thalian Hall",
+    "area": "Wilmington",
     "origin": {
       "name": "The Cotton Exchange",
       "at": {
@@ -26466,6 +26473,7 @@ export const ROUTES: readonly Route[] = [
     "id": "wilmington-to-southport",
     "mode": "driving",
     "name": "Wilmington to Southport, by Fort Fisher and the ferry",
+    "area": "Cape Fear Coast",
     "origin": {
       "name": "Wilmington, North Carolina",
       "at": {

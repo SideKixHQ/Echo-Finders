@@ -21,7 +21,7 @@
  */
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import type { Echo, Route } from "@echofinders/core";
+import { distanceKm, type Echo, type LatLng, type Route } from "@echofinders/core";
 import { MODE_ICON } from "./travel";
 import type { PlaceHit } from "./place-search";
 import { LookSomewhere } from "./LookSomewhere";
@@ -56,6 +56,8 @@ export interface JourneyChipProps {
   readonly onLook?: (hit: PlaceHit, mode: "walking" | "driving") => void;
   /** Plan a walk from here: pick echoes, or a time, and get the way round them mapped. */
   readonly onPlan?: () => void;
+  /** Where the listener is, if known: tours near it are offered first. */
+  readonly here?: LatLng | null;
 }
 
 const MODES: readonly { readonly id: Travel; readonly label: string }[] = [
@@ -64,8 +66,31 @@ const MODES: readonly { readonly id: Travel; readonly label: string }[] = [
   { id: "flight", label: "Fly" },
 ];
 
-/** The area before the colon is the route's name; what follows belongs on the journey screen. */
+/** A flight's name before the colon; a walk or drive keeps its whole name (below). */
 const routeName = (r: Route) => (r.name ?? r.destination.name).split(":")[0]!.trim();
+
+/**
+ * A tour you could start from here: any of its stops within this distance. Sixty km, as the
+ * journey screen uses (`Preflight.tsx`), so a Cape Fear visitor sees the Wilmington walks
+ * and the Southport drive, and nobody in Wilmington is offered Lower Manhattan.
+ */
+const NEARBY_KM = 60;
+
+/** Along the route, stop to stop: the length a person will actually walk or drive. */
+function lengthKm(r: Route): number {
+  const pts = r.path ?? r.waypoints.map((w) => w.at);
+  let km = 0;
+  for (let i = 1; i < pts.length; i++) km += distanceKm(pts[i - 1]!, pts[i]!);
+  return km;
+}
+
+/** "1.2 km · about 40 min", or for a drive "60 km · about 2 hr". */
+function lengthAndTime(r: Route): string {
+  const km = lengthKm(r);
+  const min = Math.round(r.durationS / 60 / 5) * 5;
+  const time = min >= 90 ? `about ${Math.round((min / 60) * 2) / 2} hr` : `about ${Math.max(5, min)} min`;
+  return `${km < 10 ? km.toFixed(1) : Math.round(km)} km · ${time}`;
+}
 
 export function JourneyChip(props: JourneyChipProps) {
   const { travel, roaming, route, routes, counts, label, progress, name, children } = props;
@@ -195,7 +220,16 @@ export function JourneyChip(props: JourneyChipProps) {
               onPick={(hit) => done(() => props.onLook!(hit, tab as "walking" | "driving"))()}
             />
           )}
-          {forTab.map((r) => {
+          {tab !== "flight" && forTab.length > 0 && (
+            <GuidedRoutes
+              routes={forTab}
+              here={props.here ?? null}
+              heading={tab === "walking" ? "Guided walks" : "Road trips"}
+              current={roaming ? null : route.id}
+              onPick={(r) => done(() => props.onRoute(r))()}
+            />
+          )}
+          {tab === "flight" && forTab.map((r) => {
             const on = !roaming && r.id === route.id;
             return (
               <button
@@ -242,3 +276,75 @@ const Tick = () => (
     <path d="M5 12.5 L10 17.5 L19 7" />
   </svg>
 );
+
+/**
+ * The guided walks or road trips, as a person would want them listed.
+ *
+ * James (2026-11-09), of the flat list: "is this list correct? it seems confusing". It was
+ * every tour in the country, New York and Miami Beach among the Wilmington walks, named by
+ * the half before a colon ("1898") and counted by every echo within 300 m of the line, which
+ * is not what a 40 minute walk plays. Now: the tours you could start from here first, each
+ * with its full name, where it is, and how long it takes; the rest behind "Tours in other
+ * cities", grouped by city. With no location there is no "here", so they are all grouped.
+ */
+function GuidedRoutes({
+  routes,
+  here,
+  heading,
+  current,
+  onPick,
+}: {
+  readonly routes: readonly Route[];
+  readonly here: LatLng | null;
+  readonly heading: string;
+  readonly current: string | null;
+  readonly onPick: (r: Route) => void;
+}) {
+  const near = here ? routes.filter((r) => r.waypoints.some((w) => distanceKm(here, w.at) <= NEARBY_KM)) : [];
+  const far = routes.filter((r) => !near.includes(r));
+  // Open by default when nothing is near, or when we do not know where "near" is.
+  const [showFar, setShowFar] = useState(near.length === 0);
+  const byArea = new Map<string, Route[]>();
+  for (const r of far) {
+    const a = r.area ?? "Elsewhere";
+    byArea.set(a, [...(byArea.get(a) ?? []), r]);
+  }
+  const item = (r: Route, withArea: boolean) => {
+    const on = r.id === current;
+    return (
+      <button
+        key={r.id}
+        className={on ? "jmenu-item on" : "jmenu-item"}
+        aria-current={on ? "true" : undefined}
+        onClick={() => onPick(r)}
+      >
+        <span>
+          {r.name ?? r.destination.name}
+          <small>
+            {withArea && r.area ? `${r.area} · ` : ""}
+            {lengthAndTime(r)}
+          </small>
+        </span>
+        {on && <Tick />}
+      </button>
+    );
+  };
+  return (
+    <div className="jmenu-routes">
+      <p className="jmenu-head mono">{near.length > 0 ? `${heading} near you` : heading}</p>
+      {near.map((r) => item(r, true))}
+      {near.length > 0 && far.length > 0 && (
+        <button className="jmenu-item jmenu-more" aria-expanded={showFar} onClick={() => setShowFar((v) => !v)}>
+          {showFar ? "Hide tours in other cities" : `Tours in other cities (${far.length})`}
+        </button>
+      )}
+      {showFar &&
+        [...byArea.entries()].map(([area, rs]) => (
+          <div key={area} className="jmenu-area">
+            {(near.length > 0 || byArea.size > 1) && <p className="jmenu-area-name">{area}</p>}
+            {rs.map((r) => item(r, false))}
+          </div>
+        ))}
+    </div>
+  );
+}

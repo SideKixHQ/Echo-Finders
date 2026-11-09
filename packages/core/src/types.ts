@@ -692,6 +692,13 @@ export interface Route {
    * "lower-manhattan-walk".
    */
   readonly name?: string;
+  /**
+   * The city or region a ground route belongs to, as a person says it: "Wilmington",
+   * "New York". The journey menu groups tours by it and says it beside each one, because a
+   * list of walks named "1898" and "Ocean Drive" means nothing until you know where they
+   * are (James, 2026-11-09: "is this list correct? it seems confusing").
+   */
+  readonly area?: string;
   readonly origin: Place;
   readonly destination: Place;
   /**

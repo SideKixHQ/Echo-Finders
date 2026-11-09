@@ -3,6 +3,7 @@
 id: wilmington-stage-and-screen-walk
 mode: walking
 name: "Stage and screen: Front Street to Thalian Hall"
+area: Wilmington
 
 origin:
   name: The Cotton Exchange

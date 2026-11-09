@@ -344,6 +344,11 @@ async function arrive() {
     await p.locator('.nav').getByRole('button', { name: /Map/ }).click();
     await p.waitForTimeout(500);
     await p.getByLabel(/Change your journey/).click();
+    // Miami Beach is another city from New York, so its walks sit behind the toggle.
+    const others = p.getByRole('button', { name: /Tours in other cities/ });
+    check('Trip sheet: tours in other cities are one tap away', await visible(others));
+    await others.click().catch(() => {});
+    await p.waitForTimeout(300);
     await p.locator('.jmenu-item', { hasText: 'Ocean Drive' }).first().click();
     await p.waitForTimeout(1500);
     // Ocean Drive starts beside its own echoes, so a sync card can land in that second and a
