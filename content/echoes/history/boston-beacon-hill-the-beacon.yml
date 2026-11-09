@@ -24,8 +24,8 @@ script: |
   took its name from it.
 
   In seventeen seventy-five, with colonial troops gathering across the river at Cambridge,
-  General Gage built a small fort up here, and had the beacon taken down. A signal to the countryside was the
-  last thing he wanted.
+  General Gage built a small fort up here, and had the beacon taken down. He did not want anyone signalling to the
+  countryside.
 
   The British left Boston in March seventeen seventy-six. Bostonians put the beacon straight
   back up.
@@ -42,14 +42,62 @@ pronunciations:
     say: BULL-finch
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "In sixteen thirty-five, the English settlers put up a tall wooden beacon on top of this hill."
+    source: 1
+    quote: "In 1635, these early English settlers erected a tall wooden beacon atop the hill to warn the countryside of any danger, attack, or outbreak."
+  - says: "If danger came, an attack or an outbreak, it could warn the countryside."
+    source: 1
+    quote: "to warn the countryside of any danger, attack, or outbreak."
+  - says: "The hill took its name from it."
+    source: 1
+    quote: "From that day forth, the area became known as Beacon Hill."
+  - says: "In seventeen seventy-five, with colonial troops gathering across the river at Cambridge, General Gage built a small fort up here, and had the beacon taken down."
+    source: 1
+    quote: "on account of the gathering of Provincial troops at Cambridge, he found it necessary to increase and, extend his defences; and among other things a small fort was built on Beacon Hill and the Beacon removed."
+  - says: "In seventeen seventy-five, with colonial troops gathering across the river at Cambridge, General Gage built a small fort up here, and had the beacon taken down."
+    source: 1
+    quote: "During the Siege of Boston , 1775-1776, the British military took over this house and used it as their headquarters. 3 At this time, British commander General Gage removed the beacon from Beacon Hill."
+  - says: "The British left Boston in March seventeen seventy-six."
+    source: 1
+    quote: "Following the British evacuation in March 1776, Bostonians quickly replaced the beacon."
+  - says: "Bostonians put the beacon straight back up."
+    source: 1
+    quote: "Bostonians quickly replaced the beacon."
+  - says: "It lasted another thirteen years."
+    source: 1
+    quote: "It remained there until a storm blew it down in 1789."
+  - says: "In seventeen eighty-nine, a storm blew it down."
+    source: 1
+    quote: "It remained there until a storm blew it down in 1789."
+  - says: "In seventeen eighty-nine, a storm blew it down."
+    source: 3
+    quote: "In November, 1789, the beacon was blown down."
+  - says: "The eagle column, designed by Charles Bulfinch, took its place."
+    source: 1
+    quote: "The Beacon Hill Eagle Memorial, designed by Charles Bulfinch, now stands in its place"
+  - says: "It once had three peaks."
+    source: 1
+    quote: "the area of the city we now know as Beacon Hill comprised of three peaks."
+  - says: "Bostonians dug much of them away to fill in land around the city."
+    source: 1
+    quote: "To fill in land around the city, Bostonians removed parts of the three hills that made up the original Tri-mountain"
+  - says: "Only the name stayed put."
+    source: 1
+    quote: "From that day forth, the area became known as Beacon Hill."
 sources:
   - title: "Beacon Hill"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/beacon-hill.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Evacuation of Boston, 1776"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/000/evacuation-of-boston-1776.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01012230/
+    retrievedAt: "2026-11-09"
     rights: public-domain

@@ -37,24 +37,67 @@ script: |
   The British army held the Common for one winter. The cows held it for two centuries.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "For about two hundred years, this was a pasture."
+    source: 1
+    quote: "The Common was a pasture for cattle from the time of its creation through the early decades of the 1800s."
+  - says: "The town bought the land in sixteen thirty-four, and families grazed their cattle here."
+    source: 1
+    quote: "In 1634, the townspeople of Boston voted to tax each household six schillings for the purchase of William Blackstone's farm to be used as a community common."
+  - says: "The town bought the land in sixteen thirty-four, and families grazed their cattle here."
+    source: 4
+    quote: "Boston Common, which was acquired by Boston in 1634, was first used as a common training field and pasture land"
+  - says: "Each family could only put so many cows on the Common, so the grass would not run out."
+    source: 1
+    quote: "regulations protected the land from overgrazing by restricting the number of cattle each family could graze on the Common."
+  - says: "On hot days the cows sheltered under a huge old elm."
+    source: 3
+    quote: "the cows pastured on tho common used to find shelter beneath Us branches."
+  - says: "The ground around it was swampy then."
+    source: 3
+    quote: "Up to 1830 tho ground around tho tree was swampy"
+  - says: "In the winter of seventeen seventy-five, the Common was taken over by something else."
+    source: 1
+    quote: "During the winter of 1775 and 1776, British soldiers installed artillery entrenchments on the Common"
+  - says: "British soldiers dug artillery positions into it, and a garrison of about seventeen hundred men camped here."
+    source: 1
+    quote: "British soldiers installed artillery entrenchments on the Common, and a garrison of 1,700 soldiers remained encamped there."
+  - says: "In March they sailed away."
+    source: 2
+    quote: "On March 17, most of the British army left Boston for the base at Nova Scotia"
+  - says: "They kept grazing this ground for another fifty-four years, until the city banned them in eighteen thirty."
+    source: 1
+    quote: "with cows forbidden altogether in 1830"
+  - says: "They kept grazing this ground for another fifty-four years, until the city banned them in eighteen thirty."
+    source: 4
+    quote: "it was not until 1830 that cows were barred from pasturage there."
+  - says: "The pasture fences came down six years after that."
+    source: 1
+    quote: "pasture fences removed in 1836."
+  - says: "The British army held the Common for one winter."
+    source: 1
+    quote: "During the winter of 1775 and 1776, British soldiers installed artillery entrenchments on the Common"
+  - says: "The cows held it for two centuries."
+    source: 1
+    quote: "The Common was a pasture for cattle from the time of its creation through the early decades of the 1800s."
 sources:
   - title: "Boston Common"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/boston-common-ma.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Evacuation of Boston, 1776"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/000/evacuation-of-boston-1776.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Chicago Daily Tribune, February 20, 1876, page 5 (the Old Elm on Boston Common)"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn84031492/1876-02-20/ed-1/?sp=5
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Cows on Boston Common, The Ely Miner, January 9, 1931, page 5"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn90059182/1931-01-09/ed-1/?sp=5
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts

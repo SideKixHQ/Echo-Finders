@@ -11,7 +11,7 @@ at: { lat: 36.00100, lng: -81.87900 }
 triggerRadiusKm: 0.4
 category: legend
 format: short
-durationS: 100
+durationS: 73
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -25,11 +25,11 @@ teaser: "Look out toward the ridges."
 script: |
   Look out toward the ridges.
 
-  For more than a century, people have reported unusual lights around Brown Mountain.
+  Since at least 1910, people have reported unusual lights around Brown Mountain.
 
   The descriptions vary: bright points that appear, seem to move, then disappear.
 
-  The lights became part of Appalachian folklore, often given ghostly explanations.
+  The lights became part of local folklore, often given ghostly explanations. The Park Service calls them a legend.
 
   The National Park Service notes that studies have linked reports to ordinary sources,
   including vehicle headlights.
@@ -38,10 +38,10 @@ script: |
 
   But distance makes certainty difficult.
 
-  You may not see the road beneath a moving light. You may not recognize the angle. Trees
+  You might not see the road beneath a moving light. You might not recognize the angle. Trees
   can hide a source and reveal it again.
 
-  That uncertainty helped the legend endure.
+  That uncertainty is part of why the legend endures.
 
   Watch from the designated overlook. There is no need to chase anything into the woods.
 
@@ -53,15 +53,26 @@ script: |
 
   What people make of them is where the ghost story begins.
 editorial: draft
-factCheck: corroborated
+factCheck: single-source
+claims:
+  - says: "Since at least 1910, people have reported unusual lights around Brown Mountain."
+    source: 1
+    quote: "Witnesses have claimed to see strange bright lights that appear as if from nowhere, and disappear without a trace, on and around Brown Mountain since at least 1910."
+  - says: "The descriptions vary: bright points that appear, seem to move, then disappear."
+    source: 1
+    quote: "strange bright lights that appear as if from nowhere, and disappear without a trace"
+  - says: "The Park Service calls them a legend."
+    source: 1
+    quote: "you just may catch a glimpse of legend— the mysterious and elusive Brown Mountain lights!"
+  - says: "The National Park Service notes that studies have linked reports to ordinary sources, including vehicle headlights."
+    source: 1
+    quote: "Despite various studies showing that these reports are likely describing normal occurrences such as vehicle headlights"
+  - says: "The reports are documented."
+    source: 1
+    quote: "Witnesses have claimed to see strange bright lights"
 sources:
-  - title: "Lost cove cliffs overlook"
+  - title: "Lost Cove Cliffs Overlook"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/lost-cove-cliffs-overlook.htm
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: public-domain
-  - title: "Index"
-    publisher: "Appalachian State University, Department of Physics"
-    url: https://www.dancaton.physics.appstate.edu/BML/SeeTheLights/index.htm
-    retrievedAt: "2026-10-09"
-    rights: fair-use-facts

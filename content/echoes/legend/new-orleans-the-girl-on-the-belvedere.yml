@@ -1,0 +1,126 @@
+# Drafted by Claude Code (2026-11-09) for the New Orleans ghost legends.
+# Listening spot: Public sidewalk on the downriver side of Governor Nicholls Street, a few doors toward Chartres from Royal, looking up at the rooftop belvedere of 1140 Royal Street. Private house: the echo stays on the sidewalk.
+# Position: Offset about 30 m toward the river along Governor Nicholls Street from the listening point of new-orleans-the-fire-in-the-kitchen (29.96199, -90.06138), using the Vieux Carre grid bearing (low confidence; check on site).
+id: new-orleans-the-girl-on-the-belvedere
+title: "The Girl on the Belvedere"
+summary: "The old guidebooks said a girl's ghost circled the lookout on top of 1140 Royal. A writer who knew the tenants said it was memories."
+place: "1140 Royal Street at Governor Nicholls Street, French Quarter, New Orleans, Louisiana"
+at: { lat: 29.96178, lng: -90.06117 }
+triggerRadiusKm: 0.03
+category: legend
+format: short
+durationS: 107
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The ghost is told by the Picayune guides of 1900 and 1904 as something "said", with no witness
+  named; Castellanos (1895), who spoke with tenants, denied any haunting, and a 1902 guide called the
+  stories doubtful. The 1834 discovery of the chained captives is documented and is told in
+  new-orleans-the-fire-in-the-kitchen; this echo keeps to the legend and says aloud it is unproven.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [new-orleans, new-orleans-core, french-quarter, ghosts, legend, lalaurie]
+teaser: "Look up at the little lookout on the roof."
+script: |
+  Look up at the top of the big house on the corner. The little lookout on the roof is called a belvedere.
+
+  This is the house New Orleans has called haunted for more than a century. What follows is a legend. Nobody has ever proved a ghost here.
+
+  The true part is bad enough. In April eighteen thirty-four, a fire broke out in the house that stood here, and the people who ran in found seven enslaved people in chains. The woman who held them, Madame Lalaurie, escaped to France.
+
+  The ghost came later. City guides of nineteen hundred and nineteen-oh-four tell it the same way. A little girl, chased by her mistress with a whip, ran up and up the winding stairs to the belvedere, and leapt from the roof into the courtyard. On dark and stormy nights, they said, she is seen walking round and round up there, and her sobs are heard above the storm.
+
+  They said no tenant could stay. Servants would not stay either, and the house to rent sign kept going back up on the balcony. One later owner turned it into a bar called the Haunted Saloon.
+
+  Not everyone believed it. Henry Castellanos, writing in eighteen ninety-five, said the house had been rebuilt after the crowd wrecked it, and the belvedere was added then. He had talked to people who lived here. Nothing haunted them, he wrote, except memories.
+
+  So the girl is said to walk on a lookout that was built after her story ends.
+
+  The ghost is a legend. The cruelty that made people tell it is not.
+pronunciations:
+  - written: Lalaurie
+    say: lah-LOR-ee
+  - written: belvedere
+    say: BEL-vuh-deer
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "This is the house New Orleans has called haunted for more than a century."
+    source: 1
+    quote: "This is the famous ‘‘Haunted House,’’ which every visitor to New Orleans wishes to see"
+  - says: "This is the house New Orleans has called haunted for more than a century."
+    source: 3
+    quote: "It has been named by some the ‘‘ Haunted House.’’"
+  - says: "In April eighteen thirty-four, a fire broke out in the house that stood here, and the people who ran in found seven enslaved people in chains."
+    source: 3
+    quote: "It was on the morning of the roth of April, 1834, that from the corner of Royal and Hospital streets, crepitating flames were seen to burst forth"
+  - says: "In April eighteen thirty-four, a fire broke out in the house that stood here, and the people who ran in found seven enslaved people in chains."
+    source: 3
+    quote: "seven slaves, more or less mutilated, slowly per- ishing from hunger"
+  - says: "In April eighteen thirty-four, a fire broke out in the house that stood here, and the people who ran in found seven enslaved people in chains."
+    source: 3
+    quote: "We saw where the collar and manacles had cut their way into their quivering flesh."
+  - says: "The woman who held them, Madame Lalaurie, escaped to France."
+    source: 1
+    quote: "Mme. Lalaurie made her way to Covington. thence to Mobile, where she embarked for France"
+  - says: "City guides of nineteen hundred and nineteen-oh-four tell it the same way."
+    source: 2
+    quote: "The principal ghost haunting the house is that of a negro girl, who com- mitted suicide by leaping from the roof to the courtyard, in an endeavor to escape from her mistress."
+  - says: "City guides of nineteen hundred and nineteen-oh-four tell it the same way."
+    source: 1
+    quote: "Copyright 1904 by"
+  - says: "A little girl, chased by her mistress with a whip, ran up and up the winding stairs to the belvedere, and leapt from the roof into the courtyard."
+    source: 1
+    quote: "The principal ghost haunting the house is said to be that of a little negro girl, who, being pursued by her mistress with a lash, fled up and up the winding stairs to the belvidere and committed suicide by leaping from the roof into the ¢<ourtyard below."
+  - says: "On dark and stormy nights, they said, she is seen walking round and round up there, and her sobs are heard above the storm."
+    source: 1
+    quote: "On dark and stormy nights it is said the little girl appears Walking Round and Round the Belvidere, her moans and sobs being heard above the storm"
+  - says: "On dark and stormy nights, they said, she is seen walking round and round up there, and her sobs are heard above the storm."
+    source: 2
+    quote: "On certain nights the ghost is said to appear near the cupola on the roof."
+  - says: "They said no tenant could stay."
+    source: 1
+    quote: "It is said that no tenant can occupy it for any length of time."
+  - says: "Servants would not stay either, and the house to rent sign kept going back up on the balcony."
+    source: 2
+    quote: "It was impossible to keep servants there, and again “Maison a Louer,”’ or “House to Rent,” hung from the old balcony."
+  - says: "One later owner turned it into a bar called the Haunted Saloon."
+    source: 2
+    quote: "Then an enter- prising Italian, with an eye to busi- ness, bought the place, renovated it, and turned it into the “Haunted Sa- loon.”"
+  - says: "Henry Castellanos, writing in eighteen ninety-five, said the house had been rebuilt after the crowd wrecked it, and the belvedere was added then."
+    source: 3
+    quote: "Upon the site of the old building, a fine structure, en- tirely new, was erected, noticeable in its design and archi- tectural proportions. A belvedere was added to it."
+  - says: "Henry Castellanos, writing in eighteen ninety-five, said the house had been rebuilt after the crowd wrecked it, and the belvedere was added then."
+    source: 3
+    quote: "New Orleans, September 1, 1895."
+  - says: "He had talked to people who lived here."
+    source: 3
+    quote: "if several of its oc- cupants, with whom I have often conversed, are to be believed"
+  - says: "Nothing haunted them, he wrote, except memories."
+    source: 3
+    quote: "there is nothing therein to haunt its inhabitants save ghastly memories of a by-gone generation."
+  - says: "The ghost is a legend."
+    source: 4
+    quote: "the so-called ‘‘haunted house,’’ to which local tradition has attached several doubtful stories and legends."
+sources:
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), the Haunted House, 1140 Royal Street"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (1900), the Haunted House"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse_0/picayunesguideto00unse_0.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "New Orleans As It Was, Episodes of Louisiana Life (1895), by Henry C. Castellanos, chapter A Tale of Slavery Times"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansasitwa00cast/neworleansasitwa00cast.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "New Orleans guide (New Orleans, F.F. Hansell & Bro., c1902), by James S. Zacharie"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansguidew00zach/neworleansguidew00zach.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain

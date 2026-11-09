@@ -41,24 +41,85 @@ pronunciations:
     say: SHTY-nits
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "A writer in nineteen nineteen pointed out a monogram twined into that ironwork."
+    source: 3
+    quote: "the ancient monogram of the institution can still be seen in the twined design of the gallery railing."
+  - says: "A writer in nineteen nineteen pointed out a monogram twined into that ironwork."
+    source: 3
+    quote: "Copyright, 1919, by Lybecus Publishing Co."
+  - says: "It belonged to the Louisiana Bank, which put up this building in eighteen sixteen."
+    source: 3
+    quote: "The structure was originally built to house the Louisiana Bank in 1816"
+  - says: "Paul Morphy was born in New Orleans in eighteen thirty-seven, the son of a judge."
+    source: 2
+    quote: "was born In Now Orleans on Juno 93 1837 His father was a distinguished judge"
+  - says: "When he was about ten, his father explained to him how the chess pieces move."
+    source: 3
+    quote: "the child at 10 was a chess phenomenon who had been taught by his father the elementary moves of the game."
+  - says: "When he was about ten, his father explained to him how the chess pieces move."
+    source: 2
+    quote: "In 1847 Pauls father noticing the Interest his son took In the game explained to him the power of the various piece"
+  - says: "Within two years the boy was beating the best players in the city."
+    source: 2
+    quote: "In Is I than two years he wa successfully contending against the best amateurs of his native city"
+  - says: "Before he turned thirteen, a famous Hungarian master passing through New Orleans played him three games."
+    source: 2
+    quote: "When Morphy was not yet thirteen years of ago Liinri > nthnl the famous Hungarian passed through Now Orleans Ho played three games with Paul"
+  - says: "The boy won two, and drew the other."
+    source: 2
+    quote: "who won the second and third games white tbo first gamo resulted a draw"
+  - says: "He went on to Paris and London, and came home the greatest chess player in the world."
+    source: 3
+    quote: "His marvelous play won world-renown for him in Paris and London."
+  - says: "He went on to Paris and London, and came home the greatest chess player in the world."
+    source: 3
+    quote: "chess champion of the world"
+  - says: "The city gave him a set of chessmen in gold and silver."
+    source: 3
+    quote: "New Orleans, city of his birth, presented him with a set of chess- men in solid gold and silver."
+  - says: "Now and then friends would coax him to sit down at a board, and in the middle of the game he would suddenly sweep the pieces away, stand up and leave."
+    source: 1
+    quote: "In late years he nover played elie. Some times he was induced by friends W seat Bimself at the board, but in the midst of a game he would suddenly sweep tho preces, rise and start of"
+  - says: "When the master Steinitz came to New Orleans, people tried several times to bring the two of them together."
+    source: 1
+    quote: "Reveral attempts wera made to bring Steinitz and Mor- phy togetuer, but the bitter successfully resisted them."
+  - says: "Morphy would not do it."
+    source: 1
+    quote: "Reveral attempts wera made to bring Steinitz and Mor- phy togetuer, but the bitter successfully resisted them."
+  - says: "He died in this house in July eighteen eighty-four."
+    source: 3
+    quote: "He died in this old house on Royal Street"
+  - says: "He died in this house in July eighteen eighty-four."
+    source: 1
+    quote: "July 10.—Panl Morphy"
+  - says: "He was forty-seven."
+    source: 1
+    quote: "Morphy was torgy- seven years of age"
+  - says: "The same report added one more thing."
+    source: 1
+    quote: "Tout he Lad not forgotten his ennning at chess is evioeod by tue tact that at the recent visi of steinitz to (kis city. he earclfully followed tue games of that piayer as they were reported by the papers, and eriticised the moves."
+  - says: "While Steinitz was playing in New Orleans, Morphy followed his games closely in the newspapers."
+    source: 1
+    quote: "he earclfully followed tue games of that piayer as they were reported by the papers, and eriticised the moves."
 sources:
   - title: "Obituary, Paul Morphy, New-York Tribune, 11 July 1884, page 2"
     publisher: "Chronicling America, Library of Congress"
     url: https://www.loc.gov/resource/sn83030214/1884-07-11/ed-1/?sp=2
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Death of Paul Morphy, The Sun (New York), 11 July 1884, page 3"
     publisher: "Chronicling America, Library of Congress"
     url: https://www.loc.gov/resource/sn83030272/1884-07-11/ed-1/?sp=3
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Romance of New Orleans (1919)"
     publisher: "R. H. True and Co., via the Library of Congress"
-    url: https://www.loc.gov/item/20006638/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdc/20006638/20006638.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's Guide to New Orleans (1904), 417 Royal Street"
     publisher: "The Picayune, via the Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain

@@ -43,19 +43,68 @@ script: |
   The road built to bring the world into Boston had just brought in an army.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "You are on Long Wharf."
+    source: 3
+    quote: "Long Wharf was the extension of State Street and it extended far out into the harbor."
+  - says: "Turn around and look back toward the city, straight up State Street."
+    source: 1
+    quote: "Long Wharf and State Street are so firmly united that they may be considered one to all intents and purposes."
+  - says: "If the view is clear, the old brick State House sits at the far end."
+    source: 3
+    quote: "Here the Royal Governors disem- barked, and escorted by the local military bodies, marched in great pomp and state to the Town House."
+  - says: "When this wharf was begun, around seventeen ten, it was laid out as the main street carried on into the harbour."
+    source: 1
+    quote: "In 1709-10 the town voted to accept the proposals of Noyes and his associates to build a wharf"
+  - says: "When this wharf was begun, around seventeen ten, it was laid out as the main street carried on into the harbour."
+    source: 2
+    quote: "Long Wharf had been built since 1710"
+  - says: "King Street, it was called then, and the wharf was built to the same width."
+    source: 1
+    quote: "to be of the width of King Street."
+  - says: "Close to two thousand feet."
+    source: 1
+    quote: "“a superb wharf, advancing nearly two thousand feet into the sea, wide enough along its whole length for stores and shops.”"
+  - says: "About a third of a mile, with warehouses along one side nearly the whole length."
+    source: 3
+    quote: "running about 1800 feet into the harbor. Here large ships, with great ease, may be laden and unladen; on one side of the wharf are warehouses about the whole length of it."
+  - says: "A ship could tie up at the end, and a merchant could step off the deck and walk one straight road to the Town House."
+    source: 3
+    quote: "Here large ships, with great ease, may be laden and unladen"
+  - says: "A ship could tie up at the end, and a merchant could step off the deck and walk one straight road to the Town House."
+    source: 3
+    quote: "marched in great pomp and state to the Town House."
+  - says: "The landward end of the old wharf is now under solid ground."
+    source: 2
+    quote: "Long Wharf had been built since 1710, and was then much longer than it now is, owing to the filling-in and extension of the water-front."
+  - says: "The city filled in along the shore and ran a new avenue across the heads of the wharves, so what you are standing on is only part of the original."
+    source: 2
+    quote: "Before the building of Atlantic Avenue, which has been built by the making of new land across the head of the wharves, thus shortening their length, Long Wharf extended 1,800 feet into the harbor"
+  - says: "On the first of October, seventeen sixty eight, warships anchored off this wharf and put two regiments of British soldiers ashore, sent to bring an unruly town to heel."
+    source: 3
+    quote: "October 1, 1768, eight British men-of-war anchored off Long Wharf and two regiments of British soldiers from Tlalifax, were landed under the guns of the war vessels"
+  - says: "On the first of October, seventeen sixty eight, warships anchored off this wharf and put two regiments of British soldiers ashore, sent to bring an unruly town to heel."
+    source: 3
+    quote: "the British troops landed in 1768, the men who were sent over by George the Third to overawe and punish the citizens of Boston"
+  - says: "They marched into town with drums beating and bayonets fixed."
+    source: 3
+    quote: "He marched his troops through the town with fixed bayonets, with a train of artillery following, colors flying, drums beating"
+  - says: "The road built to bring the world into Boston had just brought in an army."
+    source: 3
+    quote: "In 1768, the first British soldiers sent here to overawe Americans landed at this wharf."
 sources:
   - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/01012230/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "King's hand-book of Boston (1885)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/01015801/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Walks & talks about historic Boston (1917)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/17025471/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain

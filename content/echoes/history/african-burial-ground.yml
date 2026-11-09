@@ -8,7 +8,7 @@ triggerRadiusKm: 0.07
 
 category: history
 format: short
-durationS: 110
+durationS: 86
 visibility: at-hand
 certainty: documented
 minAge: 10
@@ -18,22 +18,13 @@ tags: [new-york, slavery, archaeology, memorial]
 teaser: Twenty-four feet below the pavement.
 
 script: |
-  In 1991 the federal government began digging foundations for an office tower at Broadway
-  and Duane, and about seven metres down the crews found bone.
+  In 1991, while the ground on this block was being dug out for a federal office building, workers found graves.
 
-  What lay beneath the block was a cemetery. From the late sixteen-hundreds into the
-  seventeen-nineties, free and enslaved Africans in this city had buried their dead in a
-  patch of ground outside the settlement's boundary, roughly six and a half acres of it.
-  Later New York built over the site and forgot. Estimates put the number of burials around
-  fifteen thousand.
+  What lay beneath the block was a cemetery. For a century, from the 1690s to the 1790s, free and enslaved Africans in this city had buried their dead here, on land outside the city's northern palisade, eventually five to six acres of it. Later New York built over it, and it was lost under landfill and buildings. The Park Service puts the number buried here at over fifteen thousand.
 
-  Four hundred and nineteen men, women and children were recovered from the part that was
-  excavated. Their descendants and this city's Black community fought to stop the
-  construction, and won. The remains were studied, then reinterred here in 2003.
+  The remains of four hundred and nineteen men, women and children were excavated from the part that was dug. Community activism shaped what happened next, and the descendant community reached an agreement with the government on how they would be studied and remembered. The remains were studied at Howard University, then reburied here in October 2003.
 
-  It is the earliest and largest African burial ground yet found in the United States, and
-  it existed partly because of a rule: from 1697, Africans were barred from the city's main
-  burial ground. So they made their own, out past the edge of town.
+  It is the nation's earliest and largest known African American cemetery. Scholars believe it exists because of a rule: in 1697, Africans were barred from burying their dead in the city's main burial ground. So they made their own, out past the edge of town.
 
   You are standing at the edge of town.
 
@@ -50,15 +41,66 @@ pronunciations:
 
 editorial: draft
 factCheck: corroborated
-
+claims:
+  - says: "In 1991, while the ground on this block was being dug out for a federal office building, workers found graves."
+    source: 1
+    quote: "workers rediscovered the burial ground in 1991 during an excavation of the land for a Federal Government office building"
+  - says: "For a century, from the 1690s to the 1790s, free and enslaved Africans in this city had buried their dead here"
+    source: 1
+    quote: "For a century, from the 1690s to the 1790s, a small plot of land in Lower Manhattan became the final resting place for over 15,000 free and enslaved Africans."
+  - says: "on land outside the city's northern palisade, eventually five to six acres of it"
+    source: 3
+    quote: "Africans developed a burial ground consisting of a small plot of land located outside the city’s northern palisade. As the enslaved population grew, so did the Burial Ground, eventually covering five to six acres"
+  - says: "Later New York built over it, and it was lost under landfill and buildings."
+    source: 1
+    quote: "The burial ground was then lost under years of urban development and landfill"
+  - says: "The Park Service puts the number buried here at over fifteen thousand."
+    source: 1
+    quote: "the final resting place for over 15,000 free and enslaved Africans"
+  - says: "The remains of four hundred and nineteen men, women and children were excavated from the part that was dug."
+    source: 2
+    quote: "The remains of 419 men, women, and children were excavated"
+  - says: "the descendant community reached an agreement with the government on how they would be studied and remembered"
+    source: 4
+    quote: "Eventually, a research and memorialization agreement was established between the descendant community and GSA."
+  - says: "The remains were studied at Howard University"
+    source: 2
+    quote: "an analysis of the human remains was conducted at Howard University"
+  - says: "then reburied here in October 2003"
+    source: 5
+    quote: "The remains were given a permanent resting-place at the African Burial Ground Memorial Site on October 4, 2003."
+  - says: "It is the nation's earliest and largest known African American cemetery."
+    source: 2
+    quote: "New York's African Burial Ground is the nation's earliest and largest known African American cemetery."
+  - says: "Scholars believe it exists because of a rule: in 1697, Africans were barred from burying their dead in the city's main burial ground."
+    source: 1
+    quote: "In 1697, Africans were not allowed to bury their dead in what had become New York’s primary burial ground. Scholars believe that this ban was the reason Africans used the burial ground"
+  - says: "So they made their own, out past the edge of town."
+    source: 1
+    quote: "Forced to establish their own burial ground, Africans created their sacred space in what was at the time the “Commons” area away from the bustle of the city."
 sources:
-  - title: African Burial Ground National Monument
-    publisher: National Park Service
-    url: https://www.nps.gov/afbg/index.htm
-    retrievedAt: "2026-09-21"
-    rights: public-domain
-  - title: New York — African Burial Ground National Monument
-    publisher: National Park Service
+  - title: "New York: African Burial Ground National Monument"
+    publisher: "National Park Service"
     url: https://www.nps.gov/articles/afamburial.htm
-    retrievedAt: "2026-09-21"
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "African Burial Ground in History"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/afbg/learn/historyculture/african-burial-ground-in-history.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Archaeology, African Burial Ground National Monument"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/afbg/learn/historyculture/archaeology.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Community Activism, African Burial Ground National Monument"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/afbg/learn/historyculture/activism.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Reinterment, African Burial Ground National Monument"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/afbg/learn/historyculture/reinterment.htm
+    retrievedAt: "2026-11-09"
     rights: public-domain

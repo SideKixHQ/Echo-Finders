@@ -44,24 +44,87 @@ script: |
   make another.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Find the end of the old brick State House with the balcony on it."
+    source: 1
+    quote: "The governor's stature as surrogate for the crown was underscored by his elevated position upon the balcony which overlooked King Street."
+  - says: "Now look up, past the balcony, to the two corners of the roof."
+    source: 5
+    quote: "The symbolic lion and unicorn of the British arms have been replaced on the eastern gable"
+  - says: "A lion on one side."
+    source: 1
+    quote: "Upon the right and left of the balcony, a lion and unicorn—royal symbols of the King of Great Britain—graced the main façade facing the public square."
+  - says: "A unicorn on the other."
+    source: 1
+    quote: "Upon the right and left of the balcony, a lion and unicorn"
+  - says: "The badge of the British king."
+    source: 1
+    quote: "royal symbols of the King of Great Britain"
+  - says: "On the eighteenth of July, seventeen seventy six, a crowd filled the street below you to hear a document read aloud from that balcony."
+    source: 1
+    quote: "On July 18, 1776, Bostonians gathered under the balcony of Old State to hear for the first time the Declaration of Independence."
+  - says: "It was the Declaration of Independence, and Boston was hearing it for the first time."
+    source: 1
+    quote: "From this balcony, Bostonians listened to royal proclamations, but here they also heard for the first time the Declaration of Independence"
+  - says: "Six years earlier, soldiers had fired into a crowd on this same spot."
+    source: 1
+    quote: "On a cold March night in 1770, a beleaguered squadron of British soldiers opened fire in the square in front of this royal building"
+  - says: "Six years earlier, soldiers had fired into a crowd on this same spot."
+    source: 1
+    quote: "Six years later, shots were heard again in the square."
+  - says: "This time the guns went off in celebration."
+    source: 1
+    quote: "But this time they were fired in celebration."
+  - says: "The lion and the unicorn came down."
+    source: 2
+    quote: "witnessed the tearing down of the lion and unicorn"
+  - says: "They were carried a little way down the street, heaped up with every other royal emblem that could be found in town, and burned in a bonfire outside a tavern."
+    source: 2
+    quote: "the lion and unicorn, which, together with every vestige and sign of royalty that could be found, were burned in the street below."
+  - says: "They were carried a little way down the street, heaped up with every other royal emblem that could be found in town, and burned in a bonfire outside a tavern."
+    source: 3
+    quote: "the patriots built a large bonfire in front of the tavern. The Lion and the Unicorn, and other em- blems of royalty, that decorated the Old State House were torn from their resting places and burned."
+  - says: "They were carried a little way down the street, heaped up with every other royal emblem that could be found in town, and burned in a bonfire outside a tavern."
+    source: 4
+    quote: "In the street before the Bunch- of-Grapes’ doors, the lion and unicorn, with other emblems of royalty"
+  - says: "For about a hundred years, those corners stayed bare."
+    source: 2
+    quote: "One hundred years later these figures were replaced"
+  - says: "Then the building was restored, and new figures went back up."
+    source: 2
+    quote: "One hundred years later these figures were replaced and the building was restored to its Colonial appearance."
+  - says: "So the pair you are looking at never heard the Declaration."
+    source: 2
+    quote: "One hundred years later these figures were replaced"
+  - says: "The ones that did are ash."
+    source: 2
+    quote: "were burned in the street below."
+  - says: "A century later, it put them back to make another."
+    source: 2
+    quote: "One hundred years later these figures were replaced and the building was restored to its Colonial appearance."
 sources:
   - title: "Old State House"
     publisher: "National Park Service, Boston National Historical Park"
     url: https://www.nps.gov/bost/learn/historyculture/osh.htm
-    retrievedAt: "2026-10-14"
-    rights: public-domain
-  - title: "Old Massachusetts State House, 206 Washington Street, Boston (HABS MA-1246)"
-    publisher: "Historic American Buildings Survey, Library of Congress"
-    url: https://www.loc.gov/item/ma1403/
-    retrievedAt: "2026-10-14"
-    rights: public-domain
-  - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
-    publisher: "Library of Congress"
-    url: https://www.loc.gov/item/01012230/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Colonial and revolutionary landmarks of Boston (1913)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/14003283/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Walks & talks about historic Boston (1917)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/17025471/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Boston, a guide book, by Edwin M. Bacon (revised edition, 1908)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/33007578/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "King's hand-book of Boston (1885)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01015801/
+    retrievedAt: "2026-11-09"
     rights: public-domain

@@ -49,14 +49,78 @@ pronunciations:
     say: bur-GOYN
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "They belonged to the Great House, later the Three Cranes Tavern."
+    source: 1
+    quote: "The foundations of this early building, still visible today in City Square Park"
+  - says: "They belonged to the Great House, later the Three Cranes Tavern."
+    source: 1
+    quote: "The former Great House, later known as the Three Cranes Tavern"
+  - says: "In seventeen seventy-five this was the middle of Charlestown."
+    source: 1
+    quote: "mark the heart of the Charlestown residents knew on the eve of war"
+  - says: "That spring, about sixteen hundred people lived here."
+    source: 1
+    quote: "By 1775, the town had grown into a thriving community of about 1,600 people"
+  - says: "Wooden houses, workshops, warehouses, narrow streets, a ferry across to Boston."
+    source: 1
+    quote: "Wooden homes, workshops, and warehouses lined the town’s narrow streets, and ferries carried people, goods, and news across the river to Boston."
+  - says: "By June, most of them had gone."
+    source: 1
+    quote: "By early June, most of Charlestown’s population had left."
+  - says: "The British army was shut up in Boston, the colonial army was gathering outside, and Charlestown sat in between."
+    source: 1
+    quote: "Charlestown lay outside the established siege lines. British troops had withdrawn fully into Boston"
+  - says: "On the seventeenth of June, the militia dug in on the hill above the town."
+    source: 1
+    quote: "On the morning of June 17, colonial militia took up positions on Bunker Hill, overlooking Charlestown."
+  - says: "During the battle, colonial soldiers fired on the British from the empty houses."
+    source: 1
+    quote: "During the battle, colonial soldiers hid among the empty buildings of Charlestown, firing on British troops from windows and rooftops."
+  - says: "General William Howe ordered the town set on fire."
+    source: 1
+    quote: "In response, British General William Howe ordered the town set on fire."
+  - says: "A British general, John Burgoyne, had been directing guns from Copp's Hill, across the water."
+    source: 2
+    quote: "From this spot on June 17, 1775, Generals John Burgoyne and Henry Clinton directed British soldiers to bombard Breed’s Hill with naval guns."
+  - says: "He wrote that the timber church steeples were great pyramids of fire above the rest."
+    source: 1
+    quote: "Timber church steeples stood as \"great Pyramids of Fire above the rest,\" British General John Burgoyne recounted in a letter to his nephew shortly after the battle."
+  - says: "Afterwards, more than four hundred and fifty families listed what they had lost."
+    source: 1
+    quote: "In total, more than 450 families filed claims for losses caused by the destruction of the town by British troops."
+  - says: "One man, Willson Chamberlain, began his list and ran out of room on the paper."
+    source: 1
+    quote: "Willson Chamberlain began his list but ran out of space on the paper"
+  - says: "He ended it with one line."
+    source: 1
+    quote: "ending the note by saying, \"in short I Lost most all that I had.\""
+  - says: "In short, I lost most all that I had."
+    source: 1
+    quote: "\"in short I Lost most all that I had.\""
+  - says: "The town asked Congress to pay."
+    source: 1
+    quote: "wrote a letter petitioning the Continental Congress for restitution."
+  - says: "Congress said it lamented the distress."
+    source: 1
+    quote: "Congress responded saying that while they \"lament the distress,\" [16] they could not provide financial relief."
+  - says: "Nobody was ever compensated."
+    source: 1
+    quote: "the residents of Charlestown never received compensation for their losses."
+  - says: "Of the town Chamberlain lost, this is what you can still see."
+    source: 1
+    quote: "Only the foundations of the Three Cranes Tavern remain visible as a reminder of the community that stood here"
+  - says: "A tavern's foundations, in a park."
+    source: 1
+    quote: "still visible today in City Square Park"
 sources:
   - title: "The Burning of Charlestown"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/000/the-burning-of-charlestown.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Copp's Hill Burying Ground"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/copp-s-hill-burying-ground.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain

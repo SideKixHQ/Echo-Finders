@@ -3,7 +3,7 @@
 # Position: North end of the Overture "Paul Revere Mall" (centre 42.36586, -71.05378), moved toward the Old North crypt point (42.36631, -71.05449) so the steeple is overhead (medium confidence).
 id: boston-the-spire-that-fell
 title: "The Spire That Fell"
-summary: "Old North's spire has blown down twice. The one above you went up in 1955, a copy of the one that stood in 1775."
+summary: "Old North's spire has blown down twice. The one above you went up in 1955, billed as a copy of the 1775 spire."
 place: "Old North Church steeple from Paul Revere Mall, North End, Boston, Massachusetts"
 at: { lat: 42.36612, lng: -71.05421 }
 triggerRadiusKm: 0.04
@@ -21,20 +21,19 @@ script: |
 
   It is younger than it looks.
 
-  The first spire went up in the seventeen hundreds. A guidebook called it the most elegant
-  in the town. Early in the eighteen hundreds, a gale blew it down.
+  The first spire went up in the seventeen hundreds. It was described as the most elegant in
+  the town. Early in the eighteen hundreds, a gale blew it down.
 
   Its replacement was built from a model by Charles Bulfinch, the architect of the State
   House. That one stood for about a hundred and fifty years.
 
   Then, on the thirty-first of August, nineteen fifty-four, Hurricane Carol reached Boston.
-  The wind worked at the spire for more than an hour. It swayed, cracked, and went over into
-  the street.
+  The wind worked at the spire for more than an hour. It swayed, cracked, and went over.
 
   An amateur photographer visiting from New York happened to catch it as it fell.
 
-  Within weeks there was a fund to put it back. Money came from well beyond Boston. A Lions
-  Club in Maine voted to send ten dollars.
+  Within days, people were offering money to put it back. One Lions Club voted to send
+  ten dollars.
 
   In October nineteen fifty-five, a new spire was dedicated here. At the ceremony it was
   described as a duplicate of the spire the lanterns hung from in seventeen seventy-five.
@@ -46,29 +45,78 @@ pronunciations:
     say: BULL-finch
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The first spire went up in the seventeen hundreds."
+    source: 1
+    quote: "The primary steeple of Old North also was demolished by a wind storm—in 1804. It had stood approximately 71 years when it collapsed."
+  - says: "It was described as the most elegant in the town."
+    source: 5
+    quote: "The first spire was described as the “ most elegant in the town.”"
+  - says: "Early in the eighteen hundreds, a gale blew it down."
+    source: 5
+    quote: "That was blown down in a gale in October, 1805"
+  - says: "Early in the eighteen hundreds, a gale blew it down."
+    source: 1
+    quote: "The primary steeple of Old North also was demolished by a wind storm—in 1804."
+  - says: "Its replacement was built from a model by Charles Bulfinch, the architect of the State House."
+    source: 5
+    quote: "This tower has additional interest in that it was made from a model by Luldfnch."
+  - says: "Its replacement was built from a model by Charles Bulfinch, the architect of the State House."
+    source: 1
+    quote: "The tall, slender, toodelicate spire which yielded to Hurricane Carol was the work of Charles Bulflnch, celebrated for his west front of the Capitol here in Washington as well as the Massachusetts State House on Boston’s Beacon HUL"
+  - says: "That one stood for about a hundred and fifty years."
+    source: 1
+    quote: "Constructed in 1806, the steeple familiar to thousands of tourists from that date onward"
+  - says: "Then, on the thirty-first of August, nineteen fifty-four, Hurricane Carol reached Boston."
+    source: 4
+    quote: "The old steeple was blown down Aug. 31, 1954, by Hurricane Carol."
+  - says: "The wind worked at the spire for more than an hour."
+    source: 1
+    quote: "Tuesday’s Hurricane Carol assailed the spire for more than an hour before it finally tilted it to destruction."
+  - says: "It swayed, cracked, and went over."
+    source: 1
+    quote: "it swayed the entire structure above the top brick line more than seven inches to the breaking point. Mr. Spallino’s photograph shows the fracture occurring under heavy impact from the east."
+  - says: "An amateur photographer visiting from New York happened to catch it as it fell."
+    source: 2
+    quote: "This dramatic picture was made by Joseph Spallino of New York, an amateur photographer who was visiting in Boston."
+  - says: "Within days, people were offering money to put it back."
+    source: 3
+    quote: "The Southwest Harbor Lions Club has voted to send $lO to the Governor of Massachusetts for use in the restoration erf the steeple of Boston’s Old North Church"
+  - says: "One Lions Club voted to send ten dollars."
+    source: 3
+    quote: "The Southwest Harbor Lions Club has voted to send $lO to the Governor of Massachusetts"
+  - says: "In October nineteen fifty-five, a new spire was dedicated here."
+    source: 4
+    quote: "The new steeple was dedicated formally “to the glory of God” yesterday by Massachusetts Episcopal Bishop Norman B. Nash."
+  - says: "At the ceremony it was described as a duplicate of the spire the lanterns hung from in seventeen seventy-five."
+    source: 4
+    quote: "The Old North Church has a steeple—a duplicate of the spire from which hung the lanterns that sent Paul Revere on his famed ride back in ’75."
+  - says: "You are just seeing it in a copy about seventy years old."
+    source: 4
+    quote: "Church Spire Is Dedicated BOSTON (M—lt’s official now. The Old North Church has a steeple—a duplicate of the spire"
 sources:
   - title: "Old North Steeple (editorial), Evening Star, Washington, D.C., 2 September 1954, page 22"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83045462/1954-09-02/ed-1/?sp=22
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
   - title: "Hurricane topples Old North Church steeple, Evening Star, Washington, D.C., 1 September 1954, page 2"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83045462/1954-09-01/ed-1/?sp=2
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
   - title: "$10 for Steeple Fund, Evening Star, Washington, D.C., 3 September 1954, page 13"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83045462/1954-09-03/ed-1/?sp=13
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
   - title: "Church Spire Is Dedicated, The Key West Citizen, 13 October 1955, page 4"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83016244/1955-10-13/ed-1/?sp=4
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
-  - title: "Boston, a guide book, by Edwin M. Bacon (Ginn and Company, 1909), Christ Church"
+  - title: "Boston, a guide book, by Edwin M. Bacon (revised edition, 1908)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/33007578/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain

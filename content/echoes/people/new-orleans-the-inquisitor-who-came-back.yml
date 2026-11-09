@@ -51,24 +51,67 @@ pronunciations:
     say: KAP-yoo-chin
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Around seventeen eighty-nine, a Spanish Capuchin friar named Antonio de Sedella called on the governor of this colony, Esteban Miró."
+    source: 2
+    quote: "In the beginning of 178g Louisiana learned that Charles III was dead"
+  - says: "Around seventeen eighty-nine, a Spanish Capuchin friar named Antonio de Sedella called on the governor of this colony, Esteban Miró."
+    source: 1
+    quote: "Padre Antonio de Sedella, a Spanish Capuchin arrived lately in the city, salled upon the governor and exhibited a commission to establish the Holy Office of the Inquisition in the city."
+  - says: "Around seventeen eighty-nine, a Spanish Capuchin friar named Antonio de Sedella called on the governor of this colony, Esteban Miró."
+    source: 2
+    quote: "Miro did not hesitate to risk his own authority"
+  - says: "He had been sent to set up the Holy Office of the Inquisition in New Orleans."
+    source: 1
+    quote: "exhibited a commission to establish the Holy Office of the Inquisition in the city."
+  - says: "The next day he was on a ship for Cádiz."
+    source: 1
+    quote: "was stowed away in a ship in port, which sailed the next day for Cadiz."
+  - says: "Miró wrote to Madrid that the very word Inquisition, spoken in New Orleans, could drive people out of the colony."
+    source: 1
+    quote: "The very name of | Inquisition uttered in New Orleans would be suf- ficient not only to check immigration . . . but would be capable of driving away those who have recently come here."
+  - says: "He came back as Père Antoine, the parish priest of this cathedral, for nearly fifty years."
+    source: 3
+    quote: "the venerable Pere Antonio de Sedella, curate of the parish for nearly fifty years."
+  - says: "He came back as Père Antoine, the parish priest of this cathedral, for nearly fifty years."
+    source: 1
+    quote: "The padre had returned"
+  - says: "A guidebook from eighteen forty-five says he was supposed to have married or buried nearly half the people of the place."
+    source: 3
+    quote: "is supposed to have performed nearly one half of the marriage and funeral ceremonies of its inhabitants"
+  - says: "A guidebook from eighteen forty-five says he was supposed to have married or buried nearly half the people of the place."
+    source: 3
+    quote: "New Orteans, October, 1845."
+  - says: "When a church official tried to suspend him, his congregation left the cathedral and ran to his door."
+    source: 1
+    quote: "to the little cabin in St. Anthony’s alley, in which Pére Antoine lived. He tranquilized them as to his bodily welfare, but informed them that he had been suspended."
+  - says: "He is buried at the foot of the altar."
+    source: 3
+    quote: "This venerated relic of by gone days lies bur- ried at the foot of the altar."
+  - says: "New Orleans threw out the inquisitor."
+    source: 1
+    quote: "was stowed away in a ship in port, which sailed the next day for Cadiz."
+  - says: "Then it kept the priest for half a century."
+    source: 3
+    quote: "curate of the parish for nearly fifty years."
 sources:
   - title: "New Orleans, the place and the people (1895)"
     publisher: "Grace King, Macmillan, 1895; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/01008773/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansplacep00kin/neworleansplacep00kin.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "A history of Louisiana (1905)"
     publisher: "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/34036146/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/historyoflouisia00king/historyoflouisia00king.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Norman's New Orleans and environs (1845)"
     publisher: "B. M. Norman, New Orleans, 1845; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/01008776/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/normansneworlean00norm/normansneworlean00norm.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Presbytere, Jackson Square, New Orleans (HABS LA-18-5), written historical and descriptive data"
     publisher: "Historic American Buildings Survey, National Park Service; Library of Congress"
-    url: https://www.loc.gov/item/la0008/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0008/data/la0008data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain

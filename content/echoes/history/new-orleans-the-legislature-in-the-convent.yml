@@ -27,21 +27,61 @@ script: |
 
   In eighteen thirty-one, the State of Louisiana leased the building from the nuns. The state legislature held its sessions inside these walls. For a while, the laws of Louisiana were argued over in a house built for nuns.
 
-  It did not last. The lease ran out, and the nuns gave the building to the archbishop of New Orleans. For most of the rest of the century, it was where the archbishops lived.
+  It was short-lived. The lease ran out, and the nuns gave the building to the archbishop of New Orleans. For most of the rest of the century, it was where the archbishops lived.
 
   That same guide told its readers to look for one thing inside. The staircase. Each step, it said, was a single massive piece of timber, worn down by the feet of many generations.
 
   Most of those feet belonged to nuns and priests. For one short stretch, some of them belonged to politicians.
 editorial: draft
-factCheck: corroborated
+factCheck: single-source
+claims:
+  - says: "The building behind it is two storeys of plastered brick."
+    source: 2
+    quote: "2 STORIES, BRICK CEMENTED"
+  - says: "It was built for the Ursuline nuns."
+    source: 1
+    quote: "They were erected between 1727 and 1734 for the use of the Ursuline nuns."
+  - says: "They lived behind this wall until eighteen twenty-four, when they moved to a new convent further downriver."
+    source: 1
+    quote: "The nuns resided here from 1734 to 1824. when they removed to their present domicile, in the extreme lower part of the city."
+  - says: "A city guide of nineteen-oh-four called this the oldest building in Louisiana."
+    source: 1
+    quote: "The Oldest Building in Louisiana."
+  - says: "A city guide of nineteen-oh-four called this the oldest building in Louisiana."
+    source: 1
+    quote: "Copyright 1904 by"
+  - says: "In eighteen thirty-one, the State of Louisiana leased the building from the nuns."
+    source: 1
+    quote: "in 1831 it was the State Capitol"
+  - says: "In eighteen thirty-one, the State of Louisiana leased the building from the nuns."
+    source: 1
+    quote: "The building was at that time leased by the State of Louisiana ‘from the Ursuline nuns."
+  - says: "The state legislature held its sessions inside these walls."
+    source: 1
+    quote: "the Legislature held its sessions within its walls"
+  - says: "For a while, the laws of Louisiana were argued over in a house built for nuns."
+    source: 1
+    quote: "the Legislature held its sessions within its walls"
+  - says: "The lease ran out, and the nuns gave the building to the archbishop of New Orleans."
+    source: 1
+    quote: "the lease having expired, the Ursulines presented it to the then reigning Archbishop of New Orleans"
+  - says: "That same guide told its readers to look for one thing inside."
+    source: 1
+    quote: "The yisitor should remark the ancient staircase"
+  - says: "Each step, it said, was a single massive piece of timber, worn down by the feet of many generations."
+    source: 1
+    quote: "the steps of which are single, massive pieces of timber, deeply worn by the feet of many generations."
+  - says: "For one short stretch, some of them belonged to politicians."
+    source: 1
+    quote: "in 1831 it was the State Capitol, and the Legislature held its sessions within its walls."
 sources:
   - title: "The Picayune's Guide to New Orleans (1904), The Oldest Building in Louisiana"
     publisher: "The Picayune, via the Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Archbishopric, 1114 Chartres Street, New Orleans, Orleans Parish, LA (HABS LA-18-2)"
     publisher: "Historic American Buildings Survey, Library of Congress"
-    url: https://www.loc.gov/item/la0106/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0100/la0106/supp/la0106supp.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain

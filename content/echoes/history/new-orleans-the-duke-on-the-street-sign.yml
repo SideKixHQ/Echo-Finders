@@ -17,7 +17,7 @@ quality: 0.75
 tags: [new-orleans, new-orleans-core, french-quarter, bourbon-street, street-names]
 teaser: "Look at the two street signs on this corner."
 script: |
-  Look at the two street signs on this corner. Bourbon. And Dumaine.
+  Look at the street signs on this corner. Bourbon. And Dumaine.
 
   On this street of all streets, people tend to assume the name has something to do with what is in their glass.
 
@@ -47,19 +47,77 @@ pronunciations:
     say: CHAR-ters
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "And Dumaine."
+    source: 3
+    quote: "Crossing these streets from the river, were Bienyille, Conti, St. Louis, Toulouse, St. Peter, Orleans, St. Anne, Dumaine and St. Philip."
+  - says: "When French engineers laid out this town in the seventeen-twenties, they drew a grid of streets and gave them names from the very top of French society."
+    source: 1
+    quote: "he sent his chief of engineers to the settlement ‘*to choose a suitable site for a city worthy to become the capital of Louisiana.”"
+  - says: "When French engineers laid out this town in the seventeen-twenties, they drew a grid of streets and gave them names from the very top of French society."
+    source: 1
+    quote: "in the naming of streets, the dukes of Orleans, Chartres, Maine, and Bourbon, the princes of Conti and Condé, and the Count of Toulouse, had been honored; where, finally, in June to August, 1722"
+  - says: "George Washington Cable, writing in eighteen eighty-four, listed who was being honoured."
+    source: 1
+    quote: "COPYRIGHT, 1884, BY CHARLES SCRIBNER’S SONS"
+  - says: "The dukes of Orleans, Chartres, Maine and Bourbon."
+    source: 1
+    quote: "the dukes of Orleans, Chartres, Maine, and Bourbon"
+  - says: "The princes of Conti and Condé."
+    source: 1
+    quote: "the princes of Conti and Condé"
+  - says: "The Count of Toulouse."
+    source: 1
+    quote: "the Count of Toulouse, had been honored"
+  - says: "So the grid around you is a kind of family tree of the French court."
+    source: 1
+    quote: "in the naming of streets, the dukes of Orleans, Chartres, Maine, and Bourbon, the princes of Conti and Condé, and the Count of Toulouse, had been honored"
+  - says: "Orleans Street."
+    source: 2
+    quote: "9. Rue d'Orleans"
+  - says: "Chartres Street."
+    source: 2
+    quote: "3. Rue de Chartres"
+  - says: "Conti."
+    source: 2
+    quote: "12. Rue de Conti"
+  - says: "Toulouse."
+    source: 2
+    quote: "11. Rue de Toulouse"
+  - says: "And Bourbon, for the Duke of Bourbon."
+    source: 1
+    quote: "the dukes of Orleans, Chartres, Maine, and Bourbon"
+  - says: "Du Maine."
+    source: 2
+    quote: "7. Rue du Maine"
+  - says: "On the old French plans of the city, it is written Rue du Maine."
+    source: 2
+    quote: "7. Rue du Maine"
+  - says: "The street of the Duke of Maine."
+    source: 1
+    quote: "the dukes of Orleans, Chartres, Maine, and Bourbon"
+  - says: "A city guide from nineteen-oh-four put it simply."
+    source: 3
+    quote: "Copyright 1904 by"
+  - says: "All through the old French Quarter, it said, the street names suggest the city's royal descent."
+    source: 3
+    quote: "all through the old French Quarter the streets suggest the city’s royal descent and ancient faith and customs."
+  - says: "Everything else on Bourbon Street came later."
+    source: 3
+    quote: "We have Bourbon and Orleans, Dauphine and Bur- gundy"
 sources:
   - title: "The Creoles of Louisiana (1884), by George W. Cable"
     publisher: "Charles Scribner's Sons, via the Library of Congress"
-    url: https://www.loc.gov/item/01008769/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/creolesoflouisia01cabl/creolesoflouisia01cabl.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Vieux Carré, A Creole Neighborhood in New Orleans (Teaching with Historic Places), Map 3 street key"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's Guide to New Orleans (1904)"
     publisher: "The Picayune, via the Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain

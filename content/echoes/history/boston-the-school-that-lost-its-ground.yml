@@ -20,8 +20,7 @@ script: |
   You are on School Street. It is named after a school that is not here.
 
   Find the bronze statue of Benjamin Franklin, set back from the sidewalk. Close by, in the
-  sixteen thirties, the town of Boston started its first school. The Latin School. A plain
-  building of one storey, big enough for about a hundred boys.
+  sixteen thirties, the town of Boston started its first school. The Latin School. A plain building of one storey, big enough for about a hundred pupils.
 
   Now look up the street, toward the dark stone church on the corner. That is King's Chapel.
 
@@ -32,22 +31,77 @@ script: |
   The town was not pleased. A local wit put it in verse. A fig for your learning, I tell you
   the town, to make the church larger, must pull the school down.
 
-  The school moved many more times after that. It is still open, nearly four hundred years
-  on, just not on the street that carries its name.
+  In time the school moved on again, away from this street. The street kept the name
+  anyway.
 
   As for Franklin. He started here at eight years old, and he lasted one year.
 
   Of everyone who ever studied on this street, he is the one who stayed.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "You are on School Street."
+    source: 1
+    quote: "School Street, which, receiving its name from the old Latin School, was called Latin School Street."
+  - says: "Find the bronze statue of Benjamin Franklin, set back from the sidewalk."
+    source: 2
+    quote: "This statue of Benjamin Franklin overlooks the first site of the Latin School"
+  - says: "Find the bronze statue of Benjamin Franklin, set back from the sidewalk."
+    source: 2
+    quote: "The statue is made of bronze metal and stands on a pedestal made of marble"
+  - says: "Close by, in the sixteen thirties, the town of Boston started its first school."
+    source: 2
+    quote: "This statue of Benjamin Franklin overlooks the first site of the Latin School, the oldest public school in America, established by Puritan settlers in sixteen thirty five."
+  - says: "Close by, in the sixteen thirties, the town of Boston started its first school."
+    source: 1
+    quote: "It originated in 1634"
+  - says: "The Latin School."
+    source: 1
+    quote: "Next the old King’s Chapel stood the Latin School"
+  - says: "A plain building of one storey, big enough for about a hundred pupils."
+    source: 1
+    quote: "The building itself was of one story, large enough to accommodate a hundred scholars."
+  - says: "That is King's Chapel."
+    source: 2
+    quote: "Along School Street, the trail passes Kings Chapel, the first public school site and Ben Franklin statue."
+  - says: "In the seventeen forties the chapel wanted to rebuild, bigger."
+    source: 1
+    quote: "When the society of King’s Chapel were ready to rebuild, in 1748, they desired an enlargement of the ground for their site"
+  - says: "It needed more ground, and part of that ground had the schoolhouse on it."
+    source: 1
+    quote: "also a piece of ground at the east side, on part of which then stood the Latin School."
+  - says: "After a good deal of haggling, the church built the school a new house on the other side of the street, and took the old site."
+    source: 1
+    quote: "After a good deal of negotiation between the town and the church committee, the church erected a new school-house on the opposite side of the street"
+  - says: "The town was not pleased."
+    source: 1
+    quote: "The removal of the old school-house was viewed with no favorable eye by the townspeople"
+  - says: "A local wit put it in verse."
+    source: 1
+    quote: "Joseph Green, a Harvard graduate of 1726, and a noted wit, expressed the popular feeling thus"
+  - says: "A fig for your learning, I tell you the town, to make the church larger, must pull the school down."
+    source: 1
+    quote: "“A fig for your learning! I tell you the town, To make the church larger, must pull the school down."
+  - says: "In time the school moved on again, away from this street."
+    source: 1
+    quote: "where the Latin School remained up to a comparatively recent time."
+  - says: "As for Franklin."
+    source: 1
+    quote: "Franklin went to the Latin School one year"
+  - says: "He started here at eight years old, and he lasted one year."
+    source: 1
+    quote: "Franklin went to the Latin School one year, entering in 1714, at the age of eight years"
+  - says: "Of everyone who ever studied on this street, he is the one who stayed."
+    source: 1
+    quote: "his statue is, therefore, becomingly placed near his alma mater."
 sources:
   - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/01012230/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Freedom Trail Audio Described Brochure"
     publisher: "National Park Service, Boston National Historical Park"
     url: https://www.nps.gov/bost/planyourvisit/freedom-trail-audio-described-brochure.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain

@@ -1,6 +1,6 @@
 id: wall-street-the-wall
 title: The street is named after something that isn't there
-summary: A nine-foot palisade crossed the island here, built mostly by people who were not free.
+summary: "In 1653 a wall crossed the island here against an English invasion. Enslaved workers helped build it."
 place: Wall Street, Manhattan
 at: { lat: 40.70740, lng: -74.01100 }
 triggerRadiusKm: 0.1
@@ -14,35 +14,68 @@ quality: 0.92
 tags: [new-york, dutch, slavery, wall-street]
 teaser: Look down the street. It runs river to river.
 script: |
-  Look down the street. It runs river to river, and you can very nearly see one end from the
-  other.
+  Look down the street. It runs across the island, toward the water at both ends.
 
-  That is not an accident. It is the width of the island, and in 1653 the Dutch decided to
-  fence it off.
+  That is not an accident. In 1653 the Dutch decided to fence the town off.
 
-  The governor, Peter Stuyvesant, ordered a palisade built right across here. Nine feet
-  high, made of packed earth and fifteen-foot planks, running from the Hudson to the East
-  River. It was meant to stop an English invasion.
+  England and the Dutch Republic were at war, and word had reached the governor, Peter Stuyvesant, that English troops were gathering in New England for a possible invasion from the north. In March the city's council resolved to surround the greater part of the town with a high stockade. Someone, possibly Stuyvesant himself, sketched it in the margin of the court minutes: nine feet above the ground, three feet in it, with a ditch and an embankment. In the end a palisade proved too costly, and they nailed slats across posts set fifteen feet apart. It ran across the island from the East River to the Hudson.
 
-  The people who built it were mostly enslaved Africans, owned by the Dutch West India
-  Company.
+  The colony's enslaved workers helped to build it.
 
-  The invasion never came. The English took the colony anyway, eleven years later, by
-  sailing in and asking. And in 1699 they pulled the wall down and used the wood for
-  something else.
+  The invasion from New England never came. The English took the colony anyway, eleven years later.
 
-  It stood for forty-six years. It has been gone for more than three hundred.
+  The Dutch called the wall Het Cingel, the Belt. It gave its name to the street, which means this is a street named after a thing that is not there, put up partly by people who were never free to walk away from it.
 
-  The street kept the name, which means this is a street named after a thing that is not
-  there, put up by people who were never free to walk away from it.
 pronunciations:
   - written: Peter Stuyvesant
     say: STY-ve-sant
 editorial: draft
-factCheck: single-source
+factCheck: corroborated
+claims:
+  - says: "In 1653 the Dutch decided to fence the town off."
+    source: 1
+    quote: "it is deemed necessary to surround the greater part of the City with a high stockade and a small breastwork"
+  - says: "England and the Dutch Republic were at war, and word had reached the governor, Peter Stuyvesant, that English troops were gathering in New England for a possible invasion from the north."
+    source: 1
+    quote: "The 1st Anglo-Dutch war had broken out in late 1652, and word had reached Governor General Petrus Stuyvesant and the council of Burgomasters and Schepens that English troops were amassing in New England for a possible overland invasion from the north."
+  - says: "In March the city's council resolved to surround the greater part of the town with a high stockade."
+    source: 1
+    quote: "From the 13th to the 19th of March 1653, they discussed the plans for defense and how to bid out the work."
+  - says: "Someone, possibly Stuyvesant himself, sketched it in the margin of the court minutes: nine feet above the ground, three feet in it, with a ditch and an embankment."
+    source: 1
+    quote: "someone, possibly even Stuyvesant himself, drew a little sketch in the margins of the court record of a cross-section of the defenses, consisting of a ditch, embankment and palisade wall."
+  - says: "nine feet above the ground, three feet in it"
+    source: 1
+    quote: "The Dutch reads: “9 feet above ground, 3 feet in ground.”"
+  - says: "In the end a palisade proved too costly, and they nailed slats across posts set fifteen feet apart."
+    source: 1
+    quote: "In the end a palisade proved too costly, and they used slats across posts set 15 feet apart."
+  - says: "It ran across the island from the East River to the Hudson."
+    source: 2
+    quote: "which spanned Manhattan Island from the East River to the Hudson River"
+  - says: "The colony's enslaved workers helped to build it."
+    source: 2
+    quote: "In 1653, upon Governor Peter Stuyvesant's orders, the colony's ens lav ed workers helped to build New Amsterdam's most famous fortification \"The Wall\" (Wall Street)"
+  - says: "The invasion from New England never came."
+    source: 1
+    quote: "English troops were amassing in New England for a possible overland invasion from the north"
+  - says: "The English took the colony anyway, eleven years later."
+    source: 2
+    quote: "In 1664 , the English conquered the Dutch colony, and New Amsterdam became New York."
+  - says: "The Dutch called the wall Het Cingel, the Belt."
+    source: 1
+    quote: "(although the Dutch called it Het Cingel , the Belt)"
+  - says: "It gave its name to the street"
+    source: 1
+    quote: "The wall built by the spring of 1653 to defend against the English would eventually give its name to Wall Street"
 sources:
-  - title: Anniversary of Wall Street
-    publisher: NYC Department of Records & Information Services
+  - title: "Anniversary of Wall Street"
+    publisher: "NYC Department of Records & Information Services"
     url: https://www.archives.nyc/blog/2023/3/9/anniversary-of-wall-street
-    retrievedAt: "2026-09-22"
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "African Burial Ground in History"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/afbg/learn/historyculture/african-burial-ground-in-history.htm
+    retrievedAt: "2026-11-09"
     rights: public-domain

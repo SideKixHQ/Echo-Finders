@@ -9,7 +9,7 @@ at: { lat: 37.82671, lng: -122.42298 }
 triggerRadiusKm: 0.06
 category: true-crime
 format: short
-durationS: 100
+durationS: 75
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -26,11 +26,11 @@ script: |
 
   So they left faces on their pillows.
 
-  Frank Morris and brothers John and Clarence Anglin made dummy heads using materials that
-  included paint and human hair.
+  Frank Morris and brothers John and Clarence Anglin made realistic dummy heads, complete
+  with human hair.
 
-  Behind the cells, they prepared an escape route. They also assembled makeshift flotation
-  equipment from raincoats.
+  Behind the cells, they prepared an escape route, enlarging the vent holes in their back walls. They also made crude life vests and a raft
+  from prison-issued raincoats.
 
   On the night of June 11, the three men disappeared from their cells.
 
@@ -40,7 +40,7 @@ script: |
 
   The men were gone.
 
-  Their ultimate fate has never been conclusively established. The escape does not prove
+  Their ultimate fate has never been conclusively established. They are officially listed as missing, presumed drowned. The escape does not prove
   they survived the bay.
 
   When you later look toward the mainland, notice the water between here and there.
@@ -58,14 +58,42 @@ trueCrimeReview:
   reviewedBy: "TODO: a named human, before this can leave draft."
   reviewedAt: "2026-10-09"
   contentWarning: "This echo describes a prison escape. No violence is described."
+claims:
+  - says: "In June 1962, the men inside needed the guards to believe they were sleeping."
+    source: 1
+    quote: "realistic dummy heads (complete with human hair) placed in the beds so the inmates would not be missed during nighttime counts"
+  - says: "Frank Morris and brothers John and Clarence Anglin made realistic dummy heads, complete with human hair."
+    source: 1
+    quote: "An investigation revealed an intricate escape plot that involved homemade drills to enlarge vent holes, false wall segments, and realistic dummy heads (complete with human hair)"
+  - says: "made realistic dummy heads"
+    source: 2
+    quote: "The three men left dummies in their bunks, prison Secretary Walter Bertram said the dummies had plaster heads with molden facial features and hair."
+  - says: "Behind the cells, they prepared an escape route, enlarging the vent holes in their back walls."
+    source: 1
+    quote: "The three men exited through vent holes located in the rear wall of their cell - they had enlarged the vent holes and made false vent/wall segments to conceal their work."
+  - says: "They also made crude life vests and a raft from prison-issued raincoats."
+    source: 1
+    quote: "They used prison-issued raincoats to make crude life vests and a pontoon-type raft to assist in their swim."
+  - says: "On the night of June 11, the three men disappeared from their cells."
+    source: 1
+    quote: "June 11, 1962 -- Made famous by Clint Eastwood in the movie Escape from Alcatraz, Frank Morris and brothers John and Clarence Anglin vanished from their cells and were never seen again."
+  - says: "By morning, the deception was discovered."
+    source: 1
+    quote: "he was still in his cell the next morning when the escape was discovered"
+  - says: "Their ultimate fate has never been conclusively established."
+    source: 1
+    quote: "But no sign of the men was found."
+  - says: "They are officially listed as missing, presumed drowned."
+    source: 1
+    quote: "Morris and the Anglins are officially listed as missing and presumed drowned."
 sources:
-  - title: "Alcatraz escape"
-    publisher: "Federal Bureau of Investigation"
-    url: https://www.fbi.gov/history/cases-and-criminals/alcatraz-escape
-    retrievedAt: "2026-10-09"
-    rights: public-domain
-  - title: "Alcatraz.jsp"
+  - title: "Alcatraz"
     publisher: "Federal Bureau of Prisons"
     url: https://www.bop.gov/about/history/alcatraz.jsp
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Atlanta daily world, June 13, 1962, page 1: Three dig out of Alcatraz prison; may have escaped (UPI)"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn82015425/1962-06-13/ed-1/?sp=1
+    retrievedAt: "2026-11-09"
     rights: public-domain

@@ -1,12 +1,12 @@
 id: city-hall-declaration
 title: What the army did after they heard it
-summary: Washington had the Declaration read to his troops here. They did not stay to discuss it.
+summary: "Washington had the Declaration read to his troops here. That night a crowd went down Broadway and pulled down the king."
 place: City Hall Park, Manhattan
 at: { lat: 40.71270, lng: -74.00600 }
 triggerRadiusKm: 0.1
 category: history
 format: short
-durationS: 95
+durationS: 60
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -15,27 +15,48 @@ voice: IMlxLW3qgn0MWgfz7Vnh
 tags: [new-york, revolution, washington]
 teaser: This was not a park.
 script: |
-  This was not a park. It was the Common, the rough field outside town where you put the
-  things nobody wanted near them. A poorhouse. A prison. A gallows.
+  This was not a park. It was the Commons, then the northernmost edge of the city.
 
-  On the ninth of July 1776, George Washington had his army formed up on this ground, in
-  squares, and had an officer read out a document that had arrived from Philadelphia five
-  days earlier.
+  On the evening of the ninth of July 1776, soldiers of George Washington's army assembled on this ground, and heard read out a document that Congress had adopted in Philadelphia five days earlier. When the reading came to an end, the soldiers erupted into cheers.
 
-  There is no record of the soldiers being told to do anything afterwards.
+  What happened next was not in the orders. A rowdy crowd of soldiers and civilians marched from here down Broadway to the little green at the bottom of the island, and pulled a statue of the king off its plinth.
 
-  What they did was walk down Broadway, about a mile, to the little green at the bottom of
-  the island, and pull a two-ton gilded statue of the king off its plinth.
+  Washington was not pleased. In his general orders the next day he wrote that it had so much the appearance of riot and want of order in the army that he disapproved the manner.
 
-  Washington was not pleased. He put out an order the next morning calling it disorderly,
-  and asking that in future such matters be left to the proper authorities.
+  British troops would not leave this city for another seven years.
 
-  The war he had just read them into lasted another seven years.
 editorial: draft
-factCheck: single-source
+factCheck: corroborated
+claims:
+  - says: "It was the Commons, then the northernmost edge of the city."
+    source: 1
+    quote: "assembled at the Commons — then the northernmost edge of New York City, and today’s City Hall Park in Lower Manhattan"
+  - says: "On the evening of the ninth of July 1776, soldiers of George Washington's army assembled on this ground"
+    source: 1
+    quote: "On the evening of July 9, 1776, soldiers of the Continental Army, under the command of General George Washington, assembled at the Commons"
+  - says: "a document that Congress had adopted in Philadelphia five days earlier"
+    source: 1
+    quote: "We now celebrate the birth of the United States on July 4, the day the Continental Congress in Philadelphia adopted the Declaration of Independence."
+  - says: "When the reading came to an end, the soldiers erupted into cheers."
+    source: 1
+    quote: "When the public reading came to an end, the soldiers erupted into cheers."
+  - says: "A rowdy crowd of soldiers and civilians marched from here down Broadway to the little green at the bottom of the island, and pulled a statue of the king off its plinth."
+    source: 1
+    quote: "a rowdy crowd of soldiers and civilians marched from the Commons down Broadway to Bowling Green. There, zealous revelers pulled down an equestrian statue of King George III"
+  - says: "In his general orders the next day he wrote that it had so much the appearance of riot and want of order in the army that he disapproved the manner."
+    source: 1
+    quote: "yet it has so much the appearance of riot and want of order, in the Army, that he disapproves the manner."
+  - says: "British troops would not leave this city for another seven years."
+    source: 2
+    quote: "Two years later, on November 25, 1783, now known as Evacuation Day, British troops officially left NYC."
 sources:
-  - title: City Hall Park
-    publisher: NYC Parks
-    url: https://www.nycgovparks.org/parks/city-hall-park/history
-    retrievedAt: "2026-09-22"
-    rights: public-domain
+  - title: "Looking Back at Downtown's First Independence Day"
+    publisher: "Downtown Alliance"
+    url: https://downtownny.com/news/independence-day-history-downtown/
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Inside the Downtown Tavern Room Where Washington Once Bid Farewell to His Troops"
+    publisher: "Downtown Alliance"
+    url: https://downtownny.com/news/fraunces-tavern-long-room-george-washington/
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts

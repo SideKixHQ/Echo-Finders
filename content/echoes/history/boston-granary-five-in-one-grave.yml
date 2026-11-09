@@ -39,19 +39,59 @@ pronunciations:
     say: FAN-yul
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Look for a stone that faces Tremont Street."
+    source: 2
+    quote: "Today, they share a headstone facing toward Tremont Street."
+  - says: "It belongs to five men."
+    source: 1
+    quote: "Seven days later, a fifth victim of the massacre, Patrick Carr, was also interred in the plot."
+  - says: "On the fifth of March, seventeen seventy, British soldiers fired into a crowd on King Street."
+    source: 1
+    quote: "On March 5, 1770, seven British soldiers fired into a crowd of volatile Bostonians"
+  - says: "On the fifth of March, seventeen seventy, British soldiers fired into a crowd on King Street."
+    source: 1
+    quote: "but the greatest conflict occurred on King Street."
+  - says: "Three days later, Boston buried the dead."
+    source: 1
+    quote: "The battle for public perception began on March 8. Samuel Adams , a member of the Sons of Liberty, led a funeral procession for the victims of the Boston Massacre."
+  - says: "Witnesses said around ten thousand people followed the funeral."
+    source: 1
+    quote: "Witnesses suggest 10,000 people (approximately 67% of Boston's population) attended the funeral"
+  - says: "That was most of the town."
+    source: 1
+    quote: "(approximately 67% of Boston's population)"
+  - says: "The procession ended here."
+    source: 1
+    quote: "The procession ended at the Granary Burying Ground"
+  - says: "Samuel Gray, Samuel Maverick, James Caldwell and Crispus Attucks went into the same plot."
+    source: 1
+    quote: "The procession ended at the Granary Burying Ground where Gray, Maverick, Caldwell, and Attucks were laid to rest in the same burial plot."
+  - says: "A week later a fifth man, Patrick Carr, was laid in with them."
+    source: 1
+    quote: "Seven days later, a fifth victim of the massacre, Patrick Carr, was also interred in the plot."
+  - says: "Two of them, Attucks and Caldwell, were sailors with no family and no home in Boston."
+    source: 2
+    quote: "Because Attucks and fellow victim and sailor James Caldwell had no family or home in Boston, their bodies lay in state at Faneuil Hall ."
+  - says: "Before the funeral, their bodies lay in state at Faneuil Hall."
+    source: 2
+    quote: "their bodies lay in state at Faneuil Hall ."
+  - says: "Nobody in Boston was their family."
+    source: 2
+    quote: "had no family or home in Boston"
 sources:
   - title: "The Boston Massacre"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/000/boston-massacre.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Crispus Attucks"
     publisher: "National Park Service"
     url: https://www.nps.gov/people/crispus-attucks.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Granary Burying Ground"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/granary-burying-ground.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain

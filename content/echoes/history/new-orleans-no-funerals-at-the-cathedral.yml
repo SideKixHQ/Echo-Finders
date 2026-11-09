@@ -45,14 +45,54 @@ pronunciations:
     say: KON-tie
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "It was built for one purpose."
+    source: 1
+    quote: "directing that the Mortuary Chapel should be used for such purposes."
+  - says: "In the early eighteen-hundreds, Catholic funerals in New Orleans were held at the cathedral, in the middle of the old town."
+    source: 2
+    quote: "Up to the year 1819 all funerals of Catholics took place from the Cathedral."
+  - says: "The city council came to fear that the custom was spreading disease, in a city where epidemics came back again and again."
+    source: 2
+    quote: "the City Council, fearing that with the growth"
+  - says: "The city council came to fear that the custom was spreading disease, in a city where epidemics came back again and again."
+    source: 1
+    quote: "conducive to the 3pread of infection during the epidemics that afflicted the city from time to time"
+  - says: "The church bought this lot in eighteen twenty-five, for four hundred and twenty-five dollars."
+    source: 2
+    quote: "The Cathedral acquired the site on December 20, 1825, for the sum of $425."
+  - says: "The chapel was finished in eighteen twenty-seven."
+    source: 1
+    quote: "This church was designed and built by Gurlie and Guillot, local architects and contractors, for the Wardens of the St* Louis Cathedral in 1827."
+  - says: "A funeral at the cathedral would now cost a fifty dollar fine."
+    source: 1
+    quote: "In September, 1827, the City Council passed an ordinance forbidding funerals being held in the Cathedral"
+  - says: "A funeral at the cathedral would now cost a fifty dollar fine."
+    source: 1
+    quote: "Violation of the ordinance carried a fine of $50"
+  - says: "So for years, this was where the city's Catholic dead stopped on their way to the tomb."
+    source: 2
+    quote: "As a mortuary chapel this edifice was in constant use down to 1870."
+  - says: "So for years, this was where the city's Catholic dead stopped on their way to the tomb."
+    source: 1
+    quote: "The lot which the Wardens bought from the City was convenient to the parish cemetery"
+  - says: "It was called the Italian church for a while, then served the city's Spanish speakers, which is how it came by the name it carries now."
+    source: 1
+    quote: "Be- cause the majority of the parishioners spoke Italian, it was generally called the Italian Church. Later, because of a shift in population, Spanish became the prevalent language, the name was changed to Our Lady of Guadaloupe."
+  - says: "Our Lady of Guadalupe."
+    source: 1
+    quote: "the name was changed to Our Lady of Guadaloupe."
+  - says: "It was made to be the last door a great many people came through."
+    source: 1
+    quote: "directing that the Mortuary Chapel should be used for such purposes."
 sources:
   - title: "Our Lady of Guadaloupe Church (St. Anthony of Padua, The Mortuary Chapel), 411 North Rampart Street, HABS LA-1104, written historical and descriptive data (1958)"
     publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/la0048/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0048/data/la0048data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), North Rampart: the church of St. Anthony of Padua"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/13004346/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse/picayunesguideto00unse.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain

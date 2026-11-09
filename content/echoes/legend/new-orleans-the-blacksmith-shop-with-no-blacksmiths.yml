@@ -26,9 +26,9 @@ script: |
 
   It is called Lafitte's Blacksmith Shop. The story goes that the smuggler Jean Lafitte and his brother Pierre ran a forge on this corner, as cover for their real business.
 
-  It is an old story. George Washington Cable printed it as fact in eighteen eighty-four. By the nineteen-thirties there was a bronze plate on the building that read Lafitte's Rendezvous, site blacksmith shop, eighteen ten.
+  It is an old story. George Washington Cable printed it as fact in eighteen eighty-four. When federal surveyors came to study the cottage, they found a bronze plate on the corner that read Lafitte's Rendezvous, site blacksmith shop, eighteen ten.
 
-  But when federal surveyors studied the cottage in the nineteen-thirties, they found no record of who built it, or when. And the National Park Service, which tells the Lafittes' story today, says plainly that no evidence confirms the legend.
+  But they also found no record of who built it, or when. And the National Park Service, which tells the Lafittes' story today, says plainly that no evidence confirms the legend.
 
   What the records do show is across the street.
 
@@ -44,19 +44,68 @@ pronunciations:
     say: vee-YAR
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Look at the small, low cottage on the corner of Bourbon and Saint Philip."
+    source: 2
+    quote: "This building, ordinarily termed Lafitte!s Black- smith Shop, situated in the heart of the Vieux Carre on the corner of Bourbon and St, Phillip Streets"
+  - says: "It is called Lafitte's Blacksmith Shop."
+    source: 2
+    quote: "This building, ordinarily termed Lafitte!s Black- smith Shop"
+  - says: "The story goes that the smuggler Jean Lafitte and his brother Pierre ran a forge on this corner, as cover for their real business."
+    source: 3
+    quote: "This was the trade of blacksmith, though at their forge, on the corner of St. Philip and Bourbon Streets, probably none but slave hands swung the sledge or shaped the horseshoe."
+  - says: "The story goes that the smuggler Jean Lafitte and his brother Pierre ran a forge on this corner, as cover for their real business."
+    source: 1
+    quote: "Did the Lafitte brothers own a blacksmith shop in New Orleans’ French Quarter?"
+  - says: "George Washington Cable printed it as fact in eighteen eighty-four."
+    source: 3
+    quote: "This was the trade of blacksmith, though at their forge, on the corner of St. Philip and Bourbon Streets"
+  - says: "George Washington Cable printed it as fact in eighteen eighty-four."
+    source: 3
+    quote: "COPYRIGHT, 1884, BY CHARLES SCRIBNER’S SONS"
+  - says: "When federal surveyors came to study the cottage, they found a bronze plate on the corner that read Lafitte's Rendezvous, site blacksmith shop, eighteen ten."
+    source: 2
+    quote: "There is a bronze plate on the corner of the building reading: \"LAFITTE*S RENDEZVOUS Site Blacksmith Shop, 1810\""
+  - says: "And the National Park Service, which tells the Lafittes' story today, says plainly that no evidence confirms the legend."
+    source: 1
+    quote: "The mythical Lafitte Blacksmith shop is still a modern tourist attraction in the French Quarter today, though no evidence confirms the legend."
+  - says: "On the opposite corner stood a house bought in eighteen sixteen by Marie Louise Villard, a free woman of color and Pierre Lafitte's partner of many years."
+    source: 1
+    quote: "His long-time romantic partner, Marie Louise Villard, owned a building cross the street from today’s Blacksmith Shop."
+  - says: "On the opposite corner stood a house bought in eighteen sixteen by Marie Louise Villard, a free woman of color and Pierre Lafitte's partner of many years."
+    source: 1
+    quote: "It is likely that Pierre provided some of the money for Marie to buy the house from Claude Tremé on August 17, 1816."
+  - says: "On the opposite corner stood a house bought in eighteen sixteen by Marie Louise Villard, a free woman of color and Pierre Lafitte's partner of many years."
+    source: 1
+    quote: "Villard was a free, multi-racial woman"
+  - says: "They had seven children together."
+    source: 1
+    quote: "The couple would have seven children together in all."
+  - says: "Pierre was in this neighborhood often."
+    source: 1
+    quote: "The story may have begun because Pierre Lafitte was often in the neighborhood."
+  - says: "That, the Park Service suggests, may be how the legend found this corner."
+    source: 1
+    quote: "The story may have begun because Pierre Lafitte was often in the neighborhood."
+  - says: "So the Lafittes probably never shod a horse here."
+    source: 1
+    quote: "though no evidence confirms the legend."
+  - says: "But one of them had a family just over the road."
+    source: 1
+    quote: "His long-time romantic partner, Marie Louise Villard, owned a building cross the street from today’s Blacksmith Shop."
 sources:
   - title: "Jean Lafitte, A Pirate's Life"
     publisher: "National Park Service, Jean Lafitte National Historical Park and Preserve"
     url: https://www.nps.gov/jela/learn/historyculture/jean-lafitte-a-pirate-s-life.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "941 Bourbon Street (Cottage), New Orleans, Orleans Parish, LA (HABS LA-24)"
     publisher: "Historic American Buildings Survey, Library of Congress"
-    url: https://www.loc.gov/item/la0018/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0018/data/la0018data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Creoles of Louisiana (1884), by George W. Cable, chapter The Pirates of Barataria"
     publisher: "Charles Scribner's Sons, via the Library of Congress"
-    url: https://www.loc.gov/item/01008769/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/creolesoflouisia01cabl/creolesoflouisia01cabl.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain

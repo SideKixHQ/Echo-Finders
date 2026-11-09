@@ -19,9 +19,9 @@ teaser: "Everyone knew it was going to happen."
 script: |
   Look along the railroad tracks.
 
-  On the seventh of June, eighteen ninety-two, a shoemaker named Homer Plessy bought a first-class ticket on the East Louisiana Railroad, for Covington, across the lake. He took a seat in the car for white passengers.
+  On the seventh of June, eighteen ninety-two, a shoemaker named Homer Plessy bought a first-class ticket on the East Louisiana Railroad, for Covington. He took a seat in the car for white passengers.
 
-  Under a Louisiana law two years old, that seat was not his. The law said railroads must keep separate cars by race, and under that law Plessy was Black. His own petition later told the court that no one could see it in him.
+  Under a Louisiana law two years old, that seat was not his. The law said railroads must keep separate cars by race, and under that law Plessy was Black. His own petition later told the court that it could not be seen in him.
 
   The conductor told him to move. He refused. He was arrested and taken to the parish jail.
 
@@ -47,24 +47,70 @@ pronunciations:
     say: MAIR-uh-nee
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "On the seventh of June, eighteen ninety-two, a shoemaker named Homer Plessy bought a first-class ticket on the East Louisiana Railroad, for Covington."
+    source: 2
+    quote: "that on June 7,1892, he engaged and paid for a first class passage on the East Louisiana Railway from New Orleans to Covington"
+  - says: "On the seventh of June, eighteen ninety-two, a shoemaker named Homer Plessy bought a first-class ticket on the East Louisiana Railroad, for Covington."
+    source: 1
+    quote: "a shoe maker, and a civil rights activist"
+  - says: "Under a Louisiana law two years old, that seat was not his."
+    source: 1
+    quote: "But on June 10, 1890, the State of Louisiana passed a law called Act 111, or the Separate Car Act."
+  - says: "The law said railroads must keep separate cars by race, and under that law Plessy was Black."
+    source: 1
+    quote: "This law said that train companies had to give “equal but separate” seating for white and Black passengers."
+  - says: "The law said railroads must keep separate cars by race, and under that law Plessy was Black."
+    source: 4
+    quote: "He was one-eighth African American, which under Louisiana state law classified him as an African American."
+  - says: "His own petition later told the court that it could not be seen in him."
+    source: 2
+    quote: "that the mixture of colored blood was not discernible in him"
+  - says: "A committee of citizens had organized to test the law in court, and Plessy volunteered."
+    source: 1
+    quote: "In 1891, a group called the Citizens Committee ( Comité de Citoyens ) formed to test the law in court."
+  - says: "A committee of citizens had organized to test the law in court, and Plessy volunteered."
+    source: 1
+    quote: "Homer Plessy volunteered to help test the law."
+  - says: "The case went all the way to the Supreme Court."
+    source: 1
+    quote: "The case eventually reached the U.S. Supreme Court."
+  - says: "In eighteen ninety-six it lost, seven votes to one."
+    source: 3
+    quote: "The Supreme Court announced its decision in May of 1896. Seven of the eight participating justices sided with Ferguson"
+  - says: "The ruling made separate but equal the law of the land, and it stood for almost sixty years."
+    source: 1
+    quote: "This ruling stayed in place for almost 60 years"
+  - says: "The one dissenting justice wrote that the Constitution is color-blind."
+    source: 2
+    quote: "Our Constitution is color-blind, and neither knows nor tolerates classes among citizens."
+  - says: "The one dissenting justice wrote that the Constitution is color-blind."
+    source: 2
+    quote: "Dissenting Opinion: Harlan, J."
+  - says: "More than a century later, a descendant of the judge who first ruled against Plessy and a member of the Plessy family came to this story together."
+    source: 4
+    quote: "Phoebe Ferguson is a great-great-granddaughter of Judge John Howard Ferguson. Judge Ferguson served on the Orleans Parish Criminal Court and ruled against Homer Plessy."
+  - says: "A Plessy and a Ferguson, side by side."
+    source: 4
+    quote: "Phoebe Ferguson and Keith Plessy stand on the railroad tracks where Homer Plessy was arrested in 1892."
 sources:
   - title: "Homer Plessy"
     publisher: "National Park Service, Jean Lafitte National Historical Park and Preserve"
     url: https://www.nps.gov/people/homer-plessy.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "U.S. Reports: Plessy v. Ferguson, 163 U.S. 537 (1896)"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/usrep163537/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep163/usrep163537/usrep163537.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Plessy in the Making"
     publisher: "National Park Service, Brown v. Board of Education National Historical Park"
     url: https://www.nps.gov/brvb/learn/historyculture/plessy.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Plessy and Ferguson (program announcement, 2010)"
     publisher: "National Park Service, Brown v. Board of Education National Historical Park"
     url: https://www.nps.gov/brvb/learn/news/plessyferguson.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain

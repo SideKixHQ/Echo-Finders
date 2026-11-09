@@ -33,39 +33,70 @@ script: |
 
   It never used the word voodoo.
 
-  Within a couple of decades, the guidebooks had a different woman. A voodoo queen, keeping a sacred serpent in a carved box in her bedroom. They give no source for any of it.
+  By nineteen-oh-four, a city guide had a different woman. A voodoo queen, keeping a sacred serpent in a carved box in her bedroom. It does not say where it got any of that.
 
-  The legend outgrew the nurse. In nineteen thirty-seven, a wire story reported that the bricks of her crumbling tomb were scratched with crosses, left by people who traced one, said a prayer, and slipped away. People still come hoping for luck. That is a custom built on a legend, not a fact.
+  The legend outgrew the nurse. Decades later, a wire story reported that the bricks of her crumbling tomb were scratched with crosses, left by people who traced one, said a prayer, and slipped away. People still come hoping for luck. That is a custom built on a legend, not a fact.
 
   The gate is as close as this story needs to bring you. Please do not add a mark of your own.
 
   The nurse is in the record. The queen is in the scratches.
 detail: |
-  An 1898 New York Sun piece, reprinted in Savannah, follows two visitors led to the tomb
-  by a local woman who tells them that anything you get in a cemetery will bring you luck.
+  An 1898 New York Sun piece, reprinted in Savannah, follows two visitors hunting, guidebook
+  in hand, for Marie Laveau's old cottage.
 pronunciations:
   - written: Marie Laveau
     say: muh-REE lah-VOH
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Somewhere in there is the tomb of Marie Laveau."
+    source: 1
+    quote: "Marie Kivoau was buried in her family tomb in St. Louis cemetery No. 1."
+  - says: "When she died, in June of eighteen eighty-one, a New Orleans obituary was reprinted as far away as Omaha."
+    source: 1
+    quote: "THE OMAHA DAILY BEE' WEDNESDAY JUNE 22 1881."
+  - says: "When she died, in June of eighteen eighty-one, a New Orleans obituary was reprinted as far away as Omaha."
+    source: 1
+    quote: "DEATH OF MARIE LAVEAU"
+  - says: "It said she was buried at five in the evening in her family tomb in this cemetery, followed by a large crowd, the most prominent and the most humble."
+    source: 1
+    quote: "At 5 o'clock yesterday evening ! } Marie Kivoau was buried in her family tomb in St. Louis cemetery No. 1. Her remains were followed to hole grave by a largo concourse of people , the must prominent and the moat humble joining in paying their last respects to the dead."
+  - says: "She sat with condemned prisoners in their last hours."
+    source: 1
+    quote: "Shu would nit with the condemned in their lust moments"
+  - says: "The closest it came to anything else was one line."
+    source: 1
+    quote: "but the ignorant attributed her success to unnatural means and held her in constant dread."
+  - says: "By nineteen-oh-four, a city guide had a different woman."
+    source: 2
+    quote: "Copyright 1904 by"
+  - says: "A voodoo queen, keeping a sacred serpent in a carved box in her bedroom."
+    source: 2
+    quote: "The “Grand Zombi,’” or serpent, was the peculiar object of worship and was guarded as sacred by their queen and high- priestess, Marie Laveau, “in an exquisitely carved box of alabaster in her own bedchamber.”"
+  - says: "Decades later, a wire story reported that the bricks of her crumbling tomb were scratched with crosses, left by people who traced one, said a prayer, and slipped away."
+    source: 3
+    quote: "The bricks of her I crumbling tomb are marked with 1 scratches of those who traced a I cross, said a prayer and slipped; away."
+  - says: "Decades later, a wire story reported that the bricks of her crumbling tomb were scratched with crosses, left by people who traced one, said a prayer, and slipped away."
+    source: 3
+    quote: "New Orleans, Feb. 10. ?(U-R??"
 sources:
   - title: "Death of Marie Laveau, reprinted from New Orleans, Omaha daily bee, 22 June 1881, p. 6"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn99021999/1881-06-22/ed-1/?sp=6
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Marie Laveau, the Voudoo Queen"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Black Magic and Voodoo Still Rife in Louisiana (United Press), The daily independent, Elizabeth City, N.C., 11 February 1937, p. 8"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn91068099/1937-02-11/ed-1/?sp=8
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
   - title: "A Voudoo Queen's Grave (from the New York Sun), The morning news, Savannah, 26 June 1898, p. 20"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn86063034/1898-06-26/ed-1/?sp=20
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain

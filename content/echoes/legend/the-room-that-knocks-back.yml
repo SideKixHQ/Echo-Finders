@@ -9,7 +9,7 @@ at: { lat: 33.75306, lng: -118.18972 }
 triggerRadiusKm: 0.15
 category: legend
 format: short
-durationS: 100
+durationS: 70
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -30,7 +30,7 @@ script: |
   The Queen Mary’s operator publishes reports of nighttime knocks, bathroom lights
   switching on, faucets running, and doors opening or closing unexpectedly.
 
-  The room has become part of the ship’s ghost folklore.
+  The room has become part of the ship’s ghost folklore. It is a legend.
 
   Those reports are not independently established evidence of spirits.
 
@@ -57,9 +57,22 @@ script: |
   itself.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "That makes the story of stateroom B340 especially difficult to separate from its surroundings."
+    source: 1
+    quote: "Stateroom B340 has a large volume of recorded paranormal activity with many stories of haunted encounters noted in the ship’s logs"
+  - says: "The Queen Mary’s operator publishes reports of nighttime knocks, bathroom lights switching on, faucets running, and doors opening or closing unexpectedly."
+    source: 1
+    quote: "including reports of knocks on the door in the middle of the night, bathroom lights turning on by themselves, the sink faucet turning on and off on its own, and unexplained closing and opening of bathroom doors"
+  - says: "The room has become part of the ship’s ghost folklore."
+    source: 1
+    quote: "This new room category complements our existing B340 Paranormal Suite experience, giving guests another immersive way to connect with the legends and history that make the Queen Mary unlike any other destination."
+  - says: "B340’s legend lives in that uncertainty."
+    source: 1
+    quote: "Stateroom B340 has a large volume of recorded paranormal activity"
 sources:
-  - title: "Special offers"
+  - title: "Specials & Packages: B340 Suite"
     publisher: "The Queen Mary"
     url: https://www.queenmary.com/special-offers.htm
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts

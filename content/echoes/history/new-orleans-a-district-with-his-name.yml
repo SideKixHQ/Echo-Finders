@@ -9,13 +9,13 @@ at: { lat: 29.95801, lng: -90.07205 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 78
+durationS: 88
 visibility: at-hand
 certainty: documented
 minAge: 16
 quality: 0.75
 tags: [new-orleans, new-orleans-core, storyville, basin-street, jazz, music]
-teaser: "The name outlived every building."
+teaser: "The name outlasted almost every building."
 script: |
   Look across Basin Street, away from the French Quarter.
 
@@ -31,26 +31,84 @@ script: |
 
   In the nineteen-forties nearly every building over there was torn down for public housing.
 
-  The name outlived every one of them.
+  The name has outlasted almost all of them.
 detail: |
   The National Park Service says only six original Storyville structures and remnants
   survive, among them Frank Early's Saloon. The Tango Belt, another early jazz district,
   lay just across Basin and North Rampart streets in the French Quarter.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Look across Basin Street, away from the French Quarter."
+    source: 1
+    quote: "was in the French Quarter just across Basin and North Rampart streets from Storyville"
+  - says: "Music was a sideline here, but a real one."
+    source: 1
+    quote: "Prostitution was the primary business in Storyville, but music and entertainment were prominent sidelines."
+  - says: "For twenty years, the blocks over there were a legal red-light district."
+    source: 1
+    quote: "which operated legally between 1897 and 1917"
+  - says: "It operated openly from eighteen ninety-seven."
+    source: 1
+    quote: "which operated legally between 1897 and 1917"
+  - says: "The newspapers called it Storyville, and explained the name."
+    source: 2
+    quote: "\"Storyville\"—so named because It wa scstabllshed by an ordinance by a man named Story"
+  - says: "The district had been set up by an ordinance, and the man behind the ordinance was named Story."
+    source: 2
+    quote: "\"Storyville\"—so named because It wa scstabllshed by an ordinance by a man named Story"
+  - says: "Pete Lala's."
+    source: 1
+    quote: "such as Pete Lala's, the 101 Ranch, the Fewclothes Cabaret, the Tuxedo Dance Hall, and the Big 25."
+  - says: "The hundred and one Ranch."
+    source: 1
+    quote: "such as Pete Lala's, the 101 Ranch, the Fewclothes Cabaret, the Tuxedo Dance Hall, and the Big 25."
+  - says: "The Tuxedo Dance Hall."
+    source: 1
+    quote: "such as Pete Lala's, the 101 Ranch, the Fewclothes Cabaret, the Tuxedo Dance Hall, and the Big 25."
+  - says: "The Big Twenty-Five."
+    source: 1
+    quote: "such as Pete Lala's, the 101 Ranch, the Fewclothes Cabaret, the Tuxedo Dance Hall, and the Big 25."
+  - says: "A young pianist named Jelly Roll Morton started out playing in this neighborhood."
+    source: 3
+    quote: "He began playing the piano at an early age in the New Orleans Storyville neighborhood"
+  - says: "The National Park Service is firm about that."
+    source: 1
+    quote: "While jazz was not born in Storyville, as legend has it"
+  - says: "But Storyville put the new music in front of people who might never have heard it otherwise."
+    source: 1
+    quote: "the district helped expose the new music to a wider audience."
+  - says: "It ended at midnight on the twelfth of November, nineteen seventeen."
+    source: 2
+    quote: "Storyville, New Orleans, La., Nov. 13. —"
+  - says: "It ended at midnight on the twelfth of November, nineteen seventeen."
+    source: 2
+    quote: "passed out of existence at midnight last night."
+  - says: "It ended at midnight on the twelfth of November, nineteen seventeen."
+    source: 1
+    quote: "which operated legally between 1897 and 1917"
+  - says: "Everything closed at the stroke of twelve, at the request of the Navy Department."
+    source: 2
+    quote: "ere closed at the stroke of 12—at the ; request of the navy department."
+  - says: "One wire report said more than a third of the district's two thousand women had already left the city."
+    source: 2
+    quote: "More than a third of the famous district's two thousand women are estimated today already to have left the city."
+  - says: "In the nineteen-forties nearly every building over there was torn down for public housing."
+    source: 1
+    quote: "Virtually all Storyville structures were removed for the Iberville public housing project in the 1940s"
 sources:
   - title: "Jazz Neighborhoods"
     publisher: "National Park Service, New Orleans Jazz National Historical Park"
     url: https://www.nps.gov/jazz/learn/historyculture/jazz-map.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Restricted District at New Orleans Closed, Evening capital news, Boise, Idaho, 13 November 1917, p. 1"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn88056024/1917-11-13/ed-1/?sp=1
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Jelly Roll Morton interviews conducted by Alan Lomax (National Recording Registry essay)"
     publisher: "Library of Congress, National Recording Preservation Board"
     url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Lomax-JellyRollMorton.pdf
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts

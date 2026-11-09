@@ -43,14 +43,45 @@ pronunciations:
     say: kah-BEEL-doh
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "It is a near twin of the Cabildo on the other side."
+    source: 2
+    quote: "Guillemard designed the Presbytere to match the Cabildo."
+  - says: "The Presbytère."
+    source: 1
+    quote: "The Presbytere obtained its name from being that part of the church reserved as a dwelling for the offi- ciating priests and it has retained this name, regardless of the fact that no priest ever lived in this house"
+  - says: "The rich Spaniard who paid for the cathedral started this building in the seventeen nineties, and got it as far as the first row of arches."
+    source: 1
+    quote: "It is however almost certain that Don Almonaster planned and started the construction of the building about 1795, and had raised it to the first arches when"
+  - says: "The rich Spaniard who paid for the cathedral started this building in the seventeen nineties, and got it as far as the first row of arches."
+    source: 1
+    quote: "Don Andres Almonaster y Roxas at his own ex- pense rebuilt St. Louis Cathedral"
+  - says: "Then, in seventeen ninety-eight, he died."
+    source: 1
+    quote: "the work was intercepted by his death. April 80, 1798."
+  - says: "The church wardens finally finished it in eighteen thirteen."
+    source: 2
+    quote: "The wardens of the St. Louis Cathedral finished the building in 1813."
+  - says: "By then New Orleans belonged to the United States."
+    source: 2
+    quote: "By that time, New Orleans had already been part of the United States for a decade."
+  - says: "In the nineteen thirties, workmen stripped the stucco off the walls, and found the pause written in the brickwork."
+    source: 1
+    quote: "was revealed in the brickwork, when the stucco was stripped off in the restoration work conducted by the C. W. A. in at 1934."
+  - says: "The join is covered again, but that line is about fifteen years of nothing."
+    source: 1
+    quote: "after the work was discontinued in 1798"
+  - says: "The join is covered again, but that line is about fifteen years of nothing."
+    source: 2
+    quote: "The wardens of the St. Louis Cathedral finished the building in 1813."
 sources:
   - title: "Presbytere, Jackson Square, New Orleans (HABS LA-18-5), written historical and descriptive data"
     publisher: "Historic American Buildings Survey, National Park Service; Library of Congress"
-    url: https://www.loc.gov/item/la0008/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0008/data/la0008data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Presbytere, New Orleans, Louisiana"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/the-presbytere-new-orleans-louisiana.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain

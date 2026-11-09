@@ -32,40 +32,93 @@ script: |
   it. By then she had been running it for fourteen years.
 
   In nineteen thirty-eight, the owner of the fleet was still a Paget, John Paget. When
-  Shirley Temple came to town, he made her an honorary admiral of the swan boat navy.
+  Shirley Temple came to town, she was made an honorary admiral of the swan boat navy, and
+  he promised her an admiral's hat.
 
   As for the man at the landing, one story from those years gives his whole sales pitch.
   Grown folks, ten cents. Children, five. Babies thrown in.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "That is where the driver sits, pedalling as if on a bicycle, and paddle wheels push the whole thing along."
+    source: 5
+    quote: "the man who provides the power takes his place in the rear, and pedals as on a bicycle, and the peddle wheels revolve"
+  - says: "The boats began running here in eighteen seventy-seven."
+    source: 1
+    quote: "The Swan Boats, designed by Robert Paget, began operation in 1877."
+  - says: "They were designed by a man named Robert Paget."
+    source: 1
+    quote: "The Swan Boats, designed by Robert Paget"
+  - says: "Sixteen years later, newspapers across the country ran a small item about who was really in charge."
+    source: 2
+    quote: "Mrs. Paget's Swan Boats. In Boston in the public garden swas boat. sail o sr the pond."
+  - says: "Sixteen years later, newspapers across the country ran a small item about who was really in charge."
+    source: 3
+    quote: "And tbe owner and manager of the Boston swan boats Is a woman"
+  - says: "The owner and manager of the Boston swan boats, they reported, was a woman."
+    source: 2
+    quote: "And the owner and lmanilager of the Boston swan boats is a woman."
+  - says: "Mrs. Paget."
+    source: 2
+    quote: "Mrs. Paget, for that is the name of the woman"
+  - says: "She did not stand at the landing calling for fares."
+    source: 2
+    quote: "does not herself stand at the landing and solicit \"fares,\""
+  - says: "She left that to a man."
+    source: 2
+    quote: "but leaves that practical part of her business to a man."
+  - says: "But she came down to the landing often, studied the business, and made a very comfortable living from it."
+    source: 2
+    quote: "She goes very frequently to the lalding, however, and studies the interests of the swan boat industry. She makes a very comfortable living from her novel business"
+  - says: "By then she had been running it for fourteen years."
+    source: 2
+    quote: "which she has managed for 14 years."
+  - says: "In nineteen thirty-eight, the owner of the fleet was still a Paget, John Paget."
+    source: 4
+    quote: "John J. Paget, owner of the fleet of swan boats"
+  - says: "When Shirley Temple came to town, she was made an honorary admiral of the swan boat navy, and he promised her an admiral's hat."
+    source: 4
+    quote: "On Monday Shirley was made an honorary admiral In Boston's Swan Boat Navy and John J. Paget, owner of the fleet of swan boats, promised to have an admiral's hat for her to wear on today’s voyage."
+  - says: "As for the man at the landing, one story from those years gives his whole sales pitch."
+    source: 6
+    quote: "\"Take a ride in the swan boats,\" hel. called loudly from the lauding."
+  - says: "Grown folks, ten cents."
+    source: 6
+    quote: "\"Grown folks, 10 cents; children, 5,\""
+  - says: "Children, five."
+    source: 6
+    quote: "children, 5,"
+  - says: "Babies thrown in."
+    source: 6
+    quote: "\"Babies thrown in.\""
 sources:
   - title: "Boston Public Garden"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/boston-public-garden.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Mrs. Paget's Swan Boats. The Helena Independent, October 8, 1893, page 6"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83025308/1893-10-08/ed-1/?sp=6
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Fort Worth Gazette, October 29, 1893, page 2 (Mrs. Paget's swan boats)"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn86071158/1893-10-29/ed-1/?sp=2
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Shirley Temple Going for Ride. The Waterbury Democrat, August 3, 1938, page 9"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn82014085/1938-08-03/ed-1/?sp=9
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
   - title: "Whiting's Boston Letter. Springfield Weekly Republican, April 8, 1937, page 9"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83020847/1937-04-08/ed-1/?sp=9
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
   - title: "Cruel Captain! The St. Johns Herald, April 8, 1899, page 3 (from Youth's Companion)"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn94051692/1899-04-08/ed-1/?sp=3
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain

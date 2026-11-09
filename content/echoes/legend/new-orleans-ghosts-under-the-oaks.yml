@@ -1,0 +1,102 @@
+# Drafted by Claude Code (2026-11-09) for the New Orleans ghost legends.
+# Listening spot: Public paths among the old live oaks of City Park, between the New Orleans Museum of Art and the Peristyle, where the 1913 guide places the "Oaks" of the old dueling ground. City Park is public.
+# Position: About 90 m south-east of the Wikidata Q2063082 New Orleans Museum of Art point (29.98648, -90.09344), toward the Peristyle and the oak grove; the exact Dueling Oak was not located from a reachable source (low confidence; check on site). Wide trigger for a park.
+id: new-orleans-ghosts-under-the-oaks
+title: "Ghosts Under the Oaks"
+summary: "Under these oaks Creole gentlemen settled quarrels at sunrise. The old writers said the place must be crowded with ghosts."
+place: "The Oaks, old dueling ground, City Park, New Orleans, Louisiana"
+at: { lat: 29.98580, lng: -90.09290 }
+triggerRadiusKm: 0.12
+category: legend
+format: short
+durationS: 83
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The duels under the Oaks are documented in the 1904 and 1913 Picayune guides. The ghosts are a
+  manner of speaking in Grace King (1895) and the 1904 guide, not a reported sighting, and the script
+  says so aloud. The precise dueling tree is not located here.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [new-orleans, city-park, duels, ghosts, legend]
+teaser: "Every quarrel in old New Orleans, it was said, ended up under these trees."
+script: |
+  Look at the old live oaks around you, hung with moss.
+
+  In the early eighteen-hundreds this grove was the dueling ground of the Creole gentlemen of New Orleans. They met here in the early morning, with pistol, saber, even shotgun.
+
+  A city guide of nineteen-oh-four listed what they fought about. A slight at a ball. A quarrel with a rival lover. Politics. The last opera. Whether a famous singer could reach a certain note. Legal points. Scientific questions. All of it, the guide said, came to a direct issue under these oaks.
+
+  So the oaks collected ghosts. What a troop of ghostly stories come up under the oaks, the guide wrote. Grace King, a few years earlier, put it another way. What a trooping of ghosts there would be under these old trees, she wrote, if everyone who had fought here could come back in spirit.
+
+  Treat that as a legend. Nobody has shown that any duellist walks here. What is real is a line the guide found cut on old tombs in the St. Louis cemeteries. Died on the field of honor.
+
+  Stand under the branches in the early morning, and the story is easy to believe. That is all it ever needed.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "In the early eighteen-hundreds this grove was the dueling ground of the Creole gentlemen of New Orleans."
+    source: 3
+    quote: "These are the “Oaks,” famous in Louisiana legend and history, as the dueling-ground of Creole gallants in the early part of the last century."
+  - says: "They met here in the early morning, with pistol, saber, even shotgun."
+    source: 1
+    quote: "a meeting of adversaries in mortal combat, with pistol, saber or shotgun, or “colichemard.”"
+  - says: "They met here in the early morning, with pistol, saber, even shotgun."
+    source: 1
+    quote: "A thousand stories are told of the bloedy encounters which took place in the early morning under the “Oaks.”"
+  - says: "A city guide of nineteen-oh-four listed what they fought about."
+    source: 1
+    quote: "Every imagin- able cause of quarrel was settled under these ancient trees."
+  - says: "A city guide of nineteen-oh-four listed what they fought about."
+    source: 1
+    quote: "Copyright 1904 by"
+  - says: "A slight at a ball."
+    source: 1
+    quote: "Some slight in- fringement of ballroom etiquette, a quarrel with a rival lover, a difference of opinion in polities, the last opera"
+  - says: "Politics."
+    source: 1
+    quote: "a difference of opinion in polities"
+  - says: "The last opera."
+    source: 1
+    quote: "the last opera"
+  - says: "Whether a famous singer could reach a certain note."
+    source: 1
+    quote: "the ability of the famous “falcon’’ to reach a certain note"
+  - says: "All of it, the guide said, came to a direct issue under these oaks."
+    source: 1
+    quote: "legal points, scientific questions—all came to a direct issue under these “Oaks.”"
+  - says: "What a troop of ghostly stories come up under the oaks, the guide wrote."
+    source: 1
+    quote: "What a troop of ghostly stories come up under the “Oaks!”"
+  - says: "Grace King, a few years earlier, put it another way."
+    source: 2
+    quote: "What a trooping of ghosts under the old trees, if all 296 NEW ORLEANS. the votaries of honour who had fought or assisted others to fight there could revisit the place in spirit!"
+  - says: "Grace King, a few years earlier, put it another way."
+    source: 2
+    quote: "Copyricut, 1895, By MACMILLAN AND CO."
+  - says: "What a trooping of ghosts there would be under these old trees, she wrote, if everyone who had fought here could come back in spirit."
+    source: 2
+    quote: "What a trooping of ghosts under the old trees, if all 296 NEW ORLEANS. the votaries of honour who had fought or assisted others to fight there could revisit the place in spirit!"
+  - says: "What is real is a line the guide found cut on old tombs in the St. Louis cemeteries."
+    source: 1
+    quote: "Passing from aisle to aisle in the old cemetery, on many tombs will be found the legend, “Mort sur le Champ d’Hon. neur’”’ (Died on the Field of Honor)"
+  - says: "Died on the field of honor."
+    source: 1
+    quote: "(Died on the Field of Honor)"
+sources:
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), City Park and the Dueling Oaks"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "New Orleans, the place and the people (1895), by Grace King"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansplacep00kin/neworleansplacep00kin.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), City Park: the Oaks"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse/picayunesguideto00unse.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain

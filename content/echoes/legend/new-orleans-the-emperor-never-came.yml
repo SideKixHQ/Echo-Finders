@@ -26,15 +26,15 @@ script: |
 
   It is called the Napoleon House. The story is that it was meant for Napoleon himself.
 
-  In his last years, Napoleon was held prisoner on the island of Saint Helena. In New Orleans there were Frenchmen who still adored him. One of them was Nicholas Girod, a former mayor of the city, who lived in this house.
+  In his last years, Napoleon was held prisoner on the island of Saint Helena. In New Orleans there were Frenchmen who still adored him. One of them was Nicholas Girod, a former mayor of the city, whose family built this house.
 
-  The story goes that Girod and his friends paid for a fast ship called the Seraphine, signed on a crew of Baratarian privateers, and planned to sail to the island, take the emperor off by night, and bring him here.
+  The story goes that Girod and his friends paid for a fast ship called the Seraphine, signed on one of Jean Lafitte's old gunners as mate, and planned to sail to the island, take the emperor off by night, and bring him here.
 
   Then word came that Napoleon had died, in May eighteen twenty-one. The ship never sailed.
 
-  Is it true? A New Orleans writer in eighteen ninety-five said there could be no doubt the expedition was real. A federal survey in nineteen fifty-five called it a popular legend.
+  Is it true? A city guide of nineteen-oh-four said there was every reason to believe it. A federal survey in nineteen fifty-five called it a popular legend.
 
-  It is not even clear which house it is. A city guide of nineteen-oh-four gave the name Napoleon House to a different mansion altogether, near Canal Street, and expected it to be torn down that year. And the survey of nineteen fifty-five found two houses on this short stretch of Chartres Street, both going by the name.
+  It is not even clear which house it is. That same guide gave the name Napoleon House to a different mansion altogether, near Canal Street, and expected it to be torn down that year. And the survey of nineteen fifty-five found two houses on this short stretch of Chartres Street, both going by the name.
 
   The emperor never came to New Orleans.
 
@@ -50,24 +50,89 @@ pronunciations:
     say: bar-uh-TARE-ee-un
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Look across at the three-storey house on the corner of Chartres and Saint Louis, with iron balconies on both street fronts and an old tile roof."
+    source: 1
+    quote: "The main body of the house at the corner of Chartres and St. Louis Streets is three stories with a hipped roof covered with French pantile (shingle tile)"
+  - says: "It is called the Napoleon House."
+    source: 1
+    quote: "both houses are frequently referred to as \"The Napoleon House\"."
+  - says: "The story is that it was meant for Napoleon himself."
+    source: 1
+    quote: "There is a popular legend in New Orleans that the house was in- tended as a refuge for Napoleon"
+  - says: "In his last years, Napoleon was held prisoner on the island of Saint Helena."
+    source: 2
+    quote: "to liberate the Emperor from his confinement in St. Helena."
+  - says: "In New Orleans there were Frenchmen who still adored him."
+    source: 2
+    quote: "He was an ardent admirer of Napoleon Bonaparte, and engaged in a plot with a number of enthusiastic Frenchmen"
+  - says: "One of them was Nicholas Girod, a former mayor of the city, whose family built this house."
+    source: 2
+    quote: "Mr. Girod was the Mayor of New Orieans in 1814."
+  - says: "One of them was Nicholas Girod, a former mayor of the city, whose family built this house."
+    source: 1
+    quote: "Builder Claude and Nicholas Girod"
+  - says: "The story goes that Girod and his friends paid for a fast ship called the Seraphine, signed on one of Jean Lafitte's old gunners as mate, and planned to sail to the island, take the emperor off by night, and bring him here."
+    source: 2
+    quote: "The conspirators built a wonderfully fast - clipper yacht, and called it the “Seraphine.’’ Their plan was to bring the yacht near the island some dark night and spirit the Emperor aboard."
+  - says: "The story goes that Girod and his friends paid for a fast ship called the Seraphine, signed on one of Jean Lafitte's old gunners as mate, and planned to sail to the island, take the emperor off by night, and bring him here."
+    source: 3
+    quote: "Dom- inick You, long-time buccaneer and expert gunner of the privateer-pirate-smuggler Jean Lafitte, was signed on as mate of the vessel."
+  - says: "The story goes that Girod and his friends paid for a fast ship called the Seraphine, signed on one of Jean Lafitte's old gunners as mate, and planned to sail to the island, take the emperor off by night, and bring him here."
+    source: 2
+    quote: "sail away and bring the hero of Austerlitz to New Orleans."
+  - says: "Then word came that Napoleon had died, in May eighteen twenty-one."
+    source: 3
+    quote: "word came to America that Napoleon had died on May 5, 1821."
+  - says: "Then word came that Napoleon had died, in May eighteen twenty-one."
+    source: 1
+    quote: "died at St. Helena !>lay 5, 1821."
+  - says: "The ship never sailed."
+    source: 3
+    quote: "The Seraphine, destined to immortality as the rescue-craft of the great Napoleon, became an or- dinary craft of commerce."
+  - says: "Is it true?"
+    source: 2
+    quote: "There is every reason to believe that their plan was directed and approved by the captive of Longwood"
+  - says: "A city guide of nineteen-oh-four said there was every reason to believe it."
+    source: 2
+    quote: "There is every reason to believe that their plan was directed and approved by the captive of Longwood"
+  - says: "A city guide of nineteen-oh-four said there was every reason to believe it."
+    source: 2
+    quote: "Copyright 1904 by"
+  - says: "A federal survey in nineteen fifty-five called it a popular legend."
+    source: 1
+    quote: "There is a popular legend in New Orleans that the house was in- tended as a refuge for Napoleon"
+  - says: "A federal survey in nineteen fifty-five called it a popular legend."
+    source: 1
+    quote: "Sam Wilson October 2, 1955"
+  - says: "That same guide gave the name Napoleon House to a different mansion altogether, near Canal Street, and expected it to be torn down that year."
+    source: 2
+    quote: "At the corner of Hx- ehange Alley and Customhouse Street is an ancient mansion with a belvidere a£ wrought iron on the roof. It is often called The Napoleon House"
+  - says: "That same guide gave the name Napoleon House to a different mansion altogether, near Canal Street, and expected it to be torn down that year."
+    source: 2
+    quote: "it is probable that before the close of 1904, the his- toric edifice will be demolished"
+  - says: "And the survey of nineteen fifty-five found two houses on this short stretch of Chartres Street, both going by the name."
+    source: 1
+    quote: "The house at 514 Chartres Street is also LA- Louisiana - 9 • Page 5 3(»-Newcfl associated with this legend3 and both houses are frequently referred to as \"The Napoleon House\"."
+  - says: "The emperor never came to New Orleans."
+    source: 3
+    quote: "word came to America that Napoleon had died on May 5, 1821."
+  - says: "But the city had more than one house ready for him."
+    source: 1
+    quote: "both houses are frequently referred to as \"The Napoleon House\"."
 sources:
   - title: "Girod House, 500-506 Chartres Street, New Orleans, Orleans Parish, LA (HABS LA-9)"
     publisher: "Historic American Buildings Survey, Library of Congress"
-    url: https://www.loc.gov/item/la0011/
-    retrievedAt: "2026-10-14"
-    rights: public-domain
-  - title: "New Orleans As It Was, Episodes of Louisiana Life (1895), by Henry C. Castellanos"
-    publisher: "L. Graham and Son, via the Library of Congress"
-    url: https://www.loc.gov/item/01008770/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0011/data/la0011data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's Guide to New Orleans (1904), The Napoleon House"
     publisher: "The Picayune, via the Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Romance of New Orleans (1919)"
     publisher: "R. H. True and Co., via the Library of Congress"
-    url: https://www.loc.gov/item/20006638/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdc/20006638/20006638.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain

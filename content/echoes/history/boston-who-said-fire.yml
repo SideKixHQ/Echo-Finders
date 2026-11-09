@@ -48,19 +48,101 @@ script: |
   that autumn defending the men who fired.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Under the balcony of the Old State House there is a circle of cobblestones set into the street."
+    source: 1
+    quote: "A cobblestone circle beneath the Old State House balcony marks the site of the 1770 Boston Massacre."
+  - says: "It marks a cold March night in seventeen seventy."
+    source: 1
+    quote: "On a cold March night in 1770, a beleaguered squadron of British soldiers opened fire in the square in front of this royal building"
+  - says: "A light snow on the ground."
+    source: 2
+    quote: "A light snow covered the streets and walkways."
+  - says: "A lone British sentry outside the Custom House, and some local boys giving him a hard time."
+    source: 2
+    quote: "Private Hugh White, scheduled for sentry duty, took his position outside the Custom House on King Street"
+  - says: "A lone British sentry outside the Custom House, and some local boys giving him a hard time."
+    source: 1
+    quote: "The incident began with local boys taunting a British sentry on a cold March night."
+  - says: "Labourers, sailors, men with sticks and clubs."
+    source: 1
+    quote: "Mobs of laborers, sailors, and others of \"the lower sort\" joined into the confrontation. Some armed themselves with sticks and clubs."
+  - says: "A captain and a small squad came to rescue the sentry, and the crowd closed in around them."
+    source: 1
+    quote: "A detachment of seven soldiers under command of a Captain eventually emerged on the scene to rescue the beleaguered sentry. When they crossed the square to reach him, the crowd formed around them"
+  - says: "A soldier was struck."
+    source: 1
+    quote: "one of the soldiers was struck."
+  - says: "He got up, aimed and fired."
+    source: 1
+    quote: "He recovered, took aim, and fired."
+  - says: "The others fired too."
+    source: 1
+    quote: "Most of the other soldiers opened fired in response, thinking an order had been given."
+  - says: "Five people died."
+    source: 3
+    quote: "On March 5, 1770, British soldiers fired into a crowd of civilians, killing five people."
+  - says: "By the next morning the town was calling it a massacre."
+    source: 1
+    quote: "By the next morning, leaders called the event a \"bloody massacre.\""
+  - says: "If the captain gave the order, he was guilty and his men had only obeyed."
+    source: 3
+    quote: "If the jury found Preston guilty of ordering his soldiers to fire into the crowd, then the soldiers under his command would have only been following orders."
+  - says: "If nobody did, the soldiers had chosen to shoot on their own."
+    source: 3
+    quote: "did the soldiers open fire of their own accord?"
+  - says: "Lawyer after lawyer refused to defend them."
+    source: 3
+    quote: "Lawyers throughout Boston had refused to represent Preston or his soldiers."
+  - says: "John Adams said yes."
+    source: 3
+    quote: "Lawyer John Adams decided to serve on the defense of the Captain Preston and his soldiers."
+  - says: "At the trial the witnesses contradicted each other, even about what the captain had been wearing."
+    source: 3
+    quote: "As witnesses gave their testimonies, contradictions emerged. Some witnesses even disagreed over what Preston had been wearing."
+  - says: "But several swore he had been standing in front of his own men when they fired."
+    source: 3
+    quote: "multiple witnesses who swore that they had seen the captain standing in front of the soldiers when they began to fire."
+  - says: "One of them, a free Black man named Newton Prince, said he heard no order at all."
+    source: 3
+    quote: "One of these witnesses was a free Black man, Newton Prince. Prince testified that he saw Captain Preston standing in front of the soldiers and \"heard no orders given to fire.\""
+  - says: "Nobody stands in front of muskets he has just told to fire."
+    source: 3
+    quote: "If Preston had indeed given the order, he surely would have been wise enough to stand behind his soldiers."
+  - says: "The captain was acquitted."
+    source: 3
+    quote: "Captain Thomas Preston was found not guilty."
+  - says: "So were six of his soldiers."
+    source: 3
+    quote: "The jury outright acquitted six of the eight soldiers present the night of March 5, 1770."
+  - says: "Two were convicted of manslaughter and branded on the thumb."
+    source: 3
+    quote: "For the remaining two soldiers, Hugh Montgomery and Matthew Kilroy, the jury found them guilty of manslaughter."
+  - says: "Two were convicted of manslaughter and branded on the thumb."
+    source: 3
+    quote: "commuted their sentences from capital punishment to having their right thumbs branded."
+  - says: "Years later, Adams said this night laid the foundation of American independence."
+    source: 3
+    quote: "Years later, in 1786, John Adams remarked that the Boston Massacre laid the foundation for American Independence."
+  - says: "He spent that autumn defending the men who fired."
+    source: 3
+    quote: "Captain Preston's trial began on October 24, 1770."
+  - says: "He spent that autumn defending the men who fired."
+    source: 3
+    quote: "On November 27, nearly a month after Preston's acquittal, the court moved forward with its trial of the soldiers."
 sources:
   - title: "Old State House"
     publisher: "National Park Service, Boston National Historical Park"
     url: https://www.nps.gov/bost/learn/historyculture/osh.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Boston Massacre"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/000/boston-massacre.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Boston Massacre Trials"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/000/boston-massacre-trial.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain

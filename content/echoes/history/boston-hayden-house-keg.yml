@@ -44,14 +44,66 @@ script: |
   Lewis Hayden's threshold.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "This is sixty-six Phillips Street."
+    source: 2
+    quote: "Location: 66 Phillips Street"
+  - says: "It is a private home, so please look from the sidewalk."
+    source: 2
+    quote: "OPEN TO PUBLIC: No MANAGED BY: Private Residence"
+  - says: "In eighteen fifty it was a boarding house run by Lewis and Harriet Hayden."
+    source: 1
+    quote: "They lived in this house by 1850, operated it as a boardinghouse"
+  - says: "Both had escaped slavery in Kentucky."
+    source: 1
+    quote: "In the 1840s, the Haydens escaped slavery in Kentucky and eventually settled in Boston."
+  - says: "Lewis was out in the city."
+    source: 1
+    quote: "But while he moved about the city, who took charge of the residence up the hill on Southac Street, and its many boarders?"
+  - says: "Harriet almost certainly ran the house."
+    source: 1
+    quote: "Almost certainly the day-to-day management of the boardinghouse was Harriet Hayden’s responsibility"
+  - says: "Between them it became the busiest Underground Railroad safe house in Boston."
+    source: 2
+    quote: "They soon established their home as the most active Underground Railroad safe house in the city"
+  - says: "That summer, the census found two famous guests living here."
+    source: 1
+    quote: "The federal census taken in August 1850 lists the Crafts residing at the Hayden House."
+  - says: "William and Ellen Craft had escaped from Georgia, Ellen dressed as a white slaveholder and William posing as her slave."
+    source: 1
+    quote: "The Crafts escaped from slavery in Georgia with an elaborate disguise and story. The light-skinned Ellen dressed in men's clothing and \"passed\" as a White male slaveholder traveling North by train and ship with her trusted \"slave\" William."
+  - says: "That autumn, under the new Fugitive Slave Law, slave catchers came to Boston looking for them."
+    source: 1
+    quote: "In October 1850, slave catchers came looking for the couple in Boston's first test of the new Fugitive Slave Law."
+  - says: "It was the city's first test of the law."
+    source: 1
+    quote: "Boston's first test of the new Fugitive Slave Law."
+  - says: "What happened next is William Craft's own account."
+    source: 1
+    quote: "According to William Craft"
+  - says: "He said that he and Lewis Hayden had a keg of gunpowder under this house, with a fuse attached, ready to light if anyone tried to take them."
+    source: 1
+    quote: "\"Lewis Hayden and I had a keg of gunpowder under his house in Phillips Street, with a fuse attached ready to light it should any attempt be made to capture us.\""
+  - says: "Nobody tried."
+    source: 1
+    quote: "the slave catchers abandoned their pursuit of the Crafts."
+  - says: "The slave catchers gave up."
+    source: 1
+    quote: "the slave catchers abandoned their pursuit of the Crafts."
+  - says: "An abolitionist paper later explained why."
+    source: 1
+    quote: "A correspondent for The Liberator , Boston's major abolitionist newspaper, later wrote"
+  - says: "The marshal knew that the road to hell lay over Lewis Hayden's threshold."
+    source: 1
+    quote: "\"He knew that the road to hell lay over Lewis Hayden’s threshold"
 sources:
   - title: "Lewis and Harriet Hayden House"
     publisher: "National Park Service, Boston African American National Historic Site"
     url: https://www.nps.gov/boaf/learn/historyculture/lewis-and-harriet-hayden-house.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Lewis and Harriet Hayden House"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/lewis-and-harriet-hayden-house.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain

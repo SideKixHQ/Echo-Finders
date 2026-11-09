@@ -1,13 +1,13 @@
 id: linn-cove-viaduct-last-piece
 title: The last seven miles took fifty-two years
-summary: The Parkway's final section opened in 1987, built from above so as not to touch the mountain.
+summary: "The Blue Ridge Parkway was begun in 1935. Its last link, around Grandfather Mountain, opened in 1987."
 place: Linn Cove Viaduct, Blue Ridge Parkway
 at: { lat: 36.0975, lng: -81.8097 }
 triggerRadiusKm: 3
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: built
 format: short
-durationS: 100
+durationS: 80
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -17,24 +17,64 @@ teaser: The road you are on was the last part to be finished, and it took the lo
 script: |
   The road ahead curls around the side of the mountain on concrete legs.
 
-  Construction on the Blue Ridge Parkway started in nineteen thirty-five. This stretch,
-  about seven miles of it, did not open until nineteen eighty-seven.
+  Construction on the Blue Ridge Parkway started in September nineteen thirty five. This stretch, the last link of about seven and a half miles, did not open until nineteen eighty seven.
 
-  The hold-up was the mountain. Grandfather Mountain is old, steep and unusually rich in
-  rare plants, and the ordinary way to put a road across something like that is to cut a
-  shelf into it and push the spoil over the side. Nobody was willing to do that here.
+  The hold-up was the mountain. Grandfather Mountain supports dozens of rare and endangered species, and the man who owned much of it, Hugh Morton, fought the Park Service's plans for years, warning that a deep cut through the mountain would destroy its beauty and its fragile ecology. His opposition held the road up for nearly twenty years.
 
-  So they built it from the top down instead. Each segment of the viaduct was cast off-site,
-  carried out along the piece already finished, and lowered into place. Almost no heavy
-  machinery ever touched the ground underneath it.
+  So they built this piece from the top down instead. The viaduct is made of one hundred and fifty three precast concrete segments. Each one was carried out along the deck already finished and lowered into place by crane. The only construction road ran from the south end to the second pier. From there on, the bridge was built from itself.
 
-  The Parkway is four hundred and sixty-nine miles long. The last seven took a third of the
-  time.
+  The Parkway is four hundred and sixty nine miles long. It was finished here, exactly fifty two years after the first dirt was turned.
+
 editorial: draft
-factCheck: single-source
+factCheck: corroborated
+claims:
+  - says: "Construction on the Blue Ridge Parkway started in September nineteen thirty five."
+    source: 1
+    quote: "Parkway construction got underway in September 1935"
+  - says: "This stretch, the last link of about seven and a half miles, did not open until nineteen eighty seven."
+    source: 1
+    quote: "helped to complete the last 7.7-mile link of the Blue Ridge Parkway (BLRI)"
+  - says: "did not open until nineteen eighty seven"
+    source: 2
+    quote: "The viaduct was opened to the public in 1987 completing the 469-mile Blue Ridge Parkway."
+  - says: "Grandfather Mountain supports dozens of rare and endangered species"
+    source: 1
+    quote: "supports forty-two rare and endangered species, including eleven that are globally imperiled"
+  - says: "and the man who owned much of it, Hugh Morton, fought the Park Service's plans for years, warning that a deep cut through the mountain would destroy its beauty and its fragile ecology."
+    source: 1
+    quote: "feeling that a deep cut through the mountain would destroy the natural landmark's scenic beauty and fragile ecology"
+  - says: "Hugh Morton"
+    source: 1
+    quote: "Hugh Morton, president of the Linville Improvement Company"
+  - says: "His opposition held the road up for nearly twenty years."
+    source: 1
+    quote: "His opposition would delay the parkway's progress over Grandfather Mountain for nearly twenty years."
+  - says: "The viaduct is made of one hundred and fifty three precast concrete segments."
+    source: 2
+    quote: "used 153 pre-cast concrete segments to build the viaduct"
+  - says: "Each one was carried out along the deck already finished and lowered into place by crane."
+    source: 1
+    quote: "The progressive scheme enabled superstructure and pier segments to be transported across the previously built deck and placed by stiff-leg crane into final position."
+  - says: "The only construction road ran from the south end to the second pier."
+    source: 1
+    quote: "The only construction road was from the south abutment to the second pier, a distance of approximately 260'."
+  - says: "From there on, the bridge was built from itself."
+    source: 1
+    quote: "From this pier to the end of the structure, new segments were placed from the previously completed portion of the deck."
+  - says: "The Parkway is four hundred and sixty nine miles long."
+    source: 2
+    quote: "completing the 469-mile Blue Ridge Parkway"
+  - says: "It was finished here, exactly fifty two years after the first dirt was turned."
+    source: 1
+    quote: "On Friday, September 11,1987, exactly fifty-two years after ground was broken"
 sources:
-  - title: Linn Cove Viaduct
-    publisher: National Park Service
-    url: https://www.nps.gov/blri/
-    retrievedAt: "2026-09-22"
+  - title: "Blue Ridge Parkway, Linn Cove Viaduct (HAER NC-42-A), written historical and descriptive data"
+    publisher: "Historic American Engineering Record, Library of Congress"
+    url: https://www.loc.gov/item/nc0483/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Linn Cove Viaduct"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/blri/planyourvisit/linn-cove-viaduct.htm
+    retrievedAt: "2026-11-09"
     rights: public-domain

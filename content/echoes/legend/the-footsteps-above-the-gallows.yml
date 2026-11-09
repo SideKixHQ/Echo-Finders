@@ -9,7 +9,7 @@ at: { lat: 32.75283, lng: -117.19449 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 98
+durationS: 71
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -25,10 +25,10 @@ script: |
 
   One of the Whaley House’s oldest ghost stories begins with footsteps.
 
-  Before the house was built, James Robinson, known as Yankee Jim, was executed on this
-  property in 1852.
+  Before the house was built, James Robinson, known as Yankee Jim, was convicted of grand
+  larceny and hanged on this property in 1852.
 
-  The Whaley family built their home here several years later.
+  Thomas and Anna Whaley built their home here in 1857.
 
   According to the house’s published account, family members reported heavy footsteps
   upstairs and on the staircase.
@@ -52,19 +52,36 @@ script: |
   footsteps where nobody should be.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "One of the Whaley House’s oldest ghost stories begins with footsteps."
+    source: 1
+    quote: "the spirit of James “Yankee Jim” Robinson is considered the most famous and earliest haunting presence at the historic Whaley House"
+  - says: "Before the house was built, James Robinson, known as Yankee Jim, was convicted of grand larceny and hanged on this property in 1852."
+    source: 2
+    quote: "on August 18, 1852, Yankee Jim was convicted of grand larceny and sentenced to death for the crime."
+  - says: "hanged on this property in 1852"
+    source: 2
+    quote: "Subsequently, Yankee Jim was hung on the ground upon which the Whaley House now stands."
+  - says: "Thomas and Anna Whaley built their home here in 1857."
+    source: 1
+    quote: "Thomas and Anna Whaley built their home in 1857"
+  - says: "According to the house’s published account, family members reported heavy footsteps upstairs and on the staircase."
+    source: 1
+    quote: "Shortly after the Whaley family moved in, they reported hearing heavy footsteps pacing upstairs and on the staircase"
+  - says: "Thomas Whaley believed the sounds belonged to Robinson."
+    source: 1
+    quote: "which Thomas Whaley himself believed to be the restless ghost of Yankee Jim"
+  - says: "A family built a home on land where a public execution had taken place."
+    source: 1
+    quote: "Yankee Jim — a thief convicted of attempted grand larceny — was publicly executed by hanging on the property in 1852."
 sources:
-  - title: "San diego paranormal ghost hunting"
+  - title: "Whaley House Paranormal Investigation"
     publisher: "Whaley House Museum, Save Our Heritage Organisation"
     url: https://www.whaleyhousesandiego.com/san-diego-paranormal-ghost-hunting/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
-  - title: "Whaley House (HABS CA-422)"
-    publisher: "Library of Congress"
-    url: https://www.loc.gov/item/ca0615/
-    retrievedAt: "2026-10-09"
-    rights: public-domain
   - title: "The First San Diego Courthouse"
     publisher: "California State Parks"
     url: https://www.parks.ca.gov/?page_id=30565
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts

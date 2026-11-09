@@ -7,7 +7,7 @@ triggerRadiusKm: 0.05
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: history
 format: short
-durationS: 85
+durationS: 61
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -15,22 +15,66 @@ quality: 0.85
 tags: [new-york, revolution, washington]
 teaser: Upstairs, in the Long Room.
 script: |
-  On the fourth of December 1783, in an upstairs room of this building, George Washington
-  said goodbye to the officers he had fought beside for eight years.
+  On the fourth of December 1783, in the Long Room upstairs in this building, George Washington said goodbye to the officers of the Continental Army.
 
-  The British had sailed out of the harbour nine days earlier. The war was over, and he was
-  going home to Virginia, believing he was finished with public life.
+  The last British soldiers had left the city nine days earlier. The war was over, and he was going home to Mount Vernon.
 
-  By the accounts that survive, he could not finish what he meant to say. He raised a glass,
-  managed a few sentences, and then asked each man to come and take his hand. Grown soldiers
-  wept. He walked out without trusting himself to speak again.
+  The best known account comes from one of the officers there, Benjamin Tallmadge. He wrote that Washington's emotions were too strong to be concealed. He filled a glass of wine, said a few sentences, and then asked each man to come and take him by the hand. General Knox was nearest. Washington, in tears, could not speak, and the two men embraced in silence. Tallmadge said he had never before witnessed such a scene of sorrow and weeping.
 
-  Six years later he was back in this city, taking an oath three streets from here.
+  Six years later Washington was back in this city, on Wall Street, taking the oath as the first president.
+
 editorial: draft
-factCheck: single-source
+factCheck: corroborated
+claims:
+  - says: "On the fourth of December 1783, in the Long Room upstairs in this building, George Washington said goodbye to the officers of the Continental Army."
+    source: 1
+    quote: "On December 4, 1783, nine days after the last British soldiers left American soil, George Washington invited the officers of the Continental Army to join him in the Long Room of Fraunces Tavern to bid them farewell."
+  - says: "in the Long Room upstairs"
+    source: 2
+    quote: "On the second floor of 54 Pearl St., in one of Manhattan’s oldest standing structures, you’ll find a room seemingly left in the past."
+  - says: "The last British soldiers had left the city nine days earlier."
+    source: 1
+    quote: "nine days after the last British soldiers left American soil"
+  - says: "The war was over, and he was going home to Mount Vernon."
+    source: 1
+    quote: "The time now drew near when General Washington intended to leave this part of the country for his beloved retreat at Mt. Vernon."
+  - says: "The best known account comes from one of the officers there, Benjamin Tallmadge."
+    source: 1
+    quote: "The best known account of this emotional parting comes from the Memoirs of Colonel Benjamin Tallmadge"
+  - says: "He wrote that Washington's emotions were too strong to be concealed."
+    source: 1
+    quote: "His emotions were too strong to be concealed"
+  - says: "He filled a glass of wine, said a few sentences, and then asked each man to come and take him by the hand."
+    source: 1
+    quote: "I cannot come to each of you but shall feel obliged if each of you will come and take me by the hand."
+  - says: "General Knox was nearest."
+    source: 1
+    quote: "General Knox being nearest to him turned to the Commander-in-chief"
+  - says: "Washington, in tears, could not speak, and the two men embraced in silence."
+    source: 1
+    quote: "suffused in tears, was incapable of utterance but grasped his hand when they embraced each other in silence"
+  - says: "Tallmadge said he had never before witnessed such a scene of sorrow and weeping."
+    source: 1
+    quote: "Such a scene of sorrow and weeping I had never before witnessed"
+  - says: "Six years later Washington was back in this city, on Wall Street, taking the oath as the first president."
+    source: 3
+    quote: "George Washington was inaugurated here as the country's first President on April 30, 1789."
+  - says: "on Wall Street"
+    source: 3
+    quote: "26 Wall Street was the site of New York City's 18th-century City Hall."
 sources:
-  - title: Fraunces Tavern and the Continental Army
-    publisher: National Park Service
-    url: https://www.nps.gov/articles/fraunces-tavern.htm
-    retrievedAt: "2026-09-21"
+  - title: "History"
+    publisher: "Fraunces Tavern Museum"
+    url: https://frauncestavernmuseum.squarespace.com/history
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Inside the Downtown Tavern Room Where Washington Once Bid Farewell to His Troops"
+    publisher: "Downtown Alliance"
+    url: https://downtownny.com/news/fraunces-tavern-long-room-george-washington/
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Federal Hall National Memorial: History & Culture"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/feha/learn/hc.htm
+    retrievedAt: "2026-11-09"
     rights: public-domain

@@ -44,19 +44,71 @@ pronunciations:
     say: saint GAW-dens
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "They are not one face repeated."
+    source: 3
+    quote: "In this high relief composition, he featured a range of facial features, physical builds, and ages."
+  - says: "Some are young, some older."
+    source: 3
+    quote: "he featured a range of facial features, physical builds, and ages."
+  - says: "The sculptor, Augustus Saint-Gaudens, was first expected to make a statue of Colonel Robert Gould Shaw alone on horseback."
+    source: 2
+    quote: "Finally, in August 1882, the committee commissioned sculptor Augustus Saint-Gaudens to create an equestrian statue to commemorate Col. Shaw."
+  - says: "Shaw's family objected."
+    source: 2
+    quote: "the Shaw family objected on the ground that, although Shaw was of a noble type, as noble as any, still he had not been a great commander"
+  - says: "He had not been a great commander, they said, and it seemed pretentious."
+    source: 2
+    quote: "still he had not been a great commander, and only men of the highest rank should be so honored. In fact, it seemed pretentious."
+  - says: "So Saint-Gaudens put him among his men."
+    source: 2
+    quote: "I fell upon a plan of associating him directly with his troops in a bas-relief, and thereby reducing his importance."
+  - says: "The men were the Fifty-fourth Massachusetts, one of the first Black regiments of the Civil War."
+    source: 1
+    quote: "commemorates one of the first Black regiments of the American Civil War."
+  - says: "They marched down this street, off to the war, in eighteen sixty-three."
+    source: 1
+    quote: "this monument depicts the 54 th Regiment as they marched down Beacon Street off for war in 1863."
+  - says: "That July, in the assault on Fort Wagner in South Carolina, Shaw and many of his men were killed."
+    source: 1
+    quote: "assault on Fort Wagner, South Carolina on July 18, 1863, in which Shaw and many of his men died"
+  - says: "In his New York studio, Saint-Gaudens hired Black men to pose, and modelled some forty heads."
+    source: 1
+    quote: "In his studio in New York, he hired forty men to serve as models for the soldiers' faces."
+  - says: "In his New York studio, Saint-Gaudens hired Black men to pose, and modelled some forty heads."
+    source: 3
+    quote: "Saint-Gaudens modeled about 40 different heads after hiring African American men to pose."
+  - says: "The work took him about fourteen years, longer than anything else in his career."
+    source: 2
+    quote: "Sculptor Augustus Saint-Gaudens spent 14 years of his life developing the work—longer than any other of his career"
+  - says: "It was unveiled in eighteen ninety-seven, and the original inscriptions named only the white officers who fell."
+    source: 2
+    quote: "local and national leaders dedicated the Memorial on May 31, 1897."
+  - says: "It was unveiled in eighteen ninety-seven, and the original inscriptions named only the white officers who fell."
+    source: 2
+    quote: "the original names included only the white officers."
+  - says: "The names of the Black soldiers were added in the early nineteen-eighties."
+    source: 2
+    quote: "This later became rectified in the early 1980s."
+  - says: "The faces came first."
+    source: 2
+    quote: "In all, Saint-Gaudens created some 40 models of heads to use as studies."
+  - says: "The names took another eighty-five years."
+    source: 2
+    quote: "This later became rectified in the early 1980s."
 sources:
   - title: "Robert Gould Shaw and the 54th Regiment"
     publisher: "National Park Service, Boston African American National Historic Site"
     url: https://www.nps.gov/boaf/learn/historyculture/shaw.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Robert Gould Shaw Memorial"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/the-robert-gould-shaw-memorial.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Robert Gould Shaw & Massachusetts 54th Regiment Memorial"
     publisher: "National Park Service, Saint-Gaudens National Historical Park"
     url: https://www.nps.gov/places/robert-gould-shaw-massachusetts-54th-regiment-memorial.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain

@@ -1,13 +1,13 @@
 id: atlantic-city-first-boardwalk
 title: It was invented to keep sand out of the lobbies
-summary: The world's first boardwalk was built in 1870 by hoteliers tired of sweeping.
+summary: "Atlantic City's first boardwalk, in 1870, was built to keep sand out of the hotels and the trains."
 place: Atlantic City, New Jersey
 at: { lat: 39.3643, lng: -74.4229 }
 triggerRadiusKm: 40
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: built
 format: short
-durationS: 85
+durationS: 61
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -17,24 +17,40 @@ teaser: The pale line along the beach below is the original of its kind.
 script: |
   Down on your right, that pale line running along the back of the beach.
 
-  Boardwalks exist everywhere now. That one is where the idea came from, and it was not
-  built for strolling.
+  It was not built for strolling. It was built because of sand.
 
-  In eighteen seventy the hotels and the railway on that beachfront had the same complaint:
-  guests walked in off the sand and brought most of the beach with them, into the lobbies,
-  onto the carpets, into the railway carriages. Sweeping it out was a full-time job.
+  Atlantic City was a commercial venture from the start, created by a railroad and a land company from Philadelphia. In eighteen seventy the town laid its first boardwalk, a footpath so that people would not walk back into the hotels, the trains and the shops with sand in their shoes.
 
-  So a conductor and a hotelier proposed a wooden walkway, laid straight onto the sand, that
-  people would use because it was easier than not using it.
+  It was ten feet wide, made of removable twelve foot sections laid on posts in the sand.
 
-  It was taken up every autumn and stored for the winter.
+  A bigger one followed ten years later, and after a winter storm in eighteen eighty four, a sturdier one again, raised five feet above the beach, with businesses on both sides.
 
-  Everything else that word now means, the piers and the postcards and the
-  amusements, grew on top of a solution to a cleaning problem.
+  Everything else that word now means, the piers and the postcards and the amusements, grew on top of a solution to a cleaning problem.
+
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "Atlantic City was a commercial venture from the start, created by a railroad and a land company from Philadelphia."
+    source: 1
+    quote: "Atlantic City itself, on the other hand, was a commercial development from its conception—the joint creation of a Philadeiphia-based railroad and land company."
+  - says: "In eighteen seventy the town laid its first boardwalk, a footpath so that people would not walk back into the hotels, the trains and the shops with sand in their shoes."
+    source: 1
+    quote: "The idea behind the first boardwalk in 1870 was to provide a footpath so that strollers would not return to hotels, trains, and businesses with sand in their shoes."
+  - says: "It was ten feet wide, made of removable twelve foot sections laid on posts in the sand."
+    source: 1
+    quote: "The first boardwalk consisted of removable 12 foot sections with the boards running lengthwise on two-foot beams. This ten-foot-wide walkway sat on posts in the sand."
+  - says: "A bigger one followed ten years later, and after a winter storm in eighteen eighty four, a sturdier one again, raised five feet above the beach, with businesses on both sides."
+    source: 1
+    quote: "A major winter storm in January 1884 induced the opening of a more solid boardwalk the following summer. Raised five feet above the sand, 20 feet wide, this third boardwalk changed to a design of crosswise boards. Businesses occupied both sides of the boardwalk"
+  - says: "A bigger one followed ten years later"
+    source: 1
+    quote: "The city built the next boardwalk ten years later, this time 14-feet wide"
+  - says: "the piers and the postcards and the amusements"
+    source: 1
+    quote: "The boardwalk was the commercial heart of the city, lined by hotels and amusement piers"
 sources:
-  - title: Atlantic City Boardwalk — Historic American Engineering Record
-    publisher: Library of Congress
-    retrievedAt: "2026-09-22"
+  - title: "Atlantic City Boardwalk (HABS NJ-1161), written historical and descriptive data"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/nj1459/
+    retrievedAt: "2026-11-09"
     rights: public-domain

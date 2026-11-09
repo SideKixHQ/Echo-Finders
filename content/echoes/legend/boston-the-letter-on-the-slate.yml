@@ -1,0 +1,113 @@
+# Drafted by Claude Code (2026-11-09) for the Boston core: legend batch.
+# Listening spot: Inside King's Chapel Burying Ground (public, City of Boston) on Tremont Street, beside King's Chapel; open daily in daylight.
+# Position: Estimated: about 30 m north of the King's Chapel point used by boston-the-church-inside-the-church (42.35795, -71.06035), where the burying ground adjoins the chapel on Tremont Street; no exact point was available (low to medium confidence; check on site).
+id: boston-the-letter-on-the-slate
+title: "The Letter on the Slate"
+summary: "The story goes that a gravestone here inspired The Scarlet Letter. Hawthorne did end his novel in this burying ground."
+place: "King's Chapel Burying Ground, Tremont Street, Boston, Massachusetts"
+at: { lat: 42.35822, lng: -71.0603 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 71
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A popular tradition. The National Park Service states that a gravestone here inspired The Scarlet
+  Letter, but names no stone and cites nothing; no source we could reach records Hawthorne saying so. What
+  is documented is the novel's own text, which sets its ending in this burying ground. The script says out
+  loud the stone story is a legend and unproven.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [boston, boston-core, freedom-trail, burial-ground, kings-chapel, literature, hawthorne]
+teaser: "One of these stones, the story goes, gave Hawthorne his idea. Nobody can say which."
+script: |
+  You are in the burying ground beside King's Chapel. John Winthrop, the colony's first
+  governor, lies here.
+
+  There is a story about this ground, and the park service tells it too. One of these
+  gravestones, it says, inspired Nathaniel Hawthorne to write The Scarlet Letter.
+
+  Treat that as a legend. No stone has ever been shown to be the one.
+
+  But Hawthorne did put this ground in his book. He lodged his troubled minister in a house
+  that stood where King's Chapel was later built, with the graveyard on one side.
+
+  And at the very end, he buried Hester Prynne here. In his words, a new grave was dug in
+  that burial ground beside which King's Chapel has since been built, near an old and sunken
+  one. One slate stone served for both, carved with a shield.
+
+  The novel closes on that shield. On a field, sable, the letter A, gules.
+
+  Black field. Red letter.
+
+  Look along the old slate stones. If one of them gave Hawthorne the idea, it has never said
+  which.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "You are in the burying ground beside King's Chapel."
+    source: 3
+    quote: "The burying ground next to the chapel contains the remains of John Winthrop"
+  - says: "John Winthrop, the colony's first governor, lies here."
+    source: 1
+    quote: "The burying ground next to King's Chapel contains the remains of John Winthrop, the colony’s first governor"
+  - says: "One of these gravestones, it says, inspired Nathaniel Hawthorne to write The Scarlet Letter."
+    source: 1
+    quote: "as well as the gravestone that inspired Nathaniel Hawthorne to write The Scarlet Letter ."
+  - says: "There is a story about this ground, and the park service tells it too."
+    source: 1
+    quote: "the gravestone that inspired Nathaniel Hawthorne to write The Scarlet Letter"
+  - says: "Treat that as a legend."
+    source: 1
+    quote: "the gravestone that inspired Nathaniel Hawthorne"
+  - says: "No stone has ever been shown to be the one."
+    source: 1
+    quote: "the gravestone that inspired Nathaniel Hawthorne to write The Scarlet Letter"
+  - says: "But Hawthorne did put this ground in his book."
+    source: 2
+    quote: "the first burial-ground, on Isaac Johnson’s lot, and round about his grave, which subsequently became the nucleus of 56 THE SCARLET LETTER. all the congregated sepulchres in the old church-yard of King’s Chapel."
+  - says: "He lodged his troubled minister in a house that stood where King's Chapel was later built, with the graveyard on one side."
+    source: 2
+    quote: "dwelt in a house cov- ering pretty nearly the site on which the venerable structure of King’s Chapel has since been built. It had the grave-yard, originally Isaac Johnson’s home-field, on one side"
+  - says: "And at the very end, he buried Hester Prynne here."
+    source: 2
+    quote: "So said Hester Prynne, and glanced her sad eyes downward at the scarlet letter. And, after many, many years, a new grave was delved"
+  - says: "In his words, a new grave was dug in that burial ground beside which King's Chapel has since been built, near an old and sunken one."
+    source: 2
+    quote: "a new grave was delved, near an old and sunken one, in that burial-ground beside which King’s Chapel has since been built."
+  - says: "One slate stone served for both, carved with a shield."
+    source: 2
+    quote: "Yet one tombstone served for both."
+  - says: "One slate stone served for both, carved with a shield."
+    source: 2
+    quote: "on this simple slab of slate—as the curious inves- tigator may still discern, and perplex himself with the purport — there appeared the semblance of an en- 21 a22 THE SCARLET LETTER. graved escutcheon."
+  - says: "The novel closes on that shield."
+    source: 2
+    quote: "‘*ON A FIELD, SABLE, THE LETTER A, GULES.” THE END."
+  - says: "On a field, sable, the letter A, gules."
+    source: 2
+    quote: "ON A FIELD, SABLE, THE LETTER A, GULES."
+  - says: "Red letter."
+    source: 2
+    quote: "THE LETTER A, GULES."
+  - says: "If one of them gave Hawthorne the idea, it has never said which."
+    source: 1
+    quote: "the gravestone that inspired Nathaniel Hawthorne to write The Scarlet Letter"
+sources:
+  - title: "King's Chapel Burying Ground"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/king-s-chapel-burying-ground.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The scarlet letter: a romance, by Nathaniel Hawthorne (Boston: Ticknor, Reed, and Fields, 1850)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/07003785/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "King's Chapel"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/king-s-chapel.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

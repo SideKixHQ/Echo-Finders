@@ -21,9 +21,9 @@ script: |
 
   On the morning of the tenth of April, eighteen thirty-four, flames broke out of it. The fire had started in the kitchen.
 
-  It was started on purpose. A woman held captive in this house told the mayor afterwards that she had set it herself. It was, she said, the only way left to end what she and the others were suffering. The English writer Harriet Martineau, who heard the story in this city a few years later, says it was the cook, kept chained within a few yards of the kitchen fire.
+  It was started on purpose. A woman held captive in this house told the mayor afterwards that she had set it herself. It was, she said, the only way left to end what she and the others were suffering. The English writer Harriet Martineau tells it a little differently. She says it was the cook, kept chained within eight yards of the fireplace.
 
-  Neighbours and firemen ran in. They forced open doors that had always been kept locked, and behind them they found seven people in chains, starved, covered in wounds. The editor of the city newspaper, the Bee, was there. He wrote that he saw where the collars and manacles had cut into their flesh.
+  Neighbours and firemen ran in. They forced the doors open, and found seven people in chains, starving, covered in wounds. The owner of a city newspaper, the Bee, was there. He wrote that he saw where the collars and manacles had cut into their flesh.
 
   They were carried through the streets to the mayor's office, and their irons were struck off. At least two thousand people came to see them that day.
 
@@ -39,19 +39,56 @@ pronunciations:
     say: MAR-tin-oh
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "On the morning of the tenth of April, eighteen thirty-four, flames broke out of it."
+    source: 1
+    quote: "It was on the morning of the roth of April, 1834, that from the corner of Royal and Hospital streets, crepitating flames were seen to burst forth"
+  - says: "It was, she said, the only way left to end what she and the others were suffering."
+    source: 1
+    quote: "a woman confessed to the Mayor that she had purposely set fire to the house, as the only means of putting an end to her sufferings and those of her fellow captives."
+  - says: "The English writer Harriet Martineau tells it a little differently."
+    source: 2
+    quote: "One morning the cook declared that they had better all be burned together than lead such a life, and she set the house on fire."
+  - says: "She says it was the cook, kept chained within eight yards of the fireplace."
+    source: 2
+    quote: "She kept her cook chained within eight yards of the fire- place"
+  - says: "They forced the doors open, and found seven people in chains, starving, covered in wounds."
+    source: 1
+    quote: "seven slaves, more or less mutilated, slowly per- ishing from hunger, deep lacerations and festering wounds."
+  - says: "They forced the doors open, and found seven people in chains, starving, covered in wounds."
+    source: 1
+    quote: "When every door had been forced open"
+  - says: "The owner of a city newspaper, the Bee, was there."
+    source: 1
+    quote: "Jerome Bayon, the proprietor of the New Orleans ‘* Bee,’’ wrote"
+  - says: "He wrote that he saw where the collars and manacles had cut into their flesh."
+    source: 1
+    quote: "‘‘We saw where the collar and manacles had cut their way into their quivering flesh."
+  - says: "At least two thousand people came to see them that day."
+    source: 1
+    quote: "‘Two thousand persons, at least, convinced themselves during that eventful day by ocular inspection"
+  - says: "The woman who held them, Madame Lalaurie, never answered for it."
+    source: 1
+    quote: "Mrs. Lalaurie, with the connivance of the Mayor, had eluded arrest and effected her escape"
+  - says: "She left in her carriage, reached the lake, and escaped by boat to Mobile and then to France."
+    source: 1
+    quote: "one of her carriages, which happened to be standing in front of Hospital street, and the same, it was said, that had borne her away."
+  - says: "She left in her carriage, reached the lake, and escaped by boat to Mobile and then to France."
+    source: 3
+    quote: "A schooner stood in the bayou. She thrust a purse of gold into the Captain’s hand and he steered out toward the lake. Mme. Lalaurie made her way to Covington. thence to Mobile, where she embarked for France"
 sources:
   - title: "New Orleans As It Was, Episodes of Louisiana Life (1895), by Henry C. Castellanos, chapter A Tale of Slavery Times"
     publisher: "L. Graham and Son, via the Library of Congress"
-    url: https://www.loc.gov/item/01008770/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansasitwa00cast/neworleansasitwa00cast.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Retrospect of Western Travel, volume one (1838), by Harriet Martineau"
     publisher: "Saunders and Otley, via the Library of Congress"
     url: https://www.loc.gov/item/01027893/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's Guide to New Orleans (1904), 1140 Royal Street"
     publisher: "The Picayune, via the Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain

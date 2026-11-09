@@ -55,24 +55,73 @@ pronunciations:
     say: KOPS Hill
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Some of them, people will tell you, are pitted by British musket balls."
+    source: 2
+    quote: "There are several stones that are said to bear the marks of English bullets, having been used as targets by the un- welcome Redcoats."
+  - says: "The story goes that redcoats used them for target practice while the army held Boston."
+    source: 1
+    quote: "During the Revolutionary War, some historians suggest British soldiers performed target practice on some headstones here."
+  - says: "One stone gets named more than any other."
+    source: 2
+    quote: "The stone of Capt. Daniel Malcom would seem to be the stone most likely to receive such at- tention from the British soldiers"
+  - says: "It belongs to a merchant, Captain Daniel Malcom, who died in seventeen sixty-nine."
+    source: 3
+    quote: "CAPT. DANIEL MALCOM MERCHT. who departed this life October 23d 1769"
+  - says: "A true son of Liberty."
+    source: 3
+    quote: "a true son of Liberty a Friend to the Publick an Enemy to opprefsion"
+  - says: "A friend to the public."
+    source: 4
+    quote: "A true son of Liberty. A friend to the public. An enemy to oppression."
+  - says: "An enemy to oppression."
+    source: 4
+    quote: "An enemy to oppression."
+  - says: "And one of the foremost in opposing the Revenue Acts on America."
+    source: 2
+    quote: "one of the foremost in opposing the Revenue Acts on America."
+  - says: "One night in seventeen sixty-eight, with friends carrying clubs, he brought sixty casks of wine ashore from a ship down the harbour, without paying the King's duty."
+    source: 3
+    quote: "In February, 1768, aided by friends armed with clubs, he smuggled in at night a cargo of sixty casks of wine from a vessel anchored five miles down the harbor."
+  - says: "One night in seventeen sixty-eight, with friends carrying clubs, he brought sixty casks of wine ashore from a ship down the harbour, without paying the King's duty."
+    source: 4
+    quote: "he was deter- mined that his cargo, consisting of wines, should escape the unpopu- lar duties."
+  - says: "So when the soldiers came, the story says, his stone was the one they chose."
+    source: 2
+    quote: "The stone of Capt. Daniel Malcom would seem to be the stone most likely to receive such at- tention from the British soldiers"
+  - says: "Nobody has proved it."
+    source: 1
+    quote: "some historians suggest British soldiers performed target practice on some headstones here."
+  - says: "A history of Boston's burial grounds from eighteen ninety-two put it carefully."
+    source: 2
+    quote: "HISTORIC BURIAL-PLACES OF BOSTON AND: VICINIFY, BY JOHN M. MERRIAM."
+  - says: "Several stones here are said to bear the marks, and Malcom's would seem the most likely."
+    source: 2
+    quote: "There are several stones that are said to bear the marks of English bullets"
+  - says: "Several stones here are said to bear the marks, and Malcom's would seem the most likely."
+    source: 2
+    quote: "would seem to be the stone most likely to receive such at- tention"
+  - says: "The park service today says only that some historians suggest it."
+    source: 1
+    quote: "some historians suggest British soldiers performed target practice on some headstones here."
 sources:
   - title: "Copp's Hill Burying Ground"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/copp-s-hill-burying-ground.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Historic burial-places of Boston and vicinity, by John M. Merriam (Worcester, 1892)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/18006883/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Historical sketch of Copp's Hill burying ground, with inscriptions and quaint epitaphs, by John Norton (Boston, 1921)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/22013534/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Old Copp's Hill and burial ground; with historic sketches, by Edward MacDonald (Boston, 1879)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/03024090/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain

@@ -1,0 +1,131 @@
+# Drafted by Claude Code (2026-11-09) for the Boston core: legend batch.
+# Listening spot: Inside Fort Warren on Georges Island, reached by public ferry; the fort and parade ground are open to visitors in season (Boston Harbor Islands National Recreation Area).
+# Position: Wikidata Q2287837 (Fort Warren) coordinate, the fort's centre; radius covers the fort (medium confidence).
+id: boston-the-lady-in-black
+title: "The Lady in Black"
+summary: "Fort Warren's ghost story: a Confederate prisoner's wife, hanged in a black dress, who never left. Rangers still tell it."
+place: "Fort Warren, Georges Island, Boston Harbor Islands, Massachusetts"
+at: { lat: 42.32028, lng: -70.92778 }
+triggerRadiusKm: 0.15
+category: legend
+format: short
+durationS: 90
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A ghost story, not history. Its fullest early telling is a 1946 United Press report quoting the harbour
+  historian Edward Rowe Snow; National Park Service rangers tell it after fort tours. No record of the hanging
+  is cited by either source. The script says out loud it is a legend and unproven.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [boston, boston-harbor-islands, georges-island, fort-warren, civil-war, ghosts]
+teaser: "Rangers here end the tour with one story. It is not in the records."
+script: |
+  You are inside Fort Warren, the granite fort on Georges Island. In summer, the rangers here
+  often finish their tour with one story. The Lady in Black.
+
+  It is a legend. Nobody has ever proved a word of it.
+
+  The story goes like this. During the Civil War, this fort held Confederate prisoners. One of
+  them was Captain Andrew Lanier. His young wife came north from Georgia to free him. She put
+  on a man's clothes, took a pistol, and came out to the fort in the dark, in a small boat
+  loaded with picks and shovels.
+
+  She crawled through a grating to his cell. They began to dig a tunnel. A guard heard the
+  clink of a pick.
+
+  Caught, she drew her pistol and fired at the commander. The shot killed her own husband.
+  She went to the gallows in a black dress found in the fort's stores.
+
+  Since then, the story says, a lady in black walks these walls. A sentry who swore she tried
+  to throttle him was suspected of drinking, and put in irons.
+
+  The fullest telling came from the harbour historian Edward Rowe Snow. In nineteen forty-six
+  he told reporters he would hide here on Halloween night and wait for her, armed with a
+  broomstick.
+
+  Keep an eye on the dark arches. If she comes, you will be the first to prove it.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "You are inside Fort Warren, the granite fort on Georges Island."
+    source: 2
+    quote: "Fort Tours on Georges Island"
+  - says: "You are inside Fort Warren, the granite fort on Georges Island."
+    source: 1
+    quote: "uncovering a black passageway that led down through what was apparently a solid granite wall."
+  - says: "In summer, the rangers here often finish their tour with one story."
+    source: 2
+    quote: "During the summer season, tours are offered daily to coincide with ferry times. These programs last about 45 minutes and are typically followed by a telling of the story of the Lady in Black."
+  - says: "The Lady in Black."
+    source: 2
+    quote: "typically followed by a telling of the story of the Lady in Black."
+  - says: "It is a legend."
+    source: 1
+    quote: "Southern Myth Attached"
+  - says: "Nobody has ever proved a word of it."
+    source: 1
+    quote: "the sprites and spirits supposedly haunting the Boston Harbor islands."
+  - says: "During the Civil War, this fort held Confederate prisoners."
+    source: 1
+    quote: "During the Civil War, one Capt. Andrew Lanier was confined with several hundred . other .rebel soldiers in Port Warren."
+  - says: "One of them was Captain Andrew Lanier."
+    source: 1
+    quote: "one Capt. Andrew Lanier was confined"
+  - says: "His young wife came north from Georgia to free him."
+    source: 1
+    quote: "Desperately plotting to free her love, his slim and pretty wife stole north from Crawfordville, Oa."
+  - says: "She put on a man's clothes, took a pistol, and came out to the fort in the dark, in a small boat loaded with picks and shovels."
+    source: 1
+    quote: "obtained a man’s clothing from a Boston sympathizer and, armed .with a pistol, contrived to reach the fort under covei* of darkness in a small boat in which were several picks and shovels."
+  - says: "She crawled through a grating to his cell."
+    source: 1
+    quote: "she crawled through a grating to her husband’s cell."
+  - says: "They began to dig a tunnel."
+    source: 1
+    quote: "With others the couple sought to tunnel to freedom"
+  - says: "A guard heard the clink of a pick."
+    source: 1
+    quote: "the clink of a pick brought the roundsman and all were placed in chains."
+  - says: "Caught, she drew her pistol and fired at the commander."
+    source: 1
+    quote: "Mrs. Lanier drew her pistol, fired at Colonel Dimmick who commanded the fort"
+  - says: "The shot killed her own husband."
+    source: 1
+    quote: "but accidentally killed her spouse instead."
+  - says: "She went to the gallows in a black dress found in the fort's stores."
+    source: 1
+    quote: "Ultimately she went to the gallows, garbed in a black dress that was found among the fort’s stores."
+  - says: "Since then, the story says, a lady in black walks these walls."
+    source: 1
+    quote: "If the ghostly and Infamous lady in black treads the ramparts in old Port Warren"
+  - says: "A sentry who swore she tried to throttle him was suspected of drinking, and put in irons."
+    source: 1
+    quote: "a wild story of a lady in black who tyied to throttle him. He was suspected of too frequent visits to the company’s store of rum and placed in irons."
+  - says: "The fullest telling came from the harbour historian Edward Rowe Snow."
+    source: 1
+    quote: "Edward Rowe Snow, an historian who has spent 16 years and nine canoes chasing the sprites and spirits supposedly haunting the Boston Harbor islands."
+  - says: "In nineteen forty-six he told reporters he would hide here on Halloween night and wait for her, armed with a broomstick."
+    source: 1
+    quote: "Equipped with a witch’s traditional broomstick, he plans to ilse it 'cudgel fashion"
+  - says: "In nineteen forty-six he told reporters he would hide here on Halloween night and wait for her, armed with a broomstick."
+    source: 1
+    quote: "this Hallowe’en she’ll make an abrupt and perhaps fatal acquaintance with one of the nation’s- foremost spook hunters."
+  - says: "Keep an eye on the dark arches."
+    source: 1
+    quote: "the ancient battlement’s black arch"
+  - says: "If she comes, you will be the first to prove it."
+    source: 1
+    quote: "Snow is entering the hunt with open mind"
+sources:
+  - title: "Historian Poised to Trap Black Lady of Fort Warren (United Press), The Waterbury Democrat, October 31, 1946, page 3"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82014085/1946-10-31/ed-1/?sp=3
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Fort Tours on Georges Island"
+    publisher: "National Park Service, Boston Harbor Islands National Recreation Area"
+    url: https://www.nps.gov/thingstodo/fort-tours-on-georges-island.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

@@ -28,7 +28,7 @@ script: |
 
   That much the old writers agree on. Almost nothing else.
 
-  George Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king. He says those sixty were the first of many shiploads. Grace King, eleven years later, has sixty girls too. She says they were the last.
+  George Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king. He says those sixty were only the first company, and more came in later years. Grace King, eleven years later, has sixty girls too. She says they were the last.
 
   A city guide from nineteen-oh-four tells it differently again. Twenty girls, years earlier, each chosen by the Bishop of Quebec, each given a little chest as proof of her good character.
 
@@ -46,19 +46,74 @@ pronunciations:
     say: kay-BECK
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The nuns who lived here belong to one of the oldest stories in New Orleans."
+    source: 1
+    quote: "grouping to- gether in the Place d’Armes under escort of the Ur- suline nuns"
+  - says: "In the early years of the colony, France sent young women across the ocean to marry its colonists."
+    source: 3
+    quote: "twenty young gir's who were sent by the King of I'rance to be married to the colonists."
+  - says: "Each one came with a small chest of clothes."
+    source: 1
+    quote: "many small, stout chests of clothing. There was a trunk for each maiden, a maiden for each trunk"
+  - says: "The French called them the filles à la cassette."
+    source: 2
+    quote: "They are known as ‘les filles a la cassette,” from the little trunk or cas- sette, containing a trousseau"
+  - says: "In English, the casket girls."
+    source: 1
+    quote: "the casket-girls."
+  - says: "George Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king."
+    source: 1
+    quote: "In the winter of 1727-28 a crowning benefit had been reached."
+  - says: "George Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king."
+    source: 1
+    quote: "under escort of the Ur- suline nuns, a good threescore"
+  - says: "George Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king."
+    source: 1
+    quote: "There was a trunk for each maiden, a maiden for each trunk, and both maidens and trunks the gift of the king."
+  - says: "George Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king."
+    source: 1
+    quote: "COPYRIGHT, 1884, BY CHARLES SCRIBNER’S SONS"
+  - says: "He says those sixty were only the first company, and more came in later years."
+    source: 1
+    quote: "this was but the initial consignment. Similar companies came in subsequent years"
+  - says: "Grace King, eleven years later, has sixty girls too."
+    source: 2
+    quote: "This was an inter- esting lot of sixty"
+  - says: "Grace King, eleven years later, has sixty girls too."
+    source: 2
+    quote: "Copyricut, 1895, By MACMILLAN AND CO."
+  - says: "She says they were the last."
+    source: 2
+    quote: "the governor gave them charge of the last shipment of girls sent by the mother country."
+  - says: "A city guide from nineteen-oh-four tells it differently again."
+    source: 3
+    quote: "Copyright 1904 by"
+  - says: "Twenty girls, years earlier, each chosen by the Bishop of Quebec, each given a little chest as proof of her good character."
+    source: 3
+    quote: "The Bishop of Quebee was charged with selecting good and pious young women for this purpose, and as a proof of her respectability each young woman was pro- vided by the Bishop with a curiously wrought casket."
+  - says: "Twenty girls, years earlier, each chosen by the Bishop of Quebec, each given a little chest as proof of her good character."
+    source: 3
+    quote: "In 1706 thése girls"
+  - says: "Cable admitted the record was slender."
+    source: 1
+    quote: "There cannot but linger a regret around this slender fact, so full of romance and the best poetry of real life, that it is so slender."
+  - says: "The Creoles, he wrote, were never careful about checking their traditions."
+    source: 1
+    quote: "But the Creoles have never been careful for the authentication of their traditions"
 sources:
   - title: "The Creoles of Louisiana (1884), by George W. Cable"
     publisher: "Charles Scribner's Sons, via the Library of Congress"
-    url: https://www.loc.gov/item/01008769/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/creolesoflouisia01cabl/creolesoflouisia01cabl.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "New Orleans, the Place and the People (1895), by Grace King"
     publisher: "Macmillan and Co., via the Library of Congress"
-    url: https://www.loc.gov/item/01008773/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansplacep00kin/neworleansplacep00kin.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's Guide to New Orleans (1904)"
     publisher: "The Picayune, via the Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain

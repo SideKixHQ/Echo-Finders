@@ -1,0 +1,111 @@
+# Drafted by Claude Code (2026-11-09) for the New Orleans ghost legends.
+# Listening spot: Public sidewalk on St. Louis Street along the wall of St. Louis Cemetery No. 1, toward Treme Street, away from the Basin Street gate used by new-orleans-the-crosses-on-the-tomb. The cemetery is entered only with a licensed guide, so the echo stays outside the wall.
+# Position: Wikidata Q47507617 cemetery point (29.959398, -90.071497), moved about 65 m onto the St. Louis Street side and toward Treme Street, by the Vieux Carre grid bearing; about 85 m from the Basin Street gate point (low confidence; check on site).
+id: new-orleans-the-singing-priest
+title: "The Singing Priest"
+summary: "Old guidebooks said a beloved Capuchin, Father Dagobert, could still be heard singing at night in St. Louis Cemetery."
+place: "St. Louis Cemetery No. 1, St. Louis Street side, New Orleans, Louisiana"
+at: { lat: 29.95997, lng: -90.07137 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 93
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  Father Dagobert is a documented colonial Capuchin superior. The singing ghost is an "old
+  tradition" reported by the 1904 Picayune guide, which says only "St. Louis Cemetery" and names no
+  witness. The 1900 guide's fiddling ghost, Tintin Calendro, is admitted there to come from fiction.
+  The script says aloud that both are legend.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [new-orleans, treme, cemeteries, ghosts, legend, capuchins]
+teaser: "Some passers-by, the old guides said, heard singing behind this wall."
+script: |
+  Look along the wall of the old cemetery.
+
+  The old guides called this the mother cemetery of the city. And they said that at night, people passing through could hear singing in there.
+
+  Take it as a legend. It is a story the guidebooks repeated, not something anyone proved.
+
+  The singer, they said, was a priest. Father Dagobert, a French Capuchin who became superior of the city's Capuchins in colonial days. He christened, married and buried the town for half a century. Grace King, writing in eighteen ninety-five, said he had been praised in so many poems and stories that there was nothing new left to say.
+
+  A city guide of nineteen-oh-four called him the singing Père. Old traditions say, it went on, that even now at night, passing through St. Louis Cemetery, you can hear his sweet voice chanting the Te Deum, or singing the lullabies Creole mothers sang to their children. The people are not afraid of his ghost, it said. They stop to listen.
+
+  An earlier guide added a second ghost. A fiddler called Tintin Calendro, playing among these tombs. But that guide admitted he had walked straight out of a storyteller's imagination.
+
+  So if you hear music here after dark, the legend has a name ready for it. Whether anyone is singing is another matter.
+pronunciations:
+  - written: Dagobert
+    say: DAH-goh-bair
+  - written: Père
+    say: pair
+  - written: Te Deum
+    say: tay DAY-um
+  - written: Tintin Calendro
+    say: tan-TAN kah-LEN-droh
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "The old guides called this the mother cemetery of the city."
+    source: 1
+    quote: "But the old St. Louis must ever hold the title of mother of all the Louisiana cemeteries"
+  - says: "The old guides called this the mother cemetery of the city."
+    source: 2
+    quote: "It is the mother cemetery of the city"
+  - says: "Father Dagobert, a French Capuchin who became superior of the city's Capuchins in colonial days."
+    source: 2
+    quote: "Father Dagobert, there- fore, became superior of the Capuchins."
+  - says: "He christened, married and buried the town for half a century."
+    source: 2
+    quote: "christening, con- fessing, marrying, and burying"
+  - says: "He christened, married and buried the town for half a century."
+    source: 2
+    quote: "living along with his flock for half a century"
+  - says: "Grace King, writing in eighteen ninety-five, said he had been praised in so many poems and stories that there was nothing new left to say."
+    source: 2
+    quote: "in poetry, in prose, in song, and in history and in romance, he has been so worthily celebrated and so daintily rhymed, that his NEW ORLEANS. 119 eulogist can invent no new phrases."
+  - says: "Grace King, writing in eighteen ninety-five, said he had been praised in so many poems and stories that there was nothing new left to say."
+    source: 2
+    quote: "Copyricut, 1895, By MACMILLAN AND CO."
+  - says: "A city guide of nineteen-oh-four called him the singing Père."
+    source: 1
+    quote: "He ‘was ealled “the singing Pére,”"
+  - says: "A city guide of nineteen-oh-four called him the singing Père."
+    source: 1
+    quote: "Copyright 1904 by"
+  - says: "Old traditions say, it went on, that even now at night, passing through St. Louis Cemetery, you can hear his sweet voice chanting the Te Deum, or singing the lullabies Creole mothers sang to their children."
+    source: 1
+    quote: "it is said in old traditions that even now at night, passing through St. Louis Cemetery, one can hear his sweet voice chant- ing the grand “Te Deum” or caroling the sweet lullabies that Creole"
+  - says: "Old traditions say, it went on, that even now at night, passing through St. Louis Cemetery, you can hear his sweet voice chanting the Te Deum, or singing the lullabies Creole mothers sang to their children."
+    source: 1
+    quote: "sang to their children. The people are not afraid of his ghost."
+  - says: "The people are not afraid of his ghost, it said."
+    source: 1
+    quote: "The people are not afraid of his ghost. ‘hey stop to listen"
+  - says: "An earlier guide added a second ghost."
+    source: 3
+    quote: "Tintin Calendro and his wonderful fid- dle has been added to the ghostly habitues of the Old St. Louis Cemetery."
+  - says: "A fiddler called Tintin Calendro, playing among these tombs."
+    source: 3
+    quote: "Tintin Calendro and his wonderful fid- dle has been added to the ghostly habitues of the Old St. Louis Cemetery."
+  - says: "But that guide admitted he had walked straight out of a storyteller's imagination."
+    source: 3
+    quote: "Many of the fictions put forward by these au- thors, though obviously the product of imagination, have been accepted as veracious, and are now part and parcel of the legendary lore of the town."
+sources:
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), the Presbytere and Pere Dagobert; the St. Louis cemeteries"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "New Orleans, the place and the people (1895), by Grace King, Father Dagobert"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansplacep00kin/neworleansplacep00kin.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (1900), the legendary lore of the Vieux Carre"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse_0/picayunesguideto00unse_0.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain

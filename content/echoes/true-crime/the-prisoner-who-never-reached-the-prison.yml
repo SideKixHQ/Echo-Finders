@@ -9,7 +9,7 @@ at: { lat: 39.08525, lng: -94.58420 }
 triggerRadiusKm: 0.06
 category: true-crime
 format: short
-durationS: 99
+durationS: 74
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -28,7 +28,7 @@ script: |
 
   As the officers gathered around it, armed men attacked.
 
-  The apparent purpose was to free Nash.
+  Reports at the time called it an effort by gangsters to free Nash, or to kill him.
 
   Instead, Nash and four law enforcement officers were killed.
 
@@ -57,14 +57,53 @@ trueCrimeReview:
   reviewedBy: "TODO: a named human, before this can leave draft."
   reviewedAt: "2026-10-09"
   contentWarning: "This echo describes a shooting in which five people died. No violence is described in detail."
+claims:
+  - says: "Union Station"
+    source: 1
+    quote: "Convicted mobster Frank Nash, under escort by a team of FBI agents and police officers, was shot and killed outside the Station during a shootout."
+  - says: "On June 17, 1933, officers brought a handcuffed prisoner through Union Station."
+    source: 3
+    quote: "I watched the (roup of officers take Nash through the doors from the trains, march him across the lobby."
+  - says: "handcuffed prisoner"
+    source: 3
+    quote: "Nash WW handcuffed."
+  - says: "They were taking him back to federal prison."
+    source: 2
+    quote: "being returned to the Federal prison at Leavenworth, where he f&caped three years ago"
+  - says: "Reports at the time called it an effort by gangsters to free Nash, or to kill him."
+    source: 2
+    quote: "The wholesale killings resulted from an effort by gangsters to release or slay Prank Nash"
+  - says: "As the officers gathered around it, armed men attacked."
+    source: 3
+    quote: "apparently staged by four men armed with machine guns who had hidden themselves near the officers' car and calmly waited for them to group themselves about the automobile"
+  - says: "His name was Frank Nash."
+    source: 1
+    quote: "Convicted mobster Frank Nash, under escort by a team of FBI agents and police officers"
+  - says: "Instead, Nash and four law enforcement officers were killed."
+    source: 1
+    quote: "Four law enforcement officers were also killed."
+  - says: "The killings became known as the Kansas City Massacre."
+    source: 1
+    quote: "The Union Station Massacre marks one of the most infamous dates in Kansas City history."
+  - says: "They helped drive changes in federal law enforcement, including broader authority for federal agents."
+    source: 1
+    quote: "As a result of the massacre, Congress strengthened the power of the FBI."
+  - says: "For five people that morning, the next part of the journey never happened."
+    source: 1
+    quote: "Frank Nash, under escort by a team of FBI agents and police officers, was shot and killed outside the Station during a shootout. Four law enforcement officers were also killed."
 sources:
-  - title: "Kansas city massacre pretty boy floyd"
-    publisher: "Federal Bureau of Investigation"
-    url: https://www.fbi.gov/history/cases-and-criminals/kansas-city-massacre-pretty-boy-floyd
-    retrievedAt: "2026-10-09"
-    rights: public-domain
-  - title: "100 years of kansas city history"
+  - title: "100 Years of Kansas City History"
     publisher: "Union Station Kansas City"
     url: https://unionstation.org/100-years-of-kansas-city-history/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
+  - title: "Evening star (Washington, D.C.), June 18, 1933, page 1: Agents ordered to hunt slayers of five"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn83045462/1933-06-18/ed-1/?sp=1
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Evening star (Washington, D.C.), June 18, 1933, page 2: U.S. agents join hunt for killers"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn83045462/1933-06-18/ed-1/?sp=2
+    retrievedAt: "2026-11-09"
+    rights: public-domain

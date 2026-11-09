@@ -9,7 +9,7 @@ at: { lat: 35.13450, lng: -90.05780 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 97
+durationS: 64
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -22,14 +22,12 @@ script: |
 
   On April 4, 1968, Martin Luther King Jr. stood there.
 
-  He had come to Memphis to support striking Black sanitation workers seeking better pay
-  and safer working conditions.
+  He had come to Memphis to support thirteen hundred striking Black sanitation workers
+  seeking better pay and safer working conditions.
 
   The Lorraine was a place to stay while that work continued.
 
-  Then King was shot.
-
-  He died that evening.
+  Then King was shot and killed on the balcony of his room.
 
   Pause before looking away.
 
@@ -56,19 +54,41 @@ trueCrimeReview:
   reviewedBy: "TODO: a named human, before this can leave draft."
   reviewedAt: "2026-10-09"
   contentWarning: "This echo describes an assassination. No violence is described in detail."
+claims:
+  - says: "On April 4, 1968, Martin Luther King Jr. stood there."
+    source: 1
+    quote: "On April 4, 1968 Dr. Martin Luther King, Jr. was assassinated while standing on the balcony of the Lorraine Motel in Memphis, Tennessee."
+  - says: "He had come to Memphis to support thirteen hundred striking Black sanitation workers seeking better pay and safer working conditions."
+    source: 1
+    quote: "Dr. King was in Memphis supporting black sanitation workers who were on strike and demanding safer working conditions and better pay."
+  - says: "thirteen hundred striking Black sanitation workers"
+    source: 2
+    quote: "came to support 1,300 striking sanitation workers"
+  - says: "The Lorraine was a place to stay while that work continued."
+    source: 2
+    quote: "Martin Luther King chose to stay at the Lorraine during the 1968 Memphis sanitation workers strike."
+  - says: "Then King was shot and killed on the balcony of his room."
+    source: 2
+    quote: "an assassin shot and killed King on the balcony of King's room"
+  - says: "Remember the reason he was in Memphis, as well as what happened here."
+    source: 1
+    quote: "Dr. King was in Memphis supporting black sanitation workers who were on strike"
+  - says: "Today, the museum preserves this location within the larger history of civil rights."
+    source: 3
+    quote: "Established in 1991, the National Civil Rights Museum is located at the former Lorraine Motel, where civil rights leader Dr. Martin Luther King Jr. was assassinated on April 4, 1968."
 sources:
-  - title: "About us"
-    publisher: "National Civil Rights Museum"
-    url: https://civilrightsmuseum.org/about-us/
-    retrievedAt: "2026-10-09"
-    rights: fair-use-facts
-  - title: "April 4th a day of remembrance"
+  - title: "April 4th: A Day of Remembrance"
     publisher: "National Park Service"
     url: https://www.nps.gov/malu/april-4th-a-day-of-remembrance.htm
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Tennessee: The Lorraine Motel"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/tennessee-the-lorraine-hotel-memphis.htm
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+  - title: "About Us"
+    publisher: "National Civil Rights Museum"
+    url: https://civilrightsmuseum.org/about-us/
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts

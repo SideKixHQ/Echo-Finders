@@ -1,13 +1,13 @@
 id: linville-gorge-too-steep
 title: It survived by being difficult
-summary: Linville Gorge was never logged, because nobody could work out how to get the timber out.
+summary: "Most of these mountains were logged. Linville Gorge, the deepest canyon in the East, was largely left untouched."
 place: Linville Gorge, North Carolina
 at: { lat: 35.9606, lng: -82.0713 }
 triggerRadiusKm: 4
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: land
 format: short
-durationS: 90
+durationS: 59
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -15,29 +15,43 @@ quality: 0.86
 tags: [blue-ridge, north-carolina, wilderness, forest]
 teaser: Almost every forest you have driven through today is second growth. One is not.
 script: |
-  Almost everything you have driven through today grew back. The southern Appalachians were
-  logged hard between about eighteen eighty and nineteen thirty, and most of what looks
-  ancient out there is a century old at most.
+  Almost everything you have driven through today has a past. By the early nineteen thirties much of the land in these mountains had been stripped by logging and poor farming, and most of what looks ancient out there grew back afterwards.
 
-  The gorge on your right is the exception.
+  The gorge on your right is different.
 
-  It is around two thousand feet deep with walls to match, and the timber companies looked
-  at it and could not make the arithmetic work. There was no way to get logs out that cost
-  less than the logs were worth.
+  Linville Gorge is fifteen hundred feet deep, and when the Park Service wrote up this stretch of road, it called it the deepest canyon in the eastern United States. The lumber companies cut the country around it. A narrow gauge railway carried the timber out to a mill. But the gorge itself, the record says, was largely untouched.
 
-  So it was left. Not protected, not fought over. Just skipped.
+  In nineteen fifty one it was set aside as the first designated wilderness area in the East.
 
-  It is one of the few places in the eastern United States where you can look at a forest
-  that nobody ever got around to cutting down.
+  It is one of the few places out here where you can look at a forest that was never cut down.
+
 editorial: draft
-factCheck: corroborated
+factCheck: single-source
+claims:
+  - says: "By the early nineteen thirties much of the land in these mountains had been stripped by logging and poor farming"
+    source: 1
+    quote: "By the early 1930s, however, much of the land had been denuded by poor • farming and logging practices."
+  - says: "Linville Gorge is fifteen hundred feet deep, and when the Park Service wrote up this stretch of road, it called it the deepest canyon in the eastern United States."
+    source: 1
+    quote: "The 1,500' deep chasm was the deepest canyon in the eastern United States"
+  - says: "The lumber companies cut the country around it."
+    source: 1
+    quote: "Most of the area in the recreational park had been logged prior to its acquisition by the National Park Service. The Ritter Lumber Company did most of the logging"
+  - says: "A narrow gauge railway carried the timber out to a mill."
+    source: 1
+    quote: "constructing a narrow gauge railway from the present campground site to its mill at Pineola"
+  - says: "But the gorge itself, the record says, was largely untouched."
+    source: 1
+    quote: "The Linville Gorge between present Lake James and Chimney View, and the lands surrounding the Erwins View Trail were largely untouched, however."
+  - says: "In nineteen fifty one it was set aside as the first designated wilderness area in the East."
+    source: 1
+    quote: "was set aside in 1951 as the first designated Wilderness Area in the east"
+  - says: "It is one of the few places out here where you can look at a forest that was never cut down."
+    source: 1
+    quote: "were largely untouched, however"
 sources:
-  - title: Linville Gorge Wilderness
-    publisher: USDA Forest Service
-    retrievedAt: "2026-09-22"
-    rights: public-domain
-  - title: Blue Ridge Parkway — Linville Falls
-    publisher: National Park Service
-    url: https://www.nps.gov/blri/
-    retrievedAt: "2026-09-22"
+  - title: "Blue Ridge Parkway (HAER NC-42), written historical and descriptive data"
+    publisher: "Historic American Engineering Record, Library of Congress"
+    url: https://www.loc.gov/item/nc0478/
+    retrievedAt: "2026-11-09"
     rights: public-domain

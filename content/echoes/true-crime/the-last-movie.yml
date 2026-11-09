@@ -3,13 +3,13 @@
 # Position: Lincoln Ave sidewalk at the theatre entrance (medium confidence).
 id: the-last-movie
 title: "The Last Movie"
-summary: "Stand outside the theatre and look at the entrance."
+summary: "John Dillinger walked out of this theatre into a Federal ambush on the night of July 22, 1934."
 place: "Biograph Theater, Chicago"
 at: { lat: 41.92636, lng: -87.64968 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 96
+durationS: 80
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -20,21 +20,19 @@ teaser: "Stand outside the theatre and look at the entrance."
 script: |
   Stand outside the theatre and look at the entrance.
 
-  On July 22, 1934, John Dillinger walked through it to watch Manhattan Melodrama.
+  On the night of July 22, 1934, John Dillinger came here to watch a film called Manhattan Melodrama.
 
-  He was one of the country’s most wanted fugitives.
+  He was the country's Public Enemy Number One.
 
-  Federal agents knew he might come here. A woman accompanying him had provided
-  information about his plans.
+  Federal agents knew he might come here. According to the newspapers the next day, a woman who knew him had told them he would be at the Biograph that night.
 
-  They waited outside.
+  They waited outside, for nearly three hours.
 
-  According to the FBI’s account, Dillinger emerged at about ten-thirty that night. Agent
-  Melvin Purvis lit a cigar to signal the others.
+  According to the Associated Press, Dillinger walked out through the lobby and down the street, past Melvin Purvis, the agent in charge, who was sitting in a parked car. Purvis moved his right arm in a signal.
 
-  The FBI says Dillinger drew a pistol and ran toward a nearby alley.
+  The same report says Dillinger darted toward an alley, reaching for a pistol.
 
-  Agents fired. Dillinger was fatally wounded.
+  Agents fired. Three bullets hit him. It was ten forty at night.
 
   Stay on the sidewalk. There is no need to enter the alley.
 
@@ -42,10 +40,10 @@ script: |
 
   Movie audiences leave carrying a story that has just ended.
 
-  That night, Dillinger stepped out of a fictional gangster story and into the final
-  moments of his own.
+  That night, Dillinger stepped out of a gangster film and into the final moments of his own story.
 
   The theatre remains. The nationwide pursuit ended just beyond it.
+
 editorial: draft
 factCheck: corroborated
 trueCrimeReview:
@@ -54,14 +52,59 @@ trueCrimeReview:
   reviewedBy: "TODO: a named human, before this can leave draft."
   reviewedAt: "2026-10-09"
   contentWarning: "This echo describes a killing. No violence is described in detail."
+claims:
+  - says: "On the night of July 22, 1934, John Dillinger came here to watch a film called Manhattan Melodrama."
+    source: 1
+    quote: "learned from her that Dllllnger was to see “Manhattan Melodrama'\" at the Biograph Theater last night"
+  - says: "On the night of July 22, 1934"
+    source: 3
+    quote: "CHICAGO, July 23 (IKS.). Melvin H. Purvis, youthful head of the Chicago bureau of the United States Department of Investigation, wore a triumphant smile today, as he told how he *‘got his man.” The slaying of Dillinger by Federal agents last night"
+  - says: "He was the country's Public Enemy Number One."
+    source: 2
+    quote: "Here is a view of the body of America's Public Enemy No. 1 at the city morgue"
+  - says: "Federal agents knew he might come here."
+    source: 3
+    quote: "went to the theater on the tip that Dillinger was going there to a show."
+  - says: "According to the newspapers the next day, a woman who knew him had told them he would be at the Biograph that night."
+    source: 1
+    quote: "He established contact with a woman acquaintance of his quarry on the North Side and learned from her that Dllllnger was to see"
+  - says: "They waited outside, for nearly three hours."
+    source: 1
+    quote: "Purvis and 15 Agents W atched Outside Movie Nearly 3 Hours"
+  - says: "According to the Associated Press, Dillinger walked out through the lobby and down the street, past Melvin Purvis, the agent in charge, who was sitting in a parked car."
+    source: 2
+    quote: "strode through the lobby and sauntered down the street He passed, apparently without recognition, Purvis, who, seated in a parked car. moved his right arm in a casual signal."
+  - says: "Melvin Purvis, the agent in charge"
+    source: 1
+    quote: "Melvin H. Purvis, chief of the Chicago staff of the Federal Department of Investigation, who arranged the ambush"
+  - says: "Purvis moved his right arm in a signal."
+    source: 2
+    quote: "moved his right arm in a casual signal"
+  - says: "The same report says Dillinger darted toward an alley, reaching for a pistol."
+    source: 2
+    quote: "He darted into an alley, reaching for a pistol for a duel to the death."
+  - says: "Three bullets hit him."
+    source: 2
+    quote: "As he did so. a five-shot fusillade cut him down. Three of the bullets struck him."
+  - says: "It was ten forty at night."
+    source: 2
+    quote: "The hour was 10:40 pm., central daylight savings time."
+  - says: "That night, Dillinger stepped out of a gangster film and into the final moments of his own story."
+    source: 2
+    quote: "The place was just outside the Biograph Theater, a neighborhood movie at Fullerton and Lincoln avenues"
 sources:
-  - title: "John dillinger"
-    publisher: "Federal Bureau of Investigation"
-    url: https://www.fbi.gov/history/cases-and-criminals/john-dillinger
-    retrievedAt: "2026-10-09"
+  - title: "Evening star (Washington, D.C.), July 23, 1934, page 1: Woman's tip leads Dillinger to death in Federal ambush (Associated Press)"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn83045462/1934-07-23/ed-1/?sp=1
+    retrievedAt: "2026-11-09"
     rights: public-domain
-  - title: "FBI Chicago History"
-    publisher: "Federal Bureau of Investigation"
-    url: https://www.fbi.gov/history/field-office-histories/chicago
-    retrievedAt: "2026-10-09"
+  - title: "Evening star (Washington, D.C.), July 23, 1934, page 4: Dillinger slain, continued"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn83045462/1934-07-23/ed-1/?sp=4
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Washington times, July 23, 1934, page 4: Two women put fatal finger on Dillinger (International News Service)"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn84026749/1934-07-23/ed-1/?sp=4
+    retrievedAt: "2026-11-09"
     rights: public-domain

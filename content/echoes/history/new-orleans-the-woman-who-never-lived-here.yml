@@ -23,11 +23,11 @@ script: |
 
   Madame John never lived here. She never lived anywhere.
 
-  She is a character in a story by the New Orleans writer George Washington Cable. In it, a gentleman named John, about to die, gives his house to the woman who has looked after him, and to her baby daughter. Cable describes it as a frame house with a deep front gallery, the roof running out over it. She sells it, puts the money in a bank, and the bank fails.
+  She is a character in a story by the writer George Washington Cable. In it, a gentleman named John, about to die, gives his house to the woman who has looked after him, and to her baby daughter. Cable describes it as a frame house with a deep front gallery, the roof running out over it. She sells it, puts the money in a bank, and the bank fails.
 
-  Somewhere along the way, the story attached itself to this house. By nineteen-oh-four a city guide was pointing visitors here as the house that John left behind. The name stuck.
+  Somewhere along the way, the story attached itself to this house. By nineteen thirteen a city guide was pointing visitors here, to Madame John's Legacy. The name stuck.
 
-  The real story of this ground, according to the federal survey of the building, belongs to someone else. Her name was Elizabeth Real. Her husband, a ship's captain, held this lot in the seventeen-twenties. He was killed at Natchez in seventeen twenty-nine. She married the innkeeper next door, outlived him too, and kept this property in her own hands for about fifty years.
+  The real story of this ground, according to the federal survey of the building, belongs to someone else. Her name was Elizabeth Real. Her husband, a ship's captain, held this lot in the seventeen-twenties. He was killed at Natchez in seventeen twenty-nine. She married the innkeeper next door, outlived him too, and kept this property in her own hands for some fifty years.
 
   When she made her will in seventeen sixty-nine, she was described as ill in body because of her great age, but sound in spirit.
 
@@ -41,19 +41,86 @@ pronunciations:
     say: NATCH-iz
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "It is called Madame John's Legacy."
+    source: 1
+    quote: "Known by the fictional name of Mme. John's Legacy"
+  - says: "Madame John never lived here."
+    source: 1
+    quote: "it bears no relationship to the true story of this house"
+  - says: "She is a character in a story by the writer George Washington Cable."
+    source: 1
+    quote: "Its name came from the story-teller, George Washington Cable"
+  - says: "In it, a gentleman named John, about to die, gives his house to the woman who has looked after him, and to her baby daughter."
+    source: 2
+    quote: "This was once the home of a gay gentleman, whose first name happened to be John."
+  - says: "In it, a gentleman named John, about to die, gives his house to the woman who has looked after him, and to her baby daughter."
+    source: 2
+    quote: "in comes Madame John, with ’Tite Poulette, then an infant, on her arm."
+  - says: "In it, a gentleman named John, about to die, gives his house to the woman who has looked after him, and to her baby daughter."
+    source: 2
+    quote: "“J want to give you this house, Zalli; it is for you and the little one.”"
+  - says: "Cable describes it as a frame house with a deep front gallery, the roof running out over it."
+    source: 2
+    quote: "of frame, with a deep front gallery over which the roof extends."
+  - says: "She sells it, puts the money in a bank, and the bank fails."
+    source: 2
+    quote: "she sold the property and placed the proceeds in a bank, which made haste to fail."
+  - says: "By nineteen thirteen a city guide was pointing visitors here, to Madame John's Legacy."
+    source: 3
+    quote: "Cn the upper side of Dumaine, between Royal and Chartres, stands a ~ “Madame John’s Legacy.” quaint, low-browed old building with wide, shadowy porches."
+  - says: "By nineteen thirteen a city guide was pointing visitors here, to Madame John's Legacy."
+    source: 3
+    quote: "THE DAILY PICAYUNE 1913"
+  - says: "Her name was Elizabeth Real."
+    source: 1
+    quote: "This woman, Elizabeth Real, was the wife of Captain Jean Pascal"
+  - says: "Her husband, a ship's captain, held this lot in the seventeen-twenties."
+    source: 1
+    quote: "Since Jean Pascal was a ship's captain for the Company of the Indies"
+  - says: "Her husband, a ship's captain, held this lot in the seventeen-twenties."
+    source: 1
+    quote: "to whom the land had been granted by 1728."
+  - says: "He was killed at Natchez in seventeen twenty-nine."
+    source: 1
+    quote: "He was killed by Indians November 28, 1729 at Natchez"
+  - says: "She married the innkeeper next door, outlived him too, and kept this property in her own hands for some fifty years."
+    source: 1
+    quote: "his widow later married her next door neighbor, an inn-keeper named Francois Marin."
+  - says: "She married the innkeeper next door, outlived him too, and kept this property in her own hands for some fifty years."
+    source: 1
+    quote: "Mme. Pascal-Marin was again listed as a widow."
+  - says: "She married the innkeeper next door, outlived him too, and kept this property in her own hands for some fifty years."
+    source: 1
+    quote: "as a record of this property from 1722 to the 1770s. During this entire time it was in the possession of one woman."
+  - says: "When she made her will in seventeen sixty-nine, she was described as ill in body because of her great age, but sound in spirit."
+    source: 1
+    quote: "was described as \"ill in body because of her great age, but sound in spirit\" when she made her will in 1769."
+  - says: "A building contract signed weeks after the great fire of seventeen eighty-eight describes a house that matches it."
+    source: 1
+    quote: "there is in existance a building contract, dated April 1, 1788"
+  - says: "A building contract signed weeks after the great fire of seventeen eighty-eight describes a house that matches it."
+    source: 1
+    quote: "building that answers the description of the present structure known as Mme. Johns."
+  - says: "A building contract signed weeks after the great fire of seventeen eighty-eight describes a house that matches it."
+    source: 1
+    quote: "On March 21, 1788 a great fire destroyed much of the Old Square"
+  - says: "The ground under it belonged to one who was very real."
+    source: 1
+    quote: "During this entire time it was in the possession of one woman."
 sources:
   - title: "Madame John's Legacy, 632 Dumaine Street, New Orleans, Orleans Parish, LA (HABS LA-39, with addendum)"
     publisher: "Historic American Buildings Survey, Library of Congress"
-    url: https://www.loc.gov/item/la0023/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0023/data/la0023data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Old Creole Days (1890 edition), by George W. Cable, story 'Tite Poulette"
     publisher: "Charles Scribner's Sons, via the Library of Congress"
-    url: https://www.loc.gov/item/04015080/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/oldcreoledaysbyg00cabl/oldcreoledaysbyg00cabl.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
-  - title: "The Picayune's Guide to New Orleans (1904)"
-    publisher: "The Picayune, via the Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), Dumaine Street: Madame John's Legacy"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse/picayunesguideto00unse.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain

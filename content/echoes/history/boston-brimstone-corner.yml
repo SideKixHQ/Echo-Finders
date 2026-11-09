@@ -35,40 +35,89 @@ script: |
   freeze over hell, and this congregation broke a hole in the ice and let the flames up
   again.
 
-  The second story is about the cellar. A Boston historian, in a book about Park Street
+  The second story is about what was kept inside. A Boston historian, in a book about Park Street
   published in the early nineteen-twenties, said the sermons had nothing to do with it.
   During the War of eighteen twelve, he said, brimstone for making gunpowder was stored in
   the building.
 
   Brimstone is sulphur. It goes into gunpowder, and it is what hell is supposed to smell of.
 
-  So the corner got its name from the pulpit, or from the basement. Either way, it was the
+  So the corner got its name from the pulpit, or from the storeroom. Either way, it was the
   same smell.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "This is Park Street Church, and for more than a century Bostonians have called this spot Brimstone Corner."
+    source: 2
+    quote: "Park Street church, in Boston, commonly known as “Brimstone Corner.”"
+  - says: "This is Park Street Church, and for more than a century Bostonians have called this spot Brimstone Corner."
+    source: 1
+    quote: "Park Street Church has stood on this corner since 1809"
+  - says: "Nobody quite agrees why."
+    source: 4
+    quote: "Dr. Lawrence tells us that theological fumes did not really bestow the title"
+  - says: "The first story is about sermons."
+    source: 5
+    quote: "the ferypr with which the unadulterated orthodox doctrine was preached by its earlier ministers made its pulpitfa mous and led to the bestowal upon the site the church occupies ofithe title of Brimstone Corner"
+  - says: "The church was founded in eighteen-oh-nine, as much of Boston was turning Unitarian, and its early ministers preached the old orthodox faith at full heat."
+    source: 1
+    quote: "Park Street Church has stood on this corner since 1809 as an active Congregational church, organized in reaction to Unitarians who were gaining control in many of the old Puritan churches."
+  - says: "The church was founded in eighteen-oh-nine, as much of Boston was turning Unitarian, and its early ministers preached the old orthodox faith at full heat."
+    source: 5
+    quote: "the ferypr with which the unadulterated orthodox doctrine was preached by its earlier ministers"
+  - says: "Newspapers around nineteen hundred said the name came from the first of them, Edward Dorr Griffin."
+    source: 3
+    quote: "The first minister was chosen after great difficulty. He was the Rev. Edward Dorr Griffin"
+  - says: "Newspapers around nineteen hundred said the name came from the first of them, Edward Dorr Griffin."
+    source: 3
+    quote: "he also gained for it, or for the site where it stands, the name “Brimstone Corner.”"
+  - says: "Newspapers around nineteen hundred said the name came from the first of them, Edward Dorr Griffin."
+    source: 2
+    quote: "got its cognomen from a sermon by one of its early pastors, Rev. Dr Griffin"
+  - says: "One old Boston joke went like this."
+    source: 3
+    quote: "Barrett Wendell will doubt-~ less be to the fore with his statement"
+  - says: "The Unitarians had managed to freeze over hell, and this congregation broke a hole in the ice and let the flames up again."
+    source: 3
+    quote: "the Unitarians of Boston managed to freeze over hell, but the congregation at the Park Street Church, ably assisted by their pastor, broke a hole through the tce and let the flames- up again."
+  - says: "The second story is about what was kept inside."
+    source: 4
+    quote: "brimstone for making gunpowder was stored in the building"
+  - says: "A Boston historian, in a book about Park Street published in the early nineteen-twenties, said the sermons had nothing to do with it."
+    source: 4
+    quote: "OLD PARI STREET AND ITS VICINITY Ry Robert Means Lawrence."
+  - says: "A Boston historian, in a book about Park Street published in the early nineteen-twenties, said the sermons had nothing to do with it."
+    source: 4
+    quote: "Dr. Lawrence tells us that theological fumes did not really bestow the title"
+  - says: "During the War of eighteen twelve, he said, brimstone for making gunpowder was stored in the building."
+    source: 4
+    quote: "it cot its bad name because brimstone for making gunpowder was stored in the building during the war of 1812."
+  - says: "It goes into gunpowder, and it is what hell is supposed to smell of."
+    source: 4
+    quote: "brimstone for making gunpowder"
 sources:
   - title: "Park Street Church"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/park-street-church.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "\"Brimstone Corner,\" Boston. The Universalist, September 25, 1897, page 4"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn90053049/1897-09-25/ed-1/?sp=4
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "\"Brimstone Corner.\" New-York Tribune, December 21, 1902, page 21"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83030214/1902-12-21/ed-1/?sp=21
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The New York Herald, June 25, 1922, section seven, page 85 (review of a history of Park Street)"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83045774/1922-06-25/ed-1/?sp=85
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Palestine Daily Herald, February 20, 1909, page 2 (Park Street church and Brimstone Corner)"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn86090383/1909-02-20/ed-1/?sp=2
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain

@@ -46,24 +46,96 @@ script: |
   The most famous splash in American history happened somewhere under the ground around you.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "You are near the bottom of Pearl Street."
+    source: 3
+    quote: "Griffin's Wharf, the point aimed at, was directly opposite Hutchinson Street, now Pearl Street."
+  - says: "On the night of the sixteenth of December, seventeen seventy three, this was the edge of the water."
+    source: 3
+    quote: "Flounder Lane, a little foot path, under Fort Hill, wound around the margin of the water and entered Hutchinson Street near the wharf."
+  - says: "On the night of the sixteenth of December, seventeen seventy three, this was the edge of the water."
+    source: 1
+    quote: "On the night of December 16, 1773, dozens of disguised men, some as Indigenous Americans, boarded the three East India Company ships"
+  - says: "A footpath called Flounder Lane wound along the shoreline under a hill and came into this street."
+    source: 3
+    quote: "Flounder Lane, a little foot path, under Fort Hill, wound around the margin of the water and entered Hutchinson Street near the wharf."
+  - says: "A footpath called Flounder Lane wound along the shoreline under a hill and came into this street."
+    source: 4
+    quote: "the old footpath under the hill was known as Flounder Lane"
+  - says: "Opposite the end of the street stood Griffin's Wharf."
+    source: 3
+    quote: "Griffin's Wharf, the point aimed at, was directly opposite Hutchinson Street, now Pearl Street."
+  - says: "And tied up at Griffin's Wharf were three ships carrying tea."
+    source: 5
+    quote: "Here formerly stood GRIFFIN’S WHARF at which lay moored on Dec. 16, 1773, three British ships with cargoes of tea."
+  - says: "About a hundred and fifty men, faces darkened with soot, came down from the Old South Meeting House."
+    source: 1
+    quote: "Of the mob, about 150 men have donned Mohawk motifs as a symbol for their cause, also concealing their identities with cloaks and soot for their faces."
+  - says: "About a hundred and fifty men, faces darkened with soot, came down from the Old South Meeting House."
+    source: 2
+    quote: "some 150 men with soot on their faces and varying interpretations of Indigenous dress stormed out of buildings nearby and made their way to the tea ships at Griffin's Wharf."
+  - says: "A ten minute walk."
+    source: 1
+    quote: "After the 10-minute walk, the 150 men split into three groups"
+  - says: "They split into three groups and boarded the ships."
+    source: 1
+    quote: "the 150 men split into three groups and board each of the tea ships docked at Griffin’s Wharf"
+  - says: "They told the crews to open the hatches and hand over the hoisting tackle, and promised them no harm."
+    source: 1
+    quote: "ordered the captain and crew to open the hatchways, and hand us the hoisting tackle and rope, assuring them that no harm was intended them."
+  - says: "For three hours they hauled up chests, split them open with axes, and tipped the tea over the side."
+    source: 1
+    quote: "As they were hauled on deck others knocked them open with axes, and others raised them to the railings and discharged their contents overboard."
+  - says: "For three hours they hauled up chests, split them open with axes, and tipped the tea over the side."
+    source: 1
+    quote: "After three hours of hard work, the boarding parties succeed in destroying all 342 chests"
+  - says: "Three hundred and forty two chests."
+    source: 1
+    quote: "destroying all 342 chests of East India Company Tea aboard the three ships."
+  - says: "They were careful to take nothing else."
+    source: 1
+    quote: "the boarding parties ensure that only tea is targeted."
+  - says: "One padlock was broken by accident, and it was replaced a few days later."
+    source: 1
+    quote: "A single lock has been accidentally broken during the action and will be replaced within a few days by the Sons of Liberty."
+  - says: "Then they went home without a word to each other."
+    source: 1
+    quote: "quietly retired to our several places of residence, without having any conversation with each other"
+  - says: "One of them remembered it as the stillest night Boston had known in months."
+    source: 1
+    quote: "it was observed at that time that the stillest night ensued that Boston had enjoyed for many months."
+  - says: "The footpath became a street, and the street became part of the waterfront avenue."
+    source: 3
+    quote: "This lane was afterwards widened and was called Broad Street, but is now a part of Atlantic Avenue."
+  - says: "The filling nearly wiped Griffin's Wharf off the map."
+    source: 3
+    quote: "The laying out of broad Street and consequent filling in nearly obliterated Grif- fin’s Wharf."
+  - says: "The most famous splash in American history happened somewhere under the ground around you."
+    source: 5
+    quote: "The ‘‘Tea Party Wharf’? was near the western line of the present Atlantic Avenue, close by Pearl Street."
 sources:
   - title: "The Boston Tea Party in Real Time"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/000/boston-tea-party-in-real-time.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Old South Meeting House"
     publisher: "National Park Service, Boston National Historical Park"
     url: https://www.nps.gov/bost/learn/historyculture/osmh.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Walks & talks about historic Boston (1917)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/17025471/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/01012230/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Boston, a guide book, by Edwin M. Bacon (revised edition, 1908)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/33007578/
+    retrievedAt: "2026-11-09"
     rights: public-domain
