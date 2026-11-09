@@ -1,0 +1,32 @@
+# Drafted 2026-11-09 for James's approval. The 1898 coup, walked from Alex Manly's newspaper to the memorial park.
+# About 3.6 km on foot; durationS is door to door, dwells included.
+id: wilmington-1898-walk
+mode: walking
+name: "1898: the coup and how Wilmington remembers it"
+
+origin:
+  name: Alex Manly marker
+  at: { lat: 34.2296, lng: -77.9455 }
+  timeZone: America/New_York
+
+destination:
+  name: 1898 Memorial Park
+  at: { lat: 34.248, lng: -77.94725 }
+  timeZone: America/New_York
+
+durationS: 4200
+
+waypoints:
+  - { name: "Alex Manly marker", at: { lat: 34.2296, lng: -77.9455 }, dwellS: 120 }
+  - { name: "Third and Nun", at: { lat: 34.2304, lng: -77.9455 } }
+  - { name: "Former Daily Record site", at: { lat: 34.23038, lng: -77.94008 }, dwellS: 120 }
+  - { name: "Gregory Congregational Church", at: { lat: 34.23098, lng: -77.94077 }, dwellS: 120 }
+  - { name: "Seventh and Nun", at: { lat: 34.231, lng: -77.9398 } }
+  - { name: "Giblem Lodge", at: { lat: 34.23694, lng: -77.9397 }, dwellS: 120 }
+  - { name: "Chestnut Street Presbyterian Church", at: { lat: 34.2379, lng: -77.9402 }, dwellS: 120 }
+  - { name: "Fifth and Chestnut", at: { lat: 34.2377, lng: -77.943 } }
+  - { name: "Wilmington Coup marker", at: { lat: 34.2358, lng: -77.94435 }, dwellS: 150 }
+  - { name: "Third and Market", at: { lat: 34.2357, lng: -77.946 } }
+  - { name: "City Hall and Thalian Hall", at: { lat: 34.2371, lng: -77.94598 }, dwellS: 150 }
+  - { name: "J. Allen Kirk marker", at: { lat: 34.24137, lng: -77.94687 }, dwellS: 90 }
+  - { name: "1898 Memorial Park", at: { lat: 34.248, lng: -77.94725 } }

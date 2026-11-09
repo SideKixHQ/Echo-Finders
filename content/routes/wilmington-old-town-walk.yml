@@ -1,0 +1,29 @@
+# Drafted 2026-11-09 for James's approval. The riverfront, the colonial houses on Third and Market, and the mansion at the top of the hill.
+# About 1.2 km on foot; durationS is door to door, dwells included.
+id: wilmington-old-town-walk
+mode: walking
+name: "Old Wilmington: the river to the Bellamy Mansion"
+
+origin:
+  name: Riverwalk at Market Street
+  at: { lat: 34.23545, lng: -77.94992 }
+  timeZone: America/New_York
+
+destination:
+  name: Bellamy Mansion Museum
+  at: { lat: 34.2359, lng: -77.94285 }
+  timeZone: America/New_York
+
+durationS: 2460
+
+waypoints:
+  - { name: "Riverwalk at Market Street", at: { lat: 34.23545, lng: -77.94992 }, dwellS: 120 }
+  - { name: "Front and Dock", at: { lat: 34.2346, lng: -77.9489 } }
+  - { name: "Washington's Southern Tour marker", at: { lat: 34.23445, lng: -77.9461 }, dwellS: 60 }
+  - { name: "Latimer House", at: { lat: 34.2335, lng: -77.9461 }, dwellS: 240 }
+  - { name: "Cottage Lane", at: { lat: 34.2338, lng: -77.9451 }, dwellS: 90 }
+  - { name: "Third and Cottage Lane", at: { lat: 34.2338, lng: -77.946 } }
+  - { name: "Burgwin-Wright House", at: { lat: 34.2354, lng: -77.9464 }, dwellS: 300 }
+  - { name: "St. James Episcopal Church", at: { lat: 34.23548, lng: -77.94565 }, dwellS: 240 }
+  - { name: "Temple of Israel", at: { lat: 34.2355, lng: -77.9444 }, dwellS: 150 }
+  - { name: "Bellamy Mansion Museum", at: { lat: 34.2359, lng: -77.94285 } }
