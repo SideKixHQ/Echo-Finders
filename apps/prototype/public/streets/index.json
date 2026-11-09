@@ -13,6 +13,46 @@
    "file": "african-burial-ground.json"
   },
   {
+   "area": "annapolis-a-port-called-napolis",
+   "bbox": [
+    -76.50617,
+    38.96692,
+    -76.47213,
+    38.99183
+   ],
+   "file": "annapolis-a-port-called-napolis.json"
+  },
+  {
+   "area": "asheville-a-dome-made-of-tile",
+   "bbox": [
+    -82.56926,
+    35.58312,
+    -82.53704,
+    35.60828
+   ],
+   "file": "asheville-a-dome-made-of-tile.json"
+  },
+  {
+   "area": "asheville-a-government-at-the-inn",
+   "bbox": [
+    -82.55536,
+    35.60982,
+    -82.52884,
+    35.63138
+   ],
+   "file": "asheville-a-government-at-the-inn.json"
+  },
+  {
+   "area": "asheville-a-leg-in-a-boot",
+   "bbox": [
+    -82.5794,
+    35.60003,
+    -82.54924,
+    35.62428
+   ],
+   "file": "asheville-a-leg-in-a-boot.json"
+  },
+  {
    "area": "atlantic-city-first-boardwalk",
    "bbox": [
     -74.43684,
@@ -23,6 +63,26 @@
    "file": "atlantic-city-first-boardwalk.json"
   },
   {
+   "area": "bald-head-captain-charlie-lit-both",
+   "bbox": [
+    -77.97978,
+    33.83342,
+    -77.94882,
+    33.85678
+   ],
+   "file": "bald-head-captain-charlie-lit-both.json"
+  },
+  {
+   "area": "bald-head-the-builder-who-lost-money",
+   "bbox": [
+    -78.01378,
+    33.86232,
+    -77.98722,
+    33.88758
+   ],
+   "file": "bald-head-the-builder-who-lost-money.json"
+  },
+  {
    "area": "boston-abiel-smith-school-goodbye",
    "bbox": [
     -71.08444,
@@ -31,6 +91,16 @@
     42.38694
    ],
    "file": "boston-abiel-smith-school-goodbye.json"
+  },
+  {
+   "area": "boston-the-lady-in-black",
+   "bbox": [
+    -70.94236,
+    42.3095,
+    -70.9132,
+    42.33106
+   ],
+   "file": "boston-the-lady-in-black.json"
   },
   {
    "area": "canaveral-free-speed",
@@ -93,6 +163,16 @@
    "file": "casa-casuarina-the-steps.json"
   },
   {
+   "area": "caswell-beach-a-hat-from-a-helicopter",
+   "bbox": [
+    -78.04869,
+    33.88022,
+    -78.01551,
+    33.90358
+   ],
+   "file": "caswell-beach-a-hat-from-a-helicopter.json"
+  },
+  {
    "area": "charleston-a-strangers-initials",
    "bbox": [
     -79.95642,
@@ -101,6 +181,96 @@
     32.80238
    ],
    "file": "charleston-a-strangers-initials.json"
+  },
+  {
+   "area": "charlotte-a-city-of-tents",
+   "bbox": [
+    -80.89514,
+    35.21505,
+    -80.86874,
+    35.23661
+   ],
+   "file": "charlotte-a-city-of-tents.json"
+  },
+  {
+   "area": "charlotte-a-navy-yard-far-from-the-sea",
+   "bbox": [
+    -80.8694,
+    35.20402,
+    -80.8274,
+    35.23973
+   ],
+   "file": "charlotte-a-navy-yard-far-from-the-sea.json"
+  },
+  {
+   "area": "charlotte-strictly-stock",
+   "bbox": [
+    -80.9557,
+    35.22822,
+    -80.9293,
+    35.24978
+   ],
+   "file": "charlotte-strictly-stock.json"
+  },
+  {
+   "area": "charlotte-the-sandwich-from-crescent-avenue",
+   "bbox": [
+    -80.83469,
+    35.20342,
+    -80.80831,
+    35.22498
+   ],
+   "file": "charlotte-the-sandwich-from-crescent-avenue.json"
+  },
+  {
+   "area": "chicago-allowed-to-carry-twenty-five-hundred",
+   "bbox": [
+    -87.66173,
+    41.85852,
+    -87.60988,
+    41.90794
+   ],
+   "file": "chicago-allowed-to-carry-twenty-five-hundred.json"
+  },
+  {
+   "area": "chicago-the-porters-contract",
+   "bbox": [
+    -87.62294,
+    41.68092,
+    -87.59386,
+    41.70338
+   ],
+   "file": "chicago-the-porters-contract.json"
+  },
+  {
+   "area": "chicago-under-the-bleachers",
+   "bbox": [
+    -87.61556,
+    41.78172,
+    -87.58664,
+    41.80328
+   ],
+   "file": "chicago-under-the-bleachers.json"
+  },
+  {
+   "area": "cleveland-no-more-protection",
+   "bbox": [
+    -81.6057,
+    41.49972,
+    -81.5769,
+    41.52128
+   ],
+   "file": "cleveland-no-more-protection.json"
+  },
+  {
+   "area": "cleveland-the-missing-letter",
+   "bbox": [
+    -81.71839,
+    41.47872,
+    -81.68693,
+    41.50738
+   ],
+   "file": "cleveland-the-missing-letter.json"
   },
   {
    "area": "craggy-gardens-balds",
@@ -133,6 +303,36 @@
    "file": "dc-a-country-he-never-saw.json"
   },
   {
+   "area": "deadwood-before-she-was-calamity",
+   "bbox": [
+    -103.74841,
+    44.36116,
+    -103.70992,
+    44.38678
+   ],
+   "file": "deadwood-before-she-was-calamity.json"
+  },
+  {
+   "area": "fairfax-she-married-the-man-who-arrested-her",
+   "bbox": [
+    -77.31994,
+    38.83512,
+    -77.29056,
+    38.85688
+   ],
+   "file": "fairfax-she-married-the-man-who-arrested-her.json"
+  },
+  {
+   "area": "fall-river-a-description-without-a-photograph",
+   "bbox": [
+    -71.17044,
+    41.68812,
+    -71.13156,
+    41.71048
+   ],
+   "file": "fall-river-a-description-without-a-photograph.json"
+  },
+  {
    "area": "fort-fisher-it-amounted-to-nothing",
    "bbox": [
     -77.95411,
@@ -151,6 +351,36 @@
     35.26158
    ],
    "file": "hatteras-moved-the-lighthouse.json"
+  },
+  {
+   "area": "jerome-a-ghost-town-on-purpose",
+   "bbox": [
+    -112.12879,
+    34.73812,
+    -112.10078,
+    34.76218
+   ],
+   "file": "jerome-a-ghost-town-on-purpose.json"
+  },
+  {
+   "area": "jerome-water-from-seven-miles-away",
+   "bbox": [
+    -112.14812,
+    34.71922,
+    -112.12188,
+    34.74078
+   ],
+   "file": "jerome-water-from-seven-miles-away.json"
+  },
+  {
+   "area": "key-west-a-house-named-for-mercedes",
+   "bbox": [
+    -81.82185,
+    24.53692,
+    -81.77843,
+    24.57008
+   ],
+   "file": "key-west-a-house-named-for-mercedes.json"
   },
   {
    "area": "kitty-hawk-shorter-than-this-plane",
@@ -193,6 +423,36 @@
    "file": "linville-gorge-too-steep.json"
   },
   {
+   "area": "memphis-before-breakfast",
+   "bbox": [
+    -90.07588,
+    35.12372,
+    -90.0245,
+    35.15608
+   ],
+   "file": "memphis-before-breakfast.json"
+  },
+  {
+   "area": "memphis-the-b-side",
+   "bbox": [
+    -90.04468,
+    35.10522,
+    -90.01832,
+    35.12678
+   ],
+   "file": "memphis-the-b-side.json"
+  },
+  {
+   "area": "memphis-the-mountaintop",
+   "bbox": [
+    -90.06248,
+    35.11072,
+    -90.03612,
+    35.13228
+   ],
+   "file": "memphis-the-mountaintop.json"
+  },
+  {
    "area": "mount-mitchell-buried-on-top",
    "bbox": [
     -82.27839,
@@ -201,6 +461,46 @@
     35.77618
    ],
    "file": "mount-mitchell-buried-on-top.json"
+  },
+  {
+   "area": "nashville-a-hall-built-by-song",
+   "bbox": [
+    -86.81641,
+    36.15644,
+    -86.78971,
+    36.178
+   ],
+   "file": "nashville-a-hall-built-by-song.json"
+  },
+  {
+   "area": "nashville-she-bit-the-conductor",
+   "bbox": [
+    -86.79755,
+    36.15047,
+    -86.76085,
+    36.17703
+   ],
+   "file": "nashville-she-bit-the-conductor.json"
+  },
+  {
+   "area": "nashville-the-colored-lights",
+   "bbox": [
+    -86.8062,
+    36.13841,
+    -86.77865,
+    36.16073
+   ],
+   "file": "nashville-the-colored-lights.json"
+  },
+  {
+   "area": "nashville-the-fort-nobody-attacked",
+   "bbox": [
+    -86.78801,
+    36.13229,
+    -86.75659,
+    36.15588
+   ],
+   "file": "nashville-the-fort-nobody-attacked.json"
   },
   {
    "area": "new-orleans-a-district-with-his-name",
@@ -213,6 +513,56 @@
    "file": "new-orleans-a-district-with-his-name.json"
   },
   {
+   "area": "new-orleans-ghosts-under-the-oaks",
+   "bbox": [
+    -90.10535,
+    29.97018,
+    -90.07631,
+    29.99658
+   ],
+   "file": "new-orleans-ghosts-under-the-oaks.json"
+  },
+  {
+   "area": "newport-a-door-in-the-floor",
+   "bbox": [
+    -71.32699,
+    41.47502,
+    -71.29551,
+    41.50088
+   ],
+   "file": "newport-a-door-in-the-floor.json"
+  },
+  {
+   "area": "oak-island-five-left-standing",
+   "bbox": [
+    -78.08599,
+    33.90142,
+    -78.06001,
+    33.92298
+   ],
+   "file": "oak-island-five-left-standing.json"
+  },
+  {
+   "area": "oak-island-how-oak-island-became-an-island",
+   "bbox": [
+    -78.15999,
+    33.90192,
+    -78.12661,
+    33.93528
+   ],
+   "file": "oak-island-how-oak-island-became-an-island.json"
+  },
+  {
+   "area": "pawhuska-guardian-of-his-own-children",
+   "bbox": [
+    -96.35408,
+    36.65502,
+    -96.32656,
+    36.67858
+   ],
+   "file": "pawhuska-guardian-of-his-own-children.json"
+  },
+  {
    "area": "philadelphia-a-firehouse-on-a-market",
    "bbox": [
     -75.17881,
@@ -223,24 +573,224 @@
    "file": "philadelphia-a-firehouse-on-a-market.json"
   },
   {
+   "area": "saint-paul-almost-pigs-eye",
+   "bbox": [
+    -93.14322,
+    44.91072,
+    -93.10757,
+    44.93424
+   ],
+   "file": "saint-paul-almost-pigs-eye.json"
+  },
+  {
+   "area": "saint-paul-the-end-of-the-river-road",
+   "bbox": [
+    -93.09973,
+    44.93522,
+    -93.06927,
+    44.95678
+   ],
+   "file": "saint-paul-the-end-of-the-river-road.json"
+  },
+  {
+   "area": "saint-paul-the-spirit-house",
+   "bbox": [
+    -93.06159,
+    44.92838,
+    -93.03113,
+    44.94994
+   ],
+   "file": "saint-paul-the-spirit-house.json"
+  },
+  {
+   "area": "salem-a-life-in-one-house",
+   "bbox": [
+    -70.91351,
+    42.50772,
+    -70.87067,
+    42.53283
+   ],
+   "file": "salem-a-life-in-one-house.json"
+  },
+  {
+   "area": "san-antonio-a-day-at-the-mission",
+   "bbox": [
+    -98.49257,
+    29.35112,
+    -98.46748,
+    29.37308
+   ],
+   "file": "san-antonio-a-day-at-the-mission.json"
+  },
+  {
+   "area": "san-antonio-one-governor-was-enough",
+   "bbox": [
+    -98.50827,
+    29.41352,
+    -98.47392,
+    29.43708
+   ],
+   "file": "san-antonio-one-governor-was-enough.json"
+  },
+  {
+   "area": "san-antonio-the-eye-with-a-mustache",
+   "bbox": [
+    -98.50251,
+    29.37991,
+    -98.47777,
+    29.40147
+   ],
+   "file": "san-antonio-the-eye-with-a-mustache.json"
+  },
+  {
+   "area": "san-antonio-the-mission-that-kept-moving",
+   "bbox": [
+    -98.46256,
+    29.30701,
+    -98.43784,
+    29.32857
+   ],
+   "file": "san-antonio-the-mission-that-kept-moving.json"
+  },
+  {
+   "area": "san-antonio-water-over-the-creek",
+   "bbox": [
+    -98.47404,
+    29.32204,
+    -98.4493,
+    29.3436
+   ],
+   "file": "san-antonio-water-over-the-creek.json"
+  },
+  {
+   "area": "san-francisco-a-message-on-the-water-tower",
+   "bbox": [
+    -122.43663,
+    37.81593,
+    -122.40933,
+    37.8375
+   ],
+   "file": "san-francisco-a-message-on-the-water-tower.json"
+  },
+  {
+   "area": "san-francisco-a-toast-to-the-wrong-president",
+   "bbox": [
+    -122.47864,
+    37.78852,
+    -122.44636,
+    37.81498
+   ],
+   "file": "san-francisco-a-toast-to-the-wrong-president.json"
+  },
+  {
+   "area": "san-francisco-filled-by-the-tide",
+   "bbox": [
+    -122.52734,
+    37.76792,
+    -122.49186,
+    37.79858
+   ],
+   "file": "san-francisco-filled-by-the-tide.json"
+  },
+  {
+   "area": "san-francisco-the-arch-over-the-fort",
+   "bbox": [
+    -122.49044,
+    37.79962,
+    -122.46316,
+    37.82118
+   ],
+   "file": "san-francisco-the-arch-over-the-fort.json"
+  },
+  {
+   "area": "san-francisco-the-unfinished-mosaic",
+   "bbox": [
+    -122.43744,
+    37.79582,
+    -122.41016,
+    37.81738
+   ],
+   "file": "san-francisco-the-unfinished-mosaic.json"
+  },
+  {
+   "area": "santa-fe-a-tank-called-the-mud-puppy",
+   "bbox": [
+    -105.95147,
+    35.66839,
+    -105.91784,
+    35.69853
+   ],
+   "file": "santa-fe-a-tank-called-the-mud-puppy.json"
+  },
+  {
    "area": "savannah-a-city-for-christmas",
    "bbox": [
     -81.11422,
     32.05857,
-    -81.07136,
+    -81.07078,
     32.09293
    ],
    "file": "savannah-a-city-for-christmas.json"
   },
   {
-   "area": "the-balcony",
+   "area": "savannah-dinner-under-the-trees",
    "bbox": [
-    -90.07098,
-    35.12372,
-    -90.04462,
-    35.14528
+    -81.05912,
+    32.03682,
+    -81.02838,
+    32.05958
    ],
-   "file": "the-balcony.json"
+   "file": "savannah-dinner-under-the-trees.json"
+  },
+  {
+   "area": "savannah-the-spring-that-smelled-of-the-bolt",
+   "bbox": [
+    -81.05952,
+    32.02342,
+    -81.03408,
+    32.04498
+   ],
+   "file": "savannah-the-spring-that-smelled-of-the-bolt.json"
+  },
+  {
+   "area": "southport-a-fish-house-plays-a-fish-shack",
+   "bbox": [
+    -78.03639,
+    33.90497,
+    -78.00171,
+    33.93158
+   ],
+   "file": "southport-a-fish-house-plays-a-fish-shack.json"
+  },
+  {
+   "area": "st-augustine-a-hotel-poured-from-shells",
+   "bbox": [
+    -81.32849,
+    29.88102,
+    -81.29827,
+    29.91586
+   ],
+   "file": "st-augustine-a-hotel-poured-from-shells.json"
+  },
+  {
+   "area": "st-augustine-the-free-town-in-the-marsh",
+   "bbox": [
+    -81.33772,
+    29.917,
+    -81.31284,
+    29.93856
+   ],
+   "file": "st-augustine-the-free-town-in-the-marsh.json"
+  },
+  {
+   "area": "st-augustine-the-inlet-of-slaughters",
+   "bbox": [
+    -81.24941,
+    29.70422,
+    -81.22459,
+    29.72578
+   ],
+   "file": "st-augustine-the-inlet-of-slaughters.json"
   },
   {
    "area": "the-children-at-the-lighthouse",
@@ -311,16 +861,6 @@
     36.01178
    ],
    "file": "the-lights-beyond-the-ridge.json"
-  },
-  {
-   "area": "the-men-who-left-their-faces-behind",
-   "bbox": [
-    -122.43663,
-    37.81593,
-    -122.40933,
-    37.83749
-   ],
-   "file": "the-men-who-left-their-faces-behind.json"
   },
   {
    "area": "the-music-in-the-empty-room",

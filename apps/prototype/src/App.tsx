@@ -1857,6 +1857,7 @@ export function App() {
                   kept={downloaded}
                   label={roaming ? (lookAt ? lookAt.label : "Exploring") : leftLabel}
                   library={LIBRARY}
+                  here={state.position?.at ?? null}
                   onLook={lookSomewhere}
                   {...(state.position
                     ? {

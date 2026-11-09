@@ -8,6 +8,7 @@
 id: ocean-drive-versace
 mode: walking
 name: "Ocean Drive: the walk home"
+area: Miami Beach
 
 origin:
   name: News Café, 800 Ocean Drive
