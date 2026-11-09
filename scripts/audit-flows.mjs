@@ -308,6 +308,12 @@ async function arrive() {
     await p.getByLabel(/Change your journey/).click();
     await p.locator('.jmenu-item', { hasText: 'Ocean Drive' }).first().click();
     await p.waitForTimeout(1500);
+    // Ocean Drive starts beside its own echoes, so a sync card can land in that second and a
+    // half and sit over the nav. Clear it, as the reload below does, before going to My Echoes.
+    for (let i = 0; i < 4 && (await p.locator('.synced').count()); i++) {
+      await p.locator('.synced-later').click().catch(() => {});
+      await p.waitForTimeout(400);
+    }
     await p.locator('.nav').getByRole('button', { name: /My Echoes/ }).click();
     await p.waitForTimeout(800);
     check('My Echoes: keeps what was found on other journeys', await visible(fort));
