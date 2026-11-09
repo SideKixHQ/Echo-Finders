@@ -1,0 +1,60 @@
+# Drafted by Claude Code (2026-11-09) for San Antonio, Texas.
+# Listening spot: The public sidewalk around City Hall on Military Plaza.
+# Position: Wikidata Q6852119 (Military Plaza, 29.4247, -98.4944); City Hall stands in the center of the plaza (high confidence).
+id: san-antonio-the-chili-queens-plaza
+title: "The Chili Queens' Plaza"
+summary: "Military Plaza was a Spanish parade ground and market. Building City Hall on it in 1888 to 1891 ended the market and the Chili Queens."
+place: "San Antonio City Hall, Military Plaza, San Antonio, Texas"
+at: { lat: 29.4247, lng: -98.4944 }
+triggerRadiusKm: 0.05
+category: food-drink
+format: look-below
+durationS: 39
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [san-antonio, military-plaza, chili, food, market]
+teaser: "City Hall stands in the middle of an old open-air market, on purpose or not."
+script: |
+  Look at City Hall, sitting in the middle of this plaza. Before it was built, this was open ground.
+
+  Military Plaza was laid out by the Spanish in 1722, as a parade ground and a market square.
+
+  For years it was a market in the open air, with the Chili Queens, and the rowdy cowboys, cattlemen and gamblers.
+
+  Then, from 1888 to 1891, the city put its new City Hall right in the middle. That put an end to the open-air market, and to the Chili Queens.
+
+  The building you see stands right where the Chili Queens used to be.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Military Plaza was laid out by the Spanish in 1722, as a parade ground and a market square."
+    source: 2
+    quote: "In 1722, the presidio relocated to its current location, and military authorities ordered the creation of the Plaza de Armas, or Military Plaza, to serve as a parade ground and market square."
+  - says: "For years it was a market in the open air, with the Chili Queens, and the rowdy cowboys, cattlemen and gamblers."
+    source: 1
+    quote: "put an end to the open air market, the \"Chili Queens\" and the rowdy activities of the cowboys, cattlemen and gamblers who frequented the plaza"
+  - says: "Then, from 1888 to 1891, the city put its new City Hall right in the middle."
+    source: 1
+    quote: "Construction of the present City Hall in the center of the plaza in 1888-91"
+  - says: "That put an end to the open-air market, and to the Chili Queens."
+    source: 1
+    quote: "put an end to the open air market, the \"Chili Queens\""
+  - says: "Look at City Hall, sitting in the middle of this plaza."
+    source: 1
+    quote: "San Antonio City Hall is situated in the center of Military Plaza"
+  - says: "The building you see stands right where the Chili Queens used to be."
+    source: 1
+    quote: "the \"Chili Queens\""
+sources:
+  - title: "San Antonio City Hall, Military Plaza (HABS TX-222)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/tx0521/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Main and Military Plazas"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/main-and-military-plazas.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

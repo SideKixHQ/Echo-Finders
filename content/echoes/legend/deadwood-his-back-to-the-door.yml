@@ -1,0 +1,93 @@
+# Drafted by Claude Code (2026-11-09) for Deadwood, South Dakota.
+# Listening spot: Main Street sidewalk in the historic district.
+# Position: Wikidata Q5245750 (Deadwood Historic District) 44.371944, -103.733333, on Main Street; the original saloon site is not pinned (medium-low confidence).
+id: deadwood-his-back-to-the-door
+title: "His Back to the Door"
+summary: "Wild Bill Hickok was shot at a Deadwood poker table in 1876. The legend says it was the one time he sat with his back to the door."
+place: "Main Street, Deadwood Historic District, Deadwood, South Dakota"
+at: { lat: 44.37194, lng: -103.73333 }
+triggerRadiusKm: 0.1
+category: legend
+format: short
+durationS: 65
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The back-to-the-door detail comes from a 1938 folklore interview and is told as legend.
+  The killing itself, its date and saloon are documented.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [deadwood, wild-bill-hickok, old-west, legend]
+teaser: "The story everybody tells about Wild Bill's last hand. Nobody can prove it."
+script: |
+  Somewhere in this town, in Nuttall and Mann's Saloon Number Ten, Wild Bill Hickok sat down to play cards for the last time.
+
+  It was the second of August, 1876. He was shot and killed at the poker table by a drunken stranger.
+
+  An old photograph of his monument names the killer as Jack McCall.
+
+  Here is where the legend comes in.
+
+  In 1938 a man in Nebraska told an interviewer from a government writers' project what he remembered of Wild Bill.
+
+  He said he had watched him at target practice many times.
+
+  And he said Wild Bill died because it was the first time he was ever known to turn his back to the door.
+
+  That is legend, told by an old man long afterwards. It is not proven.
+
+  He had a complaint about the movies too. On screen they gave Wild Bill a cross draw.
+
+  In reality, he said, Hickok drew his gun straight up.
+
+  Everybody remembers the door. Nobody can prove it.
+pronunciations:
+  - written: "Hickok"
+    say: "HICK-ock"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Somewhere in this town, in Nuttall and Mann's Saloon Number Ten, Wild Bill Hickok sat down to play cards for the last time."
+    source: 1
+    quote: "was shot and killed by a drunken stranger at a poker table in Nuttall & Mann's Saloon No. 10 in Deadwood on August 2, 1876."
+  - says: "It was the second of August, 1876."
+    source: 1
+    quote: "in Deadwood on August 2, 1876."
+  - says: "He was shot and killed at the poker table by a drunken stranger."
+    source: 1
+    quote: "was shot and killed by a drunken stranger at a poker table"
+  - says: "An old photograph of his monument names the killer as Jack McCall."
+    source: 2
+    quote: "Killed by Jack McCall at Deadwood, S.D., Aug. 2, 1876, where his body now lies"
+  - says: "In 1938 a man in Nebraska told an interviewer from a government writers' project what he remembered of Wild Bill."
+    source: 3
+    quote: "Oat. 190 1938 SUBJECT Folklore, Nebraska"
+  - says: "And he said Wild Bill died because it was the first time he was ever known to turn his back to the door."
+    source: 3
+    quote: "it was the first time pat 7 Hiokok over was known to turn his back to the door."
+  - says: "On screen they gave Wild Bill a cross draw."
+    source: 3
+    quote: "In the movie, they made a \"cross draw,\" but in reality Wild Bill Hiokok drew his gun straight up."
+  - says: "In reality, he said, Hickok drew his gun straight up."
+    source: 3
+    quote: "but in reality Wild Bill Hiokok drew his gun straight up."
+  - says: "He said he had watched him at target practice many times."
+    source: 3
+    quote: "I have seen Bill at target practise many times."
+sources:
+  - title: "Today in History - May 27: Wild Bill Hickok"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/today-in-history/may-27/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "\"Wild Bill's Monument.\" James B. Hickoc [i.e. Hickok] ... Killed by Jack McCall at Deadwood, S.D., Aug. 2, 1876"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/99613969/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "[Ed Grantham], American Life Histories: Manuscripts from the Federal Writers' Project, 1938"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/wpalh000852/
+    retrievedAt: "2026-11-09"
+    rights: public-domain

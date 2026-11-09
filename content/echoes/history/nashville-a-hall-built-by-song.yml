@@ -1,0 +1,82 @@
+# Drafted by Claude Code (2026-11-09) for Nashville.
+# Listening spot: Public sidewalk or campus walk in view of Jubilee Hall. It is a residence hall; do not go inside.
+# Position: HABS TN-19 latitude and longitude for Jubilee Hall (36°10'02" N, 86°48'11" W), consistent with Wikidata Q49087 for Fisk University (medium-high confidence).
+id: nashville-a-hall-built-by-song
+title: "A Hall Built by Song"
+summary: "Fisk's Jubilee Hall was paid for by the Jubilee Singers' 1871 tour, and is the oldest permanent building for Black higher education."
+place: "Jubilee Hall, Fisk University, Nashville, Tennessee"
+at: { lat: 36.16722, lng: -86.80306 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 58
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [nashville, fisk, jubilee-singers, african-american-history, music]
+teaser: "Eleven students went on tour and sang this building into existence."
+script: |
+  Look at the tall Victorian Gothic hall. Six stories, built in an L. This is Jubilee Hall.
+
+  Fisk opened in 1866, in the years right after the Civil War, with help from the Freedmen's Bureau.
+
+  In 1871, a chorus of students, seven women and four men, went on tour to raise money. The big northern cities first, then Europe and the British Isles.
+
+  They sang. And what they brought home was enough to buy the land for this campus, and build this hall.
+
+  Ground was broken on New Year's Day, 1873. The hall was dedicated on New Year's Day, 1876.
+
+  Some of the black walnut furniture inside was a gift from friends in Great Britain.
+
+  It is the oldest permanent building for the higher education of Black students in the United States.
+
+  Eleven students, singing. This is what the songs bought.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look at the tall Victorian Gothic hall."
+    source: 1
+    quote: "an L-shaped six-story Victorian Gothic dormitory"
+  - says: "Six stories, built in an L."
+    source: 1
+    quote: "an L-shaped six-story Victorian Gothic dormitory"
+  - says: "This is Jubilee Hall."
+    source: 1
+    quote: "The imposing Jubilee Hall, an L-shaped six-story Victorian Gothic dormitory"
+  - says: "Fisk opened in 1866, in the years right after the Civil War, with help from the Freedmen's Bureau."
+    source: 1
+    quote: "The institution was opened in 1866 as Fisk School"
+  - says: "Fisk opened in 1866, in the years right after the Civil War, with help from the Freedmen's Bureau."
+    source: 1
+    quote: "the Freedmen's Bureau in Tennessee, founded Fisk"
+  - says: "In 1871, a chorus of students, seven women and four men, went on tour to raise money."
+    source: 1
+    quote: "In 1871 the chorus of seven women and four men students made an extensive tour of the larger northern cities, Europe, and the British Isles."
+  - says: "The big northern cities first, then Europe and the British Isles."
+    source: 1
+    quote: "made an extensive tour of the larger northern cities, Europe, and the British Isles."
+  - says: "And what they brought home was enough to buy the land for this campus, and build this hall."
+    source: 1
+    quote: "Proceeds of the tour proved sufficient to purchase land for the university campus"
+  - says: "Ground was broken on New Year's Day, 1873."
+    source: 1
+    quote: "Excavation for the foundation was begun on January 1, 1873"
+  - says: "The hall was dedicated on New Year's Day, 1876."
+    source: 1
+    quote: "and the building was dedicated on January 1, 1876."
+  - says: "Some of the black walnut furniture inside was a gift from friends in Great Britain."
+    source: 1
+    quote: "The furniture is made of sdlid black walnut. Forty of the sets were obtained by Mrs. ClintonB. Fisk, and forty others were given by friends in Great Britain."
+  - says: "It is the oldest permanent building for the higher education of Black students in the United States."
+    source: 1
+    quote: "the oldest permanent building for the higher education of Negroes in the United States."
+  - says: "Eleven students, singing."
+    source: 1
+    quote: "In 1871 the chorus of seven women and four men students"
+sources:
+  - title: "Fisk University, Jubilee Hall, HABS No. TN-19, Written Historical and Descriptive Data"
+    publisher: "Library of Congress, Historic American Buildings Survey (National Park Service)"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tn/tn0000/tn0017/data/tn0017data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain

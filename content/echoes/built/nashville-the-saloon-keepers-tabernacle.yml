@@ -1,0 +1,89 @@
+# Drafted by Claude Code (2026-11-09) for Nashville.
+# Listening spot: Fifth Avenue North sidewalk in front of the Ryman Auditorium.
+# Position: HABS TN-23 UTM 16 519930 4001650 (NAD27) converted to 36.15939, -86.77842 and shifted about 200 m north for the datum, then onto the Fifth Avenue North sidewalk (medium confidence; Wikidata's point for the Ryman is wrong, near Opryland).
+id: nashville-the-saloon-keepers-tabernacle
+title: "The Saloon Keeper's Tabernacle"
+summary: "Thomas Ryman, a riverboat owner with a saloon, was converted in 1885 and built this hall for preaching. Country music moved in later."
+place: "Ryman Auditorium, 116 Fifth Avenue North, Nashville, Tennessee"
+at: { lat: 36.16125, lng: -86.77885 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 76
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [nashville, downtown, ryman, country-music, grand-ole-opry]
+teaser: "The mother church of country music was built by a steamboat man who owned a saloon."
+script: |
+  Look at this old brick hall with its tall arched windows. It was built for preaching, by a man who owned a saloon.
+
+  Thomas Ryman ran a line of steamboats on the Cumberland River, and a large saloon here in Nashville.
+
+  In 1885 he fell under the preaching of a revivalist named Sam Jones, and he was converted.
+
+  After that he set out to build the city a great hall for preaching, open to every denomination.
+
+  Work started in 1889. It was dedicated in 1892 as the Union Gospel Tabernacle, and Ryman carried much of the hundred thousand dollar debt himself.
+
+  When he died, in 1904, four thousand people came here for his memorial. Sam Jones preached it, and proposed the building take his name.
+
+  For years it was the largest auditorium in the South. Soon it was used less for revivals than for conventions, concerts and stage shows.
+
+  Then the Grand Ole Opry moved in, and stayed until 1974. People came to call it the church of country music.
+
+  So the saloon keeper did get his church. It just ended up full on a Saturday night.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Thomas Ryman ran a line of steamboats on the Cumberland River, and a large saloon here in Nashville."
+    source: 1
+    quote: "Thomas Green Ryman owned and operated a line of steamboats on the Cumberland River, in addition to wharf property and a large saloon in Nashville."
+  - says: "In 1885 he fell under the preaching of a revivalist named Sam Jones, and he was converted."
+    source: 1
+    quote: "After his conversion in 1885, under the influence of the preaching of the revivalist Rev. Sam Jones"
+  - says: "After that he set out to build the city a great hall for preaching, open to every denomination."
+    source: 1
+    quote: "Ryman dedicated himself to building a non- denominational auditorium for religious purposes."
+  - says: "Work started in 1889."
+    source: 1
+    quote: "Construction was started in 1889 and finished in 1892."
+  - says: "It was dedicated in 1892 as the Union Gospel Tabernacle, and Ryman carried much of the hundred thousand dollar debt himself."
+    source: 1
+    quote: "Dedicated as the Union Gospel Tabernacle in 1892"
+  - says: "It was dedicated in 1892 as the Union Gospel Tabernacle, and Ryman carried much of the hundred thousand dollar debt himself."
+    source: 1
+    quote: "Ryman carried much of the $100,000 debt for the construction of the auditorium"
+  - says: "When he died, in 1904, four thousand people came here for his memorial."
+    source: 1
+    quote: "When Ryman died in 1904, 4,000 people came to the Union Gospel Tabernacle for the memorial service conducted by Sam Jones."
+  - says: "Sam Jones preached it, and proposed the building take his name."
+    source: 1
+    quote: "On that occasion, Jones proposed that the building be renamed the Ryman Auditorium."
+  - says: "For years it was the largest auditorium in the South."
+    source: 1
+    quote: "this was for many years the largest auditorium in the South."
+  - says: "Soon it was used less for revivals than for conventions, concerts and stage shows."
+    source: 1
+    quote: "It soon was being used less for religious meetings and more for conventions, lectures, concerts, and stage shows."
+  - says: "Then the Grand Ole Opry moved in, and stayed until 1974."
+    source: 2
+    quote: "The Ryman Auditorium is nationally significant as the home for country music’s Grand Ole Opry between 1943 and 1974."
+  - says: "People came to call it the church of country music."
+    source: 2
+    quote: "its popular appellation, the \"modern church of country music.”"
+  - says: "It just ended up full on a Saturday night."
+    source: 1
+    quote: "Country music listeners through- out the middle of the nation heard the Saturday night Opry live from the Ryman Auditorium, and thousands came from near and far to visit the Ryman for a performance."
+sources:
+  - title: "Union Gospel Tabernacle (Ryman Auditorium), HABS No. TN-23, Written Historical and Descriptive Data"
+    publisher: "Library of Congress, Historic American Buildings Survey (National Park Service)"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tn/tn0000/tn0030/data/tn0030data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "National Historic Landmarks guide"
+    publisher: "National Park Service"
+    url: https://home.nps.gov/subjects/nationalhistoriclandmarks/guide.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

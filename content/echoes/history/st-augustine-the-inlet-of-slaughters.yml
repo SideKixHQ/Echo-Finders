@@ -1,0 +1,108 @@
+# Drafted by Claude Code (2026-11-09) for St. Augustine, Florida.
+# Listening spot: The riverbank by the Fort Matanzas visitor center and ferry dock on Anastasia Island, looking across the Matanzas River at the fort on Rattlesnake Island.
+# Position: Wikidata Q1438624 (Fort Matanzas National Monument, 29.715278, -81.239167, the fort itself) moved about 200 m east across the river to the visitor center bank; the visitor center's exact point was not checked (medium-low confidence).
+id: st-augustine-the-inlet-of-slaughters
+title: "The Inlet of Slaughters"
+summary: "In 1565 Spanish soldiers killed shipwrecked French Huguenots at this inlet, and it has been called Matanzas, slaughters, ever since."
+place: "Fort Matanzas National Monument, riverbank by the visitor center, St. Augustine, Florida"
+at: { lat: 29.715, lng: -81.237 }
+triggerRadiusKm: 0.1
+category: history
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [st-augustine, fort-matanzas, huguenots, military, 1565]
+teaser: "The little fort across the water is newer than the name of the river it guards."
+script: |
+  Look across the river at the little stone fort. It is almost two hundred years newer than the name of this water.
+
+  The name is Matanzas. In Spanish, it means slaughters.
+
+  In September 1565, a French fleet sailed to wipe out the brand new Spanish settlement at St. Augustine. A hurricane caught the ships and wrecked them far down the Florida coast.
+
+  The survivors walked north, trying to get back to their own fort. An inlet near here stopped them.
+
+  The Spanish commander, Pedro Menéndez, marched down with seventy soldiers. He told the French their fort had already been captured, and urged them to surrender. He made no promises. They had lost most of their food and weapons in the wreck, and they gave up.
+
+  One hundred and eleven Frenchmen were killed. Sixteen were spared, among them a few who said they were Catholic, and four craftsmen the new town needed.
+
+  Two weeks later, more survivors reached the inlet, among them their commander, Jean Ribault. On the twelfth of October they surrendered too. This time, one hundred and thirty-four were killed.
+
+  Why? Orders, religion, or something colder. With no new supplies until spring, there may not have been food for everyone.
+
+  The fort came much later. The name never left.
+pronunciations:
+  - written: Matanzas
+    say: mah-TAHN-zus
+  - written: Menéndez
+    say: meh-NEN-dez
+  - written: Ribault
+    say: ree-BOH
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "It is almost two hundred years newer than the name of this water."
+    source: 1
+    quote: "begins with an incident almost 200 years before the construction of the fort at Matanzas"
+  - says: "The name is Matanzas."
+    source: 1
+    quote: "From that time, the inlet was called Matanzas -- meaning \"slaughters\" in Spanish."
+  - says: "In Spanish, it means slaughters."
+    source: 1
+    quote: "From that time, the inlet was called Matanzas -- meaning \"slaughters\" in Spanish."
+  - says: "In September 1565, a French fleet sailed to wipe out the brand new Spanish settlement at St. Augustine."
+    source: 1
+    quote: "Jean Ribault sailed on September 10 to attack and wipe out the Spanish at St. Augustine"
+  - says: "A hurricane caught the ships and wrecked them far down the Florida coast."
+    source: 1
+    quote: "a hurricane carried his ships far to the south, wrecking them on the Florida coast between present-day Daytona Beach and Cape Canaveral"
+  - says: "The survivors walked north, trying to get back to their own fort."
+    source: 1
+    quote: "where an inlet had blocked 127 of the shipwrecked Frenchmen trying to get back to Fort Caroline"
+  - says: "The Spanish commander, Pedro Menéndez, marched down with seventy soldiers."
+    source: 1
+    quote: "He marched with 70 soldiers to where an inlet had blocked 127 of the shipwrecked Frenchmen"
+  - says: "He told the French their fort had already been captured, and urged them to surrender."
+    source: 1
+    quote: "Menéndez described how Fort Caroline had been captured and urged the French to surrender."
+  - says: "He made no promises."
+    source: 1
+    quote: "Rumors to the contrary, he made no promises as to sparing them."
+  - says: "They had lost most of their food and weapons in the wreck, and they gave up."
+    source: 1
+    quote: "Having lost most of their food and weapons in the shipwreck, the French did surrender."
+  - says: "One hundred and eleven Frenchmen were killed."
+    source: 1
+    quote: "111 Frenchmen were killed."
+  - says: "Sixteen were spared, among them a few who said they were Catholic, and four craftsmen the new town needed."
+    source: 1
+    quote: "Only sixteen were spared - a few who professed being Catholic, some impressed Breton sailors, and four artisans needed at St. Augustine."
+  - says: "Two weeks later, more survivors reached the inlet, among them their commander, Jean Ribault."
+    source: 1
+    quote: "Two weeks later the sequence of events was repeated. More French survivors appeared at the inlet, including Jean Ribault."
+  - says: "On the twelfth of October they surrendered too."
+    source: 1
+    quote: "On October 12 Ribault and his men surrendered and met their fate."
+  - says: "This time, one hundred and thirty-four were killed."
+    source: 1
+    quote: "This time 134 were killed."
+  - says: "With no new supplies until spring, there may not have been food for everyone."
+    source: 1
+    quote: "With food already low and no chance for resupply until spring, would there have been food and shelter for all if the French had been brought back to the new village of St. Augustine?"
+  - says: "The fort came much later."
+    source: 2
+    quote: "Work started on the tower in the fall of 1740."
+sources:
+  - title: "The Massacre of the French"
+    publisher: "National Park Service, Fort Matanzas National Monument"
+    url: https://www.nps.gov/foma/learn/historyculture/the_massacre.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Building of Fort Matanzas"
+    publisher: "National Park Service, Fort Matanzas National Monument"
+    url: https://www.nps.gov/foma/learn/historyculture/fort-matanzas.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

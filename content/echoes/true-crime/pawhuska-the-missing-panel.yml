@@ -1,0 +1,115 @@
+# Drafted by Claude Code (2026-11-09) for Pawhuska, Oklahoma.
+# Listening spot: Outside the Osage Nation Museum, on the public walk in front of the building.
+# Position: Wikidata Q28402244 (Osage Nation Museum) 36.6678, -96.34 (medium confidence; Wikidata gives only four decimals).
+id: pawhuska-the-missing-panel
+title: "The Missing Panel"
+summary: "A 1924 panorama in the Osage Nation Museum had a piece cut out: the image of a man behind the Osage murders."
+place: "Osage Nation Museum, Pawhuska, Oklahoma"
+at: { lat: 36.6678, lng: -96.34 }
+triggerRadiusKm: 0.06
+category: true-crime
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [pawhuska, osage, osage-murders, reign-of-terror]
+teaser: "A long photograph in this museum had a piece cut out of it, on purpose."
+script: |
+  In 2012 the writer David Grann visited the Osage nation museum and saw a long panoramic photograph on the wall.
+
+  It was taken in 1924. It showed what looked like an innocent pageant of Osage people and white settlers.
+
+  A section of it had been cut out.
+
+  He asked the museum director why. She said it held the image of a figure so frightening that she had decided to remove that piece.
+
+  Then she pointed at the gap, and said, the Devil was standing right there.
+
+  The missing piece showed one of the men behind the killing of Osage people for their oil wealth.
+
+  Oil had been found on Osage land, and in the nineteen twenties they were among the richest people per capita in the world.
+
+  Then, one by one, they began to be killed. The Osage call those years the Reign of Terror.
+
+  William Hale and John Ramsey were tried and sent to prison for their part.
+
+  Grann has written that there was a deeper and darker conspiracy, which the investigators never exposed.
+
+  The director did not cut that figure out to forget. She cut him out because the Osage cannot forget.
+pronunciations:
+  - written: "Osage"
+    say: "OH-sayj"
+  - written: "Pawhuska"
+    say: "paw-HUSS-kuh"
+editorial: draft
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-11-09"
+  contentWarning: "This echo concerns a series of murders in the 1920s. No violence is described."
+claims:
+  - says: "In 2012 the writer David Grann visited the Osage nation museum and saw a long panoramic photograph on the wall."
+    source: 1
+    quote: "One day when I visited the Osage nation museum, in 2012, I saw a panoramic photograph on the wall."
+  - says: "It was taken in 1924."
+    source: 1
+    quote: "Taken in 1924, it showed a seemingly innocent pageant of members of the tribe and white settlers."
+  - says: "It showed what looked like an innocent pageant of Osage people and white settlers."
+    source: 1
+    quote: "it showed a seemingly innocent pageant of members of the tribe and white settlers."
+  - says: "He asked the museum director why."
+    source: 1
+    quote: "When I asked the museum director why"
+  - says: "She said it held the image of a figure so frightening that she had decided to remove that piece."
+    source: 1
+    quote: "she said because it contained the image of a figure so frightening that she'd decided to remove that piece of the picture."
+  - says: "Then she pointed at the gap, and said, the Devil was standing right there."
+    source: 1
+    quote: "She then pointed to the missing panel and said, \"The Devil was standing right there.\""
+  - says: "The missing piece showed one of the men behind the killing of Osage people for their oil wealth."
+    source: 1
+    quote: "which showed one of the masterminds behind the killings of the Osage for their oil wealth"
+  - says: "Oil had been found on Osage land, and in the nineteen twenties they were among the richest people per capita in the world."
+    source: 1
+    quote: "the murders of the world's richest people per capita in the 1920s. Oil had been discovered in the Osage Indian nation in Oklahoma"
+  - says: "Then, one by one, they began to be killed."
+    source: 4
+    quote: "then, one by one, the Osage began to be killed off."
+  - says: "The Osage call those years the Reign of Terror."
+    source: 2
+    quote: "The Osage refer to this time as the Reign of Terror ."
+  - says: "William Hale and John Ramsey were tried and sent to prison for their part."
+    source: 3
+    quote: "Records in the National Archives' holdings included the arrests, trials, and subsequent incarceration of William Hale and John Ramsey for their involvement in the Osage murders."
+  - says: "Grann has written that there was a deeper and darker conspiracy, which the investigators never exposed."
+    source: 1
+    quote: "though the FBI caught several of the killers, there was a deeper and darker conspiracy that it never exposed."
+  - says: "She cut him out because the Osage cannot forget."
+    source: 1
+    quote: "The museum director had removed the photograph of the killer—the so-called Devil—not to forget what happened, but because the Osage can't forget."
+sources:
+  - title: "David Grann: Killers of the Flower Moon (Prologue, Fall 2017)"
+    publisher: "National Archives and Records Administration"
+    url: https://www.archives.gov/publications/prologue/2017/fall/author-grann
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Records Pertaining to the Osage Indian Murders, Register of Guardians"
+    publisher: "National Archives at Fort Worth"
+    url: https://www.archives.gov/fort-worth/highlights/register-of-guardians
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "National Archives Records Lay Foundation for Book and Major Motion Picture"
+    publisher: "National Archives and Records Administration"
+    url: https://www.archives.gov/news/articles/killers-flower-moon-nara-sources
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Killers of the Flower Moon: The Osage Murders and the Birth of the FBI (event)"
+    publisher: "National Archives and Records Administration"
+    url: https://www.archives.gov/calendar/event/killers-of-the-flower-moon-the-osage-murders-and-the-birth-of-the-fbi
+    retrievedAt: "2026-11-09"
+    rights: public-domain

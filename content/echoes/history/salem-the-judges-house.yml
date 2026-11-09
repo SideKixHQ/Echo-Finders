@@ -1,0 +1,86 @@
+# Drafted by Claude Code (2026-11-09) for Salem, Massachusetts.
+# Listening spot: Public sidewalk on Essex Street at the corner of North Street, facing the house.
+# Position: HABS MA-398 addendum gives 42.521582, -70.898878 (Google Earth, 2013); the corner sidewalk is within the radius (high confidence).
+id: salem-the-judges-house
+title: "The Judge's House"
+summary: "Salem's Witch House was the home of Judge Jonathan Corwin, whose court sentenced nineteen people to death in 1692."
+place: "Jonathan Corwin House (The Witch House), 310 Essex Street, Salem, Massachusetts"
+at: { lat: 42.52158, lng: -70.89888 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 60
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [salem, witch-trials, witch-house, 1692]
+teaser: "They call it the Witch House. No witch lived here. A judge did."
+script: |
+  Look at the dark house with the steep gables. People call it the Witch House. No witch ever lived in it.
+
+  It was the home of Jonathan Corwin, a judge.
+
+  In 1692 he sat on the special court that heard the witchcraft cases.
+
+  It had begun on the first of March, when Salem authorities questioned three women. Within months more than a hundred and fifty people had been jailed.
+
+  The court Corwin sat on sentenced nineteen people to death.
+
+  By the end of October the governor had shut the court down. Nineteen years later a law restored the good names of the accused.
+
+  The house has moved since then. When the street was widened in the nineteen forties, it was shifted about thirty-five feet.
+
+  The judge's house is the only building in Salem with a direct tie to the trials. It still carries the wrong name.
+pronunciations:
+  - written: "Corwin"
+    say: "KOR-win"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "People call it the Witch House."
+    source: 1
+    quote: "The name \"Witch House\" comes from Judge Corwin's involvement in the Salem witchcraft trails of 1692."
+  - says: "It was the home of Jonathan Corwin, a judge."
+    source: 2
+    quote: "It was the home of Jonathan Corwin, one of the three judges of the witchcraft trials."
+  - says: "In 1692 he sat on the special court that heard the witchcraft cases."
+    source: 1
+    quote: "Judge Corwin served on the Court of Oyer and Terminer which sentenced nineteen people to death during the trials."
+  - says: "It had begun on the first of March, when Salem authorities questioned three women."
+    source: 3
+    quote: "On March 1 , 1692, Salem, Massachusetts authorities interrogated Sarah Good, Sarah Osborne, and an Indian slave, Tituba, to determine if they indeed practiced witchcraft."
+  - says: "Within months more than a hundred and fifty people had been jailed."
+    source: 3
+    quote: "Over the following months, more than 150 men and women in and around Salem were jailed"
+  - says: "The court Corwin sat on sentenced nineteen people to death."
+    source: 1
+    quote: "Judge Corwin served on the Court of Oyer and Terminer which sentenced nineteen people to death during the trials."
+  - says: "By the end of October the governor had shut the court down."
+    source: 3
+    quote: "On October 29, 1692, Massachusetts Governor William Phips dissolved the special court"
+  - says: "Nineteen years later a law restored the good names of the accused."
+    source: 3
+    quote: "Legislation passed in 1711 restored the rights and good names of those who had been accused."
+  - says: "When the street was widened in the nineteen forties, it was shifted about thirty-five feet."
+    source: 1
+    quote: "The house was moved about 35 feet to its current location in the 1940s when the adjacent street was widened."
+  - says: "The judge's house is the only building in Salem with a direct tie to the trials."
+    source: 2
+    quote: "the Witch House is the only building in Salem actually associated with the witchcraft trials of 1692."
+sources:
+  - title: "Jonathan Corwin House (The Witch House), HABS MA-398 and addendum"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/ma/ma0600/ma0683/data/ma0683data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Nearby Attractions - Salem Maritime National Historical Park"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/sama/planyourvisit/nearbyattractions.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Today in History - March 1: Witchcraft in Salem"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/today-in-history/march-01/
+    retrievedAt: "2026-11-09"
+    rights: public-domain

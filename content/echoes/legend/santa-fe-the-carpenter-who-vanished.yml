@@ -1,0 +1,74 @@
+# Drafted by Claude Code (2026-11-09) for Santa Fe, New Mexico.
+# Listening spot: The Old Santa Fe Trail sidewalk in front of Loretto Chapel (the chapel itself is a ticketed museum).
+# Position: Wikidata Q2956557 (Loretto Chapel, 35.6856, -105.938) and Q65560572 (Loretto staircase, 35.6856, -105.9376), placed on the Old Santa Fe Trail frontage (medium confidence).
+id: santa-fe-the-carpenter-who-vanished
+title: "The Carpenter Who Vanished"
+summary: "Legend says a nameless carpenter built Loretto Chapel's spiral staircase and vanished unpaid. The evidence points to a French carpenter."
+place: "Loretto Chapel, 207 Old Santa Fe Trail, Santa Fe, New Mexico"
+at: { lat: 35.6856, lng: -105.9377 }
+triggerRadiusKm: 0.05
+category: legend
+format: short
+durationS: 72
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A religious legend. The script says aloud that it is a legend, not proven, and gives the evidence for an ordinary builder.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [santa-fe, loretto-chapel, legend, staircase]
+teaser: "A stranger built a staircase here that nobody else could, then left without his pay. That is the legend."
+script: |
+  This is a legend, and you should hear it that way.
+
+  Inside this chapel, with its pointed Gothic arches, is a spiral staircase twenty feet high. When the chapel was finished, around 1878, there was no way at all to get up to the choir loft.
+
+  According to tradition, a carpenter appeared. Nobody knew his name. He built the staircase, and then he vanished, without ever being paid.
+
+  The staircase has no central column. It is held up by a curved stringer, and pinned together with wooden pegs instead of nails. People called it miraculous. The Sisters of Loretto, whose chapel it was, insisted the builder was Saint Joseph himself.
+
+  That is the legend, and it has never been proven. The evidence points somewhere more ordinary. Recent research suggests a French master carpenter, Francois-Jean Rochas.
+
+  Still, a stranger who builds a staircase nobody else could build, and leaves without his wages, is a very good story. You can see why the sisters preferred theirs.
+pronunciations:
+  - written: Loretto
+    say: luh-RET-oh
+  - written: Rochas
+    say: roh-SHAH
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Inside this chapel, with its pointed Gothic arches, is a spiral staircase twenty feet high."
+    source: 1
+    quote: "the chapel was distinctly Gothic, with pointed arches, tall spires, and stained-glass windows imported from France"
+  - says: "Inside this chapel, with its pointed Gothic arches, is a spiral staircase twenty feet high."
+    source: 1
+    quote: "The chapel is famed for its 20-foot high, circular staircase, built in 1878."
+  - says: "When the chapel was finished, around 1878, there was no way at all to get up to the choir loft."
+    source: 1
+    quote: "Around its completion in 1878, no access existed to the choir loft."
+  - says: "According to tradition, a carpenter appeared."
+    source: 1
+    quote: "According to tradition, an unnamed carpenter appeared, built a 20-foot spiral staircase, and vanished without payment."
+  - says: "He built the staircase, and then he vanished, without ever being paid."
+    source: 1
+    quote: "built a 20-foot spiral staircase, and vanished without payment."
+  - says: "The staircase has no central column."
+    source: 1
+    quote: "supported by a curved stringer rather than a central column"
+  - says: "People called it miraculous."
+    source: 1
+    quote: "it has been called \"miraculous\" and even attributed to St. Joseph."
+  - says: "The Sisters of Loretto, whose chapel it was, insisted the builder was Saint Joseph himself."
+    source: 1
+    quote: "While the Lorretines insisted the builder was St. Joseph"
+  - says: "Recent research suggests a French master carpenter, Francois-Jean Rochas."
+    source: 1
+    quote: "recent evidence points to French master carpenter Francois-Jean Rochas."
+sources:
+  - title: "Loretto Chapel (Chapel of Our Lady of Light)"
+    publisher: "National Park Service, National Trails"
+    url: https://www.nps.gov/places/loretto-chapel-chapel-of-our-lady-of-light.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

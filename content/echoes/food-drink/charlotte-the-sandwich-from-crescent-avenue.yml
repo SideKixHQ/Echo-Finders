@@ -1,0 +1,90 @@
+# Drafted by Claude Code (2026-11-09) for Charlotte.
+# Listening spot: Public sidewalk on Crescent Avenue. The caterer's house number is not known, so this is about the street, not a door; stay off private property.
+# Position: Crescent Avenue in the Elizabeth area east of uptown, placed from street knowledge only; no fetched coordinate and no house number (low confidence, place on a map before approval).
+id: charlotte-the-sandwich-from-crescent-avenue
+title: "The Sandwich From Crescent Avenue"
+summary: "Charlotte's vegetable sandwich was born in a caterer's kitchen on Crescent Avenue in 1941 and ruled local parties for decades."
+place: "Crescent Avenue, Charlotte, North Carolina"
+at: { lat: 35.2142, lng: -80.8215 }
+triggerRadiusKm: 0.25
+category: food-drink
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charlotte, elizabeth, food, vegetable-sandwich]
+teaser: "For half a century, a Charlotte party meant one small, crustless sandwich, invented on this street."
+script: |
+  Somewhere on this street, in 1941, a caterer's kitchen invented a sandwich that Charlotte would eat at parties for nearly half a century.
+
+  To old Charlotte it was simply the vegetable sandwich. Not any sandwich with vegetables in it. This one.
+
+  Finely minced raw vegetables, bound with mayonnaise, on white bread. No crusts. No garlic.
+
+  The caterer was Eva Pressly, and the idea came from her sister and partner, Dot Thompson. She chopped the vegetables fine and drained them twice.
+
+  You went to the house on Crescent Avenue to pick them up. They came packed in a white shirt box.
+
+  Word traveled. People as far away as New York and California called to ask about them.
+
+  When the sisters sold the business in 1975, the recipe went with it, and it stayed a secret. Later cooks rebuilt it from memory, and added gelatin to hold it together.
+
+  By the nineties, the city's taste had moved on, and the sandwich faded away.
+
+  Plain, cold, and neat. For fifty years, it was what a Charlotte party tasted like.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Somewhere on this street, in 1941, a caterer's kitchen invented a sandwich that Charlotte would eat at parties for nearly half a century."
+    source: 1
+    quote: "“You might call her the fairy godmother of Charlotte’s favorite vegetable sandwich, an idea born in her kitchen in 1941,” the article began."
+  - says: "Somewhere on this street, in 1941, a caterer's kitchen invented a sandwich that Charlotte would eat at parties for nearly half a century."
+    source: 1
+    quote: "made by a caterer, Eva Tribble Pressly, on Crescent Avenue"
+  - says: "Somewhere on this street, in 1941, a caterer's kitchen invented a sandwich that Charlotte would eat at parties for nearly half a century."
+    source: 1
+    quote: "for almost half a century, reigned at local luncheons, parties, and receptions."
+  - says: "To old Charlotte it was simply the vegetable sandwich."
+    source: 1
+    quote: "To old-line Charlotteans, a “vegetable sandwich” isn’t just a sandwich made of vegetables"
+  - says: "Not any sandwich with vegetables in it."
+    source: 1
+    quote: "isn’t just a sandwich made of vegetables — like a tomato sandwich, cream cheese and cucumbers, or grilled portobellos."
+  - says: "This one."
+    source: 1
+    quote: "It’s a specific tea sandwich of minced raw vegetables"
+  - says: "Finely minced raw vegetables, bound with mayonnaise, on white bread."
+    source: 1
+    quote: "They were made of finely minced vegetables. Served on white bread. No crusts. No garlic. And bound with mayonnaise."
+  - says: "The caterer was Eva Pressly, and the idea came from her sister and partner, Dot Thompson."
+    source: 1
+    quote: "Pressly’s sister and associate, Dot Thompson, had invented the sandwiches"
+  - says: "She chopped the vegetables fine and drained them twice."
+    source: 1
+    quote: "chopping the vegetables finely and draining them twice, using no gelatin, only mayonnaise."
+  - says: "You went to the house on Crescent Avenue to pick them up."
+    source: 1
+    quote: "“You always went to her house on Crescent Avenue to pick up your sandwiches. She had them in a white shirt box,”"
+  - says: "People as far away as New York and California called to ask about them."
+    source: 1
+    quote: "“People as far away as New York and California called us about making vegetable sandwiches.”"
+  - says: "When the sisters sold the business in 1975, the recipe went with it, and it stayed a secret."
+    source: 1
+    quote: "When the sisters sold their catering business in 1975, the recipe went, too, and it remained a secret."
+  - says: "Later cooks rebuilt it from memory, and added gelatin to hold it together."
+    source: 1
+    quote: "Apparently, in re-creating the sandwich, Moore added the gelatin."
+  - says: "By the nineties, the city's taste had moved on, and the sandwich faded away."
+    source: 1
+    quote: "But by the ’90s, the love affair had faded — probably due to the city’s increasingly adventurous palate."
+  - says: "For fifty years, it was what a Charlotte party tasted like."
+    source: 1
+    quote: "for almost half a century, reigned at local luncheons, parties, and receptions."
+sources:
+  - title: "The Case of the Missing Culinary Classic"
+    publisher: "Our State"
+    url: https://www.ourstate.com/the-case-of-the-missing-culinary-classic/
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts

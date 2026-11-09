@@ -1,0 +1,90 @@
+# Drafted by Claude Code (2026-11-09) for Asheville, North Carolina.
+# Listening spot: The South Market Street sidewalk in front of the YMI building, near Pack Square.
+# Position: Wikidata Q18159358 (Young Men's Institute Building, 35.5939, -82.5503); DNCR marker P-88 is at Market Street and Pack Square, 100 yards north (medium-high confidence).
+id: asheville-the-ymi
+title: "The YMI"
+summary: "Vanderbilt built the Young Men's Institute in 1892 to 1893 for Black workers. Asheville's Black community later kept it and saved it."
+place: "Young Men's Institute Building, South Market Street at Eagle Street, Asheville, North Carolina"
+at: { lat: 35.5939, lng: -82.5503 }
+triggerRadiusKm: 0.05
+category: people
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [asheville, ymi, african-american, vanderbilt, biltmore]
+teaser: "Vanderbilt built this for the Black workers building his mansion. Their community made it their own."
+script: |
+  Look at the building of the Young Men's Institute. People here call it the YMI.
+
+  In the early 1890s, while George Vanderbilt was building his lavish home out at Biltmore, he put up this building as a community center for his African American workers, and for people in town. It was designed by the supervising architect of Biltmore House, Richard Sharp Smith.
+
+  It had speakers, a gym, baths, and classes for children and adults. By 1910 it even had its own orchestra. Congregations held their worship services here. One of Asheville's first Black doctors, James Byron, kept his office here. And from 1926 until 1966, a branch of the public library.
+
+  Then Vanderbilt stepped away. In 1906 the YMI was incorporated, with forty-nine of Asheville's Black leaders as members. They could not raise enough to buy the building outright. They raised ten thousand dollars, and took a mortgage for the rest.
+
+  By 1977 the building had been condemned. The African American community of Asheville rallied, got it onto the National Register of Historic Places, and saved it.
+
+  Built by a Vanderbilt. Saved by the people it was built for.
+pronunciations:
+  - written: YMI
+    say: Y M I
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look at the building of the Young Men's Institute."
+    source: 1
+    quote: "The center, known as the Young Men's Institute (YMI), held an organizational meeting in February 1893."
+  - says: "People here call it the YMI."
+    source: 1
+    quote: "The center, known as the Young Men's Institute (YMI)"
+  - says: "In the early 1890s, while George Vanderbilt was building his lavish home out at Biltmore, he put up this building as a community center for his African American workers, and for people in town."
+    source: 1
+    quote: "During construction of his lavish home in Asheville, George Vanderbilt (1862-1914) established a community center for his African American workers and for residents of the town. The building, constructed between 1892 and 1893"
+  - says: "It was designed by the supervising architect of Biltmore House, Richard Sharp Smith."
+    source: 1
+    quote: "was designed by Richard Sharp Smith, supervising architect of the Biltmore House."
+  - says: "It had speakers, a gym, baths, and classes for children and adults."
+    source: 1
+    quote: "The YMI offered the black community speakers, a gym, bathing facilities, and classes for youths and adults."
+  - says: "By 1910 it even had its own orchestra."
+    source: 1
+    quote: "By 1910 the organization even had its own orchestra."
+  - says: "Congregations held their worship services here."
+    source: 1
+    quote: "Church congregations used the YMI space for their worship services when needed."
+  - says: "One of Asheville's first Black doctors, James Byron, kept his office here."
+    source: 1
+    quote: "Dr. James A. Byron, one of Asheville's first black physicians, kept offices at the YMI building."
+  - says: "And from 1926 until 1966, a branch of the public library."
+    source: 1
+    quote: "The Asheville Public Library operated a branch there from 1926 until 1966."
+  - says: "Then Vanderbilt stepped away."
+    source: 1
+    quote: "Vanderbilt in time separated himself from the YMI"
+  - says: "In 1906 the YMI was incorporated, with forty-nine of Asheville's Black leaders as members."
+    source: 1
+    quote: "in May 1906 it was incorporated with 49 of Asheville's black leaders as members."
+  - says: "They could not raise enough to buy the building outright."
+    source: 1
+    quote: "Although the organization was not able to raise enough money to purchase the property outright"
+  - says: "They raised ten thousand dollars, and took a mortgage for the rest."
+    source: 1
+    quote: "they garnered $10,000 and secured a mortgage for the remainder."
+  - says: "By 1977 the building had been condemned."
+    source: 1
+    quote: "in 1977 the building was condemned."
+  - says: "The African American community of Asheville rallied, got it onto the National Register of Historic Places, and saved it."
+    source: 1
+    quote: "The African American community in Asheville rallied to save the structure and was able to get it placed on the National Register of Historic Places in July 1977."
+  - says: "Built by a Vanderbilt."
+    source: 1
+    quote: "George Vanderbilt (1862-1914) established a community center"
+sources:
+  - title: "Young Men's Institute (P-88)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2024/01/23/young-mens-institute-p-88
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts

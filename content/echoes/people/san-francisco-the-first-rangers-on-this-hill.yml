@@ -1,0 +1,85 @@
+# Drafted by Claude Code (2026-11-09) for San Francisco, California.
+# Listening spot: The public paths of San Francisco National Cemetery in the Presidio, among the rows of white headstones.
+# Position: Wikidata Q7414075 (San Francisco National Cemetery, 37.799653, -122.464417); the cemetery is open to the public (high confidence for the cemetery, not for any one grave).
+id: san-francisco-the-first-rangers-on-this-hill
+title: "The First Rangers on This Hill"
+summary: "More than 400 Buffalo Soldiers are buried at the Presidio. Some of them guarded Yosemite and Sequoia before there were rangers."
+place: "San Francisco National Cemetery, Lincoln Boulevard, Presidio of San Francisco, California"
+at: { lat: 37.79965, lng: -122.46442 }
+triggerRadiusKm: 0.12
+category: people
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [san-francisco, presidio, buffalo-soldiers, national-parks, military, black-history]
+teaser: "Some of the first guardians of Yosemite and Sequoia are buried on this slope."
+script: |
+  Look along the rows of white headstones on this slope. More than four hundred of the men buried at the Presidio were Buffalo Soldiers.
+
+  In 1866, Congress created six segregated regiments of Black soldiers in the regular Army, soon consolidated into four. They became known as the Buffalo Soldiers. The nickname probably started on the Western frontier with the Cheyenne, and it was meant as high praise.
+
+  Soldiers of the 24th Infantry and the 9th Cavalry were garrisoned here at the Presidio.
+
+  Before there was a National Park Service, the Army protected the first national parks. Soldiers from the Presidio spent their summers in Yosemite and Sequoia. They blazed trails, built roads, made maps, put out fires, and kept poachers and loggers at bay.
+
+  Buffalo Soldiers did that work in the Sierra in 1899, 1903 and 1904.
+
+  So when you think of the first park rangers in the Sierra Nevada, some of them are here, on this hill.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "More than four hundred of the men buried at the Presidio were Buffalo Soldiers."
+    source: 1
+    quote: "Over 400 Buffalo Soldiers never left the Presidio. They're buried here."
+  - says: "Look along the rows of white headstones on this slope."
+    source: 3
+    quote: "the cemetery rests on a slope overlooking the San Francisco Bay. Among the 30,000 Americans laid to rest here are Civil War generals, Medal of Honor recipients, Buffalo Soldiers, and a Union spy."
+  - says: "In 1866, Congress created six segregated regiments of Black soldiers in the regular Army, soon consolidated into four."
+    source: 1
+    quote: "In 1866, Congress created six segregated regiments which were soon consolidated into four black regiments."
+  - says: "They became known as the Buffalo Soldiers."
+    source: 1
+    quote: "They were to become known as \"The Buffalo Soldiers.\""
+  - says: "The nickname probably started on the Western frontier with the Cheyenne, and it was meant as high praise."
+    source: 1
+    quote: "the nickname probably started on the Western Frontier with the Cheyenne"
+  - says: "it was meant as high praise"
+    source: 1
+    quote: "any comparison between men and buffalo was considered high praise."
+  - says: "Soldiers of the 24th Infantry and the 9th Cavalry were garrisoned here at the Presidio."
+    source: 1
+    quote: "soldiers of the 24th Infantry and 9th Cavalry were garrisoned at the Presidio of San Francisco."
+  - says: "Before there was a National Park Service, the Army protected the first national parks."
+    source: 2
+    quote: "Before the establishment of the National Park Service in 1916, the U.S. Army was responsible for protecting our first national parks."
+  - says: "Soldiers from the Presidio spent their summers in Yosemite and Sequoia."
+    source: 2
+    quote: "Soldiers from the Presidio of San Francisco spent the summer months in Yosemite and Sequoia."
+  - says: "They blazed trails, built roads, made maps, put out fires, and kept poachers and loggers at bay."
+    source: 2
+    quote: "Their tasks included blazing trails, constructing roads, creating maps, evicting grazing livestock, extinguishing fires, monitoring tourists, and keeping poachers and loggers at bay."
+  - says: "Buffalo Soldiers did that work in the Sierra in 1899, 1903 and 1904."
+    source: 2
+    quote: "These African American troopers were in the Sierra parks in 1899, 1903, and 1904."
+  - says: "So when you think of the first park rangers in the Sierra Nevada, some of them are here, on this hill."
+    source: 1
+    quote: "The Buffalo Soldiers were some of our first park rangers in the Sierra Nevada."
+sources:
+  - title: "The Buffalo Soldiers, Presidio of San Francisco"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/prsf/learn/historyculture/buffalo-soldiers.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Buffalo Soldiers, Golden Gate National Recreation Area"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/goga/learn/historyculture/buffalo-soldiers.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "San Francisco National Cemetery, Presidio of San Francisco"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/prsf/learn/historyculture/san-francisco-national-cemetery.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

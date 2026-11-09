@@ -1,0 +1,87 @@
+# Drafted by Claude Code (2026-11-09) for San Francisco, California.
+# Listening spot: The public beach promenade in front of the Aquatic Park Bathhouse, looking up at the veranda and the green slate facade.
+# Position: Wikidata Q49472753 (Aquatic Park, San Francisco, 37.806667, -122.423889) and Q2475631 (Aquatic Park Historic District, 37.8063, -122.424); the bathhouse fronts the beach at this point (medium confidence).
+id: san-francisco-the-unfinished-mosaic
+title: "The Unfinished Mosaic"
+summary: "When the city leased the new Aquatic Park Bathhouse to a private nightclub in 1939, its artists walked out and left work unfinished."
+place: "Aquatic Park Bathhouse, 900 Beach Street, San Francisco, California"
+at: { lat: 37.8066, lng: -122.4238 }
+triggerRadiusKm: 0.07
+category: arts
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [san-francisco, aquatic-park, wpa, murals, maritime-museum]
+teaser: "The tile mosaic on this veranda was never finished, and that was a protest."
+script: |
+  Look at the building shaped like a ship, and at the tile mosaic on its veranda. It was never finished.
+
+  The Works Progress Administration built this bathhouse from 1936 to 1939, as a public place for swimmers. Showers switched on by electric eyes. Lockers for hundreds.
+
+  Sargent Claude Johnson, the most prominent African American artist working for the WPA in Northern California, carved the green slate on the front, and designed that mosaic.
+
+  It opened on the twenty-second of January, 1939. Then the city leased most of the building to private businessmen, who opened an exclusive restaurant and nightclub. When a group of schoolboys brought their sack lunches to the veranda, they were told to leave. Signs went up. Private. Keep out.
+
+  Sargent Johnson walked away from the project. The sculptor Beniamino Bufano took his animal statues away. He said he would rather have kids playing over his statues than drunks stumbling over them.
+
+  The city was found guilty of mismanagement, and the nightclub was thrown out. But the mosaic stayed the way Johnson left it.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "The Works Progress Administration built this bathhouse from 1936 to 1939, as a public place for swimmers."
+    source: 1
+    quote: "From 1936 to 1939, the WPA constructed the Aquatic Park Bathhouse."
+  - says: "Works Progress Administration"
+    source: 1
+    quote: "thanks to funding from the Works Progress Administration (WPA)."
+  - says: "Showers switched on by electric eyes."
+    source: 1
+    quote: "showers activated by photoelectric “eyes,”"
+  - says: "Lockers for hundreds."
+    source: 1
+    quote: "lockers and dressing rooms that could accommodate hundreds of swimmers."
+  - says: "Sargent Claude Johnson, the most prominent African American artist working for the WPA in Northern California, carved the green slate on the front, and designed that mosaic."
+    source: 1
+    quote: "Sargent Claude Johnson , the most prominent African American artist working for the WPA in Northern California, carved the green slate on the main facade. He also designed the tile mosaic on the veranda"
+  - says: "It opened on the twenty-second of January, 1939."
+    source: 1
+    quote: "the Aquatic Park Bathhouse opened for the public on January 22, 1939"
+  - says: "Then the city leased most of the building to private businessmen, who opened an exclusive restaurant and nightclub."
+    source: 1
+    quote: "The city had decided to lease most of the Bathhouse to private businessmen, who promptly opened the Aquatic Park Casino. This exclusive restaurant and nightclub discouraged public use of the building."
+  - says: "When a group of schoolboys brought their sack lunches to the veranda, they were told to leave."
+    source: 1
+    quote: "When a group of schoolboys brought their sack lunches to the veranda, they were ordered to leave by the concessioner."
+  - says: "Private."
+    source: 1
+    quote: "Prominent signs read “Private – Keep Ou"
+  - says: "Keep out."
+    source: 1
+    quote: "Prominent signs read “Private – Keep Ou"
+  - says: "Sargent Johnson walked away from the project."
+    source: 1
+    quote: "Sargent Johnson walked away from the project."
+  - says: "The sculptor Beniamino Bufano took his animal statues away."
+    source: 1
+    quote: "Beniamino Bufano moved his statues"
+  - says: "He said he would rather have kids playing over his statues than drunks stumbling over them."
+    source: 1
+    quote: "I would rather have kids playing over my statues than to have drunks stumbling over them."
+  - says: "The city was found guilty of mismanagement, and the nightclub was thrown out."
+    source: 1
+    quote: "the city was found guilty of mismanagement. The concessioner was ousted"
+  - says: "But the mosaic stayed the way Johnson left it."
+    source: 1
+    quote: "His beautiful tile mosaic on the veranda remains unfinished."
+  - says: "It was never finished."
+    source: 1
+    quote: "His beautiful tile mosaic on the veranda remains unfinished."
+sources:
+  - title: "Aquatic Park Bathhouse, San Francisco Maritime National Historical Park"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/safr/learn/historyculture/aquatic-park-bathhouse.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

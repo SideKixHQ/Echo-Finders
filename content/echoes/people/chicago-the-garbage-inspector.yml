@@ -1,0 +1,86 @@
+# Drafted by Claude Code (2026-11-09) for Chicago, Illinois.
+# Listening spot: The public sidewalk on South Halsted Street in front of the Hull-House mansion.
+# Position: Wikidata Q1582905 (Hull House, 41.872028, -87.64725); listener on the Halsted Street sidewalk in front of it (high confidence).
+id: chicago-the-garbage-inspector
+title: "The Garbage Inspector"
+summary: "Jane Addams of Hull-House was appointed Chicago's first woman garbage inspector in 1898, for a ward with no trash collection."
+place: "Hull-House, 800 South Halsted Street, Chicago, Illinois"
+at: { lat: 41.87203, lng: -87.64725 }
+triggerRadiusKm: 0.05
+category: people
+format: short
+durationS: 77
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [chicago, near-west-side, hull-house, jane-addams, women, public-health]
+teaser: "One of the most famous reformers in America took a job inspecting garbage."
+script: |
+  This old mansion on Halsted Street is Hull-House. Jane Addams and Ellen Gates Starr opened it in 1889, to help the immigrant families of the ward around it.
+
+  Addams described the streets outside in one long breath. Inexpressibly dirty. Schools inadequate. Sanitary laws unenforced. The street lighting bad, the paving miserable, and the stables foul beyond description.
+
+  Tenements filled the lots from street to alley. There was no trash collection, so people dumped their waste into the alleys. And those alleys were some of the only places for children to play.
+
+  So in 1898 the mayor appointed Jane Addams as Chicago's first woman garbage inspector.
+
+  She took it seriously. Two years later, she and Florence Kelley were mapping the ward and going door to door. And when Addams wondered whether bad plumbing was spreading typhoid, she sent Dr. Alice Hamilton to investigate. Hamilton found that house flies carried the disease.
+
+  People remember her for big ideas. In this neighborhood, she also went looking in the alleys.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "This old mansion on Halsted Street is Hull-House."
+    source: 2
+    quote: "Hull-House expanded from one aging mansion, built by Charles J. Hull in 1856"
+  - says: "Jane Addams and Ellen Gates Starr opened it in 1889, to help the immigrant families of the ward around it."
+    source: 2
+    quote: "In 1889, Jane Addams and Ellen Gates Starr established Hull-House in Chicago"
+  - says: "to help the immigrant families of the ward around it"
+    source: 1
+    quote: "Hull-House offered social services for working-class immigrants"
+  - says: "Addams described the streets outside in one long breath."
+    source: 1
+    quote: "“The streets are inexpressibly dirty, the number of schools inadequate, sanitary legislation unenforced, the street lighting bad, the paving miserable and altogether lacking in the alleys and smaller streets, and the stables foul beyond description.”"
+  - says: "Inexpressibly dirty."
+    source: 1
+    quote: "The streets are inexpressibly dirty"
+  - says: "Sanitary laws unenforced."
+    source: 1
+    quote: "sanitary legislation unenforced"
+  - says: "The street lighting bad, the paving miserable, and the stables foul beyond description."
+    source: 1
+    quote: "the street lighting bad, the paving miserable"
+  - says: "Tenements filled the lots from street to alley."
+    source: 1
+    quote: "Tenements filled lots from street to alley"
+  - says: "There was no trash collection, so people dumped their waste into the alleys."
+    source: 1
+    quote: "With no trash collection, residents dumped their waste into the alleys."
+  - says: "And those alleys were some of the only places for children to play."
+    source: 1
+    quote: "making these unpaved and filthy places some of the only places for children to play."
+  - says: "So in 1898 the mayor appointed Jane Addams as Chicago's first woman garbage inspector."
+    source: 1
+    quote: "In 1898, the mayor appointed Jane Addams as Chicago’s first woman garbage inspector."
+  - says: "Two years later, she and Florence Kelley were mapping the ward and going door to door."
+    source: 1
+    quote: "Two years later, Addams and children’s rights activist Florence Kelley conducted a mapping project and door-to-door surveys in the Nineteenth Ward."
+  - says: "And when Addams wondered whether bad plumbing was spreading typhoid, she sent Dr. Alice Hamilton to investigate."
+    source: 1
+    quote: "Addams and Kelley also studied if bad plumbing and contaminated water helped to spread typhoid fever and other diseases. Addams tasked Hull-House worker and epidemiologist Dr. Alice Hamilton to investigate."
+  - says: "Hamilton found that house flies carried the disease."
+    source: 1
+    quote: "Hamilton discovered that house flies transmitted the disease."
+sources:
+  - title: "Hull-House and the 'Garbage Ladies' of Chicago"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/hull-house-and-the-garbage-ladies-of-chicago.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Hull-House"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/hull-house.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

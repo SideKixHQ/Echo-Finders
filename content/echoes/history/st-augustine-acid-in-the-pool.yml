@@ -1,0 +1,87 @@
+# Drafted by Claude Code (2026-11-09) for St. Augustine, Florida.
+# Listening spot: The public bayfront sidewalk and seawall on Avenida Menendez, in front of the hotel that now stands on the Monson site.
+# Position: Wikidata Q111392789 (Hilton Saint Augustine Historic Bayfront, 29.894274, -81.31165), moved onto the bayfront sidewalk. That the Hilton occupies the Monson site is from general knowledge, not a fetched source; the NPS only says the Monson was 'on the bay-front' (low-medium confidence, check before approval).
+id: st-augustine-acid-in-the-pool
+title: "Acid in the Pool"
+summary: "In June 1964 the manager of the Monson Motor Lodge poured acid into his pool while Black demonstrators were in it. The images went national."
+place: "Avenida Menendez bayfront, former Monson Motor Lodge site, St. Augustine, Florida"
+at: { lat: 29.8943, lng: -81.31125 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [st-augustine, civil-rights, monson-motor-lodge, martin-luther-king, 1964]
+teaser: "In 1964 a motel on this bayfront became one of the most famous pictures of the civil rights movement."
+script: |
+  Look along this bayfront. In 1964, one of the buildings on it was the Monson Motor Lodge.
+
+  St. Augustine was the oldest city in the United States, and one of the most segregated. A local dentist, Robert Hayling, started the protests. When they got nowhere, he appealed to the Southern Christian Leadership Conference for help.
+
+  Martin Luther King Junior came, and was arrested here, for trying to eat lunch at the Monson's restaurant.
+
+  Then came the swim-in. African Americans got into the motel's swimming pool.
+
+  The manager threw acid into the water. Muriatic acid. Then he drained the pool, and stationed guards around it.
+
+  The pictures went out across the whole country.
+
+  That July, President Lyndon Johnson signed the Civil Rights Act of 1964. The demonstrations here are widely credited with winning it the national attention it needed.
+
+  A man poured acid into a pool to keep people out. The whole country saw him do it.
+pronunciations:
+  - written: Hayling
+    say: HAY-ling
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In 1964, one of the buildings on it was the Monson Motor Lodge."
+    source: 2
+    quote: "jailed for trying to eat lunch at the Monson Motel Restaurant on the bay-front in town."
+  - says: "St. Augustine was the oldest city in the United States, and one of the most segregated."
+    source: 1
+    quote: "St. Augustine, Florida, is the oldest city in the United States, and until 1964, one of the most segregated."
+  - says: "A local dentist, Robert Hayling, started the protests."
+    source: 1
+    quote: "A dentist and NAACP representative named Robert Hayling from the historic subdivision of Lincolnville initiated the protest actions that eventually ended discrimination in the old city."
+  - says: "When they got nowhere, he appealed to the Southern Christian Leadership Conference for help."
+    source: 1
+    quote: "When both efforts failed, he appealed to the Southern Christian Leadership Conference (SCLC) for help."
+  - says: "Martin Luther King Junior came, and was arrested here, for trying to eat lunch at the Monson's restaurant."
+    source: 2
+    quote: "Dr. Martin Luther King, Jr. and other members of the SCLC are arrested and jailed for trying to eat lunch at the Monson Motel Restaurant on the bay-front in town."
+  - says: "Then came the swim-in."
+    source: 2
+    quote: "At a \"swim-in\" protest at the Monson Motel, the motel manager pours muriatic acid into the pool."
+  - says: "African Americans got into the motel's swimming pool."
+    source: 1
+    quote: "when Monson's manager noticed African Americans in the motel swimming pool, he threw acid into the water"
+  - says: "Muriatic acid."
+    source: 2
+    quote: "the motel manager pours muriatic acid into the pool."
+  - says: "Then he drained the pool, and stationed guards around it."
+    source: 1
+    quote: "he threw acid into the water, then drained the pool and stationed guards around it."
+  - says: "The pictures went out across the whole country."
+    source: 2
+    quote: "The images are shared widely with the nation."
+  - says: "That July, President Lyndon Johnson signed the Civil Rights Act of 1964."
+    source: 2
+    quote: "The events of the summer of 1964 in St. Augustine are widely credited for the passage of the Civil Rights Act of 1964, signed into law by President Lyndon B. Johnson in July of that year."
+  - says: "The demonstrations here are widely credited with winning it the national attention it needed."
+    source: 2
+    quote: "The demonstrations in St. Augustine are widely credited with garnering the national attention needed to pass the act."
+sources:
+  - title: "Florida: Lincolnville Historic District"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/florida-lincolnville-historic-district.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "African Americans (1821 to Present-day)"
+    publisher: "National Park Service, Castillo de San Marcos National Monument"
+    url: https://www.nps.gov/casa/learn/historyculture/african-americans-1821-to-present-day.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

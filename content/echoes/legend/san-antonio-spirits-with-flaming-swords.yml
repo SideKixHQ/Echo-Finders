@@ -1,0 +1,82 @@
+# Drafted by Claude Code (2026-11-09) for San Antonio, Texas.
+# Listening spot: Alamo Plaza, the public square, at the south end near the church.
+# Position: Wikidata Q2636724 (Alamo Mission, 29.425833, -98.486111), moved about 30 m south on the plaza so it does not overlap the two other Alamo echoes (medium confidence).
+id: san-antonio-spirits-with-flaming-swords
+title: "Spirits with Flaming Swords"
+summary: "An old San Antonio folk tale says spirits with flaming swords stopped Mexican soldiers from destroying the Alamo after San Jacinto."
+place: "The Alamo, Alamo Plaza, San Antonio, Texas"
+at: { lat: 29.4256, lng: -98.4863 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 72
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A folk tale, recorded by Adina De Zavala in 1917 as one of the current tales of the day. The script says it is a legend; no supernatural claim is made.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [san-antonio, alamo, ghosts, legend, texas-revolution]
+teaser: "An old Alamo ghost story says the dead would not let the walls come down."
+script: |
+  Look at the old stone walls of the Alamo, and ask yourself why they are still here.
+
+  After the battle of San Jacinto in 1836, the Mexican general Andrade set out to destroy the Alamo.
+
+  What follows is a legend. It is a folk tale, and nobody has ever proved a word of the ghostly part.
+
+  The story goes that his men were met everywhere by spirits with flaming swords, who barred their way. Every time new men were sent to tear down the walls, they were overcome by fright. Threats and punishment could not make them go back.
+
+  The spirits let them take away the guns. But the moment the walls were threatened, there was the flaming sword, in a ghostly hand.
+
+  Adina De Zavala, who fought to save the Alamo, wrote the tale down in 1917. She added one fact you can check. The Alamo buildings were not destroyed, and not much injured by Andrade.
+
+  The folk tale has a simple explanation for that. The soldiers were more afraid of the spirits than of their officers.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "After the battle of San Jacinto in 1836, the Mexican general Andrade set out to destroy the Alamo."
+    source: 1
+    quote: "When General Andrade, the Mexican general sought to destroy the Alamo, after the battle of San Jacinto, in 1836"
+  - says: "The story goes that his men were met everywhere by spirits with flaming swords, who barred their way."
+    source: 1
+    quote: "his men were everywhere met by spirits with flaming swords who barred their progress and soon frightened them off"
+  - says: "Every time new men were sent to tear down the walls, they were overcome by fright."
+    source: 1
+    quote: "almost as fast as new relays of men were sent with orders to destroy the walls, they were overcome by fright"
+  - says: "Threats and punishment could not make them go back."
+    source: 1
+    quote: "nor could threats or punishment induce them to return"
+  - says: "The spirits let them take away the guns."
+    source: 1
+    quote: "They were permitted by the ghosts for a space to disarm the batteries"
+  - says: "But the moment the walls were threatened, there was the flaming sword, in a ghostly hand."
+    source: 1
+    quote: "the moment the walls of the buildings were threatened, there was the flaming sword in ghostly hands."
+  - says: "Adina De Zavala, who fought to save the Alamo, wrote the tale down in 1917."
+    source: 1
+    quote: "Copyright, 1917, by Adina De Zavala"
+  - says: "Adina De Zavala, who fought to save the Alamo"
+    source: 2
+    quote: "historic preservationist Adina Emilia De Zavala began an effort save what was left of the nearby Alamo compound."
+  - says: "The Alamo buildings were not destroyed, and not much injured by Andrade."
+    source: 1
+    quote: "the Alamo buildings were not destroyed, and not much injured by Andrade."
+  - says: "She added one fact you can check."
+    source: 1
+    quote: "It is a matter of history that the Alamo buildings were not destroyed"
+  - says: "The soldiers were more afraid of the spirits than of their officers."
+    source: 1
+    quote: "whom the Mexican soldiers feared more than they feared their officers."
+sources:
+  - title: "History and Legends of the Alamo and Other Missions in and Around San Antonio (Adina De Zavala, 1917)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/resource/gdcmassbookdig.historylegendsof00zava/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Spanish Governor's Palace"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/spanish-governor-s-palace.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

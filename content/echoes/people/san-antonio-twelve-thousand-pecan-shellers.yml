@@ -1,0 +1,56 @@
+# Drafted by Claude Code (2026-11-09) for San Antonio, Texas.
+# Listening spot: The public sidewalk on the south side of City Hall on Military Plaza.
+# Position: Wikidata Q6852119 (Military Plaza, 29.4247, -98.4944), moved about 50 m south-east along the plaza so it does not sit on the Chili Queens echo (medium confidence).
+id: san-antonio-twelve-thousand-pecan-shellers
+title: "Twelve Thousand Pecan Shellers"
+summary: "In 1939 about 12,000 pecan shellers led by Emma Tenayuca marched to San Antonio City Hall. They won higher wages, at a cost."
+place: "San Antonio City Hall, Military Plaza, San Antonio, Texas"
+at: { lat: 29.4243, lng: -98.4941 }
+triggerRadiusKm: 0.04
+category: people
+format: look-below
+durationS: 33
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [san-antonio, military-plaza, labor, strike, women]
+teaser: "In 1939 the people who cracked the city's pecans marched on this building, and won."
+script: |
+  Look at the doors of City Hall. In 1939, around twelve thousand pecan shellers marched here, to demand higher wages and better working conditions.
+
+  They were led by Emma Tenayuca. The protest and strike won them higher wages, and recognition of their union.
+
+  It also pushed many of the pecan companies to buy machines. And many of the people who marched here lost their jobs to them.
+
+  A victory at this building, and a harder lesson after it.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In 1939, around twelve thousand pecan shellers marched here, to demand higher wages and better working conditions."
+    source: 1
+    quote: "In 1939, around 12,000 pecan shellers marched to San Antonio City Hall to demand higher wages and better working conditions."
+  - says: "Look at the doors of City Hall."
+    source: 1
+    quote: "a new city hall in the Italian Renaissance Revival style on Military Plaza."
+  - says: "They were led by Emma Tenayuca."
+    source: 1
+    quote: "Led by Emma Tenayuca, the protest and strike resulted in higher wages and official recognition of the sheller’s union."
+  - says: "The protest and strike won them higher wages, and recognition of their union."
+    source: 1
+    quote: "the protest and strike resulted in higher wages and official recognition of the sheller’s union."
+  - says: "It also pushed many of the pecan companies to buy machines."
+    source: 1
+    quote: "The event also prompted many of the pecan companies to invest in mechanization"
+  - says: "And many of the people who marched here lost their jobs to them."
+    source: 1
+    quote: "resulting in many former protestors losing their jobs."
+  - says: "A victory at this building, and a harder lesson after it."
+    source: 1
+    quote: "resulted in higher wages"
+sources:
+  - title: "Main and Military Plazas"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/main-and-military-plazas.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

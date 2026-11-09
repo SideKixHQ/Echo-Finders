@@ -1,0 +1,96 @@
+# Drafted by Claude Code (2026-11-09) for St. Augustine, Florida.
+# Listening spot: The boardwalk at Fort Mose Historic State Park, looking out over the marsh toward the site of the fort. The site itself has no public access.
+# Position: Wikidata Q549331 (Fort Mose Historic State Park, 29.927778, -81.325278); the park's boardwalk and the marsh fall within the radius (medium confidence).
+id: st-augustine-the-free-town-in-the-marsh
+title: "The Free Town in the Marsh"
+summary: "Fort Mosé, founded in 1738, was North America's first free, legally sanctioned Black community. It vanished, and was found again in 1986."
+place: "Fort Mose Historic State Park, St. Augustine, Florida"
+at: { lat: 29.92778, lng: -81.32528 }
+triggerRadiusKm: 0.12
+category: people
+format: short
+durationS: 91
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [st-augustine, fort-mose, african-american, military, underground-railroad]
+teaser: "Out in this marsh was a town of free Black families, guarding the road to St. Augustine."
+script: |
+  Look out over the marsh. Somewhere out there was a town that disappeared, and was not found again for more than two centuries.
+
+  By the late 1600s, people enslaved by the British had learned something. If they escaped to Spanish Florida, embraced Catholicism and pledged to serve the Spanish Crown, they could be free.
+
+  In 1738 the governor granted them land, about two miles north of St. Augustine. They built their own fort, with earthen walls and thatched huts. Thirty-eight men and their families. About one hundred people.
+
+  Its full name was Gracia Real de Santa Teresa de Mosé. North America's first free, legally sanctioned Black community.
+
+  In return for the land, its militia would help guard the northern approaches to St. Augustine. In 1740 a British army captured the fort. A few weeks later, its leader, Francisco Menéndez, led a surprise attack and took it back.
+
+  When Spain gave up Florida in 1763, the people of Mosé moved to Cuba. The fort fell into ruin, then disappeared.
+
+  It was not found again until 1986, when archaeologists dug it out of the marsh.
+
+  You still cannot walk on the site itself. It is out there, under the grass and the water. The people who knew where it was had long since sailed away.
+pronunciations:
+  - written: Mosé
+    say: moe-SAY
+  - written: Gracia Real de Santa Teresa de Mosé
+    say: GRAH-see-ah reh-AHL deh SAHN-tah teh-REH-sah deh moe-SAY
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Somewhere out there was a town that disappeared, and was not found again for more than two centuries."
+    source: 1
+    quote: "Evidence of the first free black settlement remained buried under the marsh until the middle of the twentieth century"
+  - says: "By the late 1600s, people enslaved by the British had learned something."
+    source: 1
+    quote: "By the late 1600s, black slaves had learned that they could escape their British masters and seek freedom and asylum in Spanish Florida if they embraced Catholicism and pledged to serve the Spanish Crown."
+  - says: "If they escaped to Spanish Florida, embraced Catholicism and pledged to serve the Spanish Crown, they could be free."
+    source: 1
+    quote: "black slaves had learned that they could escape their British masters and seek freedom and asylum in Spanish Florida if they embraced Catholicism and pledged to serve the Spanish Crown."
+  - says: "In 1738 the governor granted them land, about two miles north of St. Augustine."
+    source: 1
+    quote: "In 1738 Florida Governor Manuel de Montiano granted these blacks a plot of land about two miles north of St. Augustine where they could build their own settlement and fort."
+  - says: "They built their own fort, with earthen walls and thatched huts."
+    source: 1
+    quote: "The fort was described as an earthen-walled fort with Indian-type thatched huts"
+  - says: "Thirty-eight men and their families."
+    source: 1
+    quote: "the community housed thirty-eight men and their families, and estimated population of about one hundred people."
+  - says: "About one hundred people."
+    source: 1
+    quote: "the community housed thirty-eight men and their families, and estimated population of about one hundred people."
+  - says: "Its full name was Gracia Real de Santa Teresa de Mosé."
+    source: 1
+    quote: "This was the beginning of Fort Mosé, or \"Gracia Real de Santa Teresa de Mosé,\" North America's first free legally sanctioned Black community."
+  - says: "North America's first free, legally sanctioned Black community."
+    source: 1
+    quote: "North America's first free legally sanctioned Black community."
+  - says: "In return for the land, its militia would help guard the northern approaches to St. Augustine."
+    source: 1
+    quote: "In exchange for the land, the black militia would help protect the northern approaches to St. Augustine."
+  - says: "In 1740 a British army captured the fort."
+    source: 1
+    quote: "In 1740, during his attack against St. Augustine, British General James Oglethorpe captured Fort Mosé, and the inhabitants fled to St. Augustine."
+  - says: "A few weeks later, its leader, Francisco Menéndez, led a surprise attack and took it back."
+    source: 1
+    quote: "A few weeks later, however, Francisco Menendez, the leader of the Ft. Mosé community, led his forces in a surprise attack and a valiant re-taking of the fort."
+  - says: "When Spain gave up Florida in 1763, the people of Mosé moved to Cuba."
+    source: 1
+    quote: "The Africans continued to live there until 1763 when Spain gave up Florida to the British by treaty, at which time these people moved to Cuba with the rest of the citizens of St. Augustine."
+  - says: "The fort fell into ruin, then disappeared."
+    source: 1
+    quote: "Abandoned and forgotten, Fort Mosé slowly fell into ruin, and then disappeared."
+  - says: "It was not found again until 1986, when archaeologists dug it out of the marsh."
+    source: 1
+    quote: "Eventually, an archaeological dig in 1986 uncovered the site of the fort"
+  - says: "You still cannot walk on the site itself."
+    source: 1
+    quote: "Since it is located in the marsh, there is presently no public access to the actual site of the fort."
+sources:
+  - title: "Fort Mos\u00e9"
+    publisher: "National Park Service, Fort Matanzas National Monument"
+    url: https://www.nps.gov/foma/learn/historyculture/fort-mose.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

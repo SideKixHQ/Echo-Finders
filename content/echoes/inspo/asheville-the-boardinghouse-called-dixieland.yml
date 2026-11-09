@@ -1,0 +1,86 @@
+# Drafted by Claude Code (2026-11-09) for Asheville, North Carolina.
+# Listening spot: The Thomas Wolfe Memorial grounds or the North Market Street sidewalk, facing the boardinghouse (a state historic site).
+# Position: Wikidata Q7795278 (Thomas Wolfe House, 35.5975, -82.550833); the house sits on its lot beside North Market Street, inside the radius (medium-high confidence).
+id: asheville-the-boardinghouse-called-dixieland
+title: "The Boardinghouse Called Dixieland"
+summary: "Thomas Wolfe's mother ran this boardinghouse. He made it Dixieland in Look Homeward, Angel, and the city library banned the book."
+place: "Thomas Wolfe Memorial, 52 North Market Street, Asheville, North Carolina"
+at: { lat: 35.5975, lng: -82.55083 }
+triggerRadiusKm: 0.05
+category: inspo
+inspo:
+  kind: inspiration
+  evidence: building
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [asheville, thomas-wolfe, writers, look-homeward-angel]
+teaser: "Thomas Wolfe grew up in this boardinghouse, wrote it into a novel, and Asheville banned the book."
+script: |
+  Look at the big rambling house with the porches. A boardinghouse. A previous owner named it the Old Kentucky Home.
+
+  In 1906, a boy named Thomas Wolfe moved in. His mother ran the place. She did not need the money. His father made enough from his tombstone shop on the city square. But Julia Wolfe was obsessed with real estate, and she used the boardinghouse profits to buy more of it.
+
+  Her son grew up, and wrote it all down. His novel Look Homeward, Angel came out in 1929. In it, this house became Dixieland. A big cheaply constructed frame house of eighteen or twenty drafty, high-ceilinged rooms.
+
+  He wrote so frankly about the town and its people that Asheville was not amused. The book was banned from the city's public library for over five years, and Wolfe stayed away from his hometown for nearly eight.
+
+  In a later book he wrote that his mother's old dilapidated house had now become a fit museum.
+
+  He was right. It opened as one in 1949. The novel has never gone out of print.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "A previous owner named it the Old Kentucky Home."
+    source: 1
+    quote: "Named \"Old Kentucky Home\" by a previous owner"
+  - says: "In 1906, a boy named Thomas Wolfe moved in."
+    source: 2
+    quote: "Thomas Wolfe accurately remembered the house he moved into in 1906"
+  - says: "She did not need the money."
+    source: 2
+    quote: "Surprisingly, Julia Wolfe did not operate the boardinghouse because of financial need."
+  - says: "His father made enough from his tombstone shop on the city square."
+    source: 2
+    quote: "W. O. Wolfe made enough money from the tombstone shop he owned and operated on Asheville's city square to support the family."
+  - says: "But Julia Wolfe was obsessed with real estate, and she used the boardinghouse profits to buy more of it."
+    source: 2
+    quote: "But former teacher Julia was obsessed with the real estate market and used profits from the boardinghouse's operation to buy more property."
+  - says: "His novel Look Homeward, Angel came out in 1929."
+    source: 1
+    quote: "has never gone out of print since its 1929 publication"
+  - says: "In it, this house became Dixieland."
+    source: 1
+    quote: "Wolfe immortalized the rambling Victorian structure as \"Dixieland\" in his epic autobiographical novel"
+  - says: "A big cheaply constructed frame house of eighteen or twenty drafty, high-ceilinged rooms."
+    source: 2
+    quote: "\"big cheaply constructed frame house of eighteen or twenty drafty, high-ceilinged rooms.\""
+  - says: "He wrote so frankly about the town and its people that Asheville was not amused."
+    source: 2
+    quote: "So frank and realistic were his reminiscences that Look Homeward, Angel was banned from Asheville's public library for over five years"
+  - says: "The book was banned from the city's public library for over five years, and Wolfe stayed away from his hometown for nearly eight."
+    source: 2
+    quote: "was banned from Asheville's public library for over five years, and Wolfe himself avoided his hometown for nearly eight years to let the uproar die down."
+  - says: "In a later book he wrote that his mother's old dilapidated house had now become a fit museum."
+    source: 2
+    quote: "He said his mother's \"old dilapidated house had now become a fit museum.\""
+  - says: "It opened as one in 1949."
+    source: 2
+    quote: "it opened to the public as a house museum on July 19, 1949."
+  - says: "The novel has never gone out of print."
+    source: 1
+    quote: "has never gone out of print since its 1929 publication"
+sources:
+  - title: "Thomas Wolfe Memorial"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/thomas-wolfe-memorial
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Thomas Wolfe Memorial: History"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/thomas-wolfe-memorial/history
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts

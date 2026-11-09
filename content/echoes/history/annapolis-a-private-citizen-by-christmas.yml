@@ -1,0 +1,69 @@
+# Drafted by Claude Code (2026-11-09) for Annapolis, Maryland.
+# Listening spot: State Circle sidewalk facing the State House front.
+# Position: Wikidata Q1858066 (Maryland State House) 38.978889, -76.491111, moved slightly east onto State Circle in front of the portico (high confidence).
+id: annapolis-a-private-citizen-by-christmas
+title: "A Private Citizen by Christmas"
+summary: "Washington resigned his command in this State House in December 1783, and was home by Christmas Eve a private citizen."
+place: "Maryland State House, State Circle, Annapolis, Maryland"
+at: { lat: 38.9788, lng: -76.4908 }
+triggerRadiusKm: 0.07
+category: history
+format: short
+durationS: 52
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [annapolis, maryland-state-house, washington, revolution, military]
+teaser: "He walked into an unfinished building with a leaking roof, and gave the army back."
+script: |
+  Look up at the dome. It was not there when this story happened.
+
+  The original dome was torn down in 1785, and this larger one went up after it.
+
+  When the man in this story came here in 1783, the building was unfinished, and the roof leaked.
+
+  For a few months it was the capitol of the United States, because Congress was meeting inside.
+
+  On the twenty-third of December, George Washington came into the Senate chamber and resigned his commission as commander in chief of the Continental Army.
+
+  The war was over, and he was giving the army back.
+
+  He left at dawn the next morning for Mount Vernon. He got home before nightfall on Christmas Eve.
+
+  A private citizen, for the first time in almost nine years.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "The original dome was torn down in 1785, and this larger one went up after it."
+    source: 2
+    quote: "The original dome was torn down in 1785. The second dome, was begun late in 1785 or early in 1786. The exterior was completed in 1788 and the interior in 1793. The second dome, which is considerably larger than the first, is a double shell dome."
+  - says: "When the man in this story came here in 1783, the building was unfinished, and the roof leaked."
+    source: 1
+    quote: "When Washington visited the Maryland State House in 1783, the structure was incomplete and suffered from a leaking roof."
+  - says: "For a few months it was the capitol of the United States, because Congress was meeting inside."
+    source: 2
+    quote: "The Capitol of the United States between November 26,1783 and August 13, 1784."
+  - says: "On the twenty-third of December, George Washington came into the Senate chamber and resigned his commission as commander in chief of the Continental Army."
+    source: 1
+    quote: "George Washington resigned his commission as commander in chief of the Continental Army on December 23 , 1783, in the Senate chamber of the Maryland State House in Annapolis"
+  - says: "He left at dawn the next morning for Mount Vernon."
+    source: 1
+    quote: "Washington left Annapolis at dawn on December 24 and set out for Mount Vernon"
+  - says: "He got home before nightfall on Christmas Eve."
+    source: 1
+    quote: "He arrived home before nightfall on Christmas Eve, a private citizen for the first time in almost nine years."
+  - says: "A private citizen, for the first time in almost nine years."
+    source: 1
+    quote: "a private citizen for the first time in almost nine years."
+sources:
+  - title: "Today in History - December 23: Washington Resigns His Commission"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/today-in-history/december-23/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Maryland State House (HABS No. MD-245), data pages"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md0000/md0068/data/md0068data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain

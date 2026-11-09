@@ -1,0 +1,66 @@
+# Drafted by Claude Code (2026-11-09) for Key West, Florida.
+# Listening spot: The public sidewalk at the corner of Wall Street and Tift Alley, by Mallory Square, facing the two stone buildings.
+# Position: Wikidata Q1887609 (Mallory Square, 24.559395, -81.807428); HABS FL-176 places the buildings at the northwest corner of Wall Street and Tift Alley, which was not separately geocoded (medium-low confidence).
+id: key-west-ice-from-the-north
+title: "Ice From the North"
+summary: "Until 1890 Key West could not make ice. It came by ship from the North and was stored in the Tift icehouse at Mallory Square."
+place: "Tift & Company chandlery and icehouse, Wall Street at Tift Alley, Mallory Square, Key West, Florida"
+at: { lat: 24.5593, lng: -81.8072 }
+triggerRadiusKm: 0.05
+category: food-drink
+format: short
+durationS: 56
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [key-west, mallory-square, ice, food]
+teaser: "One of these old stone buildings was an icehouse, on an island where nobody could make ice."
+script: |
+  Find the two old stone buildings at the corner of Wall Street and Tift Alley. The northern one is the oldest commercial building in the city. It was built as a ship chandlery. The southern one was an icehouse.
+
+  An icehouse, in the tropics.
+
+  Until 1890, nobody made ice in Key West. It came from the North, in ships built specially to carry it, and it was stored here.
+
+  The Tift company was advertising ice for sale by 1855. It was not a luxury. Ice was a vitally important commodity in the tropics, for the relief of fever victims.
+
+  And behind the buildings, big cisterns collected the rain, to supply ships calling at the port.
+
+  Ice from the north, and water from the sky. On a hot island surrounded by salt water, those were things worth selling.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Find the two old stone buildings at the corner of Wall Street and Tift Alley."
+    source: 1
+    quote: "Northwest corner Wall Street and Tift Alley"
+  - says: "The northern one is the oldest commercial building in the city."
+    source: 1
+    quote: "The northern building is the city's oldest commercial building, and was built by Amos C. Tift and Co. as a ships chandlery."
+  - says: "It was built as a ship chandlery."
+    source: 1
+    quote: "The northern building is the city's oldest commercial building, and was built by Amos C. Tift and Co. as a ships chandlery."
+  - says: "The southern one was an icehouse."
+    source: 1
+    quote: "The southern building was built as an icehouse."
+  - says: "Until 1890, nobody made ice in Key West."
+    source: 1
+    quote: "Not until 1890 was artificial ice manufactured at Key West."
+  - says: "It came from the North, in ships built specially to carry it, and it was stored here."
+    source: 1
+    quote: "natural ice was shipped in specially built ships from the North."
+  - says: "The Tift company was advertising ice for sale by 1855."
+    source: 1
+    quote: "Tift Company advertised ice for sale in a local newspaper of 1855"
+  - says: "Ice was a vitally important commodity in the tropics, for the relief of fever victims."
+    source: 1
+    quote: "Ice was a vitally important commodity in the tropics for the relief of fever victims."
+  - says: "And behind the buildings, big cisterns collected the rain, to supply ships calling at the port."
+    source: 1
+    quote: "The large cisterns in the rear of the buildings were used to collect rainwater which supplied ships calling at the port."
+sources:
+  - title: "Tift & Company, Ships Chandlery & Icehouse, HABS FL-176"
+    publisher: "Library of Congress, Historic American Buildings Survey / Historic American Engineering Record"
+    url: https://www.loc.gov/item/fl0148/
+    retrievedAt: "2026-11-09"
+    rights: public-domain

@@ -1,0 +1,72 @@
+# Drafted by Claude Code (2026-11-09) for San Francisco, California.
+# Listening spot: The public seawall walk beside Fort Point, at the end of Marine Drive, looking up at the steel arch of the bridge above the fort.
+# Position: Wikidata Q1438659 (Fort Point National Historic Site, 37.81056, -122.47722), moved about 40 m east onto the seawall walk outside the fort (medium confidence).
+id: san-francisco-the-arch-over-the-fort
+title: "The Arch over the Fort"
+summary: "The Golden Gate Bridge was meant to replace Fort Point. Its chief engineer redesigned the bridge with an arch to keep it."
+place: "Fort Point National Historic Site, Marine Drive, San Francisco, California"
+at: { lat: 37.8104, lng: -122.4768 }
+triggerRadiusKm: 0.08
+category: built
+format: short
+durationS: 61
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [san-francisco, fort-point, golden-gate-bridge, presidio, civil-war, military]
+teaser: "At its very end, the Golden Gate Bridge steps over a building."
+script: |
+  Look up, above the brick fort, at the underside of the bridge. There is a steel arch up there. It does not cross any water. It steps over the fort.
+
+  Fort Point was built between 1853 and 1861 to guard the entrance to San Francisco Bay. Its guns never fired a shot in anger.
+
+  In the late 1930s, the plans for the Golden Gate Bridge also involved plans for the demolition of Fort Point.
+
+  Before construction began, Chief Engineer Joseph Strauss toured the empty fort. He changed his mind, and he changed his design.
+
+  While the old fort has no military value now, he wrote, it remains nevertheless a fine example of the mason's art.
+
+  So he designed a steel arch to span the old fort, and the bridge went over the top of it.
+
+  Most bridges are built over water. Down at this end, the bridge was built over a fort, on purpose.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Fort Point was built between 1853 and 1861 to guard the entrance to San Francisco Bay."
+    source: 1
+    quote: "Fort Point was built between 1853 and 1861 by the U.S. Army Engineers as part of a defense system of forts planned for the protection of San Francisco Bay."
+  - says: "Its guns never fired a shot in anger."
+    source: 1
+    quote: "Although its guns never fired a shot in anger"
+  - says: "In the late 1930s, the plans for the Golden Gate Bridge also involved plans for the demolition of Fort Point."
+    source: 1
+    quote: "In the late 1930s, plans for the construction of the Golden Gate Bridge also involved plans for the demolition of Fort Point."
+  - says: "Before construction began, Chief Engineer Joseph Strauss toured the empty fort."
+    source: 3
+    quote: "Joseph Strauss toured the empty fort and"
+  - says: "He changed his mind, and he changed his design."
+    source: 3
+    quote: "changed his mind – and also his design."
+  - says: "While the old fort has no military value now, he wrote, it remains nevertheless a fine example of the mason's art."
+    source: 2
+    quote: "“While the old fort has no military value now,” Strauss said, “it remains nevertheless a fine example of the mason’s art"
+  - says: "So he designed a steel arch to span the old fort, and the bridge went over the top of it."
+    source: 1
+    quote: "created a special engineer arch which allowed the construction of the bridge to occur safely over the Fort."
+sources:
+  - title: "Fort Point"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/fort-point.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Fort Point Brochure Audio Described Text"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/fopo/planyourvisit/brochure-audio-description.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Abbreviated Fort Point Historic Structure Report"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/goga/learn/historyculture/upload/2006-fopo-hsr.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain

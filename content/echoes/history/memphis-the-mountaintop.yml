@@ -1,0 +1,94 @@
+# Drafted by Claude Code (2026-11-09) for Memphis.
+# Listening spot: Public sidewalk outside Mason Temple. It is an active church; listen from the street.
+# Position: Wikidata Q6783628 (Mason Temple) (high confidence).
+id: memphis-the-mountaintop
+title: "The Mountaintop"
+summary: "On April 3, 1968, Martin Luther King gave his Mountaintop speech at Mason Temple, supporting Memphis's striking sanitation workers."
+place: "Mason Temple, Church of God in Christ, Mason Street, Memphis, Tennessee"
+at: { lat: 35.1215, lng: -90.0493 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [memphis, civil-rights, mlk, sanitation-strike, mason-temple]
+teaser: "The night before he died, Martin Luther King spoke in this church for the men who collected the city's garbage."
+script: |
+  Look at this vast concrete church. It can seat seventy-five hundred people, on two levels.
+
+  It was built in the early 1940s, as the headquarters of the Church of God in Christ.
+
+  In 1968, thirteen hundred of the city's sanitation workers were on strike, and they met here regularly.
+
+  On rainy days, Black workers were sent home without pay, while their white supervisors stayed on the clock. They had one uniform each, and nowhere to change.
+
+  The best paid of them could not hope to earn more than seventy dollars a week.
+
+  The week before, a march had ended in a bloody confrontation with police. A court banned further protests.
+
+  On the third of April, 1968, Martin Luther King came here to speak for the strikers.
+
+  He told them he had been to the mountaintop. He said he had looked over, and seen the promised land. And he said he might not get there with them.
+
+  The next day he was killed, at the Lorraine Motel.
+
+  It was the eve of his death, and he spent it here, with the men who collected the city's garbage.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "It can seat seventy-five hundred people, on two levels."
+    source: 1
+    quote: "Mason Temple is a vast concrete building capable of seating 7,500 people on two levels."
+  - says: "It was built in the early 1940s, as the headquarters of the Church of God in Christ."
+    source: 1
+    quote: "Mason Temple was built between 1940 and 1945 as the administrative and spiritual center of the Church of God in Christ"
+  - says: "In 1968, thirteen hundred of the city's sanitation workers were on strike, and they met here regularly."
+    source: 1
+    quote: "King, Abernathy, Andrew Young and other black leaders had come to Memphis to support 1,300 striking sanitation workers who met regularly at the church."
+  - says: "On rainy days, Black workers were sent home without pay, while their white supervisors stayed on the clock."
+    source: 1
+    quote: "on rainy days, black workers had to return home without pay while paid white supervisors remained on the job"
+  - says: "They had one uniform each, and nowhere to change."
+    source: 1
+    quote: "black workers were given only one uniform and no place in which to change clothes"
+  - says: "The best paid of them could not hope to earn more than seventy dollars a week."
+    source: 1
+    quote: "the highest-paid black worker could not hope to earn more than $70 a week"
+  - says: "The week before, a march had ended in a bloody confrontation with police."
+    source: 1
+    quote: "Following a bloody confrontation between marching strikers and police the week before"
+  - says: "A court banned further protests."
+    source: 1
+    quote: "a court injunction had been issued banning further protests."
+  - says: "On the third of April, 1968, Martin Luther King came here to speak for the strikers."
+    source: 1
+    quote: "Martin Luther King, Jr., delivered his prophetic \"Mountaintop\" speech in this church in Memphis, Tennessee, on the eve of his assassination--April 3, 1968."
+  - says: "He told them he had been to the mountaintop."
+    source: 1
+    quote: "Because I've been to the mountaintop."
+  - says: "He said he had looked over, and seen the promised land."
+    source: 1
+    quote: "And I've looked over. And I've seen the promised land."
+  - says: "And he said he might not get there with them."
+    source: 1
+    quote: "I may not get there with you."
+  - says: "The next day he was killed, at the Lorraine Motel."
+    source: 2
+    quote: "On April 4, 1968, the Rev. Dr. Martin Luther King, Jr., was assassinated here at the Lorraine Motel, just a day after delivering his prophetic \"I've Been to the Mountaintop\" speech at the  Mason Temple Church of God in Christ ."
+  - says: "It was the eve of his death, and he spent it here, with the men who collected the city's garbage."
+    source: 1
+    quote: "on the eve of his assassination--April 3, 1968."
+sources:
+  - title: "Tennessee: Mason Temple, Memphis"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/tennessee-mason-temple-memphis.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Tennessee: The Lorraine Motel, Memphis"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/tennessee-the-lorraine-hotel-memphis.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

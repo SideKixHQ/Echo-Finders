@@ -1,0 +1,55 @@
+# Drafted by Claude Code (2026-11-09) for Saint Paul, Minnesota.
+# Listening spot: Public sidewalk near Shepard Road and Drake Street, below the bluff.
+# Position: Approximate Shepard Road and Drake Street intersection from general knowledge, about 400 m southwest of the NPS Fountain Cave marker; the source places the brewery only near this corner (low confidence).
+id: saint-paul-half-a-mile-of-cellar
+title: "Half a Mile of Cellar"
+summary: "The Banholzer brewery near Shepard Road and Drake Street dug caves half a mile deep. It closed after 1897."
+place: "Bluff near Shepard Road and Drake Street, West Seventh neighborhood, Saint Paul, Minnesota"
+at: { lat: 44.9215, lng: -93.128 }
+triggerRadiusKm: 0.15
+category: food-drink
+format: look-below
+durationS: 28
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [saint-paul, brewery, caves, west-seventh]
+teaser: "A brewery on this bluff dug its cellars half a mile deep."
+script: |
+  Up on the bluffs near here, by Shepard Road and Drake Street, stood a brewery.
+
+  Frederick and William Banholzer made it one of the more successful breweries in Saint Paul by the 1880s.
+
+  They dug caves that went half a mile deep, with many chambers.
+
+  Within a year after William died in 1897, the business closed.
+
+  The beer is long gone. Half a mile of cellar was dug for it.
+pronunciations:
+  - written: "Banholzer"
+    say: "BAN-holt-ser"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Up on the bluffs near here, by Shepard Road and Drake Street, stood a brewery."
+    source: 1
+    quote: "Built on top of the bluffs near present-day Shepard Road and Drake Street in the West Seventh Street neighborhood"
+  - says: "Frederick and William Banholzer made it one of the more successful breweries in Saint Paul by the 1880s."
+    source: 1
+    quote: "Frederick and William Banholzer reconstructed it, and made it into one of the more successful breweries in St. Paul by the 1880s."
+  - says: "They dug caves that went half a mile deep, with many chambers."
+    source: 1
+    quote: "The Banholzers dug caves that extended a half-mile deep and had many chambers."
+  - says: "Within a year after William died in 1897, the business closed."
+    source: 1
+    quote: "But within a year after William died, in 1897, the business closed."
+  - says: "Half a mile of cellar was dug for it."
+    source: 1
+    quote: "The Banholzers dug caves that extended a half-mile deep and had many chambers."
+sources:
+  - title: "River of History, Chapter 7"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/miss/learn/historyculture/river-of-history-chapter-7.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

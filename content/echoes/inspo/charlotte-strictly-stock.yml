@@ -1,0 +1,103 @@
+# Drafted by Claude Code (2026-11-09) for Charlotte.
+# Listening spot: Little Rock Road roadside by the Charlotte Speedway marker, near Interstate 85. A roadside stop; the old track site is private land.
+# Position: Wikidata Q1067347 (Charlotte Speedway, 35.2385, -80.9438) moved a little east to Little Rock Road, where the marker says the track was 200 yards west (medium confidence).
+id: charlotte-strictly-stock
+title: "Strictly Stock"
+summary: "On June 19, 1949, NASCAR's first Strictly Stock race ran at a dirt track here. The first car home was disqualified."
+place: "Little Rock Road at Interstate 85, site of the 1949 Charlotte Speedway, Charlotte, North Carolina"
+at: { lat: 35.239, lng: -80.9425 }
+triggerRadiusKm: 0.15
+category: inspo
+inspo:
+  kind: first
+  evidence: area
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charlotte, nascar, racing, drive]
+teaser: "NASCAR's first big race was run near this road in 1949, and the winner lost it to his springs."
+script: |
+  About two hundred yards from this road was a dirt track, three quarters of a mile around.
+
+  On the nineteenth of June, 1949, NASCAR held the first race of what became its top series here.
+
+  It was called Strictly Stock. The cars had to be late model, full size, American sedans, the kind the fans drove, with very few changes allowed.
+
+  Thirty-three drivers started. More than thirteen thousand people came to watch.
+
+  On lap one hundred and seven, Lee Petty took a turn too fast and rolled his Buick.
+
+  On lap one hundred and fifty-one, Glenn Dunnaway took the lead in his Ford, and he finished first.
+
+  Then the officials looked underneath. The rear springs had been altered.
+
+  He was disqualified, and Jim Roper, who came second, was declared the winner. The springs, it turned out, had been changed in a way that was common on cars used to haul moonshine.
+
+  The car's owner sued. NASCAR won, and with it, the power to enforce its own rules.
+
+  So the first race was won, and then lost, on a set of moonshine springs.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "About two hundred yards from this road was a dirt track, three quarters of a mile around."
+    source: 2
+    quote: "track was 200 yards W."
+  - says: "About two hundred yards from this road was a dirt track, three quarters of a mile around."
+    source: 1
+    quote: "at the 3/4 mile dirt track at the “New” Charlotte Speedway."
+  - says: "On the nineteenth of June, 1949, NASCAR held the first race of what became its top series here."
+    source: 1
+    quote: "On June 19, 1949, NASCAR held its first race in its top division"
+  - says: "It was called Strictly Stock."
+    source: 1
+    quote: "at the time called “Strictly Stock,”"
+  - says: "The cars had to be late model, full size, American sedans, the kind the fans drove, with very few changes allowed."
+    source: 1
+    quote: "Cars were required to be late model—1946 or newer—full-size, American-made sedans, with very few modifications allowed."
+  - says: "The cars had to be late model, full size, American sedans, the kind the fans drove, with very few changes allowed."
+    source: 1
+    quote: "in cars similar to those actually driven by racing fans."
+  - says: "Thirty-three drivers started."
+    source: 1
+    quote: "The field of thirty-three drivers included North Carolinians Buck Baker, Jim Paschal, Lee Petty, and Herb Thomas."
+  - says: "More than thirteen thousand people came to watch."
+    source: 1
+    quote: "The crowd of 13,000-plus fans"
+  - says: "On lap one hundred and seven, Lee Petty took a turn too fast and rolled his Buick."
+    source: 1
+    quote: "Lee Petty on lap 107 carried too much speed into the third turn and rolled his Buick."
+  - says: "On lap one hundred and fifty-one, Glenn Dunnaway took the lead in his Ford, and he finished first."
+    source: 1
+    quote: "On lap 151, Glenn Dunnaway took his Ford into the lead and finished first."
+  - says: "The rear springs had been altered."
+    source: 1
+    quote: "Officials conducting a post-race inspection found altered rear springs"
+  - says: "He was disqualified, and Jim Roper, who came second, was declared the winner."
+    source: 1
+    quote: "disqualified Dunnaway, and declared second place finisher Jim Roper the winner."
+  - says: "The springs, it turned out, had been changed in a way that was common on cars used to haul moonshine."
+    source: 1
+    quote: "It was later revealed that the springs had been modified in a manner common to cars used to haul moonshine."
+  - says: "The car's owner sued."
+    source: 1
+    quote: "The car owner challenged NASCAR’s decision and filed a lawsuit."
+  - says: "NASCAR won, and with it, the power to enforce its own rules."
+    source: 1
+    quote: "The judge’s decision in favor of NASCAR gave the organization official sanction in enforcing its rules"
+  - says: "So the first race was won, and then lost, on a set of moonshine springs."
+    source: 1
+    quote: "It was later revealed that the springs had been modified in a manner common to cars used to haul moonshine."
+sources:
+  - title: "Charlotte Speedway (L-105)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2024/01/16/charlotte-speedway-l-105
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Guide to North Carolina Highway Historical Markers, August 2026 Edition"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/nc-historical-markers-guide-summer-2026/open
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts

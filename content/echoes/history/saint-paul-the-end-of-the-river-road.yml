@@ -1,0 +1,80 @@
+# Drafted by Claude Code (2026-11-09) for Saint Paul, Minnesota.
+# Listening spot: Lower Landing Park, the public riverfront path below Lowertown.
+# Position: Approximate Lower Landing Park on the riverfront below Union Depot, from general knowledge of the riverfront; no coordinate retrieved (low-medium confidence).
+id: saint-paul-the-end-of-the-river-road
+title: "The End of the River Road"
+summary: "Saint Paul was the head of steamboat navigation, with over 1,000 arrivals a year by 1857. Then railroads changed it all."
+place: "Lower Landing, Mississippi riverfront below Lowertown, Saint Paul, Minnesota"
+at: { lat: 44.946, lng: -93.0845 }
+triggerRadiusKm: 0.12
+category: history
+format: short
+durationS: 54
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [saint-paul, lower-landing, mississippi, steamboats, railroads]
+teaser: "Steamboats could go no further than here. Then the trains came."
+script: |
+  Look at the river. For steamboats, this was the end of the road.
+
+  Above Saint Paul the river falls more than a hundred feet in about fifteen miles, through a narrow gorge full of boulders. Too treacherous for steamboats.
+
+  So Saint Paul became the head of navigation.
+
+  In 1844 the town counted forty-one steamboat arrivals. By 1857 it had more than a thousand a year.
+
+  A local newspaper reported that passengers and freight overflowed from every steamboat that arrived.
+
+  Then the railroads came, and the lower landing became a railroad terminal.
+
+  In 1875 a Saint Paul historian, J. Fletcher Williams, summed it up.
+
+  The opening of navigation has ceased to be of any importance or interest. Our railroads have changed all that.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Above Saint Paul the river falls more than a hundred feet in about fifteen miles, through a narrow gorge full of boulders."
+    source: 1
+    quote: "some 15 river miles, the river falls more than 100 feet. This steep slope, combined with a narrow gorge and limestone boulders left by the retreat of the falls, made the river through this reach too treacherous for steamboat navigation."
+  - says: "So Saint Paul became the head of navigation."
+    source: 1
+    quote: "Thus, St. Paul had become the head of navigation."
+  - says: "In 1844 the town counted forty-one steamboat arrivals."
+    source: 1
+    quote: "St. Paul recorded 41 steamboat arrivals in 1844, and 95 in 1849."
+  - says: "By 1857 it had more than a thousand a year."
+    source: 1
+    quote: "By 1857, St. Paul had become a bustling port, with over 1,000 steamboat arrivals each year by some 62 to 99 boats."
+  - says: "A local newspaper reported that passengers and freight overflowed from every steamboat that arrived."
+    source: 1
+    quote: "In 1854 the Minnesota Pioneer,a St. Paul newspaper, reported that passengers and freight overflowed from every steamboat that arrived"
+  - says: "Then the railroads came, and the lower landing became a railroad terminal."
+    source: 3
+    quote: "The lower landing became a railroad terminal"
+  - says: "In 1875 a Saint Paul historian, J. Fletcher Williams, summed it up."
+    source: 2
+    quote: "Writing in 1875, St. Paul historian J. Fletcher Williams summarized St. Paul's evolving relation to the river"
+  - says: "Our railroads have changed all that."
+    source: 2
+    quote: "\"of late years, the opening of navigation has ceased to be of any importance or interest. Our railroads have changed all that.\""
+  - says: "The opening of navigation has ceased to be of any importance or interest."
+    source: 2
+    quote: "the opening of navigation has ceased to be of any importance or interest."
+sources:
+  - title: "River of History, Chapter 4"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/miss/learn/historyculture/river-of-history-chapter-4.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "River of History, Chapter 8"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/miss/learn/historyculture/river-of-history-chapter-8.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "River of History, Chapter 7"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/miss/learn/historyculture/river-of-history-chapter-7.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

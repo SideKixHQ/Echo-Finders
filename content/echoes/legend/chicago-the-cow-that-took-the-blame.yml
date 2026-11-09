@@ -1,0 +1,88 @@
+# Drafted by Claude Code (2026-11-09) for Chicago, Illinois.
+# Listening spot: The public sidewalk on DeKoven Street near Jefferson Street, outside the Chicago Fire Academy.
+# Position: The 1871 inquiry testimony places the O'Leary barn on DeKoven Street east of Jefferson; listener placed on the DeKoven Street sidewalk near Jefferson Street from the street grid (low-medium confidence; no reachable coordinate for the fire academy or the barn site, check on a map).
+id: chicago-the-cow-that-took-the-blame
+title: "The Cow That Took the Blame"
+summary: "The Great Chicago Fire started in the O'Learys' barn in 1871. The story that their cow kicked over a lamp is a legend."
+place: "Near the site of the O'Leary barn, DeKoven Street at Jefferson Street, Chicago, Illinois"
+at: { lat: 41.8693, lng: -87.6414 }
+triggerRadiusKm: 0.08
+category: legend
+format: short
+durationS: 68
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The cow story is a legend. The Library of Congress calls it a widely circulated rumor; the cause of the fire is unknown, and the script says so out loud.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [chicago, great-chicago-fire, legend, near-west-side]
+teaser: "Nobody knows how the Great Chicago Fire started. Everybody knows about the cow."
+script: |
+  On the night of the eighth of October, 1871, a fire started in a barn not far from where you are standing.
+
+  A neighbor on this street was washing dishes when she saw a bright reflection on her window panes. She ran into the street, and saw the O'Learys' barn and two others on fire.
+
+  That much comes from what witnesses told the inquiry afterwards. Here is the part that comes from somewhere else.
+
+  The story goes that the O'Learys' cow kicked over an oil lamp, and set the straw alight. It was a widely circulated rumor, and it has never stopped being told.
+
+  It is a legend. Nobody has ever proved it. No one knows for certain how the fire started.
+
+  What came next is not a legend. Three hundred Chicagoans were dead. Ninety thousand people were left homeless. Four square miles, including the whole business district, were leveled.
+
+  A whole city burned, and the one character everybody remembers is a cow.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "On the night of the eighth of October, 1871, a fire started in a barn not far from where you are standing."
+    source: 1
+    quote: "That same night, the Great Chicago Fire erupted in nearby Illinois."
+  - says: "the eighth of October"
+    source: 1
+    quote: "October 8"
+  - says: "a fire started in a barn"
+    source: 1
+    quote: "an eyewitness did see the beginnings of the blaze in Catherine and Patrick O’Leary’s barn."
+  - says: "A neighbor on this street was washing dishes when she saw a bright reflection on her window panes."
+    source: 2
+    quote: "was washing dishes when she saw a-bright re flection on the window panes of her dwelling."
+  - says: "She ran into the street, and saw the O'Learys' barn and two others on fire."
+    source: 2
+    quote: "ran into the street, and saw that O’Leary's barn and two others east of"
+  - says: "That much comes from what witnesses told the inquiry afterwards."
+    source: 2
+    quote: "who lives on Dckoven street, east of Jefferson, was washing dishes"
+  - says: "The story goes that the O'Learys' cow kicked over an oil lamp, and set the straw alight."
+    source: 1
+    quote: "One widely circulated rumor held the O’Leary’s cow responsible for knocking over an oil-burning lamp and setting the straw afire."
+  - says: "It was a widely circulated rumor, and it has never stopped being told."
+    source: 1
+    quote: "One widely circulated rumor held the O’Leary’s cow responsible"
+  - says: "A whole city burned, and the one character everybody remembers is a cow."
+    source: 1
+    quote: "One widely circulated rumor held the O’Leary’s cow responsible"
+  - says: "No one knows for certain how the fire started."
+    source: 1
+    quote: "No one knows for certain how the Chicago fire started"
+  - says: "Three hundred Chicagoans were dead."
+    source: 1
+    quote: "By the time the fire was extinguished, 300 Chicagoans were dead"
+  - says: "Ninety thousand people were left homeless."
+    source: 1
+    quote: "90,000 of 500,000 residents were left homeless."
+  - says: "Four square miles, including the whole business district, were leveled."
+    source: 1
+    quote: "Four square miles, including the business district, were completely leveled."
+sources:
+  - title: "Today in History: October 8"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/today-in-history/october-08/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Chicago Tribune, November 25, 1871, page 6: the fire inquiry (Chronicling America)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/resource/sn82014064/1871-11-25/ed-1/?sp=6
+    retrievedAt: "2026-11-09"
+    rights: public-domain

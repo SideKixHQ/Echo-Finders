@@ -1,0 +1,75 @@
+# Drafted by Claude Code (2026-11-09) for Santa Fe, New Mexico.
+# Listening spot: The Acequia Madre Street roadside, beside the ditch, near the Acequia Madre House.
+# Position: Wikidata Q117390545 (Acequia Madre House, 35.679167, -105.931111) on Acequia Madre Street, which HAER NM-25 says the ditch follows (medium confidence).
+id: santa-fe-the-mother-ditch
+title: "The Mother Ditch"
+summary: "The Acequia Madre, Santa Fe's mother ditch, was probably begun in 1610. It may be the oldest Spanish acequia left in the Southwest."
+place: "Acequia Madre, Acequia Madre Street, Santa Fe, New Mexico"
+at: { lat: 35.67917, lng: -105.93111 }
+triggerRadiusKm: 0.08
+category: land
+format: short
+durationS: 64
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [santa-fe, acequia-madre, water, irrigation]
+teaser: "Beside this street runs a stone-lined ditch that Santa Fe has used since before the Pueblo Revolt."
+script: |
+  Look for the stone-lined ditch running beside this street. It might be dry, or there might be water in it. Either way, this is the Acequia Madre. The mother ditch.
+
+  When the Spanish founded Santa Fe in 1610, they probably began digging it almost at once. It was already in use at the time of the Pueblo Revolt, in 1680.
+
+  It takes its water from the Santa Fe River, and runs west through the city for over two miles, first along this street. It is four to five feet wide, and most of it is lined with stone. It supplied the town with water for the household, and for irrigation.
+
+  It is probably the oldest Spanish acequia system left in the Southwest. And you can still trace it, walking down the street named after it.
+
+  It is not used regularly now. It only carries water when the river runs high.
+
+  Dug when the town was new, and still waiting for the river.
+pronunciations:
+  - written: Acequia Madre
+    say: ah-SEH-kee-ah MAH-dreh
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Either way, this is the Acequia Madre."
+    source: 1
+    quote: "The Acequia Madre of Santa Fe is an example of the acequias or irrigation ditches built by the Spanish"
+  - says: "When the Spanish founded Santa Fe in 1610, they probably began digging it almost at once."
+    source: 1
+    quote: "Construction the Acequia Madre was probably begun when Santa Fe was founded in 1610."
+  - says: "It was already in use at the time of the Pueblo Revolt, in 1680."
+    source: 1
+    quote: "It was in use at the time of the Pueblo Revolt in 1680."
+  - says: "It takes its water from the Santa Fe River, and runs west through the city for over two miles, first along this street."
+    source: 1
+    quote: "The Acequia Madre receives water from the Santa Fe River"
+  - says: "It takes its water from the Santa Fe River, and runs west through the city for over two miles, first along this street."
+    source: 1
+    quote: "The acequia runs in a westerly direction through the city for over 2 miles, first following Acequia Madre Street and then East Manhattan."
+  - says: "It is four to five feet wide, and most of it is lined with stone."
+    source: 1
+    quote: "Most of the acequia is stone-lined and ranges from 4' to 5' wide."
+  - says: "It supplied the town with water for the household, and for irrigation."
+    source: 1
+    quote: "The acequia supplied water for the domestic needs of the community and for irrigation."
+  - says: "It is probably the oldest Spanish acequia system left in the Southwest."
+    source: 1
+    quote: "It is probably the oldest Spanish acequia system remaining in the Southwest and can easily be traced today."
+  - says: "And you can still trace it, walking down the street named after it."
+    source: 1
+    quote: "can easily be traced today."
+  - says: "It is not used regularly now."
+    source: 1
+    quote: "The Acequia Madre is not used regularly, but it does carry water when the river is at a high level."
+  - says: "It only carries water when the river runs high."
+    source: 1
+    quote: "it does carry water when the river is at a high level."
+sources:
+  - title: "Acequia Madre of Santa Fe, HAER NM-25"
+    publisher: "Library of Congress, Historic American Buildings Survey / Historic American Engineering Record"
+    url: https://www.loc.gov/item/nm0333/
+    retrievedAt: "2026-11-09"
+    rights: public-domain

@@ -1,0 +1,104 @@
+# Drafted by Claude Code (2026-11-09) for Memphis.
+# Listening spot: Union Avenue sidewalk outside Sun Studio, a few steps along from the door.
+# Position: Wikidata Q2516615 (Sun Studio), moved a few metres along Union Avenue so it does not sit exactly on the Elvis echo (high confidence for the building).
+id: memphis-the-amp-on-the-roof
+title: "The Amp on the Roof"
+summary: "Legend says the guitar amp for Rocket 88 fell off the band's car on Highway 61, and the broken speaker made the famous fuzz."
+place: "Sun Studio, 706 Union Avenue, Memphis, Tennessee"
+at: { lat: 35.1393, lng: -90.03782 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 81
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The amplifier story is presented by the Library of Congress essay as legend, and Ike Turner's own account differs. The script says out loud that it is a legend and gives both versions.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [memphis, sun-studio, rock-and-roll, ike-turner, legend]
+teaser: "The fuzzy guitar on one of the first great rock records may have come from a fall off a car roof."
+script: |
+  Three years before Elvis walked in, this same little studio made a record that pushed the blues toward rock and roll.
+
+  In March 1951, a band drove sixty-one miles up from Clarksdale, Mississippi, to record here. Ike Turner was on piano. Jackie Brenston sang.
+
+  The song was Rocket 88. And the guitar on it sounds wrong. Loud, and fuzzy, by accident.
+
+  What follows is a legend. Nobody can prove it, and the people who were there did not agree.
+
+  The story is that on the drive up Highway 61, the guitar amplifier fell off the roof of the car, and the fall wrecked its speaker. They plugged it in anyway.
+
+  Ike Turner remembered it differently. He said it was the bass on top of the car that blew off. It was raining, he said, and they had a lot of trouble that day.
+
+  They did not even expect to record. They were paid twenty dollars apiece.
+
+  The same year, Bill Haley covered the song. That was three years before he made Rock Around the Clock.
+
+  Maybe it was an amplifier. Maybe it was a bass. Either way, the legend says rock and roll began with something broken on the side of a highway.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Three years before Elvis walked in, this same little studio made a record that pushed the blues toward rock and roll."
+    source: 1
+    quote: "pushed “Rocket ‘88’” into rock and roll territory."
+  - says: "Three years before Elvis walked in, this same little studio made a record that pushed the blues toward rock and roll."
+    source: 2
+    quote: "Sam, who already had recorded a number one rhythm and blues record with Ike Turner's \"Rocket 88,\""
+  - says: "In March 1951, a band drove sixty-one miles up from Clarksdale, Mississippi, to record here."
+    source: 1
+    quote: "created in a March 5, 1951 session at Sam Phillips’ legendary Memphis Recording Service studio."
+  - says: "In March 1951, a band drove sixty-one miles up from Clarksdale, Mississippi, to record here."
+    source: 1
+    quote: "During the 61-mile trip from Clarksdale, Mississippi to Memphis"
+  - says: "Ike Turner was on piano."
+    source: 1
+    quote: "Piano player Ike Turner showed up with his Kings of Rhythm"
+  - says: "Jackie Brenston sang."
+    source: 1
+    quote: "Brenston, tenor sax and vocals"
+  - says: "The song was Rocket 88."
+    source: 1
+    quote: "on the raucously influential “Rocket ‘88,’”"
+  - says: "Loud, and fuzzy, by accident."
+    source: 1
+    quote: "Kizart’s loud and accidentally fuzz-toned guitar"
+  - says: "The story is that on the drive up Highway 61, the guitar amplifier fell off the roof of the car, and the fall wrecked its speaker."
+    source: 1
+    quote: "legend has it that his amplifier fell off the roof of the band’s car, somewhere along Highway 61, inflicting irreversible damage on its speaker"
+  - says: "Ike Turner remembered it differently."
+    source: 1
+    quote: "Turner said, “We had the bass on the top of the car. It blew off."
+  - says: "He said it was the bass on top of the car that blew off."
+    source: 1
+    quote: "“We had the bass on the top of the car. It blew off."
+  - says: "It was raining, he said, and they had a lot of trouble that day."
+    source: 1
+    quote: "We had a lot of trouble that day. It was raining."
+  - says: "They did not even expect to record."
+    source: 1
+    quote: "because we didn’t think we were going to record."
+  - says: "They were paid twenty dollars apiece."
+    source: 1
+    quote: "They gave us $20 apiece"
+  - says: "The same year, Bill Haley covered the song."
+    source: 1
+    quote: "In 1951, “Rocket ‘88’” was covered western swing style with fender banging novelty sound effects by Bill Haley & the Saddlemen"
+  - says: "That was three years before he made Rock Around the Clock."
+    source: 1
+    quote: "three years before he came up with “Rock Around the Clock.”"
+  - says: "Either way, the legend says rock and roll began with something broken on the side of a highway."
+    source: 1
+    quote: "legend has it that his amplifier fell off the roof of the band’s car, somewhere along Highway 61"
+sources:
+  - title: "“Rocket ‘88’”--Jackie Brenston & his Delta Cats (1951)"
+    publisher: "Library of Congress, National Recording Registry"
+    url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Rocket-88_Propes.pdf
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Sun Records Sessions--Elvis Presley (1954-1955), essay by James L. Dickerson"
+    publisher: "Library of Congress, National Recording Registry"
+    url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Sun-Records-sessions.pdf
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts

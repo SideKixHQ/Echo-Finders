@@ -1,0 +1,97 @@
+# Drafted by Claude Code (2026-11-09) for Asheville, North Carolina.
+# Listening spot: The Broadway Street sidewalk by the Battle of Asheville historical marker, near the UNC Asheville campus.
+# Position: DNCR marker PPP-1 is on SR 1781 (Broadway Street) with the earthworks 100 yards north on the UNC Asheville campus (Wikidata Q7895940, 35.61619, -82.56614). The marker itself was not geocoded; this point is an estimate on Broadway south-east of the campus (low confidence, check before approval).
+id: asheville-a-leg-in-a-boot
+title: "A Leg in a Boot"
+summary: "In April 1865 home guards held off a Union raid at earthworks now on the UNC Asheville campus. Battle or skirmish is still argued."
+place: "Battle of Asheville marker, Broadway Street near UNC Asheville, Asheville, North Carolina"
+at: { lat: 35.6135, lng: -82.5625 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [asheville, civil-war, military, unc-asheville]
+teaser: "In April 1865 Asheville's old men and boys stood behind earthworks near here and fought for five hours."
+script: |
+  About a hundred yards north of the marker, on what is now the campus of the University of North Carolina at Asheville, there were once rough earthworks.
+
+  In April 1865, a Union colonel, Isaac Kirby, was ordered to scout in the direction of Asheville. He set out from Tennessee with nine hundred troops.
+
+  The town's defenders were the Silver Grays. Forty-four men, among them a fourteen-year-old boy and a sixty-year-old Baptist minister. Their commander bullied, argued or shamed about two hundred and fifty more into joining them. They had two small brass cannons, and they took them up to the earthworks.
+
+  At three in the afternoon, the two sides simply lined up and started firing. There was no maneuvering. Just gunfire, and a few cannon blasts, for about five hours.
+
+  Then Kirby's men retreated, leaving rifles, canteens and haversacks behind.
+
+  Casualties? Reports range from none to three. But it is said that the next morning, the defenders found one Union soldier's leg, still in its boot.
+
+  People around here still argue about what to call it. A battle, a skirmish, an engagement. The marker says battle. The state's own write-up says it fell well short of one.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "About a hundred yards north of the marker, on what is now the campus of the University of North Carolina at Asheville, there were once rough earthworks."
+    source: 2
+    quote: "Earthworks remain 100 yds. N."
+  - says: "About a hundred yards north of the marker, on what is now the campus of the University of North Carolina at Asheville, there were once rough earthworks."
+    source: 1
+    quote: "The site of the breastworks is now part of the campus of the University of North Carolina at Asheville."
+  - says: "In April 1865, a Union colonel, Isaac Kirby, was ordered to scout in the direction of Asheville."
+    source: 1
+    quote: "On April 3, 1865, Colonel Isaac M. Kirby of the 101st Ohio Infantry was ordered to \"scout in the direction of Asheville.\""
+  - says: "He set out from Tennessee with nine hundred troops."
+    source: 1
+    quote: "He set out from Greeneville, Tennessee, with 900 troops"
+  - says: "The town's defenders were the Silver Grays."
+    source: 1
+    quote: "The forty-four member \"Silver Grays,\" who counted among their ranks a 14-year-old boy and a 60-year-old Baptist minister"
+  - says: "Forty-four men, among them a fourteen-year-old boy and a sixty-year-old Baptist minister."
+    source: 1
+    quote: "The forty-four member \"Silver Grays,\" who counted among their ranks a 14-year-old boy and a 60-year-old Baptist minister"
+  - says: "Their commander bullied, argued or shamed about two hundred and fifty more into joining them."
+    source: 1
+    quote: "were bolstered by about 250 more men that Clayton \"bullied, argued, or shamed\" into taking up arms to defend Asheville."
+  - says: "They had two small brass cannons, and they took them up to the earthworks."
+    source: 1
+    quote: "Clayton gathered the men and two small brass Napoleon cannons and marched them to rough earthworks"
+  - says: "At three in the afternoon, the two sides simply lined up and started firing."
+    source: 1
+    quote: "When the two forces met at 3 o'clock in the afternoon, they simply lined up and began firing."
+  - says: "There was no maneuvering."
+    source: 1
+    quote: "There was no maneuvering, but gunfire, peppered with a few cannon blasts, continued for about five hours."
+  - says: "Just gunfire, and a few cannon blasts, for about five hours."
+    source: 1
+    quote: "There was no maneuvering, but gunfire, peppered with a few cannon blasts, continued for about five hours."
+  - says: "Then Kirby's men retreated, leaving rifles, canteens and haversacks behind."
+    source: 1
+    quote: "Kirby's men retreated recklessly along the same route they had used for the approach, leaving items such as rifles, canteens, and haversacks in their wake."
+  - says: "Reports range from none to three."
+    source: 1
+    quote: "Reports of casualties vary from zero to three"
+  - says: "But it is said that the next morning, the defenders found one Union soldier's leg, still in its boot."
+    source: 1
+    quote: "it is said that the following morning the Confederates inspected Kirby's abandoned position and found one Union soldier's leg in a boot."
+  - says: "A battle, a skirmish, an engagement."
+    source: 1
+    quote: "was the encounter of April 3, 1865, a battle, a skirmish, or an engagement?"
+  - says: "The marker says battle."
+    source: 1
+    quote: "(contrary to the wording at the head of the marker)"
+  - says: "The state's own write-up says it fell well short of one."
+    source: 1
+    quote: "would indicate that it fell well short of a battle but is rather more properly seen as an engagement."
+sources:
+  - title: "Battle of Asheville (PPP-1)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2024/01/23/battle-asheville-ppp-1
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Topics Related to Buncombe County (historical markers)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog-terms/buncombe-county
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts

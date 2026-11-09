@@ -1,0 +1,63 @@
+# Drafted by Claude Code (2026-11-09) for San Antonio, Texas.
+# Listening spot: The public mission grounds beside the south wall of the church at Mission San Jose, looking at the carved Rose Window.
+# Position: Wikidata Q6878730 (Mission San Jose, 29.36203832, -98.47978299), nudged about 15 m south toward the church's south wall where the window is (medium confidence).
+id: san-antonio-a-window-for-rosa
+title: "A Window for Rosa"
+summary: "Folklore says Pedro Huizar carved Mission San Jose's Rose Window for his sweetheart Rosa, lost at sea. Its maker is really unknown."
+place: "Rose Window, Mission San Jose, 6701 San Jose Drive, San Antonio, Texas"
+at: { lat: 29.3619, lng: -98.47985 }
+triggerRadiusKm: 0.05
+category: legend
+format: short
+durationS: 61
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  Folklore. The National Park Service says the window's sculptor and meaning are unknown; the script says the love story is a legend and gives the other explanation.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [san-antonio, missions, san-jose, rose-window, legend, world-heritage]
+teaser: "The most famous window in Spanish Texas comes with a love story nobody can prove."
+script: |
+  Look for the carved stone window on this church, framed in swirling stone. It is called the Rose Window.
+
+  It is known as the finest example of Spanish Colonial ornament in the United States. Nobody knows for certain who carved it, or what it means.
+
+  So a story grew to fill the gap. This is a legend, and it has never been proved.
+
+  The folklore says it was carved by Pedro Huizar, a carpenter and surveyor from Spain, as a monument to his sweetheart, Rosa. Rosa set out from Spain to join him, and on the way, she was lost at sea. Pedro finished the window anyway, as a declaration of love that would not end.
+
+  There is a less romantic idea. The window may be named for Saint Rose of Lima, the first saint of the New World.
+
+  Either way, people stand here and look at it the same way. As if somebody made it for someone.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "It is called the Rose Window."
+    source: 1
+    quote: "The Rose Window is known as the premier example of Spanish Colonial ornamentation in the United States."
+  - says: "It is known as the finest example of Spanish Colonial ornament in the United States."
+    source: 1
+    quote: "The Rose Window is known as the premier example of Spanish Colonial ornamentation in the United States."
+  - says: "Nobody knows for certain who carved it, or what it means."
+    source: 1
+    quote: "Its sculptor and significance continue to be a mystery."
+  - says: "The folklore says it was carved by Pedro Huizar, a carpenter and surveyor from Spain, as a monument to his sweetheart, Rosa."
+    source: 1
+    quote: "Folklore credits Pedro Huizar, a carpenter and surveyor from Spain, with carving the famous window as a monument to his sweetheart, Rosa."
+  - says: "Rosa set out from Spain to join him, and on the way, she was lost at sea."
+    source: 1
+    quote: "Tragically, on her way from Spain to join him, Rosa was lost at sea."
+  - says: "Pedro finished the window anyway, as a declaration of love that would not end."
+    source: 1
+    quote: "Pedro then completed the window as a declaration of enduring love."
+  - says: "The window may be named for Saint Rose of Lima, the first saint of the New World."
+    source: 1
+    quote: "the window was named after Saint Rose of Lima, the first saint of the New World."
+sources:
+  - title: "Mission San Jose, San Antonio Missions National Historical Park"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/saan/planyourvisit/sanjose.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

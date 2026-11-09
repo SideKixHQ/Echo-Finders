@@ -1,0 +1,77 @@
+# Drafted by Claude Code (2026-11-09) for Key West, Florida.
+# Listening spot: The Whitehead Street sidewalk outside the brick wall of 907 Whitehead Street (a museum; the grounds need a ticket).
+# Position: LOC HABS FL-179 item coordinates (24.551211, -81.800615) and Wikidata Q280171 (24.551111, -81.800833), moved about 40 m west onto the Whitehead Street sidewalk (medium-high confidence).
+id: key-west-the-studio-across-the-catwalk
+title: "The Studio Across the Catwalk"
+summary: "Hemingway owned this house from the 1930s until he died, and wrote many of his best selling novels here, in a studio reached by a catwalk."
+place: "Ernest Hemingway Home, 907 Whitehead Street, Key West, Florida"
+at: { lat: 24.55115, lng: -81.801 }
+triggerRadiusKm: 0.05
+category: inspo
+inspo:
+  kind: creation
+  evidence: building
+format: short
+durationS: 64
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [key-west, hemingway, writers]
+teaser: "The wall around this house is made of old Key West streets. Behind it, Hemingway wrote."
+script: |
+  Look at the wall around this property. It is made of old paving brick, taken from the streets of the city.
+
+  The house inside was the first one Ernest Hemingway ever owned. He kept it until the day he died.
+
+  Behind the main house is a smaller building. The Hemingways built a wrought iron catwalk from the upstairs porch across to it, and the room up there became his studio. A spiral stairway led down to the patio.
+
+  It was in this house, a government survey of historic buildings says, that Hemingway wrote many of his best selling novels, and a number of his short stories.
+
+  Around 1938 the property got something else nobody on the island had. A swimming pool, the first one on Key West.
+
+  Later the writer moved to Cuba. He would not sell. He refused every offer for the rest of his life.
+
+  So the wall stayed up, built from the streets he walked to get home.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look at the wall around this property."
+    source: 1
+    quote: "a wall was built around three sides of the property"
+  - says: "It is made of old paving brick, taken from the streets of the city."
+    source: 1
+    quote: "old paving brick from the city streets."
+  - says: "The house inside was the first one Ernest Hemingway ever owned."
+    source: 1
+    quote: "This was the first house the writer had ever purchased, and he retained his ownership until his death."
+  - says: "He kept it until the day he died."
+    source: 1
+    quote: "he retained his ownership until his death."
+  - says: "The Hemingways built a wrought iron catwalk from the upstairs porch across to it, and the room up there became his studio."
+    source: 1
+    quote: "built a wrought iron catwalk on top of this wooden structure which leads from the upstairs porch of the main house to the mansard room in the outbuilding which the author used for his studio."
+  - says: "A spiral stairway led down to the patio."
+    source: 1
+    quote: "A spiral stairway leads from the studio to the patio below."
+  - says: "It was in this house, a government survey of historic buildings says, that Hemingway wrote many of his best selling novels, and a number of his short stories."
+    source: 1
+    quote: "It was in this house that Hemingway wrote many of his best selling novels and a number of his short stories."
+  - says: "Around 1938 the property got something else nobody on the island had."
+    source: 1
+    quote: "built about 1938, and was the first pool on the island."
+  - says: "A swimming pool, the first one on Key West."
+    source: 1
+    quote: "built about 1938, and was the first pool on the island."
+  - says: "Later the writer moved to Cuba."
+    source: 1
+    quote: "Although the writer moved to Cuba"
+  - says: "He refused every offer for the rest of his life."
+    source: 1
+    quote: "He refused all offers to sell the house during his lifetime."
+sources:
+  - title: "Tift-Hemingway House, HABS FL-179, written historical and descriptive data"
+    publisher: "Library of Congress, Historic American Buildings Survey / Historic American Engineering Record"
+    url: https://www.loc.gov/item/fl0149/
+    retrievedAt: "2026-11-09"
+    rights: public-domain

@@ -1,0 +1,117 @@
+# Drafted by Claude Code (2026-11-09) for Memphis.
+# Listening spot: Union Avenue sidewalk in front of Sun Studio. Inside is by tour only.
+# Position: Wikidata Q2516615 (Sun Studio, 706 Union Avenue) (high confidence). Shares the building with memphis-the-amp-on-the-roof.
+id: memphis-it-worked-when-they-stopped
+title: "It Worked When They Stopped"
+summary: "On July 5, 1954, Elvis, Scotty Moore and Bill Black failed for hours at Sun, then fooled around with That's All Right on a break."
+place: "Sun Studio, 706 Union Avenue, Memphis, Tennessee"
+at: { lat: 35.13925, lng: -90.03768 }
+triggerRadiusKm: 0.04
+category: inspo
+inspo:
+  kind: creation
+  evidence: building
+format: short
+durationS: 87
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [memphis, sun-studio, elvis, rock-and-roll, music]
+teaser: "Elvis Presley's first real session in this little studio went nowhere for hours. Then they took a break."
+script: |
+  Look at this small brick building on Union Avenue. On the evening of the fifth of July, 1954, three young men came in here to make a record.
+
+  It was hot and sticky, in the nineties. The studio had no air conditioning, because studios could not risk the noise.
+
+  The singer was Elvis Presley. He had been in once before, to record a birthday song for his mother.
+
+  The man who owned the place, Sam Phillips, could not say what he was looking for. All he would say was, I'll know it when I hear it.
+
+  For hours, nothing worked. They went down one musical dead end after another.
+
+  By around midnight the air inside was rancid. The only fresh air was out the back door.
+
+  Then, on the break, Elvis started strumming his guitar and singing a blues song, That's All Right.
+
+  Bill Black jumped up and slapped his bass along. Scotty Moore came in on electric guitar.
+
+  Phillips stuck his head out of the control room door. Try it again, he said. Let me get in there.
+
+  Two weeks later it was a record. And out of this room came the kind of music that would be called rock and roll.
+
+  All night they had tried to play what they thought they were supposed to. It worked when they stopped.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at this small brick building on Union Avenue."
+    source: 2
+    quote: "Some of the South’s greatest contributions to American music occurred during the 1950s in a small brick building in Memphis, Tennessee."
+  - says: "On the evening of the fifth of July, 1954, three young men came in here to make a record."
+    source: 1
+    quote: "Elvis Presley's Sun Records Sessions began on the evening of July 5, 1954, at a downtown Memphis recording studio owned by Sam Phillips. When Elvis, Scotty Moore and Bill Black arrived at Memphis Recording Service"
+  - says: "It was hot and sticky, in the nineties."
+    source: 1
+    quote: "it was a hot, sticky day, with the temperature soaring in the 90s."
+  - says: "The studio had no air conditioning, because studios could not risk the noise."
+    source: 1
+    quote: "Air-conditioning was in use in Memphis at that time, but not used in recording studios where extraneous noise was always a technical concern."
+  - says: "The singer was Elvis Presley."
+    source: 1
+    quote: "Elvis Presley's Sun Records Sessions began on the evening of July 5, 1954"
+  - says: "He had been in once before, to record a birthday song for his mother."
+    source: 1
+    quote: "the young man named Elvis who had come into the studio a while back to record a birthday song for his mother."
+  - says: "The man who owned the place, Sam Phillips, could not say what he was looking for."
+    source: 1
+    quote: "said it wasn't something he could put into in words"
+  - says: "All he would say was, I'll know it when I hear it."
+    source: 1
+    quote: "\"I'll know it when I hear it.\""
+  - says: "For hours, nothing worked."
+    source: 1
+    quote: "After several hours of traveling down musical dead-ends, they took a break."
+  - says: "They went down one musical dead end after another."
+    source: 1
+    quote: "After several hours of traveling down musical dead-ends, they took a break."
+  - says: "By around midnight the air inside was rancid."
+    source: 1
+    quote: "By then it was around midnight and the uncirculated air in the studio was rancid."
+  - says: "The only fresh air was out the back door."
+    source: 1
+    quote: "The only way to get a breath of \"fresh\" air was to stick your head out the back door"
+  - says: "Then, on the break, Elvis started strumming his guitar and singing a blues song, That's All Right."
+    source: 1
+    quote: "Elvis suddenly began strumming his acoustic guitar, singing a blues song, \"That's All Right,\""
+  - says: "Bill Black jumped up and slapped his bass along."
+    source: 1
+    quote: "Taken by the beat, Bill jumped up and started slapping his bass in time to the music."
+  - says: "Scotty Moore came in on electric guitar."
+    source: 1
+    quote: "Then Scotty joined in on electric guitar."
+  - says: "Phillips stuck his head out of the control room door."
+    source: 1
+    quote: "he stuck his head out of the control room door"
+  - says: "Try it again, he said."
+    source: 1
+    quote: "\"Try it again. Let me get in there"
+  - says: "Let me get in there."
+    source: 1
+    quote: "\"Try it again. Let me get in there"
+  - says: "Two weeks later it was a record."
+    source: 1
+    quote: "The two-sided record was released on July 19, 1954, two weeks after it was recorded."
+  - says: "And out of this room came the kind of music that would be called rock and roll."
+    source: 2
+    quote: "Out of this emerged the unique American style of music known as rock’n’roll"
+sources:
+  - title: "Sun Records Sessions--Elvis Presley (1954-1955), essay by James L. Dickerson"
+    publisher: "Library of Congress, National Recording Registry"
+    url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Sun-Records-sessions.pdf
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "National Historic Landmarks guide"
+    publisher: "National Park Service"
+    url: https://home.nps.gov/subjects/nationalhistoriclandmarks/guide.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

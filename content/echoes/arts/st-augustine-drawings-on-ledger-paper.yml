@@ -1,0 +1,90 @@
+# Drafted by Claude Code (2026-11-09) for St. Augustine, Florida.
+# Listening spot: The fort's public lawn on the north side, looking up at the north wall and gun deck.
+# Position: Wikidata Q101094405 fort point (29.89778, -81.31139) moved about 60 m north onto the lawn facing the north wall (medium confidence).
+id: st-augustine-drawings-on-ledger-paper
+title: "Drawings on Ledger Paper"
+summary: "Plains warriors imprisoned at the fort from 1875 to 1878 drew their lives on ledger paper. The drawings survive, and so does the art form."
+place: "Castillo de San Marcos, north lawn, St. Augustine, Florida"
+at: { lat: 29.89835, lng: -81.3114 }
+triggerRadiusKm: 0.05
+category: arts
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [st-augustine, castillo-de-san-marcos, fort-marion, ledger-art, cheyenne, kiowa]
+teaser: "Prisoners from the Great Plains were held on top of this fort. What they drew there still survives."
+script: |
+  Look up at the top of the north wall. In the 1870s, a long wooden barracks stood up there on the gun deck, built by prisoners.
+
+  They had come from the Great Plains. Seventy-four of them, mostly warriors, taken from a reservation after the Red River War. There were Cheyenne, Kiowa, Comanche, Arapaho and Caddo. They arrived in chains and shackles.
+
+  Then a new jailer, Lieutenant Richard Henry Pratt, had the chains taken off. He also set out to make them give up who they were.
+
+  Many of the young men began to draw. Not on buffalo hide, the traditional way, but on paper from an accountant's ledger book. Army rosters. Day books. Whatever paper they could find.
+
+  They drew life on the plains. The long journey to Florida. Their days inside this fort.
+
+  Many of those drawings survive. Native artists still make ledger art today.
+
+  And one prisoner, in an act of resistance, etched a Kiowa Sundance camp into the walls of the prison itself.
+pronunciations:
+  - written: Kiowa
+    say: KY-oh-wah
+  - written: Arapaho
+    say: uh-RAP-uh-hoe
+  - written: Caddo
+    say: KAD-oh
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In the 1870s, a long wooden barracks stood up there on the gun deck, built by prisoners."
+    source: 1
+    quote: "The prisoners were given wood to build housing accommodations on the north gundeck, a structure described as being 100 feet long and the width of the gundeck"
+  - says: "They had come from the Great Plains."
+    source: 1
+    quote: "This war essentially ended the traditional way of life for the people of the Great Plains"
+  - says: "Seventy-four of them, mostly warriors, taken from a reservation after the Red River War."
+    source: 1
+    quote: "It was from this reservation that 74 prisoners, mostly male warriors, were chosen for confinement."
+  - says: "There were Cheyenne, Kiowa, Comanche, Arapaho and Caddo."
+    source: 1
+    quote: "there were 33 Cheyenne, 27 Kiowa, 11 Comanche, 2 Arapaho, and 1 Caddo."
+  - says: "They arrived in chains and shackles."
+    source: 1
+    quote: "They wore chains and shackles, were kept under lock and key"
+  - says: "Then a new jailer, Lieutenant Richard Henry Pratt, had the chains taken off."
+    source: 1
+    quote: "First, all the chains and shackles were removed"
+  - says: "He also set out to make them give up who they were."
+    source: 1
+    quote: "Pratt worked at the fort to assimilate the prisoners. He instructed them to give up their cultural identity and accept a new way of life."
+  - says: "Many of the young men began to draw."
+    source: 1
+    quote: "Many of the young men confined at Fort Marion created artwork known as ledger drawings."
+  - says: "Not on buffalo hide, the traditional way, but on paper from an accountant's ledger book."
+    source: 1
+    quote: "This term refers to the artists' use of paper, usually from an accountant's ledger book, as opposed to the more traditional buffalo hide."
+  - says: "Army rosters."
+    source: 1
+    quote: "the prisoners had access to blank or partly used ledgers, army rosters, day books, memorandums books, and various pieces of paper."
+  - says: "The long journey to Florida."
+    source: 1
+    quote: "Common themes included scenes of life on the plains, the journey to Florida, and the prisoners' experiences at the fort."
+  - says: "Many of those drawings survive."
+    source: 1
+    quote: "Many examples of ledger drawings from this period of imprisonment still exist today."
+  - says: "Native artists still make ledger art today."
+    source: 1
+    quote: "Today, modern Native American artists continue this tradition through modern ledger art."
+  - says: "And one prisoner, in an act of resistance, etched a Kiowa Sundance camp into the walls of the prison itself."
+    source: 1
+    quote: "One such Plains prisoner, in an act of resistance, chose to etch a traditional Kiowa Sundance Camp scene on the walls of the prison."
+sources:
+  - title: "Cheyenne, Arapaho, Kiowa, Comanche & Caddo Incarceration"
+    publisher: "National Park Service, Castillo de San Marcos National Monument"
+    url: https://www.nps.gov/casa/learn/historyculture/plains-incarceration.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

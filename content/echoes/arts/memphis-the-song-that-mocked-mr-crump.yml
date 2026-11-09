@@ -1,0 +1,97 @@
+# Drafted by Claude Code (2026-11-09) for Memphis.
+# Listening spot: Inside W. C. Handy Park on Beale Street, a public park.
+# Position: Wikidata Q49497627 (Handy Park, 35.14, -90.05111) (medium-high confidence). Shares the park with memphis-kid-douglas, offset a few metres.
+id: memphis-the-song-that-mocked-mr-crump
+title: "The Song That Mocked Mr. Crump"
+summary: "W. C. Handy's campaign song for Edward Crump mocked Crump's own platform. Reworked as The Memphis Blues, it was the first blues recorded."
+place: "W. C. Handy Park, Beale Street, Memphis, Tennessee"
+at: { lat: 35.13995, lng: -90.0512 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [memphis, beale-street, blues, w-c-handy, music]
+teaser: "The first blues ever recorded began as a campaign song that made fun of the candidate."
+script: |
+  This park is named for W. C. Handy. The city of Memphis created it in 1931, to honor him.
+
+  In 1909, Handy was hired to write a campaign song for a man running for mayor, Edward Crump.
+
+  The song was called Mr. Crump. And its words made fun of Crump's own reform platform.
+
+  Nobody knows whether Crump ever listened to the lyrics. Later, he said he had not hired Handy at all.
+
+  Crump won anyway, and the song caught on around town.
+
+  In 1912 Handy put new words to it and published it as The Memphis Blues.
+
+  Sales were tiny at first, so he sold the rights, keeping only his name as composer.
+
+  By the fall of 1913, the man who bought it had sold fifty thousand copies of the sheet music.
+
+  And on the fifteenth of July, 1914, it became the very first blues song ever recorded.
+
+  A joke at a politician's expense became the first blues on record. Handy learned the music business from it the hard way.
+pronunciations:
+  - written: Crump
+    say: krump
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "This park is named for W. C. Handy."
+    source: 1
+    quote: "The city of Memphis honored Handy in 1931, creating W.C. Handy Park on Beale Street."
+  - says: "The city of Memphis created it in 1931, to honor him."
+    source: 1
+    quote: "The city of Memphis honored Handy in 1931, creating W.C. Handy Park on Beale Street."
+  - says: "In 1909, Handy was hired to write a campaign song for a man running for mayor, Edward Crump."
+    source: 2
+    quote: "In 1909, he was hired to write a campaign song for Memphis mayoral candidate Edward Crump."
+  - says: "The song was called Mr. Crump."
+    source: 2
+    quote: "This song, “Mr. Crump,” was loosely based on the older song “Mama Don’ ’Low”"
+  - says: "And its words made fun of Crump's own reform platform."
+    source: 2
+    quote: "actually contained words that lampooned Mr. Crump’s reform movement platform."
+  - says: "Nobody knows whether Crump ever listened to the lyrics."
+    source: 2
+    quote: "It is not known whether Crump ever listened to the lyrics"
+  - says: "Later, he said he had not hired Handy at all."
+    source: 2
+    quote: "he later claimed not to have hired Handy himself."
+  - says: "Crump won anyway, and the song caught on around town."
+    source: 2
+    quote: "Either way, Crump was elected and the song’s popularity took off locally."
+  - says: "In 1912 Handy put new words to it and published it as The Memphis Blues."
+    source: 1
+    quote: "In 1912, \"Mr. Crump\" was given new lyrics and published as \"The Memphis Blues,\""
+  - says: "Sales were tiny at first, so he sold the rights, keeping only his name as composer."
+    source: 2
+    quote: "After initial miniscule sales, Handy sold his rights to the song to Theron Bennet, while retaining his authorship credit."
+  - says: "By the fall of 1913, the man who bought it had sold fifty thousand copies of the sheet music."
+    source: 2
+    quote: "By the fall of 1913, Bennet had sold fifty thousand copies of the sheet music."
+  - says: "And on the fifteenth of July, 1914, it became the very first blues song ever recorded."
+    source: 2
+    quote: "On July 15, 1914, at Victor Talking Machine Company’s studio in Camden, NJ, “The Memphis Blues” became the very first blues song to be recorded."
+  - says: "A joke at a politician's expense became the first blues on record."
+    source: 2
+    quote: "“The Memphis Blues” became the very first blues song to be recorded."
+  - says: "Handy learned the music business from it the hard way."
+    source: 2
+    quote: "Handy had learned a few important lessons about the music business"
+sources:
+  - title: "WC Handy, Lower Mississippi Delta Region"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/locations/lowermsdeltaregion/wc-handy.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "“Memphis Blues”--Victor Military Band (1914)"
+    publisher: "Library of Congress, National Recording Registry"
+    url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Memphis-Blues_Shain.pdf
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts

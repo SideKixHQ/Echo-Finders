@@ -1,0 +1,97 @@
+# Drafted by Claude Code (2026-11-09) for Memphis.
+# Listening spot: Beale Street sidewalk in front of the church. It is a church; listen from the street.
+# Position: Wikidata Q4876134 (Beale Street Baptist Church), which the NPS calls the First (Beale Street) Baptist Chapel (high confidence).
+id: memphis-they-smashed-the-press
+title: "They Smashed the Press"
+summary: "Ida B. Wells's paper, the Memphis Free Speech, had its office in this Beale Street church. A mob destroyed it in 1892."
+place: "First Baptist Beale Street Church, Beale Street, Memphis, Tennessee"
+at: { lat: 35.13861, lng: -90.04833 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [memphis, beale-street, ida-b-wells, journalism, civil-rights]
+teaser: "A newspaper office in this church was wrecked by a mob in 1892. The reporter they wanted was out of town."
+script: |
+  Look at this church on Beale Street. In the 1890s it held the office of a newspaper, the Memphis Free Speech.
+
+  One of its writers, and later an owner, was a young schoolteacher named Ida B. Wells.
+
+  In 1892, three Black men who had opened a grocery store, Tom Moss, Calvin McDowell and Will Stewart, were taken from their jail cells by a mob and murdered.
+
+  Their store had been drawing customers away from a white-owned store nearby.
+
+  Wells wrote about it in this paper. Then she traveled the South, at the risk of her own life, gathering the facts of other lynchings.
+
+  One of her editorials pushed some of the city's white residents over the edge. A mob ransacked the office and destroyed the printing equipment.
+
+  She was in New York at the time. That probably saved her life.
+
+  Her life was threatened, and she stayed in the North. She kept writing.
+
+  In 2020 she was awarded a Pulitzer Prize, for her courageous reporting on that violence.
+
+  They smashed the press. They could not reach the reporter.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look at this church on Beale Street."
+    source: 1
+    quote: "The First (Beale Street) Baptist Chapel hosted the office of The Memphis Free Speech"
+  - says: "In the 1890s it held the office of a newspaper, the Memphis Free Speech."
+    source: 1
+    quote: "The First (Beale Street) Baptist Chapel hosted the office of The Memphis Free Speech"
+  - says: "One of its writers, and later an owner, was a young schoolteacher named Ida B. Wells."
+    source: 2
+    quote: "She later became an owner of two newspapers: The Memphis Free Speech and Headlight and Free Speech."
+  - says: "One of its writers, and later an owner, was a young schoolteacher named Ida B. Wells."
+    source: 2
+    quote: "Wells worked as a teacher in a segregated public school in Memphis."
+  - says: "In 1892, three Black men who had opened a grocery store, Tom Moss, Calvin McDowell and Will Stewart, were taken from their jail cells by a mob and murdered."
+    source: 2
+    quote: "In 1892, Wells turned her attention to anti-lynching after a friend and two of his business associates were murdered. Tom Moss, Calvin McDowell, and Will Stewart started a grocery store"
+  - says: "In 1892, three Black men who had opened a grocery store, Tom Moss, Calvin McDowell and Will Stewart, were taken from their jail cells by a mob and murdered."
+    source: 2
+    quote: "A lynch mob took them from their cells and murdered them."
+  - says: "Their store had been drawing customers away from a white-owned store nearby."
+    source: 2
+    quote: "which drew customers away from a white-owned store in the neighborhood."
+  - says: "Wells wrote about it in this paper."
+    source: 1
+    quote: "After Wells published a scathing exposé of the incident, local white residents lashed out."
+  - says: "Then she traveled the South, at the risk of her own life, gathering the facts of other lynchings."
+    source: 2
+    quote: "Wells wrote articles decrying the lynching and risked her own life traveling the south to gather information on other lynchings."
+  - says: "One of her editorials pushed some of the city's white residents over the edge."
+    source: 2
+    quote: "One of her editorials pushed some of the city's whites over the edge."
+  - says: "A mob ransacked the office and destroyed the printing equipment."
+    source: 1
+    quote: "A white mob ransacked the Free Speech office and destroyed the printing equipment."
+  - says: "She was in New York at the time."
+    source: 2
+    quote: "Wells was in New York at the time of the incident, which likely saved her life."
+  - says: "That probably saved her life."
+    source: 2
+    quote: "Wells was in New York at the time of the incident, which likely saved her life."
+  - says: "Her life was threatened, and she stayed in the North."
+    source: 2
+    quote: "She stayed in the North after her life was threatened"
+  - says: "In 2020 she was awarded a Pulitzer Prize, for her courageous reporting on that violence."
+    source: 2
+    quote: "In 2020, Ida B. Wells was awarded a Pulitzer Prize \"for her outstanding and courageous reporting on the horrific and vicious violence against African Americans during the era of lynching.\""
+sources:
+  - title: "Places of Ida B. Wells-Barnett"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/places-of-ida-b-wells.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Ida B. Wells"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/idabwells.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

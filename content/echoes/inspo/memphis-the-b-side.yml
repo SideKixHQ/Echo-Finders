@@ -1,0 +1,98 @@
+# Drafted by Claude Code (2026-11-09) for Memphis.
+# Listening spot: East McLemore Avenue sidewalk in front of the Stax Museum.
+# Position: Wikidata Q7604973 (Stax Museum), at 926 East McLemore Avenue, the address the Library of Congress essay gives for the studio (high confidence for the address; the essay does not say whether the present building is the original).
+id: memphis-the-b-side
+title: "The B Side"
+summary: "In 1962, at Stax's McLemore Avenue studio, a jam after an aborted jingle session became Green Onions, recorded in two or three takes."
+place: "Stax Museum of American Soul Music, 926 East McLemore Avenue, Memphis, Tennessee"
+at: { lat: 35.116, lng: -90.0315 }
+triggerRadiusKm: 0.05
+category: inspo
+inspo:
+  kind: creation
+  evidence: site
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [memphis, soulsville, stax, soul-music, music]
+teaser: "Green Onions came out of a failed jingle session, on a Sunday, in an old movie theater on this street."
+script: |
+  Look up at the marquee. In 1960 a small record label moved into a former movie theater at this address, 926 East McLemore.
+
+  It was called Satellite then. Soon it was renamed Stax.
+
+  The owner, Jim Stewart, still worked at a bank. His sister, Estelle Axton, ran a record shop in the old concession stand, so she could hear what the kids were buying.
+
+  In the summer of 1962, four musicians were called in to back a singer on a commercial jingle. It was a Sunday, so the bank was closed.
+
+  The session fell apart. So they started jamming on a slow blues, and Stewart recorded it without telling them.
+
+  He wanted to release it. But a single needs a B side.
+
+  Booker T. Jones had a little riff he had been playing on the piano at his mother's house. He tried it on the Hammond organ instead.
+
+  They worked out the arrangement, and cut it in two or three takes.
+
+  It was the first time those four had ever played together in that line up. They called it Green Onions.
+
+  A B side, from a jam, after a jingle session failed, on the day the bank was shut.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In 1960 a small record label moved into a former movie theater at this address, 926 East McLemore."
+    source: 1
+    quote: "Satellite relocated to 926 E. McLemore Avenue in 1960. The building was a former movie"
+  - says: "It was called Satellite then."
+    source: 1
+    quote: "Satellite relocated to 926 E. McLemore Avenue in 1960."
+  - says: "Soon it was renamed Stax."
+    source: 1
+    quote: "Satellite was quickly redubbed Stax Records."
+  - says: "The owner, Jim Stewart, still worked at a bank."
+    source: 1
+    quote: "Stewart was still working at the bank"
+  - says: "His sister, Estelle Axton, ran a record shop in the old concession stand, so she could hear what the kids were buying."
+    source: 1
+    quote: "the record shop that she established in the concession area of the movie theater-turned-studio. The shop allowed Estelle to keep her finger on the pulse of what kids were buying"
+  - says: "In the summer of 1962, four musicians were called in to back a singer on a commercial jingle."
+    source: 1
+    quote: "In the summer of 1962, Steve Cropper, Booker T. Jones, Lewie Steinberg, and drummer Al Jackson, Jr. were assembled at Stax to record a commercial jingle with rockabilly singer Billy Lee Riley."
+  - says: "It was a Sunday, so the bank was closed."
+    source: 1
+    quote: "It was a Sunday, so the bank was closed, and Jim Stewart was working the controls."
+  - says: "So they started jamming on a slow blues, and Stewart recorded it without telling them."
+    source: 1
+    quote: "When the session was aborted, the musicians started jamming on a slow blues progression"
+  - says: "So they started jamming on a slow blues, and Stewart recorded it without telling them."
+    source: 1
+    quote: "he recorded it without their knowledge."
+  - says: "But a single needs a B side."
+    source: 1
+    quote: "Jim said he would release it as a single, but they would need a B-side."
+  - says: "Booker T. Jones had a little riff he had been playing on the piano at his mother's house."
+    source: 1
+    quote: "“I had this little ditty that I’d been playing on piano at my mother’s house,” Booker recalled."
+  - says: "He tried it on the Hammond organ instead."
+    source: 1
+    quote: "Booker tried it out on the Hammond M-series organ, rather than the piano"
+  - says: "They worked out the arrangement, and cut it in two or three takes."
+    source: 1
+    quote: "the musicians recorded the final version of the tune that came to be known as “Green Onions” in only two or three takes."
+  - says: "It was the first time those four had ever played together in that line up."
+    source: 1
+    quote: "It was the first time this particular assemblage of musicians had played together in this configuration"
+  - says: "They called it Green Onions."
+    source: 1
+    quote: "the tune that came to be known as “Green Onions”"
+  - says: "A B side, from a jam, after a jingle session failed, on the day the bank was shut."
+    source: 1
+    quote: "It was a Sunday, so the bank was closed"
+sources:
+  - title: "“Green Onions”--Booker T. & the M.G.s (1962)"
+    publisher: "Library of Congress, National Recording Registry"
+    url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Booker-T-and-the-MGs_Green-Onions.pdf
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts

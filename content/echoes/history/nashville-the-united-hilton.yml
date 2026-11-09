@@ -1,0 +1,95 @@
+# Drafted by Claude Code (2026-11-09) for Nashville.
+# Listening spot: Chestnut Street sidewalk in front of number 453. It is a working industrial building; listen from the street.
+# Position: HABS TN-267 coordinates for the building (36.143074, -86.769943); listener on the Chestnut Street sidewalk (high confidence for the building; check current use before approval).
+id: nashville-the-united-hilton
+title: "The United Hilton"
+summary: "Nashville's 1963 record pressing plant had a penthouse suite for Black customers, including Motown's, in the segregated South."
+place: "United Record Pressing plant, 453 Chestnut Street, Nashville, Tennessee"
+at: { lat: 36.143074, lng: -86.769943 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [nashville, wedgewood-houston, records, motown, segregation]
+teaser: "This record plant was built with a hotel suite on top, because its customers could not get a room in town."
+script: |
+  Look at the mosaic front of this plant. It was built to press records, and it was built with a hotel suite on the top floor.
+
+  The company was called Southern Plastics. By the early 1960s it was turning out about a million records a month, including every single for Motown.
+
+  It moved into this new building in 1963.
+
+  In those years the South was segregated. Black customers coming to Nashville for their records would have struggled to find anywhere to stay.
+
+  So the plant gave them somewhere. Up in the penthouse, a living room, a bedroom with two twin beds, a full bathroom, and a kitchen with a push button stove.
+
+  They called it the United Hilton. Now it is known as the Motown Suite.
+
+  Motown's founder, Berry Gordy, was one of the guests.
+
+  The plant also pressed some of the Beatles' first American records, for a label in Chicago.
+
+  When a federal survey documented the building in 2012, it was still pressing vinyl, one of the largest plants of its kind in the country.
+
+  A record factory with a hotel on the roof, because the hotels in town were not an option.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look at the mosaic front of this plant."
+    source: 1
+    quote: "This mid-twentieth-century, mosaic-fronted, concrete-block building"
+  - says: "It was built to press records, and it was built with a hotel suite on the top floor."
+    source: 1
+    quote: "It was designed to house a vinyl record pressing plant for Southern Plastics"
+  - says: "It was built to press records, and it was built with a hotel suite on the top floor."
+    source: 1
+    quote: "the building included a suite of rooms within a second floor penthouse unit that would provide lodging for visiting African-American customers"
+  - says: "The company was called Southern Plastics."
+    source: 1
+    quote: "It was designed to house a vinyl record pressing plant for Southern Plastics"
+  - says: "By the early 1960s it was turning out about a million records a month, including every single for Motown."
+    source: 1
+    quote: "Southern Plastics was doing well by the early 1960s. It was turning out in the region of one million disks a month and had secured a contract with Motown Records to press all of that company’s singles."
+  - says: "It moved into this new building in 1963."
+    source: 1
+    quote: "On May 25, 1963, the Nashville Tennessean heralded the move of Southern Plastics to its new building at 453 Chestnut Street"
+  - says: "In those years the South was segregated."
+    source: 1
+    quote: "At the time of the plant’s construction, the South was segregated and finding other forms of lodging would have been problematic."
+  - says: "Black customers coming to Nashville for their records would have struggled to find anywhere to stay."
+    source: 1
+    quote: "was built to accommodate Southern Plastics’ many African-American customers. At the time of the plant’s construction, the South was segregated and finding other forms of lodging would have been problematic."
+  - says: "Up in the penthouse, a living room, a bedroom with two twin beds, a full bathroom, and a kitchen with a push button stove."
+    source: 1
+    quote: "included a living room, a bedroom with two twin beds, a full bathroom, and a fully equipped kitchen complete with a push button stove."
+  - says: "They called it the United Hilton."
+    source: 1
+    quote: "This set of rooms, which was once known as the “United Hilton” and more recently dubbed the “Motown Suite,”"
+  - says: "Now it is known as the Motown Suite."
+    source: 1
+    quote: "This set of rooms, which was once known as the “United Hilton” and more recently dubbed the “Motown Suite,”"
+  - says: "Motown's founder, Berry Gordy, was one of the guests."
+    source: 1
+    quote: "those who enjoyed its comforts included Motown Records’ founder Berry Gordy."
+  - says: "The plant also pressed some of the Beatles' first American records, for a label in Chicago."
+    source: 1
+    quote: "the Southern Plastics also made discs for Chicago’s Vee Jay records, on whose label some of the Beatles first American releases - freshly pressed at the Chestnut Street plant - appeared."
+  - says: "When a federal survey documented the building in 2012, it was still pressing vinyl, one of the largest plants of its kind in the country."
+    source: 1
+    quote: "Historian: Rachel Hopkin, Sally Kress Tompkins Fellow, 2012"
+  - says: "When a federal survey documented the building in 2012, it was still pressing vinyl, one of the largest plants of its kind in the country."
+    source: 1
+    quote: "has continuously functioned as such since it was first built. Today, it is one of the largest vinyl record pressing plants in the United States."
+  - says: "A record factory with a hotel on the roof, because the hotels in town were not an option."
+    source: 1
+    quote: "the South was segregated and finding other forms of lodging would have been problematic."
+sources:
+  - title: "United Record Pressing Plant, 453 Chestnut Street, HABS No. TN-267, Written Historical and Descriptive Data"
+    publisher: "Library of Congress, Historic American Buildings Survey (National Park Service)"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tn/tn0400/tn0435/data/tn0435data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain

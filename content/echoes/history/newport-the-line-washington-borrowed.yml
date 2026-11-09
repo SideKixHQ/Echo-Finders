@@ -1,0 +1,77 @@
+# Drafted by Claude Code (2026-11-09) for Newport, Rhode Island.
+# Listening spot: Public sidewalk on Touro Street in front of the synagogue; the building is private and opens only at set hours.
+# Position: Wikidata Q1355822 (Touro Synagogue) 41.4894, -71.3119, which falls on the building; the sidewalk in front is within the radius (high confidence).
+id: newport-the-line-washington-borrowed
+title: "The Line Washington Borrowed"
+summary: "Washington's promise of 'to bigotry no sanction' echoed the words Newport's Jewish congregation had sent him first."
+place: "Touro Synagogue, 85 Touro Street, Newport, Rhode Island"
+at: { lat: 41.4894, lng: -71.3119 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [newport, touro-synagogue, washington, religious-freedom]
+teaser: "The most famous line about this synagogue was the congregation's before it was the president's."
+script: |
+  Look at how the synagogue sits on its lot. It is not square to the street.
+
+  It is set at an angle, so that the ark inside, on the east wall, can face Jerusalem.
+
+  In August 1790 the new president came to Newport. The congregation that worshipped here sent George Washington a letter of welcome. It was written by their warden, Moses Seixas.
+
+  In it he praised a government which to bigotry gives no sanction, to persecution no assistance.
+
+  Washington wrote back. His reply said that the Government of the United States gives to bigotry no sanction, to persecution no assistance.
+
+  The Library of Congress calls the pair of letters his clearest statement of belief in religious freedom.
+
+  Listen to both lines again. The president took the congregation's words, turned them round, and handed them back as a promise.
+
+  The most famous line about this building was the congregation's own, before it was the president's.
+pronunciations:
+  - written: "Seixas"
+    say: "SAY-shus"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "It is set at an angle, so that the ark inside, on the east wall, can face Jerusalem."
+    source: 3
+    quote: "This placement enables the Ark of the Covenant, located on the east wall, to face Jerusalem."
+  - says: "In August 1790 the new president came to Newport."
+    source: 1
+    quote: "presented a congratulatory address to President George Washington on the occasion of his visit to their city."
+  - says: "The congregation that worshipped here sent George Washington a letter of welcome."
+    source: 1
+    quote: "On August 17 , 1790, the Hebrew Congregation External of Newport, Rhode Island, presented a congratulatory address to President George Washington"
+  - says: "It was written by their warden, Moses Seixas."
+    source: 2
+    quote: "Moses Seixas, Warden"
+  - says: "In it he praised a government which to bigotry gives no sanction, to persecution no assistance."
+    source: 2
+    quote: "a Government, which to bigotry gives no sanction, to persecution no assistance"
+  - says: "His reply said that the Government of the United States gives to bigotry no sanction, to persecution no assistance."
+    source: 2
+    quote: "the Government of the United States, which gives to bigotry no sanction, to persecution no assistance"
+  - says: "The Library of Congress calls the pair of letters his clearest statement of belief in religious freedom."
+    source: 1
+    quote: "They encapsulate Washington's clearest articulation of his belief in religious freedom"
+sources:
+  - title: "Today in History - August 17: To Bigotry No Sanction, To Persecution No Assistance"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/today-in-history/august-17/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Discover Touro Synagogue: Lightning Lesson from Teaching with Historic Places"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/discover-touro-synagogue-lightning-lesson-from-teaching-with-historic-places.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Touro Synagogue, Congregation Jeshuat Israel (HABS No. RI-278), written historical and descriptive data"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/ri/ri0000/ri0083/data/ri0083data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain

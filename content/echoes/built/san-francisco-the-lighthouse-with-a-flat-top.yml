@@ -1,0 +1,71 @@
+# Drafted by Claude Code (2026-11-09) for San Francisco, California.
+# Listening spot: The Lands End Trail where it looks out over the water toward the Golden Gate and the Mile Rocks.
+# Position: Wikidata Q12061785 (Mile Rocks Light, 37.792775, -122.510369) is offshore; listener on the Lands End Trail at Wikidata Q6484999 (37.787707, -122.505528), about 650 m away with the tower in view (medium confidence).
+id: san-francisco-the-lighthouse-with-a-flat-top
+title: "The Lighthouse with a Flat Top"
+summary: "Mile Rocks Light was built after the city's worst shipwreck. In 1966 its top two tiers came off and a helipad went on."
+place: "Lands End Trail overlooking Mile Rocks, San Francisco, California"
+at: { lat: 37.7878, lng: -122.5055 }
+triggerRadiusKm: 0.15
+category: built
+format: short
+durationS: 64
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [san-francisco, lands-end, lighthouse, mile-rocks, shipwreck]
+teaser: "Out in the waves is a striped lighthouse with its top missing."
+script: |
+  Look out at the water toward the Golden Gate. Among the waves there is a red and white striped tower on a rock, with a flat top.
+
+  That is the Mile Rocks light. There are two rocks out there that appear and disappear with the swell of the waves.
+
+  The lighthouse was built after the wreck of the steamship City of Rio de Janeiro in 1901, the worst shipwreck in San Francisco's history.
+
+  In 1904 a three-tiered lighthouse went up on the larger rock. At the time, it was hailed as one of America's greatest engineering feats.
+
+  For over sixty years it was kept by four men, living in cramped quarters for days at a time. Isolated from the city, while it sat in plain view.
+
+  In 1966, the Coast Guard automated the light. Its top two tiers were taken away and replaced with a helipad.
+
+  So the flat top is the clue. That is where the rest of the lighthouse used to be.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Among the waves there is a red and white striped tower on a rock, with a flat top."
+    source: 1
+    quote: "a red and white striped tower among the waves."
+  - says: "That is the Mile Rocks light."
+    source: 1
+    quote: "These are the “Mile Rocks”. A three-tiered lighthouse was constructed atop the larger of the two in 1904"
+  - says: "There are two rocks out there that appear and disappear with the swell of the waves."
+    source: 1
+    quote: "two rocks that appear and disappear above the waters with the swelling of the waves."
+  - says: "The lighthouse was built after the wreck of the steamship City of Rio de Janeiro in 1901, the worst shipwreck in San Francisco's history."
+    source: 1
+    quote: "The lighthouse was built after the deadly wreck of the steam ship City of Rio de Janeiro in 1901 -- the worst shipwreck in San Francisco’s history."
+  - says: "In 1904 a three-tiered lighthouse went up on the larger rock."
+    source: 1
+    quote: "A three-tiered lighthouse was constructed atop the larger of the two in 1904"
+  - says: "At the time, it was hailed as one of America's greatest engineering feats."
+    source: 1
+    quote: "At the time, the lighthouse was hailed as one of America’s greatest engineering feats."
+  - says: "For over sixty years it was kept by four men, living in cramped quarters for days at a time."
+    source: 1
+    quote: "For over 60 years it was manned by a team of four men who lived in cramped quarters for days at a time"
+  - says: "Isolated from the city, while it sat in plain view."
+    source: 1
+    quote: "isolated from the city while being within its view."
+  - says: "In 1966, the Coast Guard automated the light."
+    source: 1
+    quote: "In 1966, the US Coast Guard automated the lighthouse’s functions"
+  - says: "Its top two tiers were taken away and replaced with a helipad."
+    source: 1
+    quote: "its distinctive top two tiers were replaced with a helipad."
+sources:
+  - title: "Vestiges of Lands End Trail, Golden Gate National Recreation Area"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/goga/learn/historyculture/vestiges-lands-end-trail.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

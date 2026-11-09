@@ -1,0 +1,97 @@
+# Drafted by Claude Code (2026-11-09) for Santa Fe, New Mexico.
+# Listening spot: The plaza sidewalk at the southeast corner of the Santa Fe Plaza, facing La Fonda.
+# Position: Wikidata Q22060896 (La Fonda on the Plaza, 35.68665, -105.937804), moved about 20 m north-west to the plaza corner (medium-high confidence).
+id: santa-fe-a-tank-called-the-mud-puppy
+title: "A Tank Called the Mud Puppy"
+summary: "The Exchange Hotel, end-of-the-trail inn on the plaza, was demolished in 1919 by a tank at a war bond rally. La Fonda replaced it in 1922."
+place: "La Fonda on the Plaza, 100 East San Francisco Street, Santa Fe, New Mexico"
+at: { lat: 35.68685, lng: -105.93795 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [santa-fe, la-fonda, santa-fe-trail, world-war-i, old-west]
+teaser: "The old trail hotel on this corner was knocked down by a small tank, one war bond at a time."
+script: |
+  Look at La Fonda, on the corner of the plaza. There has been an inn of some kind on this corner for a very long time, possibly since the 1600s.
+
+  In the days of the Santa Fe Trail, the traders came off the plains and in here. To rest, and to gamble on billiards and on monte, the favorite local card game. Fights could turn ugly. Gun violence was common.
+
+  By 1851 it was the Exchange Hotel, the most noted hostelry between Denver and the City of Mexico. Billy the Kid, Kit Carson and Buffalo Bill Cody all came through. So did two future presidents, Hayes and Grant.
+
+  Then in 1880 the railroad arrived. Newer hotels followed, and the old Exchange could not keep up.
+
+  Its end, in 1919, was unusual. It was a First World War victory bond rally. For every hundred dollar bond bought, a small tank called the Mud Puppy knocked down another piece of the old adobe walls.
+
+  When the rally was over, the Exchange was little more than a pile of rubble.
+
+  The hotel you are looking at was finished on the same corner in 1922. It is still the only hotel on the plaza.
+pronunciations:
+  - written: La Fonda
+    say: lah FON-dah
+  - written: monte
+    say: MON-tee
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look at La Fonda, on the corner of the plaza."
+    source: 1
+    quote: "Today, the same site is occupied by a new iteration of \"La Fonda.\""
+  - says: "There has been an inn of some kind on this corner for a very long time, possibly since the 1600s."
+    source: 1
+    quote: "The earliest establishments, possibly dating as far back as the 1600s"
+  - says: "In the days of the Santa Fe Trail, the traders came off the plains and in here."
+    source: 1
+    quote: "the inn became a gathering place for Santa Fe Trail traders, for whom it offered a few nights rest and relaxation after the hard journey across the plains."
+  - says: "To rest, and to gamble on billiards and on monte, the favorite local card game."
+    source: 1
+    quote: "traders could gamble on billiards or the favorite local card game of monte."
+  - says: "Gun violence was common."
+    source: 1
+    quote: "Conflicts in this environment could turn ugly, and gun violence was common."
+  - says: "By 1851 it was the Exchange Hotel, the most noted hostelry between Denver and the City of Mexico."
+    source: 1
+    quote: "then, in 1851, as the Exchange Hotel."
+  - says: "By 1851 it was the Exchange Hotel, the most noted hostelry between Denver and the City of Mexico."
+    source: 1
+    quote: "the most noted hostelry between Denver and the City of Mexico."
+  - says: "Billy the Kid, Kit Carson and Buffalo Bill Cody all came through."
+    source: 1
+    quote: "Those known to have visited include Billy \"The Kid\" Bonney, Kit Carson, \"Buffalo\" Bill Cody, and future presidents Rutherford B. Hayes and Ulysses S. Grant."
+  - says: "So did two future presidents, Hayes and Grant."
+    source: 1
+    quote: "and future presidents Rutherford B. Hayes and Ulysses S. Grant."
+  - says: "Then in 1880 the railroad arrived."
+    source: 1
+    quote: "The arrival of the Atchison, Topeka, & Santa Fe Railroad in 1880 was the beginning of the end for the Exchange."
+  - says: "Newer hotels followed, and the old Exchange could not keep up."
+    source: 1
+    quote: "newer hotels brought increasing competition that proved too much."
+  - says: "Its end, in 1919, was unusual."
+    source: 1
+    quote: "Its ultimate destruction, in 1919, came courtesy of a WWI victory bond rally."
+  - says: "It was a First World War victory bond rally."
+    source: 1
+    quote: "came courtesy of a WWI victory bond rally."
+  - says: "For every hundred dollar bond bought, a small tank called the Mud Puppy knocked down another piece of the old adobe walls."
+    source: 1
+    quote: "For every $100 bond purchased, a small tank known as \"The Mud Puppy\" would knock down a portion of the old hotel's adobe walls."
+  - says: "When the rally was over, the Exchange was little more than a pile of rubble."
+    source: 1
+    quote: "What remained after the rally was little more than a pile of rubble."
+  - says: "The hotel you are looking at was finished on the same corner in 1922."
+    source: 1
+    quote: "Completed in 1922"
+  - says: "It is still the only hotel on the plaza."
+    source: 1
+    quote: "it continues to operate as the only hotel on Santa Fe Plaza."
+sources:
+  - title: "Exchange Hotel Site (La Fonda)"
+    publisher: "National Park Service, National Trails"
+    url: https://www.nps.gov/places/exchange-hotel-site-la-fonda.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain

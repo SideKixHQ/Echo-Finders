@@ -1,0 +1,107 @@
+# Drafted by Claude Code (2026-11-09) for Charlotte.
+# Listening spot: Public sidewalk on South Mint Street beside Bank of America Stadium.
+# Position: Wikidata Q806673 (Bank of America Stadium, 35.22583, -80.85278) moved east onto the South Mint Street side; the DNCR page puts the hospital at Mint and Graham Streets on the stadium site (medium confidence).
+id: charlotte-twenty-beds-under-the-stadium
+title: "Twenty Beds Under the Stadium"
+summary: "Good Samaritan, North Carolina's first public hospital for Black patients, stood here from 1891. The stadium replaced it in 1996."
+place: "Bank of America Stadium, South Mint Street side, Charlotte, North Carolina"
+at: { lat: 35.2262, lng: -80.851 }
+triggerRadiusKm: 0.1
+category: history
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charlotte, uptown, medicine, african-american-history, segregation]
+teaser: "Before the football, this ground held a twenty-bed hospital that the whole state learned from."
+script: |
+  Look at the stadium. This ground once held North Carolina's first public hospital for Black patients.
+
+  It was called Good Samaritan. It opened in 1891, with room for twenty patients.
+
+  It was raised by Jane Wilkes and the parishioners of Saint Peter's Episcopal Church, in a South where every hospital was segregated.
+
+  Its hardest day came in July 1911. A train packed with Black passengers crashed at Hamlet, and eighty-three of them needed a hospital. Good Samaritan was the closest one for Black patients.
+
+  Doctors and nurses from all over Charlotte, Black and white, rushed here and treated all eighty-three together. Only three died.
+
+  In 1903 it opened a school to train Black nurses, when no nursing school in the state was open to Black women.
+
+  By the 1950s, Black Charlotte dreamed of closing it. The goal was to desegregate the hospitals.
+
+  The old building was torn down for this stadium. The first game here was in August 1996.
+
+  Seventy-five thousand seats, on the ground where twenty beds used to be.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "This ground once held North Carolina's first public hospital for Black patients."
+    source: 1
+    quote: "Good Samaritan was the first public hospital serving Black patients in North Carolina."
+  - says: "This ground once held North Carolina's first public hospital for Black patients."
+    source: 1
+    quote: "The location was eventually selected for a 75,000-seat stadium for a new National Football League team, the Carolina Panthers."
+  - says: "It was called Good Samaritan."
+    source: 1
+    quote: "Good Samaritan was the first public hospital serving Black patients in North Carolina."
+  - says: "It opened in 1891, with room for twenty patients."
+    source: 1
+    quote: "The building was completed and Good Samaritan Hospital opened in 1891."
+  - says: "It opened in 1891, with room for twenty patients."
+    source: 1
+    quote: "While it could house only twenty patients"
+  - says: "It was raised by Jane Wilkes and the parishioners of Saint Peter's Episcopal Church, in a South where every hospital was segregated."
+    source: 1
+    quote: "Wilkes and the parishioners of St. Peter’s Episcopal Church succeeded in raising the necessary capital by 1888."
+  - says: "It was raised by Jane Wilkes and the parishioners of Saint Peter's Episcopal Church, in a South where every hospital was segregated."
+    source: 1
+    quote: "However, the South was segregated, and St. Peter’s was for White patients only."
+  - says: "Its hardest day came in July 1911."
+    source: 1
+    quote: "At 10:40 A.M. on July 27, 1911, Train 33 from Durham to Charlotte crashed into a freight train in front of the Hamlet, N.C. trainyard roundhouse."
+  - says: "A train packed with Black passengers crashed at Hamlet, and eighty-three of them needed a hospital."
+    source: 1
+    quote: "Train 33 was packed with 912 Black passengers. Eighty-three of the passengers were in dire need of hospital treatment"
+  - says: "Good Samaritan was the closest one for Black patients."
+    source: 1
+    quote: "Good Samaritan was the closest hospital for Black patients."
+  - says: "Doctors and nurses from all over Charlotte, Black and white, rushed here and treated all eighty-three together."
+    source: 1
+    quote: "Despite segregation, the Black and White Charlotte medical community came together to care for the Black patients. Doctors and nurses from all over Charlotte rushed to Good Samaritan and collectively treated the eighty-three patients."
+  - says: "Only three died."
+    source: 1
+    quote: "Incredibly, only three of the wounded succumbed to their injuries."
+  - says: "In 1903 it opened a school to train Black nurses, when no nursing school in the state was open to Black women."
+    source: 1
+    quote: "Due to segregation, there were no nursing schools open to Black women in North Carolina. In 1903, Good Samaritan opened a school to train Black nurses."
+  - says: "By the 1950s, Black Charlotte dreamed of closing it."
+    source: 1
+    quote: "By the 1950’s, the Black community in Charlotte dreamed of closing the doors to Good Samaritan."
+  - says: "The goal was to desegregate the hospitals."
+    source: 1
+    quote: "The goal was to desegregate the hospitals."
+  - says: "The old building was torn down for this stadium."
+    source: 1
+    quote: "The building that was once home to North Carolina’s first public hospital for the treatment of Black patients was demolished."
+  - says: "The first game here was in August 1996."
+    source: 1
+    quote: "Ericsson Stadium’s inaugural game was held on August 3, 1996."
+  - says: "Seventy-five thousand seats, on the ground where twenty beds used to be."
+    source: 2
+    quote: "The location was eventually selected for a 75,000-seat stadium for a new National Football League team, the Carolina Panthers."
+  - says: "Seventy-five thousand seats, on the ground where twenty beds used to be."
+    source: 2
+    quote: "While it could house only 20 patients"
+sources:
+  - title: "Good Samaritan Hospital (L-122)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2026/05/14/good-samaritan-hospital-l-122
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Good Samaritan Hospital, the State's First African American Hospital, to be Featured on N.C. Highway Historical Marker"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/news/press-releases/2026/05/27/good-samaritan-hospital-states-first-african-american-hospital-be-featured-nc-highway-historical
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
