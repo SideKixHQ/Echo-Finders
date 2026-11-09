@@ -57,7 +57,7 @@ import { VOICE_LABEL } from "./voices";
 import type { Rating } from "./ratings";
 import { platePng } from "./archive-plate";
 import { Transcript } from "./Transcript";
-import { shareText } from "./share";
+import { echoLink, shareText } from "./share";
 import { CrimeNote, TruthMark } from "./TruthMark";
 
 const RARITY_LABEL: Record<string, string> = {
@@ -551,17 +551,17 @@ export function Ribbon({
           the story lands did not. This is the moment somebody wants to tell somebody
           else, and it was two taps back to a card to do it.
 
-          No link, because there is no link: nothing in this app has a URL of its own yet
-          (no router, no deep link, `docs/03-selling.md`). A share button that pastes a
-          dead address is worse than one that pastes a sentence, so it sends the title,
-          the place and the teaser — which is a thing somebody can act on by walking there.
-          It gets a URL the day echoes get addresses.
+          With a link that opens this echo for whoever it is sent to, and plays it for
+          them once without a pass (`takeSharedEcho`, App.tsx): a story somebody was moved
+          enough to send is the best advert the app has, and a paywall in front of it
+          wastes that.
         */}
         <button
           onClick={() => {
             void shareText(
               echo.title,
               `${echo.title}, ${echo.point.place}. ${echo.teaser ?? echo.summary}`,
+              echoLink(echo.id),
             );
           }}
         >
