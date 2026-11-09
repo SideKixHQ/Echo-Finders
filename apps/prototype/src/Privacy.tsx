@@ -20,6 +20,7 @@ import {
 } from "@echofinders/core";
 import { SENTRY_DSN, errorReportsAllowed, setErrorReportsAllowed } from "./error-report";
 import { Feedback } from "./Feedback";
+import { Suggest } from "./Suggest";
 import { feedbackAvailable } from "./feedback";
 
 interface Props {
@@ -267,7 +268,10 @@ export function Privacy({
         has somewhere to send it (`feedback.ts`).
       */}
       {feedbackAvailable(SENTRY_DSN) && (
-        <Feedback dsn={SENTRY_DSN} release={__BUILD_COMMIT__} />
+        <>
+          <Suggest dsn={SENTRY_DSN} release={__BUILD_COMMIT__} />
+          <Feedback dsn={SENTRY_DSN} release={__BUILD_COMMIT__} />
+        </>
       )}
 
       {/*
