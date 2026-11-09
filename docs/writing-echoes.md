@@ -1,10 +1,13 @@
 # Writing an echo
 
 Someone stood at Bowling Green, heard the king-statue echo, and wanted the next one. That
-is the bar, and this document exists so the twentieth echo clears it as reliably as the
-first — because the failure mode is not a bad echo, it is twenty adequate ones.
+is the bar, and this document exists so the five hundredth echo clears it as reliably as the
+first, because the failure mode is not a bad echo, it is twenty adequate ones.
 
-Everything here is derived from what made that one work.
+**This is an audio experience.** The listener is standing somewhere real, with their eyes
+free and a voice in their ear. What we are trying to give them, in James's words (2026-11-09):
+they hear it and are wowed, they get chills, and they feel connected. Everything below
+serves that.
 
 ---
 
@@ -18,64 +21,95 @@ does not go in, however well sourced.
 
 ---
 
-## What an echo is not
+## What the research says
 
-**It is not an encyclopedia entry read aloud.** This is the failure mode, and it is what an
-AI draft produces by default:
+Revised 2026-11-09 from the audio-storytelling and listening research, so the format rests
+on more than the one echo that worked.
 
-> Bowling Green is the oldest public park in New York City, established in 1733. It is
-> located at the southern end of Broadway. The park features a fence erected in 1771, which
-> is designated a New York City landmark.
-
-Every word is true. Nobody has ever wanted to hear a second one of those.
+- **Action, then reflection.** Ira Glass's two building blocks of a radio story: the
+  anecdote, a sequence of things happening that raises a question from the first line, and
+  the moment of reflection that says why it matters. Alternate them. An echo with no
+  anecdote is a lecture; one with no reflection is trivia.
+- **Curiosity is a gap.** Loewenstein's information-gap account: curiosity is the feeling
+  of noticing a hole in what you know that looks closable. Telling the answer first
+  "quells curiosity before it can get going". Open the gap early, close it late.
+- **Transportation needs images and a person.** Narrative transportation (Green and Brock)
+  is absorption through vivid imagery, attention and feeling, and it is strongest when the
+  listener experiences events through someone's eyes. A building cannot be identified
+  with. A person standing in it can.
+- **Guided looking makes it stick.** Audio guides that direct sighted visitors to look at
+  specific details make the work more memorable (University of Westminster, audio
+  description for sighted audiences). Giansante: the best thing an audio tour can do is
+  help someone look more closely.
+- **Chills come at closure and surprise.** In recorded poetry, listeners' chills cluster
+  at the ends of lines and stanzas and at the close (Wassiliwizky and colleagues, Max
+  Planck Institute for Empirical Aesthetics). Frisson in music follows the unexpected: a
+  sudden change, an entrance. Spoken word can do the same thing music does, and it does it
+  at the end of a phrase and at a turn.
+- **Ninety seconds, few numbers.** Tour practice keeps a stop under two minutes, about
+  ninety seconds of content, and finds dates and figures lose listeners. Stories carry it.
+- **The ear is not the eye.** Short sentences, one thought each. Repetition helps the ear
+  hold on. Radio writing that is flat on the page can be alive out loud, and the reverse.
 
 ---
 
-## The six things that make one work
+## The shape: six beats
 
-### 1. Open with something they can do
-The first line of the Bowling Green echo is *"the fence around it has been here since
-1771"*, and the second is *"look at the tops of the posts"*. Within ten seconds the listener
-is looking at a real object.
+Every echo of ninety seconds follows this shape. Shorter ones compress it; longer ones
+repeat beats three and four.
 
-A listener who is *looking at something* is inside the story. One who is being told facts is
-listening to a podcast, and a podcast does not need them to be standing there.
+**1. The look (first ten seconds).** Point at something real that is in front of them now.
+Present tense, second person. *"Look at the tops of the fence posts."* *"Find the little
+brick building on the corner."* Not a date, not a name, not a summary.
 
-### 2. Withhold
-Do not front-load the conclusion. *"Look at the tops of the posts"* comes a full thirty
-seconds before the explanation of what is missing from them. That gap is the reason to keep
-listening.
+**2. The gap (by fifteen seconds).** Make what they are looking at strange. Something is
+missing, wrong, too big, too small, out of place. Say it, and do not explain it yet.
+*"Every one of them has been snapped off."*
 
-The instinct to summarise first is a newspaper instinct. This is closer to a joke: setup,
-then payoff.
+**3. The person (the middle).** Go back to one named human on one particular day. Put the
+listener beside them. What they could see, what was at stake, what they did. If the record
+holds their own words, use them: a real voice from the past, read out where it was said,
+is the strongest thing we have. *"The governor told her, say no more. The court knows
+wherefore, and is satisfied."*
 
-### 3. Anchor it to something present *now*
-The strongest detail in that echo is not the statue being torn down in 1776. It is that the
-crowns are **still missing from the fence they are standing next to**, 250 years later.
+**4. The turn.** The surprise that closes the gap, or flips it. The thing nobody expected,
+the cost someone paid, the irony the years added. This is the payoff the listener has been
+waiting for since beat two.
 
-Every echo needs at least one thing the listener can verify with their own eyes. Without it,
-they might as well be at home.
+**5. Back to now.** Return to the object in front of them. It is still there, still
+missing, still bearing the mark. This is where the past and the listener touch, and where
+the feeling of connection comes from: the same stone, the same corner, two hundred years
+apart.
 
-### 4. One idea, not a survey
-Castle Clinton has been a fort, a theatre, a beer garden, an immigration depot, an aquarium
-and a monument. The echo is about **eight million people walking through a door**. The rest
-is one sentence at the end.
+**6. The landing.** One short sentence, on its own line, after a breath. It reframes,
+undercuts or sits still. It never summarises. This is the line that gives chills, so it
+has to be earned by everything before it, and it has to be short enough to land in the
+ear. *"Two hundred years later, saying more was the whole business."*
 
-Two ideas is one too many. If the second one is good, it is a second echo.
+Beats three and four are the heart. Beats one, two and five are what make it an echo
+rather than a podcast: without them, the listener might as well be at home.
 
-### 5. Land it
-*"Which is a fairly direct way of making a point."*
-*"If your connection dies tonight, this is the good outcome."*
+---
 
-The last line should do something — reframe, undercut, or sit still. It must not summarise.
-A summary tells the listener the story is over; a landing tells them it meant something.
+## What makes it hit
 
-### 6. Specifics, not scale
-"Three and a half tonnes of bronze, left outside the Stock Exchange in the middle of the
-night" beats "a famous sculpture". "Twenty-two feet of snow" beats "severe weather".
-
-Concrete beats impressive. A number only earns its place if it is surprising: *eight
-million* does, *established in 1733* does not.
+- **One person beats a crowd.** "Fifteen thousand people" is a statistic. "A woman named
+  Anne" is a story. Use the crowd once, as scale, after the listener has met someone in it.
+- **Their words, not ours.** A sourced quotation from the time, read at the spot, is worth
+  three sentences of narration. Keep it short and keep it exact.
+- **The cost.** Someone gave something up, risked something, lost something. Without a
+  cost there is no tension, and without tension there is no chill.
+- **Specifics, not scale.** "Three and a half tonnes of bronze, left outside the Stock
+  Exchange in the middle of the night" beats "a famous sculpture". A number earns its
+  place only if it surprises: *eight million* does, *established in 1733* does not.
+- **Silence is a tool.** A paragraph break is a breath for the narrator. Put one before
+  the turn and one before the landing. The pause is where the listener catches up and the
+  feeling arrives.
+- **Restraint over drama.** No "little did they know", no "incredibly", no "shocking". A
+  dramatic voice doing the work is a sign the facts are not. Startling facts, told plainly,
+  are more dramatic than any adjective.
+- **Mystery, honestly.** For a legend, the gap is whether it happened. Say plainly that it
+  is a legend, and let the not knowing be the chill.
 
 ---
 
@@ -83,90 +117,115 @@ million* does, *established in 1733* does not.
 
 | | Instead |
 |---|---|
-| Opening with a date | Open with something to look at. The date can come later, if it earns it. |
+| Opening with a date or a name | Open with something to look at |
+| "X is a Y built in Z" | That is a placard. Start with what is strange about it |
 | Listing what a place has been | Pick one, tell it properly |
-| "Little did they know" | Trust the material |
-| A dramatic voice doing the work | The facts should be startling on their own |
+| Explaining what the listener is looking at ("you are looking at art") | Let them look |
+| Instructions about access, parking, private property | Not in the story; in the app |
 | Explaining the significance | Show the thing; significance is the listener's job |
 | Three names in the first sentence | One, if any |
-| "Fun fact:" | If it needs announcing, it isn't one |
-| Ending on a summary | End on a turn |
+| "Little did they know", "fun fact", "incredibly" | Trust the material |
+| Ending on a summary or a lesson ("this reminds us") | End on a turn, an image, or silence |
+| An ending about "history", "memory" or "community" | End on the thing, the person, the irony |
 
 ---
 
 ## Shape by length
 
-**30 seconds — look below.** One fact, one image, out. No structure needed. *"Nobody
-commissioned this."*
+**30 seconds: look below.** One fact, one image, out. Beats one, two and six.
 
-**90 seconds — short.** Setup, withhold, payoff, land. The Bowling Green shape, and the
-workhorse of a walking tour.
+**90 seconds: short.** All six beats. The workhorse of a walking tour.
 
-**3 minutes — feature.** Room for two beats before the payoff, or one character. Needs a
-reason to be longer than 90 seconds, and "there was more information" is not one.
+**3 minutes: feature.** Beats three and four twice, or one person followed further. Needs
+a reason to be longer than ninety seconds, and "there was more information" is not one.
 
-**10 minutes — deep.** Only for a story that is genuinely a story: people, change, an
+**10 minutes: deep.** Only for a story that is genuinely a story: people, change, an
 ending. Most subjects cannot sustain this and should not try.
 
 ---
 
 ## Writing for the ear
 
-It will be read aloud by a synthetic voice. That changes things.
+It is read aloud by a synthetic voice. That changes things.
 
-- **Short sentences.** A clause a reader can re-scan, a listener cannot.
-- **Paragraph breaks are breaths.** Use them where a narrator should pause.
-- **Numbers as words.** "Eight million", not "8,000,000". "The ninth of July", not "July 9".
-- **No parentheses, no semicolons.** They have no sound.
+- **Short sentences.** A clause a reader can re-scan, a listener cannot. One thought each.
+  A median of about twelve words, and nothing over thirty.
+- **Paragraph breaks are breaths.** The narrator pauses at each one. Place them before the
+  turn and before the landing.
+- **Numbers as words.** "Eight million", not "8,000,000". "The ninth of July, seventeen
+  seventy six", not "July 9, 1776". The voice reads digits flatly.
+- **No parentheses, no semicolons, no dashes.** They have no sound, and dashes are not in
+  our house style anywhere a listener or reader meets them.
 - **Say the hard names out loud** before writing them down, then put a note in
   `pronunciations`. Duane, Zenger, Di Modica.
-- **Read the draft aloud yourself.** Every flat line is audible immediately and invisible on
-  the page.
+- **Read the draft aloud.** Every flat line is audible immediately and invisible on the
+  page. If a line needs the eye to make sense, rewrite it.
 
 ---
 
 ## Truth, in practice
 
-The editorial gates are in `docs/protection-policy.md` and enforced in CI. Three points
-that bear on the *writing* rather than the sourcing:
+The editorial gates are in `docs/protection-policy.md` and enforced in CI. A stronger
+story is never a licence to stretch a fact:
 
-- **Hedge in the script, not in the metadata.** If the record is unclear, the narration says
-  so: "by most accounts", "the story goes". A `certainty` field the listener cannot hear is
-  not a disclosure.
-- **A legend is more fun when labelled.** "There is no record of this, and people have been
-  telling it since the 1890s" is a better line than pretending.
+- **Every new line traces to a claim.** Drama comes from the order things are told in and
+  from what is chosen, never from invented detail. No weather, feelings, thoughts or
+  sounds the record does not give us. What the listener can see today is fair to describe.
+- **Quotations are exact** and in a source, or they are not quotations.
+- **Hedge in the script, not in the metadata.** If the record is unclear, the narration
+  says so: "by most accounts", "the story goes". A `certainty` field the listener cannot
+  hear is not a disclosure.
+- **A legend is more fun when labelled.** "There is no record of this, and people have
+  been telling it since the 1890s" is a better line than pretending.
 - **Never smooth an inconvenient fact.** If the interesting version is not the true one,
   write the true one, and find the interest elsewhere. It is always there.
+- **True crime** follows `docs/14-true-crime.md` on top of all of this. The person at the
+  centre is a victim before they are a plot.
 
 ---
 
 ## A worked example
 
-Subject: the African Burial Ground.
+Subject: the Old Corner Bookstore, Boston (`boston-say-no-more`).
 
-**Bad open.** *"The African Burial Ground National Monument is a national monument in Lower
-Manhattan, designated in 2006."* Accurate. Inert.
+1. **The look.** *"Find the little brick building on the corner with the steep, two sloped
+   roof."*
+2. **The gap.** *"Before it was built, this ground belonged to a woman named Anne
+   Hutchinson."* Why does that matter?
+3. **The person.** She held meetings here, was tried and banished, and asked why.
+4. **The turn.** *"The governor told her, say no more."* Her own trial, in his words.
+5. **Back to now.** The building in front of you became a bookshop, and the writers came
+   here with their manuscripts.
+6. **The landing.** *"Two hundred years later, saying more was the whole business."*
 
-**The open we used.** *"In 1991 the federal government began digging foundations for an
-office tower at Broadway and Duane, and about seven metres down the crews found bone."*
-
-Same facts. It begins with an event, gives the listener a depth they can picture, and stops
-on a word that makes them wait.
-
-Then: withhold (what *was* it?), anchor to now (you are standing at the edge of the old
-town boundary), one idea (fifteen thousand people, built over and forgotten), land
-(*"You are standing at the edge of town."*)
+The bad version of the same echo: *"The Old Corner Bookstore, built in 1718, is one of the
+oldest commercial buildings in Boston. It housed the publisher Ticknor and Fields."* Every
+word true, and nobody walks twenty steps for the next one.
 
 ---
 
 ## Before it ships
 
-1. Read it aloud. Whole thing, out loud.
-2. Is there something to look at in the first fifteen seconds?
-3. Is there one idea, or two?
-4. Does the last line turn, or does it summarise?
-5. Would a stranger walk another twenty steps for the next one?
+1. Read it aloud. The whole thing, out loud.
+2. Is there something to look at in the first ten seconds?
+3. Is there a question by fifteen seconds that the listener wants answered?
+4. Is there one named person, and a moment you can picture?
+5. Does it come back to what is in front of them before it ends?
+6. Is the last line short, on its own, and a turn rather than a summary?
+7. Would a stranger walk another twenty steps for the next one?
 
-If five is a no, it does not ship. There is no quota, and a thin library of strong echoes is
-worth more than a full one of adequate ones — a listener who hears two dull echoes in a row
-stops trusting the app and never hears the third.
+If seven is a no, it does not ship. There is no quota, and a thin library of strong echoes
+is worth more than a full one of adequate ones. A listener who hears two dull echoes in a
+row stops trusting the app and never hears the third.
+
+## Sources for this guide
+
+- Ira Glass on the building blocks of a radio story (anecdote and reflection), 2006.
+- George Loewenstein, "The Psychology of Curiosity: A Review and Reinterpretation", 1994.
+- Melanie Green and Timothy Brock, narrative transportation, *JPSP* 2000.
+- Wassiliwizky, Koelsch, Wagner, Jacobsen and Menninghaus, "The emotional power of
+  poetry", *Social Cognitive and Affective Neuroscience*, 2017.
+- Lou Giansante, "Writing Verbal Description Audio Tours", Art Beyond Sight.
+- University of Westminster, "Inclusive museum audio guides: guided looking through audio
+  description enhances memorability of artworks for sighted audiences".
+- Poynter, "Writing for the Ear"; Rob Rosenthal, *HowSound*, on opening from the middle.

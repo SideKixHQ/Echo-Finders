@@ -9,7 +9,7 @@ at: { lat: 32.07893, lng: -81.09500 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 93
+durationS: 94
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -17,21 +17,28 @@ quality: 0.75
 tags: [savannah, savannah-core, revolution, squares, museums]
 teaser: "He walked in alone, put a hand on the governor's shoulder, and the room emptied."
 script: |
-  The grand house on the west side of Telfair Square is the Telfair Academy, designed by the English architect William Jay about two centuries ago. Mary Telfair left it in her will to become an academy of arts and sciences.
+  Look at the grand house on the west side of Telfair Square.
 
-  But the academy's own account of this ground goes back further. This, it says, was the site of Government House, home of Georgia's royal governor.
+  Before it was built, this ground held another house. Government House, home of Georgia's royal governor. And one evening in January, seventeen seventy six, a young man walked into it alone, to arrest him.
 
-  In January seventeen seventy-six, British warships were lying off Tybee. On the eighteenth, Savannah's Council of Safety voted to arrest the governor, Sir James Wright.
+  British warships had arrived off the coast. On the eighteenth, Savannah's Council of Safety voted to take the governor, Sir James Wright.
 
-  A major named Joseph Habersham, twenty-four years old, volunteered. That evening the governor was meeting his council in his house. Habersham walked past the sentries at the door, alone. He went into the room, up to the head of the table, laid his hand on the governor's shoulder, and said, Sir James, you are my prisoner.
+  A major named Joseph Habersham volunteered. He was twenty four.
 
-  According to the city's history of eighteen sixty-nine, the councillors assumed he had a large force close behind him. They fled through the doors and the windows.
+  That evening the governor was meeting his council, here, in his house. Habersham passed the sentries at the door. He walked up to the head of the table, laid his hand on the governor's shoulder, and said,
 
-  He did not have a large force.
+  Sir James, you are my prisoner.
 
-  Wright gave his word that he would not leave town, and was kept in his own house under guard.
+  He spoke so firmly that the councillors supposed he had a large force nearby. They fled. Through the doors, and through the windows.
 
-  He kept his word for twenty-four days. Then he slipped past the sentries, ran to Bonaventure, and was rowed out to a British ship.
+  He had come alone.
+
+  The governor gave his word that he would not leave town, and was kept under guard in his own house. He kept his word for twenty four days. Then he slipped past the sentries and was rowed out in a small boat to a British ship.
+
+  The governor's house is gone. This one stands on its ground.
+
+  Somewhere here, the King's council went out of the windows, because one young man walked in as if he were not alone.
+
 editorial: approved
 factCheck: corroborated
 pronunciations:
@@ -40,48 +47,84 @@ pronunciations:
   - written: Telfair
     say: TEL-fair
 claims:
-  - says: "The grand house on the west side of Telfair Square is the Telfair Academy, designed by the English architect William Jay about two centuries ago."
-    source: 2
-    quote: "mansion was erected in 1818, the architect being William Jay, who designed a number of Savannah's most famous buildings."
-  - says: "Mary Telfair left it in her will to become an academy of arts and sciences."
-    source: 2
-    quote: "Incorporated, founded under the will of Miss Mary Telfair in 1875, is housed in her greatly enlarged family"
-  - says: "This, it says, was the site of Government House, home of Georgia's royal governor."
+  - says: "Before it was built, this ground held another house."
     source: 2
     quote: "The site of the building is that of the former Colonial Government House, in which the Royal Governor"
-  - says: "In January seventeen seventy-six, British warships were lying off Tybee."
-    source: 1
-    quote: "On the 12th of January two men-of-war and a transport laden with troops, under command of Majors Maitland and Grant, arrived"
-  - says: "On the eighteenth, Savannah's Council of Safety voted to arrest the governor, Sir James Wright."
+  - says: "Government House, home of Georgia's royal governor."
+    source: 2
+    quote: "The site of the building is that of the former Colonial Government House, in which the Royal Governor"
+  - says: "And one evening in January, seventeen seventy six, a young man walked into it alone, to arrest him."
     source: 1
     quote: "A meeting of the Council of Safety was called on the 18th, when it was resolved ‘that the persons of his Excellency Sir James Wright, Bart.,"
-  - says: "A major named Joseph Habersham, twenty-four years old, volunteered."
-    source: 1
-    quote: "Major Joseph Habersham, who was then only twenty-four years of age, volunteered to secure the Governor."
-  - says: "That evening the governor was meeting his council in his house."
-    source: 1
-    quote: "That evening while the Governor was in consultation with the Council at his house,"
-  - says: "Habersham walked past the sentries at the door, alone."
+  - says: "And one evening in January, seventeen seventy six, a young man walked into it alone, to arrest him."
     source: 1
     quote: "Haber- sham proceeded thither alone, passed the sentinels at the door,"
-  - says: "He went into the room, up to the head of the table, laid his hand on the governor's shoulder, and said, Sir James, you are my prisoner."
+  - says: "British warships had arrived off the coast."
+    source: 1
+    quote: "On the 12th of January two men-of-war and a transport laden with troops, under command of Majors Maitland and Grant, arrived"
+  - says: "On the eighteenth, Savannah's Council of Safety voted to take the governor, Sir James Wright."
+    source: 1
+    quote: "A meeting of the Council of Safety was called on the 18th, when it was resolved ‘that the persons of his Excellency Sir James Wright, Bart.,"
+  - says: "A major named Joseph Habersham volunteered."
+    source: 1
+    quote: "Major Joseph Habersham, who was then only twenty-four years of age, volunteered to secure the Governor."
+  - says: "He was twenty four."
+    source: 1
+    quote: "Major Joseph Habersham, who was then only twenty-four years of age, volunteered to secure the Governor."
+  - says: "That evening the governor was meeting his council, here, in his house."
+    source: 1
+    quote: "That evening while the Governor was in consultation with the Council at his house,"
+  - says: "Habersham passed the sentries at the door."
+    source: 1
+    quote: "Haber- sham proceeded thither alone, passed the sentinels at the door,"
+  - says: "He walked up to the head of the table, laid his hand on the governor's shoulder, and said,"
     source: 1
     quote: "walked boldly up to the head of the table, and laying his hand upon the Govern- or’s shoulder said: ‘‘Sir James, you are my prisoner.”"
-  - says: "According to the city's history of eighteen sixty-nine, the councillors assumed he had a large force close behind him."
+  - says: "Sir James, you are my prisoner."
+    source: 1
+    quote: "walked boldly up to the head of the table, and laying his hand upon the Govern- or’s shoulder said: ‘‘Sir James, you are my prisoner.”"
+  - says: "He spoke so firmly that the councillors supposed he had a large force nearby."
     source: 1
     quote: "supposing from Habersham’s firm manner he had a large force near by,"
-  - says: "They fled through the doors and the windows."
+  - says: "They fled."
     source: 1
     quote: "fled pre- cipitately through the doors and windows."
-  - says: "Wright gave his word that he would not leave town, and was kept in his own house under guard."
+  - says: "Through the doors, and through the windows."
+    source: 1
+    quote: "fled pre- cipitately through the doors and windows."
+  - says: "He had come alone."
+    source: 1
+    quote: "Haber- sham proceeded thither alone, passed the sentinels at the door,"
+  - says: "The governor gave his word that he would not leave town, and was kept under guard in his own house."
     source: 1
     quote: "The Governor gave his solemn parole that he would not go out of town"
-  - says: "He kept his word for twenty-four days."
+  - says: "He kept his word for twenty four days."
     source: 1
     quote: "Here he remained until the 11th of February,"
-  - says: "Then he slipped past the sentries, ran to Bonaventure, and was rowed out to a British ship."
+  - says: "Then he slipped past the sentries and was rowed out in a small boat to a British ship."
     source: 1
     quote: "he eluded the senti- nels and ran to Bonaventure, escaping from thence in a small boat, furnished by John Mullryne, to the British ship Scarborough,"
+  - says: "The governor's house is gone."
+    source: 2
+    quote: "mansion was erected in 1818, the architect being William Jay, who designed a number of Savannah's most famous buildings."
+  - says: "The governor's house is gone."
+    source: 2
+    quote: "The site of the building is that of the former Colonial Government House, in which the Royal Governor"
+  - says: "This one stands on its ground."
+    source: 2
+    quote: "mansion was erected in 1818, the architect being William Jay, who designed a number of Savannah's most famous buildings."
+  - says: "This one stands on its ground."
+    source: 2
+    quote: "The site of the building is that of the former Colonial Government House, in which the Royal Governor"
+  - says: "Somewhere here, the King's council went out of the windows, because one young man walked in as if he were not alone."
+    source: 1
+    quote: "supposing from Habersham’s firm manner he had a large force near by,"
+  - says: "Somewhere here, the King's council went out of the windows, because one young man walked in as if he were not alone."
+    source: 1
+    quote: "fled pre- cipitately through the doors and windows."
+  - says: "Somewhere here, the King's council went out of the windows, because one young man walked in as if he were not alone."
+    source: 1
+    quote: "Haber- sham proceeded thither alone, passed the sentinels at the door,"
 sources:
   - title: "Historical record of the city of Savannah (Lee and Agnew, 1869): Gallant capture of Governor Wright by Major Joseph Habersham"
     publisher: "Library of Congress"
@@ -96,56 +139,71 @@ sources:
 renders:
   - voiceId: IMlxLW3qgn0MWgfz7Vnh
     audioKey: audio/savannah-you-are-my-prisoner/IMlxLW3qgn0MWgfz7Vnh.mp3
-    durationS: 93
-    audioBytes: 1489231
+    durationS: 93.6
+    audioBytes: 1498426
     transcript:
-      totalS: 93
+      totalS: 93.6
       lines:
-        - text: The grand house on the west side of Telfair Square is the Telfair Academy, designed by the English architect William Jay about two centuries ago.
+        - text: Look at the grand house on the west side of Telfair Square.
           atS: 0
-          durationS: 9.24
-        - text: Mary Telfair left it in her will to become an academy of arts and sciences.
-          atS: 10.36
-          durationS: 5.03
-        - text: But the academy's own account of this ground goes back further.
-          atS: 16.08
-          durationS: 3.6
-        - text: This, it says, was the site of Government House, home of Georgia's royal governor.
-          atS: 20.28
-          durationS: 5.28
-        - text: In January seventeen seventy-six, British warships were lying off Tybee.
-          atS: 26.26
-          durationS: 5.06
-        - text: On the eighteenth, Savannah's Council of Safety voted to arrest the governor, Sir James Wright.
-          atS: 31.93
-          durationS: 6.25
-        - text: A major named Joseph Habersham, twenty-four years old, volunteered.
-          atS: 38.87
-          durationS: 5.48
-        - text: That evening the governor was meeting his council in his house.
-          atS: 45.16
-          durationS: 3.69
-        - text: Habersham walked past the sentries at the door, alone.
-          atS: 49.46
-          durationS: 3.6
-        - text: He went into the room, up to the head of the table, laid his hand on the governor's shoulder, and said, Sir James, you are my prisoner.
-          atS: 54.17
-          durationS: 9.2
-        - text: According to the city's history of eighteen sixty-nine, the councillors assumed he had a large force close behind him.
-          atS: 64.67
-          durationS: 7.09
-        - text: They fled through the doors and the windows.
-          atS: 72.36
-          durationS: 2.34
-        - text: He did not have a large force.
-          atS: 75.22
-          durationS: 1.87
-        - text: Wright gave his word that he would not leave town, and was kept in his own house under guard.
-          atS: 77.79
-          durationS: 5.33
-        - text: He kept his word for twenty-four days.
-          atS: 83.81
-          durationS: 2.62
-        - text: Then he slipped past the sentries, ran to Bonaventure, and was rowed out to a British ship.
-          atS: 87.55
-          durationS: 5.47
+          durationS: 3.66
+        - text: Before it was built, this ground held another house.
+          atS: 4.47
+          durationS: 3.48
+        - text: Government House, home of Georgia's royal governor.
+          atS: 8.65
+          durationS: 3.55
+        - text: And one evening in January, seventeen seventy six, a young man walked into it alone, to arrest him.
+          atS: 13.02
+          durationS: 7.43
+        - text: British warships had arrived off the coast.
+          atS: 21.26
+          durationS: 2.69
+        - text: On the eighteenth, Savannah's Council of Safety voted to take the governor, Sir James Wright.
+          atS: 24.65
+          durationS: 5.94
+        - text: A major named Joseph Habersham volunteered.
+          atS: 31.29
+          durationS: 3.73
+        - text: He was twenty four.
+          atS: 35.62
+          durationS: 1.44
+        - text: That evening the governor was meeting his council, here, in his house.
+          atS: 38.01
+          durationS: 4.26
+        - text: Habersham passed the sentries at the door.
+          atS: 43.23
+          durationS: 2.67
+        - text: He walked up to the head of the table, laid his hand on the governor's shoulder, and said, Sir James, you are my prisoner.
+          atS: 46.34
+          durationS: 7.78
+        - text: He spoke so firmly that the councillors supposed he had a large force nearby.
+          atS: 54.81
+          durationS: 4.92
+        - text: They fled.
+          atS: 60.24
+          durationS: 0.79
+        - text: Through the doors, and through the windows.
+          atS: 61.55
+          durationS: 2.61
+        - text: He had come alone.
+          atS: 64.6
+          durationS: 1.28
+        - text: The governor gave his word that he would not leave town, and was kept under guard in his own house.
+          atS: 66.48
+          durationS: 5.92
+        - text: He kept his word for twenty four days.
+          atS: 73.21
+          durationS: 2.45
+        - text: Then he slipped past the sentries and was rowed out in a small boat to a British ship.
+          atS: 76.17
+          durationS: 5.05
+        - text: The governor's house is gone.
+          atS: 81.83
+          durationS: 1.82
+        - text: This one stands on its ground.
+          atS: 84.25
+          durationS: 2.07
+        - text: Somewhere here, the King's council went out of the windows, because one young man walked in as if he were not alone.
+          atS: 87.02
+          durationS: 6.56
