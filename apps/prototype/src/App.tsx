@@ -2721,11 +2721,12 @@ export function App() {
             {...(state.position && cityAt(state.position.at)
               ? { cityPassMinor: cityPassPriceMinor(entitlement, cityAt(state.position.at)!.id, Date.now()) }
               : {})}
-            onBuy={(plan) => {
+            cityPassMinorFor={(id) => cityPassPriceMinor(entitlement, id, Date.now())}
+            onBuy={(plan, cityId) => {
               // Stripe when payments are on; otherwise recorded on this device, nothing charged.
-              const city = state.position ? cityAt(state.position.at) : null;
-              buy(plan, city?.id, () => {
-                setEntitlement(boughtHere(plan, city?.id));
+              // The city is the one the paywall chose: here, or one picked for a trip ahead.
+              buy(plan, cityId, () => {
+                setEntitlement(boughtHere(plan, cityId));
                 setOptionsOpen(false);
               });
             }}
@@ -2737,15 +2738,15 @@ export function App() {
             echo={paywallFor}
             city={cityAt(paywallFor.point.at)}
             heardCount={heardIds.length}
-            onBuy={(plan) => {
+            cityPassMinorFor={(id) => cityPassPriceMinor(entitlement, id, Date.now())}
+            onBuy={(plan, cityId) => {
               /*
                 Stripe Checkout, when payments are on (`payments.ts`): the page leaves for
                 Stripe and comes back with what was bought. Until the keys are in Vercel it
                 records the purchase on this device, immediately, as it always has.
               */
-              const city = cityAt(paywallFor.point.at);
-              buy(plan, city?.id, () => {
-                setEntitlement(boughtHere(plan, city?.id));
+              buy(plan, cityId, () => {
+                setEntitlement(boughtHere(plan, cityId));
                 setPaywallFor(null);
                 setPlayAfterBuying(paywallFor);
               });

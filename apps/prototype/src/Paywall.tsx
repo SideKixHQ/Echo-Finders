@@ -30,7 +30,7 @@
  */
 
 import { useState } from "react";
-import { FREE_ECHO_LIMIT, PLANS, type City, type Echo } from "@echofinders/core";
+import { CITIES, FREE_ECHO_LIMIT, PLANS, type City, type Echo } from "@echofinders/core";
 
 export type Plan = "week" | "city" | "allAccess";
 
@@ -54,7 +54,12 @@ export interface PaywallProps {
    * Then the Week Pass is not offered again; the upgrade is.
    */
   readonly cityPassMinor?: number;
-  readonly onBuy: (plan: Plan) => void;
+  /**
+   * The same, for a city chosen under "Buying for another city?". Absent: the list price.
+   */
+  readonly cityPassMinorFor?: (cityId: string) => number;
+  /** The plan, and for a City or Week Pass the city it is for. */
+  readonly onBuy: (plan: Plan, cityId?: string) => void;
   readonly onClose: () => void;
 }
 
@@ -69,16 +74,29 @@ export function Paywall({
   city: here,
   heardCount,
   allAccessRunning = false,
-  cityPassMinor = PLANS.city.amountMinor,
+  cityPassMinor: herePassMinor = PLANS.city.amountMinor,
+  cityPassMinorFor,
   onBuy,
   onClose,
 }: PaywallProps) {
-  const city = allAccessRunning ? null : here;
+  /*
+    Buying for another city (James, 2026-11-09, option 3 of three: "buy for another city
+    link"). City and Week Passes are still offered first where you are standing; the link
+    under the plans is for the trip being planned at home, or a pass bought as a gift. A
+    tester away from every city could only ever see All-Access, which is how it was found.
+  */
+  const [picking, setPicking] = useState(false);
+  const [elsewhere, setElsewhere] = useState<City | null>(null);
+  const others = CITIES.filter((c) => c.id !== here?.id);
+  const city = allAccessRunning ? null : (elsewhere ?? here);
+  const cityPassMinor = elsewhere
+    ? (cityPassMinorFor?.(elsewhere.id) ?? PLANS.city.amountMinor)
+    : herePassMinor;
   const weekRunning = cityPassMinor < PLANS.city.amountMinor;
   const cityPrice = weekRunning ? `$${(cityPassMinor / 100).toFixed(2)}` : PLANS.city.price;
   // The City Pass first when there is one, between the cheaper way in and the better deal
   // from a few cities up; the Week Pass is one tap away for the weekend visitor.
-  const [plan, setPlan] = useState<Plan>(city ? "city" : "allAccess");
+  const [plan, setPlan] = useState<Plan>(here && !allAccessRunning ? "city" : "allAccess");
   const chosen: Plan = city && (plan === "city" || (plan === "week" && !weekRunning)) ? plan : "allAccess";
   const wins = COUNT_WORDS[CITIES_WHERE_ALL_ACCESS_WINS] ?? String(CITIES_WHERE_ALL_ACCESS_WINS);
 
@@ -126,6 +144,25 @@ export function Paywall({
           and one description under the one you are looking at is the same information, and
           the screen still fits without scrolling.
         */}
+        {picking ? (
+          <fieldset className="paywall-plans paywall-cities">
+            <legend className="paywall-cities-head">Which city is the pass for?</legend>
+            {others.map((c) => (
+              <button
+                key={c.id}
+                type="button"
+                className="paywall-plan paywall-city"
+                onClick={() => {
+                  setElsewhere(c);
+                  setPlan("city");
+                  setPicking(false);
+                }}
+              >
+                <span className="paywall-plan-name">{c.name}</span>
+              </button>
+            ))}
+          </fieldset>
+        ) : (
         <fieldset className="paywall-plans">
           <legend className="sr-only">Choose a plan</legend>
           {/*
@@ -200,6 +237,7 @@ export function Paywall({
             )}
           </label>
         </fieldset>
+        )}
 
         <p className="paywall-sum">
           {allAccessRunning
@@ -208,10 +246,27 @@ export function Paywall({
               ? `Visiting ${wins} cities or more this year? All-Access costs less.`
               : echo
                 ? "City Passes cover a city. This echo is on the road, so it is part of All-Access."
-                : "City Passes are offered in the city they cover. Away from one, All-Access opens everything."}
+                : "City Passes cover one city; All-Access opens everything."}
+          {!allAccessRunning && others.length > 0 && (
+            <>
+              {" "}
+              <button
+                type="button"
+                className="paywall-other"
+                aria-expanded={picking}
+                onClick={() => setPicking((open) => !open)}
+              >
+                {picking ? "Back to the plans" : elsewhere ? "A different city?" : "Buying for another city?"}
+              </button>
+            </>
+          )}
         </p>
 
-        <button className="paywall-buy" onClick={() => onBuy(chosen)}>
+        <button
+          className="paywall-buy"
+          disabled={picking}
+          onClick={() => onBuy(chosen, chosen === "allAccess" ? undefined : city?.id)}
+        >
           {chosen === "week"
             ? `Get the ${PLANS.week.name} · ${PLANS.week.price}`
             : chosen === "city"
