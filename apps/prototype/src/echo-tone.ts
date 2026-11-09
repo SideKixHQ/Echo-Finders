@@ -58,12 +58,25 @@ export class EchoTone {
     return this.ctx;
   }
 
+  /**
+   * Muted for the sonar switch, and while an echo is playing (James, 2026-11-09: "when im
+   * listening to a story i keep hearing other beeps and echos from other stories. it is
+   * distracting"). Unmuting picks the last contact back up, because the engine only sends a
+   * new cue when the distance changes, and a listener standing still after a story would
+   * otherwise hear nothing until they moved.
+   */
   setMuted(muted: boolean) {
+    const was = this.muted;
     this.muted = muted;
     if (muted) this.stop();
+    else if (was && this.last) this.play(this.last);
   }
 
+  /** The contact the engine last asked for, kept so unmuting can resume it. */
+  private last: ToneCue | null = null;
+
   play(cue: ToneCue) {
+    this.last = cue;
     this.stop();
     // Muted is not "play silently": without this the interval spun on regardless, firing
     // into a context that refuses to exist, for as long as the cue held.
@@ -83,6 +96,14 @@ export class EchoTone {
   stop() {
     if (this.timer) clearInterval(this.timer);
     this.timer = null;
+    // A buzz pattern already handed to the phone would otherwise run out over a story.
+    if (typeof navigator !== "undefined" && typeof navigator.vibrate === "function") {
+      try {
+        navigator.vibrate(0);
+      } catch {
+        /* nothing to cancel */
+      }
+    }
     for (const osc of this.voices) {
       // A node that already ended throws on a second stop, and one bad cue must not take
       // the rest of the cleanup down with it.
@@ -104,10 +125,37 @@ export class EchoTone {
     await ctx?.close().catch(() => undefined);
   }
 
+  /**
+   * The same contact as a buzz, in time with the ping (James, 2026-11-09: "the phone should
+   * vibrate more and more as you get closer in time with the ping sound").
+   *
+   * One pulse for the ping and one for each return, at the returns' own spacing, so the
+   * gap you feel is the gap you hear: the distance. Pulses lengthen as the gap closes, so
+   * nearer is stronger as well as quicker. Android only: mobile Safari has no vibration
+   * API (ADR-0011), and on an iPhone this waits for the App Store build's haptics.
+   */
+  private buzz(cue: ToneCue) {
+    if (typeof navigator === "undefined" || typeof navigator.vibrate !== "function") return;
+    const near = 1 - Math.min(1, Math.max(0, cue.repeatGapMs) / 900);
+    const pattern: number[] = [];
+    for (let i = 0; i <= cue.repeats; i++) {
+      if (cue.gain * Math.pow(cue.decay, i) < 0.004) break;
+      const pulse = Math.round(i === 0 ? 30 + 90 * near : 18 + 40 * near);
+      if (i > 0) pattern.push(Math.max(20, cue.repeatGapMs - pattern[pattern.length - 1]!));
+      pattern.push(pulse);
+    }
+    try {
+      navigator.vibrate(pattern);
+    } catch {
+      /* a browser that refuses (no user gesture yet) is not an error worth surfacing */
+    }
+  }
+
   /** One contact: the ping, then whatever comes back. */
   private ping(cue: ToneCue) {
     const ctx = this.context();
     if (!ctx) return;
+    this.buzz(cue);
 
     for (let i = 0; i <= cue.repeats; i++) {
       const at = ctx.currentTime + (i * cue.repeatGapMs) / 1000;

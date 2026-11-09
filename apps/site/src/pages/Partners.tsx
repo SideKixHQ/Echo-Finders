@@ -11,7 +11,7 @@ const h2 = 'mt-base font-heading text-4xl leading-tight text-foreground sm:text-
 
 export default function PartnerPage() {
   usePageHead(
-    "Partner with Echo Finders — Bring your place's stories to life",
+    "Partner with Echo Finders · Bring your place's stories to life",
     'https://echofinders.com/partners',
     'Echo Finders partners with municipalities, tourism organizations, museums, historians, and local businesses to build location-based audio destination collections.',
   );

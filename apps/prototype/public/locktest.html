@@ -257,9 +257,9 @@
     const live = [];
     live.push(row('Running', running ? 'yes' : 'no'));
     live.push(row('Screen kept awake', wakeState, wakeState === 'held' ? 'ok' : wakeState === 'unsupported' || wakeState === 'refused' ? 'bad' : ''));
-    live.push(row('Audio file', audio ? `${audio.paused ? 'paused' : 'playing'} · ${audio.currentTime.toFixed(0)}s` : '–'));
+    live.push(row('Audio file', audio ? `${audio.paused ? 'paused' : 'playing'} · ${audio.currentTime.toFixed(0)}s` : 'none'));
     live.push(row('Speech voice', `${spoken} said`));
-    live.push(row('Web Audio', ctx ? `${ctx.state} · ${ctx.currentTime.toFixed(0)}s` : '–'));
+    live.push(row('Web Audio', ctx ? `${ctx.state} · ${ctx.currentTime.toFixed(0)}s` : 'none'));
     live.push(row('GPS fixes', lastFix ? `${fixes} · last ${Math.round((now() - lastFix) / 1000)}s ago` : String(fixes)));
     $('live').innerHTML = live.join('');
 

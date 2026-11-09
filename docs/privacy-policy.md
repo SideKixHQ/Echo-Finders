@@ -1,4 +1,4 @@
-# Echo Finders — Privacy Policy
+# Echo Finders Privacy Policy
 
 Last updated: 7 November 2026 · Echo Finders is a Whatishere.com product.
 Questions: [hello@echofinders.com](mailto:hello@echofinders.com)
@@ -27,22 +27,22 @@ The rest of this document explains each of those properly.
 **Why:** to find echoes near you and open them when you arrive. Without it there is no app.
 **Where it goes:** it is used on your device and is not sent to us.
 
-### Your location while the app is in the background — only if you turn it on
+### Your location while the app is in the background, only if you turn it on
 **Why:** so echoes can open with your phone in your pocket and the screen off, which is the
 point of walking mode. You should be looking at the street, not at a phone.
 **Default:** off. You are asked the first time you start a hands-free walk, never before.
-**If you say no:** echoes still open — you just keep the app on screen while you walk.
+**If you say no:** echoes still open; you just keep the app on screen while you walk.
 **Turning it off later:** Settings → Privacy → Hands-free. Takes effect immediately.
 Nothing you have already found is lost.
 
-### Your collection — which echoes you found, and when
+### Your collection: which echoes you found, and when
 **Why:** so you can listen again later, and so the app does not replay something you have
 already heard.
 **Where it goes:** your device.
 **Note:** an echo's own location is public information; it ships inside the app to everyone.
 Recording that you found it says very little about you.
 
-### The exact spot you were standing — only if you turn it on
+### The exact spot you were standing, only if you turn it on
 **Why:** it turns your collection into a personal map of where you have been.
 **Default:** off.
 
@@ -123,7 +123,7 @@ sponsored stories later, we will update this policy first, and these rules will 
 - Sell or rent your personal data.
 - Share your location with advertisers, airlines, tourism boards or data brokers.
 - Track you across other apps or websites.
-- Keep a continuous trail of your movements. We record arrivals, not journeys — and only
+- Keep a continuous trail of your movements. We record arrivals, not journeys, and only
   when you have asked us to.
 - Require an account. You can use Echo Finders without telling us who you are.
 
@@ -144,7 +144,7 @@ Everything below is in **Settings → Privacy**, and none of it requires contact
 | Delete everything | Removes the lot. |
 
 Deletion is immediate and permanent. Because your data lives on your device, there is no
-server copy for us to forget about — but if that ever changes, this policy will say so
+server copy for us to forget about, but if that ever changes, this policy will say so
 plainly before it does.
 
 ---
@@ -176,7 +176,7 @@ which you give by granting the permission and withdraw by revoking it or by swit
 feature off. Withdrawing consent does not affect anything that happened before.
 
 If you are in California: we do not sell or share personal information as those terms are
-defined by the CCPA/CPRA, so there is nothing to opt out of — but the deletion controls
+defined by the CCPA/CPRA, so there is nothing to opt out of, but the deletion controls
 above are available to you regardless.
 
 ---
