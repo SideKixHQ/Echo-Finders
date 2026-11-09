@@ -279,9 +279,12 @@ export function useJourney(
   // One renderer for the life of the component: creating an AudioContext per session would
   // hit the browser's limit within a few mode switches.
   const toneRenderer = useMemo(() => new EchoTone(), []);
+  // Quiet while a story plays: the sonar (and its buzz) are for finding the next one, and
+  // under narration they were heard as other echoes talking over this one.
+  const storyPlaying = state.playback.kind === "playing";
   useEffect(() => {
-    toneRenderer.setMuted(!sound);
-  }, [toneRenderer, sound]);
+    toneRenderer.setMuted(!sound || storyPlaying);
+  }, [toneRenderer, sound, storyPlaying]);
   // Released on unmount, because an AudioContext is not garbage: browsers cap them per
   // page, and one left open per mount is a limit reached by clicking around.
   useEffect(() => () => void toneRenderer.dispose(), [toneRenderer]);
