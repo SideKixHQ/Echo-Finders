@@ -1,0 +1,28 @@
+# Drafted 2026-11-09 for James's approval. Wilmington's theatres, its war-time dance floor, and the streets that stood in for Tree Hill.
+# About 1.5 km on foot; durationS is door to door, dwells included.
+id: wilmington-stage-and-screen-walk
+mode: walking
+name: "Stage and screen: Front Street to Thalian Hall"
+
+origin:
+  name: The Cotton Exchange
+  at: { lat: 34.2395, lng: -77.9493 }
+  timeZone: America/New_York
+
+destination:
+  name: Hannah Block Historic USO
+  at: { lat: 34.23315, lng: -77.9472 }
+  timeZone: America/New_York
+
+durationS: 2460
+
+waypoints:
+  - { name: "The Cotton Exchange", at: { lat: 34.2395, lng: -77.9493 }, dwellS: 180 }
+  - { name: "Front and Grace", at: { lat: 34.2389, lng: -77.949 }, dwellS: 90 }
+  - { name: "Bijou Park", at: { lat: 34.23807, lng: -77.9493 }, dwellS: 90 }
+  - { name: "Riverwalk by the federal building", at: { lat: 34.236, lng: -77.94995 }, dwellS: 120 }
+  - { name: "Front and Princess", at: { lat: 34.23641, lng: -77.94807 }, dwellS: 60 }
+  - { name: "Third and Princess: the courthouse", at: { lat: 34.23642, lng: -77.946 }, dwellS: 120 }
+  - { name: "Thalian Hall", at: { lat: 34.2377, lng: -77.9457 }, dwellS: 300 }
+  - { name: "Third and Orange", at: { lat: 34.2334, lng: -77.946 } }
+  - { name: "Hannah Block Historic USO", at: { lat: 34.23315, lng: -77.9472 } }

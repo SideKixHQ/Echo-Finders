@@ -19897,6 +19897,327 @@ export const ROUTES: readonly Route[] = [
     "departureAt": "2026-06-15T14:00:00Z"
   },
   {
+    "id": "wilmington-1898-walk",
+    "mode": "walking",
+    "name": "1898: the coup and how Wilmington remembers it",
+    "origin": {
+      "name": "Alex Manly marker",
+      "at": {
+        "lat": 34.2296,
+        "lng": -77.9455
+      },
+      "timeZone": "America/New_York"
+    },
+    "destination": {
+      "name": "1898 Memorial Park",
+      "at": {
+        "lat": 34.248,
+        "lng": -77.94725
+      },
+      "timeZone": "America/New_York"
+    },
+    "waypoints": [
+      {
+        "name": "Alex Manly marker",
+        "at": {
+          "lat": 34.2296,
+          "lng": -77.9455
+        },
+        "dwellS": 120
+      },
+      {
+        "name": "Third and Nun",
+        "at": {
+          "lat": 34.2304,
+          "lng": -77.9455
+        }
+      },
+      {
+        "name": "Former Daily Record site",
+        "at": {
+          "lat": 34.23038,
+          "lng": -77.94008
+        },
+        "dwellS": 120
+      },
+      {
+        "name": "Gregory Congregational Church",
+        "at": {
+          "lat": 34.23098,
+          "lng": -77.94077
+        },
+        "dwellS": 120
+      },
+      {
+        "name": "Seventh and Nun",
+        "at": {
+          "lat": 34.231,
+          "lng": -77.9398
+        }
+      },
+      {
+        "name": "Giblem Lodge",
+        "at": {
+          "lat": 34.23694,
+          "lng": -77.9397
+        },
+        "dwellS": 120
+      },
+      {
+        "name": "Chestnut Street Presbyterian Church",
+        "at": {
+          "lat": 34.2379,
+          "lng": -77.9402
+        },
+        "dwellS": 120
+      },
+      {
+        "name": "Fifth and Chestnut",
+        "at": {
+          "lat": 34.2377,
+          "lng": -77.943
+        }
+      },
+      {
+        "name": "Wilmington Coup marker",
+        "at": {
+          "lat": 34.2358,
+          "lng": -77.94435
+        },
+        "dwellS": 150
+      },
+      {
+        "name": "Third and Market",
+        "at": {
+          "lat": 34.2357,
+          "lng": -77.946
+        }
+      },
+      {
+        "name": "City Hall and Thalian Hall",
+        "at": {
+          "lat": 34.2371,
+          "lng": -77.94598
+        },
+        "dwellS": 150
+      },
+      {
+        "name": "J. Allen Kirk marker",
+        "at": {
+          "lat": 34.24137,
+          "lng": -77.94687
+        },
+        "dwellS": 90
+      },
+      {
+        "name": "1898 Memorial Park",
+        "at": {
+          "lat": 34.248,
+          "lng": -77.94725
+        }
+      }
+    ],
+    "durationS": 4200,
+    "departureAt": "2026-06-15T14:00:00Z"
+  },
+  {
+    "id": "wilmington-old-town-walk",
+    "mode": "walking",
+    "name": "Old Wilmington: the river to the Bellamy Mansion",
+    "origin": {
+      "name": "Riverwalk at Market Street",
+      "at": {
+        "lat": 34.23545,
+        "lng": -77.94992
+      },
+      "timeZone": "America/New_York"
+    },
+    "destination": {
+      "name": "Bellamy Mansion Museum",
+      "at": {
+        "lat": 34.2359,
+        "lng": -77.94285
+      },
+      "timeZone": "America/New_York"
+    },
+    "waypoints": [
+      {
+        "name": "Riverwalk at Market Street",
+        "at": {
+          "lat": 34.23545,
+          "lng": -77.94992
+        },
+        "dwellS": 120
+      },
+      {
+        "name": "Front and Dock",
+        "at": {
+          "lat": 34.2346,
+          "lng": -77.9489
+        }
+      },
+      {
+        "name": "Washington's Southern Tour marker",
+        "at": {
+          "lat": 34.23445,
+          "lng": -77.9461
+        },
+        "dwellS": 60
+      },
+      {
+        "name": "Latimer House",
+        "at": {
+          "lat": 34.2335,
+          "lng": -77.9461
+        },
+        "dwellS": 240
+      },
+      {
+        "name": "Cottage Lane",
+        "at": {
+          "lat": 34.2338,
+          "lng": -77.9451
+        },
+        "dwellS": 90
+      },
+      {
+        "name": "Third and Cottage Lane",
+        "at": {
+          "lat": 34.2338,
+          "lng": -77.946
+        }
+      },
+      {
+        "name": "Burgwin-Wright House",
+        "at": {
+          "lat": 34.2354,
+          "lng": -77.9464
+        },
+        "dwellS": 300
+      },
+      {
+        "name": "St. James Episcopal Church",
+        "at": {
+          "lat": 34.23548,
+          "lng": -77.94565
+        },
+        "dwellS": 240
+      },
+      {
+        "name": "Temple of Israel",
+        "at": {
+          "lat": 34.2355,
+          "lng": -77.9444
+        },
+        "dwellS": 150
+      },
+      {
+        "name": "Bellamy Mansion Museum",
+        "at": {
+          "lat": 34.2359,
+          "lng": -77.94285
+        }
+      }
+    ],
+    "durationS": 2460,
+    "departureAt": "2026-06-15T14:00:00Z"
+  },
+  {
+    "id": "wilmington-stage-and-screen-walk",
+    "mode": "walking",
+    "name": "Stage and screen: Front Street to Thalian Hall",
+    "origin": {
+      "name": "The Cotton Exchange",
+      "at": {
+        "lat": 34.2395,
+        "lng": -77.9493
+      },
+      "timeZone": "America/New_York"
+    },
+    "destination": {
+      "name": "Hannah Block Historic USO",
+      "at": {
+        "lat": 34.23315,
+        "lng": -77.9472
+      },
+      "timeZone": "America/New_York"
+    },
+    "waypoints": [
+      {
+        "name": "The Cotton Exchange",
+        "at": {
+          "lat": 34.2395,
+          "lng": -77.9493
+        },
+        "dwellS": 180
+      },
+      {
+        "name": "Front and Grace",
+        "at": {
+          "lat": 34.2389,
+          "lng": -77.949
+        },
+        "dwellS": 90
+      },
+      {
+        "name": "Bijou Park",
+        "at": {
+          "lat": 34.23807,
+          "lng": -77.9493
+        },
+        "dwellS": 90
+      },
+      {
+        "name": "Riverwalk by the federal building",
+        "at": {
+          "lat": 34.236,
+          "lng": -77.94995
+        },
+        "dwellS": 120
+      },
+      {
+        "name": "Front and Princess",
+        "at": {
+          "lat": 34.23641,
+          "lng": -77.94807
+        },
+        "dwellS": 60
+      },
+      {
+        "name": "Third and Princess: the courthouse",
+        "at": {
+          "lat": 34.23642,
+          "lng": -77.946
+        },
+        "dwellS": 120
+      },
+      {
+        "name": "Thalian Hall",
+        "at": {
+          "lat": 34.2377,
+          "lng": -77.9457
+        },
+        "dwellS": 300
+      },
+      {
+        "name": "Third and Orange",
+        "at": {
+          "lat": 34.2334,
+          "lng": -77.946
+        }
+      },
+      {
+        "name": "Hannah Block Historic USO",
+        "at": {
+          "lat": 34.23315,
+          "lng": -77.9472
+        }
+      }
+    ],
+    "durationS": 2460,
+    "departureAt": "2026-06-15T14:00:00Z"
+  },
+  {
     "id": "wilmington-to-southport",
     "mode": "driving",
     "name": "Wilmington to Southport, by Fort Fisher and the ferry",
