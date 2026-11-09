@@ -9,7 +9,7 @@ at: { lat: 32.77905, lng: -96.80890 }
 triggerRadiusKm: 0.05
 category: true-crime
 format: short
-durationS: 101
+durationS: 88
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -30,7 +30,7 @@ script: |
 
   Look toward the former Texas School Book Depository.
 
-  The Warren Commission concluded that the shots were fired from a sixth floor window of that building, and that they were fired by Lee Harvey Oswald. Oswald never stood trial. He was shot dead two days later, in the basement of the Dallas police building. Years afterwards, a committee of the House of Representatives agreed that Oswald fired, but concluded that the President was probably assassinated as a result of a conspiracy.
+  According to the Warren Commission, the shots were fired from a sixth floor window of that building, and they were fired by Lee Harvey Oswald. Oswald never stood trial. He was shot dead two days later, in the basement of the Dallas police building. Years afterwards, a committee of the House of Representatives agreed that Oswald fired, but concluded that the President was probably assassinated as a result of a conspiracy.
 
   This short account does not settle every disputed question.
 
@@ -46,7 +46,7 @@ script: |
 
   You cannot recover the certainty people had before the motorcade reached it.
 
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
@@ -79,10 +79,10 @@ claims:
   - says: "Look toward the former Texas School Book Depository."
     source: 1
     quote: "a seven-story, orange brick warehouse and office building, the Texas School Book Depository"
-  - says: "The Warren Commission concluded that the shots were fired from a sixth floor window of that building"
+  - says: "According to the Warren Commission, the shots were fired from a sixth floor window of that building"
     source: 2
     quote: "the Commission has concluded that the shots which killed President Kennedy and wounded Governor Connally were fired from the sixth-floor window at the southeast corner of the Texas School Book Depository Building."
-  - says: "and that they were fired by Lee Harvey Oswald"
+  - says: "and they were fired by Lee Harvey Oswald"
     source: 1
     quote: "The shots which killed President Kennedy and wounded Governor Connally were fired by Lee Harvey Oswald."
   - says: "Oswald never stood trial."
@@ -113,3 +113,77 @@ sources:
     url: https://www.archives.gov/research/jfk/select-committee-report/summary.html
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-turn-onto-elm-street/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 88.3
+    audioBytes: 1414416
+    transcript:
+      totalS: 88.3
+      lines:
+        - text: Watch the curve of Elm Street.
+          atS: 0
+          durationS: 1.9
+        - text: On November 22, 1963, President John F.
+          atS: 2.72
+          durationS: 3.74
+        - text: Kennedy's motorcade turned here, off Houston Street and onto Elm.
+          atS: 6.48
+          durationS: 4.12
+        - text: People had gathered to see him.
+          atS: 11.11
+          durationS: 1.68
+        - text: He waved to the crowd outside the Texas School Book Depository as he passed it.
+          atS: 13.23
+          durationS: 4.55
+        - text: The clock on top of that building said twelve thirty.
+          atS: 18.23
+          durationS: 3.04
+        - text: Seconds later, shots rang out, and Kennedy was hit while riding along Elm Street.
+          atS: 21.78
+          durationS: 4.52
+        - text: He was taken to Parkland Memorial Hospital, where he was pronounced dead at one o'clock.
+          atS: 26.62
+          durationS: 4.74
+        - text: Look toward the former Texas School Book Depository.
+          atS: 31.8
+          durationS: 3.01
+        - text: According to the Warren Commission, the shots were fired from a sixth floor window of that building, and they were fired by Lee Harvey Oswald.
+          atS: 34.93
+          durationS: 6.72
+        - text: Oswald never stood trial.
+          atS: 41.77
+          durationS: 1.95
+        - text: He was shot dead two days later, in the basement of the Dallas police building.
+          atS: 43.87
+          durationS: 4.09
+        - text: Years afterwards, a committee of the House of Representatives agreed that Oswald fired, but concluded that the President was probably assassinated as a result of a conspiracy.
+          atS: 48.17
+          durationS: 9.71
+        - text: This short account does not settle every disputed question.
+          atS: 58.2
+          durationS: 3.33
+        - text: "But the central event is documented: a president was fatally shot during a public motorcade on the street beside you."
+          atS: 61.78
+          durationS: 7.15
+        - text: Notice how compact the setting is.
+          atS: 69.37
+          durationS: 2.14
+        - text: The road.
+          atS: 71.83
+          durationS: 0.74
+        - text: The windows.
+          atS: 72.78
+          durationS: 0.87
+        - text: The sidewalks where witnesses stood.
+          atS: 73.86
+          durationS: 2.24
+        - text: An event that has been investigated ever since began within this small stretch of city.
+          atS: 76.35
+          durationS: 5.28
+        - text: You can stand beside the route.
+          atS: 82.01
+          durationS: 1.83
+        - text: You cannot recover the certainty people had before the motorcade reached it.
+          atS: 84.17
+          durationS: 4.16
