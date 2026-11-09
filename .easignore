@@ -1,0 +1,21 @@
+# What Expo's build servers get for the iPhone app (apps/ios): the app and the engine it
+# imports, nothing else. Without this they get the whole repository, audio included (594 MB).
+# Replaces .gitignore for EAS, so the usual exclusions are repeated here.
+node_modules/
+**/node_modules/
+apps/ios/node_modules/
+packages/core/node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+.env
+.env.*
+content/
+docs/
+design/
+scripts/
+test/
+apps/prototype/
+apps/site/
+packages/echo/
