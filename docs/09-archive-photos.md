@@ -73,7 +73,8 @@ Architecture of the South 1935–38, HABS NC-364, Detroit Publishing / Rotograph
 c. 1905, and a panorama). Every item page was opened and its rights line read: "No known
 restrictions on publication." Images are resized to about 960 px.
 
-Held for James, not attached:
-- The Old Masonic Lodge (3 echoes): the candidate photo is not certainly that building.
-- The 1898 Daily Record photograph: it shows the armed mob posing at the burned press.
-  It is the historical record; whether the card shows it is an editorial call.
+Not attached, by James's decision (2026-11-09):
+- The Old Masonic Lodge (3 echoes) stays without a photo: the candidate image is not
+  certainly that building.
+- The 1898 Daily Record photograph (the armed mob posing at the burned press) is not
+  used on the card.
