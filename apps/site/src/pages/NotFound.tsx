@@ -5,7 +5,7 @@ import { ContourLines, WaypointPin } from '@/components/Decor';
 import { usePageHead } from '@/lib/head';
 
 export default function NotFoundPage() {
-  usePageHead('Page not found — Echo Finders', 'https://echofinders.com/');
+  usePageHead('Page not found · Echo Finders', 'https://echofinders.com/');
   return (
     <main className="relative flex min-h-[80vh] items-center justify-center overflow-hidden px-4 pt-24 text-center">
       <ContourLines className="pointer-events-none absolute inset-0 h-full w-full text-border opacity-40" />

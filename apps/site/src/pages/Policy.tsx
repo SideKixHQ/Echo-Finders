@@ -28,19 +28,19 @@ function toHtml(markdown: string): string {
 const PAGES = {
   privacy: {
     html: toHtml(privacy),
-    title: 'Privacy policy — Echo Finders',
+    title: 'Privacy policy · Echo Finders',
     url: 'https://echofinders.com/privacy',
     description: 'What Echo Finders collects, why, and how to turn each part off.',
   },
   terms: {
     html: toHtml(terms),
-    title: 'Terms of service — Echo Finders',
+    title: 'Terms of service · Echo Finders',
     url: 'https://echofinders.com/terms',
     description: 'The agreement between you and Echo Finders: passes, renewals, safety and accuracy.',
   },
   refunds: {
     html: toHtml(refunds),
-    title: 'Refund policy — Echo Finders',
+    title: 'Refund policy · Echo Finders',
     url: 'https://echofinders.com/refunds',
     description: 'When Echo Finders refunds a pass, and how to ask.',
   },
