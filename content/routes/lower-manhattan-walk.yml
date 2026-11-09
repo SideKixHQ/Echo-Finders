@@ -5,6 +5,7 @@
 id: lower-manhattan-walk
 mode: walking
 name: "Lower Manhattan: the Battery to the African Burial Ground"
+area: New York
 
 origin:
   name: Battery Park

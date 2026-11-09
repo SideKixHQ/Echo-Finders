@@ -3,6 +3,7 @@
 id: wilmington-old-town-walk
 mode: walking
 name: "Old Wilmington: the river to the Bellamy Mansion"
+area: Wilmington
 
 origin:
   name: Riverwalk at Market Street

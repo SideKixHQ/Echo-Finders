@@ -14,6 +14,7 @@
 id: wilmington-to-southport
 mode: driving
 name: "Wilmington to Southport, by Fort Fisher and the ferry"
+area: Cape Fear Coast
 # The road the line on the map follows between waypoints (`scripts/build-route-paths.py`).
 follows: Carolina Beach Road
 

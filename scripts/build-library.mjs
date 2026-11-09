@@ -143,6 +143,7 @@ for (const file of routeFiles) {
     id: route.id,
     mode: route.mode,
     name: route.name,
+    ...(route.area ? { area: route.area } : {}),
     origin: route.origin,
     destination: route.destination,
     waypoints: route.waypoints,

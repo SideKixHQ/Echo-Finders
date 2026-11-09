@@ -4441,6 +4441,12 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   font-size: 13px; color: var(--aqua);
 }
 @media (hover: hover) { .jmenu-item:hover { background: rgba(var(--rgb-hair), 0.07); } }
+/* Guided walks and road trips (JourneyChip.tsx, GuidedRoutes): a heading, the ones near you,
+   then the rest by city. The "other cities" toggle is a quiet row, not the aqua footer link. */
+.jmenu-routes { margin-top: 6px; border-top: 1px solid var(--line); padding-top: 6px; }
+.jmenu-head { margin: 4px 10px 2px; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.jmenu-area-name { margin: 8px 10px 0; font-size: 12px; font-weight: 600; color: var(--cool); }
+.jmenu-routes .jmenu-more { border-top: 0; border-radius: 11px; margin-top: 0; }
 @media (prefers-reduced-motion: reduce) { .jmenu { animation: none; } }
 
 /* The categories take the rest of the row, in their own pill so the strip reads as one key. */

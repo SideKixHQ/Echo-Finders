@@ -7,6 +7,7 @@
 id: central-park-west-lennon
 mode: walking
 name: "Central Park West: three minutes apart"
+area: New York
 
 origin:
   name: The Dakota, 1 West 72nd Street
