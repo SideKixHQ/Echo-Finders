@@ -213,7 +213,7 @@ export const home = {
         body: 'Every region, every Echo, as new places open. Renews yearly; cancel any time.',
       },
     ],
-    region: 'Now open: the Cape Fear Coast (Wilmington, Wrightsville Beach, Carolina Beach, Kure Beach, Fort Fisher, Southport, Oak Island, and Topsail), Washington, DC, and Philadelphia. Each region is its own pass.',
+    region: 'Now open: the Cape Fear Coast (Wilmington, Wrightsville Beach, Carolina Beach, Kure Beach, Fort Fisher, Southport, Oak Island, and Topsail), Washington, DC, Philadelphia, Savannah, Charleston, New Orleans, and Boston. Each region is its own pass.',
     note: 'Prices in US dollars. Payments by Stripe.',
     cta: 'Start listening free',
   },
@@ -419,11 +419,15 @@ export const follow = {
   },
   where: {
     kicker: 'Where',
-    title: 'Echoing now in three places.',
+    title: 'Echoing now in seven places.',
     places: [
       { name: 'Cape Fear Coast', detail: 'Wilmington, Wrightsville Beach, Carolina Beach, Kure Beach and Fort Fisher' },
       { name: 'Washington, DC', detail: 'The National Mall, Capitol Hill, Lafayette Square and Ford\'s Theatre' },
       { name: 'Philadelphia', detail: 'Old City, Society Hill, Independence Mall and City Hall' },
+      { name: 'Savannah', detail: 'The squares, River Street, Forsyth Park and Bonaventure' },
+      { name: 'Charleston', detail: 'The Battery, Rainbow Row, Broad Street and Marion Square' },
+      { name: 'New Orleans', detail: 'The French Quarter, Congo Square, the Marigny and City Park' },
+      { name: 'Boston', detail: 'The Freedom Trail, Beacon Hill, the North End and Charlestown' },
     ],
   },
   kinds: {

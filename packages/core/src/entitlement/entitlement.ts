@@ -86,6 +86,23 @@ export const CITIES: readonly City[] = [
    */
   { id: "washington-dc", name: "Washington, DC", centre: { lat: 38.8895, lng: -77.0353 }, radiusKm: 25 },
   { id: "philadelphia", name: "Philadelphia", centre: { lat: 39.9526, lng: -75.1635 }, radiusKm: 25 },
+  /*
+   * Savannah, Charleston, New Orleans and Boston (James, 2026-11-09), once every echo in each
+   * was approved and voiced. Each radius is set from where the echoes are, with room for the
+   * visit around them:
+   *
+   * - Savannah, 20km: the farthest echo is Thunderbolt at 6.7km; 20 takes in Wormsloe and
+   *   the islands on the way out to Tybee without reaching Hilton Head.
+   * - Charleston, 25km: every echo is within 2km of the Battery; 25 covers Mount Pleasant,
+   *   Sullivan's Island, Folly Beach and the Ashley River plantations.
+   * - New Orleans, 25km: the farthest echo is 4.4km out; 25 reaches Chalmette and Metairie.
+   * - Boston, 16km: Fort Warren on Georges Island, 11.7km out, is in. Salem, 22km north,
+   *   is not: it is its own trip, and its own pass when it gets one.
+   */
+  { id: "savannah", name: "Savannah", centre: { lat: 32.0809, lng: -81.0912 }, radiusKm: 20 },
+  { id: "charleston", name: "Charleston", centre: { lat: 32.7765, lng: -79.9311 }, radiusKm: 25 },
+  { id: "new-orleans", name: "New Orleans", centre: { lat: 29.9511, lng: -90.0715 }, radiusKm: 25 },
+  { id: "boston", name: "Boston", centre: { lat: 42.3601, lng: -71.0589 }, radiusKm: 16 },
 ];
 
 /** The city this point is in, or null on the road and in the air. */
