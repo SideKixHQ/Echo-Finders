@@ -9,7 +9,7 @@ at: { lat: 32.07325, lng: -81.09105 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 87
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -19,7 +19,7 @@ teaser: "The firemen stood on this sidewalk. Their water reached the first windo
 script: |
   Look up at the two spires of the cathedral, then down the long walls beneath them.
 
-  On a Sunday night in February, eighteen ninety eight, a streetcar driver coming through this square saw fire. It was about ten minutes to eleven.
+  On a night in February, eighteen ninety eight, a streetcar driver coming through this square saw fire. It was about ten minutes to eleven.
 
   The alarm went in quickly. It did not help. Every engine in the city was down at a big fire on River Street. The hose wagons that came had almost no pressure. Firemen stood on the Harris Street sidewalk, about where you are, and their streams barely reached the first window sill.
 
@@ -29,11 +29,54 @@ script: |
 
   The next morning the paper said nothing remained but the four walls and parts of the two spires.
 
-  The rebuilding went to the same architect who had designed the church in the first place. He kept its lines. The spires, the towers, the tall pointed windows. Two years and eight months after the fire, the cathedral was dedicated again.
+  The walls were built on again. Two years and eight months after the fire, the cathedral was dedicated again.
 
   So the shape you are looking at is the shape that crowd watched burn. What is new is almost everything inside.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Look up at the two spires of the cathedral"
+    source: 1
+    quote: "nothing remain* but its four walls end the indistructable parts of its two tail spires."
+  - says: "On a night in February, eighteen ninety eight, a streetcar driver coming through this square saw fire."
+    source: 1
+    quote: "The discovery is said to have been by a motorman of the City and Suburban Railway, who was Just coming through the square with his car."
+  - says: "February, eighteen ninety eight"
+    source: 1
+    quote: "THE CATHEDRAL IN RUINS."
+  - says: "It was about ten minutes to eleven."
+    source: 1
+    quote: "The fire was first seen about ten minutes before 11 o’clock."
+  - says: "The alarm went in quickly."
+    source: 1
+    quote: "the alarm was turned in very quickly from box No. 27 at Price and Harris streets."
+  - says: "Every engine in the city was down at a big fire on River Street."
+    source: 1
+    quote: "The entire department was then at work on the River street lire and every available engine was there attaehed to a fire-plug"
+  - says: "The hose wagons that came had almost no pressure."
+    source: 1
+    quote: "The bare pressure from the pipes, i owing to the heavy use of water else where, was scarcely sufficient to throw a j stream across the street."
+  - says: "Firemen stood on the Harris Street sidewalk, about where you are, and their streams barely reached the first window sill."
+    source: 1
+    quote: "stood on the j Harris street sidewalk, just outside the fence surrounding the Cathedral, and found them barely strong enough to reach the first window sill."
+  - says: "It was three quarters of an hour before an engine arrived."
+    source: 1
+    quote: "It was fully three-quarters of an hour, before nn engine could be gotten."
+  - says: "Thousands of people stood around the square and watched sparks pour from the towers like fireworks."
+    source: 1
+    quote: "Thousands of people were gathered around the square occupied by the Cathedral"
+  - says: "watched sparks pour from the towers like fireworks"
+    source: 1
+    quote: "This shower, like a magnificent fireworks display, lasted for an hour or more,"
+  - says: "Some of the sparks burned holes in their hats and coats."
+    source: 1
+    quote: "ever falling sparks such as would burn a hole through hat, coat or skin wherever they happened to light."
+  - says: "The next morning the paper said nothing remained but the four walls and parts of the two spires."
+    source: 1
+    quote: "nothing remain* but its four walls end the indistructable parts of its two tail spires."
+  - says: "Two years and eight months after the fire, the cathedral was dedicated again."
+    source: 2
+    quote: "will be dedicated to-day to tha service of God"
 sources:
   - title: "The Cathedral in Ruins (The morning news, Savannah, 7 February 1898, page 8)"
     publisher: "Library of Congress, Chronicling America"
@@ -45,12 +88,64 @@ sources:
     url: https://www.loc.gov/resource/sn89053684/1900-10-28/ed-1/?sp=10
     retrievedAt: "2026-10-15"
     rights: public-domain
-  - title: "Dedication sermon report (The Savannah morning news, 29 October 1900, page 8)"
-    publisher: "Library of Congress, Chronicling America"
-    url: https://www.loc.gov/resource/sn89053684/1900-10-29/ed-1/?sp=8
-    retrievedAt: "2026-10-15"
-    rights: public-domain
 detail: >-
-  The 1900 report names the architect as E. M. Baldwin of Baltimore, who drew the plans for
-  the original building in the 1870s, and says it was a matter of economy as well as taste to
-  preserve its spires, towers and high Gothic windows.
+  The 1900 report names the architect as E. M. Baldwin of Baltimore, who drew the plans for the original building in the 1870s, and says it was a matter of economy as well as taste to preserve its spires, towers and high Gothic windows.
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-night-the-cathedral-burned/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.1
+    audioBytes: 1105963
+    transcript:
+      totalS: 69.1
+      lines:
+        - text: Look up at the two spires of the cathedral, then down the long walls beneath them.
+          atS: 0
+          durationS: 4.55
+        - text: On a night in February, eighteen ninety eight, a streetcar driver coming through this square saw fire.
+          atS: 4.93
+          durationS: 5.69
+        - text: It was about ten minutes to eleven.
+          atS: 10.7
+          durationS: 1.97
+        - text: The alarm went in quickly.
+          atS: 12.79
+          durationS: 1.6
+        - text: It did not help.
+          atS: 14.43
+          durationS: 1.14
+        - text: Every engine in the city was down at a big fire on River Street.
+          atS: 15.69
+          durationS: 3.69
+        - text: The hose wagons that came had almost no pressure.
+          atS: 19.55
+          durationS: 3.01
+        - text: Firemen stood on the Harris Street sidewalk, about where you are, and their streams barely reached the first window sill.
+          atS: 22.88
+          durationS: 7.07
+        - text: It was three quarters of an hour before an engine arrived.
+          atS: 30.56
+          durationS: 3.04
+        - text: By then the roof was gone.
+          atS: 34.04
+          durationS: 1.99
+        - text: Thousands of people stood around the square and watched sparks pour from the towers like fireworks.
+          atS: 36.54
+          durationS: 6.01
+        - text: Some of the sparks burned holes in their hats and coats.
+          atS: 43.06
+          durationS: 3.22
+        - text: The next morning the paper said nothing remained but the four walls and parts of the two spires.
+          atS: 47.09
+          durationS: 5.65
+        - text: The walls were built on again.
+          atS: 53.26
+          durationS: 1.86
+        - text: Two years and eight months after the fire, the cathedral was dedicated again.
+          atS: 55.81
+          durationS: 5.07
+        - text: So the shape you are looking at is the shape that crowd watched burn.
+          atS: 61.33
+          durationS: 3.86
+        - text: What is new is almost everything inside.
+          atS: 65.78
+          durationS: 3.27

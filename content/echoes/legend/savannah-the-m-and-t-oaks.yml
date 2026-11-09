@@ -1,0 +1,129 @@
+# Drafted by Claude Code (2026-11-09) for the Savannah ghost legends.
+# Listening spot: On the main oak avenue just inside the Bonaventure Cemetery gate (city-owned, open to the public in daylight).
+# Position: Wikidata Bonaventure Cemetery point (32.047288, -81.043687) moved about 300 m west-northwest toward the Bonaventure Road entrance avenue (low confidence; check on site). Over 300 m from the dinner-under-the-trees spot.
+id: savannah-the-m-and-t-oaks
+title: "The Letters in the Oaks"
+summary: "Tradition says Bonaventure's oak avenues were planted to spell M and T, for two families joined by a wedding."
+place: "Bonaventure Cemetery, entrance avenue, Savannah, Georgia"
+at: { lat: 32.04880, lng: -81.04640 }
+triggerRadiusKm: 0.1
+category: legend
+format: short
+durationS: 51
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  Every source that tells it calls it tradition: guidebooks of 1890, 1899 and 1910. None shows a planting plan. The script says aloud that it is a legend, not proven.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [savannah, bonaventure, cemeteries, trees, legend]
+teaser: "Look along the avenue. Is it spelling something?"
+script: |
+  Look along the avenue of live oaks, and then across to the others.
+
+  There is a legend about these trees. Treat it as just that. Every book that tells it calls it tradition.
+
+  The land was first settled by a colonel named John Mulryne. In seventeen sixty one his daughter Mary married Josiah Tattnall, and the estate came to the Tattnalls.
+
+  The avenues, the story goes, were planted around the time of that wedding. And they were planted in the shape of two letters. M, for Mulryne. T, for Tattnall.
+
+  In eighteen ninety nine a Savannah book went further. Even at this late date, it said, you could trace the outline of the letters in the shape of the aisles between the trees.
+
+  Nobody has ever produced the plan. So walk the avenues, and see whether you can find them.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Every book that tells it calls it tradition."
+    source: 2
+    quote: "Tradition claims that the avenues of magnificent oaks which so distinguish this estate were planted in the form of the letters"
+  - says: "The land was first settled by a colonel named John Mulryne."
+    source: 3
+    quote: "Bonaventure was first settled in or about the year 1760 by Col. John Mulryne,"
+  - says: "In seventeen sixty one his daughter Mary married Josiah Tattnall, and the estate came to the Tattnalls."
+    source: 3
+    quote: "In 1761 this property came into the possession of the Tattnall family, through the marriage of Josiah Tattnall, of Charleston, with Mary, the daughter of Col. John. Mulryne."
+  - says: "The avenues, the story goes, were planted around the time of that wedding."
+    source: 1
+    quote: "The trees were planted about that time, and tradition has it, in the forms of the letters M and T, the initials of the Mulryne and Tattnall families."
+  - says: "And they were planted in the shape of two letters."
+    source: 1
+    quote: "tradition has it, in the forms of the letters M and T,"
+  - says: "M, for Mulryne."
+    source: 1
+    quote: "the initials of the Mulryne and Tattnall families."
+  - says: "T, for Tattnall."
+    source: 1
+    quote: "the initials of the Mulryne and Tattnall families."
+  - says: "In eighteen ninety nine a Savannah book went further."
+    source: 2
+    quote: "it is pos- sible to trace, even at this late date, the outline of these letters in the shape of the sylvan aisles, between the stately trees."
+  - says: "Even at this late date, it said, you could trace the outline of the letters in the shape of the aisles between the trees."
+    source: 2
+    quote: "it is pos- sible to trace, even at this late date, the outline of these letters in the shape of the sylvan aisles, between the stately trees."
+sources:
+  - title: "Savannah and its surroundings (G. A. Gregory, 1890): Bonaventure"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007695/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "A sketch of Savannah, historical and topographical (1899)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007700/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Illustrated guide to Savannah (Maude Heyward, 1910): Cemeteries, Bonaventure"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/unk84031503/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/savannah-the-m-and-t-oaks/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 51
+    audioBytes: 817571
+    transcript:
+      totalS: 51
+      lines:
+        - text: Look along the avenue of live oaks, and then across to the others.
+          atS: 0
+          durationS: 3.84
+        - text: There is a legend about these trees.
+          atS: 4.23
+          durationS: 1.96
+        - text: Treat it as just that.
+          atS: 6.51
+          durationS: 1.53
+        - text: Every book that tells it calls it tradition.
+          atS: 8.56
+          durationS: 2.9
+        - text: The land was first settled by a colonel named John Mulryne.
+          atS: 11.9
+          durationS: 3.63
+        - text: In seventeen sixty one his daughter Mary married Josiah Tattnall, and the estate came to the Tattnalls.
+          atS: 15.86
+          durationS: 6.59
+        - text: The avenues, the story goes, were planted around the time of that wedding.
+          atS: 22.89
+          durationS: 4.4
+        - text: And they were planted in the shape of two letters.
+          atS: 27.47
+          durationS: 2.62
+        - text: M, for Mulryne.
+          atS: 30.7
+          durationS: 1.43
+        - text: T, for Tattnall.
+          atS: 32.57
+          durationS: 1.6
+        - text: In eighteen ninety nine a Savannah book went further.
+          atS: 35.12
+          durationS: 3.08
+        - text: Even at this late date, it said, you could trace the outline of the letters in the shape of the aisles between the trees.
+          atS: 38.44
+          durationS: 6.5
+        - text: Nobody has ever produced the plan.
+          atS: 45.33
+          durationS: 2.04
+        - text: So walk the avenues, and see whether you can find them.
+          atS: 47.97
+          durationS: 3.06

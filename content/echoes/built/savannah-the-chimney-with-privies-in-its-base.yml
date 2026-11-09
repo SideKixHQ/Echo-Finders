@@ -9,7 +9,7 @@ at: { lat: 32.07560, lng: -81.10150 }
 triggerRadiusKm: 0.06
 category: built
 format: short
-durationS: 70
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,11 +31,51 @@ script: |
 
   When the government surveyed the shops, it said the combination of smokestack and privy appeared to be unique.
 
-  The day it was finished, the railroad's superintendent and the master bricklayer climbed to the top before the scaffolding came down, and drank a bottle of champagne up there.
+  When it was finished, the railroad's superintendent and the man responsible for its masonry climbed to the top before the scaffolding came down, and drank a bottle of champagne up there.
 
   The bosses toasted it from the top. Everyone else used it from the bottom.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "It was built in eighteen fifty five for the Central of Georgia Railroad."
+    source: 1
+    quote: "Upon completion of the chimney, William Wadley, then Superintendent and later President of the Central of Georgia, Benjamin P. Armstrong and a few others went to the top of the stack before the scaffolding was removed and celebrated the event with a bottle of champaigne in 1855."
+  - says: "A hundred and twenty three feet high, standing on a hundred and twenty piles."
+    source: 1
+    quote: "The brick chimney stands 123 feet high and has a foundation extending 10 feet below the surface of the ground, supported by 120 piles."
+  - says: "It was three things at once."
+    source: 1
+    quote: "The stack served a variety of roles - as a smoke stack, it drew exhaust gasses through tunnels from the shop boilers, the blacksmith shop forges,"
+  - says: "First, a chimney."
+    source: 1
+    quote: "as a smoke stack, it drew exhaust gasses through tunnels from the shop boilers, the blacksmith shop forges,"
+  - says: "Through flues under the yard it pulled the smoke from every forge and boiler in the shops."
+    source: 1
+    quote: "as a smoke stack, it drew exhaust gasses through tunnels from the shop boilers, the blacksmith shop forges,"
+  - says: "Second, a water tank."
+    source: 1
+    quote: "The 40,000 gallon cast-iron tank that encircled the stack provided water to engine tenders and the rest of the shops."
+  - says: "Round its waist sits a ring of cast iron panels, made here in Savannah."
+    source: 1
+    quote: "It is surrounded at its base by a tank 14 feet high with 16 handsomely moulded panels made of cast iron by \"Wm. Rose\" of Savannah."
+  - says: "Behind them was a tank of forty thousand gallons, for filling the locomotives."
+    source: 1
+    quote: "The 40,000 gallon cast-iron tank that encircled the stack provided water to engine tenders and the rest of the shops."
+  - says: "Third, look at the base."
+    source: 1
+    quote: "The base of the stack was ringed by privies for the workmen."
+  - says: "Those were the workers' privies."
+    source: 1
+    quote: "The base of the stack was ringed by privies for the workmen."
+  - says: "Those were the workers' privies."
+    source: 2
+    quote: "Base of Smokestack showing brick privies and cast-iron water tank."
+  - says: "the combination of smokestack and privy appeared to be unique"
+    source: 1
+    quote: "The combination of privy and stack, however, appears to be unique."
+  - says: "climbed to the top before the scaffolding came down, and drank a bottle of champagne up there"
+    source: 1
+    quote: "went to the top of the stack before the scaffolding was removed and celebrated the event with a bottle of champaigne in 1855."
 sources:
   - title: "Central of Georgia Railway, Savannah Repair Shops and Terminal Facilities (HAER GA-1), data pages"
     publisher: "Library of Congress, Historic American Engineering Record"
@@ -47,3 +87,59 @@ sources:
     url: https://www.loc.gov/item/ga0829/
     retrievedAt: "2026-10-15"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-chimney-with-privies-in-its-base/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.1
+    audioBytes: 1106798
+    transcript:
+      totalS: 69.1
+      lines:
+        - text: Find the tall, many-sided brick chimney rising over the old railroad shops.
+          atS: 0
+          durationS: 4.87
+        - text: It was built in eighteen fifty five for the Central of Georgia Railroad.
+          atS: 5.31
+          durationS: 4.09
+        - text: A hundred and twenty three feet high, standing on a hundred and twenty piles.
+          atS: 9.83
+          durationS: 4.54
+        - text: It was three things at once.
+          atS: 14.88
+          durationS: 1.82
+        - text: First, a chimney.
+          atS: 17.4
+          durationS: 1.43
+        - text: Through flues under the yard it pulled the smoke from every forge and boiler in the shops.
+          atS: 19.21
+          durationS: 5.02
+        - text: Second, a water tank.
+          atS: 24.74
+          durationS: 2.03
+        - text: Round its waist sits a ring of cast iron panels, made here in Savannah.
+          atS: 27.59
+          durationS: 5.12
+        - text: Behind them was a tank of forty thousand gallons, for filling the locomotives.
+          atS: 33.31
+          durationS: 4.42
+        - text: Third, look at the base.
+          atS: 38.17
+          durationS: 1.84
+        - text: Between the brick buttresses there are little arched cells.
+          atS: 40.39
+          durationS: 3.52
+        - text: Those were the workers' privies.
+          atS: 44.29
+          durationS: 1.73
+        - text: When the government surveyed the shops, it said the combination of smokestack and privy appeared to be unique.
+          atS: 46.53
+          durationS: 6.22
+        - text: When it was finished, the railroad's superintendent and the man responsible for its masonry climbed to the top before the scaffolding came down, and drank a bottle of champagne up there.
+          atS: 53.57
+          durationS: 10.65
+        - text: The bosses toasted it from the top.
+          atS: 64.66
+          durationS: 1.97
+        - text: Everyone else used it from the bottom.
+          atS: 67.07
+          durationS: 2.03

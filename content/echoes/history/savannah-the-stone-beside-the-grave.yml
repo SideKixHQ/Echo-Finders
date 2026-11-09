@@ -9,7 +9,7 @@ at: { lat: 32.07783, lng: -81.09215 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 101
+durationS: 99
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,16 +31,71 @@ script: |
 
   Because it could be seen better here. The paper said so, plainly.
 
-  The granite came from Stone Mountain, given by a quarry owner and carried free by the railroad. A few days before the dedication, the same paper pointed out that it was not, technically, a boulder.
+  The granite came from Stone Mountain, given by a man named W. H. Venable and carried by the railroad. A few days before the dedication, the same paper pointed out that it was not, technically, a boulder.
 
   Look across to the northeast corner. He may well be over there.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 pronunciations:
   - written: Tomochichi
     say: toh-moh-CHEE-chee
   - written: Yamacraw
     say: YAM-uh-craw
+claims:
+  - says: "It honours Tomochichi, the Yamacraw leader whose friendship the first colonists depended on."
+    source: 1
+    quote: "a monument to Tomo* chichi, the friendly chief of the Yamacraws whose offices were of such great benefit to the early colonists."
+  - says: "When he died, he had asked to be buried among the English."
+    source: 3
+    quote: "In compliance with his request that he might be buried among the English,"
+  - says: "His body came down the river by canoe."
+    source: 3
+    quote: "his remains were brought from his place above the town in a canoe,"
+  - says: "Oglethorpe himself was one of the pall-bearers"
+    source: 3
+    quote: "the corpse, with Oglethorpe and Colonel Stephens, the President, as pall-bearers, was escorted to Percival * square,"
+  - says: "the militia fired three volleys as he was lowered into the ground, in this square"
+    source: 3
+    quote: "As the body was lowered into the earth three volleys of musketry were fired by the militia."
+  - says: "in this square"
+    source: 3
+    quote: "It is situated on the east side of Wright (formerly Percival) square,"
+  - says: "In eighteen ninety-nine, as the Georgia Society of Colonial Dames prepared to mark the grave, the Savannah Morning News laid out the candidates."
+    source: 1
+    quote: "When ihe annual meeting of the Georgia Society of Colonial Dames is held here,"
+  - says: "One tradition put him under the courthouse."
+    source: 1
+    quote: "There is another belief that he was buried where the court house now stands"
+  - says: "Another, under the Gordon monument in the middle of the square."
+    source: 1
+    quote: "An other tradition has it that the Gordon monument stands above old Tomochlehi's burial place."
+  - says: "A pile of stones had once stood here, said to be over his body."
+    source: 1
+    quote: "A pile of stones tornterly stood in Wright square. These w,Te also said to be above the body of Tomochichi."
+  - says: "The best evidence the Dames had came from an old woman who had died a few months before, at eighty-nine."
+    source: 1
+    quote: "A few months ago an old ladv, who had been a resident of Savannah for near’y all of her 89 years, died."
+  - says: "The best evidence the Dames had"
+    source: 1
+    quote: "This evidence of the resting place cf the old Indian chief is looked Upon by the ladies as the most authentic they have"
+  - says: "She remembered recess at a school near the square, and the children shouting, let's go play on old Tomochichi's grave."
+    source: 1
+    quote: "“Come,” the children used to say when they had been dismissed for their recess, \"let's go play on old Tomochichi’s"
+  - says: "They would race to the northeast corner, in front of the Lutheran church."
+    source: 1
+    quote: "off (hey would race to Ihe spot that is now a part of the northeast quartering of the square, or that just in front of the Lutheran Church of the Ascension."
+  - says: "Because it could be seen better here."
+    source: 1
+    quote: "It will be placed in a position, however, where the exposure will i)e good nnd w'here there wlh bo but Utile obstruction from tho general view."
+  - says: "The granite came from Stone Mountain, given by a man named W. H. Venable and carried by the railroad."
+    source: 1
+    quote: "He offered to have a boulder taken from Stone mountain and shipped to Savannah. The officials of the Central Railroad were just as generous,"
+  - says: "it was not, technically, a boulder"
+    source: 2
+    quote: "Technically speaking, the stone is not a boulder."
+  - says: "He may well be over there."
+    source: 1
+    quote: "the bones of the old Indian were buried a short distance nwav."
 sources:
   - title: "The morning news (Savannah), 5 February 1899, page 8: Over Tomochichi's grave"
     publisher: "Library of Congress, Chronicling America"
@@ -57,3 +112,77 @@ sources:
     url: https://www.loc.gov/item/01007699/
     retrievedAt: "2026-10-15"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-stone-beside-the-grave/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 98.8
+    audioBytes: 1582436
+    transcript:
+      totalS: 98.8
+      lines:
+        - text: Find the big rough granite stone in the southeast corner of Wright Square.
+          atS: 0
+          durationS: 4.43
+        - text: It honours Tomochichi, the Yamacraw leader whose friendship the first colonists depended on.
+          atS: 4.76
+          durationS: 6.39
+        - text: When he died, he had asked to be buried among the English.
+          atS: 11.75
+          durationS: 3.7
+        - text: His body came down the river by canoe.
+          atS: 16.15
+          durationS: 2.31
+        - text: Oglethorpe himself was one of the pall-bearers, and the militia fired three volleys as he was lowered into the ground, in this square.
+          atS: 19.06
+          durationS: 7.46
+        - text: Exactly where in this square, nobody knows.
+          atS: 27.23
+          durationS: 3.13
+        - text: In eighteen ninety-nine, as the Georgia Society of Colonial Dames prepared to mark the grave, the Savannah Morning News laid out the candidates.
+          atS: 31.66
+          durationS: 8.83
+        - text: One tradition put him under the courthouse.
+          atS: 40.88
+          durationS: 2.51
+        - text: Another, under the Gordon monument in the middle of the square.
+          atS: 43.59
+          durationS: 3.68
+        - text: A pile of stones had once stood here, said to be over his body.
+          atS: 47.88
+          durationS: 4.01
+        - text: The best evidence the Dames had came from an old woman who had died a few months before, at eighty-nine.
+          atS: 52.84
+          durationS: 6.52
+        - text: She remembered recess at a school near the square, and the children shouting, let's go play on old Tomochichi's grave.
+          atS: 60.48
+          durationS: 7.75
+        - text: They would race to the northeast corner, in front of the Lutheran church.
+          atS: 68.74
+          durationS: 3.99
+        - text: So why is the stone in the southeast corner?
+          atS: 73.12
+          durationS: 2.66
+        - text: Because it could be seen better here.
+          atS: 76.1
+          durationS: 1.74
+        - text: The paper said so, plainly.
+          atS: 78.45
+          durationS: 2.16
+        - text: The granite came from Stone Mountain, given by a man named W.
+          atS: 81.21
+          durationS: 3.94
+        - text: H.
+          atS: 85.18
+          durationS: 0.27
+        - text: Venable and carried by the railroad.
+          atS: 85.47
+          durationS: 2.22
+        - text: A few days before the dedication, the same paper pointed out that it was not, technically, a boulder.
+          atS: 88.2
+          durationS: 6.21
+        - text: Look across to the northeast corner.
+          atS: 95.02
+          durationS: 1.93
+        - text: He may well be over there.
+          atS: 97.27
+          durationS: 1.55

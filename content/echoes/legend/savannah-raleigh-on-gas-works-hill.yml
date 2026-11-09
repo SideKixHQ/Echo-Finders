@@ -1,0 +1,121 @@
+# Drafted by Claude Code (2026-11-09) for the Savannah ghost legends.
+# Listening spot: Public sidewalk where East Bay Street meets East Broad Street, at the eastern end of the bluff.
+# Position: Estimated at the Bay and East Broad corner, between the Old Harbor Light and the Pirates' House echoes (low to medium confidence). The sources put "Gas Works Hill" and the old gas-house at the eastern end of the bluff, not at an exact address.
+id: savannah-raleigh-on-gas-works-hill
+title: "Raleigh on Gas Works Hill"
+summary: "A 1910 Savannah guidebook began the city's history with Sir Walter Raleigh landing here in 1584. The record says otherwise."
+place: "East Bay Street and East Broad Street, Savannah, Georgia"
+at: { lat: 32.07870, lng: -81.08350 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 59
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A local tradition printed in the 1910 Illustrated guide to Savannah as "tradition tells us". The National Park Service's account of the 1584 voyage puts it on the Outer Banks, with Raleigh's charter requiring him to stay in England. The script says aloud that it is a legend.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [savannah, savannah-core, colonial, legend]
+teaser: "Savannah once said its story began here, with Sir Walter Raleigh."
+script: |
+  You are at the eastern end of the bluff. Hold on to that, because a legend once started the whole story of this city right here.
+
+  In nineteen ten, a Savannah guidebook opened its timeline of the city not with Oglethorpe, but with Sir Walter Raleigh. In fifteen eighty four, it said, tradition tells us, Raleigh landed here, and held a conference with an Indian chief, near what was known as Gas Works Hill.
+
+  The gas-house stood at the eastern end of this bluff, where a Revolutionary fort called Fort Wayne had been.
+
+  It is a legend, and hard to keep. The National Park Service tells the year differently. Raleigh's charter came on condition that he stayed in England. In April fifteen eighty four he sent an expedition instead, and it arrived on the Outer Banks of what is now North Carolina.
+
+  So nobody can say who, if anyone, stood on this hill in fifteen eighty four. But for a while, the city liked its story to start a century and a half before Oglethorpe.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In nineteen ten, a Savannah guidebook opened its timeline of the city not with Oglethorpe, but with Sir Walter Raleigh."
+    source: 1
+    quote: "CHRONOLOGICAL HISTORY 1584—Sir Walter Raleigh, tradition tells us, landed here"
+  - says: "In fifteen eighty four, it said, tradition tells us, Raleigh landed here, and held a conference with an Indian chief, near what was known as Gas Works Hill."
+    source: 1
+    quote: "1584—Sir Walter Raleigh, tradition tells us, landed here and held conference with an Indian Chief near what is known as Gas Works Hill."
+  - says: "The gas-house stood at the eastern end of this bluff, where a Revolutionary fort called Fort Wayne had been."
+    source: 2
+    quote: "The fort on the eastern end of the bluff, where the gas-house now stands, had been considerably enlarged, more guns mounted, and made quite formidable. It was named Fort Wayne,"
+  - says: "It is a legend, and hard to keep."
+    source: 3
+    quote: "With Queen Elizabeth’s blessing, Raleigh sent a reconnaissance expedition to the New World in April 1584."
+  - says: "The National Park Service tells the year differently."
+    source: 3
+    quote: "The expedition finally arrived on the Outer Banks of present-day North Carolina in July 1584."
+  - says: "Raleigh's charter came on condition that he stayed in England."
+    source: 3
+    quote: "However, Sir Walter Raleigh was eventually granted a charter, with the conditions that his colony be established within seven years and that he remained in England."
+  - says: "In April fifteen eighty four he sent an expedition instead, and it arrived on the Outer Banks of what is now North Carolina."
+    source: 3
+    quote: "Raleigh sent a reconnaissance expedition to the New World in April 1584."
+  - says: "it arrived on the Outer Banks of what is now North Carolina"
+    source: 3
+    quote: "The expedition finally arrived on the Outer Banks of present-day North Carolina in July 1584."
+  - says: "So nobody can say who, if anyone, stood on this hill in fifteen eighty four."
+    source: 1
+    quote: "tradition tells us, landed here"
+  - says: "But for a while, the city liked its story to start a century and a half before Oglethorpe."
+    source: 1
+    quote: "1733—Oglethorpe, with Col. William Bull, of South Caro- lina, landed at Yamacraw Bluff,"
+sources:
+  - title: "Illustrated guide to Savannah (Maude Heyward, 1910): Chronological history"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/unk84031503/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Historical record of the city of Savannah (Lee and Agnew, 1869)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "1584: The First English Voyage"
+    publisher: "National Park Service, Fort Raleigh National Historic Site"
+    url: https://www.nps.gov/fora/learn/historyculture/1584-the-first-english-voyage.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/savannah-raleigh-on-gas-works-hill/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 59.2
+    audioBytes: 948392
+    transcript:
+      totalS: 59.2
+      lines:
+        - text: You are at the eastern end of the bluff.
+          atS: 0
+          durationS: 2.17
+        - text: Hold on to that, because a legend once started the whole story of this city right here.
+          atS: 2.68
+          durationS: 4.82
+        - text: In nineteen ten, a Savannah guidebook opened its timeline of the city not with Oglethorpe, but with Sir Walter Raleigh.
+          atS: 7.78
+          durationS: 7.54
+        - text: In fifteen eighty four, it said, tradition tells us, Raleigh landed here, and held a conference with an Indian chief, near what was known as Gas Works Hill.
+          atS: 15.7
+          durationS: 9.67
+        - text: The gas-house stood at the eastern end of this bluff, where a Revolutionary fort called Fort Wayne had been.
+          atS: 25.81
+          durationS: 6.11
+        - text: It is a legend, and hard to keep.
+          atS: 32.2
+          durationS: 2.4
+        - text: The National Park Service tells the year differently.
+          atS: 35.04
+          durationS: 2.86
+        - text: Raleigh's charter came on condition that he stayed in England.
+          atS: 38.28
+          durationS: 3.16
+        - text: In April fifteen eighty four he sent an expedition instead, and it arrived on the Outer Banks of what is now North Carolina.
+          atS: 41.76
+          durationS: 7.21
+        - text: So nobody can say who, if anyone, stood on this hill in fifteen eighty four.
+          atS: 49.06
+          durationS: 4.66
+        - text: But for a while, the city liked its story to start a century and a half before Oglethorpe.
+          atS: 53.84
+          durationS: 5.38

@@ -9,7 +9,7 @@ at: { lat: 32.78290, lng: -79.94360 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 67
+durationS: 65
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -23,24 +23,123 @@ script: |
 
   In nineteen oh seven it found a lasting tenant. The Charleston Museum moved in, with its natural history collections, its workshops and its library. A city guidebook of nineteen nineteen called it the oldest museum in America, founded in seventeen seventy three. Older, the guide pointed out, than the nation.
 
-  The museum stayed for some seventy years. Then it built a new home on Meeting Street and moved out. The old hall had already been declared a fire hazard.
+  In the nineteen seventies the museum commissioned a new home on Meeting Street, and moved out. The old hall had already been declared a fire hazard.
 
   In nineteen eighty one, it burned to the ground.
 
   The museum is still open, over on Meeting Street. Its old front door is here, with nothing behind it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Four tall columns stand at this end of the park, holding up nothing."
+    source: 1
+    quote: "All that remains of the auditorium are four brick columns with Corinthian capitals that mark the location of the former Rutledge Avenue entrance."
+  - says: "Corinthian capitals, the kind crowned with leaves."
+    source: 1
+    quote: "Only the columns with Corinthian capitals that supported the auditorium entrance remain"
+  - says: "They were the front entrance of a great hall, built here in eighteen ninety nine for a Confederate reunion."
+    source: 1
+    quote: "Open space designed for the center of the park became in 1899 the site of a large auditorium that housed a Confederate Reunion."
+  - says: "After the reunion it was rarely used."
+    source: 1
+    quote: "Thompson Auditorium was rarely used after the reunion"
+  - says: "It became a theatre, then for a while a city hospital."
+    source: 1
+    quote: "Later converted to a theater in 1901 and then in 1904 a temporary location for the city hospital"
+  - says: "In nineteen oh seven it found a lasting tenant."
+    source: 1
+    quote: "the building housed the collections of the Charleston Museum from 1907 until the museum moved to its current location on Meeting Street."
+  - says: "The Charleston Museum moved in, with its natural history collections, its workshops and its library."
+    source: 2
+    quote: "Its large collections of natural history and the history of human culture"
+  - says: "The Charleston Museum moved in, with its natural history collections, its workshops and its library."
+    source: 2
+    quote: "the museum is equipped with wood- working, blacksmith and printing shops, and maintains a reference library of about 6,000 volumes"
+  - says: "A city guidebook of nineteen nineteen called it the oldest museum in America, founded in seventeen seventy three."
+    source: 2
+    quote: "This is the oldest museum in America. It was founded in 1773, which makes it older than the nation"
+  - says: "Older, the guide pointed out, than the nation."
+    source: 2
+    quote: "which makes it older than the nation"
+  - says: "In the nineteen seventies the museum commissioned a new home on Meeting Street, and moved out."
+    source: 1
+    quote: "In the 1970s, the Charleston Museum commissioned a new building to house its collection."
+  - says: "In the nineteen seventies the museum commissioned a new home on Meeting Street, and moved out."
+    source: 1
+    quote: "until the museum moved to its current location on Meeting Street."
+  - says: "The old hall had already been declared a fire hazard."
+    source: 1
+    quote: "already declared a fire hazard and slated for demolition, burned to the ground."
+  - says: "In nineteen eighty one, it burned to the ground."
+    source: 1
+    quote: "The building burned in 1981."
+  - says: "The museum is still open, over on Meeting Street."
+    source: 1
+    quote: "until the museum moved to its current location on Meeting Street."
 sources:
   - title: "Cannon Park, HALS SC-15, data pages"
     publisher: "Historic American Landscapes Survey, Library of Congress"
-    url: https://www.loc.gov/item/sc1224/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc1200/sc1224/data/sc1224data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Guide to Charleston, S. C.; with brief history of the city and a map thereof (1919)"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/20002718/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/guidetocharlesto00walk/guidetocharlesto00walk.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
 pronunciations:
   - written: Rutledge Avenue
     say: RUT-lij Avenue
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-museums-front-door/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 64.7
+    audioBytes: 1036163
+    transcript:
+      totalS: 64.7
+      lines:
+        - text: Four tall columns stand at this end of the park, holding up nothing.
+          atS: 0
+          durationS: 4.39
+        - text: Look at the tops.
+          atS: 4.99
+          durationS: 1.18
+        - text: Corinthian capitals, the kind crowned with leaves.
+          atS: 6.46
+          durationS: 3.8
+        - text: They were the front entrance of a great hall, built here in eighteen ninety nine for a Confederate reunion.
+          atS: 10.86
+          durationS: 6.44
+        - text: After the reunion it was rarely used.
+          atS: 17.9
+          durationS: 2.57
+        - text: It became a theatre, then for a while a city hospital.
+          atS: 20.79
+          durationS: 3.49
+        - text: In nineteen oh seven it found a lasting tenant.
+          atS: 24.98
+          durationS: 3.17
+        - text: The Charleston Museum moved in, with its natural history collections, its workshops and its library.
+          atS: 28.54
+          durationS: 6.26
+        - text: A city guidebook of nineteen nineteen called it the oldest museum in America, founded in seventeen seventy three.
+          atS: 35.4
+          durationS: 6.47
+        - text: Older, the guide pointed out, than the nation.
+          atS: 42.38
+          durationS: 2.95
+        - text: In the nineteen seventies the museum commissioned a new home on Meeting Street, and moved out.
+          atS: 46.14
+          durationS: 5.1
+        - text: The old hall had already been declared a fire hazard.
+          atS: 51.74
+          durationS: 2.8
+        - text: In nineteen eighty one, it burned to the ground.
+          atS: 54.93
+          durationS: 3.04
+        - text: The museum is still open, over on Meeting Street.
+          atS: 58.35
+          durationS: 3.08
+        - text: Its old front door is here, with nothing behind it.
+          atS: 61.75
+          durationS: 2.94
