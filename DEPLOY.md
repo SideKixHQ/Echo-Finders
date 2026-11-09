@@ -83,7 +83,7 @@ Worth knowing before you judge it, so you spend your attention on the right thin
   hear an echo and use the player from anywhere (James, 2026-11-08). An amber banner says
   so. Everything else is real, purchases included. For example
   `https://echo-finders.vercel.app/?at=wilmington-ellen-bellamys-long-view`.
-- `?owner=<code>` turns on owner mode on that phone (below, "Owner mode").
+- `?owner=<code>` turns on owner or tester mode on that phone (below, "Owner mode").
 
 ## The map
 
@@ -199,6 +199,12 @@ code with `/api/owner` against `OWNER_CODE` (Vercel, Production, sensitive) and 
 phone; the code is taken off the address straight away. Settings › Privacy › Owner mode
 turns it off. To change the code, change `OWNER_CODE` in Vercel and redeploy: old links
 stop working, phones already marked stay marked until turned off.
+
+**Tester mode** is the same link with the tester code, `TESTER_CODE` (Vercel, Production,
+sensitive), for anyone James wants testing (2026-11-08). It opens the same things and
+Settings calls it Tester mode. A tester phone asks `/api/owner` again every time the app
+opens, so changing `TESTER_CODE` and redeploying turns every tester off at once; give the
+people who should keep testing the new link. James's own phone is unaffected.
 
 ## Analytics (Vercel Web Analytics)
 

@@ -46,6 +46,8 @@ interface Props {
   readonly theme: "dark" | "light";
   /** Owner mode is on (`owner.ts`), with the way to turn it off. */
   readonly owner?: boolean;
+  /** It is tester mode rather than the owner's own phone: the same, named for what it is. */
+  readonly tester?: boolean;
   readonly onOwnerOff?: () => void;
   readonly onTheme: (theme: "dark" | "light") => void;
   /** Settings › Membership, first: what you have is the first thing anybody looks for here. */
@@ -74,6 +76,7 @@ export function Privacy({
   theme,
   onTheme,
   owner = false,
+  tester = false,
   onOwnerOff,
   membership,
 }: Props) {
@@ -214,10 +217,13 @@ export function Privacy({
 
       {owner && onOwnerOff && (
         <section className="panel">
-          <h3>Owner mode</h3>
+          <h3>{tester ? "Tester mode" : "Owner mode"}</h3>
           <button className="danger-row policy-row" onClick={onOwnerOff}>
             <span>On: every echo unlocked, and playable from anywhere</span>
-            <small>Only on this phone. Tap to turn it off; your owner link turns it back on.</small>
+            <small>
+              Only on this phone. Tap to turn it off; your {tester ? "tester" : "owner"} link turns it
+              back on.
+            </small>
           </button>
         </section>
       )}
