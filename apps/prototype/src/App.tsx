@@ -2827,6 +2827,11 @@ export function App() {
               if (next === "map" && tab === "map") setWalkingView("map");
               setTab(next);
               setListening(false);
+              // The same mistake again, in the city overview: it renders on `cityOpen`
+              // alone, so with no location (where "Show me where they are" opens it) the
+              // tabs changed underneath it and every one of them looked dead (James,
+              // 2026-11-09: "the bottom bar doesnt seem to work on this screen").
+              setCityOpen(false);
             }}
             foundCount={found.list.length}
           />

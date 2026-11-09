@@ -177,6 +177,44 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── The city overview, with no location ─────────────────────────────────────────
+// Location refused: "Show me where they are" opens the overview, and the tab bar has to
+// leave it. It once changed the tab underneath and left the overview on top, so every tab
+// looked dead (James, 2026-11-09).
+{
+  const ctx = await browser.newContext({
+    viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
+    ignoreHTTPSErrors: true, permissions: [],
+  });
+  await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  const p = await ctx.newPage();
+  p.setDefaultTimeout(6000);
+  p.on('pageerror', (e) => errors.push(e.message));
+  await p.goto(`http://127.0.0.1:${PORT}/`, { waitUntil: 'domcontentloaded' });
+  await p.waitForTimeout(800);
+  for (let i = 0; i < 9 && await p.locator('.onb').count(); i++) {
+    const start = p.getByRole('button', { name: /Start looking/ });
+    const allow = p.getByRole('button', { name: /Allow location/ });
+    if (await start.count()) await start.click();
+    else if (await allow.count()) { await allow.click(); await p.waitForTimeout(1500); }
+    else {
+      const all = p.locator('.onb-all');
+      if (await all.count() && await all.isEnabled()) await all.click();
+      await p.locator('.onb-go').first().click();
+    }
+    await p.waitForTimeout(400);
+  }
+  await p.waitForTimeout(2500);
+  const city = p.locator('.city-card-kick');
+  if (!(await visible(city))) await p.getByRole('button', { name: /Show me where they are/ }).click().catch(() => {});
+  await p.waitForTimeout(1500);
+  check('City overview: opens with no location', await visible(city));
+  await p.locator('.nav').getByRole('button', { name: /Settings/ }).click();
+  await p.waitForTimeout(600);
+  check('City overview: Settings in the tab bar leaves it', !(await visible(city)) && await visible(p.locator('.panel.feedback').first()));
+  await ctx.close();
+}
+
 // ── The trip sheet ──────────────────────────────────────────────────────────────
 {
   const { ctx, p } = await freshApp();
