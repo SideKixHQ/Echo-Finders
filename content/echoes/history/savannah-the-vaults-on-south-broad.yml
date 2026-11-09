@@ -9,7 +9,7 @@ at: { lat: 32.07600, lng: -81.09030 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 69
+durationS: 79
 visibility: at-hand
 certainty: contested
 certaintyNote: >-
@@ -19,7 +19,7 @@ certaintyNote: >-
 minAge: 0
 quality: 0.75
 tags: [savannah, savannah-core, cemeteries, civil-war, colonial]
-teaser: "Every one of these vaults was built to stay shut."
+teaser: "All of these vaults were built to stay shut."
 script: |
   Walk in among the old brick vaults.
 
@@ -29,13 +29,44 @@ script: |
 
   A history of the city, published in eighteen sixty-nine, makes an accusation about what followed. It says soldiers broke open the vaults in this old burying ground, searching for valuables they believed had been hidden inside. It says the same happened at Bonaventure, outside town. And it says Union earthworks were dug straight through the Catholic cemetery.
 
-  That is one account. It was written by Savannahians who had every reason to resent the occupation, and it should be heard that way.
+  That is a single account. It was written by Savannahians who had every reason to resent the occupation, and it should be heard that way.
 
-  You may hear other stories in here about what the soldiers did. This one has an advantage. Somebody wrote it down within four years, while the damage could still be seen.
+  You might hear other stories in here about what the soldiers did. This story has an advantage. Somebody wrote it down within four years, while the damage could still be seen.
 
-  Every one of these vaults was built to stay shut.
+  All of these vaults were built to stay shut.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "This was the town's burying ground from about seventeen fifty."
+    source: 2
+    quote: "Established about 1750, it was the original burial ground for the Christ Church Parish."
+  - says: "First for the parish of Christ Church, then, from seventeen eighty-nine, for people of every denomination."
+    source: 2
+    quote: "The cemetery was enlarged in 1789 to become the graveyard for people of all denominations."
+  - says: "The avenue outside was called South Broad Street then."
+    source: 3
+    quote: "Monuments (stone) and brick vaults in Colonial Park, formerly South Broad Street Cemetery."
+  - says: "In December eighteen sixty-four, Sherman's army marched into Savannah."
+    source: 4
+    quote: "The city itself did not fall until Union General William Tecumseh Sherman entered on December 22,1864,"
+  - says: "A history of the city, published in eighteen sixty-nine, makes an accusation about what followed."
+    source: 1
+    quote: "There was no more necessity for it than there was for the breaking open of the vaults in the Old Burying-ground and at Bonaventure, in search of valuables which the soldiers supposed were hidden in them."
+  - says: "It says soldiers broke open the vaults in this old burying ground, searching for valuables they believed had been hidden inside."
+    source: 1
+    quote: "the breaking open of the vaults in the Old Burying-ground and at Bonaventure, in search of valuables which the soldiers supposed were hidden in them."
+  - says: "It says the same happened at Bonaventure, outside town."
+    source: 1
+    quote: "the breaking open of the vaults in the Old Burying-ground and at Bonaventure,"
+  - says: "And it says Union earthworks were dug straight through the Catholic cemetery."
+    source: 1
+    quote: "they ran this line of works through the Catholic Ceme- tery,"
+  - says: "It was written by Savannahians who had every reason to resent the occupation"
+    source: 1
+    quote: "With a heart- lessness for which there is no palliation, not even that of ‘‘ military necessity,”"
+  - says: "Somebody wrote it down within four years, while the damage could still be seen."
+    source: 1
+    quote: "the breaking open of the vaults in the Old Burying-ground and at Bonaventure,"
 sources:
   - title: "Historical record of the city of Savannah (Lee and Agnew, 1869): the occupation, and the old burying ground on South Broad Street"
     publisher: "Library of Congress"

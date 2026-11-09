@@ -7,7 +7,7 @@ triggerRadiusKm: 45
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: built
 format: short
-durationS: 90
+durationS: 55
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -28,11 +28,36 @@ script: |
   for cars, and the awkward bits get straightened out. Savannah's squares are exactly the
   awkward bits. They force traffic to slow down and go around.
 
-  Three were lost to a road scheme in the nineteen fifties. One has since been put back.
+  A few have been lost along the way. The plan has not.
 editorial: draft
-factCheck: single-source
+factCheck: corroborated
+claims:
+  - says: "That layout was drawn in seventeen thirty-three, before there was a city to put it in."
+    source: 1
+    quote: "visitors and residents come to appreciate the original plan which has existed intact since Savannah's founding in 1733."
+  - says: "James Oglethorpe laid out a repeating unit, a square with house lots and civic lots"
+    source: 1
+    quote: "His basic module of design was a square-shaped unit called a \"Ward.\" At the center of each ward was a large, open space called a \"Square.\""
+  - says: "the plan was simply to keep repeating it as the place grew"
+    source: 1
+    quote: "As the city grew, the plan was repeated."
+  - says: "That layout was drawn in seventeen thirty-three"
+    source: 2
+    quote: "General James Oglethorpe laid the city out in 1733 with a series of grids"
+  - says: "Twenty-four were eventually built."
+    source: 2
+    quote: "Savannah had 24 original squares with 22 still in existence."
+  - says: "Twenty-two are still there."
+    source: 2
+    quote: "Savannah had 24 original squares with 22 still in existence."
 sources:
-  - title: Savannah Historic District — National Historic Landmark documentation
+  - title: "Savannah, Georgia: The Lasting Legacy of Colonial City Planning (Teaching with Historic Places)"
     publisher: National Park Service
-    retrievedAt: "2026-09-22"
+    url: https://www.nps.gov/articles/savannah-georgia-the-lasting-legacy-of-colonial-city-planning-teaching-with-historic-places.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Savannah"
+    publisher: "National Park Service, Fort Pulaski National Monument"
+    url: https://www.nps.gov/fopu/learn/historyculture/savannah.htm
+    retrievedAt: "2026-11-09"
     rights: public-domain

@@ -34,19 +34,89 @@ script: |
   Robert Smalls went on to serve five terms in Congress. That night, all of it hung on a sheet.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The boats to Fort Sumter leave from this wharf, and the harbour runs from here down to the open sea."
+    source: 3
+    quote: "A portion of Gadsden’s Wharf is now the site of the Liberty Square Visitor Education Center, a ferry departure location for Fort Sumter."
+  - says: "At three in the morning on the thirteenth of May, eighteen sixty two, a Confederate steamer called the Planter began to move away from a Charleston wharf."
+    source: 1
+    quote: "Perhaps one of the most daring and brazen examples of this took place in the early morning hours of May 13, 1862."
+  - says: "At three in the morning on the thirteenth of May, eighteen sixty two, a Confederate steamer called the Planter began to move away from a Charleston wharf."
+    source: 1
+    quote: "Moored at the Southern Wharf, the crew readied the boilers and at 3:00 a.m. slowly began moving up the Cooper River to the North Atlantic Wharf."
+  - says: "At three in the morning on the thirteenth of May, eighteen sixty two, a Confederate steamer called the Planter began to move away from a Charleston wharf."
+    source: 1
+    quote: "When the war broke out, the steamer was used by Brig. Gen. Roswell Ripley as part of the Confederate defenses of Charleston."
+  - says: "Her three white officers were ashore for the night."
+    source: 1
+    quote: "The crew consisted of three white officers"
+  - says: "Her three white officers were ashore for the night."
+    source: 2
+    quote: "On the night of May 12, 1862, the white crewmembers of the Planter went ashore in Charleston"
+  - says: "That was against standing orders, and it happened often."
+    source: 1
+    quote: "Although it was in violation of standing orders, the white crew of the Planter often left the enslaved crew to man the steamer overnight so they could be with their families."
+  - says: "The men left aboard were enslaved."
+    source: 2
+    quote: "leaving Smalls and the enslaved crewmembers unattended."
+  - says: "One of them was a pilot in his early twenties named Robert Smalls."
+    source: 2
+    quote: "Smalls found himself as a pilot on board the ship."
+  - says: "One of them was a pilot in his early twenties named Robert Smalls."
+    source: 2
+    quote: "By the time he was 23 years old, Smalls had won freedom for himself and his family"
+  - says: "They fired the boilers and steamed up the Cooper River to another wharf, where their wives and children were waiting aboard another boat."
+    source: 1
+    quote: "the crew readied the boilers and at 3:00 a.m. slowly began moving up the Cooper River to the North Atlantic Wharf."
+  - says: "They fired the boilers and steamed up the Cooper River to another wharf, where their wives and children were waiting aboard another boat."
+    source: 1
+    quote: "Chisolm and two other members of the crew led the families to the Etiwan , which was moored at the North Atlantic Wharf, to await the arrival of the Planter ."
+  - says: "Sixteen people in all."
+    source: 1
+    quote: "the Planter and 16 freedom seekers headed out to the channel"
+  - says: "Smalls put on the captain's coat and straw hat."
+    source: 1
+    quote: "Smalls disguised himself as Captain Relyea in his coat and straw hat."
+  - says: "He knew the signals."
+    source: 2
+    quote: "Being a pilot, Smalls knew the proper signals to give"
+  - says: "He was the pilot."
+    source: 2
+    quote: "Smalls found himself as a pilot on board the ship."
+  - says: "At about a quarter past four the Planter came up to Fort Sumter, with Fort Moultrie across the channel."
+    source: 1
+    quote: "At around 4:15 a.m. the Planter approached Fort Sumter."
+  - says: "At about a quarter past four the Planter came up to Fort Sumter, with Fort Moultrie across the channel."
+    source: 1
+    quote: "Across the channel from Fort Sumter sat Fort Moultrie"
+  - says: "Smalls gave the signal."
+    source: 1
+    quote: "Smalls gave the proper signal to the fort’s sentry and was allowed to pass."
+  - says: "The fort let them pass."
+    source: 1
+    quote: "and was allowed to pass."
+  - says: "As they reached the Union fleet, a warship took them for an attacker and readied its guns."
+    source: 1
+    quote: "assumed the Planter was a Confederate threat attacking his ship. Nickels ordered all hands and readied the ships guns to fire on the steamer."
+  - says: "The crew ran a bedsheet up the mast."
+    source: 1
+    quote: "they hurried to raise a bedsheet up the mast to signal surrender."
+  - says: "Robert Smalls went on to serve five terms in Congress."
+    source: 2
+    quote: "He eventually served five terms in the House of Representatives between 1875 - 1887."
 sources:
   - title: "The Planter"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/000/the-planter.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Robert Smalls"
     publisher: "National Park Service"
     url: https://www.nps.gov/people/robert-smalls.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Christopher Gadsden"
     publisher: "National Park Service"
     url: https://www.nps.gov/people/christopher-gadsden.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain

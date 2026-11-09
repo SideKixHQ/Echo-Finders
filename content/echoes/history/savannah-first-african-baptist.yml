@@ -29,7 +29,47 @@ script: |
 
   The stucco went on in the nineteen forties. So you cannot see a single one of those bricks. They are all still there.
 editorial: draft
-factCheck: corroborated
+factCheck: single-source
+claims:
+  - says: "Savannah grey brick, laid four bricks deep."
+    source: 1
+    quote: "The rectangular plan is constructed of Savannah gray brick laid four bricks deep"
+  - says: "those bricks were formed by hand at night, on the bank of the river, by members of this congregation"
+    source: 1
+    quote: "The Savannah gray bricks were formed by hand at night on the banks of the Savannah River by church members after they had"
+  - says: "They had been worshipping on this spot since the eighteen thirties, in an old wooden church bought from a white Baptist congregation that had moved to a new building."
+    source: 1
+    quote: "Savannah Baptist had just finished their new building on Chippewa Square and had left the wooden structure on Franklin Square empty and for sale."
+  - says: "since the eighteen thirties"
+    source: 1
+    quote: "In 1832, First Colored Baptist Church on Bryan Street had a schism that separated the church into two entities."
+  - says: "They paid for it with money earned working nights, with their owners' permission."
+    source: 1
+    quote: "Marshall’s group purchased the building using money they had earned while working at night as permitted by their masters,"
+  - says: "it was money they had been saving to buy their own freedom, or their family's"
+    source: 1
+    quote: "these funds were quite often their “freedom funds” they had been saving to buy their own or their family’s freedom."
+  - says: "In eighteen fifty five they pulled the wooden church down and began this one."
+    source: 1
+    quote: "The congregation worshipped in the wooden building until 1855 when they had raised enough funds to pay to have a new church built. The old church was torn down"
+  - says: "It took four years."
+    source: 1
+    quote: "construction began on the new larger, brick building and would continue for the next four years."
+  - says: "It cost more than ten thousand dollars, and it was paid off before the end of eighteen fifty nine, the year it was finished."
+    source: 1
+    quote: "The building cost more than $10,000 to build, all of which was paid off before the end of the year it was completed."
+  - says: "the year it was finished"
+    source: 1
+    quote: "Completed in 1859 in the Greek and Romanesque Revival styles,"
+  - says: "It is recorded as the first brick building in Savannah owned by African Americans."
+    source: 1
+    quote: "First African Baptist was the first brick building owned by African Americans in the city of Savannah"
+  - says: "The stucco went on in the nineteen forties."
+    source: 1
+    quote: "The building was given a stucco coating in the 1940s"
+  - says: "So you cannot see a single one of those bricks."
+    source: 1
+    quote: "with a gray-beige textured stucco finish covering a masonry structure."
 sources:
   - title: "First African Baptist Church, 23 Montgomery Street (HABS GA-276), data pages and 2017 addendum"
     publisher: "Historic American Buildings Survey, Library of Congress"

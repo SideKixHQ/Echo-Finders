@@ -27,7 +27,7 @@ script: |
 
   Then the air got to it. In nineteen sixty six the city painted the dome to stop it deteriorating. The culprit, according to the federal survey of the building, was a local fertilizer plant.
 
-  By the early nineteen eighties it wore a protective coating, coloured to look like the weathered copper it had been designed to become all along.
+  Later the survey found it under a protective coating, coloured to look like the weathered copper it had been designed to become all along.
 
   What you are looking at now came after that.
 
@@ -38,6 +38,34 @@ detail: >-
   The architect was Hyman W. Witcover.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "This is the spot where the City Exchange stood from seventeen ninety nine."
+    source: 2
+    quote: "The City Hall or new City Exchange, erected in 1904, occupies the site of the old City Exchange, erected in 1799,"
+  - says: "the city tore it down"
+    source: 1
+    quote: "The current structure replaced a circa 1799 City Exchange building"
+  - says: "In nineteen oh four the city tore it down and started again."
+    source: 1
+    quote: "The Savannah City Hall was built during the period of July, 1904 - December, 1905."
+  - says: "The new City Hall was finished at the end of nineteen oh five"
+    source: 1
+    quote: "The new municipal offices were occupied on December 20th & 21st, 1905."
+  - says: "the first council met here in January nineteen oh six"
+    source: 1
+    quote: "The first City Council meeting took place on January 2, 1906."
+  - says: "The dome rises another seventy feet above the building."
+    source: 1
+    quote: "The dome construction rises another seventy feet (70') into the air."
+  - says: "It was sheathed in copper, and for many years the city simply let that copper weather on its own."
+    source: 1
+    quote: "The entire dome and cupola are copper sheathed and for many years were left to weather naturally."
+  - says: "In nineteen sixty six the city painted the dome to stop it deteriorating."
+    source: 1
+    quote: "In 1966 the copper dome was painted to halt deterioration caused by a local fertilizer plant."
+  - says: "protective coating, coloured to look like the weathered copper"
+    source: 1
+    quote: "made it necessary to cover the dome with protective coatings colored to simulate weathered copper"
 sources:
   - title: "Savannah City Hall, Bay and Bull Streets (HABS GA-2165), data pages"
     publisher: "Historic American Buildings Survey, Library of Congress"

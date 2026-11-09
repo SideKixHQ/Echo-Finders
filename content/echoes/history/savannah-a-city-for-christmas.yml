@@ -9,7 +9,7 @@ at: { lat: 32.07375, lng: -81.09435 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 78
+durationS: 86
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -37,6 +37,49 @@ factCheck: corroborated
 pronunciations:
   - written: Meldrim
     say: MEL-drim
+claims:
+  - says: "It was begun in eighteen fifty-three for Charles Green"
+    source: 1
+    quote: "begun 1853, finished 1861"
+  - says: "for Charles Green, in the Gothic style"
+    source: 1
+    quote: "Built by Chas. Green,"
+  - says: "On the twenty-second of December, eighteen sixty-four, it became the headquarters of General William Tecumseh Sherman."
+    source: 1
+    quote: "Served as Sherman^s headquarters from December 22, 1864 to February 1, 1865"
+  - says: "His army had marched from Atlanta to the sea, and Savannah was his."
+    source: 4
+    quote: "The city itself did not fall until Union General William Tecumseh Sherman entered on December 22,1864, after burning the city of Atlanta and everything else in their path on his \"march to the sea.\""
+  - says: "That same day, Sherman dated a telegram to President Lincoln."
+    source: 2
+    quote: "Savannah Ga Dec 22. 1864"
+  - says: "It went by way of Fort Monroe, in Virginia, and it is marked from there on the twenty-fifth."
+    source: 2
+    quote: "Via Ft. Monroe Va Dec 25."
+  - says: "Christmas Day."
+    source: 2
+    quote: "Via Ft. Monroe Va Dec 25."
+  - says: "It reads, I beg to present you as a Christmas gift the City of Savannah, with one hundred and fifty heavy guns and plenty of ammunition, and also about twenty-five thousand bales of cotton."
+    source: 2
+    quote: "I beg to present you as a Christmas gift the City of Savannah with 150 heavy guns & plenty of ammunition & also about 25.000 bales of cotton."
+  - says: "Lincoln answered the day after Christmas."
+    source: 3
+    quote: "Executive Mansion Washington Dec. 26. 1864"
+  - says: "Many, many thanks for your Christmas gift, he wrote."
+    source: 3
+    quote: "Many, many thanks for your Christmas gift, the capture of Savannah."
+  - says: "He admitted that when Sherman left Atlanta for the coast, he had been anxious, if not fearful."
+    source: 3
+    quote: "When you were about leaving Atlanta for the Atlantic Coast, I was anxious , if not fearful;"
+  - says: "Sherman kept his headquarters in this house until the first of February."
+    source: 1
+    quote: "Served as Sherman^s headquarters from December 22, 1864 to February 1, 1865"
+  - says: "The telegram, and a copy of the reply, are in the Library of Congress."
+    source: 2
+    quote: "A copy of Lincoln's December 26 reply to General Sherman is in this collection."
+  - says: "Not many Christmas presents come with an inventory."
+    source: 2
+    quote: "with 150 heavy guns & plenty of ammunition & also about 25.000 bales of cotton."
 sources:
   - title: "Green-Meldrim House, 327 Bull Street, Savannah (HABS GA-222): record and data pages"
     publisher: "Library of Congress, Historic American Buildings Survey"

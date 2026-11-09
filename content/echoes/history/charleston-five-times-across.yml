@@ -43,17 +43,98 @@ script: |
   The foundry still had the original moulds. The bells were recast, and came home.
 
   By that historian's account, they ring today with the same tone they rang for the
-  birthday of King George.
+  birthday of the King.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Look up at the white steeple of St. Michael's."
+    source: 1
+    quote: "a 186-foot high massively proportioned steeple."
+  - says: "A Charleston historian, writing in nineteen-oh-six, counted how many times those bells had crossed the Atlantic."
+    source: 2
+    quote: "Published November, 1906."
+  - says: "A Charleston historian, writing in nineteen-oh-six, counted how many times those bells had crossed the Atlantic."
+    source: 2
+    quote: "having five times crossed the Atlantic."
+  - says: "She made it five."
+    source: 2
+    quote: "having five times crossed the Atlantic."
+  - says: "The first crossing was the obvious one."
+    source: 1
+    quote: "St. Michael's bells are among the city's most beloved treasures, imported from England in 1764."
+  - says: "They were made in England, and imported in seventeen sixty-four."
+    source: 1
+    quote: "St. Michael's bells are among the city's most beloved treasures, imported from England in 1764."
+  - says: "The second came at the end of the Revolution."
+    source: 1
+    quote: "During the Revolutionary War the bells were taken to England as a prize of war"
+  - says: "In seventeen eighty-two the British army was getting ready to leave Charleston, and an artillery officer claimed the bells as his own, a perquisite of his rank."
+    source: 3
+    quote: "The British completed their evacuation of Charleston on December 14, 1782."
+  - says: "In seventeen eighty-two the British army was getting ready to leave Charleston, and an artillery officer claimed the bells as his own, a perquisite of his rank."
+    source: 2
+    quote: "One preparation for departure was extremely obnoxious to the people."
+  - says: "In seventeen eighty-two the British army was getting ready to leave Charleston, and an artillery officer claimed the bells as his own, a perquisite of his rank."
+    source: 2
+    quote: "St. Michael’s bells were taken down by order of Major Traille of the Royal Artillery, who claimed them as his “perquisite”’ in right of his rank as Commander of the Artillery."
+  - says: "The church appealed, and an order came from New York to give them back."
+    source: 2
+    quote: "It then applied to Sir Guy Carleton at New York and he issued an order for the return of the bells."
+  - says: "They were already on a ship to England."
+    source: 2
+    quote: "nately they had already been shipped to England"
+  - says: "The third crossing was a business deal."
+    source: 2
+    quote: "Mr. Rybenau, the merchant who had speculated in the church bells, reshipped them to Charleston, hoping to make a profit."
+  - says: "A merchant who had once lived in Charleston bought them in England, as a speculation, and shipped them back to sell to the church."
+    source: 2
+    quote: "having been bought by a Mr. Rybenau, formerly a merchant of Charles Town, on speculation."
+  - says: "A merchant who had once lived in Charleston bought them in England, as a speculation, and shipped them back to sell to the church."
+    source: 2
+    quote: "reshipped them to Charleston, hoping to make a profit."
+  - says: "When they arrived, people ran down to the wharf, hauled them to the church themselves, and swung them back up into the steeple."
+    source: 2
+    quote: "The people rushed to the wharf, drew them joyously to the church, and swung them to the steeple."
+  - says: "Then the merchant died suddenly, his estate went bankrupt, and nobody ever asked for payment."
+    source: 2
+    quote: "he died suddenly, his estate was declared bankrupt, and no payment was ever demanded for the bells."
+  - says: "The fourth and fifth came with the Civil War."
+    source: 1
+    quote: "During the Civil War, they were sent to Columbia, but cracked in a great fire there in 1865. The metal fragments were salvaged and sent to England to be recast in their original moulds and rehung."
+  - says: "The bells were sent inland to Columbia for safekeeping, and in eighteen sixty-five Columbia burned."
+    source: 2
+    quote: "St. Michael’s bells, it . should have been said, were taken down and sent to Columbia for safe keeping."
+  - says: "The bells were sent inland to Columbia for safekeeping, and in eighteen sixty-five Columbia burned."
+    source: 1
+    quote: "During the Civil War, they were sent to Columbia, but cracked in a great fire there in 1865."
+  - says: "They broke in the fire."
+    source: 2
+    quote: "were burned and broken to pieces."
+  - says: "The pieces were gathered up and sent back to the same English foundry that had made them."
+    source: 2
+    quote: "ments being afterwards gathered up, they were sent to England to the same foundry where they had originally been cast."
+  - says: "The foundry still had the original moulds."
+    source: 2
+    quote: "There, with English permanence, the old -moulds were preserved."
+  - says: "The bells were recast, and came home."
+    source: 2
+    quote: "They were recast, returned to Charleston"
+  - says: "By that historian's account, they ring today with the same tone they rang for the birthday of the King."
+    source: 2
+    quote: "ring to-day the same tone as when they pealed for the birthday of his Majesty"
 sources:
   - title: "St. Michael's Episcopal Church"
     publisher: "National Park Service, Travel Charleston"
     url: https://www.nps.gov/places/st-michael-s-episcopal-church.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), St. Michael's bells"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/06042434/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Liberty Won and Lost: The British Evacuation of Charleston"
+    publisher: "National Park Service, Fort Sumter and Fort Moultrie National Historical Park"
+    url: https://www.nps.gov/articles/000/british-evacuation-of-charleston.htm
+    retrievedAt: "2026-11-09"
     rights: public-domain

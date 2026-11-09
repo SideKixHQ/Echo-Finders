@@ -41,6 +41,49 @@ script: |
   The man falling from his horse is certain. The man beneath him is not.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Liberty stands on top, holding a flag"
+    source: 5
+    quote: "surmounted by a statue of Liberty holding the banner of the ‘‘stars and stripes.”"
+  - says: "the carved panel of a man falling from his horse, still gripping his sword"
+    source: 5
+    quote: "wounded, he falls from his horse, still grasping his sword."
+  - says: "That is Casimir Pulaski, a Polish cavalry commander who fought for the Americans."
+    source: 1
+    quote: "On September 15, 1777, the American congress promoted Pulaski to the rank of Brigadier General in command of cavalry."
+  - says: "On the ninth of October, seventeen seventy nine, he was hit by grapeshot leading an attack on the British lines around Savannah."
+    source: 1
+    quote: "In the attack on October 9, 1779, American and French forces fell short of retaking the city. Pulaski was also mortally wounded by grapeshot"
+  - says: "Two days later he was dead."
+    source: 1
+    quote: "would die two days later aboard the American ship Wasp on route to Charleston."
+  - says: "An officer of his who was wounded and on board the same ship said so."
+    source: 2
+    quote: "an account written by one of Pulaski’s staff, who was also wounded and was on board the vessel, says that he died at sea"
+  - says: "This monument was finished in eighteen fifty five."
+    source: 4
+    quote: "The monument was completed January 8, 1855."
+  - says: "One account says he was put aboard a ship bound for Charleston, died at sea, and was buried at sea."
+    source: 1
+    quote: "would die two days later aboard the American ship Wasp on route to Charleston. Pulaski was then reported to have been buried at sea"
+  - says: "An officer of his who was wounded and on board the same ship said so."
+    source: 5
+    quote: "Captain Bentalou, an officer of Pulaski’s staff, who was also wounded and on board of the vessel, wrote an account stating that Pulaski died on board and his body was thrown into the water"
+  - says: "The Park Service still says he was reported to have been buried at sea."
+    source: 1
+    quote: "Pulaski was then reported to have been buried at sea near the place where the Savannah River flows into the Atlantic."
+  - says: "The other story says he was carried to a plantation called Greenwich, died there, and was buried at night under a palmetto tree."
+    source: 3
+    quote: "He was taken to Greenwich, then the home of Mrs. Samuel Bowen. He died on the 11th October and was buried at night beneath a majestic palmetto."
+  - says: "A city guidebook in nineteen ten went further."
+    source: 3
+    quote: "In 1854 his remains were disinterred and placed beneath his monument."
+  - says: "His remains, it said, were dug up in eighteen fifty four and placed beneath this monument."
+    source: 3
+    quote: "In 1854 his remains were disinterred and placed beneath his monument."
+  - says: "People were arguing about it while the marble was going up."
+    source: 4
+    quote: "A controversy raged at this time as to the place of Count Pu- laski’s burial, that it was at Greenwich and not at sea;"
 sources:
   - title: "Casimir Pulaski"
     publisher: "National Park Service, Fort Pulaski National Monument"
@@ -62,6 +105,16 @@ sources:
     url: https://www.loc.gov/item/ca30001435/
     retrievedAt: "2026-10-15"
     rights: public-domain
+  - title: "Historical record of the city of Savannah (Lee and Agnew, 1869): Death and burial of Count Pulaski; Monuments"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
 pronunciations:
   - written: Casimir Pulaski
     say: KAZ-ih-meer puh-LASS-kee
+  - title: "Historical record of the city of Savannah (Lee and Agnew, 1869): Death and burial of Count Pulaski; Monuments"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-11-09"
+    rights: public-domain

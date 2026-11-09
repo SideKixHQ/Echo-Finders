@@ -9,7 +9,7 @@ at: { lat: 32.78075, lng: -79.93145 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 97
+durationS: 106
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -24,9 +24,7 @@ script: |
 
   The land was given to the city for a market in seventeen eighty-eight, and after a great
   fire the hall and the long open sheds behind it went up in eighteen forty and forty-one.
-  Every day, meat and produce came in from the country around the town. The rules were
-  strict. Cuts and weights were regulated. Vendors had to wear clean white aprons. And to
-  keep everything fresh, whatever was left at the end of the day was thrown into the street.
+  Every day, meat and produce came in from the rural communities nearby. The rules were strict. Cuts and weights were regulated. Vendors had to wear clean white aprons. And vendors had to bring only fresh goods, so whatever was left at the end of the day was thrown into the street.
 
   Which is where the market's other workers came in.
 
@@ -43,19 +41,77 @@ script: |
   standing, a few blocks south of here, on Chalmers Street.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Look up at the band of decoration under the roof of the Market Hall."
+    source: 1
+    quote: "Sheep and bull skulls decorate the stucco frieze of the Market Hall"
+  - says: "Those shapes are skulls."
+    source: 1
+    quote: "Sheep and bull skulls decorate the stucco frieze of the Market Hall"
+  - says: "They are an advertisement."
+    source: 1
+    quote: "symbolizing the presence of a meat market."
+  - says: "This was a meat market."
+    source: 1
+    quote: "symbolizing the presence of a meat market."
+  - says: "The land was given to the city for a market in seventeen eighty-eight, and after a great fire the hall and the long open sheds behind it went up in eighteen forty and forty-one."
+    source: 1
+    quote: "The land on which the Market sits was donated in 1788 by the Pinckney family for use as a city market."
+  - says: "The land was given to the city for a market in seventeen eighty-eight, and after a great fire the hall and the long open sheds behind it went up in eighteen forty and forty-one."
+    source: 1
+    quote: "White's 1841 market complex replaced the charred remains of these early buildings after the 1838 Charleston fire."
+  - says: "The land was given to the city for a market in seventeen eighty-eight, and after a great fire the hall and the long open sheds behind it went up in eighteen forty and forty-one."
+    source: 1
+    quote: "The buildings were constructed in 1840 to 41"
+  - says: "Every day, meat and produce came in from the rural communities nearby."
+    source: 1
+    quote: "Meat and produce were brought to the market daily from nearby rural communities."
+  - says: "Cuts and weights were regulated."
+    source: 1
+    quote: "Other ordinances regulated butcher cuts and weights and required vendors to wear clean white aprons."
+  - says: "Vendors had to wear clean white aprons."
+    source: 1
+    quote: "required vendors to wear clean white aprons."
+  - says: "And vendors had to bring only fresh goods, so whatever was left at the end of the day was thrown into the street."
+    source: 1
+    quote: "Vendors were required to bring only fresh products. To that end, remaining products were thrown in the street at the end of the market day."
+  - says: "Buzzards cleaned the streets around the market, and Charlestonians valued the service so much that the birds were protected by law."
+    source: 1
+    quote: "Buzzards (Charleston eagles) scavenged the surrounding streets for this waste, a service so valued by Charlestonians, that the birds were protected by law."
+  - says: "People called them Charleston eagles."
+    source: 1
+    quote: "Buzzards (Charleston eagles)"
+  - says: "A visiting reporter in eighteen seventy-four watched one pick the street clean, then fly up to sit on the market-house roof, protected, he wrote, like any official of the city."
+    source: 2
+    quote: "Columbia, 8. 0., Oct. 10,1674, For two weeks I hare been iu the two Caro* lints"
+  - says: "A visiting reporter in eighteen seventy-four watched one pick the street clean, then fly up to sit on the market-house roof, protected, he wrote, like any official of the city."
+    source: 2
+    quote: "when ho has picked tho street clean, Hies up on the market-house roof, and looks dismally on Nature and Providence, lie does not press bis attentions upon the butcher, although protected by law, like any carrion official of tho city"
+  - says: "You may have heard that these sheds were a slave market."
+    source: 3
+    quote: "Customarily in Charleston, enslaved men, women, and children were sold on the north side of the Exchange Building (then the Custom House)."
+  - says: "Charleston sold enslaved people at the Exchange, and after eighteen fifty-six in private marts on Chalmers, State and Queen streets."
+    source: 3
+    quote: "Customarily in Charleston, enslaved men, women, and children were sold on the north side of the Exchange Building (then the Custom House)."
+  - says: "Charleston sold enslaved people at the Exchange, and after eighteen fifty-six in private marts on Chalmers, State and Queen streets."
+    source: 3
+    quote: "An 1856 city ordinance prohibited this practice of public sales, resulting in a number of sales rooms, yards, or marts along Chalmers, State and Queen Streets."
+  - says: "One of the buildings built to sell people is still standing, a few blocks south of here, on Chalmers Street."
+    source: 3
+    quote: "Location: 6 Chalmers Street, Charleston, SC The Old Slave Mart, located on one of Charleston's few remaining cobblestone streets, is the only known extant building used as a slave auction gallery in South Carolina."
 sources:
   - title: "Market Hall and Sheds"
     publisher: "National Park Service, Travel Historic Charleston"
     url: https://www.nps.gov/places/market-hall-and-sheds.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "\"The South,\" Chicago Daily Tribune, October 19, 1874, page 3 (turkey buzzards at the Charleston market)"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn84031492/1874-10-19/ed-1/?sp=3
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Old Slave Mart"
     publisher: "National Park Service, Travel Historic Charleston"
     url: https://www.nps.gov/places/old-slave-mart.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain

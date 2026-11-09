@@ -17,7 +17,7 @@ quality: 0.75
 tags: [savannah, savannah-core, american-revolution, siege-of-savannah, battlefields]
 teaser: "Every man was to wear a piece of white paper in his hat."
 script: |
-  Stand in the park here, beside the old railroad depot. In seventeen seventy nine this ground was Spring Hill, the strongest point in the British lines around Savannah. It guarded the road to Augusta.
+  Stand in the park here, beside the old railroad depot. In seventeen seventy nine this ground was Spring Hill, the best fortified point in the British lines around Savannah. It guarded the road to Augusta.
 
   On the eighth of October, the French and American armies besieging the town got their orders for an attack on this spot, before dawn. Nobody was to fire until the redoubt was taken. And so that they could tell friend from enemy in the dark, every man was to wear a piece of white paper in his hat.
 
@@ -25,13 +25,74 @@ script: |
 
   The columns lost their way in the dark and arrived in daylight. The British were waiting. French and American flags were planted on the redoubt, and torn down, and planted again. The fight began at daybreak. By nine o'clock it was over.
 
-  The allies had brought about four thousand nine hundred men. Around eleven hundred were killed or wounded that morning.
+  The allies had more than six and a half thousand men. Around eleven hundred were killed or wounded that morning.
 
   In eighteen thirty seven, the redoubt itself was dug down to fill the ground for the new railroad depot. Bayonets and bullets came up with the soil.
 
   They had planned everything, down to the paper in their hats. What they could not plan for was a man walking across with the plan.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Stand in the park here, beside the old railroad depot."
+    source: 4
+    quote: "The site was located on land once part of the Spring Hill Plantation and hence the name \"Spring Hill Depot.\""
+  - says: "In seventeen seventy nine this ground was Spring Hill, the best fortified point in the British lines around Savannah."
+    source: 1
+    quote: "thence to where the Central Railroad depot and workshops now stand. This point was then known as Spring Hill, and was the best fortified position on the lines,"
+  - says: "It guarded the road to Augusta."
+    source: 1
+    quote: "commanded the road to Ebenezer and Augusta."
+  - says: "On the eighth of October, the French and American armies besieging the town got their orders for an attack on this spot, before dawn."
+    source: 1
+    quote: "The Spring Hill redoubt was selected as the point to be attacked, and before dawn on the ninth as the time for the assault. On the 8th General Lincoln issued orders"
+  - says: "Nobody was to fire until the redoubt was taken."
+    source: 1
+    quote: "Each soldier was forbidden to fire his weapon before the redoubt was carried;"
+  - says: "every man was to wear a piece of white paper in his hat"
+    source: 1
+    quote: "to distinguish them from the enemy, each was ordered to wear a piece of white paper in his hat."
+  - says: "That night, a sergeant major of the American grenadiers slipped away to the British."
+    source: 1
+    quote: "During the night a sergeant-major of the"
+  - says: "He took a copy of the orders with him."
+    source: 1
+    quote: "can grenadiers deserted to the enemy, carrying a copy of the order for the attack."
+  - says: "The British commander moved men to this side of his line."
+    source: 1
+    quote: "Acting upon this information he reinforced the right of his line"
+  - says: "The columns lost their way in the dark and arrived in daylight."
+    source: 1
+    quote: "owing to the darkness failed to reach the positions assigned them until daylight."
+  - says: "The British were waiting."
+    source: 1
+    quote: "The British were on the alert, and as soon as they were seen opened a heavy fire upon them."
+  - says: "By nine o'clock it was over."
+    source: 3
+    quote: "In the attack on October 9, 1779, American and French forces fell short of retaking the city."
+  - says: "French and American flags were planted on the redoubt, and torn down, and planted again."
+    source: 1
+    quote: "Both parties reached the redoubt and planted their flags upon it, but in a few moments were driven away, only to press forward again."
+  - says: "The fight began at daybreak."
+    source: 1
+    quote: "The conflict begun at daybreak and was over by nine o’clock,"
+  - says: "By nine o'clock it was over."
+    source: 1
+    quote: "The conflict begun at daybreak and was over by nine o’clock,"
+  - says: "The allies had more than six and a half thousand men."
+    source: 2
+    quote: "total strength of the allied army, 6,583 men."
+  - says: "Around eleven hundred were killed or wounded that morning."
+    source: 2
+    quote: "The aggregate loss of killed and wounded of the French and American forces was 1,133 men."
+  - says: "In eighteen thirty seven, the redoubt itself was dug down to fill the ground for the new railroad depot."
+    source: 1
+    quote: "In 1837 it was cut down to fill wp a place where the Central Railroad depot now stands."
+  - says: "Bayonets and bullets came up with the soil."
+    source: 2
+    quote: "BAYONETS DUG UP AT THE SPRING HILL REDOUBT."
+  - says: "came up with the soil"
+    source: 1
+    quote: "A number of articles of warfare were dug up and are now in the possession of citizens."
 sources:
   - title: "Historical record of the city of Savannah (F. D. Lee and J. L. Agnew, 1869), chapter on the siege and the assault upon Spring Hill redoubt"
     publisher: "Library of Congress"

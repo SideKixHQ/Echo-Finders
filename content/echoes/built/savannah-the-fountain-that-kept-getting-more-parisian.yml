@@ -25,7 +25,7 @@ quality: 0.75
 tags: [savannah, savannah-core, forsyth-park, fountains]
 teaser: "Ask where it came from. The guidebooks never quite agreed."
 script: |
-  Walk up to the edge of the basin and look at the fountain. The tiers, the figures, the water falling from one level to the next.
+  Walk up to the edge of the basin and look at the fountain. The tiers, the figures, the water falling from level to level.
 
   Now ask where it came from. Savannah's own guidebooks never quite agreed.
 
@@ -35,11 +35,39 @@ script: |
 
   By nineteen ten, a third guide had it modelled on Paris. Close, but no longer exact.
 
-  What is certain is plainer. Before the fountain, the middle of this park was marked by a small wooden bridge. The fountain went in around eighteen fifty eight, and local photographers were soon selling pictures of it. After the war, a photographer who had followed Sherman's army put it in his book of the campaign.
+  What is certain is plainer. Before the fountain, the middle of this park was marked by a small wooden bridge. The fountain went in around eighteen fifty eight, and a photographer on Broughton Street put it on a stereo card. After the war, a photographer who had followed Sherman's army put it in his book of the campaign.
 
   The fountain has not changed much since. The story keeps improving.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "In eighteen ninety, one said it was designed from a prize model shown at an exhibition in London"
+    source: 2
+    quote: "In the center of the park is a magnificent fountain designed from the model which was awarded the prize in the first International Exhi- bition in London in 1844"
+  - says: "similar to the grand fountain in the Place de la Concorde, in Paris"
+    source: 2
+    quote: "similar to the grand fountain in the Place de la Concorde in Paris."
+  - says: "In eighteen ninety nine, another went further."
+    source: 3
+    quote: "The fountain in the center of this Nt park is an exact reproduction of the"
+  - says: "An exact reproduction, it said, of the one in Paris."
+    source: 3
+    quote: "de la Concorde, at Paris, and has been universally admired."
+  - says: "By nineteen ten, a third guide had it modelled on Paris."
+    source: 4
+    quote: "which was replaced by the fountain, which was modelled from the one in the Place de la Concorde in Paris."
+  - says: "Before the fountain, the middle of this park was marked by a small wooden bridge."
+    source: 4
+    quote: "its center was marked by a small wooden bridge, which was replaced by the fountain,"
+  - says: "The fountain went in around eighteen fifty eight"
+    source: 1
+    quote: "Photo shows the Forsyth Park Fountain, installed in 1858."
+  - says: "a photographer on Broughton Street put it on a stereo card"
+    source: 1
+    quote: "Park fountain playing / photographed by J.N. Wilson, No. 143 Broughton Street, Savannah, Ga."
+  - says: "After the war, a photographer who had followed Sherman's army put it in his book of the campaign."
+    source: 5
+    quote: "Plate from: Photographic views of Sherman's campaign / from negatives taken in the field by Geo. N. Barnard. New York : 1866."
 sources:
   - title: "Park fountain playing / photographed by J.N. Wilson (stereograph, Marian S. Carson Collection)"
     publisher: "Library of Congress, Prints and Photographs Division"

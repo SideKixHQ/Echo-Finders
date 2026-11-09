@@ -31,7 +31,7 @@ script: |
 
   Because it could be seen better here. The paper said so, plainly.
 
-  The granite came from Stone Mountain, given by a quarry owner and carried free by the railroad. A few days before the dedication, the same paper pointed out that it was not, technically, a boulder.
+  The granite came from Stone Mountain, given by a man named W. H. Venable and carried by the railroad. A few days before the dedication, the same paper pointed out that it was not, technically, a boulder.
 
   Look across to the northeast corner. He may well be over there.
 editorial: draft
@@ -41,6 +41,61 @@ pronunciations:
     say: toh-moh-CHEE-chee
   - written: Yamacraw
     say: YAM-uh-craw
+claims:
+  - says: "It honours Tomochichi, the Yamacraw leader whose friendship the first colonists depended on."
+    source: 1
+    quote: "a monument to Tomo* chichi, the friendly chief of the Yamacraws whose offices were of such great benefit to the early colonists."
+  - says: "When he died, he had asked to be buried among the English."
+    source: 3
+    quote: "In compliance with his request that he might be buried among the English,"
+  - says: "His body came down the river by canoe."
+    source: 3
+    quote: "his remains were brought from his place above the town in a canoe,"
+  - says: "Oglethorpe himself was one of the pall-bearers"
+    source: 3
+    quote: "the corpse, with Oglethorpe and Colonel Stephens, the President, as pall-bearers, was escorted to Percival * square,"
+  - says: "the militia fired three volleys as he was lowered into the ground, in this square"
+    source: 3
+    quote: "As the body was lowered into the earth three volleys of musketry were fired by the militia."
+  - says: "in this square"
+    source: 3
+    quote: "It is situated on the east side of Wright (formerly Percival) square,"
+  - says: "In eighteen ninety-nine, as the Georgia Society of Colonial Dames prepared to mark the grave, the Savannah Morning News laid out the candidates."
+    source: 1
+    quote: "When ihe annual meeting of the Georgia Society of Colonial Dames is held here,"
+  - says: "One tradition put him under the courthouse."
+    source: 1
+    quote: "There is another belief that he was buried where the court house now stands"
+  - says: "Another, under the Gordon monument in the middle of the square."
+    source: 1
+    quote: "An other tradition has it that the Gordon monument stands above old Tomochlehi's burial place."
+  - says: "A pile of stones had once stood here, said to be over his body."
+    source: 1
+    quote: "A pile of stones tornterly stood in Wright square. These w,Te also said to be above the body of Tomochichi."
+  - says: "The best evidence the Dames had came from an old woman who had died a few months before, at eighty-nine."
+    source: 1
+    quote: "A few months ago an old ladv, who had been a resident of Savannah for near’y all of her 89 years, died."
+  - says: "The best evidence the Dames had"
+    source: 1
+    quote: "This evidence of the resting place cf the old Indian chief is looked Upon by the ladies as the most authentic they have"
+  - says: "She remembered recess at a school near the square, and the children shouting, let's go play on old Tomochichi's grave."
+    source: 1
+    quote: "“Come,” the children used to say when they had been dismissed for their recess, \"let's go play on old Tomochichi’s"
+  - says: "They would race to the northeast corner, in front of the Lutheran church."
+    source: 1
+    quote: "off (hey would race to Ihe spot that is now a part of the northeast quartering of the square, or that just in front of the Lutheran Church of the Ascension."
+  - says: "Because it could be seen better here."
+    source: 1
+    quote: "It will be placed in a position, however, where the exposure will i)e good nnd w'here there wlh bo but Utile obstruction from tho general view."
+  - says: "The granite came from Stone Mountain, given by a man named W. H. Venable and carried by the railroad."
+    source: 1
+    quote: "He offered to have a boulder taken from Stone mountain and shipped to Savannah. The officials of the Central Railroad were just as generous,"
+  - says: "it was not, technically, a boulder"
+    source: 2
+    quote: "Technically speaking, the stone is not a boulder."
+  - says: "He may well be over there."
+    source: 1
+    quote: "the bones of the old Indian were buried a short distance nwav."
 sources:
   - title: "The morning news (Savannah), 5 February 1899, page 8: Over Tomochichi's grave"
     publisher: "Library of Congress, Chronicling America"

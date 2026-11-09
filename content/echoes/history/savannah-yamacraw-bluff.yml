@@ -29,7 +29,7 @@ script: |
 
   This was not empty country. Oglethorpe had come up the river weeks earlier, chosen the site, and made terms with Tomochichi before a single colonist arrived.
 
-  When Oglethorpe wrote to London to explain his choice, he listed the height, the dry sandy soil, the fresh water and the shelter of the pines. Then he gave what he called the last and fullest proof that the place was healthy.
+  When Oglethorpe wrote to London to explain his choice, he listed the height, the dry sandy soil, the fresh water and the shelter of the pines. Then he gave what he called the last and fullest consideration of how healthy the place was.
 
   An Indian nation, who knew the nature of this country, had chosen it for their home.
 pronunciations:
@@ -45,6 +45,40 @@ detail: >-
   of February 1906 by the Colonial Dames.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "It was put here in nineteen oh six to mark the spot where, by tradition, James Oglethorpe pitched his tent under four pine trees in February seventeen thirty three."
+    source: 3
+    quote: "Gen. Oglethorpe’s tent was pitched on the bluff, under four pine trees, which spot served as the rallying point of the settlement. The spot occupied by Oglethorpe’s tent has been marked by the erection of a granite seat, placed there i2th February, 1906,"
+  - says: "One of the colonists, Peter Gordon, wrote the landing down."
+    source: 1
+    quote: "Peter Gordon, who traveled with the original settlers to Georgia along with Oglethorpe on the Anne,"
+  - says: "The bluff was forty feet straight up, he said, and the sand was so loose that carrying their goods to the top would have been miserable, if Captain Scott and his men had not built them stairs."
+    source: 1
+    quote: "carried up the bluff, which is forty feet perpendicular in height. This, by reason of the loose sand and great height, would have been extremely troublesome had not Captain Scott and his party built stairs for us."
+  - says: "About an hour after they landed, they had visitors."
+    source: 1
+    quote: "About an hour after our landing, the Indians came with their king, queen, and Mr. Musgrove, the Indian trader and interpreter,"
+  - says: "The Yamacraw came with their chief, Tomochichi, and a trader to interpret."
+    source: 1
+    quote: "the Indians came with their king, queen, and Mr. Musgrove, the Indian trader and interpreter, to pay their compliments to Mr. Oglethorpe and to welcome us to Yamacraw."
+  - says: "One of their men danced in front, white feathers on his head and rattles in his hands."
+    source: 1
+    quote: "before them walked one of their generals with his head adorned with white feathers with rattles in his hands, to which he danced,"
+  - says: "Oglethorpe had come up the river weeks earlier, chosen the site, and made terms with Tomochichi before a single colonist arrived."
+    source: 2
+    quote: "Mr. Oglethorpe went up the River, and chose a situation for a Town; and en- tered into a treaty with Tomochichi, the Micco, or Chief of the only nation of Indians living near it."
+  - says: "When Oglethorpe wrote to London to explain his choice, he listed the height, the dry sandy soil, the fresh water and the shelter of the pines."
+    source: 1
+    quote: "I chose this Situation for the Town upon an high Ground, forty feet perpindicular above High Water Mark; The Soil dry and Sandy, the Water of the River Fresh,"
+  - says: "the shelter of the pines"
+    source: 1
+    quote: "it is sheltered from the Western and southern Winds (the worst in this Country) by vast Woods of Pine Trees,"
+  - says: "Then he gave what he called the last and fullest consideration of how healthy the place was."
+    source: 1
+    quote: "The last and fullest consideration of the Healthfulness of the place was that an Indian nation, who knew the Nature of this Country, chose it for their Habitation."
+  - says: "An Indian nation, who knew the nature of this country, had chosen it for their home."
+    source: 1
+    quote: "an Indian nation, who knew the Nature of this Country, chose it for their Habitation."
 sources:
   - title: "Savannah, Georgia: The Lasting Legacy of Colonial City Planning (Teaching with Historic Places)"
     publisher: "National Park Service"

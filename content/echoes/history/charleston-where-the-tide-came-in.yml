@@ -20,26 +20,22 @@ script: |
   Somewhere in this garden is a small stone with a pirate's name on it. Stede Bonnet. It
   was put up in nineteen forty-three, and it is easy to walk straight past.
 
-  Bonnet was not the usual kind of pirate. The old histories describe a gentleman. Educated,
-  well off, a former army major. Nobody could say why he took to the sea.
+  Bonnet was not the usual kind of pirate. The old histories describe a gentleman by birth and education, of fair estate, a former army major. There seemed no reason why he took to piracy.
 
   In the autumn of seventeen eighteen, ships from Charles Town caught him and brought him
   back in irons. He escaped once, in a woman's dress, and was hunted down in the sandhills
   of Sullivan's Island.
 
-  The record of the trials was printed the following year. Most of his crew were hanged in
-  November. Bonnet followed on the tenth of December, executed, it says, at the White Point
+  The record of the trials was printed the following year. Twenty-two of his crew were hanged in November. Bonnet followed on the tenth of December, executed, it says, at the White Point
   near Charles Town.
 
   That is here.
 
-  There was no garden then. The point took its name from the heaps of white oyster shell
-  along the shore. A Charleston historian, writing in nineteen-oh-six, recorded where the
+  There was no garden then. The point took its name from the oyster shells heaped along the shore. A Charleston historian, writing in nineteen-oh-six, recorded where the
   pirates went afterwards. They were buried on the White Point shoal, just above the
   low-water mark. Out on the mud, at the edge of the tide.
 
-  The city later filled the shoal in. This garden was laid out in eighteen thirty-seven, on
-  made ground, and the oaks you are standing under grew up on top of it.
+  The city later filled the shoal in. This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on top of it.
 
   They were buried where the tide came in. The city moved the tide.
 pronunciations:
@@ -47,24 +43,88 @@ pronunciations:
     say: STEED BON-it
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Somewhere in this garden is a small stone with a pirate's name on it."
+    source: 4
+    quote: "Stede Bonnet Monument (November 13, 1943)"
+  - says: "Stede Bonnet."
+    source: 4
+    quote: "Stede Bonnet Monument (November 13, 1943)"
+  - says: "It was put up in nineteen forty-three, and it is easy to walk straight past."
+    source: 4
+    quote: "Stede Bonnet Monument (November 13, 1943)"
+  - says: "Bonnet was not the usual kind of pirate."
+    source: 2
+    quote: "Stede Bonnet, one of the most re- markable of the many remarkable characters of that time."
+  - says: "The old histories describe a gentleman by birth and education, of fair estate, a former army major."
+    source: 2
+    quote: "He was a gentleman by birth and education, of excellent manners and fair estate, had been a major in the army"
+  - says: "There seemed no reason why he took to piracy."
+    source: 2
+    quote: "There seemed no reason why he should have suddenly taken to piracy"
+  - says: "In the autumn of seventeen eighteen, ships from Charles Town caught him and brought him back in irons."
+    source: 2
+    quote: "Colonel Rhett returned in triumph with the Loyal James as a prize and Bonnet and thirty of his crew in irons"
+  - says: "In the autumn of seventeen eighteen, ships from Charles Town caught him and brought him back in irons."
+    source: 3
+    quote: "on the 15th of September, Rhett crossed the bar"
+  - says: "He escaped once, in a woman's dress, and was hunted down in the sandhills of Sullivan's Island."
+    source: 2
+    quote: "he had escaped in woman’s dress with one of his companions"
+  - says: "He escaped once, in a woman's dress, and was hunted down in the sandhills of Sullivan's Island."
+    source: 3
+    quote: "He searched diligently for a long time in the sand hills among the dense myrtle and cedar"
+  - says: "He escaped once, in a woman's dress, and was hunted down in the sandhills of Sullivan's Island."
+    source: 3
+    quote: "Rhett had recaptured Bonnet on Sullivan’s Island"
+  - says: "The record of the trials was printed the following year."
+    source: 1
+    quote: "Printed for BEN}. Cowse at the Rofe and Crown in St. Paal’s Church. 3 Yard. M: DCC. XIX."
+  - says: "Twenty-two of his crew were hanged in November."
+    source: 3
+    quote: "Two days after, the 8th, the twenty-two convicted were executed"
+  - says: "Bonnet followed on the tenth of December, executed, it says, at the White Point near Charles Town."
+    source: 1
+    quote: "Wednefday December the roth, 1718. the faid Major Stede Bonnet was executed at the White»Point near Charles-Zown, according to the above Sentence."
+  - says: "There was no garden then. The point took its name from the oyster shells heaped along the shore."
+    source: 4
+    quote: "Originally known as “White Point” or “Oyster Point” during the initial English settlement of Charleston, the area took its name from the large accumulation of oyster shells along the river shore."
+  - says: "A Charleston historian, writing in nineteen-oh-six, recorded where the pirates went afterwards."
+    source: 2
+    quote: "Published November, 1906."
+  - says: "A Charleston historian, writing in nineteen-oh-six, recorded where the pirates went afterwards."
+    source: 2
+    quote: "They were buried on White Point shoal, just above low-water mark."
+  - says: "They were buried on the White Point shoal, just above the low-water mark."
+    source: 2
+    quote: "They were buried on White Point shoal, just above low-water mark."
+  - says: "The city later filled the shoal in."
+    source: 2
+    quote: "The place has been filled up and is now the Battery Garden"
+  - says: "This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on top of it."
+    source: 4
+    quote: "a public recreation ground laid out in 1837"
+  - says: "This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on top of it."
+    source: 4
+    quote: "Mature live oak trees planted on a grid pattern line the park’s walkways and shade its interior."
 sources:
   - title: "The tryals of Major Stede Bonnet and other pirates (1719)"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/33008758/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/law/00158861859/00158861859.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), The Conquest of the Pirates"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/06042434/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The history of South Carolina under the proprietary government, 1670-1719 (Edward McCrady, 1897)"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/01010815/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/historyofsouthca00mcc/historyofsouthca00mcc.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "White Point Gardens, 2 Murray Boulevard, Charleston (HALS SC-19)"
     publisher: "Library of Congress, Historic American Landscapes Survey"
-    url: https://www.loc.gov/item/sc1228/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc1200/sc1228/data/sc1228data.pdf
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts

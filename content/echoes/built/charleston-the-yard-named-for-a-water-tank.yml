@@ -21,7 +21,7 @@ script: |
 
   The green itself is called the Cistern.
 
-  In the nineteenth century, the college built an oval cistern here to hold its water supply. The name stuck to the whole yard, oaks and all.
+  In the nineteenth century, an oval cistern was built here to hold the campus water supply. The name stuck to the whole yard, oaks and all.
 
   The college is old. It was founded in seventeen seventy, and its founders included three signers of the Declaration of Independence. Its first classes met in former Revolutionary War barracks. The main building went up in eighteen twenty nine. The columns came twenty five years later.
 
@@ -30,9 +30,46 @@ script: |
   And the heart of it is named after a water tank.
 editorial: draft
 factCheck: single-source
+claims:
+  - says: "That is the college's main building, and it has a person's name."
+    source: 1
+    quote: "the Main Building (now known as Randolph Hall)"
+  - says: "Randolph Hall."
+    source: 1
+    quote: "the Main Building (now known as Randolph Hall)"
+  - says: "The old library on the green has a person's name too."
+    source: 1
+    quote: "The Towell Library, constructed from 1854 to 56 by George E. Walker"
+  - says: "Towell."
+    source: 1
+    quote: "The Towell Library"
+  - says: "The green itself is called the Cistern."
+    source: 1
+    quote: "are situated around a square college green with evergreen oaks, known as The Cistern."
+  - says: "In the nineteenth century, an oval cistern was built here to hold the campus water supply."
+    source: 1
+    quote: "This name is derived from a 19th-century oval cistern constructed there to hold the campus's water supply."
+  - says: "It was founded in seventeen seventy, and its founders included three signers of the Declaration of Independence."
+    source: 1
+    quote: "Founded in 1770, and chartered in 1785"
+  - says: "It was founded in seventeen seventy, and its founders included three signers of the Declaration of Independence."
+    source: 1
+    quote: "The founders of the college include three signers of the Declaration of Independence"
+  - says: "Its first classes met in former Revolutionary War barracks."
+    source: 1
+    quote: "Classes were held in former Revolutionary War barracks until the first new building was constructed."
+  - says: "The main building went up in eighteen twenty nine."
+    source: 1
+    quote: "the simple rectangular brick Main Building was completed in 1829."
+  - says: "The columns came twenty five years later."
+    source: 1
+    quote: "In 1854 prominent local architect Edward Brickell White extensively remodeled the Main Building (now known as Randolph Hall), adding an Ionic portico and wings."
+  - says: "It is the oldest municipal college in the United States, and a National Historic Landmark."
+    source: 1
+    quote: "The College of Charleston is the oldest municipal college in the United States, and a National Historic Landmark."
 sources:
   - title: "College of Charleston"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/college-of-charleston.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain

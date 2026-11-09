@@ -28,9 +28,9 @@ script: |
 
   Here is what the record actually supports.
 
-  Ships really did arrive that way. On the second of November eighteen eighty nine, the Savannah Morning News listed a Norwegian bark up from Buenos Aires, in ballast. Another came from Brazil, in ballast. That was an ordinary day.
+  Ships really did arrive that way. On the second of November eighteen eighty nine, the Savannah Morning News listed a Norwegian bark up from Buenos Aires, in ballast. A British steamship came in from Teneriffe, in ballast. That was an ordinary day.
 
-  Ballast really was dumped on this waterfront. A city guide from eighteen eighty one boasted that when a railway's wharves downriver were filled in, the four quarters of the habitable globe had contributed, by way of ballast from foreign ships. When the old eastern wharves were recorded in two thousand seven, just before they were demolished, the ballast that filled them was still there.
+  Ballast really was dumped on this waterfront. A city guide of the early eighteen eighties boasted that when a railway's wharves downriver were filled in, the four quarters of the habitable globe had contributed, by way of ballast from foreign ships. When the old eastern wharves were recorded in two thousand seven, ahead of their demolition, the ballast that filled them was still there.
 
   And when federal surveyors photographed a stone warehouse on River Street in the nineteen thirties, they wrote that its rubble stone was said to have been brought over as ballast.
 
@@ -39,6 +39,34 @@ script: |
   So nobody can show you which stone came from where. But the ships came in heavy with rock, and the rock had to go somewhere.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "cobbles under your feet, and at the rough stone in the old walls along River Street"
+    source: 1
+    quote: "Located on West River Street, Constructed of brick and rubble stone said to have been brought over as ballast"
+  - says: "On the second of November eighteen eighty nine, the Savannah Morning News listed a Norwegian bark up from Buenos Aires, in ballast."
+    source: 2
+    quote: "Bark Pandora (Nor), Knudsen, Buenos Ayres, in ballast"
+  - says: "A British steamship came in from Teneriffe, in ballast."
+    source: 2
+    quote: "Steamship Iximuria <Br), Pottinger, Teneriffe, in ballast"
+  - says: "the four quarters of the habitable globe had contributed, by way of ballast from foreign ships"
+    source: 3
+    quote: "the four quarters of the habitable globe have also contributed their quota in the discha'ge of ballast by foreign shipping"
+  - says: "a railway's wharves downriver"
+    source: 3
+    quote: "The wharves of this company stretch along the lower river front to the distance of nearly a mile."
+  - says: "When the old eastern wharves were recorded in two thousand seven"
+    source: 4
+    quote: "Date: April 2007"
+  - says: "ahead of their demolition"
+    source: 4
+    quote: "To be demolished 2008"
+  - says: "the ballast that filled them was still there"
+    source: 4
+    quote: "The ballast that filled the wharf remains on the site."
+  - says: "they wrote that its rubble stone was said to have been brought over as ballast"
+    source: 1
+    quote: "rubble stone said to have been brought over as ballast"
 sources:
   - title: "Factor's Warehouse, River Street West (HABS GA-2144), data pages"
     publisher: "Historic American Buildings Survey, Library of Congress"
@@ -58,10 +86,5 @@ sources:
   - title: "Savannah Eastern Wharves (HAER GA-157), data pages"
     publisher: "Historic American Engineering Record, Library of Congress"
     url: https://www.loc.gov/pictures/item/ga1012/
-    retrievedAt: "2026-10-15"
-    rights: public-domain
-  - title: "The morning news (Savannah, Ga.), September 15, 1887, image 8: foreign steam tonnage loading"
-    publisher: "Chronicling America, Library of Congress"
-    url: https://www.loc.gov/resource/sn86063034/1887-09-15/ed-1/?sp=8
     retrievedAt: "2026-10-15"
     rights: public-domain

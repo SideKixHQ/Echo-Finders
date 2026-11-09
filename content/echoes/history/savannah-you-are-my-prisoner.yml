@@ -39,6 +39,49 @@ pronunciations:
     say: HAB-er-sham
   - written: Telfair
     say: TEL-fair
+claims:
+  - says: "The grand house on the west side of Telfair Square is the Telfair Academy, designed by the English architect William Jay about two centuries ago."
+    source: 2
+    quote: "mansion was erected in 1818, the architect being William Jay, who designed a number of Savannah's most famous buildings."
+  - says: "Mary Telfair left it in her will to become an academy of arts and sciences."
+    source: 2
+    quote: "Incorporated, founded under the will of Miss Mary Telfair in 1875, is housed in her greatly enlarged family"
+  - says: "This, it says, was the site of Government House, home of Georgia's royal governor."
+    source: 2
+    quote: "The site of the building is that of the former Colonial Government House, in which the Royal Governor"
+  - says: "In January seventeen seventy-six, British warships were lying off Tybee."
+    source: 1
+    quote: "On the 12th of January two men-of-war and a transport laden with troops, under command of Majors Maitland and Grant, arrived"
+  - says: "On the eighteenth, Savannah's Council of Safety voted to arrest the governor, Sir James Wright."
+    source: 1
+    quote: "A meeting of the Council of Safety was called on the 18th, when it was resolved ‘that the persons of his Excellency Sir James Wright, Bart.,"
+  - says: "A major named Joseph Habersham, twenty-four years old, volunteered."
+    source: 1
+    quote: "Major Joseph Habersham, who was then only twenty-four years of age, volunteered to secure the Governor."
+  - says: "That evening the governor was meeting his council in his house."
+    source: 1
+    quote: "That evening while the Governor was in consultation with the Council at his house,"
+  - says: "Habersham walked past the sentries at the door, alone."
+    source: 1
+    quote: "Haber- sham proceeded thither alone, passed the sentinels at the door,"
+  - says: "He went into the room, up to the head of the table, laid his hand on the governor's shoulder, and said, Sir James, you are my prisoner."
+    source: 1
+    quote: "walked boldly up to the head of the table, and laying his hand upon the Govern- or’s shoulder said: ‘‘Sir James, you are my prisoner.”"
+  - says: "According to the city's history of eighteen sixty-nine, the councillors assumed he had a large force close behind him."
+    source: 1
+    quote: "supposing from Habersham’s firm manner he had a large force near by,"
+  - says: "They fled through the doors and the windows."
+    source: 1
+    quote: "fled pre- cipitately through the doors and windows."
+  - says: "Wright gave his word that he would not leave town, and was kept in his own house under guard."
+    source: 1
+    quote: "The Governor gave his solemn parole that he would not go out of town"
+  - says: "He kept his word for twenty-four days."
+    source: 1
+    quote: "Here he remained until the 11th of February,"
+  - says: "Then he slipped past the sentries, ran to Bonaventure, and was rowed out to a British ship."
+    source: 1
+    quote: "he eluded the senti- nels and ran to Bonaventure, escaping from thence in a small boat, furnished by John Mullryne, to the British ship Scarborough,"
 sources:
   - title: "Historical record of the city of Savannah (Lee and Agnew, 1869): Gallant capture of Governor Wright by Major Joseph Habersham"
     publisher: "Library of Congress"

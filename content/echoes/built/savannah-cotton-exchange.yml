@@ -23,7 +23,7 @@ script: |
 
   What it stands on is the interesting part.
 
-  This was the Drayton Street slip, the way down from the bluff to the river. In March eighteen eighty six the Morning News watched workmen pulling up the stones of that slip. Part of it was filled in and walled off. By August, iron pillars and girders were in place to carry the building, and the old iron footbridge across the slip had been taken down, to be put up again somewhere else.
+  This was the Drayton Street slip, the way down from the bluff to the river. In March eighteen eighty six the Morning News watched workmen pulling up the stones of that slip. Part of it was to be filled in and walled off. By August, iron pillars and girders were in place to carry the building, and the old iron footbridge across the slip had been taken down, to be put up again somewhere else.
 
   So the Cotton Exchange is standing on iron legs, over the old way down to the water.
 pronunciations:
@@ -35,6 +35,37 @@ detail: >-
   The architect was William G. Preston.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The building opened for business at noon on a Monday in September eighteen eighty seven"
+    source: 4
+    quote: "At 12 o’clock on Monday it will be opened for business."
+  - says: "when Savannah ranked first among the cotton ports of the Atlantic coast"
+    source: 6
+    quote: "completed in 1887 during the era when Savannah ranked first as a cotton seaport on the Atlantic"
+  - says: "From Bay Street it looks like three storeys."
+    source: 1
+    quote: "3 stories above bridge on Factor's Walk side, 6 stories in rear on River St. side"
+  - says: "From River Street, round the back, it is six."
+    source: 1
+    quote: "6 stories in rear on River St. side"
+  - says: "This was the Drayton Street slip, the way down from the bluff to the river."
+    source: 2
+    quote: "Workmen wore taking up stones yesterday at the Drayton street slip preparatory to filling iu the slip back to where the bridge now Is."
+  - says: "In March eighteen eighty six the Morning News watched workmen pulling up the stones of that slip."
+    source: 2
+    quote: "Workmen wore taking up stones yesterday at the Drayton street slip"
+  - says: "Part of it was to be filled in and walled off."
+    source: 2
+    quote: "will lie built across the slip about where the bridge now crosses-"
+  - says: "By August, iron pillars and girders were in place to carry the building"
+    source: 3
+    quote: "The Iron pillars and girders to support the new Cotton Exchange have been put in place"
+  - says: "the old iron footbridge across the slip had been taken down, to be put up again somewhere else"
+    source: 3
+    quote: "he iron foot bridge across the slip in front of the Exchange has been removed ami will be rebuilt across the roadway leading down to the Aberoorn street slip."
+  - says: "So the Cotton Exchange is standing on iron legs"
+    source: 3
+    quote: "The Iron pillars and girders to support the new Cotton Exchange have been put in place"
 sources:
   - title: "Savannah Cotton Exchange, 100 East Bay Street (HABS GA-1194), data pages"
     publisher: "Historic American Buildings Survey, Library of Congress"

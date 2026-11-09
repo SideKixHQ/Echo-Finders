@@ -22,20 +22,15 @@ script: |
 
   Only one of those is a Charleston name.
 
-  In the nineteen twenties a Charleston man, DuBose Heyward, and his wife Dorothy wrote a
-  play called Porgy. It is set in a crowded courtyard of Black Charlestonians called
-  Catfish Row. Its hero is a disabled beggar who gets around the city in a little cart
-  pulled by a goat.
+  In the nineteen twenties two Charlestonians, DuBose and Dorothy Heyward, wrote a play called Porgy. It is set among the Black Charlestonians of a place called Catfish Row. Its hero is a disabled beggar with a little goat cart.
 
-  It ran for a year on Broadway, then went on tour. When it reached Washington in
-  nineteen twenty-eight, the Evening Star explained to its readers that the sets were
+  It ran for more than a year in New York, then went on tour. When it came to Washington, the Evening Star explained to its readers that the sets were
   authentic, drawn after a visit to Charleston. And then it added a correction. The row
   itself, the paper said, is not called Catfish in Charleston. It is referred to as
   Cabbage Row. Porgy himself, it said, was based on a real person.
 
   A few years later George Gershwin turned the play into an opera, Porgy and Bess. A
-  Washington paper reported, perhaps generously, that he had spent his spare time for two
-  years visiting Catfish Row.
+  Washington paper reported, perhaps generously, that he had spent all his spare time for two years in Charleston, visiting Catfish Row.
 
   He could not have. There is no such place. It is across the street, under another name.
 pronunciations:
@@ -43,29 +38,84 @@ pronunciations:
     say: doo-BOHZ HAY-wurd
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Look across the street at numbers eighty-nine and ninety-one Church Street."
+    source: 1
+    quote: "89-91 Church Street (Houses) HABS No. SC-447 (Cabbage Row, Catfish Row)"
+  - says: "The federal survey of historic buildings files them under two names."
+    source: 1
+    quote: "89-91 Church Street (Houses) HABS No. SC-447 (Cabbage Row, Catfish Row)"
+  - says: "Cabbage Row."
+    source: 1
+    quote: "(Cabbage Row, Catfish Row)"
+  - says: "And Catfish Row."
+    source: 1
+    quote: "(Cabbage Row, Catfish Row)"
+  - says: "Only one of those is a Charleston name."
+    source: 2
+    quote: "The row itself Is not called Catfish m Charleston It is referred to as Cabbage Row."
+  - says: "In the nineteen twenties two Charlestonians, DuBose and Dorothy Heyward, wrote a play called Porgy."
+    source: 4
+    quote: "Written by Du Bose and Dorothy Heyward, themselves natives of Charleston, “Porgy” was staged for the Guild"
+  - says: "In the nineteen twenties two Charlestonians, DuBose and Dorothy Heyward, wrote a play called Porgy."
+    source: 4
+    quote: "since first presented more than two years ago"
+  - says: "It is set among the Black Charlestonians of a place called Catfish Row."
+    source: 4
+    quote: "is a vivid play of the sunshine and shadows of Catfish Row in Charleston’s Negro quarter."
+  - says: "Its hero is a disabled beggar with a little goat cart."
+    source: 4
+    quote: "Headed by the crippled beggar, Porgy, with his little goat cart"
+  - says: "It ran for more than a year in New York, then went on tour."
+    source: 4
+    quote: "It has played three distinct and successful engagements in New York, totaling a run of fifty-five weeks; it been acclaimed in London, and has broken records in a number of American theater centers."
+  - says: "When it came to Washington, the Evening Star explained to its readers that the sets were authentic, drawn after a visit to Charleston."
+    source: 3
+    quote: "which the New York Theater Guild will present at the National Thea- I ter this week"
+  - says: "When it came to Washington, the Evening Star explained to its readers that the sets were authentic, drawn after a visit to Charleston."
+    source: 2
+    quote: "The settings of Catfish Row are authentic, being done by Cleon Throckmorton after a visit to Charleston, S C., the locale of the play."
+  - says: "The row itself, the paper said, is not called Catfish in Charleston."
+    source: 2
+    quote: "The row itself Is not called Catfish m Charleston"
+  - says: "It is referred to as Cabbage Row."
+    source: 2
+    quote: "It is referred to as Cabbage Row."
+  - says: "Porgy himself, it said, was based on a real person."
+    source: 2
+    quote: "the Honey Man of the play is also based on a real person, as is Porgy himself"
+  - says: "A few years later George Gershwin turned the play into an opera, Porgy and Bess."
+    source: 5
+    quote: "Gershwin’s famed opera based on the stage production “Porgy”"
+  - says: "A few years later George Gershwin turned the play into an opera, Porgy and Bess."
+    source: 5
+    quote: "In the opera “Porgy and Bess.”"
+  - says: "A Washington paper reported, perhaps generously, that he had spent all his spare time for two years in Charleston, visiting Catfish Row."
+    source: 5
+    quote: "After spending all his spare time for two years in Charleston visiting Catfish Row and other Negro sections."
 sources:
   - title: "89-91 Church Street (Houses) (Cabbage Row, Catfish Row), Charleston (HABS SC-447)"
     publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/sc0488/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc0400/sc0488/data/sc0488cap.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Evening Star (Washington, D.C.), April 15, 1928, theatre page, \"Porgy\""
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83045462/1928-04-15/ed-1/?sp=53
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Evening Star (Washington, D.C.), April 22, 1928, amusement section, \"Porgy\""
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83045462/1928-04-22/ed-1/?sp=55
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Indianapolis Times, November 30, 1929, theatre page, \"Porgy\""
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn82015313/1929-11-30/ed-1/?sp=6
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Washington Times, March 10, 1936, \"World of Music\""
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn84026749/1936-03-10/ed-1/?sp=9
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts

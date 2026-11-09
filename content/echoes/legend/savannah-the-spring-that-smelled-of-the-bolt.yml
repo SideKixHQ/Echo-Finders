@@ -1,0 +1,67 @@
+# Drafted by Claude Code (2026-11-09) for the Savannah ghost legends.
+# Listening spot: Public waterfront along River Drive in the town of Thunderbolt, on the Wilmington River.
+# Position: Estimated from the town's riverfront on River Drive (low confidence; no address point was available for Georgia in the Overture extract, and Wikidata was rate-limited). Check on site and move to the public waterfront.
+id: savannah-the-spring-that-smelled-of-the-bolt
+title: "The Spring That Smelled of the Bolt"
+summary: "Thunderbolt is said to be named for a bolt from the sky that struck here and left a spring behind."
+place: "River Drive waterfront, Thunderbolt, Georgia"
+at: { lat: 32.03420, lng: -81.04680 }
+triggerRadiusKm: 0.15
+category: legend
+format: short
+durationS: 60
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A place-name legend. Savannah's 1869 history credits it to Oglethorpe's account of Carolina and
+  Georgia; the 1890 guidebook calls it local tradition and says plainly that it may not be founded on
+  fact. The script says aloud that it is a legend.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [savannah, thunderbolt, rivers, legend]
+teaser: "A bolt from the sky, and a spring where it struck."
+script: |
+  This little river town has a strange name. Thunderbolt.
+
+  It comes with a legend, and the legend is very old. Treat it as a legend, because that is all anyone has ever had.
+
+  A thunderbolt fell here, the story goes, and where it struck, a spring came gushing out of the ground.
+
+  When Savannah's historians wrote it down in eighteen sixty nine, they credited it to Oglethorpe's own account of Carolina and Georgia. And they quoted the best line. A spring arose in that place, which still smells of the bolt.
+
+  A Savannah guidebook of eighteen ninety was more careful. Whether the tradition be founded on fact or not, it wrote, it is nevertheless believed to be true. Old inhabitants pointed out the Thunderbolt spring with faith and pride.
+
+  Nobody has ever proven a bolt made a spring. But the name stuck.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "A thunderbolt fell here, the story goes, and where it struck, a spring came gushing out of the ground."
+    source: 2
+    quote: "According to local tradition, the place received its name from the fall of a thunderbolt and the gushing forth of a spring from the spot where the bolt struck."
+  - says: "When Savannah's historians wrote it down in eighteen sixty nine, they credited it to Oglethorpe's own account of Carolina and Georgia."
+    source: 1
+    quote: "Its name, in the quaint literalness of General Oglethorpe’s account of Caro- lina and Georgia, is derived ‘‘from the fall of a thunderbolt,”"
+  - says: "A spring arose in that place, which still smells of the bolt."
+    source: 1
+    quote: "‘‘a spring thereupon arose in that place, which still smells of the bolt.”"
+  - says: "A Savannah guidebook of eighteen ninety was more careful."
+    source: 2
+    quote: "Whether the tradi- tion be founded on fact or not, it is nevertheless believed to be true,"
+  - says: "Whether the tradition be founded on fact or not, it wrote, it is nevertheless believed to be true."
+    source: 2
+    quote: "Whether the tradi- tion be founded on fact or not, it is nevertheless believed to be true,"
+  - says: "Old inhabitants pointed out the Thunderbolt spring with faith and pride."
+    source: 2
+    quote: "the spring is pointed out with faith and pride by old inhabitants as the Thunderbolt spring."
+sources:
+  - title: "Historical record of the city of Savannah (Lee and Agnew, 1869): Suburban resorts, Thunderbolt"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Savannah and its surroundings (G. A. Gregory, 1890): Thunderbolt"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007695/
+    retrievedAt: "2026-11-09"
+    rights: public-domain

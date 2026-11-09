@@ -15,7 +15,8 @@ certainty: legend
 certaintyNote: >-
   A published tradition. Captain Flint is a fictional character; Treasure Island places his death
   at Savannah but names no house. The upstairs-room tradition and the ghost are reported in 1951 as
-  "tradition" and "said to"; the 1753 inn claim is the house's own account. The script says
+  "tradition" and "said to"; the 1753 inn claim comes from a Library of Congress photo caption
+  based on the photographer's notes. The script says
   plainly that none of it is proven.
 minAge: 0
 quality: 0.75
@@ -27,11 +28,11 @@ script: |
 
   Start with the book. In Treasure Island, published in eighteen eighty three, Robert Louis Stevenson gives his pirate captain, Flint, a death but no grave. Billy Bones says Flint handed him the map at Savannah, when he lay dying. Long John Silver puts it more bluntly. Flint died of rum at Savannah.
 
-  That is all Stevenson says. He never names a house. And Flint never existed.
+  That is all Stevenson says. He never names a house.
 
-  The house came later. In February nineteen fifty one, the food editor of a Sunday magazine in the Washington Evening Star wrote about the newly restored tavern here, in the old Trustees' Garden. Tradition has it, the article said, that the man Stevenson based Flint on died in an upstairs bedroom of the old inn. And Flint's ghost is said to haunt the area on moonless nights.
+  The house came later. In February nineteen fifty one, the food editor of a Sunday magazine in the Washington Evening Star wrote about the newly restored tavern here. Tradition has it, the article said, that the man Stevenson based Flint on died in an upstairs bedroom of the old inn. And Flint's ghost is said to haunt the area on moonless nights.
 
-  The house tells its own story too. It says it opened in seventeen fifty three as an inn for seafarers, and soon became a meeting place for pirates and sailors back from ports around the world.
+  The story has grown since. A Library of Congress photograph of the house, captioned from the photographer's notes, says it opened in seventeen fifty three as an inn for seafarers, and soon became a meeting place for pirates and sailors back from ports around the world.
 
   None of that is proven. Not the inn's pirates, not the real man behind Flint, and certainly not the ghost.
 
@@ -41,6 +42,52 @@ pronunciations:
     say: STEE-ven-sun
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "This low old building calls itself the Pirates' House."
+    source: 3
+    quote: "The Pirates' House, a historic restaurant location in Savannah, Georgia,"
+  - says: "In Treasure Island, published in eighteen eighty three, Robert Louis Stevenson gives his pirate captain, Flint, a death but no grave."
+    source: 1
+    quote: "CREATED_PUBLISHED: London, New York, Cassell, 1883."
+  - says: "gives his pirate captain, Flint, a death but no grave"
+    source: 1
+    quote: "he who died at Savannah, singing and shouting for drmk"
+  - says: "Billy Bones says Flint handed him the map at Savannah, when he lay dying."
+    source: 1
+    quote: "I was first mate, I was, old Flint’s first mate, and I’m the on’y one as knows the place. He gave it me at Savannah, when he lay a-dying,"
+  - says: "Long John Silver puts it more bluntly."
+    source: 1
+    quote: "Flint was, and he died of rum at Savannah."
+  - says: "Flint died of rum at Savannah."
+    source: 1
+    quote: "Flint was, and he died of rum at Savannah."
+  - says: "That is all Stevenson says."
+    source: 1
+    quote: "He gave it me at Savannah, when he lay a-dying,"
+  - says: "In February nineteen fifty one, the food editor of a Sunday magazine in the Washington Evening Star wrote about the newly restored tavern here."
+    source: 2
+    quote: "The Pirate House is one of the restored group again in operation, the authentic relic of a tavern that belonged to the roistering era of the sailing ship."
+  - says: "the food editor of a Sunday magazine"
+    source: 2
+    quote: "our food editor finds new ways for old Southern dishes"
+  - says: "Tradition has it, the article said, that the man Stevenson based Flint on died in an upstairs bedroom of the old inn."
+    source: 2
+    quote: "Tradition has it that the prototype of the Robert Louts Stevenson character died tn an upstairs bedroom of the old inn."
+  - says: "And Flint's ghost is said to haunt the area on moonless nights."
+    source: 2
+    quote: "the ghost of Cap'n Flint, bloodthirsty pirate of “Treasure Island\" fame, is said to haunt the area on the moonless nights."
+  - says: "A Library of Congress photograph of the house, captioned from the photographer's notes"
+    source: 3
+    quote: "Title, date and keywords based on information provided by the photographer."
+  - says: "says it opened in seventeen fifty three as an inn for seafarers, and soon became a meeting place for pirates and sailors back from ports around the world"
+    source: 3
+    quote: "established in 1753, opened as an inn for seafarers, and fast became a rendezvous for pirates and sailors back from ports around the world"
+  - says: "Not the inn's pirates, not the real man behind Flint, and certainly not the ghost."
+    source: 2
+    quote: "Tradition has it that the prototype of the Robert Louts Stevenson character died tn an upstairs bedroom of the old inn."
+  - says: "But Stevenson did send Flint to Savannah to die."
+    source: 1
+    quote: "Flint was, and he died of rum at Savannah."
 sources:
   - title: "Treasure Island (Robert Louis Stevenson, 1883)"
     publisher: "Library of Congress"

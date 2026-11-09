@@ -21,9 +21,8 @@ script: |
   stands a large stone sarcophagus. It holds John C. Calhoun.
 
   Calhoun was vice president, secretary of state, and one of the most powerful politicians
-  of his age. In the Senate he led the defence of slavery, and called it a positive good. He
-  died in eighteen fifty, ten years before the war his ideas helped to bring, and he was
-  buried here after what one paper called the grandest pageant the city had ever seen.
+  of his age. In the Senate he led the pro-slavery faction, and called slavery a positive good. He died in eighteen fifty, a decade before the Civil War, and he was
+  buried here after what one paper called the grandest civic and military pageant ever seen in the city.
 
   He did not stay put.
 
@@ -36,7 +35,7 @@ script: |
   standing by. In complete silence they lifted it, carried it down the middle aisle and out
   through the north door, and buried it again in another spot.
 
-  Some time after the war, it was dug up once more, quietly, and put back. Later the state
+  Shortly after the war, it was dug up once more, and quietly put back in the tomb. Later the state
   paid for the sarcophagus you can see.
 
   The plain marble slab that first covered the grave, carved with just his name, was broken
@@ -51,24 +50,103 @@ pronunciations:
     say: "kal-HOON"
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Across the street from St. Philip's Church is its western churchyard."
+    source: 4
+    quote: "The cemetery bounds the church on the east side of the street, and larger in area, extends to the west side of the street, opposite the Church."
+  - says: "In the middle of it stands a large stone sarcophagus."
+    source: 4
+    quote: "in the center of the western cemetery stands the sarcophagus of South Carolina’s greatest statesman, John C. Calhoun."
+  - says: "It holds John C."
+    source: 4
+    quote: "in the center of the western cemetery stands the sarcophagus of South Carolina’s greatest statesman, John C. Calhoun."
+  - says: "It holds John C."
+    source: 2
+    quote: "as well as John C. Calhoun (former Vice President of the United States)"
+  - says: "Calhoun was vice president, secretary of state, and one of the most powerful politicians of his age."
+    source: 3
+    quote: "John Caldwell Calhoun was one of the most powerful politicians of the Antebellum Era."
+  - says: "Calhoun was vice president, secretary of state, and one of the most powerful politicians of his age."
+    source: 3
+    quote: "Over his 40 year career he served as a congressman, Secretary of War, senator, Vice President, and Secretary of State."
+  - says: "In the Senate he led the pro-slavery faction, and called slavery a positive good."
+    source: 3
+    quote: "Calhoun led the pro-slavery faction in opposing both abolitionism and attempts to limit the expansion of slavery into the western territories."
+  - says: "In the Senate he led the pro-slavery faction, and called slavery a positive good."
+    source: 3
+    quote: "In 1837, Calhoun famously took to the floor of the Senate to declare that slavery was a \"positive good.\""
+  - says: "He died in eighteen fifty, a decade before the Civil War, and he was buried here after what one paper called the grandest civic and military pageant ever seen in the city."
+    source: 3
+    quote: "Date of Death: March 31, 1850"
+  - says: "He died in eighteen fifty, a decade before the Civil War, and he was buried here after what one paper called the grandest civic and military pageant ever seen in the city."
+    source: 3
+    quote: "Although John Calhoun died a decade before the start of the Civil War"
+  - says: "He died in eighteen fifty, a decade before the Civil War, and he was buried here after what one paper called the grandest civic and military pageant ever seen in the city."
+    source: 1
+    quote: "His funeral took place in Charleston just thirty-seven years ago, and it was tho grandest civic and military pageant that has ever been seen in this city."
+  - says: "As the war went on, it began to look as if Charleston would fall, and some in the city feared what would be done to his grave."
+    source: 1
+    quote: "the fall of Charleston seemed imminent, and it was feared, unhappily with too good reason, that the bones of the great representative Southerner would be a chosen object of insult and indignity."
+  - says: "So a few men decided to move him."
+    source: 1
+    quote: "To avoid such a possibility a few gentlemen in Charleston determined to remove the body from its tomb by night, and secretly inter it in another spot."
+  - says: "One of them remembered being summoned from camp in the dark."
+    source: 1
+    quote: "One who was present thus describes the scene: I was mysteriously summoned at night from the camp"
+  - says: "When he reached the church, the coffin had already been dug up and carried inside."
+    source: 1
+    quote: "We were told that the coffin was already disinterred and was in the church."
+  - says: "One candle."
+    source: 1
+    quote: "One candle showed the black coffin placed in the vestibule with two or three men standing near."
+  - says: "Two or three men standing by."
+    source: 1
+    quote: "with two or three men standing near."
+  - says: "In complete silence they lifted it, carried it down the middle aisle and out through the north door, and buried it again in another spot."
+    source: 1
+    quote: "In profound silence it was lifted and carried down the middle aisle and through the aorth door to the churchyard"
+  - says: "In complete silence they lifted it, carried it down the middle aisle and out through the north door, and buried it again in another spot."
+    source: 1
+    quote: "secretly inter it in another spot."
+  - says: "Shortly after the war, it was dug up once more, and quietly put back in the tomb."
+    source: 1
+    quote: "Shortly alter the war the coffin wasdisinterred and quietly replaced in the tomb."
+  - says: "Later the state paid for the sarcophagus you can see."
+    source: 1
+    quote: "the Legislature appropriated the sum of $3,000 for the erection of the sarcophagus which now incloses the remains."
+  - says: "The plain marble slab that first covered the grave, carved with just his name, was broken in the earthquake of eighteen eighty-six."
+    source: 1
+    quote: "a brick vault, which was covered with a plain marble slab bearing the simple name Calhoun."
+  - says: "The plain marble slab that first covered the grave, carved with just his name, was broken in the earthquake of eighteen eighty-six."
+    source: 1
+    quote: "In tne great earthquake of last August it was thrown down and broken in two iust above the inscription."
+  - says: "The church set it against the north wall of the churchyard, near the place where he had lain hidden."
+    source: 1
+    quote: "The vestry of the church have recently had it placed against the north wall of the churchyard, near the spot where Mr. Calhoun’s remains w ere in terred during tho war"
+  - says: "The man who had argued the South toward secession spent part of the war it led to hidden, in a secret grave beside this church."
+    source: 3
+    quote: "He can be considered the father of Southern nationalism and secessionism."
+  - says: "The man who had argued the South toward secession spent part of the war it led to hidden, in a secret grave beside this church."
+    source: 1
+    quote: "remove the body from its tomb by night, and secretly inter it in another spot."
 sources:
   - title: "\"Charleston's Statue. Calhoun's memorable funeral 37 years ago. The reinterment during the war.\" The Morning News (Savannah), April 26, 1887, page 3"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn86063034/1887-04-26/ed-1/?sp=3
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "St. Philip's Episcopal Church"
     publisher: "National Park Service, Travel Historic Charleston"
     url: https://www.nps.gov/places/st-philips-episcopal-church.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "John C. Calhoun"
     publisher: "National Park Service"
     url: https://www.nps.gov/people/john-c-calhoun.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Guide to Charleston, S.C., with brief history of the city (C. Irvine Walker, 1919), St. Philip's churchyards"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/20002718/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/guidetocharlesto00walk/guidetocharlesto00walk.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain

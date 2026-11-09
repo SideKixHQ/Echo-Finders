@@ -19,17 +19,17 @@ teaser: "Look up at the man in bronze, then look at which way he is facing."
 script: |
   Stand on the south side of the square and look up at the man in bronze.
 
-  He is young. Full uniform, a hand resting on his sword hilt. When the statue was unveiled in November nineteen ten, the newspapers made a point of it. Most old prints showed James Oglethorpe as an old man. The sculptor, Daniel Chester French, gave the city a soldier instead.
+  He is no old man. Full uniform, a hand resting on his sword hilt. When the statue was unveiled in November nineteen ten, the newspapers made a point of it. Most old prints showed James Oglethorpe as an old man. The sculptor, Daniel Chester French, gave the city a soldier instead.
 
   Now look at which way he is facing.
 
   When the figure was hoisted onto its pedestal, a few weeks before the unveiling, the Atlanta paper noted one detail. The figure faces south.
 
-  South, in Oglethorpe's day, was the problem. The land below Savannah was claimed by both Britain and Spain, and Georgia was meant, in part, as a military buffer against Spanish Florida. Oglethorpe built a fort town on St. Simons Island. In seventeen forty he besieged St. Augustine for thirty-eight days, and failed. Two years later he turned back a Spanish invasion of Georgia.
+  South, in Oglethorpe's day, was the problem. The land below Savannah was claimed by both Britain and Spain, and Georgia was meant, in part, as a military buffer against Spanish Florida. Oglethorpe built a fort town called Frederica. In seventeen forty he besieged St. Augustine for thirty-eight days, and failed. Two years later he turned back a Spanish invasion of Georgia.
 
   The papers of nineteen ten did not say whether that was the point of the pose.
 
-  He sailed for England in seventeen forty-three and never came back. He is buried at Cranham, on the edge of London.
+  He sailed for England in seventeen forty-three and never came back. He is buried at Cranham, in London.
 
   He is still watching the southern road.
 editorial: draft
@@ -39,6 +39,55 @@ pronunciations:
     say: OH-gul-thorp
   - written: St. Augustine
     say: saint AW-guh-steen
+claims:
+  - says: "When the statue was unveiled in November nineteen ten, the newspapers made a point of it."
+    source: 3
+    quote: "Statue Unveiled of English Gen. eral Who Founded Georgia."
+  - says: "Most old prints showed James Oglethorpe as an old man."
+    source: 2
+    quote: "The monument unveiled today represents Oglethorpe, not as an old ifian, as most of tho prints make him appear."
+  - says: "The sculptor, Daniel Chester French, gave the city a soldier instead."
+    source: 2
+    quote: "but a* a rnltant English army officer In full uniform, his sword hilt held lightly In hla hand,"
+  - says: "Daniel Chester French"
+    source: 2
+    quote: "The statue Is the work of Daniel Chester French of New York,"
+  - says: "When the figure was hoisted onto its pedestal, a few weeks before the unveiling, the Atlanta paper noted one detail."
+    source: 1
+    quote: "SAVANNAH, Nov. 4.—The statue of General Oglethorpe, which is to stand ' in Chippewa square, is now m position on its pedestal."
+  - says: "The figure faces south."
+    source: 1
+    quote: "The figure faces south,"
+  - says: "South, in Oglethorpe's day, was the problem."
+    source: 4
+    quote: "The initial purpose of the colony was to have a military buffer for the southern British colonies against the Spanish in Florida."
+  - says: "The land below Savannah was claimed by both Britain and Spain"
+    source: 4
+    quote: "The ownership of the land that Georgia was established in was debated, claimed by both Britain and Spain."
+  - says: "Georgia was meant, in part, as a military buffer against Spanish Florida"
+    source: 4
+    quote: "The initial purpose of the colony was to have a military buffer for the southern British colonies against the Spanish in Florida."
+  - says: "Oglethorpe built a fort town called Frederica."
+    source: 4
+    quote: "Frederica was established in 1736 to provide this military support and defense."
+  - says: "In seventeen forty he besieged St. Augustine for thirty-eight days, and failed."
+    source: 4
+    quote: "He launched a 38 day siege of the Spanish town in the summer of 1740;"
+  - says: "and failed"
+    source: 4
+    quote: "It was also an unsuccessful attempt for the British, leaving St. Augustine in defeat."
+  - says: "Two years later he turned back a Spanish invasion of Georgia."
+    source: 4
+    quote: "However, two years later, he would successfully repel a Spanish Invasion of Georgia,"
+  - says: "The papers of nineteen ten did not say whether that was the point of the pose."
+    source: 1
+    quote: "The figure faces south,"
+  - says: "He sailed for England in seventeen forty-three and never came back."
+    source: 4
+    quote: "on July 23, 1743, James Oglethorpe boarded a ship for London, never to return again."
+  - says: "He is buried at Cranham, in London."
+    source: 4
+    quote: "is buried at All Saints Church, Cranham, London."
 sources:
   - title: "Atlanta semi-weekly journal, 8 November 1910, page 5: Oglethorpe statue is now in position"
     publisher: "Library of Congress, Chronicling America"

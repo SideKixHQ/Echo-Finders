@@ -21,7 +21,7 @@ script: |
 
   Follow one of those bridges to its door. You are walking into the top floor of the building.
 
-  This was the row of the cotton factors, the brokers of the cotton trade. One of these buildings, at the two hundred block of East Bay, went up in eighteen twenty three. When federal surveyors measured it, they described entrances on the fourth floor, a cantilevered walk, and more bridges reaching the floors below.
+  This was the row of the cotton factors, the brokers of the cotton trade. One of these buildings, at the two hundred block of East Bay, went up in eighteen twenty three. When federal surveyors recorded it, they described entrances on the fourth floor, a cantilevered walk, and more bridges reaching the floors below.
 
   The offices were up here, level with the street and the merchants. The warehouse floors stacked down the face of the bluff toward the river.
 
@@ -33,6 +33,40 @@ pronunciations:
     say: FAK-terz
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Between Bay Street and the row of old buildings on the river side there is a gap, and narrow iron bridges cross it."
+    source: 2
+    quote: "There are three entrances on the top floor on the Bay Street side, each connecting to Bay Street level by bridges."
+  - says: "Follow one of those bridges to its door."
+    source: 2
+    quote: "There are three entrances on the top floor on the Bay Street side, each connecting to Bay Street level by bridges."
+  - says: "This was the row of the cotton factors, the brokers of the cotton trade."
+    source: 3
+    quote: "Old \"Factors' Row\" cotton warehouses and offices of cotton \"factors,\" or brokers on the Savannah, Georgia, waterfront"
+  - says: "One of these buildings, at the two hundred block of East Bay, went up in eighteen twenty three."
+    source: 1
+    quote: "202-206 East Bay Street DATE OF CONSTRUCTION (INCLUDE SOURCE) ARCHITECT(S) (INCLUDE SOURCE) 1823"
+  - says: "they described entrances on the fourth floor, a cantilevered walk, and more bridges reaching the floors below"
+    source: 1
+    quote: "three entrances to the 4th floor, cantilevered walk, 2nd & 3rd floor entrances connected by bridges"
+  - says: "The offices were up here, level with the street and the merchants."
+    source: 1
+    quote: "Typical of Factor's Walk Building, with offices on the upper floor open to Bay Street."
+  - says: "A stone store on the west side of Bay Street, built around eighteen sixteen, works the same way."
+    source: 2
+    quote: "Probably in l8l6, Taylor built the eastern portion of the present building"
+  - says: "Three storeys from Bay Street."
+    source: 2
+    quote: "Bay Street side is 3 stories, and the River Street side is k stories."
+  - says: "Four from the river."
+    source: 2
+    quote: "Bay Street side is 3 stories, and the River Street side is k stories."
+  - says: "Every floor but the attic opens onto a different level of the town."
+    source: 2
+    quote: "all floors except attic open onto different street levels."
+  - says: "So none of these buildings has one ground floor."
+    source: 2
+    quote: "all floors except attic open onto different street levels."
 sources:
   - title: "Archibald Smith's Factor's Building, 202-206 East Bay Street (HABS GA-1195), data pages"
     publisher: "Historic American Buildings Survey, Library of Congress"

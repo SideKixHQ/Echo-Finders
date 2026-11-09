@@ -30,6 +30,40 @@ script: |
   A husband's name on the front. His widow's money in the walls. And for a while, the books inside belonged to everyone.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Hodgson Hall."
+    source: 1
+    quote: "The frieze of the portico bears, in relief, the inscription, ““W. B. Hodgson Hall.”"
+  - says: "William Hodgson did not build it."
+    source: 1
+    quote: "was erected by Mrs. Margaret T. Hodgson and Miss Mary Telfair, the widow and sister-in-law of William B. Hodgson, in his memory."
+  - says: "His widow Margaret and her sister Mary Telfair built it in his memory, in eighteen seventy six"
+    source: 2
+    quote: "The present building, Hodgson Hall, was erected in 1876 by Mrs. Margaret Telfair Hodgson and Miss Mary Telfair as a memorial to William Brown Hodg- son, the husband of the former."
+  - says: "for the Georgia Historical Society"
+    source: 1
+    quote: "Hodgson Hall, the library building, at Whitaker and Gaston strects, fronting the park,"
+  - says: "The Society had been collecting since eighteen thirty nine."
+    source: 2
+    quote: "The Georgia Historical Society was organized in 1839 for the purpose of collecting, preserving and publishing historical matter pertaining to Georgia and American his-"
+  - says: "Books, papers, anything touching the history of Georgia."
+    source: 1
+    quote: "for the purpose of collecting, preserving, and diffusing informa- tion relating to the State of Georgia in particular,"
+  - says: "By eighteen ninety it had about twenty thousand volumes."
+    source: 1
+    quote: "Its library, numbering 20,000 volumes, is one of the finest col- lections in the South."
+  - says: "A guidebook of the time admitted the outside was plain."
+    source: 1
+    quote: "The exterior of the building is plain, its architecture being adapted to the con- venience and comfort of the library."
+  - says: "The inside was the part worth seeing."
+    source: 1
+    quote: "If the exterior is plain, the interior of the library hall is strikingly attractive."
+  - says: "Then, in eighteen ninety three, the Society lent its books and this building to the city, so that Savannah could have a public library."
+    source: 2
+    quote: "In 1893 the Georgia Historical Society loaned its books and building to the city, for the purpose -of having a Public > Library,"
+  - says: "The Society kept on collecting."
+    source: 2
+    quote: "the Society continuing its original work of collecting his- torical matter."
 sources:
   - title: "Savannah and its surroundings (G. A. Gregory, 1890)"
     publisher: "Library of Congress"

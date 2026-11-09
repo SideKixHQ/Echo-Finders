@@ -9,7 +9,7 @@ at: { lat: 32.07697, lng: -81.09238 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 78
+durationS: 86
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -19,7 +19,7 @@ teaser: "Everything else in the garden had to be remembered."
 script: |
   This is the house where Juliette Gordon Low was born, in eighteen sixty. Her family called her Daisy. Fifty-two years later, in this city, she started the Girl Scouts.
 
-  Her grandfather bought the house in eighteen thirty-one, and Gordons lived here for generations. The Girl Scouts bought it in nineteen fifty-three.
+  The Gordons bought the house in eighteen thirty-one, and Gordons lived here for generations. The Girl Scouts bought it in nineteen fifty-three.
 
   If you go into the garden, look for the iron double gate in the east wall.
 
@@ -35,6 +35,61 @@ factCheck: corroborated
 pronunciations:
   - written: Wellesbourne
     say: WELZ-born
+claims:
+  - says: "This is the house where Juliette Gordon Low was born, in eighteen sixty."
+    source: 2
+    quote: "the birthplace of the founder of Girl Scouting, Juliette Gordon Low (1860-1927),"
+  - says: "Her family called her Daisy."
+    source: 1
+    quote: "The daisy was especially important as that was Juliette Gordon Low’s nickname"
+  - says: "Fifty-two years later, in this city, she started the Girl Scouts."
+    source: 3
+    quote: "It was here in 1912 that Mrs. Low organized the first Girl Scout troop in America."
+  - says: "The Gordons bought the house in eighteen thirty-one, and Gordons lived here for generations."
+    source: 1
+    quote: "William Washington Gordon I purchased the house in 1831."
+  - says: "Gordons lived here for generations"
+    source: 2
+    quote: "The house has been in the possession of the Gordon family * ever since, the present occupant, G. Arthur Gordon, being the 3rd generation."
+  - says: "The Girl Scouts bought it in nineteen fifty-three."
+    source: 1
+    quote: "The Girl Scouts of the United States of America purchased the Wayne-Gordon House from Eleanor Wayne MacPherson, a niece of Juliette Gordon Low, in November 1953."
+  - says: "look for the iron double gate in the east wall"
+    source: 1
+    quote: "provides a focal point on the east wall of the garden."
+  - says: "Designed and made it, in eighteen eighty-nine, for her own house in England, an estate called Wellesbourne."
+    source: 1
+    quote: "wrought iron double gate designed and crafted in 1889 by Juliette Gordon Low for her estate Wellesbourne in England"
+  - says: "In nineteen twenty-six she brought it home to Savannah, to stand at the entrance of a small park east of the city, where many of the early Girl Scout meetings were held."
+    source: 1
+    quote: "Juliette Gordon Low brought the gate in 1926 to provide the entrance to Brownie Park in Gordonston, a suburb established in 1917 on the former Gordon family farm to the east of Savannah."
+  - says: "where many of the early Girl Scout meetings were held"
+    source: 1
+    quote: "commemorated the park’s role as the site of many early Girl Scout meetings."
+  - says: "In nineteen seventy-two it was moved here for safekeeping."
+    source: 1
+    quote: "In 1972 the gates were relocated to the Juliette Gordon Low Birthplace garden for safekeeping"
+  - says: "The garden around it is a reconstruction, laid out in the nineteen fifties from the memories of her relatives."
+    source: 1
+    quote: "Clermont H. Lee’s period garden design of 1953-1956"
+  - says: "from the memories of her relatives"
+    source: 1
+    quote: "A sketch produced by Mrs. Eleanor Wayne McPherson, [family relation], in early 1955 shows a plan with geometric beds of two concentric circular areas,"
+  - says: "They did not agree."
+    source: 1
+    quote: "Mrs. Graves could not remember the plan of the garden, but thought it was less circular than Mrs. McPherson’s remembrance."
+  - says: "One remembered circles."
+    source: 1
+    quote: "shows a plan with geometric beds of two concentric circular areas, within an overall square design."
+  - says: "Another remembered dirt paths, violets, a banana tree."
+    source: 1
+    quote: "Her firmest recollections were that the paths were dirt, the flower beds were bordered “with the most lovely violets"
+  - says: "a banana tree"
+    source: 1
+    quote: "and that there was a banana tree and bamboo."
+  - says: "A photograph taken at Daisy's wedding, in eighteen eighty-six, showed paths running out from the porch."
+    source: 1
+    quote: "a photograph taken at Juliette Gordon Low’s wedding in 1886 showing at least two paths radiating from the veranda."
 sources:
   - title: "Juliette Gordon Low Birthplace, Garden, 10 East Oglethorpe Avenue, Savannah (HALS GA-4)"
     publisher: "Library of Congress, Historic American Landscapes Survey"
@@ -45,4 +100,9 @@ sources:
     publisher: "Library of Congress, Historic American Buildings Survey"
     url: https://www.loc.gov/item/ga0010/
     retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Low House, 329 Abercorn Street, Savannah (HABS GA-210), data pages"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/ga0017/
+    retrievedAt: "2026-11-09"
     rights: public-domain

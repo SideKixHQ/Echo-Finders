@@ -9,7 +9,7 @@ at: { lat: 32.77695, lng: -79.92730 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 80
+durationS: 91
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -17,22 +17,16 @@ quality: 0.75
 tags: [charleston, charleston-core, south-of-broad, old-exchange, revolution]
 teaser: "Look at the building at the foot of Broad Street. Think about what is under it."
 script: |
-  The building at the foot of Broad Street is the Exchange. When it was finished, in
-  seventeen seventy-one, the harbour came right up to it. Everything between it and the
-  water now is filled land.
+  The building at the foot of Broad Street is the Exchange. When it was finished, in seventeen seventy-one, it fronted the harbour. Everything between it and the water now is filled land.
 
   Think about what is underneath it.
 
-  In the spring of seventeen eighty a British army laid siege to Charleston. During the
-  siege the defenders moved ten thousand pounds of gunpowder out of the town's main
-  magazine, by night, and carried it down into the vaults of this building. Then they
+  In the spring of seventeen eighty a British army laid siege to Charleston. During the siege, after a shell burst close to the powder magazine on Cumberland Street, the defenders moved ten thousand pounds of gunpowder out of it, by night, and carried it down into the vaults of this building. Then they
   bricked it in.
 
   The city surrendered in May. The British took vast stores of powder when it fell. They
   held Charleston for more than two years. They used the Exchange as barracks, and the
-  cellar became their military prison, the Provost. In one damp, dark room they kept
-  criminals and suspected rebels together, men and women, some held on the thinnest of
-  charges.
+  cellar became their military prison, the Provost. In one damp, dark room they kept the lowest criminals together with anyone, however respectable, against whom a complaint was brought, men and women alike.
 
   William Moultrie, one of the American commanders, wrote about it afterwards. The Provost,
   he said, was right next to the powder. The British never found it. When the Americans
@@ -44,29 +38,87 @@ pronunciations:
     say: MOOL-tree
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The building at the foot of Broad Street is the Exchange."
+    source: 3
+    quote: "THE OLD EXCHANGE, Foot oF BROAD STREET"
+  - says: "When it was finished, in seventeen seventy-one, it fronted the harbour."
+    source: 1
+    quote: "the Exchange and Custom House was built from 1767 to 1771"
+  - says: "When it was finished, in seventeen seventy-one, it fronted the harbour."
+    source: 1
+    quote: "Originally the building fronted the harbor"
+  - says: "Everything between it and the water now is filled land."
+    source: 1
+    quote: "during the past two centuries several blocks have been created by landfill between the Exchange and the water."
+  - says: "In the spring of seventeen eighty a British army laid siege to Charleston."
+    source: 4
+    quote: "The British commenced their bombardment of Charleston on April 13"
+  - says: "During the siege, after a shell burst close to the powder magazine on Cumberland Street, the defenders moved ten thousand pounds of gunpowder out of it, by night, and carried it down into the vaults of this building."
+    source: 3
+    quote: "a huge shell bursting within ten feet of the powder maga- zine in Cumberland Street, they, for fear lest worse might ensue, took out at night ten thousand pounds of powder, and carried it to the vaults of the Exchange in Broad Street"
+  - says: "Then they bricked it in."
+    source: 3
+    quote: "where they bricked it up securely"
+  - says: "The city surrendered in May."
+    source: 2
+    quote: "taken prisoner at Charlestown, May 12, 1780"
+  - says: "The British took vast stores of powder when it fell."
+    source: 4
+    quote: "The British captured over 300 cannons and about 6,000 muskets, along with vast stores of gunpowder."
+  - says: "They held Charleston for more than two years."
+    source: 5
+    quote: "ending over two years of British occupation."
+  - says: "They used the Exchange as barracks, and the cellar became their military prison, the Provost."
+    source: 1
+    quote: "During the Revolutionary War, the British used the building for barracks and the basement as a military prison."
+  - says: "They used the Exchange as barracks, and the cellar became their military prison, the Provost."
+    source: 3
+    quote: "The Cellar of the Old Exchange used as a Prison during the Revolution."
+  - says: "In one damp, dark room they kept the lowest criminals together with anyone, however respectable, against whom a complaint was brought, men and women alike."
+    source: 3
+    quote: "The chief terror of the town was the “ Provost,” the damp dark cellar under the Exchange, next to the hiding- place of Moultrie’s powder. In this single room were confined the lowest criminals and malefactors. Men and women together, and any one, however respectable, against whom any complaint might be brought."
+  - says: "William Moultrie, one of the American commanders, wrote about it afterwards."
+    source: 3
+    quote: "next to the hiding- place of Moultrie’s powder."
+  - says: "William Moultrie, one of the American commanders, wrote about it afterwards."
+    source: 3
+    quote: "“and although the Provost was next to it, the British never discovered it, and we found it there when we retook the town.”"
+  - says: "The Provost, he said, was right next to the powder."
+    source: 3
+    quote: "and although the Provost was next to it"
+  - says: "The British never found it."
+    source: 3
+    quote: "the British never discovered it"
+  - says: "When the Americans came back into the town, it was still there."
+    source: 3
+    quote: "we found it there when we retook the town."
+  - says: "For more than two years, the British had been guarding it for them."
+    source: 5
+    quote: "ending over two years of British occupation."
 sources:
   - title: "Exchange and Provost Building"
     publisher: "National Park Service, Travel Charleston"
     url: https://www.nps.gov/places/exchange-and-provost-building.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The history of South Carolina in the revolution, 1775-1780 (Edward McCrady, 1901)"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/01031018/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/historyofsouthca03mccr/historyofsouthca03mccr.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), The Siege and The Captured City"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/06042434/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Siege of Charleston, 1780"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/siege-of-charleston-1780.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "British Evacuation of Charleston"
     publisher: "National Park Service, Fort Sumter and Fort Moultrie National Historical Park"
     url: https://www.nps.gov/articles/000/british-evacuation-of-charleston.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain

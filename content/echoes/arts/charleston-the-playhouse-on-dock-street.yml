@@ -3,13 +3,13 @@
 # Position: On the Queen Street centreline from Overture road segments, about fifty metres west of Church Street, nudged to the theatre's side; Overture place point for the theatre (135 Church St) sits on the corner (medium confidence).
 id: charleston-the-playhouse-on-dock-street
 title: "The Playhouse on Dock Street"
-summary: "America's first building made for theatre stood on this side of the block in 1736. You are on the street it was named for."
+summary: "What is said to be America's first building made for theatre stood on this side of the block. You are on its street."
 place: "Dock Street Theatre, Church and Queen streets, Charleston, South Carolina"
 at: { lat: 32.77818, lng: -79.92990 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 89
+durationS: 72
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -26,36 +26,60 @@ script: |
   thirty-six, Charleston put up a building for one purpose only. Plays. It is said to have
   been the first building in America made for the theatre.
 
-  Nobody was building a monument. A history of the city written in nineteen-oh-six says the
-  early playhouses here were described as temporary, and were probably not much more than
-  barns. Planters and merchants came to watch tragedies, and Addison's Cato, and a comedy
-  called The Recruiting Officer, put on by special request of the local militia.
-
-  The barn is long gone. The building in front of you started life around eighteen-oh-nine
-  as the Planter's Hotel, where planters from up-country stayed for the horse-racing season.
+  That playhouse is long gone. The building in front of you started life around eighteen-oh-nine
+  as the Planter's Hotel, where planters from the midlands stayed for the horse-racing season.
   Then, in the nineteen-thirties, the city restored it as a Works Progress Administration
   project. It built an eighteenth-century style theatre into the back of the old hotel, and
   gave the whole thing the old playhouse's name.
 
-  So America's first theatre is a story told by a hotel, about a barn, on a street that
+  So America's first theatre is a story told by a hotel, about a lost playhouse, on a street that
   changed its name.
 
   For a theatre, that seems about right.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The name on the building is the Dock Street Theatre."
+    source: 1
+    quote: "Location: 135 Church Street, Charleston, SC An essential part of the streetscape of Church Street, the Dock Street Theatre is Charleston's last surviving hotel from the antebellum period."
+  - says: "You are standing on Queen Street."
+    source: 1
+    quote: "a 1730s theater which stood on the Queen Street (formerly Dock Street) side of the property."
+  - says: "Queen Street used to be called Dock Street."
+    source: 1
+    quote: "the Queen Street (formerly Dock Street) side of the property."
+  - says: "And on this side of the block, in seventeen thirty-six, Charleston put up a building for one purpose only."
+    source: 2
+    quote: "The first theater building in America was built in Charleston in 1736"
+  - says: "And on this side of the block, in seventeen thirty-six, Charleston put up a building for one purpose only."
+    source: 1
+    quote: "The renovated building took the name of a 1730s theater which stood on the Queen Street (formerly Dock Street) side of the property."
+  - says: "It is said to have been the first building in America made for the theatre."
+    source: 1
+    quote: "This theater is said to have been the first building built specifically for theatrical performances in America."
+  - says: "The building in front of you started life around eighteen-oh-nine as the Planter's Hotel, where planters from the midlands stayed for the horse-racing season."
+    source: 1
+    quote: "The main portion of the building was constructed around 1809 as Planter's Hotel."
+  - says: "The building in front of you started life around eighteen-oh-nine as the Planter's Hotel, where planters from the midlands stayed for the horse-racing season."
+    source: 1
+    quote: "The hotel was used extensively by planters from the midlands of South Carolina, who traveled to Charleston during horse-racing season."
+  - says: "Then, in the nineteen-thirties, the city restored it as a Works Progress Administration project."
+    source: 1
+    quote: "In the 1930s, the building was restored by the City of Charleston as a Works Progress Administration project."
+  - says: "It built an eighteenth-century style theatre into the back of the old hotel"
+    source: 1
+    quote: "During this project, a large section was constructed behind the hotel containing a stage and auditorium characteristic of the 18th century."
+  - says: "So America's first theatre is a story told by a hotel, about a lost playhouse, on a street that changed its name."
+    source: 2
+    quote: "The first theater building in America was built in Charleston in 1736, but was later replaced by the 19th-century Planter's Hotel"
 sources:
   - title: "Dock Street Theatre"
     publisher: "National Park Service, Travel Historic Charleston"
     url: https://www.nps.gov/places/dock-street-theatre.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Charleston Community History"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/charleston-community-history.htm
-    retrievedAt: "2026-10-15"
-    rights: public-domain
-  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the early playhouses"
-    publisher: "Library of Congress"
-    url: https://www.loc.gov/item/06042434/
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain

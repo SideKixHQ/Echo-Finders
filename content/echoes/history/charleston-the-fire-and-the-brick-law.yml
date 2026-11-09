@@ -19,41 +19,90 @@ teaser: "Look down Church Street at the walls. There is a reason for what they a
 script: |
   Look south down Church Street at the walls. Brick. Stucco over brick. Stone.
 
-  That is not only taste. It is a fire, and a law.
+  That is not just taste. It is a fire, and a law.
 
   On the afternoon of the eighteenth of November, seventeen forty, a fire broke out in
   Charles Town. By one account it took every house from about this corner, Broad and
   Church, down to Granville Bastion, at the water's edge, where the East Battery now
   begins. Three hundred houses, by the count at the time, and storehouses, stables and
   warehouses with them. This was the oldest part of town, and full of goods. The tide was
-  high that afternoon, and by one account that is the only reason the ships at the wharves
-  did not burn as well.
+  high that afternoon, and by one account, had it not been, the shipping would have burned as well.
 
   Parliament in London sent twenty thousand pounds.
 
   And on the tenth of December, three weeks after the fire, the colony passed an act for
-  rebuilding the town. Every new building was to be made of brick, or stone, or both. The
-  act even fixed the price of bricks.
+  rebuilding the town. Every new building was to be made of brick, or stone, or both. The act even fixed the prices of building materials, bricks included.
 
   The town had tried a law like that once before and given it up, because bricks were
-  scarce. This time it stuck. A Charleston historian, writing in nineteen-oh-six, noted that
+  scarce. This time the town was rebuilt of brick. A Charleston historian, writing in nineteen-oh-six, noted that
   many of the small, dark brick houses between Broad and Water Street date from that time on.
 
-  You are standing at the edge of the fire. What it took was rebuilt in the only materials
-  the law would allow.
+  You are standing at the edge of the fire. What it took was rebuilt in the materials the law required.
 pronunciations:
   - written: Granville
     say: GRAN-vil
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "Look south down Church Street at the walls."
+    source: 1
+    quote: "consumed all the houses from Broad and Church streets down to Granville Bastion"
+  - says: "On the afternoon of the eighteenth of November, seventeen forty, a fire broke out in Charles Town."
+    source: 1
+    quote: "The year 1740 closed with a disastrous fire in Charles- town. It broke out in the afternoon of the 18th of November"
+  - says: "By one account it took every house from about this corner, Broad and Church, down to Granville Bastion, at the water's edge, where the East Battery now begins."
+    source: 1
+    quote: "consumed all the houses from Broad and Church streets down to Granville Bastion,—that is, to the point where the East Battery now begins,—"
+  - says: "Three hundred houses, by the count at the time, and storehouses, stables and warehouses with them."
+    source: 1
+    quote: "The number of houses burned was com- puted at three hundred, besides storehouses and stables and several warehouses"
+  - says: "This was the oldest part of town, and full of goods."
+    source: 1
+    quote: "the oldest and most valuable part of the city, not so much on account of the buildings, which, being the first erected, were prob- ably inferior, but on account of the immense stores which they contained."
+  - says: "The tide was high that afternoon, and by one account, had it not been, the shipping would have burned as well."
+    source: 1
+    quote: "had it not been at the time of high water, the shipping would likewise have been destroyed."
+  - says: "Parliament in London sent twenty thousand pounds."
+    source: 1
+    quote: "Parliament came to the assistance of the community, and voted £20,000 sterling"
+  - says: "Parliament in London sent twenty thousand pounds."
+    source: 2
+    quote: "Parliament came to the aid of the colony and sent it twenty thousand pounds."
+  - says: "And on the tenth of December, three weeks after the fire, the colony passed an act for rebuilding the town."
+    source: 1
+    quote: "an act for regulating the rebuilding of the town was passed on the 10th of Decem- ber, 1740"
+  - says: "Every new building was to be made of brick, or stone, or both."
+    source: 1
+    quote: "which required all buildings to be made of brick, stone, or brick and stone"
+  - says: "The act even fixed the prices of building materials, bricks included."
+    source: 1
+    quote: "and fixed the prices of building materials."
+  - says: "The act even fixed the prices of building materials, bricks included."
+    source: 1
+    quote: "Among the prices for building material we find the following: Eng- lish Bricks per 1000"
+  - says: "The town had tried a law like that once before and given it up, because bricks were scarce."
+    source: 1
+    quote: "It will be recollected that in 1706 the building of wooden frame houses had been de- clared a common nuisance and prohibited,? but as bricks were scarce, this act had been repealed in 1717"
+  - says: "This time the town was rebuilt of brick."
+    source: 2
+    quote: "The place was rebuilt of brick."
+  - says: "A Charleston historian, writing in nineteen-oh-six, noted that many of the small, dark brick houses between Broad and Water Street date from that time on."
+    source: 2
+    quote: "Many of the houses still remaining between Broad and the line of Water streets, all of small, dark brick, date from this time on."
+  - says: "A Charleston historian, writing in nineteen-oh-six, noted that many of the small, dark brick houses between Broad and Water Street date from that time on."
+    source: 2
+    quote: "Published November, 1906."
+  - says: "What it took was rebuilt in the materials the law required."
+    source: 1
+    quote: "which required all buildings to be made of brick, stone, or brick and stone"
 sources:
   - title: "The history of South Carolina under the royal government, 1719-1776 (Edward McCrady, 1899), the fire of 1740"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/99002812/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/historyofsouthca02mccr/historyofsouthca02mccr.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the great fire of 1740"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/06042434/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain

@@ -1,0 +1,109 @@
+# Drafted by Claude Code (2026-11-09) for the Charleston ghost legends (batch 2).
+# Listening spot: Public sidewalk at the corner of Tradd Street and Orange Street, looking at 106 Tradd. Private house: listen from the sidewalk only.
+# Position: Tradd and Orange intersection from the Overture street segments in the app's Charleston street file, set on the corner sidewalk beside 106 Tradd; HABS SC-156 places the Stuart House at Tradd and Orange (high confidence).
+id: charleston-the-window-marion-missed
+title: "The Window Marion Missed"
+summary: "Charleston long pointed to this corner house as the one Francis Marion fell from. Even the old histories doubted the spot."
+place: "Colonel John Stuart House, 106 Tradd Street at Orange Street, Charleston, South Carolina"
+at: { lat: 32.77436, lng: -79.93318 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 95
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A long-told tradition about which house Francis Marion fell from. The fall itself is in the histories; which window is legend, and the 1906 account itself doubts it. The script says so aloud.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [charleston, charleston-core, south-of-broad, revolutionary-war, francis-marion]
+teaser: "A locked door, a dinner party, and a window."
+script: |
+  Look at the big house on this corner, where Tradd Street meets Orange. For a long time, Charleston pointed to it as the house Francis Marion fell from. Which house it really was is a legend, and nobody can prove it.
+
+  The fall itself is in the histories. As a British army closed in on the town for the siege, Marion was at a dinner party. The custom then, one history says, was for the host to turn the key on his guests until they had done due honour to his Madeira and port.
+
+  Marion was a small, spare man of sober habits, and he did not want to stay. So he tried to let himself down from a window. He misjudged the distance. One account says he broke his leg. Another says he badly dislocated his ankle.
+
+  Either way, he was sent out of town to his home in St. John's to mend. So when Charles Town surrendered, he was not in it. He was one of three Continental officers who were not handed over. Tarleton would later call him the Swamp Fox.
+
+  The historian who told the story in nineteen-oh-six added a doubt. Marion's fellow general, William Moultrie, remembered it as the house next to one on Friend Street, at the other end of this block.
+
+  So this might not be the window. But somewhere along this block, a man climbed out of a dinner party and fell into history.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the big house on this corner, where Tradd Street meets Orange."
+    source: 3
+    quote: "Colonel Stuart House 10k Tradd Street"
+  - says: "Look at the big house on this corner, where Tradd Street meets Orange."
+    source: 1
+    quote: "that built by Captain John Stuart, at the corner of Tradd and Orange streets."
+  - says: "For a long time, Charleston pointed to it as the house Francis Marion fell from."
+    source: 1
+    quote: "The house which used. to be shown as the one from which he fell is that built by Captain John Stuart, at the corner of Tradd and Orange streets."
+  - says: "Which house it really was is a legend, and nobody can prove it."
+    source: 1
+    quote: "FROM WHICH IT IS SAID GENERAL MARION FELL"
+  - says: "As a British army closed in on the town for the siege, Marion was at a dinner party."
+    source: 2
+    quote: "Dining one day with a party of Whigs at the house of a friend"
+  - says: "As a British army closed in on the town for the siege, Marion was at a dinner party."
+    source: 1
+    quote: "Being thus incapacitated when the siege was about to begin"
+  - says: "As a British army closed in on the town for the siege, Marion was at a dinner party."
+    source: 2
+    quote: "When Sir Henry Clinton arrived with his invading force"
+  - says: "As a British army closed in on the town for the siege, Marion was at a dinner party."
+    source: 2
+    quote: "Before, however, the investment had been completed, an accident befell him"
+  - says: "The custom then, one history says, was for the host to turn the key on his guests until they had done due honour to his Madeira and port."
+    source: 1
+    quote: "when a gentleman gave a dinner party, he often turned the key upon his guests until they had done due honour to his Madeira and Port."
+  - says: "Marion was a small, spare man of sober habits, and he did not want to stay."
+    source: 1
+    quote: "Such joviality did not suit Marion, a small, spare man, of sober abstemious habits"
+  - says: "So he tried to let himself down from a window."
+    source: 1
+    quote: "he tried to escape by letting him- self down from a window."
+  - says: "One account says he broke his leg."
+    source: 1
+    quote: "he miscalculated the distance, fell and broke his leg."
+  - says: "Another says he badly dislocated his ankle."
+    source: 2
+    quote: "he fell to the ground and dis- located his ankle in avery serious manner."
+  - says: "Either way, he was sent out of town to his home in St. John's to mend."
+    source: 1
+    quote: "he was sent home to St. John’s to be cured"
+  - says: "So when Charles Town surrendered, he was not in it."
+    source: 2
+    quote: "This accident saved him from captivity with the rest of the garrison of the town."
+  - says: "He was one of three Continental officers who were not handed over."
+    source: 1
+    quote: "and so was one of the three Conti- nental officers (the others being General Isaac Huger and Major Thomas Pinckney) who were not surrendered by the capitulation of the town."
+  - says: "Tarleton would later call him the Swamp Fox."
+    source: 1
+    quote: "the ubiquitous “Swamp Fox” (Tarleton’s name for Marion)"
+  - says: "The historian who told the story in nineteen-oh-six added a doubt."
+    source: 1
+    quote: "Published November, 1906."
+  - says: "Marion's fellow general, William Moultrie, remembered it as the house next to one on Friend Street, at the other end of this block."
+    source: 1
+    quote: "General Moul- trie says, “*the house next Roupell’s.” Roupell’s house, pulled down about thirty years ago, was at the other end of the same square on Friend Street"
+sources:
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906)"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The history of South Carolina in the revolution, 1775-1780 (Edward McCrady, 1901)"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/historyofsouthca03mccr/historyofsouthca03mccr.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Colonel John Stuart House, 106 Tradd Street, Charleston (HABS SC-156), data pages"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc0200/sc0226/data/sc0226data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain

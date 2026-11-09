@@ -1,0 +1,122 @@
+# Drafted by Claude Code (2026-11-09) for the Savannah ghost legends.
+# Listening spot: Public sidewalk on the east side of Chippewa Square, facing the Savannah Theatre on Bull Street.
+# Position: Wikidata Chippewa Square point (32.07583, -81.09278) moved about 35 m east-northeast to the square's east edge by the theatre (medium confidence). The 1888 letter never names the square; the script says so.
+id: savannah-the-lion-on-the-bed
+title: "The Lion on the Bed"
+summary: "In 1888 a Savannah lodger wrote to the Morning News about the thing he found lying on his bed at three in the morning."
+place: "Chippewa Square, east side, Savannah, Georgia"
+at: { lat: 32.07600, lng: -81.09245 }
+triggerRadiusKm: 0.05
+category: legend
+format: short
+durationS: 90
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A ghost story published as a reader's letter in the Savannah Morning News, 10 August 1888, signed
+  only F. H. T. Nothing in it can be checked: the writer names neither the hotel nor the square, and
+  the tie to this square rests only on his mention of a theater to the east. The script says aloud
+  that it is a legend.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [savannah, savannah-core, ghosts, squares, legend]
+teaser: "Something was lying on the bed beside him. It had a man's face."
+script: |
+  Stand on the east side of the square, by the old theater.
+
+  This is a ghost story, and it is a legend. Nobody has ever proven a word of it.
+
+  In August eighteen eighty eight, the Savannah Morning News printed a letter signed only with initials. The writer said he had rented a room in an old hotel in this city. Its end window looked down into a square. Across the street stood a grand old church. To the east of the square was the theater.
+
+  He never named the square. A city guidebook of nineteen ten called this one Theater Square.
+
+  Night after night, he wrote, something woke him just before the church clock struck three. A hand feeling under his pillow. The bed lifting under him. Then a voice, a man in great agony, crying out, Oh my God.
+
+  And lying on the bed beside him was a creature about four feet long. A brassy yellow lion, with the face of a man of thirty or so. Short dark hair. A close beard. A contemptuous curl to the lip.
+
+  He prayed. It backed slowly off the foot of the bed and was gone.
+
+  His friends tied it to a sad tragedy in the old house years before. Others said trickery, or his own mind. He left the next day.
+
+  It is just a story in an old newspaper. But he signed off saying he knew what he saw.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In August eighteen eighty eight, the Savannah Morning News printed a letter signed only with initials."
+    source: 1
+    quote: "THS haunted bed-chamber. Experiences in an Old Hotel Btr in Savannah."
+  - says: "signed only with initials"
+    source: 1
+    quote: "my haunted bed-chamber. F. H. T."
+  - says: "The writer said he had rented a room in an old hotel in this city."
+    source: 1
+    quote: "I had in an old house in this city whero I rented a room"
+  - says: "Its end window looked down into a square."
+    source: 1
+    quote: "south overlook, z the square from its end window,"
+  - says: "Across the street stood a grand old church."
+    source: 1
+    quote: "across the street was a grand o'd church,"
+  - says: "To the east of the square was the theater."
+    source: 1
+    quote: "on the other side, to the east of the square, was the theater."
+  - says: "A city guidebook of nineteen ten called this one Theater Square."
+    source: 2
+    quote: "Chippewa—Named for battle of Chippewa, 1813 (The- ater Square)."
+  - says: "Night after night, he wrote, something woke him just before the church clock struck three."
+    source: 1
+    quote: "I would hoar the church clock strike 3 just after I was awakened. So night after night"
+  - says: "A hand feeling under his pillow."
+    source: 1
+    quote: "I felt a movement under my pillow like that of a hand cautiously feeling for something."
+  - says: "The bed lifting under him."
+    source: 1
+    quote: "I felt a pressure directly under my body raising me and the mattress at the same time."
+  - says: "Then a voice, a man in great agony, crying out, Oh my God."
+    source: 1
+    quote: "the strong ac_ of a mau in great agony."
+  - says: "crying out, Oh my God"
+    source: 1
+    quote: "the same blood-curdling ■cream or cry: “Oh Imy God,”"
+  - says: "And lying on the bed beside him was a creature about four feet long."
+    source: 1
+    quote: "It was about four feet long, well aud strongly-formed, without any hair upon it, a bright, scaly, brassy yellow creature,"
+  - says: "A brassy yellow lion, with the face of a man of thirty or so."
+    source: 1
+    quote: "A yellovL irazen lion with the head, face and i>erfecwfeatures of a man,"
+  - says: "with the face of a man of thirty or so"
+    source: 1
+    quote: "that of a man of perhaps 30 to 35 years of age, with a head of short-cut dark hair,"
+  - says: "A close beard."
+    source: 1
+    quote: "a sandy or brown close-clipped full beard and moustache,"
+  - says: "A contemptuous curl to the lip."
+    source: 1
+    quote: "The contemptuous curl of the upper lip"
+  - says: "It backed slowly off the foot of the bed and was gone."
+    source: 1
+    quote: "While I uttered my mental prayer the animal backed slowly off tne foot of the lied, and without sound or furtner movement disappeared."
+  - says: "His friends tied it to a sad tragedy in the old house years before."
+    source: 1
+    quote: "Most of them wfco have heard my story connect it with a sad tragedy that was enacted in the old house years ago,"
+  - says: "Others said trickery, or his own mind."
+    source: 1
+    quote: "while others ascribe it to some trickery or mental hallucination,"
+  - says: "He left the next day."
+    source: 1
+    quote: "I left the house for other quarters the next day."
+  - says: "he signed off saying he knew what he saw"
+    source: 1
+    quote: "but I know what I saw and felt,"
+sources:
+  - title: "The morning news (Savannah, Ga.), August 10, 1888, image 5: The haunted bed-chamber"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86063034/1888-08-10/ed-1/?sp=5
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Illustrated guide to Savannah (Maude Heyward, 1910)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/unk84031503/
+    retrievedAt: "2026-11-09"
+    rights: public-domain

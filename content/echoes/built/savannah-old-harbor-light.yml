@@ -23,9 +23,9 @@ script: |
 
   The United States government put it up in eighteen fifty eight, a cast iron standard on a granite foundation, here on the Bay, as a beacon for mariners finding their way up the Savannah River.
 
-  Notice where it stands. Not on a headland. Not out on the water. Up on the bluff, at the end of a city street, on what was then the Bay Street green. In nineteen hundred the city's park commission asked for money to improve that green, and suggested a name for it. Emmet Park.
+  Notice where it stands. Not on a headland. Not out on the water. Up on the bluff, on the Bay. In nineteen hundred the city's park commission asked for money to improve the Bay Street green, and suggested a name for it. Emmet Park.
 
-  When federal surveyors came to record the light in the nineteen thirties, they noted two things about it.
+  When federal surveyors came to record the light, they noted a pair of things about it.
 
   It had not been used for many years.
 
@@ -34,6 +34,28 @@ script: |
   Somebody was looking after a light that nobody needed.
 editorial: draft
 factCheck: corroborated
+claims:
+  - says: "The United States government put it up in eighteen fifty eight, a cast iron standard on a granite foundation, here on the Bay, as a beacon for mariners finding their way up the Savannah River."
+    source: 1
+    quote: "This standard of cast iron on a granite foundation wa* erected on \"The Bay\" by the United States Government in 1858 as a beacon light for mariners navigating th© Savannah River*"
+  - says: "Up on the bluff, on the Bay."
+    source: 1
+    quote: "erected on \"The Bay\" by the United States Government in 1858"
+  - says: "In nineteen hundred the city's park commission asked for money to improve the Bay Street green, and suggested a name for it."
+    source: 2
+    quote: "a special appropriation of $2,C00 for the improvement of the Bay street green, and suggested that Council adopt the name of Emmet Park as a suitable designation for the green."
+  - says: "Emmet Park."
+    source: 2
+    quote: "suggested that Council adopt the name of Emmet Park as a suitable designation for the green."
+  - says: "When federal surveyors came to record the light"
+    source: 1
+    quote: "OLD HARBOR BEACON, Savannah, Chatham County, Georgia*"
+  - says: "It had not been used for many years."
+    source: 1
+    quote: "It has not been used for many years, but is well maintained."
+  - says: "And it was well maintained."
+    source: 1
+    quote: "It has not been used for many years, but is well maintained."
 sources:
   - title: "Old Harbor Beacon, Savannah (HABS GA-232), data pages"
     publisher: "Historic American Buildings Survey, Library of Congress"
