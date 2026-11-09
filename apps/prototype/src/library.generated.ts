@@ -1684,20 +1684,6 @@ export const LIBRARY: readonly Echo[] = [
       "script": "This is the oldest park in New York. The fence has been here since 1771.\n\nLook at the tops of the posts. They used to have small crowns on them.\n\nIn 1776 a crowd pulled down a statue of the king that stood here, and melted it into musket balls. Somebody also sawed the crowns off this fence.\n\nThe fence is still standing. The crowns are still gone.\n"
     },
     "remoteness": 0,
-    "archive": [
-      {
-        "imageKey": "archive/bowling-green-king-george",
-        "at": {
-          "lat": 40.704834,
-          "lng": -74.013315
-        },
-        "bearingDeg": 155,
-        "year": 1905,
-        "caption": "Bowling Green and the Custom House",
-        "credit": "DEMO stand-in, no archive plate sourced yet",
-        "rights": "public-domain"
-      }
-    ],
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -1776,20 +1762,6 @@ export const LIBRARY: readonly Echo[] = [
       "broadway"
     ],
     "remoteness": 0,
-    "archive": [
-      {
-        "imageKey": "archive/canyon-of-heroes",
-        "at": {
-          "lat": 40.709662,
-          "lng": -74.010567
-        },
-        "bearingDeg": 308,
-        "year": 1927,
-        "caption": "Lower Broadway during a reception",
-        "credit": "DEMO stand-in, no archive plate sourced yet",
-        "rights": "public-domain"
-      }
-    ],
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -2220,20 +2192,6 @@ export const LIBRARY: readonly Echo[] = [
       "script": "This round stone fort was an immigration station before Ellis Island was built.\n\nEight million people came through this one building.\n\nIf your family reached New York before 1892, this is probably the door they walked through.\n"
     },
     "remoteness": 0.18,
-    "archive": [
-      {
-        "imageKey": "archive/castle-clinton-eight-million",
-        "at": {
-          "lat": 40.703263,
-          "lng": -74.01734
-        },
-        "bearingDeg": 78,
-        "year": 1900,
-        "caption": "The landing depot at Battery Park",
-        "credit": "DEMO stand-in, no archive plate sourced yet",
-        "rights": "public-domain"
-      }
-    ],
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -5318,20 +5276,6 @@ export const LIBRARY: readonly Echo[] = [
       "wall-street"
     ],
     "remoteness": 0,
-    "archive": [
-      {
-        "imageKey": "archive/federal-hall-two-firsts",
-        "at": {
-          "lat": 40.707542,
-          "lng": -74.009914
-        },
-        "bearingDeg": 199,
-        "year": 1890,
-        "caption": "Wall Street from Broad, before the tower",
-        "credit": "DEMO stand-in, no archive plate sourced yet",
-        "rights": "public-domain"
-      }
-    ],
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -11619,20 +11563,6 @@ export const LIBRARY: readonly Echo[] = [
       "september-11"
     ],
     "remoteness": 0.1,
-    "archive": [
-      {
-        "imageKey": "archive/st-pauls-still-standing",
-        "at": {
-          "lat": 40.710992,
-          "lng": -74.009311
-        },
-        "bearingDeg": 22,
-        "year": 1895,
-        "caption": "Broadway at the chapel yard",
-        "credit": "DEMO stand-in, no archive plate sourced yet",
-        "rights": "public-domain"
-      }
-    ],
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12519,20 +12449,6 @@ export const LIBRARY: readonly Echo[] = [
       "hamilton"
     ],
     "remoteness": 0,
-    "archive": [
-      {
-        "imageKey": "archive/trinity-tallest-thing",
-        "at": {
-          "lat": 40.708042,
-          "lng": -74.011914
-        },
-        "bearingDeg": 285,
-        "year": 1870,
-        "caption": "Trinity's spire above the rooftops",
-        "credit": "DEMO stand-in, no archive plate sourced yet",
-        "rights": "public-domain"
-      }
-    ],
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
@@ -12635,20 +12551,6 @@ export const LIBRARY: readonly Echo[] = [
       "wall-street"
     ],
     "remoteness": 0,
-    "archive": [
-      {
-        "imageKey": "archive/wall-street-the-wall",
-        "at": {
-          "lat": 40.707392,
-          "lng": -74.010704
-        },
-        "bearingDeg": 272,
-        "year": 1885,
-        "caption": "Looking east along Wall Street",
-        "credit": "DEMO stand-in, no archive plate sourced yet",
-        "rights": "public-domain"
-      }
-    ],
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
