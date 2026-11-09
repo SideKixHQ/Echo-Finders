@@ -1046,7 +1046,7 @@ body {
 
 
 /* ── transcript ──────────────────────────────────────────── */
-.transcript { overflow-y: auto; flex: 1; padding: 12px 14px 16px; scrollbar-width: none; }
+.transcript { position: relative; overflow-y: auto; flex: 1; padding: 12px 14px 16px; scrollbar-width: none; }
 .transcript::-webkit-scrollbar { display: none; }
 .tsearch {
   display: flex; align-items: center; gap: 9px; padding: 10px 12px;
