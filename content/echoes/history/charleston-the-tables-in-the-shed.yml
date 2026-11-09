@@ -47,7 +47,7 @@ script: |
 pronunciations:
   - written: "barracoon"
     say: "bar-uh-KOON"
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the front of number six Chalmers Street."
@@ -118,3 +118,77 @@ sources:
     url: https://www.nps.gov/places/charleston-sc.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-tables-in-the-shed/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 104.3
+    audioBytes: 1669372
+    transcript:
+      totalS: 104.3
+      lines:
+        - text: Look at the front of number six Chalmers Street.
+          atS: 0
+          durationS: 3.12
+        - text: A high arch.
+          atS: 3.73
+          durationS: 1.16
+        - text: Eight-sided pillars.
+          atS: 5.17
+          durationS: 1.43
+        - text: A large iron gate.
+          atS: 6.84
+          durationS: 1.64
+        - text: It is a handsome front, for what happened behind it.
+          atS: 8.8
+          durationS: 2.9
+        - text: This is the only building known to survive in South Carolina that was used as a slave auction gallery.
+          atS: 12.21
+          durationS: 6.07
+        - text: For a long time, Charleston customarily sold enslaved men, women and children on the north side of the Exchange building.
+          atS: 19.1
+          durationS: 7.64
+        - text: In eighteen fifty-six the city banned those public sales.
+          atS: 27.69
+          durationS: 3.71
+        - text: The trade did not stop.
+          atS: 31.92
+          durationS: 1.44
+        - text: It moved into sales rooms, yards and marts along Chalmers, State and Queen streets.
+          atS: 33.96
+          durationS: 5.78
+        - text: This was one of them, known as Ryan's Mart.
+          atS: 40.34
+          durationS: 2.8
+        - text: Behind the front stood a four-storey building with a barracoon, a jail where people were held until they were sold.
+          atS: 44.09
+          durationS: 7
+        - text: There was a kitchen.
+          atS: 51.7
+          durationS: 1.06
+        - text: There was a morgue.
+          atS: 53.14
+          durationS: 1.07
+        - text: The shed you are looking at went up in eighteen fifty-nine.
+          atS: 54.65
+          durationS: 3.53
+        - text: Inside, the people being sold stood on tables three feet high and ten feet long.
+          atS: 58.88
+          durationS: 6.2
+        - text: The tables were set lengthwise, so that buyers could walk along beside them and look.
+          atS: 65.59
+          durationS: 5.33
+        - text: Someone thought carefully about what the buyers needed to see.
+          atS: 71.73
+          durationS: 3.63
+        - text: Sales were held here for only a few years, until the Civil War brought slavery to an end.
+          atS: 76.17
+          durationS: 5.85
+        - text: Historians estimate that nearly half of all the Africans brought to America in slavery arrived through Charleston.
+          atS: 82.98
+          durationS: 7.56
+        - text: In nineteen thirty-eight a woman named Miriam Wilson bought this building and made it a museum of African American history.
+          atS: 91.05
+          durationS: 7.89
+        - text: A room built for buyers became a room for remembering the people who were sold.
+          atS: 99.64
+          durationS: 4.62

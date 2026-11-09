@@ -9,7 +9,7 @@ at: { lat: 32.07350, lng: -81.09390 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 81
+durationS: 74
 visibility: at-hand
 certainty: documented
 minAge: 8
@@ -30,7 +30,7 @@ script: |
   A hundred years later to the day, Savannah laid the cornerstone of this monument. When it was unveiled in eighteen eighty eight, the President came.
 
   He refused to be made an officer. So the city made him fifteen feet tall.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "His left hand holds a battle-worn flag out at arm's length."
@@ -100,3 +100,62 @@ sources:
 pronunciations:
   - written: Moultrie
     say: MOOL-tree
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-sergeant-who-would-not-be-an-officer/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.4
+    audioBytes: 1190808
+    transcript:
+      totalS: 74.4
+      lines:
+        - text: Look up at the bronze soldier on top of the monument in the middle of the square.
+          atS: 0
+          durationS: 4.27
+        - text: His left hand holds a battle-worn flag out at arm's length.
+          atS: 4.45
+          durationS: 3.6
+        - text: His right hand is pressed against his side, over a bullet wound.
+          atS: 8.2
+          durationS: 3.58
+        - text: His name was William Jasper, a sergeant in a South Carolina regiment.
+          atS: 11.98
+          durationS: 4.31
+        - text: Some time before he died, the British fleet bombarded Fort Moultrie, and the fort's flagstaff was shot in two.
+          atS: 17.4
+          durationS: 6.91
+        - text: Jasper caught the flag, tied it to a sponge staff, and jumped up onto the rampart to hold it there until a new pole was found.
+          atS: 25.26
+          durationS: 7.41
+        - text: He was offered a commission as an officer.
+          atS: 33.27
+          durationS: 2.12
+        - text: He turned it down.
+          atS: 35.84
+          durationS: 1.14
+        - text: He said he could neither read nor write, and so did not think himself worthy.
+          atS: 37.49
+          durationS: 4.64
+        - text: The governor offered it again.
+          atS: 42.74
+          durationS: 1.58
+        - text: He refused again.
+          atS: 44.76
+          durationS: 1.28
+        - text: On the ninth of October, seventeen seventy nine, in the attack on the British lines at Spring Hill, Jasper was mortally wounded.
+          atS: 46.64
+          durationS: 8.31
+        - text: He carried his regiment's colours off the field anyway.
+          atS: 55.55
+          durationS: 3.03
+        - text: A hundred years later to the day, Savannah laid the cornerstone of this monument.
+          atS: 59.28
+          durationS: 4.62
+        - text: When it was unveiled in eighteen eighty eight, the President came.
+          atS: 64.41
+          durationS: 4.02
+        - text: He refused to be made an officer.
+          atS: 68.94
+          durationS: 1.97
+        - text: So the city made him fifteen feet tall.
+          atS: 71.36
+          durationS: 3

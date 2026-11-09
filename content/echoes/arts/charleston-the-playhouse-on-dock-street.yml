@@ -9,7 +9,7 @@ at: { lat: 32.77818, lng: -79.92990 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 72
+durationS: 63
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,7 +36,7 @@ script: |
   changed its name.
 
   For a theatre, that seems about right.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The name on the building is the Dock Street Theatre."
@@ -83,3 +83,53 @@ sources:
     url: https://www.nps.gov/articles/charleston-community-history.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-playhouse-on-dock-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 63.2
+    audioBytes: 1012340
+    transcript:
+      totalS: 63.2
+      lines:
+        - text: Look up at the iron balcony on the corner.
+          atS: 0
+          durationS: 2.36
+        - text: The name on the building is the Dock Street Theatre.
+          atS: 2.68
+          durationS: 2.9
+        - text: Now look at the street sign.
+          atS: 5.97
+          durationS: 1.55
+        - text: You are standing on Queen Street.
+          atS: 7.85
+          durationS: 2.14
+        - text: Queen Street used to be called Dock Street.
+          atS: 10.43
+          durationS: 2.35
+        - text: And on this side of the block, in seventeen thirty-six, Charleston put up a building for one purpose only.
+          atS: 13.15
+          durationS: 6.36
+        - text: Plays.
+          atS: 19.96
+          durationS: 0.8
+        - text: It is said to have been the first building in America made for the theatre.
+          atS: 20.97
+          durationS: 3.9
+        - text: That playhouse is long gone.
+          atS: 25.11
+          durationS: 2.05
+        - text: The building in front of you started life around eighteen-oh-nine as the Planter's Hotel, where planters from the midlands stayed for the horse-racing season.
+          atS: 27.49
+          durationS: 9.08
+        - text: Then, in the nineteen-thirties, the city restored it as a Works Progress Administration project.
+          atS: 37.01
+          durationS: 5.82
+        - text: It built an eighteenth-century style theatre into the back of the old hotel, and gave the whole thing the old playhouse's name.
+          atS: 43.16
+          durationS: 7.91
+        - text: So America's first theatre is a story told by a hotel, about a lost playhouse, on a street that changed its name.
+          atS: 51.57
+          durationS: 8.36
+        - text: For a theatre, that seems about right.
+          atS: 60.44
+          durationS: 2.76

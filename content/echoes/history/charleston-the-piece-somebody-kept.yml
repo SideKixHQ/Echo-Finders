@@ -26,7 +26,7 @@ script: |
   It was not enough. Charleston surrendered, and it was the largest American surrender until the Civil War.
 
   Four years later, the horn work was taken down. Somebody kept this piece, and put a fence around it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "On the King Street side of this square, behind an iron fence, is a fragment of old wall."
@@ -90,3 +90,53 @@ sources:
 pronunciations:
   - written: Emmanuel Hesse
     say: eh-MAN-yoo-el HESS-eh
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-piece-somebody-kept/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 63.7
+    audioBytes: 1019863
+    transcript:
+      totalS: 63.7
+      lines:
+        - text: On the King Street side of this square, behind an iron fence, is a fragment of old wall.
+          atS: 0
+          durationS: 5.61
+        - text: It is easy to walk past.
+          atS: 6.05
+          durationS: 1.78
+        - text: It is the oldest thing on the square.
+          atS: 8.21
+          durationS: 1.97
+        - text: In the eighteenth century, this was the northern edge of Charleston, and the road into town came through here.
+          atS: 10.99
+          durationS: 6.26
+        - text: To guard it, a horn work was built in seventeen fifty nine, a great fortification designed by a German engineer named Emmanuel Hesse.
+          atS: 17.69
+          durationS: 10.09
+        - text: It covered five acres.
+          atS: 28.11
+          durationS: 1.61
+        - text: It mounted eighteen cannon.
+          atS: 29.97
+          durationS: 1.95
+        - text: A wide moat ran along its north side.
+          atS: 32.3
+          durationS: 2.84
+        - text: Parts of it were built of tabby, the old coastal building material you can see in that fragment.
+          atS: 35.42
+          durationS: 5.79
+        - text: In seventeen eighty, a British army laid siege to Charleston, and the horn work was the city's main defence.
+          atS: 41.73
+          durationS: 7.21
+        - text: It was not enough.
+          atS: 49.38
+          durationS: 1.24
+        - text: Charleston surrendered, and it was the largest American surrender until the Civil War.
+          atS: 51.22
+          durationS: 5.06
+        - text: Four years later, the horn work was taken down.
+          atS: 56.89
+          durationS: 3.16
+        - text: Somebody kept this piece, and put a fence around it.
+          atS: 60.49
+          durationS: 3.18

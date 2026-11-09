@@ -9,7 +9,7 @@ at: { lat: 32.77436, lng: -79.93318 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 95
+durationS: 82
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -31,7 +31,7 @@ script: |
   The historian who told the story in nineteen-oh-six added a doubt. Marion's fellow general, William Moultrie, remembered it as the house next to one on Friend Street, at the other end of this block.
 
   So this might not be the window. But somewhere along this block, a man climbed out of a dinner party and fell into history.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the big house on this corner, where Tradd Street meets Orange."
@@ -107,3 +107,71 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc0200/sc0226/data/sc0226data.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/charleston-the-window-marion-missed/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 81.9
+    audioBytes: 1311181
+    transcript:
+      totalS: 81.9
+      lines:
+        - text: Look at the big house on this corner, where Tradd Street meets Orange.
+          atS: 0
+          durationS: 3.88
+        - text: For a long time, Charleston pointed to it as the house Francis Marion fell from.
+          atS: 4.48
+          durationS: 4.79
+        - text: Which house it really was is a legend, and nobody can prove it.
+          atS: 9.88
+          durationS: 3.92
+        - text: The fall itself is in the histories.
+          atS: 14.24
+          durationS: 2.42
+        - text: As a British army closed in on the town for the siege, Marion was at a dinner party.
+          atS: 17.61
+          durationS: 5
+        - text: The custom then, one history says, was for the host to turn the key on his guests until they had done due honour to his Madeira and port.
+          atS: 23
+          durationS: 7.93
+        - text: Marion was a small, spare man of sober habits, and he did not want to stay.
+          atS: 31.74
+          durationS: 4.98
+        - text: So he tried to let himself down from a window.
+          atS: 37.16
+          durationS: 2.53
+        - text: He misjudged the distance.
+          atS: 40.02
+          durationS: 1.63
+        - text: One account says he broke his leg.
+          atS: 42.25
+          durationS: 2.01
+        - text: Another says he badly dislocated his ankle.
+          atS: 44.58
+          durationS: 2.82
+        - text: Either way, he was sent out of town to his home in St.
+          atS: 47.91
+          durationS: 3.2
+        - text: John's to mend.
+          atS: 51.14
+          durationS: 1.1
+        - text: So when Charles Town surrendered, he was not in it.
+          atS: 52.57
+          durationS: 3.25
+        - text: He was one of three Continental officers who were not handed over.
+          atS: 56.1
+          durationS: 3.68
+        - text: Tarleton would later call him the Swamp Fox.
+          atS: 60.22
+          durationS: 2.69
+        - text: The historian who told the story in nineteen-oh-six added a doubt.
+          atS: 63.36
+          durationS: 3.81
+        - text: Marion's fellow general, William Moultrie, remembered it as the house next to one on Friend Street, at the other end of this block.
+          atS: 67.67
+          durationS: 6.9
+        - text: So this might not be the window.
+          atS: 75.01
+          durationS: 1.72
+        - text: But somewhere along this block, a man climbed out of a dinner party and fell into history.
+          atS: 76.97
+          durationS: 4.9

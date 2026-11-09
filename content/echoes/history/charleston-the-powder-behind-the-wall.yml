@@ -9,7 +9,7 @@ at: { lat: 32.77695, lng: -79.92730 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 91
+durationS: 84
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,7 +36,7 @@ script: |
 pronunciations:
   - written: Moultrie
     say: MOOL-tree
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The building at the foot of Broad Street is the Exchange."
@@ -122,3 +122,62 @@ sources:
     url: https://www.nps.gov/articles/000/british-evacuation-of-charleston.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-powder-behind-the-wall/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 84.4
+    audioBytes: 1351305
+    transcript:
+      totalS: 84.4
+      lines:
+        - text: The building at the foot of Broad Street is the Exchange.
+          atS: 0
+          durationS: 3.67
+        - text: When it was finished, in seventeen seventy-one, it fronted the harbour.
+          atS: 4.27
+          durationS: 4.2
+        - text: Everything between it and the water now is filled land.
+          atS: 9.08
+          durationS: 3.62
+        - text: Think about what is underneath it.
+          atS: 13.3
+          durationS: 1.87
+        - text: In the spring of seventeen eighty a British army laid siege to Charleston.
+          atS: 15.69
+          durationS: 4.68
+        - text: During the siege, after a shell burst close to the powder magazine on Cumberland Street, the defenders moved ten thousand pounds of gunpowder out of it, by night, and carried it down into the vaults of this building.
+          atS: 21.18
+          durationS: 13.32
+        - text: Then they bricked it in.
+          atS: 35.19
+          durationS: 1.42
+        - text: The city surrendered in May.
+          atS: 37.21
+          durationS: 1.87
+        - text: The British took vast stores of powder when it fell.
+          atS: 39.46
+          durationS: 3.38
+        - text: They held Charleston for more than two years.
+          atS: 43.35
+          durationS: 2.72
+        - text: They used the Exchange as barracks, and the cellar became their military prison, the Provost.
+          atS: 46.51
+          durationS: 5.68
+        - text: In one damp, dark room they kept the lowest criminals together with anyone, however respectable, against whom a complaint was brought, men and women alike.
+          atS: 52.88
+          durationS: 10.53
+        - text: William Moultrie, one of the American commanders, wrote about it afterwards.
+          atS: 64.11
+          durationS: 4.72
+        - text: The Provost, he said, was right next to the powder.
+          atS: 69.79
+          durationS: 3.1
+        - text: The British never found it.
+          atS: 73.4
+          durationS: 1.61
+        - text: When the Americans came back into the town, it was still there.
+          atS: 75.71
+          durationS: 3.66
+        - text: For more than two years, the British had been guarding it for them.
+          atS: 80.67
+          durationS: 3.72

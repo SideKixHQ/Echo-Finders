@@ -9,7 +9,7 @@ at: { lat: 32.07735, lng: -81.08965 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 74
+durationS: 71
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   The survey that measured every curve of the staircase did not write down a single one of their names.
 
   Their rooms are still standing. The house is a museum now, and the quarters are part of it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It was finished in eighteen nineteen, to designs by the English architect William Jay."
@@ -80,3 +80,71 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/ga/ga0000/ga0091/data/ga0091data.pdf
     retrievedAt: "2026-10-15"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-word-in-the-basement/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.4
+    audioBytes: 1143161
+    transcript:
+      totalS: 71.4
+      lines:
+        - text: Start with the front of the house.
+          atS: 0
+          durationS: 1.96
+        - text: The curved double stair.
+          atS: 2.47
+          durationS: 1.65
+        - text: The curved porch above it.
+          atS: 4.45
+          durationS: 1.74
+        - text: The cast-iron balcony on the side.
+          atS: 6.51
+          durationS: 2.16
+        - text: It was finished in eighteen nineteen, to designs by the English architect William Jay.
+          atS: 9.11
+          durationS: 4.98
+        - text: When surveyors from the Historic American Buildings Survey came here in the nineteen thirties, this is what they wrote about.
+          atS: 14.61
+          durationS: 6.39
+        - text: The curves.
+          atS: 21.32
+          durationS: 0.88
+        - text: The Greek fret on the parlour ceiling.
+          atS: 22.37
+          durationS: 1.97
+        - text: A white marble mantel, carved with women carrying baskets of fruit.
+          atS: 24.67
+          durationS: 4.23
+        - text: Then they reached the basement.
+          atS: 29.22
+          durationS: 1.58
+        - text: They listed a kitchen, a bakery, a wine cellar, and servants' quarters.
+          atS: 31.01
+          durationS: 4.99
+        - text: That was all.
+          atS: 36.33
+          durationS: 0.9
+        - text: One word.
+          atS: 37.67
+          durationS: 0.86
+        - text: Servants.
+          atS: 38.98
+          durationS: 0.92
+        - text: Behind the house stands its original carriage house.
+          atS: 40.33
+          durationS: 3.34
+        - text: The Library of Congress record for this property now describes it as containing one of the earliest intact urban slave quarters in the South.
+          atS: 44.12
+          durationS: 8.81
+        - text: The people who lived and worked there were enslaved by the families in the big house.
+          atS: 53.53
+          durationS: 5.06
+        - text: The survey that measured every curve of the staircase did not write down a single one of their names.
+          atS: 59.29
+          durationS: 6.08
+        - text: Their rooms are still standing.
+          atS: 65.7
+          durationS: 1.75
+        - text: The house is a museum now, and the quarters are part of it.
+          atS: 67.7
+          durationS: 3.68

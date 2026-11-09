@@ -9,7 +9,7 @@ at: { lat: 32.78398, lng: -79.93580 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 85
+durationS: 72
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -31,7 +31,7 @@ script: |
   Bennett insisted the story was a genuine folk legend, not his invention. But he also wrote what he believed was underneath it. She had made her money by wise purchases of real estate. Popular superstition, he said, did the rest.
 
   By his time, the lane was already gone. Trees, passage, cottage and gardens, he wrote, all have disappeared together.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "You are standing beside a city block bounded by King, George, St. Philip and Calhoun streets."
@@ -91,3 +91,77 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/madamemargotgrot00benn/madamemargotgrot00benn.text.txt
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/charleston-madame-margots-bargain/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 71.7
+    audioBytes: 1148176
+    transcript:
+      totalS: 71.7
+      lines:
+        - text: You are standing beside a city block bounded by King, George, St.
+          atS: 0
+          durationS: 3.55
+        - text: Philip and Calhoun streets.
+          atS: 3.58
+          durationS: 1.78
+        - text: Somewhere in the middle of it, a Charleston writer said, there once ran a narrow passage called Lilac Lane.
+          atS: 5.86
+          durationS: 6.28
+        - text: This is a legend, and nobody can prove it.
+          atS: 12.53
+          durationS: 2.5
+        - text: The writer was John Bennett.
+          atS: 15.35
+          durationS: 1.53
+        - text: He told the story of a milliner he called Madame Margot.
+          atS: 17.03
+          durationS: 3.24
+        - text: That was not her real name.
+          atS: 20.65
+          durationS: 1.5
+        - text: He changed it on purpose.
+          atS: 22.48
+          durationS: 1.43
+        - text: She was born here, he wrote, to refugees from San Domingo.
+          atS: 24.29
+          durationS: 3.47
+        - text: Her shop was on the fashionable west side of King Street, a little above the Bend.
+          atS: 28.04
+          durationS: 4.41
+        - text: Her cottage was in Lilac Lane, named for two Indian lilac trees at the George Street entrance.
+          atS: 32.83
+          durationS: 5.4
+        - text: She became rich.
+          atS: 38.56
+          durationS: 1.12
+        - text: Very rich.
+          atS: 39.88
+          durationS: 1
+        - text: Plantations in the country, houses in town.
+          atS: 40.99
+          durationS: 2.73
+        - text: And the town explained it the old way.
+          atS: 43.93
+          durationS: 2.05
+        - text: People said she had made a bargain with the Devil.
+          atS: 46.2
+          durationS: 2.48
+        - text: Bennett insisted the story was a genuine folk legend, not his invention.
+          atS: 48.85
+          durationS: 4.12
+        - text: But he also wrote what he believed was underneath it.
+          atS: 53.19
+          durationS: 2.7
+        - text: She had made her money by wise purchases of real estate.
+          atS: 56.1
+          durationS: 3.23
+        - text: Popular superstition, he said, did the rest.
+          atS: 59.6
+          durationS: 2.91
+        - text: By his time, the lane was already gone.
+          atS: 63.03
+          durationS: 2.76
+        - text: Trees, passage, cottage and gardens, he wrote, all have disappeared together.
+          atS: 66.12
+          durationS: 5.58

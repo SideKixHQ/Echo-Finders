@@ -9,14 +9,11 @@ at: { lat: 32.08140, lng: -81.08950 }
 triggerRadiusKm: 0.05
 category: built
 format: short
-durationS: 96
+durationS: 88
 visibility: at-hand
 certainty: contested
 certaintyNote: >-
-  That ships arriving in ballast came up this river, and that foreign ballast was used as
-  waterfront fill, is documented. That the stones in River Street's walls and paving are that
-  ballast is a tradition recorded as "said to have been" since the 1930s; no source ties any
-  particular stone to a ship. The script says so.
+  That ships arriving in ballast came up this river, and that foreign ballast was used as waterfront fill, is documented. That the stones in River Street's walls and paving are that ballast is a tradition recorded as "said to have been" since the 1930s; no source ties any particular stone to a ship. The script says so.
 minAge: 0
 quality: 0.75
 tags: [savannah, savannah-core, riverfront, shipping, cotton]
@@ -37,7 +34,7 @@ script: |
   Said to have been. Even then it was the story, not the receipt.
 
   So nobody can show you which stone came from where. But the ships came in heavy with rock, and the rock had to go somewhere.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "cobbles under your feet, and at the rough stone in the old walls along River Street"
@@ -88,3 +85,59 @@ sources:
     url: https://www.loc.gov/pictures/item/ga1012/
     retrievedAt: "2026-10-15"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-ballast-stones/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 87.7
+    audioBytes: 1403967
+    transcript:
+      totalS: 87.7
+      lines:
+        - text: Look down at the cobbles under your feet, and at the rough stone in the old walls along River Street.
+          atS: 0
+          durationS: 5.46
+        - text: You will hear, probably more than once today, that this stone crossed the ocean as ballast.
+          atS: 5.9
+          durationS: 6.08
+        - text: Ships that came over light carried rock low in the hold to keep them steady, dumped it here, and loaded cotton for the voyage out.
+          atS: 12.49
+          durationS: 7.62
+        - text: Here is what the record actually supports.
+          atS: 20.71
+          durationS: 2.64
+        - text: Ships really did arrive that way.
+          atS: 24.65
+          durationS: 2.1
+        - text: On the second of November eighteen eighty nine, the Savannah Morning News listed a Norwegian bark up from Buenos Aires, in ballast.
+          atS: 27.86
+          durationS: 8.21
+        - text: A British steamship came in from Teneriffe, in ballast.
+          atS: 36.2
+          durationS: 3.44
+        - text: That was an ordinary day.
+          atS: 40.08
+          durationS: 1.74
+        - text: Ballast really was dumped on this waterfront.
+          atS: 42.03
+          durationS: 2.81
+        - text: A city guide of the early eighteen eighties boasted that when a railway's wharves downriver were filled in, the four quarters of the habitable globe had contributed, by way of ballast from foreign ships.
+          atS: 45.12
+          durationS: 11.66
+        - text: When the old eastern wharves were recorded in two thousand seven, ahead of their demolition, the ballast that filled them was still there.
+          atS: 57.89
+          durationS: 7.79
+        - text: And when federal surveyors photographed a stone warehouse on River Street in the nineteen thirties, they wrote that its rubble stone was said to have been brought over as ballast.
+          atS: 66.06
+          durationS: 10.01
+        - text: Said to have been.
+          atS: 76.39
+          durationS: 1.15
+        - text: Even then it was the story, not the receipt.
+          atS: 77.82
+          durationS: 2.46
+        - text: So nobody can show you which stone came from where.
+          atS: 80.56
+          durationS: 2.84
+        - text: But the ships came in heavy with rock, and the rock had to go somewhere.
+          atS: 83.58
+          durationS: 4.1

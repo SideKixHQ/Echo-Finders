@@ -9,7 +9,7 @@ at: { lat: 32.07672, lng: -81.09292 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 81
+durationS: 79
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   So the church in front of you is about seventy years younger than it looks.
 
   The original stood for seventy years. The copy has now stood for well over a century.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The Independent Presbyterian Church was dedicated in eighteen nineteen."
@@ -90,3 +90,59 @@ sources:
     url: https://www.loc.gov/item/01007699/
     retrievedAt: "2026-10-15"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-church-copied-from-itself/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 78.7
+    audioBytes: 1259772
+    transcript:
+      totalS: 78.7
+      lines:
+        - text: Look up at the white steeple on the corner of Bull Street and Oglethorpe Avenue.
+          atS: 0
+          durationS: 4.96
+        - text: The Independent Presbyterian Church was dedicated in eighteen nineteen.
+          atS: 5.34
+          durationS: 4.83
+        - text: Fifty years later, a history of the city called it one of the most elegant and spacious houses of worship in the country.
+          atS: 10.77
+          durationS: 7.63
+        - text: On the evening of the sixth of April, eighteen eighty-nine, a clerk in a dry goods store on Broughton Street stepped into a shop window to light the gas.
+          atS: 19.7
+          durationS: 10.17
+        - text: A gust of wind blew the flame against something light and flammable.
+          atS: 30.57
+          durationS: 4.35
+        - text: By morning more than fifty buildings were gone.
+          atS: 35.62
+          durationS: 2.9
+        - text: The Savannah Morning News described what was left of this church.
+          atS: 39.22
+          durationS: 3.74
+        - text: Skeleton walls.
+          atS: 43.4
+          durationS: 1.35
+        - text: What you are looking at went up in eighteen ninety.
+          atS: 45.07
+          durationS: 2.84
+        - text: It was rebuilt from measured drawings of the church that burned.
+          atS: 48.3
+          durationS: 3.52
+        - text: A copy of itself, built to its own measurements.
+          atS: 52.2
+          durationS: 3.15
+        - text: The congregation had reasons to be faithful to the old design.
+          atS: 55.95
+          durationS: 3.67
+        - text: By one account in the federal survey, a legacy left to the church required that its high pulpit never be changed.
+          atS: 59.94
+          durationS: 6.92
+        - text: So the church in front of you is about seventy years younger than it looks.
+          atS: 67.47
+          durationS: 4.35
+        - text: The original stood for seventy years.
+          atS: 72.42
+          durationS: 2.41
+        - text: The copy has now stood for well over a century.
+          atS: 75.44
+          durationS: 3.23

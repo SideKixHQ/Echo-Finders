@@ -9,7 +9,7 @@ at: { lat: 32.77881, lng: -79.93121 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 99
+durationS: 87
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -37,7 +37,7 @@ script: |
 
   Every church before this one has gone. The street is still named for the first of them.
   And the graves have outlasted all of them.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look into the graveyard around the Circular Congregational Church."
@@ -104,3 +104,59 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdc/02003003/02003003.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-street-named-for-a-meeting-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 87.1
+    audioBytes: 1394354
+    transcript:
+      totalS: 87.1
+      lines:
+        - text: Look into the graveyard around the Circular Congregational Church.
+          atS: 0
+          durationS: 3.82
+        - text: It is the oldest burial ground in Charleston, and one of its monuments has stood here since the sixteen hundreds.
+          atS: 4.06
+          durationS: 6.8
+        - text: Now think about the name of the street you are standing on.
+          atS: 11.47
+          durationS: 3.04
+        - text: Meeting Street is named for a building that is not here.
+          atS: 15.32
+          durationS: 3.29
+        - text: In the first years of the town, its dissenters, English Congregationalists, Scots and Irish Presbyterians and French Huguenots, put up a plain meeting house on this spot.
+          atS: 19.42
+          durationS: 10.82
+        - text: It was white.
+          atS: 30.69
+          durationS: 0.98
+        - text: People called it the White Meeting House, and the road in front of it took the name.
+          atS: 32.1
+          durationS: 4.54
+        - text: Since then, this site has been through almost everything Charleston could throw at it.
+          atS: 37.08
+          durationS: 4.6
+        - text: During the Revolution the meeting house was turned into a granary, and horses were pastured among these graves.
+          atS: 42.12
+          durationS: 5.85
+        - text: In eighteen-oh-six a new church went up here, round, designed by the Charleston-born architect Robert Mills.
+          atS: 49.27
+          durationS: 7.29
+        - text: It gave the congregation its name.
+          atS: 57.08
+          durationS: 2.18
+        - text: It burned in the great fire of eighteen sixty-one, stood as a ruin for twenty-five years, and the earthquake of eighteen eighty-six finished it off.
+          atS: 59.95
+          durationS: 9.22
+        - text: The church in front of you was built after that, around eighteen ninety-two, and it was built partly from the old bricks.
+          atS: 69.87
+          durationS: 7.35
+        - text: Every church before this one has gone.
+          atS: 77.92
+          durationS: 2.25
+        - text: The street is still named for the first of them.
+          atS: 80.77
+          durationS: 2.57
+        - text: And the graves have outlasted all of them.
+          atS: 83.85
+          durationS: 3.23

@@ -9,7 +9,7 @@ at: { lat: 32.07931, lng: -81.08429 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 62
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   And it was well maintained.
 
   Somebody was looking after a light that nobody needed.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The United States government put it up in eighteen fifty eight, a cast iron standard on a granite foundation, here on the Bay, as a beacon for mariners finding their way up the Savannah River."
@@ -67,3 +67,53 @@ sources:
     url: https://www.loc.gov/resource/sn86063034/1900-02-22/ed-1/?sp=8
     retrievedAt: "2026-10-15"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-old-harbor-light/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.4
+    audioBytes: 871070
+    transcript:
+      totalS: 54.4
+      lines:
+        - text: Look at the tall iron post at this end of the park, with the light at the top.
+          atS: 0
+          durationS: 4.67
+        - text: That is a lighthouse.
+          atS: 5.27
+          durationS: 1.78
+        - text: Or it was.
+          atS: 7.37
+          durationS: 1.1
+        - text: The United States government put it up in eighteen fifty eight, a cast iron standard on a granite foundation, here on the Bay, as a beacon for mariners finding their way up the Savannah River.
+          atS: 9.59
+          durationS: 11.96
+        - text: Notice where it stands.
+          atS: 22.15
+          durationS: 1.64
+        - text: Not on a headland.
+          atS: 24.07
+          durationS: 1.15
+        - text: Not out on the water.
+          atS: 25.43
+          durationS: 1.38
+        - text: Up on the bluff, on the Bay.
+          atS: 27.13
+          durationS: 2.4
+        - text: In nineteen hundred the city's park commission asked for money to improve the Bay Street green, and suggested a name for it.
+          atS: 30.49
+          durationS: 7.37
+        - text: Emmet Park.
+          atS: 38.56
+          durationS: 1.07
+        - text: When federal surveyors came to record the light, they noted a pair of things about it.
+          atS: 40.44
+          durationS: 4.5
+        - text: It had not been used for many years.
+          atS: 45.45
+          durationS: 2.32
+        - text: And it was well maintained.
+          atS: 48.29
+          durationS: 1.74
+        - text: Somebody was looking after a light that nobody needed.
+          atS: 50.54
+          durationS: 3.84

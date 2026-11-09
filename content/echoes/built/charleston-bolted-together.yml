@@ -9,7 +9,7 @@ at: { lat: 32.77482, lng: -79.93040 }
 triggerRadiusKm: 0.05
 category: built
 format: short
-durationS: 95
+durationS: 78
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -38,7 +38,7 @@ script: |
 
   The St. Patrick's Day celebrations were not interrupted. Somebody had done the
   ironmongery.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Where you find one, it may be there because of one night."
@@ -105,3 +105,71 @@ sources:
     url: https://www.nps.gov/articles/charleston-community-history.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-bolted-together/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77.8
+    audioBytes: 1245561
+    transcript:
+      totalS: 77.8
+      lines:
+        - text: Look along the house fronts on this street for iron on the outside of the walls.
+          atS: 0
+          durationS: 4.14
+        - text: A plate, or the end of a bolt, up between the floors.
+          atS: 4.66
+          durationS: 3.7
+        - text: Where you find one, it may be there because of one night.
+          atS: 8.96
+          durationS: 3.81
+        - text: At about ten o'clock on the thirty-first of August, eighteen eighty-six, an earthquake hit Charleston.
+          atS: 13.89
+          durationS: 6.03
+        - text: It came with a horrid roar.
+          atS: 20.42
+          durationS: 1.67
+        - text: Walls and chimneys came down into the streets.
+          atS: 22.42
+          durationS: 2.57
+        - text: Overturned lamps started fires.
+          atS: 25.19
+          durationS: 2.15
+        - text: It was said at the time that more people were killed or hurt in those few seconds than the shelling of the whole Civil War siege had managed.
+          atS: 27.72
+          durationS: 7.36
+        - text: In the months that followed, iron bolts and iron plates went into the cracked walls.
+          atS: 35.78
+          durationS: 4.75
+        - text: The test came on St.
+          atS: 41.65
+          durationS: 1.29
+        - text: Patrick's Day, eighteen eighty-seven.
+          atS: 42.96
+          durationS: 2.46
+        - text: At ten past nine in the morning there was another violent shock, with the same underground roar.
+          atS: 46.53
+          durationS: 5.29
+        - text: The buildings seemed to be thrust forward and pulled back.
+          atS: 52.34
+          durationS: 3.03
+        - text: A report from Charleston that day said that most of the buildings in town had been made earthquake-proof by iron bolts and plates, and that without them there would have been serious damage.
+          atS: 56.18
+          durationS: 10.08
+        - text: Unrepaired cracks widened.
+          atS: 66.86
+          durationS: 1.86
+        - text: Windows rattled.
+          atS: 68.87
+          durationS: 1.2
+        - text: Plaster fell.
+          atS: 70.13
+          durationS: 1.14
+        - text: The St.
+          atS: 71.59
+          durationS: 0.39
+        - text: Patrick's Day celebrations were not interrupted.
+          atS: 72
+          durationS: 3.25
+        - text: Somebody had done the ironmongery.
+          atS: 75.77
+          durationS: 2.02

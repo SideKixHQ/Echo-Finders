@@ -9,7 +9,7 @@ at: { lat: 32.79050, lng: -79.92465 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 96
+durationS: 88
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   The wharves they left from are gone, and nobody can point to the exact spot now. The water they crossed is in front of you.
 
   Robert Smalls went on to serve five terms in Congress. That night, all of it hung on a sheet.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The boats to Fort Sumter leave from this wharf, and the harbour runs from here down to the open sea."
@@ -120,3 +120,80 @@ sources:
     url: https://www.nps.gov/people/christopher-gadsden.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-bedsheet/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 88
+    audioBytes: 1408565
+    transcript:
+      totalS: 88
+      lines:
+        - text: Look out at the water.
+          atS: 0
+          durationS: 1.39
+        - text: The boats to Fort Sumter leave from this wharf, and the harbour runs from here down to the open sea.
+          atS: 1.57
+          durationS: 5.64
+        - text: At three in the morning on the thirteenth of May, eighteen sixty two, a Confederate steamer called the Planter began to move away from a Charleston wharf.
+          atS: 7.91
+          durationS: 9.11
+        - text: Her three white officers were ashore for the night.
+          atS: 17.46
+          durationS: 2.97
+        - text: That was against standing orders, and it happened often.
+          atS: 20.88
+          durationS: 3.22
+        - text: The men left aboard were enslaved.
+          atS: 24.6
+          durationS: 2.33
+        - text: One of them was a pilot in his early twenties named Robert Smalls.
+          atS: 27.38
+          durationS: 4.2
+        - text: They fired the boilers and steamed up the Cooper River to another wharf, where their wives and children were waiting aboard another boat.
+          atS: 32.18
+          durationS: 7.65
+        - text: Sixteen people in all.
+          atS: 40.34
+          durationS: 1.72
+        - text: Then they turned for the sea.
+          atS: 42.76
+          durationS: 1.78
+        - text: Smalls put on the captain's coat and straw hat.
+          atS: 45.05
+          durationS: 3.02
+        - text: He knew the signals.
+          atS: 48.22
+          durationS: 1.3
+        - text: He was the pilot.
+          atS: 49.73
+          durationS: 1.23
+        - text: At about a quarter past four the Planter came up to Fort Sumter, with Fort Moultrie across the channel.
+          atS: 51.91
+          durationS: 6.05
+        - text: Smalls gave the signal.
+          atS: 58.2
+          durationS: 1.46
+        - text: The fort let them pass.
+          atS: 59.87
+          durationS: 1.52
+        - text: It was not over.
+          atS: 61.57
+          durationS: 1.15
+        - text: As they reached the Union fleet, a warship took them for an attacker and readied its guns.
+          atS: 63.53
+          durationS: 5.36
+        - text: The crew ran a bedsheet up the mast.
+          atS: 69.33
+          durationS: 2.16
+        - text: The wharves they left from are gone, and nobody can point to the exact spot now.
+          atS: 71.88
+          durationS: 4.9
+        - text: The water they crossed is in front of you.
+          atS: 77.22
+          durationS: 2.53
+        - text: Robert Smalls went on to serve five terms in Congress.
+          atS: 80.44
+          durationS: 4.11
+        - text: That night, all of it hung on a sheet.
+          atS: 85.25
+          durationS: 2.7

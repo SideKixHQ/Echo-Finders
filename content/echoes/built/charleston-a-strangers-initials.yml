@@ -9,7 +9,7 @@ at: { lat: 32.77595, lng: -79.92705 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 90
+durationS: 80
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -43,7 +43,7 @@ pronunciations:
     say: LEG
   - written: Prigge
     say: PRIG-ee
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Find the house numbered ninety-nine on this row, and look at its iron balcony."
@@ -120,3 +120,74 @@ sources:
     url: https://www.nps.gov/articles/charleston-and-preservation.htm
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-a-strangers-initials/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.3
+    audioBytes: 1285685
+    transcript:
+      totalS: 80.3
+      lines:
+        - text: Find the house numbered ninety-nine on this row, and look at its iron balcony.
+          atS: 0
+          durationS: 4.39
+        - text: There are two letters worked into the ironwork.
+          atS: 4.71
+          durationS: 2.29
+        - text: A C and a P.
+          atS: 7.12
+          durationS: 1.66
+        - text: The letters have nothing to do with this house.
+          atS: 9.29
+          durationS: 2.34
+        - text: The house went up around seventeen forty.
+          atS: 12.02
+          durationS: 2.41
+        - text: It was built by Othniel Beale, a wharf owner who had come down from Marblehead in Massachusetts, and his wharf was right across the street.
+          atS: 14.71
+          durationS: 8.84
+        - text: He built three dwellings in a row, kept the biggest for his family and let the other two.
+          atS: 24.15
+          durationS: 5.07
+        - text: The ground floor was for trade, split by an arched passage through to the yards at the back.
+          atS: 29.92
+          durationS: 5.36
+        - text: By the nineteen thirties this neighbourhood had slid into dilapidation.
+          atS: 35.98
+          durationS: 3.99
+        - text: This was the first house on the row to be rescued.
+          atS: 40.58
+          durationS: 2.76
+        - text: Judge Lionel Legge and his wife are credited with that, along with Susan Pringle Frost, an estate agent who had spent years saving old Charleston houses.
+          atS: 43.95
+          durationS: 10.49
+        - text: They restored the early windows.
+          atS: 55.04
+          durationS: 2.04
+        - text: They replaced the shop fronts with cargo doors.
+          atS: 57.47
+          durationS: 2.87
+        - text: And the iron balcony was salvaged from a house on Elizabeth Street that has since been demolished.
+          atS: 60.66
+          durationS: 5.46
+        - text: The C.
+          atS: 66.63
+          durationS: 0.56
+        - text: F.
+          atS: 67.22
+          durationS: 0.23
+        - text: Prigge house.
+          atS: 67.48
+          durationS: 1.06
+        - text: They are credited with the revival of the whole block.
+          atS: 69.14
+          durationS: 2.97
+        - text: It is called Rainbow Row now.
+          atS: 72.62
+          durationS: 2.01
+        - text: The row was saved one house at a time.
+          atS: 75.23
+          durationS: 2.38
+        - text: The first one wears a stranger's initials.
+          atS: 78
+          durationS: 2.3

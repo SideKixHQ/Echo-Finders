@@ -9,7 +9,7 @@ at: { lat: 32.77542, lng: -79.92912 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 83
+durationS: 80
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,7 +36,7 @@ script: |
 pronunciations:
   - written: DuBose Heyward
     say: doo-BOHZ HAY-wurd
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look across the street at numbers eighty-nine and ninety-one Church Street."
@@ -119,3 +119,68 @@ sources:
     url: https://www.loc.gov/resource/sn84026749/1936-03-10/ed-1/?sp=9
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-not-called-catfish/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.3
+    audioBytes: 1285685
+    transcript:
+      totalS: 80.3
+      lines:
+        - text: Look across the street at numbers eighty-nine and ninety-one Church Street.
+          atS: 0
+          durationS: 4.55
+        - text: The federal survey of historic buildings files them under two names.
+          atS: 4.99
+          durationS: 4.06
+        - text: Cabbage Row.
+          atS: 9.27
+          durationS: 0.88
+        - text: And Catfish Row.
+          atS: 10.32
+          durationS: 1.35
+        - text: Only one of those is a Charleston name.
+          atS: 12.11
+          durationS: 2.41
+        - text: In the nineteen twenties two Charlestonians, DuBose and Dorothy Heyward, wrote a play called Porgy.
+          atS: 14.96
+          durationS: 6.51
+        - text: It is set among the Black Charlestonians of a place called Catfish Row.
+          atS: 21.92
+          durationS: 4.3
+        - text: Its hero is a disabled beggar with a little goat cart.
+          atS: 26.91
+          durationS: 3.37
+        - text: It ran for more than a year in New York, then went on tour.
+          atS: 30.72
+          durationS: 3.55
+        - text: When it came to Washington, the Evening Star explained to its readers that the sets were authentic, drawn after a visit to Charleston.
+          atS: 34.97
+          durationS: 8.29
+        - text: And then it added a correction.
+          atS: 43.64
+          durationS: 1.94
+        - text: The row itself, the paper said, is not called Catfish in Charleston.
+          atS: 46.09
+          durationS: 4.42
+        - text: It is referred to as Cabbage Row.
+          atS: 50.84
+          durationS: 2.3
+        - text: Porgy himself, it said, was based on a real person.
+          atS: 54.09
+          durationS: 3.64
+        - text: A few years later George Gershwin turned the play into an opera, Porgy and Bess.
+          atS: 58.43
+          durationS: 5.49
+        - text: A Washington paper reported, perhaps generously, that he had spent all his spare time for two years in Charleston, visiting Catfish Row.
+          atS: 64.53
+          durationS: 8.81
+        - text: He could not have.
+          atS: 74.04
+          durationS: 1.07
+        - text: There is no such place.
+          atS: 75.49
+          durationS: 1.5
+        - text: It is across the street, under another name.
+          atS: 77.23
+          durationS: 3.06

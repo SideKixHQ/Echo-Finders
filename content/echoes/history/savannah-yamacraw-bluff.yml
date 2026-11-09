@@ -9,7 +9,7 @@ at: { lat: 32.08137, lng: -81.09201 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 92
+durationS: 90
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -40,10 +40,8 @@ pronunciations:
   - written: Oglethorpe
     say: OH-gul-thorp
 detail: >-
-  The colonists' own dates are Old Style. The 1910 guide converts their landing on the first of
-  February to the twelfth of February 1733, New Style, and the bench was set here on the twelfth
-  of February 1906 by the Colonial Dames.
-editorial: draft
+  The colonists' own dates are Old Style. The 1910 guide converts their landing on the first of February to the twelfth of February 1733, New Style, and the bench was set here on the twelfth of February 1906 by the Colonial Dames.
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It was put here in nineteen oh six to mark the spot where, by tradition, James Oglethorpe pitched his tent under four pine trees in February seventeen thirty three."
@@ -95,3 +93,53 @@ sources:
     url: https://www.loc.gov/item/unk84031503/
     retrievedAt: "2026-10-15"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-yamacraw-bluff/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 89.8
+    audioBytes: 1438240
+    transcript:
+      totalS: 89.8
+      lines:
+        - text: Find the granite bench beside the path, just west of City Hall.
+          atS: 0
+          durationS: 4.14
+        - text: It was put here in nineteen oh six to mark the spot where, by tradition, James Oglethorpe pitched his tent under four pine trees in February seventeen thirty three.
+          atS: 5.1
+          durationS: 11.01
+        - text: The town around you grew out from that tent.
+          atS: 17.05
+          durationS: 2.47
+        - text: Now look north, toward the river, and think about the drop.
+          atS: 19.91
+          durationS: 3.15
+        - text: One of the colonists, Peter Gordon, wrote the landing down.
+          atS: 24.01
+          durationS: 3.61
+        - text: The bluff was forty feet straight up, he said, and the sand was so loose that carrying their goods to the top would have been miserable, if Captain Scott and his men had not built them stairs.
+          atS: 28
+          durationS: 10.63
+        - text: About an hour after they landed, they had visitors.
+          atS: 39.94
+          durationS: 3.39
+        - text: The Yamacraw came with their chief, Tomochichi, and a trader to interpret.
+          atS: 44.02
+          durationS: 5.96
+        - text: One of their men danced in front, white feathers on his head and rattles in his hands.
+          atS: 50.93
+          durationS: 5.1
+        - text: This was not empty country.
+          atS: 56.73
+          durationS: 1.73
+        - text: Oglethorpe had come up the river weeks earlier, chosen the site, and made terms with Tomochichi before a single colonist arrived.
+          atS: 59.27
+          durationS: 9.08
+        - text: When Oglethorpe wrote to London to explain his choice, he listed the height, the dry sandy soil, the fresh water and the shelter of the pines.
+          atS: 68.95
+          durationS: 9.43
+        - text: Then he gave what he called the last and fullest consideration of how healthy the place was.
+          atS: 78.98
+          durationS: 5.55
+        - text: An Indian nation, who knew the nature of this country, had chosen it for their home.
+          atS: 84.92
+          durationS: 4.9

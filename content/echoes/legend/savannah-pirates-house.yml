@@ -9,15 +9,11 @@ at: { lat: 32.07820, lng: -81.08408 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 95
+durationS: 84
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A published tradition. Captain Flint is a fictional character; Treasure Island places his death
-  at Savannah but names no house. The upstairs-room tradition and the ghost are reported in 1951 as
-  "tradition" and "said to"; the 1753 inn claim comes from a Library of Congress photo caption
-  based on the photographer's notes. The script says
-  plainly that none of it is proven.
+  A published tradition. Captain Flint is a fictional character; Treasure Island places his death at Savannah but names no house. The upstairs-room tradition and the ghost are reported in 1951 as "tradition" and "said to"; the 1753 inn claim comes from a Library of Congress photo caption based on the photographer's notes. The script says plainly that none of it is proven.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -40,7 +36,7 @@ script: |
 pronunciations:
   - written: Stevenson
     say: STEE-ven-sun
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "This low old building calls itself the Pirates' House."
@@ -104,3 +100,68 @@ sources:
     url: https://www.loc.gov/item/2017880450/
     retrievedAt: "2026-10-15"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/savannah-pirates-house/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 83.9
+    audioBytes: 1342945
+    transcript:
+      totalS: 83.9
+      lines:
+        - text: This low old building calls itself the Pirates' House.
+          atS: 0
+          durationS: 3.03
+        - text: Before you go in, it is worth knowing which parts of that are history, and which are a very good story.
+          atS: 3.41
+          durationS: 5.54
+        - text: Start with the book.
+          atS: 9.39
+          durationS: 0.98
+        - text: In Treasure Island, published in eighteen eighty three, Robert Louis Stevenson gives his pirate captain, Flint, a death but no grave.
+          atS: 10.69
+          durationS: 8.22
+        - text: Billy Bones says Flint handed him the map at Savannah, when he lay dying.
+          atS: 19.35
+          durationS: 3.95
+        - text: Long John Silver puts it more bluntly.
+          atS: 23.74
+          durationS: 2.13
+        - text: Flint died of rum at Savannah.
+          atS: 26.31
+          durationS: 1.93
+        - text: That is all Stevenson says.
+          atS: 28.44
+          durationS: 2.15
+        - text: He never names a house.
+          atS: 30.68
+          durationS: 1.57
+        - text: The house came later.
+          atS: 32.46
+          durationS: 1.27
+        - text: In February nineteen fifty one, the food editor of a Sunday magazine in the Washington Evening Star wrote about the newly restored tavern here.
+          atS: 34.17
+          durationS: 9.16
+        - text: Tradition has it, the article said, that the man Stevenson based Flint on died in an upstairs bedroom of the old inn.
+          atS: 43.77
+          durationS: 7.33
+        - text: And Flint's ghost is said to haunt the area on moonless nights.
+          atS: 51.42
+          durationS: 3.88
+        - text: The story has grown since.
+          atS: 55.51
+          durationS: 1.79
+        - text: A Library of Congress photograph of the house, captioned from the photographer's notes, says it opened in seventeen fifty three as an inn for seafarers, and soon became a meeting place for pirates and sailors back from ports around the world.
+          atS: 57.62
+          durationS: 13.33
+        - text: None of that is proven.
+          atS: 71.33
+          durationS: 1.29
+        - text: Not the inn's pirates, not the real man behind Flint, and certainly not the ghost.
+          atS: 72.74
+          durationS: 4.73
+        - text: But Stevenson did send Flint to Savannah to die.
+          atS: 77.64
+          durationS: 3.59
+        - text: Savannah has been happy to find him a room.
+          atS: 81.5
+          durationS: 2.37

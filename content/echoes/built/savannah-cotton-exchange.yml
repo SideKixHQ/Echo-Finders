@@ -9,7 +9,7 @@ at: { lat: 32.08075, lng: -81.09005 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 66
+durationS: 61
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,10 +30,8 @@ pronunciations:
   - written: Drayton
     say: DRAY-tun
 detail: >-
-  In March 1889 the Exchange's members gave three hundred and fifty dollars for a little park and
-  a fountain on the open ground in front of the building, running out to the middle of Bay Street.
-  The architect was William G. Preston.
-editorial: draft
+  In March 1889 the Exchange's members gave three hundred and fifty dollars for a little park and a fountain on the open ground in front of the building, running out to the middle of Bay Street. The architect was William G. Preston.
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The building opened for business at noon on a Monday in September eighteen eighty seven"
@@ -97,3 +95,47 @@ sources:
     url: https://www.loc.gov/item/2017880409/
     retrievedAt: "2026-10-15"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-cotton-exchange/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 61
+    audioBytes: 976813
+    transcript:
+      totalS: 61
+      lines:
+        - text: Look at how you get into the Cotton Exchange.
+          atS: 0
+          durationS: 2.45
+        - text: Not from the pavement.
+          atS: 2.96
+          durationS: 1.25
+        - text: From a bridge, with iron railings, across a gap.
+          atS: 4.39
+          durationS: 3.06
+        - text: The building opened for business at noon on a Monday in September eighteen eighty seven, when Savannah ranked first among the cotton ports of the Atlantic coast.
+          atS: 8.27
+          durationS: 9.1
+        - text: From Bay Street it looks like three storeys.
+          atS: 17.75
+          durationS: 2.6
+        - text: From River Street, round the back, it is six.
+          atS: 20.68
+          durationS: 2.95
+        - text: What it stands on is the interesting part.
+          atS: 24.32
+          durationS: 2.62
+        - text: This was the Drayton Street slip, the way down from the bluff to the river.
+          atS: 27.39
+          durationS: 4.92
+        - text: In March eighteen eighty six the Morning News watched workmen pulling up the stones of that slip.
+          atS: 33.61
+          durationS: 5.93
+        - text: Part of it was to be filled in and walled off.
+          atS: 40.15
+          durationS: 2.77
+        - text: By August, iron pillars and girders were in place to carry the building, and the old iron footbridge across the slip had been taken down, to be put up again somewhere else.
+          atS: 43.88
+          durationS: 10.74
+        - text: So the Cotton Exchange is standing on iron legs, over the old way down to the water.
+          atS: 55.22
+          durationS: 5.76

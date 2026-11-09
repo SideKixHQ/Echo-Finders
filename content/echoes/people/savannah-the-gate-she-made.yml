@@ -9,7 +9,7 @@ at: { lat: 32.07697, lng: -81.09238 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 86
+durationS: 85
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   The garden around it is a reconstruction, laid out in the nineteen fifties from the memories of her relatives. They did not agree. One remembered circles. Another remembered dirt paths, violets, a banana tree. A photograph taken at Daisy's wedding, in eighteen eighty-six, showed paths running out from the porch.
 
   Everything else in this garden had to be remembered. The gate, she made.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 pronunciations:
   - written: Wellesbourne
@@ -106,3 +106,65 @@ sources:
     url: https://www.loc.gov/item/ga0017/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-gate-she-made/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 84.6
+    audioBytes: 1355066
+    transcript:
+      totalS: 84.6
+      lines:
+        - text: This is the house where Juliette Gordon Low was born, in eighteen sixty.
+          atS: 0
+          durationS: 5.16
+        - text: Her family called her Daisy.
+          atS: 5.76
+          durationS: 1.89
+        - text: Fifty-two years later, in this city, she started the Girl Scouts.
+          atS: 8.35
+          durationS: 4.57
+        - text: The Gordons bought the house in eighteen thirty-one, and Gordons lived here for generations.
+          atS: 13.43
+          durationS: 6.08
+        - text: The Girl Scouts bought it in nineteen fifty-three.
+          atS: 19.96
+          durationS: 3.31
+        - text: If you go into the garden, look for the iron double gate in the east wall.
+          atS: 23.96
+          durationS: 4.76
+        - text: She made it.
+          atS: 29.11
+          durationS: 0.98
+        - text: Not ordered it.
+          atS: 30.21
+          durationS: 1.16
+        - text: Designed and made it, in eighteen eighty-nine, for her own house in England, an estate called Wellesbourne.
+          atS: 31.7
+          durationS: 7.69
+        - text: In nineteen twenty-six she brought it home to Savannah, to stand at the entrance of a small park east of the city, where many of the early Girl Scout meetings were held.
+          atS: 40.33
+          durationS: 10.39
+        - text: In nineteen seventy-two it was moved here for safekeeping.
+          atS: 51.68
+          durationS: 3.63
+        - text: The garden around it is a reconstruction, laid out in the nineteen fifties from the memories of her relatives.
+          atS: 56.01
+          durationS: 6.39
+        - text: They did not agree.
+          atS: 63.09
+          durationS: 1.24
+        - text: One remembered circles.
+          atS: 65.03
+          durationS: 1.71
+        - text: Another remembered dirt paths, violets, a banana tree.
+          atS: 67.12
+          durationS: 4.19
+        - text: A photograph taken at Daisy's wedding, in eighteen eighty-six, showed paths running out from the porch.
+          atS: 71.82
+          durationS: 6.46
+        - text: Everything else in this garden had to be remembered.
+          atS: 78.88
+          durationS: 2.96
+        - text: The gate, she made.
+          atS: 82.28
+          durationS: 2.33

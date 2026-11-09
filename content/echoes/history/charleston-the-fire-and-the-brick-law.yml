@@ -9,7 +9,7 @@ at: { lat: 32.77675, lng: -79.92925 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 96
+durationS: 94
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -41,7 +41,7 @@ script: |
 pronunciations:
   - written: Granville
     say: GRAN-vil
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look south down Church Street at the walls."
@@ -106,3 +106,71 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-fire-and-the-brick-law/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 94.2
+    audioBytes: 1508875
+    transcript:
+      totalS: 94.2
+      lines:
+        - text: Look south down Church Street at the walls.
+          atS: 0
+          durationS: 2.44
+        - text: Brick.
+          atS: 2.76
+          durationS: 0.56
+        - text: Stucco over brick.
+          atS: 3.65
+          durationS: 1.53
+        - text: Stone.
+          atS: 5.46
+          durationS: 0.73
+        - text: That is not just taste.
+          atS: 6.51
+          durationS: 1.38
+        - text: It is a fire, and a law.
+          atS: 8.17
+          durationS: 2.04
+        - text: On the afternoon of the eighteenth of November, seventeen forty, a fire broke out in Charles Town.
+          atS: 11.52
+          durationS: 6.44
+        - text: By one account it took every house from about this corner, Broad and Church, down to Granville Bastion, at the water's edge, where the East Battery now begins.
+          atS: 18.29
+          durationS: 10.53
+        - text: Three hundred houses, by the count at the time, and storehouses, stables and warehouses with them.
+          atS: 29.42
+          durationS: 6.64
+        - text: This was the oldest part of town, and full of goods.
+          atS: 36.87
+          durationS: 2.98
+        - text: The tide was high that afternoon, and by one account, had it not been, the shipping would have burned as well.
+          atS: 40.46
+          durationS: 6.27
+        - text: Parliament in London sent twenty thousand pounds.
+          atS: 47.43
+          durationS: 3.32
+        - text: And on the tenth of December, three weeks after the fire, the colony passed an act for rebuilding the town.
+          atS: 51.44
+          durationS: 6.28
+        - text: Every new building was to be made of brick, or stone, or both.
+          atS: 58.33
+          durationS: 4.1
+        - text: The act even fixed the prices of building materials, bricks included.
+          atS: 63.03
+          durationS: 4.66
+        - text: The town had tried a law like that once before and given it up, because bricks were scarce.
+          atS: 67.86
+          durationS: 5.41
+        - text: This time the town was rebuilt of brick.
+          atS: 73.71
+          durationS: 3.03
+        - text: A Charleston historian, writing in nineteen-oh-six, noted that many of the small, dark brick houses between Broad and Water Street date from that time on.
+          atS: 77.86
+          durationS: 9.44
+        - text: You are standing at the edge of the fire.
+          atS: 87.99
+          durationS: 2.01
+        - text: What it took was rebuilt in the materials the law required.
+          atS: 90.6
+          durationS: 3.62

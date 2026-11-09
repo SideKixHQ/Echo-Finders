@@ -9,7 +9,7 @@ at: { lat: 32.07893, lng: -81.09500 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 89
+durationS: 93
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   Wright gave his word that he would not leave town, and was kept in his own house under guard.
 
   He kept his word for twenty-four days. Then he slipped past the sentries, ran to Bonaventure, and was rowed out to a British ship.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 pronunciations:
   - written: Habersham
@@ -93,3 +93,59 @@ sources:
     url: https://www.loc.gov/item/ga0221/
     retrievedAt: "2026-10-15"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-you-are-my-prisoner/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 93
+    audioBytes: 1489231
+    transcript:
+      totalS: 93
+      lines:
+        - text: The grand house on the west side of Telfair Square is the Telfair Academy, designed by the English architect William Jay about two centuries ago.
+          atS: 0
+          durationS: 9.24
+        - text: Mary Telfair left it in her will to become an academy of arts and sciences.
+          atS: 10.36
+          durationS: 5.03
+        - text: But the academy's own account of this ground goes back further.
+          atS: 16.08
+          durationS: 3.6
+        - text: This, it says, was the site of Government House, home of Georgia's royal governor.
+          atS: 20.28
+          durationS: 5.28
+        - text: In January seventeen seventy-six, British warships were lying off Tybee.
+          atS: 26.26
+          durationS: 5.06
+        - text: On the eighteenth, Savannah's Council of Safety voted to arrest the governor, Sir James Wright.
+          atS: 31.93
+          durationS: 6.25
+        - text: A major named Joseph Habersham, twenty-four years old, volunteered.
+          atS: 38.87
+          durationS: 5.48
+        - text: That evening the governor was meeting his council in his house.
+          atS: 45.16
+          durationS: 3.69
+        - text: Habersham walked past the sentries at the door, alone.
+          atS: 49.46
+          durationS: 3.6
+        - text: He went into the room, up to the head of the table, laid his hand on the governor's shoulder, and said, Sir James, you are my prisoner.
+          atS: 54.17
+          durationS: 9.2
+        - text: According to the city's history of eighteen sixty-nine, the councillors assumed he had a large force close behind him.
+          atS: 64.67
+          durationS: 7.09
+        - text: They fled through the doors and the windows.
+          atS: 72.36
+          durationS: 2.34
+        - text: He did not have a large force.
+          atS: 75.22
+          durationS: 1.87
+        - text: Wright gave his word that he would not leave town, and was kept in his own house under guard.
+          atS: 77.79
+          durationS: 5.33
+        - text: He kept his word for twenty-four days.
+          atS: 83.81
+          durationS: 2.62
+        - text: Then he slipped past the sentries, ran to Bonaventure, and was rowed out to a British ship.
+          atS: 87.55
+          durationS: 5.47

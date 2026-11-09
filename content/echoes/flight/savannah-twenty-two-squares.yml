@@ -7,7 +7,7 @@ triggerRadiusKm: 45
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: built
 format: short
-durationS: 55
+durationS: 53
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
   awkward bits. They force traffic to slow down and go around.
 
   A few have been lost along the way. The plan has not.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "That layout was drawn in seventeen thirty-three, before there was a city to put it in."
@@ -61,3 +61,44 @@ sources:
     url: https://www.nps.gov/fopu/learn/historyculture/savannah.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-twenty-two-squares/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.9
+    audioBytes: 847246
+    transcript:
+      totalS: 52.9
+      lines:
+        - text: "If you can see the ground on the left, look for a pattern: a grid, interrupted at regular intervals by small green squares."
+          atS: 0
+          durationS: 7.85
+        - text: That layout was drawn in seventeen thirty-three, before there was a city to put it in.
+          atS: 8.66
+          durationS: 4.81
+        - text: James Oglethorpe laid out a repeating unit, a square with house lots and civic lots around it, and the plan was simply to keep repeating it as the place grew.
+          atS: 14.16
+          durationS: 9.72
+        - text: Twenty-four were eventually built.
+          atS: 24.39
+          durationS: 1.97
+        - text: Twenty-two are still there.
+          atS: 26.75
+          durationS: 1.99
+        - text: Cities almost never survive this.
+          atS: 29.55
+          durationS: 2.5
+        - text: Street plans get widened for carts, then for trams, then for cars, and the awkward bits get straightened out.
+          atS: 32.55
+          durationS: 7.89
+        - text: Savannah's squares are exactly the awkward bits.
+          atS: 41.15
+          durationS: 3.28
+        - text: They force traffic to slow down and go around.
+          atS: 44.87
+          durationS: 3.1
+        - text: A few have been lost along the way.
+          atS: 48.48
+          durationS: 2.1
+        - text: The plan has not.
+          atS: 51.09
+          durationS: 1.8

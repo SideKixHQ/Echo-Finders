@@ -9,7 +9,7 @@ at: { lat: 32.07302, lng: -81.09230 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 80
+durationS: 74
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   A great writer, in a fine house, describing his audience as too lazy to clap.
 
   He was having a wonderful time.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "A cotton merchant named Andrew Low built it in the eighteen forties."
@@ -89,5 +89,57 @@ pronunciations:
   - written: Abercorn
     say: AB-er-korn
 detail: >-
-  The year is uncertain. The 1887 edition of the letters dates it, in brackets, to 1855; the
-  Historic American Buildings Survey record says Thackeray was a guest in 1853 and 1856.
+  The year is uncertain. The 1887 edition of the letters dates it, in brackets, to 1855; the Historic American Buildings Survey record says Thackeray was a guest in 1853 and 1856.
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-thackerays-comfortable-quarters/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.9
+    audioBytes: 1183285
+    transcript:
+      totalS: 73.9
+      lines:
+        - text: Stand across from the house with the stuccoed front and the iron railings round its balconies.
+          atS: 0
+          durationS: 5.1
+        - text: A cotton merchant named Andrew Low built it in the eighteen forties.
+          atS: 5.79
+          durationS: 4.41
+        - text: On Saint Valentine's Day, one year in the eighteen fifties, a famous English novelist sat in this house and wrote a letter home.
+          atS: 11.16
+          durationS: 7.82
+        - text: He was William Makepeace Thackeray, and he was crossing America giving lectures.
+          atS: 19.31
+          durationS: 5.03
+        - text: He was tired of hotels.
+          atS: 24.66
+          durationS: 1.86
+        - text: Tired of the crowds drinking at the bar, and the tearing northern bustle.
+          atS: 26.84
+          durationS: 4.44
+        - text: Here, he wrote, he had the most comfortable quarters he had found anywhere in the United States.
+          atS: 31.79
+          durationS: 6
+        - text: He liked the town as well.
+          atS: 38.12
+          durationS: 1.66
+        - text: Wide streets, trees, a few cows and carriages toiling through the sandy road.
+          atS: 40.38
+          durationS: 5.42
+        - text: And he was honest about the people who came to hear him.
+          atS: 46.31
+          durationS: 2.84
+        - text: A snug little audience of three or four hundred, he wrote, far too lazy to laugh or applaud.
+          atS: 49.97
+          durationS: 5.67
+        - text: The last time he stayed, Low had been a widower.
+          atS: 56.45
+          durationS: 3.04
+        - text: Now there was a pretty new wife, and a baby daughter crowing in the nursery next door.
+          atS: 60.3
+          durationS: 4.85
+        - text: A great writer, in a fine house, describing his audience as too lazy to clap.
+          atS: 65.48
+          durationS: 6
+        - text: He was having a wonderful time.
+          atS: 72.09
+          durationS: 1.8

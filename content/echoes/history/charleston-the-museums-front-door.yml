@@ -9,7 +9,7 @@ at: { lat: 32.78290, lng: -79.94360 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 67
+durationS: 65
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   In nineteen eighty one, it burned to the ground.
 
   The museum is still open, over on Meeting Street. Its old front door is here, with nothing behind it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Four tall columns stand at this end of the park, holding up nothing."
@@ -90,3 +90,56 @@ sources:
 pronunciations:
   - written: Rutledge Avenue
     say: RUT-lij Avenue
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-museums-front-door/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 64.7
+    audioBytes: 1036163
+    transcript:
+      totalS: 64.7
+      lines:
+        - text: Four tall columns stand at this end of the park, holding up nothing.
+          atS: 0
+          durationS: 4.39
+        - text: Look at the tops.
+          atS: 4.99
+          durationS: 1.18
+        - text: Corinthian capitals, the kind crowned with leaves.
+          atS: 6.46
+          durationS: 3.8
+        - text: They were the front entrance of a great hall, built here in eighteen ninety nine for a Confederate reunion.
+          atS: 10.86
+          durationS: 6.44
+        - text: After the reunion it was rarely used.
+          atS: 17.9
+          durationS: 2.57
+        - text: It became a theatre, then for a while a city hospital.
+          atS: 20.79
+          durationS: 3.49
+        - text: In nineteen oh seven it found a lasting tenant.
+          atS: 24.98
+          durationS: 3.17
+        - text: The Charleston Museum moved in, with its natural history collections, its workshops and its library.
+          atS: 28.54
+          durationS: 6.26
+        - text: A city guidebook of nineteen nineteen called it the oldest museum in America, founded in seventeen seventy three.
+          atS: 35.4
+          durationS: 6.47
+        - text: Older, the guide pointed out, than the nation.
+          atS: 42.38
+          durationS: 2.95
+        - text: In the nineteen seventies the museum commissioned a new home on Meeting Street, and moved out.
+          atS: 46.14
+          durationS: 5.1
+        - text: The old hall had already been declared a fire hazard.
+          atS: 51.74
+          durationS: 2.8
+        - text: In nineteen eighty one, it burned to the ground.
+          atS: 54.93
+          durationS: 3.04
+        - text: The museum is still open, over on Meeting Street.
+          atS: 58.35
+          durationS: 3.08
+        - text: Its old front door is here, with nothing behind it.
+          atS: 61.75
+          durationS: 2.94

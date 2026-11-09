@@ -9,13 +9,11 @@ at: { lat: 32.04760, lng: -81.04110 }
 triggerRadiusKm: 0.12
 category: legend
 format: short
-durationS: 62
+durationS: 51
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A plantation legend repeated by Savannah guidebooks of 1881, 1890 and 1910, none of which gives a
-  date, a host's name for that night, or a first-hand witness. Later ghost stories grew from it; those
-  are not in the sources and are left out. The script says aloud that it is a legend.
+  A plantation legend repeated by Savannah guidebooks of 1881, 1890 and 1910, none of which gives a date, a host's name for that night, or a first-hand witness. Later ghost stories grew from it; those are not in the sources and are left out. The script says aloud that it is a legend.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -35,7 +33,7 @@ script: |
   A guide for strangers told it in eighteen eighty one. Another guidebook told it in eighteen ninety. Another in nineteen ten. Each time, the dinner was finished.
 
   Nobody can show you the burned house now. But the story still sets the table out here, under the oaks.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Before this was a cemetery, it was a country estate."
@@ -81,3 +79,53 @@ sources:
     url: https://www.loc.gov/item/01007696/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/savannah-dinner-under-the-trees/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 50.5
+    audioBytes: 808794
+    transcript:
+      totalS: 50.5
+      lines:
+        - text: Before this was a cemetery, it was a country estate.
+          atS: 0
+          durationS: 3.1
+        - text: And it has a story that every old Savannah guidebook liked to tell.
+          atS: 3.38
+          durationS: 3.67
+        - text: Treat it as a legend.
+          atS: 7.37
+          durationS: 1.44
+        - text: None of those guidebooks names a guest, or quotes anyone who was there.
+          atS: 9.25
+          durationS: 3.92
+        - text: The first house, the story goes, stood on the high ground over the river, facing a garden that ran down in terraces to the water.
+          atS: 14.13
+          durationS: 7.88
+        - text: One evening, in the middle of a dinner party, the roof caught fire.
+          atS: 22.45
+          durationS: 3.77
+        - text: Nothing could save the house.
+          atS: 26.55
+          durationS: 1.6
+        - text: So the host had the dinner carried out under the trees, and there it was finished, while the house burned to the ground.
+          atS: 28.54
+          durationS: 5.91
+        - text: A guide for strangers told it in eighteen eighty one.
+          atS: 34.73
+          durationS: 3.11
+        - text: Another guidebook told it in eighteen ninety.
+          atS: 37.93
+          durationS: 2.5
+        - text: Another in nineteen ten.
+          atS: 40.47
+          durationS: 1.73
+        - text: Each time, the dinner was finished.
+          atS: 42.41
+          durationS: 1.87
+        - text: Nobody can show you the burned house now.
+          atS: 44.45
+          durationS: 2.21
+        - text: But the story still sets the table out here, under the oaks.
+          atS: 46.9
+          durationS: 3.58

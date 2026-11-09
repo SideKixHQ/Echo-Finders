@@ -9,12 +9,11 @@ at: { lat: 32.04880, lng: -81.04640 }
 triggerRadiusKm: 0.1
 category: legend
 format: short
-durationS: 57
+durationS: 51
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  Every source that tells it calls it tradition: guidebooks of 1890, 1899 and 1910. None shows a
-  planting plan. The script says aloud that it is a legend, not proven.
+  Every source that tells it calls it tradition: guidebooks of 1890, 1899 and 1910. None shows a planting plan. The script says aloud that it is a legend, not proven.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -32,7 +31,7 @@ script: |
   In eighteen ninety nine a Savannah book went further. Even at this late date, it said, you could trace the outline of the letters in the shape of the aisles between the trees.
 
   Nobody has ever produced the plan. So walk the avenues, and see whether you can find them.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Every book that tells it calls it tradition."
@@ -78,3 +77,53 @@ sources:
     url: https://www.loc.gov/item/unk84031503/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/savannah-the-m-and-t-oaks/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 51
+    audioBytes: 817571
+    transcript:
+      totalS: 51
+      lines:
+        - text: Look along the avenue of live oaks, and then across to the others.
+          atS: 0
+          durationS: 3.84
+        - text: There is a legend about these trees.
+          atS: 4.23
+          durationS: 1.96
+        - text: Treat it as just that.
+          atS: 6.51
+          durationS: 1.53
+        - text: Every book that tells it calls it tradition.
+          atS: 8.56
+          durationS: 2.9
+        - text: The land was first settled by a colonel named John Mulryne.
+          atS: 11.9
+          durationS: 3.63
+        - text: In seventeen sixty one his daughter Mary married Josiah Tattnall, and the estate came to the Tattnalls.
+          atS: 15.86
+          durationS: 6.59
+        - text: The avenues, the story goes, were planted around the time of that wedding.
+          atS: 22.89
+          durationS: 4.4
+        - text: And they were planted in the shape of two letters.
+          atS: 27.47
+          durationS: 2.62
+        - text: M, for Mulryne.
+          atS: 30.7
+          durationS: 1.43
+        - text: T, for Tattnall.
+          atS: 32.57
+          durationS: 1.6
+        - text: In eighteen ninety nine a Savannah book went further.
+          atS: 35.12
+          durationS: 3.08
+        - text: Even at this late date, it said, you could trace the outline of the letters in the shape of the aisles between the trees.
+          atS: 38.44
+          durationS: 6.5
+        - text: Nobody has ever produced the plan.
+          atS: 45.33
+          durationS: 2.04
+        - text: So walk the avenues, and see whether you can find them.
+          atS: 47.97
+          durationS: 3.06

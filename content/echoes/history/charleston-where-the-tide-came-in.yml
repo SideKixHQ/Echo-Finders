@@ -9,7 +9,7 @@ at: { lat: 32.76992, lng: -79.93035 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 93
+durationS: 88
 visibility: at-hand
 certainty: documented
 minAge: 12
@@ -41,7 +41,7 @@ script: |
 pronunciations:
   - written: Stede Bonnet
     say: STEED BON-it
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Somewhere in this garden is a small stone with a pirate's name on it."
@@ -128,3 +128,74 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc1200/sc1228/data/sc1228data.pdf
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-where-the-tide-came-in/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 87.5
+    audioBytes: 1401878
+    transcript:
+      totalS: 87.5
+      lines:
+        - text: Somewhere in this garden is a small stone with a pirate's name on it.
+          atS: 0
+          durationS: 3.79
+        - text: Stede Bonnet.
+          atS: 4.23
+          durationS: 1.14
+        - text: It was put up in nineteen forty-three, and it is easy to walk straight past.
+          atS: 5.97
+          durationS: 4.56
+        - text: Bonnet was not the usual kind of pirate.
+          atS: 10.97
+          durationS: 2.51
+        - text: The old histories describe a gentleman by birth and education, of fair estate, a former army major.
+          atS: 13.8
+          durationS: 7.21
+        - text: There seemed no reason why he took to piracy.
+          atS: 21.83
+          durationS: 2.75
+        - text: In the autumn of seventeen eighteen, ships from Charles Town caught him and brought him back in irons.
+          atS: 25.02
+          durationS: 5.63
+        - text: He escaped once, in a woman's dress, and was hunted down in the sandhills of Sullivan's Island.
+          atS: 31.03
+          durationS: 5.79
+        - text: The record of the trials was printed the following year.
+          atS: 37.27
+          durationS: 2.93
+        - text: Twenty-two of his crew were hanged in November.
+          atS: 40.58
+          durationS: 2.56
+        - text: Bonnet followed on the tenth of December, executed, it says, at the White Point near Charles Town.
+          atS: 43.75
+          durationS: 6.59
+        - text: That is here.
+          atS: 50.85
+          durationS: 1.13
+        - text: There was no garden then.
+          atS: 52.58
+          durationS: 1.52
+        - text: The point took its name from the oyster shells heaped along the shore.
+          atS: 54.61
+          durationS: 3.7
+        - text: A Charleston historian, writing in nineteen-oh-six, recorded where the pirates went afterwards.
+          atS: 58.7
+          durationS: 6.19
+        - text: They were buried on the White Point shoal, just above the low-water mark.
+          atS: 65.33
+          durationS: 4.02
+        - text: Out on the mud, at the edge of the tide.
+          atS: 69.79
+          durationS: 2.61
+        - text: The city later filled the shoal in.
+          atS: 73.21
+          durationS: 2.12
+        - text: This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on top of it.
+          atS: 76.03
+          durationS: 6.37
+        - text: They were buried where the tide came in.
+          atS: 82.85
+          durationS: 2.08
+        - text: The city moved the tide.
+          atS: 85.2
+          durationS: 2.33

@@ -9,7 +9,7 @@ at: { lat: 32.78075, lng: -79.93145 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 106
+durationS: 93
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -39,7 +39,7 @@ script: |
 
   These sheds were built to sell beef. One of the buildings built to sell people is still
   standing, a few blocks south of here, on Chalmers Street.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look up at the band of decoration under the roof of the Market Hall."
@@ -115,3 +115,71 @@ sources:
     url: https://www.nps.gov/places/old-slave-mart.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-skulls-over-the-market/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 93
+    audioBytes: 1488813
+    transcript:
+      totalS: 93
+      lines:
+        - text: Look up at the band of decoration under the roof of the Market Hall.
+          atS: 0
+          durationS: 3.85
+        - text: Those shapes are skulls.
+          atS: 4.3
+          durationS: 1.89
+        - text: Bulls, and sheep.
+          atS: 6.47
+          durationS: 1.58
+        - text: They are an advertisement.
+          atS: 8.32
+          durationS: 1.58
+        - text: This was a meat market.
+          atS: 10.15
+          durationS: 1.71
+        - text: The land was given to the city for a market in seventeen eighty-eight, and after a great fire the hall and the long open sheds behind it went up in eighteen forty and forty-one.
+          atS: 12.29
+          durationS: 11.65
+        - text: Every day, meat and produce came in from the rural communities nearby.
+          atS: 24.64
+          durationS: 4.66
+        - text: The rules were strict.
+          atS: 29.73
+          durationS: 1.37
+        - text: Cuts and weights were regulated.
+          atS: 31.43
+          durationS: 2.03
+        - text: Vendors had to wear clean white aprons.
+          atS: 33.78
+          durationS: 2.58
+        - text: And vendors had to bring only fresh goods, so whatever was left at the end of the day was thrown into the street.
+          atS: 36.51
+          durationS: 7.29
+        - text: Which is where the market's other workers came in.
+          atS: 44.41
+          durationS: 2.61
+        - text: Buzzards cleaned the streets around the market, and Charlestonians valued the service so much that the birds were protected by law.
+          atS: 47.46
+          durationS: 7.62
+        - text: People called them Charleston eagles.
+          atS: 55.89
+          durationS: 2.22
+        - text: A visiting reporter in eighteen seventy-four watched one pick the street clean, then fly up to sit on the market-house roof, protected, he wrote, like any official of the city.
+          atS: 58.71
+          durationS: 9.93
+        - text: You may have heard that these sheds were a slave market.
+          atS: 68.81
+          durationS: 3.01
+        - text: The record puts those sales somewhere else.
+          atS: 72.1
+          durationS: 2.52
+        - text: Charleston sold enslaved people at the Exchange, and after eighteen fifty-six in private marts on Chalmers, State and Queen streets.
+          atS: 74.86
+          durationS: 8.77
+        - text: These sheds were built to sell beef.
+          atS: 83.95
+          durationS: 2.31
+        - text: One of the buildings built to sell people is still standing, a few blocks south of here, on Chalmers Street.
+          atS: 86.54
+          durationS: 6.43

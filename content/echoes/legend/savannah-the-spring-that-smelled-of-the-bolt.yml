@@ -9,13 +9,11 @@ at: { lat: 32.03420, lng: -81.04680 }
 triggerRadiusKm: 0.15
 category: legend
 format: short
-durationS: 60
+durationS: 46
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A place-name legend. Savannah's 1869 history credits it to Oglethorpe's account of Carolina and
-  Georgia; the 1890 guidebook calls it local tradition and says plainly that it may not be founded on
-  fact. The script says aloud that it is a legend.
+  A place-name legend. Savannah's 1869 history credits it to Oglethorpe's account of Carolina and Georgia; the 1890 guidebook calls it local tradition and says plainly that it may not be founded on fact. The script says aloud that it is a legend.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -33,7 +31,7 @@ script: |
   A Savannah guidebook of eighteen ninety was more careful. Whether the tradition be founded on fact or not, it wrote, it is nevertheless believed to be true. Old inhabitants pointed out the Thunderbolt spring with faith and pride.
 
   Nobody has ever proven a bolt made a spring. But the name stuck.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "A thunderbolt fell here, the story goes, and where it struck, a spring came gushing out of the ground."
@@ -65,3 +63,50 @@ sources:
     url: https://www.loc.gov/item/01007695/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/savannah-the-spring-that-smelled-of-the-bolt/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 46.1
+    audioBytes: 738994
+    transcript:
+      totalS: 46.1
+      lines:
+        - text: This little river town has a strange name.
+          atS: 0
+          durationS: 2.44
+        - text: Thunderbolt.
+          atS: 2.57
+          durationS: 0.79
+        - text: It comes with a legend, and the legend is very old.
+          atS: 3.42
+          durationS: 2.81
+        - text: Treat it as a legend, because that is all anyone has ever had.
+          atS: 6.29
+          durationS: 3.12
+        - text: A thunderbolt fell here, the story goes, and where it struck, a spring came gushing out of the ground.
+          atS: 9.47
+          durationS: 5.38
+        - text: When Savannah's historians wrote it down in eighteen sixty nine, they credited it to Oglethorpe's own account of Carolina and Georgia.
+          atS: 15.29
+          durationS: 7.35
+        - text: And they quoted the best line.
+          atS: 22.66
+          durationS: 1.85
+        - text: A spring arose in that place, which still smells of the bolt.
+          atS: 24.89
+          durationS: 3.4
+        - text: A Savannah guidebook of eighteen ninety was more careful.
+          atS: 28.45
+          durationS: 3.36
+        - text: Whether the tradition be founded on fact or not, it wrote, it is nevertheless believed to be true.
+          atS: 31.85
+          durationS: 5.38
+        - text: Old inhabitants pointed out the Thunderbolt spring with faith and pride.
+          atS: 37.34
+          durationS: 4.21
+        - text: Nobody has ever proven a bolt made a spring.
+          atS: 41.88
+          durationS: 2.48
+        - text: But the name stuck.
+          atS: 44.75
+          durationS: 1.37

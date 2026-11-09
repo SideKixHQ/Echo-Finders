@@ -9,7 +9,7 @@ at: { lat: 32.08132, lng: -81.09617 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 82
+durationS: 76
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   It is recorded as the first brick building in Savannah owned by African Americans.
 
   The stucco went on in the nineteen forties. So you cannot see a single one of those bricks. They are all still there.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Savannah grey brick, laid four bricks deep."
@@ -81,3 +81,56 @@ sources:
     url: https://www.loc.gov/item/2017880508/
     retrievedAt: "2026-10-15"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-first-african-baptist/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 76.3
+    audioBytes: 1221737
+    transcript:
+      totalS: 76.3
+      lines:
+        - text: Look at the walls of this church.
+          atS: 0
+          durationS: 1.92
+        - text: Smooth, pale stucco.
+          atS: 2.3
+          durationS: 1.78
+        - text: Underneath it is brick.
+          atS: 4.68
+          durationS: 1.4
+        - text: Savannah grey brick, laid four bricks deep.
+          atS: 6.69
+          durationS: 3.48
+        - text: And the history of this building, as recorded for the federal survey, says those bricks were formed by hand at night, on the bank of the river, by members of this congregation, after they had worked a full day for the people who owned them.
+          atS: 10.87
+          durationS: 13.5
+        - text: They had been worshipping on this spot since the eighteen thirties, in an old wooden church bought from a white Baptist congregation that had moved to a new building.
+          atS: 25.32
+          durationS: 9.38
+        - text: They paid for it with money earned working nights, with their owners' permission.
+          atS: 35.4
+          durationS: 4.99
+        - text: Often, the survey notes, it was money they had been saving to buy their own freedom, or their family's.
+          atS: 41.2
+          durationS: 6.61
+        - text: In eighteen fifty five they pulled the wooden church down and began this one.
+          atS: 48.41
+          durationS: 4.2
+        - text: It took four years.
+          atS: 52.94
+          durationS: 1.56
+        - text: It cost more than ten thousand dollars, and it was paid off before the end of eighteen fifty nine, the year it was finished.
+          atS: 54.94
+          durationS: 7.44
+        - text: It is recorded as the first brick building in Savannah owned by African Americans.
+          atS: 62.82
+          durationS: 4.94
+        - text: The stucco went on in the nineteen forties.
+          atS: 68.2
+          durationS: 2.94
+        - text: So you cannot see a single one of those bricks.
+          atS: 71.64
+          durationS: 2.69
+        - text: They are all still there.
+          atS: 74.72
+          durationS: 1.58

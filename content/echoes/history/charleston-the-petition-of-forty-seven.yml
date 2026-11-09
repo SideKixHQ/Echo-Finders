@@ -28,7 +28,7 @@ script: |
   This one was built to replace it in eighteen forty. When its first service was held, the year after, it was the new kind. Beth Elohim became the first Reform congregation in America, and this is now the oldest synagogue in the country in continuous use.
 
   The petition of eighteen twenty four was turned down. Seventeen years later, it had the whole building.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "It was designed to look like a temple from ancient Greece."
@@ -87,3 +87,59 @@ pronunciations:
     say: kah-HAHL kah-DOHSH bayt eh-loh-HEEM
   - written: Hasell Street
     say: HAY-zel Street
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-petition-of-forty-seven/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 76.3
+    audioBytes: 1221737
+    transcript:
+      totalS: 76.3
+      lines:
+        - text: Look at the front of this synagogue.
+          atS: 0
+          durationS: 1.89
+        - text: Tall columns, a deep porch, a heavy roof line.
+          atS: 2.5
+          durationS: 3.92
+        - text: It was designed to look like a temple from ancient Greece.
+          atS: 7.12
+          durationS: 3.37
+        - text: The congregation is older than the building.
+          atS: 11.3
+          durationS: 2.51
+        - text: It began in seventeen forty nine, and by the end of that century it was the largest Jewish community in the country.
+          atS: 14.41
+          durationS: 7.07
+        - text: In eighteen twenty four, forty seven members sent the trustees a petition.
+          atS: 22.08
+          durationS: 4.62
+        - text: They asked for shorter Hebrew rituals.
+          atS: 27.14
+          durationS: 2.39
+        - text: They asked for prayers and sermons in English.
+          atS: 29.86
+          durationS: 2.55
+        - text: The trustees said no, and for a time the congregation split.
+          atS: 32.8
+          durationS: 3.91
+        - text: By eighteen thirty three, the congregation was back together, with nearly two hundred members supporting reform.
+          atS: 37.15
+          durationS: 6.51
+        - text: Then the Charleston fire of eighteen thirty eight burned the first synagogue, which stood on this spot.
+          atS: 44.18
+          durationS: 6.22
+        - text: This one was built to replace it in eighteen forty.
+          atS: 51
+          durationS: 3.19
+        - text: When its first service was held, the year after, it was the new kind.
+          atS: 55.15
+          durationS: 4.39
+        - text: Beth Elohim became the first Reform congregation in America, and this is now the oldest synagogue in the country in continuous use.
+          atS: 60.23
+          durationS: 8.24
+        - text: The petition of eighteen twenty four was turned down.
+          atS: 69.17
+          durationS: 3.08
+        - text: Seventeen years later, it had the whole building.
+          atS: 73.36
+          durationS: 2.94

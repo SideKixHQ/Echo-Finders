@@ -9,17 +9,11 @@ at: { lat: 32.06935, lng: -81.09550 }
 triggerRadiusKm: 0.05
 category: built
 format: short
-durationS: 69
+durationS: 70
 visibility: at-hand
 certainty: contested
 certaintyNote: >-
-  The fountain's date is documented, from a dated stereograph record at the Library of
-  Congress. Its model is not settled in these sources: an 1890 guide ties it to a prize model
-  shown in London and calls it similar to the Place de la Concorde fountain, an 1899 guide
-  calls it an exact reproduction of the Paris fountain, and a 1910 guide says only that it was
-  modelled on it. The script reports each claim as the guidebook's, not as fact. A widely
-  repeated account that it was ordered from a manufacturer's catalogue could not be sourced
-  from reachable sites and is left out.
+  The fountain's date is documented, from a dated stereograph record at the Library of Congress. Its model is not settled in these sources: an 1890 guide ties it to a prize model shown in London and calls it similar to the Place de la Concorde fountain, an 1899 guide calls it an exact reproduction of the Paris fountain, and a 1910 guide says only that it was modelled on it. The script reports each claim as the guidebook's, not as fact. A widely repeated account that it was ordered from a manufacturer's catalogue could not be sourced from reachable sites and is left out.
 minAge: 0
 quality: 0.75
 tags: [savannah, savannah-core, forsyth-park, fountains]
@@ -38,7 +32,7 @@ script: |
   What is certain is plainer. Before the fountain, the middle of this park was marked by a small wooden bridge. The fountain went in around eighteen fifty eight, and a photographer on Broughton Street put it on a stereo card. After the war, a photographer who had followed Sherman's army put it in his book of the campaign.
 
   The fountain has not changed much since. The story keeps improving.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In eighteen ninety, one said it was designed from a prize model shown at an exhibition in London"
@@ -97,3 +91,56 @@ sources:
 pronunciations:
   - written: Place de la Concorde
     say: PLAHSS duh lah kon-KORD
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-fountain-that-kept-getting-more-parisian/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.8
+    audioBytes: 1117665
+    transcript:
+      totalS: 69.8
+      lines:
+        - text: Walk up to the edge of the basin and look at the fountain.
+          atS: 0
+          durationS: 2.97
+        - text: The tiers, the figures, the water falling from level to level.
+          atS: 3.12
+          durationS: 4.17
+        - text: Now ask where it came from.
+          atS: 7.73
+          durationS: 1.74
+        - text: Savannah's own guidebooks never quite agreed.
+          atS: 10.29
+          durationS: 2.78
+        - text: In eighteen ninety, one said it was designed from a prize model shown at an exhibition in London, and that it was similar to the grand fountain in the Place de la Concorde, in Paris.
+          atS: 13.44
+          durationS: 12.97
+        - text: In eighteen ninety nine, another went further.
+          atS: 27.36
+          durationS: 3.01
+        - text: An exact reproduction, it said, of the one in Paris.
+          atS: 30.98
+          durationS: 4.25
+        - text: By nineteen ten, a third guide had it modelled on Paris.
+          atS: 35.83
+          durationS: 4.01
+        - text: Close, but no longer exact.
+          atS: 40.28
+          durationS: 2.41
+        - text: What is certain is plainer.
+          atS: 43.02
+          durationS: 2.01
+        - text: Before the fountain, the middle of this park was marked by a small wooden bridge.
+          atS: 45.53
+          durationS: 4.89
+        - text: The fountain went in around eighteen fifty eight, and a photographer on Broughton Street put it on a stereo card.
+          atS: 50.81
+          durationS: 6.32
+        - text: After the war, a photographer who had followed Sherman's army put it in his book of the campaign.
+          atS: 58.07
+          durationS: 5.48
+        - text: The fountain has not changed much since.
+          atS: 64.51
+          durationS: 2.18
+        - text: The story keeps improving.
+          atS: 67.29
+          durationS: 2.51

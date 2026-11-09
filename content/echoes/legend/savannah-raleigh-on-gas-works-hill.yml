@@ -9,13 +9,11 @@ at: { lat: 32.07870, lng: -81.08350 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 72
+durationS: 59
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A local tradition printed in the 1910 Illustrated guide to Savannah as "tradition tells us". The
-  National Park Service's account of the 1584 voyage puts it on the Outer Banks, with Raleigh's
-  charter requiring him to stay in England. The script says aloud that it is a legend.
+  A local tradition printed in the 1910 Illustrated guide to Savannah as "tradition tells us". The National Park Service's account of the 1584 voyage puts it on the Outer Banks, with Raleigh's charter requiring him to stay in England. The script says aloud that it is a legend.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -31,7 +29,7 @@ script: |
   It is a legend, and hard to keep. The National Park Service tells the year differently. Raleigh's charter came on condition that he stayed in England. In April fifteen eighty four he sent an expedition instead, and it arrived on the Outer Banks of what is now North Carolina.
 
   So nobody can say who, if anyone, stood on this hill in fifteen eighty four. But for a while, the city liked its story to start a century and a half before Oglethorpe.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In nineteen ten, a Savannah guidebook opened its timeline of the city not with Oglethorpe, but with Sir Walter Raleigh."
@@ -80,3 +78,44 @@ sources:
     url: https://www.nps.gov/fora/learn/historyculture/1584-the-first-english-voyage.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/savannah-raleigh-on-gas-works-hill/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 59.2
+    audioBytes: 948392
+    transcript:
+      totalS: 59.2
+      lines:
+        - text: You are at the eastern end of the bluff.
+          atS: 0
+          durationS: 2.17
+        - text: Hold on to that, because a legend once started the whole story of this city right here.
+          atS: 2.68
+          durationS: 4.82
+        - text: In nineteen ten, a Savannah guidebook opened its timeline of the city not with Oglethorpe, but with Sir Walter Raleigh.
+          atS: 7.78
+          durationS: 7.54
+        - text: In fifteen eighty four, it said, tradition tells us, Raleigh landed here, and held a conference with an Indian chief, near what was known as Gas Works Hill.
+          atS: 15.7
+          durationS: 9.67
+        - text: The gas-house stood at the eastern end of this bluff, where a Revolutionary fort called Fort Wayne had been.
+          atS: 25.81
+          durationS: 6.11
+        - text: It is a legend, and hard to keep.
+          atS: 32.2
+          durationS: 2.4
+        - text: The National Park Service tells the year differently.
+          atS: 35.04
+          durationS: 2.86
+        - text: Raleigh's charter came on condition that he stayed in England.
+          atS: 38.28
+          durationS: 3.16
+        - text: In April fifteen eighty four he sent an expedition instead, and it arrived on the Outer Banks of what is now North Carolina.
+          atS: 41.76
+          durationS: 7.21
+        - text: So nobody can say who, if anyone, stood on this hill in fifteen eighty four.
+          atS: 49.06
+          durationS: 4.66
+        - text: But for a while, the city liked its story to start a century and a half before Oglethorpe.
+          atS: 53.84
+          durationS: 5.38

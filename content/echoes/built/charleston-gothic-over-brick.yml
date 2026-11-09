@@ -9,7 +9,7 @@ at: { lat: 32.77856, lng: -79.93456 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 97
+durationS: 84
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -40,7 +40,7 @@ script: |
   So the oldest Unitarian church in the South is an eighteenth-century meeting house in a
   nineteenth-century dream of the Middle Ages. The brick is still in there, under the
   stucco.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It looks like a piece of Gothic England."
@@ -102,3 +102,65 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdc/02003003/02003003.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-gothic-over-brick/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 84
+    audioBytes: 1344617
+    transcript:
+      totalS: 84
+      lines:
+        - text: Look at the Unitarian Church.
+          atS: 0
+          durationS: 2.07
+        - text: A tower with battlements, pointed windows, buttresses down the sides.
+          atS: 2.35
+          durationS: 4.75
+        - text: It looks like a piece of Gothic England.
+          atS: 7.42
+          durationS: 2.32
+        - text: Look again at the buttresses.
+          atS: 10.25
+          durationS: 1.88
+        - text: Buttresses are supposed to hold a building up.
+          atS: 12.46
+          durationS: 2.74
+        - text: According to the Park Service, these are false.
+          atS: 15.58
+          durationS: 3.08
+        - text: They are there for the look.
+          atS: 18.83
+          durationS: 1.51
+        - text: Inside, the vaulted ceiling, modelled on the chapel of Henry the Seventh at Westminster, is lath and plaster.
+          atS: 20.72
+          durationS: 6.71
+        - text: The Gothic is a costume.
+          atS: 27.88
+          durationS: 1.53
+        - text: Underneath it is a much plainer building.
+          atS: 29.65
+          durationS: 2.57
+        - text: In seventeen seventy-two, work began here on a small rectangular brick church, because the Independent Church, now the Circular Church, had more members than it could hold.
+          atS: 32.5
+          durationS: 10.47
+        - text: The Revolution interrupted the work.
+          atS: 43.48
+          durationS: 2.24
+        - text: The church was finally finished in seventeen eighty-seven.
+          atS: 45.81
+          durationS: 3.19
+        - text: Then, in eighteen fifty-two, a young architect named Francis Lee was given two years to remake it in the romantic taste of the day.
+          atS: 49.45
+          durationS: 8.41
+        - text: He added the chancel at the back and the four-storey tower, and he covered the old brick walls in stucco.
+          atS: 58.46
+          durationS: 6.05
+        - text: When the earthquake of eighteen eighty-six badly damaged it, people from across the country sent money for the repairs.
+          atS: 64.83
+          durationS: 7.27
+        - text: So the oldest Unitarian church in the South is an eighteenth-century meeting house in a nineteenth-century dream of the Middle Ages.
+          atS: 72.61
+          durationS: 7.78
+        - text: The brick is still in there, under the stucco.
+          atS: 81.2
+          durationS: 2.76

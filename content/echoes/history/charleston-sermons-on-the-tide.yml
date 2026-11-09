@@ -43,7 +43,7 @@ pronunciations:
     say: "HYOO-guh-not"
   - written: "Calvinist"
     say: "KAL-vin-ist"
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The stuccoed church on this corner, with the pointed windows, is the French Huguenot Church."
@@ -110,3 +110,71 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdc/02003003/02003003.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-sermons-on-the-tide/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 101.5
+    audioBytes: 1625486
+    transcript:
+      totalS: 101.5
+      lines:
+        - text: The stuccoed church on this corner, with the pointed windows, is the French Huguenot Church.
+          atS: 0
+          durationS: 7.54
+        - text: Look closely at the decoration.
+          atS: 8.14
+          durationS: 2.06
+        - text: Some of what looks like carved stone is iron.
+          atS: 10.52
+          durationS: 3.29
+        - text: But the story here is about time, and water.
+          atS: 14.18
+          durationS: 3.38
+        - text: The Huguenots were French Protestants who flocked to Carolina in the sixteen-eighties.
+          atS: 18
+          durationS: 6.33
+        - text: Many of the families who worshipped here lived on plantations outside the town.
+          atS: 24.76
+          durationS: 4.56
+        - text: So on Sundays they came to service by boat.
+          atS: 29.84
+          durationS: 3.02
+        - text: A boat on these rivers moves when the tide lets it.
+          atS: 33.37
+          durationS: 3.34
+        - text: Leave at the wrong hour and you row against it the whole way.
+          atS: 37.22
+          durationS: 3.38
+        - text: The French took their complaints to the Lords Proprietors, the men who ran the colony, and in sixteen ninety-three an answer came back.
+          atS: 41.2
+          durationS: 8.58
+        - text: It came with a list of protections.
+          atS: 50.29
+          durationS: 2.13
+        - text: Their land would not be taken from their children because they were aliens.
+          atS: 52.8
+          durationS: 4.01
+        - text: Their marriages would be recognised.
+          atS: 57.25
+          durationS: 2.1
+        - text: And they were not to be made to begin their worship at an hour inconvenient to the tide.
+          atS: 59.79
+          durationS: 5.1
+        - text: The Park Service says services here were timed to the tides, for the families arriving by boat from the plantations.
+          atS: 66.19
+          durationS: 7.29
+        - text: The church that stood here in seventeen ninety-six was blown up on purpose, to stop a fire spreading through the neighbourhood.
+          atS: 74.18
+          durationS: 7.72
+        - text: This one went up in the eighteen-forties.
+          atS: 82.28
+          durationS: 2.42
+        - text: Today the congregation is French Calvinist, the only congregation of its kind in the country.
+          atS: 85.02
+          durationS: 6.32
+        - text: The river is a few streets east of you, still rising and falling twice a day.
+          atS: 91.78
+          durationS: 4.77
+        - text: Somewhere in a colonial record there is a promise that Sunday would wait for it.
+          atS: 97.25
+          durationS: 4.27

@@ -9,7 +9,7 @@ at: { lat: 32.78735, lng: -79.93580 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 75
+durationS: 73
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -26,7 +26,7 @@ script: |
   The building kept growing. A third storey, then wings, then a fourth. In nineteen twenty two the academy left the building, and after it moved away the green was renamed for Francis Marion.
 
   The building is a hotel now. It still has the battlements.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the long building on the north side of the square."
@@ -107,3 +107,62 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/guidetocharlesto00walk/guidetocharlesto00walk.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-castle-on-the-square/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72.5
+    audioBytes: 1161551
+    transcript:
+      totalS: 72.5
+      lines:
+        - text: Look at the long building on the north side of the square.
+          atS: 0
+          durationS: 3.18
+        - text: Battlements along the roof.
+          atS: 3.42
+          durationS: 1.65
+        - text: Towers at the corners.
+          atS: 5.32
+          durationS: 1.56
+        - text: It looks like a fortress because it was meant to be one.
+          atS: 7.38
+          durationS: 3.41
+        - text: Not against a foreign army.
+          atS: 11.08
+          durationS: 2.08
+        - text: In eighteen twenty two, the authorities said they had uncovered a plan by enslaved Charlestonians to rise and take the city.
+          atS: 14.45
+          durationS: 7.69
+        - text: In the aftermath, the state built an arsenal here, to house a guard of armed men who patrolled the city.
+          atS: 22.52
+          durationS: 6.86
+        - text: When federal surveyors described the building in the nineteen fifties, they put its purpose plainly.
+          atS: 29.99
+          durationS: 5.68
+        - text: A safeguard against slave uprisings.
+          atS: 35.99
+          durationS: 2.83
+        - text: In the eighteen forties, cadets of a new state military academy moved in.
+          atS: 39.52
+          durationS: 4.8
+        - text: That academy was the Citadel.
+          atS: 44.76
+          durationS: 2.05
+        - text: For decades its cadets drilled and paraded on the grass in front of you, which was called Citadel Green.
+          atS: 47.2
+          durationS: 6.74
+        - text: The building kept growing.
+          atS: 54.45
+          durationS: 1.44
+        - text: A third storey, then wings, then a fourth.
+          atS: 56.22
+          durationS: 3.18
+        - text: In nineteen twenty two the academy left the building, and after it moved away the green was renamed for Francis Marion.
+          atS: 59.91
+          durationS: 7.29
+        - text: The building is a hotel now.
+          atS: 68.01
+          durationS: 1.66
+        - text: It still has the battlements.
+          atS: 70.18
+          durationS: 2.36

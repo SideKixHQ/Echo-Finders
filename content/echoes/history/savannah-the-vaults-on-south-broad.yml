@@ -9,13 +9,11 @@ at: { lat: 32.07600, lng: -81.09030 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 79
+durationS: 71
 visibility: at-hand
 certainty: contested
 certaintyNote: >-
-  The break-ins rest on one account, the city history of 1869, written by Savannahians hostile
-  to the occupation. No Union record was consulted. The often-told story that soldiers altered
-  dates on the gravestones could not be sourced and is not used.
+  The break-ins rest on one account, the city history of 1869, written by Savannahians hostile to the occupation. No Union record was consulted. The often-told story that soldiers altered dates on the gravestones could not be sourced and is not used.
 minAge: 0
 quality: 0.75
 tags: [savannah, savannah-core, cemeteries, civil-war, colonial]
@@ -34,7 +32,7 @@ script: |
   You might hear other stories in here about what the soldiers did. This story has an advantage. Somebody wrote it down within four years, while the damage could still be seen.
 
   All of these vaults were built to stay shut.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "This was the town's burying ground from about seventeen fifty."
@@ -88,3 +86,56 @@ sources:
     url: https://www.nps.gov/fopu/learn/historyculture/savannah.htm
     retrievedAt: "2026-10-15"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-vaults-on-south-broad/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.4
+    audioBytes: 1143997
+    transcript:
+      totalS: 71.4
+      lines:
+        - text: Walk in among the old brick vaults.
+          atS: 0
+          durationS: 2.46
+        - text: This was the town's burying ground from about seventeen fifty.
+          atS: 3.06
+          durationS: 3.83
+        - text: First for the parish of Christ Church, then, from seventeen eighty-nine, for people of every denomination.
+          atS: 7.34
+          durationS: 7.17
+        - text: The avenue outside was called South Broad Street then.
+          atS: 15.02
+          durationS: 3.63
+        - text: In December eighteen sixty-four, Sherman's army marched into Savannah.
+          atS: 19.96
+          durationS: 4.52
+        - text: A history of the city, published in eighteen sixty-nine, makes an accusation about what followed.
+          atS: 24.98
+          durationS: 5.87
+        - text: It says soldiers broke open the vaults in this old burying ground, searching for valuables they believed had been hidden inside.
+          atS: 31.3
+          durationS: 7.25
+        - text: It says the same happened at Bonaventure, outside town.
+          atS: 39.25
+          durationS: 3.4
+        - text: And it says Union earthworks were dug straight through the Catholic cemetery.
+          atS: 43.26
+          durationS: 4.83
+        - text: That is a single account.
+          atS: 48.69
+          durationS: 1.58
+        - text: It was written by Savannahians who had every reason to resent the occupation, and it should be heard that way.
+          atS: 50.48
+          durationS: 6.18
+        - text: You might hear other stories in here about what the soldiers did.
+          atS: 57.17
+          durationS: 3.25
+        - text: This story has an advantage.
+          atS: 60.93
+          durationS: 1.95
+        - text: Somebody wrote it down within four years, while the damage could still be seen.
+          atS: 63.26
+          durationS: 4.46
+        - text: All of these vaults were built to stay shut.
+          atS: 68.53
+          durationS: 2.89

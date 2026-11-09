@@ -9,7 +9,7 @@ at: { lat: 32.77900, lng: -79.92972 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 120
+durationS: 110
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -48,7 +48,7 @@ script: |
 pronunciations:
   - written: "Calhoun"
     say: "kal-HOON"
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Across the street from St. Philip's Church is its western churchyard."
@@ -150,3 +150,80 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/guidetocharlesto00walk/guidetocharlesto00walk.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-calhoun-moved-by-night/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 110.2
+    audioBytes: 1764248
+    transcript:
+      totalS: 110.2
+      lines:
+        - text: Across the street from St.
+          atS: 0
+          durationS: 1.43
+        - text: Philip's Church is its western churchyard.
+          atS: 1.45
+          durationS: 2.45
+        - text: In the middle of it stands a large stone sarcophagus.
+          atS: 4.18
+          durationS: 3.26
+        - text: It holds John C.
+          atS: 7.77
+          durationS: 1.09
+        - text: Calhoun.
+          atS: 8.9
+          durationS: 0.88
+        - text: Calhoun was vice president, secretary of state, and one of the most powerful politicians of his age.
+          atS: 10.6
+          durationS: 6.21
+        - text: In the Senate he led the pro-slavery faction, and called slavery a positive good.
+          atS: 17.32
+          durationS: 5.11
+        - text: He died in eighteen fifty, a decade before the Civil War, and he was buried here after what one paper called the grandest civic and military pageant ever seen in the city.
+          atS: 22.94
+          durationS: 10.76
+        - text: He did not stay put.
+          atS: 34.22
+          durationS: 1.44
+        - text: As the war went on, it began to look as if Charleston would fall, and some in the city feared what would be done to his grave.
+          atS: 36.26
+          durationS: 7.46
+        - text: So a few men decided to move him.
+          atS: 44.33
+          durationS: 2.3
+        - text: At night, and in secret.
+          atS: 47.23
+          durationS: 2.31
+        - text: One of them remembered being summoned from camp in the dark.
+          atS: 50.35
+          durationS: 3.19
+        - text: When he reached the church, the coffin had already been dug up and carried inside.
+          atS: 54.15
+          durationS: 4.54
+        - text: One candle.
+          atS: 59.29
+          durationS: 0.95
+        - text: Two or three men standing by.
+          atS: 60.69
+          durationS: 2.03
+        - text: In complete silence they lifted it, carried it down the middle aisle and out through the north door, and buried it again in another spot.
+          atS: 63.32
+          durationS: 7.72
+        - text: Shortly after the war, it was dug up once more, and quietly put back in the tomb.
+          atS: 72.16
+          durationS: 4.57
+        - text: Later the state paid for the sarcophagus you can see.
+          atS: 77.33
+          durationS: 3.07
+        - text: The plain marble slab that first covered the grave, carved with just his name, was broken in the earthquake of eighteen eighty-six.
+          atS: 81.7
+          durationS: 8.49
+        - text: The church set it against the north wall of the churchyard, near the place where he had lain hidden.
+          atS: 91
+          durationS: 5.25
+        - text: For a while, then, the tomb with his name on it was empty.
+          atS: 97.06
+          durationS: 3.8
+        - text: The man who had argued the South toward secession spent part of the war it led to hidden, in a secret grave beside this church.
+          atS: 101.67
+          durationS: 8.53

@@ -9,7 +9,7 @@ at: { lat: 32.08100, lng: -81.09110 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 72
+durationS: 67
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,10 +33,8 @@ script: |
 
   It was designed to change colour on its own. The city has been choosing its colour ever since.
 detail: >-
-  The cornerstone, laid on the eleventh of August 1904, is at the northeast corner about twenty
-  feet above the ground below, and is easiest to see from one of the footbridges over Factors Walk.
-  The architect was Hyman W. Witcover.
-editorial: draft
+  The cornerstone, laid on the eleventh of August 1904, is at the northeast corner about twenty feet above the ground below, and is easiest to see from one of the footbridges over Factors Walk. The architect was Hyman W. Witcover.
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "This is the spot where the City Exchange stood from seventeen ninety nine."
@@ -77,3 +75,53 @@ sources:
     url: https://www.loc.gov/item/unk84031503/
     retrievedAt: "2026-10-15"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-city-hall-dome/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.7
+    audioBytes: 1068764
+    transcript:
+      totalS: 66.7
+      lines:
+        - text: Look up at the dome on City Hall.
+          atS: 0
+          durationS: 2.14
+        - text: It was not built to look like that.
+          atS: 2.52
+          durationS: 1.94
+        - text: This is the spot where the City Exchange stood from seventeen ninety nine.
+          atS: 4.84
+          durationS: 4.52
+        - text: In nineteen oh four the city tore it down and started again.
+          atS: 9.87
+          durationS: 4.17
+        - text: The new City Hall was finished at the end of nineteen oh five, and the first council met here in January nineteen oh six.
+          atS: 14.64
+          durationS: 7.91
+        - text: The dome rises another seventy feet above the building.
+          atS: 23.36
+          durationS: 3.03
+        - text: It was sheathed in copper, and for many years the city simply let that copper weather on its own.
+          atS: 26.99
+          durationS: 6.55
+        - text: Then the air got to it.
+          atS: 34.66
+          durationS: 1.72
+        - text: In nineteen sixty six the city painted the dome to stop it deteriorating.
+          atS: 36.81
+          durationS: 4.98
+        - text: The culprit, according to the federal survey of the building, was a local fertilizer plant.
+          atS: 42.4
+          durationS: 5.84
+        - text: Later the survey found it under a protective coating, coloured to look like the weathered copper it had been designed to become all along.
+          atS: 48.94
+          durationS: 7.67
+        - text: What you are looking at now came after that.
+          atS: 57.42
+          durationS: 2.67
+        - text: It was designed to change colour on its own.
+          atS: 60.53
+          durationS: 2.62
+        - text: The city has been choosing its colour ever since.
+          atS: 63.6
+          durationS: 3.13
