@@ -117,6 +117,17 @@ describe("the two plans", () => {
     expect(cityAt({ lat: 39.7391, lng: -75.5398 })).toBeNull(); // Wilmington, Delaware
   });
 
+  it("sells passes in Savannah, Charleston, New Orleans and Boston", () => {
+    expect(cityAt({ lat: 32.0809, lng: -81.0912 })?.id).toBe("savannah"); // City Hall
+    expect(cityAt({ lat: 32.0342, lng: -81.0468 })?.id).toBe("savannah"); // Thunderbolt
+    expect(cityAt({ lat: 32.7719, lng: -79.9298 })?.id).toBe("charleston"); // the Battery
+    expect(cityAt({ lat: 29.9574, lng: -90.0629 })?.id).toBe("new-orleans"); // Jackson Square
+    expect(cityAt({ lat: 42.3559, lng: -71.0549 })?.id).toBe("boston"); // the Old State House
+    expect(cityAt({ lat: 42.3194, lng: -70.9285 })?.id).toBe("boston"); // Fort Warren
+    expect(cityAt({ lat: 42.5195, lng: -70.8967 })).toBeNull(); // Salem: its own place
+    expect(cityAt({ lat: 32.2163, lng: -80.7526 })).toBeNull(); // Hilton Head
+  });
+
   it("opens every echo in the city a City Pass was bought for, and only there", () => {
     expect(mayHearAnother(NEW_YORK, spent, "new", BATTERY, NOW)).toBe(true);
     expect(mayHearAnother(NEW_YORK, spent, "new", BLUE_RIDGE, NOW)).toBe(false);
