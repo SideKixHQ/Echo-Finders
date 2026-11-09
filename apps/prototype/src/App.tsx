@@ -1589,9 +1589,8 @@ export function App() {
   const [routePicker, setRoutePicker] = useState<Echo | null>(null);
   /** The echo whose "Something wrong with this story?" is open (`ReportEcho`). */
   const [reporting, setReporting] = useState<Echo | null>(null);
-  /** "Know a story?" open from the map (true) or from an echo's card (that echo). */
-  const [suggesting, setSuggesting] = useState<Echo | true | null>(null);
-  const openSuggest = useCallback(() => setSuggesting(true), []);
+  /** The echo whose "Know more about this place?" is open (`SuggestSheet`). */
+  const [suggesting, setSuggesting] = useState<Echo | null>(null);
   const [deletedRoute, setDeletedRoute] = useState<{ route: SavedRoute; index: number } | null>(null);
   const [echoesView, setEchoesView] = useState<"echoes" | "routes">("echoes");
   const ordered = (ids: readonly string[]) => {
@@ -2145,8 +2144,6 @@ export function App() {
                    nothing at 500 knots. Carried modes never had it and still do not. */
                 {...(onFoot ? { humming, onHum: setHumming } : {})}
                 {...(selfDirected ? { sonar: sound, onSonar: setSound } : {})}
-                /* On the ground only: from a seat at 35,000 feet there is no "here". */
-                {...(selfDirected && feedbackAvailable(SENTRY_DSN) ? { onSuggest: openSuggest } : {})}
                 overview={overview}
                 /*
                   Recentre is the way back from a drag, and it has to work even when the
@@ -2255,7 +2252,7 @@ export function App() {
                 <SuggestSheet
                   dsn={SENTRY_DSN}
                   release={__BUILD_COMMIT__}
-                  {...(suggesting === true ? {} : { echo: suggesting })}
+                  echo={suggesting}
                   onClose={() => setSuggesting(null)}
                 />
               )}

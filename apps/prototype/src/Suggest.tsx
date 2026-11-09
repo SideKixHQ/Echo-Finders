@@ -58,6 +58,8 @@ export function SuggestForm({ dsn, release, onCancel, initialKind, echo }: FormP
   const [at, setAt] = useState<SuggestedSpot | undefined>(undefined);
   const [locating, setLocating] = useState<Locating>("off");
   const [status, setStatus] = useState<Status>("idle");
+  /** Whether the last one sent carried an email: the only way we can ever answer it. */
+  const [canReply, setCanReply] = useState(false);
 
   const toggleHere = async (on: boolean) => {
     if (!on) {
@@ -88,6 +90,7 @@ export function SuggestForm({ dsn, release, onCancel, initialKind, echo }: FormP
     });
     setStatus(ok ? "sent" : "failed");
     if (ok) {
+      setCanReply(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim()));
       setMessage("");
       setPlace(echo ? echo.point.place : "");
       setEmail("");
@@ -99,7 +102,15 @@ export function SuggestForm({ dsn, release, onCancel, initialKind, echo }: FormP
   if (status === "sent") {
     return (
       <div className="feedback-done" role="status">
-        <strong>{kind === "mine" ? "Thank you. We'll let you know when you can record it." : "Thank you. We'll look into it."}</strong>
+        <strong>
+          {kind === "mine"
+            ? canReply
+              ? "Thank you. We'll email you when you can record it."
+              : "Thank you. It's with us."
+            : canReply
+              ? "Thank you. We'll look into it, and write if we use it."
+              : "Thank you. We'll look into it."}
+        </strong>
         <button className="feedback-link" onClick={echo ? onCancel : () => setStatus("idle")}>
           {echo ? "Done" : "Suggest another"}
         </button>
@@ -130,7 +141,7 @@ export function SuggestForm({ dsn, release, onCancel, initialKind, echo }: FormP
       {kind === "mine" && (
         <p className="suggest-note">
           Soon you'll be able to record moments like this in your own voice, right where they
-          happened. Tell us yours now and we'll let you know.
+          happened. Leave your email below and we'll tell you when.
         </p>
       )}
       <label className="feedback-field">
@@ -200,10 +211,10 @@ export function Suggest({ dsn, release }: { readonly dsn: string | undefined; re
 }
 
 /**
- * The same form in a sheet, from the map's rail ("Know a story here?") or from an echo's
- * card ("Know more about this place?"), where the place is already filled in. A story is
- * remembered at the spot, so the ask belongs where the listener is looking at that spot,
- * not three taps away in Settings (James, 2026-11-09: "add it to the echo card and the map").
+ * The same form in a sheet, from an echo's card ("Know more about this place?"), with the
+ * place filled in. A story is remembered at the spot, so the ask belongs where the listener
+ * is looking at it, not three taps away in Settings. The map's rail was to have one too;
+ * James (2026-11-09) held it until it is in the design: "hold the map button".
  */
 export function SuggestSheet({
   dsn,
@@ -213,15 +224,15 @@ export function SuggestSheet({
 }: {
   readonly dsn: string | undefined;
   readonly release: string;
-  readonly echo?: Echo;
+  readonly echo: Echo;
   readonly onClose: () => void;
 }) {
   return (
-    <div className="atr feedback" role="dialog" aria-label="Know a story?">
+    <div className="atr feedback" role="dialog" aria-label="Know more about this place?">
       <div className="atr-head">
         <div className="atr-what">
-          <h2>{echo ? "Know more about this place?" : "Know a story here?"}</h2>
-          <p>{echo ? echo.point.place.split(",")[0] : "A story, a place, or something that happened to you"}</p>
+          <h2>Know more about this place?</h2>
+          <p>{echo.point.place.split(",")[0]}</p>
         </div>
         <button className="pw-close" onClick={onClose} aria-label="Close">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -230,7 +241,7 @@ export function SuggestSheet({
         </button>
       </div>
       <div className="report-body">
-        <SuggestForm dsn={dsn} release={release} onCancel={onClose} {...(echo ? { initialKind: "story" as const, echo } : {})} />
+        <SuggestForm dsn={dsn} release={release} onCancel={onClose} initialKind="story" echo={echo} />
       </div>
     </div>
   );
