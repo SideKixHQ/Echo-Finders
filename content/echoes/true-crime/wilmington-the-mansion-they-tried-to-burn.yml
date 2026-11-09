@@ -110,3 +110,9 @@ renders:
         - text: "From the sidewalk, hold both versions in mind: the building someone tried to destroy, and the building a community decided was worth keeping."
           atS: 48.01
           durationS: 8.37
+archive:
+  - imageKey: archive/loc-csas-02921.jpg
+    year: 1935
+    caption: "The Bellamy house front steps, balconies and iron gate"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2716, between 1935 and 1938), https://www.loc.gov/item/2017888653/"
+    rights: public-domain

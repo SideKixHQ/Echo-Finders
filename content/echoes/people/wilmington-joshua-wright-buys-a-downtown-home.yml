@@ -90,3 +90,9 @@ renders:
         - text: The building passed from its builder to a new family and took on meaning for them too.
           atS: 48.22
           durationS: 4.4
+archive:
+  - imageKey: archive/loc-csas-02927.jpg
+    year: 1935
+    caption: "Burgwin-Wright House front door at the top of the steps"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2722, between 1935 and 1938), https://www.loc.gov/item/2017888659/"
+    rights: public-domain

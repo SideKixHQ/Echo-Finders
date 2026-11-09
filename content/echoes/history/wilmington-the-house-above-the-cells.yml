@@ -102,3 +102,9 @@ renders:
         - text: "An authorized visit makes that contrast more tangible: beneath a domestic setting survive reminders of the town's earlier system of confinement."
           atS: 44.3
           durationS: 9.52
+archive:
+  - imageKey: archive/loc-csas-02925.jpg
+    year: 1935
+    caption: "Burgwin-Wright House side porches above its stone ground floor"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2720, between 1935 and 1938), https://www.loc.gov/item/2017888657/"
+    rights: public-domain

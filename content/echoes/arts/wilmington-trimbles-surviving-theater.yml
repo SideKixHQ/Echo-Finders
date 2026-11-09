@@ -84,3 +84,9 @@ renders:
         - text: "The architect's name might be unfamiliar, but the building still performs part of his intention: making an arrival feel significant."
           atS: 51.28
           durationS: 9.14
+archive:
+  - imageKey: archive/loc-habs-nc0364-102477.jpg
+    year: 1961
+    caption: "City Hall-Thalian Hall, front and side from Third Street"
+    credit: "William J. Boney Jr., Historic American Buildings Survey, Library of Congress, Prints and Photographs (HABS NC,65-WILM,4--2, 1961), https://www.loc.gov/pictures/item/nc0364.photos.102477p/"
+    rights: public-domain

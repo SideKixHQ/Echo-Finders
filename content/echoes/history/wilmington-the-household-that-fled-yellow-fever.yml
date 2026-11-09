@@ -83,3 +83,9 @@ renders:
         - text: Its owners departed; the larger city still had to endure the outbreak.
           atS: 54.73
           durationS: 4.53
+archive:
+  - imageKey: archive/loc-csas-02919.jpg
+    year: 1935
+    caption: "The Bellamy house behind its garden, seen from the corner"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2714, between 1935 and 1938), https://www.loc.gov/item/2017888651/"
+    rights: public-domain

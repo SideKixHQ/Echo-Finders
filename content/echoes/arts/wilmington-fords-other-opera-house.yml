@@ -93,3 +93,9 @@ renders:
         - text: "The theater's long life includes those shifts: familiar walls, new operators, and another invitation to an audience."
           atS: 51.33
           durationS: 7.65
+archive:
+  - imageKey: archive/loc-habs-nc0364-102480.jpg
+    year: 1961
+    caption: "Inside Thalian Hall: the curving balconies"
+    credit: "William J. Boney Jr., Historic American Buildings Survey, Library of Congress, Prints and Photographs (HABS NC,65-WILM,4--5, 1961), https://www.loc.gov/pictures/item/nc0364.photos.102480p/"
+    rights: public-domain

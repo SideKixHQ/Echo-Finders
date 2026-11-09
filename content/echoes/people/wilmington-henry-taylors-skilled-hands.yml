@@ -98,3 +98,9 @@ renders:
         - text: Historical research makes the person visible again.
           atS: 53.43
           durationS: 3.23
+archive:
+  - imageKey: archive/loc-csas-02922.jpg
+    year: 1935
+    caption: "The carved front doorway of the Bellamy house"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2717, between 1935 and 1938), https://www.loc.gov/item/2017888654/"
+    rights: public-domain

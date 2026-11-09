@@ -101,3 +101,9 @@ renders:
         - text: This parish had.
           atS: 34.8
           durationS: 2.03
+archive:
+  - imageKey: archive/loc-csas-02951.jpg
+    year: 1938
+    caption: "St. James Church and its grounds from the street"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2744-A, 1938), https://www.loc.gov/item/2017888683/"
+    rights: public-domain
