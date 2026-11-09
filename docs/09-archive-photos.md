@@ -65,3 +65,16 @@ no echo is about it yet). More of the 1865 series is at https://www.loc.gov/phot
 Vantage and bearing are not set: the series does not record where the camera stood, and a
 guessed bearing sends someone confidently the wrong way. Standing at the mounds and matching the
 skyline would fix it.
+
+## Wilmington (2026-11-09)
+
+33 echoes carry a cleared photograph: 21 Library of Congress images (Carnegie Survey of the
+Architecture of the South 1935–38, HABS NC-364, Detroit Publishing / Rotograph postcards
+c. 1905, and a panorama). Every item page was opened and its rights line read: "No known
+restrictions on publication." Images are resized to about 960 px.
+
+Not attached, by James's decision (2026-11-09):
+- The Old Masonic Lodge (3 echoes) stays without a photo: the candidate image is not
+  certainly that building.
+- The 1898 Daily Record photograph (the armed mob posing at the burned press) is not
+  used on the card.

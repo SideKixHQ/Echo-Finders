@@ -91,3 +91,9 @@ renders:
         - text: Their story shows that outdoor space, like a house, can contain several kinds of work.
           atS: 41.18
           durationS: 5.58
+archive:
+  - imageKey: archive/loc-csas-02933.jpg
+    year: 1935
+    caption: "Burgwin-Wright House garden gate in the brick lattice wall"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2728, between 1935 and 1938), https://www.loc.gov/item/2017888665/"
+    rights: public-domain

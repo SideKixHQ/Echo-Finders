@@ -95,3 +95,9 @@ renders:
         - text: Later occupants continued to shape the place they inherited.
           atS: 56.62
           durationS: 4.17
+archive:
+  - imageKey: archive/loc-csas-02924.jpg
+    year: 1935
+    caption: "Burgwin-Wright House front steps and double porch"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2719, between 1935 and 1938), https://www.loc.gov/item/2017888656/"
+    rights: public-domain

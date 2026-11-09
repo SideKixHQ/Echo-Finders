@@ -102,3 +102,9 @@ renders:
         - text: The house stayed where its history could still be encountered.
           atS: 50.98
           durationS: 3.26
+archive:
+  - imageKey: archive/loc-csas-02924.jpg
+    year: 1935
+    caption: "Burgwin-Wright House front, a few years after it was saved"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2719, between 1935 and 1938), https://www.loc.gov/item/2017888656/"
+    rights: public-domain

@@ -83,3 +83,9 @@ renders:
         - text: The comfort it offered, however, depended on skilled construction and the labor of people whose freedom was sharply unequal.
           atS: 51.39
           durationS: 7.87
+archive:
+  - imageKey: archive/loc-csas-02919.jpg
+    year: 1935
+    caption: "The Bellamy house from the corner, belvedere on the roof"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2714, between 1935 and 1938), https://www.loc.gov/item/2017888651/"
+    rights: public-domain
